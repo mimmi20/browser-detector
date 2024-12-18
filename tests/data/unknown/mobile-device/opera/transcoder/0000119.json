@@ -3992,58 +3992,7 @@
   {
     "headers": {
       "device-stock-ua": "NativeOperaMini(Spreadtrum/HW Version:UIS8910FF P:Nokia 220 4G FW:13.00.17.03;Native Opera Mini/4.4.34868;de)",
-      "forwarded": "for=\"80.187.117.207:18553\"",
       "user-agent": "Opera/9.80 (SpreadTrum; Opera Mini/4.4.34868/191.313; U; de) Presto/2.12.423 Version/12.16",
-      "x-clacks-overhead": "GNU ph",
-      "x-operamini-features": "advanced, download, file_system, folding, httpping, pingback, routing",
-      "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "NativeOperaMini(Spreadtrum/HW Version:UIS8910FF P:Nokia 220 4G FW:13.00.17.03;Native Opera Mini/4.4.34868;de)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "version": "4.4.34868",
-      "manufacturer": "opera",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "device-stock-ua": "NativeOperaMini(Spreadtrum/HW Version:UIS8910FF P:Nokia 220 4G FW:13.00.17.03;Native Opera Mini/4.4.34868;de)",
-      "forwarded": "for=\"80.187.67.26:11616\"",
-      "user-agent": "Opera/9.80 (SpreadTrum; Opera Mini/4.4.34868/191.313; U; de) Presto/2.12.423 Version/12.16",
-      "x-clacks-overhead": "GNU ph",
-      "x-operamini-features": "advanced, download, file_system, folding, httpping, pingback, routing",
       "x-operamini-phone": "? # ?",
       "x-operamini-phone-ua": "NativeOperaMini(Spreadtrum/HW Version:UIS8910FF P:Nokia 220 4G FW:13.00.17.03;Native Opera Mini/4.4.34868;de)"
     },
@@ -4201,6 +4150,48 @@
     "client": {
       "name": "Opera Mini",
       "version": "7.6.40234",
+      "manufacturer": "opera",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.40380/191.334; U; de) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "Opera Mini",
+      "version": "4.5.40380",
       "manufacturer": "opera",
       "type": "transcoder",
       "isbot": false

@@ -47,7 +47,6 @@
       "downlink": "1.5",
       "dpr": "2.8125",
       "ect": "3g",
-      "origin": "https://www.geld.de",
       "rtt": "400",
       "sec-ch-device-memory": "8",
       "sec-ch-dpr": "2.8125",
@@ -107,7 +106,6 @@
       "downlink": "2.45",
       "dpr": "3",
       "ect": "4g",
-      "origin": "https://www.geld.de",
       "rtt": "150",
       "sec-ch-device-memory": "2",
       "sec-ch-dpr": "3",
@@ -167,7 +165,6 @@
       "downlink": "8.35",
       "dpr": "3",
       "ect": "4g",
-      "origin": "https://www.geld.de",
       "rtt": "150",
       "sec-ch-device-memory": "4",
       "sec-ch-dpr": "3",
@@ -379,6 +376,67 @@
     "client": {
       "name": "Edge Mobile for Android",
       "version": "109.0.1518.53",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "3.45",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3.45",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"",
+      "sec-ch-ua-full-version": "\"109.0.1518.53\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"DCO-LX9\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "626",
+      "sec-ch-viewport-width": "352",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; DCO-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36 EdgA/109.0.1518.53",
+      "viewport-width": "352",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DCO-LX9",
+      "marketingName": "Mate 50 Pro",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2616,
+        "height": 1212,
+        "touch": true,
+        "size": 6.74
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "109.0.0",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false

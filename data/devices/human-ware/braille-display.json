@@ -13,15 +13,15 @@
       "size": null
     },
     "type": "braille-display",
-    "platform": "windows ce"
+    "platform": null
   },
   "human-ware braillenote": {
     "deviceName": "BrailleNote",
     "marketingName": "BrailleNote",
     "manufacturer": "human-ware",
     "brand": "human-ware",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -29,6 +29,38 @@
       "size": null
     },
     "type": "braille-display",
-    "platform": "windows ce"
+    "platform": null
+  },
+  "human-ware braillenote touch": {
+    "deviceName": "BrailleNote Touch",
+    "marketingName": "BrailleNote Touch",
+    "manufacturer": "human-ware",
+    "brand": "human-ware",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": false,
+      "size": 7
+    },
+    "type": "braille-display",
+    "platform": null
+  },
+  "human-ware braillenote touch plus": {
+    "deviceName": "BrailleNote Touch Plus",
+    "marketingName": "BrailleNote Touch Plus",
+    "manufacturer": "human-ware",
+    "brand": "human-ware",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": false,
+      "size": 7
+    },
+    "type": "braille-display",
+    "platform": null
   }
 }

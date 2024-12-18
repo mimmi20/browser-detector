@@ -2949,8 +2949,8 @@
       "marketingName": "Moto Z Play Dual",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -3907,6 +3907,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto g(8)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36 OPR/61.1.3076.56625"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G8",
+      "marketingName": "Moto G8",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "61.1.3076.56625",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.198",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; moto g(7) power Build/PPOS29.114-134-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36 OPT/2.8"
     },
     "device": {
@@ -4117,63 +4159,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto g(7) plus Build/QPWS30.61-21-18-7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Mobile Safari/537.36 OPT/2.9"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto e6s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36 OPR/63.3.3216.58675"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Moto G7 Plus",
-      "marketingName": "Moto G7 Plus",
+      "deviceName": "Moto E6s",
+      "marketingName": "Moto E6s (2020)",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 2270,
-        "height": 1080,
+        "width": 1560,
+        "height": 720,
         "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Touch",
-      "version": "2.9.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.164",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto e6 play) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Mobile Safari/537.36 OPR/64.0.3282.59726"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Moto E6 Play",
-      "marketingName": "Moto E6 Play",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "size": 6.1
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4188,14 +4188,14 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "64.0.3282.59726",
+      "version": "63.3.3216.58675",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "91.0.4472.114",
+      "version": "89.0.4389.105",
       "manufacturer": "google"
     }
   }

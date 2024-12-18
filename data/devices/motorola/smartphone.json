@@ -3572,8 +3572,8 @@
     "marketingName": "Moto Z Play Droid",
     "manufacturer": "lenovo",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3588,8 +3588,8 @@
     "marketingName": "Moto Z Play Dual",
     "manufacturer": "motorola",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3604,8 +3604,8 @@
     "marketingName": "Moto Z Play Dual",
     "manufacturer": "motorola",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -5007,6 +5007,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "motorola moto e7": {
+    "deviceName": "Moto E7",
+    "marketingName": "Moto E7",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "motorola moto e13": {
     "deviceName": "Moto E13",
     "marketingName": "Moto E13",
@@ -5355,6 +5371,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g8": {
+    "deviceName": "Moto G8",
+    "marketingName": "Moto G8",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"
@@ -6667,6 +6699,214 @@
       "height": 1080,
       "touch": true,
       "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g100": {
+    "deviceName": "Moto G100",
+    "marketingName": "Moto G100",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2520,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g8 play": {
+    "deviceName": "Moto G8 Play",
+    "marketingName": "Moto G8 Play",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g 5g plus": {
+    "deviceName": "Moto G 5G Plus",
+    "marketingName": "Moto G 5G Plus",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2520,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g41": {
+    "deviceName": "Moto G41",
+    "marketingName": "Moto G41",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola xt2167-2": {
+    "deviceName": "XT2167-2",
+    "marketingName": "Moto G41",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g72": {
+    "deviceName": "Moto G72",
+    "marketingName": "Moto G72",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola xt2255-1": {
+    "deviceName": "XT2255-1",
+    "marketingName": "Moto G72",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g52": {
+    "deviceName": "Moto G52",
+    "marketingName": "Moto G52",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola xt2221-1": {
+    "deviceName": "XT2221-1",
+    "marketingName": "Moto G52",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola xt2221-2": {
+    "deviceName": "XT2221-2",
+    "marketingName": "Moto G52",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto e6s": {
+    "deviceName": "Moto E6s",
+    "marketingName": "Moto E6s (2020)",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto e7 power": {
+    "deviceName": "Moto E7 Power",
+    "marketingName": "Moto E7 Power",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.51
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g73 5g": {
+    "deviceName": "Moto G73 5G",
+    "marketingName": "Moto G73 5G",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
     },
     "type": "smartphone",
     "platform": "android"

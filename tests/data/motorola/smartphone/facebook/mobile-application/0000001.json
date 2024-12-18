@@ -513,8 +513,8 @@
       "marketingName": "Moto Z Play Dual",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -1983,8 +1983,8 @@
       "marketingName": "Moto Z Play Dual",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -2479,6 +2479,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto e6s Build/POB29.288-46-6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/286.0.0.48.112;] comdirect/1.0 (appVersion:20.8.1;deviceName:nokia 6;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto E6s",
+      "marketingName": "Moto E6s (2020)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "286.0.0.48.112",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; moto e(6) plus Build/PTBS29.401-25-5; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.127 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/291.0.0.44.120;] comdirect/1.0 (appVersion:20.9.4;deviceName:nokia 6;deviceType:mobile)"
     },
     "device": {
@@ -2819,17 +2861,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1021",
-      "marketingName": "Moto E",
+      "deviceName": "Moto E7",
+      "marketingName": "Moto E7",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 960,
-        "height": 540,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": 4.3
+        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -3188,6 +3230,48 @@
     "engine": {
       "name": "Blink",
       "version": "97.0.4692.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; moto g(8) Build/RPJS31.Q4U-47-35-12; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G8",
+      "marketingName": "Moto G8",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "352.0.0.21.117",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.87",
       "manufacturer": "google"
     }
   },

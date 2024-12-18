@@ -3965,7 +3965,6 @@
       "downlink": "7.65",
       "dpr": "2.8125",
       "ect": "4g",
-      "origin": "https://www.geld.de",
       "rtt": "100",
       "sec-ch-device-memory": "4",
       "sec-ch-dpr": "2.8125",
@@ -4081,11 +4080,24 @@
   },
   {
     "headers": {
-      "prefer": "safe",
+      "device-memory": "4",
+      "downlink": "10",
+      "dpr": "2",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
       "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"97\", \"Chromium\";v=\"97\"",
+      "sec-ch-ua-full-version": "\"97.0.1072.78\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G930U\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G930U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Mobile Safari/537.36 EdgA/97.0.1072.78"
+      "sec-ch-ua-platform-version": "\"8.0.0\"",
+      "sec-ch-viewport-width": "360",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G930U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Mobile Safari/537.36 EdgA/97.0.1072.78",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "architecture": null,
@@ -4131,7 +4143,6 @@
       "downlink": "8.05",
       "dpr": "2.8125",
       "ect": "4g",
-      "origin": "https://www.geld.de",
       "rtt": "50",
       "sec-ch-device-memory": "4",
       "sec-ch-dpr": "2.8125",

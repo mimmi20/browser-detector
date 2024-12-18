@@ -2140,5 +2140,53 @@
       "version": "68.0.3440.91",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"116.0.5845.172\", \"Not)A;Brand\";v=\"24.0.0.0\", \"Google Chrome\";v=\"116.0.5845.172\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-full-version": "116.0.5845.172",
+      "sec-ch-ua-platform-version": "12.0.0",
+      "sec-ch-ua-model": "LS1542QW"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LS1542QW",
+      "marketingName": "JioPhone Next",
+      "manufacturer": "lyf",
+      "brand": "lyf",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "116.0.5845.172",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

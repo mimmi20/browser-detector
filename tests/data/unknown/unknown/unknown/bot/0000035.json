@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Morningscore/1.0)"
+      "user-agent": "MJBot/0.1"
     },
     "device": {
       "architecture": null,
@@ -29,8 +29,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "NING",
-      "version": null,
+      "name": "Mjbot",
+      "version": "0.1.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -43,7 +43,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Morningscore Bot/1.0)"
+      "user-agent": "Mozilla/5.0 (compatible; StractBot/0.1; open source search engine; +https://trystract.com/webmasters)"
     },
     "device": {
       "architecture": null,
@@ -71,8 +71,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "NING",
-      "version": null,
+      "name": "StractBot",
+      "version": "0.1.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -85,9 +85,7 @@
   },
   {
     "headers": {
-      "user-agent": "Ruby",
-      "x-newrelic-id": "VQYHWFRQChABVlZRAwkOUlU=",
-      "x-newrelic-transaction": "PxQCVVJRAQNRB1dXA1BUBVMBFB8EBw8RVU4aVwwMBgsDBFpXBFVSAQcBB0NKQQwHBAIHUgAEFTs="
+      "user-agent": "EblanBot"
     },
     "device": {
       "architecture": null,
@@ -115,7 +113,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "Generic Ruby Crawler",
+      "name": "nbot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -129,7 +127,91 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; top1mbot/0.1; +http://top1m.org/)"
+      "user-agent": "Faraday v1.0.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Faraday",
+      "version": "1.0.1",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "masscan/1.3 (https://github.com/robertdavidgraham/masscan)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Download Accelerator",
+      "version": "1.3.0",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "zoombot (linkbot 1.0 http://suite.seozoom.it/bot.html)"
     },
     "device": {
       "architecture": null,
@@ -158,90 +240,6 @@
     },
     "client": {
       "name": "mbot",
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BSbot 1.1 (monthly copyright check - html/js/css)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "BSbot",
-      "version": "1.1.0",
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Magellan"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Magellan",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -255,181 +253,7 @@
   },
   {
     "headers": {
-      "user-agent": "Ruby",
-      "x-newrelic-id": "VQYHWFRQChABVlZRAwkOUlU=",
-      "x-newrelic-transaction": "PxQBUV9XWVEBVQBXVQhVA1EDFB8EBw8RVU4aVAgBAFNRVAgABAMKAAEDBUNKQQwHBAIHUgAEFTs="
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Generic Ruby Crawler",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Ruby",
-      "x-newrelic-id": "VQYHWFRQChABVlZRAwkOUlU=",
-      "x-newrelic-transaction": "PxQEUlYGWlVWU1AGAQUOUFBSFB8EBw8RVU4aUQsIUVBVAw5QVVcHW1ICVENKQVxVVAcHWwJVFTs="
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Generic Ruby Crawler",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Ruby",
-      "x-newrelic-id": "VQYHWFRQChABVlZRAwkOUlU=",
-      "x-newrelic-transaction": "PxQFUQJRCgICBwdSUQYFBVEIFB8EBw8RVU4aUAhcBgACV1oHAQcEUAcDDkNKQVxVVAcHWwJVFTs="
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Generic Ruby Crawler",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WPMU DEV Broken Link Checker Spider"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "generic spider",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MoodleBot-LinkChecker (+https://docs.moodle.org/en/Usage)"
+      "user-agent": "OSvCLinkChecker/1.0"
     },
     "device": {
       "architecture": null,
@@ -471,7 +295,7 @@
   },
   {
     "headers": {
-      "user-agent": "WebZIP/3.5 (http://www.spidersoft.com)"
+      "user-agent": "Mozilla/5.0 (compatible; screpybot/1.0)"
     },
     "device": {
       "architecture": null,
@@ -499,7 +323,49 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "generic spider",
+      "name": "ScrepyBot",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SeoulBot"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "lbot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -513,7 +379,7 @@
   },
   {
     "headers": {
-      "user-agent": "FaviconBot/1.0 (+https://seebi.at/"
+      "user-agent": "FaviconBot/1.0 (+https://infofy.de/"
     },
     "device": {
       "architecture": null,
@@ -555,9 +421,7 @@
   },
   {
     "headers": {
-      "user-agent": "Ruby",
-      "x-newrelic-id": "VQYHWFRQChABVlZRAwkOUlU=",
-      "x-newrelic-transaction": "PxRWV1FQC1FRV1MGBAAAAAAJFB8EBw8RVU4aAw4PBwFRBApTVVICVQJSD0NKQVxVVAcHWwJVFTs="
+      "user-agent": "fidget-spinner-bot"
     },
     "device": {
       "architecture": null,
@@ -585,7 +449,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "Generic Ruby Crawler",
+      "name": "fidget-spinner-bot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -599,8 +463,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122fc17-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "test-bot"
     },
     "device": {
       "architecture": null,
@@ -628,7 +491,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "test-bot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -642,8 +505,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122fc17-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; impendoom-bot/0.1.0; +https://impendoom.com/) Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -671,2516 +533,21 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122fa9d-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122fa9d-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc458b3-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc458b3-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc45690-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122f50f-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc45690-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122f50f-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122f18d-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122f18b-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122f18b-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122f18d-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122ed74-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122ed73-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122ed74-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122ed73-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc4501c-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122e983-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc4501c-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122e983-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122e625-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc44d21-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122e625-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc44d21-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122e2fd-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc449d4-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122e2fd-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc449d4-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122dfb9-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc44664-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc44664-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122dfb9-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122dd36-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc44218-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122dd36-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc44218-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43db6-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122da9b-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43db6-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122da9b-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43952-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43951-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43952-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43951-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43453-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43451-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43453-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc43451-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc42f5e-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc42f5d-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc42f5e-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc42f5d-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122cf1b-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc42ac2-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122cf1b-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|2bc42ac2-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122cb36-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "request-id": "|a122cb36-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "impendoom-bot",
+      "version": "0.1.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "request-id": "|2bc42654-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "my-tiny-bot"
     },
     "device": {
       "architecture": null,
@@ -3208,7 +575,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "my-tiny-bot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3222,8 +589,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc42654-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "ClaudeBot"
     },
     "device": {
       "architecture": null,
@@ -3251,7 +617,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "ClaudeBot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3265,8 +631,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122c6d4-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "Symfony HttpClient/Native"
     },
     "device": {
       "architecture": null,
@@ -3294,7 +659,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "httpclient",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3308,8 +673,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc4220d-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "thesis-research-bot"
     },
     "device": {
       "architecture": null,
@@ -3337,7 +701,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "thesis-research-bot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3351,8 +715,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122c6d4-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "Mozilla/5.0 (compatible; StractBot/0.1; open source search engine; +https://stract.com/webmasters)"
     },
     "device": {
       "architecture": null,
@@ -3380,8 +743,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "StractBot",
+      "version": "0.1.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -3394,8 +757,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc4220d-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "SiteScoreBot v20210315"
     },
     "device": {
       "architecture": null,
@@ -3423,8 +785,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "SiteScoreBot",
+      "version": "20210315.0.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -3437,8 +799,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc41d62-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "Zoombot"
     },
     "device": {
       "architecture": null,
@@ -3466,7 +827,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "mbot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3480,8 +841,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122c277-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "bingadsbot"
     },
     "device": {
       "architecture": null,
@@ -3509,7 +869,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "Adsbot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3523,8 +883,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc41d62-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "SplitSignalBot"
     },
     "device": {
       "architecture": null,
@@ -3552,7 +911,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "lbot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3566,8 +925,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122c277-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "Zoombot (SEOChecker 1.0 http://suite.seozoom.it/bot.html)"
     },
     "device": {
       "architecture": null,
@@ -3595,7 +953,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "mbot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3609,8 +967,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122bdf0-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "claudebot"
     },
     "device": {
       "architecture": null,
@@ -3638,7 +995,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "ClaudeBot",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3652,8 +1009,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122bdf1-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "FbbcURBm') OR 116=(SELECT 116 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3681,7 +1037,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "Curb",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3695,8 +1051,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122bdf0-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "ncwSp2fJ')) OR 955=(SELECT 955 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3724,8 +1079,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "WSP Bot",
+      "version": "2.0.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -3738,8 +1093,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122bdf1-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "yCevWSp0'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3767,8 +1121,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "WSP Bot",
+      "version": "0.0.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -3781,8 +1135,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc41325-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "InsytfulBot/1.0; https://www.insytful.com/about-our-bot"
     },
     "device": {
       "architecture": null,
@@ -3810,8 +1163,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "lbot",
+      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -3824,8 +1177,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc41324-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "ivre-masscan/1.3 https://github.com/robertdavidgraham/"
     },
     "device": {
       "architecture": null,
@@ -3853,8 +1205,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "Download Accelerator",
+      "version": "1.3.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -3867,8 +1219,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc41325-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "Mozilla/5.0 (compatible; RedekenBot/0.1; +https://www.redeken.com/bot/)"
     },
     "device": {
       "architecture": null,
@@ -3896,8 +1247,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "nbot",
+      "version": "0.1.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -3910,8 +1261,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc41324-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "Custom-AsyncHttpClient"
     },
     "device": {
       "architecture": null,
@@ -3939,7 +1289,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "httpclient",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -3953,8 +1303,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122b418-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "Faraday v0.17.6"
     },
     "device": {
       "architecture": null,
@@ -3982,8 +1331,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "Faraday",
+      "version": "0.17.6",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -3996,8 +1345,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc40d19-4bf7704263b4e14e.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "Mozilla/5.0 (compatible; StractBot/0.2; open source search engine; +https://stract.com/webmasters)"
     },
     "device": {
       "architecture": null,
@@ -4025,8 +1373,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "StractBot",
+      "version": "0.2.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -4039,8 +1387,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122b418-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "loli_spider"
     },
     "device": {
       "architecture": null,
@@ -4068,7 +1415,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "generic spider",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -4082,8 +1429,7 @@
   },
   {
     "headers": {
-      "request-id": "|2bc40d19-4bf7704263b4e14e.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/\\xa1\\xb1; )"
     },
     "device": {
       "architecture": null,
@@ -4111,8 +1457,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "YodaoBot",
+      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -4125,8 +1471,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122ae30-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "iaskspider/2.0(+http://iask.com/help/help_index.html\\xa1\\xb1)"
     },
     "device": {
       "architecture": null,
@@ -4154,7 +1499,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "generic spider",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -4168,8 +1513,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122ae31-4d133d0ffa5f7eae.2.",
-      "user-agent": "Elisabot"
+      "user-agent": "Faraday v2.11.0"
     },
     "device": {
       "architecture": null,
@@ -4197,8 +1541,8 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
-      "version": null,
+      "name": "Faraday",
+      "version": "2.11.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true
@@ -4211,8 +1555,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122ae31-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "Sogou Push Spider/3.0(+http://www.sogou.com/docs/help/webmasters.htm#07\\xa1\\xe5)"
     },
     "device": {
       "architecture": null,
@@ -4240,7 +1583,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "generic spider",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",
@@ -4254,8 +1597,7 @@
   },
   {
     "headers": {
-      "request-id": "|a122ae30-4d133d0ffa5f7eae.1.",
-      "user-agent": "Elisabot"
+      "user-agent": "URLCheckerBot"
     },
     "device": {
       "architecture": null,
@@ -4283,7 +1625,7 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "ElisaBot",
+      "name": "URLChecker",
       "version": null,
       "manufacturer": "unknown",
       "type": "bot",

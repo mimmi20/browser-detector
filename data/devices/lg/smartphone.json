@@ -3188,8 +3188,8 @@
     "marketingName": "G7 ThinQ",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -9348,8 +9348,24 @@
     "marketingName": "Q7 Plus",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-q610.fgn": {
+    "deviceName": "LM-Q610.FGN",
+    "marketingName": "Q7 Plus",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -9364,8 +9380,8 @@
     "marketingName": "Q7 Plus",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -9380,8 +9396,8 @@
     "marketingName": "Q7 Plus",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -9396,8 +9412,8 @@
     "marketingName": "Q7 Plus",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -9412,8 +9428,8 @@
     "marketingName": "Q7 Plus",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -9473,6 +9489,22 @@
   },
   "lg lm-q710": {
     "deviceName": "LM-Q710",
+    "marketingName": "Q7 Stylus",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-q710.fgn": {
+    "deviceName": "LM-Q710.FGN",
     "marketingName": "Q7 Stylus",
     "manufacturer": "lg",
     "brand": "lg",
@@ -12411,6 +12443,70 @@
       "height": 720,
       "touch": true,
       "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-k200": {
+    "deviceName": "LM-K200",
+    "marketingName": "K22",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-k520": {
+    "deviceName": "LM-K520",
+    "marketingName": "K52",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-g710n": {
+    "deviceName": "LM-G710N",
+    "marketingName": "G7 ThinQ (South Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-g710vm": {
+    "deviceName": "LM-G710VM",
+    "marketingName": "G7 ThinQ (South Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.1
     },
     "type": "smartphone",
     "platform": "android"

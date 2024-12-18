@@ -505,6 +505,48 @@
   },
   {
     "headers": {
+      "user-agent": "SIE-A60/10 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A60",
+      "marketingName": "A60",
+      "manufacturer": "siemens",
+      "brand": "siemens",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "version": "6.1.0.5",
+      "manufacturer": "myriad",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SIE-A62/02 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0"
     },
     "device": {
@@ -4147,48 +4189,6 @@
     "client": {
       "name": "Openwave Mobile Browser",
       "version": "7.0.2.2",
-      "manufacturer": "myriad",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SIE-C62/04 UP.Browser/5.0.3.3 (GUI)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "C62",
-      "marketingName": "C62",
-      "manufacturer": "siemens",
-      "brand": "siemens",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "version": "5.0.3.3",
       "manufacturer": "myriad",
       "type": "browser",
       "isbot": false

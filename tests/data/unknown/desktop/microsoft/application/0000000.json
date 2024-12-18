@@ -3949,11 +3949,7 @@
   },
   {
     "headers": {
-      "user-agent": "Microsoft Office Excel 2014",
-      "x-office-major-version": "16",
-      "x-ms-cookieuri-requested": "t",
-      "x-featureversion": "1",
-      "accept-auth": "badger,Wlid1.1,Bearer,Basic,NTLM,Digest,Kerberos,Negotiate,Nego2"
+      "user-agent": "Microsoft Office Excel 2014 comdirect/1.0 (appVersion:19.7.0-FW-19)"
     },
     "device": {
       "architecture": null,
@@ -3995,11 +3991,92 @@
   },
   {
     "headers": {
+      "user-agent": "Microsoft Office/16.0 (OMDroid 12; officemobile 16.0.15629; Pro)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Office",
+      "version": "16.0.0",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Excel"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Office",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Microsoft Office Excel 2014",
-      "x-office-major-version": "16",
-      "x-ms-cookieuri-requested": "t",
-      "x-featureversion": "1",
-      "accept-auth": "badger,Wlid1.1,Bearer"
+      "x-bluecoat-via": "52614fb0f3c88a71"
     },
     "device": {
       "architecture": null,
@@ -4041,11 +4118,7 @@
   },
   {
     "headers": {
-      "user-agent": "Microsoft Office Word 2014",
-      "x-office-major-version": "16",
-      "x-ms-cookieuri-requested": "t",
-      "x-featureversion": "1",
-      "accept-auth": "badger,Wlid1.1,Bearer,Basic,NTLM,Digest,Kerberos,Negotiate,Nego2"
+      "user-agent": "Microsoft Office Word/16.78.1008 (Desktop; Desktop app; Unknown/Unknown)"
     },
     "device": {
       "architecture": null,
@@ -4074,7 +4147,7 @@
     },
     "client": {
       "name": "Word",
-      "version": "2014.0.0",
+      "version": "16.78.1008",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
@@ -4087,56 +4160,7 @@
   },
   {
     "headers": {
-      "user-agent": "Microsoft Office PowerPoint 2014",
-      "x-office-major-version": "16",
-      "x-ms-cookieuri-requested": "t",
-      "x-featureversion": "1",
-      "accept-auth": "badger,Wlid1.1,Bearer,Basic,NTLM,Digest,Kerberos,Negotiate,Nego2"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "PowerPoint",
-      "version": "2014.0.0",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Microsoft Office Word 2014",
-      "x-office-major-version": "16",
-      "x-ms-cookieuri-requested": "t",
-      "x-featureversion": "1"
+      "user-agent": "Microsoft Office Word"
     },
     "device": {
       "architecture": null,
@@ -4165,53 +4189,7 @@
     },
     "client": {
       "name": "Word",
-      "version": "2014.0.0",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
       "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "accept-auth": "badger,Wlid1.1,Bearer",
-      "user-agent": "Microsoft Office Excel 2014",
-      "x-featureversion": "1",
-      "x-ms-cookieuri-requested": "t",
-      "x-office-major-version": "16"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Excel",
-      "version": "2014.0.0",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false

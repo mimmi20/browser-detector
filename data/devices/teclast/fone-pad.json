@@ -496,8 +496,8 @@
     "platform": "android"
   },
   "teclast p20hd_eea": {
-    "deviceName": "P20HD",
-    "marketingName": "P20HD",
+    "deviceName": "P20 HD",
+    "marketingName": "P20 HD",
     "manufacturer": "teclast",
     "brand": "teclast",
     "dualOrientation": true,
@@ -505,6 +505,70 @@
     "display": {
       "width": 1920,
       "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast p10hd_eea": {
+    "deviceName": "P10 HD",
+    "marketingName": "P10 HD",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast m40pro_eea": {
+    "deviceName": "M40 Pro",
+    "marketingName": "M40 Pro",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast p20s_row": {
+    "deviceName": "P20S",
+    "marketingName": "P20S",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast p20s_eea": {
+    "deviceName": "P20S",
+    "marketingName": "P20S",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 800,
       "touch": true,
       "size": 10.1
     },

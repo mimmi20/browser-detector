@@ -2397,7 +2397,6 @@
   },
   {
     "headers": {
-      "origin": "https://www.geld.de",
       "user-agent": "Mozilla/5.0 (Mobile; rv:78.0) Gecko/78.0 Firefox/78.0",
       "x-requested-with": "XMLHttpRequest"
     },
@@ -2604,49 +2603,6 @@
     "engine": {
       "name": "Gecko",
       "version": "91.0.1",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Mobile; rv:78.0) Gecko/78.0 Firefox/78.0",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Firefox OS",
-      "marketingName": "Firefox OS",
-      "version": "2.5.0",
-      "manufacturer": "mozilla-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "78.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "78.0.0",
       "manufacturer": "mozilla-foundation"
     }
   },

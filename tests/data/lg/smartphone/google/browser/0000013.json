@@ -933,8 +933,8 @@
       "marketingName": "G7 ThinQ",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -1118,6 +1118,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "67.0.3396.87",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; LM-G710N Build/OPR1.170623.032) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LM-G710N",
+      "marketingName": "G7 ThinQ (South Korea)",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -3999,8 +4041,8 @@
       "marketingName": "G7 ThinQ",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -4121,12 +4163,12 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "LM-Q610",
+      "deviceName": "LM-Q610.FGN",
       "marketingName": "Q7 Plus",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2160,
         "height": 1080,
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "71.0.3578.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; LM-Q850) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "LM-Q850",
-      "marketingName": "G7 Fit",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 3120,
-        "height": 1440,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "72.0.3626.105",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "72.0.3626.105",
       "manufacturer": "google"
     }
   }
