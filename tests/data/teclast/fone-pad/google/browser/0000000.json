@@ -1181,8 +1181,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "P10HD",
-      "marketingName": "P10HD",
+      "deviceName": "P10 HD",
+      "marketingName": "P10 HD",
       "manufacturer": "teclast",
       "brand": "teclast",
       "dualOrientation": true,
@@ -1429,7 +1429,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; P80X_ROW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; P80X_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -1475,8 +1475,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "P20HD",
-      "marketingName": "P20HD",
+      "deviceName": "P20 HD",
+      "marketingName": "P20 HD",
       "manufacturer": "teclast",
       "brand": "teclast",
       "dualOrientation": true,
@@ -1508,6 +1508,48 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; M40Pro_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M40 Pro",
+      "marketingName": "M40 Pro",
+      "manufacturer": "teclast",
+      "brand": "teclast",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "88.0.4324.181",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
       "manufacturer": "google"
     }
   },
@@ -1597,12 +1639,96 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; P20S_ROW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P20S",
+      "marketingName": "P20S",
+      "manufacturer": "teclast",
+      "brand": "teclast",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; M40Pro_EEA Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.79 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M40 Pro",
+      "marketingName": "M40 Pro",
+      "manufacturer": "teclast",
+      "brand": "teclast",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "108.0.5359.79",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; P20HD_EEA Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.100 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "P20HD",
-      "marketingName": "P20HD",
+      "deviceName": "P20 HD",
+      "marketingName": "P20 HD",
       "manufacturer": "teclast",
       "brand": "teclast",
       "dualOrientation": true,
