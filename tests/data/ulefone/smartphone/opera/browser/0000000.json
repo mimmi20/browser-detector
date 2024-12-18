@@ -383,17 +383,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Armor",
-      "marketingName": "Armor",
+      "deviceName": "Armor 7",
+      "marketingName": "Armor 7",
       "manufacturer": "ulefone",
       "brand": "ulefone",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2340,
+        "height": 1080,
         "touch": true,
-        "size": 4.7
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -577,6 +577,48 @@
     "client": {
       "name": "Opera Mobile",
       "version": "65.1.3381.61266",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.166",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Armor_3W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.166 Mobile Safari/537.36 OPR/65.2.3381.61420"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Armor",
+      "marketingName": "Armor",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "65.2.3381.61420",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
