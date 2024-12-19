@@ -6,19 +6,19 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Blackview device",
-      "marketingName": "general Blackview device",
+      "deviceName": "BV6900",
+      "marketingName": "BV6900",
       "manufacturer": "blackview",
       "brand": "blackview",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 2280,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5.84
       },
-      "type": "mobile-device",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null

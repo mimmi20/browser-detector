@@ -41,5 +41,48 @@
       "version": "101.0.4951.61",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; BV4900s Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36",
+      "x-requested-with": "com.google.android.apps.searchlite"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BV4900s",
+      "marketingName": "BV4900s",
+      "manufacturer": "blackview",
+      "brand": "blackview",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google Go",
+      "version": null,
+      "manufacturer": "google",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
   }
 ]
