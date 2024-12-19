@@ -1,9 +1,10 @@
 {
   "rules": {
-    "/power[ _]armor[ _]18t/i": "ulefone power armor 18t",
-    "/power[ _]armor[ _]16[ _]pro/i": "ulefone power armor 16 pro",
-    "/power[ _]armor[ _]13/i": "ulefone power armor 13",
-    "/power[ _]armor[ _]x11[ _]pro/i": "ulefone power armor x11 pro",
+    "/power[ _]armor[ _]?18t/i": "ulefone power armor 18t",
+    "/power[ _]armor[ _]?16[ _]pro/i": "ulefone power armor 16 pro",
+    "/power[ _]armor[ _]?14[ _]pro/i": "ulefone power armor 14 pro",
+    "/power[ _]armor[ _]?13/i": "ulefone power armor 13",
+    "/power[ _]armor[ _]?x11[ _]pro/i": "ulefone power armor x11 pro",
     "/note[ _]16[ _]?pro/i": "ulefone note 16 pro",
     "/note[ _]11p/i": "ulefone note 11p",
     "/note[ _]9p/i": "ulefone note 9p",
@@ -27,6 +28,7 @@
     "/armor[ _]?8[ _]?pro/i": "ulefone armor 8 pro",
     "/armor[ _]?8/i": "ulefone armor 8",
     "/armor[ _]?7/i": "ulefone armor 7",
+    "/armor[ _]?6s/i": "ulefone armor 6s",
     "/armor[ _]?6e/i": "ulefone armor 6e",
     "/armor[ _]?6/i": "ulefone armor 6",
     "/armor[ _]?5/i": "ulefone armor 5",
