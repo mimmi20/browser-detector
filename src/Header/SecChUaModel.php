@@ -1472,6 +1472,11 @@ final class SecChUaModel implements HeaderInterface
             'bv5200 pro' => 'blackview=blackview bv5200 pro',
             'a55 pro' => 'blackview=blackview a55 pro',
             'bv9900e' => 'blackview=blackview bv9900e',
+            'bv4900s' => 'blackview=blackview bv4900s',
+            'bv4900' => 'blackview=blackview bv4900',
+            'bv5200' => 'blackview=blackview bv5200',
+            'bv9800' => 'blackview=blackview bv9800',
+            'bv9500' => 'blackview=blackview bv9500',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',

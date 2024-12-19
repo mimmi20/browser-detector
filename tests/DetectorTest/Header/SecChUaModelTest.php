@@ -1562,6 +1562,11 @@ final class SecChUaModelTest extends TestCase
             ['"BV5200 Pro"', true, 'blackview=blackview bv5200 pro'],
             ['"A55 Pro"', true, 'blackview=blackview a55 pro'],
             ['"BV9900E"', true, 'blackview=blackview bv9900e'],
+            ['"BV4900s"', true, 'blackview=blackview bv4900s'],
+            ['"BV4900"', true, 'blackview=blackview bv4900'],
+            ['"BV5200"', true, 'blackview=blackview bv5200'],
+            ['"BV9800"', true, 'blackview=blackview bv9800'],
+            ['"BV9500"', true, 'blackview=blackview bv9500'],
             // medion
             ['"B5532"', true, 'medion=medion b5532'],
             ['"LIFETAB_P733X"', true, 'medion=medion lifetab p733x'],
