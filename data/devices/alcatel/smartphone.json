@@ -1297,11 +1297,11 @@
   },
   "alcatel 7048a": {
     "deviceName": "7048A",
-    "marketingName": "Go Play",
+    "marketingName": "OneTouch Go Play",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -1313,11 +1313,11 @@
   },
   "alcatel 7048s": {
     "deviceName": "7048S",
-    "marketingName": "Go Play",
+    "marketingName": "OneTouch Go Play",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -1329,11 +1329,11 @@
   },
   "alcatel 7048w": {
     "deviceName": "7048W",
-    "marketingName": "Go Play",
+    "marketingName": "OneTouch Go Play",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -1345,11 +1345,11 @@
   },
   "alcatel 7048x": {
     "deviceName": "7048X",
-    "marketingName": "Go Play",
+    "marketingName": "OneTouch Go Play",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -6084,8 +6084,8 @@
     "marketingName": "OneTouch Pop C7",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -6100,8 +6100,8 @@
     "marketingName": "OneTouch Pop C7",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -6116,8 +6116,8 @@
     "marketingName": "OneTouch Pop C7",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -6132,8 +6132,8 @@
     "marketingName": "OneTouch Pop C7",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -6148,8 +6148,24 @@
     "marketingName": "OneTouch Pop C7",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "alcatel 7040x": {
+    "deviceName": "7040X",
+    "marketingName": "OneTouch Pop C7",
+    "manufacturer": "tcl",
+    "brand": "alcatel",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -8313,6 +8329,22 @@
     "display": {
       "width": 960,
       "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "alcatel 7048e": {
+    "deviceName": "7048E",
+    "marketingName": "OneTouch Go Play",
+    "manufacturer": "tcl",
+    "brand": "alcatel",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": 5
     },
