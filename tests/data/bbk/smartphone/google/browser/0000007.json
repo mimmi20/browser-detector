@@ -3865,6 +3865,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; V2110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2110",
+      "marketingName": "Y21s",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.51
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "94.0.4606.85",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; V2053 Build/RP1A.200720.012)"
     },
     "device": {
@@ -4142,48 +4184,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "96.0.4664.45",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.45",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; LE2115) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "LE2115",
-      "marketingName": "9",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.55
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
       "manufacturer": "google"
     },
     "client": {
