@@ -287,6 +287,7 @@ final class SecChUaModelTest extends TestCase
             ['"GM1920"', true, 'oneplus=oneplus gm1920'],
             ['"HD1910"', true, 'oneplus=oneplus hd1910'],
             ['"GM1910"', true, 'oneplus=oneplus gm1910'],
+            ['"HD1901"', true, 'oneplus=oneplus hd1901'],
             // Oppo
             ['"CPH2065"', true, 'oppo=oppo cph2065'],
             ['"CPH2211"', true, 'oppo=oppo cph2211'],
@@ -329,6 +330,7 @@ final class SecChUaModelTest extends TestCase
             ['"CPH1951"', true, 'oppo=oppo cph1951'],
             ['"PGU110"', true, 'oppo=oppo pgu110'],
             ['"CPH2113"', true, 'oppo=oppo cph2113'],
+            ['"CPH2043"', true, 'oppo=oppo cph2043'],
             // Xiaomi
             ['"Redmi Note 9 Pro"', true, 'xiaomi=xiaomi redmi note 9 pro'],
             ['"M2103K19G"', true, 'xiaomi=xiaomi m2103k19g'],
@@ -496,6 +498,7 @@ final class SecChUaModelTest extends TestCase
             ['"MI 5X"', true, 'xiaomi=xiaomi mi 5x'],
             ['"2312DRA50G"', true, 'xiaomi=xiaomi 2312dra50g'],
             ['"Redmi 4"', true, 'xiaomi=xiaomi redmi 4'],
+            ['"MI 5"', true, 'xiaomi=xiaomi mi 5'],
             // ZTE
             ['"ZTE A2121E"', true, 'zte=zte a2121e'],
             ['"ZTE Blade 10 Vita"', true, 'zte=zte blade 10 vita'],
@@ -899,6 +902,9 @@ final class SecChUaModelTest extends TestCase
             ['SM-G935U', true, 'samsung=samsung sm-g935u'],
             ['SM-F707B', true, 'samsung=samsung sm-f707b'],
             ['SM-A015F', true, 'samsung=samsung sm-a015f'],
+            ['SM-G900FD', true, 'samsung=samsung sm-g900fd'],
+            ['SM-M205F', true, 'samsung=samsung sm-m205f'],
+            ['SM-J701F', true, 'samsung=samsung sm-j701f'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -1070,6 +1076,7 @@ final class SecChUaModelTest extends TestCase
             ['"WAS-TL10"', true, 'huawei=huawei was-tl10'],
             ['"MHA-L09"', true, 'huawei=huawei mha-l09'],
             ['"NEM-L21"', true, 'huawei=huawei nem-l21'],
+            ['"HUAWEI VNS-L21"', true, 'huawei=huawei vns-l21'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -1141,6 +1148,8 @@ final class SecChUaModelTest extends TestCase
             ['"Lenovo TB-8504F"', true, 'lenovo=lenovo tb-8504f'],
             ['"Lenovo L39051"', true, 'lenovo=lenovo l39051'],
             ['"Lenovo TB-J706L"', true, 'lenovo=lenovo tb-j706l'],
+            ['"Lenovo TB-8703F"', true, 'lenovo=lenovo tb-8703f'],
+            ['"E1060X"', true, 'lenovo=lenovo e1060x'],
             // Nokia / hmd-global
             ['"Nokia G50"', true, 'nokia=nokia g50'],
             ['"Nokia G20"', true, 'nokia=nokia g20'],
@@ -1317,6 +1326,9 @@ final class SecChUaModelTest extends TestCase
             ['"XT1650"', true, 'motorola=motorola xt1650'],
             ['"motorola one zoom"', true, 'motorola=motorola one zoom'],
             ['"Moto Z3 Play"', true, 'motorola=motorola moto z3 play'],
+            ['"motorola one action"', true, 'motorola=motorola one action'],
+            ['"moto g51 5G"', true, 'motorola=motorola moto g51 5g'],
+            ['"motorola razr 2022"', true, 'motorola=motorola razr 2022'],
             // Sony
             ['"XQ-CC54"', true, 'sony=sony xq-cc54'],
             ['"XQ-BQ52"', true, 'sony=sony xq-bq52'],
@@ -1389,6 +1401,7 @@ final class SecChUaModelTest extends TestCase
             ['"SGP511"', true, 'sony=sony sgp511'],
             ['"SGP321"', true, 'sony=sony sgp321'],
             ['"G3221"', true, 'sony=sony g3221'],
+            ['"G8232"', true, 'sony=sony g8232'],
             // Vivo
             ['"V2109"', true, 'vivo=vivo v2109'],
             ['"vivo 1716"', true, 'vivo=vivo 1716'],
@@ -1456,6 +1469,7 @@ final class SecChUaModelTest extends TestCase
             ['"Power Armor 16 Pro"', true, 'ulefone=ulefone power armor 16 pro'],
             ['"Power Armor14 Pro"', true, 'ulefone=ulefone power armor 14 pro'],
             ['"Armor_6S"', true, 'ulefone=ulefone armor 6s'],
+            ['"Power"', true, 'ulefone=ulefone power'],
             // Doogee
             ['"N40Pro"', true, 'doogee=doogee n40 pro'],
             ['"S88Pro"', true, 'doogee=doogee s88 pro'],
@@ -1467,6 +1481,7 @@ final class SecChUaModelTest extends TestCase
             ['"T10Plus"', true, 'doogee=doogee t10plus'],
             ['"S86Pro"', true, 'doogee=doogee s86 pro'],
             ['"S40Pro"', true, 'doogee=doogee s40 pro'],
+            ['"X97Pro"', true, 'doogee=doogee x97 pro'],
             // shiftphones
             ['"SHIFT6mq"', true, 'shift-phones=shift-phones shift6mq'],
             ['"SHIFT6m"', true, 'shift-phones=shift-phones shift6m'],
@@ -1488,6 +1503,7 @@ final class SecChUaModelTest extends TestCase
             ['"KINGKONG_MINI"', true, 'cubot=cubot kingkong mini'],
             ['"KINGKONG_MINI2"', true, 'cubot=cubot kingkong mini2'],
             ['"KINGKONG MINI2"', true, 'cubot=cubot kingkong mini2'],
+            ['"CUBOT MAX"', true, 'cubot=cubot max'],
             // Aoyodkg
             ['"AOYODKG_A38"', true, 'aoyodkg=aoyodkg a38'],
             // gigaset
@@ -1560,6 +1576,7 @@ final class SecChUaModelTest extends TestCase
             ['"5099D"', true, 'alcatel=alcatel 5099d'],
             ['"5003D_EEA"', true, 'alcatel=alcatel 5003d_eea'],
             ['"5033D_EEA"', true, 'alcatel=alcatel 5033d_eea'],
+            ['"8088X_EEA"', true, 'alcatel=alcatel 8088x_eea'],
             // HTC
             ['"HTC Desire 19+"', true, 'htc=htc desire 19 plus'],
             ['"HTC U11"', true, 'htc=htc u11'],
@@ -1625,6 +1642,7 @@ final class SecChUaModelTest extends TestCase
             ['"BV9500"', true, 'blackview=blackview bv9500'],
             ['"BV8800"', true, 'blackview=blackview bv8800'],
             ['"BV5500Plus"', true, 'blackview=blackview bv5500 plus'],
+            ['"BV9700Pro"', true, 'blackview=blackview bv9700 pro'],
             // medion
             ['"B5532"', true, 'medion=medion b5532'],
             ['"LIFETAB_P733X"', true, 'medion=medion lifetab p733x'],
@@ -1638,6 +1656,10 @@ final class SecChUaModelTest extends TestCase
             ['"P851X"', true, 'medion=medion p851x'],
             ['"LIFETAB E1080X"', true, 'medion=medion e1080x'],
             ['"MEDION E5020"', true, 'medion=medion e5020'],
+            ['"P1040X"', true, 'medion=medion p1040x'],
+            ['"MEDION E4504"', true, 'medion=medion life e4504'],
+            ['"P1035X"', true, 'medion=medion p1035x'],
+            ['"LIFETAB E1071X"', true, 'medion=medion e1071x'],
             // caterpillar
             ['"S60"', true, 'caterpillar=caterpillar s60'],
             ['"S41"', true, 'caterpillar=caterpillar s41'],
@@ -1772,6 +1794,7 @@ final class SecChUaModelTest extends TestCase
             ['"Neffos_C9A"', true, 'tp-link=tp-link neffos c9a'],
             ['"TP601A"', true, 'tp-link=tp-link tp601a'],
             ['"Neffos C9 Max"', true, 'tp-link=tp-link neffos c9 max'],
+            ['"Neffos_C7A"', true, 'tp-link=tp-link neffos c7a'],
             // umi
             ['"A5_Pro"', true, 'umi=umi a5 pro'],
             ['"A3_Pro"', true, 'umi=umi a3 pro'],
@@ -1802,6 +1825,7 @@ final class SecChUaModelTest extends TestCase
             ['"Vankyo_S10_EEA"', true, 'vankyo=vankyo s10_eea'],
             // odys
             ['"SPACE_ONE10"', true, 'odys=odys space one 10 lte'],
+            ['"Maven_T10_pro"', true, 'odys=odys maven t10 pro'],
             // nothing-phone
             ['"A063"', true, 'nothing-phone=nothing-phone 1'],
             // doro
@@ -1856,6 +1880,8 @@ final class SecChUaModelTest extends TestCase
             ['"VFD 1400"', true, 'vodafone=vodafone vfd 1400'],
             // feonal
             ['"K118_EEA"', true, 'feonal=feonal k118_eea'],
+            // vastking
+            ['"KingPad_K10_EEA"', true, 'vastking=vastking kingpad k10_eea'],
             // other
             ['"Model"', false, null],
             ['": "', false, null],
