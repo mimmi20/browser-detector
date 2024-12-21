@@ -756,8 +756,8 @@
     "marketingName": "Tab 4 10",
     "manufacturer": "lenovo",
     "brand": "medion",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -964,8 +964,8 @@
     "marketingName": "Tab M10 HD Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -1867,6 +1867,22 @@
       "height": 1200,
       "touch": true,
       "size": 10.3
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-7504f": {
+    "deviceName": "TB-7504F",
+    "marketingName": "Tab 7",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
