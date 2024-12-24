@@ -1434,7 +1434,7 @@ final class SecChUaModelTest extends TestCase
             ['"H4213"', true, 'sony=sony h4213'],
             ['"E5603"', true, 'sony=sony e5603'],
             ['"I4332"', true, 'sony=sony i4332'],
-            ['"G3112"', true, 'sony=sony i4332'],
+            ['"G3112"', true, 'sony=sony g3112'],
             ['"SGP511"', true, 'sony=sony sgp511'],
             ['"SGP321"', true, 'sony=sony sgp321'],
             ['"G3221"', true, 'sony=sony g3221'],
