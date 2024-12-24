@@ -239,7 +239,9 @@
     "/rmx1803/i": "realme rmx1803",
     "/rmx1801/i": "realme rmx1801",
     "/cph1861/i": "realme cph1861",
-    "/cph1859/i": "realme cph1859"
+    "/cph1859/i": "realme cph1859",
+    "/ c21(?: +build|[;\\/\\)])/i": "realme c21",
+    "/ c20(?: +build|[;\\/\\)])/i": "realme c20"
   },
   "generic": "general realme device"
 }
