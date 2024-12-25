@@ -223,6 +223,7 @@ final class SecChUaModelTest extends TestCase
             ['"ASUS_AI2201_C"', true, 'asus=asus ai2201 c'],
             ['"P00C"', true, 'asus=asus p00c'],
             ['"ASUS_X018D"', true, 'asus=asus x018d'],
+            ['"ASUS_AI2205_C"', true, 'asus=asus ai2205 c'],
             // Google
             ['"Nexus 7"', true, 'google=google nexus 7'],
             ['"Pixel 7 Pro"', true, 'google=google pixel 7 pro'],
@@ -1955,6 +1956,9 @@ final class SecChUaModelTest extends TestCase
             ['"Cyber 8"', true, 'hotwav=hotwav cyber 8'],
             // switel
             ['"S5003D_CHAMP"', true, 'switel=switel s5003d'],
+            // reeder
+            ['"P13 Blue Max 128 GB 2022"', true, 'reeder=reeder p13 blue max 128 gb 2022'],
+            ['"P13 Blue Max Pro Lite 2022"', true, 'reeder=reeder p13 blue max pro lite 2022'],
             // other
             ['"Model"', false, null],
             ['": "', false, null],

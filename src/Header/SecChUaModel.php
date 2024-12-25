@@ -143,6 +143,7 @@ final class SecChUaModel implements HeaderInterface
             'asus_ai2201_c' => 'asus=asus ai2201 c',
             'p00c' => 'asus=asus p00c',
             'asus_x018d' => 'asus=asus x018d',
+            'asus_ai2205_c' => 'asus=asus ai2205 c',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3' => 'google=google pixel 3',
@@ -1862,6 +1863,9 @@ final class SecChUaModel implements HeaderInterface
             'cyber 8' => 'hotwav=hotwav cyber 8',
             // switel
             's5003d_champ' => 'switel=switel s5003d',
+            // reeder
+            'p13 blue max 128 gb 2022' => 'reeder=reeder p13 blue max 128 gb 2022',
+            'p13 blue max pro lite 2022' => 'reeder=reeder p13 blue max pro lite 2022',
             default => null,
         };
     }
