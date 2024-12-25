@@ -1,14 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; HSG1351 Build/LMY48G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 OPR/42.8.2246.117704"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; B5070 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36",
+      "x-requested-with": "mark.via.gp"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general HANNspree device",
-      "marketingName": "general HANNspree device",
-      "manufacturer": "hannspree",
-      "brand": "hannspree",
+      "deviceName": "general Lenovo device",
+      "marketingName": "general Lenovo device",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -25,19 +26,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.1",
+      "version": "7.0.0",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Opera Mobile",
-      "version": "42.8.2246.117704",
-      "manufacturer": "opera",
+      "name": "Via Browser",
+      "version": null,
+      "manufacturer": "tu-yafeng",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "55.0.2883.91",
+      "version": "111.0.5563.58",
       "manufacturer": "google"
     }
   }
