@@ -1515,6 +1515,7 @@ final class SecChUaModelTest extends TestCase
             ['"Power"', true, 'ulefone=ulefone power'],
             ['"Note_7P"', true, 'ulefone=ulefone note 7p'],
             ['"S10_Pro"', true, 'ulefone=ulefone s10 pro'],
+            ['"Power 3"', true, 'ulefone=ulefone power 3'],
             // Doogee
             ['"N40Pro"', true, 'doogee=doogee n40 pro'],
             ['"S88Pro"', true, 'doogee=doogee s88 pro'],
@@ -1959,6 +1960,11 @@ final class SecChUaModelTest extends TestCase
             // reeder
             ['"P13 Blue Max 128 GB 2022"', true, 'reeder=reeder p13 blue max 128 gb 2022'],
             ['"P13 Blue Max Pro Lite 2022"', true, 'reeder=reeder p13 blue max pro lite 2022'],
+            // tesla
+            ['"Explr 9"', true, 'tesla=tesla explorer 9'],
+            // chuwi
+            ['"HiPad X"', true, 'chuwi=chuwi hipad x'],
+            ['"HiPad XPro"', true, 'chuwi=chuwi hipad x pro'],
             // other
             ['"Model"', false, null],
             ['": "', false, null],

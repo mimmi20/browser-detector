@@ -1425,6 +1425,7 @@ final class SecChUaModel implements HeaderInterface
             'power' => 'ulefone=ulefone power',
             'note_7p' => 'ulefone=ulefone note 7p',
             's10_pro' => 'ulefone=ulefone s10 pro',
+            'power 3' => 'ulefone=ulefone power 3',
             // Doogee
             'n40pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -1866,6 +1867,11 @@ final class SecChUaModel implements HeaderInterface
             // reeder
             'p13 blue max 128 gb 2022' => 'reeder=reeder p13 blue max 128 gb 2022',
             'p13 blue max pro lite 2022' => 'reeder=reeder p13 blue max pro lite 2022',
+            // tesla
+            'explr 9' => 'tesla=tesla explorer 9',
+            // chuwi
+            'hipad x' => 'chuwi=chuwi hipad x',
+            'hipad xpro' => 'chuwi=chuwi hipad x pro',
             default => null,
         };
     }
