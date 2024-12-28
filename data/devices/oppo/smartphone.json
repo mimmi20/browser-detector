@@ -916,8 +916,24 @@
     "marketingName": "F1s",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo f1s": {
+    "deviceName": "F1s",
+    "marketingName": "F1s",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -6875,6 +6891,38 @@
       "height": 1080,
       "touch": true,
       "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo cph2235": {
+    "deviceName": "CPH2235",
+    "marketingName": "Reno6",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo pggm10": {
+    "deviceName": "PGGM10",
+    "marketingName": "K10x",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2412,
+      "height": 1080,
+      "touch": true,
+      "size": 6.59
     },
     "type": "smartphone",
     "platform": "android"

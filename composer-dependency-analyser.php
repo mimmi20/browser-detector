@@ -21,7 +21,8 @@ $config
     ->addPathToScan(__DIR__ . '/src', isDev: false)
     ->addPathToScan(__DIR__ . '/tests', isDev: true)
     ->addPathToScan(__DIR__ . '/vendor', isDev: false)
-    ->addPathToExclude(__DIR__ . '/vendor/rector/rector/vendor')
+    ->addPathToExclude(__DIR__ . '/vendor/rector/rector')
+    ->addPathToExclude(__DIR__ . '/vendor/phpstan/phpstan')
     // applies only to directory scanning, not directly listed files
     ->setFileExtensions(['php'])
 

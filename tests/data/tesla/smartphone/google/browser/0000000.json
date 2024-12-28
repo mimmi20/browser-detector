@@ -670,5 +670,53 @@
       "version": "78.0.3904.108",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"118.0.5993.80\", \"Google Chrome\";v=\"118.0.5993.80\", \"Not=A?Brand\";v=\"99.0.0.0\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-full-version": "118.0.5993.80",
+      "sec-ch-ua-platform-version": "11.0.0",
+      "sec-ch-ua-model": "Explr 9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Explorer 9",
+      "marketingName": "Explorer 9",
+      "manufacturer": "tesla",
+      "brand": "tesla",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "118.0.5993.80",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

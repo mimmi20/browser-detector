@@ -1857,8 +1857,8 @@
       "marketingName": "ROG Phone (ZS600KL)",
       "manufacturer": "asus",
       "brand": "asus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2160,
         "height": 1080,
@@ -2390,6 +2390,48 @@
     "engine": {
       "name": "Blink",
       "version": "71.0.3578.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; ASUS_X00GD Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X00GD",
+      "marketingName": "Zenfone 3s Max ZC521TL",
+      "manufacturer": "asus",
+      "brand": "asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
       "manufacturer": "google"
     }
   },
@@ -3453,8 +3495,8 @@
       "marketingName": "ROG Phone (ZS600KL)",
       "manufacturer": "asus",
       "brand": "asus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2160,
         "height": 1080,
@@ -4155,48 +4197,6 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; ASUS_I005DB) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "I005DB",
-      "marketingName": "ROG Phone 5",
-      "manufacturer": "asus",
-      "brand": "asus",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2448,
-        "height": 1080,
-        "touch": true,
-        "size": 6.78
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "78.0.3904.96",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "78.0.3904.96",
-      "manufacturer": "google"
     }
   }
 ]

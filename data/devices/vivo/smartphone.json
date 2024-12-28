@@ -2111,6 +2111,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "vivo y79": {
+    "deviceName": "Y79",
+    "marketingName": "V7+",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.99
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "vivo 1803": {
     "deviceName": "1803",
     "marketingName": "Y81",
@@ -2164,8 +2180,24 @@
     "marketingName": "Y83",
     "manufacturer": "bbk",
     "brand": "vivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo y83": {
+    "deviceName": "Y83",
+    "marketingName": "Y83",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1520,
       "height": 720,

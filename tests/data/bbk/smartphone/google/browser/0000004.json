@@ -2731,6 +2731,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; PCKM80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PCKM80",
+      "marketingName": "Reno 2 Z",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "79.0.3945.136",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.136",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; PDBM00 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36"
     },
     "device": {
@@ -4132,48 +4174,6 @@
         "height": 1080,
         "touch": true,
         "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "83.0.4103.96",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.96",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2025) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CPH2025",
-      "marketingName": "Find X2 Pro 5G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 3168,
-        "height": 1440,
-        "touch": true,
-        "size": 6.7
       },
       "type": "smartphone",
       "ismobile": true,

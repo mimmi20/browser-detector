@@ -1093,6 +1093,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HiPad Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.88 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HiPad Plus",
+      "marketingName": "HiPad Plus",
+      "manufacturer": "chuwi",
+      "brand": "chuwi",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2176,
+        "height": 1600,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "91.0.4472.88",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.4; Vi10 Build/KTU84P)"
     },
     "device": {
@@ -1172,6 +1214,48 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.117",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; HiPad-Air) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HiPad Air",
+      "marketingName": "HiPad Air",
+      "manufacturer": "chuwi",
+      "brand": "chuwi",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.3
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "92.0.4515.131",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.131",
       "manufacturer": "google"
     }
   }

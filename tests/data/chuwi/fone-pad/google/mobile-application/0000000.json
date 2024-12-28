@@ -5,19 +5,19 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Chuwi device",
-      "marketingName": "general Chuwi device",
+      "deviceName": "HiPad Pro",
+      "marketingName": "HiPad Pro",
       "manufacturer": "chuwi",
       "brand": "chuwi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 2560,
+        "height": 1600,
         "touch": true,
-        "size": null
+        "size": 10.8
       },
-      "type": "mobile-device",
+      "type": "fone-pad",
       "ismobile": true,
       "istv": false,
       "bits": null
