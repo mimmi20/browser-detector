@@ -353,7 +353,7 @@
   },
   "oneplus in2020": {
     "deviceName": "IN2020",
-    "marketingName": "8 Pro (5G)",
+    "marketingName": "8 Pro 5G (China)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": null,
@@ -369,7 +369,7 @@
   },
   "oneplus in2021": {
     "deviceName": "IN2021",
-    "marketingName": "8 Pro (5G)",
+    "marketingName": "8 Pro 5G (India)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": null,
@@ -385,7 +385,7 @@
   },
   "oneplus in2023": {
     "deviceName": "IN2023",
-    "marketingName": "8 Pro (5G, Europe)",
+    "marketingName": "8 Pro 5G (Europe/Asia)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": true,
@@ -401,7 +401,7 @@
   },
   "oneplus in2025": {
     "deviceName": "IN2025",
-    "marketingName": "8 Pro (5G, T-Mobile)",
+    "marketingName": "8 Pro 5G (North America)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": null,
@@ -577,7 +577,23 @@
   },
   "oneplus in2010": {
     "deviceName": "IN2010",
-    "marketingName": "8",
+    "marketingName": "8 (China)",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.55
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus in2011": {
+    "deviceName": "IN2011",
+    "marketingName": "8 (India)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": true,
@@ -593,7 +609,7 @@
   },
   "oneplus in2013": {
     "deviceName": "IN2013",
-    "marketingName": "8",
+    "marketingName": "8 (Europe/Asia)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": true,
@@ -609,7 +625,7 @@
   },
   "oneplus in2017": {
     "deviceName": "IN2017",
-    "marketingName": "8",
+    "marketingName": "8 (USA, T-Mobile)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": true,
@@ -625,7 +641,7 @@
   },
   "oneplus in2019": {
     "deviceName": "IN2019",
-    "marketingName": "8",
+    "marketingName": "8 (USA, Verizon)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": true,
@@ -946,6 +962,22 @@
   "oneplus hd1913": {
     "deviceName": "HD1913",
     "marketingName": "7T Pro (Global)",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus hd1917": {
+    "deviceName": "HD1917",
+    "marketingName": "7T Pro",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": true,
@@ -1409,7 +1441,7 @@
   },
   "oneplus in2015": {
     "deviceName": "IN2015",
-    "marketingName": "8 5G",
+    "marketingName": "8 (North America)",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "dualOrientation": true,
@@ -2075,6 +2107,118 @@
       "height": 1080,
       "touch": true,
       "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus pjz110": {
+    "deviceName": "PJZ110",
+    "marketingName": "13",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3168,
+      "height": 1440,
+      "touch": true,
+      "size": 6.82
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus cph2487": {
+    "deviceName": "CPH2487",
+    "marketingName": "11R",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2772,
+      "height": 1240,
+      "touch": true,
+      "size": 6.74
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus phk110": {
+    "deviceName": "PHK110",
+    "marketingName": "Ace 2",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2772,
+      "height": 1240,
+      "touch": true,
+      "size": 6.74
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus cph2469": {
+    "deviceName": "CPH2469",
+    "marketingName": "Nord N20 SE",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus cph2459": {
+    "deviceName": "CPH2459",
+    "marketingName": "Nord N20 5G",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus gn2200": {
+    "deviceName": "GN2200",
+    "marketingName": "Nord N20 5G",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oneplus gm1925": {
+    "deviceName": "GM1925",
+    "marketingName": "7 Pro 5G",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.67
     },
     "type": "smartphone",
     "platform": "android"

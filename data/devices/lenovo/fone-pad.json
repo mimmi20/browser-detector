@@ -500,8 +500,8 @@
     "marketingName": "Tab 4 10 HD",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
@@ -548,8 +548,24 @@
     "marketingName": "Tab 4 8 LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-8504l": {
+    "deviceName": "TB-8504L",
+    "marketingName": "Tab 4 8 LTE",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 800,
@@ -561,11 +577,11 @@
   },
   "lenovo tb-8704n": {
     "deviceName": "TB-8704N",
-    "marketingName": "Tab 4 8 Plus",
+    "marketingName": "Tab 4 8 Plus 4G",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -577,11 +593,27 @@
   },
   "lenovo tb-8704x": {
     "deviceName": "TB-8704X",
-    "marketingName": "Tab 4 8 Plus",
+    "marketingName": "Tab 4 8 Plus 4G",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-8704v": {
+    "deviceName": "TB-8704V",
+    "marketingName": "Tab 4 8 Plus 4G",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -619,22 +651,6 @@
       "height": 1200,
       "touch": true,
       "size": 10.1
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
-  "lenovo tb-7504f": {
-    "deviceName": "TB-7504F",
-    "marketingName": "Tab 7",
-    "manufacturer": "lenovo",
-    "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 7
     },
     "type": "fone-pad",
     "platform": "android"
@@ -772,8 +788,24 @@
     "marketingName": "Tab M10 LTE",
     "manufacturer": "lenovo",
     "brand": "medion",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-x505x": {
+    "deviceName": "TB-X505X",
+    "marketingName": "Tab M10 LTE",
+    "manufacturer": "lenovo",
+    "brand": "medion",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
@@ -1387,6 +1419,246 @@
       "height": 1200,
       "touch": true,
       "size": 10.6
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-j607z": {
+    "deviceName": "TB-J607Z",
+    "marketingName": "Tab P11 5G",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-j706l": {
+    "deviceName": "TB-J706L",
+    "marketingName": "Tab P11 Pro 4G",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-8506x": {
+    "deviceName": "TB-8506X",
+    "marketingName": "Tab M8 (3rd Gen) 4G",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-7306x": {
+    "deviceName": "TB-7306X",
+    "marketingName": "Tab M7 (3rd Gen) 4G",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-7305x": {
+    "deviceName": "TB-7305X",
+    "marketingName": "Tab M7",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb301xu": {
+    "deviceName": "TB301XU",
+    "marketingName": "Tab M8 G4 4G (2024)",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-8705x": {
+    "deviceName": "TB-8705X",
+    "marketingName": "Tab4 M8 4G",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-x6c6x": {
+    "deviceName": "TB-X6C6X",
+    "marketingName": "Tab K10 4G",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.3
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-7304n": {
+    "deviceName": "TB-7304N",
+    "marketingName": "Tab 7 Essential",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-7304x": {
+    "deviceName": "TB-7304X",
+    "marketingName": "Tab 7 Essential",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-7304i": {
+    "deviceName": "TB-7304I",
+    "marketingName": "Tab 7 Essential",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo yt-x705x": {
+    "deviceName": "YT-X705X",
+    "marketingName": "Tab 7 Essential",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-x304x": {
+    "deviceName": "TB-X304X",
+    "marketingName": "Tab 4 10",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-7504x": {
+    "deviceName": "TB-7504X",
+    "marketingName": "Tab 7",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-7504n": {
+    "deviceName": "TB-7504N",
+    "marketingName": "Tab 7",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 7
     },
     "type": "fone-pad",
     "platform": "android"

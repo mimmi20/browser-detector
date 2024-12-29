@@ -1454,5 +1454,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "huawei ags3-al09": {
+    "deviceName": "AGS3-AL09",
+    "marketingName": "Honor Pad 6 LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei btk-al09": {
+    "deviceName": "BTK-AL09",
+    "marketingName": "MatePad 11.5 (2023)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2200,
+      "height": 1440,
+      "touch": true,
+      "size": 11.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

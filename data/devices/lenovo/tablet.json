@@ -756,8 +756,8 @@
     "marketingName": "Tab 4 10",
     "manufacturer": "lenovo",
     "brand": "medion",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -785,11 +785,11 @@
   },
   "lenovo tb-8504f": {
     "deviceName": "TB-8504F",
-    "marketingName": "Tab 4 8",
+    "marketingName": "Tab 4 8 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -836,8 +836,8 @@
     "marketingName": "Tab 7 Essential",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -964,8 +964,8 @@
     "marketingName": "Tab M10 HD Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -980,8 +980,24 @@
     "marketingName": "Tab M7",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-7305i": {
+    "deviceName": "TB-7305I",
+    "marketingName": "Tab M7",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -1057,11 +1073,11 @@
   },
   "lenovo tb-8704f": {
     "deviceName": "TB-8704F",
-    "marketingName": "Tab4 8 Plus",
+    "marketingName": "Tab4 8 Plus Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "medion",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1073,11 +1089,11 @@
   },
   "lenovo tb-8705f": {
     "deviceName": "TB-8705F",
-    "marketingName": "Tab4 M8",
+    "marketingName": "Tab4 M8 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1236,8 +1252,8 @@
     "marketingName": "Yoga Smart Tab",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1739,6 +1755,134 @@
       "height": 1200,
       "touch": true,
       "size": 10.3
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-j706f": {
+    "deviceName": "TB-J706F",
+    "marketingName": "Tab P11 Pro Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11.5
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-8506f": {
+    "deviceName": "TB-8506F",
+    "marketingName": "Tab M8 (3rd Gen) Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo yt-k606f": {
+    "deviceName": "YT-K606F",
+    "marketingName": "Yoga Tab 13 Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2160,
+      "height": 1350,
+      "touch": true,
+      "size": 13
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-7306f": {
+    "deviceName": "TB-7306F",
+    "marketingName": "Tab M7 (3rd Gen) Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-j716f": {
+    "deviceName": "TB-J716F",
+    "marketingName": "Pad Pro Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11.5
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-j607f": {
+    "deviceName": "TB-J607F",
+    "marketingName": "Xiaoxin Pad Plus Wi-Fi (2021)",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-x6c6f": {
+    "deviceName": "TB-X6C6F",
+    "marketingName": "Tab K10 Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.3
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-7504f": {
+    "deviceName": "TB-7504F",
+    "marketingName": "Tab 7",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"

@@ -82,5 +82,47 @@
       "version": "47.0.2526.106",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0 (; Hisense; SmartTV_2019_1; V0000.01.00a.N0423; MICALIDVB6886; ); CE-HTML/1.0 hbbtv"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general HiSense TV",
+      "marketingName": "general HiSense TV",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Sraf",
+      "version": "4.0.0",
+      "manufacturer": "seraphic",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.106",
+      "manufacturer": "google"
+    }
   }
 ]
