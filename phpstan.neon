@@ -16,15 +16,6 @@ parameters:
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
 
-  # reports occurrences of type-checking functions always evaluated to true
-  checkAlwaysTrueCheckTypeFunctionCall: false # todo: fix
-
-  # reports instanceof occurrences always evaluated to true
-  checkAlwaysTrueInstanceof: false # todo: fix
-
-  # reports === and !== occurrences always evaluated to true
-  checkAlwaysTrueStrictComparison: true
-
   # enable stricter analysis of benevolent union types
   checkBenevolentUnionTypes: true
 
@@ -45,9 +36,6 @@ parameters:
 
   # require that callable signatures are specified
   checkMissingCallableSignature: true
-
-  # checks for missing typehints in iterables
-  checkMissingIterableValueType: true
 
   # reports return typehints that could be narrowed down because some of the listed types are never returned
   checkTooWideReturnTypesInProtectedAndPublicMethods: true
@@ -122,6 +110,10 @@ parameters:
   ignoreErrors:
     - '~, array given~'
     - '~Public (constant|method) ".*" is never used~'
+    - '~will always evaluate to true~'
+    - '~\$searches of method~'
+    - '~\$rules of method~'
+    - '~should return array~'
 #    -
 #      message: '~is never read, only written~'
 #      path: src/Detector.php
@@ -132,7 +124,6 @@ parameters:
 rules:
   # code complexity
   # - Symplify\PHPStanRules\Rules\NoDynamicNameRule
-  # - Symplify\PHPStanRules\Rules\NoReturnArrayVariableListRule # todo: fix
 
   - Symplify\PHPStanRules\Rules\ForbiddenExtendOfNonAbstractClassRule
 
@@ -154,14 +145,8 @@ rules:
   # naming
   - Symplify\PHPStanRules\Rules\RequireAttributeNameRule
 
-  # regexes
-  - Symplify\PHPStanRules\Rules\AnnotateRegexClassConstWithRegexLinkRule
-  # - Symplify\PHPStanRules\Rules\NoInlineStringRegexRule # todo fix
-  - Symplify\PHPStanRules\Rules\RegexSuffixInRegexConstantRule
-
   # naming
   - Symplify\PHPStanRules\Rules\Explicit\ExplicitClassPrefixSuffixRule
   # - Symplify\PHPStanRules\Rules\NoReturnSetterMethodRule
   - Symplify\PHPStanRules\Rules\UppercaseConstantRule
   - Symplify\PHPStanRules\Rules\ClassNameRespectsParentSuffixRule
-  - Symplify\PHPStanRules\Rules\CheckClassNamespaceFollowPsr4Rule
