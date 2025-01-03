@@ -124,7 +124,7 @@ final class BrowserLoader implements BrowserLoaderInterface
             }
         }
 
-        $version      = $this->getVersion($data['version'], $useragent, $this->logger);
+        $version      = $this->getVersion($data['version'], $useragent);
         $manufacturer = ['type' => 'unknown'];
 
         if ($data['manufacturer'] !== null) {

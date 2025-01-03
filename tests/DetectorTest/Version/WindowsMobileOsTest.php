@@ -65,7 +65,7 @@ final class WindowsMobileOsTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new WindowsMobileOs($logger, new VersionBuilder($logger));
+        $object = new WindowsMobileOs($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

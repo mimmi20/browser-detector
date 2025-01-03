@@ -65,7 +65,7 @@ final class DebianTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Debian($logger, new VersionBuilder($logger));
+        $object = new Debian($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

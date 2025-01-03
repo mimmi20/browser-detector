@@ -20,7 +20,6 @@ use Override;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 use UnexpectedValueException;
 
 final class SafariTest extends TestCase
@@ -42,7 +41,7 @@ final class SafariTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testMapSafariVersion(string $version, string | null $expectedVersion): void
     {
-        $versionObj = (new VersionBuilder(new NullLogger()))->set($version);
+        $versionObj = (new VersionBuilder())->set($version);
         self::assertSame($expectedVersion, $this->object->mapSafariVersion($versionObj));
     }
 

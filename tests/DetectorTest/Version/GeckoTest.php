@@ -65,7 +65,7 @@ final class GeckoTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Gecko($logger, new VersionBuilder($logger));
+        $object = new Gecko($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

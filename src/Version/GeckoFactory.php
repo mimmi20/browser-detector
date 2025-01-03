@@ -24,7 +24,7 @@ final class GeckoFactory implements GeckoFactoryInterface
     {
         return new Gecko(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

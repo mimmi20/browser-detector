@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface AndroidOsFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): AndroidOs;
+    public function __invoke(): AndroidOs;
 }

@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function preg_match;
 use function version_compare;
@@ -35,7 +34,7 @@ final readonly class FirefoxOs implements VersionFactoryInterface
     ];
 
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -59,9 +58,7 @@ final readonly class FirefoxOs implements VersionFactoryInterface
 
             try {
                 return $this->versionBuilder->set($osVersion);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }

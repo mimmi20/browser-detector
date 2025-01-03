@@ -66,7 +66,7 @@ final class CoreMediaTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new CoreMedia($logger, new VersionBuilder($logger));
+        $object = new CoreMedia($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

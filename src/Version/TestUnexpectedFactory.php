@@ -14,17 +14,12 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class TestUnexpectedFactory implements TestErrorFactoryInterface
 {
-    /**
-     * @throws void
-     *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
+    /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): TestUnexpectedError
+    public function __invoke(): TestUnexpectedError
     {
         return new TestUnexpectedError();
     }

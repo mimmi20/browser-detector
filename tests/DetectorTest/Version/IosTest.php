@@ -26,7 +26,6 @@ use IosBuild\IosBuildInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 final class IosTest extends TestCase
@@ -39,33 +38,7 @@ final class IosTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, new VersionBuilder($logger), new IosBuild());
+        $object = new Ios(new VersionBuilder(), new IosBuild());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -220,33 +193,7 @@ final class IosTest extends TestCase
             ->with('10B329')
             ->willThrowException($exception);
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -275,34 +222,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -334,34 +254,7 @@ final class IosTest extends TestCase
             ->with('12D5480a')
             ->willReturn($version);
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -391,34 +284,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -448,34 +314,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -507,34 +346,7 @@ final class IosTest extends TestCase
             ->with('10B329')
             ->willReturn($version);
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -563,34 +375,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -628,34 +413,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -686,33 +444,7 @@ final class IosTest extends TestCase
             ->with('12D5480a')
             ->willThrowException($exception);
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -754,34 +486,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
+        $object = new Ios($versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 

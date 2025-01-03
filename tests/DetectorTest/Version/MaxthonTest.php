@@ -65,7 +65,7 @@ final class MaxthonTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Maxthon($logger, new VersionBuilder($logger));
+        $object = new Maxthon($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

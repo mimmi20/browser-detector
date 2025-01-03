@@ -14,17 +14,12 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class TestNotNumericFactory implements TestErrorFactoryInterface
 {
-    /**
-     * @throws void
-     *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
+    /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): TestNotNumericError
+    public function __invoke(): TestNotNumericError
     {
         return new TestNotNumericError();
     }

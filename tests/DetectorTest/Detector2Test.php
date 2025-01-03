@@ -848,7 +848,7 @@ final class Detector2Test extends TestCase
         $versionBuilderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($logger, null)
+            ->with(null)
             ->willReturn($versionBuilder);
 
         $detector = new Detector(
@@ -1143,7 +1143,7 @@ final class Detector2Test extends TestCase
         $versionBuilderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($logger, null)
+            ->with(null)
             ->willReturn($versionBuilder);
 
         $detector = new Detector(

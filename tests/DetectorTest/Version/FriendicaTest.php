@@ -65,7 +65,7 @@ final class FriendicaTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Friendica($logger, new VersionBuilder($logger));
+        $object = new Friendica($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

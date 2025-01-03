@@ -65,7 +65,7 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Macos($logger, new VersionBuilder($logger), new MacosBuild());
+        $object = new Macos($logger, new VersionBuilder(), new MacosBuild());
 
         $detectedVersion = $object->detectVersion($useragent);
 

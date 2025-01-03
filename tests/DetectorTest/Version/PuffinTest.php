@@ -65,7 +65,7 @@ final class PuffinTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Puffin($logger, new VersionBuilder($logger));
+        $object = new Puffin($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

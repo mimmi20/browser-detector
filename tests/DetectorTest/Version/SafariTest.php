@@ -67,7 +67,7 @@ final class SafariTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Safari($logger, new VersionBuilder($logger), new SafariHelper());
+        $object = new Safari($logger, new VersionBuilder(), new SafariHelper());
 
         $detectedVersion = $object->detectVersion($useragent);
 

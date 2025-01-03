@@ -17,7 +17,6 @@ use BrowserDetector\Version\Exception\NotNumericException;
 use IosBuild\Exception\NotFoundException;
 use IosBuild\IosBuildInterface;
 use Override;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;
@@ -245,11 +244,8 @@ final readonly class Ios implements VersionFactoryInterface
     ];
 
     /** @throws void */
-    public function __construct(
-        private LoggerInterface $logger,
-        private VersionBuilderInterface $versionBuilder,
-        private IosBuildInterface $iosBuild,
-    ) {
+    public function __construct(private VersionBuilderInterface $versionBuilder, private IosBuildInterface $iosBuild)
+    {
         // nothing to do
     }
 
@@ -266,9 +262,7 @@ final readonly class Ios implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 return $this->versionBuilder->set('1.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
@@ -289,9 +283,7 @@ final readonly class Ios implements VersionFactoryInterface
             if ($buildVersion !== false) {
                 try {
                     return $this->versionBuilder->set($buildVersion);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }
@@ -305,9 +297,7 @@ final readonly class Ios implements VersionFactoryInterface
 
                 try {
                     return $this->versionBuilder->set($version);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }
@@ -322,9 +312,7 @@ final readonly class Ios implements VersionFactoryInterface
         if ($doMatch && array_key_exists($matches['build'], self::BUILD_MAP)) {
             try {
                 return $this->versionBuilder->set(self::BUILD_MAP[$matches['build']]);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
@@ -345,9 +333,7 @@ final readonly class Ios implements VersionFactoryInterface
             if ($buildVersion !== false) {
                 try {
                     return $this->versionBuilder->set($buildVersion);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }
@@ -355,18 +341,14 @@ final readonly class Ios implements VersionFactoryInterface
 
         try {
             $detectedVersion = $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
-
+        } catch (NotNumericException) {
             return new NullVersion();
         }
 
         if ($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO) === '10.10') {
             try {
                 return $this->versionBuilder->set('8.0.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
@@ -385,9 +367,7 @@ final readonly class Ios implements VersionFactoryInterface
 
                 try {
                     return $this->versionBuilder->set($version);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }

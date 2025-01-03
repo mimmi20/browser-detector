@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function mb_stripos;
@@ -41,7 +40,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
     ];
 
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -57,9 +56,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (mb_stripos($useragent, 'android 2.1-update1') !== false) {
             try {
                 return $this->versionBuilder->set('2.1.1');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
@@ -67,9 +64,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (mb_stripos($useragent, 'android m;') !== false) {
             try {
                 return $this->versionBuilder->set('6.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
@@ -77,9 +72,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (preg_match('/Linux; Android (?P<version>\d+[\d\.]*);/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
@@ -87,9 +80,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (preg_match('/Android API (?:Level\: )?(?P<version>\d+)/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
@@ -97,9 +88,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (preg_match('/(?P<version>\d+)\/tclwebkit\d+[\.\d]*/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
@@ -107,18 +96,14 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (preg_match('/Android \(\d+\/(?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
         }
 
         try {
             $detectedVersion = $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
-
+        } catch (NotNumericException) {
             return new NullVersion();
         }
 
@@ -129,8 +114,8 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (preg_match('/Linux; (?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // do nothing
             }
 
             return new NullVersion();
@@ -139,8 +124,8 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (mb_stripos($useragent, 'gingerbread') !== false) {
             try {
                 return $this->versionBuilder->set('2.3.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // do nothing
             }
 
             return new NullVersion();
@@ -149,8 +134,8 @@ final readonly class AndroidOs implements VersionFactoryInterface
         if (mb_stripos($useragent, 'android eclair') !== false) {
             try {
                 return $this->versionBuilder->set('2.1.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // do nothing
             }
         }
 

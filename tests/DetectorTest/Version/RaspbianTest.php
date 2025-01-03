@@ -65,7 +65,7 @@ final class RaspbianTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Raspbian($logger, new VersionBuilder($logger));
+        $object = new Raspbian($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

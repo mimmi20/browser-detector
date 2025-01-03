@@ -93,7 +93,7 @@ final class PlatformLoader implements PlatformLoaderInterface
             $this->logger->info($e);
         }
 
-        $version = $this->getVersion($data['version'], $useragent, $this->logger);
+        $version = $this->getVersion($data['version'], $useragent);
 
         try {
             $versionWithoutMicro = $version->getVersion(VersionInterface::IGNORE_MICRO);
