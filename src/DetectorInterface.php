@@ -16,6 +16,7 @@ namespace BrowserDetector;
 use BrowserDetector\Version\Exception\NotNumericException;
 use Psr\Http\Message\MessageInterface;
 use Psr\SimpleCache\InvalidArgumentException;
+use UaRequest\GenericRequestInterface;
 use UnexpectedValueException;
 
 interface DetectorInterface

@@ -15,6 +15,7 @@ namespace BrowserDetector\Parser;
 
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
+use UaParser\BrowserParserInterface;
 
 use function sprintf;
 

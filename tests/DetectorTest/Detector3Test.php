@@ -15,20 +15,20 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Detector;
-use BrowserDetector\GenericRequestInterface;
-use BrowserDetector\Header\HeaderInterface;
-use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Loader\DeviceLoaderInterface;
-use BrowserDetector\Loader\EngineLoaderInterface;
-use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoaderInterface;
-use BrowserDetector\RequestBuilderInterface;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
+use UaLoader\BrowserLoaderInterface;
+use UaLoader\DeviceLoaderInterface;
+use UaLoader\EngineLoaderInterface;
+use UaLoader\Exception\NotFoundException;
+use UaLoader\PlatformLoaderInterface;
+use UaRequest\GenericRequestInterface;
+use UaRequest\Header\HeaderInterface;
+use UaRequest\RequestBuilderInterface;
 use UnexpectedValueException;
 
 final class Detector3Test extends TestCase

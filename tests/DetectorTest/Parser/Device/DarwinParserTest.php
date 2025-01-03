@@ -13,11 +13,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use UaLoader\DeviceLoaderInterface;
 
 final class DarwinParserTest extends TestCase
 {

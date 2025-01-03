@@ -15,11 +15,11 @@ namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Parser\PlatformParser;
 use BrowserDetector\Parser\PlatformParserFactory;
-use BrowserDetector\Parser\PlatformParserInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use UaParser\PlatformParserInterface;
 
 final class PlatformParserFactoryTest extends TestCase
 {

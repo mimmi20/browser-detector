@@ -21,6 +21,7 @@ use RuntimeException;
 use stdClass;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
+use UaLoader\BrowserLoaderInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;

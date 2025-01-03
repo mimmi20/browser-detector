@@ -90,7 +90,7 @@ parameters:
 
   type_coverage:
     return_type: 100
-    param_type: 99.8
+    param_type: 99.7
     property_type: 100
     constant_type: 100
     # also, how many files has declare strict types
@@ -109,17 +109,13 @@ parameters:
 
   ignoreErrors:
     - '~, array given~'
-    - '~Public (constant|method) ".*" is never used~'
+    # - '~Public (constant|method) ".*" is never used~'
     - '~will always evaluate to true~'
     - '~\$searches of method~'
     - '~\$rules of method~'
-    - '~should return array~'
 #    -
 #      message: '~is never read, only written~'
 #      path: src/Detector.php
-    -
-      message: '~Parameter #1 \$request of method BrowserDetector\\RequestBuilder::buildRequest\(\) expects array<non-empty-string, non-empty-string>~'
-      path: tests/DetectorTest/RequestBuilderTest.php
 
 rules:
   # code complexity

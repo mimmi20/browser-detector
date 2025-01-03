@@ -20,6 +20,7 @@ use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
+use UaLoader\PlatformLoaderInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;

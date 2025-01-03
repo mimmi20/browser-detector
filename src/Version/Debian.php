@@ -21,6 +21,7 @@ use function preg_match;
 
 final readonly class Debian implements VersionFactoryInterface
 {
+    /** @api */
     public const array SEARCHES = ['kFreeBSD', 'Debian', 'Debian\-'];
 
     /** @throws void */

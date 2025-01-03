@@ -23,6 +23,7 @@ use function str_contains;
 
 final readonly class WindowsMobileOs implements VersionFactoryInterface
 {
+    /** @api */
     public const array SEARCHES = ['Windows Mobile', 'Windows Phone'];
 
     /** @throws void */

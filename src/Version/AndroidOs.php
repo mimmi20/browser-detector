@@ -23,6 +23,7 @@ use function preg_match;
 
 final readonly class AndroidOs implements VersionFactoryInterface
 {
+    /** @api */
     public const array SEARCHES = [
         'android android',
         'android androidhouse team',

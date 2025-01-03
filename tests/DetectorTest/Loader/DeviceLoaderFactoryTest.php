@@ -15,13 +15,13 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
+use UaLoader\DeviceLoaderInterface;
 
 final class DeviceLoaderFactoryTest extends TestCase
 {

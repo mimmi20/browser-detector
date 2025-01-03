@@ -20,6 +20,7 @@ use RuntimeException;
 use stdClass;
 use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
+use UaLoader\DeviceLoaderInterface;
 
 use function array_key_exists;
 use function assert;

@@ -21,6 +21,7 @@ use BrowserDetector\Parser\Device\DesktopParserInterface;
 use BrowserDetector\Parser\Device\MobileParserInterface;
 use BrowserDetector\Parser\Device\TvParserInterface;
 use Override;
+use UaParser\DeviceParserInterface;
 
 use function preg_match;
 

@@ -16,6 +16,7 @@ namespace BrowserDetector\Parser;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use Override;
 use Psr\Log\LoggerInterface;
+use UaParser\BrowserParserInterface;
 
 final readonly class BrowserParserFactory implements BrowserParserFactoryInterface
 {

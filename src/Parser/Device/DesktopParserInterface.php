@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Device;
 
-use BrowserDetector\Parser\DeviceParserInterface;
 use Override;
+use UaParser\DeviceParserInterface;
 
 interface DesktopParserInterface extends DeviceParserInterface
 {

@@ -27,6 +27,7 @@ use function str_contains;
 
 final readonly class Ios implements VersionFactoryInterface
 {
+    /** @api */
     public const array SEARCHES = [
         'IphoneOSX',
         'CPU OS_?',
