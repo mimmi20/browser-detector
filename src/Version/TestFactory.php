@@ -17,11 +17,7 @@ use Override;
 
 final class TestFactory implements TestFactoryInterface
 {
-    /**
-     * @throws void
-     *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
+    /** @throws void */
     #[Override]
     public function __invoke(): Test
     {

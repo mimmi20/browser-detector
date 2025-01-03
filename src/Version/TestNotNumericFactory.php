@@ -17,11 +17,7 @@ use Override;
 
 final class TestNotNumericFactory implements TestErrorFactoryInterface
 {
-    /**
-     * @throws void
-     *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
+    /** @throws void */
     #[Override]
     public function __invoke(): TestNotNumericError
     {
