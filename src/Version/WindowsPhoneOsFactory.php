@@ -24,7 +24,7 @@ final class WindowsPhoneOsFactory implements WindowsPhoneOsFactoryInterface
     {
         return new WindowsPhoneOs(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

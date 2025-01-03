@@ -25,7 +25,7 @@ final class IosFactory implements IosFactoryInterface
     {
         return new Ios(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
             iosBuild: new IosBuild(),
         );
     }

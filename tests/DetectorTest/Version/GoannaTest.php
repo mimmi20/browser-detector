@@ -65,7 +65,7 @@ final class GoannaTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Goanna($logger, new VersionBuilder($logger));
+        $object = new Goanna($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

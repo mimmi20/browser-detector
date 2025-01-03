@@ -65,7 +65,7 @@ final class ChromeOsTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new ChromeOs($logger, new VersionBuilder($logger));
+        $object = new ChromeOs($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

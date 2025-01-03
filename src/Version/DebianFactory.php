@@ -24,7 +24,7 @@ final class DebianFactory implements DebianFactoryInterface
     {
         return new Debian(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

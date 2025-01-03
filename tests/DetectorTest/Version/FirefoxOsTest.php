@@ -61,7 +61,7 @@ final class FirefoxOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new FirefoxOs($logger, new VersionBuilder($logger));
+        $object = new FirefoxOs($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

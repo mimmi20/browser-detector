@@ -24,7 +24,7 @@ final class FirefoxOsFactory implements FirefoxOsFactoryInterface
     {
         return new FirefoxOs(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

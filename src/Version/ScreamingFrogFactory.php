@@ -24,7 +24,7 @@ final class ScreamingFrogFactory implements ScreamingFrogFactoryInterface
     {
         return new ScreamingFrog(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

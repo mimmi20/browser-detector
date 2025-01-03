@@ -24,7 +24,7 @@ final class RimOsFactory implements RimOsFactoryInterface
     {
         return new RimOs(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

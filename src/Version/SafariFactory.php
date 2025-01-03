@@ -25,7 +25,7 @@ final class SafariFactory implements SafariFactoryInterface
     {
         return new Safari(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
             safariHelper: new SafariHelper(),
         );
     }

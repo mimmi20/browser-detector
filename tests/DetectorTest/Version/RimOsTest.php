@@ -65,7 +65,7 @@ final class RimOsTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new RimOs($logger, new VersionBuilder($logger));
+        $object = new RimOs($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

@@ -69,8 +69,8 @@ final class MicrosoftInternetExplorerTest extends TestCase
         assert($logger instanceof LoggerInterface);
         $object = new MicrosoftInternetExplorer(
             $logger,
-            new VersionBuilder($logger),
-            new Trident($logger, new VersionBuilder($logger)),
+            new VersionBuilder(),
+            new Trident($logger, new VersionBuilder()),
         );
 
         $detectedVersion = $object->detectVersion($useragent);

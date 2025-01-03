@@ -24,8 +24,8 @@ final class MicrosoftInternetExplorerFactory implements MicrosoftInternetExplore
     {
         return new MicrosoftInternetExplorer(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
-            trident: new Trident(logger: $logger, versionBuilder: new VersionBuilder($logger)),
+            versionBuilder: new VersionBuilder(),
+            trident: new Trident(logger: $logger, versionBuilder: new VersionBuilder()),
         );
     }
 }

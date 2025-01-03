@@ -65,7 +65,7 @@ final class TridentTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Trident($logger, new VersionBuilder($logger));
+        $object = new Trident($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

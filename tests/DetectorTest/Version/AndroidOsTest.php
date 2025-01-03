@@ -64,7 +64,7 @@ final class AndroidOsTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new AndroidOs($logger, new VersionBuilder($logger));
+        $object = new AndroidOs($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

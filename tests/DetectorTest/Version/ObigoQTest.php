@@ -65,7 +65,7 @@ final class ObigoQTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new ObigoQ($logger, new VersionBuilder($logger));
+        $object = new ObigoQ($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

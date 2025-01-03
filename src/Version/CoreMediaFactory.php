@@ -24,7 +24,7 @@ final class CoreMediaFactory implements CoreMediaFactoryInterface
     {
         return new CoreMedia(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

@@ -25,7 +25,7 @@ final class MacosFactory implements MacosFactoryInterface
     {
         return new Macos(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
             macosBuild: new MacosBuild(),
         );
     }

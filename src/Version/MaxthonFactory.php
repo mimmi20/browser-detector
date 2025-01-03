@@ -24,7 +24,7 @@ final class MaxthonFactory implements MaxthonFactoryInterface
     {
         return new Maxthon(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

@@ -65,7 +65,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, new VersionBuilder($logger), new IosBuild());
+        $object = new Ios($logger, new VersionBuilder(), new IosBuild());
 
         $detectedVersion = $object->detectVersion($useragent);
 

@@ -55,7 +55,7 @@ final class DetectorFactory
                 logger: $this->logger,
                 initData: new Data(PlatformLoader::DATA_PATH, 'json'),
                 companyLoader: $companyLoader,
-                versionBuilder: new VersionBuilder(logger: $this->logger),
+                versionBuilder: new VersionBuilder(),
             );
 
             $platformParserFactory = new PlatformParserFactory(logger: $this->logger);
@@ -73,7 +73,7 @@ final class DetectorFactory
                 logger: $this->logger,
                 initData: new Data(EngineLoader::DATA_PATH, 'json'),
                 companyLoader: $companyLoader,
-                versionBuilder: new VersionBuilder(logger: $this->logger),
+                versionBuilder: new VersionBuilder(),
             );
 
             $engineParserFactory = new EngineParserFactory(logger: $this->logger);
@@ -84,7 +84,7 @@ final class DetectorFactory
                 initData: new Data(BrowserLoader::DATA_PATH, 'json'),
                 companyLoader: $companyLoader,
                 typeLoader: new TypeLoader(),
-                versionBuilder: new VersionBuilder(logger: $this->logger),
+                versionBuilder: new VersionBuilder(),
             );
 
             $browserParserFactory = new BrowserParserFactory(logger: $this->logger);

@@ -65,7 +65,7 @@ final class WindowsPhoneOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new WindowsPhoneOs($logger, new VersionBuilder($logger));
+        $object = new WindowsPhoneOs($logger, new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 

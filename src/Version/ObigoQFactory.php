@@ -24,7 +24,7 @@ final class ObigoQFactory implements ObigoQFactoryInterface
     {
         return new ObigoQ(
             logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }
