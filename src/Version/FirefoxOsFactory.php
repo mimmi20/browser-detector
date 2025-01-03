@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class FirefoxOsFactory implements FirefoxOsFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): FirefoxOs
+    public function __invoke(): FirefoxOs
     {
         return new FirefoxOs(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

@@ -23,7 +23,6 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 final class FirefoxOsTest extends TestCase
@@ -35,33 +34,7 @@ final class FirefoxOsTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new FirefoxOs($logger, new VersionBuilder());
+        $object = new FirefoxOs(new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -136,32 +109,6 @@ final class FirefoxOsTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Mobile; ALCATELOneTouch6015X SVN:01004P MMS:1.1; rv:34.0) Gecko/34.0 Firefox/34.0';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -173,7 +120,7 @@ final class FirefoxOsTest extends TestCase
             ->with('2.1')
             ->willThrowException($exception);
 
-        $object = new FirefoxOs($logger, $versionBuilder);
+        $object = new FirefoxOs($versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 

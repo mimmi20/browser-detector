@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class TestFactory implements TestFactoryInterface
 {
@@ -24,7 +23,7 @@ final class TestFactory implements TestFactoryInterface
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Test
+    public function __invoke(): Test
     {
         return new Test();
     }

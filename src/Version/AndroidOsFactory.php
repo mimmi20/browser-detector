@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class AndroidOsFactory implements AndroidOsFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): AndroidOs
+    public function __invoke(): AndroidOs
     {
         return new AndroidOs(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

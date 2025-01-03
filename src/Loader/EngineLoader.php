@@ -69,7 +69,7 @@ final class EngineLoader implements EngineLoaderInterface
         assert(array_key_exists('version', $data), '"version" property is required');
 
         $name         = $data['name'];
-        $version      = $this->getVersion($data['version'], $useragent, $this->logger);
+        $version      = $this->getVersion($data['version'], $useragent);
         $manufacturer = ['type' => 'unknown'];
 
         try {
