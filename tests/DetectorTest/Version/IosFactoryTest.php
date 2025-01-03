@@ -19,7 +19,6 @@ use Override;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 use function assert;
 use function sprintf;
@@ -50,7 +49,7 @@ final class IosFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object(new NullLogger());
+        $result = $object();
         self::assertInstanceOf(Ios::class, $result);
     }
 }

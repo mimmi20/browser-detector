@@ -15,16 +15,14 @@ namespace BrowserDetector\Version;
 
 use IosBuild\IosBuild;
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class IosFactory implements IosFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Ios
+    public function __invoke(): Ios
     {
         return new Ios(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
             iosBuild: new IosBuild(),
         );
