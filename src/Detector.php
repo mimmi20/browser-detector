@@ -14,11 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Header\HeaderInterface;
-use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Loader\EngineLoaderInterface;
-use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
@@ -26,6 +22,12 @@ use Override;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
+use UaLoader\BrowserLoaderInterface;
+use UaLoader\EngineLoaderInterface;
+use UaLoader\PlatformLoaderInterface;
+use UaRequest\GenericRequestInterface;
+use UaRequest\Header\HeaderInterface;
+use UaRequest\RequestBuilderInterface;
 use UnexpectedValueException;
 
 use function array_filter;

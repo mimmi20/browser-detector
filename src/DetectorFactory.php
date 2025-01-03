@@ -31,6 +31,7 @@ use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use RuntimeException;
 use UaBrowserType\TypeLoader;
 use UaNormalizer\NormalizerFactory;
+use UaRequest\RequestBuilder;
 
 final class DetectorFactory
 {

@@ -20,6 +20,8 @@ use org\bovigo\vfs\vfsStreamWrapper;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use ReflectionException;
+use ReflectionProperty;
 use RuntimeException;
 
 use function sprintf;
@@ -60,6 +62,7 @@ final class DataTest extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeSuccess(): void
     {
@@ -80,15 +83,18 @@ final class DataTest extends TestCase
 
         $object = new Data($dir->url(), 'json');
 
-        self::assertFalse($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertFalse($inProp->getValue($object));
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertTrue($inProp->getValue($object));
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertTrue($inProp->getValue($object));
         self::assertTrue($object->hasItem($key));
         self::assertEquals((object) $value, $object->getItem($key));
         self::assertCount(1, $object);
@@ -102,6 +108,7 @@ final class DataTest extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeSuccess2(): void
     {
@@ -126,15 +133,18 @@ final class DataTest extends TestCase
 
         $object = new Data($dir->url(), 'json');
 
-        self::assertFalse($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertFalse($inProp->getValue($object));
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertTrue($inProp->getValue($object));
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertTrue($inProp->getValue($object));
         self::assertTrue($object->hasItem($key));
         self::assertEquals((object) $value, $object->getItem($key));
         self::assertCount(2, $object);
@@ -148,6 +158,7 @@ final class DataTest extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeFail2(): void
     {
@@ -169,7 +180,8 @@ final class DataTest extends TestCase
 
         $object = new Data($dir->url(), 'json');
 
-        self::assertFalse($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertFalse($inProp->getValue($object));
 
         $this->expectException(RuntimeException::class);
         $this->expectExceptionCode(0);
@@ -183,6 +195,7 @@ final class DataTest extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeSuccess3(): void
     {
@@ -215,15 +228,18 @@ final class DataTest extends TestCase
 
         $object = new Data($dir->url(), 'json');
 
-        self::assertFalse($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertFalse($inProp->getValue($object));
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertTrue($inProp->getValue($object));
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertTrue($inProp->getValue($object));
         self::assertTrue($object->hasItem($key));
         self::assertEquals((object) $value, $object->getItem($key));
         self::assertCount(3, $object);
@@ -242,6 +258,7 @@ final class DataTest extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeSuccess4(): void
     {
@@ -274,15 +291,18 @@ final class DataTest extends TestCase
 
         $object = new Data($dir->url(), 'json');
 
-        self::assertFalse($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertFalse($inProp->getValue($object));
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertTrue($inProp->getValue($object));
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        $inProp = new ReflectionProperty($object, 'initialized');
+        self::assertTrue($inProp->getValue($object));
         self::assertTrue($object->hasItem($key));
         self::assertEquals((object) $value, $object->getItem($key));
         self::assertCount(3, $object);

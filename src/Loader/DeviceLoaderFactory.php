@@ -18,6 +18,7 @@ use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaDeviceType\TypeLoader;
+use UaLoader\DeviceLoaderInterface;
 
 use function array_key_exists;
 

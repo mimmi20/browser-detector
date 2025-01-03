@@ -127,12 +127,6 @@ final class Data implements DataInterface
         return array_key_exists($cacheId, $this->items);
     }
 
-    /** @throws void */
-    public function isInitialized(): bool
-    {
-        return $this->initialized;
-    }
-
     /**
      * Count elements of an object
      *

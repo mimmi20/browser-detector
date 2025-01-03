@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
+use UaParser\DeviceParserInterface;
+
 interface DeviceParserFactoryInterface
 {
     /**

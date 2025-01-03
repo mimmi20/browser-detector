@@ -21,10 +21,13 @@ use function mb_strpos;
 
 final readonly class Maxthon implements VersionFactoryInterface
 {
+    /** @api */
     public const array SEARCHES = ['MxBrowser\-iPhone', 'Maxthon', 'MxBrowser', 'Version'];
 
+    /** @api */
     public const array SEARCH_OLD = ['MyIE'];
 
+    /** @api */
     public const string REGEX = '/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i';
 
     /** @throws void */

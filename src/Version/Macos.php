@@ -28,6 +28,7 @@ use function str_replace;
 
 final readonly class Macos implements VersionFactoryInterface
 {
+    /** @api */
     public const array SEARCHES = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
     private const array DARWIN_MAP = [

@@ -23,6 +23,7 @@ use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use Override;
 use Psr\Log\LoggerInterface;
+use UaParser\DeviceParserInterface;
 
 final readonly class DeviceParserFactory implements DeviceParserFactoryInterface
 {
