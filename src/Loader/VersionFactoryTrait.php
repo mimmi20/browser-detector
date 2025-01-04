@@ -18,7 +18,6 @@ use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
-use Psr\Log\LoggerInterface;
 use stdClass;
 use UnexpectedValueException;
 
@@ -33,11 +32,8 @@ trait VersionFactoryTrait
     private VersionBuilderInterface $versionBuilder;
 
     /** @throws void */
-    private function getVersion(
-        stdClass | string | null $version,
-        string $useragent,
-        LoggerInterface $logger,
-    ): VersionInterface {
+    private function getVersion(stdClass | string | null $version, string $useragent): VersionInterface
+    {
         $versionClass = new NullVersion();
 
         if (is_string($version)) {
@@ -74,7 +70,7 @@ trait VersionFactoryTrait
 
         $factory = new $factoryName();
         assert(is_callable($factory));
-        $versionDetector = $factory($logger);
+        $versionDetector = $factory();
         assert($versionDetector instanceof VersionFactoryInterface);
 
         try {

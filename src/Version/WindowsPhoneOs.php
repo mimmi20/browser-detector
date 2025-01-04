@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
@@ -25,7 +24,7 @@ final readonly class WindowsPhoneOs implements VersionFactoryInterface
     public const array SEARCHES = ['Windows Phone OS', 'Windows Phone', 'Windows Mobile', 'Windows NT', 'WPOS\:'];
 
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -41,8 +40,8 @@ final readonly class WindowsPhoneOs implements VersionFactoryInterface
         if (preg_match('/xblwp7|zunewp7/i', $useragent)) {
             try {
                 return $this->versionBuilder->set('7.5.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -51,8 +50,8 @@ final readonly class WindowsPhoneOs implements VersionFactoryInterface
         if (preg_match('/wds (?P<version>[\d.]+)/i', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -62,16 +61,16 @@ final readonly class WindowsPhoneOs implements VersionFactoryInterface
             if (preg_match('/windows nt 6\.3/i', $useragent)) {
                 try {
                     return $this->versionBuilder->set('8.1.0');
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
+                } catch (NotNumericException) {
+                    // nothing to do
                 }
             }
 
             if (preg_match('/windows nt 6\.2/i', $useragent)) {
                 try {
                     return $this->versionBuilder->set('8.0.0');
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
+                } catch (NotNumericException) {
+                    // nothing to do
                 }
             }
 
@@ -80,8 +79,8 @@ final readonly class WindowsPhoneOs implements VersionFactoryInterface
 
         try {
             return $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
+        } catch (NotNumericException) {
+            // nothing to do
         }
 
         return new NullVersion();

@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function is_string;
 use function preg_match;
@@ -23,7 +22,7 @@ use function preg_match;
 final readonly class Friendica implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -46,8 +45,8 @@ final readonly class Friendica implements VersionFactoryInterface
         if ($doMatch && is_string($matches['version'])) {
             try {
                 return $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
         }
 

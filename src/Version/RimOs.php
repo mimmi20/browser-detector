@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function array_unshift;
 use function mb_strtolower;
@@ -24,7 +23,7 @@ use function str_contains;
 final readonly class RimOs implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -42,8 +41,8 @@ final readonly class RimOs implements VersionFactoryInterface
         if (str_contains($lowerAgent, 'bb10') && !str_contains($lowerAgent, 'version')) {
             try {
                 return $this->versionBuilder->set('10.0.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -57,8 +56,8 @@ final readonly class RimOs implements VersionFactoryInterface
 
         try {
             return $this->versionBuilder->detectVersion($useragent, $searches);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
+        } catch (NotNumericException) {
+            // nothing to do
         }
 
         return new NullVersion();

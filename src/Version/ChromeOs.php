@@ -15,14 +15,13 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
 final readonly class ChromeOs implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -44,8 +43,8 @@ final readonly class ChromeOs implements VersionFactoryInterface
         ) {
             try {
                 return $this->versionBuilder->set($firstMatches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -54,8 +53,8 @@ final readonly class ChromeOs implements VersionFactoryInterface
         if (preg_match('/CrOS [a-z0-9_]+ (?P<version>\d+[\d\.]+)/', $useragent, $secondMatches)) {
             try {
                 return $this->versionBuilder->set($secondMatches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
         }
 

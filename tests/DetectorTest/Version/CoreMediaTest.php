@@ -24,7 +24,6 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function assert;
@@ -39,34 +38,7 @@ final class CoreMediaTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testDetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        assert($logger instanceof LoggerInterface);
-        $object = new CoreMedia($logger, new VersionBuilder($logger));
+        $object = new CoreMedia(new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -104,32 +76,6 @@ final class CoreMediaTest extends TestCase
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -138,9 +84,8 @@ final class CoreMediaTest extends TestCase
             ->with('1.0.2')
             ->willThrowException($exception);
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new CoreMedia($logger, $versionBuilder);
+        $object = new CoreMedia($versionBuilder);
 
         $detectedVersion = $object->detectVersion(
             'AppleCoreMedia/1.0.2.12D508 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',

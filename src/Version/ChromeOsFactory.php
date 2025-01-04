@@ -14,17 +14,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class ChromeOsFactory implements ChromeOsFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): ChromeOs
+    public function __invoke(): ChromeOs
     {
         return new ChromeOs(
-            logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

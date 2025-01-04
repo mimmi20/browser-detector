@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface MaxthonFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): Maxthon;
+    public function __invoke(): Maxthon;
 }

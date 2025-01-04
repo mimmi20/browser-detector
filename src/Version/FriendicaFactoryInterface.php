@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface FriendicaFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): Friendica;
+    public function __invoke(): Friendica;
 }

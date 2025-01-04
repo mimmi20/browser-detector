@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function preg_match;
@@ -33,7 +32,6 @@ final readonly class MicrosoftInternetExplorer implements VersionFactoryInterfac
 
     /** @throws void */
     public function __construct(
-        private LoggerInterface $logger,
         private VersionBuilderInterface $versionBuilder,
         private VersionFactoryInterface $trident,
     ) {
@@ -50,9 +48,7 @@ final readonly class MicrosoftInternetExplorer implements VersionFactoryInterfac
     {
         try {
             $version = $this->trident->detectVersion($useragent);
-        } catch (NotNumericException | UnexpectedValueException $e) {
-            $this->logger->info($e);
-
+        } catch (NotNumericException | UnexpectedValueException) {
             $version = null;
         }
 
@@ -64,8 +60,8 @@ final readonly class MicrosoftInternetExplorer implements VersionFactoryInterfac
 
                 try {
                     return $this->versionBuilder->set($ieVersion);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
+                } catch (NotNumericException) {
+                    // nothing to do
                 }
             }
         }
@@ -75,8 +71,8 @@ final readonly class MicrosoftInternetExplorer implements VersionFactoryInterfac
         if ($doMatch) {
             try {
                 return $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
         }
 

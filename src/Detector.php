@@ -123,7 +123,7 @@ final readonly class Detector implements DetectorInterface
         if (in_array(mb_strtolower($platformName ?? ''), ['ios'], true)) {
             $engineCodename = 'webkit';
 
-            $versionBuilder = ($this->versionBuilderFactory)($this->logger);
+            $versionBuilder = ($this->versionBuilderFactory)();
 
             try {
                 $version    = $versionBuilder->set((string) $platformVersion);
@@ -197,7 +197,7 @@ final readonly class Detector implements DetectorInterface
      */
     private function getVersion(string | null $inputVersion): string | null
     {
-        $versionBuilder = ($this->versionBuilderFactory)($this->logger);
+        $versionBuilder = ($this->versionBuilderFactory)();
         $version        = $versionBuilder->set($inputVersion ?? '');
 
         return $version->getVersion();

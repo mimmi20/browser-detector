@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface SafariFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): Safari;
+    public function __invoke(): Safari;
 }

@@ -16,7 +16,6 @@ namespace BrowserDetector\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Helper\SafariInterface;
 use Override;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function is_string;
@@ -26,7 +25,6 @@ final readonly class Safari implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
-        private LoggerInterface $logger,
         private VersionBuilderInterface $versionBuilder,
         private SafariInterface $safariHelper,
     ) {
@@ -48,9 +46,7 @@ final readonly class Safari implements VersionFactoryInterface
         if ($doMatch && is_string($matches['version'])) {
             try {
                 $version = $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
 
@@ -62,8 +58,8 @@ final readonly class Safari implements VersionFactoryInterface
 
             try {
                 return $this->versionBuilder->set($mappedVersion);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -74,9 +70,7 @@ final readonly class Safari implements VersionFactoryInterface
         if ($doMatch && is_string($matches['version'])) {
             try {
                 $version = $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
+            } catch (NotNumericException) {
                 return new NullVersion();
             }
 
@@ -88,8 +82,8 @@ final readonly class Safari implements VersionFactoryInterface
 
             try {
                 return $this->versionBuilder->set($mappedVersion);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
         }
 

@@ -24,7 +24,6 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function assert;
@@ -38,34 +37,7 @@ final class WindowsMobileOsTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        assert($logger instanceof LoggerInterface);
-        $object = new WindowsMobileOs($logger, new VersionBuilder($logger));
+        $object = new WindowsMobileOs(new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -104,32 +76,6 @@ final class WindowsMobileOsTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/20100222 Firefox/3.6 Kylo/0.6.1.70394';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -138,9 +84,8 @@ final class WindowsMobileOsTest extends TestCase
             ->with('6.0')
             ->willThrowException($exception);
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new WindowsMobileOs($logger, $versionBuilder);
+        $object = new WindowsMobileOs($versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -157,32 +102,6 @@ final class WindowsMobileOsTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -194,9 +113,8 @@ final class WindowsMobileOsTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new WindowsMobileOs($logger, $versionBuilder);
+        $object = new WindowsMobileOs($versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 

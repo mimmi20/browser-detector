@@ -15,14 +15,13 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
 final readonly class CoreMedia implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -46,8 +45,8 @@ final readonly class CoreMedia implements VersionFactoryInterface
                 return $this->versionBuilder->set(
                     $matchesFirst['major'] . '.' . $matchesFirst['minor'] . '.' . $matchesFirst['micro'],
                 );
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
         }
 

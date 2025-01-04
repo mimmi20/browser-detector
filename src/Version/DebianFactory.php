@@ -14,17 +14,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class DebianFactory implements DebianFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Debian
+    public function __invoke(): Debian
     {
         return new Debian(
-            logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

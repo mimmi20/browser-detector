@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
@@ -25,7 +24,7 @@ final readonly class Debian implements VersionFactoryInterface
     public const array SEARCHES = ['kFreeBSD', 'Debian', 'Debian\-'];
 
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -41,8 +40,8 @@ final readonly class Debian implements VersionFactoryInterface
         if (preg_match('/squeeze/i', $useragent)) {
             try {
                 return $this->versionBuilder->set('6.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -50,8 +49,8 @@ final readonly class Debian implements VersionFactoryInterface
 
         try {
             return $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
+        } catch (NotNumericException) {
+            // nothing to do
         }
 
         return new NullVersion();

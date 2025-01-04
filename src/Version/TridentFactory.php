@@ -14,17 +14,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class TridentFactory implements TridentFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Trident
+    public function __invoke(): Trident
     {
         return new Trident(
-            logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }

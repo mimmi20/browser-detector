@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface TestErrorFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): TestUnexpectedError | TestNotNumericError;
+    public function __invoke(): TestUnexpectedError | TestNotNumericError;
 }

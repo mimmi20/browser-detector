@@ -24,7 +24,6 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function assert;
@@ -38,34 +37,7 @@ final class TridentTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        assert($logger instanceof LoggerInterface);
-        $object = new Trident($logger, new VersionBuilder($logger));
+        $object = new Trident(new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -99,32 +71,6 @@ final class TridentTest extends TestCase
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -133,9 +79,8 @@ final class TridentTest extends TestCase
             ->with('7.0')
             ->willThrowException($exception);
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Trident($logger, $versionBuilder);
+        $object = new Trident($versionBuilder);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (compatible;FW 2.0. 6868.p;FW 2.0. 7049.p; Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',

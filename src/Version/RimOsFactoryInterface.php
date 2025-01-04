@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface RimOsFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): RimOs;
+    public function __invoke(): RimOs;
 }

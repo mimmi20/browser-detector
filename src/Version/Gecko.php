@@ -15,14 +15,13 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
 final readonly class Gecko implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -54,8 +53,8 @@ final readonly class Gecko implements VersionFactoryInterface
         if (!empty($geckoversion) && $geckoversion === $ffversion) {
             try {
                 return $this->versionBuilder->set($geckoversion);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -64,8 +63,8 @@ final readonly class Gecko implements VersionFactoryInterface
         if (!empty($rvversion)) {
             try {
                 return $this->versionBuilder->set($rvversion);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
         }
 

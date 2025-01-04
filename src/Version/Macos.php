@@ -17,7 +17,6 @@ use BrowserDetector\Version\Exception\NotNumericException;
 use MacosBuild\Exception\NotFoundException;
 use MacosBuild\MacosBuildInterface;
 use Override;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;
@@ -170,7 +169,6 @@ final readonly class Macos implements VersionFactoryInterface
 
     /** @throws void */
     public function __construct(
-        private LoggerInterface $logger,
         private VersionBuilderInterface $versionBuilder,
         private MacosBuildInterface $macosBuild,
     ) {
@@ -201,9 +199,7 @@ final readonly class Macos implements VersionFactoryInterface
             if ($buildVersion !== false) {
                 try {
                     return $this->versionBuilder->set($buildVersion);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }
@@ -225,9 +221,7 @@ final readonly class Macos implements VersionFactoryInterface
             if ($buildVersion !== false) {
                 try {
                     return $this->versionBuilder->set($buildVersion);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }
@@ -241,9 +235,7 @@ final readonly class Macos implements VersionFactoryInterface
 
                 try {
                     return $this->versionBuilder->set($version);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }
@@ -254,9 +246,7 @@ final readonly class Macos implements VersionFactoryInterface
                 str_replace(',', '.', $useragent),
                 self::SEARCHES,
             );
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
-
+        } catch (NotNumericException) {
             return new NullVersion();
         }
 
@@ -270,9 +260,7 @@ final readonly class Macos implements VersionFactoryInterface
                     return $this->versionBuilder->set(
                         $versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro'],
                     );
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }
@@ -288,9 +276,7 @@ final readonly class Macos implements VersionFactoryInterface
 
                 try {
                     return $this->versionBuilder->set($version);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
+                } catch (NotNumericException) {
                     return new NullVersion();
                 }
             }

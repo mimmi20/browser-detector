@@ -14,17 +14,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class FriendicaFactory implements FriendicaFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Friendica
+    public function __invoke(): Friendica
     {
         return new Friendica(
-            logger: $logger,
-            versionBuilder: new VersionBuilder($logger),
+            versionBuilder: new VersionBuilder(),
         );
     }
 }
