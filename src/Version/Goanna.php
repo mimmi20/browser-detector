@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function mb_strtolower;
 use function preg_match;
@@ -24,7 +23,7 @@ use function str_contains;
 final readonly class Goanna implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -43,8 +42,8 @@ final readonly class Goanna implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 return $this->versionBuilder->set($matchesFirst['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -56,8 +55,8 @@ final readonly class Goanna implements VersionFactoryInterface
         if ($doMatch && str_contains(mb_strtolower($useragent), 'goanna')) {
             try {
                 return $this->versionBuilder->set($matchesSecond['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -66,8 +65,8 @@ final readonly class Goanna implements VersionFactoryInterface
         try {
             // first version: uses gecko version
             return $this->versionBuilder->set('1.0');
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
+        } catch (NotNumericException) {
+            // nothing to do
         }
 
         return new NullVersion();

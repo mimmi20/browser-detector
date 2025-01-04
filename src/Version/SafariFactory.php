@@ -15,16 +15,14 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Helper\Safari as SafariHelper;
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class SafariFactory implements SafariFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Safari
+    public function __invoke(): Safari
     {
         return new Safari(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
             safariHelper: new SafariHelper(),
         );

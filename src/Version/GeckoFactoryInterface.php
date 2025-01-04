@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface GeckoFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): Gecko;
+    public function __invoke(): Gecko;
 }

@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class ScreamingFrogFactory implements ScreamingFrogFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): ScreamingFrog
+    public function __invoke(): ScreamingFrog
     {
         return new ScreamingFrog(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

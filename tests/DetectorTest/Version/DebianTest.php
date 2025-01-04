@@ -24,7 +24,6 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function assert;
@@ -38,34 +37,7 @@ final class DebianTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        assert($logger instanceof LoggerInterface);
-        $object = new Debian($logger, new VersionBuilder());
+        $object = new Debian(new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -108,32 +80,6 @@ final class DebianTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (X11; U; Linux i686; de-de@euro) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/squeeze (2.30.6-1) Epiphany/2.30.6';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -142,9 +88,8 @@ final class DebianTest extends TestCase
             ->with('6.0')
             ->willThrowException($exception);
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Debian($logger, $versionBuilder);
+        $object = new Debian($versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -161,32 +106,6 @@ final class DebianTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/8.0 (1:3.8.2.0-0) Epiphany/3.8.2';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -198,9 +117,8 @@ final class DebianTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Debian($logger, $versionBuilder);
+        $object = new Debian($versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 

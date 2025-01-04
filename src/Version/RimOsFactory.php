@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class RimOsFactory implements RimOsFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): RimOs
+    public function __invoke(): RimOs
     {
         return new RimOs(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

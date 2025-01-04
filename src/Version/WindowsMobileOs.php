@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function mb_strtolower;
 use function preg_match;
@@ -27,7 +26,7 @@ final readonly class WindowsMobileOs implements VersionFactoryInterface
     public const array SEARCHES = ['Windows Mobile', 'Windows Phone'];
 
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -46,8 +45,8 @@ final readonly class WindowsMobileOs implements VersionFactoryInterface
         ) {
             try {
                 return $this->versionBuilder->set('6.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -55,8 +54,8 @@ final readonly class WindowsMobileOs implements VersionFactoryInterface
 
         try {
             return $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
+        } catch (NotNumericException) {
+            // nothing to do
         }
 
         return new NullVersion();

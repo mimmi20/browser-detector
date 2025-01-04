@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function preg_match;
 use function str_replace;
@@ -23,7 +22,7 @@ use function str_replace;
 final readonly class ScreamingFrog implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -44,8 +43,8 @@ final readonly class ScreamingFrog implements VersionFactoryInterface
 
         try {
             return $this->versionBuilder->detectVersion($useragent, ['Screaming Frog SEO Spider']);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
+        } catch (NotNumericException) {
+            // nothing to do
         }
 
         return new NullVersion();

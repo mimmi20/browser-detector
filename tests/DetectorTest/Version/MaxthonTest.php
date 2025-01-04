@@ -24,7 +24,6 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function assert;
@@ -38,34 +37,7 @@ final class MaxthonTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        assert($logger instanceof LoggerInterface);
-        $object = new Maxthon($logger, new VersionBuilder());
+        $object = new Maxthon(new VersionBuilder());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -104,32 +76,6 @@ final class MaxthonTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MyIE2; .NET CLR 2.0.50727)';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -138,9 +84,8 @@ final class MaxthonTest extends TestCase
             ->with('2.0')
             ->willThrowException($exception);
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Maxthon($logger, $versionBuilder);
+        $object = new Maxthon($versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -157,32 +102,6 @@ final class MaxthonTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MyIE 2.0 Beta 4; User-agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; http://bsalsa.com) )';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -198,9 +117,8 @@ final class MaxthonTest extends TestCase
             ->method('setRegex')
             ->with(Maxthon::REGEX);
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Maxthon($logger, $versionBuilder);
+        $object = new Maxthon($versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -217,32 +135,6 @@ final class MaxthonTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Linux; Android 4.4.2; LIFETAB_S1033X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 MxBrowser/4.4.2.1000';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -254,9 +146,8 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Maxthon($logger, $versionBuilder);
+        $object = new Maxthon($versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 

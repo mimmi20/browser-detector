@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface WindowsPhoneOsFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): WindowsPhoneOs;
+    public function __invoke(): WindowsPhoneOs;
 }

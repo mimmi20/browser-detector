@@ -26,7 +26,6 @@ use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function assert;
@@ -40,34 +39,7 @@ final class SafariTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        assert($logger instanceof LoggerInterface);
-        $object = new Safari($logger, new VersionBuilder(), new SafariHelper());
+        $object = new Safari(new VersionBuilder(), new SafariHelper());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -118,32 +90,6 @@ final class SafariTest extends TestCase
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -157,10 +103,9 @@ final class SafariTest extends TestCase
             ->expects(self::never())
             ->method('mapSafariVersion');
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionBuilder, $safariHelper);
+        $object = new Safari($versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
@@ -177,32 +122,6 @@ final class SafariTest extends TestCase
      */
     public function testDetectVersionFailSecond(): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
         $mappedVersion  = new Version('2');
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -218,10 +137,9 @@ final class SafariTest extends TestCase
             ->with($mappedVersion)
             ->willReturn(null);
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionBuilder, $safariHelper);
+        $object = new Safari($versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
@@ -239,32 +157,6 @@ final class SafariTest extends TestCase
     public function testDetectVersionFailThird(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $mappedVersionOne = new Version('2');
         $versionBuilder   = $this->createMock(VersionBuilderInterface::class);
@@ -293,10 +185,9 @@ final class SafariTest extends TestCase
             ->with($mappedVersionOne)
             ->willReturn('1.0');
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionBuilder, $safariHelper);
+        $object = new Safari($versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
@@ -311,32 +202,6 @@ final class SafariTest extends TestCase
     public function testDetectVersionFail4(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -350,10 +215,9 @@ final class SafariTest extends TestCase
             ->expects(self::never())
             ->method('mapSafariVersion');
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionBuilder, $safariHelper);
+        $object = new Safari($versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
@@ -371,32 +235,6 @@ final class SafariTest extends TestCase
     public function testDetectVersionFail5(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
 
         $mappedVersionOne = new Version('2');
         $versionBuilder   = $this->createMock(VersionBuilderInterface::class);
@@ -425,10 +263,9 @@ final class SafariTest extends TestCase
             ->with($mappedVersionOne)
             ->willReturn('1.0');
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionBuilder, $safariHelper);
+        $object = new Safari($versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
@@ -445,32 +282,6 @@ final class SafariTest extends TestCase
      */
     public function testDetectVersionFail6(): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
         $mappedVersionOne = new Version('2');
         $versionBuilder   = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -486,10 +297,9 @@ final class SafariTest extends TestCase
             ->with($mappedVersionOne)
             ->willReturn(null);
 
-        assert($logger instanceof LoggerInterface);
         assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionBuilder, $safariHelper);
+        $object = new Safari($versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',

@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class CoreMediaFactory implements CoreMediaFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): CoreMedia
+    public function __invoke(): CoreMedia
     {
         return new CoreMedia(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

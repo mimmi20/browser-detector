@@ -15,14 +15,13 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
 final readonly class ObigoQ implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -44,8 +43,8 @@ final readonly class ObigoQ implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 return $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
         }
 
@@ -58,8 +57,8 @@ final readonly class ObigoQ implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 return $this->versionBuilder->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
         }
 

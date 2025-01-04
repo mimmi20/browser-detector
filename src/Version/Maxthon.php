@@ -15,7 +15,6 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
-use Psr\Log\LoggerInterface;
 
 use function mb_strpos;
 
@@ -31,7 +30,7 @@ final readonly class Maxthon implements VersionFactoryInterface
     public const string REGEX = '/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i';
 
     /** @throws void */
-    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    public function __construct(private VersionBuilderInterface $versionBuilder)
     {
         // nothing to do
     }
@@ -47,8 +46,8 @@ final readonly class Maxthon implements VersionFactoryInterface
         if (mb_strpos($useragent, 'MyIE2') !== false) {
             try {
                 return $this->versionBuilder->set('2.0');
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -59,8 +58,8 @@ final readonly class Maxthon implements VersionFactoryInterface
 
             try {
                 return $this->versionBuilder->detectVersion($useragent, self::SEARCH_OLD);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            } catch (NotNumericException) {
+                // nothing to do
             }
 
             return new NullVersion();
@@ -68,8 +67,8 @@ final readonly class Maxthon implements VersionFactoryInterface
 
         try {
             return $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
+        } catch (NotNumericException) {
+            // nothing to do
         }
 
         return new NullVersion();

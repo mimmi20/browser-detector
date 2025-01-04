@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class RaspbianFactory implements RaspbianFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Raspbian
+    public function __invoke(): Raspbian
     {
         return new Raspbian(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

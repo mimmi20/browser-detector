@@ -14,18 +14,16 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class MicrosoftInternetExplorerFactory implements MicrosoftInternetExplorerFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): MicrosoftInternetExplorer
+    public function __invoke(): MicrosoftInternetExplorer
     {
         return new MicrosoftInternetExplorer(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
-            trident: new Trident(logger: $logger, versionBuilder: new VersionBuilder()),
+            trident: new Trident(versionBuilder: new VersionBuilder()),
         );
     }
 }

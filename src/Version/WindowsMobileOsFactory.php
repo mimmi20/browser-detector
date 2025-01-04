@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class WindowsMobileOsFactory implements WindowsMobileOsFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): WindowsMobileOs
+    public function __invoke(): WindowsMobileOs
     {
         return new WindowsMobileOs(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

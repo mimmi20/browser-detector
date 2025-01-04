@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class GoannaFactory implements GoannaFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Goanna
+    public function __invoke(): Goanna
     {
         return new Goanna(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

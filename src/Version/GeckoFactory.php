@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class GeckoFactory implements GeckoFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Gecko
+    public function __invoke(): Gecko
     {
         return new Gecko(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }

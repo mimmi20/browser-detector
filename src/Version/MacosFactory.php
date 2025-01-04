@@ -15,16 +15,14 @@ namespace BrowserDetector\Version;
 
 use MacosBuild\MacosBuild;
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class MacosFactory implements MacosFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): Macos
+    public function __invoke(): Macos
     {
         return new Macos(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
             macosBuild: new MacosBuild(),
         );

@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 interface ChromeOsFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): ChromeOs;
+    public function __invoke(): ChromeOs;
 }

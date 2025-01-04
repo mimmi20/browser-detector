@@ -14,16 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use Override;
-use Psr\Log\LoggerInterface;
 
 final class ObigoQFactory implements ObigoQFactoryInterface
 {
     /** @throws void */
     #[Override]
-    public function __invoke(LoggerInterface $logger): ObigoQ
+    public function __invoke(): ObigoQ
     {
         return new ObigoQ(
-            logger: $logger,
             versionBuilder: new VersionBuilder(),
         );
     }
