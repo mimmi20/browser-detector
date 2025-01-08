@@ -21,6 +21,10 @@ use stdClass;
 use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
 use UaLoader\DeviceLoaderInterface;
+use UaResult\Company\Company;
+use UaResult\Device\Device;
+use UaResult\Device\DeviceInterface;
+use UaResult\Device\Display;
 
 use function array_key_exists;
 use function assert;
@@ -39,8 +43,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
     }
 
     /**
-     * @return array<int, (array<mixed>|string|null)>
-     * @phpstan-return array{0: array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool, istv: bool}, 1: string|null}
+     * @return array{device: DeviceInterface, os: string|null}
      *
      * @throws NotFoundException
      */
@@ -66,18 +69,16 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             '"platform" property is required',
         );
 
-        return [$device, $deviceData->platform];
+        return ['device' => $device, 'os' => $deviceData->platform];
     }
 
     /**
      * @param array<string, (int|stdClass|string|null)> $data
      * @phpstan-param array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass|null)} $data
      *
-     * @return array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool, istv: bool}
-     *
      * @throws void
      */
-    private function fromArray(array $data): array
+    private function fromArray(array $data): DeviceInterface
     {
         assert(array_key_exists('deviceName', $data), '"deviceName" property is required');
         assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
@@ -101,7 +102,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             $this->logger->info($e);
         }
 
-        $manufacturer = ['type' => 'unknown'];
+        $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer']);
@@ -109,7 +110,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             $this->logger->info($e);
         }
 
-        $brand = ['type' => 'unknown'];
+        $brand = new Company(type: 'unknown', name: null, brandname: null);
 
         try {
             $brand = $this->companyLoader->load($data['brand']);
@@ -128,17 +129,20 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
         assert(array_key_exists('touch', $displayData), '"touch" property is required');
         assert(array_key_exists('size', $displayData), '"size" property is required');
 
-        return [
-            'deviceName' => $deviceName,
-            'marketingName' => $marketingName,
-            'manufacturer' => $manufacturer['type'] ?? null,
-            'brand' => $brand['type'] ?? null,
-            'dualOrientation' => $data['dualOrientation'] ?? null,
-            'simCount' => $data['simCount'] ?? null,
-            'display' => $displayData,
-            'type' => $type->getType(),
-            'ismobile' => $type->isMobile(),
-            'istv' => $type->isTv(),
-        ];
+        return new Device(
+            deviceName: $deviceName,
+            marketingName: $marketingName,
+            manufacturer: $manufacturer,
+            brand: $brand,
+            type: $type,
+            display: new Display(
+                width: $displayData['width'],
+                height: $displayData['height'],
+                touch: $displayData['touch'],
+                size: $displayData['size'],
+            ),
+            dualOrientation: $data['dualOrientation'] ?? null,
+            simCount: $data['simCount'] ?? null,
+        );
     }
 }

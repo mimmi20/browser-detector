@@ -123,17 +123,16 @@ final class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($data);
 
         $result = $object->load($companyKey);
-        self::assertIsArray($result);
 
         self::assertSame(
             $companyName,
-            $result['name'],
-            'Expected Company name to be "' . $companyName . '" (was "' . $result['name'] . '")',
+            $result->getName(),
+            'Expected Company name to be "' . $companyName . '" (was "' . $result->getName() . '")',
         );
         self::assertSame(
             $brand,
-            $result['brandname'],
-            'Expected brand name to be "' . $brand . '" (was "' . $result['brandname'] . '")',
+            $result->getBrandName(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")',
         );
     }
 

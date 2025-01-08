@@ -17,20 +17,20 @@ use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Version\ErrorVersionCreatorFactory;
+use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\TestFactory;
+use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
-use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
-use Stringable;
+use UaResult\Company\Company;
+use UaResult\Engine\Engine;
 use UnexpectedValueException;
-
-use function assert;
 
 final class EngineLoaderTest extends TestCase
 {
@@ -226,7 +226,7 @@ final class EngineLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn($engineData);
 
-        $company = ['type' => 'abc-type'];
+        $company = new Company(type: 'abc-type', name: null, brandname: null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -250,13 +250,13 @@ final class EngineLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        $expected = [
-            'name' => null,
-            'version' => null,
-            'manufacturer' => 'abc-type',
-        ];
+        $expected = new Engine(
+            name: null,
+            manufacturer: $company,
+            version: new NullVersion(),
+        );
 
-        self::assertSame($expected, $result);
+        self::assertSame($expected->toArray(), $result->toArray());
     }
 
     /**
@@ -313,7 +313,7 @@ final class EngineLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn($engineData);
 
-        $company = ['type' => 'abc-type'];
+        $company = new Company(type: 'abc-type', name: null, brandname: null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -337,13 +337,13 @@ final class EngineLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        $expected = [
-            'name' => null,
-            'version' => null,
-            'manufacturer' => 'abc-type',
-        ];
+        $expected = new Engine(
+            name: null,
+            manufacturer: $company,
+            version: new NullVersion(),
+        );
 
-        self::assertSame($expected, $result);
+        self::assertSame($expected->toArray(), $result->toArray());
     }
 
     /**
@@ -352,6 +352,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws NotNumericException
      */
     public function testInvokeVersion(): void
     {
@@ -400,7 +401,7 @@ final class EngineLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn($engineData);
 
-        $company = ['type' => 'abc-type'];
+        $company = new Company(type: 'abc-type', name: null, brandname: null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -424,13 +425,13 @@ final class EngineLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        $expected = [
-            'name' => null,
-            'version' => '1.11.111.1111.11111',
-            'manufacturer' => 'abc-type',
-        ];
+        $expected = new Engine(
+            name: null,
+            manufacturer: $company,
+            version: (new VersionBuilder())->set('1.11.111.1111.11111'),
+        );
 
-        self::assertSame($expected, $result);
+        self::assertSame($expected->toArray(), $result->toArray());
     }
 
     /**
@@ -439,6 +440,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws NotNumericException
      */
     public function testInvokeVersionWithException(): void
     {
@@ -512,111 +514,12 @@ final class EngineLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        $expected = [
-            'name' => null,
-            'version' => '1.11.111.1111.11111',
-            'manufacturer' => 'unknown',
-        ];
+        $expected = new Engine(
+            name: null,
+            manufacturer: new Company(type: 'unknown', name: null, brandname: null),
+            version: (new VersionBuilder())->set('1.11.111.1111.11111'),
+        );
 
-        self::assertSame($expected, $result);
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testInvokeGenericVersion2(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []): void {
-                    self::assertInstanceOf(UnexpectedValueException::class, $message);
-                    self::assertSame([], $context);
-
-                    assert($message instanceof UnexpectedValueException);
-
-                    self::assertSame(VersionInterface::COMPLETE . '::[]', $message->getMessage());
-                    self::assertSame(0, $message->getCode());
-                    self::assertNull($message->getPrevious());
-                },
-            );
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $engineData = (object) [
-            'version' => (object) ['factory' => '\\' . ErrorVersionCreatorFactory::class, 'search' => 'test'],
-            'manufacturer' => 'xyz',
-            'name' => 'test-engine',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($engineData);
-
-        $company = ['type' => 'xyz-type'];
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with('xyz')
-            ->willReturn($company);
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
-
-        $result = $object->load('test-key', 'test/3.0');
-
-        $expected = [
-            'name' => 'test-engine',
-            'version' => null,
-            'manufacturer' => 'xyz-type',
-        ];
-
-        self::assertSame($expected, $result);
+        self::assertSame($expected->toArray(), $result->toArray());
     }
 }

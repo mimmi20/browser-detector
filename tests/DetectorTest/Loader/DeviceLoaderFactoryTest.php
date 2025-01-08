@@ -73,6 +73,6 @@ final class DeviceLoaderFactoryTest extends TestCase
 
         $device = $object->load('apple iphone');
 
-        self::assertSame('iPhone', $device[0]['deviceName']);
+        self::assertSame('iPhone', $device['device']->getDeviceName());
     }
 }

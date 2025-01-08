@@ -16,25 +16,38 @@ namespace BrowserDetector;
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
+use UaBrowserType\Unknown;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
+use UaResult\Browser\Browser;
+use UaResult\Browser\BrowserInterface;
+use UaResult\Company\Company;
+use UaResult\Device\Device;
+use UaResult\Device\DeviceInterface;
+use UaResult\Device\Display;
+use UaResult\Engine\Engine;
+use UaResult\Engine\EngineInterface;
+use UaResult\Os\Os;
+use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 use function array_filter;
 use function assert;
 use function explode;
-use function in_array;
 use function is_array;
+use function is_string;
 use function mb_strpos;
 use function mb_strtolower;
 use function mb_substr;
@@ -100,7 +113,7 @@ final readonly class Detector implements DetectorInterface
     /**
      * @return array{headers: array<non-empty-string, non-empty-string>, device: array{architecture: string|null, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string|null, ismobile: bool, istv: bool, bits: int|null}, os: array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string|null}, client: array{name: string|null, version: string|null, manufacturer: string|null, type: string|null, isbot: bool}, engine: array{name: string|null, version: string|null, manufacturer: string|null}}
      *
-     * @throws void
+     * @throws UnexpectedValueException
      */
     private function parse(GenericRequestInterface $request): array
     {
@@ -108,25 +121,28 @@ final readonly class Detector implements DetectorInterface
         $filteredHeaders = $request->getFilteredHeaders();
 
         /* detect device */
-        $deviceIsMobile = $this->getDeviceIsMobile($filteredHeaders);
+        $deviceIsMobile = $this->getDeviceIsMobile(filteredHeaders: $filteredHeaders);
 
-        [$deviceName, $deviceMarketingName, $deviceManufacturer, $brand, $dualOrientation, $simCount, $display, $deviceType, $deviceIsMobileFromDevice, $deviceIsTv, $platformCodenameFromDevice] = $this->getDeviceData(
+        ['device' => $device, 'os' => $platformCodenameFromDevice] = $this->getDeviceData(
             filteredHeaders: $filteredHeaders,
         );
 
+        $deviceMarketingName = $device->getMarketingName();
+
         /* detect platform */
-        [$platformName, $platformMarketingName, $platformManufacturer, $platformVersion] = $this->getPlatformData(
+        $platform = $this->getPlatformData(
             filteredHeaders: $filteredHeaders,
             platformCodenameFromDevice: $platformCodenameFromDevice,
         );
 
-        if (in_array(mb_strtolower($platformName ?? ''), ['ios'], true)) {
+        $platformName          = $platform->getName();
+        $platformMarketingName = $platform->getMarketingName();
+
+        if (mb_strtolower($platformName ?? '') === 'ios') {
             $engineCodename = 'webkit';
 
-            $versionBuilder = ($this->versionBuilderFactory)();
-
             try {
-                $version    = $versionBuilder->set((string) $platformVersion);
+                $version    = $platform->getVersion();
                 $iosVersion = $version->getVersion(VersionInterface::IGNORE_MINOR);
 
                 if (
@@ -137,18 +153,18 @@ final readonly class Detector implements DetectorInterface
                     $platformName          = 'iPadOS';
                     $platformMarketingName = 'iPadOS';
                 }
-            } catch (NotNumericException | UnexpectedValueException $e) {
+            } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
             }
         }
 
         /* detect client */
-        [$clientName, $clientVersion, $clientManufacturer, $clientType, $isBot, $engineCodenameFromClient] = $this->getClientData(
+        ['client' => $client, 'engine' => $engineCodenameFromClient] = $this->getClientData(
             filteredHeaders: $filteredHeaders,
         );
 
         /* detect engine */
-        [$engineName, $engineVersion, $engineManufaturer] = $this->getEngineData(
+        $engine = $this->getEngineData(
             filteredHeaders: $filteredHeaders,
             engineCodename: $engineCodename,
             engineCodenameFromClient: $engineCodenameFromClient,
@@ -158,49 +174,45 @@ final readonly class Detector implements DetectorInterface
             'headers' => $request->getHeaders(),
             'device' => [
                 'architecture' => $this->getDeviceArchitecture($filteredHeaders),
-                'deviceName' => $deviceName,
-                'marketingName' => $deviceMarketingName,
-                'manufacturer' => $deviceManufacturer,
-                'brand' => $brand,
-                'dualOrientation' => $dualOrientation,
-                'simCount' => $simCount,
-                'display' => $display,
-                'type' => $deviceType,
-                'ismobile' => $deviceIsMobile ?? $deviceIsMobileFromDevice,
-                'istv' => $deviceIsTv,
+                'deviceName' => $device->getDeviceName(),
+                'marketingName' => $device->getMarketingName(),
+                'manufacturer' => $device->getManufacturer()->getType(),
+                'brand' => $device->getBrand()->getType(),
+                'dualOrientation' => $device->getDualOrientation(),
+                'simCount' => $device->getSimCount(),
+                'display' => $device->getDisplay()?->toArray() ?? ['width' => null, 'height' => null, 'touch' => null, 'size' => null],
+                'type' => $device->getType()->getType(),
+                'ismobile' => $deviceIsMobile ?? $device->getType()->isMobile(),
+                'istv' => $device->getType()->isTv(),
                 'bits' => $this->getDeviceBitness($filteredHeaders),
             ],
             'os' => [
                 'name' => $platformName,
                 'marketingName' => $platformMarketingName,
-                'version' => $platformVersion,
-                'manufacturer' => $platformManufacturer,
+                'version' => $platform->getVersion()->getVersion(),
+                'manufacturer' => $platform->getManufacturer()->getType(),
             ],
             'client' => [
-                'name' => $clientName,
-                'version' => $clientVersion,
-                'manufacturer' => $clientManufacturer,
-                'type' => $clientType,
-                'isbot' => $isBot,
+                'name' => $client->getName(),
+                'version' => $client->getVersion()->getVersion(),
+                'manufacturer' => $client->getManufacturer()->getType(),
+                'type' => $client->getType()->getType(),
+                'isbot' => $client->getType()->isBot(),
             ],
             'engine' => [
-                'name' => $engineName,
-                'version' => $engineVersion,
-                'manufacturer' => $engineManufaturer,
+                'name' => $engine->getName(),
+                'version' => $engine->getVersion()->getVersion(),
+                'manufacturer' => $engine->getManufacturer()->getType(),
             ],
         ];
     }
 
-    /**
-     * @throws NotNumericException
-     * @throws UnexpectedValueException
-     */
-    private function getVersion(string | null $inputVersion): string | null
+    /** @throws NotNumericException */
+    private function getVersion(string | null $inputVersion): VersionInterface
     {
         $versionBuilder = ($this->versionBuilderFactory)();
-        $version        = $versionBuilder->set($inputVersion ?? '');
 
-        return $version->getVersion();
+        return $versionBuilder->set($inputVersion ?? '');
     }
 
     /**
@@ -270,9 +282,8 @@ final readonly class Detector implements DetectorInterface
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
      * @throws NotNumericException
-     * @throws UnexpectedValueException
      */
-    private function getEngineVersion(array $filteredHeaders, string | null $engineCodename): string | null
+    private function getEngineVersion(array $filteredHeaders, string | null $engineCodename): VersionInterface
     {
         $headersWithEngineVersion = array_filter(
             $filteredHeaders,
@@ -285,7 +296,7 @@ final readonly class Detector implements DetectorInterface
             return $this->getVersion($engineVersionHeader->getEngineVersion($engineCodename));
         }
 
-        return null;
+        return new NullVersion();
     }
 
     /**
@@ -293,15 +304,13 @@ final readonly class Detector implements DetectorInterface
      *
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @return array{0: string|null, 1: string|null, 2: string|null}
-     *
      * @throws void
      */
     private function getEngineData(
         array $filteredHeaders,
         string | null $engineCodename,
         string | null $engineCodenameFromClient,
-    ): array {
+    ): EngineInterface {
         $engineHeader  = null;
         $engineVersion = null;
 
@@ -324,7 +333,7 @@ final readonly class Detector implements DetectorInterface
 
         try {
             $engineVersion = $this->getEngineVersion($filteredHeaders, $engineCodename);
-        } catch (NotNumericException | UnexpectedValueException $e) {
+        } catch (NotNumericException $e) {
             $this->logger->info($e);
         }
 
@@ -335,22 +344,33 @@ final readonly class Detector implements DetectorInterface
                     useragent: $engineHeader instanceof HeaderInterface ? $engineHeader->getValue() : '',
                 );
 
-                return [$engine['name'], $engineVersion ?? $engine['version'], $engine['manufacturer']];
+                if ($engineVersion !== null) {
+                    return new Engine(
+                        name: $engine->getName(),
+                        manufacturer: $engine->getManufacturer(),
+                        version: $engineVersion,
+                    );
+                }
+
+                return $engine;
             } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
             }
         }
 
-        return [null, $engineVersion, null];
+        return new Engine(
+            name: null,
+            manufacturer: new Company(type: 'unknown', name: null, brandname: null),
+            version: $engineVersion ?? new NullVersion(),
+        );
     }
 
     /**
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
      * @throws NotNumericException
-     * @throws UnexpectedValueException
      */
-    private function getClientVersion(array $filteredHeaders, string | null $clientCodename): string | null
+    private function getClientVersion(array $filteredHeaders, string | null $clientCodename): VersionInterface
     {
         $headersWithClientVersion = array_filter(
             $filteredHeaders,
@@ -363,7 +383,7 @@ final readonly class Detector implements DetectorInterface
             return $this->getVersion($clientVersionHeader->getClientVersion($clientCodename));
         }
 
-        return null;
+        return new NullVersion();
     }
 
     /**
@@ -371,14 +391,14 @@ final readonly class Detector implements DetectorInterface
      *
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @return array{0: string|null, 1: string|null, 2: string|null, 3: string|null, 4: bool, 5: string|null}
+     * @return array{client: BrowserInterface, engine: string|null}
      *
      * @throws void
      */
     private function getClientData(array $filteredHeaders): array
     {
         $clientCodename = null;
-        $clientVersion  = null;
+        $clientVersion  = new NullVersion();
 
         $headersWithClientCode = array_filter(
             $filteredHeaders,
@@ -393,7 +413,7 @@ final readonly class Detector implements DetectorInterface
 
         try {
             $clientVersion = $this->getClientVersion($filteredHeaders, $clientCodename);
-        } catch (NotNumericException | UnexpectedValueException $e) {
+        } catch (NotNumericException $e) {
             $this->logger->info($e);
         }
 
@@ -401,35 +421,53 @@ final readonly class Detector implements DetectorInterface
             assert($clientHeader instanceof HeaderInterface);
 
             try {
-                [$client, $engineCodenameFromClient] = $this->browserLoader->load(
+                ['client' => $client, 'engine' => $engine] = $this->browserLoader->load(
                     key: $clientCodename,
                     useragent: $clientHeader->getValue(),
                 );
 
-                return [
-                    $client['name'],
-                    $clientVersion ?? $client['version'],
-                    $client['manufacturer'],
-                    $client['type'],
-                    $client['isbot'],
-                    $engineCodenameFromClient,
-                ];
+                if ($clientVersion->getVersion() !== null) {
+                    return [
+                        'client' => new Browser(
+                            name: $client->getName(),
+                            manufacturer: $client->getManufacturer(),
+                            version: $clientVersion,
+                            type: $client->getType(),
+                            bits: $client->getBits(),
+                            modus: $client->getModus(),
+                        ),
+                        'engine' => $engine,
+                    ];
+                }
+
+                return ['client' => $client, 'engine' => $engine];
             } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
             }
         }
 
-        return [null, $clientVersion, null, null, false, null];
+        return [
+            'client' => new Browser(
+                name: null,
+                manufacturer: new Company(type: 'unknown', name: null, brandname: null),
+                version: $clientVersion,
+                type: new Unknown(),
+                bits: null,
+                modus: null,
+),
+            'engine' => null,
+        ];
     }
 
     /**
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
      * @throws NotNumericException
-     * @throws UnexpectedValueException
      */
-    private function getPlatformVersion(array $filteredHeaders, string | null $platformCodename): string | null
-    {
+    private function getPlatformVersion(
+        array $filteredHeaders,
+        string | null $platformCodename,
+    ): VersionInterface | string {
         $headersWithPlatformVersion = array_filter(
             $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
@@ -447,7 +485,7 @@ final readonly class Detector implements DetectorInterface
             return $this->getVersion($platformVersion);
         }
 
-        return null;
+        return new NullVersion();
     }
 
     /**
@@ -455,11 +493,9 @@ final readonly class Detector implements DetectorInterface
      *
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @return array{0: string|null, 1: string|null, 2: string|null, 3: string|null}
-     *
      * @throws void
      */
-    private function getPlatformData(array $filteredHeaders, string | null $platformCodenameFromDevice): array
+    private function getPlatformData(array $filteredHeaders, string | null $platformCodenameFromDevice): OsInterface
     {
         $platformCodename = null;
         $platformVersion  = null;
@@ -481,11 +517,11 @@ final readonly class Detector implements DetectorInterface
 
         try {
             $platformVersion = $this->getPlatformVersion($filteredHeaders, $platformCodename);
-        } catch (NotNumericException | UnexpectedValueException $e) {
+        } catch (NotNumericException $e) {
             $this->logger->info($e);
         }
 
-        if ($platformVersion !== null && $platformHeader instanceof HeaderInterface) {
+        if (is_string($platformVersion)) {
             $derivatePosition = mb_strpos($platformVersion, ';');
 
             if ($derivatePosition !== false) {
@@ -493,10 +529,12 @@ final readonly class Detector implements DetectorInterface
                 $derivate        = trim(mb_substr($platformVersion, $derivatePosition + 1));
                 $platformVersion = null;
 
-                $derivateCodename = $platformHeader->getPlatformCode($derivate);
+                if ($platformHeader instanceof HeaderInterface) {
+                    $derivateCodename = $platformHeader->getPlatformCode($derivate);
 
-                if ($derivateCodename !== null) {
-                    $platformCodename = $derivateCodename;
+                    if ($derivateCodename !== null) {
+                        $platformCodename = $derivateCodename;
+                    }
                 }
             }
         }
@@ -508,18 +546,45 @@ final readonly class Detector implements DetectorInterface
                     useragent: $platformHeader instanceof HeaderInterface ? $platformHeader->getValue() : '',
                 );
 
-                return [
-                    $platform['name'],
-                    $platform['marketingName'],
-                    $platform['manufacturer'],
-                    $platformVersion ?? $platform['version'],
-                ];
+                if (
+                    $platformVersion instanceof VersionInterface
+                    && $platformVersion->getVersion() !== null
+                ) {
+                    return new Os(
+                        name: $platform->getName(),
+                        marketingName: $platform->getMarketingName(),
+                        manufacturer: $platform->getManufacturer(),
+                        version: $platformVersion,
+                        bits: $platform->getBits(),
+                    );
+                }
+
+                return $platform;
             } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
             }
         }
 
-        return [null, null, null, $platformVersion];
+        if (is_string($platformVersion)) {
+            try {
+                $platformVersion = (new VersionBuilder())->set($platformVersion);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                $platformVersion = null;
+            }
+        }
+
+        if (!$platformVersion instanceof VersionInterface) {
+            $platformVersion = null;
+        }
+
+        return new Os(
+            name: null,
+            marketingName: null,
+            manufacturer: new Company(type: 'unknown', name: null, brandname: null),
+            version: $platformVersion ?? new NullVersion(),
+        );
     }
 
     /**
@@ -527,7 +592,7 @@ final readonly class Detector implements DetectorInterface
      *
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @return array{0: string|null, 1: string|null, 2: string|null, 3: string|null, 4: bool|null, 5: int|null, 6: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, 7: string|null, 8: bool, 9: bool, 10: string|null}
+     * @return array{device: DeviceInterface, os: string|null}
      *
      * @throws void
      */
@@ -551,26 +616,7 @@ final readonly class Detector implements DetectorInterface
             try {
                 $deviceLoader = ($this->deviceLoaderFactory)($company);
 
-                [$device, $platformCodenameFromDevice] = $deviceLoader->load($key);
-
-                return [
-                    $device['deviceName'],
-                    $device['marketingName'],
-                    $device['manufacturer'],
-                    $device['brand'],
-                    $device['dualOrientation'],
-                    $device['simCount'],
-                    [
-                        'width' => $device['display']['width'] ?? null,
-                        'height' => $device['display']['height'] ?? null,
-                        'touch' => $device['display']['touch'] ?? null,
-                        'size' => $device['display']['size'] ?? null,
-                    ],
-                    $device['type'],
-                    $device['ismobile'],
-                    $device['istv'],
-                    $platformCodenameFromDevice,
-                ];
+                return $deviceLoader->load($key);
             } catch (UnexpectedValueException $e) {
                 $this->logger->info(
                     new UnexpectedValueException(
@@ -583,22 +629,17 @@ final readonly class Detector implements DetectorInterface
         }
 
         return [
-            null,
-            null,
-            null,
-            null,
-            false,
-            null,
-            [
-                'width' => null,
-                'height' => null,
-                'touch' => null,
-                'size' => null,
-            ],
-            null,
-            false,
-            false,
-            null,
+            'device' => new Device(
+                deviceName: null,
+                marketingName: null,
+                manufacturer: new Company(type: 'unknown', name: null, brandname: null),
+                brand: new Company(type: 'unknown', name: null, brandname: null),
+                type: new \UaDeviceType\Unknown(),
+                display: new Display(width: null, height: null, touch: null, size: null),
+                dualOrientation: null,
+                simCount: null,
+            ),
+            'os' => null,
         ];
     }
 }

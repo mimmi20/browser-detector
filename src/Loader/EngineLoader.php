@@ -20,7 +20,9 @@ use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
 use UaLoader\EngineLoaderInterface;
-use UnexpectedValueException;
+use UaResult\Company\Company;
+use UaResult\Engine\Engine;
+use UaResult\Engine\EngineInterface;
 
 use function array_key_exists;
 use function assert;
@@ -43,13 +45,9 @@ final class EngineLoader implements EngineLoaderInterface
         $initData();
     }
 
-    /**
-     * @return array{name: string|null, version: string|null, manufacturer: string}
-     *
-     * @throws NotFoundException
-     */
+    /** @throws NotFoundException */
     #[Override]
-    public function load(string $key, string $useragent = ''): array
+    public function load(string $key, string $useragent = ''): EngineInterface
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the engine with key "' . $key . '" was not found');
@@ -70,7 +68,7 @@ final class EngineLoader implements EngineLoaderInterface
 
         $name         = $data['name'];
         $version      = $this->getVersion($data['version'], $useragent);
-        $manufacturer = ['type' => 'unknown'];
+        $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer']);
@@ -78,18 +76,6 @@ final class EngineLoader implements EngineLoaderInterface
             $this->logger->info($e);
         }
 
-        try {
-            $versionString = $version->getVersion();
-        } catch (UnexpectedValueException $e) {
-            $this->logger->info($e);
-
-            $versionString = null;
-        }
-
-        return [
-            'name' => $name,
-            'version' => $versionString,
-            'manufacturer' => $manufacturer['type'],
-        ];
+        return new Engine(name: $name, manufacturer: $manufacturer, version: $version);
     }
 }
