@@ -2000,4 +2000,186 @@ final class PlatformLoaderTest extends TestCase
 
         self::assertSame($expected->toArray(), $result->toArray());
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     */
+    public function testInvokeVersionObject7(): void
+    {
+        $platformVersion = '1.2.3.4';
+
+        $exception = new UnexpectedValueException();
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception, []);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $platformData = (object) [
+            'version' => (object) ['value' => $platformVersion],
+            'manufacturer' => 'xyz',
+            'name' => null,
+            'marketingName' => null,
+        ];
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+        $initData
+            ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->willReturn(true);
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($platformData);
+
+        $company = new Company(type: 'xyz-type', name: null, brandname: null);
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('xyz')
+            ->willReturn($company);
+
+        $version = $this->createMock(VersionInterface::class);
+        $version
+            ->expects(self::once())
+            ->method('getVersion')
+            ->with(VersionInterface::IGNORE_MICRO)
+            ->willThrowException($exception);
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::once())
+            ->method('set')
+            ->with($platformVersion)
+            ->willReturn($version);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test/12.0');
+
+        self::assertNull($result->getName());
+        self::assertNull($result->getMarketingName());
+        self::assertSame($company, $result->getManufacturer());
+        self::assertSame($version, $result->getVersion());
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     */
+    public function testInvokeVersionObject8(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $platformData = (object) [
+            'version' => (object) ['factory' => VersionBuilderFactory::class, 'search' => 'abc'],
+            'manufacturer' => 'xyz',
+            'name' => null,
+            'marketingName' => null,
+        ];
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+        $initData
+            ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->willReturn(true);
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($platformData);
+
+        $company = new Company(type: 'xyz-type', name: null, brandname: null);
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('xyz')
+            ->willReturn($company);
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test/12.0');
+
+        self::assertNull($result->getName());
+        self::assertNull($result->getMarketingName());
+        self::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(NullVersion::class, $result->getVersion());
+    }
 }
