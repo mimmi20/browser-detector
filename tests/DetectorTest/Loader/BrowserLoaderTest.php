@@ -20,6 +20,7 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
+use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -27,6 +28,7 @@ use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
+use UaResult\Company\CompanyInterface;
 use UnexpectedValueException;
 
 final class BrowserLoaderTest extends TestCase
@@ -1137,5 +1139,117 @@ final class BrowserLoaderTest extends TestCase
         $this->expectExceptionCode(1);
 
         $object->load('test-key', 'test/1.0');
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     */
+    public function testLoad11(): void
+    {
+        $name           = 'browser-name';
+        $type           = 'test-type';
+        $browserCompany = 'test-company';
+        $browserVersion = '12';
+        $engineName     = 'test-engine';
+
+        $exception = new \UaBrowserType\Exception\NotFoundException();
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception, []);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+        $initData
+            ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->willReturn(true);
+
+        $browserData = (object) [
+            'version' => $browserVersion,
+            'manufacturer' => $browserCompany,
+            'engine' => $engineName,
+            'name' => $name,
+            'type' => $type,
+        ];
+
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($browserData);
+
+        $company = $this->createMock(CompanyInterface::class);
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($browserCompany)
+            ->willReturn($company);
+
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($type)
+            ->willThrowException($exception);
+
+        $version = $this->createMock(VersionInterface::class);
+        $version
+            ->expects(self::never())
+            ->method('getVersion');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::once())
+            ->method('set')
+            ->with($browserVersion)
+            ->willReturn($version);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
+
+        ['client' => $result, 'engine' => $engine] = $object->load('test-key', 'test/1.0');
+
+        self::assertSame($name, $result->getName());
+        self::assertSame($company, $result->getManufacturer());
+        self::assertSame($version, $result->getVersion());
+        self::assertInstanceOf(Unknown::class, $result->getType());
+        self::assertNull($result->getBits());
+        self::assertNull($result->getModus());
+        self::assertSame($engineName, $engine);
     }
 }
