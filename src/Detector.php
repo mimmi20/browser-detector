@@ -54,7 +54,6 @@ use function mb_substr;
 use function reset;
 use function sprintf;
 use function str_contains;
-use function str_starts_with;
 use function trim;
 
 final readonly class Detector implements DetectorInterface
@@ -143,11 +142,11 @@ final readonly class Detector implements DetectorInterface
 
             try {
                 $version    = $platform->getVersion();
-                $iosVersion = $version->getVersion(VersionInterface::IGNORE_MINOR);
+                $iosVersion = (int) $version->getVersion(VersionInterface::IGNORE_MINOR);
 
                 if (
                     $deviceMarketingName !== null
-                    && str_starts_with(mb_strtolower($deviceMarketingName), 'ipad')
+                    && str_contains(mb_strtolower($deviceMarketingName), 'ipad')
                     && $iosVersion >= 13
                 ) {
                     $platformName          = 'iPadOS';

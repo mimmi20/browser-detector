@@ -36,22 +36,14 @@ final class CompanyLoaderTest extends TestCase
      */
     public function testLoadFailHasNot(): void
     {
-        $companyKey  = 'A6Corp';
-        $companyName = 'A6 Corp';
-        $brand       = 'A6 Corp';
-
-        $result            = new stdClass();
-        $result->name      = $companyName;
-        $result->brandname = $brand;
+        $companyKey = 'A6Corp';
 
         $data = $this->createMock(DataInterface::class);
         $data->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $data->expects(self::never())
-            ->method('getItem')
-            ->with($companyKey)
-            ->willReturn($result);
+            ->method('getItem');
         $data->expects(self::once())
             ->method('__invoke');
 

@@ -72,9 +72,7 @@ final class DeviceLoaderTest extends TestCase
             ->willReturn(false);
         $initData
             ->expects(self::never())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn(null);
+            ->method('getItem');
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader

@@ -31,7 +31,6 @@ use PHPUnit\Framework\Constraint\IsInstanceOf;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaResult\Company\Company;
@@ -81,9 +80,7 @@ final class PlatformLoaderTest extends TestCase
             ->willReturn(false);
         $initData
             ->expects(self::never())
-            ->method('getItem')
-            ->with('test-key')
-            ->willThrowException(new InvalidArgumentException('fail'));
+            ->method('getItem');
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -1532,8 +1529,7 @@ final class PlatformLoaderTest extends TestCase
             ->method('warning');
         $logger
             ->expects(self::never())
-            ->method('error')
-            ->with(new IsInstanceOf(UnexpectedValueException::class), []);
+            ->method('error');
         $logger
             ->expects(self::never())
             ->method('critical');
