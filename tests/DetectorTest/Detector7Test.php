@@ -315,12 +315,22 @@ final class Detector7Test extends TestCase
             ->method('getVersion')
             ->willReturnCallback(
                 static function (int $mode) use ($matcher, $completePlatformVersion, $platformVersion): string {
-                    match ($matcher->numberOfInvocations()) {
-                        2 => self::assertSame(VersionInterface::IGNORE_MINOR, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        2 => self::assertSame(
+                            VersionInterface::IGNORE_MINOR,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         2 => $platformVersion,
                         default => $completePlatformVersion,
                     };
@@ -635,12 +645,22 @@ final class Detector7Test extends TestCase
             ->method('getVersion')
             ->willReturnCallback(
                 static function (int $mode) use ($matcher, $completePlatformVersion, $platformVersion): string {
-                    match ($matcher->numberOfInvocations()) {
-                        2 => self::assertSame(VersionInterface::IGNORE_MINOR, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        2 => self::assertSame(
+                            VersionInterface::IGNORE_MINOR,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         2 => $platformVersion,
                         default => $completePlatformVersion,
                     };
@@ -955,12 +975,22 @@ final class Detector7Test extends TestCase
             ->method('getVersion')
             ->willReturnCallback(
                 static function (int $mode) use ($matcher, $completePlatformVersion, $platformVersion): string {
-                    match ($matcher->numberOfInvocations()) {
-                        2 => self::assertSame(VersionInterface::IGNORE_MINOR, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        2 => self::assertSame(
+                            VersionInterface::IGNORE_MINOR,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         2 => $platformVersion,
                         default => $completePlatformVersion,
                     };

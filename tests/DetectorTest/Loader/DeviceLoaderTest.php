@@ -177,13 +177,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -239,12 +241,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -314,13 +318,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -376,12 +382,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -451,13 +459,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -513,12 +523,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -588,13 +600,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -650,12 +664,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -725,13 +741,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -787,12 +805,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -862,13 +882,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -924,12 +946,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -1509,13 +1533,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -1571,12 +1597,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };

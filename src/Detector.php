@@ -142,7 +142,7 @@ final readonly class Detector implements DetectorInterface
 
             try {
                 $version    = $platform->getVersion();
-                $iosVersion = (int) $version->getVersion(VersionInterface::IGNORE_MINOR);
+                $iosVersion = $version->getVersion(VersionInterface::IGNORE_MINOR);
 
                 if (
                     $deviceMarketingName !== null

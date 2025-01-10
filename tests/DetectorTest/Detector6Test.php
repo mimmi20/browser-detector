@@ -119,8 +119,8 @@ final class Detector6Test extends TestCase
                     $invocation = $matcher->numberOfInvocations();
 
                     match ($invocation) {
-                        2 => self::assertSame('HarmonyOS', $derivate),
-                        default => self::assertNull($derivate),
+                        2 => self::assertSame('HarmonyOS', $derivate, (string) $invocation),
+                        default => self::assertNull($derivate, (string) $invocation),
                     };
 
                     return match ($invocation) {
@@ -411,8 +411,8 @@ final class Detector6Test extends TestCase
                     $invocation = $matcher->numberOfInvocations();
 
                     match ($invocation) {
-                        2 => self::assertSame('HarmonyOS', $derivate),
-                        default => self::assertNull($derivate),
+                        2 => self::assertSame('HarmonyOS', $derivate, (string) $invocation),
+                        default => self::assertNull($derivate, (string) $invocation),
                     };
 
                     return match ($invocation) {
@@ -703,8 +703,8 @@ final class Detector6Test extends TestCase
                     $invocation = $matcher->numberOfInvocations();
 
                     match ($invocation) {
-                        2 => self::assertSame('HarmonyOS', $derivate),
-                        default => self::assertNull($derivate),
+                        2 => self::assertSame('HarmonyOS', $derivate, (string) $invocation),
+                        default => self::assertNull($derivate, (string) $invocation),
                     };
 
                     return match ($invocation) {

@@ -338,12 +338,22 @@ final class PlatformLoaderTest extends TestCase
             ->method('getVersion')
             ->willReturnCallback(
                 static function (int $mode) use ($matcher): string {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame(VersionInterface::IGNORE_MICRO, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame(
+                            VersionInterface::IGNORE_MICRO,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         1 => '1.0',
                         default => '1.0.0',
                     };
@@ -989,12 +999,22 @@ final class PlatformLoaderTest extends TestCase
             ->method('getVersion')
             ->willReturnCallback(
                 static function (int $mode) use ($matcher): string {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame(VersionInterface::IGNORE_MICRO, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame(
+                            VersionInterface::IGNORE_MICRO,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         1 => '1.0',
                         default => '1.0.0',
                     };
@@ -1194,12 +1214,22 @@ final class PlatformLoaderTest extends TestCase
             ->method('getVersion')
             ->willReturnCallback(
                 static function (int $mode) use ($matcher): string {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame(VersionInterface::IGNORE_MICRO, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame(
+                            VersionInterface::IGNORE_MICRO,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         1 => '1.0',
                         default => '1.0.0',
                     };
@@ -1669,12 +1699,22 @@ final class PlatformLoaderTest extends TestCase
             ->method('getVersion')
             ->willReturnCallback(
                 static function (int $mode) use ($matcher): string {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame(VersionInterface::IGNORE_MICRO, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame(
+                            VersionInterface::IGNORE_MICRO,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         1 => '1.0',
                         default => '1.0.0',
                     };
@@ -1780,12 +1820,22 @@ final class PlatformLoaderTest extends TestCase
             ->method('getVersion')
             ->willReturnCallback(
                 static function (int $mode) use ($matcher): string {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame(VersionInterface::IGNORE_MICRO, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame(
+                            VersionInterface::IGNORE_MICRO,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         1 => '1.2',
                         default => '1.2.0',
                     };

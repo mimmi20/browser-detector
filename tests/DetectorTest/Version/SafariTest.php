@@ -166,14 +166,16 @@ final class SafariTest extends TestCase
             ->method('set')
             ->willReturnCallback(
                 static function (string $version) use ($matcher, $mappedVersionOne, $exception): Version {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('4.0', $version),
-                default => self::assertSame('1.0', $version),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('4.0', $version, (string) $invocation),
+                        default => self::assertSame('1.0', $version, (string) $invocation),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         1 => $mappedVersionOne,
-                default => throw $exception,
+                        default => throw $exception,
                     };
                 },
             );
@@ -244,12 +246,14 @@ final class SafariTest extends TestCase
             ->method('set')
             ->willReturnCallback(
                 static function (string $version) use ($matcher, $mappedVersionOne, $exception): Version {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('537.36', $version),
-                        default => self::assertSame('1.0', $version),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('537.36', $version, (string) $invocation),
+                        default => self::assertSame('1.0', $version, (string) $invocation),
                     };
 
-                    return match ($matcher->numberOfInvocations()) {
+                    return match ($invocation) {
                         1 => $mappedVersionOne,
                         default => throw $exception,
                     };
