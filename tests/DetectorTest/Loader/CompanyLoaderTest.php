@@ -16,12 +16,12 @@ namespace BrowserDetectorTest\Loader;
 use AssertionError;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 use stdClass;
+use UaLoader\Exception\NotFoundException;
 
 use function assert;
 

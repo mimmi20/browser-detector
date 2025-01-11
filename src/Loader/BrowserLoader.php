@@ -22,6 +22,7 @@ use stdClass;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UaLoader\BrowserLoaderInterface;
+use UaLoader\Exception\NotFoundException;
 use UaResult\Browser\Browser;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;

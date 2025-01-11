@@ -17,7 +17,6 @@ use AssertionError;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\TestFactory;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -27,6 +26,7 @@ use RuntimeException;
 use Stringable;
 use UaDeviceType\TypeInterface;
 use UaDeviceType\TypeLoaderInterface;
+use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
 final class DeviceLoaderTest extends TestCase

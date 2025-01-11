@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\FirefoxOsFactory;
@@ -33,6 +32,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
+use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Os\Os;
 use UnexpectedValueException;

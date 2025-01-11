@@ -21,6 +21,7 @@ use stdClass;
 use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
 use UaLoader\DeviceLoaderInterface;
+use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
 use UaResult\Device\DeviceInterface;

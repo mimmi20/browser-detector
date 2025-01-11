@@ -15,7 +15,6 @@ namespace UserAgentsTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\Exception\NotNumericException;
 use DateInterval;
 use Exception;
@@ -36,6 +35,7 @@ use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 use Stringable;
+use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
 use function assert;

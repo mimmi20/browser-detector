@@ -17,7 +17,6 @@ use AssertionError;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
@@ -28,6 +27,7 @@ use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
+use UaLoader\Exception\NotFoundException;
 use UaResult\Company\CompanyInterface;
 use UnexpectedValueException;
 

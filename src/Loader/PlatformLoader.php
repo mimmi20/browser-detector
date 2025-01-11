@@ -20,6 +20,7 @@ use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
+use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaResult\Company\Company;
 use UaResult\Os\Os;

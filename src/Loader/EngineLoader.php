@@ -20,6 +20,7 @@ use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
 use UaLoader\EngineLoaderInterface;
+use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;

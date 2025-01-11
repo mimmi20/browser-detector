@@ -17,6 +17,7 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use Override;
 use RuntimeException;
 use stdClass;
+use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 
 use function assert;

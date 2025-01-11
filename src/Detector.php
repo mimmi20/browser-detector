@@ -27,6 +27,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 use UaBrowserType\Unknown;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
+use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
@@ -352,7 +353,7 @@ final readonly class Detector implements DetectorInterface
                 }
 
                 return $engine;
-            } catch (UnexpectedValueException $e) {
+            } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
         }
@@ -616,7 +617,7 @@ final readonly class Detector implements DetectorInterface
                 $deviceLoader = ($this->deviceLoaderFactory)($company);
 
                 return $deviceLoader->load($key);
-            } catch (UnexpectedValueException $e) {
+            } catch (NotFoundException $e) {
                 $this->logger->info(
                     new UnexpectedValueException(
                         sprintf('Device %s of Manufacturer %s was not found', $key, $company),
