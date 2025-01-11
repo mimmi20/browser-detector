@@ -16,7 +16,7 @@ namespace BrowserDetectorTest\Loader;
 use AssertionError;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Helper\DataInterface;
+use BrowserDetector\Loader\DataInterface;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;

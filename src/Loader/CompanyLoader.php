@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\Helper\DataInterface;
 use Override;
 use RuntimeException;
 use stdClass;

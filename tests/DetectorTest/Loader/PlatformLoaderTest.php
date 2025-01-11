@@ -14,7 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Helper\DataInterface;
+use BrowserDetector\Loader\DataInterface;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\FirefoxOsFactory;

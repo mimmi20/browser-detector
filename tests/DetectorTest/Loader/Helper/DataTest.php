@@ -13,7 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Loader\Helper;
 
-use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Data;
 use InvalidArgumentException;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamWrapper;

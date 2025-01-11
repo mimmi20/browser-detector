@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Override;

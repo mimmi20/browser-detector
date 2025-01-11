@@ -15,7 +15,7 @@ namespace BrowserDetectorTest\Loader;
 
 use AssertionError;
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\Helper\DataInterface;
+use BrowserDetector\Loader\DataInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
