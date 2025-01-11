@@ -174,7 +174,17 @@ final class IosTest extends TestCase
     {
         $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
         $exception = new NotFoundException('not found');
-        $version   = $this->createMock(VersionInterface::class);
+
+        $version = $this->createMock(VersionInterface::class);
+        $version
+            ->expects(self::exactly(2))
+            ->method('getVersion')
+            ->willReturnMap(
+                [
+                    [VersionInterface::IGNORE_MICRO, null],
+                    [VersionInterface::IGNORE_MINOR, null],
+                ],
+            );
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder

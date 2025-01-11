@@ -13,10 +13,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\Helper\DataInterface;
 use Override;
 use RuntimeException;
 use stdClass;
+use UaLoader\Exception\NotFoundException;
+use UaResult\Company\Company;
 
 use function assert;
 use function is_string;
@@ -29,13 +30,9 @@ final readonly class CompanyLoader implements CompanyLoaderInterface
         $initData();
     }
 
-    /**
-     * @return array{type: string, name: string|null, brandname: string|null}
-     *
-     * @throws NotFoundException
-     */
+    /** @throws NotFoundException */
     #[Override]
-    public function load(string $key): array
+    public function load(string $key): Company
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the company with key "' . $key . '" was not found');
@@ -57,10 +54,6 @@ final readonly class CompanyLoader implements CompanyLoaderInterface
             '"brandname" property is required',
         );
 
-        return [
-            'type' => $key,
-            'name' => $companyData->name,
-            'brandname' => $companyData->brandname,
-        ];
+        return new Company(type: $key, name: $companyData->name, brandname: $companyData->brandname);
     }
 }

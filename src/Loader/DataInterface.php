@@ -11,10 +11,11 @@
 
 declare(strict_types = 1);
 
-namespace BrowserDetector\Loader\Helper;
+namespace BrowserDetector\Loader;
 
 use Countable;
 use RuntimeException;
+use stdClass;
 
 interface DataInterface extends Countable
 {
@@ -22,8 +23,8 @@ interface DataInterface extends Countable
     public function __invoke(): void;
 
     /** @throws void */
-    public function getItem(string $cacheId): mixed;
+    public function getItem(string $stringKey): stdClass | null;
 
     /** @throws void */
-    public function hasItem(string $cacheId): bool;
+    public function hasItem(string $stringKey): bool;
 }

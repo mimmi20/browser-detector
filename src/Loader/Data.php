@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace BrowserDetector\Loader\Helper;
+namespace BrowserDetector\Loader;
 
 use FilterIterator;
 use Iterator;
@@ -115,16 +115,16 @@ final class Data implements DataInterface
 
     /** @throws void */
     #[Override]
-    public function getItem(string $cacheId): mixed
+    public function getItem(string $stringKey): stdClass | null
     {
-        return $this->items[$cacheId] ?? null;
+        return $this->items[$stringKey] ?? null;
     }
 
     /** @throws void */
     #[Override]
-    public function hasItem(string $cacheId): bool
+    public function hasItem(string $stringKey): bool
     {
-        return array_key_exists($cacheId, $this->items);
+        return array_key_exists($stringKey, $this->items);
     }
 
     /**

@@ -16,7 +16,7 @@ namespace BrowserDetectorTest;
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
@@ -24,7 +24,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
-use Stringable;
+use UaDeviceType\Smartphone;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\DeviceLoaderInterface;
 use UaLoader\EngineLoaderInterface;
@@ -32,6 +32,11 @@ use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
+use UaResult\Company\Company;
+use UaResult\Device\Device;
+use UaResult\Device\Display;
+use UaResult\Engine\Engine;
+use UaResult\Os\Os;
 use UnexpectedValueException;
 
 final class Detector7Test extends TestCase
@@ -41,25 +46,21 @@ final class Detector7Test extends TestCase
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
      */
-    public function testGetBrowserWithoutCacheButWithClientCode13(): void
+    public function testGetBrowserWithoutCacheButWithPlatformCode14(): void
     {
-        $hash                     = 'test-hash';
-        $headerValue              = 'abc';
-        $headers                  = ['xyz' => $headerValue];
-        $clientCode               = 'test-client';
-        $clientVersion            = '1.2.34.56';
-        $engineCodenameFromClient = 'blink';
-        $engineCode               = 'webkit';
-        $platformCode             = 'ios';
-        $platformFromDevice       = 'ios';
-        $deviceCodeForLoader      = 'apple=apple ipad';
-        $platformVersion          = '14.0.0';
-
-        $exception = new UnexpectedValueException('device not found');
+        $hash                    = 'test-hash';
+        $headerValue             = 'abc';
+        $headers                 = ['xyz' => $headerValue];
+        $deviceCodeForLoader     = 'apple=apple ipad';
+        $platformFromDevice      = 'ios';
+        $platformCode            = 'ios';
+        $platformVersion         = '13';
+        $completePlatformVersion = '13.0.0';
+        $engineCode              = 'webkit';
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -82,10 +83,11 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasDeviceIsMobile')
-            ->willReturn(false);
+            ->willReturn(true);
         $header
-            ->expects(self::never())
-            ->method('getDeviceIsMobile');
+            ->expects(self::once())
+            ->method('getDeviceIsMobile')
+            ->willReturn(false);
         $header
             ->expects(self::once())
             ->method('hasDeviceCode')
@@ -97,20 +99,17 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasClientCode')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getClientCode')
-            ->willReturn($clientCode);
+            ->expects(self::never())
+            ->method('getClientCode');
         $header
             ->expects(self::once())
             ->method('hasClientVersion')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getClientVersion')
-            ->with($clientCode)
-            ->willReturn($clientVersion);
+            ->expects(self::never())
+            ->method('getClientVersion');
         $header
             ->expects(self::once())
             ->method('hasPlatformCode')
@@ -118,14 +117,17 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformCode')
-            ->willReturn($platformCode);
+            ->with(null)
+            ->willReturn(null);
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
-            ->willReturn(false);
+            ->willReturn(true);
         $header
-            ->expects(self::never())
-            ->method('getPlatformVersion');
+            ->expects(self::once())
+            ->method('getPlatformVersion')
+            ->with($platformCode)
+            ->willReturn($platformVersion);
         $header
             ->expects(self::never())
             ->method('hasEngineCode');
@@ -135,12 +137,10 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasEngineVersion')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getEngineVersion')
-            ->with($engineCode)
-            ->willThrowException($exception);
+            ->expects(self::never())
+            ->method('getEngineVersion');
 
         $filteredHeaders = ['abc' => $header];
 
@@ -161,22 +161,22 @@ final class Detector7Test extends TestCase
                     'size' => 6.1,
                 ],
                 'type' => 'smartphone',
-                'ismobile' => true,
+                'ismobile' => false,
                 'istv' => false,
                 'bits' => null,
             ],
             'os' => [
                 'name' => 'iPadOS',
                 'marketingName' => 'iPadOS',
-                'version' => $platformVersion,
+                'version' => $completePlatformVersion,
                 'manufacturer' => 'apple',
             ],
             'client' => [
-                'name' => 'Android WebView',
-                'version' => $clientVersion,
-                'manufacturer' => 'google',
-                'type' => 'browser',
-                'isbot' => true,
+                'name' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
+                'type' => 'unknown',
+                'isbot' => false,
             ],
             'engine' => [
                 'name' => 'WebKit',
@@ -187,9 +187,8 @@ final class Detector7Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -251,24 +250,22 @@ final class Detector7Test extends TestCase
             ->with('apple ipad')
             ->willReturn(
                 [
-                    [
-                        'deviceName' => 'iPad',
-                        'marketingName' => 'iPad',
-                        'manufacturer' => 'apple',
-                        'brand' => 'apple',
-                        'dualOrientation' => null,
-                        'simCount' => null,
-                        'display' => [
-                            'width' => 3120,
-                            'height' => 1440,
-                            'touch' => true,
-                            'size' => 6.1,
-                        ],
-                        'type' => 'smartphone',
-                        'ismobile' => true,
-                        'istv' => false,
-                    ],
-                    $platformFromDevice,
+                    'device' => new Device(
+                        deviceName: 'iPad',
+                        marketingName: 'iPad',
+                        manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                        brand: new Company(type: 'apple', name: null, brandname: null),
+                        type: new Smartphone(),
+                        display: new Display(
+                            width: 3120,
+                            height: 1440,
+                            touch: true,
+                            size: 6.1,
+                        ),
+                        dualOrientation: null,
+                        simCount: null,
+                    ),
+                    'os' => $platformFromDevice,
                 ],
             );
 
@@ -285,91 +282,80 @@ final class Detector7Test extends TestCase
             ->method('load')
             ->with($platformCode, $headerValue)
             ->willReturn(
-                [
-                    'name' => 'iOS',
-                    'marketingName' => 'iOS',
-                    'version' => $platformVersion,
-                    'manufacturer' => 'apple',
-                ],
+                new Os(
+                    name: 'iOS',
+                    marketingName: 'iOS',
+                    manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
             );
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($clientCode, $headerValue)
-            ->willReturn(
-                [
-                    [
-                        'name' => 'Android WebView',
-                        'version' => null,
-                        'manufacturer' => 'google',
-                        'type' => 'browser',
-                        'isbot' => true,
-                    ],
-                    $engineCodenameFromClient,
-                ],
-            );
+            ->expects(self::never())
+            ->method('load');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
             ->expects(self::once())
             ->method('load')
-            ->with($engineCode, '')
+            ->with($engineCode)
             ->willReturn(
-                [
-                    'name' => 'WebKit',
-                    'version' => null,
-                    'manufacturer' => 'apple',
-                ],
+                new Engine(
+                    name: 'WebKit',
+                    manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
             );
 
-        $version1 = $this->createMock(VersionInterface::class);
-        $version1
-            ->expects(self::once())
+        $version = $this->createMock(VersionInterface::class);
+        $matcher = self::exactly(3);
+        $version
+            ->expects($matcher)
             ->method('getVersion')
-            ->with(VersionInterface::IGNORE_MINOR)
-            ->willReturn((string) (int) $platformVersion);
+            ->willReturnCallback(
+                static function (int $mode) use ($matcher, $completePlatformVersion, $platformVersion): string {
+                    $invocation = $matcher->numberOfInvocations();
 
-        $versionBuilder1 = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder1
+                    match ($invocation) {
+                        2 => self::assertSame(
+                            VersionInterface::IGNORE_MINOR,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                    };
+
+                    return match ($invocation) {
+                        2 => $platformVersion,
+                        default => $completePlatformVersion,
+                    };
+                },
+            );
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($platformVersion)
-            ->willReturn($version1);
-        $versionBuilder1
+            ->willReturn($version);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionBuilder1
-            ->expects(self::never())
-            ->method('setRegex');
-
-        $version2 = $this->createMock(VersionInterface::class);
-        $version2
-            ->expects(self::once())
-            ->method('getVersion')
-            ->with(VersionInterface::COMPLETE)
-            ->willReturn($clientVersion);
-
-        $versionBuilder2 = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder2
-            ->expects(self::once())
-            ->method('set')
-            ->with($clientVersion)
-            ->willReturn($version2);
-        $versionBuilder2
-            ->expects(self::never())
-            ->method('detectVersion');
-        $versionBuilder2
-            ->expects(self::never())
-            ->method('setRegex');
 
         $versionBuilderFactory = $this->createMock(VersionBuilderFactoryInterface::class);
         $versionBuilderFactory
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('__invoke')
             ->with(null)
-            ->willReturn($versionBuilder1, $versionBuilder2);
+            ->willReturn($versionBuilder);
 
         $detector = new Detector(
             $logger,
@@ -390,26 +376,21 @@ final class Detector7Test extends TestCase
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
      */
-    public function testGetBrowserWithoutCacheButWithClientCode14(): void
+    public function testGetBrowserWithoutCacheButWithPlatformCode15(): void
     {
-        $hash                     = 'test-hash';
-        $headerValue              = 'abc';
-        $headers                  = ['xyz' => $headerValue];
-        $clientCode               = 'test-client';
-        $clientVersion            = '1.2.34.56';
-        $engineCodenameFromClient = 'blink';
-        $engineCode               = 'webkit';
-        $platformCode             = 'ios';
-        $platformFromDevice       = 'ios';
-        $deviceCodeForLoader      = 'apple=apple ipad';
-        $platformVersion          = 'a.x.y';
-
-        $exception1 = new UnexpectedValueException('device not found');
-        $exception2 = new NotNumericException('device not found');
+        $hash                    = 'test-hash';
+        $headerValue             = 'abc';
+        $headers                 = ['xyz' => $headerValue];
+        $deviceCodeForLoader     = 'apple=apple ipad';
+        $platformFromDevice      = 'ios';
+        $platformCode            = 'ios';
+        $platformVersion         = '14';
+        $completePlatformVersion = '14.0.0';
+        $engineCode              = 'webkit';
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -432,10 +413,11 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasDeviceIsMobile')
-            ->willReturn(false);
+            ->willReturn(true);
         $header
-            ->expects(self::never())
-            ->method('getDeviceIsMobile');
+            ->expects(self::once())
+            ->method('getDeviceIsMobile')
+            ->willReturn(false);
         $header
             ->expects(self::once())
             ->method('hasDeviceCode')
@@ -447,20 +429,17 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasClientCode')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getClientCode')
-            ->willReturn($clientCode);
+            ->expects(self::never())
+            ->method('getClientCode');
         $header
             ->expects(self::once())
             ->method('hasClientVersion')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getClientVersion')
-            ->with($clientCode)
-            ->willReturn($clientVersion);
+            ->expects(self::never())
+            ->method('getClientVersion');
         $header
             ->expects(self::once())
             ->method('hasPlatformCode')
@@ -468,14 +447,17 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformCode')
-            ->willReturn($platformCode);
+            ->with(null)
+            ->willReturn(null);
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
-            ->willReturn(false);
+            ->willReturn(true);
         $header
-            ->expects(self::never())
-            ->method('getPlatformVersion');
+            ->expects(self::once())
+            ->method('getPlatformVersion')
+            ->with($platformCode)
+            ->willReturn($platformVersion);
         $header
             ->expects(self::never())
             ->method('hasEngineCode');
@@ -485,12 +467,10 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasEngineVersion')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getEngineVersion')
-            ->with($engineCode)
-            ->willThrowException($exception1);
+            ->expects(self::never())
+            ->method('getEngineVersion');
 
         $filteredHeaders = ['abc' => $header];
 
@@ -511,22 +491,22 @@ final class Detector7Test extends TestCase
                     'size' => 6.1,
                 ],
                 'type' => 'smartphone',
-                'ismobile' => true,
+                'ismobile' => false,
                 'istv' => false,
                 'bits' => null,
             ],
             'os' => [
-                'name' => 'iOS',
-                'marketingName' => 'iOS',
-                'version' => $platformVersion,
+                'name' => 'iPadOS',
+                'marketingName' => 'iPadOS',
+                'version' => $completePlatformVersion,
                 'manufacturer' => 'apple',
             ],
             'client' => [
-                'name' => 'Android WebView',
-                'version' => $clientVersion,
-                'manufacturer' => 'google',
-                'type' => 'browser',
-                'isbot' => true,
+                'name' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
+                'type' => 'unknown',
+                'isbot' => false,
             ],
             'engine' => [
                 'name' => 'WebKit',
@@ -535,21 +515,10 @@ final class Detector7Test extends TestCase
             ],
         ];
 
-        $logger  = $this->createMock(LoggerInterface::class);
-        $matcher = self::exactly(2);
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects($matcher)
-            ->method('info')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []) use ($matcher, $exception2, $exception1): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($exception2, $message),
-                        default => self::assertSame($exception1, $message),
-                    };
-
-                    self::assertSame([], $context);
-                },
-            );
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -611,24 +580,22 @@ final class Detector7Test extends TestCase
             ->with('apple ipad')
             ->willReturn(
                 [
-                    [
-                        'deviceName' => 'iPad',
-                        'marketingName' => 'iPad',
-                        'manufacturer' => 'apple',
-                        'brand' => 'apple',
-                        'dualOrientation' => null,
-                        'simCount' => null,
-                        'display' => [
-                            'width' => 3120,
-                            'height' => 1440,
-                            'touch' => true,
-                            'size' => 6.1,
-                        ],
-                        'type' => 'smartphone',
-                        'ismobile' => true,
-                        'istv' => false,
-                    ],
-                    $platformFromDevice,
+                    'device' => new Device(
+                        deviceName: 'iPad',
+                        marketingName: 'iPad',
+                        manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                        brand: new Company(type: 'apple', name: null, brandname: null),
+                        type: new Smartphone(),
+                        display: new Display(
+                            width: 3120,
+                            height: 1440,
+                            touch: true,
+                            size: 6.1,
+                        ),
+                        dualOrientation: null,
+                        simCount: null,
+                    ),
+                    'os' => $platformFromDevice,
                 ],
             );
 
@@ -645,91 +612,80 @@ final class Detector7Test extends TestCase
             ->method('load')
             ->with($platformCode, $headerValue)
             ->willReturn(
-                [
-                    'name' => 'iOS',
-                    'marketingName' => 'iOS',
-                    'version' => $platformVersion,
-                    'manufacturer' => 'apple',
-                ],
+                new Os(
+                    name: 'iOS',
+                    marketingName: 'iOS',
+                    manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
             );
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($clientCode, $headerValue)
-            ->willReturn(
-                [
-                    [
-                        'name' => 'Android WebView',
-                        'version' => null,
-                        'manufacturer' => 'google',
-                        'type' => 'browser',
-                        'isbot' => true,
-                    ],
-                    $engineCodenameFromClient,
-                ],
-            );
+            ->expects(self::never())
+            ->method('load');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
             ->expects(self::once())
             ->method('load')
-            ->with($engineCode, '')
+            ->with($engineCode)
             ->willReturn(
-                [
-                    'name' => 'WebKit',
-                    'version' => null,
-                    'manufacturer' => 'apple',
-                ],
+                new Engine(
+                    name: 'WebKit',
+                    manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
             );
 
-        $version1 = $this->createMock(VersionInterface::class);
-        $version1
-            ->expects(self::once())
+        $version = $this->createMock(VersionInterface::class);
+        $matcher = self::exactly(3);
+        $version
+            ->expects($matcher)
             ->method('getVersion')
-            ->with(VersionInterface::IGNORE_MINOR)
-            ->willThrowException($exception2);
+            ->willReturnCallback(
+                static function (int $mode) use ($matcher, $completePlatformVersion, $platformVersion): string {
+                    $invocation = $matcher->numberOfInvocations();
 
-        $versionBuilder1 = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder1
+                    match ($invocation) {
+                        2 => self::assertSame(
+                            VersionInterface::IGNORE_MINOR,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                    };
+
+                    return match ($invocation) {
+                        2 => $platformVersion,
+                        default => $completePlatformVersion,
+                    };
+                },
+            );
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($platformVersion)
-            ->willReturn($version1);
-        $versionBuilder1
+            ->willReturn($version);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionBuilder1
-            ->expects(self::never())
-            ->method('setRegex');
-
-        $version2 = $this->createMock(VersionInterface::class);
-        $version2
-            ->expects(self::once())
-            ->method('getVersion')
-            ->with(VersionInterface::COMPLETE)
-            ->willReturn($clientVersion);
-
-        $versionBuilder2 = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder2
-            ->expects(self::once())
-            ->method('set')
-            ->with($clientVersion)
-            ->willReturn($version2);
-        $versionBuilder2
-            ->expects(self::never())
-            ->method('detectVersion');
-        $versionBuilder2
-            ->expects(self::never())
-            ->method('setRegex');
 
         $versionBuilderFactory = $this->createMock(VersionBuilderFactoryInterface::class);
         $versionBuilderFactory
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('__invoke')
             ->with(null)
-            ->willReturn($versionBuilder1, $versionBuilder2);
+            ->willReturn($versionBuilder);
 
         $detector = new Detector(
             $logger,
@@ -750,26 +706,21 @@ final class Detector7Test extends TestCase
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
      */
-    public function testGetBrowserWithoutCacheButWithClientCode15(): void
+    public function testGetBrowserWithoutCacheButWithPlatformCode16(): void
     {
-        $hash                     = 'test-hash';
-        $headerValue              = 'abc';
-        $headers                  = ['xyz' => $headerValue];
-        $clientCode               = 'test-client';
-        $clientVersion            = '1.2.34.56';
-        $engineCodenameFromClient = 'blink';
-        $engineCode               = 'webkit';
-        $platformCode             = 'ios';
-        $platformFromDevice       = 'ios';
-        $deviceCodeForLoader      = 'apple=apple ipad';
-        $platformVersion          = 'a.x.y';
-
-        $exception1 = new UnexpectedValueException('device not found');
-        $exception2 = new UnexpectedValueException('device not found');
+        $hash                    = 'test-hash';
+        $headerValue             = 'abc';
+        $headers                 = ['xyz' => $headerValue];
+        $deviceCodeForLoader     = 'apple=apple ipad';
+        $platformFromDevice      = 'ios';
+        $platformCode            = 'ios';
+        $platformVersion         = '12';
+        $completePlatformVersion = '12.0.0';
+        $engineCode              = 'webkit';
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -792,10 +743,11 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasDeviceIsMobile')
-            ->willReturn(false);
+            ->willReturn(true);
         $header
-            ->expects(self::never())
-            ->method('getDeviceIsMobile');
+            ->expects(self::once())
+            ->method('getDeviceIsMobile')
+            ->willReturn(false);
         $header
             ->expects(self::once())
             ->method('hasDeviceCode')
@@ -807,20 +759,17 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasClientCode')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getClientCode')
-            ->willReturn($clientCode);
+            ->expects(self::never())
+            ->method('getClientCode');
         $header
             ->expects(self::once())
             ->method('hasClientVersion')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getClientVersion')
-            ->with($clientCode)
-            ->willReturn($clientVersion);
+            ->expects(self::never())
+            ->method('getClientVersion');
         $header
             ->expects(self::once())
             ->method('hasPlatformCode')
@@ -828,14 +777,17 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformCode')
-            ->willReturn($platformCode);
+            ->with(null)
+            ->willReturn(null);
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
-            ->willReturn(false);
+            ->willReturn(true);
         $header
-            ->expects(self::never())
-            ->method('getPlatformVersion');
+            ->expects(self::once())
+            ->method('getPlatformVersion')
+            ->with($platformCode)
+            ->willReturn($platformVersion);
         $header
             ->expects(self::never())
             ->method('hasEngineCode');
@@ -845,12 +797,10 @@ final class Detector7Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasEngineVersion')
-            ->willReturn(true);
+            ->willReturn(false);
         $header
-            ->expects(self::once())
-            ->method('getEngineVersion')
-            ->with($engineCode)
-            ->willThrowException($exception1);
+            ->expects(self::never())
+            ->method('getEngineVersion');
 
         $filteredHeaders = ['abc' => $header];
 
@@ -871,22 +821,22 @@ final class Detector7Test extends TestCase
                     'size' => 6.1,
                 ],
                 'type' => 'smartphone',
-                'ismobile' => true,
+                'ismobile' => false,
                 'istv' => false,
                 'bits' => null,
             ],
             'os' => [
                 'name' => 'iOS',
                 'marketingName' => 'iOS',
-                'version' => $platformVersion,
+                'version' => $completePlatformVersion,
                 'manufacturer' => 'apple',
             ],
             'client' => [
-                'name' => 'Android WebView',
-                'version' => $clientVersion,
-                'manufacturer' => 'google',
-                'type' => 'browser',
-                'isbot' => true,
+                'name' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
+                'type' => 'unknown',
+                'isbot' => false,
             ],
             'engine' => [
                 'name' => 'WebKit',
@@ -895,21 +845,10 @@ final class Detector7Test extends TestCase
             ],
         ];
 
-        $logger  = $this->createMock(LoggerInterface::class);
-        $matcher = self::exactly(2);
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects($matcher)
-            ->method('info')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []) use ($matcher, $exception2, $exception1): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($exception2, $message),
-                        default => self::assertSame($exception1, $message),
-                    };
-
-                    self::assertSame([], $context);
-                },
-            );
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -971,24 +910,22 @@ final class Detector7Test extends TestCase
             ->with('apple ipad')
             ->willReturn(
                 [
-                    [
-                        'deviceName' => 'iPad',
-                        'marketingName' => 'iPad',
-                        'manufacturer' => 'apple',
-                        'brand' => 'apple',
-                        'dualOrientation' => null,
-                        'simCount' => null,
-                        'display' => [
-                            'width' => 3120,
-                            'height' => 1440,
-                            'touch' => true,
-                            'size' => 6.1,
-                        ],
-                        'type' => 'smartphone',
-                        'ismobile' => true,
-                        'istv' => false,
-                    ],
-                    $platformFromDevice,
+                    'device' => new Device(
+                        deviceName: 'iPad',
+                        marketingName: 'iPad',
+                        manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                        brand: new Company(type: 'apple', name: null, brandname: null),
+                        type: new Smartphone(),
+                        display: new Display(
+                            width: 3120,
+                            height: 1440,
+                            touch: true,
+                            size: 6.1,
+                        ),
+                        dualOrientation: null,
+                        simCount: null,
+                    ),
+                    'os' => $platformFromDevice,
                 ],
             );
 
@@ -1005,91 +942,80 @@ final class Detector7Test extends TestCase
             ->method('load')
             ->with($platformCode, $headerValue)
             ->willReturn(
-                [
-                    'name' => 'iOS',
-                    'marketingName' => 'iOS',
-                    'version' => $platformVersion,
-                    'manufacturer' => 'apple',
-                ],
+                new Os(
+                    name: 'iOS',
+                    marketingName: 'iOS',
+                    manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
             );
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($clientCode, $headerValue)
-            ->willReturn(
-                [
-                    [
-                        'name' => 'Android WebView',
-                        'version' => null,
-                        'manufacturer' => 'google',
-                        'type' => 'browser',
-                        'isbot' => true,
-                    ],
-                    $engineCodenameFromClient,
-                ],
-            );
+            ->expects(self::never())
+            ->method('load');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
             ->expects(self::once())
             ->method('load')
-            ->with($engineCode, '')
+            ->with($engineCode)
             ->willReturn(
-                [
-                    'name' => 'WebKit',
-                    'version' => null,
-                    'manufacturer' => 'apple',
-                ],
+                new Engine(
+                    name: 'WebKit',
+                    manufacturer: new Company(type: 'apple', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
             );
 
-        $version1 = $this->createMock(VersionInterface::class);
-        $version1
-            ->expects(self::once())
+        $version = $this->createMock(VersionInterface::class);
+        $matcher = self::exactly(3);
+        $version
+            ->expects($matcher)
             ->method('getVersion')
-            ->with(VersionInterface::IGNORE_MINOR)
-            ->willThrowException($exception2);
+            ->willReturnCallback(
+                static function (int $mode) use ($matcher, $completePlatformVersion, $platformVersion): string {
+                    $invocation = $matcher->numberOfInvocations();
 
-        $versionBuilder1 = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder1
+                    match ($invocation) {
+                        2 => self::assertSame(
+                            VersionInterface::IGNORE_MINOR,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                        default => self::assertSame(
+                            VersionInterface::COMPLETE,
+                            $mode,
+                            (string) $invocation,
+                        ),
+                    };
+
+                    return match ($invocation) {
+                        2 => $platformVersion,
+                        default => $completePlatformVersion,
+                    };
+                },
+            );
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($platformVersion)
-            ->willReturn($version1);
-        $versionBuilder1
+            ->willReturn($version);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionBuilder1
-            ->expects(self::never())
-            ->method('setRegex');
-
-        $version2 = $this->createMock(VersionInterface::class);
-        $version2
-            ->expects(self::once())
-            ->method('getVersion')
-            ->with(VersionInterface::COMPLETE)
-            ->willReturn($clientVersion);
-
-        $versionBuilder2 = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder2
-            ->expects(self::once())
-            ->method('set')
-            ->with($clientVersion)
-            ->willReturn($version2);
-        $versionBuilder2
-            ->expects(self::never())
-            ->method('detectVersion');
-        $versionBuilder2
-            ->expects(self::never())
-            ->method('setRegex');
 
         $versionBuilderFactory = $this->createMock(VersionBuilderFactoryInterface::class);
         $versionBuilderFactory
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('__invoke')
             ->with(null)
-            ->willReturn($versionBuilder1, $versionBuilder2);
+            ->willReturn($versionBuilder);
 
         $detector = new Detector(
             $logger,

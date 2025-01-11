@@ -13,9 +13,9 @@
       "architecture": "[arm64-v8a, armeabi-v7a, armeabi]",
       "deviceName": null,
       "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
       "simCount": null,
       "display": {
         "width": null,
@@ -23,7 +23,7 @@
         "touch": null,
         "size": null
       },
-      "type": null,
+      "type": "unknown",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -44,7 +44,7 @@
     "engine": {
       "name": null,
       "version": null,
-      "manufacturer": null
+      "manufacturer": "unknown"
     }
   }
 ]

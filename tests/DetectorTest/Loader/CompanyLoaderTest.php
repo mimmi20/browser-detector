@@ -15,13 +15,13 @@ namespace BrowserDetectorTest\Loader;
 
 use AssertionError;
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Loader\DataInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 use stdClass;
+use UaLoader\Exception\NotFoundException;
 
 use function assert;
 
@@ -36,22 +36,14 @@ final class CompanyLoaderTest extends TestCase
      */
     public function testLoadFailHasNot(): void
     {
-        $companyKey  = 'A6Corp';
-        $companyName = 'A6 Corp';
-        $brand       = 'A6 Corp';
-
-        $result            = new stdClass();
-        $result->name      = $companyName;
-        $result->brandname = $brand;
+        $companyKey = 'A6Corp';
 
         $data = $this->createMock(DataInterface::class);
         $data->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $data->expects(self::never())
-            ->method('getItem')
-            ->with($companyKey)
-            ->willReturn($result);
+            ->method('getItem');
         $data->expects(self::once())
             ->method('__invoke');
 
@@ -123,17 +115,16 @@ final class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($data);
 
         $result = $object->load($companyKey);
-        self::assertIsArray($result);
 
         self::assertSame(
             $companyName,
-            $result['name'],
-            'Expected Company name to be "' . $companyName . '" (was "' . $result['name'] . '")',
+            $result->getName(),
+            'Expected Company name to be "' . $companyName . '" (was "' . $result->getName() . '")',
         );
         self::assertSame(
             $brand,
-            $result['brandname'],
-            'Expected brand name to be "' . $brand . '" (was "' . $result['brandname'] . '")',
+            $result->getBrandName(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")',
         );
     }
 

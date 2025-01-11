@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\Helper\Data;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;

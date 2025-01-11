@@ -15,11 +15,9 @@ namespace BrowserDetectorTest\Loader;
 
 use AssertionError;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\DataInterface;
 use BrowserDetector\Loader\DeviceLoader;
-use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\TestFactory;
-use BrowserDetector\Version\VersionBuilderFactory;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -28,6 +26,7 @@ use RuntimeException;
 use Stringable;
 use UaDeviceType\TypeInterface;
 use UaDeviceType\TypeLoaderInterface;
+use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
 final class DeviceLoaderTest extends TestCase
@@ -73,9 +72,7 @@ final class DeviceLoaderTest extends TestCase
             ->willReturn(false);
         $initData
             ->expects(self::never())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn(false);
+            ->method('getItem');
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -167,255 +164,6 @@ final class DeviceLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      */
-    public function testInvokeNoVersion(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $deviceData = (object) [
-            'version' => (object) ['class' => null],
-            'manufacturer' => 'unknown1',
-            'brand' => 'unknown2',
-            'type' => 'unknown',
-            'deviceName' => null,
-            'marketingName' => null,
-            'platform' => null,
-            'display' => ['width' => null, 'height' => null, 'touch' => null, 'size' => null],
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($deviceData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $matcher       = self::exactly(2);
-        $companyLoader
-            ->expects($matcher)
-            ->method('load')
-            ->willReturnCallback(
-                static function (string $key) use ($matcher): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
-                    };
-
-                    return match ($matcher->numberOfInvocations()) {
-                        1 => ['type' => 'loaded-type-1'],
-                        default => ['type' => 'loaded-type-2'],
-                    };
-                },
-            );
-
-        $type = $this->createMock(TypeInterface::class);
-        $type
-            ->expects(self::once())
-            ->method('getType')
-            ->willReturn('device-type');
-        $type
-            ->expects(self::once())
-            ->method('isMobile')
-            ->willReturn(true);
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with('unknown')
-            ->willReturn($type);
-
-        $object = new DeviceLoader($logger, $initData, $companyLoader, $typeLoader);
-
-        $result = $object->load('test-key');
-
-        $expected = [
-            [
-                'deviceName' => null,
-                'marketingName' => null,
-                'manufacturer' => 'loaded-type-1',
-                'brand' => 'loaded-type-2',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'device-type',
-                'ismobile' => true,
-                'istv' => false,
-            ],
-            null,
-        ];
-
-        self::assertSame($expected, $result);
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testInvokeGenericVersionAndPlatformInvalidException(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $deviceData = (object) [
-            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
-            'manufacturer' => 'unknown1',
-            'brand' => 'unknown2',
-            'type' => 'unknown',
-            'deviceName' => null,
-            'marketingName' => null,
-            'platform' => 'test-platform',
-            'display' => ['width' => null, 'height' => null, 'touch' => null, 'size' => null],
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($deviceData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $matcher       = self::exactly(2);
-        $companyLoader
-            ->expects($matcher)
-            ->method('load')
-            ->willReturnCallback(
-                static function (string $key) use ($matcher): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
-                    };
-
-                    return match ($matcher->numberOfInvocations()) {
-                        1 => ['type' => 'loaded-type-1'],
-                        default => ['type' => 'loaded-type-2'],
-                    };
-                },
-            );
-
-        $type = $this->createMock(TypeInterface::class);
-        $type
-            ->expects(self::once())
-            ->method('getType')
-            ->willReturn('device-type');
-        $type
-            ->expects(self::once())
-            ->method('isMobile')
-            ->willReturn(false);
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with('unknown')
-            ->willReturn($type);
-
-        $object = new DeviceLoader($logger, $initData, $companyLoader, $typeLoader);
-
-        $result = $object->load('test-key');
-
-        $expected = [
-            [
-                'deviceName' => null,
-                'marketingName' => null,
-                'manufacturer' => 'loaded-type-1',
-                'brand' => 'loaded-type-2',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'device-type',
-                'ismobile' => false,
-                'istv' => false,
-            ],
-            'test-platform',
-        ];
-
-        self::assertSame($expected, $result);
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
     public function testInvokeVersionAndPlatform(): void
     {
         $typeException     = new \UaDeviceType\Exception\NotFoundException('type');
@@ -429,13 +177,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -491,12 +241,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -523,27 +275,27 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = [
-            [
-                'deviceName' => 'test-device',
-                'marketingName' => 'test-device-name',
-                'manufacturer' => 'unknown',
-                'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'unknown',
-                'ismobile' => false,
-                'istv' => false,
+            'deviceName' => 'test-device',
+            'marketingName' => 'test-device-name',
+            'manufacturer' => 'unknown',
+            'brand' => 'unknown',
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'size' => null,
             ],
-            'test-platform',
+            'type' => 'unknown',
+            'dualOrientation' => null,
+            'simCount' => null,
         ];
 
-        self::assertSame($expected, $result);
+        self::assertArrayHasKey('os', $result);
+        self::assertArrayHasKey('device', $result);
+
+        self::assertSame('test-platform', $result['os']);
+
+        self::assertSame($expected, $result['device']->toArray());
     }
 
     /**
@@ -566,13 +318,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -628,12 +382,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -660,27 +416,27 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = [
-            [
-                'deviceName' => 'test-device',
-                'marketingName' => 'test-device-name',
-                'manufacturer' => 'unknown',
-                'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'unknown',
-                'ismobile' => false,
-                'istv' => false,
+            'deviceName' => 'test-device',
+            'marketingName' => 'test-device-name',
+            'manufacturer' => 'unknown',
+            'brand' => 'unknown',
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'size' => null,
             ],
-            'test-platform',
+            'type' => 'unknown',
+            'dualOrientation' => null,
+            'simCount' => null,
         ];
 
-        self::assertSame($expected, $result);
+        self::assertArrayHasKey('os', $result);
+        self::assertArrayHasKey('device', $result);
+
+        self::assertSame('test-platform', $result['os']);
+
+        self::assertSame($expected, $result['device']->toArray());
     }
 
     /**
@@ -703,13 +459,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -765,12 +523,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -797,27 +557,27 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = [
-            [
-                'deviceName' => 'test-device',
-                'marketingName' => null,
-                'manufacturer' => 'unknown',
-                'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'unknown',
-                'ismobile' => false,
-                'istv' => false,
+            'deviceName' => 'test-device',
+            'marketingName' => null,
+            'manufacturer' => 'unknown',
+            'brand' => 'unknown',
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'size' => null,
             ],
-            'test-platform',
+            'type' => 'unknown',
+            'dualOrientation' => null,
+            'simCount' => null,
         ];
 
-        self::assertSame($expected, $result);
+        self::assertArrayHasKey('os', $result);
+        self::assertArrayHasKey('device', $result);
+
+        self::assertSame('test-platform', $result['os']);
+
+        self::assertSame($expected, $result['device']->toArray());
     }
 
     /**
@@ -840,13 +600,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -902,12 +664,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -934,27 +698,27 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = [
-            [
-                'deviceName' => 'test-device',
-                'marketingName' => null,
-                'manufacturer' => 'unknown',
-                'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'unknown',
-                'ismobile' => false,
-                'istv' => false,
+            'deviceName' => 'test-device',
+            'marketingName' => null,
+            'manufacturer' => 'unknown',
+            'brand' => 'unknown',
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'size' => null,
             ],
-            'test-platform',
+            'type' => 'unknown',
+            'dualOrientation' => null,
+            'simCount' => null,
         ];
 
-        self::assertSame($expected, $result);
+        self::assertArrayHasKey('os', $result);
+        self::assertArrayHasKey('device', $result);
+
+        self::assertSame('test-platform', $result['os']);
+
+        self::assertSame($expected, $result['device']->toArray());
     }
 
     /**
@@ -977,13 +741,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -1039,12 +805,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -1071,27 +839,27 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = [
-            [
-                'deviceName' => null,
-                'marketingName' => 'test-device-name',
-                'manufacturer' => 'unknown',
-                'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'unknown',
-                'ismobile' => false,
-                'istv' => false,
+            'deviceName' => null,
+            'marketingName' => 'test-device-name',
+            'manufacturer' => 'unknown',
+            'brand' => 'unknown',
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'size' => null,
             ],
-            'test-platform',
+            'type' => 'unknown',
+            'dualOrientation' => null,
+            'simCount' => null,
         ];
 
-        self::assertSame($expected, $result);
+        self::assertArrayHasKey('os', $result);
+        self::assertArrayHasKey('device', $result);
+
+        self::assertSame('test-platform', $result['os']);
+
+        self::assertSame($expected, $result['device']->toArray());
     }
 
     /**
@@ -1114,13 +882,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -1176,12 +946,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };
@@ -1208,27 +980,27 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = [
-            [
-                'deviceName' => null,
-                'marketingName' => 'test-device-name',
-                'manufacturer' => 'unknown',
-                'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'unknown',
-                'ismobile' => false,
-                'istv' => false,
+            'deviceName' => null,
+            'marketingName' => 'test-device-name',
+            'manufacturer' => 'unknown',
+            'brand' => 'unknown',
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'size' => null,
             ],
-            'test-platform',
+            'type' => 'unknown',
+            'dualOrientation' => null,
+            'simCount' => null,
         ];
 
-        self::assertSame($expected, $result);
+        self::assertArrayHasKey('os', $result);
+        self::assertArrayHasKey('device', $result);
+
+        self::assertSame('test-platform', $result['os']);
+
+        self::assertSame($expected, $result['device']->toArray());
     }
 
     /**
@@ -1761,13 +1533,15 @@ final class DeviceLoaderTest extends TestCase
             ->method('info')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame($typeException, $message),
-                        2 => self::assertSame($companyException1, $message),
-                        default => self::assertSame($companyException2, $message),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame($typeException, $message, (string) $invocation),
+                        2 => self::assertSame($companyException1, $message, (string) $invocation),
+                        default => self::assertSame($companyException2, $message, (string) $invocation),
                     };
 
-                    self::assertSame([], $context);
+                    self::assertSame([], $context, (string) $invocation);
                 },
             );
         $logger
@@ -1823,12 +1597,14 @@ final class DeviceLoaderTest extends TestCase
             ->method('load')
             ->willReturnCallback(
                 static function (string $key) use ($matcher, $companyException1, $companyException2): array {
-                    match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame('unknown1', $key),
-                        default => self::assertSame('unknown2', $key),
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('unknown1', $key, (string) $invocation),
+                        default => self::assertSame('unknown2', $key, (string) $invocation),
                     };
 
-                    match ($matcher->numberOfInvocations()) {
+                    match ($invocation) {
                         1 => throw $companyException1,
                         default => throw $companyException2,
                     };

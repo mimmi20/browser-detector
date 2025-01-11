@@ -13,14 +13,17 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
+use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
+use UaResult\Company\Company;
+use UaResult\Os\Os;
+use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;
@@ -45,13 +48,9 @@ final class PlatformLoader implements PlatformLoaderInterface
         $initData();
     }
 
-    /**
-     * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string}
-     *
-     * @throws NotFoundException
-     */
+    /** @throws NotFoundException */
     #[Override]
-    public function load(string $key, string $useragent = ''): array
+    public function load(string $key, string $useragent = ''): OsInterface
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the platform with key "' . $key . '" was not found');
@@ -72,11 +71,9 @@ final class PlatformLoader implements PlatformLoaderInterface
      * @param array<string, (int|stdClass|string|null)> $data
      * @phpstan-param array{name?: string|null, marketingName?: string|null, manufacturer?: string, version?: stdClass|string|null} $data
      *
-     * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string}
-     *
      * @throws void
      */
-    private function fromArray(array $data, string $useragent): array
+    private function fromArray(array $data, string $useragent): OsInterface
     {
         assert(array_key_exists('name', $data), '"name" property is required');
         assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
@@ -85,7 +82,7 @@ final class PlatformLoader implements PlatformLoaderInterface
 
         $name          = $data['name'];
         $marketingName = $data['marketingName'];
-        $manufacturer  = ['type' => 'unknown'];
+        $manufacturer  = new Company(type: 'unknown', name: null, brandname: null);
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer']);
@@ -111,19 +108,15 @@ final class PlatformLoader implements PlatformLoaderInterface
                     $marketingName = 'iPhone OS';
                 }
             }
-
-            $versionString = $version->getVersion();
         } catch (UnexpectedValueException $e) {
             $this->logger->info($e);
-
-            $versionString = null;
         }
 
-        return [
-            'name' => $name,
-            'marketingName' => $marketingName,
-            'version' => $versionString,
-            'manufacturer' => $manufacturer['type'],
-        ];
+        return new Os(
+            name: $name,
+            marketingName: $marketingName,
+            manufacturer: $manufacturer,
+            version: $version,
+        );
     }
 }

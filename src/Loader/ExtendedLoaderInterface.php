@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use UaLoader\Exception\NotFoundException;
+
 /**
  * Browser detection class
  */

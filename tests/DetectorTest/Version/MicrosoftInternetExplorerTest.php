@@ -107,11 +107,13 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->expects($matcher)
             ->method('set')
             ->willReturnCallback(static function (string $version) use ($matcher, $exception): void {
-                match ($matcher->numberOfInvocations()) {
-                    1, 2 => self::assertSame('11.0', $version),
-                    3 => self::assertSame('10.0', $version),
-                    4 => self::assertSame('9.0', $version),
-                    default => self::assertSame('8.0', $version),
+                $invocation = $matcher->numberOfInvocations();
+
+                match ($invocation) {
+                    1, 2 => self::assertSame('11.0', $version, (string) $invocation),
+                    3 => self::assertSame('10.0', $version, (string) $invocation),
+                    4 => self::assertSame('9.0', $version, (string) $invocation),
+                    default => self::assertSame('8.0', $version, (string) $invocation),
                 };
 
                 throw $exception;

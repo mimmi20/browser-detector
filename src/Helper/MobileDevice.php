@@ -40,10 +40,6 @@ final class MobileDevice implements MobileDeviceInterface
             return false;
         }
 
-        if (preg_match('/iphone.*windows nt.*micromessenger/i', $useragent)) {
-            return true;
-        }
-
         if (preg_match('/windows nt.*arm;/i', $useragent)) {
             return true;
         }

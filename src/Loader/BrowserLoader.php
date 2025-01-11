@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Override;
 use Psr\Log\LoggerInterface;
@@ -22,7 +21,10 @@ use stdClass;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UaLoader\BrowserLoaderInterface;
-use UnexpectedValueException;
+use UaLoader\Exception\NotFoundException;
+use UaResult\Browser\Browser;
+use UaResult\Browser\BrowserInterface;
+use UaResult\Company\Company;
 
 use function array_key_exists;
 use function assert;
@@ -49,7 +51,7 @@ final class BrowserLoader implements BrowserLoaderInterface
     }
 
     /**
-     * @return array{0: array{name: string|null, version: string|null, manufacturer: string, type: string, isbot: bool}, 1: string|null}
+     * @return array{client: BrowserInterface, engine: string|null}
      *
      * @throws NotFoundException
      */
@@ -76,19 +78,17 @@ final class BrowserLoader implements BrowserLoaderInterface
         );
 
         return [
-            $this->fromArray((array) $browserData, $useragent),
-            $browserData->engine,
+            'client' => $this->fromArray((array) $browserData, $useragent),
+            'engine' => $browserData->engine,
         ];
     }
 
     /**
-     * @param array<string, int|string|null> $data
-     *
-     * @return array{name: string|null, version: string|null, manufacturer: string, type: string, isbot: bool}
+     * @param array{name: string|null, modus: string|null, version: stdClass|string|null, manufacturer: string, bits: int|null, type: string} $data
      *
      * @throws void
      */
-    private function fromArray(array $data, string $useragent = ''): array
+    private function fromArray(array $data, string $useragent = ''): Browser
     {
         assert(
             array_key_exists('name', $data) && (is_string($data['name']) || $data['name'] === null),
@@ -125,7 +125,7 @@ final class BrowserLoader implements BrowserLoaderInterface
         }
 
         $version      = $this->getVersion($data['version'], $useragent);
-        $manufacturer = ['type' => 'unknown'];
+        $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 
         if ($data['manufacturer'] !== null) {
             try {
@@ -135,20 +135,13 @@ final class BrowserLoader implements BrowserLoaderInterface
             }
         }
 
-        try {
-            $versionString = $version->getVersion();
-        } catch (UnexpectedValueException $e) {
-            $this->logger->info($e);
-
-            $versionString = null;
-        }
-
-        return [
-            'name' => $name,
-            'version' => $versionString,
-            'manufacturer' => $manufacturer['type'],
-            'type' => $type->getType(),
-            'isbot' => $type->isBot(),
-        ];
+        return new Browser(
+            name: $name,
+            manufacturer: $manufacturer,
+            version: $version,
+            type: $type,
+            bits: null,
+            modus: null,
+        );
     }
 }

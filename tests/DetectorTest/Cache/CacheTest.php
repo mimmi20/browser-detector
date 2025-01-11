@@ -77,8 +77,7 @@ final class CacheTest extends TestCase
             ->willReturn(false);
         $adapter
             ->expects(self::never())
-            ->method('get')
-            ->willReturn(null);
+            ->method('get');
 
         assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
@@ -132,12 +131,10 @@ final class CacheTest extends TestCase
             ->willReturn(false);
         $adapter
             ->expects(self::never())
-            ->method('set')
-            ->willReturn(false);
+            ->method('set');
         $adapter
             ->expects(self::never())
-            ->method('get')
-            ->willReturn(null);
+            ->method('get');
 
         assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);

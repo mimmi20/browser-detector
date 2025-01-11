@@ -13,12 +13,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use UaLoader\Exception\NotFoundException;
+use UaResult\Company\CompanyInterface;
+
 interface CompanyLoaderInterface
 {
-    /**
-     * @return array{type: string, name: string|null, brandname: string|null}
-     *
-     * @throws NotFoundException
-     */
-    public function load(string $key): array;
+    /** @throws NotFoundException */
+    public function load(string $key): CompanyInterface;
 }
