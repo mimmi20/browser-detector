@@ -179,7 +179,7 @@ final readonly class Detector implements DetectorInterface
                 'brand' => $device->getBrand()->getType(),
                 'dualOrientation' => $device->getDualOrientation(),
                 'simCount' => $device->getSimCount(),
-                'display' => $device->getDisplay()?->toArray() ?? ['width' => null, 'height' => null, 'touch' => null, 'size' => null],
+                'display' => $device->getDisplay()->toArray(),
                 'type' => $device->getType()->getType(),
                 'ismobile' => $deviceIsMobile ?? $device->getType()->isMobile(),
                 'istv' => $device->getType()->isTv(),
