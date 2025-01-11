@@ -17,7 +17,6 @@ use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Override;
@@ -454,7 +453,7 @@ final readonly class Detector implements DetectorInterface
                 type: new Unknown(),
                 bits: null,
                 modus: null,
-),
+            ),
             'engine' => null,
         ];
     }
@@ -562,16 +561,6 @@ final readonly class Detector implements DetectorInterface
                 return $platform;
             } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
-            }
-        }
-
-        if (is_string($platformVersion)) {
-            try {
-                $platformVersion = (new VersionBuilder())->set($platformVersion);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-
-                $platformVersion = null;
             }
         }
 
