@@ -18,8 +18,8 @@ use JsonException;
 use Override;
 use Psr\Log\LoggerInterface;
 
+use function array_filter;
 use function array_key_exists;
-use function array_keys;
 use function assert;
 use function file_get_contents;
 use function is_array;
@@ -28,8 +28,10 @@ use function is_string;
 use function json_decode;
 use function preg_last_error;
 use function preg_match;
+use function reset;
 use function sprintf;
 
+use const ARRAY_FILTER_USE_KEY;
 use const JSON_THROW_ON_ERROR;
 
 final readonly class RulefileParser implements RulefileParserInterface
@@ -91,37 +93,43 @@ final readonly class RulefileParser implements RulefileParserInterface
      */
     private function getModeFromRules(array $rules, string $file, string $useragent): string | null
     {
-        $mode = null;
+        $mode = false;
 
-        foreach (array_keys($rules) as $rule) {
-            if (is_int($rule)) {
-                $this->logger->error(
-                    new Exception(sprintf('invalid numeric rule "%s" found in file %s', $rule, $file)),
-                );
+        $filtered = array_filter(
+            array: $rules,
+            callback: function (string | int $rule) use ($file, $useragent): bool {
+                if (is_int($rule)) {
+                    $this->logger->error(
+                        new Exception(
+                            sprintf('invalid numeric rule "%s" found in file %s', $rule, $file),
+                        ),
+                    );
 
-                continue;
-            }
+                    return false;
+                }
 
-            $match = @preg_match($rule, $useragent);
+                $match = @preg_match($rule, $useragent);
 
-            if ($match === false) {
-                $error = preg_last_error();
-                $this->logger->error(
-                    new Exception(
-                        sprintf('could not match rule "%s" of file %s: %s', $rule, $file, $error),
-                    ),
-                );
+                if ($match === false) {
+                    $error = preg_last_error();
+                    $this->logger->error(
+                        new Exception(
+                            sprintf('could not match rule "%s" of file %s: %s', $rule, $file, $error),
+                        ),
+                    );
 
-                continue;
-            }
+                    return false;
+                }
 
-            if ($match) {
-                $mode = $rules[$rule];
+                return $match === 1;
+            },
+            mode: ARRAY_FILTER_USE_KEY,
+        );
 
-                break;
-            }
+        if ($filtered !== []) {
+            $mode = reset($filtered);
         }
 
-        return $mode;
+        return $mode === false ? null : $mode;
     }
 }
