@@ -352,5 +352,68 @@
       "version": "108.0.5359.215",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "7.9",
+      "dpr": "2.875",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-prefers-reduced-transparency": "no-preference",
+      "sec-ch-ua": "\"OperaMobile\";v=\"86\", \";Not A Brand\";v=\"99\", \"Opera\";v=\"115\", \"Chromium\";v=\"130\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"86.3.4550.82527\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"S62 Pro\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11\"",
+      "sec-ch-viewport-height": "1480",
+      "sec-ch-viewport-width": "980",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 OPR/86.0.0.0",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S62 Pro",
+      "marketingName": "Cat S62 Pro",
+      "manufacturer": "caterpillar",
+      "brand": "caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "86.0.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

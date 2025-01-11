@@ -40,5 +40,47 @@
       "version": "1128.0.1",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Ecosia/836 CFNetwork/1335.0.3.4 Darwin/21.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.6.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": null,
+      "manufacturer": "ecosia",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1335.0.3.4",
+      "manufacturer": "apple"
+    }
   }
 ]
