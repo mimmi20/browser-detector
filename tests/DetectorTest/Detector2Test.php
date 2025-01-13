@@ -15,6 +15,7 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Detector;
+use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
@@ -26,6 +27,7 @@ use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use Stringable;
 use UaDeviceType\Smartphone;
+use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\DeviceLoaderInterface;
 use UaLoader\EngineLoaderInterface;
@@ -59,8 +61,9 @@ final class Detector2Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::never())
-            ->method('getValue');
+            ->expects(self::once())
+            ->method('getValue')
+            ->willReturn('abc');
         $header
             ->expects(self::never())
             ->method('getNormalizedValue');
@@ -136,7 +139,7 @@ final class Detector2Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -222,12 +225,8 @@ final class Detector2Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -243,13 +242,13 @@ final class Detector2Test extends TestCase
             ->method('load')
             ->with('lg lm-g710')
             ->willReturn(
-                [
-                    'device' => new Device(
+                new DeviceData(
+                    device: new Device(
                         deviceName: 'LM-G710',
                         marketingName: 'G7 ThinQ',
                         manufacturer: new Company(type: 'lg', name: null, brandname: null),
                         brand: new Company(type: 'lg', name: null, brandname: null),
-                        type: new Smartphone(),
+                        type: Type::Smartphone,
                         display: new Display(
                             width: 3120,
                             height: 1440,
@@ -259,8 +258,8 @@ final class Detector2Test extends TestCase
                         dualOrientation: null,
                         simCount: null,
                     ),
-                    'os' => $platformFromDevice,
-                ],
+                    os: $platformFromDevice,
+                ),
             );
 
         $deviceLoaderFactory = $this->createMock(DeviceLoaderFactoryInterface::class);
@@ -330,8 +329,9 @@ final class Detector2Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::never())
-            ->method('getValue');
+            ->expects(self::once())
+            ->method('getValue')
+            ->willReturn('abc');
         $header
             ->expects(self::never())
             ->method('getNormalizedValue');
@@ -407,7 +407,7 @@ final class Detector2Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -506,12 +506,8 @@ final class Detector2Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -588,7 +584,7 @@ final class Detector2Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -669,7 +665,7 @@ final class Detector2Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -756,12 +752,8 @@ final class Detector2Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -777,13 +769,13 @@ final class Detector2Test extends TestCase
             ->method('load')
             ->with('lg lm-g710')
             ->willReturn(
-                [
-                    'device' => new Device(
+                new DeviceData(
+                    device: new Device(
                         deviceName: 'LM-G710',
                         marketingName: 'G7 ThinQ',
                         manufacturer: new Company(type: 'lg', name: null, brandname: null),
                         brand: new Company(type: 'lg', name: null, brandname: null),
-                        type: new Smartphone(),
+                        type: Type::Smartphone,
                         display: new Display(
                             width: 3120,
                             height: 1440,
@@ -793,8 +785,8 @@ final class Detector2Test extends TestCase
                         dualOrientation: null,
                         simCount: null,
                     ),
-                    'os' => $platformFromDevice,
-                ],
+                    os: $platformFromDevice,
+                ),
             );
 
         $deviceLoaderFactory = $this->createMock(DeviceLoaderFactoryInterface::class);

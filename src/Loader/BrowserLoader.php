@@ -13,14 +13,15 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Loader\Data\ClientData;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
-use UaBrowserType\TypeLoaderInterface;
-use UaBrowserType\Unknown;
+use UaBrowserType\Type;
 use UaLoader\BrowserLoaderInterface;
+use UaLoader\Data\ClientDataInterface;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Browser\Browser;
 use UaResult\Browser\BrowserInterface;
@@ -42,7 +43,6 @@ final class BrowserLoader implements BrowserLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
-        private readonly TypeLoaderInterface $typeLoader,
         VersionBuilderInterface $versionBuilder,
     ) {
         $this->versionBuilder = $versionBuilder;
@@ -51,12 +51,10 @@ final class BrowserLoader implements BrowserLoaderInterface
     }
 
     /**
-     * @return array{client: BrowserInterface, engine: string|null}
-     *
      * @throws NotFoundException
      */
     #[Override]
-    public function load(string $key, string $useragent = ''): array
+    public function load(string $key, string $useragent = ''): ClientDataInterface
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the browser with key "' . $key . '" was not found');
@@ -77,10 +75,10 @@ final class BrowserLoader implements BrowserLoaderInterface
             '"engine" property is required',
         );
 
-        return [
-            'client' => $this->fromArray((array) $browserData, $useragent),
-            'engine' => $browserData->engine,
-        ];
+        return new ClientData(
+            client: $this->fromArray((array) $browserData, $useragent),
+            engine: $browserData->engine,
+        );
     }
 
     /**
@@ -114,15 +112,7 @@ final class BrowserLoader implements BrowserLoaderInterface
         );
 
         $name = $data['name'];
-        $type = new Unknown();
-
-        if ($data['type'] !== null) {
-            try {
-                $type = $this->typeLoader->load($data['type']);
-            } catch (\UaBrowserType\Exception\NotFoundException $e) {
-                $this->logger->info($e);
-            }
-        }
+        $type = Type::fromName($data['type']);
 
         $version      = $this->getVersion($data['version'], $useragent);
         $manufacturer = new Company(type: 'unknown', name: null, brandname: null);

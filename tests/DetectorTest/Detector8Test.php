@@ -15,6 +15,7 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Detector;
+use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
@@ -25,6 +26,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\Smartphone;
+use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\DeviceLoaderInterface;
 use UaLoader\EngineLoaderInterface;
@@ -62,7 +64,7 @@ final class Detector8Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -144,7 +146,7 @@ final class Detector8Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -231,12 +233,8 @@ final class Detector8Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -252,13 +250,13 @@ final class Detector8Test extends TestCase
             ->method('load')
             ->with('apple ipad')
             ->willReturn(
-                [
-                    'device' => new Device(
+                new DeviceData(
+                    device: new Device(
                         deviceName: 'iPad',
                         marketingName: 'iPad',
                         manufacturer: new Company(type: 'apple', name: null, brandname: null),
                         brand: new Company(type: 'apple', name: null, brandname: null),
-                        type: new Smartphone(),
+                        type: Type::Smartphone,
                         display: new Display(
                             width: 3120,
                             height: 1440,
@@ -268,8 +266,8 @@ final class Detector8Test extends TestCase
                         dualOrientation: null,
                         simCount: null,
                     ),
-                    'os' => $platformFromDevice,
-                ],
+                    os: $platformFromDevice,
+                ),
             );
 
         $deviceLoaderFactory = $this->createMock(DeviceLoaderFactoryInterface::class);
@@ -393,7 +391,7 @@ final class Detector8Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -475,7 +473,7 @@ final class Detector8Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -561,12 +559,8 @@ final class Detector8Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -582,13 +576,13 @@ final class Detector8Test extends TestCase
             ->method('load')
             ->with('apple ipad')
             ->willReturn(
-                [
-                    'device' => new Device(
+                new DeviceData(
+                    device: new Device(
                         deviceName: null,
                         marketingName: null,
                         manufacturer: new Company(type: 'apple', name: null, brandname: null),
                         brand: new Company(type: 'apple', name: null, brandname: null),
-                        type: new Smartphone(),
+                        type: Type::Smartphone,
                         display: new Display(
                             width: 3120,
                             height: 1440,
@@ -598,8 +592,8 @@ final class Detector8Test extends TestCase
                         dualOrientation: null,
                         simCount: null,
                     ),
-                    'os' => $platformFromDevice,
-                ],
+                    os: $platformFromDevice,
+                ),
             );
 
         $deviceLoaderFactory = $this->createMock(DeviceLoaderFactoryInterface::class);
@@ -724,7 +718,7 @@ final class Detector8Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -809,7 +803,7 @@ final class Detector8Test extends TestCase
             ->with(null)
             ->willReturn($engineVersion);
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -895,12 +889,8 @@ final class Detector8Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -916,13 +906,13 @@ final class Detector8Test extends TestCase
             ->method('load')
             ->with('xx yy')
             ->willReturn(
-                [
-                    'device' => new Device(
+                new DeviceData(
+                    device: new Device(
                         deviceName: 'yy',
                         marketingName: 'yy',
                         manufacturer: new Company(type: 'xx', name: null, brandname: null),
                         brand: new Company(type: 'xx', name: null, brandname: null),
-                        type: new Smartphone(),
+                        type: Type::Smartphone,
                         display: new Display(
                             width: 3120,
                             height: 1440,
@@ -932,8 +922,8 @@ final class Detector8Test extends TestCase
                         dualOrientation: null,
                         simCount: null,
                     ),
-                    'os' => $platformFromDevice,
-                ],
+                    os: $platformFromDevice,
+                ),
             );
 
         $deviceLoaderFactory = $this->createMock(DeviceLoaderFactoryInterface::class);

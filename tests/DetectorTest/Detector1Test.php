@@ -41,6 +41,77 @@ final class Detector1Test extends TestCase
         $headers = ['xyz' => 'abc'];
         $hash    = 'test-hash';
 
+        $header = $this->createMock(HeaderInterface::class);
+        $header
+            ->expects(self::never())
+            ->method('getValue');
+        $header
+            ->expects(self::never())
+            ->method('getNormalizedValue');
+        $header
+            ->expects(self::never())
+            ->method('hasDeviceArchitecture');
+        $header
+            ->expects(self::never())
+            ->method('getDeviceArchitecture');
+        $header
+            ->expects(self::never())
+            ->method('hasDeviceBitness');
+        $header
+            ->expects(self::never())
+            ->method('getDeviceBitness');
+        $header
+            ->expects(self::never())
+            ->method('hasDeviceIsMobile')
+            ->willReturn(false);
+        $header
+            ->expects(self::never())
+            ->method('getDeviceIsMobile');
+        $header
+            ->expects(self::never())
+            ->method('hasDeviceCode');
+        $header
+            ->expects(self::never())
+            ->method('getDeviceCode');
+        $header
+            ->expects(self::never())
+            ->method('hasClientCode');
+        $header
+            ->expects(self::never())
+            ->method('getClientCode');
+        $header
+            ->expects(self::never())
+            ->method('hasClientVersion');
+        $header
+            ->expects(self::never())
+            ->method('getClientVersion');
+        $header
+            ->expects(self::never())
+            ->method('hasPlatformCode');
+        $header
+            ->expects(self::never())
+            ->method('getPlatformCode');
+        $header
+            ->expects(self::never())
+            ->method('hasPlatformVersion');
+        $header
+            ->expects(self::never())
+            ->method('getPlatformVersion');
+        $header
+            ->expects(self::never())
+            ->method('hasEngineCode');
+        $header
+            ->expects(self::never())
+            ->method('getEngineCode');
+        $header
+            ->expects(self::never())
+            ->method('hasEngineVersion');
+        $header
+            ->expects(self::never())
+            ->method('getEngineVersion');
+
+        $filteredHeaders = ['xyz' => $header];
+
         $expected = [1, 2, 3, 4];
 
         $logger = $this->createMock(LoggerInterface::class);
@@ -89,9 +160,6 @@ final class Detector1Test extends TestCase
         $request
             ->expects(self::never())
             ->method('getHeaders');
-        $request
-            ->expects(self::never())
-            ->method('getFilteredHeaders');
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
         $requestBuilder
@@ -151,8 +219,9 @@ final class Detector1Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::never())
-            ->method('getValue');
+            ->expects(self::once())
+            ->method('getValue')
+            ->willReturn('abc');
         $header
             ->expects(self::never())
             ->method('getNormalizedValue');
@@ -227,7 +296,7 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -313,12 +382,8 @@ final class Detector1Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -381,8 +446,9 @@ final class Detector1Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::never())
-            ->method('getValue');
+            ->expects(self::once())
+            ->method('getValue')
+            ->willReturn('abc');
         $header
             ->expects(self::never())
             ->method('getNormalizedValue');
@@ -458,7 +524,7 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -544,12 +610,8 @@ final class Detector1Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -611,8 +673,9 @@ final class Detector1Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::never())
-            ->method('getValue');
+            ->expects(self::once())
+            ->method('getValue')
+            ->willReturn('abc');
         $header
             ->expects(self::never())
             ->method('getNormalizedValue');
@@ -688,7 +751,7 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -774,12 +837,8 @@ final class Detector1Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);
@@ -840,8 +899,9 @@ final class Detector1Test extends TestCase
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::never())
-            ->method('getValue');
+            ->expects(self::once())
+            ->method('getValue')
+            ->willReturn('abc');
         $header
             ->expects(self::never())
             ->method('getNormalizedValue');
@@ -917,7 +977,7 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['abc' => $header];
+        $filteredHeaders = ['xyz' => $header];
 
         $expected = [
             'headers' => $headers,
@@ -1003,12 +1063,8 @@ final class Detector1Test extends TestCase
             ->method('getHash')
             ->willReturn($hash);
         $request
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getHeaders')
-            ->willReturn($headers);
-        $request
-            ->expects(self::once())
-            ->method('getFilteredHeaders')
             ->willReturn($filteredHeaders);
 
         $requestBuilder = $this->createMock(RequestBuilderInterface::class);

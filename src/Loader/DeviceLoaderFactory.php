@@ -48,7 +48,6 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             logger: $this->logger,
             initData: new Data(self::DATA_PATH . $company, 'json'),
             companyLoader: $this->companyLoader,
-            typeLoader: new TypeLoader(),
         );
 
         return $this->loader[$company];

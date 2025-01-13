@@ -13,12 +13,15 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Loader\Data\DeviceData;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
+use UaDeviceType\Type;
 use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
+use UaLoader\Data\DeviceDataInterface;
 use UaLoader\DeviceLoaderInterface;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
@@ -37,18 +40,15 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
         private LoggerInterface $logger,
         private DataInterface $initData,
         private CompanyLoaderInterface $companyLoader,
-        private TypeLoaderInterface $typeLoader,
     ) {
         $initData();
     }
 
     /**
-     * @return array{device: DeviceInterface, os: string|null}
-     *
      * @throws NotFoundException
      */
     #[Override]
-    public function load(string $key): array
+    public function load(string $key): DeviceDataInterface
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the device with key "' . $key . '" was not found');
@@ -69,7 +69,10 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             '"platform" property is required',
         );
 
-        return ['device' => $device, 'os' => $deviceData->platform];
+        return new DeviceData(
+            device: $device,
+            os: $deviceData->platform,
+        );
     }
 
     /**
@@ -94,13 +97,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             ? $data['marketingName']
             : null;
 
-        $type = new Unknown();
-
-        try {
-            $type = $this->typeLoader->load((string) $data['type']);
-        } catch (\UaDeviceType\Exception\NotFoundException $e) {
-            $this->logger->info($e);
-        }
+        $type = Type::fromName($data['type']);
 
         $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 

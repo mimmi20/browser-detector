@@ -14,6 +14,8 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Loader\Data\ClientData;
+use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\NullVersion;
@@ -24,7 +26,10 @@ use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UaBrowserType\Unknown;
+use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;
+use UaLoader\Data\ClientDataInterface;
+use UaLoader\Data\DeviceDataInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
@@ -117,21 +122,22 @@ final readonly class Detector implements DetectorInterface
     private function parse(GenericRequestInterface $request): array
     {
         $engineCodename  = null;
-        $filteredHeaders = $request->getFilteredHeaders();
+        $filteredHeaders = $request->getHeaders();
 
         /* detect device */
         $deviceIsMobile = $this->getDeviceIsMobile(filteredHeaders: $filteredHeaders);
 
-        ['device' => $device, 'os' => $platformCodenameFromDevice] = $this->getDeviceData(
+        $deviceData = $this->getDeviceData(
             filteredHeaders: $filteredHeaders,
         );
 
+        $device = $deviceData->getDevice();
         $deviceMarketingName = $device->getMarketingName();
 
         /* detect platform */
         $platform = $this->getPlatformData(
             filteredHeaders: $filteredHeaders,
-            platformCodenameFromDevice: $platformCodenameFromDevice,
+            platformCodenameFromDevice: $deviceData->getOs(),
         );
 
         $platformName          = $platform->getName();
@@ -158,19 +164,33 @@ final readonly class Detector implements DetectorInterface
         }
 
         /* detect client */
-        ['client' => $client, 'engine' => $engineCodenameFromClient] = $this->getClientData(
+        $clientData = $this->getClientData(
             filteredHeaders: $filteredHeaders,
         );
+
+        $client = $clientData->getClient();
 
         /* detect engine */
         $engine = $this->getEngineData(
             filteredHeaders: $filteredHeaders,
             engineCodename: $engineCodename,
-            engineCodenameFromClient: $engineCodenameFromClient,
+            engineCodenameFromClient: $clientData->getEngine(),
         );
 
+//        var_dump(array_keys($request->getHeaders()), array_map(
+//            callback: function(HeaderInterface $header): string {
+//                return $header->getValue();
+//            },
+//            array: $request->getHeaders()
+//        ));
+
         return [
-            'headers' => $request->getHeaders(),
+            'headers' => array_map(
+                callback: function(HeaderInterface $header): string {
+                    return $header->getValue();
+                },
+                array: array_change_key_case($request->getHeaders(), CASE_LOWER),
+            ),
             'device' => [
                 'architecture' => $this->getDeviceArchitecture($filteredHeaders),
                 'deviceName' => $device->getDeviceName(),
@@ -344,11 +364,7 @@ final readonly class Detector implements DetectorInterface
                 );
 
                 if ($engineVersion !== null) {
-                    return new Engine(
-                        name: $engine->getName(),
-                        manufacturer: $engine->getManufacturer(),
-                        version: $engineVersion,
-                    );
+                    return $engine->withVersion($engineVersion);
                 }
 
                 return $engine;
@@ -390,11 +406,9 @@ final readonly class Detector implements DetectorInterface
      *
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @return array{client: BrowserInterface, engine: string|null}
-     *
      * @throws void
      */
-    private function getClientData(array $filteredHeaders): array
+    private function getClientData(array $filteredHeaders): ClientDataInterface
     {
         $clientCodename = null;
         $clientVersion  = new NullVersion();
@@ -420,42 +434,37 @@ final readonly class Detector implements DetectorInterface
             assert($clientHeader instanceof HeaderInterface);
 
             try {
-                ['client' => $client, 'engine' => $engine] = $this->browserLoader->load(
+                $clientData = $this->browserLoader->load(
                     key: $clientCodename,
                     useragent: $clientHeader->getValue(),
                 );
 
                 if ($clientVersion->getVersion() !== null) {
-                    return [
-                        'client' => new Browser(
-                            name: $client->getName(),
-                            manufacturer: $client->getManufacturer(),
-                            version: $clientVersion,
-                            type: $client->getType(),
-                            bits: $client->getBits(),
-                            modus: $client->getModus(),
-                        ),
-                        'engine' => $engine,
-                    ];
+                    $client = $clientData->getClient();
+
+                    return new ClientData(
+                        client: $client->withVersion($clientVersion),
+                        engine: $clientData->getEngine(),
+                    );
                 }
 
-                return ['client' => $client, 'engine' => $engine];
+                return $clientData;
             } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
             }
         }
 
-        return [
-            'client' => new Browser(
+        return new ClientData(
+            client: new Browser(
                 name: null,
                 manufacturer: new Company(type: 'unknown', name: null, brandname: null),
                 version: $clientVersion,
-                type: new Unknown(),
+                type: \UaBrowserType\Type::Unknown,
                 bits: null,
                 modus: null,
             ),
-            'engine' => null,
-        ];
+            engine: null,
+        );
     }
 
     /**
@@ -549,13 +558,7 @@ final readonly class Detector implements DetectorInterface
                     $platformVersion instanceof VersionInterface
                     && $platformVersion->getVersion() !== null
                 ) {
-                    return new Os(
-                        name: $platform->getName(),
-                        marketingName: $platform->getMarketingName(),
-                        manufacturer: $platform->getManufacturer(),
-                        version: $platformVersion,
-                        bits: $platform->getBits(),
-                    );
+                    return $platform->withVersion($platformVersion);
                 }
 
                 return $platform;
@@ -581,11 +584,9 @@ final readonly class Detector implements DetectorInterface
      *
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @return array{device: DeviceInterface, os: string|null}
-     *
      * @throws void
      */
-    private function getDeviceData(array $filteredHeaders): array
+    private function getDeviceData(array $filteredHeaders): DeviceDataInterface
     {
         $headersWithDeviceCode = array_filter(
             $filteredHeaders,
@@ -617,18 +618,18 @@ final readonly class Detector implements DetectorInterface
             }
         }
 
-        return [
-            'device' => new Device(
+        return new DeviceData(
+            device: new Device(
                 deviceName: null,
                 marketingName: null,
                 manufacturer: new Company(type: 'unknown', name: null, brandname: null),
                 brand: new Company(type: 'unknown', name: null, brandname: null),
-                type: new \UaDeviceType\Unknown(),
+                type: Type::Unknown,
                 display: new Display(width: null, height: null, touch: null, size: null),
                 dualOrientation: null,
                 simCount: null,
             ),
-            'os' => null,
-        ];
+            os: null,
+        );
     }
 }

@@ -15,7 +15,7 @@
 
 ## Requirements
 
-This library requires PHP 8.1+.
+This library requires PHP 8.3+.
 Also a PSR-3 compatible logger and a PSR-16 compatible cache are required.
 
 ## Installation

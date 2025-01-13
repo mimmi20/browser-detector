@@ -47,7 +47,6 @@ final readonly class RulefileParser implements RulefileParserInterface
     public function parseFile(string $file, string $useragent, string $fallback): string
     {
         $content = @file_get_contents($file);
-        $mode    = null;
 
         if ($content === false) {
             $this->logger->error(
@@ -71,6 +70,8 @@ final readonly class RulefileParser implements RulefileParserInterface
             return $fallback;
         }
 
+        $mode = null;
+
         if (is_array($rules)) {
             $mode = $this->getModeFromRules($rules, $file, $useragent);
         }
@@ -91,10 +92,8 @@ final readonly class RulefileParser implements RulefileParserInterface
      *
      * @throws void
      */
-    private function getModeFromRules(array $rules, string $file, string $useragent): string | null
+    private function getModeFromRules(array $rules, string $file, string $useragent): string | false
     {
-        $mode = false;
-
         $filtered = array_filter(
             array: $rules,
             callback: function (string | int $rule) use ($file, $useragent): bool {
@@ -126,10 +125,12 @@ final readonly class RulefileParser implements RulefileParserInterface
             mode: ARRAY_FILTER_USE_KEY,
         );
 
+        $mode = false;
+
         if ($filtered !== []) {
             $mode = reset($filtered);
         }
 
-        return $mode === false ? null : $mode;
+        return $mode;
     }
 }

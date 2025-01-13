@@ -23,6 +23,7 @@ use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
+use BrowserDetector\Parser\Header\HeaderLoader;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactory;
@@ -83,7 +84,6 @@ final class DetectorFactory
                 logger: $this->logger,
                 initData: new Data(BrowserLoader::DATA_PATH, 'json'),
                 companyLoader: $companyLoader,
-                typeLoader: new TypeLoader(),
                 versionBuilder: new VersionBuilder(),
             );
 
@@ -92,7 +92,7 @@ final class DetectorFactory
 
             $normalizerFactory = new NormalizerFactory();
 
-            $requestBuilder = new RequestBuilder(
+            $headerLoader = new HeaderLoader(
                 deviceParser: $deviceParser,
                 platformParser: $platformParser,
                 browserParser: $browserParser,
@@ -101,6 +101,10 @@ final class DetectorFactory
                 browserLoader: $browserLoader,
                 platformLoader: $platformLoader,
                 engineLoader: $engineLoader,
+            );
+
+            $requestBuilder = new RequestBuilder(
+                headerLoader: $headerLoader
             );
 
             $this->detector = new Detector(
