@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -19,10 +19,10 @@ use UaParser\DeviceParserInterface;
 
 use function preg_match;
 
-final class DeviceStockUaDeviceCode implements DeviceCodeInterface
+final readonly class DeviceStockUaDeviceCode implements DeviceCodeInterface
 {
     /** @throws void */
-    public function __construct(private readonly DeviceParserInterface $deviceParser)
+    public function __construct(private DeviceParserInterface $deviceParser)
     {
         // nothing to do
     }
@@ -37,7 +37,11 @@ final class DeviceStockUaDeviceCode implements DeviceCodeInterface
         );
     }
 
-    /** @throws void */
+    /**
+     * @return non-empty-string|null
+     *
+     * @throws void
+     */
     #[Override]
     public function getDeviceCode(string $value): string | null
     {

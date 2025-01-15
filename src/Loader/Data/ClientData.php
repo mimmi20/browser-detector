@@ -1,44 +1,40 @@
 <?php
 
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Data;
 
+use Override;
 use UaLoader\Data\ClientDataInterface;
 use UaResult\Browser\BrowserInterface;
 
-class ClientData implements ClientDataInterface
+final readonly class ClientData implements ClientDataInterface
 {
-    private BrowserInterface $client;
-    private string|null $engine;
-
-    /**
-     * @param BrowserInterface $client
-     * @param string|null $engine
-     * @throws void
-     */
-    public function __construct(BrowserInterface $client, ?string $engine)
+    /** @throws void */
+    public function __construct(private BrowserInterface $client, private string | null $engine)
     {
-        $this->client = $client;
-        $this->engine = $engine;
     }
 
-    /**
-     * @return BrowserInterface
-     * @throws void
-     */
+    /** @throws void */
+    #[Override]
     public function getClient(): BrowserInterface
     {
         return $this->client;
     }
 
-    /**
-     * @return string|null
-     * @throws void
-     */
-    public function getEngine(): string|null
+    /** @throws void */
+    #[Override]
+    public function getEngine(): string | null
     {
         return $this->engine;
     }
-
 }

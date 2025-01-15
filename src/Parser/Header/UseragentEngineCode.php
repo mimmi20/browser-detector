@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,15 +23,13 @@ use UaParser\EngineParserInterface;
 use function mb_strtolower;
 use function preg_match;
 
-final class UseragentEngineCode implements EngineCodeInterface
+final readonly class UseragentEngineCode implements EngineCodeInterface
 {
-    private readonly NormalizerInterface $normalizer;
+    private NormalizerInterface $normalizer;
 
-    /** @throws Exception */
-    public function __construct(
-        private readonly EngineParserInterface $engineParser,
-        NormalizerFactory $normalizerFactory,
-    ) {
+    /** @throws void */
+    public function __construct(private EngineParserInterface $engineParser, NormalizerFactory $normalizerFactory)
+    {
         $this->normalizer = $normalizerFactory->build();
     }
 
@@ -50,7 +48,15 @@ final class UseragentEngineCode implements EngineCodeInterface
     #[Override]
     public function getEngineCode(string $value): string | null
     {
-        $normalizedValue = $this->normalizer->normalize($value);
+        try {
+            $normalizedValue = $this->normalizer->normalize($value);
+        } catch (Exception) {
+            return null;
+        }
+
+        if ($normalizedValue === '' || $normalizedValue === null) {
+            return null;
+        }
 
         $matches = [];
 

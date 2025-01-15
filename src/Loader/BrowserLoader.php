@@ -24,7 +24,6 @@ use UaLoader\BrowserLoaderInterface;
 use UaLoader\Data\ClientDataInterface;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Browser\Browser;
-use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
 
 use function array_key_exists;
@@ -50,9 +49,7 @@ final class BrowserLoader implements BrowserLoaderInterface
         $initData();
     }
 
-    /**
-     * @throws NotFoundException
-     */
+    /** @throws NotFoundException */
     #[Override]
     public function load(string $key, string $useragent = ''): ClientDataInterface
     {

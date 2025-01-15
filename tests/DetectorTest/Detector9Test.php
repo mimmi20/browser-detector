@@ -27,7 +27,6 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
-use UaDeviceType\Smartphone;
 use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\DeviceLoaderInterface;

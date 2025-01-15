@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
-use Closure;
 use Override;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
@@ -40,228 +39,25 @@ use UaRequest\Header\XOperaminiPhoneUa;
 use UaRequest\Header\XPuffinUa;
 use UaRequest\Header\XUcbrowserDeviceUa;
 use UaRequest\Header\XUcbrowserPhoneUa;
+use UaRequest\Headers;
 use UaRequest\NotFoundException;
 
-use function array_key_exists;
 use function sprintf;
 
-final class HeaderLoader implements HeaderLoaderInterface
+final readonly class HeaderLoader implements HeaderLoaderInterface
 {
-    /** @var array<string, Closure(string): HeaderInterface> */
-    private array $factories;
-
     /** @throws void */
     public function __construct(
-        DeviceParserInterface $deviceParser,
-        PlatformParserInterface $platformParser,
-        BrowserParserInterface $browserParser,
-        EngineParserInterface $engineParser,
-        NormalizerFactory $normalizerFactory,
-        BrowserLoaderInterface $browserLoader,
-        PlatformLoaderInterface $platformLoader,
-        EngineLoaderInterface $engineLoader,
+        private DeviceParserInterface $deviceParser,
+        private PlatformParserInterface $platformParser,
+        private BrowserParserInterface $browserParser,
+        private EngineParserInterface $engineParser,
+        private NormalizerFactory $normalizerFactory,
+        private BrowserLoaderInterface $browserLoader,
+        private PlatformLoaderInterface $platformLoader,
+        private EngineLoaderInterface $engineLoader,
     ) {
-        $this->factories = [
-            Constants::HEADER_BAIDU_FLYFLOW => static fn (string $header): HeaderInterface => new DeviceCodeOnlyHeader(
-                value: $header,
-                deviceCode: new BaiduFlyflow(deviceParser: $deviceParser),
-            ),
-            Constants::HEADER_DEVICE_STOCK_UA => static fn (string $header): HeaderInterface => new FullHeader(
-                value: $header,
-                deviceCode: new DeviceStockUaDeviceCode(
-                    deviceParser: $deviceParser,
-                ),
-                clientCode: new DeviceStockUaClientCode(),
-                clientVersion: new DeviceStockUaClientVersion(),
-                platformCode: new DeviceStockUaPlatformCode(),
-                platformVersion: new DeviceStockUaPlatformVersion(),
-                engineCode: new DeviceStockUaEngineCode(),
-                engineVersion: new DeviceStockUaEngineVersion(),
-            ),
-            Constants::HEADER_SEC_CH_UA => static fn (string $header): HeaderInterface => new ClientHeader(
-                value: $header,
-                clientCode: new SecChUaClientCode(),
-                clientVersion: new SecChUaClientVersion(),
-            ),
-            Constants::HEADER_SEC_CH_UA_ARCH => static fn (string $header): HeaderInterface => new SecChUaArch(
-                value: $header,
-            ),
-            Constants::HEADER_SEC_CH_UA_BITNESS => static fn (string $header): HeaderInterface => new SecChUaBitness(
-                value: $header,
-            ),
-            Constants::HEADER_SEC_CH_UA_FULL_VERSION => static fn (string $header): HeaderInterface => new SecChUaFullVersion(
-                value: $header,
-            ),
-            Constants::HEADER_SEC_CH_UA_FULL_VERSION_LIST => static fn (string $header): HeaderInterface => new SecChUaFullVersion(
-                value: $header,
-            ),
-            Constants::HEADER_SEC_CH_UA_MOBILE => static fn (string $header): HeaderInterface => new SecChUaMobile(
-                value: $header,
-            ),
-            Constants::HEADER_SEC_CH_UA_MODEL => static fn (string $header): HeaderInterface => new DeviceCodeOnlyHeader(
-                value: $header,
-                deviceCode: new SecChUaModel(),
-            ),
-            Constants::HEADER_SEC_CH_UA_PLATFORM => static fn (string $header): HeaderInterface => new PlatformCodeOnlyHeader(
-                value: $header,
-                platformCode: new SecChUaPlatform(),
-            ),
-            Constants::HEADER_SEC_CH_UA_PLATFORM_VERSION => static fn (string $header): HeaderInterface => new PlatformVersionOnlyHeader(
-                value: $header,
-                platformVersion: new SecChUaPlatformVersion(),
-            ),
-            Constants::HEADER_UA_OS => static fn (string $header): HeaderInterface => new PlatformHeader(
-                value: $header,
-                platformCode: new UaOsPlatformCode(),
-                platformVersion: new UaOsPlatformVersion(),
-            ),
-            Constants::HEADER_CRAWLED_BY => static fn (string $header): HeaderInterface => new ClientHeader(
-                value: $header,
-                clientCode: new SecChUaClientCode(),
-                clientVersion: new SecChUaClientVersion(),
-            ),
-            Constants::HEADER_USERAGENT => static fn (string $header): HeaderInterface => new FullHeader(
-                value: $header,
-                deviceCode: new UseragentDeviceCode(
-                    deviceParser: $deviceParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                clientCode: new UseragentClientCode(
-                    browserParser: $browserParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                clientVersion: new UseragentClientVersion(
-                    browserParser: $browserParser,
-                    browserLoader: $browserLoader,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                platformCode: new UseragentPlatformCode(
-                    platformParser: $platformParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                platformVersion: new UseragentPlatformVersion(
-                    platformParser: $platformParser,
-                    platformLoader: $platformLoader,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                engineCode: new UseragentEngineCode(
-                    engineParser: $engineParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                engineVersion: new UseragentEngineVersion(
-                    engineParser: $engineParser,
-                    engineLoader: $engineLoader,
-                    normalizerFactory: $normalizerFactory,
-                ),
-            ),
-            Constants::HEADER_ORIGINAL_UA => static fn (string $header): HeaderInterface => new FullHeader(
-                value: $header,
-                deviceCode: new UseragentDeviceCode(
-                    deviceParser: $deviceParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                clientCode: new UseragentClientCode(
-                    browserParser: $browserParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                clientVersion: new UseragentClientVersion(
-                    browserParser: $browserParser,
-                    browserLoader: $browserLoader,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                platformCode: new UseragentPlatformCode(
-                    platformParser: $platformParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                platformVersion: new UseragentPlatformVersion(
-                    platformParser: $platformParser,
-                    platformLoader: $platformLoader,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                engineCode: new UseragentEngineCode(
-                    engineParser: $engineParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                engineVersion: new UseragentEngineVersion(
-                    engineParser: $engineParser,
-                    engineLoader: $engineLoader,
-                    normalizerFactory: $normalizerFactory,
-                ),
-            ),
-            Constants::HEADER_DEVICE_UA => static fn (string $header): HeaderInterface => new DeviceCodeOnlyHeader(
-                value: $header,
-                deviceCode: new XDeviceUseragent(
-                    deviceParser: $deviceParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-            ),
-            Constants::HEADER_OPERAMINI_PHONE => static fn (string $header): HeaderInterface => new DeviceCodeOnlyHeader(
-                value: $header,
-                deviceCode: new XOperaminiPhone(),
-            ),
-            Constants::HEADER_OPERAMINI_PHONE_UA => static fn (string $header): HeaderInterface => new XOperaminiPhoneUa(
-                value: $header,
-                deviceCode: new XOperaminiPhoneUaDeviceCode(
-                    deviceParser: $deviceParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                clientCode: new XOperaminiPhoneUaClientCode(),
-                clientVersion: new XOperaminiPhoneUaClientVersion(),
-                platformCode: new XOperaminiPhoneUaPlatformCode(),
-                engineCode: new XOperaminiPhoneUaEngineCode(
-                    engineParser: $engineParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-            ),
-            Constants::HEADER_PUFFIN_UA => static fn (string $header): HeaderInterface => new XPuffinUa(
-                value: $header,
-                deviceCode: new XPuffinUaDeviceCode(),
-                platformCode: new XPuffinUaPlatformCode(),
-            ),
-            Constants::HEADER_REQUESTED_WITH => static fn (string $header): HeaderInterface => new ClientHeader(
-                value: $header,
-                clientCode: new XRequestedWithClientCode(),
-                clientVersion: new XRequestedWithClientVersion(),
-            ),
-            Constants::HEADER_UCBROWSER_DEVICE => static fn (string $header): HeaderInterface => new DeviceCodeOnlyHeader(
-                value: $header,
-                deviceCode: new XUcbrowserDevice(
-                    deviceParser: $deviceParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-            ),
-            Constants::HEADER_UCBROWSER_DEVICE_UA => static fn (string $header): HeaderInterface => new XUcbrowserDeviceUa(
-                value: $header,
-                deviceCode: new XUcbrowserDeviceUaDeviceCode(
-                    deviceParser: $deviceParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-                platformCode: new XUcbrowserDeviceUaPlatformCode(
-                    platformParser: $platformParser,
-                    normalizerFactory: $normalizerFactory,
-                ),
-            ),
-            Constants::HEADER_UCBROWSER_PHONE => static fn (string $header): HeaderInterface => new XUcbrowserPhoneUa(
-                value: $header,
-                deviceCode: new XUcbrowserPhoneDeviceCode(),
-                clientCode: new XUcbrowserPhoneClientCode(),
-            ),
-            Constants::HEADER_UCBROWSER_PHONE_UA => static fn (string $header): HeaderInterface => new XUcbrowserPhoneUa(
-                value: $header,
-                deviceCode: new XUcbrowserPhoneDeviceCode(),
-                clientCode: new XUcbrowserPhoneClientCode(),
-            ),
-            Constants::HEADER_UCBROWSER_UA => static fn (string $header): HeaderInterface => new FullHeader(
-                value: $header,
-                deviceCode: new XUcbrowserUaDeviceCode(deviceParser: $deviceParser),
-                clientCode: new XUcbrowserUaClientCode(),
-                clientVersion: new XUcbrowserUaClientVersion(),
-                platformCode: new XUcbrowserUaPlatformCode(),
-                platformVersion: new XUcbrowserUaPlatformVersion(),
-                engineCode: new XUcbrowserUaEngineCode(),
-                engineVersion: new XUcbrowserUaEngineVersion(),
-            ),
-        ];
+        // nothing to do
     }
 
     /**
@@ -272,7 +68,7 @@ final class HeaderLoader implements HeaderLoaderInterface
     #[Override]
     public function has(string $key): bool
     {
-        return array_key_exists($key, $this->factories);
+        return Headers::tryFrom($key) !== null;
     }
 
     /**
@@ -283,12 +79,162 @@ final class HeaderLoader implements HeaderLoaderInterface
     #[Override]
     public function load(string $key, string $value): HeaderInterface
     {
-        if (!$this->has($key)) {
-            throw new NotFoundException(sprintf('the header with name "%s" was not found', $key));
-        }
+        $header = Headers::tryFrom($key);
 
-        $factory = $this->factories[$key];
-
-        return $factory($value);
+        return match ($header) {
+            Headers::HEADER_BAIDU_FLYFLOW => new DeviceCodeOnlyHeader(
+                value: $value,
+                deviceCode: new BaiduFlyflow(deviceParser: $this->deviceParser),
+            ),
+            Headers::HEADER_DEVICE_STOCK_UA => new FullHeader(
+                value: $value,
+                deviceCode: new DeviceStockUaDeviceCode(
+                    deviceParser: $this->deviceParser,
+                ),
+                clientCode: new DeviceStockUaClientCode(),
+                clientVersion: new DeviceStockUaClientVersion(),
+                platformCode: new DeviceStockUaPlatformCode(),
+                platformVersion: new DeviceStockUaPlatformVersion(),
+                engineCode: new DeviceStockUaEngineCode(),
+                engineVersion: new DeviceStockUaEngineVersion(),
+            ),
+            Headers::HEADER_SEC_CH_UA => new ClientHeader(
+                value: $value,
+                clientCode: new SecChUaClientCode(),
+                clientVersion: new SecChUaClientVersion(),
+            ),
+            Headers::HEADER_SEC_CH_UA_ARCH => new SecChUaArch(value: $value),
+            Headers::HEADER_SEC_CH_UA_BITNESS => new SecChUaBitness(value: $value),
+            Headers::HEADER_SEC_CH_UA_FULL_VERSION => new SecChUaFullVersion(value: $value),
+            Headers::HEADER_SEC_CH_UA_FULL_VERSION_LIST => new SecChUaFullVersion(value: $value),
+            Headers::HEADER_SEC_CH_UA_MOBILE => new SecChUaMobile(value: $value),
+            Headers::HEADER_SEC_CH_UA_MODEL => new DeviceCodeOnlyHeader(
+                value: $value,
+                deviceCode: new SecChUaModel(),
+            ),
+            Headers::HEADER_SEC_CH_UA_PLATFORM => new PlatformCodeOnlyHeader(
+                value: $value,
+                platformCode: new SecChUaPlatform(),
+            ),
+            Headers::HEADER_SEC_CH_UA_PLATFORM_VERSION => new PlatformVersionOnlyHeader(
+                value: $value,
+                platformVersion: new SecChUaPlatformVersion(),
+            ),
+            Headers::HEADER_UA_OS => new PlatformHeader(
+                value: $value,
+                platformCode: new UaOsPlatformCode(),
+                platformVersion: new UaOsPlatformVersion(),
+            ),
+            Headers::HEADER_CRAWLED_BY => new ClientHeader(
+                value: $value,
+                clientCode: new CrawledByClientCode(),
+                clientVersion: new CrawledByClientVersion(),
+            ),
+            Headers::HEADER_USERAGENT, Headers::HEADER_ORIGINAL_UA => new FullHeader(
+                value: $value,
+                deviceCode: new UseragentDeviceCode(
+                    deviceParser: $this->deviceParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+                clientCode: new UseragentClientCode(
+                    browserParser: $this->browserParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+                clientVersion: new UseragentClientVersion(
+                    browserParser: $this->browserParser,
+                    browserLoader: $this->browserLoader,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+                platformCode: new UseragentPlatformCode(
+                    platformParser: $this->platformParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+                platformVersion: new UseragentPlatformVersion(
+                    platformParser: $this->platformParser,
+                    platformLoader: $this->platformLoader,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+                engineCode: new UseragentEngineCode(
+                    engineParser: $this->engineParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+                engineVersion: new UseragentEngineVersion(
+                    engineParser: $this->engineParser,
+                    engineLoader: $this->engineLoader,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+            ),
+            Headers::HEADER_DEVICE_UA => new DeviceCodeOnlyHeader(
+                value: $value,
+                deviceCode: new XDeviceUseragent(
+                    deviceParser: $this->deviceParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+            ),
+            Headers::HEADER_OPERAMINI_PHONE => new DeviceCodeOnlyHeader(
+                value: $value,
+                deviceCode: new XOperaminiPhone(),
+            ),
+            Headers::HEADER_OPERAMINI_PHONE_UA => new XOperaminiPhoneUa(
+                value: $value,
+                deviceCode: new XOperaminiPhoneUaDeviceCode(
+                    deviceParser: $this->deviceParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+                clientCode: new XOperaminiPhoneUaClientCode(),
+                clientVersion: new XOperaminiPhoneUaClientVersion(),
+                platformCode: new XOperaminiPhoneUaPlatformCode(),
+                engineCode: new XOperaminiPhoneUaEngineCode(
+                    engineParser: $this->engineParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+            ),
+            Headers::HEADER_PUFFIN_UA => new XPuffinUa(
+                value: $value,
+                deviceCode: new XPuffinUaDeviceCode(),
+                platformCode: new XPuffinUaPlatformCode(),
+            ),
+            Headers::HEADER_REQUESTED_WITH => new ClientHeader(
+                value: $value,
+                clientCode: new XRequestedWithClientCode(),
+                clientVersion: new XRequestedWithClientVersion(),
+            ),
+            Headers::HEADER_UCBROWSER_DEVICE => new DeviceCodeOnlyHeader(
+                value: $value,
+                deviceCode: new XUcbrowserDevice(
+                    deviceParser: $this->deviceParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+            ),
+            Headers::HEADER_UCBROWSER_DEVICE_UA => new XUcbrowserDeviceUa(
+                value: $value,
+                deviceCode: new XUcbrowserDeviceUaDeviceCode(
+                    deviceParser: $this->deviceParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+                platformCode: new XUcbrowserDeviceUaPlatformCode(
+                    platformParser: $this->platformParser,
+                    normalizerFactory: $this->normalizerFactory,
+                ),
+            ),
+            Headers::HEADER_UCBROWSER_PHONE, Headers::HEADER_UCBROWSER_PHONE_UA => new XUcbrowserPhoneUa(
+                value: $value,
+                deviceCode: new XUcbrowserPhoneDeviceCode(),
+                clientCode: new XUcbrowserPhoneClientCode(),
+            ),
+            Headers::HEADER_UCBROWSER_UA => new FullHeader(
+                value: $value,
+                deviceCode: new XUcbrowserUaDeviceCode(deviceParser: $this->deviceParser),
+                clientCode: new XUcbrowserUaClientCode(),
+                clientVersion: new XUcbrowserUaClientVersion(),
+                platformCode: new XUcbrowserUaPlatformCode(),
+                platformVersion: new XUcbrowserUaPlatformVersion(),
+                engineCode: new XUcbrowserUaEngineCode(),
+                engineVersion: new XUcbrowserUaEngineVersion(),
+            ),
+            default => throw new NotFoundException(
+                sprintf('the header with name "%s" was not found', $key),
+            ),
+        };
     }
 }

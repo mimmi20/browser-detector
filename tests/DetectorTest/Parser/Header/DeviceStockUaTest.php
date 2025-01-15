@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -24,9 +24,8 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaParser\DeviceParserInterface;
-use UaRequest\Header\DeviceStockUa;
-
 use UaRequest\Header\FullHeader;
+
 use function preg_match;
 use function sprintf;
 

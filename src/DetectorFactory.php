@@ -30,7 +30,6 @@ use BrowserDetector\Version\VersionBuilderFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use RuntimeException;
-use UaBrowserType\TypeLoader;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\RequestBuilder;
 
@@ -103,9 +102,7 @@ final class DetectorFactory
                 engineLoader: $engineLoader,
             );
 
-            $requestBuilder = new RequestBuilder(
-                headerLoader: $headerLoader
-            );
+            $requestBuilder = new RequestBuilder(headerLoader: $headerLoader);
 
             $this->detector = new Detector(
                 logger: $this->logger,

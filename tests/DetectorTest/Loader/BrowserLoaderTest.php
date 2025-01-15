@@ -19,14 +19,12 @@ use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DataInterface;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
-use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
-use UaResult\Company\CompanyInterface;
 use UnexpectedValueException;
 
 final class BrowserLoaderTest extends TestCase
@@ -90,7 +88,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
@@ -160,7 +163,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
@@ -246,7 +254,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $result = $object->load('test-key', 'test/1.0');
 
@@ -336,7 +349,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"engine" property is required');
@@ -417,7 +435,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"name" property is required');
@@ -497,7 +520,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"engine" property is required');
@@ -577,7 +605,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"name" property is required');
@@ -658,7 +691,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"manufacturer" property is required');
@@ -738,7 +776,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"manufacturer" property is required');
@@ -819,7 +862,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"version" property is required');
@@ -899,7 +947,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"version" property is required');
@@ -980,7 +1033,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"type" property is required');
@@ -1060,7 +1118,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader, versionBuilder: $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"type" property is required');

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,15 +22,13 @@ use UaParser\PlatformParserInterface;
 
 use function preg_match;
 
-final class XUcbrowserDeviceUaPlatformCode implements PlatformCodeInterface
+final readonly class XUcbrowserDeviceUaPlatformCode implements PlatformCodeInterface
 {
-    private readonly NormalizerInterface $normalizer;
+    private NormalizerInterface $normalizer;
 
-    /** @throws Exception */
-    public function __construct(
-        private readonly PlatformParserInterface $platformParser,
-        NormalizerFactory $normalizerFactory,
-    ) {
+    /** @throws void */
+    public function __construct(private PlatformParserInterface $platformParser, NormalizerFactory $normalizerFactory)
+    {
         $this->normalizer = $normalizerFactory->build();
     }
 
@@ -60,7 +58,15 @@ final class XUcbrowserDeviceUaPlatformCode implements PlatformCodeInterface
             return null;
         }
 
-        $normalizedValue = $this->normalizer->normalize($value);
+        try {
+            $normalizedValue = $this->normalizer->normalize($value);
+        } catch (Exception) {
+            return null;
+        }
+
+        if ($normalizedValue === '' || $normalizedValue === null) {
+            return null;
+        }
 
         $code = $this->platformParser->parse($normalizedValue);
 

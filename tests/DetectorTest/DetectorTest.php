@@ -69,7 +69,7 @@ final class DetectorTest extends TestCase
 
         $result = $detector->getBrowser($headers);
 
-        //unset($result['headers']);
+        // unset($result['headers']);
 
         self::assertSame($expected, $result);
     }
@@ -150,9 +150,7 @@ final class DetectorTest extends TestCase
             [
                 ['user-agent' => 'Mozilla/5.0 (Linux; Android 12; DBY-W09 Build/HUAWEIDBY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.41 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.79.0 baiduboxapp/13.41.5.10 (Baidu; P1 12) NABar/1.0'],
                 [
-                    'headers' => [
-                        'user-agent' => 'Mozilla/5.0 (Linux; Android 12; DBY-W09 Build/HUAWEIDBY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.41 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.79.0 baiduboxapp/13.41.5.10 (Baidu; P1 12) NABar/1.0'
-                    ],
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Linux; Android 12; DBY-W09 Build/HUAWEIDBY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.41 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.79.0 baiduboxapp/13.41.5.10 (Baidu; P1 12) NABar/1.0'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'DBY-W09',
@@ -195,9 +193,7 @@ final class DetectorTest extends TestCase
             [
                 ['user-agent' => 'Mozilla/5.0 (Linux; U; Android 6.0.1; xx; Le X820 Build/MOB31T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 Quark/1.6.9.911 Mobile Safari/537.36'],
                 [
-                    'headers' => [
-                        'user-agent' => 'Mozilla/5.0 (Linux; U; Android 6.0.1; xx; Le X820 Build/MOB31T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 Quark/1.6.9.911 Mobile Safari/537.36'
-                    ],
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Linux; U; Android 6.0.1; xx; Le X820 Build/MOB31T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 Quark/1.6.9.911 Mobile Safari/537.36'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'Le X820',
@@ -503,13 +499,9 @@ final class DetectorTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'UCWEB/2.0 (iOS; U; iPd OS 7_0_4; zh-CN; iPd5,1) U2/1.0.0 UCBrowser/9.0.1.284 U2/1.0.0 Mobile'],
                 [
-                    'user-agent' => 'UCWEB/2.0 (iOS; U; iPd OS 7_0_4; zh-CN; iPd5,1) U2/1.0.0 UCBrowser/9.0.1.284 U2/1.0.0 Mobile',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'UCWEB/2.0 (iOS; U; iPd OS 7_0_4; zh-CN; iPd5,1) U2/1.0.0 UCBrowser/9.0.1.284 U2/1.0.0 Mobile',
-                    ],
+                    'headers' => ['user-agent' => 'UCWEB/2.0 (iOS; U; iPd OS 7_0_4; zh-CN; iPd5,1) U2/1.0.0 UCBrowser/9.0.1.284 U2/1.0.0 Mobile'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'iPad 5,1',
@@ -550,13 +542,9 @@ final class DetectorTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'],
                 [
-                    'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',
-                    ],
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'Macintosh',
@@ -597,13 +585,9 @@ final class DetectorTest extends TestCase
                 ],
             ],
             [
+                ['x-crawled-by' => 'RecordedFuture-ASI-Crawl'],
                 [
-                    'x-crawled-by' => 'RecordedFuture-ASI-Crawl',
-                ],
-                [
-                    'headers' => [
-                        'x-crawled-by' => 'RecordedFuture-ASI-Crawl',
-                    ],
+                    'headers' => ['x-crawled-by' => 'RecordedFuture-ASI-Crawl'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => null,

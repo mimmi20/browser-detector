@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Parser\Header\XUcbrowserDevice;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -20,7 +21,6 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 use UaParser\DeviceParserInterface;
 use UaRequest\Header\DeviceCodeOnlyHeader;
-use UaRequest\Header\XUcbrowserDevice;
 
 use function in_array;
 use function mb_strtolower;
@@ -60,7 +60,7 @@ final class XUcbrowserDeviceTest extends TestCase
 
         $header = new DeviceCodeOnlyHeader(
             value: $ua,
-            deviceCode: new \BrowserDetector\Parser\Header\XUcbrowserDevice(
+            deviceCode: new XUcbrowserDevice(
                 deviceParser: $deviceParser,
                 normalizerFactory: $normalizerFactory,
             ),

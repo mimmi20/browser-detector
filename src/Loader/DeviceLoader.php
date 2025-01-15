@@ -19,8 +19,6 @@ use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
 use UaDeviceType\Type;
-use UaDeviceType\TypeLoaderInterface;
-use UaDeviceType\Unknown;
 use UaLoader\Data\DeviceDataInterface;
 use UaLoader\DeviceLoaderInterface;
 use UaLoader\Exception\NotFoundException;
@@ -44,9 +42,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
         $initData();
     }
 
-    /**
-     * @throws NotFoundException
-     */
+    /** @throws NotFoundException */
     #[Override]
     public function load(string $key): DeviceDataInterface
     {
@@ -69,10 +65,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             '"platform" property is required',
         );
 
-        return new DeviceData(
-            device: $device,
-            os: $deviceData->platform,
-        );
+        return new DeviceData(device: $device, os: $deviceData->platform);
     }
 
     /**

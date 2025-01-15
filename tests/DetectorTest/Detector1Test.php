@@ -110,8 +110,6 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('getEngineVersion');
 
-        $filteredHeaders = ['xyz' => $header];
-
         $expected = [1, 2, 3, 4];
 
         $logger = $this->createMock(LoggerInterface::class);

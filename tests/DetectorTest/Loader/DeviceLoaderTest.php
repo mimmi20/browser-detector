@@ -23,7 +23,6 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
-use Stringable;
 use UaDeviceType\TypeInterface;
 use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;

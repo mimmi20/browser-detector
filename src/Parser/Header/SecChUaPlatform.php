@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -32,7 +32,11 @@ final class SecChUaPlatform implements PlatformCodeInterface
         return !in_array($code, ['', 'unknown'], true);
     }
 
-    /** @throws void */
+    /**
+     * @return non-empty-string|null
+     *
+     * @throws void
+     */
     #[Override]
     public function getPlatformCode(string $value, string | null $derivate = null): string | null
     {
@@ -51,7 +55,11 @@ final class SecChUaPlatform implements PlatformCodeInterface
         return $this->getCode($code);
     }
 
-    /** @throws void */
+    /**
+     * @return non-empty-string|null
+     *
+     * @throws void
+     */
     private function getCode(string $code): string | null
     {
         return match ($code) {

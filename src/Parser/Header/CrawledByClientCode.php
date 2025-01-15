@@ -14,17 +14,30 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use Override;
-use UaParser\PlatformCodeInterface;
+use UaParser\ClientCodeInterface;
 
-use function preg_match;
+use function array_key_first;
+use function mb_strtolower;
+use function str_contains;
 
-final class UaOsPlatformCode implements PlatformCodeInterface
+final class CrawledByClientCode implements ClientCodeInterface
 {
+    use SortTrait;
+
     /** @throws void */
     #[Override]
-    public function hasPlatformCode(string $value): bool
+    public function hasClientCode(string $value): bool
     {
-        return (bool) preg_match('/Windows CE \(Pocket PC\) - Version \d+\.\d+/', $value);
+        $list = $this->sort($value);
+
+        if ($list === null || $list === []) {
+            return false;
+        }
+
+        $key  = array_key_first($list);
+        $code = mb_strtolower($key);
+
+        return !str_contains($code, 'brand') && $code !== 'chromium';
     }
 
     /**
@@ -35,14 +48,8 @@ final class UaOsPlatformCode implements PlatformCodeInterface
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getClientCode(string $value): string | null
     {
-        $matches = [];
-
-        if (preg_match('/(?P<name>Windows CE) \(Pocket PC\) - Version \d+\.\d+/', $value, $matches)) {
-            return 'windows ce';
-        }
-
         return null;
     }
 }

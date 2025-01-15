@@ -25,7 +25,6 @@ use Override;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
-use UaBrowserType\Unknown;
 use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\Data\ClientDataInterface;
@@ -37,10 +36,8 @@ use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
 use UaResult\Browser\Browser;
-use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
-use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
@@ -48,7 +45,9 @@ use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
+use function array_change_key_case;
 use function array_filter;
+use function array_map;
 use function assert;
 use function explode;
 use function is_array;
@@ -60,6 +59,8 @@ use function reset;
 use function sprintf;
 use function str_contains;
 use function trim;
+
+use const CASE_LOWER;
 
 final readonly class Detector implements DetectorInterface
 {
@@ -115,7 +116,7 @@ final readonly class Detector implements DetectorInterface
     }
 
     /**
-     * @return array{headers: array<non-empty-string, non-empty-string>, device: array{architecture: string|null, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string|null, ismobile: bool, istv: bool, bits: int|null}, os: array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string|null}, client: array{name: string|null, version: string|null, manufacturer: string|null, type: string|null, isbot: bool}, engine: array{name: string|null, version: string|null, manufacturer: string|null}}
+     * @return array{headers: array<non-empty-string, string>, device: array{architecture: string|null, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string|null, ismobile: bool, istv: bool, bits: int|null}, os: array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string|null}, client: array{name: string|null, version: string|null, manufacturer: string|null, type: string|null, isbot: bool}, engine: array{name: string|null, version: string|null, manufacturer: string|null}}
      *
      * @throws UnexpectedValueException
      */
@@ -127,11 +128,9 @@ final readonly class Detector implements DetectorInterface
         /* detect device */
         $deviceIsMobile = $this->getDeviceIsMobile(filteredHeaders: $filteredHeaders);
 
-        $deviceData = $this->getDeviceData(
-            filteredHeaders: $filteredHeaders,
-        );
+        $deviceData = $this->getDeviceData(filteredHeaders: $filteredHeaders);
 
-        $device = $deviceData->getDevice();
+        $device              = $deviceData->getDevice();
         $deviceMarketingName = $device->getMarketingName();
 
         /* detect platform */
@@ -164,9 +163,7 @@ final readonly class Detector implements DetectorInterface
         }
 
         /* detect client */
-        $clientData = $this->getClientData(
-            filteredHeaders: $filteredHeaders,
-        );
+        $clientData = $this->getClientData(filteredHeaders: $filteredHeaders);
 
         $client = $clientData->getClient();
 
@@ -186,9 +183,7 @@ final readonly class Detector implements DetectorInterface
 
         return [
             'headers' => array_map(
-                callback: function(HeaderInterface $header): string {
-                    return $header->getValue();
-                },
+                callback: static fn (HeaderInterface $header): string => $header->getValue(),
                 array: array_change_key_case($request->getHeaders(), CASE_LOWER),
             ),
             'device' => [

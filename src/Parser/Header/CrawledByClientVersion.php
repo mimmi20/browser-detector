@@ -16,15 +16,19 @@ namespace BrowserDetector\Parser\Header;
 use Override;
 use UaParser\ClientVersionInterface;
 
-use function preg_match;
-
-final class XOperaminiPhoneUaClientVersion implements ClientVersionInterface
+final class CrawledByClientVersion implements ClientVersionInterface
 {
-    /** @throws void */
+    use SortTrait;
+
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
     #[Override]
     public function hasClientVersion(string $value): bool
     {
-        return (bool) preg_match('/opera mini\/[\d\.]+/i', $value);
+        return true;
     }
 
     /**
@@ -35,12 +39,6 @@ final class XOperaminiPhoneUaClientVersion implements ClientVersionInterface
     #[Override]
     public function getClientVersion(string $value, string | null $code = null): string | null
     {
-        $matches = [];
-
-        if (preg_match('/opera mini\/(?P<version>[\d\.]+)/i', $value, $matches)) {
-            return $matches['version'];
-        }
-
         return null;
     }
 }

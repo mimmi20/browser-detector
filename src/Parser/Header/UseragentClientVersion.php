@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,14 +25,14 @@ use UnexpectedValueException;
 
 use function preg_match;
 
-final class UseragentClientVersion implements ClientVersionInterface
+final readonly class UseragentClientVersion implements ClientVersionInterface
 {
-    private readonly NormalizerInterface $normalizer;
+    private NormalizerInterface $normalizer;
 
-    /** @throws Exception */
+    /** @throws void */
     public function __construct(
-        private readonly BrowserParserInterface $browserParser,
-        private readonly BrowserLoaderInterface $browserLoader,
+        private BrowserParserInterface $browserParser,
+        private BrowserLoaderInterface $browserLoader,
         NormalizerFactory $normalizerFactory,
     ) {
         $this->normalizer = $normalizerFactory->build();
@@ -53,7 +53,15 @@ final class UseragentClientVersion implements ClientVersionInterface
     #[Override]
     public function getClientVersion(string $value, string | null $code = null): string | null
     {
-        $normalizedValue = $this->normalizer->normalize($value);
+        try {
+            $normalizedValue = $this->normalizer->normalize($value);
+        } catch (Exception) {
+            return null;
+        }
+
+        if ($normalizedValue === '' || $normalizedValue === null) {
+            return null;
+        }
 
         $matches = [];
 
@@ -80,9 +88,15 @@ final class UseragentClientVersion implements ClientVersionInterface
         }
 
         try {
-            return $clientData->getClient()->getVersion()->getVersion();
+            $version = $clientData->getClient()->getVersion()->getVersion();
         } catch (UnexpectedValueException) {
             return null;
         }
+
+        if ($version === '') {
+            return null;
+        }
+
+        return $version;
     }
 }

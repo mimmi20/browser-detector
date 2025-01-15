@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -32,14 +32,12 @@ use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
-use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 use UaParser\BrowserParserInterface;
 use UaParser\DeviceParserInterface;
 use UaParser\EngineParserInterface;
 use UaParser\PlatformParserInterface;
 use UaRequest\Header\FullHeader;
-use UaRequest\Header\Useragent;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
@@ -52,7 +50,6 @@ final class UseragentTest extends TestCase
 {
     /**
      * @throws ExpectationFailedException
-     * @throws Exception
      * @throws NotNumericException
      */
     #[DataProvider('providerUa')]
@@ -537,10 +534,7 @@ final class UseragentTest extends TestCase
         ];
     }
 
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     */
+    /** @throws ExpectationFailedException */
     public function testData7(): void
     {
         $ua = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
@@ -704,10 +698,7 @@ final class UseragentTest extends TestCase
         );
     }
 
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     */
+    /** @throws ExpectationFailedException */
     public function testDataWithoutVersions(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
@@ -910,7 +901,6 @@ final class UseragentTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws Exception
      * @throws NotNumericException
      */
     public function testDataWithVersions(): void
@@ -965,7 +955,8 @@ final class UseragentTest extends TestCase
                         version: (new VersionBuilder())->set($browserVersion),
                         manufacturer: new Company(type: '', name: null, brandname: null),
                         type: Type::Browser,
-                    ),engine: null
+                    ),
+                    engine: null,
                 ),
             );
 
@@ -1121,7 +1112,6 @@ final class UseragentTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws Exception
      * @throws NotNumericException
      */
     public function testDataWithClientParserException(): void
@@ -1319,7 +1309,6 @@ final class UseragentTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws Exception
      * @throws NotNumericException
      */
     public function testDataWithClientParserException2(): void
@@ -1517,7 +1506,6 @@ final class UseragentTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws Exception
      * @throws NotNumericException
      */
     public function testDataWithClientParserException3(): void
@@ -1713,10 +1701,7 @@ final class UseragentTest extends TestCase
         );
     }
 
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     */
+    /** @throws ExpectationFailedException */
     public function testDataWithLoaderExceptions(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
@@ -1898,10 +1883,7 @@ final class UseragentTest extends TestCase
         );
     }
 
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     */
+    /** @throws ExpectationFailedException */
     public function testDataWithLoaderExceptions2(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';

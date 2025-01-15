@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This file is part of the mimmi20/ua-generic-request package.
+ * This file is part of the browser-detector package.
  *
- * Copyright (c) 2015-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -40,7 +40,11 @@ final class SecChUaClientCode implements ClientCodeInterface
         return !str_contains($code, 'brand') && $code !== 'chromium';
     }
 
-    /** @throws void */
+    /**
+     * @return non-empty-string|null
+     *
+     * @throws void
+     */
     #[Override]
     public function getClientCode(string $value): string | null
     {
