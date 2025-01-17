@@ -69,8 +69,6 @@ final class DetectorTest extends TestCase
 
         $result = $detector->getBrowser($headers);
 
-        // unset($result['headers']);
-
         self::assertSame($expected, $result);
     }
 
