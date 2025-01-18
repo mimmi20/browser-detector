@@ -58,8 +58,6 @@ final class DetectorFactory
         if ($this->detector === null) {
             $companyLoaderFactory = new CompanyLoaderFactory();
 
-            $companyLoader = $companyLoaderFactory();
-
             $serializableStrategy = new SerializableStrategy(
                 new Json(
                     [
@@ -67,6 +65,8 @@ final class DetectorFactory
                     ],
                 ),
             );
+
+            $companyLoader = $companyLoaderFactory($serializableStrategy);
 
             try {
                 $platformLoader = new PlatformLoader(
