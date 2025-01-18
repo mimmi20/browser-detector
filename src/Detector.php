@@ -45,12 +45,12 @@ use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
-use function array_change_key_case;
 use function array_filter;
 use function array_map;
 use function assert;
 use function explode;
 use function is_array;
+use function is_int;
 use function is_string;
 use function mb_strpos;
 use function mb_strtolower;
@@ -59,8 +59,6 @@ use function reset;
 use function sprintf;
 use function str_contains;
 use function trim;
-
-use const CASE_LOWER;
 
 final readonly class Detector implements DetectorInterface
 {
@@ -555,6 +553,10 @@ final readonly class Detector implements DetectorInterface
             } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
             }
+        }
+
+        if (!$platformVersion instanceof VersionInterface) {
+            $platformVersion = null;
         }
 
         return new Os(

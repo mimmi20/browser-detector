@@ -27,6 +27,7 @@
     enforceTimeLimit="false"
     executionOrder="default"
     resolveDependencies="true"
+    requireCoverageMetadata="true"
     colors="true"
     cacheDirectory="./.reports/.coverage-cache"
     columns="119"

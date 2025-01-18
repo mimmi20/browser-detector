@@ -21,6 +21,7 @@ use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -31,6 +32,7 @@ use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
+#[CoversClass(BrowserLoader::class)]
 final class BrowserLoaderTest extends TestCase
 {
     /**

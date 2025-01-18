@@ -16,11 +16,13 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use Laminas\Hydrator\Strategy\StrategyInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 
+#[CoversClass(CompanyLoaderFactory::class)]
 final class CompanyLoaderFactoryTest extends TestCase
 {
     /**

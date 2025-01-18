@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -22,6 +23,7 @@ use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaLoader\DeviceLoaderInterface;
 
+#[CoversClass(DeviceLoaderFactory::class)]
 final class DeviceLoaderFactoryTest extends TestCase
 {
     /**

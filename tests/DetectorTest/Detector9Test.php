@@ -23,6 +23,7 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -43,6 +44,7 @@ use UaResult\Engine\Engine;
 use UaResult\Os\Os;
 use UnexpectedValueException;
 
+#[CoversClass(Detector::class)]
 final class Detector9Test extends TestCase
 {
     /**

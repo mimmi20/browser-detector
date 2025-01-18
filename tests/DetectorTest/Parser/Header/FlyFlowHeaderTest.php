@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace Parser\Header;
 
 use BrowserDetector\Parser\Header\BaiduFlyflow;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -23,6 +24,7 @@ use UaRequest\Header\DeviceCodeOnlyHeader;
 use function preg_match;
 use function sprintf;
 
+#[CoversClass(BaiduFlyflow::class)]
 final class FlyFlowHeaderTest extends TestCase
 {
     /** @throws ExpectationFailedException */

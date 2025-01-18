@@ -16,11 +16,13 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Test;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
+#[CoversClass(Test::class)]
 final class TestTest extends TestCase
 {
     /**

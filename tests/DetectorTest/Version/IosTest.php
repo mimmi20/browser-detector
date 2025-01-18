@@ -23,11 +23,13 @@ use Exception;
 use IosBuild\Exception\NotFoundException;
 use IosBuild\IosBuild;
 use IosBuild\IosBuildInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
+#[CoversClass(Ios::class)]
 final class IosTest extends TestCase
 {
     /**

@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\SecChUaClientCode;
 use BrowserDetector\Parser\Header\SecChUaClientVersion;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -22,6 +23,8 @@ use UaRequest\Header\ClientHeader;
 
 use function sprintf;
 
+#[CoversClass(SecChUaClientCode::class)]
+#[CoversClass(SecChUaClientVersion::class)]
 final class SecChUaTest extends TestCase
 {
     /** @throws ExpectationFailedException */

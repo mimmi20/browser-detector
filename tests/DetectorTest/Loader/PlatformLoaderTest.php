@@ -29,6 +29,7 @@ use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -42,6 +43,7 @@ use UaResult\Company\Company;
 use UaResult\Os\Os;
 use UnexpectedValueException;
 
+#[CoversClass(PlatformLoader::class)]
 final class PlatformLoaderTest extends TestCase
 {
     /**

@@ -18,6 +18,7 @@ use BrowserDetector\Loader\Data\Company;
 use BrowserDetector\Loader\InitData\Company as DataCompany;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -26,9 +27,7 @@ use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 
-/**
- * Test class for \BrowserDetector\Loader\CompanyLoader
- */
+#[CoversClass(CompanyLoader::class)]
 final class CompanyLoaderTest extends TestCase
 {
     /**

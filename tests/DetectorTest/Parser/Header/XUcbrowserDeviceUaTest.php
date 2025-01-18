@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaDeviceCode;
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaPlatformCode;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -26,6 +27,8 @@ use UaRequest\Header\XUcbrowserDeviceUa;
 
 use function sprintf;
 
+#[CoversClass(XUcbrowserDeviceUaDeviceCode::class)]
+#[CoversClass(XUcbrowserDeviceUaPlatformCode::class)]
 final class XUcbrowserDeviceUaTest extends TestCase
 {
     /**

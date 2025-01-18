@@ -20,6 +20,7 @@ use BrowserDetector\Parser\Header\DeviceStockUaEngineCode;
 use BrowserDetector\Parser\Header\DeviceStockUaEngineVersion;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformCode;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformVersion;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -29,6 +30,13 @@ use UaRequest\Header\FullHeader;
 use function preg_match;
 use function sprintf;
 
+#[CoversClass(DeviceStockUaClientCode::class)]
+#[CoversClass(DeviceStockUaClientVersion::class)]
+#[CoversClass(DeviceStockUaPlatformCode::class)]
+#[CoversClass(DeviceStockUaPlatformVersion::class)]
+#[CoversClass(DeviceStockUaEngineCode::class)]
+#[CoversClass(DeviceStockUaEngineVersion::class)]
+#[CoversClass(DeviceStockUaDeviceCode::class)]
 final class DeviceStockUaTest extends TestCase
 {
     /** @throws ExpectationFailedException */

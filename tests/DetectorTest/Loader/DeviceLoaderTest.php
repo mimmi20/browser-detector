@@ -18,12 +18,14 @@ use BrowserDetector\Loader\Data\Device as DeviceData;
 use BrowserDetector\Loader\DeviceLoader;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
+#[CoversClass(DeviceLoader::class)]
 final class DeviceLoaderTest extends TestCase
 {
     /**

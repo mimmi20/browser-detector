@@ -24,6 +24,7 @@ use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilder;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -46,6 +47,13 @@ use UnexpectedValueException;
 
 use function sprintf;
 
+#[CoversClass(UseragentClientCode::class)]
+#[CoversClass(UseragentClientVersion::class)]
+#[CoversClass(UseragentDeviceCode::class)]
+#[CoversClass(UseragentEngineCode::class)]
+#[CoversClass(UseragentEngineVersion::class)]
+#[CoversClass(UseragentPlatformCode::class)]
+#[CoversClass(UseragentPlatformVersion::class)]
 final class UseragentTest extends TestCase
 {
     /**

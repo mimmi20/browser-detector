@@ -20,6 +20,7 @@ use BrowserDetector\Parser\Header\XUcbrowserUaEngineCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaEngineVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformVersion;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -29,6 +30,13 @@ use UaRequest\Header\FullHeader;
 use function preg_match;
 use function sprintf;
 
+#[CoversClass(XUcbrowserUaClientCode::class)]
+#[CoversClass(XUcbrowserUaClientVersion::class)]
+#[CoversClass(XUcbrowserUaDeviceCode::class)]
+#[CoversClass(XUcbrowserUaEngineCode::class)]
+#[CoversClass(XUcbrowserUaEngineVersion::class)]
+#[CoversClass(XUcbrowserUaPlatformCode::class)]
+#[CoversClass(XUcbrowserUaPlatformVersion::class)]
 final class XUcbrowserUaTest extends TestCase
 {
     /** @throws ExpectationFailedException */

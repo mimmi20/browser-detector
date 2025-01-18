@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserPhoneClientCode;
 use BrowserDetector\Parser\Header\XUcbrowserPhoneDeviceCode;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -22,6 +23,8 @@ use UaRequest\Header\XUcbrowserPhoneUa;
 
 use function sprintf;
 
+#[CoversClass(XUcbrowserPhoneClientCode::class)]
+#[CoversClass(XUcbrowserPhoneDeviceCode::class)]
 final class XUcbrowserPhoneUaTest extends TestCase
 {
     /** @throws ExpectationFailedException */

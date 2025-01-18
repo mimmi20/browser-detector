@@ -50,6 +50,7 @@ use function json_decode;
 use function json_encode;
 use function sprintf;
 use function str_replace;
+use function var_export;
 
 use const JSON_THROW_ON_ERROR;
 use const JSON_UNESCAPED_SLASHES;
@@ -57,6 +58,7 @@ use const JSON_UNESCAPED_UNICODE;
 use const PHP_EOL;
 
 /** @infection-ignore-all */
+#[CoversNothing]
 final class DetectorTest extends TestCase
 {
     private static DetectorFactory $factory;
@@ -300,53 +302,23 @@ final class DetectorTest extends TestCase
             $expectedResult['headers'],
             $result['headers'],
             sprintf(
-                'detection header result mismatch for headers %s',
+                "detection header result mismatch for headers %s\ntest headers:%s\nexpected result: %s\nactual result: %s",
                 $encodedHeaders,
+                var_export($headers, true),
+                var_export($expectedResult['headers'], true),
+                var_export($result['headers'], true),
             ),
         );
-
-//        self::assertEquals(
-//            $expectedResult['os'],
-//            $result['os'],
-//            sprintf(
-//                'detection os result mismatch for headers %s',
-//                $encodedHeaders,
-//            ),
-//        );
-//
-//        self::assertEquals(
-//            $expectedResult['browser'],
-//            $result['client'],
-//            sprintf(
-//                'detection client result mismatch for headers %s',
-//                $encodedHeaders,
-//            ),
-//        );
-//
-//        self::assertEquals(
-//            $expectedResult['device'],
-//            $result['device'],
-//            sprintf(
-//                'detection device result mismatch for headers %s',
-//                $encodedHeaders,
-//            ),
-//        );
-//
-//        self::assertEquals(
-//            $expectedResult['engine'],
-//            $result['engine'],
-//            sprintf(
-//                'detection engine result mismatch for headers %s',
-//                $encodedHeaders,
-//            ),
-//        );
 
         self::assertEquals(
             $expectedResult,
             $result,
             sprintf(
-                'detection result mismatch for headers %s',
+                "detection result mismatch for headers %s\ntest headers:%s\nexpected result: %s\nactual result: %s",
                 $encodedHeaders,
+                var_export($headers, true),
+                var_export($expectedResult, true),
+                var_export($result, true),
             ),
         );
     }

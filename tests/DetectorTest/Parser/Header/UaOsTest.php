@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\UaOsPlatformCode;
 use BrowserDetector\Parser\Header\UaOsPlatformVersion;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -22,6 +23,8 @@ use UaRequest\Header\PlatformHeader;
 
 use function sprintf;
 
+#[CoversClass(UaOsPlatformCode::class)]
+#[CoversClass(UaOsPlatformVersion::class)]
 final class UaOsTest extends TestCase
 {
     /** @throws ExpectationFailedException */

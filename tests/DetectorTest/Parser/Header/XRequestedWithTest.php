@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XRequestedWithClientCode;
 use BrowserDetector\Parser\Header\XRequestedWithClientVersion;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -22,6 +23,8 @@ use UaRequest\Header\ClientHeader;
 
 use function sprintf;
 
+#[CoversClass(XRequestedWithClientCode::class)]
+#[CoversClass(XRequestedWithClientVersion::class)]
 final class XRequestedWithTest extends TestCase
 {
     /** @throws ExpectationFailedException */

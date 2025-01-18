@@ -20,6 +20,7 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -28,6 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
+#[CoversClass(Friendica::class)]
 final class FriendicaTest extends TestCase
 {
     /**

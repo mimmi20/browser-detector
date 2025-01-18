@@ -15,12 +15,14 @@ namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\BrowserParserFactory;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use UaParser\BrowserParserInterface;
 
+#[CoversClass(BrowserParserFactory::class)]
 final class BrowserParserFactoryTest extends TestCase
 {
     /**

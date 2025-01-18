@@ -15,12 +15,14 @@ namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\MobileDevice;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
 use function sprintf;
 
+#[CoversClass(MobileDevice::class)]
 final class MobileDeviceTest extends TestCase
 {
     private MobileDevice $object;

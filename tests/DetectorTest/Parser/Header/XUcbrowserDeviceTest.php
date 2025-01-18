@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserDevice;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -26,6 +27,7 @@ use function in_array;
 use function mb_strtolower;
 use function sprintf;
 
+#[CoversClass(XUcbrowserDevice::class)]
 final class XUcbrowserDeviceTest extends TestCase
 {
     /**

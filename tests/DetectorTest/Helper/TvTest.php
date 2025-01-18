@@ -15,12 +15,14 @@ namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\Tv;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
 use function sprintf;
 
+#[CoversClass(Tv::class)]
 final class TvTest extends TestCase
 {
     private Tv $object;

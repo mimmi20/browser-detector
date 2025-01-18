@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest;
 
+use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -24,6 +26,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 use RuntimeException;
 use UnexpectedValueException;
 
+#[CoversClass(Detector::class)]
 final class DetectorTest extends TestCase
 {
     /**

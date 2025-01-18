@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Parser\Helper;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonException;
 use org\bovigo\vfs\vfsStream;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -25,6 +26,7 @@ use Throwable;
 use function assert;
 use function sprintf;
 
+#[CoversClass(RulefileParser::class)]
 final class RulefileParserTest extends TestCase
 {
     private const string DATA_PATH = 'root';

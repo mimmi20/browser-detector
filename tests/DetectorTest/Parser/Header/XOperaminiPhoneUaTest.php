@@ -18,6 +18,7 @@ use BrowserDetector\Parser\Header\XOperaminiPhoneUaClientVersion;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaDeviceCode;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaEngineCode;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaPlatformCode;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -29,6 +30,11 @@ use UaRequest\Header\XOperaminiPhoneUa;
 
 use function sprintf;
 
+#[CoversClass(XOperaminiPhoneUaClientCode::class)]
+#[CoversClass(XOperaminiPhoneUaClientVersion::class)]
+#[CoversClass(XOperaminiPhoneUaDeviceCode::class)]
+#[CoversClass(XOperaminiPhoneUaEngineCode::class)]
+#[CoversClass(XOperaminiPhoneUaPlatformCode::class)]
 final class XOperaminiPhoneUaTest extends TestCase
 {
     /**

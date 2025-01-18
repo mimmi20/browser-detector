@@ -17,10 +17,12 @@ use BrowserDetector\Version\ErrorVersionCreator;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
+#[CoversClass(ErrorVersionCreator::class)]
 final class ErrorVersionCreatorTest extends TestCase
 {
     private ErrorVersionCreator $object;

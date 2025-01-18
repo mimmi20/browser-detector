@@ -25,6 +25,7 @@ use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -37,6 +38,7 @@ use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UnexpectedValueException;
 
+#[CoversClass(EngineLoader::class)]
 final class EngineLoaderTest extends TestCase
 {
     /**

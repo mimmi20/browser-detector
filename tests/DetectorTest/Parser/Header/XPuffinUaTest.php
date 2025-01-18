@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XPuffinUaDeviceCode;
 use BrowserDetector\Parser\Header\XPuffinUaPlatformCode;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -22,6 +23,8 @@ use UaRequest\Header\XPuffinUa;
 
 use function sprintf;
 
+#[CoversClass(XPuffinUaDeviceCode::class)]
+#[CoversClass(XPuffinUaPlatformCode::class)]
 final class XPuffinUaTest extends TestCase
 {
     /** @throws ExpectationFailedException */

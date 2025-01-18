@@ -23,11 +23,13 @@ use Exception;
 use MacosBuild\Exception\NotFoundException;
 use MacosBuild\MacosBuild;
 use MacosBuild\MacosBuildInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
+#[CoversClass(Macos::class)]
 final class MacosTest extends TestCase
 {
     /**

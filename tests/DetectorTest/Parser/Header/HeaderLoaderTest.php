@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\HeaderLoader;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -32,6 +33,7 @@ use UaRequest\NotFoundException;
 
 use function sprintf;
 
+#[CoversClass(HeaderLoader::class)]
 final class HeaderLoaderTest extends TestCase
 {
     /** @throws NotFoundException */

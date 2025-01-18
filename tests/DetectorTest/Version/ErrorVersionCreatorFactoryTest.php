@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\ErrorVersionCreator;
 use BrowserDetector\Version\ErrorVersionCreatorFactory;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -23,6 +24,7 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
+#[CoversClass(ErrorVersionCreatorFactory::class)]
 final class ErrorVersionCreatorFactoryTest extends TestCase
 {
     private ErrorVersionCreatorFactory $object;

@@ -14,10 +14,12 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\TestUnexpectedError;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-final class TestErrorTest extends TestCase
+#[CoversClass(TestUnexpectedError::class)]
+final class TestUnexpectedErrorTest extends TestCase
 {
     /** @throws UnexpectedValueException */
     public function testDetectVersion(): void

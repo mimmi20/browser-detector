@@ -15,10 +15,12 @@ namespace BrowserDetectorTest\Bits;
 
 use BrowserDetector\Bits\Browser;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(Browser::class)]
 final class BrowserTest extends TestCase
 {
     private Browser $object;

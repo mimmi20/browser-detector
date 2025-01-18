@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\SecChUaPlatform;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -21,6 +22,7 @@ use UaRequest\Header\PlatformCodeOnlyHeader;
 
 use function sprintf;
 
+#[CoversClass(SecChUaPlatform::class)]
 final class SecChUaPlatformTest extends TestCase
 {
     /** @throws ExpectationFailedException */

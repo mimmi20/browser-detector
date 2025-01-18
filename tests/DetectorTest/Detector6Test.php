@@ -19,6 +19,7 @@ use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -37,6 +38,7 @@ use UaResult\Device\Display;
 use UaResult\Os\Os;
 use UnexpectedValueException;
 
+#[CoversClass(Detector::class)]
 final class Detector6Test extends TestCase
 {
     /**

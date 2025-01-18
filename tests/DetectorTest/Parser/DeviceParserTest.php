@@ -21,9 +21,11 @@ use BrowserDetector\Parser\Device\DesktopParserInterface;
 use BrowserDetector\Parser\Device\MobileParserInterface;
 use BrowserDetector\Parser\Device\TvParserInterface;
 use BrowserDetector\Parser\DeviceParser;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(DeviceParser::class)]
 final class DeviceParserTest extends TestCase
 {
     /** @throws ExpectationFailedException */
