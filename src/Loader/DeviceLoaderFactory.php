@@ -49,11 +49,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
         }
 
         $serializableStrategy = new SerializableStrategy(
-            new Json(
-                [
-                    'objectDecodeType' => \Laminas\Json\Json::TYPE_ARRAY,
-                ],
-            ),
+            new Json(),
         );
 
         try {

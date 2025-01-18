@@ -174,17 +174,10 @@ final readonly class Detector implements DetectorInterface
             engineCodenameFromClient: $clientData->getEngine(),
         );
 
-//        var_dump(array_keys($request->getHeaders()), array_map(
-//            callback: function(HeaderInterface $header): string {
-//                return $header->getValue();
-//            },
-//            array: $request->getHeaders()
-//        ));
-
         return [
             'headers' => array_map(
                 callback: static fn (HeaderInterface $header): string => $header->getValue(),
-                array: array_change_key_case($request->getHeaders(), CASE_LOWER),
+                array: $request->getHeaders(),
             ),
             'device' => [
                 'architecture' => $this->getDeviceArchitecture($filteredHeaders),
@@ -527,6 +520,8 @@ final readonly class Detector implements DetectorInterface
         if (is_string($platformVersion)) {
             $derivatePosition = mb_strpos($platformVersion, ';');
 
+            assert($derivatePosition === false || is_int($derivatePosition));
+
             if ($derivatePosition !== false) {
                 // the platform contains information about a derivate of the platform
                 $derivate        = trim(mb_substr($platformVersion, $derivatePosition + 1));
@@ -560,10 +555,6 @@ final readonly class Detector implements DetectorInterface
             } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
             }
-        }
-
-        if (!$platformVersion instanceof VersionInterface) {
-            $platformVersion = null;
         }
 
         return new Os(

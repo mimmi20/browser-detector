@@ -59,11 +59,7 @@ final class DetectorFactory
             $companyLoaderFactory = new CompanyLoaderFactory();
 
             $serializableStrategy = new SerializableStrategy(
-                new Json(
-                    [
-                        'objectDecodeType' => \Laminas\Json\Json::TYPE_ARRAY,
-                    ],
-                ),
+                new Json(),
             );
 
             $companyLoader = $companyLoaderFactory($serializableStrategy);

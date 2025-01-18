@@ -85,6 +85,8 @@ final class Engine
 
             $content = @file_get_contents($filepath);
 
+            assert($content === false || is_string($content));
+
             if ($content === false) {
                 throw new RuntimeException(sprintf('could not read file "%s"', $file));
             }
