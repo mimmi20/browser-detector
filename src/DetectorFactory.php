@@ -69,22 +69,22 @@ final class DetectorFactory
             );
 
             try {
-            $platformLoader = new PlatformLoader(
-                logger: $this->logger,
-                initData: new Data\Os(
-                    strategy: new StrategyChain(
-                        [
-                            new CollectionStrategy(
-                                new ArraySerializableHydrator(),
-                                DataOs::class,
-                            ),
-                            $serializableStrategy,
-                        ],
+                $platformLoader = new PlatformLoader(
+                    logger: $this->logger,
+                    initData: new Data\Os(
+                        strategy: new StrategyChain(
+                            [
+                                new CollectionStrategy(
+                                    new ArraySerializableHydrator(),
+                                    DataOs::class,
+                                ),
+                                $serializableStrategy,
+                            ],
+                        ),
                     ),
-                ),
-                companyLoader: $companyLoader,
-                versionBuilder: new VersionBuilder(),
-            );
+                    companyLoader: $companyLoader,
+                    versionBuilder: new VersionBuilder(),
+                );
             } catch (InvalidArgumentException $e) {
                 throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
             }
@@ -101,22 +101,22 @@ final class DetectorFactory
             $deviceParser        = $deviceParserFactory();
 
             try {
-            $engineLoader = new EngineLoader(
-                logger: $this->logger,
-                initData: new Data\Engine(
-                    strategy: new StrategyChain(
-                        [
-                            new CollectionStrategy(
-                                new ArraySerializableHydrator(),
-                                DataEngine::class,
-                            ),
-                            $serializableStrategy,
-                        ],
+                $engineLoader = new EngineLoader(
+                    logger: $this->logger,
+                    initData: new Data\Engine(
+                        strategy: new StrategyChain(
+                            [
+                                new CollectionStrategy(
+                                    new ArraySerializableHydrator(),
+                                    DataEngine::class,
+                                ),
+                                $serializableStrategy,
+                            ],
+                        ),
                     ),
-                ),
-                companyLoader: $companyLoader,
-                versionBuilder: new VersionBuilder(),
-            );
+                    companyLoader: $companyLoader,
+                    versionBuilder: new VersionBuilder(),
+                );
             } catch (InvalidArgumentException $e) {
                 throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
             }

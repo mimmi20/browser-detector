@@ -13,6 +13,13 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Loader\InitData\Device as DataDevice;
+use Laminas\Hydrator\ArraySerializableHydrator;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
+use Laminas\Hydrator\Strategy\CollectionStrategy;
+use Laminas\Hydrator\Strategy\SerializableStrategy;
+use Laminas\Hydrator\Strategy\StrategyChain;
+use Laminas\Serializer\Adapter\Json;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
@@ -22,9 +29,7 @@ use function array_key_exists;
 
 final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 {
-    private const string DATA_PATH = __DIR__ . '/../../data/devices/';
-
-    /** @var array<DeviceLoaderInterface> */
+    /** @var array<string, DeviceLoaderInterface> */
     private array $loader = [];
 
     /** @throws void */
@@ -43,11 +48,33 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             return $this->loader[$company];
         }
 
-        $this->loader[$company] = new DeviceLoader(
-            logger: $this->logger,
-            initData: new Data(self::DATA_PATH . $company, 'json'),
-            companyLoader: $this->companyLoader,
+        $serializableStrategy = new SerializableStrategy(
+            new Json(
+                [
+                    'objectDecodeType' => \Laminas\Json\Json::TYPE_ARRAY,
+                ],
+            ),
         );
+
+        try {
+            $this->loader[$company] = new DeviceLoader(
+                logger: $this->logger,
+                initData: new Data\Device(
+                    strategy: new StrategyChain(
+                        [
+                            new CollectionStrategy(
+                                new ArraySerializableHydrator(),
+                                DataDevice::class,
+                            ),
+                            $serializableStrategy,
+                        ],
+                    ),
+                ),
+                companyLoader: $this->companyLoader,
+            );
+        } catch (InvalidArgumentException $e) {
+            throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
+        }
 
         return $this->loader[$company];
     }

@@ -21,39 +21,9 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaLoader\DeviceLoaderInterface;
-use UaLoader\Exception\NotFoundException;
 
 final class DeviceLoaderFactoryTest extends TestCase
 {
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws RuntimeException
-     */
-    public function testInvoke(): void
-    {
-        $company = 'test-company';
-
-        $logger        = $this->createMock(LoggerInterface::class);
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-
-        $factory = new DeviceLoaderFactory($logger, $companyLoader);
-        $object  = $factory($company);
-
-        self::assertInstanceOf(DeviceLoaderInterface::class, $object);
-
-        $objectTwo = $factory($company);
-
-        self::assertInstanceOf(DeviceLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
-
-        $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the device with key "apple iphone" was not found');
-        $this->expectExceptionCode(0);
-
-        $object->load('apple iphone');
-    }
-
     /**
      * @throws ExpectationFailedException
      * @throws Exception

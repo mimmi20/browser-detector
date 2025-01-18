@@ -108,8 +108,6 @@ parameters:
     narrow_param: true
 
   ignoreErrors:
-    - '~, array given~'
-    # - '~Public (constant|method) ".*" is never used~'
     - '~will always evaluate to true~'
     - '~\$searches of method~'
     - '~\$rules of method~'

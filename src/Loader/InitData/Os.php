@@ -123,16 +123,16 @@ final class Os
             $name = $data['name'];
         }
 
-        $manufacturer = null;
-
-        if (array_key_exists('manufacturer', $data) && is_string($data['manufacturer'])) {
-            $manufacturer = $data['manufacturer'];
-        }
-
         $marketingName = null;
 
         if (array_key_exists('marketingname', $data) && is_string($data['marketingname'])) {
             $marketingName = $data['marketingname'];
+        }
+
+        $manufacturer = null;
+
+        if (array_key_exists('manufacturer', $data) && is_string($data['manufacturer'])) {
+            $manufacturer = $data['manufacturer'];
         }
 
         $version = null;
@@ -146,8 +146,8 @@ final class Os
         }
 
         $this->name          = $name;
+        $this->marketingName = $marketingName;
         $this->manufacturer  = $manufacturer;
         $this->version       = $version;
-        $this->marketingName = $marketingName;
     }
 }

@@ -17,7 +17,6 @@ use BrowserDetector\Loader\Data\DeviceData;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
-use stdClass;
 use UaDeviceType\Type;
 use UaLoader\Data\DeviceDataInterface;
 use UaLoader\DeviceLoaderInterface;
@@ -27,27 +26,25 @@ use UaResult\Device\Device;
 use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
 
-use function array_key_exists;
-use function assert;
-use function is_string;
-
 final readonly class DeviceLoader implements DeviceLoaderInterface
 {
-    /** @throws RuntimeException */
+    /** @throws void */
     public function __construct(
         private LoggerInterface $logger,
-        private DataInterface $initData,
+        private Data\Device $initData,
         private CompanyLoaderInterface $companyLoader,
     ) {
-        $initData();
+        // nothing to do
     }
 
     /** @throws NotFoundException */
     #[Override]
     public function load(string $key): DeviceDataInterface
     {
-        if (!$this->initData->hasItem($key)) {
-            throw new NotFoundException('the device with key "' . $key . '" was not found');
+        try {
+            $this->initData->init();
+        } catch (RuntimeException $e) {
+            throw new NotFoundException('the device with key "' . $key . '" was not found', 0, $e);
         }
 
         $deviceData = $this->initData->getItem($key);
@@ -56,83 +53,48 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             throw new NotFoundException('the device with key "' . $key . '" was not found');
         }
 
-        assert($deviceData instanceof stdClass);
+        $device = $this->fromArray($deviceData);
 
-        $device = $this->fromArray((array) $deviceData);
-
-        assert(
-            is_string($deviceData->platform) || $deviceData->platform === null,
-            '"platform" property is required',
-        );
-
-        return new DeviceData(device: $device, os: $deviceData->platform);
+        return new DeviceData(device: $device, os: $deviceData->getPlatform());
     }
 
-    /**
-     * @param array<string, (int|stdClass|string|null)> $data
-     * @phpstan-param array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass|null)} $data
-     *
-     * @throws void
-     */
-    private function fromArray(array $data): DeviceInterface
+    /** @throws void */
+    private function fromArray(InitData\Device $data): DeviceInterface
     {
-        assert(array_key_exists('deviceName', $data), '"deviceName" property is required');
-        assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
-        assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
-        assert(array_key_exists('brand', $data), '"brand" property is required');
-        assert(array_key_exists('type', $data), '"type" property is required');
-        assert(array_key_exists('display', $data), '"display" property is required');
-
-        $deviceName    = $data['deviceName'] !== null && $data['deviceName'] !== ''
-            ? $data['deviceName']
-            : null;
-        $marketingName = $data['marketingName'] !== null && $data['marketingName'] !== ''
-            ? $data['marketingName']
-            : null;
-
-        $type = Type::fromName($data['type']);
-
         $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 
-        try {
-            $manufacturer = $this->companyLoader->load($data['manufacturer']);
-        } catch (NotFoundException $e) {
-            $this->logger->info($e);
+        if ($data->getManufacturer() !== null) {
+            try {
+                $manufacturer = $this->companyLoader->load($data->getManufacturer());
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+            }
         }
 
         $brand = new Company(type: 'unknown', name: null, brandname: null);
 
-        try {
-            $brand = $this->companyLoader->load($data['brand']);
-        } catch (NotFoundException $e) {
-            $this->logger->info($e);
+        if ($data->getBrand() !== null) {
+            try {
+                $brand = $this->companyLoader->load($data->getBrand());
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+            }
         }
 
-        /**
-         * @var array<string, (bool|float|int|null)> $displayData
-         * @phpstan-var array{width?: int|null, height?: int|null, touch?: bool|null, size?: int|float|null} $displayData
-         */
-        $displayData = (array) $data['display'];
-
-        assert(array_key_exists('width', $displayData), '"width" property is required');
-        assert(array_key_exists('height', $displayData), '"height" property is required');
-        assert(array_key_exists('touch', $displayData), '"touch" property is required');
-        assert(array_key_exists('size', $displayData), '"size" property is required');
-
         return new Device(
-            deviceName: $deviceName,
-            marketingName: $marketingName,
+            deviceName: $data->getDeviceName(),
+            marketingName: $data->getMarketingName(),
             manufacturer: $manufacturer,
             brand: $brand,
-            type: $type,
+            type: Type::fromName($data->getType()),
             display: new Display(
-                width: $displayData['width'],
-                height: $displayData['height'],
-                touch: $displayData['touch'],
-                size: $displayData['size'],
+                width: $data->getDisplay()['width'],
+                height: $data->getDisplay()['height'],
+                touch: $data->getDisplay()['touch'],
+                size: $data->getDisplay()['size'],
             ),
-            dualOrientation: $data['dualOrientation'] ?? null,
-            simCount: $data['simCount'] ?? null,
+            dualOrientation: $data->getDualOrientation(),
+            simCount: $data->getSimCount(),
         );
     }
 }
