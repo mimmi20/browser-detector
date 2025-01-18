@@ -33,14 +33,14 @@ use function str_replace;
 
 final class Device
 {
-    private const string DATA_PATH = __DIR__ . '/../../../data/devices';
+    private const string DATA_PATH = __DIR__ . '/../../../data/devices/';
 
     /** @var array<string, DataDevice> */
     private array $items      = [];
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct(private readonly StrategyInterface $strategy)
+    public function __construct(private readonly StrategyInterface $strategy, private readonly string $company)
     {
         // nothing to do
     }
@@ -52,7 +52,9 @@ final class Device
             return;
         }
 
-        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(self::DATA_PATH));
+        $iterator = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator(self::DATA_PATH . $this->company),
+        );
         $files    = new class ($iterator, 'json') extends FilterIterator {
             /**
              * @param Iterator<SplFileInfo> $iterator

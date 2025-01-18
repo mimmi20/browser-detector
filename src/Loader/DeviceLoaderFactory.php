@@ -69,6 +69,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
                             $serializableStrategy,
                         ],
                     ),
+                    company: $company,
                 ),
                 companyLoader: $this->companyLoader,
             );

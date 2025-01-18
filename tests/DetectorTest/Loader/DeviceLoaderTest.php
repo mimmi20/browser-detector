@@ -84,6 +84,7 @@ final class DeviceLoaderTest extends TestCase
                     return [];
                 }
             },
+            company: 'test-company',
         );
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
@@ -158,6 +159,7 @@ final class DeviceLoaderTest extends TestCase
                     return [];
                 }
             },
+            company: 'test-company',
         );
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
