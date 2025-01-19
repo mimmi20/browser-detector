@@ -16,7 +16,6 @@ namespace BrowserDetector\Parser\Header;
 use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
-use UaNormalizer\NormalizerFactory;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
@@ -25,12 +24,10 @@ use function mb_strtolower;
 
 final readonly class XUcbrowserDevice implements DeviceCodeInterface
 {
-    private NormalizerInterface $normalizer;
-
     /** @throws void */
-    public function __construct(private DeviceParserInterface $deviceParser, NormalizerFactory $normalizerFactory)
+    public function __construct(private DeviceParserInterface $deviceParser, private NormalizerInterface $normalizer)
     {
-        $this->normalizer = $normalizerFactory->build();
+        // nothing to do
     }
 
     /** @throws void */

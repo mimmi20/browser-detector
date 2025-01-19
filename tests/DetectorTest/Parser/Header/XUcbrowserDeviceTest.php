@@ -64,7 +64,7 @@ final class XUcbrowserDeviceTest extends TestCase
             value: $ua,
             deviceCode: new XUcbrowserDevice(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 

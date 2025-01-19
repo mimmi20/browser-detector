@@ -57,7 +57,7 @@ final class XDeviceUseragentTest extends TestCase
             value: $ua,
             deviceCode: new XDeviceUseragent(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 

@@ -18,7 +18,6 @@ use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
-use UaNormalizer\NormalizerFactory;
 use UaParser\PlatformParserInterface;
 use UaParser\PlatformVersionInterface;
 use UnexpectedValueException;
@@ -28,15 +27,13 @@ use function str_replace;
 
 final readonly class UseragentPlatformVersion implements PlatformVersionInterface
 {
-    private NormalizerInterface $normalizer;
-
     /** @throws void */
     public function __construct(
         private PlatformParserInterface $platformParser,
         private PlatformLoaderInterface $platformLoader,
-        NormalizerFactory $normalizerFactory,
+        private NormalizerInterface $normalizer,
     ) {
-        $this->normalizer = $normalizerFactory->build();
+        // nothing to do
     }
 
     /**

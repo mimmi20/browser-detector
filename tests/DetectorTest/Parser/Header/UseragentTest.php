@@ -133,39 +133,40 @@ final class UseragentTest extends TestCase
             );
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 
@@ -591,39 +592,40 @@ final class UseragentTest extends TestCase
             ->method('load');
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 
@@ -788,39 +790,40 @@ final class UseragentTest extends TestCase
             );
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 
@@ -996,39 +999,40 @@ final class UseragentTest extends TestCase
             );
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 
@@ -1195,39 +1199,40 @@ final class UseragentTest extends TestCase
             );
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 
@@ -1392,39 +1397,40 @@ final class UseragentTest extends TestCase
             );
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 
@@ -1589,39 +1595,40 @@ final class UseragentTest extends TestCase
             );
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 
@@ -1772,39 +1779,40 @@ final class UseragentTest extends TestCase
             ->willThrowException($engineException);
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 
@@ -1954,39 +1962,40 @@ final class UseragentTest extends TestCase
             ->willThrowException($engineException);
 
         $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
 
         $header = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 

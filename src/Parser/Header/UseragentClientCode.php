@@ -16,7 +16,6 @@ namespace BrowserDetector\Parser\Header;
 use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
-use UaNormalizer\NormalizerFactory;
 use UaParser\BrowserParserInterface;
 use UaParser\ClientCodeInterface;
 use UnexpectedValueException;
@@ -26,12 +25,10 @@ use function preg_match;
 
 final readonly class UseragentClientCode implements ClientCodeInterface
 {
-    private NormalizerInterface $normalizer;
-
     /** @throws void */
-    public function __construct(private BrowserParserInterface $browserParser, NormalizerFactory $normalizerFactory)
+    public function __construct(private BrowserParserInterface $browserParser, private NormalizerInterface $normalizer)
     {
-        $this->normalizer = $normalizerFactory->build();
+        // nothing to do
     }
 
     /**

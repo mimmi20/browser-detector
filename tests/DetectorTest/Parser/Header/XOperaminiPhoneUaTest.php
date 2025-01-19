@@ -88,14 +88,14 @@ final class XOperaminiPhoneUaTest extends TestCase
             value: $ua,
             deviceCode: new XOperaminiPhoneUaDeviceCode(
                 deviceParser: $deviceParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
             clientCode: new XOperaminiPhoneUaClientCode(),
             clientVersion: new XOperaminiPhoneUaClientVersion(),
             platformCode: new XOperaminiPhoneUaPlatformCode(),
             engineCode: new XOperaminiPhoneUaEngineCode(
                 engineParser: $engineParser,
-                normalizerFactory: $normalizerFactory,
+                normalizer: $normalizer,
             ),
         );
 

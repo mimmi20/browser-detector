@@ -18,7 +18,6 @@ use UaLoader\BrowserLoaderInterface;
 use UaLoader\Exception\NotFoundException;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
-use UaNormalizer\NormalizerFactory;
 use UaParser\BrowserParserInterface;
 use UaParser\ClientVersionInterface;
 use UnexpectedValueException;
@@ -27,15 +26,13 @@ use function preg_match;
 
 final readonly class UseragentClientVersion implements ClientVersionInterface
 {
-    private NormalizerInterface $normalizer;
-
     /** @throws void */
     public function __construct(
         private BrowserParserInterface $browserParser,
         private BrowserLoaderInterface $browserLoader,
-        NormalizerFactory $normalizerFactory,
+        private NormalizerInterface $normalizer,
     ) {
-        $this->normalizer = $normalizerFactory->build();
+        // nothing to do
     }
 
     /**

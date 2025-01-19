@@ -17,7 +17,6 @@ use Override;
 use UaLoader\EngineLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
-use UaNormalizer\NormalizerFactory;
 use UaParser\EngineParserInterface;
 use UaParser\EngineVersionInterface;
 use UnexpectedValueException;
@@ -26,15 +25,13 @@ use function preg_match;
 
 final readonly class UseragentEngineVersion implements EngineVersionInterface
 {
-    private NormalizerInterface $normalizer;
-
     /** @throws void */
     public function __construct(
         private EngineParserInterface $engineParser,
         private EngineLoaderInterface $engineLoader,
-        NormalizerFactory $normalizerFactory,
+        private NormalizerInterface $normalizer,
     ) {
-        $this->normalizer = $normalizerFactory->build();
+        // nothing to do
     }
 
     /**

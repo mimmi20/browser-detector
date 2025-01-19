@@ -81,6 +81,8 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
     {
         $header = Headers::tryFrom($key);
 
+        $normalizer = $this->normalizerFactory->build();
+
         return match ($header) {
             Headers::HEADER_BAIDU_FLYFLOW => new DeviceCodeOnlyHeader(
                 value: $value,
@@ -134,41 +136,41 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 value: $value,
                 deviceCode: new UseragentDeviceCode(
                     deviceParser: $this->deviceParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
                 clientCode: new UseragentClientCode(
                     browserParser: $this->browserParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
                 clientVersion: new UseragentClientVersion(
                     browserParser: $this->browserParser,
                     browserLoader: $this->browserLoader,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
                 platformCode: new UseragentPlatformCode(
                     platformParser: $this->platformParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
                 platformVersion: new UseragentPlatformVersion(
                     platformParser: $this->platformParser,
                     platformLoader: $this->platformLoader,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
                 engineCode: new UseragentEngineCode(
                     engineParser: $this->engineParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
                 engineVersion: new UseragentEngineVersion(
                     engineParser: $this->engineParser,
                     engineLoader: $this->engineLoader,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
             ),
             Headers::HEADER_DEVICE_UA => new DeviceCodeOnlyHeader(
                 value: $value,
                 deviceCode: new XDeviceUseragent(
                     deviceParser: $this->deviceParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
             ),
             Headers::HEADER_OPERAMINI_PHONE => new DeviceCodeOnlyHeader(
@@ -179,14 +181,14 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 value: $value,
                 deviceCode: new XOperaminiPhoneUaDeviceCode(
                     deviceParser: $this->deviceParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
                 clientCode: new XOperaminiPhoneUaClientCode(),
                 clientVersion: new XOperaminiPhoneUaClientVersion(),
                 platformCode: new XOperaminiPhoneUaPlatformCode(),
                 engineCode: new XOperaminiPhoneUaEngineCode(
                     engineParser: $this->engineParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
             ),
             Headers::HEADER_PUFFIN_UA => new XPuffinUa(
@@ -203,18 +205,18 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 value: $value,
                 deviceCode: new XUcbrowserDevice(
                     deviceParser: $this->deviceParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
             ),
             Headers::HEADER_UCBROWSER_DEVICE_UA => new XUcbrowserDeviceUa(
                 value: $value,
                 deviceCode: new XUcbrowserDeviceUaDeviceCode(
                     deviceParser: $this->deviceParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
                 platformCode: new XUcbrowserDeviceUaPlatformCode(
                     platformParser: $this->platformParser,
-                    normalizerFactory: $this->normalizerFactory,
+                    normalizer: $normalizer,
                 ),
             ),
             Headers::HEADER_UCBROWSER_PHONE, Headers::HEADER_UCBROWSER_PHONE_UA => new XUcbrowserPhoneUa(
