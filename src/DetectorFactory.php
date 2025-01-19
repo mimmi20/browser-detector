@@ -52,7 +52,10 @@ final class DetectorFactory
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /**
+     * @throws RuntimeException
+     * @throws InvalidArgumentException
+     */
     public function __invoke(): Detector
     {
         if ($this->detector === null) {
@@ -64,26 +67,22 @@ final class DetectorFactory
 
             $companyLoader = $companyLoaderFactory($serializableStrategy);
 
-            try {
-                $platformLoader = new PlatformLoader(
-                    logger: $this->logger,
-                    initData: new Data\Os(
-                        strategy: new StrategyChain(
-                            [
-                                new CollectionStrategy(
-                                    new ArraySerializableHydrator(),
-                                    DataOs::class,
-                                ),
-                                $serializableStrategy,
-                            ],
-                        ),
+            $platformLoader = new PlatformLoader(
+                logger: $this->logger,
+                initData: new Data\Os(
+                    strategy: new StrategyChain(
+                        [
+                            new CollectionStrategy(
+                                new ArraySerializableHydrator(),
+                                DataOs::class,
+                            ),
+                            $serializableStrategy,
+                        ],
                     ),
-                    companyLoader: $companyLoader,
-                    versionBuilder: new VersionBuilder(),
-                );
-            } catch (InvalidArgumentException $e) {
-                throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
-            }
+                ),
+                companyLoader: $companyLoader,
+                versionBuilder: new VersionBuilder(),
+            );
 
             $platformParserFactory = new PlatformParserFactory(logger: $this->logger);
             $platformParser        = $platformParserFactory();
@@ -96,50 +95,42 @@ final class DetectorFactory
             $deviceParserFactory = new DeviceParserFactory(logger: $this->logger);
             $deviceParser        = $deviceParserFactory();
 
-            try {
-                $engineLoader = new EngineLoader(
-                    logger: $this->logger,
-                    initData: new Data\Engine(
-                        strategy: new StrategyChain(
-                            [
-                                new CollectionStrategy(
-                                    new ArraySerializableHydrator(),
-                                    DataEngine::class,
-                                ),
-                                $serializableStrategy,
-                            ],
-                        ),
+            $engineLoader = new EngineLoader(
+                logger: $this->logger,
+                initData: new Data\Engine(
+                    strategy: new StrategyChain(
+                        [
+                            new CollectionStrategy(
+                                new ArraySerializableHydrator(),
+                                DataEngine::class,
+                            ),
+                            $serializableStrategy,
+                        ],
                     ),
-                    companyLoader: $companyLoader,
-                    versionBuilder: new VersionBuilder(),
-                );
-            } catch (InvalidArgumentException $e) {
-                throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
-            }
+                ),
+                companyLoader: $companyLoader,
+                versionBuilder: new VersionBuilder(),
+            );
 
             $engineParserFactory = new EngineParserFactory(logger: $this->logger);
             $engineParser        = $engineParserFactory();
 
-            try {
-                $browserLoader = new BrowserLoader(
-                    logger: $this->logger,
-                    initData: new Data\Client(
-                        strategy: new StrategyChain(
-                            [
-                                new CollectionStrategy(
-                                    new ArraySerializableHydrator(),
-                                    DataClient::class,
-                                ),
-                                $serializableStrategy,
-                            ],
-                        ),
+            $browserLoader = new BrowserLoader(
+                logger: $this->logger,
+                initData: new Data\Client(
+                    strategy: new StrategyChain(
+                        [
+                            new CollectionStrategy(
+                                new ArraySerializableHydrator(),
+                                DataClient::class,
+                            ),
+                            $serializableStrategy,
+                        ],
                     ),
-                    companyLoader: $companyLoader,
-                    versionBuilder: new VersionBuilder(),
-                );
-            } catch (InvalidArgumentException $e) {
-                throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
-            }
+                ),
+                companyLoader: $companyLoader,
+                versionBuilder: new VersionBuilder(),
+            );
 
             $browserParserFactory = new BrowserParserFactory(logger: $this->logger);
             $browserParser        = $browserParserFactory();

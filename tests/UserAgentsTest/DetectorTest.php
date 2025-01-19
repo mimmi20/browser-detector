@@ -257,6 +257,7 @@ final class DetectorTest extends TestCase
      * This method is called before a test is executed.
      *
      * @throws RuntimeException
+     * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
      */
     #[CoversNothing]
     #[Override]

@@ -22,7 +22,6 @@ use Laminas\Hydrator\Strategy\StrategyChain;
 use Laminas\Serializer\Adapter\Json;
 use Override;
 use Psr\Log\LoggerInterface;
-use RuntimeException;
 use UaLoader\DeviceLoaderInterface;
 
 use function array_key_exists;
@@ -40,7 +39,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /** @throws InvalidArgumentException */
     #[Override]
     public function __invoke(string $company = ''): DeviceLoaderInterface
     {
@@ -52,26 +51,22 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             new Json(),
         );
 
-        try {
-            $this->loader[$company] = new DeviceLoader(
-                logger: $this->logger,
-                initData: new Data\Device(
-                    strategy: new StrategyChain(
-                        [
-                            new CollectionStrategy(
-                                new ArraySerializableHydrator(),
-                                DataDevice::class,
-                            ),
-                            $serializableStrategy,
-                        ],
-                    ),
-                    company: $company,
+        $this->loader[$company] = new DeviceLoader(
+            logger: $this->logger,
+            initData: new Data\Device(
+                strategy: new StrategyChain(
+                    [
+                        new CollectionStrategy(
+                            new ArraySerializableHydrator(),
+                            DataDevice::class,
+                        ),
+                        $serializableStrategy,
+                    ],
                 ),
-                companyLoader: $this->companyLoader,
-            );
-        } catch (InvalidArgumentException $e) {
-            throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
-        }
+                company: $company,
+            ),
+            companyLoader: $this->companyLoader,
+        );
 
         return $this->loader[$company];
     }

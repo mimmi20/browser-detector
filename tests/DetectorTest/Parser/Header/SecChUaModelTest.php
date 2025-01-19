@@ -968,6 +968,7 @@ final class SecChUaModelTest extends TestCase
             ['"ELS-NX9"', true, 'huawei=huawei els-nx9'],
             ['"ANE-LX1"', true, 'huawei=huawei ane-lx1'],
             ['"YAL-L41"', true, 'huawei=huawei yal-l41'],
+            ['"RVL-AL09"', true, 'huawei=huawei rvl-al09'],
             ['"JAT-L41"', true, 'huawei=huawei jat-l41'],
             ['"JNY-LX1"', true, 'huawei=huawei jny-lx1'],
             ['"EVR-L29"', true, 'huawei=huawei evr-l29'],

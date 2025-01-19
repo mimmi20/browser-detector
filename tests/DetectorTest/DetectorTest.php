@@ -38,6 +38,7 @@ final class DetectorTest extends TestCase
      * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      * @throws RuntimeException
+     * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
      */
     #[DataProvider('providerUa')]
     public function testData(array $headers, array $expected): void
