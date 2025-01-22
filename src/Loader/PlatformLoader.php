@@ -18,7 +18,6 @@ use BrowserDetector\Version\VersionInterface;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
-use stdClass;
 use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaResult\Company\Company;
@@ -26,34 +25,30 @@ use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
-use function array_key_exists;
-use function assert;
 use function version_compare;
 
 final class PlatformLoader implements PlatformLoaderInterface
 {
     use VersionFactoryTrait;
 
-    public const string DATA_PATH = __DIR__ . '/../../data/platforms';
-
-    /** @throws RuntimeException */
+    /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly DataInterface $initData,
+        private readonly Data\Os $initData,
         private readonly CompanyLoaderInterface $companyLoader,
         VersionBuilderInterface $versionBuilder,
     ) {
         $this->versionBuilder = $versionBuilder;
-
-        $initData();
     }
 
     /** @throws NotFoundException */
     #[Override]
     public function load(string $key, string $useragent = ''): OsInterface
     {
-        if (!$this->initData->hasItem($key)) {
-            throw new NotFoundException('the platform with key "' . $key . '" was not found');
+        try {
+            $this->initData->init();
+        } catch (RuntimeException $e) {
+            throw new NotFoundException('the platform with key "' . $key . '" was not found', 0, $e);
         }
 
         $platformData = $this->initData->getItem($key);
@@ -62,35 +57,25 @@ final class PlatformLoader implements PlatformLoaderInterface
             throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
 
-        assert($platformData instanceof stdClass);
-
-        return $this->fromArray((array) $platformData, $useragent);
+        return $this->fromArray($platformData, $useragent);
     }
 
-    /**
-     * @param array<string, (int|stdClass|string|null)> $data
-     * @phpstan-param array{name?: string|null, marketingName?: string|null, manufacturer?: string, version?: stdClass|string|null} $data
-     *
-     * @throws void
-     */
-    private function fromArray(array $data, string $useragent): OsInterface
+    /** @throws void */
+    private function fromArray(InitData\Os $data, string $useragent): OsInterface
     {
-        assert(array_key_exists('name', $data), '"name" property is required');
-        assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
-        assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
-        assert(array_key_exists('version', $data), '"version" property is required');
-
-        $name          = $data['name'];
-        $marketingName = $data['marketingName'];
+        $name          = $data->getName();
+        $marketingName = $data->getMarketingName();
         $manufacturer  = new Company(type: 'unknown', name: null, brandname: null);
 
-        try {
-            $manufacturer = $this->companyLoader->load($data['manufacturer']);
-        } catch (NotFoundException $e) {
-            $this->logger->info($e);
+        if ($data->getManufacturer() !== null) {
+            try {
+                $manufacturer = $this->companyLoader->load($data->getManufacturer());
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+            }
         }
 
-        $version = $this->getVersion($data['version'], $useragent);
+        $version = $this->getVersion($data->getVersion(), $useragent);
 
         try {
             $versionWithoutMicro = $version->getVersion(VersionInterface::IGNORE_MICRO);

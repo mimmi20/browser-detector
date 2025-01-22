@@ -15,49 +15,23 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use RuntimeException;
 use UaLoader\DeviceLoaderInterface;
 use UaLoader\Exception\NotFoundException;
 
+#[CoversClass(DeviceLoaderFactory::class)]
 final class DeviceLoaderFactoryTest extends TestCase
 {
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws RuntimeException
-     */
-    public function testInvoke(): void
-    {
-        $company = 'test-company';
-
-        $logger        = $this->createMock(LoggerInterface::class);
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-
-        $factory = new DeviceLoaderFactory($logger, $companyLoader);
-        $object  = $factory($company);
-
-        self::assertInstanceOf(DeviceLoaderInterface::class, $object);
-
-        $objectTwo = $factory($company);
-
-        self::assertInstanceOf(DeviceLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
-
-        $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the device with key "apple iphone" was not found');
-        $this->expectExceptionCode(0);
-
-        $object->load('apple iphone');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws RuntimeException
+     * @throws InvalidArgumentException
+     * @throws NotFoundException
      */
     public function testInvoke2(): void
     {
@@ -73,6 +47,6 @@ final class DeviceLoaderFactoryTest extends TestCase
 
         $device = $object->load('apple iphone');
 
-        self::assertSame('iPhone', $device['device']->getDeviceName());
+        self::assertSame('iPhone', $device->getDevice()->getDeviceName());
     }
 }

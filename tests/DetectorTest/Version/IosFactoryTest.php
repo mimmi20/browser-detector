@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Ios;
 use BrowserDetector\Version\IosFactory;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -23,6 +24,7 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
+#[CoversClass(IosFactory::class)]
 final class IosFactoryTest extends TestCase
 {
     private IosFactory $object;

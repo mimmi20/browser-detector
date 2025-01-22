@@ -15,10 +15,12 @@ namespace BrowserDetectorTest\Parser\Device;
 
 use BrowserDetector\Parser\Device\MobileParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaLoader\DeviceLoaderInterface;
 
+#[CoversClass(MobileParser::class)]
 final class MobileParserTest extends TestCase
 {
     /** @throws ExpectationFailedException */

@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Goanna;
 use BrowserDetector\Version\GoannaFactory;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -23,6 +24,7 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
+#[CoversClass(GoannaFactory::class)]
 final class GoannaFactoryTest extends TestCase
 {
     private GoannaFactory $object;

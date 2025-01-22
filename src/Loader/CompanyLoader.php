@@ -15,27 +15,25 @@ namespace BrowserDetector\Loader;
 
 use Override;
 use RuntimeException;
-use stdClass;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 
-use function assert;
-use function is_string;
-
 final readonly class CompanyLoader implements CompanyLoaderInterface
 {
-    /** @throws RuntimeException */
-    public function __construct(private DataInterface $initData)
+    /** @throws void */
+    public function __construct(private Data\Company $initData)
     {
-        $initData();
+        // nothing to do
     }
 
     /** @throws NotFoundException */
     #[Override]
     public function load(string $key): Company
     {
-        if (!$this->initData->hasItem($key)) {
-            throw new NotFoundException('the company with key "' . $key . '" was not found');
+        try {
+            $this->initData->init();
+        } catch (RuntimeException $e) {
+            throw new NotFoundException('the company with key "' . $key . '" was not found', 0, $e);
         }
 
         $companyData = $this->initData->getItem($key);
@@ -44,16 +42,10 @@ final readonly class CompanyLoader implements CompanyLoaderInterface
             throw new NotFoundException('the company with key "' . $key . '" was not found');
         }
 
-        assert($companyData instanceof stdClass);
-        assert(
-            is_string($companyData->name) || $companyData->name === null,
-            '"name" property is required',
+        return new Company(
+            type: $key,
+            name: $companyData->getName(),
+            brandname: $companyData->getBrandname(),
         );
-        assert(
-            is_string($companyData->brandname) || $companyData->brandname === null,
-            '"brandname" property is required',
-        );
-
-        return new Company(type: $key, name: $companyData->name, brandname: $companyData->brandname);
     }
 }

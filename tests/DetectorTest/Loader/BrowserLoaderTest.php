@@ -13,24 +13,26 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Loader;
 
-use AssertionError;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\DataInterface;
+use BrowserDetector\Loader\Data\Client;
+use BrowserDetector\Loader\InitData\Client as DataClient;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
-use BrowserDetector\Version\VersionInterface;
+use Laminas\Hydrator\Strategy\StrategyInterface;
+use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use ReflectionException;
+use ReflectionProperty;
 use RuntimeException;
-use UaBrowserType\TypeLoaderInterface;
-use UaBrowserType\Unknown;
 use UaLoader\Exception\NotFoundException;
-use UaResult\Company\CompanyInterface;
 use UnexpectedValueException;
 
+#[CoversClass(BrowserLoader::class)]
 final class BrowserLoaderTest extends TestCase
 {
     /**
@@ -63,26 +65,38 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(false);
-        $initData
-            ->expects(self::never())
-            ->method('getItem');
+        $initData = new Client(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
+
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
             ->expects(self::never())
             ->method('load');
 
@@ -97,7 +111,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
@@ -136,28 +155,38 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn(null);
+        $initData = new Client(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
+
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
             ->expects(self::never())
             ->method('load');
 
@@ -172,7 +201,12 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
@@ -187,6 +221,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeVersionAndEngineWithException(): void
     {
@@ -216,29 +251,46 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new Client(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $browserData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'unknown',
-            'type' => 'unknown',
-            'engine' => 'unknown',
-            'name' => 'test-browser',
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
+        $browserData = new DataClient(
+            name: 'test-browser',
+            manufacturer: 'unknown',
+            version: (object) ['factory' => TestFactory::class],
+            type: 'unknown',
+            engine: 'unknown',
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $browserData]);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -246,13 +298,6 @@ final class BrowserLoaderTest extends TestCase
             ->method('load')
             ->with('unknown')
             ->willThrowException($exception);
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with('unknown')
-            ->willReturn(new Unknown());
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -265,14 +310,16 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
 
         $result = $object->load('test-key', 'test/1.0');
 
-        self::assertArrayHasKey('engine', $result);
-        self::assertSame('unknown', $result['engine']);
-
-        self::assertArrayHasKey('client', $result);
+        self::assertSame('unknown', $result->getEngine());
 
         $expected = [
             'name' => 'test-browser',
@@ -283,973 +330,6 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
         ];
 
-        self::assertSame($expected, $result['client']->toArray());
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'unknown',
-            'type' => 'unknown',
-            'engine' => 12,
-            'name' => 'test-browser',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"engine" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad2(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'unknown',
-            'type' => 'unknown',
-            'engine' => 'unknown',
-            'name' => 12,
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"name" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad3(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'unknown',
-            'type' => 'unknown',
-            'name' => 'test-browser',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"engine" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad4(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'unknown',
-            'type' => 'unknown',
-            'engine' => 'unknown',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"name" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad5(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 12,
-            'type' => 'unknown',
-            'engine' => 'unknown',
-            'name' => 'test-browser',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"manufacturer" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad6(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'type' => 'unknown',
-            'engine' => 'unknown',
-            'name' => 'unknown',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"manufacturer" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad7(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => 12,
-            'manufacturer' => 'unknown',
-            'type' => 'unknown',
-            'engine' => 'unknown',
-            'name' => 'test-browser',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"version" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad8(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'manufacturer' => 'unknown',
-            'type' => 'unknown',
-            'engine' => 'unknown',
-            'name' => 'unknown',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"version" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad9(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => '12',
-            'manufacturer' => 'unknown',
-            'type' => 12,
-            'engine' => 'unknown',
-            'name' => 'test-browser',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"type" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad10(): void
-    {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => '12',
-            'manufacturer' => 'unknown',
-            'engine' => 'unknown',
-            'name' => 'unknown',
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"type" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load('test-key', 'test/1.0');
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     * @throws RuntimeException
-     */
-    public function testLoad11(): void
-    {
-        $name           = 'browser-name';
-        $type           = 'test-type';
-        $browserCompany = 'test-company';
-        $browserVersion = '12';
-        $engineName     = 'test-engine';
-
-        $exception = new \UaBrowserType\Exception\NotFoundException();
-
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-
-        $browserData = (object) [
-            'version' => $browserVersion,
-            'manufacturer' => $browserCompany,
-            'engine' => $engineName,
-            'name' => $name,
-            'type' => $type,
-        ];
-
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($browserData);
-
-        $company = $this->createMock(CompanyInterface::class);
-
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
-        $companyLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($browserCompany)
-            ->willReturn($company);
-
-        $typeLoader = $this->createMock(TypeLoaderInterface::class);
-        $typeLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($type)
-            ->willThrowException($exception);
-
-        $version = $this->createMock(VersionInterface::class);
-        $version
-            ->expects(self::never())
-            ->method('getVersion');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('setRegex');
-        $versionBuilder
-            ->expects(self::once())
-            ->method('set')
-            ->with($browserVersion)
-            ->willReturn($version);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
-
-        ['client' => $result, 'engine' => $engine] = $object->load('test-key', 'test/1.0');
-
-        self::assertSame($name, $result->getName());
-        self::assertSame($company, $result->getManufacturer());
-        self::assertSame($version, $result->getVersion());
-        self::assertInstanceOf(Unknown::class, $result->getType());
-        self::assertNull($result->getBits());
-        self::assertNull($result->getModus());
-        self::assertSame($engineName, $engine);
+        self::assertSame($expected, $result->getClient()->toArray());
     }
 }

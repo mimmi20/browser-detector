@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Cache;
 
 use BrowserDetector\Cache\Cache;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -23,6 +24,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 use function assert;
 use function serialize;
 
+#[CoversClass(Cache::class)]
 final class CacheTest extends TestCase
 {
     /**

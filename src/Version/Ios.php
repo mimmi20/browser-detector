@@ -37,6 +37,7 @@ final readonly class Ios implements VersionFactoryInterface
         'iPhone_OS',
         'IUC\(U\;iOS',
         'iPh OS',
+        'iPd OS',
         'iosv',
         '(?<!browser)iPad\/',
         'iPhone\/',

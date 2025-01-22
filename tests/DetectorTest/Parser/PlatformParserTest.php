@@ -15,10 +15,12 @@ namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use BrowserDetector\Parser\PlatformParser;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(PlatformParser::class)]
 final class PlatformParserTest extends TestCase
 {
     /**

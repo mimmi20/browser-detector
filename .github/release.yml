@@ -1,0 +1,48 @@
+changelog:
+  exclude:
+    labels:
+      - "duplicate"
+      - "question"
+      - "invalid"
+      - "wontfix"
+  categories:
+    - title: "**💥 Breaking:**"
+      labels:
+        - "bc break"
+    - title: "**🍰 Enhancements:**"
+      labels:
+        - "enhancement"
+    - title: "**🐞 Bugs:**"
+      labels:
+        - "bug"
+    - title: "**💀 Deprecated:**"
+      labels:
+        - "deprecated"
+    - title: "**🗑 Removed:**"
+      labels:
+        - "removed"
+    - title: "**🛡 Security:**"
+      labels:
+        - "security"
+    - title: "**🕸 Dependencies:**"
+      labels:
+        - "dependencies"
+    - title: "**🧹 Maintenance:**"
+      labels:
+        - "maintenance"
+        - "new browser"
+        - "new device"
+        - "new engine"
+        - "new platform"
+        - "new test"
+        - "update browser"
+        - "update device"
+        - "update engine"
+        - "update platform"
+        - "update test"
+    - title: "**📦 Documentation:**"
+      labels:
+        - "documentation"
+    - title: "** Other Changes **"
+      labels:
+        - "*"

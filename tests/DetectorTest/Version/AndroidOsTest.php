@@ -20,6 +20,7 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -27,6 +28,7 @@ use UnexpectedValueException;
 
 use function assert;
 
+#[CoversClass(AndroidOs::class)]
 final class AndroidOsTest extends TestCase
 {
     /**

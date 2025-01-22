@@ -17,11 +17,13 @@ use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Helper\Safari;
 use BrowserDetector\Version\VersionBuilder;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
+#[CoversClass(Safari::class)]
 final class SafariTest extends TestCase
 {
     private Safari $object;

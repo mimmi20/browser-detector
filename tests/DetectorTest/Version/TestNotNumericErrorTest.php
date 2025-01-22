@@ -13,18 +13,20 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version;
 
-use BrowserDetector\Version\TestUnexpectedError;
+use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Version\TestNotNumericError;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use UnexpectedValueException;
 
-final class TestErrorTest extends TestCase
+#[CoversClass(TestNotNumericError::class)]
+final class TestNotNumericErrorTest extends TestCase
 {
-    /** @throws UnexpectedValueException */
+    /** @throws NotNumericException */
     public function testDetectVersion(): void
     {
-        $object = new TestUnexpectedError();
+        $object = new TestNotNumericError();
 
-        $this->expectException(UnexpectedValueException::class);
+        $this->expectException(NotNumericException::class);
         $this->expectExceptionCode(0);
         $this->expectExceptionMessage('error');
 

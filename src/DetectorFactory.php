@@ -19,17 +19,26 @@ use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\Data;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\InitData\Client as DataClient;
+use BrowserDetector\Loader\InitData\Engine as DataEngine;
+use BrowserDetector\Loader\InitData\Os as DataOs;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
+use BrowserDetector\Parser\Header\HeaderLoader;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactory;
+use Laminas\Hydrator\ArraySerializableHydrator;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
+use Laminas\Hydrator\Strategy\CollectionStrategy;
+use Laminas\Hydrator\Strategy\SerializableStrategy;
+use Laminas\Hydrator\Strategy\StrategyChain;
+use Laminas\Serializer\Adapter\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use RuntimeException;
-use UaBrowserType\TypeLoader;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\RequestBuilder;
 
@@ -43,17 +52,34 @@ final class DetectorFactory
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /**
+     * @throws RuntimeException
+     * @throws InvalidArgumentException
+     */
     public function __invoke(): Detector
     {
         if ($this->detector === null) {
             $companyLoaderFactory = new CompanyLoaderFactory();
 
-            $companyLoader = $companyLoaderFactory();
+            $serializableStrategy = new SerializableStrategy(
+                new Json(),
+            );
+
+            $companyLoader = $companyLoaderFactory($serializableStrategy);
 
             $platformLoader = new PlatformLoader(
                 logger: $this->logger,
-                initData: new Data(PlatformLoader::DATA_PATH, 'json'),
+                initData: new Data\Os(
+                    strategy: new StrategyChain(
+                        [
+                            new CollectionStrategy(
+                                new ArraySerializableHydrator(),
+                                DataOs::class,
+                            ),
+                            $serializableStrategy,
+                        ],
+                    ),
+                ),
                 companyLoader: $companyLoader,
                 versionBuilder: new VersionBuilder(),
             );
@@ -71,7 +97,17 @@ final class DetectorFactory
 
             $engineLoader = new EngineLoader(
                 logger: $this->logger,
-                initData: new Data(EngineLoader::DATA_PATH, 'json'),
+                initData: new Data\Engine(
+                    strategy: new StrategyChain(
+                        [
+                            new CollectionStrategy(
+                                new ArraySerializableHydrator(),
+                                DataEngine::class,
+                            ),
+                            $serializableStrategy,
+                        ],
+                    ),
+                ),
                 companyLoader: $companyLoader,
                 versionBuilder: new VersionBuilder(),
             );
@@ -81,9 +117,18 @@ final class DetectorFactory
 
             $browserLoader = new BrowserLoader(
                 logger: $this->logger,
-                initData: new Data(BrowserLoader::DATA_PATH, 'json'),
+                initData: new Data\Client(
+                    strategy: new StrategyChain(
+                        [
+                            new CollectionStrategy(
+                                new ArraySerializableHydrator(),
+                                DataClient::class,
+                            ),
+                            $serializableStrategy,
+                        ],
+                    ),
+                ),
                 companyLoader: $companyLoader,
-                typeLoader: new TypeLoader(),
                 versionBuilder: new VersionBuilder(),
             );
 
@@ -92,7 +137,7 @@ final class DetectorFactory
 
             $normalizerFactory = new NormalizerFactory();
 
-            $requestBuilder = new RequestBuilder(
+            $headerLoader = new HeaderLoader(
                 deviceParser: $deviceParser,
                 platformParser: $platformParser,
                 browserParser: $browserParser,
@@ -102,6 +147,8 @@ final class DetectorFactory
                 platformLoader: $platformLoader,
                 engineLoader: $engineLoader,
             );
+
+            $requestBuilder = new RequestBuilder(headerLoader: $headerLoader);
 
             $this->detector = new Detector(
                 logger: $this->logger,

@@ -11,51 +11,49 @@
 
 declare(strict_types = 1);
 
-namespace BrowserDetector\Loader;
+namespace BrowserDetector\Loader\Data;
 
+use BrowserDetector\Loader\InitData\Company as DataCompany;
 use FilterIterator;
 use Iterator;
-use JsonException;
+use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
-use stdClass;
 
 use function array_key_exists;
 use function assert;
-use function count;
 use function file_get_contents;
+use function is_array;
 use function is_string;
-use function json_decode;
 use function sprintf;
 use function str_replace;
 
-use const JSON_THROW_ON_ERROR;
-
-final class Data implements DataInterface
+final class Company
 {
-    /** @var array<string, stdClass> */
+    private const string DATA_PATH = __DIR__ . '/../../../data/companies';
+
+    /** @var array<string, DataCompany> */
     private array $items      = [];
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct(private readonly string $path, private readonly string $extension)
+    public function __construct(private readonly StrategyInterface $strategy)
     {
         // nothing to do
     }
 
     /** @throws RuntimeException */
-    #[Override]
-    public function __invoke(): void
+    public function init(): void
     {
         if ($this->initialized) {
             return;
         }
 
-        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($this->path));
-        $files    = new class ($iterator, $this->extension) extends FilterIterator {
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(self::DATA_PATH));
+        $files    = new class ($iterator, 'json') extends FilterIterator {
             /**
              * @param Iterator<SplFileInfo> $iterator
              *
@@ -74,7 +72,7 @@ final class Data implements DataInterface
 
                 assert($file instanceof SplFileInfo);
 
-                return $file->getExtension() === $this->extension;
+                return $file->isFile() && $file->getExtension() === $this->extension;
             }
         };
 
@@ -87,22 +85,20 @@ final class Data implements DataInterface
 
             $content = @file_get_contents($filepath);
 
+            assert($content === false || is_string($content));
+
             if ($content === false) {
                 throw new RuntimeException(sprintf('could not read file "%s"', $file));
             }
 
-            try {
-                $fileData = json_decode(json: $content, associative: false, flags: JSON_THROW_ON_ERROR);
-            } catch (JsonException $e) {
-                throw new RuntimeException(sprintf('file "%s" contains invalid json', $file), 0, $e);
-            }
+            $fileData = $this->strategy->hydrate($content, []);
 
-            assert($fileData instanceof stdClass);
+            assert(is_array($fileData));
 
-            foreach ((array) $fileData as $key => $data) {
+            foreach ($fileData as $key => $data) {
                 $stringKey = (string) $key;
 
-                if (array_key_exists($stringKey, $this->items) || !$data instanceof stdClass) {
+                if (array_key_exists($stringKey, $this->items) || !$data instanceof DataCompany) {
                     continue;
                 }
 
@@ -114,31 +110,8 @@ final class Data implements DataInterface
     }
 
     /** @throws void */
-    #[Override]
-    public function getItem(string $stringKey): stdClass | null
+    public function getItem(string $stringKey): DataCompany | null
     {
         return $this->items[$stringKey] ?? null;
-    }
-
-    /** @throws void */
-    #[Override]
-    public function hasItem(string $stringKey): bool
-    {
-        return array_key_exists($stringKey, $this->items);
-    }
-
-    /**
-     * Count elements of an object
-     *
-     * @see https://php.net/manual/en/countable.count.php
-     *
-     * @return int the custom count as an integer
-     *
-     * @throws void
-     */
-    #[Override]
-    public function count(): int
-    {
-        return count($this->items);
     }
 }

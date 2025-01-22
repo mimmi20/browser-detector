@@ -15,11 +15,14 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use Laminas\Hydrator\Strategy\StrategyInterface;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 
+#[CoversClass(CompanyLoaderFactory::class)]
 final class CompanyLoaderFactoryTest extends TestCase
 {
     /**
@@ -29,12 +32,18 @@ final class CompanyLoaderFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
+        $strategy = $this->createMock(StrategyInterface::class);
+        $strategy->expects(self::never())
+            ->method('extract');
+        $strategy->expects(self::never())
+            ->method('hydrate');
+
         $factory = new CompanyLoaderFactory();
-        $object  = $factory();
+        $object  = $factory($strategy);
 
         self::assertInstanceOf(CompanyLoaderInterface::class, $object);
 
-        $objectTwo = $factory();
+        $objectTwo = $factory($strategy);
 
         self::assertInstanceOf(CompanyLoaderInterface::class, $objectTwo);
         self::assertSame($objectTwo, $object);

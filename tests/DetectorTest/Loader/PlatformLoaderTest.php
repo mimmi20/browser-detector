@@ -14,7 +14,8 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\DataInterface;
+use BrowserDetector\Loader\Data\Os as OsData;
+use BrowserDetector\Loader\InitData\Os as DataOs;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\FirefoxOsFactory;
@@ -26,17 +27,23 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
+use Laminas\Hydrator\Strategy\StrategyInterface;
+use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use ReflectionException;
+use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Os\Os;
 use UnexpectedValueException;
 
+#[CoversClass(PlatformLoader::class)]
 final class PlatformLoaderTest extends TestCase
 {
     /**
@@ -69,18 +76,35 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(false);
-        $initData
-            ->expects(self::never())
-            ->method('getItem');
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
+
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -137,20 +161,35 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn(null);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
+
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -183,6 +222,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeNoVersion(): void
     {
@@ -209,28 +249,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['class' => null],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['class' => null],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -273,6 +330,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersionSet(): void
     {
@@ -299,28 +357,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['class' => null, 'value' => '1.0'],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['class' => null, 'value' => '1.0'],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -394,6 +469,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeGenericVersionForMacos(): void
     {
@@ -420,28 +496,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
-            'manufacturer' => 'xyz',
-            'name' => 'Mac OS X',
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: 'Mac OS X',
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -484,6 +577,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeGenericVersionForMacos2(): void
     {
@@ -510,28 +604,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
-            'manufacturer' => 'xyz',
-            'name' => 'Mac OS X',
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: 'Mac OS X',
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -574,6 +685,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeGenericVersionIos(): void
     {
@@ -600,28 +712,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
-            'manufacturer' => 'xyz',
-            'name' => 'iOS',
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: 'iOS',
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -664,6 +793,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersion(): void
     {
@@ -690,28 +820,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => TestFactory::class],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -754,6 +901,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersionWithException(): void
     {
@@ -783,28 +931,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => TestFactory::class],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -844,6 +1009,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeNullVersion(): void
     {
@@ -870,28 +1036,40 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => null,
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(name: null, marketingName: null, manufacturer: 'xyz', version: null);
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -934,6 +1112,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeStringVersion(): void
     {
@@ -960,28 +1139,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => '1.0',
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: '1.0',
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1054,6 +1250,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeStringVersionWithException(): void
     {
@@ -1083,28 +1280,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => '1.0',
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: '1.0',
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1149,6 +1363,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObject(): void
     {
@@ -1175,28 +1390,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['value' => '1.0'],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['value' => '1.0'],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1269,6 +1501,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObjectWithException(): void
     {
@@ -1298,28 +1531,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['value' => '1.0'],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['value' => '1.0'],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1363,6 +1613,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObjectWithException2(): void
     {
@@ -1390,28 +1641,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => '\\' . TestUnexpectedFactory::class],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => '\\' . TestUnexpectedFactory::class],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1453,6 +1721,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObjectWithException3(): void
     {
@@ -1480,28 +1749,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => '\\' . TestNotNumericFactory::class],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => '\\' . TestNotNumericFactory::class],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1544,6 +1830,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObject2(): void
     {
@@ -1570,28 +1857,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => '\\' . FirefoxOsFactory::class],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => '\\' . FirefoxOsFactory::class],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1634,6 +1938,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObject3(): void
     {
@@ -1660,28 +1965,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['value' => 1],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['value' => 1],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1755,6 +2077,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObject4(): void
     {
@@ -1781,28 +2104,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['value' => 1.2],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['value' => 1.2],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1875,6 +2215,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObject5(): void
     {
@@ -1901,28 +2242,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['value' => []],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['value' => []],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -1964,6 +2322,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObject6(): void
     {
@@ -1990,28 +2349,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $platformData = (object) [
-            'version' => (object) ['value' => null],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['value' => null],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -2053,6 +2429,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObject7(): void
     {
@@ -2084,27 +2461,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $platformData = (object) [
-            'version' => (object) ['value' => $platformVersion],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['value' => $platformVersion],
+        );
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
+
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 
@@ -2151,6 +2546,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeVersionObject8(): void
     {
@@ -2177,27 +2573,45 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $platformData = (object) [
-            'version' => (object) ['factory' => VersionBuilderFactory::class, 'search' => 'abc'],
-            'manufacturer' => 'xyz',
-            'name' => null,
-            'marketingName' => null,
-        ];
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => VersionBuilderFactory::class, 'search' => 'abc'],
+        );
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($platformData);
+        $initData = new OsData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
+
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 

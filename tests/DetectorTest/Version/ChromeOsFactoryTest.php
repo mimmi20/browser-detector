@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\ChromeOs;
 use BrowserDetector\Version\ChromeOsFactory;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -23,6 +24,7 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
+#[CoversClass(ChromeOsFactory::class)]
 final class ChromeOsFactoryTest extends TestCase
 {
     private ChromeOsFactory $object;

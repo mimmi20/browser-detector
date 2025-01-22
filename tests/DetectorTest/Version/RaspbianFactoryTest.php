@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Raspbian;
 use BrowserDetector\Version\RaspbianFactory;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -23,6 +24,7 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
+#[CoversClass(RaspbianFactory::class)]
 final class RaspbianFactoryTest extends TestCase
 {
     private RaspbianFactory $object;

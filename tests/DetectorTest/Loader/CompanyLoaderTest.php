@@ -13,21 +13,21 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Loader;
 
-use AssertionError;
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\DataInterface;
+use BrowserDetector\Loader\Data\Company;
+use BrowserDetector\Loader\InitData\Company as DataCompany;
+use Laminas\Hydrator\Strategy\StrategyInterface;
+use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use ReflectionException;
+use ReflectionProperty;
 use RuntimeException;
-use stdClass;
 use UaLoader\Exception\NotFoundException;
 
-use function assert;
-
-/**
- * Test class for \BrowserDetector\Loader\CompanyLoader
- */
+#[CoversClass(CompanyLoader::class)]
 final class CompanyLoaderTest extends TestCase
 {
     /**
@@ -38,17 +38,37 @@ final class CompanyLoaderTest extends TestCase
     {
         $companyKey = 'A6Corp';
 
-        $data = $this->createMock(DataInterface::class);
-        $data->expects(self::once())
-            ->method('hasItem')
-            ->willReturn(false);
-        $data->expects(self::never())
-            ->method('getItem');
-        $data->expects(self::once())
-            ->method('__invoke');
+        $initData = new Company(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        assert($data instanceof DataInterface);
-        $object = new CompanyLoader($data);
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
+
+        $object = new CompanyLoader($initData);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with key "A6Corp" was not found');
@@ -64,19 +84,37 @@ final class CompanyLoaderTest extends TestCase
     {
         $companyKey = 'A6Corp';
 
-        $data = $this->createMock(DataInterface::class);
-        $data->expects(self::once())
-            ->method('hasItem')
-            ->willReturn(true);
-        $data->expects(self::once())
-            ->method('getItem')
-            ->with($companyKey)
-            ->willReturn(null);
-        $data->expects(self::once())
-            ->method('__invoke');
+        $initData = new Company(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        assert($data instanceof DataInterface);
-        $object = new CompanyLoader($data);
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
+
+        $object = new CompanyLoader($initData);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with key "A6Corp" was not found');
@@ -89,6 +127,7 @@ final class CompanyLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testLoadAvailable(): void
     {
@@ -96,23 +135,42 @@ final class CompanyLoaderTest extends TestCase
         $companyName = 'A6 Corp';
         $brand       = 'A6 Corp';
 
-        $result            = new stdClass();
-        $result->name      = $companyName;
-        $result->brandname = $brand;
+        $initData = new Company(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $data = $this->createMock(DataInterface::class);
-        $data->expects(self::once())
-            ->method('hasItem')
-            ->willReturn(true);
-        $data->expects(self::once())
-            ->method('getItem')
-            ->with($companyKey)
-            ->willReturn($result);
-        $data->expects(self::once())
-            ->method('__invoke');
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        assert($data instanceof DataInterface);
-        $object = new CompanyLoader($data);
+        $companyData = new DataCompany(name: $companyName, brandname: $brand);
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, [$companyKey => $companyData]);
+
+        $object = new CompanyLoader($initData);
 
         $result = $object->load($companyKey);
 
@@ -126,79 +184,5 @@ final class CompanyLoaderTest extends TestCase
             $result->getBrandName(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")',
         );
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad(): void
-    {
-        $companyKey  = 'A6Corp';
-        $companyName = 12;
-        $brand       = 'A6 Corp';
-
-        $result            = new stdClass();
-        $result->name      = $companyName;
-        $result->brandname = $brand;
-
-        $data = $this->createMock(DataInterface::class);
-        $data->expects(self::once())
-            ->method('hasItem')
-            ->willReturn(true);
-        $data->expects(self::once())
-            ->method('getItem')
-            ->with($companyKey)
-            ->willReturn($result);
-        $data->expects(self::once())
-            ->method('__invoke');
-
-        assert($data instanceof DataInterface);
-        $object = new CompanyLoader($data);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"name" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load($companyKey);
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws RuntimeException
-     */
-    public function testAssertLoad2(): void
-    {
-        $companyKey  = 'A6Corp';
-        $companyName = 'A6 Corp';
-        $brand       = 12;
-
-        $result            = new stdClass();
-        $result->name      = $companyName;
-        $result->brandname = $brand;
-
-        $data = $this->createMock(DataInterface::class);
-        $data->expects(self::once())
-            ->method('hasItem')
-            ->willReturn(true);
-        $data->expects(self::once())
-            ->method('getItem')
-            ->with($companyKey)
-            ->willReturn($result);
-        $data->expects(self::once())
-            ->method('__invoke');
-
-        assert($data instanceof DataInterface);
-        $object = new CompanyLoader($data);
-
-        $this->expectException(AssertionError::class);
-        $this->expectExceptionMessage('"brandname" property is required');
-        $this->expectExceptionCode(1);
-
-        $object->load($companyKey);
     }
 }

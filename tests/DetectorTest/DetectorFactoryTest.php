@@ -15,6 +15,8 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -24,12 +26,14 @@ use RuntimeException;
 
 use function assert;
 
+#[CoversClass(DetectorFactory::class)]
 final class DetectorFactoryTest extends TestCase
 {
     /**
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws RuntimeException
+     * @throws InvalidArgumentException
      */
     public function testInvoke(): void
     {

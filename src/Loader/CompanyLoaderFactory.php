@@ -13,23 +13,41 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Loader\InitData\Company as DataCompany;
+use Laminas\Hydrator\ArraySerializableHydrator;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
+use Laminas\Hydrator\Strategy\CollectionStrategy;
+use Laminas\Hydrator\Strategy\StrategyChain;
+use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RuntimeException;
 
 final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
-    private const string DATA_PATH = __DIR__ . '/../../data/companies';
-
     private CompanyLoader | null $loader = null;
 
     /** @throws RuntimeException */
     #[Override]
-    public function __invoke(): CompanyLoaderInterface
+    public function __invoke(StrategyInterface $strategy): CompanyLoaderInterface
     {
         if ($this->loader === null) {
-            $this->loader = new CompanyLoader(
-                initData: new Data(self::DATA_PATH, 'json'),
-            );
+            try {
+                $this->loader = new CompanyLoader(
+                    initData: new Data\Company(
+                        strategy: new StrategyChain(
+                            [
+                                new CollectionStrategy(
+                                    new ArraySerializableHydrator(),
+                                    DataCompany::class,
+                                ),
+                                $strategy,
+                            ],
+                        ),
+                    ),
+                );
+            } catch (InvalidArgumentException $e) {
+                throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
+            }
         }
 
         return $this->loader;

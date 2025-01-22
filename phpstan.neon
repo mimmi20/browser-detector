@@ -90,7 +90,7 @@ parameters:
 
   type_coverage:
     return_type: 100
-    param_type: 99.7
+    param_type: 99.8
     property_type: 100
     constant_type: 100
     # also, how many files has declare strict types
@@ -108,11 +108,10 @@ parameters:
     narrow_param: true
 
   ignoreErrors:
-    - '~, array given~'
-    # - '~Public (constant|method) ".*" is never used~'
     - '~will always evaluate to true~'
     - '~\$searches of method~'
     - '~\$rules of method~'
+    - '~Class should have suffix "Test" to respect parent type~'
 #    -
 #      message: '~is never read, only written~'
 #      path: src/Detector.php

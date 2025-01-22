@@ -13,8 +13,10 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use Laminas\Hydrator\Strategy\StrategyInterface;
+
 interface CompanyLoaderFactoryInterface
 {
     /** @throws void */
-    public function __invoke(): CompanyLoaderInterface;
+    public function __invoke(StrategyInterface $strategy): CompanyLoaderInterface;
 }

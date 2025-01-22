@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\WindowsPhoneOs;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
 use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -23,6 +24,7 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
+#[CoversClass(WindowsPhoneOsFactory::class)]
 final class WindowsPhoneOsFactoryTest extends TestCase
 {
     private WindowsPhoneOsFactory $object;

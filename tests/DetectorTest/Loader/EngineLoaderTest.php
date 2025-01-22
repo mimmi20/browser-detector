@@ -14,24 +14,31 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\DataInterface;
+use BrowserDetector\Loader\Data\Engine as EngineData;
 use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\InitData\Engine as DataEngine;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
+use Laminas\Hydrator\Strategy\StrategyInterface;
+use Override;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use ReflectionException;
+use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UnexpectedValueException;
 
+#[CoversClass(EngineLoader::class)]
 final class EngineLoaderTest extends TestCase
 {
     /**
@@ -64,18 +71,35 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(false);
-        $initData
-            ->expects(self::never())
-            ->method('getItem');
+        $initData = new EngineData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
+
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -132,20 +156,35 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn(null);
+        $initData = new EngineData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
+
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -178,6 +217,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeNoVersion(): void
     {
@@ -204,27 +244,44 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new EngineData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $engineData = (object) [
-            'version' => (object) ['class' => null],
-            'manufacturer' => 'abc',
-            'name' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($engineData);
+        $engineData = new DataEngine(
+            name: null,
+            manufacturer: 'abc',
+            version: (object) ['class' => null],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $engineData]);
 
         $company = new Company(type: 'abc-type', name: null, brandname: null);
 
@@ -265,6 +322,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws ReflectionException
      */
     public function testInvokeGenericVersion(): void
     {
@@ -291,27 +349,44 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new EngineData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $engineData = (object) [
-            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
-            'manufacturer' => 'abc',
-            'name' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($engineData);
+        $engineData = new DataEngine(
+            name: null,
+            manufacturer: 'abc',
+            version: (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $engineData]);
 
         $company = new Company(type: 'abc-type', name: null, brandname: null);
 
@@ -353,6 +428,7 @@ final class EngineLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersion(): void
     {
@@ -379,27 +455,44 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new EngineData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $engineData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'abc',
-            'name' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($engineData);
+        $engineData = new DataEngine(
+            name: null,
+            manufacturer: 'abc',
+            version: (object) ['factory' => TestFactory::class],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $engineData]);
 
         $company = new Company(type: 'abc-type', name: null, brandname: null);
 
@@ -441,6 +534,7 @@ final class EngineLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws NotNumericException
+     * @throws ReflectionException
      */
     public function testInvokeVersionWithException(): void
     {
@@ -470,27 +564,44 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('__invoke');
-        $initData
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with('test-key')
-            ->willReturn(true);
+        $initData = new EngineData(
+            strategy: new class () implements StrategyInterface {
+                /**
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function extract(mixed $value, object | null $object = null): null
+                {
+                    return null;
+                }
 
-        $engineData = (object) [
-            'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'abc',
-            'name' => null,
-        ];
+                /**
+                 * @param array<mixed>|null $data
+                 *
+                 * @return array<string, mixed>
+                 *
+                 * @throws void
+                 *
+                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 */
+                #[Override]
+                public function hydrate(mixed $value, array | null $data): array
+                {
+                    return [];
+                }
+            },
+        );
 
-        $initData
-            ->expects(self::once())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn($engineData);
+        $engineData = new DataEngine(
+            name: null,
+            manufacturer: 'abc',
+            version: (object) ['factory' => TestFactory::class],
+        );
+
+        $prop = new ReflectionProperty($initData, 'items');
+        $prop->setValue($initData, ['test-key' => $engineData]);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader

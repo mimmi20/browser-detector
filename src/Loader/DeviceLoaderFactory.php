@@ -13,19 +13,22 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Loader\InitData\Device as DataDevice;
+use Laminas\Hydrator\ArraySerializableHydrator;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
+use Laminas\Hydrator\Strategy\CollectionStrategy;
+use Laminas\Hydrator\Strategy\SerializableStrategy;
+use Laminas\Hydrator\Strategy\StrategyChain;
+use Laminas\Serializer\Adapter\Json;
 use Override;
 use Psr\Log\LoggerInterface;
-use RuntimeException;
-use UaDeviceType\TypeLoader;
 use UaLoader\DeviceLoaderInterface;
 
 use function array_key_exists;
 
 final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 {
-    private const string DATA_PATH = __DIR__ . '/../../data/devices/';
-
-    /** @var array<DeviceLoaderInterface> */
+    /** @var array<string, DeviceLoaderInterface> */
     private array $loader = [];
 
     /** @throws void */
@@ -36,7 +39,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /** @throws InvalidArgumentException */
     #[Override]
     public function __invoke(string $company = ''): DeviceLoaderInterface
     {
@@ -44,11 +47,25 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             return $this->loader[$company];
         }
 
+        $serializableStrategy = new SerializableStrategy(
+            new Json(),
+        );
+
         $this->loader[$company] = new DeviceLoader(
             logger: $this->logger,
-            initData: new Data(self::DATA_PATH . $company, 'json'),
+            initData: new Data\Device(
+                strategy: new StrategyChain(
+                    [
+                        new CollectionStrategy(
+                            new ArraySerializableHydrator(),
+                            DataDevice::class,
+                        ),
+                        $serializableStrategy,
+                    ],
+                ),
+                company: $company,
+            ),
             companyLoader: $this->companyLoader,
-            typeLoader: new TypeLoader(),
         );
 
         return $this->loader[$company];

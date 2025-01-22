@@ -13,53 +13,41 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Loader\Data\ClientData;
+use BrowserDetector\Loader\InitData\Client as DataClient;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
-use stdClass;
-use UaBrowserType\TypeLoaderInterface;
-use UaBrowserType\Unknown;
+use UaBrowserType\Type;
 use UaLoader\BrowserLoaderInterface;
+use UaLoader\Data\ClientDataInterface;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Browser\Browser;
-use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
-
-use function array_key_exists;
-use function assert;
-use function is_string;
-use function property_exists;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
     use VersionFactoryTrait;
 
-    public const string DATA_PATH = __DIR__ . '/../../data/browsers';
-
-    /** @throws RuntimeException */
+    /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly DataInterface $initData,
+        private readonly Data\Client $initData,
         private readonly CompanyLoaderInterface $companyLoader,
-        private readonly TypeLoaderInterface $typeLoader,
         VersionBuilderInterface $versionBuilder,
     ) {
         $this->versionBuilder = $versionBuilder;
-
-        $initData();
     }
 
-    /**
-     * @return array{client: BrowserInterface, engine: string|null}
-     *
-     * @throws NotFoundException
-     */
+    /** @throws NotFoundException */
     #[Override]
-    public function load(string $key, string $useragent = ''): array
+    public function load(string $key, string $useragent = ''): ClientDataInterface
     {
-        if (!$this->initData->hasItem($key)) {
-            throw new NotFoundException('the browser with key "' . $key . '" was not found');
+        try {
+            $this->initData->init();
+        } catch (RuntimeException $e) {
+            throw new NotFoundException('the browser with key "' . $key . '" was not found', 0, $e);
         }
 
         $browserData = $this->initData->getItem($key);
@@ -68,78 +56,30 @@ final class BrowserLoader implements BrowserLoaderInterface
             throw new NotFoundException('the browser with key "' . $key . '" was not found');
         }
 
-        assert($browserData instanceof stdClass);
-
-        assert(
-            property_exists($browserData, 'engine') && (is_string(
-                $browserData->engine,
-            ) || $browserData->engine === null),
-            '"engine" property is required',
+        return new ClientData(
+            client: $this->fromArray($browserData, $useragent),
+            engine: $browserData->getEngine(),
         );
-
-        return [
-            'client' => $this->fromArray((array) $browserData, $useragent),
-            'engine' => $browserData->engine,
-        ];
     }
 
-    /**
-     * @param array{name: string|null, modus: string|null, version: stdClass|string|null, manufacturer: string, bits: int|null, type: string} $data
-     *
-     * @throws void
-     */
-    private function fromArray(array $data, string $useragent = ''): Browser
+    /** @throws void */
+    private function fromArray(DataClient $data, string $useragent = ''): Browser
     {
-        assert(
-            array_key_exists('name', $data) && (is_string($data['name']) || $data['name'] === null),
-            '"name" property is required',
-        );
-        assert(
-            array_key_exists('manufacturer', $data)
-            && (is_string($data['manufacturer']) || $data['manufacturer'] === null),
-            '"manufacturer" property is required',
-        );
-        assert(
-            array_key_exists('version', $data)
-            && (
-                is_string($data['version'])
-                || $data['version'] === null
-                || $data['version'] instanceof stdClass
-            ),
-            '"version" property is required',
-        );
-        assert(
-            array_key_exists('type', $data) && (is_string($data['type']) || $data['type'] === null),
-            '"type" property is required',
-        );
-
-        $name = $data['name'];
-        $type = new Unknown();
-
-        if ($data['type'] !== null) {
-            try {
-                $type = $this->typeLoader->load($data['type']);
-            } catch (\UaBrowserType\Exception\NotFoundException $e) {
-                $this->logger->info($e);
-            }
-        }
-
-        $version      = $this->getVersion($data['version'], $useragent);
         $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 
-        if ($data['manufacturer'] !== null) {
+        if ($data->getManufacturer() !== null) {
             try {
-                $manufacturer = $this->companyLoader->load($data['manufacturer']);
+                $manufacturer = $this->companyLoader->load($data->getManufacturer());
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
         }
 
         return new Browser(
-            name: $name,
+            name: $data->getName(),
             manufacturer: $manufacturer,
-            version: $version,
-            type: $type,
+            version: $this->getVersion($data->getVersion(), $useragent),
+            type: Type::fromName($data->getType()),
             bits: null,
             modus: null,
         );
