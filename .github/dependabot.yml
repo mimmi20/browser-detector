@@ -34,6 +34,9 @@ updates:
       include: "scope"
       prefix: "composer"
 
+    ignore:
+      - dependency-name: "psr/http-message"
+
     # Disable rebasing for all pull requests
     rebase-strategy: "disabled"
 
