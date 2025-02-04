@@ -69,6 +69,7 @@ updates:
 
     ignore:
       - dependency-name: "mimmi20/ci"
+      - dependency-name: "release-drafter/release-drafter"
 
     # Disable rebasing for all pull requests
     rebase-strategy: "disabled"
