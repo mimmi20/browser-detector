@@ -25,6 +25,7 @@ use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -45,6 +46,8 @@ final class EngineLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeNotInCache(): void
     {
@@ -130,6 +133,8 @@ final class EngineLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeNullInCache(): void
     {
@@ -218,6 +223,8 @@ final class EngineLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeNoVersion(): void
     {
@@ -323,6 +330,8 @@ final class EngineLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeGenericVersion(): void
     {
@@ -429,6 +438,8 @@ final class EngineLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersion(): void
     {
@@ -535,6 +546,8 @@ final class EngineLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionWithException(): void
     {

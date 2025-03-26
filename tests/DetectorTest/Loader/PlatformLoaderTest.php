@@ -29,6 +29,7 @@ use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
 use PHPUnit\Framework\Exception;
@@ -50,6 +51,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeNotInCache(): void
     {
@@ -135,6 +138,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeNullInCache(): void
     {
@@ -223,6 +228,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeNoVersion(): void
     {
@@ -331,6 +338,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionSet(): void
     {
@@ -470,6 +479,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeGenericVersionForMacos(): void
     {
@@ -578,6 +589,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeGenericVersionForMacos2(): void
     {
@@ -686,6 +699,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeGenericVersionIos(): void
     {
@@ -794,6 +809,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersion(): void
     {
@@ -902,6 +919,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionWithException(): void
     {
@@ -1010,6 +1029,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeNullVersion(): void
     {
@@ -1113,6 +1134,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeStringVersion(): void
     {
@@ -1251,6 +1274,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeStringVersionWithException(): void
     {
@@ -1364,6 +1389,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObject(): void
     {
@@ -1502,6 +1529,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObjectWithException(): void
     {
@@ -1614,6 +1643,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObjectWithException2(): void
     {
@@ -1722,6 +1753,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObjectWithException3(): void
     {
@@ -1831,6 +1864,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObject2(): void
     {
@@ -1939,6 +1974,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObject3(): void
     {
@@ -2078,6 +2115,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws RuntimeException
      * @throws NotNumericException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObject4(): void
     {
@@ -2216,6 +2255,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObject5(): void
     {
@@ -2323,6 +2364,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObject6(): void
     {
@@ -2430,6 +2473,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObject7(): void
     {
@@ -2547,6 +2592,8 @@ final class PlatformLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvokeVersionObject8(): void
     {

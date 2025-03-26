@@ -23,6 +23,7 @@ use Exception;
 use IosBuild\Exception\NotFoundException;
 use IosBuild\IosBuild;
 use IosBuild\IosBuildInterface;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -36,6 +37,7 @@ final class IosTest extends TestCase
      * @throws Exception
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
      */
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
@@ -171,7 +173,12 @@ final class IosTest extends TestCase
         ];
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
@@ -213,7 +220,12 @@ final class IosTest extends TestCase
         self::assertSame($version, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail2(): void
     {
         $useragent = 'Mozilla/5.0 (iPod; U; CPU like Mac OS X; de-de) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3B48b Safari/419.3';
@@ -242,7 +254,12 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail4(): void
     {
         $useragent = 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)';
@@ -274,7 +291,12 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail5(): void
     {
         $useragent = 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0';
@@ -304,7 +326,12 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail6(): void
     {
         $useragent = 'Apple-iPhone3C1/902.206';
@@ -334,7 +361,12 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail7(): void
     {
         $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
@@ -366,7 +398,12 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail8(): void
     {
         $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile Safari/600.1.4';
@@ -395,7 +432,12 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail9(): void
     {
         $useragent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_10 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile Safari/600.1.4';
@@ -433,7 +475,12 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail10(): void
     {
         $useragent = 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)';
@@ -464,7 +511,12 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail11(): void
     {
         $useragent = 'Mozilla/5.0 (iPod; U; CPU iPhone OS 433 like Mac OS X; zh-CN) AppleWebKit/533.17.9 (KHTML like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5';

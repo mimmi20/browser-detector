@@ -14,8 +14,10 @@ declare(strict_types = 1);
 namespace Parser\Header;
 
 use BrowserDetector\Parser\Header\BaiduFlyflow;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaParser\DeviceParserInterface;
@@ -27,7 +29,12 @@ use function sprintf;
 #[CoversClass(BaiduFlyflow::class)]
 final class FlyFlowHeaderTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     #[DataProvider('providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo, string $deviceCode): void
     {

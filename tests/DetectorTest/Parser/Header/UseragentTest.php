@@ -24,8 +24,10 @@ use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilder;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaBrowserType\Type;
@@ -59,6 +61,9 @@ final class UseragentTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa')]
     public function testData(
@@ -543,7 +548,12 @@ final class UseragentTest extends TestCase
         ];
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testData7(): void
     {
         $ua = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
@@ -708,7 +718,12 @@ final class UseragentTest extends TestCase
         );
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDataWithoutVersions(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
@@ -913,6 +928,9 @@ final class UseragentTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDataWithVersions(): void
     {
@@ -1125,6 +1143,9 @@ final class UseragentTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDataWithClientParserException(): void
     {
@@ -1323,6 +1344,9 @@ final class UseragentTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDataWithClientParserException2(): void
     {
@@ -1521,6 +1545,9 @@ final class UseragentTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDataWithClientParserException3(): void
     {
@@ -1716,7 +1743,12 @@ final class UseragentTest extends TestCase
         );
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDataWithLoaderExceptions(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
@@ -1899,7 +1931,12 @@ final class UseragentTest extends TestCase
         );
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDataWithLoaderExceptions2(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';

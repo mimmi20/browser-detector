@@ -115,6 +115,10 @@ parameters:
 #    -
 #      message: '~is never read, only written~'
 #      path: src/Detector.php
+    -
+      identifier: property.uninitialized
+      paths:
+        - tests/*/*Test.php
 
 rules:
   # code complexity

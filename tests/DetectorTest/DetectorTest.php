@@ -15,6 +15,7 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -39,6 +40,8 @@ final class DetectorTest extends TestCase
      * @throws ExpectationFailedException
      * @throws RuntimeException
      * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa')]
     public function testData(array $headers, array $expected): void

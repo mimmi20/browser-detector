@@ -17,6 +17,7 @@ use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonException;
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -31,7 +32,10 @@ final class RulefileParserTest extends TestCase
 {
     private const string DATA_PATH = 'root';
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseInvalidFile(): void
     {
         $structure = ['bot.json' => 'test-content'];
@@ -100,7 +104,10 @@ final class RulefileParserTest extends TestCase
         self::assertSame($fallback, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseFileError(): void
     {
         $structure = ['bot.json' => 'test-content'];
@@ -166,7 +173,10 @@ final class RulefileParserTest extends TestCase
         self::assertSame($fallback, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseNoJsonContent(): void
     {
         $structure = ['bot.json' => 'test-content'];
@@ -229,7 +239,10 @@ final class RulefileParserTest extends TestCase
         self::assertSame($fallback, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseNotEmptyFile(): void
     {
         $structure = ['bot.json' => '{"generic": "test-generic", "rules": {"/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
@@ -278,7 +291,10 @@ final class RulefileParserTest extends TestCase
         self::assertSame('test-mode', $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseNotEmptyFile2(): void
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"1": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
@@ -343,7 +359,10 @@ final class RulefileParserTest extends TestCase
         self::assertSame('test-mode', $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseNotEmptyFile3(): void
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
@@ -408,7 +427,10 @@ final class RulefileParserTest extends TestCase
         self::assertSame('test-mode', $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseNotEmptyFile4(): void
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3"}}'];
@@ -473,7 +495,10 @@ final class RulefileParserTest extends TestCase
         self::assertSame('test-generic', $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseNotEmptyFile5(): void
     {
         $structure = ['bot2.json' => '{"rules": {"/(?<!test-?)useragent/": "test-mode-3"}}'];

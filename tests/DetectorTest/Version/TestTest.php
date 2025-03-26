@@ -18,6 +18,7 @@ use BrowserDetector\Version\Test;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
@@ -29,6 +30,7 @@ final class TestTest extends TestCase
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      * @throws NotNumericException
+     * @throws Exception
      */
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
