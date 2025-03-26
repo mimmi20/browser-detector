@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XDeviceUseragent;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -23,7 +24,11 @@ use UaParser\DeviceParserInterface;
 #[CoversClass(XDeviceUseragent::class)]
 final class XDeviceUseragentTest2 extends TestCase
 {
-    /** @throws \PHPUnit\Framework\Exception */
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testGetDeviceCodeWithNormalizerException(): void
     {
         $value     = 'test-value';
@@ -46,7 +51,11 @@ final class XDeviceUseragentTest2 extends TestCase
         self::assertNull($object->getDeviceCode($value));
     }
 
-    /** @throws \PHPUnit\Framework\Exception */
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testGetDeviceCode(): void
     {
         $value = 'test-value';
@@ -68,7 +77,11 @@ final class XDeviceUseragentTest2 extends TestCase
         self::assertNull($object->getDeviceCode($value));
     }
 
-    /** @throws \PHPUnit\Framework\Exception */
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testGetDeviceCode2(): void
     {
         $value = 'test-value';

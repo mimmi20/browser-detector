@@ -22,13 +22,17 @@ use BrowserDetector\Parser\Device\MobileParserInterface;
 use BrowserDetector\Parser\Device\TvParserInterface;
 use BrowserDetector\Parser\DeviceParser;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
 #[CoversClass(DeviceParser::class)]
 final class DeviceParserTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseUnknown(): void
     {
         $company   = 'unknown';
@@ -98,7 +102,10 @@ final class DeviceParserTest extends TestCase
         self::assertSame($key . '=' . $company, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseUnknown2(): void
     {
         $company   = 'unknown';
@@ -168,7 +175,10 @@ final class DeviceParserTest extends TestCase
         self::assertSame($key . '=' . $company, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseDarwin(): void
     {
         $key       = 'unknown';
@@ -239,7 +249,10 @@ final class DeviceParserTest extends TestCase
         self::assertSame($key, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseMobile(): void
     {
         $key       = 'unknown';
@@ -311,7 +324,10 @@ final class DeviceParserTest extends TestCase
         self::assertSame($key, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseTv(): void
     {
         $key       = 'unknown';
@@ -384,7 +400,10 @@ final class DeviceParserTest extends TestCase
         self::assertSame($key, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseDesktop(): void
     {
         $key       = 'unknown';
@@ -458,7 +477,10 @@ final class DeviceParserTest extends TestCase
         self::assertSame($key, $result);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParseFallback(): void
     {
         $company   = 'unknown';

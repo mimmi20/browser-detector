@@ -17,6 +17,7 @@ use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
@@ -38,6 +39,8 @@ final class Detector3Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetBrowserWithoutCacheButWithClientCode2(): void
     {

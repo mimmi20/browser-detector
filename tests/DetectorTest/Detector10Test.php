@@ -21,6 +21,7 @@ use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
@@ -47,6 +48,8 @@ final class Detector10Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode23(): void
     {
@@ -335,6 +338,8 @@ final class Detector10Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode24(): void
     {
@@ -655,6 +660,8 @@ final class Detector10Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode25(): void
     {

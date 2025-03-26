@@ -23,6 +23,7 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
@@ -50,6 +51,8 @@ final class Detector5Test extends TestCase
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
      * @throws NotNumericException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode7(): void
     {
@@ -344,6 +347,8 @@ final class Detector5Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetBrowserWithoutCacheButWithMobileData2(): void
     {
@@ -570,6 +575,8 @@ final class Detector5Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetBrowserWithoutCacheButWithMobileData3(): void
     {
@@ -796,6 +803,8 @@ final class Detector5Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode8(): void
     {

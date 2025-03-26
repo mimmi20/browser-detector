@@ -274,6 +274,7 @@ final class DetectorTest extends TestCase
      * @throws NotFoundException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
      */
     #[DataProvider('providerGetBrowser')]
     #[CoversNothing]

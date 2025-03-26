@@ -23,6 +23,7 @@ use Exception;
 use MacosBuild\Exception\NotFoundException;
 use MacosBuild\MacosBuild;
 use MacosBuild\MacosBuildInterface;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -36,6 +37,7 @@ final class MacosTest extends TestCase
      * @throws Exception
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
      */
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
@@ -131,7 +133,12 @@ final class MacosTest extends TestCase
         ];
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 15D13b))';
@@ -163,7 +170,12 @@ final class MacosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail2(): void
     {
         $useragent = 'Apple Mac OS X v10.6.8 CoreMedia v1.0.4.10K540';
@@ -195,7 +207,12 @@ final class MacosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail3(): void
     {
         $useragent = 'Mail/3445.1.3 CFNetwork/887 Darwin/17.0.0 (x86_64)';
@@ -225,7 +242,12 @@ final class MacosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail4(): void
     {
         $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10102) AppleWebKit/640.3.18 (KHTML like Gecko) Version/10.0.2 Safari/640.3.18';
@@ -263,7 +285,12 @@ final class MacosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail5(): void
     {
         $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 1084) AppleWebKit/536.29.13 (KHTML like Gecko) Version/6.0.4 Safari/536.29.13';
@@ -301,7 +328,12 @@ final class MacosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail6(): void
     {
         $useragent = 'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)';
@@ -335,7 +367,12 @@ final class MacosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail7(): void
     {
         $useragent = 'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 15D13b))';
@@ -366,7 +403,12 @@ final class MacosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail8(): void
     {
         $useragent = 'Apple Mac OS X v10.6.8 CoreMedia v1.0.4.10K540';

@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaDeviceCode;
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaPlatformCode;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -34,6 +35,9 @@ final class XUcbrowserDeviceUaTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa')]
     public function testData(

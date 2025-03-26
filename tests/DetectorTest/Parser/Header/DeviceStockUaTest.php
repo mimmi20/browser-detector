@@ -20,8 +20,10 @@ use BrowserDetector\Parser\Header\DeviceStockUaEngineCode;
 use BrowserDetector\Parser\Header\DeviceStockUaEngineVersion;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformCode;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformVersion;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaParser\DeviceParserInterface;
@@ -39,7 +41,12 @@ use function sprintf;
 #[CoversClass(DeviceStockUaDeviceCode::class)]
 final class DeviceStockUaTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     #[DataProvider('providerUa')]
     public function testData(
         string $ua,

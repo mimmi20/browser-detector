@@ -18,7 +18,9 @@ use BrowserDetector\Loader\Data\Device as DeviceData;
 use BrowserDetector\Loader\DeviceLoader;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
@@ -32,6 +34,8 @@ final class DeviceLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws NoPreviousThrowableException
+     * @throws Exception
      */
     public function testInvokeNotInCache(): void
     {
@@ -107,6 +111,8 @@ final class DeviceLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
+     * @throws NoPreviousThrowableException
+     * @throws Exception
      */
     public function testInvokeNullInCache(): void
     {

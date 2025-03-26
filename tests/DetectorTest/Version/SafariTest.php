@@ -23,8 +23,10 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
@@ -37,6 +39,7 @@ final class SafariTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws Exception
      */
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
@@ -88,7 +91,12 @@ final class SafariTest extends TestCase
         ];
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -121,6 +129,9 @@ final class SafariTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailSecond(): void
     {
@@ -155,6 +166,9 @@ final class SafariTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailThird(): void
     {
@@ -202,7 +216,12 @@ final class SafariTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testDetectVersionFail4(): void
     {
         $exception = new NotNumericException('set failed');
@@ -235,6 +254,9 @@ final class SafariTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail5(): void
     {
@@ -285,6 +307,9 @@ final class SafariTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail6(): void
     {

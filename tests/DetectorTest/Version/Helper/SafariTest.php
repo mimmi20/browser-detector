@@ -19,6 +19,7 @@ use BrowserDetector\Version\VersionBuilder;
 use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
@@ -39,6 +40,7 @@ final class SafariTest extends TestCase
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      * @throws NotNumericException
+     * @throws Exception
      */
     #[DataProvider('providerVersion')]
     public function testMapSafariVersion(string $version, string | null $expectedVersion): void

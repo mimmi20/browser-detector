@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Parser\Device;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaLoader\DeviceLoaderInterface;
@@ -23,7 +24,10 @@ use UaLoader\DeviceLoaderInterface;
 #[CoversClass(DarwinParser::class)]
 final class DarwinParserTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testParse(): void
     {
         $useragent    = 'test-useragent';

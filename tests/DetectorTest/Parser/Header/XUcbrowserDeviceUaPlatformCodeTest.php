@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaPlatformCode;
+use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -23,7 +24,11 @@ use UaParser\PlatformParserInterface;
 #[CoversClass(XUcbrowserDeviceUaPlatformCode::class)]
 final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
 {
-    /** @throws \PHPUnit\Framework\Exception */
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testGetPlatformCodeWithNormalizerException(): void
     {
         $value     = 'test-value';
@@ -50,7 +55,11 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
         self::assertNull($object->getPlatformCode($value, $derivate));
     }
 
-    /** @throws \PHPUnit\Framework\Exception */
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testGetPlatformCode(): void
     {
         $value    = 'test-value';
@@ -76,7 +85,11 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
         self::assertNull($object->getPlatformCode($value, $derivate));
     }
 
-    /** @throws \PHPUnit\Framework\Exception */
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testGetPlatformCode2(): void
     {
         $value    = 'test-value';
