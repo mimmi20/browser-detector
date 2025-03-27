@@ -127,14 +127,13 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; sohKwhigbQ; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile AvastSecureBrowser/6.6.0 Build/3850 Safari/537.36",
-      "sec-ch-ua": "\"AvastSecureBrowser\";v=\"6.6.0\", \" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.101\"",
       "sec-ch-ua-platform": "Android",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-full-version": "6.6.0",
       "sec-ch-ua-platform-version": "11",
+      "sec-ch-ua": "\"AvastSecureBrowser\";v=\"6.6.0\", \" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.101\"",
+      "sec-ch-ua-full-version": "6.6.0",
       "sec-ch-ua-arch": "[arm64-v8a, armeabi-v7a, armeabi]",
-      "sec-ch-prefers-color-scheme": "light"
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; sohKwhigbQ; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile AvastSecureBrowser/6.6.0 Build/3850 Safari/537.36"
     },
     "device": {
       "architecture": "[arm64-v8a, armeabi-v7a, armeabi]",
@@ -428,27 +427,15 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "7.2",
-      "dpr": "1.274999976158142",
-      "ect": "4g",
-      "rtt": "50",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "1.274999976158142",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "reduce",
-      "sec-ch-ua": "\"AvastSecureBrowser\";v=\"7.5.2\", \"Chromium\";v=\"111\", \"Not(A:Brand\";v=\"8\"",
-      "sec-ch-ua-arch": "\"[arm64-v8a, armeabi-v7a, armeabi]\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"7.5.2\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10\"",
-      "sec-ch-viewport-height": "543",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; LX7ftaJxsg; U; de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.115 Mobile AvastSecureBrowser/7.5.2 Safari/537.36",
-      "viewport-width": "980"
+      "sec-ch-ua": "\"AvastSecureBrowser\";v=\"7.5.2\", \"Chromium\";v=\"111\", \"Not(A:Brand\";v=\"8\"",
+      "sec-ch-ua-full-version": "\"7.5.2\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"[arm64-v8a, armeabi-v7a, armeabi]\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; LX7ftaJxsg; U; de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.115 Mobile AvastSecureBrowser/7.5.2 Safari/537.36"
     },
     "device": {
       "architecture": "[arm64-v8a, armeabi-v7a, armeabi]",
@@ -490,9 +477,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"AvastSecureBrowser\";v=\"7.5.2\", \"Chromium\";v=\"111\", \"Not(A:Brand\";v=\"8\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; LX7ftaJxsg; U; de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.115 Mobile AvastSecureBrowser/7.5.2 Safari/537.36"
     },
     "device": {

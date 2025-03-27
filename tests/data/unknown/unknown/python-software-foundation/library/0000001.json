@@ -3025,8 +3025,7 @@
   },
   {
     "headers": {
-      "user-agent": "Python-urllib/2.7",
-      "useragent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9) Gecko/2008040100 Firefox/3.0"
+      "user-agent": "Python-urllib/2.7"
     },
     "device": {
       "architecture": null,
@@ -3896,6 +3895,48 @@
     "client": {
       "name": "Python-urllib",
       "version": "3.13.0",
+      "manufacturer": "python-software-foundation",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/2.2.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Python-urllib",
+      "version": "3.0.0",
       "manufacturer": "python-software-foundation",
       "type": "library",
       "isbot": false

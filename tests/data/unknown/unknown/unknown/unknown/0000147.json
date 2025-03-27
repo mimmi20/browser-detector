@@ -1303,8 +1303,8 @@
   },
   {
     "headers": {
-      "user-agent": "1 waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "1 waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -1346,8 +1346,8 @@
   },
   {
     "headers": {
-      "user-agent": "(select(0)from(select(sleep(15)))v)/*'+(select(0)from(select(sleep(15)))v)+'\"+(select(0)from(select(sleep(15)))v)+\"*/",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "(select(0)from(select(sleep(15)))v)/*'+(select(0)from(select(sleep(15)))v)+'\"+(select(0)from(select(sleep(15)))v)+\"*/"
     },
     "device": {
       "architecture": null,
@@ -1389,8 +1389,8 @@
   },
   {
     "headers": {
-      "user-agent": "0\"XOR(if(now()=sysdate(),sleep(15),0))XOR\"Z",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "0\"XOR(if(now()=sysdate(),sleep(15),0))XOR\"Z"
     },
     "device": {
       "architecture": null,
@@ -1432,8 +1432,8 @@
   },
   {
     "headers": {
-      "user-agent": "0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z"
     },
     "device": {
       "architecture": null,
@@ -1475,8 +1475,8 @@
   },
   {
     "headers": {
-      "user-agent": "if(now()=sysdate(),sleep(15),0)",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "if(now()=sysdate(),sleep(15),0)"
     },
     "device": {
       "architecture": null,
@@ -1518,8 +1518,8 @@
   },
   {
     "headers": {
-      "user-agent": "-1 OR 2+767-767-1=0+0+0+1 --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "-1 OR 2+767-767-1=0+0+0+1 --"
     },
     "device": {
       "architecture": null,
@@ -1561,8 +1561,8 @@
   },
   {
     "headers": {
-      "user-agent": "-1' OR 2+910-910-1=0+0+0+1 --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "-1' OR 2+910-910-1=0+0+0+1 --"
     },
     "device": {
       "architecture": null,
@@ -1604,8 +1604,8 @@
   },
   {
     "headers": {
-      "user-agent": "5k0wkcZW')) OR 685=(SELECT 685 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "5k0wkcZW')) OR 685=(SELECT 685 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1647,8 +1647,8 @@
   },
   {
     "headers": {
-      "user-agent": "tBCRkAjY')) OR 783=(SELECT 783 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "tBCRkAjY')) OR 783=(SELECT 783 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1690,8 +1690,8 @@
   },
   {
     "headers": {
-      "user-agent": "dyAtZFba')) OR 809=(SELECT 809 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "dyAtZFba')) OR 809=(SELECT 809 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1733,8 +1733,8 @@
   },
   {
     "headers": {
-      "user-agent": "ta3JL6hB')) OR 287=(SELECT 287 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "ta3JL6hB')) OR 287=(SELECT 287 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1776,8 +1776,8 @@
   },
   {
     "headers": {
-      "user-agent": "70kOrISp')) OR 185=(SELECT 185 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "70kOrISp')) OR 185=(SELECT 185 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1819,8 +1819,8 @@
   },
   {
     "headers": {
-      "user-agent": "NMjBPZov')) OR 551=(SELECT 551 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "NMjBPZov')) OR 551=(SELECT 551 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1862,8 +1862,8 @@
   },
   {
     "headers": {
-      "user-agent": "4ioN200e')) OR 96=(SELECT 96 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "4ioN200e')) OR 96=(SELECT 96 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1905,8 +1905,8 @@
   },
   {
     "headers": {
-      "user-agent": "m1NmZacN')) OR 442=(SELECT 442 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "m1NmZacN')) OR 442=(SELECT 442 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1948,8 +1948,8 @@
   },
   {
     "headers": {
-      "user-agent": "bBUmZbYh')) OR 276=(SELECT 276 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "bBUmZbYh')) OR 276=(SELECT 276 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -1991,8 +1991,8 @@
   },
   {
     "headers": {
-      "user-agent": "Eu7r4Do0')) OR 496=(SELECT 496 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Eu7r4Do0')) OR 496=(SELECT 496 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2034,8 +2034,8 @@
   },
   {
     "headers": {
-      "user-agent": "kmKVdEHi') OR 588=(SELECT 588 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "kmKVdEHi') OR 588=(SELECT 588 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2077,8 +2077,8 @@
   },
   {
     "headers": {
-      "user-agent": "X1Pt1Yf0')) OR 706=(SELECT 706 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "X1Pt1Yf0')) OR 706=(SELECT 706 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2120,8 +2120,8 @@
   },
   {
     "headers": {
-      "user-agent": "FoUUF5uK') OR 171=(SELECT 171 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "FoUUF5uK') OR 171=(SELECT 171 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2163,8 +2163,8 @@
   },
   {
     "headers": {
-      "user-agent": "Jao0ljmn') OR 826=(SELECT 826 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Jao0ljmn') OR 826=(SELECT 826 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2206,8 +2206,8 @@
   },
   {
     "headers": {
-      "user-agent": "tjd5IXYt')) OR 767=(SELECT 767 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "tjd5IXYt')) OR 767=(SELECT 767 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2249,8 +2249,8 @@
   },
   {
     "headers": {
-      "user-agent": "w1aziLcl') OR 957=(SELECT 957 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "w1aziLcl') OR 957=(SELECT 957 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2292,8 +2292,8 @@
   },
   {
     "headers": {
-      "user-agent": "6hPSE9qE')) OR 559=(SELECT 559 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "6hPSE9qE')) OR 559=(SELECT 559 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2335,8 +2335,8 @@
   },
   {
     "headers": {
-      "user-agent": "LQaphHRe') OR 86=(SELECT 86 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "LQaphHRe') OR 86=(SELECT 86 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2378,8 +2378,8 @@
   },
   {
     "headers": {
-      "user-agent": "1Pa7GIrC') OR 887=(SELECT 887 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "1Pa7GIrC') OR 887=(SELECT 887 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2421,8 +2421,8 @@
   },
   {
     "headers": {
-      "user-agent": "L2A52gZG') OR 922=(SELECT 922 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "L2A52gZG') OR 922=(SELECT 922 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2464,8 +2464,8 @@
   },
   {
     "headers": {
-      "user-agent": "5niwLdWq')) OR 205=(SELECT 205 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "5niwLdWq')) OR 205=(SELECT 205 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2507,8 +2507,8 @@
   },
   {
     "headers": {
-      "user-agent": "fE55ZADQ') OR 579=(SELECT 579 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "fE55ZADQ') OR 579=(SELECT 579 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2550,8 +2550,8 @@
   },
   {
     "headers": {
-      "user-agent": "rwm0sTsQ') OR 826=(SELECT 826 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "rwm0sTsQ') OR 826=(SELECT 826 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2593,8 +2593,8 @@
   },
   {
     "headers": {
-      "user-agent": "ZFwDX1of') OR 552=(SELECT 552 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "ZFwDX1of') OR 552=(SELECT 552 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2636,8 +2636,8 @@
   },
   {
     "headers": {
-      "user-agent": "2XXlZTVA' OR 996=(SELECT 996 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "2XXlZTVA' OR 996=(SELECT 996 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2679,8 +2679,8 @@
   },
   {
     "headers": {
-      "user-agent": "cDwUcp9b') OR 941=(SELECT 941 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "cDwUcp9b') OR 941=(SELECT 941 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2722,8 +2722,8 @@
   },
   {
     "headers": {
-      "user-agent": "5tT08WzN' OR 781=(SELECT 781 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "5tT08WzN' OR 781=(SELECT 781 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2765,8 +2765,8 @@
   },
   {
     "headers": {
-      "user-agent": "g1fKvGdX' OR 65=(SELECT 65 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "g1fKvGdX' OR 65=(SELECT 65 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2808,8 +2808,8 @@
   },
   {
     "headers": {
-      "user-agent": "7Y0vH4wa') OR 795=(SELECT 795 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "7Y0vH4wa') OR 795=(SELECT 795 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2851,8 +2851,8 @@
   },
   {
     "headers": {
-      "user-agent": "zBwc6EXj' OR 86=(SELECT 86 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "zBwc6EXj' OR 86=(SELECT 86 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2894,8 +2894,8 @@
   },
   {
     "headers": {
-      "user-agent": "wlexnIUP') OR 731=(SELECT 731 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "wlexnIUP') OR 731=(SELECT 731 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2937,8 +2937,8 @@
   },
   {
     "headers": {
-      "user-agent": "PIUh7fW8' OR 564=(SELECT 564 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "PIUh7fW8' OR 564=(SELECT 564 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -2980,8 +2980,8 @@
   },
   {
     "headers": {
-      "user-agent": "myBu2ZF7' OR 199=(SELECT 199 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "myBu2ZF7' OR 199=(SELECT 199 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3023,8 +3023,8 @@
   },
   {
     "headers": {
-      "user-agent": "cWBuv4PP' OR 13=(SELECT 13 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "cWBuv4PP' OR 13=(SELECT 13 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3066,8 +3066,8 @@
   },
   {
     "headers": {
-      "user-agent": "jut8KjIR') OR 507=(SELECT 507 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "jut8KjIR') OR 507=(SELECT 507 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3109,8 +3109,8 @@
   },
   {
     "headers": {
-      "user-agent": "NuNfMfyT' OR 108=(SELECT 108 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "NuNfMfyT' OR 108=(SELECT 108 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3152,8 +3152,8 @@
   },
   {
     "headers": {
-      "user-agent": "Oz3pGWRZ' OR 868=(SELECT 868 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Oz3pGWRZ' OR 868=(SELECT 868 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3195,8 +3195,8 @@
   },
   {
     "headers": {
-      "user-agent": "CdI9RaeT' OR 76=(SELECT 76 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "CdI9RaeT' OR 76=(SELECT 76 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3238,8 +3238,8 @@
   },
   {
     "headers": {
-      "user-agent": "EX7IiB3S'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "EX7IiB3S'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3281,8 +3281,8 @@
   },
   {
     "headers": {
-      "user-agent": "vSFbsQAY' OR 283=(SELECT 283 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "vSFbsQAY' OR 283=(SELECT 283 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3324,8 +3324,8 @@
   },
   {
     "headers": {
-      "user-agent": "SjLUfztu'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "SjLUfztu'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3367,8 +3367,8 @@
   },
   {
     "headers": {
-      "user-agent": "WgsssCbT'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "WgsssCbT'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3410,8 +3410,8 @@
   },
   {
     "headers": {
-      "user-agent": "g7PZdn0y' OR 182=(SELECT 182 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "g7PZdn0y' OR 182=(SELECT 182 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3453,8 +3453,8 @@
   },
   {
     "headers": {
-      "user-agent": "w83SbFB3'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "w83SbFB3'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3496,8 +3496,8 @@
   },
   {
     "headers": {
-      "user-agent": "eRd2k0iw' OR 177=(SELECT 177 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "eRd2k0iw' OR 177=(SELECT 177 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3539,8 +3539,8 @@
   },
   {
     "headers": {
-      "user-agent": "ldv8bAbf'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "ldv8bAbf'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3582,8 +3582,8 @@
   },
   {
     "headers": {
-      "user-agent": "TgZsEe9v'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "TgZsEe9v'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3625,8 +3625,8 @@
   },
   {
     "headers": {
-      "user-agent": "HOtPsZqp'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "HOtPsZqp'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3668,8 +3668,8 @@
   },
   {
     "headers": {
-      "user-agent": "WfuorErk' OR 841=(SELECT 841 FROM PG_SLEEP(15))--",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "WfuorErk' OR 841=(SELECT 841 FROM PG_SLEEP(15))--"
     },
     "device": {
       "architecture": null,
@@ -3711,8 +3711,8 @@
   },
   {
     "headers": {
-      "user-agent": "sNcmGK0Y'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "sNcmGK0Y'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3754,8 +3754,8 @@
   },
   {
     "headers": {
-      "user-agent": "htG6qfjo'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "htG6qfjo'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3797,8 +3797,8 @@
   },
   {
     "headers": {
-      "user-agent": "hKaLuApT'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "hKaLuApT'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3840,8 +3840,8 @@
   },
   {
     "headers": {
-      "user-agent": "dVFuUKj8'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "dVFuUKj8'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3883,8 +3883,8 @@
   },
   {
     "headers": {
-      "user-agent": "zdCGyWSl'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "zdCGyWSl'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3926,8 +3926,8 @@
   },
   {
     "headers": {
-      "user-agent": "QbJBrDCf'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "QbJBrDCf'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -3969,8 +3969,8 @@
   },
   {
     "headers": {
-      "user-agent": "QvrhmIgR'; waitfor delay '0:0:15' --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "QvrhmIgR'; waitfor delay '0:0:15' --"
     },
     "device": {
       "architecture": null,
@@ -4012,8 +4012,8 @@
   },
   {
     "headers": {
-      "user-agent": "-1\" OR 2+743-743-1=0+0+0+1 --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "-1\" OR 2+743-743-1=0+0+0+1 --"
     },
     "device": {
       "architecture": null,
@@ -4055,8 +4055,8 @@
   },
   {
     "headers": {
-      "user-agent": "-1' OR 2+694-694-1=0+0+0+1 or '5Gs7PBmY'='",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "-1' OR 2+694-694-1=0+0+0+1 or '5Gs7PBmY'='"
     },
     "device": {
       "architecture": null,
@@ -4098,8 +4098,8 @@
   },
   {
     "headers": {
-      "user-agent": "-1\" OR 2+501-501-1=0+0+0+1 --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "-1\" OR 2+501-501-1=0+0+0+1 --"
     },
     "device": {
       "architecture": null,
@@ -4141,8 +4141,8 @@
   },
   {
     "headers": {
-      "user-agent": "-1' OR 2+345-345-1=0+0+0+1 --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "-1' OR 2+345-345-1=0+0+0+1 --"
     },
     "device": {
       "architecture": null,
@@ -4184,8 +4184,8 @@
   },
   {
     "headers": {
-      "user-agent": "-1 OR 2+909-909-1=0+0+0+1",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "-1 OR 2+909-909-1=0+0+0+1"
     },
     "device": {
       "architecture": null,
@@ -4227,8 +4227,8 @@
   },
   {
     "headers": {
-      "user-agent": "-1\" OR 2+93-93-1=0+0+0+1 --",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "-1\" OR 2+93-93-1=0+0+0+1 --"
     },
     "device": {
       "architecture": null,

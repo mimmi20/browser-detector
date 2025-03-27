@@ -127,25 +127,15 @@
   },
   {
     "headers": {
-      "device-memory": "8",
-      "downlink": "4.9",
-      "dpr": "2.625",
-      "ect": "4g",
-      "rtt": "150",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "2.625",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"102.0.5005.134\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"SM-G988B\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Safari/537.36 OPR/88.0.4412.53",
-      "viewport-width": "980"
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\"",
+      "sec-ch-ua-full-version": "\"102.0.5005.134\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Safari/537.36 OPR/88.0.4412.53"
     },
     "device": {
       "architecture": null,
@@ -271,21 +261,14 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "9.8",
-      "dpr": "2",
-      "ect": "4g",
-      "rtt": "0",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Opera\";v=\"80\", \"OperaMobile\";v=\"66\", \"Chromium\";v=\"94\"",
-      "sec-ch-ua-full-version": "\"94.0.4606.85\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"SM-E700F\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"5.1.1\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-E700F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 OPR/66.3.3445.67625",
-      "viewport-width": "360",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Opera\";v=\"80\", \"OperaMobile\";v=\"66\", \"Chromium\";v=\"94\"",
+      "sec-ch-ua-full-version": "\"94.0.4606.85\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-E700F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 OPR/66.3.3445.67625"
     },
     "device": {
       "architecture": null,
@@ -831,27 +814,15 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "downlink": "9.35",
-      "dpr": "1.75",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "1.75",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not A(Brand\";v=\"24\", \"Chromium\";v=\"110\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"110.0.5481.192\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"SM-G960F\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-viewport-height": "1920",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Safari/537.36 OPR/96.0.4693.50",
-      "viewport-width": "980"
+      "sec-ch-ua": "\"Not A(Brand\";v=\"24\", \"Chromium\";v=\"110\"",
+      "sec-ch-ua-full-version": "\"110.0.5481.192\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Safari/537.36 OPR/96.0.4693.50"
     },
     "device": {
       "architecture": null,
@@ -893,8 +864,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 12; en-us; SM-A125F Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36",
-      "x-requested-with": "com.opera.browser"
+      "x-requested-with": "com.opera.browser",
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 12; en-us; SM-A125F Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -936,8 +907,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.154 Mobile Safari/537.36 OPX/1.9",
-      "x-requested-with": "com.opera.gx"
+      "x-requested-with": "com.opera.gx",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.154 Mobile Safari/537.36 OPX/1.9"
     },
     "device": {
       "architecture": null,
@@ -979,19 +950,7 @@
   },
   {
     "headers": {
-      "device-memory": "8",
-      "downlink": "0",
-      "dpr": "3.1875",
-      "ect": "4g",
-      "rtt": "0",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "3.1875",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-viewport-height": "1969",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G981B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.65 Mobile Safari/537.36 OPT/2.9",
-      "viewport-width": "980"
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G981B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.65 Mobile Safari/537.36 OPT/2.9"
     },
     "device": {
       "architecture": null,
@@ -3217,28 +3176,15 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "downlink": "1.5",
-      "dpr": "2.8125",
-      "ect": "3g",
-      "rtt": "600",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "2.8125",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-prefers-reduced-transparency": "no-preference",
-      "sec-ch-ua": "\"OperaMobile\";v=\"83\", \"Chromium\";v=\"126\", \" Not A;Brand\";v=\"99\", \"Opera\";v=\"112\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"83.5.4388.80967\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"SM-A146P\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14\"",
-      "sec-ch-viewport-height": "1718",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0",
-      "viewport-width": "980"
+      "sec-ch-ua": "\"OperaMobile\";v=\"83\", \"Chromium\";v=\"126\", \" Not A;Brand\";v=\"99\", \"Opera\";v=\"112\"",
+      "sec-ch-ua-full-version": "\"83.5.4388.80967\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0"
     },
     "device": {
       "architecture": null,
@@ -3280,28 +3226,15 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "downlink": "6.35",
-      "dpr": "3.375",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "3.375",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-prefers-reduced-transparency": "no-preference",
-      "sec-ch-ua": "\"OperaMobile\";v=\"83\", \"Chromium\";v=\"126\", \" Not A;Brand\";v=\"99\", \"Opera\";v=\"112\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"83.3.4388.80648\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"SM-A145F\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14\"",
-      "sec-ch-viewport-height": "1810",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0",
-      "viewport-width": "980"
+      "sec-ch-ua": "\"OperaMobile\";v=\"83\", \"Chromium\";v=\"126\", \" Not A;Brand\";v=\"99\", \"Opera\";v=\"112\"",
+      "sec-ch-ua-full-version": "\"83.3.4388.80648\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0"
     },
     "device": {
       "architecture": null,

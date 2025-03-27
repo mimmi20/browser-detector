@@ -631,8 +631,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; DBY-W09 Build/HUAWEIDBY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Safari/537.36 HuaweiBrowser/12.0.1.302 HMSCore/6.4.0.307",
-      "x-requested-with": "com.huawei.browser"
+      "x-requested-with": "com.huawei.browser",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; DBY-W09 Build/HUAWEIDBY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Safari/537.36 HuaweiBrowser/12.0.1.302 HMSCore/6.4.0.307"
     },
     "device": {
       "architecture": null,
@@ -1052,9 +1052,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"HuaweiBrowser\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; WGR-W09; HMSCore 6.9.6.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.4.301 Safari/537.36"
     },
     "device": {

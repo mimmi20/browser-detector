@@ -127,8 +127,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-A146P Build/UP1A.231005.007; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 EdgA/119.0.0.0",
-      "x-requested-with": "com.microsoft.bing"
+      "x-requested-with": "com.microsoft.bing",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-A146P Build/UP1A.231005.007; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 EdgA/119.0.0.0"
     },
     "device": {
       "architecture": null,
@@ -170,8 +170,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A145R Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 EdgA/114.0.0.0",
-      "x-requested-with": "com.microsoft.bing"
+      "x-requested-with": "com.microsoft.bing",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A145R Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 EdgA/114.0.0.0"
     },
     "device": {
       "architecture": null,
@@ -255,8 +255,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S911B Build/UP1A.231005.007; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 EdgA/121.0.2277.138",
-      "x-requested-with": "com.microsoft.copilot"
+      "x-requested-with": "com.microsoft.copilot",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S911B Build/UP1A.231005.007; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 EdgA/121.0.2277.138"
     },
     "device": {
       "architecture": null,
@@ -298,8 +298,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S916B Build/UP1A.231005.007; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 EdgA/119.0.0.0",
-      "x-requested-with": "com.microsoft.bing"
+      "x-requested-with": "com.microsoft.bing",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S916B Build/UP1A.231005.007; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 EdgA/119.0.0.0"
     },
     "device": {
       "architecture": null,
@@ -371,6 +371,92 @@
     "client": {
       "name": "Bing Search",
       "version": "29.9.421129006",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.microsoft.bing",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-G556B Build/UP1A.231005.007; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G556B",
+      "marketingName": "Galaxy A35",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.microsoft.bing",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S926B Build/UP1A.231005.007; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S926B",
+      "marketingName": "Galaxy S24+",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
