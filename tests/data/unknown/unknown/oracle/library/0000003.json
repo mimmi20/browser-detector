@@ -3403,13 +3403,7 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "3.9",
-      "dpr": "2",
-      "ect": "4g",
-      "rtt": "50",
-      "user-agent": "FALLOUT-STOP-FUCKOFFCOOKIESANDJAVAHACKERSCRIPTSTOPDATENKLAUDURCHSTUDYS",
-      "viewport-width": "980"
+      "user-agent": "FALLOUT-STOP-FUCKOFFCOOKIESANDJAVAHACKERSCRIPTSTOPDATENKLAUDURCHSTUDYS"
     },
     "device": {
       "architecture": null,
@@ -3451,13 +3445,7 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "6.7",
-      "dpr": "2",
-      "ect": "4g",
-      "rtt": "50",
-      "user-agent": "FALLOUT-STOP-FUCKOFFCOOKIESANDJAVAHACKERSCRIPTSTOPDATENKLAUDURCHSTUDYS",
-      "viewport-width": "980"
+      "user-agent": "FALLOUT-STOP-FUCKOFFCOOKIESANDJAVAHACKERSCRIPTSTOPDATENKLAUDURCHSTUDYS"
     },
     "device": {
       "architecture": null,
@@ -3499,13 +3487,7 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "3.9",
-      "dpr": "2",
-      "ect": "4g",
-      "rtt": "200",
-      "user-agent": "FALLOUT-STOP-FUCKOFFCOOKIESANDJAVAHACKERSCRIPTSTOPDATENKLAUDURCHSTUDYS",
-      "viewport-width": "980"
+      "user-agent": "FALLOUT-STOP-FUCKOFFCOOKIESANDJAVAHACKERSCRIPTSTOPDATENKLAUDURCHSTUDYS"
     },
     "device": {
       "architecture": null,
@@ -3547,13 +3529,7 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "8.3",
-      "dpr": "2",
-      "ect": "4g",
-      "rtt": "150",
-      "user-agent": "FALLOUT-STOP-FUCKOFFCOOKIESANDJAVAHACKERSCRIPTSTOPDATENKLAUDURCHSTUDYS",
-      "viewport-width": "980"
+      "user-agent": "FALLOUT-STOP-FUCKOFFCOOKIESANDJAVAHACKERSCRIPTSTOPDATENKLAUDURCHSTUDYS"
     },
     "device": {
       "architecture": null,
@@ -3793,6 +3769,48 @@
     "client": {
       "name": "Java Standard Library",
       "version": "17.0.12",
+      "manufacturer": "oracle",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Java/17.0.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "Java Standard Library",
+      "version": "17.0.2",
       "manufacturer": "oracle",
       "type": "library",
       "isbot": false

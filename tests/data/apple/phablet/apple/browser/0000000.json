@@ -628,5 +628,47 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2024.348 (iOS 16.6.1; iPhone14,3; build 12643679358)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 14,3",
+      "marketingName": "iPhone 13 Pro Max",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2778,
+        "height": 1284,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "16.6.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
   }
 ]

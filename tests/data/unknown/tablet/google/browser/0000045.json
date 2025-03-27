@@ -673,8 +673,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; VITO Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36",
-      "x-requested-with": "com.android.browser"
+      "x-requested-with": "com.android.browser",
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; VITO Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -3698,8 +3698,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; TEL-1013GIQA Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.105 Safari/537.36",
-      "x-requested-with": "com.android.browser"
+      "x-requested-with": "com.android.browser",
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; TEL-1013GIQA Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.105 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -3783,10 +3783,10 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\", \"Google Chrome\";v=\"102\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Android\""
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -3870,9 +3870,8 @@
   },
   {
     "headers": {
-      "x-wap-profile": "http://218.249.47.94/Xianghe/MTK_Phone_KK_UAprofile.xml",
-      "user-agent": "Mozilla/5.0 (Linux; Android 9.0; TYD-108H Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.91 Safari/537.36",
-      "x-requested-with": "com.android.browser"
+      "x-requested-with": "com.android.browser",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9.0; TYD-108H Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.91 Safari/537.36"
     },
     "device": {
       "architecture": null,

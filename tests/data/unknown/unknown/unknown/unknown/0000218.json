@@ -4075,14 +4075,8 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "10",
-      "dpr": "1.75",
-      "ect": "4g",
-      "rtt": "0",
-      "user-agent": "PrivacyBrowser/1.0",
-      "viewport-width": "412",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "PrivacyBrowser/1.0"
     },
     "device": {
       "architecture": null,
@@ -4124,14 +4118,8 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "10",
-      "dpr": "1.75",
-      "ect": "4g",
-      "rtt": "0",
-      "user-agent": "PrivacyBrowser/1.0",
-      "viewport-width": "732",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "PrivacyBrowser/1.0"
     },
     "device": {
       "architecture": null,
@@ -4172,9 +4160,7 @@
     }
   },
   {
-    "headers": {
-      "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A"
-    },
+    "headers": [],
     "device": {
       "architecture": null,
       "deviceName": null,

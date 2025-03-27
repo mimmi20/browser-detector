@@ -292,5 +292,47 @@
       "version": "49.0.2623.112",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.100 Safari/537.36 OMI/4.25.1.114.Turnkey.73 HbbTV/1.7.1 (+DRM;TiVo;Sharp-4T-C50GK;12.500.91-ng;aml_t962d4-cvte-716c;com.tivo.tk.aml_t962d4.4k.sharp.2024;) TiVoOS/12.500.91-ng (sharp;Sharp;com.tivo.tk.aml_t962d4.4k.sharp.2024)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TiVo device",
+      "marketingName": "general TiVo device",
+      "manufacturer": "tivo",
+      "brand": "tivo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.25.1.114",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.6668.100",
+      "manufacturer": "google"
+    }
   }
 ]

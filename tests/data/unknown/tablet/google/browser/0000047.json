@@ -2899,14 +2899,8 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "10",
-      "dpr": "1.75",
-      "ect": "4g",
-      "rtt": "0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Fire HD10 Build/NJH47F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.111 Safari/537.36",
-      "viewport-width": "686",
-      "x-requested-with": "XMLHttpRequest"
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Fire HD10 Build/NJH47F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.111 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -2948,9 +2942,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 9; A130) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36"
     },
     "device": {

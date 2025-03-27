@@ -295,15 +295,14 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36 Edg/97.0.1072.66",
-      "sec-ch-ua-platform": "Windows",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-full-version": "97.0.1072.66",
-      "sec-ch-ua-platform-version": "14.0.0",
-      "sec-ch-ua-arch": "x86",
-      "sec-ch-ua-bitness": "64",
       "sec-ch-ua-model": "Xbox",
-      "sec-ch-prefers-color-scheme": "dark"
+      "sec-ch-ua-platform": "Windows",
+      "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua-full-version": "97.0.1072.66",
+      "sec-ch-ua-bitness": "64",
+      "sec-ch-ua-arch": "x86",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36 Edg/97.0.1072.66"
     },
     "device": {
       "architecture": "x86",
@@ -345,25 +344,15 @@
   },
   {
     "headers": {
-      "device-memory": "1",
-      "downlink": "10",
-      "dpr": "1.125",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "1",
-      "sec-ch-dpr": "1.125",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"104\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-full-version": "\"104.0.1293.44\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"Xbox\"",
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
-      "sec-ch-viewport-width": "1138",
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.44",
-      "viewport-width": "1138"
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"104\"",
+      "sec-ch-ua-full-version": "\"104.0.1293.44\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.44"
     },
     "device": {
       "architecture": "x86",

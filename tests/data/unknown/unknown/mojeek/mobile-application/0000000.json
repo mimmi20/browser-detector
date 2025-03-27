@@ -1,11 +1,11 @@
 [
   {
     "headers": {
-      "user-agent": "mojeek-app",
-      "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Android WebView\";v=\"128\"",
       "sec-ch-ua-platform": "Android",
+      "x-requested-with": "mojeek.app",
+      "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Android WebView\";v=\"128\"",
       "sec-ch-ua-mobile": "?1",
-      "x-requested-with": "mojeek.app"
+      "user-agent": "mojeek-app"
     },
     "device": {
       "architecture": null,

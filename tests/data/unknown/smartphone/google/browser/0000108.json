@@ -3109,10 +3109,10 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
-      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Brave Browser\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
       "sec-ch-ua-platform": "Android",
-      "sec-ch-ua-mobile": "?1"
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Brave Browser\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
