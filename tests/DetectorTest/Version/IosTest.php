@@ -170,6 +170,18 @@ final class IosTest extends TestCase
                 'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/24.2.0',
                 '18.2.0',
             ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/24.3.0',
+                '18.3.0',
+            ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/24.4.0',
+                '18.4.0',
+            ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/24.5.0',
+                '18.5.0',
+            ],
         ];
     }
 

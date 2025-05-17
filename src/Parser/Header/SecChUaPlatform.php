@@ -64,10 +64,11 @@ final class SecChUaPlatform implements PlatformCodeInterface
     {
         return match ($code) {
             'android', 'linux', 'chromeos', 'lindows' => $code,
-            'macos', 'mac os x' => 'mac os x',
+            'macos', 'mac os x', 'macintel' => 'mac os x',
             'chrome os', 'chromium os' => 'chromeos',
             'windows', 'win32' => 'windows',
             'harmonyos' => 'harmony-os',
+            'linux x86_64' => 'linux',
             default => null,
         };
     }

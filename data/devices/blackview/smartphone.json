@@ -4,8 +4,8 @@
     "marketingName": "A60 Pro",
     "manufacturer": "blackview",
     "brand": "blackview",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 600,
@@ -1355,6 +1355,22 @@
       "height": 1080,
       "touch": true,
       "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "blackview a60 plus": {
+    "deviceName": "A60 Plus",
+    "marketingName": "A60 Plus",
+    "manufacturer": "blackview",
+    "brand": "blackview",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 600,
+      "touch": true,
+      "size": 6.09
     },
     "type": "smartphone",
     "platform": "android"

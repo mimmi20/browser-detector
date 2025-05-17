@@ -31,6 +31,9 @@ final readonly class Macos implements VersionFactoryInterface
     public const array SEARCHES = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
     private const array DARWIN_MAP = [
+        '/darwin\/24\.5/i' => '15.5.0',
+        '/darwin\/24\.4/i' => '15.4.0',
+        '/darwin\/24\.3/i' => '15.3.0',
         '/darwin\/24\.2/i' => '15.2.0',
         '/darwin\/24\.1/i' => '15.1.0',
         '/darwin\/24/i' => '15.0.0',
