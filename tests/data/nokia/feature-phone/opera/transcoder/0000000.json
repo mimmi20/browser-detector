@@ -472,5 +472,50 @@
       "version": "2.12.423",
       "manufacturer": "opera"
     }
+  },
+  {
+    "headers": {
+      "x-operamini-phone-ua": "Nokia113/2.0 (03.51) Profile/MIDP-2.1 Configuration/CLDC-1.1",
+      "device-stock-ua": "Nokia113/2.0 (03.51) Profile/MIDP-2.1 Configuration/CLDC-1.1",
+      "x-operamini-phone": "? # ?",
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.40312/191.379; U; de) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "113",
+      "marketingName": "113",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "Opera Mini",
+      "version": "4.5.40312",
+      "manufacturer": "opera",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
   }
 ]
