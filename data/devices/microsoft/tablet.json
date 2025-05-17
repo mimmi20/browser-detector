@@ -4,13 +4,29 @@
     "marketingName": "Surface Pro 4",
     "manufacturer": "microsoft",
     "brand": "microsoft",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2736,
       "height": 1824,
       "touch": true,
       "size": 12.3
+    },
+    "type": "tablet",
+    "platform": null
+  },
+  "microsoft surface pro": {
+    "deviceName": "Surface Pro",
+    "marketingName": "Surface Pro",
+    "manufacturer": "microsoft",
+    "brand": "microsoft",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 10.6
     },
     "type": "tablet",
     "platform": null
