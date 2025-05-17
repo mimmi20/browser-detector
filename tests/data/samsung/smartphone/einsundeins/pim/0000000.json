@@ -213,5 +213,48 @@
       "version": "133.0.6943.137",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "x-requested-with": "de.gmx.mobile.android.mail",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-F956B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.100 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F956B",
+      "marketingName": "Galaxy Z Fold6",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1856,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "GMX Mail",
+      "version": null,
+      "manufacturer": "einsundeins",
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.100",
+      "manufacturer": "google"
+    }
   }
 ]

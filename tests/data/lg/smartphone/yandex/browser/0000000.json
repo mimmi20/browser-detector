@@ -1678,5 +1678,47 @@
       "version": "124.0.6367.497",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; VIA L50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.1898 YaSearchBrowser/25.40/apad BroPP/1.0 YaSearchApp/25.40/apad webOmni SA/3 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "L50",
+      "marketingName": "L50",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "25.40.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.1898",
+      "manufacturer": "google"
+    }
   }
 ]
