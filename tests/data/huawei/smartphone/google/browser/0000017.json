@@ -85,6 +85,90 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; FCP-N49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "FCP-N49",
+      "marketingName": "Magic V3",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2344,
+        "height": 2156,
+        "touch": true,
+        "size": 7.92
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "128.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; FCP-AN10 Build/HONORFCP-AN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.179 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "FCP-AN10",
+      "marketingName": "Magic V3",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2344,
+        "height": 2156,
+        "touch": true,
+        "size": 7.92
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "124.0.6367.179",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.179",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; FRL-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
     },
     "device": {
@@ -1269,6 +1353,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; FCP-N49 Build/HONORFCP-N49; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "FCP-N49",
+      "marketingName": "Magic V3",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2344,
+        "height": 2156,
+        "touch": true,
+        "size": 7.92
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "131.0.6778.39",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "131.0.6778.39",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 14; en-us; ALT-LX2 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.69 Mobile Safari/537.36"
     },
     "device": {
@@ -1687,6 +1813,48 @@
     "engine": {
       "name": "Blink",
       "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; BRP-NX1M Build/HONORBRP-N21M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BRP-NX1M",
+      "marketingName": "Magic 7 Lite",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2700,
+        "height": 1224,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "135.0.7049.111",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.111",
       "manufacturer": "google"
     }
   },

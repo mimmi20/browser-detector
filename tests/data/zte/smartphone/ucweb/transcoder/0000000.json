@@ -3317,5 +3317,47 @@
       "version": "78.0.3904.108",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; en-US; Z2450 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Z2450",
+      "marketingName": "Blade A55",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.75
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "13.7.8.1322",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "google"
+    }
   }
 ]

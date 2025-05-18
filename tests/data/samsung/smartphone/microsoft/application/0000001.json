@@ -466,5 +466,48 @@
       "version": "124.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.microsoft.bing",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-S938B Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S938B",
+      "marketingName": "Galaxy S25 Ultra 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

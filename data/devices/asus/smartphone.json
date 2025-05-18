@@ -836,8 +836,8 @@
     "marketingName": "ZenFone 4 Max (ZB500TL)",
     "manufacturer": "asus",
     "brand": "asus",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -852,8 +852,8 @@
     "marketingName": "ZenFone 4 Max (ZC520KL)",
     "manufacturer": "asus",
     "brand": "asus",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -868,8 +868,24 @@
     "marketingName": "ZenFone 4 Max (ZC554KL)",
     "manufacturer": "asus",
     "brand": "asus",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "asus zc554kl": {
+    "deviceName": "ZC554KL",
+    "marketingName": "ZenFone 4 Max (ZC554KL)",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -884,8 +900,8 @@
     "marketingName": "ZenFone 4 Max Plus",
     "manufacturer": "asus",
     "brand": "asus",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -2251,6 +2267,86 @@
       "height": 1080,
       "touch": true,
       "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "asus ai2501 h": {
+    "deviceName": "AI2501 H",
+    "marketingName": "Zenfone 12 Ultra",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "asus ai2501 e": {
+    "deviceName": "AI2501 E",
+    "marketingName": "ROG Phone 9",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "asus ai2501 b": {
+    "deviceName": "AI2501 B",
+    "marketingName": "ROG Phone 9",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "asus ai2501 c": {
+    "deviceName": "AI2501 C",
+    "marketingName": "ROG Phone 9 Pro",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "asus ai2501": {
+    "deviceName": "AI2501",
+    "marketingName": "ROG Phone 9",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
     },
     "type": "smartphone",
     "platform": "android"

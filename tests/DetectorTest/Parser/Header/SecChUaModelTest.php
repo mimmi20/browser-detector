@@ -1210,6 +1210,8 @@ final class SecChUaModelTest extends TestCase
             ['"E1060X"', true, 'lenovo=lenovo e1060x'],
             ['"Lenovo K33a42"', true, 'lenovo=lenovo k33a42'],
             ['"YOGA Tablet 2-1050F"', true, 'lenovo=lenovo 1050f'],
+            ['"Lenovo YT-X703F"', true, 'lenovo=lenovo yt-x703f'],
+            ['"Lenovo TB-J606L"', true, 'lenovo=lenovo tb-j606l'],
             // Nokia / hmd-global
             ['"Nokia G50"', true, 'nokia=nokia g50'],
             ['"Nokia G20"', true, 'nokia=nokia g20'],

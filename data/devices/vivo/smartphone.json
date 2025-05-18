@@ -1060,8 +1060,24 @@
     "marketingName": "X6 Plus A",
     "manufacturer": "bbk",
     "brand": "vivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo x6 plus d": {
+    "deviceName": "X6 Plus D",
+    "marketingName": "X6 Plus D",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -1076,8 +1092,8 @@
     "marketingName": "X6 Plus L",
     "manufacturer": "bbk",
     "brand": "vivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -4409,6 +4425,22 @@
     "display": {
       "width": 3200,
       "height": 1440,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo v2405da": {
+    "deviceName": "V2405DA",
+    "marketingName": "X200 Pro",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2800,
+      "height": 1260,
       "touch": true,
       "size": 6.78
     },

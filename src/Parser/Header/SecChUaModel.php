@@ -1114,6 +1114,8 @@ final class SecChUaModel implements DeviceCodeInterface
             'e1060x' => 'lenovo=lenovo e1060x',
             'lenovo k33a42' => 'lenovo=lenovo k33a42',
             'yoga tablet 2-1050f' => 'lenovo=lenovo 1050f',
+            'lenovo yt-x703f' => 'lenovo=lenovo yt-x703f',
+            'lenovo tb-j606l' => 'lenovo=lenovo tb-j606l',
             // Nokia / hmd-global
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',

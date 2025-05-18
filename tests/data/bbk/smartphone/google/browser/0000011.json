@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; PJC110 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.145 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PJC110",
+      "marketingName": "K11",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "81.0.4044.145",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.145",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; CPH2409 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -3167,6 +3209,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; V2227A Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2227A",
+      "marketingName": "X90 Pro Plus",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "129.0.6668.81",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.6668.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 14; V2303 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.58 Mobile Safari/537.36"
     },
     "device": {
@@ -3839,6 +3923,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2653 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.201 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2653",
+      "marketingName": "13",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3168,
+        "height": 1440,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "131.0.6778.201",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "131.0.6778.201",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2663 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.261 Mobile Safari/537.36"
     },
     "device": {
@@ -3876,6 +4002,99 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.6778.261",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2653) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2653",
+      "marketingName": "13",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3168,
+        "height": 1440,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "132.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"CPH2591\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+      "sec-ch-ua-full-version": "\"132.0.6834.122\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2591",
+      "marketingName": "A18",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "132.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.0.0",
       "manufacturer": "google"
     }
   },
@@ -4002,132 +4221,6 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.39",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 15; PGEM10 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PGEM10",
-      "marketingName": "Find X6 Pro",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 3168,
-        "height": 1440,
-        "touch": true,
-        "size": 6.82
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "133.0.6943.89",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "133.0.6943.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; CPH2577 Build/UP1A.230620.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CPH2577",
-      "marketingName": "A58 4G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.72
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "132.0.6834.163",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "132.0.6834.163",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; RMX3933 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "RMX3933",
-      "marketingName": "C61",
-      "manufacturer": "bbk",
-      "brand": "realme",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.78
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "132.0.6834.163",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "132.0.6834.163",
       "manufacturer": "google"
     }
   }
