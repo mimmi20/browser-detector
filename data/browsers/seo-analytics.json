@@ -42,5 +42,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "senutobot": {
+    "name": "SenutoBot",
+    "manufacturer": "senuto",
+    "type": "seo-analytics",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SenutoBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

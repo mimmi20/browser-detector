@@ -761,17 +761,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel",
-      "marketingName": "Pixel",
+      "deviceName": "Pixel 9",
+      "marketingName": "Pixel 9",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2424,
         "height": 1080,
         "touch": true,
-        "size": 5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,

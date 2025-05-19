@@ -347,6 +347,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'hippeis.com.photochecker' => 'photo-sherlock',
             'hesoft.t2s' => 't2s-app',
             'com.zeebusiness.news' => 'zee-business',
+            'com.netflix.mediaclient' => 'netflix-app',
+            'com.oxoo.kinogo' => 'kinogo.ge',
             default => null,
         };
     }

@@ -982,5 +982,29 @@
       ]
     },
     "engine": null
+  },
+  "badoobot": {
+    "name": "BadooBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BadooBot"
+      ]
+    },
+    "engine": null
+  },
+  "huawei-crawler": {
+    "name": "HuaweiCrawler",
+    "manufacturer": "huawei",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HuaweiCrawler"
+      ]
+    },
+    "engine": null
   }
 }

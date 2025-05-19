@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; PERM00 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PERM00",
+      "marketingName": "K7x",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "77.0.3865.120",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.120",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; PEGT00 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120"
     },
     "device": {
@@ -3537,8 +3579,8 @@
       "marketingName": "X6 Plus A",
       "manufacturer": "bbk",
       "brand": "vivo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.210",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; vivo 1908_19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "1908_19",
-      "marketingName": "NEX 3",
-      "manufacturer": "bbk",
-      "brand": "vivo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2256,
-        "height": 1080,
-        "touch": true,
-        "size": 6.89
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "83.0.4103.106",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
       "manufacturer": "google"
     }
   }

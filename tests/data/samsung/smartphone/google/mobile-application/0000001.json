@@ -3655,6 +3655,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-M017F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.111 Mobile Safari/537.36 GSA/11.21.9.21.arm"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-M017F",
+      "marketingName": "Galaxy M01s (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google App",
+      "version": "11.21.9.21",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "84.0.4147.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J105H Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 GSA/8.1.12.21.arm"
     },
     "device": {
@@ -4147,48 +4189,6 @@
     "client": {
       "name": "Google App",
       "version": "13.38.11.26",
-      "manufacturer": "google",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "105.0.5195.136",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G960U1 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 GoogleApp/13.36.11.26.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G960U1",
-      "marketingName": "Galaxy S9 (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2960,
-        "height": 1440,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Google App",
-      "version": "13.36.11.26",
       "manufacturer": "google",
       "type": "mobile-application",
       "isbot": false

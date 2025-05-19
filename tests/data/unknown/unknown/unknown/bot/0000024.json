@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Gaisbot/3.0 (robot06@gais.cs.ccu.edu.tw; http://gais.cs.ccu.edu.tw/robot.php)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Gaisbot",
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Gaisbot/3.0 (robot05@gais.cs.ccu.edu.tw; http://gais.cs.ccu.edu.tw/robot.php)"
     },
     "device": {
@@ -4118,48 +4160,6 @@
   {
     "headers": {
       "user-agent": "Apexoo Spider 1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "generic spider",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ano-kato.com v2.14 spider"
     },
     "device": {
       "architecture": null,

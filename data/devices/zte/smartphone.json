@@ -324,8 +324,8 @@
     "marketingName": "Axon 7",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2560,
       "height": 1440,
@@ -340,8 +340,8 @@
     "marketingName": "Axon 7",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2560,
       "height": 1440,
@@ -356,8 +356,8 @@
     "marketingName": "Axon 7",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2560,
       "height": 1440,
@@ -372,8 +372,8 @@
     "marketingName": "Axon 7",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2560,
       "height": 1440,
@@ -8523,6 +8523,86 @@
       "height": 1080,
       "touch": true,
       "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte z2450": {
+    "deviceName": "Z2450",
+    "marketingName": "Blade A55",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.75
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte nx789j": {
+    "deviceName": "NX789J",
+    "marketingName": "RedMagic 10 Pro",
+    "manufacturer": "zte",
+    "brand": "nubia",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2688,
+      "height": 1216,
+      "touch": true,
+      "size": 6.85
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte nx736j": {
+    "deviceName": "NX736J",
+    "marketingName": "nubia Z70 Ultra",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2688,
+      "height": 1216,
+      "touch": true,
+      "size": 6.85
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte nx733j": {
+    "deviceName": "NX733J",
+    "marketingName": "nubia Z70 Ultra",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2688,
+      "height": 1216,
+      "touch": true,
+      "size": 6.85
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte ba521": {
+    "deviceName": "BA521",
+    "marketingName": "Blade A521",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"

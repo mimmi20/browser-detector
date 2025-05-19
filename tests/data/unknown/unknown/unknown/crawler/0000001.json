@@ -2185,6 +2185,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; BadooBot; +badoo.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "BadooBot",
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "bitlybot/3.0 (+http://bit.ly/) comdirect/1.0 (appVersion:20.9.0)"
     },
     "device": {

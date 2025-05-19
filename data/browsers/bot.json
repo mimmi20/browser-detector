@@ -9886,5 +9886,89 @@
       ]
     },
     "engine": "unknown"
+  },
+  "criteo-bot": {
+    "name": "CriteoBot",
+    "manufacturer": "criteo",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CriteoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kadobot": {
+    "name": "KadoBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KadoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "deskyobot": {
+    "name": "Deskyobot",
+    "manufacturer": "gloriot-stephane",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Deskyobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "atomseobot": {
+    "name": "Atomseobot",
+    "manufacturer": "virto-solutions",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Atomseobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yobot": {
+    "name": "Yobot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Yobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "borneobot": {
+    "name": "BorneoBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BorneoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "qutrigobot": {
+    "name": "qutrigobot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "qutrigobot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

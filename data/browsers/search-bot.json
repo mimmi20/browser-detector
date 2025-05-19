@@ -471,5 +471,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "monsidobot": {
+    "name": "Monsidobot",
+    "manufacturer": "acquia",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Monsidobot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

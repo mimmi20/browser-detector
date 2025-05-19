@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Allmystery UrlBot/1.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "lbot",
+      "version": "1.3.0",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "B-l-i-t-z-B-O-T/10.17 (OS 10.5 1.4; fr_LU;)"
     },
     "device": {
@@ -4147,48 +4189,6 @@
     "client": {
       "name": "httpclient",
       "version": "0.3.3",
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla (larbin2.6.3@unspecified.mail)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Larbin",
-      "version": null,
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true

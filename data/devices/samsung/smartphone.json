@@ -3412,8 +3412,8 @@
     "marketingName": "Galaxy A7 (Europe, South Africa, Kazakhstan, Russia, 2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3428,8 +3428,8 @@
     "marketingName": "Galaxy A7 (Global, 2017)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3444,8 +3444,8 @@
     "marketingName": "Galaxy A7 (Hong Kong, China, 2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3460,8 +3460,8 @@
     "marketingName": "Galaxy A7 (Korea, 2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3476,8 +3476,8 @@
     "marketingName": "Galaxy A7 (Korea, 2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3492,8 +3492,8 @@
     "marketingName": "Galaxy A7 (Korea, 2017)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3508,8 +3508,8 @@
     "marketingName": "Galaxy A7 (LATAM, 2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3524,8 +3524,8 @@
     "marketingName": "Galaxy A7 (Philippines, Taiwan, 2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3540,8 +3540,8 @@
     "marketingName": "Galaxy A7 (Southeast Asia, 2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3556,8 +3556,8 @@
     "marketingName": "Galaxy A7 Duos",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3572,8 +3572,8 @@
     "marketingName": "Galaxy A7 Duos",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3588,8 +3588,8 @@
     "marketingName": "Galaxy A7 Duos",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3604,8 +3604,8 @@
     "marketingName": "Galaxy A7 Duos",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3620,8 +3620,8 @@
     "marketingName": "Galaxy A7 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3636,8 +3636,40 @@
     "marketingName": "Galaxy A7 LTE Duos",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a700": {
+    "deviceName": "SM-A700",
+    "marketingName": "Galaxy A7 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a700i": {
+    "deviceName": "SM-A700I",
+    "marketingName": "Galaxy A7 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -25615,6 +25647,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-a346n": {
+    "deviceName": "SM-A346N",
+    "marketingName": "Galaxy A34 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-a127f": {
     "deviceName": "SM-A127F",
     "marketingName": "Galaxy A12 (India)",
@@ -25855,6 +25903,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-a546s": {
+    "deviceName": "SM-A546S",
+    "marketingName": "Galaxy A54 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-a326b": {
     "deviceName": "SM-A326B",
     "marketingName": "Galaxy A32 5G (International)",
@@ -25938,6 +26002,22 @@
   "samsung sm-a326k": {
     "deviceName": "SM-A326K",
     "marketingName": "Galaxy A32 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a326j": {
+    "deviceName": "SM-A326J",
+    "marketingName": "Galaxy A32 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -30783,6 +30863,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-s156v": {
+    "deviceName": "SM-S156V",
+    "marketingName": "Galaxy A15 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-a156m": {
     "deviceName": "SM-A156M",
     "marketingName": "Galaxy A15 5G",
@@ -30961,6 +31057,22 @@
   },
   "samsung sm-a155r": {
     "deviceName": "SM-A155R",
+    "marketingName": "Galaxy A15",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a155n": {
+    "deviceName": "SM-A155N",
     "marketingName": "Galaxy A15",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -31755,6 +31867,726 @@
       "height": 1080,
       "touch": true,
       "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a055f": {
+    "deviceName": "SM-A055F",
+    "marketingName": "Galaxy A05 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a055m": {
+    "deviceName": "SM-A055M",
+    "marketingName": "Galaxy A05 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s938b": {
+    "deviceName": "SM-S938B",
+    "marketingName": "Galaxy S25 Ultra 5G (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s938u": {
+    "deviceName": "SM-S938U",
+    "marketingName": "Galaxy S25 Ultra 5G (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s938u1": {
+    "deviceName": "SM-S938U1",
+    "marketingName": "Galaxy S25 Ultra 5G (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s938w": {
+    "deviceName": "SM-S938W",
+    "marketingName": "Galaxy S25 Ultra 5G (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s938n": {
+    "deviceName": "SM-S938N",
+    "marketingName": "Galaxy S25 Ultra 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s9380": {
+    "deviceName": "SM-S9380",
+    "marketingName": "Galaxy S25 Ultra 5G (China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s938e": {
+    "deviceName": "SM-S938E",
+    "marketingName": "Galaxy S25 Ultra 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a566b": {
+    "deviceName": "SM-A566B",
+    "marketingName": "Galaxy A56 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a566V": {
+    "deviceName": "SM-A566V",
+    "marketingName": "Galaxy A56 (USA, Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a566e": {
+    "deviceName": "SM-A566E",
+    "marketingName": "Galaxy A56",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a5660": {
+    "deviceName": "SM-A5660",
+    "marketingName": "Galaxy A56 (China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s936b": {
+    "deviceName": "SM-S936B",
+    "marketingName": "Galaxy S25 Plus (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s936u": {
+    "deviceName": "SM-S936U",
+    "marketingName": "Galaxy S25 Plus (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s936u1": {
+    "deviceName": "SM-S936U1",
+    "marketingName": "Galaxy S25 Plus (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s936w": {
+    "deviceName": "SM-S936W",
+    "marketingName": "Galaxy S25 Plus (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s936n": {
+    "deviceName": "SM-S936N",
+    "marketingName": "Galaxy S25 Plus (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s9360": {
+    "deviceName": "SM-S9360",
+    "marketingName": "Galaxy S25 Plus (China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s936e": {
+    "deviceName": "SM-S936E",
+    "marketingName": "Galaxy S25 Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s931b": {
+    "deviceName": "SM-S931B",
+    "marketingName": "Galaxy S25 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s931u": {
+    "deviceName": "SM-S931U",
+    "marketingName": "Galaxy S25 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s931u1": {
+    "deviceName": "SM-S931U1",
+    "marketingName": "Galaxy S25 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s931w": {
+    "deviceName": "SM-S931W",
+    "marketingName": "Galaxy S25 (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s931n": {
+    "deviceName": "SM-S931N",
+    "marketingName": "Galaxy S25 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s9310": {
+    "deviceName": "SM-S9310",
+    "marketingName": "Galaxy S25 (China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s931e": {
+    "deviceName": "SM-S931E",
+    "marketingName": "Galaxy S25",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a065f": {
+    "deviceName": "SM-A065F",
+    "marketingName": "Galaxy A06 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a065m": {
+    "deviceName": "SM-A065M",
+    "marketingName": "Galaxy A06",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a366b": {
+    "deviceName": "SM-A366B",
+    "marketingName": "Galaxy A36 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a366e": {
+    "deviceName": "SM-A366E",
+    "marketingName": "Galaxy A36",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a366u": {
+    "deviceName": "SM-A366U",
+    "marketingName": "Galaxy A36 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a366u1": {
+    "deviceName": "SM-A366U1",
+    "marketingName": "Galaxy A36 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m356b": {
+    "deviceName": "SM-M356B",
+    "marketingName": "Galaxy M35 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m055f": {
+    "deviceName": "SM-M055F",
+    "marketingName": "Galaxy M05 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m022g": {
+    "deviceName": "SM-M022G",
+    "marketingName": "Galaxy M02",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m022f": {
+    "deviceName": "SM-M022F",
+    "marketingName": "Galaxy M02 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m022m": {
+    "deviceName": "SM-M022M",
+    "marketingName": "Galaxy M02",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m017f": {
+    "deviceName": "SM-M017F",
+    "marketingName": "Galaxy M01s (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m625f": {
+    "deviceName": "SM-M625F",
+    "marketingName": "Galaxy M62 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-c5560": {
+    "deviceName": "SM-C5560",
+    "marketingName": "Galaxy C55 (China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-e146b": {
+    "deviceName": "SM-E146B",
+    "marketingName": "Galaxy F14 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s236dl": {
+    "deviceName": "SM-S236DL",
+    "marketingName": "Galaxy A23 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-e426b": {
+    "deviceName": "SM-E426B",
+    "marketingName": "Galaxy F42 5G (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-e426s": {
+    "deviceName": "SM-E426S",
+    "marketingName": "Galaxy F42 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
     },
     "type": "smartphone",
     "platform": "android"

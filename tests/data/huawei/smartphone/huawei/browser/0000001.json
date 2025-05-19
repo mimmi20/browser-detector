@@ -1,6 +1,90 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1; LEO-DLXXE Build/HONORLRA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 HuaweiBrowser/9.1.1.308 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LRA-AL00",
+      "marketingName": "Honor 30i",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "9.1.1.308",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; JAD-LX9; HMSCore 6.5.1.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.4.306 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "JAD-LX9",
+      "marketingName": "P50 Pro 4G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2700,
+        "height": 1228,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "12.0.4.306",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; FNE-AN00; HMSCore 6.5.0.324) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.0.323 Mobile Safari/537.36"
     },
     "device": {
@@ -325,6 +409,90 @@
     "client": {
       "name": "HuaweiBrowser",
       "version": "13.0.0.310",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; ABR-AL80; HMSCore 6.8.0.359) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.1.301 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ABR-AL80",
+      "marketingName": "P50",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2700,
+        "height": 1224,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "13.0.1.301",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; ABR-AL90; HMSCore 6.9.0.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.1.301 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ABR-AL90",
+      "marketingName": "P50E",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2700,
+        "height": 1224,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "13.0.1.301",
       "manufacturer": "huawei",
       "type": "browser",
       "isbot": false
@@ -1172,6 +1340,48 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.196",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; CTR-L91; HMSCore 6.15.0.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.2.313 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CTR-L91",
+      "marketingName": "nova 13i",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2388,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "14.0.2.313",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
       "manufacturer": "google"
     }
   },

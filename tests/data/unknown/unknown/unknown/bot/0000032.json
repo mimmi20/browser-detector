@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla (larbin2.6.3@unspecified.mail)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Larbin",
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SquidClamAV_Redirector 1.6"
     },
     "device": {
@@ -4147,48 +4189,6 @@
     "client": {
       "name": "ResearchBot",
       "version": "0.7.0",
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Ruby comdirect/1.0 (appVersion:19.12.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Generic Ruby Crawler",
-      "version": null,
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true

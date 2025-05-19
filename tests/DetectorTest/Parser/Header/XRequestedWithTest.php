@@ -481,6 +481,8 @@ final class XRequestedWithTest extends TestCase
             ['hippeis.com.photochecker', true, 'photo-sherlock', true, null],
             ['hesoft.T2S', true, 't2s-app', true, null],
             ['com.zeebusiness.news', true, 'zee-business', true, null],
+            ['com.netflix.mediaclient', true, 'netflix-app', true, null],
+            ['com.oxoo.kinogo', true, 'kinogo.ge', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }

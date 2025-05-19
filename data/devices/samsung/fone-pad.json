@@ -3300,8 +3300,24 @@
     "marketingName": "Galaxy W",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t255a": {
+    "deviceName": "SM-T255A",
+    "marketingName": "Galaxy W",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -4081,7 +4097,7 @@
   },
   "samsung sm-x516b": {
     "deviceName": "SM-X516B",
-    "marketingName": "Galaxy Tab S9 FE 5G",
+    "marketingName": "Galaxy Tab S9 FE 5G (International)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -4091,6 +4107,86 @@
       "height": 1440,
       "touch": true,
       "size": 10.9
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-x516n": {
+    "deviceName": "SM-X516N",
+    "marketingName": "Galaxy Tab S9 FE 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2304,
+      "height": 1440,
+      "touch": true,
+      "size": 10.9
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-x218u": {
+    "deviceName": "SM-X218U",
+    "marketingName": "Galaxy Tab A9+ 5G 11 (USA, 2023)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-p625": {
+    "deviceName": "SM-P625",
+    "marketingName": "Galaxy Tab S6 Lite (2024, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t636b": {
+    "deviceName": "SM-T636B",
+    "marketingName": "Galaxy Tab Active4 Pro (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-x818u": {
+    "deviceName": "SM-X818U",
+    "marketingName": "Galaxy Tab S9 Plus 5G (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
     },
     "type": "fone-pad",
     "platform": "android"

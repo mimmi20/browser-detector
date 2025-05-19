@@ -219,8 +219,8 @@
       "marketingName": "A60 Pro",
       "manufacturer": "blackview",
       "brand": "blackview",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1280,
         "height": 600,
@@ -1799,6 +1799,56 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.107",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"A60Plus\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"",
+      "sec-ch-ua-full-version": "\"133.0.6943.49\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A60 Plus",
+      "marketingName": "A60 Plus",
+      "manufacturer": "blackview",
+      "brand": "blackview",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 600,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "133.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "133.0.0.0",
       "manufacturer": "google"
     }
   },

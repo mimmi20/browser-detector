@@ -1555,6 +1555,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-X818U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.39 YaBrowser/24.4.7.39.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-X818U",
+      "marketingName": "Galaxy Tab S9 Plus 5G (USA)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.4
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.4.7.39.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.39",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-X816B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.44 YaBrowser/24.4.7.44.01 Safari/537.36"
     },
     "device": {
@@ -1676,6 +1718,48 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.39",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-X516N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.120 YaSearchBrowser/24.66/apad BroPP/1.0 YaSearchApp/24.66/apad webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-X516N",
+      "marketingName": "Galaxy Tab S9 FE 5G (Korea)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2304,
+        "height": 1440,
+        "touch": true,
+        "size": 10.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.66.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.120",
       "manufacturer": "google"
     }
   },

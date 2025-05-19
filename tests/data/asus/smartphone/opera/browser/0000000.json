@@ -891,8 +891,8 @@
       "marketingName": "ZenFone 4 Max (ZC520KL)",
       "manufacturer": "asus",
       "brand": "asus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -1275,8 +1275,8 @@
       "marketingName": "ZenFone 4 Max (ZC554KL)",
       "manufacturer": "asus",
       "brand": "asus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1280,
         "height": 720,
@@ -1649,7 +1649,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AI2202 B",
+      "deviceName": "AI2202",
       "marketingName": "Zenfone 9",
       "manufacturer": "asus",
       "brand": "asus",
@@ -1759,6 +1759,48 @@
     "client": {
       "name": "Opera Mobile",
       "version": "12.140.205",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; en-US; ASUSAI2501A Build/AQ3A.240829.003) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OPR/12.140.211 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AI2501",
+      "marketingName": "ROG Phone 9",
+      "manufacturer": "asus",
+      "brand": "asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "12.140.211",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
