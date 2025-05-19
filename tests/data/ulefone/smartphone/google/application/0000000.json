@@ -43,6 +43,49 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Note 8P Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.78 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Note 8P",
+      "marketingName": "Note 8P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google Go",
+      "version": null,
+      "manufacturer": "google",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.78",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "com.google.android.apps.searchlite/724009 (Linux; U; Android 9; de_DE; Ulefone_Note 7; Build/PPR1.180610.011; Cronet/108.0.5359.47)"
     },
     "device": {
@@ -68,6 +111,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google Go",
+      "version": null,
+      "manufacturer": "google",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.android.apps.searchlite/173804 (Linux; U; Android 10; de; Note 8P; Build/QP1A.190711.020; Cronet/111.0.5563.55)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Note 8P",
+      "marketingName": "Note 8P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {

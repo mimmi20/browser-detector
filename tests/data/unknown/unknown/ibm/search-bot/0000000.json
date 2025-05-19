@@ -631,48 +631,6 @@
   },
   {
     "headers": {
-      "user-agent": "nyobot/1.1 (Noyb.com search engine crawler; http://www.noyb.com; bot@noyb.com),gzip(gfe),gzip(gfe)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "oBot",
-      "version": "1.1.0",
-      "manufacturer": "ibm",
-      "type": "search-bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/3.0 (compatible; ScollSpider; http://www.webwobot.com)"
     },
     "device": {
@@ -4189,6 +4147,48 @@
     "client": {
       "name": "oBot",
       "version": "2.0.0",
+      "manufacturer": "ibm",
+      "type": "search-bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; oBot/2.3.1; +http://www.xforce-security.com/crawler/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "oBot",
+      "version": "2.3.1",
       "manufacturer": "ibm",
       "type": "search-bot",
       "isbot": true

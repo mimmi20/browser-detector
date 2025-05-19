@@ -49,5 +49,56 @@
       "version": "123.0.6312.99",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"XQ-DQ54\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"DuckDuckGo\";v=\"134\"",
+      "sec-ch-ua-full-version": "\"134.0.6998.135\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XQ-DQ54",
+      "marketingName": "Xperia 1 V 5G",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3840,
+        "height": 1644,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "version": null,
+      "manufacturer": "duck-duck-go",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]
