@@ -443,6 +443,7 @@ final class SecChUaModel implements DeviceCodeInterface
             '24048rn6cg' => 'xiaomi=xiaomi 24048rn6cg',
             '24090ra29g' => 'xiaomi=xiaomi 24090ra29g',
             '23053rn02y' => 'xiaomi=xiaomi 23053rn02y',
+            '2404apc5fg' => 'xiaomi=xiaomi 2404apc5fg',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -864,6 +865,8 @@ final class SecChUaModel implements DeviceCodeInterface
             'sm-s938b' => 'samsung=samsung sm-s938b',
             'sm-s721b' => 'samsung=samsung sm-s721b',
             'sm-a166b' => 'samsung=samsung sm-a166b',
+            'sm-f741b' => 'samsung=samsung sm-f741b',
+            'sm-x115' => 'samsung=samsung sm-x115',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -1316,6 +1319,7 @@ final class SecChUaModel implements DeviceCodeInterface
             'motorola edge 50 pro' => 'motorola=motorola edge 50 pro',
             'moto g04' => 'motorola=motorola moto g04',
             'moto g32' => 'motorola=motorola moto g32',
+            'motorola edge 50 neo' => 'motorola=motorola edge 50 neo',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -1616,6 +1620,7 @@ final class SecChUaModel implements DeviceCodeInterface
             'p20s_row' => 'teclast=teclast p20s_row',
             'p20hd_eea' => 'teclast=teclast p20hd_eea',
             'm40(n9h3)' => 'teclast=teclast n9h3',
+            'm50-row' => 'teclast=teclast m50-row',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             // dgtec
@@ -1915,6 +1920,7 @@ final class SecChUaModel implements DeviceCodeInterface
             'vfd 1400' => 'vodafone=vodafone vfd 1400',
             // feonal
             'k118_eea' => 'feonal=feonal k118_eea',
+            'd118_eea' => 'feonal=feonal d118_eea',
             // vastking
             'kingpad_k10_eea' => 'vastking=vastking kingpad k10_eea',
             // hotwav

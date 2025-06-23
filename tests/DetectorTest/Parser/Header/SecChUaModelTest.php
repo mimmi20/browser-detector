@@ -530,6 +530,7 @@ final class SecChUaModelTest extends TestCase
             ['"24048RN6CG"', true, 'xiaomi=xiaomi 24048rn6cg'],
             ['"24090RA29G"', true, 'xiaomi=xiaomi 24090ra29g'],
             ['"23053RN02Y"', true, 'xiaomi=xiaomi 23053rn02y'],
+            ['"2404APC5FG"', true, 'xiaomi=xiaomi 2404apc5fg'],
             // ZTE
             ['"ZTE A2121E"', true, 'zte=zte a2121e'],
             ['"ZTE Blade 10 Vita"', true, 'zte=zte blade 10 vita'],
@@ -958,6 +959,8 @@ final class SecChUaModelTest extends TestCase
             ['SM-S938B', true, 'samsung=samsung sm-s938b'],
             ['SM-S721B', true, 'samsung=samsung sm-s721b'],
             ['SM-A166B', true, 'samsung=samsung sm-a166b'],
+            ['SM-F741B', true, 'samsung=samsung sm-f741b'],
+            ['SM-X115', true, 'samsung=samsung sm-x115'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -1413,6 +1416,7 @@ final class SecChUaModelTest extends TestCase
             ['"motorola edge 50 pro"', true, 'motorola=motorola edge 50 pro'],
             ['"moto g04"', true, 'motorola=motorola moto g04'],
             ['"moto g32"', true, 'motorola=motorola moto g32'],
+            ['"motorola edge 50 neo"', true, 'motorola=motorola edge 50 neo'],
             // Sony
             ['"XQ-CC54"', true, 'sony=sony xq-cc54'],
             ['"XQ-BQ52"', true, 'sony=sony xq-bq52'],
@@ -1715,6 +1719,7 @@ final class SecChUaModelTest extends TestCase
             ['"P20S_ROW"', true, 'teclast=teclast p20s_row'],
             ['"P20HD_EEA"', true, 'teclast=teclast p20hd_eea'],
             ['"M40(N9H3)"', true, 'teclast=teclast n9h3'],
+            ['"M50-ROW"', true, 'teclast=teclast m50-row'],
             // alldocube
             ['"iPlay_40"', true, 'alldocube=alldocube iplay 40'],
             // dgtec
@@ -2016,6 +2021,7 @@ final class SecChUaModelTest extends TestCase
             ['"VFD 1400"', true, 'vodafone=vodafone vfd 1400'],
             // feonal
             ['"K118_EEA"', true, 'feonal=feonal k118_eea'],
+            ['"D118_EEA"', true, 'feonal=feonal d118_eea'],
             // vastking
             ['"KingPad_K10_EEA"', true, 'vastking=vastking kingpad k10_eea'],
             // hotwav
