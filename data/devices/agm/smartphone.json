@@ -4,7 +4,7 @@
     "marketingName": "X1",
     "manufacturer": "agm",
     "brand": "agm",
-    "dualOrientation": null,
+    "dualOrientation": true,
     "simCount": null,
     "display": {
       "width": 1920,
@@ -20,7 +20,7 @@
     "marketingName": "X2",
     "manufacturer": "agm",
     "brand": "agm",
-    "dualOrientation": null,
+    "dualOrientation": true,
     "simCount": null,
     "display": {
       "width": 1920,
@@ -91,6 +91,22 @@
       "height": 720,
       "touch": true,
       "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "agm x6": {
+    "deviceName": "X6",
+    "marketingName": "X6",
+    "manufacturer": "agm",
+    "brand": "agm",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
     },
     "type": "smartphone",
     "platform": "android"
