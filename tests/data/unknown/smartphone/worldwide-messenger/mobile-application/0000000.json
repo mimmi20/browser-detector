@@ -1,14 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; XT2437-4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.33 YaBrowser/25.3.0.33.00 SA/3 Mobile Safari/537.36"
+      "x-requested-with": "the.best.gram",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.60 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -17,7 +18,7 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -25,19 +26,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "14.0.0",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Yandex Browser",
-      "version": "25.3.0.33.00",
-      "manufacturer": "yandex",
-      "type": "browser",
+      "name": "Bestgram",
+      "version": null,
+      "manufacturer": "worldwide-messenger",
+      "type": "mobile-application",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "132.0.6834.33",
+      "version": "136.0.7103.60",
       "manufacturer": "google"
     }
   }

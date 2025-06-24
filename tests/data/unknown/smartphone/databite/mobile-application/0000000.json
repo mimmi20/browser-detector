@@ -1,14 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; zh-Hans-CN; SM-F7410 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/7.11.0.810 Mobile Safari/537.36"
+      "x-requested-with": "ir.ilmili.telegraph",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.60 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -17,7 +18,7 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -29,15 +30,15 @@
       "manufacturer": "google"
     },
     "client": {
-      "name": "Quark",
-      "version": "7.11.0.810",
-      "manufacturer": "quark-team",
-      "type": "browser",
+      "name": "Graph Messenger",
+      "version": null,
+      "manufacturer": "databite",
+      "type": "mobile-application",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "100.0.4896.58",
+      "version": "136.0.7103.60",
       "manufacturer": "google"
     }
   }

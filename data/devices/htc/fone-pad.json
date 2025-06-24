@@ -4,8 +4,8 @@
     "marketingName": "EVO View 4G",
     "manufacturer": "htc",
     "brand": "sprint",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -20,8 +20,8 @@
     "marketingName": "EVO View 4G",
     "manufacturer": "htc",
     "brand": "htc",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -36,8 +36,8 @@
     "marketingName": "Flyer",
     "manufacturer": "htc",
     "brand": "htc",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -52,8 +52,8 @@
     "marketingName": "Flyer",
     "manufacturer": "htc",
     "brand": "htc",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -68,8 +68,8 @@
     "marketingName": "Jetstream",
     "manufacturer": "htc",
     "brand": "htc",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
@@ -84,11 +84,27 @@
     "marketingName": "Jetstream",
     "manufacturer": "htc",
     "brand": "htc",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "htc a101": {
+    "deviceName": "A101",
+    "marketingName": "A101",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
       "touch": true,
       "size": 10.1
     },
