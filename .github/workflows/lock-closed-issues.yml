@@ -13,6 +13,6 @@ jobs:
   lock:
     runs-on: "ubuntu-24.04"
     steps:
-      - uses: "Dunning-Kruger/lock-issues@v1.1"
+      - uses: "Dunning-Kruger/lock-issues@v1.2"
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
