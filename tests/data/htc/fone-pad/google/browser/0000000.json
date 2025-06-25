@@ -9,8 +9,8 @@
       "marketingName": "Jetstream",
       "manufacturer": "htc",
       "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -51,8 +51,8 @@
       "marketingName": "Flyer",
       "manufacturer": "htc",
       "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -93,8 +93,8 @@
       "marketingName": "EVO View 4G",
       "manufacturer": "htc",
       "brand": "sprint",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -135,8 +135,8 @@
       "marketingName": "Flyer",
       "manufacturer": "htc",
       "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -177,8 +177,8 @@
       "marketingName": "Flyer",
       "manufacturer": "htc",
       "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -219,8 +219,8 @@
       "marketingName": "Flyer",
       "manufacturer": "htc",
       "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -261,8 +261,8 @@
       "marketingName": "Flyer",
       "manufacturer": "htc",
       "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -303,8 +303,8 @@
       "marketingName": "EVO View 4G",
       "manufacturer": "htc",
       "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -345,8 +345,8 @@
       "marketingName": "Flyer",
       "manufacturer": "htc",
       "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -375,6 +375,48 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; HTC A101) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A101",
+      "marketingName": "A101",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "123.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.0.0",
+      "manufacturer": "google"
     }
   }
 ]

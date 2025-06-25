@@ -9,8 +9,8 @@
       "marketingName": "SL 02",
       "manufacturer": "blaupunkt",
       "brand": "blaupunkt",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -51,8 +51,8 @@
       "marketingName": "SL 04",
       "manufacturer": "blaupunkt",
       "brand": "blaupunkt",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -80,6 +80,48 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.67",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Blaupunkt_TX60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TX60",
+      "marketingName": "TX60",
+      "manufacturer": "blaupunkt",
+      "brand": "blaupunkt",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "102.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.0.0",
       "manufacturer": "google"
     }
   }

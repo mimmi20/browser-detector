@@ -1230,5 +1230,37 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "huawei web-w00": {
+    "deviceName": "WEB-W00",
+    "marketingName": "MatePad Pro 13.2 (2025)",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2880,
+      "height": 1920,
+      "touch": true,
+      "size": 13.2
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei hey2-w09": {
+    "deviceName": "HEY2-W09",
+    "marketingName": "Pad 9",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.1
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }

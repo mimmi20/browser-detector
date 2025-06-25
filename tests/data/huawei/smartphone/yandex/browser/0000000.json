@@ -3655,6 +3655,90 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; ALN-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.109 YaBrowser/24.1.2.109.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ALN-AL10",
+      "marketingName": "Mate 60 Pro+",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2720,
+        "height": 1260,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.1.2.109.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; ALN-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.522 YaSearchBrowser/24.18.1 BroPP/1.0 YaSearchApp/24.18.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ALN-AL00",
+      "marketingName": "Mate 60",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2688,
+        "height": 1216,
+        "touch": true,
+        "size": 6.69
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.18.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.522",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; BVL-AN20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.35 YaBrowser/24.2.0.35.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -3818,6 +3902,90 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; JDY-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.105 YaBrowser/24.6.3.105.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "JDY-AN00",
+      "marketingName": "Play9C",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.6.3.105.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; FRI-AN10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.26 YaBrowser/24.6.6.26.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "FRI-AN10",
+      "marketingName": "Magic Vs Ultimate",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2272,
+        "height": 1984,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.6.6.26.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.26",
       "manufacturer": "google"
     }
   },
@@ -4028,174 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.827",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; ABR-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.103 YaBrowser/25.2.1.103.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "ABR-LX1",
-      "marketingName": "X8c",
-      "manufacturer": "huawei",
-      "brand": "honor",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2412,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "version": "25.2.1.103.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "132.0.6834.103",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Nova_10_Pro_4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.1041 YaSearchBrowser/24.125.1 BroPP/1.0 YaSearchApp/24.125.1 webOmni SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Nova 10 Pro 4G",
-      "marketingName": "Nova 10 Pro 4G",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2652,
-        "height": 1200,
-        "touch": true,
-        "size": 6.78
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "version": "24.125.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "130.0.6723.1041",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PTP-N59) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.2144 YaApp_Android/25.20.1 YaSearchBrowser/25.20.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PTP-N59",
-      "marketingName": "Magic 7 Pro",
-      "manufacturer": "huawei",
-      "brand": "honor",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2800,
-        "height": 1280,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "version": "25.20.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "132.0.6834.2144",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PTP-N29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.261 YaBrowser/25.4.0.261.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PTP-N29",
-      "marketingName": "Magic 7",
-      "manufacturer": "huawei",
-      "brand": "honor",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2800,
-        "height": 1280,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "version": "25.4.0.261.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "134.0.6998.261",
       "manufacturer": "google"
     }
   }

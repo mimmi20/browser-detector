@@ -5,19 +5,19 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general AGM device",
-      "marketingName": "general AGM device",
+      "deviceName": "H5",
+      "marketingName": "H5",
       "manufacturer": "agm",
       "brand": "agm",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 6.52
       },
-      "type": "mobile-device",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null
