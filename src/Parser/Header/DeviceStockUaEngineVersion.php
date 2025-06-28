@@ -31,7 +31,7 @@ final class DeviceStockUaEngineVersion implements EngineVersionInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function getEngineVersion(string $value, string | null $code = null): string | null

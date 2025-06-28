@@ -30,7 +30,7 @@ final class ErrorVersionCreator implements VersionBuilderInterface
      *
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function detectVersion(string $useragent, array $searches = []): VersionInterface
@@ -139,7 +139,7 @@ final class ErrorVersionCreator implements VersionBuilderInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function setRegex(string $regex): void
@@ -152,7 +152,7 @@ final class ErrorVersionCreator implements VersionBuilderInterface
      *
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function set(string $version): VersionInterface
@@ -165,7 +165,7 @@ final class ErrorVersionCreator implements VersionBuilderInterface
      *
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public static function fromArray(array $data): VersionInterface

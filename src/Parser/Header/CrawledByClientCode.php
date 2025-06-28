@@ -16,28 +16,17 @@ namespace BrowserDetector\Parser\Header;
 use Override;
 use UaParser\ClientCodeInterface;
 
-use function array_key_first;
-use function mb_strtolower;
-use function str_contains;
-
 final class CrawledByClientCode implements ClientCodeInterface
 {
-    use SortTrait;
-
-    /** @throws void */
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
     #[Override]
     public function hasClientCode(string $value): bool
     {
-        $list = $this->sort($value);
-
-        if ($list === null || $list === []) {
-            return false;
-        }
-
-        $key  = array_key_first($list);
-        $code = mb_strtolower($key);
-
-        return !str_contains($code, 'brand') && $code !== 'chromium';
+        return true;
     }
 
     /**
@@ -45,7 +34,7 @@ final class CrawledByClientCode implements ClientCodeInterface
      *
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function getClientCode(string $value): string | null

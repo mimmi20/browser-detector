@@ -23,7 +23,7 @@ final class Test implements VersionFactoryInterface
      *
      * @throws NotNumericException
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function detectVersion(string $useragent): VersionInterface

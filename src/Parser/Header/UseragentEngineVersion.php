@@ -37,7 +37,7 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function hasEngineVersion(string $value): bool
