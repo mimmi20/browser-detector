@@ -29,7 +29,7 @@ use function mb_strtolower;
 use function sprintf;
 
 #[CoversClass(XUcbrowserDevice::class)]
-final class XUcbrowserDeviceTest extends TestCase
+final class XUcbrowserDevice1Test extends TestCase
 {
     /**
      * @throws ExpectationFailedException

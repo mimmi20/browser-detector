@@ -27,7 +27,7 @@ use UaRequest\Header\DeviceCodeOnlyHeader;
 use function sprintf;
 
 #[CoversClass(XDeviceUseragent::class)]
-final class XDeviceUseragentTest extends TestCase
+final class XDeviceUseragent1Test extends TestCase
 {
     /**
      * @throws ExpectationFailedException
