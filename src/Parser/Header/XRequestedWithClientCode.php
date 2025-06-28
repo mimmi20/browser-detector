@@ -30,7 +30,11 @@ final class XRequestedWithClientCode implements ClientCodeInterface
         return $match === 0;
     }
 
-    /** @throws void */
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
     #[Override]
     public function getClientCode(string $value): string | null
     {

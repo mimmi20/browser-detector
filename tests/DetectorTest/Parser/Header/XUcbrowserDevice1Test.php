@@ -37,6 +37,8 @@ final class XUcbrowserDevice1Test extends TestCase
      * @throws \PHPUnit\Framework\Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider('providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo, string $deviceCode): void

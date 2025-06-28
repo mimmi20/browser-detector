@@ -20,6 +20,7 @@ use function in_array;
 use function mb_strtolower;
 use function trim;
 
+/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 final class SecChUaModel implements DeviceCodeInterface
 {
     /** @throws void */
@@ -32,7 +33,11 @@ final class SecChUaModel implements DeviceCodeInterface
         return !in_array($code, ['', 'model', ': ', 'some unknown model'], true);
     }
 
-    /** @throws void */
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
     #[Override]
     public function getDeviceCode(string $value): string | null
     {

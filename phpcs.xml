@@ -8,11 +8,9 @@
 
     <!-- inherit rules from: -->
     <rule ref="Mimmi20CodingStandard">
-        <exclude name="SlevomatCodingStandard.Functions.FunctionLength.FunctionLength"/>
         <exclude name="SlevomatCodingStandard.Complexity.Cognitive.ComplexityTooHigh"/>
         <exclude name="Generic.Metrics.CyclomaticComplexity.TooHigh"/>
         <exclude name="Generic.Metrics.CyclomaticComplexity.MaxExceeded"/>
-        <exclude name="SlevomatCodingStandard.Classes.ClassLength.ClassTooLong"/>
     </rule>
 
     <!-- Paths to check -->

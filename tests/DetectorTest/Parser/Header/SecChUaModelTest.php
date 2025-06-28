@@ -22,6 +22,7 @@ use UaRequest\Header\DeviceCodeOnlyHeader;
 
 use function sprintf;
 
+/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(SecChUaModel::class)]
 final class SecChUaModelTest extends TestCase
 {
@@ -122,6 +123,8 @@ final class SecChUaModelTest extends TestCase
      * @return array<int, array<int, bool|string|null>>
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa(): array
     {

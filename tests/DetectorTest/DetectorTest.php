@@ -83,6 +83,8 @@ final class DetectorTest extends TestCase
      * @return array<int, array<int, mixed>>
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa(): array
     {

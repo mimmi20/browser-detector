@@ -132,6 +132,8 @@ final class XRequestedWithTest extends TestCase
      * @return array<int, array<int, bool|string|null>>
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa(): array
     {
