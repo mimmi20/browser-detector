@@ -35,13 +35,13 @@ final class ErrorVersionCreator implements VersionBuilderInterface
     #[Override]
     public function detectVersion(string $useragent, array $searches = []): VersionInterface
     {
-        return new class ($searches) implements VersionInterface {
+        return new readonly class ($searches) implements VersionInterface {
             /**
              * @param array<int, bool|string|null> $searches
              *
              * @throws void
              */
-            public function __construct(private readonly array $searches)
+            public function __construct(private array $searches)
             {
                 // nothing to do
             }

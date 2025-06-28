@@ -22,7 +22,7 @@ use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceParserInterface;
 
 #[CoversClass(XDeviceUseragent::class)]
-final class XDeviceUseragentTest2 extends TestCase
+final class XDeviceUseragent2Test extends TestCase
 {
     /**
      * @throws \PHPUnit\Framework\Exception

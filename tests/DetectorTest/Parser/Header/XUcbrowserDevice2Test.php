@@ -22,7 +22,7 @@ use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceParserInterface;
 
 #[CoversClass(XUcbrowserDevice::class)]
-final class XUcbrowserDeviceTest2 extends TestCase
+final class XUcbrowserDevice2Test extends TestCase
 {
     /**
      * @throws \PHPUnit\Framework\Exception

@@ -119,8 +119,8 @@ final class DetectorTest extends TestCase
                         'marketingName' => 'Honor Note 10',
                         'manufacturer' => 'huawei',
                         'brand' => 'huawei',
-                        'dualOrientation' => null,
-                        'simCount' => null,
+                        'dualOrientation' => true,
+                        'simCount' => 2,
                         'display' => [
                             'width' => 2220,
                             'height' => 1080,
