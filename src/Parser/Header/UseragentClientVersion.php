@@ -38,7 +38,7 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function hasClientVersion(string $value): bool

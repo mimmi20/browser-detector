@@ -1,0 +1,680 @@
+<?php
+
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types = 1);
+
+namespace Parser\Header;
+
+use BrowserDetector\Loader\Data\ClientData;
+use BrowserDetector\Parser\Header\UseragentClientCode;
+use BrowserDetector\Parser\Header\UseragentClientVersion;
+use BrowserDetector\Parser\Header\UseragentDeviceCode;
+use BrowserDetector\Parser\Header\UseragentEngineCode;
+use BrowserDetector\Parser\Header\UseragentEngineVersion;
+use BrowserDetector\Parser\Header\UseragentPlatformCode;
+use BrowserDetector\Parser\Header\UseragentPlatformVersion;
+use BrowserDetector\Version\NullVersion;
+use PHPUnit\Event\NoPreviousThrowableException;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
+use PHPUnit\Framework\TestCase;
+use UaBrowserType\Type;
+use UaLoader\BrowserLoaderInterface;
+use UaLoader\EngineLoaderInterface;
+use UaLoader\PlatformLoaderInterface;
+use UaNormalizer\NormalizerFactory;
+use UaParser\BrowserParserInterface;
+use UaParser\DeviceParserInterface;
+use UaParser\EngineParserInterface;
+use UaParser\PlatformParserInterface;
+use UaRequest\Header\FullHeader;
+use UaResult\Browser\Browser;
+use UaResult\Company\Company;
+use UaResult\Engine\Engine;
+use UaResult\Os\Os;
+
+use function sprintf;
+
+/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
+#[CoversClass(UseragentClientCode::class)]
+#[CoversClass(UseragentClientVersion::class)]
+#[CoversClass(UseragentDeviceCode::class)]
+#[CoversClass(UseragentEngineCode::class)]
+#[CoversClass(UseragentEngineVersion::class)]
+#[CoversClass(UseragentPlatformCode::class)]
+#[CoversClass(UseragentPlatformVersion::class)]
+final class Useragent4Test extends TestCase
+{
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
+    public function testDataWithoutVersions4(): void
+    {
+        $ua          = 'Mozilla/5.0 (Linux; Android 14; RMX3741 Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/79.0.2254.70805';
+        $deviceKey   = 'realme=realme rmx3741';
+        $platformKey = 'test-platform-key';
+        $clientKey   = 'test-client-key';
+        $engineKey   = 'test-engine-key';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn($platformKey);
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn($clientKey);
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn($engineKey);
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($clientKey, $ua)
+            ->willReturn(
+                new ClientData(
+                    client: new Browser(
+                        name: null,
+                        version: new NullVersion(),
+                        manufacturer: new Company(type: '', name: null, brandname: null),
+                        type: Type::Browser,
+                    ),
+                    engine: null,
+                ),
+            );
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $ua)
+            ->willReturn(
+                new Os(
+                    name: null,
+                    marketingName: null,
+                    manufacturer: new Company(type: '', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
+            );
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($engineKey, $ua)
+            ->willReturn(
+                new Engine(
+                    name: null,
+                    manufacturer: new Company(type: '', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
+            );
+
+        $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
+
+        $header = new FullHeader(
+            value: $ua,
+            deviceCode: new UseragentDeviceCode(
+                deviceParser: $deviceParser,
+                normalizer: $normalizer,
+            ),
+            clientCode: new UseragentClientCode(
+                browserParser: $browserParser,
+                normalizer: $normalizer,
+            ),
+            clientVersion: new UseragentClientVersion(
+                browserParser: $browserParser,
+                browserLoader: $browserLoader,
+                normalizer: $normalizer,
+            ),
+            platformCode: new UseragentPlatformCode(
+                platformParser: $platformParser,
+                normalizer: $normalizer,
+            ),
+            platformVersion: new UseragentPlatformVersion(
+                platformParser: $platformParser,
+                platformLoader: $platformLoader,
+                normalizer: $normalizer,
+            ),
+            engineCode: new UseragentEngineCode(
+                engineParser: $engineParser,
+                normalizer: $normalizer,
+            ),
+            engineVersion: new UseragentEngineVersion(
+                engineParser: $engineParser,
+                engineLoader: $engineLoader,
+                normalizer: $normalizer,
+            ),
+        );
+
+        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $ua,
+            $header->getNormalizedValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $deviceKey,
+            $header->getDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $clientKey,
+            $header->getClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $platformKey,
+            $header->getPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $engineKey,
+            $header->getEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
+    public function testDataWithoutVersions5(): void
+    {
+        $ua           = 'Mozilla/5.0 (Linux; U; Android 14; RMX3750X Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/79.0.2254.70805';
+        $normalizedUa = 'Mozilla/5.0 (Linux; Android 14; RMX3750X Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/79.0.2254.70805';
+        $deviceKey    = 'sony=sony i4213';
+        $platformKey  = 'test-platform-key';
+        $clientKey    = 'test-client-key';
+        $engineKey    = 'test-engine-key';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($normalizedUa)
+            ->willReturn($deviceKey);
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($normalizedUa)
+            ->willReturn($platformKey);
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($normalizedUa)
+            ->willReturn($clientKey);
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($normalizedUa)
+            ->willReturn($engineKey);
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($clientKey, $normalizedUa)
+            ->willReturn(
+                new ClientData(
+                    client: new Browser(
+                        name: null,
+                        version: new NullVersion(),
+                        manufacturer: new Company(type: '', name: null, brandname: null),
+                        type: Type::Browser,
+                    ),
+                    engine: null,
+                ),
+            );
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $normalizedUa)
+            ->willReturn(
+                new Os(
+                    name: null,
+                    marketingName: null,
+                    manufacturer: new Company(type: '', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
+            );
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($engineKey, $normalizedUa)
+            ->willReturn(
+                new Engine(
+                    name: null,
+                    manufacturer: new Company(type: '', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
+            );
+
+        $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
+
+        $header = new FullHeader(
+            value: $ua,
+            deviceCode: new UseragentDeviceCode(
+                deviceParser: $deviceParser,
+                normalizer: $normalizer,
+            ),
+            clientCode: new UseragentClientCode(
+                browserParser: $browserParser,
+                normalizer: $normalizer,
+            ),
+            clientVersion: new UseragentClientVersion(
+                browserParser: $browserParser,
+                browserLoader: $browserLoader,
+                normalizer: $normalizer,
+            ),
+            platformCode: new UseragentPlatformCode(
+                platformParser: $platformParser,
+                normalizer: $normalizer,
+            ),
+            platformVersion: new UseragentPlatformVersion(
+                platformParser: $platformParser,
+                platformLoader: $platformLoader,
+                normalizer: $normalizer,
+            ),
+            engineCode: new UseragentEngineCode(
+                engineParser: $engineParser,
+                normalizer: $normalizer,
+            ),
+            engineVersion: new UseragentEngineVersion(
+                engineParser: $engineParser,
+                engineLoader: $engineLoader,
+                normalizer: $normalizer,
+            ),
+        );
+
+        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $ua,
+            $header->getNormalizedValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $deviceKey,
+            $header->getDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $clientKey,
+            $header->getClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $platformKey,
+            $header->getPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $engineKey,
+            $header->getEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
+    public function testDataWithoutVersions6(): void
+    {
+        $ua          = 'Mozilla/5.0 (Linux; Android 14; RMX3741 Build/UKQ1.231003.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OPR/12.140.205 Mobile Safari/537.36';
+        $deviceKey   = 'realme=realme rmx3741';
+        $platformKey = 'test-platform-key';
+        $clientKey   = 'test-client-key';
+        $engineKey   = 'test-engine-key';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn($platformKey);
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn($clientKey);
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn($engineKey);
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($clientKey, $ua)
+            ->willReturn(
+                new ClientData(
+                    client: new Browser(
+                        name: null,
+                        version: new NullVersion(),
+                        manufacturer: new Company(type: '', name: null, brandname: null),
+                        type: Type::Browser,
+                    ),
+                    engine: null,
+                ),
+            );
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $ua)
+            ->willReturn(
+                new Os(
+                    name: null,
+                    marketingName: null,
+                    manufacturer: new Company(type: '', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
+            );
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($engineKey, $ua)
+            ->willReturn(
+                new Engine(
+                    name: null,
+                    manufacturer: new Company(type: '', name: null, brandname: null),
+                    version: new NullVersion(),
+                ),
+            );
+
+        $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
+
+        $header = new FullHeader(
+            value: $ua,
+            deviceCode: new UseragentDeviceCode(
+                deviceParser: $deviceParser,
+                normalizer: $normalizer,
+            ),
+            clientCode: new UseragentClientCode(
+                browserParser: $browserParser,
+                normalizer: $normalizer,
+            ),
+            clientVersion: new UseragentClientVersion(
+                browserParser: $browserParser,
+                browserLoader: $browserLoader,
+                normalizer: $normalizer,
+            ),
+            platformCode: new UseragentPlatformCode(
+                platformParser: $platformParser,
+                normalizer: $normalizer,
+            ),
+            platformVersion: new UseragentPlatformVersion(
+                platformParser: $platformParser,
+                platformLoader: $platformLoader,
+                normalizer: $normalizer,
+            ),
+            engineCode: new UseragentEngineCode(
+                engineParser: $engineParser,
+                normalizer: $normalizer,
+            ),
+            engineVersion: new UseragentEngineVersion(
+                engineParser: $engineParser,
+                engineLoader: $engineLoader,
+                normalizer: $normalizer,
+            ),
+        );
+
+        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $ua,
+            $header->getNormalizedValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $deviceKey,
+            $header->getDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $clientKey,
+            $header->getClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $platformKey,
+            $header->getPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $engineKey,
+            $header->getEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+    }
+}

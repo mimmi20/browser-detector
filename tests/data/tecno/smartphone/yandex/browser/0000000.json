@@ -169,6 +169,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 13; TECNO LH8n) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.531 YaSearchBrowser/23.97.1 BroPP/1.0 YaSearchApp/23.97.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LH8n",
+      "marketingName": "Spark 30C 5G",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "23.97.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.5845.531",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm; Android 13; TECNO BG6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.64 YaSearchBrowser/23.99.1 BroPP/1.0 YaSearchApp/23.99.1 webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -206,6 +248,48 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.64",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; TECNO Mobile LH8n) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.90 YaBrowser/24.1.8.90.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LH8n",
+      "marketingName": "Spark 30C 5G",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.1.8.90.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.90",
       "manufacturer": "google"
     }
   },

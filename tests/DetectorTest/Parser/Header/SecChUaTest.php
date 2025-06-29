@@ -166,6 +166,7 @@ final class SecChUaTest extends TestCase
             ['"Not/A)Brand";v="8", "Chromium";v="126", "YaBrowser";v="24.7"', true, 'yabrowser', true, '24.7'],
             ['"Not/A)Brand";v="8", "Chromium";v="126", "Android WebView";v="126"', true, 'android webview', true, '126'],
             ['"Not/A)Brand";v="8"', false, null, false, null],
+            ['"Chromium";v="106", "Brave Browser";v="106", "Not;A=Brand";v="99"', true, 'brave', true, '106'],
         ];
     }
 }

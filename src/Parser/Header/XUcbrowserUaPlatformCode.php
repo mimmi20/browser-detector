@@ -38,7 +38,7 @@ final class XUcbrowserUaPlatformCode implements PlatformCodeInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function getPlatformCode(string $value, string | null $derivate = null): string | null

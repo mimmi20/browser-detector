@@ -30,7 +30,11 @@ final class XRequestedWithClientCode implements ClientCodeInterface
         return $match === 0;
     }
 
-    /** @throws void */
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
     #[Override]
     public function getClientCode(string $value): string | null
     {
@@ -349,6 +353,10 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.zeebusiness.news' => 'zee-business',
             'com.netflix.mediaclient' => 'netflix-app',
             'com.oxoo.kinogo' => 'kinogo.ge',
+            'ir.ilmili.telegraph' => 'graph-messenger',
+            'the.best.gram' => 'bestgram',
+            'org.aka.lite' => 'aka-lite',
+            'org.aka.messenger' => 'aka',
             default => null,
         };
     }

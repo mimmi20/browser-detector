@@ -4,8 +4,8 @@
     "marketingName": "Life View Tab",
     "manufacturer": "blu",
     "brand": "blu",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 768,
@@ -20,8 +20,8 @@
     "marketingName": "Studio 7.0",
     "manufacturer": "blu",
     "brand": "blu",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -29,6 +29,38 @@
       "size": 7
     },
     "type": "fone-pad",
+    "platform": "android"
+  },
+  "blu touchbook g7": {
+    "deviceName": "Touch Book G7",
+    "marketingName": "Touch Book G7",
+    "manufacturer": "blu",
+    "brand": "blu",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "blu touchbook 7.0": {
+    "deviceName": "Touch Book 7.0",
+    "marketingName": "Touch Book 7.0",
+    "manufacturer": "blu",
+    "brand": "blu",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
     "platform": "android"
   }
 }

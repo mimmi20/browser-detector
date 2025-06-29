@@ -34,7 +34,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function hasClientCode(string $value): bool

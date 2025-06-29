@@ -43,7 +43,7 @@ final class CompanyLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -58,7 +58,7 @@ final class CompanyLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array
@@ -89,7 +89,7 @@ final class CompanyLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -104,7 +104,7 @@ final class CompanyLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array
@@ -140,7 +140,7 @@ final class CompanyLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -155,7 +155,7 @@ final class CompanyLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array

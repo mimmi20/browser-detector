@@ -74,6 +74,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'norton secure browser', 'norton private browser' => 'norton-secure-browser',
             'microsoft edge webview2' => 'edge webview',
             'headlesschrome' => 'headless-chrome',
+            'brave browser' => 'brave',
             default => $code,
         };
     }

@@ -712,5 +712,47 @@
       "version": "128.0.6613.123",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; XT2437-4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.33 YaBrowser/25.3.0.33.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XT2437-4",
+      "marketingName": "Moto G75 5G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2388,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.3.0.33.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.33",
+      "manufacturer": "google"
+    }
   }
 ]

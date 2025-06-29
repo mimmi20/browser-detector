@@ -48,6 +48,8 @@ final class MobileDeviceTest extends TestCase
      * @return array<int, array<int, string>>
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerIsMobile(): array
     {

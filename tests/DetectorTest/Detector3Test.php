@@ -41,6 +41,8 @@ final class Detector3Test extends TestCase
      * @throws UnexpectedValueException
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public function testGetBrowserWithoutCacheButWithClientCode2(): void
     {

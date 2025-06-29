@@ -33,7 +33,7 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function hasEngineCode(string $value): bool

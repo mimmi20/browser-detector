@@ -1383,8 +1383,24 @@
     "dualOrientation": true,
     "simCount": 1,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei bzt3-al00": {
+    "deviceName": "BZT3-AL00",
+    "marketingName": "C5 10",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
       "touch": true,
       "size": 10.4
     },
@@ -1483,6 +1499,22 @@
       "height": 1440,
       "touch": true,
       "size": 11.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei pce-w29": {
+    "deviceName": "PCE-W29",
+    "marketingName": "MatePad Pro 13.2 (2025)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2880,
+      "height": 1920,
+      "touch": true,
+      "size": 13.2
     },
     "type": "fone-pad",
     "platform": "android"

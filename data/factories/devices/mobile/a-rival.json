@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/bioniq 1001/i": "a-rival bioniq 1001",
+    "/bioniq[_ ]?p116/i": "a-rival bioniq p116",
+    "/bioniq[_ ]?1001/i": "a-rival bioniq 1001",
     "/pad-fmd700hd/i": "a-rival pad-fmd700hd"
   },
   "generic": "general a-rival device"

@@ -4,8 +4,8 @@
     "marketingName": "Aquaris E10",
     "manufacturer": "bq",
     "brand": "bq",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -20,13 +20,29 @@
     "marketingName": "Edison 3G",
     "manufacturer": "bq",
     "brand": "bq",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
       "touch": true,
       "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "bq 8088l": {
+    "deviceName": "8088L",
+    "marketingName": "Exion Surf",
+    "manufacturer": "bq",
+    "brand": "bq",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1200,
+      "height": 800,
+      "touch": true,
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"

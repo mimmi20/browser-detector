@@ -76,7 +76,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             #[Override]
             public function debug(string | Stringable $message, array $context = []): void
@@ -92,8 +92,8 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              */
             #[Override]
             public function log($level, string | Stringable $message, array $context = []): void
@@ -113,7 +113,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             #[Override]
             public function get(string $key, mixed $default = null): mixed
@@ -134,7 +134,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             #[Override]
             public function set(string $key, mixed $value, int | DateInterval | null $ttl = null): bool
@@ -151,7 +151,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             #[Override]
             public function delete(string $key): bool
@@ -182,7 +182,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             #[Override]
             public function getMultiple(iterable $keys, mixed $default = null): iterable
@@ -202,7 +202,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             #[Override]
             public function setMultiple(iterable $values, int | DateInterval | null $ttl = null): bool
@@ -219,7 +219,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             #[Override]
             public function deleteMultiple(iterable $keys): bool
@@ -239,7 +239,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              *
-             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             #[Override]
             public function has(string $key): bool

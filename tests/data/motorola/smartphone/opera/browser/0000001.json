@@ -1968,5 +1968,55 @@
       "version": "116.0.5845.141",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"moto g62 5G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13\"",
+      "sec-ch-ua": "\"Opera\";v=\"121\", \"OperaMobile\";v=\"89\", \"Chromium\";v=\"135\", \" Not;A Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"89.3.4705.84083\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36 OPR/89.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G62 5G",
+      "marketingName": "Moto G62 5G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "89.0.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

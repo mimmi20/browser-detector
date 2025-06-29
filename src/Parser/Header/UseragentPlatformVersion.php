@@ -39,7 +39,7 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function hasPlatformVersion(string $value): bool

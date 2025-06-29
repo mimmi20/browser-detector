@@ -54,6 +54,8 @@ final class Detector9Test extends TestCase
      * @throws UnexpectedValueException
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode20(): void
     {
@@ -371,6 +373,8 @@ final class Detector9Test extends TestCase
      * @throws UnexpectedValueException
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode21(): void
     {
@@ -701,6 +705,8 @@ final class Detector9Test extends TestCase
      * @throws NotNumericException
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode22(): void
     {

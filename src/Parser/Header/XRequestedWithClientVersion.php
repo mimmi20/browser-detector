@@ -32,7 +32,7 @@ final class XRequestedWithClientVersion implements ClientVersionInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function getClientVersion(string $value, string | null $code = null): string | null

@@ -1,6 +1,55 @@
 [
   {
     "headers": {
+      "sec-ch-ua-model": "\"EML-L29\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\", \"Microsoft Edge\";v=\"102\"",
+      "sec-ch-ua-full-version": "\"102.0.1245.39\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; EML-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Mobile Safari/537.36 EdgA/102.0.1245.39"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "EML-L29",
+      "marketingName": "P20",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "102.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.63",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; CDY-NX9A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36 EdgA/105.0.1343.27"
     },
     "device": {
@@ -156,7 +205,7 @@
       "marketingName": "Mate 20 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 3120,
@@ -240,7 +289,7 @@
       "marketingName": "Y7 (2019)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1520,
@@ -282,7 +331,7 @@
       "marketingName": "Mate 20 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 3120,
@@ -423,8 +472,8 @@
       "marketingName": "P30 Lite",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2312,
         "height": 1080,
@@ -465,7 +514,7 @@
       "marketingName": "P40 Lite",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2310,
@@ -649,7 +698,7 @@
       "marketingName": "Nova 5 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2340,

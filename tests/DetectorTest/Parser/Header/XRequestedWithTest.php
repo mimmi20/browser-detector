@@ -132,6 +132,8 @@ final class XRequestedWithTest extends TestCase
      * @return array<int, array<int, bool|string|null>>
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa(): array
     {
@@ -483,6 +485,10 @@ final class XRequestedWithTest extends TestCase
             ['com.zeebusiness.news', true, 'zee-business', true, null],
             ['com.netflix.mediaclient', true, 'netflix-app', true, null],
             ['com.oxoo.kinogo', true, 'kinogo.ge', true, null],
+            ['ir.ilmili.telegraph', true, 'graph-messenger', true, null],
+            ['the.best.gram', true, 'bestgram', true, null],
+            ['org.aka.lite', true, 'aka-lite', true, null],
+            ['org.aka.messenger', true, 'aka', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }
