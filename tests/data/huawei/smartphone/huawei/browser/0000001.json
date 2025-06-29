@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; YAL-L21 Build/HUAWEIYAL-L61; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36 HuaweiBrowser/12.0.4.304 HMSCore/6.5.0.312"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "YAL-L61",
+      "marketingName": "nova 5T",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "12.0.4.304",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1; LEO-DLXXE Build/HONORLRA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 HuaweiBrowser/9.1.1.308 Mobile Safari/537.36"
     },
     "device": {
@@ -9,7 +51,7 @@
       "marketingName": "Honor 30i",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2400,
@@ -219,7 +261,7 @@
       "marketingName": "P30",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2340,
@@ -345,7 +387,7 @@
       "marketingName": "P10 Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2560,
@@ -513,7 +555,7 @@
       "marketingName": "Mate 20 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 3120,

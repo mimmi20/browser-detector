@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; HUAWEI U8825-1 Build/HuaweiU8825-1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "U8825-1",
+      "marketingName": "Ascend G330",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": null,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; U8860 Build/HuaweiU8860) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
@@ -9,7 +51,7 @@
       "marketingName": "Honor",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -51,7 +93,7 @@
       "marketingName": "Ascend Y300",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -93,8 +135,8 @@
       "marketingName": "Ascend G700",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1280,
         "height": 720,
@@ -135,7 +177,7 @@
       "marketingName": "Ascend G600",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -219,7 +261,7 @@
       "marketingName": "Ascend Y560",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -261,7 +303,7 @@
       "marketingName": "P10 Lite",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -303,7 +345,7 @@
       "marketingName": "Honor 8 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2560,
@@ -345,7 +387,7 @@
       "marketingName": "Honor 8 (USA)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -387,7 +429,7 @@
       "marketingName": "Honor 5c",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -429,7 +471,7 @@
       "marketingName": "P10 Lite",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -471,7 +513,7 @@
       "marketingName": "Ascend G6",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -513,7 +555,7 @@
       "marketingName": "Honor 8 (Europe)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -555,7 +597,7 @@
       "marketingName": "Nova",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -597,7 +639,7 @@
       "marketingName": "P9 Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -681,7 +723,7 @@
       "marketingName": "Ascend Y360",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -723,7 +765,7 @@
       "marketingName": "Honor 8 (China)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -765,7 +807,7 @@
       "marketingName": "Mate 9 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2560,
@@ -807,7 +849,7 @@
       "marketingName": "Ascend Mate 7",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -849,7 +891,7 @@
       "marketingName": "Honor 3X",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -891,7 +933,7 @@
       "marketingName": "Ascend G600",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -933,7 +975,7 @@
       "marketingName": "Ascend G730",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -975,7 +1017,7 @@
       "marketingName": "Ascend P1 TD",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -1017,7 +1059,7 @@
       "marketingName": "Ascend G600",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -1059,7 +1101,7 @@
       "marketingName": "Ascend P6",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -1101,7 +1143,7 @@
       "marketingName": "Ascend G300C",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -1143,7 +1185,7 @@
       "marketingName": "Ascend Y320",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -1185,7 +1227,7 @@
       "marketingName": "Honor 3X",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -1227,7 +1269,7 @@
       "marketingName": "Ascend G300",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -1269,7 +1311,7 @@
       "marketingName": "Ascend G600",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -1311,7 +1353,7 @@
       "marketingName": "Ascend G730",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -1353,7 +1395,7 @@
       "marketingName": "Ascend D Quad",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -1395,7 +1437,7 @@
       "marketingName": "Ascend P6 S",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -1437,7 +1479,7 @@
       "marketingName": "Ascend D2",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -1521,7 +1563,7 @@
       "marketingName": "NMO-L31",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -1563,7 +1605,7 @@
       "marketingName": "Ideos X3",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 480,
@@ -1605,7 +1647,7 @@
       "marketingName": "P10 Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2560,
@@ -1647,7 +1689,7 @@
       "marketingName": "P10 Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2560,
@@ -1689,7 +1731,7 @@
       "marketingName": "Honor 9",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -1731,7 +1773,7 @@
       "marketingName": "P9 Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -1773,7 +1815,7 @@
       "marketingName": "P10",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -1815,7 +1857,7 @@
       "marketingName": "Honor 8 (China, USA)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -1857,7 +1899,7 @@
       "marketingName": "Y6 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -1899,7 +1941,7 @@
       "marketingName": "Y7 (2017)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -1941,7 +1983,7 @@
       "marketingName": "Y5 II",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -1983,7 +2025,7 @@
       "marketingName": "P9",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -2025,7 +2067,7 @@
       "marketingName": "Ascend G330",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -2067,7 +2109,7 @@
       "marketingName": "Y6 (2017)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -2109,7 +2151,7 @@
       "marketingName": "GR5 (2017)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -2151,7 +2193,7 @@
       "marketingName": "Honor Bee",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -2235,7 +2277,7 @@
       "marketingName": "Honor 6A",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -2277,7 +2319,7 @@
       "marketingName": "Honor 9",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -2361,7 +2403,7 @@
       "marketingName": "Enjoy 6s",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -2403,7 +2445,7 @@
       "marketingName": "P10 Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2560,
@@ -2445,7 +2487,7 @@
       "marketingName": "Nova Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -2487,7 +2529,7 @@
       "marketingName": "GR5",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -2529,7 +2571,7 @@
       "marketingName": "Y3 II",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -2571,7 +2613,7 @@
       "marketingName": "Mate 8",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -2613,7 +2655,7 @@
       "marketingName": "Honor 7 Lite (2016)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -2655,7 +2697,7 @@
       "marketingName": "Y5 II",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -2697,7 +2739,7 @@
       "marketingName": "Ascend G600",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -2739,7 +2781,7 @@
       "marketingName": "Ascend Y330",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -2781,7 +2823,7 @@
       "marketingName": "Ascend Y530",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -2823,7 +2865,7 @@
       "marketingName": "Ascend Y221",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 480,
@@ -2865,7 +2907,7 @@
       "marketingName": "Ascend G730",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -2907,7 +2949,7 @@
       "marketingName": "Ascend Y530",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -2949,7 +2991,7 @@
       "marketingName": "Ascend Y320",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -2991,7 +3033,7 @@
       "marketingName": "Ascend G6 3G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -3033,7 +3075,7 @@
       "marketingName": "Valiant",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -3075,7 +3117,7 @@
       "marketingName": "Ascend G620S",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -3117,7 +3159,7 @@
       "marketingName": "Ascend Y530",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -3159,7 +3201,7 @@
       "marketingName": "Ascend Y320",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -3201,7 +3243,7 @@
       "marketingName": "Ascend P7",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -3243,7 +3285,7 @@
       "marketingName": "Ascend G6 3G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -3285,7 +3327,7 @@
       "marketingName": "Ascend G526",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -3327,7 +3369,7 @@
       "marketingName": "Ascend Y610",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -3369,7 +3411,7 @@
       "marketingName": "Ascend G730",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -3411,7 +3453,7 @@
       "marketingName": "Tribute",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": null,
@@ -3453,7 +3495,7 @@
       "marketingName": "Tribute",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": null,
@@ -3495,7 +3537,7 @@
       "marketingName": "Ascend Y330",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -3537,7 +3579,7 @@
       "marketingName": "Y3",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -3579,7 +3621,7 @@
       "marketingName": "Ascend Y550",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -3621,7 +3663,7 @@
       "marketingName": "U8667",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 480,
@@ -3663,7 +3705,7 @@
       "marketingName": "Ascend Y340",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -3705,7 +3747,7 @@
       "marketingName": "Ascend Y550",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -3747,7 +3789,7 @@
       "marketingName": "Ascend G510",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -3789,7 +3831,7 @@
       "marketingName": "Ascend Y520",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -3831,7 +3873,7 @@
       "marketingName": "Ascend Y550",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -3873,7 +3915,7 @@
       "marketingName": "Valiant",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -3915,7 +3957,7 @@
       "marketingName": "Ascend Y511",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 854,
@@ -3957,7 +3999,7 @@
       "marketingName": "Ascend Y330",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -3999,7 +4041,7 @@
       "marketingName": "Ascend D Quad",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -4041,7 +4083,7 @@
       "marketingName": "Ascend G6 3G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -4083,7 +4125,7 @@
       "marketingName": "Ascend Y330",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -4125,7 +4167,7 @@
       "marketingName": "Ascend Y330",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 800,
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "41.0.2272.92",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; HUAWEI H881C Build/HuaweiH881C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "H881C",
-      "marketingName": "Ascend Plus",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "39.0.2171.93",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
       "manufacturer": "google"
     }
   }
