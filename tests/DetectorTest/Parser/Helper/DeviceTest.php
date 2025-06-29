@@ -1341,6 +1341,7 @@ final class DeviceTest extends TestCase
             ['moto g04', 'motorola=motorola moto g04'],
             ['moto g32', 'motorola=motorola moto g32'],
             ['motorola edge 50 neo', 'motorola=motorola edge 50 neo'],
+            ['moto g play - 2023', 'motorola=motorola moto g play 2023'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -1516,6 +1517,7 @@ final class DeviceTest extends TestCase
             ['X95', 'doogee=doogee x95'],
             ['Y8', 'doogee=doogee y8'],
             ['X95Pro', 'doogee=doogee x95 pro'],
+            ['S61Pro', 'doogee=doogee s61 pro'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -1689,6 +1691,9 @@ final class DeviceTest extends TestCase
             ['A60Plus', 'blackview=blackview a60 plus'],
             ['N6000 SE', 'blackview=blackview n6000 se'],
             ['BV9100', 'blackview=blackview bv9100'],
+            ['Tab 12 Pro', 'blackview=blackview tab 12 pro'],
+            ['Tab 8 WiFi', 'blackview=blackview tab 8 wifi'],
+            ['Tab 7 Pro', 'blackview=blackview tab 7 pro'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -1963,6 +1968,8 @@ final class DeviceTest extends TestCase
             ['HiPad XPro', 'chuwi=chuwi hipad x pro'],
             // bigme
             ['HiBreak', 'bigme=bigme hibreak'],
+            // a-rival
+            ['BioniQP116', 'a-rival=a-rival bioniq p116'],
             // other
             ['Model"', null],
             [': "', null],

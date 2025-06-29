@@ -1306,6 +1306,7 @@ final class Device
             'moto g04' => 'motorola=motorola moto g04',
             'moto g32' => 'motorola=motorola moto g32',
             'motorola edge 50 neo' => 'motorola=motorola edge 50 neo',
+            'moto g play - 2023' => 'motorola=motorola moto g play 2023',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -1480,6 +1481,7 @@ final class Device
             'x95' => 'doogee=doogee x95',
             'y8' => 'doogee=doogee y8',
             'x95pro' => 'doogee=doogee x95 pro',
+            's61pro' => 'doogee=doogee s61 pro',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -1652,6 +1654,9 @@ final class Device
             'a60plus' => 'blackview=blackview a60 plus',
             'n6000 se' => 'blackview=blackview n6000 se',
             'bv9100' => 'blackview=blackview bv9100',
+            'tab 12 pro' => 'blackview=blackview tab 12 pro',
+            'tab 8 wifi' => 'blackview=blackview tab 8 wifi',
+            'tab 7 pro' => 'blackview=blackview tab 7 pro',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -1925,6 +1930,8 @@ final class Device
             'hipad xpro' => 'chuwi=chuwi hipad x pro',
             // bigme
             'hibreak' => 'bigme=bigme hibreak',
+            // a-rival
+            'bioniqp116' => 'a-rival=a-rival bioniq p116',
             default => null,
         };
     }
