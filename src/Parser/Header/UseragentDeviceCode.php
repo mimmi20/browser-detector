@@ -20,8 +20,8 @@ use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
+use function mb_strtolower;
 use function preg_match;
-use function strtolower;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
@@ -70,7 +70,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $matches,
             )
         ) {
-            $code = $deviceCodeHelper->getDeviceCode(strtolower($matches['devicecode']));
+            $code = $deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
             if ($code !== '' && $code !== null) {
                 return $code;
@@ -86,7 +86,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $matches,
             )
         ) {
-            $code = $deviceCodeHelper->getDeviceCode(strtolower($matches['devicecode']));
+            $code = $deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
             if ($code !== '' && $code !== null) {
                 return $code;
