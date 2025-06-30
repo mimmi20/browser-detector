@@ -218,7 +218,7 @@ final class SecChUaModelTest extends TestCase
             ['"ASUS_I003D"', true, 'asus=asus i003d'],
             ['"ASUS_I003DD"', true, 'asus=asus i003dd'],
             ['"ASUS_I006D"', true, 'asus=asus i006d'],
-            ['"ZC554KL"', true, 'asus=asus x00id'],
+            ['"ZC554KL"', true, 'asus=asus zc554kl'],
             ['"ASUS_Z008D"', true, 'asus=asus z008d'],
             ['"ASUS_AI2302"', true, 'asus=asus ai2302'],
             ['"ASUS_AI2202"', true, 'asus=asus ai2202'],

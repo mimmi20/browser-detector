@@ -114,7 +114,8 @@ final class Device
             'asus_i003d' => 'asus=asus i003d',
             'asus_i003dd' => 'asus=asus i003dd',
             'asus_i006d' => 'asus=asus i006d',
-            'zc554kl' => 'asus=asus x00id',
+            'zc554kl' => 'asus=asus zc554kl',
+            'asus_x00id' => 'asus=asus x00id',
             'asus_z008d' => 'asus=asus z008d',
             'asus_ai2302' => 'asus=asus ai2302',
             'asus_ai2202' => 'asus=asus ai2202',
@@ -1035,6 +1036,10 @@ final class Device
             'brp-nx1m' => 'huawei=huawei brp-nx1m',
             'fcp-n49' => 'huawei=huawei fcp-n49',
             'med-lx9n' => 'huawei=huawei med-lx9n',
+            'mro-w09' => 'huawei=huawei mro-w09',
+            'mro-w00' => 'huawei=huawei mro-w00',
+            'mro-w10' => 'huawei=huawei mro-w10',
+            'mro-al10' => 'huawei=huawei mro-al10',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -1406,6 +1411,7 @@ final class Device
             'v2250' => 'vivo=vivo v2250',
             'v2338a' => 'vivo=vivo v2338a',
             'vivo 1814' => 'vivo=vivo 1814',
+            'v2124' => 'vivo=vivo v2124',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -1747,7 +1753,18 @@ final class Device
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             // zuum
+            'stellar m2' => 'zuum=zuum stellar m2',
+            'stellar m1' => 'zuum=zuum stellar m1',
             'sens m1' => 'zuum=zuum sens m1',
+            'zuum_zen_i' => 'zuum=zuum zen i',
+            'stedi' => 'zuum=zuum stedi',
+            'magno' => 'zuum=zuum magno',
+            'covet' => 'zuum=zuum covet',
+            'zuum blaze' => 'zuum=zuum blaze',
+            'zuum a918' => 'zuum=zuum a918',
+            'zuum m50' => 'zuum=zuum m50',
+            'zuum_e60' => 'zuum=zuum e60',
+            'zuum_e40' => 'zuum=zuum e40',
             // retroid-pocket
             'retroid pocket 2+' => 'retroid-pocket=retroid-pocket 2 plus',
             // logitech
@@ -1932,6 +1949,21 @@ final class Device
             'hibreak' => 'bigme=bigme hibreak',
             // a-rival
             'bioniqp116' => 'a-rival=a-rival bioniq p116',
+            // zyq
+            'qtab tab4' => 'zyq=zyq qtab tab4',
+            // zync
+            'zync dual 7+' => 'zync=zync dual 7+',
+            'z1000 3d' => 'zync=zync z1000 3d',
+            'z99 dual core' => 'zync=zync z99 dual core',
+            'z99' => 'zync=zync z99 2g',
+            'zync z81' => 'zync=zync z81',
+            'z18' => 'zync=zync z18',
+            'zync z7i 3g' => 'zync=zync z7i 3g',
+            'zync dual 7i' => 'zync=zync dual 7i',
+            'zync cloud 605' => 'zync=zync cloud 605',
+            'z930+' => 'zync=zync z930+',
+            'z930' => 'zync=zync z930',
+            'z909' => 'zync=zync z909',
             default => null,
         };
     }

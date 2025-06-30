@@ -139,7 +139,8 @@ final class DeviceTest extends TestCase
             ['ASUS_I003D', 'asus=asus i003d'],
             ['ASUS_I003DD', 'asus=asus i003dd'],
             ['ASUS_I006D', 'asus=asus i006d'],
-            ['ZC554KL', 'asus=asus x00id'],
+            ['ZC554KL', 'asus=asus zc554kl'],
+            ['ASUS_X00ID', 'asus=asus x00id'],
             ['ASUS_Z008D', 'asus=asus z008d'],
             ['ASUS_AI2302', 'asus=asus ai2302'],
             ['ASUS_AI2202', 'asus=asus ai2202'],
@@ -1067,6 +1068,10 @@ final class DeviceTest extends TestCase
             ['BRP-NX1M', 'huawei=huawei brp-nx1m'],
             ['FCP-N49', 'huawei=huawei fcp-n49'],
             ['MED-LX9N', 'huawei=huawei med-lx9n'],
+            ['MRO-W09', 'huawei=huawei mro-w09'],
+            ['MRO-W00', 'huawei=huawei mro-w00'],
+            ['MRO-W10', 'huawei=huawei mro-w10'],
+            ['MRO-AL10', 'huawei=huawei mro-al10'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -1441,6 +1446,7 @@ final class DeviceTest extends TestCase
             ['V2250', 'vivo=vivo v2250'],
             ['V2338A', 'vivo=vivo v2338a'],
             ['vivo 1814', 'vivo=vivo 1814'],
+            ['V2124', 'vivo=vivo v2124'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -1784,7 +1790,18 @@ final class DeviceTest extends TestCase
             // kempler-strauss
             ['ZKEMPLER PLUS', 'kempler-strauss=kempler-strauss zkempler plus'],
             // zuum
+            ['STELLAR M2', 'zuum=zuum stellar m2'],
+            ['STELLAR M1', 'zuum=zuum stellar m1'],
             ['SENS M1', 'zuum=zuum sens m1'],
+            ['ZUUM_ZEN_I', 'zuum=zuum zen i'],
+            ['STEDI', 'zuum=zuum stedi'],
+            ['MAGNO', 'zuum=zuum magno'],
+            ['COVET', 'zuum=zuum covet'],
+            ['ZUUM BLAZE', 'zuum=zuum blaze'],
+            ['ZUUM A918', 'zuum=zuum a918'],
+            ['ZUUM M50', 'zuum=zuum m50'],
+            ['ZUUM_E60', 'zuum=zuum e60'],
+            ['ZUUM_E40', 'zuum=zuum e40'],
             // retroid-pocket
             ['Retroid Pocket 2+', 'retroid-pocket=retroid-pocket 2 plus'],
             // logitech
@@ -1970,6 +1987,21 @@ final class DeviceTest extends TestCase
             ['HiBreak', 'bigme=bigme hibreak'],
             // a-rival
             ['BioniQP116', 'a-rival=a-rival bioniq p116'],
+            // zyq
+            ['QTAB Tab4', 'zyq=zyq qtab tab4'],
+            // zync
+            ['Zync Dual 7+', 'zync=zync dual 7+'],
+            ['Z1000 3D', 'zync=zync z1000 3d'],
+            ['Z99 Dual Core', 'zync=zync z99 dual core'],
+            ['Z99', 'zync=zync z99 2g'],
+            ['ZYNC Z81', 'zync=zync z81'],
+            ['Z18', 'zync=zync z18'],
+            ['Zync Z7i 3G', 'zync=zync z7i 3g'],
+            ['ZYNC Dual 7i', 'zync=zync dual 7i'],
+            ['ZYNC CLOUD 605', 'zync=zync cloud 605'],
+            ['Z930+', 'zync=zync z930+'],
+            ['Z930', 'zync=zync z930'],
+            ['Z909', 'zync=zync z909'],
             // other
             ['Model"', null],
             [': "', null],

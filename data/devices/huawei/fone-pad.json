@@ -1518,5 +1518,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "huawei mro-w10": {
+    "deviceName": "MRO-W10",
+    "marketingName": "MatePad Pro 12.2 (2024)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2800,
+      "height": 1840,
+      "touch": true,
+      "size": 12.2
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei mro-al10": {
+    "deviceName": "MRO-AL10",
+    "marketingName": "MatePad Pro 12.2 (2024)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2800,
+      "height": 1840,
+      "touch": true,
+      "size": 12.2
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }
