@@ -1964,6 +1964,10 @@ final class Device
             'z930+' => 'zync=zync z930+',
             'z930' => 'zync=zync z930',
             'z909' => 'zync=zync z909',
+            // zowee
+            'm1092r-2' => 'zowee=zowee m1092r-2',
+            'm1092r-1' => 'zowee=zowee m1092r-1',
+            'm1092r' => 'zowee=zowee m1092r',
             default => null,
         };
     }

@@ -2002,6 +2002,10 @@ final class DeviceTest extends TestCase
             ['Z930+', 'zync=zync z930+'],
             ['Z930', 'zync=zync z930'],
             ['Z909', 'zync=zync z909'],
+            // zowee
+            ['M1092R-2', 'zowee=zowee m1092r-2'],
+            ['M1092R-1', 'zowee=zowee m1092r-1'],
+            ['M1092R', 'zowee=zowee m1092r'],
             // other
             ['Model"', null],
             [': "', null],
