@@ -1,13 +1,25 @@
 {
   "rules": {
     "/glory[ _]g1s/i": "agm glory g1s",
+    "/glory[ _]g1/i": "agm glory g1",
     "/note[ _]n1/i": "agm note n1",
+    "/pad[ _]t1/i": "agm pad t1",
+    "/pad[ _]p2w/i": "agm pad p2w",
     "/pad[ _]p2/i": "agm pad p2",
     "/pad[ _]p1/i": "agm pad p1",
+    "/h[ _]max/i": "agm h max",
+    "/x6/i": "agm x6",
+    "/x3/i": "agm x3",
     "/x2/i": "agm x2",
     "/x1/i": "agm x1",
     "/h6/i": "agm h6",
-    "/g2/i": "agm g2"
+    "/h5[ _]pro/i": "agm h5 pro",
+    "/h5/i": "agm h5",
+    "/g2/i": "agm g2",
+    "/a10/i": "agm a10",
+    "/a9/i": "agm a9",
+    "/a8[ _]se/i": "agm a8 se",
+    "/a7/i": "agm a7"
   },
   "generic": "general agm device"
 }

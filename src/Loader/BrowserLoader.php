@@ -30,10 +30,14 @@ final class BrowserLoader implements BrowserLoaderInterface
 {
     use VersionFactoryTrait;
 
-    /** @throws void */
+    /**
+     * @phpstan-param Data\DataInterface&Data\Client $initData
+     *
+     * @throws void
+     */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly Data\Client $initData,
+        private readonly Data\DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
         VersionBuilderInterface $versionBuilder,
     ) {

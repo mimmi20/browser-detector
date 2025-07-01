@@ -31,7 +31,7 @@ final class XUcbrowserUaPlatformVersion implements PlatformVersionInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function getPlatformVersion(string $value, string | null $code = null): string | null

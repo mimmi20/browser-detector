@@ -53,6 +53,8 @@ final class AndroidOsTest extends TestCase
      * @return array<int, array<int, string|null>>
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerVersion(): array
     {

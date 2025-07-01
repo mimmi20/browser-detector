@@ -13,12 +13,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Parser\Helper\Device;
 use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
+use function mb_strtolower;
 use function preg_match;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
@@ -32,7 +34,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
     /**
      * @throws void
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function hasDeviceCode(string $value): bool
@@ -56,6 +58,39 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if ($normalizedValue === '' || $normalizedValue === null) {
             return null;
+        }
+
+        $deviceCodeHelper = new Device();
+        $matches          = [];
+
+        if (
+            preg_match(
+                '/^mozilla\/5\.0 \(linux; arm_64; android [\d.]+; (?P<devicecode>[^)]+)\) applewebkit\/[\d.]+ \(khtml, like gecko\) .*/i',
+                $normalizedValue,
+                $matches,
+            )
+        ) {
+            $code = $deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+
+            if ($code !== '' && $code !== null) {
+                return $code;
+            }
+        }
+
+        $matches = [];
+
+        if (
+            preg_match(
+                '/^mozilla\/5\.0 \(linux; (?:android [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);]+)(?:;? +(?:build\/|hmscore)[^)]+)\) applewebkit\/[\d.]+ \(khtml, like gecko\) .*/i',
+                $normalizedValue,
+                $matches,
+            )
+        ) {
+            $code = $deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+
+            if ($code !== '' && $code !== null) {
+                return $code;
+            }
         }
 
         $matches = [];

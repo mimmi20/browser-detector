@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\Data\Engine as EngineData;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\InitData\Engine as DataEngine;
@@ -79,7 +80,7 @@ final class EngineLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -94,7 +95,7 @@ final class EngineLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array
@@ -166,7 +167,7 @@ final class EngineLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -181,7 +182,7 @@ final class EngineLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array
@@ -256,7 +257,7 @@ final class EngineLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -271,7 +272,7 @@ final class EngineLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array
@@ -363,7 +364,7 @@ final class EngineLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -378,7 +379,7 @@ final class EngineLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array
@@ -471,7 +472,7 @@ final class EngineLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -486,7 +487,7 @@ final class EngineLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array
@@ -504,6 +505,91 @@ final class EngineLoaderTest extends TestCase
 
         $prop = new ReflectionProperty($initData, 'items');
         $prop->setValue($initData, ['test-key' => $engineData]);
+
+        $company = new Company(type: 'abc-type', name: null, brandname: null);
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('abc')
+            ->willReturn($company);
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test-ua');
+
+        $expected = new Engine(
+            name: null,
+            manufacturer: $company,
+            version: (new VersionBuilder())->set('1.11.111.1111.11111'),
+        );
+
+        self::assertSame($expected->toArray(), $result->toArray());
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     * @throws NotNumericException
+     * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testInvokeVersion2(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $engineData = new DataEngine(
+            name: null,
+            manufacturer: 'abc',
+            version: (object) ['factory' => TestFactory::class],
+        );
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('init');
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($engineData);
 
         $company = new Company(type: 'abc-type', name: null, brandname: null);
 
@@ -582,7 +668,7 @@ final class EngineLoaderTest extends TestCase
                 /**
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function extract(mixed $value, object | null $object = null): null
@@ -597,7 +683,7 @@ final class EngineLoaderTest extends TestCase
                  *
                  * @throws void
                  *
-                 * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                  */
                 #[Override]
                 public function hydrate(mixed $value, array | null $data): array

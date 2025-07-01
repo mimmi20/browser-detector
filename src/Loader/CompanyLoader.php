@@ -20,8 +20,12 @@ use UaResult\Company\Company;
 
 final readonly class CompanyLoader implements CompanyLoaderInterface
 {
-    /** @throws void */
-    public function __construct(private Data\Company $initData)
+    /**
+     * @phpstan-param Data\DataInterface&Data\Company $initData
+     *
+     * @throws void
+     */
+    public function __construct(private Data\DataInterface $initData)
     {
         // nothing to do
     }

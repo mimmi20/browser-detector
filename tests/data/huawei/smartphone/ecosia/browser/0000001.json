@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; MED-LX9N Build/HUAWEIMED-LX9N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MED-LX9N",
-      "marketingName": "Y6p (2020)",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "69.0.3497.128",
-      "manufacturer": "ecosia",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.128",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HRY-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36 (Ecosia android@78.0.3904.96)"
     },
     "device": {
@@ -51,7 +9,7 @@
       "marketingName": "Honor 10 Lite",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2340,
@@ -93,7 +51,7 @@
       "marketingName": "Ascend P7 Mini",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 960,
@@ -177,7 +135,7 @@
       "marketingName": "Honor 8A Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1560,
@@ -219,7 +177,7 @@
       "marketingName": "Mate 10 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2160,
@@ -261,7 +219,7 @@
       "marketingName": "P30",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2340,
@@ -303,7 +261,7 @@
       "marketingName": "P10 Lite",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -387,7 +345,7 @@
       "marketingName": "Nova Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -555,7 +513,7 @@
       "marketingName": "Honor Play 8A (Global)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1560,
@@ -639,7 +597,7 @@
       "marketingName": "Mate 10",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2560,
@@ -723,8 +681,8 @@
       "marketingName": "P30 Lite",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2312,
         "height": 1080,
@@ -807,7 +765,7 @@
       "marketingName": "P30 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 2340,
@@ -849,7 +807,7 @@
       "marketingName": "Enjoy 6s",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1280,
@@ -933,7 +891,7 @@
       "marketingName": "Honor 6x",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -975,7 +933,7 @@
       "marketingName": "P10 Lite",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1920,
@@ -1017,7 +975,7 @@
       "marketingName": "Y5p",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": null,
       "display": {
         "width": 1440,

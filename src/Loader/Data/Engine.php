@@ -31,7 +31,7 @@ use function is_string;
 use function sprintf;
 use function str_replace;
 
-final class Engine
+final class Engine implements DataInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/engines';
 
@@ -46,6 +46,7 @@ final class Engine
     }
 
     /** @throws RuntimeException */
+    #[Override]
     public function init(): void
     {
         if ($this->initialized) {
@@ -110,6 +111,7 @@ final class Engine
     }
 
     /** @throws void */
+    #[Override]
     public function getItem(string $stringKey): DataEngine | null
     {
         return $this->items[$stringKey] ?? null;

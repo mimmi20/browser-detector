@@ -75,6 +75,8 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
      * @param Constants::HEADER_* $key
      *
      * @throws NotFoundException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[Override]
     public function load(string $key, string $value): HeaderInterface

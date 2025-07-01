@@ -27,10 +27,14 @@ final class EngineLoader implements EngineLoaderInterface
 {
     use VersionFactoryTrait;
 
-    /** @throws void */
+    /**
+     * @phpstan-param Data\DataInterface&Data\Engine $initData
+     *
+     * @throws void
+     */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly Data\Engine $initData,
+        private readonly Data\DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
         VersionBuilderInterface $versionBuilder,
     ) {

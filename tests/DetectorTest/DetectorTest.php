@@ -83,6 +83,8 @@ final class DetectorTest extends TestCase
      * @return array<int, array<int, mixed>>
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa(): array
     {
@@ -119,8 +121,8 @@ final class DetectorTest extends TestCase
                         'marketingName' => 'Honor Note 10',
                         'manufacturer' => 'huawei',
                         'brand' => 'huawei',
-                        'dualOrientation' => null,
-                        'simCount' => null,
+                        'dualOrientation' => true,
+                        'simCount' => 2,
                         'display' => [
                             'width' => 2220,
                             'height' => 1080,
