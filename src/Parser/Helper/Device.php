@@ -1742,6 +1742,10 @@ final class Device
             'itel l6006' => 'itel=itel l6006',
             // vontar
             'hk1rbox-x4' => 'vontar=vontar hk1 rbox x4',
+            'hk1 mini+' => 'vontar=vontar hk1 mini plus',
+            'hk1 mini' => 'vontar=vontar hk1 mini',
+            'hk1 pro' => 'vontar=vontar hk1 pro',
+            'hk1 max' => 'vontar=vontar hk1 max',
             // hisense
             'hlte239e' => 'hisense=hisense hlte239e',
             // insys
@@ -1784,6 +1788,7 @@ final class Device
             'tm-mid1065' => 'touchmate=touchmate tm-mid1065',
             // ila
             'ila x2' => 'ila=ila x2',
+            'ila_silk' => 'ila=ila silk',
             // sharp
             'a302sh' => 'sharp=sharp a302sh',
             'sh-d01' => 'sharp=sharp sh-d01',
@@ -1794,6 +1799,7 @@ final class Device
             'iq&amp;t n8', 'iq&t n8' => 'iq-t=iq-t n8',
             // packard-bell
             'silverstone-t5a' => 'packard-bell=packard-bell silverstone t5a',
+            'silverstone-t10' => 'packard-bell=packard-bell silverstone t10',
             // sgin
             'sgin_e10m' => 'sgin=sgin e10m',
             // maze-speed
@@ -1868,6 +1874,10 @@ final class Device
             'k107' => 'yuntab=yuntab k107',
             // vankyo
             'vankyo_s10_eea' => 'vankyo=vankyo s10_eea',
+            'vankyo_s10' => 'vankyo=vankyo s10',
+            'vankyo_s8' => 'vankyo=vankyo s8',
+            'vankyo_s8_eea' => 'vankyo=vankyo s8_eea',
+            'vankyo_s7' => 'vankyo=vankyo s7',
             // odys
             'space_one10' => 'odys=odys space one 10 lte',
             'maven_t10_pro' => 'odys=odys maven t10 pro',
@@ -1915,6 +1925,18 @@ final class Device
             'm-kopa x2' => 'm-kopa=m-kopa x2',
             // meanit
             'meanit_x20' => 'meanit=meanit x20',
+            'meanit x10' => 'meanit=meanit x10',
+            'meanit_x6' => 'meanit=meanit x6',
+            'meanit_x2' => 'meanit=meanit x2',
+            'meanit_x1' => 'meanit=meanit x1',
+            'meanit_c2' => 'meanit=meanit c2',
+            'meanit_c1' => 'meanit=meanit c1',
+            'meanit mg940a' => 'meanit=meanit mg940a',
+            'meanit mg430' => 'meanit=meanit mg430',
+            'meanit q5' => 'meanit=meanit q5',
+            'meanit q4' => 'meanit=meanit q4',
+            'meanit_c80c81' => 'meanit=meanit c80c81',
+            'meanit_c10c11' => 'meanit=meanit c10c11',
             // unihertz
             'jelly2' => 'unihertz=unihertz jelly2',
             // coolpad
@@ -1968,6 +1990,41 @@ final class Device
             'm1092r-2' => 'zowee=zowee m1092r-2',
             'm1092r-1' => 'zowee=zowee m1092r-1',
             'm1092r' => 'zowee=zowee m1092r',
+            // vsun
+            'vsun illusion' => 'vsun=vsun illusion',
+            'vsun race' => 'vsun=vsun race',
+            // elong-mobile
+            '6cs' => 'elong-mobile=elong-mobile 6cs',
+            // anry
+            'anry-rs10' => 'anry=anry rs10',
+            'anry-1006' => 'anry=anry 1006',
+            'anry-e30' => 'anry=anry e30',
+            'anry-x20' => 'anry=anry x20',
+            'anry-s20' => 'anry=anry s20',
+            // owwo
+            'owwo q8' => 'owwo=owwo q8',
+            'owwo 1s' => 'owwo=owwo 1s',
+            'owwo 5s' => 'owwo=owwo 5s',
+            'owwo 4s' => 'owwo=owwo 4s',
+            'owwoq7' => 'owwo=owwo q7',
+            'owwo 7s' => 'owwo=owwo 7s',
+            // nos
+            'nos five' => 'nos=nos five',
+            'nos novu' => 'nos=nos novu',
+            'nos neva 80' => 'nos=nos neva 80',
+            // 3gnet
+            '3gnet u8' => '3gnet=3gnet u8',
+            // celero
+            'sn339d' => 'celero=celero sn339d',
+            // adreamer
+            'leopad_10' => 'adreamer=adreamer leopad 10',
+            'leopad_10s' => 'adreamer=adreamer leopad 10s',
+            'leopad 10x' => 'adreamer=adreamer leopad 10x',
+            // bifer
+            'bf9200' => 'bifer=bifer bf9200',
+            // goodtel
+            'g10_eea' => 'goodtel=goodtel g10',
+            // other
             default => null,
         };
     }

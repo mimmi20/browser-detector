@@ -1779,6 +1779,10 @@ final class DeviceTest extends TestCase
             ['itel L6006', 'itel=itel l6006'],
             // vontar
             ['HK1RBOX-X4', 'vontar=vontar hk1 rbox x4'],
+            ['HK1 Mini+', 'vontar=vontar hk1 mini plus'],
+            ['HK1 MINI', 'vontar=vontar hk1 mini'],
+            ['HK1 PRO', 'vontar=vontar hk1 pro'],
+            ['HK1 Max', 'vontar=vontar hk1 max'],
             // hisense
             ['HLTE239E', 'hisense=hisense hlte239e'],
             // insys
@@ -1821,6 +1825,7 @@ final class DeviceTest extends TestCase
             ['TM-MID1065', 'touchmate=touchmate tm-mid1065'],
             // ila
             ['ILA X2', 'ila=ila x2'],
+            ['iLA_Silk', 'ila=ila silk'],
             // sharp
             ['A302SH', 'sharp=sharp a302sh'],
             ['SH-D01', 'sharp=sharp sh-d01'],
@@ -1832,6 +1837,7 @@ final class DeviceTest extends TestCase
             ['iQ&T N8', 'iq-t=iq-t n8'],
             // packard-bell
             ['SILVERSTONE-T5A', 'packard-bell=packard-bell silverstone t5a'],
+            ['SILVERSTONE-T10', 'packard-bell=packard-bell silverstone t10'],
             // sgin
             ['SGIN_E10M', 'sgin=sgin e10m'],
             // maze-speed
@@ -1906,6 +1912,10 @@ final class DeviceTest extends TestCase
             ['K107', 'yuntab=yuntab k107'],
             // vankyo
             ['Vankyo_S10_EEA', 'vankyo=vankyo s10_eea'],
+            ['Vankyo_S10', 'vankyo=vankyo s10'],
+            ['VANKYO_S8', 'vankyo=vankyo s8'],
+            ['VANKYO_S8_EEA', 'vankyo=vankyo s8_eea'],
+            ['VANKYO_S7', 'vankyo=vankyo s7'],
             // odys
             ['SPACE_ONE10', 'odys=odys space one 10 lte'],
             ['Maven_T10_pro', 'odys=odys maven t10 pro'],
@@ -1953,6 +1963,18 @@ final class DeviceTest extends TestCase
             ['M-KOPA X2', 'm-kopa=m-kopa x2'],
             // meanit
             ['meanIT_X20', 'meanit=meanit x20'],
+            ['meanIT X10', 'meanit=meanit x10'],
+            ['meanIT_X6', 'meanit=meanit x6'],
+            ['meanIT_X2', 'meanit=meanit x2'],
+            ['meanIT_X1', 'meanit=meanit x1'],
+            ['meanIT_C2', 'meanit=meanit c2'],
+            ['meanIT_C1', 'meanit=meanit c1'],
+            ['MeanIT MG940A', 'meanit=meanit mg940a'],
+            ['meanIT MG430', 'meanit=meanit mg430'],
+            ['meanIT Q5', 'meanit=meanit q5'],
+            ['meanIT Q4', 'meanit=meanit q4'],
+            ['meanIT_C80C81', 'meanit=meanit c80c81'],
+            ['meanIT_C10C11', 'meanit=meanit c10c11'],
             // unihertz
             ['Jelly2', 'unihertz=unihertz jelly2'],
             // coolpad
@@ -2006,6 +2028,40 @@ final class DeviceTest extends TestCase
             ['M1092R-2', 'zowee=zowee m1092r-2'],
             ['M1092R-1', 'zowee=zowee m1092r-1'],
             ['M1092R', 'zowee=zowee m1092r'],
+            // vsun
+            ['VSUN ILLUSION', 'vsun=vsun illusion'],
+            ['VSUN RACE', 'vsun=vsun race'],
+            // elong-mobile
+            ['6CS', 'elong-mobile=elong-mobile 6cs'],
+            // anry
+            ['ANRY-RS10', 'anry=anry rs10'],
+            ['ANRY-1006', 'anry=anry 1006'],
+            ['ANRY-E30', 'anry=anry e30'],
+            ['ANRY-X20', 'anry=anry x20'],
+            ['ANRY-S20', 'anry=anry s20'],
+            // owwo
+            ['OWWO Q8', 'owwo=owwo q8'],
+            ['OWWO 1S', 'owwo=owwo 1s'],
+            ['OWWO 5S', 'owwo=owwo 5s'],
+            ['OWWO 4S', 'owwo=owwo 4s'],
+            ['OWWOQ7', 'owwo=owwo q7'],
+            ['OWWO 7S', 'owwo=owwo 7s'],
+            // nos
+            ['NOS FIVE', 'nos=nos five'],
+            ['NOS NOVU', 'nos=nos novu'],
+            ['NOS NEVA 80', 'nos=nos neva 80'],
+            // 3gnet
+            ['3GNET U8', '3gnet=3gnet u8'],
+            // celero
+            ['SN339D', 'celero=celero sn339d'],
+            // adreamer
+            ['LeoPad_10', 'adreamer=adreamer leopad 10'],
+            ['LeoPad_10S', 'adreamer=adreamer leopad 10s'],
+            ['LeoPad 10X', 'adreamer=adreamer leopad 10x'],
+            // bifer
+            ['BF9200', 'bifer=bifer bf9200'],
+            // goodtel
+            ['G10_EEA', 'goodtel=goodtel g10'],
             // other
             ['Model"', null],
             [': "', null],

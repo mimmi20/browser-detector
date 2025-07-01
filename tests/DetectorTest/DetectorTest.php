@@ -634,6 +634,49 @@ final class DetectorTest extends TestCase
                     ],
                 ],
             ],
+            [
+                ['user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.1.0; iLA_Silk Build/iLA_Silk)'],
+                [
+                    'headers' => ['user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.1.0; iLA_Silk Build/iLA_Silk)'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Macintosh',
+                        'marketingName' => 'Macintosh',
+                        'manufacturer' => 'apple',
+                        'brand' => 'apple',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'desktop',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Mac OS X',
+                        'marketingName' => 'Mac OS X',
+                        'version' => '10.9.3',
+                        'manufacturer' => 'apple',
+                    ],
+                    'client' => [
+                        'name' => 'Safari',
+                        'version' => '7.0.3',
+                        'manufacturer' => 'apple',
+                        'type' => 'browser',
+                        'isbot' => false,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => '537.75.14',
+                        'manufacturer' => 'apple',
+                    ],
+                ],
+            ],
         ];
     }
 }
