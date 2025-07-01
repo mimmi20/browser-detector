@@ -31,7 +31,7 @@ use function is_string;
 use function sprintf;
 use function str_replace;
 
-final class Client
+final class Client implements DataInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/browsers';
 
@@ -46,6 +46,7 @@ final class Client
     }
 
     /** @throws RuntimeException */
+    #[Override]
     public function init(): void
     {
         if ($this->initialized) {
@@ -110,6 +111,7 @@ final class Client
     }
 
     /** @throws void */
+    #[Override]
     public function getItem(string $stringKey): DataClient | null
     {
         return $this->items[$stringKey] ?? null;

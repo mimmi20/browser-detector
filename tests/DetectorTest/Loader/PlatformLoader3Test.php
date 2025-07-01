@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\Data\Os as OsData;
 use BrowserDetector\Loader\InitData\Os as DataOs;
 use BrowserDetector\Loader\PlatformLoader;
@@ -846,6 +847,88 @@ final class PlatformLoader3Test extends TestCase
 
         $prop = new ReflectionProperty($initData, 'items');
         $prop->setValue($initData, ['test-key' => $platformData]);
+
+        $company = new Company(type: 'xyz-type', name: null, brandname: null);
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('xyz')
+            ->willReturn($company);
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test/12.0');
+
+        self::assertNull($result->getName());
+        self::assertNull($result->getMarketingName());
+        self::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(NullVersion::class, $result->getVersion());
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testLoadVersionObject9(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $platformData = new DataOs(
+            name: null,
+            marketingName: null,
+            manufacturer: 'xyz',
+            version: (object) ['factory' => VersionBuilderFactory::class, 'search' => 'abc'],
+        );
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('init');
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($platformData);
 
         $company = new Company(type: 'xyz-type', name: null, brandname: null);
 

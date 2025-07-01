@@ -28,10 +28,14 @@ use UaResult\Device\Display;
 
 final readonly class DeviceLoader implements DeviceLoaderInterface
 {
-    /** @throws void */
+    /**
+     * @phpstan-param Data\DataInterface&Data\Device $initData
+     *
+     * @throws void
+     */
     public function __construct(
         private LoggerInterface $logger,
-        private Data\Device $initData,
+        private Data\DataInterface $initData,
         private CompanyLoaderInterface $companyLoader,
     ) {
         // nothing to do

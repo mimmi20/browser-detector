@@ -65,7 +65,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/^mozilla\/5\.0 \(linux; arm_64; android [\d.]+; (?P<devicecode>[^)]+)\) applewebkit\/[\d.]+ \(khtml, like gecko\) .*$/i',
+                '/^mozilla\/5\.0 \(linux; arm_64; android [\d.]+; (?P<devicecode>[^)]+)\) applewebkit\/[\d.]+ \(khtml, like gecko\) .*/i',
                 $normalizedValue,
                 $matches,
             )
@@ -81,7 +81,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/^mozilla\/5\.0 \(linux; (?:android [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);]+)(?:;? +(?:build\/|hmscore)[^)]+)\) applewebkit\/[\d.]+ \(khtml, like gecko\) .*$/i',
+                '/^mozilla\/5\.0 \(linux; (?:android [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);]+)(?:;? +(?:build\/|hmscore)[^)]+)\) applewebkit\/[\d.]+ \(khtml, like gecko\) .*/i',
                 $normalizedValue,
                 $matches,
             )

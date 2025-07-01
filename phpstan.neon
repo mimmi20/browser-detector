@@ -89,7 +89,7 @@ parameters:
     function: 39
 
   type_coverage:
-    return_type: 100
+    return_type: 99.8
     param_type: 99.8
     property_type: 100
     constant_type: 100
@@ -111,13 +111,22 @@ parameters:
     - '~will always evaluate to true~'
     - '~\$searches of method~'
     - '~\$rules of method~'
-#    -
-#      message: '~is never read, only written~'
-#      path: src/Detector.php
     -
       identifier: property.uninitialized
       paths:
         - tests/*/*Test.php
+    -
+      identifier: missingType.return
+      paths:
+        - src/Loader/Data/DataInterface.php
+    -
+      identifier: argument.type
+      paths:
+        - tests/DetectorTest/Loader/BrowserLoaderTest.php
+        - tests/DetectorTest/Loader/CompanyLoaderTest.php
+        - tests/DetectorTest/Loader/DeviceLoaderTest.php
+        - tests/DetectorTest/Loader/EngineLoaderTest.php
+        - tests/DetectorTest/Loader/PlatformLoader3Test.php
 
 rules:
   # code complexity

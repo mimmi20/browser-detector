@@ -31,10 +31,14 @@ final class PlatformLoader implements PlatformLoaderInterface
 {
     use VersionFactoryTrait;
 
-    /** @throws void */
+    /**
+     * @phpstan-param Data\DataInterface&Data\Os $initData
+     *
+     * @throws void
+     */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly Data\Os $initData,
+        private readonly Data\DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
         VersionBuilderInterface $versionBuilder,
     ) {

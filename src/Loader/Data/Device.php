@@ -31,7 +31,7 @@ use function is_string;
 use function sprintf;
 use function str_replace;
 
-final class Device
+final class Device implements DataInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/devices/';
 
@@ -46,6 +46,7 @@ final class Device
     }
 
     /** @throws RuntimeException */
+    #[Override]
     public function init(): void
     {
         if ($this->initialized) {
@@ -112,6 +113,7 @@ final class Device
     }
 
     /** @throws void */
+    #[Override]
     public function getItem(string $stringKey): DataDevice | null
     {
         return $this->items[$stringKey] ?? null;

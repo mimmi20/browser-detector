@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\Data\Device as DeviceData;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\InitData\Device as DataDevice;
@@ -176,6 +177,62 @@ final class DeviceLoaderTest extends TestCase
             },
             company: 'test-company',
         );
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the device with key "test-key" was not found');
+        $this->expectExceptionCode(0);
+
+        $object->load('test-key');
+    }
+
+    /**
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     * @throws NoPreviousThrowableException
+     * @throws Exception
+     */
+    public function testInvokeNullInCache2(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('init');
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn(null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader

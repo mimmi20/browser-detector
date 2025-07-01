@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Data\Client;
+use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\InitData\Client as DataClient;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
@@ -97,6 +98,78 @@ final class BrowserLoaderTest extends TestCase
                 }
             },
         );
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the browser with key "test-key" was not found');
+        $this->expectExceptionCode(0);
+
+        $object->load('test-key', 'test-ua');
+    }
+
+    /**
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testInvokeNotInCache2(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('init');
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn(null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
