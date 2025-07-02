@@ -1719,6 +1719,8 @@ final class Device
             'q3-eea' => 'facetel=facetel q3-eea',
             // lectrus
             'lect-tab1011h' => 'lectrus=lectrus lect-tab1011h',
+            'lect-tab1011' => 'lectrus=lectrus lect-tab1011',
+            'lect-tab0711' => 'lectrus=lectrus lect-tab0711',
             // sunmax
             'model_6_pro_4g' => 'sunmax=sunmax model 6 pro max 4g',
             'model 6' => 'sunmax=sunmax model 6',
@@ -1822,12 +1824,20 @@ final class Device
             // onn
             '100011886_gtw' => 'onn=onn 100011886_gtw',
             '100011886ca' => 'onn=onn 100011886ca',
+            '100011886bk' => 'onn=onn 100011886bk',
+            '100011886a' => 'onn=onn 100011886a',
+            '100011886' => 'onn=onn 100011886',
             '100044018' => 'onn=onn 100044018',
             '100071485a' => 'onn=onn 100071485a',
             '100071483a' => 'onn=onn 100071483a',
             '100110027' => 'onn=onn 100110027',
             '100135923' => 'onn=onn 100135923',
             '100092980' => 'onn=onn 100092980',
+            '100092980a' => 'onn=onn 100092980a',
+            '100071485' => 'onn=onn 100071485',
+            '100071483' => 'onn=onn 100071483',
+            '100044018p' => 'onn=onn 100044018p',
+            '100044018g' => 'onn=onn 100044018g',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
@@ -2024,6 +2034,31 @@ final class Device
             'bf9200' => 'bifer=bifer bf9200',
             // goodtel
             'g10_eea' => 'goodtel=goodtel g10',
+            // ace
+            'buzz 5 ultra' => 'ace=ace buzz 5 ultra',
+            'buzz 5 prime' => 'ace=ace buzz 5 prime',
+            'buzz 5 note' => 'ace=ace buzz 5 note',
+            'buzz 5 lite' => 'ace=ace buzz 5 lite',
+            'buzz 5 pro' => 'ace=ace buzz 5 pro',
+            'buzz 5' => 'ace=ace buzz 5',
+            'buzz 4 ultra' => 'ace=ace buzz 4 ultra',
+            'buzz 4 prime' => 'ace=ace buzz 4 prime',
+            'buzz 4 note' => 'ace=ace buzz 4 note',
+            'buzz 4lite' => 'ace=ace buzz 4 lite',
+            'buzz 4pro' => 'ace=ace buzz 4 pro',
+            'buzz 4s' => 'ace=ace buzz 4s',
+            'buzz 4' => 'ace=ace buzz 4',
+            'buzz 3' => 'ace=ace buzz 3',
+            'buzz 2 lite' => 'ace=ace buzz 2 lite',
+            'buzz 2' => 'ace=ace buzz 2',
+            'buzz 1 lite' => 'ace=ace buzz 1 lite',
+            'buzz 1' => 'ace=ace buzz 1',
+            // senkatel
+            'senkatel_t9702' => 'senkatel=senkatel t9702',
+            'senkatel_t1009' => 'senkatel=senkatel t1009',
+            'senkatel_t7011' => 'senkatel=senkatel t7011',
+            'senkatel t7012' => 'senkatel=senkatel t7012',
+            'senkatel_t8002' => 'senkatel=senkatel t8002',
             // other
             default => null,
         };
