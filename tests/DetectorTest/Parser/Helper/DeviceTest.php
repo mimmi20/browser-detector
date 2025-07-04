@@ -1757,7 +1757,7 @@ final class DeviceTest extends TestCase
             // lectrus
             ['LECT-TAB1011H', 'lectrus=lectrus lect-tab1011h'],
             ['LECT-TAB1011', 'lectrus=lectrus lect-tab1011'],
-            ['LECT-TAB0711', 'lectrus=lectrus lect-tab1011'],
+            ['LECT-TAB0711', 'lectrus=lectrus lect-tab0711'],
             // sunmax
             ['Model_6_pro_4G', 'sunmax=sunmax model 6 pro max 4g'],
             ['Model 6', 'sunmax=sunmax model 6'],

@@ -55,7 +55,7 @@
     "/ tate/i": "amazon tate",
     "/sd4930ur|fire phone/i": "amazon sd4930ur",
     "/kindle fire/i": "amazon d01400",
-    "/kindle|silk/i": "amazon kindle"
+    "/kindle|(?<!_)silk/i": "amazon kindle"
   },
   "generic": "general amazon device"
 }

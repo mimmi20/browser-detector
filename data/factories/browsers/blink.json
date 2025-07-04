@@ -25,7 +25,7 @@
     "/avirascout/i": "avira scout",
     "/samsungbrowser\\/crossapp/i": "samsung crossapp",
     "/samsungbrowser|samsung.*version\\/[12].*chrome/i": "samsungbrowser",
-    "/silk/i": "silk",
+    "/(?<!_)silk/i": "silk",
     "/coc_coc_browser/i": "coc_coc_browser",
     "/flipboard/i": "flipboard app",
     "/seznam\\.cz|sznprohlizec/i": "seznam browser",
