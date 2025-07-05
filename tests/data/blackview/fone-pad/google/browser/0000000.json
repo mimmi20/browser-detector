@@ -379,16 +379,7 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"Tab 12 Pro\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Tab 12 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -405,7 +396,7 @@
         "size": 10.1
       },
       "type": "fone-pad",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "bits": null
     },
@@ -417,14 +408,14 @@
     },
     "client": {
       "name": "Chrome",
-      "version": "114.0.0",
+      "version": "102.0.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "114.0.0.0",
+      "version": "102.0.0.0",
       "manufacturer": "google"
     }
   },

@@ -69,7 +69,7 @@ final class Useragent2Test extends TestCase
     public function testDataWithVersions(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
-        $deviceKey   = 'test-device-key';
+        $deviceKey   = 'acer=acer b1-7a0';
         $platformKey = 'test-platform-key';
         $clientKey   = 'test-client-key';
         $engineKey   = 'test-engine-key';
@@ -80,10 +80,8 @@ final class Useragent2Test extends TestCase
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(self::once())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn($deviceKey);
+            ->expects(self::never())
+            ->method('parse');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -286,7 +284,7 @@ final class Useragent2Test extends TestCase
     public function testDataWithClientParserException(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
-        $deviceKey   = 'test-device-key';
+        $deviceKey   = 'acer=acer b1-7a0';
         $platformKey = 'test-platform-key';
         $engineKey   = 'test-engine-key';
 
@@ -297,10 +295,8 @@ final class Useragent2Test extends TestCase
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(self::once())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn($deviceKey);
+            ->expects(self::never())
+            ->method('parse');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -489,7 +485,7 @@ final class Useragent2Test extends TestCase
     public function testDataWithClientParserException2(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
-        $deviceKey   = 'test-device-key';
+        $deviceKey   = 'acer=acer b1-7a0';
         $platformKey = 'test-platform-key';
         $engineKey   = 'test-engine-key';
 
@@ -500,10 +496,8 @@ final class Useragent2Test extends TestCase
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(self::once())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn($deviceKey);
+            ->expects(self::never())
+            ->method('parse');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -692,7 +686,7 @@ final class Useragent2Test extends TestCase
     public function testDataWithClientParserException3(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
-        $deviceKey   = 'test-device-key';
+        $deviceKey   = 'acer=acer b1-7a0';
         $platformKey = 'test-platform-key';
         $engineKey   = 'test-engine-key';
 
@@ -703,10 +697,8 @@ final class Useragent2Test extends TestCase
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(self::once())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn($deviceKey);
+            ->expects(self::never())
+            ->method('parse');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
