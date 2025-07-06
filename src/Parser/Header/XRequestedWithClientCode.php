@@ -357,6 +357,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'the.best.gram' => 'bestgram',
             'org.aka.lite' => 'aka-lite',
             'org.aka.messenger' => 'aka',
+            'com.saf.seca' => 'search-craft',
+            'com.fsecure.ms.teliasweden' => 'telia-trygg',
             default => null,
         };
     }

@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-T290 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.87 Safari/537.36 OcIdWebView ({\\"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T290",
-      "marketingName": "Galaxy Tab A 8.0 Wi-Fi (2019, Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "97.0.4692.87",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "97.0.4692.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-T733 Build/RP1A.200720.012)"
     },
     "device": {
@@ -421,21 +379,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-X200 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Safari/537.36 OcIdWebView ({\\"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-T290 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-X200",
-      "marketingName": "Galaxy Tab A8 10.5 Wi-Fi (2021)",
+      "deviceName": "SM-T290",
+      "marketingName": "Galaxy Tab A 8.0 Wi-Fi (2019, Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": 10.5
+        "size": 8
       },
       "type": "tablet",
       "ismobile": true,
@@ -450,14 +408,14 @@
     },
     "client": {
       "name": "Android WebView",
-      "version": "94.0.4606.85",
+      "version": "103.0.5060.129",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "94.0.4606.85",
+      "version": "103.0.5060.129",
       "manufacturer": "google"
     }
   },
@@ -542,6 +500,48 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.5359.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-X200 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-X200",
+      "marketingName": "Galaxy Tab A8 10.5 Wi-Fi (2021)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "107.0.5304.141",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.5304.141",
       "manufacturer": "google"
     }
   },
@@ -1361,6 +1361,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; SM-X200 Build/UP1A.231005.007)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-X200",
+      "marketingName": "Galaxy Tab A8 10.5 Wi-Fi (2021)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-X910 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36"
     },
     "device": {
@@ -1440,48 +1482,6 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.110",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T503 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Safari/537.36 OcIdWebView ({\\"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T503",
-      "marketingName": "Galaxy Tab A7 10.4 (2022) Wi-Fi",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 10.4
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "130.0.6723.107",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "130.0.6723.107",
       "manufacturer": "google"
     }
   },

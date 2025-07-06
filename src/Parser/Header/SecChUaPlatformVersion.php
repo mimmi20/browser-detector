@@ -17,7 +17,7 @@ use Override;
 use UaParser\PlatformVersionInterface;
 
 use function mb_strtolower;
-use function trim;
+use function mb_trim;
 
 final class SecChUaPlatformVersion implements PlatformVersionInterface
 {
@@ -25,7 +25,7 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
     #[Override]
     public function hasPlatformVersion(string $value): bool
     {
-        $value = trim($value, '"\\\'');
+        $value = mb_trim($value, '"\\\'');
 
         return $value !== '';
     }
@@ -38,7 +38,7 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
     #[Override]
     public function getPlatformVersion(string $value, string | null $code = null): string | null
     {
-        $value = trim($value, '"\\\'');
+        $value = mb_trim($value, '"\\\'');
 
         if ($value === '') {
             return null;

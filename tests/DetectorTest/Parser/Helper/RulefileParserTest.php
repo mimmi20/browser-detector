@@ -388,24 +388,8 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::once())
-            ->method('error')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []): void {
-                    assert($message instanceof Throwable);
-
-                    self::assertInstanceOf(Throwable::class, $message);
-                    self::assertSame([], $context);
-
-                    self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
-                        $message->getMessage(),
-                    );
-
-                    self::assertSame(0, $message->getCode());
-                    self::assertNull($message->getPrevious());
-                },
-            );
+            ->expects(self::never())
+            ->method('error');
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -456,24 +440,8 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::once())
-            ->method('error')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []): void {
-                    assert($message instanceof Throwable);
-
-                    self::assertInstanceOf(Throwable::class, $message);
-                    self::assertSame([], $context);
-
-                    self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
-                        $message->getMessage(),
-                    );
-
-                    self::assertSame(0, $message->getCode());
-                    self::assertNull($message->getPrevious());
-                },
-            );
+            ->expects(self::never())
+            ->method('error');
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -524,24 +492,8 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::once())
-            ->method('error')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []): void {
-                    assert($message instanceof Throwable);
-
-                    self::assertInstanceOf(Throwable::class, $message);
-                    self::assertSame([], $context);
-
-                    self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
-                        $message->getMessage(),
-                    );
-
-                    self::assertSame(0, $message->getCode());
-                    self::assertNull($message->getPrevious());
-                },
-            );
+            ->expects(self::never())
+            ->method('error');
         $logger
             ->expects(self::never())
             ->method('critical');

@@ -2020,5 +2020,27 @@
       "search": null
     },
     "engine": null
+  },
+  "search-craft": {
+    "name": "SearchCraft",
+    "manufacturer": "searchcraft",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SearchCraft"
+      ]
+    },
+    "engine": null
+  },
+  "telia-trygg": {
+    "name": "Telia Trygg",
+    "manufacturer": "telia-norge",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }

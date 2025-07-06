@@ -489,6 +489,8 @@ final class XRequestedWithTest extends TestCase
             ['the.best.gram', true, 'bestgram', true, null],
             ['org.aka.lite', true, 'aka-lite', true, null],
             ['org.aka.messenger', true, 'aka', true, null],
+            ['com.saf.seca', true, 'search-craft', true, null],
+            ['com.fsecure.ms.teliasweden', true, 'telia-trygg', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }

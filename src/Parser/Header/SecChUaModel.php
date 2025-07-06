@@ -19,7 +19,7 @@ use UaParser\DeviceCodeInterface;
 
 use function in_array;
 use function mb_strtolower;
-use function trim;
+use function mb_trim;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 final class SecChUaModel implements DeviceCodeInterface
@@ -28,7 +28,7 @@ final class SecChUaModel implements DeviceCodeInterface
     #[Override]
     public function hasDeviceCode(string $value): bool
     {
-        $value = trim($value, '"\\\'');
+        $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
         return !in_array($code, ['', 'model', ': ', 'some unknown model'], true);
@@ -44,7 +44,7 @@ final class SecChUaModel implements DeviceCodeInterface
     #[Override]
     public function getDeviceCode(string $value): string | null
     {
-        $value = trim($value, '"\\\'');
+        $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
         return (new Device())->getDeviceCode($code);
