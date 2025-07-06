@@ -293,7 +293,6 @@ final class Useragent9Test extends TestCase
     public function testDataWithoutVersions25(): void
     {
         $ua          = 'Dalvik/2.1.0 (Linux; Android 8.1.0; iLA_Silk Build/iLA_Silk)';
-        $deviceKey   = 'ila=ila silk';
         $platformKey = 'test-platform-key';
         $clientKey   = 'test-client-key';
         $engineKey   = 'test-engine-key';
@@ -373,7 +372,7 @@ final class Useragent9Test extends TestCase
 
         $normalizer2 = $this->createMock(NormalizerInterface::class);
         $normalizer2
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('normalize')
             ->with($ua)
             ->willReturn('');
@@ -382,7 +381,7 @@ final class Useragent9Test extends TestCase
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizer: $normalizer1,
+                normalizer: $normalizer2,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -444,8 +443,7 @@ final class Useragent9Test extends TestCase
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertSame(
-            $deviceKey,
+        self::assertNull(
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -506,7 +504,6 @@ final class Useragent9Test extends TestCase
     public function testDataWithoutVersions26(): void
     {
         $ua          = 'Dalvik/2.1.0 (Linux; Android 8.1.0; iLA_Silk Build/iLA_Silk)';
-        $deviceKey   = 'ila=ila silk';
         $platformKey = 'test-platform-key';
         $clientKey   = 'test-client-key';
         $engineKey   = 'test-engine-key';
@@ -586,7 +583,7 @@ final class Useragent9Test extends TestCase
 
         $normalizer2 = $this->createMock(NormalizerInterface::class);
         $normalizer2
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('normalize')
             ->with($ua)
             ->willReturn(null);
@@ -595,7 +592,7 @@ final class Useragent9Test extends TestCase
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizer: $normalizer1,
+                normalizer: $normalizer2,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -657,8 +654,7 @@ final class Useragent9Test extends TestCase
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertSame(
-            $deviceKey,
+        self::assertNull(
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -719,7 +715,6 @@ final class Useragent9Test extends TestCase
     public function testDataWithoutVersions27(): void
     {
         $ua          = 'Dalvik/2.1.0 (Linux; Android 8.1.0; iLA_Silk Build/iLA_Silk)';
-        $deviceKey   = 'ila=ila silk';
         $platformKey = 'test-platform-key';
         $clientKey   = 'test-client-key';
         $engineKey   = 'test-engine-key';
@@ -799,7 +794,7 @@ final class Useragent9Test extends TestCase
 
         $normalizer2 = $this->createMock(NormalizerInterface::class);
         $normalizer2
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('normalize')
             ->with($ua)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('failure'));
@@ -808,7 +803,7 @@ final class Useragent9Test extends TestCase
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizer: $normalizer1,
+                normalizer: $normalizer2,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -870,8 +865,7 @@ final class Useragent9Test extends TestCase
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertSame(
-            $deviceKey,
+        self::assertNull(
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
