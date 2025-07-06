@@ -774,8 +774,8 @@ final class Useragent1Test extends TestCase
                 new ClientData(
                     client: new Browser(
                         name: null,
-                        version: new NullVersion(),
                         manufacturer: new Company(type: '', name: null, brandname: null),
+                        version: new NullVersion(),
                         type: Type::Browser,
                     ),
                     engine: null,

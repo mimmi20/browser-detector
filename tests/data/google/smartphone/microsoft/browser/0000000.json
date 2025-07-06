@@ -547,48 +547,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 4a (5G)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/46.04.4.5157"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Pixel 4a 5G",
-      "marketingName": "Pixel 4a 5G",
-      "manufacturer": "google",
-      "brand": "google",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Edge Mobile for Android",
-      "version": "46.04.4.5157",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Mobile Safari/537.36 EdgA/96.0.1054.41"
     },
     "device": {
@@ -635,17 +593,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel 4a 5G",
-      "marketingName": "Pixel 4a 5G",
+      "deviceName": "Pixel",
+      "marketingName": "Pixel",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": true,
-      "simCount": 1,
+      "dualOrientation": null,
+      "simCount": null,
       "display": {
-        "width": 2340,
+        "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 6.2
+        "size": 5
       },
       "type": "smartphone",
       "ismobile": true,

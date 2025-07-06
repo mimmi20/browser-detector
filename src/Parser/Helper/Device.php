@@ -1734,7 +1734,7 @@ final class Device
             'e940-2878-03' => 'gigaset=gigaset e940-2878-03',
             'gs270' => 'gigaset=gigaset gs270',
             'gs180' => 'gigaset=gigaset gs180',
-            'gs370' => 'gigaset=gigaset gs370',
+            'gs370', 'gigaset gs370' => 'gigaset=gigaset gs370',
             'gs280' => 'gigaset=gigaset gs280',
             'e940-2797-00' => 'gigaset=gigaset e940-2797-00',
             'gigaset gs160' => 'gigaset=gigaset gs160',
@@ -1744,7 +1744,7 @@ final class Device
             'gs57-6' => 'gigaset=gigaset gs57-6',
             'gs55-6' => 'gigaset=gigaset gs55-6',
             'gs53-6' => 'gigaset=gigaset gs53-6',
-            'gigaset qv1030' => 'gigaset=gigaset qv1030',
+            'qv1030', 'gigaset qv1030' => 'gigaset=gigaset qv1030',
             'gigaset qv830' => 'gigaset=gigaset qv830',
             'maxwell-10' => 'gigaset=gigaset maxwell 10',
             // wiko
@@ -1838,7 +1838,7 @@ final class Device
             'iplay50_mini_pro', 'alldocube iplay50_mini_pro' => 'alldocube=alldocube iplay 50 mini pro',
             'iplay50 mini' => 'alldocube=alldocube iplay 50 mini',
             'iplay50_lite' => 'alldocube=alldocube iplay 50 lite',
-            'iplay 50 pro', 'iplay50pro' => 'alldocube=alldocube iplay 50 pro',
+            'iplay 50 pro', 'iplay50pro', 'iplay50 pro' => 'alldocube=alldocube iplay 50 pro',
             'iplay_50s' => 'alldocube=alldocube iplay 50s',
             'iplay_50' => 'alldocube=alldocube iplay 50',
             'iplay_30' => 'alldocube=alldocube iplay 30',
@@ -2008,6 +2008,7 @@ final class Device
             // retroid-pocket
             'retroid pocket 2+' => 'retroid-pocket=retroid-pocket 2 plus',
             'retroid pocket 4 pro' => 'retroid-pocket=retroid-pocket 4 pro',
+            'retroid pocket 5' => 'retroid-pocket=retroid-pocket 5',
             // logitech
             'gr0006' => 'logitech=logitech gr0006',
             // x-mobile

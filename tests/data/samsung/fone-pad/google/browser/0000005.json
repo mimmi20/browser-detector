@@ -1,21 +1,21 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 14; SM-X516B Build/UP1A.231005.007)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-X626B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-X516B",
-      "marketingName": "Galaxy Tab S9 FE 5G (International)",
+      "deviceName": "SM-X626B",
+      "marketingName": "Galaxy Tab S10 FE+ 5G",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
-        "width": 2304,
-        "height": 1440,
+        "width": 2880,
+        "height": 1800,
         "touch": true,
-        "size": 10.9
+        "size": 13.1
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -25,61 +25,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "14.0.0",
+      "version": "15.0.0",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Dalvik",
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-T867U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T867U",
-      "marketingName": "Galaxy Tab S6 10.5 LTE (T-Mobile)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "81.0.4044.117",
+      "name": "Android WebView",
+      "version": "127.0.6533.103",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "81.0.4044.117",
+      "version": "127.0.6533.103",
       "manufacturer": "google"
     }
   }

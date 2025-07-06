@@ -9,8 +9,8 @@
       "marketingName": "Grace S5 LTE",
       "manufacturer": "prestigio",
       "brand": "prestigio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -51,8 +51,8 @@
       "marketingName": "Grace Z5",
       "manufacturer": "prestigio",
       "brand": "prestigio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -93,8 +93,8 @@
       "marketingName": "Wize NK3",
       "manufacturer": "prestigio",
       "brand": "prestigio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -135,8 +135,8 @@
       "marketingName": "Grace Z3",
       "manufacturer": "prestigio",
       "brand": "prestigio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -177,8 +177,8 @@
       "marketingName": "Muze E3",
       "manufacturer": "prestigio",
       "brand": "prestigio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -219,8 +219,8 @@
       "marketingName": "MultiPhone 5505 Duo",
       "manufacturer": "prestigio",
       "brand": "prestigio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -261,8 +261,8 @@
       "marketingName": "PAP7500",
       "manufacturer": "prestigio",
       "brand": "prestigio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -290,6 +290,48 @@
     "engine": {
       "name": "Blink",
       "version": "71.0.3578.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; PSP3509DUO Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PSP3509DUO",
+      "marketingName": "Wize E3",
+      "manufacturer": "prestigio",
+      "brand": "prestigio",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "60.0.3112.116",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
       "manufacturer": "google"
     }
   }

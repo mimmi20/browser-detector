@@ -9,8 +9,8 @@
       "marketingName": "Galaxy Tab 2 10.1 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -177,8 +177,8 @@
       "marketingName": "Galaxy Tab 4 7.0 Wi-Fi 8GB",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -219,8 +219,8 @@
       "marketingName": "Galaxy Tab 4 7.0 3G",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -261,8 +261,8 @@
       "marketingName": "Galaxy Tab A 9.7 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 768,
@@ -303,8 +303,8 @@
       "marketingName": "Galaxy Note Pro 12.2 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -345,8 +345,8 @@
       "marketingName": "Galaxy Tab 3 7.0",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -471,8 +471,8 @@
       "marketingName": "Galaxy Note 10.1 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -555,8 +555,8 @@
       "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2019)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -765,8 +765,8 @@
       "marketingName": "Galaxy Tab Active 8.0 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -1172,6 +1172,48 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.657",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-X620) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.895 YaApp_Android/25.43/apad YaSearchBrowser/25.43/apad BroPP/1.0 SA/3 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-X620",
+      "marketingName": "Galaxy Tab S10 FE+ Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2880,
+        "height": 1800,
+        "touch": true,
+        "size": 13.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "25.43.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.895",
       "manufacturer": "google"
     }
   }

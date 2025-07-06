@@ -113,8 +113,8 @@ final class Useragent2Test extends TestCase
                 new ClientData(
                     client: new Browser(
                         name: null,
-                        version: (new VersionBuilder())->set($browserVersion),
                         manufacturer: new Company(type: '', name: null, brandname: null),
+                        version: (new VersionBuilder())->set($browserVersion),
                         type: Type::Browser,
                     ),
                     engine: null,

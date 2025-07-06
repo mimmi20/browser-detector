@@ -1,6 +1,132 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; NAM-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NAM-AL00",
+      "marketingName": "nova 9",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.57
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "79.0.3945.116",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; NTN-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NTN-LX3",
+      "marketingName": "Honor 50 Lite",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2376,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "96.0.4664.104",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; JAD-AL50 Build/HUAWEIJAD-AL50; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "JAD-AL50",
+      "marketingName": "P50 Pro 4G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2700,
+        "height": 1228,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "88.0.4324.93",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; NEN-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.134 Mobile Safari/537.36"
     },
     "device": {
@@ -94,7 +220,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1440,
         "height": 720,
@@ -136,7 +262,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -262,7 +388,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -430,7 +556,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1440,
         "height": 720,
@@ -514,7 +640,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -640,7 +766,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -727,7 +853,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1440,
         "height": 720,
@@ -979,7 +1105,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1440,
         "height": 720,
@@ -1021,7 +1147,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -1323,7 +1449,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1365,7 +1491,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2310,
         "height": 1080,
@@ -1659,7 +1785,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1701,7 +1827,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1834,7 +1960,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1876,7 +2002,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -2380,7 +2506,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1560,
         "height": 720,
@@ -3052,7 +3178,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -3388,7 +3514,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -3682,7 +3808,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2310,
         "height": 1080,
@@ -3766,7 +3892,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2560,
         "height": 1440,
@@ -3892,7 +4018,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4088,132 +4214,6 @@
     "engine": {
       "name": "Blink",
       "version": "105.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; RKY-LX1 Build/HONORRKY-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "RKY-LX1",
-      "marketingName": "Honor X7a",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.75
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "114.0.5735.131",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.5735.131",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; JAD-LX9 Build/HUAWEIJAD-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "JAD-LX9",
-      "marketingName": "P50 Pro 4G",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2700,
-        "height": 1228,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "88.0.4324.93",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; RMO-NX1 Build/HONORRMO-N21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "RMO-NX1",
-      "marketingName": "Honor X9a",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "105.0.5195.136",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "105.0.5195.136",
       "manufacturer": "google"
     }
   }

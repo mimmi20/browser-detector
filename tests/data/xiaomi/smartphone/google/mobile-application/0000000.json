@@ -9,8 +9,8 @@
       "marketingName": "Pocophone F1",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2246,
         "height": 1080,
@@ -51,8 +51,8 @@
       "marketingName": "Redmi 4",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -93,8 +93,8 @@
       "marketingName": "Redmi 4X",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -135,8 +135,8 @@
       "marketingName": "MI 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2248,
         "height": 1080,
@@ -177,8 +177,8 @@
       "marketingName": "Mi 9 SE",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2280,
         "height": 1080,
@@ -219,8 +219,8 @@
       "marketingName": "Mi 9T",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2280,
         "height": 1080,
@@ -261,8 +261,8 @@
       "marketingName": "Redmi 7A",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1440,
         "height": 720,
@@ -303,8 +303,8 @@
       "marketingName": "Mi A3",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1560,
         "height": 720,
@@ -345,8 +345,8 @@
       "marketingName": "Redmi 6A",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1440,
         "height": 720,
@@ -429,8 +429,8 @@
       "marketingName": "MI A2 Lite",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2280,
         "height": 1080,
@@ -597,8 +597,8 @@
       "marketingName": "Mi 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2280,
         "height": 1080,
@@ -723,8 +723,8 @@
       "marketingName": "Pocophone F1",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2246,
         "height": 1080,
@@ -879,48 +879,6 @@
       "name": "Blink",
       "version": "87.0.4280.101",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "com.google.android.googlequicksearchbox/301201217 (Linux; U; Android 11; de_DE; M2007J20CG; Build/RKQ1.200826.002; Cronet/104.0.5108.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2007J20CG",
-      "marketingName": "X3 NFC",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Google Quicksearch Box",
-      "version": null,
-      "manufacturer": "google",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -1185,8 +1143,8 @@
       "marketingName": "Mi 9T Pro",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2768,6 +2726,48 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.163",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; 25010PN30G Build/AQ3A.240912.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.115 Mobile Safari/537.36 GoogleApp/16.23.71.ve.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "25010PN30G",
+      "marketingName": "15 Ultra",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.73
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google App",
+      "version": "16.23.71",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "137.0.7151.115",
       "manufacturer": "google"
     }
   },

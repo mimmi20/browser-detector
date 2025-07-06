@@ -1777,6 +1777,7 @@ final class DeviceTest extends TestCase
             ['GS270', 'gigaset=gigaset gs270'],
             ['GS180', 'gigaset=gigaset gs180'],
             ['GS370', 'gigaset=gigaset gs370'],
+            ['GIGASET GS370', 'gigaset=gigaset gs370'],
             ['GS280', 'gigaset=gigaset gs280'],
             ['E940-2797-00', 'gigaset=gigaset e940-2797-00'],
             ['Gigaset GS160', 'gigaset=gigaset gs160'],
@@ -1787,6 +1788,7 @@ final class DeviceTest extends TestCase
             ['GS55-6', 'gigaset=gigaset gs55-6'],
             ['GS53-6', 'gigaset=gigaset gs53-6'],
             ['Gigaset QV1030', 'gigaset=gigaset qv1030'],
+            ['QV1030', 'gigaset=gigaset qv1030'],
             ['Gigaset QV830', 'gigaset=gigaset qv830'],
             ['Maxwell-10', 'gigaset=gigaset maxwell 10'],
             // wiko
@@ -1883,6 +1885,7 @@ final class DeviceTest extends TestCase
             ['iPlay50_Lite', 'alldocube=alldocube iplay 50 lite'],
             ['iPlay 50 Pro', 'alldocube=alldocube iplay 50 pro'],
             ['iPlay50Pro', 'alldocube=alldocube iplay 50 pro'],
+            ['iPlay50 Pro', 'alldocube=alldocube iplay 50 pro'],
             ['iPlay_50S', 'alldocube=alldocube iplay 50s'],
             ['iPlay_50', 'alldocube=alldocube iplay 50'],
             ['iPlay_30', 'alldocube=alldocube iplay 30'],
@@ -2052,6 +2055,7 @@ final class DeviceTest extends TestCase
             // retroid-pocket
             ['Retroid Pocket 2+', 'retroid-pocket=retroid-pocket 2 plus'],
             ['Retroid Pocket 4 Pro', 'retroid-pocket=retroid-pocket 4 pro'],
+            ['Retroid Pocket 5', 'retroid-pocket=retroid-pocket 5'],
             // logitech
             ['GR0006', 'logitech=logitech gr0006'],
             // x-mobile
