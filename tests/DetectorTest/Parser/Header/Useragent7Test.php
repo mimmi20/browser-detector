@@ -22,7 +22,6 @@ use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -44,8 +43,8 @@ use UaResult\Browser\Browser;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UaResult\Os\Os;
-
 use UnexpectedValueException;
+
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */

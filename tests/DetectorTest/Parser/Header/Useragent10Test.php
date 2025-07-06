@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace Parser\Header;
 
-use BrowserDetector\Loader\Data\ClientData;
 use BrowserDetector\Parser\Header\UseragentClientCode;
 use BrowserDetector\Parser\Header\UseragentClientVersion;
 use BrowserDetector\Parser\Header\UseragentDeviceCode;
@@ -22,14 +21,11 @@ use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use UaBrowserType\Type;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\PlatformLoaderInterface;
@@ -40,12 +36,10 @@ use UaParser\DeviceParserInterface;
 use UaParser\EngineParserInterface;
 use UaParser\PlatformParserInterface;
 use UaRequest\Header\FullHeader;
-use UaResult\Browser\Browser;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UaResult\Os\Os;
 
-use UnexpectedValueException;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
