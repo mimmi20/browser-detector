@@ -925,48 +925,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)' AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND 'tiKn'='tiKn"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; 1; 1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET4.0C; AskTbAVR-4/5.15.24.42066)"
     },
     "device": {
@@ -1039,132 +997,6 @@
     "client": {
       "name": "Internet Explorer",
       "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)) AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND (5220=5220"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)') AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND ('EoEF' LIKE 'EoEF"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)')) AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND (('uTzI' LIKE 'uTzI"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false
@@ -1551,300 +1383,6 @@
       "name": "Blink",
       "version": null,
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%' AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND '%'='"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)))) AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND (((4743=4743"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727))) AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND ((8131=8131"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727) AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)'))) AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND ((('cEcF'='cEcF"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%') AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND ('%'='"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)%')) AND ROW(5716,8981)>(SELECT COUNT(*),CONCAT(0x3a7774733a,(SELECT (CASE WHEN (5716=5716) THEN 1 ELSE 0 END)),0x3a786b673a,FLOOR(RAND(0)*2))x FROM (SELECT 3684 UNION SELECT 7604 UNION SELECT 7994 UNION SELECT 5116)a GROUP BY x) AND (('%'='"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
     }
   },
   {
@@ -4185,6 +3723,468 @@
       "marketingName": "Windows XP",
       "version": "5.1.0",
       "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; mobile version65; .NET CLR 1.1.4322; .NET CLR 2.0.50727; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; MS Web Services Client Protocol 2.0.50727.4961)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; ; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; OfficeLiveConnector.1.4; OfficeLivePatch.1.3; (1und1/1.0.0.8))"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; @V8|DU<P}h8*E{zJH&QhwZ<-^m@NN{.yc}br[)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windos 7; Trident/5.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; mobile version65; GTB7.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; mobile version65; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/4.0 msie"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; ; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.3; InfoPath.2; AskTbANT/5.9.1.14019)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "tailot.altervista.org/109.87.178.122 (compatible; MSIE 7.0;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "( ;  ; ; Trident/4.0; InfoPath.3; AskTbSTC-SRS/5.12.2.16752; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; ; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Internet Explorer",

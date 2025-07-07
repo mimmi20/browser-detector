@@ -1807,48 +1807,6 @@
   },
   {
     "headers": {
-      "user-agent": "BlackBerry (4.3)\"  User-Agent: BlackBerry8330/4.3.0 Profile/MIDP-2.0Configuration/CLDC-1.1 VendorID/105 protocol: HTTP/1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "BlackBerry 8330",
-      "marketingName": "BlackBerry Curve 8330",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "4.3.0",
-      "manufacturer": "rim"
-    },
-    "client": {
-      "name": "black-berry",
-      "version": "4.3.0",
-      "manufacturer": "rim",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "BlackBerry8530/5.0.0.1000 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/109"
     },
     "device": {
@@ -3181,6 +3139,48 @@
     "client": {
       "name": "black-berry",
       "version": "4.2.2",
+      "manufacturer": "rim",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BlackBerry 8330",
+      "marketingName": "BlackBerry Curve 8330",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.3.0",
+      "manufacturer": "rim"
+    },
+    "client": {
+      "name": "black-berry",
+      "version": "4.3.0",
       "manufacturer": "rim",
       "type": "browser",
       "isbot": false
