@@ -24,7 +24,7 @@
     "/fban\\/ema.+fbav/i": "facebook lite",
     "/fban|fbav|fb_iab|facebook/i": "facebook app",
     "/playstation|psp /i": "playstation browser",
-    "/silk/i": "silk",
+    "/(?<!_)silk/i": "silk",
     "/flipboard/i": "flipboard app",
     "/liebaofast/i": "liebao fast",
     "/navermatome/i": "matome",

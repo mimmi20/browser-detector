@@ -36,6 +36,7 @@ $rules = require 'vendor/mimmi20/coding-standard/src/php-cs-fixer.config.php';
 $config = new PhpCsFixer\Config();
 
 return $config
+    ->setUnsupportedPhpVersionAllowed(true)
     ->setRiskyAllowed(true)
     ->setRules(
         array_merge(

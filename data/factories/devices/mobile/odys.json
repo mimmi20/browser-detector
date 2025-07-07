@@ -1,9 +1,7 @@
 {
   "rules": {
     "/space[ _]one[ _]?10[ _]?se/i": "odys space one 10 se",
-    "/space[ _]one[ _]?10/i": "odys space one 10 lte",
     "/slade[ _]x55/i": "odys slade x55",
-    "/titan[ _]10[ _]lte/i": "odys titan 10 lte",
     "/thanos[ _]10/i": "odys thanos 10",
     "/goal[ _]10[ _]plus[ _]3g/i": "odys goal 10 plus 3g",
     "/falcon[ _]10[ _]plus[ _]3g/i": "odys falcon 10 plus 3g",
@@ -38,7 +36,6 @@
     "/evolution12/i": "odys evolution 12",
     "/maven[ _]x10[ _]hd[ _]lte/i": "odys maven x10 hd lte",
     "/maven[ _]x10[ _]hd/i": "odys maven x10 hd",
-    "/maven[ _]t10[ _]pro/i": "odys maven t10 pro",
     "/maven[ _]g10/i": "odys maven g10",
     "/maven[ _]?10[ _]?hd[ _]?plus[ _]?3g/i": "odys maven 10 hd plus 3g",
     "/maven[ _]?10[ _]?pro[ _]?plus[ _]?3g/i": "odys maven 10 pro plus 3g",

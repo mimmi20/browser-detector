@@ -206,7 +206,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -290,7 +290,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1520,
         "height": 720,
@@ -332,7 +332,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -515,7 +515,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2310,
         "height": 1080,
@@ -699,7 +699,7 @@
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -777,6 +777,48 @@
     "engine": {
       "name": "Blink",
       "version": "133.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; VOG-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.03.4.4955"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VOG-L09",
+      "marketingName": "P30 Pro",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.47
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "version": "45.03.4.4955",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.116",
       "manufacturer": "google"
     }
   }

@@ -18,7 +18,7 @@ use UaParser\PlatformCodeInterface;
 
 use function in_array;
 use function mb_strtolower;
-use function trim;
+use function mb_trim;
 
 final class SecChUaPlatform implements PlatformCodeInterface
 {
@@ -26,7 +26,7 @@ final class SecChUaPlatform implements PlatformCodeInterface
     #[Override]
     public function hasPlatformCode(string $value): bool
     {
-        $value = trim($value, '"\\\'');
+        $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
         return !in_array($code, ['', 'unknown'], true);
@@ -40,7 +40,7 @@ final class SecChUaPlatform implements PlatformCodeInterface
     #[Override]
     public function getPlatformCode(string $value, string | null $derivate = null): string | null
     {
-        $value = trim($value, '"\\\'');
+        $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
         if ($derivate !== null) {

@@ -289,11 +289,11 @@ final class Useragent1Test extends TestCase
     {
         return [
             [
-                'ua' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
-                'normalizedUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
+                'ua' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
+                'normalizedUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
-                'deviceCode' => 'B1-7A0',
+                'deviceUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
+                'deviceCode' => 'B1-7A0x',
                 'hasClientInfo' => true,
                 'clientCode' => null,
                 'hasClientVersion' => true,
@@ -303,7 +303,7 @@ final class Useragent1Test extends TestCase
                 'hasPlatformVersion' => true,
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
-                'engineUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
+                'engineUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.20.0',
@@ -561,14 +561,13 @@ final class Useragent1Test extends TestCase
      */
     public function testData7(): void
     {
-        $ua = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
+        $ua        = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
+        $deviceKey = 'acer=acer b1-7a0';
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(self::once())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn('');
+            ->expects(self::never())
+            ->method('parse');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -675,7 +674,8 @@ final class Useragent1Test extends TestCase
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
+        self::assertSame(
+            $deviceKey,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -734,17 +734,15 @@ final class Useragent1Test extends TestCase
     public function testDataWithoutVersions(): void
     {
         $ua          = 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36';
-        $deviceKey   = 'test-device-key';
+        $deviceKey   = 'acer=acer b1-7a0';
         $platformKey = 'test-platform-key';
         $clientKey   = 'test-client-key';
         $engineKey   = 'test-engine-key';
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(self::once())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn($deviceKey);
+            ->expects(self::never())
+            ->method('parse');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -776,8 +774,8 @@ final class Useragent1Test extends TestCase
                 new ClientData(
                     client: new Browser(
                         name: null,
-                        version: new NullVersion(),
                         manufacturer: new Company(type: '', name: null, brandname: null),
+                        version: new NullVersion(),
                         type: Type::Browser,
                     ),
                     engine: null,

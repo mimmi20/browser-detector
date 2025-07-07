@@ -9,8 +9,8 @@
       "marketingName": "Xperia Z2 LTE",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -51,8 +51,8 @@
       "marketingName": "Xperia L1",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -93,8 +93,8 @@
       "marketingName": "Xperia Z3 Compact",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -135,8 +135,8 @@
       "marketingName": "Xperia XA",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -177,8 +177,8 @@
       "marketingName": "Xperia XA1",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -219,8 +219,8 @@
       "marketingName": "Xperia Z3",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -261,8 +261,8 @@
       "marketingName": "Xperia XZ1 Compact",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -303,8 +303,8 @@
       "marketingName": "Xperia X Compact",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -345,8 +345,8 @@
       "marketingName": "Xperia Z5 Compact LTE",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -387,8 +387,8 @@
       "marketingName": "Xperia Z1",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -429,8 +429,8 @@
       "marketingName": "Xperia XZ2 Compact",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2160,
         "height": 1080,
@@ -471,8 +471,8 @@
       "marketingName": "Xperia XA2",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -513,8 +513,8 @@
       "marketingName": "Xperia Z5",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -597,8 +597,8 @@
       "marketingName": "Xperia XZ",
       "manufacturer": "sony",
       "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -626,6 +626,48 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; H4113 Build/50.2.A.3.55; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.117 Mobile Safari/537.36 [Pinterest/Android]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "H4113",
+      "marketingName": "Xperia XA2 Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Pinterest App",
+      "version": null,
+      "manufacturer": "pinterest",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.117",
       "manufacturer": "google"
     }
   }

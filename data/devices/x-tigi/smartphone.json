@@ -4,8 +4,8 @@
     "marketingName": "G530",
     "manufacturer": "x-tigi",
     "brand": "x-tigi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -20,8 +20,8 @@
     "marketingName": "J110",
     "manufacturer": "x-tigi",
     "brand": "x-tigi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -36,8 +36,8 @@
     "marketingName": "Photo P11",
     "manufacturer": "x-tigi",
     "brand": "x-tigi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -52,8 +52,8 @@
     "marketingName": "V19",
     "manufacturer": "x-tigi",
     "brand": "x-tigi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -68,10 +68,26 @@
     "marketingName": "V28 LTE",
     "manufacturer": "x-tigi",
     "brand": "x-tigi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
-      "width": 860,
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "x-tigi v28": {
+    "deviceName": "V28",
+    "marketingName": "V28",
+    "manufacturer": "x-tigi",
+    "brand": "x-tigi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 854,
       "height": 480,
       "touch": true,
       "size": 5.7

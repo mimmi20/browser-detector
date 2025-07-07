@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Wink Client v1.1.2"
+      "user-agent": ") UNION ALL SELECT NULL#"
     },
     "device": {
       "architecture": null,
@@ -43,7 +43,7 @@
   },
   {
     "headers": {
-      "user-agent": "WebCopier v5.4"
+      "user-agent": "ORDER BY 1#"
     },
     "device": {
       "architecture": null,
@@ -85,7 +85,7 @@
   },
   {
     "headers": {
-      "user-agent": "DoD"
+      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -127,7 +127,7 @@
   },
   {
     "headers": {
-      "user-agent": "FlightDeckReportsBot/2.0 (http://www.flightdeckreports.com/pages/bot)"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -169,7 +169,7 @@
   },
   {
     "headers": {
-      "user-agent": "PHX HTTP Client"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -211,7 +211,7 @@
   },
   {
     "headers": {
-      "user-agent": "WinPodder (http://winpodder.com)"
+      "user-agent": "); IF(8065=8065) SELECT 8065 ELSE DROP FUNCTION lbXn--"
     },
     "device": {
       "architecture": null,
@@ -253,7 +253,7 @@
   },
   {
     "headers": {
-      "user-agent": "Verzamelgids/2.2 (http://www.verzamelgids.nl)"
+      "user-agent": "57"
     },
     "device": {
       "architecture": null,
@@ -295,7 +295,7 @@
   },
   {
     "headers": {
-      "user-agent": "SSL Labs (https://www.ssllabs.com/)"
+      "user-agent": "56"
     },
     "device": {
       "architecture": null,
@@ -337,7 +337,7 @@
   },
   {
     "headers": {
-      "user-agent": "Internet Explorer 6.0"
+      "user-agent": "55"
     },
     "device": {
       "architecture": null,
@@ -379,7 +379,7 @@
   },
   {
     "headers": {
-      "user-agent": "Fastream NETFile Server"
+      "user-agent": "54"
     },
     "device": {
       "architecture": null,
@@ -421,7 +421,7 @@
   },
   {
     "headers": {
-      "user-agent": "SafeEyes"
+      "user-agent": "53"
     },
     "device": {
       "architecture": null,
@@ -463,7 +463,7 @@
   },
   {
     "headers": {
-      "user-agent": "<a href=http://www.windowsfaq.ru/>WindowsFAQ.ru</a>"
+      "user-agent": "52"
     },
     "device": {
       "architecture": null,
@@ -485,10 +485,10 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": null,
@@ -505,7 +505,7 @@
   },
   {
     "headers": {
-      "user-agent": "MS Internet Explorer"
+      "user-agent": "51"
     },
     "device": {
       "architecture": null,
@@ -547,7 +547,7 @@
   },
   {
     "headers": {
-      "user-agent": "PulsePoint"
+      "user-agent": "50"
     },
     "device": {
       "architecture": null,
@@ -589,7 +589,7 @@
   },
   {
     "headers": {
-      "user-agent": "45"
+      "user-agent": "49"
     },
     "device": {
       "architecture": null,
@@ -631,7 +631,7 @@
   },
   {
     "headers": {
-      "user-agent": "44"
+      "user-agent": "48"
     },
     "device": {
       "architecture": null,
@@ -673,7 +673,7 @@
   },
   {
     "headers": {
-      "user-agent": "43"
+      "user-agent": "46"
     },
     "device": {
       "architecture": null,
@@ -715,7 +715,7 @@
   },
   {
     "headers": {
-      "user-agent": "42"
+      "user-agent": "); SELECT SLEEP(10)--"
     },
     "device": {
       "architecture": null,
@@ -757,7 +757,7 @@
   },
   {
     "headers": {
-      "user-agent": "41"
+      "user-agent": "); SELECT BENCHMARK(10000000,MD5(0x5042476f))--"
     },
     "device": {
       "architecture": null,
@@ -799,7 +799,7 @@
   },
   {
     "headers": {
-      "user-agent": "40"
+      "user-agent": "); SELECT COUNT(*) FROM GENERATE_SERIES(1,10000000)--"
     },
     "device": {
       "architecture": null,
@@ -841,7 +841,7 @@
   },
   {
     "headers": {
-      "user-agent": "38"
+      "user-agent": "); SELECT LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))--"
     },
     "device": {
       "architecture": null,
@@ -883,7 +883,7 @@
   },
   {
     "headers": {
-      "user-agent": "37"
+      "user-agent": "; SELECT COUNT(*) FROM RDB$FIELDS AS T1,RDB$TYPES AS T2,RDB$COLLATIONS AS T3,RDB$FUNCTIONS AS T4--"
     },
     "device": {
       "architecture": null,
@@ -925,7 +925,7 @@
   },
   {
     "headers": {
-      "user-agent": "36"
+      "user-agent": ") UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -967,7 +967,7 @@
   },
   {
     "headers": {
-      "user-agent": "35"
+      "user-agent": ") UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1009,7 +1009,7 @@
   },
   {
     "headers": {
-      "user-agent": "34"
+      "user-agent": ") UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1051,7 +1051,7 @@
   },
   {
     "headers": {
-      "user-agent": "33"
+      "user-agent": ") UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1093,7 +1093,7 @@
   },
   {
     "headers": {
-      "user-agent": "32"
+      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1135,7 +1135,7 @@
   },
   {
     "headers": {
-      "user-agent": "31"
+      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1177,7 +1177,7 @@
   },
   {
     "headers": {
-      "user-agent": "30"
+      "user-agent": ") ORDER BY 1#"
     },
     "device": {
       "architecture": null,
@@ -1219,7 +1219,7 @@
   },
   {
     "headers": {
-      "user-agent": "29"
+      "user-agent": ") UNION ALL SELECT NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1261,7 +1261,7 @@
   },
   {
     "headers": {
-      "user-agent": "28"
+      "user-agent": ") UNION ALL SELECT NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1303,7 +1303,7 @@
   },
   {
     "headers": {
-      "user-agent": "27"
+      "user-agent": "UNION ALL SELECT NULL#"
     },
     "device": {
       "architecture": null,
@@ -1345,7 +1345,7 @@
   },
   {
     "headers": {
-      "user-agent": "26"
+      "user-agent": "UNION ALL SELECT NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1387,7 +1387,7 @@
   },
   {
     "headers": {
-      "user-agent": "25"
+      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1429,7 +1429,7 @@
   },
   {
     "headers": {
-      "user-agent": "24"
+      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -1471,7 +1471,7 @@
   },
   {
     "headers": {
-      "user-agent": "23"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1513,7 +1513,7 @@
   },
   {
     "headers": {
-      "user-agent": "22"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1555,7 +1555,7 @@
   },
   {
     "headers": {
-      "user-agent": "21"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1597,7 +1597,7 @@
   },
   {
     "headers": {
-      "user-agent": "19"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1639,7 +1639,7 @@
   },
   {
     "headers": {
-      "user-agent": "18"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1681,7 +1681,7 @@
   },
   {
     "headers": {
-      "user-agent": "17"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1723,7 +1723,7 @@
   },
   {
     "headers": {
-      "user-agent": "16"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1765,7 +1765,7 @@
   },
   {
     "headers": {
-      "user-agent": "15"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1807,7 +1807,7 @@
   },
   {
     "headers": {
-      "user-agent": "14"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1849,7 +1849,7 @@
   },
   {
     "headers": {
-      "user-agent": "13"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1891,7 +1891,7 @@
   },
   {
     "headers": {
-      "user-agent": "11"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1933,7 +1933,7 @@
   },
   {
     "headers": {
-      "user-agent": "8"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -1975,7 +1975,7 @@
   },
   {
     "headers": {
-      "user-agent": "7"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2017,7 +2017,7 @@
   },
   {
     "headers": {
-      "user-agent": "6"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2059,7 +2059,7 @@
   },
   {
     "headers": {
-      "user-agent": "5"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2101,7 +2101,7 @@
   },
   {
     "headers": {
-      "user-agent": "scrutiny/3"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2143,7 +2143,7 @@
   },
   {
     "headers": {
-      "user-agent": "Tarantula web browser"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2185,7 +2185,7 @@
   },
   {
     "headers": {
-      "user-agent": "TMUFE"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2227,7 +2227,7 @@
   },
   {
     "headers": {
-      "user-agent": "Visto Client"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2269,7 +2269,7 @@
   },
   {
     "headers": {
-      "user-agent": "9"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2311,7 +2311,7 @@
   },
   {
     "headers": {
-      "user-agent": "12"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2353,7 +2353,7 @@
   },
   {
     "headers": {
-      "user-agent": "10"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2395,7 +2395,7 @@
   },
   {
     "headers": {
-      "user-agent": "digsby-asynchttp/0.1"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -2437,7 +2437,7 @@
   },
   {
     "headers": {
-      "user-agent": "JSDBG Non Debug Mode"
+      "user-agent": ") ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -2479,7 +2479,7 @@
   },
   {
     "headers": {
-      "user-agent": "gargano"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2521,7 +2521,7 @@
   },
   {
     "headers": {
-      "user-agent": "MacInroy Privacy Auditors. See gelr.de's privacy violation report: http://gelr.de.macinroy.com/gelr.de"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2563,7 +2563,7 @@
   },
   {
     "headers": {
-      "user-agent": "MeineDienste"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2605,7 +2605,7 @@
   },
   {
     "headers": {
-      "user-agent": "WEBSITEtheWEB.COM"
+      "user-agent": "UNION ALL SELECT 75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2647,7 +2647,7 @@
   },
   {
     "headers": {
-      "user-agent": "Ad Muncher v4.93.33707/4870"
+      "user-agent": "UNION ALL SELECT 75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2689,7 +2689,7 @@
   },
   {
     "headers": {
-      "user-agent": "Deluge/1.3.5 (http://deluge-torrent.org)"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2731,7 +2731,7 @@
   },
   {
     "headers": {
-      "user-agent": "JoeDog/1.00 [en] (X11; I; Siege 2.70)"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2753,10 +2753,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": null,
@@ -2773,7 +2773,7 @@
   },
   {
     "headers": {
-      "user-agent": "CoffeeCup Software's Catalyst Framework: Request Class"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2815,7 +2815,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozill\\x16d\\xfbjy\\xd7\\x80\\xaa\\x8b\\xac\\xf1\\xfbN\\xa7\\x039>"
+      "user-agent": ") UNION ALL SELECT 75,75--"
     },
     "device": {
       "architecture": null,
@@ -2857,7 +2857,7 @@
   },
   {
     "headers": {
-      "user-agent": "DistSearchBot/dev (http://www.tkolb.de/distsearch.txt)"
+      "user-agent": ") UNION ALL SELECT 75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2899,7 +2899,7 @@
   },
   {
     "headers": {
-      "user-agent": "Filestubebot/1.0 (+http://www.filestube.com)"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2941,7 +2941,7 @@
   },
   {
     "headers": {
-      "user-agent": "(SELECT GENERATE_SERIES((CHR(77)||CHR(111)||CHR(122)||CHR(105)||CHR(108)||CHR(108)||CHR(97)||CHR(47)||CHR(52)||CHR(46)||CHR(48)||CHR(32)||CHR(40)||CHR(99)||CHR(111)||CHR(109)||CHR(112)||CHR(97)||CHR(116)||CHR(105)||CHR(98)||CHR(108)||CHR(101)||CHR(59)||CHR(32)||CHR(77)||CHR(83)||CHR(73)||CHR(69)||CHR(32)||CHR(55)||CHR(46)||CHR(48)||CHR(59)||CHR(32)||CHR(87)||CHR(105)||CHR(110)||CHR(100)||CHR(111)||CHR(119)||CHR(115)||CHR(32)||CHR(78)||CHR(84)||CHR(32)||CHR(53)||CHR(46)||CHR(49)||CHR(59)||CHR(32)||CHR(83)||CHR(86)||CHR(49)||CHR(59)||CHR(32)||CHR(46)||CHR(78)||CHR(69)||CHR(84)||CHR(32)||CHR(67)||CHR(76)||CHR(82)||CHR(32)||CHR(50)||CHR(46)||CHR(48)||CHR(46)||CHR(53)||CHR(48)||CHR(55)||CHR(50)||CHR(55)||CHR(41)),(CHR(77)||CHR(111)||CHR(122)||CHR(105)||CHR(108)||CHR(108)||CHR(97)||CHR(47)||CHR(52)||CHR(46)||CHR(48)||CHR(32)||CHR(40)||CHR(99)||CHR(111)||CHR(109)||CHR(112)||CHR(97)||CHR(116)||CHR(105)||CHR(98)||CHR(108)||CHR(101)||CHR(59)||CHR(32)||CHR(77)||CHR(83)||CHR(73)||CHR(69)||CHR(32)||CHR(55)||CHR(46)||CHR(48)||CHR(59)||CHR(32)||CHR(87)||CHR(105)||CHR(110)||CHR(100)||CHR(111)||CHR(119)||CHR(115)||CHR(32)||CHR(78)||CHR(84)||CHR(32)||CHR(53)||CHR(46)||CHR(49)||CHR(59)||CHR(32)||CHR(83)||CHR(86)||CHR(49)||CHR(59)||CHR(32)||CHR(46)||CHR(78)||CHR(69)||CHR(84)||CHR(32)||CHR(67)||CHR(76)||CHR(82)||CHR(32)||CHR(50)||CHR(46)||CHR(48)||CHR(46)||CHR(53)||CHR(48)||CHR(55)||CHR(50)||CHR(55)||CHR(41)),CASE WHEN (4614=4614) THEN 1 ELSE 0 END) LIMIT 1)"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2983,7 +2983,7 @@
   },
   {
     "headers": {
-      "user-agent": "; SELECT SLEEP(10)--"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3025,7 +3025,7 @@
   },
   {
     "headers": {
-      "user-agent": "; SELECT BENCHMARK(10000000,MD5(0x5042476f))--"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3067,7 +3067,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3109,7 +3109,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT NULL,NULL,NULL,NULL#"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3151,7 +3151,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3193,7 +3193,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3235,7 +3235,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3277,7 +3277,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3319,7 +3319,7 @@
   },
   {
     "headers": {
-      "user-agent": "ORDER BY 1--"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3361,7 +3361,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75--"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3403,7 +3403,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75--"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3445,7 +3445,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3487,7 +3487,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3529,7 +3529,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3571,7 +3571,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3613,7 +3613,7 @@
   },
   {
     "headers": {
-      "user-agent": "); IF((2633=2633),SELECT 2633,DROP FUNCTION EOtL)#"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3655,7 +3655,7 @@
   },
   {
     "headers": {
-      "user-agent": "; SELECT COUNT(*) FROM GENERATE_SERIES(1,10000000)--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3697,7 +3697,7 @@
   },
   {
     "headers": {
-      "user-agent": ") WAITFOR DELAY '0:0:10'--"
+      "user-agent": "; IF(8065=8065) SELECT 8065 ELSE DROP FUNCTION lbXn--"
     },
     "device": {
       "architecture": null,
@@ -3739,7 +3739,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL,NULL#"
+      "user-agent": "); SELECT (CASE WHEN (6776=6776) THEN 6776 ELSE 1/(SELECT 0) END)--"
     },
     "device": {
       "architecture": null,
@@ -3781,7 +3781,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -3823,7 +3823,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
     },
     "device": {
       "architecture": null,
@@ -3865,7 +3865,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -3907,7 +3907,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT 75,75,75,75,75--"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -3949,7 +3949,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75--"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -3991,7 +3991,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75--"
+      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -4033,7 +4033,7 @@
   },
   {
     "headers": {
-      "user-agent": ") UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -4075,7 +4075,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -4117,7 +4117,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,
@@ -4159,7 +4159,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
     },
     "device": {
       "architecture": null,

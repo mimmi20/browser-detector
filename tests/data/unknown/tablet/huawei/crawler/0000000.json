@@ -82,5 +82,47 @@
       "version": "80.0.4909.87",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4518.2 Safari/537.36 HuaweiCrawler"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "HuaweiCrawler",
+      "version": null,
+      "manufacturer": "huawei",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4518.2",
+      "manufacturer": "google"
+    }
   }
 ]

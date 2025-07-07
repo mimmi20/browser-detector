@@ -55,10 +55,10 @@ use function is_string;
 use function mb_strpos;
 use function mb_strtolower;
 use function mb_substr;
+use function mb_trim;
 use function reset;
 use function sprintf;
 use function str_contains;
-use function trim;
 
 final readonly class Detector implements DetectorInterface
 {
@@ -522,7 +522,7 @@ final readonly class Detector implements DetectorInterface
 
             if ($derivatePosition !== false) {
                 // the platform contains information about a derivate of the platform
-                $derivate        = trim(mb_substr($platformVersion, $derivatePosition + 1));
+                $derivate        = mb_trim(mb_substr($platformVersion, $derivatePosition + 1));
                 $platformVersion = null;
 
                 if ($platformHeader instanceof HeaderInterface) {
