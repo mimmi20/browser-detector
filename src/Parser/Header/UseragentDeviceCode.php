@@ -13,7 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
-use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Parser\Helper\DeviceInterface;
 use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
@@ -26,8 +26,11 @@ use function preg_match;
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
     /** @throws void */
-    public function __construct(private DeviceParserInterface $deviceParser, private NormalizerInterface $normalizer)
-    {
+    public function __construct(
+        private DeviceParserInterface $deviceParser,
+        private NormalizerInterface $normalizer,
+        private DeviceInterface $deviceCodeHelper,
+    ) {
         // nothing to do
     }
 
@@ -60,8 +63,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             return null;
         }
 
-        $deviceCodeHelper = new Device();
-        $matches          = [];
+        $matches = [];
 
         if (
             preg_match(
@@ -70,7 +72,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $matches,
             )
         ) {
-            $code = $deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
             if ($code !== '' && $code !== null) {
                 return $code;
@@ -86,7 +88,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $matches,
             )
         ) {
-            $code = $deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
             if ($code !== '' && $code !== null) {
                 return $code;
@@ -102,11 +104,23 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $matches,
             )
         ) {
-            $code = $deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
             if ($code !== '' && $code !== null) {
                 return $code;
             }
+        }
+
+        if (preg_match('/^mozilla\/5\.0 \(windows nt/i', $normalizedValue)) {
+            return 'unknown=windows desktop';
+        }
+
+        if (preg_match('/^mozilla\/5\.0 \(x11; linux/i', $normalizedValue)) {
+            return 'unknown=linux desktop';
+        }
+
+        if (preg_match('/^mozilla\/5\.0 \(macintosh; intel mac os x/i', $normalizedValue)) {
+            return 'apple=macintosh';
         }
 
         $matches = [];

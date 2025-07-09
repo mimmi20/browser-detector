@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Parser\Helper\Device;
 use Override;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
@@ -139,6 +140,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 deviceCode: new UseragentDeviceCode(
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizer,
+                    deviceCodeHelper: new Device(),
                 ),
                 clientCode: new UseragentClientCode(
                     browserParser: $this->browserParser,
