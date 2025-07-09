@@ -21,6 +21,7 @@ use BrowserDetector\Parser\Header\UseragentEngineCode;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
+use BrowserDetector\Parser\Helper\Device;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -53,6 +54,7 @@ use function sprintf;
 #[CoversClass(UseragentEngineVersion::class)]
 #[CoversClass(UseragentPlatformCode::class)]
 #[CoversClass(UseragentPlatformVersion::class)]
+#[CoversClass(Device::class)]
 final class Useragent5Test extends TestCase
 {
     /**
@@ -156,6 +158,7 @@ final class Useragent5Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer1,
+                deviceCodeHelper: new Device(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -369,6 +372,7 @@ final class Useragent5Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer1,
+                deviceCodeHelper: new Device(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -582,6 +586,7 @@ final class Useragent5Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer1,
+                deviceCodeHelper: new Device(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -786,6 +791,7 @@ final class Useragent5Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer1,
+                deviceCodeHelper: new Device(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,

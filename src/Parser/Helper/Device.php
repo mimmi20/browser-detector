@@ -13,8 +13,10 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Helper;
 
+use Override;
+
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
-final class Device
+final class Device implements DeviceInterface
 {
     /**
      * @return non-empty-string|null
@@ -23,6 +25,7 @@ final class Device
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
+    #[Override]
     public function getDeviceCode(string $code): string | null
     {
         return match ($code) {
