@@ -157,6 +157,7 @@ final class DeviceTest extends TestCase
             ['ASUS_X018D', 'asus=asus x018d'],
             ['ASUS_AI2205_C', 'asus=asus ai2205 c'],
             ['ASUS_Z01KD', 'asus=asus z01kd'],
+            ['ASUS_I002D', 'asus=asus i002d'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
             ['Pixel 7 Pro', 'google=google pixel 7 pro'],
@@ -1870,6 +1871,7 @@ final class DeviceTest extends TestCase
             ['S61Pro', 'doogee=doogee s61 pro'],
             ['S98Pro', 'doogee=doogee s98 pro'],
             ['S58Pro', 'doogee=doogee s58 pro'],
+            ['X96Pro', 'doogee=doogee x96 pro'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -2129,6 +2131,7 @@ final class DeviceTest extends TestCase
             ['Infinix X623', 'infinix=infinix x623'],
             ['Infinix X657C', 'infinix=infinix x657c'],
             ['Infinix X650D', 'infinix=infinix x650d'],
+            ['Infinix X690B', 'infinix=infinix x690b'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -2284,6 +2287,7 @@ final class DeviceTest extends TestCase
             ['Aquaris E5', 'bq=bq aquaris e5'],
             ['Aquaris X Pro', 'bq=bq aquaris x pro'],
             ['BQS-5020', 'bq=bq bqs-5020'],
+            ['Aquaris C', 'bq=bq aquaris c'],
             // meizu
             ['M6s', 'meizu=meizu m6s'],
             ['NOTE 21', 'meizu=meizu note 21'],
@@ -2397,6 +2401,7 @@ final class DeviceTest extends TestCase
             ['Cyber 8', 'hotwav=hotwav cyber 8'],
             ['Note 15', 'hotwav=hotwav note 15'],
             ['Note 13', 'hotwav=hotwav note 13'],
+            ['Cyber 9 Pro', 'hotwav=hotwav cyber 9 pro'],
             // switel
             ['S5003D_CHAMP', 'switel=switel s5003d'],
             // reeder
@@ -2406,7 +2411,13 @@ final class DeviceTest extends TestCase
             ['Explr 9', 'tesla=tesla explorer 9'],
             // chuwi
             ['HiPad X', 'chuwi=chuwi hipad x'],
+            ['HiPadX', 'chuwi=chuwi hipad x'],
             ['HiPad XPro', 'chuwi=chuwi hipad x pro'],
+            ['HiPad Pro', 'chuwi=chuwi hipad pro'],
+            ['HiPadPro', 'chuwi=chuwi hipad pro'],
+            ['HiPad Max', 'chuwi=chuwi hipad max'],
+            ['HiPad Plus', 'chuwi=chuwi hipad plus'],
+            ['HiPad-Air', 'chuwi=chuwi hipad air'],
             // bigme
             ['HiBreak', 'bigme=bigme hibreak'],
             // a-rival
