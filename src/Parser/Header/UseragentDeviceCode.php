@@ -33,7 +33,6 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         private DeviceParserInterface $deviceParser,
         private NormalizerInterface $normalizer,
         private DeviceInterface $deviceCodeHelper,
-        private DesktopInterface $desktopDevice,
     ) {
         // nothing to do
     }
@@ -112,26 +111,6 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
             if ($code !== '' && $code !== null) {
                 return $code;
-            }
-        }
-
-        if ($this->desktopDevice->isDesktopDevice($normalizedValue)) {
-            if (
-                preg_match('/^mozilla\/5\.0 \(windows nt/i', $normalizedValue)
-                && !str_contains(strtolower($normalizedValue), 'wpdesktop')
-            ) {
-                return 'unknown=windows desktop';
-            }
-
-            if (
-                preg_match('/^mozilla\/5\.0 \(x11; linux/i', $normalizedValue)
-                && !str_contains(strtolower($normalizedValue), 'puffin')
-            ) {
-                return 'unknown=linux desktop';
-            }
-
-            if (preg_match('/^mozilla\/5\.0 \(macintosh; intel mac os x/i', $normalizedValue)) {
-                return 'apple=macintosh';
             }
         }
 
