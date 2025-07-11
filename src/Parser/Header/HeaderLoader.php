@@ -143,7 +143,6 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizer,
                     deviceCodeHelper: new Device(),
-                    desktopDevice: new Desktop(),
                 ),
                 clientCode: new UseragentClientCode(
                     browserParser: $this->browserParser,

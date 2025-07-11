@@ -152,7 +152,6 @@ final class Useragent10Test extends TestCase
                 deviceParser: $deviceParser,
                 normalizer: $normalizer1,
                 deviceCodeHelper: new Device(),
-                desktopDevice: new Desktop(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -356,7 +355,6 @@ final class Useragent10Test extends TestCase
                 deviceParser: $deviceParser,
                 normalizer: $normalizer1,
                 deviceCodeHelper: new Device(),
-                desktopDevice: new Desktop(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -560,7 +558,6 @@ final class Useragent10Test extends TestCase
                 deviceParser: $deviceParser,
                 normalizer: $normalizer1,
                 deviceCodeHelper: new Device(),
-                desktopDevice: new Desktop(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -785,7 +782,6 @@ final class Useragent10Test extends TestCase
                 deviceParser: $deviceParser,
                 normalizer: $normalizer1,
                 deviceCodeHelper: new Device(),
-                desktopDevice: new Desktop(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
