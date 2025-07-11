@@ -100,6 +100,7 @@ final class DeviceTest extends TestCase
             ['LG-M160', 'lg=lg m160'],
             ['LG-D722', 'lg=lg d722'],
             ['LM-X410.FN', 'lg=lg lm-x410.fn'],
+            ['LG-K580', 'lg=lg k580'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
@@ -234,6 +235,7 @@ final class DeviceTest extends TestCase
             ['AC2001', 'oneplus=oneplus ac2001'],
             ['LE2121', 'oneplus=oneplus le2121'],
             ['CPH2653', 'oneplus=oneplus cph2653'],
+            ['ONEPLUS A3000', 'oneplus=oneplus a3000'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -1735,6 +1737,8 @@ final class DeviceTest extends TestCase
             ['Y8', 'doogee=doogee y8'],
             ['X95Pro', 'doogee=doogee x95 pro'],
             ['S61Pro', 'doogee=doogee s61 pro'],
+            ['S98Pro', 'doogee=doogee s98 pro'],
+            ['S58Pro', 'doogee=doogee s58 pro'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -1965,6 +1969,7 @@ final class DeviceTest extends TestCase
             ['LIFETAB_S1034X', 'medion=medion lifetab s1034x'],
             ['LIFETAB E1081X', 'medion=medion lifetab e1081x'],
             ['LIFETAB_P970X', 'medion=medion p970x'],
+            ['P852X', 'medion=medion p852x'],
             // caterpillar
             ['S60', 'caterpillar=caterpillar s60'],
             ['S41', 'caterpillar=caterpillar s41'],

@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Loader\Data\ClientData;
 use BrowserDetector\Parser\Header\UseragentClientCode;
 use BrowserDetector\Parser\Header\UseragentClientVersion;
@@ -57,6 +58,7 @@ use function sprintf;
 #[CoversClass(UseragentPlatformCode::class)]
 #[CoversClass(UseragentPlatformVersion::class)]
 #[CoversClass(Device::class)]
+#[CoversClass(Desktop::class)]
 final class Useragent1Test extends TestCase
 {
     /**
@@ -149,6 +151,7 @@ final class Useragent1Test extends TestCase
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
                 deviceCodeHelper: new Device(),
+                desktopDevice: new Desktop(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -617,6 +620,7 @@ final class Useragent1Test extends TestCase
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
                 deviceCodeHelper: new Device(),
+                desktopDevice: new Desktop(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -822,6 +826,7 @@ final class Useragent1Test extends TestCase
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
                 deviceCodeHelper: new Device(),
+                desktopDevice: new Desktop(),
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
