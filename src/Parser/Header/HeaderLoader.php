@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
-use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Parser\Helper\Device;
 use Override;
 use UaLoader\BrowserLoaderInterface;

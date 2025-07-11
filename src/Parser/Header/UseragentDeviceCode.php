@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
-use BrowserDetector\Helper\DesktopInterface;
 use BrowserDetector\Parser\Helper\DeviceInterface;
 use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -23,8 +22,6 @@ use UaParser\DeviceParserInterface;
 
 use function mb_strtolower;
 use function preg_match;
-use function str_contains;
-use function strtolower;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
