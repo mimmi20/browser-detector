@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Helper\DesktopInterface;
 use BrowserDetector\Parser\Helper\DeviceInterface;
 use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -22,6 +23,8 @@ use UaParser\DeviceParserInterface;
 
 use function mb_strtolower;
 use function preg_match;
+use function str_contains;
+use function strtolower;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
@@ -30,6 +33,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         private DeviceParserInterface $deviceParser,
         private NormalizerInterface $normalizer,
         private DeviceInterface $deviceCodeHelper,
+        private DesktopInterface $desktopDevice,
     ) {
         // nothing to do
     }
@@ -111,16 +115,24 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             }
         }
 
-        if (preg_match('/^mozilla\/5\.0 \(windows nt/i', $normalizedValue)) {
-            return 'unknown=windows desktop';
-        }
+        if ($this->desktopDevice->isDesktopDevice($normalizedValue)) {
+            if (
+                preg_match('/^mozilla\/5\.0 \(windows nt/i', $normalizedValue)
+                && !str_contains(strtolower($normalizedValue), 'wpdesktop')
+            ) {
+                return 'unknown=windows desktop';
+            }
 
-        if (preg_match('/^mozilla\/5\.0 \(x11; linux/i', $normalizedValue)) {
-            return 'unknown=linux desktop';
-        }
+            if (
+                preg_match('/^mozilla\/5\.0 \(x11; linux/i', $normalizedValue)
+                && !str_contains(strtolower($normalizedValue), 'puffin')
+            ) {
+                return 'unknown=linux desktop';
+            }
 
-        if (preg_match('/^mozilla\/5\.0 \(macintosh; intel mac os x/i', $normalizedValue)) {
-            return 'apple=macintosh';
+            if (preg_match('/^mozilla\/5\.0 \(macintosh; intel mac os x/i', $normalizedValue)) {
+                return 'apple=macintosh';
+            }
         }
 
         $matches = [];

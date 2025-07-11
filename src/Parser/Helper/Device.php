@@ -80,6 +80,7 @@ final class Device implements DeviceInterface
             'lg-m160' => 'lg=lg m160',
             'lg-d722' => 'lg=lg d722',
             'lm-x410.fn' => 'lg=lg lm-x410.fn',
+            'lg-k580' => 'lg=lg k580',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -213,6 +214,7 @@ final class Device implements DeviceInterface
             'ac2001' => 'oneplus=oneplus ac2001',
             'le2121' => 'oneplus=oneplus le2121',
             'cph2653' => 'oneplus=oneplus cph2653',
+            'oneplus a3000' => 'oneplus=oneplus a3000',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -1697,6 +1699,8 @@ final class Device implements DeviceInterface
             'y8' => 'doogee=doogee y8',
             'x95pro' => 'doogee=doogee x95 pro',
             's61pro' => 'doogee=doogee s61 pro',
+            's98pro' => 'doogee=doogee s98 pro',
+            's58pro' => 'doogee=doogee s58 pro',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -1921,6 +1925,7 @@ final class Device implements DeviceInterface
             'lifetab_s1034x' => 'medion=medion lifetab s1034x',
             'lifetab e1081x' => 'medion=medion lifetab e1081x',
             'lifetab_p970x' => 'medion=medion p970x',
+            'p852x' => 'medion=medion p852x',
             // caterpillar
             's60' => 'caterpillar=caterpillar s60',
             's41' => 'caterpillar=caterpillar s41',
