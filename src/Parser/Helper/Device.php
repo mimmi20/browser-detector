@@ -136,6 +136,7 @@ final class Device implements DeviceInterface
             'asus_x018d' => 'asus=asus x018d',
             'asus_ai2205_c' => 'asus=asus ai2205 c',
             'asus_z01kd' => 'asus=asus z01kd',
+            'asus_i002d' => 'asus=asus i002d',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3' => 'google=google pixel 3',
@@ -1808,6 +1809,7 @@ final class Device implements DeviceInterface
             's61pro' => 'doogee=doogee s61 pro',
             's98pro' => 'doogee=doogee s98 pro',
             's58pro' => 'doogee=doogee s58 pro',
+            'x96pro' => 'doogee=doogee x96 pro',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -2061,6 +2063,7 @@ final class Device implements DeviceInterface
             'infinix x623' => 'infinix=infinix x623',
             'infinix x657c' => 'infinix=infinix x657c',
             'infinix x650d' => 'infinix=infinix x650d',
+            'infinix x690b' => 'infinix=infinix x690b',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -2215,6 +2218,7 @@ final class Device implements DeviceInterface
             'aquaris e5' => 'bq=bq aquaris e5',
             'aquaris x pro' => 'bq=bq aquaris x pro',
             'bqs-5020' => 'bq=bq bqs-5020',
+            'aquaris c' => 'bq=bq aquaris c',
             // meizu
             'm6s' => 'meizu=meizu m6s',
             'note 21' => 'meizu=meizu note 21',
@@ -2328,6 +2332,7 @@ final class Device implements DeviceInterface
             'cyber 8' => 'hotwav=hotwav cyber 8',
             'note 15' => 'hotwav=hotwav note 15',
             'note 13' => 'hotwav=hotwav note 13',
+            'cyber 9 pro' => 'hotwav=hotwav cyber 9 pro',
             // switel
             's5003d_champ' => 'switel=switel s5003d',
             // reeder
@@ -2336,8 +2341,12 @@ final class Device implements DeviceInterface
             // tesla
             'explr 9' => 'tesla=tesla explorer 9',
             // chuwi
-            'hipad x' => 'chuwi=chuwi hipad x',
+            'hipad x', 'hipadx' => 'chuwi=chuwi hipad x',
             'hipad xpro' => 'chuwi=chuwi hipad x pro',
+            'hipad pro', 'hipadpro' => 'chuwi=chuwi hipad pro',
+            'hipad max' => 'chuwi=chuwi hipad max',
+            'hipad plus' => 'chuwi=chuwi hipad plus',
+            'hipad-air' => 'chuwi=chuwi hipad air',
             // bigme
             'hibreak' => 'bigme=bigme hibreak',
             // a-rival
