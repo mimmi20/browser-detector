@@ -677,6 +677,49 @@ final class DetectorTest extends TestCase
                     ],
                 ],
             ],
+            [
+                ['user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.2.1; zh-cn; Infinix X801 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30;'],
+                [
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.2.1; zh-cn; Infinix X801 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30;'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'X801',
+                        'marketingName' => 'Joypad 8S',
+                        'manufacturer' => 'infinix',
+                        'brand' => 'infinix',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 1024,
+                            'height' => 768,
+                            'touch' => true,
+                            'size' => 8.0,
+                        ],
+                        'type' => 'fone-pad',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '4.2.1',
+                        'manufacturer' => 'google',
+                    ],
+                    'client' => [
+                        'name' => 'Android Webkit',
+                        'version' => '4.0.0',
+                        'manufacturer' => 'google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => '534.30.0',
+                        'manufacturer' => 'apple',
+                    ],
+                ],
+            ],
         ];
     }
 }
