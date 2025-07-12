@@ -60,19 +60,22 @@
       "touch": true,
       "size": 6.95
     },
-    "infinix x690b": {
-      "deviceName": "X690B",
-      "marketingName": "Note 7",
-      "manufacturer": "infinix",
-      "brand": "infinix",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1640,
-        "height": 720,
-        "touch": true,
-        "size": 6.95
-      },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "infinix x690b": {
+    "deviceName": "X690B",
+    "marketingName": "Note 7",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1640,
+      "height": 720,
+      "touch": true,
+      "size": 6.95
+    },
     "type": "phablet",
     "platform": "android"
   },

@@ -1112,6 +1112,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-F907B', 'samsung=samsung sm-f907b'],
             ['SAMSUNG SM-F900U', 'samsung=samsung sm-f900u'],
             ['SM-F900U', 'samsung=samsung sm-f900u'],
+            ['SAMSUNG SM-F900U1', 'samsung=samsung sm-f900u1'],
+            ['SM-F900U1', 'samsung=samsung sm-f900u1'],
             ['SAMSUNG SM-F900F', 'samsung=samsung sm-f900f'],
             ['SM-F900F', 'samsung=samsung sm-f900f'],
             ['SM-F9007', 'samsung=samsung sm-f9007'],
@@ -2417,6 +2419,7 @@ final class DeviceTest extends TestCase
             ['HiPadPro', 'chuwi=chuwi hipad pro'],
             ['HiPad Max', 'chuwi=chuwi hipad max'],
             ['HiPad Plus', 'chuwi=chuwi hipad plus'],
+            ['HiPadPlus', 'chuwi=chuwi hipad plus'],
             ['HiPad-Air', 'chuwi=chuwi hipad air'],
             // bigme
             ['HiBreak', 'bigme=bigme hibreak'],
@@ -2555,6 +2558,11 @@ final class DeviceTest extends TestCase
             // prestigio
             ['PMT4111_3G', 'prestigio=prestigio pmt4111_3g'],
             ['PSP3509DUO', 'prestigio=prestigio psp3509duo'],
+            ['PMT3257_3G', 'prestigio=prestigio pmt3257_3g'],
+            ['PMT3257_4G', 'prestigio=prestigio pmt3257_4g'],
+            ['PMT3831_4G', 'prestigio=prestigio pmt3831_4g'],
+            ['PMT4311_3G_RU', 'prestigio=prestigio pmt4311_3g_ru'],
+            ['PMT3618_4G', 'prestigio=prestigio pmt3618_4g'],
             // texet
             ['TM-5084', 'texet=texet tm-5084'],
             // other

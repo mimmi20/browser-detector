@@ -1068,6 +1068,7 @@ final class Device implements DeviceInterface
             'sm-f907n', 'samsung sm-f907n' => 'samsung=samsung sm-f907n',
             'sm-f907f' => 'samsung=samsung sm-f907f',
             'sm-f900u', 'samsung sm-f900u' => 'samsung=samsung sm-f900u',
+            'sm-f900u1', 'samsung sm-f900u1' => 'samsung=samsung sm-f900u1',
             'sm-f900f', 'samsung sm-f900f' => 'samsung=samsung sm-f900f',
             'sm-f9007' => 'samsung=samsung sm-f9007',
             'sm-f9000' => 'samsung=samsung sm-f9000',
@@ -2345,7 +2346,7 @@ final class Device implements DeviceInterface
             'hipad xpro' => 'chuwi=chuwi hipad x pro',
             'hipad pro', 'hipadpro' => 'chuwi=chuwi hipad pro',
             'hipad max' => 'chuwi=chuwi hipad max',
-            'hipad plus' => 'chuwi=chuwi hipad plus',
+            'hipad plus', 'hipadplus' => 'chuwi=chuwi hipad plus',
             'hipad-air' => 'chuwi=chuwi hipad air',
             // bigme
             'hibreak' => 'bigme=bigme hibreak',
@@ -2484,6 +2485,11 @@ final class Device implements DeviceInterface
             // prestigio
             'pmt4111_3g' => 'prestigio=prestigio pmt4111_3g',
             'psp3509duo' => 'prestigio=prestigio psp3509duo',
+            'pmt3257_3g' => 'prestigio=prestigio pmt3257_3g',
+            'pmt3257_4g' => 'prestigio=prestigio pmt3257_4g',
+            'pmt3831_4g' => 'prestigio=prestigio pmt3831_4g',
+            'pmt4311_3g_ru' => 'prestigio=prestigio pmt4311_3g_ru',
+            'pmt3618_4g' => 'prestigio=prestigio pmt3618_4g',
             // texet
             'tm-5084' => 'texet=texet tm-5084',
             // other
