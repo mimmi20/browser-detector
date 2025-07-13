@@ -2422,6 +2422,7 @@ final class DeviceTest extends TestCase
             ['TECNO KE5k', 'tecno=tecno ke5k'],
             ['TECNO KE5', 'tecno=tecno ke5'],
             ['TECNO 7C', 'tecno=tecno 7c'],
+            ['Phantom6-Plus', 'tecno=tecno phantom 6 plus'],
             // f150
             ['B1 Pro', 'f150=f150 b1 pro'],
             // foxxd

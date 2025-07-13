@@ -2343,6 +2343,7 @@ final class Device implements DeviceInterface
             'tecno ke5k' => 'tecno=tecno ke5k',
             'tecno ke5' => 'tecno=tecno ke5',
             'tecno 7c' => 'tecno=tecno 7c',
+            'phantom6-plus' => 'tecno=tecno phantom 6 plus',
             // f150
             'b1 pro' => 'f150=f150 b1 pro',
             // foxxd
