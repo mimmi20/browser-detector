@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Gecko/20050225 Firefox/1.0.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "1.0.1",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Gecko/20050225 Firefox/1.0.1 Antares; U; Antares 5.5"
     },
     "device": {
@@ -4147,48 +4189,6 @@
     "client": {
       "name": "Mozilla",
       "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; ms-office) comdirect/1.0 (appVersion:19.10.0;deviceType:desktop)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false

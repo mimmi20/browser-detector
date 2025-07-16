@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; LTBot/0.1; +http://locatetech.io/bot)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Mozilla",
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "OnPageLeadsBot/1.0 (+https://onpageleads.com/analyse/) Mozilla/5.0 (compatible);"
     },
     "device": {
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Gecko",
       "version": "1.7.5",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Gecko/20050225 Firefox/1.0.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "1.0.1",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
       "manufacturer": "mozilla-foundation"
     }
   }

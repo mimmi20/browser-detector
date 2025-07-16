@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Domains Project/1.0.6; +http://domainsproject.org) comdirect/1.0 (appVersion:20.4.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Mozilla",
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; DashLinkPreviews/5.1;)"
     },
     "device": {
@@ -4118,48 +4160,6 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (compatible; Crawlson/1.0; +https://www.crawlson.com/search?q=site:Geld.de)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://www.gowikibot.com) comdirect/1.0 (appVersion:20.11.0)"
     },
     "device": {
       "architecture": null,

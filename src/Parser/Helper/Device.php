@@ -2435,7 +2435,7 @@ final class Device implements DeviceInterface
             'tecno dp8d', 'dp8d' => 'tecno=tecno dp8d',
             'tecno ae11' => 'tecno=tecno ae11',
             'tecno ae10' => 'tecno=tecno ae10',
-            'dp7cpro-sga1' => 'tecno=tecno dp7cpro-sga1',
+            'tecno dp7c pro-sga1', 'dp7cpro-sga1' => 'tecno=tecno dp7cpro-sga1',
             'tecno dp7cpro', 'dp7cpro' => 'tecno=tecno dp7cpro',
             'tecno cx air' => 'tecno=tecno camon cx air',
             'tecno camon cx' => 'tecno=tecno camon cx',

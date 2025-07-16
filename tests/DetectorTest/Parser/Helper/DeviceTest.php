@@ -2546,6 +2546,7 @@ final class DeviceTest extends TestCase
             ['TECNO AE11', 'tecno=tecno ae11'],
             ['TECNO AE10', 'tecno=tecno ae10'],
             ['DP7CPro-SGA1', 'tecno=tecno dp7cpro-sga1'],
+            ['TECNO DP7C Pro-SGA1', 'tecno=tecno dp7cpro-sga1'],
             ['TECNO DP7CPRO', 'tecno=tecno dp7cpro'],
             ['DP7CPRO', 'tecno=tecno dp7cpro'],
             ['TECNO CX Air', 'tecno=tecno camon cx air'],

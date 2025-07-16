@@ -421,48 +421,6 @@
   },
   {
     "headers": {
-      "user-agent": "ozilla/4.7 (compatible; Whizbang)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "ozelot/2.7.3 (Search engine indexer; www.flying-cat.de/ozelot; ozelot@flying-cat.de)"
     },
     "device": {
@@ -4160,6 +4118,48 @@
   {
     "headers": {
       "user-agent": "OmniExplorer_Bot/1.1 ( http://www.omni-explorer.com) WorldIndexer"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OmniExplorer_Bot/1.09 ( http://www.omni-explorer.com) Internet Categorizer"
     },
     "device": {
       "architecture": null,

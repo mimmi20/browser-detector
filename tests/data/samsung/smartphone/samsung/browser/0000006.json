@@ -3781,48 +3781,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-A115F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.0 Chrome/79.0.3945.136 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A115F",
-      "marketingName": "Galaxy A11 (Inernational)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Samsung Browser",
-      "version": "12.0.0",
-      "manufacturer": "samsung",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.136",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-A205S) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/10.2 Chrome/71.0.3578.99 Mobile Safari/537.36"
     },
     "device": {
@@ -4196,6 +4154,48 @@
     "engine": {
       "name": "Blink",
       "version": "71.0.3578.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G970X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.0 Chrome/79.0.3945.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G970X",
+      "marketingName": "Galaxy S10e (Canada)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "12.0.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.136",
       "manufacturer": "google"
     }
   }

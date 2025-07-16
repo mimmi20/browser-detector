@@ -3361,48 +3361,6 @@
   },
   {
     "headers": {
-      "user-agent": "ozilla/4.5 [en]C-CCK-MCD snapN45b1 (Win95; I)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 95",
-      "marketingName": "Windows 95",
-      "version": "95.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "OSSProxy 1.3.326.329 (Build 326.329 Win32 en-us)(Apr 15 2010 15:40:21)"
     },
     "device": {
@@ -4185,6 +4143,48 @@
       "marketingName": "Windows",
       "version": null,
       "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NoZilla (-555.343; Linux; Linux; Q312461; T312461; C3PO; R2D2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": null,
