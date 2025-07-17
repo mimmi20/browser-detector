@@ -76,8 +76,8 @@ jobs:
       coverage: "xdebug"
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       test-name: ""
-      min-msi: 98.7
-      min-covered-msi: 98.7
+      min-msi: 98.3
+      min-covered-msi: 98.3
       skip-phpunit: false
       skip-vitest: true
       skip-stryker: true

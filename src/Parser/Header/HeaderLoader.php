@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Parser\Helper\Device;
 use Override;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
@@ -109,8 +110,9 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
             ),
             Headers::HEADER_SEC_CH_UA_ARCH => new SecChUaArch(value: $value),
             Headers::HEADER_SEC_CH_UA_BITNESS => new SecChUaBitness(value: $value),
-            Headers::HEADER_SEC_CH_UA_FULL_VERSION => new SecChUaFullVersion(value: $value),
-            Headers::HEADER_SEC_CH_UA_FULL_VERSION_LIST => new SecChUaFullVersion(value: $value),
+            Headers::HEADER_SEC_CH_UA_FULL_VERSION, Headers::HEADER_SEC_CH_UA_FULL_VERSION_LIST => new SecChUaFullVersion(
+                value: $value,
+            ),
             Headers::HEADER_SEC_CH_UA_MOBILE => new SecChUaMobile(value: $value),
             Headers::HEADER_SEC_CH_UA_MODEL => new DeviceCodeOnlyHeader(
                 value: $value,
@@ -139,6 +141,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 deviceCode: new UseragentDeviceCode(
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizer,
+                    deviceCodeHelper: new Device(),
                 ),
                 clientCode: new UseragentClientCode(
                     browserParser: $this->browserParser,

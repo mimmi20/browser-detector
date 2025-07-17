@@ -9,8 +9,8 @@
       "marketingName": "Phantom Pad",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 768,
@@ -51,8 +51,8 @@
       "marketingName": "Phantom Pad",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 768,
@@ -93,8 +93,8 @@
       "marketingName": "S9S",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -135,8 +135,8 @@
       "marketingName": "S9",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -177,8 +177,8 @@
       "marketingName": "Phantom Pad II",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 768,
@@ -219,8 +219,8 @@
       "marketingName": "Phantom Pad",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 768,
@@ -261,8 +261,8 @@
       "marketingName": "DP10A Pro",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -303,8 +303,8 @@
       "marketingName": "DroiPad 7C Pro",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -345,8 +345,8 @@
       "marketingName": "DroidPad 8D",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -387,8 +387,8 @@
       "marketingName": "7CS",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -429,8 +429,8 @@
       "marketingName": "DroiPad 7C Pro",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -471,8 +471,8 @@
       "marketingName": "DroidPad 8D",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -505,6 +505,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; DP7CPRO Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DP7C Pro",
+      "marketingName": "DroiPad 7C Pro",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; TECNO DP10A Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36"
     },
     "device": {
@@ -513,8 +555,8 @@
       "marketingName": "DP10A",
       "manufacturer": "tecno",
       "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
