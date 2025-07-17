@@ -423,6 +423,7 @@ final class DeviceTest extends TestCase
             ['Mi Note 10', 'xiaomi=xiaomi mi note 10'],
             ['Mi 10', 'xiaomi=xiaomi mi 10'],
             ['POCOPHONE F1', 'xiaomi=xiaomi pocophone f1'],
+            ['POCO F1', 'xiaomi=xiaomi pocophone f1'],
             ['Redmi 7', 'xiaomi=xiaomi redmi 7'],
             ['M2007J3SY', 'xiaomi=xiaomi m2007j3sy'],
             ['Redmi 8', 'xiaomi=xiaomi redmi 8'],
@@ -638,6 +639,7 @@ final class DeviceTest extends TestCase
             ['ZTE A2017G', 'zte=zte a2017g'],
             ['Z2353', 'zte=zte z2353'],
             ['Z2351N', 'zte=zte z2351n'],
+            ['NX709J', 'zte=zte nx709j'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -1409,6 +1411,10 @@ final class DeviceTest extends TestCase
             ['JAT-L41', 'huawei=huawei jat-l41'],
             ['JNY-LX1', 'huawei=huawei jny-lx1'],
             ['EVR-L29', 'huawei=huawei evr-l29'],
+            ['EVR-N29', 'huawei=huawei evr-n29'],
+            ['EVR-TL00', 'huawei=huawei evr-tl00'],
+            ['EVR-AN00', 'huawei=huawei evr-an00'],
+            ['EVR-AL00', 'huawei=huawei evr-al00'],
             ['BAH-L09', 'huawei=huawei bah-l09'],
             ['ART-L29', 'huawei=huawei art-l29'],
             ['BAH2-W19', 'huawei=huawei bah2-w19'],
@@ -1444,7 +1450,6 @@ final class DeviceTest extends TestCase
             ['EML-L09', 'huawei=huawei eml-l09'],
             ['CMR-W09', 'huawei=huawei cmr-w09'],
             ['BLA-L29', 'huawei=huawei bla-l29'],
-            ['EVR-N29', 'huawei=huawei evr-n29'],
             ['STF-L09', 'huawei=huawei stf-l09'],
             ['HMA-L29', 'huawei=huawei hma-l29'],
             ['DUB-LX1', 'huawei=huawei dub-lx1'],
@@ -1626,6 +1631,7 @@ final class DeviceTest extends TestCase
             ['KRJ-W09', 'huawei=huawei krj-w09'],
             ['KRJ-AN00', 'huawei=huawei krj-an00'],
             ['WEB-W09', 'huawei=huawei web-w09'],
+            ['PLE-701L', 'huawei=huawei ple-701l'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -2181,6 +2187,7 @@ final class DeviceTest extends TestCase
             ['W_P130', 'wiko=wiko wp130'],
             ['W-V750BN-OPE', 'wiko=wiko w-v750bn-ope'],
             ['SUNNY', 'wiko=wiko sunny'],
+            ['View2 Plus', 'wiko=wiko view2 plus'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
             // Alcatel
@@ -2220,6 +2227,8 @@ final class DeviceTest extends TestCase
             ['HTC One A9s', 'htc=htc a9s'],
             ['HTC U11 life', 'htc=htc u11 life'],
             ['HTC Desire 12+', 'htc=htc desire 12+'],
+            ['HTC 2Q55100', 'htc=htc 2q55100'],
+            ['2Q55100', 'htc=htc 2q55100'],
             // teclast
             ['P30S_EEA', 'teclast=teclast p30s_eea'],
             ['P25T_EEA', 'teclast=teclast p25t_eea'],
@@ -2322,6 +2331,7 @@ final class DeviceTest extends TestCase
             ['LIFETAB E1081X', 'medion=medion lifetab e1081x'],
             ['LIFETAB_P970X', 'medion=medion p970x'],
             ['P852X', 'medion=medion p852x'],
+            ['LIFETAB_P831X.2', 'medion=medion lifetab p831x.2'],
             // caterpillar
             ['S60', 'caterpillar=caterpillar s60'],
             ['S41', 'caterpillar=caterpillar s41'],
@@ -2430,6 +2440,17 @@ final class DeviceTest extends TestCase
             ['Stellar-X5', 'crosscall=crosscall stellar-x5'],
             ['Action-X3', 'crosscall=crosscall action-x3'],
             ['Trekker-X4', 'crosscall=crosscall trekker-x4'],
+            ['TREKKER-M1 CORE', 'crosscall=crosscall trekker-m1 core'],
+            ['Action-X5', 'crosscall=crosscall action-x5'],
+            ['TREKKER-X3', 'crosscall=crosscall trekker-x3'],
+            ['TREKKER-X2', 'crosscall=crosscall trekker-x2'],
+            ['Trekker-X1', 'crosscall=crosscall trekker-x1'],
+            ['Trekker-S1', 'crosscall=crosscall trekker-s1'],
+            ['Trekker-M1', 'crosscall=crosscall trekker-m1'],
+            ['Odyssey S1', 'crosscall=crosscall odyssey s1'],
+            ['ODYSSEY_Plus', 'crosscall=crosscall odyssey plus'],
+            ['Crosscall ELEMENT', 'crosscall=crosscall element'],
+            ['CROSSCALL WILD', 'crosscall=crosscall wild'],
             // touchmate
             ['TM-MID1065', 'touchmate=touchmate tm-mid1065'],
             // ila
@@ -2864,6 +2885,8 @@ final class DeviceTest extends TestCase
             ['PMT3618_4G', 'prestigio=prestigio pmt3618_4g'],
             // texet
             ['TM-5084', 'texet=texet tm-5084'],
+            // sky
+            ['Elite OctaX', 'sky=sky elite octax'],
             // other
             ['Model"', null],
             [': "', null],

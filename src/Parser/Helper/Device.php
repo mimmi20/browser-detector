@@ -401,7 +401,7 @@ final class Device implements DeviceInterface
             'redmi 6' => 'xiaomi=xiaomi redmi 6',
             'mi note 10' => 'xiaomi=xiaomi mi note 10',
             'mi 10' => 'xiaomi=xiaomi mi 10',
-            'pocophone f1' => 'xiaomi=xiaomi pocophone f1',
+            'pocophone f1', 'poco f1' => 'xiaomi=xiaomi pocophone f1',
             'redmi 7' => 'xiaomi=xiaomi redmi 7',
             'm2007j3sy' => 'xiaomi=xiaomi m2007j3sy',
             'redmi 8' => 'xiaomi=xiaomi redmi 8',
@@ -616,6 +616,7 @@ final class Device implements DeviceInterface
             'zte a2017g' => 'zte=zte a2017g',
             'z2353' => 'zte=zte z2353',
             'z2351n' => 'zte=zte z2351n',
+            'nx709j' => 'zte=zte nx709j',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -1288,6 +1289,10 @@ final class Device implements DeviceInterface
             'jat-l41' => 'huawei=huawei jat-l41',
             'jny-lx1' => 'huawei=huawei jny-lx1',
             'evr-l29' => 'huawei=huawei evr-l29',
+            'evr-n29' => 'huawei=huawei evr-n29',
+            'evr-tl00' => 'huawei=huawei evr-tl00',
+            'evr-an00' => 'huawei=huawei evr-an00',
+            'evr-al00' => 'huawei=huawei evr-al00',
             'bah-l09' => 'huawei=huawei bah-l09',
             'art-l29' => 'huawei=huawei art-l29',
             'bah2-w19' => 'huawei=huawei bah2-w19',
@@ -1323,7 +1328,6 @@ final class Device implements DeviceInterface
             'eml-l09' => 'huawei=huawei eml-l09',
             'cmr-w09' => 'huawei=huawei cmr-w09',
             'bla-l29' => 'huawei=huawei bla-l29',
-            'evr-n29' => 'huawei=huawei evr-n29',
             'stf-l09' => 'huawei=huawei stf-l09',
             'hma-l29' => 'huawei=huawei hma-l29',
             'dub-lx1' => 'huawei=huawei dub-lx1',
@@ -1505,6 +1509,7 @@ final class Device implements DeviceInterface
             'krj-w09' => 'huawei=huawei krj-w09',
             'krj-an00' => 'huawei=huawei krj-an00',
             'web-w09' => 'huawei=huawei web-w09',
+            'ple-701l' => 'huawei=huawei ple-701l',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2053,6 +2058,7 @@ final class Device implements DeviceInterface
             'w_p130' => 'wiko=wiko wp130',
             'w-v750bn-ope' => 'wiko=wiko w-v750bn-ope',
             'sunny' => 'wiko=wiko sunny',
+            'view2 plus' => 'wiko=wiko view2 plus',
             // razer
             'phone 2' => 'razer=razer phone 2',
             // Alcatel
@@ -2092,6 +2098,7 @@ final class Device implements DeviceInterface
             'htc one a9s' => 'htc=htc a9s',
             'htc u11 life' => 'htc=htc u11 life',
             'htc desire 12+' => 'htc=htc desire 12+',
+            'htc 2q55100', '2q55100' => 'htc=htc 2q55100',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea' => 'teclast=teclast p25t_eea',
@@ -2191,6 +2198,7 @@ final class Device implements DeviceInterface
             'lifetab e1081x' => 'medion=medion lifetab e1081x',
             'lifetab_p970x' => 'medion=medion p970x',
             'p852x' => 'medion=medion p852x',
+            'lifetab_p831x.2' => 'medion=medion lifetab p831x.2',
             // caterpillar
             's60' => 'caterpillar=caterpillar s60',
             's41' => 'caterpillar=caterpillar s41',
@@ -2299,6 +2307,17 @@ final class Device implements DeviceInterface
             'stellar-x5' => 'crosscall=crosscall stellar-x5',
             'action-x3' => 'crosscall=crosscall action-x3',
             'trekker-x4' => 'crosscall=crosscall trekker-x4',
+            'trekker-m1 core' => 'crosscall=crosscall trekker-m1 core',
+            'action-x5' => 'crosscall=crosscall action-x5',
+            'trekker-x3' => 'crosscall=crosscall trekker-x3',
+            'trekker-x2' => 'crosscall=crosscall trekker-x2',
+            'trekker-x1' => 'crosscall=crosscall trekker-x1',
+            'trekker-m1' => 'crosscall=crosscall trekker-m1',
+            'trekker-s1' => 'crosscall=crosscall trekker-s1',
+            'odyssey s1' => 'crosscall=crosscall odyssey s1',
+            'odyssey_plus' => 'crosscall=crosscall odyssey plus',
+            'crosscall element' => 'crosscall=crosscall element',
+            'crosscall wild' => 'crosscall=crosscall wild',
             // touchmate
             'tm-mid1065' => 'touchmate=touchmate tm-mid1065',
             // ila
@@ -2715,6 +2734,8 @@ final class Device implements DeviceInterface
             'pmt3618_4g' => 'prestigio=prestigio pmt3618_4g',
             // texet
             'tm-5084' => 'texet=texet tm-5084',
+            // sky
+            'elite octax' => 'sky=sky elite octax',
             // other
             default => null,
         };
