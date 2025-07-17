@@ -851,7 +851,7 @@ final class Device implements DeviceInterface
             'sm-g928l', 'samsung sm-g928l' => 'samsung=samsung sm-g928l',
             'sm-g928n0', 'samsung sm-g928n0' => 'samsung=samsung sm-g928n0',
             'sm-g928p', 'samsung sm-g928p' => 'samsung=samsung sm-g928p',
-            'sm-g928r4', 'samsung sm-g928p4' => 'samsung=samsung sm-g928r4',
+            'sm-g928r4', 'samsung sm-g928r4' => 'samsung=samsung sm-g928r4',
             'sm-g928s', 'samsung sm-g928s' => 'samsung=samsung sm-g928s',
             'sm-g928t', 'samsung sm-g928t' => 'samsung=samsung sm-g928t',
             'sm-g928v', 'samsung sm-g928v' => 'samsung=samsung sm-g928v',
