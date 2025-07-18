@@ -2278,7 +2278,7 @@ final class DeviceTest extends TestCase
             ['HTC One', 'htc=htc m7'],
             ['HTC U Ultra', 'htc=htc u ultra'],
             ['HTC One A9s', 'htc=htc a9s'],
-            ['HTC One A9', 'htc=htc a9'],
+            ['HTC One A9', 'htc=htc one a9'],
             ['HTC U11 life', 'htc=htc u11 life'],
             ['HTC Desire 12+', 'htc=htc desire 12+'],
             ['HTC 2Q55100', 'htc=htc 2q55100'],

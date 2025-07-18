@@ -2127,7 +2127,7 @@ final class Device implements DeviceInterface
             'htc one' => 'htc=htc m7',
             'htc u ultra' => 'htc=htc u ultra',
             'htc one a9s' => 'htc=htc a9s',
-            'htc one a9' => 'htc=htc a9',
+            'htc one a9' => 'htc=htc one a9',
             'htc u11 life' => 'htc=htc u11 life',
             'htc desire 12+' => 'htc=htc desire 12+',
             'htc 2q55100', '2q55100' => 'htc=htc 2q55100',
