@@ -83,7 +83,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/^(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);]+)(?:;? +(?:build|hmscore)[^)]+)\)/i',
+                '/^(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore)[^)]+)\)/i',
                 $normalizedValue,
                 $matches,
             )
@@ -99,7 +99,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/dalvik\/[\d.]+ \(linux; (?:android [\d.]+;) (?P<devicecode>[^);]+)(?:;? +(?:build|hmscore|miui)[^)]+)\)/i',
+                '/dalvik\/[\d.]+ \(linux; (?:android [\d.]+;) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|miui)[^)]+)\)/i',
                 $normalizedValue,
                 $matches,
             )
@@ -115,11 +115,31 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);]+)(?:[^)]+)?\)/i',
+                '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
                 $normalizedValue,
                 $matches,
             )
         ) {
+            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+
+            if ($code !== '' && $code !== null) {
+                return $code;
+            }
+        }
+
+        $matches = [];
+
+        if (preg_match('/;FBDV\/(?P<devicecode>[^);\/]+);/', $normalizedValue, $matches)) {
+            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+
+            if ($code !== '' && $code !== null) {
+                return $code;
+            }
+        }
+
+        $matches = [];
+
+        if (preg_match('/dv\((?P<devicecode>[^);\/]+)\);/', $normalizedValue, $matches)) {
             $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
             if ($code !== '' && $code !== null) {

@@ -82,7 +82,7 @@ jobs:
       skip-vitest: true
       skip-stryker: true
       upload-codecov: true
-      upload-codeclimate: true
+      upload-codeclimate: false
       upload-coveralls: true
       upload-flag: ""
     secrets:

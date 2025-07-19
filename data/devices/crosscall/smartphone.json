@@ -4,8 +4,8 @@
     "marketingName": "Action X3",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -20,8 +20,8 @@
     "marketingName": "Element",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -36,8 +36,8 @@
     "marketingName": "Odyssey Plus",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
@@ -52,8 +52,8 @@
     "marketingName": "Odyssey S1",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
@@ -68,8 +68,8 @@
     "marketingName": "Trekker-M1",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -84,8 +84,8 @@
     "marketingName": "Trekker-M1 Core",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -100,8 +100,8 @@
     "marketingName": "Trekker-S1",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
@@ -116,8 +116,8 @@
     "marketingName": "Trekker-X1",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -132,8 +132,8 @@
     "marketingName": "Trekker-X2",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -148,8 +148,8 @@
     "marketingName": "Wild",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 480,
       "height": 320,
@@ -164,8 +164,8 @@
     "marketingName": "Stellar-X5",
     "manufacturer": "crosscall",
     "brand": "crosscall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -219,6 +219,22 @@
       "height": 1080,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "crosscall action-x3 pro": {
+    "deviceName": "Action-X3 Pro",
+    "marketingName": "Action-X3 Pro",
+    "manufacturer": "crosscall",
+    "brand": "crosscall",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
