@@ -216,6 +216,7 @@ final class Device implements DeviceInterface
             'le2121' => 'oneplus=oneplus le2121',
             'cph2653' => 'oneplus=oneplus cph2653',
             'oneplus a3000' => 'oneplus=oneplus a3000',
+            'pgp110' => 'oneplus=oneplus pgp110',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -306,6 +307,9 @@ final class Device implements DeviceInterface
             'pgfm10' => 'oppo=oppo pgfm10',
             'pgem110' => 'oppo=oppo pgem110',
             'pgem10' => 'oppo=oppo pgem10',
+            'phq110' => 'oppo=oppo phq110',
+            'cph2365' => 'oppo=oppo cph2365',
+            'chp2365' => 'oppo=oppo chp2365',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1702,6 +1706,29 @@ final class Device implements DeviceInterface
             'rmx1993' => 'realme=realme rmx1993',
             'rmx5020' => 'realme=realme rmx5020',
             'rmx5030' => 'realme=realme rmx5030',
+            'rmx5060' => 'realme=realme rmx5060',
+            'rmx5055' => 'realme=realme rmx5055',
+            'rmx5051' => 'realme=realme rmx5051',
+            'rmx5003' => 'realme=realme rmx5003',
+            'rmx5002' => 'realme=realme rmx5002',
+            'rmx5000' => 'realme=realme rmx5000',
+            'rmx3999' => 'realme=realme rmx3999',
+            'rmx3998' => 'realme=realme rmx3998',
+            'rmx3997' => 'realme=realme rmx3997',
+            'rmx3996' => 'realme=realme rmx3996',
+            'rmx3995' => 'realme=realme rmx3995',
+            'rmx3993' => 'realme=realme rmx3993',
+            'rmx3992' => 'realme=realme rmx3992',
+            'rmx3990' => 'realme=realme rmx3990',
+            'rmx3989' => 'realme=realme rmx3989',
+            'rmx3988' => 'realme=realme rmx3988',
+            'rmx3951' => 'realme=realme rmx3951',
+            'rmx3950' => 'realme=realme rmx3950',
+            'rmx3943' => 'realme=realme rmx3943',
+            'rmx3941' => 'realme=realme rmx3941',
+            'rmx3940' => 'realme=realme rmx3940',
+            'rmx5061' => 'realme=realme rmx5061',
+            'rmx3987' => 'realme=realme rmx3987',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -1920,6 +1947,8 @@ final class Device implements DeviceInterface
             'v2219a' => 'vivo=vivo v2219a',
             'v2219' => 'vivo=vivo v2219',
             'v2242a' => 'vivo=vivo v2242a',
+            'v2156a' => 'vivo=vivo v2156a',
+            'y76s' => 'vivo=vivo y76s',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2778,6 +2807,8 @@ final class Device implements DeviceInterface
             'tm-5084' => 'texet=texet tm-5084',
             // sky
             'elite octax' => 'sky=sky elite octax',
+            // iiif150
+            'r2022' => 'iiif150=iiif150 r2022',
             // other
             default => null,
         };
