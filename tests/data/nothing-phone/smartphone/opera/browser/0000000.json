@@ -5,8 +5,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "1",
-      "marketingName": "1",
+      "deviceName": "A063",
+      "marketingName": "Phone 1",
       "manufacturer": "nothing-phone",
       "brand": "nothing-phone",
       "dualOrientation": true,
@@ -47,8 +47,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "1",
-      "marketingName": "1",
+      "deviceName": "A063",
+      "marketingName": "Phone 1",
       "manufacturer": "nothing-phone",
       "brand": "nothing-phone",
       "dualOrientation": true,
@@ -85,12 +85,138 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; A142) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/81.1.4292.78446"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A142",
+      "marketingName": "Phone 2a",
+      "manufacturer": "nothing-phone",
+      "brand": "nothing-phone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2412,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "81.1.4292.78446",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.119",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; A142P Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.107 Mobile Safari/537.36 OPX/2.6"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A142P",
+      "marketingName": "Phone 2a Plus",
+      "manufacturer": "nothing-phone",
+      "brand": "nothing-phone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2412,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera GX",
+      "version": "2.6.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.107",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; A015 Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.99 Mobile Safari/537.36 OPX/2.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A015",
+      "marketingName": "CMF Phone 1",
+      "manufacturer": "nothing-phone",
+      "brand": "nothing-phone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera GX",
+      "version": "2.7.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 15; A063 Build/AQ3A.240929.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.125 Mobile Safari/537.36 OPX/2.8"
     },
     "device": {
       "architecture": null,
-      "deviceName": "1",
-      "marketingName": "1",
+      "deviceName": "A063",
+      "marketingName": "Phone 1",
       "manufacturer": "nothing-phone",
       "brand": "nothing-phone",
       "dualOrientation": true,
