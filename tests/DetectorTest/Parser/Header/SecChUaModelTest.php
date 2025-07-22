@@ -1968,7 +1968,7 @@ final class SecChUaModelTest extends TestCase
             ['"SPACE_ONE10"', true, 'odys=odys space one 10 lte'],
             ['"Maven_T10_pro"', true, 'odys=odys maven t10 pro'],
             // nothing-phone
-            ['"A063"', true, 'nothing-phone=nothing-phone 1'],
+            ['"A063"', true, 'nothing-phone=nothing-phone a063'],
             // doro
             ['"DSB-0220"', true, 'doro=doro dsb-0220'],
             ['"DSB-0230"', true, 'doro=doro dsb-0230'],

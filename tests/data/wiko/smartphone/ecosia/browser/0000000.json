@@ -593,17 +593,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Plus",
-      "marketingName": "Plus",
+      "deviceName": "View2 Plus",
+      "marketingName": "View2 Plus",
       "manufacturer": "wiko",
       "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1280,
+        "width": 1512,
         "height": 720,
         "touch": true,
-        "size": 5
+        "size": 5.93
       },
       "type": "smartphone",
       "ismobile": true,
