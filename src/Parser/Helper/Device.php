@@ -588,6 +588,9 @@ final class Device implements DeviceInterface
             'poco c75' => 'xiaomi=xiaomi poco c75',
             '22041211ac' => 'xiaomi=xiaomi 22041211ac',
             '2206123sc' => 'xiaomi=xiaomi 2206123sc',
+            'm1906g7g' => 'xiaomi=xiaomi m1906g7g',
+            'm1906g7i' => 'xiaomi=xiaomi m1906g7i',
+            '2015105' => 'xiaomi=xiaomi 2015105',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -683,7 +686,7 @@ final class Device implements DeviceInterface
             'sm-g525f' => 'samsung=samsung sm-g525f',
             'sm-a226br' => 'samsung=samsung sm-a226br',
             'sm-a226b' => 'samsung=samsung sm-a226b',
-            'sm-a546b' => 'samsung=samsung sm-a546b',
+            'sm-a546b', 'samsung sm-a546b' => 'samsung=samsung sm-a546b',
             'sm-a546e' => 'samsung=samsung sm-a546e',
             'sm-a5460' => 'samsung=samsung sm-a5460',
             'sm-a546d' => 'samsung=samsung sm-a546d',
@@ -730,7 +733,7 @@ final class Device implements DeviceInterface
             'sm-f731b', 'samsung sm-f731b' => 'samsung=samsung sm-f731b',
             'sm-f926b', 'samsung sm-f926b' => 'samsung=samsung sm-f926b',
             'sm-s906b' => 'samsung=samsung sm-s906b',
-            'sm-s911b' => 'samsung=samsung sm-s911b',
+            'sm-s911b', 'samsung sm-s911b' => 'samsung=samsung sm-s911b',
             'sm-s911d' => 'samsung=samsung sm-s911d',
             'sm-s911e' => 'samsung=samsung sm-s911e',
             'sm-s911n' => 'samsung=samsung sm-s911n',
@@ -1594,6 +1597,7 @@ final class Device implements DeviceInterface
             'dvd-an00' => 'huawei=huawei dvd-an00',
             'dvd-an80' => 'huawei=huawei dvd-an80',
             'um840', 'huawei um840' => 'huawei=huawei um840',
+            'rep-an00' => 'huawei=huawei rep-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2032,6 +2036,11 @@ final class Device implements DeviceInterface
             'v2186a' => 'vivo=vivo v2186a',
             'v2231' => 'vivo=vivo v2231',
             'v2246' => 'vivo=vivo v2246',
+            'v2266a' => 'vivo=vivo v2266a',
+            'v2254a' => 'vivo=vivo v2254a',
+            'v2247' => 'vivo=vivo v2247',
+            'v2249' => 'vivo=vivo v2249',
+            'v2253' => 'vivo=vivo v2253',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2256,6 +2265,7 @@ final class Device implements DeviceInterface
             'htc 2pq910' => 'htc=htc 2pq910',
             'htc_a9u' => 'htc=htc a9u',
             'htc_d526h', 'htcd526h' => 'htc=htc desire 526h',
+            'htc a103 plus' => 'htc=htc a103 plus',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea' => 'teclast=teclast p25t_eea',
@@ -2266,6 +2276,7 @@ final class Device implements DeviceInterface
             'p20hd_eea' => 'teclast=teclast p20hd_eea',
             'm40(n9h3)' => 'teclast=teclast n9h3',
             'm50-row' => 'teclast=teclast m50-row',
+            't50pro_w_row' => 'teclast=teclast t50 pro',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
@@ -2400,6 +2411,9 @@ final class Device implements DeviceInterface
             'infinix x6716b' => 'infinix=infinix x6716b',
             'infinix x6835b' => 'infinix=infinix x6835b',
             'infinix x6835' => 'infinix=infinix x6835',
+            'infinix x6716' => 'infinix=infinix x6716',
+            'infinix x6710' => 'infinix=infinix x6710',
+            'infinix x678b' => 'infinix=infinix x678b',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -2695,9 +2709,17 @@ final class Device implements DeviceInterface
             'tecno camon cx' => 'tecno=tecno camon cx',
             'ptm-z-mini' => 'tecno=tecno ptm-z-mini',
             'tecno ci7n' => 'tecno=tecno ci7n',
-            'tecno ki5q' => 'tecno=tecno ki5q',
+            'tecno ki5q', 'tecno mobile ki5q' => 'tecno=tecno ki5q',
+            'tecno ki5n' => 'tecno=tecno ki5n',
             'tecno ki7' => 'tecno=tecno ki7',
             'tecno ad10' => 'tecno=tecno ad10',
+            'tecno lh7n' => 'tecno=tecno lh7n',
+            'tecno ki8' => 'tecno=tecno ki8',
+            'tecno ck8nb' => 'tecno=tecno ck8nb',
+            'tecno ck8n' => 'tecno=tecno ck8n',
+            'tecno ck6n' => 'tecno=tecno ck6n',
+            'tecno ck6' => 'tecno=tecno ck6',
+            'tecno ck9n' => 'tecno=tecno ck9n',
             // f150
             'b1 pro' => 'f150=f150 b1 pro',
             // foxxd
@@ -2737,6 +2759,7 @@ final class Device implements DeviceInterface
             'meanit_c10c11' => 'meanit=meanit c10c11',
             // unihertz
             'jelly2' => 'unihertz=unihertz jelly2',
+            'tank2' => 'unihertz=unihertz tank2',
             // coolpad
             'coolpad e502' => 'coolpad=coolpad e502',
             // tcl
@@ -2744,6 +2767,8 @@ final class Device implements DeviceInterface
             't506k' => 'tcl=tcl t506k',
             't506g' => 'tcl=tcl t506g',
             't610k' => 'tcl=tcl t610k',
+            '9166g' => 'tcl=tcl 9166g',
+            '9466x' => 'tcl=tcl 9466x',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             // vodafone
@@ -2775,6 +2800,7 @@ final class Device implements DeviceInterface
             'hipad max' => 'chuwi=chuwi hipad max',
             'hipad plus', 'hipadplus' => 'chuwi=chuwi hipad plus',
             'hipad-air' => 'chuwi=chuwi hipad air',
+            'hi10 xpro' => 'chuwi=chuwi hi10 xpro',
             // bigme
             'hibreak' => 'bigme=bigme hibreak',
             // a-rival
@@ -2934,6 +2960,7 @@ final class Device implements DeviceInterface
             // vocal
             'vocal v0core' => 'vocal=vocal v0core',
             'vocal v2 lite' => 'vocal=vocal v2 lite',
+            'vocal v11' => 'vocal=vocal v11',
             // other
             default => null,
         };

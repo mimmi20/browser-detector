@@ -222,5 +222,37 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "infinix x6710": {
+    "deviceName": "X6710",
+    "marketingName": "Note 30 VIP",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "infinix x678b": {
+    "deviceName": "X678B",
+    "marketingName": "Note 30 Pro",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }
