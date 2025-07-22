@@ -2572,7 +2572,7 @@ final class DeviceTest extends TestCase
             ['Infinix X6833B', 'infinix=infinix x6833b'],
             ['Infinix X6716B', 'infinix=infinix x6716b'],
             ['Infinix X6835B', 'infinix=infinix x6835b'],
-            ['Infinix X6835', 'infinix=infinix x6716b'],
+            ['Infinix X6835', 'infinix=infinix x6835'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
