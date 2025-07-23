@@ -83,7 +83,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/^(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore)[^)]+)\)/i',
+                '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore)[^)]+)\)/i',
                 $normalizedValue,
                 $matches,
             )
