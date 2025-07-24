@@ -2294,6 +2294,7 @@ final class DeviceTest extends TestCase
             ['WP200 Pro', 'oukitel=oukitel wp200 pro'],
             ['C35', 'oukitel=oukitel c35'],
             ['WP27', 'oukitel=oukitel wp27'],
+            ['C25', 'oukitel=oukitel c25'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -2352,6 +2353,8 @@ final class DeviceTest extends TestCase
             ['S118', 'doogee=doogee s118'],
             ['Note 58', 'doogee=doogee note 58'],
             ['Note 59', 'doogee=doogee note 59'],
+            ['X95i', 'doogee=doogee x95i'],
+            ['N30', 'doogee=doogee n30'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -2375,6 +2378,16 @@ final class DeviceTest extends TestCase
             ['KINGKONG MINI2', 'cubot=cubot kingkong mini2'],
             ['CUBOT MAX', 'cubot=cubot max'],
             ['MAX 3', 'cubot=cubot max 3'],
+            ['R19', 'cubot=cubot r19'],
+            ['NOTE 9', 'cubot=cubot note 9'],
+            ['X19', 'cubot=cubot x19'],
+            ['X19 S', 'cubot=cubot x19 s'],
+            ['CUBOT_NOTE_S', 'cubot=cubot note s'],
+            ['CUBOT_P9', 'cubot=cubot p9'],
+            ['CUBOT_POWER', 'cubot=cubot power'],
+            ['CUBOT_P7', 'cubot=cubot p7'],
+            ['CUBOT_P20', 'cubot=cubot p20'],
+            ['CUBOT_J3', 'cubot=cubot j3'],
             // Aoyodkg
             ['AOYODKG_A38', 'aoyodkg=aoyodkg a38'],
             // gigaset
@@ -2586,6 +2599,7 @@ final class DeviceTest extends TestCase
             ['Tab 9 WiFi', 'blackview=blackview tab 9 wifi'],
             ['Tab A5 Kids', 'blackview=blackview tab a5 kids'],
             ['Active 8 Pro', 'blackview=blackview active 8 pro'],
+            ['A60', 'blackview=blackview a60'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -3045,6 +3059,7 @@ final class DeviceTest extends TestCase
             ['Cyber 9 Pro', 'hotwav=hotwav cyber 9 pro'],
             ['Cyber 13 Pro', 'hotwav=hotwav cyber 13 pro'],
             ['Cyber X Pro', 'hotwav=hotwav cyber x pro'],
+            ['T5 Pro', 'hotwav=hotwav t5 pro'],
             // switel
             ['S5003D_CHAMP', 'switel=switel s5003d'],
             // reeder
@@ -3220,6 +3235,7 @@ final class DeviceTest extends TestCase
             ['Pad 100', 'oscal=oscal pad 100'],
             ['PILOT 3', 'oscal=oscal pilot 3'],
             ['MARINE 1', 'oscal=oscal marine 1'],
+            ['S60Pro', 'oscal=oscal s60 pro'],
             // vocal
             ['VOCAL V0Core', 'vocal=vocal v0core'],
             ['Vocal V2 Lite', 'vocal=vocal v2 lite'],

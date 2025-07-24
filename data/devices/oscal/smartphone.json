@@ -30,5 +30,21 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "oscal s60 pro": {
+    "deviceName": "S60 Pro",
+    "marketingName": "S60 Pro",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

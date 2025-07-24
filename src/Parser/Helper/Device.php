@@ -2110,6 +2110,7 @@ final class Device implements DeviceInterface
             'wp200 pro' => 'oukitel=oukitel wp200 pro',
             'c35' => 'oukitel=oukitel c35',
             'wp27' => 'oukitel=oukitel wp27',
+            'c25' => 'oukitel=oukitel c25',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -2168,6 +2169,8 @@ final class Device implements DeviceInterface
             's118' => 'doogee=doogee s118',
             'note 58' => 'doogee=doogee note 58',
             'note 59' => 'doogee=doogee note 59',
+            'x95i' => 'doogee=doogee x95i',
+            'n30' => 'doogee=doogee n30',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -2190,6 +2193,16 @@ final class Device implements DeviceInterface
             'kingkong_mini2', 'kingkong mini2' => 'cubot=cubot kingkong mini2',
             'cubot max' => 'cubot=cubot max',
             'max 3' => 'cubot=cubot max 3',
+            'r19' => 'cubot=cubot r19',
+            'note 9' => 'cubot=cubot note 9',
+            'x19' => 'cubot=cubot x19',
+            'x19 s' => 'cubot=cubot x19 s',
+            'cubot_note_s' => 'cubot=cubot note s',
+            'cubot_p9' => 'cubot=cubot p9',
+            'cubot_power' => 'cubot=cubot power',
+            'cubot_p7' => 'cubot=cubot p7',
+            'cubot_p20' => 'cubot=cubot p20',
+            'cubot_j3' => 'cubot=cubot j3',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -2392,6 +2405,7 @@ final class Device implements DeviceInterface
             'tab 9 wifi' => 'blackview=blackview tab 9 wifi',
             'tab a5 kids' => 'blackview=blackview tab a5 kids',
             'active 8 pro' => 'blackview=blackview active 8 pro',
+            'a60' => 'blackview=blackview a60',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -2835,6 +2849,7 @@ final class Device implements DeviceInterface
             'cyber 9 pro' => 'hotwav=hotwav cyber 9 pro',
             'cyber 13 pro' => 'hotwav=hotwav cyber 13 pro',
             'cyber x pro' => 'hotwav=hotwav cyber x pro',
+            't5 pro' => 'hotwav=hotwav t5 pro',
             // switel
             's5003d_champ' => 'switel=switel s5003d',
             // reeder
@@ -3007,6 +3022,7 @@ final class Device implements DeviceInterface
             'pad 100' => 'oscal=oscal pad 100',
             'pilot 3' => 'oscal=oscal pilot 3',
             'marine 1' => 'oscal=oscal marine 1',
+            's60pro' => 'oscal=oscal s60 pro',
             // vocal
             'vocal v0core' => 'vocal=vocal v0core',
             'vocal v2 lite' => 'vocal=vocal v2 lite',
