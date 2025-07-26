@@ -9,8 +9,8 @@
       "marketingName": "Iris 349",
       "manufacturer": "lava",
       "brand": "lava",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
@@ -51,8 +51,8 @@
       "marketingName": "Iris 351",
       "manufacturer": "lava",
       "brand": "lava",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
@@ -93,8 +93,8 @@
       "marketingName": "Iris 458Q",
       "manufacturer": "lava",
       "brand": "lava",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -135,8 +135,8 @@
       "marketingName": "X17",
       "manufacturer": "lava",
       "brand": "lava",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -177,8 +177,8 @@
       "marketingName": "Iris 505c",
       "manufacturer": "lava",
       "brand": "lava",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -219,8 +219,8 @@
       "marketingName": "Iris X1 Selfie",
       "manufacturer": "lava",
       "brand": "lava",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -248,6 +248,48 @@
     "engine": {
       "name": "Blink",
       "version": "43.0.2357.78",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; LAVA LXX503) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.154 Mobile Safari/537.36 OPR/78.2.4143.75485"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LXX503",
+      "marketingName": "Blaze 5G",
+      "manufacturer": "lava",
+      "brand": "lava",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "78.2.4143.75485",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "117.0.5938.154",
       "manufacturer": "google"
     }
   }

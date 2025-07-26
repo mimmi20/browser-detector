@@ -1762,5 +1762,47 @@
       "version": "81.0.4044.138",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 9 Build/BP2A.250705.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.157 Mobile Safari/537.36 Instagram 389.0.0.49.87 Android (36/16; 420dpi; 1080x2424; Google/google; Pixel 9; tokay; tokay; de_DE; 763654648; IABMV/1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 9",
+      "marketingName": "Pixel 9",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2424,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "389.0.0.49.87",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.157",
+      "manufacturer": "google"
+    }
   }
 ]

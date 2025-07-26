@@ -4,8 +4,24 @@
     "marketingName": "PET 100",
     "manufacturer": "peaq",
     "brand": "peaq",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "peaq pet 101-h232e": {
+    "deviceName": "PET 101-H232E",
+    "marketingName": "PET 101",
+    "manufacturer": "peaq",
+    "brand": "peaq",
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,

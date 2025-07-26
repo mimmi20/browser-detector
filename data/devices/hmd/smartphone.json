@@ -14,5 +14,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "hmd arc": {
+    "deviceName": "Arc",
+    "marketingName": "Arc",
+    "manufacturer": "hmd",
+    "brand": "hmd",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 576,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "hmd xr21": {
+    "deviceName": "XR21",
+    "marketingName": "XR21",
+    "manufacturer": "hmd",
+    "brand": "hmd",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.49
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

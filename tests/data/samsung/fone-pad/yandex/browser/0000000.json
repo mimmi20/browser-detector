@@ -1846,5 +1846,47 @@
       "version": "80.0.3987.132",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-T819 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.90 Mobile Safari/537.36 YaApp_Android/10.30/apad YaSearchBrowser/10.30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T819",
+      "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "10.30.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.90",
+      "manufacturer": "google"
+    }
   }
 ]

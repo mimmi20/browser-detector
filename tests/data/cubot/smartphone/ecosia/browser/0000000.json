@@ -9,8 +9,8 @@
       "marketingName": "Max",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -51,8 +51,8 @@
       "marketingName": "R9",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -93,8 +93,8 @@
       "marketingName": "Magic",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -135,8 +135,8 @@
       "marketingName": "P20",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2246,
         "height": 1080,
@@ -177,8 +177,8 @@
       "marketingName": "X18 Plus",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2160,
         "height": 1080,
@@ -219,8 +219,8 @@
       "marketingName": "Note S",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -261,55 +261,13 @@
       "marketingName": "Power",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2160,
         "height": 1080,
         "touch": true,
         "size": 5.9
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "69.0.3497.128",
-      "manufacturer": "ecosia",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.128",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; CUBOT J3 PRO Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "J3",
-      "marketingName": "J3",
-      "manufacturer": "cubot",
-      "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 960,
-        "height": 480,
-        "touch": true,
-        "size": 5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -379,6 +337,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; R19 Build/P00610) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "R19",
+      "marketingName": "R19",
+      "manufacturer": "cubot",
+      "brand": "cubot",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 5.71
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "69.0.3497.128",
+      "manufacturer": "ecosia",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.128",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; CUBOT KING KONG Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128) comdirect/1.0 (appVersion:20.5.2;deviceType:mobile)"
     },
     "device": {
@@ -387,8 +387,8 @@
       "marketingName": "King Kong",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -429,8 +429,8 @@
       "marketingName": "KingKong 3",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1440,
         "height": 720,
@@ -513,8 +513,8 @@
       "marketingName": "Max 2",
       "manufacturer": "cubot",
       "brand": "cubot",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1352,
         "height": 640,

@@ -1639,48 +1639,6 @@
   },
   {
     "headers": {
-      "user-agent": "Replaio 1.9.6 (Linux; Android 9; G8141 Build/47.2.A.4.41)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "G8141",
-      "marketingName": "Xperia XZ Premium",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": true,
-        "size": 5.46
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "version": null,
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Replaio 1.9.6 (Linux; Android 7.1.1; E5823 Build/32.4.A.1.54)"
     },
     "device": {
@@ -2181,48 +2139,6 @@
       "name": "Blink",
       "version": "63.0.3239.111",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Passbook/1.0 WalletPasses/1.2.3 (Linux; U; Android 9; G8441 Build/47.2.A.10.80)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "G8441",
-      "marketingName": "Xperia XZ1 Compact",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "version": null,
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -4189,6 +4105,90 @@
     "client": {
       "name": "Dalvik",
       "version": "1.6.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3112 Build/40.0.A.5.66; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "G3112",
+      "marketingName": "Xperia XA1",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "60.0.3112.116",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 7.1.1; E6683 Build/32.4.A.1.54)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E6683",
+      "marketingName": "Xperia Z5 Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Dalvik",
+      "version": "2.1.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
