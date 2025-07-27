@@ -21,7 +21,7 @@ use BrowserDetector\Parser\Header\UseragentEngineCode;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
-use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -54,7 +54,6 @@ use function sprintf;
 #[CoversClass(UseragentEngineVersion::class)]
 #[CoversClass(UseragentPlatformCode::class)]
 #[CoversClass(UseragentPlatformVersion::class)]
-#[CoversClass(Device::class)]
 final class Useragent3Test extends TestCase
 {
     /**
@@ -124,6 +123,13 @@ final class Useragent3Test extends TestCase
             ->with($engineKey, $ua)
             ->willThrowException($engineException);
 
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with('b1-7a0')
+            ->willReturn($deviceKey);
+
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
 
@@ -132,7 +138,7 @@ final class Useragent3Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
-                deviceCodeHelper: new Device(),
+                deviceCodeHelper: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -313,6 +319,13 @@ final class Useragent3Test extends TestCase
             ->with($engineKey, $ua)
             ->willThrowException($engineException);
 
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with('b1-7a0')
+            ->willReturn($deviceKey);
+
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
 
@@ -321,7 +334,7 @@ final class Useragent3Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
-                deviceCodeHelper: new Device(),
+                deviceCodeHelper: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -521,6 +534,13 @@ final class Useragent3Test extends TestCase
                 ),
             );
 
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with('i4213')
+            ->willReturn($deviceKey);
+
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
 
@@ -529,7 +549,7 @@ final class Useragent3Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
-                deviceCodeHelper: new Device(),
+                deviceCodeHelper: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -731,6 +751,13 @@ final class Useragent3Test extends TestCase
                 ),
             );
 
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with('i4213x')
+            ->willReturn(null);
+
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
 
@@ -739,7 +766,7 @@ final class Useragent3Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
-                deviceCodeHelper: new Device(),
+                deviceCodeHelper: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,

@@ -57,7 +57,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
             try {
                 return $this->versionBuilder->set('2.1.1');
             } catch (NotNumericException) {
-                return new NullVersion();
+                // do nothing here
             }
         }
 
@@ -65,7 +65,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
             try {
                 return $this->versionBuilder->set('6.0');
             } catch (NotNumericException) {
-                return new NullVersion();
+                // do nothing here
             }
         }
 
@@ -73,7 +73,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
             try {
                 return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException) {
-                return new NullVersion();
+                // do nothing here
             }
         }
 
@@ -81,7 +81,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
             try {
                 return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
             } catch (NotNumericException) {
-                return new NullVersion();
+                // do nothing here
             }
         }
 
@@ -89,7 +89,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
             try {
                 return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
             } catch (NotNumericException) {
-                return new NullVersion();
+                // do nothing here
             }
         }
 
@@ -97,7 +97,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
             try {
                 return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException) {
-                return new NullVersion();
+                // do nothing here
             }
         }
 

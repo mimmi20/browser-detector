@@ -21,7 +21,7 @@ use BrowserDetector\Parser\Header\UseragentEngineCode;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
-use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilder;
@@ -56,7 +56,6 @@ use function sprintf;
 #[CoversClass(UseragentEngineVersion::class)]
 #[CoversClass(UseragentPlatformCode::class)]
 #[CoversClass(UseragentPlatformVersion::class)]
-#[CoversClass(Device::class)]
 final class Useragent1Test extends TestCase
 {
     /**
@@ -91,10 +90,8 @@ final class Useragent1Test extends TestCase
     ): void {
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(self::once())
-            ->method('parse')
-            ->with($deviceUa)
-            ->willReturn($deviceCode);
+            ->expects(self::never())
+            ->method('parse');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -140,6 +137,13 @@ final class Useragent1Test extends TestCase
                 ),
             );
 
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with($deviceUa)
+            ->willReturn($deviceCode);
+
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
 
@@ -148,7 +152,7 @@ final class Useragent1Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
-                deviceCodeHelper: new Device(),
+                deviceCodeHelper: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -292,11 +296,11 @@ final class Useragent1Test extends TestCase
     {
         return [
             [
-                'ua' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
-                'normalizedUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
+                'ua' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
+                'normalizedUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
-                'deviceCode' => 'B1-7A0x',
+                'deviceUa' => 'b1-7a0',
+                'deviceCode' => 'B1-7A0',
                 'hasClientInfo' => true,
                 'clientCode' => null,
                 'hasClientVersion' => true,
@@ -306,7 +310,7 @@ final class Useragent1Test extends TestCase
                 'hasPlatformVersion' => true,
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
-                'engineUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
+                'engineUa' => 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.20.0',
@@ -315,7 +319,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -335,7 +339,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(Symbian);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(Symbian);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -355,7 +359,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(Java);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(Java);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -375,7 +379,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -395,7 +399,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(wds 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(wds 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -415,7 +419,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -435,7 +439,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(44);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(44);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -455,7 +459,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(42);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(42);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -475,7 +479,7 @@ final class Useragent1Test extends TestCase
                 'ua' => 'pf(x);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'normalizedUa' => 'pf(x);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i Build/JDQ39',
+                'deviceUa' => 'lenovo a369i',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
                 'clientCode' => 'ucbrowser',
@@ -548,6 +552,13 @@ final class Useragent1Test extends TestCase
             ->expects(self::never())
             ->method('load');
 
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with('b1-7a0')
+            ->willReturn($deviceKey);
+
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
 
@@ -556,7 +567,7 @@ final class Useragent1Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
-                deviceCodeHelper: new Device(),
+                deviceCodeHelper: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -753,6 +764,13 @@ final class Useragent1Test extends TestCase
                 ),
             );
 
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with('b1-7a0')
+            ->willReturn($deviceKey);
+
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
 
@@ -761,7 +779,7 @@ final class Useragent1Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
-                deviceCodeHelper: new Device(),
+                deviceCodeHelper: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
