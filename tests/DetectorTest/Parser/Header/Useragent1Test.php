@@ -495,6 +495,26 @@ final class Useragent1Test extends TestCase
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31',
             ],
+            [
+                'ua' => 'AndroidDownloadManager/8.0.0 (Linux; Android 8.0.0; HTC U11 Build/OPR6.170623.013)',
+                'normalizedUa' => 'AndroidDownloadManager/8.0.0 (Linux; Android 8.0.0; HTC U11 Build/OPR6.170623.013)',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'htc u11',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => null,
+                'hasClientVersion' => true,
+                'clientVersion' => null,
+                'hasPlatformInfo' => true,
+                'platformCode' => null,
+                'hasPlatformVersion' => true,
+                'platformVersion' => null,
+                'hasEngineInfo' => true,
+                'engineUa' => 'AndroidDownloadManager/8.0.0 (Linux; Android 8.0.0; HTC U11 Build/OPR6.170623.013)',
+                'engineCode' => 'webkit',
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
         ];
     }
 
