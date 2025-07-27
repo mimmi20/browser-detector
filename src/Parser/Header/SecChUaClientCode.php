@@ -30,7 +30,7 @@ final class SecChUaClientCode implements ClientCodeInterface
     {
         $list = $this->sort($value);
 
-        if ($list === null || $list === []) {
+        if ($list === []) {
             return false;
         }
 
@@ -50,7 +50,7 @@ final class SecChUaClientCode implements ClientCodeInterface
     {
         $list = $this->sort($value);
 
-        if ($list === null || $list === []) {
+        if ($list === []) {
             return null;
         }
 

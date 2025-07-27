@@ -46,10 +46,6 @@ trait VersionFactoryTrait
             }
         }
 
-        if ($version === null) {
-            return $versionClass;
-        }
-
         $value = $version->value ?? null;
 
         if ($value !== null && is_scalar($value)) {
@@ -57,8 +53,6 @@ trait VersionFactoryTrait
                 return $this->versionBuilder->set((string) $value);
             } catch (NotNumericException $e) {
                 $this->logger->error($e);
-
-                return $versionClass;
             }
         }
 

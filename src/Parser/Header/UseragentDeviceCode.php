@@ -74,7 +74,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         ) {
             $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
-            if ($code !== '' && $code !== null) {
+            if ($code !== null) {
                 return $code;
             }
         }
@@ -90,7 +90,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         ) {
             $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
-            if ($code !== '' && $code !== null) {
+            if ($code !== null) {
                 return $code;
             }
         }
@@ -106,7 +106,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         ) {
             $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
-            if ($code !== '' && $code !== null) {
+            if ($code !== null) {
                 return $code;
             }
         }
@@ -122,7 +122,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         ) {
             $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
-            if ($code !== '' && $code !== null) {
+            if ($code !== null) {
                 return $code;
             }
         }
@@ -132,7 +132,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         if (preg_match('/;FBDV\/(?P<devicecode>[^);\/]+);/', $normalizedValue, $matches)) {
             $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
-            if ($code !== '' && $code !== null) {
+            if ($code !== null) {
                 return $code;
             }
         }
@@ -142,7 +142,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         if (preg_match('/dv\((?P<devicecode>[^);\/]+)\);/', $normalizedValue, $matches)) {
             $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
 
-            if ($code !== '' && $code !== null) {
+            if ($code !== null) {
                 return $code;
             }
         }
@@ -152,7 +152,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         if (preg_match('/dv\((?P<device>[^)]+)\);/', $normalizedValue, $matches)) {
             $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['device']));
 
-            if ($code !== '' && $code !== null) {
+            if ($code !== null) {
                 return $code;
             }
 

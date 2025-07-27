@@ -28,11 +28,11 @@ use const SORT_NUMERIC;
 trait SortTrait
 {
     /**
-     * @return non-empty-array<non-empty-string, string>|null
+     * @return array<non-empty-string, non-empty-string>
      *
      * @throws void
      */
-    private function sort(string $value): array | null
+    private function sort(string $value): array
     {
         $reg             = '/^"(?P<brand>[^"]+)"; ?v="(?P<version>[^"]+)"(?:, )?/';
         $list            = [];
@@ -44,17 +44,12 @@ trait SortTrait
             $value                   = mb_substr($value, mb_strlen($matches[0]));
         }
 
-        if ($list === []) {
-            return null;
-        }
-
         foreach (array_keys($list) as $brand) {
             $code = mb_strtolower($brand);
 
             $fullVersionList[$brand] = match ($code) {
-                'opera', 'google chrome', 'microsoft edge', 'yandex', 'yabrowser', 'huaweibrowser', 'atom', 'opera gx', 'avast secure browser', 'avastsecurebrowser', 'ccleaner browser', 'wavebrowser', 'android webview', 'brave', 'brave browser', 'duckduckgo', 'samsung internet', 'norton secure browser', 'norton private browser', 'headlesschrome', 'vivaldi', 'avg secure browser' => 2,
-                'operamobile', 'microsoft edge webview2', 'yowser' => 3,
-                'chromium' => 1,
+                'opera', 'google chrome', 'microsoft edge', 'yandex', 'yabrowser', 'huaweibrowser', 'atom', 'opera gx', 'avast secure browser', 'avastsecurebrowser', 'ccleaner browser', 'wavebrowser', 'android webview', 'brave', 'brave browser', 'duckduckgo', 'samsung internet', 'norton secure browser', 'norton private browser', 'headlesschrome', 'vivaldi', 'avg secure browser' => 1,
+                'operamobile', 'microsoft edge webview2', 'yowser' => 2,
                 default => 0,
             };
 

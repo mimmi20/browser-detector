@@ -58,7 +58,7 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
 
         $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['device']));
 
-        if ($code !== '' && $code !== null) {
+        if ($code !== null) {
             return $code;
         }
 
