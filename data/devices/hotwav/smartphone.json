@@ -4,8 +4,8 @@
     "marketingName": "Venus R9",
     "manufacturer": "hotwav",
     "brand": "hotwav",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -155,6 +155,22 @@
       "height": 720,
       "touch": true,
       "size": 6.53
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "hotwav cyber x": {
+    "deviceName": "Cyber X",
+    "marketingName": "Cyber X",
+    "manufacturer": "hotwav",
+    "brand": "hotwav",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
     },
     "type": "smartphone",
     "platform": "android"

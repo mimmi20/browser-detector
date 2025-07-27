@@ -13,16 +13,18 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Parser\Helper\DeviceInterface;
 use Override;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
+use function mb_strtolower;
 use function preg_match;
 
 final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
 {
     /** @throws void */
-    public function __construct(private DeviceParserInterface $deviceParser)
+    public function __construct(private DeviceParserInterface $deviceParser, private DeviceInterface $deviceCodeHelper)
     {
         // nothing to do
     }
@@ -52,6 +54,12 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
 
         if ($matches['device'] === 'j2me' || $matches['device'] === 'Opera') {
             return null;
+        }
+
+        $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['device']));
+
+        if ($code !== '' && $code !== null) {
+            return $code;
         }
 
         $code = $this->deviceParser->parse($matches['device']);

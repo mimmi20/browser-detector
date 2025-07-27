@@ -638,5 +638,53 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "umi rp04": {
+    "deviceName": "RP04",
+    "marketingName": "Bison 2",
+    "manufacturer": "umi",
+    "brand": "umi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "umi rp02": {
+    "deviceName": "RP02",
+    "marketingName": "Bison GT2 5G",
+    "manufacturer": "umi",
+    "brand": "umi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "umi rp01": {
+    "deviceName": "RP01",
+    "marketingName": "Bison X10",
+    "manufacturer": "umi",
+    "brand": "umi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.53
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

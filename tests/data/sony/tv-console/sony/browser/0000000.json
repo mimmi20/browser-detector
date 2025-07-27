@@ -127,6 +127,132 @@
   },
   {
     "headers": {
+      "user-agent": "Sony Playstation2 (Utility Disc Ver.2.03c/for PS-modem)[jp]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Playstation 2",
+      "marketingName": "Playstation 2",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "version": null,
+      "manufacturer": "sony",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 [ja] (Playstation2; Linux 2.4.20 MIPS; ja-JP; rv:1.8a2) Gecko/20040630"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Playstation 2",
+      "marketingName": "Playstation 2",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "version": null,
+      "manufacturer": "sony",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (PS2; PlayStation BB Navigator 1.0) NetFront/3.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Playstation 2",
+      "marketingName": "Playstation 2",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "version": null,
+      "manufacturer": "sony",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "(PlayStation; PlayStation 5/2.50) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15"
     },
     "device": {

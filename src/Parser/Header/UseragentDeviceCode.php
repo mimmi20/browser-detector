@@ -150,6 +150,12 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $matches = [];
 
         if (preg_match('/dv\((?P<device>[^)]+)\);/', $normalizedValue, $matches)) {
+            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['device']));
+
+            if ($code !== '' && $code !== null) {
+                return $code;
+            }
+
             $code = $this->deviceParser->parse($matches['device']);
 
             if ($code !== '') {

@@ -505,6 +505,48 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 (; Sony; KDL42W655A; PKG4.201EUA; 2013;); ) Presto/2.12.362 Version/12.11"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KDL-42W655A",
+      "marketingName": "KDL-42W655A",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera",
+      "version": "12.11.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.362",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; U;  HbbTV/1.1.1 (; Sony; KDL46EX720; PKG4.022EUA; 2011;);; en) Presto/2.7.61 Version/11.00"
     },
     "device": {
@@ -673,6 +715,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 6.0.1; BRAVIA 2015 Build/MMB29V.S43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 OPR/32.0.2036.0 OMI/4.6.4.42.E103250.101"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Bravia 2015",
+      "marketingName": "Bravia 2015",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.6.4.42",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; U;  HbbTV/1.1.1 (; Sony; KDL40HX750; PKG2.222GAA; 2012;);; xx) Presto/2.10.250 Version/11.60"
     },
     "device": {
@@ -794,6 +878,48 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.362",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.2.1 (; Sony; KDL32W705B; PKG2.112EUA; 2014;); ) Presto/2.12.407 Version/12.50"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KDL-32W705B",
+      "marketingName": "KDL-32W705B",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera",
+      "version": "12.50.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
       "manufacturer": "opera"
     }
   },
@@ -1088,6 +1214,48 @@
     "engine": {
       "name": "Blink",
       "version": "35.0.1916.153",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 6.0.1; BRAVIA 4K 2015 Build/MMB29V.S35) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 OPR/32.0.2036.0 OMI/4.6.4.42.E103250.101"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Bravia 4K 2015",
+      "marketingName": "Bravia 4K 2015",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.6.4.42",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.106",
       "manufacturer": "google"
     }
   },

@@ -43,6 +43,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; M40_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 YaApp_Android/20.125.1 YaSearchBrowser/20.125.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M40_EEA",
+      "marketingName": "M40",
+      "manufacturer": "teclast",
+      "brand": "teclast",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "20.125.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; T50Pro_W_ROW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaApp_Android/23.74/apad YaSearchBrowser/23.74/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -122,6 +164,174 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.261",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; P50_T_ROW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.77 YaBrowser/25.4.5.77.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P50_T_ROW",
+      "marketingName": "P50",
+      "manufacturer": "teclast",
+      "brand": "teclast",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.95
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.4.5.77.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.77",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; P50_T_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.107 YaBrowser/25.4.2.107.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P50_T_EEA",
+      "marketingName": "P50",
+      "manufacturer": "teclast",
+      "brand": "teclast",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.95
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.4.2.107.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.107",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; P50_B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.77 YaBrowser/25.4.5.77.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P50_B",
+      "marketingName": "P50",
+      "manufacturer": "teclast",
+      "brand": "teclast",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.95
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.4.5.77.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.77",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; P50Ai_ROW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.822 YaSearchBrowser/25.46/apad BroPP/1.0 YaSearchApp/25.46/apad webOmni SA/3 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P50Ai_ROW",
+      "marketingName": "P50Ai",
+      "manufacturer": "teclast",
+      "brand": "teclast",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.92
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "25.46.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.822",
       "manufacturer": "google"
     }
   }

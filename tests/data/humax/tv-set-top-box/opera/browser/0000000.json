@@ -211,6 +211,48 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; U; HbbTV/1.1.1 (; Humax; iCord HD+; 1.0.0; 1.0.0; ); ce-html/1.0; en) Presto/2.10.250 Version/11.60"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iCord HD+",
+      "marketingName": "iCord HD+",
+      "manufacturer": "humax",
+      "brand": "humax",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera",
+      "version": "11.60.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.250",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux 7335b0-smp; U; HbbTV/1.1.1 (; Humax; iCord MINI; 0.90.02; 1.0; ); ce-html/1.0; en) Presto/2.10.250 Version/11.60"
     },
     "device": {
