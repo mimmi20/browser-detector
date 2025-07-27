@@ -62,5 +62,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "oscal marine 2": {
+    "deviceName": "Marine 2",
+    "marketingName": "Marine 2",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oscal flat 2": {
+    "deviceName": "Flat 2",
+    "marketingName": "Flat 2",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

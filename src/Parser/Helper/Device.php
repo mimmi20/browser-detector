@@ -243,6 +243,7 @@ final class Device implements DeviceInterface
             'ga04851-us' => 'google=google ga04851-us',
             'gzpfo' => 'google=google gzpfo',
             'gpj41' => 'google=google gpj41',
+            'pipit' => 'google=google pipit',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -662,6 +663,10 @@ final class Device implements DeviceInterface
             '2015105' => 'xiaomi=xiaomi 2015105',
             '2308cpxd0c' => 'xiaomi=xiaomi 2308cpxd0c',
             'qin3ultra' => 'xiaomi=xiaomi qin 3 ultra',
+            '2409fpcc4g' => 'xiaomi=xiaomi 2409fpcc4g',
+            '2409fpcc4i' => 'xiaomi=xiaomi 2409fpcc4i',
+            '25019pnf3c' => 'xiaomi=xiaomi 25019pnf3c',
+            '24116rnc1i' => 'xiaomi=xiaomi 24116rnc1i',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -730,6 +735,7 @@ final class Device implements DeviceInterface
             'zte a2023' => 'zte=zte a2023',
             'zte a2023p', 'a2023p' => 'zte=zte a2023p',
             'zte a2023pg' => 'zte=zte a2023pg',
+            'z2458' => 'zte=zte z2458',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -1898,6 +1904,14 @@ final class Device implements DeviceInterface
             'rmx5032' => 'realme=realme rmx5032',
             'rmx5031' => 'realme=realme rmx5031',
             'rmx6688' => 'realme=realme rmx6688',
+            'rmx5050' => 'realme=realme rmx5050',
+            'rmx5056' => 'realme=realme rmx5056',
+            'rmx5090' => 'realme=realme rmx5090',
+            'rmx5010' => 'realme=realme rmx5010',
+            'rmx5011' => 'realme=realme rmx5011',
+            'rmx5080' => 'realme=realme rmx5080',
+            'rmx5071' => 'realme=realme rmx5071',
+            'rmx5070' => 'realme=realme rmx5070',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -2010,6 +2024,7 @@ final class Device implements DeviceInterface
             'moto g55 5g' => 'motorola=motorola moto g55 5g',
             'xt2435-2' => 'motorola=motorola xt2435-2',
             'xt2245-1' => 'motorola=motorola xt2245-1',
+            'xt2427-4' => 'motorola=motorola xt2427-4',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -2221,6 +2236,7 @@ final class Device implements DeviceInterface
             'i2214' => 'vivo=vivo i2214',
             'i2213' => 'vivo=vivo i2213',
             'i2207' => 'vivo=vivo i2207',
+            'v2438' => 'vivo=vivo v2438',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2283,6 +2299,9 @@ final class Device implements DeviceInterface
             'rt7 titan 5g' => 'oukitel=oukitel rt7 titan 5g',
             'rt6' => 'oukitel=oukitel rt6',
             'rt5' => 'oukitel=oukitel rt5',
+            'wp100 titan' => 'oukitel=oukitel wp100 titan',
+            'wp32_pro' => 'oukitel=oukitel wp32 pro',
+            'wp39 pro' => 'oukitel=oukitel wp39 pro',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -2362,6 +2381,7 @@ final class Device implements DeviceInterface
             't30pro' => 'doogee=doogee t30pro',
             't10s' => 'doogee=doogee t10s',
             't20mini' => 'doogee=doogee t20mini',
+            'v40 pro' => 'doogee=doogee v40 pro',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -2536,6 +2556,7 @@ final class Device implements DeviceInterface
             'p50_t_row' => 'teclast=teclast p50_t_row',
             'm40_eea' => 'teclast=teclast m40_eea',
             't40 air' => 'teclast=teclast t40 air',
+            'p50case' => 'teclast=teclast p50 case',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
@@ -2621,6 +2642,8 @@ final class Device implements DeviceInterface
             'tab 12' => 'blackview=blackview tab 12',
             'a95' => 'blackview=blackview a95',
             'tab 80' => 'blackview=blackview tab 80',
+            'mega 2' => 'blackview=blackview mega 2',
+            'mega 8' => 'blackview=blackview mega 8',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -2738,6 +2761,7 @@ final class Device implements DeviceInterface
             'awtx6' => 'aiwa=aiwa awtx6',
             // walton
             'xanon x90' => 'walton=walton xanon x90',
+            'orbit y12' => 'walton=walton orbit y12',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             // zuum
@@ -2862,6 +2886,7 @@ final class Device implements DeviceInterface
             'rp04' => 'umi=umi rp04',
             'rp02' => 'umi=umi rp02',
             'rp01' => 'umi=umi rp01',
+            'mt06' => 'umi=umi mt06',
             // bq
             'aquaris x' => 'bq=bq aquaris x',
             'aquaris x5' => 'bq=bq aquaris x5',
@@ -2889,6 +2914,7 @@ final class Device implements DeviceInterface
             'pet 101-h232e' => 'peaq=peaq pet 101-h232e',
             // casper
             'via g5' => 'casper=casper via g5',
+            'via m40' => 'casper=casper via m40',
             // hannspree
             'hsg1416' => 'hannspree=hannspree hsg1416',
             'hsg1351' => 'hannspree=hannspree hsg1351',
@@ -3044,6 +3070,7 @@ final class Device implements DeviceInterface
             'tecno ck6' => 'tecno=tecno ck6',
             'tecno ck9n' => 'tecno=tecno ck9n',
             'tecno ad11' => 'tecno=tecno ad11',
+            'tecno cm5' => 'tecno=tecno cm5',
             // f150
             'b1 pro' => 'f150=f150 b1 pro',
             // foxxd
@@ -3115,6 +3142,8 @@ final class Device implements DeviceInterface
             't5 pro' => 'hotwav=hotwav t5 pro',
             'w10' => 'hotwav=hotwav w10',
             'cyber x' => 'hotwav=hotwav cyber x',
+            'tab r8' => 'hotwav=hotwav tab r8',
+            'tab r9 pro' => 'hotwav=hotwav tab r9 pro',
             // switel
             's5003d_champ' => 'switel=switel s5003d',
             // reeder
@@ -3283,6 +3312,8 @@ final class Device implements DeviceInterface
             'h2022' => 'iiif150=iiif150 h2022',
             'b2' => 'iiif150=iiif150 b2',
             'air1 pro' => 'iiif150=iiif150 air1 pro',
+            'raptor 5g' => 'iiif150=iiif150 raptor 5g',
+            'raptor' => 'iiif150=iiif150 raptor',
             // hmd
             'hmd fusion' => 'hmd=hmd fusion',
             'hmd arc' => 'hmd=hmd arc',
@@ -3295,6 +3326,8 @@ final class Device implements DeviceInterface
             'marine 1' => 'oscal=oscal marine 1',
             's60pro' => 'oscal=oscal s60 pro',
             'c80' => 'oscal=oscal c80',
+            'marine 2' => 'oscal=oscal marine 2',
+            'flat 2' => 'oscal=oscal flat 2',
             // vocal
             'vocal v0core' => 'vocal=vocal v0core',
             'vocal v2 lite' => 'vocal=vocal v2 lite',
@@ -3368,6 +3401,15 @@ final class Device implements DeviceInterface
             'onvo_32ov6000h', '32ov6000h' => 'onvo=onvo 32ov6000h',
             'onvo_42ov6000f', '42ov6000f' => 'onvo=onvo 42ov6000f',
             'onvo_55ov6000u', '55ov6000u' => 'onvo=onvo 55ov6000u',
+            'onvo_65ov6000u', '65ov6000u' => 'onvo=onvo 65ov6000u',
+            // digma
+            'zenith ta3d1p01' => 'digma=digma ta3d1p01',
+            'zenith ta3e1p01' => 'digma=digma ta3e1p01',
+            'zoom ta3d0p02' => 'digma=digma ta3d0p02',
+            'edge ta2d1m01' => 'digma=digma ta2d1m01',
+            'edge ta3e1m01' => 'digma=digma ta3e1m01',
+            // xgody
+            'n02' => 'xgody=xgody n02',
             // other
             default => null,
         };

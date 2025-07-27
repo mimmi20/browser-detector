@@ -78,5 +78,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "iiif150 raptor 5g": {
+    "deviceName": "Raptor 5G",
+    "marketingName": "Raptor 5G",
+    "manufacturer": "iiif150",
+    "brand": "iiif150",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2436,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "iiif150 raptor": {
+    "deviceName": "Raptor",
+    "marketingName": "Raptor",
+    "manufacturer": "iiif150",
+    "brand": "iiif150",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }
