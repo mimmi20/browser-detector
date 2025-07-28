@@ -793,10 +793,14 @@ final class Useragent4Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::exactly(2))
+            ->expects(self::exactly(3))
             ->method('getDeviceCode')
-            ->with('rmx3750x')
-            ->willReturn(null);
+            ->willReturnMap(
+                [
+                    ['rmx3750x', null],
+                    ['rmx3750x build', null],
+                ]
+            );
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();

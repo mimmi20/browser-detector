@@ -67,7 +67,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore)[^)]+)?\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
+                '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)(?: +(?:build|hmscore))[^)]+\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
                 $normalizedValue,
                 $matches,
             )
@@ -83,7 +83,23 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore)[^)]+)\)/i',
+                '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)[^)]*\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
+                $normalizedValue,
+                $matches,
+            )
+        ) {
+            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+
+            if ($code !== null) {
+                return $code;
+            }
+        }
+
+        $matches = [];
+
+        if (
+            preg_match(
+                '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?: +(?:build|hmscore))[^)]+\)/i',
                 $normalizedValue,
                 $matches,
             )
