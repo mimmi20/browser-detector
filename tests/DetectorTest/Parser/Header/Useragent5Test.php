@@ -144,10 +144,14 @@ final class Useragent5Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
+            ->expects(self::exactly(3))
             ->method('getDeviceCode')
-            ->with('rmx3741')
-            ->willReturn($deviceKey);
+            ->willReturnMap(
+                [
+                    ['rmx3741', $deviceKey],
+                    ['rmx3741 build', null],
+                ],
+            );
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();

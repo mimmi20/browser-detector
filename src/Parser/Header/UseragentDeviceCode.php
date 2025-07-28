@@ -20,8 +20,11 @@ use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
+use function array_filter;
+use function array_map;
 use function mb_strtolower;
 use function preg_match;
+use function reset;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
@@ -63,94 +66,37 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             return null;
         }
 
-        $matches = [];
+        $regexes = [
+            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)(?: +(?:build|hmscore))[^)]+\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
+            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)[^)]*\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?: +(?:build|hmscore))[^)]+\)/i',
+            '/dalvik\/[\d.]+ \(linux; (?:android [\d.]+;) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|miui)[^)]+)\)/i',
+            '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
+            '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
+        ];
 
-        if (
-            preg_match(
-                '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)(?: +(?:build|hmscore))[^)]+\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
-                $normalizedValue,
-                $matches,
-            )
-        ) {
-            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
+        );
 
-            if ($code !== null) {
-                return $code;
-            }
-        }
+        $results = array_map(
+            function (string $regex) use ($normalizedValue): string | null {
+                $matches = [];
 
-        $matches = [];
+                preg_match($regex, $normalizedValue, $matches);
 
-        if (
-            preg_match(
-                '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)[^)]*\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
-                $normalizedValue,
-                $matches,
-            )
-        ) {
-            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+                return $this->deviceCodeHelper->getDeviceCode(
+                    mb_strtolower($matches['devicecode'] ?? ''),
+                );
+            },
+            $filtered,
+        );
 
-            if ($code !== null) {
-                return $code;
-            }
-        }
+        $code = reset($results);
 
-        $matches = [];
-
-        if (
-            preg_match(
-                '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?: +(?:build|hmscore))[^)]+\)/i',
-                $normalizedValue,
-                $matches,
-            )
-        ) {
-            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
-
-            if ($code !== null) {
-                return $code;
-            }
-        }
-
-        $matches = [];
-
-        if (
-            preg_match(
-                '/dalvik\/[\d.]+ \(linux; (?:android [\d.]+;) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|miui)[^)]+)\)/i',
-                $normalizedValue,
-                $matches,
-            )
-        ) {
-            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
-
-            if ($code !== null) {
-                return $code;
-            }
-        }
-
-        $matches = [];
-
-        if (
-            preg_match(
-                '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
-                $normalizedValue,
-                $matches,
-            )
-        ) {
-            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
-
-            if ($code !== null) {
-                return $code;
-            }
-        }
-
-        $matches = [];
-
-        if (preg_match('/;FBDV\/(?P<devicecode>[^);\/]+);/', $normalizedValue, $matches)) {
-            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
-
-            if ($code !== null) {
-                return $code;
-            }
+        if ($code !== null && $code !== false) {
+            return $code;
         }
 
         $matches = [];
