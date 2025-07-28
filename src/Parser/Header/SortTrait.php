@@ -48,7 +48,7 @@ trait SortTrait
             $code = mb_strtolower($brand);
 
             $fullVersionList[$brand] = match ($code) {
-                'opera', 'google chrome', 'microsoft edge', 'yandex', 'yabrowser', 'huaweibrowser', 'atom', 'opera gx', 'avast secure browser', 'avastsecurebrowser', 'ccleaner browser', 'wavebrowser', 'android webview', 'brave', 'brave browser', 'duckduckgo', 'samsung internet', 'norton secure browser', 'norton private browser', 'headlesschrome', 'vivaldi', 'avg secure browser' => 1,
+                'opera', 'google chrome', 'microsoft edge', 'yandex', 'yabrowser', 'huaweibrowser', 'atom', 'opera gx', 'avast secure browser', 'avastsecurebrowser', 'ccleaner browser', 'wavebrowser', 'android webview', 'brave', 'brave browser', 'duckduckgo', 'samsung internet', 'norton secure browser', 'norton private browser', 'headlesschrome', 'vivaldi', 'avg secure browser', 'avira secure browser' => 1,
                 'operamobile', 'microsoft edge webview2', 'yowser' => 2,
                 default => 0,
             };

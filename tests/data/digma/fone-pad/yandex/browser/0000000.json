@@ -9,8 +9,8 @@
       "marketingName": "Citi 1902 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -51,8 +51,8 @@
       "marketingName": "iDrQ10 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -93,8 +93,8 @@
       "marketingName": "Optima E7.1 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -135,8 +135,8 @@
       "marketingName": "Optima Prime 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -177,8 +177,8 @@
       "marketingName": "Plane 8.2 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -219,8 +219,8 @@
       "marketingName": "Platina 9.7 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -261,8 +261,8 @@
       "marketingName": "Optima 7.07 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -303,8 +303,8 @@
       "marketingName": "Plane 10.5 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -345,8 +345,8 @@
       "marketingName": "Plane S7.0 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -387,8 +387,8 @@
       "marketingName": "Plane 8713T 8.0 3G",
       "manufacturer": "digma",
       "brand": "digma",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -416,6 +416,132 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Zoom TA3D0P02) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.577 YaSearchBrowser/25.26/apad BroPP/1.0 YaSearchApp/25.26/apad webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA3D0P02",
+      "marketingName": "Pro Zoom",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "25.26.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.577",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Zenith TA3E1P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.38 YaBrowser/25.3.0.38.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA3E1P01",
+      "marketingName": "Pro Zenith",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.3.0.38.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.38",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Zenith TA3D1P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.33 YaBrowser/25.3.0.33.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA3D1P01",
+      "marketingName": "Pro Zenith",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.3.0.33.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.33",
       "manufacturer": "google"
     }
   }

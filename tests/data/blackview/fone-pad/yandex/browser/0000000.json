@@ -127,6 +127,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Tab 80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.29 YaBrowser/23.9.9.29.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Tab 80",
+      "marketingName": "Tab 80",
+      "manufacturer": "blackview",
+      "brand": "blackview",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "23.9.9.29.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.5845.29",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Tab 60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.64 YaSearchBrowser/23.99/apad BroPP/1.0 YaSearchApp/23.99/apad webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -206,6 +248,90 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; MEGA 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.33 YaBrowser/25.3.0.33.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mega 8",
+      "marketingName": "Mega 8",
+      "manufacturer": "blackview",
+      "brand": "blackview",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 13
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.3.0.33.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.33",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; MEGA 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.33 YaBrowser/25.3.0.33.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mega 2",
+      "marketingName": "Mega 2",
+      "manufacturer": "blackview",
+      "brand": "blackview",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 12
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.3.0.33.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.33",
       "manufacturer": "google"
     }
   },

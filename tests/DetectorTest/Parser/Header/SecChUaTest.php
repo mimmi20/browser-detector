@@ -168,6 +168,7 @@ final class SecChUaTest extends TestCase
             ['"Not/A)Brand";v="8"', false, null, false, null],
             ['"Chromium";v="106", "Brave Browser";v="106", "Not;A=Brand";v="99"', true, 'brave', true, '106'],
             ['https://www.crazyfuturetech.com/', false, null, false, null],
+            ["\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Avira Secure Browser\";v=\"114\"", true, 'avira-secure-browser', true, '114'],
         ];
     }
 }

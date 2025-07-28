@@ -9,8 +9,8 @@
       "marketingName": "HK1 Max",
       "manufacturer": "vontar",
       "brand": "vontar",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -51,8 +51,8 @@
       "marketingName": "HK1 Mini",
       "manufacturer": "vontar",
       "brand": "vontar",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -93,8 +93,8 @@
       "marketingName": "HK1 Pro",
       "manufacturer": "vontar",
       "brand": "vontar",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -127,6 +127,90 @@
   },
   {
     "headers": {
+      "user-agent": "TV Bro/1.0 Mozilla/5.0 (Linux; Android 9; VONTAR X3 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Vontar device",
+      "marketingName": "general Vontar device",
+      "manufacturer": "vontar",
+      "brand": "vontar",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "81.0.4044.111",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; VONTAR X2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Vontar device",
+      "marketingName": "general Vontar device",
+      "manufacturer": "vontar",
+      "brand": "vontar",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "sec-ch-ua-model": "HK1RBOX-X4",
       "sec-ch-ua-platform": "Android",
       "sec-ch-ua-platform-version": "11.0.0",
@@ -141,8 +225,8 @@
       "marketingName": "HK1 RBox X4",
       "manufacturer": "vontar",
       "brand": "vontar",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,

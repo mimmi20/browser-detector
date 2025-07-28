@@ -75,6 +75,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'microsoft edge webview2' => 'edge webview',
             'headlesschrome' => 'headless-chrome',
             'brave browser' => 'brave',
+            'avira secure browser' => 'avira-secure-browser',
             default => $code,
         };
     }
