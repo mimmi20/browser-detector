@@ -9,8 +9,8 @@
       "marketingName": "IT1408",
       "manufacturer": "itel",
       "brand": "itel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -51,8 +51,8 @@
       "marketingName": "IT1503",
       "manufacturer": "itel",
       "brand": "itel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -93,8 +93,8 @@
       "marketingName": "iNote",
       "manufacturer": "itel",
       "brand": "itel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -135,8 +135,8 @@
       "marketingName": "A20",
       "manufacturer": "itel",
       "brand": "itel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -177,8 +177,8 @@
       "marketingName": "P33",
       "manufacturer": "itel",
       "brand": "itel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1440,
         "height": 720,
@@ -219,8 +219,8 @@
       "marketingName": "A23S",
       "manufacturer": "itel",
       "brand": "itel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -332,6 +332,48 @@
     "engine": {
       "name": "Blink",
       "version": "85.0.4183.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; itel S681LN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.154 Mobile Safari/537.36 OPR/78.5.4143.75924"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S681LN",
+      "marketingName": "S23+",
+      "manufacturer": "itel",
+      "brand": "itel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "78.5.4143.75924",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "117.0.5938.154",
       "manufacturer": "google"
     }
   }

@@ -4,8 +4,8 @@
     "marketingName": "general Onvo device",
     "manufacturer": "onvo",
     "brand": "onvo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -36,13 +36,77 @@
     "marketingName": "43OV6000F",
     "manufacturer": "onvo",
     "brand": "onvo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1080,
       "touch": false,
       "size": 50
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "onvo 32ov6000h": {
+    "deviceName": "32OV6000H",
+    "marketingName": "32OV6000H",
+    "manufacturer": "onvo",
+    "brand": "onvo",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": false,
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "onvo 42ov6000f": {
+    "deviceName": "42OV6000F",
+    "marketingName": "42OV6000F",
+    "manufacturer": "onvo",
+    "brand": "onvo",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 42
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "onvo 55ov6000u": {
+    "deviceName": "55OV6000U",
+    "marketingName": "55OV6000U",
+    "manufacturer": "onvo",
+    "brand": "onvo",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "onvo 65ov6000u": {
+    "deviceName": "65OV6000U",
+    "marketingName": "65OV6000U",
+    "manufacturer": "onvo",
+    "brand": "onvo",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 65
     },
     "type": "tv",
     "platform": "android"

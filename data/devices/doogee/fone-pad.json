@@ -1,7 +1,7 @@
 {
   "doogee t10plus": {
-    "deviceName": "T10Plus",
-    "marketingName": "T10Plus",
+    "deviceName": "T10 Plus",
+    "marketingName": "T10 Plus",
     "manufacturer": "doogee",
     "brand": "doogee",
     "dualOrientation": true,
@@ -11,6 +11,54 @@
       "height": 1080,
       "touch": true,
       "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "doogee t30pro": {
+    "deviceName": "T30 Pro",
+    "marketingName": "T30 Pro",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "doogee t10s": {
+    "deviceName": "T10S",
+    "marketingName": "T10S",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "doogee t20mini": {
+    "deviceName": "T20 Mini",
+    "marketingName": "T20 Mini",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8.4
     },
     "type": "fone-pad",
     "platform": "android"

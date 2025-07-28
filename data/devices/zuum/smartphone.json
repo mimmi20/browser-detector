@@ -4,8 +4,8 @@
     "marketingName": "A918",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -20,8 +20,8 @@
     "marketingName": "Blaze",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -36,8 +36,8 @@
     "marketingName": "Covet",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -52,8 +52,8 @@
     "marketingName": "E40",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
@@ -68,8 +68,8 @@
     "marketingName": "E60",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -84,8 +84,8 @@
     "marketingName": "Magno",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -100,8 +100,8 @@
     "marketingName": "Stedi",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
@@ -116,8 +116,8 @@
     "marketingName": "Zen I",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -132,8 +132,8 @@
     "marketingName": "M50",
     "manufacturer": "zuum",
     "brand": "zuum",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -187,6 +187,22 @@
       "height": 720,
       "touch": true,
       "size": 5.93
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zuum magno pro": {
+    "deviceName": "Magno Pro",
+    "marketingName": "Magno Pro",
+    "manufacturer": "zuum",
+    "brand": "zuum",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.3
     },
     "type": "smartphone",
     "platform": "android"

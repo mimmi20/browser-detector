@@ -18,7 +18,6 @@ use UaParser\ClientCodeInterface;
 
 use function array_key_first;
 use function mb_strtolower;
-use function str_contains;
 
 final class SecChUaClientCode implements ClientCodeInterface
 {
@@ -28,16 +27,7 @@ final class SecChUaClientCode implements ClientCodeInterface
     #[Override]
     public function hasClientCode(string $value): bool
     {
-        $list = $this->sort($value);
-
-        if ($list === null || $list === []) {
-            return false;
-        }
-
-        $key  = array_key_first($list);
-        $code = mb_strtolower($key);
-
-        return !str_contains($code, 'brand') && $code !== 'chromium';
+        return $this->sort($value) !== [];
     }
 
     /**
@@ -50,16 +40,12 @@ final class SecChUaClientCode implements ClientCodeInterface
     {
         $list = $this->sort($value);
 
-        if ($list === null || $list === []) {
+        if ($list === []) {
             return null;
         }
 
         $key  = array_key_first($list);
         $code = mb_strtolower($key);
-
-        if (str_contains($code, 'brand')) {
-            return null;
-        }
 
         return match ($code) {
             'operamobile' => 'opera mobile',
@@ -75,6 +61,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'microsoft edge webview2' => 'edge webview',
             'headlesschrome' => 'headless-chrome',
             'brave browser' => 'brave',
+            'avira secure browser' => 'avira-secure-browser',
             default => $code,
         };
     }

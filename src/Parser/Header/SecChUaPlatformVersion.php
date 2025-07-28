@@ -44,21 +44,23 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
             return null;
         }
 
-        if (mb_strtolower($code ?? '') === 'windows') {
-            $windowsVersion = (float) $value;
-
-            if ($windowsVersion < 1) {
-                $windowsVersion     *= 10;
-                $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
-
-                $value = $minorVersionMapping[$windowsVersion] ?? $value;
-            } elseif ($windowsVersion > 0 && $windowsVersion < 11) {
-                $value = '10';
-            } elseif ($windowsVersion > 10) {
-                $value = '11';
-            }
+        if ($code === null || mb_strtolower($code) !== 'windows') {
+            return $value;
         }
 
-        return $value;
+        $windowsVersion = (float) $value;
+
+        if ($windowsVersion < 1) {
+            $windowsVersion     *= 10;
+            $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
+
+            return $minorVersionMapping[$windowsVersion] ?? $value;
+        }
+
+        if ($windowsVersion < 11) {
+            return '10';
+        }
+
+        return '11';
     }
 }

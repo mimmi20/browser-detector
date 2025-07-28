@@ -86,6 +86,8 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
 
         $normalizer = $this->normalizerFactory->build();
 
+        $deviceCodeHelper = new Device();
+
         return match ($header) {
             Headers::HEADER_BAIDU_FLYFLOW => new DeviceCodeOnlyHeader(
                 value: $value,
@@ -141,7 +143,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 deviceCode: new UseragentDeviceCode(
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizer,
-                    deviceCodeHelper: new Device(),
+                    deviceCodeHelper: $deviceCodeHelper,
                 ),
                 clientCode: new UseragentClientCode(
                     browserParser: $this->browserParser,
@@ -231,7 +233,10 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
             ),
             Headers::HEADER_UCBROWSER_UA => new FullHeader(
                 value: $value,
-                deviceCode: new XUcbrowserUaDeviceCode(deviceParser: $this->deviceParser),
+                deviceCode: new XUcbrowserUaDeviceCode(
+                    deviceParser: $this->deviceParser,
+                    deviceCodeHelper: $deviceCodeHelper,
+                ),
                 clientCode: new XUcbrowserUaClientCode(),
                 clientVersion: new XUcbrowserUaClientVersion(),
                 platformCode: new XUcbrowserUaPlatformCode(),

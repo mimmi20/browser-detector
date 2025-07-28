@@ -4,8 +4,8 @@
     "marketingName": "Via A1",
     "manufacturer": "casper",
     "brand": "casper",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -20,8 +20,8 @@
     "marketingName": "Via G1 Plus",
     "manufacturer": "casper",
     "brand": "casper",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1440,
       "height": 720,
@@ -36,8 +36,8 @@
     "marketingName": "Via M1",
     "manufacturer": "casper",
     "brand": "casper",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -52,8 +52,8 @@
     "marketingName": "Via S",
     "manufacturer": "casper",
     "brand": "casper",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1520,
       "height": 720,
@@ -68,8 +68,8 @@
     "marketingName": "Via V10",
     "manufacturer": "casper",
     "brand": "casper",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -84,8 +84,8 @@
     "marketingName": "Via V3",
     "manufacturer": "casper",
     "brand": "casper",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -299,6 +299,22 @@
       "height": null,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "casper via m40": {
+    "deviceName": "Via M40",
+    "marketingName": "Via M40",
+    "manufacturer": "casper",
+    "brand": "casper",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
     },
     "type": "smartphone",
     "platform": "android"

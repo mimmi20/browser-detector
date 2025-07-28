@@ -46,5 +46,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "unihertz tank2": {
+    "deviceName": "Tank2",
+    "marketingName": "8849 Tank 2",
+    "manufacturer": "unihertz",
+    "brand": "unihertz",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.79
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "unihertz jelly star": {
+    "deviceName": "Jelly Star",
+    "marketingName": "Jelly Star",
+    "manufacturer": "unihertz",
+    "brand": "unihertz",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 3
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }
