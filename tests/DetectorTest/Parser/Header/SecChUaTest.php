@@ -137,7 +137,7 @@ final class SecChUaTest extends TestCase
     {
         return [
             ['" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"', true, 'chrome', true, '99'],
-            ['" Not A;Brand";v="99", "Chromium";v="101"', false, 'chromium', false, '101'],
+            ['" Not A;Brand";v="99", "Chromium";v="101"', false, null, false, null],
             ['" Not A;Brand";v="99", "Chromium";v="102", "Microsoft Edge";v="102"', true, 'edge mobile', true, '102'],
             ['" Not A;Brand";v="99", "Chromium";v="101", "Opera";v="101"', true, 'opera', true, '101'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "Yandex";v="22"', true, 'yabrowser', true, '22'],
@@ -147,12 +147,16 @@ final class SecChUaTest extends TestCase
             ['" Not A;Brand";v="99", "Chromium";v="99", "HuaweiBrowser";v="99"', true, 'huawei-browser', true, '99'],
             ['"Chromium";v="108", "Opera GX";v="94", "Not)A;Brand";v="99"', true, 'opera gx', true, '94'],
             ['"Chromium";v="110", "Not A(Brand";v="24", "Avast Secure Browser";v="110"', true, 'avast secure browser', true, '110'],
+            ['"Avast Secure Browser";v="110", "Chromium";v="110", "Not A(Brand";v="24"', true, 'avast secure browser', true, '110'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "CCleaner Browser";v="100"', true, 'ccleaner browser', true, '100'],
+            ['"CCleaner Browser";v="100", " Not A;Brand";v="99", "Chromium";v="100"', true, 'ccleaner browser', true, '100'],
             ['"AvastSecureBrowser";v="6.6.0", " Not A;Brand";v="99.0.0.0", "Chromium";v="98.0.4758.101"', true, 'avast secure browser', true, '6.6.0'],
             ['"WaveBrowser";v="112", "WaveBrowser";v="112", "Not:A-Brand";v="99"', true, 'wave-browser', true, '112'],
             ['"Opera";v="86", ";Not A Brand";v="99", "Chromium";v="100", "OperaMobile";v="69"', true, 'opera mobile', true, '69'],
             ['"Chromium";v="124", "Android WebView";v="124", "Not-A.Brand";v="99"', true, 'android webview', true, '124'],
+            ['"Android WebView";v="124", "Chromium";v="124", "Not-A.Brand";v="99"', true, 'android webview', true, '124'],
             ['"Chromium";v="130", "Brave";v="130", "Not?A_Brand";v="99"', true, 'brave', true, '130'],
+            ['"Brave";v="130", "Chromium";v="130", "Not?A_Brand";v="99"', true, 'brave', true, '130'],
             ['"DuckDuckGo";v="119", "Chromium";v="119", "Not?A_Brand";v="24"', true, 'duckduck app', true, '119'],
             ['"Not/A)Brand";v="8", "Chromium";v="126", "Android WebView";v="126"', true, 'android webview', true, '126'],
             ['"Not/A)Brand";v="99", "Samsung Internet";v="23.0", "Chromium";v="115"', true, 'samsungbrowser', true, '23.0'],
@@ -163,12 +167,15 @@ final class SecChUaTest extends TestCase
             ['"Not/A)Brand";v="8", "Chromium";v="126", "Norton Private Browser";v="126"', true, 'norton-secure-browser', true, '126'],
             ['"Not/A)Brand";v="8", "Chromium";v="126", "Vivaldi";v="6.8"', true, 'vivaldi', true, '6.8'],
             ['"Not/A)Brand";v="8", "Chromium";v="126", "AVG Secure Browser";v="126"', true, 'avg secure browser', true, '126'],
+            ['"AVG Secure Browser";v="126", "Not/A)Brand";v="8", "Chromium";v="126"', true, 'avg secure browser', true, '126'],
             ['"Not/A)Brand";v="8", "Chromium";v="126", "YaBrowser";v="24.7"', true, 'yabrowser', true, '24.7'],
             ['"Not/A)Brand";v="8", "Chromium";v="126", "Android WebView";v="126"', true, 'android webview', true, '126'],
             ['"Not/A)Brand";v="8"', false, null, false, null],
             ['"Chromium";v="106", "Brave Browser";v="106", "Not;A=Brand";v="99"', true, 'brave', true, '106'],
+            ['"Brave Browser";v="106", "Chromium";v="106", "Not;A=Brand";v="99"', true, 'brave', true, '106'],
             ['https://www.crazyfuturetech.com/', false, null, false, null],
             ['"Not.A/Brand";v="8", "Chromium";v="114", "Avira Secure Browser";v="114"', true, 'avira-secure-browser', true, '114'],
+            ['"Avira Secure Browser";v="114", "Not.A/Brand";v="8", "Chromium";v="114"', true, 'avira-secure-browser', true, '114'],
         ];
     }
 }

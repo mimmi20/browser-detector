@@ -16,12 +16,7 @@ namespace BrowserDetector\Parser\Header;
 use Override;
 use UaParser\ClientVersionInterface;
 
-use function array_key_first;
-use function current;
-use function key;
-use function mb_strtolower;
 use function reset;
-use function str_contains;
 
 final class SecChUaClientVersion implements ClientVersionInterface
 {
@@ -31,22 +26,15 @@ final class SecChUaClientVersion implements ClientVersionInterface
     #[Override]
     public function hasClientVersion(string $value): bool
     {
-        $list = $this->sort($value);
-
-        if ($list === []) {
-            return false;
-        }
-
-        $key  = array_key_first($list);
-        $code = mb_strtolower($key);
-
-        return !str_contains($code, 'brand') && $code !== 'chromium';
+        return $this->sort($value) !== [];
     }
 
     /**
      * @return non-empty-string|null
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
     public function getClientVersion(string $value, string | null $code = null): string | null
@@ -57,13 +45,9 @@ final class SecChUaClientVersion implements ClientVersionInterface
             return null;
         }
 
-        reset($list);
-        $version = current($list);
-        $key     = key($list);
+        $version = reset($list);
 
-        $code = mb_strtolower($key);
-
-        if (str_contains($code, 'brand') || $version === '') {
+        if ($version === '') {
             return null;
         }
 

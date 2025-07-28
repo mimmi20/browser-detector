@@ -13,13 +13,16 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use function array_filter;
 use function array_keys;
 use function array_multisort;
 use function mb_strlen;
 use function mb_strtolower;
 use function mb_substr;
 use function preg_match;
+use function str_contains;
 
+use const ARRAY_FILTER_USE_KEY;
 use const SORT_ASC;
 use const SORT_DESC;
 use const SORT_NATURAL;
@@ -44,12 +47,21 @@ trait SortTrait
             $value                   = mb_substr($value, mb_strlen($matches[0]));
         }
 
-        foreach (array_keys($list) as $brand) {
+        $brands = array_filter(
+            $list,
+            static function (string $brand): bool {
+                $code = mb_strtolower($brand);
+
+                return !str_contains($code, 'brand') && $code !== 'chromium';
+            },
+            ARRAY_FILTER_USE_KEY,
+        );
+
+        foreach (array_keys($brands) as $brand) {
             $code = mb_strtolower($brand);
 
             $fullVersionList[$brand] = match ($code) {
-                'opera', 'google chrome', 'microsoft edge', 'yandex', 'yabrowser', 'huaweibrowser', 'atom', 'opera gx', 'avast secure browser', 'avastsecurebrowser', 'ccleaner browser', 'wavebrowser', 'android webview', 'brave', 'brave browser', 'duckduckgo', 'samsung internet', 'norton secure browser', 'norton private browser', 'headlesschrome', 'vivaldi', 'avg secure browser', 'avira secure browser' => 1,
-                'operamobile', 'microsoft edge webview2', 'yowser' => 2,
+                'operamobile', 'microsoft edge webview2', 'yowser' => 1,
                 default => 0,
             };
 
@@ -63,9 +75,9 @@ trait SortTrait
             $nameList,
             SORT_ASC,
             SORT_NATURAL,
-            $list,
+            $brands,
         );
 
-        return $list;
+        return $brands;
     }
 }
