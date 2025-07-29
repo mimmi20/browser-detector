@@ -491,6 +491,7 @@ final class XRequestedWithTest extends TestCase
             ['org.aka.messenger', true, 'aka', true, null],
             ['com.saf.seca', true, 'search-craft', true, null],
             ['com.fsecure.ms.teliasweden', true, 'telia-trygg', true, null],
+            ['com.gener8ads.wallet', true, 'gener8-browser', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }

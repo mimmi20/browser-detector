@@ -45,7 +45,7 @@ final class DeviceLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws Exception
      */
-    public function testInvokeNotInCache(): void
+    public function testLoadNotInCache(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -122,7 +122,7 @@ final class DeviceLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws Exception
      */
-    public function testInvokeNullInCache(): void
+    public function testLoadNullInCache(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -199,7 +199,7 @@ final class DeviceLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws Exception
      */
-    public function testInvokeNullInCache2(): void
+    public function testLoadNullInCache2(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -707,5 +707,64 @@ final class DeviceLoaderTest extends TestCase
 
         self::assertSame($expected->toArray(), $result->getDevice()->toArray());
         self::assertSame('test-platform', $result->getOs());
+    }
+
+    /**
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws Exception
+     */
+    public function testLoadWithInitException(): void
+    {
+        $key = 'test-key';
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('init')
+            ->willThrowException(new RuntimeException('error'));
+        $initData
+            ->expects(self::never())
+            ->method('getItem');
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionCode(0);
+        $this->expectExceptionMessage('the device with key "' . $key . '" was not found');
+
+        $object->load($key);
     }
 }

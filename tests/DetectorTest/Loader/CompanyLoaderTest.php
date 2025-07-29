@@ -228,4 +228,34 @@ final class CompanyLoaderTest extends TestCase
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")',
         );
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws RuntimeException
+     * @throws ReflectionException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testLoadWithInitException(): void
+    {
+        $companyKey = 'A6Corp';
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('init')
+            ->willThrowException(new RuntimeException('error'));
+        $initData
+            ->expects(self::never())
+            ->method('getItem');
+
+        $object = new CompanyLoader($initData);
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionCode(0);
+        $this->expectExceptionMessage('the company with key "' . $companyKey . '" was not found');
+
+        $object->load($companyKey);
+    }
 }
