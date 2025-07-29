@@ -144,7 +144,7 @@ final class Useragent5Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::exactly(3))
+            ->expects(self::exactly(4))
             ->method('getDeviceCode')
             ->willReturnMap(
                 [
