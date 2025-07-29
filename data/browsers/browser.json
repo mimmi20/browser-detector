@@ -5395,5 +5395,89 @@
       "search": null
     },
     "engine": null
+  },
+  "opera-crypto": {
+    "name": "Opera Crypto",
+    "manufacturer": "opera",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "gener8-browser": {
+    "name": "Gener8 Browser",
+    "manufacturer": "gener8",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "crow-browser": {
+    "name": "Crow Browser",
+    "manufacturer": "tbucci",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "vewd-core": {
+    "name": "Vewd Core",
+    "manufacturer": "tivo",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "edge-side-panel": {
+    "name": "Edge Side Panel",
+    "manufacturer": "microsoft",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "headless-edge": {
+    "name": "Headless Edge",
+    "manufacturer": "microsoft",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HeadlessEdg"
+      ]
+    },
+    "engine": null
+  },
+  "wavebox-browser": {
+    "name": "Wavebox Browser",
+    "manufacturer": "bookry",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Wavebox"
+      ]
+    },
+    "engine": null
+  },
+  "total-browser": {
+    "name": "Total Browser",
+    "manufacturer": "total-security",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }

@@ -62,6 +62,17 @@ final class SecChUaClientCode implements ClientCodeInterface
             'headlesschrome' => 'headless-chrome',
             'brave browser' => 'brave',
             'avira secure browser' => 'avira-secure-browser',
+            'whale' => 'whale browser',
+            'oculus browser' => 'oculus-browser',
+            'coccoc' => 'coc_coc_browser',
+            'opera crypto' => 'opera-crypto',
+            'gener8' => 'gener8-browser',
+            'crowbrowser' => 'crow-browser',
+            'vewd core' => 'vewd-core',
+            'edge side panel' => 'edge-side-panel',
+            'headlessedg' => 'headless-edge',
+            'wavebox' => 'wavebox-browser',
+            'total browser' => 'total-browser',
             default => $code,
         };
     }

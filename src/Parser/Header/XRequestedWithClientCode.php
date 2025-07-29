@@ -359,6 +359,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'org.aka.messenger' => 'aka',
             'com.saf.seca' => 'search-craft',
             'com.fsecure.ms.teliasweden' => 'telia-trygg',
+            'com.gener8ads.wallet' => 'gener8-browser',
             default => null,
         };
     }
