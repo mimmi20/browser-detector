@@ -136,7 +136,7 @@ final class Useragent3Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getDeviceCode')
             ->with('b1-7a0')
             ->willReturn($deviceKey);
@@ -345,7 +345,7 @@ final class Useragent3Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getDeviceCode')
             ->with('b1-7a0')
             ->willReturn($deviceKey);
@@ -542,7 +542,7 @@ final class Useragent3Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getDeviceCode')
             ->with('b1-7a0')
             ->willReturn($deviceKey);
@@ -738,7 +738,7 @@ final class Useragent3Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getDeviceCode')
             ->with('b1-7a0')
             ->willReturn($deviceKey);
