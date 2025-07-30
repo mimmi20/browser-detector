@@ -689,6 +689,7 @@ final class DeviceTest extends TestCase
             ['2409FPCC4I', 'xiaomi=xiaomi 2409fpcc4i'],
             ['25019PNF3C', 'xiaomi=xiaomi 25019pnf3c'],
             ['24116RNC1I', 'xiaomi=xiaomi 24116rnc1i'],
+            ['POCO X5 GT PRO', 'xiaomi=xiaomi poco x5 gt pro'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -2852,6 +2853,7 @@ final class DeviceTest extends TestCase
             ['Tab 80', 'blackview=blackview tab 80'],
             ['MEGA 2', 'blackview=blackview mega 2'],
             ['MEGA 8', 'blackview=blackview mega 8'],
+            ['Tab 10', 'blackview=blackview tab 10'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -2876,6 +2878,8 @@ final class DeviceTest extends TestCase
             ['LIFETAB_P970X', 'medion=medion p970x'],
             ['P852X', 'medion=medion p852x'],
             ['LIFETAB_P831X.2', 'medion=medion lifetab p831x.2'],
+            ['LIFETAB E1091X', 'medion=medion lifetab e1091x'],
+            ['LIFETAB E1044X', 'medion=medion lifetab e1044x'],
             // caterpillar
             ['S60', 'caterpillar=caterpillar s60'],
             ['S41', 'caterpillar=caterpillar s41'],
@@ -3542,6 +3546,7 @@ final class DeviceTest extends TestCase
             ['Air1 Pro', 'iiif150=iiif150 air1 pro'],
             ['Raptor 5G', 'iiif150=iiif150 raptor 5g'],
             ['Raptor', 'iiif150=iiif150 raptor'],
+            ['Air1 Ultra Pro', 'iiif150=iiif150 air1 ultra pro'],
             // hmd
             ['HMD Fusion', 'hmd=hmd fusion'],
             ['HMD ARC', 'hmd=hmd arc'],
@@ -3698,6 +3703,19 @@ final class DeviceTest extends TestCase
             ['Edge TA3E1M01', 'digma=digma ta3e1m01'],
             // xgody
             ['N02', 'xgody=xgody n02'],
+            // yumkem
+            ['N10-EEA', 'yumkem=yumkem n10'],
+            // safaricom
+            ['Neon Ray Ultra', 'safaricom=safaricom neon ray ultra'],
+            // free-yond
+            ['2305003M', 'free-yond=free-yond 2305003m'],
+            // at&t
+            ['WTATTRW2', 'at-t=at-t wtattrw2'],
+            // benco
+            ['AE9260', 'benco=benco ae9260'],
+            ['AE9240', 'benco=benco ae9240'],
+            // n-one
+            ['Npad X', 'n-one=n-one npad x'],
             // other
             ['Model"', null],
             [': "', null],

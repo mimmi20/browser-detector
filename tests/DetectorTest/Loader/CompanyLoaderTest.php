@@ -14,7 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\Data\Company;
+use BrowserDetector\Loader\Data\Company as CompanyData;
 use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\InitData\Company as DataCompany;
 use Laminas\Hydrator\Strategy\StrategyInterface;
@@ -29,6 +29,7 @@ use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 
 #[CoversClass(CompanyLoader::class)]
+#[CoversClass(CompanyData::class)]
 final class CompanyLoaderTest extends TestCase
 {
     /**
@@ -39,7 +40,7 @@ final class CompanyLoaderTest extends TestCase
     {
         $companyKey = 'A6Corp';
 
-        $initData = new Company(
+        $initData = new CompanyData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -85,7 +86,7 @@ final class CompanyLoaderTest extends TestCase
     {
         $companyKey = 'A6Corp';
 
-        $initData = new Company(
+        $initData = new CompanyData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -136,7 +137,7 @@ final class CompanyLoaderTest extends TestCase
         $companyName = 'A6 Corp';
         $brand       = 'A6 Corp';
 
-        $initData = new Company(
+        $initData = new CompanyData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -178,7 +179,7 @@ final class CompanyLoaderTest extends TestCase
         self::assertSame(
             $companyName,
             $result->getName(),
-            'Expected Company name to be "' . $companyName . '" (was "' . $result->getName() . '")',
+            'Expected CompanyData name to be "' . $companyName . '" (was "' . $result->getName() . '")',
         );
         self::assertSame(
             $brand,

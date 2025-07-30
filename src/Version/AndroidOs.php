@@ -117,8 +117,6 @@ final readonly class AndroidOs implements VersionFactoryInterface
             } catch (NotNumericException) {
                 // do nothing
             }
-
-            return new NullVersion();
         }
 
         if (mb_stripos($useragent, 'gingerbread') !== false) {
@@ -127,8 +125,6 @@ final readonly class AndroidOs implements VersionFactoryInterface
             } catch (NotNumericException) {
                 // do nothing
             }
-
-            return new NullVersion();
         }
 
         if (mb_stripos($useragent, 'android eclair') !== false) {

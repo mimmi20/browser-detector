@@ -61,7 +61,7 @@ trait SortTrait
             $code = mb_strtolower($brand);
 
             $fullVersionList[$brand] = match ($code) {
-                'operamobile', 'microsoft edge webview2', 'yowser', 'edge side panel' => 1,
+                'operamobile', 'microsoft edge webview2', 'yowser', 'edge side panel', 'version' => 1,
                 default => 0,
             };
 

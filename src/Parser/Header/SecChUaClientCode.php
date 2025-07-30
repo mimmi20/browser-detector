@@ -73,6 +73,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'headlessedg' => 'headless-edge',
             'wavebox' => 'wavebox-browser',
             'total browser' => 'total-browser',
+            'version' => 'safari',
             default => $code,
         };
     }

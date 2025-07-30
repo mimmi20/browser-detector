@@ -41,6 +41,7 @@ use UaResult\Engine\Engine;
 use UnexpectedValueException;
 
 #[CoversClass(EngineLoader::class)]
+#[CoversClass(EngineData::class)]
 final class EngineLoaderTest extends TestCase
 {
     /**
