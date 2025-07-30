@@ -15,7 +15,7 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Data\Client;
+use BrowserDetector\Loader\Data\Client as ClientData;
 use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\InitData\Client as DataClient;
 use BrowserDetector\Version\TestFactory;
@@ -35,6 +35,7 @@ use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
 #[CoversClass(BrowserLoader::class)]
+#[CoversClass(ClientData::class)]
 final class BrowserLoaderTest extends TestCase
 {
     /**
@@ -69,7 +70,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new Client(
+        $initData = new ClientData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -233,7 +234,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new Client(
+        $initData = new ClientData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -331,7 +332,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new Client(
+        $initData = new ClientData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void

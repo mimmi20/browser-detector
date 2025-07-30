@@ -184,9 +184,11 @@ final class SecChUaTest extends TestCase
             ['"Not.A/Brand";v="8", "Chromium";v="94", "CrowBrowser";v="94"', true, 'crow-browser', true, '94'],
             ['"Not_A Brand";v="8", "Chromium";v="120", "Vewd Core";v="4.24"', true, 'vewd-core', true, '4.24'],
             ['"Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120", "Edge Side Panel";v="120"', true, 'edge-side-panel', true, '120'],
+            ['"Not_A Brand";v="8", "Edge Side Panel";v="120", "Chromium";v="120", "Microsoft Edge";v="120"', true, 'edge-side-panel', true, '120'],
             ['"Not)A;Brand";v="99", "HeadlessEdg";v="127", "Chromium";v="127"', true, 'headless-edge', true, '127'],
             ['"Chromium";v="118", "Wavebox";v="118", "Not=A?Brand";v="99"', true, 'wavebox-browser', true, '118'],
             ['"Not)A;Brand";v="24", "Total Browser";v="116"', true, 'total-browser', true, '116'],
+            ["\"Version\"; v=\"14.1.2\", \"Safari\"; v=\"605.1.15\", \"Chromium\"; v=\"Not A;Brand\", \"Not;A Brand\"; v=\"99\"", true, 'safari', true, '14.1.2'],
         ];
     }
 }

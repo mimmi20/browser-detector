@@ -36,6 +36,7 @@ use UaResult\Device\Display;
 use UnexpectedValueException;
 
 #[CoversClass(DeviceLoader::class)]
+#[CoversClass(DeviceData::class)]
 final class DeviceLoaderTest extends TestCase
 {
     /**

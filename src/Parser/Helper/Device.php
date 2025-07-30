@@ -667,6 +667,7 @@ final class Device implements DeviceInterface
             '2409fpcc4i' => 'xiaomi=xiaomi 2409fpcc4i',
             '25019pnf3c' => 'xiaomi=xiaomi 25019pnf3c',
             '24116rnc1i' => 'xiaomi=xiaomi 24116rnc1i',
+            'poco x5 gt pro' => 'xiaomi=xiaomi poco x5 gt pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2644,6 +2645,7 @@ final class Device implements DeviceInterface
             'tab 80' => 'blackview=blackview tab 80',
             'mega 2' => 'blackview=blackview mega 2',
             'mega 8' => 'blackview=blackview mega 8',
+            'tab 10' => 'blackview=blackview tab 10',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -2668,6 +2670,8 @@ final class Device implements DeviceInterface
             'lifetab_p970x' => 'medion=medion p970x',
             'p852x' => 'medion=medion p852x',
             'lifetab_p831x.2' => 'medion=medion lifetab p831x.2',
+            'lifetab e1091x' => 'medion=medion lifetab e1091x',
+            'lifetab e1044x' => 'medion=medion lifetab e1044x',
             // caterpillar
             's60' => 'caterpillar=caterpillar s60',
             's41' => 'caterpillar=caterpillar s41',
@@ -3314,6 +3318,7 @@ final class Device implements DeviceInterface
             'air1 pro' => 'iiif150=iiif150 air1 pro',
             'raptor 5g' => 'iiif150=iiif150 raptor 5g',
             'raptor' => 'iiif150=iiif150 raptor',
+            'air1 ultra pro' => 'iiif150=iiif150 air1 ultra pro',
             // hmd
             'hmd fusion' => 'hmd=hmd fusion',
             'hmd arc' => 'hmd=hmd arc',
@@ -3410,6 +3415,19 @@ final class Device implements DeviceInterface
             'edge ta3e1m01' => 'digma=digma ta3e1m01',
             // xgody
             'n02' => 'xgody=xgody n02',
+            // yumkem
+            'n10-eea' => 'yumkem=yumkem n10',
+            // safaricom
+            'neon ray ultra' => 'safaricom=safaricom neon ray ultra',
+            // free-yond
+            '2305003m' => 'free-yond=free-yond 2305003m',
+            // at&t
+            'wtattrw2' => 'at-t=at-t wtattrw2',
+            // benco
+            'ae9260' => 'benco=benco ae9260',
+            'ae9240' => 'benco=benco ae9240',
+            // n-one
+            'npad x' => 'n-one=n-one npad x',
             // other
             default => null,
         };
