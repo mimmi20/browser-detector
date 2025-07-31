@@ -2580,6 +2580,7 @@ final class DeviceTest extends TestCase
             ['T10S', 'doogee=doogee t10s'],
             ['T20Mini', 'doogee=doogee t20mini'],
             ['V40 Pro', 'doogee=doogee v40 pro'],
+            ['T20S', 'doogee=doogee t20s'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -2990,6 +2991,7 @@ final class DeviceTest extends TestCase
             ['ZUUM_E60', 'zuum=zuum e60'],
             ['ZUUM_E40', 'zuum=zuum e40'],
             ['Magno Pro', 'zuum=zuum magno pro'],
+            ['NOVUS TAB', 'zuum=zuum novus tab'],
             // retroid-pocket
             ['Retroid Pocket 2+', 'retroid-pocket=retroid-pocket 2 plus'],
             ['Retroid Pocket 4 Pro', 'retroid-pocket=retroid-pocket 4 pro'],
@@ -3203,6 +3205,7 @@ final class DeviceTest extends TestCase
             ['SHARK KLE-H0', 'black-shark=black-shark kle-h0'],
             // t-mobile
             ['T Phone Pro', 't-mobile=t-mobile t phone pro'],
+            ['T Phone (2023)', 't-mobile=t-mobile t phone 2023'],
             // tecno
             ['TECNO CI6', 'tecno=tecno ci6'],
             ['CAMON 20 Pro', 'tecno=tecno camon 20 pro'],
@@ -3716,6 +3719,12 @@ final class DeviceTest extends TestCase
             ['AE9240', 'benco=benco ae9240'],
             // n-one
             ['Npad X', 'n-one=n-one npad x'],
+            // atmpc
+            ['IT-801B', 'atmpc=atmpc it-801b'],
+            // vios
+            ['VTAB7', 'vios=vios vtab7'],
+            // global-sec
+            ['GLOBALSEC TAB TEN', 'global-sec=global-sec tab ten'],
             // other
             ['Model"', null],
             [': "', null],

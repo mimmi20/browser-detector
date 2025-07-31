@@ -2383,6 +2383,7 @@ final class Device implements DeviceInterface
             't10s' => 'doogee=doogee t10s',
             't20mini' => 'doogee=doogee t20mini',
             'v40 pro' => 'doogee=doogee v40 pro',
+            't20s' => 'doogee=doogee t20s',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -2782,6 +2783,7 @@ final class Device implements DeviceInterface
             'zuum_e60' => 'zuum=zuum e60',
             'zuum_e40' => 'zuum=zuum e40',
             'magno pro' => 'zuum=zuum magno pro',
+            'novus tab' => 'zuum=zuum novus tab',
             // retroid-pocket
             'retroid pocket 2+' => 'retroid-pocket=retroid-pocket 2 plus',
             'retroid pocket 4 pro' => 'retroid-pocket=retroid-pocket 4 pro',
@@ -2994,6 +2996,7 @@ final class Device implements DeviceInterface
             'shark kle-h0' => 'black-shark=black-shark kle-h0',
             // t-mobile
             't phone pro' => 't-mobile=t-mobile t phone pro',
+            't phone (2023)' => 't-mobile=t-mobile t phone 2023',
             // tecno
             'tecno ci6' => 'tecno=tecno ci6',
             'camon 20 pro' => 'tecno=tecno camon 20 pro',
@@ -3428,6 +3431,12 @@ final class Device implements DeviceInterface
             'ae9240' => 'benco=benco ae9240',
             // n-one
             'npad x' => 'n-one=n-one npad x',
+            // atmpc
+            'it-801b' => 'atmpc=atmpc it-801b',
+            // vios
+            'vtab7' => 'vios=vios vtab7',
+            // global-sec
+            'globalsec tab ten' => 'global-sec=global-sec tab ten',
             // other
             default => null,
         };
