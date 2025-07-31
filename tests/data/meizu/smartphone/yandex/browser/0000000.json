@@ -418,5 +418,47 @@
       "version": "80.0.3987.132",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; M5 Note Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.110 Mobile Safari/537.36 YaApp_Android/10.61 YaSearchBrowser/10.61"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M5 Note",
+      "marketingName": "M5 Note",
+      "manufacturer": "meizu",
+      "brand": "meizu",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "10.61.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.110",
+      "manufacturer": "google"
+    }
   }
 ]
