@@ -41,13 +41,9 @@ final class SecChUaClientVersion implements ClientVersionInterface
     {
         $list = $this->sort($value);
 
-        if ($list === []) {
-            return null;
-        }
-
         $version = reset($list);
 
-        if ($version === '') {
+        if ($version === false) {
             return null;
         }
 

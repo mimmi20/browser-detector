@@ -142,6 +142,30 @@ final class MacosTest extends TestCase
                 'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/24.5.0',
                 '15.5.0',
             ],
+            [
+                'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/23.3.0',
+                '14.3.0',
+            ],
+            [
+                'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/23.4.0',
+                '14.4.0',
+            ],
+            [
+                'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/23.5.0',
+                '14.5.0',
+            ],
+            [
+                'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/23.6.0',
+                '14.6.0',
+            ],
+            [
+                'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/24.6.0',
+                '15.6.0',
+            ],
+            [
+                'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/25.0.0',
+                '16.0.0',
+            ],
         ];
     }
 

@@ -116,8 +116,6 @@ final readonly class RulefileParser implements RulefileParserInterface
                             sprintf('could not match rule "%s" of file %s: %s', $rule, $file, $error),
                         ),
                     );
-
-                    return false;
                 }
 
                 return $match === 1;

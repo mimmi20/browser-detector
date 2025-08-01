@@ -35,10 +35,6 @@ final readonly class XUcbrowserDeviceUaPlatformCode implements PlatformCodeInter
     #[Override]
     public function hasPlatformCode(string $value): bool
     {
-        if ($value === '?') {
-            return false;
-        }
-
         return (bool) preg_match(
             '/bada|android|blackberry|brew|iphone|mre|windows|mtk|symbian/i',
             $value,

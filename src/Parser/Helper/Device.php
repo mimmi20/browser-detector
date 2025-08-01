@@ -667,6 +667,8 @@ final class Device implements DeviceInterface
             '2409fpcc4i' => 'xiaomi=xiaomi 2409fpcc4i',
             '25019pnf3c' => 'xiaomi=xiaomi 25019pnf3c',
             '24116rnc1i' => 'xiaomi=xiaomi 24116rnc1i',
+            'poco x5 gt pro' => 'xiaomi=xiaomi poco x5 gt pro',
+            '22041219pg' => 'xiaomi=xiaomi 22041219pg',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -736,6 +738,7 @@ final class Device implements DeviceInterface
             'zte a2023p', 'a2023p' => 'zte=zte a2023p',
             'zte a2023pg' => 'zte=zte a2023pg',
             'z2458' => 'zte=zte z2458',
+            'np01j' => 'zte=zte np01j',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -2237,6 +2240,19 @@ final class Device implements DeviceInterface
             'i2213' => 'vivo=vivo i2213',
             'i2207' => 'vivo=vivo i2207',
             'v2438' => 'vivo=vivo v2438',
+            'i2223' => 'vivo=vivo i2223',
+            'v2307' => 'vivo=vivo v2307',
+            'v2244' => 'vivo=vivo v2244',
+            'v2312a' => 'vivo=vivo v2312a',
+            'v2312' => 'vivo=vivo v2312',
+            'v2312ba' => 'vivo=vivo v2312ba',
+            'v2324' => 'vivo=vivo v2324',
+            'v2324ha' => 'vivo=vivo v2324ha',
+            'v2324a' => 'vivo=vivo v2324a',
+            'v2309' => 'vivo=vivo v2309',
+            'v2309a' => 'vivo=vivo v2309a',
+            'v2308' => 'vivo=vivo v2308',
+            'v2325' => 'vivo=vivo v2325',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2382,6 +2398,7 @@ final class Device implements DeviceInterface
             't10s' => 'doogee=doogee t10s',
             't20mini' => 'doogee=doogee t20mini',
             'v40 pro' => 'doogee=doogee v40 pro',
+            't20s' => 'doogee=doogee t20s',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -2420,6 +2437,7 @@ final class Device implements DeviceInterface
             'note 30' => 'cubot=cubot note 30',
             'pocket 3' => 'cubot=cubot pocket 3',
             'tab kingkong' => 'cubot=cubot tab king kong',
+            'p80' => 'cubot=cubot p80',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -2644,6 +2662,9 @@ final class Device implements DeviceInterface
             'tab 80' => 'blackview=blackview tab 80',
             'mega 2' => 'blackview=blackview mega 2',
             'mega 8' => 'blackview=blackview mega 8',
+            'tab 10' => 'blackview=blackview tab 10',
+            'a200 pro' => 'blackview=blackview a200 pro',
+            'a52 pro' => 'blackview=blackview a52 pro',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -2668,6 +2689,8 @@ final class Device implements DeviceInterface
             'lifetab_p970x' => 'medion=medion p970x',
             'p852x' => 'medion=medion p852x',
             'lifetab_p831x.2' => 'medion=medion lifetab p831x.2',
+            'lifetab e1091x' => 'medion=medion lifetab e1091x',
+            'lifetab e1044x' => 'medion=medion lifetab e1044x',
             // caterpillar
             's60' => 'caterpillar=caterpillar s60',
             's41' => 'caterpillar=caterpillar s41',
@@ -2714,6 +2737,7 @@ final class Device implements DeviceInterface
             'infinix x6711' => 'infinix=infinix x6711',
             'infinix x6815d' => 'infinix=infinix x6815d',
             'infinix x6815c' => 'infinix=infinix x6815c',
+            'infinix x6832' => 'infinix=infinix x6832',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -2752,6 +2776,7 @@ final class Device implements DeviceInterface
             'hk1 pro' => 'vontar=vontar hk1 pro',
             'hk1 max' => 'vontar=vontar hk1 max',
             'vontar r3' => 'vontar=vontar r3',
+            'dq08' => 'vontar=vontar dq08',
             // hisense
             'hlte239e' => 'hisense=hisense hlte239e',
             'hisense a6' => 'hisense=hisense a6',
@@ -2778,6 +2803,7 @@ final class Device implements DeviceInterface
             'zuum_e60' => 'zuum=zuum e60',
             'zuum_e40' => 'zuum=zuum e40',
             'magno pro' => 'zuum=zuum magno pro',
+            'novus tab' => 'zuum=zuum novus tab',
             // retroid-pocket
             'retroid pocket 2+' => 'retroid-pocket=retroid-pocket 2 plus',
             'retroid pocket 4 pro' => 'retroid-pocket=retroid-pocket 4 pro',
@@ -2840,6 +2866,7 @@ final class Device implements DeviceInterface
             'hd60i' => 'vortex=vortex hd60i',
             'hd60' => 'vortex=vortex hd60',
             'hd55' => 'vortex=vortex hd55',
+            'cmg101' => 'vortex=vortex cmg101',
             // spc
             'gravity_3_se' => 'spc=spc gravity 3 se',
             'gravity_3_mini' => 'spc=spc gravity 3 mini',
@@ -2990,6 +3017,7 @@ final class Device implements DeviceInterface
             'shark kle-h0' => 'black-shark=black-shark kle-h0',
             // t-mobile
             't phone pro' => 't-mobile=t-mobile t phone pro',
+            't phone (2023)', 't phone (2023' => 't-mobile=t-mobile t phone 2023',
             // tecno
             'tecno ci6' => 'tecno=tecno ci6',
             'camon 20 pro' => 'tecno=tecno camon 20 pro',
@@ -3217,6 +3245,7 @@ final class Device implements DeviceInterface
             'bf9200' => 'bifer=bifer bf9200',
             // goodtel
             'g10_eea' => 'goodtel=goodtel g10',
+            'g3_eea' => 'goodtel=goodtel g3_eea',
             // ace
             'buzz 5 ultra' => 'ace=ace buzz 5 ultra',
             'buzz 5 prime' => 'ace=ace buzz 5 prime',
@@ -3314,6 +3343,7 @@ final class Device implements DeviceInterface
             'air1 pro' => 'iiif150=iiif150 air1 pro',
             'raptor 5g' => 'iiif150=iiif150 raptor 5g',
             'raptor' => 'iiif150=iiif150 raptor',
+            'air1 ultra pro' => 'iiif150=iiif150 air1 ultra pro',
             // hmd
             'hmd fusion' => 'hmd=hmd fusion',
             'hmd arc' => 'hmd=hmd arc',
@@ -3410,6 +3440,46 @@ final class Device implements DeviceInterface
             'edge ta3e1m01' => 'digma=digma ta3e1m01',
             // xgody
             'n02' => 'xgody=xgody n02',
+            // yumkem
+            'n10-eea' => 'yumkem=yumkem n10',
+            // safaricom
+            'neon ray ultra' => 'safaricom=safaricom neon ray ultra',
+            // free-yond
+            '2305003m' => 'free-yond=free-yond 2305003m',
+            '2306004m' => 'free-yond=free-yond 2306004m',
+            // at&t
+            'wtattrw2' => 'at-t=at-t wtattrw2',
+            // benco
+            'ae9260' => 'benco=benco ae9260',
+            'ae9240' => 'benco=benco ae9240',
+            // n-one
+            'npad x' => 'n-one=n-one npad x',
+            // atmpc
+            'it-801b' => 'atmpc=atmpc it-801b',
+            // vios
+            'vtab7' => 'vios=vios vtab7',
+            // global-sec
+            'globalsec tab ten' => 'global-sec=global-sec tab ten',
+            // nordmende
+            'nordmende_43nm6000f' => 'nordmende=nordmende 43nm6000f',
+            // ibrit
+            'diamond pro max' => 'ibrit=ibrit diamond pro max',
+            // me-mobile
+            'grace 9' => 'me-mobile=me-mobile grace 9',
+            // dcode
+            'ds-cl3 pro' => 'dcode=dcode ds-cl3 pro',
+            'ds-cl3 lite' => 'dcode=dcode ds-cl3 lite',
+            'ds-bd3' => 'dcode=dcode ds-bd3',
+            // sparx
+            'sparx neo x' => 'sparx=sparx neo x',
+            // hot-pepper
+            'puya' => 'hot-pepper=hot-pepper puya',
+            // fenoti
+            'fenoti_42fn6000f' => 'fenoti=fenoti 42fn6000f',
+            // iotwe
+            't95pro' => 'iotwe=iotwe t95 pro',
+            // fossi-bot
+            'f102' => 'fossi-bot=fossi-bot f102',
             // other
             default => null,
         };

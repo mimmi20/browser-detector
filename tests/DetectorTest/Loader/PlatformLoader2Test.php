@@ -43,6 +43,7 @@ use UaResult\Os\Os;
 use UnexpectedValueException;
 
 #[CoversClass(PlatformLoader::class)]
+#[CoversClass(OsData::class)]
 final class PlatformLoader2Test extends TestCase
 {
     /**
