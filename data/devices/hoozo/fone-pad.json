@@ -4,13 +4,29 @@
     "marketingName": "MT232",
     "manufacturer": "hoozo",
     "brand": "hoozo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
       "touch": true,
       "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "hoozo f13_eea": {
+    "deviceName": "F13_EEA",
+    "marketingName": "F13",
+    "manufacturer": "hoozo",
+    "brand": "hoozo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
     },
     "type": "fone-pad",
     "platform": "android"
