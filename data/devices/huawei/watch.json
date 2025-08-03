@@ -30,5 +30,21 @@
     },
     "type": "smart-watch",
     "platform": "harmony-os"
+  },
+  "huawei arc-al00": {
+    "deviceName": "ARC-AL00",
+    "marketingName": "Watch 4",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 466,
+      "height": 466,
+      "touch": true,
+      "size": 1.5
+    },
+    "type": "smart-watch",
+    "platform": "harmony-os"
   }
 }
