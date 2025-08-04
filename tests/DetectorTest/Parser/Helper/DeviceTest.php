@@ -1080,15 +1080,25 @@ final class DeviceTest extends TestCase
             ['SM-A605FN', 'samsung=samsung sm-a605fn'],
             ['SM-T805', 'samsung=samsung sm-t805'],
             ['SM-S921B', 'samsung=samsung sm-s921b'],
+            ['SAMSUNG SM-S921B', 'samsung=samsung sm-s921b'],
             ['SM-S921W', 'samsung=samsung sm-s921w'],
+            ['SAMSUNG SM-S921W', 'samsung=samsung sm-s921w'],
             ['SM-S921U1', 'samsung=samsung sm-s921u1'],
+            ['SAMSUNG SM-S921U1', 'samsung=samsung sm-s921u1'],
             ['SM-S921U', 'samsung=samsung sm-s921u'],
+            ['SAMSUNG SM-S921U', 'samsung=samsung sm-s921u'],
             ['SM-S921N', 'samsung=samsung sm-s921n'],
+            ['SAMSUNG SM-S921N', 'samsung=samsung sm-s921n'],
             ['SM-S921J', 'samsung=samsung sm-s921j'],
+            ['SAMSUNG SM-S921J', 'samsung=samsung sm-s921j'],
             ['SM-S921E', 'samsung=samsung sm-s921e'],
+            ['SAMSUNG SM-S921E', 'samsung=samsung sm-s921e'],
             ['SM-S921D', 'samsung=samsung sm-s921d'],
+            ['SAMSUNG SM-S921D', 'samsung=samsung sm-s921d'],
             ['SM-S9210', 'samsung=samsung sm-s9210'],
+            ['SAMSUNG SM-S9210', 'samsung=samsung sm-s9210'],
             ['SM-S921Q', 'samsung=samsung sm-s921q'],
+            ['SAMSUNG SM-S921Q', 'samsung=samsung sm-s921q'],
             ['SM-G781V', 'samsung=samsung sm-g781v'],
             ['SM-T500', 'samsung=samsung sm-t500'],
             ['SM-N770F', 'samsung=samsung sm-n770f'],
@@ -3983,6 +3993,30 @@ final class DeviceTest extends TestCase
             ['MEP2Q421G', 'mode-mobile=mode-mobile mep2q421g'],
             // trimble
             ['MobileMapper60_2', 'trimble=trimble mobilemapper 60'],
+            // lville
+            ['TPC1013_EEA', 'lville=lville tpc1013_eea'],
+            // olax
+            ['Ocean K10', 'olax=olax ocean k10'],
+            // okapi-mobile
+            ['Okapi10', 'okapi-mobile=okapi-mobile okapi 10'],
+            // opel-mobile
+            ['Rugged60Q', 'opel-mobile=opel-mobile rugged 60q'],
+            // realix
+            ['RxIS202', 'realix=realix rxis202'],
+            // logicom
+            ['Elio', 'logicom=logicom elio'],
+            // unitech
+            ['EA520', 'unitech=unitech ea520'],
+            ['EA520_US', 'unitech=unitech ea520_us'],
+            // everis
+            ['E0118', 'everis=everis e0118'],
+            ['E0119', 'everis=everis e0119'],
+            ['E0120', 'everis=everis e0120'],
+            // stylo
+            ['EBY33', 'stylo=stylo eby33'],
+            ['STYLO RAIN', 'stylo=stylo rain'],
+            // atozee
+            ['CP10', 'atozee=atozee cp10'],
             // other
             ['Model"', null],
             [': "', null],

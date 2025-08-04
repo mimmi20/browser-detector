@@ -984,16 +984,16 @@ final class Device implements DeviceInterface
             'sm-g900f' => 'samsung=samsung sm-g900f',
             'sm-a605fn' => 'samsung=samsung sm-a605fn',
             'sm-t805' => 'samsung=samsung sm-t805',
-            'sm-s921b' => 'samsung=samsung sm-s921b',
-            'sm-s921w' => 'samsung=samsung sm-s921w',
-            'sm-s921u1' => 'samsung=samsung sm-s921u1',
-            'sm-s921u' => 'samsung=samsung sm-s921u',
-            'sm-s921n' => 'samsung=samsung sm-s921n',
-            'sm-s921j' => 'samsung=samsung sm-s921j',
-            'sm-s921e' => 'samsung=samsung sm-s921e',
-            'sm-s921d' => 'samsung=samsung sm-s921d',
-            'sm-s9210' => 'samsung=samsung sm-s9210',
-            'sm-s921q' => 'samsung=samsung sm-s921q',
+            'sm-s921b', 'samsung sm-s921b' => 'samsung=samsung sm-s921b',
+            'sm-s921w', 'samsung sm-s921w' => 'samsung=samsung sm-s921w',
+            'sm-s921u1', 'samsung sm-s921u1' => 'samsung=samsung sm-s921u1',
+            'sm-s921u', 'samsung sm-s921u' => 'samsung=samsung sm-s921u',
+            'sm-s921n', 'samsung sm-s921n' => 'samsung=samsung sm-s921n',
+            'sm-s921j', 'samsung sm-s921j' => 'samsung=samsung sm-s921j',
+            'sm-s921e', 'samsung sm-s921e' => 'samsung=samsung sm-s921e',
+            'sm-s921d', 'samsung sm-s921d' => 'samsung=samsung sm-s921d',
+            'sm-s9210', 'samsung sm-s9210' => 'samsung=samsung sm-s9210',
+            'sm-s921q', 'samsung sm-s921q' => 'samsung=samsung sm-s921q',
             'sm-g781v' => 'samsung=samsung sm-g781v',
             'sm-t500' => 'samsung=samsung sm-t500',
             'sm-n770f' => 'samsung=samsung sm-n770f',
@@ -3661,6 +3661,30 @@ final class Device implements DeviceInterface
             'mep2q421g' => 'mode-mobile=mode-mobile mep2q421g',
             // trimble
             'mobilemapper60_2' => 'trimble=trimble mobilemapper 60',
+            // lville
+            'tpc1013_eea' => 'lville=lville tpc1013_eea',
+            // olax
+            'ocean k10' => 'olax=olax ocean k10',
+            // okapi-mobile
+            'okapi10' => 'okapi-mobile=okapi-mobile okapi 10',
+            // opel-mobile
+            'rugged60q' => 'opel-mobile=opel-mobile rugged 60q',
+            // realix
+            'rxis202' => 'realix=realix rxis202',
+            // logicom
+            'elio' => 'logicom=logicom elio',
+            // unitech
+            'ea520' => 'unitech=unitech ea520',
+            'ea520_us' => 'unitech=unitech ea520_us',
+            // everis
+            'e0118' => 'everis=everis e0118',
+            'e0119' => 'everis=everis e0119',
+            'e0120' => 'everis=everis e0120',
+            // stylo
+            'eby33' => 'stylo=stylo eby33',
+            'stylo rain' => 'stylo=stylo rain',
+            // atozee
+            'cp10' => 'atozee=atozee cp10',
             // other
             default => null,
         };
