@@ -9,8 +9,8 @@
       "marketingName": "myTouch",
       "manufacturer": "t-mobile",
       "brand": "t-mobile",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -51,8 +51,8 @@
       "marketingName": "Vivacity",
       "manufacturer": "t-mobile",
       "brand": "t-mobile",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -81,6 +81,48 @@
       "name": "WebKit",
       "version": "537.22.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; T Phone Pro (2023) Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.120 Mobile Safari/537.36 OPX/2.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T Phone Pro (2023)",
+      "marketingName": "T Phone Pro (2023)",
+      "manufacturer": "t-mobile",
+      "brand": "t-mobile",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera GX",
+      "version": "2.3.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.120",
+      "manufacturer": "google"
     }
   }
 ]

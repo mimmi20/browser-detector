@@ -4,8 +4,8 @@
     "marketingName": "Primo 7",
     "manufacturer": "thomson",
     "brand": "thomson",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 800,
       "height": 480,
@@ -20,8 +20,8 @@
     "marketingName": "Primo 8",
     "manufacturer": "thomson",
     "brand": "thomson",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -36,8 +36,8 @@
     "marketingName": "QM734-8G",
     "manufacturer": "thomson",
     "brand": "thomson",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 800,
       "height": 480,
@@ -52,13 +52,45 @@
     "marketingName": "QM735-8G",
     "manufacturer": "thomson",
     "brand": "thomson",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "thomson teo8m": {
+    "deviceName": "TEO8M",
+    "marketingName": "TEO8M",
+    "manufacturer": "thomson",
+    "brand": "thomson",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "thomson teo10m": {
+    "deviceName": "TEO10M",
+    "marketingName": "TEO10M",
+    "manufacturer": "thomson",
+    "brand": "thomson",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10
     },
     "type": "tablet",
     "platform": "android"

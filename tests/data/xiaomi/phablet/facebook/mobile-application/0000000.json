@@ -3235,6 +3235,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 23124RA7EO Build/TKQ1.221114.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.179 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/463.1.0.53.85;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "23124RA7EO",
+      "marketingName": "Redmi Note 13 4G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "463.1.0.53.85",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.179",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 12; M2103K19C Build/SP1A.210812.016) [FBAN/Orca-Android;FBAV/469.0.0.38.109;FBPN/com.facebook.orca;FBLC/en_US;FBBV/627474220;FBCR/Digicel;FBMF/Xiaomi;FBBD/Redmi;FBDV/M2103K19C;FBSV/12;FBCA/arm64-v8a:null;FBDM/{density=2.75,width=1080,height=2167};FB_FW/1;]"
     },
     "device": {

@@ -15,7 +15,7 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Data\Client;
+use BrowserDetector\Loader\Data\Client as ClientData;
 use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\InitData\Client as DataClient;
 use BrowserDetector\Version\TestFactory;
@@ -35,6 +35,7 @@ use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
 #[CoversClass(BrowserLoader::class)]
+#[CoversClass(ClientData::class)]
 final class BrowserLoaderTest extends TestCase
 {
     /**
@@ -44,7 +45,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeNotInCache(): void
+    public function testLoadNotInCache(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -69,7 +70,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new Client(
+        $initData = new ClientData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -136,7 +137,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeNotInCache2(): void
+    public function testLoadNotInCache2(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -208,7 +209,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeNullInCache(): void
+    public function testLoadNullInCache(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -233,7 +234,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new Client(
+        $initData = new ClientData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -303,7 +304,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeVersionAndEngineWithException(): void
+    public function testLoadVersionAndEngineWithException(): void
     {
         $exception = new NotFoundException('test');
 
@@ -331,7 +332,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new Client(
+        $initData = new ClientData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -411,5 +412,81 @@ final class BrowserLoaderTest extends TestCase
         ];
 
         self::assertSame($expected, $result->getClient()->toArray());
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testLoadWithInitException(): void
+    {
+        $key = 'test-key';
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('init')
+            ->willThrowException(new RuntimeException('error'));
+        $initData
+            ->expects(self::never())
+            ->method('getItem');
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+            versionBuilder: $versionBuilder,
+        );
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionCode(0);
+        $this->expectExceptionMessage('the browser with key "' . $key . '" was not found');
+
+        $object->load($key, 'test/1.0');
     }
 }

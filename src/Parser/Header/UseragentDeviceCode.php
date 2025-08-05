@@ -67,9 +67,10 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         }
 
         $regexes = [
-            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)(?: +(?:build|hmscore))[^)]+\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
-            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)[^)]*\) applewebkit\/[\d.]+ \(khtml, like gecko\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?: +(?:build|hmscore))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:android|tizen) [\d.]+; (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:android|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:android [\d.]+;) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|miui)[^)]+)\)/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',

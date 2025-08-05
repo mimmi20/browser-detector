@@ -4,8 +4,8 @@
     "marketingName": "4G",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -20,8 +20,8 @@
     "marketingName": "4G Dual",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -36,8 +36,8 @@
     "marketingName": "Discovery",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -52,8 +52,8 @@
     "marketingName": "Discovery Air",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -68,8 +68,8 @@
     "marketingName": "Discovery Elite",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -84,8 +84,8 @@
     "marketingName": "Discovery II",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -100,8 +100,8 @@
     "marketingName": "GM 5 D",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -116,8 +116,8 @@
     "marketingName": "GM 5 Plus",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -132,8 +132,8 @@
     "marketingName": "GM 5 Plus D",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -148,8 +148,8 @@
     "marketingName": "GM 8",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1440,
       "height": 720,
@@ -164,8 +164,8 @@
     "marketingName": "GM 8 Go",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1440,
       "height": 720,
@@ -180,13 +180,29 @@
     "marketingName": "GM DSTL1",
     "manufacturer": "general-mobile",
     "brand": "general-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 400,
       "height": 240,
       "touch": true,
       "size": 3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "general-mobile g314": {
+    "deviceName": "G314",
+    "marketingName": "GM 23 SE",
+    "manufacturer": "general-mobile",
+    "brand": "general-mobile",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
     },
     "type": "smartphone",
     "platform": "android"

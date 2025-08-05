@@ -41,6 +41,7 @@ use UaResult\Engine\Engine;
 use UnexpectedValueException;
 
 #[CoversClass(EngineLoader::class)]
+#[CoversClass(EngineData::class)]
 final class EngineLoaderTest extends TestCase
 {
     /**
@@ -50,7 +51,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeNotInCache(): void
+    public function testLoadNotInCache(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -137,7 +138,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeNullInCache(): void
+    public function testLoadNullInCache(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -227,7 +228,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeNoVersion(): void
+    public function testLoadNoVersion(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -334,7 +335,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeGenericVersion(): void
+    public function testLoadGenericVersion(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -442,7 +443,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeVersion(): void
+    public function testLoadVersion(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -550,7 +551,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeVersion2(): void
+    public function testLoadVersion2(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -635,7 +636,7 @@ final class EngineLoaderTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvokeVersionWithException(): void
+    public function testLoadVersionWithException(): void
     {
         $exeption = new NotFoundException('test');
 
@@ -731,5 +732,76 @@ final class EngineLoaderTest extends TestCase
         );
 
         self::assertSame($expected->toArray(), $result->toArray());
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     * @throws ReflectionException
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testLoadWithInitException(): void
+    {
+        $key = 'test-key';
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('init')
+            ->willThrowException(new RuntimeException('error'));
+        $initData
+            ->expects(self::never())
+            ->method('getItem');
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionCode(0);
+        $this->expectExceptionMessage('the engine with key "' . $key . '" was not found');
+
+        $object->load($key, 'test-ua');
     }
 }
