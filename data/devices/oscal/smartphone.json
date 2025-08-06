@@ -94,5 +94,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "oscal modern 8": {
+    "deviceName": "Modern 8",
+    "marketingName": "Modern 8",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.75
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oscal flat 1c": {
+    "deviceName": "Flat 1C",
+    "marketingName": "Flat 1C",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }
