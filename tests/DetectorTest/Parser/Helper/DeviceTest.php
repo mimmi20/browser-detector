@@ -211,6 +211,7 @@ final class DeviceTest extends TestCase
             ['Pixel 6 Pro', 'google=google pixel 6 pro'],
             ['Pixel 6a', 'google=google pixel 6a'],
             ['Pixel 4a (5G)', 'google=google pixel 4a 5g'],
+            ['Pixel 4a (5G', 'google=google pixel 4a 5g'],
             ['Pixel 7', 'google=google pixel 7'],
             ['Pixel 3a', 'google=google pixel 3a'],
             ['Pixel 3', 'google=google pixel 3'],
@@ -708,6 +709,12 @@ final class DeviceTest extends TestCase
             ['23076RN8DY', 'xiaomi=xiaomi 23076rn8dy'],
             ['2AFZZRN8DY', 'xiaomi=xiaomi 2afzzrn8dy'],
             ['XIG03', 'xiaomi=xiaomi xig03'],
+            ['24116RACCG', 'xiaomi=xiaomi 24116raccg'],
+            ['2508CRN2BC', 'xiaomi=xiaomi 2508crn2bc'],
+            ['25078RA3EA', 'xiaomi=xiaomi 25078ra3ea'],
+            ['25078RA3EY', 'xiaomi=xiaomi 25078ra3ey'],
+            ['25040RP0AI', 'xiaomi=xiaomi 25040rp0ai'],
+            ['25040RP0AG', 'xiaomi=xiaomi 25040rp0ag'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -783,6 +790,9 @@ final class DeviceTest extends TestCase
             ['NX721J', 'zte=zte nx721j'],
             ['5G UG Phone U23', 'zte=zte 5g ug phone u23'],
             ['A2121G', 'zte=zte a2121g'],
+            ['ZTE T22', 'zte=zte t22'],
+            ['ZTE T220', 'zte=zte t220'],
+            ['ZTE T221', 'zte=zte t221'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -1702,6 +1712,18 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-E546B', 'samsung=samsung sm-e546b'],
             ['SM-W7023', 'samsung=samsung sm-w7023'],
             ['SAMSUNG SM-W7023', 'samsung=samsung sm-w7023'],
+            ['SM-F766B', 'samsung=samsung sm-f766b'],
+            ['SAMSUNG SM-F766B', 'samsung=samsung sm-f766b'],
+            ['SM-F766U', 'samsung=samsung sm-f766u'],
+            ['SAMSUNG SM-F766U', 'samsung=samsung sm-f766u'],
+            ['SM-F766U1', 'samsung=samsung sm-f766u1'],
+            ['SAMSUNG SM-F766U1', 'samsung=samsung sm-f766u1'],
+            ['SM-G766B', 'samsung=samsung sm-g766b'],
+            ['SAMSUNG SM-G766B', 'samsung=samsung sm-g766b'],
+            ['SM-G766U', 'samsung=samsung sm-g766u'],
+            ['SAMSUNG SM-G766U', 'samsung=samsung sm-g766u'],
+            ['SM-G766U1', 'samsung=samsung sm-g766u1'],
+            ['SAMSUNG SM-G766U1', 'samsung=samsung sm-g766u1'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['VOG-L29', 'huawei=huawei vog-l29'],
@@ -2642,6 +2664,7 @@ final class DeviceTest extends TestCase
             ['WP19 Pro', 'oukitel=oukitel wp19 pro'],
             ['OT5', 'oukitel=oukitel ot5'],
             ['RT7 TITAN', 'oukitel=oukitel rt7 titan 4g'],
+            ['OT6 Kids', 'oukitel=oukitel ot6 kids'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -2731,6 +2754,8 @@ final class DeviceTest extends TestCase
             ['T20Ultra', 'doogee=doogee t20 ultra'],
             ['V30Pro', 'doogee=doogee t20 v30 pro'],
             ['V20S', 'doogee=doogee v20s'],
+            ['S118 Pro', 'doogee=doogee s118 pro'],
+            ['U10 Kid', 'doogee=doogee u10 kid'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -3968,6 +3993,11 @@ final class DeviceTest extends TestCase
             ['Edge TA2D1M01', 'digma=digma ta2d1m01'],
             ['Edge TA3E1M01', 'digma=digma ta3e1m01'],
             ['HIT 16 HS1002PL', 'digma=digma hs1002pl'],
+            ['PRIME 18 MS1001PL', 'digma=digma ms1001pl'],
+            ['PRIME 18 MS1002PL', 'digma=digma ms1002pl'],
+            ['PRIME 18 MS1003PL', 'digma=digma ms1003pl'],
+            ['K10 DA1C0P01', 'digma=digma da1c0p01'],
+            ['Optima 8430E 4G DA1C8P01', 'digma=digma da1c8p01'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -4075,6 +4105,9 @@ final class DeviceTest extends TestCase
             ['STYLO RAIN', 'stylo=stylo rain'],
             // atozee
             ['CP10', 'atozee=atozee cp10'],
+            // meta
+            ['Quest 3', 'meta=meta quest 3'],
+            ['Quest 3S', 'meta=meta quest 3s'],
             // other
             ['Model"', null],
             [': "', null],

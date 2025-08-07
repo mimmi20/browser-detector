@@ -189,7 +189,7 @@ final class Device implements DeviceInterface
             'pixel 3a' => 'google=google pixel 3a',
             'pixel 4' => 'google=google pixel 4',
             'pixel 4 xl' => 'google=google pixel 4 xl',
-            'pixel 4a (5g)' => 'google=google pixel 4a 5g',
+            'pixel 4a (5g)', 'pixel 4a (5g' => 'google=google pixel 4a 5g',
             'pixel 5' => 'google=google pixel 5',
             'pixel 6' => 'google=google pixel 6',
             'pixel 6a' => 'google=google pixel 6a',
@@ -686,6 +686,12 @@ final class Device implements DeviceInterface
             '23076rn8dy' => 'xiaomi=xiaomi 23076rn8dy',
             '2afzzrn8dy' => 'xiaomi=xiaomi 2afzzrn8dy',
             'xig03' => 'xiaomi=xiaomi xig03',
+            '24116raccg' => 'xiaomi=xiaomi 24116raccg',
+            '2508crn2bc' => 'xiaomi=xiaomi 2508crn2bc',
+            '25078ra3ea' => 'xiaomi=xiaomi 25078ra3ea',
+            '25078ra3ey' => 'xiaomi=xiaomi 25078ra3ey',
+            '25040rp0ai' => 'xiaomi=xiaomi 25040rp0ai',
+            '25040rp0ag' => 'xiaomi=xiaomi 25040rp0ag',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -759,6 +765,9 @@ final class Device implements DeviceInterface
             'nx721j' => 'zte=zte nx721j',
             '5g ug phone u23' => 'zte=zte 5g ug phone u23',
             'a2121g' => 'zte=zte a2121g',
+            'zte t22' => 'zte=zte t22',
+            'zte t220' => 'zte=zte t220',
+            'zte t221' => 'zte=zte t221',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -1483,6 +1492,12 @@ final class Device implements DeviceInterface
             'sm-e045f', 'samsung sm-e045f' => 'samsung=samsung sm-e045f',
             'sm-e546b', 'samsung sm-e546b' => 'samsung=samsung sm-e546b',
             'sm-w7023', 'samsung sm-w7023' => 'samsung=samsung sm-w7023',
+            'sm-f766b', 'samsung sm-f766b' => 'samsung=samsung sm-f766b',
+            'sm-f766u', 'samsung sm-f766u' => 'samsung=samsung sm-f766u',
+            'sm-f766u1', 'samsung sm-f766u1' => 'samsung=samsung sm-f766u1',
+            'sm-g766b', 'samsung sm-g766b' => 'samsung=samsung sm-g766b',
+            'sm-g766u', 'samsung sm-g766u' => 'samsung=samsung sm-g766u',
+            'sm-g766u1', 'samsung sm-g766u1' => 'samsung=samsung sm-g766u1',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2416,6 +2431,7 @@ final class Device implements DeviceInterface
             'wp19 pro' => 'oukitel=oukitel wp19 pro',
             'ot5' => 'oukitel=oukitel ot5',
             'rt7 titan' => 'oukitel=oukitel rt7 titan 4g',
+            'ot6 kids' => 'oukitel=oukitel ot6 kids',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -2504,6 +2520,8 @@ final class Device implements DeviceInterface
             't20ultra' => 'doogee=doogee t20 ultra',
             'v30pro' => 'doogee=doogee v30 pro',
             'v20s' => 'doogee=doogee v20s',
+            's118 pro' => 'doogee=doogee s118 pro',
+            'u10 kid' => 'doogee=doogee u10 kid',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3628,6 +3646,11 @@ final class Device implements DeviceInterface
             'edge ta2d1m01' => 'digma=digma ta2d1m01',
             'edge ta3e1m01' => 'digma=digma ta3e1m01',
             'hit 16 hs1002pl' => 'digma=digma hs1002pl',
+            'prime 18 ms1001pl' => 'digma=digma ms1001pl',
+            'prime 18 ms1002pl' => 'digma=digma ms1002pl',
+            'prime 18 ms1003pl' => 'digma=digma ms1003pl',
+            'k10 da1c0p01' => 'digma=digma da1c0p01',
+            'optima 8430e 4g da1c8p01' => 'digma=digma da1c8p01',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -3734,6 +3757,9 @@ final class Device implements DeviceInterface
             'stylo rain' => 'stylo=stylo rain',
             // atozee
             'cp10' => 'atozee=atozee cp10',
+            // meta
+            'quest 3' => 'meta=meta quest 3',
+            'quest 3s' => 'meta=meta quest 3s',
             // other
             default => null,
         };
