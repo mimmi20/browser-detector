@@ -334,5 +334,47 @@
       "version": "80.0.3987.132",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; S3 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.91 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S3 Pro",
+      "marketingName": "S3 Pro",
+      "manufacturer": "umi",
+      "brand": "umi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "25.66.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "136.0.7103.91",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -1891,48 +1891,6 @@
   },
   {
     "headers": {
-      "user-agent": "echobot/echobot-v1.0 (Echobot Crawler; http://www.echobot.de; echobot@huberverlag.de)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "oBot",
-      "version": null,
-      "manufacturer": "ibm",
-      "type": "search-bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "NikoBot1.0"
     },
     "device": {
@@ -4160,6 +4118,48 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (compatible; oBot/2.3.1; +http://www.xforce-security.com/crawler/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "oBot",
+      "version": "2.3.1",
+      "manufacturer": "ibm",
+      "type": "search-bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; oBot/2.3.1; http://www.xforce-security.com/crawler/)"
     },
     "device": {
       "architecture": null,

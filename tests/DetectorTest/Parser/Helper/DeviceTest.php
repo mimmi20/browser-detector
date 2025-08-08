@@ -203,6 +203,7 @@ final class DeviceTest extends TestCase
             ['ASUS_Z01RD', 'asus=asus z01rd'],
             ['ZS620KL', 'asus=asus zs620kl'],
             ['Zenfone 5Z', 'asus=asus zenfone 5z'],
+            ['ASUSAI2501C', 'asus=asus ai2501 c'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
             ['Pixel 7 Pro', 'google=google pixel 7 pro'],
@@ -1778,6 +1779,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A716S', 'samsung=samsung sm-a716s'],
             ['SM-A716U', 'samsung=samsung sm-a716u'],
             ['SAMSUNG SM-A716U', 'samsung=samsung sm-a716u'],
+            ['SM-A716U1', 'samsung=samsung sm-a716u1'],
+            ['SAMSUNG SM-A716U1', 'samsung=samsung sm-a716u1'],
             ['SM-A716T', 'samsung=samsung sm-a716t'],
             ['SAMSUNG SM-A716T', 'samsung=samsung sm-a716t'],
             ['SM-A716F', 'samsung=samsung sm-a716f'],
@@ -2074,6 +2077,10 @@ final class DeviceTest extends TestCase
             ['CLK-LX3', 'huawei=huawei clk-lx3'],
             ['CLK-AN00', 'huawei=huawei clk-an00'],
             ['GDI-W09', 'huawei=huawei gdi-w09'],
+            ['JDY-LX3', 'huawei=huawei jdy-lx3'],
+            ['JDY-LX2', 'huawei=huawei jdy-lx2'],
+            ['JDY-LX1', 'huawei=huawei jdy-lx1'],
+            ['JDY-AN00', 'huawei=huawei jdy-an00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -2203,6 +2210,7 @@ final class DeviceTest extends TestCase
             ['Nokia 2.1', 'nokia=nokia 2.1'],
             ['Nokia XR20', 'nokia=nokia xr20'],
             ['Nokia G310 5G', 'nokia=nokia g310 5g'],
+            ['Nokia C02', 'nokia=nokia c02'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox one'],
@@ -2657,6 +2665,9 @@ final class DeviceTest extends TestCase
             ['V2337A', 'vivo=vivo v2337a'],
             ['V2230EA', 'vivo=vivo v2230ea'],
             ['I2302', 'vivo=vivo i2302'],
+            ['V1930', 'vivo=vivo v1930'],
+            ['V1930A', 'vivo=vivo v1930a'],
+            ['V1930T', 'vivo=vivo v1930t'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -2953,6 +2964,9 @@ final class DeviceTest extends TestCase
             ['5033D_EEA', 'alcatel=alcatel 5033d_eea'],
             ['8088X_EEA', 'alcatel=alcatel 8088x_eea'],
             ['5028D_EEA', 'alcatel=alcatel 5028d_eea'],
+            ['5039D_EEA', 'alcatel=alcatel 5039d_eea'],
+            ['5039D', 'alcatel=alcatel 5039d'],
+            ['5039U', 'alcatel=alcatel 5039u'],
             // HTC
             ['HTC Desire 19+', 'htc=htc desire 19 plus'],
             ['HTC U11', 'htc=htc u11'],
@@ -3012,6 +3026,9 @@ final class DeviceTest extends TestCase
             ['M40 Pro_ROW', 'teclast=teclast m40 pro_row'],
             ['TLG01_EEA', 'teclast=teclast tlg01_eea'],
             ['P26T_EEA', 'teclast=teclast p26t_eea'],
+            ['T50HD_ROW', 'teclast=teclast t50hd_row'],
+            ['T50HD_EEA', 'teclast=teclast t50hd_eea'],
+            ['P40S_ROW', 'teclast=teclast p40s_row'],
             // alldocube
             ['iPlay_40', 'alldocube=alldocube iplay 40'],
             ['iPlay60_mini_Pro', 'alldocube=alldocube iplay 60 mini pro'],
@@ -3198,6 +3215,11 @@ final class DeviceTest extends TestCase
             ['Infinix X6852', 'infinix=infinix x6852'],
             ['Infinix X6817', 'infinix=infinix x6817'],
             ['Infinix X6817B', 'infinix=infinix x6817b'],
+            ['Infinix X6515', 'infinix=infinix x6515'],
+            ['Infinix X655', 'infinix=infinix x655'],
+            ['Infinix X655C', 'infinix=infinix x655c'],
+            ['Infinix X655D', 'infinix=infinix x655d'],
+            ['Infinix X655F', 'infinix=infinix x655f'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -3237,6 +3259,8 @@ final class DeviceTest extends TestCase
             ['itel P666L', 'itel=itel p666l'],
             ['itel P663LN', 'itel=itel p663ln'],
             ['itel P663L', 'itel=itel p663l'],
+            ['itel A667L', 'itel=itel a667l'],
+            ['itel A631L', 'itel=itel a631l'],
             // vontar
             ['HK1RBOX-X4', 'vontar=vontar hk1 rbox x4'],
             ['HK1 Mini+', 'vontar=vontar hk1 mini plus'],
@@ -3248,6 +3272,8 @@ final class DeviceTest extends TestCase
             // hisense
             ['HLTE239E', 'hisense=hisense hlte239e'],
             ['Hisense A6', 'hisense=hisense a6'],
+            ['Hisense E50', 'hisense=hisense e50'],
+            ['Hisense Infinity H60 5G', 'hisense=hisense infinity h60 5g'],
             // insys
             ['HN2-M16Q', 'insys=insys hn2-m16q'],
             // aiwa
@@ -3313,11 +3339,15 @@ final class DeviceTest extends TestCase
             ['SH-M26', 'sharp=sharp sh-m26'],
             ['SH-51D', 'sharp=sharp sh-51d'],
             ['SH-52D', 'sharp=sharp sh-52d'],
+            ['SH-M29', 'sharp=sharp sh-m29'],
+            ['SH-M29SG', 'sharp=sharp sh-m29sg'],
+            ['SH-53E', 'sharp=sharp sh-53e'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],
             ['S10-KC', 'kyocera=kyocera s10-kc'],
             ['A205KC', 'kyocera=kyocera a205kc'],
+            ['E7110', 'kyocera=kyocera e7110'],
             // iq-t
             ['iQ&amp;T N8', 'iq-t=iq-t n8'],
             ['iQ&T N8', 'iq-t=iq-t n8'],
@@ -3677,6 +3707,7 @@ final class DeviceTest extends TestCase
             ['TANK 3', 'unihertz=unihertz tank 3'],
             // coolpad
             ['Coolpad E502', 'coolpad=coolpad e502'],
+            ['COOLPAD C202', 'coolpad=coolpad c202'],
             // tcl
             ['T766H_EEA', 'tcl=tcl t766h_eea'],
             ['T506K', 'tcl=tcl t506k'],
@@ -3720,6 +3751,7 @@ final class DeviceTest extends TestCase
             ['S19 Max Pro S Zoom', 'reeder=reeder s19 max pro s zoom'],
             ['S19 Max Pro S', 'reeder=reeder s19 max pro s'],
             ['S19 MaxL 128GB', 'reeder=reeder s19 max l 128gb'],
+            ['P13 Blue 2022', 'reeder=reeder p13 blue 2022'],
             // tesla
             ['Explr 9', 'tesla=tesla explorer 9'],
             // chuwi

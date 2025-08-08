@@ -376,5 +376,47 @@
       "version": "67.0.3396.99",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Ruby, Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:30.0) Gecko/20100101 Firefox/30.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Generic Ruby Crawler",
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "30.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

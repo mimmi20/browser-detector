@@ -183,6 +183,7 @@ final class Device implements DeviceInterface
             'asus_z01rd' => 'asus=asus z01rd',
             'zs620kl' => 'asus=asus zs620kl',
             'zenfone 5z' => 'asus=asus zenfone 5z',
+            'asusai2501c' => 'asus=asus ai2501 c',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3' => 'google=google pixel 3',
@@ -1527,6 +1528,7 @@ final class Device implements DeviceInterface
             'sm-a716v', 'samsung sm-a716v' => 'samsung=samsung sm-a716v',
             'sm-a716s', 'samsung sm-a716s' => 'samsung=samsung sm-a716s',
             'sm-a716u', 'samsung sm-a716u' => 'samsung=samsung sm-a716u',
+            'sm-a716u1', 'samsung sm-a716u1' => 'samsung=samsung sm-a716u1',
             'sm-a716t', 'samsung sm-a716t' => 'samsung=samsung sm-a716t',
             'sm-a716f', 'samsung sm-a716f' => 'samsung=samsung sm-a716f',
             'sm-a716b', 'samsung sm-a716b' => 'samsung=samsung sm-a716b',
@@ -1818,6 +1820,10 @@ final class Device implements DeviceInterface
             'clk-lx3' => 'huawei=huawei clk-lx3',
             'clk-an00' => 'huawei=huawei clk-an00',
             'gdi-w09' => 'huawei=huawei gdi-w09',
+            'jdy-lx3' => 'huawei=huawei jdy-lx3',
+            'jdy-lx2' => 'huawei=huawei jdy-lx2',
+            'jdy-lx1' => 'huawei=huawei jdy-lx1',
+            'jdy-an00' => 'huawei=huawei jdy-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -1945,6 +1951,7 @@ final class Device implements DeviceInterface
             'nokia 2.1' => 'nokia=nokia 2.1',
             'nokia xr20' => 'nokia=nokia xr20',
             'nokia g310 5g' => 'nokia=nokia g310 5g',
+            'nokia c02' => 'nokia=nokia c02',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -2398,6 +2405,9 @@ final class Device implements DeviceInterface
             'v2337a' => 'vivo=vivo v2337a',
             'v2230ea' => 'vivo=vivo v2230ea',
             'i2302' => 'vivo=vivo i2302',
+            'v1930' => 'vivo=vivo v1930',
+            'v1930a' => 'vivo=vivo v1930a',
+            'v1930t' => 'vivo=vivo v1930t',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2687,6 +2697,9 @@ final class Device implements DeviceInterface
             '5033d_eea' => 'alcatel=alcatel 5033d_eea',
             '8088x_eea' => 'alcatel=alcatel 8088x_eea',
             '5028d_eea' => 'alcatel=alcatel 5028d_eea',
+            '5039d_eea' => 'alcatel=alcatel 5039d_eea',
+            '5039d' => 'alcatel=alcatel 5039d',
+            '5039u' => 'alcatel=alcatel 5039u',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',
@@ -2742,6 +2755,9 @@ final class Device implements DeviceInterface
             'm40 pro_row' => 'teclast=teclast m40 pro_row',
             'tlg01_eea' => 'teclast=teclast tlg01_eea',
             'p26t_eea' => 'teclast=teclast p26t_eea',
+            't50hd_row' => 'teclast=teclast t50hd_row',
+            't50hd_eea' => 'teclast=teclast t50hd_eea',
+            'p40s_row' => 'teclast=teclast p40s_row',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
@@ -2924,6 +2940,11 @@ final class Device implements DeviceInterface
             'infinix x6852' => 'infinix=infinix x6852',
             'infinix x6817' => 'infinix=infinix x6817',
             'infinix x6817b' => 'infinix=infinix x6817b',
+            'infinix x6515' => 'infinix=infinix x6515',
+            'infinix x655' => 'infinix=infinix x655',
+            'infinix x655c' => 'infinix=infinix x655c',
+            'infinix x655d' => 'infinix=infinix x655d',
+            'infinix x655f' => 'infinix=infinix x655f',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -2963,6 +2984,8 @@ final class Device implements DeviceInterface
             'itel p666l' => 'itel=itel p666l',
             'itel p663ln' => 'itel=itel p663ln',
             'itel p663l' => 'itel=itel p663l',
+            'itel a667l' => 'itel=itel a667l',
+            'itel a631l' => 'itel=itel a631l',
             // vontar
             'hk1rbox-x4' => 'vontar=vontar hk1 rbox x4',
             'hk1 mini+' => 'vontar=vontar hk1 mini plus',
@@ -2974,6 +2997,8 @@ final class Device implements DeviceInterface
             // hisense
             'hlte239e' => 'hisense=hisense hlte239e',
             'hisense a6' => 'hisense=hisense a6',
+            'hisense e50' => 'hisense=hisense e50',
+            'hisense infinity h60 5g' => 'hisense=hisense infinity h60 5g',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa
@@ -3039,11 +3064,15 @@ final class Device implements DeviceInterface
             'sh-m26' => 'sharp=sharp sh-m26',
             'sh-51d' => 'sharp=sharp sh-51d',
             'sh-52d' => 'sharp=sharp sh-52d',
+            'sh-m29' => 'sharp=sharp sh-m29',
+            'sh-m29sg' => 'sharp=sharp sh-m29sg',
+            'sh-53e' => 'sharp=sharp sh-53e',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
             's10-kc' => 'kyocera=kyocera s10-kc',
             'a205kc' => 'kyocera=kyocera a205kc',
+            'e7110' => 'kyocera=kyocera e7110',
             // iq-t
             'iq&amp;t n8', 'iq&t n8' => 'iq-t=iq-t n8',
             // packard-bell
@@ -3364,6 +3393,7 @@ final class Device implements DeviceInterface
             'tank 3' => 'unihertz=unihertz tank 3',
             // coolpad
             'coolpad e502' => 'coolpad=coolpad e502',
+            'coolpad c202' => 'coolpad=coolpad c202',
             // tcl
             't766h_eea' => 'tcl=tcl t766h_eea',
             't506k' => 'tcl=tcl t506k',
@@ -3407,6 +3437,7 @@ final class Device implements DeviceInterface
             's19 max pro s zoom' => 'reeder=reeder s19 max pro s zoom',
             's19 max pro s' => 'reeder=reeder s19 max pro s',
             's19 maxl 128gb' => 'reeder=reeder s19 max l 128gb',
+            'p13 blue 2022' => 'reeder=reeder p13 blue 2022',
             // tesla
             'explr 9' => 'tesla=tesla explorer 9',
             // chuwi
