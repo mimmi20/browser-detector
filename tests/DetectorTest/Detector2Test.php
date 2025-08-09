@@ -469,7 +469,7 @@ final class Detector2Test extends TestCase
                     assert($message instanceof UnexpectedValueException);
                     self::assertInstanceOf(UnexpectedValueException::class, $message);
                     self::assertSame(
-                        sprintf('Device %s of Manufacturer %s was not found', $key, $company),
+                        sprintf('Device "%s" of Manufacturer "%s" was not found', $key, $company),
                         $message->getMessage(),
                     );
                     self::assertSame(0, $message->getCode());

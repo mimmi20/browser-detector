@@ -894,5 +894,53 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "teclast p20_eea": {
+    "deviceName": "P20_EEA",
+    "marketingName": "P20",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast m50mini": {
+    "deviceName": "M50Mini",
+    "marketingName": "M50 Mini",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1340,
+      "height": 800,
+      "touch": true,
+      "size": 8.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast m50_row": {
+    "deviceName": "M50_ROW",
+    "marketingName": "M50",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

@@ -4,8 +4,8 @@
     "marketingName": "Ahiga",
     "manufacturer": "mobi-wire",
     "brand": "mobi-wire",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -20,13 +20,29 @@
     "marketingName": "Taima",
     "manufacturer": "mobi-wire",
     "brand": "mobi-wire",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mobi-wire ikosora+": {
+    "deviceName": "IKOSORA+",
+    "marketingName": "IKOSORA+",
+    "manufacturer": "mobi-wire",
+    "brand": "mobi-wire",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"

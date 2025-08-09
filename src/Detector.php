@@ -598,7 +598,7 @@ final readonly class Detector implements DetectorInterface
             } catch (NotFoundException $e) {
                 $this->logger->info(
                     new UnexpectedValueException(
-                        sprintf('Device %s of Manufacturer %s was not found', $key, $company),
+                        sprintf('Device "%s" of Manufacturer "%s" was not found', $key, $company),
                         0,
                         $e,
                     ),
