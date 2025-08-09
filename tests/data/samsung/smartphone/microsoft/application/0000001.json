@@ -724,5 +724,48 @@
       "version": "124.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.microsoft.bing",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G781U1 Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G781U1",
+      "marketingName": "Galaxy S20 FE 5G (USA unlocked)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

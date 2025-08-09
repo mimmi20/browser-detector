@@ -270,5 +270,53 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "infinix x6851": {
+    "deviceName": "X6851",
+    "marketingName": "Note 40 Pro 5G",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2436,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "infinix x6851b": {
+    "deviceName": "X6851B",
+    "marketingName": "Note 40 Pro+ 5G",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2436,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "infinix x6852": {
+    "deviceName": "X6852",
+    "marketingName": "Note 40 5G",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2436,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

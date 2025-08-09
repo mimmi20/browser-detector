@@ -242,6 +242,7 @@ final class SecChUaModelTest extends TestCase
             ['"Pixel 6 Pro"', true, 'google=google pixel 6 pro'],
             ['"Pixel 6a"', true, 'google=google pixel 6a'],
             ['"Pixel 4a (5G)"', true, 'google=google pixel 4a 5g'],
+            ['Pixel 4a (5G', true, 'google=google pixel 4a 5g'],
             ['"Pixel 7"', true, 'google=google pixel 7'],
             ['"Pixel 3a"', true, 'google=google pixel 3a'],
             ['"Pixel 3"', true, 'google=google pixel 3'],

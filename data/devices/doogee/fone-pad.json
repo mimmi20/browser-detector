@@ -126,5 +126,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "doogee t10 pro": {
+    "deviceName": "T10 Pro",
+    "marketingName": "T10 Pro",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "doogee t30 max": {
+    "deviceName": "T30 Max",
+    "marketingName": "T30 Max",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }
