@@ -22,6 +22,7 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
+use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
@@ -114,6 +115,23 @@ final class Company implements DataInterface
     #[Override]
     public function getItem(string $stringKey): DataCompany | null
     {
+        if (array_key_exists($stringKey, $this->items)) {
+            return $this->items[$stringKey];
+        }
+
+        try {
+            $company = \BrowserDetector\Data\Company::fromName($stringKey);
+
+            $data = new DataCompany(
+                name: $company->getName(),
+                brandname: $company->getBrandname(),
+            );
+
+            $this->items[$stringKey] = $data;
+        } catch (UnexpectedValueException) {
+            // do nothing
+        }
+
         return $this->items[$stringKey] ?? null;
     }
 }

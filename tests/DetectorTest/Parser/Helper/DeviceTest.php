@@ -3784,8 +3784,6 @@ final class DeviceTest extends TestCase
             ['TECNO Mobile CM8', 'tecno=tecno cm8'],
             ['TECNO CM6', 'tecno=tecno cm6'],
             ['TECNO Mobile CM6', 'tecno=tecno cm6'],
-            // f150
-            ['B1 Pro', 'f150=f150 b1 pro'],
             // foxxd
             ['FOXXD C65', 'foxxd=foxxd c65'],
             // ceibal
@@ -4063,6 +4061,7 @@ final class DeviceTest extends TestCase
             ['Air1 Ultra Pro', 'iiif150=iiif150 air1 ultra pro'],
             ['B2 Ultra', 'iiif150=iiif150 b2 ultra'],
             ['B2 Pro', 'iiif150=iiif150 b2 pro'],
+            ['B1 Pro', 'iiif150=iiif150 b1 pro'],
             // hmd
             ['HMD Fusion', 'hmd=hmd fusion'],
             ['HMD ARC', 'hmd=hmd arc'],

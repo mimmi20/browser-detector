@@ -1987,8 +1987,6 @@ final class SecChUaModelTest extends TestCase
             ['"TECNO BF6"', true, 'tecno=tecno bf6'],
             ['"TECNO BD4h"', true, 'tecno=tecno bd4h'],
             ['"TECNO KE5j"', true, 'tecno=tecno ke5j'],
-            // f150
-            ['"B1 Pro"', true, 'f150=f150 b1 pro'],
             // foxxd
             ['"FOXXD C65"', true, 'foxxd=foxxd c65'],
             // ceibal

@@ -2476,7 +2476,7 @@ final class Device implements DeviceInterface
             'v2440' => 'vivo=vivo v2440',
             'v2441' => 'vivo=vivo v2441',
             'vivo x21i a', 'x21i a' => 'vivo=vivo x21i a',
-            'vivo X21A', 'X21A' => 'vivo=vivo x21a',
+            'vivo x21a', 'x21a' => 'vivo=vivo x21a',
             'v2357a' => 'vivo=vivo v2357a',
             'v2357ea' => 'vivo=vivo v2357ea',
             'v2407' => 'vivo=vivo v2407',
@@ -3465,8 +3465,6 @@ final class Device implements DeviceInterface
             'tecno li6', 'tecno mobile li6' => 'tecno=tecno li6',
             'tecno cm8', 'tecno mobile cm8' => 'tecno=tecno cm8',
             'tecno cm6', 'tecno mobile cm6' => 'tecno=tecno cm6',
-            // f150
-            'b1 pro' => 'f150=f150 b1 pro',
             // foxxd
             'foxxd c65' => 'foxxd=foxxd c65',
             // ceibal
@@ -3741,6 +3739,7 @@ final class Device implements DeviceInterface
             'air1 ultra pro' => 'iiif150=iiif150 air1 ultra pro',
             'b2 ultra' => 'iiif150=iiif150 b2 ultra',
             'b2 pro' => 'iiif150=iiif150 b2 pro',
+            'b1 pro' => 'iiif150=iiif150 b1 pro',
             // hmd
             'hmd fusion' => 'hmd=hmd fusion',
             'hmd arc' => 'hmd=hmd arc',
