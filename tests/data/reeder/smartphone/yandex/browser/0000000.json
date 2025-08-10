@@ -82,5 +82,47 @@
       "version": "120.0.6099.90",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; S23 Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.244 YaSearchBrowser/24.90.1 BroPP/1.0 YaSearchApp/24.90.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S23 Pro Max",
+      "marketingName": "S23 Pro Max",
+      "manufacturer": "reeder",
+      "brand": "reeder",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.51
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.90.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.244",
+      "manufacturer": "google"
+    }
   }
 ]
