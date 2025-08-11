@@ -494,5 +494,37 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "teclast p85t_row": {
+    "deviceName": "P85T_ROW",
+    "marketingName": "P85T",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "teclast p30t": {
+    "deviceName": "P30T",
+    "marketingName": "P30T",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }
