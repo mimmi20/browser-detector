@@ -277,7 +277,6 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\Exception
      */
     #[DataProvider('providerGetBrowser')]
-    #[CoversNothing]
     public function testGetBrowser(array $headers, array $expectedResult): void
     {
         $result = $this->object->getBrowser($headers);

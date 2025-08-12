@@ -804,11 +804,11 @@
     "device": {
       "architecture": null,
       "deviceName": "X21i A",
-      "marketingName": "X21i A",
+      "marketingName": "X21i",
       "manufacturer": "bbk",
       "brand": "vivo",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
         "width": 2280,
         "height": 1080,
@@ -3105,6 +3105,48 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.58",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 baiduboxapp/8.6.5 (Baidu; P1 5.1.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X7",
+      "marketingName": "X7",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "8.6.5",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "48.0.2564.116",
       "manufacturer": "google"
     }
   }

@@ -4,8 +4,8 @@
     "marketingName": "A4L",
     "manufacturer": "nuu-mobile",
     "brand": "nuu-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -20,8 +20,8 @@
     "marketingName": "G3",
     "manufacturer": "nuu-mobile",
     "brand": "nuu-mobile",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1440,
       "height": 720,
@@ -59,6 +59,22 @@
       "height": 720,
       "touch": true,
       "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "nuu-mobile s6702x": {
+    "deviceName": "S6702X",
+    "marketingName": "B30 Pro 5G",
+    "manufacturer": "nuu-mobile",
+    "brand": "nuu-mobile",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
     },
     "type": "smartphone",
     "platform": "android"
