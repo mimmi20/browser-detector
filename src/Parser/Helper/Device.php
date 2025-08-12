@@ -344,6 +344,7 @@ final class Device implements DeviceInterface
             'cph2613' => 'oneplus=oneplus cph2613',
             'cph2611' => 'oneplus=oneplus cph2611',
             'pjx110' => 'oneplus=oneplus pjx110',
+            'opwwe231' => 'oneplus=oneplus opwwe231',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -454,6 +455,7 @@ final class Device implements DeviceInterface
             'cph2725' => 'oppo=oppo cph2725',
             'opd2303' => 'oppo=oppo opd2303',
             'opd2302' => 'oppo=oppo opd2302',
+            'pkl110' => 'oppo=oppo pkl110',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -755,6 +757,12 @@ final class Device implements DeviceInterface
             '25067pye3c' => 'xiaomi=xiaomi 25067pye3c',
             '24066pc95i' => 'xiaomi=xiaomi 24066pc95i',
             '2407frk8ec' => 'xiaomi=xiaomi 2407frk8ec',
+            '2412dpc0ai' => 'xiaomi=xiaomi 2412dpc0ai',
+            '2412dpc0ag-art' => 'xiaomi=xiaomi 2412dpc0ag-art',
+            '2502fra65g' => 'xiaomi=xiaomi 2502fra65g',
+            '24122rkc7c' => 'xiaomi=xiaomi 24122rkc7c',
+            '24127rk2cc' => 'xiaomi=xiaomi 24127rk2cc',
+            '24129rt7cc' => 'xiaomi=xiaomi 24129rt7cc',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1887,6 +1895,7 @@ final class Device implements DeviceInterface
             'eln2-w29' => 'huawei=huawei eln2-w29',
             'eln2-l29' => 'huawei=huawei eln2-l29',
             'rol-w00' => 'huawei=huawei rol-w00',
+            'amm-an00' => 'huawei=huawei amm-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2020,6 +2029,7 @@ final class Device implements DeviceInterface
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
             'hmd xr21' => 'hmd-global=hmd-global xr21',
+            'hmd crest' => 'hmd-global=hmd-global crest',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -2514,6 +2524,9 @@ final class Device implements DeviceInterface
             'v2409' => 'vivo=vivo v2409',
             'v2344' => 'vivo=vivo v2344',
             'v2348' => 'vivo=vivo v2348',
+            'v2451' => 'vivo=vivo v2451',
+            'v2330' => 'vivo=vivo v2330',
+            'v2352a' => 'vivo=vivo v2352a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2589,6 +2602,7 @@ final class Device implements DeviceInterface
             'wp39' => 'oukitel=oukitel wp39',
             'wp28 s' => 'oukitel=oukitel wp28 s',
             'wp28 e' => 'oukitel=oukitel wp28 e',
+            'rt9' => 'oukitel=oukitel rt9',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -2626,6 +2640,8 @@ final class Device implements DeviceInterface
             'note 10p' => 'ulefone=ulefone note 10p',
             'armor pad lite' => 'ulefone=ulefone armor pad lite',
             'armor pad 4 ultra' => 'ulefone=ulefone armor pad 4 ultra',
+            'armor mini 20 pro' => 'ulefone=ulefone armor mini 20 pro',
+            'armor mini 20' => 'ulefone=ulefone armor mini 20',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -2687,6 +2703,9 @@ final class Device implements DeviceInterface
             's cyber pro' => 'doogee=doogee s cyber pro',
             's punk pro' => 'doogee=doogee s punk pro',
             's100' => 'doogee=doogee s100',
+            'fire 6 max' => 'doogee=doogee fire 6 max',
+            'n55 pro' => 'doogee=doogee n55 pro',
+            'fire 6' => 'doogee=doogee fire 6',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3002,6 +3021,8 @@ final class Device implements DeviceInterface
             'tab 60 pro' => 'blackview=blackview tab 60 pro',
             'mega 1' => 'blackview=blackview mega 1',
             'active 8' => 'blackview=blackview active 8',
+            'bv7300' => 'blackview=blackview bv7300',
+            'bv8200' => 'blackview=blackview bv8200',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -3100,6 +3121,9 @@ final class Device implements DeviceInterface
             'infinix x6861' => 'infinix=infinix x6861',
             'infinix x6882' => 'infinix=infinix x6882',
             'infinix x6882b' => 'infinix=infinix x6882b',
+            'infinix x6855' => 'infinix=infinix x6855',
+            'infinix x6858' => 'infinix=infinix x6858',
+            'infinix x6856' => 'infinix=infinix x6856',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -3164,6 +3188,7 @@ final class Device implements DeviceInterface
             'xanon x90' => 'walton=walton xanon x90',
             'orbit y12' => 'walton=walton orbit y12',
             'nexg n71' => 'walton=walton nexg n71',
+            'nexg n26' => 'walton=walton nexg n26',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             // zuum
@@ -3181,6 +3206,8 @@ final class Device implements DeviceInterface
             'zuum_e40' => 'zuum=zuum e40',
             'magno pro' => 'zuum=zuum magno pro',
             'novus tab' => 'zuum=zuum novus tab',
+            'magno p3' => 'zuum=zuum magno p3',
+            'magno p1' => 'zuum=zuum magno p1',
             // retroid-pocket
             'retroid pocket 2+' => 'retroid-pocket=retroid-pocket 2 plus',
             'retroid pocket 4 pro' => 'retroid-pocket=retroid-pocket 4 pro',
@@ -3311,6 +3338,7 @@ final class Device implements DeviceInterface
             'mp24' => 'umi=umi mp24',
             'mp20' => 'umi=umi mp20',
             'mp19' => 'umi=umi mp19',
+            'umidigi g9t' => 'umi=umi g9t',
             // bq
             'aquaris x' => 'bq=bq aquaris x',
             'aquaris x5' => 'bq=bq aquaris x5',
@@ -3582,9 +3610,14 @@ final class Device implements DeviceInterface
             't614sp' => 'tcl=tcl t614sp',
             't614d' => 'tcl=tcl t614d',
             't702w' => 'tcl=tcl t702w',
+            't803d' => 'tcl=tcl t803d',
+            't803e' => 'tcl=tcl t803e',
+            't702d' => 'tcl=tcl t702d',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
+            'g518' => 'general-mobile=general-mobile g518',
+            'g318' => 'general-mobile=general-mobile g318',
             // vodafone
             'vfd 600' => 'vodafone=vodafone vfd 600',
             'vfd 1400' => 'vodafone=vodafone vfd 1400',
@@ -3609,6 +3642,7 @@ final class Device implements DeviceInterface
             'tab r6 ultra' => 'hotwav=hotwav tab r6 ultra',
             'tab r7' => 'hotwav=hotwav tab r7',
             'hyper 7 pro' => 'hotwav=hotwav hyper 7 pro',
+            'hyper 7' => 'hotwav=hotwav hyper 7',
             // switel
             's5003d_champ' => 'switel=switel s5003d',
             // reeder
@@ -3904,6 +3938,9 @@ final class Device implements DeviceInterface
             'zenith ta2d1p01' => 'digma=digma ta2d1p01',
             'zoom ta3e0p02' => 'digma=digma ta3e0p02',
             'infinity ta3d0m01' => 'digma=digma ta3d0m01',
+            'q8 da6b8p01' => 'digma=digma da6b8p01',
+            'spark ta1c8m01' => 'digma=digma ta1c8m01',
+            'spectrum ta2d0p02' => 'digma=digma ta2d0p02',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -3925,6 +3962,7 @@ final class Device implements DeviceInterface
             // n-one
             'npad x' => 'n-one=n-one npad x',
             'npad x1' => 'n-one=n-one npad x1',
+            'tab011' => 'n-one=n-one tab011',
             // atmpc
             'it-801b' => 'atmpc=atmpc it-801b',
             // vios
@@ -3950,6 +3988,7 @@ final class Device implements DeviceInterface
             'neo 5 pro' => 'sparx=sparx neo 5 pro',
             'sparx neo 8 pro' => 'sparx=sparx neo 8 pro',
             'ultra 8' => 'sparx=sparx ultra 8',
+            'sparx neo 9i' => 'sparx=sparx neo 9i',
             // hot-pepper
             'puya' => 'hot-pepper=hot-pepper puya',
             // fenoti
@@ -3995,6 +4034,7 @@ final class Device implements DeviceInterface
             // olax
             'ocean k10' => 'olax=olax ocean k10',
             'ocean k8' => 'olax=olax ocean k8',
+            'ocean k8 pro' => 'olax=olax ocean k8 pro',
             // okapi-mobile
             'okapi10' => 'okapi-mobile=okapi-mobile okapi 10',
             // opel-mobile
@@ -4035,6 +4075,12 @@ final class Device implements DeviceInterface
             'h24' => 'kenshi=kenshi h24',
             'h34' => 'kenshi=kenshi h34',
             'h44' => 'kenshi=kenshi h44',
+            'armor c1 max' => 'kenshi=kenshi armor c1 max',
+            'armor p1 pro' => 'kenshi=kenshi armor p1 pro',
+            'armor v1s' => 'kenshi=kenshi armor v1s',
+            'armor p1w' => 'kenshi=kenshi armor p1w',
+            'armor i2w' => 'kenshi=kenshi armor i2w',
+            'armor h1s' => 'kenshi=kenshi armor h1s',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',
@@ -4060,8 +4106,14 @@ final class Device implements DeviceInterface
             'mipo_m25' => 'mipo=mipo m25',
             'mipo_m46_pro' => 'mipo=mipo m46 pro',
             'mipo_m17' => 'mipo=mipo m17',
+            'mipo_m59' => 'mipo=mipo m59',
             // nuu-mobile
             's6702x' => 'nuu-mobile=nuu-mobile s6702x',
+            // mhorse
+            'c68' => 'mhorse=mhorse c68',
+            'c67' => 'mhorse=mhorse c67',
+            // iget
+            'smart_w84' => 'iget=iget smart w84',
             // other
             default => null,
         };
