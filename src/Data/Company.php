@@ -161,6 +161,12 @@ enum Company: string implements CompanyInterface
 
     case einsundeins = '1 & 1';
 
+    case corn = 'Corn';
+
+    case logic = 'Logic';
+
+    case hammer = 'Hammer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -238,6 +244,9 @@ enum Company: string implements CompanyInterface
             'itech', 'itech slu' => self::itech,
             'nexech' => self::nexech,
             'einsundeins', '1 & 1' => self::einsundeins,
+            'corn' => self::corn,
+            'logic' => self::logic,
+            'hammer' => self::hammer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

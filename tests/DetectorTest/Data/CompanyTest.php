@@ -501,6 +501,24 @@ final class CompanyTest extends TestCase
                 'brandname' => '1 & 1',
                 'key' => 'einsundeins',
             ],
+            [
+                'type' => 'Corn',
+                'name' => 'Corn',
+                'brandname' => 'Corn',
+                'key' => 'corn',
+            ],
+            [
+                'type' => 'Logic',
+                'name' => 'Logic',
+                'brandname' => 'Logic',
+                'key' => 'logic',
+            ],
+            [
+                'type' => 'Hammer',
+                'name' => 'Hammer',
+                'brandname' => 'Hammer',
+                'key' => 'hammer',
+            ],
         ];
     }
 

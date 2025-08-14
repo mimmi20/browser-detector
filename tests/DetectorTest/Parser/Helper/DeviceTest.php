@@ -786,6 +786,20 @@ final class DeviceTest extends TestCase
             ['24122RKC7C', 'xiaomi=xiaomi 24122rkc7c'],
             ['24127RK2CC', 'xiaomi=xiaomi 24127rk2cc'],
             ['24129RT7CC', 'xiaomi=xiaomi 24129rt7cc'],
+            ['24018RPACG', 'xiaomi=xiaomi 24018rpacg'],
+            ['24095PCADG', 'xiaomi=xiaomi 24095pcadg'],
+            ['24117RK2CC', 'xiaomi=xiaomi 24117rk2cc'],
+            ['M1903C3EG', 'xiaomi=xiaomi m1903c3eg'],
+            ['MZB7995IN', 'xiaomi=xiaomi mzb7995in'],
+            ['M1903C3EH', 'xiaomi=xiaomi m1903c3eh'],
+            ['M1903C3EI', 'xiaomi=xiaomi m1903c3ei'],
+            ['M1901F7G', 'xiaomi=xiaomi m1901f7g'],
+            ['M1901F7H', 'xiaomi=xiaomi m1901f7h'],
+            ['M1901F7I', 'xiaomi=xiaomi m1901f7i'],
+            ['22120RN86C', 'xiaomi=xiaomi 22120rn86c'],
+            ['22071219AI', 'xiaomi=xiaomi 22071219ai'],
+            ['M2006C3LII', 'xiaomi=xiaomi m2006c3lii'],
+            ['22071219CI', 'xiaomi=xiaomi 22071219ci'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -875,6 +889,7 @@ final class DeviceTest extends TestCase
             ['A0616', 'zte=zte a0616'],
             ['ZTE 7543N', 'zte=zte 7543n'],
             ['Z2453', 'zte=zte z2453'],
+            ['Z2359', 'zte=zte z2359'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -1862,6 +1877,28 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A716B', 'samsung=samsung sm-a716b'],
             ['SM-A7160', 'samsung=samsung sm-a7160'],
             ['SAMSUNG SM-A7160', 'samsung=samsung sm-a7160'],
+            ['SM-G889F', 'samsung=samsung sm-g889f'],
+            ['SAMSUNG SM-G889F', 'samsung=samsung sm-g889f'],
+            ['SM-G889A', 'samsung=samsung sm-g889a'],
+            ['SAMSUNG SM-G889A', 'samsung=samsung sm-g889a'],
+            ['SM-G889YB', 'samsung=samsung sm-g889yb'],
+            ['SAMSUNG SM-G889YB', 'samsung=samsung sm-g889yb'],
+            ['SM-G715F', 'samsung=samsung sm-g715f'],
+            ['SAMSUNG SM-G715F', 'samsung=samsung sm-g715f'],
+            ['SM-G715W', 'samsung=samsung sm-g715w'],
+            ['SAMSUNG SM-G715W', 'samsung=samsung sm-g715w'],
+            ['SM-G715U', 'samsung=samsung sm-g715u'],
+            ['SAMSUNG SM-G715U', 'samsung=samsung sm-g715u'],
+            ['SM-G715U1', 'samsung=samsung sm-g715u1'],
+            ['SAMSUNG SM-G715U1', 'samsung=samsung sm-g715u1'],
+            ['SM-G715A', 'samsung=samsung sm-g715a'],
+            ['SAMSUNG SM-G715A', 'samsung=samsung sm-g715a'],
+            ['SM-F966B', 'samsung=samsung sm-f966b'],
+            ['SAMSUNG SM-F966B', 'samsung=samsung sm-f966b'],
+            ['SM-F966U', 'samsung=samsung sm-f966u'],
+            ['SAMSUNG SM-F966U', 'samsung=samsung sm-f966u'],
+            ['SM-F966U1', 'samsung=samsung sm-f966u1'],
+            ['SAMSUNG SM-F966U1', 'samsung=samsung sm-f966u1'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['VOG-L29', 'huawei=huawei vog-l29'],
@@ -2294,6 +2331,7 @@ final class DeviceTest extends TestCase
             ['HMD ARC', 'hmd-global=hmd-global arc'],
             ['HMD XR21', 'hmd-global=hmd-global xr21'],
             ['HMD CREST', 'hmd-global=hmd-global crest'],
+            ['HMD Skyline', 'hmd-global=hmd-global skyline'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox one'],
@@ -2495,6 +2533,7 @@ final class DeviceTest extends TestCase
             ['XT2245-1', 'motorola=motorola xt2245-1'],
             ['XT2427-4', 'motorola=motorola xt2427-4'],
             ['XT2401-2', 'motorola=motorola xt2401-2'],
+            ['motorola edge 50 ultra', 'motorola=motorola edge 50 ultra'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -4348,6 +4387,7 @@ final class DeviceTest extends TestCase
             ['SL112A', 'at-t=at-t sl112a'],
             ['U6080AA', 'at-t=at-t u6080aa'],
             ['U380AA', 'at-t=at-t u380aa'],
+            ['SL219A', 'at-t=at-t sl219a'],
             // benco
             ['AE9260', 'benco=benco ae9260'],
             ['AE9240', 'benco=benco ae9240'],
@@ -4382,6 +4422,8 @@ final class DeviceTest extends TestCase
             ['Sparx Neo 8 Pro', 'sparx=sparx neo 8 pro'],
             ['Ultra 8', 'sparx=sparx ultra 8'],
             ['Sparx Neo 9i', 'sparx=sparx neo 9i'],
+            ['Sparx Neo 7', 'sparx=sparx neo 7'],
+            ['Sparx Neo 7 Pro', 'sparx=sparx neo 7 pro'],
             // hot-pepper
             ['Puya', 'hot-pepper=hot-pepper puya'],
             // fenoti
@@ -4392,12 +4434,14 @@ final class DeviceTest extends TestCase
             ['F102', 'fossi-bot=fossi-bot f102'],
             ['F101 Pro', 'fossi-bot=fossi-bot f101 pro'],
             ['F101', 'fossi-bot=fossi-bot f101'],
+            ['F112 Pro', 'fossi-bot=fossi-bot f112 pro'],
             // hoozo
             ['F13_EEA', 'hoozo=hoozo f13_eea'],
             // sigma-mobile
             ['X-treme PQ55', 'sigma-mobile=sigma-mobile x-treme pq55'],
             // cricket
             ['SL112C', 'cricket=cricket sl112c'],
+            ['SL219C', 'cricket=cricket sl219c'],
             // mintt
             ['COOLMINTT A8', 'mintt=mintt coolmintt a8'],
             // ajib
@@ -4430,6 +4474,7 @@ final class DeviceTest extends TestCase
             ['Ocean K8 Pro', 'olax=olax ocean k8 pro'],
             // okapi-mobile
             ['Okapi10', 'okapi-mobile=okapi-mobile okapi 10'],
+            ['Okapi_Tab8_Pro', 'okapi-mobile=okapi-mobile okapi tab8 pro'],
             // opel-mobile
             ['Rugged60Q', 'opel-mobile=opel-mobile rugged 60q'],
             // realix
@@ -4446,6 +4491,7 @@ final class DeviceTest extends TestCase
             // stylo
             ['EBY33', 'stylo=stylo eby33'],
             ['STYLO RAIN', 'stylo=stylo rain'],
+            ['APEX_5G', 'stylo=stylo apex 5g'],
             // atozee
             ['CP10', 'atozee=atozee cp10'],
             // meta
@@ -4502,13 +4548,23 @@ final class DeviceTest extends TestCase
             ['mipo_M46_Pro', 'mipo=mipo m46 pro'],
             ['mipo_M17', 'mipo=mipo m17'],
             ['mipo_M59', 'mipo=mipo m59'],
+            ['mipo_M33', 'mipo=mipo m33'],
             // nuu-mobile
             ['S6702X', 'nuu-mobile=nuu-mobile s6702x'],
-            // mhorse
-            ['C68', 'mhorse=mhorse c68'],
-            ['C67', 'mhorse=mhorse c67'],
+            // m-horse
+            ['C68', 'm-horse=mhorse c68'],
+            ['C67', 'm-horse=mhorse c67'],
             // iget
             ['SMART_W84', 'iget=iget smart w84'],
+            // corn
+            ['Play25_Pro_4G', 'corn=corn play 25 pro'],
+            // logic
+            ['L68_Ultra', 'logic=logic l68 ultra'],
+            // hammer
+            ['Hammer_Construction_2_5G', 'hammer=hammer construction 2 5g'],
+            ['Hammer_Construction_2_Thermal_5G', 'hammer=hammer construction 2 thermal 5g'],
+            // kruger-matz
+            ['LIVE 12', 'kruger-matz=kruger-matz live 12'],
             // other
             ['Model"', null],
             [': "', null],

@@ -4,8 +4,8 @@
     "marketingName": "Drive 4",
     "manufacturer": "kruger-matz",
     "brand": "kruger-matz",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -20,8 +20,8 @@
     "marketingName": "Drive 4S",
     "manufacturer": "kruger-matz",
     "brand": "kruger-matz",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -36,8 +36,8 @@
     "marketingName": "Drive 5",
     "manufacturer": "kruger-matz",
     "brand": "kruger-matz",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -52,8 +52,8 @@
     "marketingName": "Flow 5",
     "manufacturer": "kruger-matz",
     "brand": "kruger-matz",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -68,8 +68,8 @@
     "marketingName": "Live 5",
     "manufacturer": "kruger-matz",
     "brand": "kruger-matz",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -84,8 +84,8 @@
     "marketingName": "Move 6",
     "manufacturer": "kruger-matz",
     "brand": "kruger-matz",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -100,13 +100,29 @@
     "marketingName": "Move 8",
     "manufacturer": "kruger-matz",
     "brand": "kruger-matz",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 640,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "kruger-matz live 12": {
+    "deviceName": "Live 12",
+    "marketingName": "Live 12",
+    "manufacturer": "kruger-matz",
+    "brand": "kruger-matz",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.74
     },
     "type": "smartphone",
     "platform": "android"
