@@ -190,7 +190,7 @@ enum Company: string implements CompanyInterface
             'stylo' => self::stylo,
             'realix' => self::realix,
             'opelmobile', 'opel mobile' => self::opelmobile,
-            'okapimobile', 'okapi mobile' => self::okapimobile,
+            'okapimobile', 'okapi mobile', 'okapi-mobile' => self::okapimobile,
             'olax' => self::olax,
             'lville' => self::lville,
             'trimble' => self::trimble,

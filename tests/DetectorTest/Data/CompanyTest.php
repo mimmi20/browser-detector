@@ -583,6 +583,12 @@ final class CompanyTest extends TestCase
                 'key' => 'okapi-mobile',
             ],
             [
+                'fallback' => 'okapi-mobile',
+                'name' => 'Okapi Mobile',
+                'brandname' => 'Okapi Mobile',
+                'key' => 'okapi-mobile',
+            ],
+            [
                 'fallback' => 'Google Inc.',
                 'name' => 'Google Inc.',
                 'brandname' => 'Google',
