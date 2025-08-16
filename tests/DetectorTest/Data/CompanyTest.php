@@ -519,6 +519,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Hammer',
                 'key' => 'hammer',
             ],
+            [
+                'type' => 'RunGee',
+                'name' => 'RunGee',
+                'brandname' => 'RunGee',
+                'key' => 'rungee',
+            ],
+            [
+                'type' => 'BMAX',
+                'name' => 'BMAX',
+                'brandname' => 'BMAX',
+                'key' => 'bmax',
+            ],
         ];
     }
 

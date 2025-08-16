@@ -102,6 +102,10 @@ final class DeviceTest extends TestCase
             ['LM-X410.FN', 'lg=lg lm-x410.fn'],
             ['LG-K580', 'lg=lg k580'],
             ['LMK920', 'lg=lg lmk920'],
+            ['LGL164VL', 'lg=lg l164vl'],
+            ['LGL163BL', 'lg=lg l163bl'],
+            ['LM-X600IM', 'lg=lg lm-x600im'],
+            ['LM-T605', 'lg=lg lm-t605'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
@@ -3836,6 +3840,7 @@ final class DeviceTest extends TestCase
             ['AIN065', 'nothing-phone=nothing-phone ain065'],
             ['Phone (2a)', 'nothing-phone=nothing-phone phone 2a'],
             ['Phone (2a', 'nothing-phone=nothing-phone phone 2a'],
+            ['A001', 'nothing-phone=nothing-phone a001'],
             // doro
             ['DSB-0220', 'doro=doro dsb-0220'],
             ['DSB-0230', 'doro=doro dsb-0230'],
@@ -4304,6 +4309,7 @@ final class DeviceTest extends TestCase
             // omix
             ['X600 NFC', 'omix=omix x600 nfc'],
             ['X4', 'omix=omix x4'],
+            ['X600', 'omix=omix x600'],
             // blu
             ['BOLD K50', 'blu=blu bold k50'],
             ['G91', 'blu=blu g91'],
@@ -4585,6 +4591,7 @@ final class DeviceTest extends TestCase
             // hoco
             ['hoco_HI11', 'hoco=hoco hi11'],
             ['hoco_HI12', 'hoco=hoco hi12'],
+            ['hoco_HI10', 'hoco=hoco hi10'],
             // gtx
             ['Jaculus V2', 'gtx=gtx jaculus v2'],
             ['GTX_JACULUS_01', 'gtx=gtx jaculus 01'],
@@ -4627,6 +4634,7 @@ final class DeviceTest extends TestCase
             ['Ahiga', 'mobi-wire=mobi-wire ahiga'],
             // bmobile
             ['BL53_TG06', 'bmobile=bmobile bl53'],
+            ['BL52Pro', 'bmobile=bmobile bl52 pro'],
             // mipo
             ['mipo_M25', 'mipo=mipo m25'],
             ['mipo_M46_Pro', 'mipo=mipo m46 pro'],
@@ -4650,6 +4658,10 @@ final class DeviceTest extends TestCase
             ['Hammer_Construction_2_Thermal_5G', 'hammer=hammer construction 2 thermal 5g'],
             // kruger-matz
             ['LIVE 12', 'kruger-matz=kruger-matz live 12'],
+            // rungee
+            ['RunGee x9', 'rungee=rungee x9'],
+            // bmax
+            ['I10_Plus', 'bmax=bmax maxpad i10 plus'],
             // other
             ['Model"', null],
             [': "', null],

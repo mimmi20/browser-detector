@@ -82,6 +82,10 @@ final class Device implements DeviceInterface
             'lm-x410.fn' => 'lg=lg lm-x410.fn',
             'lg-k580' => 'lg=lg k580',
             'lmk920' => 'lg=lg lmk920',
+            'lgl164vl' => 'lg=lg l164vl',
+            'lgl163bl' => 'lg=lg l163bl',
+            'lm-x600im' => 'lg=lg lm-x600im',
+            'lm-t605' => 'lg=lg lm-t605',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -3491,6 +3495,7 @@ final class Device implements DeviceInterface
             'a015' => 'nothing-phone=nothing-phone a015',
             'ain065' => 'nothing-phone=nothing-phone ain065',
             'phone (2a)', 'phone (2a' => 'nothing-phone=nothing-phone phone 2a',
+            'a001' => 'nothing-phone=nothing-phone a001',
             // doro
             'dsb-0220' => 'doro=doro dsb-0220',
             'dsb-0230' => 'doro=doro dsb-0230',
@@ -3912,6 +3917,7 @@ final class Device implements DeviceInterface
             // omix
             'x600 nfc' => 'omix=omix x600 nfc',
             'x4' => 'omix=omix x4',
+            'x600' => 'omix=omix x600',
             // blu
             'bold k50' => 'blu=blu bold k50',
             'g91' => 'blu=blu g91',
@@ -4133,6 +4139,7 @@ final class Device implements DeviceInterface
             // hoco
             'hoco_hi11' => 'hoco=hoco hi11',
             'hoco_hi12' => 'hoco=hoco hi12',
+            'hoco_hi10' => 'hoco=hoco hi10',
             // gtx
             'jaculus v2' => 'gtx=gtx jaculus v2',
             'gtx_jaculus_01' => 'gtx=gtx jaculus 01',
@@ -4173,6 +4180,7 @@ final class Device implements DeviceInterface
             'ahiga' => 'mobi-wire=mobi-wire ahiga',
             // bmobile
             'bl53_tg06' => 'bmobile=bmobile bl53',
+            'bl52pro' => 'bmobile=bmobile bl52 pro',
             // mipo
             'mipo_m25' => 'mipo=mipo m25',
             'mipo_m46_pro' => 'mipo=mipo m46 pro',
@@ -4196,6 +4204,10 @@ final class Device implements DeviceInterface
             'hammer_construction_2_thermal_5g' => 'hammer=hammer construction 2 thermal 5g',
             // kruger-matz
             'live 12' => 'kruger-matz=kruger-matz live 12',
+            // rungee
+            'rungee x9' => 'rungee=rungee x9',
+            // bmax
+            'i10_plus' => 'bmax=bmax maxpad i10 plus',
             // other
             default => null,
         };

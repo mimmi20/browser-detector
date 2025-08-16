@@ -167,6 +167,10 @@ enum Company: string implements CompanyInterface
 
     case hammer = 'Hammer';
 
+    case rungee = 'RunGee';
+
+    case bmax = 'BMAX';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -247,6 +251,8 @@ enum Company: string implements CompanyInterface
             'corn' => self::corn,
             'logic' => self::logic,
             'hammer' => self::hammer,
+            'rungee' => self::rungee,
+            'bmax' => self::bmax,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
