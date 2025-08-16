@@ -846,5 +846,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "umi mp21": {
+    "deviceName": "MP21",
+    "marketingName": "G2",
+    "manufacturer": "umi",
+    "brand": "umi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "umi pa2310gbb": {
+    "deviceName": "PA2310GBB",
+    "marketingName": "A15T",
+    "manufacturer": "umi",
+    "brand": "umi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1650,
+      "height": 720,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }
