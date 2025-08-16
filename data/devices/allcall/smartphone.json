@@ -4,8 +4,8 @@
     "marketingName": "Atom",
     "manufacturer": "allcall",
     "brand": "allcall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -20,8 +20,8 @@
     "marketingName": "Madrid",
     "manufacturer": "allcall",
     "brand": "allcall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -36,12 +36,28 @@
     "marketingName": "Rio",
     "manufacturer": "allcall",
     "brand": "allcall",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "allcall hero 20 pro": {
+    "deviceName": "Hero 20 Pro",
+    "marketingName": "Hero 20 Pro",
+    "manufacturer": "allcall",
+    "brand": "allcall",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": null,
       "size": 5
     },
     "type": "smartphone",

@@ -4,8 +4,8 @@
     "marketingName": "Smart S100",
     "manufacturer": "iget",
     "brand": "iget",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -20,13 +20,29 @@
     "marketingName": "Smart S70",
     "manufacturer": "iget",
     "brand": "iget",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
       "touch": true,
       "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "iget smart w84": {
+    "deviceName": "Smart W84",
+    "marketingName": "Smart W84",
+    "manufacturer": "iget",
+    "brand": "iget",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"

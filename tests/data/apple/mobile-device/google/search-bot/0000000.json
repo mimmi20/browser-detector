@@ -1090,5 +1090,47 @@
       "version": "3826.500.131",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Google/380.0.788317806 CFNetwork/1498.700.2 Darwin/23.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "17.6.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Google Bot",
+      "version": "380.0.788317806",
+      "manufacturer": "google",
+      "type": "search-bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1498.700.2",
+      "manufacturer": "apple"
+    }
   }
 ]
