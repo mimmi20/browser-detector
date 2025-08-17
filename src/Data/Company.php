@@ -183,6 +183,8 @@ enum Company: string implements CompanyInterface
 
     case pixus = 'Pixus';
 
+    case tibuta = 'Tibuta';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -271,6 +273,7 @@ enum Company: string implements CompanyInterface
             'novis' => self::novis,
             'pritom' => self::pritom,
             'pixus' => self::pixus,
+            'tibuta' => self::tibuta,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

@@ -3917,11 +3917,17 @@ final class Device implements DeviceInterface
             // omix
             // do not add omix x600, this conflicts with leeco x600
             'x4' => 'omix=omix x4',
+            'x600 nfc' => 'omix=omix x600 nfc',
             // blu
             'bold k50' => 'blu=blu bold k50',
             'g91' => 'blu=blu g91',
             'bold n3' => 'blu=blu bold n3',
             // apple
+            'iphone17,5', 'iph17,5' => 'apple=apple iphone 17,5',
+            'iphone17,4', 'iph17,4' => 'apple=apple iphone 17,4',
+            'iphone17,3', 'iph17,3' => 'apple=apple iphone 17,3',
+            'iphone17,2', 'iph17,2' => 'apple=apple iphone 17,2',
+            'iphone17,1', 'iph17,1' => 'apple=apple iphone 17,1',
             'iphone16,2', 'iph16,2' => 'apple=apple iphone 16,2',
             'iphone16,1', 'iph16,1' => 'apple=apple iphone 16,1',
             'iphone15,5', 'iph15,5' => 'apple=apple iphone 15,5',
@@ -4220,6 +4226,8 @@ final class Device implements DeviceInterface
             'm10_r02' => 'pritom=pritom m10 r02',
             // pixus
             'pixus_deon' => 'pixus=pixus deon',
+            // tibuta
+            'tab_868_pro' => 'tibuta=tibuta tab 868 pro',
             // other
             default => null,
         };

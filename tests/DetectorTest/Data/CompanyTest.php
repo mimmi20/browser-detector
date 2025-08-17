@@ -567,6 +567,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Pixus',
                 'key' => 'pixus',
             ],
+            [
+                'type' => 'Tibuta',
+                'name' => 'Tibuta',
+                'brandname' => 'Tibuta',
+                'key' => 'tibuta',
+            ],
         ];
     }
 

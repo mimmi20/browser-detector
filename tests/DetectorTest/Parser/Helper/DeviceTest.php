@@ -4308,11 +4308,22 @@ final class DeviceTest extends TestCase
             ['T5-EEA', 'yestel=yestel t5'],
             // omix
             ['X4', 'omix=omix x4'],
+            ['X600 NFC', 'omix=omix x600 nfc'],
             // blu
             ['BOLD K50', 'blu=blu bold k50'],
             ['G91', 'blu=blu g91'],
             ['BOLD N3', 'blu=blu bold n3'],
             // apple
+            ['iPhone17,5', 'apple=apple iphone 17,5'],
+            ['iPh17,5', 'apple=apple iphone 17,5'],
+            ['iPhone17,4', 'apple=apple iphone 17,4'],
+            ['iPh17,4', 'apple=apple iphone 17,4'],
+            ['iPhone17,3', 'apple=apple iphone 17,3'],
+            ['iPh17,3', 'apple=apple iphone 17,3'],
+            ['iPhone17,2', 'apple=apple iphone 17,2'],
+            ['iPh17,2', 'apple=apple iphone 17,2'],
+            ['iPhone17,1', 'apple=apple iphone 17,1'],
+            ['iPh17,1', 'apple=apple iphone 17,1'],
             ['iPhone16,2', 'apple=apple iphone 16,2'],
             ['iPh16,2', 'apple=apple iphone 16,2'],
             ['iPhone16,1', 'apple=apple iphone 16,1'],
@@ -4674,6 +4685,8 @@ final class DeviceTest extends TestCase
             ['M10_R02', 'pritom=pritom m10 r02'],
             // pixus
             ['Pixus_Deon', 'pixus=pixus deon'],
+            // tibuta
+            ['TAB_868_PRO', 'tibuta=tibuta tab 868 pro'],
             // other
             ['Model"', null],
             [': "', null],
