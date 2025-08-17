@@ -171,6 +171,18 @@ enum Company: string implements CompanyInterface
 
     case bmax = 'BMAX';
 
+    case jambo = 'Jambo';
+
+    case fanvace = 'Fanvace';
+
+    case rombica = 'Rombica';
+
+    case novis = 'Novis';
+
+    case pritom = 'Pritom';
+
+    case pixus = 'Pixus';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -253,6 +265,12 @@ enum Company: string implements CompanyInterface
             'hammer' => self::hammer,
             'rungee' => self::rungee,
             'bmax' => self::bmax,
+            'jambo', 'jambotechnology hakuna matata chill limited' => self::jambo,
+            'fanvace' => self::fanvace,
+            'rombica' => self::rombica,
+            'novis' => self::novis,
+            'pritom' => self::pritom,
+            'pixus' => self::pixus,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -284,6 +302,7 @@ enum Company: string implements CompanyInterface
             self::netflix => 'Netflix, Inc.',
             self::dna => 'DNA Oyj',
             self::itech => 'ITECH SLU',
+            self::jambo => 'JamboTechnology Hakuna Matata Chill Limited',
             self::unknown => null,
             default => $this->value,
         };

@@ -360,6 +360,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.saf.seca' => 'search-craft',
             'com.fsecure.ms.teliasweden' => 'telia-trygg',
             'com.gener8ads.wallet' => 'gener8-browser',
+            'com.jambo' => 'jambo',
             default => null,
         };
     }

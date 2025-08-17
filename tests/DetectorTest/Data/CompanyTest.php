@@ -531,6 +531,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'BMAX',
                 'key' => 'bmax',
             ],
+            [
+                'type' => 'Jambo',
+                'name' => 'JamboTechnology Hakuna Matata Chill Limited',
+                'brandname' => 'Jambo',
+                'key' => 'jambo',
+            ],
+            [
+                'type' => 'Fanvace',
+                'name' => 'Fanvace',
+                'brandname' => 'Fanvace',
+                'key' => 'fanvace',
+            ],
+            [
+                'type' => 'Rombica',
+                'name' => 'Rombica',
+                'brandname' => 'Rombica',
+                'key' => 'rombica',
+            ],
+            [
+                'type' => 'Novis',
+                'name' => 'Novis',
+                'brandname' => 'Novis',
+                'key' => 'novis',
+            ],
+            [
+                'type' => 'Pritom',
+                'name' => 'Pritom',
+                'brandname' => 'Pritom',
+                'key' => 'pritom',
+            ],
+            [
+                'type' => 'Pixus',
+                'name' => 'Pixus',
+                'brandname' => 'Pixus',
+                'key' => 'pixus',
+            ],
         ];
     }
 
@@ -677,6 +713,12 @@ final class CompanyTest extends TestCase
                 'name' => '1 & 1',
                 'brandname' => '1 & 1',
                 'key' => 'einsundeins',
+            ],
+            [
+                'fallback' => 'JamboTechnology Hakuna Matata Chill Limited',
+                'name' => 'JamboTechnology Hakuna Matata Chill Limited',
+                'brandname' => 'Jambo',
+                'key' => 'jambo',
             ],
         ];
     }

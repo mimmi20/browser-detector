@@ -3915,9 +3915,8 @@ final class Device implements DeviceInterface
             // yestel
             't5_eea', 't5-eea' => 'yestel=yestel t5',
             // omix
-            'x600 nfc' => 'omix=omix x600 nfc',
+            // do not add omix x600, this conflicts with leeco x600
             'x4' => 'omix=omix x4',
-            'x600' => 'omix=omix x600',
             // blu
             'bold k50' => 'blu=blu bold k50',
             'g91' => 'blu=blu g91',
@@ -4145,6 +4144,7 @@ final class Device implements DeviceInterface
             'gtx_jaculus_01' => 'gtx=gtx jaculus 01',
             // vasoun
             'l10_t08_eea' => 'vasoun=vasoun l10-t08',
+            'l10-t11', 'l10-t11-eea' => 'vasoun=vasoun l10-t11',
             // kenshi
             'pad pro e110' => 'kenshi=kenshi pad pro e110',
             'pad pro e111' => 'kenshi=kenshi pad pro e111',
@@ -4208,6 +4208,18 @@ final class Device implements DeviceInterface
             'rungee x9' => 'rungee=rungee x9',
             // bmax
             'i10_plus' => 'bmax=bmax maxpad i10 plus',
+            // jambo
+            'jp2' => 'jambo=jambo jp2',
+            // fanvace
+            'fanvace m36' => 'fanvace=fanvace m36',
+            // rombica
+            '50mt-udg54g' => 'rombica=rombica 50mt-udg54g',
+            // novis
+            'ntv-h3230ts' => 'novis=novis ntv-h3230ts',
+            // pritom
+            'm10_r02' => 'pritom=pritom m10 r02',
+            // pixus
+            'pixus_deon' => 'pixus=pixus deon',
             // other
             default => null,
         };

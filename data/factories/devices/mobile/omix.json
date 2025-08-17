@@ -1,4 +1,7 @@
 {
-  "rules": [],
+  "rules": {
+    "/x600 nfc/i": "omix x600 nfc",
+    "/x600/i": "omix x600"
+  },
   "generic": "general omix device"
 }

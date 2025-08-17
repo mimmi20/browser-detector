@@ -4307,9 +4307,7 @@ final class DeviceTest extends TestCase
             ['T5_EEA', 'yestel=yestel t5'],
             ['T5-EEA', 'yestel=yestel t5'],
             // omix
-            ['X600 NFC', 'omix=omix x600 nfc'],
             ['X4', 'omix=omix x4'],
-            ['X600', 'omix=omix x600'],
             // blu
             ['BOLD K50', 'blu=blu bold k50'],
             ['G91', 'blu=blu g91'],
@@ -4597,6 +4595,8 @@ final class DeviceTest extends TestCase
             ['GTX_JACULUS_01', 'gtx=gtx jaculus 01'],
             // vasoun
             ['L10_T08_EEA', 'vasoun=vasoun l10-t08'],
+            ['L10-T11', 'vasoun=vasoun l10-t11'],
+            ['L10-T11-EEA', 'vasoun=vasoun l10-t11'],
             // kenshi
             ['Pad Pro E110', 'kenshi=kenshi pad pro e110'],
             ['Pad Pro E111', 'kenshi=kenshi pad pro e111'],
@@ -4662,6 +4662,18 @@ final class DeviceTest extends TestCase
             ['RunGee x9', 'rungee=rungee x9'],
             // bmax
             ['I10_Plus', 'bmax=bmax maxpad i10 plus'],
+            // jambo
+            ['JP2', 'jambo=jambo jp2'],
+            // fanvace
+            ['Fanvace M36', 'fanvace=fanvace m36'],
+            // rombica
+            ['50MT-UDG54G', 'rombica=rombica 50mt-udg54g'],
+            // novis
+            ['NTV-H3230TS', 'novis=novis ntv-h3230ts'],
+            // pritom
+            ['M10_R02', 'pritom=pritom m10 r02'],
+            // pixus
+            ['Pixus_Deon', 'pixus=pixus deon'],
             // other
             ['Model"', null],
             [': "', null],
