@@ -126,5 +126,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "kruger-matz move 10": {
+    "deviceName": "Move 10",
+    "marketingName": "Move 10",
+    "manufacturer": "kruger-matz",
+    "brand": "kruger-matz",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "kruger-matz flow 10": {
+    "deviceName": "Flow 10",
+    "marketingName": "Flow 10",
+    "manufacturer": "kruger-matz",
+    "brand": "kruger-matz",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

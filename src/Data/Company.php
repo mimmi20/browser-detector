@@ -185,6 +185,10 @@ enum Company: string implements CompanyInterface
 
     case tibuta = 'Tibuta';
 
+    case daria = 'Daria';
+
+    case dijitsu = 'Dijitsu';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -207,7 +211,7 @@ enum Company: string implements CompanyInterface
             'unitech' => self::unitech,
             'stylo' => self::stylo,
             'realix' => self::realix,
-            'opelmobile', 'opel mobile' => self::opelmobile,
+            'opelmobile', 'opel mobile', 'opel-mobile' => self::opelmobile,
             'okapimobile', 'okapi mobile', 'okapi-mobile' => self::okapimobile,
             'olax' => self::olax,
             'lville' => self::lville,
@@ -274,6 +278,8 @@ enum Company: string implements CompanyInterface
             'pritom' => self::pritom,
             'pixus' => self::pixus,
             'tibuta' => self::tibuta,
+            'daria' => self::daria,
+            'dijitsu' => self::dijitsu,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

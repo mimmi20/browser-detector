@@ -573,6 +573,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Tibuta',
                 'key' => 'tibuta',
             ],
+            [
+                'type' => 'Daria',
+                'name' => 'Daria',
+                'brandname' => 'Daria',
+                'key' => 'daria',
+            ],
+            [
+                'type' => 'Dijitsu',
+                'name' => 'Dijitsu',
+                'brandname' => 'Dijitsu',
+                'key' => 'dijitsu',
+            ],
         ];
     }
 
@@ -626,6 +638,12 @@ final class CompanyTest extends TestCase
             ],
             [
                 'fallback' => 'opelmobile',
+                'name' => 'Opel Mobile',
+                'brandname' => 'Opel Mobile',
+                'key' => 'opel-mobile',
+            ],
+            [
+                'fallback' => 'opel-mobile',
                 'name' => 'Opel Mobile',
                 'brandname' => 'Opel Mobile',
                 'key' => 'opel-mobile',
