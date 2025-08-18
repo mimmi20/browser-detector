@@ -464,6 +464,8 @@ final class Device implements DeviceInterface
             'pkl110' => 'oppo=oppo pkl110',
             'cph2669' => 'oppo=oppo cph2669',
             'cph3669' => 'oppo=oppo cph3669',
+            'pfzm10' => 'oppo=oppo pfzm10',
+            'pgim10' => 'oppo=oppo pgim10',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
