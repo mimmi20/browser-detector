@@ -46,5 +46,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "hmd-global crest": {
+    "deviceName": "Crest",
+    "marketingName": "Crest",
+    "manufacturer": "hmd-global",
+    "brand": "hmd-global",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "hmd-global skyline": {
+    "deviceName": "Skyline",
+    "marketingName": "Skyline",
+    "manufacturer": "hmd-global",
+    "brand": "hmd-global",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.55
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

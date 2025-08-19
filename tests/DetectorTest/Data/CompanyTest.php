@@ -501,6 +501,90 @@ final class CompanyTest extends TestCase
                 'brandname' => '1 & 1',
                 'key' => 'einsundeins',
             ],
+            [
+                'type' => 'Corn',
+                'name' => 'Corn',
+                'brandname' => 'Corn',
+                'key' => 'corn',
+            ],
+            [
+                'type' => 'Logic',
+                'name' => 'Logic',
+                'brandname' => 'Logic',
+                'key' => 'logic',
+            ],
+            [
+                'type' => 'Hammer',
+                'name' => 'Hammer',
+                'brandname' => 'Hammer',
+                'key' => 'hammer',
+            ],
+            [
+                'type' => 'RunGee',
+                'name' => 'RunGee',
+                'brandname' => 'RunGee',
+                'key' => 'rungee',
+            ],
+            [
+                'type' => 'BMAX',
+                'name' => 'BMAX',
+                'brandname' => 'BMAX',
+                'key' => 'bmax',
+            ],
+            [
+                'type' => 'Jambo',
+                'name' => 'JamboTechnology Hakuna Matata Chill Limited',
+                'brandname' => 'Jambo',
+                'key' => 'jambo',
+            ],
+            [
+                'type' => 'Fanvace',
+                'name' => 'Fanvace',
+                'brandname' => 'Fanvace',
+                'key' => 'fanvace',
+            ],
+            [
+                'type' => 'Rombica',
+                'name' => 'Rombica',
+                'brandname' => 'Rombica',
+                'key' => 'rombica',
+            ],
+            [
+                'type' => 'Novis',
+                'name' => 'Novis',
+                'brandname' => 'Novis',
+                'key' => 'novis',
+            ],
+            [
+                'type' => 'Pritom',
+                'name' => 'Pritom',
+                'brandname' => 'Pritom',
+                'key' => 'pritom',
+            ],
+            [
+                'type' => 'Pixus',
+                'name' => 'Pixus',
+                'brandname' => 'Pixus',
+                'key' => 'pixus',
+            ],
+            [
+                'type' => 'Tibuta',
+                'name' => 'Tibuta',
+                'brandname' => 'Tibuta',
+                'key' => 'tibuta',
+            ],
+            [
+                'type' => 'Daria',
+                'name' => 'Daria',
+                'brandname' => 'Daria',
+                'key' => 'daria',
+            ],
+            [
+                'type' => 'Dijitsu',
+                'name' => 'Dijitsu',
+                'brandname' => 'Dijitsu',
+                'key' => 'dijitsu',
+            ],
         ];
     }
 
@@ -559,7 +643,19 @@ final class CompanyTest extends TestCase
                 'key' => 'opel-mobile',
             ],
             [
+                'fallback' => 'opel-mobile',
+                'name' => 'Opel Mobile',
+                'brandname' => 'Opel Mobile',
+                'key' => 'opel-mobile',
+            ],
+            [
                 'fallback' => 'okapimobile',
+                'name' => 'Okapi Mobile',
+                'brandname' => 'Okapi Mobile',
+                'key' => 'okapi-mobile',
+            ],
+            [
+                'fallback' => 'okapi-mobile',
                 'name' => 'Okapi Mobile',
                 'brandname' => 'Okapi Mobile',
                 'key' => 'okapi-mobile',
@@ -641,6 +737,12 @@ final class CompanyTest extends TestCase
                 'name' => '1 & 1',
                 'brandname' => '1 & 1',
                 'key' => 'einsundeins',
+            ],
+            [
+                'fallback' => 'JamboTechnology Hakuna Matata Chill Limited',
+                'name' => 'JamboTechnology Hakuna Matata Chill Limited',
+                'brandname' => 'Jambo',
+                'key' => 'jambo',
             ],
         ];
     }

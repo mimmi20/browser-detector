@@ -4,13 +4,29 @@
     "marketingName": "S515 Duo",
     "manufacturer": "aligator",
     "brand": "aligator",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "aligator rx850": {
+    "deviceName": "RX850",
+    "marketingName": "eXtremo",
+    "manufacturer": "aligator",
+    "brand": "aligator",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": true,
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"

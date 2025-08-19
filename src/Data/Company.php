@@ -161,6 +161,34 @@ enum Company: string implements CompanyInterface
 
     case einsundeins = '1 & 1';
 
+    case corn = 'Corn';
+
+    case logic = 'Logic';
+
+    case hammer = 'Hammer';
+
+    case rungee = 'RunGee';
+
+    case bmax = 'BMAX';
+
+    case jambo = 'Jambo';
+
+    case fanvace = 'Fanvace';
+
+    case rombica = 'Rombica';
+
+    case novis = 'Novis';
+
+    case pritom = 'Pritom';
+
+    case pixus = 'Pixus';
+
+    case tibuta = 'Tibuta';
+
+    case daria = 'Daria';
+
+    case dijitsu = 'Dijitsu';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -183,8 +211,8 @@ enum Company: string implements CompanyInterface
             'unitech' => self::unitech,
             'stylo' => self::stylo,
             'realix' => self::realix,
-            'opelmobile', 'opel mobile' => self::opelmobile,
-            'okapimobile', 'okapi mobile' => self::okapimobile,
+            'opelmobile', 'opel mobile', 'opel-mobile' => self::opelmobile,
+            'okapimobile', 'okapi mobile', 'okapi-mobile' => self::okapimobile,
             'olax' => self::olax,
             'lville' => self::lville,
             'trimble' => self::trimble,
@@ -238,6 +266,20 @@ enum Company: string implements CompanyInterface
             'itech', 'itech slu' => self::itech,
             'nexech' => self::nexech,
             'einsundeins', '1 & 1' => self::einsundeins,
+            'corn' => self::corn,
+            'logic' => self::logic,
+            'hammer' => self::hammer,
+            'rungee' => self::rungee,
+            'bmax' => self::bmax,
+            'jambo', 'jambotechnology hakuna matata chill limited' => self::jambo,
+            'fanvace' => self::fanvace,
+            'rombica' => self::rombica,
+            'novis' => self::novis,
+            'pritom' => self::pritom,
+            'pixus' => self::pixus,
+            'tibuta' => self::tibuta,
+            'daria' => self::daria,
+            'dijitsu' => self::dijitsu,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -269,6 +311,7 @@ enum Company: string implements CompanyInterface
             self::netflix => 'Netflix, Inc.',
             self::dna => 'DNA Oyj',
             self::itech => 'ITECH SLU',
+            self::jambo => 'JamboTechnology Hakuna Matata Chill Limited',
             self::unknown => null,
             default => $this->value,
         };

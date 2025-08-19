@@ -9,8 +9,8 @@
       "marketingName": "Move 6",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -51,8 +51,8 @@
       "marketingName": "Flow 5",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -93,8 +93,8 @@
       "marketingName": "Move 8",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 640,
@@ -135,8 +135,8 @@
       "marketingName": "Drive 5",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -177,8 +177,8 @@
       "marketingName": "Move 8",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 640,
@@ -219,8 +219,8 @@
       "marketingName": "Drive 4",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -261,8 +261,8 @@
       "marketingName": "Move 6",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -303,8 +303,8 @@
       "marketingName": "Drive 4S",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -345,8 +345,8 @@
       "marketingName": "Live 5",
       "manufacturer": "kruger-matz",
       "brand": "kruger-matz",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -374,6 +374,48 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; LIVE 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Live 12",
+      "marketingName": "Live 12",
+      "manufacturer": "kruger-matz",
+      "brand": "kruger-matz",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.74
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "137.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "137.0.0.0",
       "manufacturer": "google"
     }
   }

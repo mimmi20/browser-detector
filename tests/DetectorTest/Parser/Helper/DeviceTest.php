@@ -101,6 +101,11 @@ final class DeviceTest extends TestCase
             ['LG-D722', 'lg=lg d722'],
             ['LM-X410.FN', 'lg=lg lm-x410.fn'],
             ['LG-K580', 'lg=lg k580'],
+            ['LMK920', 'lg=lg lmk920'],
+            ['LGL164VL', 'lg=lg l164vl'],
+            ['LGL163BL', 'lg=lg l163bl'],
+            ['LM-X600IM', 'lg=lg lm-x600im'],
+            ['LM-T605', 'lg=lg lm-t605'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
@@ -126,6 +131,7 @@ final class DeviceTest extends TestCase
             ['M10-12_EEA', 'acer=acer m10-12_eea'],
             // AllCall
             ['Atom', 'allcall=allcall atom'],
+            ['HERO_20_PRO', 'allcall=allcall hero 20 pro'],
             // Amazon
             ['KFKAWI', 'amazon=amazon kfkawi'],
             ['KFGIWI', 'amazon=amazon kfgiwi'],
@@ -365,6 +371,8 @@ final class DeviceTest extends TestCase
             ['CPH2613', 'oneplus=oneplus cph2613'],
             ['CPH2611', 'oneplus=oneplus cph2611'],
             ['PJX110', 'oneplus=oneplus pjx110'],
+            ['OPWWE231', 'oneplus=oneplus opwwe231'],
+            ['PGZ110', 'oneplus=oneplus pgz110'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -475,6 +483,11 @@ final class DeviceTest extends TestCase
             ['CPH2725', 'oppo=oppo cph2725'],
             ['OPD2303', 'oppo=oppo opd2303'],
             ['OPD2302', 'oppo=oppo opd2302'],
+            ['PKL110', 'oppo=oppo pkl110'],
+            ['CPH2669', 'oppo=oppo cph2669'],
+            ['CPH3669', 'oppo=oppo cph3669'],
+            ['PFZM10', 'oppo=oppo pfzm10'],
+            ['PGIM10', 'oppo=oppo pgim10'],
             // Xiaomi
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -778,6 +791,28 @@ final class DeviceTest extends TestCase
             ['25067PYE3C', 'xiaomi=xiaomi 25067pye3c'],
             ['24066PC95I', 'xiaomi=xiaomi 24066pc95i'],
             ['2407FRK8EC', 'xiaomi=xiaomi 2407frk8ec'],
+            ['2412DPC0AI', 'xiaomi=xiaomi 2412dpc0ai'],
+            ['2412DPC0AG-art', 'xiaomi=xiaomi 2412dpc0ag-art'],
+            ['2502FRA65G', 'xiaomi=xiaomi 2502fra65g'],
+            ['24122RKC7C', 'xiaomi=xiaomi 24122rkc7c'],
+            ['24127RK2CC', 'xiaomi=xiaomi 24127rk2cc'],
+            ['24129RT7CC', 'xiaomi=xiaomi 24129rt7cc'],
+            ['24018RPACG', 'xiaomi=xiaomi 24018rpacg'],
+            ['24095PCADG', 'xiaomi=xiaomi 24095pcadg'],
+            ['24117RK2CC', 'xiaomi=xiaomi 24117rk2cc'],
+            ['M1903C3EG', 'xiaomi=xiaomi m1903c3eg'],
+            ['MZB7995IN', 'xiaomi=xiaomi mzb7995in'],
+            ['M1903C3EH', 'xiaomi=xiaomi m1903c3eh'],
+            ['M1903C3EI', 'xiaomi=xiaomi m1903c3ei'],
+            ['M1901F7G', 'xiaomi=xiaomi m1901f7g'],
+            ['M1901F7H', 'xiaomi=xiaomi m1901f7h'],
+            ['M1901F7I', 'xiaomi=xiaomi m1901f7i'],
+            ['22120RN86C', 'xiaomi=xiaomi 22120rn86c'],
+            ['22071219AI', 'xiaomi=xiaomi 22071219ai'],
+            ['M2006C3LII', 'xiaomi=xiaomi m2006c3lii'],
+            ['22071219CI', 'xiaomi=xiaomi 22071219ci'],
+            ['A301XM', 'xiaomi=xiaomi a301xm'],
+            ['22041216UC', 'xiaomi=xiaomi 22041216uc'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -867,6 +902,8 @@ final class DeviceTest extends TestCase
             ['A0616', 'zte=zte a0616'],
             ['ZTE 7543N', 'zte=zte 7543n'],
             ['Z2453', 'zte=zte z2453'],
+            ['Z2359', 'zte=zte z2359'],
+            ['NP03J', 'zte=zte np03j'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -971,14 +1008,23 @@ final class DeviceTest extends TestCase
             ['SM-A125F', 'samsung=samsung sm-a125f'],
             ['SAMSUNG SM-A125F', 'samsung=samsung sm-a125f'],
             ['SM-A125M', 'samsung=samsung sm-a125m'],
+            ['SAMSUNG SM-A125M', 'samsung=samsung sm-a125m'],
             ['SM-A125N', 'samsung=samsung sm-a125n'],
+            ['SAMSUNG SM-A125N', 'samsung=samsung sm-a125n'],
             ['SM-A125P', 'samsung=samsung sm-a125p'],
+            ['SAMSUNG SM-A125P', 'samsung=samsung sm-a125p'],
             ['SM-A125T', 'samsung=samsung sm-a125t'],
+            ['SAMSUNG SM-A125T', 'samsung=samsung sm-a125t'],
             ['SM-A125U', 'samsung=samsung sm-a125u'],
+            ['SAMSUNG SM-A125U', 'samsung=samsung sm-a125u'],
             ['SM-A125U1', 'samsung=samsung sm-a125u1'],
+            ['SAMSUNG SM-A125U1', 'samsung=samsung sm-a125u1'],
             ['SM-A125W', 'samsung=samsung sm-a125w'],
+            ['SAMSUNG SM-A125W', 'samsung=samsung sm-a125w'],
             ['SM-A125A', 'samsung=samsung sm-a125a'],
+            ['SAMSUNG SM-A125A', 'samsung=samsung sm-a125a'],
             ['SM-A125V', 'samsung=samsung sm-a125v'],
+            ['SAMSUNG SM-A125V', 'samsung=samsung sm-a125v'],
             ['SM-P619', 'samsung=samsung sm-p619'],
             ['SM-P613', 'samsung=samsung sm-p613'],
             ['SM-A136B', 'samsung=samsung sm-a136b'],
@@ -1125,11 +1171,17 @@ final class DeviceTest extends TestCase
             ['SM-T730', 'samsung=samsung sm-t730'],
             ['SAMSUNG SM-T730', 'samsung=samsung sm-t730'],
             ['SM-X900', 'samsung=samsung sm-x900'],
+            ['SAMSUNG SM-X900', 'samsung=samsung sm-x900'],
             ['SM-X906B', 'samsung=samsung sm-x906b'],
+            ['SAMSUNG SM-X906B', 'samsung=samsung sm-x906b'],
             ['SM-X906U', 'samsung=samsung sm-x906u'],
+            ['SAMSUNG SM-X906U', 'samsung=samsung sm-x906u'],
             ['SM-X906N', 'samsung=samsung sm-x906n'],
+            ['SAMSUNG SM-X906N', 'samsung=samsung sm-x906n'],
             ['SM-X906', 'samsung=samsung sm-x906'],
+            ['SAMSUNG SM-X906', 'samsung=samsung sm-x906'],
             ['SM-X906C', 'samsung=samsung sm-x906c'],
+            ['SAMSUNG SM-X906C', 'samsung=samsung sm-x906c'],
             ['SM-G965F', 'samsung=samsung sm-g965f'],
             ['SM-G975F', 'samsung=samsung sm-g975f'],
             ['SAMSUNG SM-G975F', 'samsung=samsung sm-g975f'],
@@ -1141,11 +1193,17 @@ final class DeviceTest extends TestCase
             ['SM-G975U1', 'samsung=samsung sm-g975u1'],
             ['SAMSUNG SM-G975U1', 'samsung=samsung sm-g975u1'],
             ['SM-G9758', 'samsung=samsung sm-g9758'],
+            ['SAMSUNG SM-G9758', 'samsung=samsung sm-g9758'],
             ['SM-G975D', 'samsung=samsung sm-g975d'],
+            ['SAMSUNG SM-G975D', 'samsung=samsung sm-g975d'],
             ['SM-G975J', 'samsung=samsung sm-g975j'],
+            ['SAMSUNG SM-G975J', 'samsung=samsung sm-g975j'],
             ['SM-G975N', 'samsung=samsung sm-g975n'],
+            ['SAMSUNG SM-G975N', 'samsung=samsung sm-g975n'],
             ['SM-G975W', 'samsung=samsung sm-g975w'],
+            ['SAMSUNG SM-G975W', 'samsung=samsung sm-g975w'],
             ['SM-G975X', 'samsung=samsung sm-g975x'],
+            ['SAMSUNG SM-G975X', 'samsung=samsung sm-g975x'],
             ['SM-A217F', 'samsung=samsung sm-a217f'],
             ['SAMSUNG SM-A217F', 'samsung=samsung sm-a217f'],
             ['SM-A217M', 'samsung=samsung sm-a217m'],
@@ -1244,11 +1302,17 @@ final class DeviceTest extends TestCase
             ['SM-G996B', 'samsung=samsung sm-g996b'],
             ['SAMSUNG SM-G996B', 'samsung=samsung sm-g996b'],
             ['SM-G996N', 'samsung=samsung sm-g996n'],
+            ['SAMSUNG SM-G996N', 'samsung=samsung sm-g996n'],
             ['SM-G996U1', 'samsung=samsung sm-g996u1'],
+            ['SAMSUNG SM-G996U1', 'samsung=samsung sm-g996u1'],
             ['SM-G996U', 'samsung=samsung sm-g996u'],
+            ['SAMSUNG SM-G996U', 'samsung=samsung sm-g996u'],
             ['SM-G996W', 'samsung=samsung sm-g996w'],
+            ['SAMSUNG SM-G996W', 'samsung=samsung sm-g996w'],
             ['SM-G9960', 'samsung=samsung sm-g9960'],
+            ['SAMSUNG SM-G9960', 'samsung=samsung sm-g9960'],
             ['SM-G996P', 'samsung=samsung sm-g996p'],
+            ['SAMSUNG SM-G996P', 'samsung=samsung sm-g996p'],
             ['SM-A510F', 'samsung=samsung sm-a510f'],
             ['SM-J530F', 'samsung=samsung sm-j530f'],
             ['SM-A705FN', 'samsung=samsung sm-a705fn'],
@@ -1391,7 +1455,6 @@ final class DeviceTest extends TestCase
             ['SM-T530', 'samsung=samsung sm-t530'],
             ['SM-N910C', 'samsung=samsung sm-n910c'],
             ['SM-G9700', 'samsung=samsung sm-g9700'],
-            ['SM-F916B', 'samsung=samsung sm-f916b'],
             ['SM-A530F', 'samsung=samsung sm-a530f'],
             ['SM-T320', 'samsung=samsung sm-t320'],
             ['SM-G389F', 'samsung=samsung sm-g389f'],
@@ -1408,7 +1471,6 @@ final class DeviceTest extends TestCase
             ['SM-G9550', 'samsung=samsung sm-g9550'],
             ['SM-X210', 'samsung=samsung sm-x210'],
             ['SM-X510', 'samsung=samsung sm-x510'],
-            ['SM-G715FN', 'samsung=samsung sm-g715fn'],
             ['SM-G977N', 'samsung=samsung sm-g977n'],
             ['SM-J810F', 'samsung=samsung sm-j810f'],
             ['GT-I9505', 'samsung=samsung gt-i9505'],
@@ -1460,13 +1522,21 @@ final class DeviceTest extends TestCase
             ['SM-A115F', 'samsung=samsung sm-a115f'],
             ['SAMSUNG SM-A115F', 'samsung=samsung sm-a115f'],
             ['SM-A115AZ', 'samsung=samsung sm-a115az'],
+            ['SAMSUNG SM-A115AZ', 'samsung=samsung sm-a115az'],
             ['SM-A115AP', 'samsung=samsung sm-a115ap'],
+            ['SAMSUNG SM-A115AP', 'samsung=samsung sm-a115ap'],
             ['SM-A115A', 'samsung=samsung sm-a115a'],
+            ['SAMSUNG SM-A115A', 'samsung=samsung sm-a115a'],
             ['SM-A115M', 'samsung=samsung sm-a115m'],
+            ['SAMSUNG SM-A115M', 'samsung=samsung sm-a115m'],
             ['SM-A115U', 'samsung=samsung sm-a115u'],
+            ['SAMSUNG SM-A115U', 'samsung=samsung sm-a115u'],
             ['SM-A115U1', 'samsung=samsung sm-a115u1'],
+            ['SAMSUNG SM-A115U1', 'samsung=samsung sm-a115u1'],
             ['SM-A115W', 'samsung=samsung sm-a115w'],
+            ['SAMSUNG SM-A115W', 'samsung=samsung sm-a115w'],
             ['SM-A115V', 'samsung=samsung sm-a115v'],
+            ['SAMSUNG SM-A115V', 'samsung=samsung sm-a115v'],
             ['SM-G973U', 'samsung=samsung sm-g973u'],
             ['SM-G610F', 'samsung=samsung sm-g610f'],
             ['SM-T280', 'samsung=samsung sm-t280'],
@@ -1629,10 +1699,20 @@ final class DeviceTest extends TestCase
             ['SM-F926N', 'samsung=samsung sm-f926n'],
             ['SAMSUNG SM-F926B', 'samsung=samsung sm-f926b'],
             ['SM-F9260', 'samsung=samsung sm-f9260'],
-            ['SM-F916U1', 'samsung=samsung sm-f916u1'],
-            ['SAMSUNG SM-F916U', 'samsung=samsung sm-f916u'],
-            ['SM-F916U', 'samsung=samsung sm-f916u'],
+            ['SM-F916B', 'samsung=samsung sm-f916b'],
             ['SAMSUNG SM-F916B', 'samsung=samsung sm-f916b'],
+            ['SM-F916U1', 'samsung=samsung sm-f916u1'],
+            ['SAMSUNG SM-F916U1', 'samsung=samsung sm-f916u1'],
+            ['SM-F916U', 'samsung=samsung sm-f916u'],
+            ['SAMSUNG SM-F916U', 'samsung=samsung sm-f916u'],
+            ['SM-F9160', 'samsung=samsung sm-f9160'],
+            ['SAMSUNG SM-F9160', 'samsung=samsung sm-f9160'],
+            ['SM-F916N', 'samsung=samsung sm-f916n'],
+            ['SAMSUNG SM-F916N', 'samsung=samsung sm-f916n'],
+            ['SM-F916W', 'samsung=samsung sm-f916w'],
+            ['SAMSUNG SM-F916W', 'samsung=samsung sm-f916w'],
+            ['SM-F916Q', 'samsung=samsung sm-f916q'],
+            ['SAMSUNG SM-F916Q', 'samsung=samsung sm-f916q'],
             ['SM-F907W', 'samsung=samsung sm-f907w'],
             ['SM-F907U', 'samsung=samsung sm-f907u'],
             ['SM-F907N', 'samsung=samsung sm-f907n'],
@@ -1773,10 +1853,15 @@ final class DeviceTest extends TestCase
             ['SM-A215R4', 'samsung=samsung sm-a215r4'],
             ['SM-A215T', 'samsung=samsung sm-a215t'],
             ['SM-A102W', 'samsung=samsung sm-a102w'],
+            ['SAMSUNG SM-A102W', 'samsung=samsung sm-a102w'],
             ['SM-A102U1', 'samsung=samsung sm-a102u1'],
+            ['SAMSUNG SM-A102U1', 'samsung=samsung sm-a102u1'],
             ['SM-A102U', 'samsung=samsung sm-a102u'],
+            ['SAMSUNG SM-A102U', 'samsung=samsung sm-a102u'],
             ['SM-A102N', 'samsung=samsung sm-a102n'],
+            ['SAMSUNG SM-A102N', 'samsung=samsung sm-a102n'],
             ['SM-A102J', 'samsung=samsung sm-a102j'],
+            ['SAMSUNG SM-A102J', 'samsung=samsung sm-a102j'],
             ['SC-02L', 'samsung=samsung sc-02l'],
             ['SM-W9025', 'samsung=samsung sm-w9025'],
             ['SM-M156B', 'samsung=samsung sm-m156b'],
@@ -1854,6 +1939,32 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A716B', 'samsung=samsung sm-a716b'],
             ['SM-A7160', 'samsung=samsung sm-a7160'],
             ['SAMSUNG SM-A7160', 'samsung=samsung sm-a7160'],
+            ['SM-G889F', 'samsung=samsung sm-g889f'],
+            ['SAMSUNG SM-G889F', 'samsung=samsung sm-g889f'],
+            ['SM-G889A', 'samsung=samsung sm-g889a'],
+            ['SAMSUNG SM-G889A', 'samsung=samsung sm-g889a'],
+            ['SM-G889YB', 'samsung=samsung sm-g889yb'],
+            ['SAMSUNG SM-G889YB', 'samsung=samsung sm-g889yb'],
+            ['SM-G715FN', 'samsung=samsung sm-g715fn'],
+            ['SAMSUNG SM-G715FN', 'samsung=samsung sm-g715fn'],
+            ['SM-G715F', 'samsung=samsung sm-g715f'],
+            ['SAMSUNG SM-G715F', 'samsung=samsung sm-g715f'],
+            ['SM-G715W', 'samsung=samsung sm-g715w'],
+            ['SAMSUNG SM-G715W', 'samsung=samsung sm-g715w'],
+            ['SM-G715U', 'samsung=samsung sm-g715u'],
+            ['SAMSUNG SM-G715U', 'samsung=samsung sm-g715u'],
+            ['SM-G715U1', 'samsung=samsung sm-g715u1'],
+            ['SAMSUNG SM-G715U1', 'samsung=samsung sm-g715u1'],
+            ['SM-G715A', 'samsung=samsung sm-g715a'],
+            ['SAMSUNG SM-G715A', 'samsung=samsung sm-g715a'],
+            ['SM-F966B', 'samsung=samsung sm-f966b'],
+            ['SAMSUNG SM-F966B', 'samsung=samsung sm-f966b'],
+            ['SM-F966U', 'samsung=samsung sm-f966u'],
+            ['SAMSUNG SM-F966U', 'samsung=samsung sm-f966u'],
+            ['SM-F966U1', 'samsung=samsung sm-f966u1'],
+            ['SAMSUNG SM-F966U1', 'samsung=samsung sm-f966u1'],
+            ['SM-G405F', 'samsung=samsung sm-g405f'],
+            ['SAMSUNG SM-G405F', 'samsung=samsung sm-g405f'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['VOG-L29', 'huawei=huawei vog-l29'],
@@ -2149,6 +2260,11 @@ final class DeviceTest extends TestCase
             ['ELN2-W29', 'huawei=huawei eln2-w29'],
             ['ELN2-L29', 'huawei=huawei eln2-l29'],
             ['ROL-W00', 'huawei=huawei rol-w00'],
+            ['AMM-AN00', 'huawei=huawei amm-an00'],
+            ['PTP-AN20', 'huawei=huawei ptp-an20'],
+            ['AMP-AN00', 'huawei=huawei amp-an00'],
+            ['TNNH-AN00', 'huawei=huawei tnnh-an00'],
+            ['SDY-AN00', 'huawei=huawei sdy-an00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -2284,6 +2400,8 @@ final class DeviceTest extends TestCase
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
             ['HMD XR21', 'hmd-global=hmd-global xr21'],
+            ['HMD CREST', 'hmd-global=hmd-global crest'],
+            ['HMD Skyline', 'hmd-global=hmd-global skyline'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox one'],
@@ -2485,6 +2603,10 @@ final class DeviceTest extends TestCase
             ['XT2245-1', 'motorola=motorola xt2245-1'],
             ['XT2427-4', 'motorola=motorola xt2427-4'],
             ['XT2401-2', 'motorola=motorola xt2401-2'],
+            ['motorola edge 50 ultra', 'motorola=motorola edge 50 ultra'],
+            ['XT2137-1', 'motorola=motorola xt2137-1'],
+            ['XT2137-2', 'motorola=motorola xt2137-2'],
+            ['XT2149-1', 'motorola=motorola xt2149-1'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -2612,6 +2734,8 @@ final class DeviceTest extends TestCase
             ['702SO', 'sony=sony 702so'],
             ['SOV37', 'sony=sony sov37'],
             ['Xperia XZ2', 'sony=sony xperia xz2'],
+            ['XQ-AU51', 'sony=sony xq-au51'],
+            ['SO-41A', 'sony=sony so-41a'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -2781,6 +2905,16 @@ final class DeviceTest extends TestCase
             ['V2409', 'vivo=vivo v2409'],
             ['V2344', 'vivo=vivo v2344'],
             ['V2348', 'vivo=vivo v2348'],
+            ['V2451', 'vivo=vivo v2451'],
+            ['V2330', 'vivo=vivo v2330'],
+            ['V2352A', 'vivo=vivo v2352a'],
+            ['V2355', 'vivo=vivo v2355'],
+            ['V2346', 'vivo=vivo v2346'],
+            ['V2351', 'vivo=vivo v2351'],
+            ['V2401', 'vivo=vivo v2401'],
+            ['V2199GA', 'vivo=vivo v2199ga'],
+            ['I2219', 'vivo=vivo i2219'],
+            ['V2353A', 'vivo=vivo v2353a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -2859,6 +2993,8 @@ final class DeviceTest extends TestCase
             ['WP39', 'oukitel=oukitel wp39'],
             ['WP28 S', 'oukitel=oukitel wp28 s'],
             ['WP28 E', 'oukitel=oukitel wp28 e'],
+            ['RT9', 'oukitel=oukitel rt9'],
+            ['K16', 'oukitel=oukitel k16'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -2896,6 +3032,8 @@ final class DeviceTest extends TestCase
             ['Note 10P', 'ulefone=ulefone note 10p'],
             ['Armor Pad Lite', 'ulefone=ulefone armor pad lite'],
             ['Armor Pad 4 Ultra', 'ulefone=ulefone armor pad 4 ultra'],
+            ['Armor Mini 20 Pro', 'ulefone=ulefone armor mini 20 pro'],
+            ['Armor Mini 20', 'ulefone=ulefone armor mini 20'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -2959,6 +3097,9 @@ final class DeviceTest extends TestCase
             ['S cyber Pro', 'doogee=doogee s cyber pro'],
             ['S Punk Pro', 'doogee=doogee s punk pro'],
             ['S100', 'doogee=doogee s100'],
+            ['Fire 6 Max', 'doogee=doogee fire 6 max'],
+            ['N55 Pro', 'doogee=doogee n55 pro'],
+            ['Fire 6', 'doogee=doogee fire 6'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -3138,6 +3279,7 @@ final class DeviceTest extends TestCase
             ['2PZM3', 'htc=htc 2pzm3'],
             ['U Play', 'htc=htc u play'],
             ['HTC U Play', 'htc=htc u play'],
+            ['2Q6E1', 'htc=htc 2q6e1'],
             // teclast
             ['P30S_EEA', 'teclast=teclast p30s_eea'],
             ['P25T_EEA', 'teclast=teclast p25t_eea'],
@@ -3287,6 +3429,8 @@ final class DeviceTest extends TestCase
             ['Tab 60 Pro', 'blackview=blackview tab 60 pro'],
             ['MEGA 1', 'blackview=blackview mega 1'],
             ['Active 8', 'blackview=blackview active 8'],
+            ['BV7300', 'blackview=blackview bv7300'],
+            ['BV8200', 'blackview=blackview bv8200'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -3385,6 +3529,9 @@ final class DeviceTest extends TestCase
             ['Infinix X6861', 'infinix=infinix x6861'],
             ['Infinix X6882', 'infinix=infinix x6882'],
             ['Infinix X6882B', 'infinix=infinix x6882b'],
+            ['Infinix X6855', 'infinix=infinix x6855'],
+            ['Infinix X6858', 'infinix=infinix x6858'],
+            ['Infinix X6856', 'infinix=infinix x6856'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -3449,6 +3596,8 @@ final class DeviceTest extends TestCase
             ['XANON X90', 'walton=walton xanon x90'],
             ['ORBIT Y12', 'walton=walton orbit y12'],
             ['NEXG N71', 'walton=walton nexg n71'],
+            ['NEXG N26', 'walton=walton nexg n26'],
+            ['NEXG N74', 'walton=walton nexg n74'],
             // kempler-strauss
             ['ZKEMPLER PLUS', 'kempler-strauss=kempler-strauss zkempler plus'],
             // zuum
@@ -3466,6 +3615,8 @@ final class DeviceTest extends TestCase
             ['ZUUM_E40', 'zuum=zuum e40'],
             ['Magno Pro', 'zuum=zuum magno pro'],
             ['NOVUS TAB', 'zuum=zuum novus tab'],
+            ['MAGNO P3', 'zuum=zuum magno p3'],
+            ['MAGNO P1', 'zuum=zuum magno p1'],
             // retroid-pocket
             ['Retroid Pocket 2+', 'retroid-pocket=retroid-pocket 2 plus'],
             ['Retroid Pocket 4 Pro', 'retroid-pocket=retroid-pocket 4 pro'],
@@ -3597,6 +3748,10 @@ final class DeviceTest extends TestCase
             ['MP24', 'umi=umi mp24'],
             ['MP20', 'umi=umi mp20'],
             ['MP19', 'umi=umi mp19'],
+            ['UMIDIGI G9T', 'umi=umi g9t'],
+            ['MP21', 'umi=umi mp21'],
+            ['PA2310GBB', 'umi=umi pa2310gbb'],
+            ['MP29', 'umi=umi mp29'],
             // bq
             ['Aquaris X', 'bq=bq aquaris x'],
             ['Aquaris X5', 'bq=bq aquaris x5'],
@@ -3697,6 +3852,7 @@ final class DeviceTest extends TestCase
             ['AIN065', 'nothing-phone=nothing-phone ain065'],
             ['Phone (2a)', 'nothing-phone=nothing-phone phone 2a'],
             ['Phone (2a', 'nothing-phone=nothing-phone phone 2a'],
+            ['A001', 'nothing-phone=nothing-phone a001'],
             // doro
             ['DSB-0220', 'doro=doro dsb-0220'],
             ['DSB-0230', 'doro=doro dsb-0230'],
@@ -3849,6 +4005,8 @@ final class DeviceTest extends TestCase
             ['TECNO KG5m', 'tecno=tecno kg5m'],
             ['TECNO Mobile KG5m', 'tecno=tecno kg5m'],
             ['Tecno Camon i4', 'tecno=tecno camon i4'],
+            ['TECNO KL4h', 'tecno=tecno kl4h'],
+            ['TECNO Mobile KL4h', 'tecno=tecno kl4h'],
             // foxxd
             ['FOXXD C65', 'foxxd=foxxd c65'],
             // ceibal
@@ -3896,6 +4054,7 @@ final class DeviceTest extends TestCase
             // coolpad
             ['Coolpad E502', 'coolpad=coolpad e502'],
             ['COOLPAD C202', 'coolpad=coolpad c202'],
+            ['CP12', 'coolpad=coolpad cp12'],
             // tcl
             ['T766H_EEA', 'tcl=tcl t766h_eea'],
             ['T506K', 'tcl=tcl t506k'],
@@ -3911,9 +4070,14 @@ final class DeviceTest extends TestCase
             ['T614SP', 'tcl=tcl t614sp'],
             ['T614D', 'tcl=tcl t614d'],
             ['T702W', 'tcl=tcl t702w'],
+            ['T803D', 'tcl=tcl t803d'],
+            ['T803E', 'tcl=tcl t803e'],
+            ['T702D', 'tcl=tcl t702d'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
+            ['G518', 'general-mobile=general-mobile g518'],
+            ['G318', 'general-mobile=general-mobile g318'],
             // vodafone
             ['VFD 600', 'vodafone=vodafone vfd 600'],
             ['VFD 1400', 'vodafone=vodafone vfd 1400'],
@@ -3938,6 +4102,7 @@ final class DeviceTest extends TestCase
             ['TAB R6 Ultra', 'hotwav=hotwav tab r6 ultra'],
             ['TAB R7', 'hotwav=hotwav tab r7'],
             ['Hyper 7 Pro', 'hotwav=hotwav hyper 7 pro'],
+            ['Hyper 7', 'hotwav=hotwav hyper 7'],
             // switel
             ['S5003D_CHAMP', 'switel=switel s5003d'],
             // reeder
@@ -4151,16 +4316,30 @@ final class DeviceTest extends TestCase
             ['LAVA LXX504', 'lava=lava lxx504'],
             ['LAVA LXX506', 'lava=lava lxx506'],
             ['LAVA LZG409', 'lava=lava lzg409'],
+            ['LAVA LZX414', 'lava=lava lzx414'],
+            ['LAVA LXX508', 'lava=lava lxx508'],
+            ['LAVA LXX505', 'lava=lava lxx505'],
             // yestel
             ['T5_EEA', 'yestel=yestel t5'],
             ['T5-EEA', 'yestel=yestel t5'],
             // omix
+            ['X4', 'omix=omix x4'],
             ['X600 NFC', 'omix=omix x600 nfc'],
             // blu
             ['BOLD K50', 'blu=blu bold k50'],
             ['G91', 'blu=blu g91'],
             ['BOLD N3', 'blu=blu bold n3'],
             // apple
+            ['iPhone17,5', 'apple=apple iphone 17,5'],
+            ['iPh17,5', 'apple=apple iphone 17,5'],
+            ['iPhone17,4', 'apple=apple iphone 17,4'],
+            ['iPh17,4', 'apple=apple iphone 17,4'],
+            ['iPhone17,3', 'apple=apple iphone 17,3'],
+            ['iPh17,3', 'apple=apple iphone 17,3'],
+            ['iPhone17,2', 'apple=apple iphone 17,2'],
+            ['iPh17,2', 'apple=apple iphone 17,2'],
+            ['iPhone17,1', 'apple=apple iphone 17,1'],
+            ['iPh17,1', 'apple=apple iphone 17,1'],
             ['iPhone16,2', 'apple=apple iphone 16,2'],
             ['iPh16,2', 'apple=apple iphone 16,2'],
             ['iPhone16,1', 'apple=apple iphone 16,1'],
@@ -4296,6 +4475,10 @@ final class DeviceTest extends TestCase
             ['Zenith TA2D1P01', 'digma=digma ta2d1p01'],
             ['Zoom TA3E0P02', 'digma=digma ta3e0p02'],
             ['Infinity TA3D0M01', 'digma=digma ta3d0m01'],
+            ['Q8 DA6B8P01', 'digma=digma da6b8p01'],
+            ['Spark TA1C8M01', 'digma=digma ta1c8m01'],
+            ['Spectrum TA2D0P02', 'digma=digma ta2d0p02'],
+            ['Infinity TA2D0M01', 'digma=digma ta2d0m01'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -4303,6 +4486,7 @@ final class DeviceTest extends TestCase
             ['U320', 'yumkem=yumkem u320'],
             // safaricom
             ['Neon Ray Ultra', 'safaricom=safaricom neon ray ultra'],
+            ['Neon Ray Ultra M', 'safaricom=safaricom neon ray ultra m'],
             // free-yond
             ['2305003M', 'free-yond=free-yond 2305003m'],
             ['2306004M', 'free-yond=free-yond 2306004m'],
@@ -4311,12 +4495,15 @@ final class DeviceTest extends TestCase
             ['SL112A', 'at-t=at-t sl112a'],
             ['U6080AA', 'at-t=at-t u6080aa'],
             ['U380AA', 'at-t=at-t u380aa'],
+            ['SL219A', 'at-t=at-t sl219a'],
             // benco
             ['AE9260', 'benco=benco ae9260'],
             ['AE9240', 'benco=benco ae9240'],
+            ['AEOP513', 'benco=benco aeop513'],
             // n-one
             ['Npad X', 'n-one=n-one npad x'],
             ['Npad X1', 'n-one=n-one npad x1'],
+            ['TAB011', 'n-one=n-one tab011'],
             // atmpc
             ['IT-801B', 'atmpc=atmpc it-801b'],
             // vios
@@ -4335,6 +4522,7 @@ final class DeviceTest extends TestCase
             ['DS-BD3', 'dcode=dcode ds-bd3'],
             ['DS-CL3', 'dcode=dcode ds-cl3'],
             ['DS-CL4 Lite', 'dcode=dcode ds-cl4 lite'],
+            ['DS-CL4', 'dcode=dcode ds-cl4'],
             // sparx
             ['Sparx Neo X', 'sparx=sparx neo x'],
             ['Neo X', 'sparx=sparx neo x'],
@@ -4343,6 +4531,10 @@ final class DeviceTest extends TestCase
             ['Neo 5 Pro', 'sparx=sparx neo 5 pro'],
             ['Sparx Neo 8 Pro', 'sparx=sparx neo 8 pro'],
             ['Ultra 8', 'sparx=sparx ultra 8'],
+            ['Sparx Neo 9i', 'sparx=sparx neo 9i'],
+            ['Sparx Neo 7', 'sparx=sparx neo 7'],
+            ['Sparx Neo 7 Pro', 'sparx=sparx neo 7 pro'],
+            ['Sparx Neo 8i', 'sparx=sparx neo 8i'],
             // hot-pepper
             ['Puya', 'hot-pepper=hot-pepper puya'],
             // fenoti
@@ -4353,12 +4545,15 @@ final class DeviceTest extends TestCase
             ['F102', 'fossi-bot=fossi-bot f102'],
             ['F101 Pro', 'fossi-bot=fossi-bot f101 pro'],
             ['F101', 'fossi-bot=fossi-bot f101'],
+            ['F112 Pro', 'fossi-bot=fossi-bot f112 pro'],
             // hoozo
             ['F13_EEA', 'hoozo=hoozo f13_eea'],
             // sigma-mobile
             ['X-treme PQ55', 'sigma-mobile=sigma-mobile x-treme pq55'],
             // cricket
             ['SL112C', 'cricket=cricket sl112c'],
+            ['SL219C', 'cricket=cricket sl219c'],
+            ['SN509C', 'cricket=cricket sn509c'],
             // mintt
             ['COOLMINTT A8', 'mintt=mintt coolmintt a8'],
             // ajib
@@ -4370,6 +4565,7 @@ final class DeviceTest extends TestCase
             ['NEW 16', 'vgo-tel=vgo-tel new 16'],
             ['NEW 24', 'vgo-tel=vgo-tel new 24'],
             ['NEW 10', 'vgo-tel=vgo-tel new 10'],
+            ['NEW 25', 'vgo-tel=vgo-tel new 25'],
             // thomson
             ['TEO8M', 'thomson=thomson teo8m'],
             ['TEO10M', 'thomson=thomson teo10m'],
@@ -4388,14 +4584,17 @@ final class DeviceTest extends TestCase
             // olax
             ['Ocean K10', 'olax=olax ocean k10'],
             ['Ocean K8', 'olax=olax ocean k8'],
+            ['Ocean K8 Pro', 'olax=olax ocean k8 pro'],
             // okapi-mobile
             ['Okapi10', 'okapi-mobile=okapi-mobile okapi 10'],
+            ['Okapi_Tab8_Pro', 'okapi-mobile=okapi-mobile okapi tab8 pro'],
             // opel-mobile
             ['Rugged60Q', 'opel-mobile=opel-mobile rugged 60q'],
             // realix
             ['RxIS202', 'realix=realix rxis202'],
             // logicom
             ['Elio', 'logicom=logicom elio'],
+            ['Five Pro 32', 'logicom=logicom five pro 32'],
             // unitech
             ['EA520', 'unitech=unitech ea520'],
             ['EA520_US', 'unitech=unitech ea520_us'],
@@ -4406,6 +4605,7 @@ final class DeviceTest extends TestCase
             // stylo
             ['EBY33', 'stylo=stylo eby33'],
             ['STYLO RAIN', 'stylo=stylo rain'],
+            ['APEX_5G', 'stylo=stylo apex 5g'],
             // atozee
             ['CP10', 'atozee=atozee cp10'],
             // meta
@@ -4415,11 +4615,15 @@ final class DeviceTest extends TestCase
             ['ACD-Tab-10S', 'acd=acd tab 10s'],
             // hoco
             ['hoco_HI11', 'hoco=hoco hi11'],
+            ['hoco_HI12', 'hoco=hoco hi12'],
+            ['hoco_HI10', 'hoco=hoco hi10'],
             // gtx
             ['Jaculus V2', 'gtx=gtx jaculus v2'],
             ['GTX_JACULUS_01', 'gtx=gtx jaculus 01'],
             // vasoun
             ['L10_T08_EEA', 'vasoun=vasoun l10-t08'],
+            ['L10-T11', 'vasoun=vasoun l10-t11'],
+            ['L10-T11-EEA', 'vasoun=vasoun l10-t11'],
             // kenshi
             ['Pad Pro E110', 'kenshi=kenshi pad pro e110'],
             ['Pad Pro E111', 'kenshi=kenshi pad pro e111'],
@@ -4428,6 +4632,12 @@ final class DeviceTest extends TestCase
             ['H24', 'kenshi=kenshi h24'],
             ['H34', 'kenshi=kenshi h34'],
             ['H44', 'kenshi=kenshi h44'],
+            ['Armor C1 Max', 'kenshi=kenshi armor c1 max'],
+            ['Armor P1 Pro', 'kenshi=kenshi armor p1 pro'],
+            ['Armor V1s', 'kenshi=kenshi armor v1s'],
+            ['Armor P1w', 'kenshi=kenshi armor p1w'],
+            ['Armor I2w', 'kenshi=kenshi armor i2w'],
+            ['Armor H1s', 'kenshi=kenshi armor h1s'],
             // wish-tel
             ['T801', 'wish-tel=wish-tel t801'],
             ['T803', 'wish-tel=wish-tel t803'],
@@ -4451,12 +4661,57 @@ final class DeviceTest extends TestCase
             ['Ahiga', 'mobi-wire=mobi-wire ahiga'],
             // bmobile
             ['BL53_TG06', 'bmobile=bmobile bl53'],
+            ['BL52Pro', 'bmobile=bmobile bl52 pro'],
             // mipo
             ['mipo_M25', 'mipo=mipo m25'],
             ['mipo_M46_Pro', 'mipo=mipo m46 pro'],
             ['mipo_M17', 'mipo=mipo m17'],
+            ['mipo_M59', 'mipo=mipo m59'],
+            ['mipo_M33', 'mipo=mipo m33'],
             // nuu-mobile
             ['S6702X', 'nuu-mobile=nuu-mobile s6702x'],
+            // m-horse
+            ['C68', 'm-horse=mhorse c68'],
+            ['C67', 'm-horse=mhorse c67'],
+            // iget
+            ['SMART_W84', 'iget=iget smart w84'],
+            // corn
+            ['Play25_Pro_4G', 'corn=corn play 25 pro'],
+            ['Coco10_Ultra_4G', 'corn=corn coco 10 ultra 4g'],
+            // logic
+            ['L68_Ultra', 'logic=logic l68 ultra'],
+            // hammer
+            ['Hammer_Construction_2_5G', 'hammer=hammer construction 2 5g'],
+            ['Hammer_Construction_2_Thermal_5G', 'hammer=hammer construction 2 thermal 5g'],
+            // kruger-matz
+            ['LIVE 12', 'kruger-matz=kruger-matz live 12'],
+            ['MOVE 10', 'kruger-matz=kruger-matz move 10'],
+            ['FLOW 10', 'kruger-matz=kruger-matz flow 10'],
+            // rungee
+            ['RunGee x9', 'rungee=rungee x9'],
+            // bmax
+            ['I10_Plus', 'bmax=bmax maxpad i10 plus'],
+            // jambo
+            ['JP2', 'jambo=jambo jp2'],
+            // fanvace
+            ['Fanvace M36', 'fanvace=fanvace m36'],
+            // rombica
+            ['50MT-UDG54G', 'rombica=rombica 50mt-udg54g'],
+            // novis
+            ['NTV-H3230TS', 'novis=novis ntv-h3230ts'],
+            // pritom
+            ['M10_R02', 'pritom=pritom m10 r02'],
+            // pixus
+            ['Pixus_Deon', 'pixus=pixus deon'],
+            // tibuta
+            ['TAB_868_PRO', 'tibuta=tibuta tab 868 pro'],
+            // daria
+            ['DM-B50104', 'daria=daria dm-b50104'],
+            // dijitsu
+            ['DCT 90', 'dijitsu=dijitsu dct 90'],
+            // aligator
+            ['ALIGATOR RX850', 'aligator=aligator rx850'],
+            ['S515 Duo', 'aligator=aligator s515 duo'],
             // other
             ['Model"', null],
             [': "', null],

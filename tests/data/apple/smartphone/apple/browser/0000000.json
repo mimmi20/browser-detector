@@ -1344,5 +1344,47 @@
       "version": "605.1.15",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "TuneIn Radio/31.9.0; iPhone17,5; iOS/18.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 17,5",
+      "marketingName": "iPhone 16e",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2532,
+        "height": 1170,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "18.4.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
   }
 ]
