@@ -904,6 +904,7 @@ final class DeviceTest extends TestCase
             ['Z2453', 'zte=zte z2453'],
             ['Z2359', 'zte=zte z2359'],
             ['NP03J', 'zte=zte np03j'],
+            ['Z2350', 'zte=zte z2350'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -2915,6 +2916,9 @@ final class DeviceTest extends TestCase
             ['V2199GA', 'vivo=vivo v2199ga'],
             ['I2219', 'vivo=vivo i2219'],
             ['V2353A', 'vivo=vivo v2353a'],
+            ['V2301A', 'vivo=vivo v2301a'],
+            ['V2424', 'vivo=vivo v2424'],
+            ['V2417', 'vivo=vivo v2417'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -2953,6 +2957,7 @@ final class DeviceTest extends TestCase
             ['WP36 Pro', 'oukitel=oukitel wp36 pro'],
             ['WP36', 'oukitel=oukitel wp36'],
             ['WP23 Pro', 'oukitel=oukitel wp23 pro'],
+            ['Oukitel WP23Pro', 'oukitel=oukitel wp23 pro'],
             ['OUKITEL WP2', 'oukitel=oukitel wp2'],
             ['WP2', 'oukitel=oukitel wp2'],
             ['WP1', 'oukitel=oukitel wp1'],
@@ -3034,6 +3039,7 @@ final class DeviceTest extends TestCase
             ['Armor Pad 4 Ultra', 'ulefone=ulefone armor pad 4 ultra'],
             ['Armor Mini 20 Pro', 'ulefone=ulefone armor mini 20 pro'],
             ['Armor Mini 20', 'ulefone=ulefone armor mini 20'],
+            ['Armor Mini 20T Pro', 'ulefone=ulefone armor mini 20t pro'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -3325,6 +3331,7 @@ final class DeviceTest extends TestCase
             ['M50HD_EEA', 'teclast=teclast m50hd_eea'],
             ['M50HD_ROW', 'teclast=teclast m50hd_row'],
             ['M50 Pro', 'teclast=teclast m50 pro'],
+            ['P40HD_ROW', 'teclast=teclast p40hd_row'],
             // alldocube
             ['iPlay_40', 'alldocube=alldocube iplay 40'],
             ['iPlay60_mini_Pro', 'alldocube=alldocube iplay 60 mini pro'],
@@ -3431,6 +3438,7 @@ final class DeviceTest extends TestCase
             ['Active 8', 'blackview=blackview active 8'],
             ['BV7300', 'blackview=blackview bv7300'],
             ['BV8200', 'blackview=blackview bv8200'],
+            ['WAVE 8', 'blackview=blackview wave 8'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -4007,6 +4015,10 @@ final class DeviceTest extends TestCase
             ['Tecno Camon i4', 'tecno=tecno camon i4'],
             ['TECNO KL4h', 'tecno=tecno kl4h'],
             ['TECNO Mobile KL4h', 'tecno=tecno kl4h'],
+            ['TECNO CLA5', 'tecno=tecno cla5'],
+            ['TECNO Mobile CLA5', 'tecno=tecno cla5'],
+            ['TECNO CLA6', 'tecno=tecno cla6'],
+            ['TECNO Mobile CLA6', 'tecno=tecno cla6'],
             // foxxd
             ['FOXXD C65', 'foxxd=foxxd c65'],
             // ceibal
@@ -4127,6 +4139,7 @@ final class DeviceTest extends TestCase
             ['HiPadPlus', 'chuwi=chuwi hipad plus'],
             ['HiPad-Air', 'chuwi=chuwi hipad air'],
             ['Hi10 XPro', 'chuwi=chuwi hi10 xpro'],
+            ['Hi10_XPro_Pad', 'chuwi=chuwi hi10 xpro'],
             // bigme
             ['HiBreak', 'bigme=bigme hibreak'],
             // a-rival
@@ -4459,6 +4472,8 @@ final class DeviceTest extends TestCase
             ['55OV6000U', 'onvo=onvo 55ov6000u'],
             ['ONVO_65OV6000U', 'onvo=onvo 65ov6000u'],
             ['65OV6000U', 'onvo=onvo 65ov6000u'],
+            ['ONVO_32OV6001H', 'onvo=onvo 32ov6001h'],
+            ['32OV6001H', 'onvo=onvo 32ov6001h'],
             // digma
             ['Zenith TA3D1P01', 'digma=digma ta3d1p01'],
             ['Zenith TA3E1P01', 'digma=digma ta3e1p01'],
@@ -4638,6 +4653,7 @@ final class DeviceTest extends TestCase
             ['Armor P1w', 'kenshi=kenshi armor p1w'],
             ['Armor I2w', 'kenshi=kenshi armor i2w'],
             ['Armor H1s', 'kenshi=kenshi armor h1s'],
+            ['Kenshi_K10', 'kenshi=kenshi k10'],
             // wish-tel
             ['T801', 'wish-tel=wish-tel t801'],
             ['T803', 'wish-tel=wish-tel t803'],

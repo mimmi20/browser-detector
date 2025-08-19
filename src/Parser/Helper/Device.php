@@ -875,6 +875,7 @@ final class Device implements DeviceInterface
             'z2453' => 'zte=zte z2453',
             'z2359' => 'zte=zte z2359',
             'np03j' => 'zte=zte np03j',
+            'z2350' => 'zte=zte z2350',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -2590,6 +2591,9 @@ final class Device implements DeviceInterface
             'v2199ga' => 'vivo=vivo v2199ga',
             'i2219' => 'vivo=vivo i2219',
             'v2353a' => 'vivo=vivo v2353a',
+            'v2301a' => 'vivo=vivo v2301a',
+            'v2424' => 'vivo=vivo v2424',
+            'v2417' => 'vivo=vivo v2417',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2626,7 +2630,7 @@ final class Device implements DeviceInterface
             'wp38' => 'oukitel=oukitel wp38',
             'wp36 pro' => 'oukitel=oukitel wp36 pro',
             'wp36' => 'oukitel=oukitel wp36',
-            'wp23 pro' => 'oukitel=oukitel wp23 pro',
+            'wp23 pro', 'oukitel wp23pro' => 'oukitel=oukitel wp23 pro',
             'wp2', 'oukitel wp2' => 'oukitel=oukitel wp2',
             'wp1' => 'oukitel=oukitel wp1',
             'c16_pro' => 'oukitel=oukitel c16 pro',
@@ -2706,6 +2710,7 @@ final class Device implements DeviceInterface
             'armor pad 4 ultra' => 'ulefone=ulefone armor pad 4 ultra',
             'armor mini 20 pro' => 'ulefone=ulefone armor mini 20 pro',
             'armor mini 20' => 'ulefone=ulefone armor mini 20',
+            'armor mini 20t pro' => 'ulefone=ulefone armor mini 20t pro',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -2986,6 +2991,7 @@ final class Device implements DeviceInterface
             'm50hd_eea' => 'teclast=teclast m50hd_eea',
             'm50hd_row' => 'teclast=teclast m50hd_row',
             'm50 pro' => 'teclast=teclast m50 pro',
+            'p40hd_row' => 'teclast=teclast p40hd_row',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
@@ -3088,6 +3094,7 @@ final class Device implements DeviceInterface
             'active 8' => 'blackview=blackview active 8',
             'bv7300' => 'blackview=blackview bv7300',
             'bv8200' => 'blackview=blackview bv8200',
+            'wave 8' => 'blackview=blackview wave 8',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -3619,6 +3626,8 @@ final class Device implements DeviceInterface
             'tecno kg5m', 'tecno mobile kg5m' => 'tecno=tecno kg5m',
             'tecno camon i4' => 'tecno=tecno camon i4',
             'tecno kl4h', 'tecno mobile kl4h' => 'tecno=tecno kl4h',
+            'tecno cla5', 'tecno mobile cla5' => 'tecno=tecno cla5',
+            'tecno cla6', 'tecno mobile cla6' => 'tecno=tecno cla6',
             // foxxd
             'foxxd c65' => 'foxxd=foxxd c65',
             // ceibal
@@ -3735,7 +3744,7 @@ final class Device implements DeviceInterface
             'hipad max' => 'chuwi=chuwi hipad max',
             'hipad plus', 'hipadplus' => 'chuwi=chuwi hipad plus',
             'hipad-air' => 'chuwi=chuwi hipad air',
-            'hi10 xpro' => 'chuwi=chuwi hi10 xpro',
+            'hi10 xpro', 'hi10_xpro_pad' => 'chuwi=chuwi hi10 xpro',
             // bigme
             'hibreak' => 'bigme=bigme hibreak',
             // a-rival
@@ -4004,6 +4013,7 @@ final class Device implements DeviceInterface
             'onvo_42ov6000f', '42ov6000f' => 'onvo=onvo 42ov6000f',
             'onvo_55ov6000u', '55ov6000u' => 'onvo=onvo 55ov6000u',
             'onvo_65ov6000u', '65ov6000u' => 'onvo=onvo 65ov6000u',
+            'onvo_32ov6001h', '32ov6001h' => 'onvo=onvo 32ov6001h',
             // digma
             'zenith ta3d1p01' => 'digma=digma ta3d1p01',
             'zenith ta3e1p01' => 'digma=digma ta3e1p01',
@@ -4181,6 +4191,7 @@ final class Device implements DeviceInterface
             'armor p1w' => 'kenshi=kenshi armor p1w',
             'armor i2w' => 'kenshi=kenshi armor i2w',
             'armor h1s' => 'kenshi=kenshi armor h1s',
+            'kenshi_k10' => 'kenshi=kenshi k10',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',
