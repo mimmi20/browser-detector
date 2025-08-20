@@ -5585,7 +5585,23 @@
   },
   "oppo pju110": {
     "deviceName": "PJU110",
-    "marketingName": "A2x",
+    "marketingName": "A1x",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo pju110_a1": {
+    "deviceName": "PJU110_A1",
+    "marketingName": "A1x",
     "manufacturer": "bbk",
     "brand": "oppo",
     "dualOrientation": true,
@@ -7691,6 +7707,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.62
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo cph2524": {
+    "deviceName": "CPH2524",
+    "marketingName": "Reno 9A",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"
