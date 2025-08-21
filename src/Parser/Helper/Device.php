@@ -352,6 +352,8 @@ final class Device implements DeviceInterface
             'pjx110' => 'oneplus=oneplus pjx110',
             'opwwe231' => 'oneplus=oneplus opwwe231',
             'pgz110' => 'oneplus=oneplus pgz110',
+            'plc110' => 'oneplus=oneplus plc110',
+            'plf110' => 'oneplus=oneplus plf110',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -469,6 +471,7 @@ final class Device implements DeviceInterface
             'pfzm10' => 'oppo=oppo pfzm10',
             'pgim10' => 'oppo=oppo pgim10',
             'cph2524' => 'oppo=oppo cph2524',
+            'cph2773' => 'oppo=oppo cph2773',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1948,6 +1951,7 @@ final class Device implements DeviceInterface
             'amp-an00' => 'huawei=huawei amp-an00',
             'tnnh-an00' => 'huawei=huawei tnnh-an00',
             'sdy-an00' => 'huawei=huawei sdy-an00',
+            'alt-lx3' => 'huawei=huawei alt-lx3',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2085,6 +2089,7 @@ final class Device implements DeviceInterface
             'hmd crest' => 'hmd-global=hmd-global crest',
             'hmd skyline' => 'hmd-global=hmd-global skyline',
             'n159v' => 'hmd-global=hmd-global n159v',
+            'hmd vibe' => 'hmd-global=hmd-global vibe',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -2171,6 +2176,7 @@ final class Device implements DeviceInterface
             'rmx3952' => 'realme=realme rmx3952',
             'rmx3920' => 'realme=realme rmx3920',
             'rmx3921' => 'realme=realme rmx3921',
+            'rmx5062' => 'realme=realme rmx5062',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -2598,6 +2604,8 @@ final class Device implements DeviceInterface
             'v2301a' => 'vivo=vivo v2301a',
             'v2424' => 'vivo=vivo v2424',
             'v2417' => 'vivo=vivo v2417',
+            'vivo 2015' => 'vivo=vivo 2015',
+            'vivo 2015_21' => 'vivo=vivo 2015_21',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4281,6 +4289,8 @@ final class Device implements DeviceInterface
             // aligator
             'aligator rx850' => 'aligator=aligator rx850',
             's515 duo' => 'aligator=aligator s515 duo',
+            // agm
+            'agm pad t3' => 'agm=agm pad t3',
             // other
             default => null,
         };

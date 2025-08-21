@@ -373,6 +373,8 @@ final class DeviceTest extends TestCase
             ['PJX110', 'oneplus=oneplus pjx110'],
             ['OPWWE231', 'oneplus=oneplus opwwe231'],
             ['PGZ110', 'oneplus=oneplus pgz110'],
+            ['PLC110', 'oneplus=oneplus plc110'],
+            ['PLF110', 'oneplus=oneplus plf110'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -490,6 +492,7 @@ final class DeviceTest extends TestCase
             ['PFZM10', 'oppo=oppo pfzm10'],
             ['PGIM10', 'oppo=oppo pgim10'],
             ['CPH2524', 'oppo=oppo cph2524'],
+            ['CPH2773', 'oppo=oppo cph2773'],
             // Xiaomi
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -2268,6 +2271,7 @@ final class DeviceTest extends TestCase
             ['AMP-AN00', 'huawei=huawei amp-an00'],
             ['TNNH-AN00', 'huawei=huawei tnnh-an00'],
             ['SDY-AN00', 'huawei=huawei sdy-an00'],
+            ['ALT-LX3', 'huawei=huawei alt-lx3'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -2407,6 +2411,7 @@ final class DeviceTest extends TestCase
             ['HMD CREST', 'hmd-global=hmd-global crest'],
             ['HMD Skyline', 'hmd-global=hmd-global skyline'],
             ['N159V', 'hmd-global=hmd-global n159v'],
+            ['HMD Vibe', 'hmd-global=hmd-global vibe'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox one'],
@@ -2493,6 +2498,7 @@ final class DeviceTest extends TestCase
             ['RMX3952', 'realme=realme rmx3952'],
             ['RMX3920', 'realme=realme rmx3920'],
             ['RMX3921', 'realme=realme rmx3921'],
+            ['RMX5062', 'realme=realme rmx5062'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -2923,6 +2929,8 @@ final class DeviceTest extends TestCase
             ['V2301A', 'vivo=vivo v2301a'],
             ['V2424', 'vivo=vivo v2424'],
             ['V2417', 'vivo=vivo v2417'],
+            ['vivo 2015', 'vivo=vivo 2015'],
+            ['vivo 2015_21', 'vivo=vivo 2015_21'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -4747,6 +4755,8 @@ final class DeviceTest extends TestCase
             // aligator
             ['ALIGATOR RX850', 'aligator=aligator rx850'],
             ['S515 Duo', 'aligator=aligator s515 duo'],
+            // agm
+            ['AGM PAD T3', 'agm=agm pad t3'],
             // other
             ['Model"', null],
             [': "', null],
