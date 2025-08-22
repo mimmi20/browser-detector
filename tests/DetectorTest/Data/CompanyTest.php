@@ -585,6 +585,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Dijitsu',
                 'key' => 'dijitsu',
             ],
+            [
+                'type' => 'WildRed',
+                'name' => 'WildRed',
+                'brandname' => 'WildRed',
+                'key' => 'wildred',
+            ],
+            [
+                'type' => 'Asano',
+                'name' => 'Asano',
+                'brandname' => 'Asano',
+                'key' => 'asano',
+            ],
+            [
+                'type' => 'Hi',
+                'name' => 'Hi',
+                'brandname' => 'Hi',
+                'key' => 'hi',
+            ],
         ];
     }
 

@@ -401,7 +401,23 @@
   },
   "teclast p30s_eea": {
     "deviceName": "P30S_EEA",
-    "marketingName": "P30S_EEA",
+    "marketingName": "P30S",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "teclast p30s_row": {
+    "deviceName": "P30S_ROW",
+    "marketingName": "P30S",
     "manufacturer": "teclast",
     "brand": "teclast",
     "dualOrientation": true,

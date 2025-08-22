@@ -189,6 +189,12 @@ enum Company: string implements CompanyInterface
 
     case dijitsu = 'Dijitsu';
 
+    case wildred = 'WildRed';
+
+    case asano = 'Asano';
+
+    case hi = 'Hi';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -280,6 +286,9 @@ enum Company: string implements CompanyInterface
             'tibuta' => self::tibuta,
             'daria' => self::daria,
             'dijitsu' => self::dijitsu,
+            'wildred' => self::wildred,
+            'asano' => self::asano,
+            'hi' => self::hi,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
