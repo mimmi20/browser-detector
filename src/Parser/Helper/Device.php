@@ -3112,6 +3112,7 @@ final class Device implements DeviceInterface
             'bv8200' => 'blackview=blackview bv8200',
             'wave 8' => 'blackview=blackview wave 8',
             'blackview a96' => 'blackview=blackview a96',
+            'bv6100' => 'blackview=blackview bv6100',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -4291,6 +4292,10 @@ final class Device implements DeviceInterface
             's515 duo' => 'aligator=aligator s515 duo',
             // agm
             'agm pad t3' => 'agm=agm pad t3',
+            // yandex
+            'yndx-00093' => 'yandex=yandex yndx-00093',
+            'yndx-00094' => 'yandex=yandex yndx-00094',
+            'yndx-00095' => 'yandex=yandex yndx-00095',
             // other
             default => null,
         };

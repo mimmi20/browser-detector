@@ -3456,6 +3456,7 @@ final class DeviceTest extends TestCase
             ['BV8200', 'blackview=blackview bv8200'],
             ['WAVE 8', 'blackview=blackview wave 8'],
             ['Blackview A96', 'blackview=blackview a96'],
+            ['BV6100', 'blackview=blackview bv6100'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -4757,6 +4758,10 @@ final class DeviceTest extends TestCase
             ['S515 Duo', 'aligator=aligator s515 duo'],
             // agm
             ['AGM PAD T3', 'agm=agm pad t3'],
+            // yandex
+            ['YNDX-00093', 'yandex=yandex yndx-00093'],
+            ['YNDX-00094', 'yandex=yandex yndx-00094'],
+            ['YNDX-00095', 'yandex=yandex yndx-00095'],
             // other
             ['Model"', null],
             [': "', null],
