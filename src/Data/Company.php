@@ -195,6 +195,12 @@ enum Company: string implements CompanyInterface
 
     case hi = 'Hi';
 
+    case scoole = 'Scoole';
+
+    case soundmax = 'Soundmax';
+
+    case topdevice = 'TopDevice';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -289,6 +295,9 @@ enum Company: string implements CompanyInterface
             'wildred' => self::wildred,
             'asano' => self::asano,
             'hi' => self::hi,
+            'scoole' => self::scoole,
+            'soundmax' => self::soundmax,
+            'topdevice', 'top-device' => self::topdevice,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -352,6 +361,7 @@ enum Company: string implements CompanyInterface
             self::wishtel => 'wish-tel',
             self::opelmobile => 'opel-mobile',
             self::okapimobile => 'okapi-mobile',
+            self::topdevice => 'top-device',
             default => $this->name,
         };
     }

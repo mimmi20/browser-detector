@@ -108,6 +108,7 @@ final class Device implements DeviceInterface
             'b1-790' => 'acer=acer b1-790',
             'b1-780' => 'acer=acer b1-780',
             'm10-12_eea' => 'acer=acer m10-12_eea',
+            'a10-21_eea' => 'acer=acer a10-21_eea',
             // AllCall
             'atom' => 'allcall=allcall atom',
             'hero_20_pro' => 'allcall=allcall hero 20 pro',
@@ -472,6 +473,8 @@ final class Device implements DeviceInterface
             'pgim10' => 'oppo=oppo pgim10',
             'cph2524' => 'oppo=oppo cph2524',
             'cph2773' => 'oppo=oppo cph2773',
+            'phj110' => 'oppo=oppo phj110',
+            'phj110_a1' => 'oppo=oppo phj110_a1',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -806,6 +809,7 @@ final class Device implements DeviceInterface
             '23021raa2g' => 'xiaomi=xiaomi 23021raa2g',
             '24095pcadi' => 'xiaomi=xiaomi 24095pcadi',
             '2411drn47i' => 'xiaomi=xiaomi 2411drn47i',
+            '25040rp0ae' => 'xiaomi=xiaomi 25040rp0ae',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3051,6 +3055,9 @@ final class Device implements DeviceInterface
             'p30s_row' => 'teclast=teclast p30s_row',
             'm40s_row' => 'teclast=teclast m40s_row',
             't40s_eea' => 'teclast=teclast t40s_eea',
+            't50mini_row' => 'teclast=teclast t50mini_row',
+            't65max_eea' => 'teclast=teclast t65max_eea',
+            't65max_row' => 'teclast=teclast t65max_row',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
@@ -3156,6 +3163,7 @@ final class Device implements DeviceInterface
             'wave 8' => 'blackview=blackview wave 8',
             'blackview a96' => 'blackview=blackview a96',
             'bv6100' => 'blackview=blackview bv6100',
+            'active 12 pro' => 'blackview=blackview active 12 pro',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -3322,6 +3330,7 @@ final class Device implements DeviceInterface
             'itel p662ln' => 'itel=itel p662ln',
             'itel p662l' => 'itel=itel p662l',
             'itel p651l' => 'itel=itel p651l',
+            'itel p682lp' => 'itel=itel p682lp',
             // vontar
             'hk1rbox-x4' => 'vontar=vontar hk1 rbox x4',
             'hk1 mini+' => 'vontar=vontar hk1 mini plus',
@@ -3459,6 +3468,11 @@ final class Device implements DeviceInterface
             '100071483' => 'onn=onn 100071483',
             '100044018p' => 'onn=onn 100044018p',
             '100044018g' => 'onn=onn 100044018g',
+            '100135794' => 'onn=onn 100135794',
+            '100135920' => 'onn=onn 100135920',
+            '100135924' => 'onn=onn 100135924',
+            '100146660' => 'onn=onn 100146660',
+            '100146663' => 'onn=onn 100146663',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
@@ -3820,6 +3834,7 @@ final class Device implements DeviceInterface
             'tab r7' => 'hotwav=hotwav tab r7',
             'hyper 7 pro' => 'hotwav=hotwav hyper 7 pro',
             'hyper 7' => 'hotwav=hotwav hyper 7',
+            'w11' => 'hotwav=hotwav w11',
             // switel
             's5003d_champ' => 'switel=switel s5003d',
             // reeder
@@ -4112,6 +4127,7 @@ final class Device implements DeviceInterface
             'onvo_55ov6000u', '55ov6000u' => 'onvo=onvo 55ov6000u',
             'onvo_65ov6000u', '65ov6000u' => 'onvo=onvo 65ov6000u',
             'onvo_32ov6001h', '32ov6001h' => 'onvo=onvo 32ov6001h',
+            'onvo_43ov4000af', '43ov4000af' => 'onvo=onvo 43ov4000af',
             // digma
             'zenith ta3d1p01' => 'digma=digma ta3d1p01',
             'zenith ta3e1p01' => 'digma=digma ta3e1p01',
@@ -4134,6 +4150,9 @@ final class Device implements DeviceInterface
             'infinity ta2d0m01' => 'digma=digma ta2d0m01',
             'digma pro hit 104 hs1009pl' => 'digma=digma hs1009pl',
             'digma pro hit 106 hs1007pl' => 'digma=digma hs1007pl',
+            'empire ta3e2m01' => 'digma=digma ta3e2m01',
+            'eclipse ta3e1p02' => 'digma=digma ta3e1p02',
+            'edge ta3d1m01' => 'digma=digma ta3d1m01',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -4354,6 +4373,7 @@ final class Device implements DeviceInterface
             'ntv-h3230ts' => 'novis=novis ntv-h3230ts',
             // pritom
             'm10_r02' => 'pritom=pritom m10 r02',
+            'm10_r04' => 'pritom=pritom m10_r04',
             // pixus
             'pixus_deon' => 'pixus=pixus deon',
             // tibuta
@@ -4376,8 +4396,27 @@ final class Device implements DeviceInterface
             // asano
             '50lu6000t' => 'asano=asano 50lu6000t',
             '43lf7010t' => 'asano=asano 43lf7010t',
+            '43lu6000t' => 'asano=asano 43lu6000t',
             // hi
             'hx-24h01fb' => 'hi=hi hx-24h01fb',
+            'hx-32f01fb' => 'hi=hi hx-32f01fb',
+            'hx-55u01fb' => 'hi=hi hx-55u01fb',
+            'hx-50u01fb' => 'hi=hi hx-50u01fb',
+            'hx-43u01fb' => 'hi=hi hx-43u01fb',
+            'hx-32h01fb' => 'hi=hi hx-32h01fb',
+            'hx-43f01fb' => 'hi=hi hx-43f01fb',
+            // readboy
+            'readboy_c26pro' => 'readboy=readboy c26 pro',
+            // scoole
+            'sl-led65s01t2su' => 'scoole=scoole sl-led65s01t2su',
+            // soundmax
+            'sm-qled50t21su' => 'soundmax=soundmax sm-qled50t21su',
+            'sm-led32m07s' => 'soundmax=soundmax sm-led32m07s',
+            // top-device
+            'tdtv24bs01h_bk' => 'top-device=top-device tdtv24bs01h_bk',
+            'tdtv24bs02h_we' => 'top-device=top-device tdtv24bs02h_we',
+            'tdtv50cq08u' => 'top-device=top-device tdtv50cq08u',
+            'tdtv50cs06u' => 'top-device=top-device tdtv50cs06u',
             // other
             default => null,
         };

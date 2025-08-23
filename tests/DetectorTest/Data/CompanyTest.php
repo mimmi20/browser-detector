@@ -603,6 +603,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Hi',
                 'key' => 'hi',
             ],
+            [
+                'type' => 'Scoole',
+                'name' => 'Scoole',
+                'brandname' => 'Scoole',
+                'key' => 'scoole',
+            ],
+            [
+                'type' => 'Soundmax',
+                'name' => 'Soundmax',
+                'brandname' => 'Soundmax',
+                'key' => 'soundmax',
+            ],
+            [
+                'type' => 'TopDevice',
+                'name' => 'TopDevice',
+                'brandname' => 'TopDevice',
+                'key' => 'top-device',
+            ],
         ];
     }
 
@@ -761,6 +779,12 @@ final class CompanyTest extends TestCase
                 'name' => 'JamboTechnology Hakuna Matata Chill Limited',
                 'brandname' => 'Jambo',
                 'key' => 'jambo',
+            ],
+            [
+                'fallback' => 'top-device',
+                'name' => 'TopDevice',
+                'brandname' => 'TopDevice',
+                'key' => 'top-device',
             ],
         ];
     }

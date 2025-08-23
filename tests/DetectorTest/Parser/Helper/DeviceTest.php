@@ -129,6 +129,7 @@ final class DeviceTest extends TestCase
             ['B1-790', 'acer=acer b1-790'],
             ['B1-780', 'acer=acer b1-780'],
             ['M10-12_EEA', 'acer=acer m10-12_eea'],
+            ['A10-21_EEA', 'acer=acer a10-21_eea'],
             // AllCall
             ['Atom', 'allcall=allcall atom'],
             ['HERO_20_PRO', 'allcall=allcall hero 20 pro'],
@@ -493,6 +494,8 @@ final class DeviceTest extends TestCase
             ['PGIM10', 'oppo=oppo pgim10'],
             ['CPH2524', 'oppo=oppo cph2524'],
             ['CPH2773', 'oppo=oppo cph2773'],
+            ['PHJ110', 'oppo=oppo phj110'],
+            ['PHJ110_A1', 'oppo=oppo phj110_a1'],
             // Xiaomi
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -829,6 +832,7 @@ final class DeviceTest extends TestCase
             ['23021RAA2G', 'xiaomi=xiaomi 23021raa2g'],
             ['24095PCADI', 'xiaomi=xiaomi 24095pcadi'],
             ['2411DRN47I', 'xiaomi=xiaomi 2411drn47i'],
+            ['25040RP0AE', 'xiaomi=xiaomi 25040rp0ae'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3392,6 +3396,9 @@ final class DeviceTest extends TestCase
             ['P30S_ROW', 'teclast=teclast p30s_row'],
             ['M40S_ROW', 'teclast=teclast m40s_row'],
             ['T40S_EEA', 'teclast=teclast t40s_eea'],
+            ['T50Mini_ROW', 'teclast=teclast t50mini_row'],
+            ['T65Max_EEA', 'teclast=teclast t65max_eea'],
+            ['T65Max_ROW', 'teclast=teclast t65max_row'],
             // alldocube
             ['iPlay_40', 'alldocube=alldocube iplay 40'],
             ['iPlay60_mini_Pro', 'alldocube=alldocube iplay 60 mini pro'],
@@ -3501,6 +3508,7 @@ final class DeviceTest extends TestCase
             ['WAVE 8', 'blackview=blackview wave 8'],
             ['Blackview A96', 'blackview=blackview a96'],
             ['BV6100', 'blackview=blackview bv6100'],
+            ['Active 12 Pro', 'blackview=blackview active 12 pro'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -3667,6 +3675,7 @@ final class DeviceTest extends TestCase
             ['itel P662LN', 'itel=itel p662ln'],
             ['itel P662L', 'itel=itel p662l'],
             ['itel P651L', 'itel=itel p651l'],
+            ['itel P682LP', 'itel=itel p682lp'],
             // vontar
             ['HK1RBOX-X4', 'vontar=vontar hk1 rbox x4'],
             ['HK1 Mini+', 'vontar=vontar hk1 mini plus'],
@@ -3805,6 +3814,11 @@ final class DeviceTest extends TestCase
             ['100071483', 'onn=onn 100071483'],
             ['100044018P', 'onn=onn 100044018p'],
             ['100044018g', 'onn=onn 100044018g'],
+            ['100135794', 'onn=onn 100135794'],
+            ['100135920', 'onn=onn 100135920'],
+            ['100135924', 'onn=onn 100135924'],
+            ['100146660', 'onn=onn 100146660'],
+            ['100146663', 'onn=onn 100146663'],
             // archos
             ['Archos 101c Platinum', 'archos=archos 101c platinum'],
             ['Archos 101b Xenon v2', 'archos=archos 101b xenon v2'],
@@ -4217,6 +4231,7 @@ final class DeviceTest extends TestCase
             ['TAB R7', 'hotwav=hotwav tab r7'],
             ['Hyper 7 Pro', 'hotwav=hotwav hyper 7 pro'],
             ['Hyper 7', 'hotwav=hotwav hyper 7'],
+            ['W11', 'hotwav=hotwav w11'],
             // switel
             ['S5003D_CHAMP', 'switel=switel s5003d'],
             // reeder
@@ -4578,6 +4593,8 @@ final class DeviceTest extends TestCase
             ['65OV6000U', 'onvo=onvo 65ov6000u'],
             ['ONVO_32OV6001H', 'onvo=onvo 32ov6001h'],
             ['32OV6001H', 'onvo=onvo 32ov6001h'],
+            ['ONVO_43OV4000AF', 'onvo=onvo 43ov4000af'],
+            ['43OV4000AF', 'onvo=onvo 43ov4000af'],
             // digma
             ['Zenith TA3D1P01', 'digma=digma ta3d1p01'],
             ['Zenith TA3E1P01', 'digma=digma ta3e1p01'],
@@ -4600,6 +4617,9 @@ final class DeviceTest extends TestCase
             ['Infinity TA2D0M01', 'digma=digma ta2d0m01'],
             ['Digma Pro HIT 104 HS1009PL', 'digma=digma hs1009pl'],
             ['Digma Pro HIT 106 HS1007PL', 'digma=digma hs1007pl'],
+            ['Empire TA3E2M01', 'digma=digma ta3e2m01'],
+            ['Eclipse TA3E1P02', 'digma=digma ta3e1p02'],
+            ['Edge TA3D1M01', 'digma=digma ta3d1m01'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -4824,6 +4844,7 @@ final class DeviceTest extends TestCase
             ['NTV-H3230TS', 'novis=novis ntv-h3230ts'],
             // pritom
             ['M10_R02', 'pritom=pritom m10 r02'],
+            ['M10_R04', 'pritom=pritom m10_r04'],
             // pixus
             ['Pixus_Deon', 'pixus=pixus deon'],
             // tibuta
@@ -4846,8 +4867,27 @@ final class DeviceTest extends TestCase
             // asano
             ['50LU6000T', 'asano=asano 50lu6000t'],
             ['43LF7010T', 'asano=asano 43lf7010t'],
+            ['43LU6000T', 'asano=asano 43lu6000t'],
             // hi
             ['HX-24H01FB', 'hi=hi hx-24h01fb'],
+            ['HX-32F01FB', 'hi=hi hx-32f01fb'],
+            ['HX-55U01FB', 'hi=hi hx-55u01fb'],
+            ['HX-50U01FB', 'hi=hi hx-50u01fb'],
+            ['HX-43U01FB', 'hi=hi hx-43u01fb'],
+            ['HX-32H01FB', 'hi=hi hx-32h01fb'],
+            ['HX-43F01FB', 'hi=hi hx-43f01fb'],
+            // readboy
+            ['Readboy_C26Pro', 'readboy=readboy c26 pro'],
+            // scoole
+            ['SL-LED65S01T2SU', 'scoole=scoole sl-led65s01t2su'],
+            // soundmax
+            ['SM-QLED50T21SU', 'soundmax=soundmax sm-qled50t21su'],
+            ['SM-LED32M07S', 'soundmax=soundmax sm-led32m07s'],
+            // top-device
+            ['TDTV24BS01H_BK', 'top-device=top-device tdtv24bs01h_bk'],
+            ['TDTV24BS02H_WE', 'top-device=top-device tdtv24bs02h_we'],
+            ['TDTV50CQ08U', 'top-device=top-device tdtv50cq08u'],
+            ['TDTV50CS06U', 'top-device=top-device tdtv50cs06u'],
             // other
             ['Model"', null],
             [': "', null],
