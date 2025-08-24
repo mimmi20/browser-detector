@@ -1468,5 +1468,47 @@
       "version": "3826.500.131",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "stickypassword/1 CFNetwork/3826.600.41 Darwin/24.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "18.6.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Sticky Password",
+      "version": "1.0.0",
+      "manufacturer": "lamantine-software",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3826.600.41",
+      "manufacturer": "apple"
+    }
   }
 ]

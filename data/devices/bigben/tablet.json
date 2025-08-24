@@ -4,13 +4,29 @@
     "marketingName": "SuperPAD IX",
     "manufacturer": "bigben",
     "brand": "bigben",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
       "touch": true,
       "size": 9
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "bigben bigtech b": {
+    "deviceName": "BigTech B",
+    "marketingName": "BigTech B",
+    "manufacturer": "bigben",
+    "brand": "bigben",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
     },
     "type": "tablet",
     "platform": "android"

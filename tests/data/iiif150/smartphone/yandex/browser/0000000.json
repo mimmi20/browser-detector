@@ -250,5 +250,47 @@
       "version": "134.0.6998.261",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; Action A5Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.102 YaBrowser/25.6.4.102.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Action A5 Pro",
+      "marketingName": "Action A5 Pro",
+      "manufacturer": "iiif150",
+      "brand": "iiif150",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.88
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.6.4.102.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "136.0.7103.102",
+      "manufacturer": "google"
+    }
   }
 ]

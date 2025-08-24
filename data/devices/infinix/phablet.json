@@ -366,5 +366,37 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "infinix x6870": {
+    "deviceName": "X6870",
+    "marketingName": "Note 50s",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2436,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "infinix x671": {
+    "deviceName": "X671",
+    "marketingName": "Note 12 5G",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

@@ -1102,5 +1102,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "coolpad cp12q": {
+    "deviceName": "CP12Q",
+    "marketingName": "Cool 30i",
+    "manufacturer": "coolpad",
+    "brand": "coolpad",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "coolpad cp12s": {
+    "deviceName": "CP12s",
+    "marketingName": "CP12s",
+    "manufacturer": "coolpad",
+    "brand": "coolpad",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1640,
+      "height": 720,
+      "touch": true,
+      "size": 6.79
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

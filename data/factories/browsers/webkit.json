@@ -64,7 +64,7 @@
     "/(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr\\/)|(?:opera|opr\\/).*(?:android|mtk|maui|samsung|windows ce|symbos)/i": "opera mobile",
     "/mobileiron/i": "mobile iron",
     "/(?<!x)iron(\\/| (?!build|pro)|$)/i": "iron",
-    "/ opx\\/|oprgx\\/|opera%20gx|opera 20gx/i": "opera gx",
+    "/ opx\\/|oprgx\\/|opera%20gx|opera 20gx|operagx/i": "opera gx",
     "/ opt\\/|opera%20touch|opera 20touch/i": "opera touch",
     "/opr\\//i": "opera",
     "/midori/i": "midori",

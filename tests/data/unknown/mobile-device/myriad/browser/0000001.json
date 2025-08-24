@@ -2017,48 +2017,6 @@
   },
   {
     "headers": {
-      "user-agent": "talang-city/ UP.Browser/5.0.3.3 (GUI)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "version": "5.0.3.3",
-      "manufacturer": "myriad",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "T618X UP.Browser/6.1.0.6.1 (GUI) MMP/1.0"
     },
     "device": {
@@ -4189,6 +4147,48 @@
     "client": {
       "name": "Openwave Mobile Browser",
       "version": "4.1.26",
+      "manufacturer": "myriad",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "O2-X2i/6.1.0.7 UP.Browser/6.1.0.7.8.c.1.103 (GUI) MMP/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "version": "6.1.0.7.8",
       "manufacturer": "myriad",
       "type": "browser",
       "isbot": false
