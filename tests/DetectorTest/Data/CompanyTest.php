@@ -621,6 +621,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'TopDevice',
                 'key' => 'top-device',
             ],
+            [
+                'type' => 'Bigben',
+                'name' => 'Bigben Interactive',
+                'brandname' => 'Bigben',
+                'key' => 'bigben',
+            ],
+            [
+                'type' => 'Krono',
+                'name' => 'Krono',
+                'brandname' => 'Krono',
+                'key' => 'krono',
+            ],
+            [
+                'type' => 'Calme',
+                'name' => 'Calme',
+                'brandname' => 'Calme',
+                'key' => 'calme',
+            ],
+            [
+                'type' => 'XB',
+                'name' => 'XB',
+                'brandname' => 'XB',
+                'key' => 'xb',
+            ],
+            [
+                'type' => 'Ziovo',
+                'name' => 'Ziovo',
+                'brandname' => 'Ziovo',
+                'key' => 'ziovo',
+            ],
+            [
+                'type' => 'iHunt',
+                'name' => 'iHunt',
+                'brandname' => 'iHunt',
+                'key' => 'ihunt',
+            ],
         ];
     }
 
@@ -785,6 +821,12 @@ final class CompanyTest extends TestCase
                 'name' => 'TopDevice',
                 'brandname' => 'TopDevice',
                 'key' => 'top-device',
+            ],
+            [
+                'fallback' => 'Bigben Interactive',
+                'name' => 'Bigben Interactive',
+                'brandname' => 'Bigben',
+                'key' => 'bigben',
             ],
         ];
     }

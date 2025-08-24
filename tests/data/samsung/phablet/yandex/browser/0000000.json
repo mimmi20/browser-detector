@@ -337,6 +337,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9.0; SM-N975 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.0.0 Mobile Safari/537.36 YaApp_Android/10.20 YaSearchBrowser/10.20"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N975",
+      "marketingName": "Galaxy Note 10 Plus 4G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "10.20.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 8.0.0; SM-G8858) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 YaBrowser/19.12.1.121.00 Mobile Safari/537.36"
     },
     "device": {
