@@ -124,5 +124,47 @@
       "version": "118.0.5993.930",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; F101 P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.612 YaSearchBrowser/24.104.1 BroPP/1.0 YaSearchApp/24.104.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "F101 P",
+      "marketingName": "F101 P",
+      "manufacturer": "fossi-bot",
+      "brand": "fossi-bot",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.104.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.612",
+      "manufacturer": "google"
+    }
   }
 ]

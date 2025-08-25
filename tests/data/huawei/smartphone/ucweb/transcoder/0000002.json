@@ -2774,6 +2774,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; zh-CN; PTP-AN60 Build/HONORPTP-AN60) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/17.2.1.1352 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PTP-AN60",
+      "marketingName": "Magic 7",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2800,
+        "height": 1264,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "17.2.1.1352",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; en-US; BKK-AL10 Build/HONORBKK-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.1.2.1293 Mobile Safari/537.36"
     },
     "device": {

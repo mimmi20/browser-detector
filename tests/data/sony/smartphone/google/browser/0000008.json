@@ -1158,6 +1158,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SO-51E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.123 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SO-51E",
+      "marketingName": "Xperia 1 VI",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "132.0.6834.123",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.123",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Callpod Keeper for Android 1.0 (app 17.0.10.140001/14000101) Dalvik/2.1.0 (Linux; U; Android 13; XQ-BQ52 Build/61.2.A.0.472A)"
     },
     "device": {

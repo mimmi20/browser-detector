@@ -814,6 +814,7 @@ final class Device implements DeviceInterface
             '24095pcadi' => 'xiaomi=xiaomi 24095pcadi',
             '2411drn47i' => 'xiaomi=xiaomi 2411drn47i',
             '25040rp0ae' => 'xiaomi=xiaomi 25040rp0ae',
+            'mde5' => 'xiaomi=xiaomi mde5',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2079,6 +2080,9 @@ final class Device implements DeviceInterface
             'gia-an00' => 'huawei=huawei gia-an00',
             'gia-an80' => 'huawei=huawei gia-an80',
             'new-an90' => 'huawei=huawei new-an90',
+            'lyn-an00' => 'huawei=huawei lyn-an00',
+            'ndl-w09' => 'huawei=huawei ndl-w09',
+            'ndl-l09' => 'huawei=huawei ndl-l09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2426,6 +2430,7 @@ final class Device implements DeviceInterface
             'xt2137-1' => 'motorola=motorola xt2137-1',
             'xt2137-2' => 'motorola=motorola xt2137-2',
             'xt2149-1' => 'motorola=motorola xt2149-1',
+            'pags0005in' => 'motorola=motorola pags0005in',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -2746,6 +2751,7 @@ final class Device implements DeviceInterface
             'i2221' => 'vivo=vivo i2221',
             'v2433' => 'vivo=vivo v2433',
             'i2305' => 'vivo=vivo i2305',
+            'ipa2475' => 'vivo=vivo ipa2475',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2825,6 +2831,8 @@ final class Device implements DeviceInterface
             'k16' => 'oukitel=oukitel k16',
             'c 38' => 'oukitel=oukitel c38',
             'ot11' => 'oukitel=oukitel ot11',
+            'rt8' => 'oukitel=oukitel rt8',
+            'wp52' => 'oukitel=oukitel wp52',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -2933,6 +2941,8 @@ final class Device implements DeviceInterface
             'fire 6' => 'doogee=doogee fire 6',
             'note59 pro+' => 'doogee=doogee note 59 pro+',
             'note58 pro' => 'doogee=doogee note 58 pro',
+            'n55' => 'doogee=doogee n55',
+            't20mini pro' => 'doogee=doogee t20 mini pro',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3266,6 +3276,7 @@ final class Device implements DeviceInterface
             'bv6100' => 'blackview=blackview bv6100',
             'active 12 pro' => 'blackview=blackview active 12 pro',
             'shark 9' => 'blackview=blackview shark 9',
+            'tab 16 pro' => 'blackview=blackview tab 16 pro',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -3888,6 +3899,7 @@ final class Device implements DeviceInterface
             'ob-p08' => 'unihertz=unihertz ob-p08',
             'ob-p10' => 'unihertz=unihertz ob-p10',
             'ob-a98' => 'unihertz=unihertz ob-a98',
+            'jelly max' => 'unihertz=unihertz jelly max',
             // coolpad
             'coolpad e502' => 'coolpad=coolpad e502',
             'coolpad c202' => 'coolpad=coolpad c202',
@@ -3912,6 +3924,7 @@ final class Device implements DeviceInterface
             't803d' => 'tcl=tcl t803d',
             't803e' => 'tcl=tcl t803e',
             't702d' => 'tcl=tcl t702d',
+            't506t' => 'tcl=tcl t506t',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -3943,6 +3956,8 @@ final class Device implements DeviceInterface
             'hyper 7 pro' => 'hotwav=hotwav hyper 7 pro',
             'hyper 7' => 'hotwav=hotwav hyper 7',
             'w11' => 'hotwav=hotwav w11',
+            't7 pro' => 'hotwav=hotwav t7 pro',
+            't5 max' => 'hotwav=hotwav t5 max',
             // switel
             's5003d_champ' => 'switel=switel s5003d',
             // reeder
@@ -4085,6 +4100,7 @@ final class Device implements DeviceInterface
             // ugoos
             'tox3_plus' => 'ugoos=ugoos tox3 plus',
             'tox3' => 'ugoos=ugoos tox3',
+            'tox4' => 'ugoos=ugoos tox4',
             // aoc
             'aoc u702' => 'aoc=aoc u702',
             'mw0922' => 'aoc=aoc mw0922',
@@ -4310,6 +4326,7 @@ final class Device implements DeviceInterface
             'ds-cl3' => 'dcode=dcode ds-cl3',
             'ds-cl4 lite' => 'dcode=dcode ds-cl4 lite',
             'ds-cl4' => 'dcode=dcode ds-cl4',
+            'ds-bd3 pro' => 'dcode=dcode ds-bd3 pro',
             // sparx
             'sparx neo x', 'neo x' => 'sparx=sparx neo x',
             'sparx s7' => 'sparx=sparx s7',
@@ -4335,6 +4352,7 @@ final class Device implements DeviceInterface
             'f101' => 'fossi-bot=fossi-bot f101',
             'f112 pro' => 'fossi-bot=fossi-bot f112 pro',
             'f101 p' => 'fossi-bot=fossi-bot f101 p',
+            'f109' => 'fossi-bot=fossi-bot f109',
             // hoozo
             'f13_eea' => 'hoozo=hoozo f13_eea',
             // sigma-mobile
@@ -4429,6 +4447,7 @@ final class Device implements DeviceInterface
             'armor i2w' => 'kenshi=kenshi armor i2w',
             'armor h1s' => 'kenshi=kenshi armor h1s',
             'kenshi_k10' => 'kenshi=kenshi k10',
+            'armor i1 slim' => 'kenshi=kenshi armor i1 slim',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',
@@ -4478,6 +4497,7 @@ final class Device implements DeviceInterface
             'live 12' => 'kruger-matz=kruger-matz live 12',
             'move 10' => 'kruger-matz=kruger-matz move 10',
             'flow 10' => 'kruger-matz=kruger-matz flow 10',
+            'flow 11' => 'kruger-matz=kruger-matz flow 11',
             // rungee
             'rungee x9' => 'rungee=rungee x9',
             // bmax
@@ -4529,9 +4549,12 @@ final class Device implements DeviceInterface
             'readboy_c26pro' => 'readboy=readboy c26 pro',
             // scoole
             'sl-led65s01t2su' => 'scoole=scoole sl-led65s01t2su',
+            'sl-led50s02t2su' => 'scoole=scoole sl-led50s02t2su',
             // soundmax
             'sm-qled50t21su' => 'soundmax=soundmax sm-qled50t21su',
             'sm-led32m07s' => 'soundmax=soundmax sm-led32m07s',
+            'sm-led32m12s' => 'soundmax=soundmax sm-led32m12s',
+            'sm-qled55t21su' => 'soundmax=soundmax sm-qled55t21su',
             // top-device
             'tdtv24bs01h_bk' => 'top-device=top-device tdtv24bs01h_bk',
             'tdtv24bs02h_we' => 'top-device=top-device tdtv24bs02h_we',
