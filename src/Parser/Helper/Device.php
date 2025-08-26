@@ -274,6 +274,11 @@ final class Device implements DeviceInterface
             'g025n' => 'google=google g025n',
             'g025j' => 'google=google g025j',
             'ga02099' => 'google=google ga02099',
+            'g020p' => 'google=google g020p',
+            'g020' => 'google=google g020',
+            'ga01181-us' => 'google=google ga01181-us',
+            'ga01182-us' => 'google=google ga01182-us',
+            'ga01180-us' => 'google=google ga01180-us',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -960,7 +965,17 @@ final class Device implements DeviceInterface
             'sm-a546j', 'samsung sm-a546j' => 'samsung=samsung sm-a546j',
             'sm-s546vl', 'samsung sm-s546vl' => 'samsung=samsung sm-s546vl',
             'scg21', 'samsung scg21' => 'samsung=samsung scg21',
+            'scg22' => 'samsung=samsung scg22',
+            'scg27' => 'samsung=samsung scg27',
+            'scg26' => 'samsung=samsung scg26',
+            'scg25' => 'samsung=samsung scg25',
+            'scg24' => 'samsung=samsung scg24',
+            'scg23' => 'samsung=samsung scg23',
+            'scg20' => 'samsung=samsung scg20',
             'sc-53d' => 'samsung=samsung sc-53d',
+            'sc-52d' => 'samsung=samsung sc-52d',
+            'sc-02j' => 'samsung=samsung sc-02j',
+            'sc-02l' => 'samsung=samsung sc-02l',
             'sm-t220' => 'samsung=samsung sm-t220',
             'sm-t225' => 'samsung=samsung sm-t225',
             'sm-t225n' => 'samsung=samsung sm-t225n',
@@ -1139,7 +1154,6 @@ final class Device implements DeviceInterface
             'sm-g935f' => 'samsung=samsung sm-g935f',
             'sm-g991b' => 'samsung=samsung sm-g991b',
             'sm-g981b' => 'samsung=samsung sm-g981b',
-            'scg22' => 'samsung=samsung scg22',
             'sm-g900f' => 'samsung=samsung sm-g900f',
             'sm-a605fn' => 'samsung=samsung sm-a605fn',
             'sm-t805' => 'samsung=samsung sm-t805',
@@ -1306,12 +1320,7 @@ final class Device implements DeviceInterface
             'sm-j250f' => 'samsung=samsung sm-j250f',
             'sm-a736b' => 'samsung=samsung sm-a736b',
             'sm-s906e' => 'samsung=samsung sm-s906e',
-            'scg27' => 'samsung=samsung scg27',
-            'scg26' => 'samsung=samsung scg26',
-            'scg25' => 'samsung=samsung scg25',
-            'scg24' => 'samsung=samsung scg24',
             'sm-s926b' => 'samsung=samsung sm-s926b',
-            'scg23' => 'samsung=samsung scg23',
             'sm-a307fn' => 'samsung=samsung sm-a307fn',
             'sm-t530' => 'samsung=samsung sm-t530',
             'sm-n910c' => 'samsung=samsung sm-n910c',
@@ -1414,7 +1423,6 @@ final class Device implements DeviceInterface
             'sm-t380' => 'samsung=samsung sm-t380',
             'sm-n950n' => 'samsung=samsung sm-n950n',
             'sm-g965u' => 'samsung=samsung sm-g965u',
-            'sc-02j' => 'samsung=samsung sc-02j',
             'sm-j700h' => 'samsung=samsung sm-j700h',
             'sm-t670' => 'samsung=samsung sm-t670',
             'sm-g935u' => 'samsung=samsung sm-g935u',
@@ -1626,7 +1634,6 @@ final class Device implements DeviceInterface
             'sm-a102u', 'samsung sm-a102u' => 'samsung=samsung sm-a102u',
             'sm-a102n', 'samsung sm-a102n' => 'samsung=samsung sm-a102n',
             'sm-a102j', 'samsung sm-a102j' => 'samsung=samsung sm-a102j',
-            'sc-02l' => 'samsung=samsung sc-02l',
             'sm-w9025' => 'samsung=samsung sm-w9025',
             'sm-m156b' => 'samsung=samsung sm-m156b',
             'sm-e225f', 'samsung sm-e225f' => 'samsung=samsung sm-e225f',
@@ -2083,6 +2090,8 @@ final class Device implements DeviceInterface
             'lyn-an00' => 'huawei=huawei lyn-an00',
             'ndl-w09' => 'huawei=huawei ndl-w09',
             'ndl-l09' => 'huawei=huawei ndl-l09',
+            'vca-an00' => 'huawei=huawei vca-an00',
+            'juliaqn-l21b' => 'huawei=huawei juliaqn-l21b',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2752,6 +2761,12 @@ final class Device implements DeviceInterface
             'v2433' => 'vivo=vivo v2433',
             'i2305' => 'vivo=vivo i2305',
             'ipa2475' => 'vivo=vivo ipa2475',
+            'v2315' => 'vivo=vivo v2315',
+            'v2218a' => 'vivo=vivo v2218a',
+            'v2218' => 'vivo=vivo v2218',
+            'v2339' => 'vivo=vivo v2339',
+            'v2339fa' => 'vivo=vivo v2339fa',
+            'v2317a' => 'vivo=vivo v2317a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -2943,6 +2958,7 @@ final class Device implements DeviceInterface
             'note58 pro' => 'doogee=doogee note 58 pro',
             'n55' => 'doogee=doogee n55',
             't20mini pro' => 'doogee=doogee t20 mini pro',
+            's41 max' => 'doogee=doogee s41 max',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -2987,6 +3003,7 @@ final class Device implements DeviceInterface
             'kingkong x' => 'cubot=cubot kingkong x',
             'kingkong_es' => 'cubot=cubot kingkong es',
             'meet' => 'cubot=cubot hafury meet',
+            'kingkong_ax' => 'cubot=cubot kingkong ax',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -3563,6 +3580,7 @@ final class Device implements DeviceInterface
             'cmg101' => 'vortex=vortex cmg101',
             'hd62' => 'vortex=vortex hd62',
             't10m_pro' => 'vortex=vortex t10m pro',
+            'cg65' => 'vortex=vortex cg65',
             // spc
             'gravity_3_se' => 'spc=spc gravity 3 se',
             'gravity_3_mini' => 'spc=spc gravity 3 mini',
@@ -3969,6 +3987,7 @@ final class Device implements DeviceInterface
             's19 maxl 128gb' => 'reeder=reeder s19 max l 128gb',
             'p13 blue 2022' => 'reeder=reeder p13 blue 2022',
             's23 pro max' => 'reeder=reeder s23 pro max',
+            's19 max pro s edge' => 'reeder=reeder s19 max pro s edge',
             // tesla
             'explr 9' => 'tesla=tesla explorer 9',
             // chuwi
@@ -4340,6 +4359,7 @@ final class Device implements DeviceInterface
             'sparx neo 8i' => 'sparx=sparx neo 8i',
             'neo 11' => 'sparx=sparx neo 11',
             'neo 8 lite' => 'sparx=sparx neo 8 lite',
+            'edge 20 pro' => 'sparx=sparx edge 20 pro',
             // hot-pepper
             'puya' => 'hot-pepper=hot-pepper puya',
             // fenoti
@@ -4404,6 +4424,7 @@ final class Device implements DeviceInterface
             'elio' => 'logicom=logicom elio',
             'five pro 32' => 'logicom=logicom five pro 32',
             'yuno' => 'logicom=logicom yuno',
+            'le link' => 'logicom=logicom le link',
             // unitech
             'ea520' => 'unitech=unitech ea520',
             'ea520_us' => 'unitech=unitech ea520_us',
@@ -4448,6 +4469,7 @@ final class Device implements DeviceInterface
             'armor h1s' => 'kenshi=kenshi armor h1s',
             'kenshi_k10' => 'kenshi=kenshi k10',
             'armor i1 slim' => 'kenshi=kenshi armor i1 slim',
+            'armor_c1w' => 'kenshi=kenshi armor c1w',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',
@@ -4480,6 +4502,7 @@ final class Device implements DeviceInterface
             'mipo_m33' => 'mipo=mipo m33',
             // nuu-mobile
             's6702x' => 'nuu-mobile=nuu-mobile s6702x',
+            's6512l' => 'nuu-mobile=nuu-mobile s6512l',
             // m-horse
             'c68' => 'm-horse=mhorse c68',
             'c67' => 'm-horse=mhorse c67',
@@ -4578,6 +4601,11 @@ final class Device implements DeviceInterface
             'z168_eea' => 'ziovo=ziovo z168_eea',
             // ihunt
             'titan p8000 ultra carbon' => 'ihunt=ihunt titan p8000 ultra carbon',
+            'ihunt s24 ultra' => 'ihunt=ihunt s24 ultra',
+            'ihunt s23 ultra' => 'ihunt=ihunt s23 ultra',
+            'p11000 pro' => 'ihunt=ihunt p11000 pro',
+            // emporia
+            'e5mini' => 'emporia=emporia e5 mini',
             // other
             default => null,
         };

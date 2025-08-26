@@ -657,6 +657,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'iHunt',
                 'key' => 'ihunt',
             ],
+            [
+                'type' => 'Emporia',
+                'name' => 'Emporia Telecom GmbH & Co. KG',
+                'brandname' => 'Emporia',
+                'key' => 'emporia',
+            ],
         ];
     }
 
@@ -827,6 +833,12 @@ final class CompanyTest extends TestCase
                 'name' => 'Bigben Interactive',
                 'brandname' => 'Bigben',
                 'key' => 'bigben',
+            ],
+            [
+                'type' => 'Emporia Telecom GmbH & Co. KG',
+                'name' => 'Emporia Telecom GmbH & Co. KG',
+                'brandname' => 'Emporia',
+                'key' => 'emporia',
             ],
         ];
     }

@@ -213,6 +213,8 @@ enum Company: string implements CompanyInterface
 
     case ihunt = 'iHunt';
 
+    case emporia = 'Emporia';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -318,6 +320,7 @@ enum Company: string implements CompanyInterface
             'xb' => self::xb,
             'ziovo' => self::ziovo,
             'ihunt' => self::ihunt,
+            'emporia', 'emporia telecom gmbh & co. kg' => self::emporia,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -351,6 +354,7 @@ enum Company: string implements CompanyInterface
             self::itech => 'ITECH SLU',
             self::jambo => 'JamboTechnology Hakuna Matata Chill Limited',
             self::bigben => 'Bigben Interactive',
+            self::emporia => 'Emporia Telecom GmbH & Co. KG',
             self::unknown => null,
             default => $this->value,
         };
