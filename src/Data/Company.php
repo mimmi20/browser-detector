@@ -189,10 +189,36 @@ enum Company: string implements CompanyInterface
 
     case dijitsu = 'Dijitsu';
 
+    case wildred = 'WildRed';
+
+    case asano = 'Asano';
+
+    case hi = 'Hi';
+
+    case scoole = 'Scoole';
+
+    case soundmax = 'Soundmax';
+
+    case topdevice = 'TopDevice';
+
+    case bigben = 'Bigben';
+
+    case krono = 'Krono';
+
+    case calme = 'Calme';
+
+    case xb = 'XB';
+
+    case ziovo = 'Ziovo';
+
+    case ihunt = 'iHunt';
+
     /**
      * @throws UnexpectedValueException
      *
      * @api
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function fromName(string $name): self
     {
@@ -280,6 +306,18 @@ enum Company: string implements CompanyInterface
             'tibuta' => self::tibuta,
             'daria' => self::daria,
             'dijitsu' => self::dijitsu,
+            'wildred' => self::wildred,
+            'asano' => self::asano,
+            'hi' => self::hi,
+            'scoole' => self::scoole,
+            'soundmax' => self::soundmax,
+            'topdevice', 'top-device' => self::topdevice,
+            'bigben', 'bigben interactive' => self::bigben,
+            'krono' => self::krono,
+            'calme' => self::calme,
+            'xb' => self::xb,
+            'ziovo' => self::ziovo,
+            'ihunt' => self::ihunt,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -312,6 +350,7 @@ enum Company: string implements CompanyInterface
             self::dna => 'DNA Oyj',
             self::itech => 'ITECH SLU',
             self::jambo => 'JamboTechnology Hakuna Matata Chill Limited',
+            self::bigben => 'Bigben Interactive',
             self::unknown => null,
             default => $this->value,
         };
@@ -343,6 +382,7 @@ enum Company: string implements CompanyInterface
             self::wishtel => 'wish-tel',
             self::opelmobile => 'opel-mobile',
             self::okapimobile => 'okapi-mobile',
+            self::topdevice => 'top-device',
             default => $this->name,
         };
     }

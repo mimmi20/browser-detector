@@ -85,7 +85,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; JSC-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36"
+      "user-agent": "com.ss.android.article.news/8050 (Linux; U; Android 10; zh_CN_#Hans; OCE-AN10; Build/HUAWEIOCE-AN10; Cronet/TTNetVersion:1c8b77ac 2020-12-16 QuicVersion:47946d2a 2020-10-14)"
     },
     "device": {
       "architecture": null,
@@ -113,16 +113,16 @@
       "manufacturer": "google"
     },
     "client": {
-      "name": "Chrome",
-      "version": "70.0.3538.110",
+      "name": "Android Webkit",
+      "version": null,
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
-      "name": "Blink",
-      "version": "70.0.3538.110",
-      "manufacturer": "google"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -962,48 +962,6 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; TET-AN50 Build/HUAWEITET-AN50; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Huawei device",
-      "marketingName": "general Huawei device",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "99.0.4844.88",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.88",
       "manufacturer": "google"
     }
   },

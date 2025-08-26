@@ -4,8 +4,8 @@
     "marketingName": "F300",
     "manufacturer": "readboy",
     "brand": "readboy",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -20,8 +20,8 @@
     "marketingName": "G100",
     "manufacturer": "readboy",
     "brand": "readboy",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -36,8 +36,8 @@
     "marketingName": "G20",
     "manufacturer": "readboy",
     "brand": "readboy",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -52,8 +52,8 @@
     "marketingName": "G30",
     "manufacturer": "readboy",
     "brand": "readboy",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -68,8 +68,8 @@
     "marketingName": "G35",
     "manufacturer": "readboy",
     "brand": "readboy",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -84,13 +84,29 @@
     "marketingName": "G50",
     "manufacturer": "readboy",
     "brand": "readboy",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "readboy c26 pro": {
+    "deviceName": "C26 Pro",
+    "marketingName": "C26 Pro",
+    "manufacturer": "readboy",
+    "brand": "readboy",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.95
     },
     "type": "tablet",
     "platform": "android"

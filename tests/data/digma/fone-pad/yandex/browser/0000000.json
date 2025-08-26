@@ -463,6 +463,90 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro HIT 106 HS1007PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.64 YaBrowser/24.9.1.64.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HS1007PL",
+      "marketingName": "Pro Hit 106 10.1\"",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.9.1.64.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.64",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro HIT 104 HS1009PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.279 YaBrowser/24.12.0.279.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HS1009PL",
+      "marketingName": "Pro Hit 104 10.1\"",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.12.0.279.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.279",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Spark TA1C8M01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.839 YaSearchBrowser/24.122/apad BroPP/1.0 YaSearchApp/24.122/apad webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -542,6 +626,48 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.1823",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Infinity TA3E0M01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.839 YaSearchBrowser/24.122/apad BroPP/1.0 YaSearchApp/24.122/apad webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA3E0M01",
+      "marketingName": "Pro Infinity",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.122.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.839",
       "manufacturer": "google"
     }
   },
@@ -1046,6 +1172,132 @@
     "engine": {
       "name": "Blink",
       "version": "136.0.7103.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Edge TA3D1M01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.115 YaBrowser/25.6.2.115.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA3D1M01",
+      "marketingName": "Pro Edge",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.6.2.115.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "136.0.7103.115",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Eclipse TA3E1P02) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.98 YaBrowser/25.6.3.98.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA3E1P02",
+      "marketingName": "Pro Eclipse",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "25.6.3.98.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "136.0.7103.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Empire TA3E2M01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.7.38.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA3E2M01",
+      "marketingName": "Pro Empire",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 12
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "23.1.7.38.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
       "manufacturer": "google"
     }
   }
