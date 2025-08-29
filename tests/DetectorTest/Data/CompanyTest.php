@@ -835,7 +835,7 @@ final class CompanyTest extends TestCase
                 'key' => 'bigben',
             ],
             [
-                'type' => 'Emporia Telecom GmbH & Co. KG',
+                'fallback' => 'Emporia Telecom GmbH & Co. KG',
                 'name' => 'Emporia Telecom GmbH & Co. KG',
                 'brandname' => 'Emporia',
                 'key' => 'emporia',
