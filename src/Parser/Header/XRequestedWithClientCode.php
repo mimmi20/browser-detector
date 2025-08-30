@@ -361,6 +361,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.fsecure.ms.teliasweden' => 'telia-trygg',
             'com.gener8ads.wallet' => 'gener8-browser',
             'com.jambo' => 'jambo',
+            'no.wifi.offline.games.puzzle.games' => 'offline all in one',
             default => null,
         };
     }

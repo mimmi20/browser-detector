@@ -663,6 +663,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Emporia',
                 'key' => 'emporia',
             ],
+            [
+                'type' => 'MicroEra',
+                'name' => 'MicroEra',
+                'brandname' => 'MicroEra',
+                'key' => 'microera',
+            ],
+            [
+                'type' => 'Zebra',
+                'name' => 'Zebra Technologies Corp.',
+                'brandname' => 'Zebra',
+                'key' => 'zebra',
+            ],
         ];
     }
 
@@ -839,6 +851,12 @@ final class CompanyTest extends TestCase
                 'name' => 'Emporia Telecom GmbH & Co. KG',
                 'brandname' => 'Emporia',
                 'key' => 'emporia',
+            ],
+            [
+                'fallback' => 'Zebra Technologies Corp.',
+                'name' => 'Zebra Technologies Corp.',
+                'brandname' => 'Zebra',
+                'key' => 'zebra',
             ],
         ];
     }
