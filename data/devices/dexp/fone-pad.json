@@ -4,8 +4,8 @@
     "marketingName": "Ursus 9EV 3G",
     "manufacturer": "dexp",
     "brand": "dexp",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 768,
@@ -20,13 +20,29 @@
     "marketingName": "Ursus NS370i",
     "manufacturer": "dexp",
     "brand": "dexp",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
       "touch": true,
       "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "dexp s110": {
+    "deviceName": "S110",
+    "marketingName": "Ursus S110",
+    "manufacturer": "dexp",
+    "brand": "dexp",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
     },
     "type": "fone-pad",
     "platform": "android"

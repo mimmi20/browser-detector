@@ -657,6 +657,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'iHunt',
                 'key' => 'ihunt',
             ],
+            [
+                'type' => 'Emporia',
+                'name' => 'Emporia Telecom GmbH & Co. KG',
+                'brandname' => 'Emporia',
+                'key' => 'emporia',
+            ],
+            [
+                'type' => 'MicroEra',
+                'name' => 'MicroEra',
+                'brandname' => 'MicroEra',
+                'key' => 'microera',
+            ],
+            [
+                'type' => 'Zebra',
+                'name' => 'Zebra Technologies Corp.',
+                'brandname' => 'Zebra',
+                'key' => 'zebra',
+            ],
         ];
     }
 
@@ -827,6 +845,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Bigben Interactive',
                 'brandname' => 'Bigben',
                 'key' => 'bigben',
+            ],
+            [
+                'fallback' => 'Emporia Telecom GmbH & Co. KG',
+                'name' => 'Emporia Telecom GmbH & Co. KG',
+                'brandname' => 'Emporia',
+                'key' => 'emporia',
+            ],
+            [
+                'fallback' => 'Zebra Technologies Corp.',
+                'name' => 'Zebra Technologies Corp.',
+                'brandname' => 'Zebra',
+                'key' => 'zebra',
             ],
         ];
     }
