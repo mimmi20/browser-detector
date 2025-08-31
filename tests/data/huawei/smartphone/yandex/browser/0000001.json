@@ -342,7 +342,7 @@
     "device": {
       "architecture": null,
       "deviceName": "FRI-AN10",
-      "marketingName": "Magic Vs Ultimate",
+      "marketingName": "Magic Vs 5G",
       "manufacturer": "huawei",
       "brand": "honor",
       "dualOrientation": true,
@@ -1550,6 +1550,48 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; DUA-L22 Build/HONORDUA-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36 YaApp_Android/8.80 YaSearchBrowser/8.80"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DUA-L22",
+      "marketingName": "Honor 7S",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "8.80.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
       "manufacturer": "google"
     }
   }

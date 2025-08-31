@@ -221,6 +221,14 @@ enum Company: string implements CompanyInterface
 
     case zebra = 'Zebra';
 
+    case sonim = 'Sonim';
+
+    case xsmart = 'XSmart';
+
+    case moondrop = 'Moondrop';
+
+    case maxwest = 'Maxwest';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -330,6 +338,10 @@ enum Company: string implements CompanyInterface
             'microera' => self::microera,
             'villaon' => self::villaon,
             'zebra', 'zebra technologies corp.' => self::zebra,
+            'sonim' => self::sonim,
+            'xsmart', 'x-smart' => self::xsmart,
+            'moondrop', 'chengdu shuiyueyu technology co., ltd.' => self::moondrop,
+            'maxwest' => self::maxwest,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -365,6 +377,7 @@ enum Company: string implements CompanyInterface
             self::bigben => 'Bigben Interactive',
             self::emporia => 'Emporia Telecom GmbH & Co. KG',
             self::zebra => 'Zebra Technologies Corp.',
+            self::moondrop => 'Chengdu Shuiyueyu Technology Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -397,6 +410,7 @@ enum Company: string implements CompanyInterface
             self::opelmobile => 'opel-mobile',
             self::okapimobile => 'okapi-mobile',
             self::topdevice => 'top-device',
+            self::xsmart => 'x-smart',
             default => $this->name,
         };
     }

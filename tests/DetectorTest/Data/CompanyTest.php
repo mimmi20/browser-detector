@@ -675,6 +675,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Zebra',
                 'key' => 'zebra',
             ],
+            [
+                'type' => 'Sonim',
+                'name' => 'Sonim',
+                'brandname' => 'Sonim',
+                'key' => 'sonim',
+            ],
+            [
+                'type' => 'XSmart',
+                'name' => 'XSmart',
+                'brandname' => 'XSmart',
+                'key' => 'x-smart',
+            ],
+            [
+                'type' => 'Moondrop',
+                'name' => 'Chengdu Shuiyueyu Technology Co., Ltd.',
+                'brandname' => 'Moondrop',
+                'key' => 'moondrop',
+            ],
+            [
+                'type' => 'Maxwest',
+                'name' => 'Maxwest',
+                'brandname' => 'Maxwest',
+                'key' => 'maxwest',
+            ],
         ];
     }
 
@@ -857,6 +881,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Zebra Technologies Corp.',
                 'brandname' => 'Zebra',
                 'key' => 'zebra',
+            ],
+            [
+                'fallback' => 'x-smart',
+                'name' => 'XSmart',
+                'brandname' => 'XSmart',
+                'key' => 'x-smart',
+            ],
+            [
+                'fallback' => 'Chengdu Shuiyueyu Technology Co., Ltd.',
+                'name' => 'Chengdu Shuiyueyu Technology Co., Ltd.',
+                'brandname' => 'Moondrop',
+                'key' => 'moondrop',
             ],
         ];
     }

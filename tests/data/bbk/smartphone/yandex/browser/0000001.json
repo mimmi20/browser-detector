@@ -1219,6 +1219,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; V2354A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.71 YaSearchBrowser/24.47.1 BroPP/1.0 YaSearchApp/24.47.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2354A",
+      "marketingName": "Y200i",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.72
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.47.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.71",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; RMX3851) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.768 YaSearchBrowser/24.62.1 BroPP/1.0 YaSearchApp/24.62.1 webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {

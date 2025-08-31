@@ -1,14 +1,14 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 13; Sparx Ultra 11 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.82 Mobile Safari/537.36 OPR/81.0.2254.72209"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; de-de; C51 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.72 Mobile Safari/537.36 HeyTapBrowser/45.12.9.1"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Sparx device",
-      "marketingName": "general Sparx device",
-      "manufacturer": "sparx",
-      "brand": "sparx",
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -17,7 +17,7 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -25,19 +25,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "13.0.0",
+      "version": "14.0.0",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Opera Mobile",
-      "version": "81.0.2254.72209",
-      "manufacturer": "opera",
+      "name": "HeyTapBrowser",
+      "version": "45.12.9.1",
+      "manufacturer": "bravo-unicorn",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "125.0.6422.82",
+      "version": "125.0.6422.72",
       "manufacturer": "google"
     }
   }
