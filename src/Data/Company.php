@@ -229,6 +229,10 @@ enum Company: string implements CompanyInterface
 
     case maxwest = 'Maxwest';
 
+    case fplus = 'F+';
+
+    case energizer = 'Energizer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -342,6 +346,8 @@ enum Company: string implements CompanyInterface
             'xsmart', 'x-smart' => self::xsmart,
             'moondrop', 'chengdu shuiyueyu technology co., ltd.' => self::moondrop,
             'maxwest' => self::maxwest,
+            'fplus', 'f+', 'f-plus' => self::fplus,
+            'energizer' => self::energizer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -411,6 +417,7 @@ enum Company: string implements CompanyInterface
             self::okapimobile => 'okapi-mobile',
             self::topdevice => 'top-device',
             self::xsmart => 'x-smart',
+            self::fplus => 'f-plus',
             default => $this->name,
         };
     }

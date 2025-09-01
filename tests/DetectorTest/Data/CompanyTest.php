@@ -699,6 +699,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Maxwest',
                 'key' => 'maxwest',
             ],
+            [
+                'type' => 'F+',
+                'name' => 'F+',
+                'brandname' => 'F+',
+                'key' => 'f-plus',
+            ],
+            [
+                'type' => 'Energizer',
+                'name' => 'Energizer',
+                'brandname' => 'Energizer',
+                'key' => 'energizer',
+            ],
         ];
     }
 
@@ -893,6 +905,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Chengdu Shuiyueyu Technology Co., Ltd.',
                 'brandname' => 'Moondrop',
                 'key' => 'moondrop',
+            ],
+            [
+                'fallback' => 'f-plus',
+                'name' => 'F+',
+                'brandname' => 'F+',
+                'key' => 'f-plus',
+            ],
+            [
+                'fallback' => 'fplus',
+                'name' => 'F+',
+                'brandname' => 'F+',
+                'key' => 'f-plus',
             ],
         ];
     }
