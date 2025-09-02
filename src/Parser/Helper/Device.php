@@ -2967,6 +2967,7 @@ final class Device implements DeviceInterface
             'wp35' => 'oukitel=oukitel wp35',
             'c51' => 'oukitel=oukitel c51',
             'wp50' => 'oukitel=oukitel wp50',
+            'ot6' => 'oukitel=oukitel ot6',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -3330,7 +3331,7 @@ final class Device implements DeviceInterface
             'iplay50_lite' => 'alldocube=alldocube iplay 50 lite',
             'iplay 50 pro', 'iplay50pro', 'iplay50 pro' => 'alldocube=alldocube iplay 50 pro',
             'iplay_50s' => 'alldocube=alldocube iplay 50s',
-            'iplay_50' => 'alldocube=alldocube iplay 50',
+            'iplay_50', 'iplay50' => 'alldocube=alldocube iplay 50',
             'iplay_30' => 'alldocube=alldocube iplay 30',
             'iplay20s' => 'alldocube=alldocube iplay 20s',
             'iplay_20p' => 'alldocube=alldocube iplay 20p',
@@ -3750,6 +3751,8 @@ final class Device implements DeviceInterface
             'hd65_plus' => 'vortex=vortex hd65 plus',
             'hd65' => 'vortex=vortex hd65',
             'zg65' => 'vortex=vortex zg65',
+            'ztab10' => 'vortex=vortex z tab 10',
+            'btab10' => 'vortex=vortex b tab 10',
             // spc
             'gravity_3_se' => 'spc=spc gravity 3 se',
             'gravity_3_mini' => 'spc=spc gravity 3 mini',
@@ -4476,9 +4479,9 @@ final class Device implements DeviceInterface
             'edge ta2d1m01' => 'digma=digma ta2d1m01',
             'edge ta3e1m01' => 'digma=digma ta3e1m01',
             'hit 16 hs1002pl' => 'digma=digma hs1002pl',
-            'prime 18 ms1001pl' => 'digma=digma ms1001pl',
-            'prime 18 ms1002pl' => 'digma=digma ms1002pl',
-            'prime 18 ms1003pl' => 'digma=digma ms1003pl',
+            'prime 18 ms1001pl', 'digma pro prime 18 ms1001pl' => 'digma=digma ms1001pl',
+            'prime 18 ms1002pl', 'digma pro prime 18 ms1002pl' => 'digma=digma ms1002pl',
+            'prime 18 ms1003pl', 'digma pro prime 18 ms1003pl' => 'digma=digma ms1003pl',
             'k10 da1c0p01' => 'digma=digma da1c0p01',
             'optima 8430e 4g da1c8p01' => 'digma=digma da1c8p01',
             'quantum ta2d5p01' => 'digma=digma ta2d5p01',
@@ -4495,6 +4498,8 @@ final class Device implements DeviceInterface
             'eclipse ta3e1p02' => 'digma=digma ta3e1p02',
             'edge ta3d1m01' => 'digma=digma ta3d1m01',
             'infinity ta3e0m01' => 'digma=digma ta3e0m01',
+            'digma pro hit 104 hs1005pl' => 'digma=digma hs1005pl',
+            'digma pro hit 14 hs1006pl' => 'digma=digma hs1006pl',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -4574,6 +4579,8 @@ final class Device implements DeviceInterface
             'f101 p' => 'fossi-bot=fossi-bot f101 p',
             'f109' => 'fossi-bot=fossi-bot f109',
             'f106 pro' => 'fossi-bot=fossi-bot f106 pro',
+            'dt1' => 'fossi-bot=fossi-bot dt1',
+            'dt2' => 'fossi-bot=fossi-bot dt2',
             // hoozo
             'f13_eea' => 'hoozo=hoozo f13_eea',
             // sigma-mobile
@@ -4614,6 +4621,7 @@ final class Device implements DeviceInterface
             'mobilemapper60_2' => 'trimble=trimble mobilemapper 60',
             // lville
             'tpc1013_eea' => 'lville=lville tpc1013_eea',
+            'tpc1013' => 'lville=lville tpc1013',
             // olax
             'ocean k10' => 'olax=olax ocean k10',
             'ocean k8' => 'olax=olax ocean k8',
@@ -4681,6 +4689,15 @@ final class Device implements DeviceInterface
             'armor i1 slim' => 'kenshi=kenshi armor i1 slim',
             'armor_c1w' => 'kenshi=kenshi armor c1w',
             'armor p1s' => 'kenshi=kenshi armor p1s',
+            'e11' => 'kenshi=kenshi e11',
+            'e12' => 'kenshi=kenshi e12',
+            'e17' => 'kenshi=kenshi e17',
+            'e18' => 'kenshi=kenshi e18',
+            'e28' => 'kenshi=kenshi e28',
+            'h38' => 'kenshi=kenshi h38',
+            'h21' => 'kenshi=kenshi h21',
+            'h19' => 'kenshi=kenshi h19',
+            'h11' => 'kenshi=kenshi h11',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',

@@ -846,5 +846,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "digma hs1005pl": {
+    "deviceName": "HS1005PL",
+    "marketingName": "Pro Hit 104 10.1\"",
+    "manufacturer": "digma",
+    "brand": "digma",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "digma hs1006pl": {
+    "deviceName": "HS1006PL",
+    "marketingName": "Pro Hit 14 10.4\"",
+    "manufacturer": "digma",
+    "brand": "digma",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

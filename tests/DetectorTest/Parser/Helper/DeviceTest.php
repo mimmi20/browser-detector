@@ -3324,6 +3324,7 @@ final class DeviceTest extends TestCase
             ['C38', 'oukitel=oukitel c38'],
             ['C51', 'oukitel=oukitel c51'],
             ['WP50', 'oukitel=oukitel wp50'],
+            ['OT6', 'oukitel=oukitel ot6'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -3705,6 +3706,7 @@ final class DeviceTest extends TestCase
             ['iPlay50 Pro', 'alldocube=alldocube iplay 50 pro'],
             ['iPlay_50S', 'alldocube=alldocube iplay 50s'],
             ['iPlay_50', 'alldocube=alldocube iplay 50'],
+            ['iPlay50', 'alldocube=alldocube iplay 50'],
             ['iPlay_30', 'alldocube=alldocube iplay 30'],
             ['iPlay20S', 'alldocube=alldocube iplay 20s'],
             ['iPlay_20P', 'alldocube=alldocube iplay 20p'],
@@ -4126,6 +4128,8 @@ final class DeviceTest extends TestCase
             ['HD65_PLUS', 'vortex=vortex hd65 plus'],
             ['HD65', 'vortex=vortex hd65'],
             ['ZG65', 'vortex=vortex zg65'],
+            ['ZTAB10', 'vortex=vortex z tab 10'],
+            ['BTAB10', 'vortex=vortex b tab 10'],
             // spc
             ['GRAVITY_3_SE', 'spc=spc gravity 3 se'],
             ['GRAVITY_3_MINI', 'spc=spc gravity 3 mini'],
@@ -4976,8 +4980,11 @@ final class DeviceTest extends TestCase
             ['Edge TA3E1M01', 'digma=digma ta3e1m01'],
             ['HIT 16 HS1002PL', 'digma=digma hs1002pl'],
             ['PRIME 18 MS1001PL', 'digma=digma ms1001pl'],
+            ['Digma Pro PRIME 18 MS1001PL', 'digma=digma ms1001pl'],
             ['PRIME 18 MS1002PL', 'digma=digma ms1002pl'],
+            ['Digma Pro PRIME 18 MS1002PL', 'digma=digma ms1002pl'],
             ['PRIME 18 MS1003PL', 'digma=digma ms1003pl'],
+            ['Digma Pro PRIME 18 MS1003PL', 'digma=digma ms1003pl'],
             ['K10 DA1C0P01', 'digma=digma da1c0p01'],
             ['Optima 8430E 4G DA1C8P01', 'digma=digma da1c8p01'],
             ['Quantum TA2D5P01', 'digma=digma ta2d5p01'],
@@ -4994,6 +5001,8 @@ final class DeviceTest extends TestCase
             ['Eclipse TA3E1P02', 'digma=digma ta3e1p02'],
             ['Edge TA3D1M01', 'digma=digma ta3d1m01'],
             ['Infinity TA3E0M01', 'digma=digma ta3e0m01'],
+            ['Digma Pro HIT 104 HS1005PL', 'digma=digma hs1005pl'],
+            ['digma pro hit 14 hs1006pl', 'digma=digma hs1006pl'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -5074,6 +5083,8 @@ final class DeviceTest extends TestCase
             ['F101 P', 'fossi-bot=fossi-bot f101 p'],
             ['F109', 'fossi-bot=fossi-bot f109'],
             ['F106 Pro', 'fossi-bot=fossi-bot f106 pro'],
+            ['DT1', 'fossi-bot=fossi-bot dt1'],
+            ['DT2', 'fossi-bot=fossi-bot dt2'],
             // hoozo
             ['F13_EEA', 'hoozo=hoozo f13_eea'],
             // sigma-mobile
@@ -5114,6 +5125,7 @@ final class DeviceTest extends TestCase
             ['MobileMapper60_2', 'trimble=trimble mobilemapper 60'],
             // lville
             ['TPC1013_EEA', 'lville=lville tpc1013_eea'],
+            ['TPC1013', 'lville=lville tpc1013'],
             // olax
             ['Ocean K10', 'olax=olax ocean k10'],
             ['Ocean K8', 'olax=olax ocean k8'],
@@ -5182,6 +5194,15 @@ final class DeviceTest extends TestCase
             ['Armor I1 Slim', 'kenshi=kenshi armor i1 slim'],
             ['Armor_C1w', 'kenshi=kenshi armor c1w'],
             ['Armor P1s', 'kenshi=kenshi armor p1s'],
+            ['E11', 'kenshi=kenshi e11'],
+            ['E12', 'kenshi=kenshi e12'],
+            ['E17', 'kenshi=kenshi e17'],
+            ['E18', 'kenshi=kenshi e18'],
+            ['E28', 'kenshi=kenshi e28'],
+            ['H38', 'kenshi=kenshi h38'],
+            ['H21', 'kenshi=kenshi h21'],
+            ['H19', 'kenshi=kenshi h19'],
+            ['H11', 'kenshi=kenshi h11'],
             // wish-tel
             ['T801', 'wish-tel=wish-tel t801'],
             ['T803', 'wish-tel=wish-tel t803'],
