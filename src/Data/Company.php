@@ -213,6 +213,26 @@ enum Company: string implements CompanyInterface
 
     case ihunt = 'iHunt';
 
+    case emporia = 'Emporia';
+
+    case microera = 'MicroEra';
+
+    case villaon = 'Villaon';
+
+    case zebra = 'Zebra';
+
+    case sonim = 'Sonim';
+
+    case xsmart = 'XSmart';
+
+    case moondrop = 'Moondrop';
+
+    case maxwest = 'Maxwest';
+
+    case fplus = 'F+';
+
+    case energizer = 'Energizer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -318,6 +338,16 @@ enum Company: string implements CompanyInterface
             'xb' => self::xb,
             'ziovo' => self::ziovo,
             'ihunt' => self::ihunt,
+            'emporia', 'emporia telecom gmbh & co. kg' => self::emporia,
+            'microera' => self::microera,
+            'villaon' => self::villaon,
+            'zebra', 'zebra technologies corp.' => self::zebra,
+            'sonim' => self::sonim,
+            'xsmart', 'x-smart' => self::xsmart,
+            'moondrop', 'chengdu shuiyueyu technology co., ltd.' => self::moondrop,
+            'maxwest' => self::maxwest,
+            'fplus', 'f+', 'f-plus' => self::fplus,
+            'energizer' => self::energizer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -351,6 +381,9 @@ enum Company: string implements CompanyInterface
             self::itech => 'ITECH SLU',
             self::jambo => 'JamboTechnology Hakuna Matata Chill Limited',
             self::bigben => 'Bigben Interactive',
+            self::emporia => 'Emporia Telecom GmbH & Co. KG',
+            self::zebra => 'Zebra Technologies Corp.',
+            self::moondrop => 'Chengdu Shuiyueyu Technology Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -383,6 +416,8 @@ enum Company: string implements CompanyInterface
             self::opelmobile => 'opel-mobile',
             self::okapimobile => 'okapi-mobile',
             self::topdevice => 'top-device',
+            self::xsmart => 'x-smart',
+            self::fplus => 'f-plus',
             default => $this->name,
         };
     }

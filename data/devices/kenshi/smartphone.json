@@ -110,5 +110,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "kenshi armor c1w": {
+    "deviceName": "Armor C1w",
+    "marketingName": "Armor C1w",
+    "manufacturer": "kenshi",
+    "brand": "kenshi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "kenshi armor p1s": {
+    "deviceName": "Armor P1s",
+    "marketingName": "Armor P1s",
+    "manufacturer": "kenshi",
+    "brand": "kenshi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

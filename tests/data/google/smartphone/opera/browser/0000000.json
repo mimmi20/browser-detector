@@ -94,7 +94,7 @@
       "manufacturer": "google",
       "brand": "google",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
         "width": 2880,
         "height": 1440,
@@ -178,7 +178,7 @@
       "manufacturer": "google",
       "brand": "google",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
         "width": 2220,
         "height": 1080,
@@ -1256,6 +1256,48 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.50",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; G020H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Mobile Safari/537.36 OPR/104.0.4941.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "G020H",
+      "marketingName": "Pixel 3a",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2220,
+        "height": 1080,
+        "touch": true,
+        "size": 5.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "104.0.4941.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "117.0.5938.132",
       "manufacturer": "google"
     }
   },

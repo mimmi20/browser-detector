@@ -493,6 +493,7 @@ final class XRequestedWithTest extends TestCase
             ['com.fsecure.ms.teliasweden', true, 'telia-trygg', true, null],
             ['com.gener8ads.wallet', true, 'gener8-browser', true, null],
             ['com.jambo', true, 'jambo', true, null],
+            ['no.wifi.offline.games.puzzle.games', true, 'offline all in one', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }

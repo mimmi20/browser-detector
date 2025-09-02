@@ -657,6 +657,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'iHunt',
                 'key' => 'ihunt',
             ],
+            [
+                'type' => 'Emporia',
+                'name' => 'Emporia Telecom GmbH & Co. KG',
+                'brandname' => 'Emporia',
+                'key' => 'emporia',
+            ],
+            [
+                'type' => 'MicroEra',
+                'name' => 'MicroEra',
+                'brandname' => 'MicroEra',
+                'key' => 'microera',
+            ],
+            [
+                'type' => 'Zebra',
+                'name' => 'Zebra Technologies Corp.',
+                'brandname' => 'Zebra',
+                'key' => 'zebra',
+            ],
+            [
+                'type' => 'Sonim',
+                'name' => 'Sonim',
+                'brandname' => 'Sonim',
+                'key' => 'sonim',
+            ],
+            [
+                'type' => 'XSmart',
+                'name' => 'XSmart',
+                'brandname' => 'XSmart',
+                'key' => 'x-smart',
+            ],
+            [
+                'type' => 'Moondrop',
+                'name' => 'Chengdu Shuiyueyu Technology Co., Ltd.',
+                'brandname' => 'Moondrop',
+                'key' => 'moondrop',
+            ],
+            [
+                'type' => 'Maxwest',
+                'name' => 'Maxwest',
+                'brandname' => 'Maxwest',
+                'key' => 'maxwest',
+            ],
+            [
+                'type' => 'F+',
+                'name' => 'F+',
+                'brandname' => 'F+',
+                'key' => 'f-plus',
+            ],
+            [
+                'type' => 'Energizer',
+                'name' => 'Energizer',
+                'brandname' => 'Energizer',
+                'key' => 'energizer',
+            ],
         ];
     }
 
@@ -827,6 +881,42 @@ final class CompanyTest extends TestCase
                 'name' => 'Bigben Interactive',
                 'brandname' => 'Bigben',
                 'key' => 'bigben',
+            ],
+            [
+                'fallback' => 'Emporia Telecom GmbH & Co. KG',
+                'name' => 'Emporia Telecom GmbH & Co. KG',
+                'brandname' => 'Emporia',
+                'key' => 'emporia',
+            ],
+            [
+                'fallback' => 'Zebra Technologies Corp.',
+                'name' => 'Zebra Technologies Corp.',
+                'brandname' => 'Zebra',
+                'key' => 'zebra',
+            ],
+            [
+                'fallback' => 'x-smart',
+                'name' => 'XSmart',
+                'brandname' => 'XSmart',
+                'key' => 'x-smart',
+            ],
+            [
+                'fallback' => 'Chengdu Shuiyueyu Technology Co., Ltd.',
+                'name' => 'Chengdu Shuiyueyu Technology Co., Ltd.',
+                'brandname' => 'Moondrop',
+                'key' => 'moondrop',
+            ],
+            [
+                'fallback' => 'f-plus',
+                'name' => 'F+',
+                'brandname' => 'F+',
+                'key' => 'f-plus',
+            ],
+            [
+                'fallback' => 'fplus',
+                'name' => 'F+',
+                'brandname' => 'F+',
+                'key' => 'f-plus',
             ],
         ];
     }

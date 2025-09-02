@@ -127,6 +127,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; T7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.678 YaSearchBrowser/24.61.1 BroPP/1.0 YaSearchApp/24.61.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T7",
+      "marketingName": "T7",
+      "manufacturer": "hotwav",
+      "brand": "hotwav",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.61.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.678",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Hyper 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.2037 YaApp_Android/25.20.1 YaSearchBrowser/25.20.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {

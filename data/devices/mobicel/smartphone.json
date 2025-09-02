@@ -4,8 +4,8 @@
     "marketingName": "Metro",
     "manufacturer": "mobicel",
     "brand": "mobicel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -20,8 +20,8 @@
     "marketingName": "Metro 2",
     "manufacturer": "mobicel",
     "brand": "mobicel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -36,8 +36,8 @@
     "marketingName": "R1",
     "manufacturer": "mobicel",
     "brand": "mobicel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -52,13 +52,77 @@
     "marketingName": "Titan",
     "manufacturer": "mobicel",
     "brand": "mobicel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 480,
       "height": 320,
       "touch": true,
       "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mobicel ix pro": {
+    "deviceName": "IX Pro",
+    "marketingName": "IX Pro",
+    "manufacturer": "mobicel",
+    "brand": "mobicel",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mobicel ix": {
+    "deviceName": "IX",
+    "marketingName": "IX",
+    "manufacturer": "mobicel",
+    "brand": "mobicel",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mobicel ix-1": {
+    "deviceName": "IX-1",
+    "marketingName": "IX-1",
+    "manufacturer": "mobicel",
+    "brand": "mobicel",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mobicel rx pro": {
+    "deviceName": "RX Pro",
+    "marketingName": "RX Pro",
+    "manufacturer": "mobicel",
+    "brand": "mobicel",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 6.6
     },
     "type": "smartphone",
     "platform": "android"
