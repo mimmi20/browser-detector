@@ -2156,6 +2156,7 @@ final class Device implements DeviceInterface
             'juliaqn-l01b' => 'huawei=huawei juliaqn-l01b',
             'juliaqn-l23a' => 'huawei=huawei juliaqn-l23a',
             'rtg-nx9' => 'huawei=huawei rtg-nx9',
+            'rea-an00' => 'huawei=huawei rea-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',

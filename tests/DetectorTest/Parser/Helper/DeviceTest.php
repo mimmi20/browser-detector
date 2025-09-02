@@ -2502,6 +2502,7 @@ final class DeviceTest extends TestCase
             ['JuliaQN-L01B', 'huawei=huawei juliaqn-l01b'],
             ['JuliaQN-L23A', 'huawei=huawei juliaqn-l23a'],
             ['RTG-NX9', 'huawei=huawei rtg-nx9'],
+            ['REA-AN00', 'huawei=huawei rea-an00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
