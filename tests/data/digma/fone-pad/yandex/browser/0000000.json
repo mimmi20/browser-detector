@@ -463,6 +463,216 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro HIT 104 HS1005PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.298 YaBrowser/24.4.0.298.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HS1005PL",
+      "marketingName": "Pro Hit 104 10.1\"",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.4.0.298.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.298",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro HIT 14 HS1006PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.869 YaSearchBrowser/24.42/apad BroPP/1.0 YaSearchApp/24.42/apad webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HS1006PL",
+      "marketingName": "Pro Hit 14 10.4\"",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 10.4
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.42.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.869",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro PRIME 18 MS1003PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.96 YaBrowser/24.4.3.96.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MS1003PL",
+      "marketingName": "Pro Prime 18 11\"",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.4.3.96.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro PRIME 18 MS1002PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.312 YaBrowser/24.4.0.312.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MS1002PL",
+      "marketingName": "Pro Prime 18 11\"",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.4.0.312.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.312",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro PRIME 18 MS1001PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.96 YaBrowser/24.4.3.96.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MS1001PL",
+      "marketingName": "Pro Prime 18 11\"",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.4.3.96.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro HIT 106 HS1007PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.64 YaBrowser/24.9.1.64.01 Safari/537.36"
     },
     "device": {
@@ -1046,132 +1256,6 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.2144",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; PRIME 18 MS1003PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.98 YaBrowser/25.6.3.98.01 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MS1003PL",
-      "marketingName": "Pro Prime 18 11\"",
-      "manufacturer": "digma",
-      "brand": "digma",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 11
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "version": "25.6.3.98.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "136.0.7103.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; PRIME 18 MS1002PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.55 YaBrowser/25.6.6.55.01 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MS1002PL",
-      "marketingName": "Pro Prime 18 11\"",
-      "manufacturer": "digma",
-      "brand": "digma",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 11
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "version": "25.6.6.55.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "136.0.7103.55",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; PRIME 18 MS1001PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.98 YaBrowser/25.6.3.98.01 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MS1001PL",
-      "marketingName": "Pro Prime 18 11\"",
-      "manufacturer": "digma",
-      "brand": "digma",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 11
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "version": "25.6.3.98.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "136.0.7103.98",
       "manufacturer": "google"
     }
   },

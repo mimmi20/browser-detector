@@ -496,6 +496,7 @@ final class Device implements DeviceInterface
             'cph2629' => 'oppo=oppo cph2629',
             'chp2219' => 'oppo=oppo chp2219',
             'a302op' => 'oppo=oppo a302op',
+            'opd2301' => 'oppo=oppo opd2301',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -858,6 +859,7 @@ final class Device implements DeviceInterface
             'm1904f3bg' => 'xiaomi=xiaomi m1904f3bg',
             'm1805e10a' => 'xiaomi=xiaomi m1805e10a',
             'm1803d5xa' => 'xiaomi=xiaomi m1803d5xa',
+            '24018rpacc' => 'xiaomi=xiaomi 24018rpacc',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2390,6 +2392,7 @@ final class Device implements DeviceInterface
             'rmx5062' => 'realme=realme rmx5062',
             'rmx5033' => 'realme=realme rmx5033',
             'realme 7 pro' => 'realme=realme 7 pro',
+            'rmp2204' => 'realme=realme rmp2204',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -2882,6 +2885,9 @@ final class Device implements DeviceInterface
             'v2341' => 'vivo=vivo v2341',
             'v2343' => 'vivo=vivo v2343',
             'v2343a' => 'vivo=vivo v2343a',
+            'pa2373' => 'vivo=vivo pa2373',
+            'ipa2375' => 'vivo=vivo ipa2375',
+            'pa2473' => 'vivo=vivo pa2473',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -3084,6 +3090,8 @@ final class Device implements DeviceInterface
             's punk' => 'doogee=doogee s punk',
             's41t' => 'doogee=doogee s41t',
             's cyber' => 'doogee=doogee s cyber',
+            'r10' => 'doogee=doogee r10',
+            'r20' => 'doogee=doogee r20',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3321,12 +3329,14 @@ final class Device implements DeviceInterface
             't50mini_row' => 'teclast=teclast t50mini_row',
             't65max_eea' => 'teclast=teclast t65max_eea',
             't65max_row' => 'teclast=teclast t65max_row',
+            'p85t_eea' => 'teclast=teclast p85t_eea',
+            'p26t_row' => 'teclast=teclast p26t_row',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
             'iplay_60_lite' => 'alldocube=alldocube iplay 60 lite',
             'iplay_60' => 'alldocube=alldocube iplay 60',
-            'iplay50_mini_pro', 'alldocube iplay50_mini_pro' => 'alldocube=alldocube iplay 50 mini pro',
+            'iplay50_mini_pro', 'alldocube iplay50_mini_pro', 'iplay 50 mini pro' => 'alldocube=alldocube iplay 50 mini pro',
             'iplay50 mini' => 'alldocube=alldocube iplay 50 mini',
             'iplay50_lite' => 'alldocube=alldocube iplay 50 lite',
             'iplay 50 pro', 'iplay50pro', 'iplay50 pro' => 'alldocube=alldocube iplay 50 pro',
@@ -4348,6 +4358,9 @@ final class Device implements DeviceInterface
             'elite a63max' => 'sky=sky elite a63 max',
             'elite t10 pro' => 'sky=sky elite t10 pro',
             'elite g63' => 'sky=sky elite g63',
+            'sky_pad10max', 'sky pad10max' => 'sky=sky pad 10 max',
+            'sky pad8' => 'sky=sky pad 8',
+            'sky pad8pro' => 'sky=sky pad 8 pro',
             // iiif150
             'r2022' => 'iiif150=iiif150 r2022',
             'b2021' => 'iiif150=iiif150 b2021',
@@ -4377,6 +4390,11 @@ final class Device implements DeviceInterface
             'flat 1c' => 'oscal=oscal flat 1c',
             'pilot 1' => 'oscal=oscal pilot 1',
             'pilot 2' => 'oscal=oscal pilot 2',
+            'pad 11' => 'oscal=oscal pad 11',
+            'pad 15' => 'oscal=oscal pad 15',
+            'pad 18' => 'oscal=oscal pad 18',
+            'pad 8' => 'oscal=oscal pad 8',
+            'spider 8' => 'oscal=oscal spider 8',
             // vocal
             'vocal v0core' => 'vocal=vocal v0core',
             'vocal v2 lite' => 'vocal=vocal v2 lite',
@@ -4500,6 +4518,7 @@ final class Device implements DeviceInterface
             'infinity ta3e0m01' => 'digma=digma ta3e0m01',
             'digma pro hit 104 hs1005pl' => 'digma=digma hs1005pl',
             'digma pro hit 14 hs1006pl' => 'digma=digma hs1006pl',
+            'citi 1313c 4g cs1273pl' => 'digma=digma cs1273pl',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -4528,6 +4547,7 @@ final class Device implements DeviceInterface
             'npad x' => 'n-one=n-one npad x',
             'npad x1' => 'n-one=n-one npad x1',
             'tab011' => 'n-one=n-one tab011',
+            'npad y1' => 'n-one=n-one npad y1',
             // atmpc
             'it-801b' => 'atmpc=atmpc it-801b',
             // vios
@@ -4581,6 +4601,7 @@ final class Device implements DeviceInterface
             'f106 pro' => 'fossi-bot=fossi-bot f106 pro',
             'dt1' => 'fossi-bot=fossi-bot dt1',
             'dt2' => 'fossi-bot=fossi-bot dt2',
+            'dt1 lite' => 'fossi-bot=fossi-bot dt1 lite',
             // hoozo
             'f13_eea' => 'hoozo=hoozo f13_eea',
             // sigma-mobile
@@ -4639,6 +4660,7 @@ final class Device implements DeviceInterface
             'yuno' => 'logicom=logicom yuno',
             'le link' => 'logicom=logicom le link',
             'lunar pro' => 'logicom=logicom lunar pro',
+            'tab_stand_pro' => 'logicom=logicom tab stand pro',
             // unitech
             'ea520' => 'unitech=unitech ea520',
             'ea520_us' => 'unitech=unitech ea520_us',
@@ -4698,6 +4720,7 @@ final class Device implements DeviceInterface
             'h21' => 'kenshi=kenshi h21',
             'h19' => 'kenshi=kenshi h19',
             'h11' => 'kenshi=kenshi h11',
+            'e38' => 'kenshi=kenshi e38',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',
@@ -4758,6 +4781,7 @@ final class Device implements DeviceInterface
             'i10_plus' => 'bmax=bmax maxpad i10 plus',
             // jambo
             'jp2' => 'jambo=jambo jp2',
+            'jp1' => 'jambo=jambo jp1',
             // fanvace
             'fanvace m36' => 'fanvace=fanvace m36',
             // rombica
@@ -4769,6 +4793,10 @@ final class Device implements DeviceInterface
             'm10_r04' => 'pritom=pritom m10_r04',
             // pixus
             'pixus_deon' => 'pixus=pixus deon',
+            'pixus_line' => 'pixus=pixus line',
+            'pixus_drive' => 'pixus=pixus drive',
+            'pixus_wing' => 'pixus=pixus wing',
+            'pixus_titan' => 'pixus=pixus titan',
             // tibuta
             'tab_868_pro' => 'tibuta=tibuta tab 868 pro',
             // daria
@@ -4837,6 +4865,7 @@ final class Device implements DeviceInterface
             'p11000 pro' => 'ihunt=ihunt p11000 pro',
             'ihunt titan p15000 ultra' => 'ihunt=ihunt titan p15000 ultra',
             'ihunt_s23_plus' => 'ihunt=ihunt s23 plus',
+            'ihunt s24 xtreme' => 'ihunt=ihunt s24 xtreme',
             // emporia
             'e5mini' => 'emporia=emporia e5 mini',
             // dexp
@@ -4860,6 +4889,7 @@ final class Device implements DeviceInterface
             'md-ph-001' => 'moondrop=moondrop md-ph-001',
             // maxwest
             'mx-a65' => 'maxwest=maxwest mx-a65',
+            'mx-a64' => 'maxwest=maxwest mx-a64',
             // condor
             'gt60 pro' => 'condor=condor gt60 pro',
             'gt60' => 'condor=condor gt60',
@@ -4878,6 +4908,11 @@ final class Device implements DeviceInterface
             'energizer ultimate 65g' => 'energizer=energizer ultimate 65g',
             'energizer power max p550s' => 'energizer=energizer power max p550s',
             'energizer hardcase h570s' => 'energizer=energizer hardcase h570s',
+            'energizer hard case g5' => 'energizer=energizer hardcase g5',
+            'energizer energy s550' => 'energizer=energizer energy s550',
+            // maxcom
+            'ms457' => 'maxcom=maxcom ms457',
+            'ms651' => 'maxcom=maxcom ms651',
             // other
             default => null,
         };
