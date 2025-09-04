@@ -3016,6 +3016,7 @@ final class Device implements DeviceInterface
             'armor mini 20t pro' => 'ulefone=ulefone armor mini 20t pro',
             'armor pad pro' => 'ulefone=ulefone armor pad pro',
             'tab a11 pro' => 'ulefone=ulefone tab a11 pro',
+            'armor pad 2' => 'ulefone=ulefone armor pad 2',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -3286,7 +3287,8 @@ final class Device implements DeviceInterface
             'm40(n9h3)' => 'teclast=teclast n9h3',
             'm50-row' => 'teclast=teclast m50-row',
             't50pro_w_row' => 'teclast=teclast t50 pro',
-            'p40hd_t_eea' => 'teclast=teclast p40hd',
+            'p40hd_t_eea' => 'teclast=teclast p40hd_t_eea',
+            'p40hd_t_row' => 'teclast=teclast p40hd_t_row',
             't60ai_row' => 'teclast=teclast t60ai_row',
             'p50ai_row' => 'teclast=teclast p50ai_row',
             'p50_b' => 'teclast=teclast p50_b',
@@ -3560,6 +3562,7 @@ final class Device implements DeviceInterface
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
             'q3-eea' => 'facetel=facetel q3-eea',
+            'q10-eea' => 'facetel=facetel q10-eea',
             // lectrus
             'lect-tab1011h' => 'lectrus=lectrus lect-tab1011h',
             'lect-tab1011' => 'lectrus=lectrus lect-tab1011',
@@ -4142,6 +4145,8 @@ final class Device implements DeviceInterface
             't607dl' => 'tcl=tcl t607dl',
             't609dl' => 'tcl=tcl t609dl',
             't609spp' => 'tcl=tcl t609spp',
+            '8496g' => 'tcl=tcl 8496g',
+            '8196g' => 'tcl=tcl 8196g',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -4519,6 +4524,7 @@ final class Device implements DeviceInterface
             'digma pro hit 104 hs1005pl' => 'digma=digma hs1005pl',
             'digma pro hit 14 hs1006pl' => 'digma=digma hs1006pl',
             'citi 1313c 4g cs1273pl' => 'digma=digma cs1273pl',
+            'optima 1415d 4g ts1294pl' => 'digma=digma ts1294pl',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -4761,6 +4767,7 @@ final class Device implements DeviceInterface
             'c67' => 'm-horse=mhorse c67',
             // iget
             'smart_w84' => 'iget=iget smart w84',
+            'smart l32' => 'iget=iget smart l32',
             // corn
             'play25_pro_4g' => 'corn=corn play 25 pro',
             'coco10_ultra_4g' => 'corn=corn coco 10 ultra 4g',

@@ -623,8 +623,24 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "teclast p40hd": {
-    "deviceName": "P40HD",
+  "teclast p40hd_t_eea": {
+    "deviceName": "P40HD_T_EEA",
+    "marketingName": "P40HD",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast p40hd_t_row": {
+    "deviceName": "P40HD_T_ROW",
     "marketingName": "P40HD",
     "manufacturer": "teclast",
     "brand": "teclast",

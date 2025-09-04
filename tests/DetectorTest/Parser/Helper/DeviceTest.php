@@ -3373,6 +3373,7 @@ final class DeviceTest extends TestCase
             ['Armor Mini 20T Pro', 'ulefone=ulefone armor mini 20t pro'],
             ['Armor Pad Pro', 'ulefone=ulefone armor pad pro'],
             ['Tab A11 Pro', 'ulefone=ulefone tab a11 pro'],
+            ['Armor Pad 2', 'ulefone=ulefone armor pad 2'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -3657,7 +3658,8 @@ final class DeviceTest extends TestCase
             ['M40(N9H3)', 'teclast=teclast n9h3'],
             ['M50-ROW', 'teclast=teclast m50-row'],
             ['T50Pro_W_ROW', 'teclast=teclast t50 pro'],
-            ['P40HD_T_EEA', 'teclast=teclast p40hd'],
+            ['P40HD_T_EEA', 'teclast=teclast p40hd_t_eea'],
+            ['P40HD_T_ROW', 'teclast=teclast p40hd_t_row'],
             ['T60Ai_ROW', 'teclast=teclast t60ai_row'],
             ['P50Ai_ROW', 'teclast=teclast p50ai_row'],
             ['P50_B', 'teclast=teclast p50_b'],
@@ -3937,6 +3939,7 @@ final class DeviceTest extends TestCase
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
             ['Q3-EEA', 'facetel=facetel q3-eea'],
+            ['Q10-EEA', 'facetel=facetel q10-eea'],
             // lectrus
             ['LECT-TAB1011H', 'lectrus=lectrus lect-tab1011h'],
             ['LECT-TAB1011', 'lectrus=lectrus lect-tab1011'],
@@ -4573,6 +4576,8 @@ final class DeviceTest extends TestCase
             ['T607DL', 'tcl=tcl t607dl'],
             ['T609DL', 'tcl=tcl t609dl'],
             ['T609SPP', 'tcl=tcl t609spp'],
+            ['8496G', 'tcl=tcl 8496g'],
+            ['8196G', 'tcl=tcl 8196g'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -5024,6 +5029,7 @@ final class DeviceTest extends TestCase
             ['Digma Pro HIT 104 HS1005PL', 'digma=digma hs1005pl'],
             ['digma pro hit 14 hs1006pl', 'digma=digma hs1006pl'],
             ['CITI 1313C 4G CS1273PL', 'digma=digma cs1273pl'],
+            ['Optima 1415D 4G TS1294PL', 'digma=digma ts1294pl'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -5270,6 +5276,7 @@ final class DeviceTest extends TestCase
             ['C67', 'm-horse=mhorse c67'],
             // iget
             ['SMART_W84', 'iget=iget smart w84'],
+            ['SMART L32', 'iget=iget smart l32'],
             // corn
             ['Play25_Pro_4G', 'corn=corn play 25 pro'],
             ['Coco10_Ultra_4G', 'corn=corn coco 10 ultra 4g'],

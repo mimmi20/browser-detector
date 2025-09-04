@@ -5,19 +5,19 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Pixus device",
-      "marketingName": "general Pixus device",
+      "deviceName": "Titan",
+      "marketingName": "Titan",
       "manufacturer": "pixus",
       "brand": "pixus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 2000,
+        "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.4
       },
-      "type": "mobile-device",
+      "type": "fone-pad",
       "ismobile": true,
       "istv": false,
       "bits": null

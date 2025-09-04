@@ -1762,5 +1762,47 @@
       "version": "138.0.7204.176",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; REA-NX9 Build/HONORREA-N39; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.143 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/526.1.0.66.75;IABMV/1;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "REA-NX9",
+      "marketingName": "90",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2664,
+        "height": 1200,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "526.1.0.66.75",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "139.0.7258.143",
+      "manufacturer": "google"
+    }
   }
 ]
