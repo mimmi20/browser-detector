@@ -673,6 +673,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Optima 1415D 4G TS1294PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.7.38.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TS1294PL",
+      "marketingName": " Optima 1415D 4G",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "23.1.7.38.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Digma Pro HIT 106 HS1007PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.64 YaBrowser/24.9.1.64.01 Safari/537.36"
     },
     "device": {

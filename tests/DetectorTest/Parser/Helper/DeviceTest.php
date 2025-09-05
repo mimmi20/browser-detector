@@ -886,6 +886,7 @@ final class DeviceTest extends TestCase
             ['M1805E10A', 'xiaomi=xiaomi m1805e10a'],
             ['M1803D5XA', 'xiaomi=xiaomi m1803d5xa'],
             ['24018RPACC', 'xiaomi=xiaomi 24018rpacc'],
+            ['2405CPCFBG', 'xiaomi=xiaomi 2405cpcfbg'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -2087,6 +2088,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-E346B', 'samsung=samsung sm-e346b'],
             ['SM-M446K', 'samsung=samsung sm-m446k'],
             ['SAMSUNG SM-M446K', 'samsung=samsung sm-m446k'],
+            ['SM-X518U', 'samsung=samsung sm-x518u'],
+            ['SAMSUNG SM-X518U', 'samsung=samsung sm-x518u'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -2505,6 +2508,7 @@ final class DeviceTest extends TestCase
             ['JuliaQN-L23A', 'huawei=huawei juliaqn-l23a'],
             ['RTG-NX9', 'huawei=huawei rtg-nx9'],
             ['REA-AN00', 'huawei=huawei rea-an00'],
+            ['HEY2-N09', 'huawei=huawei hey2-n09'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -3331,6 +3335,7 @@ final class DeviceTest extends TestCase
             ['C51', 'oukitel=oukitel c51'],
             ['WP50', 'oukitel=oukitel wp50'],
             ['OT6', 'oukitel=oukitel ot6'],
+            ['OT5 S', 'oukitel=oukitel ot5 s'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -3374,6 +3379,7 @@ final class DeviceTest extends TestCase
             ['Armor Pad Pro', 'ulefone=ulefone armor pad pro'],
             ['Tab A11 Pro', 'ulefone=ulefone tab a11 pro'],
             ['Armor Pad 2', 'ulefone=ulefone armor pad 2'],
+            ['Armor Pad 3 Pro', 'ulefone=ulefone armor pad 3 pro'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -3704,6 +3710,10 @@ final class DeviceTest extends TestCase
             ['T65Max_ROW', 'teclast=teclast t65max_row'],
             ['P85T_EEA', 'teclast=teclast p85t_eea'],
             ['P26T_ROW', 'teclast=teclast p26t_row'],
+            ['T50HD', 'teclast=teclast t50hd'],
+            ['T60', 'teclast=teclast t60'],
+            ['T50Pro_W_EEA', 'teclast=teclast t50pro_w_eea'],
+            ['T50', 'teclast=teclast t50'],
             // alldocube
             ['iPlay_40', 'alldocube=alldocube iplay 40'],
             ['iPlay60_mini_Pro', 'alldocube=alldocube iplay 60 mini pro'],
@@ -3820,6 +3830,8 @@ final class DeviceTest extends TestCase
             ['Tab 16 Pro', 'blackview=blackview tab 16 pro'],
             ['BV7100', 'blackview=blackview bv7100'],
             ['WAVE 6C', 'blackview=blackview wave 6c'],
+            ['Tab 60 Kids', 'blackview=blackview tab 60 kids'],
+            ['Tab 50 Kids', 'blackview=blackview tab 50 kids'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -4171,6 +4183,8 @@ final class DeviceTest extends TestCase
             ['100135924', 'onn=onn 100135924'],
             ['100146660', 'onn=onn 100146660'],
             ['100146663', 'onn=onn 100146663'],
+            ['100110603', 'onn=onn 100110603'],
+            ['100135925', 'onn=onn 100135925'],
             // archos
             ['Archos 101c Platinum', 'archos=archos 101c platinum'],
             ['Archos 101b Xenon v2', 'archos=archos 101b xenon v2'],
@@ -5030,6 +5044,15 @@ final class DeviceTest extends TestCase
             ['digma pro hit 14 hs1006pl', 'digma=digma hs1006pl'],
             ['CITI 1313C 4G CS1273PL', 'digma=digma cs1273pl'],
             ['Optima 1415D 4G TS1294PL', 'digma=digma ts1294pl'],
+            ['HIT 16 HS1003PL', 'digma=digma hs1003pl'],
+            ['HIT 16 HS1001PL', 'digma=digma hs1001pl'],
+            ['Digma Pro STAR 14 AS8001PL', 'digma=digma as8001pl'],
+            ['Digma Pro HIT 104 HS1008PL', 'digma=digma hs1008pl'],
+            ['CITI 1421D 4G CS1274PL', 'digma=digma cs1274pl'],
+            ['CITI 1314C 4G CS1275PL', 'digma=digma cs1275pl'],
+            ['HIT 18 HS1012PL', 'digma=digma hs1012pl'],
+            ['HIT 18 HS1011PL', 'digma=digma hs1011pl'],
+            ['HIT 18 HS1010PL', 'digma=digma hs1010pl'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -5142,6 +5165,7 @@ final class DeviceTest extends TestCase
             ['TEO8M', 'thomson=thomson teo8m'],
             ['TEO10M', 'thomson=thomson teo10m'],
             ['Origin_679_Pro', 'thomson=thomson origin 679 pro'],
+            ['TEOX10-MT8SL128LTE', 'thomson=thomson teox10'],
             // hi-grace
             ['OC101', 'hi-grace=hi-grace oc101'],
             // green-lion
@@ -5173,6 +5197,7 @@ final class DeviceTest extends TestCase
             ['Le Link', 'logicom=logicom le link'],
             ['Lunar Pro', 'logicom=logicom lunar pro'],
             ['Tab_Stand_Pro', 'logicom=logicom tab stand pro'],
+            ['TAB76', 'logicom=logicom tab76'],
             // unitech
             ['EA520', 'unitech=unitech ea520'],
             ['EA520_US', 'unitech=unitech ea520_us'],
@@ -5277,6 +5302,9 @@ final class DeviceTest extends TestCase
             // iget
             ['SMART_W84', 'iget=iget smart w84'],
             ['SMART L32', 'iget=iget smart l32'],
+            ['SMART L11', 'iget=iget smart l11'],
+            ['SMART L31', 'iget=iget smart l31'],
+            ['SMART W32', 'iget=iget smart w32'],
             // corn
             ['Play25_Pro_4G', 'corn=corn play 25 pro'],
             ['Coco10_Ultra_4G', 'corn=corn coco 10 ultra 4g'],
@@ -5291,6 +5319,9 @@ final class DeviceTest extends TestCase
             ['FLOW 10', 'kruger-matz=kruger-matz flow 10'],
             ['FLOW 11', 'kruger-matz=kruger-matz flow 11'],
             ['Drive 10', 'kruger-matz=kruger-matz drive 10'],
+            ['Eagle_807', 'kruger-matz=kruger-matz eagle_807'],
+            ['Eagle_1074', 'kruger-matz=kruger-matz eagle_1074'],
+            ['Eagle_1076', 'kruger-matz=kruger-matz eagle_1076'],
             // rungee
             ['RunGee x9', 'rungee=rungee x9'],
             // bmax
@@ -5313,6 +5344,7 @@ final class DeviceTest extends TestCase
             ['Pixus_Drive', 'pixus=pixus drive'],
             ['Pixus_Wing', 'pixus=pixus wing'],
             ['Pixus_Titan', 'pixus=pixus titan'],
+            ['Pixus_Folio', 'pixus=pixus folio'],
             // tibuta
             ['TAB_868_PRO', 'tibuta=tibuta tab 868 pro'],
             // daria
@@ -5429,6 +5461,8 @@ final class DeviceTest extends TestCase
             // maxcom
             ['MS457', 'maxcom=maxcom ms457'],
             ['MS651', 'maxcom=maxcom ms651'],
+            // majestic
+            ['TAB_918_PRO_4G', 'majestic=majestic tab 918 pro 4g'],
             // other
             ['Model"', null],
             [': "', null],

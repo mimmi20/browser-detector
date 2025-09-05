@@ -860,6 +860,7 @@ final class Device implements DeviceInterface
             'm1805e10a' => 'xiaomi=xiaomi m1805e10a',
             'm1803d5xa' => 'xiaomi=xiaomi m1803d5xa',
             '24018rpacc' => 'xiaomi=xiaomi 24018rpacc',
+            '2405cpcfbg' => 'xiaomi=xiaomi 2405cpcfbg',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1743,6 +1744,7 @@ final class Device implements DeviceInterface
             'sm-e156b', 'samsung sm-e156b' => 'samsung=samsung sm-e156b',
             'sm-e346b', 'samsung sm-e346b' => 'samsung=samsung sm-e346b',
             'sm-m446k', 'samsung sm-m446k' => 'samsung=samsung sm-m446k',
+            'sm-x518u', 'samsung sm-x518u' => 'samsung=samsung sm-x518u',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2159,6 +2161,7 @@ final class Device implements DeviceInterface
             'juliaqn-l23a' => 'huawei=huawei juliaqn-l23a',
             'rtg-nx9' => 'huawei=huawei rtg-nx9',
             'rea-an00' => 'huawei=huawei rea-an00',
+            'hey2-n09' => 'huawei=huawei hey2-n09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2974,6 +2977,7 @@ final class Device implements DeviceInterface
             'c51' => 'oukitel=oukitel c51',
             'wp50' => 'oukitel=oukitel wp50',
             'ot6' => 'oukitel=oukitel ot6',
+            'ot5 s' => 'oukitel=oukitel ot5 s',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -3017,6 +3021,7 @@ final class Device implements DeviceInterface
             'armor pad pro' => 'ulefone=ulefone armor pad pro',
             'tab a11 pro' => 'ulefone=ulefone tab a11 pro',
             'armor pad 2' => 'ulefone=ulefone armor pad 2',
+            'armor pad 3 pro' => 'ulefone=ulefone armor pad 3 pro',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -3333,6 +3338,10 @@ final class Device implements DeviceInterface
             't65max_row' => 'teclast=teclast t65max_row',
             'p85t_eea' => 'teclast=teclast p85t_eea',
             'p26t_row' => 'teclast=teclast p26t_row',
+            't50hd' => 'teclast=teclast t50hd',
+            't60' => 'teclast=teclast t60',
+            't50pro_w_eea' => 'teclast=teclast t50pro_w_eea',
+            't50' => 'teclast=teclast t50',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
@@ -3443,6 +3452,8 @@ final class Device implements DeviceInterface
             'tab 16 pro' => 'blackview=blackview tab 16 pro',
             'bv7100' => 'blackview=blackview bv7100',
             'wave 6c' => 'blackview=blackview wave 6c',
+            'tab 60 kids' => 'blackview=blackview tab 60 kids',
+            'tab 50 kids' => 'blackview=blackview tab 50 kids',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -3793,6 +3804,8 @@ final class Device implements DeviceInterface
             '100135924' => 'onn=onn 100135924',
             '100146660' => 'onn=onn 100146660',
             '100146663' => 'onn=onn 100146663',
+            '100110603' => 'onn=onn 100110603',
+            '100135925' => 'onn=onn 100135925',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
@@ -4525,6 +4538,15 @@ final class Device implements DeviceInterface
             'digma pro hit 14 hs1006pl' => 'digma=digma hs1006pl',
             'citi 1313c 4g cs1273pl' => 'digma=digma cs1273pl',
             'optima 1415d 4g ts1294pl' => 'digma=digma ts1294pl',
+            'hit 16 hs1003pl' => 'digma=digma hs1003pl',
+            'hit 16 hs1001pl' => 'digma=digma hs1001pl',
+            'digma pro star 14 as8001pl' => 'digma=digma as8001pl',
+            'digma pro hit 104 hs1008pl' => 'digma=digma hs1008pl',
+            'citi 1421d 4g cs1274pl' => 'digma=digma cs1274pl',
+            'citi 1314c 4g cs1275pl' => 'digma=digma cs1275pl',
+            'hit 18 hs1012pl' => 'digma=digma hs1012pl',
+            'hit 18 hs1011pl' => 'digma=digma hs1011pl',
+            'hit 18 hs1010pl' => 'digma=digma hs1010pl',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -4636,6 +4658,7 @@ final class Device implements DeviceInterface
             'teo8m' => 'thomson=thomson teo8m',
             'teo10m' => 'thomson=thomson teo10m',
             'origin_679_pro' => 'thomson=thomson origin 679 pro',
+            'teox10-mt8sl128lte' => 'thomson=thomson teox10',
             // hi-grace
             'oc101' => 'hi-grace=hi-grace oc101',
             // green-lion
@@ -4667,6 +4690,7 @@ final class Device implements DeviceInterface
             'le link' => 'logicom=logicom le link',
             'lunar pro' => 'logicom=logicom lunar pro',
             'tab_stand_pro' => 'logicom=logicom tab stand pro',
+            'tab76' => 'logicom=logicom tab76',
             // unitech
             'ea520' => 'unitech=unitech ea520',
             'ea520_us' => 'unitech=unitech ea520_us',
@@ -4768,6 +4792,9 @@ final class Device implements DeviceInterface
             // iget
             'smart_w84' => 'iget=iget smart w84',
             'smart l32' => 'iget=iget smart l32',
+            'smart l11' => 'iget=iget smart l11',
+            'smart l31' => 'iget=iget smart l31',
+            'smart w32' => 'iget=iget smart w32',
             // corn
             'play25_pro_4g' => 'corn=corn play 25 pro',
             'coco10_ultra_4g' => 'corn=corn coco 10 ultra 4g',
@@ -4782,6 +4809,9 @@ final class Device implements DeviceInterface
             'flow 10' => 'kruger-matz=kruger-matz flow 10',
             'flow 11' => 'kruger-matz=kruger-matz flow 11',
             'drive 10' => 'kruger-matz=kruger-matz drive 10',
+            'eagle_807' => 'kruger-matz=kruger-matz eagle_807',
+            'eagle_1074' => 'kruger-matz=kruger-matz eagle_1074',
+            'eagle_1076' => 'kruger-matz=kruger-matz eagle_1076',
             // rungee
             'rungee x9' => 'rungee=rungee x9',
             // bmax
@@ -4804,6 +4834,7 @@ final class Device implements DeviceInterface
             'pixus_drive' => 'pixus=pixus drive',
             'pixus_wing' => 'pixus=pixus wing',
             'pixus_titan' => 'pixus=pixus titan',
+            'pixus_folio' => 'pixus=pixus folio',
             // tibuta
             'tab_868_pro' => 'tibuta=tibuta tab 868 pro',
             // daria
@@ -4920,6 +4951,8 @@ final class Device implements DeviceInterface
             // maxcom
             'ms457' => 'maxcom=maxcom ms457',
             'ms651' => 'maxcom=maxcom ms651',
+            // majestic
+            'tab_918_pro_4g' => 'majestic=majestic tab 918 pro 4g',
             // other
             default => null,
         };
