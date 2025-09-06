@@ -46,5 +46,37 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "iget smart w32": {
+    "deviceName": "Smart W32",
+    "marketingName": "Smart W32",
+    "manufacturer": "iget",
+    "brand": "iget",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "iget smart w31": {
+    "deviceName": "Smart W31",
+    "marketingName": "Smart W31",
+    "manufacturer": "iget",
+    "brand": "iget",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }

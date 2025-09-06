@@ -4,13 +4,29 @@
     "marketingName": "Prestige 10",
     "manufacturer": "visual-land",
     "brand": "visual-land",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
       "touch": true,
       "size": 10
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "visual-land elite 10qh pro": {
+    "deviceName": "Elite 10QH Pro",
+    "marketingName": "Elite 10QH Pro",
+    "manufacturer": "visual-land",
+    "brand": "visual-land",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"

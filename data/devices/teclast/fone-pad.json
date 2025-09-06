@@ -623,8 +623,24 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "teclast p40hd": {
-    "deviceName": "P40HD",
+  "teclast p40hd_t_eea": {
+    "deviceName": "P40HD_T_EEA",
+    "marketingName": "P40HD",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast p40hd_t_row": {
+    "deviceName": "P40HD_T_ROW",
     "marketingName": "P40HD",
     "manufacturer": "teclast",
     "brand": "teclast",
@@ -785,6 +801,22 @@
   },
   "teclast t50hd_eea": {
     "deviceName": "T50HD_EEA",
+    "marketingName": "T50HD",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast t50hd": {
+    "deviceName": "T50HD",
     "marketingName": "T50HD",
     "manufacturer": "teclast",
     "brand": "teclast",
@@ -1195,6 +1227,54 @@
       "height": 1200,
       "touch": true,
       "size": 13
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast t60": {
+    "deviceName": "T60",
+    "marketingName": "T60",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 12
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast t50pro_w_eea": {
+    "deviceName": "T50Pro_W_EEA",
+    "marketingName": "T50 Pro",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "teclast t50": {
+    "deviceName": "T50",
+    "marketingName": "T50",
+    "manufacturer": "teclast",
+    "brand": "teclast",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 11
     },
     "type": "fone-pad",
     "platform": "android"

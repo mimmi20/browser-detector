@@ -4,8 +4,8 @@
     "marketingName": "Tab 411 3G",
     "manufacturer": "majestic",
     "brand": "majestic",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -20,13 +20,29 @@
     "marketingName": "Tab 647 3G",
     "manufacturer": "majestic",
     "brand": "majestic",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
       "touch": true,
       "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "majestic tab 918 pro 4g": {
+    "deviceName": "Tab 918 Pro 4G",
+    "marketingName": "Tab 918 Pro 4G",
+    "manufacturer": "majestic",
+    "brand": "majestic",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
     },
     "type": "fone-pad",
     "platform": "android"

@@ -4,8 +4,8 @@
     "marketingName": "Pad 781",
     "manufacturer": "haier",
     "brand": "haier",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -20,8 +20,8 @@
     "marketingName": "Pad 781 H",
     "manufacturer": "haier",
     "brand": "haier",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -36,8 +36,8 @@
     "marketingName": "Pad 822",
     "manufacturer": "haier",
     "brand": "haier",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -52,8 +52,8 @@
     "marketingName": "Pad 971",
     "manufacturer": "haier",
     "brand": "haier",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -68,8 +68,8 @@
     "marketingName": "Pad D85",
     "manufacturer": "haier",
     "brand": "haier",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -84,8 +84,8 @@
     "marketingName": "Pad Mini",
     "manufacturer": "haier",
     "brand": "haier",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -100,13 +100,29 @@
     "marketingName": "SY0880",
     "manufacturer": "haier",
     "brand": "haier",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
       "touch": true,
       "size": 9.6
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "haier mintaka": {
+    "deviceName": "Mintaka",
+    "marketingName": "Mintaka",
+    "manufacturer": "haier",
+    "brand": "haier",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size":8
     },
     "type": "tablet",
     "platform": "android"

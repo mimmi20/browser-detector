@@ -711,6 +711,78 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Energizer',
                 'key' => 'energizer',
             ],
+            [
+                'type' => 'AYYA',
+                'name' => 'AYYA',
+                'brandname' => 'AYYA',
+                'key' => 'ayya',
+            ],
+            [
+                'type' => 'XREAL',
+                'name' => 'XREAL',
+                'brandname' => 'XREAL',
+                'key' => 'xreal',
+            ],
+            [
+                'type' => 'Wainyok',
+                'name' => 'Wainyok',
+                'brandname' => 'Wainyok',
+                'key' => 'wainyok',
+            ],
+            [
+                'type' => 'Hot Pepper',
+                'name' => 'Hot Pepper Mobile, Inc.',
+                'brandname' => 'Hot Pepper',
+                'key' => 'hot-pepper',
+            ],
+            [
+                'type' => 'EagleSoar',
+                'name' => 'EagleSoar',
+                'brandname' => 'EagleSoar',
+                'key' => 'eagle-soar',
+            ],
+            [
+                'type' => 'Blow Platinum',
+                'name' => 'Blow Platinum',
+                'brandname' => 'Blow Platinum',
+                'key' => 'blow-platinum',
+            ],
+            [
+                'type' => 'Cepter',
+                'name' => 'Cepter',
+                'brandname' => 'Cepter',
+                'key' => 'cepter',
+            ],
+            [
+                'type' => 'Clovertek',
+                'name' => 'Clovertek',
+                'brandname' => 'Clovertek',
+                'key' => 'clovertek',
+            ],
+            [
+                'type' => 'Visual Land',
+                'name' => 'Visual Land',
+                'brandname' => 'Visual Land',
+                'key' => 'visual-land',
+            ],
+            [
+                'type' => 'Padpro',
+                'name' => 'Padpro',
+                'brandname' => 'Padpro',
+                'key' => 'padpro',
+            ],
+            [
+                'type' => 'Inoi',
+                'name' => 'Inoi',
+                'brandname' => 'Inoi',
+                'key' => 'inoi',
+            ],
+            [
+                'type' => 'Jumper',
+                'name' => 'Jumper',
+                'brandname' => 'Jumper',
+                'key' => 'jumper',
+            ],
         ];
     }
 
@@ -917,6 +989,54 @@ final class CompanyTest extends TestCase
                 'name' => 'F+',
                 'brandname' => 'F+',
                 'key' => 'f-plus',
+            ],
+            [
+                'fallback' => 'Hot Pepper Mobile, Inc.',
+                'name' => 'Hot Pepper Mobile, Inc.',
+                'brandname' => 'Hot Pepper',
+                'key' => 'hot-pepper',
+            ],
+            [
+                'fallback' => 'hot-pepper',
+                'name' => 'Hot Pepper Mobile, Inc.',
+                'brandname' => 'Hot Pepper',
+                'key' => 'hot-pepper',
+            ],
+            [
+                'fallback' => 'hotPepper',
+                'name' => 'Hot Pepper Mobile, Inc.',
+                'brandname' => 'Hot Pepper',
+                'key' => 'hot-pepper',
+            ],
+            [
+                'fallback' => 'eagle-soar',
+                'name' => 'EagleSoar',
+                'brandname' => 'EagleSoar',
+                'key' => 'eagle-soar',
+            ],
+            [
+                'fallback' => 'blow-platinum',
+                'name' => 'Blow Platinum',
+                'brandname' => 'Blow Platinum',
+                'key' => 'blow-platinum',
+            ],
+            [
+                'fallback' => 'blowplatinum',
+                'name' => 'Blow Platinum',
+                'brandname' => 'Blow Platinum',
+                'key' => 'blow-platinum',
+            ],
+            [
+                'fallback' => 'visual-land',
+                'name' => 'Visual Land',
+                'brandname' => 'Visual Land',
+                'key' => 'visual-land',
+            ],
+            [
+                'fallback' => 'visualland',
+                'name' => 'Visual Land',
+                'brandname' => 'Visual Land',
+                'key' => 'visual-land',
             ],
         ];
     }

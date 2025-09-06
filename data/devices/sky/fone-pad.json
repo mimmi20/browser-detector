@@ -30,5 +30,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "sky pad 8": {
+    "deviceName": "Pad 8",
+    "marketingName": "Pad 8",
+    "manufacturer": "sky",
+    "brand": "sky",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "sky pad 8 pro": {
+    "deviceName": "Pad 8 Pro",
+    "marketingName": "Pad 8 Pro",
+    "manufacturer": "sky",
+    "brand": "sky",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }
