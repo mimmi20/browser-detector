@@ -370,6 +370,7 @@ final class Device implements DeviceInterface
             'pgz110' => 'oneplus=oneplus pgz110',
             'plc110' => 'oneplus=oneplus plc110',
             'plf110' => 'oneplus=oneplus plf110',
+            'opd2304' => 'oneplus=oneplus opd2304',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -2248,6 +2249,7 @@ final class Device implements DeviceInterface
             'xt2091-8' => 'lenovo=lenovo xt2091-8',
             'xt2091-7' => 'lenovo=lenovo xt2091-7',
             'l71061', 'lenovo l71061' => 'lenovo=lenovo l71061',
+            'lenovo tb-9707f' => 'lenovo=lenovo tb-9707f',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -3098,6 +3100,7 @@ final class Device implements DeviceInterface
             's cyber' => 'doogee=doogee s cyber',
             'r10' => 'doogee=doogee r10',
             'r20' => 'doogee=doogee r20',
+            't20mini kid' => 'doogee=doogee t20 mini kid',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3811,6 +3814,7 @@ final class Device implements DeviceInterface
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
             'archos 50 power' => 'archos=archos 50 power',
             'ac45bhe' => 'archos=archos ac45bhe',
+            'tikeasy 10d' => 'archos=archos tikeasy 10d',
             // land-rover
             'land rover explore' => 'land-rover=land-rover explore',
             // tp-link
@@ -3849,6 +3853,8 @@ final class Device implements DeviceInterface
             'mp38' => 'umi=umi mp38',
             'pr4jbx20a' => 'umi=umi pr4jbx20a',
             'pg2309gba' => 'umi=umi pg2309gba',
+            'mt11' => 'umi=umi mt11',
+            'mt07' => 'umi=umi mt07',
             // bq
             'aquaris x' => 'bq=bq aquaris x',
             'aquaris x5' => 'bq=bq aquaris x5',
@@ -4371,14 +4377,14 @@ final class Device implements DeviceInterface
             'tm-5084' => 'texet=texet tm-5084',
             // sky
             'elite octax' => 'sky=sky elite octax',
-            'sky b63' => 'sky=sky elite b63',
+            'sky_b63', 'sky b63' => 'sky=sky elite b63',
             'elite n55max' => 'sky=sky elite n55 max',
             'elite a63max' => 'sky=sky elite a63 max',
             'elite t10 pro' => 'sky=sky elite t10 pro',
             'elite g63' => 'sky=sky elite g63',
             'sky_pad10max', 'sky pad10max' => 'sky=sky pad 10 max',
-            'sky pad8' => 'sky=sky pad 8',
-            'sky pad8pro' => 'sky=sky pad 8 pro',
+            'sky_pad8', 'sky pad8' => 'sky=sky pad 8',
+            'sky_pad8pro', 'sky pad8pro' => 'sky=sky pad 8 pro',
             // iiif150
             'r2022' => 'iiif150=iiif150 r2022',
             'b2021' => 'iiif150=iiif150 b2021',
@@ -4615,6 +4621,7 @@ final class Device implements DeviceInterface
             'ultra 8 pro' => 'sparx=sparx ultra 8 pro',
             // hot-pepper
             'puya' => 'hot-pepper=hot-pepper puya',
+            'hppl63a' => 'hot-pepper=hot-pepper hppl63a',
             // fenoti
             'fenoti_42fn6000f' => 'fenoti=fenoti 42fn6000f',
             // iotwe
@@ -4795,6 +4802,7 @@ final class Device implements DeviceInterface
             'smart l11' => 'iget=iget smart l11',
             'smart l31' => 'iget=iget smart l31',
             'smart w32' => 'iget=iget smart w32',
+            'smart_w31' => 'iget=iget smart w31',
             // corn
             'play25_pro_4g' => 'corn=corn play 25 pro',
             'coco10_ultra_4g' => 'corn=corn coco 10 ultra 4g',
@@ -4953,6 +4961,34 @@ final class Device implements DeviceInterface
             'ms651' => 'maxcom=maxcom ms651',
             // majestic
             'tab_918_pro_4g' => 'majestic=majestic tab 918 pro 4g',
+            // nec
+            'lavie tab 9qhd1' => 'nec=nec 9qhd1',
+            // haier
+            'mintaka' => 'haier=haier mintaka',
+            // ayya
+            'ayat101' => 'ayya=ayya ayat 101',
+            // xreal
+            'x4000' => 'xreal=xreal x4000',
+            // wainyok
+            'p10x' => 'wainyok=wainyok p10x',
+            // eagle-soar
+            'ee10a' => 'eagle-soar=eagle-soar ee10a',
+            // blow-platinum
+            'platinumtab11_4g' => 'blow-platinum=blow-platinum tab 11 4g',
+            // cepter
+            'ceptertab10l' => 'cepter=cepter tab 10l',
+            // clovertek
+            'clovertek_g12' => 'clovertek=clovertek g12',
+            // visual-land
+            'elite10qhpro' => 'visual-land=visual-land elite 10qh pro',
+            'vl-110' => 'visual-land=visual-land vl-110',
+            // padpro
+            'gt40promax' => 'padpro=padpro gt40 pro max',
+            // inoi
+            'inoipad 128+4gb wi-fi+4g' => 'inoi=inoi pad 4+128',
+            'inoipad pro' => 'inoi=inoi pad pro',
+            // jumper
+            'ezpad m11' => 'jumper=jumper ezpad m11',
             // other
             default => null,
         };

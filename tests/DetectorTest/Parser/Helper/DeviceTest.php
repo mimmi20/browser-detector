@@ -393,6 +393,7 @@ final class DeviceTest extends TestCase
             ['PGZ110', 'oneplus=oneplus pgz110'],
             ['PLC110', 'oneplus=oneplus plc110'],
             ['PLF110', 'oneplus=oneplus plf110'],
+            ['OPD2304', 'oneplus=oneplus opd2304'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -2598,6 +2599,7 @@ final class DeviceTest extends TestCase
             ['XT2091-7', 'lenovo=lenovo xt2091-7'],
             ['L71061', 'lenovo=lenovo l71061'],
             ['Lenovo L71061', 'lenovo=lenovo l71061'],
+            ['Lenovo TB-9707F', 'lenovo=lenovo tb-9707f'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -3458,6 +3460,7 @@ final class DeviceTest extends TestCase
             ['S cyber', 'doogee=doogee s cyber'],
             ['R10', 'doogee=doogee r10'],
             ['R20', 'doogee=doogee r20'],
+            ['T20Mini Kid', 'doogee=doogee t20 mini kid'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -4190,6 +4193,7 @@ final class DeviceTest extends TestCase
             ['Archos 101b Xenon v2', 'archos=archos 101b xenon v2'],
             ['Archos 50 Power', 'archos=archos 50 power'],
             ['AC45BHE', 'archos=archos ac45bhe'],
+            ['Tikeasy 10d', 'archos=archos tikeasy 10d'],
             // land-rover
             ['Land Rover Explore', 'land-rover=land-rover explore'],
             // tp-link
@@ -4228,6 +4232,8 @@ final class DeviceTest extends TestCase
             ['MP38', 'umi=umi mp38'],
             ['PR4JBX20A', 'umi=umi pr4jbx20a'],
             ['PG2309GBA', 'umi=umi pg2309gba'],
+            ['MT11', 'umi=umi mt11'],
+            ['MT07', 'umi=umi mt07'],
             // bq
             ['Aquaris X', 'bq=bq aquaris x'],
             ['Aquaris X5', 'bq=bq aquaris x5'],
@@ -4808,6 +4814,7 @@ final class DeviceTest extends TestCase
             // sky
             ['Elite OctaX', 'sky=sky elite octax'],
             ['SKY B63', 'sky=sky elite b63'],
+            ['SKY_B63', 'sky=sky elite b63'],
             ['Elite N55Max', 'sky=sky elite n55 max'],
             ['Elite A63Max', 'sky=sky elite a63 max'],
             ['Elite T10 PRO', 'sky=sky elite t10 pro'],
@@ -4815,7 +4822,9 @@ final class DeviceTest extends TestCase
             ['SKY PAD10Max', 'sky=sky pad 10 max'],
             ['SKY_PAD10Max', 'sky=sky pad 10 max'],
             ['SKY PAD8', 'sky=sky pad 8'],
+            ['SKY_PAD8', 'sky=sky pad 8'],
             ['SKY PAD8PRO', 'sky=sky pad 8 pro'],
+            ['SKY_PAD8PRO', 'sky=sky pad 8 pro'],
             // iiif150
             ['R2022', 'iiif150=iiif150 r2022'],
             ['B2021', 'iiif150=iiif150 b2021'],
@@ -5122,6 +5131,7 @@ final class DeviceTest extends TestCase
             ['Ultra 8 Pro', 'sparx=sparx ultra 8 pro'],
             // hot-pepper
             ['Puya', 'hot-pepper=hot-pepper puya'],
+            ['HPPL63A', 'hot-pepper=hot-pepper hppl63a'],
             // fenoti
             ['FENOTI_42FN6000F', 'fenoti=fenoti 42fn6000f'],
             // iotwe
@@ -5305,6 +5315,7 @@ final class DeviceTest extends TestCase
             ['SMART L11', 'iget=iget smart l11'],
             ['SMART L31', 'iget=iget smart l31'],
             ['SMART W32', 'iget=iget smart w32'],
+            ['SMART_W31', 'iget=iget smart w31'],
             // corn
             ['Play25_Pro_4G', 'corn=corn play 25 pro'],
             ['Coco10_Ultra_4G', 'corn=corn coco 10 ultra 4g'],
@@ -5463,6 +5474,34 @@ final class DeviceTest extends TestCase
             ['MS651', 'maxcom=maxcom ms651'],
             // majestic
             ['TAB_918_PRO_4G', 'majestic=majestic tab 918 pro 4g'],
+            // nec
+            ['LAVIE Tab 9QHD1', 'nec=nec 9qhd1'],
+            // haier
+            ['MINTAKA', 'haier=haier mintaka'],
+            // ayya
+            ['Ayat101', 'ayya=ayya ayat 101'],
+            // xreal
+            ['X4000', 'xreal=xreal x4000'],
+            // wainyok
+            ['P10X', 'wainyok=wainyok p10x'],
+            // eagle-soar
+            ['EE10A', 'eagle-soar=eagle-soar ee10a'],
+            // blow-platinum
+            ['PlatinumTAB11_4G', 'blow-platinum=blow-platinum tab 11 4g'],
+            // cepter
+            ['CEPTERTAB10L', 'cepter=cepter tab 10l'],
+            // clovertek
+            ['Clovertek_G12', 'clovertek=clovertek g12'],
+            // visual-land
+            ['Elite10QHPro', 'visual-land=visual-land elite 10qh pro'],
+            ['VL-110', 'visual-land=visual-land vl-110'],
+            // padpro
+            ['GT40promax', 'padpro=padpro gt40 pro max'],
+            // inoi
+            ['inoiPad 128+4GB Wi-Fi+4G', 'inoi=inoi pad 4+128'],
+            ['inoiPad Pro', 'inoi=inoi pad pro'],
+            // jumper
+            ['EZpad M11', 'jumper=jumper ezpad m11'],
             // other
             ['Model"', null],
             [': "', null],
