@@ -233,6 +233,30 @@ enum Company: string implements CompanyInterface
 
     case energizer = 'Energizer';
 
+    case ayya = 'AYYA';
+
+    case xreal = 'XREAL';
+
+    case wainyok = 'Wainyok';
+
+    case hotPepper = 'Hot Pepper';
+
+    case eaglesoar = 'EagleSoar';
+
+    case blowPlatinum = 'Blow Platinum';
+
+    case cepter = 'Cepter';
+
+    case clovertek = 'Clovertek';
+
+    case visualLand = 'Visual Land';
+
+    case padpro = 'Padpro';
+
+    case inoi = 'Inoi';
+
+    case jumper = 'Jumper';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -348,6 +372,18 @@ enum Company: string implements CompanyInterface
             'maxwest' => self::maxwest,
             'fplus', 'f+', 'f-plus' => self::fplus,
             'energizer' => self::energizer,
+            'ayya' => self::ayya,
+            'xreal' => self::xreal,
+            'wainyok' => self::wainyok,
+            'hotpepper', 'hot-pepper', 'hot pepper', 'hot pepper mobile, inc.' => self::hotPepper,
+            'eaglesoar', 'eagle-soar' => self::eaglesoar,
+            'blowplatinum', 'blow platinum', 'blow-platinum' => self::blowPlatinum,
+            'cepter' => self::cepter,
+            'clovertek' => self::clovertek,
+            'visualland', 'visual-land', 'visual land' => self::visualLand,
+            'padpro' => self::padpro,
+            'inoi' => self::inoi,
+            'jumper' => self::jumper,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -384,6 +420,7 @@ enum Company: string implements CompanyInterface
             self::emporia => 'Emporia Telecom GmbH & Co. KG',
             self::zebra => 'Zebra Technologies Corp.',
             self::moondrop => 'Chengdu Shuiyueyu Technology Co., Ltd.',
+            self::hotPepper => 'Hot Pepper Mobile, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -418,6 +455,10 @@ enum Company: string implements CompanyInterface
             self::topdevice => 'top-device',
             self::xsmart => 'x-smart',
             self::fplus => 'f-plus',
+            self::hotPepper => 'hot-pepper',
+            self::eaglesoar => 'eagle-soar',
+            self::blowPlatinum => 'blow-platinum',
+            self::visualLand => 'visual-land',
             default => $this->name,
         };
     }

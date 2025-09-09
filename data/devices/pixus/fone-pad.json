@@ -14,5 +14,69 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "pixus line": {
+    "deviceName": "Line",
+    "marketingName": "Line",
+    "manufacturer": "pixus",
+    "brand": "pixus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "pixus wing": {
+    "deviceName": "Wing",
+    "marketingName": "Wing",
+    "manufacturer": "pixus",
+    "brand": "pixus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.36
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "pixus titan": {
+    "deviceName": "Titan",
+    "marketingName": "Titan",
+    "manufacturer": "pixus",
+    "brand": "pixus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "pixus folio": {
+    "deviceName": "Folio",
+    "marketingName": "Folio",
+    "manufacturer": "pixus",
+    "brand": "pixus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }
