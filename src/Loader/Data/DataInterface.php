@@ -24,6 +24,7 @@ interface DataInterface
      * @throws void
      *
      * @phpcs:disable SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint
+     * @phpcs:disable SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint
      */
     public function getItem(string $stringKey);
 }
