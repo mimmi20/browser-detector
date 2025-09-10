@@ -22,7 +22,7 @@ jobs:
         run: "sudo apt-get install libimagequant-dev -y"
 
       - name: "Use Node.js 22.4"
-        uses: "actions/setup-node@v4"
+        uses: "actions/setup-node@v5"
         with:
           node-version: "22.4"
 
