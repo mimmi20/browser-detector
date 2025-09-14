@@ -16,7 +16,6 @@ namespace BrowserDetector\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
 use UnexpectedValueException;
-use ValueError;
 
 use function preg_match;
 use function version_compare;

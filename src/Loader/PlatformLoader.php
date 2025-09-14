@@ -25,7 +25,6 @@ use UaResult\Company\Company;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
-use ValueError;
 
 use function version_compare;
 
