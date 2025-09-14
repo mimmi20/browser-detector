@@ -55,12 +55,8 @@ final readonly class MicrosoftInternetExplorer implements VersionFactoryInterfac
 
         if ($version instanceof VersionInterface && $version->getMajor() !== null) {
             foreach (self::VERSIONS as $engineVersion => $ieVersion) {
-                try {
-                    if (!version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
-                        continue;
-                    }
-                } catch (ValueError) {
-                    // do nothing
+                if (!version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
+                    continue;
                 }
 
                 try {

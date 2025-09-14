@@ -99,7 +99,7 @@ final class PlatformLoader implements PlatformLoaderInterface
                     $marketingName = 'iPhone OS';
                 }
             }
-        } catch (UnexpectedValueException | ValueError $e) {
+        } catch (UnexpectedValueException $e) {
             $this->logger->info($e);
         }
 

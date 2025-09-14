@@ -53,12 +53,8 @@ final readonly class FirefoxOs implements VersionFactoryInterface
         }
 
         foreach (self::SEARCHES as $engineVersion => $osVersion) {
-            try {
-                if (!version_compare($matches['version'], $engineVersion, '>=')) {
-                    continue;
-                }
-            } catch (ValueError) {
-                // do nothing
+            if (!version_compare($matches['version'], $engineVersion, '>=')) {
+                continue;
             }
 
             try {
