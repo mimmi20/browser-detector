@@ -16,6 +16,7 @@ namespace BrowserDetector\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
 use UnexpectedValueException;
+use ValueError;
 
 use function preg_match;
 use function version_compare;
@@ -54,8 +55,12 @@ final readonly class MicrosoftInternetExplorer implements VersionFactoryInterfac
 
         if ($version instanceof VersionInterface && $version->getMajor() !== null) {
             foreach (self::VERSIONS as $engineVersion => $ieVersion) {
-                if (!version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
-                    continue;
+                try {
+                    if (!version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
+                        continue;
+                    }
+                } catch (ValueError) {
+                    // do nothing
                 }
 
                 try {

@@ -122,14 +122,14 @@ final class ErrorVersionCreator implements VersionBuilderInterface
 
             /** @throws void */
             #[Override]
-            public function isAlpha(): bool | null
+            public function isAlpha(): bool
             {
                 return false;
             }
 
             /** @throws void */
             #[Override]
-            public function isBeta(): bool | null
+            public function isBeta(): bool
             {
                 return false;
             }

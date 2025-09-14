@@ -22,6 +22,8 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaParser\DeviceParserInterface;
 use UaRequest\Header\DeviceCodeOnlyHeader;
+use UaResult\Bits\Bits;
+use UaResult\Device\Architecture;
 
 use function preg_match;
 use function sprintf;
@@ -34,6 +36,8 @@ final class FlyFlowHeaderTest extends TestCase
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider('providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo, string $deviceCode): void
@@ -71,7 +75,8 @@ final class FlyFlowHeaderTest extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -79,7 +84,8 @@ final class FlyFlowHeaderTest extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

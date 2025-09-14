@@ -161,13 +161,16 @@ final class Detector3Test extends TestCase
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,

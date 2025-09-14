@@ -42,8 +42,10 @@ use UaParser\DeviceParserInterface;
 use UaParser\EngineParserInterface;
 use UaParser\PlatformParserInterface;
 use UaRequest\Header\FullHeader;
+use UaResult\Bits\Bits;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
+use UaResult\Device\Architecture;
 use UaResult\Engine\Engine;
 use UaResult\Os\Os;
 use UnexpectedValueException;
@@ -130,6 +132,7 @@ final class Useragent9Test extends TestCase
                     marketingName: null,
                     manufacturer: new Company(type: '', name: null, brandname: null),
                     version: new NullVersion(),
+                    bits: Bits::unknown,
                 ),
             );
 
@@ -201,7 +204,8 @@ final class Useragent9Test extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -209,7 +213,8 @@ final class Useragent9Test extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -345,6 +350,7 @@ final class Useragent9Test extends TestCase
                     marketingName: null,
                     manufacturer: new Company(type: '', name: null, brandname: null),
                     version: new Version('1', '0', '2'),
+                    bits: Bits::unknown,
                 ),
             );
 
@@ -417,7 +423,8 @@ final class Useragent9Test extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -425,7 +432,8 @@ final class Useragent9Test extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -571,6 +579,7 @@ final class Useragent9Test extends TestCase
                     marketingName: null,
                     manufacturer: new Company(type: '', name: null, brandname: null),
                     version: new Version('1', '0', '2'),
+                    bits: Bits::unknown,
                 ),
             );
 
@@ -650,7 +659,8 @@ final class Useragent9Test extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -658,7 +668,8 @@ final class Useragent9Test extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -793,6 +804,7 @@ final class Useragent9Test extends TestCase
                     marketingName: null,
                     manufacturer: new Company(type: '', name: null, brandname: null),
                     version: new NullVersion(),
+                    bits: Bits::unknown,
                 ),
             );
 
@@ -870,7 +882,8 @@ final class Useragent9Test extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -878,7 +891,8 @@ final class Useragent9Test extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

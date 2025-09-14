@@ -35,8 +35,10 @@ use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
+use UaResult\Bits\Bits;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
+use UaResult\Device\Architecture;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
 use UaResult\Engine\Engine;
@@ -172,13 +174,16 @@ final readonly class Detector implements DetectorInterface
             engineCodenameFromClient: $clientData->getEngine(),
         );
 
+        $architecture = $this->getDeviceArchitecture($filteredHeaders);
+        $deviceBits   = $this->getDeviceBitness($filteredHeaders);
+
         return [
             'headers' => array_map(
                 callback: static fn (HeaderInterface $header): string => $header->getValue(),
                 array: $request->getHeaders(),
             ),
             'device' => [
-                'architecture' => $this->getDeviceArchitecture($filteredHeaders),
+                'architecture' => $architecture === Architecture::unknown ? null : $architecture->value,
                 'deviceName' => $device->getDeviceName(),
                 'marketingName' => $device->getMarketingName(),
                 'manufacturer' => $device->getManufacturer()->getType(),
@@ -189,20 +194,23 @@ final readonly class Detector implements DetectorInterface
                 'type' => $device->getType()->getType(),
                 'ismobile' => $deviceIsMobile ?? $device->getType()->isMobile(),
                 'istv' => $device->getType()->isTv(),
-                'bits' => $this->getDeviceBitness($filteredHeaders),
+                'bits' => $deviceBits === Bits::unknown ? null : $deviceBits->value,
             ],
             'os' => [
                 'name' => $platformName,
                 'marketingName' => $platformMarketingName,
                 'version' => $platform->getVersion()->getVersion(),
                 'manufacturer' => $platform->getManufacturer()->getType(),
+                'bits' => $deviceBits === Bits::unknown ? null : $deviceBits->value,
             ],
             'client' => [
                 'name' => $client->getName(),
+                'modus' => null,
                 'version' => $client->getVersion()->getVersion(),
                 'manufacturer' => $client->getManufacturer()->getType(),
                 'type' => $client->getType()->getType(),
                 'isbot' => $client->getType()->isBot(),
+                'bits' => null,
             ],
             'engine' => [
                 'name' => $engine->getName(),
@@ -225,7 +233,7 @@ final readonly class Detector implements DetectorInterface
      *
      * @throws void
      */
-    private function getDeviceArchitecture(array $filteredHeaders): string | null
+    private function getDeviceArchitecture(array $filteredHeaders): Architecture
     {
         $headersWithDeviceArchitecture = array_filter(
             $filteredHeaders,
@@ -238,7 +246,7 @@ final readonly class Detector implements DetectorInterface
             return $deviceArchitectureHeader->getDeviceArchitecture();
         }
 
-        return null;
+        return Architecture::unknown;
     }
 
     /**
@@ -246,7 +254,7 @@ final readonly class Detector implements DetectorInterface
      *
      * @throws void
      */
-    private function getDeviceBitness(array $filteredHeaders): int | null
+    private function getDeviceBitness(array $filteredHeaders): Bits
     {
         $headersWithDeviceBitness = array_filter(
             $filteredHeaders,
@@ -259,7 +267,7 @@ final readonly class Detector implements DetectorInterface
             return $deviceBitnessHeader->getDeviceBitness();
         }
 
-        return null;
+        return Bits::unknown;
     }
 
     /**
@@ -446,7 +454,7 @@ final readonly class Detector implements DetectorInterface
                 manufacturer: new Company(type: 'unknown', name: null, brandname: null),
                 version: $clientVersion,
                 type: \UaBrowserType\Type::Unknown,
-                bits: null,
+                bits: Bits::unknown,
                 modus: null,
             ),
             engine: null,
@@ -564,6 +572,7 @@ final readonly class Detector implements DetectorInterface
             marketingName: null,
             manufacturer: new Company(type: 'unknown', name: null, brandname: null),
             version: $platformVersion ?? new NullVersion(),
+            bits: Bits::unknown,
         );
     }
 
@@ -608,6 +617,7 @@ final readonly class Detector implements DetectorInterface
 
         return new DeviceData(
             device: new Device(
+                architecture: Architecture::unknown,
                 deviceName: null,
                 marketingName: null,
                 manufacturer: new Company(type: 'unknown', name: null, brandname: null),
@@ -616,6 +626,7 @@ final readonly class Detector implements DetectorInterface
                 display: new Display(width: null, height: null, touch: null, size: null),
                 dualOrientation: null,
                 simCount: null,
+                bits: Bits::unknown,
             ),
             os: null,
         );

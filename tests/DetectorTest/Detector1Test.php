@@ -29,6 +29,8 @@ use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
+use UaResult\Bits\Bits;
+use UaResult\Device\Architecture;
 use UnexpectedValueException;
 
 #[CoversClass(Detector::class)]
@@ -333,13 +335,16 @@ final class Detector1Test extends TestCase
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -455,7 +460,7 @@ final class Detector1Test extends TestCase
         $hash    = 'test-hash';
         $headers = ['xyz' => 'abc'];
 
-        $architecture = 'x86';
+        $architecture = Architecture::x86;
 
         $header = $this->createMock(HeaderInterface::class);
         $header
@@ -542,7 +547,7 @@ final class Detector1Test extends TestCase
         $expected = [
             'headers' => $headers,
             'device' => [
-                'architecture' => $architecture,
+                'architecture' => $architecture->value,
                 'deviceName' => null,
                 'marketingName' => null,
                 'manufacturer' => 'unknown',
@@ -565,13 +570,16 @@ final class Detector1Test extends TestCase
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -686,7 +694,7 @@ final class Detector1Test extends TestCase
     {
         $hash    = 'test-hash';
         $headers = ['xyz' => 'abc'];
-        $bits    = 64;
+        $bits    = Bits::sixtyfour;
 
         $header = $this->createMock(HeaderInterface::class);
         $header
@@ -789,20 +797,23 @@ final class Detector1Test extends TestCase
                 'type' => 'unknown',
                 'ismobile' => false,
                 'istv' => false,
-                'bits' => $bits,
+                'bits' => $bits->value,
             ],
             'os' => [
                 'name' => null,
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => $bits->value,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -1026,13 +1037,16 @@ final class Detector1Test extends TestCase
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,

@@ -86,6 +86,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
         }
 
         return new Device(
+            architecture: $data->getArchitecture(),
             deviceName: $data->getDeviceName(),
             marketingName: $data->getMarketingName(),
             manufacturer: $manufacturer,
@@ -99,6 +100,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             ),
             dualOrientation: $data->getDualOrientation(),
             simCount: $data->getSimCount(),
+            bits: $data->getBits(),
         );
     }
 }

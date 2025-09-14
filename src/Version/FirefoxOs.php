@@ -15,6 +15,7 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
+use ValueError;
 
 use function preg_match;
 use function version_compare;
@@ -52,8 +53,12 @@ final readonly class FirefoxOs implements VersionFactoryInterface
         }
 
         foreach (self::SEARCHES as $engineVersion => $osVersion) {
-            if (!version_compare($matches['version'], $engineVersion, '>=')) {
-                continue;
+            try {
+                if (!version_compare($matches['version'], $engineVersion, '>=')) {
+                    continue;
+                }
+            } catch (ValueError) {
+                // do nothing
             }
 
             try {

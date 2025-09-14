@@ -29,6 +29,8 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaParser\DeviceParserInterface;
 use UaRequest\Header\FullHeader;
+use UaResult\Bits\Bits;
+use UaResult\Device\Architecture;
 
 use function preg_match;
 use function sprintf;
@@ -117,7 +119,8 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -125,7 +128,8 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -344,7 +348,8 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -352,7 +357,8 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

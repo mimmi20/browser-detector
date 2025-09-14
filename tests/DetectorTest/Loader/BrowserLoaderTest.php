@@ -32,6 +32,7 @@ use ReflectionException;
 use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
+use UaResult\Bits\Bits;
 use UnexpectedValueException;
 
 #[CoversClass(BrowserLoader::class)]
@@ -407,7 +408,7 @@ final class BrowserLoaderTest extends TestCase
             'modus' => null,
             'version' => '1.11.111.1111.11111',
             'manufacturer' => 'unknown',
-            'bits' => null,
+            'bits' => Bits::unknown,
             'type' => 'unknown',
         ];
 

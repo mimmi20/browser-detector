@@ -37,7 +37,9 @@ use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
+use UaResult\Bits\Bits;
 use UaResult\Company\Company;
+use UaResult\Device\Architecture;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
 use UaResult\Os\Os;
@@ -173,13 +175,16 @@ final class Detector2Test extends TestCase
                 'marketingName' => 'Android',
                 'version' => null,
                 'manufacturer' => 'google',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -250,6 +255,7 @@ final class Detector2Test extends TestCase
             ->willReturn(
                 new DeviceData(
                     device: new Device(
+                        architecture: Architecture::unknown,
                         deviceName: 'LM-G710',
                         marketingName: 'G7 ThinQ',
                         manufacturer: new Company(type: 'lg', name: null, brandname: null),
@@ -263,6 +269,7 @@ final class Detector2Test extends TestCase
                         ),
                         dualOrientation: null,
                         simCount: null,
+                        bits: Bits::unknown,
                     ),
                     os: $platformFromDevice,
                 ),
@@ -286,6 +293,7 @@ final class Detector2Test extends TestCase
                     marketingName: 'Android',
                     manufacturer: new Company(type: 'google', name: null, brandname: null),
                     version: new NullVersion(),
+                    bits: Bits::unknown,
                 ),
             );
 
@@ -445,13 +453,16 @@ final class Detector2Test extends TestCase
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -707,13 +718,16 @@ final class Detector2Test extends TestCase
                 'marketingName' => null,
                 'version' => $platformVersion,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -785,6 +799,7 @@ final class Detector2Test extends TestCase
             ->willReturn(
                 new DeviceData(
                     device: new Device(
+                        architecture: Architecture::unknown,
                         deviceName: 'LM-G710',
                         marketingName: 'G7 ThinQ',
                         manufacturer: new Company(type: 'lg', name: null, brandname: null),
@@ -798,6 +813,7 @@ final class Detector2Test extends TestCase
                         ),
                         dualOrientation: null,
                         simCount: null,
+                        bits: Bits::unknown,
                     ),
                     os: $platformFromDevice,
                 ),

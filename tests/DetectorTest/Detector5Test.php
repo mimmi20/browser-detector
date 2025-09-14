@@ -37,7 +37,9 @@ use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
+use UaResult\Bits\Bits;
 use UaResult\Company\Company;
+use UaResult\Device\Architecture;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
 use UaResult\Os\Os;
@@ -178,13 +180,16 @@ final class Detector5Test extends TestCase
                 'marketingName' => 'Linux',
                 'version' => $platformVersion2,
                 'manufacturer' => 'linux-foundation',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -255,6 +260,7 @@ final class Detector5Test extends TestCase
             ->willReturn(
                 new DeviceData(
                     device: new Device(
+                        architecture: Architecture::unknown,
                         deviceName: 'LM-G710',
                         marketingName: 'G7 ThinQ',
                         manufacturer: new Company(type: 'lg', name: null, brandname: null),
@@ -268,6 +274,7 @@ final class Detector5Test extends TestCase
                         ),
                         dualOrientation: null,
                         simCount: null,
+                        bits: Bits::unknown,
                     ),
                     os: $platformFromDevice,
                 ),
@@ -291,6 +298,7 @@ final class Detector5Test extends TestCase
                     marketingName: 'Linux',
                     manufacturer: new Company(type: 'linux-foundation', name: null, brandname: null),
                     version: (new VersionBuilder())->set($platformVersion2),
+                    bits: Bits::unknown,
                 ),
             );
 
@@ -467,13 +475,16 @@ final class Detector5Test extends TestCase
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -697,13 +708,16 @@ final class Detector5Test extends TestCase
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -937,13 +951,16 @@ final class Detector5Test extends TestCase
                 'marketingName' => 'Linux',
                 'version' => null,
                 'manufacturer' => 'linux-foundation',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -1015,6 +1032,7 @@ final class Detector5Test extends TestCase
             ->willReturn(
                 new DeviceData(
                     device: new Device(
+                        architecture: Architecture::unknown,
                         deviceName: 'LM-G710',
                         marketingName: 'G7 ThinQ',
                         manufacturer: new Company(type: 'lg', name: null, brandname: null),
@@ -1028,6 +1046,7 @@ final class Detector5Test extends TestCase
                         ),
                         dualOrientation: null,
                         simCount: null,
+                        bits: Bits::unknown,
                     ),
                     os: $platformFromDevice,
                 ),
@@ -1051,6 +1070,7 @@ final class Detector5Test extends TestCase
                     marketingName: 'Linux',
                     manufacturer: new Company(type: 'linux-foundation', name: null, brandname: null),
                     version: new NullVersion(),
+                    bits: Bits::unknown,
                 ),
             );
 
