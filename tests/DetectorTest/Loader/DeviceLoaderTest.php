@@ -30,7 +30,9 @@ use ReflectionProperty;
 use RuntimeException;
 use UaDeviceType\Type;
 use UaLoader\Exception\NotFoundException;
+use UaResult\Bits\Bits;
 use UaResult\Company\Company;
+use UaResult\Device\Architecture;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
 use UnexpectedValueException;
@@ -315,6 +317,7 @@ final class DeviceLoaderTest extends TestCase
         );
 
         $platformData = new DataDevice(
+            architecture: Architecture::unknown,
             deviceName: null,
             marketingName: null,
             manufacturer: 'xyz',
@@ -328,6 +331,7 @@ final class DeviceLoaderTest extends TestCase
             ],
             dualOrientation: false,
             simCount: 0,
+            bits: Bits::unknown,
             platform: 'test-platform',
         );
 
@@ -348,6 +352,7 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = new Device(
+            architecture: Architecture::unknown,
             deviceName: null,
             marketingName: null,
             manufacturer: $company,
@@ -356,6 +361,7 @@ final class DeviceLoaderTest extends TestCase
             display: new Display(720, 1440, true, 7),
             dualOrientation: false,
             simCount: 0,
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->getDevice()->toArray());
@@ -431,6 +437,7 @@ final class DeviceLoaderTest extends TestCase
         );
 
         $platformData = new DataDevice(
+            architecture: Architecture::unknown,
             deviceName: null,
             marketingName: null,
             manufacturer: 'xyz',
@@ -444,6 +451,7 @@ final class DeviceLoaderTest extends TestCase
             ],
             dualOrientation: false,
             simCount: 0,
+            bits: Bits::unknown,
             platform: 'test-platform',
         );
 
@@ -464,6 +472,7 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = new Device(
+            architecture: Architecture::unknown,
             deviceName: null,
             marketingName: null,
             manufacturer: $company,
@@ -472,6 +481,7 @@ final class DeviceLoaderTest extends TestCase
             display: new Display(720, 1440, true, 7),
             dualOrientation: false,
             simCount: 0,
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->getDevice()->toArray());
@@ -547,6 +557,7 @@ final class DeviceLoaderTest extends TestCase
         );
 
         $platformData = new DataDevice(
+            architecture: Architecture::unknown,
             deviceName: null,
             marketingName: null,
             manufacturer: null,
@@ -560,6 +571,7 @@ final class DeviceLoaderTest extends TestCase
             ],
             dualOrientation: false,
             simCount: 0,
+            bits: Bits::unknown,
             platform: 'test-platform',
         );
 
@@ -580,6 +592,7 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = new Device(
+            architecture: Architecture::unknown,
             deviceName: null,
             marketingName: null,
             manufacturer: $company,
@@ -588,6 +601,7 @@ final class DeviceLoaderTest extends TestCase
             display: new Display(720, 1440, true, 7),
             dualOrientation: false,
             simCount: 0,
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->getDevice()->toArray());
@@ -663,6 +677,7 @@ final class DeviceLoaderTest extends TestCase
         );
 
         $platformData = new DataDevice(
+            architecture: Architecture::unknown,
             deviceName: null,
             marketingName: null,
             manufacturer: 'xyz',
@@ -676,6 +691,7 @@ final class DeviceLoaderTest extends TestCase
             ],
             dualOrientation: false,
             simCount: 0,
+            bits: Bits::unknown,
             platform: 'test-platform',
         );
 
@@ -696,6 +712,7 @@ final class DeviceLoaderTest extends TestCase
         $result = $object->load('test-key');
 
         $expected = new Device(
+            architecture: Architecture::unknown,
             deviceName: null,
             marketingName: null,
             manufacturer: $company,
@@ -704,6 +721,7 @@ final class DeviceLoaderTest extends TestCase
             display: new Display(720, 1440, true, 7),
             dualOrientation: false,
             simCount: 0,
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->getDevice()->toArray());

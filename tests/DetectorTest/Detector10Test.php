@@ -35,7 +35,9 @@ use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
+use UaResult\Bits\Bits;
 use UaResult\Company\Company;
+use UaResult\Device\Architecture;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
 use UaResult\Os\Os;
@@ -178,13 +180,16 @@ final class Detector10Test extends TestCase
                 'marketingName' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -255,6 +260,7 @@ final class Detector10Test extends TestCase
             ->willReturn(
                 new DeviceData(
                     device: new Device(
+                        architecture: Architecture::unknown,
                         deviceName: 'yy',
                         marketingName: 'yy',
                         manufacturer: new Company(type: 'xx', name: null, brandname: null),
@@ -268,6 +274,7 @@ final class Detector10Test extends TestCase
                         ),
                         dualOrientation: null,
                         simCount: null,
+                        bits: Bits::unknown,
                     ),
                     os: $platformFromDevice,
                 ),
@@ -473,13 +480,16 @@ final class Detector10Test extends TestCase
                 'marketingName' => 'abc',
                 'version' => $completePlatformVersion,
                 'manufacturer' => 'xx',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -550,6 +560,7 @@ final class Detector10Test extends TestCase
             ->willReturn(
                 new DeviceData(
                     device: new Device(
+                        architecture: Architecture::unknown,
                         deviceName: 'yy',
                         marketingName: 'yy',
                         manufacturer: new Company(type: 'xx', name: null, brandname: null),
@@ -563,6 +574,7 @@ final class Detector10Test extends TestCase
                         ),
                         dualOrientation: null,
                         simCount: null,
+                        bits: Bits::unknown,
                     ),
                     os: $platformFromDevice,
                 ),
@@ -586,6 +598,7 @@ final class Detector10Test extends TestCase
                     marketingName: 'abc',
                     manufacturer: new Company(type: 'xx', name: null, brandname: null),
                     version: new NullVersion(),
+                    bits: Bits::unknown,
                 ),
             );
 
@@ -797,13 +810,16 @@ final class Detector10Test extends TestCase
                 'marketingName' => 'abc',
                 'version' => $completePlatformVersion,
                 'manufacturer' => 'xx',
+                'bits' => null,
             ],
             'client' => [
                 'name' => null,
+                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => null,
             ],
             'engine' => [
                 'name' => null,
@@ -874,6 +890,7 @@ final class Detector10Test extends TestCase
             ->willReturn(
                 new DeviceData(
                     device: new Device(
+                        architecture: Architecture::unknown,
                         deviceName: 'yy',
                         marketingName: 'yy',
                         manufacturer: new Company(type: 'xx', name: null, brandname: null),
@@ -887,6 +904,7 @@ final class Detector10Test extends TestCase
                         ),
                         dualOrientation: null,
                         simCount: null,
+                        bits: Bits::unknown,
                     ),
                     os: $platformFromDevice,
                 ),
@@ -910,6 +928,7 @@ final class Detector10Test extends TestCase
                     marketingName: 'abc',
                     manufacturer: new Company(type: 'xx', name: null, brandname: null),
                     version: new NullVersion(),
+                    bits: Bits::unknown,
                 ),
             );
 

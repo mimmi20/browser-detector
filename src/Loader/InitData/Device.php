@@ -14,6 +14,8 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader\InitData;
 
 use stdClass;
+use UaResult\Bits\Bits;
+use UaResult\Device\Architecture;
 
 use function array_change_key_case;
 use function array_key_exists;
@@ -28,6 +30,7 @@ use const CASE_LOWER;
 /** @phpcs:disable SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion.RequiredConstructorPropertyPromotion */
 final class Device
 {
+    private Architecture $architecture   = Architecture::unknown;
     private string | null $deviceName    = null;
     private string | null $marketingName = null;
     private string | null $manufacturer  = null;
@@ -36,6 +39,7 @@ final class Device
     private bool | null $dualOrientation = null;
     private int | null $simCount         = null;
     private string | null $platform      = null;
+    private Bits $bits                   = Bits::unknown;
 
     /** @var array{width: int|null, height: int|null, touch: bool|null, size: float|null} */
     private array $display = ['width' => null, 'height' => null, 'touch' => null, 'size' => null];
@@ -46,6 +50,7 @@ final class Device
      * @throws void
      */
     public function __construct(
+        Architecture $architecture,
         string | null $deviceName,
         string | null $marketingName,
         string | null $manufacturer,
@@ -54,8 +59,10 @@ final class Device
         array $display,
         bool | null $dualOrientation,
         int | null $simCount,
+        Bits $bits,
         string | null $platform,
     ) {
+        $this->architecture    = $architecture;
         $this->deviceName      = $deviceName;
         $this->marketingName   = $marketingName;
         $this->manufacturer    = $manufacturer;
@@ -64,6 +71,7 @@ final class Device
         $this->display         = $display;
         $this->dualOrientation = $dualOrientation;
         $this->simCount        = $simCount;
+        $this->bits            = $bits;
         $this->platform        = $platform;
     }
 
@@ -79,13 +87,19 @@ final class Device
     }
 
     /**
-     * @return array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, type: string|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, dualOrientation: bool|null, simCount: int|null, platform: string|null}
+     * @return array{architecture: Architecture, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, type: string|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, dualOrientation: bool|null, simCount: int|null, bits: Bits, platform: string|null}
      *
      * @throws void
      */
     public function __serialize(): array
     {
         return $this->getArrayCopy();
+    }
+
+    /** @throws void */
+    public function getArchitecture(): Architecture
+    {
+        return $this->architecture;
     }
 
     /** @throws void */
@@ -141,13 +155,19 @@ final class Device
     }
 
     /** @throws void */
+    public function getBits(): Bits
+    {
+        return $this->bits;
+    }
+
+    /** @throws void */
     public function getPlatform(): string | null
     {
         return $this->platform;
     }
 
     /**
-     * @return array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, type: string|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, dualOrientation: bool|null, simCount: int|null, platform: string|null}
+     * @return array{architecture: Architecture, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, type: string|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, dualOrientation: bool|null, simCount: int|null, bits: Bits, platform: string|null}
      *
      * @throws void
      *
@@ -156,6 +176,7 @@ final class Device
     public function getArrayCopy(): array
     {
         return [
+            'architecture' => $this->architecture,
             'deviceName' => $this->deviceName,
             'marketingName' => $this->marketingName,
             'manufacturer' => $this->manufacturer,
@@ -164,6 +185,7 @@ final class Device
             'display' => $this->display,
             'dualOrientation' => $this->dualOrientation,
             'simCount' => $this->simCount,
+            'bits' => $this->bits,
             'platform' => $this->platform,
         ];
     }

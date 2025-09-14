@@ -23,6 +23,7 @@ use UaBrowserType\Type;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\Data\ClientDataInterface;
 use UaLoader\Exception\NotFoundException;
+use UaResult\Bits\Bits;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
 
@@ -84,7 +85,7 @@ final class BrowserLoader implements BrowserLoaderInterface
             manufacturer: $manufacturer,
             version: $this->getVersion($data->getVersion(), $useragent),
             type: Type::fromName($data->getType()),
-            bits: null,
+            bits: Bits::unknown,
             modus: null,
         );
     }

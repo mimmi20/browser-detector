@@ -20,6 +20,7 @@ use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
+use UaResult\Bits\Bits;
 use UaResult\Company\Company;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
@@ -106,6 +107,7 @@ final class PlatformLoader implements PlatformLoaderInterface
             marketingName: $marketingName,
             manufacturer: $manufacturer,
             version: $version,
+            bits: Bits::unknown,
         );
     }
 }

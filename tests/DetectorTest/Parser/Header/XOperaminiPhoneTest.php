@@ -19,6 +19,8 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaRequest\Header\DeviceCodeOnlyHeader;
+use UaResult\Bits\Bits;
+use UaResult\Device\Architecture;
 
 use function sprintf;
 
@@ -44,7 +46,8 @@ final class XOperaminiPhoneTest extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -52,7 +55,8 @@ final class XOperaminiPhoneTest extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

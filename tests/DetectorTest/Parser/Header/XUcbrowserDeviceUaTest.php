@@ -25,6 +25,8 @@ use UaNormalizer\NormalizerFactory;
 use UaParser\DeviceParserInterface;
 use UaParser\PlatformParserInterface;
 use UaRequest\Header\XUcbrowserDeviceUa;
+use UaResult\Bits\Bits;
+use UaResult\Device\Architecture;
 
 use function sprintf;
 
@@ -101,7 +103,8 @@ final class XUcbrowserDeviceUaTest extends TestCase
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Architecture::unknown,
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -109,7 +112,8 @@ final class XUcbrowserDeviceUaTest extends TestCase
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            Bits::unknown,
             $header->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

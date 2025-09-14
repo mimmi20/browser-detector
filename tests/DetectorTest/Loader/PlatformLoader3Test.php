@@ -37,6 +37,7 @@ use ReflectionException;
 use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
+use UaResult\Bits\Bits;
 use UaResult\Company\Company;
 use UaResult\Os\Os;
 use UnexpectedValueException;
@@ -150,6 +151,7 @@ final class PlatformLoader3Test extends TestCase
             marketingName: null,
             manufacturer: $company,
             version: (new VersionBuilder())->set('2.5.0'),
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->toArray());
@@ -291,6 +293,7 @@ final class PlatformLoader3Test extends TestCase
             marketingName: null,
             manufacturer: $company,
             version: (new VersionBuilder())->set('1.0.0'),
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->toArray());
@@ -432,6 +435,7 @@ final class PlatformLoader3Test extends TestCase
             marketingName: null,
             manufacturer: $company,
             version: (new VersionBuilder())->set('1.2.0'),
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->toArray());
@@ -541,6 +545,7 @@ final class PlatformLoader3Test extends TestCase
             marketingName: null,
             manufacturer: $company,
             version: new NullVersion(),
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->toArray());
@@ -650,6 +655,7 @@ final class PlatformLoader3Test extends TestCase
             marketingName: null,
             manufacturer: $company,
             version: new NullVersion(),
+            bits: Bits::unknown,
         );
 
         self::assertSame($expected->toArray(), $result->toArray());
