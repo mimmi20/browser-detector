@@ -26,14 +26,17 @@
       "name": "ChromeOS",
       "marketingName": "ChromeOS",
       "version": null,
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Expanse",
+      "modus": null,
       "version": null,
       "manufacturer": "palo-alto",
       "type": "security-checker",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

@@ -26,14 +26,17 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": "5.2.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Ekioh Browser",
+      "modus": null,
       "version": "2.2.1.3",
       "manufacturer": "ekioh",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

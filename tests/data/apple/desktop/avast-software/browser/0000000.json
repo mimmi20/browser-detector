@@ -34,14 +34,17 @@
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
       "version": "12.2.1",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": 64
     },
     "client": {
       "name": "AVG Secure Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "avast-software",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -76,14 +79,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.15.7",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "AVG Secure Browser",
+      "modus": null,
       "version": "113.0.3824.128",
       "manufacturer": "avast-software",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -118,14 +124,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.15.7",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Avast Secure Browser",
+      "modus": null,
       "version": "119.0.0.0",
       "manufacturer": "avast-software",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -163,14 +172,17 @@
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
       "version": "10.15.7",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Avast Secure Browser",
+      "modus": null,
       "version": "116.0.0",
       "manufacturer": "avast-software",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

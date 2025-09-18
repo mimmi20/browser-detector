@@ -26,14 +26,17 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Orangebot Mobile",
+      "modus": null,
       "version": null,
       "manufacturer": "orange",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

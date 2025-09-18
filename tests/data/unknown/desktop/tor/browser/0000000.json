@@ -26,14 +26,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Tor Browser",
+      "modus": null,
       "version": "20.15.0",
       "manufacturer": "tor",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -68,14 +71,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": "2.8.0",
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "Tor Browser",
+      "modus": null,
       "version": "19.15.0",
       "manufacturer": "tor",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -110,14 +116,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Tor Browser",
+      "modus": null,
       "version": "2.15.0",
       "manufacturer": "tor",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -152,14 +161,17 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Tor Browser",
+      "modus": null,
       "version": "17.18.0",
       "manufacturer": "tor",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -194,14 +206,17 @@
       "name": "Ark Linux",
       "marketingName": "Ark Linux",
       "version": "1.9.0",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Tor Browser",
+      "modus": null,
       "version": "17.6.0",
       "manufacturer": "tor",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

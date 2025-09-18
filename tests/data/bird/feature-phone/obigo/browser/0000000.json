@@ -26,14 +26,17 @@
       "name": "Nucleus OS",
       "marketingName": "Nucleus",
       "version": null,
-      "manufacturer": "accelerated-technology"
+      "manufacturer": "accelerated-technology",
+      "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
+      "modus": null,
       "version": null,
       "manufacturer": "obigo",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Teleca",

@@ -26,14 +26,17 @@
       "name": "Nintendo OS",
       "marketingName": "Nintendo OS",
       "version": null,
-      "manufacturer": "nintendo"
+      "manufacturer": "nintendo",
+      "bits": null
     },
     "client": {
       "name": "Google Translate",
+      "modus": null,
       "version": null,
       "manufacturer": "google",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Presto",

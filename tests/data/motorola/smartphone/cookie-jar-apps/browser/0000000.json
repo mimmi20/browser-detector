@@ -27,14 +27,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "SmartCookieWeb Privacy Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "cookie-jar-apps",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

@@ -26,14 +26,17 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation"
+      "manufacturer": "symbian-foundation",
+      "bits": null
     },
     "client": {
       "name": "UC Browser",
+      "modus": null,
       "version": "9.1.0.319",
       "manufacturer": "ucweb",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "U2",

@@ -28,14 +28,17 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "5.0.0.1036",
-      "manufacturer": "rim"
+      "manufacturer": "rim",
+      "bits": null
     },
     "client": {
       "name": "Opera",
+      "modus": null,
       "version": "11.10.0",
       "manufacturer": "opera",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Presto",

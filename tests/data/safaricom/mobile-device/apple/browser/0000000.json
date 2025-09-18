@@ -26,14 +26,17 @@
       "name": "kaios",
       "marketingName": "kaios",
       "version": "2.5.3.2",
-      "manufacturer": "kaios"
+      "manufacturer": "kaios",
+      "bits": null
     },
     "client": {
       "name": "Safari",
+      "modus": null,
       "version": null,
       "manufacturer": "apple",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

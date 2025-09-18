@@ -27,14 +27,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Web Alert App",
+      "modus": null,
       "version": null,
       "manufacturer": "web-alert",
       "type": "site-monitor",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

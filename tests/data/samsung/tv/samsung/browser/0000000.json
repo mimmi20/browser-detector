@@ -26,14 +26,17 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "2.3.0",
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Samsung Browser",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "samsung",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "SmartTV WebBrowser",
+      "modus": null,
       "version": "2012.0.0",
       "manufacturer": "samsung",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -110,14 +116,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "SmartTV WebBrowser",
+      "modus": null,
       "version": null,
       "manufacturer": "samsung",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -152,14 +161,17 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "SmartTV WebBrowser",
+      "modus": null,
       "version": "7.0.0",
       "manufacturer": "samsung",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -194,14 +206,17 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "2.3.0",
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "SmartTV WebBrowser",
+      "modus": null,
       "version": null,
       "manufacturer": "samsung",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -236,14 +251,17 @@
       "name": "NetCast",
       "marketingName": "NetCast",
       "version": null,
-      "manufacturer": "lg"
+      "manufacturer": "lg",
+      "bits": null
     },
     "client": {
       "name": "SmartTV WebBrowser",
+      "modus": null,
       "version": "6.0.0",
       "manufacturer": "samsung",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -278,14 +296,17 @@
       "name": "Windows NT 6.0",
       "marketingName": "Windows Vista",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "SmartTV WebBrowser",
+      "modus": null,
       "version": null,
       "manufacturer": "samsung",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

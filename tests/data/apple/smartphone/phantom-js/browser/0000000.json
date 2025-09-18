@@ -26,14 +26,17 @@
       "name": "iPhone OS",
       "marketingName": "iPhone OS",
       "version": "3.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "PhantomJS",
+      "modus": null,
       "version": "1.6.0",
       "manufacturer": "phantom-js",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

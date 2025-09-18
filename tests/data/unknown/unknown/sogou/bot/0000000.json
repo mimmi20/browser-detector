@@ -26,14 +26,17 @@
       "name": "Windows 98",
       "marketingName": "Windows 98",
       "version": "98.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Sogou Spider",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "sogou",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

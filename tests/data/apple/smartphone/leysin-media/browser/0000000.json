@@ -27,14 +27,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "4.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "2345 Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "leysin-media",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

@@ -26,14 +26,17 @@
       "name": "Windows NT",
       "marketingName": "Windows 2000",
       "version": "5.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Oregano",
+      "modus": null,
       "version": "2.0.0",
       "manufacturer": "oregan",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",
@@ -68,14 +71,17 @@
       "name": "Windows 98",
       "marketingName": "Windows 98",
       "version": "98.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Oregano",
+      "modus": null,
       "version": "1.10.0",
       "manufacturer": "oregan",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

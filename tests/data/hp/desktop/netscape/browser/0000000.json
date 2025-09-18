@@ -26,14 +26,17 @@
       "name": "HP-UX",
       "marketingName": "HP-UX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Netscape",
+      "modus": null,
       "version": "7.0.0",
       "manufacturer": "netscape",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

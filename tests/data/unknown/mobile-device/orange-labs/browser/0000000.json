@@ -26,14 +26,17 @@
       "name": "MeeGo",
       "marketingName": "MeeGo",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "HeliumMobileBrowser",
+      "modus": null,
       "version": null,
       "manufacturer": "orange-labs",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

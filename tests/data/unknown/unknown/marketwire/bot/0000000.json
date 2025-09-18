@@ -26,14 +26,17 @@
       "name": "Windows NT",
       "marketingName": "Windows NT",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "MarketwireBot",
+      "modus": null,
       "version": null,
       "manufacturer": "marketwire",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

@@ -26,14 +26,17 @@
       "name": "NetCast",
       "marketingName": "NetCast",
       "version": null,
-      "manufacturer": "lg"
+      "manufacturer": "lg",
+      "bits": null
     },
     "client": {
       "name": "LG Browser",
+      "modus": null,
       "version": "6.00.00",
       "manufacturer": "lg",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

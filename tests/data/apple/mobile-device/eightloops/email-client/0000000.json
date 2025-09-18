@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "70.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.3.2",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "70.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -110,14 +116,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.3.2",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "70.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -152,14 +161,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "70.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -194,14 +206,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "70.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -236,14 +251,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "70.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -278,18 +296,111 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "70.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
       "version": "758.1.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Unibox/28 CFNetwork/711.5.6 Darwin/14.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.4.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Unibox",
+      "modus": null,
+      "version": "28.0.0",
+      "manufacturer": "eightloops",
+      "type": "email-client",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "711.5.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Unibox/8 CFNetwork/711.4.6 Darwin/14.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.4.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Unibox",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "eightloops",
+      "type": "email-client",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "711.4.6",
       "manufacturer": "apple"
     }
   },
@@ -320,14 +431,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "35.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -362,14 +476,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "46.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -404,14 +521,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "10.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "87.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -446,14 +566,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.3.3",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "87.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -488,14 +611,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.3.2",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "87.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -530,14 +656,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "10.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "87.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -572,14 +701,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "10.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "87.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -614,14 +746,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "10.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "87.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -656,14 +791,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "10.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "87.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -698,14 +836,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "10.3.2",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "103.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -740,14 +881,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "11.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "103.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -782,14 +926,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "11.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "114.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -824,14 +971,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "11.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "114.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -866,14 +1016,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "12.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "119.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -908,14 +1061,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "13.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "119.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -950,14 +1106,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "13.3.1",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "119.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -992,14 +1151,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "12.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "119.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1034,14 +1196,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "443.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1076,14 +1241,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "443.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1118,14 +1286,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.5.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "443.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1160,14 +1331,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "443.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1202,14 +1376,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "132.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1244,14 +1421,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "132.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1286,14 +1466,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "132.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1328,14 +1511,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "132.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1370,14 +1556,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "443.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1412,14 +1601,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "17.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Unibox",
+      "modus": null,
       "version": "443.0.0",
       "manufacturer": "eightloops",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

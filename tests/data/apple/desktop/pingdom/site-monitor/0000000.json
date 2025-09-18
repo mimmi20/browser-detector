@@ -26,14 +26,17 @@
       "name": "MRE",
       "marketingName": "MAUI Runtime Environment",
       "version": null,
-      "manufacturer": "mediatek"
+      "manufacturer": "mediatek",
+      "bits": null
     },
     "client": {
       "name": "Pingdom",
+      "modus": null,
       "version": "2020.2.0",
       "manufacturer": "pingdom",
       "type": "site-monitor",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

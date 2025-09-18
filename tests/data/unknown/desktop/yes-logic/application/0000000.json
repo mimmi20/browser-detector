@@ -26,14 +26,17 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Prince",
+      "modus": null,
       "version": null,
       "manufacturer": "yes-logic",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

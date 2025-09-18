@@ -26,14 +26,17 @@
       "name": "Yun OS",
       "marketingName": "Yun OS",
       "version": null,
-      "manufacturer": "alibaba"
+      "manufacturer": "alibaba",
+      "bits": null
     },
     "client": {
       "name": "Sogou Mobile Browser",
+      "modus": null,
       "version": "2.1.0",
       "manufacturer": "sogou",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

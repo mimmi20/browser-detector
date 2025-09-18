@@ -29,14 +29,17 @@
       "name": "MRE",
       "marketingName": "MAUI Runtime Environment",
       "version": null,
-      "manufacturer": "mediatek"
+      "manufacturer": "mediatek",
+      "bits": null
     },
     "client": {
       "name": "Opera Mini",
+      "modus": null,
       "version": "4.4.31762",
       "manufacturer": "opera",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Presto",

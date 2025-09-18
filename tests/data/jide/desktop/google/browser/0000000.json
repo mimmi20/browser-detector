@@ -26,14 +26,17 @@
       "name": "Remix OS",
       "marketingName": "Remix OS",
       "version": null,
-      "manufacturer": "jide"
+      "manufacturer": "jide",
+      "bits": null
     },
     "client": {
       "name": "Chrome",
+      "modus": null,
       "version": "41.0.2272.89",
       "manufacturer": "google",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

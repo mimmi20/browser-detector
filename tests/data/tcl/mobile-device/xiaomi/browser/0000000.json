@@ -26,14 +26,17 @@
       "name": "Miui OS",
       "marketingName": "Miui OS",
       "version": "7.8.21.8",
-      "manufacturer": "xiaomi"
+      "manufacturer": "xiaomi",
+      "bits": null
     },
     "client": {
       "name": "Miui Browser",
+      "modus": null,
       "version": "7.8.21.8",
       "manufacturer": "xiaomi",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

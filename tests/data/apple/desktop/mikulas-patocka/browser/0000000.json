@@ -26,14 +26,17 @@
       "name": "Darwin",
       "marketingName": "Darwin",
       "version": "6.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Links",
+      "modus": null,
       "version": "0.98.0",
       "manufacturer": "mikulas-patocka",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

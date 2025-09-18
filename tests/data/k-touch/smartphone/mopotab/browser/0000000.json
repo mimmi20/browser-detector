@@ -26,14 +26,17 @@
       "name": "Yun OS",
       "marketingName": "Yun OS",
       "version": null,
-      "manufacturer": "alibaba"
+      "manufacturer": "alibaba",
+      "bits": null
     },
     "client": {
       "name": "Dolfin",
+      "modus": null,
       "version": null,
       "manufacturer": "mopotab",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

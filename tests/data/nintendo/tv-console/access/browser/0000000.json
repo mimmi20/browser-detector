@@ -26,14 +26,17 @@
       "name": "Nintendo OS",
       "marketingName": "Nintendo OS",
       "version": null,
-      "manufacturer": "nintendo"
+      "manufacturer": "nintendo",
+      "bits": null
     },
     "client": {
       "name": "NetFront NX",
+      "modus": null,
       "version": "2.1.0.8.8",
       "manufacturer": "access",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

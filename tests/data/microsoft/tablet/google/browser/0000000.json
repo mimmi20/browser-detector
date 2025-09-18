@@ -35,14 +35,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "11.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": 64
     },
     "client": {
       "name": "Chrome",
+      "modus": null,
       "version": "132.0.0.0",
       "manufacturer": "google",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

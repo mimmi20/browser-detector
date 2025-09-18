@@ -26,14 +26,17 @@
       "name": "iPhone OS",
       "marketingName": "iPhone OS",
       "version": "1.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Google Translate",
+      "modus": null,
       "version": null,
       "manufacturer": "google",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

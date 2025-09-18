@@ -26,14 +26,17 @@
       "name": "Remix OS",
       "marketingName": "Remix OS",
       "version": "6.0.0",
-      "manufacturer": "jide"
+      "manufacturer": "jide",
+      "bits": null
     },
     "client": {
       "name": "Browse",
+      "modus": null,
       "version": "0.6.0",
       "manufacturer": "unknown",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -68,14 +71,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Browse",
+      "modus": null,
       "version": "0.5.0",
       "manufacturer": "unknown",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -111,14 +117,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Jelly Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "unknown",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

@@ -26,14 +26,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.12.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "PaleMoon",
+      "modus": null,
       "version": "25.4.0-beta+3",
       "manufacturer": "moonchild-productions",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -68,14 +71,17 @@
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
       "version": "10.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "PaleMoon",
+      "modus": null,
       "version": "27.3.0",
       "manufacturer": "moonchild-productions",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Goanna",

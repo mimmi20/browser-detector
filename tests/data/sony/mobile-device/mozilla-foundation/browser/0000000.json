@@ -26,14 +26,17 @@
       "name": "kaios",
       "marketingName": "kaios",
       "version": "2.5.1",
-      "manufacturer": "kaios"
+      "manufacturer": "kaios",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "48.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

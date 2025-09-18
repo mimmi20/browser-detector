@@ -26,14 +26,17 @@
       "name": "Debian",
       "marketingName": "Debian",
       "version": null,
-      "manufacturer": "software-in-the-public-interest"
+      "manufacturer": "software-in-the-public-interest",
+      "bits": null
     },
     "client": {
       "name": "DBot",
+      "modus": null,
       "version": "3.7.0-dev",
       "manufacturer": "get-download",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

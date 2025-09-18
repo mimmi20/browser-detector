@@ -26,14 +26,17 @@
       "name": "Windows NT",
       "marketingName": "Windows 2000",
       "version": "5.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "KMLite",
+      "modus": null,
       "version": "1.1.2",
       "manufacturer": "ashrising-phoenixes",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
