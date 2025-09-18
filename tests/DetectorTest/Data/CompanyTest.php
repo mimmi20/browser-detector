@@ -783,6 +783,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Jumper',
                 'key' => 'jumper',
             ],
+            [
+                'type' => 'Flycoay',
+                'name' => 'Flycoay',
+                'brandname' => 'Flycoay',
+                'key' => 'flycoay',
+            ],
+            [
+                'type' => 'MAGCH',
+                'name' => 'MAGCH',
+                'brandname' => 'MAGCH',
+                'key' => 'magch',
+            ],
+            [
+                'type' => 'Oangcc',
+                'name' => 'Oangcc',
+                'brandname' => 'Oangcc',
+                'key' => 'oangcc',
+            ],
+            [
+                'type' => 'AOCWEI',
+                'name' => 'AOCWEI',
+                'brandname' => 'AOCWEI',
+                'key' => 'aocwei',
+            ],
         ];
     }
 

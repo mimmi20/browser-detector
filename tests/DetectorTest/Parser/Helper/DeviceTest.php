@@ -394,6 +394,9 @@ final class DeviceTest extends TestCase
             ['PLC110', 'oneplus=oneplus plc110'],
             ['PLF110', 'oneplus=oneplus plf110'],
             ['OPD2304', 'oneplus=oneplus opd2304'],
+            ['CPH2609', 'oneplus=oneplus cph2609'],
+            ['CPH2585', 'oneplus=oneplus cph2585'],
+            ['CPH2605', 'oneplus=oneplus cph2605'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -2658,6 +2661,7 @@ final class DeviceTest extends TestCase
             ['HMD Skyline', 'hmd-global=hmd-global skyline'],
             ['N159V', 'hmd-global=hmd-global n159v'],
             ['HMD Vibe', 'hmd-global=hmd-global vibe'],
+            ['HMD Pulse Pro', 'hmd-global=hmd-global pulse pro'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox one'],
@@ -5502,6 +5506,14 @@ final class DeviceTest extends TestCase
             ['inoiPad Pro', 'inoi=inoi pad pro'],
             // jumper
             ['EZpad M11', 'jumper=jumper ezpad m11'],
+            // flycoay
+            ['Y121-EEA', 'flycoay=flycoay y121-eea'],
+            // magch
+            ['M820-EEA', 'magch=magch m820-eea'],
+            // oangcc
+            ['A13_EEA', 'oangcc=oangcc a13-eea'],
+            // aocwei
+            ['X900_US', 'aocwei=aocwei x900-us'],
             // other
             ['Model"', null],
             [': "', null],

@@ -371,6 +371,9 @@ final class Device implements DeviceInterface
             'plc110' => 'oneplus=oneplus plc110',
             'plf110' => 'oneplus=oneplus plf110',
             'opd2304' => 'oneplus=oneplus opd2304',
+            'cph2609' => 'oneplus=oneplus cph2609',
+            'cph2585' => 'oneplus=oneplus cph2585',
+            'cph2605' => 'oneplus=oneplus cph2605',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -2308,6 +2311,7 @@ final class Device implements DeviceInterface
             'hmd skyline' => 'hmd-global=hmd-global skyline',
             'n159v' => 'hmd-global=hmd-global n159v',
             'hmd vibe' => 'hmd-global=hmd-global vibe',
+            'hmd pulse pro' => 'hmd-global=hmd-global pulse pro',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -4989,6 +4993,14 @@ final class Device implements DeviceInterface
             'inoipad pro' => 'inoi=inoi pad pro',
             // jumper
             'ezpad m11' => 'jumper=jumper ezpad m11',
+            // flycoay
+            'y121-eea' => 'flycoay=flycoay y121-eea',
+            // magch
+            'm820-eea' => 'magch=magch m820-eea',
+            // oangcc
+            'a13_eea' => 'oangcc=oangcc a13-eea',
+            // aocwei
+            'x900_us' => 'aocwei=aocwei x900-us',
             // other
             default => null,
         };

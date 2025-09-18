@@ -257,6 +257,14 @@ enum Company: string implements CompanyInterface
 
     case jumper = 'Jumper';
 
+    case flycoay = 'Flycoay';
+
+    case magch = 'MAGCH';
+
+    case oangcc = 'Oangcc';
+
+    case aocwei = 'AOCWEI';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -384,6 +392,10 @@ enum Company: string implements CompanyInterface
             'padpro' => self::padpro,
             'inoi' => self::inoi,
             'jumper' => self::jumper,
+            'flycoay' => self::flycoay,
+            'magch' => self::magch,
+            'oangcc' => self::oangcc,
+            'aocwei' => self::aocwei,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
