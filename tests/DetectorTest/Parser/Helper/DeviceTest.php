@@ -2603,6 +2603,8 @@ final class DeviceTest extends TestCase
             ['L71061', 'lenovo=lenovo l71061'],
             ['Lenovo L71061', 'lenovo=lenovo l71061'],
             ['Lenovo TB-9707F', 'lenovo=lenovo tb-9707f'],
+            ['TB-Q706Z', 'lenovo=lenovo tb-q706z'],
+            ['Lenovo TB-Q706F', 'lenovo=lenovo tb-q706f'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -2653,6 +2655,7 @@ final class DeviceTest extends TestCase
             ['Nokia G310 5G', 'nokia=nokia g310 5g'],
             ['Nokia C02', 'nokia=nokia c02'],
             ['Nokia 8', 'nokia=nokia 8'],
+            ['Nokia 2720 Flip', 'nokia=nokia 2720 flip'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
@@ -2752,6 +2755,7 @@ final class DeviceTest extends TestCase
             ['RMX5033', 'realme=realme rmx5033'],
             ['Realme 7 Pro', 'realme=realme 7 pro'],
             ['RMP2204', 'realme=realme rmp2204'],
+            ['RMP2205', 'realme=realme rmp2205'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -5184,6 +5188,9 @@ final class DeviceTest extends TestCase
             ['OC101', 'hi-grace=hi-grace oc101'],
             // green-lion
             ['G-10 ULTRA', 'green-lion=green-lion g-10 ultra'],
+            ['G-10 PRO', 'green-lion=green-lion g-10 pro'],
+            ['G-20ULTRA', 'green-lion=green-lion g-20 ultra'],
+            ['G-8 PRO', 'green-lion=green-lion g-8 pro'],
             // s-color
             ['GT40 Ultra', 's-color=s-color gt40 ultra'],
             // mode-mobile
@@ -5510,10 +5517,22 @@ final class DeviceTest extends TestCase
             ['Y121-EEA', 'flycoay=flycoay y121-eea'],
             // magch
             ['M820-EEA', 'magch=magch m820-eea'],
+            ['M821-EEA', 'magch=magch m821-eea'],
+            ['M820', 'magch=magch m820'],
             // oangcc
             ['A13_EEA', 'oangcc=oangcc a13-eea'],
+            ['A15_EEA', 'oangcc=oangcc a15-eea'],
             // aocwei
             ['X900_US', 'aocwei=aocwei x900-us'],
+            ['X700_EEA', 'aocwei=aocwei x700-eea'],
+            // aauw
+            ['M50', 'aauw=aauw m50'],
+            // vale
+            ['V12E-LTE-8128', 'vale=vale v12e lte'],
+            // relndoo
+            ['TB02', 'relndoo=relndoo tb02'],
+            // head-wolf
+            ['F3A', 'head-wolf=head-wolf f3a'],
             // other
             ['Model"', null],
             [': "', null],

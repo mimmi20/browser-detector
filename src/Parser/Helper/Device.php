@@ -2253,6 +2253,8 @@ final class Device implements DeviceInterface
             'xt2091-7' => 'lenovo=lenovo xt2091-7',
             'l71061', 'lenovo l71061' => 'lenovo=lenovo l71061',
             'lenovo tb-9707f' => 'lenovo=lenovo tb-9707f',
+            'tb-q706z' => 'lenovo=lenovo tb-q706z',
+            'lenovo tb-q706f' => 'lenovo=lenovo tb-q706f',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -2303,6 +2305,7 @@ final class Device implements DeviceInterface
             'nokia g310 5g' => 'nokia=nokia g310 5g',
             'nokia c02' => 'nokia=nokia c02',
             'nokia 8' => 'nokia=nokia 8',
+            'nokia 2720 flip' => 'nokia=nokia 2720 flip',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -2402,6 +2405,7 @@ final class Device implements DeviceInterface
             'rmx5033' => 'realme=realme rmx5033',
             'realme 7 pro' => 'realme=realme 7 pro',
             'rmp2204' => 'realme=realme rmp2204',
+            'rmp2205' => 'realme=realme rmp2205',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -4674,6 +4678,9 @@ final class Device implements DeviceInterface
             'oc101' => 'hi-grace=hi-grace oc101',
             // green-lion
             'g-10 ultra' => 'green-lion=green-lion g-10 ultra',
+            'g-10 pro' => 'green-lion=green-lion g-10 pro',
+            'g-20ultra' => 'green-lion=green-lion g-20 ultra',
+            'g-8 pro' => 'green-lion=green-lion g-8 pro',
             // s-color
             'gt40 ultra' => 's-color=s-color gt40 ultra',
             // mode-mobile
@@ -4997,10 +5004,22 @@ final class Device implements DeviceInterface
             'y121-eea' => 'flycoay=flycoay y121-eea',
             // magch
             'm820-eea' => 'magch=magch m820-eea',
+            'm821-eea' => 'magch=magch m821-eea',
+            'm820' => 'magch=magch m820',
             // oangcc
             'a13_eea' => 'oangcc=oangcc a13-eea',
+            'a15_eea' => 'oangcc=oangcc a15-eea',
             // aocwei
             'x900_us' => 'aocwei=aocwei x900-us',
+            'x700_eea' => 'aocwei=aocwei x700-eea',
+            // aauw
+            'm50' => 'aauw=aauw m50',
+            // vale
+            'v12e-lte-8128' => 'vale=vale v12e lte',
+            // relndoo
+            'tb02' => 'relndoo=relndoo tb02',
+            // head-wolf
+            'f3a' => 'head-wolf=head-wolf f3a',
             // other
             default => null,
         };

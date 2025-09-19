@@ -265,6 +265,14 @@ enum Company: string implements CompanyInterface
 
     case aocwei = 'AOCWEI';
 
+    case aauw = 'AAUW';
+
+    case vale = 'Vale';
+
+    case relndoo = 'Relndoo';
+
+    case headwolf = 'HeadWolf';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -396,6 +404,10 @@ enum Company: string implements CompanyInterface
             'magch' => self::magch,
             'oangcc' => self::oangcc,
             'aocwei' => self::aocwei,
+            'aauw' => self::aauw,
+            'vale' => self::vale,
+            'relndoo' => self::relndoo,
+            'headwolf', 'head-wolf' => self::headwolf,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -471,6 +483,7 @@ enum Company: string implements CompanyInterface
             self::eaglesoar => 'eagle-soar',
             self::blowPlatinum => 'blow-platinum',
             self::visualLand => 'visual-land',
+            self::headwolf => 'head-wolf',
             default => $this->name,
         };
     }

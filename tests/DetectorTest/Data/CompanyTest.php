@@ -807,6 +807,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'AOCWEI',
                 'key' => 'aocwei',
             ],
+            [
+                'type' => 'AAUW',
+                'name' => 'AAUW',
+                'brandname' => 'AAUW',
+                'key' => 'aauw',
+            ],
+            [
+                'type' => 'Vale',
+                'name' => 'Vale',
+                'brandname' => 'Vale',
+                'key' => 'vale',
+            ],
+            [
+                'type' => 'Relndoo',
+                'name' => 'Relndoo',
+                'brandname' => 'Relndoo',
+                'key' => 'relndoo',
+            ],
+            [
+                'type' => 'HeadWolf',
+                'name' => 'HeadWolf',
+                'brandname' => 'HeadWolf',
+                'key' => 'head-wolf',
+            ],
         ];
     }
 
@@ -1061,6 +1085,12 @@ final class CompanyTest extends TestCase
                 'name' => 'Visual Land',
                 'brandname' => 'Visual Land',
                 'key' => 'visual-land',
+            ],
+            [
+                'fallback' => 'head-wolf',
+                'name' => 'HeadWolf',
+                'brandname' => 'HeadWolf',
+                'key' => 'head-wolf',
             ],
         ];
     }
