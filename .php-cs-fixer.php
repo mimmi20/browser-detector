@@ -11,6 +11,9 @@
 
 declare(strict_types = 1);
 
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
+
 $year = date('Y');
 
 $header = <<<EOF
@@ -22,7 +25,7 @@ $header = <<<EOF
     file that was distributed with this source code.
     EOF;
 
-$finder = PhpCsFixer\Finder::create()
+$finder = Finder::create()
     ->files()
     ->name('*.php')
     ->in(__DIR__ . '/src')
@@ -33,7 +36,7 @@ $finder = PhpCsFixer\Finder::create()
 
 $rules = require 'vendor/mimmi20/coding-standard/src/php-cs-fixer.config.php';
 
-$config = new PhpCsFixer\Config();
+$config = new Config();
 
 return $config
     ->setUnsupportedPhpVersionAllowed(true)

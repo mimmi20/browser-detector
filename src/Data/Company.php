@@ -273,6 +273,18 @@ enum Company: string implements CompanyInterface
 
     case headwolf = 'HeadWolf';
 
+    case hezire = 'Hezire';
+
+    case weelikeit = 'Weelikeit';
+
+    case meswao = 'Meswao';
+
+    case colorroom = 'Colorroom';
+
+    case erisson = 'Erisson';
+
+    case vision = 'Vision';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -408,6 +420,12 @@ enum Company: string implements CompanyInterface
             'vale' => self::vale,
             'relndoo' => self::relndoo,
             'headwolf', 'head-wolf' => self::headwolf,
+            'hezire' => self::hezire,
+            'weelikeit' => self::weelikeit,
+            'meswao' => self::meswao,
+            'colorroom' => self::colorroom,
+            'erisson' => self::erisson,
+            'vision', 'vision technology', 'vision-technology' => self::vision,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -445,6 +463,7 @@ enum Company: string implements CompanyInterface
             self::zebra => 'Zebra Technologies Corp.',
             self::moondrop => 'Chengdu Shuiyueyu Technology Co., Ltd.',
             self::hotPepper => 'Hot Pepper Mobile, Inc.',
+            self::vision => 'Vision Technology',
             self::unknown => null,
             default => $this->value,
         };
@@ -484,6 +503,7 @@ enum Company: string implements CompanyInterface
             self::blowPlatinum => 'blow-platinum',
             self::visualLand => 'visual-land',
             self::headwolf => 'head-wolf',
+            self::vision => 'vision-technology',
             default => $this->name,
         };
     }

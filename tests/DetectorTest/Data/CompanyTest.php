@@ -22,6 +22,7 @@ use UnexpectedValueException;
 
 use function sprintf;
 
+/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(Company::class)]
 final class CompanyTest extends TestCase
 {
@@ -831,6 +832,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'HeadWolf',
                 'key' => 'head-wolf',
             ],
+            [
+                'type' => 'Hezire',
+                'name' => 'Hezire',
+                'brandname' => 'Hezire',
+                'key' => 'hezire',
+            ],
+            [
+                'type' => 'Weelikeit',
+                'name' => 'Weelikeit',
+                'brandname' => 'Weelikeit',
+                'key' => 'weelikeit',
+            ],
+            [
+                'type' => 'Meswao',
+                'name' => 'Meswao',
+                'brandname' => 'Meswao',
+                'key' => 'meswao',
+            ],
+            [
+                'type' => 'Colorroom',
+                'name' => 'Colorroom',
+                'brandname' => 'Colorroom',
+                'key' => 'colorroom',
+            ],
+            [
+                'type' => 'Erisson',
+                'name' => 'Erisson',
+                'brandname' => 'Erisson',
+                'key' => 'erisson',
+            ],
+            [
+                'type' => 'Vision',
+                'name' => 'Vision Technology',
+                'brandname' => 'Vision',
+                'key' => 'vision-technology',
+            ],
         ];
     }
 
@@ -1087,10 +1124,16 @@ final class CompanyTest extends TestCase
                 'key' => 'visual-land',
             ],
             [
-                'fallback' => 'head-wolf',
-                'name' => 'HeadWolf',
-                'brandname' => 'HeadWolf',
-                'key' => 'head-wolf',
+                'fallback' => 'Vision Technology',
+                'name' => 'Vision Technology',
+                'brandname' => 'Vision',
+                'key' => 'vision-technology',
+            ],
+            [
+                'fallback' => 'vision-technology',
+                'name' => 'Vision Technology',
+                'brandname' => 'Vision',
+                'key' => 'vision-technology',
             ],
         ];
     }
