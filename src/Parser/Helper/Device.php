@@ -959,8 +959,9 @@ final class Device implements DeviceInterface
             'zte a2322' => 'zte=zte a2322',
             'zte a2022py' => 'zte=zte a2022py',
             'zte a2022p', 'a2022p' => 'zte=zte a2022p',
-            'zte a2022pg' => 'zte=zte a2022pg',
+            'zte a2022pg', 'a2022pg' => 'zte=zte a2022pg',
             'zte a2022', 'a2022' => 'zte=zte a2022',
+            '5g ug phone u25' => 'zte=zte 5g ug phone u25',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -4673,6 +4674,8 @@ final class Device implements DeviceInterface
             'u680ac' => 'cricket=cricket u680ac',
             'u380ac' => 'cricket=cricket u380ac',
             'u6080ac' => 'cricket=cricket u6080ac',
+            'u655ac' => 'cricket=cricket u655ac',
+            'u572ac' => 'cricket=cricket u572ac',
             // mintt
             'coolmintt a8' => 'mintt=mintt coolmintt a8',
             // ajib
@@ -4916,6 +4919,7 @@ final class Device implements DeviceInterface
             'sl-led43s98t2su' => 'scoole=scoole sl-led43s98t2su',
             'sl-led43s94t2s' => 'scoole=scoole sl-led43s94t2s',
             'sl-led24s90t2s' => 'scoole=scoole sl-led24s90t2s',
+            'sl-led55s02t2su' => 'scoole=scoole sl-led55s02t2su',
             // soundmax
             'sm-qled50t21su' => 'soundmax=soundmax sm-qled50t21su',
             'sm-led32m07s' => 'soundmax=soundmax sm-led32m07s',
@@ -4937,6 +4941,7 @@ final class Device implements DeviceInterface
             // krono
             'net alpha' => 'krono=krono net alpha',
             'net hit' => 'krono=krono net hit',
+            'net_r7' => 'krono=krono net r7',
             // calme
             '4g-hero' => 'calme=calme 4g hero',
             '4g hot' => 'calme=calme 4g hot',
@@ -4978,6 +4983,7 @@ final class Device implements DeviceInterface
             // maxwest
             'mx-a65' => 'maxwest=maxwest mx-a65',
             'mx-a64' => 'maxwest=maxwest mx-a64',
+            'nitro_g55' => 'maxwest=maxwest nitro g55',
             // condor
             'gt60 pro' => 'condor=condor gt60 pro',
             'gt60' => 'condor=condor gt60',
@@ -5019,6 +5025,7 @@ final class Device implements DeviceInterface
             'platinumtab11_4g' => 'blow-platinum=blow-platinum tab 11 4g',
             // cepter
             'ceptertab10l' => 'cepter=cepter tab 10l',
+            'ceptertab101' => 'cepter=cepter tab 101',
             // clovertek
             'clovertek_g12' => 'clovertek=clovertek g12',
             // visual-land
@@ -5060,6 +5067,7 @@ final class Device implements DeviceInterface
             'mes-b3' => 'meswao=meswao mes-b3',
             // colorroom
             'k10c' => 'colorroom=colorroom k10c',
+            'c3_pro' => 'colorroom=colorroom c3 pro',
             // erisson
             '32les904t2sm' => 'erisson=erisson 32les904t2sm',
             '24lm8002ct2' => 'erisson=erisson 24lm8002ct2',
@@ -5074,6 +5082,27 @@ final class Device implements DeviceInterface
             'vtl-202301' => 'vertu=vertu vtl-202301',
             // oysters
             'ubs1' => 'oysters=oysters ubs1',
+            // honkuahg
+            'ev10' => 'honkuahg=honkuahg ev10',
+            // egotek
+            'ego1003' => 'egotek=egotek ego1003',
+            // zzb
+            'zb30' => 'zzb=zzb zb30',
+            // hometech
+            'alfa_10bt_v2' => 'hometech=hometech alfa 10bt v2',
+            'alfa 11 bt' => 'hometech=hometech alfa 11 bt',
+            // newal
+            'newal_tv_uhd-5042' => 'newal=newal uhd-5042',
+            // sber
+            'sbdv-00006' => 'sber=sber sbdv-00006',
+            // senna
+            '32sn6000h' => 'senna=senna 32sn6000h',
+            'senna_43sn6000f' => 'senna=senna 43sn6000f',
+            // x-view
+            'ftb13' => 'x-view=x-view ftb13',
+            'proton lite' => 'x-view=x-view proton lite',
+            // trecfone
+            '17_pro_max' => 'trecfone=trecfone 17 pro max',
             // other
             default => null,
         };

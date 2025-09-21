@@ -868,6 +868,48 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Vision',
                 'key' => 'vision-technology',
             ],
+            [
+                'type' => 'HONKUAHG',
+                'name' => 'HONKUAHG',
+                'brandname' => 'HONKUAHG',
+                'key' => 'honkuahg',
+            ],
+            [
+                'type' => 'Egotek',
+                'name' => 'Egotek',
+                'brandname' => 'Egotek',
+                'key' => 'egotek',
+            ],
+            [
+                'type' => 'ZZB',
+                'name' => 'ZZB',
+                'brandname' => 'ZZB',
+                'key' => 'zzb',
+            ],
+            [
+                'type' => 'NEWAL',
+                'name' => 'NEWAL',
+                'brandname' => 'NEWAL',
+                'key' => 'newal',
+            ],
+            [
+                'type' => 'Sber',
+                'name' => 'Sber',
+                'brandname' => 'Sber',
+                'key' => 'sber',
+            ],
+            [
+                'type' => 'Senna',
+                'name' => 'Senna',
+                'brandname' => 'Senna',
+                'key' => 'senna',
+            ],
+            [
+                'type' => 'TrecFone',
+                'name' => 'TrecFone',
+                'brandname' => 'TrecFone',
+                'key' => 'trecfone',
+            ],
         ];
     }
 

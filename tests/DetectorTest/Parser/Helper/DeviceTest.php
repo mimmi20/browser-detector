@@ -993,9 +993,11 @@ final class DeviceTest extends TestCase
             ['ZTE A2022PY', 'zte=zte a2022py'],
             ['ZTE A2022P', 'zte=zte a2022p'],
             ['ZTE A2022PG', 'zte=zte a2022pg'],
+            ['A2022PG', 'zte=zte a2022pg'],
             ['A2022P', 'zte=zte a2022p'],
             ['ZTE A2022', 'zte=zte a2022'],
             ['A2022', 'zte=zte a2022'],
+            ['5G UG Phone U25', 'zte=zte 5g ug phone u25'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -5187,6 +5189,8 @@ final class DeviceTest extends TestCase
             ['U680AC', 'cricket=cricket u680ac'],
             ['U380AC', 'cricket=cricket u380ac'],
             ['U6080AC', 'cricket=cricket u6080ac'],
+            ['U655AC', 'cricket=cricket u655ac'],
+            ['U572AC', 'cricket=cricket u572ac'],
             // mintt
             ['COOLMINTT A8', 'mintt=mintt coolmintt a8'],
             // ajib
@@ -5433,6 +5437,7 @@ final class DeviceTest extends TestCase
             ['SL-LED43S98T2SU', 'scoole=scoole sl-led43s98t2su'],
             ['SL-LED43S94T2S', 'scoole=scoole sl-led43s94t2s'],
             ['SL-LED24S90T2S', 'scoole=scoole sl-led24s90t2s'],
+            ['SL-LED55S02T2SU', 'scoole=scoole sl-led55s02t2su'],
             // soundmax
             ['SM-QLED50T21SU', 'soundmax=soundmax sm-qled50t21su'],
             ['SM-LED32M07S', 'soundmax=soundmax sm-led32m07s'],
@@ -5454,6 +5459,7 @@ final class DeviceTest extends TestCase
             // krono
             ['NET ALPHA', 'krono=krono net alpha'],
             ['NET HIT', 'krono=krono net hit'],
+            ['NET_R7', 'krono=krono net r7'],
             // calme
             ['4G-Hero', 'calme=calme 4g hero'],
             ['4G Hot', 'calme=calme 4g hot'],
@@ -5495,6 +5501,7 @@ final class DeviceTest extends TestCase
             // maxwest
             ['MX-A65', 'maxwest=maxwest mx-a65'],
             ['MX-A64', 'maxwest=maxwest mx-a64'],
+            ['NITRO_G55', 'maxwest=maxwest nitro g55'],
             // condor
             ['GT60 PRO', 'condor=condor gt60 pro'],
             ['GT60', 'condor=condor gt60'],
@@ -5536,6 +5543,7 @@ final class DeviceTest extends TestCase
             ['PlatinumTAB11_4G', 'blow-platinum=blow-platinum tab 11 4g'],
             // cepter
             ['CEPTERTAB10L', 'cepter=cepter tab 10l'],
+            ['CEPTERTAB101', 'cepter=cepter tab 101'],
             // clovertek
             ['Clovertek_G12', 'clovertek=clovertek g12'],
             // visual-land
@@ -5577,6 +5585,7 @@ final class DeviceTest extends TestCase
             ['MES-B3', 'meswao=meswao mes-b3'],
             // colorroom
             ['K10C', 'colorroom=colorroom k10c'],
+            ['C3_Pro', 'colorroom=colorroom c3 pro'],
             // erisson
             ['32LES904T2SM', 'erisson=erisson 32les904t2sm'],
             ['24LM8002CT2', 'erisson=erisson 24lm8002ct2'],
@@ -5591,6 +5600,27 @@ final class DeviceTest extends TestCase
             ['VTL-202301', 'vertu=vertu vtl-202301'],
             // oysters
             ['UBS1', 'oysters=oysters ubs1'],
+            // honkuahg
+            ['EV10', 'honkuahg=honkuahg ev10'],
+            // egotek
+            ['EGO1003', 'egotek=egotek ego1003'],
+            // zzb
+            ['ZB30', 'zzb=zzb zb30'],
+            // hometech
+            ['ALFA_10BT_V2', 'hometech=hometech alfa 10bt v2'],
+            ['Alfa 11 BT', 'hometech=hometech alfa 11 bt'],
+            // newal
+            ['NEWAL_TV_UHD-5042', 'newal=newal uhd-5042'],
+            // sber
+            ['SBDV-00006', 'sber=sber sbdv-00006'],
+            // senna
+            ['32SN6000H', 'senna=senna 32sn6000h'],
+            ['SENNA_43SN6000F', 'senna=senna 43sn6000f'],
+            // x-view
+            ['FTB13', 'x-view=x-view ftb13'],
+            ['Proton Lite', 'x-view=x-view proton lite'],
+            // trecfone
+            ['17_Pro_Max', 'trecfone=trecfone 17 pro max'],
             // other
             ['Model"', null],
             [': "', null],

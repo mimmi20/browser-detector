@@ -285,6 +285,20 @@ enum Company: string implements CompanyInterface
 
     case vision = 'Vision';
 
+    case honkuahg = 'HONKUAHG';
+
+    case egotek = 'Egotek';
+
+    case zzb = 'ZZB';
+
+    case newal = 'NEWAL';
+
+    case sber = 'Sber';
+
+    case senna = 'Senna';
+
+    case trecfone = 'TrecFone';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -426,6 +440,13 @@ enum Company: string implements CompanyInterface
             'colorroom' => self::colorroom,
             'erisson' => self::erisson,
             'vision', 'vision technology', 'vision-technology' => self::vision,
+            'honkuahg' => self::honkuahg,
+            'egotek' => self::egotek,
+            'zzb' => self::zzb,
+            'newal' => self::newal,
+            'sber' => self::sber,
+            'senna' => self::senna,
+            'trecfone' => self::trecfone,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
