@@ -998,6 +998,11 @@ final class DeviceTest extends TestCase
             ['ZTE A2022', 'zte=zte a2022'],
             ['A2022', 'zte=zte a2022'],
             ['5G UG Phone U25', 'zte=zte 5g ug phone u25'],
+            ['ZTE A2022H', 'zte=zte a2022h'],
+            ['A2022H', 'zte=zte a2022h'],
+            ['ZTE A2022L', 'zte=zte a2022l'],
+            ['A2022L', 'zte=zte a2022l'],
+            ['ZTE 8000', 'zte=zte 8000'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],

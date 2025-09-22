@@ -1,26 +1,23 @@
 [
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; EGO1003 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.178 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
+      "deviceName": "EGO1003",
+      "marketingName": "EGO1003",
+      "manufacturer": "egotek",
+      "brand": "egotek",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
         "touch": true,
         "size": null
       },
-      "type": "smartphone",
+      "type": "tablet",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -28,14 +25,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "13.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "110.0.0",
+      "version": "121.0.6167.178",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
@@ -43,7 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "110.0.0.0",
+      "version": "121.0.6167.178",
       "manufacturer": "google"
     }
   }

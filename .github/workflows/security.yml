@@ -1,0 +1,21 @@
+name: "OX Security Scan"
+on:
+  push:
+    branches:
+      - "master"
+  pull_request:
+    types: ["opened", "reopened", "synchronize"]
+    branches:
+      - "master"
+
+permissions:
+  contents: read
+
+jobs:
+  security:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Run OX Security Scan to check for vulnerabilities"
+        with:
+          ox_api_key: ${{ secrets.OX_API_KEY }}
+        uses: "oxsecurity/ox-security-scan@1.0.0"

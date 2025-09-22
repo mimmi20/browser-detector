@@ -10,6 +10,9 @@ on:
       - "closed"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   cleanup:
     runs-on: "ubuntu-latest"

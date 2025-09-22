@@ -5,31 +5,32 @@ on:
     paths:
       - ".github/**"
 
+permissions:
+  contents: read
+
 jobs:
   actionlint:
+    uses: "mimmi20/ci/.github/workflows/lint-actions.yml@master"
+    with:
+      skip-nasm-install: false
+      skip-libimagequant-install: false
+
+  # This is a meta job to avoid to have to constantly change the protection rules
+  # whenever we touch the matrix.
+  lint-status:
+    name: "Lint Status"
+
     runs-on: "ubuntu-latest"
 
+    if: always()
+
+    needs: "actionlint"
+
     steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v5"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-          lfs: false
-          persist-credentials: false
+      - name: Failing run
+        if: ${{ contains(needs.*.result, 'failure') }}
+        run: exit 1
 
-      - name: "install libimagequant-dev"
-        run: "sudo apt-get install libimagequant-dev -y"
-
-      - name: "Use Node.js 22.4"
-        uses: "actions/setup-node@v5"
-        with:
-          node-version: "22.4"
-
-      - name: "Check workflow files"
-        uses: "raven-actions/actionlint@v2"
-        with:
-          matcher: true
-          cache: true
-          fail-on-error: false
-          flags: "-ignore SC2086"
+      - name: Successful run
+        if: ${{ !(contains(needs.*.result, 'failure')) }}
+        run: exit 0

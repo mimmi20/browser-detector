@@ -962,6 +962,9 @@ final class Device implements DeviceInterface
             'zte a2022pg', 'a2022pg' => 'zte=zte a2022pg',
             'zte a2022', 'a2022' => 'zte=zte a2022',
             '5g ug phone u25' => 'zte=zte 5g ug phone u25',
+            'zte a2022h', 'a2022h' => 'zte=zte a2022h',
+            'zte a2022l', 'a2022l' => 'zte=zte a2022l',
+            'zte 8000' => 'zte=zte 8000',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
