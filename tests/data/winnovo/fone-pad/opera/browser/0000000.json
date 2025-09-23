@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Opera Mobile",
+      "modus": null,
       "version": "43.0.2246.121183",
       "manufacturer": "opera",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

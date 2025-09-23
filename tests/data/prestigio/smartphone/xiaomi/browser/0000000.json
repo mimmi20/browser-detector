@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Miui Browser",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "xiaomi",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Mint Browser",
+      "modus": null,
       "version": "3.3.1",
       "manufacturer": "xiaomi",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

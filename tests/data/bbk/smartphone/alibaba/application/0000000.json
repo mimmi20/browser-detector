@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.1",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Taobao",
+      "modus": null,
       "version": "7.5.4",
       "manufacturer": "alibaba",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -68,14 +71,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Taobao",
+      "modus": null,
       "version": "7.9.1",
       "manufacturer": "alibaba",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -110,14 +116,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Taobao",
+      "modus": null,
       "version": "7.10.6",
       "manufacturer": "alibaba",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -152,14 +161,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.1",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Taobao",
+      "modus": null,
       "version": "7.9.0",
       "manufacturer": "alibaba",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -194,14 +206,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.3.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Taobao",
+      "modus": null,
       "version": "7.8.6.6",
       "manufacturer": "alibaba",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -236,14 +251,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Taobao",
+      "modus": null,
       "version": "7.8.2",
       "manufacturer": "alibaba",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -278,14 +296,62 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Taobao",
+      "modus": null,
       "version": "7.8.2",
       "manufacturer": "alibaba",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; vivo X21 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.9.4.974 UWS/2.14.0.9 Mobile Safari/537.36 AliApp(TB/7.9.2) UCBS/2.11.1.1 TTID/600129@taobao_android_7.9.2 WindVane/8.3.0 1080X2280"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X21",
+      "marketingName": "X21",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.28
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Taobao",
+      "modus": null,
+      "version": "7.9.2",
+      "manufacturer": "alibaba",
+      "type": "application",
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

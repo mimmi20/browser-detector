@@ -27,14 +27,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "360 Security",
+      "modus": null,
       "version": null,
       "manufacturer": "qihoo",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

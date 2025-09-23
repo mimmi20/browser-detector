@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Yahoo! App",
+      "modus": null,
       "version": "3.15.1",
       "manufacturer": "yahoo",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

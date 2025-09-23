@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Sogou Mobile Browser",
+      "modus": null,
       "version": "4.1.0",
       "manufacturer": "sogou",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.1",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "WeChat App",
+      "modus": null,
       "version": "6.2.0.54+1169949",
       "manufacturer": "tencent",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

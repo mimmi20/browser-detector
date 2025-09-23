@@ -32,14 +32,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Chrome",
+      "modus": null,
       "version": "123.0.6312.80",
       "manufacturer": "google",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -80,14 +83,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Chrome",
+      "modus": null,
       "version": "111.0.5563.116",
       "manufacturer": "google",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

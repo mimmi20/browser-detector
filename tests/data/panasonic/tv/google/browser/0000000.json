@@ -26,14 +26,17 @@
       "name": "Maemo",
       "marketingName": "Maemo",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Android Webkit",
+      "modus": null,
       "version": null,
       "manufacturer": "google",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

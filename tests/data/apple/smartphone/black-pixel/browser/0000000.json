@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "NetNewsWire",
+      "modus": null,
       "version": "2.0.5",
       "manufacturer": "black-pixel",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

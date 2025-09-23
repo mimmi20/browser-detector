@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "6.1.6",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Google App",
+      "modus": null,
       "version": "3.2.1.25875",
       "manufacturer": "google",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

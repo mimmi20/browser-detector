@@ -26,14 +26,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.14.5",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Pinterest App",
+      "modus": null,
       "version": null,
       "manufacturer": "pinterest",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

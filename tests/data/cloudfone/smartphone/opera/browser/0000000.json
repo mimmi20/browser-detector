@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.5",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Opera Mobile",
+      "modus": null,
       "version": "14.0.1074.54070",
       "manufacturer": "opera",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

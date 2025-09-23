@@ -26,14 +26,17 @@
       "name": "Windows Phone OS",
       "marketingName": "Windows Phone OS",
       "version": "7.10.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Windows Phone Search",
+      "modus": null,
       "version": null,
       "manufacturer": "microsoft",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

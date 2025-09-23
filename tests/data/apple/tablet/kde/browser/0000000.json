@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Konqueror",
+      "modus": null,
       "version": "17.18.0",
       "manufacturer": "kde",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

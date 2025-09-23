@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": null,
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Ninesky Browser",
+      "modus": null,
       "version": "2.1.0",
       "manufacturer": "nine-sky",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Ninesky Browser",
+      "modus": null,
       "version": "2.0.2",
       "manufacturer": "nine-sky",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

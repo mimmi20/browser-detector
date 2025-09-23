@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Evernote App",
+      "modus": null,
       "version": null,
       "manufacturer": "evernote",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

@@ -26,14 +26,17 @@
       "name": "Macintosh",
       "marketingName": "Macintosh",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Espial TV Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "espial-group",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

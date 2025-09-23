@@ -26,14 +26,17 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Blazer",
+      "modus": null,
       "version": "4.0.0",
       "manufacturer": "palm",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -68,14 +71,17 @@
       "name": "Series 60",
       "marketingName": "Series 60",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "nokia",
+      "bits": null
     },
     "client": {
       "name": "Blazer",
+      "modus": null,
       "version": "4.0.0",
       "manufacturer": "palm",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

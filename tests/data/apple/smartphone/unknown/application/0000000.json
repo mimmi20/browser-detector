@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.4.1",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Client",
+      "modus": null,
       "version": "103.1.0",
       "manufacturer": "unknown",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

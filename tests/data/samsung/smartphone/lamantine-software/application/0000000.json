@@ -27,14 +27,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Sticky Password",
+      "modus": null,
       "version": null,
       "manufacturer": "lamantine-software",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

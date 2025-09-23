@@ -26,14 +26,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Viera Browser",
+      "modus": null,
       "version": "1.5.2",
       "manufacturer": "panasonic",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Viera Browser",
+      "modus": null,
       "version": "3.11.0",
       "manufacturer": "panasonic",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -110,14 +116,17 @@
       "name": null,
       "marketingName": null,
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Viera Browser",
+      "modus": null,
       "version": "3.10.15",
       "manufacturer": "panasonic",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

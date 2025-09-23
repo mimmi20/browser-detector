@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "12.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "SurfBrowser",
+      "modus": null,
       "version": "9.0.0",
       "manufacturer": "gl9",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "iPhone OS",
       "marketingName": "iPhone OS",
       "version": "3.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "SurfBrowser",
+      "modus": null,
       "version": "2.0.3",
       "manufacturer": "gl9",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

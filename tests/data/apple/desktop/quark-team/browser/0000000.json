@@ -26,14 +26,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.15.7",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Quark",
+      "modus": null,
       "version": "2.0.5.213",
       "manufacturer": "quark-team",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

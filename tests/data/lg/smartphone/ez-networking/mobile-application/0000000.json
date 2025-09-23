@@ -27,14 +27,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "EZVPN",
+      "modus": null,
       "version": null,
       "manufacturer": "ez-networking",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

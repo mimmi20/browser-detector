@@ -26,14 +26,17 @@
       "name": null,
       "marketingName": null,
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Konqueror",
+      "modus": null,
       "version": "3.1.0-RC+2",
       "manufacturer": "kde",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "KHTML",

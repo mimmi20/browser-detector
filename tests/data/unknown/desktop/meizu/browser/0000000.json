@@ -26,14 +26,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.2.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Meizu Browser",
+      "modus": null,
       "version": "6.9.610.2018032018",
       "manufacturer": "meizu",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

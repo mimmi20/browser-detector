@@ -26,14 +26,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": "10.04.0",
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "Adbeat Bot",
+      "modus": null,
       "version": null,
       "manufacturer": "adbeat",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Adbeat Bot",
+      "modus": null,
       "version": null,
       "manufacturer": "adbeat",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

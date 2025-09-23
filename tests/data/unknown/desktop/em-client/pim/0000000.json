@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "10.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "eM Client",
+      "modus": null,
       "version": "7.1.30440.0",
       "manufacturer": "em-client",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

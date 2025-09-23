@@ -26,14 +26,17 @@
       "name": "Darwin",
       "marketingName": "Darwin",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Konqueror",
+      "modus": null,
       "version": "3.5.0",
       "manufacturer": "kde",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "KHTML",

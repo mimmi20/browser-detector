@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Hatena Antenna",
+      "modus": null,
       "version": "0.5.0",
       "manufacturer": "hatena",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

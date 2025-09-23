@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.3.2",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Tanso Download Manager",
+      "modus": null,
       "version": null,
       "manufacturer": "web-expansion",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

@@ -9,8 +9,8 @@
       "marketingName": "T72HA 3G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Yandex Browser",
+      "modus": null,
       "version": "15.6.2311.6088.01",
       "manufacturer": "yandex",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -51,8 +54,8 @@
       "marketingName": "T72ER 3G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -68,14 +71,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Yandex Browser",
+      "modus": null,
       "version": "14.10.2062.12160.01",
       "manufacturer": "yandex",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -93,8 +99,8 @@
       "marketingName": "T72N 3G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -110,14 +116,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Yandex Browser",
+      "modus": null,
       "version": "15.6.2311.6088.01",
       "manufacturer": "yandex",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -135,8 +144,8 @@
       "marketingName": "T104ER 4G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -152,14 +161,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Yandex Browser",
+      "modus": null,
       "version": "15.4.2272.3608.01",
       "manufacturer": "yandex",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

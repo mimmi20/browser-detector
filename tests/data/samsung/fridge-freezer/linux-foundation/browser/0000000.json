@@ -26,14 +26,17 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "2.3.0",
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Tizen Browser",
+      "modus": null,
       "version": "2.3.0",
       "manufacturer": "linux-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

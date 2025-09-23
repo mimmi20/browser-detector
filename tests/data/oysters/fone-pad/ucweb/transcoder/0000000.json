@@ -9,8 +9,8 @@
       "marketingName": "T72HRi 3G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": null,
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "UC Browser",
+      "modus": null,
       "version": "9.5.1.494",
       "manufacturer": "ucweb",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "U2",
@@ -51,8 +54,8 @@
       "marketingName": "T37 3G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -68,14 +71,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.4",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "UC Browser",
+      "modus": null,
       "version": "10.0.1.512",
       "manufacturer": "ucweb",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "U3",

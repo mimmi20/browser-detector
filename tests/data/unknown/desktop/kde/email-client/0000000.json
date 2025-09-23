@@ -26,14 +26,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "KMail2",
+      "modus": null,
       "version": "4.14.2",
       "manufacturer": "kde",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Kontact",
+      "modus": null,
       "version": "4.14.9",
       "manufacturer": "kde",
       "type": "email-client",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

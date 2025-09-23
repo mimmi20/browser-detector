@@ -32,14 +32,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Chrome",
+      "modus": null,
       "version": "118.0.5993.80",
       "manufacturer": "google",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

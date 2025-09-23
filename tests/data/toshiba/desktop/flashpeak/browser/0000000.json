@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "SlimBrowser",
+      "modus": null,
       "version": null,
       "manufacturer": "flashpeak",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

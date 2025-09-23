@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "8.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Wayback Archive Bot",
+      "modus": null,
       "version": null,
       "manufacturer": "archive.org",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

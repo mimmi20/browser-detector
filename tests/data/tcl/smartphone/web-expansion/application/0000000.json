@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.1.1",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Tanso Download Manager",
+      "modus": null,
       "version": null,
       "manufacturer": "web-expansion",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

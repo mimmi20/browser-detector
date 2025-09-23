@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "thumbnail.ws Bot",
+      "modus": null,
       "version": null,
       "manufacturer": "thumbnail.ws",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

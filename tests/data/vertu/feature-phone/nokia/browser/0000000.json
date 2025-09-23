@@ -9,8 +9,8 @@
       "marketingName": "Constellation T",
       "manufacturer": "vertu",
       "brand": "vertu",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 640,
         "height": 320,
@@ -26,14 +26,17 @@
       "name": "Series 60",
       "marketingName": "Series 60",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "nokia",
+      "bits": null
     },
     "client": {
       "name": "Nokia Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "nokia",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

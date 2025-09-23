@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "7.1.2",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Schoolwires App",
+      "modus": null,
       "version": null,
       "manufacturer": "schoolwires",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

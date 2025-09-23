@@ -26,14 +26,17 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation"
+      "manufacturer": "symbian-foundation",
+      "bits": null
     },
     "client": {
       "name": "Qt",
+      "modus": null,
       "version": "4.7.4",
       "manufacturer": "unknown",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Series 60",
       "marketingName": "Series 60",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "nokia",
+      "bits": null
     },
     "client": {
       "name": "iBrowser",
+      "modus": null,
       "version": "2.7.0",
       "manufacturer": "unknown",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

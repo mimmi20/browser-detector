@@ -26,14 +26,17 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "4.5.0.131",
-      "manufacturer": "rim"
+      "manufacturer": "rim",
+      "bits": null
     },
     "client": {
       "name": "FlyCast",
+      "modus": null,
       "version": "1.34.0",
       "manufacturer": "unknown",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "black-berry",

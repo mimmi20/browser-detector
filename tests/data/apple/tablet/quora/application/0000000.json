@@ -26,14 +26,17 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "14.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Quora App",
+      "modus": null,
       "version": "8.4.25",
       "manufacturer": "quora",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

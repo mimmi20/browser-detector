@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "SMTBot",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "similar-tech",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

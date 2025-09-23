@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "WebPagetest",
+      "modus": null,
       "version": null,
       "manufacturer": "wpo-foundation",
       "type": "site-monitor",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

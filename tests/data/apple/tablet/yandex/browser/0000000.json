@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "9.2.1",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Yandex Browser",
+      "modus": null,
       "version": "15.12.2490.5202.11",
       "manufacturer": "yandex",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "13.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Yandex Browser",
+      "modus": null,
       "version": "19.12.2.263.11",
       "manufacturer": "yandex",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

@@ -9,8 +9,8 @@
       "marketingName": "T80 3G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 768,
@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "CM Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "cheetah-mobile",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

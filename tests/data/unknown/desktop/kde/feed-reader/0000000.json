@@ -26,14 +26,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "akregator",
+      "modus": null,
       "version": "4.11.5",
       "manufacturer": "kde",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "akregator",
+      "modus": null,
       "version": "4.14.1",
       "manufacturer": "kde",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

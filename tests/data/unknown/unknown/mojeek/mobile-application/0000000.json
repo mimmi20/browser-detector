@@ -30,14 +30,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": null,
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Mojeek App",
+      "modus": null,
       "version": null,
       "manufacturer": "mojeek",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

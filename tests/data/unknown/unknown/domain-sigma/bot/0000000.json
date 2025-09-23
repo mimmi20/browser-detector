@@ -26,14 +26,17 @@
       "name": null,
       "marketingName": null,
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "DomainSigmaCrawler",
+      "modus": null,
       "version": "0.1.0",
       "manufacturer": "domain-sigma",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

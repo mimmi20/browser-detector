@@ -26,14 +26,17 @@
       "name": "RIM Tablet OS",
       "marketingName": "RIM Tablet OS",
       "version": "2.1.0",
-      "manufacturer": "rim"
+      "manufacturer": "rim",
+      "bits": null
     },
     "client": {
       "name": "Blackberry Playbook Browser",
+      "modus": null,
       "version": "7.2.1.0",
       "manufacturer": "rim",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

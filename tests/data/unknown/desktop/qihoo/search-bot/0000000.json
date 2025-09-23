@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "360Spider",
+      "modus": null,
       "version": null,
       "manufacturer": "qihoo",
       "type": "search-bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Trident",
@@ -68,14 +71,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "360Spider",
+      "modus": null,
       "version": null,
       "manufacturer": "qihoo",
       "type": "search-bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

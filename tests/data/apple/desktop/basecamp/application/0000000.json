@@ -26,14 +26,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.12.5",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Basecamp3",
+      "modus": null,
       "version": "1.6.0",
       "manufacturer": "basecamp",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

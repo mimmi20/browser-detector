@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "UC Browser",
+      "modus": null,
       "version": "11.0.5.850",
       "manufacturer": "ucweb",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "U3",

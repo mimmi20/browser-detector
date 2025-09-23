@@ -4,8 +4,8 @@
     "marketingName": "Ideal Tab 10",
     "manufacturer": "hometech",
     "brand": "hometech",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -20,13 +20,61 @@
     "marketingName": "MID708",
     "manufacturer": "hometech",
     "brand": "hometech",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
       "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "hometech 7 premium pro": {
+    "deviceName": "7 Premium Pro",
+    "marketingName": "7 Premium Pro",
+    "manufacturer": "hometech",
+    "brand": "hometech",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "hometech alfa 10bt v2": {
+    "deviceName": "ALFA 10BT V2",
+    "marketingName": "ALFA 10BT V2",
+    "manufacturer": "hometech",
+    "brand": "hometech",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "hometech alfa 11 bt": {
+    "deviceName": "ALFA 11 BT",
+    "marketingName": "ALFA 11 BT",
+    "manufacturer": "hometech",
+    "brand": "hometech",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.95
     },
     "type": "tablet",
     "platform": "android"

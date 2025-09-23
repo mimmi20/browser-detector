@@ -26,14 +26,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "34.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -68,14 +71,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "34.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

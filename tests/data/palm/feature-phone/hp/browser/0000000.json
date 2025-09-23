@@ -26,14 +26,17 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": "1.4.5",
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "webOS Browser",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "hp",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": "1.0.0",
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "webOS Browser",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "hp",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

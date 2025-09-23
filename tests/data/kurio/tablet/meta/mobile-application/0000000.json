@@ -9,8 +9,8 @@
       "marketingName": "7S",
       "manufacturer": "kurio",
       "brand": "kurio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Facebook App",
+      "modus": null,
       "version": "29.0.0.23.13",
       "manufacturer": "meta",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

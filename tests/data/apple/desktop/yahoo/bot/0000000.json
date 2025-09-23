@@ -26,14 +26,17 @@
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
       "version": "10.11.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Slurp",
+      "modus": null,
       "version": null,
       "manufacturer": "yahoo",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

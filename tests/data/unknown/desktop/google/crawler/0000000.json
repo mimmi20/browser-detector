@@ -26,14 +26,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Gmail Image Proxy",
+      "modus": null,
       "version": null,
       "manufacturer": "google",
       "type": "crawler",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

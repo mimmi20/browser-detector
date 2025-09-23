@@ -26,14 +26,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.12.4",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Whale Browser",
+      "modus": null,
       "version": "0.10.36.14",
       "manufacturer": "nhn-corporation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

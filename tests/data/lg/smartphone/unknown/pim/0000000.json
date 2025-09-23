@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Kik",
+      "modus": null,
       "version": "11.33.0.18125",
       "manufacturer": "unknown",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

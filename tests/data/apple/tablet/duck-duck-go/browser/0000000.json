@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "8.4.1",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "duck-duck-go",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "13.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
       "version": "7.0.0",
       "manufacturer": "duck-duck-go",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

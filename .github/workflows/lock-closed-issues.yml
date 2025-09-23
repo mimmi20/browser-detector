@@ -9,10 +9,15 @@ on:
     types:
       - "closed"
 
+permissions:
+  contents: read
+
 jobs:
   lock:
+    name: "Lock"
     runs-on: "ubuntu-latest"
+    permissions:
+      issues: write
     steps:
-      - uses: "Dunning-Kruger/lock-issues@v1.2"
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: "Lock issue"
+        uses: "IOrlandoni/lock-issues@v1.2.1"

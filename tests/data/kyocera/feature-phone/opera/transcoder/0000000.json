@@ -29,14 +29,17 @@
       "name": "Brew",
       "marketingName": "Brew",
       "version": "1.0.2",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Opera Mini",
+      "modus": null,
       "version": "7.1.32052",
       "manufacturer": "opera",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Presto",

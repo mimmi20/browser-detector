@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Lighthouse",
+      "modus": null,
       "version": null,
       "manufacturer": "google",
       "type": "site-monitor",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

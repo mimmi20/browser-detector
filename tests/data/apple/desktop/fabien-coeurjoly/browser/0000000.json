@@ -26,14 +26,17 @@
       "name": "MorphOS",
       "marketingName": "MorphOS",
       "version": null,
-      "manufacturer": "fabien coeurjoly"
+      "manufacturer": "fabien coeurjoly",
+      "bits": null
     },
     "client": {
       "name": "Odyssey Web Browser",
+      "modus": null,
       "version": "1.23.0",
       "manufacturer": "fabien coeurjoly",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "Amiga OS",
       "marketingName": "Amiga OS",
       "version": "4.1.0",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Odyssey Web Browser",
+      "modus": null,
       "version": "1.23.0",
       "manufacturer": "fabien coeurjoly",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

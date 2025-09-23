@@ -26,14 +26,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "newsbeuter RSS Aggregator",
+      "modus": null,
       "version": "2.7.0",
       "manufacturer": "andreas krennmair",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

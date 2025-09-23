@@ -26,14 +26,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.12.3",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "StormCrawler",
+      "modus": null,
       "version": null,
       "manufacturer": "digital-pebble",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

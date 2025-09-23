@@ -26,14 +26,17 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "UC Browser",
+      "modus": null,
       "version": "7.8.0.95",
       "manufacturer": "ucweb",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

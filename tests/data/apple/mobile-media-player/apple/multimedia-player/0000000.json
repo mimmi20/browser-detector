@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "7.1.1",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "CoreMedia",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "apple",
       "type": "multimedia-player",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "iTunes",
+      "modus": null,
       "version": "4.0.0",
       "manufacturer": "apple",
       "type": "multimedia-player",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

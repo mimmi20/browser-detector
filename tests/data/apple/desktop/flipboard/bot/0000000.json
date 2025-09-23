@@ -26,14 +26,17 @@
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
       "version": "10.9.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "FlipboardProxy",
+      "modus": null,
       "version": "1.1.0",
       "manufacturer": "flipboard",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

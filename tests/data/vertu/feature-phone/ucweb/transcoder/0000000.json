@@ -9,8 +9,8 @@
       "marketingName": "Constellation T",
       "manufacturer": "vertu",
       "brand": "vertu",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 640,
         "height": 320,
@@ -26,14 +26,17 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation"
+      "manufacturer": "symbian-foundation",
+      "bits": null
     },
     "client": {
       "name": "UC Browser",
+      "modus": null,
       "version": "9.1.0.319",
       "manufacturer": "ucweb",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "U2",

@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Baidu Box App",
+      "modus": null,
       "version": "10.5.0.10",
       "manufacturer": "baidu",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -68,14 +71,17 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "2.1.0",
-      "manufacturer": "huawei"
+      "manufacturer": "huawei",
+      "bits": null
     },
     "client": {
       "name": "Baidu Box App",
+      "modus": null,
       "version": "12.23.5.10",
       "manufacturer": "baidu",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "T7",

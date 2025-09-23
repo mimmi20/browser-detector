@@ -26,14 +26,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "6.0.1",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Bing Preview",
+      "modus": null,
       "version": "1.0.0-beta",
       "manufacturer": "microsoft",
       "type": "search-bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "7.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "BingBot",
+      "modus": null,
       "version": "2.0.0",
       "manufacturer": "microsoft",
       "type": "search-bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

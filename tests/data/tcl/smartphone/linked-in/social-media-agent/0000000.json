@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "LinkedInBot",
+      "modus": null,
       "version": null,
       "manufacturer": "linked-in",
       "type": "social-media-agent",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

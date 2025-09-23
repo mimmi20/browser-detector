@@ -26,14 +26,17 @@
       "name": "Windows Phone OS",
       "marketingName": "Windows Phone OS",
       "version": "10.0.13384.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Windows Phone Ad Client",
+      "modus": null,
       "version": "6.2.960.0",
       "manufacturer": "microsoft",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

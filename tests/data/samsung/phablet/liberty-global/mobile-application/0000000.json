@@ -27,14 +27,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "UPC Internet Security",
+      "modus": null,
       "version": null,
       "manufacturer": "liberty-global",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

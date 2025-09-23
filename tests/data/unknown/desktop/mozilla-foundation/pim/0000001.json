@@ -26,14 +26,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.30.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -68,14 +71,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Thunderbird",
+      "modus": null,
       "version": "52.3.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -110,14 +116,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.23.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -152,14 +161,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "1.1.20-dev",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -194,14 +206,17 @@
       "name": "Slackware Linux",
       "marketingName": "Slackware Linux",
       "version": null,
-      "manufacturer": "slackware"
+      "manufacturer": "slackware",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.19.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -236,14 +251,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": "6.3.0",
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "16.11.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -278,14 +296,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": "4.5.0",
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "13.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -320,14 +341,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": "1.2.0",
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "4.6.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -362,14 +386,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": "6.9.0",
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "12.5.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -404,14 +431,17 @@
       "name": "Unix",
       "marketingName": "Unix",
       "version": "1.1.0",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "11.4.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -446,14 +476,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "1.5.0",
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.10.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -488,14 +521,17 @@
       "name": "Unix",
       "marketingName": "Unix",
       "version": "2.3.0",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "16.9.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -530,14 +566,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.49.2",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -572,14 +611,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.3.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -614,14 +656,17 @@
       "name": "OS/2",
       "marketingName": "OS/2",
       "version": "4.5.0",
-      "manufacturer": "ibm"
+      "manufacturer": "ibm",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.21.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -656,14 +701,17 @@
       "name": "OS/2",
       "marketingName": "OS/2",
       "version": "4.5.0",
-      "manufacturer": "ibm"
+      "manufacturer": "ibm",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.42.9",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -698,14 +746,17 @@
       "name": "OS/2",
       "marketingName": "OS/2",
       "version": "4.5.0",
-      "manufacturer": "ibm"
+      "manufacturer": "ibm",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "2.35.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -740,14 +791,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "Thunderbird",
+      "modus": null,
       "version": "115.2.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

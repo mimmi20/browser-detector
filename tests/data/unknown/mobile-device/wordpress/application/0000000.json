@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": null,
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "WordPress App",
+      "modus": null,
       "version": null,
       "manufacturer": "wordpress",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

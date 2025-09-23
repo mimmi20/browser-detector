@@ -26,14 +26,17 @@
       "name": "Debian",
       "marketingName": "Debian",
       "version": null,
-      "manufacturer": "software-in-the-public-interest"
+      "manufacturer": "software-in-the-public-interest",
+      "bits": null
     },
     "client": {
       "name": "Apt HTTP Transport",
+      "modus": null,
       "version": "1.0.1",
       "manufacturer": "software-in-the-public-interest",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -68,14 +71,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": "6.0.0",
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "Apt HTTP Transport",
+      "modus": null,
       "version": "0.7.20.2",
       "manufacturer": "software-in-the-public-interest",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -110,14 +116,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "Apt HTTP Transport",
+      "modus": null,
       "version": "1.3.0",
       "manufacturer": "software-in-the-public-interest",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

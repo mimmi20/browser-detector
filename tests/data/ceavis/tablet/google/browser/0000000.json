@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "1.1.20",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Android Webkit",
+      "modus": null,
       "version": "4.0.0",
       "manufacturer": "google",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

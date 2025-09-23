@@ -26,14 +26,17 @@
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
       "version": "10.9.3",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "CM Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "cheetah-mobile",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

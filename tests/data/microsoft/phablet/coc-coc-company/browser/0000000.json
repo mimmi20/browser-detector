@@ -26,14 +26,17 @@
       "name": "Windows Phone OS",
       "marketingName": "Windows Phone OS",
       "version": "10.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Coc Coc Browser",
+      "modus": null,
       "version": "70.130.340",
       "manufacturer": "coc-coc-company",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Edge",

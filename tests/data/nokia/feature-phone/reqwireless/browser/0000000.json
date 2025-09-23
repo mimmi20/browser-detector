@@ -26,14 +26,17 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation"
+      "manufacturer": "symbian-foundation",
+      "bits": null
     },
     "client": {
       "name": "Reqwireless WebViewer",
+      "modus": null,
       "version": "2.0.0.0",
       "manufacturer": "reqwireless",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

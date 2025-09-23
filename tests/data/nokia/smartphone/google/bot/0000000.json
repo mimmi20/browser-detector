@@ -26,14 +26,17 @@
       "name": "Series 60",
       "marketingName": "Series 60",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "nokia",
+      "bits": null
     },
     "client": {
       "name": "Google Translate",
+      "modus": null,
       "version": null,
       "manufacturer": "google",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

@@ -26,14 +26,17 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems"
+      "manufacturer": "sun-microsystems",
+      "bits": null
     },
     "client": {
       "name": "UC Browser",
+      "modus": null,
       "version": "8.4.0.159",
       "manufacturer": "ucweb",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

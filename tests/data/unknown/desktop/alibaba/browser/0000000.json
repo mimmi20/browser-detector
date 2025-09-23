@@ -26,14 +26,17 @@
       "name": "Yun OS",
       "marketingName": "Yun OS",
       "version": "1.0.0.3",
-      "manufacturer": "alibaba"
+      "manufacturer": "alibaba",
+      "bits": null
     },
     "client": {
       "name": "Aliyun Browser",
+      "modus": null,
       "version": null,
       "manufacturer": "alibaba",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

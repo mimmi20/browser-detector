@@ -26,14 +26,17 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": null,
-      "manufacturer": "rim"
+      "manufacturer": "rim",
+      "bits": null
     },
     "client": {
       "name": "IBrowse",
+      "modus": null,
       "version": "12.20.0",
       "manufacturer": "unknown",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "black-berry",

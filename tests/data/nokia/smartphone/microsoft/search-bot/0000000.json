@@ -26,14 +26,17 @@
       "name": "Windows Phone OS",
       "marketingName": "Windows Phone OS",
       "version": "10.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Bing Preview",
+      "modus": null,
       "version": "1.0.0-beta",
       "manufacturer": "microsoft",
       "type": "search-bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Edge",

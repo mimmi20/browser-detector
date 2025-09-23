@@ -26,14 +26,17 @@
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
       "version": "10.11.1",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Wire App",
+      "modus": null,
       "version": "2.3.2553",
       "manufacturer": "wire-swiss",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

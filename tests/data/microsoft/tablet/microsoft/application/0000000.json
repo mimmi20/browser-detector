@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "OneNote",
+      "modus": null,
       "version": "16.0.13328.20478",
       "manufacturer": "microsoft",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

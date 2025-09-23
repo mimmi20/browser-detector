@@ -26,14 +26,17 @@
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
       "version": "10.5.5",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Stainless",
+      "modus": null,
       "version": "0.3.5",
       "manufacturer": "mesa",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +71,17 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "10.12.4",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Stainless",
+      "modus": null,
       "version": "0.8.0",
       "manufacturer": "mesa",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

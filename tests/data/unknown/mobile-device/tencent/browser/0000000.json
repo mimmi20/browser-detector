@@ -26,14 +26,17 @@
       "name": "Series 60",
       "marketingName": "Series 60",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "nokia",
+      "bits": null
     },
     "client": {
       "name": "QQ Browser",
+      "modus": null,
       "version": "2.9.0",
       "manufacturer": "tencent",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -68,14 +71,17 @@
       "name": null,
       "marketingName": null,
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "QQ Browser",
+      "modus": null,
       "version": "7.4.1",
       "manufacturer": "tencent",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

@@ -26,14 +26,17 @@
       "name": "MocorDroid",
       "marketingName": "MocorDroid",
       "version": "4.0.3",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "360 Browser",
+      "modus": null,
       "version": "6.9.9.14",
       "manufacturer": "qihoo",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

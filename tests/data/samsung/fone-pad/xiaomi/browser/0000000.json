@@ -26,14 +26,17 @@
       "name": "CyanogenMod",
       "marketingName": "CyanogenMod",
       "version": "10.1.0",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Miui Browser",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "xiaomi",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

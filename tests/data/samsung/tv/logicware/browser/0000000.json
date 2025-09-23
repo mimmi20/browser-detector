@@ -26,14 +26,17 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": null,
-      "manufacturer": "lg"
+      "manufacturer": "lg",
+      "bits": null
     },
     "client": {
       "name": "QtWebEngine",
+      "modus": null,
       "version": "5.2.1",
       "manufacturer": "logicware",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

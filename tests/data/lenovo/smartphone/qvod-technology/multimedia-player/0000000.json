@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.6",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Qvod Player Browser",
+      "modus": null,
       "version": "3.2.30",
       "manufacturer": "qvod-technology",
       "type": "multimedia-player",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

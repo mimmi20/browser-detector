@@ -257,6 +257,48 @@ enum Company: string implements CompanyInterface
 
     case jumper = 'Jumper';
 
+    case flycoay = 'Flycoay';
+
+    case magch = 'MAGCH';
+
+    case oangcc = 'Oangcc';
+
+    case aocwei = 'AOCWEI';
+
+    case aauw = 'AAUW';
+
+    case vale = 'Vale';
+
+    case relndoo = 'Relndoo';
+
+    case headwolf = 'HeadWolf';
+
+    case hezire = 'Hezire';
+
+    case weelikeit = 'Weelikeit';
+
+    case meswao = 'Meswao';
+
+    case colorroom = 'Colorroom';
+
+    case erisson = 'Erisson';
+
+    case vision = 'Vision';
+
+    case honkuahg = 'HONKUAHG';
+
+    case egotek = 'Egotek';
+
+    case zzb = 'ZZB';
+
+    case newal = 'NEWAL';
+
+    case sber = 'Sber';
+
+    case senna = 'Senna';
+
+    case trecfone = 'TrecFone';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -384,6 +426,27 @@ enum Company: string implements CompanyInterface
             'padpro' => self::padpro,
             'inoi' => self::inoi,
             'jumper' => self::jumper,
+            'flycoay' => self::flycoay,
+            'magch' => self::magch,
+            'oangcc' => self::oangcc,
+            'aocwei' => self::aocwei,
+            'aauw' => self::aauw,
+            'vale' => self::vale,
+            'relndoo' => self::relndoo,
+            'headwolf', 'head-wolf' => self::headwolf,
+            'hezire' => self::hezire,
+            'weelikeit' => self::weelikeit,
+            'meswao' => self::meswao,
+            'colorroom' => self::colorroom,
+            'erisson' => self::erisson,
+            'vision', 'vision technology', 'vision-technology' => self::vision,
+            'honkuahg' => self::honkuahg,
+            'egotek' => self::egotek,
+            'zzb' => self::zzb,
+            'newal' => self::newal,
+            'sber' => self::sber,
+            'senna' => self::senna,
+            'trecfone' => self::trecfone,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -421,6 +484,7 @@ enum Company: string implements CompanyInterface
             self::zebra => 'Zebra Technologies Corp.',
             self::moondrop => 'Chengdu Shuiyueyu Technology Co., Ltd.',
             self::hotPepper => 'Hot Pepper Mobile, Inc.',
+            self::vision => 'Vision Technology',
             self::unknown => null,
             default => $this->value,
         };
@@ -459,6 +523,8 @@ enum Company: string implements CompanyInterface
             self::eaglesoar => 'eagle-soar',
             self::blowPlatinum => 'blow-platinum',
             self::visualLand => 'visual-land',
+            self::headwolf => 'head-wolf',
+            self::vision => 'vision-technology',
             default => $this->name,
         };
     }

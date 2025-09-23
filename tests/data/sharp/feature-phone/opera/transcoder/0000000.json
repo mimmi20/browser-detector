@@ -26,14 +26,17 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems"
+      "manufacturer": "sun-microsystems",
+      "bits": null
     },
     "client": {
       "name": "Opera Mini",
+      "modus": null,
       "version": null,
       "manufacturer": "opera",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Presto",

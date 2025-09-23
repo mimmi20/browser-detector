@@ -26,14 +26,17 @@
       "name": "Nintendo OS",
       "marketingName": "Nintendo OS",
       "version": null,
-      "manufacturer": "nintendo"
+      "manufacturer": "nintendo",
+      "bits": null
     },
     "client": {
       "name": "NintendoBrowser",
+      "modus": null,
       "version": null,
       "manufacturer": "nintendo",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Presto",
@@ -68,14 +71,17 @@
       "name": "Nintendo OS",
       "marketingName": "Nintendo OS",
       "version": null,
-      "manufacturer": "nintendo"
+      "manufacturer": "nintendo",
+      "bits": null
     },
     "client": {
       "name": "NintendoBrowser",
+      "modus": null,
       "version": "1.0.0.7494",
       "manufacturer": "nintendo",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

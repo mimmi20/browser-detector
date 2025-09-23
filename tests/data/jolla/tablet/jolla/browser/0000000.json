@@ -26,14 +26,17 @@
       "name": "SailfishOS",
       "marketingName": "SailfishOS",
       "version": null,
-      "manufacturer": "jolla"
+      "manufacturer": "jolla",
+      "bits": null
     },
     "client": {
       "name": "Sailfish Browser",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "jolla",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

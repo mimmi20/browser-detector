@@ -26,14 +26,17 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": null,
-      "manufacturer": "rim"
+      "manufacturer": "rim",
+      "bits": null
     },
     "client": {
       "name": "SeaMonkey",
+      "modus": null,
       "version": "6.4.0",
       "manufacturer": "mozilla-foundation",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "black-berry",

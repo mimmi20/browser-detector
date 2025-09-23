@@ -26,14 +26,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.3",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -68,14 +71,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "5.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

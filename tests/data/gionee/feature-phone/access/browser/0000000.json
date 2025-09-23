@@ -26,14 +26,17 @@
       "name": "ThreadX",
       "marketingName": "ThreadX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "NetFront",
+      "modus": null,
       "version": "3.5.0",
       "manufacturer": "access",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "NetFront",

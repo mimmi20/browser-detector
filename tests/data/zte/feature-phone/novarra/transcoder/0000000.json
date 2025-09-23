@@ -26,14 +26,17 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems"
+      "manufacturer": "sun-microsystems",
+      "bits": null
     },
     "client": {
       "name": "Vision",
+      "modus": null,
       "version": "7.3.0",
       "manufacturer": "novarra",
       "type": "transcoder",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "NetFront",

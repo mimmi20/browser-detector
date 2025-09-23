@@ -26,14 +26,17 @@
       "name": "Windows 98",
       "marketingName": "Windows 98",
       "version": "98.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Netgem Set Top Box",
+      "modus": null,
       "version": null,
       "manufacturer": "unknown",
       "type": "multimedia-player",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

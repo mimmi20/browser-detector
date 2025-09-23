@@ -9,8 +9,8 @@
       "marketingName": "T72M 3G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Baidu Browser",
+      "modus": null,
       "version": "4.2.0.4",
       "manufacturer": "baidu",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -51,8 +54,8 @@
       "marketingName": "T72M 3G",
       "manufacturer": "oysters",
       "brand": "oysters",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -68,14 +71,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Baidu Browser",
+      "modus": null,
       "version": "4.6.0.7",
       "manufacturer": "baidu",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "T5",

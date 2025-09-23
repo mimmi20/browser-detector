@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "EvernoteShare/313631 CFNetwork/711.1.16 Darwin/14.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.1.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Evernote App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "evernote",
+      "type": "pim",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "711.1.16",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "EvernoteShare/346642 CFNetwork/808.0.2 Darwin/16.0.0"
     },
     "device": {
@@ -26,14 +71,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "10.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Evernote App",
+      "modus": null,
       "version": null,
       "manufacturer": "evernote",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,14 +116,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Evernote App",
+      "modus": null,
       "version": "1108952.0.0",
       "manufacturer": "evernote",
       "type": "pim",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

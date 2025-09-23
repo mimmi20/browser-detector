@@ -26,14 +26,17 @@
       "name": "Brew",
       "marketingName": "Brew",
       "version": "3.1.5",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Polaris",
+      "modus": null,
       "version": "6.0.0",
       "manufacturer": "infraware",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

@@ -26,14 +26,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.8",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -68,14 +71,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "5.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -110,14 +116,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "5.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -152,14 +161,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "4.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -194,14 +206,17 @@
       "name": "Cent OS Linux",
       "marketingName": "Cent OS Linux",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.0.6",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -236,14 +251,17 @@
       "name": "Fedora Linux",
       "marketingName": "Fedora Linux",
       "version": "7.0.0",
-      "manufacturer": "redhat"
+      "manufacturer": "redhat",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.8",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -278,14 +296,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "25.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -320,14 +341,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "2.2.8",
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "3.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -362,14 +386,17 @@
       "name": "Gentoo Linux",
       "marketingName": "Gentoo Linux",
       "version": null,
-      "manufacturer": "gentoo"
+      "manufacturer": "gentoo",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.0.7",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -404,14 +431,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Phoenix",
+      "modus": null,
       "version": "0.4.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -446,14 +476,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.21-dev",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -488,14 +521,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.04.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -530,14 +566,17 @@
       "name": "Kubuntu",
       "marketingName": "Kubuntu",
       "version": "8.04.0",
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.0.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -572,14 +611,17 @@
       "name": "Mandriva Linux",
       "marketingName": "Mandriva Linux",
       "version": null,
-      "manufacturer": "mandriva"
+      "manufacturer": "mandriva",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.17",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -614,14 +656,17 @@
       "name": "Linux Mint",
       "marketingName": "Linux Mint",
       "version": "16.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "25.0.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -656,14 +701,17 @@
       "name": "NetBSD",
       "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "1.5.0.7",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -698,14 +746,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "26.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -740,14 +791,17 @@
       "name": "OS/2",
       "marketingName": "OS/2",
       "version": "4.5.0",
-      "manufacturer": "ibm"
+      "manufacturer": "ibm",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "10.0.12",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -782,14 +836,17 @@
       "name": "Tru64 UNIX",
       "marketingName": "Tru64 UNIX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "3.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -824,14 +881,17 @@
       "name": "Tru64 UNIX",
       "marketingName": "Tru64 UNIX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.75.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -866,14 +926,17 @@
       "name": "Slackware Linux",
       "marketingName": "Slackware Linux",
       "version": "13.0.0",
-      "manufacturer": "slackware"
+      "manufacturer": "slackware",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.5.2",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -908,14 +971,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.5.9",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -950,14 +1016,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.10.0",
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.79.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -992,14 +1061,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.5.1",
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "3.01.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -1034,14 +1106,17 @@
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
       "version": "3.6.24.0.2",
-      "manufacturer": "suse"
+      "manufacturer": "suse",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.24",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1076,14 +1151,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "26.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1118,14 +1196,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "26.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1160,14 +1241,17 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "2.02.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -1202,14 +1286,17 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firebird",
+      "modus": null,
       "version": "0.7.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1244,14 +1331,17 @@
       "name": "Windows NT 6.0",
       "marketingName": "Windows Vista",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "18.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1286,14 +1376,17 @@
       "name": "Windows NT 6.0",
       "marketingName": "Windows Vista",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "5.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -1328,14 +1421,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "8.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1370,14 +1466,17 @@
       "name": "Windows 98",
       "marketingName": "Windows 98",
       "version": "98.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.78.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -1412,14 +1511,17 @@
       "name": null,
       "marketingName": null,
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "15.0.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1454,14 +1556,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "8.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "5.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1496,14 +1601,17 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "27.0.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1538,14 +1646,17 @@
       "name": "Moblin",
       "marketingName": "Moblin",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.5.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1580,14 +1691,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "4.4.0",
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.76.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -1622,14 +1736,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.9",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1664,14 +1781,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.7",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1706,14 +1826,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.6",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1748,14 +1871,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.4",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1790,14 +1916,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.18",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1832,14 +1961,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.17",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1874,14 +2006,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.17",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1916,14 +2051,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.14",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -1958,14 +2096,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.11",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2000,14 +2141,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.10",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2042,14 +2186,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2084,14 +2231,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "2.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2126,14 +2276,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firebird",
+      "modus": null,
       "version": "3.6.13",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2168,14 +2321,17 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firebird",
+      "modus": null,
       "version": "0.7.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2210,14 +2366,17 @@
       "name": "Windows 98",
       "marketingName": "Windows 98",
       "version": "98.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Firebird",
+      "modus": null,
       "version": "0.7.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2252,14 +2411,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Firebird",
+      "modus": null,
       "version": "0.6.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2294,14 +2456,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firebird",
+      "modus": null,
       "version": "0.6.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2336,14 +2501,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Firebird",
+      "modus": null,
       "version": "0.6.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2378,14 +2546,17 @@
       "name": "NetBSD",
       "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "16.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2420,14 +2591,17 @@
       "name": "NetBSD",
       "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.12",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2462,14 +2636,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2504,14 +2681,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "5.001.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2546,14 +2726,17 @@
       "name": "NetBSD",
       "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.3",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -2588,14 +2771,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.8.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2630,14 +2816,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.8.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2672,14 +2861,17 @@
       "name": "HP-UX",
       "marketingName": "HP-UX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.8.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2714,14 +2906,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.8.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2756,14 +2951,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.79.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2798,14 +2996,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.79.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2840,14 +3041,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.77.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2882,14 +3086,17 @@
       "name": "HP-UX",
       "marketingName": "HP-UX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.77.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2924,14 +3131,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.76.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -2966,14 +3176,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.76.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3008,14 +3221,17 @@
       "name": "HP-UX",
       "marketingName": "HP-UX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.76.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3050,14 +3266,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": "2.8.0",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.75.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3092,14 +3311,17 @@
       "name": "HP-UX",
       "marketingName": "HP-UX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.73.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3134,14 +3356,17 @@
       "name": "HP-UX",
       "marketingName": "HP-UX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.72.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3176,14 +3401,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.7.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3218,14 +3446,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.8.0",
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.5.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3260,14 +3491,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.7.0",
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.5.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3302,14 +3536,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.6.0",
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.5.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3344,14 +3581,17 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "access",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.41.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3386,14 +3626,17 @@
       "name": "AIX",
       "marketingName": "AIX",
       "version": "2.0.0",
-      "manufacturer": "ibm"
+      "manufacturer": "ibm",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "3.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3428,14 +3671,17 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "Minimo",
+      "modus": null,
       "version": "0.025.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3470,14 +3716,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Minimo",
+      "modus": null,
       "version": "0.016.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3512,14 +3761,17 @@
       "name": "HP-UX",
       "marketingName": "HP-UX",
       "version": null,
-      "manufacturer": "hp"
+      "manufacturer": "hp",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.04.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3554,14 +3806,17 @@
       "name": "OS/2",
       "marketingName": "OS/2",
       "version": null,
-      "manufacturer": "ibm"
+      "manufacturer": "ibm",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.61.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3596,14 +3851,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.7.0",
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.76.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3638,14 +3896,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "28.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3680,14 +3941,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "4.1.4",
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "4.05.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -3722,14 +3986,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "45.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3764,14 +4031,17 @@
       "name": "Debian",
       "marketingName": "Debian",
       "version": null,
-      "manufacturer": "software-in-the-public-interest"
+      "manufacturer": "software-in-the-public-interest",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "5.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3806,14 +4076,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.8",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3848,14 +4121,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "5.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3890,14 +4166,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "31.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3932,14 +4211,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "37.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -3974,14 +4256,17 @@
       "name": "Redhat Linux",
       "marketingName": "Redhat Linux",
       "version": "3.6.9.2",
-      "manufacturer": "redhat"
+      "manufacturer": "redhat",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "3.6.9",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -4016,14 +4301,17 @@
       "name": "IRIX",
       "marketingName": "IRIX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Mozilla",
+      "modus": null,
       "version": "3.01.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -4058,14 +4346,17 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "42.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -4100,14 +4391,17 @@
       "name": "NetBSD",
       "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "42.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -4142,14 +4436,17 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle"
+      "manufacturer": "oracle",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "1.0.7",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -4184,14 +4481,17 @@
       "name": "OpenBSD",
       "marketingName": "OpenBSD",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "1.5.0.7",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",

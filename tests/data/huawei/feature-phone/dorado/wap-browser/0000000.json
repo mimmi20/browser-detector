@@ -26,14 +26,17 @@
       "name": "ThreadX",
       "marketingName": "ThreadX",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Dorado WAP Browser",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "dorado",
       "type": "wap-browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

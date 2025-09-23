@@ -26,14 +26,17 @@
       "name": null,
       "marketingName": null,
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Amazon Bot",
+      "modus": null,
       "version": "0.1.0",
       "manufacturer": "amazon",
       "type": "crawler",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

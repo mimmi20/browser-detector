@@ -33,14 +33,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "HuaweiBrowser",
+      "modus": null,
       "version": "92.0.0",
       "manufacturer": "huawei",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

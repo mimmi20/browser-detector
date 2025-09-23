@@ -26,14 +26,17 @@
       "name": "iPhone OS",
       "marketingName": "iPhone OS",
       "version": "3.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "1.1.1",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -68,18 +71,66 @@
       "name": "iPhone OS",
       "marketingName": "iPhone OS",
       "version": "3.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "1.1.1",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
       "version": "485.11.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Reeder/2.5.1 CFNetwork/711.1.12 Darwin/14.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.1.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Reeder",
+      "modus": null,
+      "version": "2.5.1",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "711.1.12",
       "manufacturer": "apple"
     }
   },
@@ -110,14 +161,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "11.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "3.0.50",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -152,14 +206,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "12.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "4010.09.04",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -194,14 +251,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "13.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "4020.39.05",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -236,14 +296,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "13.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "4020.59.05",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -278,14 +341,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.5.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.69.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -320,14 +386,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.5.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "4020.89.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -362,14 +431,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.69.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -404,14 +476,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.79.04",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -446,14 +521,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "4020.89.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -488,14 +566,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.89.07",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -530,14 +611,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.7.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "4020.89.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -572,14 +656,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.7.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.89.07",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -614,14 +701,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5001.09.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -656,14 +746,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5001.29.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -698,14 +791,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5001.29.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -740,14 +836,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5010.01.03",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -782,14 +881,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.39.03",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -824,14 +926,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5010.01.03",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -866,14 +971,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.3.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.39.03",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -908,14 +1016,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5010.01.03",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -950,14 +1061,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5020102.0.0",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -992,14 +1106,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.39.03",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1034,14 +1151,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5020205.0.0",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1076,14 +1196,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.5.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5020205.0.0",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1118,14 +1241,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "15.5.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5000.39.03",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1160,14 +1286,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "4020.79.01",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -1202,14 +1331,17 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.5.0",
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Reeder",
+      "modus": null,
       "version": "5040002.0.0",
       "manufacturer": "unknown",
       "type": "feed-reader",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

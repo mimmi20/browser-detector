@@ -26,14 +26,17 @@
       "name": "Windows Phone OS",
       "marketingName": "Windows Phone OS",
       "version": "7.5.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "IEMobile",
+      "modus": null,
       "version": "9.0.0",
       "manufacturer": "microsoft",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

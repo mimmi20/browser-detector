@@ -26,14 +26,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Internet Explorer",
+      "modus": null,
       "version": "9.0.0",
       "manufacturer": "microsoft",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",
@@ -68,14 +71,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "8.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Internet Explorer with Chromeframe",
+      "modus": null,
       "version": "10.0.0",
       "manufacturer": "microsoft",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

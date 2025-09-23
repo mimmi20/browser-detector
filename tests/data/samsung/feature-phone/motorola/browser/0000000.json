@@ -26,14 +26,17 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems"
+      "manufacturer": "sun-microsystems",
+      "bits": null
     },
     "client": {
       "name": "Motorola Internet Browser",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "motorola",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "NetFront",

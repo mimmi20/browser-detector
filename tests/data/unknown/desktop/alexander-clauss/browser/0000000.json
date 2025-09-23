@@ -26,14 +26,17 @@
       "name": "Windows NT 6.0",
       "marketingName": "Windows Vista",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "iCab",
+      "modus": null,
       "version": "4.0.0",
       "manufacturer": "alexander-clauss",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

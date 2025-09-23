@@ -26,14 +26,17 @@
       "name": "Cent OS Linux",
       "marketingName": "Cent OS Linux",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Naver",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "nhn-corporation",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

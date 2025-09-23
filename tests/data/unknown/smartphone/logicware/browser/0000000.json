@@ -26,14 +26,17 @@
       "name": "Maemo",
       "marketingName": "Maemo",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "linux-foundation",
+      "bits": null
     },
     "client": {
       "name": "QtWebEngine",
+      "modus": null,
       "version": "5.14.2",
       "manufacturer": "logicware",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

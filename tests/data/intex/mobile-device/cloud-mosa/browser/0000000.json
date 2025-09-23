@@ -26,14 +26,17 @@
       "name": "Puffin OS",
       "marketingName": "Puffin OS",
       "version": null,
-      "manufacturer": "cloud-mosa"
+      "manufacturer": "cloud-mosa",
+      "bits": null
     },
     "client": {
       "name": "Puffin",
+      "modus": null,
       "version": "12.1.1.51391",
       "manufacturer": "cloud-mosa",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

@@ -26,14 +26,17 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical"
+      "manufacturer": "canonical",
+      "bits": null
     },
     "client": {
       "name": "WhatCMS",
+      "modus": null,
       "version": "1.0.0",
       "manufacturer": "nineteen-ten",
       "type": "crawler",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

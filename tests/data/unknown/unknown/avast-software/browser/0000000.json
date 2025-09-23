@@ -9,7 +9,7 @@
       "sec-ch-ua-mobile": "?1"
     },
     "device": {
-      "architecture": "[arm64-v8a, armeabi-v7a, armeabi]",
+      "architecture": null,
       "deviceName": null,
       "marketingName": null,
       "manufacturer": "unknown",
@@ -31,14 +31,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Avast Secure Browser",
+      "modus": null,
       "version": "6.6.0",
       "manufacturer": "avast-software",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,

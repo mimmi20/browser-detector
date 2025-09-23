@@ -26,14 +26,17 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "IEMobile",
+      "modus": null,
       "version": "7.6.0",
       "manufacturer": "microsoft",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Trident",

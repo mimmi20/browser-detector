@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.5",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Baidu Browser",
+      "modus": null,
       "version": "042.1.41.3.2",
       "manufacturer": "baidu",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

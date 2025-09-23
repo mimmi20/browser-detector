@@ -26,14 +26,17 @@
       "name": "Darwin",
       "marketingName": "Darwin",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "restify",
+      "modus": null,
       "version": "2.6.3",
       "manufacturer": "mark-cavage",
       "type": "bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

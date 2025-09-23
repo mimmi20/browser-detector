@@ -26,14 +26,17 @@
       "name": "ChromeOS",
       "marketingName": "ChromeOS",
       "version": "68.0.3440.118",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Citrix Chrome App",
+      "modus": null,
       "version": null,
       "manufacturer": "citrix",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",
@@ -68,14 +71,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Citrix Chrome App",
+      "modus": null,
       "version": null,
       "manufacturer": "citrix",
       "type": "application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

@@ -26,14 +26,17 @@
       "name": null,
       "marketingName": null,
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "WhatsApp",
+      "modus": null,
       "version": "2.16.308",
       "manufacturer": "unknown",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": null,
@@ -68,14 +71,17 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "10.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "WhatsApp",
+      "modus": null,
       "version": "0.2.4240",
       "manufacturer": "unknown",
       "type": "mobile-application",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

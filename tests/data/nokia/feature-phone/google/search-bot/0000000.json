@@ -26,14 +26,17 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation"
+      "manufacturer": "symbian-foundation",
+      "bits": null
     },
     "client": {
       "name": "Google Bot Mobile",
+      "modus": null,
       "version": "2.1.0",
       "manufacturer": "google",
       "type": "search-bot",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": null,

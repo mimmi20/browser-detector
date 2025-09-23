@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.2.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "NetFrontLifeBrowser",
+      "modus": null,
       "version": "2.2.0",
       "manufacturer": "access",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

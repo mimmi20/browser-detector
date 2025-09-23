@@ -26,14 +26,17 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Opera",
+      "modus": null,
       "version": "11.00.0",
       "manufacturer": "opera",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Presto",

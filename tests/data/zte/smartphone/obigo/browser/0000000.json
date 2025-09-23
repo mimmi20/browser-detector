@@ -26,14 +26,17 @@
       "name": "Brew",
       "marketingName": "Brew",
       "version": "3.1.5",
-      "manufacturer": "unknown"
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
+      "modus": null,
       "version": null,
       "manufacturer": "obigo",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Teleca",

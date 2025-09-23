@@ -26,14 +26,17 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems"
+      "manufacturer": "sun-microsystems",
+      "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
+      "modus": null,
       "version": null,
       "manufacturer": "obigo",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "WebKit",

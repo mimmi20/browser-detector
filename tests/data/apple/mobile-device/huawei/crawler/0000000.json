@@ -26,14 +26,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": null,
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "HuaweiCrawler",
+      "modus": null,
       "version": null,
       "manufacturer": "huawei",
       "type": "crawler",
-      "isbot": true
+      "isbot": true,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

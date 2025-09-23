@@ -26,14 +26,17 @@
       "name": "Firefox OS",
       "marketingName": "Firefox OS",
       "version": "1.1.0",
-      "manufacturer": "mozilla-foundation"
+      "manufacturer": "mozilla-foundation",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
+      "modus": null,
       "version": "18.1.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Gecko",
@@ -68,14 +71,17 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google"
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Firefox Rocket",
+      "modus": null,
       "version": "1.0.0.7916",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
-      "isbot": false
+      "isbot": false,
+      "bits": null
     },
     "engine": {
       "name": "Blink",

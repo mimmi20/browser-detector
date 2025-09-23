@@ -22,6 +22,7 @@ use UnexpectedValueException;
 
 use function sprintf;
 
+/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(Company::class)]
 final class CompanyTest extends TestCase
 {
@@ -783,6 +784,132 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Jumper',
                 'key' => 'jumper',
             ],
+            [
+                'type' => 'Flycoay',
+                'name' => 'Flycoay',
+                'brandname' => 'Flycoay',
+                'key' => 'flycoay',
+            ],
+            [
+                'type' => 'MAGCH',
+                'name' => 'MAGCH',
+                'brandname' => 'MAGCH',
+                'key' => 'magch',
+            ],
+            [
+                'type' => 'Oangcc',
+                'name' => 'Oangcc',
+                'brandname' => 'Oangcc',
+                'key' => 'oangcc',
+            ],
+            [
+                'type' => 'AOCWEI',
+                'name' => 'AOCWEI',
+                'brandname' => 'AOCWEI',
+                'key' => 'aocwei',
+            ],
+            [
+                'type' => 'AAUW',
+                'name' => 'AAUW',
+                'brandname' => 'AAUW',
+                'key' => 'aauw',
+            ],
+            [
+                'type' => 'Vale',
+                'name' => 'Vale',
+                'brandname' => 'Vale',
+                'key' => 'vale',
+            ],
+            [
+                'type' => 'Relndoo',
+                'name' => 'Relndoo',
+                'brandname' => 'Relndoo',
+                'key' => 'relndoo',
+            ],
+            [
+                'type' => 'HeadWolf',
+                'name' => 'HeadWolf',
+                'brandname' => 'HeadWolf',
+                'key' => 'head-wolf',
+            ],
+            [
+                'type' => 'Hezire',
+                'name' => 'Hezire',
+                'brandname' => 'Hezire',
+                'key' => 'hezire',
+            ],
+            [
+                'type' => 'Weelikeit',
+                'name' => 'Weelikeit',
+                'brandname' => 'Weelikeit',
+                'key' => 'weelikeit',
+            ],
+            [
+                'type' => 'Meswao',
+                'name' => 'Meswao',
+                'brandname' => 'Meswao',
+                'key' => 'meswao',
+            ],
+            [
+                'type' => 'Colorroom',
+                'name' => 'Colorroom',
+                'brandname' => 'Colorroom',
+                'key' => 'colorroom',
+            ],
+            [
+                'type' => 'Erisson',
+                'name' => 'Erisson',
+                'brandname' => 'Erisson',
+                'key' => 'erisson',
+            ],
+            [
+                'type' => 'Vision',
+                'name' => 'Vision Technology',
+                'brandname' => 'Vision',
+                'key' => 'vision-technology',
+            ],
+            [
+                'type' => 'HONKUAHG',
+                'name' => 'HONKUAHG',
+                'brandname' => 'HONKUAHG',
+                'key' => 'honkuahg',
+            ],
+            [
+                'type' => 'Egotek',
+                'name' => 'Egotek',
+                'brandname' => 'Egotek',
+                'key' => 'egotek',
+            ],
+            [
+                'type' => 'ZZB',
+                'name' => 'ZZB',
+                'brandname' => 'ZZB',
+                'key' => 'zzb',
+            ],
+            [
+                'type' => 'NEWAL',
+                'name' => 'NEWAL',
+                'brandname' => 'NEWAL',
+                'key' => 'newal',
+            ],
+            [
+                'type' => 'Sber',
+                'name' => 'Sber',
+                'brandname' => 'Sber',
+                'key' => 'sber',
+            ],
+            [
+                'type' => 'Senna',
+                'name' => 'Senna',
+                'brandname' => 'Senna',
+                'key' => 'senna',
+            ],
+            [
+                'type' => 'TrecFone',
+                'name' => 'TrecFone',
+                'brandname' => 'TrecFone',
+                'key' => 'trecfone',
+            ],
         ];
     }
 
@@ -1037,6 +1164,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Visual Land',
                 'brandname' => 'Visual Land',
                 'key' => 'visual-land',
+            ],
+            [
+                'fallback' => 'Vision Technology',
+                'name' => 'Vision Technology',
+                'brandname' => 'Vision',
+                'key' => 'vision-technology',
+            ],
+            [
+                'fallback' => 'vision-technology',
+                'name' => 'Vision Technology',
+                'brandname' => 'Vision',
+                'key' => 'vision-technology',
             ],
         ];
     }
