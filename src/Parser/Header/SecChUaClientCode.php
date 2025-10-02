@@ -74,6 +74,8 @@ final class SecChUaClientCode implements ClientCodeInterface
             'wavebox' => 'wavebox-browser',
             'total browser' => 'total-browser',
             'version' => 'safari',
+            'opera air' => 'opera-air',
+            'opera mini android' => 'opera mini',
             default => $code,
         };
     }

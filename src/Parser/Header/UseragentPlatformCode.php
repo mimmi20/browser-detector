@@ -84,6 +84,10 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             };
         }
 
+        if (preg_match('/instagram [\d.]+ (?P<platform>android) \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i', $normalizedValue, $matches)) {
+            return mb_strtolower($matches['platform']);
+        }
+
         $code = $this->platformParser->parse($normalizedValue);
 
         if ($code === '') {

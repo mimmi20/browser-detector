@@ -1754,6 +1754,12 @@ final class Device implements DeviceInterface
             'sm-e346b', 'samsung sm-e346b' => 'samsung=samsung sm-e346b',
             'sm-m446k', 'samsung sm-m446k' => 'samsung=samsung sm-m446k',
             'sm-x518u', 'samsung sm-x518u' => 'samsung=samsung sm-x518u',
+            'sm-m556b', 'samsung sm-m556b' => 'samsung=samsung sm-m556b',
+            'sm-m556e', 'samsung sm-m556e' => 'samsung=samsung sm-m556e',
+            'sm-x730', 'samsung sm-x730' => 'samsung=samsung sm-x730',
+            'sm-x736', 'samsung sm-x736' => 'samsung=samsung sm-x736',
+            'sm-x736b', 'samsung sm-x736b' => 'samsung=samsung sm-x736b',
+            'sm-s731b', 'samsung sm-s731b' => 'samsung=samsung sm-s731b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2552,6 +2558,7 @@ final class Device implements DeviceInterface
             'xt2081-1' => 'motorola=motorola xt2081-1',
             'xt2081-2' => 'motorola=motorola xt2081-2',
             'xt2158-6' => 'motorola=motorola xt2158-6',
+            'moto g75 5g' => 'motorola=motorola moto g75 5g',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -5106,6 +5113,8 @@ final class Device implements DeviceInterface
             'proton lite' => 'x-view=x-view proton lite',
             // trecfone
             '17_pro_max' => 'trecfone=trecfone 17 pro max',
+            // yandex
+            'yndx-000sb' => 'yandex=yandex yndx-000sb',
             // other
             default => null,
         };

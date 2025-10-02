@@ -2102,6 +2102,18 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-M446K', 'samsung=samsung sm-m446k'],
             ['SM-X518U', 'samsung=samsung sm-x518u'],
             ['SAMSUNG SM-X518U', 'samsung=samsung sm-x518u'],
+            ['SM-M556B', 'samsung=samsung sm-m556b'],
+            ['SAMSUNG SM-M556B', 'samsung=samsung sm-m556b'],
+            ['SM-M556E', 'samsung=samsung sm-m556e'],
+            ['SAMSUNG SM-M556E', 'samsung=samsung sm-m556e'],
+            ['SM-X730', 'samsung=samsung sm-x730'],
+            ['SAMSUNG SM-X730', 'samsung=samsung sm-x730'],
+            ['SM-X736B', 'samsung=samsung sm-x736b'],
+            ['SAMSUNG SM-X736B', 'samsung=samsung sm-x736b'],
+            ['SM-X736', 'samsung=samsung sm-x736'],
+            ['SAMSUNG SM-X736', 'samsung=samsung sm-x736'],
+            ['SM-S731B', 'samsung=samsung sm-s731b'],
+            ['SAMSUNG SM-S731B', 'samsung=samsung sm-s731b'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -2907,6 +2919,7 @@ final class DeviceTest extends TestCase
             ['XT2081-1', 'motorola=motorola xt2081-1'],
             ['XT2081-2', 'motorola=motorola xt2081-2'],
             ['XT2158-6', 'motorola=motorola xt2158-6'],
+            ['moto g75 5G', 'motorola=motorola moto g75 5g'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -5626,6 +5639,8 @@ final class DeviceTest extends TestCase
             ['Proton Lite', 'x-view=x-view proton lite'],
             // trecfone
             ['17_Pro_Max', 'trecfone=trecfone 17 pro max'],
+            // yandex
+            ['YNDX-000SB', 'yandex=yandex yndx-000sb'],
             // other
             ['Model"', null],
             [': "', null],
