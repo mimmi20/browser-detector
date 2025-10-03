@@ -4623,6 +4623,7 @@ final class Device implements DeviceInterface
             'it-801b' => 'atmpc=atmpc it-801b',
             // vios
             'vtab7' => 'vios=vios vtab7',
+            'vi65pb1401na' => 'vios=vios vi65pb1401na',
             // global-sec
             'globalsec tab ten' => 'global-sec=global-sec tab ten',
             // nordmende
@@ -5130,6 +5131,8 @@ final class Device implements DeviceInterface
             'premier p50' => 'premier=premier p50',
             // volla
             'volla phone 22' => 'volla=volla phone 22',
+            'volla phone x23' => 'volla=volla phone x23',
+            'volla phone' => 'volla=volla phone',
             // nesons
             'n32hf2302sf' => 'nesons=nesons n32hf2302sf',
             'n32hr2301sf' => 'nesons=nesons n32hr2301sf',
@@ -5139,6 +5142,33 @@ final class Device implements DeviceInterface
             'openbox a8' => 'openbox=openbox a8',
             'openbox a9' => 'openbox=openbox a9',
             'openbox gold' => 'openbox=openbox gold',
+            // mortal
+            'mortal t1' => 'mortal=mortal t1',
+            // homii
+            'xbook_12' => 'homii=homii xbook 12',
+            // andersson
+            'tbx11' => 'andersson=andersson tbx11',
+            // whoop
+            'tab-10us' => 'whoop=whoop tab-10us',
+            // hanson
+            'hanson_flex_7000' => 'hanson=hanson flex 7000',
+            // cloud-mobile
+            'stratus c8' => 'cloud-mobile=cloud-mobile stratus c8',
+            // idata
+            't3_pro' => 'idata=idata t3 pro',
+            // anbernic
+            'rgcube' => 'anbernic=anbernic rg cube',
+            'rg406v' => 'anbernic=anbernic rg406v',
+            'rg556' => 'anbernic=anbernic rg556',
+            // fontel
+            'ft800' => 'fontel=fontel ft800',
+            'ft1000' => 'fontel=fontel ft1000',
+            // consung
+            'n101b' => 'consung=consung n101b',
+            // novey
+            'alpha a16' => 'novey=novey alpha a16',
+            // iiyama
+            'lh5565uhsb-b1' => 'iiyama=iiyama lh5565uhsb-b1',
             // other
             default => null,
         };

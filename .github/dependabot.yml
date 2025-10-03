@@ -4,78 +4,52 @@
 
 version: 2
 
+multi-ecosystem-groups:
+  maintenance-master:
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+      time: "04:00"
+      timezone: "Europe/Berlin"
+
+    cooldown:
+      default-days: 7
+
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
+
+    versioning-strategy: "increase"
+
+    rebase-strategy: "disabled"
+
+    assignees:
+      - "mimmi20"
+
+    labels:
+      - "dependencies"
+
+    target-branch: "master"
+
 updates:
   - package-ecosystem: "composer"
 
     directory: "/"
 
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-      time: "04:00"
-      timezone: "Europe/Berlin"
+    multi-ecosystem-group: "maintenance-master"
 
-    groups:
-      production-dependencies:
-        dependency-type: "production"
-      development-dependencies:
-        dependency-type: "development"
-
-    open-pull-requests-limit: 10
-
-    assignees:
-      - "mimmi20"
-
-    labels:
-      - "dependencies"
-
-    versioning-strategy: "increase"
-
-    target-branch: "master"
-
-    commit-message:
-      include: "scope"
-      prefix: "composer"
-
-    ignore:
-      - dependency-name: "laminas/laminas-serializer"
-      - dependency-name: "psr/http-message"
-
-    # Disable rebasing for all pull requests
-    rebase-strategy: "disabled"
+    patterns: [ "*" ]
 
   - package-ecosystem: "github-actions"
 
     directory: "/"
 
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-      time: "04:00"
-      timezone: "Europe/Berlin"
-
-    groups:
-      production-dependencies:
-        dependency-type: "production"
-      development-dependencies:
-        dependency-type: "development"
-
-    open-pull-requests-limit: 10
-
-    assignees:
-      - "mimmi20"
-
-    labels:
-      - "dependencies"
-
-    target-branch: "master"
-
-    commit-message:
-      prefix: "github-actions"
-
     ignore:
       - dependency-name: "mimmi20/ci"
       - dependency-name: "release-drafter/release-drafter"
 
-    # Disable rebasing for all pull requests
-    rebase-strategy: "disabled"
+    multi-ecosystem-group: "maintenance-master"
+
+    patterns: [ "*" ]

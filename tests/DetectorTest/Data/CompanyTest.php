@@ -1096,6 +1096,84 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Openbox',
                 'key' => 'openbox',
             ],
+            [
+                'type' => 'Mortal',
+                'name' => 'Mortal',
+                'brandname' => 'Mortal',
+                'key' => 'mortal',
+            ],
+            [
+                'type' => 'HOMII',
+                'name' => 'HOMII',
+                'brandname' => 'HOMII',
+                'key' => 'homii',
+            ],
+            [
+                'type' => 'Andersson',
+                'name' => 'Andersson',
+                'brandname' => 'Andersson',
+                'key' => 'andersson',
+            ],
+            [
+                'type' => 'Whoop',
+                'name' => 'Whoop',
+                'brandname' => 'Whoop',
+                'key' => 'whoop',
+            ],
+            [
+                'type' => 'Hanson',
+                'name' => 'Hanson',
+                'brandname' => 'Hanson',
+                'key' => 'hanson',
+            ],
+            [
+                'type' => 'Cloud Mobile',
+                'name' => 'Cloud Mobile',
+                'brandname' => 'Cloud Mobile',
+                'key' => 'cloud-mobile',
+            ],
+            [
+                'type' => 'iData',
+                'name' => 'iData',
+                'brandname' => 'iData',
+                'key' => 'idata',
+            ],
+            [
+                'type' => 'Anbernic',
+                'name' => 'Anbernic',
+                'brandname' => 'Anbernic',
+                'key' => 'anbernic',
+            ],
+            [
+                'type' => 'Fontel',
+                'name' => 'Fontel',
+                'brandname' => 'Fontel',
+                'key' => 'fontel',
+            ],
+            [
+                'type' => 'Consung',
+                'name' => 'Consung',
+                'brandname' => 'Consung',
+                'key' => 'consung',
+            ],
+            [
+                'type' => 'Novey',
+                'name' => 'Novey',
+                'brandname' => 'Novey',
+                'key' => 'novey',
+            ],
+            [
+                'type' => 'Iiyama',
+                'name' => 'Iiyama',
+                'brandname' => 'Iiyama',
+                'key' => 'iiyama',
+            ],
+            [
+                'type' => 'jasmine tea',
+                'name' => 'jasmine tea',
+                'brandname' => 'jasmine tea',
+                'key' => 'jasmine-tea',
+            ],
         ];
     }
 
@@ -1536,6 +1614,30 @@ final class CompanyTest extends TestCase
                 'name' => 'Volla Systeme GmbH',
                 'brandname' => 'Volla',
                 'key' => 'volla',
+            ],
+            [
+                'fallback' => 'cloudmobile',
+                'name' => 'Cloud Mobile',
+                'brandname' => 'Cloud Mobile',
+                'key' => 'cloud-mobile',
+            ],
+            [
+                'fallback' => 'cloud-mobile',
+                'name' => 'Cloud Mobile',
+                'brandname' => 'Cloud Mobile',
+                'key' => 'cloud-mobile',
+            ],
+            [
+                'fallback' => 'jasminetea',
+                'name' => 'jasmine tea',
+                'brandname' => 'jasmine tea',
+                'key' => 'jasmine-tea',
+            ],
+            [
+                'fallback' => 'jasmine-tea',
+                'name' => 'jasmine tea',
+                'brandname' => 'jasmine tea',
+                'key' => 'jasmine-tea',
             ],
         ];
     }

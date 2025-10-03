@@ -361,6 +361,32 @@ enum Company: string implements CompanyInterface
 
     case openbox = 'Openbox';
 
+    case mortal = 'Mortal';
+
+    case homii = 'HOMII';
+
+    case andersson = 'Andersson';
+
+    case whoop = 'Whoop';
+
+    case hanson = 'Hanson';
+
+    case cloudMobile = 'Cloud Mobile';
+
+    case idata = 'iData';
+
+    case anbernic = 'Anbernic';
+
+    case fontel = 'Fontel';
+
+    case consung = 'Consung';
+
+    case novey = 'Novey';
+
+    case iiyama = 'Iiyama';
+
+    case jasmineTea = 'jasmine tea';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -540,6 +566,19 @@ enum Company: string implements CompanyInterface
             'volla', 'volla systeme gmbh' => self::volla,
             'nesons' => self::nesons,
             'openbox' => self::openbox,
+            'mortal' => self::mortal,
+            'homii' => self::homii,
+            'andersson' => self::andersson,
+            'whoop' => self::whoop,
+            'hanson' => self::hanson,
+            'cloudmobile', 'cloud-mobile', 'cloud mobile' => self::cloudMobile,
+            'idata' => self::idata,
+            'anbernic' => self::anbernic,
+            'fontel' => self::fontel,
+            'consung' => self::consung,
+            'novey' => self::novey,
+            'iiyama' => self::iiyama,
+            'jasmine tea', 'jasminetea', 'jasmine-tea' => self::jasmineTea,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -644,6 +683,8 @@ enum Company: string implements CompanyInterface
             self::duckDuckGo => 'duck-duck-go',
             self::lamantineSoftware => 'lamantine-software',
             self::apoloSign => 'apolo-sign',
+            self::cloudMobile => 'cloud-mobile',
+            self::jasmineTea => 'jasmine-tea',
             default => $this->name,
         };
     }

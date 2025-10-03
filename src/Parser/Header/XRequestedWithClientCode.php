@@ -258,7 +258,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'secure.explorer.web.browser' => 'browser lite',
             'snapu2b.com' => 'snapu2b',
             'threads.thor' => 'thor-browser',
-            // 'webexplorer.amazing.biro' => '',
+            'webexplorer.amazing.biro' => 'internet-browser',
             'xbrowser', 'com.xbrowser.play' => 'x-browser',
             'com.baidu.browser.apps' => 'baidu browser',
             'com.hihonor.baidu.browser' => 'honor-browser',
@@ -362,6 +362,9 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.gener8ads.wallet' => 'gener8-browser',
             'com.jambo' => 'jambo',
             'no.wifi.offline.games.puzzle.games' => 'offline all in one',
+            'com.xbh.universal.player' => 'universal-player',
+            'com.mobile.applock.wt' => 'app-lock',
+            'com.solide.filemanager.lte' => 'solid-file-manager',
             default => null,
         };
     }

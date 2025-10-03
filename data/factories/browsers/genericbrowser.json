@@ -404,7 +404,7 @@
     "/lcc \\(\\+http:\\/\\/corpora\\.uni-leipzig\\.de/i": "lcc",
     "/meta-externalads/i": "meta-externalads",
     "/qwantbot/i": "qwantbot",
-    "/zoombot/i": "zoombot",
+    "/(?<!a)zoombot/i": "zoombot",
     "/crawler/i": "crawler",
     "/jig browser/i": "jig browser web",
     "/t-h-u-n-d-e-r-s-t-o-n-e/i": "texis webscript",

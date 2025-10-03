@@ -14,5 +14,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "volla phone x23": {
+    "deviceName": "Phone X23",
+    "marketingName": "Phone X23",
+    "manufacturer": "volla",
+    "brand": "volla",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "volla phone": {
+    "deviceName": "Phone",
+    "marketingName": "Phone",
+    "manufacturer": "volla",
+    "brand": "volla",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

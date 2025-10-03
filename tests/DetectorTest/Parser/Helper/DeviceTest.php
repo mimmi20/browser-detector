@@ -5144,6 +5144,7 @@ final class DeviceTest extends TestCase
             ['IT-801B', 'atmpc=atmpc it-801b'],
             // vios
             ['VTAB7', 'vios=vios vtab7'],
+            ['VI65PB1401NA', 'vios=vios vi65pb1401na'],
             // global-sec
             ['GLOBALSEC TAB TEN', 'global-sec=global-sec tab ten'],
             // nordmende
@@ -5656,6 +5657,8 @@ final class DeviceTest extends TestCase
             ['Premier P50', 'premier=premier p50'],
             // volla
             ['Volla Phone 22', 'volla=volla phone 22'],
+            ['Volla Phone X23', 'volla=volla phone x23'],
+            ['Volla Phone', 'volla=volla phone'],
             // nesons
             ['N32HF2302SF', 'nesons=nesons n32hf2302sf'],
             ['N32HR2301SF', 'nesons=nesons n32hr2301sf'],
@@ -5665,6 +5668,33 @@ final class DeviceTest extends TestCase
             ['OPENBOX A8', 'openbox=openbox a8'],
             ['OPENBOX A9', 'openbox=openbox a9'],
             ['OPENBOX GOLD', 'openbox=openbox gold'],
+            // mortal
+            ['Mortal T1', 'mortal=mortal t1'],
+            // homii
+            ['XBOOK_12', 'homii=homii xbook 12'],
+            // andersson
+            ['TBX11', 'andersson=andersson tbx11'],
+            // whoop
+            ['TAB-10US', 'whoop=whoop tab-10us'],
+            // hanson
+            ['HANSON_FLEX_7000', 'hanson=hanson flex 7000'],
+            // cloud-mobile
+            ['Stratus C8', 'cloud-mobile=cloud-mobile stratus c8'],
+            // idata
+            ['T3_Pro', 'idata=idata t3 pro'],
+            // anbernic
+            ['RGCUBE', 'anbernic=anbernic rg cube'],
+            ['RG406V', 'anbernic=anbernic rg406v'],
+            ['RG556', 'anbernic=anbernic rg556'],
+            // fontel
+            ['FT800', 'fontel=fontel ft800'],
+            ['FT1000', 'fontel=fontel ft1000'],
+            // consung
+            ['N101B', 'consung=consung n101b'],
+            // novey
+            ['Alpha A16', 'novey=novey alpha a16'],
+            // iiyama
+            ['LH5565UHSB-B1', 'iiyama=iiyama lh5565uhsb-b1'],
             // other
             ['Model"', null],
             [': "', null],
