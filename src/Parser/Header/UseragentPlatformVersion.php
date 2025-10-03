@@ -69,7 +69,13 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             return str_replace('_', '.', $matches['version']);
         }
 
-        if (preg_match('/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i', $normalizedValue, $matches)) {
+        if (
+            preg_match(
+                '/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
+                $normalizedValue,
+                $matches,
+            )
+        ) {
             return $matches['version'];
         }
 

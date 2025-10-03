@@ -299,6 +299,68 @@ enum Company: string implements CompanyInterface
 
     case trecfone = 'TrecFone';
 
+    case thebrowser = 'The Browser Company';
+
+    case readdle = 'Readdle';
+
+    case eightloops = 'eightloops';
+
+    case listia = 'Listia';
+
+    case ecosia = 'Ecosia';
+
+    case nhn = 'NHN';
+
+    case duckDuckGo = 'Duck Duck Go';
+
+    case keeper = 'Keeper Security';
+
+    case lamantineSoftware = 'Lamantine Software';
+
+    case opera = 'Opera';
+
+    case asus = 'Asus';
+
+    case bbk = 'BBK';
+
+    case oppo = 'OPPO';
+
+    case realme = 'Realme';
+
+    case vivo = 'vivo';
+
+    case oneplus = 'OnePlus';
+
+    case huawei = 'Huawei';
+
+    case xiaomi = 'Xiaomi';
+
+    case yandex = 'Yandex';
+
+    case yahoo = 'Yahoo';
+
+    case wordpress = 'WordPress';
+
+    case zoom = 'Zoom';
+
+    case qwant = 'QWANT';
+
+    case qiuwoky = 'Qiuwoky';
+
+    case v7 = 'V7';
+
+    case apoloSign = 'ApoloSign';
+
+    case multilaser = 'Multilaser';
+
+    case premier = 'Premier';
+
+    case volla = 'Volla';
+
+    case nesons = 'Nesons';
+
+    case openbox = 'Openbox';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -317,7 +379,7 @@ enum Company: string implements CompanyInterface
             'lunnen' => self::lunnen,
             'mipo' => self::mipo,
             'acd' => self::acd,
-            'meta', 'meta inc' => self::meta,
+            'meta', 'meta platforms, inc.' => self::meta,
             'atozee' => self::atozee,
             'everis' => self::everis,
             'unitech' => self::unitech,
@@ -447,6 +509,37 @@ enum Company: string implements CompanyInterface
             'sber' => self::sber,
             'senna' => self::senna,
             'trecfone' => self::trecfone,
+            'the-browser-company', 'the browser company', 'the browser company of new york', 'thebrowser' => self::thebrowser,
+            'readdle' => self::readdle,
+            'eightloops', 'eightloops gmbh' => self::eightloops,
+            'listia', 'listia inc.' => self::listia,
+            'ecosia', 'ecosia gmbh' => self::ecosia,
+            'nhn', 'nhn-corporation', 'nhn corporation' => self::nhn,
+            'duckduckgo', 'duck duck go', 'duck duck go inc.', 'duck-duck-go' => self::duckDuckGo,
+            'keeper', 'keeper security', 'keeper security, inc.' => self::keeper,
+            'lamantine-software', 'lamantine software', 'lamantinesoftware' => self::lamantineSoftware,
+            'opera', 'opera software asa' => self::opera,
+            'asus', 'asustek computer inc.' => self::asus,
+            'bbk', 'bbk electronics corp ltd' => self::bbk,
+            'oppo', 'oppo electronics corp.' => self::oppo,
+            'realme' => self::realme,
+            'vivo', 'vivo electronics corp.' => self::vivo,
+            'oneplus', 'shenzhen oneplus science & technology co., ltd.' => self::oneplus,
+            'huawei' => self::huawei,
+            'xiaomi', 'xiaomi tech' => self::xiaomi,
+            'yandex', 'yandex llc' => self::yandex,
+            'yahoo', 'yahoo! inc.' => self::yahoo,
+            'wordpress', 'wordpress.org' => self::wordpress,
+            'zoom', 'zoom communications inc.' => self::zoom,
+            'qwant', 'qwant sas' => self::qwant,
+            'qiuwoky' => self::qiuwoky,
+            'v7', 'v7 devices' => self::v7,
+            'apolosign', 'apolo-sign' => self::apoloSign,
+            'multilaser' => self::multilaser,
+            'premier' => self::premier,
+            'volla', 'volla systeme gmbh' => self::volla,
+            'nesons' => self::nesons,
+            'openbox' => self::openbox,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -465,7 +558,7 @@ enum Company: string implements CompanyInterface
     {
         return match ($this) {
             self::wishtel => 'Wishtel Private Limited',
-            self::meta => 'Meta Inc',
+            self::meta => 'Meta Platforms, Inc.',
             self::google => 'Google Inc.',
             self::apple => 'Apple Inc',
             self::microsoft => 'Microsoft Corporation',
@@ -485,6 +578,27 @@ enum Company: string implements CompanyInterface
             self::moondrop => 'Chengdu Shuiyueyu Technology Co., Ltd.',
             self::hotPepper => 'Hot Pepper Mobile, Inc.',
             self::vision => 'Vision Technology',
+            self::thebrowser => 'The Browser Company of New York',
+            self::eightloops => 'eightloops GmbH',
+            self::listia => 'Listia Inc.',
+            self::ecosia => 'Ecosia GmbH',
+            self::nhn => 'NHN Corporation',
+            self::duckDuckGo => 'Duck Duck Go Inc.',
+            self::keeper => 'Keeper Security, Inc.',
+            self::opera => 'Opera Software ASA',
+            self::asus => 'ASUSTeK Computer Inc.',
+            self::bbk => 'BBK Electronics Corp Ltd',
+            self::oppo => 'OPPO Electronics Corp.',
+            self::vivo => 'Vivo Electronics Corp.',
+            self::oneplus => 'Shenzhen OnePlus Science & Technology Co., Ltd.',
+            self::xiaomi => 'Xiaomi Tech',
+            self::yandex => 'Yandex LLC',
+            self::yahoo => 'Yahoo! Inc.',
+            self::wordpress => 'wordpress.org',
+            self::zoom => 'Zoom Communications Inc.',
+            self::qwant => 'QWANT SAS',
+            self::v7 => 'V7 Devices',
+            self::volla => 'Volla Systeme GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -525,6 +639,11 @@ enum Company: string implements CompanyInterface
             self::visualLand => 'visual-land',
             self::headwolf => 'head-wolf',
             self::vision => 'vision-technology',
+            self::thebrowser => 'the-browser-company',
+            self::nhn => 'nhn-corporation',
+            self::duckDuckGo => 'duck-duck-go',
+            self::lamantineSoftware => 'lamantine-software',
+            self::apoloSign => 'apolo-sign',
             default => $this->name,
         };
     }

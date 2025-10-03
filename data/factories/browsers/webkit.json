@@ -91,6 +91,7 @@
     "/lunascape/i": "lunascape",
     "/com\\.douban\\.group/i": "douban app",
     "/com\\.apple\\.notes/i": "apple notes app",
+    "/networkingextension|com\\.apple\\.webkit.networking/i": "networking-extension",
     "/com\\.apple\\.webkit/i": "apple webkit service",
     "/safarifetcherd/i": "apple safari fetcher daemon",
     "/zdownload%20pro/i": "zdownload pro",
@@ -415,6 +416,8 @@
     "/icatcher/i": "icatcher",
     "/keeper/i": "keeper",
     "/nortonpasswordmanager/i": "norton-password-manager",
+    "/widgetkitextension/i": "widgetkit-extension",
+    "/pdfexpert/i": "pdf-expert",
     "/cfnetwork/i": "cfnetwork"
   },
   "generic": "safari"

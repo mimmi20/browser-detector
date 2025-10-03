@@ -878,10 +878,10 @@
       "bits": null
     },
     "os": {
-      "name": "SailfishOS",
-      "marketingName": "SailfishOS",
-      "version": null,
-      "manufacturer": "jolla",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
       "bits": null
     },
     "client": {
@@ -1797,6 +1797,51 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Instagram 361.0.0.46.88 Android (35/15; 360dpi; 1008x2244; Google/google; Pixel 8 Pro; husky; husky; de_DE; 674675147)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 8 Pro",
+      "marketingName": "Pixel 8 Pro",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2992,
+        "height": 1344,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "361.0.0.46.88",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {

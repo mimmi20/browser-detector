@@ -1086,6 +1086,7 @@ final class Device implements DeviceInterface
             'sm-s911u1' => 'samsung=samsung sm-s911u1',
             'sm-s911w' => 'samsung=samsung sm-s911w',
             'sm-s911j' => 'samsung=samsung sm-s911j',
+            'scg17' => 'samsung=samsung scg17',
             'scg19' => 'samsung=samsung scg19',
             'sm-s916b' => 'samsung=samsung sm-s916b',
             'sm-x706b' => 'samsung=samsung sm-x706b',
@@ -1760,6 +1761,7 @@ final class Device implements DeviceInterface
             'sm-x736', 'samsung sm-x736' => 'samsung=samsung sm-x736',
             'sm-x736b', 'samsung sm-x736b' => 'samsung=samsung sm-x736b',
             'sm-s731b', 'samsung sm-s731b' => 'samsung=samsung sm-s731b',
+            'sc-51b' => 'samsung=samsung sc-51b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -5115,6 +5117,28 @@ final class Device implements DeviceInterface
             '17_pro_max' => 'trecfone=trecfone 17 pro max',
             // yandex
             'yndx-000sb' => 'yandex=yandex yndx-000sb',
+            // qiuwoky
+            'c10s' => 'qiuwoky=qiuwoky c10s',
+            // v7
+            'v7 zyro' => 'v7=v7 zyro',
+            'buv7tblt10a' => 'v7=v7 buv7tblt10a',
+            // apolo-sign
+            'em103a' => 'apolo-sign=apolo-sign em103a',
+            // multilaser
+            'm8_4g' => 'multilaser=multilaser m8 4g',
+            // premier
+            'premier p50' => 'premier=premier p50',
+            // volla
+            'volla phone 22' => 'volla=volla phone 22',
+            // nesons
+            'n32hf2302sf' => 'nesons=nesons n32hf2302sf',
+            'n32hr2301sf' => 'nesons=nesons n32hr2301sf',
+            'n43hq2304svf' => 'nesons=nesons n43hq2304svf',
+            'n50hq2305svf' => 'nesons=nesons n50hq2305svf',
+            // openbox
+            'openbox a8' => 'openbox=openbox a8',
+            'openbox a9' => 'openbox=openbox a9',
+            'openbox gold' => 'openbox=openbox gold',
             // other
             default => null,
         };

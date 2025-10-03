@@ -5490,5 +5490,17 @@
       "search": null
     },
     "engine": null
+  },
+  "arc-browser": {
+    "name": "Arc",
+    "manufacturer": "the-browser-company",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arc"
+      ]
+    },
+    "engine": null
   }
 }

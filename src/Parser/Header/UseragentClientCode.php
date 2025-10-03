@@ -70,7 +70,13 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             }
         }
 
-        if (preg_match('/(?P<client>instagram) [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i', $normalizedValue, $matches)) {
+        if (
+            preg_match(
+                '/(?P<client>instagram) [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
+                $normalizedValue,
+                $matches,
+            )
+        ) {
             return 'instagram app';
         }
 

@@ -1176,6 +1176,7 @@ final class DeviceTest extends TestCase
             ['SM-S911U1', 'samsung=samsung sm-s911u1'],
             ['SM-S911W', 'samsung=samsung sm-s911w'],
             ['SM-S911J', 'samsung=samsung sm-s911j'],
+            ['SCG17', 'samsung=samsung scg17'],
             ['SCG19', 'samsung=samsung scg19'],
             ['SM-S916B', 'samsung=samsung sm-s916b'],
             ['SM-X706B', 'samsung=samsung sm-x706b'],
@@ -2114,6 +2115,7 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-X736', 'samsung=samsung sm-x736'],
             ['SM-S731B', 'samsung=samsung sm-s731b'],
             ['SAMSUNG SM-S731B', 'samsung=samsung sm-s731b'],
+            ['SC-51B', 'samsung=samsung sc-51b'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -5641,6 +5643,28 @@ final class DeviceTest extends TestCase
             ['17_Pro_Max', 'trecfone=trecfone 17 pro max'],
             // yandex
             ['YNDX-000SB', 'yandex=yandex yndx-000sb'],
+            // qiuwoky
+            ['C10S', 'qiuwoky=qiuwoky c10s'],
+            // v7
+            ['V7 Zyro', 'v7=v7 zyro'],
+            ['BUV7TBLT10A', 'v7=v7 buv7tblt10a'],
+            // apolo-sign
+            ['EM103A', 'apolo-sign=apolo-sign em103a'],
+            // multilaser
+            ['M8_4G', 'multilaser=multilaser m8 4g'],
+            // premier
+            ['Premier P50', 'premier=premier p50'],
+            // volla
+            ['Volla Phone 22', 'volla=volla phone 22'],
+            // nesons
+            ['N32HF2302SF', 'nesons=nesons n32hf2302sf'],
+            ['N32HR2301SF', 'nesons=nesons n32hr2301sf'],
+            ['N43HQ2304SVF', 'nesons=nesons n43hq2304svf'],
+            ['N50HQ2305SVF', 'nesons=nesons n50hq2305svf'],
+            // openbox
+            ['OPENBOX A8', 'openbox=openbox a8'],
+            ['OPENBOX A9', 'openbox=openbox a9'],
+            ['OPENBOX GOLD', 'openbox=openbox gold'],
             // other
             ['Model"', null],
             [': "', null],

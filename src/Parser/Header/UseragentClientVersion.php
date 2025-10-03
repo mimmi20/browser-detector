@@ -66,7 +66,13 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
             return $matches['version'];
         }
 
-        if (preg_match('/instagram (?P<version>[\d.]+) android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i', $normalizedValue, $matches)) {
+        if (
+            preg_match(
+                '/instagram (?P<version>[\d.]+) android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
+                $normalizedValue,
+                $matches,
+            )
+        ) {
             return $matches['version'];
         }
 
