@@ -5169,6 +5169,12 @@ final class Device implements DeviceInterface
             'alpha a16' => 'novey=novey alpha a16',
             // iiyama
             'lh5565uhsb-b1' => 'iiyama=iiyama lh5565uhsb-b1',
+            // sowly
+            'ag_1088_a133p' => 'sowly=sowly a133p',
+            // mione
+            'mione u1' => 'mione=mione u1',
+            // pagraer
+            'pgr3042' => 'pagraer=pagraer pgr3042',
             // other
             default => null,
         };

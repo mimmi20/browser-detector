@@ -387,6 +387,12 @@ enum Company: string implements CompanyInterface
 
     case jasmineTea = 'jasmine tea';
 
+    case sowly = 'SOWLY';
+
+    case mione = 'Mione';
+
+    case pagraer = 'Pagraer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -579,6 +585,9 @@ enum Company: string implements CompanyInterface
             'novey' => self::novey,
             'iiyama' => self::iiyama,
             'jasmine tea', 'jasminetea', 'jasmine-tea' => self::jasmineTea,
+            'sowly' => self::sowly,
+            'mione' => self::mione,
+            'pagraer' => self::pagraer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

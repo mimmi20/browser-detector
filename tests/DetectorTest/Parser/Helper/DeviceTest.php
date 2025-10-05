@@ -5695,6 +5695,12 @@ final class DeviceTest extends TestCase
             ['Alpha A16', 'novey=novey alpha a16'],
             // iiyama
             ['LH5565UHSB-B1', 'iiyama=iiyama lh5565uhsb-b1'],
+            // sowly
+            ['AG_1088_A133P', 'sowly=sowly a133p'],
+            // mione
+            ['mione U1', 'mione=mione u1'],
+            // pagraer
+            ['PGR3042', 'pagraer=pagraer pgr3042'],
             // other
             ['Model"', null],
             [': "', null],

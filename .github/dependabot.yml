@@ -4,8 +4,11 @@
 
 version: 2
 
-multi-ecosystem-groups:
-  maintenance-master:
+updates:
+  - package-ecosystem: "composer"
+
+    directory: "/"
+
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -15,15 +18,33 @@ multi-ecosystem-groups:
     cooldown:
       default-days: 7
 
-    groups:
-      production-dependencies:
-        dependency-type: "production"
-      development-dependencies:
-        dependency-type: "development"
+    assignees:
+      - "mimmi20"
+
+    labels:
+      - "dependencies"
 
     versioning-strategy: "increase"
 
+    commit-message:
+      include: "scope"
+      prefix: "composer (master)"
+
+    # Disable rebasing for all pull requests
     rebase-strategy: "disabled"
+
+  - package-ecosystem: "github-actions"
+
+    directory: "/"
+
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+      time: "04:00"
+      timezone: "Europe/Berlin"
+
+    cooldown:
+      default-days: 7
 
     assignees:
       - "mimmi20"
@@ -31,25 +52,12 @@ multi-ecosystem-groups:
     labels:
       - "dependencies"
 
-    target-branch: "master"
-
-updates:
-  - package-ecosystem: "composer"
-
-    directory: "/"
-
-    multi-ecosystem-group: "maintenance-master"
-
-    patterns: [ "*" ]
-
-  - package-ecosystem: "github-actions"
-
-    directory: "/"
+    commit-message:
+      prefix: "github-actions (master)"
 
     ignore:
       - dependency-name: "mimmi20/ci"
       - dependency-name: "release-drafter/release-drafter"
 
-    multi-ecosystem-group: "maintenance-master"
-
-    patterns: [ "*" ]
+    # Disable rebasing for all pull requests
+    rebase-strategy: "disabled"

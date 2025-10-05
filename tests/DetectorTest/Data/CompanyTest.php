@@ -1174,6 +1174,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'jasmine tea',
                 'key' => 'jasmine-tea',
             ],
+            [
+                'type' => 'SOWLY',
+                'name' => 'SOWLY',
+                'brandname' => 'SOWLY',
+                'key' => 'sowly',
+            ],
+            [
+                'type' => 'Mione',
+                'name' => 'Mione',
+                'brandname' => 'Mione',
+                'key' => 'mione',
+            ],
+            [
+                'type' => 'Pagraer',
+                'name' => 'Pagraer',
+                'brandname' => 'Pagraer',
+                'key' => 'pagraer',
+            ],
         ];
     }
 

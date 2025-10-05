@@ -1,7 +1,7 @@
 {
   "rules": {
     "/bdbrowserhd/i": "baidu browser hd",
-    "/bidubrowser|spark\\//i": "baidu spark",
+    "/bidubrowser|(?<!n)spark\\//i": "baidu spark",
     "/tieba/i": "tieba",
     "/baidubrowser|bdbrowser/i": "baidu browser",
     "/newsarticle/i": "newsarticle app",

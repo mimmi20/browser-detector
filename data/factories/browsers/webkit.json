@@ -412,7 +412,7 @@
     "/icatcher/i": "icatcher",
     "/filebox/i": "filebox",
     "/keeper/i": "keeper",
-    "/spark\\//i": "baidu spark",
+    "/(?<!n)spark\\//i": "baidu spark",
     "/atbat/i": "atbat",
     "/maven/i": "maven",
     "/viber/i": "viber",
