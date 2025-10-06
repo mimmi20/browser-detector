@@ -5699,8 +5699,12 @@ final class DeviceTest extends TestCase
             ['AG_1088_A133P', 'sowly=sowly a133p'],
             // mione
             ['mione U1', 'mione=mione u1'],
+            ['Mione_PUBG_1', 'mione=mione pubg 1'],
+            ['mione Q11', 'mione=mione q11'],
+            ['mione Q1', 'mione=mione q1'],
             // pagraer
             ['PGR3042', 'pagraer=pagraer pgr3042'],
+            ['PAGRAER P50 Pro', 'pagraer=pagraer p50 pro'],
             // other
             ['Model"', null],
             [': "', null],

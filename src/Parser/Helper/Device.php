@@ -5173,8 +5173,12 @@ final class Device implements DeviceInterface
             'ag_1088_a133p' => 'sowly=sowly a133p',
             // mione
             'mione u1' => 'mione=mione u1',
+            'mione_pubg_1' => 'mione=mione pubg 1',
+            'mione q11' => 'mione=mione q11',
+            'mione q1' => 'mione=mione q1',
             // pagraer
             'pgr3042' => 'pagraer=pagraer pgr3042',
+            'pagraer p50 pro' => 'pagraer=pagraer p50 pro',
             // other
             default => null,
         };
