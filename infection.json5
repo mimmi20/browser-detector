@@ -21,5 +21,5 @@
     "MBString": false
   },
   "staticAnalysisTool": "phpstan",
-  "staticAnalysisToolOptions": "-c phpstan.neon --memory-limit=768M --no-progress"
+  "staticAnalysisToolOptions": "--configuration=phpstan.neon --memory-limit=768M --no-progress"
 }
