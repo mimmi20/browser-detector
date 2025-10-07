@@ -193,6 +193,8 @@ final class SecChUaTest extends TestCase
             ['"Chromium";v="118", "Wavebox";v="118", "Not=A?Brand";v="99"', true, 'wavebox-browser', true, '118'],
             ['"Not)A;Brand";v="24", "Total Browser";v="116"', true, 'total-browser', true, '116'],
             ['"Version"; v="14.1.2", "Safari"; v="605.1.15", "Chromium"; v="Not A;Brand", "Not;A Brand"; v="99"', true, 'safari', true, '14.1.2'],
+            ['"Opera Air";v="121", "Chromium";v="137", "Not/A)Brand";v="24"', true, 'opera-air', true, '121'],
+            ['"Opera Mini Android";v="95", "Chromium";v="137", "Not/A)Brand";v="24"', true, 'opera mini', true, '95'],
         ];
     }
 }

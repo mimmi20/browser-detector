@@ -15,13 +15,14 @@ updates:
       time: "04:00"
       timezone: "Europe/Berlin"
 
+    cooldown:
+      default-days: 7
+
     groups:
       production-dependencies:
         dependency-type: "production"
       development-dependencies:
         dependency-type: "development"
-
-    open-pull-requests-limit: 10
 
     assignees:
       - "mimmi20"
@@ -31,15 +32,9 @@ updates:
 
     versioning-strategy: "increase"
 
-    target-branch: "master"
-
     commit-message:
       include: "scope"
-      prefix: "composer"
-
-    ignore:
-      - dependency-name: "laminas/laminas-serializer"
-      - dependency-name: "psr/http-message"
+      prefix: "composer (master)"
 
     # Disable rebasing for all pull requests
     rebase-strategy: "disabled"
@@ -54,13 +49,14 @@ updates:
       time: "04:00"
       timezone: "Europe/Berlin"
 
+    cooldown:
+      default-days: 7
+
     groups:
       production-dependencies:
         dependency-type: "production"
       development-dependencies:
         dependency-type: "development"
-
-    open-pull-requests-limit: 10
 
     assignees:
       - "mimmi20"
@@ -68,10 +64,8 @@ updates:
     labels:
       - "dependencies"
 
-    target-branch: "master"
-
     commit-message:
-      prefix: "github-actions"
+      prefix: "github-actions (master)"
 
     ignore:
       - dependency-name: "mimmi20/ci"

@@ -1086,6 +1086,7 @@ final class Device implements DeviceInterface
             'sm-s911u1' => 'samsung=samsung sm-s911u1',
             'sm-s911w' => 'samsung=samsung sm-s911w',
             'sm-s911j' => 'samsung=samsung sm-s911j',
+            'scg17' => 'samsung=samsung scg17',
             'scg19' => 'samsung=samsung scg19',
             'sm-s916b' => 'samsung=samsung sm-s916b',
             'sm-x706b' => 'samsung=samsung sm-x706b',
@@ -1754,6 +1755,13 @@ final class Device implements DeviceInterface
             'sm-e346b', 'samsung sm-e346b' => 'samsung=samsung sm-e346b',
             'sm-m446k', 'samsung sm-m446k' => 'samsung=samsung sm-m446k',
             'sm-x518u', 'samsung sm-x518u' => 'samsung=samsung sm-x518u',
+            'sm-m556b', 'samsung sm-m556b' => 'samsung=samsung sm-m556b',
+            'sm-m556e', 'samsung sm-m556e' => 'samsung=samsung sm-m556e',
+            'sm-x730', 'samsung sm-x730' => 'samsung=samsung sm-x730',
+            'sm-x736', 'samsung sm-x736' => 'samsung=samsung sm-x736',
+            'sm-x736b', 'samsung sm-x736b' => 'samsung=samsung sm-x736b',
+            'sm-s731b', 'samsung sm-s731b' => 'samsung=samsung sm-s731b',
+            'sc-51b' => 'samsung=samsung sc-51b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2552,6 +2560,7 @@ final class Device implements DeviceInterface
             'xt2081-1' => 'motorola=motorola xt2081-1',
             'xt2081-2' => 'motorola=motorola xt2081-2',
             'xt2158-6' => 'motorola=motorola xt2158-6',
+            'moto g75 5g' => 'motorola=motorola moto g75 5g',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4614,6 +4623,7 @@ final class Device implements DeviceInterface
             'it-801b' => 'atmpc=atmpc it-801b',
             // vios
             'vtab7' => 'vios=vios vtab7',
+            'vi65pb1401na' => 'vios=vios vi65pb1401na',
             // global-sec
             'globalsec tab ten' => 'global-sec=global-sec tab ten',
             // nordmende
@@ -5106,6 +5116,69 @@ final class Device implements DeviceInterface
             'proton lite' => 'x-view=x-view proton lite',
             // trecfone
             '17_pro_max' => 'trecfone=trecfone 17 pro max',
+            // yandex
+            'yndx-000sb' => 'yandex=yandex yndx-000sb',
+            // qiuwoky
+            'c10s' => 'qiuwoky=qiuwoky c10s',
+            // v7
+            'v7 zyro' => 'v7=v7 zyro',
+            'buv7tblt10a' => 'v7=v7 buv7tblt10a',
+            // apolo-sign
+            'em103a' => 'apolo-sign=apolo-sign em103a',
+            // multilaser
+            'm8_4g' => 'multilaser=multilaser m8 4g',
+            // premier
+            'premier p50' => 'premier=premier p50',
+            // volla
+            'volla phone 22' => 'volla=volla phone 22',
+            'volla phone x23' => 'volla=volla phone x23',
+            'volla phone' => 'volla=volla phone',
+            // nesons
+            'n32hf2302sf' => 'nesons=nesons n32hf2302sf',
+            'n32hr2301sf' => 'nesons=nesons n32hr2301sf',
+            'n43hq2304svf' => 'nesons=nesons n43hq2304svf',
+            'n50hq2305svf' => 'nesons=nesons n50hq2305svf',
+            // openbox
+            'openbox a8' => 'openbox=openbox a8',
+            'openbox a9' => 'openbox=openbox a9',
+            'openbox gold' => 'openbox=openbox gold',
+            // mortal
+            'mortal t1' => 'mortal=mortal t1',
+            // homii
+            'xbook_12' => 'homii=homii xbook 12',
+            // andersson
+            'tbx11' => 'andersson=andersson tbx11',
+            // whoop
+            'tab-10us' => 'whoop=whoop tab-10us',
+            // hanson
+            'hanson_flex_7000' => 'hanson=hanson flex 7000',
+            // cloud-mobile
+            'stratus c8' => 'cloud-mobile=cloud-mobile stratus c8',
+            // idata
+            't3_pro' => 'idata=idata t3 pro',
+            // anbernic
+            'rgcube' => 'anbernic=anbernic rg cube',
+            'rg406v' => 'anbernic=anbernic rg406v',
+            'rg556' => 'anbernic=anbernic rg556',
+            // fontel
+            'ft800' => 'fontel=fontel ft800',
+            'ft1000' => 'fontel=fontel ft1000',
+            // consung
+            'n101b' => 'consung=consung n101b',
+            // novey
+            'alpha a16' => 'novey=novey alpha a16',
+            // iiyama
+            'lh5565uhsb-b1' => 'iiyama=iiyama lh5565uhsb-b1',
+            // sowly
+            'ag_1088_a133p' => 'sowly=sowly a133p',
+            // mione
+            'mione u1' => 'mione=mione u1',
+            'mione_pubg_1' => 'mione=mione pubg 1',
+            'mione q11' => 'mione=mione q11',
+            'mione q1' => 'mione=mione q1',
+            // pagraer
+            'pgr3042' => 'pagraer=pagraer pgr3042',
+            'pagraer p50 pro' => 'pagraer=pagraer p50 pro',
             // other
             default => null,
         };

@@ -1804,5 +1804,17 @@
       "search": null
     },
     "engine": null
+  },
+  "pdf-expert": {
+    "name": "PDFExpert",
+    "manufacturer": "readdle",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PDFExpert"
+      ]
+    },
+    "engine": null
   }
 }

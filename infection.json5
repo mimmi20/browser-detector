@@ -19,5 +19,7 @@
   "mutators": {
     "@default": true,
     "MBString": false
-  }
+  },
+  "staticAnalysisTool": "phpstan",
+  "staticAnalysisToolOptions": "--configuration=phpstan.neon --memory-limit=768M --no-progress"
 }

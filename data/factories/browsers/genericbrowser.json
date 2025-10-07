@@ -307,7 +307,7 @@
     "/curl/i": "curl",
     "/htdig/i": "ht://dig",
     "/redditbot/i": "reddit bot",
-    "/(?<![ciu])red(?![\\.\\)]| hat|mi)/i": "redbot",
+    "/(?<![bceiu?])red(?![i\\.\\)]| hat|mi)/i": "redbot",
     "/kstandbot/i": "kstandbot",
     "/discordbot/i": "discordbot",
     "/dbot/i": "dbot",
@@ -402,6 +402,9 @@
     "/hubspot crawler/i": "hubspot crawler",
     "/birdcrawlerbot/i": "bird-crawler-bot",
     "/lcc \\(\\+http:\\/\\/corpora\\.uni-leipzig\\.de/i": "lcc",
+    "/meta-externalads/i": "meta-externalads",
+    "/qwantbot/i": "qwantbot",
+    "/(?<!a)zoombot/i": "zoombot",
     "/crawler/i": "crawler",
     "/jig browser/i": "jig browser web",
     "/t-h-u-n-d-e-r-s-t-o-n-e/i": "texis webscript",
@@ -975,6 +978,7 @@
     "/asana/i": "asana",
     "/colly/i": "colly",
     "/avant/i": "avant",
+    "/arc\\//": "arc-browser",
     "/OWB/": "odyssey web browser"
   },
   "generic": "unknown"

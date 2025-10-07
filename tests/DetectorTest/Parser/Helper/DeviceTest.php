@@ -1176,6 +1176,7 @@ final class DeviceTest extends TestCase
             ['SM-S911U1', 'samsung=samsung sm-s911u1'],
             ['SM-S911W', 'samsung=samsung sm-s911w'],
             ['SM-S911J', 'samsung=samsung sm-s911j'],
+            ['SCG17', 'samsung=samsung scg17'],
             ['SCG19', 'samsung=samsung scg19'],
             ['SM-S916B', 'samsung=samsung sm-s916b'],
             ['SM-X706B', 'samsung=samsung sm-x706b'],
@@ -2102,6 +2103,19 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-M446K', 'samsung=samsung sm-m446k'],
             ['SM-X518U', 'samsung=samsung sm-x518u'],
             ['SAMSUNG SM-X518U', 'samsung=samsung sm-x518u'],
+            ['SM-M556B', 'samsung=samsung sm-m556b'],
+            ['SAMSUNG SM-M556B', 'samsung=samsung sm-m556b'],
+            ['SM-M556E', 'samsung=samsung sm-m556e'],
+            ['SAMSUNG SM-M556E', 'samsung=samsung sm-m556e'],
+            ['SM-X730', 'samsung=samsung sm-x730'],
+            ['SAMSUNG SM-X730', 'samsung=samsung sm-x730'],
+            ['SM-X736B', 'samsung=samsung sm-x736b'],
+            ['SAMSUNG SM-X736B', 'samsung=samsung sm-x736b'],
+            ['SM-X736', 'samsung=samsung sm-x736'],
+            ['SAMSUNG SM-X736', 'samsung=samsung sm-x736'],
+            ['SM-S731B', 'samsung=samsung sm-s731b'],
+            ['SAMSUNG SM-S731B', 'samsung=samsung sm-s731b'],
+            ['SC-51B', 'samsung=samsung sc-51b'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -2907,6 +2921,7 @@ final class DeviceTest extends TestCase
             ['XT2081-1', 'motorola=motorola xt2081-1'],
             ['XT2081-2', 'motorola=motorola xt2081-2'],
             ['XT2158-6', 'motorola=motorola xt2158-6'],
+            ['moto g75 5G', 'motorola=motorola moto g75 5g'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -5129,6 +5144,7 @@ final class DeviceTest extends TestCase
             ['IT-801B', 'atmpc=atmpc it-801b'],
             // vios
             ['VTAB7', 'vios=vios vtab7'],
+            ['VI65PB1401NA', 'vios=vios vi65pb1401na'],
             // global-sec
             ['GLOBALSEC TAB TEN', 'global-sec=global-sec tab ten'],
             // nordmende
@@ -5626,6 +5642,69 @@ final class DeviceTest extends TestCase
             ['Proton Lite', 'x-view=x-view proton lite'],
             // trecfone
             ['17_Pro_Max', 'trecfone=trecfone 17 pro max'],
+            // yandex
+            ['YNDX-000SB', 'yandex=yandex yndx-000sb'],
+            // qiuwoky
+            ['C10S', 'qiuwoky=qiuwoky c10s'],
+            // v7
+            ['V7 Zyro', 'v7=v7 zyro'],
+            ['BUV7TBLT10A', 'v7=v7 buv7tblt10a'],
+            // apolo-sign
+            ['EM103A', 'apolo-sign=apolo-sign em103a'],
+            // multilaser
+            ['M8_4G', 'multilaser=multilaser m8 4g'],
+            // premier
+            ['Premier P50', 'premier=premier p50'],
+            // volla
+            ['Volla Phone 22', 'volla=volla phone 22'],
+            ['Volla Phone X23', 'volla=volla phone x23'],
+            ['Volla Phone', 'volla=volla phone'],
+            // nesons
+            ['N32HF2302SF', 'nesons=nesons n32hf2302sf'],
+            ['N32HR2301SF', 'nesons=nesons n32hr2301sf'],
+            ['N43HQ2304SVF', 'nesons=nesons n43hq2304svf'],
+            ['N50HQ2305SVF', 'nesons=nesons n50hq2305svf'],
+            // openbox
+            ['OPENBOX A8', 'openbox=openbox a8'],
+            ['OPENBOX A9', 'openbox=openbox a9'],
+            ['OPENBOX GOLD', 'openbox=openbox gold'],
+            // mortal
+            ['Mortal T1', 'mortal=mortal t1'],
+            // homii
+            ['XBOOK_12', 'homii=homii xbook 12'],
+            // andersson
+            ['TBX11', 'andersson=andersson tbx11'],
+            // whoop
+            ['TAB-10US', 'whoop=whoop tab-10us'],
+            // hanson
+            ['HANSON_FLEX_7000', 'hanson=hanson flex 7000'],
+            // cloud-mobile
+            ['Stratus C8', 'cloud-mobile=cloud-mobile stratus c8'],
+            // idata
+            ['T3_Pro', 'idata=idata t3 pro'],
+            // anbernic
+            ['RGCUBE', 'anbernic=anbernic rg cube'],
+            ['RG406V', 'anbernic=anbernic rg406v'],
+            ['RG556', 'anbernic=anbernic rg556'],
+            // fontel
+            ['FT800', 'fontel=fontel ft800'],
+            ['FT1000', 'fontel=fontel ft1000'],
+            // consung
+            ['N101B', 'consung=consung n101b'],
+            // novey
+            ['Alpha A16', 'novey=novey alpha a16'],
+            // iiyama
+            ['LH5565UHSB-B1', 'iiyama=iiyama lh5565uhsb-b1'],
+            // sowly
+            ['AG_1088_A133P', 'sowly=sowly a133p'],
+            // mione
+            ['mione U1', 'mione=mione u1'],
+            ['Mione_PUBG_1', 'mione=mione pubg 1'],
+            ['mione Q11', 'mione=mione q11'],
+            ['mione Q1', 'mione=mione q1'],
+            // pagraer
+            ['PGR3042', 'pagraer=pagraer pgr3042'],
+            ['PAGRAER P50 Pro', 'pagraer=pagraer p50 pro'],
             // other
             ['Model"', null],
             [': "', null],

@@ -406,6 +406,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; ru-ru; P330X Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 Instagram 54.0.0.14.82 Android (18/4.3; 160dpi; 600x976; TCL; P330X; Pop7_LTE; qcom; ru_RU; 117539687)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P330X",
+      "marketingName": "OneTouch Pop 7S",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "54.0.0.14.82",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; 9003X Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.87 Safari/537.36[FBAN/EMA;FBLC/bg_BG;FBAV/285.0.0.13.118;]"
     },
     "device": {

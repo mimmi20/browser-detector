@@ -163,7 +163,7 @@
   },
   "whatsapp": {
     "name": "WhatsApp",
-    "manufacturer": "unknown",
+    "manufacturer": "meta",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -2056,6 +2056,26 @@
   "offline all in one": {
     "name": "Mini Games Offline All in One",
     "manufacturer": "microera",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "app-lock": {
+    "name": "App Lock",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "solid-file-manager": {
+    "name": "Solid File Manager",
+    "manufacturer": "jasmine-tea",
     "type": "mobile-application",
     "version": {
       "factory": null,

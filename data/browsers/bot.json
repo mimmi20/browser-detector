@@ -2051,6 +2051,18 @@
     },
     "engine": "unknown"
   },
+  "meta-externalads": {
+    "name": "FaceBook External Ads",
+    "manufacturer": "meta",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "meta-externalads"
+      ]
+    },
+    "engine": "unknown"
+  },
   "facebookscraper": {
     "name": "Facebookscraper",
     "manufacturer": "meta",
@@ -9967,6 +9979,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "qutrigobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "qwantbot": {
+    "name": "Qwantbot",
+    "manufacturer": "qwant",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Qwantbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zoombot": {
+    "name": "Zoombot",
+    "manufacturer": "zoom",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zoombot"
       ]
     },
     "engine": "unknown"

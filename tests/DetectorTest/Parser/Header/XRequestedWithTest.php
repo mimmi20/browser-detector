@@ -498,7 +498,10 @@ final class XRequestedWithTest extends TestCase
             ['com.gener8ads.wallet', true, 'gener8-browser', true, null],
             ['com.jambo', true, 'jambo', true, null],
             ['no.wifi.offline.games.puzzle.games', true, 'offline all in one', true, null],
-            // ['webexplorer.amazing.biro', true, '', true, null],
+            ['webexplorer.amazing.biro', true, 'internet-browser', true, null],
+            ['com.xbh.universal.player', true, 'universal-player', true, null],
+            ['com.mobile.applock.wt', true, 'app-lock', true, null],
+            ['com.solide.filemanager.lte', true, 'solid-file-manager', true, null],
         ];
     }
 }

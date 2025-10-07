@@ -5480,5 +5480,37 @@
       "search": null
     },
     "engine": null
+  },
+  "opera-air": {
+    "name": "Opera Air",
+    "manufacturer": "opera",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "arc-browser": {
+    "name": "Arc",
+    "manufacturer": "the-browser-company",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arc"
+      ]
+    },
+    "engine": null
+  },
+  "internet-browser": {
+    "name": "Internet Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }
