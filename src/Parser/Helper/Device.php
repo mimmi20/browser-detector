@@ -288,6 +288,7 @@ final class Device implements DeviceInterface
             'g011c' => 'google=google g011c',
             'g4s1m' => 'google=google g4s1m',
             'g1f8f' => 'google=google g1f8f',
+            'pixel 10 pro xl' => 'google=google pixel 10 pro xl',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -1762,6 +1763,11 @@ final class Device implements DeviceInterface
             'sm-x736b', 'samsung sm-x736b' => 'samsung=samsung sm-x736b',
             'sm-s731b', 'samsung sm-s731b' => 'samsung=samsung sm-s731b',
             'sc-51b' => 'samsung=samsung sc-51b',
+            'sm-a013m', 'samsung sm-a013m' => 'samsung=samsung sm-a013m',
+            'sm-a013g', 'samsung sm-a013g' => 'samsung=samsung sm-a013g',
+            'sm-a013f', 'samsung sm-a013f' => 'samsung=samsung sm-a013f',
+            'sm-a175f', 'samsung sm-a175f' => 'samsung=samsung sm-a175f',
+            'sm-a175m', 'samsung sm-a175m' => 'samsung=samsung sm-a175m',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -4197,6 +4203,7 @@ final class Device implements DeviceInterface
             't609spp' => 'tcl=tcl t609spp',
             '8496g' => 'tcl=tcl 8496g',
             '8196g' => 'tcl=tcl 8196g',
+            '9199s' => 'tcl=tcl 9199s',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -4911,6 +4918,7 @@ final class Device implements DeviceInterface
             'yndx-00095' => 'yandex=yandex yndx-00095',
             // wildred
             '32qws9002' => 'wildred=wildred 32qws9002',
+            '42qws9001' => 'wildred=wildred 42qws9001',
             // asano
             '50lu6000t' => 'asano=asano 50lu6000t',
             '43lf7010t' => 'asano=asano 43lf7010t',
@@ -5109,8 +5117,8 @@ final class Device implements DeviceInterface
             // sber
             'sbdv-00006' => 'sber=sber sbdv-00006',
             // senna
-            '32sn6000h' => 'senna=senna 32sn6000h',
-            'senna_43sn6000f' => 'senna=senna 43sn6000f',
+            'senna_32sn6000h', '32sn6000h' => 'senna=senna 32sn6000h',
+            'senna_43sn6000f', '43sn6000f' => 'senna=senna 43sn6000f',
             // x-view
             'ftb13' => 'x-view=x-view ftb13',
             'proton lite' => 'x-view=x-view proton lite',
@@ -5179,6 +5187,28 @@ final class Device implements DeviceInterface
             // pagraer
             'pgr3042' => 'pagraer=pagraer pgr3042',
             'pagraer p50 pro' => 'pagraer=pagraer p50 pro',
+            // uno-phone
+            'premier pro' => 'uno-phone=uno-phone premier pro',
+            'premier5max' => 'uno-phone=uno-phone premier 5 max',
+            // grünberg
+            'gr43200' => 'grünberg=grünberg gr43200',
+            'gr32200' => 'grünberg=grünberg gr32200',
+            // akai
+            'akai_ta32bf550' => 'akai=akai ta32bf550',
+            'akai_ta43bu500' => 'akai=akai ta43bu500',
+            // saba
+            'saba_42sb6000f' => 'saba=saba 42sb6000f',
+            'saba_32sb6000h' => 'saba=saba 32sb6000h',
+            // onyx-boox
+            'noteair4c' => 'onyx-boox=onyx-boox note air 4c',
+            // ghia
+            'gk133m3' => 'ghia=ghia gk133m3',
+            // eudora
+            'e65 pro' => 'eudora=eudora e65 pro',
+            // cuiud
+            'cuiud a91' => 'cuiud=cuiud a91',
+            // biegedy
+            'b22_eea' => 'biegedy=biegedy b22_eea',
             // other
             default => null,
         };

@@ -1192,6 +1192,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Pagraer',
                 'key' => 'pagraer',
             ],
+            [
+                'type' => 'UnoPhone',
+                'name' => 'UnoPhone',
+                'brandname' => 'UnoPhone',
+                'key' => 'uno-phone',
+            ],
+            [
+                'type' => 'Grünberg',
+                'name' => 'Grünberg',
+                'brandname' => 'Grünberg',
+                'key' => 'grünberg',
+            ],
+            [
+                'type' => 'Akai',
+                'name' => 'Akai',
+                'brandname' => 'Akai',
+                'key' => 'akai',
+            ],
+            [
+                'type' => 'Saba',
+                'name' => 'Saba',
+                'brandname' => 'Saba',
+                'key' => 'saba',
+            ],
+            [
+                'type' => 'Onyx Boox',
+                'name' => 'Onyx Boox',
+                'brandname' => 'Onyx Boox',
+                'key' => 'onyx-boox',
+            ],
+            [
+                'type' => 'Ghia',
+                'name' => 'Ghia',
+                'brandname' => 'Ghia',
+                'key' => 'ghia',
+            ],
+            [
+                'type' => 'Eudora',
+                'name' => 'Eudora',
+                'brandname' => 'Eudora',
+                'key' => 'eudora',
+            ],
+            [
+                'type' => 'CUIUD',
+                'name' => 'CUIUD',
+                'brandname' => 'CUIUD',
+                'key' => 'cuiud',
+            ],
+            [
+                'type' => 'Biegedy',
+                'name' => 'Biegedy',
+                'brandname' => 'Biegedy',
+                'key' => 'biegedy',
+            ],
         ];
     }
 
@@ -1656,6 +1710,30 @@ final class CompanyTest extends TestCase
                 'name' => 'jasmine tea',
                 'brandname' => 'jasmine tea',
                 'key' => 'jasmine-tea',
+            ],
+            [
+                'fallback' => 'uno-phone',
+                'name' => 'UnoPhone',
+                'brandname' => 'UnoPhone',
+                'key' => 'uno-phone',
+            ],
+            [
+                'fallback' => 'gruenberg',
+                'name' => 'Grünberg',
+                'brandname' => 'Grünberg',
+                'key' => 'grünberg',
+            ],
+            [
+                'fallback' => 'onyxboox',
+                'name' => 'Onyx Boox',
+                'brandname' => 'Onyx Boox',
+                'key' => 'onyx-boox',
+            ],
+            [
+                'fallback' => 'onyx-boox',
+                'name' => 'Onyx Boox',
+                'brandname' => 'Onyx Boox',
+                'key' => 'onyx-boox',
             ],
         ];
     }

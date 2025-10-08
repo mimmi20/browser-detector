@@ -393,6 +393,24 @@ enum Company: string implements CompanyInterface
 
     case pagraer = 'Pagraer';
 
+    case unoPhone = 'UnoPhone';
+
+    case gruenberg = 'Grünberg';
+
+    case akai = 'Akai';
+
+    case saba = 'Saba';
+
+    case onyxBoox = 'Onyx Boox';
+
+    case ghia = 'Ghia';
+
+    case eudora = 'Eudora';
+
+    case cuiud = 'CUIUD';
+
+    case biegedy = 'Biegedy';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -588,6 +606,15 @@ enum Company: string implements CompanyInterface
             'sowly' => self::sowly,
             'mione' => self::mione,
             'pagraer' => self::pagraer,
+            'unophone', 'uno-phone' => self::unoPhone,
+            'grünberg', 'gruenberg' => self::gruenberg,
+            'akai' => self::akai,
+            'saba' => self::saba,
+            'onyxboox', 'onyx boox', 'onyx-boox' => self::onyxBoox,
+            'ghia' => self::ghia,
+            'eudora' => self::eudora,
+            'cuiud' => self::cuiud,
+            'biegedy' => self::biegedy,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -694,6 +721,9 @@ enum Company: string implements CompanyInterface
             self::apoloSign => 'apolo-sign',
             self::cloudMobile => 'cloud-mobile',
             self::jasmineTea => 'jasmine-tea',
+            self::unoPhone => 'uno-phone',
+            self::gruenberg => 'grünberg',
+            self::onyxBoox => 'onyx-boox',
             default => $this->name,
         };
     }

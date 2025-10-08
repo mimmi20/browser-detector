@@ -943,5 +943,50 @@
       "version": "90.0.4430.210",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Nexus 5X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Nexus 5X",
+      "marketingName": "Nexus 5X",
+      "manufacturer": "lg",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "13.0.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
   }
 ]

@@ -1753,5 +1753,50 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Websuse.de/1.0 (Web Crawler; +http://Websuse.de/bot.html)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Suse Linux",
+      "marketingName": "Suse Linux",
+      "version": null,
+      "manufacturer": "suse",
+      "bits": null
+    },
+    "client": {
+      "name": "Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "linkfluence",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]
