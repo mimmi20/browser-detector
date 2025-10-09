@@ -5152,6 +5152,7 @@ final class DeviceTest extends TestCase
             ['Npad X1', 'n-one=n-one npad x1'],
             ['TAB011', 'n-one=n-one tab011'],
             ['Npad Y1', 'n-one=n-one npad y1'],
+            ['NpadQ', 'n-one=n-one npad q'],
             // atmpc
             ['IT-801B', 'atmpc=atmpc it-801b'],
             // vios
@@ -5742,6 +5743,14 @@ final class DeviceTest extends TestCase
             ['CUIUD A91', 'cuiud=cuiud a91'],
             // biegedy
             ['B22_EEA', 'biegedy=biegedy b22_eea'],
+            // grundig
+            ['GR-TB10S', 'grundig=grundig gr-tb10s'],
+            // dudu-auto
+            ['DUDU7', 'dudu-auto=dudu-auto dudu7'],
+            // vorcom
+            ['ULTRAPAD', 'vorcom=vorcom ultra pad'],
+            // mediacom
+            ['AZIMUT_4', 'mediacom=mediacom azimut 4'],
             // other
             ['Model"', null],
             [': "', null],

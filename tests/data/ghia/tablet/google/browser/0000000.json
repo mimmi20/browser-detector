@@ -1,23 +1,23 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SENNA_32SN6000H Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.15 (lite) Safari/537.36 TV"
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; GK133M3 Build/TP1A.221005.003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.41 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Senna device",
-      "marketingName": "general Senna device",
-      "manufacturer": "senna",
-      "brand": "senna",
-      "dualOrientation": null,
-      "simCount": null,
+      "deviceName": "GK133M3",
+      "marketingName": "GK133M3",
+      "manufacturer": "ghia",
+      "brand": "ghia",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
         "touch": true,
         "size": null
       },
-      "type": "mobile-device",
+      "type": "tablet",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -30,17 +30,17 @@
       "bits": null
     },
     "client": {
-      "name": "Yandex Browser Lite",
+      "name": "Chrome",
       "modus": null,
-      "version": "22.8.0.15",
-      "manufacturer": "yandex",
+      "version": "131.0.6778.41",
+      "manufacturer": "google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "101.0.4951.61",
+      "version": "131.0.6778.41",
       "manufacturer": "google"
     }
   }

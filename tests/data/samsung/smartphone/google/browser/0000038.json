@@ -1425,7 +1425,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A176B",
-      "marketingName": "Galaxy A17 (International)",
+      "marketingName": "Galaxy A17 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1650,7 +1650,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A176B",
-      "marketingName": "Galaxy A17 (International)",
+      "marketingName": "Galaxy A17 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1955,6 +1955,51 @@
     "engine": {
       "name": "Blink",
       "version": "140.0.7339.207",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-A175F Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.260 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A175F",
+      "marketingName": "Galaxy A17 4G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "131.0.6778.260",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "131.0.6778.260",
       "manufacturer": "google"
     }
   }

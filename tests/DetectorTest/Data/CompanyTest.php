@@ -1202,7 +1202,7 @@ final class CompanyTest extends TestCase
                 'type' => 'Grünberg',
                 'name' => 'Grünberg',
                 'brandname' => 'Grünberg',
-                'key' => 'grünberg',
+                'key' => 'gruenberg',
             ],
             [
                 'type' => 'Akai',
@@ -1245,6 +1245,24 @@ final class CompanyTest extends TestCase
                 'name' => 'Biegedy',
                 'brandname' => 'Biegedy',
                 'key' => 'biegedy',
+            ],
+            [
+                'type' => 'Grundig',
+                'name' => 'Grundig',
+                'brandname' => 'Grundig',
+                'key' => 'grundig',
+            ],
+            [
+                'type' => 'DUDU AUTO',
+                'name' => 'DUDU AUTO',
+                'brandname' => 'DUDU AUTO',
+                'key' => 'dudu-auto',
+            ],
+            [
+                'type' => 'Vorcom',
+                'name' => 'Vorcom',
+                'brandname' => 'Vorcom',
+                'key' => 'vorcom',
             ],
         ];
     }
@@ -1721,7 +1739,7 @@ final class CompanyTest extends TestCase
                 'fallback' => 'gruenberg',
                 'name' => 'Grünberg',
                 'brandname' => 'Grünberg',
-                'key' => 'grünberg',
+                'key' => 'gruenberg',
             ],
             [
                 'fallback' => 'onyxboox',
@@ -1734,6 +1752,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Onyx Boox',
                 'brandname' => 'Onyx Boox',
                 'key' => 'onyx-boox',
+            ],
+            [
+                'fallback' => 'dudu-auto',
+                'name' => 'DUDU AUTO',
+                'brandname' => 'DUDU AUTO',
+                'key' => 'dudu-auto',
+            ],
+            [
+                'fallback' => 'duduauto',
+                'name' => 'DUDU AUTO',
+                'brandname' => 'DUDU AUTO',
+                'key' => 'dudu-auto',
             ],
         ];
     }

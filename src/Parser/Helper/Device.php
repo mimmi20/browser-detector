@@ -4626,6 +4626,7 @@ final class Device implements DeviceInterface
             'npad x1' => 'n-one=n-one npad x1',
             'tab011' => 'n-one=n-one tab011',
             'npad y1' => 'n-one=n-one npad y1',
+            'npadq' => 'n-one=n-one npad q',
             // atmpc
             'it-801b' => 'atmpc=atmpc it-801b',
             // vios
@@ -5209,6 +5210,14 @@ final class Device implements DeviceInterface
             'cuiud a91' => 'cuiud=cuiud a91',
             // biegedy
             'b22_eea' => 'biegedy=biegedy b22_eea',
+            // grundig
+            'gr-tb10s' => 'grundig=grundig gr-tb10s',
+            // dudu-auto
+            'dudu7' => 'dudu-auto=dudu-auto dudu7',
+            // vorcom
+            'ultrapad' => 'vorcom=vorcom ultra pad',
+            // mediacom
+            'azimut_4' => 'mediacom=mediacom azimut 4',
             // other
             default => null,
         };
