@@ -417,6 +417,16 @@ enum Company: string implements CompanyInterface
 
     case vorcom = 'Vorcom';
 
+    case hemilton = 'Hemilton';
+
+    case saiet = 'Saiet';
+
+    case syco = 'Syco';
+
+    case mobiWire = 'MobiWire';
+
+    case hometech = 'Hometech';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -624,6 +634,11 @@ enum Company: string implements CompanyInterface
             'grundig' => self::grundig,
             'duduauto', 'dudu auto', 'dudu-auto' => self::duduAuto,
             'vorcom' => self::vorcom,
+            'hemilton' => self::hemilton,
+            'saiet' => self::saiet,
+            'syco' => self::syco,
+            'mobiwire', 'mobi-wire' => self::mobiWire,
+            'hometech' => self::hometech,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -733,6 +748,7 @@ enum Company: string implements CompanyInterface
             self::unoPhone => 'uno-phone',
             self::onyxBoox => 'onyx-boox',
             self::duduAuto => 'dudu-auto',
+            self::mobiWire => 'mobi-wire',
             default => $this->name,
         };
     }

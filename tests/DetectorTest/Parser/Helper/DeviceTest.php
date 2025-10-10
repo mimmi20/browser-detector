@@ -5364,6 +5364,7 @@ final class DeviceTest extends TestCase
             ['IKOSORA+', 'mobi-wire=mobi-wire ikosora+'],
             ['Taima', 'mobi-wire=mobi-wire taima'],
             ['Ahiga', 'mobi-wire=mobi-wire ahiga'],
+            ['Smart_P24', 'mobi-wire=mobi-wire smart p24'],
             // bmobile
             ['BL53_TG06', 'bmobile=bmobile bl53'],
             ['BL52Pro', 'bmobile=bmobile bl52 pro'],
@@ -5644,6 +5645,7 @@ final class DeviceTest extends TestCase
             // hometech
             ['ALFA_10BT_V2', 'hometech=hometech alfa 10bt v2'],
             ['Alfa 11 BT', 'hometech=hometech alfa 11 bt'],
+            ['7_PREMIUM_PRO', 'hometech=hometech 7 premium pro'],
             // newal
             ['NEWAL_TV_UHD-5042', 'newal=newal uhd-5042'],
             // sber
@@ -5724,9 +5726,9 @@ final class DeviceTest extends TestCase
             // uno-phone
             ['Premier Pro', 'uno-phone=uno-phone premier pro'],
             ['Premier5Max', 'uno-phone=uno-phone premier 5 max'],
-            // grünberg
-            ['GR43200', 'grünberg=grünberg gr43200'],
-            ['GR32200', 'grünberg=grünberg gr32200'],
+            // gruenberg
+            ['GR43200', 'gruenberg=gruenberg gr43200'],
+            ['GR32200', 'gruenberg=gruenberg gr32200'],
             // akai
             ['AKAI_TA32BF550', 'akai=akai ta32bf550'],
             ['AKAI_TA43BU500', 'akai=akai ta43bu500'],
@@ -5741,6 +5743,7 @@ final class DeviceTest extends TestCase
             ['E65 Pro', 'eudora=eudora e65 pro'],
             // cuiud
             ['CUIUD A91', 'cuiud=cuiud a91'],
+            ['cuiud F7', 'cuiud=cuiud f7'],
             // biegedy
             ['B22_EEA', 'biegedy=biegedy b22_eea'],
             // grundig
@@ -5751,6 +5754,12 @@ final class DeviceTest extends TestCase
             ['ULTRAPAD', 'vorcom=vorcom ultra pad'],
             // mediacom
             ['AZIMUT_4', 'mediacom=mediacom azimut 4'],
+            // hemilton
+            ['Tab1000', 'hemilton=hemilton pro tab 1000'],
+            // saiet
+            ['STS602', 'saiet=saiet sts602'],
+            // syco
+            ['SYCO RS-442', 'syco=syco rs-442'],
             // other
             ['Model"', null],
             [': "', null],

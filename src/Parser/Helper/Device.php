@@ -4833,6 +4833,7 @@ final class Device implements DeviceInterface
             'ikosora+' => 'mobi-wire=mobi-wire ikosora+',
             'taima' => 'mobi-wire=mobi-wire taima',
             'ahiga' => 'mobi-wire=mobi-wire ahiga',
+            'smart_p24' => 'mobi-wire=mobi-wire smart p24',
             // bmobile
             'bl53_tg06' => 'bmobile=bmobile bl53',
             'bl52pro' => 'bmobile=bmobile bl52 pro',
@@ -5113,6 +5114,7 @@ final class Device implements DeviceInterface
             // hometech
             'alfa_10bt_v2' => 'hometech=hometech alfa 10bt v2',
             'alfa 11 bt' => 'hometech=hometech alfa 11 bt',
+            '7_premium_pro' => 'hometech=hometech 7 premium pro',
             // newal
             'newal_tv_uhd-5042' => 'newal=newal uhd-5042',
             // sber
@@ -5191,9 +5193,9 @@ final class Device implements DeviceInterface
             // uno-phone
             'premier pro' => 'uno-phone=uno-phone premier pro',
             'premier5max' => 'uno-phone=uno-phone premier 5 max',
-            // grünberg
-            'gr43200' => 'grünberg=grünberg gr43200',
-            'gr32200' => 'grünberg=grünberg gr32200',
+            // gruenberg
+            'gr43200' => 'gruenberg=gruenberg gr43200',
+            'gr32200' => 'gruenberg=gruenberg gr32200',
             // akai
             'akai_ta32bf550' => 'akai=akai ta32bf550',
             'akai_ta43bu500' => 'akai=akai ta43bu500',
@@ -5208,6 +5210,7 @@ final class Device implements DeviceInterface
             'e65 pro' => 'eudora=eudora e65 pro',
             // cuiud
             'cuiud a91' => 'cuiud=cuiud a91',
+            'cuiud f7' => 'cuiud=cuiud f7',
             // biegedy
             'b22_eea' => 'biegedy=biegedy b22_eea',
             // grundig
@@ -5218,6 +5221,12 @@ final class Device implements DeviceInterface
             'ultrapad' => 'vorcom=vorcom ultra pad',
             // mediacom
             'azimut_4' => 'mediacom=mediacom azimut 4',
+            // hemilton
+            'tab1000' => 'hemilton=hemilton pro tab 1000',
+            // saiet
+            'sts602' => 'saiet=saiet sts602',
+            // syco
+            'syco rs-442' => 'syco=syco rs-442',
             // other
             default => null,
         };

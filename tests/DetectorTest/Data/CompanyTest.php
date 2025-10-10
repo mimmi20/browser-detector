@@ -1264,6 +1264,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Vorcom',
                 'key' => 'vorcom',
             ],
+            [
+                'type' => 'Hemilton',
+                'name' => 'Hemilton',
+                'brandname' => 'Hemilton',
+                'key' => 'hemilton',
+            ],
+            [
+                'type' => 'Saiet',
+                'name' => 'Saiet',
+                'brandname' => 'Saiet',
+                'key' => 'saiet',
+            ],
+            [
+                'type' => 'Syco',
+                'name' => 'Syco',
+                'brandname' => 'Syco',
+                'key' => 'syco',
+            ],
+            [
+                'type' => 'MobiWire',
+                'name' => 'MobiWire',
+                'brandname' => 'MobiWire',
+                'key' => 'mobi-wire',
+            ],
+            [
+                'type' => 'Hometech',
+                'name' => 'Hometech',
+                'brandname' => 'Hometech',
+                'key' => 'hometech',
+            ],
         ];
     }
 
@@ -1764,6 +1794,12 @@ final class CompanyTest extends TestCase
                 'name' => 'DUDU AUTO',
                 'brandname' => 'DUDU AUTO',
                 'key' => 'dudu-auto',
+            ],
+            [
+                'fallback' => 'mobi-wire',
+                'name' => 'MobiWire',
+                'brandname' => 'MobiWire',
+                'key' => 'mobi-wire',
             ],
         ];
     }
