@@ -2127,6 +2127,10 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A175F', 'samsung=samsung sm-a175f'],
             ['SM-A175M', 'samsung=samsung sm-a175m'],
             ['SAMSUNG SM-A175M', 'samsung=samsung sm-a175m'],
+            ['SM-A9000', 'samsung=samsung sm-a9000'],
+            ['SAMSUNG SM-A9000', 'samsung=samsung sm-a9000'],
+            ['SM-A900F', 'samsung=samsung sm-a900f'],
+            ['SAMSUNG SM-A900F', 'samsung=samsung sm-a900f'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -5760,6 +5764,8 @@ final class DeviceTest extends TestCase
             ['STS602', 'saiet=saiet sts602'],
             // syco
             ['SYCO RS-442', 'syco=syco rs-442'],
+            // philips
+            ['Philips W8555', 'philips=philips w8555'],
             // other
             ['Model"', null],
             [': "', null],

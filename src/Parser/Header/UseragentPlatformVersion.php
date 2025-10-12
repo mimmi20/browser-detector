@@ -22,7 +22,10 @@ use UaParser\PlatformParserInterface;
 use UaParser\PlatformVersionInterface;
 use UnexpectedValueException;
 
+use function array_filter;
+use function array_map;
 use function preg_match;
+use function reset;
 use function str_replace;
 
 final readonly class UseragentPlatformVersion implements PlatformVersionInterface
@@ -61,22 +64,48 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             return null;
         }
 
-        $matches = [];
-
         if (
-            preg_match('/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i', $normalizedValue, $matches)
-        ) {
-            return str_replace('_', '.', $matches['version']);
-        }
-
-        if (
-            preg_match(
-                '/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
+            preg_match('/^android \d+ - /i', $normalizedValue, $matches)
+            || preg_match('/news republic\/[\d.]+ \(linux; android \d+/i', $normalizedValue, $matches)
+            || preg_match(
+                '/^app : mozilla\/[\d.]+ \(linux; android \d+ ; \w+ \)/i',
                 $normalizedValue,
                 $matches,
             )
+            || preg_match('/mozilla\/[\d.]+ \(linux; android [\d.]+ ios;/i', $normalizedValue, $matches)
+            || preg_match('/ \/ android \d+$/i', $normalizedValue, $matches)
+            || preg_match('/wnyc app\/[\d.]+ android\/\d+ /i', $normalizedValue, $matches)
         ) {
-            return $matches['version'];
+            return null;
+        }
+
+        $regexes = [
+            '/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i',
+            '/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
+            '/icq_android\/[\d.]+ \(android; \d+; (?P<version>[\d.]+)/i',
+            '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;[^);\/]+;(?P<version>[\d.]+)/i',
+        ];
+
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
+        );
+
+        $results = array_map(
+            static function (string $regex) use ($normalizedValue): string {
+                $matches = [];
+
+                preg_match($regex, $normalizedValue, $matches);
+
+                return str_replace('_', '.', $matches['version'] ?? '');
+            },
+            $filtered,
+        );
+
+        $detectedCode = reset($results);
+
+        if ($detectedCode !== null && $detectedCode !== false && $detectedCode !== '') {
+            return $detectedCode;
         }
 
         if ($code === null) {

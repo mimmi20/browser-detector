@@ -1768,6 +1768,8 @@ final class Device implements DeviceInterface
             'sm-a013f', 'samsung sm-a013f' => 'samsung=samsung sm-a013f',
             'sm-a175f', 'samsung sm-a175f' => 'samsung=samsung sm-a175f',
             'sm-a175m', 'samsung sm-a175m' => 'samsung=samsung sm-a175m',
+            'sm-a9000', 'samsung sm-a9000' => 'samsung=samsung sm-a9000',
+            'sm-a900f', 'samsung sm-a900f' => 'samsung=samsung sm-a900f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -5227,6 +5229,8 @@ final class Device implements DeviceInterface
             'sts602' => 'saiet=saiet sts602',
             // syco
             'syco rs-442' => 'syco=syco rs-442',
+            // philips
+            'philips w8555' => 'philips=philips w8555',
             // other
             default => null,
         };

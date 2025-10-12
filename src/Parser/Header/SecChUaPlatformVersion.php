@@ -51,7 +51,7 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
         $windowsVersion = (float) $value;
 
         if ($windowsVersion < 1) {
-            $windowsVersion     *= 10;
+            $windowsVersion      = (int) ($windowsVersion * 10);
             $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
 
             return $minorVersionMapping[$windowsVersion] ?? $value;

@@ -43,7 +43,6 @@ use UaResult\Company\Company;
 use UaResult\Device\Architecture;
 use UaResult\Engine\Engine;
 
-use function mb_strtolower;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
@@ -54,7 +53,7 @@ use function sprintf;
 #[CoversClass(UseragentEngineVersion::class)]
 #[CoversClass(UseragentPlatformCode::class)]
 #[CoversClass(UseragentPlatformVersion::class)]
-final class Useragent1Test extends TestCase
+final class Useragent13Test extends TestCase
 {
     /**
      * @throws ExpectationFailedException
@@ -65,8 +64,8 @@ final class Useragent1Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa')]
-    public function testData(
+    #[DataProvider('providerUa3')]
+    public function testData3(
         string $ua,
         string $normalizedUa,
         bool $hasDeviceInfo,
@@ -81,7 +80,6 @@ final class Useragent1Test extends TestCase
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
-        string $engineUa,
         string | null $engineCode,
         bool $hasEngineVersion,
         string | null $engineVersion,
@@ -95,21 +93,21 @@ final class Useragent1Test extends TestCase
         $platformParser
             ->expects(self::any())
             ->method('parse')
-            ->with($ua)
+            ->with($normalizedUa)
             ->willReturn('');
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
             ->expects(self::any())
             ->method('parse')
-            ->with($ua)
+            ->with($normalizedUa)
             ->willReturn('');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
             ->expects(self::any())
             ->method('parse')
-            ->with($engineUa)
+            ->with($normalizedUa)
             ->willReturn($engineCode);
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
@@ -183,7 +181,7 @@ final class Useragent1Test extends TestCase
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
-            $normalizedUa,
+            $ua,
             $header->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
@@ -292,188 +290,65 @@ final class Useragent1Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    public static function providerUa(): array
+    public static function providerUa3(): array
     {
         return [
             [
-                'ua' => 'pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
+                'ua' => 'Instagram 396.0.0.46.242 Android (35/15; 420dpi; 1080x2400; Xiaomi; 24030PN60G; aurora; qcom; de_DE; 785863896)',
+                'normalizedUa' => 'Instagram 396.0.0.46.242 Android (35/15; 420dpi; 1080x2400; Xiaomi; 24030PN60G; aurora; qcom; 785863896)',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
+                'deviceUa' => '24030pn60g',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
+                'clientCode' => 'instagram app',
                 'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
+                'clientVersion' => '396.0.0.46.242',
+                'hasPlatformInfo' => true,
+                'platformCode' => 'android',
+                'hasPlatformVersion' => true,
+                'platformVersion' => '15',
+                'hasEngineInfo' => true,
+                'engineCode' => 'webkit',
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'ICQ_Android/5.0 (Android; 17; 4.2.2; eng.rd2version.1388046998; Philips W8555; ru-RU)',
+                'normalizedUa' => 'ICQ_Android/5.0 (Android; 17; 4.2.2; eng.rd2version.1388046998; Philips W8555)',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'philips w8555',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => null,
+                'hasClientVersion' => true,
+                'clientVersion' => null,
                 'hasPlatformInfo' => true,
                 'platformCode' => 'android',
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => 'pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
-                'ua' => 'pf(Symbian);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(Symbian);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
+                'ua' => 'GG-Android/4.0.0.20098 (OS;Android;17) (HWD;asus;ASUS Transformer Pad TF300T;4.2.1)',
+                'normalizedUa' => 'GG-Android/4.0.0.20098 (OS;Android;17) (HWD;asus;ASUS Transformer Pad TF300T;4.2.1)',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
+                'deviceUa' => 'asus transformer pad tf300t',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
+                'clientCode' => null,
                 'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
-                'hasPlatformInfo' => true,
-                'platformCode' => 'symbian',
-                'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
-                'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
-            ],
-            [
-                'ua' => 'pf(Java);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(Java);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
-                'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
-                'hasPlatformInfo' => true,
-                'platformCode' => 'java',
-                'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
-                'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
-            ],
-            [
-                'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
-                'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
+                'clientVersion' => null,
                 'hasPlatformInfo' => true,
                 'platformCode' => 'android',
                 'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
+                'platformVersion' => '4.2.1',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
-            ],
-            [
-                'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(wds 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(wds 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
-                'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
-                'hasPlatformInfo' => true,
-                'platformCode' => 'windows phone',
-                'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
-                'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
-            ],
-            [
-                'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
-                'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
-                'hasPlatformInfo' => true,
-                'platformCode' => 'windows phone',
-                'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
-                'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
-            ],
-            [
-                'ua' => 'pf(44);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(44);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
-                'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
-                'hasPlatformInfo' => true,
-                'platformCode' => 'ios',
-                'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
-                'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
-            ],
-            [
-                'ua' => 'pf(42);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(42);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
-                'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
-                'hasPlatformInfo' => true,
-                'platformCode' => 'ios',
-                'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
-                'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
-            ],
-            [
-                'ua' => 'pf(x);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(x);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'lenovo a369i',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
-                'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
-                'hasPlatformInfo' => true,
-                'platformCode' => null,
-                'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
-                'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
         ];
     }
@@ -487,18 +362,20 @@ final class Useragent1Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa2')]
-    public function testData2(
+    #[DataProvider('providerUa4')]
+    public function testDataWithoutFindingADevice(
         string $ua,
         string $normalizedUa,
         bool $hasDeviceInfo,
         string $deviceUa,
         string $deviceCode,
         bool $hasClientInfo,
+        string $clientUa,
         string | null $clientCode,
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
+        string $platformUa,
         string | null $platformCode,
         bool $hasPlatformVersion,
         string | null $platformVersion,
@@ -519,14 +396,14 @@ final class Useragent1Test extends TestCase
         $platformParser
             ->expects(self::any())
             ->method('parse')
-            ->with($ua)
+            ->with($platformUa)
             ->willReturn('');
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
             ->expects(self::any())
             ->method('parse')
-            ->with($ua)
+            ->with($clientUa)
             ->willReturn('');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
@@ -561,10 +438,8 @@ final class Useragent1Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
-            ->method('getDeviceCode')
-            ->with(mb_strtolower($deviceUa))
-            ->willReturn(null);
+            ->expects(self::never())
+            ->method('getDeviceCode');
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
@@ -716,28 +591,140 @@ final class Useragent1Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    public static function providerUa2(): array
+    public static function providerUa4(): array
     {
         return [
             [
-                'ua' => 'pf(x);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'normalizedUa' => 'pf(x);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
+                'ua' => 'Android 17 - samsung meliuslte',
+                'normalizedUa' => 'Android 17 - samsung meliuslte',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'Lenovo A369i',
+                'deviceUa' => 'Android 17 - samsung meliuslte',
                 'deviceCode' => 'A369i',
                 'hasClientInfo' => true,
-                'clientCode' => 'ucbrowser',
+                'clientUa' => 'Android 17 - samsung meliuslte',
+                'clientCode' => null,
                 'hasClientVersion' => true,
-                'clientVersion' => '9.1.0.297',
+                'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => null,
+                'platformUa' => 'Android 17 - samsung meliuslte',
+                'platformCode' => 'android',
                 'hasPlatformVersion' => true,
-                'platformVersion' => '4.2.2',
+                'platformVersion' => null,
                 'hasEngineInfo' => true,
-                'engineUa' => '',
+                'engineUa' => 'Android 17 - samsung meliuslte',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'News Republic/12.1.5 (Linux; U; Android 26; en-us) Mobile Safari',
+                'normalizedUa' => 'News Republic/12.1.5 (Linux; U; Android 26; en-us) Mobile Safari',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientUa' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
+                'clientCode' => null,
+                'hasClientVersion' => true,
+                'clientVersion' => null,
+                'hasPlatformInfo' => true,
+                'platformUa' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
+                'platformCode' => 'android',
+                'hasPlatformVersion' => true,
+                'platformVersion' => null,
+                'hasEngineInfo' => true,
+                'engineUa' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
+                'engineCode' => 'webkit',
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
+                'normalizedUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
+                'clientCode' => null,
+                'hasClientVersion' => true,
+                'clientVersion' => null,
+                'hasPlatformInfo' => true,
+                'platformUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
+                'platformCode' => 'android',
+                'hasPlatformVersion' => true,
+                'platformVersion' => null,
+                'hasEngineInfo' => true,
+                'engineUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
+                'engineCode' => 'webkit',
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
+                'normalizedUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
+                'clientCode' => null,
+                'hasClientVersion' => true,
+                'clientVersion' => null,
+                'hasPlatformInfo' => true,
+                'platformUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
+                'platformCode' => 'android',
+                'hasPlatformVersion' => true,
+                'platformVersion' => null,
+                'hasEngineInfo' => true,
+                'engineUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
+                'engineCode' => 'webkit',
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'SM-T970 (compatible; Tablet2.0) HandelsbladProduction, com.twipemobile.nrc 5.1.4 (511) / Android 33',
+                'normalizedUa' => 'SM-T970 (compatible; Tablet2.0) HandelsbladProduction, com.twipemobile.nrc 5.1.4 (511) / Android 33',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'SM-T970 (compatible; Tablet2.0) HandelsbladProduction, com.twipemobile.nrc 5.1.4 (511) / Android 33',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientUa' => 'SM-T970 (compatible; Tablet2.0) HandelsbladProduction, com.twipemobile.nrc 5.1.4 (511) / Android 33',
+                'clientCode' => null,
+                'hasClientVersion' => true,
+                'clientVersion' => null,
+                'hasPlatformInfo' => true,
+                'platformUa' => 'SM-T970 (compatible; Tablet2.0) HandelsbladProduction, com.twipemobile.nrc 5.1.4 (511) / Android 33',
+                'platformCode' => 'android',
+                'hasPlatformVersion' => true,
+                'platformVersion' => null,
+                'hasEngineInfo' => true,
+                'engineUa' => 'SM-T970 (compatible; Tablet2.0) HandelsbladProduction, com.twipemobile.nrc 5.1.4 (511) / Android 33',
+                'engineCode' => 'webkit',
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V',
+                'normalizedUa' => 'WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientUa' => 'WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V',
+                'clientCode' => null,
+                'hasClientVersion' => true,
+                'clientVersion' => null,
+                'hasPlatformInfo' => true,
+                'platformUa' => 'WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V',
+                'platformCode' => 'android',
+                'hasPlatformVersion' => true,
+                'platformVersion' => null,
+                'hasEngineInfo' => true,
+                'engineUa' => 'WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V',
+                'engineCode' => 'webkit',
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
             ],
         ];
     }
