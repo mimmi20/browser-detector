@@ -366,5 +366,85 @@
     },
     "type": "phablet",
     "platform": "ios"
+  },
+  "apple iphone 14,6": {
+    "deviceName": "iPhone 14,6",
+    "marketingName": "iPhone SE (3rd Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1334,
+      "height": 750,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "phablet",
+    "platform": "ios"
+  },
+  "apple iphone 15,4": {
+    "deviceName": "iPhone 15,4",
+    "marketingName": "iPhone 15",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2556,
+      "height": 1179,
+      "touch": true,
+      "size": 6.1
+    },
+    "type": "phablet",
+    "platform": "ios"
+  },
+  "apple iphone 15,5": {
+    "deviceName": "iPhone 15,5",
+    "marketingName": "iPhone 15 Plus",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2796,
+      "height": 1290,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "ios"
+  },
+  "apple iphone 16,1": {
+    "deviceName": "iPhone 16,1",
+    "marketingName": "iPhone 15 Pro",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2556,
+      "height": 1179,
+      "touch": true,
+      "size": 6.1
+    },
+    "type": "phablet",
+    "platform": "ios"
+  },
+  "apple iphone 16,2": {
+    "deviceName": "iPhone 16,2",
+    "marketingName": "iPhone 15 Pro Max",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2796,
+      "height": 1290,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "ios"
   }
 }
