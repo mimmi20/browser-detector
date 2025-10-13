@@ -15,8 +15,10 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserPhoneClientCode;
 use BrowserDetector\Parser\Header\XUcbrowserPhoneDeviceCode;
+use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaRequest\Header\XUcbrowserPhoneUa;
@@ -29,7 +31,10 @@ use function sprintf;
 #[CoversClass(XUcbrowserPhoneDeviceCode::class)]
 final class XUcbrowserPhoneTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     #[DataProvider('providerUa')]
     public function testData(
         string $ua,
@@ -100,7 +105,8 @@ final class XUcbrowserPhoneTest extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -116,7 +122,8 @@ final class XUcbrowserPhoneTest extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
@@ -129,7 +136,8 @@ final class XUcbrowserPhoneTest extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );

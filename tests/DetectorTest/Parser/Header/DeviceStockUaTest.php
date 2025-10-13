@@ -20,6 +20,7 @@ use BrowserDetector\Parser\Header\DeviceStockUaEngineCode;
 use BrowserDetector\Parser\Header\DeviceStockUaEngineVersion;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformCode;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformVersion;
+use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -30,6 +31,7 @@ use UaParser\DeviceParserInterface;
 use UaRequest\Header\FullHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
+use UnexpectedValueException;
 
 use function preg_match;
 use function sprintf;
@@ -48,6 +50,7 @@ final class DeviceStockUaTest extends TestCase
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -162,11 +165,21 @@ final class DeviceStockUaTest extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $clientVersion,
-            $header->getClientVersion(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
-        );
+
+        if ($clientVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getClientVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $clientVersion,
+                $header->getClientVersion()->getVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasPlatformInfo,
             $header->hasPlatformCode(),
@@ -182,11 +195,21 @@ final class DeviceStockUaTest extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $platformVersion,
-            $header->getPlatformVersion(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
-        );
+
+        if ($platformVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getPlatformVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $platformVersion,
+                $header->getPlatformVersion()->getVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasEngineInfo,
             $header->hasEngineCode(),
@@ -202,11 +225,20 @@ final class DeviceStockUaTest extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $engineVersion,
-            $header->getEngineVersion(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
-        );
+
+        if ($engineVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getEngineVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $engineVersion,
+                $header->getEngineVersion()->getVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        }
     }
 
     /**
@@ -217,11 +249,11 @@ final class DeviceStockUaTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380D/S5380DZHLB1; U; Bada/2.0; zh-cn) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B', true, 'GT-S5380D', false, null, false, null, true, 'bada', true, '2.0', true, 'webkit', true, '534.20'],
+            ['Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380D/S5380DZHLB1; U; Bada/2.0; zh-cn) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B', true, 'GT-S5380D', false, null, false, null, true, 'bada', true, '2.0.0', true, 'webkit', true, '534.20.0'],
             ['SAMSUNG-GT-S8500', true, 'GT-S8500', false, null, false, null, false, null, false, null, false, null, false, null],
-            ['Mozilla/5.0 (Linux; U; Android 4.2.5; zh-cn; MI 2SC Build/YunOS) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', true, 'MI 2SC', false, null, false, null, true, 'android', true, '4.2.5', true, 'webkit', true, '534.30'],
-            ['Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.9.0.0.22', true, 'Nokia501', false, null, false, null, false, null, false, null, true, 'gecko', true, '20100401'],
-            ['Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.1.1.0.27', true, 'Nokia501', false, null, false, null, false, null, false, null, true, 'gecko', true, '20100401'],
+            ['Mozilla/5.0 (Linux; U; Android 4.2.5; zh-cn; MI 2SC Build/YunOS) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', true, 'MI 2SC', false, null, false, null, true, 'android', true, '4.2.5', true, 'webkit', true, '534.30.0'],
+            ['Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.9.0.0.22', true, 'Nokia501', false, null, false, null, false, null, false, null, true, 'gecko', true, '20100401.0.0'],
+            ['Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.1.1.0.27', true, 'Nokia501', false, null, false, null, false, null, false, null, true, 'gecko', true, '20100401.0.0'],
             ['Mozilla/5.0 (Bada 2.0.0)', false, '', false, null, false, null, true, 'bada', true, '2.0.0', false, null, false, null],
             ['BlackBerry9700/5.0.0.235 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1', true, 'BlackBerry9700', false, null, false, null, true, 'rim os', true, '5.0.0.235', false, null, false, null],
             ['BlackBerry9300', true, 'BlackBerry9300', false, null, false, null, true, 'rim os', false, null, false, null, false, null],
@@ -244,9 +276,9 @@ final class DeviceStockUaTest extends TestCase
             ['PhilipsX2300/W1245_V12 ThreadX_OS/4.0 MOCOR/W12 Release/11.08.2012 Browser/Dorado1.0', true, 'PhilipsX2300', false, null, false, null, false, null, false, null, false, null, false, null],
             ['ReksioVRE(196683)', false, '', false, null, false, null, false, null, false, null, false, null, false, null],
             ['Motorola', false, '', false, null, false, null, false, null, false, null, false, null, false, null],
-            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)', true, 'HTC_HD2_T8585', false, null, false, null, true, 'windows phone', true, '6.5', false, null, false, null],
-            ['Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)', true, '', true, 'iemobile', true, '9.0', true, 'windows phone', true, '7.5', true, 'trident', true, '5.0'],
-            ['Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)', true, '', true, 'iemobile', true, '9.0', true, 'windows phone', true, '7.5', true, 'trident', true, '5.0'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)', true, 'HTC_HD2_T8585', false, null, false, null, true, 'windows phone', true, '6.5.0', false, null, false, null],
+            ['Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)', true, '', true, 'iemobile', true, '9.0.0', true, 'windows phone', true, '7.5.0', true, 'trident', true, '5.0.0'],
+            ['Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)', true, '', true, 'iemobile', true, '9.0.0', true, 'windows phone', true, '7.5.0', true, 'trident', true, '5.0.0'],
             ['Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533_17_9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5', true, 'iPhone', false, null, false, null, true, 'ios', true, '4.3.3', true, 'webkit', true, '533.17.9'],
         ];
     }

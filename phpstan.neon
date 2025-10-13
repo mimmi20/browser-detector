@@ -128,6 +128,10 @@ parameters:
         - tests/DetectorTest/Loader/EngineLoaderTest.php
         - tests/DetectorTest/Loader/PlatformLoader3Test.php
         - tests/DetectorTest/Loader/PlatformLoader4Test.php
+    -
+      identifier: throws.unusedType
+      paths:
+        - src/Detector.php
 
 rules:
   # code complexity

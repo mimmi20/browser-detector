@@ -13,14 +13,23 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaParser\PlatformVersionInterface;
 
+use function assert;
+use function is_int;
+use function mb_strpos;
 use function mb_strtolower;
+use function mb_substr;
 use function mb_trim;
 
 final class SecChUaPlatformVersion implements PlatformVersionInterface
 {
+    use SetVersionTrait;
+
     /** @throws void */
     #[Override]
     public function hasPlatformVersion(string $value): bool
@@ -30,22 +39,31 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
         return $value !== '';
     }
 
-    /**
-     * @return non-empty-string|null
-     *
-     * @throws void
-     */
+    /** @throws VersionContainsDerivateException */
     #[Override]
-    public function getPlatformVersion(string $value, string | null $code = null): string | null
+    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
     {
         $value = mb_trim($value, '"\\\'');
 
         if ($value === '') {
-            return null;
+            return new ForcedNullVersion();
         }
 
         if ($code === null || mb_strtolower($code) !== 'windows') {
-            return $value;
+            $derivatePosition = mb_strpos($value, ';');
+
+            assert($derivatePosition === false || is_int($derivatePosition));
+
+            if ($derivatePosition !== false) {
+                $derivate = mb_trim(mb_substr($value, $derivatePosition + 1));
+
+                $exception = new VersionContainsDerivateException();
+                $exception->setDerivate($derivate);
+
+                throw $exception;
+            }
+
+            return $this->setVersion($value);
         }
 
         $windowsVersion = (float) $value;
@@ -54,13 +72,13 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
             $windowsVersion      = (int) ($windowsVersion * 10);
             $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
 
-            return $minorVersionMapping[$windowsVersion] ?? $value;
+            return $this->setVersion($minorVersionMapping[$windowsVersion] ?? $value);
         }
 
         if ($windowsVersion < 11) {
-            return '10';
+            return $this->setVersion('10');
         }
 
-        return '11';
+        return $this->setVersion('11');
     }
 }

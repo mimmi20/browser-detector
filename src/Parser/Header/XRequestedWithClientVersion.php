@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaParser\ClientVersionInterface;
 
@@ -20,6 +22,8 @@ use function preg_match;
 
 final class XRequestedWithClientVersion implements ClientVersionInterface
 {
+    use SetVersionTrait;
+
     /** @throws void */
     #[Override]
     public function hasClientVersion(string $value): bool
@@ -35,8 +39,8 @@ final class XRequestedWithClientVersion implements ClientVersionInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getClientVersion(string $value, string | null $code = null): string | null
+    public function getClientVersion(string $value, string | null $code = null): VersionInterface
     {
-        return null;
+        return new ForcedNullVersion();
     }
 }

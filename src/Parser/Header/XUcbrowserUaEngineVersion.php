@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaParser\EngineVersionInterface;
 
@@ -20,6 +22,8 @@ use function preg_match;
 
 final class XUcbrowserUaEngineVersion implements EngineVersionInterface
 {
+    use SetVersionTrait;
+
     /** @throws void */
     #[Override]
     public function hasEngineVersion(string $value): bool
@@ -33,14 +37,14 @@ final class XUcbrowserUaEngineVersion implements EngineVersionInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getEngineVersion(string $value, string | null $code = null): string | null
+    public function getEngineVersion(string $value, string | null $code = null): VersionInterface
     {
         $matches = [];
 
         if (preg_match('/(?<!o)re\([^\/]+\/(?P<version>[\d.]+)/', $value, $matches)) {
-            return $matches['version'];
+            return $this->setVersion($matches['version']);
         }
 
-        return null;
+        return new ForcedNullVersion();
     }
 }

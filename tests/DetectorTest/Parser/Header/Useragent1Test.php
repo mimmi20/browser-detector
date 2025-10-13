@@ -22,6 +22,7 @@ use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionBuilder;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -42,6 +43,7 @@ use UaResult\Bits\Bits;
 use UaResult\Company\Company;
 use UaResult\Device\Architecture;
 use UaResult\Engine\Engine;
+use UnexpectedValueException;
 
 use function mb_strtolower;
 use function sprintf;
@@ -62,6 +64,7 @@ final class Useragent1Test extends TestCase
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -238,11 +241,21 @@ final class Useragent1Test extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $clientVersion,
-            $header->getClientVersion(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
-        );
+
+        if ($clientVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getClientVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $clientVersion,
+                $header->getClientVersion()->getVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasPlatformInfo,
             $header->hasPlatformCode(),
@@ -258,11 +271,21 @@ final class Useragent1Test extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $platformVersion,
-            $header->getPlatformVersion(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
-        );
+
+        if ($platformVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getPlatformVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $platformVersion,
+                $header->getPlatformVersion()->getVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasEngineInfo,
             $header->hasEngineCode(),
@@ -278,11 +301,20 @@ final class Useragent1Test extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $engineVersion,
-            $header->getEngineVersion(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
-        );
+
+        if ($engineVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getEngineVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $engineVersion,
+                $header->getEngineVersion()->getVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        }
     }
 
     /**
@@ -313,7 +345,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => 'pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
                 'ua' => 'pf(Symbian);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
@@ -333,7 +365,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
                 'ua' => 'pf(Java);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
@@ -353,7 +385,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
                 'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
@@ -373,7 +405,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
                 'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(wds 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
@@ -393,7 +425,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
                 'ua' => 'pf(Windows);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
@@ -413,7 +445,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
                 'ua' => 'pf(44);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
@@ -433,7 +465,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
                 'ua' => 'pf(42);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
@@ -453,7 +485,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
             [
                 'ua' => 'pf(x);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
@@ -473,7 +505,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
         ];
     }
@@ -484,6 +516,7 @@ final class Useragent1Test extends TestCase
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -662,11 +695,21 @@ final class Useragent1Test extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $clientVersion,
-            $header->getClientVersion(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
-        );
+
+        if ($clientVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getClientVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $clientVersion,
+                $header->getClientVersion()->getVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasPlatformInfo,
             $header->hasPlatformCode(),
@@ -682,11 +725,21 @@ final class Useragent1Test extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $platformVersion,
-            $header->getPlatformVersion(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
-        );
+
+        if ($platformVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getPlatformVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $platformVersion,
+                $header->getPlatformVersion()->getVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasEngineInfo,
             $header->hasEngineCode(),
@@ -702,11 +755,20 @@ final class Useragent1Test extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $engineVersion,
-            $header->getEngineVersion(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
-        );
+
+        if ($engineVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getEngineVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $engineVersion,
+                $header->getEngineVersion()->getVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        }
     }
 
     /**
@@ -737,7 +799,7 @@ final class Useragent1Test extends TestCase
                 'engineUa' => '',
                 'engineCode' => 'webkit',
                 'hasEngineVersion' => true,
-                'engineVersion' => '534.31',
+                'engineVersion' => '534.31.0',
             ],
         ];
     }

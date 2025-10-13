@@ -256,7 +256,7 @@
     "/verykool|(?:adr|android) 2\\.3.* (?:r800|s732)/i": "verykool",
     "/(?<!Black)B[iI][rR][dD][ _\\-\\.]/": "bird",
     "/t880g|etl-[st][0-9]{3}/i": "etuline",
-    "/(?<!m)obi[_ ]|sf1|s551|(?<!vox )s50[1237]|s45[1234]|(?<!dns_)s400(?!i)|sj2\\.6|sj1\\.5|falcon|worldphone/i": "obi",
+    "/(?<!m)obi[_ ]|sf1|s551|(?<!vox )s50[1237]|s45[1234]|(?<!dns_)s400(?!i)|sj2\\.6|sj1\\.5|falcon(?!tag)|worldphone/i": "obi",
     "/(?<![_r\\/])cricket/i": "cricket",
     "/(?:adr|android) 4\\.2.* z512/i": "plum",
     "/40[gk]hs57|24[gk]hs5[57]/i": "doffler",

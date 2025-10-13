@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaParser\PlatformVersionInterface;
 
@@ -21,6 +23,8 @@ use function str_replace;
 
 final class DeviceStockUaPlatformVersion implements PlatformVersionInterface
 {
+    use SetVersionTrait;
+
     /** @throws void */
     #[Override]
     public function hasPlatformVersion(string $value): bool
@@ -37,7 +41,7 @@ final class DeviceStockUaPlatformVersion implements PlatformVersionInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformVersion(string $value, string | null $code = null): string | null
+    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
     {
         $matches = [];
 
@@ -48,9 +52,9 @@ final class DeviceStockUaPlatformVersion implements PlatformVersionInterface
                 $matches,
             )
         ) {
-            return str_replace('_', '.', $matches['version']);
+            return $this->setVersion(str_replace('_', '.', $matches['version']));
         }
 
-        return null;
+        return new ForcedNullVersion();
     }
 }

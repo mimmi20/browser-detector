@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaDeviceCode;
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaPlatformCode;
+use BrowserDetector\Version\NullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -147,7 +148,8 @@ final class XUcbrowserDeviceUaTest extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -165,7 +167,8 @@ final class XUcbrowserDeviceUaTest extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
@@ -178,7 +181,8 @@ final class XUcbrowserDeviceUaTest extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
