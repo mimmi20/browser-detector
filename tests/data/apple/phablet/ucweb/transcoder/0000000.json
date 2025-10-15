@@ -1036,6 +1036,96 @@
   },
   {
     "headers": {
+      "user-agent": "dv(iPh15,4);pr(UCBrowser/11.3.5.1203);ov(17_5_1);ss(375x812);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 15,4",
+      "marketingName": "iPhone 15",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2556,
+        "height": 1179,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "17.5.1",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.3.5.1203",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "dv(iPh15,5);pr(UCBrowser/16.4.5.2310);ov(17_5_1);ss(430x932);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 15,5",
+      "marketingName": "iPhone 15 Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2796,
+        "height": 1290,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "17.5.1",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "16.4.5.2310",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8_1 like Mac OS X; zh-CN) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/18H107 UCBrowser/13.7.2.1636 Mobile AliApp(TUnionSDK/0.1.20.4) dv(iPh13,2);pr(UCBrowser/13.7.2.1636);ov(14_8_1);ss(390x844);bt(UC);pm(0);bv(0);nm(0);im(0);nt(2);"
     },
     "device": {

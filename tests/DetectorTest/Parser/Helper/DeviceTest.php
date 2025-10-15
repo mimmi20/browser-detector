@@ -311,6 +311,7 @@ final class DeviceTest extends TestCase
             ['G011C', 'google=google g011c'],
             ['G4S1M', 'google=google g4s1m'],
             ['G1F8F', 'google=google g1f8f'],
+            ['Pixel 10 Pro XL', 'google=google pixel 10 pro xl'],
             // OnePlus
             ['AC2003', 'oneplus=oneplus ac2003'],
             ['IN2023', 'oneplus=oneplus in2023'],
@@ -2116,6 +2117,20 @@ final class DeviceTest extends TestCase
             ['SM-S731B', 'samsung=samsung sm-s731b'],
             ['SAMSUNG SM-S731B', 'samsung=samsung sm-s731b'],
             ['SC-51B', 'samsung=samsung sc-51b'],
+            ['SM-A013M', 'samsung=samsung sm-a013m'],
+            ['SAMSUNG SM-A013M', 'samsung=samsung sm-a013m'],
+            ['SM-A013G', 'samsung=samsung sm-a013g'],
+            ['SAMSUNG SM-A013G', 'samsung=samsung sm-a013g'],
+            ['SM-A013F', 'samsung=samsung sm-a013f'],
+            ['SAMSUNG SM-A013F', 'samsung=samsung sm-a013f'],
+            ['SM-A175F', 'samsung=samsung sm-a175f'],
+            ['SAMSUNG SM-A175F', 'samsung=samsung sm-a175f'],
+            ['SM-A175M', 'samsung=samsung sm-a175m'],
+            ['SAMSUNG SM-A175M', 'samsung=samsung sm-a175m'],
+            ['SM-A9000', 'samsung=samsung sm-a9000'],
+            ['SAMSUNG SM-A9000', 'samsung=samsung sm-a9000'],
+            ['SM-A900F', 'samsung=samsung sm-a900f'],
+            ['SAMSUNG SM-A900F', 'samsung=samsung sm-a900f'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4640,6 +4655,7 @@ final class DeviceTest extends TestCase
             ['T609SPP', 'tcl=tcl t609spp'],
             ['8496G', 'tcl=tcl 8496g'],
             ['8196G', 'tcl=tcl 8196g'],
+            ['9199S', 'tcl=tcl 9199s'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -5140,6 +5156,7 @@ final class DeviceTest extends TestCase
             ['Npad X1', 'n-one=n-one npad x1'],
             ['TAB011', 'n-one=n-one tab011'],
             ['Npad Y1', 'n-one=n-one npad y1'],
+            ['NpadQ', 'n-one=n-one npad q'],
             // atmpc
             ['IT-801B', 'atmpc=atmpc it-801b'],
             // vios
@@ -5351,6 +5368,7 @@ final class DeviceTest extends TestCase
             ['IKOSORA+', 'mobi-wire=mobi-wire ikosora+'],
             ['Taima', 'mobi-wire=mobi-wire taima'],
             ['Ahiga', 'mobi-wire=mobi-wire ahiga'],
+            ['Smart_P24', 'mobi-wire=mobi-wire smart p24'],
             // bmobile
             ['BL53_TG06', 'bmobile=bmobile bl53'],
             ['BL52Pro', 'bmobile=bmobile bl52 pro'],
@@ -5437,6 +5455,7 @@ final class DeviceTest extends TestCase
             ['YNDX-00095', 'yandex=yandex yndx-00095'],
             // wildred
             ['32QWS9002', 'wildred=wildred 32qws9002'],
+            ['42QWS9001', 'wildred=wildred 42qws9001'],
             // asano
             ['50LU6000T', 'asano=asano 50lu6000t'],
             ['43LF7010T', 'asano=asano 43lf7010t'],
@@ -5630,13 +5649,16 @@ final class DeviceTest extends TestCase
             // hometech
             ['ALFA_10BT_V2', 'hometech=hometech alfa 10bt v2'],
             ['Alfa 11 BT', 'hometech=hometech alfa 11 bt'],
+            ['7_PREMIUM_PRO', 'hometech=hometech 7 premium pro'],
             // newal
             ['NEWAL_TV_UHD-5042', 'newal=newal uhd-5042'],
             // sber
             ['SBDV-00006', 'sber=sber sbdv-00006'],
             // senna
             ['32SN6000H', 'senna=senna 32sn6000h'],
+            ['SENNA_32SN6000H', 'senna=senna 32sn6000h'],
             ['SENNA_43SN6000F', 'senna=senna 43sn6000f'],
+            ['43SN6000F', 'senna=senna 43sn6000f'],
             // x-view
             ['FTB13', 'x-view=x-view ftb13'],
             ['Proton Lite', 'x-view=x-view proton lite'],
@@ -5705,6 +5727,45 @@ final class DeviceTest extends TestCase
             // pagraer
             ['PGR3042', 'pagraer=pagraer pgr3042'],
             ['PAGRAER P50 Pro', 'pagraer=pagraer p50 pro'],
+            // uno-phone
+            ['Premier Pro', 'uno-phone=uno-phone premier pro'],
+            ['Premier5Max', 'uno-phone=uno-phone premier 5 max'],
+            // gruenberg
+            ['GR43200', 'gruenberg=gruenberg gr43200'],
+            ['GR32200', 'gruenberg=gruenberg gr32200'],
+            // akai
+            ['AKAI_TA32BF550', 'akai=akai ta32bf550'],
+            ['AKAI_TA43BU500', 'akai=akai ta43bu500'],
+            // saba
+            ['SABA_42SB6000F', 'saba=saba 42sb6000f'],
+            ['SABA_32SB6000H', 'saba=saba 32sb6000h'],
+            // onyx-boox
+            ['NoteAir4C', 'onyx-boox=onyx-boox note air 4c'],
+            // ghia
+            ['GK133M3', 'ghia=ghia gk133m3'],
+            // eudora
+            ['E65 Pro', 'eudora=eudora e65 pro'],
+            // cuiud
+            ['CUIUD A91', 'cuiud=cuiud a91'],
+            ['cuiud F7', 'cuiud=cuiud f7'],
+            // biegedy
+            ['B22_EEA', 'biegedy=biegedy b22_eea'],
+            // grundig
+            ['GR-TB10S', 'grundig=grundig gr-tb10s'],
+            // dudu-auto
+            ['DUDU7', 'dudu-auto=dudu-auto dudu7'],
+            // vorcom
+            ['ULTRAPAD', 'vorcom=vorcom ultra pad'],
+            // mediacom
+            ['AZIMUT_4', 'mediacom=mediacom azimut 4'],
+            // hemilton
+            ['Tab1000', 'hemilton=hemilton pro tab 1000'],
+            // saiet
+            ['STS602', 'saiet=saiet sts602'],
+            // syco
+            ['SYCO RS-442', 'syco=syco rs-442'],
+            // philips
+            ['Philips W8555', 'philips=philips w8555'],
             // other
             ['Model"', null],
             [': "', null],

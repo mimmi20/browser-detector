@@ -29,7 +29,6 @@ use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\Header\HeaderLoader;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
-use BrowserDetector\Version\VersionBuilderFactory;
 use Laminas\Hydrator\ArraySerializableHydrator;
 use Laminas\Hydrator\Exception\InvalidArgumentException;
 use Laminas\Hydrator\Strategy\CollectionStrategy;
@@ -158,7 +157,6 @@ final class DetectorFactory
                 platformLoader: $platformLoader,
                 browserLoader: $browserLoader,
                 engineLoader: $engineLoader,
-                versionBuilderFactory: new VersionBuilderFactory(),
             );
         }
 

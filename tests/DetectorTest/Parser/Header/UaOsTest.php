@@ -15,13 +15,17 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\UaOsPlatformCode;
 use BrowserDetector\Parser\Header\UaOsPlatformVersion;
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaRequest\Header\PlatformHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
+use UnexpectedValueException;
 
 use function sprintf;
 
@@ -29,7 +33,13 @@ use function sprintf;
 #[CoversClass(UaOsPlatformVersion::class)]
 final class UaOsTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws UnexpectedValueException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
     #[DataProvider('providerUa')]
     public function testData(
         string $ua,
@@ -90,7 +100,8 @@ final class UaOsTest extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -109,11 +120,21 @@ final class UaOsTest extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $platformVersion,
-            $header->getPlatformVersion(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
-        );
+
+        if ($platformVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getPlatformVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $platformVersion,
+                $header->getPlatformVersion()->getVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
         self::assertNull(
             $header->getEngineCode(),
@@ -123,7 +144,8 @@ final class UaOsTest extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -138,7 +160,7 @@ final class UaOsTest extends TestCase
     {
         return [
             ['Windows CE (Smartphone) - Version 5.2', false, null, false, null],
-            ['Windows CE (Pocket PC) - Version 5.2', true, 'windows ce', true, '5.2'],
+            ['Windows CE (Pocket PC) - Version 5.2', true, 'windows ce', true, '5.2.0'],
         ];
     }
 }

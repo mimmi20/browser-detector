@@ -129,11 +129,9 @@ parameters:
         - tests/DetectorTest/Loader/PlatformLoader3Test.php
         - tests/DetectorTest/Loader/PlatformLoader4Test.php
     -
-      identifier: throws.void
+      identifier: throws.unusedType
       paths:
-        - src/Loader/PlatformLoader.php
-        - src/Version/FirefoxOs.php
-        - src/Version/MicrosoftInternetExplorer.php
+        - src/Detector.php
 
 rules:
   # code complexity

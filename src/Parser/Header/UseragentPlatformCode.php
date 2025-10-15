@@ -19,8 +19,11 @@ use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformCodeInterface;
 use UaParser\PlatformParserInterface;
 
+use function array_filter;
+use function array_map;
 use function mb_strtolower;
 use function preg_match;
+use function reset;
 
 final readonly class UseragentPlatformCode implements PlatformCodeInterface
 {
@@ -84,15 +87,39 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             };
         }
 
-        if (
-            preg_match(
-                '/instagram [\d.]+ (?P<platform>android) \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
-                $normalizedValue,
-                $matches,
-            )
-        ) {
-            // @todo: need to find a solution to find android forks like mocordroid
-            return mb_strtolower($matches['platform']);
+        $regexes = [
+            '/instagram [\d.]+ (?P<platform>android) \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
+            '/icq_android\/[\d.]+ \((?P<platform>android); \d+; [\d.]+/i',
+            '/gg-android\/[\d.]+ \(os;(?P<platform>android);\d+\) \([^);\/]+;[^);\/]+;[^);\/]+;[\d.]+/i',
+            '/^(?P<platform>android) \d+ - /i',
+            '/news republic\/[\d.]+ \(linux; (?P<platform>android) \d+/i',
+            '/^app : mozilla\/[\d.]+ \(linux; (?P<platform>android) \d+ ; \w+ \)/i',
+            '/mozilla\/[\d.]+ \(linux; (?P<platform>android) [\d.]+ ios;/i',
+            '/ \/ (?P<platform>android) \d+$/i',
+            '/wnyc app\/[\d.]+ (?P<platform>android)\/\d+ /i',
+        ];
+
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
+        );
+
+        $results = array_map(
+            static function (string $regex) use ($normalizedValue): string {
+                $matches = [];
+
+                preg_match($regex, $normalizedValue, $matches);
+
+                // @todo: need to find a solution to find android forks like mocordroid
+                return mb_strtolower($matches['platform'] ?? '');
+            },
+            $filtered,
+        );
+
+        $code = reset($results);
+
+        if ($code !== null && $code !== false && $code !== '') {
+            return $code;
         }
 
         $code = $this->platformParser->parse($normalizedValue);

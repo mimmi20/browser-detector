@@ -23,6 +23,7 @@ use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionInterface;
@@ -48,6 +49,7 @@ use UaResult\Company\Company;
 use UaResult\Device\Architecture;
 use UaResult\Engine\Engine;
 use UaResult\Os\Os;
+use UnexpectedValueException;
 
 use function sprintf;
 
@@ -237,7 +239,8 @@ final class Useragent11Test extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            ForcedNullVersion::class,
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -254,7 +257,8 @@ final class Useragent11Test extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
@@ -268,7 +272,8 @@ final class Useragent11Test extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -280,6 +285,7 @@ final class Useragent11Test extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws NotNumericException
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -470,7 +476,8 @@ final class Useragent11Test extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -489,7 +496,7 @@ final class Useragent11Test extends TestCase
         );
         self::assertSame(
             '1.0.2',
-            $header->getPlatformVersion(),
+            $header->getPlatformVersion()->getVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
@@ -502,7 +509,8 @@ final class Useragent11Test extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -514,6 +522,7 @@ final class Useragent11Test extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws NotNumericException
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -703,7 +712,8 @@ final class Useragent11Test extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -722,7 +732,7 @@ final class Useragent11Test extends TestCase
         );
         self::assertSame(
             '1.0.2',
-            $header->getPlatformVersion(),
+            $header->getPlatformVersion()->getVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
@@ -735,7 +745,8 @@ final class Useragent11Test extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -747,6 +758,7 @@ final class Useragent11Test extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws NotNumericException
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -936,7 +948,8 @@ final class Useragent11Test extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -955,7 +968,7 @@ final class Useragent11Test extends TestCase
         );
         self::assertSame(
             '1.0.2',
-            $header->getPlatformVersion(),
+            $header->getPlatformVersion()->getVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
@@ -968,7 +981,8 @@ final class Useragent11Test extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );

@@ -943,6 +943,52 @@ final class DetectorTest extends TestCase
                     ],
                 ],
             ],
+            [
+                ['user-agent' => 'Android 17 - samsung meliuslte'],
+                [
+                    'headers' => ['user-agent' => 'Android 17 - samsung meliuslte'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Samsung device',
+                        'marketingName' => 'general Samsung device',
+                        'manufacturer' => 'samsung',
+                        'brand' => 'samsung',
+                        'dualOrientation' => null,
+                        'simCount' => null,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'mobile-device',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => null,
+                        'manufacturer' => 'google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Android Webkit',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                    ],
+                ],
+            ],
         ];
     }
 }

@@ -14,20 +14,28 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\SecChUaPlatformVersion;
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaRequest\Header\PlatformVersionOnlyHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
+use UnexpectedValueException;
 
 use function sprintf;
 
 #[CoversClass(SecChUaPlatformVersion::class)]
 final class SecChUaPlatformVersionTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws UnexpectedValueException
+     */
     #[DataProvider('providerUa')]
     public function testData(string $ua, string | null $code, bool $hasVersion, string | null $version): void
     {
@@ -82,7 +90,8 @@ final class SecChUaPlatformVersionTest extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -99,11 +108,21 @@ final class SecChUaPlatformVersionTest extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $version,
-            $header->getPlatformVersion($code),
-            sprintf('platform info mismatch for ua "%s"', $ua),
-        );
+
+        if ($version === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getPlatformVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $version,
+                $header->getPlatformVersion($code)->getVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
         self::assertNull(
             $header->getEngineCode(),
@@ -113,7 +132,8 @@ final class SecChUaPlatformVersionTest extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -129,13 +149,13 @@ final class SecChUaPlatformVersionTest extends TestCase
         return [
             ['11.0.0', null, true, '11.0.0'],
             ['"11.0.0"', null, true, '11.0.0'],
-            ['"14.0.0"', 'Windows', true, '11'],
-            ['"11.0.0"', 'Windows', true, '11'],
-            ['"10.0.0"', 'Windows', true, '10'],
-            ['"0.4"', 'Windows', true, '0.4'],
-            ['"0.3"', 'Windows', true, '8.1'],
-            ['"0.2"', 'Windows', true, '8'],
-            ['"0.1"', 'Windows', true, '7'],
+            ['"14.0.0"', 'Windows', true, '11.0.0'],
+            ['"11.0.0"', 'Windows', true, '11.0.0'],
+            ['"10.0.0"', 'Windows', true, '10.0.0'],
+            ['"0.4"', 'Windows', true, '0.4.0'],
+            ['"0.3"', 'Windows', true, '8.1.0'],
+            ['"0.2"', 'Windows', true, '8.0.0'],
+            ['"0.1"', 'Windows', true, '7.0.0'],
             ['""', null, false, null],
         ];
     }

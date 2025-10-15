@@ -13,6 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\Exception\NotFoundException;
@@ -26,6 +29,8 @@ use function preg_match;
 
 final readonly class UseragentClientVersion implements ClientVersionInterface
 {
+    use SetVersionTrait;
+
     /** @throws void */
     public function __construct(
         private BrowserParserInterface $browserParser,
@@ -48,22 +53,22 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
 
     /** @throws void */
     #[Override]
-    public function getClientVersion(string $value, string | null $code = null): string | null
+    public function getClientVersion(string $value, string | null $code = null): VersionInterface
     {
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
-            return null;
+            return new ForcedNullVersion();
         }
 
         if ($normalizedValue === '' || $normalizedValue === null) {
-            return null;
+            return new ForcedNullVersion();
         }
 
         $matches = [];
 
         if (preg_match('/pr\([^\/]+\/(?P<version>[\d.]+)\);/', $normalizedValue, $matches)) {
-            return $matches['version'];
+            return $this->setVersion($matches['version']);
         }
 
         if (
@@ -73,7 +78,7 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
                 $matches,
             )
         ) {
-            return $matches['version'];
+            return $this->setVersion($matches['version']);
         }
 
         if ($code === null) {
@@ -81,29 +86,29 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
                 $code = $this->browserParser->parse($normalizedValue);
 
                 if ($code === '') {
-                    return null;
+                    return new ForcedNullVersion();
                 }
             } catch (UnexpectedValueException) {
-                return null;
+                return new NullVersion();
             }
         }
 
         try {
             $clientData = $this->browserLoader->load($code, $normalizedValue);
         } catch (NotFoundException) {
-            return null;
+            return new NullVersion();
         }
 
         try {
             $version = $clientData->getClient()->getVersion()->getVersion();
         } catch (UnexpectedValueException) {
-            return null;
+            return new NullVersion();
         }
 
-        if ($version === '') {
-            return null;
+        if ($version === '' || $version === null) {
+            return new NullVersion();
         }
 
-        return $version;
+        return $this->setVersion($version);
     }
 }

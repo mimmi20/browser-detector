@@ -15,6 +15,8 @@ namespace Parser\Header;
 
 use BrowserDetector\Parser\Header\CrawledByClientCode;
 use BrowserDetector\Parser\Header\CrawledByClientVersion;
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -23,6 +25,7 @@ use PHPUnit\Framework\TestCase;
 use UaRequest\Header\ClientHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
+use UnexpectedValueException;
 
 use function sprintf;
 
@@ -33,6 +36,9 @@ final class CrawledByTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     * @throws UnexpectedValueException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider('providerUa')]
     public function testData(
@@ -103,11 +109,21 @@ final class CrawledByTest extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $clientVersion,
-            $header->getClientVersion(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
-        );
+
+        if ($clientVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getClientVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $clientVersion,
+                $header->getClientVersion()->getVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertFalse(
             $header->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
@@ -120,7 +136,8 @@ final class CrawledByTest extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
@@ -136,7 +153,8 @@ final class CrawledByTest extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertInstanceOf(
+            NullVersion::class,
             $header->getEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );

@@ -393,6 +393,40 @@ enum Company: string implements CompanyInterface
 
     case pagraer = 'Pagraer';
 
+    case unoPhone = 'UnoPhone';
+
+    case gruenberg = 'Grünberg';
+
+    case akai = 'Akai';
+
+    case saba = 'Saba';
+
+    case onyxBoox = 'Onyx Boox';
+
+    case ghia = 'Ghia';
+
+    case eudora = 'Eudora';
+
+    case cuiud = 'CUIUD';
+
+    case biegedy = 'Biegedy';
+
+    case grundig = 'Grundig';
+
+    case duduAuto = 'DUDU AUTO';
+
+    case vorcom = 'Vorcom';
+
+    case hemilton = 'Hemilton';
+
+    case saiet = 'Saiet';
+
+    case syco = 'Syco';
+
+    case mobiWire = 'MobiWire';
+
+    case hometech = 'Hometech';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -588,6 +622,23 @@ enum Company: string implements CompanyInterface
             'sowly' => self::sowly,
             'mione' => self::mione,
             'pagraer' => self::pagraer,
+            'unophone', 'uno-phone' => self::unoPhone,
+            'grünberg', 'gruenberg' => self::gruenberg,
+            'akai' => self::akai,
+            'saba' => self::saba,
+            'onyxboox', 'onyx boox', 'onyx-boox' => self::onyxBoox,
+            'ghia' => self::ghia,
+            'eudora' => self::eudora,
+            'cuiud' => self::cuiud,
+            'biegedy' => self::biegedy,
+            'grundig' => self::grundig,
+            'duduauto', 'dudu auto', 'dudu-auto' => self::duduAuto,
+            'vorcom' => self::vorcom,
+            'hemilton' => self::hemilton,
+            'saiet' => self::saiet,
+            'syco' => self::syco,
+            'mobiwire', 'mobi-wire' => self::mobiWire,
+            'hometech' => self::hometech,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -694,6 +745,10 @@ enum Company: string implements CompanyInterface
             self::apoloSign => 'apolo-sign',
             self::cloudMobile => 'cloud-mobile',
             self::jasmineTea => 'jasmine-tea',
+            self::unoPhone => 'uno-phone',
+            self::onyxBoox => 'onyx-boox',
+            self::duduAuto => 'dudu-auto',
+            self::mobiWire => 'mobi-wire',
             default => $this->name,
         };
     }

@@ -17,9 +17,9 @@ use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Loader\Data\ClientData;
 use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
+use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use Psr\Http\Message\MessageInterface;
@@ -52,12 +52,7 @@ use function array_map;
 use function assert;
 use function explode;
 use function is_array;
-use function is_int;
-use function is_string;
-use function mb_strpos;
 use function mb_strtolower;
-use function mb_substr;
-use function mb_trim;
 use function reset;
 use function sprintf;
 use function str_contains;
@@ -80,7 +75,6 @@ final readonly class Detector implements DetectorInterface
         private PlatformLoaderInterface $platformLoader,
         private BrowserLoaderInterface $browserLoader,
         private EngineLoaderInterface $engineLoader,
-        private VersionBuilderFactoryInterface $versionBuilderFactory,
     ) {
         // nothing to do
     }
@@ -220,14 +214,6 @@ final readonly class Detector implements DetectorInterface
         ];
     }
 
-    /** @throws NotNumericException */
-    private function getVersion(string | null $inputVersion): VersionInterface
-    {
-        $versionBuilder = ($this->versionBuilderFactory)();
-
-        return $versionBuilder->set($inputVersion ?? '');
-    }
-
     /**
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
@@ -294,7 +280,7 @@ final readonly class Detector implements DetectorInterface
     /**
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @throws NotNumericException
+     * @throws void
      */
     private function getEngineVersion(array $filteredHeaders, string | null $engineCodename): VersionInterface
     {
@@ -306,7 +292,7 @@ final readonly class Detector implements DetectorInterface
         $engineVersionHeader = reset($headersWithEngineVersion);
 
         if ($engineVersionHeader instanceof HeaderInterface) {
-            return $this->getVersion($engineVersionHeader->getEngineVersion($engineCodename));
+            return $engineVersionHeader->getEngineVersion($engineCodename);
         }
 
         return new NullVersion();
@@ -344,11 +330,7 @@ final readonly class Detector implements DetectorInterface
             $engineCodename = $engineCodenameFromClient;
         }
 
-        try {
-            $engineVersion = $this->getEngineVersion($filteredHeaders, $engineCodename);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
-        }
+        $engineVersion = $this->getEngineVersion($filteredHeaders, $engineCodename);
 
         if ($engineCodename !== null) {
             try {
@@ -357,12 +339,12 @@ final readonly class Detector implements DetectorInterface
                     useragent: $engineHeader instanceof HeaderInterface ? $engineHeader->getValue() : '',
                 );
 
-                if ($engineVersion !== null) {
+                if ($engineVersion->getVersion() !== null) {
                     return $engine->withVersion($engineVersion);
                 }
 
                 return $engine;
-            } catch (NotFoundException $e) {
+            } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
             }
         }
@@ -370,14 +352,14 @@ final readonly class Detector implements DetectorInterface
         return new Engine(
             name: null,
             manufacturer: new Company(type: 'unknown', name: null, brandname: null),
-            version: $engineVersion ?? new NullVersion(),
+            version: $engineVersion,
         );
     }
 
     /**
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @throws NotNumericException
+     * @throws void
      */
     private function getClientVersion(array $filteredHeaders, string | null $clientCodename): VersionInterface
     {
@@ -389,7 +371,7 @@ final readonly class Detector implements DetectorInterface
         $clientVersionHeader = reset($headersWithClientVersion);
 
         if ($clientVersionHeader instanceof HeaderInterface) {
-            return $this->getVersion($clientVersionHeader->getClientVersion($clientCodename));
+            return $clientVersionHeader->getClientVersion($clientCodename);
         }
 
         return new NullVersion();
@@ -418,11 +400,7 @@ final readonly class Detector implements DetectorInterface
             $clientCodename = $clientHeader->getClientCode();
         }
 
-        try {
-            $clientVersion = $this->getClientVersion($filteredHeaders, $clientCodename);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
-        }
+        $clientVersion = $this->getClientVersion($filteredHeaders, $clientCodename);
 
         if ($clientCodename !== null) {
             assert($clientHeader instanceof HeaderInterface);
@@ -464,27 +442,19 @@ final readonly class Detector implements DetectorInterface
     /**
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @throws NotNumericException
+     * @throws VersionContainsDerivateException
      */
-    private function getPlatformVersion(
-        array $filteredHeaders,
-        string | null $platformCodename,
-    ): VersionInterface | string {
+    private function getPlatformVersion(array $filteredHeaders, string | null $platformCodename): VersionInterface
+    {
         $headersWithPlatformVersion = array_filter(
             $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
         );
 
-        $platformHeaderVerion = reset($headersWithPlatformVersion);
+        $platformHeaderVersion = reset($headersWithPlatformVersion);
 
-        if ($platformHeaderVerion instanceof HeaderInterface) {
-            $platformVersion = $platformHeaderVerion->getPlatformVersion($platformCodename);
-
-            if ($platformVersion !== null && str_contains($platformVersion, ';')) {
-                return $platformVersion;
-            }
-
-            return $this->getVersion($platformVersion);
+        if ($platformHeaderVersion instanceof HeaderInterface) {
+            return $platformHeaderVersion->getPlatformVersion($platformCodename);
         }
 
         return new NullVersion();
@@ -519,29 +489,20 @@ final readonly class Detector implements DetectorInterface
 
         try {
             $platformVersion = $this->getPlatformVersion($filteredHeaders, $platformCodename);
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
-        }
+        } catch (VersionContainsDerivateException $e) {
+            $platformVersion = null;
+            $derivate        = $e->getDerivate();
 
-        if (is_string($platformVersion)) {
-            $derivatePosition = mb_strpos($platformVersion, ';');
+            if ($platformHeader instanceof HeaderInterface && $derivate !== '') {
+                $derivateCodename = $platformHeader->getPlatformCode($derivate);
 
-            assert($derivatePosition === false || is_int($derivatePosition));
-
-            if ($derivatePosition !== false) {
-                // the platform contains information about a derivate of the platform
-                $derivate        = mb_trim(mb_substr($platformVersion, $derivatePosition + 1));
-                $platformVersion = null;
-
-                if ($platformHeader instanceof HeaderInterface) {
-                    $derivateCodename = $platformHeader->getPlatformCode($derivate);
-
-                    if ($derivateCodename !== null) {
-                        $platformCodename = $derivateCodename;
-                    }
+                if ($derivateCodename !== null) {
+                    $platformCodename = $derivateCodename;
                 }
             }
         }
+
+        // var_dump(4, $platformVersion);
 
         if ($platformCodename !== null) {
             try {
@@ -552,7 +513,7 @@ final readonly class Detector implements DetectorInterface
 
                 if (
                     $platformVersion instanceof VersionInterface
-                    && $platformVersion->getVersion() !== null
+                    && ($platformVersion instanceof ForcedNullVersion || $platformVersion->getVersion() !== null)
                 ) {
                     return $platform->withVersion($platformVersion);
                 }

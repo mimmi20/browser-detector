@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaParser\ClientVersionInterface;
 
@@ -20,6 +22,7 @@ use function reset;
 
 final class SecChUaClientVersion implements ClientVersionInterface
 {
+    use SetVersionTrait;
     use SortTrait;
 
     /** @throws void */
@@ -30,23 +33,21 @@ final class SecChUaClientVersion implements ClientVersionInterface
     }
 
     /**
-     * @return non-empty-string|null
-     *
      * @throws void
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getClientVersion(string $value, string | null $code = null): string | null
+    public function getClientVersion(string $value, string | null $code = null): VersionInterface
     {
         $list = $this->sort($value);
 
         $version = reset($list);
 
         if ($version === false) {
-            return null;
+            return new ForcedNullVersion();
         }
 
-        return $version;
+        return $this->setVersion($version);
     }
 }

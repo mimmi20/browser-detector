@@ -16,7 +16,6 @@ namespace BrowserDetectorTest;
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
@@ -195,11 +194,6 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionBuilderFactory = $this->createMock(VersionBuilderFactoryInterface::class);
-        $versionBuilderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
         $detector = new Detector(
             $logger,
             $cache,
@@ -208,7 +202,6 @@ final class Detector1Test extends TestCase
             $platformLoader,
             $browserLoader,
             $engineLoader,
-            $versionBuilderFactory,
         );
 
         self::assertSame($expected, $detector->getBrowser($headers));
@@ -427,11 +420,6 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionBuilderFactory = $this->createMock(VersionBuilderFactoryInterface::class);
-        $versionBuilderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
         $detector = new Detector(
             $logger,
             $cache,
@@ -440,7 +428,6 @@ final class Detector1Test extends TestCase
             $platformLoader,
             $browserLoader,
             $engineLoader,
-            $versionBuilderFactory,
         );
 
         self::assertSame($expected, $detector->getBrowser($headers));
@@ -662,11 +649,6 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionBuilderFactory = $this->createMock(VersionBuilderFactoryInterface::class);
-        $versionBuilderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
         $detector = new Detector(
             $logger,
             $cache,
@@ -675,7 +657,6 @@ final class Detector1Test extends TestCase
             $platformLoader,
             $browserLoader,
             $engineLoader,
-            $versionBuilderFactory,
         );
 
         self::assertSame($expected, $detector->getBrowser($headers));
@@ -896,11 +877,6 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionBuilderFactory = $this->createMock(VersionBuilderFactoryInterface::class);
-        $versionBuilderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
         $detector = new Detector(
             $logger,
             $cache,
@@ -909,240 +885,6 @@ final class Detector1Test extends TestCase
             $platformLoader,
             $browserLoader,
             $engineLoader,
-            $versionBuilderFactory,
-        );
-
-        self::assertSame($expected, $detector->getBrowser($headers));
-    }
-
-    /**
-     * @throws Exception
-     * @throws InvalidArgumentException
-     * @throws UnexpectedValueException
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     *
-     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
-     */
-    public function testGetBrowserWithoutCacheButWithMobileData(): void
-    {
-        $hash    = 'test-hash';
-        $headers = ['xyz' => 'abc'];
-
-        $header = $this->createMock(HeaderInterface::class);
-        $header
-            ->expects(self::once())
-            ->method('getValue')
-            ->willReturn('abc');
-        $header
-            ->expects(self::never())
-            ->method('getNormalizedValue');
-        $header
-            ->expects(self::once())
-            ->method('hasDeviceArchitecture')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getDeviceArchitecture');
-        $header
-            ->expects(self::once())
-            ->method('hasDeviceBitness')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getDeviceBitness');
-        $header
-            ->expects(self::once())
-            ->method('hasDeviceIsMobile')
-            ->willReturn(true);
-        $header
-            ->expects(self::once())
-            ->method('getDeviceIsMobile')
-            ->willReturn(true);
-        $header
-            ->expects(self::once())
-            ->method('hasDeviceCode')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getDeviceCode');
-        $header
-            ->expects(self::once())
-            ->method('hasClientCode')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getClientCode');
-        $header
-            ->expects(self::once())
-            ->method('hasClientVersion')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getClientVersion');
-        $header
-            ->expects(self::once())
-            ->method('hasPlatformCode')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getPlatformCode');
-        $header
-            ->expects(self::once())
-            ->method('hasPlatformVersion')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getPlatformVersion');
-        $header
-            ->expects(self::once())
-            ->method('hasEngineCode')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getEngineCode');
-        $header
-            ->expects(self::once())
-            ->method('hasEngineVersion')
-            ->willReturn(false);
-        $header
-            ->expects(self::never())
-            ->method('getEngineVersion');
-
-        $filteredHeaders = ['xyz' => $header];
-
-        $expected = [
-            'headers' => $headers,
-            'device' => [
-                'architecture' => null,
-                'deviceName' => null,
-                'marketingName' => null,
-                'manufacturer' => 'unknown',
-                'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'unknown',
-                'ismobile' => true,
-                'istv' => false,
-                'bits' => null,
-            ],
-            'os' => [
-                'name' => null,
-                'marketingName' => null,
-                'version' => null,
-                'manufacturer' => 'unknown',
-                'bits' => null,
-            ],
-            'client' => [
-                'name' => null,
-                'modus' => null,
-                'version' => null,
-                'manufacturer' => 'unknown',
-                'type' => 'unknown',
-                'isbot' => false,
-                'bits' => null,
-            ],
-            'engine' => [
-                'name' => null,
-                'version' => null,
-                'manufacturer' => 'unknown',
-            ],
-        ];
-
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $cache = $this->createMock(CacheInterface::class);
-        $cache
-            ->expects(self::once())
-            ->method('hasItem')
-            ->with($hash)
-            ->willReturn(false);
-        $cache
-            ->expects(self::never())
-            ->method('getItem');
-        $cache
-            ->expects(self::once())
-            ->method('setItem')
-            ->with($hash, $expected);
-
-        $request = $this->createMock(GenericRequestInterface::class);
-        $request
-            ->expects(self::once())
-            ->method('getHash')
-            ->willReturn($hash);
-        $request
-            ->expects(self::exactly(2))
-            ->method('getHeaders')
-            ->willReturn($filteredHeaders);
-
-        $requestBuilder = $this->createMock(RequestBuilderInterface::class);
-        $requestBuilder
-            ->expects(self::once())
-            ->method('buildRequest')
-            ->with($headers)
-            ->willReturn($request);
-
-        $deviceLoaderFactory = $this->createMock(DeviceLoaderFactoryInterface::class);
-        $deviceLoaderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
-        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
-        $platformLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
-        $browserLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $engineLoader = $this->createMock(EngineLoaderInterface::class);
-        $engineLoader
-            ->expects(self::never())
-            ->method('load');
-
-        $versionBuilderFactory = $this->createMock(VersionBuilderFactoryInterface::class);
-        $versionBuilderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
-        $detector = new Detector(
-            $logger,
-            $cache,
-            $requestBuilder,
-            $deviceLoaderFactory,
-            $platformLoader,
-            $browserLoader,
-            $engineLoader,
-            $versionBuilderFactory,
         );
 
         self::assertSame($expected, $detector->getBrowser($headers));

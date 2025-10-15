@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaParser\EngineVersionInterface;
 
@@ -21,6 +23,8 @@ use function str_replace;
 
 final class DeviceStockUaEngineVersion implements EngineVersionInterface
 {
+    use SetVersionTrait;
+
     /** @throws void */
     #[Override]
     public function hasEngineVersion(string $value): bool
@@ -34,16 +38,16 @@ final class DeviceStockUaEngineVersion implements EngineVersionInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getEngineVersion(string $value, string | null $code = null): string | null
+    public function getEngineVersion(string $value, string | null $code = null): VersionInterface
     {
         $matches = [];
 
         if (
             preg_match('/(?:trident|presto|webkit|gecko)[\/ ](?P<version>[\d._]+)/i', $value, $matches)
         ) {
-            return str_replace('_', '.', $matches['version']);
+            return $this->setVersion(str_replace('_', '.', $matches['version']));
         }
 
-        return null;
+        return new ForcedNullVersion();
     }
 }

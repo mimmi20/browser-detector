@@ -13,6 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaLoader\EngineLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -25,6 +28,8 @@ use function preg_match;
 
 final readonly class UseragentEngineVersion implements EngineVersionInterface
 {
+    use SetVersionTrait;
+
     /** @throws void */
     public function __construct(
         private EngineParserInterface $engineParser,
@@ -47,48 +52,48 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
 
     /** @throws void */
     #[Override]
-    public function getEngineVersion(string $value, string | null $code = null): string | null
+    public function getEngineVersion(string $value, string | null $code = null): VersionInterface
     {
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
-            return null;
+            return new ForcedNullVersion();
         }
 
         if ($normalizedValue === '' || $normalizedValue === null) {
-            return null;
+            return new ForcedNullVersion();
         }
 
         $matches = [];
 
         if (preg_match('/(?<!o)re\([^\/]+\/(?P<version>[\d.]+)/', $normalizedValue, $matches)) {
-            return $matches['version'];
+            return $this->setVersion($matches['version']);
         }
 
         if ($code === null) {
             $code = $this->engineParser->parse($normalizedValue);
 
             if ($code === '') {
-                return null;
+                return new ForcedNullVersion();
             }
         }
 
         try {
             $engine = $this->engineLoader->load($code, $normalizedValue);
         } catch (UnexpectedValueException) {
-            return null;
+            return new NullVersion();
         }
 
         try {
             $version = $engine->getVersion()->getVersion();
         } catch (UnexpectedValueException) {
-            return null;
+            return new NullVersion();
         }
 
-        if ($version === '') {
-            return null;
+        if ($version === '' || $version === null) {
+            return new NullVersion();
         }
 
-        return $version;
+        return $this->setVersion($version);
     }
 }

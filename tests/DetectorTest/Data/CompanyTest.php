@@ -1192,6 +1192,108 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Pagraer',
                 'key' => 'pagraer',
             ],
+            [
+                'type' => 'UnoPhone',
+                'name' => 'UnoPhone',
+                'brandname' => 'UnoPhone',
+                'key' => 'uno-phone',
+            ],
+            [
+                'type' => 'Grünberg',
+                'name' => 'Grünberg',
+                'brandname' => 'Grünberg',
+                'key' => 'gruenberg',
+            ],
+            [
+                'type' => 'Akai',
+                'name' => 'Akai',
+                'brandname' => 'Akai',
+                'key' => 'akai',
+            ],
+            [
+                'type' => 'Saba',
+                'name' => 'Saba',
+                'brandname' => 'Saba',
+                'key' => 'saba',
+            ],
+            [
+                'type' => 'Onyx Boox',
+                'name' => 'Onyx Boox',
+                'brandname' => 'Onyx Boox',
+                'key' => 'onyx-boox',
+            ],
+            [
+                'type' => 'Ghia',
+                'name' => 'Ghia',
+                'brandname' => 'Ghia',
+                'key' => 'ghia',
+            ],
+            [
+                'type' => 'Eudora',
+                'name' => 'Eudora',
+                'brandname' => 'Eudora',
+                'key' => 'eudora',
+            ],
+            [
+                'type' => 'CUIUD',
+                'name' => 'CUIUD',
+                'brandname' => 'CUIUD',
+                'key' => 'cuiud',
+            ],
+            [
+                'type' => 'Biegedy',
+                'name' => 'Biegedy',
+                'brandname' => 'Biegedy',
+                'key' => 'biegedy',
+            ],
+            [
+                'type' => 'Grundig',
+                'name' => 'Grundig',
+                'brandname' => 'Grundig',
+                'key' => 'grundig',
+            ],
+            [
+                'type' => 'DUDU AUTO',
+                'name' => 'DUDU AUTO',
+                'brandname' => 'DUDU AUTO',
+                'key' => 'dudu-auto',
+            ],
+            [
+                'type' => 'Vorcom',
+                'name' => 'Vorcom',
+                'brandname' => 'Vorcom',
+                'key' => 'vorcom',
+            ],
+            [
+                'type' => 'Hemilton',
+                'name' => 'Hemilton',
+                'brandname' => 'Hemilton',
+                'key' => 'hemilton',
+            ],
+            [
+                'type' => 'Saiet',
+                'name' => 'Saiet',
+                'brandname' => 'Saiet',
+                'key' => 'saiet',
+            ],
+            [
+                'type' => 'Syco',
+                'name' => 'Syco',
+                'brandname' => 'Syco',
+                'key' => 'syco',
+            ],
+            [
+                'type' => 'MobiWire',
+                'name' => 'MobiWire',
+                'brandname' => 'MobiWire',
+                'key' => 'mobi-wire',
+            ],
+            [
+                'type' => 'Hometech',
+                'name' => 'Hometech',
+                'brandname' => 'Hometech',
+                'key' => 'hometech',
+            ],
         ];
     }
 
@@ -1656,6 +1758,48 @@ final class CompanyTest extends TestCase
                 'name' => 'jasmine tea',
                 'brandname' => 'jasmine tea',
                 'key' => 'jasmine-tea',
+            ],
+            [
+                'fallback' => 'uno-phone',
+                'name' => 'UnoPhone',
+                'brandname' => 'UnoPhone',
+                'key' => 'uno-phone',
+            ],
+            [
+                'fallback' => 'gruenberg',
+                'name' => 'Grünberg',
+                'brandname' => 'Grünberg',
+                'key' => 'gruenberg',
+            ],
+            [
+                'fallback' => 'onyxboox',
+                'name' => 'Onyx Boox',
+                'brandname' => 'Onyx Boox',
+                'key' => 'onyx-boox',
+            ],
+            [
+                'fallback' => 'onyx-boox',
+                'name' => 'Onyx Boox',
+                'brandname' => 'Onyx Boox',
+                'key' => 'onyx-boox',
+            ],
+            [
+                'fallback' => 'dudu-auto',
+                'name' => 'DUDU AUTO',
+                'brandname' => 'DUDU AUTO',
+                'key' => 'dudu-auto',
+            ],
+            [
+                'fallback' => 'duduauto',
+                'name' => 'DUDU AUTO',
+                'brandname' => 'DUDU AUTO',
+                'key' => 'dudu-auto',
+            ],
+            [
+                'fallback' => 'mobi-wire',
+                'name' => 'MobiWire',
+                'brandname' => 'MobiWire',
+                'key' => 'mobi-wire',
             ],
         ];
     }

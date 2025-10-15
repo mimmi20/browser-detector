@@ -21,6 +21,7 @@ use BrowserDetector\Parser\Header\XUcbrowserUaEngineVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformVersion;
 use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -31,6 +32,7 @@ use UaParser\DeviceParserInterface;
 use UaRequest\Header\FullHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
+use UnexpectedValueException;
 
 use function preg_match;
 use function sprintf;
@@ -50,6 +52,7 @@ final class XUcbrowserUaTest extends TestCase
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -166,11 +169,21 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $clientVersion,
-            $header->getClientVersion(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
-        );
+
+        if ($clientVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getClientVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $clientVersion,
+                $header->getClientVersion()->getVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasPlatformCode,
             $header->hasPlatformCode(),
@@ -186,11 +199,21 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $platformVersion,
-            $header->getPlatformVersion(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
-        );
+
+        if ($platformVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getPlatformVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $platformVersion,
+                $header->getPlatformVersion()->getVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasEngineCode,
             $header->hasEngineCode(),
@@ -206,11 +229,20 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $engineVersion,
-            $header->getEngineVersion(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
-        );
+
+        if ($engineVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getEngineVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $engineVersion,
+                $header->getEngineVersion()->getVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        }
     }
 
     /**
@@ -221,15 +253,15 @@ final class XUcbrowserUaTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);', true, 'test-device-code', true, 'ucbrowser', true, '9.1.0.297', true, 'android', true, '4.2.2', true, 'webkit', true, '534.31'],
+            ['pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);', true, 'test-device-code', true, 'ucbrowser', true, '9.1.0.297', true, 'android', true, '4.2.2', true, 'webkit', true, '534.31.0'],
             ['dv(iPh4,1x);pr(UCBrowser/10.2.0.517);ov(7_1_2);ss(320x416);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);', true, 'test-device-code', true, 'ucbrowser', true, '10.2.0.517', false, null, true, '7.1.2', false, null, false, null],
             ['pf(44);la(en-US);dv(iPh4,1x);pr(UCBrowser);ov(8_1_2);pi(640x960);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'test-device-code', true, 'ucbrowser', false, null, true, 'ios', true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
             ['pf(44);la(en-US);dv(iPh6,2x);pr(UCBrowser);ov(8_1_2);pi(640x1136);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(2);', true, 'test-device-code', true, 'ucbrowser', false, null, true, 'ios', true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
             ['pf(Symbian);er(U);la(zh-CN);up(U2/1.0.0);re(U2/1.0.0);dv(NokiaE72-1);pr(UCBrowser/8.9.0.253);ov(S60V3);pi(320*240);ss(320*240);bt(UC);pm(1);bv(0);nm(0);im(0);sr(2);nt(2)', true, 'test-device-code', true, 'ucbrowser', true, '8.9.0.253', true, 'symbian', false, null, true, 'u2', true, '1.0.0'],
             ['pf(Linux);la(en-US);re(U2/1.0.0);dv(GT-S7262x);pr(UCBrowser/9.4.1.482);ov(4.1.2);pi(480*800);ss(480*800);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);', true, 'test-device-code', true, 'ucbrowser', true, '9.4.1.482', true, 'android', true, '4.1.2', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 710);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(2);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.2.0.340', true, 'windows phone', true, '7.10', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 710);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(2);nt(1);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.2.0.340', true, 'windows phone', true, '7.10', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 800);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(2);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.2.0.340', true, 'windows phone', true, '7.10', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 710);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(2);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.2.0.340', true, 'windows phone', true, '7.10.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 710);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(2);nt(1);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.2.0.340', true, 'windows phone', true, '7.10.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 800);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(2);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.2.0.340', true, 'windows phone', true, '7.10.0', true, 'u2', true, '1.0.0'],
             ['pf(Linux);la(en-US);re(U2/1.0.0);dv(Micromax_A36);pr(UCBrowser/9.4.0.460);ov(2.3.5);pi(480*800);ss(480*800);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);', true, 'test-device-code', true, 'ucbrowser', true, '9.4.0.460', true, 'android', true, '2.3.5', true, 'u2', true, '1.0.0'],
             ['pf(Linux);la(en-US);re(U2/1.0.0);dv(GT-S7562);pr(UCBrowser/9.4.0.460);ov(4.0.4);pi(480*800);ss(480*800);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);', true, 'test-device-code', true, 'ucbrowser', true, '9.4.0.460', true, 'android', true, '4.0.4', true, 'u2', true, '1.0.0'],
             ['pf(Linux);la(en-US);re(U2/1.0.0);dv(Nokia_X);pr(UCBrowser/9.4.0.460);ov(4.1.2);pi(480*800);ss(480*800);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);', true, 'test-device-code', true, 'ucbrowser', true, '9.4.0.460', true, 'android', true, '4.1.2', true, 'u2', true, '1.0.0'],
@@ -259,17 +291,17 @@ final class XUcbrowserUaTest extends TestCase
             ['pf(Java);la(en-US);re(U2/1.0.0);dv(j2me);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);', false, '', true, 'ucbrowser', true, '9.4.1.377', true, 'java', false, null, true, 'u2', true, '1.0.0'],
             ['pf(Java);la(id);re(U2/1.0.0);dv(TCL-C616);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(2);im(0);sr(0);nt(99);', true, 'test-device-code', true, 'ucbrowser', true, '9.4.1.377', true, 'java', false, null, true, 'u2', true, '1.0.0'],
             ['pf(Java);la(zh-CN);re(U2/1.0.0);dv(j2me);pr(UCBrowser/9.0.0.261);ov(MIDP-2.0);pi(128*160);ss(128*160);up(U2/1.0.0);er(U);bt(UC);pm(1);bv(0);nm(2);im(1);sr(0);nt(99);', false, '', true, 'ucbrowser', true, '9.0.0.261', true, 'java', false, null, true, 'u2', true, '1.0.0'],
-            ['pf(42);la(zh-CN);dv(iPh3,1x);pr(UCBrowser);ov(5_0_1);pi(640x960);ss(320x416);er(U);bt(UM);up();re(AppleWebKit/534.46 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'test-device-code', true, 'ucbrowser', false, null, true, 'ios', true, '5.0.1', true, 'webkit', true, '534.46'],
+            ['pf(42);la(zh-CN);dv(iPh3,1x);pr(UCBrowser);ov(5_0_1);pi(640x960);ss(320x416);er(U);bt(UM);up();re(AppleWebKit/534.46 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'test-device-code', true, 'ucbrowser', false, null, true, 'ios', true, '5.0.1', true, 'webkit', true, '534.46.0'],
             ['pf(44);la(zh-CN);dv(iPd5,1);pr(UCBrowser);ov(7_0_2);pi(640x1136);ss(320x416);er(U);bt(UM);up();re(AppleWebKit/537.51.1 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(2);', true, 'test-device-code', true, 'ucbrowser', false, null, true, 'ios', true, '7.0.2', true, 'webkit', true, '537.51.1'],
             ['pf(Java);la(Pt-BR);re(U2/1.0.0);dv(maui e800);pr(UCBrowser/9.2.0.311);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(2);im(0);sr(0);nt(99);', true, 'test-device-code', true, 'ucbrowser', true, '9.2.0.311', true, 'java', false, null, true, 'u2', true, '1.0.0'],
             ['pf(Java);la(en-US);re(U2/1.0.0);dv(Opera);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(320*480);ss(320*480);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);', false, '', true, 'ucbrowser', true, '9.4.1.377', true, 'java', false, null, true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA RM-914_im_mea3_380);pr(UCBrowser/3.4.1.407);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.4.1.407', true, 'windows phone', true, '8.0', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(HTC  8S by HTC);pr(UCBrowser/3.1.1.343);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);', true, 'test-device-code', true, 'ucbrowser', true, '3.1.1.343', true, 'windows phone', true, '8.0', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(zh-CN);re(U2/1.0.0);dv(HTC A620e);pr(UCBrowser/3.4.1.407);ov(wds 8.10);pi(480*800);ss(480*800);er(U);bt(UC);nm(0);im(0);sr(2);nt(2);pm(0);', true, 'test-device-code', true, 'ucbrowser', true, '3.4.1.407', true, 'windows phone', true, '8.10', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(HTC Radar C110e);pr(UCBrowser/3.1.1.343);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.1.1.343', true, 'windows phone', true, '7.10', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 510);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(2);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.2.0.340', true, 'windows phone', true, '7.10', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(zh-CN);re(U2/1.0.0);dv(HTC C620e);pr(UCBrowser/3.1.1.343);ov(wds 8.0);pi(720*1280);ss(480*853);er(U);bt(UC);nm(0);im(0);sr(1);nt(2);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.1.1.343', true, 'windows phone', true, '8.0', true, 'u2', true, '1.0.0'],
-            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA RM-914_eu_turkey_355);pr(UCBrowser/3.0.1.302);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);', true, '', true, 'ucbrowser', true, '3.0.1.302', true, 'windows phone', true, '8.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA RM-914_im_mea3_380);pr(UCBrowser/3.4.1.407);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.4.1.407', true, 'windows phone', true, '8.0.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(HTC  8S by HTC);pr(UCBrowser/3.1.1.343);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);', true, 'test-device-code', true, 'ucbrowser', true, '3.1.1.343', true, 'windows phone', true, '8.0.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(zh-CN);re(U2/1.0.0);dv(HTC A620e);pr(UCBrowser/3.4.1.407);ov(wds 8.10);pi(480*800);ss(480*800);er(U);bt(UC);nm(0);im(0);sr(2);nt(2);pm(0);', true, 'test-device-code', true, 'ucbrowser', true, '3.4.1.407', true, 'windows phone', true, '8.10.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(HTC Radar C110e);pr(UCBrowser/3.1.1.343);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.1.1.343', true, 'windows phone', true, '7.10.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 510);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(2);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.2.0.340', true, 'windows phone', true, '7.10.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(zh-CN);re(U2/1.0.0);dv(HTC C620e);pr(UCBrowser/3.1.1.343);ov(wds 8.0);pi(720*1280);ss(480*853);er(U);bt(UC);nm(0);im(0);sr(1);nt(2);up(U2/1.0.0);pm(1);', true, 'test-device-code', true, 'ucbrowser', true, '3.1.1.343', true, 'windows phone', true, '8.0.0', true, 'u2', true, '1.0.0'],
+            ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA RM-914_eu_turkey_355);pr(UCBrowser/3.0.1.302);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);', true, '', true, 'ucbrowser', true, '3.0.1.302', true, 'windows phone', true, '8.0.0', true, 'u2', true, '1.0.0'],
             ['pf(Windows);la(en-US);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);', false, '', false, null, false, null, true, 'windows phone', false, null, false, null, false, null],
             ['pf(44);la(en-US);dv(iPh4,1x);pr(UCBrowser);ov(8_1_2);pi(640x960);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'apple=apple iphone 4,1', true, 'ucbrowser', false, null, true, 'ios', true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
             ['pf(fake);la(en-US);dv(iPh4,1x);pr(fake Browser);ov(8_1_2);pi(640x960);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'apple=apple iphone 4,1', true, null, false, null, false, null, true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
@@ -281,6 +313,7 @@ final class XUcbrowserUaTest extends TestCase
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -395,11 +428,21 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $clientVersion,
-            $header->getClientVersion(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
-        );
+
+        if ($clientVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getClientVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $clientVersion,
+                $header->getClientVersion()->getVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasPlatformCode,
             $header->hasPlatformCode(),
@@ -415,11 +458,21 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $platformVersion,
-            $header->getPlatformVersion(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
-        );
+
+        if ($platformVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getPlatformVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $platformVersion,
+                $header->getPlatformVersion()->getVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        }
+
         self::assertSame(
             $hasEngineCode,
             $header->hasEngineCode(),
@@ -435,11 +488,20 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
-        self::assertSame(
-            $engineVersion,
-            $header->getEngineVersion(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
-        );
+
+        if ($engineVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getEngineVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $engineVersion,
+                $header->getEngineVersion()->getVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        }
     }
 
     /**
@@ -454,7 +516,7 @@ final class XUcbrowserUaTest extends TestCase
             ['pf(44);la(en-US);dv(iPh4,1);pr(UCBrowser);ov(8_1_2);pi(640x960);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'apple=apple iphone 4,1', true, 'ucbrowser', false, null, true, 'ios', true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
             ['pf(44);la(en-US);dv(iPh6,2);pr(UCBrowser);ov(8_1_2);pi(640x1136);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(2);', true, 'apple=apple iphone 6,2', true, 'ucbrowser', false, null, true, 'ios', true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
             ['pf(Linux);la(en-US);re(U2/1.0.0);dv(GT-S7262);pr(UCBrowser/9.4.1.482);ov(4.1.2);pi(480*800);ss(480*800);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);', true, 'samsung=samsung gt-s7262', true, 'ucbrowser', true, '9.4.1.482', true, 'android', true, '4.1.2', true, 'u2', true, '1.0.0'],
-            ['pf(42);la(zh-CN);dv(iPh3,1);pr(UCBrowser);ov(5_0_1);pi(640x960);ss(320x416);er(U);bt(UM);up();re(AppleWebKit/534.46 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'apple=apple iphone 3,1', true, 'ucbrowser', false, null, true, 'ios', true, '5.0.1', true, 'webkit', true, '534.46'],
+            ['pf(42);la(zh-CN);dv(iPh3,1);pr(UCBrowser);ov(5_0_1);pi(640x960);ss(320x416);er(U);bt(UM);up();re(AppleWebKit/534.46 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'apple=apple iphone 3,1', true, 'ucbrowser', false, null, true, 'ios', true, '5.0.1', true, 'webkit', true, '534.46.0'],
             ['pf(44);la(en-US);dv(iPh4,1);pr(UCBrowser);ov(8_1_2);pi(640x960);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'apple=apple iphone 4,1', true, 'ucbrowser', false, null, true, 'ios', true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
             ['pf(fake);la(en-US);dv(iPh4,1);pr(fake Browser);ov(8_1_2);pi(640x960);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'apple=apple iphone 4,1', true, null, false, null, false, null, true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
         ];
