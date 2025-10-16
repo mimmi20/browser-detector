@@ -3012,6 +3012,7 @@ final class Device implements DeviceInterface
             'wp50' => 'oukitel=oukitel wp50',
             'ot6' => 'oukitel=oukitel ot6',
             'ot5 s' => 'oukitel=oukitel ot5 s',
+            'oukitel c1' => 'oukitel=oukitel c1 2025',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',

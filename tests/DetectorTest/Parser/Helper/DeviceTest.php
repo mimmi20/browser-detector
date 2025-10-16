@@ -3387,6 +3387,7 @@ final class DeviceTest extends TestCase
             ['WP50', 'oukitel=oukitel wp50'],
             ['OT6', 'oukitel=oukitel ot6'],
             ['OT5 S', 'oukitel=oukitel ot5 s'],
+            ['OUKITEL C1', 'oukitel=oukitel c1 2025'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],

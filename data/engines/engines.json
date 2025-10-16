@@ -173,6 +173,16 @@
       ]
     }
   },
+  "u4": {
+    "name": "U4",
+    "manufacturer": "ucweb",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "U4"
+      ]
+    }
+  },
   "webkit": {
     "name": "WebKit",
     "manufacturer": "apple",
