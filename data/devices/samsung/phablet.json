@@ -3582,5 +3582,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "samsung sm-w9025": {
+    "deviceName": "SM-W9025",
+    "marketingName": "Galaxy W25 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2520,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }
