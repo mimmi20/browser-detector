@@ -893,6 +893,8 @@
     "/quattro 3g/i": "evolio",
     "/(?:adr|android) 4\\.4.* p7b(?: +build|[;\\/\\)])/i": "ezio",
     "/(?:adr|android) 1[01].* titan(?: slim)?(?: +build|[;\\/\\)])|jelly2/i": "unihertz",
+    "/(?:adr|android) 1[3-5].* a065(?: +build|[;\\/\\)])|jelly2/i": "nothing-phone",
+    "/(?:adr|android) 4\\. a065(?: +build|[;\\/\\)])/i": "micromax",
     "/og-92/i": "ogima",
     "/x6-10a41/i": "elovo",
     "/conquest/i": "conquest",

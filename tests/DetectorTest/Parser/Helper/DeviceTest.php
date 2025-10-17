@@ -214,7 +214,7 @@ final class DeviceTest extends TestCase
             ['ASUS_I002D', 'asus=asus i002d'],
             ['ASUS_Z01RD', 'asus=asus z01rd'],
             ['ZS620KL', 'asus=asus zs620kl'],
-            ['Zenfone 5Z', 'asus=asus zenfone 5z'],
+            ['ZenFone 5Z', 'asus=asus zenfone 5z'],
             ['ASUSAI2501C', 'asus=asus ai2501 c'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
@@ -893,6 +893,7 @@ final class DeviceTest extends TestCase
             ['24018RPACC', 'xiaomi=xiaomi 24018rpacc'],
             ['2405CPCFBG', 'xiaomi=xiaomi 2405cpcfbg'],
             ['Xiaomi15 Pro', 'xiaomi=xiaomi 15 pro'],
+            ['POCO X7 Pro', 'xiaomi=xiaomi poco x7 pro'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -2703,6 +2704,7 @@ final class DeviceTest extends TestCase
             ['N159V', 'hmd-global=hmd-global n159v'],
             ['HMD Vibe', 'hmd-global=hmd-global vibe'],
             ['HMD Pulse Pro', 'hmd-global=hmd-global pulse pro'],
+            ['HMD Pulse', 'hmd-global=hmd-global pulse'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox one'],
@@ -3434,6 +3436,8 @@ final class DeviceTest extends TestCase
             ['Tab A11 Pro', 'ulefone=ulefone tab a11 pro'],
             ['Armor Pad 2', 'ulefone=ulefone armor pad 2'],
             ['Armor Pad 3 Pro', 'ulefone=ulefone armor pad 3 pro'],
+            ['Armor 34 Pro', 'ulefone=ulefone armor 34 pro'],
+            ['Armor X16', 'ulefone=ulefone armor x16'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -4032,7 +4036,6 @@ final class DeviceTest extends TestCase
             // beafon
             ['TW10', 'beafon=beafon tw10'],
             // micromax
-            ['A065', 'micromax=micromax a065'],
             ['A96', 'micromax=micromax a96'],
             ['A121', 'micromax=micromax a121'],
             ['E6523', 'micromax=micromax e6523'],

@@ -867,6 +867,7 @@ final class Device implements DeviceInterface
             '24018rpacc' => 'xiaomi=xiaomi 24018rpacc',
             '2405cpcfbg' => 'xiaomi=xiaomi 2405cpcfbg',
             'xiaomi15 pro' => 'xiaomi=xiaomi 15 pro',
+            'poco x7 pro' => 'xiaomi=xiaomi poco x7 pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2336,6 +2337,7 @@ final class Device implements DeviceInterface
             'n159v' => 'hmd-global=hmd-global n159v',
             'hmd vibe' => 'hmd-global=hmd-global vibe',
             'hmd pulse pro' => 'hmd-global=hmd-global pulse pro',
+            'hmd pulse' => 'hmd-global=hmd-global pulse',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -3059,6 +3061,8 @@ final class Device implements DeviceInterface
             'tab a11 pro' => 'ulefone=ulefone tab a11 pro',
             'armor pad 2' => 'ulefone=ulefone armor pad 2',
             'armor pad 3 pro' => 'ulefone=ulefone armor pad 3 pro',
+            'armor 34 pro' => 'ulefone=ulefone armor 34 pro',
+            'armor x16' => 'ulefone=ulefone armor x16',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -3637,7 +3641,7 @@ final class Device implements DeviceInterface
             // beafon
             'tw10' => 'beafon=beafon tw10',
             // micromax
-            'a065' => 'micromax=micromax a065',
+            // a065 has a duplication between micromax and nothing-phone
             'a96' => 'micromax=micromax a96',
             'a121' => 'micromax=micromax a121',
             'e6523' => 'micromax=micromax e6523',

@@ -1853,7 +1853,6 @@ final class SecChUaModelTest extends TestCase
             // beafon
             ['"TW10"', true, 'beafon=beafon tw10'],
             // micromax
-            ['"A065"', true, 'micromax=micromax a065'],
             ['"A96"', true, 'micromax=micromax a96'],
             ['"A121"', true, 'micromax=micromax a121'],
             // itel
