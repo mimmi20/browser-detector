@@ -3299,6 +3299,7 @@ final class DeviceTest extends TestCase
             ['V2423', 'vivo=vivo v2423'],
             ['V2435', 'vivo=vivo v2435'],
             ['V2435A', 'vivo=vivo v2435a'],
+            ['V2429A', 'vivo=vivo v2429a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],

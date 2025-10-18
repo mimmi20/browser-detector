@@ -2929,6 +2929,7 @@ final class Device implements DeviceInterface
             'v2423' => 'vivo=vivo v2423',
             'v2435' => 'vivo=vivo v2435',
             'v2435a' => 'vivo=vivo v2435a',
+            'v2429a' => 'vivo=vivo v2429a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
