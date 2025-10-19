@@ -502,6 +502,8 @@ final class Device implements DeviceInterface
             'chp2219' => 'oppo=oppo chp2219',
             'a302op' => 'oppo=oppo a302op',
             'opd2301' => 'oppo=oppo opd2301',
+            'perm10' => 'oppo=oppo perm10',
+            'perm10_k10' => 'oppo=oppo perm10_k10',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -3064,6 +3066,7 @@ final class Device implements DeviceInterface
             'armor pad 3 pro' => 'ulefone=ulefone armor pad 3 pro',
             'armor 34 pro' => 'ulefone=ulefone armor 34 pro',
             'armor x16' => 'ulefone=ulefone armor x16',
+            'armor x32' => 'ulefone=ulefone armor x32',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -3142,6 +3145,7 @@ final class Device implements DeviceInterface
             'r20' => 'doogee=doogee r20',
             't20mini kid' => 'doogee=doogee t20 mini kid',
             'v max pro' => 'doogee=doogee v max pro',
+            'blade gt' => 'doogee=doogee blade gt',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3192,6 +3196,7 @@ final class Device implements DeviceInterface
             'x30p' => 'cubot=cubot x30p',
             'cubot hafury v1' => 'cubot=cubot hafury v1',
             'cubot j9' => 'cubot=cubot j9',
+            'kingkong power 3' => 'cubot=cubot kingkong power 3',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -3407,6 +3412,7 @@ final class Device implements DeviceInterface
             'iplay8' => 'alldocube=alldocube iplay 8',
             'iplay60_pro' => 'alldocube=alldocube iplay 60 pro',
             'iplay60 mini turbo' => 'alldocube=alldocube iplay 60 mini turbo',
+            't1201' => 'alldocube=alldocube t1201',
             // dgtec
             'dg101hstb' => 'dgtec=dgtec dg101hstb',
             // coopers
@@ -3941,6 +3947,7 @@ final class Device implements DeviceInterface
             'via m35' => 'casper=casper via m35',
             'via_x40' => 'casper=casper via x40',
             'via x45' => 'casper=casper via x45',
+            'via l50' => 'casper=casper via l50',
             // hannspree
             'hsg1416' => 'hannspree=hannspree hsg1416',
             'hsg1351' => 'hannspree=hannspree hsg1351',
@@ -4607,6 +4614,7 @@ final class Device implements DeviceInterface
             'hit 18 hs1012pl' => 'digma=digma hs1012pl',
             'hit 18 hs1011pl' => 'digma=digma hs1011pl',
             'hit 18 hs1010pl' => 'digma=digma hs1010pl',
+            'pulse ta3e0p01' => 'digma=digma ta3e0p01',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -4712,6 +4720,7 @@ final class Device implements DeviceInterface
             // ajib
             'ajib x1' => 'ajib=ajib x1',
             'ajib l1' => 'ajib=ajib l1',
+            'ajib i10' => 'ajib=ajib i10',
             // myphone
             'myphone n23' => 'myphone=myphone n23',
             // vgo-tel
@@ -4827,7 +4836,7 @@ final class Device implements DeviceInterface
             't803m' => 'wish-tel=wish-tel t803m',
             't808' => 'wish-tel=wish-tel t808',
             't811' => 'wish-tel=wish-tel t811',
-            't1201' => 'wish-tel=wish-tel t1201',
+            // 't1201' => 'wish-tel=wish-tel t1201',
             // lunnen
             'tl4648s01' => 'lunnen=lunnen tl4648s01',
             'tl65611s01', 'lunnen ground 11' => 'lunnen=lunnen tl65611s01',
@@ -4839,6 +4848,7 @@ final class Device implements DeviceInterface
             'lt e18' => 'lt-mobile=lt-mobile e18',
             'lt c60' => 'lt-mobile=lt-mobile c60',
             'lt_9902' => 'lt-mobile=lt-mobile lt_9902',
+            'lt e16' => 'lt-mobile=lt-mobile e16',
             // mobi-wire
             'ikosora+' => 'mobi-wire=mobi-wire ikosora+',
             'taima' => 'mobi-wire=mobi-wire taima',

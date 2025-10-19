@@ -525,6 +525,8 @@ final class DeviceTest extends TestCase
             ['CHP2219', 'oppo=oppo chp2219'],
             ['A302OP', 'oppo=oppo a302op'],
             ['OPD2301', 'oppo=oppo opd2301'],
+            ['PERM10', 'oppo=oppo perm10'],
+            ['PERM10_K10', 'oppo=oppo perm10_k10'],
             // Xiaomi
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -3439,6 +3441,7 @@ final class DeviceTest extends TestCase
             ['Armor Pad 3 Pro', 'ulefone=ulefone armor pad 3 pro'],
             ['Armor 34 Pro', 'ulefone=ulefone armor 34 pro'],
             ['Armor X16', 'ulefone=ulefone armor x16'],
+            ['Armor X32', 'ulefone=ulefone armor x32'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -3519,6 +3522,7 @@ final class DeviceTest extends TestCase
             ['R20', 'doogee=doogee r20'],
             ['T20Mini Kid', 'doogee=doogee t20 mini kid'],
             ['V Max Pro', 'doogee=doogee v max pro'],
+            ['Blade GT', 'doogee=doogee blade gt'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -3570,6 +3574,7 @@ final class DeviceTest extends TestCase
             ['X30P', 'cubot=cubot x30p'],
             ['Cubot Hafury V1', 'cubot=cubot hafury v1'],
             ['CUBOT J9', 'cubot=cubot j9'],
+            ['KINGKONG POWER 3', 'cubot=cubot kingkong power 3'],
             // Aoyodkg
             ['AOYODKG_A38', 'aoyodkg=aoyodkg a38'],
             // gigaset
@@ -3801,6 +3806,7 @@ final class DeviceTest extends TestCase
             ['iPlay8', 'alldocube=alldocube iplay 8'],
             ['iPlay60_Pro', 'alldocube=alldocube iplay 60 pro'],
             ['iPlay60 mini Turbo', 'alldocube=alldocube iplay 60 mini turbo'],
+            ['T1201', 'alldocube=alldocube t1201'],
             // dgtec
             ['DG101HSTB', 'dgtec=dgtec dg101hstb'],
             // coopers
@@ -4337,6 +4343,7 @@ final class DeviceTest extends TestCase
             ['VIA M35', 'casper=casper via m35'],
             ['VIA_X40', 'casper=casper via x40'],
             ['VIA X45', 'casper=casper via x45'],
+            ['VIA L50', 'casper=casper via l50'],
             // hannspree
             ['HSG1416', 'hannspree=hannspree hsg1416'],
             ['HSG1351', 'hannspree=hannspree hsg1351'],
@@ -5134,6 +5141,7 @@ final class DeviceTest extends TestCase
             ['HIT 18 HS1012PL', 'digma=digma hs1012pl'],
             ['HIT 18 HS1011PL', 'digma=digma hs1011pl'],
             ['HIT 18 HS1010PL', 'digma=digma hs1010pl'],
+            ['Pulse TA3E0P01', 'digma=digma ta3e0p01'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -5241,6 +5249,7 @@ final class DeviceTest extends TestCase
             // ajib
             ['ajib X1', 'ajib=ajib x1'],
             ['ajib l1', 'ajib=ajib l1'],
+            ['ajib i10', 'ajib=ajib i10'],
             // myphone
             ['myPhone N23', 'myphone=myphone n23'],
             // vgo-tel
@@ -5357,7 +5366,7 @@ final class DeviceTest extends TestCase
             ['T803M', 'wish-tel=wish-tel t803m'],
             ['T808', 'wish-tel=wish-tel t808'],
             ['T811', 'wish-tel=wish-tel t811'],
-            ['T1201', 'wish-tel=wish-tel t1201'],
+            // ['T1201', 'wish-tel=wish-tel t1201'],
             // lunnen
             ['TL4648S01', 'lunnen=lunnen tl4648s01'],
             ['TL65611S01', 'lunnen=lunnen tl65611s01'],
@@ -5371,6 +5380,7 @@ final class DeviceTest extends TestCase
             ['LT E18', 'lt-mobile=lt-mobile e18'],
             ['LT C60', 'lt-mobile=lt-mobile c60'],
             ['LT_9902', 'lt-mobile=lt-mobile lt_9902'],
+            ['LT E16', 'lt-mobile=lt-mobile e16'],
             // mobi-wire
             ['IKOSORA+', 'mobi-wire=mobi-wire ikosora+'],
             ['Taima', 'mobi-wire=mobi-wire taima'],
