@@ -14,5 +14,37 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "meizu note 21": {
+    "deviceName": "Note 21",
+    "marketingName": "Note 21",
+    "manufacturer": "meizu",
+    "brand": "meizu",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.74
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "meizu note 21 pro": {
+    "deviceName": "Note 21 Pro",
+    "marketingName": "Note 21 Pro",
+    "manufacturer": "meizu",
+    "brand": "meizu",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

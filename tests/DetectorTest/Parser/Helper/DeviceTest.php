@@ -3395,6 +3395,7 @@ final class DeviceTest extends TestCase
             ['OT6', 'oukitel=oukitel ot6'],
             ['OT5 S', 'oukitel=oukitel ot5 s'],
             ['OUKITEL C1', 'oukitel=oukitel c1 2025'],
+            ['RT3 Pro', 'oukitel=oukitel rt3 pro'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -4016,6 +4017,9 @@ final class DeviceTest extends TestCase
             ['Infinix SMART 8', 'infinix=infinix smart 8'],
             ['Infinix X6871', 'infinix=infinix x6871'],
             ['Infinix X6838', 'infinix=infinix x6838'],
+            ['Infinix X6532C', 'infinix=infinix x6532c'],
+            ['Infinix X6531B', 'infinix=infinix x6531b'],
+            ['Infinix X6531', 'infinix=infinix x6531'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -5360,6 +5364,7 @@ final class DeviceTest extends TestCase
             ['H19', 'kenshi=kenshi h19'],
             ['H11', 'kenshi=kenshi h11'],
             ['E38', 'kenshi=kenshi e38'],
+            ['Pad Lite E58', 'kenshi=kenshi pad lite e58'],
             // wish-tel
             ['T801', 'wish-tel=wish-tel t801'],
             ['T803', 'wish-tel=wish-tel t803'],

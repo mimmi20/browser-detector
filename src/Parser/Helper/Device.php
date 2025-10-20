@@ -3020,6 +3020,7 @@ final class Device implements DeviceInterface
             'ot6' => 'oukitel=oukitel ot6',
             'ot5 s' => 'oukitel=oukitel ot5 s',
             'oukitel c1' => 'oukitel=oukitel c1 2025',
+            'rt3 pro' => 'oukitel=oukitel rt3 pro',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -3621,6 +3622,9 @@ final class Device implements DeviceInterface
             'infinix smart 8' => 'infinix=infinix smart 8',
             'infinix x6871' => 'infinix=infinix x6871',
             'infinix x6838' => 'infinix=infinix x6838',
+            'infinix x6532c' => 'infinix=infinix x6532c',
+            'infinix x6531b' => 'infinix=infinix x6531b',
+            'infinix x6531' => 'infinix=infinix x6531',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -4830,6 +4834,7 @@ final class Device implements DeviceInterface
             'h19' => 'kenshi=kenshi h19',
             'h11' => 'kenshi=kenshi h11',
             'e38' => 'kenshi=kenshi e38',
+            'pad lite e58' => 'kenshi=kenshi pad lite e58',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',

@@ -726,7 +726,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F946B",
-      "marketingName": "Galaxy Z Fold5 (International)",
+      "marketingName": "Galaxy Z Fold 5 (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -861,7 +861,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F946N",
-      "marketingName": "Galaxy Z Fold5 (Korea)",
+      "marketingName": "Galaxy Z Fold 5 (Korea)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -906,7 +906,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F9460",
-      "marketingName": "Galaxy Z Fold5 (China)",
+      "marketingName": "Galaxy Z Fold 5 (China)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1121,6 +1121,51 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.26",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-F956N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.123 YaBrowser/24.10.2.123.01 SA/3 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F956N",
+      "marketingName": "Galaxy Z Fold 6 (Korea)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1856,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.10.2.123.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.123",
       "manufacturer": "google"
     }
   },
