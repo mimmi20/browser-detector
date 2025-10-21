@@ -3147,6 +3147,7 @@ final class Device implements DeviceInterface
             't20mini kid' => 'doogee=doogee t20 mini kid',
             'v max pro' => 'doogee=doogee v max pro',
             'blade gt' => 'doogee=doogee blade gt',
+            'blade10 power' => 'doogee=doogee blade 10 power',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -4619,6 +4620,7 @@ final class Device implements DeviceInterface
             'hit 18 hs1011pl' => 'digma=digma hs1011pl',
             'hit 18 hs1010pl' => 'digma=digma hs1010pl',
             'pulse ta3e0p01' => 'digma=digma ta3e0p01',
+            'pulse ta3d0p01' => 'digma=digma ta3d0p01',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -4791,6 +4793,7 @@ final class Device implements DeviceInterface
             'stylo_521' => 'stylo=stylo 521',
             // atozee
             'cp10' => 'atozee=atozee cp10',
+            'yq10sk' => 'atozee=atozee yq10sk',
             // meta
             'quest 3' => 'meta=meta quest 3',
             'quest 3s' => 'meta=meta quest 3s',
@@ -5254,6 +5257,8 @@ final class Device implements DeviceInterface
             'syco rs-442' => 'syco=syco rs-442',
             // philips
             'philips w8555' => 'philips=philips w8555',
+            // homatics
+            'box r 4k plus' => 'homatics=homatics box r 4k plus',
             // other
             default => null,
         };
