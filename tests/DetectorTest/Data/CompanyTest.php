@@ -1300,6 +1300,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'CMF',
                 'key' => 'cmf',
             ],
+            [
+                'type' => 'Homatics',
+                'name' => 'Homatics',
+                'brandname' => 'Homatics',
+                'key' => 'homatics',
+            ],
         ];
     }
 

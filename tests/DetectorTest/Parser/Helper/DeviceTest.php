@@ -3524,6 +3524,7 @@ final class DeviceTest extends TestCase
             ['T20Mini Kid', 'doogee=doogee t20 mini kid'],
             ['V Max Pro', 'doogee=doogee v max pro'],
             ['Blade GT', 'doogee=doogee blade gt'],
+            ['Blade10 Power', 'doogee=doogee blade 10 power'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -5146,6 +5147,7 @@ final class DeviceTest extends TestCase
             ['HIT 18 HS1011PL', 'digma=digma hs1011pl'],
             ['HIT 18 HS1010PL', 'digma=digma hs1010pl'],
             ['Pulse TA3E0P01', 'digma=digma ta3e0p01'],
+            ['Pulse TA3D0P01', 'digma=digma ta3d0p01'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -5320,6 +5322,7 @@ final class DeviceTest extends TestCase
             ['Stylo_521', 'stylo=stylo 521'],
             // atozee
             ['CP10', 'atozee=atozee cp10'],
+            ['YQ10SK', 'atozee=atozee yq10sk'],
             // meta
             ['Quest 3', 'meta=meta quest 3'],
             ['Quest 3S', 'meta=meta quest 3s'],
@@ -5788,6 +5791,8 @@ final class DeviceTest extends TestCase
             ['SYCO RS-442', 'syco=syco rs-442'],
             // philips
             ['Philips W8555', 'philips=philips w8555'],
+            // homatics
+            ['Box R 4K Plus', 'homatics=homatics box r 4k plus'],
             // other
             ['Model"', null],
             [': "', null],
