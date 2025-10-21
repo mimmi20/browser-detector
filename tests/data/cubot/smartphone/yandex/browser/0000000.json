@@ -766,12 +766,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; KINGKONG POWER 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.105 YaBrowser/24.12.3.105.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "King Kong Power 3",
+      "marketingName": "King Kong Power 3",
+      "manufacturer": "cubot",
+      "brand": "cubot",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.72
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.12.3.105.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; KINGKONG X PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.422 YaApp_Android/25.62.1 YaSearchBrowser/25.62.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "KingKong X Pro",
-      "marketingName": "KingKong X Pro",
+      "deviceName": "King Kong X Pro",
+      "marketingName": "King Kong X Pro",
       "manufacturer": "cubot",
       "brand": "cubot",
       "dualOrientation": true,
@@ -806,51 +851,6 @@
     "engine": {
       "name": "Blink",
       "version": "136.0.7103.422",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; Armor X16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.136 YaSearchBrowser/25.65.1 BroPP/1.0 YaSearchApp/25.65.1 webOmni SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "X16",
-      "marketingName": "X16",
-      "manufacturer": "cubot",
-      "brand": "cubot",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "25.65.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "136.0.7103.136",
       "manufacturer": "google"
     }
   }

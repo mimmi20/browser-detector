@@ -1311,9 +1311,9 @@
     "device": {
       "architecture": null,
       "deviceName": "22041216G",
-      "marketingName": "Poco X4 GT",
+      "marketingName": "X4 GT",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1986,9 +1986,9 @@
     "device": {
       "architecture": null,
       "deviceName": "22071219CI",
-      "marketingName": "Poco M5 (India)",
+      "marketingName": "M5 (India)",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2481,9 +2481,9 @@
     "device": {
       "architecture": null,
       "deviceName": "22071219CG",
-      "marketingName": "Poco M5",
+      "marketingName": "M5",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2976,9 +2976,9 @@
     "device": {
       "architecture": null,
       "deviceName": "22041216G",
-      "marketingName": "Poco X4 GT",
+      "marketingName": "X4 GT",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3112,51 +3112,6 @@
       "architecture": null,
       "deviceName": "22101316UP",
       "marketingName": "Redmi Note 12 Discovery",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "110.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "110.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; 22101317C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "22101317C",
-      "marketingName": "Redmi Note 12",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
@@ -4496,6 +4451,51 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.5060.129",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M1912G7BC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M1912G7BC",
+      "marketingName": "Redmi K30",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "72.0.3626.81",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "72.0.3626.81",
       "manufacturer": "google"
     }
   }

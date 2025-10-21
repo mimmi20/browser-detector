@@ -456,7 +456,7 @@
     "device": {
       "architecture": null,
       "deviceName": "CPH2621",
-      "marketingName": "Nord CE4 Lite (India)",
+      "marketingName": "Nord CE 4 Lite 5G (India)",
       "manufacturer": "bbk",
       "brand": "oneplus",
       "dualOrientation": true,
@@ -726,7 +726,7 @@
     "device": {
       "architecture": null,
       "deviceName": "V2337",
-      "marketingName": "V40 SE",
+      "marketingName": "V40 SE 5G",
       "manufacturer": "bbk",
       "brand": "vivo",
       "dualOrientation": true,
@@ -1041,7 +1041,7 @@
     "device": {
       "architecture": null,
       "deviceName": "CPH2629",
-      "marketingName": "Reno12 Pro 5G",
+      "marketingName": "Reno 12 Pro 5G",
       "manufacturer": "bbk",
       "brand": "oppo",
       "dualOrientation": true,
@@ -1231,6 +1231,51 @@
         "height": 1440,
         "touch": true,
         "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "533.0.0.49.79",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.7390.50",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2483 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.50 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/533.0.0.49.79;IABMV/1;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2483",
+      "marketingName": "A78 5G",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
       },
       "type": "smartphone",
       "ismobile": true,

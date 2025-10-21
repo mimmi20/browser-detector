@@ -321,9 +321,9 @@
     "device": {
       "architecture": null,
       "deviceName": "2311DRK48C",
-      "marketingName": "Poco X6 Pro",
+      "marketingName": "X6 Pro 5G",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -546,7 +546,7 @@
     "device": {
       "architecture": null,
       "deviceName": "2411DRN47C",
-      "marketingName": "Redmi 14C",
+      "marketingName": "Redmi 14C 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
@@ -582,52 +582,6 @@
       "name": "Blink",
       "version": "126.0.6478.71",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "x-requested-with": "com.baidu.searchbox.lite",
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; 22101317C Build/UKQ1.230917.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.75 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/6.43.0.11 (Baidu; P1 14) NABar/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "22101317C",
-      "marketingName": "Redmi Note 12",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Baidu Box App Lite",
-      "modus": null,
-      "version": null,
-      "manufacturer": "baidu",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "T7",
-      "version": "13.75.0",
-      "manufacturer": "baidu"
     }
   }
 ]

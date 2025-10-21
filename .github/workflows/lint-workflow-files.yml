@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   actionlint:
-    uses: "mimmi20/ci/.github/workflows/lint-actions.yml@master"
+    uses: "mimmi20/ci/.github/workflows/lint-actions.yml@8.4"
     with:
       skip-nasm-install: false
       skip-libimagequant-install: false

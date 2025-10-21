@@ -1294,6 +1294,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Hometech',
                 'key' => 'hometech',
             ],
+            [
+                'type' => 'CMF',
+                'name' => 'CMF',
+                'brandname' => 'CMF',
+                'key' => 'cmf',
+            ],
         ];
     }
 

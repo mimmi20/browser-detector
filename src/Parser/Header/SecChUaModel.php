@@ -47,6 +47,10 @@ final class SecChUaModel implements DeviceCodeInterface
         $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
-        return (new Device())->getDeviceCode($code);
+        return match ($code) {
+            // special case
+            'a065' => 'nothing-phone=nothing-phone a065',
+            default => (new Device())->getDeviceCode($code),
+        };
     }
 }
