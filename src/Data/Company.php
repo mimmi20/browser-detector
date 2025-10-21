@@ -429,6 +429,8 @@ enum Company: string implements CompanyInterface
 
     case cmf = 'CMF';
 
+    case homatics = 'Homatics';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -642,6 +644,7 @@ enum Company: string implements CompanyInterface
             'mobiwire', 'mobi-wire' => self::mobiWire,
             'hometech' => self::hometech,
             'cmf' => self::cmf,
+            'homatics' => self::homatics,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
