@@ -2942,6 +2942,7 @@ final class DeviceTest extends TestCase
             ['XT2081-2', 'motorola=motorola xt2081-2'],
             ['XT2158-6', 'motorola=motorola xt2158-6'],
             ['moto g75 5G', 'motorola=motorola moto g75 5g'],
+            ['motorola razr 50', 'motorola=motorola moto razr 50'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -3578,6 +3579,7 @@ final class DeviceTest extends TestCase
             ['Cubot Hafury V1', 'cubot=cubot hafury v1'],
             ['CUBOT J9', 'cubot=cubot j9'],
             ['KINGKONG POWER 3', 'cubot=cubot kingkong power 3'],
+            ['KINGKONG ACE 3', 'cubot=cubot kingkong ace 3'],
             // Aoyodkg
             ['AOYODKG_A38', 'aoyodkg=aoyodkg a38'],
             // gigaset
@@ -5150,6 +5152,7 @@ final class DeviceTest extends TestCase
             ['HIT 18 HS1010PL', 'digma=digma hs1010pl'],
             ['Pulse TA3E0P01', 'digma=digma ta3e0p01'],
             ['Pulse TA3D0P01', 'digma=digma ta3d0p01'],
+            ['Pulse TA2D0P01', 'digma=digma ta2d0p01'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
