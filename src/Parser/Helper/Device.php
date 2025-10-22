@@ -969,6 +969,7 @@ final class Device implements DeviceInterface
             'zte a2022h', 'a2022h' => 'zte=zte a2022h',
             'zte a2022l', 'a2022l' => 'zte=zte a2022l',
             'zte 8000' => 'zte=zte 8000',
+            'zte blade a330' => 'zte=zte blade a330',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -3332,6 +3333,7 @@ final class Device implements DeviceInterface
             '2pzc5' => 'htc=htc 2pzc5',
             '601ht' => 'htc=htc 601ht',
             'htv33' => 'htc=htc htv33',
+            'htc a101 plus' => 'htc=htc a101 plus',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea' => 'teclast=teclast p25t_eea',
