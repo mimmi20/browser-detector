@@ -1306,6 +1306,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Pulse TA3D0P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.828 YaApp_Android/24.123/apad YaSearchBrowser/24.123/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA3D0P01",
+      "marketingName": "Pro Pulse",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 10.4
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.123.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.828",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Spark TA1C8M01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.839 YaSearchBrowser/24.122/apad BroPP/1.0 YaSearchApp/24.122/apad webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {
