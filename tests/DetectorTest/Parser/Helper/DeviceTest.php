@@ -1007,6 +1007,7 @@ final class DeviceTest extends TestCase
             ['ZTE A2022L', 'zte=zte a2022l'],
             ['A2022L', 'zte=zte a2022l'],
             ['ZTE 8000', 'zte=zte 8000'],
+            ['ZTE BLADE A330', 'zte=zte blade a330'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -3721,6 +3722,7 @@ final class DeviceTest extends TestCase
             ['2PZC5', 'htc=htc 2pzc5'],
             ['601HT', 'htc=htc 601ht'],
             ['HTV33', 'htc=htc htv33'],
+            ['HTC A101 Plus', 'htc=htc a101 plus'],
             // teclast
             ['P30S_EEA', 'teclast=teclast p30s_eea'],
             ['P25T_EEA', 'teclast=teclast p25t_eea'],
