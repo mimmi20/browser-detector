@@ -2574,6 +2574,7 @@ final class Device implements DeviceInterface
             'xt2081-2' => 'motorola=motorola xt2081-2',
             'xt2158-6' => 'motorola=motorola xt2158-6',
             'moto g75 5g' => 'motorola=motorola moto g75 5g',
+            'motorola razr 50' => 'motorola=motorola moto razr 50',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -3200,6 +3201,7 @@ final class Device implements DeviceInterface
             'cubot hafury v1' => 'cubot=cubot hafury v1',
             'cubot j9' => 'cubot=cubot j9',
             'kingkong power 3' => 'cubot=cubot kingkong power 3',
+            'kingkong ace 3' => 'cubot=cubot kingkong ace 3',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -4623,6 +4625,7 @@ final class Device implements DeviceInterface
             'hit 18 hs1010pl' => 'digma=digma hs1010pl',
             'pulse ta3e0p01' => 'digma=digma ta3e0p01',
             'pulse ta3d0p01' => 'digma=digma ta3d0p01',
+            'pulse ta2d0p01' => 'digma=digma ta2d0p01',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
