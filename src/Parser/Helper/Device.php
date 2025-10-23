@@ -2575,6 +2575,8 @@ final class Device implements DeviceInterface
             'xt2158-6' => 'motorola=motorola xt2158-6',
             'moto g75 5g' => 'motorola=motorola moto g75 5g',
             'motorola razr 50' => 'motorola=motorola moto razr 50',
+            'moto g24 power' => 'motorola=motorola moto g24 power',
+            'motorola edge plus 2023' => 'motorola=motorola edge+ (2023)',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',

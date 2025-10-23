@@ -2943,6 +2943,8 @@ final class DeviceTest extends TestCase
             ['XT2158-6', 'motorola=motorola xt2158-6'],
             ['moto g75 5G', 'motorola=motorola moto g75 5g'],
             ['motorola razr 50', 'motorola=motorola moto razr 50'],
+            ['moto g24 power', 'motorola=motorola moto g24 power'],
+            ['motorola edge plus 2023', 'motorola=motorola edge+ (2023)'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
