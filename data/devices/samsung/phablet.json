@@ -3582,5 +3582,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "samsung sm-w7024": {
+    "deviceName": "SM-W7024",
+    "marketingName": "Galaxy W24 Flip 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }
