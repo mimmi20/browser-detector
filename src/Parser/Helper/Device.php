@@ -5266,6 +5266,8 @@ final class Device implements DeviceInterface
             'philips w8555' => 'philips=philips w8555',
             // homatics
             'box r 4k plus' => 'homatics=homatics box r 4k plus',
+            // kgtel
+            'nova_10_pro_4g' => 'kgtel=kgtel nova 10 pro 4g',
             // other
             default => null,
         };

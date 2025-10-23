@@ -5800,6 +5800,8 @@ final class DeviceTest extends TestCase
             ['Philips W8555', 'philips=philips w8555'],
             // homatics
             ['Box R 4K Plus', 'homatics=homatics box r 4k plus'],
+            // kgtel
+            ['Nova_10_Pro_4G', 'kgtel=kgtel nova 10 pro 4g'],
             // other
             ['Model"', null],
             [': "', null],

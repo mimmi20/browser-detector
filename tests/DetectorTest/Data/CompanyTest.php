@@ -1306,6 +1306,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Homatics',
                 'key' => 'homatics',
             ],
+            [
+                'type' => 'KGTEL',
+                'name' => 'KGTEL',
+                'brandname' => 'KGTEL',
+                'key' => 'kgtel',
+            ],
         ];
     }
 
