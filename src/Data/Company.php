@@ -431,6 +431,8 @@ enum Company: string implements CompanyInterface
 
     case homatics = 'Homatics';
 
+    case kgtel = 'KGTEL';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -645,6 +647,7 @@ enum Company: string implements CompanyInterface
             'hometech' => self::hometech,
             'cmf' => self::cmf,
             'homatics' => self::homatics,
+            'kgtel' => self::kgtel,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
