@@ -63,7 +63,7 @@ final class SecChUaPlatform implements PlatformCodeInterface
     private function getCode(string $code): string | null
     {
         return match ($code) {
-            'android', 'linux', 'chromeos', 'lindows' => $code,
+            'android', 'linux', 'chromeos', 'lindows', 'fuchsia' => $code,
             'macos', 'mac os x', 'macintel' => 'mac os x',
             'chrome os', 'chromium os' => 'chromeos',
             'windows', 'win32' => 'windows',
