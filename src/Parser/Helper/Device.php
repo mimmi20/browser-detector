@@ -504,7 +504,8 @@ final class Device implements DeviceInterface
             'opd2301' => 'oppo=oppo opd2301',
             'perm10' => 'oppo=oppo perm10',
             'perm10_k10' => 'oppo=oppo perm10_k10',
-            // Xiaomi
+            'pjr110' => 'oppo=oppo pjr110',
+            // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
             'mi 9 se' => 'xiaomi=xiaomi mi 9 se',
@@ -870,6 +871,7 @@ final class Device implements DeviceInterface
             '2405cpcfbg' => 'xiaomi=xiaomi 2405cpcfbg',
             'xiaomi15 pro' => 'xiaomi=xiaomi 15 pro',
             'poco x7 pro' => 'xiaomi=xiaomi poco x7 pro',
+            'poco x6 pro 5g' => 'xiaomi=xiaomi poco x6 pro 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -5213,6 +5215,7 @@ final class Device implements DeviceInterface
             'n101b' => 'consung=consung n101b',
             // novey
             'alpha a16' => 'novey=novey alpha a16',
+            'force g20' => 'novey=novey force g20',
             // iiyama
             'lh5565uhsb-b1' => 'iiyama=iiyama lh5565uhsb-b1',
             // sowly

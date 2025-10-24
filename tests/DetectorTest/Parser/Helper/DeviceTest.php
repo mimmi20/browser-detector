@@ -527,7 +527,8 @@ final class DeviceTest extends TestCase
             ['OPD2301', 'oppo=oppo opd2301'],
             ['PERM10', 'oppo=oppo perm10'],
             ['PERM10_K10', 'oppo=oppo perm10_k10'],
-            // Xiaomi
+            ['PJR110', 'oppo=oppo pjr110'],
+            // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
             ['M2103K19C', 'xiaomi=xiaomi m2103k19c'],
@@ -896,6 +897,7 @@ final class DeviceTest extends TestCase
             ['2405CPCFBG', 'xiaomi=xiaomi 2405cpcfbg'],
             ['Xiaomi15 Pro', 'xiaomi=xiaomi 15 pro'],
             ['POCO X7 Pro', 'xiaomi=xiaomi poco x7 pro'],
+            ['POCO X6 Pro 5G', 'xiaomi=xiaomi poco x6 pro 5g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -5747,6 +5749,7 @@ final class DeviceTest extends TestCase
             ['N101B', 'consung=consung n101b'],
             // novey
             ['Alpha A16', 'novey=novey alpha a16'],
+            ['Force G20', 'novey=novey force g20'],
             // iiyama
             ['LH5565UHSB-B1', 'iiyama=iiyama lh5565uhsb-b1'],
             // sowly
