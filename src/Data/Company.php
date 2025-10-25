@@ -243,7 +243,7 @@ enum Company: string implements CompanyInterface
 
     case eaglesoar = 'EagleSoar';
 
-    case blowPlatinum = 'Blow Platinum';
+    case blow = 'Blow';
 
     case cepter = 'Cepter';
 
@@ -553,7 +553,7 @@ enum Company: string implements CompanyInterface
             'wainyok' => self::wainyok,
             'hotpepper', 'hot-pepper', 'hot pepper', 'hot pepper mobile, inc.' => self::hotPepper,
             'eaglesoar', 'eagle-soar' => self::eaglesoar,
-            'blowplatinum', 'blow platinum', 'blow-platinum' => self::blowPlatinum,
+            'blow' => self::blow,
             'cepter' => self::cepter,
             'clovertek' => self::clovertek,
             'visualland', 'visual-land', 'visual land' => self::visualLand,
@@ -743,7 +743,6 @@ enum Company: string implements CompanyInterface
             self::fplus => 'f-plus',
             self::hotPepper => 'hot-pepper',
             self::eaglesoar => 'eagle-soar',
-            self::blowPlatinum => 'blow-platinum',
             self::visualLand => 'visual-land',
             self::headwolf => 'head-wolf',
             self::vision => 'vision-technology',

@@ -5081,8 +5081,8 @@ final class Device implements DeviceInterface
             'p10x' => 'wainyok=wainyok p10x',
             // eagle-soar
             'ee10a' => 'eagle-soar=eagle-soar ee10a',
-            // blow-platinum
-            'platinumtab11_4g' => 'blow-platinum=blow-platinum tab 11 4g',
+            // blow
+            'platinumtab11_4g' => 'blow=blow platinum tab 11 4g',
             // cepter
             'ceptertab10l' => 'cepter=cepter tab 10l',
             'ceptertab101' => 'cepter=cepter tab 101',
