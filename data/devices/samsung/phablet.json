@@ -111,134 +111,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-a7160": {
-    "deviceName": "SM-A7160",
-    "marketingName": "Galaxy A71 (5G)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a716f": {
-    "deviceName": "SM-A716F",
-    "marketingName": "Galaxy A71 (5G)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a716b": {
-    "deviceName": "SM-A716B",
-    "marketingName": "Galaxy A71 (5G, International)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a716u": {
-    "deviceName": "SM-A716U",
-    "marketingName": "Galaxy A71 (5G, USA)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a716u1": {
-    "deviceName": "SM-A716U1",
-    "marketingName": "Galaxy A71 (5G, USA)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a716t": {
-    "deviceName": "SM-A716T",
-    "marketingName": "Galaxy A71 (5G, USA)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a716v": {
-    "deviceName": "SM-A716V",
-    "marketingName": "Galaxy A71 (5G, Korea)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a716s": {
-    "deviceName": "SM-A716S",
-    "marketingName": "Galaxy A71 (5G, Korea)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "samsung sc-54a": {
     "deviceName": "SC-54A",
     "marketingName": "Galaxy A51 (5G)",
@@ -2753,7 +2625,7 @@
   },
   "samsung sm-f711b": {
     "deviceName": "SM-F711B",
-    "marketingName": "Galaxy Z Flip3 5G (International)",
+    "marketingName": "Galaxy Z Flip 3 5G (International)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2769,7 +2641,7 @@
   },
   "samsung sm-f711n": {
     "deviceName": "SM-F711N",
-    "marketingName": "Galaxy Z Flip3 5G (Korea)",
+    "marketingName": "Galaxy Z Flip 3 5G (Korea)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2785,7 +2657,7 @@
   },
   "samsung sm-f711u": {
     "deviceName": "SM-F711U",
-    "marketingName": "Galaxy Z Flip3 5G (USA)",
+    "marketingName": "Galaxy Z Flip 3 5G (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2801,7 +2673,7 @@
   },
   "samsung sm-f711u1": {
     "deviceName": "SM-F711U1",
-    "marketingName": "Galaxy Z Flip3 5G (USA unlocked)",
+    "marketingName": "Galaxy Z Flip 3 5G (USA unlocked)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2817,7 +2689,7 @@
   },
   "samsung sm-f711w": {
     "deviceName": "SM-F711W",
-    "marketingName": "Galaxy Z Flip3 5G (Canada)",
+    "marketingName": "Galaxy Z Flip 3 5G (Canada)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2833,7 +2705,7 @@
   },
   "samsung sm-f7110": {
     "deviceName": "SM-F7110",
-    "marketingName": "Galaxy Z Flip3 5G (China)",
+    "marketingName": "Galaxy Z Flip 3 5G (China)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3563,6 +3435,38 @@
       "height": 1856,
       "touch": true,
       "size": 7.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-w9024": {
+    "deviceName": "SM-W9024",
+    "marketingName": "Galaxy W24 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2176,
+      "height": 1812,
+      "touch": true,
+      "size": 7.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-w7024": {
+    "deviceName": "SM-W7024",
+    "marketingName": "Galaxy W24 Flip 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
     },
     "type": "phablet",
     "platform": "android"

@@ -590,8 +590,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "KingKong X",
-      "marketingName": "KingKong X",
+      "deviceName": "King Kong X",
+      "marketingName": "King Kong X",
       "manufacturer": "cubot",
       "brand": "cubot",
       "dualOrientation": true,
@@ -626,6 +626,51 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.616",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; KINGKONG ACE 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.740 YaSearchBrowser/24.72.1 BroPP/1.0 YaSearchApp/24.72.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "King Kong Ace 3",
+      "marketingName": "King Kong Ace 3",
+      "manufacturer": "cubot",
+      "brand": "cubot",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.58
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.72.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.740",
       "manufacturer": "google"
     }
   },

@@ -243,7 +243,7 @@ enum Company: string implements CompanyInterface
 
     case eaglesoar = 'EagleSoar';
 
-    case blowPlatinum = 'Blow Platinum';
+    case blow = 'Blow';
 
     case cepter = 'Cepter';
 
@@ -429,6 +429,62 @@ enum Company: string implements CompanyInterface
 
     case cmf = 'CMF';
 
+    case homatics = 'Homatics';
+
+    case kgtel = 'KGTEL';
+
+    case samsung = 'Samsung';
+
+    case sony = 'Sony';
+
+    case motorola = 'Motorola';
+
+    case oukitel = 'Oukitel';
+
+    case blackview = 'Blackview';
+
+    case zte = 'ZTE';
+
+    case tecno = 'Tecno';
+
+    case poco = 'Poco';
+
+    case infinix = 'Infinix';
+
+    case nothing = 'Nothing';
+
+    case tMobile = 'T-Mobile';
+
+    case doogee = 'Doogee';
+
+    case vortex = 'Vortex';
+
+    case lenovo = 'Lenovo';
+
+    case itel = 'iTel';
+
+    case umi = 'UMIDIGI';
+
+    case cubot = 'Cubot';
+
+    case unihertz = 'Unihertz';
+
+    case allwinner = 'AllWinner';
+
+    case dexp = 'DEXP';
+
+    case onvo = 'Onvo';
+
+    case agm = 'AGM';
+
+    case digma = 'Digma';
+
+    case teclast = 'Teclast';
+
+    case onn = 'Onn';
+
+    case zuum = 'Zuum';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -549,7 +605,7 @@ enum Company: string implements CompanyInterface
             'wainyok' => self::wainyok,
             'hotpepper', 'hot-pepper', 'hot pepper', 'hot pepper mobile, inc.' => self::hotPepper,
             'eaglesoar', 'eagle-soar' => self::eaglesoar,
-            'blowplatinum', 'blow platinum', 'blow-platinum' => self::blowPlatinum,
+            'blow' => self::blow,
             'cepter' => self::cepter,
             'clovertek' => self::clovertek,
             'visualland', 'visual-land', 'visual land' => self::visualLand,
@@ -642,6 +698,34 @@ enum Company: string implements CompanyInterface
             'mobiwire', 'mobi-wire' => self::mobiWire,
             'hometech' => self::hometech,
             'cmf' => self::cmf,
+            'homatics' => self::homatics,
+            'kgtel' => self::kgtel,
+            'samsung' => self::samsung,
+            'sony' => self::sony,
+            'motorola' => self::motorola,
+            'oukitel', 'shenzhen yunji intelligent technology co,.ltd.' => self::oukitel,
+            'blackview', 'blackview international group' => self::blackview,
+            'zte' => self::zte,
+            'tecno', 'tecno mobile' => self::tecno,
+            'poco' => self::poco,
+            'infinix', 'infinix inc.' => self::infinix,
+            'nothing', 'nothing-phone', 'nothing technology ltd' => self::nothing,
+            'tmobile', 't-mobile' => self::tMobile,
+            'doogee' => self::doogee,
+            'vortex' => self::vortex,
+            'lenovo' => self::lenovo,
+            'itel', 'itel mobile' => self::itel,
+            'umi', 'umidigi' => self::umi,
+            'cubot' => self::cubot,
+            'unihertz' => self::unihertz,
+            'allwinner' => self::allwinner,
+            'dexp' => self::dexp,
+            'onvo' => self::onvo,
+            'agm' => self::agm,
+            'digma' => self::digma,
+            'teclast' => self::teclast,
+            'onn' => self::onn,
+            'zuum' => self::zuum,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -701,6 +785,12 @@ enum Company: string implements CompanyInterface
             self::qwant => 'QWANT SAS',
             self::v7 => 'V7 Devices',
             self::volla => 'Volla Systeme GmbH',
+            self::oukitel => 'Shenzhen Yunji Intelligent Technology Co,.Ltd.',
+            self::blackview => 'Blackview International Group',
+            self::tecno => 'Tecno Mobile',
+            self::infinix => 'Infinix Inc.',
+            self::nothing => 'Nothing Technology Ltd',
+            self::itel => 'iTel Mobile',
             self::unknown => null,
             default => $this->value,
         };
@@ -737,7 +827,6 @@ enum Company: string implements CompanyInterface
             self::fplus => 'f-plus',
             self::hotPepper => 'hot-pepper',
             self::eaglesoar => 'eagle-soar',
-            self::blowPlatinum => 'blow-platinum',
             self::visualLand => 'visual-land',
             self::headwolf => 'head-wolf',
             self::vision => 'vision-technology',
@@ -752,6 +841,8 @@ enum Company: string implements CompanyInterface
             self::onyxBoox => 'onyx-boox',
             self::duduAuto => 'dudu-auto',
             self::mobiWire => 'mobi-wire',
+            self::nothing => 'nothing-phone',
+            self::tMobile => 't-mobile',
             default => $this->name,
         };
     }

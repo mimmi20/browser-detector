@@ -527,7 +527,8 @@ final class DeviceTest extends TestCase
             ['OPD2301', 'oppo=oppo opd2301'],
             ['PERM10', 'oppo=oppo perm10'],
             ['PERM10_K10', 'oppo=oppo perm10_k10'],
-            // Xiaomi
+            ['PJR110', 'oppo=oppo pjr110'],
+            // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
             ['M2103K19C', 'xiaomi=xiaomi m2103k19c'],
@@ -896,6 +897,7 @@ final class DeviceTest extends TestCase
             ['2405CPCFBG', 'xiaomi=xiaomi 2405cpcfbg'],
             ['Xiaomi15 Pro', 'xiaomi=xiaomi 15 pro'],
             ['POCO X7 Pro', 'xiaomi=xiaomi poco x7 pro'],
+            ['POCO X6 Pro 5G', 'xiaomi=xiaomi poco x6 pro 5g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -1007,6 +1009,7 @@ final class DeviceTest extends TestCase
             ['ZTE A2022L', 'zte=zte a2022l'],
             ['A2022L', 'zte=zte a2022l'],
             ['ZTE 8000', 'zte=zte 8000'],
+            ['ZTE BLADE A330', 'zte=zte blade a330'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -2941,6 +2944,9 @@ final class DeviceTest extends TestCase
             ['XT2081-2', 'motorola=motorola xt2081-2'],
             ['XT2158-6', 'motorola=motorola xt2158-6'],
             ['moto g75 5G', 'motorola=motorola moto g75 5g'],
+            ['motorola razr 50', 'motorola=motorola moto razr 50'],
+            ['moto g24 power', 'motorola=motorola moto g24 power'],
+            ['motorola edge plus 2023', 'motorola=motorola edge+ (2023)'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -3524,6 +3530,7 @@ final class DeviceTest extends TestCase
             ['T20Mini Kid', 'doogee=doogee t20 mini kid'],
             ['V Max Pro', 'doogee=doogee v max pro'],
             ['Blade GT', 'doogee=doogee blade gt'],
+            ['Blade10 Power', 'doogee=doogee blade 10 power'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -3576,6 +3583,7 @@ final class DeviceTest extends TestCase
             ['Cubot Hafury V1', 'cubot=cubot hafury v1'],
             ['CUBOT J9', 'cubot=cubot j9'],
             ['KINGKONG POWER 3', 'cubot=cubot kingkong power 3'],
+            ['KINGKONG ACE 3', 'cubot=cubot kingkong ace 3'],
             // Aoyodkg
             ['AOYODKG_A38', 'aoyodkg=aoyodkg a38'],
             // gigaset
@@ -3720,6 +3728,7 @@ final class DeviceTest extends TestCase
             ['2PZC5', 'htc=htc 2pzc5'],
             ['601HT', 'htc=htc 601ht'],
             ['HTV33', 'htc=htc htv33'],
+            ['HTC A101 Plus', 'htc=htc a101 plus'],
             // teclast
             ['P30S_EEA', 'teclast=teclast p30s_eea'],
             ['P25T_EEA', 'teclast=teclast p25t_eea'],
@@ -5146,6 +5155,8 @@ final class DeviceTest extends TestCase
             ['HIT 18 HS1011PL', 'digma=digma hs1011pl'],
             ['HIT 18 HS1010PL', 'digma=digma hs1010pl'],
             ['Pulse TA3E0P01', 'digma=digma ta3e0p01'],
+            ['Pulse TA3D0P01', 'digma=digma ta3d0p01'],
+            ['Pulse TA2D0P01', 'digma=digma ta2d0p01'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -5320,6 +5331,7 @@ final class DeviceTest extends TestCase
             ['Stylo_521', 'stylo=stylo 521'],
             // atozee
             ['CP10', 'atozee=atozee cp10'],
+            ['YQ10SK', 'atozee=atozee yq10sk'],
             // meta
             ['Quest 3', 'meta=meta quest 3'],
             ['Quest 3S', 'meta=meta quest 3s'],
@@ -5601,8 +5613,8 @@ final class DeviceTest extends TestCase
             ['P10X', 'wainyok=wainyok p10x'],
             // eagle-soar
             ['EE10A', 'eagle-soar=eagle-soar ee10a'],
-            // blow-platinum
-            ['PlatinumTAB11_4G', 'blow-platinum=blow-platinum tab 11 4g'],
+            // blow
+            ['PlatinumTAB11_4G', 'blow=blow platinum tab 11 4g'],
             // cepter
             ['CEPTERTAB10L', 'cepter=cepter tab 10l'],
             ['CEPTERTAB101', 'cepter=cepter tab 101'],
@@ -5737,6 +5749,7 @@ final class DeviceTest extends TestCase
             ['N101B', 'consung=consung n101b'],
             // novey
             ['Alpha A16', 'novey=novey alpha a16'],
+            ['Force G20', 'novey=novey force g20'],
             // iiyama
             ['LH5565UHSB-B1', 'iiyama=iiyama lh5565uhsb-b1'],
             // sowly
@@ -5788,6 +5801,10 @@ final class DeviceTest extends TestCase
             ['SYCO RS-442', 'syco=syco rs-442'],
             // philips
             ['Philips W8555', 'philips=philips w8555'],
+            // homatics
+            ['Box R 4K Plus', 'homatics=homatics box r 4k plus'],
+            // kgtel
+            ['Nova_10_Pro_4G', 'kgtel=kgtel nova 10 pro 4g'],
             // other
             ['Model"', null],
             [': "', null],
