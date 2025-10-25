@@ -743,10 +743,10 @@ final class CompanyTest extends TestCase
                 'key' => 'eagle-soar',
             ],
             [
-                'type' => 'Blow Platinum',
-                'name' => 'Blow Platinum',
-                'brandname' => 'Blow Platinum',
-                'key' => 'blow-platinum',
+                'type' => 'Blow',
+                'name' => 'Blow',
+                'brandname' => 'Blow',
+                'key' => 'blow',
             ],
             [
                 'type' => 'Cepter',
@@ -1542,18 +1542,6 @@ final class CompanyTest extends TestCase
                 'name' => 'EagleSoar',
                 'brandname' => 'EagleSoar',
                 'key' => 'eagle-soar',
-            ],
-            [
-                'fallback' => 'blow-platinum',
-                'name' => 'Blow Platinum',
-                'brandname' => 'Blow Platinum',
-                'key' => 'blow-platinum',
-            ],
-            [
-                'fallback' => 'blowplatinum',
-                'name' => 'Blow Platinum',
-                'brandname' => 'Blow Platinum',
-                'key' => 'blow-platinum',
             ],
             [
                 'fallback' => 'visual-land',
