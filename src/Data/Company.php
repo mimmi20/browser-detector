@@ -477,7 +477,7 @@ enum Company: string implements CompanyInterface
 
     case agm = 'AGM';
 
-    case digma = 'digma';
+    case digma = 'Digma';
 
     case teclast = 'Teclast';
 
