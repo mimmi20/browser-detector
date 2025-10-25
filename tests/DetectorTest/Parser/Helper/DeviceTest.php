@@ -5613,8 +5613,8 @@ final class DeviceTest extends TestCase
             ['P10X', 'wainyok=wainyok p10x'],
             // eagle-soar
             ['EE10A', 'eagle-soar=eagle-soar ee10a'],
-            // blow-platinum
-            ['PlatinumTAB11_4G', 'blow-platinum=blow-platinum tab 11 4g'],
+            // blow
+            ['PlatinumTAB11_4G', 'blow=blow platinum tab 11 4g'],
             // cepter
             ['CEPTERTAB10L', 'cepter=cepter tab 10l'],
             ['CEPTERTAB101', 'cepter=cepter tab 101'],
