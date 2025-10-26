@@ -485,6 +485,42 @@ enum Company: string implements CompanyInterface
 
     case zuum = 'Zuum';
 
+    case amazon = 'Amazon';
+
+    case alldocube = 'Alldocube';
+
+    case hotwav = 'Hotwav';
+
+    case fujitsu = 'Fujitsu';
+
+    case meizu = 'Meizu';
+
+    case casper = 'Casper';
+
+    case ulefone = 'Ulefone';
+
+    case hmdGlobal = 'HMD Global';
+
+    case ltMobile = 'LT Mobile';
+
+    case att = 'AT&T';
+
+    case nokia = 'Nokia';
+
+    case reeder = 'Reeder';
+
+    case fossibot = 'FOSSiBOT';
+
+    case sharp = 'Sharp';
+
+    case cricket = 'Cricket';
+
+    case blu = 'BLU';
+
+    case globalsec = 'GlobalSec';
+
+    case kruegermatz = 'Krüger&Matz';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -726,6 +762,24 @@ enum Company: string implements CompanyInterface
             'teclast' => self::teclast,
             'onn' => self::onn,
             'zuum' => self::zuum,
+            'amazon', 'amazon.com, inc.' => self::amazon,
+            'alldocube' => self::alldocube,
+            'hotwav' => self::hotwav,
+            'fujitsu' => self::fujitsu,
+            'meizu', 'meizu technology co., ltd.' => self::meizu,
+            'casper' => self::casper,
+            'ulefone', 'ulefone technology co., ltd.' => self::ulefone,
+            'hmdglobal', 'hmd global', 'hmd-global', 'hmd global oy' => self::hmdGlobal,
+            'ltmobile', 'lt-mobile', 'lt mobile' => self::ltMobile,
+            'at&t', 'att', 'at-t' => self::att,
+            'nokia' => self::nokia,
+            'reeder' => self::reeder,
+            'fossibot', 'fossi-bot' => self::fossibot,
+            'sharp', 'sharp corporation' => self::sharp,
+            'cricket' => self::cricket,
+            'blu' => self::blu,
+            'globalsec', 'global-sec' => self::globalsec,
+            'kruegermatz', 'krüger&matz', 'kruger-matz' => self::kruegermatz,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -791,6 +845,11 @@ enum Company: string implements CompanyInterface
             self::infinix => 'Infinix Inc.',
             self::nothing => 'Nothing Technology Ltd',
             self::itel => 'iTel Mobile',
+            self::amazon => 'Amazon.com, Inc.',
+            self::meizu => 'Meizu Technology Co., Ltd.',
+            self::ulefone => 'Ulefone Technology Co., Ltd.',
+            self::hmdGlobal => 'HMD Global Oy',
+            self::sharp => 'Sharp Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -843,6 +902,12 @@ enum Company: string implements CompanyInterface
             self::mobiWire => 'mobi-wire',
             self::nothing => 'nothing-phone',
             self::tMobile => 't-mobile',
+            self::hmdGlobal => 'hmd-global',
+            self::ltMobile => 'lt-mobile',
+            self::att => 'at-t',
+            self::fossibot => 'fossi-bot',
+            self::globalsec => 'global-sec',
+            self::kruegermatz => 'kruger-matz',
             default => $this->name,
         };
     }
