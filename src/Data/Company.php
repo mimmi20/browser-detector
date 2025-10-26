@@ -521,6 +521,14 @@ enum Company: string implements CompanyInterface
 
     case kruegermatz = 'Krüger&Matz';
 
+    case kyocera = 'Kyocera';
+
+    case acer = 'Acer';
+
+    case gigaset = 'Gigaset';
+
+    case tcl = 'TCL';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -780,6 +788,10 @@ enum Company: string implements CompanyInterface
             'blu' => self::blu,
             'globalsec', 'global-sec' => self::globalsec,
             'kruegermatz', 'krüger&matz', 'kruger-matz' => self::kruegermatz,
+            'kyocera' => self::kyocera,
+            'acer' => self::acer,
+            'gigaset', 'gigaset communications gmbh' => self::gigaset,
+            'tcl', 'tcl communication ltd.' => self::tcl,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -850,6 +862,8 @@ enum Company: string implements CompanyInterface
             self::ulefone => 'Ulefone Technology Co., Ltd.',
             self::hmdGlobal => 'HMD Global Oy',
             self::sharp => 'Sharp Corporation',
+            self::gigaset => 'Gigaset Communications GmbH',
+            self::tcl => 'TCL Communication Ltd.',
             self::unknown => null,
             default => $this->value,
         };

@@ -1576,6 +1576,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Krüger&Matz',
                 'key' => 'kruger-matz',
             ],
+            [
+                'type' => 'Kyocera',
+                'name' => 'Kyocera',
+                'brandname' => 'Kyocera',
+                'key' => 'kyocera',
+            ],
+            [
+                'type' => 'Acer',
+                'name' => 'Acer',
+                'brandname' => 'Acer',
+                'key' => 'acer',
+            ],
+            [
+                'type' => 'Gigaset',
+                'name' => 'Gigaset Communications GmbH',
+                'brandname' => 'Gigaset',
+                'key' => 'gigaset',
+            ],
+            [
+                'type' => 'TCL',
+                'name' => 'TCL Communication Ltd.',
+                'brandname' => 'TCL',
+                'key' => 'tcl',
+            ],
         ];
     }
 
@@ -2184,6 +2208,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Krüger&Matz',
                 'brandname' => 'Krüger&Matz',
                 'key' => 'kruger-matz',
+            ],
+            [
+                'fallback' => 'Gigaset Communications GmbH',
+                'name' => 'Gigaset Communications GmbH',
+                'brandname' => 'Gigaset',
+                'key' => 'gigaset',
+            ],
+            [
+                'fallback' => 'TCL Communication Ltd.',
+                'name' => 'TCL Communication Ltd.',
+                'brandname' => 'TCL',
+                'key' => 'tcl',
             ],
         ];
     }
