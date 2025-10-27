@@ -605,6 +605,34 @@ enum Company: string implements CompanyInterface
 
     case micromax = 'Micromax';
 
+    case symphony = 'Symphony';
+
+    case archos = 'Archos';
+
+    case haier = 'Haier';
+
+    case nec = 'NEC';
+
+    case greenLion = 'Green Lion';
+
+    case feonal = 'Feonal';
+
+    case thomson = 'Thomson';
+
+    case majestic = 'Majestic';
+
+    case honor = 'Honor';
+
+    case facetel = 'Facetel';
+
+    case hoozo = 'Hoozo';
+
+    case nuu = 'NUU';
+
+    case maxcom = 'Maxcom';
+
+    case mobicel = 'Mobicel';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -906,6 +934,20 @@ enum Company: string implements CompanyInterface
             'adreamer' => self::adreamer,
             'cat', 'catsound', 's4 handelsgruppe gmbh' => self::cat,
             'micromax', 'micromax informatics ltd.' => self::micromax,
+            'symphony' => self::symphony,
+            'archos', 'archos s.a.' => self::archos,
+            'haier' => self::haier,
+            'nec' => self::nec,
+            'greenlion', 'green lion', 'green-lion' => self::greenLion,
+            'feonal' => self::feonal,
+            'thomson' => self::thomson,
+            'majestic' => self::majestic,
+            'honor' => self::honor,
+            'facetel' => self::facetel,
+            'hoozo' => self::hoozo,
+            'nuu', 'nuu-mobile', 'nuu mobile' => self::nuu,
+            'maxcom' => self::maxcom,
+            'mobicel' => self::mobicel,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -983,6 +1025,8 @@ enum Company: string implements CompanyInterface
             self::chuwi => 'CHUWI Inc',
             self::cat => 'S4 Handelsgruppe GmbH',
             self::micromax => 'Micromax Informatics Ltd.',
+            self::archos => 'Archos S.A.',
+            self::nuu => 'NUU Mobile',
             self::unknown => null,
             default => $this->value,
         };
@@ -1050,6 +1094,8 @@ enum Company: string implements CompanyInterface
             self::blackberry => 'black-berry',
             self::boostMobile => 'boost-mobile',
             self::cat => 'catsound',
+            self::greenLion => 'green-lion',
+            self::nuu => 'nuu-mobile',
             default => $this->name,
         };
     }

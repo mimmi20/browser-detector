@@ -1822,6 +1822,90 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Micromax',
                 'key' => 'micromax',
             ],
+            [
+                'type' => 'Symphony',
+                'name' => 'Symphony',
+                'brandname' => 'Symphony',
+                'key' => 'symphony',
+            ],
+            [
+                'type' => 'Archos',
+                'name' => 'Archos S.A.',
+                'brandname' => 'Archos',
+                'key' => 'archos',
+            ],
+            [
+                'type' => 'Haier',
+                'name' => 'Haier',
+                'brandname' => 'Haier',
+                'key' => 'haier',
+            ],
+            [
+                'type' => 'NEC',
+                'name' => 'NEC',
+                'brandname' => 'NEC',
+                'key' => 'nec',
+            ],
+            [
+                'type' => 'Green Lion',
+                'name' => 'Green Lion',
+                'brandname' => 'Green Lion',
+                'key' => 'green-lion',
+            ],
+            [
+                'type' => 'Feonal',
+                'name' => 'Feonal',
+                'brandname' => 'Feonal',
+                'key' => 'feonal',
+            ],
+            [
+                'type' => 'Thomson',
+                'name' => 'Thomson',
+                'brandname' => 'Thomson',
+                'key' => 'thomson',
+            ],
+            [
+                'type' => 'Majestic',
+                'name' => 'Majestic',
+                'brandname' => 'Majestic',
+                'key' => 'majestic',
+            ],
+            [
+                'type' => 'Honor',
+                'name' => 'Honor',
+                'brandname' => 'Honor',
+                'key' => 'honor',
+            ],
+            [
+                'type' => 'Facetel',
+                'name' => 'Facetel',
+                'brandname' => 'Facetel',
+                'key' => 'facetel',
+            ],
+            [
+                'type' => 'Hoozo',
+                'name' => 'Hoozo',
+                'brandname' => 'Hoozo',
+                'key' => 'hoozo',
+            ],
+            [
+                'type' => 'NUU',
+                'name' => 'NUU Mobile',
+                'brandname' => 'NUU',
+                'key' => 'nuu-mobile',
+            ],
+            [
+                'type' => 'Maxcom',
+                'name' => 'Maxcom',
+                'brandname' => 'Maxcom',
+                'key' => 'maxcom',
+            ],
+            [
+                'type' => 'Mobicel',
+                'name' => 'Mobicel',
+                'brandname' => 'Mobicel',
+                'key' => 'mobicel',
+            ],
         ];
     }
 
@@ -2508,6 +2592,30 @@ final class CompanyTest extends TestCase
                 'name' => 'Micromax Informatics Ltd.',
                 'brandname' => 'Micromax',
                 'key' => 'micromax',
+            ],
+            [
+                'fallback' => 'Archos S.A.',
+                'name' => 'Archos S.A.',
+                'brandname' => 'Archos',
+                'key' => 'archos',
+            ],
+            [
+                'fallback' => 'green-lion',
+                'name' => 'Green Lion',
+                'brandname' => 'Green Lion',
+                'key' => 'green-lion',
+            ],
+            [
+                'fallback' => 'NUU Mobile',
+                'name' => 'NUU Mobile',
+                'brandname' => 'NUU',
+                'key' => 'nuu-mobile',
+            ],
+            [
+                'fallback' => 'nuu-mobile',
+                'name' => 'NUU Mobile',
+                'brandname' => 'NUU',
+                'key' => 'nuu-mobile',
             ],
         ];
     }
