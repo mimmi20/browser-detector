@@ -902,7 +902,7 @@ enum Company: string implements CompanyInterface
             'walton', 'walton hi-tech industries ltd.' => self::walton,
             'htc' => self::htc,
             'mhorse', 'm-horse' => self::mHorse,
-            'generalmobile', 'general-mobile' => self::generalMobile,
+            'generalmobile', 'general-mobile', 'general mobile' => self::generalMobile,
             'condor' => self::condor,
             'fairphone' => self::fairphone,
             'mobvoi' => self::mobvoi,
