@@ -398,6 +398,7 @@ final class DeviceTest extends TestCase
             ['CPH2609', 'oneplus=oneplus cph2609'],
             ['CPH2585', 'oneplus=oneplus cph2585'],
             ['CPH2605', 'oneplus=oneplus cph2605'],
+            ['PKR110', 'oneplus=oneplus pkr110'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -2700,6 +2701,7 @@ final class DeviceTest extends TestCase
             ['Nokia C02', 'nokia=nokia c02'],
             ['Nokia 8', 'nokia=nokia 8'],
             ['Nokia 2720 Flip', 'nokia=nokia 2720 flip'],
+            ['Nokia C32', 'nokia=nokia c32'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
@@ -3531,6 +3533,7 @@ final class DeviceTest extends TestCase
             ['V Max Pro', 'doogee=doogee v max pro'],
             ['Blade GT', 'doogee=doogee blade gt'],
             ['Blade10 Power', 'doogee=doogee blade 10 power'],
+            ['S200 X', 'doogee=doogee s200 x'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -3584,6 +3587,7 @@ final class DeviceTest extends TestCase
             ['CUBOT J9', 'cubot=cubot j9'],
             ['KINGKONG POWER 3', 'cubot=cubot kingkong power 3'],
             ['KINGKONG ACE 3', 'cubot=cubot kingkong ace 3'],
+            ['KINGKONG POWER', 'cubot=cubot kingkong power'],
             // Aoyodkg
             ['AOYODKG_A38', 'aoyodkg=aoyodkg a38'],
             // gigaset
@@ -4349,7 +4353,7 @@ final class DeviceTest extends TestCase
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
             ['PET 101-H232E', 'peaq=peaq pet 101-h232e'],
-            ['PET 101-H232E-13', 'peaq=peaq pet 101-h232e'],
+            ['PET 101-H232E-13', 'peaq=peaq pet 101-h232e-13'],
             // casper
             ['VIA G5', 'casper=casper via g5'],
             ['VIA M40', 'casper=casper via m40'],
@@ -5112,6 +5116,8 @@ final class DeviceTest extends TestCase
             ['43OV4000AF', 'onvo=onvo 43ov4000af'],
             ['ONVO_24OV6000H', 'onvo=onvo 24ov6000h'],
             ['24OV6000H', 'onvo=onvo 24ov6000h'],
+            ['ONVO_24OVF6000H', 'onvo=onvo 24ovf6000h'],
+            ['24OVF6000H', 'onvo=onvo 24ovf6000h'],
             // digma
             ['Zenith TA3D1P01', 'digma=digma ta3d1p01'],
             ['Zenith TA3E1P01', 'digma=digma ta3e1p01'],
@@ -5494,6 +5500,7 @@ final class DeviceTest extends TestCase
             ['50LU6000T', 'asano=asano 50lu6000t'],
             ['43LF7010T', 'asano=asano 43lf7010t'],
             ['43LU6000T', 'asano=asano 43lu6000t'],
+            ['32LH5000T', 'asano=asano 32lh5000t'],
             // hi
             ['HX-24H01FB', 'hi=hi hx-24h01fb'],
             ['HX-32F01FB', 'hi=hi hx-32f01fb'],
@@ -5579,6 +5586,7 @@ final class DeviceTest extends TestCase
             // condor
             ['GT60 PRO', 'condor=condor gt60 pro'],
             ['GT60', 'condor=condor gt60'],
+            ['NOVA60 i', 'condor=condor nova 60i'],
             // f-plus/f+
             ['R570E', 'f-plus=f-plus r570e'],
             // mobicel
@@ -5805,6 +5813,10 @@ final class DeviceTest extends TestCase
             ['Box R 4K Plus', 'homatics=homatics box r 4k plus'],
             // kgtel
             ['Nova_10_Pro_4G', 'kgtel=kgtel nova 10 pro 4g'],
+            // mobvoi
+            ['TicWatch Pro 5', 'mobvoi=mobvoi ticwatch pro 5'],
+            // symphony
+            ['innova20', 'symphony=symphony innova 20'],
             // other
             ['Model"', null],
             [': "', null],

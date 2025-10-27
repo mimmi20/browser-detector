@@ -375,6 +375,7 @@ final class Device implements DeviceInterface
             'cph2609' => 'oneplus=oneplus cph2609',
             'cph2585' => 'oneplus=oneplus cph2585',
             'cph2605' => 'oneplus=oneplus cph2605',
+            'pkr110' => 'oneplus=oneplus pkr110',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -2333,6 +2334,7 @@ final class Device implements DeviceInterface
             'nokia c02' => 'nokia=nokia c02',
             'nokia 8' => 'nokia=nokia 8',
             'nokia 2720 flip' => 'nokia=nokia 2720 flip',
+            'nokia c32' => 'nokia=nokia c32',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -3154,6 +3156,7 @@ final class Device implements DeviceInterface
             'v max pro' => 'doogee=doogee v max pro',
             'blade gt' => 'doogee=doogee blade gt',
             'blade10 power' => 'doogee=doogee blade 10 power',
+            's200 x' => 'doogee=doogee s200 x',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3206,6 +3209,7 @@ final class Device implements DeviceInterface
             'cubot j9' => 'cubot=cubot j9',
             'kingkong power 3' => 'cubot=cubot kingkong power 3',
             'kingkong ace 3' => 'cubot=cubot kingkong ace 3',
+            'kingkong power' => 'cubot=cubot kingkong power',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -3953,7 +3957,8 @@ final class Device implements DeviceInterface
             'meizu 17 pro' => 'meizu=meizu 17 pro',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
-            'pet 101-h232e', 'pet 101-h232e-13' => 'peaq=peaq pet 101-h232e',
+            'pet 101-h232e' => 'peaq=peaq pet 101-h232e',
+            'pet 101-h232e-13' => 'peaq=peaq pet 101-h232e-13',
             // casper
             'via g5' => 'casper=casper via g5',
             'via m40' => 'casper=casper via m40',
@@ -4588,6 +4593,7 @@ final class Device implements DeviceInterface
             'onvo_32ov6001h', '32ov6001h' => 'onvo=onvo 32ov6001h',
             'onvo_43ov4000af', '43ov4000af' => 'onvo=onvo 43ov4000af',
             'onvo_24ov6000h', '24ov6000h' => 'onvo=onvo 24ov6000h',
+            'onvo_24ovf6000h', '24ovf6000h' => 'onvo=onvo 24ovf6000h',
             // digma
             'zenith ta3d1p01' => 'digma=digma ta3d1p01',
             'zenith ta3e1p01' => 'digma=digma ta3e1p01',
@@ -4962,6 +4968,7 @@ final class Device implements DeviceInterface
             '50lu6000t' => 'asano=asano 50lu6000t',
             '43lf7010t' => 'asano=asano 43lf7010t',
             '43lu6000t' => 'asano=asano 43lu6000t',
+            '32lh5000t' => 'asano=asano 32lh5000t',
             // hi
             'hx-24h01fb' => 'hi=hi hx-24h01fb',
             'hx-32f01fb' => 'hi=hi hx-32f01fb',
@@ -5047,6 +5054,7 @@ final class Device implements DeviceInterface
             // condor
             'gt60 pro' => 'condor=condor gt60 pro',
             'gt60' => 'condor=condor gt60',
+            'nova60 i' => 'condor=condor nova 60i',
             // f-plus/f+
             'r570e' => 'f-plus=f-plus r570e',
             // mobicel
@@ -5271,6 +5279,10 @@ final class Device implements DeviceInterface
             'box r 4k plus' => 'homatics=homatics box r 4k plus',
             // kgtel
             'nova_10_pro_4g' => 'kgtel=kgtel nova 10 pro 4g',
+            // mobvoi
+            'ticwatch pro 5' => 'mobvoi=mobvoi ticwatch pro 5',
+            // symphony
+            'innova20' => 'symphony=symphony innova 20',
             // other
             default => null,
         };
