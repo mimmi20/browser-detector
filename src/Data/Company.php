@@ -529,6 +529,82 @@ enum Company: string implements CompanyInterface
 
     case tcl = 'TCL';
 
+    case nOne = 'N-One';
+
+    case bq = 'BQ';
+
+    case logicom = 'Logicom';
+
+    case walton = 'Walton';
+
+    case htc = 'HTC';
+
+    case mHorse = 'M-HORSE';
+
+    case generalMobile = 'General Mobile';
+
+    case condor = 'Condor';
+
+    case fairphone = 'Fairphone';
+
+    case mobvoi = 'Mobvoi';
+
+    case iget = 'iGET';
+
+    case xgody = 'Xgody';
+
+    case allcall = 'AllCall';
+
+    case vgoTel = 'VGO Tel';
+
+    case lg = 'LG';
+
+    case aligator = 'Aligator';
+
+    case retroidPocket = 'Retroid Pocket';
+
+    case xView = 'X-View';
+
+    case peaq = 'PEAQ';
+
+    case lava = 'Lava';
+
+    case hafury = 'Hafury';
+
+    case coolpad = 'Coolpad';
+
+    case uhans = 'Uhans';
+
+    case toscido = 'TOSCiDO';
+
+    case sky = 'Sky';
+
+    case wileyfox = 'Wileyfox';
+
+    case oysters = 'Oysters';
+
+    case blackberry = 'BlackBerry';
+
+    case vertu = 'Vertu';
+
+    case ugoos = 'Ugoos';
+
+    case chuwi = 'Chuwi';
+
+    case boostMobile = 'Boost Mobile';
+
+    case ace = 'Ace';
+
+    case gfive = 'GFive';
+
+    case mediacom = 'Mediacom';
+
+    case adreamer = 'Adreamer';
+
+    case cat = 'Cat';
+
+    case micromax = 'Micromax';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -792,6 +868,44 @@ enum Company: string implements CompanyInterface
             'acer' => self::acer,
             'gigaset', 'gigaset communications gmbh' => self::gigaset,
             'tcl', 'tcl communication ltd.' => self::tcl,
+            'none', 'n-one' => self::nOne,
+            'bq' => self::bq,
+            'logicom' => self::logicom,
+            'walton', 'walton hi-tech industries ltd.' => self::walton,
+            'htc' => self::htc,
+            'mhorse', 'm-horse' => self::mHorse,
+            'generalmobile', 'general-mobile' => self::generalMobile,
+            'condor' => self::condor,
+            'fairphone' => self::fairphone,
+            'mobvoi' => self::mobvoi,
+            'iget' => self::iget,
+            'xgody' => self::xgody,
+            'allcall' => self::allcall,
+            'vgotel', 'vgo tel', 'vgo-tel' => self::vgoTel,
+            'lg' => self::lg,
+            'aligator' => self::aligator,
+            'retroidpocket', 'retroid pocket', 'retroid-pocket' => self::retroidPocket,
+            'xview', 'x-view' => self::xView,
+            'peaq' => self::peaq,
+            'lava' => self::lava,
+            'hafury' => self::hafury,
+            'coolpad' => self::coolpad,
+            'uhans' => self::uhans,
+            'toscido' => self::toscido,
+            'sky' => self::sky,
+            'wileyfox' => self::wileyfox,
+            'oysters' => self::oysters,
+            'blackberry', 'blackberry limited', 'black-berry' => self::blackberry,
+            'vertu' => self::vertu,
+            'ugoos' => self::ugoos,
+            'chuwi', 'chuwi inc' => self::chuwi,
+            'boostmobile', 'boost-mobile', 'boost mobile' => self::boostMobile,
+            'ace' => self::ace,
+            'gfive' => self::gfive,
+            'mediacom' => self::mediacom,
+            'adreamer' => self::adreamer,
+            'cat', 'catsound', 's4 handelsgruppe gmbh' => self::cat,
+            'micromax', 'micromax informatics ltd.' => self::micromax,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -864,6 +978,11 @@ enum Company: string implements CompanyInterface
             self::sharp => 'Sharp Corporation',
             self::gigaset => 'Gigaset Communications GmbH',
             self::tcl => 'TCL Communication Ltd.',
+            self::walton => 'Walton Hi-Tech Industries Ltd.',
+            self::blackberry => 'BlackBerry Limited',
+            self::chuwi => 'CHUWI Inc',
+            self::cat => 'S4 Handelsgruppe GmbH',
+            self::micromax => 'Micromax Informatics Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -922,6 +1041,15 @@ enum Company: string implements CompanyInterface
             self::fossibot => 'fossi-bot',
             self::globalsec => 'global-sec',
             self::kruegermatz => 'kruger-matz',
+            self::nOne => 'n-one',
+            self::mHorse => 'm-horse',
+            self::generalMobile => 'general-mobile',
+            self::vgoTel => 'vgo-tel',
+            self::retroidPocket => 'retroid-pocket',
+            self::xView => 'x-view',
+            self::blackberry => 'black-berry',
+            self::boostMobile => 'boost-mobile',
+            self::cat => 'catsound',
             default => $this->name,
         };
     }

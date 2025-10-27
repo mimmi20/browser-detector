@@ -2926,51 +2926,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-A716U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A716U",
-      "marketingName": "Galaxy A71 (5G, USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "13.0.0",
-      "manufacturer": "samsung",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-N960U1) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
     },
     "device": {
@@ -3246,7 +3201,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F926B",
-      "marketingName": "Galaxy Z Fold3 5G (International)",
+      "marketingName": "Galaxy Z Fold 3 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -3498,51 +3453,6 @@
       "name": "Samsung Browser",
       "modus": null,
       "version": "11.0.0",
-      "manufacturer": "samsung",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "75.0.3770.143",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-A716S) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/11.2 Chrome/75.0.3770.143 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A716S",
-      "marketingName": "Galaxy A71 (5G, Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "11.2.0",
       "manufacturer": "samsung",
       "type": "browser",
       "isbot": false,
@@ -3921,7 +3831,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F926W",
-      "marketingName": "Galaxy Z Fold3 5G (Canada)",
+      "marketingName": "Galaxy Z Fold 3 5G (Canada)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -4146,7 +4056,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F936N",
-      "marketingName": "Galaxy Z Fold4 5G (Korea)",
+      "marketingName": "Galaxy Z Fold 4 5G (Korea)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -4191,7 +4101,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F926U",
-      "marketingName": "Galaxy Z Fold3 5G (USA)",
+      "marketingName": "Galaxy Z Fold 3 5G (USA)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -4236,7 +4146,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F936B",
-      "marketingName": "Galaxy Z Fold4 5G (International)",
+      "marketingName": "Galaxy Z Fold 4 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -4496,6 +4406,96 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-N976Q) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.0 Chrome/111.0.5563.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N976Q",
+      "marketingName": "Galaxy Note 10 Plus 5G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "22.0.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-N976U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N976U",
+      "marketingName": "Galaxy Note 10 Plus 5G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "23.0.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0.0",
       "manufacturer": "google"
     }
   }
