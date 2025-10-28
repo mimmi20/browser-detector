@@ -1777,6 +1777,7 @@ final class Device implements DeviceInterface
             'sm-a175m', 'samsung sm-a175m' => 'samsung=samsung sm-a175m',
             'sm-a9000', 'samsung sm-a9000' => 'samsung=samsung sm-a9000',
             'sm-a900f', 'samsung sm-a900f' => 'samsung=samsung sm-a900f',
+            'sm-m045f', 'samsung sm-m045f' => 'samsung=samsung sm-m045f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3076,6 +3077,7 @@ final class Device implements DeviceInterface
             'armor 34 pro' => 'ulefone=ulefone armor 34 pro',
             'armor x16' => 'ulefone=ulefone armor x16',
             'armor x32' => 'ulefone=ulefone armor x32',
+            'armor 21' => 'ulefone=ulefone armor 21',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',

@@ -1906,6 +1906,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Mobicel',
                 'key' => 'mobicel',
             ],
+            [
+                'type' => 'Droid Player',
+                'name' => 'Droid Player',
+                'brandname' => 'Droid Player',
+                'key' => 'droid-player',
+            ],
         ];
     }
 
@@ -2616,6 +2622,12 @@ final class CompanyTest extends TestCase
                 'name' => 'NUU Mobile',
                 'brandname' => 'NUU',
                 'key' => 'nuu-mobile',
+            ],
+            [
+                'fallback' => 'droid-player',
+                'name' => 'Droid Player',
+                'brandname' => 'Droid Player',
+                'key' => 'droid-player',
             ],
         ];
     }
