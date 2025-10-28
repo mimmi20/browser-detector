@@ -633,6 +633,8 @@ enum Company: string implements CompanyInterface
 
     case mobicel = 'Mobicel';
 
+    case droidPlayer = 'Droid Player';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -948,6 +950,7 @@ enum Company: string implements CompanyInterface
             'nuu', 'nuu-mobile', 'nuu mobile' => self::nuu,
             'maxcom' => self::maxcom,
             'mobicel' => self::mobicel,
+            'droidplayer', 'droid-player', 'droid player' => self::droidPlayer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1096,6 +1099,7 @@ enum Company: string implements CompanyInterface
             self::cat => 'catsound',
             self::greenLion => 'green-lion',
             self::nuu => 'nuu-mobile',
+            self::droidPlayer => 'droid-player',
             default => $this->name,
         };
     }

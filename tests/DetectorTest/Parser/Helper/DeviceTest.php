@@ -2138,6 +2138,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A9000', 'samsung=samsung sm-a9000'],
             ['SM-A900F', 'samsung=samsung sm-a900f'],
             ['SAMSUNG SM-A900F', 'samsung=samsung sm-a900f'],
+            ['SM-M045F', 'samsung=samsung sm-m045f'],
+            ['SAMSUNG SM-M045F', 'samsung=samsung sm-m045f'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3451,6 +3453,7 @@ final class DeviceTest extends TestCase
             ['Armor 34 Pro', 'ulefone=ulefone armor 34 pro'],
             ['Armor X16', 'ulefone=ulefone armor x16'],
             ['Armor X32', 'ulefone=ulefone armor x32'],
+            ['Armor 21', 'ulefone=ulefone armor 21'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
