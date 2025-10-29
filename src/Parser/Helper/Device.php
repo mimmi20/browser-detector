@@ -3959,6 +3959,7 @@ final class Device implements DeviceInterface
             'meizu 17 pro' => 'meizu=meizu 17 pro',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
+            'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',
             'pet 101-h232e' => 'peaq=peaq pet 101-h232e',
             'pet 101-h232e-13' => 'peaq=peaq pet 101-h232e-13',
             // casper
@@ -5285,6 +5286,38 @@ final class Device implements DeviceInterface
             'ticwatch pro 5' => 'mobvoi=mobvoi ticwatch pro 5',
             // symphony
             'innova20' => 'symphony=symphony innova 20',
+            // pegatron
+            'chagall' => 'pegatron=pegatron chagall',
+            // pendo
+            'pp4mt-9' => 'pendo=pendo pp4mt-9',
+            'pp4mt-7' => 'pendo=pendo pp4mt-7',
+            // penta
+            'penta ws704dx' => 'penta=penta ws704dx',
+            'penta_ws704d' => 'penta=penta ws704d',
+            'ps650' => 'penta=penta ps650',
+            // pentagram
+            'pentagram tab10' => 'pentagram=pentagram tab 10',
+            'pentagram tab 8.5' => 'pentagram=pentagram tab 8.5',
+            'pentagram tab 8.4' => 'pentagram=pentagram p5343',
+            'pentagram tab 8.3' => 'pentagram=pentagram tab 8.3',
+            'pentagram tab 8.1' => 'pentagram=pentagram p5337',
+            'pentagram tab 7.5' => 'pentagram=pentagram tab 7.5',
+            'quadra 7 ultraslim' => 'pentagram=pentagram quadra 7 ultraslim',
+            'pentagram_eon_prix' => 'pentagram=pentagram p5335',
+            'monster x5' => 'pentagram=pentagram p500-1',
+            'pentagram monster' => 'pentagram=pentagram p430-1',
+            'pentagram ego' => 'pentagram=pentagram p450-1',
+            // perfeo
+            '9103w' => 'perfeo=perfeo 9103w',
+            'patg7506hd' => 'perfeo=perfeo patg7506hd',
+            '7007hd' => 'perfeo=perfeo 7007-hd',
+            // pcd
+            'ph4001' => 'pcd=pcd ph4001',
+            'pcd509' => 'pcd=pcd 509',
+            'pcd508' => 'pcd=pcd 508',
+            'pcd 506' => 'pcd=pcd 506',
+            'pcdc751' => 'pcd=pcd c751',
+            'pcd c741' => 'pcd=pcd c741',
             // other
             default => null,
         };

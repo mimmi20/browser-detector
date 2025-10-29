@@ -4096,6 +4096,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia C32) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C32",
+      "marketingName": "C32",
+      "manufacturer": "hmd-global",
+      "brand": "nokia",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia G60 5G Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.144 Mobile Safari/537.36"
     },
     "device": {
@@ -4276,6 +4321,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia C32 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C32",
+      "marketingName": "C32",
+      "manufacturer": "hmd-global",
+      "brand": "nokia",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "120.0.6099.230",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.230",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia G42 5G Build/TKQ1.221223.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.210 Mobile Safari/537.36"
     },
     "device": {
@@ -4415,96 +4505,6 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6312.42",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia G310 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "G310 5G",
-      "marketingName": "G310 5G",
-      "manufacturer": "hmd-global",
-      "brand": "nokia",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1612,
-        "height": 720,
-        "touch": true,
-        "size": 6.56
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "123.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "123.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; HMD Pulse Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Pulse Pro",
-      "marketingName": "Pulse Pro",
-      "manufacturer": "hmd-global",
-      "brand": "hmd-global",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1612,
-        "height": 720,
-        "touch": true,
-        "size": 6.65
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "118.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "118.0.0.0",
       "manufacturer": "google"
     }
   }

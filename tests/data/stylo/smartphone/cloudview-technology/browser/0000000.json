@@ -1,21 +1,21 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; TicWatch Pro 5) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0. Chrome/121.0.0.0 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 13; en-za; SWIFT_4G Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.60 Mobile Safari/537.36 PHX/16.3"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pro 5",
-      "marketingName": "Pro 5",
-      "manufacturer": "meizu",
-      "brand": "meizu",
+      "deviceName": "Swift 4G",
+      "marketingName": "Swift 4G",
+      "manufacturer": "stylo",
+      "brand": "stylo",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": null,
+        "height": null,
         "touch": true,
-        "size": 5.7
+        "size": 5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -30,17 +30,17 @@
       "bits": null
     },
     "client": {
-      "name": "Samsung Browser",
+      "name": "Phoenix Browser",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "samsung",
+      "version": "16.3.0",
+      "manufacturer": "cloudview-technology",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "121.0.0.0",
+      "version": "130.0.6723.60",
       "manufacturer": "google"
     }
   }

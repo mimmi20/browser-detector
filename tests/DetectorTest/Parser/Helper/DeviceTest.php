@@ -4355,6 +4355,7 @@ final class DeviceTest extends TestCase
             ['meizu 17 Pro', 'meizu=meizu 17 pro'],
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
+            ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],
             ['PET 101-H232E', 'peaq=peaq pet 101-h232e'],
             ['PET 101-H232E-13', 'peaq=peaq pet 101-h232e-13'],
             // casper
@@ -5820,6 +5821,38 @@ final class DeviceTest extends TestCase
             ['TicWatch Pro 5', 'mobvoi=mobvoi ticwatch pro 5'],
             // symphony
             ['innova20', 'symphony=symphony innova 20'],
+            // pegatron
+            ['chagall', 'pegatron=pegatron chagall'],
+            // pendo
+            ['PP4MT-9', 'pendo=pendo pp4mt-9'],
+            ['PP4MT-7', 'pendo=pendo pp4mt-7'],
+            // penta
+            ['Penta WS704DX', 'penta=penta ws704dx'],
+            ['Penta_WS704D', 'penta=penta ws704d'],
+            ['PS650', 'penta=penta ps650'],
+            // pentagram
+            ['Pentagram TAB10', 'pentagram=pentagram tab 10'],
+            ['PENTAGRAM TAB 8.5', 'pentagram=pentagram tab 8.5'],
+            ['PENTAGRAM TAB 8.4', 'pentagram=pentagram p5343'],
+            ['PENTAGRAM TAB 8.3', 'pentagram=pentagram tab 8.3'],
+            ['PENTAGRAM TAB 8.1', 'pentagram=pentagram p5337'],
+            ['PENTAGRAM TAB 7.5', 'pentagram=pentagram tab 7.5'],
+            ['Quadra 7 UltraSlim', 'pentagram=pentagram quadra 7 ultraslim'],
+            ['PENTAGRAM_EON_PRIX', 'pentagram=pentagram p5335'],
+            ['Monster X5', 'pentagram=pentagram p500-1'],
+            ['Pentagram Monster', 'pentagram=pentagram p430-1'],
+            ['Pentagram Ego', 'pentagram=pentagram p450-1'],
+            // perfeo
+            ['9103W', 'perfeo=perfeo 9103w'],
+            ['PATG7506HD', 'perfeo=perfeo patg7506hd'],
+            ['7007HD', 'perfeo=perfeo 7007-hd'],
+            // pcd
+            ['PH4001', 'pcd=pcd ph4001'],
+            ['PCD509', 'pcd=pcd 509'],
+            ['PCD508', 'pcd=pcd 508'],
+            ['PCD 506', 'pcd=pcd 506'],
+            ['pcdc751', 'pcd=pcd c751'],
+            ['PCD C741', 'pcd=pcd c741'],
             // other
             ['Model"', null],
             [': "', null],
