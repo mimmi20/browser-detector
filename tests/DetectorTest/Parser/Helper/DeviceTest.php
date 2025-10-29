@@ -2805,6 +2805,7 @@ final class DeviceTest extends TestCase
             ['Realme 7 Pro', 'realme=realme 7 pro'],
             ['RMP2204', 'realme=realme rmp2204'],
             ['RMP2205', 'realme=realme rmp2205'],
+            ['Realme X7 Max 5G', 'realme=realme x7 max 5g'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -3454,6 +3455,7 @@ final class DeviceTest extends TestCase
             ['Armor X16', 'ulefone=ulefone armor x16'],
             ['Armor X32', 'ulefone=ulefone armor x32'],
             ['Armor 21', 'ulefone=ulefone armor 21'],
+            ['Armor 23 Ultra', 'ulefone=ulefone armor 23 ultra'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -3917,6 +3919,7 @@ final class DeviceTest extends TestCase
             ['Tab 60 Kids', 'blackview=blackview tab 60 kids'],
             ['Tab 50 Kids', 'blackview=blackview tab 50 kids'],
             ['Tab 10 WiFi', 'blackview=blackview tab 10 wifi'],
+            ['BV9300 Pro', 'blackview=blackview bv9300 pro'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -5853,6 +5856,8 @@ final class DeviceTest extends TestCase
             ['PCD 506', 'pcd=pcd 506'],
             ['pcdc751', 'pcd=pcd c751'],
             ['PCD C741', 'pcd=pcd c741'],
+            // rhino
+            ['PACE A1', 'rhino=rhino pace a1'],
             // other
             ['Model"', null],
             [': "', null],

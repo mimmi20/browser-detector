@@ -1912,6 +1912,96 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Droid Player',
                 'key' => 'droid-player',
             ],
+            [
+                'type' => 'HiSense',
+                'name' => 'HiSense Company Ltd.',
+                'brandname' => 'HiSense',
+                'key' => 'hisense',
+            ],
+            [
+                'type' => 'Allview',
+                'name' => 'Allview Electronics SP. Z O.O.',
+                'brandname' => 'Allview',
+                'key' => 'allview',
+            ],
+            [
+                'type' => 'Rhino',
+                'name' => 'Rhino',
+                'brandname' => 'Rhino',
+                'key' => 'rhino',
+            ],
+            [
+                'type' => 'FreeYond',
+                'name' => 'FreeYond',
+                'brandname' => 'FreeYond',
+                'key' => 'free-yond',
+            ],
+            [
+                'type' => 'MeMobile',
+                'name' => 'MeMobile',
+                'brandname' => 'MeMobile',
+                'key' => 'me-mobile',
+            ],
+            [
+                'type' => 'X-Mobile',
+                'name' => 'X-Mobile',
+                'brandname' => 'X-Mobile',
+                'key' => 'x-mobile',
+            ],
+            [
+                'type' => 'Bmobile',
+                'name' => 'Bmobile',
+                'brandname' => 'Bmobile',
+                'key' => 'bmobile',
+            ],
+            [
+                'type' => 'Soho Style',
+                'name' => 'Soho Style',
+                'brandname' => 'Soho Style',
+                'key' => 'soho-style',
+            ],
+            [
+                'type' => 'Veidoo',
+                'name' => 'Veidoo',
+                'brandname' => 'Veidoo',
+                'key' => 'veidoo',
+            ],
+            [
+                'type' => 'CROSSCALL',
+                'name' => 'CROSSCALL SAS',
+                'brandname' => 'CROSSCALL',
+                'key' => 'crosscall',
+            ],
+            [
+                'type' => 'Maze Speed',
+                'name' => 'Maze Speed',
+                'brandname' => 'Maze Speed',
+                'key' => 'maze-speed',
+            ],
+            [
+                'type' => 'M-KOPA',
+                'name' => 'M-KOPA',
+                'brandname' => 'M-KOPA',
+                'key' => 'm-kopa',
+            ],
+            [
+                'type' => 'S-Color',
+                'name' => 'S-Color',
+                'brandname' => 'S-Color',
+                'key' => 's-color',
+            ],
+            [
+                'type' => 'HiGrace',
+                'name' => 'HiGrace',
+                'brandname' => 'HiGrace',
+                'key' => 'hi-grace',
+            ],
+            [
+                'type' => 'MyPhone',
+                'name' => 'MyPhone',
+                'brandname' => 'MyPhone',
+                'key' => 'myphone',
+            ],
         ];
     }
 
@@ -2628,6 +2718,54 @@ final class CompanyTest extends TestCase
                 'name' => 'Droid Player',
                 'brandname' => 'Droid Player',
                 'key' => 'droid-player',
+            ],
+            [
+                'fallback' => 'HiSense Company Ltd.',
+                'name' => 'HiSense Company Ltd.',
+                'brandname' => 'HiSense',
+                'key' => 'hisense',
+            ],
+            [
+                'fallback' => 'Allview Electronics SP. Z O.O.',
+                'name' => 'Allview Electronics SP. Z O.O.',
+                'brandname' => 'Allview',
+                'key' => 'allview',
+            ],
+            [
+                'fallback' => 'free-yond',
+                'name' => 'FreeYond',
+                'brandname' => 'FreeYond',
+                'key' => 'free-yond',
+            ],
+            [
+                'fallback' => 'me-mobile',
+                'name' => 'MeMobile',
+                'brandname' => 'MeMobile',
+                'key' => 'me-mobile',
+            ],
+            [
+                'fallback' => 'soho-style',
+                'name' => 'Soho Style',
+                'brandname' => 'Soho Style',
+                'key' => 'soho-style',
+            ],
+            [
+                'fallback' => 'CROSSCALL SAS',
+                'name' => 'CROSSCALL SAS',
+                'brandname' => 'CROSSCALL',
+                'key' => 'crosscall',
+            ],
+            [
+                'fallback' => 'maze-speed',
+                'name' => 'Maze Speed',
+                'brandname' => 'Maze Speed',
+                'key' => 'maze-speed',
+            ],
+            [
+                'fallback' => 'hi-grace',
+                'name' => 'HiGrace',
+                'brandname' => 'HiGrace',
+                'key' => 'hi-grace',
             ],
         ];
     }
