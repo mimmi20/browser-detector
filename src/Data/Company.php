@@ -635,6 +635,36 @@ enum Company: string implements CompanyInterface
 
     case droidPlayer = 'Droid Player';
 
+    case hisense = 'HiSense';
+
+    case allview = 'Allview';
+
+    case rhino = 'Rhino';
+
+    case freeYond = 'FreeYond';
+
+    case meMobile = 'MeMobile';
+
+    case xMobile = 'X-Mobile';
+
+    case bmobile = 'Bmobile';
+
+    case sohoStyle = 'Soho Style';
+
+    case veidoo = 'Veidoo';
+
+    case crosscall = 'CROSSCALL';
+
+    case mazeSpeed = 'Maze Speed';
+
+    case mKopa = 'M-KOPA';
+
+    case sColor = 'S-Color';
+
+    case hiGrace = 'HiGrace';
+
+    case myphone = 'MyPhone';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -951,6 +981,21 @@ enum Company: string implements CompanyInterface
             'maxcom' => self::maxcom,
             'mobicel' => self::mobicel,
             'droidplayer', 'droid-player', 'droid player' => self::droidPlayer,
+            'hisense', 'hisense company ltd.' => self::hisense,
+            'allview', 'allview electronics sp. z o.o.' => self::allview,
+            'rhino' => self::rhino,
+            'freeyond', 'free-yond' => self::freeYond,
+            'memobile', 'me-mobile' => self::meMobile,
+            'xmobile', 'x-mobile' => self::xMobile,
+            'bmobile' => self::bmobile,
+            'sohostyle', 'soho style', 'soho-style' => self::sohoStyle,
+            'veidoo' => self::veidoo,
+            'crosscall', 'crosscall sas', 'maze-speed' => self::crosscall,
+            'mazespeed', 'maze speed' => self::mazeSpeed,
+            'mkopa', 'm-kopa' => self::mKopa,
+            'scolor', 's-color' => self::sColor,
+            'higrace', 'hi-grace' => self::hiGrace,
+            'myphone' => self::myphone,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1030,6 +1075,9 @@ enum Company: string implements CompanyInterface
             self::micromax => 'Micromax Informatics Ltd.',
             self::archos => 'Archos S.A.',
             self::nuu => 'NUU Mobile',
+            self::hisense => 'HiSense Company Ltd.',
+            self::allview => 'Allview Electronics SP. Z O.O.',
+            self::crosscall => 'CROSSCALL SAS',
             self::unknown => null,
             default => $this->value,
         };
@@ -1100,6 +1148,14 @@ enum Company: string implements CompanyInterface
             self::greenLion => 'green-lion',
             self::nuu => 'nuu-mobile',
             self::droidPlayer => 'droid-player',
+            self::freeYond => 'free-yond',
+            self::meMobile => 'me-mobile',
+            self::xMobile => 'x-mobile',
+            self::sohoStyle => 'soho-style',
+            self::mazeSpeed => 'maze-speed',
+            self::mKopa => 'm-kopa',
+            self::sColor => 's-color',
+            self::hiGrace => 'hi-grace',
             default => $this->name,
         };
     }

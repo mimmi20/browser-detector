@@ -2437,6 +2437,7 @@ final class Device implements DeviceInterface
             'realme 7 pro' => 'realme=realme 7 pro',
             'rmp2204' => 'realme=realme rmp2204',
             'rmp2205' => 'realme=realme rmp2205',
+            'realme x7 max 5g' => 'realme=realme x7 max 5g',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -3078,6 +3079,7 @@ final class Device implements DeviceInterface
             'armor x16' => 'ulefone=ulefone armor x16',
             'armor x32' => 'ulefone=ulefone armor x32',
             'armor 21' => 'ulefone=ulefone armor 21',
+            'armor 23 ultra' => 'ulefone=ulefone armor 23 ultra',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -3521,6 +3523,7 @@ final class Device implements DeviceInterface
             'tab 60 kids' => 'blackview=blackview tab 60 kids',
             'tab 50 kids' => 'blackview=blackview tab 50 kids',
             'tab 10 wifi' => 'blackview=blackview tab 10 wifi',
+            'bv9300 pro' => 'blackview=blackview bv9300 pro',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -5318,6 +5321,8 @@ final class Device implements DeviceInterface
             'pcd 506' => 'pcd=pcd 506',
             'pcdc751' => 'pcd=pcd c751',
             'pcd c741' => 'pcd=pcd c741',
+            // rhino
+            'pace a1' => 'rhino=rhino pace a1',
             // other
             default => null,
         };
