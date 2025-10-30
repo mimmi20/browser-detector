@@ -3080,6 +3080,7 @@ final class Device implements DeviceInterface
             'armor x32' => 'ulefone=ulefone armor x32',
             'armor 21' => 'ulefone=ulefone armor 21',
             'armor 23 ultra' => 'ulefone=ulefone armor 23 ultra',
+            'armor 27' => 'ulefone=ulefone armor 27',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -3431,6 +3432,7 @@ final class Device implements DeviceInterface
             'iplay60_pro' => 'alldocube=alldocube iplay 60 pro',
             'iplay60 mini turbo' => 'alldocube=alldocube iplay 60 mini turbo',
             't1201' => 'alldocube=alldocube t1201',
+            't811' => 'alldocube=alldocube t811',
             // dgtec
             'dg101hstb' => 'dgtec=dgtec dg101hstb',
             // coopers
@@ -4864,7 +4866,7 @@ final class Device implements DeviceInterface
             't803' => 'wish-tel=wish-tel t803',
             't803m' => 'wish-tel=wish-tel t803m',
             't808' => 'wish-tel=wish-tel t808',
-            't811' => 'wish-tel=wish-tel t811',
+            // 't811' => 'wish-tel=wish-tel t811',
             // 't1201' => 'wish-tel=wish-tel t1201',
             // lunnen
             'tl4648s01' => 'lunnen=lunnen tl4648s01',
@@ -5230,6 +5232,7 @@ final class Device implements DeviceInterface
             // novey
             'alpha a16' => 'novey=novey alpha a16',
             'force g20' => 'novey=novey force g20',
+            'pro k10' => 'novey=novey pro k10',
             // iiyama
             'lh5565uhsb-b1' => 'iiyama=iiyama lh5565uhsb-b1',
             // sowly

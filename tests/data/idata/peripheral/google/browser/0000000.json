@@ -1,24 +1,24 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; D118_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; T3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "D118_EEA",
-      "marketingName": "D118",
-      "manufacturer": "feonal",
-      "brand": "feonal",
+      "deviceName": "T3 Pro",
+      "marketingName": "T3 Pro",
+      "manufacturer": "idata",
+      "brand": "idata",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 1280,
-        "height": 800,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 10.1
+        "size": 5.5
       },
-      "type": "fone-pad",
-      "ismobile": true,
+      "type": "peripheral",
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
@@ -32,7 +32,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "126.0.0.0",
+      "version": "135.0.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
@@ -40,7 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "126.0.0.0",
+      "version": "135.0.0.0",
       "manufacturer": "google"
     }
   }

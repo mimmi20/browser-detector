@@ -1,21 +1,21 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; T3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; PACE A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "T3 Pro",
-      "marketingName": "T3 Pro",
-      "manufacturer": "idata",
-      "brand": "idata",
+      "deviceName": "Pace A1",
+      "marketingName": "Pace A1",
+      "manufacturer": "rhino",
+      "brand": "rhino",
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "display": {
-        "width": 1440,
-        "height": 720,
+        "width": 960,
+        "height": 480,
         "touch": true,
-        "size": 5.5
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -30,17 +30,17 @@
       "bits": null
     },
     "client": {
-      "name": "Chrome",
+      "name": "Opera Mobile",
       "modus": null,
-      "version": "135.0.0.0",
-      "manufacturer": "google",
+      "version": "83.0.0.0",
+      "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "135.0.0.0",
+      "version": "126.0.0.0",
       "manufacturer": "google"
     }
   }
