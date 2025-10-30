@@ -3456,6 +3456,7 @@ final class DeviceTest extends TestCase
             ['Armor X32', 'ulefone=ulefone armor x32'],
             ['Armor 21', 'ulefone=ulefone armor 21'],
             ['Armor 23 Ultra', 'ulefone=ulefone armor 23 ultra'],
+            ['Armor 27', 'ulefone=ulefone armor 27'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -3826,6 +3827,7 @@ final class DeviceTest extends TestCase
             ['iPlay60_Pro', 'alldocube=alldocube iplay 60 pro'],
             ['iPlay60 mini Turbo', 'alldocube=alldocube iplay 60 mini turbo'],
             ['T1201', 'alldocube=alldocube t1201'],
+            ['T811', 'alldocube=alldocube t811'],
             // dgtec
             ['DG101HSTB', 'dgtec=dgtec dg101hstb'],
             // coopers
@@ -5395,7 +5397,7 @@ final class DeviceTest extends TestCase
             ['T803', 'wish-tel=wish-tel t803'],
             ['T803M', 'wish-tel=wish-tel t803m'],
             ['T808', 'wish-tel=wish-tel t808'],
-            ['T811', 'wish-tel=wish-tel t811'],
+            // ['T811', 'wish-tel=wish-tel t811'],
             // ['T1201', 'wish-tel=wish-tel t1201'],
             // lunnen
             ['TL4648S01', 'lunnen=lunnen tl4648s01'],
@@ -5765,6 +5767,7 @@ final class DeviceTest extends TestCase
             // novey
             ['Alpha A16', 'novey=novey alpha a16'],
             ['Force G20', 'novey=novey force g20'],
+            ['Pro K10', 'novey=novey pro k10'],
             // iiyama
             ['LH5565UHSB-B1', 'iiyama=iiyama lh5565uhsb-b1'],
             // sowly
