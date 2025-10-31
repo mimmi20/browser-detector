@@ -1956,7 +1956,6 @@ final class SecChUaModelTest extends TestCase
             ['"Aquaris X Pro"', true, 'bq=bq aquaris x pro'],
             // meizu
             ['"M6s"', true, 'meizu=meizu m6s'],
-            ['"NOTE 21"', true, 'meizu=meizu note 21'],
             ['"PRO 6 Plus"', true, 'meizu=meizu pro 6 plus'],
             // peaq
             ['"PEAQ PET 100"', true, 'peaq=peaq pet 100'],

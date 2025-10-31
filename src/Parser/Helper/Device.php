@@ -376,6 +376,7 @@ final class Device implements DeviceInterface
             'cph2585' => 'oneplus=oneplus cph2585',
             'cph2605' => 'oneplus=oneplus cph2605',
             'pkr110' => 'oneplus=oneplus pkr110',
+            'pja110' => 'oneplus=oneplus pja110',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -873,6 +874,9 @@ final class Device implements DeviceInterface
             'xiaomi15 pro' => 'xiaomi=xiaomi 15 pro',
             'poco x7 pro' => 'xiaomi=xiaomi poco x7 pro',
             'poco x6 pro 5g' => 'xiaomi=xiaomi poco x6 pro 5g',
+            'biloba' => 'xiaomi=xiaomi biloba',
+            'xiaomi 13 lite' => 'xiaomi=xiaomi 13 lite',
+            'xiaomi mix fold 3' => 'xiaomi=xiaomi mix fold 3',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -936,7 +940,8 @@ final class Device implements DeviceInterface
             'z2466' => 'zte=zte z2466',
             'z2464n' => 'zte=zte z2464n',
             'z2467' => 'zte=zte z2467',
-            'zte 8150n', 'nubia 8150n' => 'zte=zte 8150n',
+            'zte 8150n' => 'zte=zte 8150n',
+            'nubia 8150n' => 'zte=zte nubia 8150n',
             'nx713j' => 'zte=zte nx713j',
             'zte a2023' => 'zte=zte a2023',
             'zte a2023p', 'a2023p' => 'zte=zte a2023p',
@@ -2583,6 +2588,9 @@ final class Device implements DeviceInterface
             'motorola razr 50' => 'motorola=motorola moto razr 50',
             'moto g24 power' => 'motorola=motorola moto g24 power',
             'motorola edge plus 2023' => 'motorola=motorola edge+ (2023)',
+            'moto g53y 5g' => 'motorola=motorola moto g53y 5g',
+            'motorola razr 40 ultra' => 'motorola=motorola razr 40 ultra',
+            'motorola razr 40' => 'motorola=motorola razr 40',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -3031,6 +3039,7 @@ final class Device implements DeviceInterface
             'ot5 s' => 'oukitel=oukitel ot5 s',
             'oukitel c1' => 'oukitel=oukitel c1 2025',
             'rt3 pro' => 'oukitel=oukitel rt3 pro',
+            'wp30 pro' => 'oukitel=oukitel wp30 pro',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -3081,6 +3090,8 @@ final class Device implements DeviceInterface
             'armor 21' => 'ulefone=ulefone armor 21',
             'armor 23 ultra' => 'ulefone=ulefone armor 23 ultra',
             'armor 27' => 'ulefone=ulefone armor 27',
+            'armor x12' => 'ulefone=ulefone armor x12',
+            'power armor x11' => 'ulefone=ulefone power armor x11',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -3215,6 +3226,8 @@ final class Device implements DeviceInterface
             'kingkong power 3' => 'cubot=cubot kingkong power 3',
             'kingkong ace 3' => 'cubot=cubot kingkong ace 3',
             'kingkong power' => 'cubot=cubot kingkong power',
+            'note 21' => 'cubot=cubot note 21',
+            'note 40' => 'cubot=cubot note 40',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -3742,6 +3755,7 @@ final class Device implements DeviceInterface
             'nexg n72' => 'walton=walton nexg n72',
             'nexg n25' => 'walton=walton nexg n25',
             'nexg n9' => 'walton=walton nexg n9',
+            'xanon x20' => 'walton=walton xanon x20',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             // zuum
@@ -3951,7 +3965,7 @@ final class Device implements DeviceInterface
             'bq-6761' => 'bq=bq bq-6761',
             // meizu
             'm6s' => 'meizu=meizu m6s',
-            'note 21' => 'meizu=meizu note 21',
+            'meizu note21' => 'meizu=meizu note 21',
             'pro 6 plus' => 'meizu=meizu pro 6 plus',
             'meizu 21' => 'meizu=meizu 21',
             'mblu 22' => 'meizu=meizu mblu 22',
@@ -4504,6 +4518,7 @@ final class Device implements DeviceInterface
             'spider 8' => 'oscal=oscal spider 8',
             'pad 80 wifi' => 'oscal=oscal pad 80 wifi',
             'pad 70 wifi' => 'oscal=oscal pad 70 wifi',
+            'tiger 10' => 'oscal=oscal tiger 10',
             // vocal
             'vocal v0core' => 'vocal=vocal v0core',
             'vocal v2 lite' => 'vocal=vocal v2 lite',
@@ -5230,9 +5245,11 @@ final class Device implements DeviceInterface
             // consung
             'n101b' => 'consung=consung n101b',
             // novey
+            'alpha a10' => 'novey=novey alpha a10',
             'alpha a16' => 'novey=novey alpha a16',
             'force g20' => 'novey=novey force g20',
             'pro k10' => 'novey=novey pro k10',
+            'force f15' => 'novey=novey force f15',
             // iiyama
             'lh5565uhsb-b1' => 'iiyama=iiyama lh5565uhsb-b1',
             // sowly

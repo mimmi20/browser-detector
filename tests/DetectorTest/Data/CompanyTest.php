@@ -2002,6 +2002,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'MyPhone',
                 'key' => 'myphone',
             ],
+            [
+                'type' => 'Sigma Mobile',
+                'name' => 'Sigma Mobile',
+                'brandname' => 'Sigma Mobile',
+                'key' => 'sigma-mobile',
+            ],
+            [
+                'type' => 'GOODTEL',
+                'name' => 'GOODTEL',
+                'brandname' => 'GOODTEL',
+                'key' => 'goodtel',
+            ],
+            [
+                'type' => 'Vontar',
+                'name' => 'Vontar',
+                'brandname' => 'Vontar',
+                'key' => 'vontar',
+            ],
+            [
+                'type' => 'PULID',
+                'name' => 'PULID',
+                'brandname' => 'PULID',
+                'key' => 'pulid',
+            ],
         ];
     }
 
@@ -2766,6 +2790,12 @@ final class CompanyTest extends TestCase
                 'name' => 'HiGrace',
                 'brandname' => 'HiGrace',
                 'key' => 'hi-grace',
+            ],
+            [
+                'fallback' => 'sigma-mobile',
+                'name' => 'Sigma Mobile',
+                'brandname' => 'Sigma Mobile',
+                'key' => 'sigma-mobile',
             ],
         ];
     }

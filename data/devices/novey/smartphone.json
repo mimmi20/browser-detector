@@ -13,7 +13,7 @@
       "size": 6.67
     },
     "type": "smartphone",
-    "platform": "symbian"
+    "platform": null
   },
   "novey force g20": {
     "deviceName": "Force G20",
@@ -29,7 +29,7 @@
       "size": 6.78
     },
     "type": "smartphone",
-    "platform": "symbian"
+    "platform": null
   },
   "novey pro k10": {
     "deviceName": "Pro K10",
@@ -45,6 +45,38 @@
       "size": 6.78
     },
     "type": "smartphone",
-    "platform": "symbian"
+    "platform": null
+  },
+  "novey alpha a10": {
+    "deviceName": "Alpha A10",
+    "marketingName": "Alpha A10",
+    "manufacturer": "novey",
+    "brand": "novey",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "novey force f15": {
+    "deviceName": "Force F15",
+    "marketingName": "Force F15",
+    "manufacturer": "novey",
+    "brand": "novey",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": null
   }
 }
