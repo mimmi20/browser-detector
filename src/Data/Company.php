@@ -665,6 +665,14 @@ enum Company: string implements CompanyInterface
 
     case myphone = 'MyPhone';
 
+    case sigmaMobile = 'Sigma Mobile';
+
+    case goodtel = 'GOODTEL';
+
+    case vontar = 'Vontar';
+
+    case pulid = 'PULID';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -996,6 +1004,10 @@ enum Company: string implements CompanyInterface
             'scolor', 's-color' => self::sColor,
             'higrace', 'hi-grace' => self::hiGrace,
             'myphone' => self::myphone,
+            'sigmamobile', 'sigma mobile', 'sigma-mobile' => self::sigmaMobile,
+            'goodtel' => self::goodtel,
+            'vontar' => self::vontar,
+            'pulid' => self::pulid,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1156,6 +1168,7 @@ enum Company: string implements CompanyInterface
             self::mKopa => 'm-kopa',
             self::sColor => 's-color',
             self::hiGrace => 'hi-grace',
+            self::sigmaMobile => 'sigma-mobile',
             default => $this->name,
         };
     }
