@@ -2959,6 +2959,7 @@ final class DeviceTest extends TestCase
             ['moto g53y 5G', 'motorola=motorola moto g53y 5g'],
             ['motorola razr 40 ultra', 'motorola=motorola razr 40 ultra'],
             ['motorola razr 40', 'motorola=motorola razr 40'],
+            ['motorola razr 2023', 'motorola=motorola moto razr 2023'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -4975,6 +4976,7 @@ final class DeviceTest extends TestCase
             ['Pad 80 WiFi', 'oscal=oscal pad 80 wifi'],
             ['Pad 70 WiFi', 'oscal=oscal pad 70 wifi'],
             ['TIGER 10', 'oscal=oscal tiger 10'],
+            ['TIGER 13', 'oscal=oscal tiger 13'],
             // vocal
             ['VOCAL V0Core', 'vocal=vocal v0core'],
             ['Vocal V2 Lite', 'vocal=vocal v2 lite'],

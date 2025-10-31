@@ -91,51 +91,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/17F80 QQ/8.3.6.618 V1_IPH_SQ_8.3.6_1_APP_A Pixel/1080 MiniAppEnable SimpleUISwitch/0 QQTheme/1000 Core/WKWebView Device/Apple(iPhone 6Plus) NetType/4G QBWebViewType/1 WKType/1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 7,2",
-      "marketingName": "iPhone 6",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "13.5.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "client": {
-      "name": "QQ-App",
-      "modus": null,
-      "version": "8.3.6.618",
-      "manufacturer": "tencent",
-      "type": "application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/8.2.6.700 V1_IPH_SQ_8.2.6_1_APP_A Pixel/640 MiniAppEnable Core/WKWebView Device/Apple(iPhone 5S) NetType/4G QBWebViewType/1 WKType/1"
     },
     "device": {
@@ -168,6 +123,51 @@
       "name": "QQ-App",
       "modus": null,
       "version": "8.2.6.700",
+      "manufacturer": "tencent",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/14G60 QQ/103.3 TIM/3.3.5.545 V1_IPH_SQ_8.4.8_335_TIM_D Pixel/750 MiniAppEnable SimpleUISwitch/1 QQTheme/1015712 Core/WKWebView Device/Apple(iPhone 6) NetType/4G QBWebViewType/1 WKType/1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ-App",
+      "modus": null,
+      "version": "103.3.0",
       "manufacturer": "tencent",
       "type": "application",
       "isbot": false,

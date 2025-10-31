@@ -2591,6 +2591,7 @@ final class Device implements DeviceInterface
             'moto g53y 5g' => 'motorola=motorola moto g53y 5g',
             'motorola razr 40 ultra' => 'motorola=motorola razr 40 ultra',
             'motorola razr 40' => 'motorola=motorola razr 40',
+            'motorola razr 2023' => 'motorola=motorola moto razr 2023',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4519,6 +4520,7 @@ final class Device implements DeviceInterface
             'pad 80 wifi' => 'oscal=oscal pad 80 wifi',
             'pad 70 wifi' => 'oscal=oscal pad 70 wifi',
             'tiger 10' => 'oscal=oscal tiger 10',
+            'tiger 13' => 'oscal=oscal tiger 13',
             // vocal
             'vocal v0core' => 'vocal=vocal v0core',
             'vocal v2 lite' => 'vocal=vocal v2 lite',
