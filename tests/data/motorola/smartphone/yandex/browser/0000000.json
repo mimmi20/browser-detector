@@ -320,17 +320,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Razr",
-      "marketingName": "Droid Razr",
+      "deviceName": "Razr 40",
+      "marketingName": "Razr 40",
       "manufacturer": "motorola",
       "brand": "motorola",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 960,
-        "height": 540,
+        "width": 2640,
+        "height": 1080,
         "touch": true,
-        "size": 4.3
+        "size": 6.9
       },
       "type": "smartphone",
       "ismobile": true,
@@ -365,17 +365,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Razr",
-      "marketingName": "Droid Razr",
+      "deviceName": "Razr 40 Ultra",
+      "marketingName": "Razr 40 Ultra",
       "manufacturer": "motorola",
       "brand": "motorola",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 960,
-        "height": 540,
+        "width": 2640,
+        "height": 1080,
         "touch": true,
-        "size": 4.3
+        "size": 6.9
       },
       "type": "smartphone",
       "ismobile": true,
@@ -500,17 +500,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Moto G",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G53y 5G",
+      "marketingName": "Moto G53y 5G",
       "manufacturer": "motorola",
       "brand": "motorola",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
-        "width": 1280,
+        "width": 1600,
         "height": 720,
         "touch": true,
-        "size": 4
+        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -626,6 +626,51 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.312",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; motorola razr 2023) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.869 YaSearchBrowser/24.42.1 BroPP/1.0 YaSearchApp/24.42.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Razr",
+      "marketingName": "Droid Razr",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.42.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.869",
       "manufacturer": "google"
     }
   },

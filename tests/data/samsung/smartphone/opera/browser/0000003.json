@@ -1576,51 +1576,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-F916B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36 OPR/62.3.3146.57763"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-F916B",
-      "marketingName": "Galaxy Z Fold 2 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2208,
-        "height": 1768,
-        "touch": true,
-        "size": 7.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "62.3.3146.57763",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36 OPR/63.0.3206.58280"
     },
     "device": {
@@ -3597,6 +3552,51 @@
       "name": "Blink",
       "version": "96.0.4664.104",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; zh-CN; SM-F7000 Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OPR/12.52.0.8 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F7000",
+      "marketingName": "Galaxy Z Flip",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2636,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "12.52.0.8",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {

@@ -451,6 +451,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-F700U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F700U",
+      "marketingName": "Galaxy Z Flip",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2636,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "80.0.3987.149",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.149",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G988B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.162 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)"
     },
     "device": {
@@ -672,6 +717,51 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-F700F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F700F",
+      "marketingName": "Galaxy Z Flip",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2636,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "78.0.3904.96",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.96",
+      "manufacturer": "google"
     }
   },
   {
@@ -4406,96 +4496,6 @@
     "engine": {
       "name": "Blink",
       "version": "65.0.3325.109",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-J737T1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-J737T1",
-      "marketingName": "Galaxy J7 Star (T-Mobile, Metro PCS, 2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "81.0.4044.138",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-J737V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-J737V",
-      "marketingName": "Galaxy J7 V (Verizon, 2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "81.0.4044.117",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.117",
       "manufacturer": "google"
     }
   }

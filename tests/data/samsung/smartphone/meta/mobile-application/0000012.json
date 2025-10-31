@@ -991,51 +991,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-F916B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-F916B",
-      "marketingName": "Galaxy Z Fold 2 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2208,
-        "height": 1768,
-        "touch": true,
-        "size": 7.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "352.0.0.21.117",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "97.0.4692.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A715F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/288.0.0.11.115;]"
     },
     "device": {
@@ -4500,6 +4455,51 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.5672.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A045F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.210 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/422.0.0.26.76;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A045F",
+      "marketingName": "Galaxy A04 4G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "422.0.0.26.76",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.210",
       "manufacturer": "google"
     }
   }

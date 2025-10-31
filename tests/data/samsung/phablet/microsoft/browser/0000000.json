@@ -631,51 +631,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-F707B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/46.06.4.5161"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-F707B",
-      "marketingName": "Galaxy Z Flip 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2636,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Edge Mobile for Android",
-      "modus": null,
-      "version": "46.06.4.5161",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-N980F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36 EdgA/93.0.961.69"
     },
     "device": {
@@ -811,21 +766,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-F700F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36 EdgW/1.0"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-F916B Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 EdgW/1.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-F700F",
-      "marketingName": "Galaxy Z Flip",
+      "deviceName": "SM-F916B",
+      "marketingName": "Galaxy Z Fold 2 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 2636,
-        "height": 1080,
+        "width": 2208,
+        "height": 1768,
         "touch": true,
-        "size": 6.7
+        "size": 7.6
       },
       "type": "phablet",
       "ismobile": true,
@@ -850,7 +805,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "95.0.4638.74",
+      "version": "96.0.4664.45",
       "manufacturer": "google"
     }
   },

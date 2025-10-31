@@ -816,7 +816,7 @@
     "device": {
       "architecture": null,
       "deviceName": "22101316UG",
-      "marketingName": "Redmi Note 12 Pro Plus 5G",
+      "marketingName": "Redmi Note 12 Pro+ 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
@@ -1216,6 +1216,96 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; 23076RA4BC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.232 YaBrowser/23.11.0.232.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "23076RA4BC",
+      "marketingName": "Redmi Note 12R",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.79
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "23.11.0.232.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.5993.232",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 13; 22101320C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.549 YaSearchBrowser/23.95.1 BroPP/1.0 YaSearchApp/23.95.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "22101320C",
+      "marketingName": "Redmi Note 12 Pro Speed",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "23.95.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.5845.549",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; 2312DRA50C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.83 YaBrowser/23.9.5.83.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -1486,51 +1576,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; NOTE 40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.479 YaApp_Android/24.16.1 YaSearchBrowser/24.16.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi Note 4",
-      "marketingName": "Redmi Note 4",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "24.16.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.6099.479",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; 23021RAAEI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.124 YaBrowser/24.7.5.124.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -1571,6 +1616,51 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 7.0; Redmi Note 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaApp_Android/10.63 YaSearchBrowser/10.63 BroPP/1.0 SA/1 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi Note 4",
+      "marketingName": "Redmi Note 4",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "10.63.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.117",
       "manufacturer": "google"
     }
   },

@@ -1,6 +1,141 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-S550TL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S550TL",
+      "marketingName": "Galaxy On5",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "77.0.3865.92",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG-SM-J326AZ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-J326AZ",
+      "marketingName": "Galaxy Sol 2 LTE (USA)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.96",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G9308) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.62 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G9308",
+      "marketingName": "Galaxy S7 Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.62",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.62",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N930S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36"
     },
     "device": {
@@ -1036,6 +1171,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SCV47) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SCV47",
+      "marketingName": "Galaxy Z Flip",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2636,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "85.0.4183.127",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; SCV48) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36"
     },
     "device": {
@@ -1076,51 +1256,6 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-F916B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-F916B",
-      "marketingName": "Galaxy Z Fold 2 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2208,
-        "height": 1768,
-        "touch": true,
-        "size": 7.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "86.0.4240.110",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "86.0.4240.110",
       "manufacturer": "google"
     }
   },
@@ -2426,51 +2561,6 @@
     "engine": {
       "name": "Blink",
       "version": "85.0.4183.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-F916B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-F916B",
-      "marketingName": "Galaxy Z Fold 2 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2208,
-        "height": 1768,
-        "touch": true,
-        "size": 7.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
       "manufacturer": "google"
     }
   },
@@ -4407,96 +4497,6 @@
       "name": "Blink",
       "version": "90.0.4430.210",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A426B Build/RP1A.200720.012)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A426B",
-      "marketingName": "Galaxy A42 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A125F Build/RP1A.200720.012)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A125F",
-      "marketingName": "Galaxy A12",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
     }
   }
 ]

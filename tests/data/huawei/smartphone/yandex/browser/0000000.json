@@ -3291,7 +3291,7 @@
     "device": {
       "architecture": null,
       "deviceName": "ALT-L29",
-      "marketingName": "Honor 7C",
+      "marketingName": "Mate X3",
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
@@ -3831,9 +3831,9 @@
     "device": {
       "architecture": null,
       "deviceName": "WDY-AN00",
-      "marketingName": "Honor X6a",
+      "marketingName": "Play 40",
       "manufacturer": "huawei",
-      "brand": "huawei",
+      "brand": "honor",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3866,51 +3866,6 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.808",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; WP30 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.94 YaBrowser/24.1.8.94.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "P30 Pro",
-      "marketingName": "P30 Pro",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.47
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "24.1.8.94.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.6099.94",
       "manufacturer": "google"
     }
   },
@@ -4191,16 +4146,16 @@
     "device": {
       "architecture": null,
       "deviceName": "ALP-AN00",
-      "marketingName": "Mate 10",
+      "marketingName": "X50 Pro 5G",
       "manufacturer": "huawei",
-      "brand": "huawei",
+      "brand": "honor",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 2560,
-        "height": 1440,
+        "width": 2652,
+        "height": 1220,
         "touch": true,
-        "size": 5.9
+        "size": 6.78
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4281,7 +4236,7 @@
     "device": {
       "architecture": null,
       "deviceName": "ALT-AL10",
-      "marketingName": "Honor 7C",
+      "marketingName": "Mate X5",
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
@@ -4326,7 +4281,7 @@
     "device": {
       "architecture": null,
       "deviceName": "ALT-AL00",
-      "marketingName": "Honor 7C",
+      "marketingName": "Mate X3",
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
@@ -4496,6 +4451,51 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.522",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; CLK-LX2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.516 YaSearchBrowser/24.18.1 BroPP/1.0 YaSearchApp/24.18.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CLK-LX2",
+      "marketingName": "X7b",
+      "manufacturer": "huawei",
+      "brand": "honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2412,
+        "height": 1080,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.18.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.516",
       "manufacturer": "google"
     }
   }

@@ -3655,6 +3655,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; NOTE 40 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Note 40",
+      "marketingName": "Note 40",
+      "manufacturer": "cubot",
+      "brand": "cubot",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "127.0.6533.103",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "127.0.6533.103",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; X70 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.186 Mobile Safari/537.36"
     },
     "device": {
@@ -3748,6 +3793,59 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"NOTE 21\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"131.0.6778.81\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Note 21",
+      "marketingName": "Note 21",
+      "manufacturer": "cubot",
+      "brand": "cubot",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "131.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "131.0.0.0",
       "manufacturer": "google"
     }
   },
