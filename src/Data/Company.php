@@ -673,6 +673,18 @@ enum Company: string implements CompanyInterface
 
     case pulid = 'PULID';
 
+    case readboy = 'Readboy';
+
+    case techpad = 'TechPad';
+
+    case blaupunkt = 'Blaupunkt';
+
+    case landRover = 'Land Rover';
+
+    case doro = 'Doro';
+
+    case iconbit = 'iconBIT';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1008,6 +1020,12 @@ enum Company: string implements CompanyInterface
             'goodtel' => self::goodtel,
             'vontar' => self::vontar,
             'pulid' => self::pulid,
+            'readboy' => self::readboy,
+            'techpad' => self::techpad,
+            'blaupunkt' => self::blaupunkt,
+            'landrover', 'land rover', 'land-rover' => self::landRover,
+            'doro', 'doro ab' => self::doro,
+            'iconbit' => self::iconbit,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1090,6 +1108,7 @@ enum Company: string implements CompanyInterface
             self::hisense => 'HiSense Company Ltd.',
             self::allview => 'Allview Electronics SP. Z O.O.',
             self::crosscall => 'CROSSCALL SAS',
+            self::doro => 'Doro AB',
             self::unknown => null,
             default => $this->value,
         };
@@ -1169,6 +1188,7 @@ enum Company: string implements CompanyInterface
             self::sColor => 's-color',
             self::hiGrace => 'hi-grace',
             self::sigmaMobile => 'sigma-mobile',
+            self::landRover => 'land-rover',
             default => $this->name,
         };
     }

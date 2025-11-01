@@ -2026,6 +2026,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'PULID',
                 'key' => 'pulid',
             ],
+            [
+                'type' => 'Readboy',
+                'name' => 'Readboy',
+                'brandname' => 'Readboy',
+                'key' => 'readboy',
+            ],
+            [
+                'type' => 'TechPad',
+                'name' => 'TechPad',
+                'brandname' => 'TechPad',
+                'key' => 'techpad',
+            ],
+            [
+                'type' => 'Blaupunkt',
+                'name' => 'Blaupunkt',
+                'brandname' => 'Blaupunkt',
+                'key' => 'blaupunkt',
+            ],
+            [
+                'type' => 'Land Rover',
+                'name' => 'Land Rover',
+                'brandname' => 'Land Rover',
+                'key' => 'land-rover',
+            ],
+            [
+                'type' => 'Doro',
+                'name' => 'Doro AB',
+                'brandname' => 'Doro',
+                'key' => 'doro',
+            ],
+            [
+                'type' => 'iconBIT',
+                'name' => 'iconBIT',
+                'brandname' => 'iconBIT',
+                'key' => 'iconbit',
+            ],
         ];
     }
 
@@ -2796,6 +2832,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Sigma Mobile',
                 'brandname' => 'Sigma Mobile',
                 'key' => 'sigma-mobile',
+            ],
+            [
+                'fallback' => 'land-rover',
+                'name' => 'Land Rover',
+                'brandname' => 'Land Rover',
+                'key' => 'land-rover',
+            ],
+            [
+                'fallback' => 'Doro AB',
+                'name' => 'Doro AB',
+                'brandname' => 'Doro',
+                'key' => 'doro',
             ],
         ];
     }
