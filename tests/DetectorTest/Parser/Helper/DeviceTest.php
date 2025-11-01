@@ -903,6 +903,7 @@ final class DeviceTest extends TestCase
             ['biloba', 'xiaomi=xiaomi biloba'],
             ['Xiaomi 13 Lite', 'xiaomi=xiaomi 13 lite'],
             ['Xiaomi Mix Fold 3', 'xiaomi=xiaomi mix fold 3'],
+            ['21091116C', 'xiaomi=xiaomi 21091116c'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -2722,6 +2723,7 @@ final class DeviceTest extends TestCase
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox one'],
             ['Surface Pro', 'microsoft=microsoft surface pro'],
+            ['Surface Duo 2', 'microsoft=microsoft surface duo 2'],
             // realme
             ['RMX3085', 'realme=realme rmx3085'],
             ['RMX3231', 'realme=realme rmx3231'],
@@ -4078,6 +4080,7 @@ final class DeviceTest extends TestCase
             ['T22-EEA', 'toscido=toscido t22-eea'],
             ['T151-EEA', 'toscido=toscido t151-eea'],
             ['T181-EEA', 'toscido=toscido t181-eea'],
+            ['T13-EEA', 'toscido=toscido t13-eea'],
             // beafon
             ['TW10', 'beafon=beafon tw10'],
             // micromax
@@ -5429,6 +5432,7 @@ final class DeviceTest extends TestCase
             ['LT C60', 'lt-mobile=lt-mobile c60'],
             ['LT_9902', 'lt-mobile=lt-mobile lt_9902'],
             ['LT E16', 'lt-mobile=lt-mobile e16'],
+            ['LT_9701', 'lt-mobile=lt-mobile lt_9701'],
             // mobi-wire
             ['IKOSORA+', 'mobi-wire=mobi-wire ikosora+'],
             ['Taima', 'mobi-wire=mobi-wire taima'],
@@ -5879,6 +5883,22 @@ final class DeviceTest extends TestCase
             ['PCD C741', 'pcd=pcd c741'],
             // rhino
             ['PACE A1', 'rhino=rhino pace a1'],
+            // eplutus
+            ['M71', 'eplutus=eplutus m71'],
+            ['AN-232', 'eplutus=eplutus an-232'],
+            // techpad
+            ['TechPad_832', 'techpad=techpad 832'],
+            ['Xtab Dual C1081+', 'techpad=techpad xtab dual c1081+'],
+            ['Dual C1081HD', 'techpad=techpad dual c1081hd'],
+            ['Xtab 785', 'techpad=techpad xtab 785'],
+            ['Xtab785', 'techpad=techpad xtab 785'],
+            ['XTAB 781+', 'techpad=techpad xtab 781+'],
+            ['Xtab-781+', 'techpad=techpad xtab 781+'],
+            ['Xtab i700', 'techpad=techpad xtab i700'],
+            ['XTAB 7', 'techpad=techpad xtab 7'],
+            ['S813G', 'techpad=techpad s813g'],
+            ['Tech Pad +Q545', 'techpad=techpad q545'],
+            ['Techpad X5', 'techpad=techpad x5'],
             // other
             ['Model"', null],
             [': "', null],

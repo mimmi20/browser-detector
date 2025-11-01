@@ -877,6 +877,7 @@ final class Device implements DeviceInterface
             'biloba' => 'xiaomi=xiaomi biloba',
             'xiaomi 13 lite' => 'xiaomi=xiaomi 13 lite',
             'xiaomi mix fold 3' => 'xiaomi=xiaomi mix fold 3',
+            '21091116c' => 'xiaomi=xiaomi 21091116c',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2355,6 +2356,7 @@ final class Device implements DeviceInterface
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
             'surface pro' => 'microsoft=microsoft surface pro',
+            'surface duo 2' => 'microsoft=microsoft surface duo 2',
             // realme
             'rmx3085' => 'realme=realme rmx3085',
             'rmx3231' => 'realme=realme rmx3231',
@@ -3683,6 +3685,7 @@ final class Device implements DeviceInterface
             't22-eea' => 'toscido=toscido t22-eea',
             't151-eea' => 'toscido=toscido t151-eea',
             't181-eea' => 'toscido=toscido t181-eea',
+            't13-eea' => 'toscido=toscido t13-eea',
             // beafon
             'tw10' => 'beafon=beafon tw10',
             // micromax
@@ -4897,6 +4900,7 @@ final class Device implements DeviceInterface
             'lt c60' => 'lt-mobile=lt-mobile c60',
             'lt_9902' => 'lt-mobile=lt-mobile lt_9902',
             'lt e16' => 'lt-mobile=lt-mobile e16',
+            'lt_9701' => 'lt-mobile=lt-mobile lt_9701',
             // mobi-wire
             'ikosora+' => 'mobi-wire=mobi-wire ikosora+',
             'taima' => 'mobi-wire=mobi-wire taima',
@@ -5345,6 +5349,20 @@ final class Device implements DeviceInterface
             'pcd c741' => 'pcd=pcd c741',
             // rhino
             'pace a1' => 'rhino=rhino pace a1',
+            // eplutus
+            'm71' => 'eplutus=eplutus m71',
+            'an-232' => 'eplutus=eplutus an-232',
+            // techpad
+            'techpad_832' => 'techpad=techpad 832',
+            'xtab dual c1081+' => 'techpad=techpad xtab dual c1081+',
+            'dual c1081hd' => 'techpad=techpad dual c1081hd',
+            'xtab 785', 'xtab785' => 'techpad=techpad xtab 785',
+            'xtab 781+', 'xtab-781+' => 'techpad=techpad xtab 781+',
+            'xtab i700' => 'techpad=techpad xtab i700',
+            'xtab 7' => 'techpad=techpad xtab 7',
+            's813g' => 'techpad=techpad s813g',
+            'tech pad +q545' => 'techpad=techpad q545',
+            'techpad x5' => 'techpad=techpad x5',
             // other
             default => null,
         };

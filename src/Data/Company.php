@@ -685,6 +685,8 @@ enum Company: string implements CompanyInterface
 
     case iconbit = 'iconBIT';
 
+    case eplutus = 'Eplutus';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1026,6 +1028,7 @@ enum Company: string implements CompanyInterface
             'landrover', 'land rover', 'land-rover' => self::landRover,
             'doro', 'doro ab' => self::doro,
             'iconbit' => self::iconbit,
+            'eplutus', 'richmond international (hong kong) electronic technology development co.,ltd' => self::eplutus,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1109,6 +1112,7 @@ enum Company: string implements CompanyInterface
             self::allview => 'Allview Electronics SP. Z O.O.',
             self::crosscall => 'CROSSCALL SAS',
             self::doro => 'Doro AB',
+            self::eplutus => 'Richmond International (Hong Kong) Electronic Technology Development Co.,Ltd',
             self::unknown => null,
             default => $this->value,
         };
