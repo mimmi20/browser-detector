@@ -96,7 +96,7 @@
     "device": {
       "architecture": null,
       "deviceName": "RMX3701",
-      "marketingName": "GT Neo5 SE",
+      "marketingName": "GT Neo 5 SE",
       "manufacturer": "bbk",
       "brand": "realme",
       "dualOrientation": true,
@@ -501,7 +501,7 @@
     "device": {
       "architecture": null,
       "deviceName": "V2339A",
-      "marketingName": "iQOO Neo9 Pro (China)",
+      "marketingName": "iQOO Neo 9 Pro (China)",
       "manufacturer": "bbk",
       "brand": "vivo",
       "dualOrientation": true,
@@ -546,7 +546,7 @@
     "device": {
       "architecture": null,
       "deviceName": "V2338A",
-      "marketingName": "iQOO Neo9",
+      "marketingName": "iQOO Neo 9",
       "manufacturer": "bbk",
       "brand": "vivo",
       "dualOrientation": true,
@@ -946,57 +946,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; V2303A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.3.104.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "V2303A",
-      "marketingName": "V23 5G",
-      "manufacturer": "bbk",
-      "brand": "vivo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.44
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "23.7.3.104.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; I2219) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.702 YaApp_Android/24.43 YaSearchBrowser/24.43 BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "I2219",
-      "marketingName": "iQOO Z9x",
+      "marketingName": "iQOO Z9x 5G",
       "manufacturer": "bbk",
       "brand": "vivo",
       "dualOrientation": true,
@@ -1131,7 +1086,7 @@
     "device": {
       "architecture": null,
       "deviceName": "V2312BA",
-      "marketingName": "Y78t 5G",
+      "marketingName": "Y100i 5G",
       "manufacturer": "bbk",
       "brand": "vivo",
       "dualOrientation": true,
@@ -1221,7 +1176,7 @@
     "device": {
       "architecture": null,
       "deviceName": "PJB110",
-      "marketingName": "A2",
+      "marketingName": "A2 5G",
       "manufacturer": "bbk",
       "brand": "oppo",
       "dualOrientation": true,
@@ -1490,17 +1445,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "R11",
-      "marketingName": "R11",
+      "deviceName": "PJR110",
+      "marketingName": "K12 5G",
       "manufacturer": "bbk",
       "brand": "oppo",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2412,
         "height": 1080,
         "touch": true,
-        "size": 5.5
+        "size": 6.7
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1536,7 +1491,7 @@
     "device": {
       "architecture": null,
       "deviceName": "RMX3800",
-      "marketingName": "GT6 5G",
+      "marketingName": "GT 6 5G",
       "manufacturer": "bbk",
       "brand": "realme",
       "dualOrientation": true,
@@ -1581,7 +1536,7 @@
     "device": {
       "architecture": null,
       "deviceName": "V2403A",
-      "marketingName": "iQOO Neo9S Pro+",
+      "marketingName": "iQOO Neo 9S Pro+",
       "manufacturer": "bbk",
       "brand": "vivo",
       "dualOrientation": true,
@@ -2716,6 +2671,51 @@
         "height": 1080,
         "touch": true,
         "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.3.0.33.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.33",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PKR110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.33 YaBrowser/25.3.0.33.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PKR110",
+      "marketingName": "Ace 5 Pro",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2780,
+        "height": 1264,
+        "touch": true,
+        "size": 6.78
       },
       "type": "smartphone",
       "ismobile": true,

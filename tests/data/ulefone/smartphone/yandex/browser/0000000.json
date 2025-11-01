@@ -410,17 +410,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Armor 2",
-      "marketingName": "Armor 2",
+      "deviceName": "Armor 21",
+      "marketingName": "Armor 21",
       "manufacturer": "ulefone",
       "brand": "ulefone",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2408,
         "height": 1080,
         "touch": true,
-        "size": 5
+        "size": 6.58
       },
       "type": "smartphone",
       "ismobile": true,
@@ -455,17 +455,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Power",
-      "marketingName": "Power",
+      "deviceName": "Power Armor X11",
+      "marketingName": "Power Armor X11",
       "manufacturer": "ulefone",
       "brand": "ulefone",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 5.5
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -491,51 +491,6 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.64",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; TIGER 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.507 YaSearchBrowser/24.13.1 BroPP/1.0 YaSearchApp/24.13.1 webOmni SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Tiger",
-      "marketingName": "Tiger",
-      "manufacturer": "ulefone",
-      "brand": "ulefone",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "24.13.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.6099.507",
       "manufacturer": "google"
     }
   },
@@ -581,6 +536,96 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 13; Armor X12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.292 YaBrowser/24.4.0.292.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Armor X12",
+      "marketingName": "Armor X12",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.4.0.292.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.292",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Armor 23 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.39 YaBrowser/24.4.7.39.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Armor 23 Ultra",
+      "marketingName": "Armor 23 Ultra",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.4.7.39.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.39",
       "manufacturer": "google"
     }
   },
@@ -671,6 +716,51 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.2037",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Armor 27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.261 YaBrowser/25.4.0.261.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Armor 27",
+      "marketingName": "Armor 27",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.4.0.261.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.261",
       "manufacturer": "google"
     }
   },

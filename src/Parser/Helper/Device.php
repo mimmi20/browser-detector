@@ -375,6 +375,8 @@ final class Device implements DeviceInterface
             'cph2609' => 'oneplus=oneplus cph2609',
             'cph2585' => 'oneplus=oneplus cph2585',
             'cph2605' => 'oneplus=oneplus cph2605',
+            'pkr110' => 'oneplus=oneplus pkr110',
+            'pja110' => 'oneplus=oneplus pja110',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -504,7 +506,8 @@ final class Device implements DeviceInterface
             'opd2301' => 'oppo=oppo opd2301',
             'perm10' => 'oppo=oppo perm10',
             'perm10_k10' => 'oppo=oppo perm10_k10',
-            // Xiaomi
+            'pjr110' => 'oppo=oppo pjr110',
+            // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
             'mi 9 se' => 'xiaomi=xiaomi mi 9 se',
@@ -870,6 +873,11 @@ final class Device implements DeviceInterface
             '2405cpcfbg' => 'xiaomi=xiaomi 2405cpcfbg',
             'xiaomi15 pro' => 'xiaomi=xiaomi 15 pro',
             'poco x7 pro' => 'xiaomi=xiaomi poco x7 pro',
+            'poco x6 pro 5g' => 'xiaomi=xiaomi poco x6 pro 5g',
+            'biloba' => 'xiaomi=xiaomi biloba',
+            'xiaomi 13 lite' => 'xiaomi=xiaomi 13 lite',
+            'xiaomi mix fold 3' => 'xiaomi=xiaomi mix fold 3',
+            '21091116c' => 'xiaomi=xiaomi 21091116c',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -933,7 +941,8 @@ final class Device implements DeviceInterface
             'z2466' => 'zte=zte z2466',
             'z2464n' => 'zte=zte z2464n',
             'z2467' => 'zte=zte z2467',
-            'zte 8150n', 'nubia 8150n' => 'zte=zte 8150n',
+            'zte 8150n' => 'zte=zte 8150n',
+            'nubia 8150n' => 'zte=zte nubia 8150n',
             'nx713j' => 'zte=zte nx713j',
             'zte a2023' => 'zte=zte a2023',
             'zte a2023p', 'a2023p' => 'zte=zte a2023p',
@@ -969,6 +978,7 @@ final class Device implements DeviceInterface
             'zte a2022h', 'a2022h' => 'zte=zte a2022h',
             'zte a2022l', 'a2022l' => 'zte=zte a2022l',
             'zte 8000' => 'zte=zte 8000',
+            'zte blade a330' => 'zte=zte blade a330',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -1773,6 +1783,7 @@ final class Device implements DeviceInterface
             'sm-a175m', 'samsung sm-a175m' => 'samsung=samsung sm-a175m',
             'sm-a9000', 'samsung sm-a9000' => 'samsung=samsung sm-a9000',
             'sm-a900f', 'samsung sm-a900f' => 'samsung=samsung sm-a900f',
+            'sm-m045f', 'samsung sm-m045f' => 'samsung=samsung sm-m045f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2330,6 +2341,7 @@ final class Device implements DeviceInterface
             'nokia c02' => 'nokia=nokia c02',
             'nokia 8' => 'nokia=nokia 8',
             'nokia 2720 flip' => 'nokia=nokia 2720 flip',
+            'nokia c32' => 'nokia=nokia c32',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -2344,6 +2356,7 @@ final class Device implements DeviceInterface
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
             'surface pro' => 'microsoft=microsoft surface pro',
+            'surface duo 2' => 'microsoft=microsoft surface duo 2',
             // realme
             'rmx3085' => 'realme=realme rmx3085',
             'rmx3231' => 'realme=realme rmx3231',
@@ -2431,6 +2444,7 @@ final class Device implements DeviceInterface
             'realme 7 pro' => 'realme=realme 7 pro',
             'rmp2204' => 'realme=realme rmp2204',
             'rmp2205' => 'realme=realme rmp2205',
+            'realme x7 max 5g' => 'realme=realme x7 max 5g',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -2573,6 +2587,13 @@ final class Device implements DeviceInterface
             'xt2081-2' => 'motorola=motorola xt2081-2',
             'xt2158-6' => 'motorola=motorola xt2158-6',
             'moto g75 5g' => 'motorola=motorola moto g75 5g',
+            'motorola razr 50' => 'motorola=motorola moto razr 50',
+            'moto g24 power' => 'motorola=motorola moto g24 power',
+            'motorola edge plus 2023' => 'motorola=motorola edge+ (2023)',
+            'moto g53y 5g' => 'motorola=motorola moto g53y 5g',
+            'motorola razr 40 ultra' => 'motorola=motorola razr 40 ultra',
+            'motorola razr 40' => 'motorola=motorola razr 40',
+            'motorola razr 2023' => 'motorola=motorola moto razr 2023',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -3021,6 +3042,7 @@ final class Device implements DeviceInterface
             'ot5 s' => 'oukitel=oukitel ot5 s',
             'oukitel c1' => 'oukitel=oukitel c1 2025',
             'rt3 pro' => 'oukitel=oukitel rt3 pro',
+            'wp30 pro' => 'oukitel=oukitel wp30 pro',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -3068,6 +3090,11 @@ final class Device implements DeviceInterface
             'armor 34 pro' => 'ulefone=ulefone armor 34 pro',
             'armor x16' => 'ulefone=ulefone armor x16',
             'armor x32' => 'ulefone=ulefone armor x32',
+            'armor 21' => 'ulefone=ulefone armor 21',
+            'armor 23 ultra' => 'ulefone=ulefone armor 23 ultra',
+            'armor 27' => 'ulefone=ulefone armor 27',
+            'armor x12' => 'ulefone=ulefone armor x12',
+            'power armor x11' => 'ulefone=ulefone power armor x11',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -3147,6 +3174,8 @@ final class Device implements DeviceInterface
             't20mini kid' => 'doogee=doogee t20 mini kid',
             'v max pro' => 'doogee=doogee v max pro',
             'blade gt' => 'doogee=doogee blade gt',
+            'blade10 power' => 'doogee=doogee blade 10 power',
+            's200 x' => 'doogee=doogee s200 x',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3198,6 +3227,10 @@ final class Device implements DeviceInterface
             'cubot hafury v1' => 'cubot=cubot hafury v1',
             'cubot j9' => 'cubot=cubot j9',
             'kingkong power 3' => 'cubot=cubot kingkong power 3',
+            'kingkong ace 3' => 'cubot=cubot kingkong ace 3',
+            'kingkong power' => 'cubot=cubot kingkong power',
+            'note 21' => 'cubot=cubot note 21',
+            'note 40' => 'cubot=cubot note 40',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -3331,6 +3364,7 @@ final class Device implements DeviceInterface
             '2pzc5' => 'htc=htc 2pzc5',
             '601ht' => 'htc=htc 601ht',
             'htv33' => 'htc=htc htv33',
+            'htc a101 plus' => 'htc=htc a101 plus',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea' => 'teclast=teclast p25t_eea',
@@ -3414,6 +3448,7 @@ final class Device implements DeviceInterface
             'iplay60_pro' => 'alldocube=alldocube iplay 60 pro',
             'iplay60 mini turbo' => 'alldocube=alldocube iplay 60 mini turbo',
             't1201' => 'alldocube=alldocube t1201',
+            't811' => 'alldocube=alldocube t811',
             // dgtec
             'dg101hstb' => 'dgtec=dgtec dg101hstb',
             // coopers
@@ -3506,6 +3541,7 @@ final class Device implements DeviceInterface
             'tab 60 kids' => 'blackview=blackview tab 60 kids',
             'tab 50 kids' => 'blackview=blackview tab 50 kids',
             'tab 10 wifi' => 'blackview=blackview tab 10 wifi',
+            'bv9300 pro' => 'blackview=blackview bv9300 pro',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -3649,6 +3685,7 @@ final class Device implements DeviceInterface
             't22-eea' => 'toscido=toscido t22-eea',
             't151-eea' => 'toscido=toscido t151-eea',
             't181-eea' => 'toscido=toscido t181-eea',
+            't13-eea' => 'toscido=toscido t13-eea',
             // beafon
             'tw10' => 'beafon=beafon tw10',
             // micromax
@@ -3722,6 +3759,7 @@ final class Device implements DeviceInterface
             'nexg n72' => 'walton=walton nexg n72',
             'nexg n25' => 'walton=walton nexg n25',
             'nexg n9' => 'walton=walton nexg n9',
+            'xanon x20' => 'walton=walton xanon x20',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             // zuum
@@ -3931,7 +3969,7 @@ final class Device implements DeviceInterface
             'bq-6761' => 'bq=bq bq-6761',
             // meizu
             'm6s' => 'meizu=meizu m6s',
-            'note 21' => 'meizu=meizu note 21',
+            'meizu note21' => 'meizu=meizu note 21',
             'pro 6 plus' => 'meizu=meizu pro 6 plus',
             'meizu 21' => 'meizu=meizu 21',
             'mblu 22' => 'meizu=meizu mblu 22',
@@ -3944,7 +3982,9 @@ final class Device implements DeviceInterface
             'meizu 17 pro' => 'meizu=meizu 17 pro',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
-            'pet 101-h232e', 'pet 101-h232e-13' => 'peaq=peaq pet 101-h232e',
+            'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',
+            'pet 101-h232e' => 'peaq=peaq pet 101-h232e',
+            'pet 101-h232e-13' => 'peaq=peaq pet 101-h232e-13',
             // casper
             'via g5' => 'casper=casper via g5',
             'via m40' => 'casper=casper via m40',
@@ -4482,6 +4522,8 @@ final class Device implements DeviceInterface
             'spider 8' => 'oscal=oscal spider 8',
             'pad 80 wifi' => 'oscal=oscal pad 80 wifi',
             'pad 70 wifi' => 'oscal=oscal pad 70 wifi',
+            'tiger 10' => 'oscal=oscal tiger 10',
+            'tiger 13' => 'oscal=oscal tiger 13',
             // vocal
             'vocal v0core' => 'vocal=vocal v0core',
             'vocal v2 lite' => 'vocal=vocal v2 lite',
@@ -4579,6 +4621,7 @@ final class Device implements DeviceInterface
             'onvo_32ov6001h', '32ov6001h' => 'onvo=onvo 32ov6001h',
             'onvo_43ov4000af', '43ov4000af' => 'onvo=onvo 43ov4000af',
             'onvo_24ov6000h', '24ov6000h' => 'onvo=onvo 24ov6000h',
+            'onvo_24ovf6000h', '24ovf6000h' => 'onvo=onvo 24ovf6000h',
             // digma
             'zenith ta3d1p01' => 'digma=digma ta3d1p01',
             'zenith ta3e1p01' => 'digma=digma ta3e1p01',
@@ -4619,6 +4662,8 @@ final class Device implements DeviceInterface
             'hit 18 hs1011pl' => 'digma=digma hs1011pl',
             'hit 18 hs1010pl' => 'digma=digma hs1010pl',
             'pulse ta3e0p01' => 'digma=digma ta3e0p01',
+            'pulse ta3d0p01' => 'digma=digma ta3d0p01',
+            'pulse ta2d0p01' => 'digma=digma ta2d0p01',
             // xgody
             'n02' => 'xgody=xgody n02',
             // yumkem
@@ -4791,6 +4836,7 @@ final class Device implements DeviceInterface
             'stylo_521' => 'stylo=stylo 521',
             // atozee
             'cp10' => 'atozee=atozee cp10',
+            'yq10sk' => 'atozee=atozee yq10sk',
             // meta
             'quest 3' => 'meta=meta quest 3',
             'quest 3s' => 'meta=meta quest 3s',
@@ -4840,7 +4886,7 @@ final class Device implements DeviceInterface
             't803' => 'wish-tel=wish-tel t803',
             't803m' => 'wish-tel=wish-tel t803m',
             't808' => 'wish-tel=wish-tel t808',
-            't811' => 'wish-tel=wish-tel t811',
+            // 't811' => 'wish-tel=wish-tel t811',
             // 't1201' => 'wish-tel=wish-tel t1201',
             // lunnen
             'tl4648s01' => 'lunnen=lunnen tl4648s01',
@@ -4854,6 +4900,7 @@ final class Device implements DeviceInterface
             'lt c60' => 'lt-mobile=lt-mobile c60',
             'lt_9902' => 'lt-mobile=lt-mobile lt_9902',
             'lt e16' => 'lt-mobile=lt-mobile e16',
+            'lt_9701' => 'lt-mobile=lt-mobile lt_9701',
             // mobi-wire
             'ikosora+' => 'mobi-wire=mobi-wire ikosora+',
             'taima' => 'mobi-wire=mobi-wire taima',
@@ -4950,6 +4997,7 @@ final class Device implements DeviceInterface
             '50lu6000t' => 'asano=asano 50lu6000t',
             '43lf7010t' => 'asano=asano 43lf7010t',
             '43lu6000t' => 'asano=asano 43lu6000t',
+            '32lh5000t' => 'asano=asano 32lh5000t',
             // hi
             'hx-24h01fb' => 'hi=hi hx-24h01fb',
             'hx-32f01fb' => 'hi=hi hx-32f01fb',
@@ -5035,6 +5083,7 @@ final class Device implements DeviceInterface
             // condor
             'gt60 pro' => 'condor=condor gt60 pro',
             'gt60' => 'condor=condor gt60',
+            'nova60 i' => 'condor=condor nova 60i',
             // f-plus/f+
             'r570e' => 'f-plus=f-plus r570e',
             // mobicel
@@ -5069,8 +5118,8 @@ final class Device implements DeviceInterface
             'p10x' => 'wainyok=wainyok p10x',
             // eagle-soar
             'ee10a' => 'eagle-soar=eagle-soar ee10a',
-            // blow-platinum
-            'platinumtab11_4g' => 'blow-platinum=blow-platinum tab 11 4g',
+            // blow
+            'platinumtab11_4g' => 'blow=blow platinum tab 11 4g',
             // cepter
             'ceptertab10l' => 'cepter=cepter tab 10l',
             'ceptertab101' => 'cepter=cepter tab 101',
@@ -5202,7 +5251,11 @@ final class Device implements DeviceInterface
             // consung
             'n101b' => 'consung=consung n101b',
             // novey
+            'alpha a10' => 'novey=novey alpha a10',
             'alpha a16' => 'novey=novey alpha a16',
+            'force g20' => 'novey=novey force g20',
+            'pro k10' => 'novey=novey pro k10',
+            'force f15' => 'novey=novey force f15',
             // iiyama
             'lh5565uhsb-b1' => 'iiyama=iiyama lh5565uhsb-b1',
             // sowly
@@ -5254,6 +5307,62 @@ final class Device implements DeviceInterface
             'syco rs-442' => 'syco=syco rs-442',
             // philips
             'philips w8555' => 'philips=philips w8555',
+            // homatics
+            'box r 4k plus' => 'homatics=homatics box r 4k plus',
+            // kgtel
+            'nova_10_pro_4g' => 'kgtel=kgtel nova 10 pro 4g',
+            // mobvoi
+            'ticwatch pro 5' => 'mobvoi=mobvoi ticwatch pro 5',
+            // symphony
+            'innova20' => 'symphony=symphony innova 20',
+            // pegatron
+            'chagall' => 'pegatron=pegatron chagall',
+            // pendo
+            'pp4mt-9' => 'pendo=pendo pp4mt-9',
+            'pp4mt-7' => 'pendo=pendo pp4mt-7',
+            // penta
+            'penta ws704dx' => 'penta=penta ws704dx',
+            'penta_ws704d' => 'penta=penta ws704d',
+            'ps650' => 'penta=penta ps650',
+            // pentagram
+            'pentagram tab10' => 'pentagram=pentagram tab 10',
+            'pentagram tab 8.5' => 'pentagram=pentagram tab 8.5',
+            'pentagram tab 8.4' => 'pentagram=pentagram p5343',
+            'pentagram tab 8.3' => 'pentagram=pentagram tab 8.3',
+            'pentagram tab 8.1' => 'pentagram=pentagram p5337',
+            'pentagram tab 7.5' => 'pentagram=pentagram tab 7.5',
+            'quadra 7 ultraslim' => 'pentagram=pentagram quadra 7 ultraslim',
+            'pentagram_eon_prix' => 'pentagram=pentagram p5335',
+            'monster x5' => 'pentagram=pentagram p500-1',
+            'pentagram monster' => 'pentagram=pentagram p430-1',
+            'pentagram ego' => 'pentagram=pentagram p450-1',
+            // perfeo
+            '9103w' => 'perfeo=perfeo 9103w',
+            'patg7506hd' => 'perfeo=perfeo patg7506hd',
+            '7007hd' => 'perfeo=perfeo 7007-hd',
+            // pcd
+            'ph4001' => 'pcd=pcd ph4001',
+            'pcd509' => 'pcd=pcd 509',
+            'pcd508' => 'pcd=pcd 508',
+            'pcd 506' => 'pcd=pcd 506',
+            'pcdc751' => 'pcd=pcd c751',
+            'pcd c741' => 'pcd=pcd c741',
+            // rhino
+            'pace a1' => 'rhino=rhino pace a1',
+            // eplutus
+            'm71' => 'eplutus=eplutus m71',
+            'an-232' => 'eplutus=eplutus an-232',
+            // techpad
+            'techpad_832' => 'techpad=techpad 832',
+            'xtab dual c1081+' => 'techpad=techpad xtab dual c1081+',
+            'dual c1081hd' => 'techpad=techpad dual c1081hd',
+            'xtab 785', 'xtab785' => 'techpad=techpad xtab 785',
+            'xtab 781+', 'xtab-781+' => 'techpad=techpad xtab 781+',
+            'xtab i700' => 'techpad=techpad xtab i700',
+            'xtab 7' => 'techpad=techpad xtab 7',
+            's813g' => 'techpad=techpad s813g',
+            'tech pad +q545' => 'techpad=techpad q545',
+            'techpad x5' => 'techpad=techpad x5',
             // other
             default => null,
         };

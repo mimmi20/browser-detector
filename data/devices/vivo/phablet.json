@@ -97,7 +97,7 @@
   },
   "vivo v2266a": {
     "deviceName": "V2266A",
-    "marketingName": "X Fold2",
+    "marketingName": "X Fold 2",
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
@@ -113,7 +113,7 @@
   },
   "vivo v2337a": {
     "deviceName": "V2337A",
-    "marketingName": "X Fold3",
+    "marketingName": "X Fold 3 5G",
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
@@ -139,6 +139,38 @@
       "height": 2200,
       "touch": true,
       "size": 8.03
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "vivo v2256a": {
+    "deviceName": "V2256A",
+    "marketingName": "X Flip",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2520,
+      "height": 1080,
+      "touch": true,
+      "size": 6.74
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "vivo v2303a": {
+    "deviceName": "V2303A",
+    "marketingName": "X Fold 3 5G",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.44
     },
     "type": "phablet",
     "platform": "android"

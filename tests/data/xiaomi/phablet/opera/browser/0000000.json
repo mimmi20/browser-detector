@@ -1761,7 +1761,7 @@
     "device": {
       "architecture": null,
       "deviceName": "21091116UG",
-      "marketingName": "Redmi Note 11 Pro Plus 5G",
+      "marketingName": "Redmi Note 11 Pro+ 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
@@ -2346,7 +2346,7 @@
     "device": {
       "architecture": null,
       "deviceName": "22101316UG",
-      "marketingName": "Redmi Note 12 Pro Plus 5G",
+      "marketingName": "Redmi Note 12 Pro+ 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
@@ -2426,6 +2426,51 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.119",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 22031116BG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.5.4292.78980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "22031116BG",
+      "marketingName": "Redmi Note 11S 5G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "81.5.4292.78980",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.149",
       "manufacturer": "google"
     }
   },

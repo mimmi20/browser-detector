@@ -546,7 +546,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F711B",
-      "marketingName": "Galaxy Z Flip3 5G (International)",
+      "marketingName": "Galaxy Z Flip 3 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -681,7 +681,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F936N",
-      "marketingName": "Galaxy Z Fold4 5G (Korea)",
+      "marketingName": "Galaxy Z Fold 4 5G (Korea)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1036,12 +1036,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; SM-F916B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.39 YaBrowser/24.4.7.39.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F916B",
+      "marketingName": "Galaxy Z Fold 2 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2208,
+        "height": 1768,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.4.7.39.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.39",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-F711U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.46 YaBrowser/24.6.5.46.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "SM-F711U",
-      "marketingName": "Galaxy Z Flip3 5G (USA)",
+      "marketingName": "Galaxy Z Flip 3 5G (USA)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1121,6 +1166,51 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.26",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-W9024) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.2608 YaSearchBrowser/24.100.1 BroPP/1.0 YaSearchApp/24.100.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-W9024",
+      "marketingName": "Galaxy W24 5G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2176,
+        "height": 1812,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.100.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.2608",
       "manufacturer": "google"
     }
   },
@@ -1301,51 +1391,6 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; SM-A716S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.311 YaBrowser/24.7.0.311.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A716S",
-      "marketingName": "Galaxy A71 (5G, Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "24.7.0.311.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "126.0.6478.311",
       "manufacturer": "google"
     }
   }

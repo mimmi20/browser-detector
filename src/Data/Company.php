@@ -243,7 +243,7 @@ enum Company: string implements CompanyInterface
 
     case eaglesoar = 'EagleSoar';
 
-    case blowPlatinum = 'Blow Platinum';
+    case blow = 'Blow';
 
     case cepter = 'Cepter';
 
@@ -429,6 +429,264 @@ enum Company: string implements CompanyInterface
 
     case cmf = 'CMF';
 
+    case homatics = 'Homatics';
+
+    case kgtel = 'KGTEL';
+
+    case samsung = 'Samsung';
+
+    case sony = 'Sony';
+
+    case motorola = 'Motorola';
+
+    case oukitel = 'Oukitel';
+
+    case blackview = 'Blackview';
+
+    case zte = 'ZTE';
+
+    case tecno = 'Tecno';
+
+    case poco = 'Poco';
+
+    case infinix = 'Infinix';
+
+    case nothing = 'Nothing';
+
+    case tMobile = 'T-Mobile';
+
+    case doogee = 'Doogee';
+
+    case vortex = 'Vortex';
+
+    case lenovo = 'Lenovo';
+
+    case itel = 'iTel';
+
+    case umi = 'UMIDIGI';
+
+    case cubot = 'Cubot';
+
+    case unihertz = 'Unihertz';
+
+    case allwinner = 'AllWinner';
+
+    case dexp = 'DEXP';
+
+    case onvo = 'Onvo';
+
+    case agm = 'AGM';
+
+    case digma = 'Digma';
+
+    case teclast = 'Teclast';
+
+    case onn = 'Onn';
+
+    case zuum = 'Zuum';
+
+    case amazon = 'Amazon';
+
+    case alldocube = 'Alldocube';
+
+    case hotwav = 'Hotwav';
+
+    case fujitsu = 'Fujitsu';
+
+    case meizu = 'Meizu';
+
+    case casper = 'Casper';
+
+    case ulefone = 'Ulefone';
+
+    case hmdGlobal = 'HMD Global';
+
+    case ltMobile = 'LT Mobile';
+
+    case att = 'AT&T';
+
+    case nokia = 'Nokia';
+
+    case reeder = 'Reeder';
+
+    case fossibot = 'FOSSiBOT';
+
+    case sharp = 'Sharp';
+
+    case cricket = 'Cricket';
+
+    case blu = 'BLU';
+
+    case globalsec = 'GlobalSec';
+
+    case kruegermatz = 'Krüger&Matz';
+
+    case kyocera = 'Kyocera';
+
+    case acer = 'Acer';
+
+    case gigaset = 'Gigaset';
+
+    case tcl = 'TCL';
+
+    case nOne = 'N-One';
+
+    case bq = 'BQ';
+
+    case logicom = 'Logicom';
+
+    case walton = 'Walton';
+
+    case htc = 'HTC';
+
+    case mHorse = 'M-HORSE';
+
+    case generalMobile = 'General Mobile';
+
+    case condor = 'Condor';
+
+    case fairphone = 'Fairphone';
+
+    case mobvoi = 'Mobvoi';
+
+    case iget = 'iGET';
+
+    case xgody = 'Xgody';
+
+    case allcall = 'AllCall';
+
+    case vgoTel = 'VGO Tel';
+
+    case lg = 'LG';
+
+    case aligator = 'Aligator';
+
+    case retroidPocket = 'Retroid Pocket';
+
+    case xView = 'X-View';
+
+    case peaq = 'PEAQ';
+
+    case lava = 'Lava';
+
+    case hafury = 'Hafury';
+
+    case coolpad = 'Coolpad';
+
+    case uhans = 'Uhans';
+
+    case toscido = 'TOSCiDO';
+
+    case sky = 'Sky';
+
+    case wileyfox = 'Wileyfox';
+
+    case oysters = 'Oysters';
+
+    case blackberry = 'BlackBerry';
+
+    case vertu = 'Vertu';
+
+    case ugoos = 'Ugoos';
+
+    case chuwi = 'Chuwi';
+
+    case boostMobile = 'Boost Mobile';
+
+    case ace = 'Ace';
+
+    case gfive = 'GFive';
+
+    case mediacom = 'Mediacom';
+
+    case adreamer = 'Adreamer';
+
+    case cat = 'Cat';
+
+    case micromax = 'Micromax';
+
+    case symphony = 'Symphony';
+
+    case archos = 'Archos';
+
+    case haier = 'Haier';
+
+    case nec = 'NEC';
+
+    case greenLion = 'Green Lion';
+
+    case feonal = 'Feonal';
+
+    case thomson = 'Thomson';
+
+    case majestic = 'Majestic';
+
+    case honor = 'Honor';
+
+    case facetel = 'Facetel';
+
+    case hoozo = 'Hoozo';
+
+    case nuu = 'NUU';
+
+    case maxcom = 'Maxcom';
+
+    case mobicel = 'Mobicel';
+
+    case droidPlayer = 'Droid Player';
+
+    case hisense = 'HiSense';
+
+    case allview = 'Allview';
+
+    case rhino = 'Rhino';
+
+    case freeYond = 'FreeYond';
+
+    case meMobile = 'MeMobile';
+
+    case xMobile = 'X-Mobile';
+
+    case bmobile = 'Bmobile';
+
+    case sohoStyle = 'Soho Style';
+
+    case veidoo = 'Veidoo';
+
+    case crosscall = 'CROSSCALL';
+
+    case mazeSpeed = 'Maze Speed';
+
+    case mKopa = 'M-KOPA';
+
+    case sColor = 'S-Color';
+
+    case hiGrace = 'HiGrace';
+
+    case myphone = 'MyPhone';
+
+    case sigmaMobile = 'Sigma Mobile';
+
+    case goodtel = 'GOODTEL';
+
+    case vontar = 'Vontar';
+
+    case pulid = 'PULID';
+
+    case readboy = 'Readboy';
+
+    case techpad = 'TechPad';
+
+    case blaupunkt = 'Blaupunkt';
+
+    case landRover = 'Land Rover';
+
+    case doro = 'Doro';
+
+    case iconbit = 'iconBIT';
+
+    case eplutus = 'Eplutus';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -549,7 +807,7 @@ enum Company: string implements CompanyInterface
             'wainyok' => self::wainyok,
             'hotpepper', 'hot-pepper', 'hot pepper', 'hot pepper mobile, inc.' => self::hotPepper,
             'eaglesoar', 'eagle-soar' => self::eaglesoar,
-            'blowplatinum', 'blow platinum', 'blow-platinum' => self::blowPlatinum,
+            'blow' => self::blow,
             'cepter' => self::cepter,
             'clovertek' => self::clovertek,
             'visualland', 'visual-land', 'visual land' => self::visualLand,
@@ -642,6 +900,135 @@ enum Company: string implements CompanyInterface
             'mobiwire', 'mobi-wire' => self::mobiWire,
             'hometech' => self::hometech,
             'cmf' => self::cmf,
+            'homatics' => self::homatics,
+            'kgtel' => self::kgtel,
+            'samsung' => self::samsung,
+            'sony' => self::sony,
+            'motorola' => self::motorola,
+            'oukitel', 'shenzhen yunji intelligent technology co,.ltd.' => self::oukitel,
+            'blackview', 'blackview international group' => self::blackview,
+            'zte' => self::zte,
+            'tecno', 'tecno mobile' => self::tecno,
+            'poco' => self::poco,
+            'infinix', 'infinix inc.' => self::infinix,
+            'nothing', 'nothing-phone', 'nothing technology ltd' => self::nothing,
+            'tmobile', 't-mobile' => self::tMobile,
+            'doogee' => self::doogee,
+            'vortex' => self::vortex,
+            'lenovo' => self::lenovo,
+            'itel', 'itel mobile' => self::itel,
+            'umi', 'umidigi' => self::umi,
+            'cubot' => self::cubot,
+            'unihertz' => self::unihertz,
+            'allwinner' => self::allwinner,
+            'dexp' => self::dexp,
+            'onvo' => self::onvo,
+            'agm' => self::agm,
+            'digma' => self::digma,
+            'teclast' => self::teclast,
+            'onn' => self::onn,
+            'zuum' => self::zuum,
+            'amazon', 'amazon.com, inc.' => self::amazon,
+            'alldocube' => self::alldocube,
+            'hotwav' => self::hotwav,
+            'fujitsu' => self::fujitsu,
+            'meizu', 'meizu technology co., ltd.' => self::meizu,
+            'casper' => self::casper,
+            'ulefone', 'ulefone technology co., ltd.' => self::ulefone,
+            'hmdglobal', 'hmd global', 'hmd-global', 'hmd global oy' => self::hmdGlobal,
+            'ltmobile', 'lt-mobile', 'lt mobile' => self::ltMobile,
+            'at&t', 'att', 'at-t' => self::att,
+            'nokia' => self::nokia,
+            'reeder' => self::reeder,
+            'fossibot', 'fossi-bot' => self::fossibot,
+            'sharp', 'sharp corporation' => self::sharp,
+            'cricket' => self::cricket,
+            'blu' => self::blu,
+            'globalsec', 'global-sec' => self::globalsec,
+            'kruegermatz', 'krüger&matz', 'kruger-matz' => self::kruegermatz,
+            'kyocera' => self::kyocera,
+            'acer' => self::acer,
+            'gigaset', 'gigaset communications gmbh' => self::gigaset,
+            'tcl', 'tcl communication ltd.' => self::tcl,
+            'none', 'n-one' => self::nOne,
+            'bq' => self::bq,
+            'logicom' => self::logicom,
+            'walton', 'walton hi-tech industries ltd.' => self::walton,
+            'htc' => self::htc,
+            'mhorse', 'm-horse' => self::mHorse,
+            'generalmobile', 'general-mobile', 'general mobile' => self::generalMobile,
+            'condor' => self::condor,
+            'fairphone' => self::fairphone,
+            'mobvoi' => self::mobvoi,
+            'iget' => self::iget,
+            'xgody' => self::xgody,
+            'allcall' => self::allcall,
+            'vgotel', 'vgo tel', 'vgo-tel' => self::vgoTel,
+            'lg' => self::lg,
+            'aligator' => self::aligator,
+            'retroidpocket', 'retroid pocket', 'retroid-pocket' => self::retroidPocket,
+            'xview', 'x-view' => self::xView,
+            'peaq' => self::peaq,
+            'lava' => self::lava,
+            'hafury' => self::hafury,
+            'coolpad' => self::coolpad,
+            'uhans' => self::uhans,
+            'toscido' => self::toscido,
+            'sky' => self::sky,
+            'wileyfox' => self::wileyfox,
+            'oysters' => self::oysters,
+            'blackberry', 'blackberry limited', 'black-berry' => self::blackberry,
+            'vertu' => self::vertu,
+            'ugoos' => self::ugoos,
+            'chuwi', 'chuwi inc' => self::chuwi,
+            'boostmobile', 'boost-mobile', 'boost mobile' => self::boostMobile,
+            'ace' => self::ace,
+            'gfive' => self::gfive,
+            'mediacom' => self::mediacom,
+            'adreamer' => self::adreamer,
+            'cat', 'catsound', 's4 handelsgruppe gmbh' => self::cat,
+            'micromax', 'micromax informatics ltd.' => self::micromax,
+            'symphony' => self::symphony,
+            'archos', 'archos s.a.' => self::archos,
+            'haier' => self::haier,
+            'nec' => self::nec,
+            'greenlion', 'green lion', 'green-lion' => self::greenLion,
+            'feonal' => self::feonal,
+            'thomson' => self::thomson,
+            'majestic' => self::majestic,
+            'honor' => self::honor,
+            'facetel' => self::facetel,
+            'hoozo' => self::hoozo,
+            'nuu', 'nuu-mobile', 'nuu mobile' => self::nuu,
+            'maxcom' => self::maxcom,
+            'mobicel' => self::mobicel,
+            'droidplayer', 'droid-player', 'droid player' => self::droidPlayer,
+            'hisense', 'hisense company ltd.' => self::hisense,
+            'allview', 'allview electronics sp. z o.o.' => self::allview,
+            'rhino' => self::rhino,
+            'freeyond', 'free-yond' => self::freeYond,
+            'memobile', 'me-mobile' => self::meMobile,
+            'xmobile', 'x-mobile' => self::xMobile,
+            'bmobile' => self::bmobile,
+            'sohostyle', 'soho style', 'soho-style' => self::sohoStyle,
+            'veidoo' => self::veidoo,
+            'crosscall', 'crosscall sas' => self::crosscall,
+            'mazespeed', 'maze speed', 'maze-speed' => self::mazeSpeed,
+            'mkopa', 'm-kopa' => self::mKopa,
+            'scolor', 's-color' => self::sColor,
+            'higrace', 'hi-grace' => self::hiGrace,
+            'myphone' => self::myphone,
+            'sigmamobile', 'sigma mobile', 'sigma-mobile' => self::sigmaMobile,
+            'goodtel' => self::goodtel,
+            'vontar' => self::vontar,
+            'pulid' => self::pulid,
+            'readboy' => self::readboy,
+            'techpad' => self::techpad,
+            'blaupunkt' => self::blaupunkt,
+            'landrover', 'land rover', 'land-rover' => self::landRover,
+            'doro', 'doro ab' => self::doro,
+            'iconbit' => self::iconbit,
+            'eplutus', 'richmond international (hong kong) electronic technology development co.,ltd' => self::eplutus,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -701,6 +1088,31 @@ enum Company: string implements CompanyInterface
             self::qwant => 'QWANT SAS',
             self::v7 => 'V7 Devices',
             self::volla => 'Volla Systeme GmbH',
+            self::oukitel => 'Shenzhen Yunji Intelligent Technology Co,.Ltd.',
+            self::blackview => 'Blackview International Group',
+            self::tecno => 'Tecno Mobile',
+            self::infinix => 'Infinix Inc.',
+            self::nothing => 'Nothing Technology Ltd',
+            self::itel => 'iTel Mobile',
+            self::amazon => 'Amazon.com, Inc.',
+            self::meizu => 'Meizu Technology Co., Ltd.',
+            self::ulefone => 'Ulefone Technology Co., Ltd.',
+            self::hmdGlobal => 'HMD Global Oy',
+            self::sharp => 'Sharp Corporation',
+            self::gigaset => 'Gigaset Communications GmbH',
+            self::tcl => 'TCL Communication Ltd.',
+            self::walton => 'Walton Hi-Tech Industries Ltd.',
+            self::blackberry => 'BlackBerry Limited',
+            self::chuwi => 'CHUWI Inc',
+            self::cat => 'S4 Handelsgruppe GmbH',
+            self::micromax => 'Micromax Informatics Ltd.',
+            self::archos => 'Archos S.A.',
+            self::nuu => 'NUU Mobile',
+            self::hisense => 'HiSense Company Ltd.',
+            self::allview => 'Allview Electronics SP. Z O.O.',
+            self::crosscall => 'CROSSCALL SAS',
+            self::doro => 'Doro AB',
+            self::eplutus => 'Richmond International (Hong Kong) Electronic Technology Development Co.,Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -737,7 +1149,6 @@ enum Company: string implements CompanyInterface
             self::fplus => 'f-plus',
             self::hotPepper => 'hot-pepper',
             self::eaglesoar => 'eagle-soar',
-            self::blowPlatinum => 'blow-platinum',
             self::visualLand => 'visual-land',
             self::headwolf => 'head-wolf',
             self::vision => 'vision-technology',
@@ -752,6 +1163,36 @@ enum Company: string implements CompanyInterface
             self::onyxBoox => 'onyx-boox',
             self::duduAuto => 'dudu-auto',
             self::mobiWire => 'mobi-wire',
+            self::nothing => 'nothing-phone',
+            self::tMobile => 't-mobile',
+            self::hmdGlobal => 'hmd-global',
+            self::ltMobile => 'lt-mobile',
+            self::att => 'at-t',
+            self::fossibot => 'fossi-bot',
+            self::globalsec => 'global-sec',
+            self::kruegermatz => 'kruger-matz',
+            self::nOne => 'n-one',
+            self::mHorse => 'm-horse',
+            self::generalMobile => 'general-mobile',
+            self::vgoTel => 'vgo-tel',
+            self::retroidPocket => 'retroid-pocket',
+            self::xView => 'x-view',
+            self::blackberry => 'black-berry',
+            self::boostMobile => 'boost-mobile',
+            self::cat => 'catsound',
+            self::greenLion => 'green-lion',
+            self::nuu => 'nuu-mobile',
+            self::droidPlayer => 'droid-player',
+            self::freeYond => 'free-yond',
+            self::meMobile => 'me-mobile',
+            self::xMobile => 'x-mobile',
+            self::sohoStyle => 'soho-style',
+            self::mazeSpeed => 'maze-speed',
+            self::mKopa => 'm-kopa',
+            self::sColor => 's-color',
+            self::hiGrace => 'hi-grace',
+            self::sigmaMobile => 'sigma-mobile',
+            self::landRover => 'land-rover',
             default => $this->name,
         };
     }

@@ -1246,7 +1246,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-G996B",
-      "marketingName": "Galaxy S21 Plus 5G (International)",
+      "marketingName": "Galaxy S21+ 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1381,7 +1381,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-G985F",
-      "marketingName": "Galaxy S20 Plus 4G",
+      "marketingName": "Galaxy S20+ 4G",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1516,7 +1516,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S916B",
-      "marketingName": "Galaxy S23 Plus (International)",
+      "marketingName": "Galaxy S23+ (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -3311,12 +3311,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F707U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.3.4292.78688"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F707U",
+      "marketingName": "Galaxy Z Flip 5G (USA)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2636,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "81.3.4292.78688",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.149",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-E156B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.113 Mobile Safari/537.36 OPR/82.2.4342.79505"
     },
     "device": {
       "architecture": null,
       "deviceName": "SM-E156B",
-      "marketingName": "Galaxy F15 (International)",
+      "marketingName": "Galaxy F15 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -3396,51 +3441,6 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.124",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; PACE A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S5830",
-      "marketingName": "Galaxy Ace",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "83.0.0.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "126.0.0.0",
       "manufacturer": "google"
     }
   },
@@ -3766,7 +3766,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S916B",
-      "marketingName": "Galaxy S23 Plus (International)",
+      "marketingName": "Galaxy S23+ (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -4232,7 +4232,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S906B",
-      "marketingName": "Galaxy S22 Plus 5G (International)",
+      "marketingName": "Galaxy S22+ 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
