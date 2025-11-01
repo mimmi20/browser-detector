@@ -2062,6 +2062,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'iconBIT',
                 'key' => 'iconbit',
             ],
+            [
+                'type' => 'Eplutus',
+                'name' => 'Richmond International (Hong Kong) Electronic Technology Development Co.,Ltd',
+                'brandname' => 'Eplutus',
+                'key' => 'eplutus',
+            ],
         ];
     }
 
@@ -2844,6 +2850,12 @@ final class CompanyTest extends TestCase
                 'name' => 'Doro AB',
                 'brandname' => 'Doro',
                 'key' => 'doro',
+            ],
+            [
+                'fallback' => 'Richmond International (Hong Kong) Electronic Technology Development Co.,Ltd',
+                'name' => 'Richmond International (Hong Kong) Electronic Technology Development Co.,Ltd',
+                'brandname' => 'Eplutus',
+                'key' => 'eplutus',
             ],
         ];
     }
