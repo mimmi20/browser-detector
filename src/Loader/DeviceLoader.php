@@ -91,7 +91,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             marketingName: $data->getMarketingName(),
             manufacturer: $manufacturer,
             brand: $brand,
-            type: Type::fromName($data->getType()),
+            type: $data->getType() ?? Type::Unknown,
             display: new Display(
                 width: $data->getDisplay()['width'],
                 height: $data->getDisplay()['height'],

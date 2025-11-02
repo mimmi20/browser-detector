@@ -377,6 +377,7 @@ final class Device implements DeviceInterface
             'cph2605' => 'oneplus=oneplus cph2605',
             'pkr110' => 'oneplus=oneplus pkr110',
             'pja110' => 'oneplus=oneplus pja110',
+            'oneplus 8t' => 'oneplus=oneplus 8t',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -878,6 +879,8 @@ final class Device implements DeviceInterface
             'xiaomi 13 lite' => 'xiaomi=xiaomi 13 lite',
             'xiaomi mix fold 3' => 'xiaomi=xiaomi mix fold 3',
             '21091116c' => 'xiaomi=xiaomi 21091116c',
+            '2109119bc' => 'xiaomi=xiaomi 2109119bc',
+            'shark par-a0' => 'xiaomi=xiaomi shark par-a0',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1784,6 +1787,8 @@ final class Device implements DeviceInterface
             'sm-a9000', 'samsung sm-a9000' => 'samsung=samsung sm-a9000',
             'sm-a900f', 'samsung sm-a900f' => 'samsung=samsung sm-a900f',
             'sm-m045f', 'samsung sm-m045f' => 'samsung=samsung sm-m045f',
+            'sm-s908j', 'samsung sm-s908j' => 'samsung=samsung sm-s908j',
+            'scg14' => 'samsung=samsung scg14',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2601,6 +2606,7 @@ final class Device implements DeviceInterface
             'motorola razr 40 ultra' => 'motorola=motorola razr 40 ultra',
             'motorola razr 40' => 'motorola=motorola razr 40',
             'motorola razr 2023' => 'motorola=motorola moto razr 2023',
+            'xt2201-2' => 'motorola=motorola xt2201-2',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -2960,6 +2966,15 @@ final class Device implements DeviceInterface
             'v2435' => 'vivo=vivo v2435',
             'v2435a' => 'vivo=vivo v2435a',
             'v2429a' => 'vivo=vivo v2429a',
+            'v2108' => 'vivo=vivo v2108',
+            'v2066' => 'vivo=vivo v2066',
+            'v2171a' => 'vivo=vivo v2171a',
+            'v2142' => 'vivo=vivo v2142',
+            'v2172a' => 'vivo=vivo v2172a',
+            'i2022' => 'vivo=vivo i2022',
+            'v2165a' => 'vivo=vivo v2165a',
+            'v2132' => 'vivo=vivo v2132',
+            'v2135' => 'vivo=vivo v2135',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',

@@ -366,9 +366,9 @@
     "device": {
       "architecture": null,
       "deviceName": "HEY-W09",
-      "marketingName": "Honor Pad 8 Wi-Fi",
+      "marketingName": "Pad 8 12.0\" Wi-Fi",
       "manufacturer": "huawei",
-      "brand": "huawei",
+      "brand": "honor",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
@@ -496,12 +496,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; BTKR-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BTKR-W09",
+      "marketingName": "MatePad 11.5\" Wi-Fi (2024)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2200,
+        "height": 1440,
+        "touch": true,
+        "size": 11.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "133.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "133.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; AGS5-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "AGS5-AL00",
-      "marketingName": "MatePad SE 10.4 2023",
+      "marketingName": "MatePad 10.4\" SE (2023)",
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,

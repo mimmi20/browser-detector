@@ -400,6 +400,7 @@ final class DeviceTest extends TestCase
             ['CPH2605', 'oneplus=oneplus cph2605'],
             ['PKR110', 'oneplus=oneplus pkr110'],
             ['PJA110', 'oneplus=oneplus pja110'],
+            ['OnePlus 8T', 'oneplus=oneplus 8t'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -904,6 +905,8 @@ final class DeviceTest extends TestCase
             ['Xiaomi 13 Lite', 'xiaomi=xiaomi 13 lite'],
             ['Xiaomi Mix Fold 3', 'xiaomi=xiaomi mix fold 3'],
             ['21091116C', 'xiaomi=xiaomi 21091116c'],
+            ['2109119BC', 'xiaomi=xiaomi 2109119bc'],
+            ['SHARK PAR-A0', 'xiaomi=xiaomi shark par-a0'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -2145,6 +2148,9 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A900F', 'samsung=samsung sm-a900f'],
             ['SM-M045F', 'samsung=samsung sm-m045f'],
             ['SAMSUNG SM-M045F', 'samsung=samsung sm-m045f'],
+            ['SCG14', 'samsung=samsung scg14'],
+            ['SM-S908J', 'samsung=samsung sm-s908j'],
+            ['SAMSUNG SM-S908J', 'samsung=samsung sm-s908j'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -2969,6 +2975,7 @@ final class DeviceTest extends TestCase
             ['motorola razr 40 ultra', 'motorola=motorola razr 40 ultra'],
             ['motorola razr 40', 'motorola=motorola razr 40'],
             ['motorola razr 2023', 'motorola=motorola moto razr 2023'],
+            ['XT2201-2', 'motorola=motorola xt2201-2'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -3330,6 +3337,15 @@ final class DeviceTest extends TestCase
             ['V2435', 'vivo=vivo v2435'],
             ['V2435A', 'vivo=vivo v2435a'],
             ['V2429A', 'vivo=vivo v2429a'],
+            ['V2108', 'vivo=vivo v2108'],
+            ['V2066', 'vivo=vivo v2066'],
+            ['V2171A', 'vivo=vivo v2171a'],
+            ['V2142', 'vivo=vivo v2142'],
+            ['V2172A', 'vivo=vivo v2172a'],
+            ['I2022', 'vivo=vivo i2022'],
+            ['V2165A', 'vivo=vivo v2165a'],
+            ['V2132', 'vivo=vivo v2132'],
+            ['V2135', 'vivo=vivo v2135'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],

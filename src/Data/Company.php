@@ -695,6 +695,32 @@ enum Company: string implements CompanyInterface
 
     case blackton = 'Blackton';
 
+    case lanix = 'Lanix';
+
+    case xtigi = 'X-Tigi';
+
+    case ruggear = 'RugGear';
+
+    case kinstone = 'Kinstone';
+
+    case sunmax = 'Sunmax';
+
+    case magic = 'Magic';
+
+    case energySistem = 'Energy Sistem';
+
+    case medion = 'Medion';
+
+    case alcatel = 'Alcatel';
+
+    case kemplerStrauss = 'Kempler & Strauss';
+
+    case toshiba = 'Toshiba';
+
+    case wortmann = 'Wortmann';
+
+    case imo = 'IMO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1041,6 +1067,19 @@ enum Company: string implements CompanyInterface
             'fmt' => self::fmt,
             'sebbe' => self::sebbe,
             'blackton' => self::blackton,
+            'lanix', 'lanix mobile' => self::lanix,
+            'xtigi', 'x-tigi' => self::xtigi,
+            'ruggear' => self::ruggear,
+            'kinstone' => self::kinstone,
+            'sunmax' => self::sunmax,
+            'magic' => self::magic,
+            'energysistem', 'energy sistem', 'energy-sistem' => self::energySistem,
+            'medion' => self::medion,
+            'alcatel' => self::alcatel,
+            'kemplerstrauss', 'kempler & strauss', 'kempler-strauss', 'kempler and strauss' => self::kemplerStrauss,
+            'toshiba' => self::toshiba,
+            'wortmann', 'wortmann ag' => self::wortmann,
+            'imo', 'verve connect limited' => self::imo,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1125,6 +1164,9 @@ enum Company: string implements CompanyInterface
             self::crosscall => 'CROSSCALL SAS',
             self::doro => 'Doro AB',
             self::eplutus => 'Richmond International (Hong Kong) Electronic Technology Development Co.,Ltd',
+            self::lanix => 'Lanix Mobile',
+            self::wortmann => 'Wortmann AG',
+            self::imo => 'Verve Connect Limited',
             self::unknown => null,
             default => $this->value,
         };
@@ -1206,6 +1248,9 @@ enum Company: string implements CompanyInterface
             self::sigmaMobile => 'sigma-mobile',
             self::landRover => 'land-rover',
             self::greatAsia => 'great-asia',
+            self::xtigi => 'x-tigi',
+            self::energySistem => 'energy-sistem',
+            self::kemplerStrauss => 'kempler-strauss',
             default => $this->name,
         };
     }

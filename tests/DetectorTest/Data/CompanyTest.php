@@ -2092,6 +2092,84 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Blackton',
                 'key' => 'blackton',
             ],
+            [
+                'type' => 'Lanix',
+                'name' => 'Lanix Mobile',
+                'brandname' => 'Lanix',
+                'key' => 'lanix',
+            ],
+            [
+                'type' => 'X-Tigi',
+                'name' => 'X-Tigi',
+                'brandname' => 'X-Tigi',
+                'key' => 'x-tigi',
+            ],
+            [
+                'type' => 'RugGear',
+                'name' => 'RugGear',
+                'brandname' => 'RugGear',
+                'key' => 'ruggear',
+            ],
+            [
+                'type' => 'Kinstone',
+                'name' => 'Kinstone',
+                'brandname' => 'Kinstone',
+                'key' => 'kinstone',
+            ],
+            [
+                'type' => 'Sunmax',
+                'name' => 'Sunmax',
+                'brandname' => 'Sunmax',
+                'key' => 'sunmax',
+            ],
+            [
+                'type' => 'Magic',
+                'name' => 'Magic',
+                'brandname' => 'Magic',
+                'key' => 'magic',
+            ],
+            [
+                'type' => 'Energy Sistem',
+                'name' => 'Energy Sistem',
+                'brandname' => 'Energy Sistem',
+                'key' => 'energy-sistem',
+            ],
+            [
+                'type' => 'Medion',
+                'name' => 'Medion',
+                'brandname' => 'Medion',
+                'key' => 'medion',
+            ],
+            [
+                'type' => 'Alcatel',
+                'name' => 'Alcatel',
+                'brandname' => 'Alcatel',
+                'key' => 'alcatel',
+            ],
+            [
+                'type' => 'Kempler & Strauss',
+                'name' => 'Kempler & Strauss',
+                'brandname' => 'Kempler & Strauss',
+                'key' => 'kempler-strauss',
+            ],
+            [
+                'type' => 'Toshiba',
+                'name' => 'Toshiba',
+                'brandname' => 'Toshiba',
+                'key' => 'toshiba',
+            ],
+            [
+                'type' => 'Wortmann',
+                'name' => 'Wortmann AG',
+                'brandname' => 'Wortmann',
+                'key' => 'wortmann',
+            ],
+            [
+                'type' => 'IMO',
+                'name' => 'Verve Connect Limited',
+                'brandname' => 'IMO',
+                'key' => 'imo',
+            ],
         ];
     }
 
@@ -2886,6 +2964,42 @@ final class CompanyTest extends TestCase
                 'name' => 'Great Asia',
                 'brandname' => 'Great Asia',
                 'key' => 'great-asia',
+            ],
+            [
+                'fallback' => 'Lanix Mobile',
+                'name' => 'Lanix Mobile',
+                'brandname' => 'Lanix',
+                'key' => 'lanix',
+            ],
+            [
+                'fallback' => 'energy-sistem',
+                'name' => 'Energy Sistem',
+                'brandname' => 'Energy Sistem',
+                'key' => 'energy-sistem',
+            ],
+            [
+                'fallback' => 'kempler-strauss',
+                'name' => 'Kempler & Strauss',
+                'brandname' => 'Kempler & Strauss',
+                'key' => 'kempler-strauss',
+            ],
+            [
+                'fallback' => 'Kempler and Strauss',
+                'name' => 'Kempler & Strauss',
+                'brandname' => 'Kempler & Strauss',
+                'key' => 'kempler-strauss',
+            ],
+            [
+                'fallback' => 'Wortmann AG',
+                'name' => 'Wortmann AG',
+                'brandname' => 'Wortmann',
+                'key' => 'wortmann',
+            ],
+            [
+                'fallback' => 'Verve Connect Limited',
+                'name' => 'Verve Connect Limited',
+                'brandname' => 'IMO',
+                'key' => 'imo',
             ],
         ];
     }
