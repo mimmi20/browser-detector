@@ -2068,6 +2068,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Eplutus',
                 'key' => 'eplutus',
             ],
+            [
+                'type' => 'Great Asia',
+                'name' => 'Great Asia',
+                'brandname' => 'Great Asia',
+                'key' => 'great-asia',
+            ],
+            [
+                'type' => 'FMT',
+                'name' => 'FMT',
+                'brandname' => 'FMT',
+                'key' => 'fmt',
+            ],
+            [
+                'type' => 'SEBBE',
+                'name' => 'SEBBE',
+                'brandname' => 'SEBBE',
+                'key' => 'sebbe',
+            ],
+            [
+                'type' => 'Blackton',
+                'name' => 'Blackton',
+                'brandname' => 'Blackton',
+                'key' => 'blackton',
+            ],
         ];
     }
 
@@ -2856,6 +2880,12 @@ final class CompanyTest extends TestCase
                 'name' => 'Richmond International (Hong Kong) Electronic Technology Development Co.,Ltd',
                 'brandname' => 'Eplutus',
                 'key' => 'eplutus',
+            ],
+            [
+                'fallback' => 'great-asia',
+                'name' => 'Great Asia',
+                'brandname' => 'Great Asia',
+                'key' => 'great-asia',
             ],
         ];
     }

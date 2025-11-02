@@ -577,7 +577,7 @@
   },
   "huawei wgr-w09": {
     "deviceName": "WGR-W09",
-    "marketingName": "MatePad Pro 12.6 Wi-Fi (2021)",
+    "marketingName": "MatePad Pro 12.6\" Wi-Fi (2021)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -593,7 +593,7 @@
   },
   "huawei wgr-w19": {
     "deviceName": "WGR-W19",
-    "marketingName": "MatePad Pro 12.6 Wi-Fi (2021)",
+    "marketingName": "MatePad Pro 12.6\" Wi-Fi (2021)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -961,7 +961,7 @@
   },
   "huawei ags5-w09": {
     "deviceName": "AGS5-W09",
-    "marketingName": "MatePad SE 10.4 2023 Wi-Fi",
+    "marketingName": "MatePad 10.4\" SE Wi-Fi (2023)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -977,7 +977,7 @@
   },
   "huawei ags5-w00": {
     "deviceName": "AGS5-W00",
-    "marketingName": "MatePad SE 10.4 2023 Wi-Fi",
+    "marketingName": "MatePad 10.4\" SE Wi-Fi (2023)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -993,7 +993,7 @@
   },
   "huawei ags5-al00": {
     "deviceName": "AGS5-AL00",
-    "marketingName": "MatePad SE 10.4 2023",
+    "marketingName": "MatePad 10.4\" SE (2023)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -1057,9 +1057,9 @@
   },
   "huawei hey-w09": {
     "deviceName": "HEY-W09",
-    "marketingName": "Honor Pad 8 Wi-Fi",
+    "marketingName": "Pad 8 12.0\" Wi-Fi",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 0,
     "display": {
@@ -1217,7 +1217,7 @@
   },
   "huawei wgrr-w19": {
     "deviceName": "WGRR-W19",
-    "marketingName": "MatePad Pro 12.6 (2022)",
+    "marketingName": "MatePad Pro 12.6\" Wi-Fi (2022)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -1233,7 +1233,7 @@
   },
   "huawei wgrr-w09": {
     "deviceName": "WGRR-W09",
-    "marketingName": "MatePad Pro 12.6 (2022)",
+    "marketingName": "MatePad Pro 12.6\" Wi-Fi (2022)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -1281,7 +1281,7 @@
   },
   "huawei web-w00": {
     "deviceName": "WEB-W00",
-    "marketingName": "MatePad Pro 13.2 (2025)",
+    "marketingName": "MatePad Pro 13.2\" Wi-Fi (2025)",
     "manufacturer": "huawei",
     "brand": "honor",
     "dualOrientation": true,
@@ -1297,7 +1297,7 @@
   },
   "huawei web-w09": {
     "deviceName": "WEB-W09",
-    "marketingName": "MatePad Pro 13.2 (2025)",
+    "marketingName": "MatePad Pro 13.2\" Wi-Fi (2025)",
     "manufacturer": "huawei",
     "brand": "honor",
     "dualOrientation": true,
@@ -1593,6 +1593,54 @@
     "display": {
       "width": 1920,
       "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei btkr-w09": {
+    "deviceName": "BTKR-W09",
+    "marketingName": "MatePad 11.5\" Wi-Fi (2024)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2200,
+      "height": 1440,
+      "touch": true,
+      "size": 11.5
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei bve-w10": {
+    "deviceName": "BVE-W10",
+    "marketingName": "Qinyun C5z 10.4\" Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei xyao-w00": {
+    "deviceName": "XYAO-W00",
+    "marketingName": "MatePad Pro 11 Wi-Fi (2024)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
       "touch": true,
       "size": 11
     },

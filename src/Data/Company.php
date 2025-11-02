@@ -687,6 +687,14 @@ enum Company: string implements CompanyInterface
 
     case eplutus = 'Eplutus';
 
+    case greatAsia = 'Great Asia';
+
+    case fmt = 'FMT';
+
+    case sebbe = 'SEBBE';
+
+    case blackton = 'Blackton';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1029,6 +1037,10 @@ enum Company: string implements CompanyInterface
             'doro', 'doro ab' => self::doro,
             'iconbit' => self::iconbit,
             'eplutus', 'richmond international (hong kong) electronic technology development co.,ltd' => self::eplutus,
+            'greatasia', 'great asia', 'great-asia' => self::greatAsia,
+            'fmt' => self::fmt,
+            'sebbe' => self::sebbe,
+            'blackton' => self::blackton,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1193,6 +1205,7 @@ enum Company: string implements CompanyInterface
             self::hiGrace => 'hi-grace',
             self::sigmaMobile => 'sigma-mobile',
             self::landRover => 'land-rover',
+            self::greatAsia => 'great-asia',
             default => $this->name,
         };
     }

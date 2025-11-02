@@ -1,7 +1,23 @@
 {
-  "yestel t5": {
-    "deviceName": "T5",
+  "yestel t5_eea": {
+    "deviceName": "T5_EEA",
     "marketingName": "T5",
+    "manufacturer": "yestel",
+    "brand": "yestel",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "yestel t13_eea": {
+    "deviceName": "T13_EEA",
+    "marketingName": "T13",
     "manufacturer": "yestel",
     "brand": "yestel",
     "dualOrientation": true,
