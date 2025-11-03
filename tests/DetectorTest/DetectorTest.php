@@ -632,7 +632,7 @@ final class DetectorTest extends TestCase
                         'manufacturer' => 'unknown',
                         'brand' => 'unknown',
                         'dualOrientation' => null,
-                        'simCount' => 0,
+                        'simCount' => null,
                         'display' => [
                             'width' => null,
                             'height' => null,
@@ -958,7 +958,7 @@ final class DetectorTest extends TestCase
                         'display' => [
                             'width' => null,
                             'height' => null,
-                            'touch' => true,
+                            'touch' => false,
                             'size' => null,
                         ],
                         'type' => 'mobile-device',

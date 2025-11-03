@@ -94,6 +94,9 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             $simCount = 1;
         }
 
+        $displayData          = $data->getDisplay();
+        $displayData['touch'] = $deviceType->hasTouch();
+
         return new Device(
             architecture: $data->getArchitecture(),
             deviceName: $data->getDeviceName(),
@@ -102,10 +105,10 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             brand: $brand,
             type: $deviceType,
             display: new Display(
-                width: $data->getDisplay()['width'],
-                height: $data->getDisplay()['height'],
-                touch: $data->getDisplay()['touch'],
-                size: $data->getDisplay()['size'],
+                width: $displayData['width'],
+                height: $displayData['height'],
+                touch: $displayData['touch'],
+                size: $displayData['size'],
             ),
             dualOrientation: $data->getDualOrientation(),
             simCount: $simCount,

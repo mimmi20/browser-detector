@@ -1789,6 +1789,9 @@ final class Device implements DeviceInterface
             'sm-m045f', 'samsung sm-m045f' => 'samsung=samsung sm-m045f',
             'sm-s908j', 'samsung sm-s908j' => 'samsung=samsung sm-s908j',
             'scg14' => 'samsung=samsung scg14',
+            'sm-a826s', 'samsung sm-a826s' => 'samsung=samsung sm-a826s',
+            'sc-51c' => 'samsung=samsung sc-51c',
+            'scg13' => 'samsung=samsung scg13',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2981,6 +2984,18 @@ final class Device implements DeviceInterface
             'v2165a' => 'vivo=vivo v2165a',
             'v2132' => 'vivo=vivo v2132',
             'v2135' => 'vivo=vivo v2135',
+            'i2019' => 'vivo=vivo i2019',
+            'v2134' => 'vivo=vivo v2134',
+            'v2126' => 'vivo=vivo v2126',
+            'v2044' => 'vivo=vivo v2044',
+            'i2203' => 'vivo=vivo i2203',
+            'i2127' => 'vivo=vivo i2127',
+            'v2146' => 'vivo=vivo v2146',
+            'v2059' => 'vivo=vivo v2059',
+            'v2212' => 'vivo=vivo v2212',
+            'v2168' => 'vivo=vivo v2168',
+            'v2153' => 'vivo=vivo v2153',
+            'v2151' => 'vivo=vivo v2151',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -3871,6 +3886,7 @@ final class Device implements DeviceInterface
             'e7110' => 'kyocera=kyocera e7110',
             'e7200' => 'kyocera=kyocera e7200',
             'kyg03' => 'kyocera=kyocera kyg03',
+            's9-kc' => 'kyocera=kyocera s9-kc',
             // iq-t
             'iq&amp;t n8', 'iq&t n8' => 'iq-t=iq-t n8',
             // packard-bell
