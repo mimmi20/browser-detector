@@ -721,6 +721,16 @@ enum Company: string implements CompanyInterface
 
     case imo = 'IMO';
 
+    case chinaTelecom = 'China Telecom';
+
+    case rephone = 'rephone';
+
+    case magenta = 'Magenta';
+
+    case redline = 'RedLine';
+
+    case skyworth = 'SkyWorth';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1080,6 +1090,11 @@ enum Company: string implements CompanyInterface
             'toshiba' => self::toshiba,
             'wortmann', 'wortmann ag' => self::wortmann,
             'imo', 'verve connect limited' => self::imo,
+            'chinatelecom', 'china telecom', 'china-telecom' => self::chinaTelecom,
+            'rephone' => self::rephone,
+            'magenta' => self::magenta,
+            'redline' => self::redline,
+            'skyworth', 'sky-worth' => self::skyworth,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1251,6 +1266,8 @@ enum Company: string implements CompanyInterface
             self::xtigi => 'x-tigi',
             self::energySistem => 'energy-sistem',
             self::kemplerStrauss => 'kempler-strauss',
+            self::chinaTelecom => 'china-telecom',
+            self::skyworth => 'sky-worth',
             default => $this->name,
         };
     }

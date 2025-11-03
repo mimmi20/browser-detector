@@ -85,13 +85,22 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             }
         }
 
+        $deviceType = $data->getType() ?? Type::Unknown;
+        $simCount   = $data->getSimCount();
+
+        if (!$deviceType->isPhone()) {
+            $simCount = 0;
+        } elseif ($simCount === null) {
+            $simCount = 1;
+        }
+
         return new Device(
             architecture: $data->getArchitecture(),
             deviceName: $data->getDeviceName(),
             marketingName: $data->getMarketingName(),
             manufacturer: $manufacturer,
             brand: $brand,
-            type: $data->getType() ?? Type::Unknown,
+            type: $deviceType,
             display: new Display(
                 width: $data->getDisplay()['width'],
                 height: $data->getDisplay()['height'],
@@ -99,7 +108,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
                 size: $data->getDisplay()['size'],
             ),
             dualOrientation: $data->getDualOrientation(),
-            simCount: $data->getSimCount(),
+            simCount: $simCount,
             bits: $data->getBits(),
         );
     }

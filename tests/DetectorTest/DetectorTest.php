@@ -270,7 +270,7 @@ final class DetectorTest extends TestCase
                         'manufacturer' => 'unknown',
                         'brand' => 'unknown',
                         'dualOrientation' => null,
-                        'simCount' => null,
+                        'simCount' => 0,
                         'display' => [
                             'width' => null,
                             'height' => null,
@@ -326,7 +326,7 @@ final class DetectorTest extends TestCase
                         'manufacturer' => 'unknown',
                         'brand' => 'unknown',
                         'dualOrientation' => null,
-                        'simCount' => null,
+                        'simCount' => 0,
                         'display' => [
                             'width' => null,
                             'height' => null,
@@ -382,7 +382,7 @@ final class DetectorTest extends TestCase
                         'manufacturer' => 'unknown',
                         'brand' => 'unknown',
                         'dualOrientation' => null,
-                        'simCount' => null,
+                        'simCount' => 0,
                         'display' => [
                             'width' => null,
                             'height' => null,
@@ -438,7 +438,7 @@ final class DetectorTest extends TestCase
                         'manufacturer' => 'unknown',
                         'brand' => 'unknown',
                         'dualOrientation' => null,
-                        'simCount' => null,
+                        'simCount' => 0,
                         'display' => [
                             'width' => null,
                             'height' => null,
@@ -494,7 +494,7 @@ final class DetectorTest extends TestCase
                         'manufacturer' => 'unknown',
                         'brand' => 'unknown',
                         'dualOrientation' => null,
-                        'simCount' => null,
+                        'simCount' => 0,
                         'display' => [
                             'width' => null,
                             'height' => null,
@@ -632,7 +632,7 @@ final class DetectorTest extends TestCase
                         'manufacturer' => 'unknown',
                         'brand' => 'unknown',
                         'dualOrientation' => null,
-                        'simCount' => null,
+                        'simCount' => 0,
                         'display' => [
                             'width' => null,
                             'height' => null,
@@ -954,7 +954,7 @@ final class DetectorTest extends TestCase
                         'manufacturer' => 'samsung',
                         'brand' => 'samsung',
                         'dualOrientation' => null,
-                        'simCount' => null,
+                        'simCount' => 0,
                         'display' => [
                             'width' => null,
                             'height' => null,

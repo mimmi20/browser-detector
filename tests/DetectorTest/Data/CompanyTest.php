@@ -2170,6 +2170,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'IMO',
                 'key' => 'imo',
             ],
+            [
+                'type' => 'China Telecom',
+                'name' => 'China Telecom',
+                'brandname' => 'China Telecom',
+                'key' => 'china-telecom',
+            ],
+            [
+                'type' => 'rephone',
+                'name' => 'rephone',
+                'brandname' => 'rephone',
+                'key' => 'rephone',
+            ],
+            [
+                'type' => 'Magenta',
+                'name' => 'Magenta',
+                'brandname' => 'Magenta',
+                'key' => 'magenta',
+            ],
+            [
+                'type' => 'RedLine',
+                'name' => 'RedLine',
+                'brandname' => 'RedLine',
+                'key' => 'redline',
+            ],
+            [
+                'type' => 'SkyWorth',
+                'name' => 'SkyWorth',
+                'brandname' => 'SkyWorth',
+                'key' => 'sky-worth',
+            ],
         ];
     }
 
@@ -3000,6 +3030,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Verve Connect Limited',
                 'brandname' => 'IMO',
                 'key' => 'imo',
+            ],
+            [
+                'fallback' => 'china-telecom',
+                'name' => 'China Telecom',
+                'brandname' => 'China Telecom',
+                'key' => 'china-telecom',
+            ],
+            [
+                'fallback' => 'sky-worth',
+                'name' => 'SkyWorth',
+                'brandname' => 'SkyWorth',
+                'key' => 'sky-worth',
             ],
         ];
     }

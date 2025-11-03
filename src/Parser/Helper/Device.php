@@ -2212,6 +2212,12 @@ final class Device implements DeviceInterface
             'cls-al30' => 'huawei=huawei cls-al30',
             'cls-al00' => 'huawei=huawei cls-al00',
             'xyao-w00' => 'huawei=huawei xyao-w00',
+            'pla-al10' => 'huawei=huawei pla-al10',
+            'plr-l29' => 'huawei=huawei plr-l29',
+            'plr-al50' => 'huawei=huawei plr-al50',
+            'plr-al00' => 'huawei=huawei plr-al00',
+            'hbp-lx9' => 'huawei=huawei hbp-lx9',
+            'hbp-al00' => 'huawei=huawei hbp-al00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -4575,6 +4581,7 @@ final class Device implements DeviceInterface
             // yestel
             't5_eea', 't5-eea' => 'yestel=yestel t5_eea',
             't13_eea' => 'yestel=yestel t13_eea',
+            'x2_eea' => 'yestel=yestel x2_eea',
             // omix
             // do not add omix x600, this conflicts with leeco x600
             'x4' => 'omix=omix x4',
@@ -5002,6 +5009,7 @@ final class Device implements DeviceInterface
             'm10_r02' => 'pritom=pritom m10 r02',
             'm10_r04' => 'pritom=pritom m10 r04',
             'm10_c01_eea' => 'pritom=pritom m10 c01 eea',
+            'touch 7' => 'pritom=pritom touch 7',
             // pixus
             'pixus_deon' => 'pixus=pixus deon',
             'pixus_line' => 'pixus=pixus line',
@@ -5225,6 +5233,7 @@ final class Device implements DeviceInterface
             'alfa_10bt_v2' => 'hometech=hometech alfa 10bt v2',
             'alfa 11 bt' => 'hometech=hometech alfa 11 bt',
             '7_premium_pro' => 'hometech=hometech 7 premium pro',
+            'alfa10tx_pro' => 'hometech=hometech alfa 10tx pro',
             // newal
             'newal_tv_uhd-5042' => 'newal=newal uhd-5042',
             // sber
@@ -5281,6 +5290,7 @@ final class Device implements DeviceInterface
             'rgcube' => 'anbernic=anbernic rg cube',
             'rg406v' => 'anbernic=anbernic rg406v',
             'rg556' => 'anbernic=anbernic rg556',
+            'rg405m' => 'anbernic=anbernic rg405m',
             // fontel
             'ft800' => 'fontel=fontel ft800',
             'ft1000' => 'fontel=fontel ft1000',
@@ -5410,6 +5420,17 @@ final class Device implements DeviceInterface
             's22_eea' => 'sebbe=sebbe s22_eea',
             // blackton
             'bt_32fs36b' => 'blackton=blackton bt_32fs36b',
+            // china-telecom
+            'tyh641m' => 'china-telecom=china-telecom tyh641m',
+            // rephone
+            '2000_000170_00' => 'rephone=rephone 2000_000170_00',
+            // magenta
+            'magentatv one (2. generation)', 'magentatv one (2. generation' => 'magenta=magenta tv one (2nd gen)',
+            'magentatv box' => 'magenta=magenta tv box',
+            // redline
+            'ip-80 max' => 'redline=redline ip-80 max',
+            // sky-worth
+            'vgk02' => 'sky-worth=sky-worth vgk02',
             // other
             default => null,
         };

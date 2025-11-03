@@ -2577,6 +2577,12 @@ final class DeviceTest extends TestCase
             ['CLS-AL30', 'huawei=huawei cls-al30'],
             ['CLS-AL00', 'huawei=huawei cls-al00'],
             ['XYAO-W00', 'huawei=huawei xyao-w00'],
+            ['PLA-AL10', 'huawei=huawei pla-al10'],
+            ['PLR-L29', 'huawei=huawei plr-l29'],
+            ['PLR-AL50', 'huawei=huawei plr-al50'],
+            ['PLR-AL00', 'huawei=huawei plr-al00'],
+            ['HBP-LX9', 'huawei=huawei hbp-lx9'],
+            ['HBP-AL00', 'huawei=huawei hbp-al00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -5033,6 +5039,7 @@ final class DeviceTest extends TestCase
             ['T5_EEA', 'yestel=yestel t5_eea'],
             ['T5-EEA', 'yestel=yestel t5_eea'],
             ['T13_EEA', 'yestel=yestel t13_eea'],
+            ['X2_EEA', 'yestel=yestel x2_eea'],
             // omix
             ['X4', 'omix=omix x4'],
             ['X600 NFC', 'omix=omix x600 nfc'],
@@ -5535,6 +5542,7 @@ final class DeviceTest extends TestCase
             ['M10_R02', 'pritom=pritom m10 r02'],
             ['M10_R04', 'pritom=pritom m10 r04'],
             ['M10_C01_EEA', 'pritom=pritom m10 c01 eea'],
+            ['TOUCH 7', 'pritom=pritom touch 7'],
             // pixus
             ['Pixus_Deon', 'pixus=pixus deon'],
             ['Pixus_Line', 'pixus=pixus line'],
@@ -5758,6 +5766,7 @@ final class DeviceTest extends TestCase
             ['ALFA_10BT_V2', 'hometech=hometech alfa 10bt v2'],
             ['Alfa 11 BT', 'hometech=hometech alfa 11 bt'],
             ['7_PREMIUM_PRO', 'hometech=hometech 7 premium pro'],
+            ['ALFA10TX_PRO', 'hometech=hometech alfa 10tx pro'],
             // newal
             ['NEWAL_TV_UHD-5042', 'newal=newal uhd-5042'],
             // sber
@@ -5816,6 +5825,7 @@ final class DeviceTest extends TestCase
             ['RGCUBE', 'anbernic=anbernic rg cube'],
             ['RG406V', 'anbernic=anbernic rg406v'],
             ['RG556', 'anbernic=anbernic rg556'],
+            ['RG405M', 'anbernic=anbernic rg405m'],
             // fontel
             ['FT800', 'fontel=fontel ft800'],
             ['FT1000', 'fontel=fontel ft1000'],
@@ -5947,6 +5957,18 @@ final class DeviceTest extends TestCase
             ['S22_EEA', 'sebbe=sebbe s22_eea'],
             // blackton
             ['Bt_32FS36B', 'blackton=blackton bt_32fs36b'],
+            // china-telecom
+            ['TYH641M', 'china-telecom=china-telecom tyh641m'],
+            // rephone
+            ['2000_000170_00', 'rephone=rephone 2000_000170_00'],
+            // magenta
+            ['MagentaTV One (2. Generation)', 'magenta=magenta tv one (2nd gen)'],
+            ['MagentaTV One (2. Generation', 'magenta=magenta tv one (2nd gen)'],
+            ['MagentaTV Box', 'magenta=magenta tv box'],
+            // redline
+            ['IP-80 MAX', 'redline=redline ip-80 max'],
+            // sky-worth
+            ['VGK02', 'sky-worth=sky-worth vgk02'],
             // other
             ['Model"', null],
             [': "', null],
