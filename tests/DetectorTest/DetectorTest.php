@@ -1138,6 +1138,56 @@ final class DetectorTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'user-agent' => 'com.amazon.sics/3.0.200230.0 (KFSUWI; Android 22; Amazon)',
+                ],
+                [
+                    'headers' => [
+                        'user-agent' => 'com.amazon.sics/3.0.200230.0 (KFSUWI; Android 22; Amazon)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'KFSUWI',
+                        'marketingName' => 'Fire HD 10 (2017)',
+                        'manufacturer' => 'amazon',
+                        'brand' => 'amazon',
+                        'dualOrientation' => true,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => 1920,
+                            'height' => 1200,
+                            'touch' => true,
+                            'size' => 9.4,
+                        ],
+                        'type' => 'tablet',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Fire OS',
+                        'marketingName' => 'Fire OS',
+                        'version' => '8.0.0',
+                        'manufacturer' => 'amazon',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Android Webkit',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                    ],
+                ],
+            ],
         ];
     }
 }

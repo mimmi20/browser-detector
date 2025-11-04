@@ -491,6 +491,7 @@ final readonly class Detector implements DetectorInterface
 
         $platformVersion = match ($platformCodename) {
             'lineageos' => $this->getVersionForLineageOs($filteredHeaders),
+            'fire-os' => $this->getVersionForFireOs($filteredHeaders),
             default => $this->getVersionForGeneric(
                 $filteredHeaders,
                 $platformCodename,
@@ -598,6 +599,28 @@ final readonly class Detector implements DetectorInterface
             $lineageOsVersion = new LineageOs(new VersionBuilder());
 
             return $lineageOsVersion->getVersion($androidVersion ?? '');
+        } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
+            // do nothing
+        }
+
+        return new NullVersion();
+    }
+
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getVersionForFireOs(array $filteredHeaders): VersionInterface
+    {
+        try {
+            $androidVersion = $this->getPlatformVersion($filteredHeaders, 'android')->getVersion(
+                VersionInterface::IGNORE_MINOR_IF_EMPTY,
+            );
+
+            $fireOsVersion = new \BrowserDetector\Version\FireOs(new VersionBuilder());
+
+            return $fireOsVersion->getVersion($androidVersion ?? '');
         } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
             // do nothing
         }
