@@ -19,6 +19,7 @@ use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Version\FireOs;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\LineageOs;
 use BrowserDetector\Version\NullVersion;
@@ -618,7 +619,7 @@ final readonly class Detector implements DetectorInterface
                 VersionInterface::IGNORE_MINOR_IF_EMPTY,
             );
 
-            $fireOsVersion = new \BrowserDetector\Version\FireOs(new VersionBuilder());
+            $fireOsVersion = new FireOs(new VersionBuilder());
 
             return $fireOsVersion->getVersion($androidVersion ?? '');
         } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {

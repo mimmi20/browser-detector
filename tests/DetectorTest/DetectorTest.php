@@ -1089,13 +1089,9 @@ final class DetectorTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'imoAndroid/2020.03.2011; 10; REL; SM-G973F; samsung; play; phone; arm64-v8a'],
                 [
-                    'user-agent' => 'imoAndroid/2020.03.2011; 10; REL; SM-G973F; samsung; play; phone; arm64-v8a',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'imoAndroid/2020.03.2011; 10; REL; SM-G973F; samsung; play; phone; arm64-v8a',
-                    ],
+                    'headers' => ['user-agent' => 'imoAndroid/2020.03.2011; 10; REL; SM-G973F; samsung; play; phone; arm64-v8a'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'SM-G973F',
@@ -1139,13 +1135,9 @@ final class DetectorTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'com.amazon.sics/3.0.200230.0 (KFSUWI; Android 22; Amazon)'],
                 [
-                    'user-agent' => 'com.amazon.sics/3.0.200230.0 (KFSUWI; Android 22; Amazon)',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'com.amazon.sics/3.0.200230.0 (KFSUWI; Android 22; Amazon)',
-                    ],
+                    'headers' => ['user-agent' => 'com.amazon.sics/3.0.200230.0 (KFSUWI; Android 22; Amazon)'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'KFSUWI',
