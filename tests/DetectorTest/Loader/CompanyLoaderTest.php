@@ -176,6 +176,10 @@ final class CompanyLoaderTest extends TestCase
 
         $result = $object->load($companyKey);
 
+        $prop = new ReflectionProperty($initData, 'initialized');
+
+        self::assertTrue($prop->getValue($initData));
+
         self::assertSame(
             $companyName,
             $result->getName(),

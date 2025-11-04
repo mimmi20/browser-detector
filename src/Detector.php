@@ -20,6 +20,7 @@ use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\LineageOs;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionInterface;
@@ -594,38 +595,9 @@ final readonly class Detector implements DetectorInterface
                 VersionInterface::IGNORE_MINOR_IF_EMPTY,
             );
 
-            /**
-             * Lineage OS version mapping
-             *
-             * @var array<string, string> $lineageOsVersionMapping
-             */
-            $lineageOsVersionMapping = [
-                '16' => '23',
-                '15' => '22',
-                '14' => '21',
-                '13' => '20',
-                '12.1' => '19.1',
-                '12' => '19',
-                '11' => '18',
-                '10' => '17',
-                '9' => '16',
-                '8.1' => '15.1',
-                '8' => '15',
-                '7.1.2' => '14.1',
-                '7.1.1' => '14.1',
-                '7' => '14',
-                '6.0.1' => '13',
-                '6' => '13',
-                '5.1.1' => '12.1',
-                '5.0.2' => '12',
-                '5' => '12',
-                '4.4.4' => '11',
-                '4.3' => '10.2',
-                '4.2.2' => '10.1',
-                '4.0.4' => '9.1',
-            ];
+            $lineageOsVersion = new LineageOs(new VersionBuilder());
 
-            return (new VersionBuilder())->set($lineageOsVersionMapping[$androidVersion] ?? '');
+            return $lineageOsVersion->getVersion($androidVersion ?? '');
         } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
             // do nothing
         }
