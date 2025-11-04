@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Parser\Header\SecChUaPlatformVersion;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
@@ -158,5 +159,26 @@ final class SecChUaPlatformVersionTest extends TestCase
             ['"0.1"', 'Windows', true, '7.0.0'],
             ['""', null, false, null],
         ];
+    }
+
+    /** @throws ExpectationFailedException */
+    public function testHeaderWithDerivate(): void
+    {
+        $header = new PlatformVersionOnlyHeader(
+            value: '"9; HarmonyOS"',
+            platformVersion: new SecChUaPlatformVersion(),
+        );
+
+        try {
+            $header->getPlatformVersion('Android');
+
+            self::fail('Exception expected');
+        } catch (VersionContainsDerivateException $e) {
+            self::assertSame('', $e->getMessage());
+            self::assertSame(0, $e->getCode());
+            self::assertNull($e->getPrevious());
+
+            self::assertSame('HarmonyOS', $e->getDerivate());
+        }
     }
 }

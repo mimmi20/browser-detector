@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace Parser\Helper;
+namespace BrowserDetectorTest\Parser\Helper;
 
 use BrowserDetector\Parser\Helper\Device;
 use PHPUnit\Framework\Attributes\CoversClass;

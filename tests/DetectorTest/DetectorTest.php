@@ -1088,6 +1088,56 @@ final class DetectorTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'user-agent' => 'imoAndroid/2020.03.2011; 10; REL; SM-G973F; samsung; play; phone; arm64-v8a',
+                ],
+                [
+                    'headers' => [
+                        'user-agent' => 'imoAndroid/2020.03.2011; 10; REL; SM-G973F; samsung; play; phone; arm64-v8a',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-G973F',
+                        'marketingName' => 'Galaxy S10 (Global)',
+                        'manufacturer' => 'samsung',
+                        'brand' => 'samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 3040,
+                            'height' => 1440,
+                            'touch' => true,
+                            'size' => 6.1,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => null,
+                        'marketingName' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Android Webkit',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                    ],
+                ],
+            ],
         ];
     }
 }

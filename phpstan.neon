@@ -132,6 +132,10 @@ parameters:
       identifier: throws.unusedType
       paths:
         - src/Detector.php
+    -
+      identifier: catch.neverThrown
+      paths:
+        - tests\DetectorTest\Parser\Header\SecChUaPlatformVersionTest.php
 
 rules:
   # code complexity

@@ -29,7 +29,7 @@
     "/kukui/i": "chromeos",
     "/MIUI/": "android",
     "/kaios/i": "kaios",
-    "/yunos|baidu yi|andr[0o]id|aosp|harmonyos|silk|juc ?\\(linux;|adr |gingerbread|ucweb\\/2\\.0 \\(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e|puffin\\/[\\d\\.]+a[tp]/i": "android",
+    "/yunos|baidu yi|(?<!o)andr[0o]id|aosp|harmonyos|silk|juc ?\\(linux;|adr |gingerbread|ucweb\\/2\\.0 \\(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e|puffin\\/[\\d\\.]+a[tp]/i": "android",
     "/mobilesafari\\/.*cfnetwork/i": "ios",
     "/safari\\/.*cfnetwork/i": "mac",
     "/(?<!FBSN\\/|\\()darwin|cfnetwork/i": "darwin",

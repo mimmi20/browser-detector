@@ -203,6 +203,10 @@ final class AndroidOsTest extends TestCase
                 'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 4)',
                 '0.0.0',
             ],
+            [
+                'imoAndroid/2020.03.2011; 10; REL; SM-G973F; samsung; play; phone; arm64-v8a',
+                null,
+            ],
         ];
     }
 
