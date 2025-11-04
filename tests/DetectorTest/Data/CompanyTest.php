@@ -2200,6 +2200,96 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SkyWorth',
                 'key' => 'sky-worth',
             ],
+            [
+                'type' => 'Tesla',
+                'name' => 'Tesla',
+                'brandname' => 'Tesla',
+                'key' => 'tesla',
+            ],
+            [
+                'type' => 'iNew',
+                'name' => 'iNew',
+                'brandname' => 'iNew',
+                'key' => 'inew',
+            ],
+            [
+                'type' => 'GOCLEVER',
+                'name' => 'GOCLEVER',
+                'brandname' => 'GOCLEVER',
+                'key' => 'goclever',
+            ],
+            [
+                'type' => 'Irbis',
+                'name' => 'Irbis',
+                'brandname' => 'Irbis',
+                'key' => 'irbis',
+            ],
+            [
+                'type' => 'INSYS',
+                'name' => 'INSYS',
+                'brandname' => 'INSYS',
+                'key' => 'insys',
+            ],
+            [
+                'type' => 'SPC',
+                'name' => 'SPC',
+                'brandname' => 'SPC',
+                'key' => 'spc',
+            ],
+            [
+                'type' => 'LYF',
+                'name' => 'LYF',
+                'brandname' => 'LYF',
+                'key' => 'lyf',
+            ],
+            [
+                'type' => 'Jio',
+                'name' => 'Jio',
+                'brandname' => 'Jio',
+                'key' => 'jio',
+            ],
+            [
+                'type' => 'Dgtec',
+                'name' => 'Dgtec',
+                'brandname' => 'Dgtec',
+                'key' => 'dgtec',
+            ],
+            [
+                'type' => 'Konrow',
+                'name' => 'Konrow',
+                'brandname' => 'Konrow',
+                'key' => 'konrow',
+            ],
+            [
+                'type' => 'ACME',
+                'name' => 'ACME Grupe',
+                'brandname' => 'ACME',
+                'key' => 'acme',
+            ],
+            [
+                'type' => 'NTT System',
+                'name' => 'NTT System',
+                'brandname' => 'NTT System',
+                'key' => 'ntt-system',
+            ],
+            [
+                'type' => 'PCD',
+                'name' => 'PCD',
+                'brandname' => 'PCD',
+                'key' => 'pcd',
+            ],
+            [
+                'type' => 'Philips',
+                'name' => 'Philips',
+                'brandname' => 'Philips',
+                'key' => 'philips',
+            ],
+            [
+                'type' => 'Conquest',
+                'name' => 'Conquest',
+                'brandname' => 'Conquest',
+                'key' => 'conquest',
+            ],
         ];
     }
 
@@ -3042,6 +3132,18 @@ final class CompanyTest extends TestCase
                 'name' => 'SkyWorth',
                 'brandname' => 'SkyWorth',
                 'key' => 'sky-worth',
+            ],
+            [
+                'fallback' => 'ACME Grupe',
+                'name' => 'ACME Grupe',
+                'brandname' => 'ACME',
+                'key' => 'acme',
+            ],
+            [
+                'fallback' => 'ntt-system',
+                'name' => 'NTT System',
+                'brandname' => 'NTT System',
+                'key' => 'ntt-system',
             ],
         ];
     }

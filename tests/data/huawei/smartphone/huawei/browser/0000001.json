@@ -2026,12 +2026,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HBP-LX9; HMSCore 6.15.0.302; GMSCore 0.3.6.244735) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/15.0.4.312 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HBP-LX9",
+      "marketingName": "Pura 70 Ultra",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2844,
+        "height": 1260,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "15.0.4.312",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; CTR-L91; HMSCore 6.15.0.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.2.313 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "CTR-L91",
-      "marketingName": "nova 13i",
+      "marketingName": "Nova 13i",
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
@@ -2078,7 +2123,7 @@
       "deviceName": "ICL-LX9",
       "marketingName": "Mate X6",
       "manufacturer": "huawei",
-      "brand": "honor",
+      "brand": "huawei",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2121,9 +2166,9 @@
     "device": {
       "architecture": null,
       "deviceName": "GFY-LX1",
-      "marketingName": "Nova Y63",
+      "marketingName": "Nova Y72S",
       "manufacturer": "huawei",
-      "brand": "honor",
+      "brand": "huawei",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2166,7 +2211,7 @@
     "device": {
       "architecture": null,
       "deviceName": "BNE-LX1",
-      "marketingName": "nova 10 SE 4G",
+      "marketingName": "Nova 10 SE 4G",
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,

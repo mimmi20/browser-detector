@@ -1590,5 +1590,32 @@
         "Lindows"
       ]
     }
+  },
+  "wear-os": {
+    "name": "Wear OS",
+    "marketingName": "Wear OS",
+    "manufacturer": "google",
+    "version": {
+      "factory": null,
+      "search": null
+    }
+  },
+  "android-tv": {
+    "name": "Android TV",
+    "marketingName": "Android TV",
+    "manufacturer": "google",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\AndroidOsFactory",
+      "search": null
+    }
+  },
+  "lineageos": {
+    "name": "LineageOS",
+    "marketingName": "LineageOS",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": null,
+      "search": null
+    }
   }
 }

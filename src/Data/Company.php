@@ -731,6 +731,36 @@ enum Company: string implements CompanyInterface
 
     case skyworth = 'SkyWorth';
 
+    case tesla = 'Tesla';
+
+    case inew = 'iNew';
+
+    case goclever = 'GOCLEVER';
+
+    case irbis = 'Irbis';
+
+    case insys = 'INSYS';
+
+    case spc = 'SPC';
+
+    case lyf = 'LYF';
+
+    case jio = 'Jio';
+
+    case dgtec = 'Dgtec';
+
+    case konrow = 'Konrow';
+
+    case acme = 'ACME';
+
+    case nttSystem = 'NTT System';
+
+    case pcd = 'PCD';
+
+    case philips = 'Philips';
+
+    case conquest = 'Conquest';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1095,6 +1125,21 @@ enum Company: string implements CompanyInterface
             'magenta' => self::magenta,
             'redline' => self::redline,
             'skyworth', 'sky-worth' => self::skyworth,
+            'tesla' => self::tesla,
+            'inew' => self::inew,
+            'goclever' => self::goclever,
+            'irbis' => self::irbis,
+            'insys' => self::insys,
+            'spc' => self::spc,
+            'lyf' => self::lyf,
+            'jio' => self::jio,
+            'dgtec' => self::dgtec,
+            'konrow' => self::konrow,
+            'acme', 'acme grupe' => self::acme,
+            'nttsystem', 'ntt system', 'ntt-system' => self::nttSystem,
+            'pcd' => self::pcd,
+            'philips' => self::philips,
+            'conquest' => self::conquest,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1182,6 +1227,7 @@ enum Company: string implements CompanyInterface
             self::lanix => 'Lanix Mobile',
             self::wortmann => 'Wortmann AG',
             self::imo => 'Verve Connect Limited',
+            self::acme => 'ACME Grupe',
             self::unknown => null,
             default => $this->value,
         };
@@ -1268,6 +1314,7 @@ enum Company: string implements CompanyInterface
             self::kemplerStrauss => 'kempler-strauss',
             self::chinaTelecom => 'china-telecom',
             self::skyworth => 'sky-worth',
+            self::nttSystem => 'ntt-system',
             default => $this->name,
         };
     }

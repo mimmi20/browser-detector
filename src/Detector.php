@@ -18,8 +18,10 @@ use BrowserDetector\Loader\Data\ClientData;
 use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use Psr\Http\Message\MessageInterface;
@@ -470,7 +472,6 @@ final readonly class Detector implements DetectorInterface
     private function getPlatformData(array $filteredHeaders, string | null $platformCodenameFromDevice): OsInterface
     {
         $platformCodename = null;
-        $platformVersion  = null;
 
         $headersWithPlatformCode = array_filter(
             $filteredHeaders,
@@ -487,22 +488,14 @@ final readonly class Detector implements DetectorInterface
             $platformCodename = $platformCodenameFromDevice;
         }
 
-        try {
-            $platformVersion = $this->getPlatformVersion($filteredHeaders, $platformCodename);
-        } catch (VersionContainsDerivateException $e) {
-            $platformVersion = null;
-            $derivate        = $e->getDerivate();
-
-            if ($platformHeader instanceof HeaderInterface && $derivate !== '') {
-                $derivateCodename = $platformHeader->getPlatformCode($derivate);
-
-                if ($derivateCodename !== null) {
-                    $platformCodename = $derivateCodename;
-                }
-            }
-        }
-
-        // var_dump(4, $platformVersion);
+        $platformVersion = match ($platformCodename) {
+            'lineageos' => $this->getVersionForLineageOs($filteredHeaders),
+            default => $this->getVersionForGeneric(
+                $filteredHeaders,
+                $platformCodename,
+                $platformHeader,
+            ),
+        };
 
         if ($platformCodename !== null) {
             try {
@@ -524,15 +517,11 @@ final readonly class Detector implements DetectorInterface
             }
         }
 
-        if (!$platformVersion instanceof VersionInterface) {
-            $platformVersion = null;
-        }
-
         return new Os(
             name: null,
             marketingName: null,
             manufacturer: new Company(type: 'unknown', name: null, brandname: null),
-            version: $platformVersion ?? new NullVersion(),
+            version: new NullVersion(),
             bits: Bits::unknown,
         );
     }
@@ -591,5 +580,83 @@ final readonly class Detector implements DetectorInterface
             ),
             os: null,
         );
+    }
+
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getVersionForLineageOs(array $filteredHeaders): VersionInterface
+    {
+        try {
+            $androidVersion = $this->getPlatformVersion($filteredHeaders, 'android')->getVersion(
+                VersionInterface::IGNORE_MINOR_IF_EMPTY,
+            );
+
+            /**
+             * Lineage OS version mapping
+             *
+             * @var array<string, string> $lineageOsVersionMapping
+             */
+            $lineageOsVersionMapping = [
+                '16' => '23',
+                '15' => '22',
+                '14' => '21',
+                '13' => '20',
+                '12.1' => '19.1',
+                '12' => '19',
+                '11' => '18',
+                '10' => '17',
+                '9' => '16',
+                '8.1' => '15.1',
+                '8' => '15',
+                '7.1.2' => '14.1',
+                '7.1.1' => '14.1',
+                '7' => '14',
+                '6.0.1' => '13',
+                '6' => '13',
+                '5.1.1' => '12.1',
+                '5.0.2' => '12',
+                '5' => '12',
+                '4.4.4' => '11',
+                '4.3' => '10.2',
+                '4.2.2' => '10.1',
+                '4.0.4' => '9.1',
+            ];
+
+            return (new VersionBuilder())->set($lineageOsVersionMapping[$androidVersion] ?? '');
+        } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
+            // do nothing
+        }
+
+        return new NullVersion();
+    }
+
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getVersionForGeneric(
+        array $filteredHeaders,
+        string | null &$platformCodename,
+        HeaderInterface | false $platformHeader,
+    ): VersionInterface {
+        try {
+            return $this->getPlatformVersion($filteredHeaders, $platformCodename);
+        } catch (VersionContainsDerivateException $e) {
+            $derivate = $e->getDerivate();
+
+            if ($platformHeader instanceof HeaderInterface && $derivate !== '') {
+                $derivateCodename = $platformHeader->getPlatformCode($derivate);
+
+                if ($derivateCodename !== null) {
+                    $platformCodename = $derivateCodename;
+                }
+            }
+        }
+
+        return new NullVersion();
     }
 }

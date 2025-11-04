@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; vivo 1906 Build/PKQ1.190616.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.127 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/293.0.0.43.120;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "1906",
+      "marketingName": "Y11 (2019)",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1544,
+        "height": 720,
+        "touch": true,
+        "size": 6.35
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "293.0.0.43.120",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; RMX3501 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FBAN/EMA;FBLC/en_US;FBAV/369.0.0.5.110;FBDM/DisplayMetrics{density=2.0, width=720, height=1448, scaledDensity=2.0, xdpi=268.941, ydpi=269.139};]"
     },
     "device": {
@@ -1135,7 +1180,7 @@
       "manufacturer": "bbk",
       "brand": "oneplus",
       "dualOrientation": true,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 2280,
         "height": 1080,

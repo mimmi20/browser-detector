@@ -38,6 +38,7 @@ use UaRequest\Header\SecChUaFullVersion;
 use UaRequest\Header\SecChUaMobile;
 use UaRequest\Header\XOperaminiPhoneUa;
 use UaRequest\Header\XPuffinUa;
+use UaRequest\Header\XRequestedWith;
 use UaRequest\Header\XUcbrowserDeviceUa;
 use UaRequest\Header\XUcbrowserPhoneUa;
 use UaRequest\Headers;
@@ -203,10 +204,11 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 deviceCode: new XPuffinUaDeviceCode(),
                 platformCode: new XPuffinUaPlatformCode(),
             ),
-            Headers::HEADER_REQUESTED_WITH => new ClientHeader(
+            Headers::HEADER_REQUESTED_WITH => new XRequestedWith(
                 value: $value,
                 clientCode: new XRequestedWithClientCode(),
                 clientVersion: new XRequestedWithClientVersion(),
+                platformCode: new XRequestedWithPlatformCode(),
             ),
             Headers::HEADER_UCBROWSER_DEVICE => new DeviceCodeOnlyHeader(
                 value: $value,

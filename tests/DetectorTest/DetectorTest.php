@@ -27,6 +27,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 use RuntimeException;
 use UnexpectedValueException;
 
+/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(Detector::class)]
 final class DetectorTest extends TestCase
 {
@@ -1032,6 +1033,58 @@ final class DetectorTest extends TestCase
                         'name' => 'WebKit',
                         'version' => '605.1.15',
                         'manufacturer' => 'apple',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 12; Redmi 7 Build/SQ3A.220705.004) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36',
+                    'x-requested-with' => 'org.lineageos.jelly',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'org.lineageos.jelly',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 12; Redmi 7 Build/SQ3A.220705.004) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Redmi 7',
+                        'marketingName' => 'Redmi 7',
+                        'manufacturer' => 'xiaomi',
+                        'brand' => 'xiaomi',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 1520,
+                            'height' => 720,
+                            'touch' => true,
+                            'size' => 6.26,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'LineageOS',
+                        'marketingName' => 'LineageOS',
+                        'version' => '19.0.0',
+                        'manufacturer' => 'unknown',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Jelly Browser',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '107.0.5304.105',
+                        'manufacturer' => 'google',
                     ],
                 ],
             ],

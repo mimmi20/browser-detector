@@ -1,23 +1,23 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; CPH1941 Build/RKQ1.200909.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.260 Mobile Safari/537.36 Line/14.14.1/IAB"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; 2000_000170_00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "CPH1941",
-      "marketingName": "A9 (2020)",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "deviceName": "2000_000170_00",
+      "marketingName": "rephone (Gen 1)",
+      "manufacturer": "rephone",
+      "brand": "rephone",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
-        "width": 1600,
-        "height": 720,
+        "width": 2340,
+        "height": 1080,
         "touch": true,
-        "size": 6.5
+        "size": 6.3
       },
-      "type": "phablet",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -30,17 +30,17 @@
       "bits": null
     },
     "client": {
-      "name": "Line Browser",
+      "name": "Ecosia",
       "modus": null,
-      "version": "14.14.1",
-      "manufacturer": "line",
+      "version": "101.0.4951.41",
+      "manufacturer": "ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "131.0.6778.260",
+      "version": "101.0.4951.41",
       "manufacturer": "google"
     }
   }

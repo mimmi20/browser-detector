@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types = 1);
+
+namespace BrowserDetector\Parser\Header;
+
+use Override;
+use UaParser\PlatformCodeInterface;
+
+use function mb_strtolower;
+use function preg_match;
+
+final class XRequestedWithPlatformCode implements PlatformCodeInterface
+{
+    /** @throws void */
+    #[Override]
+    public function hasPlatformCode(string $value): bool
+    {
+        $match = preg_match('/xmlhttprequest|fake\./i', $value);
+
+        if ($match !== 0) {
+            return false;
+        }
+
+        return match (mb_strtolower($value)) {
+            'org.lineageos.jelly' => true,
+            default => false,
+        };
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    #[Override]
+    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    {
+        // see also vendor/whichbrowser/parser/data/id-android.php
+        // see also vendor/matomo/device-detector/regexes/client/hints/apps.yml
+        return match (mb_strtolower($value)) {
+            'org.lineageos.jelly' => 'lineageos',
+            default => null,
+        };
+    }
+}

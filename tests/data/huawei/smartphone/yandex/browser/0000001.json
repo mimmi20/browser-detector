@@ -811,6 +811,96 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; PLR-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.99 YaBrowser/25.2.8.99.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PLR-L29",
+      "marketingName": "Mate 70 Pro",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2832,
+        "height": 1316,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.2.8.99.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; PLA-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.1823 YaApp_Android/24.120.1 YaSearchBrowser/24.120.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PLA-AL10",
+      "marketingName": "Mate 70 Pro+ 5G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2832,
+        "height": 1316,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.120.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.1823",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; ICL-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.577 YaSearchBrowser/25.26.1 BroPP/1.0 YaSearchApp/25.26.1 webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -818,7 +908,7 @@
       "deviceName": "ICL-AL20",
       "marketingName": "Mate X6",
       "manufacturer": "huawei",
-      "brand": "honor",
+      "brand": "huawei",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -863,7 +953,7 @@
       "deviceName": "ICL-AL10",
       "marketingName": "Mate X6",
       "manufacturer": "huawei",
-      "brand": "honor",
+      "brand": "huawei",
       "dualOrientation": true,
       "simCount": 2,
       "display": {

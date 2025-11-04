@@ -175,7 +175,7 @@ final class Detector3Test extends TestCase
             'os' => [
                 'name' => null,
                 'marketingName' => null,
-                'version' => $platformVersion->getVersion(),
+                'version' => null,
                 'manufacturer' => 'unknown',
                 'bits' => null,
             ],
