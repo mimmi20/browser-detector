@@ -1792,6 +1792,8 @@ final class Device implements DeviceInterface
             'sm-a826s', 'samsung sm-a826s' => 'samsung=samsung sm-a826s',
             'sc-51c' => 'samsung=samsung sc-51c',
             'scg13' => 'samsung=samsung scg13',
+            'sc-53c' => 'samsung=samsung sc-53c',
+            'scg15' => 'samsung=samsung scg15',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
