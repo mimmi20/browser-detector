@@ -8,7 +8,8 @@
     "/cyanogenmod/i": "cyanogenmod",
     "/mocordroid/i": "mocordroid",
     "/andr0id/i": "android-tv",
-    "/kfsuwi/i": "fire-os"
+    "/kfsuwi/i": "fire-os",
+    "/sm-r[0-9]{3}/i": "wear-os"
   },
   "generic": "android"
 }

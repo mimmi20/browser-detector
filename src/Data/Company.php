@@ -761,6 +761,24 @@ enum Company: string implements CompanyInterface
 
     case conquest = 'Conquest';
 
+    case mozilla = 'Mozilla';
+
+    case baidu = 'Baidu';
+
+    case jusyea = 'JUSYEA';
+
+    case klipad = 'Klipad';
+
+    case alpsmart = 'alpsmart';
+
+    case telia = 'Telia';
+
+    case polaroid = 'Polaroid';
+
+    case bell = 'Bell';
+
+    case everfine = 'Everfine';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1140,6 +1158,15 @@ enum Company: string implements CompanyInterface
             'pcd' => self::pcd,
             'philips' => self::philips,
             'conquest' => self::conquest,
+            'mozilla', 'mozilla-foundation', 'mozilla foundation' => self::mozilla,
+            'baidu' => self::baidu,
+            'jusyea' => self::jusyea,
+            'klipad' => self::klipad,
+            'alpsmart' => self::alpsmart,
+            'telia' => self::telia,
+            'polaroid' => self::polaroid,
+            'bell' => self::bell,
+            'everfine' => self::everfine,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1228,6 +1255,7 @@ enum Company: string implements CompanyInterface
             self::wortmann => 'Wortmann AG',
             self::imo => 'Verve Connect Limited',
             self::acme => 'ACME Grupe',
+            self::mozilla => 'Mozilla Foundation',
             self::unknown => null,
             default => $this->value,
         };
@@ -1315,6 +1343,7 @@ enum Company: string implements CompanyInterface
             self::chinaTelecom => 'china-telecom',
             self::skyworth => 'sky-worth',
             self::nttSystem => 'ntt-system',
+            self::mozilla => 'mozilla-foundation',
             default => $this->name,
         };
     }

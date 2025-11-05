@@ -508,6 +508,8 @@ final class Device implements DeviceInterface
             'perm10' => 'oppo=oppo perm10',
             'perm10_k10' => 'oppo=oppo perm10_k10',
             'pjr110' => 'oppo=oppo pjr110',
+            'reno10 pro' => 'oppo=oppo reno 10 pro',
+            'reno 4 pro' => 'oppo=oppo reno 4 pro',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -2223,6 +2225,8 @@ final class Device implements DeviceInterface
             'plr-al00' => 'huawei=huawei plr-al00',
             'hbp-lx9' => 'huawei=huawei hbp-lx9',
             'hbp-al00' => 'huawei=huawei hbp-al00',
+            'mis-lx9' => 'huawei=huawei mis-lx9',
+            'mis-al00' => 'huawei=huawei mis-al00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -3222,6 +3226,7 @@ final class Device implements DeviceInterface
             'blade gt' => 'doogee=doogee blade gt',
             'blade10 power' => 'doogee=doogee blade 10 power',
             's200 x' => 'doogee=doogee s200 x',
+            's89pro' => 'doogee=doogee s89pro',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -3958,6 +3963,7 @@ final class Device implements DeviceInterface
             'tikeasy 10d' => 'archos=archos tikeasy 10d',
             // land-rover
             'land rover explore' => 'land-rover=land-rover explore',
+            'land rover luxury' => 'land-rover=land-rover luxury',
             // tp-link
             'neffos x1' => 'tp-link=tp-link neffos x1',
             'neffos_c9a' => 'tp-link=tp-link neffos c9a',
@@ -5371,6 +5377,7 @@ final class Device implements DeviceInterface
             'syco rs-442' => 'syco=syco rs-442',
             // philips
             'philips w8555' => 'philips=philips w8555',
+            'neoviu d1' => 'philips=philips neoviu d1',
             // homatics
             'box r 4k plus' => 'homatics=homatics box r 4k plus',
             'box r lite 4k' => 'homatics=homatics box r lite 4k',
@@ -5438,6 +5445,7 @@ final class Device implements DeviceInterface
             's22_eea' => 'sebbe=sebbe s22_eea',
             // blackton
             'bt_32fs36b' => 'blackton=blackton bt_32fs36b',
+            'bt_32fs34b' => 'blackton=blackton bt_32fs34b',
             // china-telecom
             'tyh641m' => 'china-telecom=china-telecom tyh641m',
             // rephone
@@ -5447,8 +5455,29 @@ final class Device implements DeviceInterface
             'magentatv box' => 'magenta=magenta tv box',
             // redline
             'ip-80 max' => 'redline=redline ip-80 max',
+            's800 max' => 'redline=redline s800 max',
             // sky-worth
             'vgk02' => 'sky-worth=sky-worth vgk02',
+            // jusyea
+            'j10_eea' => 'jusyea=jusyea j10_eea',
+            // klipad
+            'kl48ph' => 'klipad=klipad kl48ph',
+            'kl505' => 'klipad=klipad kl505',
+            // iconbit
+            'iconbit xlr3089' => 'iconbit=iconbit xlr3089',
+            // alpsmart
+            'as516' => 'alpsmart=alpsmart as516',
+            'as515' => 'alpsmart=alpsmart as515',
+            'as514' => 'alpsmart=alpsmart as514',
+            'as512' => 'alpsmart=alpsmart as512',
+            // telia
+            'telia nordic stb' => 'telia=telia nordic stb',
+            // polaroid
+            'smx4k' => 'polaroid=polaroid smx4k',
+            // bell
+            'bell streamer' => 'bell=bell streamer',
+            // everfine
+            '32evf5000s' => 'everfine=everfine 32evf5000s',
             // other
             default => null,
         };

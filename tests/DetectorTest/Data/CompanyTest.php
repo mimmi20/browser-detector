@@ -2290,6 +2290,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Conquest',
                 'key' => 'conquest',
             ],
+            [
+                'type' => 'Mozilla',
+                'name' => 'Mozilla Foundation',
+                'brandname' => 'Mozilla',
+                'key' => 'mozilla-foundation',
+            ],
+            [
+                'type' => 'Baidu',
+                'name' => 'Baidu',
+                'brandname' => 'Baidu',
+                'key' => 'baidu',
+            ],
+            [
+                'type' => 'JUSYEA',
+                'name' => 'JUSYEA',
+                'brandname' => 'JUSYEA',
+                'key' => 'jusyea',
+            ],
+            [
+                'type' => 'Klipad',
+                'name' => 'Klipad',
+                'brandname' => 'Klipad',
+                'key' => 'klipad',
+            ],
+            [
+                'type' => 'alpsmart',
+                'name' => 'alpsmart',
+                'brandname' => 'alpsmart',
+                'key' => 'alpsmart',
+            ],
+            [
+                'type' => 'Telia',
+                'name' => 'Telia',
+                'brandname' => 'Telia',
+                'key' => 'telia',
+            ],
+            [
+                'type' => 'Polaroid',
+                'name' => 'Polaroid',
+                'brandname' => 'Polaroid',
+                'key' => 'polaroid',
+            ],
+            [
+                'type' => 'Bell',
+                'name' => 'Bell',
+                'brandname' => 'Bell',
+                'key' => 'bell',
+            ],
+            [
+                'type' => 'Everfine',
+                'name' => 'Everfine',
+                'brandname' => 'Everfine',
+                'key' => 'everfine',
+            ],
         ];
     }
 
@@ -3144,6 +3198,18 @@ final class CompanyTest extends TestCase
                 'name' => 'NTT System',
                 'brandname' => 'NTT System',
                 'key' => 'ntt-system',
+            ],
+            [
+                'fallback' => 'Mozilla Foundation',
+                'name' => 'Mozilla Foundation',
+                'brandname' => 'Mozilla',
+                'key' => 'mozilla-foundation',
+            ],
+            [
+                'fallback' => 'mozilla-foundation',
+                'name' => 'Mozilla Foundation',
+                'brandname' => 'Mozilla',
+                'key' => 'mozilla-foundation',
             ],
         ];
     }

@@ -531,6 +531,8 @@ final class DeviceTest extends TestCase
             ['PERM10', 'oppo=oppo perm10'],
             ['PERM10_K10', 'oppo=oppo perm10_k10'],
             ['PJR110', 'oppo=oppo pjr110'],
+            ['Reno10 Pro', 'oppo=oppo reno 10 pro'],
+            ['Reno 4 Pro', 'oppo=oppo reno 4 pro'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -2589,6 +2591,8 @@ final class DeviceTest extends TestCase
             ['PLR-AL00', 'huawei=huawei plr-al00'],
             ['HBP-LX9', 'huawei=huawei hbp-lx9'],
             ['HBP-AL00', 'huawei=huawei hbp-al00'],
+            ['MIS-LX9', 'huawei=huawei mis-lx9'],
+            ['MIS-AL00', 'huawei=huawei mis-al00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -3601,6 +3605,7 @@ final class DeviceTest extends TestCase
             ['Blade GT', 'doogee=doogee blade gt'],
             ['Blade10 Power', 'doogee=doogee blade 10 power'],
             ['S200 X', 'doogee=doogee s200 x'],
+            ['S89Pro', 'doogee=doogee s89pro'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -4355,6 +4360,7 @@ final class DeviceTest extends TestCase
             ['Tikeasy 10d', 'archos=archos tikeasy 10d'],
             // land-rover
             ['Land Rover Explore', 'land-rover=land-rover explore'],
+            ['Land Rover LUXURY', 'land-rover=land-rover luxury'],
             // tp-link
             ['Neffos X1', 'tp-link=tp-link neffos x1'],
             ['Neffos_C9A', 'tp-link=tp-link neffos c9a'],
@@ -5907,6 +5913,7 @@ final class DeviceTest extends TestCase
             ['SYCO RS-442', 'syco=syco rs-442'],
             // philips
             ['Philips W8555', 'philips=philips w8555'],
+            ['NeoViu D1', 'philips=philips neoviu d1'],
             // homatics
             ['Box R 4K Plus', 'homatics=homatics box r 4k plus'],
             ['Box R Lite 4K', 'homatics=homatics box r lite 4k'],
@@ -5976,6 +5983,7 @@ final class DeviceTest extends TestCase
             ['S22_EEA', 'sebbe=sebbe s22_eea'],
             // blackton
             ['Bt_32FS36B', 'blackton=blackton bt_32fs36b'],
+            ['Bt_32FS34B', 'blackton=blackton bt_32fs34b'],
             // china-telecom
             ['TYH641M', 'china-telecom=china-telecom tyh641m'],
             // rephone
@@ -5986,8 +5994,29 @@ final class DeviceTest extends TestCase
             ['MagentaTV Box', 'magenta=magenta tv box'],
             // redline
             ['IP-80 MAX', 'redline=redline ip-80 max'],
+            ['S800 MAX', 'redline=redline s800 max'],
             // sky-worth
             ['VGK02', 'sky-worth=sky-worth vgk02'],
+            // jusyea
+            ['J10_EEA', 'jusyea=jusyea j10_eea'],
+            // klipad
+            ['KL48PH', 'klipad=klipad kl48ph'],
+            ['KL505', 'klipad=klipad kl505'],
+            // iconbit
+            ['iconBIT XLR3089', 'iconbit=iconbit xlr3089'],
+            // alpsmart
+            ['AS516', 'alpsmart=alpsmart as516'],
+            ['AS515', 'alpsmart=alpsmart as515'],
+            ['AS514', 'alpsmart=alpsmart as514'],
+            ['AS512', 'alpsmart=alpsmart as512'],
+            // telia
+            ['Telia Nordic STB', 'telia=telia nordic stb'],
+            // polaroid
+            ['SMX4K', 'polaroid=polaroid smx4k'],
+            // bell
+            ['Bell Streamer', 'bell=bell streamer'],
+            // everfine
+            ['32EVF5000S', 'everfine=everfine 32evf5000s'],
             // other
             ['Model"', null],
             [': "', null],
