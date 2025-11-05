@@ -779,6 +779,20 @@ enum Company: string implements CompanyInterface
 
     case everfine = 'Everfine';
 
+    case ucweb = 'UCWeb';
+
+    case karbonn = 'Karbonn';
+
+    case gionee = 'Gionee';
+
+    case caterpillar = 'Caterpillar';
+
+    case acepad = 'Acepad';
+
+    case korax = 'Korax';
+
+    case xppen = 'XPPen';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1167,6 +1181,13 @@ enum Company: string implements CompanyInterface
             'polaroid' => self::polaroid,
             'bell' => self::bell,
             'everfine' => self::everfine,
+            'ucweb', 'ucweb inc.' => self::ucweb,
+            'karbonn' => self::karbonn,
+            'gionee' => self::gionee,
+            'caterpillar' => self::caterpillar,
+            'acepad' => self::acepad,
+            'korax' => self::korax,
+            'xppen', 'xp-pen' => self::xppen,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1256,6 +1277,7 @@ enum Company: string implements CompanyInterface
             self::imo => 'Verve Connect Limited',
             self::acme => 'ACME Grupe',
             self::mozilla => 'Mozilla Foundation',
+            self::ucweb => 'UCWeb Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -1344,6 +1366,7 @@ enum Company: string implements CompanyInterface
             self::skyworth => 'sky-worth',
             self::nttSystem => 'ntt-system',
             self::mozilla => 'mozilla-foundation',
+            self::xppen => 'xp-pen',
             default => $this->name,
         };
     }

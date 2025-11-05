@@ -1,15 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; Reno10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 OPR/86.0.0.0"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SMX4K Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.100 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general OPPO device",
-      "marketingName": "general OPPO device",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": null,
+      "deviceName": "SMX4K",
+      "marketingName": "SmartBox S",
+      "manufacturer": "polaroid",
+      "brand": "polaroid",
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -17,9 +17,9 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
       "bits": null
     },
     "os": {
@@ -30,17 +30,17 @@
       "bits": null
     },
     "client": {
-      "name": "Opera Mobile",
+      "name": "Android WebView",
       "modus": null,
-      "version": "86.0.0.0",
-      "manufacturer": "opera",
+      "version": "129.0.6668.100",
+      "manufacturer": "google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "130.0.0.0",
+      "version": "129.0.6668.100",
       "manufacturer": "google"
     }
   }

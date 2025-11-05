@@ -2478,5 +2478,37 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "xiaomi 23049rad8c": {
+    "deviceName": "23049RAD8C",
+    "marketingName": "Redmi Note 12 Turbo",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2007j22c": {
+    "deviceName": "M2007J22C",
+    "marketingName": "Redmi Note 9 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.53
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

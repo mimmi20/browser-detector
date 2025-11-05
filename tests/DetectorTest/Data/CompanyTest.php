@@ -2344,6 +2344,48 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Everfine',
                 'key' => 'everfine',
             ],
+            [
+                'type' => 'UCWeb',
+                'name' => 'UCWeb Inc.',
+                'brandname' => 'UCWeb',
+                'key' => 'ucweb',
+            ],
+            [
+                'type' => 'Karbonn',
+                'name' => 'Karbonn',
+                'brandname' => 'Karbonn',
+                'key' => 'karbonn',
+            ],
+            [
+                'type' => 'Gionee',
+                'name' => 'Gionee',
+                'brandname' => 'Gionee',
+                'key' => 'gionee',
+            ],
+            [
+                'type' => 'Caterpillar',
+                'name' => 'Caterpillar',
+                'brandname' => 'Caterpillar',
+                'key' => 'caterpillar',
+            ],
+            [
+                'type' => 'Acepad',
+                'name' => 'Acepad',
+                'brandname' => 'Acepad',
+                'key' => 'acepad',
+            ],
+            [
+                'type' => 'Korax',
+                'name' => 'Korax',
+                'brandname' => 'Korax',
+                'key' => 'korax',
+            ],
+            [
+                'type' => 'XPPen',
+                'name' => 'XPPen',
+                'brandname' => 'XPPen',
+                'key' => 'xp-pen',
+            ],
         ];
     }
 
@@ -3210,6 +3252,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Mozilla Foundation',
                 'brandname' => 'Mozilla',
                 'key' => 'mozilla-foundation',
+            ],
+            [
+                'fallback' => 'UCWeb Inc.',
+                'name' => 'UCWeb Inc.',
+                'brandname' => 'UCWeb',
+                'key' => 'ucweb',
+            ],
+            [
+                'fallback' => 'xp-pen',
+                'name' => 'XPPen',
+                'brandname' => 'XPPen',
+                'key' => 'xp-pen',
             ],
         ];
     }
