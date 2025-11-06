@@ -401,6 +401,10 @@ final class BrowserLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test/1.0');
 
+        $prop = new ReflectionProperty($initData, 'initialized');
+
+        self::assertTrue($prop->getValue($initData));
+
         self::assertSame('unknown', $result->getEngine());
 
         $expected = [

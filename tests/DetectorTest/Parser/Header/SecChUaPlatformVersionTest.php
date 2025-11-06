@@ -148,11 +148,17 @@ final class SecChUaPlatformVersionTest extends TestCase
     public static function providerUa(): array
     {
         return [
+            ['9.0.0', 'Android', true, '9.0.0'],
+            ['10.0.0', 'Android', true, '10.0.0'],
+            ['11.0.0', 'Android', true, '11.0.0'],
+            ['12.0.0', 'Android', true, '12.0.0'],
+            ['16.0.0', null, true, '16.0.0'],
             ['11.0.0', null, true, '11.0.0'],
             ['"11.0.0"', null, true, '11.0.0'],
             ['"14.0.0"', 'Windows', true, '11.0.0'],
             ['"11.0.0"', 'Windows', true, '11.0.0'],
             ['"10.0.0"', 'Windows', true, '10.0.0'],
+            ['"1.0.0"', 'Windows', true, '10.0.0'],
             ['"0.4"', 'Windows', true, '0.4.0'],
             ['"0.3"', 'Windows', true, '8.1.0'],
             ['"0.2"', 'Windows', true, '8.0.0'],
@@ -166,6 +172,27 @@ final class SecChUaPlatformVersionTest extends TestCase
     {
         $header = new PlatformVersionOnlyHeader(
             value: '"9; HarmonyOS"',
+            platformVersion: new SecChUaPlatformVersion(),
+        );
+
+        try {
+            $header->getPlatformVersion('Android');
+
+            self::fail('Exception expected');
+        } catch (VersionContainsDerivateException $e) {
+            self::assertSame('', $e->getMessage());
+            self::assertSame(0, $e->getCode());
+            self::assertNull($e->getPrevious());
+
+            self::assertSame('HarmonyOS', $e->getDerivate());
+        }
+    }
+
+    /** @throws ExpectationFailedException */
+    public function testHeaderWithDerivate2(): void
+    {
+        $header = new PlatformVersionOnlyHeader(
+            value: '"9;HarmonyOS"',
             platformVersion: new SecChUaPlatformVersion(),
         );
 

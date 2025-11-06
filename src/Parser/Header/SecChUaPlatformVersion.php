@@ -75,10 +75,10 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
             return $this->setVersion($minorVersionMapping[$windowsVersion] ?? $value);
         }
 
-        if ($windowsVersion < 11) {
-            return $this->setVersion('10');
+        if ($windowsVersion > 10) {
+            return $this->setVersion('11');
         }
 
-        return $this->setVersion('11');
+        return $this->setVersion('10');
     }
 }

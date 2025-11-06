@@ -318,6 +318,10 @@ final class PlatformLoader1Test extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
+        $prop = new ReflectionProperty($initData, 'initialized');
+
+        self::assertTrue($prop->getValue($initData));
+
         $expected = new Os(
             name: null,
             marketingName: null,

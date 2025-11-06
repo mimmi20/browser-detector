@@ -316,6 +316,10 @@ final class EngineLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
+        $prop = new ReflectionProperty($initData, 'initialized');
+
+        self::assertTrue($prop->getValue($initData));
+
         $expected = new Engine(
             name: null,
             manufacturer: $company,
