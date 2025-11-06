@@ -2381,6 +2381,7 @@ final class Device implements DeviceInterface
             'nokia c32' => 'nokia=nokia c32',
             'nokia 02-4g' => 'nokia=nokia 02-4g',
             'nokia 8.3' => 'nokia=nokia 8.3 4g',
+            'nokia streaming box 8000' => 'nokia=nokia streaming box 8000',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -3754,6 +3755,7 @@ final class Device implements DeviceInterface
             't151-eea' => 'toscido=toscido t151-eea',
             't181-eea' => 'toscido=toscido t181-eea',
             't13-eea' => 'toscido=toscido t13-eea',
+            't28-eea' => 'toscido=toscido t28-eea',
             // beafon
             'tw10' => 'beafon=beafon tw10',
             // micromax
@@ -3830,6 +3832,7 @@ final class Device implements DeviceInterface
             'xanon x20' => 'walton=walton xanon x20',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
+            'zkempler_pro' => 'kempler-strauss=kempler-strauss zkempler pro',
             // zuum
             'stellar m2' => 'zuum=zuum stellar m2',
             'stellar m1' => 'zuum=zuum stellar m1',
@@ -4360,6 +4363,9 @@ final class Device implements DeviceInterface
             't507j' => 'tcl=tcl t507j',
             '9137w' => 'tcl=tcl 9137w',
             '4188c' => 'tcl=tcl 4188c',
+            '9183w' => 'tcl=tcl 9183w',
+            '9132s' => 'tcl=tcl 9132s',
+            '9309x2_eea' => 'tcl=tcl 9309x2_eea',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -5391,6 +5397,8 @@ final class Device implements DeviceInterface
             'saba_32sb6000h' => 'saba=saba 32sb6000h',
             // onyx-boox
             'noteair4c' => 'onyx-boox=onyx-boox note air 4c',
+            'gocolor7' => 'onyx-boox=onyx-boox go color 7',
+            'tabultracpro' => 'onyx-boox=onyx-boox tab ultra c pro',
             // ghia
             'gk133m3' => 'ghia=ghia gk133m3',
             // eudora
@@ -5407,8 +5415,10 @@ final class Device implements DeviceInterface
             // vorcom
             'ultrapad' => 'vorcom=vorcom ultra pad',
             'quartzpro' => 'vorcom=vorcom quartz pro',
+            'quartzlite' => 'vorcom=vorcom quartz lite',
             // mediacom
             'azimut_4' => 'mediacom=mediacom azimut 4',
+            '8ey' => 'mediacom=mediacom 8ey',
             // hemilton
             'tab1000' => 'hemilton=hemilton pro tab 1000',
             // saiet
@@ -5506,6 +5516,7 @@ final class Device implements DeviceInterface
             'kl505' => 'klipad=klipad kl505',
             // iconbit
             'iconbit xlr3089' => 'iconbit=iconbit xlr3089',
+            'iconbit xlr3090' => 'iconbit=iconbit xlr3090',
             // alpsmart
             'as516' => 'alpsmart=alpsmart as516',
             'as515' => 'alpsmart=alpsmart as515',
@@ -5534,6 +5545,70 @@ final class Device implements DeviceInterface
             'energy s10 dual' => 'energy-sistem=energy-sistem s10 dual',
             'energy i10 dual' => 'energy-sistem=energy-sistem i10 dual',
             'energyi8dual' => 'energy-sistem=energy-sistem i8 dual',
+            // go-tv
+            'go700fr' => 'go-tv=go-tv go700fr',
+            // sk-broadband
+            'bid-at200' => 'sk-broadband=sk-broadband bid-at200',
+            // blaupunkt
+            'a-stream' => 'blaupunkt=blaupunkt a-stream',
+            // transpeed
+            '8k618-t' => 'transpeed=transpeed 8k618-t',
+            // leotec
+            'lesph5701w' => 'leotec=leotec lesph5701w',
+            // td-systems
+            'k40dlx9fs' => 'td-systems=td-systems k40dlx9fs',
+            // meitu
+            'mp1713' => 'meitu=meitu mp1713',
+            // lazer
+            'x4508' => 'lazer=lazer x4508',
+            // red
+            'h1a1000' => 'red=red h1a1000',
+            // netlogic
+            '1018dcb' => 'netlogic=netlogic 1018dcb',
+            // eye-on
+            'ak-28b' => 'eye-on=eye-on ak-28b',
+            // ampe
+            'a10-2cpu' => 'ampe=ampe a10 dual core',
+            // ans
+            'ul40' => 'ans=ans ul40',
+            // newsmy
+            'newpad-k97' => 'newsmy=newsmy k97',
+            // bmxc
+            'b801' => 'bmxc=bmxc b801',
+            // egreat
+            'hi3798cv200' => 'egreat=egreat hi3798cv200',
+            // urbetter
+            'utv210' => 'urbetter=urbetter utv210',
+            // vero
+            'n402' => 'vero=vero n402',
+            // elovo
+            'x6-10a41' => 'elovo=elovo x6-10a41',
+            // ogima
+            'og-92' => 'ogima=ogima og-92',
+            // datawind
+            'dw-ubt3g7x' => 'datawind=datawind ubt3g7x',
+            // mecool
+            'me-cool s' => 'mecool=mecool s',
+            'kiii pro' => 'mecool=mecool kiii pro',
+            'm8s pro l' => 'mecool=mecool m8s pro l',
+            'm8s pro w' => 'mecool=mecool m8s pro w',
+            'm8s pro' => 'mecool=mecool m8s pro',
+            'bb2 pro' => 'mecool=mecool bb2 pro',
+            'minim8s ii' => 'mecool=mecool mini m8s ii',
+            // ox-tab
+            'ox-p010-2' => 'ox-tab=ox-tab ox-p010-2',
+            // qlink
+            'scepter8' => 'qlink=qlink scepter 8',
+            // smooth-mobile
+            'smooth 8gt' => 'smooth-mobile=smooth-mobile smooth 8gt',
+            // canaima
+            'cnm6762' => 'canaima=canaima cnm6762',
+            // atouch
+            's-tab10' => 'atouch=atouch s-tab10',
+            'm-t3' => 'atouch=atouch m-t3',
+            'm-t4' => 'atouch=atouch m-t4',
+            // dmoao
+            'd3_eea' => 'dmoao=dmoao d3_eea',
             // other
             default => null,
         };

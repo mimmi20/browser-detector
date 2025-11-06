@@ -2386,6 +2386,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'XPPen',
                 'key' => 'xp-pen',
             ],
+            [
+                'type' => 'GOtv',
+                'name' => 'GOtv',
+                'brandname' => 'GOtv',
+                'key' => 'go-tv',
+            ],
+            [
+                'type' => 'SK Broadband',
+                'name' => 'SK Broadband',
+                'brandname' => 'SK Broadband',
+                'key' => 'sk-broadband',
+            ],
+            [
+                'type' => 'Transpeed',
+                'name' => 'Transpeed',
+                'brandname' => 'Transpeed',
+                'key' => 'transpeed',
+            ],
+            [
+                'type' => 'OX TAB',
+                'name' => 'OX TAB',
+                'brandname' => 'OX TAB',
+                'key' => 'ox-tab',
+            ],
+            [
+                'type' => 'QLink',
+                'name' => 'QLink',
+                'brandname' => 'QLink',
+                'key' => 'qlink',
+            ],
+            [
+                'type' => 'Smooth Mobile',
+                'name' => 'Smooth Mobile',
+                'brandname' => 'Smooth Mobile',
+                'key' => 'smooth-mobile',
+            ],
+            [
+                'type' => 'Canaima',
+                'name' => 'Canaima',
+                'brandname' => 'Canaima',
+                'key' => 'canaima',
+            ],
+            [
+                'type' => 'Atouch',
+                'name' => 'Atouch',
+                'brandname' => 'Atouch',
+                'key' => 'atouch',
+            ],
+            [
+                'type' => 'DMOAO',
+                'name' => 'DMOAO',
+                'brandname' => 'DMOAO',
+                'key' => 'dmoao',
+            ],
         ];
     }
 
@@ -3264,6 +3318,30 @@ final class CompanyTest extends TestCase
                 'name' => 'XPPen',
                 'brandname' => 'XPPen',
                 'key' => 'xp-pen',
+            ],
+            [
+                'fallback' => 'go-tv',
+                'name' => 'GOtv',
+                'brandname' => 'GOtv',
+                'key' => 'go-tv',
+            ],
+            [
+                'fallback' => 'sk-broadband',
+                'name' => 'SK Broadband',
+                'brandname' => 'SK Broadband',
+                'key' => 'sk-broadband',
+            ],
+            [
+                'fallback' => 'ox-tab',
+                'name' => 'OX TAB',
+                'brandname' => 'OX TAB',
+                'key' => 'ox-tab',
+            ],
+            [
+                'fallback' => 'smooth-mobile',
+                'name' => 'Smooth Mobile',
+                'brandname' => 'Smooth Mobile',
+                'key' => 'smooth-mobile',
             ],
         ];
     }

@@ -586,6 +586,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; V20Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.324 YaApp_Android/24.19.1 YaSearchBrowser/24.19.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V20 Pro",
+      "marketingName": "V20 Pro",
+      "manufacturer": "doogee",
+      "brand": "doogee",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.19.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.324",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; S41 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.300 YaBrowser/24.4.0.300.00 SA/3 Mobile Safari/537.36"
     },
     "device": {

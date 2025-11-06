@@ -2750,6 +2750,7 @@ final class DeviceTest extends TestCase
             ['Nokia C32', 'nokia=nokia c32'],
             ['Nokia 02-4G', 'nokia=nokia 02-4g'],
             ['Nokia 8.3', 'nokia=nokia 8.3 4g'],
+            ['Nokia Streaming Box 8000', 'nokia=nokia streaming box 8000'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
@@ -4151,6 +4152,7 @@ final class DeviceTest extends TestCase
             ['T151-EEA', 'toscido=toscido t151-eea'],
             ['T181-EEA', 'toscido=toscido t181-eea'],
             ['T13-EEA', 'toscido=toscido t13-eea'],
+            ['T28-EEA', 'toscido=toscido t28-eea'],
             // beafon
             ['TW10', 'beafon=beafon tw10'],
             // micromax
@@ -4226,6 +4228,7 @@ final class DeviceTest extends TestCase
             ['XANON X20', 'walton=walton xanon x20'],
             // kempler-strauss
             ['ZKEMPLER PLUS', 'kempler-strauss=kempler-strauss zkempler plus'],
+            ['ZKEMPLER_PRO', 'kempler-strauss=kempler-strauss zkempler pro'],
             // zuum
             ['STELLAR M2', 'zuum=zuum stellar m2'],
             ['STELLAR M1', 'zuum=zuum stellar m1'],
@@ -4810,6 +4813,9 @@ final class DeviceTest extends TestCase
             ['T507J', 'tcl=tcl t507j'],
             ['9137W', 'tcl=tcl 9137w'],
             ['4188C', 'tcl=tcl 4188c'],
+            ['9183W', 'tcl=tcl 9183w'],
+            ['9132S', 'tcl=tcl 9132s'],
+            ['9309X2_EEA', 'tcl=tcl 9309x2_eea'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -5927,6 +5933,8 @@ final class DeviceTest extends TestCase
             ['SABA_32SB6000H', 'saba=saba 32sb6000h'],
             // onyx-boox
             ['NoteAir4C', 'onyx-boox=onyx-boox note air 4c'],
+            ['GoColor7', 'onyx-boox=onyx-boox go color 7'],
+            ['TabUltraCPro', 'onyx-boox=onyx-boox tab ultra c pro'],
             // ghia
             ['GK133M3', 'ghia=ghia gk133m3'],
             // eudora
@@ -5943,8 +5951,10 @@ final class DeviceTest extends TestCase
             // vorcom
             ['ULTRAPAD', 'vorcom=vorcom ultra pad'],
             ['QuartzPRO', 'vorcom=vorcom quartz pro'],
+            ['QuartzLITE', 'vorcom=vorcom quartz lite'],
             // mediacom
             ['AZIMUT_4', 'mediacom=mediacom azimut 4'],
+            ['8EY', 'mediacom=mediacom 8ey'],
             // hemilton
             ['Tab1000', 'hemilton=hemilton pro tab 1000'],
             // saiet
@@ -6045,6 +6055,7 @@ final class DeviceTest extends TestCase
             ['KL505', 'klipad=klipad kl505'],
             // iconbit
             ['iconBIT XLR3089', 'iconbit=iconbit xlr3089'],
+            ['iconBIT XLR3090', 'iconbit=iconbit xlr3090'],
             // alpsmart
             ['AS516', 'alpsmart=alpsmart as516'],
             ['AS515', 'alpsmart=alpsmart as515'],
@@ -6073,6 +6084,70 @@ final class DeviceTest extends TestCase
             ['ENERGY s10 DUAL', 'energy-sistem=energy-sistem s10 dual'],
             ['ENERGY i10 DUAL', 'energy-sistem=energy-sistem i10 dual'],
             ['Energyi8Dual', 'energy-sistem=energy-sistem i8 dual'],
+            // go-tv
+            ['GO700FR', 'go-tv=go-tv go700fr'],
+            // sk-broadband
+            ['BID-AT200', 'sk-broadband=sk-broadband bid-at200'],
+            // blaupunkt
+            ['A-STREAM', 'blaupunkt=blaupunkt a-stream'],
+            // transpeed
+            ['8K618-T', 'transpeed=transpeed 8k618-t'],
+            // leotec
+            ['LESPH5701W', 'leotec=leotec lesph5701w'],
+            // td-systems
+            ['K40DLX9FS', 'td-systems=td-systems k40dlx9fs'],
+            // meitu
+            ['MP1713', 'meitu=meitu mp1713'],
+            // lazer
+            ['X4508', 'lazer=lazer x4508'],
+            // red
+            ['H1A1000', 'red=red h1a1000'],
+            // netlogic
+            ['1018DCB', 'netlogic=netlogic 1018dcb'],
+            // eye-on
+            ['AK-28B', 'eye-on=eye-on ak-28b'],
+            // ampe
+            ['A10-2cpu', 'ampe=ampe a10 dual core'],
+            // ans
+            ['UL40', 'ans=ans ul40'],
+            // newsmy
+            ['Newpad-K97', 'newsmy=newsmy k97'],
+            // bmxc
+            ['B801', 'bmxc=bmxc b801'],
+            // egreat
+            ['Hi3798CV200', 'egreat=egreat hi3798cv200'],
+            // urbetter
+            ['UTV210', 'urbetter=urbetter utv210'],
+            // vero
+            ['N402', 'vero=vero n402'],
+            // elovo
+            ['X6-10A41', 'elovo=elovo x6-10a41'],
+            // ogima
+            ['OG-92', 'ogima=ogima og-92'],
+            // datawind
+            ['DW-UBT3G7X', 'datawind=datawind ubt3g7x'],
+            // mecool
+            ['ME-COOL S', 'mecool=mecool s'],
+            ['KIII PRO', 'mecool=mecool kiii pro'],
+            ['M8S PRO L', 'mecool=mecool m8s pro l'],
+            ['M8S PRO W', 'mecool=mecool m8s pro w'],
+            ['M8S PRO', 'mecool=mecool m8s pro'],
+            ['BB2 PRO', 'mecool=mecool bb2 pro'],
+            ['MINIM8S II', 'mecool=mecool mini m8s ii'],
+            // ox-tab
+            ['Ox-p010-2', 'ox-tab=ox-tab ox-p010-2'],
+            // qlink
+            ['Scepter8', 'qlink=qlink scepter 8'],
+            // smooth-mobile
+            ['Smooth 8GT', 'smooth-mobile=smooth-mobile smooth 8gt'],
+            // canaima
+            ['CNM6762', 'canaima=canaima cnm6762'],
+            // atouch
+            ['S-TAB10', 'atouch=atouch s-tab10'],
+            ['M-T3', 'atouch=atouch m-t3'],
+            ['M-T4', 'atouch=atouch m-t4'],
+            // dmoao
+            ['D3_EEA', 'dmoao=dmoao d3_eea'],
             // other
             ['Model"', null],
             [': "', null],

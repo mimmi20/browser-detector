@@ -1846,6 +1846,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 12; ru; Infinix_X6517 Build/SP1A.210812.016) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/10.7.5.785 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X6517",
+      "marketingName": "Smart 7 Plus (India)",
+      "manufacturer": "infinix",
+      "brand": "infinix",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.5.785",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 14; en-US; Infinix X6532C Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.8.0.1368 Mobile Safari/537.36"
     },
     "device": {

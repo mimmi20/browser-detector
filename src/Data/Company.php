@@ -793,6 +793,24 @@ enum Company: string implements CompanyInterface
 
     case xppen = 'XPPen';
 
+    case gotv = 'GOtv';
+
+    case skBroadband = 'SK Broadband';
+
+    case transpeed = 'Transpeed';
+
+    case oxtab = 'OX TAB';
+
+    case qlink = 'QLink';
+
+    case smoothMobile = 'Smooth Mobile';
+
+    case canaima = 'Canaima';
+
+    case atouch = 'Atouch';
+
+    case dmoao = 'DMOAO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1188,6 +1206,15 @@ enum Company: string implements CompanyInterface
             'acepad' => self::acepad,
             'korax' => self::korax,
             'xppen', 'xp-pen' => self::xppen,
+            'gotv', 'go-tv' => self::gotv,
+            'skbroadband', 'sk broadband', 'sk-broadband' => self::skBroadband,
+            'transpeed' => self::transpeed,
+            'oxtab', 'ox tab', 'ox-tab' => self::oxtab,
+            'qlink' => self::qlink,
+            'smoothmobile', 'smooth mobile', 'smooth-mobile' => self::smoothMobile,
+            'canaima' => self::canaima,
+            'atouch' => self::atouch,
+            'dmoao' => self::dmoao,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1367,6 +1394,10 @@ enum Company: string implements CompanyInterface
             self::nttSystem => 'ntt-system',
             self::mozilla => 'mozilla-foundation',
             self::xppen => 'xp-pen',
+            self::gotv => 'go-tv',
+            self::skBroadband => 'sk-broadband',
+            self::oxtab => 'ox-tab',
+            self::smoothMobile => 'smooth-mobile',
             default => $this->name,
         };
     }

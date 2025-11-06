@@ -586,6 +586,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; SM-F900U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 YaApp_Android/22.72.1 YaSearchBrowser/22.72.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F900U1",
+      "marketingName": "Galaxy Fold 5G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2152,
+        "height": 1536,
+        "touch": true,
+        "size": 7.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "22.72.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.134",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm; Android 6.0.1; SM-N910S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.174 YaBrowser/22.1.3.105.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -761,6 +806,51 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; SM-F907B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.324 YaApp_Android/24.19/apad YaSearchBrowser/24.19/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F907B",
+      "marketingName": "Galaxy Fold 5G (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2152,
+        "height": 1536,
+        "touch": true,
+        "size": 7.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.19.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.324",
       "manufacturer": "google"
     }
   },
