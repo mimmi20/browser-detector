@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Parser\Header;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -24,6 +25,7 @@ use UaLoader\PlatformLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformParserInterface;
+use UaResult\Os\OsInterface;
 
 #[CoversClass(UseragentPlatformVersion::class)]
 final class UseragentPlatformVersionTest extends TestCase
@@ -239,6 +241,74 @@ final class UseragentPlatformVersionTest extends TestCase
             ['Instagram 396.0.0.46.242 Android (35/15; 420dpi; 1080x2400; Xiaomi; 24030PN60G; aurora; qcom; de_DE; 785863896)', '15.0.0'],
             ['ICQ_Android/5.0 (Android; 17; 4.2.2; eng.rd2version.1388046998; Philips W8555; ru-RU)', '4.2.2'],
             ['GG-Android/4.0.0.20098 (OS;Android;17) (HWD;asus;ASUS Transformer Pad TF300T;4.2.1)', '4.2.1'],
+        ];
+    }
+
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    #[DataProvider('providerUa3')]
+    public function testWithUasWithPlatformVersion2(string $value, string $expectedVersion): void
+    {
+        $code = 'code';
+
+        $version = $this->createMock(VersionInterface::class);
+        $version
+            ->expects(self::once())
+            ->method('getVersion')
+            ->willReturn($expectedVersion);
+
+        $os = $this->createMock(OsInterface::class);
+        $os
+            ->expects(self::once())
+            ->method('getVersion')
+            ->willReturn($version);
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($value)
+            ->willReturn($code);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($code, $value)
+            ->willReturn($os);
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $header = new UseragentPlatformVersion(
+            platformParser: $platformParser,
+            platformLoader: $platformLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasPlatformVersion($value));
+
+        $version = $header->getPlatformVersion($value);
+        self::assertInstanceOf(Version::class, $version);
+        self::assertSame($expectedVersion, $version->getVersion());
+    }
+
+    /**
+     * @return array<int, array<int, string>>
+     *
+     * @throws void
+     */
+    public static function providerUa3(): array
+    {
+        return [
+            ['Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max', '4.3.0'],
         ];
     }
 }

@@ -39,7 +39,7 @@ use UnexpectedValueException;
 
 #[CoversClass(DeviceLoader::class)]
 #[CoversClass(DeviceData::class)]
-final class DeviceLoaderTest extends TestCase
+final class DeviceLoader1Test extends TestCase
 {
     /**
      * @throws NotFoundException
