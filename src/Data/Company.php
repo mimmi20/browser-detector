@@ -1244,7 +1244,7 @@ enum Company: string implements CompanyInterface
             'access', 'access co., ltd.' => self::access,
             'berkeley', 'berkley-university', 'university of california, berkeley' => self::berkeley,
             'danger', 'danger, inc.' => self::danger,
-            'softwareInThePublicInterest', 'software in the public interest', 'software-in-the-public-interest', 'software in the public interest, inc.' => self::softwareInThePublicInterest,
+            'softwareinthepublicinterest', 'software in the public interest', 'software-in-the-public-interest', 'software in the public interest, inc.' => self::softwareInThePublicInterest,
             'redhat', 'red hat inc' => self::redhat,
             'freebsd', 'free-bsd-foundation', 'freebsd foundation' => self::freebsd,
             'gentoo', 'gentoo foundation inc' => self::gentoo,

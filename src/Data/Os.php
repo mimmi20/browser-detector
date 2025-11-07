@@ -15,9 +15,11 @@ namespace BrowserDetector\Data;
 
 use BrowserDetector\Version\AndroidOsFactory;
 use BrowserDetector\Version\ChromeOsFactory;
+use BrowserDetector\Version\DebianFactory;
 use BrowserDetector\Version\FirefoxOsFactory;
 use BrowserDetector\Version\IosFactory;
 use BrowserDetector\Version\MacosFactory;
+use BrowserDetector\Version\RaspbianFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
@@ -511,7 +513,7 @@ enum Os: string implements OsInterface
             self::liberate => ['factory' => VersionBuilderFactory::class, 'search' => ['Liberate']],
             self::linuxmint => ['factory' => VersionBuilderFactory::class, 'search' => ['Mint', 'mint']],
             self::macintosh => ['factory' => VersionBuilderFactory::class, 'search' => ['Macintosh']],
-            self::miuios => ['factory' => VersionBuilderFactory::class, 'search' => ['MIUI\\/V', 'MIUI']],
+            self::miuios => ['factory' => VersionBuilderFactory::class, 'search' => ['MIUI\/V', 'MIUI']],
             self::mocordroid => ['factory' => VersionBuilderFactory::class, 'search' => ['MocorDroid']],
             self::netbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['NetBSD']],
             self::openbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenBSD']],
@@ -533,15 +535,15 @@ enum Os: string implements OsInterface
             self::newsos => ['factory' => VersionBuilderFactory::class, 'search' => ['NEWS-OS']],
             self::lindows => ['factory' => VersionBuilderFactory::class, 'search' => ['Lindows']],
             self::aix => ['factory' => VersionBuilderFactory::class, 'search' => ['AIX']],
-            self::os2 => ['factory' => VersionBuilderFactory::class, 'search' => ["OS\\/2", "Warp"]],
+            self::os2 => ['factory' => VersionBuilderFactory::class, 'search' => ['OS\/2', 'Warp']],
             self::beos => ['factory' => VersionBuilderFactory::class, 'search' => ['BeOS']],
             self::bsd => ['factory' => VersionBuilderFactory::class, 'search' => ['BSD']],
-            self::fedoralinux => ['factory' => VersionBuilderFactory::class, 'search' => ["Fedora\\/[0-9\\.\\-]+\\.fc", "Fedora"]],
-            self::redhatlinux => ['factory' => VersionBuilderFactory::class, 'search' => ["Red Hat"]],
-            self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ["FreeBSD", "freebsd"]],
-            self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ["OpenVMS"]],
-            self::tru64unix => ['factory' => VersionBuilderFactory::class, 'search' => ["Tru64 UNIX", "Digital Unix"]],
-            self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ["WebOS", "webOS", "hpwOS"]],
+            self::fedoralinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Fedora\/[0-9\.\-]+\.fc', 'Fedora']],
+            self::redhatlinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Red Hat']],
+            self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ['FreeBSD', 'freebsd']],
+            self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenVMS']],
+            self::tru64unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Tru64 UNIX', 'Digital Unix']],
+            self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::atvosx, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -549,8 +551,8 @@ enum Os: string implements OsInterface
             self::firefoxos => ['factory' => FirefoxOsFactory::class, 'search' => null],
             self::windowsmobileos => ['factory' => WindowsMobileOsFactory::class, 'search' => null],
             self::windowsphone => ['factory' => WindowsPhoneOsFactory::class, 'search' => null],
-            self::debian, self::debianWithFreeBSDKernel => ['factory' => \BrowserDetector\Version\DebianFactory::class, 'search' => null],
-            self::raspbian => ['factory' => \BrowserDetector\Version\RaspbianFactory::class, 'search' => null],
+            self::debian, self::debianWithFreeBSDKernel => ['factory' => DebianFactory::class, 'search' => null],
+            self::raspbian => ['factory' => RaspbianFactory::class, 'search' => null],
             self::windows2003 => ['factory' => null, 'search' => null, 'value' => 2003],
             self::windows31, self::windowsnt31 => ['factory' => null, 'search' => null, 'value' => 3.1],
             self::windows311 => ['factory' => null, 'search' => null, 'value' => 3.11],
