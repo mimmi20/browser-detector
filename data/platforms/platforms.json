@@ -1,115 +1,4 @@
 {
-  "aix": {
-    "name": "AIX",
-    "marketingName": "AIX",
-    "manufacturer": "ibm",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AIX"
-      ]
-    }
-  },
-  "beos": {
-    "name": "BeOS",
-    "marketingName": "BeOS",
-    "manufacturer": "access",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "BeOS"
-      ]
-    }
-  },
-  "bsd": {
-    "name": "BSD",
-    "marketingName": "BSD",
-    "manufacturer": "berkley-university",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "BSD"
-      ]
-    }
-  },
-  "danger os": {
-    "name": "Danger OS",
-    "marketingName": "Danger OS",
-    "manufacturer": "danger",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "debian": {
-    "name": "Debian",
-    "marketingName": "Debian",
-    "manufacturer": "software-in-the-public-interest",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\DebianFactory",
-      "search": null
-    }
-  },
-  "debian with freebsd kernel": {
-    "name": "Debian with FreeBSD Kernel",
-    "marketingName": "Debian with FreeBSD Kernel",
-    "manufacturer": "software-in-the-public-interest",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\DebianFactory",
-      "search": null
-    }
-  },
-  "fedora linux": {
-    "name": "Fedora Linux",
-    "marketingName": "Fedora Linux",
-    "manufacturer": "redhat",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Fedora\\/[0-9\\.\\-]+\\.fc",
-        "Fedora"
-      ]
-    }
-  },
-  "freebsd": {
-    "name": "FreeBSD",
-    "marketingName": "FreeBSD",
-    "manufacturer": "free-bsd-foundation",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "FreeBSD",
-        "freebsd"
-      ]
-    }
-  },
-  "gentoo linux": {
-    "name": "Gentoo Linux",
-    "marketingName": "Gentoo Linux",
-    "manufacturer": "gentoo",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "haiku": {
-    "name": "Haiku",
-    "marketingName": "Haiku",
-    "manufacturer": "haiku",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "hp-ux": {
-    "name": "HP-UX",
-    "marketingName": "HP-UX",
-    "manufacturer": "hp",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "inferno os": {
     "name": "Inferno OS",
     "marketingName": "Inferno OS",
@@ -252,29 +141,6 @@
       ]
     }
   },
-  "openvms": {
-    "name": "OpenVMS",
-    "marketingName": "OpenVMS",
-    "manufacturer": "hp",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "OpenVMS"
-      ]
-    }
-  },
-  "os/2": {
-    "name": "OS/2",
-    "marketingName": "OS/2",
-    "manufacturer": "ibm",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "OS\\/2",
-        "Warp"
-      ]
-    }
-  },
   "palmos": {
     "name": "PalmOS",
     "marketingName": "PalmOS",
@@ -294,26 +160,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Qtopia"
-      ]
-    }
-  },
-  "raspbian": {
-    "name": "Raspbian",
-    "marketingName": "Raspbian",
-    "manufacturer": "software-in-the-public-interest",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\RaspbianFactory",
-      "search": null
-    }
-  },
-  "redhat linux": {
-    "name": "Redhat Linux",
-    "marketingName": "Redhat Linux",
-    "manufacturer": "redhat",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Red Hat"
       ]
     }
   },
@@ -443,18 +289,6 @@
       ]
     }
   },
-  "tru64 unix": {
-    "name": "Tru64 UNIX",
-    "marketingName": "Tru64 UNIX",
-    "manufacturer": "hp",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Tru64 UNIX",
-        "Digital Unix"
-      ]
-    }
-  },
   "ubuntu": {
     "name": "Ubuntu",
     "marketingName": "Ubuntu",
@@ -476,19 +310,6 @@
       "search": [
         "Ventana Linux",
         "Ventana"
-      ]
-    }
-  },
-  "webos": {
-    "name": "webOS",
-    "marketingName": "webOS",
-    "manufacturer": "hp",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "WebOS",
-        "webOS",
-        "hpwOS"
       ]
     }
   },

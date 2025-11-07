@@ -813,6 +813,28 @@ enum Company: string implements CompanyInterface
 
     case mecool = 'Mecool';
 
+    case ibm = 'IBM';
+
+    case access = 'Access';
+
+    case berkeley = 'Berkeley';
+
+    case danger = 'Danger';
+
+    case softwareInThePublicInterest = 'Software in the Public Interest';
+
+    case redhat = 'Redhat';
+
+    case freebsd = 'FreeBSD';
+
+    case gentoo = 'Gentoo';
+
+    case haiku = 'Haiku';
+
+    case hp = 'HP';
+
+    case vitanuova = 'Vita Nuova';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1218,6 +1240,17 @@ enum Company: string implements CompanyInterface
             'atouch' => self::atouch,
             'dmoao' => self::dmoao,
             'mecool' => self::mecool,
+            'ibm' => self::ibm,
+            'access', 'access co., ltd.' => self::access,
+            'berkeley', 'berkley-university', 'university of california, berkeley' => self::berkeley,
+            'danger', 'danger, inc.' => self::danger,
+            'softwareInThePublicInterest', 'software in the public interest', 'software-in-the-public-interest', 'software in the public interest, inc.' => self::softwareInThePublicInterest,
+            'redhat', 'red hat inc' => self::redhat,
+            'freebsd', 'free-bsd-foundation', 'freebsd foundation' => self::freebsd,
+            'gentoo', 'gentoo foundation inc' => self::gentoo,
+            'haiku', 'haiku, inc.' => self::haiku,
+            'hp', 'hp inc.' => self::hp,
+            'vitanuova', 'vita nuova', 'vita-nuova', 'vita nuova holdings ltd' => self::vitanuova,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1308,6 +1341,16 @@ enum Company: string implements CompanyInterface
             self::acme => 'ACME Grupe',
             self::mozilla => 'Mozilla Foundation',
             self::ucweb => 'UCWeb Inc.',
+            self::access => 'Access Co., Ltd.',
+            self::berkeley => 'University of California, Berkeley',
+            self::danger => 'Danger, Inc.',
+            self::softwareInThePublicInterest => 'Software in the Public Interest, Inc.',
+            self::redhat => 'Red Hat Inc',
+            self::freebsd => 'FreeBSD Foundation',
+            self::gentoo => 'Gentoo Foundation Inc',
+            self::haiku => 'Haiku, Inc.',
+            self::hp => 'HP Inc.',
+            self::vitanuova => 'Vita Nuova Holdings Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -1401,6 +1444,10 @@ enum Company: string implements CompanyInterface
             self::skBroadband => 'sk-broadband',
             self::oxtab => 'ox-tab',
             self::smoothMobile => 'smooth-mobile',
+            self::berkeley => 'berkley-university',
+            self::softwareInThePublicInterest => 'software-in-the-public-interest',
+            self::freebsd => 'free-bsd-foundation',
+            self::vitanuova => 'vita-nuova',
             default => $this->name,
         };
     }

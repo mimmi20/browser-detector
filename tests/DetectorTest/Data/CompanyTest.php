@@ -2446,6 +2446,72 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Mecool',
                 'key' => 'mecool',
             ],
+            [
+                'type' => 'IBM',
+                'name' => 'IBM',
+                'brandname' => 'IBM',
+                'key' => 'ibm',
+            ],
+            [
+                'type' => 'Access',
+                'name' => 'Access Co., Ltd.',
+                'brandname' => 'Access',
+                'key' => 'access',
+            ],
+            [
+                'type' => 'Berkeley',
+                'name' => 'University of California, Berkeley',
+                'brandname' => 'Berkeley',
+                'key' => 'berkley-university',
+            ],
+            [
+                'type' => 'Danger',
+                'name' => 'Danger, Inc.',
+                'brandname' => 'Danger',
+                'key' => 'danger',
+            ],
+            [
+                'type' => 'Software in the Public Interest',
+                'name' => 'Software in the Public Interest, Inc.',
+                'brandname' => 'Software in the Public Interest',
+                'key' => 'software-in-the-public-interest',
+            ],
+            [
+                'type' => 'Redhat',
+                'name' => 'Red Hat Inc',
+                'brandname' => 'Redhat',
+                'key' => 'redhat',
+            ],
+            [
+                'type' => 'FreeBSD',
+                'name' => 'FreeBSD Foundation',
+                'brandname' => 'FreeBSD',
+                'key' => 'free-bsd-foundation',
+            ],
+            [
+                'type' => 'Gentoo',
+                'name' => 'Gentoo Foundation Inc',
+                'brandname' => 'Gentoo',
+                'key' => 'gentoo',
+            ],
+            [
+                'type' => 'Haiku',
+                'name' => 'Haiku, Inc.',
+                'brandname' => 'Haiku',
+                'key' => 'haiku',
+            ],
+            [
+                'type' => 'HP',
+                'name' => 'HP Inc.',
+                'brandname' => 'HP',
+                'key' => 'hp',
+            ],
+            [
+                'type' => 'Vita Nuova',
+                'name' => 'Vita Nuova Holdings Ltd',
+                'brandname' => 'Vita Nuova',
+                'key' => 'vita-nuova',
+            ],
         ];
     }
 
@@ -3348,6 +3414,90 @@ final class CompanyTest extends TestCase
                 'name' => 'Smooth Mobile',
                 'brandname' => 'Smooth Mobile',
                 'key' => 'smooth-mobile',
+            ],
+            [
+                'fallback' => 'Access Co., Ltd.',
+                'name' => 'Access Co., Ltd.',
+                'brandname' => 'Access',
+                'key' => 'access',
+            ],
+            [
+                'fallback' => 'berkley-university',
+                'name' => 'University of California, Berkeley',
+                'brandname' => 'Berkeley',
+                'key' => 'berkley-university',
+            ],
+            [
+                'fallback' => 'University of California, Berkeley',
+                'name' => 'University of California, Berkeley',
+                'brandname' => 'Berkeley',
+                'key' => 'berkley-university',
+            ],
+            [
+                'fallback' => 'Danger, Inc.',
+                'name' => 'Danger, Inc.',
+                'brandname' => 'Danger',
+                'key' => 'danger',
+            ],
+            [
+                'fallback' => 'Software in the Public Interest, Inc.',
+                'name' => 'Software in the Public Interest, Inc.',
+                'brandname' => 'Software in the Public Interest',
+                'key' => 'software-in-the-public-interest',
+            ],
+            [
+                'fallback' => 'software-in-the-public-interest',
+                'name' => 'Software in the Public Interest, Inc.',
+                'brandname' => 'Software in the Public Interest',
+                'key' => 'software-in-the-public-interest',
+            ],
+            [
+                'fallback' => 'Red Hat Inc',
+                'name' => 'Red Hat Inc',
+                'brandname' => 'Redhat',
+                'key' => 'redhat',
+            ],
+            [
+                'fallback' => 'FreeBSD Foundation',
+                'name' => 'FreeBSD Foundation',
+                'brandname' => 'FreeBSD',
+                'key' => 'free-bsd-foundation',
+            ],
+            [
+                'fallback' => 'free-bsd-foundation',
+                'name' => 'FreeBSD Foundation',
+                'brandname' => 'FreeBSD',
+                'key' => 'free-bsd-foundation',
+            ],
+            [
+                'fallback' => 'Gentoo Foundation Inc',
+                'name' => 'Gentoo Foundation Inc',
+                'brandname' => 'Gentoo',
+                'key' => 'gentoo',
+            ],
+            [
+                'fallback' => 'Haiku, Inc.',
+                'name' => 'Haiku, Inc.',
+                'brandname' => 'Haiku',
+                'key' => 'haiku',
+            ],
+            [
+                'fallback' => 'HP Inc.',
+                'name' => 'HP Inc.',
+                'brandname' => 'HP',
+                'key' => 'hp',
+            ],
+            [
+                'fallback' => 'vita-nuova',
+                'name' => 'Vita Nuova Holdings Ltd',
+                'brandname' => 'Vita Nuova',
+                'key' => 'vita-nuova',
+            ],
+            [
+                'fallback' => 'Vita Nuova Holdings Ltd',
+                'name' => 'Vita Nuova Holdings Ltd',
+                'brandname' => 'Vita Nuova',
+                'key' => 'vita-nuova',
             ],
         ];
     }

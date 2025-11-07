@@ -127,7 +127,7 @@ enum Os: string implements OsInterface
 
     case watchos = 'watchOS';
 
-    case lgwebos = 'webOS';
+    case lgwebos = 'lg webOS';
 
     case windows = 'Windows';
 
@@ -245,6 +245,40 @@ enum Os: string implements OsInterface
 
     case lineageos = 'LineageOS';
 
+    case aix = 'AIX';
+
+    case os2 = 'OS/2';
+
+    case beos = 'BeOS';
+
+    case bsd = 'BSD';
+
+    case dangeros = 'Danger OS';
+
+    case debian = 'Debian';
+
+    case debianWithFreeBSDKernel = 'Debian with FreeBSD Kernel';
+
+    case raspbian = 'Raspbian';
+
+    case fedoralinux = 'Fedora Linux';
+
+    case redhatlinux = 'Redhat Linux';
+
+    case freebsd = 'FreeBSD';
+
+    case gentoolinux = 'Gentoo Linux';
+
+    case haiku = 'Haiku';
+
+    case hpux = 'HP-UX';
+
+    case openvms = 'OpenVMS';
+
+    case tru64unix = 'Tru64 UNIX';
+
+    case webos = 'webOS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -333,7 +367,7 @@ enum Os: string implements OsInterface
             'windowsnt62', 'windows nt 6.2' => self::windowsnt62,
             'windowsnt63', 'windows nt 6.3' => self::windowsnt63,
             'windowsnt64', 'windows nt 6.4' => self::windowsnt64,
-            'windowsphone', 'windows phone os' => self::windowsphone,
+            'windowsphone', 'windows phone os', 'windows phone' => self::windowsphone,
             'windowsphone10', 'windows phone 10.0' => self::windowsphone10,
             'windowsphone65', 'windows phone 6.5' => self::windowsphone65,
             'windowsphone75', 'windows phone 7.5' => self::windowsphone75,
@@ -362,6 +396,23 @@ enum Os: string implements OsInterface
             'wearos', 'wear os', 'wear-os' => self::wearos,
             'androidtv', 'android tv', 'android-tv' => self::androidtv,
             'lineageos' => self::lineageos,
+            'aix' => self::aix,
+            'os2', 'os/2' => self::os2,
+            'beos' => self::beos,
+            'bsd' => self::bsd,
+            'dangeros', 'danger os' => self::dangeros,
+            'debian' => self::debian,
+            'debianwithfreebsdkernel', 'debian with freebsd kernel' => self::debianWithFreeBSDKernel,
+            'raspbian' => self::raspbian,
+            'fedoralinux', 'fedora linux' => self::fedoralinux,
+            'redhatlinux', 'redhat linux' => self::redhatlinux,
+            'freebsd' => self::freebsd,
+            'gentoolinux', 'gentoo linux' => self::gentoolinux,
+            'haiku' => self::haiku,
+            'hpux', 'hp-ux' => self::hpux,
+            'openvms' => self::openvms,
+            'tru64unix', 'tru64 unix' => self::tru64unix,
+            'webos' => self::webos,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -424,6 +475,16 @@ enum Os: string implements OsInterface
             self::windows, self::windows2003, self::windows31, self::windows311, self::windows95, self::windows98, self::windowsce, self::windowsiot, self::windowsme, self::windowsmobileos, self::windowsnt, self::windows10, self::windows11, self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windowsphone, self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81, self::windowsrt62, self::windowsrt63, self::azurelinux, self::kinos => Company::microsoft,
             self::yi => Company::baidu,
             self::harmonyos => Company::huawei,
+            self::aix, self::os2 => Company::ibm,
+            self::beos => Company::access,
+            self::bsd => Company::berkeley,
+            self::dangeros => Company::danger,
+            self::debian, self::debianWithFreeBSDKernel, self::raspbian => Company::softwareInThePublicInterest,
+            self::fedoralinux, self::redhatlinux => Company::redhat,
+            self::freebsd => Company::freebsd,
+            self::gentoolinux => Company::gentoo,
+            self::haiku => Company::haiku,
+            self::hpux, self::openvms, self::tru64unix, self::webos => Company::hp,
             default => Company::unknown,
         };
     }
@@ -471,6 +532,16 @@ enum Os: string implements OsInterface
             self::genix => ['factory' => VersionBuilderFactory::class, 'search' => ['GENIX']],
             self::newsos => ['factory' => VersionBuilderFactory::class, 'search' => ['NEWS-OS']],
             self::lindows => ['factory' => VersionBuilderFactory::class, 'search' => ['Lindows']],
+            self::aix => ['factory' => VersionBuilderFactory::class, 'search' => ['AIX']],
+            self::os2 => ['factory' => VersionBuilderFactory::class, 'search' => ["OS\\/2", "Warp"]],
+            self::beos => ['factory' => VersionBuilderFactory::class, 'search' => ['BeOS']],
+            self::bsd => ['factory' => VersionBuilderFactory::class, 'search' => ['BSD']],
+            self::fedoralinux => ['factory' => VersionBuilderFactory::class, 'search' => ["Fedora\\/[0-9\\.\\-]+\\.fc", "Fedora"]],
+            self::redhatlinux => ['factory' => VersionBuilderFactory::class, 'search' => ["Red Hat"]],
+            self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ["FreeBSD", "freebsd"]],
+            self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ["OpenVMS"]],
+            self::tru64unix => ['factory' => VersionBuilderFactory::class, 'search' => ["Tru64 UNIX", "Digital Unix"]],
+            self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ["WebOS", "webOS", "hpwOS"]],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::atvosx, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -478,6 +549,8 @@ enum Os: string implements OsInterface
             self::firefoxos => ['factory' => FirefoxOsFactory::class, 'search' => null],
             self::windowsmobileos => ['factory' => WindowsMobileOsFactory::class, 'search' => null],
             self::windowsphone => ['factory' => WindowsPhoneOsFactory::class, 'search' => null],
+            self::debian, self::debianWithFreeBSDKernel => ['factory' => \BrowserDetector\Version\DebianFactory::class, 'search' => null],
+            self::raspbian => ['factory' => \BrowserDetector\Version\RaspbianFactory::class, 'search' => null],
             self::windows2003 => ['factory' => null, 'search' => null, 'value' => 2003],
             self::windows31, self::windowsnt31 => ['factory' => null, 'search' => null, 'value' => 3.1],
             self::windows311 => ['factory' => null, 'search' => null, 'value' => 3.11],
@@ -573,6 +646,14 @@ enum Os: string implements OsInterface
             self::newsos => 'news-os',
             self::wearos => 'wear-os',
             self::androidtv => 'android-tv',
+            self::os2 => 'os/2',
+            self::dangeros => 'danger os',
+            self::debianWithFreeBSDKernel => 'debian with freebsd kernel',
+            self::fedoralinux => 'fedora linux',
+            self::redhatlinux => 'redhat linux',
+            self::gentoolinux => 'gentoo linux',
+            self::hpux => 'hp-ux',
+            self::tru64unix => 'tru64 unix',
             default => $this->name,
         };
     }
