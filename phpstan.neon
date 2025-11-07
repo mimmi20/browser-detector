@@ -111,6 +111,8 @@ parameters:
     - '~will always evaluate to true~'
     - '~\$searches of method~'
     - '~\$rules of method~'
+    - '~deprecated class BrowserDetector\\Loader\\InitData\\Os~'
+    - '~deprecated class BrowserDetector\\Loader\\Data\\Os~'
     -
       identifier: property.uninitialized
       paths:
@@ -126,8 +128,8 @@ parameters:
         - tests/DetectorTest/Loader/CompanyLoaderTest.php
         - tests/DetectorTest/Loader/DeviceLoader1Test.php
         - tests/DetectorTest/Loader/EngineLoaderTest.php
-        - tests/DetectorTest/Loader/PlatformLoader3Test.php
-        - tests/DetectorTest/Loader/PlatformLoader4Test.php
+        #- tests/DetectorTest/Loader/PlatformLoader3Test.php
+        #- tests/DetectorTest/Loader/PlatformLoader4Test.php
     -
       identifier: throws.unusedType
       paths:
@@ -136,6 +138,10 @@ parameters:
       identifier: catch.neverThrown
       paths:
         - tests\DetectorTest\Parser\Header\SecChUaPlatformVersionTest.php
+    -
+      identifier: public.method.unused
+      paths:
+        - src\Loader\InitData\Os.php
 
 rules:
   # code complexity

@@ -19,6 +19,7 @@ use UnexpectedValueException;
 use function mb_strtolower;
 use function sprintf;
 
+/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 enum Company: string implements CompanyInterface
 {
     case unknown = 'unknown';
@@ -835,6 +836,58 @@ enum Company: string implements CompanyInterface
 
     case vitanuova = 'Vita Nuova';
 
+    case sun = 'Sun';
+
+    case kaios = 'KaiOS';
+
+    case canonical = 'Canonical';
+
+    case linuxFoundation = 'Linux Foundation';
+
+    case mandriva = 'Mandriva';
+
+    case fabienCoeurjoly = 'Fabien Coeurjoly';
+
+    case mediatek = 'MediaTek';
+
+    case nintendo = 'Nintendo';
+
+    case acceleratedTechnology = 'Accelerated Technology';
+
+    case oracle = 'Oracle';
+
+    case palm = 'Palm';
+
+    case trolltech = 'Trolltech';
+
+    case jide = 'Jide';
+
+    case rim = 'RIM';
+
+    case jolla = 'Jolla';
+
+    case slackware = 'Slackware';
+
+    case ylmf = 'YLMF';
+
+    case suse = 'Suse';
+
+    case syllable = 'Syllable';
+
+    case symbianFoundation = 'Symbian Foundation';
+
+    case ventana = 'Ventana';
+
+    case alibaba = 'Alibaba';
+
+    case nComputing = 'NComputing';
+
+    case cloudMosa = 'CloudMosa';
+
+    case vizio = 'Vizio';
+
+    case dec = 'DEC';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1251,6 +1304,32 @@ enum Company: string implements CompanyInterface
             'haiku', 'haiku, inc.' => self::haiku,
             'hp', 'hp inc.' => self::hp,
             'vitanuova', 'vita nuova', 'vita-nuova', 'vita nuova holdings ltd' => self::vitanuova,
+            'sun', 'sun-microsystems', 'sun microsystems, inc.' => self::sun,
+            'kaios', 'kaios technologies' => self::kaios,
+            'canonical', 'canonical foundation' => self::canonical,
+            'linuxfoundation', 'linux foundation', 'linux-foundation' => self::linuxFoundation,
+            'mandriva' => self::mandriva,
+            'fabiencoeurjoly', 'fabien coeurjoly' => self::fabienCoeurjoly,
+            'mediatek' => self::mediatek,
+            'nintendo' => self::nintendo,
+            'acceleratedtechnology', 'accelerated technology', 'accelerated-technology' => self::acceleratedTechnology,
+            'oracle' => self::oracle,
+            'palm' => self::palm,
+            'trolltech' => self::trolltech,
+            'jide', 'jide technology' => self::jide,
+            'rim', 'research in motion limited' => self::rim,
+            'jolla', 'jolla ltd.' => self::jolla,
+            'slackware', 'slackware linux, inc.' => self::slackware,
+            'ylmf', 'ylmf computer technology co., ltd.' => self::ylmf,
+            'suse' => self::suse,
+            'syllable', 'syllable project' => self::syllable,
+            'symbianfoundation', 'symbian foundation', 'symbian-foundation' => self::symbianFoundation,
+            'ventana' => self::ventana,
+            'alibaba', 'alibaba group holding limited' => self::alibaba,
+            'ncomputing', 'n-computing' => self::nComputing,
+            'cloudmosa', 'cloud-mosa', 'cloudmosa inc.' => self::cloudMosa,
+            'vizio' => self::vizio,
+            'dec', 'digital equipment corporation' => self::dec,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1351,6 +1430,18 @@ enum Company: string implements CompanyInterface
             self::haiku => 'Haiku, Inc.',
             self::hp => 'HP Inc.',
             self::vitanuova => 'Vita Nuova Holdings Ltd',
+            self::sun => 'Sun Microsystems, Inc.',
+            self::kaios => 'KaiOS Technologies',
+            self::canonical => 'Canonical Foundation',
+            self::jide => 'Jide Technology',
+            self::rim => 'Research in Motion Limited',
+            self::jolla => 'Jolla Ltd.',
+            self::slackware => 'Slackware Linux, Inc.',
+            self::ylmf => 'YLMF Computer Technology Co., Ltd.',
+            self::syllable => 'Syllable Project',
+            self::alibaba => 'Alibaba Group Holding Limited',
+            self::cloudMosa => 'CloudMosa Inc.',
+            self::dec => 'Digital Equipment Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -1448,6 +1539,13 @@ enum Company: string implements CompanyInterface
             self::softwareInThePublicInterest => 'software-in-the-public-interest',
             self::freebsd => 'free-bsd-foundation',
             self::vitanuova => 'vita-nuova',
+            self::sun => 'sun-microsystems',
+            self::linuxFoundation => 'linux-foundation',
+            self::fabienCoeurjoly => 'fabien coeurjoly',
+            self::acceleratedTechnology => 'accelerated-technology',
+            self::symbianFoundation => 'symbian-foundation',
+            self::nComputing => 'n-computing',
+            self::cloudMosa => 'cloud-mosa',
             default => $this->name,
         };
     }

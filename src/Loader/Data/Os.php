@@ -31,6 +31,7 @@ use function is_string;
 use function sprintf;
 use function str_replace;
 
+/** @deprecated will be removed */
 final class Os implements DataInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/platforms';

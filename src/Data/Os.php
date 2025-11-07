@@ -20,6 +20,7 @@ use BrowserDetector\Version\FirefoxOsFactory;
 use BrowserDetector\Version\IosFactory;
 use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
+use BrowserDetector\Version\RimOsFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
@@ -231,7 +232,7 @@ enum Os: string implements OsInterface
 
     case aros = 'AROS';
 
-    case turbolinux = 'Turbolinux';
+    case turboLinux = 'Turbolinux';
 
     case genix = 'GENIX';
 
@@ -263,13 +264,13 @@ enum Os: string implements OsInterface
 
     case raspbian = 'Raspbian';
 
-    case fedoralinux = 'Fedora Linux';
+    case fedoraLinux = 'Fedora Linux';
 
-    case redhatlinux = 'Redhat Linux';
+    case redhatLinux = 'Redhat Linux';
 
     case freebsd = 'FreeBSD';
 
-    case gentoolinux = 'Gentoo Linux';
+    case gentooLinux = 'Gentoo Linux';
 
     case haiku = 'Haiku';
 
@@ -280,6 +281,76 @@ enum Os: string implements OsInterface
     case tru64unix = 'Tru64 UNIX';
 
     case webos = 'webOS';
+
+    case infernoOs = 'Inferno OS';
+
+    case javaos = 'JavaOS';
+
+    case kaios = 'KaiOS';
+
+    case kubuntu = 'Kubuntu';
+
+    case ubuntu = 'Ubuntu';
+
+    case xubuntu = 'Xubuntu';
+
+    case linux = 'Linux';
+
+    case maemo = 'Maemo';
+
+    case meego = 'MeeGo';
+
+    case tizen = 'Tizen';
+
+    case mandrivaLinux = 'Mandriva Linux';
+
+    case morphos = 'MorphOS';
+
+    case mre = 'MRE';
+
+    case nintendoOs = 'Nintendo OS';
+
+    case nintendoSwitchOs = 'Nintendo Switch OS';
+
+    case nucleus = 'Nucleus';
+
+    case opensolaris = 'OpenSolaris';
+
+    case solaris = 'Solaris';
+
+    case sunos = 'SunOS';
+
+    case palmOs = 'PalmOS';
+
+    case remixOs = 'Remix OS';
+
+    case rimOs = 'RIM OS';
+
+    case rimTabletOs = 'RIM Tablet OS';
+
+    case sailfishOs = 'SailfishOS';
+
+    case slackwareLinux = 'Slackware Linux';
+
+    case startos = 'StartOS';
+
+    case suseLinux = 'Suse Linux';
+
+    case syllable = 'Syllable';
+
+    case symbianOs = 'Symbian OS';
+
+    case ventanaLinux = 'Ventana Linux';
+
+    case yunOs = 'Yun OS';
+
+    case leafOs = 'LeafOS';
+
+    case puffinOs = 'Puffin OS';
+
+    case viziOs = 'ViziOS';
+
+    case ultrix = 'ULTRIX';
 
     /**
      * @throws UnexpectedValueException
@@ -390,7 +461,7 @@ enum Os: string implements OsInterface
             'wophone', 'wo-phone' => self::wophone,
             'starbladeos', 'star-blade-os', 'star-blade os' => self::starbladeos,
             'aros' => self::aros,
-            'turbolinux' => self::turbolinux,
+            'turbolinux' => self::turboLinux,
             'genix' => self::genix,
             'nextstep', 'next-step' => self::nextstep,
             'newsos', 'news-os' => self::newsos,
@@ -406,15 +477,50 @@ enum Os: string implements OsInterface
             'debian' => self::debian,
             'debianwithfreebsdkernel', 'debian with freebsd kernel' => self::debianWithFreeBSDKernel,
             'raspbian' => self::raspbian,
-            'fedoralinux', 'fedora linux' => self::fedoralinux,
-            'redhatlinux', 'redhat linux' => self::redhatlinux,
+            'fedoralinux', 'fedora linux' => self::fedoraLinux,
+            'redhatlinux', 'redhat linux' => self::redhatLinux,
             'freebsd' => self::freebsd,
-            'gentoolinux', 'gentoo linux' => self::gentoolinux,
+            'gentoolinux', 'gentoo linux' => self::gentooLinux,
             'haiku' => self::haiku,
             'hpux', 'hp-ux' => self::hpux,
             'openvms' => self::openvms,
             'tru64unix', 'tru64 unix' => self::tru64unix,
             'webos' => self::webos,
+            'infernoos', 'inferno os' => self::infernoOs,
+            'javaos', 'java' => self::javaos,
+            'kaios' => self::kaios,
+            'kubuntu' => self::kubuntu,
+            'ubuntu' => self::ubuntu,
+            'xubuntu' => self::xubuntu,
+            'linux' => self::linux,
+            'maemo' => self::maemo,
+            'meego' => self::meego,
+            'tizen' => self::tizen,
+            'mandrivalinux', 'mandriva linux' => self::mandrivaLinux,
+            'morphos', 'morph-os' => self::morphos,
+            'mre', 'maui runtime environment' => self::mre,
+            'nintendoos', 'nintendo os' => self::nintendoOs,
+            'nintendoswitchos', 'nintendo switch os' => self::nintendoSwitchOs,
+            'nucleus', 'nucleus os' => self::nucleus,
+            'opensolaris' => self::opensolaris,
+            'solaris' => self::solaris,
+            'sunos' => self::sunos,
+            'palmos' => self::palmOs,
+            'remixos', 'remix os' => self::remixOs,
+            'rimos', 'rim os' => self::rimOs,
+            'rimtabletos', 'rim tablet os' => self::rimTabletOs,
+            'sailfishos' => self::sailfishOs,
+            'slackwarelinux', 'slackware linux' => self::slackwareLinux,
+            'startos' => self::startos,
+            'suselinux', 'suse linux' => self::suseLinux,
+            'syllable' => self::syllable,
+            'symbianos', 'symbian os', 'symbian' => self::symbianOs,
+            'ventanalinux', 'ventana linux' => self::ventanaLinux,
+            'yunos', 'yun os' => self::yunOs,
+            'leafos', 'leaf-os' => self::leafOs,
+            'puffinos', 'puffin os', 'puffin-os' => self::puffinOs,
+            'vizios', 'vizi-os' => self::viziOs,
+            'ultrix' => self::ultrix,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -433,6 +539,7 @@ enum Os: string implements OsInterface
             self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows NT',
             self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81 => 'Windows Phone OS',
             self::windowsrt62, self::windowsrt63 => 'Windows RT',
+            self::nucleus => 'Nucleus OS',
             default => $this->value,
         };
     }
@@ -455,6 +562,7 @@ enum Os: string implements OsInterface
             self::windowsnt63 => 'Windows 8.1',
             self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81 => 'Windows Phone OS',
             self::windowsrt62, self::windowsrt63 => 'Windows RT',
+            self::mre => 'MAUI Runtime Environment',
             self::unknown => null,
             default => $this->value,
         };
@@ -482,11 +590,37 @@ enum Os: string implements OsInterface
             self::bsd => Company::berkeley,
             self::dangeros => Company::danger,
             self::debian, self::debianWithFreeBSDKernel, self::raspbian => Company::softwareInThePublicInterest,
-            self::fedoralinux, self::redhatlinux => Company::redhat,
+            self::fedoraLinux, self::redhatLinux => Company::redhat,
             self::freebsd => Company::freebsd,
-            self::gentoolinux => Company::gentoo,
+            self::gentooLinux => Company::gentoo,
             self::haiku => Company::haiku,
             self::hpux, self::openvms, self::tru64unix, self::webos => Company::hp,
+            self::infernoOs => Company::vitanuova,
+            self::javaos => Company::sun,
+            self::kaios => Company::kaios,
+            self::kubuntu, self::ubuntu, self::xubuntu => Company::canonical,
+            self::linux, self::maemo, self::meego, self::tizen => Company::linuxFoundation,
+            self::mandrivaLinux => Company::mandriva,
+            self::morphos => Company::fabienCoeurjoly,
+            self::mre => Company::mediatek,
+            self::nintendoOs, self::nintendoSwitchOs => Company::nintendo,
+            self::nucleus => Company::acceleratedTechnology,
+            self::opensolaris, self::solaris, self::sunos => Company::oracle,
+            self::palmOs => Company::palm,
+            self::remixOs => Company::jide,
+            self::rimOs, self::rimTabletOs => Company::rim,
+            self::sailfishOs => Company::jolla,
+            self::slackwareLinux => Company::slackware,
+            self::startos => Company::ylmf,
+            self::suseLinux => Company::suse,
+            self::syllable => Company::syllable,
+            self::symbianOs => Company::symbianFoundation,
+            self::ventanaLinux => Company::ventana,
+            self::yunOs => Company::alibaba,
+            self::leafOs => Company::nComputing,
+            self::puffinOs => Company::cloudMosa,
+            self::viziOs => Company::vizio,
+            self::ultrix => Company::dec,
             default => Company::unknown,
         };
     }
@@ -530,7 +664,7 @@ enum Os: string implements OsInterface
             self::windowsce => ['factory' => VersionBuilderFactory::class, 'search' => ['Windows CE', 'WindowsCE']],
             self::wophone => ['factory' => VersionBuilderFactory::class, 'search' => ['WoPhone']],
             self::aros => ['factory' => VersionBuilderFactory::class, 'search' => ['AROS']],
-            self::turbolinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Turbolinux']],
+            self::turboLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Turbolinux']],
             self::genix => ['factory' => VersionBuilderFactory::class, 'search' => ['GENIX']],
             self::newsos => ['factory' => VersionBuilderFactory::class, 'search' => ['NEWS-OS']],
             self::lindows => ['factory' => VersionBuilderFactory::class, 'search' => ['Lindows']],
@@ -538,12 +672,35 @@ enum Os: string implements OsInterface
             self::os2 => ['factory' => VersionBuilderFactory::class, 'search' => ['OS\/2', 'Warp']],
             self::beos => ['factory' => VersionBuilderFactory::class, 'search' => ['BeOS']],
             self::bsd => ['factory' => VersionBuilderFactory::class, 'search' => ['BSD']],
-            self::fedoralinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Fedora\/[0-9\.\-]+\.fc', 'Fedora']],
-            self::redhatlinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Red Hat']],
+            self::fedoraLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Fedora\/[0-9\.\-]+\.fc', 'Fedora']],
+            self::redhatLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Red Hat']],
             self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ['FreeBSD', 'freebsd']],
             self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenVMS']],
             self::tru64unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Tru64 UNIX', 'Digital Unix']],
             self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
+            self::kaios => ['factory' => VersionBuilderFactory::class, 'search' => ['kaios']],
+            self::kubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Kubuntu', 'kubuntu']],
+            self::ubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Ubuntu', 'ubuntu']],
+            self::xubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Xubuntu', 'xubuntu']],
+            self::maemo => ['factory' => VersionBuilderFactory::class, 'search' => ['Maemo']],
+            self::meego => ['factory' => VersionBuilderFactory::class, 'search' => ['MeeGo']],
+            self::tizen => ['factory' => VersionBuilderFactory::class, 'search' => ['Tizen']],
+            self::mre => ['factory' => VersionBuilderFactory::class, 'search' => ['MRE\\', 'MRE']],
+            self::nucleus => ['factory' => VersionBuilderFactory::class, 'search' => ['Nucleus']],
+            self::opensolaris => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenSolaris']],
+            self::solaris => ['factory' => VersionBuilderFactory::class, 'search' => ['Solaris']],
+            self::sunos => ['factory' => VersionBuilderFactory::class, 'search' => ['SunOS']],
+            self::palmOs => ['factory' => VersionBuilderFactory::class, 'search' => ['PalmOS']],
+            self::remixOs => ['factory' => VersionBuilderFactory::class, 'search' => ['RemixOS']],
+            self::rimTabletOs => ['factory' => VersionBuilderFactory::class, 'search' => ['RIM Tablet OS']],
+            self::slackwareLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Slackware']],
+            self::suseLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['SUSE']],
+            self::ventanaLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Ventana Linux', 'Ventana']],
+            self::yunOs => ['factory' => VersionBuilderFactory::class, 'search' => ['YunOs', 'AliyunOS']],
+            self::leafOs => ['factory' => VersionBuilderFactory::class, 'search' => ['LeafOS']],
+            self::puffinOs => ['factory' => VersionBuilderFactory::class, 'search' => ['Cloud Phone']],
+            self::viziOs => ['factory' => VersionBuilderFactory::class, 'search' => ['ViziOS']],
+            self::ultrix => ['factory' => VersionBuilderFactory::class, 'search' => ['ULTRIX']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::atvosx, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -553,6 +710,7 @@ enum Os: string implements OsInterface
             self::windowsphone => ['factory' => WindowsPhoneOsFactory::class, 'search' => null],
             self::debian, self::debianWithFreeBSDKernel => ['factory' => DebianFactory::class, 'search' => null],
             self::raspbian => ['factory' => RaspbianFactory::class, 'search' => null],
+            self::rimOs => ['factory' => RimOsFactory::class, 'search' => null],
             self::windows2003 => ['factory' => null, 'search' => null, 'value' => 2003],
             self::windows31, self::windowsnt31 => ['factory' => null, 'search' => null, 'value' => 3.1],
             self::windows311 => ['factory' => null, 'search' => null, 'value' => 3.11],
@@ -651,11 +809,29 @@ enum Os: string implements OsInterface
             self::os2 => 'os/2',
             self::dangeros => 'danger os',
             self::debianWithFreeBSDKernel => 'debian with freebsd kernel',
-            self::fedoralinux => 'fedora linux',
-            self::redhatlinux => 'redhat linux',
-            self::gentoolinux => 'gentoo linux',
+            self::fedoraLinux => 'fedora linux',
+            self::redhatLinux => 'redhat linux',
+            self::gentooLinux => 'gentoo linux',
             self::hpux => 'hp-ux',
             self::tru64unix => 'tru64 unix',
+            self::infernoOs => 'inferno os',
+            self::javaos => 'java',
+            self::mandrivaLinux => 'mandriva linux',
+            self::morphos => 'morph-os',
+            self::nintendoOs => 'nintendo os',
+            self::nintendoSwitchOs => 'nintendo switch os',
+            self::nucleus => 'nucleus os',
+            self::rimOs => 'rim os',
+            self::rimTabletOs => 'rim tablet os',
+            self::sailfishOs => 'sailfishos',
+            self::slackwareLinux => 'slackware linux',
+            self::suseLinux => 'suse linux',
+            self::symbianOs => 'symbian',
+            self::ventanaLinux => 'ventana linux',
+            self::yunOs => 'yun os',
+            self::leafOs => 'leaf-os',
+            self::puffinOs => 'puffin-os',
+            self::viziOs => 'vizi-os',
             default => $this->name,
         };
     }
