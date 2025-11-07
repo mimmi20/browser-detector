@@ -139,7 +139,7 @@ final class DetectorTest extends TestCase
                         'name' => 'HarmonyOS',
                         'marketingName' => 'HarmonyOS',
                         'version' => null,
-                        'manufacturer' => 'huawei',
+                        'manufacturer' => 'Huawei',
                         'bits' => null,
                     ],
                     'client' => [
@@ -185,7 +185,7 @@ final class DetectorTest extends TestCase
                         'name' => 'HarmonyOS',
                         'marketingName' => 'HarmonyOS',
                         'version' => '3.0.0',
-                        'manufacturer' => 'huawei',
+                        'manufacturer' => 'Huawei',
                         'bits' => null,
                     ],
                     'client' => [
@@ -231,7 +231,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Android',
                         'marketingName' => 'Android',
                         'version' => '6.0.1',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                         'bits' => null,
                     ],
                     'client' => [
@@ -287,7 +287,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
                         'version' => '11.0.0',
-                        'manufacturer' => 'microsoft',
+                        'manufacturer' => 'Microsoft',
                         'bits' => null,
                     ],
                     'client' => [
@@ -343,7 +343,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
                         'version' => '10.0.0',
-                        'manufacturer' => 'microsoft',
+                        'manufacturer' => 'Microsoft',
                         'bits' => null,
                     ],
                     'client' => [
@@ -399,7 +399,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
                         'version' => '7.0.0',
-                        'manufacturer' => 'microsoft',
+                        'manufacturer' => 'Microsoft',
                         'bits' => null,
                     ],
                     'client' => [
@@ -455,7 +455,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
                         'version' => '8.0.0',
-                        'manufacturer' => 'microsoft',
+                        'manufacturer' => 'Microsoft',
                         'bits' => null,
                     ],
                     'client' => [
@@ -511,7 +511,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
                         'version' => '8.1.0',
-                        'manufacturer' => 'microsoft',
+                        'manufacturer' => 'Microsoft',
                         'bits' => null,
                     ],
                     'client' => [
@@ -557,7 +557,7 @@ final class DetectorTest extends TestCase
                         'name' => 'iOS',
                         'marketingName' => 'iOS',
                         'version' => '7.0.4',
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                         'bits' => null,
                     ],
                     'client' => [
@@ -603,7 +603,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Mac OS X',
                         'marketingName' => 'Mac OS X',
                         'version' => '10.9.3',
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                         'bits' => null,
                     ],
                     'client' => [
@@ -695,7 +695,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Android',
                         'marketingName' => 'Android',
                         'version' => '8.1.0',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                         'bits' => null,
                     ],
                     'client' => [
@@ -741,7 +741,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Android',
                         'marketingName' => 'Android',
                         'version' => '4.2.1',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                         'bits' => null,
                     ],
                     'client' => [
@@ -787,7 +787,7 @@ final class DetectorTest extends TestCase
                         'name' => 'iOS',
                         'marketingName' => 'iOS',
                         'version' => '15.1.1',
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                         'bits' => null,
                     ],
                     'client' => [
@@ -833,7 +833,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Android',
                         'marketingName' => 'Android',
                         'version' => '10.0.0',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                         'bits' => null,
                     ],
                     'client' => [
@@ -879,7 +879,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Android',
                         'marketingName' => 'Android',
                         'version' => '10.0.0',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                         'bits' => null,
                     ],
                     'client' => [
@@ -925,7 +925,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Android',
                         'marketingName' => 'Android',
                         'version' => '14.0.0',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                         'bits' => null,
                     ],
                     'client' => [
@@ -971,7 +971,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Android',
                         'marketingName' => 'Android',
                         'version' => null,
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                         'bits' => null,
                     ],
                     'client' => [
@@ -1017,7 +1017,7 @@ final class DetectorTest extends TestCase
                         'name' => 'iOS',
                         'marketingName' => 'iOS',
                         'version' => '12.1.0',
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                         'bits' => null,
                     ],
                     'client' => [
@@ -1161,7 +1161,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Fire OS',
                         'marketingName' => 'Fire OS',
                         'version' => '8.0.0',
-                        'manufacturer' => 'amazon',
+                        'manufacturer' => 'Amazon',
                         'bits' => null,
                     ],
                     'client' => [

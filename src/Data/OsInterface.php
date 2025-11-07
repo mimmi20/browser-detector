@@ -13,13 +13,23 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Data;
 
-interface CompanyInterface
+interface OsInterface
 {
     /** @throws void */
     public function getName(): string | null;
 
     /** @throws void */
-    public function getBrandname(): string | null;
+    public function getMarketingName(): string | null;
+
+    /** @throws void */
+    public function getManufacturer(): Company;
+
+    /**
+     * @return array{factory: class-string|null, search: array<int, string>|null, value?: float|int|string}
+     *
+     * @throws void
+     */
+    public function getVersion(): array;
 
     /** @throws void */
     public function getKey(): string;

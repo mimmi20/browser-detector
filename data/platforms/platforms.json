@@ -1,13 +1,4 @@
 {
-  "unknown": {
-    "name": null,
-    "marketingName": null,
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "aix": {
     "name": "AIX",
     "marketingName": "AIX",
@@ -16,93 +7,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AIX"
-      ]
-    }
-  },
-  "amiga os": {
-    "name": "Amiga OS",
-    "marketingName": "Amiga OS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AmigaOS"
-      ]
-    }
-  },
-  "android": {
-    "name": "Android",
-    "marketingName": "Android",
-    "manufacturer": "google",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\AndroidOsFactory",
-      "search": null
-    }
-  },
-  "aosp": {
-    "name": "Android Opensource Project",
-    "marketingName": "AOSP",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "ark linux": {
-    "name": "Ark Linux",
-    "marketingName": "Ark Linux",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Ark Linux"
-      ]
-    }
-  },
-  "asha": {
-    "name": "Asha",
-    "marketingName": "Asha",
-    "manufacturer": "nokia",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "atv os x": {
-    "name": "ATV OS X",
-    "marketingName": "ATV OS X",
-    "manufacturer": "apple",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\IosFactory",
-      "search": null
-    }
-  },
-  "audio os": {
-    "name": "audioOS",
-    "marketingName": "audioOS",
-    "manufacturer": "apple",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\IosFactory",
-      "search": null
-    }
-  },
-  "backtrack linux": {
-    "name": "BackTrack Linux",
-    "marketingName": "BackTrack Linux",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "bada": {
-    "name": "Bada",
-    "marketingName": "Bada",
-    "manufacturer": "samsung",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Bada"
       ]
     }
   },
@@ -117,18 +21,6 @@
       ]
     }
   },
-  "brew": {
-    "name": "Brew",
-    "marketingName": "Brew",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "BREW; U;",
-        "BREW;?"
-      ]
-    }
-  },
   "bsd": {
     "name": "BSD",
     "marketingName": "BSD",
@@ -140,83 +32,6 @@
       ]
     }
   },
-  "cellos": {
-    "name": "CellOS",
-    "marketingName": "CellOS",
-    "manufacturer": "sony",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "orbisos": {
-    "name": "Orbis OS",
-    "marketingName": "Orbis OS",
-    "manufacturer": "sony",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "cent os linux": {
-    "name": "Cent OS Linux",
-    "marketingName": "Cent OS Linux",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "cos": {
-    "name": "Chinese Operating System",
-    "marketingName": "COS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "COS like Android",
-        "Chinese Operating System"
-      ]
-    }
-  },
-  "chromeos": {
-    "name": "ChromeOS",
-    "marketingName": "ChromeOS",
-    "manufacturer": "google",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\ChromeOsFactory",
-      "search": null
-    }
-  },
-  "cp/m": {
-    "name": "CP/M",
-    "marketingName": "CP/M",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "cyanogenmod": {
-    "name": "CyanogenMod",
-    "marketingName": "CyanogenMod",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "CyanogenMod"
-      ]
-    }
-  },
-  "cygwin": {
-    "name": "Cygwin",
-    "marketingName": "Cygwin",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "danger os": {
     "name": "Danger OS",
     "marketingName": "Danger OS",
@@ -224,17 +39,6 @@
     "version": {
       "class": null,
       "search": null
-    }
-  },
-  "darwin": {
-    "name": "Darwin",
-    "marketingName": "Darwin",
-    "manufacturer": "apple",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Darwin"
-      ]
     }
   },
   "debian": {
@@ -255,17 +59,6 @@
       "search": null
     }
   },
-  "dragonfly bsd": {
-    "name": "DragonFly BSD",
-    "marketingName": "DragonFly BSD",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "DragonFly"
-      ]
-    }
-  },
   "fedora linux": {
     "name": "Fedora Linux",
     "marketingName": "Fedora Linux",
@@ -276,15 +69,6 @@
         "Fedora\\/[0-9\\.\\-]+\\.fc",
         "Fedora"
       ]
-    }
-  },
-  "firefoxos": {
-    "name": "Firefox OS",
-    "marketingName": "Firefox OS",
-    "manufacturer": "mozilla-foundation",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\FirefoxOsFactory",
-      "search": null
     }
   },
   "freebsd": {
@@ -303,15 +87,6 @@
     "name": "Gentoo Linux",
     "marketingName": "Gentoo Linux",
     "manufacturer": "gentoo",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "geos": {
-    "name": "Geos",
-    "marketingName": "Geos",
-    "manufacturer": "unknown",
     "version": {
       "class": null,
       "search": null
@@ -344,24 +119,6 @@
       "search": null
     }
   },
-  "ios": {
-    "name": "iOS",
-    "marketingName": "iOS",
-    "manufacturer": "apple",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\IosFactory",
-      "search": null
-    }
-  },
-  "irix": {
-    "name": "IRIX",
-    "marketingName": "IRIX",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "java": {
     "name": "JavaOS",
     "marketingName": "JavaOS",
@@ -369,17 +126,6 @@
     "version": {
       "class": null,
       "search": null
-    }
-  },
-  "joli os": {
-    "name": "Joli OS",
-    "marketingName": "Joli OS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Joli OS"
-      ]
     }
   },
   "kaios": {
@@ -391,15 +137,6 @@
       "search": [
         "kaios"
       ]
-    }
-  },
-  "kantonix": {
-    "name": "Kantonix",
-    "marketingName": "Kantonix",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
     }
   },
   "kubuntu": {
@@ -414,17 +151,6 @@
       ]
     }
   },
-  "liberate": {
-    "name": "Liberate",
-    "marketingName": "Liberate",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Liberate"
-      ]
-    }
-  },
   "linux": {
     "name": "Linux",
     "marketingName": "Linux",
@@ -432,38 +158,6 @@
     "version": {
       "class": null,
       "search": null
-    }
-  },
-  "linux mint": {
-    "name": "Linux Mint",
-    "marketingName": "Linux Mint",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Mint",
-        "mint"
-      ]
-    }
-  },
-  "mac os x": {
-    "name": "Mac OS X",
-    "marketingName": "Mac OS X",
-    "manufacturer": "apple",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\MacosFactory",
-      "search": null
-    }
-  },
-  "macintosh": {
-    "name": "Macintosh",
-    "marketingName": "Macintosh",
-    "manufacturer": "apple",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Macintosh"
-      ]
     }
   },
   "linux smartphone os (maemo)": {
@@ -497,38 +191,6 @@
       ]
     }
   },
-  "miui os": {
-    "name": "Miui OS",
-    "marketingName": "Miui OS",
-    "manufacturer": "xiaomi",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "MIUI\\/V",
-        "MIUI"
-      ]
-    }
-  },
-  "moblin": {
-    "name": "Moblin",
-    "marketingName": "Moblin",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "mocordroid": {
-    "name": "MocorDroid",
-    "marketingName": "MocorDroid",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "MocorDroid"
-      ]
-    }
-  },
   "morph-os": {
     "name": "MorphOS",
     "marketingName": "MorphOS",
@@ -550,26 +212,6 @@
       ]
     }
   },
-  "netbsd": {
-    "name": "NetBSD",
-    "marketingName": "NetBSD",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "NetBSD"
-      ]
-    }
-  },
-  "netcast": {
-    "name": "NetCast",
-    "marketingName": "NetCast",
-    "manufacturer": "lg",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "nintendo os": {
     "name": "Nintendo OS",
     "marketingName": "Nintendo OS",
@@ -588,15 +230,6 @@
       "search": null
     }
   },
-  "nokia os": {
-    "name": "Nokia OS",
-    "marketingName": "Nokia OS",
-    "manufacturer": "nokia",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "nucleus os": {
     "name": "Nucleus OS",
     "marketingName": "Nucleus",
@@ -606,26 +239,6 @@
       "search": [
         "Nucleus"
       ]
-    }
-  },
-  "openbsd": {
-    "name": "OpenBSD",
-    "marketingName": "OpenBSD",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "OpenBSD"
-      ]
-    }
-  },
-  "openpda": {
-    "name": "OpenPDA",
-    "marketingName": "OpenPDA",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
     }
   },
   "opensolaris": {
@@ -735,57 +348,10 @@
       ]
     }
   },
-  "risc os": {
-    "name": "RISC OS",
-    "marketingName": "RISC OS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "RISC"
-      ]
-    }
-  },
-  "ruby": {
-    "name": "Ruby",
-    "marketingName": "Ruby",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "sailfishos": {
     "name": "SailfishOS",
     "marketingName": "SailfishOS",
     "manufacturer": "jolla",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "series30": {
-    "name": "Series 30",
-    "marketingName": "Series 30",
-    "manufacturer": "nokia",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "series40": {
-    "name": "Series 40",
-    "marketingName": "Series 40",
-    "manufacturer": "nokia",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "series60": {
-    "name": "Series 60",
-    "marketingName": "Series 60",
-    "manufacturer": "nokia",
     "version": {
       "class": null,
       "search": null
@@ -866,15 +432,6 @@
       ]
     }
   },
-  "threadx": {
-    "name": "ThreadX",
-    "marketingName": "ThreadX",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "tizen": {
     "name": "Tizen",
     "marketingName": "Tizen",
@@ -910,17 +467,6 @@
       ]
     }
   },
-  "unix": {
-    "name": "Unix",
-    "marketingName": "Unix",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Unix"
-      ]
-    }
-  },
   "ventana linux": {
     "name": "Ventana Linux",
     "marketingName": "Ventana Linux",
@@ -930,26 +476,6 @@
       "search": [
         "Ventana Linux",
         "Ventana"
-      ]
-    }
-  },
-  "watch os": {
-    "name": "watchOS",
-    "marketingName": "watchOS",
-    "manufacturer": "apple",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\IosFactory",
-      "search": null
-    }
-  },
-  "lg webos": {
-    "name": "webOS",
-    "marketingName": "webOS",
-    "manufacturer": "lg",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Web0S"
       ]
     }
   },
@@ -966,375 +492,6 @@
       ]
     }
   },
-  "windows": {
-    "name": "Windows",
-    "marketingName": "Windows",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "windows 2003": {
-    "name": "Windows 2003",
-    "marketingName": "Windows 2003",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 2003
-    }
-  },
-  "windows 3.1": {
-    "name": "Windows 3.1",
-    "marketingName": "Windows 3.1",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 3.1
-    }
-  },
-  "windows 3.11": {
-    "name": "Windows 3.11",
-    "marketingName": "Windows 3.11",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 3.11
-    }
-  },
-  "windows 95": {
-    "name": "Windows 95",
-    "marketingName": "Windows 95",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 95
-    }
-  },
-  "windows 98": {
-    "name": "Windows 98",
-    "marketingName": "Windows 98",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 98
-    }
-  },
-  "windows ce": {
-    "name": "Windows CE",
-    "marketingName": "Windows CE",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Windows CE",
-        "WindowsCE"
-      ]
-    }
-  },
-  "windows iot 10.0": {
-    "name": "Windows IoT",
-    "marketingName": "Windows IoT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 10
-    }
-  },
-  "windows me": {
-    "name": "Windows ME",
-    "marketingName": "Windows ME",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": "ME"
-    }
-  },
-  "windows mobile os": {
-    "name": "Windows Mobile OS",
-    "marketingName": "Windows Mobile OS",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\WindowsMobileOsFactory",
-      "search": null
-    }
-  },
-  "windows nt": {
-    "name": "Windows NT",
-    "marketingName": "Windows NT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "windows nt 10.0": {
-    "name": "Windows",
-    "marketingName": "Windows",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 10
-    }
-  },
-  "windows nt 3.1": {
-    "name": "Windows NT",
-    "marketingName": "Windows NT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 3.1
-    }
-  },
-  "windows nt 3.5": {
-    "name": "Windows NT",
-    "marketingName": "Windows NT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 3.5
-    }
-  },
-  "windows nt 3.51": {
-    "name": "Windows NT",
-    "marketingName": "Windows NT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 3.51
-    }
-  },
-  "windows nt 4.0": {
-    "name": "Windows NT",
-    "marketingName": "Windows NT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 4
-    }
-  },
-  "windows nt 4.1": {
-    "name": "Windows NT",
-    "marketingName": "Windows NT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 4.1
-    }
-  },
-  "windows nt 4.10": {
-    "name": "Windows NT",
-    "marketingName": "Windows NT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": "4.10"
-    }
-  },
-  "windows nt 5.0": {
-    "name": "Windows NT",
-    "marketingName": "Windows 2000",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 5
-    }
-  },
-  "windows nt 5.01": {
-    "name": "Windows NT",
-    "marketingName": "Windows 2000",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": "5.01"
-    }
-  },
-  "windows nt 5.1": {
-    "name": "Windows NT",
-    "marketingName": "Windows XP",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 5.1
-    }
-  },
-  "windows nt 5.2": {
-    "name": "Windows NT",
-    "marketingName": "Windows XP",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 5.2
-    }
-  },
-  "windows nt 5.3": {
-    "name": "Windows NT 5.3",
-    "marketingName": "Windows XP",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 5.3
-    }
-  },
-  "windows nt 6.0": {
-    "name": "Windows NT 6.0",
-    "marketingName": "Windows Vista",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 6
-    }
-  },
-  "windows nt 6.1": {
-    "name": "Windows",
-    "marketingName": "Windows",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 7
-    }
-  },
-  "windows nt 6.2": {
-    "name": "Windows",
-    "marketingName": "Windows",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 8
-    }
-  },
-  "windows nt 6.3": {
-    "name": "Windows",
-    "marketingName": "Windows",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 8.1
-    }
-  },
-  "windows nt 6.4": {
-    "name": "Windows",
-    "marketingName": "Windows",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 10
-    }
-  },
-  "windows phone": {
-    "name": "Windows Phone OS",
-    "marketingName": "Windows Phone OS",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\WindowsPhoneOsFactory",
-      "search": null
-    }
-  },
-  "windows phone 10.0": {
-    "name": "Windows Phone OS",
-    "marketingName": "Windows Phone OS",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": null,
-      "search": null,
-      "value": 10
-    }
-  },
-  "windows phone 6.5": {
-    "name": "Windows Phone OS",
-    "marketingName": "Windows Phone OS",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": null,
-      "search": null,
-      "value": 6.5
-    }
-  },
-  "windows phone 7.5": {
-    "name": "Windows Phone OS",
-    "marketingName": "Windows Phone OS",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": null,
-      "search": null,
-      "value": 7.5
-    }
-  },
-  "windows phone 8.0": {
-    "name": "Windows Phone OS",
-    "marketingName": "Windows Phone OS",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": null,
-      "search": null,
-      "value": 8
-    }
-  },
-  "windows phone 8.1": {
-    "name": "Windows Phone OS",
-    "marketingName": "Windows Phone OS",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": null,
-      "search": null,
-      "value": 8.1
-    }
-  },
-  "windows nt 6.2; arm": {
-    "name": "Windows RT",
-    "marketingName": "Windows RT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 8
-    }
-  },
-  "windows nt 6.3; arm": {
-    "name": "Windows RT",
-    "marketingName": "Windows RT",
-    "manufacturer": "microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 8.1
-    }
-  },
-  "wyderos": {
-    "name": "WyderOS",
-    "marketingName": "WyderOS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "WyderOS"
-      ]
-    }
-  },
   "xubuntu": {
     "name": "Xubuntu",
     "marketingName": "Xubuntu",
@@ -1347,17 +504,6 @@
       ]
     }
   },
-  "yi": {
-    "name": "Yi",
-    "marketingName": "Yi",
-    "manufacturer": "baidu",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Yi"
-      ]
-    }
-  },
   "yun os": {
     "name": "Yun OS",
     "marketingName": "Yun OS",
@@ -1367,57 +513,6 @@
       "search": [
         "YunOs",
         "AliyunOS"
-      ]
-    }
-  },
-  "zenwalk gnu linux": {
-    "name": "Zenwalk GNU Linux",
-    "marketingName": "Zenwalk GNU Linux",
-    "manufacturer": "unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
-  "harmony-os": {
-    "name": "HarmonyOS",
-    "marketingName": "HarmonyOS",
-    "manufacturer": "huawei",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "HarmonyOS"
-      ]
-    }
-  },
-  "arch-linux": {
-    "name": "ArchLinux",
-    "marketingName": "ArchLinux",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": null,
-      "search": null
-    }
-  },
-  "pardus": {
-    "name": "Pardus",
-    "marketingName": "Pardus",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Pardus"
-      ]
-    }
-  },
-  "fuchsia": {
-    "name": "Fuchsia",
-    "marketingName": "Fuchsia",
-    "manufacturer": "google",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Fuchsia"
       ]
     }
   },
@@ -1443,26 +538,6 @@
       ]
     }
   },
-  "rising-os": {
-    "name": "risingOS",
-    "marketingName": "risingOS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "RisingOS"
-      ]
-    }
-  },
-  "azure-linux": {
-    "name": "Azure Linux",
-    "marketingName": "Azure Linux",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": null,
-      "search": null
-    }
-  },
   "vizi-os": {
     "name": "ViziOS",
     "marketingName": "ViziOS",
@@ -1471,101 +546,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ViziOS"
-      ]
-    }
-  },
-  "black-panther-os": {
-    "name": "blackPanther OS",
-    "marketingName": "blackPanther OS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "blackPanther OS"
-      ]
-    }
-  },
-  "kin-os": {
-    "name": "KIN OS",
-    "marketingName": "KIN OS",
-    "manufacturer": "microsoft",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "KIN\\.(?:One|Two)"
-      ]
-    }
-  },
-  "wo-phone": {
-    "name": "WoPhone",
-    "marketingName": "WoPhone",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "WoPhone"
-      ]
-    }
-  },
-  "star-blade-os": {
-    "name": "Star-Blade OS",
-    "marketingName": "Star-Blade OS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": null,
-      "search": null
-    }
-  },
-  "aros": {
-    "name": "AROS",
-    "marketingName": "AROS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AROS"
-      ]
-    }
-  },
-  "turbolinux": {
-    "name": "Turbolinux",
-    "marketingName": "Turbolinux",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Turbolinux"
-      ]
-    }
-  },
-  "genix": {
-    "name": "GENIX",
-    "marketingName": "GENIX",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "GENIX"
-      ]
-    }
-  },
-  "next-step": {
-    "name": "NeXTSTEP",
-    "marketingName": "NeXTSTEP",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": null,
-      "search": null
-    }
-  },
-  "news-os": {
-    "name": "NEWS-OS",
-    "marketingName": "NEWS-OS",
-    "manufacturer": "sony",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "NEWS-OS"
       ]
     }
   },
@@ -1578,53 +558,6 @@
       "search": [
         "ULTRIX"
       ]
-    }
-  },
-  "lindows": {
-    "name": "Lindows",
-    "marketingName": "Lindows",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Lindows"
-      ]
-    }
-  },
-  "wear-os": {
-    "name": "Wear OS",
-    "marketingName": "Wear OS",
-    "manufacturer": "google",
-    "version": {
-      "factory": null,
-      "search": null
-    }
-  },
-  "android-tv": {
-    "name": "Android TV",
-    "marketingName": "Android TV",
-    "manufacturer": "google",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\AndroidOsFactory",
-      "search": null
-    }
-  },
-  "lineageos": {
-    "name": "LineageOS",
-    "marketingName": "LineageOS",
-    "manufacturer": "unknown",
-    "version": {
-      "factory": null,
-      "search": null
-    }
-  },
-  "fire-os": {
-    "name": "Fire OS",
-    "marketingName": "Fire OS",
-    "manufacturer": "amazon",
-    "version": {
-      "factory": null,
-      "search": null
     }
   }
 }

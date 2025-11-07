@@ -2440,6 +2440,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'DMOAO',
                 'key' => 'dmoao',
             ],
+            [
+                'type' => 'Mecool',
+                'name' => 'Mecool',
+                'brandname' => 'Mecool',
+                'key' => 'mecool',
+            ],
         ];
     }
 

@@ -811,6 +811,8 @@ enum Company: string implements CompanyInterface
 
     case dmoao = 'DMOAO';
 
+    case mecool = 'Mecool';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1215,6 +1217,7 @@ enum Company: string implements CompanyInterface
             'canaima' => self::canaima,
             'atouch' => self::atouch,
             'dmoao' => self::dmoao,
+            'mecool' => self::mecool,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

@@ -21,6 +21,7 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
+use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
@@ -92,6 +93,25 @@ final class Os implements DataInterface
     #[Override]
     public function getItem(string $stringKey): DataOs | null
     {
+        if (array_key_exists($stringKey, $this->items)) {
+            return $this->items[$stringKey];
+        }
+
+        try {
+            $os = \BrowserDetector\Data\Os::fromName($stringKey);
+
+            $data = new DataOs(
+                name: $os->getName(),
+                marketingName: $os->getMarketingName(),
+                manufacturer: $os->getManufacturer()->getBrandname(),
+                version: (object) $os->getVersion(),
+            );
+
+            $this->items[$stringKey] = $data;
+        } catch (UnexpectedValueException) {
+            // do nothing
+        }
+
         return $this->items[$stringKey] ?? null;
     }
 }
