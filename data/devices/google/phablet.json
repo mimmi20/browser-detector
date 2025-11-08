@@ -30,5 +30,53 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "google ggh2x": {
+    "deviceName": "GGH2X",
+    "marketingName": "Pixel 9 Pro Fold",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2152,
+      "height": 2076,
+      "touch": true,
+      "size": 8
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "google gc15s": {
+    "deviceName": "GC15S",
+    "marketingName": "Pixel 9 Pro Fold",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2152,
+      "height": 2076,
+      "touch": true,
+      "size": 8
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "google pixel 9 pro fold": {
+    "deviceName": "Pixel 9 Pro Fold",
+    "marketingName": "Pixel 9 Pro Fold",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2152,
+      "height": 2076,
+      "touch": true,
+      "size": 8
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

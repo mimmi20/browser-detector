@@ -888,6 +888,16 @@ enum Company: string implements CompanyInterface
 
     case dec = 'DEC';
 
+    case enova = 'eNOVA';
+
+    case wozifan = 'WOZIFAN';
+
+    case tjd = 'TJD';
+
+    case rocket = 'Rocket';
+
+    case sunwind = 'SunWind';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1330,6 +1340,11 @@ enum Company: string implements CompanyInterface
             'cloudmosa', 'cloud-mosa', 'cloudmosa inc.' => self::cloudMosa,
             'vizio' => self::vizio,
             'dec', 'digital equipment corporation' => self::dec,
+            'enova' => self::enova,
+            'wozifan' => self::wozifan,
+            'tjd' => self::tjd,
+            'rocket' => self::rocket,
+            'sunwind', 'sun-wind' => self::sunwind,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1546,6 +1561,7 @@ enum Company: string implements CompanyInterface
             self::symbianFoundation => 'symbian-foundation',
             self::nComputing => 'n-computing',
             self::cloudMosa => 'cloud-mosa',
+            self::sunwind => 'sun-wind',
             default => $this->name,
         };
     }

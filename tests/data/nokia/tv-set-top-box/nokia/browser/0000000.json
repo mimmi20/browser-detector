@@ -5,11 +5,11 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Alcatel device",
-      "marketingName": "general Alcatel device",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "dualOrientation": null,
+      "deviceName": "Streaming Box 8000",
+      "marketingName": "Streaming Box 8000",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -17,16 +17,16 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
       "bits": null
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {

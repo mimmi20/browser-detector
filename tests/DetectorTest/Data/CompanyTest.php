@@ -2668,6 +2668,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'DEC',
                 'key' => 'dec',
             ],
+            [
+                'type' => 'eNOVA',
+                'name' => 'eNOVA',
+                'brandname' => 'eNOVA',
+                'key' => 'enova',
+            ],
+            [
+                'type' => 'WOZIFAN',
+                'name' => 'WOZIFAN',
+                'brandname' => 'WOZIFAN',
+                'key' => 'wozifan',
+            ],
+            [
+                'type' => 'TJD',
+                'name' => 'TJD',
+                'brandname' => 'TJD',
+                'key' => 'tjd',
+            ],
+            [
+                'type' => 'Rocket',
+                'name' => 'Rocket',
+                'brandname' => 'Rocket',
+                'key' => 'rocket',
+            ],
+            [
+                'type' => 'SunWind',
+                'name' => 'SunWind',
+                'brandname' => 'SunWind',
+                'key' => 'sun-wind',
+            ],
         ];
     }
 

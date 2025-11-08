@@ -1,15 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; ZKEMPLER_PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; A-STREAM Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.99 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Kempler and Strauss device",
-      "marketingName": "general Kempler and Strauss device",
-      "manufacturer": "kempler-strauss",
-      "brand": "kempler-strauss",
-      "dualOrientation": null,
+      "deviceName": "A-STREAM",
+      "marketingName": "A-STREAM",
+      "manufacturer": "blaupunkt",
+      "brand": "blaupunkt",
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -17,22 +17,22 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
+      "type": "tv-stick",
+      "ismobile": false,
+      "istv": true,
       "bits": null
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Chrome",
+      "name": "Android WebView",
       "modus": null,
-      "version": "110.0.0.0",
+      "version": "123.0.6312.99",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
@@ -40,7 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "110.0.0.0",
+      "version": "123.0.6312.99",
       "manufacturer": "google"
     }
   }

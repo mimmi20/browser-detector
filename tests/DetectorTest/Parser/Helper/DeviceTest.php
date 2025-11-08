@@ -2604,6 +2604,26 @@ final class DeviceTest extends TestCase
             ['HBP-AL00', 'huawei=huawei hbp-al00'],
             ['MIS-LX9', 'huawei=huawei mis-lx9'],
             ['MIS-AL00', 'huawei=huawei mis-al00'],
+            ['KOZ-AL00CM', 'huawei=huawei koz-al00cm'],
+            ['KOZ-AL00', 'huawei=huawei koz-al00'],
+            ['KOZ-AL40', 'huawei=huawei koz-al40'],
+            ['NZA-AL00', 'huawei=huawei nza-al00'],
+            ['FIN-AL60A', 'huawei=huawei fin-al60a'],
+            ['FIN-AL60', 'huawei=huawei fin-al60'],
+            ['HBN-LX9', 'huawei=huawei hbn-lx9'],
+            ['HBN-AL00', 'huawei=huawei hbn-al00'],
+            ['HBN-AL10', 'huawei=huawei hbn-al10'],
+            ['HBN-AL80', 'huawei=huawei hbn-al80'],
+            ['HPB-AN00', 'huawei=huawei hpb-an00'],
+            ['DCO-AL00', 'huawei=huawei dco-al00'],
+            ['DNN-LX9', 'huawei=huawei dnn-lx9'],
+            ['DNN-AN00', 'huawei=huawei dnn-an00'],
+            ['DNP-NX9', 'huawei=huawei dnp-nx9'],
+            ['DNP-AN00', 'huawei=huawei dnp-an00'],
+            ['DNY-NX9', 'huawei=huawei dny-nx9'],
+            ['GOA-LX9', 'huawei=huawei goa-lx9'],
+            ['GOA-AL80U', 'huawei=huawei goa-al80u'],
+            ['GOA-AL80', 'huawei=huawei goa-al80'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -3884,6 +3904,9 @@ final class DeviceTest extends TestCase
             ['T50Pro_W_EEA', 'teclast=teclast t50pro_w_eea'],
             ['T50', 'teclast=teclast t50'],
             ['P25T_ROW', 'teclast=teclast p25t_row'],
+            ['P30S_W_EEA', 'teclast=teclast p30s_w_eea'],
+            ['P80T_ROW', 'teclast=teclast p80t_row'],
+            ['P80T_EEA', 'teclast=teclast p80t_eea'],
             // alldocube
             ['iPlay_40', 'alldocube=alldocube iplay 40'],
             ['iPlay60_mini_Pro', 'alldocube=alldocube iplay 60 mini pro'],
@@ -4056,6 +4079,7 @@ final class DeviceTest extends TestCase
             ['TERRA_PAD_1006', 'wortmann=wortmann terra pad 1006'],
             ['TERRA PAD 1004', 'wortmann=wortmann terra pad 1004'],
             ['TERRA_PAD_1005', 'wortmann=wortmann terra pad 1005'],
+            ['TERRA_PAD_1200_V2', 'wortmann=wortmann terra pad 1200 v2'],
             // infinix
             ['S5 Pro', 'infinix=infinix s5 pro'],
             ['Infinix X688B', 'infinix=infinix x688b'],
@@ -4153,6 +4177,7 @@ final class DeviceTest extends TestCase
             ['T181-EEA', 'toscido=toscido t181-eea'],
             ['T13-EEA', 'toscido=toscido t13-eea'],
             ['T28-EEA', 'toscido=toscido t28-eea'],
+            ['T26-EEA', 'toscido=toscido t26-eea'],
             // beafon
             ['TW10', 'beafon=beafon tw10'],
             // micromax
@@ -4372,6 +4397,7 @@ final class DeviceTest extends TestCase
             ['100146663', 'onn=onn 100146663'],
             ['100110603', 'onn=onn 100110603'],
             ['100135925', 'onn=onn 100135925'],
+            ['100071481A', 'onn=onn 100071481a'],
             // archos
             ['Archos 101c Platinum', 'archos=archos 101c platinum'],
             ['Archos 101b Xenon v2', 'archos=archos 101b xenon v2'],
@@ -4463,6 +4489,7 @@ final class DeviceTest extends TestCase
             ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],
             ['PET 101-H232E', 'peaq=peaq pet 101-h232e'],
             ['PET 101-H232E-13', 'peaq=peaq pet 101-h232e-13'],
+            ['PET 1008-F464E', 'peaq=peaq pet 1008-f464e'],
             // casper
             ['VIA G5', 'casper=casper via g5'],
             ['VIA M40', 'casper=casper via m40'],
@@ -5300,6 +5327,12 @@ final class DeviceTest extends TestCase
             ['Pulse TA3E0P01', 'digma=digma ta3e0p01'],
             ['Pulse TA3D0P01', 'digma=digma ta3d0p01'],
             ['Pulse TA2D0P01', 'digma=digma ta2d0p01'],
+            ['Kids 8260C WS8253PL', 'digma=digma ws8253pl'],
+            ['Kids 1247C WS1251PL', 'digma=digma ws1251pl'],
+            ['Digma Pro HIT 108E HS1004PL', 'digma=digma hs1004pl'],
+            ['Optima 7258C 4G TS7226PL', 'digma=digma ts7226pl'],
+            ['Optima 1444E 4G TS1291PL', 'digma=digma ts1291pl'],
+            ['Optima 1414D 4G TS1289PL', 'digma=digma ts1289pl'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             // yumkem
@@ -5475,6 +5508,7 @@ final class DeviceTest extends TestCase
             // atozee
             ['CP10', 'atozee=atozee cp10'],
             ['YQ10SK', 'atozee=atozee yq10sk'],
+            ['AT81K', 'atozee=atozee at81k'],
             // meta
             ['Quest 3', 'meta=meta quest 3'],
             ['Quest 3S', 'meta=meta quest 3s'],
@@ -6053,6 +6087,7 @@ final class DeviceTest extends TestCase
             // klipad
             ['KL48PH', 'klipad=klipad kl48ph'],
             ['KL505', 'klipad=klipad kl505'],
+            ['KL638DK_EEA', 'klipad=klipad kl638dk_eea'],
             // iconbit
             ['iconBIT XLR3089', 'iconbit=iconbit xlr3089'],
             ['iconBIT XLR3090', 'iconbit=iconbit xlr3090'],
@@ -6148,6 +6183,19 @@ final class DeviceTest extends TestCase
             ['M-T4', 'atouch=atouch m-t4'],
             // dmoao
             ['D3_EEA', 'dmoao=dmoao d3_eea'],
+            // enova
+            ['TAE08N10', 'enova=enova tae08n10'],
+            // wozifan
+            ['W10_EEA', 'wozifan=wozifan w10_eea'],
+            // tjd
+            ['MT-1011QR', 'tjd=tjd mt-1011qr'],
+            // rocket
+            ['ZC-P95', 'rocket=rocket zc-p95'],
+            // qilive
+            ['QT22101B', 'qilive=qilive qt22101b'],
+            ['QT23109BP', 'qilive=qilive qt23109bp'],
+            // sun-wind
+            ['Kids_8280C_WS8252PL', 'sun-wind=sun-wind ws8252pl'],
             // other
             ['Model"', null],
             [': "', null],
