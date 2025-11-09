@@ -315,7 +315,6 @@ final readonly class Detector implements DetectorInterface
         string | null $engineCodenameFromClient,
     ): EngineInterface {
         $engineHeader  = null;
-        $engineVersion = null;
 
         if ($engineCodename === null) {
             $headersWithEngineName = array_filter(

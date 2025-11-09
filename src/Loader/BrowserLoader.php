@@ -26,6 +26,7 @@ use UaLoader\Exception\NotFoundException;
 use UaResult\Bits\Bits;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
+use UnexpectedValueException;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
@@ -70,11 +71,20 @@ final class BrowserLoader implements BrowserLoaderInterface
     /** @throws void */
     private function fromArray(DataClient $data, string $useragent = ''): Browser
     {
-        $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
+        $manufacturer     = new Company(type: 'unknown', name: null, brandname: null);
+        $manufacturerName = $data->getManufacturer();
 
-        if ($data->getManufacturer() !== null) {
+        if ($manufacturerName !== null) {
             try {
-                $manufacturer = $this->companyLoader->load($data->getManufacturer());
+                $company = \BrowserDetector\Data\Company::fromName($manufacturerName);
+
+                $manufacturerName = $company->getBrandname() ?? 'unknown';
+            } catch (UnexpectedValueException) {
+                // do nothing
+            }
+
+            try {
+                $manufacturer = $this->companyLoader->load($manufacturerName);
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
