@@ -1309,51 +1309,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; STG-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaSearchBrowser/23.37.1 BroPP/1.0 YaSearchApp/23.37.1 webOmni SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "23.37.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "110.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; P11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 YaApp_Android/23.50/apad YaSearchBrowser/23.50/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -2384,51 +2339,6 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.533",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; RBN-NX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.90 YaBrowser/24.1.8.90.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.6099.90",
       "manufacturer": "google"
     }
   },
@@ -4459,7 +4369,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; PET 1008-F464E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.869 YaSearchBrowser/24.42/apad BroPP/1.0 YaSearchApp/24.42/apad webOmni SA/3 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; TDT3887_Wi_D_CIS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.414 YaSearchBrowser/23.115/apad BroPP/1.0 YaSearchApp/23.115/apad webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -4483,14 +4393,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "11.0.0",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
-      "version": "24.42.0",
+      "version": "23.115.0",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false,
@@ -4498,7 +4408,97 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "122.0.6261.869",
+      "version": "118.0.5993.414",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 11; C82W_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.2368 YaApp_Android/24.70/apad YaSearchBrowser/24.70/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.70.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.2368",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 9; 50LU1204) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.167 YaApp_Android/22.79/apad YaSearchBrowser/22.79/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "22.79.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.167",
       "manufacturer": "google"
     }
   }

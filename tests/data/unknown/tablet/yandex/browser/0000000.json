@@ -26,7 +26,7 @@
       "name": "Remix OS",
       "marketingName": "Remix OS",
       "version": null,
-      "manufacturer": "jide",
+      "manufacturer": "Jide",
       "bits": null
     },
     "client": {
@@ -1931,51 +1931,6 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.96",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; Kids_8280C_WS8252PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.303 YaBrowser/24.4.0.303.01 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "24.4.0.303.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "122.0.6261.303",
       "manufacturer": "google"
     }
   },
@@ -4496,6 +4451,51 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.120",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; TV-Impact Build/TV-Impact-pro; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 YaBrowser/23.9.0.75 (lite) Safari/537.36 TV"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "23.9.0.75",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.131",
       "manufacturer": "google"
     }
   }

@@ -3809,7 +3809,7 @@
   },
   "oppo cph2251": {
     "deviceName": "CPH2251",
-    "marketingName": "Reno 6 5G",
+    "marketingName": "Reno 6 5G (International)",
     "manufacturer": "bbk",
     "brand": "oppo",
     "dualOrientation": true,
@@ -3825,7 +3825,7 @@
   },
   "oppo peqm00": {
     "deviceName": "PEQM00",
-    "marketingName": "Reno 6 5G",
+    "marketingName": "Reno 6 5G (China)",
     "manufacturer": "bbk",
     "brand": "oppo",
     "dualOrientation": true,
@@ -3835,6 +3835,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo reno 6": {
+    "deviceName": "Reno 6",
+    "marketingName": "Reno 6 4G",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"
@@ -3873,7 +3889,7 @@
   },
   "oppo cph2145": {
     "deviceName": "CPH2145",
-    "marketingName": "Reno 5 5G",
+    "marketingName": "Reno 5 5G (International)",
     "manufacturer": "bbk",
     "brand": "oppo",
     "dualOrientation": true,
@@ -3889,7 +3905,7 @@
   },
   "oppo pegm00": {
     "deviceName": "PEGM00",
-    "marketingName": "Reno 5 5G",
+    "marketingName": "Reno 5 5G (China)",
     "manufacturer": "bbk",
     "brand": "oppo",
     "dualOrientation": true,
@@ -3905,7 +3921,23 @@
   },
   "oppo pegt00": {
     "deviceName": "PEGT00",
-    "marketingName": "Reno 5 5G",
+    "marketingName": "Reno 5 5G (China)",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo reno 5": {
+    "deviceName": "Reno 5",
+    "marketingName": "Reno 5 4G",
     "manufacturer": "bbk",
     "brand": "oppo",
     "dualOrientation": true,

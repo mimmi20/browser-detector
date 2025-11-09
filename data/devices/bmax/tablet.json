@@ -1,6 +1,22 @@
 {
-  "bmax maxpad i9 plus": {
-    "deviceName": "MaxPad I9 Plus",
+  "bmax i9_plus": {
+    "deviceName": "I9_Plus",
+    "marketingName": "MaxPad I9 Plus",
+    "manufacturer": "bmax",
+    "brand": "bmax",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "bmax i9_plus_eea": {
+    "deviceName": "I9_Plus_EEA",
     "marketingName": "MaxPad I9 Plus",
     "manufacturer": "bmax",
     "brand": "bmax",

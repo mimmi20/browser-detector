@@ -685,7 +685,7 @@ enum Os: string implements OsInterface
             self::maemo => ['factory' => VersionBuilderFactory::class, 'search' => ['Maemo']],
             self::meego => ['factory' => VersionBuilderFactory::class, 'search' => ['MeeGo']],
             self::tizen => ['factory' => VersionBuilderFactory::class, 'search' => ['Tizen']],
-            self::mre => ['factory' => VersionBuilderFactory::class, 'search' => ['MRE\\', 'MRE']],
+            self::mre => ['factory' => VersionBuilderFactory::class, 'search' => ['MRE\\\\', 'MRE']],
             self::nucleus => ['factory' => VersionBuilderFactory::class, 'search' => ['Nucleus']],
             self::opensolaris => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenSolaris']],
             self::solaris => ['factory' => VersionBuilderFactory::class, 'search' => ['Solaris']],

@@ -2698,6 +2698,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SunWind',
                 'key' => 'sun-wind',
             ],
+            [
+                'type' => 'Qilive',
+                'name' => 'Qilive',
+                'brandname' => 'Qilive',
+                'key' => 'qilive',
+            ],
+            [
+                'type' => 'Neoregent',
+                'name' => 'Neoregent',
+                'brandname' => 'Neoregent',
+                'key' => 'neoregent',
+            ],
+            [
+                'type' => 'Hi Nova',
+                'name' => 'Hi Nova',
+                'brandname' => 'Hi Nova',
+                'key' => 'hi-nova',
+            ],
         ];
     }
 
@@ -3792,6 +3810,12 @@ final class CompanyTest extends TestCase
                 'name' => 'Digital Equipment Corporation',
                 'brandname' => 'DEC',
                 'key' => 'dec',
+            ],
+            [
+                'fallback' => 'hi-nova',
+                'name' => 'Hi Nova',
+                'brandname' => 'Hi Nova',
+                'key' => 'hi-nova',
             ],
         ];
     }

@@ -9,7 +9,7 @@
       "marketingName": "8",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1024,
@@ -54,7 +54,7 @@
       "marketingName": "8QC",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1024,
@@ -99,7 +99,7 @@
       "marketingName": "97",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1024,
@@ -144,7 +144,7 @@
       "marketingName": "97R",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 2048,
@@ -189,7 +189,7 @@
       "marketingName": "7",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1024,
@@ -234,7 +234,7 @@
       "marketingName": "Q.3004",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1024,
@@ -279,7 +279,7 @@
       "marketingName": "101",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1920,
@@ -324,7 +324,7 @@
       "marketingName": "Q4",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1280,
@@ -369,7 +369,7 @@
       "marketingName": "97",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1024,
@@ -414,7 +414,7 @@
       "marketingName": "Q8T10IN",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1024,
@@ -459,7 +459,7 @@
       "marketingName": "7",
       "manufacturer": "qilive",
       "brand": "qilive",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1024,
@@ -491,6 +491,96 @@
     "engine": {
       "name": "Blink",
       "version": "44.0.2403.133",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; QT23109BP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "QT23109BP",
+      "marketingName": "QT23109BP",
+      "manufacturer": "qilive",
+      "brand": "qilive",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "125.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "125.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; QT22101B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "QT22101B",
+      "marketingName": "QT22101B",
+      "manufacturer": "qilive",
+      "brand": "qilive",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "124.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0.0",
       "manufacturer": "google"
     }
   }
