@@ -22,7 +22,11 @@ use function is_string;
 
 use const CASE_LOWER;
 
-/** @phpcs:disable SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion.RequiredConstructorPropertyPromotion */
+/**
+ * @deprecated will be removed
+ *
+ * @phpcs:disable SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion.RequiredConstructorPropertyPromotion
+ */
 final class Engine
 {
     private string | null $name               = null;

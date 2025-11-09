@@ -53,6 +53,7 @@ final class PlatformLoader implements PlatformLoaderInterface
         $name          = $os->getName();
         $marketingName = $os->getMarketingName();
         $manufacturer  = new Company(type: 'unknown', name: null, brandname: null);
+        $version       = $this->getVersion((object) $os->getVersion(), $useragent);
 
         if ($os->getManufacturer()->getBrandname() !== null) {
             try {
@@ -61,8 +62,6 @@ final class PlatformLoader implements PlatformLoaderInterface
                 $this->logger->info($e);
             }
         }
-
-        $version = $this->getVersion((object) $os->getVersion(), $useragent);
 
         try {
             $versionWithoutMicro = $version->getVersion(VersionInterface::IGNORE_MICRO);

@@ -904,6 +904,12 @@ enum Company: string implements CompanyInterface
 
     case hiNova = 'Hi Nova';
 
+    case moonchild = 'Moonchild';
+
+    case obigo = 'Obigo';
+
+    case arsslensoft = 'Arsslensoft';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1354,6 +1360,9 @@ enum Company: string implements CompanyInterface
             'qilive' => self::qilive,
             'neoregent' => self::neoregent,
             'hinova', 'hi nova', 'hi-nova' => self::hiNova,
+            'moonchild', 'moonchild productions', 'moonchild-productions' => self::moonchild,
+            'obigo' => self::obigo,
+            'arsslensoft' => self::arsslensoft,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1466,6 +1475,7 @@ enum Company: string implements CompanyInterface
             self::alibaba => 'Alibaba Group Holding Limited',
             self::cloudMosa => 'CloudMosa Inc.',
             self::dec => 'Digital Equipment Corporation',
+            self::moonchild => 'Moonchild Productions',
             self::unknown => null,
             default => $this->value,
         };
@@ -1572,6 +1582,7 @@ enum Company: string implements CompanyInterface
             self::cloudMosa => 'cloud-mosa',
             self::sunwind => 'sun-wind',
             self::hiNova => 'hi-nova',
+            self::moonchild => 'moonchild-productions',
             default => $this->name,
         };
     }

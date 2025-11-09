@@ -20,7 +20,6 @@ use BrowserDetector\Loader\Data;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\InitData\Client as DataClient;
-use BrowserDetector\Loader\InitData\Engine as DataEngine;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
@@ -84,17 +83,6 @@ final class DetectorFactory
 
             $engineLoader = new EngineLoader(
                 logger: $this->logger,
-                initData: new Data\Engine(
-                    strategy: new StrategyChain(
-                        [
-                            new CollectionStrategy(
-                                new ArraySerializableHydrator(),
-                                DataEngine::class,
-                            ),
-                            $serializableStrategy,
-                        ],
-                    ),
-                ),
                 companyLoader: $companyLoader,
                 versionBuilder: new VersionBuilder(),
             );

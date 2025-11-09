@@ -2716,6 +2716,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Hi Nova',
                 'key' => 'hi-nova',
             ],
+            [
+                'type' => 'Moonchild',
+                'name' => 'Moonchild Productions',
+                'brandname' => 'Moonchild',
+                'key' => 'moonchild-productions',
+            ],
+            [
+                'type' => 'Obigo',
+                'name' => 'Obigo',
+                'brandname' => 'Obigo',
+                'key' => 'obigo',
+            ],
+            [
+                'type' => 'Arsslensoft',
+                'name' => 'Arsslensoft',
+                'brandname' => 'Arsslensoft',
+                'key' => 'arsslensoft',
+            ],
         ];
     }
 
@@ -3816,6 +3834,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Hi Nova',
                 'brandname' => 'Hi Nova',
                 'key' => 'hi-nova',
+            ],
+            [
+                'fallback' => 'Moonchild Productions',
+                'name' => 'Moonchild Productions',
+                'brandname' => 'Moonchild',
+                'key' => 'moonchild-productions',
+            ],
+            [
+                'fallback' => 'moonchild-productions',
+                'name' => 'Moonchild Productions',
+                'brandname' => 'Moonchild',
+                'key' => 'moonchild-productions',
             ],
         ];
     }

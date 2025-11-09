@@ -21,6 +21,7 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
+use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
@@ -30,6 +31,7 @@ use function is_string;
 use function sprintf;
 use function str_replace;
 
+/** @deprecated will be removed */
 final class Engine implements DataInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/engines';
@@ -92,6 +94,24 @@ final class Engine implements DataInterface
     #[Override]
     public function getItem(string $stringKey): DataEngine | null
     {
+        if (array_key_exists($stringKey, $this->items)) {
+            return $this->items[$stringKey];
+        }
+
+        try {
+            $engine = \BrowserDetector\Data\Engine::fromName($stringKey);
+
+            $data = new DataEngine(
+                name: $engine->getName(),
+                manufacturer: $engine->getManufacturer()->getBrandname(),
+                version: (object) $engine->getVersion(),
+            );
+
+            $this->items[$stringKey] = $data;
+        } catch (UnexpectedValueException) {
+            // do nothing
+        }
+
         return $this->items[$stringKey] ?? null;
     }
 }

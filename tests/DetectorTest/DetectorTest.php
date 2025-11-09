@@ -154,7 +154,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '92.0.4515.105',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -200,7 +200,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'T7',
                         'version' => '13.41.0',
-                        'manufacturer' => 'baidu',
+                        'manufacturer' => 'Baidu',
                     ],
                 ],
             ],
@@ -246,7 +246,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '40.0.2214.89',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -302,7 +302,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '97.0.4692.99',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -358,7 +358,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '97.0.4692.99',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -414,7 +414,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '97.0.4692.99',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -470,7 +470,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '97.0.4692.99',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -526,7 +526,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '97.0.4692.99',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -572,7 +572,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'WebKit',
                         'version' => null,
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -618,7 +618,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'WebKit',
                         'version' => '537.75.14',
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -710,7 +710,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'WebKit',
                         'version' => null,
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -756,7 +756,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'WebKit',
                         'version' => '534.30.0',
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -802,7 +802,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'WebKit',
                         'version' => '605.1.15',
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -848,7 +848,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '83.0.4103.116',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -894,7 +894,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '83.0.4103.116',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -940,7 +940,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '132.0.6834.2144',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -1032,7 +1032,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'WebKit',
                         'version' => '605.1.15',
-                        'manufacturer' => 'apple',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -1084,7 +1084,7 @@ final class DetectorTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '107.0.5304.105',
-                        'manufacturer' => 'google',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
