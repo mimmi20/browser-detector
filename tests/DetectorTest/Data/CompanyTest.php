@@ -2734,6 +2734,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Arsslensoft',
                 'key' => 'arsslensoft',
             ],
+            [
+                'type' => 'Positivo',
+                'name' => 'Positivo',
+                'brandname' => 'Positivo',
+                'key' => 'positivo',
+            ],
+            [
+                'type' => 'Brondi',
+                'name' => 'Brondi',
+                'brandname' => 'Brondi',
+                'key' => 'brondi',
+            ],
+            [
+                'type' => 'Orbic',
+                'name' => 'Orbic',
+                'brandname' => 'Orbic',
+                'key' => 'orbic',
+            ],
         ];
     }
 

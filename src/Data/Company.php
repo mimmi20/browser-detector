@@ -910,6 +910,12 @@ enum Company: string implements CompanyInterface
 
     case arsslensoft = 'Arsslensoft';
 
+    case positivo = 'Positivo';
+
+    case brondi = 'Brondi';
+
+    case orbic = 'Orbic';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1363,6 +1369,9 @@ enum Company: string implements CompanyInterface
             'moonchild', 'moonchild productions', 'moonchild-productions' => self::moonchild,
             'obigo' => self::obigo,
             'arsslensoft' => self::arsslensoft,
+            'positivo' => self::positivo,
+            'brondi' => self::brondi,
+            'orbic' => self::orbic,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
