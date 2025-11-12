@@ -1,14 +1,104 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; B1 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "B1",
+      "marketingName": "B1",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "42.0.2311.111",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.111",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; B1 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "B1",
+      "marketingName": "B1",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; B2021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.115 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "B2021",
       "marketingName": "B2021",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -33,7 +123,7 @@
       "name": "Chrome",
       "modus": null,
       "version": "92.0.4515.115",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.115",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,8 +142,8 @@
       "architecture": null,
       "deviceName": "B2021",
       "marketingName": "B2021",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -78,7 +168,7 @@
       "name": "Android WebView",
       "modus": null,
       "version": "91.0.4472.101",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +176,7 @@
     "engine": {
       "name": "Blink",
       "version": "91.0.4472.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -97,8 +187,8 @@
       "architecture": null,
       "deviceName": "R2022",
       "marketingName": "R2022",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -123,7 +213,7 @@
       "name": "Chrome",
       "modus": null,
       "version": "94.0.4606.85",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +221,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -142,8 +232,8 @@
       "architecture": null,
       "deviceName": "H2022",
       "marketingName": "H2022",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -168,7 +258,7 @@
       "name": "Chrome",
       "modus": null,
       "version": "97.0.4692.98",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +266,7 @@
     "engine": {
       "name": "Blink",
       "version": "97.0.4692.98",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -187,8 +277,8 @@
       "architecture": null,
       "deviceName": "Raptor",
       "marketingName": "Raptor",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -213,7 +303,7 @@
       "name": "Chrome",
       "modus": null,
       "version": "81.0.4044.138",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +311,7 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -232,8 +322,8 @@
       "architecture": null,
       "deviceName": "B1 Pro",
       "marketingName": "B1 Pro",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -258,7 +348,7 @@
       "name": "Chrome",
       "modus": null,
       "version": "107.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -266,7 +356,7 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -284,8 +374,8 @@
       "architecture": null,
       "deviceName": "Air1 Pro",
       "marketingName": "Air1 Pro",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -310,7 +400,7 @@
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -318,7 +408,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -329,8 +419,8 @@
       "architecture": null,
       "deviceName": "B2",
       "marketingName": "B2",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -355,7 +445,7 @@
       "name": "Android WebView",
       "modus": null,
       "version": "120.0.6099.145",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -363,7 +453,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.145",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -374,8 +464,8 @@
       "architecture": null,
       "deviceName": "Raptor LTD",
       "marketingName": "Raptor LTD",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -400,7 +490,7 @@
       "name": "Android WebView",
       "modus": null,
       "version": "76.0.3809.111",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -408,7 +498,7 @@
     "engine": {
       "name": "Blink",
       "version": "76.0.3809.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -419,8 +509,8 @@
       "architecture": null,
       "deviceName": "R2022",
       "marketingName": "R2022",
-      "manufacturer": "iiif150",
-      "brand": "iiif150",
+      "manufacturer": "iiiF150",
+      "brand": "iiiF150",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -445,7 +535,7 @@
       "name": "Android WebView",
       "modus": null,
       "version": "126.0.6478.186",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -453,7 +543,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.186",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

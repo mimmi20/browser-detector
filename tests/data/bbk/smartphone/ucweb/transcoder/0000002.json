@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "RMX5020",
       "marketingName": "14x (Global)",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -33,7 +33,7 @@
       "name": "UC Browser",
       "modus": null,
       "version": "14.4.0.1353",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6312.80",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,7 +52,7 @@
       "architecture": null,
       "deviceName": "V2420",
       "marketingName": "Y29 5G",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -78,7 +78,7 @@
       "name": "UC Browser",
       "modus": null,
       "version": "14.4.0.1353",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6312.80",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -97,8 +97,8 @@
       "architecture": null,
       "deviceName": "CPH1725",
       "marketingName": "F5 Youth",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -123,7 +123,7 @@
       "name": "UC Browser",
       "modus": null,
       "version": "12.14.0.1221",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "57.0.2987.108",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -142,8 +142,8 @@
       "architecture": null,
       "deviceName": "CPH2773",
       "marketingName": "A5i",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -168,7 +168,7 @@
       "name": "UC Browser",
       "modus": null,
       "version": "14.7.8.1367",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6312.80",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -187,7 +187,7 @@
       "architecture": null,
       "deviceName": "NEX S",
       "marketingName": "NEX S",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -213,7 +213,7 @@
       "name": "UC Browser",
       "modus": null,
       "version": "12.1.2.992",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -221,7 +221,52 @@
     "engine": {
       "name": "Blink",
       "version": "57.0.2987.108",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; en-US; RMX2027 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.1.2.1293 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX2027",
+      "marketingName": "C3",
+      "manufacturer": "BBK",
+      "brand": "Realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.1.2.1293",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "Google"
     }
   }
 ]

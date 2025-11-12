@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "9005X",
       "marketingName": "OneTouch Pixi 3 8 3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -33,7 +33,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "17.1.0.412.01",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,52 @@
     "engine": {
       "name": "Blink",
       "version": "55.0.2883.95",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; 9160G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.8.36.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "9160G",
+      "marketingName": "Tab 10 HD 4G",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "23.7.8.36.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,8 +97,8 @@
       "architecture": null,
       "deviceName": "9466X",
       "marketingName": "NxtPaper 11 4G",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -78,7 +123,7 @@
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.56.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -97,8 +142,8 @@
       "architecture": null,
       "deviceName": "8196G",
       "marketingName": "Tab 10 LTE (2nd Gen)",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -123,7 +168,7 @@
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.56.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +176,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

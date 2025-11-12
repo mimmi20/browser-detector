@@ -33,7 +33,7 @@
       "name": "Ecosia",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -81,7 +81,7 @@
       "name": "Ecosia",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -89,7 +89,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -126,7 +126,7 @@
       "name": "Ecosia",
       "modus": null,
       "version": "119.0.0",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -134,7 +134,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -171,7 +171,7 @@
       "name": "Ecosia",
       "modus": null,
       "version": "119.0.0.0",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -179,7 +179,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -216,7 +216,7 @@
       "name": "Ecosia",
       "modus": null,
       "version": "123.0.0.0",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -224,7 +224,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -264,7 +264,7 @@
       "name": "Ecosia",
       "modus": null,
       "version": "123.0.0.0",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -272,7 +272,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -312,7 +312,7 @@
       "name": "Ecosia",
       "modus": null,
       "version": "119.0.0.0",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -320,7 +320,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -357,7 +357,7 @@
       "name": "Ecosia",
       "modus": null,
       "version": "129.0.0.0",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -365,7 +365,145 @@
     "engine": {
       "name": "Blink",
       "version": "129.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 (Ecosia android@141.0.0.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "141.0.0.0",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 (Ecosia android@140.0.0.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "140.0.0.0",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 (Ecosia android@140.0.0.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "140.0.0.0",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.0.0",
+      "manufacturer": "Google"
     }
   }
 ]

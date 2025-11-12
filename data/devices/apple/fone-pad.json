@@ -17,7 +17,7 @@
   },
   "apple ipad 11,7": {
     "deviceName": "iPad 11,7",
-    "marketingName": "iPad (10.2, 8th Gen.)",
+    "marketingName": "iPad (10.2, 8th Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -593,7 +593,7 @@
   },
   "apple ipad 13,19": {
     "deviceName": "iPad 13,19",
-    "marketingName": "iPad (10.9, 10th Gen.)",
+    "marketingName": "iPad (10.9, 10th Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -747,6 +747,22 @@
       "height": 1488,
       "touch": true,
       "size": 8.3
+    },
+    "type": "fone-pad",
+    "platform": "ios"
+  },
+  "apple ipad 11,2": {
+    "deviceName": "iPad 11,2",
+    "marketingName": "iPad mini (7.9, 5th Gen)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 7.9
     },
     "type": "fone-pad",
     "platform": "ios"

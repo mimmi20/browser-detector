@@ -8,8 +8,8 @@
       "architecture": null,
       "deviceName": "SM-T580",
       "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2016)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
@@ -34,7 +34,7 @@
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "duck-duck-go",
+      "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -42,7 +42,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -54,8 +54,8 @@
       "architecture": null,
       "deviceName": "SM-T500",
       "marketingName": "Galaxy Tab A7 10.4\" Wi-Fi (2020)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
@@ -80,7 +80,7 @@
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "duck-duck-go",
+      "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -88,7 +88,115 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.196",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-T870\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+      "sec-ch-ua-full-version": "\"141.0.7390.122\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T870",
+      "marketingName": "Galaxy Tab S7 11.0 Wi-Fi",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-P613\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+      "sec-ch-ua-full-version": "\"141.0.7390.97\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-P613",
+      "marketingName": "Galaxy Tab S6 Lite 10.4\" Wi-Fi (2022)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 10.4
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0.0",
+      "manufacturer": "Google"
     }
   }
 ]

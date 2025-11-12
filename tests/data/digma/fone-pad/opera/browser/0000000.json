@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "iDxD7 3G",
       "marketingName": "D-Plane2 7",
-      "manufacturer": "digma",
-      "brand": "digma",
+      "manufacturer": "Digma",
+      "brand": "Digma",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -33,7 +33,7 @@
       "name": "Opera Mobile",
       "modus": null,
       "version": "28.0.1764.89981",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,52 @@
     "engine": {
       "name": "Blink",
       "version": "41.0.2272.74",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Optima 8259C 4G TS8286PL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.113 Safari/537.36 OPR/82.2.4342.79505"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TS8286PL",
+      "marketingName": "Optima 8259C 4G",
+      "manufacturer": "Digma",
+      "brand": "Digma",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "82.2.4342.79505",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.113",
+      "manufacturer": "Google"
     }
   }
 ]

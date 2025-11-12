@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "2209116AG",
       "marketingName": "Redmi Note 12 Pro 4G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -41,7 +41,52 @@
     "engine": {
       "name": "Blink",
       "version": "91.0.4472.88",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; de-de; 2406APNFAG Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.72 Mobile Safari/537.36 HeyTapBrowser/45.13.1.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2406APNFAG",
+      "marketingName": "14T",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2712,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "HeyTapBrowser",
+      "modus": null,
+      "version": "45.13.1.2",
+      "manufacturer": "bravo-unicorn",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "125.0.6422.72",
+      "manufacturer": "Google"
     }
   }
 ]

@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -176,7 +176,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -221,7 +221,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -266,7 +266,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -311,7 +311,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -356,7 +356,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -401,7 +401,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -446,7 +446,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -491,7 +491,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -536,7 +536,61 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"samsung SM-S711B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"16\"",
+      "x-requested-with": "AlohaBrowser",
+      "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"141\", \"Android WebView\";v=\"141\"",
+      "sec-ch-ua-full-version": "\"141.0.7390.111\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36 AlohaBrowser/7.9.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "aloha-mobile",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0.0",
+      "manufacturer": "Google"
     }
   }
 ]
