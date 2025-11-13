@@ -586,51 +586,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W29; HMSCore 6.0.1.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MRR-W29",
-      "marketingName": "MatePad Pro 10.8 (2021)",
-      "manufacturer": "Huawei",
-      "brand": "Huawei",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.8
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "HarmonyOS",
-      "marketingName": "HarmonyOS",
-      "version": null,
-      "manufacturer": "Huawei",
-      "bits": null
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "11.1.4.301",
-      "manufacturer": "Huawei",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.93",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; SCMR-W09; HMSCore 6.1.0.314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36"
     },
     "device": {
@@ -851,51 +806,6 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.105",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W39; HMSCore 6.1.0.314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MRR-W39",
-      "marketingName": "MatePad Pro 10.8 (2021)",
-      "manufacturer": "Huawei",
-      "brand": "Huawei",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.8
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "HarmonyOS",
-      "marketingName": "HarmonyOS",
-      "version": null,
-      "manufacturer": "Huawei",
-      "bits": null
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "11.1.5.310",
-      "manufacturer": "Huawei",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.93",
       "manufacturer": "Google"
     }
   },
@@ -1805,8 +1715,13 @@
   },
   {
     "headers": {
+      "sec-ch-ua-model": "\"MRR-W29\"",
       "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
       "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"HuaweiBrowser\";v=\"114\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-mobile": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W29; HMSCore 6.15.0.332) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/15.0.10.302 Safari/537.36"
     },
