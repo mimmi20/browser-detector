@@ -4,8 +4,8 @@
     "marketingName": "S440",
     "manufacturer": "positivo",
     "brand": "positivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
@@ -20,8 +20,8 @@
     "marketingName": "S480",
     "manufacturer": "positivo",
     "brand": "positivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -36,8 +36,8 @@
     "marketingName": "Selfie S455",
     "manufacturer": "positivo",
     "brand": "positivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -52,8 +52,8 @@
     "marketingName": "Twist M",
     "manufacturer": "positivo",
     "brand": "positivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -68,8 +68,8 @@
     "marketingName": "Twist S",
     "manufacturer": "positivo",
     "brand": "positivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -84,13 +84,29 @@
     "marketingName": "Ypy S450",
     "manufacturer": "positivo",
     "brand": "positivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "positivo twist 5 max": {
+    "deviceName": "Twist 5 Max",
+    "marketingName": "Twist 5 Max",
+    "manufacturer": "positivo",
+    "brand": "positivo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
     },
     "type": "smartphone",
     "platform": "android"

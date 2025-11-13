@@ -10,7 +10,7 @@
       "manufacturer": "jty",
       "brand": "king-top",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Facebook App",
       "modus": null,
       "version": "269.0.0.50.127",
-      "manufacturer": "meta",
+      "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

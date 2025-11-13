@@ -10,7 +10,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -33,7 +33,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -55,7 +55,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -78,7 +78,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "535.20.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -100,7 +100,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -123,7 +123,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "125.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -145,7 +145,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -168,7 +168,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -190,7 +190,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -213,7 +213,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,97 +221,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) WorxWeb/18.11.0(build 18.11.0.6) Mobile/16B92 Safari/605.1<tabid-CBC25F7C-073F-4087-8788-FA814052EC92>"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) WorxWeb/18.11.5(build 18.11.5.4) Mobile/16B92 Safari/605.1<tabid-F3D1C4D0-C475-4EFA-AFC9-9E4FA70B94AD>"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -325,7 +235,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -348,7 +258,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +266,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -370,7 +280,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -386,14 +296,14 @@
       "name": "iPhone OS",
       "marketingName": "iPhone OS",
       "version": "1.9.7",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,142 +311,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 WorxWeb/19.1.5(build 19.1.5.23)  Mobile/16D57 Safari/605.1<tabid-26FE0814-D13D-4710-A6EA-38E7A9B7866D>"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.4",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 WorxWeb/19.1.5(build 19.1.5.23)  Mobile/16D57 Safari/605.1<tabid-2DCC9C51-78AB-4163-870E-8ECA75B10C71>"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.4",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 WorxWeb/19.1.5(build 19.1.5.23)  Mobile/16E227 Safari/605.1<tabid-6273E047-3CB2-4DE5-9759-6FAEBB0A8438>"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.2.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -550,7 +325,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -573,7 +348,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +356,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -595,7 +370,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -618,7 +393,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +401,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -640,7 +415,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -663,7 +438,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +446,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -685,7 +460,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -708,7 +483,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +491,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -730,7 +505,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -753,7 +528,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +536,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -775,7 +550,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -798,7 +573,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +581,7 @@
     "engine": {
       "name": "WebKit",
       "version": "601.1.46",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -820,7 +595,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -836,14 +611,14 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +626,7 @@
     "engine": {
       "name": "WebKit",
       "version": "603.1.30",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -865,7 +640,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -881,14 +656,14 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +671,7 @@
     "engine": {
       "name": "WebKit",
       "version": "603.1.30",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -910,7 +685,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -933,7 +708,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +716,7 @@
     "engine": {
       "name": "WebKit",
       "version": "602.2.14",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -955,7 +730,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -978,7 +753,7 @@
       "name": "Safari",
       "modus": null,
       "version": "7.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -986,7 +761,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.51.1",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1000,7 +775,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1023,7 +798,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +806,7 @@
     "engine": {
       "name": "WebKit",
       "version": "603.2.4",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1045,7 +820,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1068,7 +843,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +851,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1090,7 +865,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1106,14 +881,14 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +896,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1135,7 +910,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1158,7 +933,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,7 +941,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1180,7 +955,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1203,7 +978,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1211,7 +986,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1225,7 +1000,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1248,7 +1023,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1256,7 +1031,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1270,7 +1045,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1293,7 +1068,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1315,7 +1090,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1338,7 +1113,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1346,7 +1121,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1360,7 +1135,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1383,7 +1158,7 @@
       "name": "Safari",
       "modus": null,
       "version": "13.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1391,7 +1166,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1405,7 +1180,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1428,7 +1203,7 @@
       "name": "Safari",
       "modus": null,
       "version": "9.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1436,7 +1211,7 @@
     "engine": {
       "name": "WebKit",
       "version": "601.1.46",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1450,7 +1225,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1473,7 +1248,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1481,7 +1256,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1495,7 +1270,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1518,7 +1293,7 @@
       "name": "Safari",
       "modus": null,
       "version": "13.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1526,7 +1301,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1540,7 +1315,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1563,7 +1338,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1585,7 +1360,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1608,7 +1383,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1616,7 +1391,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1630,7 +1405,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1653,7 +1428,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1661,7 +1436,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1675,7 +1450,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1698,7 +1473,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1706,7 +1481,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1720,7 +1495,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1743,7 +1518,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1751,7 +1526,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1765,7 +1540,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1788,7 +1563,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1796,7 +1571,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1810,7 +1585,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1833,7 +1608,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1841,7 +1616,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1855,7 +1630,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1878,7 +1653,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1886,7 +1661,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1900,7 +1675,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1923,7 +1698,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1931,7 +1706,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1945,7 +1720,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1961,14 +1736,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.3.1",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1976,7 +1751,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1990,7 +1765,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2006,14 +1781,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "14.2.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2021,7 +1796,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2035,7 +1810,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2051,14 +1826,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.4.1",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2066,7 +1841,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2080,7 +1855,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2096,14 +1871,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.1.1",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2111,7 +1886,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2125,7 +1900,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2141,14 +1916,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "16.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2156,7 +1931,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2170,7 +1945,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2193,7 +1968,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2201,7 +1976,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2215,7 +1990,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2238,7 +2013,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2246,7 +2021,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2260,7 +2035,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2283,7 +2058,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2291,7 +2066,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2305,7 +2080,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2328,7 +2103,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2336,7 +2111,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2350,7 +2125,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2373,7 +2148,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2381,7 +2156,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2395,7 +2170,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2418,7 +2193,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2426,7 +2201,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2440,7 +2215,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2463,7 +2238,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2471,7 +2246,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2485,7 +2260,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2508,7 +2283,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2516,7 +2291,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2530,7 +2305,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2553,7 +2328,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2561,7 +2336,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2575,7 +2350,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2598,7 +2373,7 @@
       "name": "Safari",
       "modus": null,
       "version": "16.6.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2606,7 +2381,7 @@
     "engine": {
       "name": "WebKit",
       "version": "605.1.15",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2620,7 +2395,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2643,7 +2418,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2651,7 +2426,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2665,7 +2440,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2681,14 +2456,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.847.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2696,7 +2471,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2710,7 +2485,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2726,14 +2501,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.847.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2741,7 +2516,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2755,7 +2530,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2771,14 +2546,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.69.130",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2786,7 +2561,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2800,7 +2575,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2816,14 +2591,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.847.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2831,7 +2606,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2845,7 +2620,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2861,14 +2636,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.69.130",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2876,7 +2651,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2890,7 +2665,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2906,14 +2681,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.92.150",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2921,7 +2696,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2935,7 +2710,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2951,14 +2726,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.847.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2966,7 +2741,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2980,7 +2755,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2996,14 +2771,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.847.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3011,7 +2786,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3025,7 +2800,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3041,14 +2816,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.75.134",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3056,7 +2831,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3070,7 +2845,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3086,14 +2861,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.67.124",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3101,7 +2876,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3115,7 +2890,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3131,14 +2906,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.847.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3146,7 +2921,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3160,7 +2935,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3176,14 +2951,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.3.329.403.0",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3191,7 +2966,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3205,7 +2980,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3221,14 +2996,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.847.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3236,7 +3011,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3250,7 +3025,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3266,14 +3041,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.847.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3281,7 +3056,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3295,7 +3070,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3311,14 +3086,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.92.150",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3326,7 +3101,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3340,7 +3115,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3356,14 +3131,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.845.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3371,7 +3146,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3385,7 +3160,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3408,7 +3183,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3416,7 +3191,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3430,7 +3205,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3453,7 +3228,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3461,7 +3236,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.7.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3475,7 +3250,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3498,7 +3273,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3506,7 +3281,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3520,7 +3295,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3543,7 +3318,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3551,7 +3326,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3565,7 +3340,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3588,7 +3363,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3596,7 +3371,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3610,7 +3385,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3633,7 +3408,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3641,7 +3416,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3655,7 +3430,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3678,7 +3453,7 @@
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3686,7 +3461,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3700,7 +3475,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3723,7 +3498,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.1.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3731,7 +3506,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.46.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3745,7 +3520,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3768,7 +3543,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3776,7 +3551,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3790,7 +3565,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3806,14 +3581,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.507.835.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3821,7 +3596,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3835,7 +3610,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3851,14 +3626,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.845.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3866,7 +3641,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3880,7 +3655,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3896,14 +3671,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.92.150",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3911,7 +3686,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3925,7 +3700,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3941,14 +3716,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.92.150",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3956,7 +3731,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3970,7 +3745,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3986,14 +3761,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.845.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4001,7 +3776,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4015,7 +3790,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4031,14 +3806,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.67.121",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4046,7 +3821,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4060,7 +3835,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4076,14 +3851,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.519.868.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4091,7 +3866,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4105,7 +3880,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4121,14 +3896,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.507.835.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4136,7 +3911,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4150,7 +3925,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4166,14 +3941,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.845.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4181,7 +3956,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4195,7 +3970,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4211,14 +3986,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.92.150",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4226,7 +4001,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4240,7 +4015,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4256,14 +4031,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.507.835.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4271,7 +4046,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4285,7 +4060,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4301,14 +4076,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.92.150",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4316,7 +4091,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4330,7 +4105,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4346,14 +4121,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.0.92.150",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4361,7 +4136,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4375,7 +4150,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4391,14 +4166,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.845.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4406,7 +4181,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4420,7 +4195,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4436,14 +4211,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.512.845.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4451,7 +4226,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4465,7 +4240,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4481,14 +4256,14 @@
       "name": "ViziOS",
       "marketingName": "ViziOS",
       "version": "1.4.519.868.1",
-      "manufacturer": "vizio",
+      "manufacturer": "Vizio",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4496,7 +4271,232 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "VIZIO D40f-J09 ViziOS/1.0.67.121 WatchFree/24.03.28.1 FancyPlayer/1.1.26-qa"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ViziOS",
+      "marketingName": "ViziOS",
+      "version": "1.0.67.121",
+      "manufacturer": "Vizio",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "VIZIO D40f-J09 ViziOS/1.0.67.121 WatchFree/24.05.29 FancyPlayer/1.1.26-qa"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ViziOS",
+      "marketingName": "ViziOS",
+      "version": "1.0.67.121",
+      "manufacturer": "Vizio",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "VIZIO D40f-J09 ViziOS/1.0.67.121 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ViziOS",
+      "marketingName": "ViziOS",
+      "version": "1.0.67.121",
+      "manufacturer": "Vizio",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "VIZIO D40f-J09 ViziOS/1.0.92.150 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ViziOS",
+      "marketingName": "ViziOS",
+      "version": "1.0.92.150",
+      "manufacturer": "Vizio",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "VIZIO D40f-J09 ViziOS/1.4.497.819.1 WatchFree/24.03.28.1 FancyPlayer/1.1.26-qa"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ViziOS",
+      "marketingName": "ViziOS",
+      "version": "1.4.497.819.1",
+      "manufacturer": "Vizio",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
     }
   }
 ]

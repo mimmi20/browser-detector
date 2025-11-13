@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "general Safaricom device",
       "marketingName": "general Safaricom device",
-      "manufacturer": "safaricom",
-      "brand": "safaricom",
+      "manufacturer": "Safaricom",
+      "brand": "Safaricom",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -23,17 +23,17 @@
       "bits": null
     },
     "os": {
-      "name": "kaios",
-      "marketingName": "kaios",
+      "name": "KaiOS",
+      "marketingName": "KaiOS",
       "version": "2.5.3.2",
-      "manufacturer": "kaios",
+      "manufacturer": "KaiOS",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

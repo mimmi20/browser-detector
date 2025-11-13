@@ -9,8 +9,8 @@
       "marketingName": "N820",
       "manufacturer": "amoi",
       "brand": "amoi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 960,
         "height": 540,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.4",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.31.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -54,8 +54,8 @@
       "marketingName": "N808",
       "manufacturer": "amoi",
       "brand": "amoi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.6",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.31.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

@@ -9,8 +9,8 @@
       "marketingName": "Barca Tab 7",
       "manufacturer": "advan",
       "brand": "advan",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 800,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "11.2.0.915",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

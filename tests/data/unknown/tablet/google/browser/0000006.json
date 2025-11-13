@@ -1,186 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; TS_M103A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.88",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "100.0.4896.88",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; neocore E1-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.73 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "99.0.4844.73",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.73",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SN10016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "81.0.4044.111",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; ALFA_8RX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "83.0.4103.106",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; ALFA_10RX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
     },
     "device": {
@@ -190,7 +10,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -206,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "72.0.3626.121",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "72.0.3626.121",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -235,7 +55,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -251,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "96.0.4664.104",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -266,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.104",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -280,7 +100,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -296,14 +116,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.99",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.99",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -325,7 +145,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -341,14 +161,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +176,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -370,7 +190,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -386,14 +206,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "94.0.4606.85",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +221,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -415,7 +235,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -431,14 +251,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "87.0.4280.141",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,7 +266,7 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -460,7 +280,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -476,14 +296,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "94.0.4606.85",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -491,7 +311,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -505,7 +325,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -521,14 +341,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +356,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -550,7 +370,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -566,14 +386,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "94.0.4606.85",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +401,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -595,7 +415,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -611,14 +431,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +446,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -640,7 +460,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -656,14 +476,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +491,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -685,7 +505,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -701,14 +521,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.125",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +536,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -730,7 +550,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -746,14 +566,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "71.0.3578.99",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +581,7 @@
     "engine": {
       "name": "Blink",
       "version": "71.0.3578.99",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -775,7 +595,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -791,14 +611,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "87.0.4280.141",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +626,7 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -820,7 +640,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -836,14 +656,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "87.0.4280.141",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +671,7 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -865,7 +685,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -881,14 +701,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +716,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -910,7 +730,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -926,14 +746,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +761,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -955,7 +775,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -971,14 +791,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -986,7 +806,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1000,7 +820,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1016,14 +836,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +851,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1045,7 +865,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1061,14 +881,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +896,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1090,7 +910,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1106,14 +926,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +941,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1135,7 +955,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1151,14 +971,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,7 +986,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1180,7 +1000,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1196,14 +1016,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1211,7 +1031,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1225,7 +1045,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1241,14 +1061,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.78",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1256,7 +1076,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.78",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1270,7 +1090,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1286,14 +1106,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1301,7 +1121,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1315,7 +1135,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1331,14 +1151,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "80.0.3987.162",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1346,7 +1166,7 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.162",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1360,7 +1180,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1376,14 +1196,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1391,7 +1211,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1405,7 +1225,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1421,14 +1241,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.125",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1436,7 +1256,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1450,7 +1270,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1466,14 +1286,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1481,7 +1301,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1495,7 +1315,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1511,14 +1331,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1526,7 +1346,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1540,7 +1360,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1556,14 +1376,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1571,7 +1391,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1585,7 +1405,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1601,14 +1421,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.125",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1616,7 +1436,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1630,7 +1450,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1646,14 +1466,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1661,7 +1481,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1675,7 +1495,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1691,14 +1511,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1706,7 +1526,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1720,7 +1540,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1736,14 +1556,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1751,7 +1571,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1765,7 +1585,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1781,14 +1601,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1796,7 +1616,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1810,7 +1630,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1826,14 +1646,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.5060.53",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1841,7 +1661,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.5060.53",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1855,7 +1675,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1871,14 +1691,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1886,7 +1706,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1900,7 +1720,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1916,14 +1736,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "80.0.3987.99",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1931,7 +1751,7 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.99",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1945,7 +1765,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1961,14 +1781,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "78.0.3904.96",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1976,7 +1796,7 @@
     "engine": {
       "name": "Blink",
       "version": "78.0.3904.96",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1990,7 +1810,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2006,14 +1826,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "59.0.3071.92",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2021,7 +1841,7 @@
     "engine": {
       "name": "Blink",
       "version": "59.0.3071.92",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2035,7 +1855,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2051,14 +1871,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.78",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2066,7 +1886,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.78",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2080,7 +1900,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2096,14 +1916,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "99.0.4844.88",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2111,7 +1931,7 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.88",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2125,7 +1945,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2141,14 +1961,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2156,7 +1976,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2170,7 +1990,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2186,14 +2006,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "100.0.4896.127",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2201,7 +2021,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2215,7 +2035,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2231,14 +2051,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "101.0.4951.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2246,7 +2066,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2260,7 +2080,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2276,14 +2096,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "100.0.4896.88",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2291,7 +2111,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.88",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2305,7 +2125,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2321,14 +2141,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "80.0.3987.99",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2336,7 +2156,7 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.99",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2350,7 +2170,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2366,14 +2186,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.5060.71",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2381,7 +2201,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.5060.71",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2395,7 +2215,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2411,14 +2231,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2426,7 +2246,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2440,7 +2260,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2456,14 +2276,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2471,7 +2291,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2485,7 +2305,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2501,14 +2321,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "101.0.4951.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2516,7 +2336,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2530,7 +2350,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2546,14 +2366,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "96.0.4664.104",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2561,7 +2381,7 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.104",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2575,7 +2395,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2591,14 +2411,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.99",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2606,7 +2426,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.99",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2620,7 +2440,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2636,14 +2456,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2651,7 +2471,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2665,7 +2485,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2681,14 +2501,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "102.0.5005.125",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2696,7 +2516,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2713,7 +2533,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2729,14 +2549,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "96.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2744,7 +2564,7 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.104",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2758,7 +2578,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2774,14 +2594,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2789,7 +2609,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2803,7 +2623,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2819,14 +2639,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "99.0.4844.73",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2834,7 +2654,7 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.73",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2848,7 +2668,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2864,14 +2684,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2879,7 +2699,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2893,7 +2713,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2909,14 +2729,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "105.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2924,7 +2744,7 @@
     "engine": {
       "name": "Blink",
       "version": "105.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2938,7 +2758,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2954,14 +2774,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "81.0.4044.117",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2969,7 +2789,7 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.117",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2983,7 +2803,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2999,14 +2819,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "97.0.4692.98",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3014,7 +2834,7 @@
     "engine": {
       "name": "Blink",
       "version": "97.0.4692.98",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3028,7 +2848,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3044,14 +2864,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "96.0.4664.45",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3059,7 +2879,7 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.45",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3073,7 +2893,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3089,14 +2909,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "84.0.4147.89",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3104,7 +2924,7 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.89",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3118,7 +2938,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3134,14 +2954,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "83.0.4103.106",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3149,7 +2969,7 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.106",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3163,7 +2983,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3179,14 +2999,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3194,7 +3014,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3208,7 +3028,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3224,14 +3044,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.99",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3239,7 +3059,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.99",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3253,7 +3073,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3269,14 +3089,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3284,7 +3104,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3298,7 +3118,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3314,14 +3134,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3329,7 +3149,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3343,7 +3163,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3359,14 +3179,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "101.0.4951.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3374,7 +3194,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3388,7 +3208,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3404,14 +3224,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "101.0.4951.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3419,7 +3239,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3433,7 +3253,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3449,14 +3269,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "101.0.4951.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3464,7 +3284,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3478,7 +3298,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3494,14 +3314,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3509,7 +3329,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3523,7 +3343,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3539,14 +3359,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "104.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3554,7 +3374,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3568,7 +3388,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3584,14 +3404,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3599,7 +3419,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3613,7 +3433,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3629,14 +3449,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "104.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3644,7 +3464,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3658,7 +3478,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3674,14 +3494,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "103.0.5060.129",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3689,7 +3509,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.5060.129",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3703,7 +3523,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3719,14 +3539,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "101.0.4951.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3734,7 +3554,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3748,7 +3568,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3764,14 +3584,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "101.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3779,7 +3599,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3793,7 +3613,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3809,14 +3629,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "101.0.4951.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3824,7 +3644,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3838,7 +3658,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3854,14 +3674,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "104.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3869,7 +3689,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3883,7 +3703,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3899,14 +3719,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3914,7 +3734,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3928,7 +3748,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3944,14 +3764,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3959,7 +3779,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3973,7 +3793,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3989,14 +3809,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "101.0.4951.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4004,7 +3824,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4018,7 +3838,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4034,14 +3854,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4049,7 +3869,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4063,7 +3883,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4079,14 +3899,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "103.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4094,7 +3914,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4108,7 +3928,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4124,14 +3944,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "99.0.4844.58",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4139,7 +3959,7 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.58",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4153,7 +3973,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4169,14 +3989,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.58",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4184,7 +4004,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.58",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4198,7 +4018,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4214,14 +4034,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "104.0.5112.97",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4229,7 +4049,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.97",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4243,7 +4063,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4259,14 +4079,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "77.0.3865.92",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4274,7 +4094,7 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.92",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4288,7 +4108,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4304,14 +4124,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "97.0.4692.87",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4319,7 +4139,7 @@
     "engine": {
       "name": "Blink",
       "version": "97.0.4692.87",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4333,7 +4153,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4349,14 +4169,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "104.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4364,7 +4184,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4378,7 +4198,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4394,14 +4214,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4409,7 +4229,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4423,7 +4243,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4439,14 +4259,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.125",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4454,7 +4274,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4468,7 +4288,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4484,14 +4304,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "102.0.5005.78",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4499,7 +4319,187 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.78",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ALFA_10YC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; 24LEX_7155/UTS2C Build/PTT1.190222.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.91 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "69.0.3497.91",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Orbsmart S86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.66",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.66",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; TOX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
+      "manufacturer": "Google"
     }
   }
 ]

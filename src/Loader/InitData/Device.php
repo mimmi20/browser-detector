@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader\InitData;
 
 use stdClass;
+use UaDeviceType\Type;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
 
@@ -35,7 +36,7 @@ final class Device
     private string | null $marketingName = null;
     private string | null $manufacturer  = null;
     private string | null $brand         = null;
-    private string | null $type          = null;
+    private Type | null $type            = null;
     private bool | null $dualOrientation = null;
     private int | null $simCount         = null;
     private string | null $platform      = null;
@@ -55,7 +56,7 @@ final class Device
         string | null $marketingName,
         string | null $manufacturer,
         string | null $brand,
-        string | null $type,
+        Type | null $type,
         array $display,
         bool | null $dualOrientation,
         int | null $simCount,
@@ -127,7 +128,7 @@ final class Device
     }
 
     /** @throws void */
-    public function getType(): string | null
+    public function getType(): Type | null
     {
         return $this->type;
     }
@@ -181,7 +182,7 @@ final class Device
             'marketingName' => $this->marketingName,
             'manufacturer' => $this->manufacturer,
             'brand' => $this->brand,
-            'type' => $this->type,
+            'type' => $this->type?->getType(),
             'display' => $this->display,
             'dualOrientation' => $this->dualOrientation,
             'simCount' => $this->simCount,
@@ -282,7 +283,7 @@ final class Device
         $this->marketingName   = $marketingName;
         $this->manufacturer    = $manufacturer;
         $this->brand           = $brand;
-        $this->type            = $type;
+        $this->type            = Type::fromName($type);
         $this->display         = $display;
         $this->dualOrientation = $dualOrientation;
         $this->simCount        = $simCount;

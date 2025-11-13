@@ -9,8 +9,8 @@
       "marketingName": "ME75",
       "manufacturer": "siemens",
       "brand": "siemens",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 176,
         "height": 132,
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Opera Mini",
       "modus": null,
       "version": "1.1.3314",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   }
 ]

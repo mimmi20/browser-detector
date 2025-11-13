@@ -9,8 +9,8 @@
       "marketingName": "Intro TR3544",
       "manufacturer": "advance",
       "brand": "advance",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 800,
         "height": 480,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.4",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "9.4.0.347",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

@@ -9,8 +9,8 @@
       "marketingName": "SF65v2",
       "manufacturer": "siemens",
       "brand": "siemens",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -54,8 +54,8 @@
       "marketingName": "SF65",
       "manufacturer": "siemens",
       "brand": "siemens",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -71,14 +71,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": "2.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -99,8 +99,8 @@
       "marketingName": "CFX65",
       "manufacturer": "siemens",
       "brand": "siemens",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -116,14 +116,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   }
 ]

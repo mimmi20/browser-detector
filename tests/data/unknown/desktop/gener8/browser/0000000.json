@@ -17,7 +17,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -33,14 +33,14 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "10.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": 64
     },
     "client": {
       "name": "Gener8 Browser",
       "modus": null,
       "version": "98.0.4758.109",
-      "manufacturer": "gener8",
+      "manufacturer": "Gener8",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -48,7 +48,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.109",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

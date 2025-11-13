@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Windows RT Tablet",
       "marketingName": "Windows RT Tablet",
-      "manufacturer": "microsoft",
-      "brand": "microsoft",
+      "manufacturer": "Microsoft",
+      "brand": "Microsoft",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -26,14 +26,14 @@
       "name": "Windows Phone OS",
       "marketingName": "Windows Phone OS",
       "version": "8.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "3.1.1.343",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

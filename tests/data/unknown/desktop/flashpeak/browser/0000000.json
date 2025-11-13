@@ -10,7 +10,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -24,9 +24,9 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": "4.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   },
   {
@@ -55,7 +55,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -71,7 +71,7 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Trident",
       "version": "4.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   },
   {
@@ -100,7 +100,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -116,7 +116,7 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.34.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -145,7 +145,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -161,7 +161,7 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -176,97 +176,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.34.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/534.34 (KHTML, like Gecko) SlimBoat/1.1.53 Chrome/25.0.1364.97 Version/5.1 Safari/534.34"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "SlimBoat",
-      "modus": null,
-      "version": "1.1.53",
-      "manufacturer": "flashpeak",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.34.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0; SlimBrowser/7.00; tb-webde/2.6.0; BOIE9;DEDE)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "SlimBrowser",
-      "modus": null,
-      "version": "7.00.0",
-      "manufacturer": "flashpeak",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "5.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -280,7 +190,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -294,9 +204,9 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -311,7 +221,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.34.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -325,7 +235,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -341,7 +251,7 @@
       "name": "Windows 98",
       "marketingName": "Windows 98",
       "version": "98.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -356,7 +266,7 @@
     "engine": {
       "name": "Trident",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

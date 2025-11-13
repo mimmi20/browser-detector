@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Insignia 500",
       "marketingName": "Insignia 500",
-      "manufacturer": "goclever",
-      "brand": "goclever",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "GOCLEVER",
+      "brand": "GOCLEVER",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -26,7 +26,7 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "30.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

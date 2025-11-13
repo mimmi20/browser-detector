@@ -1,14 +1,284 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; SM-A135F Build/TP1A.220624.014)"
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; SM-S906B Build/TP1A.220624.014)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-A135F",
-      "marketingName": "Galaxy A13",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "deviceName": "SM-S906B",
+      "marketingName": "Galaxy S22+ 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; SM-G990B2 Build/TP1A.220624.014)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G990B2",
+      "marketingName": "Galaxy S21 FE 5G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A205FN Build/RP1A.200720.012)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A205FN",
+      "marketingName": "Galaxy A20 (Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A047F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A047F",
+      "marketingName": "Galaxy A04s 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "108.0.5359.128",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A037G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A037G",
+      "marketingName": "Galaxy A03s 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "108.0.5359.128",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G981U1 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.79 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G981U1",
+      "marketingName": "Galaxy S20 5G (USA unlocked)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "108.0.5359.79",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.79",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; SM-G736B Build/TP1A.220624.014)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G736B",
+      "marketingName": "Galaxy Xcover 6 Pro (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -26,14 +296,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +311,187 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G990E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G990E",
+      "marketingName": "Galaxy S21 FE 5G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A226BR Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A226BR",
+      "marketingName": "Galaxy A22 5G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "108.0.5359.128",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A750F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A750F",
+      "marketingName": "Galaxy A7 (2018)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2220,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "108.0.5359.128",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; SM-A135F Build/TP1A.220624.014)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A135F",
+      "marketingName": "Galaxy A13",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
     }
   },
   {
@@ -52,8 +502,8 @@
       "architecture": null,
       "deviceName": "SM-G736B",
       "marketingName": "Galaxy Xcover 6 Pro (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -71,14 +521,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "108.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +536,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -97,8 +547,8 @@
       "architecture": null,
       "deviceName": "SM-A042F",
       "marketingName": "Galaxy A04e",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -116,14 +566,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "109.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +581,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -145,8 +595,8 @@
       "architecture": null,
       "deviceName": "SM-A505FN",
       "marketingName": "Galaxy A50",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -164,14 +614,14 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "100.0.4896.88",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -179,7 +629,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.88",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -190,8 +640,8 @@
       "architecture": null,
       "deviceName": "SM-A236E",
       "marketingName": "Galaxy A23 5G (Asia/Africa)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -209,14 +659,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "109.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -224,7 +674,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -235,8 +685,8 @@
       "architecture": null,
       "deviceName": "SM-A236U1",
       "marketingName": "Galaxy A23 5G (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -254,14 +704,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "109.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -269,7 +719,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -280,8 +730,8 @@
       "architecture": null,
       "deviceName": "SM-A315N",
       "marketingName": "Galaxy A31",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -299,14 +749,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -314,7 +764,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -325,8 +775,8 @@
       "architecture": null,
       "deviceName": "SM-M3070",
       "marketingName": "Galaxy M30s (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -344,14 +794,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "78.0.3904.96",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -359,7 +809,7 @@
     "engine": {
       "name": "Blink",
       "version": "78.0.3904.96",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -370,8 +820,8 @@
       "architecture": null,
       "deviceName": "SM-S918B",
       "marketingName": "Galaxy S23 Ultra (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -389,14 +839,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "109.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -404,7 +854,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -415,8 +865,8 @@
       "architecture": null,
       "deviceName": "SM-S918B",
       "marketingName": "Galaxy S23 Ultra (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -434,14 +884,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "109.0.5414.117",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -449,7 +899,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.5414.117",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -460,8 +910,8 @@
       "architecture": null,
       "deviceName": "SM-S918B",
       "marketingName": "Galaxy S23 Ultra (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -479,14 +929,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -494,7 +944,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -504,9 +954,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S916B",
-      "marketingName": "Galaxy S23 Plus (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S23+ (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -524,14 +974,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "109.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -539,7 +989,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -550,8 +1000,8 @@
       "architecture": null,
       "deviceName": "SM-A013G",
       "marketingName": "Galaxy A01 Core",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -569,14 +1019,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "109.0.5414.118",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -584,7 +1034,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.5414.118",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -595,8 +1045,8 @@
       "architecture": null,
       "deviceName": "SM-G970F",
       "marketingName": "Galaxy S10e (Europe, Latin America)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -614,14 +1064,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android Webkit",
       "modus": null,
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -640,8 +1090,8 @@
       "architecture": null,
       "deviceName": "SM-S911B",
       "marketingName": "Galaxy S23 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -659,14 +1109,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "109.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -674,7 +1124,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -685,8 +1135,8 @@
       "architecture": null,
       "deviceName": "SM-S911N",
       "marketingName": "Galaxy S23 (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -704,14 +1154,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -719,7 +1169,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -729,9 +1179,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S916N",
-      "marketingName": "Galaxy S23 Plus (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S23+ (Korea)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -749,14 +1199,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -764,7 +1214,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -775,8 +1225,8 @@
       "architecture": null,
       "deviceName": "SM-S918N",
       "marketingName": "Galaxy S23 Ultra (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -794,14 +1244,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -809,7 +1259,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -820,8 +1270,8 @@
       "architecture": null,
       "deviceName": "SM-A042M",
       "marketingName": "Galaxy A04e",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -839,14 +1289,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -854,7 +1304,52 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-M045F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-M045F",
+      "marketingName": "Galaxy M04",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "110.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "110.0.0.0",
+      "manufacturer": "Google"
     }
   },
   {
@@ -865,8 +1360,8 @@
       "architecture": null,
       "deviceName": "SM-G800",
       "marketingName": "Galaxy S5 Mini",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -884,14 +1379,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "30.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -899,7 +1394,7 @@
     "engine": {
       "name": "Blink",
       "version": "30.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -910,8 +1405,8 @@
       "architecture": null,
       "deviceName": "SM-A146U",
       "marketingName": "Galaxy A14 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -929,14 +1424,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "111.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -944,7 +1439,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -955,8 +1450,8 @@
       "architecture": null,
       "deviceName": "SM-A236U",
       "marketingName": "Galaxy A23 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -974,14 +1469,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "111.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -989,7 +1484,52 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F700W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F700W",
+      "marketingName": "Galaxy Z Flip",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2636,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "111.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "Google"
     }
   },
   {
@@ -1000,8 +1540,8 @@
       "architecture": null,
       "deviceName": "SM-A037W",
       "marketingName": "Galaxy A03s 4G (Canada)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1019,14 +1559,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "110.0.5481.153",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1034,7 +1574,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.153",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1045,8 +1585,8 @@
       "architecture": null,
       "deviceName": "SM-S911W",
       "marketingName": "Galaxy S23 (Canada)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1064,14 +1604,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "110.0.5481.65",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1079,7 +1619,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.65",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1090,8 +1630,8 @@
       "architecture": null,
       "deviceName": "SM-S9180",
       "marketingName": "Galaxy S23 Ultra (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1109,14 +1649,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "111.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1124,7 +1664,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1135,8 +1675,8 @@
       "architecture": null,
       "deviceName": "SM-S918U",
       "marketingName": "Galaxy S23 Ultra (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1154,14 +1694,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1169,7 +1709,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1180,8 +1720,8 @@
       "architecture": null,
       "deviceName": "SM-W2020",
       "marketingName": "W20 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1199,14 +1739,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "89.0.4389.90",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1214,7 +1754,7 @@
     "engine": {
       "name": "Blink",
       "version": "89.0.4389.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1225,8 +1765,8 @@
       "architecture": null,
       "deviceName": "SM-A125V",
       "marketingName": "Galaxy A12",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1244,14 +1784,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "91.0.4472.101",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1259,7 +1799,7 @@
     "engine": {
       "name": "Blink",
       "version": "91.0.4472.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1270,8 +1810,8 @@
       "architecture": null,
       "deviceName": "SM-A146B",
       "marketingName": "Galaxy A14 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1289,14 +1829,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "111.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1304,7 +1844,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1315,8 +1855,8 @@
       "architecture": null,
       "deviceName": "SM-G990U2",
       "marketingName": "Galaxy S21 FE 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1334,14 +1874,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "111.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1349,7 +1889,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1360,8 +1900,8 @@
       "architecture": null,
       "deviceName": "SM-A136S",
       "marketingName": "Galaxy A13 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1379,14 +1919,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1394,7 +1934,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1405,8 +1945,8 @@
       "architecture": null,
       "deviceName": "SM-S911B",
       "marketingName": "Galaxy S23 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1424,14 +1964,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1439,7 +1979,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1450,8 +1990,8 @@
       "architecture": null,
       "deviceName": "SM-A205F",
       "marketingName": "Galaxy A20",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1469,14 +2009,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1484,7 +2024,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1495,8 +2035,8 @@
       "architecture": null,
       "deviceName": "SM-A236B",
       "marketingName": "Galaxy A23 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1514,14 +2054,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1529,7 +2069,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1540,8 +2080,8 @@
       "architecture": null,
       "deviceName": "SM-A546B",
       "marketingName": "Galaxy A54 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1559,14 +2099,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1574,7 +2114,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1585,8 +2125,8 @@
       "architecture": null,
       "deviceName": "SM-S911B",
       "marketingName": "Galaxy S23 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1604,14 +2144,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1619,7 +2159,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1630,8 +2170,8 @@
       "architecture": null,
       "deviceName": "SM-A236B",
       "marketingName": "Galaxy A23 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1649,14 +2189,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1664,7 +2204,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1675,8 +2215,8 @@
       "architecture": null,
       "deviceName": "SM-A736B",
       "marketingName": "Galaxy A73 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1694,14 +2234,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1709,7 +2249,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1720,8 +2260,8 @@
       "architecture": null,
       "deviceName": "SM-A217M",
       "marketingName": "Galaxy A21s (2020, USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1739,14 +2279,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "111.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1754,7 +2294,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1765,8 +2305,8 @@
       "architecture": null,
       "deviceName": "SM-A035G",
       "marketingName": "Galaxy A03",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1784,14 +2324,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "109.0.5414.85",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1799,7 +2339,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.5414.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1810,8 +2350,8 @@
       "architecture": null,
       "deviceName": "SM-G981U",
       "marketingName": "Galaxy S20 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1829,14 +2369,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1844,7 +2384,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1855,8 +2395,8 @@
       "architecture": null,
       "deviceName": "SM-G981N",
       "marketingName": "Galaxy S20 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1874,14 +2414,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "110.0.5481.153",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1889,7 +2429,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.153",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1900,8 +2440,8 @@
       "architecture": null,
       "deviceName": "SM-M536B",
       "marketingName": "Galaxy M53 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1919,14 +2459,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "110.0.5481.153",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1934,7 +2474,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.153",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1945,8 +2485,8 @@
       "architecture": null,
       "deviceName": "SM-G991N",
       "marketingName": "Galaxy S21 5G (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1964,14 +2504,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "110.0.5481.154",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1979,7 +2519,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.154",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1990,8 +2530,8 @@
       "architecture": null,
       "deviceName": "SM-A137F",
       "marketingName": "Galaxy A13",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2009,14 +2549,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2024,7 +2564,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2035,8 +2575,8 @@
       "architecture": null,
       "deviceName": "SM-A235F",
       "marketingName": "Galaxy A23 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2054,14 +2594,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2069,7 +2609,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2080,8 +2620,8 @@
       "architecture": null,
       "deviceName": "SM-A546B",
       "marketingName": "Galaxy A54 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2099,14 +2639,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2114,7 +2654,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2124,9 +2664,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S916B",
-      "marketingName": "Galaxy S23 Plus (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S23+ (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2144,14 +2684,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "104.0.5112.97",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2159,7 +2699,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.97",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2169,9 +2709,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S916B",
-      "marketingName": "Galaxy S23 Plus (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S23+ (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2189,14 +2729,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2204,7 +2744,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2215,8 +2755,8 @@
       "architecture": null,
       "deviceName": "SM-A022F",
       "marketingName": "Galaxy A02",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2234,14 +2774,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2249,7 +2789,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2260,8 +2800,8 @@
       "architecture": null,
       "deviceName": "SM-G998U",
       "marketingName": "Galaxy S21 Ultra 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2279,14 +2819,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2294,7 +2834,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2305,8 +2845,8 @@
       "architecture": null,
       "deviceName": "SM-A7050",
       "marketingName": "Galaxy A70 (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2324,14 +2864,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "111.0.5563.116",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2339,7 +2879,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2350,8 +2890,8 @@
       "architecture": null,
       "deviceName": "SM-A346B",
       "marketingName": "Galaxy A34 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2369,14 +2909,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "111.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2384,7 +2924,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2395,8 +2935,8 @@
       "architecture": null,
       "deviceName": "SM-A546B",
       "marketingName": "Galaxy A54 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2414,14 +2954,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "112.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2429,7 +2969,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2440,8 +2980,8 @@
       "architecture": null,
       "deviceName": "SM-S918W",
       "marketingName": "Galaxy S23 Ultra (Canada)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2459,14 +2999,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "112.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2474,7 +3014,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2485,8 +3025,8 @@
       "architecture": null,
       "deviceName": "SM-S918U1",
       "marketingName": "Galaxy S23 Ultra (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2504,14 +3044,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "112.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2519,7 +3059,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2529,9 +3069,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S916U1",
-      "marketingName": "Galaxy S23 Plus (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S23+ (USA unlocked)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2549,14 +3089,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "111.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2564,7 +3104,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2575,8 +3115,8 @@
       "architecture": null,
       "deviceName": "SM-S9110",
       "marketingName": "Galaxy S23 (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2594,14 +3134,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "112.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2609,7 +3149,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2619,9 +3159,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-M146B",
-      "marketingName": "Galaxy M14",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy M14 5G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2639,14 +3179,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "112.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2654,7 +3194,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2665,8 +3205,8 @@
       "architecture": null,
       "deviceName": "SM-G990W2",
       "marketingName": "Galaxy S21 FE 5G (Canada)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2684,14 +3224,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "112.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2699,7 +3239,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2710,8 +3250,8 @@
       "architecture": null,
       "deviceName": "SM-E045F",
       "marketingName": "Galaxy F04",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2729,14 +3269,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "112.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2744,7 +3284,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2755,8 +3295,8 @@
       "architecture": null,
       "deviceName": "SM-A045M",
       "marketingName": "Galaxy A04 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2774,14 +3314,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2789,7 +3329,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2800,8 +3340,8 @@
       "architecture": null,
       "deviceName": "SM-J530YM",
       "marketingName": "Galaxy J5 (2017)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2819,14 +3359,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "83.0.4103.101",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2834,7 +3374,7 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2845,8 +3385,8 @@
       "architecture": null,
       "deviceName": "SM-A245F",
       "marketingName": "Galaxy A24 4G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2864,14 +3404,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "112.0.5615.135",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2879,7 +3419,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.5615.135",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2890,8 +3430,8 @@
       "architecture": null,
       "deviceName": "SM-A346B",
       "marketingName": "Galaxy A34 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2909,14 +3449,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "112.0.5615.135",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2924,7 +3464,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.5615.135",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2935,8 +3475,8 @@
       "architecture": null,
       "deviceName": "SM-A146P",
       "marketingName": "Galaxy A14 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2954,14 +3494,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "106.0.5249.126",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2969,7 +3509,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.5249.126",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2980,8 +3520,8 @@
       "architecture": null,
       "deviceName": "SM-S901E",
       "marketingName": "Galaxy S22 5G (Asia/Africa)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2999,14 +3539,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "112.0.5615.135",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3014,7 +3554,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.5615.135",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3025,8 +3565,8 @@
       "architecture": null,
       "deviceName": "SM-A115F",
       "marketingName": "Galaxy A11 (Inernational)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3044,14 +3584,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "113.0.5672.131",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3059,7 +3599,7 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.5672.131",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3070,8 +3610,8 @@
       "architecture": null,
       "deviceName": "SM-M225FV",
       "marketingName": "Galaxy M22",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3089,14 +3629,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3104,7 +3644,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3115,8 +3655,8 @@
       "architecture": null,
       "deviceName": "SM-G988U1",
       "marketingName": "Galaxy S20 Ultra 5G (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3134,14 +3674,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "113.0.5672.76",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3149,7 +3689,7 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.5672.76",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3160,8 +3700,8 @@
       "architecture": null,
       "deviceName": "SM-G781U",
       "marketingName": "Galaxy S20 FE 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3179,14 +3719,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "94.0.4606.80",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3194,7 +3734,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.80",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3205,8 +3745,8 @@
       "architecture": null,
       "deviceName": "SM-A146P",
       "marketingName": "Galaxy A14 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3224,14 +3764,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "113.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3239,7 +3779,7 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3249,9 +3789,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-G996U",
-      "marketingName": "Galaxy S21 Plus 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S21+ 5G (USA)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3269,14 +3809,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android Webkit",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3284,7 +3824,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3295,8 +3835,8 @@
       "architecture": null,
       "deviceName": "SM-G973N",
       "marketingName": "Galaxy S10",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3314,14 +3854,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "92.0.4515.131",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3329,7 +3869,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.131",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3340,8 +3880,8 @@
       "architecture": null,
       "deviceName": "SM-S911U1",
       "marketingName": "Galaxy S23 (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3359,14 +3899,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "104.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3374,7 +3914,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3385,8 +3925,8 @@
       "architecture": null,
       "deviceName": "SM-G9880",
       "marketingName": "Galaxy S20 Ultra 5G (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3404,14 +3944,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "114.0.5735.130",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3419,7 +3959,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.130",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3430,8 +3970,8 @@
       "architecture": null,
       "deviceName": "SM-G998N",
       "marketingName": "Galaxy S21 Ultra 5G (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3449,14 +3989,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "114.0.5735.196",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3464,7 +4004,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.196",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3475,8 +4015,8 @@
       "architecture": null,
       "deviceName": "SM-M336B",
       "marketingName": "Galaxy M33 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3494,14 +4034,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "114.0.5735.196",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3509,7 +4049,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.196",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3520,8 +4060,8 @@
       "architecture": null,
       "deviceName": "SM-G973U",
       "marketingName": "Galaxy S10 (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3539,14 +4079,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "114.0.5735.147",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3554,7 +4094,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.147",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3565,8 +4105,8 @@
       "architecture": null,
       "deviceName": "SM-G991U1",
       "marketingName": "Galaxy S21 5G (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3584,14 +4124,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "114.0.5735.130",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3599,7 +4139,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.130",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3610,8 +4150,8 @@
       "architecture": null,
       "deviceName": "SM-A145R",
       "marketingName": "Galaxy A14 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3629,14 +4169,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "106.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3644,7 +4184,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3655,8 +4195,8 @@
       "architecture": null,
       "deviceName": "SM-A127F",
       "marketingName": "Galaxy A12 (India)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3674,22 +4214,22 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android Webkit",
       "modus": null,
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3700,8 +4240,8 @@
       "architecture": null,
       "deviceName": "SM-G991R4",
       "marketingName": "Galaxy S21 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3719,14 +4259,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "72.0.3626.96",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3734,7 +4274,7 @@
     "engine": {
       "name": "Blink",
       "version": "72.0.3626.96",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3745,8 +4285,8 @@
       "architecture": null,
       "deviceName": "SM-A546U",
       "marketingName": "Galaxy A54 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3764,14 +4304,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "108.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3779,7 +4319,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3790,8 +4330,8 @@
       "architecture": null,
       "deviceName": "SM-S911U",
       "marketingName": "Galaxy S23 (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3809,14 +4349,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "114.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3824,7 +4364,52 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A716T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A716T",
+      "marketingName": "Galaxy A71 5G (USA)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "90.0.4430.85",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.85",
+      "manufacturer": "Google"
     }
   },
   {
@@ -3835,8 +4420,8 @@
       "architecture": null,
       "deviceName": "SM-A516T",
       "marketingName": "Galaxy A51 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3854,14 +4439,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "83.0.4103.97",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3869,7 +4454,7 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.97",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3880,8 +4465,8 @@
       "architecture": null,
       "deviceName": "SM-A146P",
       "marketingName": "Galaxy A14 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3899,14 +4484,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3914,601 +4499,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G996U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G996U",
-      "marketingName": "Galaxy S21 Plus 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "115.0.5790.138",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "115.0.5790.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A346E Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A346E",
-      "marketingName": "Galaxy A34 5G (Asia/Africa)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "115.0.5790.166",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "115.0.5790.166",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; SM-G975U Build/QP1A.190711.020)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G975U",
-      "marketingName": "Galaxy S10 Plus Dual SIM (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 3040,
-        "height": 1440,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; SM-M307F Build/QP1A.190711.020)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-M307F",
-      "marketingName": "Galaxy M30s (India)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A022M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A022M",
-      "marketingName": "Galaxy A02",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "93.0.4577.62",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "93.0.4577.62",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-E025F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-E025F",
-      "marketingName": "Galaxy F02s",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "81.0.4044.138",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A115AP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A115AP",
-      "marketingName": "Galaxy A11",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "87.0.4280.141",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G981W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G981W",
-      "marketingName": "Galaxy S20 5G (Canada)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 3200,
-        "height": 1440,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "93.0.4577.62",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "93.0.4577.62",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A305F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A305F",
-      "marketingName": "Galaxy A30",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "116.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "116.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A037U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A037U",
-      "marketingName": "Galaxy A03s 4G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "112.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "112.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A205FN Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A205FN",
-      "marketingName": "Galaxy A20 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "116.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "116.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"SM-A145P\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"",
-      "sec-ch-ua-full-version": "\"116.0.5845.173\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A145P",
-      "marketingName": "Galaxy A14 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2408,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "116.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "116.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A145R Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A145R",
-      "marketingName": "Galaxy A14 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2408,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "117.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Apple"
     }
   }
 ]

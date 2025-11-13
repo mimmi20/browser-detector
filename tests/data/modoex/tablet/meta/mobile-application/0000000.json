@@ -9,8 +9,8 @@
       "marketingName": "M960",
       "manufacturer": "modoex",
       "brand": "modoex",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Facebook App",
       "modus": null,
       "version": "264.0.0.44.111",
-      "manufacturer": "meta",
+      "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.96",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

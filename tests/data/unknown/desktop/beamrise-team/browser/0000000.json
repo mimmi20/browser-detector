@@ -10,7 +10,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -24,9 +24,9 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -55,7 +55,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -68,10 +68,10 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT 6.0",
+      "name": "Windows NT",
       "marketingName": "Windows Vista",
       "version": "6.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -86,52 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "32.0.1700.77",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Beamrise/32.1.1700.77 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Beamrise",
-      "modus": null,
-      "version": "32.1.1700.77",
-      "manufacturer": "beamrise-team",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "32.0.1700.77",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

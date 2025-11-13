@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "GT-E2152",
       "marketingName": "GT-E2152",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -52,10 +52,10 @@
       "architecture": null,
       "deviceName": "GT-C3303K",
       "marketingName": "Champ",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -71,14 +71,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -97,10 +97,10 @@
       "architecture": null,
       "deviceName": "GT-C3520",
       "marketingName": "La Fleur",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -116,14 +116,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -142,10 +142,10 @@
       "architecture": null,
       "deviceName": "SGH-A737",
       "marketingName": "SGH-A737",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -161,14 +161,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -187,55 +187,10 @@
       "architecture": null,
       "deviceName": "SGH-T259",
       "marketingName": "SGH-T259",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "4.1.0",
-      "manufacturer": "access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-T359/T359UVJI2 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-T359",
-      "marketingName": "Smiley",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -251,14 +206,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
+      "version": "4.1.0",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -266,25 +221,25 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-T749/T749UVIF3 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+      "user-agent": "SAMSUNG-SGH-T359/T359UVJI2 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SGH-T749",
-      "marketingName": "SGH-T749",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "deviceName": "SGH-T359",
+      "marketingName": "Smiley",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
-        "width": 400,
+        "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -296,14 +251,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +266,52 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-T749/T749UVIF3 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-T749",
+      "marketingName": "SGH-T749",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "Access"
     }
   },
   {
@@ -322,14 +322,14 @@
       "architecture": null,
       "deviceName": "GT-C3312",
       "marketingName": "Champ Deluxe Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone",
@@ -341,14 +341,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +356,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -367,10 +367,10 @@
       "architecture": null,
       "deviceName": "GT-S5610",
       "marketingName": "Utopia",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -386,14 +386,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +401,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -412,14 +412,14 @@
       "architecture": null,
       "deviceName": "GT-C3310",
       "marketingName": "Champ Deluxe",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -431,14 +431,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,7 +446,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -457,10 +457,10 @@
       "architecture": null,
       "deviceName": "GT-C3595",
       "marketingName": "GT-C3595",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -476,14 +476,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -491,7 +491,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -502,10 +502,10 @@
       "architecture": null,
       "deviceName": "GT-C3350",
       "marketingName": "Xcover 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -521,14 +521,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +536,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -547,14 +547,14 @@
       "architecture": null,
       "deviceName": "GT-S5220",
       "marketingName": "Star III",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -566,14 +566,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +581,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -592,14 +592,14 @@
       "architecture": null,
       "deviceName": "SGH-F480",
       "marketingName": "SGH-F480",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -611,14 +611,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +626,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -637,10 +637,10 @@
       "architecture": null,
       "deviceName": "GT-B2100I",
       "marketingName": "GT-B2100I",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -656,14 +656,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +671,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -682,100 +682,10 @@
       "architecture": null,
       "deviceName": "GT-S5220R",
       "marketingName": "Rex 80",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-F480i/XXJA2 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1 Google"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-F480I",
-      "marketingName": "SGH-F480I",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-GT-C3780/C3780XXLF3 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-C3780",
-      "marketingName": "GT-C3780",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -791,14 +701,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +716,97 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-F480i/XXJA2 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1 Google"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-F480I",
+      "marketingName": "SGH-F480I",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-C3780/C3780XXLF3 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-C3780",
+      "marketingName": "GT-C3780",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "Access"
     }
   },
   {
@@ -817,10 +817,10 @@
       "architecture": null,
       "deviceName": "GT-E2220",
       "marketingName": "Ch@t 220",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -836,14 +836,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +851,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -862,10 +862,10 @@
       "architecture": null,
       "deviceName": "SPH-M350",
       "marketingName": "Seek",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -881,14 +881,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.1",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +896,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -907,10 +907,10 @@
       "architecture": null,
       "deviceName": "SPH-M380",
       "marketingName": "Trender (Sprint)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -926,14 +926,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.1",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +941,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -952,10 +952,10 @@
       "architecture": null,
       "deviceName": "SPH-M550",
       "marketingName": "Exclaim (Sprint)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -971,14 +971,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.1",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -986,7 +986,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -997,10 +997,10 @@
       "architecture": null,
       "deviceName": "SPH-M560",
       "marketingName": "Reclaim (Sprint)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1016,14 +1016,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.1",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +1031,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1042,10 +1042,10 @@
       "architecture": null,
       "deviceName": "B5702",
       "marketingName": "B5702",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1061,14 +1061,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +1076,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1087,14 +1087,14 @@
       "architecture": null,
       "deviceName": "D900E",
       "marketingName": "D900E",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.1
       },
       "type": "feature-phone",
@@ -1106,14 +1106,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +1121,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1132,14 +1132,14 @@
       "architecture": null,
       "deviceName": "GT-B3310i",
       "marketingName": "Corby Mate",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2
       },
       "type": "feature-phone",
@@ -1151,14 +1151,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,7 +1166,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1177,14 +1177,14 @@
       "architecture": null,
       "deviceName": "GT-B3410",
       "marketingName": "Corby Text",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -1196,14 +1196,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1211,7 +1211,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1222,10 +1222,10 @@
       "architecture": null,
       "deviceName": "GT-B5722C",
       "marketingName": "Duos B5722",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1241,14 +1241,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1267,10 +1267,10 @@
       "architecture": null,
       "deviceName": "GT-C3222",
       "marketingName": "Ch@t 322",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1286,14 +1286,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1301,7 +1301,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1312,55 +1312,10 @@
       "architecture": null,
       "deviceName": "GT-C3303",
       "marketingName": "Champ",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.4
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-GT-C3300K-ORANGE/C3300KAFKA3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-C3300K",
-      "marketingName": "GT-C3300K",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1376,14 +1331,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1391,7 +1346,52 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-C3300K-ORANGE/C3300KAFKA3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-C3300K",
+      "marketingName": "GT-C3300K",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "Access"
     }
   },
   {
@@ -1402,14 +1402,14 @@
       "architecture": null,
       "deviceName": "GT-C3510",
       "marketingName": "GT-C3510",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -1421,14 +1421,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1436,7 +1436,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1447,14 +1447,14 @@
       "architecture": null,
       "deviceName": "GT-C3518",
       "marketingName": "GT-C3518",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone",
@@ -1466,14 +1466,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1492,14 +1492,14 @@
       "architecture": null,
       "deviceName": "GT-C3630",
       "marketingName": "GT-C3630",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.2
       },
       "type": "feature-phone",
@@ -1511,14 +1511,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1526,7 +1526,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1537,14 +1537,14 @@
       "architecture": null,
       "deviceName": "GT-C3630C",
       "marketingName": "GT-C3630C",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.2
       },
       "type": "feature-phone",
@@ -1556,14 +1556,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1582,10 +1582,10 @@
       "architecture": null,
       "deviceName": "GT-C3750",
       "marketingName": "GT-C3750",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1601,14 +1601,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1616,7 +1616,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1627,10 +1627,10 @@
       "architecture": null,
       "deviceName": "GT-C3782",
       "marketingName": "Evan Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1646,14 +1646,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1661,7 +1661,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1672,10 +1672,10 @@
       "architecture": null,
       "deviceName": "GT-C5010B",
       "marketingName": "GT-C5010B",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1691,14 +1691,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1706,7 +1706,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1717,10 +1717,10 @@
       "architecture": null,
       "deviceName": "GT-C5010L",
       "marketingName": "GT-C5010L",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1736,14 +1736,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1751,7 +1751,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1762,10 +1762,10 @@
       "architecture": null,
       "deviceName": "GT-C5130S",
       "marketingName": "GT-C5130S",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1781,14 +1781,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1796,7 +1796,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1807,10 +1807,10 @@
       "architecture": null,
       "deviceName": "GT-C5510U",
       "marketingName": "GT-C5510U",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1826,14 +1826,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1841,7 +1841,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1852,10 +1852,10 @@
       "architecture": null,
       "deviceName": "GT-C6112",
       "marketingName": "GT-C6112",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1871,14 +1871,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1897,10 +1897,10 @@
       "architecture": null,
       "deviceName": "GT-E1500",
       "marketingName": "GT-E1500",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1916,14 +1916,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1931,7 +1931,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1942,10 +1942,10 @@
       "architecture": null,
       "deviceName": "GT-E2222L",
       "marketingName": "Ch@t 222",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1961,14 +1961,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1976,7 +1976,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1987,10 +1987,10 @@
       "architecture": null,
       "deviceName": "GT-M2513",
       "marketingName": "GT-M2513",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2006,14 +2006,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2021,7 +2021,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2032,10 +2032,10 @@
       "architecture": null,
       "deviceName": "GT-M8800",
       "marketingName": "Pixon",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
@@ -2051,14 +2051,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2066,7 +2066,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2077,10 +2077,10 @@
       "architecture": null,
       "deviceName": "GT-M8800C",
       "marketingName": "Pixon",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
@@ -2096,14 +2096,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2111,7 +2111,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2122,10 +2122,10 @@
       "architecture": null,
       "deviceName": "GT-M8800H",
       "marketingName": "Pixon",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
@@ -2141,14 +2141,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2156,7 +2156,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2167,10 +2167,10 @@
       "architecture": null,
       "deviceName": "GT-M8910H",
       "marketingName": "Pixon 12",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -2186,14 +2186,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2201,7 +2201,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2212,10 +2212,10 @@
       "architecture": null,
       "deviceName": "GT-M8910U",
       "marketingName": "Pixon 12",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -2231,14 +2231,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2246,7 +2246,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2257,10 +2257,10 @@
       "architecture": null,
       "deviceName": "GT-S3100",
       "marketingName": "GT-S3100",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 176,
         "height": 144,
@@ -2276,14 +2276,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2291,7 +2291,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2302,10 +2302,10 @@
       "architecture": null,
       "deviceName": "GT-S3310C",
       "marketingName": "GT-S3310C",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2321,14 +2321,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2336,7 +2336,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2347,10 +2347,10 @@
       "architecture": null,
       "deviceName": "GT-S3350",
       "marketingName": "GT-S3350",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2366,14 +2366,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2381,7 +2381,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2392,10 +2392,10 @@
       "architecture": null,
       "deviceName": "GT-S3501C",
       "marketingName": "GT-S3501C",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2411,14 +2411,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2437,10 +2437,10 @@
       "architecture": null,
       "deviceName": "GT-S3550",
       "marketingName": "GT-S3550",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -2456,14 +2456,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2471,7 +2471,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2482,10 +2482,10 @@
       "architecture": null,
       "deviceName": "GT-S3570",
       "marketingName": "Ch@t 357",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2501,14 +2501,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2516,7 +2516,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2527,10 +2527,10 @@
       "architecture": null,
       "deviceName": "GT-S3600C",
       "marketingName": "GT-S3600C",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2546,14 +2546,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2572,10 +2572,10 @@
       "architecture": null,
       "deviceName": "GT-S3601C",
       "marketingName": "GT-S3601C",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2591,14 +2591,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2617,14 +2617,14 @@
       "architecture": null,
       "deviceName": "GT-S3650",
       "marketingName": "Corby",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -2636,14 +2636,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2651,7 +2651,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2662,14 +2662,14 @@
       "architecture": null,
       "deviceName": "GT-S3770",
       "marketingName": "Champ 3.5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone",
@@ -2681,14 +2681,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2696,7 +2696,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2707,10 +2707,10 @@
       "architecture": null,
       "deviceName": "GT-S3770K",
       "marketingName": "Champ 3.5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2726,14 +2726,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2741,7 +2741,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2752,10 +2752,10 @@
       "architecture": null,
       "deviceName": "GT-S3770L",
       "marketingName": "Champ 3.5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2771,14 +2771,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2786,7 +2786,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2797,10 +2797,10 @@
       "architecture": null,
       "deviceName": "GT-S3770M",
       "marketingName": "Champ 3.5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2816,14 +2816,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2831,7 +2831,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2842,10 +2842,10 @@
       "architecture": null,
       "deviceName": "GT-S5229",
       "marketingName": "GT-S5229",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2861,14 +2861,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2876,7 +2876,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2887,14 +2887,14 @@
       "architecture": null,
       "deviceName": "GT-S5230",
       "marketingName": "star",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -2906,14 +2906,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2932,10 +2932,10 @@
       "architecture": null,
       "deviceName": "GT-S5350",
       "marketingName": "Shark",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2951,14 +2951,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2966,7 +2966,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2977,14 +2977,14 @@
       "architecture": null,
       "deviceName": "GT-S5500H",
       "marketingName": "Eco",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.2
       },
       "type": "feature-phone",
@@ -2996,14 +2996,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3011,7 +3011,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3022,14 +3022,14 @@
       "architecture": null,
       "deviceName": "GT-S5560",
       "marketingName": "Marvel",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -3041,14 +3041,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3067,14 +3067,14 @@
       "architecture": null,
       "deviceName": "GT-S5630C",
       "marketingName": "GT-S5630C",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone",
@@ -3086,14 +3086,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3112,14 +3112,14 @@
       "architecture": null,
       "deviceName": "GT-S6700C",
       "marketingName": "GT-S6700C",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.4
       },
       "type": "feature-phone",
@@ -3131,14 +3131,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3157,14 +3157,14 @@
       "architecture": null,
       "deviceName": "GT-S8000",
       "marketingName": "Jet",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -3176,14 +3176,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3202,14 +3202,14 @@
       "architecture": null,
       "deviceName": "GT-S8000",
       "marketingName": "Jet",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -3221,14 +3221,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3236,7 +3236,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3247,10 +3247,10 @@
       "architecture": null,
       "deviceName": "M3510L",
       "marketingName": "Beat B",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3266,14 +3266,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3281,7 +3281,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3292,10 +3292,10 @@
       "architecture": null,
       "deviceName": "GT-S5050",
       "marketingName": "GT-S5050",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3311,14 +3311,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3326,7 +3326,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3337,10 +3337,10 @@
       "architecture": null,
       "deviceName": "GT-S5200",
       "marketingName": "GT-S5200",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3356,14 +3356,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3371,7 +3371,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3382,10 +3382,10 @@
       "architecture": null,
       "deviceName": "S5320",
       "marketingName": "S5320",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3401,14 +3401,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3416,7 +3416,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3427,10 +3427,10 @@
       "architecture": null,
       "deviceName": "S9402",
       "marketingName": "S9402",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3446,14 +3446,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3461,7 +3461,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3472,14 +3472,14 @@
       "architecture": null,
       "deviceName": "SCH-U940",
       "marketingName": "Glyde",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 440,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone",
@@ -3491,14 +3491,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3506,7 +3506,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3517,10 +3517,10 @@
       "architecture": null,
       "deviceName": "SCH-W169",
       "marketingName": "SCH-W169",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3536,14 +3536,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3551,7 +3551,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3562,10 +3562,10 @@
       "architecture": null,
       "deviceName": "SCH-W259",
       "marketingName": "Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3581,14 +3581,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3596,7 +3596,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3607,10 +3607,10 @@
       "architecture": null,
       "deviceName": "SGH-A157",
       "marketingName": "SGH-A157",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3626,14 +3626,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3641,7 +3641,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3652,10 +3652,10 @@
       "architecture": null,
       "deviceName": "SGH-A157V",
       "marketingName": "SGH-A157V",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3671,14 +3671,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3686,7 +3686,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3697,10 +3697,10 @@
       "architecture": null,
       "deviceName": "SGH-A637",
       "marketingName": "SGH-A637",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 176,
         "height": 144,
@@ -3716,14 +3716,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3731,7 +3731,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3742,10 +3742,10 @@
       "architecture": null,
       "deviceName": "SGH-A667",
       "marketingName": "Evergreen",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3761,14 +3761,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3776,7 +3776,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3787,10 +3787,10 @@
       "architecture": null,
       "deviceName": "SGH-A746",
       "marketingName": "SGH-A746",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3806,14 +3806,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3821,7 +3821,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3832,10 +3832,10 @@
       "architecture": null,
       "deviceName": "SGH-A766",
       "marketingName": "SGH-A766",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -3851,14 +3851,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3866,7 +3866,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3877,10 +3877,10 @@
       "architecture": null,
       "deviceName": "SGH-A847R",
       "marketingName": "Rugby 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3896,14 +3896,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3911,7 +3911,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3922,10 +3922,10 @@
       "architecture": null,
       "deviceName": "SGH-A885",
       "marketingName": "Advance",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
@@ -3941,14 +3941,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3956,7 +3956,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3967,10 +3967,10 @@
       "architecture": null,
       "deviceName": "SGH-B460",
       "marketingName": "SGH-B460",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3986,14 +3986,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4001,7 +4001,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4012,10 +4012,10 @@
       "architecture": null,
       "deviceName": "SGH-C414",
       "marketingName": "SGH-C414",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4031,14 +4031,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4046,7 +4046,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4057,10 +4057,10 @@
       "architecture": null,
       "deviceName": "SGH-C414M",
       "marketingName": "SGH-C414M",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4076,14 +4076,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4091,7 +4091,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4102,10 +4102,10 @@
       "architecture": null,
       "deviceName": "SGH-C414R",
       "marketingName": "SGH-C414R",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4121,14 +4121,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4136,7 +4136,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4147,10 +4147,10 @@
       "architecture": null,
       "deviceName": "SGH-C414V",
       "marketingName": "SGH-C414V",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4166,14 +4166,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4181,7 +4181,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4192,10 +4192,10 @@
       "architecture": null,
       "deviceName": "SGH-C414W",
       "marketingName": "SGH-C414W",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4211,14 +4211,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4226,7 +4226,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4237,10 +4237,10 @@
       "architecture": null,
       "deviceName": "SGH-D808",
       "marketingName": "SGH-D808",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4256,14 +4256,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4282,10 +4282,10 @@
       "architecture": null,
       "deviceName": "SGH-E778",
       "marketingName": "SGH-E778",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -4301,14 +4301,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4327,10 +4327,10 @@
       "architecture": null,
       "deviceName": "SGH-F308",
       "marketingName": "SGH-F308",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -4346,14 +4346,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4372,10 +4372,10 @@
       "architecture": null,
       "deviceName": "SGH-F330",
       "marketingName": "SGH-F330",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4391,14 +4391,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4406,7 +4406,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4417,14 +4417,14 @@
       "architecture": null,
       "deviceName": "SGH-F488",
       "marketingName": "SGH-F488",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -4436,14 +4436,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4462,14 +4462,14 @@
       "architecture": null,
       "deviceName": "SGH-F488",
       "marketingName": "SGH-F488",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -4481,14 +4481,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4496,7 +4496,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   }
 ]

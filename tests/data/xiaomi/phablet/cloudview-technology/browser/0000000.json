@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "Redmi Note 4",
       "marketingName": "Redmi Note 4",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -26,7 +26,7 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -41,7 +41,52 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.92",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; en-; 2312DRA50G Build/AQ3A.240912.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.66 Mobile Safari/537.36 PHX/19.5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2312DRA50G",
+      "marketingName": "Redmi Note 13 Pro 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2712,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Phoenix Browser",
+      "modus": null,
+      "version": "19.5.0",
+      "manufacturer": "cloudview-technology",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "127.0.6533.66",
+      "manufacturer": "Google"
     }
   }
 ]

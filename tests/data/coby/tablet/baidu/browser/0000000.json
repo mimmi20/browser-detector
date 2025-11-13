@@ -9,8 +9,8 @@
       "marketingName": "Kyros MID9742",
       "manufacturer": "coby",
       "brand": "coby",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 768,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.3",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Baidu Browser",
       "modus": null,
       "version": "4.1.0.3",
-      "manufacturer": "baidu",
+      "manufacturer": "Baidu",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "T5",
       "version": "2.0.0",
-      "manufacturer": "baidu"
+      "manufacturer": "Baidu"
     }
   }
 ]

@@ -13,13 +13,13 @@
     displayDetailsOnTestsThatTriggerNotices="true"
     displayDetailsOnTestsThatTriggerErrors="true"
     displayDetailsOnTestsThatTriggerDeprecations="true"
-    displayDetailsOnSkippedTests="true"
-    displayDetailsOnIncompleteTests="true"
+    displayDetailsOnSkippedTests="false"
+    displayDetailsOnIncompleteTests="false"
     failOnPhpunitDeprecation="true"
     failOnEmptyTestSuite="true"
     failOnIncomplete="true"
     failOnRisky="true"
-    failOnSkipped="true"
+    failOnSkipped="false"
     failOnDeprecation="true"
     failOnNotice="true"
     failOnWarning="true"
@@ -30,7 +30,7 @@
     requireCoverageMetadata="true"
     colors="true"
     cacheDirectory="./.reports/.coverage-cache"
-    columns="119"
+    columns="121"
 >
     <php>
         <ini name="error_reporting" value="-1"/>

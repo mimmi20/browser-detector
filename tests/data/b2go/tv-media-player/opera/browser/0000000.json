@@ -9,8 +9,8 @@
       "marketingName": "H96 Max",
       "manufacturer": "b2go",
       "brand": "xinways",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "65.2.3381.61420",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.166",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -55,7 +55,7 @@
       "manufacturer": "b2go",
       "brand": "b2go",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "40.1.2254.138129",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "74.0.3729.112",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

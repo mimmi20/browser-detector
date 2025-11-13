@@ -9,8 +9,8 @@
       "marketingName": "TAQ-10182",
       "manufacturer": "denver",
       "brand": "denver",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "17.1.0.412.01",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "55.0.2883.95",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

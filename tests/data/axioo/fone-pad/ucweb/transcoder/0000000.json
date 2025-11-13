@@ -9,8 +9,8 @@
       "marketingName": "PicoPad S1 (Wi-Fi + 3G)",
       "manufacturer": "axioo",
       "brand": "axioo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "10.1.0.563",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U2",
       "version": "1.0.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

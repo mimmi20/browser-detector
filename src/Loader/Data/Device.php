@@ -13,9 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Data;
 
+use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Device as DataDevice;
-use FilterIterator;
-use Iterator;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RecursiveDirectoryIterator;
@@ -56,28 +55,7 @@ final class Device implements DataInterface
         $iterator = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(self::DATA_PATH . $this->company),
         );
-        $files    = new class ($iterator, 'json') extends FilterIterator {
-            /**
-             * @param Iterator<SplFileInfo> $iterator
-             *
-             * @throws void
-             */
-            public function __construct(Iterator $iterator, private readonly string $extension)
-            {
-                parent::__construct($iterator);
-            }
-
-            /** @throws void */
-            #[Override]
-            public function accept(): bool
-            {
-                $file = $this->getInnerIterator()->current();
-
-                assert($file instanceof SplFileInfo);
-
-                return $file->isFile() && $file->getExtension() === $this->extension;
-            }
-        };
+        $files    = new FilterIterator($iterator, 'json');
 
         foreach ($files as $file) {
             assert($file instanceof SplFileInfo);

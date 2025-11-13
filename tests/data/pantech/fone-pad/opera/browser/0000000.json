@@ -9,8 +9,8 @@
       "marketingName": "Element",
       "manufacturer": "pantech",
       "brand": "pantech",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 768,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "3.2.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "14.0.1074.57453",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.31.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

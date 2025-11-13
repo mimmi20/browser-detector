@@ -9,8 +9,8 @@
       "marketingName": "U7",
       "manufacturer": "boway",
       "brand": "boway",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -26,7 +26,7 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.4",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

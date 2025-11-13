@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "TZ862",
       "marketingName": "TZ862",
-      "manufacturer": "irbis",
-      "brand": "irbis",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Irbis",
+      "brand": "Irbis",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search App",
       "modus": null,
       "version": "7.16.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "30.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

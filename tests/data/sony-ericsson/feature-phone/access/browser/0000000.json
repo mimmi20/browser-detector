@@ -9,12 +9,12 @@
       "marketingName": "Satio",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 640,
         "height": 360,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -54,8 +54,8 @@
       "marketingName": "Cedar",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -71,14 +71,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -99,8 +99,8 @@
       "marketingName": "Elm",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -116,14 +116,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -144,8 +144,8 @@
       "marketingName": "Hazel",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -161,14 +161,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -189,8 +189,8 @@
       "marketingName": "Jalou",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -206,14 +206,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +221,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -234,8 +234,8 @@
       "marketingName": "Naite",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -251,14 +251,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -266,7 +266,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -279,8 +279,8 @@
       "marketingName": "Zylo",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -296,14 +296,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +311,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -324,8 +324,8 @@
       "marketingName": "K770i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -341,14 +341,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +356,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -369,8 +369,8 @@
       "marketingName": "W995",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -386,14 +386,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +401,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -414,8 +414,8 @@
       "marketingName": "C510",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -431,14 +431,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,7 +446,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -459,8 +459,8 @@
       "marketingName": "T650i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -476,14 +476,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -491,7 +491,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -504,12 +504,12 @@
       "marketingName": "Aino",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 432,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -521,14 +521,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +536,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -549,8 +549,8 @@
       "marketingName": "K800i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -566,14 +566,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +581,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -594,8 +594,8 @@
       "marketingName": "T700",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -611,14 +611,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +626,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -639,8 +639,8 @@
       "marketingName": "K850i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -656,14 +656,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +671,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -684,8 +684,8 @@
       "marketingName": "A120i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -701,14 +701,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +716,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -729,8 +729,8 @@
       "marketingName": "A195i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -746,14 +746,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +761,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -774,8 +774,8 @@
       "marketingName": "A200i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -791,14 +791,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +806,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -819,8 +819,8 @@
       "marketingName": "A270",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -836,14 +836,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +851,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -864,8 +864,8 @@
       "marketingName": "A290i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -881,14 +881,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +896,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -909,8 +909,8 @@
       "marketingName": "A320",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -926,14 +926,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +941,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -954,8 +954,8 @@
       "marketingName": "C123",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -971,14 +971,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -986,7 +986,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -999,8 +999,8 @@
       "marketingName": "C123v",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1016,14 +1016,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +1031,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1044,8 +1044,8 @@
       "marketingName": "C702",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1061,14 +1061,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +1076,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1089,8 +1089,8 @@
       "marketingName": "C901",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1106,14 +1106,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +1121,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1134,8 +1134,8 @@
       "marketingName": "C902",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1151,14 +1151,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,7 +1166,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1179,8 +1179,8 @@
       "marketingName": "C903",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1196,14 +1196,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1211,7 +1211,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1224,8 +1224,8 @@
       "marketingName": "C905",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1241,14 +1241,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1256,7 +1256,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1269,8 +1269,8 @@
       "marketingName": "G502",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1286,14 +1286,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1301,7 +1301,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1314,8 +1314,8 @@
       "marketingName": "G705",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1331,14 +1331,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1346,7 +1346,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1359,8 +1359,8 @@
       "marketingName": "J20",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -1376,14 +1376,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1391,7 +1391,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1404,8 +1404,8 @@
       "marketingName": "J20a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -1421,14 +1421,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1436,7 +1436,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1449,8 +1449,8 @@
       "marketingName": "K310c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1466,14 +1466,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1481,7 +1481,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1494,8 +1494,8 @@
       "marketingName": "K310iv",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1511,14 +1511,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1526,7 +1526,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1539,8 +1539,8 @@
       "marketingName": "K320c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1556,14 +1556,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1571,7 +1571,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1584,8 +1584,8 @@
       "marketingName": "K510",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1601,14 +1601,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1616,7 +1616,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1629,8 +1629,8 @@
       "marketingName": "K510c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1646,14 +1646,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1661,7 +1661,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1674,8 +1674,8 @@
       "marketingName": "K510i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1691,14 +1691,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0-patch",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1706,7 +1706,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1719,8 +1719,8 @@
       "marketingName": "K530c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1736,14 +1736,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1751,7 +1751,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1764,8 +1764,8 @@
       "marketingName": "K550c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1781,14 +1781,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1796,7 +1796,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1809,8 +1809,8 @@
       "marketingName": "K550i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1826,14 +1826,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1841,7 +1841,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1854,8 +1854,8 @@
       "marketingName": "K610c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1871,14 +1871,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1886,7 +1886,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1899,8 +1899,8 @@
       "marketingName": "K610im",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1916,14 +1916,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1931,7 +1931,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1944,8 +1944,8 @@
       "marketingName": "K610iv",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1961,14 +1961,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1976,7 +1976,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -1989,8 +1989,8 @@
       "marketingName": "K618iv",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2006,14 +2006,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2021,7 +2021,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2034,8 +2034,8 @@
       "marketingName": "K630i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2051,14 +2051,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2066,7 +2066,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2079,8 +2079,8 @@
       "marketingName": "K660",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2096,14 +2096,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2111,7 +2111,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2124,8 +2124,8 @@
       "marketingName": "K700",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2141,14 +2141,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2156,7 +2156,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2169,8 +2169,8 @@
       "marketingName": "K700v",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2186,14 +2186,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2201,7 +2201,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2214,8 +2214,8 @@
       "marketingName": "K790",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2231,14 +2231,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2246,7 +2246,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2259,8 +2259,8 @@
       "marketingName": "K800a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2276,14 +2276,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2291,7 +2291,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2304,8 +2304,8 @@
       "marketingName": "K800c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2321,14 +2321,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2336,7 +2336,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2349,8 +2349,8 @@
       "marketingName": "K810a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2366,14 +2366,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2381,7 +2381,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2394,8 +2394,8 @@
       "marketingName": "K810c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2411,14 +2411,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2426,7 +2426,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2439,8 +2439,8 @@
       "marketingName": "K810i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2456,14 +2456,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2471,7 +2471,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2484,8 +2484,8 @@
       "marketingName": "K818c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2501,14 +2501,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2516,7 +2516,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2529,8 +2529,8 @@
       "marketingName": "K850Fi",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2546,14 +2546,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2561,7 +2561,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2574,8 +2574,8 @@
       "marketingName": "K8J50i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -2591,14 +2591,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2606,7 +2606,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2619,8 +2619,8 @@
       "marketingName": "K999",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2636,14 +2636,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2651,7 +2651,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2664,8 +2664,8 @@
       "marketingName": "W910i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2681,14 +2681,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2696,7 +2696,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2709,8 +2709,8 @@
       "marketingName": "S500c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2726,14 +2726,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2741,7 +2741,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2754,8 +2754,8 @@
       "marketingName": "S600i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2771,14 +2771,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2786,7 +2786,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2799,8 +2799,8 @@
       "marketingName": "T123i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2816,14 +2816,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2831,7 +2831,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2844,8 +2844,8 @@
       "marketingName": "T658c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2861,14 +2861,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2876,7 +2876,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2889,8 +2889,8 @@
       "marketingName": "T707a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2906,14 +2906,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2921,7 +2921,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2934,8 +2934,8 @@
       "marketingName": "T818",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2951,14 +2951,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2966,7 +2966,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -2979,8 +2979,8 @@
       "marketingName": "TM506",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2996,14 +2996,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3011,7 +3011,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3024,8 +3024,8 @@
       "marketingName": "V640iv",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3041,14 +3041,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3056,7 +3056,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3069,8 +3069,8 @@
       "marketingName": "W200a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3086,14 +3086,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3101,7 +3101,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3114,8 +3114,8 @@
       "marketingName": "W200c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3131,14 +3131,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3146,7 +3146,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3159,8 +3159,8 @@
       "marketingName": "W200i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3176,14 +3176,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3191,7 +3191,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3204,8 +3204,8 @@
       "marketingName": "W300",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3221,14 +3221,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3236,7 +3236,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3249,8 +3249,8 @@
       "marketingName": "W300c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3266,14 +3266,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3281,7 +3281,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3294,8 +3294,8 @@
       "marketingName": "W300i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3311,14 +3311,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3326,7 +3326,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3339,8 +3339,8 @@
       "marketingName": "W350a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3356,14 +3356,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3371,7 +3371,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3384,8 +3384,8 @@
       "marketingName": "W350c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3401,14 +3401,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3416,7 +3416,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3429,8 +3429,8 @@
       "marketingName": "W350iv",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3446,14 +3446,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3461,7 +3461,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3474,8 +3474,8 @@
       "marketingName": "W380i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3491,14 +3491,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3506,7 +3506,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3519,8 +3519,8 @@
       "marketingName": "W518a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3536,14 +3536,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3551,7 +3551,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3564,8 +3564,8 @@
       "marketingName": "W595a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3581,14 +3581,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3596,7 +3596,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3609,8 +3609,8 @@
       "marketingName": "W595c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3626,14 +3626,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3641,7 +3641,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3654,8 +3654,8 @@
       "marketingName": "W595",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3671,14 +3671,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3686,7 +3686,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3699,8 +3699,8 @@
       "marketingName": "W598e",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -3716,14 +3716,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3731,7 +3731,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3744,8 +3744,8 @@
       "marketingName": "W600c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -3761,14 +3761,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3776,7 +3776,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3789,8 +3789,8 @@
       "marketingName": "W610a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -3806,14 +3806,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3821,7 +3821,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3834,8 +3834,8 @@
       "marketingName": "W610c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -3851,14 +3851,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3866,7 +3866,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3879,8 +3879,8 @@
       "marketingName": "W610i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -3896,14 +3896,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3911,7 +3911,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3924,8 +3924,8 @@
       "marketingName": "W660iv",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3941,14 +3941,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3956,7 +3956,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -3969,8 +3969,8 @@
       "marketingName": "W705",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3986,14 +3986,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4001,7 +4001,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4014,8 +4014,8 @@
       "marketingName": "W710c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -4031,14 +4031,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4046,7 +4046,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4059,8 +4059,8 @@
       "marketingName": "W715v",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4076,14 +4076,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4091,7 +4091,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4104,8 +4104,8 @@
       "marketingName": "W760a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4121,14 +4121,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4136,7 +4136,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4149,8 +4149,8 @@
       "marketingName": "W810i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -4166,14 +4166,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4181,7 +4181,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4194,8 +4194,8 @@
       "marketingName": "W830a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4211,14 +4211,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4226,7 +4226,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4239,8 +4239,8 @@
       "marketingName": "W830c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4256,14 +4256,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4271,7 +4271,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4284,8 +4284,8 @@
       "marketingName": "W850i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4301,14 +4301,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4316,7 +4316,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4329,8 +4329,8 @@
       "marketingName": "W850iv",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4346,14 +4346,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4361,7 +4361,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4374,8 +4374,8 @@
       "marketingName": "W880i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4391,14 +4391,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4406,7 +4406,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4419,8 +4419,8 @@
       "marketingName": "W880iv",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4436,14 +4436,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4451,7 +4451,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -4464,8 +4464,8 @@
       "marketingName": "W888c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -4481,14 +4481,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4496,7 +4496,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   }
 ]

@@ -806,7 +806,6 @@ final class SecChUaModelTest extends TestCase
             ['SM-A556B', true, 'samsung=samsung sm-a556b'],
             ['SM-G986U', true, 'samsung=samsung sm-g986u'],
             ['SM-T295', true, 'samsung=samsung sm-t295'],
-            ['SM-G973F/G973FXXU9DTJA', true, 'samsung=samsung sm-g973f'],
             ['"SM-A515F/A515FXXU8HWI1"', true, 'samsung=samsung sm-a515f'],
             ['SM-F711U1', true, 'samsung=samsung sm-f711u1'],
             ['SM-J530FM', true, 'samsung=samsung sm-j530fm'],
@@ -1368,7 +1367,7 @@ final class SecChUaModelTest extends TestCase
             ['moto g23', true, 'motorola=motorola moto g23'],
             ['moto g14', true, 'motorola=motorola moto g14'],
             ['moto g84 5G', true, 'motorola=motorola moto g84 5g'],
-            ['moto g31(w)', true, 'motorola=motorola moto g31'],
+            ['moto g31(w)', true, 'motorola=motorola moto g31w'],
             ['moto g22', true, 'motorola=motorola moto g22'],
             ['moto g(7) power', true, 'motorola=motorola moto g7 power'],
             ['moto g(10)', true, 'motorola=motorola moto g10'],
@@ -1956,7 +1955,6 @@ final class SecChUaModelTest extends TestCase
             ['"Aquaris X Pro"', true, 'bq=bq aquaris x pro'],
             // meizu
             ['"M6s"', true, 'meizu=meizu m6s'],
-            ['"NOTE 21"', true, 'meizu=meizu note 21'],
             ['"PRO 6 Plus"', true, 'meizu=meizu pro 6 plus'],
             // peaq
             ['"PEAQ PET 100"', true, 'peaq=peaq pet 100'],

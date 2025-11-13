@@ -9,8 +9,8 @@
       "marketingName": "J108",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": null,
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -54,278 +54,8 @@
       "marketingName": "M600c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "8.60.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 158) Opera 8.60 [en-US]SonyEricssonM600i/R100"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M600i",
-      "marketingName": "M600i",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "8.60.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonM608c/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 276) Opera 8.60 [en]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M608c",
-      "marketingName": "M608c",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "8.60.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonP200/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; en; 10000320) Opera 9.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "P200",
-      "marketingName": "P200",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.5.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonP700i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 513) Opera 8.65 [en]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "P700i",
-      "marketingName": "P700i",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "8.65.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 246) Opera 8.60 [en]SonyEricssonP990i/R100"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "P990",
-      "marketingName": "P990",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.7
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "8.60.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonW958c/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 405) Opera 8.65 [en]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "W958c",
-      "marketingName": "W958c",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -341,14 +71,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "8.65.0",
-      "manufacturer": "opera",
+      "version": "8.60.0",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +86,277 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 158) Opera 8.60 [en-US]SonyEricssonM600i/R100"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M600i",
+      "marketingName": "M600i",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.60.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonM608c/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 276) Opera 8.60 [en]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M608c",
+      "marketingName": "M608c",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.60.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonP200/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; en; 10000320) Opera 9.5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P200",
+      "marketingName": "P200",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonP700i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 513) Opera 8.65 [en]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P700i",
+      "marketingName": "P700i",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.65.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 246) Opera 8.60 [en]SonyEricssonP990i/R100"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P990",
+      "marketingName": "P990",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.7
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.60.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonW958c/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 405) Opera 8.65 [en]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W958c",
+      "marketingName": "W958c",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.65.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
     }
   },
   {
@@ -369,8 +369,8 @@
       "marketingName": "P910",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 208,
@@ -386,14 +386,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.32.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -414,8 +414,8 @@
       "marketingName": "P900",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 208,
@@ -431,14 +431,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.31.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -459,12 +459,12 @@
       "marketingName": "P800",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 208,
-        "touch": true,
+        "touch": false,
         "size": 2.9
       },
       "type": "feature-phone",
@@ -476,14 +476,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.31.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -504,8 +504,8 @@
       "marketingName": "G700",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -521,14 +521,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "8.65.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +536,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -549,12 +549,12 @@
       "marketingName": "P1i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.6
       },
       "type": "feature-phone",
@@ -566,14 +566,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "8.65.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +581,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -594,12 +594,12 @@
       "marketingName": "W960",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -611,14 +611,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "8.65.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +626,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -639,12 +639,12 @@
       "marketingName": "G900",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.4
       },
       "type": "feature-phone",
@@ -656,14 +656,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "8.65.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +671,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -684,12 +684,12 @@
       "marketingName": "W950i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.6
       },
       "type": "feature-phone",
@@ -701,14 +701,14 @@
       "name": "Symbian OS",
       "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "8.65.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +716,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -729,8 +729,8 @@
       "marketingName": "T700",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -746,14 +746,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "38.1.2254.136033",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +761,7 @@
     "engine": {
       "name": "Blink",
       "version": "72.0.3626.105",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

@@ -25,6 +25,7 @@ use UaResult\Company\Company;
 use UaResult\Device\Device;
 use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
+use UnexpectedValueException;
 
 final readonly class DeviceLoader implements DeviceLoaderInterface
 {
@@ -65,25 +66,55 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
     /** @throws void */
     private function fromArray(InitData\Device $data): DeviceInterface
     {
-        $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
+        $manufacturer     = new Company(type: 'unknown', name: null, brandname: null);
+        $manufacturerName = $data->getManufacturer();
 
-        if ($data->getManufacturer() !== null) {
+        if ($manufacturerName !== null) {
             try {
-                $manufacturer = $this->companyLoader->load($data->getManufacturer());
+                $company = \BrowserDetector\Data\Company::fromName($manufacturerName);
+
+                $manufacturerName = $company->getBrandname() ?? 'unknown';
+            } catch (UnexpectedValueException) {
+                // do nothing
+            }
+
+            try {
+                $manufacturer = $this->companyLoader->load($manufacturerName);
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
         }
 
-        $brand = new Company(type: 'unknown', name: null, brandname: null);
+        $brand     = new Company(type: 'unknown', name: null, brandname: null);
+        $brandName = $data->getBrand();
 
-        if ($data->getBrand() !== null) {
+        if ($brandName !== null) {
             try {
-                $brand = $this->companyLoader->load($data->getBrand());
+                $company = \BrowserDetector\Data\Company::fromName($brandName);
+
+                $brandName = $company->getBrandname() ?? 'unknown';
+            } catch (UnexpectedValueException) {
+                // do nothing
+            }
+
+            try {
+                $brand = $this->companyLoader->load($brandName);
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
         }
+
+        $deviceType = $data->getType() ?? Type::Unknown;
+        $simCount   = $data->getSimCount();
+
+        if (!$deviceType->isPhone()) {
+            $simCount = 0;
+        } elseif ($simCount === null) {
+            $simCount = 1;
+        }
+
+        $displayData          = $data->getDisplay();
+        $displayData['touch'] = $deviceType->hasTouch();
 
         return new Device(
             architecture: $data->getArchitecture(),
@@ -91,15 +122,15 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             marketingName: $data->getMarketingName(),
             manufacturer: $manufacturer,
             brand: $brand,
-            type: Type::fromName($data->getType()),
+            type: $deviceType,
             display: new Display(
-                width: $data->getDisplay()['width'],
-                height: $data->getDisplay()['height'],
-                touch: $data->getDisplay()['touch'],
-                size: $data->getDisplay()['size'],
+                width: $displayData['width'],
+                height: $displayData['height'],
+                touch: $displayData['touch'],
+                size: $displayData['size'],
             ),
             dualOrientation: $data->getDualOrientation(),
-            simCount: $data->getSimCount(),
+            simCount: $simCount,
             bits: $data->getBits(),
         );
     }

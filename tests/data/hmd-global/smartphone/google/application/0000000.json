@@ -8,8 +8,8 @@
       "architecture": null,
       "deviceName": "1",
       "marketingName": "1",
-      "manufacturer": "hmd-global",
-      "brand": "nokia",
+      "manufacturer": "HMD Global",
+      "brand": "Nokia",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -27,14 +27,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Google Go",
       "modus": null,
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "application",
       "isbot": false,
       "bits": null
@@ -42,7 +42,7 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.88",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -54,8 +54,8 @@
       "architecture": null,
       "deviceName": "1 Plus",
       "marketingName": "1 Plus",
-      "manufacturer": "hmd-global",
-      "brand": "nokia",
+      "manufacturer": "HMD Global",
+      "brand": "Nokia",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -73,14 +73,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Google Go",
       "modus": null,
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "application",
       "isbot": false,
       "bits": null
@@ -88,7 +88,7 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -100,8 +100,8 @@
       "architecture": null,
       "deviceName": "2.1",
       "marketingName": "2.1",
-      "manufacturer": "hmd-global",
-      "brand": "nokia",
+      "manufacturer": "HMD Global",
+      "brand": "Nokia",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -119,14 +119,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Google Go",
       "modus": null,
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "application",
       "isbot": false,
       "bits": null
@@ -134,7 +134,7 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -145,8 +145,8 @@
       "architecture": null,
       "deviceName": "1",
       "marketingName": "1",
-      "manufacturer": "hmd-global",
-      "brand": "nokia",
+      "manufacturer": "HMD Global",
+      "brand": "Nokia",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -164,14 +164,59 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Google Go",
       "modus": null,
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.android.apps.searchlite/979871 (Linux; U; Android 13; de_AT; Nokia C32; Build/TP1A.220624.014; Cronet/129.0.6614.4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C32",
+      "marketingName": "C32",
+      "manufacturer": "HMD Global",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
       "type": "application",
       "isbot": false,
       "bits": null

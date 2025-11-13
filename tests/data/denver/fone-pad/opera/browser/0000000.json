@@ -9,8 +9,8 @@
       "marketingName": "TAQ-10123",
       "manufacturer": "denver",
       "brand": "denver",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1024,
         "height": 600,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "29.0.1809.92697",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "42.0.2311.107",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

@@ -151,6 +151,7 @@ final class SecChUaPlatformTest extends TestCase
             ['\'Linux\'', true, 'linux'],
             ['\'Linux x86_64\'', true, 'linux'],
             ['"MacIntel"', true, 'mac os x'],
+            ['"Fuchsia"', true, 'fuchsia'],
             ['""', false, null],
         ];
     }

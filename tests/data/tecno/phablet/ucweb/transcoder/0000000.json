@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "LI6",
       "marketingName": "Pova 6 Neo",
-      "manufacturer": "tecno",
-      "brand": "tecno",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "13.7.8.1322",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.58",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,8 +52,8 @@
       "architecture": null,
       "deviceName": "LH7n",
       "marketingName": "Pova 5",
-      "manufacturer": "tecno",
-      "brand": "tecno",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "10.7.8.806",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -86,7 +86,52 @@
     "engine": {
       "name": "WebKit",
       "version": "528.5.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; id; TECNO_LH8n Build/UP1A.231005.007) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/10.7.8.806 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LH8n",
+      "marketingName": "Pova 5 Pro 5G",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.8.806",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "Apple"
     }
   }
 ]

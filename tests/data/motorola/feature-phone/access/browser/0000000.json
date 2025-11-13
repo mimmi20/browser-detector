@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "EX130",
       "marketingName": "Wilder",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   }
 ]

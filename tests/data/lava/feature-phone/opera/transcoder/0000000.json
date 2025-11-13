@@ -10,14 +10,14 @@
       "architecture": null,
       "deviceName": "Discover 135",
       "marketingName": "Discover 135",
-      "manufacturer": "lava",
-      "brand": "lava",
+      "manufacturer": "Lava",
+      "brand": "Lava",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3.5
       },
       "type": "feature-phone",
@@ -29,14 +29,14 @@
       "name": "MRE",
       "marketingName": "MAUI Runtime Environment",
       "version": null,
-      "manufacturer": "mediatek",
+      "manufacturer": "MediaTek",
       "bits": null
     },
     "client": {
       "name": "Opera Mini",
       "modus": null,
       "version": "4.4.31762",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -44,7 +44,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.8.119",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   }
 ]

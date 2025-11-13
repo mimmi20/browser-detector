@@ -9,8 +9,8 @@
       "marketingName": "Three Proofings W9",
       "manufacturer": "e&l",
       "brand": "e&l",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "43.0.2357.93",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "43.0.2357.93",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

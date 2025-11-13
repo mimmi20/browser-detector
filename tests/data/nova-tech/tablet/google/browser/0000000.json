@@ -9,8 +9,8 @@
       "marketingName": "nTab II",
       "manufacturer": "nova-tech",
       "brand": "nova-tech",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "30.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "30.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

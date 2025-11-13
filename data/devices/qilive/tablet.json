@@ -4,8 +4,8 @@
     "marketingName": "101",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -20,8 +20,8 @@
     "marketingName": "7",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -36,8 +36,8 @@
     "marketingName": "8",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -52,8 +52,8 @@
     "marketingName": "8QC",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -68,8 +68,8 @@
     "marketingName": "97",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 768,
@@ -84,8 +84,8 @@
     "marketingName": "97R",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -100,8 +100,8 @@
     "marketingName": "Q.3004",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -116,8 +116,8 @@
     "marketingName": "Q4",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -132,13 +132,45 @@
     "marketingName": "Q8T10IN",
     "manufacturer": "qilive",
     "brand": "qilive",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
       "touch": true,
       "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "qilive qt22101b": {
+    "deviceName": "QT22101B",
+    "marketingName": "QT22101B",
+    "manufacturer": "qilive",
+    "brand": "qilive",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "qilive qt23109bp": {
+    "deviceName": "QT23109BP",
+    "marketingName": "QT23109BP",
+    "manufacturer": "qilive",
+    "brand": "qilive",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 11
     },
     "type": "tablet",
     "platform": "android"

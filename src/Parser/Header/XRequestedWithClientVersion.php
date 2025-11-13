@@ -22,8 +22,6 @@ use function preg_match;
 
 final class XRequestedWithClientVersion implements ClientVersionInterface
 {
-    use SetVersionTrait;
-
     /** @throws void */
     #[Override]
     public function hasClientVersion(string $value): bool

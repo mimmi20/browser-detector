@@ -1,20 +1,20 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-A5630 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-T835C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/10.2 Chrome/71.0.3578.99 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -26,14 +26,104 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
-      "version": "9.4.0",
-      "manufacturer": "samsung",
+      "version": "10.2.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.99",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-T865N) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/10.0 Chrome/71.0.3578.99 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.99",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 9; SAMSUNG SM-T835C Build/PPR1.180610.011 AppleWebKit/537.36 KHTML, like Gecko SamsungBrowser/9.2 Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.2.0",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +131,52 @@
     "engine": {
       "name": "Blink",
       "version": "67.0.3396.87",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-A5630 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.4.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,14 +187,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -71,14 +206,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "9.4.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +221,7 @@
     "engine": {
       "name": "Blink",
       "version": "67.0.3396.87",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -97,14 +232,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -116,14 +251,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "8.2.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +266,7 @@
     "engine": {
       "name": "Blink",
       "version": "63.0.3239.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -142,14 +277,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -161,14 +296,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "7.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +311,7 @@
     "engine": {
       "name": "Blink",
       "version": "59.0.3071.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -187,14 +322,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -206,14 +341,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "8.2.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +356,7 @@
     "engine": {
       "name": "Blink",
       "version": "63.0.3239.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -232,14 +367,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -251,14 +386,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "8.2.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -266,7 +401,7 @@
     "engine": {
       "name": "Blink",
       "version": "63.0.3239.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -277,14 +412,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -296,14 +431,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "8.2.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +446,7 @@
     "engine": {
       "name": "Blink",
       "version": "63.0.3239.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -322,14 +457,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -341,14 +476,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "8.3.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +491,7 @@
     "engine": {
       "name": "Blink",
       "version": "63.0.3239.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -367,14 +502,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -386,14 +521,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "8.3.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +536,52 @@
     "engine": {
       "name": "Blink",
       "version": "63.0.3239.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G973XU Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.0 Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "Google"
     }
   },
   {
@@ -412,14 +592,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -431,14 +611,14 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "6.0.0",
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,7 +626,7 @@
     "engine": {
       "name": "Blink",
       "version": "76.0.3809.146",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -457,14 +637,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -476,14 +656,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "13.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -491,7 +671,7 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.106",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -502,14 +682,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -521,14 +701,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "15.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +716,7 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.210",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -547,14 +727,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -566,14 +746,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "11.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +761,7 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.143",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -592,14 +772,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -611,14 +791,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "11.1.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +806,7 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.143",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -637,14 +817,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -656,14 +836,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "12.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +851,7 @@
     "engine": {
       "name": "Blink",
       "version": "79.0.3945.136",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -682,14 +862,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -701,14 +881,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "12.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +896,7 @@
     "engine": {
       "name": "Blink",
       "version": "79.0.3945.136",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -727,14 +907,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -746,14 +926,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "12.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +941,7 @@
     "engine": {
       "name": "Blink",
       "version": "79.0.3945.136",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -772,14 +952,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -791,14 +971,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "11.2.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +986,7 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.143",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -817,14 +997,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -836,14 +1016,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "11.1.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +1031,7 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.143",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -862,14 +1042,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -881,14 +1061,14 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "4.0.0",
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "2.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +1076,7 @@
     "engine": {
       "name": "Blink",
       "version": "56.0.2924.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -907,14 +1087,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -926,14 +1106,14 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "4.0.0",
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "2.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +1121,7 @@
     "engine": {
       "name": "Blink",
       "version": "56.0.2924.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -952,14 +1132,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -971,14 +1151,14 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "5.5.0",
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "2.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -986,7 +1166,7 @@
     "engine": {
       "name": "Blink",
       "version": "69.0.3497.106",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -997,14 +1177,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -1016,14 +1196,14 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "4.0.0",
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "2.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +1211,7 @@
     "engine": {
       "name": "Blink",
       "version": "56.0.2924.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1042,14 +1222,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -1061,14 +1241,14 @@
       "name": "Tizen",
       "marketingName": "Tizen",
       "version": "5.5.0",
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "2.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +1256,7 @@
     "engine": {
       "name": "Blink",
       "version": "69.0.3497.106",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1087,14 +1267,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -1106,14 +1286,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "16.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +1301,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.166",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1132,14 +1312,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -1151,14 +1331,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "17.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,25 +1346,25 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.104",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SC-51C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.2 Chrome/92.0.4515.166 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-T835N) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/18.0 Chrome/99.0.4844.88 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -1195,23 +1375,23 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
+      "version": "10.0.0",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
-      "version": "16.2.0",
-      "manufacturer": "samsung",
+      "version": "18.0.0",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "92.0.4515.166",
-      "manufacturer": "google"
+      "version": "99.0.4844.88",
+      "manufacturer": "Google"
     }
   },
   {
@@ -1222,14 +1402,14 @@
       "architecture": null,
       "deviceName": "general Samsung device",
       "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -1241,14 +1421,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1256,7 +1436,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

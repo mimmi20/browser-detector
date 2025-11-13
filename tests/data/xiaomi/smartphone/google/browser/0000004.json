@@ -1,104 +1,14 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; 22120RN86I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "22120RN86I",
-      "marketingName": "Redmi 12C",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1650,
-        "height": 720,
-        "touch": true,
-        "size": 6.71
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "103.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; 22111317PG Build/TKQ1.221114.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "22111317PG",
-      "marketingName": "X5 5G",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "115.0.5790.166",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "115.0.5790.166",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; 22011119UY Build/RP1A.200720.011)"
     },
     "device": {
       "architecture": null,
       "deviceName": "22011119UY",
       "marketingName": "Redmi 10 (2022)",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -116,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -142,8 +52,8 @@
       "architecture": null,
       "deviceName": "M2012K11G",
       "marketingName": "Mi 11i",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -161,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "93.0.4577.62",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "93.0.4577.62",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -194,9 +104,9 @@
     "device": {
       "architecture": null,
       "deviceName": "23013PC75G",
-      "marketingName": "Poco F5 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "F5 Pro",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -214,14 +124,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "116.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -229,7 +139,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -239,9 +149,9 @@
     "device": {
       "architecture": null,
       "deviceName": "Poco X2",
-      "marketingName": "Poco X2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "X2",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -259,14 +169,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "94.0.4606.61",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -274,7 +184,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.61",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -285,8 +195,8 @@
       "architecture": null,
       "deviceName": "2209116AG",
       "marketingName": "Redmi Note 12 Pro 4G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -304,14 +214,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "116.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -319,7 +229,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -330,8 +240,8 @@
       "architecture": null,
       "deviceName": "Redmi 6 Pro",
       "marketingName": "Redmi 6 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -349,14 +259,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "70.0.3538.110",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -364,7 +274,7 @@
     "engine": {
       "name": "Blink",
       "version": "70.0.3538.110",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -375,8 +285,8 @@
       "architecture": null,
       "deviceName": "M2101K9AI",
       "marketingName": "Mi 11 Lite",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -394,14 +304,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "106.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -409,7 +319,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -420,8 +330,8 @@
       "architecture": null,
       "deviceName": "2207117BPG",
       "marketingName": "M5s",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -439,14 +349,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "117.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -454,7 +364,7 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -474,8 +384,8 @@
       "architecture": null,
       "deviceName": "23049PCD8G",
       "marketingName": "F5",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -493,14 +403,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "117.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -508,7 +418,7 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -519,8 +429,8 @@
       "architecture": null,
       "deviceName": "23053RN02L",
       "marketingName": "Redmi 12",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -538,14 +448,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "117.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -553,7 +463,7 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -564,8 +474,8 @@
       "architecture": null,
       "deviceName": "22126RN91Y",
       "marketingName": "Redmi 12C",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -583,14 +493,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "117.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -598,7 +508,7 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -609,8 +519,8 @@
       "architecture": null,
       "deviceName": "23028RN4DG",
       "marketingName": "Redmi A2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -628,14 +538,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -643,7 +553,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -654,8 +564,8 @@
       "architecture": null,
       "deviceName": "23028RN4DG",
       "marketingName": "Redmi A2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -673,14 +583,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "118.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -688,7 +598,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -699,8 +609,8 @@
       "architecture": null,
       "deviceName": "Mi 9 SE",
       "marketingName": "Mi 9 SE",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -718,14 +628,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -733,7 +643,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -744,8 +654,8 @@
       "architecture": null,
       "deviceName": "23078PND5G",
       "marketingName": "13T Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -763,14 +673,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "118.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -778,7 +688,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -798,8 +708,8 @@
       "architecture": null,
       "deviceName": "2306EPN60G",
       "marketingName": "13T",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -817,14 +727,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "119.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -832,97 +742,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; 23054RA19C Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/111.0.5563.116 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "23054RA19C",
-      "marketingName": "Redmi Note 12T Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2460,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "111.0.5563.116",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "111.0.5563.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; Xiaomi Mix Fold 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.48 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi Mix",
-      "marketingName": "Mi Mix",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2040,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "118.0.5993.48",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "118.0.5993.48",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -933,8 +753,8 @@
       "architecture": null,
       "deviceName": "23127PN0CC",
       "marketingName": "14",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -952,14 +772,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "119.0.6045.67",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -967,7 +787,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.6045.67",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -977,9 +797,9 @@
     "device": {
       "architecture": null,
       "deviceName": "MZB0E6DIN",
-      "marketingName": "Poco C51",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "C51",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -997,14 +817,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.5993.80",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1012,7 +832,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.80",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1023,8 +843,8 @@
       "architecture": null,
       "deviceName": "Mi 11X Pro",
       "marketingName": "Mi 11X Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1042,14 +862,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "91.0.4472.101",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1057,7 +877,7 @@
     "engine": {
       "name": "Blink",
       "version": "91.0.4472.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1067,9 +887,9 @@
     "device": {
       "architecture": null,
       "deviceName": "220733SPI",
-      "marketingName": "Poco C50",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "C50",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1087,14 +907,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.5993.48",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1102,7 +922,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.48",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1112,9 +932,9 @@
     "device": {
       "architecture": null,
       "deviceName": "220733SPH",
-      "marketingName": "Poco C50",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "C50",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1132,14 +952,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.5993.48",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1147,7 +967,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.48",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1157,9 +977,9 @@
     "device": {
       "architecture": null,
       "deviceName": "2302EPCC4I",
-      "marketingName": "Poco C51",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "C51",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1177,14 +997,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.5993.48",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1192,7 +1012,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.48",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1203,8 +1023,8 @@
       "architecture": null,
       "deviceName": "23028RNCAI",
       "marketingName": "Redmi A2+",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1222,14 +1042,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.5993.48",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1237,7 +1057,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.48",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1248,8 +1068,8 @@
       "architecture": null,
       "deviceName": "Civi 1S",
       "marketingName": "Civi 1S",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1267,14 +1087,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.5993.48",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1282,7 +1102,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.48",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1293,8 +1113,8 @@
       "architecture": null,
       "deviceName": "220733SG",
       "marketingName": "Redmi A1",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1312,14 +1132,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1327,7 +1147,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1338,8 +1158,8 @@
       "architecture": null,
       "deviceName": "2209116AG",
       "marketingName": "Redmi Note 12 Pro 4G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1357,14 +1177,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1372,7 +1192,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1382,9 +1202,9 @@
     "device": {
       "architecture": null,
       "deviceName": "21091116AG",
-      "marketingName": "Poco M4 Pro 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "M4 Pro 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1402,14 +1222,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "119.0.6045.163",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1417,7 +1237,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.6045.163",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1428,8 +1248,8 @@
       "architecture": null,
       "deviceName": "Poco X5 Pro 5G",
       "marketingName": "X5 Pro 5G",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1447,14 +1267,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "119.0.6045.193",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1462,7 +1282,52 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.6045.193",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 2312FPCA6G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2312FPCA6G",
+      "marketingName": "M6 Pro 4G",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
+      "manufacturer": "Google"
     }
   },
   {
@@ -1473,8 +1338,8 @@
       "architecture": null,
       "deviceName": "23100RN82L",
       "marketingName": "Redmi 13C",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1492,14 +1357,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "121.0.6167.143",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1507,7 +1372,7 @@
     "engine": {
       "name": "Blink",
       "version": "121.0.6167.143",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1518,8 +1383,8 @@
       "architecture": null,
       "deviceName": "2306EPN60G",
       "marketingName": "13T",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1537,14 +1402,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1552,7 +1417,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1563,8 +1428,8 @@
       "architecture": null,
       "deviceName": "22071212AG",
       "marketingName": "12T",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1582,14 +1447,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1597,7 +1462,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1608,8 +1473,8 @@
       "architecture": null,
       "deviceName": "Redmi 8A",
       "marketingName": "Redmi 8A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1627,14 +1492,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "100.0.4896.127",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1642,7 +1507,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1653,8 +1518,8 @@
       "architecture": null,
       "deviceName": "21121210G",
       "marketingName": "F4 GT",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1672,14 +1537,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "121.0.6167.143",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1687,7 +1552,7 @@
     "engine": {
       "name": "Blink",
       "version": "121.0.6167.143",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1698,8 +1563,8 @@
       "architecture": null,
       "deviceName": "2210129SG",
       "marketingName": "12 Lite NE",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1717,14 +1582,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "122.0.6261.64",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1732,7 +1597,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.64",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1743,8 +1608,8 @@
       "architecture": null,
       "deviceName": "2304FPN6DG",
       "marketingName": "13 Ultra",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1762,14 +1627,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "122.0.6261.105",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1777,7 +1642,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.105",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1788,8 +1653,8 @@
       "architecture": null,
       "deviceName": "2306EPN60G",
       "marketingName": "13T",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1807,14 +1672,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "120.0.6099.210",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1822,7 +1687,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.210",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1833,8 +1698,8 @@
       "architecture": null,
       "deviceName": "23076RN8DY",
       "marketingName": "Redmi 12 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1852,14 +1717,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "121.0.6167.165",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1867,7 +1732,7 @@
     "engine": {
       "name": "Blink",
       "version": "121.0.6167.165",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1878,8 +1743,8 @@
       "architecture": null,
       "deviceName": "23108RN04Y",
       "marketingName": "Redmi 13C",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1897,14 +1762,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "122.0.6261.105",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1912,7 +1777,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.105",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1922,9 +1787,9 @@
     "device": {
       "architecture": null,
       "deviceName": "23122PCD1G",
-      "marketingName": "Poco X6 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "X6 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1942,14 +1807,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "121.0.6167.180",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1957,7 +1822,7 @@
     "engine": {
       "name": "Blink",
       "version": "121.0.6167.180",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1967,9 +1832,9 @@
     "device": {
       "architecture": null,
       "deviceName": "22041219PG",
-      "marketingName": "Poco M4 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "M4 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1987,14 +1852,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "122.0.6261.64",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2002,7 +1867,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.64",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2013,8 +1878,8 @@
       "architecture": null,
       "deviceName": "2210132C",
       "marketingName": "13 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2032,14 +1897,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "122.0.6261.119",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2047,7 +1912,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.119",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2058,8 +1923,8 @@
       "architecture": null,
       "deviceName": "2210132G",
       "marketingName": "13 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2077,14 +1942,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "120.0.6099.231",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2092,7 +1957,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.231",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2103,8 +1968,8 @@
       "architecture": null,
       "deviceName": "23049PCD8G",
       "marketingName": "F5",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2122,14 +1987,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "122.0.6261.105",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2137,7 +2002,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.105",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2148,8 +2013,8 @@
       "architecture": null,
       "deviceName": "Redmi 5",
       "marketingName": "Redmi 5",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2167,14 +2032,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "120.0.6099.211",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2182,7 +2047,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.211",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2193,8 +2058,8 @@
       "architecture": null,
       "deviceName": "2112123AG",
       "marketingName": "12X",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2212,14 +2077,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2227,7 +2092,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2238,8 +2103,8 @@
       "architecture": null,
       "deviceName": "Redmi Y2",
       "marketingName": "Redmi Y2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2257,14 +2122,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "102.0.4989.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2272,7 +2137,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.4989.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2292,8 +2157,8 @@
       "architecture": null,
       "deviceName": "23078PND5G",
       "marketingName": "13T Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2311,14 +2176,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "120.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2326,7 +2191,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2337,8 +2202,8 @@
       "architecture": null,
       "deviceName": "M2001J1G",
       "marketingName": "Mi 10 Pro 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2356,14 +2221,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "91.0.4472.101",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2371,7 +2236,7 @@
     "engine": {
       "name": "Blink",
       "version": "91.0.4472.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2382,8 +2247,8 @@
       "architecture": null,
       "deviceName": "14 Pro",
       "marketingName": "14 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2401,14 +2266,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.5993.48",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2416,7 +2281,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.48",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2425,17 +2290,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "13",
-      "marketingName": "13",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "deviceName": "13 Lite",
+      "marketingName": "13 Lite",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.36
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2446,14 +2311,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.5993.48",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2461,7 +2326,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.48",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2472,8 +2337,8 @@
       "architecture": null,
       "deviceName": "MZB8257IN",
       "marketingName": "Redmi 8",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2491,14 +2356,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "91.0.4472.101",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2506,7 +2371,7 @@
     "engine": {
       "name": "Blink",
       "version": "91.0.4472.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2516,9 +2381,9 @@
     "device": {
       "architecture": null,
       "deviceName": "XIG04",
-      "marketingName": "Mi 13T 5G (Japan)",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "13T 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2536,14 +2401,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "122.0.6261.119",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2551,7 +2416,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.119",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2568,8 +2433,8 @@
       "architecture": null,
       "deviceName": "24048RN6CI",
       "marketingName": "Redmi A3x",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2587,14 +2452,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "120.0.6099.193",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2602,7 +2467,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2619,8 +2484,8 @@
       "architecture": null,
       "deviceName": "24044RN32L",
       "marketingName": "Redmi A3x",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2638,14 +2503,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "126.0.6478.122",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2653,7 +2518,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2670,8 +2535,8 @@
       "architecture": null,
       "deviceName": "24053PY09I",
       "marketingName": "14 Civi",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2689,14 +2554,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "126.0.6478.123",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2704,7 +2569,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2721,8 +2586,8 @@
       "architecture": null,
       "deviceName": "22081212R",
       "marketingName": "12T Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2740,14 +2605,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "115.0.5790.138",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2755,97 +2620,7 @@
     "engine": {
       "name": "Blink",
       "version": "115.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; M2003J6A1I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2003J6A1I",
-      "marketingName": "Redmi Note 9 Pro (India)",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "122.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "122.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; M1908C3JG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M1908C3JG",
-      "marketingName": "Redmi Note 8",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "124.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2856,8 +2631,8 @@
       "architecture": null,
       "deviceName": "24069PC21I",
       "marketingName": "F6 5G",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2875,14 +2650,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "126.0.6478.134",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2890,7 +2665,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.134",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2901,8 +2676,8 @@
       "architecture": null,
       "deviceName": "XIG03",
       "marketingName": "Redmi 12 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2920,14 +2695,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "122.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2935,7 +2710,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2946,8 +2721,8 @@
       "architecture": null,
       "deviceName": "24053PY09C",
       "marketingName": "Civi 4 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2965,14 +2740,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "75.0.3770.101",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2980,7 +2755,7 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2991,8 +2766,8 @@
       "architecture": null,
       "deviceName": "22120RN86C",
       "marketingName": "Redmi 11A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3010,14 +2785,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "108.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3025,7 +2800,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3036,8 +2811,8 @@
       "architecture": null,
       "deviceName": "23124RN87G",
       "marketingName": "Redmi 13C 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3055,14 +2830,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "76.0.3809.111",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3070,7 +2845,7 @@
     "engine": {
       "name": "Blink",
       "version": "76.0.3809.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3081,8 +2856,8 @@
       "architecture": null,
       "deviceName": "2404ARN45A",
       "marketingName": "Redmi 13",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3100,14 +2875,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "120.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3115,7 +2890,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3126,8 +2901,8 @@
       "architecture": null,
       "deviceName": "24069PC21G",
       "marketingName": "F6 5G",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3145,14 +2920,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "125.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3160,7 +2935,7 @@
     "engine": {
       "name": "Blink",
       "version": "125.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3171,8 +2946,8 @@
       "architecture": null,
       "deviceName": "2404APC5FG",
       "marketingName": "M6 4G",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3190,14 +2965,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "125.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3205,7 +2980,7 @@
     "engine": {
       "name": "Blink",
       "version": "125.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3216,8 +2991,8 @@
       "architecture": null,
       "deviceName": "24040RN64Y",
       "marketingName": "Redmi 13",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3235,14 +3010,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "120.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3250,7 +3025,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3261,8 +3036,8 @@
       "architecture": null,
       "deviceName": "2312FRAFDI",
       "marketingName": "X6 Neo",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3280,14 +3055,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "125.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3295,7 +3070,7 @@
     "engine": {
       "name": "Blink",
       "version": "125.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3306,8 +3081,8 @@
       "architecture": null,
       "deviceName": "23113RKC6G",
       "marketingName": "F6 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3325,14 +3100,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "125.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3340,7 +3115,7 @@
     "engine": {
       "name": "Blink",
       "version": "125.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3351,8 +3126,8 @@
       "architecture": null,
       "deviceName": "23088PND5R",
       "marketingName": "13T Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3370,14 +3145,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "125.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3385,7 +3160,7 @@
     "engine": {
       "name": "Blink",
       "version": "125.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3396,8 +3171,8 @@
       "architecture": null,
       "deviceName": "A401XM",
       "marketingName": "Redmi 12 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3415,14 +3190,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "126.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3430,7 +3205,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3441,8 +3216,8 @@
       "architecture": null,
       "deviceName": "23116PN5BG",
       "marketingName": "14 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3460,14 +3235,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "126.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3475,7 +3250,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3486,8 +3261,8 @@
       "architecture": null,
       "deviceName": "M1903C3GI",
       "marketingName": "Redmi Go",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3505,14 +3280,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "124.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3520,7 +3295,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3531,8 +3306,8 @@
       "architecture": null,
       "deviceName": "M1912G7BE",
       "marketingName": "Redmi K30",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3550,14 +3325,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "75.0.3770.100",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3565,7 +3340,7 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.100",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3576,8 +3351,8 @@
       "architecture": null,
       "deviceName": "M1908C3KG",
       "marketingName": "Redmi 8A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3595,14 +3370,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3610,7 +3385,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3621,8 +3396,8 @@
       "architecture": null,
       "deviceName": "M1904F3BG",
       "marketingName": "Mi 9 Lite",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3640,14 +3415,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "124.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3655,7 +3430,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3665,9 +3440,9 @@
     "device": {
       "architecture": null,
       "deviceName": "23076RA4BR",
-      "marketingName": "Redmi 12",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "Redmi 12 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3685,14 +3460,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "126.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3700,7 +3475,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3711,8 +3486,8 @@
       "architecture": null,
       "deviceName": "MZB9965IN",
       "marketingName": "X3",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3730,14 +3505,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "119.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3745,7 +3520,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3755,9 +3530,9 @@
     "device": {
       "architecture": null,
       "deviceName": "MZB8743IN",
-      "marketingName": "Poco X2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "X2",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3775,14 +3550,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "123.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3790,7 +3565,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3801,8 +3576,8 @@
       "architecture": null,
       "deviceName": "MZB8458IN",
       "marketingName": "Redmi 8A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3820,14 +3595,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "124.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3835,7 +3610,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3846,8 +3621,8 @@
       "architecture": null,
       "deviceName": "MZB8255IN",
       "marketingName": "Redmi 8",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3865,14 +3640,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "124.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3880,7 +3655,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3891,8 +3666,8 @@
       "architecture": null,
       "deviceName": "MZB07Z4IN",
       "marketingName": "X3",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3910,14 +3685,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "124.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3925,7 +3700,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3936,8 +3711,8 @@
       "architecture": null,
       "deviceName": "MZB07Z3IN",
       "marketingName": "X3",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3955,14 +3730,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "123.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3970,7 +3745,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3981,8 +3756,8 @@
       "architecture": null,
       "deviceName": "MZB07Z1IN",
       "marketingName": "X3",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4000,14 +3775,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "120.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4015,7 +3790,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4026,8 +3801,8 @@
       "architecture": null,
       "deviceName": "M2004J11G",
       "marketingName": "Poco F2 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4045,14 +3820,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "121.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4060,7 +3835,7 @@
     "engine": {
       "name": "Blink",
       "version": "121.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4071,8 +3846,8 @@
       "architecture": null,
       "deviceName": "M1908C3KH",
       "marketingName": "Redmi 8A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4090,14 +3865,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4105,7 +3880,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4116,8 +3891,8 @@
       "architecture": null,
       "deviceName": "M1908C3IG",
       "marketingName": "Redmi 8",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4135,14 +3910,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4150,7 +3925,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4161,8 +3936,8 @@
       "architecture": null,
       "deviceName": "M1908C3IC",
       "marketingName": "Redmi 8",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4180,14 +3955,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "124.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4195,7 +3970,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4206,8 +3981,8 @@
       "architecture": null,
       "deviceName": "M1903C3GG",
       "marketingName": "Redmi Go",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4225,14 +4000,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "121.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4240,7 +4015,7 @@
     "engine": {
       "name": "Blink",
       "version": "121.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4251,8 +4026,8 @@
       "architecture": null,
       "deviceName": "M1903C3EI",
       "marketingName": "Redmi 7A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4270,14 +4045,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "119.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4285,7 +4060,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4296,8 +4071,8 @@
       "architecture": null,
       "deviceName": "M1805E10A",
       "marketingName": "Pocophone F1",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -4315,14 +4090,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "122.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4330,7 +4105,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4341,8 +4116,8 @@
       "architecture": null,
       "deviceName": "MZB07Z2IN",
       "marketingName": "X3",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4360,14 +4135,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "119.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4375,7 +4150,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4386,8 +4161,8 @@
       "architecture": null,
       "deviceName": "MZB07Z0IN",
       "marketingName": "X3",
-      "manufacturer": "xiaomi",
-      "brand": "poco",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4405,14 +4180,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "123.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4420,7 +4195,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4430,9 +4205,9 @@
     "device": {
       "architecture": null,
       "deviceName": "MZB8746IN",
-      "marketingName": "Poco X2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "X2",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4450,14 +4225,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "118.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4465,7 +4240,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4475,9 +4250,9 @@
     "device": {
       "architecture": null,
       "deviceName": "MZB8744IN",
-      "marketingName": "Poco X2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "X2",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4495,14 +4270,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "120.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4510,7 +4285,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4520,9 +4295,9 @@
     "device": {
       "architecture": null,
       "deviceName": "MZB8745IN",
-      "marketingName": "Poco X2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "marketingName": "X2",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4540,14 +4315,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "117.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4555,7 +4330,232 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; MZB8741IN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MZB8741IN",
+      "marketingName": "X2",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "124.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; M1803D5XA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M1803D5XA",
+      "marketingName": "Mi Mix 2S",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "121.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "121.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; M1908C3IH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M1908C3IH",
+      "marketingName": "Redmi 8",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.22
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "119.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; MZB0GGWIN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MZB0GGWIN",
+      "marketingName": "X6 Neo",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "123.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; MZB0A5EIN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MZB0A5EIN",
+      "marketingName": "11i",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "124.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0.0",
+      "manufacturer": "Google"
     }
   }
 ]

@@ -20,8 +20,6 @@ use UaParser\ClientVersionInterface;
 
 final class CrawledByClientVersion implements ClientVersionInterface
 {
-    use SetVersionTrait;
-
     /**
      * @throws void
      *

@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "NT-3502M",
       "marketingName": "NetTAB Mercury Duo",
-      "manufacturer": "iconbit",
-      "brand": "iconbit",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "iconBIT",
+      "brand": "iconBIT",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 960,
         "height": 640,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.1.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "10.3.0.552",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   },
   {
@@ -52,10 +52,10 @@
       "architecture": null,
       "deviceName": "NT-3507M",
       "marketingName": "NT-3507M",
-      "manufacturer": "iconbit",
-      "brand": "iconbit",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "iconBIT",
+      "brand": "iconBIT",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "10.4.1.565",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

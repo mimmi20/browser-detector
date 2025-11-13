@@ -16,58 +16,47 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Override;
 use Psr\Log\LoggerInterface;
-use RuntimeException;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
 
 final class EngineLoader implements EngineLoaderInterface
 {
     use VersionFactoryTrait;
 
-    /**
-     * @phpstan-param Data\DataInterface&Data\Engine $initData
-     *
-     * @throws void
-     */
+    /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly Data\DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
         VersionBuilderInterface $versionBuilder,
     ) {
         $this->versionBuilder = $versionBuilder;
     }
 
-    /** @throws NotFoundException */
+    /** @throws void */
     #[Override]
     public function load(string $key, string $useragent = ''): EngineInterface
     {
         try {
-            $this->initData->init();
-        } catch (RuntimeException $e) {
-            throw new NotFoundException('the engine with key "' . $key . '" was not found', 0, $e);
+            $engine = \BrowserDetector\Data\Engine::fromName($key);
+        } catch (UnexpectedValueException) {
+            $engine = \BrowserDetector\Data\Engine::unknown;
         }
 
-        $engineData = $this->initData->getItem($key);
-
-        if ($engineData === null) {
-            throw new NotFoundException('the engine with key "' . $key . '" was not found');
-        }
-
-        $version      = $this->getVersion($engineData->getVersion(), $useragent);
+        $version      = $this->getVersion((object) $engine->getVersion(), $useragent);
         $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 
-        if ($engineData->getManufacturer() !== null) {
+        if ($engine->getManufacturer()->getBrandname() !== null) {
             try {
-                $manufacturer = $this->companyLoader->load($engineData->getManufacturer());
+                $manufacturer = $this->companyLoader->load($engine->getManufacturer()->getBrandname());
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
         }
 
-        return new Engine(name: $engineData->getName(), manufacturer: $manufacturer, version: $version);
+        return new Engine(name: $engine->getName(), manufacturer: $manufacturer, version: $version);
     }
 }

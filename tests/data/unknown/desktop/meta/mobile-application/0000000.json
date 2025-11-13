@@ -10,7 +10,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -33,7 +33,7 @@
       "name": "WhatsApp",
       "modus": null,
       "version": "2.16.308",
-      "manufacturer": "meta",
+      "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -55,7 +55,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -69,16 +69,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 10",
       "version": "10.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "WhatsApp",
       "modus": null,
       "version": "0.2.4240",
-      "manufacturer": "meta",
+      "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "53.0.2785.143",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -100,7 +100,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -114,16 +114,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 10",
       "version": "10.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Facebook App",
       "modus": null,
       "version": "93.0.0.64.0",
-      "manufacturer": "meta",
+      "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "602.1.1",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -145,7 +145,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -159,16 +159,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 10",
       "version": "10.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Facebook Messenger App",
       "modus": null,
       "version": "97.11.116",
-      "manufacturer": "meta",
+      "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.122",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

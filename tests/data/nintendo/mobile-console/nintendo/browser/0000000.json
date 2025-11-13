@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "3DS",
       "marketingName": "3DS",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
+      "manufacturer": "Nintendo",
+      "brand": "Nintendo",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 320,
         "height": 200,
-        "touch": false,
+        "touch": true,
         "size": null
       },
       "type": "mobile-console",
@@ -26,14 +26,14 @@
       "name": "Nintendo OS",
       "marketingName": "Nintendo OS",
       "version": null,
-      "manufacturer": "nintendo",
+      "manufacturer": "Nintendo",
       "bits": null
     },
     "client": {
       "name": "NintendoBrowser",
       "modus": null,
       "version": null,
-      "manufacturer": "nintendo",
+      "manufacturer": "Nintendo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -52,14 +52,14 @@
       "architecture": null,
       "deviceName": "New 3DS",
       "marketingName": "New 3DS",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
+      "manufacturer": "Nintendo",
+      "brand": "Nintendo",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 800,
         "height": 240,
-        "touch": false,
+        "touch": true,
         "size": 4.88
       },
       "type": "mobile-console",
@@ -71,14 +71,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "NintendoBrowser",
       "modus": null,
       "version": "1.6.10147",
-      "manufacturer": "nintendo",
+      "manufacturer": "Nintendo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "536.30.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -97,10 +97,10 @@
       "architecture": null,
       "deviceName": "Switch",
       "marketingName": "Switch",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
+      "manufacturer": "Nintendo",
+      "brand": "Nintendo",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 720,
@@ -123,7 +123,7 @@
       "name": "NintendoBrowser",
       "modus": null,
       "version": "5.1.0.13341",
-      "manufacturer": "nintendo",
+      "manufacturer": "Nintendo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "601.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -142,14 +142,14 @@
       "architecture": null,
       "deviceName": "3DS",
       "marketingName": "3DS",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
+      "manufacturer": "Nintendo",
+      "brand": "Nintendo",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 320,
         "height": 200,
-        "touch": false,
+        "touch": true,
         "size": null
       },
       "type": "mobile-console",
@@ -161,14 +161,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "NintendoBrowser",
       "modus": null,
       "version": null,
-      "manufacturer": "nintendo",
+      "manufacturer": "Nintendo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

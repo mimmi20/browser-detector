@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "GT-S7250",
       "marketingName": "Wave M",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "532.9.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -52,10 +52,10 @@
       "architecture": null,
       "deviceName": "SGH-I450",
       "marketingName": "SGH-I450",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -71,14 +71,14 @@
       "name": "Series 60",
       "marketingName": "Series 60",
       "version": null,
-      "manufacturer": "nokia",
+      "manufacturer": "Nokia",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "413.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -97,10 +97,10 @@
       "architecture": null,
       "deviceName": "SGH-I520",
       "marketingName": "SGH-I520",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -116,14 +116,14 @@
       "name": "Series 60",
       "marketingName": "Series 60",
       "version": null,
-      "manufacturer": "nokia",
+      "manufacturer": "Nokia",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "413.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -142,14 +142,14 @@
       "architecture": null,
       "deviceName": "SGH-L870",
       "marketingName": "SGH-L870",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.4
       },
       "type": "feature-phone",
@@ -161,14 +161,14 @@
       "name": "Series 60",
       "marketingName": "Series 60",
       "version": null,
-      "manufacturer": "nokia",
+      "manufacturer": "Nokia",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "WebKit",
       "version": "413.0.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

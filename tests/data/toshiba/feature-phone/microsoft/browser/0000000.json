@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "X01T",
       "marketingName": "X01T",
-      "manufacturer": "toshiba",
+      "manufacturer": "Toshiba",
       "brand": "softbank",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "IEMobile",
       "modus": null,
       "version": "6.12.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   },
   {
@@ -52,14 +52,14 @@
       "architecture": null,
       "deviceName": "X01T",
       "marketingName": "X01T",
-      "manufacturer": "toshiba",
+      "manufacturer": "Toshiba",
       "brand": "softbank",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -71,14 +71,14 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Internet Explorer",
       "modus": null,
       "version": "6.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Trident",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

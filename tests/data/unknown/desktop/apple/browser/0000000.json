@@ -10,7 +10,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.4.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -55,7 +55,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -71,14 +71,14 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.1.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.52.7",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -100,7 +100,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -114,16 +114,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,52 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/538.1 (KHTML, like Gecko) WahOO Safari/538.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "538.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -190,7 +145,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -206,14 +161,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +176,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.25.20",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -235,7 +190,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -251,14 +206,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -266,7 +221,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.15.23",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -280,7 +235,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -296,14 +251,14 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical",
+      "manufacturer": "Canonical",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +266,7 @@
     "engine": {
       "name": "WebKit",
       "version": "522.10.26",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -325,7 +280,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -348,7 +303,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +311,7 @@
     "engine": {
       "name": "WebKit",
       "version": "523.29.29",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -370,7 +325,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -393,7 +348,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +356,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.14.35",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -415,7 +370,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -431,14 +386,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.4",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,7 +401,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.15.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -460,7 +415,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -476,14 +431,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -491,7 +446,7 @@
     "engine": {
       "name": "WebKit",
       "version": "527.15.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -505,7 +460,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -528,7 +483,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.0.3",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +491,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.26.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -550,7 +505,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -573,7 +528,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.0.3",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +536,7 @@
     "engine": {
       "name": "WebKit",
       "version": "522.15.33",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -595,7 +550,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -611,14 +566,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +581,7 @@
     "engine": {
       "name": "WebKit",
       "version": "528.11.26",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -640,7 +595,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -656,14 +611,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +626,7 @@
     "engine": {
       "name": "WebKit",
       "version": "536.23.16",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -685,7 +640,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -708,7 +663,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +671,7 @@
     "engine": {
       "name": "WebKit",
       "version": "528.23.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -730,7 +685,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -753,7 +708,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +716,7 @@
     "engine": {
       "name": "WebKit",
       "version": "528.18.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -775,7 +730,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -791,14 +746,14 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.1.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +761,7 @@
     "engine": {
       "name": "WebKit",
       "version": "532.18.6",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -820,7 +775,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -836,14 +791,14 @@
       "name": "Windows 98",
       "marketingName": "Windows 98",
       "version": "98.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.1.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +806,7 @@
     "engine": {
       "name": "WebKit",
       "version": "531.1.5",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -865,7 +820,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -881,14 +836,14 @@
       "name": "Windows ME",
       "marketingName": "Windows ME",
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +851,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.49.3",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -910,7 +865,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -926,14 +881,14 @@
       "name": "Fedora Linux",
       "marketingName": "Fedora Linux",
       "version": null,
-      "manufacturer": "redhat",
+      "manufacturer": "Redhat",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "8.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +896,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.15.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -955,7 +910,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -971,14 +926,14 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -986,7 +941,7 @@
     "engine": {
       "name": "Gecko",
       "version": "1.9.2.13",
-      "manufacturer": "mozilla-foundation"
+      "manufacturer": "Mozilla"
     }
   },
   {
@@ -1000,7 +955,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1013,17 +968,17 @@
       "bits": null
     },
     "os": {
-      "name": "webOS",
-      "marketingName": "webOS",
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
       "version": null,
-      "manufacturer": "lg",
+      "manufacturer": "LG",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +986,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1045,7 +1000,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1068,7 +1023,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +1031,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.20.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1090,7 +1045,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1113,7 +1068,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +1076,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.29.19",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1135,7 +1090,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1158,7 +1113,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,7 +1121,7 @@
     "engine": {
       "name": "WebKit",
       "version": "524.15.34",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1180,7 +1135,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1203,7 +1158,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1211,7 +1166,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.11.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1225,7 +1180,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1248,7 +1203,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1256,7 +1211,7 @@
     "engine": {
       "name": "WebKit",
       "version": "526.18.17",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1270,7 +1225,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1293,7 +1248,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.0.3",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1301,7 +1256,7 @@
     "engine": {
       "name": "WebKit",
       "version": "527.21.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1315,7 +1270,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1338,7 +1293,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1346,7 +1301,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.28.25",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1360,7 +1315,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1383,7 +1338,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1391,7 +1346,7 @@
     "engine": {
       "name": "WebKit",
       "version": "528.22.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1405,7 +1360,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1428,7 +1383,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1436,7 +1391,7 @@
     "engine": {
       "name": "WebKit",
       "version": "522.28.25",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1450,7 +1405,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1473,7 +1428,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1481,7 +1436,7 @@
     "engine": {
       "name": "WebKit",
       "version": "528.13.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1495,7 +1450,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1518,7 +1473,7 @@
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1526,7 +1481,7 @@
     "engine": {
       "name": "WebKit",
       "version": "535.25.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1540,7 +1495,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1563,7 +1518,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1571,7 +1526,7 @@
     "engine": {
       "name": "WebKit",
       "version": "525.15.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1585,7 +1540,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1608,7 +1563,7 @@
       "name": "Safari",
       "modus": null,
       "version": "5.0.4",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1616,7 +1571,7 @@
     "engine": {
       "name": "WebKit",
       "version": "525.12.36",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1630,7 +1585,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1646,14 +1601,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1661,7 +1616,7 @@
     "engine": {
       "name": "WebKit",
       "version": "523.18.24",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1675,7 +1630,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1691,14 +1646,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1706,7 +1661,7 @@
     "engine": {
       "name": "WebKit",
       "version": "522.21.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1720,7 +1675,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1736,14 +1691,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1751,7 +1706,7 @@
     "engine": {
       "name": "WebKit",
       "version": "524.18.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1765,7 +1720,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1781,14 +1736,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.3",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1796,7 +1751,7 @@
     "engine": {
       "name": "WebKit",
       "version": "524.23.25",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1810,7 +1765,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1826,14 +1781,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1841,7 +1796,7 @@
     "engine": {
       "name": "WebKit",
       "version": "525.24.30",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1855,7 +1810,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1871,14 +1826,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.3",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1886,7 +1841,7 @@
     "engine": {
       "name": "WebKit",
       "version": "527.15.36",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1900,7 +1855,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1916,14 +1871,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.4",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1931,7 +1886,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.29.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1945,7 +1900,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1961,14 +1916,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.4",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1976,7 +1931,7 @@
     "engine": {
       "name": "WebKit",
       "version": "523.14.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1990,7 +1945,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2006,14 +1961,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2021,7 +1976,7 @@
     "engine": {
       "name": "WebKit",
       "version": "524.29.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2035,7 +1990,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2051,14 +2006,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "5.0.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2066,7 +2021,7 @@
     "engine": {
       "name": "WebKit",
       "version": "535.23.16",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2080,7 +2035,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2096,14 +2051,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2111,7 +2066,7 @@
     "engine": {
       "name": "WebKit",
       "version": "538.14.20",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2125,7 +2080,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2141,14 +2096,14 @@
       "name": "Windows 3.1",
       "marketingName": "Windows 3.1",
       "version": "3.1.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2156,7 +2111,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2170,7 +2125,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2186,14 +2141,14 @@
       "name": "ChromeOS",
       "marketingName": "ChromeOS",
       "version": "2268.111.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2201,7 +2156,7 @@
     "engine": {
       "name": "WebKit",
       "version": "536.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2215,7 +2170,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2231,14 +2186,14 @@
       "name": "BSD",
       "marketingName": "BSD",
       "version": null,
-      "manufacturer": "berkley-university",
+      "manufacturer": "Berkeley",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2246,7 +2201,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.34.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2260,7 +2215,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2276,14 +2231,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2305,7 +2260,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2328,7 +2283,7 @@
       "name": "Safari",
       "modus": null,
       "version": "3.1.2",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2336,7 +2291,7 @@
     "engine": {
       "name": "WebKit",
       "version": "525.19.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2350,7 +2305,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2373,7 +2328,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2381,7 +2336,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2395,7 +2350,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2411,14 +2366,14 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Mobile Safari UIWebView",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2426,7 +2381,7 @@
     "engine": {
       "name": "WebKit",
       "version": "531.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2440,7 +2395,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2456,14 +2411,14 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": "6.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2471,7 +2426,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2485,7 +2440,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2501,14 +2456,14 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical",
+      "manufacturer": "Canonical",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2516,7 +2471,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2530,7 +2485,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2546,14 +2501,14 @@
       "name": "Debian",
       "marketingName": "Debian",
       "version": null,
-      "manufacturer": "software-in-the-public-interest",
+      "manufacturer": "Software in the Public Interest",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2561,7 +2516,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2575,7 +2530,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2598,7 +2553,7 @@
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2606,7 +2561,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2620,7 +2575,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2636,14 +2591,14 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical",
+      "manufacturer": "Canonical",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2651,7 +2606,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.21.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2665,7 +2620,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2681,14 +2636,14 @@
       "name": "Windows RT",
       "marketingName": "Windows RT",
       "version": "8.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
       "version": "10.0.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2696,7 +2651,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

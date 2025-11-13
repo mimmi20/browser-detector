@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "iPhone",
       "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
@@ -26,14 +26,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "8.1.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Yandex Mobile Bot",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "search-bot",
       "isbot": true,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "600.1.4",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

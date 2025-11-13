@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Smart Tab 1",
       "marketingName": "Smart Tab 1",
-      "manufacturer": "karbonn",
-      "brand": "karbonn",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 800,
         "height": 480,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.3",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "8.7.0.315",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "528.5.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

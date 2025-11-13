@@ -9,8 +9,8 @@
       "marketingName": "C55",
       "manufacturer": "ctroniq",
       "brand": "ctroniq",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 854,
         "height": 480,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "34.0.2044.98679",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "47.0.2526.73",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

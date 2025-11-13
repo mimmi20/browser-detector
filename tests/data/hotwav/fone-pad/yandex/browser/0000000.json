@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "Tab R6 Ultra",
       "marketingName": "Tab R6 Ultra",
-      "manufacturer": "hotwav",
-      "brand": "hotwav",
+      "manufacturer": "Hotwav",
+      "brand": "Hotwav",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.6.80.01",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.80",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,8 +52,8 @@
       "architecture": null,
       "deviceName": "Tab R9 Pro",
       "marketingName": "Tab R9 Pro",
-      "manufacturer": "hotwav",
-      "brand": "hotwav",
+      "manufacturer": "Hotwav",
+      "brand": "Hotwav",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.4.0.261.01",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.261",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -97,8 +97,8 @@
       "architecture": null,
       "deviceName": "Tab R8",
       "marketingName": "Tab R8",
-      "manufacturer": "hotwav",
-      "brand": "hotwav",
+      "manufacturer": "Hotwav",
+      "brand": "Hotwav",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -116,14 +116,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "25.40.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,52 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.1898",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; TAB R5 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.1898 YaSearchBrowser/25.40/apad BroPP/1.0 YaSearchApp/25.40/apad webOmni SA/3 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Tab R5 Pro",
+      "marketingName": "Tab R5 Pro",
+      "manufacturer": "Hotwav",
+      "brand": "Hotwav",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "25.40.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.1898",
+      "manufacturer": "Google"
     }
   }
 ]

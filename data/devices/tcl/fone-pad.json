@@ -17,7 +17,7 @@
   },
   "tcl 9466x": {
     "deviceName": "9466X",
-    "marketingName": "Tab 11",
+    "marketingName": "NxtPaper 11 4G",
     "manufacturer": "tcl",
     "brand": "tcl",
     "dualOrientation": true,
@@ -33,7 +33,7 @@
   },
   "tcl 8196g": {
     "deviceName": "8196G",
-    "marketingName": "Tab 10 Gen2 LTE",
+    "marketingName": "Tab 10 LTE (2nd Gen)",
     "manufacturer": "tcl",
     "brand": "tcl",
     "dualOrientation": true,
@@ -49,7 +49,7 @@
   },
   "tcl 9199s": {
     "deviceName": "9199S",
-    "marketingName": "Tab 10 NxtPaper 5G",
+    "marketingName": "NxtPaper 10 5G",
     "manufacturer": "tcl",
     "brand": "tcl",
     "dualOrientation": true,
@@ -59,6 +59,70 @@
       "height": 1200,
       "touch": true,
       "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "tcl 9137w": {
+    "deviceName": "9137W",
+    "marketingName": "Tab 8 LE (MetroPCS)",
+    "manufacturer": "tcl",
+    "brand": "tcl",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "tcl 9183w": {
+    "deviceName": "9183W",
+    "marketingName": "Tab 10 5G",
+    "manufacturer": "tcl",
+    "brand": "tcl",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "tcl 9132s": {
+    "deviceName": "9132S",
+    "marketingName": "Tab Lite",
+    "manufacturer": "tcl",
+    "brand": "tcl",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "tcl 9160g": {
+    "deviceName": "9160G",
+    "marketingName": "Tab 10 HD 4G",
+    "manufacturer": "tcl",
+    "brand": "tcl",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
     },
     "type": "fone-pad",
     "platform": "android"

@@ -17,7 +17,6 @@ use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use Psr\Log\LoggerInterface;
-use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaResult\Bits\Bits;
@@ -32,55 +31,37 @@ final class PlatformLoader implements PlatformLoaderInterface
 {
     use VersionFactoryTrait;
 
-    /**
-     * @phpstan-param Data\DataInterface&Data\Os $initData
-     *
-     * @throws void
-     */
+    /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly Data\DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
         VersionBuilderInterface $versionBuilder,
     ) {
         $this->versionBuilder = $versionBuilder;
     }
 
-    /** @throws NotFoundException */
+    /** @throws void */
     #[Override]
     public function load(string $key, string $useragent = ''): OsInterface
     {
         try {
-            $this->initData->init();
-        } catch (RuntimeException $e) {
-            throw new NotFoundException('the platform with key "' . $key . '" was not found', 0, $e);
+            $os = \BrowserDetector\Data\Os::fromName($key);
+        } catch (UnexpectedValueException) {
+            $os = \BrowserDetector\Data\Os::unknown;
         }
 
-        $platformData = $this->initData->getItem($key);
-
-        if ($platformData === null) {
-            throw new NotFoundException('the platform with key "' . $key . '" was not found');
-        }
-
-        return $this->fromArray($platformData, $useragent);
-    }
-
-    /** @throws void */
-    private function fromArray(InitData\Os $data, string $useragent): OsInterface
-    {
-        $name          = $data->getName();
-        $marketingName = $data->getMarketingName();
+        $name          = $os->getName();
+        $marketingName = $os->getMarketingName();
         $manufacturer  = new Company(type: 'unknown', name: null, brandname: null);
+        $version       = $this->getVersion((object) $os->getVersion(), $useragent);
 
-        if ($data->getManufacturer() !== null) {
+        if ($os->getManufacturer()->getBrandname() !== null) {
             try {
-                $manufacturer = $this->companyLoader->load($data->getManufacturer());
+                $manufacturer = $this->companyLoader->load($os->getManufacturer()->getBrandname());
             } catch (NotFoundException $e) {
                 $this->logger->info($e);
             }
         }
-
-        $version = $this->getVersion($data->getVersion(), $useragent);
 
         try {
             $versionWithoutMicro = $version->getVersion(VersionInterface::IGNORE_MICRO);

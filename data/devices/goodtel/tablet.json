@@ -1,6 +1,6 @@
 {
-  "goodtel g10": {
-    "deviceName": "G10",
+  "goodtel g10_eea": {
+    "deviceName": "G10_EEA",
     "marketingName": "G10",
     "manufacturer": "goodtel",
     "brand": "goodtel",
@@ -18,6 +18,22 @@
   "goodtel g3_eea": {
     "deviceName": "G3_EEA",
     "marketingName": "G3",
+    "manufacturer": "goodtel",
+    "brand": "goodtel",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "goodtel g10_us": {
+    "deviceName": "G10_US",
+    "marketingName": "G10",
     "manufacturer": "goodtel",
     "brand": "goodtel",
     "dualOrientation": true,

@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "general Lava device",
       "marketingName": "general Lava device",
-      "manufacturer": "lava",
-      "brand": "lava",
+      "manufacturer": "Lava",
+      "brand": "Lava",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Facebook App",
       "modus": null,
       "version": "402.1.0.24.84",
-      "manufacturer": "meta",
+      "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.5414.118",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

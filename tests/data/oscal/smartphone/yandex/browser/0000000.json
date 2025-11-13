@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "S60 Pro",
       "marketingName": "S60 Pro",
-      "manufacturer": "oscal",
-      "brand": "oscal",
+      "manufacturer": "Oscal",
+      "brand": "Oscal",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.7.9.36.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,19 +41,64 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.167",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; PILOT 1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.1012 YaSearchBrowser/24.125.1 BroPP/1.0 YaSearchApp/24.125.1 webOmni SA/3 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; TIGER 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.507 YaSearchBrowser/24.13.1 BroPP/1.0 YaSearchApp/24.13.1 webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pilot 1",
-      "marketingName": "Pilot 1",
-      "manufacturer": "oscal",
-      "brand": "oscal",
+      "deviceName": "Tiger 10",
+      "marketingName": "Tiger 10",
+      "manufacturer": "Oscal",
+      "brand": "Oscal",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.13.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.507",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; TIGER 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.74 YaSearchBrowser/24.106.1 BroPP/1.0 YaSearchApp/24.106.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Tiger 13",
+      "marketingName": "Tiger 13",
+      "manufacturer": "Oscal",
+      "brand": "Oscal",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -71,14 +116,59 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.106.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.74",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; PILOT 1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.1012 YaSearchBrowser/24.125.1 BroPP/1.0 YaSearchApp/24.125.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pilot 1",
+      "marketingName": "Pilot 1",
+      "manufacturer": "Oscal",
+      "brand": "Oscal",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1604,
+        "height": 720,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.125.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +176,7 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.1012",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -97,8 +187,8 @@
       "architecture": null,
       "deviceName": "Marine 2",
       "marketingName": "Marine 2",
-      "manufacturer": "oscal",
-      "brand": "oscal",
+      "manufacturer": "Oscal",
+      "brand": "Oscal",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -116,14 +206,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.3.0.38.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +221,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.38",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

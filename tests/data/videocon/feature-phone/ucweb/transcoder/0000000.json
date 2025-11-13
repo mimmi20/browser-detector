@@ -10,7 +10,7 @@
       "manufacturer": "videocon",
       "brand": "videocon",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "9.4.0.342",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U2",
       "version": "1.0.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "A1+",
       "marketingName": "A1+",
-      "manufacturer": "karbonn",
-      "brand": "karbonn",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Miui Browser",
       "modus": null,
       "version": "13.19.2",
-      "manufacturer": "xiaomi",
+      "manufacturer": "Xiaomi",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

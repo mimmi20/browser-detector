@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace Version;
+namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\TestNotNumericError;
 use BrowserDetector\Version\TestNotNumericFactory;

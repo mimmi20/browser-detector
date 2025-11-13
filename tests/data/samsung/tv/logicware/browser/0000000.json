@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Smart TV",
       "marketingName": "Smart TV",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -23,10 +23,10 @@
       "bits": null
     },
     "os": {
-      "name": "webOS",
-      "marketingName": "webOS",
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
       "version": null,
-      "manufacturer": "lg",
+      "manufacturer": "LG",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "38.0.2125.122",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

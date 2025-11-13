@@ -1,14 +1,59 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; RMX3888) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.90 YaBrowser/24.1.8.90.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX3888",
+      "marketingName": "GT 5 Pro",
+      "manufacturer": "BBK",
+      "brand": "Realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2780,
+        "height": 1264,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.1.8.90.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.90",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; RMX3842) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.101 YaBrowser/24.1.7.101.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "RMX3842",
       "marketingName": "12 Pro 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -26,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.7.101.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,8 +97,8 @@
       "architecture": null,
       "deviceName": "RMX3840",
       "marketingName": "12 Pro+ 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -71,14 +116,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -96,9 +141,9 @@
     "device": {
       "architecture": null,
       "deviceName": "RMX3701",
-      "marketingName": "GT Neo5 SE",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "marketingName": "GT Neo 5 SE",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -116,14 +161,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.16.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +176,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.479",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -142,8 +187,8 @@
       "architecture": null,
       "deviceName": "CPH2499",
       "marketingName": "Find N3",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -161,14 +206,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.18.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +221,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.516",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -187,8 +232,8 @@
       "architecture": null,
       "deviceName": "CPH2585",
       "marketingName": "12R",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -206,14 +251,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +266,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -232,8 +277,8 @@
       "architecture": null,
       "deviceName": "PJJ110",
       "marketingName": "Reno 11 Pro (China)",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -251,14 +296,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.16.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -266,7 +311,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.479",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -277,8 +322,8 @@
       "architecture": null,
       "deviceName": "PJE110",
       "marketingName": "Ace 3",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -296,14 +341,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +356,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -322,8 +367,8 @@
       "architecture": null,
       "deviceName": "PJD110",
       "marketingName": "12",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -341,14 +386,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +401,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -367,8 +412,8 @@
       "architecture": null,
       "deviceName": "PHZ110",
       "marketingName": "Find X7",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -386,14 +431,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +446,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -412,8 +457,8 @@
       "architecture": null,
       "deviceName": "PHY110",
       "marketingName": "Find X7 Ultra",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -431,14 +476,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,7 +491,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -457,7 +502,7 @@
       "architecture": null,
       "deviceName": "V2344A",
       "marketingName": "S18 Pro",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -476,14 +521,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.15.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -491,7 +536,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.452",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -501,8 +546,8 @@
     "device": {
       "architecture": null,
       "deviceName": "V2339A",
-      "marketingName": "iQOO Neo9 Pro (China)",
-      "manufacturer": "bbk",
+      "marketingName": "iQOO Neo 9 Pro (China)",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -521,14 +566,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +581,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -546,8 +591,8 @@
     "device": {
       "architecture": null,
       "deviceName": "V2338A",
-      "marketingName": "iQOO Neo9",
-      "manufacturer": "bbk",
+      "marketingName": "iQOO Neo 9",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -566,14 +611,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.94.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +626,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.94",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -592,7 +637,7 @@
       "architecture": null,
       "deviceName": "V2329A",
       "marketingName": "iQOO 12 Pro",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -611,14 +656,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.94.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +671,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.94",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -637,7 +682,7 @@
       "architecture": null,
       "deviceName": "V2324A",
       "marketingName": "X100 Pro",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -656,14 +701,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.94.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +716,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.94",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -682,7 +727,7 @@
       "architecture": null,
       "deviceName": "V2318",
       "marketingName": "V30",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -701,14 +746,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +761,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -727,7 +772,7 @@
       "architecture": null,
       "deviceName": "V2309A",
       "marketingName": "X100",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -746,14 +791,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.94.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +806,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.94",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -772,7 +817,7 @@
       "architecture": null,
       "deviceName": "V2307A",
       "marketingName": "iQOO 12",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -791,14 +836,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +851,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -817,7 +862,7 @@
       "architecture": null,
       "deviceName": "V2241HA",
       "marketingName": "X90s",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -836,14 +881,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.18.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +896,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.516",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -862,8 +907,8 @@
       "architecture": null,
       "deviceName": "CPH2557",
       "marketingName": "A79 5G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -881,14 +926,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.16.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +941,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.479",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -907,7 +952,7 @@
       "architecture": null,
       "deviceName": "V2342",
       "marketingName": "V30 Lite (ME)",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -926,14 +971,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.7.0.283.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,52 +986,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; V2303A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.3.104.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "V2303A",
-      "marketingName": "V23 5G",
-      "manufacturer": "bbk",
-      "brand": "vivo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.44
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "23.7.3.104.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -996,8 +996,8 @@
     "device": {
       "architecture": null,
       "deviceName": "I2219",
-      "marketingName": "iQOO Z9x",
-      "manufacturer": "bbk",
+      "marketingName": "iQOO Z9x 5G",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -1016,14 +1016,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.43.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +1031,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.702",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1042,8 +1042,8 @@
       "architecture": null,
       "deviceName": "PJF110",
       "marketingName": "Ace 3V",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1061,14 +1061,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.0.300.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +1076,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.300",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1087,8 +1087,8 @@
       "architecture": null,
       "deviceName": "PJH110",
       "marketingName": "Reno 11 (China)",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1106,14 +1106,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.0.302.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +1121,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.302",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1131,8 +1131,8 @@
     "device": {
       "architecture": null,
       "deviceName": "V2312BA",
-      "marketingName": "Y78t 5G",
-      "manufacturer": "bbk",
+      "marketingName": "Y100i 5G",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -1151,14 +1151,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.99.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,7 +1166,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.64",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1177,8 +1177,8 @@
       "architecture": null,
       "deviceName": "RMX3841",
       "marketingName": "12 Pro+ 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1196,14 +1196,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.42.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1211,7 +1211,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.869",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1221,9 +1221,9 @@
     "device": {
       "architecture": null,
       "deviceName": "PJB110",
-      "marketingName": "A2",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "marketingName": "A2 5G",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1241,14 +1241,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.3.96.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1256,7 +1256,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.96",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1267,8 +1267,8 @@
       "architecture": null,
       "deviceName": "RMX3910",
       "marketingName": "C65",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1286,14 +1286,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.7.39.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1301,7 +1301,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.39",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1312,7 +1312,7 @@
       "architecture": null,
       "deviceName": "V2354A",
       "marketingName": "Y200i",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -1331,14 +1331,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.47.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1346,7 +1346,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.71",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1357,8 +1357,8 @@
       "architecture": null,
       "deviceName": "RMX3851",
       "marketingName": "GT 6",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1376,14 +1376,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.62.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1391,7 +1391,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.768",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1402,8 +1402,8 @@
       "architecture": null,
       "deviceName": "RMX3871",
       "marketingName": "12 4G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1421,14 +1421,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.6.1.82.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1436,7 +1436,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.82",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1447,8 +1447,8 @@
       "architecture": null,
       "deviceName": "RMX3853",
       "marketingName": "GT 6T",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1466,14 +1466,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.33.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1481,7 +1481,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1490,17 +1490,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "R11",
-      "marketingName": "R11",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "deviceName": "PJR110",
+      "marketingName": "K12 5G",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2412,
         "height": 1080,
         "touch": true,
-        "size": 5.5
+        "size": 6.7
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1511,14 +1511,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.6.1.82.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1526,7 +1526,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.82",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1536,9 +1536,9 @@
     "device": {
       "architecture": null,
       "deviceName": "RMX3800",
-      "marketingName": "GT6 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "marketingName": "GT 6 5G",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1556,14 +1556,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.7.0.303.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1571,7 +1571,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.303",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1581,8 +1581,8 @@
     "device": {
       "architecture": null,
       "deviceName": "V2403A",
-      "marketingName": "iQOO Neo9S Pro+",
-      "manufacturer": "bbk",
+      "marketingName": "iQOO Neo 9S Pro+",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -1601,14 +1601,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.6.6.32.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1616,7 +1616,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.32",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1627,8 +1627,8 @@
       "architecture": null,
       "deviceName": "A302OP",
       "marketingName": "Reno 10 Pro 5G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1646,14 +1646,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.60.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1661,7 +1661,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.1941",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1672,8 +1672,8 @@
       "architecture": null,
       "deviceName": "RMX3781",
       "marketingName": "V50s",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1691,14 +1691,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.6.5.46.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1706,7 +1706,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.46",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1717,8 +1717,8 @@
       "architecture": null,
       "deviceName": "7 Pro",
       "marketingName": "7 Pro",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1736,14 +1736,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.4.99.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1751,7 +1751,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.99",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1762,8 +1762,8 @@
       "architecture": null,
       "deviceName": "RMX3930",
       "marketingName": "C61",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1781,14 +1781,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.111.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1796,7 +1796,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.859",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1807,7 +1807,7 @@
       "architecture": null,
       "deviceName": "V2362A",
       "marketingName": "S19 Pro",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -1826,14 +1826,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.1.0.284.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1841,7 +1841,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1852,8 +1852,8 @@
       "architecture": null,
       "deviceName": "RMX3988",
       "marketingName": "13 Pro 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1871,14 +1871,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.7.8.165.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1886,7 +1886,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.165",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1897,8 +1897,8 @@
       "architecture": null,
       "deviceName": "RMX3115",
       "marketingName": "GT Neo 3 150W",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1916,14 +1916,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.3.0.303.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1931,7 +1931,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.102",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1942,8 +1942,8 @@
       "architecture": null,
       "deviceName": "RMX5000",
       "marketingName": "13+ 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1961,14 +1961,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.77.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1976,7 +1976,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.710",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1987,8 +1987,8 @@
       "architecture": null,
       "deviceName": "CPH2449",
       "marketingName": "11",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2006,14 +2006,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.10.2.123.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2021,7 +2021,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.123",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2032,8 +2032,8 @@
       "architecture": null,
       "deviceName": "RMX3951",
       "marketingName": "13 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2051,14 +2051,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.10.2.123.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2066,7 +2066,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.123",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2077,7 +2077,7 @@
       "architecture": null,
       "deviceName": "V2405A",
       "marketingName": "X200 Pro",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -2096,14 +2096,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.10.2.123.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2111,7 +2111,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.123",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2122,7 +2122,7 @@
       "architecture": null,
       "deviceName": "V2424",
       "marketingName": "V40 Lite (International)",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -2141,14 +2141,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.102.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2156,7 +2156,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.657",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2167,7 +2167,7 @@
       "architecture": null,
       "deviceName": "V2417",
       "marketingName": "V40 Lite 5G (India)",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -2186,14 +2186,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.100.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2201,7 +2201,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.2602",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2212,7 +2212,7 @@
       "architecture": null,
       "deviceName": "V2425A",
       "marketingName": "iQOO Neo 10 (China)",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 2,
@@ -2231,14 +2231,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.123.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2246,7 +2246,7 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.797",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2257,8 +2257,8 @@
       "architecture": null,
       "deviceName": "RMX3938",
       "marketingName": "Note 60x",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2276,14 +2276,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.33.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2291,7 +2291,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2302,8 +2302,8 @@
       "architecture": null,
       "deviceName": "RMX3941",
       "marketingName": "C75 4G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2321,14 +2321,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.2.0.241.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2336,7 +2336,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.241",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2347,8 +2347,8 @@
       "architecture": null,
       "deviceName": "RMX5070",
       "marketingName": "14 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2366,14 +2366,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.3.0.38.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2381,7 +2381,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.38",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2392,8 +2392,8 @@
       "architecture": null,
       "deviceName": "RMX5071",
       "marketingName": "Neo 7x",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2411,14 +2411,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "25.30.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2426,7 +2426,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.419",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2437,8 +2437,8 @@
       "architecture": null,
       "deviceName": "RMX5080",
       "marketingName": "Neo 7 SE",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2456,14 +2456,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.3.0.33.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2471,7 +2471,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.33",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2482,8 +2482,8 @@
       "architecture": null,
       "deviceName": "RMX5090",
       "marketingName": "GT 7 Pro",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2501,14 +2501,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.4.0.261.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2516,7 +2516,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.261",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2527,8 +2527,8 @@
       "architecture": null,
       "deviceName": "RMX5056",
       "marketingName": "14 Pro",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2546,14 +2546,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.33.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2561,7 +2561,7 @@
     "engine": {
       "name": "Blink",
       "version": "89.0.4389.128",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2572,8 +2572,8 @@
       "architecture": null,
       "deviceName": "RMX5050",
       "marketingName": "14 Pro+ 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2591,14 +2591,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.4.0.261.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2606,7 +2606,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.261",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2617,8 +2617,8 @@
       "architecture": null,
       "deviceName": "RMX3943",
       "marketingName": "C75 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2636,14 +2636,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "25.20.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2651,7 +2651,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.2037",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2662,8 +2662,8 @@
       "architecture": null,
       "deviceName": "CPH2699",
       "marketingName": "Reno 13 F 5G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2681,14 +2681,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "25.30.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2696,7 +2696,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.419",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2707,8 +2707,8 @@
       "architecture": null,
       "deviceName": "PKS110",
       "marketingName": "K12 Plus",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2726,14 +2726,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.3.0.33.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2741,7 +2741,52 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.33",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PKR110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.33 YaBrowser/25.3.0.33.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PKR110",
+      "marketingName": "Ace 5 Pro",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2780,
+        "height": 1264,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.3.0.33.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.33",
+      "manufacturer": "Google"
     }
   },
   {
@@ -2752,8 +2797,8 @@
       "architecture": null,
       "deviceName": "PKM110",
       "marketingName": "Reno 13 5G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2771,14 +2816,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.2.3.95.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2786,7 +2831,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.95",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2797,8 +2842,8 @@
       "architecture": null,
       "deviceName": "PKL110",
       "marketingName": "A3i 5G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2816,14 +2861,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.12.3.100.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2831,7 +2876,7 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.100",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2842,8 +2887,8 @@
       "architecture": null,
       "deviceName": "PKK110",
       "marketingName": "Reno 13 Pro 5G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2861,14 +2906,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.3.0.33.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2876,7 +2921,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.33",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2887,8 +2932,8 @@
       "architecture": null,
       "deviceName": "PKJ110",
       "marketingName": "Find X8 Ultra",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2906,14 +2951,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.3.0.38.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2921,7 +2966,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.38",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2932,8 +2977,8 @@
       "architecture": null,
       "deviceName": "CPH1917",
       "marketingName": "Reno",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2951,14 +2996,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "20.3.4.98.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2966,7 +3011,7 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.132",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2977,8 +3022,8 @@
       "architecture": null,
       "deviceName": "PKU110",
       "marketingName": "Find X8 Ultra",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2996,14 +3041,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "25.4.5.77.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3011,7 +3056,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.77",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3022,8 +3067,8 @@
       "architecture": null,
       "deviceName": "RMX3952",
       "marketingName": "13 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
+      "manufacturer": "BBK",
+      "brand": "Realme",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3041,14 +3086,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "25.66.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3056,7 +3101,7 @@
     "engine": {
       "name": "Blink",
       "version": "136.0.7103.91",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3067,8 +3112,8 @@
       "architecture": null,
       "deviceName": "CPH1907",
       "marketingName": "Reno 2",
-      "manufacturer": "bbk",
-      "brand": "oppo",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3086,14 +3131,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "20.3.5.90.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3101,7 +3146,7 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.132",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3112,7 +3157,7 @@
       "architecture": null,
       "deviceName": "1820",
       "marketingName": "Y91i",
-      "manufacturer": "bbk",
+      "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
       "simCount": 1,
@@ -3131,14 +3176,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "10.61.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3146,7 +3191,7 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

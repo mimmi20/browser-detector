@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "C60",
       "marketingName": "M30S",
-      "manufacturer": "lt-mobile",
-      "brand": "lt-mobile",
+      "manufacturer": "LT Mobile",
+      "brand": "LT Mobile",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -26,7 +26,7 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -41,7 +41,52 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.146",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 12; ar-ye; LT_6217 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.179 Mobile Safari/537.36 PHX/18.9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LT_6217",
+      "marketingName": "M15",
+      "manufacturer": "LT Mobile",
+      "brand": "LT Mobile",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Phoenix Browser",
+      "modus": null,
+      "version": "18.9.0",
+      "manufacturer": "cloudview-technology",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.179",
+      "manufacturer": "Google"
     }
   }
 ]

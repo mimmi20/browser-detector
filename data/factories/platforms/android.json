@@ -6,7 +6,10 @@
     "/MIUI(?! X)/": "miui os",
     "/aosp/i": "aosp",
     "/cyanogenmod/i": "cyanogenmod",
-    "/mocordroid/i": "mocordroid"
+    "/mocordroid/i": "mocordroid",
+    "/andr0id/i": "android-tv",
+    "/kfsuwi/i": "fire-os",
+    "/sm-r[0-9]{3}/i": "wear-os"
   },
   "generic": "android"
 }

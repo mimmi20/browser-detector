@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "TERRA PAD 1003",
       "marketingName": "TERRA PAD 1003",
-      "manufacturer": "wortmann",
-      "brand": "wortmann",
+      "manufacturer": "Wortmann",
+      "brand": "Wortmann",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "14.0.2065.100298",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -52,10 +52,10 @@
       "architecture": null,
       "deviceName": "TERRA PAD 1003",
       "marketingName": "TERRA PAD 1003",
-      "manufacturer": "wortmann",
-      "brand": "wortmann",
+      "manufacturer": "Wortmann",
+      "brand": "Wortmann",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 800,
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "30.0.1856.95530",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,52 @@
     "engine": {
       "name": "Blink",
       "version": "43.0.2357.78",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; TERRA_PAD_1200_V2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.179 Safari/537.36 OPR/82.3.4342.79590"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Terra Pad 1200 V2",
+      "marketingName": "Terra Pad 1200 V2",
+      "manufacturer": "Wortmann",
+      "brand": "Wortmann",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 12.3
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "82.3.4342.79590",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.179",
+      "manufacturer": "Google"
     }
   }
 ]

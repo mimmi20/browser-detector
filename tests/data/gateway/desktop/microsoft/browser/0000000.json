@@ -10,7 +10,7 @@
       "manufacturer": "gateway",
       "brand": "gateway",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -24,16 +24,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 8",
       "version": "8.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Internet Explorer",
       "modus": null,
       "version": "10.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   },
   {
@@ -55,7 +55,7 @@
       "manufacturer": "gateway",
       "brand": "gateway",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -68,17 +68,17 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT 6.0",
+      "name": "Windows NT",
       "marketingName": "Windows Vista",
       "version": "6.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Internet Explorer",
       "modus": null,
       "version": "8.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Trident",
       "version": "4.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "B15Q",
       "marketingName": "Cat B15Q",
-      "manufacturer": "caterpillar",
-      "brand": "caterpillar",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "10.7.0.636",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

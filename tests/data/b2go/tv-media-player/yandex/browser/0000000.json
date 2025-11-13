@@ -10,7 +10,7 @@
       "manufacturer": "b2go",
       "brand": "b2go",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "19.10.2.116.01",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.120",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -54,8 +54,8 @@
       "marketingName": "A95X R1",
       "manufacturer": "b2go",
       "brand": "alfawise",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "20.4.3.73.01",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -99,8 +99,8 @@
       "marketingName": "A95X A2",
       "manufacturer": "b2go",
       "brand": "nexbox",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -116,14 +116,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "19.7.1.93.01",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.100",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

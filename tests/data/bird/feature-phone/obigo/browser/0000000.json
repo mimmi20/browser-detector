@@ -9,8 +9,8 @@
       "marketingName": "D670",
       "manufacturer": "bird",
       "brand": "bird",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 96,
         "height": 96,
@@ -26,14 +26,14 @@
       "name": "Nucleus OS",
       "marketingName": "Nucleus",
       "version": null,
-      "manufacturer": "accelerated-technology",
+      "manufacturer": "Accelerated Technology",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   }
 ]

@@ -1,14 +1,337 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; XT2343-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XT2343-2",
+      "marketingName": "Moto G54 5G",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; XT2333-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XT2333-1",
+      "marketingName": "Moto G23",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "119.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; XT1970-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XT1970-2",
+      "marketingName": "One Vision",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2520,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "120.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; moto g71 5G Build/S2RUBS32.51-15-3-19; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.100 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G71 5G",
+      "marketingName": "Moto G71 5G",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "129.0.6668.100",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.6668.100",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; motorola edge 50 fusion Build/U2UUIS34.40-108-3-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.100 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Edge 50 Fusion",
+      "marketingName": "Edge 50 Fusion",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "129.0.6668.100",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.6668.100",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"moto g04s\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"130.0.6723.73\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G04s",
+      "marketingName": "Moto G04s",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "130.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; XT2015-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XT2015-2",
+      "marketingName": "Moto G8 Play",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 14; XT2271-5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "XT2271-5",
       "marketingName": "Moto G Play (2023)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -26,14 +349,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "116.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +364,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -60,8 +383,8 @@
       "architecture": null,
       "deviceName": "Moto G35 5G",
       "marketingName": "Moto G35 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -79,14 +402,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "131.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -94,7 +417,7 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -105,8 +428,8 @@
       "architecture": null,
       "deviceName": "XT2139-1",
       "marketingName": "Edge 20 Lite",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -124,14 +447,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "123.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -139,7 +462,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -150,8 +473,8 @@
       "architecture": null,
       "deviceName": "Edge 50 Ultra",
       "marketingName": "Edge 50 Ultra",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -169,14 +492,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "130.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -184,7 +507,7 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -195,8 +518,8 @@
       "architecture": null,
       "deviceName": "Edge 50 Neo",
       "marketingName": "Edge 50 Neo",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -214,14 +537,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "130.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -229,7 +552,7 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -240,8 +563,8 @@
       "architecture": null,
       "deviceName": "XT2055-2",
       "marketingName": "Moto G8 Power Lite",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -259,14 +582,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "122.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -274,7 +597,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -285,8 +608,8 @@
       "architecture": null,
       "deviceName": "PAGS0005IN",
       "marketingName": "Moto One Macro",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -304,14 +627,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "126.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -319,7 +642,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -330,8 +653,8 @@
       "architecture": null,
       "deviceName": "Moto G75 5G",
       "marketingName": "Moto G75 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -349,14 +672,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "131.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -364,7 +687,7 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -375,8 +698,8 @@
       "architecture": null,
       "deviceName": "Moto E13",
       "marketingName": "Moto E13",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -394,14 +717,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "131.0.6778.260",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -409,7 +732,7 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.6778.260",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -420,8 +743,8 @@
       "architecture": null,
       "deviceName": "Edge 50 Pro",
       "marketingName": "Edge 50 Pro",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -439,14 +762,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "131.0.6778.260",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -454,7 +777,7 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.6778.260",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -473,8 +796,8 @@
       "architecture": null,
       "deviceName": "Edge 50 Pro",
       "marketingName": "Edge 50 Pro",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -492,14 +815,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "133.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -507,7 +830,7 @@
     "engine": {
       "name": "Blink",
       "version": "133.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -518,8 +841,8 @@
       "architecture": null,
       "deviceName": "XT2427-4",
       "marketingName": "S50 Neo 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -537,14 +860,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "135.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -552,7 +875,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -563,8 +886,8 @@
       "architecture": null,
       "deviceName": "Moto G85 5G",
       "marketingName": "Moto G85 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -582,14 +905,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "134.0.6998.135",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -597,7 +920,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.135",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -608,8 +931,8 @@
       "architecture": null,
       "deviceName": "Edge 50 Neo",
       "marketingName": "Edge 50 Neo",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -627,14 +950,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "134.0.6998.40",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -642,7 +965,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.40",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -653,8 +976,8 @@
       "architecture": null,
       "deviceName": "Moto G34 5G",
       "marketingName": "Moto G34 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -672,14 +995,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "134.0.6998.108",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -687,7 +1010,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.108",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -698,8 +1021,8 @@
       "architecture": null,
       "deviceName": "Moto G22",
       "marketingName": "Moto G22",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -717,14 +1040,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "134.0.6998.39",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -732,7 +1055,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.6998.39",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -751,8 +1074,8 @@
       "architecture": null,
       "deviceName": "Moto G04",
       "marketingName": "Moto G04",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -770,14 +1093,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "135.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -785,7 +1108,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -804,8 +1127,8 @@
       "architecture": null,
       "deviceName": "Edge 50 Fusion",
       "marketingName": "Edge 50 Fusion",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -823,14 +1146,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "134.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -838,7 +1161,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -849,8 +1172,8 @@
       "architecture": null,
       "deviceName": "XT2087-1",
       "marketingName": "Moto G9 Plus",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -868,14 +1191,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "124.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -883,7 +1206,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -894,8 +1217,8 @@
       "architecture": null,
       "deviceName": "XT2255-1",
       "marketingName": "Moto G72",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -913,14 +1236,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "129.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -928,7 +1251,7 @@
     "engine": {
       "name": "Blink",
       "version": "129.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -939,8 +1262,8 @@
       "architecture": null,
       "deviceName": "Moto G75 5G",
       "marketingName": "Moto G75 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -958,14 +1281,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "136.0.7103.60",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -973,7 +1296,7 @@
     "engine": {
       "name": "Blink",
       "version": "136.0.7103.60",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -984,8 +1307,8 @@
       "architecture": null,
       "deviceName": "Moto G55 5G",
       "marketingName": "Moto G55 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1003,14 +1326,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "136.0.7103.60",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1018,7 +1341,7 @@
     "engine": {
       "name": "Blink",
       "version": "136.0.7103.60",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1037,8 +1360,8 @@
       "architecture": null,
       "deviceName": "Moto G85 5G",
       "marketingName": "Moto G85 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1056,14 +1379,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "125.0.6422.165",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1071,7 +1394,7 @@
     "engine": {
       "name": "Blink",
       "version": "125.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1082,8 +1405,8 @@
       "architecture": null,
       "deviceName": "XT2245-1",
       "marketingName": "Edge 30 Neo",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1101,14 +1424,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "129.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1116,7 +1439,7 @@
     "engine": {
       "name": "Blink",
       "version": "129.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1127,8 +1450,8 @@
       "architecture": null,
       "deviceName": "XT2231-1",
       "marketingName": "Moto G22",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1146,14 +1469,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "125.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1161,7 +1484,7 @@
     "engine": {
       "name": "Blink",
       "version": "125.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1180,8 +1503,8 @@
       "architecture": null,
       "deviceName": "Moto G55 5G",
       "marketingName": "Moto G55 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1199,14 +1522,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "138.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1214,7 +1537,7 @@
     "engine": {
       "name": "Blink",
       "version": "138.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1225,8 +1548,8 @@
       "architecture": null,
       "deviceName": "Edge 40",
       "marketingName": "Edge 40",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1244,14 +1567,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Dalvik",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1259,7 +1582,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1270,8 +1593,8 @@
       "architecture": null,
       "deviceName": "Moto G35 5G",
       "marketingName": "Moto G35 5G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1289,14 +1612,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "141.0.7390.43",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1304,7 +1627,7 @@
     "engine": {
       "name": "Blink",
       "version": "141.0.7390.43",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1315,8 +1638,8 @@
       "architecture": null,
       "deviceName": "Edge 30 Pro",
       "marketingName": "Edge 30 Pro",
-      "manufacturer": "motorola",
-      "brand": "motorola",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1334,14 +1657,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "140.0.7339.208",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1349,7 +1672,7 @@
     "engine": {
       "name": "Blink",
       "version": "140.0.7339.208",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

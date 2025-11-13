@@ -70,10 +70,10 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
         }
 
         if (
-            preg_match('/^android \d+ - /i', $normalizedValue, $matches)
+            preg_match('/android \d+ - /i', $normalizedValue, $matches)
             || preg_match('/news republic\/[\d.]+ \(linux; android \d+/i', $normalizedValue, $matches)
             || preg_match(
-                '/^app : mozilla\/[\d.]+ \(linux; android \d+ ; \w+ \)/i',
+                '/app : mozilla\/[\d.]+ \(linux; android \d+ ; \w+ \)/i',
                 $normalizedValue,
                 $matches,
             )

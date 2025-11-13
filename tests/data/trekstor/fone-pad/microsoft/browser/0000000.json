@@ -10,7 +10,7 @@
       "manufacturer": "trekstor",
       "brand": "trekstor",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -24,16 +24,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 10",
       "version": "10.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Internet Explorer",
       "modus": null,
       "version": "11.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

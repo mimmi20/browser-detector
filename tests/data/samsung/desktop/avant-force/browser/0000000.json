@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "PC",
       "marketingName": "PC",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -24,9 +24,9 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

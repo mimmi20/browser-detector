@@ -7,9 +7,9 @@
       "architecture": null,
       "deviceName": "OT-585",
       "marketingName": "OneTouch 585",
-      "manufacturer": "alcatel",
-      "brand": "alcatel",
-      "dualOrientation": null,
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 220,
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "9.4.1.377",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U2",
       "version": "1.0.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   },
   {
@@ -52,14 +52,14 @@
       "architecture": null,
       "deviceName": "OT-807D",
       "marketingName": "OT-807D",
-      "manufacturer": "alcatel",
-      "brand": "alcatel",
-      "dualOrientation": null,
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone",
@@ -71,14 +71,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "8.7.1.234",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "U2",
       "version": "1.0.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   },
   {
@@ -97,14 +97,14 @@
       "architecture": null,
       "deviceName": "OT-818",
       "marketingName": "OneTouch 818",
-      "manufacturer": "alcatel",
-      "brand": "alcatel",
-      "dualOrientation": null,
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3.2
       },
       "type": "feature-phone",
@@ -116,14 +116,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "9.5.0.449",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "U2",
       "version": "1.0.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

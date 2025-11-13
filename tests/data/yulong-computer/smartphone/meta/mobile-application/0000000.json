@@ -9,8 +9,8 @@
       "marketingName": "Smart 4 Turbo",
       "manufacturer": "yulong-computer",
       "brand": "vodafone",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 854,
         "height": 480,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.4",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Facebook App",
       "modus": null,
       "version": "86.0.0.19.69",
-      "manufacturer": "meta",
+      "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "33.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

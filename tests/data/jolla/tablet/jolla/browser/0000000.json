@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Tablet",
       "marketingName": "Tablet",
-      "manufacturer": "jolla",
-      "brand": "jolla",
+      "manufacturer": "Jolla",
+      "brand": "Jolla",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -26,14 +26,14 @@
       "name": "SailfishOS",
       "marketingName": "SailfishOS",
       "version": null,
-      "manufacturer": "jolla",
+      "manufacturer": "Jolla",
       "bits": null
     },
     "client": {
       "name": "Sailfish Browser",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "jolla",
+      "manufacturer": "Jolla",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Gecko",
       "version": "31.0.0",
-      "manufacturer": "mozilla-foundation"
+      "manufacturer": "Mozilla"
     }
   }
 ]

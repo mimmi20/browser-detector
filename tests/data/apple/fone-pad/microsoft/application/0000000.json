@@ -1,16 +1,61 @@
 [
   {
     "headers": {
+      "user-agent": "Microsoft Office Word/2.42.1008 (iOS/14.0.1; Tablet; es-MX; AppStore; Apple/iPad11,2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 11,2",
+      "marketingName": "iPad mini (7.9, 5th Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.0.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "2.42.1008",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Microsoft Office Word/2.45.106 (iOS/14.2; Tablet; es-MX; AppStore; Apple/iPad11,7)"
     },
     "device": {
       "architecture": null,
       "deviceName": "iPad 11,7",
-      "marketingName": "iPad (10.2, 8th Gen.)",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "marketingName": "iPad (10.2, 8th Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2160,
         "height": 1620,
@@ -26,14 +71,14 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "14.2.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Word",
       "modus": null,
       "version": "2.45.106",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "application",
       "isbot": false,
       "bits": null
@@ -41,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -51,11 +96,11 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 8,3",
-      "marketingName": "iPad Pro (11.0, 3rd Gen.)",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "marketingName": "iPad Pro (11.0, 3rd Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2388,
         "height": 1668,
@@ -71,14 +116,14 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "16.5.1",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Office",
       "modus": null,
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "application",
       "isbot": false,
       "bits": null
@@ -86,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

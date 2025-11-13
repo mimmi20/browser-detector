@@ -4,8 +4,8 @@
     "marketingName": "Dual C1081HD",
     "manufacturer": "techpad",
     "brand": "techpad",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -20,8 +20,8 @@
     "marketingName": "Xtab 781+",
     "manufacturer": "techpad",
     "brand": "techpad",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 800,
       "height": 400,
@@ -36,8 +36,8 @@
     "marketingName": "Xtab 785",
     "manufacturer": "techpad",
     "brand": "techpad",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 800,
       "height": 480,
@@ -52,8 +52,8 @@
     "marketingName": "Xtab 970",
     "manufacturer": "techpad",
     "brand": "techpad",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 800,
       "height": 480,
@@ -68,8 +68,8 @@
     "marketingName": "Xtab Dual C1081+",
     "manufacturer": "techpad",
     "brand": "techpad",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -84,8 +84,8 @@
     "marketingName": "Xtab I700",
     "manufacturer": "techpad",
     "brand": "techpad",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -100,13 +100,29 @@
     "marketingName": "Xtab TV 7",
     "manufacturer": "techpad",
     "brand": "techpad",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "techpad 832": {
+    "deviceName": "832",
+    "marketingName": "832",
+    "manufacturer": "techpad",
+    "brand": "techpad",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"

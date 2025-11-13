@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "iPad",
       "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 768,
@@ -26,14 +26,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "7.1.0-beta+5",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "CoreMedia",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -52,10 +52,10 @@
       "architecture": null,
       "deviceName": "iPad",
       "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 768,
@@ -71,14 +71,14 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "iTunes",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

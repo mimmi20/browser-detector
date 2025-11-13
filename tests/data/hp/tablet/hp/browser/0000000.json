@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Touchpad",
       "marketingName": "Touchpad",
-      "manufacturer": "hp",
-      "brand": "hp",
+      "manufacturer": "HP",
+      "brand": "HP",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 768,
@@ -26,14 +26,14 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": "3.0.5",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "bits": null
     },
     "client": {
       "name": "webOS Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

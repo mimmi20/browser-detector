@@ -18,8 +18,12 @@ use BrowserDetector\Loader\Data\ClientData;
 use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
+use BrowserDetector\Version\Exception\NotNumericException;
+use BrowserDetector\Version\FireOs;
 use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\LineageOs;
 use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use Psr\Http\Message\MessageInterface;
@@ -310,8 +314,7 @@ final readonly class Detector implements DetectorInterface
         string | null $engineCodename,
         string | null $engineCodenameFromClient,
     ): EngineInterface {
-        $engineHeader  = null;
-        $engineVersion = null;
+        $engineHeader = null;
 
         if ($engineCodename === null) {
             $headersWithEngineName = array_filter(
@@ -470,7 +473,6 @@ final readonly class Detector implements DetectorInterface
     private function getPlatformData(array $filteredHeaders, string | null $platformCodenameFromDevice): OsInterface
     {
         $platformCodename = null;
-        $platformVersion  = null;
 
         $headersWithPlatformCode = array_filter(
             $filteredHeaders,
@@ -487,22 +489,15 @@ final readonly class Detector implements DetectorInterface
             $platformCodename = $platformCodenameFromDevice;
         }
 
-        try {
-            $platformVersion = $this->getPlatformVersion($filteredHeaders, $platformCodename);
-        } catch (VersionContainsDerivateException $e) {
-            $platformVersion = null;
-            $derivate        = $e->getDerivate();
-
-            if ($platformHeader instanceof HeaderInterface && $derivate !== '') {
-                $derivateCodename = $platformHeader->getPlatformCode($derivate);
-
-                if ($derivateCodename !== null) {
-                    $platformCodename = $derivateCodename;
-                }
-            }
-        }
-
-        // var_dump(4, $platformVersion);
+        $platformVersion = match ($platformCodename) {
+            'lineageos' => $this->getVersionForLineageOs($filteredHeaders),
+            'fire-os' => $this->getVersionForFireOs($filteredHeaders),
+            default => $this->getVersionForGeneric(
+                $filteredHeaders,
+                $platformCodename,
+                $platformHeader,
+            ),
+        };
 
         if ($platformCodename !== null) {
             try {
@@ -524,15 +519,11 @@ final readonly class Detector implements DetectorInterface
             }
         }
 
-        if (!$platformVersion instanceof VersionInterface) {
-            $platformVersion = null;
-        }
-
         return new Os(
             name: null,
             marketingName: null,
             manufacturer: new Company(type: 'unknown', name: null, brandname: null),
-            version: $platformVersion ?? new NullVersion(),
+            version: new NullVersion(),
             bits: Bits::unknown,
         );
     }
@@ -591,5 +582,76 @@ final readonly class Detector implements DetectorInterface
             ),
             os: null,
         );
+    }
+
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getVersionForLineageOs(array $filteredHeaders): VersionInterface
+    {
+        try {
+            $androidVersion = $this->getPlatformVersion($filteredHeaders, 'android')->getVersion(
+                VersionInterface::IGNORE_MINOR_IF_EMPTY,
+            );
+
+            $lineageOsVersion = new LineageOs(new VersionBuilder());
+
+            return $lineageOsVersion->getVersion($androidVersion ?? '');
+        } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
+            // do nothing
+        }
+
+        return new NullVersion();
+    }
+
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getVersionForFireOs(array $filteredHeaders): VersionInterface
+    {
+        try {
+            $androidVersion = $this->getPlatformVersion($filteredHeaders, 'android')->getVersion(
+                VersionInterface::IGNORE_MINOR_IF_EMPTY,
+            );
+
+            $fireOsVersion = new FireOs(new VersionBuilder());
+
+            return $fireOsVersion->getVersion($androidVersion ?? '');
+        } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
+            // do nothing
+        }
+
+        return new NullVersion();
+    }
+
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getVersionForGeneric(
+        array $filteredHeaders,
+        string | null &$platformCodename,
+        HeaderInterface | false $platformHeader,
+    ): VersionInterface {
+        try {
+            return $this->getPlatformVersion($filteredHeaders, $platformCodename);
+        } catch (VersionContainsDerivateException $e) {
+            $derivate = $e->getDerivate();
+
+            if ($platformHeader instanceof HeaderInterface && $derivate !== '') {
+                $derivateCodename = $platformHeader->getPlatformCode($derivate);
+
+                if ($derivateCodename !== null) {
+                    $platformCodename = $derivateCodename;
+                }
+            }
+        }
+
+        return new NullVersion();
     }
 }

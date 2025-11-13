@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "Android SDK",
       "marketingName": "Android SDK",
-      "manufacturer": "google",
-      "brand": "google",
+      "manufacturer": "Google",
+      "brand": "Google",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "63.0.3201.58220",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "89.0.4389.105",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

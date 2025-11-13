@@ -9,8 +9,8 @@
       "marketingName": "I6",
       "manufacturer": "boway",
       "brand": "boway",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.3",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Baidu Box App",
       "modus": null,
       "version": "6.0.0",
-      "manufacturer": "baidu",
+      "manufacturer": "Baidu",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "T5",
       "version": "2.0.0",
-      "manufacturer": "baidu"
+      "manufacturer": "Baidu"
     }
   }
 ]

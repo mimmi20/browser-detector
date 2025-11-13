@@ -8,10 +8,10 @@
       "architecture": null,
       "deviceName": "S41",
       "marketingName": "Cat S41",
-      "manufacturer": "caterpillar",
-      "brand": "caterpillar",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -27,7 +27,7 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -42,7 +42,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.5060.71",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

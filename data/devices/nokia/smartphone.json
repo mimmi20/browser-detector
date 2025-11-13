@@ -2749,7 +2749,7 @@
       "size": 3.5
     },
     "type": "smartphone",
-    "platform": "linux smartphone os (maemo)"
+    "platform": "maemo"
   },
   "nokia p4301": {
     "deviceName": "P4301",
@@ -3307,6 +3307,70 @@
       "height": 720,
       "touch": true,
       "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "nokia c32": {
+    "deviceName": "C32",
+    "marketingName": "C32",
+    "manufacturer": "hmd-global",
+    "brand": "nokia",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "nokia 02-4g": {
+    "deviceName": "02-4G",
+    "marketingName": "02-4G",
+    "manufacturer": "hmd-global",
+    "brand": "nokia",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "nokia 8.3 4g": {
+    "deviceName": "8.3 4G",
+    "marketingName": "8.3 4G",
+    "manufacturer": "hmd-global",
+    "brand": "nokia",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.81
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "nokia c12 pro": {
+    "deviceName": "C12 Pro",
+    "marketingName": "C12 Pro",
+    "manufacturer": "hmd-global",
+    "brand": "nokia",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.3
     },
     "type": "smartphone",
     "platform": "android"

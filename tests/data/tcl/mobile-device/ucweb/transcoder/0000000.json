@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "general Alcatel device",
       "marketingName": "general Alcatel device",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "8.3.1.161",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -52,14 +52,14 @@
       "architecture": null,
       "deviceName": "general Alcatel device",
       "marketingName": "general Alcatel device",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -71,14 +71,14 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": null,
-      "manufacturer": "rim",
+      "manufacturer": "RIM",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "8.1.0.216",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "U2",
       "version": "1.0.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

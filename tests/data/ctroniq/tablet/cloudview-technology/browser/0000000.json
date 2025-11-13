@@ -9,8 +9,8 @@
       "marketingName": "C55",
       "manufacturer": "ctroniq",
       "brand": "ctroniq",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 854,
         "height": 480,
@@ -26,7 +26,7 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

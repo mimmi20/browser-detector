@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "AT200",
       "marketingName": "eXcite AT200",
-      "manufacturer": "toshiba",
-      "brand": "toshiba",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Toshiba",
+      "brand": "Toshiba",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search App",
       "modus": null,
       "version": "5.45.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "54.0.2840.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

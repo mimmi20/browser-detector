@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "E4000",
       "marketingName": "E4000",
-      "manufacturer": "kyocera",
-      "brand": "kyocera",
+      "manufacturer": "Kyocera",
+      "brand": "Kyocera",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "IEMobile",
       "modus": null,
       "version": "7.11.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

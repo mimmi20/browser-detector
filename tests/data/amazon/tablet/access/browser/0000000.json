@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Kindle",
       "marketingName": "Kindle",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 800,
         "height": 600,
@@ -26,14 +26,14 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   }
 ]

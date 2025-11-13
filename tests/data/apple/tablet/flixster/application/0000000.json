@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "iPad",
       "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 768,
@@ -26,7 +26,7 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "7.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.51.1",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

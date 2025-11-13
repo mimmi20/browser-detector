@@ -10,7 +10,7 @@
       "manufacturer": "kumai",
       "brand": "kumai",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.5",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Baidu Box App",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "baidu",
+      "manufacturer": "Baidu",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

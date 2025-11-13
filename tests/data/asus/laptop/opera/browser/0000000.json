@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "eee pc",
       "marketingName": "eee pc",
-      "manufacturer": "asus",
-      "brand": "asus",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": 800,
         "height": 480,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.3",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "14.0.1074.58201",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.31.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -52,14 +52,14 @@
       "architecture": null,
       "deviceName": "Chromebook Flip C302",
       "marketingName": "Chromebook Flip C302",
-      "manufacturer": "asus",
-      "brand": "asus",
+      "manufacturer": "Asus",
+      "brand": "Asus",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1080,
-        "touch": true,
+        "touch": false,
         "size": 12.5
       },
       "type": "laptop",
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "60.2.3004.55409",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "85.0.4183.127",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

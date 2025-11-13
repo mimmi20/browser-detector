@@ -15,11 +15,10 @@ namespace UserAgentsTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Version\Exception\NotNumericException;
 use DateInterval;
 use Exception;
-use FilterIterator;
-use Iterator;
 use JsonException;
 use Override;
 use PHPUnit\Framework\Attributes\CoversNothing;
@@ -334,28 +333,7 @@ final class DetectorTest extends TestCase
     public static function providerGetBrowser(): array
     {
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('tests/data/'));
-        $files    = new class ($iterator, 'json') extends FilterIterator {
-            /**
-             * @param Iterator<SplFileInfo> $iterator
-             *
-             * @throws void
-             */
-            public function __construct(Iterator $iterator, private readonly string $extension)
-            {
-                parent::__construct($iterator);
-            }
-
-            /** @throws void */
-            #[Override]
-            public function accept(): bool
-            {
-                $file = $this->getInnerIterator()->current();
-
-                assert($file instanceof SplFileInfo);
-
-                return $file->isFile() && $file->getExtension() === $this->extension;
-            }
-        };
+        $files    = new FilterIterator($iterator, 'json');
 
         $data = [];
 

@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "Vairy Touch II",
       "marketingName": "Vairy Touch II",
-      "manufacturer": "t-mobile",
-      "brand": "t-mobile",
+      "manufacturer": "T-Mobile",
+      "brand": "T-Mobile",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   }
 ]

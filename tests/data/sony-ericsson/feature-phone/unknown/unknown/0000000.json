@@ -9,8 +9,8 @@
       "marketingName": "Spiro",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -26,7 +26,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -54,8 +54,8 @@
       "marketingName": "W580i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -71,7 +71,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -99,8 +99,8 @@
       "marketingName": "S500i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -144,8 +144,8 @@
       "marketingName": "290i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -189,8 +189,8 @@
       "marketingName": "C510",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -234,8 +234,8 @@
       "marketingName": "J200i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -279,8 +279,8 @@
       "marketingName": "J210c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -324,8 +324,8 @@
       "marketingName": "J210i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -369,8 +369,8 @@
       "marketingName": "K610a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -414,8 +414,8 @@
       "marketingName": "K800i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -459,8 +459,8 @@
       "marketingName": "P900",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 208,
@@ -504,12 +504,12 @@
       "marketingName": "P908",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 208,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -521,7 +521,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -549,12 +549,12 @@
       "marketingName": "P990",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.7
       },
       "type": "feature-phone",
@@ -566,7 +566,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -594,12 +594,12 @@
       "marketingName": "R306",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
-        "touch": true,
+        "touch": false,
         "size": 1.9
       },
       "type": "feature-phone",
@@ -611,7 +611,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -639,12 +639,12 @@
       "marketingName": "R306a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
-        "touch": true,
+        "touch": false,
         "size": 1.9
       },
       "type": "feature-phone",
@@ -656,7 +656,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -684,8 +684,8 @@
       "marketingName": "T100",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 67,
@@ -729,8 +729,8 @@
       "marketingName": "T200",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 67,
@@ -774,8 +774,8 @@
       "marketingName": "T226",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -819,8 +819,8 @@
       "marketingName": "T230",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -864,8 +864,8 @@
       "marketingName": "T237",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -909,8 +909,8 @@
       "marketingName": "T238",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -954,8 +954,8 @@
       "marketingName": "T290",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -999,8 +999,8 @@
       "marketingName": "T290a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1044,8 +1044,8 @@
       "marketingName": "T290",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1089,8 +1089,8 @@
       "marketingName": "T300",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1134,8 +1134,8 @@
       "marketingName": "T306",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1179,8 +1179,8 @@
       "marketingName": "T310",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1224,8 +1224,8 @@
       "marketingName": "T312",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1269,8 +1269,8 @@
       "marketingName": "T316",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1314,8 +1314,8 @@
       "marketingName": "T608",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -1359,8 +1359,8 @@
       "marketingName": "T610",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1404,8 +1404,8 @@
       "marketingName": "T616",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1421,7 +1421,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1449,8 +1449,8 @@
       "marketingName": "T618",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1466,7 +1466,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1494,8 +1494,8 @@
       "marketingName": "T628",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1511,7 +1511,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1539,8 +1539,8 @@
       "marketingName": "T630",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1556,7 +1556,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1584,8 +1584,8 @@
       "marketingName": "T637",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -1601,7 +1601,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1629,8 +1629,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1674,8 +1674,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -1719,8 +1719,8 @@
       "marketingName": "TM717",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1764,12 +1764,12 @@
       "marketingName": "Satio",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 640,
         "height": 360,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -1809,12 +1809,12 @@
       "marketingName": "Yendo",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.6
       },
       "type": "feature-phone",
@@ -1826,7 +1826,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1854,8 +1854,8 @@
       "marketingName": "Zylo",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -1871,7 +1871,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1899,8 +1899,8 @@
       "marketingName": "W380a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1916,7 +1916,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1944,8 +1944,8 @@
       "marketingName": "W395",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -1989,8 +1989,8 @@
       "marketingName": "W550",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2006,7 +2006,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2034,8 +2034,8 @@
       "marketingName": "W580",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2051,7 +2051,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2079,8 +2079,8 @@
       "marketingName": "W580c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2124,8 +2124,8 @@
       "marketingName": "W760c",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2169,8 +2169,8 @@
       "marketingName": "W760i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2214,8 +2214,8 @@
       "marketingName": "X5",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -2259,8 +2259,8 @@
       "marketingName": "Z1010",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -2276,7 +2276,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2304,8 +2304,8 @@
       "marketingName": "Z200",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -2349,8 +2349,8 @@
       "marketingName": "Z250i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2366,7 +2366,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2394,8 +2394,8 @@
       "marketingName": "Z320a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2411,7 +2411,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2439,8 +2439,8 @@
       "marketingName": "Z320i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2456,7 +2456,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2484,8 +2484,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2501,7 +2501,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2529,8 +2529,8 @@
       "marketingName": "Z608",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2546,7 +2546,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2574,12 +2574,12 @@
       "marketingName": "P908",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 208,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -2591,7 +2591,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2619,8 +2619,8 @@
       "marketingName": "Zylo",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2636,7 +2636,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2664,8 +2664,8 @@
       "marketingName": "W910i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -2681,7 +2681,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2709,8 +2709,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2726,7 +2726,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2754,8 +2754,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2771,7 +2771,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2799,8 +2799,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2816,7 +2816,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2844,8 +2844,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2861,7 +2861,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2889,8 +2889,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2906,7 +2906,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2934,8 +2934,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2951,7 +2951,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -2979,8 +2979,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -2996,7 +2996,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -3024,8 +3024,8 @@
       "marketingName": "Z600",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3041,7 +3041,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -3069,8 +3069,8 @@
       "marketingName": "Z520i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3114,8 +3114,8 @@
       "marketingName": "Z520a",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -3159,8 +3159,8 @@
       "marketingName": "Z200",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -3204,8 +3204,8 @@
       "marketingName": "Z200",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -3249,8 +3249,8 @@
       "marketingName": "Z200",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -3294,8 +3294,8 @@
       "marketingName": "Z200",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -3339,8 +3339,8 @@
       "marketingName": "Z200",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 128,
         "height": 128,
@@ -3356,7 +3356,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -3384,8 +3384,8 @@
       "marketingName": "Z1010",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3401,7 +3401,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -3429,8 +3429,8 @@
       "marketingName": "W900i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
@@ -3474,8 +3474,8 @@
       "marketingName": "W800i",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
@@ -3519,8 +3519,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3564,8 +3564,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3609,8 +3609,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3654,8 +3654,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3699,8 +3699,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3744,8 +3744,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3761,7 +3761,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -3789,8 +3789,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3834,8 +3834,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3879,8 +3879,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3924,8 +3924,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -3969,8 +3969,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -4014,8 +4014,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -4059,8 +4059,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -4104,8 +4104,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -4149,8 +4149,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -4194,8 +4194,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -4239,8 +4239,8 @@
       "marketingName": "T68",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 101,
         "height": 80,
@@ -4256,7 +4256,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -4284,8 +4284,8 @@
       "marketingName": "T637",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -4301,7 +4301,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -4329,8 +4329,8 @@
       "marketingName": "T637",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -4346,7 +4346,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -4374,8 +4374,8 @@
       "marketingName": "T630",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -4391,7 +4391,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -4419,8 +4419,8 @@
       "marketingName": "T630",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -4436,7 +4436,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -4464,8 +4464,8 @@
       "marketingName": "T630",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -4481,7 +4481,7 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {

@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Kindle",
       "marketingName": "Kindle",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 800,
         "height": 600,
@@ -24,16 +24,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Google App Engine",
       "modus": null,
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "bot",
       "isbot": true,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": "5.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

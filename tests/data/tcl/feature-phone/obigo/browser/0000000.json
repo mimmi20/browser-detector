@@ -7,9 +7,9 @@
       "architecture": null,
       "deviceName": "OH1C",
       "marketingName": "OH1C",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "dualOrientation": null,
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 128,
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": "2.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -52,9 +52,9 @@
       "architecture": null,
       "deviceName": "3020D",
       "marketingName": "3020D",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "dualOrientation": null,
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 220,
@@ -71,14 +71,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -97,14 +97,14 @@
       "architecture": null,
       "deviceName": "3041D",
       "marketingName": "OneTouch Tribe",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "dualOrientation": null,
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
-        "touch": true,
+        "touch": false,
         "size": 3.5
       },
       "type": "feature-phone",
@@ -116,14 +116,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   }
 ]

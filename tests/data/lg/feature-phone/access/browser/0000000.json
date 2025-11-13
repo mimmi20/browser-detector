@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "272",
       "marketingName": "Rumor Reflex",
-      "manufacturer": "lg",
-      "brand": "boost-mobile",
+      "manufacturer": "LG",
+      "brand": "Boost Mobile",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "4.2.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -52,8 +52,8 @@
       "architecture": null,
       "deviceName": "LN240",
       "marketingName": "Remarq",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -71,14 +71,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.1",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -97,14 +97,14 @@
       "architecture": null,
       "deviceName": "C660",
       "marketingName": "Optimus Pro",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -116,14 +116,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.3",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "NetFrontLifeBrowser",
       "modus": null,
       "version": "2.3.0",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "530.17.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -142,14 +142,14 @@
       "architecture": null,
       "deviceName": "LN510",
       "marketingName": "Rumor Touch",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -161,14 +161,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.1",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -187,8 +187,8 @@
       "architecture": null,
       "deviceName": "LX610",
       "marketingName": "Lotus Elite",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -206,14 +206,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
       "version": "3.5.1",
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +221,7 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
     }
   },
   {
@@ -232,53 +232,8 @@
       "architecture": null,
       "deviceName": "LN272",
       "marketingName": "Rumor Reflex",
-      "manufacturer": "lg",
+      "manufacturer": "LG",
       "brand": "sprint",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": 3
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LGE-VM510 NetFront/3.5.1 (GUI) MMP/2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "VM510",
-      "marketingName": "Rumor Touch",
-      "manufacturer": "lg",
-      "brand": "lg",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -296,14 +251,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "NetFront",
       "modus": null,
-      "version": "3.5.1",
-      "manufacturer": "access",
+      "version": "4.2.0",
+      "manufacturer": "Access",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +266,52 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VM510 NetFront/3.5.1 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VM510",
+      "marketingName": "Rumor Touch",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.1",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "Access"
     }
   }
 ]

@@ -9,8 +9,8 @@
       "marketingName": "Plus",
       "manufacturer": "wiko",
       "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Meizu Browser",
       "modus": null,
       "version": "8.11.5",
-      "manufacturer": "meizu",
+      "manufacturer": "Meizu",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "62.0.3202.97",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

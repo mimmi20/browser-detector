@@ -9,8 +9,8 @@
       "marketingName": "A320",
       "manufacturer": "amoi",
       "brand": "amoi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 160,
         "height": 128,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.4",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Baidu Box App",
       "modus": null,
       "version": "042.8.3",
-      "manufacturer": "baidu",
+      "manufacturer": "Baidu",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.30.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

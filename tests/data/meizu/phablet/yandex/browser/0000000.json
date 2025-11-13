@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "M6 Note",
       "marketingName": "M6 Note",
-      "manufacturer": "meizu",
-      "brand": "meizu",
+      "manufacturer": "Meizu",
+      "brand": "Meizu",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "21.5.5.110.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,52 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.216",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; NOTE 21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.90 YaBrowser/24.1.8.90.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Note 21",
-      "marketingName": "Note 21",
-      "manufacturer": "meizu",
-      "brand": "meizu",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.74
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "24.1.8.90.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.6099.90",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

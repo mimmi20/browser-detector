@@ -15,8 +15,8 @@
       "architecture": null,
       "deviceName": "iPlay 40",
       "marketingName": "iPlay 40",
-      "manufacturer": "alldocube",
-      "brand": "alldocube",
+      "manufacturer": "Alldocube",
+      "brand": "Alldocube",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -34,14 +34,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "102.0.5005.134",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -49,7 +49,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.134",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -58,10 +58,10 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iPlay 50 mini Pro",
-      "marketingName": "iPlay 50 mini Pro",
-      "manufacturer": "alldocube",
-      "brand": "alldocube",
+      "deviceName": "iPlay 50 Mini Pro",
+      "marketingName": "iPlay 50 Mini Pro",
+      "manufacturer": "Alldocube",
+      "brand": "Alldocube",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -79,14 +79,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "81.3.4292.78688",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -94,7 +94,52 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.149",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; T811) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.113 Safari/537.36 OPR/82.2.4342.79505"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T811",
+      "marketingName": "Kidz Pad Pro",
+      "manufacturer": "Alldocube",
+      "brand": "Alldocube",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8.4
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "82.2.4342.79505",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.113",
+      "manufacturer": "Google"
     }
   }
 ]

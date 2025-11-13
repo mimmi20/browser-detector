@@ -7,8 +7,8 @@
       "architecture": null,
       "deviceName": "KP500",
       "marketingName": "Cookie",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -33,7 +33,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -52,14 +52,14 @@
       "architecture": null,
       "deviceName": "GD350",
       "marketingName": "GD350",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 220,
         "height": 176,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -71,14 +71,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -97,8 +97,8 @@
       "architecture": null,
       "deviceName": "C320",
       "marketingName": "C320",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -116,14 +116,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -142,14 +142,14 @@
       "architecture": null,
       "deviceName": "GS290",
       "marketingName": "Cookie Fresh",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -161,14 +161,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -187,14 +187,14 @@
       "architecture": null,
       "deviceName": "VX11000",
       "marketingName": "Env Touch",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -206,14 +206,14 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +221,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -232,53 +232,8 @@
       "architecture": null,
       "deviceName": "GD510",
       "marketingName": "Pop",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": 3
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "client": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-CU920/V1.0p Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Wapfrog Hangman 2.0;LG-CU920/V1.0p Obigo/Q05A Profile/MIDP-2.0 Configu"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CU920",
-      "marketingName": "Vu",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -296,14 +251,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
-      "name": "Obigo Q",
+      "name": "Teleca-Obigo",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "obigo",
+      "version": null,
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +266,52 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-CU920/V1.0p Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Wapfrog Hangman 2.0;LG-CU920/V1.0p Obigo/Q05A Profile/MIDP-2.0 Configu"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CU920",
+      "marketingName": "Vu",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Obigo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -322,8 +322,8 @@
       "architecture": null,
       "deviceName": "LG160V",
       "marketingName": "LG160V",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -341,14 +341,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +356,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -367,8 +367,8 @@
       "architecture": null,
       "deviceName": "410",
       "marketingName": "410",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -393,7 +393,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +401,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -412,8 +412,8 @@
       "architecture": null,
       "deviceName": "LG420G",
       "marketingName": "LG420G",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -431,14 +431,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,7 +446,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -457,8 +457,8 @@
       "architecture": null,
       "deviceName": "440G",
       "marketingName": "440G",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -476,14 +476,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -491,7 +491,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -502,8 +502,8 @@
       "architecture": null,
       "deviceName": "LG500G",
       "marketingName": "LG500G",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -521,14 +521,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +536,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -547,8 +547,8 @@
       "architecture": null,
       "deviceName": "570V",
       "marketingName": "570V",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -566,14 +566,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +581,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -592,8 +592,8 @@
       "architecture": null,
       "deviceName": "620G",
       "marketingName": "620G",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -611,14 +611,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +626,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -637,8 +637,8 @@
       "architecture": null,
       "deviceName": "LG800G",
       "marketingName": "LG800G",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -656,14 +656,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +671,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -682,8 +682,8 @@
       "architecture": null,
       "deviceName": "900G",
       "marketingName": "900G",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -701,14 +701,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +716,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -727,8 +727,8 @@
       "architecture": null,
       "deviceName": "A155",
       "marketingName": "A155",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -746,14 +746,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +761,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -772,8 +772,8 @@
       "architecture": null,
       "deviceName": "A200",
       "marketingName": "A200",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -791,14 +791,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +806,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -817,8 +817,8 @@
       "architecture": null,
       "deviceName": "A225",
       "marketingName": "A225",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -836,14 +836,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +851,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -862,8 +862,8 @@
       "architecture": null,
       "deviceName": "A230",
       "marketingName": "A230",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -881,14 +881,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +896,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -907,8 +907,8 @@
       "architecture": null,
       "deviceName": "A250",
       "marketingName": "A250",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -926,14 +926,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +941,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -952,8 +952,8 @@
       "architecture": null,
       "deviceName": "A255",
       "marketingName": "A255",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -971,14 +971,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -986,7 +986,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -997,8 +997,8 @@
       "architecture": null,
       "deviceName": "A258",
       "marketingName": "A258",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1016,14 +1016,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +1031,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1042,8 +1042,8 @@
       "architecture": null,
       "deviceName": "A290",
       "marketingName": "A290",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1061,14 +1061,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +1076,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1087,8 +1087,8 @@
       "architecture": null,
       "deviceName": "A390",
       "marketingName": "A390",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1106,14 +1106,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +1121,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1132,8 +1132,8 @@
       "architecture": null,
       "deviceName": "AN510",
       "marketingName": "Prestige",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1158,7 +1158,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,7 +1166,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1177,8 +1177,8 @@
       "architecture": null,
       "deviceName": "BL20",
       "marketingName": "BL20",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1196,14 +1196,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1211,7 +1211,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1222,8 +1222,8 @@
       "architecture": null,
       "deviceName": "BL20f",
       "marketingName": "BL20f",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1241,14 +1241,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1256,7 +1256,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1267,14 +1267,14 @@
       "architecture": null,
       "deviceName": "BL40",
       "marketingName": "New Chocolate",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 800,
         "height": 345,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -1286,14 +1286,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1301,7 +1301,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1312,8 +1312,8 @@
       "architecture": null,
       "deviceName": "BL42k",
       "marketingName": "BL42k",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1331,14 +1331,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1346,7 +1346,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1357,8 +1357,8 @@
       "architecture": null,
       "deviceName": "C100",
       "marketingName": "C100",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1376,14 +1376,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1391,7 +1391,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1402,8 +1402,8 @@
       "architecture": null,
       "deviceName": "C105",
       "marketingName": "C105",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1421,14 +1421,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1436,7 +1436,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1447,8 +1447,8 @@
       "architecture": null,
       "deviceName": "C2100",
       "marketingName": "C2100",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1473,7 +1473,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1492,8 +1492,8 @@
       "architecture": null,
       "deviceName": "C299",
       "marketingName": "C299",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1511,14 +1511,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1526,7 +1526,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1537,14 +1537,14 @@
       "architecture": null,
       "deviceName": "C305",
       "marketingName": "Xpression",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -1556,14 +1556,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1571,7 +1571,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1582,8 +1582,8 @@
       "architecture": null,
       "deviceName": "C310",
       "marketingName": "Cookie Duet",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1601,14 +1601,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1616,7 +1616,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1627,8 +1627,8 @@
       "architecture": null,
       "deviceName": "C3310",
       "marketingName": "C3310",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1653,7 +1653,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1672,8 +1672,8 @@
       "architecture": null,
       "deviceName": "C3320",
       "marketingName": "C3320",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1698,7 +1698,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1717,8 +1717,8 @@
       "architecture": null,
       "deviceName": "C395",
       "marketingName": "C395",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1736,14 +1736,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1751,7 +1751,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1762,8 +1762,8 @@
       "architecture": null,
       "deviceName": "CP150",
       "marketingName": "CP150",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1788,7 +1788,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1796,7 +1796,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1807,8 +1807,8 @@
       "architecture": null,
       "deviceName": "E500",
       "marketingName": "E500",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1826,14 +1826,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1841,7 +1841,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -1852,8 +1852,8 @@
       "architecture": null,
       "deviceName": "G262",
       "marketingName": "G262",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1878,7 +1878,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1897,8 +1897,8 @@
       "architecture": null,
       "deviceName": "G688",
       "marketingName": "G688",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1923,7 +1923,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1942,8 +1942,8 @@
       "architecture": null,
       "deviceName": "G832",
       "marketingName": "G832",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -1968,7 +1968,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1987,8 +1987,8 @@
       "architecture": null,
       "deviceName": "G922",
       "marketingName": "G922",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2006,14 +2006,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2021,7 +2021,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2032,8 +2032,8 @@
       "architecture": null,
       "deviceName": "GU220",
       "marketingName": "GU220",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2051,14 +2051,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2066,7 +2066,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2077,8 +2077,8 @@
       "architecture": null,
       "deviceName": "GB160",
       "marketingName": "GB160",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2096,14 +2096,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2111,7 +2111,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2122,8 +2122,8 @@
       "architecture": null,
       "deviceName": "GB175",
       "marketingName": "GB175",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2141,14 +2141,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2156,7 +2156,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2167,8 +2167,8 @@
       "architecture": null,
       "deviceName": "GB210",
       "marketingName": "GB210",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2193,7 +2193,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2201,7 +2201,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2212,8 +2212,8 @@
       "architecture": null,
       "deviceName": "GB280",
       "marketingName": "GB280",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2231,14 +2231,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2246,7 +2246,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2257,8 +2257,8 @@
       "architecture": null,
       "deviceName": "GC900",
       "marketingName": "Viewty Smart",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2276,14 +2276,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.1.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2291,7 +2291,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2302,8 +2302,8 @@
       "architecture": null,
       "deviceName": "GD310",
       "marketingName": "Ice Cream",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2321,14 +2321,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2336,7 +2336,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2347,8 +2347,8 @@
       "architecture": null,
       "deviceName": "GD330",
       "marketingName": "GD330",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2366,14 +2366,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2381,7 +2381,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2392,8 +2392,8 @@
       "architecture": null,
       "deviceName": "GD550",
       "marketingName": "Pure",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2411,14 +2411,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2426,7 +2426,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2437,8 +2437,8 @@
       "architecture": null,
       "deviceName": "GD570",
       "marketingName": "dLite",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2456,14 +2456,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2471,7 +2471,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2482,14 +2482,14 @@
       "architecture": null,
       "deviceName": "GT505",
       "marketingName": "GT505",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -2501,14 +2501,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.1.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2516,7 +2516,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2527,8 +2527,8 @@
       "architecture": null,
       "deviceName": "GM205",
       "marketingName": "GM205",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2546,14 +2546,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2561,7 +2561,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2572,8 +2572,8 @@
       "architecture": null,
       "deviceName": "GM360",
       "marketingName": "Viewty Snap",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2591,14 +2591,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2606,7 +2606,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2617,8 +2617,8 @@
       "architecture": null,
       "deviceName": "GM600",
       "marketingName": "Scarlet II",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2636,14 +2636,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2651,7 +2651,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2662,53 +2662,8 @@
       "architecture": null,
       "deviceName": "GR500",
       "marketingName": "Xenon",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "client": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "obigo",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-GR501/V10c Obigo/Q7.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GR501",
-      "marketingName": "GR501",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2726,14 +2681,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
-      "version": "7.1.0",
-      "manufacturer": "obigo",
+      "version": "7.0.0",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2741,7 +2696,52 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-GR501/V10c Obigo/Q7.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GR501",
+      "marketingName": "GR501",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "7.1.0",
+      "manufacturer": "Obigo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2752,8 +2752,8 @@
       "architecture": null,
       "deviceName": "GS190",
       "marketingName": "GS190",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2771,14 +2771,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2786,7 +2786,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2797,8 +2797,8 @@
       "architecture": null,
       "deviceName": "GS200",
       "marketingName": "GS200",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -2816,14 +2816,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2831,7 +2831,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2842,14 +2842,14 @@
       "architecture": null,
       "deviceName": "GS290",
       "marketingName": "Cookie Fresh",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -2861,14 +2861,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2876,7 +2876,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2887,14 +2887,14 @@
       "architecture": null,
       "deviceName": "GT350",
       "marketingName": "Town",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -2906,14 +2906,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2921,7 +2921,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2932,14 +2932,14 @@
       "architecture": null,
       "deviceName": "GT350",
       "marketingName": "Town",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -2951,14 +2951,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2966,7 +2966,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -2977,14 +2977,14 @@
       "architecture": null,
       "deviceName": "GT400",
       "marketingName": "Viewty Smile",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -2996,14 +2996,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.1.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3011,7 +3011,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3022,14 +3022,14 @@
       "architecture": null,
       "deviceName": "GT550",
       "marketingName": "Encore",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -3041,14 +3041,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3056,7 +3056,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3067,8 +3067,8 @@
       "architecture": null,
       "deviceName": "GU280",
       "marketingName": "GU280",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3086,14 +3086,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3101,7 +3101,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3112,8 +3112,8 @@
       "architecture": null,
       "deviceName": "GU285f",
       "marketingName": "GU285f",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3131,14 +3131,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3146,7 +3146,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3157,8 +3157,8 @@
       "architecture": null,
       "deviceName": "GU285g",
       "marketingName": "GU285g",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3176,14 +3176,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3191,7 +3191,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3202,8 +3202,8 @@
       "architecture": null,
       "deviceName": "GU290f",
       "marketingName": "GU290f",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3221,14 +3221,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3236,7 +3236,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3247,8 +3247,8 @@
       "architecture": null,
       "deviceName": "GU295",
       "marketingName": "GU295",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3266,14 +3266,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3281,7 +3281,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3292,8 +3292,8 @@
       "architecture": null,
       "deviceName": "GU295f",
       "marketingName": "GU295f",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3311,14 +3311,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3326,7 +3326,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3337,8 +3337,8 @@
       "architecture": null,
       "deviceName": "GU295g",
       "marketingName": "GU295g",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3356,14 +3356,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3371,7 +3371,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3382,8 +3382,8 @@
       "architecture": null,
       "deviceName": "GU297",
       "marketingName": "Wink",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3401,14 +3401,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3416,7 +3416,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3427,8 +3427,8 @@
       "architecture": null,
       "deviceName": "GW300",
       "marketingName": "GW300",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3453,7 +3453,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3461,7 +3461,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3472,8 +3472,8 @@
       "architecture": null,
       "deviceName": "GW300",
       "marketingName": "GW300",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3491,14 +3491,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3506,7 +3506,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3517,8 +3517,8 @@
       "architecture": null,
       "deviceName": "GW305",
       "marketingName": "GW305",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3536,14 +3536,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3551,7 +3551,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3562,14 +3562,14 @@
       "architecture": null,
       "deviceName": "GW370B",
       "marketingName": "Rumour Plus",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.4
       },
       "type": "feature-phone",
@@ -3581,14 +3581,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.3.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3596,7 +3596,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3607,8 +3607,8 @@
       "architecture": null,
       "deviceName": "GX300",
       "marketingName": "GX300",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3626,14 +3626,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3641,7 +3641,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3652,8 +3652,8 @@
       "architecture": null,
       "deviceName": "HB620T",
       "marketingName": "HB620T",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3671,14 +3671,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3686,7 +3686,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3697,8 +3697,8 @@
       "architecture": null,
       "deviceName": "KB770",
       "marketingName": "KB770",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3716,14 +3716,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.1.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3731,7 +3731,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3742,14 +3742,14 @@
       "architecture": null,
       "deviceName": "KC910",
       "marketingName": "Renoir",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -3761,14 +3761,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "7.1.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3776,7 +3776,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3787,8 +3787,8 @@
       "architecture": null,
       "deviceName": "KF245",
       "marketingName": "KF245",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3806,14 +3806,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3821,7 +3821,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3832,8 +3832,8 @@
       "architecture": null,
       "deviceName": "KF305",
       "marketingName": "KF305",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3851,14 +3851,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3866,7 +3866,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3877,8 +3877,8 @@
       "architecture": null,
       "deviceName": "KF310",
       "marketingName": "KF310",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3896,14 +3896,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3911,7 +3911,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3922,8 +3922,8 @@
       "architecture": null,
       "deviceName": "KF600d",
       "marketingName": "KF600d",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3941,14 +3941,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3956,7 +3956,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -3967,8 +3967,8 @@
       "architecture": null,
       "deviceName": "KF690",
       "marketingName": "KF690",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -3986,14 +3986,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4001,7 +4001,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -4012,14 +4012,14 @@
       "architecture": null,
       "deviceName": "KF700",
       "marketingName": "KF700",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 480,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3
       },
       "type": "feature-phone",
@@ -4031,14 +4031,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4046,7 +4046,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -4057,14 +4057,14 @@
       "architecture": null,
       "deviceName": "KF750",
       "marketingName": "Secret",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.4
       },
       "type": "feature-phone",
@@ -4076,14 +4076,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Obigo Q",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4091,7 +4091,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -4102,8 +4102,8 @@
       "architecture": null,
       "deviceName": "KG200j",
       "marketingName": "KG200j",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4121,14 +4121,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4136,7 +4136,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -4147,8 +4147,8 @@
       "architecture": null,
       "deviceName": "KG280",
       "marketingName": "KG280",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4166,14 +4166,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4181,7 +4181,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -4192,8 +4192,8 @@
       "architecture": null,
       "deviceName": "KG290",
       "marketingName": "KG290",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4211,14 +4211,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4226,7 +4226,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -4237,8 +4237,8 @@
       "architecture": null,
       "deviceName": "KG300",
       "marketingName": "KG300",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4256,14 +4256,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4271,7 +4271,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -4282,8 +4282,8 @@
       "architecture": null,
       "deviceName": "KG320",
       "marketingName": "KG320",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4308,7 +4308,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4327,8 +4327,8 @@
       "architecture": null,
       "deviceName": "KG77",
       "marketingName": "KG77",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4353,7 +4353,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": "1.1.14",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4372,8 +4372,8 @@
       "architecture": null,
       "deviceName": "KG99",
       "marketingName": "KG99",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4398,7 +4398,7 @@
       "name": "Teleca-Obigo",
       "modus": null,
       "version": "1.1.14",
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4417,8 +4417,8 @@
       "architecture": null,
       "deviceName": "KM385",
       "marketingName": "KM385",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4436,14 +4436,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4451,7 +4451,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   },
   {
@@ -4462,8 +4462,8 @@
       "architecture": null,
       "deviceName": "KM501",
       "marketingName": "KM501",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
@@ -4481,14 +4481,14 @@
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
       "name": "Teleca-Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "Obigo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4496,7 +4496,7 @@
     "engine": {
       "name": "Teleca",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "Obigo"
     }
   }
 ]

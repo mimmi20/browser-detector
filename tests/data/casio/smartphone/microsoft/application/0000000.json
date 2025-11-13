@@ -9,8 +9,8 @@
       "marketingName": "GzOne Commando",
       "manufacturer": "casio",
       "brand": "casio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.3",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "BingWeb App",
       "modus": null,
       "version": "5.0.4.20140605",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

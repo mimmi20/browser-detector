@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "BlackBerry 7520",
       "marketingName": "BlackBerry 7520",
-      "manufacturer": "rim",
-      "brand": "rim",
+      "manufacturer": "RIM",
+      "brand": "RIM",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 240,
         "height": 160,
-        "touch": false,
+        "touch": true,
         "size": null
       },
       "type": "smartphone",
@@ -26,14 +26,14 @@
       "name": "Windows NT",
       "marketingName": "Windows 2000",
       "version": "5.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Internet Explorer",
       "modus": null,
       "version": "6.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

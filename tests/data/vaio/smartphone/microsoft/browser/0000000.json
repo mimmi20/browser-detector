@@ -9,8 +9,8 @@
       "marketingName": "VPB051",
       "manufacturer": "vaio",
       "brand": "vaio",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "Windows Phone OS",
       "marketingName": "Windows Phone OS",
       "version": "10.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "15.15254.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Edge",
       "version": "15.15254.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace Parser\Header;
+namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\CrawledByClientCode;
 use BrowserDetector\Parser\Header\CrawledByClientVersion;

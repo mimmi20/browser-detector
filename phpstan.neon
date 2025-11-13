@@ -85,7 +85,7 @@ parameters:
       tooWideThrowType: true
 
   cognitive_complexity:
-    class: 59
+    class: 51
     function: 39
 
   type_coverage:
@@ -111,6 +111,10 @@ parameters:
     - '~will always evaluate to true~'
     - '~\$searches of method~'
     - '~\$rules of method~'
+    - '~deprecated class BrowserDetector\\Loader\\InitData\\Os~'
+    - '~deprecated class BrowserDetector\\Loader\\Data\\Os~'
+    - '~deprecated class BrowserDetector\\Loader\\InitData\\Engine~'
+    - '~deprecated class BrowserDetector\\Loader\\Data\\Engine~'
     -
       identifier: property.uninitialized
       paths:
@@ -124,14 +128,23 @@ parameters:
       paths:
         - tests/DetectorTest/Loader/BrowserLoaderTest.php
         - tests/DetectorTest/Loader/CompanyLoaderTest.php
-        - tests/DetectorTest/Loader/DeviceLoaderTest.php
-        - tests/DetectorTest/Loader/EngineLoaderTest.php
-        - tests/DetectorTest/Loader/PlatformLoader3Test.php
-        - tests/DetectorTest/Loader/PlatformLoader4Test.php
+        - tests/DetectorTest/Loader/DeviceLoader1Test.php
+        #- tests/DetectorTest/Loader/EngineLoaderTest.php
+        #- tests/DetectorTest/Loader/PlatformLoader3Test.php
+        #- tests/DetectorTest/Loader/PlatformLoader4Test.php
     -
       identifier: throws.unusedType
       paths:
         - src/Detector.php
+    -
+      identifier: catch.neverThrown
+      paths:
+        - tests\DetectorTest\Parser\Header\SecChUaPlatformVersionTest.php
+    -
+      identifier: public.method.unused
+      paths:
+        - src\Loader\InitData\Os.php
+        - src\Loader\InitData\Engine.php
 
 rules:
   # code complexity

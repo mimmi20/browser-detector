@@ -6,11 +6,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "marketingName": "Kindle Fire HD 7 (2nd Gen)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.3",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "10.2.0.535",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   },
   {
@@ -52,8 +52,8 @@
       "architecture": null,
       "deviceName": "KFTHWI",
       "marketingName": "Kindle Fire HDX 7 (2013, Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.3",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "10.4.1.576",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   },
   {
@@ -97,10 +97,10 @@
       "architecture": null,
       "deviceName": "KFSUWI",
       "marketingName": "Fire HD 10 (2017)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -113,17 +113,17 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "5.0.0",
+      "manufacturer": "Amazon",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "12.11.3.1204",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "57.0.2987.108",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

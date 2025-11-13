@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "S40",
       "marketingName": "Cat S40",
-      "manufacturer": "caterpillar",
-      "brand": "caterpillar",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 960,
         "height": 540,
@@ -26,7 +26,7 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "43.0.2357.130",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

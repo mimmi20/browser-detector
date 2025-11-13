@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "GR500",
       "marketingName": "Xenon",
-      "manufacturer": "lg",
-      "brand": "lg",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone",
@@ -26,7 +26,7 @@
       "name": "Bada",
       "marketingName": "Bada",
       "version": "1.0.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "bits": null
     },
     "client": {
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

@@ -1,14 +1,59 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; SM-A307FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaApp_Android/20.114.0 YaSearchBrowser/20.114.0 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A307FN",
+      "marketingName": "Galaxy A30s (Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "20.114.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.198",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; SM-A750FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 YaApp_Android/20.84.1 YaSearchBrowser/20.84.1 BroPP/1.0 SA/1 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "SM-A750FN",
       "marketingName": "Galaxy A7 (2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -26,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "20.84.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.135",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,8 +97,8 @@
       "architecture": null,
       "deviceName": "SM-A305FN",
       "marketingName": "Galaxy A30",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -71,14 +116,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "20.114.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "86.0.4240.198",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -97,8 +142,8 @@
       "architecture": null,
       "deviceName": "SM-A205FN",
       "marketingName": "Galaxy A20 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -116,14 +161,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "21.5.6.56.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +176,7 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.216",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -142,8 +187,8 @@
       "architecture": null,
       "deviceName": "SM-M325FV",
       "marketingName": "Galaxy M32",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -161,14 +206,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.51.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +221,7 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.216",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -187,8 +232,8 @@
       "architecture": null,
       "deviceName": "SM-A320F",
       "marketingName": "Galaxy A3 (2017)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -206,14 +251,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "21.5.6.56.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +266,7 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.216",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -232,8 +277,8 @@
       "architecture": null,
       "deviceName": "SM-A225F",
       "marketingName": "Galaxy A22 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -251,14 +296,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.81.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -266,7 +311,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.159",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -277,8 +322,8 @@
       "architecture": null,
       "deviceName": "SM-M625F",
       "marketingName": "Galaxy M62 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -296,14 +341,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.81.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,7 +356,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.159",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -322,8 +367,8 @@
       "architecture": null,
       "deviceName": "SM-G988W",
       "marketingName": "Galaxy S20 Ultra 5G (Canada)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -341,14 +386,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "20.11.2.69.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -356,7 +401,7 @@
     "engine": {
       "name": "Blink",
       "version": "86.0.4240.198",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -367,8 +412,8 @@
       "architecture": null,
       "deviceName": "SM-G973N",
       "marketingName": "Galaxy S10",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -386,14 +431,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.80.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +446,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.131",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -412,8 +457,8 @@
       "architecture": null,
       "deviceName": "SM-G9730",
       "marketingName": "Galaxy S10 (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -431,14 +476,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.80.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,7 +491,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.131",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -457,8 +502,8 @@
       "architecture": null,
       "deviceName": "SM-G780G",
       "marketingName": "Galaxy S20 FE 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -476,14 +521,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.81.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -491,7 +536,7 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.159",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -502,8 +547,8 @@
       "architecture": null,
       "deviceName": "SM-A7050",
       "marketingName": "Galaxy A70 (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -521,14 +566,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.90.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +581,7 @@
     "engine": {
       "name": "Blink",
       "version": "93.0.4577.82",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -547,8 +592,8 @@
       "architecture": null,
       "deviceName": "SM-G610Y",
       "marketingName": "Galaxy J7 Prime (Taiwan, Philippines)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -566,14 +611,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.110.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +626,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -592,8 +637,8 @@
       "architecture": null,
       "deviceName": "SM-A605K",
       "marketingName": "Galaxy A6 Plus (2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -611,14 +656,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "21.114.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +671,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -637,8 +682,8 @@
       "architecture": null,
       "deviceName": "SM-A125N",
       "marketingName": "Galaxy A12 (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -656,14 +701,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "21.11.5.121.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +716,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -682,8 +727,8 @@
       "architecture": null,
       "deviceName": "SM-A515F",
       "marketingName": "Galaxy A51 4G (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -701,14 +746,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "9.20.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -716,7 +761,7 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.91",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -727,8 +772,8 @@
       "architecture": null,
       "deviceName": "SM-G780F",
       "marketingName": "Galaxy S20 FE 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -746,14 +791,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.3.0.303.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -761,7 +806,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.102",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -772,8 +817,8 @@
       "architecture": null,
       "deviceName": "SM-E426B",
       "marketingName": "Galaxy F42 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -791,14 +836,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.32.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -806,7 +851,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.132",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -817,8 +862,8 @@
       "architecture": null,
       "deviceName": "SM-A205GN",
       "marketingName": "Galaxy A20 (Philippines, Hong Kong, Taiwan)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -836,14 +881,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "9.99.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +896,7 @@
     "engine": {
       "name": "Blink",
       "version": "75.0.3770.101",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -862,8 +907,8 @@
       "architecture": null,
       "deviceName": "SM-G928K",
       "marketingName": "Galaxy S6 Edge Plus",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -881,14 +926,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.35.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +941,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -907,8 +952,8 @@
       "architecture": null,
       "deviceName": "SM-G928F",
       "marketingName": "Galaxy S6 Edge Plus LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -926,14 +971,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.36.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +986,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -952,8 +997,8 @@
       "architecture": null,
       "deviceName": "SM-G928C",
       "marketingName": "Galaxy S6 Edge Plus",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -971,14 +1016,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.36.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -986,7 +1031,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -997,8 +1042,8 @@
       "architecture": null,
       "deviceName": "SM-M105G",
       "marketingName": "Galaxy M10 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1016,14 +1061,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.3.6.61.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +1076,7 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1042,8 +1087,8 @@
       "architecture": null,
       "deviceName": "SM-A505FN",
       "marketingName": "Galaxy A50",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1061,14 +1106,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.34.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +1121,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4871.81",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1094,9 +1139,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A715F",
-      "marketingName": "Galaxy A71 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy A71 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1114,14 +1159,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1129,7 +1174,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1139,9 +1184,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A715F",
-      "marketingName": "Galaxy A71 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy A71 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1159,14 +1204,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.50.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1174,52 +1219,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; SM-F900U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 YaApp_Android/22.72.1 YaSearchBrowser/22.72.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-F900U1",
-      "marketingName": "Galaxy Fold 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2152,
-        "height": 1536,
-        "touch": true,
-        "size": 7.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "22.72.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "102.0.5005.134",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1230,8 +1230,8 @@
       "architecture": null,
       "deviceName": "SM-G935K",
       "marketingName": "Galaxy S7 Edge",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1249,14 +1249,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.7.2.89.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1264,7 +1264,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.134",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1275,8 +1275,8 @@
       "architecture": null,
       "deviceName": "SM-A125F",
       "marketingName": "Galaxy A12",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1294,14 +1294,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.5.0.168.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1309,7 +1309,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1320,8 +1320,8 @@
       "architecture": null,
       "deviceName": "SM-N915S",
       "marketingName": "Galaxy Note Edge (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1339,14 +1339,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.14.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1354,7 +1354,7 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.174",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1365,8 +1365,8 @@
       "architecture": null,
       "deviceName": "SM-N915P",
       "marketingName": "Galaxy Note Edge (Sprint)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1384,14 +1384,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "19.9.1.126.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1399,7 +1399,7 @@
     "engine": {
       "name": "Blink",
       "version": "76.0.3809.132",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1410,8 +1410,8 @@
       "architecture": null,
       "deviceName": "SM-N915L",
       "marketingName": "Galaxy Note Edge (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1429,14 +1429,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "19.12.3.101.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1444,7 +1444,7 @@
     "engine": {
       "name": "Blink",
       "version": "78.0.3904.108",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1455,8 +1455,8 @@
       "architecture": null,
       "deviceName": "SM-N915K",
       "marketingName": "Galaxy Note Edge (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1474,14 +1474,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "19.10.4.187.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1489,7 +1489,7 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.120",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1500,8 +1500,8 @@
       "architecture": null,
       "deviceName": "SM-N915G",
       "marketingName": "Galaxy Note Edge (Singapore, Australia, Spain)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1519,14 +1519,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.70.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1534,7 +1534,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1545,8 +1545,8 @@
       "architecture": null,
       "deviceName": "SM-N915F",
       "marketingName": "Galaxy Note Edge",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1564,14 +1564,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "20.9.3.85.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1579,7 +1579,7 @@
     "engine": {
       "name": "Blink",
       "version": "85.0.4183.127",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1590,8 +1590,8 @@
       "architecture": null,
       "deviceName": "SCH-I545",
       "marketingName": "Galaxy S4 LTE (Verizon), White Frost 16GB",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1609,14 +1609,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.0.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "21.11.7.74.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1624,7 +1624,7 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1635,8 +1635,8 @@
       "architecture": null,
       "deviceName": "SM-M236L",
       "marketingName": "Galaxy M23 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1654,14 +1654,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "22.94.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1669,7 +1669,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.114",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1680,8 +1680,8 @@
       "architecture": null,
       "deviceName": "SM-A135N",
       "marketingName": "Galaxy A13 (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1699,14 +1699,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.9.5.73.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1714,7 +1714,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.124",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1724,9 +1724,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-G975F",
-      "marketingName": "Galaxy S10 Plus Dual SIM (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S10+ Dual SIM (Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1744,14 +1744,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.9.1.98.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1759,7 +1759,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.102",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1770,8 +1770,8 @@
       "architecture": null,
       "deviceName": "SM-G990E",
       "marketingName": "Galaxy S21 FE 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1789,14 +1789,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.9.1.98.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1804,7 +1804,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.102",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1815,8 +1815,8 @@
       "architecture": null,
       "deviceName": "SM-G970F",
       "marketingName": "Galaxy S10e (Europe, Latin America)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1834,14 +1834,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.11.3.89.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1849,7 +1849,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1860,8 +1860,8 @@
       "architecture": null,
       "deviceName": "SM-A505F",
       "marketingName": "Galaxy A50",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1879,14 +1879,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.11.3.85.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1894,7 +1894,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1905,8 +1905,8 @@
       "architecture": null,
       "deviceName": "SM-G973X",
       "marketingName": "Galaxy S10",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1924,14 +1924,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "22.9.3.82.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1939,7 +1939,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.114",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1950,8 +1950,8 @@
       "architecture": null,
       "deviceName": "SM-A145F",
       "marketingName": "Galaxy A14 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1969,14 +1969,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.16.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1984,7 +1984,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1995,8 +1995,8 @@
       "architecture": null,
       "deviceName": "SM-S901B",
       "marketingName": "Galaxy S22 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2014,14 +2014,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.3.4.84.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2029,7 +2029,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2040,8 +2040,8 @@
       "architecture": null,
       "deviceName": "SM-A546E",
       "marketingName": "Galaxy A54 5G (Asia/Africa)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2059,14 +2059,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.31.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2074,7 +2074,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2085,8 +2085,8 @@
       "architecture": null,
       "deviceName": "SM-A346E",
       "marketingName": "Galaxy A34 5G (Asia/Africa)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2104,14 +2104,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.33.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2119,7 +2119,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2130,8 +2130,8 @@
       "architecture": null,
       "deviceName": "SM-A146P",
       "marketingName": "Galaxy A14 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2149,14 +2149,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.34.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2164,7 +2164,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2175,8 +2175,8 @@
       "architecture": null,
       "deviceName": "SM-A145R",
       "marketingName": "Galaxy A14 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2194,14 +2194,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.31.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2209,7 +2209,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2219,9 +2219,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S9160",
-      "marketingName": "Galaxy S23 Plus (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S23+ (China)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2239,14 +2239,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.5.0.256.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2254,7 +2254,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2265,8 +2265,8 @@
       "architecture": null,
       "deviceName": "SM-A5460",
       "marketingName": "Galaxy A54 5G (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2284,14 +2284,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.5.1.73.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2299,7 +2299,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2310,8 +2310,8 @@
       "architecture": null,
       "deviceName": "SM-A136B",
       "marketingName": "Galaxy A13 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2329,14 +2329,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.7.0.271.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2344,7 +2344,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2356,8 +2356,8 @@
       "architecture": null,
       "deviceName": "SM-A032F",
       "marketingName": "Galaxy A03 Core",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2375,14 +2375,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2390,7 +2390,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.131",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2401,8 +2401,8 @@
       "architecture": null,
       "deviceName": "SM-G780G",
       "marketingName": "Galaxy S20 FE 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2420,14 +2420,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.9.7.83.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2435,7 +2435,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.83",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2446,8 +2446,8 @@
       "architecture": null,
       "deviceName": "SM-G998N",
       "marketingName": "Galaxy S21 Ultra 5G (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2465,14 +2465,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.9.9.29.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2480,7 +2480,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.29",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2491,8 +2491,8 @@
       "architecture": null,
       "deviceName": "SM-S711B",
       "marketingName": "Galaxy S23 FE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2510,14 +2510,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.111.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2525,7 +2525,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.652",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2536,8 +2536,8 @@
       "architecture": null,
       "deviceName": "SM-S236DL",
       "marketingName": "Galaxy A23 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2555,14 +2555,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.99.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2570,7 +2570,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.64",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2581,8 +2581,8 @@
       "architecture": null,
       "deviceName": "SM-S146VL",
       "marketingName": "Galaxy A14 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2600,14 +2600,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.11.0.232.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2615,7 +2615,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.232",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2626,8 +2626,8 @@
       "architecture": null,
       "deviceName": "SM-M346B1",
       "marketingName": "Galaxy M34 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2645,14 +2645,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.110.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2660,7 +2660,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.2332",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2671,8 +2671,8 @@
       "architecture": null,
       "deviceName": "SM-M346B",
       "marketingName": "Galaxy M34 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2690,14 +2690,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.11.0.232.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2705,7 +2705,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.232",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2716,8 +2716,8 @@
       "architecture": null,
       "deviceName": "SM-A055F",
       "marketingName": "Galaxy A05 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2735,14 +2735,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.9.9.29.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2750,7 +2750,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.29",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2761,8 +2761,8 @@
       "architecture": null,
       "deviceName": "SM-A057F",
       "marketingName": "Galaxy A05s",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2780,14 +2780,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.99.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2795,7 +2795,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.64",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2806,8 +2806,8 @@
       "architecture": null,
       "deviceName": "SM-A146U1",
       "marketingName": "Galaxy A14 5G (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2825,14 +2825,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.96.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2840,7 +2840,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.1159",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2851,8 +2851,8 @@
       "architecture": null,
       "deviceName": "SM-A146W",
       "marketingName": "Galaxy A14 5G (Canada)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2870,14 +2870,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.110.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2885,7 +2885,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.2332",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2896,8 +2896,8 @@
       "architecture": null,
       "deviceName": "SM-A245N",
       "marketingName": "Galaxy A24 4G (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2915,14 +2915,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.9.9.29.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2930,7 +2930,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.29",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2941,8 +2941,8 @@
       "architecture": null,
       "deviceName": "SM-A3460",
       "marketingName": "Galaxy A34 5G (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2960,14 +2960,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.99.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2975,7 +2975,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.64",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2986,8 +2986,8 @@
       "architecture": null,
       "deviceName": "SM-A346N",
       "marketingName": "Galaxy A34 5G (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3005,14 +3005,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.78.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3020,7 +3020,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3030,9 +3030,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S906B",
-      "marketingName": "Galaxy S22 Plus 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S22+ 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3050,14 +3050,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "23.11.4.83.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3065,7 +3065,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.83",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3076,8 +3076,8 @@
       "architecture": null,
       "deviceName": "SM-A356E",
       "marketingName": "Galaxy A35 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3095,14 +3095,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.19.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3110,7 +3110,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.323",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3121,8 +3121,8 @@
       "architecture": null,
       "deviceName": "SM-A556E",
       "marketingName": "Galaxy A55 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3140,14 +3140,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.98.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3155,7 +3155,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3166,8 +3166,8 @@
       "architecture": null,
       "deviceName": "SM-A155F",
       "marketingName": "Galaxy A15",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3185,14 +3185,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser Lite",
       "modus": null,
       "version": "24.1.1.23",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3200,7 +3200,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6312.40",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3211,8 +3211,8 @@
       "architecture": null,
       "deviceName": "SM-M236B",
       "marketingName": "Galaxy M23 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3230,14 +3230,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.40.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3245,7 +3245,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.2335",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3256,8 +3256,8 @@
       "architecture": null,
       "deviceName": "SM-S9280",
       "marketingName": "Galaxy S24 Ultra (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3275,14 +3275,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.19.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3290,7 +3290,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.323",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3301,8 +3301,8 @@
       "architecture": null,
       "deviceName": "SM-A426N",
       "marketingName": "Galaxy A42 5G (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3320,14 +3320,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.0.292.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3335,97 +3335,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.292",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; SM-F907B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.324 YaApp_Android/24.19/apad YaSearchBrowser/24.19/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-F907B",
-      "marketingName": "Galaxy Fold 5G (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2152,
-        "height": 1536,
-        "touch": true,
-        "size": 7.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "24.19.0",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.6099.324",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; SM-F916B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.39 YaBrowser/24.4.7.39.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-F916B",
-      "marketingName": "Galaxy Z Fold2 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2208,
-        "height": 1768,
-        "touch": true,
-        "size": 7.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "24.4.7.39.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "122.0.6261.39",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3436,8 +3346,8 @@
       "architecture": null,
       "deviceName": "SM-M115F",
       "marketingName": "Galaxy M11",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3455,14 +3365,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.19.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3470,7 +3380,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.324",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3481,8 +3391,8 @@
       "architecture": null,
       "deviceName": "SM-A4260",
       "marketingName": "Galaxy A42 5G (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3500,14 +3410,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.19.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3515,7 +3425,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.324",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3526,8 +3436,8 @@
       "architecture": null,
       "deviceName": "SM-S156V",
       "marketingName": "Galaxy A15 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3545,14 +3455,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.0.308.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3560,7 +3470,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.308",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3571,8 +3481,8 @@
       "architecture": null,
       "deviceName": "SM-A805F",
       "marketingName": "Galaxy A80 (2019)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3590,14 +3500,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.43.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3605,7 +3515,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.702",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3616,8 +3526,8 @@
       "architecture": null,
       "deviceName": "SM-M346B2",
       "marketingName": "Galaxy M34 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3635,14 +3545,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.7.39.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3650,7 +3560,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.39",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3660,9 +3570,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-C5560",
-      "marketingName": "Galaxy C55 (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy C55 5G (China)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3680,14 +3590,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.45.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3695,7 +3605,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.447",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3706,8 +3616,8 @@
       "architecture": null,
       "deviceName": "SM-A5560",
       "marketingName": "Galaxy A55 5G (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3725,14 +3635,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.7.39.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3740,7 +3650,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.39",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3751,8 +3661,8 @@
       "architecture": null,
       "deviceName": "SM-A546S",
       "marketingName": "Galaxy A54 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3770,14 +3680,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.47.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3785,7 +3695,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.71",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3796,8 +3706,8 @@
       "architecture": null,
       "deviceName": "SM-A155N",
       "marketingName": "Galaxy A15",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3815,14 +3725,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.46.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3830,7 +3740,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.121",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3840,9 +3750,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-E146B",
-      "marketingName": "Galaxy F14 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy F14 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3860,14 +3770,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.4.7.39.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3875,7 +3785,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.39",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3886,8 +3796,8 @@
       "architecture": null,
       "deviceName": "SM-G977P",
       "marketingName": "Galaxy S10 5G (Sprint)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3905,14 +3815,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.47.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3920,7 +3830,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.81",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3931,8 +3841,8 @@
       "architecture": null,
       "deviceName": "SM-M536B",
       "marketingName": "Galaxy M53 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3950,14 +3860,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.92.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3965,7 +3875,7 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.761",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3976,8 +3886,8 @@
       "architecture": null,
       "deviceName": "SM-A245M",
       "marketingName": "Galaxy A24 4G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -3995,14 +3905,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.7.0.303.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4010,52 +3920,7 @@
     "engine": {
       "name": "Blink",
       "version": "126.0.6478.303",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; KINGKONG ACE 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.740 YaSearchBrowser/24.72.1 BroPP/1.0 YaSearchApp/24.72.1 webOmni SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S5830",
-      "marketingName": "Galaxy Ace",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "24.72.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "126.0.6478.740",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4066,8 +3931,8 @@
       "architecture": null,
       "deviceName": "SM-G991B",
       "marketingName": "Galaxy S21 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -4085,14 +3950,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.19.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4100,7 +3965,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.324",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4111,8 +3976,8 @@
       "architecture": null,
       "deviceName": "SM-A920F",
       "marketingName": "Galaxy A9 (2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -4130,14 +3995,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.10.1.112.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4145,7 +4010,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.112",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4156,8 +4021,8 @@
       "architecture": null,
       "deviceName": "SC-51D",
       "marketingName": "Galaxy S23 5G UW",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -4175,14 +4040,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.10.2.123.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4190,52 +4055,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.123",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-W9024) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.2608 YaSearchBrowser/24.100.1 BroPP/1.0 YaSearchApp/24.100.1 webOmni SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-W9024",
-      "marketingName": "W24 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2176,
-        "height": 1812,
-        "touch": true,
-        "size": 7.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "24.100.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "128.0.6613.2608",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4246,8 +4066,8 @@
       "architecture": null,
       "deviceName": "SM-G736U",
       "marketingName": "Galaxy Xcover 6 Pro (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -4265,14 +4085,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser",
       "modus": null,
       "version": "24.10.2.125.00",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4280,7 +4100,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4291,8 +4111,8 @@
       "architecture": null,
       "deviceName": "SM-S711N",
       "marketingName": "Galaxy S23 FE (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4310,14 +4130,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.100.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4325,7 +4145,7 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.2566",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4336,8 +4156,8 @@
       "architecture": null,
       "deviceName": "SM-A256N",
       "marketingName": "Galaxy A25 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4355,14 +4175,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.65.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4370,7 +4190,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.503",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4381,8 +4201,8 @@
       "architecture": null,
       "deviceName": "SM-A256U1",
       "marketingName": "Galaxy A25 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4400,14 +4220,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.43.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4415,7 +4235,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.991",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4426,8 +4246,8 @@
       "architecture": null,
       "deviceName": "SM-A3560",
       "marketingName": "Galaxy A35 5G (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -4445,14 +4265,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "24.43.1",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4460,7 +4280,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.702",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -4471,8 +4291,8 @@
       "architecture": null,
       "deviceName": "SM-J701F",
       "marketingName": "Galaxy J7 Nxt Duos (2017, India)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -4490,14 +4310,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "10.61.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4505,7 +4325,187 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-S921B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.107 YaBrowser/25.4.2.107.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S921B",
+      "marketingName": "Galaxy S24",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.4.2.107.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.107",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-A510F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 YaApp_Android/10.61 YaSearchBrowser/10.61"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A510F",
+      "marketingName": "Galaxy A5 LTE (2016, Europe)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "10.61.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-J260F Build/M1AJB) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36 YaApp_Android/10.51 YaSearchBrowser/10.51"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-J260F",
+      "marketingName": "Galaxy J2 Core (Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "10.51.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.117",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 9; SM-J400F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaApp_Android/10.63 YaSearchBrowser/10.63 BroPP/1.0 SA/1 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-J400F",
+      "marketingName": "Galaxy J4 (2018)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "10.63.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.117",
+      "manufacturer": "Google"
     }
   }
 ]

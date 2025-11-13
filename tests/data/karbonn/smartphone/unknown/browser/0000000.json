@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "A1+",
       "marketingName": "A1+",
-      "manufacturer": "karbonn",
-      "brand": "karbonn",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -52,10 +52,10 @@
       "architecture": null,
       "deviceName": "A2",
       "marketingName": "A2",
-      "manufacturer": "karbonn",
-      "brand": "karbonn",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 800,
         "height": 480,
@@ -71,7 +71,7 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.6",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

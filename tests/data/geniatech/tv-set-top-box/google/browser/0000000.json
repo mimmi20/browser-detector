@@ -9,8 +9,8 @@
       "marketingName": "MX Enjoy TV BOX",
       "manufacturer": "geniatech",
       "brand": "geniatech",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.1.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "41.0.2272.96",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "41.0.2272.96",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

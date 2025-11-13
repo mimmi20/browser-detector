@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "general Walton device",
       "marketingName": "general Walton device",
-      "manufacturer": "walton",
-      "brand": "walton",
+      "manufacturer": "Walton",
+      "brand": "Walton",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "13.7.8.1322",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.58",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

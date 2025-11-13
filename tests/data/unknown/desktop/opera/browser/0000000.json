@@ -10,7 +10,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "11.64.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -55,7 +55,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -69,16 +69,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.16.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -100,7 +100,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -116,14 +116,14 @@
       "name": "Windows NT",
       "marketingName": "Windows 2000",
       "version": "5.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.0.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -132,51 +132,6 @@
       "name": "Elektra",
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Windows NT 6.0; Edition Next) Presto/2.12 Version/12.10"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.10.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.0",
-      "manufacturer": "opera"
     }
   },
   {
@@ -190,7 +145,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -206,14 +161,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "8.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "11.52.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -221,7 +176,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.9.168",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -235,7 +190,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -251,14 +206,14 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.01.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -280,7 +235,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -296,14 +251,14 @@
       "name": "Windows ME",
       "marketingName": "Windows ME",
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -311,52 +266,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera 9.4 (Windows NT 5.3; U; en)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 5.3",
-      "marketingName": "Windows XP",
-      "version": "5.3.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.4.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -370,7 +280,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -386,14 +296,14 @@
       "name": "Windows 98",
       "marketingName": "Windows 98",
       "version": "98.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "8.0.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,7 +311,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -415,7 +325,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -431,14 +341,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.8.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -460,7 +370,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -476,14 +386,14 @@
       "name": "Windows 3.1",
       "marketingName": "Windows 3.1",
       "version": "3.1.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -505,7 +415,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -528,7 +438,7 @@
       "name": "Opera",
       "modus": null,
       "version": "12.16.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -536,7 +446,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -550,7 +460,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -566,14 +476,14 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": "14.10.0",
-      "manufacturer": "canonical",
+      "manufacturer": "Canonical",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.16.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -581,7 +491,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -595,7 +505,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -611,14 +521,14 @@
       "name": "Debian",
       "marketingName": "Debian",
       "version": null,
-      "manufacturer": "software-in-the-public-interest",
+      "manufacturer": "Software in the Public Interest",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "36.0.2079.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -626,7 +536,7 @@
     "engine": {
       "name": "Blink",
       "version": "46.0.2471.2",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -640,7 +550,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -656,14 +566,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.16.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -671,7 +581,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -685,7 +595,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -701,14 +611,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.8.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -730,7 +640,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -753,7 +663,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -775,7 +685,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -791,14 +701,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "4.7.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -820,7 +730,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -833,17 +743,17 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT 6.0",
+      "name": "Windows NT",
       "marketingName": "Windows Vista",
       "version": "6.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "10.00.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -851,7 +761,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.4.18",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -865,7 +775,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -881,14 +791,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "8.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.10.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -896,7 +806,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -910,7 +820,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -924,16 +834,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera Neon",
       "modus": null,
       "version": "1.0.2459.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -941,7 +851,7 @@
     "engine": {
       "name": "Blink",
       "version": "53.0.2785.21",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -955,7 +865,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -971,14 +881,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "5.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.12.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1000,7 +910,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1016,14 +926,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.23.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1031,7 +941,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1045,7 +955,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1061,14 +971,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.23.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1076,7 +986,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1090,7 +1000,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1106,14 +1016,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.23.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1121,7 +1031,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1135,7 +1045,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1151,14 +1061,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.23.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1166,7 +1076,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1180,7 +1090,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1196,14 +1106,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.50.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1211,7 +1121,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1225,7 +1135,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1241,14 +1151,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.50.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1256,7 +1166,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1270,7 +1180,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1286,14 +1196,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.50.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1301,7 +1211,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1315,7 +1225,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1331,14 +1241,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.51.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1346,7 +1256,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1360,7 +1270,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1376,14 +1286,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.52.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1391,7 +1301,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1405,7 +1315,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1421,14 +1331,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.53.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1436,7 +1346,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1450,7 +1360,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1466,14 +1376,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.54.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1481,7 +1391,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1495,7 +1405,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1511,14 +1421,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.54.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1526,7 +1436,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1540,7 +1450,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1556,14 +1466,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.54.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1571,7 +1481,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1585,7 +1495,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1601,14 +1511,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "5.3.0-RC+2",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.12.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1630,7 +1540,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1646,14 +1556,14 @@
       "name": "Gentoo Linux",
       "marketingName": "Gentoo Linux",
       "version": null,
-      "manufacturer": "gentoo",
+      "manufacturer": "Gentoo",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1661,7 +1571,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1675,7 +1585,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1698,7 +1608,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.03.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1720,7 +1630,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1736,14 +1646,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "6.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "9.51.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1751,7 +1661,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1765,7 +1675,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1781,14 +1691,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "11.50.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1796,7 +1706,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.9.168",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1810,7 +1720,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1826,14 +1736,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "25.0.1614.68",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1841,7 +1751,7 @@
     "engine": {
       "name": "Blink",
       "version": "38.0.2125.111",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1855,7 +1765,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1871,14 +1781,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "27.0.1689.66",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1886,7 +1796,7 @@
     "engine": {
       "name": "Blink",
       "version": "40.0.2214.94",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1900,7 +1810,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1916,14 +1826,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.8.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1945,7 +1855,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1961,14 +1871,14 @@
       "name": "ChromeOS",
       "marketingName": "ChromeOS",
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "28.0.1750.40",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1976,7 +1886,7 @@
     "engine": {
       "name": "Blink",
       "version": "41.0.2272.76",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1990,7 +1900,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2006,14 +1916,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.23.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2021,7 +1931,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2035,7 +1945,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2051,14 +1961,14 @@
       "name": "Fedora Linux",
       "marketingName": "Fedora Linux",
       "version": "9.0.0",
-      "manufacturer": "redhat",
+      "manufacturer": "Redhat",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "10.00.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2066,7 +1976,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.0",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2080,7 +1990,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2096,14 +2006,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.8.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2125,7 +2035,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2141,14 +2051,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.23.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2156,7 +2066,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2170,7 +2080,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2186,14 +2096,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "5.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "8.51.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2201,7 +2111,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2215,7 +2125,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2231,14 +2141,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "6.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "9.01.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2246,7 +2156,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2260,7 +2170,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2283,7 +2193,7 @@
       "name": "Opera",
       "modus": null,
       "version": "9.01.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2291,7 +2201,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2305,7 +2215,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2321,14 +2231,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "9.24.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2336,7 +2246,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2350,7 +2260,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2366,14 +2276,14 @@
       "name": "OpenSolaris",
       "marketingName": "OpenSolaris",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "9.25.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2381,7 +2291,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2395,7 +2305,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2411,14 +2321,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "11.62.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2426,7 +2336,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.10.229",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2440,7 +2350,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2456,14 +2366,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2471,7 +2381,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2485,7 +2395,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2501,14 +2411,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "7.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "10.10.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2516,7 +2426,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.15",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2530,7 +2440,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2546,14 +2456,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.01.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2561,7 +2471,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.10.289",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2575,7 +2485,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2591,14 +2501,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "10.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2606,7 +2516,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.15",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2620,7 +2530,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2636,14 +2546,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "4.4.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2665,7 +2575,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2681,14 +2591,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.23.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2696,52 +2606,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Windows NT 5.1; U; Opera Mobi; en; CEB-29)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.80.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2755,7 +2620,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2771,14 +2636,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.1.0-dev",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.16.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2786,7 +2651,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2800,7 +2665,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2816,14 +2681,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "8.5.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2831,7 +2696,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2845,7 +2710,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2861,14 +2726,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "5.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "9.24.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2876,7 +2741,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2890,7 +2755,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2906,14 +2771,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.3.0-beta+3",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.16.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2921,7 +2786,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2935,7 +2800,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2951,14 +2816,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "8.4.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "10.20.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2966,7 +2831,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.15",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -2980,7 +2845,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2996,14 +2861,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "8.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.16.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3011,7 +2876,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3025,7 +2890,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3048,7 +2913,7 @@
       "name": "Opera",
       "modus": null,
       "version": "9.81.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3056,7 +2921,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3070,7 +2935,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3093,7 +2958,7 @@
       "name": "Opera",
       "modus": null,
       "version": "7.10.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3101,7 +2966,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3115,7 +2980,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3138,7 +3003,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.12.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3160,7 +3025,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3183,7 +3048,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3205,7 +3070,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3228,7 +3093,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3250,7 +3115,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3273,7 +3138,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.1.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3295,7 +3160,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3311,14 +3176,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.8.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3340,7 +3205,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3356,14 +3221,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "4.7.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3385,7 +3250,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3401,14 +3266,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "4.7.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "6.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3430,7 +3295,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3453,7 +3318,7 @@
       "name": "Opera",
       "modus": null,
       "version": "7.10.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3461,7 +3326,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3475,7 +3340,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3491,14 +3356,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.53.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3506,7 +3371,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3520,7 +3385,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3536,14 +3401,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "6.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "9.20.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3551,7 +3416,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3565,7 +3430,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3588,7 +3453,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.12.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3610,7 +3475,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3633,7 +3498,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3655,7 +3520,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3678,7 +3543,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.1.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3700,7 +3565,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3723,7 +3588,7 @@
       "name": "Opera",
       "modus": null,
       "version": "6.1.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3745,7 +3610,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3761,14 +3626,14 @@
       "name": "BeOS",
       "marketingName": "BeOS",
       "version": null,
-      "manufacturer": "access",
+      "manufacturer": "Access",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "3.62.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3790,7 +3655,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3806,14 +3671,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": null,
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "7.22.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3821,7 +3686,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3835,7 +3700,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3851,14 +3716,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.13.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3866,7 +3731,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3880,7 +3745,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3896,14 +3761,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.16.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3911,7 +3776,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3925,7 +3790,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3941,14 +3806,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.00.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3956,7 +3821,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.10.289",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -3970,7 +3835,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -3986,14 +3851,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "8.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.02.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4001,7 +3866,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.10.289",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4015,7 +3880,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4031,14 +3896,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.12.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4046,7 +3911,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4060,7 +3925,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4076,14 +3941,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "10.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4091,7 +3956,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.15",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4105,7 +3970,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4121,14 +3986,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "8.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "11.51.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4136,7 +4001,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.9.168",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4150,7 +4015,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4166,14 +4031,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "7.4.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "9.64.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4181,7 +4046,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.1.1",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4195,7 +4060,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4211,14 +4076,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.1.0-RC+1",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "12.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4226,7 +4091,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4240,7 +4105,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4256,14 +4121,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "10.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4271,7 +4136,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.15",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4285,7 +4150,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4301,14 +4166,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "6.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "10.10.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4316,7 +4181,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.15",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4330,7 +4195,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4344,16 +4209,16 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
+      "marketingName": "Windows 7",
       "version": "7.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "10.00.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4361,7 +4226,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.4.18",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4375,7 +4240,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4391,14 +4256,14 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": null,
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "10.01.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4406,7 +4271,7 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4420,7 +4285,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4443,7 +4308,7 @@
       "name": "Opera",
       "modus": null,
       "version": "10.11.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4451,7 +4316,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.15",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -4465,7 +4330,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -4481,14 +4346,14 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Opera",
       "modus": null,
       "version": "11.64.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -4496,7 +4361,142 @@
     "engine": {
       "name": "Presto",
       "version": "2.10.229",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (X11; FreeBSD 8.2-RELEASE-p4 amd64; U; en) Presto/2.9.168 Version/11.51"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "8.2.0",
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.51.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.9.168",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (X11; FreeBSD 9.0-RELEASE-p2 amd64; U; de) Presto/2.10.289 Version/12.00"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "9.0.0",
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.00.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.289",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (X11; FreeBSD 9.0-RELEASE-p1 amd64; U; de) Presto/2.9.168 Version/11.50"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "9.0.0",
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.50.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.9.168",
+      "manufacturer": "Opera"
     }
   }
 ]

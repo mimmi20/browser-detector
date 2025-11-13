@@ -15,24 +15,12 @@ namespace BrowserDetector\Data;
 
 interface CompanyInterface
 {
-    /**
-     * Returns the name of the company
-     *
-     * @throws void
-     */
+    /** @throws void */
     public function getName(): string | null;
 
-    /**
-     * Returns the name of the company
-     *
-     * @throws void
-     */
+    /** @throws void */
     public function getBrandname(): string | null;
 
-    /**
-     * Returns the name of the company
-     *
-     * @throws void
-     */
+    /** @throws void */
     public function getKey(): string;
 }

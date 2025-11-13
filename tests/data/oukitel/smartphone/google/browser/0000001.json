@@ -1,14 +1,59 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; WP23 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.71 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "WP23",
+      "marketingName": "WP23",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "129.0.6668.71",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.6668.71",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; WP32 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.100 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "WP32",
       "marketingName": "WP32",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -26,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "129.0.6668.100",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "129.0.6668.100",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,8 +97,8 @@
       "architecture": null,
       "deviceName": "C51",
       "marketingName": "C51",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -71,14 +116,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "129.0.6668.100",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +131,7 @@
     "engine": {
       "name": "Blink",
       "version": "129.0.6668.100",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -105,8 +150,8 @@
       "architecture": null,
       "deviceName": "WP23",
       "marketingName": "WP23",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -124,14 +169,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "131.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -139,7 +184,7 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -150,8 +195,8 @@
       "architecture": null,
       "deviceName": "C38",
       "marketingName": "C38",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -169,14 +214,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "131.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -184,7 +229,7 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -195,8 +240,8 @@
       "architecture": null,
       "deviceName": "WP5 Pro",
       "marketingName": "WP5 Pro",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -214,14 +259,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "131.0.6778.260",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -229,7 +274,7 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.6778.260",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -248,8 +293,8 @@
       "architecture": null,
       "deviceName": "C36",
       "marketingName": "C36",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -267,14 +312,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "133.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -282,7 +327,7 @@
     "engine": {
       "name": "Blink",
       "version": "133.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -293,8 +338,8 @@
       "architecture": null,
       "deviceName": "WP5",
       "marketingName": "WP5",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -312,14 +357,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "132.0.6834.123",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -327,7 +372,7 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.123",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -338,8 +383,8 @@
       "architecture": null,
       "deviceName": "WP28",
       "marketingName": "WP28",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -357,14 +402,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "133.0.6943.137",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -372,7 +417,7 @@
     "engine": {
       "name": "Blink",
       "version": "133.0.6943.137",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -391,8 +436,8 @@
       "architecture": null,
       "deviceName": "WP32",
       "marketingName": "WP32",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -410,14 +455,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "135.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -425,7 +470,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -436,8 +481,8 @@
       "architecture": null,
       "deviceName": "WP35 S",
       "marketingName": "WP35 S",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -455,14 +500,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "134.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -470,7 +515,7 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -481,8 +526,8 @@
       "architecture": null,
       "deviceName": "WP55",
       "marketingName": "WP55",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -500,14 +545,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "137.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -515,7 +560,7 @@
     "engine": {
       "name": "Blink",
       "version": "137.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -526,8 +571,8 @@
       "architecture": null,
       "deviceName": "WP55",
       "marketingName": "WP55",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -545,14 +590,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "138.0.7204.67",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -560,7 +605,7 @@
     "engine": {
       "name": "Blink",
       "version": "138.0.7204.67",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -571,8 +616,8 @@
       "architecture": null,
       "deviceName": "WP35 Pro",
       "marketingName": "WP35 Pro",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -590,14 +635,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "138.0.7204.179",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -605,7 +650,7 @@
     "engine": {
       "name": "Blink",
       "version": "138.0.7204.179",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -616,8 +661,8 @@
       "architecture": null,
       "deviceName": "WP35",
       "marketingName": "WP35",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -635,14 +680,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "130.0.6723.58",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -650,7 +695,52 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.58",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; WP39 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "WP39",
+      "marketingName": "WP39",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "141.0.7390.122",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.7390.122",
+      "manufacturer": "Google"
     }
   }
 ]

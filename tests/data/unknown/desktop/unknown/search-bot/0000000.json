@@ -10,7 +10,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -26,7 +26,7 @@
       "name": "Linux",
       "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
@@ -55,7 +55,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -71,7 +71,7 @@
       "name": "Windows NT",
       "marketingName": "Windows XP",
       "version": "5.1.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -100,7 +100,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -116,7 +116,7 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -145,7 +145,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -161,7 +161,7 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "canonical",
+      "manufacturer": "Canonical",
       "bits": null
     },
     "client": {
@@ -190,7 +190,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -206,7 +206,7 @@
       "name": "Gentoo Linux",
       "marketingName": "Gentoo Linux",
       "version": null,
-      "manufacturer": "gentoo",
+      "manufacturer": "Gentoo",
       "bits": null
     },
     "client": {
@@ -235,7 +235,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -251,52 +251,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.3.0",
-      "manufacturer": "free-bsd-foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "YaCy Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "search-bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "yacybot (/global; x86 Windows Vista 6.0; java 1.8.0_45; Europe/de) http://yacy.net/bot.html"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -325,7 +280,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -341,7 +296,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -370,7 +325,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -386,7 +341,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -415,7 +370,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -431,7 +386,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -460,7 +415,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -476,7 +431,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -505,7 +460,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -521,7 +476,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -550,7 +505,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -566,7 +521,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -595,7 +550,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -611,7 +566,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -640,7 +595,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -656,7 +611,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -685,7 +640,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -701,7 +656,7 @@
       "name": "Windows 2003",
       "marketingName": "Windows 2003",
       "version": "2003.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -730,7 +685,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -746,7 +701,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -775,7 +730,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -791,7 +746,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -820,7 +775,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -836,7 +791,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -865,7 +820,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -881,7 +836,7 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.11.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
@@ -910,7 +865,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -926,7 +881,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -955,7 +910,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -971,7 +926,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1000,7 +955,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1016,7 +971,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1045,7 +1000,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1061,7 +1016,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1090,7 +1045,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1106,7 +1061,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1135,7 +1090,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1151,7 +1106,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1180,7 +1135,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1196,7 +1151,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "11.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1225,7 +1180,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1241,7 +1196,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "9.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1270,7 +1225,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1286,7 +1241,7 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.10.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
@@ -1315,7 +1270,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1360,7 +1315,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1376,7 +1331,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "8.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1405,7 +1360,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1421,7 +1376,7 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.11.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
@@ -1450,7 +1405,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1466,7 +1421,7 @@
       "name": "SunOS",
       "marketingName": "SunOS",
       "version": "5.11.0",
-      "manufacturer": "oracle",
+      "manufacturer": "Oracle",
       "bits": null
     },
     "client": {
@@ -1495,7 +1450,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1511,7 +1466,7 @@
       "name": "HP-UX",
       "marketingName": "HP-UX",
       "version": null,
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "bits": null
     },
     "client": {
@@ -1540,7 +1495,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1556,7 +1511,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "7.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1585,7 +1540,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1601,7 +1556,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "7.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1630,7 +1585,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1646,7 +1601,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "10.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1675,7 +1630,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1691,7 +1646,7 @@
       "name": "Debian",
       "marketingName": "Debian",
       "version": null,
-      "manufacturer": "software-in-the-public-interest",
+      "manufacturer": "Software in the Public Interest",
       "bits": null
     },
     "client": {
@@ -1720,7 +1675,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1736,7 +1691,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "11.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1765,7 +1720,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1781,7 +1736,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "11.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1810,7 +1765,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1826,7 +1781,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "13.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1855,7 +1810,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1871,7 +1826,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "12.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1900,7 +1855,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1916,7 +1871,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "12.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1945,7 +1900,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -1961,7 +1916,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "12.1.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -1990,7 +1945,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2006,7 +1961,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "12.2.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -2035,7 +1990,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2051,7 +2006,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "13.0.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
@@ -2080,7 +2035,7 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -2096,7 +2051,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "12.3.0",
-      "manufacturer": "free-bsd-foundation",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {

@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "KFDOWI",
       "marketingName": "Fire HD 8 (2017)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "7.2.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "59.0.3071.125",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -52,10 +52,10 @@
       "architecture": null,
       "deviceName": "KFMAWI",
       "marketingName": "Fire HD 10 (2019)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Samsung Browser",
       "modus": null,
       "version": "12.1.0",
-      "manufacturer": "samsung",
+      "manufacturer": "Samsung",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "79.0.3945.136",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

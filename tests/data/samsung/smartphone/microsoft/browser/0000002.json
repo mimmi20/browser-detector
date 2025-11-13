@@ -1,14 +1,59 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G736B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36 EdgA/106.0.1370.47"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G736B",
+      "marketingName": "Galaxy Xcover 6 Pro (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "106.0.1370.47",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-M526BR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36 EdgA/106.0.1370.37"
     },
     "device": {
       "architecture": null,
       "deviceName": "SM-M526BR",
       "marketingName": "Galaxy M52 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -26,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "106.0.1370.37",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +86,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -60,8 +105,8 @@
       "architecture": null,
       "deviceName": "SM-M205FN",
       "marketingName": "Galaxy M20 (Europe)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -79,14 +124,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "106.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -94,7 +139,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -108,8 +153,8 @@
       "architecture": null,
       "deviceName": "SM-M526BR",
       "marketingName": "Galaxy M52 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -127,14 +172,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "106.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -142,7 +187,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -160,8 +205,8 @@
       "architecture": null,
       "deviceName": "SM-G988B",
       "marketingName": "Galaxy S20 Ultra 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -179,14 +224,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "105.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -194,7 +239,7 @@
     "engine": {
       "name": "Blink",
       "version": "105.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -212,8 +257,8 @@
       "architecture": null,
       "deviceName": "SM-A127F",
       "marketingName": "Galaxy A12 (India)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -231,14 +276,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "105.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -246,7 +291,7 @@
     "engine": {
       "name": "Blink",
       "version": "105.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -264,8 +309,8 @@
       "architecture": null,
       "deviceName": "SM-G920F",
       "marketingName": "Galaxy S6 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -283,14 +328,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "104.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -298,7 +343,7 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.102",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -316,8 +361,8 @@
       "architecture": null,
       "deviceName": "SM-A217F",
       "marketingName": "Galaxy A21s (2020, International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -335,14 +380,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "103.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -350,7 +395,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.5060.134",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -361,8 +406,8 @@
       "architecture": null,
       "deviceName": "SM-G990B2",
       "marketingName": "Galaxy S21 FE 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -380,14 +425,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "107.0.1418.35",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -395,7 +440,7 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -413,8 +458,8 @@
       "architecture": null,
       "deviceName": "SM-A505FN",
       "marketingName": "Galaxy A50",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -432,14 +477,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "106.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -447,7 +492,7 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -458,8 +503,8 @@
       "architecture": null,
       "deviceName": "SM-A336B",
       "marketingName": "Galaxy A33 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -477,14 +522,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -492,7 +537,7 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.5304.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -502,9 +547,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S906B",
-      "marketingName": "Galaxy S22 Plus 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S22+ 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -522,14 +567,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -537,7 +582,7 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.5304.141",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -548,8 +593,8 @@
       "architecture": null,
       "deviceName": "SM-M625F",
       "marketingName": "Galaxy M62 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -567,14 +612,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -582,7 +627,7 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.5304.105",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -593,8 +638,8 @@
       "architecture": null,
       "deviceName": "SM-A127F",
       "marketingName": "Galaxy A12 (India)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -612,14 +657,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -627,7 +672,7 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.5304.105",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -638,8 +683,8 @@
       "architecture": null,
       "deviceName": "SM-M325FV",
       "marketingName": "Galaxy M32",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -657,14 +702,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -672,7 +717,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.5359.128",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -683,8 +728,8 @@
       "architecture": null,
       "deviceName": "SM-G525F",
       "marketingName": "Galaxy Xcover 5",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -702,14 +747,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "107.0.1418.62",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -717,7 +762,7 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -736,8 +781,8 @@
       "architecture": null,
       "deviceName": "SM-G990B",
       "marketingName": "Galaxy S21 FE 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -755,14 +800,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "108.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -770,7 +815,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -788,8 +833,8 @@
       "architecture": null,
       "deviceName": "SM-A207F",
       "marketingName": "Galaxy A20s (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -807,14 +852,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "108.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -822,7 +867,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -833,8 +878,8 @@
       "architecture": null,
       "deviceName": "SM-G950U1",
       "marketingName": "Galaxy S8 (US Unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -852,14 +897,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -867,7 +912,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.5414.118",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -878,8 +923,8 @@
       "architecture": null,
       "deviceName": "SM-A137F",
       "marketingName": "Galaxy A13",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -897,14 +942,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -912,7 +957,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.5414.118",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -930,8 +975,8 @@
       "architecture": null,
       "deviceName": "SM-G950F",
       "marketingName": "Galaxy S8 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -949,14 +994,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "109.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -964,7 +1009,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -978,8 +1023,8 @@
       "architecture": null,
       "deviceName": "SM-G770F",
       "marketingName": "Galaxy S10 Lite",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -997,14 +1042,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "109.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1012,7 +1057,7 @@
     "engine": {
       "name": "Blink",
       "version": "109.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1023,8 +1068,8 @@
       "architecture": null,
       "deviceName": "SM-S908U",
       "marketingName": "Galaxy S22 Ultra 5G (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1042,14 +1087,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "111.0.1661.48",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1057,7 +1102,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1067,9 +1112,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-G986B",
-      "marketingName": "Galaxy S20 Plus 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S20+ 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1087,14 +1132,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "113.0.1774.38",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1102,7 +1147,7 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1113,8 +1158,8 @@
       "architecture": null,
       "deviceName": "SM-S911B",
       "marketingName": "Galaxy S23 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1132,14 +1177,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "113.0.1774.38",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1147,7 +1192,7 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1158,8 +1203,8 @@
       "architecture": null,
       "deviceName": "SM-A236B",
       "marketingName": "Galaxy A23 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1177,14 +1222,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "113.0.1774.50",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1192,7 +1237,7 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1212,8 +1257,8 @@
       "architecture": null,
       "deviceName": "SM-G990B2",
       "marketingName": "Galaxy S21 FE 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1231,14 +1276,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "112.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1246,7 +1291,7 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1257,8 +1302,8 @@
       "architecture": null,
       "deviceName": "SM-S918B",
       "marketingName": "Galaxy S23 Ultra (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1276,14 +1321,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "114.0.1823.56",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1291,7 +1336,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1302,8 +1347,8 @@
       "architecture": null,
       "deviceName": "SM-A137F",
       "marketingName": "Galaxy A13",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1321,14 +1366,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "114.0.1823.82",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1336,7 +1381,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1347,8 +1392,8 @@
       "architecture": null,
       "deviceName": "SM-G398FN",
       "marketingName": "Galaxy Xcover 4s Dual SIM (2019, Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1366,14 +1411,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "113.0.1774.63",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1381,7 +1426,7 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1401,8 +1446,8 @@
       "architecture": null,
       "deviceName": "SM-S918B",
       "marketingName": "Galaxy S23 Ultra (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1420,14 +1465,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "114.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1435,7 +1480,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1446,8 +1491,8 @@
       "architecture": null,
       "deviceName": "SM-M325FV",
       "marketingName": "Galaxy M32",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1465,14 +1510,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "114.0.1823.74",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1480,7 +1525,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1500,8 +1545,8 @@
       "architecture": null,
       "deviceName": "SM-G930F",
       "marketingName": "Galaxy S7",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1519,14 +1564,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "114.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1534,7 +1579,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1554,8 +1599,8 @@
       "architecture": null,
       "deviceName": "SM-A105FN",
       "marketingName": "Galaxy A10",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1573,14 +1618,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "115.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1588,7 +1633,7 @@
     "engine": {
       "name": "Blink",
       "version": "115.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1607,8 +1652,8 @@
       "architecture": null,
       "deviceName": "SM-A520F",
       "marketingName": "Galaxy A5 (2017)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1626,14 +1671,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "111.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1641,7 +1686,7 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1660,8 +1705,8 @@
       "architecture": null,
       "deviceName": "SM-A525F",
       "marketingName": "Galaxy A52 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1679,14 +1724,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "117.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1694,7 +1739,7 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1713,9 +1758,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-G986B",
-      "marketingName": "Galaxy S20 Plus 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S20+ 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1733,14 +1778,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "117.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1748,7 +1793,7 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1768,8 +1813,8 @@
       "architecture": null,
       "deviceName": "SM-G925F",
       "marketingName": "Galaxy S6 Edge (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1787,14 +1832,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "118.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1802,7 +1847,7 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1813,8 +1858,8 @@
       "architecture": null,
       "deviceName": "SM-A145R",
       "marketingName": "Galaxy A14 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1832,14 +1877,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "114.0.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1847,7 +1892,7 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1858,8 +1903,8 @@
       "architecture": null,
       "deviceName": "SM-S918B",
       "marketingName": "Galaxy S23 Ultra (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1877,14 +1922,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1892,7 +1937,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.144",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1903,8 +1948,8 @@
       "architecture": null,
       "deviceName": "SM-A146P",
       "marketingName": "Galaxy A14 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1922,14 +1967,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "119.0.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1937,7 +1982,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1957,8 +2002,8 @@
       "architecture": null,
       "deviceName": "SM-S928B",
       "marketingName": "Galaxy S24 Ultra",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1976,14 +2021,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "121.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1991,7 +2036,7 @@
     "engine": {
       "name": "Blink",
       "version": "121.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2002,8 +2047,8 @@
       "architecture": null,
       "deviceName": "SM-A346B",
       "marketingName": "Galaxy A34 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2021,14 +2066,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "113.0.1774.63",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2036,7 +2081,7 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2046,9 +2091,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S916B",
-      "marketingName": "Galaxy S23 Plus (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy S23+ (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2066,14 +2111,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "119.0.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2081,7 +2126,7 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2092,8 +2137,8 @@
       "architecture": null,
       "deviceName": "SM-G750A",
       "marketingName": "Galaxy Mega 2 (AT&T)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2111,14 +2156,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "108.0.1462.42",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2126,7 +2171,7 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.1462.42",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2137,8 +2182,8 @@
       "architecture": null,
       "deviceName": "SM-G350",
       "marketingName": "Galaxy Star Advance",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2156,14 +2201,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "102.0.1245.53",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2171,7 +2216,7 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.1245.53",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2182,8 +2227,8 @@
       "architecture": null,
       "deviceName": "SM-A136B",
       "marketingName": "Galaxy A13 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2201,14 +2246,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge WebView",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2216,7 +2261,7 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.107",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2230,8 +2275,8 @@
       "architecture": null,
       "deviceName": "SM-G970F",
       "marketingName": "Galaxy S10e (Europe, Latin America)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2249,14 +2294,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "103.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2264,7 +2309,7 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.5060.114",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2274,9 +2319,9 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-G556B",
-      "marketingName": "Galaxy A35",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "marketingName": "Galaxy Xcover 7",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2294,14 +2339,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2309,7 +2354,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2320,8 +2365,8 @@
       "architecture": null,
       "deviceName": "SM-S926B",
       "marketingName": "Galaxy S24+",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2339,14 +2384,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2354,7 +2399,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2373,8 +2418,8 @@
       "architecture": null,
       "deviceName": "SM-A556B",
       "marketingName": "Galaxy A55 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2392,14 +2437,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "131.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2407,7 +2452,7 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2426,8 +2471,8 @@
       "architecture": null,
       "deviceName": "SM-A136B",
       "marketingName": "Galaxy A13 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2445,14 +2490,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "133.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2460,7 +2505,7 @@
     "engine": {
       "name": "Blink",
       "version": "133.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2471,8 +2516,8 @@
       "architecture": null,
       "deviceName": "SM-S938B",
       "marketingName": "Galaxy S25 Ultra 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2490,14 +2535,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2505,7 +2550,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2516,8 +2561,8 @@
       "architecture": null,
       "deviceName": "SM-S928B",
       "marketingName": "Galaxy S24 Ultra",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2535,14 +2580,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2550,7 +2595,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2561,8 +2606,8 @@
       "architecture": null,
       "deviceName": "SM-S921B",
       "marketingName": "Galaxy S24",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2580,14 +2625,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2595,7 +2640,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2606,8 +2651,8 @@
       "architecture": null,
       "deviceName": "SM-A156B",
       "marketingName": "Galaxy A15 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2625,14 +2670,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2640,7 +2685,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2651,8 +2696,8 @@
       "architecture": null,
       "deviceName": "SM-S931B",
       "marketingName": "Galaxy S25 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2670,14 +2715,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2685,7 +2730,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2696,8 +2741,8 @@
       "architecture": null,
       "deviceName": "SM-A546B",
       "marketingName": "Galaxy A54 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2715,14 +2760,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2730,7 +2775,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2741,8 +2786,8 @@
       "architecture": null,
       "deviceName": "SM-A556B",
       "marketingName": "Galaxy A55 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2760,14 +2805,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2775,7 +2820,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2786,8 +2831,8 @@
       "architecture": null,
       "deviceName": "SM-G781U1",
       "marketingName": "Galaxy S20 FE 5G (USA unlocked)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2805,14 +2850,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2820,7 +2865,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2839,8 +2884,8 @@
       "architecture": null,
       "deviceName": "SM-S938B",
       "marketingName": "Galaxy S25 Ultra 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2858,14 +2903,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile",
       "modus": null,
       "version": "139.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2873,7 +2918,7 @@
     "engine": {
       "name": "Blink",
       "version": "139.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2884,8 +2929,8 @@
       "architecture": null,
       "deviceName": "SM-S721B",
       "marketingName": "Galaxy S24 FE (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2903,14 +2948,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2918,7 +2963,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2929,8 +2974,8 @@
       "architecture": null,
       "deviceName": "SM-A266B",
       "marketingName": "Galaxy A26 (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2948,14 +2993,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -2963,7 +3008,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -2974,8 +3019,8 @@
       "architecture": null,
       "deviceName": "SM-A256B",
       "marketingName": "Galaxy A25 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -2993,14 +3038,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "124.0.2478.64",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3008,7 +3053,7 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -3019,8 +3064,8 @@
       "architecture": null,
       "deviceName": "SM-G973U1",
       "marketingName": "Galaxy S10 (USA)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3038,14 +3083,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "45.03.4.4955",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -3053,7 +3098,113 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.116",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-A566B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+      "sec-ch-ua-full-version": "\"141.0.3537.99\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36 EdgA/141.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A566B",
+      "marketingName": "Galaxy A56 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "modus": null,
+      "version": "141.0.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-S936B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+      "sec-ch-ua-full-version": "\"141.0.3537.91\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36 EdgA/141.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S936B",
+      "marketingName": "Galaxy S25 Plus (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "modus": null,
+      "version": "141.0.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0.0",
+      "manufacturer": "Google"
     }
   }
 ]

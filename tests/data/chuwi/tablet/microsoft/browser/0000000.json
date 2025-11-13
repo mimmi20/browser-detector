@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "Hi10 Pro",
       "marketingName": "Hi10 Pro",
-      "manufacturer": "chuwi",
-      "brand": "chuwi",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Chuwi",
+      "brand": "Chuwi",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
       "version": "41.0.0.1921",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "65.0.3325.109",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

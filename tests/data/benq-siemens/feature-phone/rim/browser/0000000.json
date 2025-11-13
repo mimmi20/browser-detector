@@ -9,8 +9,8 @@
       "marketingName": "SK65",
       "manufacturer": "benq-siemens",
       "brand": "benq-siemens",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 176,
         "height": 132,
@@ -26,14 +26,14 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": null,
-      "manufacturer": "rim",
+      "manufacturer": "RIM",
       "bits": null
     },
     "client": {
       "name": "black-berry",
       "modus": null,
       "version": null,
-      "manufacturer": "rim",
+      "manufacturer": "RIM",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "black-berry",
       "version": null,
-      "manufacturer": "rim"
+      "manufacturer": "RIM"
     }
   }
 ]

@@ -29,7 +29,7 @@
       "size": 50
     },
     "type": "tv",
-    "platform": "android"
+    "platform": "android-tv"
   },
   "onvo 43ov6000f": {
     "deviceName": "43OV6000F",
@@ -146,6 +146,22 @@
   "onvo 24ov6000h": {
     "deviceName": "24OV6000H",
     "marketingName": "24OV6000H",
+    "manufacturer": "onvo",
+    "brand": "onvo",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": false,
+      "size": 24
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "onvo 24ovf6000h": {
+    "deviceName": "24OVF6000H",
+    "marketingName": "24OVF6000H",
     "manufacturer": "onvo",
     "brand": "onvo",
     "dualOrientation": false,

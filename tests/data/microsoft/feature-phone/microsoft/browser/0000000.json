@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "Kin Two",
       "marketingName": "Kin Two",
-      "manufacturer": "microsoft",
-      "brand": "microsoft",
+      "manufacturer": "Microsoft",
+      "brand": "Microsoft",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "KIN OS",
       "marketingName": "KIN OS",
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "IEMobile",
       "modus": null,
       "version": "6.12.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Trident",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   },
   {
@@ -52,14 +52,14 @@
       "architecture": null,
       "deviceName": "Kin One",
       "marketingName": "Kin One",
-      "manufacturer": "microsoft",
-      "brand": "microsoft",
+      "manufacturer": "Microsoft",
+      "brand": "Microsoft",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.6
       },
       "type": "feature-phone",
@@ -71,14 +71,14 @@
       "name": "KIN OS",
       "marketingName": "KIN OS",
       "version": "1.0.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "IEMobile",
       "modus": null,
       "version": "6.12.0",
-      "manufacturer": "microsoft",
+      "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "Trident",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "M5",
       "marketingName": "Marathon M5",
-      "manufacturer": "gionee",
-      "brand": "gionee",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Gionee",
+      "brand": "Gionee",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Ecosia",
       "modus": null,
       "version": "65.0.3325.230",
-      "manufacturer": "ecosia",
+      "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "65.0.3325.230",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

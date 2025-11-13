@@ -41,8 +41,6 @@ trait VersionFactoryTrait
                 return $this->versionBuilder->set($version);
             } catch (NotNumericException $e) {
                 $this->logger->error($e);
-
-                return $versionClass;
             }
         }
 

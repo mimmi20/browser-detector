@@ -1,59 +1,14 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; 5001J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 9; 5024D_EEA Build/PPR1.180610.011)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "5001J",
-      "marketingName": "1v (2019)",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 960,
-        "height": 480,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "112.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "112.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; 5024F_EEA Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "5024F_EEA",
+      "deviceName": "5024D_EEA",
       "marketingName": "1s",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -71,14 +26,149 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 8.1.0; BBF100-6 Build/OPM1.171019.026)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BBF100-6",
+      "marketingName": "KEY2",
+      "manufacturer": "TCL",
+      "brand": "BlackBerry",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1620,
+        "height": 1080,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; T431D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T431D",
+      "marketingName": "403",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "113.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; 5001D_RU Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.135 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5001D_RU",
+      "marketingName": "1v (2019)",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
       "modus": null,
       "version": "112.0.5615.135",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +176,97 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.5615.135",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; 5001J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5001J",
+      "marketingName": "1v (2019)",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "112.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; 5024F_EEA Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5024F_EEA",
+      "marketingName": "1s",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "112.0.5615.135",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.5615.135",
+      "manufacturer": "Google"
     }
   },
   {
@@ -106,8 +286,8 @@
       "architecture": null,
       "deviceName": "T610K",
       "marketingName": "40 SE",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -125,14 +305,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "120.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -140,7 +320,7 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -151,8 +331,8 @@
       "architecture": null,
       "deviceName": "T610E",
       "marketingName": "40 SE (LATAM)",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -170,14 +350,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "122.0.6261.119",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -185,7 +365,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.119",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -202,8 +382,8 @@
       "architecture": null,
       "deviceName": "4063T",
       "marketingName": "1L (2021)",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -221,14 +401,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "117.0.5938.60",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -236,7 +416,7 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -247,8 +427,8 @@
       "architecture": null,
       "deviceName": "5003X",
       "marketingName": "1c (2019)",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -266,14 +446,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "110.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -281,7 +461,7 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -292,8 +472,8 @@
       "architecture": null,
       "deviceName": "KEY2",
       "marketingName": "KEY2",
-      "manufacturer": "tcl",
-      "brand": "black-berry",
+      "manufacturer": "TCL",
+      "brand": "BlackBerry",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -311,14 +491,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "123.0.6345.223",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -326,7 +506,7 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6345.223",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -337,8 +517,8 @@
       "architecture": null,
       "deviceName": "Motion",
       "marketingName": "Motion",
-      "manufacturer": "tcl",
-      "brand": "black-berry",
+      "manufacturer": "TCL",
+      "brand": "BlackBerry",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -356,14 +536,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "122.0.6284.202",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -371,7 +551,7 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6284.202",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -382,8 +562,8 @@
       "architecture": null,
       "deviceName": "7040X",
       "marketingName": "OneTouch Pop C7",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -401,14 +581,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "48.0.1885.305",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -416,7 +596,7 @@
     "engine": {
       "name": "Blink",
       "version": "48.0.1885.305",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -427,8 +607,8 @@
       "architecture": null,
       "deviceName": "7048E",
       "marketingName": "OneTouch Go Play",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -446,14 +626,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.4",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "54.0.2228.398",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -461,7 +641,7 @@
     "engine": {
       "name": "Blink",
       "version": "54.0.2228.398",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -472,8 +652,8 @@
       "architecture": null,
       "deviceName": "T506T",
       "marketingName": "406s",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -491,14 +671,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "130.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -506,7 +686,7 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -517,8 +697,8 @@
       "architecture": null,
       "deviceName": "T506K",
       "marketingName": "406",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -536,14 +716,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "130.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -551,7 +731,7 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -562,8 +742,8 @@
       "architecture": null,
       "deviceName": "T506G",
       "marketingName": "406",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -581,14 +761,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "130.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -596,7 +776,142 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; T507D Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.58 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T507D",
+      "marketingName": "408",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "130.0.6723.58",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.58",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; T506A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T506A",
+      "marketingName": "405",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "130.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; T431P Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.60 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T431P",
+      "marketingName": "403",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "130.0.6723.60",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.60",
+      "manufacturer": "Google"
     }
   },
   {
@@ -607,8 +922,8 @@
       "architecture": null,
       "deviceName": "10 5G UW",
       "marketingName": "10 5G UW (Verizon)",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -626,14 +941,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "15.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "117.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -641,7 +956,7 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -652,8 +967,8 @@
       "architecture": null,
       "deviceName": "T702W",
       "marketingName": "50 XL 5G",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -671,14 +986,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "135.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -686,7 +1001,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -697,8 +1012,8 @@
       "architecture": null,
       "deviceName": "T614D",
       "marketingName": "50 XE 5G",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -716,14 +1031,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "135.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -731,7 +1046,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -742,8 +1057,8 @@
       "architecture": null,
       "deviceName": "T611B",
       "marketingName": "50 SE",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -761,14 +1076,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "135.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -776,7 +1091,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -787,8 +1102,8 @@
       "architecture": null,
       "deviceName": "T509K",
       "marketingName": "505",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -806,14 +1121,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "135.0.7049.100",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -821,7 +1136,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.7049.100",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -832,8 +1147,8 @@
       "architecture": null,
       "deviceName": "T433D",
       "marketingName": "501",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -851,14 +1166,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "135.0.7049.100",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -866,7 +1181,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.7049.100",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -877,8 +1192,8 @@
       "architecture": null,
       "deviceName": "T509A",
       "marketingName": "505",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -896,14 +1211,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
       "version": "135.0.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -911,7 +1226,7 @@
     "engine": {
       "name": "Blink",
       "version": "135.0.0.0",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -922,8 +1237,8 @@
       "architecture": null,
       "deviceName": "T506G",
       "marketingName": "406",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -941,14 +1256,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "136.0.7103.60",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -956,7 +1271,7 @@
     "engine": {
       "name": "Blink",
       "version": "136.0.7103.60",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -967,8 +1282,8 @@
       "architecture": null,
       "deviceName": "7048S",
       "marketingName": "OneTouch Go Play",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -986,14 +1301,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.0.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "38.0.2125.102",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1001,7 +1316,7 @@
     "engine": {
       "name": "Blink",
       "version": "38.0.2125.102",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
@@ -1012,8 +1327,8 @@
       "architecture": null,
       "deviceName": "A501DL",
       "marketingName": "A1",
-      "manufacturer": "tcl",
-      "brand": "tcl",
+      "manufacturer": "TCL",
+      "brand": "TCL",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1031,14 +1346,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "81.0.4044.138",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -1046,7 +1361,7 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

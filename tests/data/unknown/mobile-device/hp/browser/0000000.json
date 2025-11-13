@@ -10,11 +10,11 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -26,14 +26,14 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": "1.3.0",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "bits": null
     },
     "client": {
       "name": "webOS Browser",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "525.27.1",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -55,11 +55,11 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -71,14 +71,14 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": "1.2.0",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "bits": null
     },
     "client": {
       "name": "webOS Browser",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "525.27.1",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -100,11 +100,11 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -116,14 +116,14 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": "2.0.0",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "bits": null
     },
     "client": {
       "name": "webOS Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "534.6.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -145,11 +145,11 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "mobile-device",
@@ -161,14 +161,14 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": null,
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "bits": null
     },
     "client": {
       "name": "webOS Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.1.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

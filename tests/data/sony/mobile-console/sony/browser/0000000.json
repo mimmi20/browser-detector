@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "PlayStation Portable",
       "marketingName": "PlayStation Portable",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 480,
         "height": 272,
@@ -33,7 +33,7 @@
       "name": "Playstation Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "sony",
+      "manufacturer": "Sony",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -52,10 +52,10 @@
       "architecture": null,
       "deviceName": "PlayStation Vita",
       "marketingName": "PlayStation Vita",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 960,
         "height": 544,
@@ -71,14 +71,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Playstation Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "sony",
+      "manufacturer": "Sony",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "536.26.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -97,10 +97,10 @@
       "architecture": null,
       "deviceName": "PlayStation Vita",
       "marketingName": "PlayStation Vita",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 960,
         "height": 544,
@@ -123,7 +123,7 @@
       "name": "Playstation Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "sony",
+      "manufacturer": "Sony",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -131,7 +131,7 @@
     "engine": {
       "name": "WebKit",
       "version": "537.73.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -142,10 +142,10 @@
       "architecture": null,
       "deviceName": "PlayStation Portable",
       "marketingName": "PlayStation Portable",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 480,
         "height": 272,
@@ -168,7 +168,7 @@
       "name": "Playstation Browser",
       "modus": null,
       "version": null,
-      "manufacturer": "sony",
+      "manufacturer": "Sony",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -176,7 +176,7 @@
     "engine": {
       "name": "Trident",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "Microsoft"
     }
   }
 ]

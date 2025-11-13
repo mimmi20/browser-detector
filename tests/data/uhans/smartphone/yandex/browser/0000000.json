@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "U100",
       "marketingName": "U100",
-      "manufacturer": "uhans",
-      "brand": "uhans",
+      "manufacturer": "Uhans",
+      "brand": "Uhans",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "23.110.0",
-      "manufacturer": "yandex",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,21 +41,21 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.2332",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; 32LH5000T Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/23.1.0.39 (lite) Safari/537.36 TV"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; H32H5000SA Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV"
     },
     "device": {
       "architecture": null,
       "deviceName": "H5000",
       "marketingName": "H5000",
-      "manufacturer": "uhans",
-      "brand": "uhans",
+      "manufacturer": "Uhans",
+      "brand": "Uhans",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -70,23 +70,23 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
+      "version": "11.0.0",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Yandex Browser Lite",
       "modus": null,
-      "version": "23.1.0.39",
-      "manufacturer": "yandex",
+      "version": "24.1.2.86",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "101.0.4951.61",
-      "manufacturer": "google"
+      "version": "83.0.4103.120",
+      "manufacturer": "Google"
     }
   }
 ]

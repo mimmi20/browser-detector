@@ -10,11 +10,11 @@
       "manufacturer": "spice",
       "brand": "spice",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 400,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 3.14
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "Nucleus OS",
       "marketingName": "Nucleus",
       "version": null,
-      "manufacturer": "accelerated-technology",
+      "manufacturer": "Accelerated Technology",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
       "version": "10.00.0",
-      "manufacturer": "opera",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Presto",
       "version": "2.4.18",
-      "manufacturer": "opera"
+      "manufacturer": "Opera"
     }
   }
 ]

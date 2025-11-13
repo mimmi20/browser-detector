@@ -7,14 +7,14 @@
       "architecture": null,
       "deviceName": "Pixi",
       "marketingName": "Pixi",
-      "manufacturer": "palm",
-      "brand": "palm",
+      "manufacturer": "Palm",
+      "brand": "Palm",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 400,
         "height": 320,
-        "touch": true,
+        "touch": false,
         "size": 2.63
       },
       "type": "feature-phone",
@@ -26,14 +26,14 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": "1.4.5",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "bits": null
     },
     "client": {
       "name": "webOS Browser",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "WebKit",
       "version": "532.2.0",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -52,14 +52,14 @@
       "architecture": null,
       "deviceName": "Pre",
       "marketingName": "Pre",
-      "manufacturer": "palm",
-      "brand": "palm",
+      "manufacturer": "Palm",
+      "brand": "Palm",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 1,
       "display": {
         "width": 480,
         "height": 320,
-        "touch": true,
+        "touch": false,
         "size": 3.1
       },
       "type": "feature-phone",
@@ -71,14 +71,14 @@
       "name": "webOS",
       "marketingName": "webOS",
       "version": "1.0.0",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "bits": null
     },
     "client": {
       "name": "webOS Browser",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "hp",
+      "manufacturer": "HP",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -86,7 +86,7 @@
     "engine": {
       "name": "WebKit",
       "version": "525.27.1",
-      "manufacturer": "apple"
+      "manufacturer": "Apple"
     }
   }
 ]

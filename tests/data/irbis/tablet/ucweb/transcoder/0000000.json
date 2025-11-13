@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "TZ43",
       "marketingName": "TZ43",
-      "manufacturer": "irbis",
-      "brand": "irbis",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "Irbis",
+      "brand": "Irbis",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "UC Browser",
       "modus": null,
       "version": "11.2.5.932",
-      "manufacturer": "ucweb",
+      "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "manufacturer": "UCWeb"
     }
   }
 ]

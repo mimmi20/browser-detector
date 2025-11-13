@@ -7,10 +7,10 @@
       "architecture": null,
       "deviceName": "A8003T",
       "marketingName": "A10",
-      "manufacturer": "allwinner",
-      "brand": "allwinner",
-      "dualOrientation": null,
-      "simCount": null,
+      "manufacturer": "AllWinner",
+      "brand": "AllWinner",
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 800,
         "height": 600,
@@ -26,14 +26,14 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Google App",
       "modus": null,
       "version": "16.31.78",
-      "manufacturer": "google",
+      "manufacturer": "Google",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
@@ -41,7 +41,7 @@
     "engine": {
       "name": "Blink",
       "version": "139.0.7258.94",
-      "manufacturer": "google"
+      "manufacturer": "Google"
     }
   }
 ]

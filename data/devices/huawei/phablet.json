@@ -527,22 +527,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "huawei wlz-tn00": {
-    "deviceName": "WLZ-TN00",
-    "marketingName": "Nova 6 5G",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.57
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "huawei jef-an00": {
     "deviceName": "JEF-AN00",
     "marketingName": "Nova 7 5G",
@@ -961,9 +945,9 @@
   },
   "huawei fcp-n49": {
     "deviceName": "FCP-N49",
-    "marketingName": "Honor Magic V3",
+    "marketingName": "Magic V3",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 2,
     "display": {
@@ -977,9 +961,9 @@
   },
   "huawei fcp-an10": {
     "deviceName": "FCP-AN10",
-    "marketingName": "Honor Magic V3",
+    "marketingName": "Magic V3",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 2,
     "display": {

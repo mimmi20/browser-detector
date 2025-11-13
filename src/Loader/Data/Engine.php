@@ -13,15 +13,15 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Data;
 
+use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Engine as DataEngine;
-use FilterIterator;
-use Iterator;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
+use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
@@ -31,6 +31,7 @@ use function is_string;
 use function sprintf;
 use function str_replace;
 
+/** @deprecated will be removed */
 final class Engine implements DataInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/engines';
@@ -54,28 +55,7 @@ final class Engine implements DataInterface
         }
 
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(self::DATA_PATH));
-        $files    = new class ($iterator, 'json') extends FilterIterator {
-            /**
-             * @param Iterator<SplFileInfo> $iterator
-             *
-             * @throws void
-             */
-            public function __construct(Iterator $iterator, private readonly string $extension)
-            {
-                parent::__construct($iterator);
-            }
-
-            /** @throws void */
-            #[Override]
-            public function accept(): bool
-            {
-                $file = $this->getInnerIterator()->current();
-
-                assert($file instanceof SplFileInfo);
-
-                return $file->isFile() && $file->getExtension() === $this->extension;
-            }
-        };
+        $files    = new FilterIterator($iterator, 'json');
 
         foreach ($files as $file) {
             assert($file instanceof SplFileInfo);
@@ -114,6 +94,24 @@ final class Engine implements DataInterface
     #[Override]
     public function getItem(string $stringKey): DataEngine | null
     {
+        if (array_key_exists($stringKey, $this->items)) {
+            return $this->items[$stringKey];
+        }
+
+        try {
+            $engine = \BrowserDetector\Data\Engine::fromName($stringKey);
+
+            $data = new DataEngine(
+                name: $engine->getName(),
+                manufacturer: $engine->getManufacturer()->getBrandname(),
+                version: (object) $engine->getVersion(),
+            );
+
+            $this->items[$stringKey] = $data;
+        } catch (UnexpectedValueException) {
+            // do nothing
+        }
+
         return $this->items[$stringKey] ?? null;
     }
 }
