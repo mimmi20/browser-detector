@@ -72,6 +72,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|miui)[^)]+)\)/i',
+            '/dalvik\/[\d.]+ \(linux; android [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)sp1a/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
             '/slack\/[\d.]+ \((?P<devicecode>[^);\/]+)(?:;? (?:andr[o0]id|tizen) [\d.]+)(?:[^)]+)?\)/i',

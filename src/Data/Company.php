@@ -916,6 +916,12 @@ enum Company: string implements CompanyInterface
 
     case orbic = 'Orbic';
 
+    case tabero = 'Tabero';
+
+    case luna = 'Luna';
+
+    case next = 'NEXT';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1372,6 +1378,9 @@ enum Company: string implements CompanyInterface
             'positivo' => self::positivo,
             'brondi' => self::brondi,
             'orbic' => self::orbic,
+            'tabero' => self::tabero,
+            'luna' => self::luna,
+            'next' => self::next,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

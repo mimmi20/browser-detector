@@ -2752,6 +2752,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Orbic',
                 'key' => 'orbic',
             ],
+            [
+                'type' => 'Tabero',
+                'name' => 'Tabero',
+                'brandname' => 'Tabero',
+                'key' => 'tabero',
+            ],
+            [
+                'type' => 'Luna',
+                'name' => 'Luna',
+                'brandname' => 'Luna',
+                'key' => 'luna',
+            ],
+            [
+                'type' => 'NEXT',
+                'name' => 'NEXT',
+                'brandname' => 'NEXT',
+                'key' => 'next',
+            ],
         ];
     }
 
