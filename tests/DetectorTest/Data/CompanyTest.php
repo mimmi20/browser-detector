@@ -2800,6 +2800,54 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Quantum',
                 'key' => 'quantum',
             ],
+            [
+                'type' => 'VIMOQ',
+                'name' => 'VIMOQ',
+                'brandname' => 'VIMOQ',
+                'key' => 'vimoq',
+            ],
+            [
+                'type' => 'FortuneShip',
+                'name' => 'FortuneShip',
+                'brandname' => 'FortuneShip',
+                'key' => 'fortune-ship',
+            ],
+            [
+                'type' => 'HiBy',
+                'name' => 'HiBy',
+                'brandname' => 'HiBy',
+                'key' => 'hi-by',
+            ],
+            [
+                'type' => 'CHCnav',
+                'name' => 'CHCnav',
+                'brandname' => 'CHCnav',
+                'key' => 'chcnav',
+            ],
+            [
+                'type' => 'Hytera',
+                'name' => 'Hytera',
+                'brandname' => 'Hytera',
+                'key' => 'hytera',
+            ],
+            [
+                'type' => 'Urovo',
+                'name' => 'Urovo',
+                'brandname' => 'Urovo',
+                'key' => 'urovo',
+            ],
+            [
+                'type' => 'Razer',
+                'name' => 'Razer',
+                'brandname' => 'Razer',
+                'key' => 'razer',
+            ],
+            [
+                'type' => 'BYD',
+                'name' => 'BYD',
+                'brandname' => 'BYD',
+                'key' => 'byd',
+            ],
         ];
     }
 
@@ -3918,6 +3966,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Shenzhen koobee Communication Equipment Co.,Ltd',
                 'brandname' => 'Koobee',
                 'key' => 'koobee',
+            ],
+            [
+                'fallback' => 'fortune-ship',
+                'name' => 'FortuneShip',
+                'brandname' => 'FortuneShip',
+                'key' => 'fortune-ship',
+            ],
+            [
+                'fallback' => 'hi-by',
+                'name' => 'HiBy',
+                'brandname' => 'HiBy',
+                'key' => 'hi-by',
             ],
         ];
     }

@@ -932,6 +932,22 @@ enum Company: string implements CompanyInterface
 
     case quantum = 'Quantum';
 
+    case vimoq = 'VIMOQ';
+
+    case fortuneShip = 'FortuneShip';
+
+    case hiby = 'HiBy';
+
+    case chcnav = 'CHCnav';
+
+    case hytera = 'Hytera';
+
+    case urovo = 'Urovo';
+
+    case razer = 'Razer';
+
+    case byd = 'BYD';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1396,6 +1412,14 @@ enum Company: string implements CompanyInterface
             'airtel' => self::airtel,
             'siragon' => self::siragon,
             'quantum' => self::quantum,
+            'vimoq' => self::vimoq,
+            'fortuneship', 'fortune-ship' => self::fortuneShip,
+            'hiby', 'hi-by' => self::hiby,
+            'chcnav' => self::chcnav,
+            'hytera' => self::hytera,
+            'urovo' => self::urovo,
+            'razer' => self::razer,
+            'byd' => self::byd,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1617,6 +1641,8 @@ enum Company: string implements CompanyInterface
             self::sunwind => 'sun-wind',
             self::hiNova => 'hi-nova',
             self::moonchild => 'moonchild-productions',
+            self::fortuneShip => 'fortune-ship',
+            self::hiby => 'hi-by',
             default => $this->name,
         };
     }

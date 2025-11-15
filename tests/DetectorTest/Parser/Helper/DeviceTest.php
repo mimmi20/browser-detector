@@ -4197,6 +4197,7 @@ final class DeviceTest extends TestCase
             ['W_K400', 'wiko=wiko lenny 5'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
+            ['Razer Edge 5G', 'razer=razer edge 5g'],
             // Alcatel
             ['5024D_EEA', 'alcatel=alcatel 5024d_eea'],
             ['6025D_EEA', 'alcatel=alcatel 6025d_eea'],
@@ -5188,8 +5189,10 @@ final class DeviceTest extends TestCase
             ['TECNO_LH7n', 'tecno=tecno lh7n'],
             ['TECNO CI8n', 'tecno=tecno ci8n'],
             ['TECNO Mobile CI8n', 'tecno=tecno ci8n'],
-            ['TECNO CI8', 'tecno=tecno cl8'],
-            ['TECNO Mobile CI8', 'tecno=tecno cl8'],
+            ['TECNO CI8', 'tecno=tecno ci8'],
+            ['TECNO Mobile CI8', 'tecno=tecno ci8'],
+            ['TECNO LE6j', 'tecno=tecno le6j'],
+            ['TECNO Mobile LE6j', 'tecno=tecno le6j'],
             // foxxd
             ['FOXXD C65', 'foxxd=foxxd c65'],
             // ceibal
@@ -5209,6 +5212,7 @@ final class DeviceTest extends TestCase
             ['LRNS10GIL0', 'byjus=byjus lrns10gil0'],
             // yezz
             ['LIV_3S', 'yezz=yezz liv 3s lte'],
+            ['LIV 3S LTE', 'yezz=yezz liv 3s lte'],
             ['ART 3S', 'yezz=yezz art 3s'],
             // lyf
             ['LS1542QW', 'lyf=lyf ls1542qw'],
@@ -5533,6 +5537,8 @@ final class DeviceTest extends TestCase
             ['SKY PAD8PRO', 'sky=sky pad 8 pro'],
             ['SKY_PAD8PRO', 'sky=sky pad 8 pro'],
             ['Elite P55Max', 'sky=sky elite p55max'],
+            ['Elite Max', 'sky=sky elite max'],
+            ['Elite C63', 'sky=sky elite c63'],
             // iiif150
             ['R2022', 'iiif150=iiif150 r2022'],
             ['B2021', 'iiif150=iiif150 b2021'],
@@ -6076,6 +6082,7 @@ final class DeviceTest extends TestCase
             // bmobile
             ['BL53_TG06', 'bmobile=bmobile bl53'],
             ['BL52Pro', 'bmobile=bmobile bl52 pro'],
+            ['BL63_TG07', 'bmobile=bmobile bl63_tg07'],
             // mipo
             ['mipo_M25', 'mipo=mipo m25'],
             ['mipo_M46_Pro', 'mipo=mipo m46 pro'],
@@ -6432,6 +6439,8 @@ final class DeviceTest extends TestCase
             ['RG406V', 'anbernic=anbernic rg406v'],
             ['RG556', 'anbernic=anbernic rg556'],
             ['RG405M', 'anbernic=anbernic rg405m'],
+            ['RG505', 'anbernic=anbernic rg505'],
+            ['RG405V', 'anbernic=anbernic rg405v'],
             // fontel
             ['FT800', 'fontel=fontel ft800'],
             ['FT1000', 'fontel=fontel ft1000'],
@@ -6650,6 +6659,7 @@ final class DeviceTest extends TestCase
             ['A10-2cpu', 'ampe=ampe a10 dual core'],
             // ans
             ['UL40', 'ans=ans ul40'],
+            ['ACK2326', 'ans=ans ack2326'],
             // newsmy
             ['Newpad-K97', 'newsmy=newsmy k97'],
             // bmxc
@@ -6745,6 +6755,62 @@ final class DeviceTest extends TestCase
             ['QUANTUM_4_550', 'goclever=goclever quantum 4 550'],
             ['QUANTUM_II_500_N', 'goclever=goclever quantum ii 500 n'],
             ['QUANTUM 4', 'goclever=goclever quantum 4'],
+            // quatro
+            ['F1453', 'quatro=quatro f1453'],
+            // quechua
+            ['Quechua Phone 5', 'quechua=quechua phone 5'],
+            // qware
+            ['QW TB-1217', 'qware=qware qw tb-1217'],
+            // r-box
+            ['R-BOX Pro 3G', 'r-box=r-box pro 3g'],
+            // radxa
+            ['radxa rock', 'radxa=radxa rock'],
+            // reach
+            ['Axis RD60', 'reach=reach axis rd60'],
+            // reellex
+            ['TAB-97E-01', 'reellex=reellex tab-97e-01'],
+            ['TAB-07E-01', 'reellex=reellex tab-07e-01'],
+            // ross-moor
+            ['RM-560', 'ross-moor=ross-moor rm-560'],
+            ['RM-997', 'ross-moor=ross-moor rm-997'],
+            ['RMD-974R', 'ross-moor=ross-moor rmd-974r'],
+            // rotor
+            ['TU_1491C', 'rotor=rotor tu-1491c'],
+            // fantech
+            ['M200H', 'fantech=fantech m200h'],
+            // jesy
+            ['J9S', 'jesy=jesy j9s'],
+            // jty
+            ['KT961', 'jty=jty kt961'],
+            ['KT07', 'jty=jty kt07'],
+            // koenig
+            ['DVB-TS2 4KASB', 'koenig=koenig kn-4kasb'],
+            // mystery
+            ['MID-721', 'mystery=mystery mid-721'],
+            // tursion
+            ['F721', 'tursion=tursion f721'],
+            // quan-zhi
+            ['97FC', 'quan-zhi=quan-zhi 97fc'],
+            // eken
+            ['T10A', 'eken=eken t10a'],
+            // rusty
+            ['i92200', 'rusty=rusty i92200'],
+            // vimoq
+            ['VIMOQ A631LO', 'vimoq=vimoq a631lo'],
+            ['VIMOQ P662LO', 'vimoq=vimoq p662lo'],
+            // fortune-ship
+            ['ENIE E2', 'fortune-ship=fortune-ship enie e2'],
+            // hi-by
+            ['R6III', 'hi-by=hi-by r6 gen iii'],
+            // chcnav
+            ['HCE600', 'chcnav=chcnav hce600'],
+            ['HCE700', 'chcnav=chcnav hce700'],
+            // hytera
+            ['PNC560', 'hytera=hytera pnc560'],
+            // urovo
+            ['DT20', 'urovo=urovo dt20'],
+            // byd
+            ['DiLink5.0 For BYD AUTO', 'byd=byd carpad'],
             // other
             ['Model"', null],
             [': "', null],

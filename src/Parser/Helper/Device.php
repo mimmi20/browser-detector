@@ -3659,6 +3659,7 @@ final class Device implements DeviceInterface
             'w_k400' => 'wiko=wiko lenny 5',
             // razer
             'phone 2' => 'razer=razer phone 2',
+            'razer edge 5g' => 'razer=razer edge 5g',
             // Alcatel
             '5024d_eea' => 'alcatel=alcatel 5024d_eea',
             '6025d_eea' => 'alcatel=alcatel 6025d_eea',
@@ -4582,6 +4583,7 @@ final class Device implements DeviceInterface
             'tecno cl8', 'tecno mobile cl8' => 'tecno=tecno cl8',
             'tecno ci8n', 'tecno mobile ci8n' => 'tecno=tecno ci8n',
             'tecno ci8', 'tecno mobile ci8' => 'tecno=tecno ci8',
+            'tecno le6j', 'tecno mobile le6j' => 'tecno=tecno le6j',
             // foxxd
             'foxxd c65' => 'foxxd=foxxd c65',
             // ceibal
@@ -4600,7 +4602,7 @@ final class Device implements DeviceInterface
             // byjus
             'lrns10gil0' => 'byjus=byjus lrns10gil0',
             // yezz
-            'liv_3s' => 'yezz=yezz liv 3s lte',
+            'liv_3s', 'liv 3s lte' => 'yezz=yezz liv 3s lte',
             'art 3s' => 'yezz=yezz art 3s',
             // lyf
             'ls1542qw' => 'lyf=lyf ls1542qw',
@@ -4917,6 +4919,8 @@ final class Device implements DeviceInterface
             'sky_pad8', 'sky pad8' => 'sky=sky pad 8',
             'sky_pad8pro', 'sky pad8pro' => 'sky=sky pad 8 pro',
             'elite p55max' => 'sky=sky elite p55max',
+            'elite max' => 'sky=sky elite max',
+            'elite c63' => 'sky=sky elite c63',
             // iiif150
             'r2022' => 'iiif150=iiif150 r2022',
             'b2021' => 'iiif150=iiif150 b2021',
@@ -5384,6 +5388,7 @@ final class Device implements DeviceInterface
             // bmobile
             'bl53_tg06' => 'bmobile=bmobile bl53',
             'bl52pro' => 'bmobile=bmobile bl52 pro',
+            'bl63_tg07' => 'bmobile=bmobile bl63_tg07',
             // mipo
             'mipo_m25' => 'mipo=mipo m25',
             'mipo_m46_pro' => 'mipo=mipo m46 pro',
@@ -5738,6 +5743,8 @@ final class Device implements DeviceInterface
             'rg406v' => 'anbernic=anbernic rg406v',
             'rg556' => 'anbernic=anbernic rg556',
             'rg405m' => 'anbernic=anbernic rg405m',
+            'rg505' => 'anbernic=anbernic rg505',
+            'rg405v' => 'anbernic=anbernic rg405v',
             // fontel
             'ft800' => 'fontel=fontel ft800',
             'ft1000' => 'fontel=fontel ft1000',
@@ -5953,6 +5960,7 @@ final class Device implements DeviceInterface
             'a10-2cpu' => 'ampe=ampe a10 dual core',
             // ans
             'ul40' => 'ans=ans ul40',
+            'ack2326' => 'ans=ans ack2326',
             // newsmy
             'newpad-k97' => 'newsmy=newsmy k97',
             // bmxc
@@ -6047,6 +6055,62 @@ final class Device implements DeviceInterface
             'quantum_4_550' => 'goclever=goclever quantum 4 550',
             'QUANTUM_II_500_N' => 'goclever=goclever quantum ii 500 n',
             'quantum 4' => 'goclever=goclever quantum 4',
+            // quatro
+            'f1453' => 'quatro=quatro f1453',
+            // quechua
+            'quechua phone 5' => 'quechua=quechua phone 5',
+            // qware
+            'qw tb-1217' => 'qware=qware qw tb-1217',
+            // r-box
+            'r-box pro 3g' => 'r-box=r-box pro 3g',
+            // radxa
+            'radxa rock' => 'radxa=radxa rock',
+            // reach
+            'axis rd60' => 'reach=reach axis rd60',
+            // reellex
+            'tab-97e-01' => 'reellex=reellex tab-97e-01',
+            'tab-07e-01' => 'reellex=reellex tab-07e-01',
+            // ross-moor
+            'rm-560' => 'ross-moor=ross-moor rm-560',
+            'rm-997' => 'ross-moor=ross-moor rm-997',
+            'rmd-974r' => 'ross-moor=ross-moor rmd-974r',
+            // rotor
+            'tu_1491c' => 'rotor=rotor tu-1491c',
+            // fantech
+            'm200h' => 'fantech=fantech m200h',
+            // jesy
+            'j9s' => 'jesy=jesy j9s',
+            // jty
+            'kt961' => 'jty=jty kt961',
+            'kt07' => 'jty=jty kt07',
+            // koenig
+            'dvb-ts2 4kasb' => 'koenig=koenig kn-4kasb',
+            // mystery
+            'mid-721' => 'mystery=mystery mid-721',
+            // tursion
+            'f721' => 'tursion=tursion f721',
+            // quan-zhi
+            '97fc' => 'quan-zhi=quan-zhi 97fc',
+            // eken
+            't10a' => 'eken=eken t10a',
+            // rusty
+            'i92200' => 'rusty=rusty i92200',
+            // vimoq
+            'vimoq a631lo' => 'vimoq=vimoq a631lo',
+            'vimoq p662lo' => 'vimoq=vimoq p662lo',
+            // fortune-ship
+            'enie e2' => 'fortune-ship=fortune-ship enie e2',
+            // hi-by
+            'r6iii' => 'hi-by=hi-by r6 gen iii',
+            // chcnav
+            'hce600' => 'chcnav=chcnav hce600',
+            'hce700' => 'chcnav=chcnav hce700',
+            // hytera
+            'pnc560' => 'hytera=hytera pnc560',
+            // urovo
+            'dt20' => 'urovo=urovo dt20',
+            // byd
+            'dilink5.0 for byd auto' => 'byd=byd carpad',
             // other
             default => null,
         };

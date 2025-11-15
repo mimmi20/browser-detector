@@ -7,9 +7,9 @@
       "architecture": null,
       "deviceName": "M3",
       "marketingName": "M3",
-      "manufacturer": "koobee",
-      "brand": "koobee",
-      "dualOrientation": null,
+      "manufacturer": "Koobee",
+      "brand": "Koobee",
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 1280,
@@ -52,9 +52,9 @@
       "architecture": null,
       "deviceName": "T550",
       "marketingName": "T550",
-      "manufacturer": "koobee",
-      "brand": "koobee",
-      "dualOrientation": null,
+      "manufacturer": "Koobee",
+      "brand": "Koobee",
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 800,
@@ -87,6 +87,51 @@
       "name": "WebKit",
       "version": "533.1.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SL004T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SL004T",
+      "marketingName": "K100",
+      "manufacturer": "Koobee",
+      "brand": "Koobee",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "Google"
     }
   }
 ]
