@@ -110,5 +110,53 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "dcode ds-cl2": {
+    "deviceName": "DS-CL2",
+    "marketingName": "Cygnal 2",
+    "manufacturer": "dcode",
+    "brand": "dcode",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "dcode ds-bd2": {
+    "deviceName": "DS-BD2",
+    "marketingName": "Bold 2",
+    "manufacturer": "dcode",
+    "brand": "dcode",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "dcode ds-cl2 lite": {
+    "deviceName": "DS-CL2 Lite",
+    "marketingName": "Cygnal 2 Lite",
+    "manufacturer": "dcode",
+    "brand": "dcode",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

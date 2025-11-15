@@ -4,8 +4,8 @@
     "marketingName": "SP-5100",
     "manufacturer": "siragon",
     "brand": "siragon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -20,8 +20,8 @@
     "marketingName": "SP-5110",
     "manufacturer": "siragon",
     "brand": "siragon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 768,
@@ -36,13 +36,29 @@
     "marketingName": "SP-7000",
     "manufacturer": "siragon",
     "brand": "siragon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "siragon sp-7200": {
+    "deviceName": "SP-7200",
+    "marketingName": "SP-7200",
+    "manufacturer": "siragon",
+    "brand": "siragon",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
     },
     "type": "smartphone",
     "platform": "android"
