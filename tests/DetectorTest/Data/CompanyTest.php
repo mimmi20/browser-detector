@@ -2752,6 +2752,54 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Orbic',
                 'key' => 'orbic',
             ],
+            [
+                'type' => 'Tabero',
+                'name' => 'Tabero',
+                'brandname' => 'Tabero',
+                'key' => 'tabero',
+            ],
+            [
+                'type' => 'Luna',
+                'name' => 'Luna',
+                'brandname' => 'Luna',
+                'key' => 'luna',
+            ],
+            [
+                'type' => 'NEXT',
+                'name' => 'NEXT',
+                'brandname' => 'NEXT',
+                'key' => 'next',
+            ],
+            [
+                'type' => 'QIN',
+                'name' => 'QIN',
+                'brandname' => 'QIN',
+                'key' => 'qin',
+            ],
+            [
+                'type' => 'Koobee',
+                'name' => 'Shenzhen koobee Communication Equipment Co.,Ltd',
+                'brandname' => 'Koobee',
+                'key' => 'koobee',
+            ],
+            [
+                'type' => 'Airtel',
+                'name' => 'Airtel',
+                'brandname' => 'Airtel',
+                'key' => 'airtel',
+            ],
+            [
+                'type' => 'Siragon',
+                'name' => 'Siragon',
+                'brandname' => 'Siragon',
+                'key' => 'siragon',
+            ],
+            [
+                'type' => 'Quantum',
+                'name' => 'Quantum',
+                'brandname' => 'Quantum',
+                'key' => 'quantum',
+            ],
         ];
     }
 
@@ -3864,6 +3912,12 @@ final class CompanyTest extends TestCase
                 'name' => 'Moonchild Productions',
                 'brandname' => 'Moonchild',
                 'key' => 'moonchild-productions',
+            ],
+            [
+                'fallback' => 'Shenzhen koobee Communication Equipment Co.,Ltd',
+                'name' => 'Shenzhen koobee Communication Equipment Co.,Ltd',
+                'brandname' => 'Koobee',
+                'key' => 'koobee',
             ],
         ];
     }

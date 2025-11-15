@@ -365,6 +365,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.xbh.universal.player' => 'universal-player',
             'com.mobile.applock.wt' => 'app-lock',
             'com.solide.filemanager.lte' => 'solid-file-manager',
+            'com.lechneralexander.privatebrowser' => 'private-internet-browser',
             default => null,
         };
     }

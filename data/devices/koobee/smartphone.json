@@ -4,8 +4,8 @@
     "marketingName": "M3",
     "manufacturer": "koobee",
     "brand": "koobee",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -20,8 +20,8 @@
     "marketingName": "Muse M2",
     "manufacturer": "koobee",
     "brand": "koobee",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -36,13 +36,29 @@
     "marketingName": "T550",
     "manufacturer": "koobee",
     "brand": "koobee",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "koobee sl004t": {
+    "deviceName": "SL004T",
+    "marketingName": "K100",
+    "manufacturer": "koobee",
+    "brand": "koobee",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": true,
+      "size": 5.45
     },
     "type": "smartphone",
     "platform": "android"

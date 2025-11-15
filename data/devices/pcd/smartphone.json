@@ -4,8 +4,8 @@
     "marketingName": "506",
     "manufacturer": "pcd",
     "brand": "pcd",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
@@ -20,8 +20,8 @@
     "marketingName": "508",
     "manufacturer": "pcd",
     "brand": "pcd",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -36,8 +36,8 @@
     "marketingName": "509",
     "manufacturer": "pcd",
     "brand": "pcd",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -52,13 +52,29 @@
     "marketingName": "PH4001",
     "manufacturer": "pcd",
     "brand": "pcd",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
       "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "pcd p63l": {
+    "deviceName": "P63L",
+    "marketingName": "P63L",
+    "manufacturer": "pcd",
+    "brand": "pcd",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 6.26
     },
     "type": "smartphone",
     "platform": "android"

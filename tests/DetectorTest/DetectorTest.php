@@ -1180,6 +1180,52 @@ final class DetectorTest extends TestCase
                     ],
                 ],
             ],
+            [
+                ['user-agent' => 'Dalvik/1.6.0 (Linux; U; Android 12/Viber 18.8.3.0 ; SM-G981BSP1A.210812.016) Viber/22.6.1.0'],
+                [
+                    'headers' => ['user-agent' => 'Dalvik/1.6.0 (Linux; U; Android 12/Viber 18.8.3.0 ; SM-G981BSP1A.210812.016) Viber/22.6.1.0'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-G981B',
+                        'marketingName' => 'Galaxy S20 5G (International)',
+                        'manufacturer' => 'Samsung',
+                        'brand' => 'Samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 3200,
+                            'height' => 1440,
+                            'touch' => true,
+                            'size' => 6.2,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '12.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Dalvik',
+                        'modus' => null,
+                        'version' => '1.6.0',
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
         ];
     }
 }
