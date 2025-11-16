@@ -39,9 +39,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.58",
+      "manufacturer": "Google"
     }
   },
   {
@@ -84,9 +84,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.22.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "25.0.1364.123",
+      "manufacturer": "Google"
     }
   },
   {
@@ -129,9 +129,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.58",
+      "manufacturer": "Google"
     }
   },
   {
@@ -219,9 +219,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
     }
   },
   {
@@ -311,6 +311,51 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.5938.154",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; LAVA LEX402) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.280 Mobile Safari/537.36 OPR/80.6.4244.78244"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LEX402",
+      "marketingName": "Z33",
+      "manufacturer": "Lava",
+      "brand": "Lava",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.51
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "80.6.4244.78244",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.280",
       "manufacturer": "Google"
     }
   },

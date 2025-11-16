@@ -9,7 +9,7 @@
       "marketingName": "Xplorer",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 960,
@@ -54,7 +54,7 @@
       "marketingName": "W72",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 854,
@@ -99,7 +99,7 @@
       "marketingName": "Xplorer",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 480,
@@ -144,7 +144,7 @@
       "marketingName": "Xplorer",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 800,
@@ -189,7 +189,7 @@
       "marketingName": "Xplorer",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 480,
@@ -234,7 +234,7 @@
       "marketingName": "Xplorer",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 800,
@@ -279,7 +279,7 @@
       "marketingName": "Xplorer",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 800,
@@ -324,7 +324,7 @@
       "marketingName": "Xplorer",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 800,
@@ -369,7 +369,7 @@
       "marketingName": "P7",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 1280,
@@ -414,7 +414,7 @@
       "marketingName": "Xplorer",
       "manufacturer": "Symphony",
       "brand": "Symphony",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 854,
@@ -447,6 +447,51 @@
       "name": "U2",
       "version": "1.0.0",
       "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 12; en-US; i85 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.6.2.1316 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "i85",
+      "marketingName": "i85",
+      "manufacturer": "Symphony",
+      "brand": "Symphony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.6.2.1316",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "Google"
     }
   },
   {

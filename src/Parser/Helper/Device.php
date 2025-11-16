@@ -2648,6 +2648,7 @@ final class Device implements DeviceInterface
             'n1374dl' => 'nokia=nokia n1374dl',
             'ta-1374' => 'nokia=nokia ta-1374',
             'nokia g100' => 'nokia=nokia g100',
+            'n156dl' => 'nokia=nokia n156dl',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -4212,6 +4213,7 @@ final class Device implements DeviceInterface
             'crosscall element' => 'crosscall=crosscall element',
             'crosscall wild' => 'crosscall=crosscall wild',
             'action-x3 pro' => 'crosscall=crosscall action-x3 pro',
+            'core-z5' => 'crosscall=crosscall core-z5',
             // touchmate
             'tm-mid1065' => 'touchmate=touchmate tm-mid1065',
             // ila
@@ -4409,6 +4411,7 @@ final class Device implements DeviceInterface
             'via x45' => 'casper=casper via x45',
             'via l50' => 'casper=casper via l50',
             'via m30' => 'casper=casper via m30',
+            'via f30' => 'casper=casper via f30',
             // hannspree
             'hsg1416' => 'hannspree=hannspree hsg1416',
             'hsg1351' => 'hannspree=hannspree hsg1351',
@@ -4657,6 +4660,7 @@ final class Device implements DeviceInterface
             'jelly max' => 'unihertz=unihertz jelly max',
             'tank 2 pro' => 'unihertz=unihertz tank 2 pro',
             'jelly 2e' => 'unihertz=unihertz jelly 2e',
+            'unia62_s01' => 'unihertz=unihertz unia62_s01',
             // coolpad
             'coolpad e502' => 'coolpad=coolpad e502',
             'coolpad c202' => 'coolpad=coolpad c202',
@@ -5280,6 +5284,8 @@ final class Device implements DeviceInterface
             'u668ac' => 'cricket=cricket u668ac',
             // mintt
             'coolmintt a8' => 'mintt=mintt coolmintt a8',
+            'coolmintt x7' => 'mintt=mintt coolmintt x7',
+            'coolmintt a7' => 'mintt=mintt coolmintt a7',
             // ajib
             'ajib x1' => 'ajib=ajib x1',
             'ajib l1' => 'ajib=ajib l1',
@@ -5626,8 +5632,9 @@ final class Device implements DeviceInterface
             'nova60 i' => 'condor=condor nova 60i',
             // f-plus/f+
             'r570e' => 'f-plus=f-plus r570e',
-            'sh65 2gb/32gb 4800mah gms' => 'f-plus=f-plus sh65',
-            'sa55 2gb/16gb 2400mah gms' => 'f-plus=f-plus sa55',
+            // need to be detected with regex
+            // 'sh65 2gb/32gb 4800mah gms' => 'f-plus=f-plus sh65',
+            // 'sa55 2gb/16gb 2400mah gms' => 'f-plus=f-plus sa55',
             // mobicel
             'ix pro' => 'mobicel=mobicel ix pro',
             'ix' => 'mobicel=mobicel ix',

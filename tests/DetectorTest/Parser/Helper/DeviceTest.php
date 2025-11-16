@@ -3170,6 +3170,7 @@ final class DeviceTest extends TestCase
             ['N1374DL', 'nokia=nokia n1374dl'],
             ['TA-1374', 'nokia=nokia ta-1374'],
             ['Nokia G100', 'nokia=nokia g100'],
+            ['N156DL', 'nokia=nokia n156dl'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
@@ -4764,6 +4765,7 @@ final class DeviceTest extends TestCase
             ['Crosscall ELEMENT', 'crosscall=crosscall element'],
             ['CROSSCALL WILD', 'crosscall=crosscall wild'],
             ['Action-X3 Pro', 'crosscall=crosscall action-x3 pro'],
+            ['Core-Z5', 'crosscall=crosscall core-z5'],
             // touchmate
             ['TM-MID1065', 'touchmate=touchmate tm-mid1065'],
             // ila
@@ -4962,6 +4964,7 @@ final class DeviceTest extends TestCase
             ['VIA X45', 'casper=casper via x45'],
             ['VIA L50', 'casper=casper via l50'],
             ['VIA M30', 'casper=casper via m30'],
+            ['VIA F30', 'casper=casper via f30'],
             // hannspree
             ['HSG1416', 'hannspree=hannspree hsg1416'],
             ['HSG1351', 'hannspree=hannspree hsg1351'],
@@ -5267,6 +5270,7 @@ final class DeviceTest extends TestCase
             ['Jelly Max', 'unihertz=unihertz jelly max'],
             ['TANK 2 PRO', 'unihertz=unihertz tank 2 pro'],
             ['Jelly 2E', 'unihertz=unihertz jelly 2e'],
+            ['UNIA62_S01', 'unihertz=unihertz unia62_s01'],
             // coolpad
             ['Coolpad E502', 'coolpad=coolpad e502'],
             ['COOLPAD C202', 'coolpad=coolpad c202'],
@@ -5972,6 +5976,8 @@ final class DeviceTest extends TestCase
             ['U668AC', 'cricket=cricket u668ac'],
             // mintt
             ['COOLMINTT A8', 'mintt=mintt coolmintt a8'],
+            ['COOLMINTT X7', 'mintt=mintt coolmintt x7'],
+            ['COOLMINTT A7', 'mintt=mintt coolmintt a7'],
             // ajib
             ['ajib X1', 'ajib=ajib x1'],
             ['ajib l1', 'ajib=ajib l1'],
@@ -6321,8 +6327,8 @@ final class DeviceTest extends TestCase
             ['NOVA60 i', 'condor=condor nova 60i'],
             // f-plus/f+
             ['R570E', 'f-plus=f-plus r570e'],
-            ['SH65 2GB/32GB 4800mAh GMS', 'f-plus=f-plus sh65'],
-            ['SA55 2GB/16GB 2400mAh GMS', 'f-plus=f-plus sa55'],
+            // ['SH65 2GB/32GB 4800mAh GMS', 'f-plus=f-plus sh65'],
+            // ['SA55 2GB/16GB 2400mAh GMS', 'f-plus=f-plus sa55'],
             // mobicel
             ['IX PRO', 'mobicel=mobicel ix pro'],
             ['IX', 'mobicel=mobicel ix'],

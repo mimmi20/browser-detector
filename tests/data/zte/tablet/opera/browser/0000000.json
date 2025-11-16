@@ -91,51 +91,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 3.2.1; SmartTab10 Build/HTK75) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31 OPR/14.0.1074.57768"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Smart Tab 10",
-      "marketingName": "Smart Tab 10",
-      "manufacturer": "ZTE",
-      "brand": "vodafone",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "3.2.1",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "14.0.1074.57768",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 3.2.1; SmartTab7 Build/HTK75) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.40 Safari/537.31 OPR/14.0.1074.54070"
     },
     "device": {
@@ -174,9 +129,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.40",
+      "manufacturer": "Google"
     }
   },
   {
@@ -219,9 +174,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.58",
+      "manufacturer": "Google"
     }
   }
 ]
