@@ -2525,17 +2525,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
+      "deviceName": "iPad 11,1",
+      "marketingName": "iPad mini (7.9, 5th Gen)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
-        "width": 1024,
-        "height": 768,
+        "width": 2048,
+        "height": 1536,
         "touch": true,
-        "size": 9.7
+        "size": 7.9
       },
       "type": "tablet",
       "ismobile": true,
@@ -2896,6 +2896,51 @@
         "height": 1488,
         "touch": true,
         "size": 8.3
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "15.0.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "8612.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad12,1;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
       },
       "type": "tablet",
       "ismobile": true,

@@ -206,5 +206,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "oscal c60": {
+    "deviceName": "C60",
+    "marketingName": "C60",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oscal c70": {
+    "deviceName": "C70",
+    "marketingName": "C70",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

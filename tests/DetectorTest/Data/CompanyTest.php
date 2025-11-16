@@ -2848,6 +2848,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'BYD',
                 'key' => 'byd',
             ],
+            [
+                'type' => 'ANS',
+                'name' => 'ANS',
+                'brandname' => 'ANS',
+                'key' => 'ans',
+            ],
+            [
+                'type' => 'Alps',
+                'name' => 'Alps',
+                'brandname' => 'Alps',
+                'key' => 'alps',
+            ],
+            [
+                'type' => 'DIALN',
+                'name' => 'DIALN',
+                'brandname' => 'DIALN',
+                'key' => 'dialn',
+            ],
+            [
+                'type' => 'Eyemoo',
+                'name' => 'Eyemoo',
+                'brandname' => 'Eyemoo',
+                'key' => 'eyemoo',
+            ],
+            [
+                'type' => 'Moxee',
+                'name' => 'Moxee',
+                'brandname' => 'Moxee',
+                'key' => 'moxee',
+            ],
+            [
+                'type' => 'Ravoz',
+                'name' => 'Ravoz',
+                'brandname' => 'Ravoz',
+                'key' => 'ravoz',
+            ],
+            [
+                'type' => 'Gplus',
+                'name' => 'Gplus',
+                'brandname' => 'Gplus',
+                'key' => 'gplus',
+            ],
+            [
+                'type' => 'O2',
+                'name' => 'O2',
+                'brandname' => 'O2',
+                'key' => 'o2',
+            ],
+            [
+                'type' => 'Techstorm',
+                'name' => 'Techstorm',
+                'brandname' => 'Techstorm',
+                'key' => 'techstorm',
+            ],
         ];
     }
 

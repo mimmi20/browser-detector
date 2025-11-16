@@ -948,6 +948,24 @@ enum Company: string implements CompanyInterface
 
     case byd = 'BYD';
 
+    case ans = 'ANS';
+
+    case alps = 'Alps';
+
+    case dialn = 'DIALN';
+
+    case eyemoo = 'Eyemoo';
+
+    case moxee = 'Moxee';
+
+    case ravoz = 'Ravoz';
+
+    case gplus = 'Gplus';
+
+    case o2 = 'O2';
+
+    case techstorm = 'Techstorm';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1420,6 +1438,15 @@ enum Company: string implements CompanyInterface
             'urovo' => self::urovo,
             'razer' => self::razer,
             'byd' => self::byd,
+            'ans' => self::ans,
+            'alps' => self::alps,
+            'dialn' => self::dialn,
+            'eyemoo' => self::eyemoo,
+            'moxee' => self::moxee,
+            'ravoz' => self::ravoz,
+            'gplus' => self::gplus,
+            'o2' => self::o2,
+            'techstorm' => self::techstorm,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
