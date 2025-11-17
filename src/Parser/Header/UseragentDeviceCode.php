@@ -69,8 +69,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $regexes = [
             '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|miui)[^)]+)\)/i',
             '/dalvik\/[\d.]+ \(linux; android [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)sp1a/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
@@ -80,6 +80,9 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/icq_android\/[\d.]+ \(android; \d+; [\d.]+; [^;]+; (?P<devicecode>[^);\/]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;(?P<devicecode>[^);\/]+);[\d.]+/i',
             '/imoandroid\/[\d.]+; \d+; REL; (?P<devicecode>[^);\/]+)/i',
+            '/tivimate\/[\d.]+ \((?P<devicecode>[^);\/]+);/i',
+            '/; model: (?P<devicecode>[^);\/]+)\)/i',
+            '/lbc\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
         ];
 
         $filtered = array_filter(

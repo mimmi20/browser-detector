@@ -2902,6 +2902,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Techstorm',
                 'key' => 'techstorm',
             ],
+            [
+                'type' => 'Digit4G',
+                'name' => 'Digit4G',
+                'brandname' => 'Digit4G',
+                'key' => 'digit4g',
+            ],
+            [
+                'type' => 'TADAAM',
+                'name' => 'TADAAM',
+                'brandname' => 'TADAAM',
+                'key' => 'tadaam',
+            ],
+            [
+                'type' => 'NetBox',
+                'name' => 'NetBox',
+                'brandname' => 'NetBox',
+                'key' => 'netbox',
+            ],
+            [
+                'type' => 'Dynalink',
+                'name' => 'Dynalink',
+                'brandname' => 'Dynalink',
+                'key' => 'dynalink',
+            ],
+            [
+                'type' => 'SAILF',
+                'name' => 'SAILF',
+                'brandname' => 'SAILF',
+                'key' => 'sailf',
+            ],
         ];
     }
 

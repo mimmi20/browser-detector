@@ -1,7 +1,7 @@
 {
   "google chromecast": {
-    "deviceName": "Chromecast",
-    "marketingName": "Chromecast",
+    "deviceName": "Chromecast (2020)",
+    "marketingName": "Chromecast (2020)",
     "manufacturer": "google",
     "brand": "google",
     "dualOrientation": false,
@@ -19,6 +19,22 @@
     "deviceName": "Nexus Player",
     "marketingName": "Nexus Player",
     "manufacturer": "asus",
+    "brand": "google",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv-media-player",
+    "platform": "android"
+  },
+  "google chromecast hd": {
+    "deviceName": "Chromecast HD (2022)",
+    "marketingName": "Chromecast HD (2022)",
+    "manufacturer": "google",
     "brand": "google",
     "dualOrientation": false,
     "simCount": 0,

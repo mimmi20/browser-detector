@@ -966,6 +966,16 @@ enum Company: string implements CompanyInterface
 
     case techstorm = 'Techstorm';
 
+    case digit4g = 'Digit4G';
+
+    case tadaam = 'TADAAM';
+
+    case netbox = 'NetBox';
+
+    case dynalink = 'Dynalink';
+
+    case sailf = 'SAILF';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1447,6 +1457,11 @@ enum Company: string implements CompanyInterface
             'gplus' => self::gplus,
             'o2' => self::o2,
             'techstorm' => self::techstorm,
+            'digit4g' => self::digit4g,
+            'tadaam' => self::tadaam,
+            'netbox' => self::netbox,
+            'dynalink' => self::dynalink,
+            'sailf' => self::sailf,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
