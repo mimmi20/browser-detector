@@ -94,5 +94,53 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "sky elite p55max": {
+    "deviceName": "Elite P55 Max",
+    "marketingName": "Elite P55 Max",
+    "manufacturer": "sky",
+    "brand": "sky",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sky elite max": {
+    "deviceName": "Elite Max",
+    "marketingName": "Elite Max",
+    "manufacturer": "sky",
+    "brand": "sky",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sky elite c63": {
+    "deviceName": "Elite C63",
+    "marketingName": "Elite C63",
+    "manufacturer": "sky",
+    "brand": "sky",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

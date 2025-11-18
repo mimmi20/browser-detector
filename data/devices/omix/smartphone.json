@@ -46,5 +46,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "omix x700": {
+    "deviceName": "X700",
+    "marketingName": "X700",
+    "manufacturer": "omix",
+    "brand": "omix",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "omix x5": {
+    "deviceName": "X5",
+    "marketingName": "X5",
+    "manufacturer": "omix",
+    "brand": "omix",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

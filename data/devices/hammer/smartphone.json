@@ -62,5 +62,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "hammer blade 4": {
+    "deviceName": "Blade 4",
+    "marketingName": "Blade 4",
+    "manufacturer": "hammer",
+    "brand": "hammer",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "hammer iron 4": {
+    "deviceName": "Iron 4",
+    "marketingName": "Iron 4",
+    "manufacturer": "hammer",
+    "brand": "hammer",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

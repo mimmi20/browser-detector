@@ -530,6 +530,7 @@ final class XRequestedWithTest extends TestCase
             ['com.xbh.universal.player', true, 'universal-player', true, null, false, null],
             ['com.mobile.applock.wt', true, 'app-lock', true, null, false, null],
             ['com.solide.filemanager.lte', true, 'solid-file-manager', true, null, false, null],
+            ['com.lechneralexander.privatebrowser', true, 'private-internet-browser', true, null, false, null],
         ];
     }
 }

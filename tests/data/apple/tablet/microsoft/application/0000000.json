@@ -50,53 +50,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "14.2.0",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Word",
-      "modus": null,
-      "version": "2.45.106",
-      "manufacturer": "Microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Microsoft Office Word/2.45.106 (iOS/14.2; Tablet; es-MX; AppStore; Apple/iPad8,10)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 8,1",
-      "marketingName": "iPad Pro 11.0\" Wi-Fi (3rd Gen)",
+      "deviceName": "iPad 8,9",
+      "marketingName": "iPad Pro (11, 2nd Gen)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -136,21 +91,66 @@
   },
   {
     "headers": {
-      "user-agent": "Microsoft Office Mobile/2.45.106 (iOS/14.3; Phone; es-MX; AppStore; Apple/iPad11,1)"
+      "user-agent": "Microsoft Office Word/2.45.106 (iOS/14.3; Tablet; en-US; AppStore; Apple/iPad8,11)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
+      "deviceName": "iPad 8,1",
+      "marketingName": "iPad Pro 11.0\" Wi-Fi (3rd Gen)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
-        "width": 1024,
-        "height": 768,
+        "width": 2388,
+        "height": 1668,
         "touch": true,
-        "size": 9.7
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.3.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "2.45.106",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Mobile/2.45.106 (iOS/14.3; Phone; es-MX; AppStore; Apple/iPad11,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 11,1",
+      "marketingName": "iPad mini (7.9, 5th Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
       },
       "type": "tablet",
       "ismobile": true,

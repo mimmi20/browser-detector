@@ -39,9 +39,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.58",
+      "manufacturer": "Google"
     }
   },
   {
@@ -84,9 +84,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.58",
+      "manufacturer": "Google"
     }
   },
   {
@@ -129,9 +129,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.58",
+      "manufacturer": "Google"
     }
   },
   {
@@ -174,28 +174,28 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.58",
+      "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 3.2.1; HTC Flyer P510e Build/HTK75C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36 OPR/16.0.1212.65583"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HTC A102) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Safari/537.36 OPR/81.3.4292.78688"
     },
     "device": {
       "architecture": null,
-      "deviceName": "P510e",
-      "marketingName": "Flyer",
+      "deviceName": "A102",
+      "marketingName": "A102",
       "manufacturer": "HTC",
       "brand": "HTC",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 1024,
-        "height": 600,
+        "width": 2000,
+        "height": 1200,
         "touch": true,
-        "size": 7
+        "size": 11
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -205,14 +205,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "3.2.1",
+      "version": "12.0.0",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "16.0.1212.65583",
+      "version": "81.3.4292.78688",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -220,7 +220,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "29.0.1547.72",
+      "version": "122.0.6261.149",
       "manufacturer": "Google"
     }
   }

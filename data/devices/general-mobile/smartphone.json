@@ -254,5 +254,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "general-mobile g316": {
+    "deviceName": "G316",
+    "marketingName": "GM 23",
+    "manufacturer": "general-mobile",
+    "brand": "general-mobile",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "general-mobile g702": {
+    "deviceName": "G702",
+    "marketingName": "GM 22 Pro",
+    "manufacturer": "general-mobile",
+    "brand": "general-mobile",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

@@ -14,5 +14,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "f-plus sh65": {
+    "deviceName": "SH65",
+    "marketingName": "SH65",
+    "manufacturer": "f-plus",
+    "brand": "f-plus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "f-plus sa55": {
+    "deviceName": "SA55",
+    "marketingName": "SA55",
+    "manufacturer": "f-plus",
+    "brand": "f-plus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

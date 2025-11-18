@@ -916,6 +916,66 @@ enum Company: string implements CompanyInterface
 
     case orbic = 'Orbic';
 
+    case tabero = 'Tabero';
+
+    case luna = 'Luna';
+
+    case next = 'NEXT';
+
+    case qin = 'QIN';
+
+    case koobee = 'Koobee';
+
+    case airtel = 'Airtel';
+
+    case siragon = 'Siragon';
+
+    case quantum = 'Quantum';
+
+    case vimoq = 'VIMOQ';
+
+    case fortuneShip = 'FortuneShip';
+
+    case hiby = 'HiBy';
+
+    case chcnav = 'CHCnav';
+
+    case hytera = 'Hytera';
+
+    case urovo = 'Urovo';
+
+    case razer = 'Razer';
+
+    case byd = 'BYD';
+
+    case ans = 'ANS';
+
+    case alps = 'Alps';
+
+    case dialn = 'DIALN';
+
+    case eyemoo = 'Eyemoo';
+
+    case moxee = 'Moxee';
+
+    case ravoz = 'Ravoz';
+
+    case gplus = 'Gplus';
+
+    case o2 = 'O2';
+
+    case techstorm = 'Techstorm';
+
+    case digit4g = 'Digit4G';
+
+    case tadaam = 'TADAAM';
+
+    case netbox = 'NetBox';
+
+    case dynalink = 'Dynalink';
+
+    case sailf = 'SAILF';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1372,6 +1432,36 @@ enum Company: string implements CompanyInterface
             'positivo' => self::positivo,
             'brondi' => self::brondi,
             'orbic' => self::orbic,
+            'tabero' => self::tabero,
+            'luna' => self::luna,
+            'next' => self::next,
+            'qin' => self::qin,
+            'koobee', 'shenzhen koobee communication equipment co.,ltd' => self::koobee,
+            'airtel' => self::airtel,
+            'siragon' => self::siragon,
+            'quantum' => self::quantum,
+            'vimoq' => self::vimoq,
+            'fortuneship', 'fortune-ship' => self::fortuneShip,
+            'hiby', 'hi-by' => self::hiby,
+            'chcnav' => self::chcnav,
+            'hytera' => self::hytera,
+            'urovo' => self::urovo,
+            'razer' => self::razer,
+            'byd' => self::byd,
+            'ans' => self::ans,
+            'alps' => self::alps,
+            'dialn' => self::dialn,
+            'eyemoo' => self::eyemoo,
+            'moxee' => self::moxee,
+            'ravoz' => self::ravoz,
+            'gplus' => self::gplus,
+            'o2' => self::o2,
+            'techstorm' => self::techstorm,
+            'digit4g' => self::digit4g,
+            'tadaam' => self::tadaam,
+            'netbox' => self::netbox,
+            'dynalink' => self::dynalink,
+            'sailf' => self::sailf,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1485,6 +1575,7 @@ enum Company: string implements CompanyInterface
             self::cloudMosa => 'CloudMosa Inc.',
             self::dec => 'Digital Equipment Corporation',
             self::moonchild => 'Moonchild Productions',
+            self::koobee => 'Shenzhen koobee Communication Equipment Co.,Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -1592,6 +1683,8 @@ enum Company: string implements CompanyInterface
             self::sunwind => 'sun-wind',
             self::hiNova => 'hi-nova',
             self::moonchild => 'moonchild-productions',
+            self::fortuneShip => 'fortune-ship',
+            self::hiby => 'hi-by',
             default => $this->name,
         };
     }

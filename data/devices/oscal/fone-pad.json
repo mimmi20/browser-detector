@@ -94,5 +94,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "oscal pad 13": {
+    "deviceName": "Pad 13",
+    "marketingName": "Pad 13",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "oscal pad 70": {
+    "deviceName": "Pad 70",
+    "marketingName": "Pad 70",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

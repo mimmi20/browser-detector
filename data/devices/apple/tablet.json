@@ -686,5 +686,53 @@
     },
     "type": "tablet",
     "platform": "ios"
+  },
+  "apple ipad 11,1": {
+    "deviceName": "iPad 11,1",
+    "marketingName": "iPad mini (7.9, 5th Gen)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 7.9
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
+  "apple ipad 8,9": {
+    "deviceName": "iPad 8,9",
+    "marketingName": "iPad Pro (11, 2nd Gen)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2388,
+      "height": 1668,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
+  "apple ipad 12,1": {
+    "deviceName": "iPad 12,1",
+    "marketingName": "iPad Pro (10.2, 9nd Gen)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2160,
+      "height": 1620,
+      "touch": true,
+      "size": 10.2
+    },
+    "type": "tablet",
+    "platform": "ios"
   }
 }

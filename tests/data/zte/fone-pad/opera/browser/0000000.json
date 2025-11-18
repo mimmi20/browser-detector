@@ -39,9 +39,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "26.0.1410.58",
+      "manufacturer": "Google"
     }
   },
   {
@@ -131,6 +131,51 @@
     "engine": {
       "name": "Blink",
       "version": "78.0.3904.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; ZTE T1002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Safari/537.36 OPR/79.5.4195.76987"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T1002",
+      "marketingName": "Light Tab 2 V9A",
+      "manufacturer": "ZTE",
+      "brand": "ZTE",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "79.5.4195.76987",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.193",
       "manufacturer": "Google"
     }
   },

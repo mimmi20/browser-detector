@@ -62,5 +62,37 @@
     },
     "type": "mobile-console",
     "platform": "android"
+  },
+  "anbernic rg505": {
+    "deviceName": "RG505",
+    "marketingName": "RG505",
+    "manufacturer": "anbernic",
+    "brand": "anbernic",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 960,
+      "height": 544,
+      "touch": true,
+      "size": 4.95
+    },
+    "type": "mobile-console",
+    "platform": "android"
+  },
+  "anbernic rg405v": {
+    "deviceName": "RG405V",
+    "marketingName": "RG405V",
+    "manufacturer": "anbernic",
+    "brand": "anbernic",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "mobile-console",
+    "platform": "android"
   }
 }
