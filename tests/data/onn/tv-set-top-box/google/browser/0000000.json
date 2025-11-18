@@ -1,14 +1,14 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; 23049PCD8I) AppleWebKit/537.43 (KHTML, like Gecko) Chrome/118.0.5993.48 Mobile Safari/537.36"
+      "user-agent": "TiviMate/4.7.0 (Onn. 4K Streaming Box; Android 12)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general PCD device",
-      "marketingName": "general PCD device",
-      "manufacturer": "PCD",
-      "brand": "PCD",
+      "deviceName": "4K Streaming Box",
+      "marketingName": "4K Streaming Box",
+      "manufacturer": "Onn",
+      "brand": "Onn",
       "dualOrientation": null,
       "simCount": 0,
       "display": {
@@ -17,9 +17,9 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
       "bits": null
     },
     "os": {
@@ -30,18 +30,18 @@
       "bits": null
     },
     "client": {
-      "name": "Chrome",
+      "name": "Android Webkit",
       "modus": null,
-      "version": "118.0.5993.48",
+      "version": null,
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "118.0.5993.48",
-      "manufacturer": "Google"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

@@ -140,6 +140,51 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "iPad 12,1",
+      "marketingName": "iPad Pro (10.2, 9nd Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2160,
+        "height": 1620,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "16.3.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ-App",
+      "modus": null,
+      "version": "8.8.91.600",
+      "manufacturer": "tencent",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/8.9.85.608 V1_IPH_SQ_8.9.85_1_APP_A Pixel/1668 MiniAppEnable SimpleUISwitch/0 StudyMode/1 CurrentMode/2 CurrentFontScale/1.000000 QQTheme/1000 AppId/537179611 Core/WKWebView Device/Apple(iPad Pro 11-inch 3rd-gen (Cellular)) NetType/WIFI QBWebViewType/1 WKType/1"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "iPad",
       "marketingName": "iPad",
       "manufacturer": "Apple",
@@ -160,14 +205,14 @@
     "os": {
       "name": "iPadOS",
       "marketingName": "iPadOS",
-      "version": "16.3.1",
+      "version": "17.2.0",
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "QQ-App",
       "modus": null,
-      "version": "8.8.91.600",
+      "version": "8.9.85.608",
       "manufacturer": "tencent",
       "type": "application",
       "isbot": false,
