@@ -46,5 +46,53 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "f-plus sa50": {
+    "deviceName": "SA50",
+    "marketingName": "SA50",
+    "manufacturer": "f-plus",
+    "brand": "f-plus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "f-plus sp65": {
+    "deviceName": "SP65",
+    "marketingName": "SP65",
+    "manufacturer": "f-plus",
+    "brand": "f-plus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "f-plus sh60": {
+    "deviceName": "SH60",
+    "marketingName": "SH60",
+    "manufacturer": "f-plus",
+    "brand": "f-plus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }
