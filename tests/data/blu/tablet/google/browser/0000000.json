@@ -1,23 +1,23 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; TECNO Mobile CH9n) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M10L Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Tecno device",
-      "marketingName": "general Tecno device",
-      "manufacturer": "Tecno",
-      "brand": "Tecno",
-      "dualOrientation": null,
+      "deviceName": "M10L Pro",
+      "marketingName": "M10L Pro",
+      "manufacturer": "BLU",
+      "brand": "BLU",
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
       },
-      "type": "mobile-device",
+      "type": "tablet",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -32,7 +32,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "107.0.0.0",
+      "version": "114.0.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -40,7 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "107.0.0.0",
+      "version": "114.0.0.0",
       "manufacturer": "Google"
     }
   }

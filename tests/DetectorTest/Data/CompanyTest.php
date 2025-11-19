@@ -2932,6 +2932,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SAILF',
                 'key' => 'sailf',
             ],
+            [
+                'type' => 'VIIPOO',
+                'name' => 'VIIPOO',
+                'brandname' => 'VIIPOO',
+                'key' => 'viipoo',
+            ],
         ];
     }
 
