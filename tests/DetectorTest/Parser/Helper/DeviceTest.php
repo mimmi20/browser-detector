@@ -4253,6 +4253,7 @@ final class DeviceTest extends TestCase
             ['HAFURY MIX', 'cubot=cubot hafury mix'],
             ['CUBOT CHEETAH 2', 'cubot=cubot cheetah 2'],
             ['P60', 'cubot=cubot p60'],
+            ['KINGKONG POWER 5', 'cubot=cubot kingkong power 5'],
             // Aoyodkg
             ['AOYODKG_A38', 'aoyodkg=aoyodkg a38'],
             // gigaset

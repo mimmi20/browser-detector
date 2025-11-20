@@ -3709,6 +3709,7 @@ final class Device implements DeviceInterface
             'hafury mix' => 'cubot=cubot hafury mix',
             'cubot cheetah 2' => 'cubot=cubot cheetah 2',
             'p60' => 'cubot=cubot p60',
+            'kingkong power 5' => 'cubot=cubot kingkong power 5',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset

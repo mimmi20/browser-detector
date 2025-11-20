@@ -116,7 +116,7 @@
     "/(?<!sn)ipa?d6[c,_]4/i": "apple ipad 6,4",
     "/(?<!sn)ipa?d6[c,_]3/i": "apple ipad 6,3",
     "/(?<!sn)ipa?d5[c,_]4/i": "apple ipad 5,4",
-    "/(?<!sn)ipa?d5[c,_]3/i": "apple ipad 5,3",
+    "/(?<!sn)ipa?d5[c,_]3|ipad air 2 \\(wifi\\)/i": "apple ipad 5,3",
     "/(?<!sn)ipa?d5[c,_]2/i": "apple ipad 5,2",
     "/(?<!sn)ipa?d5[c,_]1/i": "apple ipad 5,1",
     "/(?<!sn)ipa?d4[c,_]9/i": "apple ipad 4,9",
