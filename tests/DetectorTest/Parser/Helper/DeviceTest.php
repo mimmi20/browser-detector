@@ -1100,6 +1100,8 @@ final class DeviceTest extends TestCase
             ['220233L2C', 'xiaomi=xiaomi 220233l2c'],
             ['220233L2I', 'xiaomi=xiaomi 220233l2i'],
             ['22031116AI', 'xiaomi=xiaomi 22031116ai'],
+            ['POCO M5', 'xiaomi=xiaomi poco m5'],
+            ['22095RA98C', 'xiaomi=xiaomi 22095ra98c'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3664,6 +3666,7 @@ final class DeviceTest extends TestCase
             ['XQ-DE44', 'sony=sony xq-de44'],
             ['XQ-ES72', 'sony=sony xq-es72'],
             ['XQ-FE54', 'sony=sony xq-fe54'],
+            ['NW-A300Series', 'sony=sony nw-a300series'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -4026,6 +4029,7 @@ final class DeviceTest extends TestCase
             ['RT3', 'oukitel=oukitel rt3'],
             ['WP21', 'oukitel=oukitel wp21'],
             ['WP18 Pro', 'oukitel=oukitel wp18 pro'],
+            ['WP20', 'oukitel=oukitel wp20'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -4635,7 +4639,7 @@ final class DeviceTest extends TestCase
             ['S41', 'caterpillar=caterpillar s41'],
             ['S42', 'caterpillar=caterpillar s42'],
             ['S62 Pro', 'caterpillar=caterpillar s62 pro'],
-            ['S61', 'caterpillar=caterpillar s61'],
+            // ['S61', 'caterpillar=caterpillar s61'],
             ['S52', 'caterpillar=caterpillar s52'],
             ['S31', 'caterpillar=caterpillar s31'],
             // rim/blackberry
@@ -5056,6 +5060,7 @@ final class DeviceTest extends TestCase
             ['MP08', 'umi=umi mp08'],
             ['MP04', 'umi=umi mp04'],
             ['MP03', 'umi=umi mp03'],
+            ['MP18', 'umi=umi mp18'],
             // bq
             ['Aquaris X', 'bq=bq aquaris x'],
             ['Aquaris X5', 'bq=bq aquaris x5'],

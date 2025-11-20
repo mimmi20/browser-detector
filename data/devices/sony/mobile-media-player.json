@@ -62,5 +62,21 @@
     },
     "type": "mobile-media-player",
     "platform": "java"
+  },
+  "sony nw-a300series": {
+    "deviceName": "NW-A300Series",
+    "marketingName": "Walkman A300",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 3.6
+    },
+    "type": "mobile-media-player",
+    "platform": null
   }
 }

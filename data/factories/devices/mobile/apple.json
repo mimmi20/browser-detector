@@ -82,7 +82,7 @@
     "/(?<!sn)ipa?d13[c,_]5/i": "apple ipad 13,5",
     "/(?<!sn)ipa?d13[c,_]4/i": "apple ipad 13,4",
     "/(?<!sn)ipa?d13[c,_]2/i": "apple ipad 13,2",
-    "/(?<!sn)ipa?d13[c,_]1/i": "apple ipad 13,1",
+    "/(?<!sn)ipa?d13[c,_]1|ipad air 4th gen \\(wifi\\)/i": "apple ipad 13,1",
     "/(?<!sn)ipa?d12[c,_]2/i": "apple ipad 12,2",
     "/(?<!sn)ipa?d12[c,_]1|ipad 9th gen \\(wifi\\)/i": "apple ipad 12,1",
     "/(?<!sn)ipa?d11[c,_]7/i": "apple ipad 11,7",

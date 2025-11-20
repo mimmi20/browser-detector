@@ -1074,6 +1074,8 @@ final class Device implements DeviceInterface
             '220233l2c' => 'xiaomi=xiaomi 220233l2c',
             '220233l2i' => 'xiaomi=xiaomi 220233l2i',
             '22031116ai' => 'xiaomi=xiaomi 22031116ai',
+            'poco m5' => 'xiaomi=xiaomi poco m5',
+            '22095ra98c' => 'xiaomi=xiaomi 22095ra98c',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3133,6 +3135,7 @@ final class Device implements DeviceInterface
             'xq-de44' => 'sony=sony xq-de44',
             'xq-es72' => 'sony=sony xq-es72',
             'xq-fe54' => 'sony=sony xq-fe54',
+            'nw-a300series' => 'sony=sony nw-a300series',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -3488,6 +3491,7 @@ final class Device implements DeviceInterface
             'rt3' => 'oukitel=oukitel rt3',
             'wp21' => 'oukitel=oukitel wp21',
             'wp18 pro' => 'oukitel=oukitel wp18 pro',
+            'wp20' => 'oukitel=oukitel wp20',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -4073,7 +4077,7 @@ final class Device implements DeviceInterface
             's41' => 'caterpillar=caterpillar s41',
             's42' => 'caterpillar=caterpillar s42',
             's62 pro' => 'caterpillar=caterpillar s62 pro',
-            's61' => 'caterpillar=caterpillar s61',
+            // 's61' => 'caterpillar=caterpillar s61',
             's52' => 'caterpillar=caterpillar s52',
             's31' => 'caterpillar=caterpillar s31',
             // rim/blackberry
@@ -4493,6 +4497,7 @@ final class Device implements DeviceInterface
             'mp08' => 'umi=umi mp08',
             'mp04' => 'umi=umi mp04',
             'mp03' => 'umi=umi mp03',
+            'mp18' => 'umi=umi mp18',
             // bq
             'aquaris x' => 'bq=bq aquaris x',
             'aquaris x5' => 'bq=bq aquaris x5',

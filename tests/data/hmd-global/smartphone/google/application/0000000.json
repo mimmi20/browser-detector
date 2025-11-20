@@ -139,51 +139,6 @@
   },
   {
     "headers": {
-      "user-agent": "com.google.android.apps.searchlite/945237 (Linux; U; Android 11; de_DE; Nokia 1.3; Build/RKQ1.200928.002; Cronet/121.0.6167.71)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "1",
-      "marketingName": "1",
-      "manufacturer": "HMD Global",
-      "brand": "Nokia",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Go",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "com.google.android.apps.searchlite/979871 (Linux; U; Android 13; de_AT; Nokia C32; Build/TP1A.220624.014; Cronet/129.0.6614.4)"
     },
     "device": {
@@ -222,9 +177,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "129.0.6614.4",
+      "manufacturer": "Google"
     }
   }
 ]
