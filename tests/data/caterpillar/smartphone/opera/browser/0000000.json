@@ -174,9 +174,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": null,
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -363,51 +363,6 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.5249.126",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; S61) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.215 Mobile Safari/537.36 OPR/73.2.3844.69974"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "S61",
-      "marketingName": "Cat S61",
-      "manufacturer": "Caterpillar",
-      "brand": "Caterpillar",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "73.2.3844.69974",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "108.0.5359.215",
       "manufacturer": "Google"
     }
   }

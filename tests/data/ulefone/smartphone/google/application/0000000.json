@@ -39,9 +39,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "90.0.4430.82",
-      "manufacturer": "Google"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -130,9 +130,54 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "108.0.5359.47",
-      "manufacturer": "Google"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.android.apps.searchlite/173804 (Linux; U; Android 10; de; Note 8P; Build/QP1A.190711.020; Cronet/111.0.5563.55)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Note 8P",
+      "marketingName": "Note 8P",
+      "manufacturer": "Ulefone",
+      "brand": "Ulefone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

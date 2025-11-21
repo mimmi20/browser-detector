@@ -39,9 +39,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "26.0.1410.58",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -84,9 +84,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "26.0.1410.58",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -129,9 +129,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "26.0.1410.58",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -174,8 +174,53 @@
       "bits": null
     },
     "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 3.2.1; HTC Flyer P510e Build/HTK75C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36 OPR/16.0.1212.65583"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P510e",
+      "marketingName": "Flyer",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "3.2.1",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "16.0.1212.65583",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
       "name": "Blink",
-      "version": "26.0.1410.58",
+      "version": "29.0.1547.72",
       "manufacturer": "Google"
     }
   },
