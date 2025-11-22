@@ -16369,7 +16369,7 @@
   },
   "huawei rmo-an00": {
     "deviceName": "RMO-AN00",
-    "marketingName": "X9a",
+    "marketingName": "X40",
     "manufacturer": "huawei",
     "brand": "honor",
     "dualOrientation": true,
@@ -17601,9 +17601,9 @@
   },
   "huawei any-an00": {
     "deviceName": "ANY-AN00",
-    "marketingName": "Honor X30",
+    "marketingName": "X30",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 2,
     "display": {
@@ -21371,6 +21371,38 @@
       "height": 1224,
       "touch": true,
       "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei adt-an00": {
+    "deviceName": "ADT-AN00",
+    "marketingName": "X40 GT",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2388,
+      "height": 1080,
+      "touch": true,
+      "size": 6.81
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei tfy-an40": {
+    "deviceName": "TFY-AN40",
+    "marketingName": "Play 6T Pro",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2388,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
     },
     "type": "smartphone",
     "platform": "android"
