@@ -39,9 +39,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "26.0.1410.58",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -219,9 +219,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": null,
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -444,9 +444,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": null,
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -581,6 +581,51 @@
     "engine": {
       "name": "Blink",
       "version": "38.0.2125.102",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; S500 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.138 Mobile Safari/537.36 OPR/22.0.1485.78487"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S500",
+      "marketingName": "CloudMobile",
+      "manufacturer": "Acer",
+      "brand": "Acer",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "22.0.1485.78487",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "35.0.1916.138",
       "manufacturer": "Google"
     }
   },

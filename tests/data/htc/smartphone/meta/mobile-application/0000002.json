@@ -1220,17 +1220,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Desire",
-      "marketingName": "Desire",
+      "deviceName": "Desire 22 Pro",
+      "marketingName": "Desire 22 Pro",
       "manufacturer": "HTC",
       "brand": "HTC",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 2412,
+        "height": 1080,
         "touch": true,
-        "size": 3.7
+        "size": 6.6
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1301,6 +1301,51 @@
     "engine": {
       "name": "Blink",
       "version": "95.0.4638.74",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; HTC Desire 630 dual sim Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 Instagram 278.0.0.22.117 Android (23/6.0.1; 320dpi; 720x1184; HTC/htc; HTC Desire 630 dual sim; htc_a16dwgl; qcom; fa_IR; 471827227)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Desire",
+      "marketingName": "Desire",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "278.0.0.22.117",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.71",
       "manufacturer": "Google"
     }
   },

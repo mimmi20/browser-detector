@@ -50,6 +50,7 @@ final class SecChUaModel implements DeviceCodeInterface
         return match ($code) {
             // special case
             'a065' => 'nothing-phone=nothing-phone a065',
+            's61' => 'doogee=doogee s61',
             default => (new Device())->getDeviceCode($code),
         };
     }

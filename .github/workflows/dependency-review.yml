@@ -20,19 +20,26 @@ permissions:
 
 jobs:
   dependency-review:
-    runs-on: "ubuntu-latest"
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v5"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-          lfs: false
-          persist-credentials: false
+    name: "Review"
+    uses: "mimmi20/ci/.github/workflows/review-dependency.yml@8.4"
 
-      - name: "Dependency Review"
-        uses: "actions/dependency-review-action@v4"
-        with:
-          "license-check": true
-          "vulnerability-check": true
-          "comment-summary-in-pr": true
+  # This is a meta job to avoid to have to constantly change the protection rules
+  # whenever we touch the matrix.
+  review-status:
+    name: "Review Status"
+
+    runs-on: "ubuntu-latest"
+
+    if: always()
+
+    needs:
+      - "dependency-review"
+
+    steps:
+      - name: Successful run
+        if: ${{ !(contains(needs.*.result, 'failure')) }}
+        run: exit 0
+
+      - name: Failing run
+        if: ${{ contains(needs.*.result, 'failure') }}
+        run: exit 1

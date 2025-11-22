@@ -23,6 +23,7 @@ permissions:
 jobs:
   action:
     runs-on: "ubuntu-latest"
+
     steps:
       - uses: "dessant/reaction-comments@v4"
         with:

@@ -1,23 +1,23 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; en; TECNO Mobile LG6n Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 HiBrowser/v2.9.3.4 UWS/ Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; vi20220819) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.2.86.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Tecno device",
-      "marketingName": "general Tecno device",
-      "manufacturer": "Tecno",
-      "brand": "Tecno",
-      "dualOrientation": null,
-      "simCount": 0,
+      "deviceName": "vi20220819",
+      "marketingName": "R6",
+      "manufacturer": "VIIPOO",
+      "brand": "VIIPOO",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": true,
         "size": null
       },
-      "type": "mobile-device",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -30,17 +30,17 @@
       "bits": null
     },
     "client": {
-      "name": "iBrowser",
+      "name": "Yandex Browser",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "version": "23.1.2.86.00",
+      "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "103.0.5060.129",
+      "version": "108.0.0.0",
       "manufacturer": "Google"
     }
   }
