@@ -1108,6 +1108,7 @@ final class DeviceTest extends TestCase
             ['Redmi Note 12S', 'xiaomi=xiaomi redmi note 12s'],
             ['22021119KR', 'xiaomi=xiaomi 22021119kr'],
             ['22081281AC', 'xiaomi=xiaomi 22081281ac'],
+            ['Redmi Note 12', 'xiaomi=xiaomi redmi note 12'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -2611,6 +2612,8 @@ final class DeviceTest extends TestCase
             ['SC-56C', 'samsung=samsung sc-56c'],
             ['SM-T737', 'samsung=samsung sm-t737'],
             ['SAMSUNG SM-T737', 'samsung=samsung sm-t737'],
+            ['SM-M136B', 'samsung=samsung sm-m136b'],
+            ['SAMSUNG SM-M136B', 'samsung=samsung sm-m136b'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3969,6 +3972,8 @@ final class DeviceTest extends TestCase
             ['V2185A', 'vivo=vivo v2185a'],
             ['V2214', 'vivo=vivo v2214'],
             ['V2166BA', 'vivo=vivo v2166ba'],
+            ['I2208', 'vivo=vivo i2208'],
+            ['V2188A', 'vivo=vivo v2188a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -4788,6 +4793,7 @@ final class DeviceTest extends TestCase
             ['Infinix X6821', 'infinix=infinix x6821'],
             ['Infinix X6820', 'infinix=infinix x6820'],
             ['Infinix X668', 'infinix=infinix x668'],
+            ['Infinix X6827', 'infinix=infinix x6827'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -5457,6 +5463,8 @@ final class DeviceTest extends TestCase
             ['Black_E', 'kalley=kalley black e'],
             ['Silver_Max_Pro_2', 'kalley=kalley silver max pro 2'],
             ['Element 5', 'kalley=kalley element 5'],
+            ['Black_G_2', 'kalley=kalley black g 2'],
+            ['Black_Z', 'kalley=kalley black z'],
             // human-ware
             ['BrailleNote Touch', 'human-ware=human-ware braillenote touch'],
             ['BrailleNote Touch +', 'human-ware=human-ware braillenote touch plus'],

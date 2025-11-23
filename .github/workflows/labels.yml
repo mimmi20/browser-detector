@@ -25,7 +25,7 @@ jobs:
 
   # This is a meta job to avoid to have to constantly change the protection rules
   # whenever we touch the matrix.
-  cleanup-status:
+  sync-status:
     name: "Sync Status"
 
     runs-on: "ubuntu-latest"

@@ -4456,21 +4456,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; W_C800 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; VHEM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "WC800",
-      "marketingName": "View 2",
+      "deviceName": "VHEM",
+      "marketingName": "10",
       "manufacturer": "wiko",
       "brand": "wiko",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 1528,
+        "width": 1600,
         "height": 720,
         "touch": true,
-        "size": 6
+        "size": 6.75
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4480,14 +4480,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.0.0",
+      "version": "12.0.0",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome",
       "modus": null,
-      "version": "107.0.5304.141",
+      "version": "107.0.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4495,7 +4495,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "107.0.5304.141",
+      "version": "107.0.0.0",
       "manufacturer": "Google"
     }
   }

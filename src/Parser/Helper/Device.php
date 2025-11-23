@@ -1082,6 +1082,7 @@ final class Device implements DeviceInterface
             'redmi note 12s' => 'xiaomi=xiaomi redmi note 12s',
             '22021119kr' => 'xiaomi=xiaomi 22021119kr',
             '22081281ac' => 'xiaomi=xiaomi 22081281ac',
+            'redmi note 12' => 'xiaomi=xiaomi redmi note 12',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2094,6 +2095,7 @@ final class Device implements DeviceInterface
             'scg18' => 'samsung=samsung scg18',
             'sc-56c' => 'samsung=samsung sc-56c',
             'sm-t737', 'samsung sm-t737' => 'samsung=samsung sm-t737',
+            'sm-m136b', 'samsung sm-m136b' => 'samsung=samsung sm-m136b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3434,6 +3436,8 @@ final class Device implements DeviceInterface
             'v2185a' => 'vivo=vivo v2185a',
             'v2214' => 'vivo=vivo v2214',
             'v2166ba' => 'vivo=vivo v2166ba',
+            'i2208' => 'vivo=vivo i2208',
+            'v2188a' => 'vivo=vivo v2188a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4222,6 +4226,7 @@ final class Device implements DeviceInterface
             'infinix x6821' => 'infinix=infinix x6821',
             'infinix x6820' => 'infinix=infinix x6820',
             'infinix x668' => 'infinix=infinix x668',
+            'infinix x6827' => 'infinix=infinix x6827',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -4829,6 +4834,8 @@ final class Device implements DeviceInterface
             'black_e' => 'kalley=kalley black e',
             'silver_max_pro_2' => 'kalley=kalley silver max pro 2',
             'element 5' => 'kalley=kalley element 5',
+            'black_g_2' => 'kalley=kalley black g 2',
+            'black_z' => 'kalley=kalley black z',
             // human-ware
             'braillenote touch' => 'human-ware=human-ware braillenote touch',
             'braillenote touch +' => 'human-ware=human-ware braillenote touch plus',

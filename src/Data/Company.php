@@ -978,6 +978,8 @@ enum Company: string implements CompanyInterface
 
     case viipoo = 'VIIPOO';
 
+    case wiko = 'Wiko';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1465,6 +1467,7 @@ enum Company: string implements CompanyInterface
             'dynalink' => self::dynalink,
             'sailf' => self::sailf,
             'viipoo' => self::viipoo,
+            'wiko' => self::wiko,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

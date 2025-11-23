@@ -2938,6 +2938,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VIIPOO',
                 'key' => 'viipoo',
             ],
+            [
+                'type' => 'Wiko',
+                'name' => 'Wiko',
+                'brandname' => 'Wiko',
+                'key' => 'wiko',
+            ],
         ];
     }
 
