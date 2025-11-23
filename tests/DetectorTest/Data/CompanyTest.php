@@ -2944,6 +2944,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Wiko',
                 'key' => 'wiko',
             ],
+            [
+                'type' => 'Star',
+                'name' => 'Star',
+                'brandname' => 'Star',
+                'key' => 'star',
+            ],
         ];
     }
 

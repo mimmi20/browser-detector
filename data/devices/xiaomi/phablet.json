@@ -1487,38 +1487,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "xiaomi m2104k10ac": {
-    "deviceName": "M2104K10AC",
-    "marketingName": "Redmi K40 Gaming Edition",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.67
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi redmi k40 gaming": {
-    "deviceName": "Redmi K40 Gaming Edition",
-    "marketingName": "Redmi K40 Gaming Edition",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.67
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "xiaomi redmi note 10s": {
     "deviceName": "Redmi Note 10S",
     "marketingName": "Redmi Note 10S",
@@ -2113,7 +2081,7 @@
   },
   "xiaomi 22101317c": {
     "deviceName": "22101317C",
-    "marketingName": "Redmi Note 12",
+    "marketingName": "Redmi Note 12 5G (China)",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -2587,6 +2555,38 @@
       "height": 1080,
       "touch": true,
       "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22061218c": {
+    "deviceName": "22061218C",
+    "marketingName": "Mix Fold 2",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 1940,
+      "touch": true,
+      "size": 8.02
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22041216c": {
+    "deviceName": "22041216C",
+    "marketingName": "Redmi Note 11T Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
     },
     "type": "phablet",
     "platform": "android"

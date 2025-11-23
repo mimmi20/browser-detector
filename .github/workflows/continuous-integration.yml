@@ -44,6 +44,10 @@ jobs:
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       skip-php-install: false
       skip-npm-install: true
+      skip-nasm-install: true
+      skip-libimagequant-install: true
+      skip-librabbitmq-install: true
+      skip-libgif-install: true
 
   analytics:
     name: "Project Analysis"
@@ -62,6 +66,12 @@ jobs:
       skip-eslint: true
       skip-stylelint: true
       skip-prettier: true
+      skip-psalm: false
+      skip-nasm-install: true
+      skip-libimagequant-install: true
+      skip-librabbitmq-install: true
+      skip-libgif-install: true
+      skip-oxlint: true
       phpcs-options: ""
 
   tests:

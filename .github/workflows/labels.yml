@@ -25,8 +25,8 @@ jobs:
 
   # This is a meta job to avoid to have to constantly change the protection rules
   # whenever we touch the matrix.
-  sync-status:
-    name: "Sync Status"
+  label-status:
+    name: "Sync Label Status"
 
     runs-on: "ubuntu-latest"
 
