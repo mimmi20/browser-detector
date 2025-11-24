@@ -10,6 +10,9 @@ on:
       - "closed"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   cleanup:
     name: "Cleanup Caches"
