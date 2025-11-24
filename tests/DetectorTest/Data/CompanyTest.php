@@ -2956,6 +2956,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Aiwa',
                 'key' => 'aiwa',
             ],
+            [
+                'type' => 'JoySurf',
+                'name' => 'JoySurf',
+                'brandname' => 'JoySurf',
+                'key' => 'joy-surf',
+            ],
         ];
     }
 
@@ -4086,6 +4092,12 @@ final class CompanyTest extends TestCase
                 'name' => 'HiBy',
                 'brandname' => 'HiBy',
                 'key' => 'hi-by',
+            ],
+            [
+                'fallback' => 'joy-surf',
+                'name' => 'JoySurf',
+                'brandname' => 'JoySurf',
+                'key' => 'joy-surf',
             ],
         ];
     }

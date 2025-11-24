@@ -1127,6 +1127,7 @@ final class DeviceTest extends TestCase
             ['SHARK PAR-H0', 'xiaomi=xiaomi shark par-h0'],
             ['21121210C', 'xiaomi=xiaomi 21121210c'],
             ['22041219I', 'xiaomi=xiaomi 22041219i'],
+            ['22041219C', 'xiaomi=xiaomi 22041219c'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -4039,6 +4040,7 @@ final class DeviceTest extends TestCase
             ['I2206', 'vivo=vivo i2206'],
             ['V2196A', 'vivo=vivo v2196a'],
             ['V2183A', 'vivo=vivo v2183a'],
+            ['V2131', 'vivo=vivo v2131'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -4867,6 +4869,8 @@ final class DeviceTest extends TestCase
             ['Infinix X676C', 'infinix=infinix x676c'],
             ['Infinix X6819', 'infinix=infinix x6819'],
             ['Infinix X676B', 'infinix=infinix x676b'],
+            ['Infinix X672', 'infinix=infinix x672'],
+            ['Infinix X670', 'infinix=infinix x670'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -4989,6 +4993,7 @@ final class DeviceTest extends TestCase
             ['NEXG N6', 'walton=walton nexg n6'],
             ['ORBIT Y21', 'walton=walton orbit y21'],
             ['ORBIT Y50', 'walton=walton orbit y50'],
+            ['Primo GH11', 'walton=walton primo gh11'],
             // kempler-strauss
             ['ZKEMPLER PLUS', 'kempler-strauss=kempler-strauss zkempler plus'],
             ['ZKEMPLER_PRO', 'kempler-strauss=kempler-strauss zkempler pro'],
@@ -7319,6 +7324,8 @@ final class DeviceTest extends TestCase
             ['20220728MT', 'sailf=sailf 20220728mt'],
             // viipoo
             ['vi20220819', 'viipoo=viipoo vi20220819'],
+            // joy-surf
+            ['TB-JS101A', 'joy-surf=joy-surf tb-js101a'],
             // other
             ['Model"', null],
             [': "', null],

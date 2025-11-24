@@ -1101,6 +1101,7 @@ final class Device implements DeviceInterface
             'shark par-h0' => 'xiaomi=xiaomi shark par-h0',
             '21121210c' => 'xiaomi=xiaomi 21121210c',
             '22041219i' => 'xiaomi=xiaomi 22041219i',
+            '22041219c' => 'xiaomi=xiaomi 22041219c',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3501,6 +3502,7 @@ final class Device implements DeviceInterface
             'i2206' => 'vivo=vivo i2206',
             'v2196a' => 'vivo=vivo v2196a',
             'v2183a' => 'vivo=vivo v2183a',
+            'v2131' => 'vivo=vivo v2131',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4298,6 +4300,8 @@ final class Device implements DeviceInterface
             'infinix x676c' => 'infinix=infinix x676c',
             'infinix x6819' => 'infinix=infinix x6819',
             'infinix x676b' => 'infinix=infinix x676b',
+            'infinix x672' => 'infinix=infinix x672',
+            'infinix x670' => 'infinix=infinix x670',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -4421,6 +4425,7 @@ final class Device implements DeviceInterface
             'nexg n6' => 'walton=walton nexg n6',
             'orbit y21' => 'walton=walton orbit y21',
             'orbit y50' => 'walton=walton orbit y50',
+            'primo gh11' => 'walton=walton primo gh11',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             'zkempler_pro' => 'kempler-strauss=kempler-strauss zkempler pro',
@@ -6591,6 +6596,8 @@ final class Device implements DeviceInterface
             '20220728mt' => 'sailf=sailf 20220728mt',
             // viipoo
             'vi20220819' => 'viipoo=viipoo vi20220819',
+            // joy-surf
+            'tb-js101a' => 'joy-surf=joy-surf tb-js101a',
             // other
             default => null,
         };
