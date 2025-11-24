@@ -2950,6 +2950,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Star',
                 'key' => 'star',
             ],
+            [
+                'type' => 'Aiwa',
+                'name' => 'Aiwa',
+                'brandname' => 'Aiwa',
+                'key' => 'aiwa',
+            ],
         ];
     }
 

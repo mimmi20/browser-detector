@@ -2399,7 +2399,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F721B",
-      "marketingName": "Galaxy Z Flip 4 (International)",
+      "marketingName": "Galaxy Z Flip 4 5G (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -2489,7 +2489,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SC-54C",
-      "marketingName": "Galaxy Z Flip 4 5G",
+      "marketingName": "Galaxy Z Flip 4 5G (Japan)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -2529,12 +2529,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SCG16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SCG16",
+      "marketingName": "Galaxy Z Fold 4 5G (Japan)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2176,
+        "height": 1812,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; SC-55C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "SC-55C",
-      "marketingName": "Galaxy Z Fold 4 5G",
+      "marketingName": "Galaxy Z Fold 4 5G (Japan)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -2579,7 +2624,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F721U1",
-      "marketingName": "Galaxy Z Flip 4 (USA unlocked)",
+      "marketingName": "Galaxy Z Flip 4 5G (USA unlocked)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -2939,7 +2984,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F721B",
-      "marketingName": "Galaxy Z Flip 4 (International)",
+      "marketingName": "Galaxy Z Flip 4 5G (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -2984,7 +3029,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SCG17",
-      "marketingName": "Galaxy Z Flip 4",
+      "marketingName": "Galaxy Z Flip 4 5G (Japan)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -3029,7 +3074,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F721B",
-      "marketingName": "Galaxy Z Flip 4 (International)",
+      "marketingName": "Galaxy Z Flip 4 5G (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -3164,7 +3209,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F721U",
-      "marketingName": "Galaxy Z Flip 4 (USA)",
+      "marketingName": "Galaxy Z Flip 4 5G (USA)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -3209,7 +3254,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F721C",
-      "marketingName": "Galaxy Z Flip 4",
+      "marketingName": "Galaxy Z Flip 4 5G",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -3344,7 +3389,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-F721W",
-      "marketingName": "Galaxy Z Flip 4 (Canada)",
+      "marketingName": "Galaxy Z Flip 4 5G (Canada)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -4497,51 +4542,6 @@
     "engine": {
       "name": "Blink",
       "version": "136.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SCV45) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SCV45",
-      "marketingName": "Galaxy Note 10+ 4G WiMAX 2+",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 3040,
-        "height": 1440,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "81.0.4044.138",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
       "manufacturer": "Google"
     }
   }
