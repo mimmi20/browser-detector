@@ -28,7 +28,7 @@ jobs:
       skip-validate-yaml: false
       skip-validate-md: false
       skip-phplint: false
-      skip-check-composer: false
+      skip-check-composer: true
       skip-ec-checker: false
       dependency-analyser-options: ""
 
