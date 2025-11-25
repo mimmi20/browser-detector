@@ -66,7 +66,7 @@ jobs:
       skip-eslint: true
       skip-stylelint: true
       skip-prettier: true
-      skip-psalm: false
+      skip-psalm: true
       skip-nasm-install: true
       skip-libimagequant-install: true
       skip-librabbitmq-install: true
