@@ -126,5 +126,21 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "oscal pad 10": {
+    "deviceName": "Pad 10",
+    "marketingName": "Pad 10",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

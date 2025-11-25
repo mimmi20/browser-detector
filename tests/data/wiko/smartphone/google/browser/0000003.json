@@ -1,14 +1,104 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; VHEM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VHEM",
+      "marketingName": "10",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.75
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; W_C800 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "WC800",
+      "marketingName": "View 2",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1528,
+        "height": 720,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "107.0.5304.141",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.5304.141",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; W-K211-OPE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "W-K211-OPE",
       "marketingName": "Y51",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -52,8 +142,8 @@
       "architecture": null,
       "deviceName": "W-K630-EEA",
       "marketingName": "Y82",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -97,8 +187,8 @@
       "architecture": null,
       "deviceName": "W-V850-EEA",
       "marketingName": "W-V850-EEA",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -142,8 +232,8 @@
       "architecture": null,
       "deviceName": "W-P611-EEA",
       "marketingName": "View 3 Pro",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -187,8 +277,8 @@
       "architecture": null,
       "deviceName": "W-V755-EEA",
       "marketingName": "Power U30",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -232,8 +322,8 @@
       "architecture": null,
       "deviceName": "W-P311-EEA",
       "marketingName": "View 3",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -277,8 +367,8 @@
       "architecture": null,
       "deviceName": "W-K521-OPE",
       "marketingName": "Y52",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -322,8 +412,8 @@
       "architecture": null,
       "deviceName": "W-K610-OPE",
       "marketingName": "Y62",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -375,8 +465,8 @@
       "architecture": null,
       "deviceName": "W-V755-OPE",
       "marketingName": "Power U30",
-      "manufacturer": "wiko",
-      "brand": "wiko",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
       "dualOrientation": true,
       "simCount": 2,
       "display": {

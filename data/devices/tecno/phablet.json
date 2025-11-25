@@ -158,5 +158,53 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "tecno lg6n": {
+    "deviceName": "LG6n",
+    "marketingName": "Pova Neo 2",
+    "manufacturer": "tecno",
+    "brand": "tecno",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1640,
+      "height": 720,
+      "touch": true,
+      "size": 6.82
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "tecno lg8n": {
+    "deviceName": "LG8n",
+    "marketingName": "Pova 4 Pro",
+    "manufacturer": "tecno",
+    "brand": "tecno",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.66
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "tecno lg7n": {
+    "deviceName": "LG7n",
+    "marketingName": "Pova 4",
+    "manufacturer": "tecno",
+    "brand": "tecno",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.82
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

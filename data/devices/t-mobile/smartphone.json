@@ -462,5 +462,53 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "t-mobile t phone": {
+    "deviceName": "T Phone",
+    "marketingName": "T Phone",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "t-mobile tmaf035g": {
+    "deviceName": "TMAF035G",
+    "marketingName": "REVVL 6 Pro 5G",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1640,
+      "height": 720,
+      "touch": true,
+      "size": 6.82
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "t-mobile tmaf025g": {
+    "deviceName": "TMAF025G",
+    "marketingName": "REVVL 6 5G",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

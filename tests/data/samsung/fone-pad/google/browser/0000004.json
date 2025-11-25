@@ -2841,7 +2841,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T738U",
-      "marketingName": "Galaxy Tab S7 FE 5G (USA)",
+      "marketingName": "Galaxy Tab S7 FE 12.4\" 5G (USA)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -3146,6 +3146,51 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.69",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T737) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.99 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T737",
+      "marketingName": "Galaxy Tab S7 FE 12.4\" LTE",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.4
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.5005.99",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.99",
       "manufacturer": "Google"
     }
   },
@@ -3606,7 +3651,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T738T",
-      "marketingName": "Galaxy Tab S7 FE 5G",
+      "marketingName": "Galaxy Tab S7 FE 12.4\" 5G",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -3651,7 +3696,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T738V",
-      "marketingName": "Galaxy Tab S7 FE 5G",
+      "marketingName": "Galaxy Tab S7 FE 12.4\" 5G",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -4451,51 +4496,6 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.146",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; en-us; SM-X926B Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.111 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-X926B",
-      "marketingName": "Galaxy Tab S10 Ultra 14.6\" 5G",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2960,
-        "height": 1848,
-        "touch": true,
-        "size": 14.6
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "76.0.3809.111",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "76.0.3809.111",
       "manufacturer": "Google"
     }
   }

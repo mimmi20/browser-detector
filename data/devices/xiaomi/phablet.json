@@ -145,7 +145,7 @@
   },
   "xiaomi m2003j15sc": {
     "deviceName": "M2003J15SC",
-    "marketingName": "Redmi Note 9",
+    "marketingName": "Redmi Note 10X",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -801,7 +801,7 @@
   },
   "xiaomi 22101316uc": {
     "deviceName": "22101316UC",
-    "marketingName": "Redmi Note 12 Pro+ 5G",
+    "marketingName": "Redmi Note 12 Pro DE",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -1487,38 +1487,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "xiaomi m2104k10ac": {
-    "deviceName": "M2104K10AC",
-    "marketingName": "Redmi K40 Gaming Edition",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.67
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi redmi k40 gaming": {
-    "deviceName": "Redmi K40 Gaming Edition",
-    "marketingName": "Redmi K40 Gaming Edition",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.67
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "xiaomi redmi note 10s": {
     "deviceName": "Redmi Note 10S",
     "marketingName": "Redmi Note 10S",
@@ -1569,6 +1537,22 @@
   },
   "xiaomi 2303era42l": {
     "deviceName": "2303ERA42L",
+    "marketingName": "Redmi Note 12S",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 12s": {
+    "deviceName": "Redmi Note 12S",
     "marketingName": "Redmi Note 12S",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
@@ -2097,7 +2081,7 @@
   },
   "xiaomi 22101317c": {
     "deviceName": "22101317C",
-    "marketingName": "Redmi Note 12",
+    "marketingName": "Redmi Note 12 5G (China)",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -2491,6 +2475,134 @@
       "height": 1080,
       "touch": true,
       "size": 6.53
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22101316up": {
+    "deviceName": "22101316UP",
+    "marketingName": "Redmi Note 12 Discovery",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22095ra98c": {
+    "deviceName": "22095RA98C",
+    "marketingName": "Redmi Note 11R 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.58
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 12 pro": {
+    "deviceName": "Redmi Note 12 Pro",
+    "marketingName": "Redmi Note 12 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22021119kr": {
+    "deviceName": "22021119KR",
+    "marketingName": "Redmi Note 10T 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 12": {
+    "deviceName": "Redmi Note 12",
+    "marketingName": "Redmi Note 12",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22061218c": {
+    "deviceName": "22061218C",
+    "marketingName": "Mix Fold 2",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 1940,
+      "touch": true,
+      "size": 8.02
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22041216c": {
+    "deviceName": "22041216C",
+    "marketingName": "Redmi Note 11T Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22041219c": {
+    "deviceName": "22041219C",
+    "marketingName": "Redmi Note 11E",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.58
     },
     "type": "phablet",
     "platform": "android"

@@ -2932,6 +2932,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SAILF',
                 'key' => 'sailf',
             ],
+            [
+                'type' => 'VIIPOO',
+                'name' => 'VIIPOO',
+                'brandname' => 'VIIPOO',
+                'key' => 'viipoo',
+            ],
+            [
+                'type' => 'Wiko',
+                'name' => 'Wiko',
+                'brandname' => 'Wiko',
+                'key' => 'wiko',
+            ],
+            [
+                'type' => 'Star',
+                'name' => 'Star',
+                'brandname' => 'Star',
+                'key' => 'star',
+            ],
+            [
+                'type' => 'Aiwa',
+                'name' => 'Aiwa',
+                'brandname' => 'Aiwa',
+                'key' => 'aiwa',
+            ],
+            [
+                'type' => 'JoySurf',
+                'name' => 'JoySurf',
+                'brandname' => 'JoySurf',
+                'key' => 'joy-surf',
+            ],
         ];
     }
 
@@ -4062,6 +4092,12 @@ final class CompanyTest extends TestCase
                 'name' => 'HiBy',
                 'brandname' => 'HiBy',
                 'key' => 'hi-by',
+            ],
+            [
+                'fallback' => 'joy-surf',
+                'name' => 'JoySurf',
+                'brandname' => 'JoySurf',
+                'key' => 'joy-surf',
             ],
         ];
     }

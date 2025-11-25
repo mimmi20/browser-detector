@@ -46,51 +46,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/7.2.0.0 TencentDocs/3.1.7 Pixel/1668 Core/WKWebView Device/Apple(iPad Pro (11-inch) (4th generation)) NetType/undefined _tdocFlag/2 exkb/1 QBWebViewType/1 WKType/1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 14,3",
-      "marketingName": "iPad Pro (11, 4th Gen)",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2388,
-        "height": 1668,
-        "touch": true,
-        "size": 11
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "17.2.0",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "QQ-App",
-      "modus": null,
-      "version": "7.2.0.0",
-      "manufacturer": "tencent",
-      "type": "application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/9.0.17.638 V1_IPH_SQ_9.0.17_1_APP_A Pixel/1668 MiniAppEnable SimpleUISwitch/0 StudyMode/0 CurrentMode/0 CurrentFontScale/1.000000 QQTheme/1102 AppId/537203253 Core/WKWebView Device/Apple(iPad Pro 11 inch 5th Gen (WiFi)) NetType/WIFI QBWebViewType/1 WKType/1"
     },
     "device": {
@@ -141,7 +96,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 12,1",
-      "marketingName": "iPad Pro (10.2, 9nd Gen)",
+      "marketingName": "iPad (10.2, 9th Gen)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -181,21 +136,156 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/8.9.85.608 V1_IPH_SQ_8.9.85_1_APP_A Pixel/1668 MiniAppEnable SimpleUISwitch/0 StudyMode/1 CurrentMode/2 CurrentFontScale/1.000000 QQTheme/1000 AppId/537179611 Core/WKWebView Device/Apple(iPad Pro 11-inch 3rd-gen (Cellular)) NetType/WIFI QBWebViewType/1 WKType/1"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/9.0.16.626 V1_IPH_SQ_9.0.16_1_APP_A Pixel/1536 MiniAppEnable SimpleUISwitch/1 StudyMode/0 CurrentMode/1 CurrentFontScale/1.000000 QQTheme/3065 AppId/537201281 Core/WKWebView Device/Apple(iPad 6 (WiFi)) NetType/WIFI QBWebViewType/1 WKType/1"
     },
     "device": {
       "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
+      "deviceName": "iPad 7,5",
+      "marketingName": "iPad 6 (9.7)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
-        "width": 1024,
-        "height": 768,
+        "width": 2048,
+        "height": 1536,
         "touch": true,
         "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "15.2.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ-App",
+      "modus": null,
+      "version": "9.0.16.626",
+      "manufacturer": "tencent",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19F77 QQ/8.9.3.655 V1_IPH_SQ_8.9.3_1_APP_A Pixel/1488 MiniAppEnable SimpleUISwitch/0 StudyMode/0 CurrentMode/0 CurrentFontScale/1.000000 QQTheme/1000 AppId/537127421 Core/WKWebView Device/Apple(iPad mini 6th Gen (WiFi)) NetType/WIFI QBWebViewType/1 WKType/1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 14,1",
+      "marketingName": "iPad Mini (8.3, 6th Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2266,
+        "height": 1488,
+        "touch": true,
+        "size": 8.3
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "15.5.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ-App",
+      "modus": null,
+      "version": "8.9.3.655",
+      "manufacturer": "tencent",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/8.9.75.613 V1_IPH_SQ_8.9.75_1_APP_A Pixel/1536 MiniAppEnable SimpleUISwitch/0 StudyMode/0 CurrentMode/0 CurrentFontScale/1.000000 QQTheme/1102 AppId/537172558 Core/WKWebView Device/Apple(iPad Air 2 (WiFi)) NetType/WIFI QBWebViewType/1 WKType/1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 5,3",
+      "marketingName": "iPad Air 2",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "15.7.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ-App",
+      "modus": null,
+      "version": "8.9.75.613",
+      "manufacturer": "tencent",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/9.0.17.638 V1_IPH_SQ_9.0.17_1_APP_A Pixel/1640 MiniAppEnable SimpleUISwitch/0 StudyMode/0 CurrentMode/0 CurrentFontScale/0.941000 QQTheme/1000 AppId/537203253 Core/WKWebView Device/Apple(iPad Air 4th Gen (WiFi)) NetType/WIFI QBWebViewType/1 WKType/1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 13,1",
+      "marketingName": "iPad Air (10.9, 4rd Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2360,
+        "height": 1640,
+        "touch": true,
+        "size": 10.9
       },
       "type": "tablet",
       "ismobile": true,
@@ -212,7 +302,7 @@
     "client": {
       "name": "QQ-App",
       "modus": null,
-      "version": "8.9.85.608",
+      "version": "9.0.17.638",
       "manufacturer": "tencent",
       "type": "application",
       "isbot": false,

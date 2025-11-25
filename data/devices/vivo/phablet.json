@@ -174,5 +174,53 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "vivo v2229a": {
+    "deviceName": "V2229A",
+    "marketingName": "X Fold+",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2160,
+      "height": 1916,
+      "touch": true,
+      "size": 8.03
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "vivo v2178a": {
+    "deviceName": "V2178A",
+    "marketingName": "X Fold",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2160,
+      "height": 1916,
+      "touch": true,
+      "size": 8.03
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "vivo v2170a": {
+    "deviceName": "V2170A",
+    "marketingName": "X Note",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3080,
+      "height": 1440,
+      "touch": true,
+      "size": 7
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

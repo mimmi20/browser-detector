@@ -14,28 +14,33 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   build:
     name: "Sync labels"
+    uses: "mimmi20/ci/.github/workflows/sync-labels.yml@8.4"
+    with:
+      repository: ${{ github.repository }}
+      manifest: ".github/labels.yml"
 
-    permissions:
-      issues: write
+  # This is a meta job to avoid to have to constantly change the protection rules
+  # whenever we touch the matrix.
+  label-status:
+    name: "Sync Label Status"
 
     runs-on: "ubuntu-latest"
 
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v5"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-          lfs: false
-          persist-credentials: false
+    if: always()
 
-      - uses: "micnncim/action-label-syncer@v1.3.0"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          GITHUB_REPOSITORY: "${{ github.repository }}"
-        with:
-          manifest: ".github/labels.yml"
+    needs:
+      - "build"
+
+    steps:
+      - name: Successful run
+        if: ${{ !(contains(needs.*.result, 'failure')) }}
+        run: exit 0
+
+      - name: Failing run
+        if: ${{ contains(needs.*.result, 'failure') }}
+        run: exit 1

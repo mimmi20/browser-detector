@@ -591,7 +591,7 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi Note 9",
+      "marketingName": "Redmi Note 10X",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -906,7 +906,7 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi Note 9",
+      "marketingName": "Redmi Note 10X",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -1264,6 +1264,51 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.97",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; 22061218C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36 EdgA/105.0.1343.27"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "22061218C",
+      "marketingName": "Mix Fold 2",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1940,
+        "touch": true,
+        "size": 8.02
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "105.0.1343.27",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
       "manufacturer": "Google"
     }
   },

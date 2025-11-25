@@ -1607,6 +1607,7 @@ final class SecChUaModelTest extends TestCase
             ['"X95"', true, 'doogee=doogee x95'],
             ['"Y8"', true, 'doogee=doogee y8'],
             ['"X95Pro"', true, 'doogee=doogee x95 pro'],
+            ['"S61"', true, 'doogee=doogee s61'],
             // shiftphones
             ['"SHIFT6mq"', true, 'shift-phones=shift-phones shift6mq'],
             ['"SHIFT6m"', true, 'shift-phones=shift-phones shift6m'],
@@ -1807,7 +1808,6 @@ final class SecChUaModelTest extends TestCase
             ['"S41"', true, 'caterpillar=caterpillar s41'],
             ['"S42"', true, 'caterpillar=caterpillar s42'],
             ['"S62 Pro"', true, 'caterpillar=caterpillar s62 pro'],
-            ['"S61"', true, 'caterpillar=caterpillar s61'],
             ['"S52"', true, 'caterpillar=caterpillar s52'],
             ['"S31"', true, 'caterpillar=caterpillar s31'],
             // rim/blackberry

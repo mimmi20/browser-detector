@@ -39,9 +39,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "26.0.1410.40",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -84,9 +84,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "25.0.1364.123",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.22.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -129,9 +129,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "25.0.1364.123",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.22.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -219,9 +219,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "26.0.1410.58",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -316,6 +316,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; TECNO M3 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 OPR/24.0.2254.115213"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M3",
+      "marketingName": "M3",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "24.0.2254.115213",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; TECNO P5 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 OPR/22.0.2254.113472"
     },
     "device": {
@@ -354,9 +399,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": null,
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -444,9 +489,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": null,
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -714,9 +759,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": null,
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1256,6 +1301,51 @@
     "engine": {
       "name": "Blink",
       "version": "58.0.3029.83",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; TECNO-L8 Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 OPR/29.0.2254.120398"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "L8",
+      "marketingName": "L8",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "29.0.2254.120398",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.86",
       "manufacturer": "Google"
     }
   },
