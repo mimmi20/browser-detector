@@ -10,6 +10,10 @@ on:
 
 permissions:
   contents: read
+  security-events: read
+  issues: read
+  pull-requests: read
+  checks: read
 
 concurrency:
   group: "${{ github.event_name }}-${{ github.workflow }}-${{ github.head_ref || github.run_id }}-${{ github.ref }}"
@@ -52,6 +56,14 @@ jobs:
   analytics:
     name: "Project Analysis"
 
+    permissions:
+      security-events: write
+      id-token: write
+      contents: read
+      issues: read
+      pull-requests: read
+      checks: read
+
     needs: "install"
 
     uses: "mimmi20/ci/.github/workflows/analytics.yml@8.4"
@@ -66,12 +78,12 @@ jobs:
       skip-eslint: true
       skip-stylelint: true
       skip-prettier: true
-      skip-psalm: true
       skip-nasm-install: true
       skip-libimagequant-install: true
       skip-librabbitmq-install: true
       skip-libgif-install: true
       skip-oxlint: true
+      use-code-scanning: true
       phpcs-options: ""
 
   tests:

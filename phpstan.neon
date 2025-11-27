@@ -146,6 +146,14 @@ parameters:
         - src\Loader\InitData\Os.php
         - src\Loader\InitData\Engine.php
 
+services:
+  errorFormatter.sarif:
+    class: PHPStanSarifErrorFormatter\SarifErrorFormatter
+    arguments:
+      relativePathHelper: @simpleRelativePathHelper
+      currentWorkingDirectory: %currentWorkingDirectory%
+      pretty: true
+
 rules:
   # code complexity
   # - Symplify\PHPStanRules\Rules\NoDynamicNameRule
