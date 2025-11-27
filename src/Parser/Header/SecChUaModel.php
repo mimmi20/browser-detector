@@ -51,6 +51,7 @@ final class SecChUaModel implements DeviceCodeInterface
             // special case
             'a065' => 'nothing-phone=nothing-phone a065',
             's61' => 'doogee=doogee s61',
+            's200' => 'doogee=doogee s200',
             default => (new Device())->getDeviceCode($code),
         };
     }

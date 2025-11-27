@@ -986,6 +986,8 @@ enum Company: string implements CompanyInterface
 
     case joysurf = 'JoySurf';
 
+    case island = 'Island';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1477,6 +1479,7 @@ enum Company: string implements CompanyInterface
             'star' => self::star,
             'aiwa' => self::aiwa,
             'joysurf', 'joy-surf' => self::joysurf,
+            'island', 'island technology, inc.' => self::island,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1591,6 +1594,7 @@ enum Company: string implements CompanyInterface
             self::dec => 'Digital Equipment Corporation',
             self::moonchild => 'Moonchild Productions',
             self::koobee => 'Shenzhen koobee Communication Equipment Co.,Ltd',
+            self::island => 'Island Technology, Inc.',
             self::unknown => null,
             default => $this->value,
         };

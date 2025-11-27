@@ -76,6 +76,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'version' => 'safari',
             'opera air' => 'opera-air',
             'opera mini android' => 'opera mini',
+            'island' => 'the-enterprise-browser',
             default => $code,
         };
     }

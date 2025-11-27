@@ -2962,6 +2962,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'JoySurf',
                 'key' => 'joy-surf',
             ],
+            [
+                'type' => 'Island',
+                'name' => 'Island Technology, Inc.',
+                'brandname' => 'Island',
+                'key' => 'island',
+            ],
         ];
     }
 
