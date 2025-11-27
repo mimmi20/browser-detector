@@ -58,6 +58,7 @@
     "ext-xml": "*",
     "ext-xmlwriter": "*",
     "infection/infection": "^0.31.9",
+    "jbelien/phpstan-sarif-formatter": "^1.2.0",
     "mikey179/vfsstream": "^1.6.12",
     "mimmi20/coding-standard": "^7.0.7",
     "nikic/php-parser": "^5.6.2",
@@ -73,8 +74,7 @@
     "symplify/phpstan-rules": "^14.8.1",
     "tomasvotruba/cognitive-complexity": "^1.0.0",
     "tomasvotruba/type-coverage": "^2.0.2",
-    "tomasvotruba/unused-public": "^2.0.1",
-    "vimeo/psalm": "^6.13.1"
+    "tomasvotruba/unused-public": "^2.0.1"
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
