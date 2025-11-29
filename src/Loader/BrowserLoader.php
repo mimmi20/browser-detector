@@ -96,7 +96,6 @@ final class BrowserLoader implements BrowserLoaderInterface
             version: $this->getVersion($data->getVersion(), $useragent),
             type: Type::fromName($data->getType()),
             bits: Bits::unknown,
-            modus: null,
         );
     }
 }
