@@ -1484,7 +1484,7 @@ enum Company: string implements CompanyInterface
             'aiwa' => self::aiwa,
             'joysurf', 'joy-surf' => self::joysurf,
             'island', 'island technology, inc.' => self::island,
-            'geniusdevices', 'genius-devices' => self::geniusDevices,
+            'geniusdevices', 'genius-devices', 'genius devices' => self::geniusDevices,
             'türksat', 'tuerksat', 'turksat' => self::tuerksat,
             // the last one
             'unknown', '' => self::unknown,

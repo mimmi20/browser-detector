@@ -4435,6 +4435,7 @@ final class Device implements DeviceInterface
             'vontar r3' => 'vontar=vontar r3',
             'dq08' => 'vontar=vontar dq08',
             'vontar h618' => 'vontar=vontar h618',
+            'vontar h728' => 'vontar=vontar h728',
             // hisense
             'hlte239e' => 'hisense=hisense hlte239e',
             'hisense a6' => 'hisense=hisense a6',
@@ -6272,6 +6273,9 @@ final class Device implements DeviceInterface
             // akai
             'akai_ta32bf550' => 'akai=akai ta32bf550',
             'akai_ta43bu500' => 'akai=akai ta43bu500',
+            'akai_ta32bf552' => 'akai=akai ta32bf552',
+            'akai_ta32bh500' => 'akai=akai ta32bh500',
+            'akai_ta50bu500' => 'akai=akai ta50bu500',
             // saba
             'saba_42sb6000f' => 'saba=saba 42sb6000f',
             'saba_32sb6000h' => 'saba=saba 32sb6000h',

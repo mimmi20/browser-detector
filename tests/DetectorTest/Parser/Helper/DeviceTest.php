@@ -5042,6 +5042,7 @@ final class DeviceTest extends TestCase
             ['VONTAR R3', 'vontar=vontar r3'],
             ['DQ08', 'vontar=vontar dq08'],
             ['VONTAR H618', 'vontar=vontar h618'],
+            ['VONTAR H728', 'vontar=vontar h728'],
             // hisense
             ['HLTE239E', 'hisense=hisense hlte239e'],
             ['Hisense A6', 'hisense=hisense a6'],
@@ -7035,6 +7036,9 @@ final class DeviceTest extends TestCase
             // akai
             ['AKAI_TA32BF550', 'akai=akai ta32bf550'],
             ['AKAI_TA43BU500', 'akai=akai ta43bu500'],
+            ['AKAI_TA32BF552', 'akai=akai ta32bf552'],
+            ['AKAI_TA32BH500', 'akai=akai ta32bh500'],
+            ['AKAI_TA50BU500', 'akai=akai ta50bu500'],
             // saba
             ['SABA_42SB6000F', 'saba=saba 42sb6000f'],
             ['SABA_32SB6000H', 'saba=saba 32sb6000h'],
