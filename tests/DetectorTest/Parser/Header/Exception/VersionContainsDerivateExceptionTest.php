@@ -28,7 +28,7 @@ final class VersionContainsDerivateExceptionTest extends TestCase
      */
     public function testSetGet(): void
     {
-        $ex = new VersionContainsDerivateException('x', 0, null);
+        $ex = new VersionContainsDerivateException('x', 0);
 
         self::assertSame('', $ex->getDerivate());
 

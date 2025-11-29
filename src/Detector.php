@@ -436,7 +436,6 @@ final readonly class Detector implements DetectorInterface
                 version: $clientVersion,
                 type: \UaBrowserType\Type::Unknown,
                 bits: Bits::unknown,
-                modus: null,
             ),
             engine: null,
         );
@@ -575,7 +574,7 @@ final readonly class Detector implements DetectorInterface
                 manufacturer: new Company(type: 'unknown', name: null, brandname: null),
                 brand: new Company(type: 'unknown', name: null, brandname: null),
                 type: Type::Unknown,
-                display: new Display(width: null, height: null, touch: null, size: null),
+                display: new Display(),
                 dualOrientation: null,
                 simCount: null,
                 bits: Bits::unknown,
