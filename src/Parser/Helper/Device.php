@@ -2150,6 +2150,7 @@ final class Device implements DeviceInterface
             'sm-x400', 'samsung sm-x400' => 'samsung=samsung sm-x400',
             'sm-x406', 'samsung sm-x406' => 'samsung=samsung sm-x406',
             'sm-x406b', 'samsung sm-x406b' => 'samsung=samsung sm-x406b',
+            'sm-a842b', 'samsung sm-a842b' => 'samsung=samsung sm-a842b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3810,7 +3811,7 @@ final class Device implements DeviceInterface
             's89' => 'doogee=doogee s89',
             's41pro' => 'doogee=doogee s41 pro',
             's98' => 'doogee=doogee s98',
-            's200' => 'doogee=doogee s200',
+            // 's200' => 'doogee=doogee s200',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -5785,6 +5786,7 @@ final class Device implements DeviceInterface
             'hoco_hi11' => 'hoco=hoco hi11',
             'hoco_hi12' => 'hoco=hoco hi12',
             'hoco_hi10' => 'hoco=hoco hi10',
+            'hoco dq09' => 'hoco=hoco dq09',
             // gtx
             'jaculus v2' => 'gtx=gtx jaculus v2',
             'gtx_jaculus_01' => 'gtx=gtx jaculus 01',
@@ -6418,6 +6420,7 @@ final class Device implements DeviceInterface
             'a130-2024' => 'acepad=acepad a130-2024',
             // korax
             'korax-eurobox' => 'korax=korax eurobox',
+            'korax-eurobox pro' => 'korax=korax eurobox pro',
             // xp-pen
             'magicdrawingpad' => 'xp-pen=xp-pen magic drawing pad',
             // energy-sistem
@@ -6641,6 +6644,10 @@ final class Device implements DeviceInterface
             'vi20220819' => 'viipoo=viipoo vi20220819',
             // joy-surf
             'tb-js101a' => 'joy-surf=joy-surf tb-js101a',
+            // genius-devices
+            'gd s1 atv' => 'genius-devices=genius-devices s1 atv',
+            // turksat
+            'kf-1500' => 'turksat=turksat kf-1500',
             // other
             default => null,
         };

@@ -2708,6 +2708,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-X406', 'samsung=samsung sm-x406'],
             ['SM-X406B', 'samsung=samsung sm-x406b'],
             ['SAMSUNG SM-X406B', 'samsung=samsung sm-x406b'],
+            ['SM-A842B', 'samsung=samsung sm-a842b'],
+            ['SAMSUNG SM-A842B', 'samsung=samsung sm-a842b'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4396,7 +4398,7 @@ final class DeviceTest extends TestCase
             ['S89', 'doogee=doogee s89'],
             ['S41Pro', 'doogee=doogee s41 pro'],
             ['S98', 'doogee=doogee s98'],
-            ['S200', 'doogee=doogee s200'],
+            // ['S200', 'doogee=doogee s200'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -6543,6 +6545,7 @@ final class DeviceTest extends TestCase
             ['hoco_HI11', 'hoco=hoco hi11'],
             ['hoco_HI12', 'hoco=hoco hi12'],
             ['hoco_HI10', 'hoco=hoco hi10'],
+            ['HOCO DQ09', 'hoco=hoco dq09'],
             // gtx
             ['Jaculus V2', 'gtx=gtx jaculus v2'],
             ['GTX_JACULUS_01', 'gtx=gtx jaculus 01'],
@@ -7183,6 +7186,7 @@ final class DeviceTest extends TestCase
             ['A130-2024', 'acepad=acepad a130-2024'],
             // korax
             ['KORAX-Eurobox', 'korax=korax eurobox'],
+            ['KORAX-Eurobox Pro', 'korax=korax eurobox pro'],
             // xp-pen
             ['MagicDrawingPad', 'xp-pen=xp-pen magic drawing pad'],
             // energy-sistem
@@ -7407,6 +7411,10 @@ final class DeviceTest extends TestCase
             ['vi20220819', 'viipoo=viipoo vi20220819'],
             // joy-surf
             ['TB-JS101A', 'joy-surf=joy-surf tb-js101a'],
+            // genius-devices
+            ['GD S1 ATV', 'genius-devices=genius-devices s1 atv'],
+            // turksat
+            ['KF-1500', 'turksat=turksat kf-1500'],
             // other
             ['Model"', null],
             [': "', null],
