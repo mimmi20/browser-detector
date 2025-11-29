@@ -2962,6 +2962,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'JoySurf',
                 'key' => 'joy-surf',
             ],
+            [
+                'type' => 'Island',
+                'name' => 'Island Technology, Inc.',
+                'brandname' => 'Island',
+                'key' => 'island',
+            ],
+            [
+                'type' => 'Genius Devices',
+                'name' => 'Genius Devices',
+                'brandname' => 'Genius Devices',
+                'key' => 'genius-devices',
+            ],
+            [
+                'type' => 'Türksat',
+                'name' => 'Türksat',
+                'brandname' => 'Türksat',
+                'key' => 'turksat',
+            ],
         ];
     }
 
@@ -4098,6 +4116,18 @@ final class CompanyTest extends TestCase
                 'name' => 'JoySurf',
                 'brandname' => 'JoySurf',
                 'key' => 'joy-surf',
+            ],
+            [
+                'fallback' => 'genius-devices',
+                'name' => 'Genius Devices',
+                'brandname' => 'Genius Devices',
+                'key' => 'genius-devices',
+            ],
+            [
+                'fallback' => 'turksat',
+                'name' => 'Türksat',
+                'brandname' => 'Türksat',
+                'key' => 'turksat',
             ],
         ];
     }
