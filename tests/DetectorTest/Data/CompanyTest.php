@@ -2980,6 +2980,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Türksat',
                 'key' => 'turksat',
             ],
+            [
+                'type' => 'BNCF',
+                'name' => 'BNCF',
+                'brandname' => 'BNCF',
+                'key' => 'bncf',
+            ],
+            [
+                'type' => 'Edanix',
+                'name' => 'Edanix',
+                'brandname' => 'Edanix',
+                'key' => 'edanix',
+            ],
+            [
+                'type' => 'AI+',
+                'name' => 'AI+',
+                'brandname' => 'AI+',
+                'key' => 'ai-plus',
+            ],
+            [
+                'type' => 'VOIX',
+                'name' => 'VOIX',
+                'brandname' => 'VOIX',
+                'key' => 'voix',
+            ],
         ];
     }
 
@@ -4128,6 +4152,12 @@ final class CompanyTest extends TestCase
                 'name' => 'Türksat',
                 'brandname' => 'Türksat',
                 'key' => 'turksat',
+            ],
+            [
+                'fallback' => 'ai-plus',
+                'name' => 'AI+',
+                'brandname' => 'AI+',
+                'key' => 'ai-plus',
             ],
         ];
     }

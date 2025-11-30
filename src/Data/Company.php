@@ -992,6 +992,14 @@ enum Company: string implements CompanyInterface
 
     case tuerksat = 'Türksat';
 
+    case bncf = 'BNCF';
+
+    case edanix = 'Edanix';
+
+    case aiplus = 'AI+';
+
+    case voix = 'VOIX';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1486,6 +1494,10 @@ enum Company: string implements CompanyInterface
             'island', 'island technology, inc.' => self::island,
             'geniusdevices', 'genius-devices', 'genius devices' => self::geniusDevices,
             'türksat', 'tuerksat', 'turksat' => self::tuerksat,
+            'bncf' => self::bncf,
+            'edanix' => self::edanix,
+            'aiplus', 'ai+', 'ai-plus' => self::aiplus,
+            'voix' => self::voix,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1713,6 +1725,7 @@ enum Company: string implements CompanyInterface
             self::joysurf => 'joy-surf',
             self::geniusDevices => 'genius-devices',
             self::tuerksat => 'turksat',
+            self::aiplus => 'ai-plus',
             default => $this->name,
         };
     }

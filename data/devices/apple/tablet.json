@@ -689,7 +689,7 @@
   },
   "apple ipad 11,1": {
     "deviceName": "iPad 11,1",
-    "marketingName": "iPad mini (7.9, 5th Gen)",
+    "marketingName": "iPad Mini (7.9, 5th Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -731,6 +731,22 @@
       "height": 1620,
       "touch": true,
       "size": 10.2
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
+  "apple ipad 17,1": {
+    "deviceName": "iPad 17,1",
+    "marketingName": "iPad Pro M5 11\" (6th Gen) Wi-Fi",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2420,
+      "height": 1668,
+      "touch": true,
+      "size": 11
     },
     "type": "tablet",
     "platform": "ios"

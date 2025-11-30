@@ -55,7 +55,7 @@
     "/com\\.google\\.android\\.apps\\.magazines/i": "google play newsstand",
     "/com\\.google\\.android\\.apps\\.searchlite/i": "google search lite",
     "/com\\.google\\.googlemobile/i": "google mobile app",
-    "/com\\.google\\.android\\.youtube/i": "youtube app",
+    "/com\\.google\\.(?:android|ios)\\.youtube/i": "youtube app",
     "/googlebot-mobile/i": "googlebot-mobile",
     "/google-http-java-client/i": "google http client library for java",
     "/googlebot-image/i": "google image search",
