@@ -639,7 +639,7 @@
     "type": "phablet",
     "platform": "android"
   },
-  "infinix X670": {
+  "infinix x670": {
     "deviceName": "X670",
     "marketingName": "Note 12 G96",
     "manufacturer": "infinix",
@@ -651,6 +651,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "infinix x6857b": {
+    "deviceName": "X6857B",
+    "marketingName": "Note 50X 5G",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.67
     },
     "type": "phablet",
     "platform": "android"
