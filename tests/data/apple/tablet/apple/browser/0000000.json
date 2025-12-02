@@ -591,7 +591,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 13,1",
-      "marketingName": "iPad Air (10.9, 4rd Gen)",
+      "marketingName": "iPad Air 10.9\" (4rd Gen)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -611,6 +611,51 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "18.1.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2025.308 (iOS 18.6.2; iPad16,3; build 19181868194)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 16,3",
+      "marketingName": "iPad Pro (11, 5th Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2420,
+        "height": 1668,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "18.6.2",
       "manufacturer": "Apple",
       "bits": null
     },

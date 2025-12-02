@@ -538,5 +538,50 @@
       "version": "92.0.4515.105",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; GRL-LX9; HMSCore 6.15.4.312; GMSCore 0.3.10.250932) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/16.0.6.300 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GRL-LX9",
+      "marketingName": "Mate XT Ultimate Design",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3184,
+        "height": 2232,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "16.0.6.300",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "Google"
+    }
   }
 ]
