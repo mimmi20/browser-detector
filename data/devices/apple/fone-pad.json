@@ -209,7 +209,7 @@
   },
   "apple ipad 13,2": {
     "deviceName": "iPad 13,2",
-    "marketingName": "iPad Air (10.9, 4rd Gen.)",
+    "marketingName": "iPad Air 10.9\" (4rd Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -241,7 +241,7 @@
   },
   "apple ipad 2,6": {
     "deviceName": "iPad 2,6",
-    "marketingName": "iPad mini",
+    "marketingName": "iPad Mini",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -257,7 +257,7 @@
   },
   "apple ipad 2,7": {
     "deviceName": "iPad 2,7",
-    "marketingName": "iPad mini",
+    "marketingName": "iPad Mini",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -273,7 +273,7 @@
   },
   "apple ipad 4,5": {
     "deviceName": "iPad 4,5",
-    "marketingName": "iPad mini 2",
+    "marketingName": "iPad Mini 2",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -289,7 +289,7 @@
   },
   "apple ipad 4,6": {
     "deviceName": "iPad 4,6",
-    "marketingName": "iPad mini 2",
+    "marketingName": "iPad Mini 2",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -481,7 +481,7 @@
   },
   "apple ipad 13,6": {
     "deviceName": "iPad 13,6",
-    "marketingName": "iPad Pro (11, 5th Gen)",
+    "marketingName": "iPad Pro 11\" (3rd Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -497,7 +497,7 @@
   },
   "apple ipad 13,7": {
     "deviceName": "iPad 13,7",
-    "marketingName": "iPad Pro (11, 5th Gen)",
+    "marketingName": "iPad Pro 11\" (3rd Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -545,7 +545,7 @@
   },
   "apple ipad 14,2": {
     "deviceName": "iPad 14,2",
-    "marketingName": "iPad mini (8.3, 6th Gen)",
+    "marketingName": "iPad Mini (8.3, 6th Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -737,7 +737,7 @@
   },
   "apple ipad 16,2": {
     "deviceName": "iPad 16,2",
-    "marketingName": "iPad mini A17 Pro (7th Gen)",
+    "marketingName": "iPad Mini A17 Pro (7th Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -753,7 +753,7 @@
   },
   "apple ipad 11,2": {
     "deviceName": "iPad 11,2",
-    "marketingName": "iPad mini (7.9, 5th Gen)",
+    "marketingName": "iPad Mini (7.9, 5th Gen)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": true,
@@ -795,6 +795,22 @@
       "height": 1620,
       "touch": true,
       "size": 10.2
+    },
+    "type": "fone-pad",
+    "platform": "ios"
+  },
+  "apple ipad 17,2": {
+    "deviceName": "iPad 17,2",
+    "marketingName": "iPad Pro M5 11\" (6th Gen) 5G",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2420,
+      "height": 1668,
+      "touch": true,
+      "size": 11
     },
     "type": "fone-pad",
     "platform": "ios"

@@ -1608,6 +1608,7 @@ final class SecChUaModelTest extends TestCase
             ['"Y8"', true, 'doogee=doogee y8'],
             ['"X95Pro"', true, 'doogee=doogee x95 pro'],
             ['"S61"', true, 'doogee=doogee s61'],
+            ['"S200"', true, 'doogee=doogee s200'],
             // shiftphones
             ['"SHIFT6mq"', true, 'shift-phones=shift-phones shift6mq'],
             ['"SHIFT6m"', true, 'shift-phones=shift-phones shift6m'],

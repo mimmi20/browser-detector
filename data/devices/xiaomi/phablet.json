@@ -2606,5 +2606,53 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "xiaomi m2104k10ac": {
+    "deviceName": "M2104K10AC",
+    "marketingName": "Redmi Note 10 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 25080rabdc": {
+    "deviceName": "25080RABDC",
+    "marketingName": "Redmi Note 15 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2772,
+      "height": 1220,
+      "touch": true,
+      "size": 6.83
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 25104radac": {
+    "deviceName": "25104RADAC",
+    "marketingName": "Redmi Note 15 Pro+",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2772,
+      "height": 1220,
+      "touch": true,
+      "size": 6.83
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

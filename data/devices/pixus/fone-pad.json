@@ -78,5 +78,21 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "pixus arena": {
+    "deviceName": "Arena",
+    "marketingName": "Arena",
+    "manufacturer": "pixus",
+    "brand": "pixus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.95
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

@@ -1168,5 +1168,50 @@
       "version": null,
       "manufacturer": "RIM"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 10.0; en-US) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.0.0 Mobile Safari/537.35+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "RIM",
+      "brand": "RIM",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.0.0",
+      "manufacturer": "RIM",
+      "bits": null
+    },
+    "client": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "RIM",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.35.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
