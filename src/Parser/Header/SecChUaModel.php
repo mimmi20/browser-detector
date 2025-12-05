@@ -52,6 +52,7 @@ final class SecChUaModel implements DeviceCodeInterface
             'a065' => 'nothing-phone=nothing-phone a065',
             's61' => 'doogee=doogee s61',
             's200' => 'doogee=doogee s200',
+            'p50' => 'cubot=cubot p50',
             default => (new Device())->getDeviceCode($code),
         };
     }
