@@ -1000,6 +1000,8 @@ enum Company: string implements CompanyInterface
 
     case voix = 'VOIX';
 
+    case yasin = 'YASIN';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1498,6 +1500,7 @@ enum Company: string implements CompanyInterface
             'edanix' => self::edanix,
             'aiplus', 'ai+', 'ai-plus' => self::aiplus,
             'voix' => self::voix,
+            'yasin' => self::yasin,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

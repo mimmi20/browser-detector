@@ -3004,6 +3004,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VOIX',
                 'key' => 'voix',
             ],
+            [
+                'type' => 'YASIN',
+                'name' => 'YASIN',
+                'brandname' => 'YASIN',
+                'key' => 'yasin',
+            ],
         ];
     }
 

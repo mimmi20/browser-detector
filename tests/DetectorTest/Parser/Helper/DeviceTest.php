@@ -423,6 +423,29 @@ final class DeviceTest extends TestCase
             ['PJA110', 'oneplus=oneplus pja110'],
             ['OnePlus 8T', 'oneplus=oneplus 8t'],
             ['OnePlus Nord 2', 'oneplus=oneplus nord 2 5g'],
+            ['OnePlus 12', 'oneplus=oneplus 12'],
+            ['CPH2583', 'oneplus=oneplus cph2583'],
+            ['CPH2573', 'oneplus=oneplus cph2573'],
+            ['CPH2569', 'oneplus=oneplus cph2569'],
+            ['CPH2493', 'oneplus=oneplus cph2493'],
+            ['CPH2491', 'oneplus=oneplus cph2491'],
+            ['CPH2487', 'oneplus=oneplus cph2487'],
+            ['CPH2469', 'oneplus=oneplus cph2469'],
+            ['CPH2467', 'oneplus=oneplus cph2467'],
+            ['CPH2465', 'oneplus=oneplus cph2465'],
+            ['CPH2459', 'oneplus=oneplus cph2459'],
+            ['CPH2451', 'oneplus=oneplus cph2451'],
+            ['CPH2447', 'oneplus=oneplus cph2447'],
+            ['CPH2423', 'oneplus=oneplus cph2423'],
+            ['CPH2419', 'oneplus=oneplus cph2419'],
+            ['CPH2417', 'oneplus=oneplus cph2417'],
+            ['CPH2413', 'oneplus=oneplus cph2413'],
+            ['CPH2401', 'oneplus=oneplus cph2401'],
+            ['CPH2389', 'oneplus=oneplus cph2389'],
+            ['CPH2381', 'oneplus=oneplus cph2381'],
+            ['NE2217', 'oneplus=oneplus ne2217'],
+            ['NE2215', 'oneplus=oneplus ne2215'],
+            ['NE2211', 'oneplus=oneplus ne2211'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -2754,6 +2777,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A556B', 'samsung=samsung sm-a556b'],
             ['SM-A5560', 'samsung=samsung sm-a5560'],
             ['SAMSUNG SM-A5560', 'samsung=samsung sm-a5560'],
+            ['SM-X808U', 'samsung=samsung sm-x808u'],
+            ['SAMSUNG SM-X808U', 'samsung=samsung sm-x808u'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3293,6 +3318,7 @@ final class DeviceTest extends TestCase
             ['FCP-AN10', 'huawei=huawei fcp-an10'],
             ['HDL-AL09', 'huawei=huawei hdl-al09'],
             ['HDL-W09', 'huawei=huawei hdl-w09'],
+            ['TGR-W10', 'huawei=huawei tgr-w10'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -3821,6 +3847,7 @@ final class DeviceTest extends TestCase
             ['XT2507-1', 'motorola=motorola xt2507-1'],
             ['XT2527-3', 'motorola=motorola xt2527-3'],
             ['XT2527-7', 'motorola=motorola xt2527-7'],
+            ['moto g stylus 5G - 2023', 'motorola=motorola moto g stylus 5g (2023)'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -3974,6 +4001,12 @@ final class DeviceTest extends TestCase
             ['SOG08', 'sony=sony sog08'],
             ['A201SO', 'sony=sony a201so'],
             ['SO-51C', 'sony=sony so-51c'],
+            ['XQ-AS72', 'sony=sony xq-as72'],
+            ['SO-52A', 'sony=sony so-52a'],
+            ['XQ-AS62', 'sony=sony xq-as62'],
+            ['A002SO', 'sony=sony a002so'],
+            ['SOG02', 'sony=sony sog02'],
+            ['SOG06', 'sony=sony sog06'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -4320,6 +4353,8 @@ final class DeviceTest extends TestCase
             ['V1913T', 'vivo=vivo v1913t'],
             ['V1962BA', 'vivo=vivo v1962ba'],
             ['V1838T', 'vivo=vivo v1838t'],
+            ['V2144', 'vivo=vivo v2144'],
+            ['V2166A', 'vivo=vivo v2166a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -5246,6 +5281,7 @@ final class DeviceTest extends TestCase
             ['itel A662L', 'itel=itel a662l'],
             ['itel S663LN', 'itel=itel s663ln'],
             ['itel S663L', 'itel=itel s663l'],
+            ['itel A669W', 'itel=itel a669w'],
             // vontar
             ['HK1RBOX-X4', 'vontar=vontar hk1 rbox x4'],
             ['HK1 Mini+', 'vontar=vontar hk1 mini plus'],
@@ -7301,6 +7337,7 @@ final class DeviceTest extends TestCase
             // philips
             ['Philips W8555', 'philips=philips w8555'],
             ['NeoViu D1', 'philips=philips neoviu d1'],
+            ['Philips Google TV TA1', 'philips=philips google tv ta1'],
             // homatics
             ['Box R 4K Plus', 'homatics=homatics box r 4k plus'],
             ['Box R Lite 4K', 'homatics=homatics box r lite 4k'],
@@ -7654,6 +7691,8 @@ final class DeviceTest extends TestCase
             ['AI+ Pulse 1', 'ai-plus=ai-plus pulse 1'],
             // voix
             ['VOIX_U10', 'voix=voix u10'],
+            // yasin
+            ['YASIN 4K Android TV', 'yasin=yasin 4k smart tv'],
             // other
             ['Model"', null],
             [': "', null],

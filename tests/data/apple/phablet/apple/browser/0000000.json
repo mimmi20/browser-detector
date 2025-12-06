@@ -1036,6 +1036,51 @@
   },
   {
     "headers": {
+      "user-agent": "ChatGPT/1.2025.301 (iOS 26.0.1; iPhone18,2; build 18983735331)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 18,2",
+      "marketingName": "iPhone 17 Pro Max",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2868,
+        "height": 1320,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.0.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ChatGPT/1.2025.294 (iOS 26.0.1; iPhone17,3; build 18795397348)"
     },
     "device": {
@@ -1061,6 +1106,141 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "26.0.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2025.322 (iOS 26.1; iPhone16,2; build 19585375154)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 16,2",
+      "marketingName": "iPhone 15 Pro Max",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2796,
+        "height": 1290,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2025.322 (iOS 18.7.2; iPhone15,4; build 19585375154)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 15,4",
+      "marketingName": "iPhone 15",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2556,
+        "height": 1179,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "18.7.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2025.322 (iOS 26.1; iPhone17,1; build 19585375154)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 17,1",
+      "marketingName": "iPhone 16 Pro",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2622,
+        "height": 1206,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.1.0",
       "manufacturer": "Apple",
       "bits": null
     },

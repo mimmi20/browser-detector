@@ -186,7 +186,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 1,1",
-      "marketingName": "iPad (1st Gen)",
+      "marketingName": "iPad (1st Gen) Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -231,7 +231,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 3,1",
-      "marketingName": "iPad 3",
+      "marketingName": "iPad (3rd Gen) Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -321,7 +321,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 3,4",
-      "marketingName": "iPad 4",
+      "marketingName": "iPad (4th Gen) Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -411,7 +411,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 6,3",
-      "marketingName": "iPad Pro (9.7)",
+      "marketingName": "iPad Pro 9.7\" Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -456,7 +456,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 7,1",
-      "marketingName": "iPad Pro (12.9, 2nd Gen)",
+      "marketingName": "iPad Pro 12.9\" (2nd Gen) Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -501,7 +501,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 6,3",
-      "marketingName": "iPad Pro (9.7)",
+      "marketingName": "iPad Pro 9.7\" Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -546,7 +546,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 6,7",
-      "marketingName": "iPad Pro (12.9)",
+      "marketingName": "iPad Pro 12.9\" Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -591,7 +591,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 13,1",
-      "marketingName": "iPad Air 10.9\" (4rd Gen)",
+      "marketingName": "iPad Air 10.9\" (4rd Gen) Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -636,7 +636,7 @@
     "device": {
       "architecture": null,
       "deviceName": "iPad 16,3",
-      "marketingName": "iPad Pro (11, 5th Gen)",
+      "marketingName": "iPad Pro M4 11\" Wi-Fi",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": true,
@@ -656,6 +656,96 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "18.6.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2025.252 (iOS 26.0.1; iPad12,1; build 17688816991)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 12,1",
+      "marketingName": "iPad 10.2\" (9th Gen) Wi-Fi",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2160,
+        "height": 1620,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "26.0.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2025.308 (iOS 17.7.10; iPad7,5; build 19181868194)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 7,5",
+      "marketingName": "iPad 9.7\" (6th Gen) Wi-Fi",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "17.7.10",
       "manufacturer": "Apple",
       "bits": null
     },
