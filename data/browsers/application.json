@@ -486,16 +486,6 @@
     },
     "engine": "webkit"
   },
-  "google search lite": {
-    "name": "Google Go",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "google+ app": {
     "name": "Google+ App",
     "manufacturer": "google",
@@ -1278,19 +1268,6 @@
     },
     "engine": null
   },
-  "tiktok": {
-    "name": "Tiktok",
-    "manufacturer": "tiktok",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AppName\\/musical_ly app_version",
-        "TikTok"
-      ]
-    },
-    "engine": null
-  },
   "tubetv": {
     "name": "TubeTV",
     "manufacturer": "chimoosoft",
@@ -1690,18 +1667,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": null
-  },
-  "bingsearch": {
-    "name": "Bing Search",
-    "manufacturer": "microsoft",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "BingSapphire"
-      ]
     },
     "engine": null
   },

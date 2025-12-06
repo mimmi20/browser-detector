@@ -232,6 +232,18 @@
     },
     "engine": "webkit"
   },
+  "chrome webview": {
+    "name": "Chrome WebView",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Chrome"
+      ]
+    },
+    "engine": "blink"
+  },
   "android webview": {
     "name": "Android WebView",
     "manufacturer": "google",
@@ -769,6 +781,19 @@
   },
   "chrome": {
     "name": "Chrome",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Chrome",
+        "CrMo"
+      ]
+    },
+    "engine": null
+  },
+  "chrome mobile": {
+    "name": "Chrome Mobile",
     "manufacturer": "google",
     "type": "browser",
     "version": {
@@ -2447,7 +2472,7 @@
     "engine": "unknown"
   },
   "miui browser": {
-    "name": "Miui Browser",
+    "name": "Mi Browser",
     "manufacturer": "xiaomi",
     "type": "browser",
     "version": {
@@ -4250,7 +4275,7 @@
     "engine": null
   },
   "vivo-browser": {
-    "name": "VivoBrowser",
+    "name": "vivo Browser",
     "manufacturer": "vivo",
     "type": "browser",
     "version": {
@@ -4592,7 +4617,7 @@
     "engine": null
   },
   "adblock browser": {
-    "name": "Adblock Browser",
+    "name": "AdBlock Browser",
     "manufacturer": "eyeo",
     "type": "browser",
     "version": {

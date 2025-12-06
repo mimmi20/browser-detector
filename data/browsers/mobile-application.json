@@ -2082,5 +2082,41 @@
       "search": null
     },
     "engine": null
+  },
+  "bingsearch": {
+    "name": "Bing Search",
+    "manufacturer": "microsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BingSapphire"
+      ]
+    },
+    "engine": null
+  },
+  "tiktok": {
+    "name": "TikTok",
+    "manufacturer": "tiktok",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AppName\\/musical_ly app_version",
+        "musical_ly_",
+        "TikTok"
+      ]
+    },
+    "engine": null
+  },
+  "google search lite": {
+    "name": "Google Go",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   }
 }
