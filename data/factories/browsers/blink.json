@@ -123,7 +123,7 @@
     "/google-pagerenderer/i": "google-page-renderer",
     "/kodi/i": "kodi media center",
     "/xbmc/i": "xbmc media center",
-    "/rocket\\//i": "firefox rocket",
+    "/(?<!wp-)rocket\\//i": "firefox rocket",
     "/fast-webcrawler/i": "fast webcrawler",
     "/duckduckgo/i": "duckduck app",
     "/quark/i": "quark",
