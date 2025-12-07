@@ -2118,5 +2118,17 @@
       "search": null
     },
     "engine": null
+  },
+  "line": {
+    "name": "Line",
+    "manufacturer": "line",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Line"
+      ]
+    },
+    "engine": null
   }
 }

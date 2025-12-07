@@ -3010,6 +3010,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'YASIN',
                 'key' => 'yasin',
             ],
+            [
+                'type' => 'RedFoxUnitedInc',
+                'name' => 'RedFoxUnitedInc',
+                'brandname' => 'RedFoxUnitedInc',
+                'key' => 'redfoxunitedinc',
+            ],
         ];
     }
 

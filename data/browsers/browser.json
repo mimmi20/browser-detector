@@ -792,19 +792,6 @@
     },
     "engine": null
   },
-  "chrome mobile": {
-    "name": "Chrome Mobile",
-    "manufacturer": "google",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Chrome",
-        "CrMo"
-      ]
-    },
-    "engine": null
-  },
   "chrome for ios": {
     "name": "Chrome for iOS",
     "manufacturer": "google",
@@ -1006,7 +993,7 @@
     "engine": "gecko"
   },
   "dalvik": {
-    "name": "Dalvik",
+    "name": "Android Browser",
     "manufacturer": "google",
     "type": "browser",
     "version": {
@@ -1691,7 +1678,7 @@
     "engine": "unknown"
   },
   "huawei-browser": {
-    "name": "HuaweiBrowser",
+    "name": "Huawei Browser Mobile",
     "manufacturer": "huawei",
     "type": "browser",
     "version": {
@@ -2228,18 +2215,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LieBaoFast"
-      ]
-    },
-    "engine": null
-  },
-  "line browser": {
-    "name": "Line Browser",
-    "manufacturer": "line",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Line"
       ]
     },
     "engine": null
@@ -5329,7 +5304,7 @@
     "engine": null
   },
   "in-browser": {
-    "name": "InBrowser - Inkognito Surfen",
+    "name": "InBrowser",
     "manufacturer": "pia",
     "type": "browser",
     "version": {
@@ -5555,6 +5530,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "hi-browser": {
+    "name": "Hi Browser",
+    "manufacturer": "redfoxunitedinc",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HiBrowser"
+      ]
     },
     "engine": null
   }
