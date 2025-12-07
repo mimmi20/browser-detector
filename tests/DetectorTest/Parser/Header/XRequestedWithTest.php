@@ -531,6 +531,15 @@ final class XRequestedWithTest extends TestCase
             ['com.mobile.applock.wt', true, 'app-lock', false, null, false, null],
             ['com.solide.filemanager.lte', true, 'solid-file-manager', false, null, false, null],
             ['com.lechneralexander.privatebrowser', true, 'private-internet-browser', false, null, false, null],
+            ['com.moonshot.kimichat', true, 'kimi-app', false, null, false, null],
+            ['com.deepseek.chat', true, 'deepseek-app', false, null, false, null],
+            ['com.chainapsis.keplr', true, 'keplr-app', false, null, false, null],
+            ['com.viber.voip', true, 'viber-app', false, null, false, null],
+            ['com.fsecure.ms.voo', true, 'vis+ app', false, null, false, null],
+            ['com.fsecure.ms.fnac', true, 'ma protection app', false, null, false, null],
+            ['com.wecloud.lookr', true, 'lookr-app', false, null, false, null],
+            ['com.canopy.vpn.filter.parent', true, 'canopy-app', false, null, false, null],
+            ['ai.mainfunc.genspark', true, 'genspark-app', false, null, false, null],
         ];
     }
 }

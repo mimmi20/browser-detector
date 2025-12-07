@@ -238,7 +238,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Quark',
                         'modus' => null,
                         'version' => '1.6.9.911',
-                        'manufacturer' => 'quark-team',
+                        'manufacturer' => 'Quark',
                         'type' => 'browser',
                         'isbot' => false,
                         'bits' => null,

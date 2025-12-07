@@ -81,18 +81,6 @@
     },
     "engine": "webkit"
   },
-  "android download manager": {
-    "name": "Android Download Manager",
-    "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AndroidDownloadManager"
-      ]
-    },
-    "engine": "webkit"
-  },
   "appcent": {
     "name": "Appcent",
     "manufacturer": "unknown",
@@ -237,7 +225,7 @@
     "engine": "webkit"
   },
   "chatlyio app": {
-    "name": "chatlyio App",
+    "name": "Slack",
     "manufacturer": "slack",
     "type": "application",
     "version": {
@@ -257,20 +245,6 @@
       "search": null
     },
     "engine": "blink"
-  },
-  "coast": {
-    "name": "Coast",
-    "manufacturer": "opera",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "OperaCoast",
-        "Opera%20Coast",
-        "Coast"
-      ]
-    },
-    "engine": "webkit"
   },
   "cobalt": {
     "name": "Cobalt Application Container",
@@ -800,8 +774,6 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Office Mobile for Symbian",
-        "Office Mobile",
         "MSOffice",
         "Office"
       ]
@@ -952,18 +924,6 @@
       "search": null
     },
     "engine": "webkit"
-  },
-  "qq-app": {
-    "name": "QQ-App",
-    "manufacturer": "tencent",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "QQ"
-      ]
-    },
-    "engine": null
   },
   "quora app": {
     "name": "Quora App",
@@ -1702,30 +1662,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "stickypassword"
-      ]
-    },
-    "engine": null
-  },
-  "ruby-browser": {
-    "name": "RubyBrowser",
-    "manufacturer": "emad-elsaid",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "RubyBrowser"
-      ]
-    },
-    "engine": null
-  },
-  "microsoft-copilot": {
-    "name": "Microsoft Copilot",
-    "manufacturer": "microsoft",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "CopilotSapphire"
       ]
     },
     "engine": null

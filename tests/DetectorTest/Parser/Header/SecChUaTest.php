@@ -218,6 +218,7 @@ final class SecChUaTest extends TestCase
             ['"Opera Air";v="121", "Chromium";v="137", "Not/A)Brand";v="24"', true, 'opera-air', true, '121.0.0'],
             ['"Opera Mini Android";v="95", "Chromium";v="137", "Not/A)Brand";v="24"', true, 'opera mini', true, '95.0.0'],
             ['"Chromium";v="142", "Island";v="142", "Not_A Brand";v="99"', true, 'the-enterprise-browser', true, '142.0.0'],
+            ['"Opera Mini Android";v="95", "Chromium";v="140", "Not=A?Brand";v="24", "Android WebView";v="140"', true, 'opera mini', true, '95.0.0'],
         ];
     }
 }

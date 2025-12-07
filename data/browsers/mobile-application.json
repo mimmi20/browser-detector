@@ -11,19 +11,6 @@
     },
     "engine": "webkit"
   },
-  "google app": {
-    "name": "Google App",
-    "manufacturer": "google",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "GSA",
-        "GoogleApp"
-      ]
-    },
-    "engine": null
-  },
   "wechat app": {
     "name": "WeChat App",
     "manufacturer": "tencent",
@@ -552,8 +539,11 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GSA",
+        "GoogleApp"
+      ]
     },
     "engine": null
   },
@@ -2128,6 +2118,200 @@
       "search": [
         "Line"
       ]
+    },
+    "engine": null
+  },
+  "ruby-browser": {
+    "name": "RubyBrowser",
+    "manufacturer": "emad-elsaid",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RubyBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "qq-app": {
+    "name": "QQ",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QQ"
+      ]
+    },
+    "engine": null
+  },
+  "office mobile": {
+    "name": "Office Mobile",
+    "manufacturer": "microsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Office Mobile for Symbian",
+        "Office Mobile"
+      ]
+    },
+    "engine": null
+  },
+  "android download manager": {
+    "name": "Android Download Manager",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AndroidDownloadManager"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcastaddict": {
+    "name": "Podcast & Radio Addict",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodcastAddict\\/v",
+        "PodcastAddict"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "airpodcasts": {
+    "name": "Podcasts",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AirPodcasts"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "microsoft-copilot": {
+    "name": "Microsoft Copilot",
+    "manufacturer": "microsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CopilotSapphire"
+      ]
+    },
+    "engine": null
+  },
+  "kimi-app": {
+    "name": "Kimi",
+    "manufacturer": "moonshot-ai",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kimi"
+      ]
+    },
+    "engine": null
+  },
+  "deepseek-app": {
+    "name": "DeepSeek",
+    "manufacturer": "deepseek-ai",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DeepSeek"
+      ]
+    },
+    "engine": null
+  },
+  "chatgpt-app": {
+    "name": "ChatGPT",
+    "manufacturer": "openai",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "keplr-app": {
+    "name": "Keplr Wallet",
+    "manufacturer": "team-keplr",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KeplrWalletMobile"
+      ]
+    },
+    "engine": null
+  },
+  "viber-app": {
+    "name": "Viber",
+    "manufacturer": "viber-media",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "vis+ app": {
+    "name": "VIS+",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ma protection app": {
+    "name": "Ma Protection",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "lookr-app": {
+    "name": "Lookr",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "lookr"
+      ]
+    },
+    "engine": null
+  },
+  "canopy-app": {
+    "name": "Canopy - AI Online Safety App",
+    "manufacturer": "canopy",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "genspark-app": {
+    "name": "Genspark AI Workspace",
+    "manufacturer": "genspark",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   }

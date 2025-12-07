@@ -366,6 +366,15 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.mobile.applock.wt' => 'app-lock',
             'com.solide.filemanager.lte' => 'solid-file-manager',
             'com.lechneralexander.privatebrowser' => 'private-internet-browser',
+            'com.moonshot.kimichat' => 'kimi-app',
+            'com.deepseek.chat' => 'deepseek-app',
+            'com.chainapsis.keplr' => 'keplr-app',
+            'com.viber.voip' => 'viber-app',
+            'com.fsecure.ms.voo' => 'vis+ app',
+            'com.fsecure.ms.fnac' => 'ma protection app',
+            'com.wecloud.lookr' => 'lookr-app',
+            'com.canopy.vpn.filter.parent' => 'canopy-app',
+            'ai.mainfunc.genspark' => 'genspark-app',
             default => null,
         };
     }

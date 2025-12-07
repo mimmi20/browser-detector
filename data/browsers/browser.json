@@ -3466,7 +3466,7 @@
     "engine": "webkit"
   },
   "qwant-mobile": {
-    "name": "QwantMobile",
+    "name": "Qwant Mobile",
     "manufacturer": "qwant",
     "type": "browser",
     "version": {
@@ -5544,5 +5544,19 @@
       ]
     },
     "engine": null
+  },
+  "coast": {
+    "name": "Coast",
+    "manufacturer": "opera",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OperaCoast",
+        "Opera%20Coast",
+        "Coast"
+      ]
+    },
+    "engine": "webkit"
   }
 }

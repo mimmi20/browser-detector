@@ -414,19 +414,6 @@
     },
     "engine": "webkit"
   },
-  "podcastaddict": {
-    "name": "PodcastAddict",
-    "manufacturer": "unknown",
-    "type": "multimedia-player",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PodcastAddict\\/v",
-        "PodcastAddict"
-      ]
-    },
-    "engine": "webkit"
-  },
   "podcaster": {
     "name": "Podcaster",
     "manufacturer": "unknown",
