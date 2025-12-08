@@ -3304,6 +3304,54 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Tu Yafeng',
                 'key' => 'tu-yafeng',
             ],
+            [
+                'type' => 'Python Software Foundation',
+                'name' => 'Python Software Foundation',
+                'brandname' => 'Python Software Foundation',
+                'key' => 'python-software-foundation',
+            ],
+            [
+                'type' => 'OpenAI',
+                'name' => 'OpenAI LP',
+                'brandname' => 'OpenAI',
+                'key' => 'openai',
+            ],
+            [
+                'type' => 'Telegram',
+                'name' => 'Telegram Messenger Inc.',
+                'brandname' => 'Telegram',
+                'key' => 'telegram',
+            ],
+            [
+                'type' => 'CloudView Technology',
+                'name' => 'CloudView Technology',
+                'brandname' => 'CloudView Technology',
+                'key' => 'cloudview-technology',
+            ],
+            [
+                'type' => 'SoulSoft',
+                'name' => 'SoulSoft',
+                'brandname' => 'SoulSoft',
+                'key' => 'soul-soft',
+            ],
+            [
+                'type' => 'Qihoo',
+                'name' => 'Qihoo 360 Technology Co. Ltd.',
+                'brandname' => 'Qihoo',
+                'key' => 'qihoo',
+            ],
+            [
+                'type' => 'LINE',
+                'name' => 'LINE Corporation',
+                'brandname' => 'LINE',
+                'key' => 'line',
+            ],
+            [
+                'type' => 'NortonMobile',
+                'name' => 'NortonMobile',
+                'brandname' => 'NortonMobile',
+                'key' => 'norton-mobile',
+            ],
         ];
     }
 

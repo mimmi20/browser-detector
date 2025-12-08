@@ -1,6 +1,323 @@
 [
   {
     "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-J410F Build/M1AJB) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-J410F",
+      "marketingName": "Galaxy J4 Core (Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1480,
+        "height": 720,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G985F Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G985F",
+      "marketingName": "Galaxy S20+ 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G930W8 Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 GoogleApp/13.22.15.26.arm6"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G930",
+      "marketingName": "Galaxy S7",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "13.22.15.26",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A326B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 GoogleApp/13.31.14.26.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A326B",
+      "marketingName": "Galaxy A32 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "13.31.14.26",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G781B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 GSA/13.31.14.26.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G781B",
+      "marketingName": "Galaxy S20 FE 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "13.31.14.26",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-S901B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 GoogleApp/13.38.11.26.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S901B",
+      "marketingName": "Galaxy S22 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "13.38.11.26",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.136",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-M317F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 GoogleApp/13.37.10.26.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-M317F",
+      "marketingName": "Galaxy M31s",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "13.37.10.26",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.136",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G960U1 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 GoogleApp/13.36.11.26.arm64"
     },
     "device": {
@@ -30,7 +347,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "13.36.11.26",
       "manufacturer": "Google",
@@ -41,6 +358,236 @@
     "engine": {
       "name": "Blink",
       "version": "105.0.5195.136",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; ACE10 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.118 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5830",
+      "marketingName": "Galaxy Ace",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.5249.118",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A217F Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A217F",
+      "marketingName": "Galaxy A21s (2020, International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A013F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A013F",
+      "marketingName": "Galaxy A01 Core",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1480,
+        "height": 720,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G960F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G960F",
+      "marketingName": "Galaxy S9",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.129",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A032F Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A032F",
+      "marketingName": "Galaxy A03 Core",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.129",
       "manufacturer": "Google"
     }
   },
@@ -75,7 +622,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "13.39.12.26",
       "manufacturer": "Google",
@@ -120,7 +667,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "13.48.11.26",
       "manufacturer": "Google",
@@ -181,6 +728,98 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G770F Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.86 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G770F",
+      "marketingName": "Galaxy S10 Lite",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.5414.86",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A025G Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.86 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A025G",
+      "marketingName": "Galaxy A02s",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.5414.86",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G990B2 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 GoogleApp/13.31.14.26.arm64"
     },
     "device": {
@@ -210,7 +849,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "13.31.14.26",
       "manufacturer": "Google",
@@ -221,6 +860,98 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.97",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A515F Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.117 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A515F",
+      "marketingName": "Galaxy A51 4G (Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.5414.117",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G965F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.117 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G965F",
+      "marketingName": "Galaxy S9 Plus (Europe, Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.5414.117",
       "manufacturer": "Google"
     }
   },
@@ -255,7 +986,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.14.16.26",
       "manufacturer": "Google",
@@ -300,7 +1031,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.14.16.26",
       "manufacturer": "Google",
@@ -311,6 +1042,236 @@
     "engine": {
       "name": "Blink",
       "version": "111.0.5563.116",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G990B2 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G990B2",
+      "marketingName": "Galaxy S21 FE 5G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-A260G Build/OPR6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A260G",
+      "marketingName": "Galaxy A2 Core",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A037G Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A037G",
+      "marketingName": "Galaxy A03s 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G980F Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G980F",
+      "marketingName": "Galaxy S20 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-A405FN Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.57 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A405FN",
+      "marketingName": "Galaxy A40",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 5.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.57",
       "manufacturer": "Google"
     }
   },
@@ -345,7 +1306,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.17.34.28",
       "manufacturer": "Google",
@@ -390,7 +1351,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.17.38.28",
       "manufacturer": "Google",
@@ -435,7 +1396,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.14.16.26",
       "manufacturer": "Google",
@@ -480,7 +1441,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.17.17.28",
       "manufacturer": "Google",
@@ -525,7 +1486,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.16.25.28",
       "manufacturer": "Google",
@@ -536,6 +1497,52 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.5615.101",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G990B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G990B",
+      "marketingName": "Galaxy S21 FE 5G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.5615.136",
       "manufacturer": "Google"
     }
   },
@@ -570,7 +1577,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.27.9.28",
       "manufacturer": "Google",
@@ -615,7 +1622,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.25.13.28",
       "manufacturer": "Google",
@@ -660,7 +1667,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.26.9.28",
       "manufacturer": "Google",
@@ -705,7 +1712,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.25.13.28",
       "manufacturer": "Google",
@@ -750,7 +1757,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "13.31.14.26",
       "manufacturer": "Google",
@@ -795,7 +1802,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.24.9.28",
       "manufacturer": "Google",
@@ -840,7 +1847,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.24.9.28",
       "manufacturer": "Google",
@@ -930,7 +1937,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.21.13.28",
       "manufacturer": "Google",
@@ -975,9 +1982,55 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.12.20.26",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.162",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G988B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.162 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G988B",
+      "marketingName": "Galaxy S20 Ultra 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
       "manufacturer": "Google",
       "type": "mobile-application",
       "isbot": false,
@@ -1020,7 +2073,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "13.31.14.26",
       "manufacturer": "Google",
@@ -1065,7 +2118,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.26.9.28",
       "manufacturer": "Google",
@@ -1110,7 +2163,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.26.9.28",
       "manufacturer": "Google",
@@ -1121,6 +2174,98 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.196",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-A260F Build/OPR6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.166 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A260F",
+      "marketingName": "Galaxy A2 Core",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.5790.166",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.138 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S901B",
+      "marketingName": "Galaxy S22 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.5790.138",
       "manufacturer": "Google"
     }
   },
@@ -1200,7 +2345,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.2.12.26",
       "manufacturer": "Google",
@@ -1245,7 +2390,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.35.18.28",
       "manufacturer": "Google",
@@ -1290,7 +2435,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "13.20.12.23",
       "manufacturer": "Google",
@@ -1335,7 +2480,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.37.22.28",
       "manufacturer": "Google",
@@ -1380,7 +2525,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.40.33.28",
       "manufacturer": "Google",
@@ -1425,7 +2570,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.45.24.28",
       "manufacturer": "Google",
@@ -1470,7 +2615,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.44.29.28",
       "manufacturer": "Google",
@@ -1515,7 +2660,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.26.9.28",
       "manufacturer": "Google",
@@ -1560,7 +2705,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.1.34.28",
       "manufacturer": "Google",
@@ -1605,7 +2750,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.7.50.28",
       "manufacturer": "Google",
@@ -1650,7 +2795,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.5.58.28",
       "manufacturer": "Google",
@@ -1695,7 +2840,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.5.58.28",
       "manufacturer": "Google",
@@ -1785,7 +2930,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.12.42.28",
       "manufacturer": "Google",
@@ -1830,7 +2975,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.14.36.28",
       "manufacturer": "Google",
@@ -1875,7 +3020,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.17.30.28",
       "manufacturer": "Google",
@@ -1920,7 +3065,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.16.38.28",
       "manufacturer": "Google",
@@ -1965,7 +3110,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.34.35.28",
       "manufacturer": "Google",
@@ -2010,7 +3155,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.30.29.28",
       "manufacturer": "Google",
@@ -2055,7 +3200,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.35.41.28",
       "manufacturer": "Google",
@@ -2100,7 +3245,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.28.42.28",
       "manufacturer": "Google",
@@ -2161,6 +3306,52 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-A356B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A356B",
+      "marketingName": "Galaxy A35 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A426B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/128.0.6613.146 Mobile Safari/537.36 GoogleApp/15.36.43.28.arm64"
     },
     "device": {
@@ -2190,7 +3381,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.36.43.28",
       "manufacturer": "Google",
@@ -2235,7 +3426,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.36.43.28",
       "manufacturer": "Google",
@@ -2370,7 +3561,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.46.36",
       "manufacturer": "Google",
@@ -2415,7 +3606,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.50.41",
       "manufacturer": "Google",
@@ -2460,7 +3651,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.49.42",
       "manufacturer": "Google",
@@ -2505,7 +3696,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.0.7",
       "manufacturer": "Google",
@@ -2550,7 +3741,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.1.43",
       "manufacturer": "Google",
@@ -2595,7 +3786,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.0.7",
       "manufacturer": "Google",
@@ -2685,7 +3876,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.15.39",
       "manufacturer": "Google",
@@ -2730,7 +3921,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.14.40",
       "manufacturer": "Google",
@@ -2775,7 +3966,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.14.40",
       "manufacturer": "Google",
@@ -2820,7 +4011,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.14.40",
       "manufacturer": "Google",
@@ -2865,7 +4056,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.14.40",
       "manufacturer": "Google",
@@ -2910,7 +4101,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "15.50.41",
       "manufacturer": "Google",
@@ -2955,7 +4146,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.13.42",
       "manufacturer": "Google",
@@ -3090,7 +4281,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.7.23",
       "manufacturer": "Google",
@@ -3135,7 +4326,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.6.28",
       "manufacturer": "Google",
@@ -3180,7 +4371,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.15.39",
       "manufacturer": "Google",
@@ -3270,7 +4461,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.20.49",
       "manufacturer": "Google",
@@ -3315,7 +4506,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "16.25.46",
       "manufacturer": "Google",
@@ -3326,366 +4517,6 @@
     "engine": {
       "name": "Blink",
       "version": "137.0.7151.115",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-S901N Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.157 Mobile Safari/537.36 GoogleApp/16.27.69.ve.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-S901N",
-      "marketingName": "Galaxy S22 5G (Korea)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "16.27.69",
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "138.0.7204.157",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-A145P Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.168 Mobile Safari/537.36 GoogleApp/16.28.62.ve.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A145P",
-      "marketingName": "Galaxy A14 4G",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2408,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "16.28.62",
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "138.0.7204.168",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-A266B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.168 Mobile Safari/537.36 GoogleApp/16.28.62.ve.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A266B",
-      "marketingName": "Galaxy A26 (International)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "16.28.62",
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "138.0.7204.168",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-A366B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 GoogleApp/16.30.61.ve.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A366B",
-      "marketingName": "Galaxy A36 5G (International)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "16.30.61",
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "138.0.7204.179",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "com.google.android.googlequicksearchbox/301579338 (Linux; U; Android 15; de_DE; SM-A356B; Build/AP3A.240905.015.A2; Cronet/141.0.7340.3)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A356B",
-      "marketingName": "Galaxy A35 5G (International)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Quicksearch Box",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "com.google.android.googlequicksearchbox/301601514 (Linux; U; Android 15; de_DE; SM-S908B; Build/AP3A.240905.015.A2; Cronet/141.0.7340.3)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-S908B",
-      "marketingName": "Galaxy S22 Ultra 5G (International)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 3088,
-        "height": 1440,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Quicksearch Box",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; SM-S731B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36 GoogleApp/16.43.63.ve.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-S731B",
-      "marketingName": "Galaxy S25 FE",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "16.43.63",
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "141.0.7390.122",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; SM-A566B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.102 Mobile Safari/537.36 GoogleApp/16.45.62.ve.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A566B",
-      "marketingName": "Galaxy A56 5G (International)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "16.45.62",
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "142.0.7444.102",
       "manufacturer": "Google"
     }
   }

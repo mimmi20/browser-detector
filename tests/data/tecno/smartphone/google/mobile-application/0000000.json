@@ -30,7 +30,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "10.97.8.21",
       "manufacturer": "Google",
@@ -75,7 +75,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "6.8.23.21",
       "manufacturer": "Google",
@@ -120,7 +120,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "8.6.9.21",
       "manufacturer": "Google",
@@ -131,6 +131,52 @@
     "engine": {
       "name": "Blink",
       "version": "67.0.3396.81",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; TECNO BB2 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BB2",
+      "marketingName": "Pop 3",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
       "manufacturer": "Google"
     }
   }

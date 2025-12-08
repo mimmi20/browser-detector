@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36,gzip(gfe)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "131.0.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "131.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "sec-ch-ua-platform": "Android",
       "sec-ch-ua": "\"Chromium\";v=\"129\", \"Google Chrome\";v=\"129\"",
       "sec-ch-ua-mobile": "?1",
@@ -396,7 +351,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "118.0.5993.550",
       "manufacturer": "Google",
@@ -486,7 +441,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -531,7 +486,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "120.0.6099.230",
       "manufacturer": "Google",
@@ -576,7 +531,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "122.0.6261.64",
       "manufacturer": "Google",
@@ -621,7 +576,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "127.0.6533.103",
       "manufacturer": "Google",
@@ -666,7 +621,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "89.0.4389.105",
       "manufacturer": "Google",
@@ -711,7 +666,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "130.0.6723.58",
       "manufacturer": "Google",
@@ -749,14 +704,14 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": null,
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "129.0.6668.102",
       "manufacturer": "Google",
@@ -801,7 +756,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "131.0.6778.39",
       "manufacturer": "Google",
@@ -891,7 +846,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "129.0.6668.100",
       "manufacturer": "Google",
@@ -936,7 +891,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "129.0.6668.102",
       "manufacturer": "Google",
@@ -1026,7 +981,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.97",
       "manufacturer": "Google",
@@ -1071,7 +1026,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "130.0.6723.58",
       "manufacturer": "Google",
@@ -1116,7 +1071,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "113.0.5672.163",
       "manufacturer": "Google",
@@ -1161,7 +1116,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "113.0.5672.163",
       "manufacturer": "Google",
@@ -1206,7 +1161,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "129.0.6668.100",
       "manufacturer": "Google",
@@ -1251,7 +1206,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "129.0.6668.102",
       "manufacturer": "Google",
@@ -1296,7 +1251,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "129.0.6668.100",
       "manufacturer": "Google",
@@ -1524,7 +1479,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "131.0.6778.135",
       "manufacturer": "Google",
@@ -2034,7 +1989,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2079,7 +2034,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2124,7 +2079,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "116.0.5845.275",
       "manufacturer": "Google",
@@ -2169,7 +2124,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2214,7 +2169,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2259,7 +2214,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2304,7 +2259,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2349,7 +2304,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2394,7 +2349,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2439,7 +2394,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2484,7 +2439,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2529,7 +2484,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2574,7 +2529,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2619,7 +2574,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "116.0.5845.275",
       "manufacturer": "Google",
@@ -2664,7 +2619,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "116.0.5845.275",
       "manufacturer": "Google",
@@ -2709,7 +2664,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2754,7 +2709,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2799,7 +2754,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "104.0.5112.102",
       "manufacturer": "Google",
@@ -2844,7 +2799,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "80.0.3987.149",
       "manufacturer": "Google",
@@ -2889,7 +2844,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.6943.89",
       "manufacturer": "Google",
@@ -2934,7 +2889,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "132.0.6834.165",
       "manufacturer": "Google",
@@ -2979,7 +2934,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.6943.89",
       "manufacturer": "Google",
@@ -3024,7 +2979,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "132.0.6834.163",
       "manufacturer": "Google",
@@ -3062,14 +3017,14 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": null,
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "135.0.7049.111",
       "manufacturer": "Google",
@@ -3114,7 +3069,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "132.0.6834.166",
       "manufacturer": "Google",
@@ -3159,7 +3114,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "113.0.5672.163",
       "manufacturer": "Google",
@@ -3384,7 +3339,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "135.0.7049.38",
       "manufacturer": "Google",
@@ -3654,7 +3609,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.6943.137",
       "manufacturer": "Google",
@@ -3699,7 +3654,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.6943.137",
       "manufacturer": "Google",
@@ -3744,7 +3699,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.6943.137",
       "manufacturer": "Google",
@@ -3789,7 +3744,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.6943.121",
       "manufacturer": "Google",
@@ -3834,7 +3789,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.6943.121",
       "manufacturer": "Google",
@@ -3924,7 +3879,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "136.0.0.0",
       "manufacturer": "Google",
@@ -3969,7 +3924,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.0.0",
       "manufacturer": "Google",
@@ -4014,7 +3969,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "135.0.7049.111",
       "manufacturer": "Google",
@@ -4059,7 +4014,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "131.0.6778.260",
       "manufacturer": "Google",
@@ -4239,7 +4194,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "134.0.6998.108",
       "manufacturer": "Google",
@@ -4329,7 +4284,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "133.0.6943.137",
       "manufacturer": "Google",
@@ -4532,6 +4487,51 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Diofox M508) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "135.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.0.0",
       "manufacturer": "Google"
     }
   }

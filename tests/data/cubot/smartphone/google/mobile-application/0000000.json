@@ -30,7 +30,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "7.2.26.21",
       "manufacturer": "Google",
@@ -41,6 +41,52 @@
     "engine": {
       "name": "Blink",
       "version": "58.0.3029.83",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; NOTE 7 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Note 7",
+      "marketingName": "Note 7",
+      "manufacturer": "Cubot",
+      "brand": "Cubot",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 960,
+        "height": 442,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.5249.126",
       "manufacturer": "Google"
     }
   },
@@ -75,7 +121,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google App",
+      "name": "Google Search App",
       "modus": null,
       "version": "14.44.29.28",
       "manufacturer": "Google",

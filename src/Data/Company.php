@@ -1100,6 +1100,22 @@ enum Company: string implements CompanyInterface
 
     case tuYafeng = 'Tu Yafeng';
 
+    case pythonSoftwareFoundation = 'Python Software Foundation';
+
+    case openai = 'OpenAI';
+
+    case telegram = 'Telegram';
+
+    case cloudviewTechnology = 'CloudView Technology';
+
+    case soulSoft = 'SoulSoft';
+
+    case qihoo = 'Qihoo';
+
+    case line = 'LINE';
+
+    case nortonMobile = 'NortonMobile';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1648,6 +1664,14 @@ enum Company: string implements CompanyInterface
             'genspark' => self::genspark,
             'pia', 'pia private internet access, inc' => self::pia,
             'tuyafeng', 'tu-yafeng', 'tu yafeng' => self::tuYafeng,
+            'pythonsoftwarefoundation', 'python-software-foundation', 'python software foundation' => self::pythonSoftwareFoundation,
+            'openai', 'openai lp' => self::openai,
+            'telegram', 'telegram messenger inc.' => self::telegram,
+            'cloudviewtechnology', 'cloudview-technology', 'cloudview technology' => self::cloudviewTechnology,
+            'soulsoft', 'soul-soft' => self::soulSoft,
+            'qihoo', 'qihoo 360 technology co. ltd.' => self::qihoo,
+            'line', 'line corporation' => self::line,
+            'nortonmobile', 'norton-mobile' => self::nortonMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1793,7 +1817,10 @@ enum Company: string implements CompanyInterface
             self::quark => 'Quark Team',
             self::deepseekAI => 'Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd.',
             self::pia => 'PIA Private Internet Access, Inc',
-            self::quark => 'Quark Team',
+            self::openai => 'OpenAI LP',
+            self::telegram => 'Telegram Messenger Inc.',
+            self::qihoo => 'Qihoo 360 Technology Co. Ltd.',
+            self::line => 'LINE Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -1928,6 +1955,10 @@ enum Company: string implements CompanyInterface
             self::keplr => 'team-keplr',
             self::viberMedia => 'viber-media',
             self::tuYafeng => 'tu-yafeng',
+            self::pythonSoftwareFoundation => 'python-software-foundation',
+            self::cloudviewTechnology => 'cloudview-technology',
+            self::soulSoft => 'soul-soft',
+            self::nortonMobile => 'norton-mobile',
             default => $this->name,
         };
     }

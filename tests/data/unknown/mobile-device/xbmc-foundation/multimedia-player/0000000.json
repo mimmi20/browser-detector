@@ -33,7 +33,7 @@
       "name": "XBMC Media Center",
       "modus": null,
       "version": null,
-      "manufacturer": "xbmc-foundation",
+      "manufacturer": "XBMC Foundation",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null
@@ -78,7 +78,7 @@
       "name": "XBMC Media Center",
       "modus": null,
       "version": null,
-      "manufacturer": "xbmc-foundation",
+      "manufacturer": "XBMC Foundation",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null
@@ -123,7 +123,7 @@
       "name": "XBMC Media Center",
       "modus": null,
       "version": null,
-      "manufacturer": "xbmc-foundation",
+      "manufacturer": "XBMC Foundation",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null
@@ -132,6 +132,51 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.1 (Linux; Android 4.2.2; Android TV Build/JDQ39) Android/4.2.2 Sys_CPU/armv7l App_Bitness/32 Version/14.1-Git:2015-01-30-38e4046-dirty"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "modus": null,
+      "version": "14.1.0",
+      "manufacturer": "XBMC Foundation",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -168,7 +213,7 @@
       "name": "XBMC Media Center",
       "modus": null,
       "version": null,
-      "manufacturer": "xbmc-foundation",
+      "manufacturer": "XBMC Foundation",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null
@@ -213,7 +258,7 @@
       "name": "XBMC Media Center",
       "modus": null,
       "version": null,
-      "manufacturer": "xbmc-foundation",
+      "manufacturer": "XBMC Foundation",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null
@@ -248,9 +293,9 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": null,
       "manufacturer": "Google",
       "bits": null
     },
@@ -258,7 +303,7 @@
       "name": "Kodi Media Center",
       "modus": null,
       "version": "20.2.0",
-      "manufacturer": "xbmc-foundation",
+      "manufacturer": "XBMC Foundation",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null
@@ -303,7 +348,7 @@
       "name": "Kodi Media Center",
       "modus": null,
       "version": "19.3.0",
-      "manufacturer": "xbmc-foundation",
+      "manufacturer": "XBMC Foundation",
       "type": "multimedia-player",
       "isbot": false,
       "bits": null

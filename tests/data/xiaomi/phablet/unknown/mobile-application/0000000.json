@@ -33,7 +33,7 @@
     "client": {
       "name": "InstaPro",
       "modus": null,
-      "version": null,
+      "version": "215.0.0.27.359",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -89,6 +89,51 @@
       "name": "Blink",
       "version": "101.0.4951.61",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/11 (Linux; U; Android 11; 2201116SG Build/RKQ1.211001.001)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2201116SG",
+      "marketingName": "Redmi Note 11 Pro 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]
