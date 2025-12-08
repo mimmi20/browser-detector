@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; CRUISE1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.74",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; Stratus_C5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
     },
     "device": {
@@ -795,7 +840,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "96.0.4664.104",
       "manufacturer": "Google",
@@ -840,7 +885,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "91.0.4472.120",
       "manufacturer": "Google",
@@ -1470,7 +1515,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "66.0.3359.158",
       "manufacturer": "Google",
@@ -2325,7 +2370,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "94.0.4606.85",
       "manufacturer": "Google",
@@ -2370,7 +2415,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "94.0.4606.85",
       "manufacturer": "Google",
@@ -4451,51 +4496,6 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.45",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Elite H55) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "81.0.4044.138",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
       "manufacturer": "Google"
     }
   }

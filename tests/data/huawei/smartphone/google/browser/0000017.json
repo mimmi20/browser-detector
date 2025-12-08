@@ -1,186 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; CTR-LX1 Build/HUAWEICTR-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CTR-LX1",
-      "marketingName": "nova Y90",
-      "manufacturer": "Huawei",
-      "brand": "Huawei",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2388,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "88.0.4324.93",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.93",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; MNA-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.134 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MNA-LX9",
-      "marketingName": "P60 Pro",
-      "manufacturer": "Huawei",
-      "brand": "Huawei",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2700,
-        "height": 1220,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "91.0.4472.134",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.134",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; YAL-L61 Build/HUAWEIYAL-L61) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "YAL-L61",
-      "marketingName": "nova 5T",
-      "manufacturer": "Huawei",
-      "brand": "Huawei",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.26
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "91.0.4472.101",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.101",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; VNA-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "VNA-LX3",
-      "marketingName": "X5 4G",
-      "manufacturer": "Huawei",
-      "brand": "Honor",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "105.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; RKY-LX1 Build/HONORRKY-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36"
     },
     "device": {
@@ -210,7 +30,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "114.0.5735.131",
       "manufacturer": "Google",
@@ -255,7 +75,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "88.0.4324.93",
       "manufacturer": "Google",
@@ -300,7 +120,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "105.0.5195.136",
       "manufacturer": "Google",
@@ -345,7 +165,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "88.0.4324.93",
       "manufacturer": "Google",
@@ -578,7 +398,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "114.0.5735.227",
       "manufacturer": "Google",
@@ -623,7 +443,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "114.0.5735.196",
       "manufacturer": "Google",
@@ -668,7 +488,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "114.0.5735.196",
       "manufacturer": "Google",
@@ -767,7 +587,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "115.0.5790.166",
       "manufacturer": "Google",
@@ -812,7 +632,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "116.0.0.0",
       "manufacturer": "Google",
@@ -873,6 +693,54 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Android WebView\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ELE-L29 Build/HUAWEIELE-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/433.0.0.31.111;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ELE-L29",
+      "marketingName": "P30",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "117.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "117.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; HUAWEI H891L Build/HuaweiH891L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -902,7 +770,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "33.0.0.0",
       "manufacturer": "Google",
@@ -947,9 +815,63 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "118.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua": "\"Chromium\";v=\"118\", \"Android WebView\";v=\"118\", \"Not=A?Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; VOG-L29 Build/HUAWEIVOG-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 OPR/75.0.2254.68857"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VOG-L29",
+      "marketingName": "P30 Pro Dual-SIM",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.47
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "118.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -1082,7 +1004,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "119.0.6045.163",
       "manufacturer": "Google",
@@ -1127,7 +1049,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "119.0.6045.164",
       "manufacturer": "Google",
@@ -1172,7 +1094,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "92.0.4515.105",
       "manufacturer": "Google",
@@ -1352,7 +1274,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "92.0.4515.105",
       "manufacturer": "Google",
@@ -1397,7 +1319,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "120.0.6099.232",
       "manufacturer": "Google",
@@ -1442,7 +1364,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "99.0.4844.88",
       "manufacturer": "Google",
@@ -1487,7 +1409,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "121.0.6167.164",
       "manufacturer": "Google",
@@ -1532,7 +1454,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "123.0.6312.40",
       "manufacturer": "Google",
@@ -1577,7 +1499,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "76.0.3809.111",
       "manufacturer": "Google",
@@ -1847,7 +1769,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "123.0.6312.118",
       "manufacturer": "Google",
@@ -1937,7 +1859,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "99.0.4844.88",
       "manufacturer": "Google",
@@ -2072,7 +1994,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "99.0.4844.88",
       "manufacturer": "Google",
@@ -2207,7 +2129,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "126.0.6478.71",
       "manufacturer": "Google",
@@ -2342,7 +2264,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "124.0.6367.123",
       "manufacturer": "Google",
@@ -2612,7 +2534,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "97.0.4692.98",
       "manufacturer": "Google",
@@ -3062,7 +2984,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -3107,7 +3029,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "92.0.4515.105",
       "manufacturer": "Google",
@@ -3197,7 +3119,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "97.0.4692.98",
       "manufacturer": "Google",
@@ -3287,7 +3209,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "99.0.4844.88",
       "manufacturer": "Google",
@@ -3332,7 +3254,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "126.0.6478.134",
       "manufacturer": "Google",
@@ -3377,7 +3299,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "126.0.6478.134",
       "manufacturer": "Google",
@@ -3422,7 +3344,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "125.0.6422.165",
       "manufacturer": "Google",
@@ -3467,7 +3389,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "128.0.6613.127",
       "manufacturer": "Google",
@@ -3512,7 +3434,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "126.0.6478.186",
       "manufacturer": "Google",
@@ -3557,7 +3479,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "125.0.6422.148",
       "manufacturer": "Google",
@@ -3602,7 +3524,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "125.0.6422.165",
       "manufacturer": "Google",
@@ -3880,7 +3802,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "85.0.4183.69",
       "manufacturer": "Google",
@@ -3925,7 +3847,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -4105,7 +4027,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "130.0.6723.108",
       "manufacturer": "Google",
@@ -4420,7 +4342,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "131.0.6778.200",
       "manufacturer": "Google",
@@ -4521,6 +4443,102 @@
     "engine": {
       "name": "Blink",
       "version": "133.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Android WebView\";v=\"133\", \"Chromium\";v=\"133\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; BLA-L29 Build/HUAWEIBLA-L29S; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.121 Mobile Safari/537.36 OPR/88.0.2254.75874"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BLA-L29",
+      "marketingName": "Mate 10 Pro",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "133.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "133.0.6943.121",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"55\", \"Chromium\";v=\"55\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BLL-L22",
+      "marketingName": "GR5 (2017)",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
       "manufacturer": "Google"
     }
   }

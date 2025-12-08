@@ -306,7 +306,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "70.0.3538.80",
       "manufacturer": "Google",
@@ -351,7 +351,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "76.0.3809.111",
       "manufacturer": "Google",
@@ -486,7 +486,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "107.0.5304.141",
       "manufacturer": "Google",
@@ -531,7 +531,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "125.0.6422.165",
       "manufacturer": "Google",
@@ -891,7 +891,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "132.0.6834.165",
       "manufacturer": "Google",
@@ -981,7 +981,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "77.0.3865.92",
       "manufacturer": "Google",
@@ -992,6 +992,51 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.92",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; TECNO CK6n) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.50 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CK6n",
+      "marketingName": "Camon 20",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "125.0.6422.50",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "125.0.6422.50",
       "manufacturer": "Google"
     }
   }

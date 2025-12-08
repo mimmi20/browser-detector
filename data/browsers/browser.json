@@ -232,6 +232,18 @@
     },
     "engine": "webkit"
   },
+  "chrome webview": {
+    "name": "Chrome WebView",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Chrome"
+      ]
+    },
+    "engine": "blink"
+  },
   "android webview": {
     "name": "Android WebView",
     "manufacturer": "google",
@@ -981,7 +993,7 @@
     "engine": "gecko"
   },
   "dalvik": {
-    "name": "Dalvik",
+    "name": "Android Browser",
     "manufacturer": "google",
     "type": "browser",
     "version": {
@@ -1666,7 +1678,7 @@
     "engine": "unknown"
   },
   "huawei-browser": {
-    "name": "HuaweiBrowser",
+    "name": "Huawei Browser Mobile",
     "manufacturer": "huawei",
     "type": "browser",
     "version": {
@@ -2207,18 +2219,6 @@
     },
     "engine": null
   },
-  "line browser": {
-    "name": "Line Browser",
-    "manufacturer": "line",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Line"
-      ]
-    },
-    "engine": null
-  },
   "links": {
     "name": "Links",
     "manufacturer": "mikulas-patocka",
@@ -2447,7 +2447,7 @@
     "engine": "unknown"
   },
   "miui browser": {
-    "name": "Miui Browser",
+    "name": "Mi Browser",
     "manufacturer": "xiaomi",
     "type": "browser",
     "version": {
@@ -3466,7 +3466,7 @@
     "engine": "webkit"
   },
   "qwant-mobile": {
-    "name": "QwantMobile",
+    "name": "Qwant Mobile",
     "manufacturer": "qwant",
     "type": "browser",
     "version": {
@@ -4250,7 +4250,7 @@
     "engine": null
   },
   "vivo-browser": {
-    "name": "VivoBrowser",
+    "name": "vivo Browser",
     "manufacturer": "vivo",
     "type": "browser",
     "version": {
@@ -4592,7 +4592,7 @@
     "engine": null
   },
   "adblock browser": {
-    "name": "Adblock Browser",
+    "name": "AdBlock Browser",
     "manufacturer": "eyeo",
     "type": "browser",
     "version": {
@@ -5304,7 +5304,7 @@
     "engine": null
   },
   "in-browser": {
-    "name": "InBrowser - Inkognito Surfen",
+    "name": "InBrowser",
     "manufacturer": "pia",
     "type": "browser",
     "version": {
@@ -5532,5 +5532,32 @@
       "search": null
     },
     "engine": null
+  },
+  "hi-browser": {
+    "name": "Hi Browser",
+    "manufacturer": "redfoxunitedinc",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HiBrowser\\/v",
+        "HiBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "coast": {
+    "name": "Coast",
+    "manufacturer": "opera",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OperaCoast",
+        "Opera%20Coast",
+        "Coast"
+      ]
+    },
+    "engine": "webkit"
   }
 }

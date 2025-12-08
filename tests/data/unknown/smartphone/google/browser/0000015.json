@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; T775B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.87",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.87",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; MT2111) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36"
     },
     "device": {
@@ -750,7 +795,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "98.0.4758.101",
       "manufacturer": "Google",
@@ -840,7 +885,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "98.0.4758.87",
       "manufacturer": "Google",
@@ -1290,7 +1335,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "86.0.4240.198",
       "manufacturer": "Google",
@@ -1380,7 +1425,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "66.0.3359.158",
       "manufacturer": "Google",
@@ -1425,7 +1470,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "74.0.3729.186",
       "manufacturer": "Google",
@@ -1470,7 +1515,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "74.0.3729.186",
       "manufacturer": "Google",
@@ -1515,7 +1560,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "98.0.4758.101",
       "manufacturer": "Google",
@@ -2370,7 +2415,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "75.0.3770.156",
       "manufacturer": "Google",
@@ -2460,7 +2505,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "74.0.3729.186",
       "manufacturer": "Google",
@@ -2505,7 +2550,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "98.0.4758.101",
       "manufacturer": "Google",
@@ -2550,7 +2595,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "74.0.3729.186",
       "manufacturer": "Google",
@@ -2955,7 +3000,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "76.0.3809.89",
       "manufacturer": "Google",
@@ -3180,7 +3225,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "74.0.3729.23",
       "manufacturer": "Google",
@@ -3225,7 +3270,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "74.0.3729.23",
       "manufacturer": "Google",
@@ -3270,7 +3315,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "74.0.3729.23",
       "manufacturer": "Google",
@@ -4035,7 +4080,7 @@
       "bits": null
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome WebView",
       "modus": null,
       "version": "99.0.4844.73",
       "manufacturer": "Google",
@@ -4459,52 +4504,6 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.7",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "x-requested-with": "com.android.browser",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11.0; P50 Pro+ Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.73",
       "manufacturer": "Google"
     }
   }

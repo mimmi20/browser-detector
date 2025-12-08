@@ -143,7 +143,7 @@ final class DetectorTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'HuaweiBrowser',
+                        'name' => 'Huawei Browser Mobile',
                         'modus' => null,
                         'version' => '92.0.0',
                         'manufacturer' => 'Huawei',
@@ -238,7 +238,7 @@ final class DetectorTest extends TestCase
                         'name' => 'Quark',
                         'modus' => null,
                         'version' => '1.6.9.911',
-                        'manufacturer' => 'quark-team',
+                        'manufacturer' => 'Quark',
                         'type' => 'browser',
                         'isbot' => false,
                         'bits' => null,
@@ -537,7 +537,7 @@ final class DetectorTest extends TestCase
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'iPad 5,1',
-                        'marketingName' => 'iPad Mini 4',
+                        'marketingName' => 'iPad Mini 4 Wi-Fi',
                         'manufacturer' => 'Apple',
                         'brand' => 'Apple',
                         'dualOrientation' => true,
@@ -699,7 +699,7 @@ final class DetectorTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'Dalvik',
+                        'name' => 'Android Browser',
                         'modus' => null,
                         'version' => '2.1.0',
                         'manufacturer' => 'Google',
@@ -1211,7 +1211,7 @@ final class DetectorTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'Dalvik',
+                        'name' => 'Android Browser',
                         'modus' => null,
                         'version' => '1.6.0',
                         'manufacturer' => 'Google',

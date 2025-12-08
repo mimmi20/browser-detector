@@ -136,7 +136,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18"
+      "user-agent": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; de-de) AppleWebKit/528.18 (KHTML, like Gecko)"
     },
     "device": {
       "architecture": null,
@@ -160,7 +160,7 @@
     "os": {
       "name": "iPhone OS",
       "marketingName": "iPhone OS",
-      "version": "3.0.0",
+      "version": "3.1.2",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1441,96 +1441,6 @@
     "engine": {
       "name": "WebKit",
       "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ChatGPT/1.2025.280 (iOS 18.6.2; iPhone11,8; build 18424736785)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 11,8",
-      "marketingName": "iPhone XR",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "18.6.2",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ChatGPT/1.2025.301 (iOS 18.6.2; iPhone13,1; build 18983735331)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 13,1",
-      "marketingName": "iPhone 12 Mini",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 5.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "18.6.2",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
       "manufacturer": "Apple"
     }
   }

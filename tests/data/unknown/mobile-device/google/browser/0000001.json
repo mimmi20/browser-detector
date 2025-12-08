@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "{version:6.1947.1,platform:server_android,osversion:10}"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "{version:6.1946.2,platform:server_android,osversion:9}"
     },
     "device": {
@@ -570,7 +615,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "1.4.0",
       "manufacturer": "Google",
@@ -750,7 +795,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -3990,7 +4035,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -4035,7 +4080,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -4125,7 +4170,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -4305,7 +4350,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -4350,7 +4395,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -4395,7 +4440,7 @@
       "bits": null
     },
     "client": {
-      "name": "Dalvik",
+      "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "Google",
@@ -4412,51 +4457,6 @@
   {
     "headers": {
       "user-agent": "{version:6.2039.0-arm64-v8a,platform:server_android,osversion:10}"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "{version:6.2040.1-arm64-v8a,platform:server_android,osversion:10}"
     },
     "device": {
       "architecture": null,

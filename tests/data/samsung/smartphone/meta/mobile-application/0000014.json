@@ -358,5 +358,95 @@
       "version": "95.0.4638.74",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "[FBAN/FB4A;FBAV/540.0.0.49.148;FBBV/828454297;FBDM/{density=3.0,width=1080,height=2400};FBLC/de_DE;FBRV/833341838;FBCR/Telekom.de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A536B;FBSV/15;FBOP/1;FBCA/arm64-v8a:;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A536B",
+      "marketingName": "Galaxy A53 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "540.0.0.49.148",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Instagram 407.0.0.55.243 Android (36/16; 480dpi; 1080x2340; samsung; SM-A546B; a54x; s5e8835; de_DE; 827398133)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A546B",
+      "marketingName": "Galaxy A54 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "407.0.0.55.243",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

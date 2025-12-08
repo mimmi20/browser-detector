@@ -1,6 +1,186 @@
 [
   {
     "headers": {
+      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; POCO F1 Build/QKQ1.190828.002)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pocophone F1",
+      "marketingName": "Pocophone F1",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2246,
+        "height": 1080,
+        "touch": true,
+        "size": 6.18
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; MI 9 Build/QKQ1.190825.002) comdirect/1.0 (appVersion:20.11.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; M2007J17G Build/QKQ1.200628.002)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2007J17G",
+      "marketingName": "Mi 10T Lite 5G (Global)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; Mi 10 Build/QKQ1.191117.002)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi 10",
+      "marketingName": "Mi 10",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "x-requested-with": "it.tolelab.fvd",
       "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi A1 Build/PKQ1.180917.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.58 Mobile Safari/537.36"
     },
@@ -89,6 +269,141 @@
       "name": "Blink",
       "version": "98.0.4758.101",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/12 (Linux; U; Android 12; M2012K11AG Build/SKQ1.211006.001)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2012K11AG",
+      "marketingName": "F3",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/12 (Linux; U; Android 12; M2011K2G Build/SKQ1.211006.001)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2011K2G",
+      "marketingName": "Mi 11",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.81
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/12 (Linux; U; Android 12; 21081111RG Build/SP1A.210812.016)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "21081111RG",
+      "marketingName": "11T",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

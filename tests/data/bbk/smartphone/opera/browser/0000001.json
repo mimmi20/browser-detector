@@ -933,7 +933,7 @@
     "client": {
       "name": "Opera Touch",
       "modus": null,
-      "version": null,
+      "version": "2.9.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4018,6 +4018,51 @@
     "engine": {
       "name": "Blink",
       "version": "141.0.7390.97",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; RMX2195) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.210 Mobile Safari/537.36 OPR/75.2.3995.72468"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX2195",
+      "marketingName": "C15 Qualcomm Edition",
+      "manufacturer": "BBK",
+      "brand": "Realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "75.2.3995.72468",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.210",
       "manufacturer": "Google"
     }
   }

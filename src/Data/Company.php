@@ -1000,6 +1000,122 @@ enum Company: string implements CompanyInterface
 
     case voix = 'VOIX';
 
+    case yasin = 'YASIN';
+
+    case redfoxunitedinc = 'RedFoxUnitedInc';
+
+    case tencent = 'Tencent';
+
+    case snap = 'Snap';
+
+    case ilegendsoft = 'iLegendSoft';
+
+    case flipboard = 'Flipboard';
+
+    case slack = 'Slack';
+
+    case gramvis = 'Gramvis';
+
+    case linkedin = 'LinkedIn';
+
+    case emadElsaid = 'Emad Elsaid';
+
+    case twitter = 'Twitter';
+
+    case aloha = 'Aloha';
+
+    case agileBits = 'AgileBits';
+
+    case vmware = 'VMware';
+
+    case streema = 'Streema';
+
+    case radioArabella = 'Radio Arabella';
+
+    case phonostar = 'phonostar';
+
+    case acast = 'Acast';
+
+    case turkcell = 'Turkcell';
+
+    case rakuten = 'Rakuten';
+
+    case srware = 'SRWare';
+
+    case ghostery = 'Ghostery';
+
+    case seznam = 'Seznam';
+
+    case tiktok = 'TikTok';
+
+    case alexanderClauss = 'Alexander Clauss';
+
+    case evernote = 'Evernote';
+
+    case cheetahMobile = 'Cheetah Mobile';
+
+    case dsaSolutions = 'dsa Solutions';
+
+    case gl9 = 'gl9';
+
+    case privacywall = 'PrivacyWall';
+
+    case braveSoftware = 'Brave Software';
+
+    case umeTech = 'Ume Tech';
+
+    case bravoUnicorn = 'Bravo Unicorn';
+
+    case stoutner = 'Stoutner';
+
+    case goodiware = 'Good.iWare';
+
+    case kakao = 'Kakao';
+
+    case pixelMotion = 'Pixel Motion';
+
+    case xbmcfoundation = 'XBMC Foundation';
+
+    case eyeo = 'Eyeo';
+
+    case sfr = 'SFR';
+
+    case moyaApp = 'Moya App';
+
+    case quark = 'Quark';
+
+    case moonshotAI = 'Moonshot AI';
+
+    case deepseekAI = 'DeepSeek AI';
+
+    case keplr = 'Team Keplr';
+
+    case viberMedia = 'Viber Media';
+
+    case canopy = 'Canopy';
+
+    case genspark = 'Genspark';
+
+    case pia = 'PIA';
+
+    case tuYafeng = 'Tu Yafeng';
+
+    case pythonSoftwareFoundation = 'Python Software Foundation';
+
+    case openai = 'OpenAI';
+
+    case telegram = 'Telegram';
+
+    case cloudviewTechnology = 'CloudView Technology';
+
+    case soulSoft = 'SoulSoft';
+
+    case qihoo = 'Qihoo';
+
+    case line = 'LINE';
+
+    case nortonMobile = 'NortonMobile';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1498,6 +1614,64 @@ enum Company: string implements CompanyInterface
             'edanix' => self::edanix,
             'aiplus', 'ai+', 'ai-plus' => self::aiplus,
             'voix' => self::voix,
+            'yasin' => self::yasin,
+            'redfoxunitedinc' => self::redfoxunitedinc,
+            'tencent', 'tencent holdings ltd.' => self::tencent,
+            'snap', 'snap inc.' => self::snap,
+            'ilegendsoft', 'ilegendsoft, inc.' => self::ilegendsoft,
+            'flipboard', 'flipboard, inc.' => self::flipboard,
+            'slack', 'slack technologies' => self::slack,
+            'gramvis', 'gramvis lab' => self::gramvis,
+            'linkedin', 'linkedin corporation', 'linked-in' => self::linkedin,
+            'emadelsaid', 'emad-elsaid', 'emad elsaid' => self::emadElsaid,
+            'twitter' => self::twitter,
+            'aloha', 'aloha mobile ltd.', 'aloha-mobile' => self::aloha,
+            'agilebits', 'agilebits, inc.', 'agile-bits' => self::agileBits,
+            'vmware', 'vmware, inc.' => self::vmware,
+            'streema' => self::streema,
+            'radioarabella', 'radio arabella studiobetriebsges. mbh', 'radio-arabella', 'radio arabella' => self::radioArabella,
+            'phonostar', 'phonostar gmbh' => self::phonostar,
+            'acast', 'acast ab' => self::acast,
+            'turkcell', 'turkcell iletisim hizmetleri a.s.' => self::turkcell,
+            'rakuten' => self::rakuten,
+            'srware' => self::srware,
+            'ghostery', 'ghostery, inc.' => self::ghostery,
+            'seznam', 'seznam.cz, a.s.' => self::seznam,
+            'tiktok', 'tiktok pte. ltd.' => self::tiktok,
+            'alexanderclauss', 'alexander clauss', 'alexander-clauss' => self::alexanderClauss,
+            'evernote', 'evernote corporation' => self::evernote,
+            'cheetahmobile', 'cheetah-mobile', 'cheetah mobile' => self::cheetahMobile,
+            'dsasolutions', 'dsa-solutions', 'dsa solutions gmbh', 'dsa solutions' => self::dsaSolutions,
+            'gl9' => self::gl9,
+            'privacywall' => self::privacywall,
+            'bravesoftware', 'brave-software', 'brave software inc.', 'brave software' => self::braveSoftware,
+            'umetech', 'ume-tech', 'ume tech' => self::umeTech,
+            'bravounicorn', 'bravo-unicorn', 'bravo unicorn pte. ltd', 'bravo unicorn' => self::bravoUnicorn,
+            'stoutner' => self::stoutner,
+            'goodiware', 'good-iware', 'good.iware, inc.', 'good.iware' => self::goodiware,
+            'kakao', 'kakao corp.' => self::kakao,
+            'pixelmotion', 'pixel-motion', 'pixel motion inc.', 'pixel motion' => self::pixelMotion,
+            'xbmcfoundation', 'xbmc-foundation', 'xbmc foundation' => self::xbmcfoundation,
+            'eyeo', 'eyeo gmbh' => self::eyeo,
+            'sfr', 'societe francaise du radiotelephone' => self::sfr,
+            'moyaapp', 'moya-app', 'moya app (pty) ltd', 'moya app' => self::moyaApp,
+            'quark', 'quark-team', 'quark team' => self::quark,
+            'moonshotai', 'moonshot-ai', 'moonshot ai' => self::moonshotAI,
+            'deepseekai', 'deepseek ai', 'deepseek-ai', 'hangzhou deepseek artificial intelligence basic technology research co., ltd.' => self::deepseekAI,
+            'keplr', 'team keplr', 'team-keplr' => self::keplr,
+            'vibermedia', 'viber media', 'viber-media' => self::viberMedia,
+            'canopy' => self::canopy,
+            'genspark' => self::genspark,
+            'pia', 'pia private internet access, inc' => self::pia,
+            'tuyafeng', 'tu-yafeng', 'tu yafeng' => self::tuYafeng,
+            'pythonsoftwarefoundation', 'python-software-foundation', 'python software foundation' => self::pythonSoftwareFoundation,
+            'openai', 'openai lp' => self::openai,
+            'telegram', 'telegram messenger inc.' => self::telegram,
+            'cloudviewtechnology', 'cloudview-technology', 'cloudview technology' => self::cloudviewTechnology,
+            'soulsoft', 'soul-soft' => self::soulSoft,
+            'qihoo', 'qihoo 360 technology co. ltd.' => self::qihoo,
+            'line', 'line corporation' => self::line,
+            'nortonmobile', 'norton-mobile' => self::nortonMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1613,6 +1787,40 @@ enum Company: string implements CompanyInterface
             self::moonchild => 'Moonchild Productions',
             self::koobee => 'Shenzhen koobee Communication Equipment Co.,Ltd',
             self::island => 'Island Technology, Inc.',
+            self::tencent => 'Tencent Holdings Ltd.',
+            self::snap => 'Snap Inc.',
+            self::ilegendsoft => 'iLegendSoft, Inc.',
+            self::flipboard => 'Flipboard, Inc.',
+            self::slack => 'Slack Technologies',
+            self::gramvis => 'Gramvis Lab',
+            self::linkedin => 'LinkedIn Corporation',
+            self::aloha => 'Aloha Mobile Ltd.',
+            self::agileBits => 'AgileBits, Inc.',
+            self::vmware => 'VMware, Inc.',
+            self::radioArabella => 'Radio Arabella Studiobetriebsges. mbH',
+            self::phonostar => 'phonostar GmbH',
+            self::acast => 'Acast AB',
+            self::turkcell => 'Turkcell Iletisim Hizmetleri A.S.',
+            self::ghostery => 'Ghostery, Inc.',
+            self::seznam => 'Seznam.cz, a.s.',
+            self::tiktok => 'TikTok Pte. Ltd.',
+            self::evernote => 'Evernote Corporation',
+            self::dsaSolutions => 'dsa Solutions GmbH',
+            self::braveSoftware => 'Brave Software Inc.',
+            self::bravoUnicorn => 'Bravo Unicorn Pte. Ltd',
+            self::goodiware => 'Good.iWare, Inc.',
+            self::kakao => 'Kakao Corp.',
+            self::pixelMotion => 'Pixel Motion Inc.',
+            self::eyeo => 'Eyeo GmbH',
+            self::sfr => 'SOCIETE FRANCAISE DU RADIOTELEPHONE',
+            self::moyaApp => 'Moya App (Pty) Ltd',
+            self::quark => 'Quark Team',
+            self::deepseekAI => 'Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd.',
+            self::pia => 'PIA Private Internet Access, Inc',
+            self::openai => 'OpenAI LP',
+            self::telegram => 'Telegram Messenger Inc.',
+            self::qihoo => 'Qihoo 360 Technology Co. Ltd.',
+            self::line => 'LINE Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -1726,6 +1934,31 @@ enum Company: string implements CompanyInterface
             self::geniusDevices => 'genius-devices',
             self::tuerksat => 'turksat',
             self::aiplus => 'ai-plus',
+            self::linkedin => 'linked-in',
+            self::emadElsaid => 'emad-elsaid',
+            self::aloha => 'aloha-mobile',
+            self::agileBits => 'agile-bits',
+            self::radioArabella => 'radio-arabella',
+            self::alexanderClauss => 'alexander-clauss',
+            self::cheetahMobile => 'cheetah-mobile',
+            self::dsaSolutions => 'dsa-solutions',
+            self::braveSoftware => 'brave-software',
+            self::umeTech => 'ume-tech',
+            self::bravoUnicorn => 'bravo-unicorn',
+            self::goodiware => 'good-iware',
+            self::pixelMotion => 'pixel-motion',
+            self::xbmcfoundation => 'xbmc-foundation',
+            self::moyaApp => 'moya-app',
+            self::quark => 'quark-team',
+            self::moonshotAI => 'moonshot-ai',
+            self::deepseekAI => 'deepseek-ai',
+            self::keplr => 'team-keplr',
+            self::viberMedia => 'viber-media',
+            self::tuYafeng => 'tu-yafeng',
+            self::pythonSoftwareFoundation => 'python-software-foundation',
+            self::cloudviewTechnology => 'cloudview-technology',
+            self::soulSoft => 'soul-soft',
+            self::nortonMobile => 'norton-mobile',
             default => $this->name,
         };
     }

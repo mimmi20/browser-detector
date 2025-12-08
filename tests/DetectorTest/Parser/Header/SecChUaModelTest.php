@@ -1632,6 +1632,7 @@ final class SecChUaModelTest extends TestCase
             ['"KINGKONG MINI2"', true, 'cubot=cubot kingkong mini2'],
             ['"CUBOT MAX"', true, 'cubot=cubot max'],
             ['"MAX 3"', true, 'cubot=cubot max 3'],
+            ['"P50"', true, 'cubot=cubot p50'],
             // Aoyodkg
             ['"AOYODKG_A38"', true, 'aoyodkg=aoyodkg a38'],
             // gigaset
