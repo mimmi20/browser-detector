@@ -18,11 +18,13 @@ use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaParser\ClientVersionInterface;
 
-use function preg_match;
-
 final class XRequestedWithClientVersion implements ClientVersionInterface
 {
-    /** @throws void */
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
     #[Override]
     public function hasClientVersion(string $value): bool
     {
