@@ -84,7 +84,7 @@ jobs:
       skip-libgif-install: true
       skip-oxlint: true
       use-code-scanning: true
-      phpcs-options: ""
+      phpcs-options: "-d memory_limit=512M"
 
   tests:
     name: "UnitTests"
