@@ -940,6 +940,7 @@
     "/vsusearchspider/i": "vsu-search-spider",
     "/everyfeed\\-spider/i": "everyfeed",
     "/spider/i": "generic-spider",
+    "/matomo(?:trackersdk)?/i": "matomo-tracker",
     "/sidetrade indexer bot/i": "sidetrade indexer bot",
     "/seranking seochecker/i": "seranking-seochecker",
     "/thesis-research-bot/i": "thesis-research-bot",

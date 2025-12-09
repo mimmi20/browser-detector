@@ -1116,6 +1116,16 @@ enum Company: string implements CompanyInterface
 
     case nortonMobile = 'NortonMobile';
 
+    case matomo = 'Matomo';
+
+    case akaMessenger = 'aka Messenger';
+
+    case tuneIn = 'TuneIn';
+
+    case onecook = 'Onecook';
+
+    case softmeTech = 'Softme Tech';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1672,6 +1682,11 @@ enum Company: string implements CompanyInterface
             'qihoo', 'qihoo 360 technology co. ltd.' => self::qihoo,
             'line', 'line corporation' => self::line,
             'nortonmobile', 'norton-mobile' => self::nortonMobile,
+            'matomo' => self::matomo,
+            'akamessenger', 'aka-messenger', 'aka messenger' => self::akaMessenger,
+            'tunein', 'tunein, inc.', 'tune-in' => self::tuneIn,
+            'onecook', 'onecook co., ltd.' => self::onecook,
+            'softmetech', 'softme-tech', 'softme tech' => self::softmeTech,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1821,6 +1836,8 @@ enum Company: string implements CompanyInterface
             self::telegram => 'Telegram Messenger Inc.',
             self::qihoo => 'Qihoo 360 Technology Co. Ltd.',
             self::line => 'LINE Corporation',
+            self::tuneIn => 'TuneIn, Inc.',
+            self::onecook => 'Onecook Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -1959,6 +1976,9 @@ enum Company: string implements CompanyInterface
             self::cloudviewTechnology => 'cloudview-technology',
             self::soulSoft => 'soul-soft',
             self::nortonMobile => 'norton-mobile',
+            self::akaMessenger => 'aka-messenger',
+            self::tuneIn => 'tune-in',
+            self::softmeTech => 'softme-tech',
             default => $this->name,
         };
     }

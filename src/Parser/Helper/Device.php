@@ -2749,6 +2749,7 @@ final class Device implements DeviceInterface
             'hdl-al09' => 'huawei=huawei hdl-al09',
             'hdl-w09' => 'huawei=huawei hdl-w09',
             'tgr-w10' => 'huawei=huawei tgr-w10',
+            'plu-al10' => 'huawei=huawei plu-al10',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',

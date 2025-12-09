@@ -3352,6 +3352,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'NortonMobile',
                 'key' => 'norton-mobile',
             ],
+            [
+                'type' => 'Matomo',
+                'name' => 'Matomo',
+                'brandname' => 'Matomo',
+                'key' => 'matomo',
+            ],
+            [
+                'type' => 'aka Messenger',
+                'name' => 'aka Messenger',
+                'brandname' => 'aka Messenger',
+                'key' => 'aka-messenger',
+            ],
+            [
+                'type' => 'TuneIn',
+                'name' => 'TuneIn, Inc.',
+                'brandname' => 'TuneIn',
+                'key' => 'tune-in',
+            ],
+            [
+                'type' => 'Onecook',
+                'name' => 'Onecook Co., Ltd.',
+                'brandname' => 'Onecook',
+                'key' => 'onecook',
+            ],
+            [
+                'type' => 'Softme Tech',
+                'name' => 'Softme Tech',
+                'brandname' => 'Softme Tech',
+                'key' => 'softme-tech',
+            ],
         ];
     }
 

@@ -183,5 +183,18 @@
       ]
     },
     "engine": null
+  },
+  "mail-app": {
+    "name": "MailApp",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "mailapp",
+        "MailApp"
+      ]
+    },
+    "engine": null
   }
 }

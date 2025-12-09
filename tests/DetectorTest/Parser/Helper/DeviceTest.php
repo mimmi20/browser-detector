@@ -3319,6 +3319,7 @@ final class DeviceTest extends TestCase
             ['HDL-AL09', 'huawei=huawei hdl-al09'],
             ['HDL-W09', 'huawei=huawei hdl-w09'],
             ['TGR-W10', 'huawei=huawei tgr-w10'],
+            ['PLU-AL10', 'huawei=huawei plu-al10'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],

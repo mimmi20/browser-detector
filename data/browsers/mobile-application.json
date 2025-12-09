@@ -2314,5 +2314,54 @@
       "search": null
     },
     "engine": null
+  },
+  "threads-app": {
+    "name": "Threads",
+    "manufacturer": "meta",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Barcelona"
+      ]
+    },
+    "engine": null
+  },
+  "tunein-radio": {
+    "name": "TuneIn Radio",
+    "manufacturer": "tune-in",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuneIn Radio"
+      ]
+    },
+    "engine": null
+  },
+  "viber": {
+    "name": "Viber",
+    "manufacturer": "rakuten",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Viber"
+      ]
+    },
+    "engine": null
+  },
+  "douyin-app": {
+    "name": "Douyin",
+    "manufacturer": "softme-tech",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "aweme app_version",
+        "aweme"
+      ]
+    },
+    "engine": null
   }
 }
