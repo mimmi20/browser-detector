@@ -1842,7 +1842,7 @@
     "engine": null
   },
   "coupons-promo-codes": {
-    "name": "Coupons & Promo Codes",
+    "name": "Coupons & Deals",
     "manufacturer": "bay-spring-media",
     "type": "mobile-application",
     "version": {
@@ -1862,12 +1862,14 @@
     "engine": null
   },
   "smart-life": {
-    "name": "Smart Life",
+    "name": "Tuya Smart Life",
     "manufacturer": "volcano-technology",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuyaSmart"
+      ]
     },
     "engine": null
   },
@@ -1896,8 +1898,10 @@
     "manufacturer": "reddit",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Reddit\\/Version"
+      ]
     },
     "engine": null
   },
@@ -2361,6 +2365,50 @@
         "aweme app_version",
         "aweme"
       ]
+    },
+    "engine": null
+  },
+  "client-app": {
+    "name": "Client",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Client"
+      ]
+    },
+    "engine": null
+  },
+  "wiseplay": {
+    "name": "Wiseplay",
+    "manufacturer": "wiseplay-apps",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "pandora": {
+    "name": "Pandora",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pandora"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "youtube app": {
+    "name": "Youtube App",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": null
   }

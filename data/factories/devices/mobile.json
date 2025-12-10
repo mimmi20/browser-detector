@@ -272,7 +272,7 @@
     "/inhon|papilio/i": "inhon",
     "/prestigio|(?<!insta|wa|yel)p[as]p[0-9]|pm[pt][0-9]|gv7777|per5274b/i": "prestigio",
     "/(?<!like )android.*(?<!compatible |a)iphone|ucweb.*adr.*iphone/i": "xianghe",
-    "/(?<![dhmor])ipad|ipod(?!der)|(?<!like |compatible |a)iphone|like mac os x|darwin(?!g)|cfnetwork|dataaccessd|iuc ?\\(|(?<!sn)ip[dh][0-9]\\,[0-9]|puffin\\/[0-9\\.]+i[tp]|appletv|ios\\.watch|macintosh/i": "apple",
+    "/(?<![dhmor])ipad|ipod(?!der)|(?<!like |compatible |a)iphone|like mac os x|darwin(?!g)|cfnetwork|dataaccessd|iuc ?\\(|(?<!sn)ip[dh][0-9]\\,[0-9]|watchos|watch[0-9]\\,[0-9]|puffin\\/[0-9\\.]+i[tp]|appletv|ios\\.watch|macintosh/i": "apple",
     "/mtech/i": "mtech",
     "/mofut/i": "mofut",
     "/mlled/i": "mlled",

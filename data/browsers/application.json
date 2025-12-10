@@ -1522,16 +1522,6 @@
     },
     "engine": null
   },
-  "youtube app": {
-    "name": "Youtube App",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "zdownload pro": {
     "name": "zDownload Pro",
     "manufacturer": "wonjoo-jang",
@@ -1626,18 +1616,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AliApp\\(TB"
-      ]
-    },
-    "engine": null
-  },
-  "client-app": {
-    "name": "Client",
-    "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Client"
       ]
     },
     "engine": null

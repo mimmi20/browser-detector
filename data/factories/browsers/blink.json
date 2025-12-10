@@ -1,6 +1,7 @@
 {
   "rules": {
     "/bdbrowserhd/i": "baidu browser hd",
+    "/tiktok|musical_ly/i": "tiktok",
     "/bidubrowser|(?<!n)spark\\//i": "baidu spark",
     "/tieba/i": "tieba",
     "/baidubrowser|bdbrowser/i": "baidu browser",
@@ -133,7 +134,6 @@
     "/naver[\\/\\(]/i": "naver",
     "/quick search tv/i": "quick search tv",
     "/atom\\//i": "atom",
-    "/tiktok|musical_ly/i": "tiktok",
     "/bonprix mobile app/i": "bonprix app",
     "/edgw\\//i": "edge webview",
     "/bingbot|msnbot/i": "bingbot",
