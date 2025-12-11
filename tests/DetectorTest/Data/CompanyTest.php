@@ -3382,6 +3382,48 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Softme Tech',
                 'key' => 'softme-tech',
             ],
+            [
+                'type' => 'Intel',
+                'name' => 'Intel Corporation',
+                'brandname' => 'Intel',
+                'key' => 'intel',
+            ],
+            [
+                'type' => 'Readly',
+                'name' => 'Readly International',
+                'brandname' => 'Readly',
+                'key' => 'readly',
+            ],
+            [
+                'type' => 'AVAST',
+                'name' => 'AVAST Software s.r.o.',
+                'brandname' => 'AVAST',
+                'key' => 'avast-software',
+            ],
+            [
+                'type' => 'AppsMedia',
+                'name' => 'AppsMedia Inc',
+                'brandname' => 'AppsMedia',
+                'key' => 'apps-media',
+            ],
+            [
+                'type' => 'Kawe Apps',
+                'name' => 'Kawe Apps',
+                'brandname' => 'Kawe Apps',
+                'key' => 'kawe-apps',
+            ],
+            [
+                'type' => 'Reuters',
+                'name' => 'Reuters',
+                'brandname' => 'Reuters',
+                'key' => 'reuters',
+            ],
+            [
+                'type' => 'PLAYIT TECHNOLOGY',
+                'name' => 'PLAYIT TECHNOLOGY PTE. LTD.',
+                'brandname' => 'PLAYIT TECHNOLOGY',
+                'key' => 'playit-technology',
+            ],
         ];
     }
 

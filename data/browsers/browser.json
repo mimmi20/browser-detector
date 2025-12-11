@@ -5559,5 +5559,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "you-browser": {
+    "name": "YouBrowser",
+    "manufacturer": "apps-media",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YouBrowser"
+      ]
+    },
+    "engine": null
   }
 }

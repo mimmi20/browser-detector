@@ -1126,6 +1126,20 @@ enum Company: string implements CompanyInterface
 
     case softmeTech = 'Softme Tech';
 
+    case intel = 'Intel';
+
+    case readly = 'Readly';
+
+    case avast = 'AVAST';
+
+    case appsmedia = 'AppsMedia';
+
+    case kaweApps = 'Kawe Apps';
+
+    case reuters = 'Reuters';
+
+    case playitTechnology = 'PLAYIT TECHNOLOGY';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1687,6 +1701,13 @@ enum Company: string implements CompanyInterface
             'tunein', 'tunein, inc.', 'tune-in' => self::tuneIn,
             'onecook', 'onecook co., ltd.' => self::onecook,
             'softmetech', 'softme-tech', 'softme tech' => self::softmeTech,
+            'intel', 'intel corporation' => self::intel,
+            'readly', 'readly international' => self::readly,
+            'avast', 'avast software s.r.o.', 'avast-software' => self::avast,
+            'appsmedia', 'appsmedia inc', 'apps-media' => self::appsmedia,
+            'kaweapps', 'kawe apps', 'kawe-apps' => self::kaweApps,
+            'reuters' => self::reuters,
+            'playittechnology', 'playit technology pte. ltd.', 'playit-technology', 'playit technology' => self::playitTechnology,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1838,6 +1859,11 @@ enum Company: string implements CompanyInterface
             self::line => 'LINE Corporation',
             self::tuneIn => 'TuneIn, Inc.',
             self::onecook => 'Onecook Co., Ltd.',
+            self::intel => 'Intel Corporation',
+            self::readly => 'Readly International',
+            self::avast => 'AVAST Software s.r.o.',
+            self::appsmedia => 'AppsMedia Inc',
+            self::playitTechnology => 'PLAYIT TECHNOLOGY PTE. LTD.',
             self::unknown => null,
             default => $this->value,
         };
@@ -1979,6 +2005,10 @@ enum Company: string implements CompanyInterface
             self::akaMessenger => 'aka-messenger',
             self::tuneIn => 'tune-in',
             self::softmeTech => 'softme-tech',
+            self::avast => 'avast-software',
+            self::appsmedia => 'apps-media',
+            self::kaweApps => 'kawe-apps',
+            self::playitTechnology => 'playit-technology',
             default => $this->name,
         };
     }

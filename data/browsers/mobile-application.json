@@ -2411,5 +2411,41 @@
       "search": null
     },
     "engine": null
+  },
+  "twitter app": {
+    "name": "X",
+    "manufacturer": "twitter",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twitter"
+      ]
+    },
+    "engine": null
+  },
+  "crosswalk": {
+    "name": "Crosswalk App",
+    "manufacturer": "intel",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Crosswalk"
+      ]
+    },
+    "engine": "blink"
+  },
+  "reuters-news": {
+    "name": "Reuters News",
+    "manufacturer": "reuters",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Reuters News"
+      ]
+    },
+    "engine": "blink"
   }
 }

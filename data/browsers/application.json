@@ -270,18 +270,6 @@
     },
     "engine": "webkit"
   },
-  "crosswalk": {
-    "name": "Crosswalk App",
-    "manufacturer": "intel",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Crosswalk"
-      ]
-    },
-    "engine": "blink"
-  },
   "crowsnest mobile app": {
     "name": "Crowsnest Mobile App",
     "manufacturer": "gocro",
@@ -1273,18 +1261,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "twitter app": {
-    "name": "X",
-    "manufacturer": "twitter",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Twitter"
-      ]
-    },
-    "engine": null
   },
   "uc browser hd": {
     "name": "UC Browser HD",
