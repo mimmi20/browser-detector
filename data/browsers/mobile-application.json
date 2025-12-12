@@ -2447,5 +2447,17 @@
       ]
     },
     "engine": "blink"
+  },
+  "chatlyio app": {
+    "name": "Slack",
+    "manufacturer": "slack",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.tinyspeck\\.chatlyio"
+      ]
+    },
+    "engine": null
   }
 }

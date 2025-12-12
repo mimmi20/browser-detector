@@ -3424,6 +3424,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'PLAYIT TECHNOLOGY',
                 'key' => 'playit-technology',
             ],
+            [
+                'type' => 'XING',
+                'name' => 'XING AG',
+                'brandname' => 'XING',
+                'key' => 'xing',
+            ],
+            [
+                'type' => 'F-Secure',
+                'name' => 'F-Secure Corporation',
+                'brandname' => 'F-Secure',
+                'key' => 'f-secure',
+            ],
         ];
     }
 

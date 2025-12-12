@@ -224,18 +224,6 @@
     },
     "engine": "webkit"
   },
-  "chatlyio app": {
-    "name": "Slack",
-    "manufacturer": "slack",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "com\\.tinyspeck\\.chatlyio"
-      ]
-    },
-    "engine": null
-  },
   "citrix chrome app": {
     "name": "Citrix Chrome App",
     "manufacturer": "citrix",
@@ -1449,8 +1437,8 @@
     },
     "engine": "webkit"
   },
-  "yahoo! app": {
-    "name": "Yahoo! App",
+  "yahoo! japan": {
+    "name": "Yahoo! Japan",
     "manufacturer": "yahoo",
     "type": "application",
     "version": {
