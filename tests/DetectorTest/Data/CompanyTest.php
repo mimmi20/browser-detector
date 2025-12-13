@@ -3352,6 +3352,102 @@ final class CompanyTest extends TestCase
                 'brandname' => 'NortonMobile',
                 'key' => 'norton-mobile',
             ],
+            [
+                'type' => 'Matomo',
+                'name' => 'Matomo',
+                'brandname' => 'Matomo',
+                'key' => 'matomo',
+            ],
+            [
+                'type' => 'aka Messenger',
+                'name' => 'aka Messenger',
+                'brandname' => 'aka Messenger',
+                'key' => 'aka-messenger',
+            ],
+            [
+                'type' => 'TuneIn',
+                'name' => 'TuneIn, Inc.',
+                'brandname' => 'TuneIn',
+                'key' => 'tune-in',
+            ],
+            [
+                'type' => 'Onecook',
+                'name' => 'Onecook Co., Ltd.',
+                'brandname' => 'Onecook',
+                'key' => 'onecook',
+            ],
+            [
+                'type' => 'Softme Tech',
+                'name' => 'Softme Tech',
+                'brandname' => 'Softme Tech',
+                'key' => 'softme-tech',
+            ],
+            [
+                'type' => 'Intel',
+                'name' => 'Intel Corporation',
+                'brandname' => 'Intel',
+                'key' => 'intel',
+            ],
+            [
+                'type' => 'Readly',
+                'name' => 'Readly International',
+                'brandname' => 'Readly',
+                'key' => 'readly',
+            ],
+            [
+                'type' => 'AVAST',
+                'name' => 'AVAST Software s.r.o.',
+                'brandname' => 'AVAST',
+                'key' => 'avast-software',
+            ],
+            [
+                'type' => 'AppsMedia',
+                'name' => 'AppsMedia Inc',
+                'brandname' => 'AppsMedia',
+                'key' => 'apps-media',
+            ],
+            [
+                'type' => 'Kawe Apps',
+                'name' => 'Kawe Apps',
+                'brandname' => 'Kawe Apps',
+                'key' => 'kawe-apps',
+            ],
+            [
+                'type' => 'Reuters',
+                'name' => 'Reuters',
+                'brandname' => 'Reuters',
+                'key' => 'reuters',
+            ],
+            [
+                'type' => 'PLAYIT TECHNOLOGY',
+                'name' => 'PLAYIT TECHNOLOGY PTE. LTD.',
+                'brandname' => 'PLAYIT TECHNOLOGY',
+                'key' => 'playit-technology',
+            ],
+            [
+                'type' => 'XING',
+                'name' => 'XING AG',
+                'brandname' => 'XING',
+                'key' => 'xing',
+            ],
+            [
+                'type' => 'F-Secure',
+                'name' => 'F-Secure Corporation',
+                'brandname' => 'F-Secure',
+                'key' => 'f-secure',
+            ],
+            [
+                'type' => 'SUAAT',
+                'name' => 'SUAAT',
+                'brandname' => 'SUAAT',
+                'key' => 'suaat',
+            ],
+            [
+                'type' => 'G-Tab',
+                'name' => 'G-Tab',
+                'brandname' => 'G-Tab',
+                'key' => 'g-tab',
+            ],
         ];
     }
 

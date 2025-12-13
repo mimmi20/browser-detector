@@ -28,6 +28,7 @@ final readonly class Ios implements VersionFactoryInterface
 {
     /** @api */
     public const array SEARCHES = [
+        'watchOS',
         'IphoneOSX',
         'CPU OS_?',
         'CPU iOS',
@@ -278,7 +279,7 @@ final readonly class Ios implements VersionFactoryInterface
         }
 
         $doMatch = preg_match(
-            '/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i',
+            '/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+[a-z]?)/i',
             $useragent,
             $matches,
         );
@@ -328,7 +329,7 @@ final readonly class Ios implements VersionFactoryInterface
         }
 
         $doMatch = preg_match(
-            '/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i',
+            '/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+[a-z]?)\)/i',
             $useragent,
             $matches,
         );

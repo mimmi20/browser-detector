@@ -1116,6 +1116,38 @@ enum Company: string implements CompanyInterface
 
     case nortonMobile = 'NortonMobile';
 
+    case matomo = 'Matomo';
+
+    case akaMessenger = 'aka Messenger';
+
+    case tuneIn = 'TuneIn';
+
+    case onecook = 'Onecook';
+
+    case softmeTech = 'Softme Tech';
+
+    case intel = 'Intel';
+
+    case readly = 'Readly';
+
+    case avast = 'AVAST';
+
+    case appsmedia = 'AppsMedia';
+
+    case kaweApps = 'Kawe Apps';
+
+    case reuters = 'Reuters';
+
+    case playitTechnology = 'PLAYIT TECHNOLOGY';
+
+    case xing = 'XING';
+
+    case fSecure = 'F-Secure';
+
+    case suaat = 'SUAAT';
+
+    case gTab = 'G-Tab';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1672,6 +1704,22 @@ enum Company: string implements CompanyInterface
             'qihoo', 'qihoo 360 technology co. ltd.' => self::qihoo,
             'line', 'line corporation' => self::line,
             'nortonmobile', 'norton-mobile' => self::nortonMobile,
+            'matomo' => self::matomo,
+            'akamessenger', 'aka-messenger', 'aka messenger' => self::akaMessenger,
+            'tunein', 'tunein, inc.', 'tune-in' => self::tuneIn,
+            'onecook', 'onecook co., ltd.' => self::onecook,
+            'softmetech', 'softme-tech', 'softme tech' => self::softmeTech,
+            'intel', 'intel corporation' => self::intel,
+            'readly', 'readly international' => self::readly,
+            'avast', 'avast software s.r.o.', 'avast-software' => self::avast,
+            'appsmedia', 'appsmedia inc', 'apps-media' => self::appsmedia,
+            'kaweapps', 'kawe apps', 'kawe-apps' => self::kaweApps,
+            'reuters' => self::reuters,
+            'playittechnology', 'playit technology pte. ltd.', 'playit-technology', 'playit technology' => self::playitTechnology,
+            'xing', 'xing ag' => self::xing,
+            'fsecure', 'f-secure corporation', 'f-secure' => self::fSecure,
+            'suaat' => self::suaat,
+            'gtab', 'g-tab' => self::gTab,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1821,6 +1869,15 @@ enum Company: string implements CompanyInterface
             self::telegram => 'Telegram Messenger Inc.',
             self::qihoo => 'Qihoo 360 Technology Co. Ltd.',
             self::line => 'LINE Corporation',
+            self::tuneIn => 'TuneIn, Inc.',
+            self::onecook => 'Onecook Co., Ltd.',
+            self::intel => 'Intel Corporation',
+            self::readly => 'Readly International',
+            self::avast => 'AVAST Software s.r.o.',
+            self::appsmedia => 'AppsMedia Inc',
+            self::playitTechnology => 'PLAYIT TECHNOLOGY PTE. LTD.',
+            self::xing => 'XING AG',
+            self::fSecure => 'F-Secure Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -1959,6 +2016,15 @@ enum Company: string implements CompanyInterface
             self::cloudviewTechnology => 'cloudview-technology',
             self::soulSoft => 'soul-soft',
             self::nortonMobile => 'norton-mobile',
+            self::akaMessenger => 'aka-messenger',
+            self::tuneIn => 'tune-in',
+            self::softmeTech => 'softme-tech',
+            self::avast => 'avast-software',
+            self::appsmedia => 'apps-media',
+            self::kaweApps => 'kawe-apps',
+            self::playitTechnology => 'playit-technology',
+            self::fSecure => 'f-secure',
+            self::gTab => 'g-tab',
             default => $this->name,
         };
     }

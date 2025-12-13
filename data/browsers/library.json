@@ -410,5 +410,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "matomo-tracker": {
+    "name": "MatomoTracker",
+    "manufacturer": "matomo",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MatomoTrackerSDK",
+        "Matomo"
+      ]
+    },
+    "engine": "unknown"
   }
 }

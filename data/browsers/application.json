@@ -224,18 +224,6 @@
     },
     "engine": "webkit"
   },
-  "chatlyio app": {
-    "name": "Slack",
-    "manufacturer": "slack",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "com\\.tinyspeck\\.chatlyio"
-      ]
-    },
-    "engine": null
-  },
   "citrix chrome app": {
     "name": "Citrix Chrome App",
     "manufacturer": "citrix",
@@ -269,18 +257,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "crosswalk": {
-    "name": "Crosswalk App",
-    "manufacturer": "intel",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Crosswalk"
-      ]
-    },
-    "engine": "blink"
   },
   "crowsnest mobile app": {
     "name": "Crowsnest Mobile App",
@@ -1274,18 +1250,6 @@
     },
     "engine": "webkit"
   },
-  "twitter app": {
-    "name": "X",
-    "manufacturer": "twitter",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Twitter"
-      ]
-    },
-    "engine": null
-  },
   "uc browser hd": {
     "name": "UC Browser HD",
     "manufacturer": "ucweb",
@@ -1294,18 +1258,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UCBrowserHD"
-      ]
-    },
-    "engine": null
-  },
-  "viber": {
-    "name": "Viber",
-    "manufacturer": "rakuten",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Viber"
       ]
     },
     "engine": null
@@ -1485,8 +1437,8 @@
     },
     "engine": "webkit"
   },
-  "yahoo! app": {
-    "name": "Yahoo! App",
+  "yahoo! japan": {
+    "name": "Yahoo! Japan",
     "manufacturer": "yahoo",
     "type": "application",
     "version": {
@@ -1531,16 +1483,6 @@
       "search": [
         "YPmobile"
       ]
-    },
-    "engine": null
-  },
-  "youtube app": {
-    "name": "Youtube App",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": null
   },
@@ -1638,18 +1580,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AliApp\\(TB"
-      ]
-    },
-    "engine": null
-  },
-  "client-app": {
-    "name": "Client",
-    "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Client"
       ]
     },
     "engine": null

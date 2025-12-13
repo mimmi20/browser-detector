@@ -1842,7 +1842,7 @@
     "engine": null
   },
   "coupons-promo-codes": {
-    "name": "Coupons & Promo Codes",
+    "name": "Coupons & Deals",
     "manufacturer": "bay-spring-media",
     "type": "mobile-application",
     "version": {
@@ -1862,12 +1862,14 @@
     "engine": null
   },
   "smart-life": {
-    "name": "Smart Life",
+    "name": "Tuya Smart Life",
     "manufacturer": "volcano-technology",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuyaSmart"
+      ]
     },
     "engine": null
   },
@@ -1896,8 +1898,10 @@
     "manufacturer": "reddit",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Reddit\\/Version"
+      ]
     },
     "engine": null
   },
@@ -2312,6 +2316,147 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "threads-app": {
+    "name": "Threads",
+    "manufacturer": "meta",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Barcelona"
+      ]
+    },
+    "engine": null
+  },
+  "tunein-radio": {
+    "name": "TuneIn Radio",
+    "manufacturer": "tune-in",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuneIn Radio"
+      ]
+    },
+    "engine": null
+  },
+  "viber": {
+    "name": "Viber",
+    "manufacturer": "rakuten",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Viber"
+      ]
+    },
+    "engine": null
+  },
+  "douyin-app": {
+    "name": "Douyin",
+    "manufacturer": "softme-tech",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "aweme app_version",
+        "aweme"
+      ]
+    },
+    "engine": null
+  },
+  "client-app": {
+    "name": "Client",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Client"
+      ]
+    },
+    "engine": null
+  },
+  "wiseplay": {
+    "name": "Wiseplay",
+    "manufacturer": "wiseplay-apps",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "pandora": {
+    "name": "Pandora",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pandora"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "youtube app": {
+    "name": "Youtube App",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "twitter app": {
+    "name": "X",
+    "manufacturer": "twitter",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twitter"
+      ]
+    },
+    "engine": null
+  },
+  "crosswalk": {
+    "name": "Crosswalk App",
+    "manufacturer": "intel",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Crosswalk"
+      ]
+    },
+    "engine": "blink"
+  },
+  "reuters-news": {
+    "name": "Reuters News",
+    "manufacturer": "reuters",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Reuters News"
+      ]
+    },
+    "engine": "blink"
+  },
+  "chatlyio app": {
+    "name": "Slack",
+    "manufacturer": "slack",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.tinyspeck\\.chatlyio"
+      ]
     },
     "engine": null
   }

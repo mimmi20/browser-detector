@@ -25,7 +25,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
     #[Override]
     public function hasClientCode(string $value): bool
     {
-        $match = preg_match('/xmlhttprequest|fake\./i', $value);
+        $match = preg_match('/xmlhttprequest|fake\.|x\.cpe/i', $value);
 
         return $match === 0;
     }
@@ -232,7 +232,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'it.tolelab.fvd' => 'free-video-downloader',
             'jp.co.canon.bsd.ad.pixmaprint' => 'canon-print',
             'jp.co.fenrir.android.sleipnir' => 'sleipnir',
-            'jp.co.yahoo.android.yjtop' => 'yahoo! app',
+            'jp.co.yahoo.android.yjtop' => 'yahoo! japan',
             'jp.ddo.pigsty.habitbrowser' => 'habit-browser',
             'jp.gocro.smartnews.android' => 'smart-news-app',
             'jp.hazuki.yuzubrowser' => 'yuzu-browser',

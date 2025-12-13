@@ -302,5 +302,53 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "kenshi pad lite e48": {
+    "deviceName": "Pad Lite E48",
+    "marketingName": "Pad Lite E48",
+    "manufacturer": "kenshi",
+    "brand": "kenshi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "kenshi pad pro e112": {
+    "deviceName": "Pad Pro E112",
+    "marketingName": "Pad Pro E112",
+    "manufacturer": "kenshi",
+    "brand": "kenshi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.95
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "kenshi pad pro e90": {
+    "deviceName": "Pad Pro E90",
+    "marketingName": "Pad Pro E90",
+    "manufacturer": "kenshi",
+    "brand": "kenshi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

@@ -541,6 +541,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; GRL-AL10; HMSCore 6.14.0.309) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/15.0.9.300 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GRL-AL10",
+      "marketingName": "Mate XT Ultimate Design",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3184,
+        "height": 2232,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "15.0.9.300",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; GRL-LX9; HMSCore 6.15.4.312; GMSCore 0.3.10.250932) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/16.0.6.300 Safari/537.36"
     },
     "device": {

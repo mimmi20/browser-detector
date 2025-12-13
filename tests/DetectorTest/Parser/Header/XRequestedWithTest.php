@@ -205,7 +205,7 @@ final class XRequestedWithTest extends TestCase
             ['com.ksmobile.cb', true, 'cm browser', false, null, false, null],
             ['com.android.chrome', true, 'chrome', false, null, false, null],
             ['com.facebook.orca', true, 'facebook messenger app', false, null, false, null],
-            ['jp.co.yahoo.android.yjtop', true, 'yahoo! app', false, null, false, null],
+            ['jp.co.yahoo.android.yjtop', true, 'yahoo! japan', false, null, false, null],
             ['com.instagram.android', true, 'instagram app', false, null, false, null],
             ['com.microsoft.bingintl', true, 'bingsearch', false, null, false, null],
             ['com.nhn.android.search', true, 'naver', false, null, false, null],
