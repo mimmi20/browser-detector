@@ -3436,6 +3436,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'F-Secure',
                 'key' => 'f-secure',
             ],
+            [
+                'type' => 'SUAAT',
+                'name' => 'SUAAT',
+                'brandname' => 'SUAAT',
+                'key' => 'suaat',
+            ],
+            [
+                'type' => 'G-Tab',
+                'name' => 'G-Tab',
+                'brandname' => 'G-Tab',
+                'key' => 'g-tab',
+            ],
         ];
     }
 

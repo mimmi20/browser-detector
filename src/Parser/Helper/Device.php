@@ -586,6 +586,7 @@ final class Device implements DeviceInterface
             'pkw110' => 'oppo=oppo pkw110',
             'ple110' => 'oppo=oppo ple110',
             'pln110' => 'oppo=oppo pln110',
+            'plm110' => 'oppo=oppo plm110',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1262,6 +1263,8 @@ final class Device implements DeviceInterface
             'zte t1002' => 'zte=zte t1002',
             'a202zt' => 'zte=zte a202zt',
             'zte a2025h' => 'zte=zte a2025h',
+            'np05j' => 'zte=zte np05j',
+            'nt01' => 'zte=zte nt01',
             // Samsung
             'sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -1407,7 +1410,6 @@ final class Device implements DeviceInterface
             'sm-a5260' => 'samsung=samsung sm-a5260',
             'sm-a526a' => 'samsung=samsung sm-a526a',
             'sm-a526t' => 'samsung=samsung sm-a526t',
-            'sm-a235f' => 'samsung=samsung sm-a235f',
             'sm-a047f', 'samsung sm-a047f' => 'samsung=samsung sm-a047f',
             'sm-a047m', 'samsung sm-a047m' => 'samsung=samsung sm-a047m',
             'sm-a325f' => 'samsung=samsung sm-a325f',
@@ -1597,8 +1599,6 @@ final class Device implements DeviceInterface
             'sm-x216b' => 'samsung=samsung sm-x216b',
             'sm-x216c' => 'samsung=samsung sm-x216c',
             'sm-a145f' => 'samsung=samsung sm-a145f',
-            'sm-a256e' => 'samsung=samsung sm-a256e',
-            'sm-a256b' => 'samsung=samsung sm-a256b',
             'sm-f956b' => 'samsung=samsung sm-f956b',
             'sm-x110' => 'samsung=samsung sm-x110',
             'sm-s711b', 'samsung sm-s711b' => 'samsung=samsung sm-s711b',
@@ -1636,7 +1636,6 @@ final class Device implements DeviceInterface
             'sm-a307g' => 'samsung=samsung sm-a307g',
             'sm-n9500' => 'samsung=samsung sm-n9500',
             'sm-j410f' => 'samsung=samsung sm-j410f',
-            'sm-a260f' => 'samsung=samsung sm-a260f',
             'sm-x710' => 'samsung=samsung sm-x710',
             'sm-a305fn' => 'samsung=samsung sm-a305fn',
             'sm-j250f' => 'samsung=samsung sm-j250f',
@@ -1763,7 +1762,6 @@ final class Device implements DeviceInterface
             'samsung-sm-g930a' => 'samsung=samsung sm-g930a',
             'sm-g935s' => 'samsung=samsung sm-g935s',
             'sm-s938b' => 'samsung=samsung sm-s938b',
-            'sm-a166b' => 'samsung=samsung sm-a166b',
             'sm-f741b' => 'samsung=samsung sm-f741b',
             'sm-x115' => 'samsung=samsung sm-x115',
             'sm-a165f' => 'samsung=samsung sm-a165f',
@@ -2238,6 +2236,35 @@ final class Device implements DeviceInterface
             'sm-g990e', 'samsung sm-g990e' => 'samsung=samsung sm-g990e',
             'sm-g990b', 'samsung sm-g990b' => 'samsung=samsung sm-g990b',
             'sm-g9900', 'samsung sm-g9900' => 'samsung=samsung sm-g9900',
+            'sm-a245f', 'samsung sm-a245f' => 'samsung=samsung sm-a245f',
+            'sm-a245n', 'samsung sm-a245n' => 'samsung=samsung sm-a245n',
+            'sm-a245m', 'samsung sm-a245m' => 'samsung=samsung sm-a245m',
+            'sm-a256u1', 'samsung sm-a256u1' => 'samsung=samsung sm-a256u1',
+            'sm-a256u', 'samsung sm-a256u' => 'samsung=samsung sm-a256u',
+            'sm-a256n', 'samsung sm-a256n' => 'samsung=samsung sm-a256n',
+            'sm-a256e', 'samsung sm-a256e' => 'samsung=samsung sm-a256e',
+            'sm-a256b', 'samsung sm-a256b' => 'samsung=samsung sm-a256b',
+            'sm-a260g', 'samsung sm-a260g' => 'samsung=samsung sm-a260g',
+            'sm-a260f', 'samsung sm-a260f' => 'samsung=samsung sm-a260f',
+            'sm-a235n', 'samsung sm-a235n' => 'samsung=samsung sm-a235n',
+            'sm-a235m', 'samsung sm-a235m' => 'samsung=samsung sm-a235m',
+            'sm-a235f', 'samsung sm-a235f' => 'samsung=samsung sm-a235f',
+            'sm-a566u', 'samsung sm-a566u' => 'samsung=samsung sm-a566u',
+            'sm-a566u1', 'samsung sm-a566u1' => 'samsung=samsung sm-a566u1',
+            'sm-a566w', 'samsung sm-a566w' => 'samsung=samsung sm-a566w',
+            'sm-a566s', 'samsung sm-a566s' => 'samsung=samsung sm-a566s',
+            'sm-a166p', 'samsung sm-a166p' => 'samsung=samsung sm-a166p',
+            'sm-a166e', 'samsung sm-a166e' => 'samsung=samsung sm-a166e',
+            'sm-a166b', 'samsung sm-a166b' => 'samsung=samsung sm-a166b',
+            'sm-a166w', 'samsung sm-a166w' => 'samsung=samsung sm-a166w',
+            'sm-a166u', 'samsung sm-a166u' => 'samsung=samsung sm-a166u',
+            'sm-a166u1', 'samsung sm-a166u1' => 'samsung=samsung sm-a166u1',
+            'sm-s166v', 'samsung sm-s166v' => 'samsung=samsung sm-s166v',
+            'sm-m366k', 'samsung sm-m366k' => 'samsung=samsung sm-m366k',
+            'sm-m145f', 'samsung sm-m145f' => 'samsung=samsung sm-m145f',
+            'sm-m156s', 'samsung sm-m156s' => 'samsung=samsung sm-m156s',
+            'sm-e066b', 'samsung sm-e066b' => 'samsung=samsung sm-e066b',
+            'sm-a366n', 'samsung sm-a366n' => 'samsung=samsung sm-a366n',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2344,7 +2371,7 @@ final class Device implements DeviceInterface
             'bln-l21' => 'huawei=huawei bln-l21',
             'fdr-a01w' => 'huawei=huawei fdr-a01w',
             'duk-l09' => 'huawei=huawei duk-l09',
-            'huawei lyo-l21' => 'huawei=huawei lyo-l21',
+            'lyo-l21', 'huawei lyo-l21' => 'huawei=huawei lyo-l21',
             'sht-w09' => 'huawei=huawei sht-w09',
             'vky-l09' => 'huawei=huawei vky-l09',
             'ana-nx9' => 'huawei=huawei ana-nx9',
@@ -2757,7 +2784,6 @@ final class Device implements DeviceInterface
             'lly-lx1' => 'huawei=huawei lly-lx1',
             'lyo-l01' => 'huawei=huawei lyo-l01',
             'lyo-l02' => 'huawei=huawei lyo-l02',
-            'lyo-l21' => 'huawei=huawei lyo-l21',
             'ine-lx2' => 'huawei=huawei ine-lx2',
             'ine-al00' => 'huawei=huawei ine-al00',
             'ine-tl00' => 'huawei=huawei ine-tl00',
@@ -2884,6 +2910,7 @@ final class Device implements DeviceInterface
             'lenovo x3a40' => 'lenovo=lenovo x3a40',
             'l38043', 'lenovo l38043' => 'lenovo=lenovo l38043',
             'tb138fc', 'lenovo tb138fc' => 'lenovo=lenovo tb138fc',
+            'xiaoxin pad 2022' => 'lenovo=lenovo xiaoxin pad 2022',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -3292,6 +3319,7 @@ final class Device implements DeviceInterface
             'xt2527-3' => 'motorola=motorola xt2527-3',
             'xt2527-7' => 'motorola=motorola xt2527-7',
             'moto g stylus 5g - 2023' => 'motorola=motorola moto g stylus 5g (2023)',
+            'motorola edge 60 fusion' => 'motorola=motorola edge 60 fusion',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -3451,6 +3479,7 @@ final class Device implements DeviceInterface
             'a002so' => 'sony=sony a002so',
             'sog02' => 'sony=sony sog02',
             'sog06' => 'sony=sony sog06',
+            'sog12' => 'sony=sony sog12',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -4347,6 +4376,7 @@ final class Device implements DeviceInterface
             't50_row' => 'teclast=teclast t50_row',
             't50_eea' => 'teclast=teclast t50_eea',
             'p30air_row' => 'teclast=teclast p30air_row',
+            'artpadpro_row' => 'teclast=teclast artpadpro_row',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
@@ -4471,6 +4501,7 @@ final class Device implements DeviceInterface
             'tab 11 se' => 'blackview=blackview tab 11 se',
             'tab 15' => 'blackview=blackview tab 15',
             'tab 13' => 'blackview=blackview tab 13',
+            'mega 3' => 'blackview=blackview mega 3',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -5018,6 +5049,7 @@ final class Device implements DeviceInterface
             'via l50' => 'casper=casper via l50',
             'via m30' => 'casper=casper via m30',
             'via f30' => 'casper=casper via f30',
+            'pad h10 pen' => 'casper=casper pad h10 pen',
             // hannspree
             'hsg1416' => 'hannspree=hannspree hsg1416',
             'hsg1351' => 'hannspree=hannspree hsg1351',
@@ -5438,6 +5470,7 @@ final class Device implements DeviceInterface
             'hipad plus', 'hipadplus' => 'chuwi=chuwi hipad plus',
             'hipad-air' => 'chuwi=chuwi hipad air',
             'hi10 xpro', 'hi10_xpro_pad' => 'chuwi=chuwi hi10 xpro',
+            'aupad' => 'chuwi=chuwi aupad',
             // bigme
             'hibreak' => 'bigme=bigme hibreak',
             // a-rival
@@ -5686,6 +5719,7 @@ final class Device implements DeviceInterface
             'x600 nfc' => 'omix=omix x600 nfc',
             'x700' => 'omix=omix x700',
             'omix.x5' => 'omix=omix x5',
+            'o1 icon' => 'omix=omix o1 icon',
             // blu
             'bold k50' => 'blu=blu bold k50',
             'g91' => 'blu=blu g91',
@@ -6096,6 +6130,9 @@ final class Device implements DeviceInterface
             'h11' => 'kenshi=kenshi h11',
             'e38' => 'kenshi=kenshi e38',
             'pad lite e58' => 'kenshi=kenshi pad lite e58',
+            'pad lite e48' => 'kenshi=kenshi pad lite e48',
+            'pad pro e112' => 'kenshi=kenshi pad pro e112',
+            'pad pro e90' => 'kenshi=kenshi pad pro e90',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',
@@ -6943,6 +6980,10 @@ final class Device implements DeviceInterface
             'voix_u10' => 'voix=voix u10',
             // yasin
             'yasin 4k android tv' => 'yasin=yasin 4k smart tv',
+            // suaat
+            's3_u_eea' => 'suaat=suaat s3_u_eea',
+            // g-tab
+            'pad10_pro' => 'g-tab=g-tab pad10_pro',
             // other
             default => null,
         };

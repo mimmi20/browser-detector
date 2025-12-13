@@ -1144,6 +1144,10 @@ enum Company: string implements CompanyInterface
 
     case fSecure = 'F-Secure';
 
+    case suaat = 'SUAAT';
+
+    case gTab = 'G-Tab';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1714,6 +1718,8 @@ enum Company: string implements CompanyInterface
             'playittechnology', 'playit technology pte. ltd.', 'playit-technology', 'playit technology' => self::playitTechnology,
             'xing', 'xing ag' => self::xing,
             'fsecure', 'f-secure corporation', 'f-secure' => self::fSecure,
+            'suaat' => self::suaat,
+            'gtab', 'g-tab' => self::gTab,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2018,6 +2024,7 @@ enum Company: string implements CompanyInterface
             self::kaweApps => 'kawe-apps',
             self::playitTechnology => 'playit-technology',
             self::fSecure => 'f-secure',
+            self::gTab => 'g-tab',
             default => $this->name,
         };
     }
