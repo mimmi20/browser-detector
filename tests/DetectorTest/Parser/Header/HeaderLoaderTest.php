@@ -45,13 +45,41 @@ final class HeaderLoaderTest extends TestCase
      */
     public function testLoadFail(): void
     {
-        $deviceParser      = $this->createMock(DeviceParserInterface::class);
-        $platformParser    = $this->createMock(PlatformParserInterface::class);
-        $browserParser     = $this->createMock(BrowserParserInterface::class);
-        $engineParser      = $this->createMock(EngineParserInterface::class);
-        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
-        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
-        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::never())
+            ->method('load');
+
         $normalizerFactory = new NormalizerFactory();
 
         $key = Constants::HEADER_TEST;
@@ -86,13 +114,41 @@ final class HeaderLoaderTest extends TestCase
     {
         $value = 'header-value';
 
-        $deviceParser      = $this->createMock(DeviceParserInterface::class);
-        $platformParser    = $this->createMock(PlatformParserInterface::class);
-        $browserParser     = $this->createMock(BrowserParserInterface::class);
-        $engineParser      = $this->createMock(EngineParserInterface::class);
-        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
-        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
-        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::never())
+            ->method('load');
+
         $normalizerFactory = new NormalizerFactory();
 
         $subject = new HeaderLoader(
@@ -123,13 +179,41 @@ final class HeaderLoaderTest extends TestCase
     #[DataProvider('providerHeader')]
     public function testHas(string $key): void
     {
-        $deviceParser      = $this->createMock(DeviceParserInterface::class);
-        $platformParser    = $this->createMock(PlatformParserInterface::class);
-        $browserParser     = $this->createMock(BrowserParserInterface::class);
-        $engineParser      = $this->createMock(EngineParserInterface::class);
-        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
-        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
-        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::never())
+            ->method('load');
+
         $normalizerFactory = new NormalizerFactory();
 
         $subject = new HeaderLoader(

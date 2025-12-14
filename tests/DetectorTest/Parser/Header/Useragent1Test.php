@@ -96,21 +96,21 @@ final class Useragent1Test extends TestCase
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
-            ->expects(self::any())
+            ->expects(self::never())
             ->method('parse')
             ->with($ua)
             ->willReturn('');
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
-            ->expects(self::any())
+            ->expects(self::never())
             ->method('parse')
             ->with($ua)
             ->willReturn('');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
-            ->expects(self::any())
+            ->expects(self::never())
             ->method('parse')
             ->with($engineUa)
             ->willReturn($engineCode);
@@ -127,7 +127,7 @@ final class Useragent1Test extends TestCase
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
-            ->expects(self::any())
+            ->expects(self::never())
             ->method('load')
             ->with($engineCode)
             ->willReturn(
@@ -550,21 +550,21 @@ final class Useragent1Test extends TestCase
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
-            ->expects(self::any())
+            ->expects(self::never())
             ->method('parse')
             ->with($ua)
             ->willReturn('');
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
-            ->expects(self::any())
+            ->expects(self::never())
             ->method('parse')
             ->with($ua)
             ->willReturn('');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
-            ->expects(self::any())
+            ->expects(self::never())
             ->method('parse')
             ->with($engineUa)
             ->willReturn($engineCode);
@@ -581,7 +581,7 @@ final class Useragent1Test extends TestCase
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
-            ->expects(self::any())
+            ->expects(self::never())
             ->method('load')
             ->with($engineCode)
             ->willReturn(

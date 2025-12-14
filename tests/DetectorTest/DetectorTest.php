@@ -18,8 +18,10 @@ use BrowserDetector\DetectorFactory;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Constraint\IsType;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
+use PHPUnit\Framework\NativeType;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface;
@@ -71,6 +73,32 @@ final class DetectorTest extends TestCase
             ->method('emergency');
 
         $cache = $this->createMock(CacheInterface::class);
+        $cache
+            ->expects(self::never())
+            ->method('get');
+        $cache
+            ->expects(self::once())
+            ->method('set');
+        $cache
+            ->expects(self::never())
+            ->method('delete');
+        $cache
+            ->expects(self::never())
+            ->method('clear');
+        $cache
+            ->expects(self::never())
+            ->method('getMultiple');
+        $cache
+            ->expects(self::never())
+            ->method('setMultiple');
+        $cache
+            ->expects(self::never())
+            ->method('deleteMultiple');
+        $cache
+            ->expects(self::once())
+            ->method('has')
+            ->with(new IsType(NativeType::String))
+            ->willReturn(false);
 
         $factory  = new DetectorFactory($cache, $logger);
         $detector = $factory();

@@ -24,6 +24,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use UaLoader\DeviceLoaderInterface;
 use UaLoader\Exception\NotFoundException;
+use UaResult\Company\Company;
 
 #[CoversClass(DeviceLoaderFactory::class)]
 final class DeviceLoaderFactoryTest extends TestCase
@@ -36,12 +37,41 @@ final class DeviceLoaderFactoryTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testInvoke2(): void
+    public function testInvoke(): void
     {
         $company = 'apple';
 
-        $logger        = $this->createMock(LoggerInterface::class);
+        $comp = new Company($company, 'Apple', 'Apple');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::atLeastOnce())
+            ->method('load')
+            ->with('Apple')
+            ->willReturn($comp);
 
         $factory = new DeviceLoaderFactory($logger, $companyLoader);
         $object  = $factory($company);

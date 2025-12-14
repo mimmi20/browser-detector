@@ -207,7 +207,6 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
             Headers::HEADER_REQUESTED_WITH => new XRequestedWith(
                 value: $value,
                 clientCode: new XRequestedWithClientCode(),
-                clientVersion: new XRequestedWithClientVersion(),
                 platformCode: new XRequestedWithPlatformCode(),
             ),
             Headers::HEADER_UCBROWSER_DEVICE => new DeviceCodeOnlyHeader(

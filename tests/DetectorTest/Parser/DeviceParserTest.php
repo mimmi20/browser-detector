@@ -574,6 +574,27 @@ final class DeviceParserTest extends TestCase
     public function testParse(string $ua, string $expected): void
     {
         $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $fileParser    = new RulefileParser(logger: $logger);
         $darwinParser  = new DarwinParser(fileParser: $fileParser);

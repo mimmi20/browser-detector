@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XRequestedWithClientCode;
-use BrowserDetector\Parser\Header\XRequestedWithClientVersion;
 use BrowserDetector\Parser\Header\XRequestedWithPlatformCode;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -30,7 +29,6 @@ use UnexpectedValueException;
 use function sprintf;
 
 #[CoversClass(XRequestedWithClientCode::class)]
-#[CoversClass(XRequestedWithClientVersion::class)]
 final class XRequestedWithTest extends TestCase
 {
     /**
@@ -53,7 +51,6 @@ final class XRequestedWithTest extends TestCase
         $header = new XRequestedWith(
             value: $ua,
             clientCode: new XRequestedWithClientCode(),
-            clientVersion: new XRequestedWithClientVersion(),
             platformCode: new XRequestedWithPlatformCode(),
         );
 
