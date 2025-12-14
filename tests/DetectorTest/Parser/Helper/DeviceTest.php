@@ -3985,6 +3985,7 @@ final class DeviceTest extends TestCase
             ['XT2527-7', 'motorola=motorola xt2527-7'],
             ['moto g stylus 5G - 2023', 'motorola=motorola moto g stylus 5g (2023)'],
             ['motorola edge 60 fusion', 'motorola=motorola edge 60 fusion'],
+            ['motorola razr ultra 2025', 'motorola=motorola razr ultra 2025'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -7201,6 +7202,7 @@ final class DeviceTest extends TestCase
             ['iHunt Fit Runner', 'ihunt=ihunt fit runner'],
             ['Cyber DOG 4G', 'ihunt=ihunt cyber dog 4g'],
             ['iHunt Cyber Shark 4G', 'ihunt=ihunt cyber shark 4g'],
+            ['iHunt S24 PLUS', 'ihunt=ihunt s24 plus'],
             // emporia
             ['E5mini', 'emporia=emporia e5 mini'],
             // dexp

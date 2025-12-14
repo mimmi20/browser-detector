@@ -3561,7 +3561,7 @@
     "device": {
       "architecture": null,
       "deviceName": "OXP-AN00",
-      "marketingName": "Honor Play4 Pro",
+      "marketingName": "Honor Play 4 Pro",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -3876,7 +3876,7 @@
     "device": {
       "architecture": null,
       "deviceName": "Hebe-BD00",
-      "marketingName": "nova 9 Pro",
+      "marketingName": "Nova 9 Pro",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -3966,7 +3966,7 @@
     "device": {
       "architecture": null,
       "deviceName": "JSC-AL50",
-      "marketingName": "nova 8 SE",
+      "marketingName": "Nova 8 SE 4G",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -4321,12 +4321,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; JER-TN20; HMSCore 6.3.0.327) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.2.301 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "JER-TN20",
+      "marketingName": "Nova 7 Pro 5G",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "12.0.2.301",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; FRL-AN00a; HMSCore 6.0.1.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.0.301 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "FRL-AN00a",
-      "marketingName": "Enjoy 20 Plus",
+      "marketingName": "Enjoy 20 Plus 5G",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -4443,51 +4488,6 @@
       "name": "Huawei Browser Mobile",
       "modus": null,
       "version": "12.0.0.301",
-      "manufacturer": "Huawei",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "92.0.4515.105",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; ELZ-AN10; HMSCore 6.3.0.327) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.3.310 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "ELZ-AN10",
-      "marketingName": "Magic3",
-      "manufacturer": "Huawei",
-      "brand": "Honor",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2772,
-        "height": 1344,
-        "touch": true,
-        "size": 6.76
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Huawei Browser Mobile",
-      "modus": null,
-      "version": "12.0.3.310",
       "manufacturer": "Huawei",
       "type": "browser",
       "isbot": false,

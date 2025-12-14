@@ -1220,8 +1220,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "BV4800",
-      "marketingName": "BV4800",
+      "deviceName": "BV4800 SE",
+      "marketingName": "BV4800 SE",
       "manufacturer": "Blackview",
       "brand": "Blackview",
       "dualOrientation": true,
@@ -1265,8 +1265,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "BV6200",
-      "marketingName": "BV6200",
+      "deviceName": "BV6200 Plus",
+      "marketingName": "BV6200 Plus",
       "manufacturer": "Blackview",
       "brand": "Blackview",
       "dualOrientation": true,
@@ -1301,6 +1301,51 @@
     "engine": {
       "name": "Blink",
       "version": "138.0.7204.1898",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; FORT 1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.886 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Fort 1",
+      "marketingName": "Fort 1",
+      "manufacturer": "Blackview",
+      "brand": "Blackview",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "25.101.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.7339.886",
       "manufacturer": "Google"
     }
   }

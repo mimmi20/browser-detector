@@ -773,7 +773,7 @@
     "/web downloader/i": "web downloader",
     "/wpscan/i": "wpscan",
     "/wsp/i": "wsp",
-    "/origin/i": "origin",
+    "/origin(?![-_])/i": "origin",
     "/coremedia/i": "coremedia",
     "/antgalio/i": "antgalio",
     "/alexamediaplayer/i": "alexamediaplayer",

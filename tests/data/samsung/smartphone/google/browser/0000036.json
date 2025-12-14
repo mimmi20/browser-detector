@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A145R) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A145R",
-      "marketingName": "Galaxy A14 4G",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2408,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "106.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "slack/23.06.10.0.90012411 (samsung SM-A127F; Android 13)"
     },
     "device": {
@@ -1318,51 +1273,6 @@
   },
   {
     "headers": {
-      "user-agent": "Heart/67.0.0 Android 13/samsung SM-A235F"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A235F",
-      "marketingName": "Galaxy A23 4G",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2408,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "iHeartPodcasts/1.1.0 (Android 10; SM-A505FN Build/QP1A.190711.020)"
     },
     "device": {
@@ -1539,51 +1449,6 @@
       "name": "Blink",
       "version": "105.0.5195.136",
       "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PugpigBolt 3.8.10 (samsung, Android 13) on phone (model SM-G998U)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G998U",
-      "marketingName": "Galaxy S21 Ultra 5G (USA)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 3200,
-        "height": 1440,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -4570,6 +4435,141 @@
         "height": 1440,
         "touch": true,
         "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S926U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S926U1",
+      "marketingName": "Galaxy S24+ (USA)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S926N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S926N",
+      "marketingName": "Galaxy S24+ (Korea)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S921W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S921W",
+      "marketingName": "Galaxy S24 (Canada)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
       },
       "type": "smartphone",
       "ismobile": true,

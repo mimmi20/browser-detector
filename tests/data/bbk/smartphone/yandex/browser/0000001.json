@@ -3151,6 +3151,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PLA110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.49 YaBrowser/25.4.6.49.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PLA110",
+      "marketingName": "Reno 14 5G",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2760,
+        "height": 1256,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.4.6.49.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.49",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; RMX3952) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.91 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -3646,12 +3691,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; CPH2755) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.108 YaBrowser/25.10.1.108.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2755",
+      "marketingName": "A5i Pro",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1604,
+        "height": 720,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.10.1.108.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.7339.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; CPH2739) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.122 YaBrowser/25.10.1.122.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "CPH2739",
-      "marketingName": "Reno 14 Pro",
+      "marketingName": "Reno 14 Pro 5G",
       "manufacturer": "BBK",
       "brand": "OPPO",
       "dualOrientation": true,
@@ -3686,6 +3776,276 @@
     "engine": {
       "name": "Blink",
       "version": "140.0.7339.122",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; CPH2737) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1921 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2737",
+      "marketingName": "Reno 14 5G",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2760,
+        "height": 1256,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "25.80.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.1921",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; CPH2727) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.118 YaBrowser/25.10.1.118.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2727",
+      "marketingName": "A5 4G (2025)",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1604,
+        "height": 720,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.10.1.118.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.7339.118",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; CPH2719) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.112 YaBrowser/25.8.2.112.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2719",
+      "marketingName": "Nord CE 5",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2392,
+        "height": 1080,
+        "touch": true,
+        "size": 6.77
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.8.2.112.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.112",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; CPH2717) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.108 YaBrowser/25.10.1.108.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2717",
+      "marketingName": "Nord CE 5",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2392,
+        "height": 1080,
+        "touch": true,
+        "size": 6.77
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.10.1.108.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.7339.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; CPH2709) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.70 YaBrowser/25.8.8.70.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2709",
+      "marketingName": "Nord 5",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2800,
+        "height": 1272,
+        "touch": true,
+        "size": 6.83
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.8.8.70.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.70",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PLM110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PLM110",
+      "marketingName": "K13 Turbo 5G",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2800,
+        "height": 1280,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "25.101.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.7339.854",
       "manufacturer": "Google"
     }
   }

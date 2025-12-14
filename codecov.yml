@@ -5,6 +5,8 @@ codecov:
 
 coverage:
   status:
+    default_rules:
+      flag_coverage_not_uploaded_behavior: pass
     project:
       default:   # default is the status check's name, not default settings
         target: 100%
@@ -17,8 +19,9 @@ coverage:
         informational: true
 
 comment:
-  layout: "reach, diff, flags, files"
+  layout: "header, diff, flags, files, footer"
   behavior: default
   require_changes: false  # if true: only post the comment if coverage changes
-  require_base: false     # [yes :: must have a base report to post]
-  require_head: false     # [yes :: must have a head report to post]
+  require_base: false     # [true :: must have a base report to post]
+  require_head: false     # [true :: must have a head report to post]
+  hide_project_coverage: false # [true :: only show coverage on the git diff]

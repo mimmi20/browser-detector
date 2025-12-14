@@ -1436,8 +1436,11 @@
     "manufacturer": "visha-group",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VISHAAPP ",
+        "VISHAAPP"
+      ]
     },
     "engine": null
   },
@@ -2443,7 +2446,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Reuters News"
+        "Reuters News",
+        "ReutersNews"
       ]
     },
     "engine": "blink"
@@ -2456,6 +2460,31 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "com\\.tinyspeck\\.chatlyio"
+      ]
+    },
+    "engine": null
+  },
+  "naver": {
+    "name": "Naver",
+    "manufacturer": "nhn-corporation",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NAVER\\(inapp; search; \\d+; ",
+        "Naver"
+      ]
+    },
+    "engine": null
+  },
+  "sticky-password": {
+    "name": "Sticky Password",
+    "manufacturer": "lamantine-software",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "stickypassword"
       ]
     },
     "engine": null

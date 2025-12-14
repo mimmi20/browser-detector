@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ELZ-AN10; HMSCore 6.3.0.327) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.3.310 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ELZ-AN10",
+      "marketingName": "Magic3",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2772,
+        "height": 1344,
+        "touch": true,
+        "size": 6.76
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "12.0.3.310",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; ELZ-AN20; HMSCore 6.3.0.327; GMSCore 20.09.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.3.301 Mobile Safari/537.36"
     },
     "device": {
@@ -141,7 +186,7 @@
     "device": {
       "architecture": null,
       "deviceName": "RTE-AL00",
-      "marketingName": "nova 9 Pro",
+      "marketingName": "Nova 9 Pro",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,

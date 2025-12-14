@@ -246,7 +246,7 @@ enum Os: string implements OsInterface
 
     case androidtv = 'Android TV';
 
-    case lineageos = 'LineageOS';
+    case lineageos = 'Lineage OS';
 
     case aix = 'AIX';
 
@@ -468,7 +468,7 @@ enum Os: string implements OsInterface
             'lindows' => self::lindows,
             'wearos', 'wear os', 'wear-os' => self::wearos,
             'androidtv', 'android tv', 'android-tv' => self::androidtv,
-            'lineageos' => self::lineageos,
+            'lineageos', 'lineage os' => self::lineageos,
             'aix' => self::aix,
             'os2', 'os/2' => self::os2,
             'beos' => self::beos,

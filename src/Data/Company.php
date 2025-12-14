@@ -1150,6 +1150,74 @@ enum Company: string implements CompanyInterface
 
     case polestar = 'Polestar';
 
+    case kinogoGe = 'Kinogo.ge';
+
+    case cookieJarApps = 'CookieJarApps';
+
+    case larsWindolf = 'Lars Windolf';
+
+    case videoDownloadStudio = 'Video Download Studio';
+
+    case maxthon = 'Maxthon';
+
+    case yobiMobi = 'Yobi Mobi';
+
+    case myHomeScreen = 'My Home Screen';
+
+    case blueWalletServices = 'BlueWallet Services';
+
+    case anyDeskSoftware = 'AnyDesk Software';
+
+    case towoLabs = 'Towo Labs';
+
+    case talkTalkTelecom = 'TalkTalk Telecom';
+
+    case kpn = 'KPN';
+
+    case mopotab = 'MopoTab';
+
+    case quora = 'Quora';
+
+    case morris = 'Morris';
+
+    case dezor = 'Dezor';
+
+    case bestseller = 'Bestseller';
+
+    case hazuki = 'hazuki';
+
+    case startpageCom = 'startpage.com';
+
+    case tenta = 'Tenta';
+
+    case mobileV5 = 'Mobile_V5';
+
+    case swisscows = 'Swisscows';
+
+    case wolvesInteractive = 'Wolves Interactive';
+
+    case buhlDataService = 'Buhl Data Service';
+
+    case baySpringMedia = 'Bay Spring Media';
+
+    case twoKitConsulting = '2kit consulting';
+
+    case volcanoTechnology = 'Volcano Technology';
+
+    case omshyApps = 'OmshyApps';
+
+    case reddit = 'reddit';
+
+    case thinkFree = 'THINK FREE';
+
+    case nifty = 'NIFTY';
+
+    case wiseplayApps = 'Wiseplay Apps';
+
+    case canon = 'Canon';
+
+    case intex = 'Intex';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1723,6 +1791,40 @@ enum Company: string implements CompanyInterface
             'suaat' => self::suaat,
             'gtab', 'g-tab' => self::gTab,
             'polestar' => self::polestar,
+            'kinogoge', 'kinogo-ge', 'kinogo.ge' => self::kinogoGe,
+            'cookiejarapps', 'cookie-jar-apps' => self::cookieJarApps,
+            'larswindolf', 'lars windolf' => self::larsWindolf,
+            'videodownloadstudio', 'video-download-studio', 'video download studio' => self::videoDownloadStudio,
+            'maxthon', 'maxthon international limited' => self::maxthon,
+            'yobimobi', 'yobi-mobi', 'yobi mobi' => self::yobiMobi,
+            'myhomescreen', 'my-home-screen', 'my home screen' => self::myHomeScreen,
+            'bluewalletservices', 'bluewallet-services', 'bluewallet services', 'bluewallet services s. r. l.' => self::blueWalletServices,
+            'anydesksoftware', 'anydesk-software', 'anydesk software gmbh', 'anydesk software' => self::anyDeskSoftware,
+            'towolabs', 'towo-labs', 'towo labs' => self::towoLabs,
+            'talktalktelecom', 'talk-talk-telecom', 'talktalk telecom group limited', 'talktalk telecom' => self::talkTalkTelecom,
+            'kpn' => self::kpn,
+            'mopotab', 'mopotab inc' => self::mopotab,
+            'quora', 'quora, inc.' => self::quora,
+            'morris', 'morris xar' => self::morris,
+            'dezor', 'dezor sa' => self::dezor,
+            'bestseller', 'bestseller a/s' => self::bestseller,
+            'hazuki' => self::hazuki,
+            'startpagecom', 'startpage.com' => self::startpageCom,
+            'tenta', 'tenta llc' => self::tenta,
+            'mobilev5', 'mobile-v5', 'mobile_v5' => self::mobileV5,
+            'swisscows' => self::swisscows,
+            'wolvesinteractive', 'wolves-interactive', 'wolves interactive' => self::wolvesInteractive,
+            'buhldataservice', 'buhl-data-service', 'buhl data service', 'buhl data service gmbh' => self::buhlDataService,
+            'bayspringmedia', 'bay-spring-media', 'bay spring media', 'bay spring media llc' => self::baySpringMedia,
+            'twokitconsulting', '2kit-consulting', '2kit consulting' => self::twoKitConsulting,
+            'volcanotechnology', 'volcano-technology', 'volcano technology', 'volcano technology limited' => self::volcanoTechnology,
+            'omshyapps', 'omshy-apps' => self::omshyApps,
+            'reddit', 'reddit inc.' => self::reddit,
+            'thinkfree', 'think-free', 'think free' => self::thinkFree,
+            'nifty', 'nifty corporation' => self::nifty,
+            'wiseplayapps', 'wiseplay-apps', 'wiseplay apps' => self::wiseplayApps,
+            'canon', 'canon inc.' => self::canon,
+            'intex', 'intex technologies (i) ltd.' => self::intex,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1881,6 +1983,23 @@ enum Company: string implements CompanyInterface
             self::playitTechnology => 'PLAYIT TECHNOLOGY PTE. LTD.',
             self::xing => 'XING AG',
             self::fSecure => 'F-Secure Corporation',
+            self::maxthon => 'Maxthon International Limited',
+            self::blueWalletServices => 'BlueWallet Services S. R. L.',
+            self::anyDeskSoftware => 'AnyDesk Software GmbH',
+            self::talkTalkTelecom => 'TalkTalk Telecom Group Limited',
+            self::mopotab => 'MopoTab Inc',
+            self::quora => 'Quora, Inc.',
+            self::morris => 'Morris Xar',
+            self::dezor => 'Dezor SA',
+            self::bestseller => 'Bestseller A/S',
+            self::tenta => 'Tenta LLC',
+            self::buhlDataService => 'Buhl Data Service GmbH',
+            self::baySpringMedia => 'Bay Spring Media LLC',
+            self::volcanoTechnology => 'Volcano Technology Limited',
+            self::reddit => 'reddit inc.',
+            self::nifty => 'NIFTY Corporation',
+            self::canon => 'Canon Inc.',
+            self::intex => 'Intex Technologies (I) Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2028,6 +2147,26 @@ enum Company: string implements CompanyInterface
             self::playitTechnology => 'playit-technology',
             self::fSecure => 'f-secure',
             self::gTab => 'g-tab',
+            self::kinogoGe => 'kinogo-ge',
+            self::cookieJarApps => 'cookie-jar-apps',
+            self::larsWindolf => 'lars windolf',
+            self::videoDownloadStudio => 'video-download-studio',
+            self::yobiMobi => 'yobi-mobi',
+            self::myHomeScreen => 'my-home-screen',
+            self::blueWalletServices => 'bluewallet-services',
+            self::anyDeskSoftware => 'anydesk-software',
+            self::towoLabs => 'towo-labs',
+            self::talkTalkTelecom => 'talk-talk-telecom',
+            self::startpageCom => 'startpage.com',
+            self::mobileV5 => 'mobile-v5',
+            self::wolvesInteractive => 'wolves-interactive',
+            self::buhlDataService => 'buhl-data-service',
+            self::baySpringMedia => 'bay-spring-media',
+            self::twoKitConsulting => '2kit-consulting',
+            self::volcanoTechnology => 'volcano-technology',
+            self::omshyApps => 'omshy-apps',
+            self::thinkFree => 'think-free',
+            self::wiseplayApps => 'wiseplay-apps',
             default => $this->name,
         };
     }

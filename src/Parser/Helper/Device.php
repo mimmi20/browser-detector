@@ -3328,6 +3328,7 @@ final class Device implements DeviceInterface
             'xt2527-7' => 'motorola=motorola xt2527-7',
             'moto g stylus 5g - 2023' => 'motorola=motorola moto g stylus 5g (2023)',
             'motorola edge 60 fusion' => 'motorola=motorola edge 60 fusion',
+            'motorola razr ultra 2025' => 'motorola=motorola razr ultra 2025',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -6352,6 +6353,7 @@ final class Device implements DeviceInterface
             'ihunt fit runner' => 'ihunt=ihunt fit runner',
             'cyber dog 4g' => 'ihunt=ihunt cyber dog 4g',
             'ihunt cyber shark 4g' => 'ihunt=ihunt cyber shark 4g',
+            'ihunt s24 plus' => 'ihunt=ihunt s24 plus',
             // emporia
             'e5mini' => 'emporia=emporia e5 mini',
             // dexp

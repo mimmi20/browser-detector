@@ -1094,8 +1094,8 @@ final class DetectorTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => 'LineageOS',
-                        'marketingName' => 'LineageOS',
+                        'name' => 'Lineage OS',
+                        'marketingName' => 'Lineage OS',
                         'version' => '19.0.0',
                         'manufacturer' => 'unknown',
                         'bits' => null,
