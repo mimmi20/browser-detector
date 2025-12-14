@@ -446,6 +446,9 @@ final class DeviceTest extends TestCase
             ['NE2217', 'oneplus=oneplus ne2217'],
             ['NE2215', 'oneplus=oneplus ne2215'],
             ['NE2211', 'oneplus=oneplus ne2211'],
+            ['CPH2709', 'oneplus=oneplus cph2709'],
+            ['CPH2717', 'oneplus=oneplus cph2717'],
+            ['CPH2719', 'oneplus=oneplus cph2719'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -609,6 +612,10 @@ final class DeviceTest extends TestCase
             ['PLE110', 'oppo=oppo ple110'],
             ['PLN110', 'oppo=oppo pln110'],
             ['PLM110', 'oppo=oppo plm110'],
+            ['CPH2727', 'oppo=oppo cph2727'],
+            ['CPH2737', 'oppo=oppo cph2737'],
+            ['PLA110', 'oppo=oppo pla110'],
+            ['CPH2755', 'oppo=oppo cph2755'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -2832,6 +2839,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G990W2', 'samsung=samsung sm-g990w2'],
             ['SM-G990W', 'samsung=samsung sm-g990w'],
             ['SAMSUNG SM-G990W', 'samsung=samsung sm-g990w'],
+            ['SM-G990U3', 'samsung=samsung sm-g990u3'],
+            ['SAMSUNG SM-G990U3', 'samsung=samsung sm-g990u3'],
             ['SM-G990U2', 'samsung=samsung sm-g990u2'],
             ['SAMSUNG SM-G990U2', 'samsung=samsung sm-g990u2'],
             ['SM-G990U1', 'samsung=samsung sm-g990u1'],
@@ -4829,6 +4838,7 @@ final class DeviceTest extends TestCase
             ['KINGKONG POWER 5', 'cubot=cubot kingkong power 5'],
             ['TAB KINGKONG 2', 'cubot=cubot tab king kong 2'],
             ['KINGKONG 11', 'cubot=cubot kingkong 11'],
+            ['KINGKONG ES 3', 'cubot=cubot king kong es 3'],
             // Aoyodkg
             ['AOYODKG_A38', 'aoyodkg=aoyodkg a38'],
             // gigaset
@@ -5190,6 +5200,9 @@ final class DeviceTest extends TestCase
             ['Tab 15', 'blackview=blackview tab 15'],
             ['Tab 13', 'blackview=blackview tab 13'],
             ['MEGA 3', 'blackview=blackview mega 3'],
+            ['FORT 1', 'blackview=blackview fort 1'],
+            ['BV6200 Plus', 'blackview=blackview bv6200 plus'],
+            ['BV4800 SE', 'blackview=blackview bv4800 se'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -5552,6 +5565,7 @@ final class DeviceTest extends TestCase
             ['SH-51C', 'sharp=sharp sh-51c'],
             ['SH-S50', 'sharp=sharp sh-s50'],
             ['A201SH', 'sharp=sharp a201sh'],
+            ['SH-53D', 'sharp=sharp sh-53d'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],
@@ -6487,6 +6501,7 @@ final class DeviceTest extends TestCase
             ['X700', 'omix=omix x700'],
             ['OMIX.X5', 'omix=omix x5'],
             ['O1 Icon', 'omix=omix o1 icon'],
+            ['O1 Neo', 'omix=omix o1 neo'],
             // blu
             ['BOLD K50', 'blu=blu bold k50'],
             ['G91', 'blu=blu g91'],
@@ -6501,6 +6516,12 @@ final class DeviceTest extends TestCase
             ['B135DL', 'blu=blu b135dl'],
             ['M10L Pro', 'blu=blu m10l pro'],
             // apple
+            ['iPhone18,3', 'apple=apple iphone 18,3'],
+            ['iPh18,3', 'apple=apple iphone 18,3'],
+            ['iPhone18,2', 'apple=apple iphone 18,2'],
+            ['iPh18,2', 'apple=apple iphone 18,2'],
+            ['iPhone18,1', 'apple=apple iphone 18,1'],
+            ['iPh18,1', 'apple=apple iphone 18,1'],
             ['iPhone17,5', 'apple=apple iphone 17,5'],
             ['iPh17,5', 'apple=apple iphone 17,5'],
             ['iPhone17,4', 'apple=apple iphone 17,4'],
@@ -7834,6 +7855,8 @@ final class DeviceTest extends TestCase
             ['S3_U_EEA', 'suaat=suaat s3_u_eea'],
             // g-tab
             ['PAD10_PRO', 'g-tab=g-tab pad10_pro'],
+            // polestar
+            ['Polestar Phone', 'polestar=polestar phone'],
             // other
             ['Model"', null],
             [': "', null],

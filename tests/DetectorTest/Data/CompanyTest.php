@@ -3448,6 +3448,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'G-Tab',
                 'key' => 'g-tab',
             ],
+            [
+                'type' => 'Polestar',
+                'name' => 'Polestar',
+                'brandname' => 'Polestar',
+                'key' => 'polestar',
+            ],
         ];
     }
 

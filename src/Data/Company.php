@@ -1148,6 +1148,8 @@ enum Company: string implements CompanyInterface
 
     case gTab = 'G-Tab';
 
+    case polestar = 'Polestar';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1720,6 +1722,7 @@ enum Company: string implements CompanyInterface
             'fsecure', 'f-secure corporation', 'f-secure' => self::fSecure,
             'suaat' => self::suaat,
             'gtab', 'g-tab' => self::gTab,
+            'polestar' => self::polestar,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

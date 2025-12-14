@@ -424,6 +424,9 @@ final class Device implements DeviceInterface
             'ne2217' => 'oneplus=oneplus ne2217',
             'ne2215' => 'oneplus=oneplus ne2215',
             'ne2211' => 'oneplus=oneplus ne2211',
+            'cph2709' => 'oneplus=oneplus cph2709',
+            'cph2717' => 'oneplus=oneplus cph2717',
+            'cph2719' => 'oneplus=oneplus cph2719',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -587,6 +590,10 @@ final class Device implements DeviceInterface
             'ple110' => 'oppo=oppo ple110',
             'pln110' => 'oppo=oppo pln110',
             'plm110' => 'oppo=oppo plm110',
+            'cph2727' => 'oppo=oppo cph2727',
+            'cph2737' => 'oppo=oppo cph2737',
+            'pla110' => 'oppo=oppo pla110',
+            'cph2755' => 'oppo=oppo cph2755',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -2229,6 +2236,7 @@ final class Device implements DeviceInterface
             'sm-g1650', 'samsung sm-g1650' => 'samsung=samsung sm-g1650',
             'sm-g990w2', 'samsung sm-g990w2' => 'samsung=samsung sm-g990w2',
             'sm-g990w', 'samsung sm-g990w' => 'samsung=samsung sm-g990w',
+            'sm-g990u3', 'samsung sm-g990u3' => 'samsung=samsung sm-g990u3',
             'sm-g990u2', 'samsung sm-g990u2' => 'samsung=samsung sm-g990u2',
             'sm-g990u1', 'samsung sm-g990u1' => 'samsung=samsung sm-g990u1',
             'sm-g990u', 'samsung sm-g990u' => 'samsung=samsung sm-g990u',
@@ -4160,6 +4168,7 @@ final class Device implements DeviceInterface
             'kingkong power 5' => 'cubot=cubot kingkong power 5',
             'tab kingkong 2' => 'cubot=cubot tab king kong 2',
             'kingkong 11' => 'cubot=cubot kingkong 11',
+            'kingkong es 3' => 'cubot=cubot king kong es 3',
             // Aoyodkg
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
@@ -4502,6 +4511,9 @@ final class Device implements DeviceInterface
             'tab 15' => 'blackview=blackview tab 15',
             'tab 13' => 'blackview=blackview tab 13',
             'mega 3' => 'blackview=blackview mega 3',
+            'fort 1' => 'blackview=blackview fort 1',
+            'bv6200 plus' => 'blackview=blackview bv6200 plus',
+            'bv4800 se' => 'blackview=blackview bv4800 se',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -4863,6 +4875,7 @@ final class Device implements DeviceInterface
             'sh-51c' => 'sharp=sharp sh-51c',
             'sh-s50' => 'sharp=sharp sh-s50',
             'a201sh' => 'sharp=sharp a201sh',
+            'sh-53d' => 'sharp=sharp sh-53d',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
@@ -5720,6 +5733,7 @@ final class Device implements DeviceInterface
             'x700' => 'omix=omix x700',
             'omix.x5' => 'omix=omix x5',
             'o1 icon' => 'omix=omix o1 icon',
+            'o1 neo' => 'omix=omix o1 neo',
             // blu
             'bold k50' => 'blu=blu bold k50',
             'g91' => 'blu=blu g91',
@@ -5734,6 +5748,9 @@ final class Device implements DeviceInterface
             'b135dl' => 'blu=blu b135dl',
             'm10l pro' => 'blu=blu m10l pro',
             // apple
+            'iphone18,3', 'iph18,3' => 'apple=apple iphone 18,3',
+            'iphone18,2', 'iph18,2' => 'apple=apple iphone 18,2',
+            'iphone18,1', 'iph18,1' => 'apple=apple iphone 18,1',
             'iphone17,5', 'iph17,5' => 'apple=apple iphone 17,5',
             'iphone17,4', 'iph17,4' => 'apple=apple iphone 17,4',
             'iphone17,3', 'iph17,3' => 'apple=apple iphone 17,3',
@@ -6984,6 +7001,8 @@ final class Device implements DeviceInterface
             's3_u_eea' => 'suaat=suaat s3_u_eea',
             // g-tab
             'pad10_pro' => 'g-tab=g-tab pad10_pro',
+            // polestar
+            'polestar phone' => 'polestar=polestar phone',
             // other
             default => null,
         };
