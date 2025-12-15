@@ -20,8 +20,11 @@ use UaParser\BrowserParserInterface;
 use UaParser\ClientCodeInterface;
 use UnexpectedValueException;
 
+use function array_filter;
+use function array_map;
 use function mb_strtolower;
 use function preg_match;
+use function reset;
 
 final readonly class UseragentClientCode implements ClientCodeInterface
 {
@@ -60,14 +63,31 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             return null;
         }
 
-        $matches = [];
+        $regexes = [
+            '/pr\((?P<client>ucbrowser)(?:\/[\d.]+)?\);/i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ (?P<client>firefox)\/[\d.]+ kaios\/[\d.]+/i',
+        ];
 
-        if (preg_match('/pr\((?P<client>[^\/)]+)(?:\/[\d.]+)?\);/', $normalizedValue, $matches)) {
-            $code = mb_strtolower($matches['client']);
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
+        );
 
-            if ($code === 'ucbrowser') {
-                return $code;
-            }
+        $results = array_map(
+            static function (string $regex) use ($normalizedValue): string {
+                $matches = [];
+
+                preg_match($regex, $normalizedValue, $matches);
+
+                return mb_strtolower($matches['client'] ?? '');
+            },
+            $filtered,
+        );
+
+        $code = reset($results);
+
+        if ($code !== null && $code !== false && $code !== '') {
+            return $code;
         }
 
         if (

@@ -24,7 +24,11 @@ use UaParser\EngineParserInterface;
 use UaParser\EngineVersionInterface;
 use UnexpectedValueException;
 
+use function array_filter;
+use function array_map;
+use function mb_strtolower;
 use function preg_match;
+use function reset;
 
 final readonly class UseragentEngineVersion implements EngineVersionInterface
 {
@@ -64,10 +68,31 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
             return new ForcedNullVersion();
         }
 
-        $matches = [];
+        $regexes = [
+            '/(?<!o)re\([^\/]+\/(?P<version>[\d.]+)/i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/(?P<version>[\d.]+) firefox\/[\d.]+ kaios\/[\d.]+/i',
+        ];
 
-        if (preg_match('/(?<!o)re\([^\/]+\/(?P<version>[\d.]+)/', $normalizedValue, $matches)) {
-            return $this->setVersion($matches['version']);
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
+        );
+
+        $results = array_map(
+            static function (string $regex) use ($normalizedValue): string {
+                $matches = [];
+
+                preg_match($regex, $normalizedValue, $matches);
+
+                return mb_strtolower($matches['version'] ?? '');
+            },
+            $filtered,
+        );
+
+        $detectedVersion = reset($results);
+
+        if ($detectedVersion !== null && $detectedVersion !== false && $detectedVersion !== '') {
+            return $this->setVersion($detectedVersion);
         }
 
         if ($code === null) {

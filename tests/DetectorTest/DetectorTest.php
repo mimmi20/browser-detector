@@ -1254,6 +1254,52 @@ final class DetectorTest extends TestCase
                     ],
                 ],
             ],
+            [
+                ['user-agent' => 'Mozilla/5.0 (Mobile; Jio/F491H/Jio-F491H-001-06-24-271223;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2'],
+                [
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Mobile; Jio/F491H/Jio-F491H-001-06-24-271223;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Mobile device',
+                        'marketingName' => 'general Mobile device',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'mobile-device',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'KaiOS',
+                        'marketingName' => 'KaiOS',
+                        'version' => '2.5.3.2',
+                        'manufacturer' => 'KaiOS',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Firefox',
+                        'modus' => null,
+                        'version' => '48.0.0',
+                        'manufacturer' => 'Mozilla',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Gecko',
+                        'version' => '48.0.0',
+                        'manufacturer' => 'Mozilla',
+                    ],
+                ],
+            ],
         ];
     }
 }

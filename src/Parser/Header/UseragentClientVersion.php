@@ -25,7 +25,11 @@ use UaParser\BrowserParserInterface;
 use UaParser\ClientVersionInterface;
 use UnexpectedValueException;
 
+use function array_filter;
+use function array_map;
 use function preg_match;
+use function reset;
+use function str_replace;
 
 final readonly class UseragentClientVersion implements ClientVersionInterface
 {
@@ -65,20 +69,32 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
             return new ForcedNullVersion();
         }
 
-        $matches = [];
+        $regexes = [
+            '/pr\([^\/]+\/(?P<version>[\d.]+)\);/i',
+            '/instagram (?P<version>[\d.]+) android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/(?P<version>[\d.]+) kaios\/[\d.]+/i',
+        ];
 
-        if (preg_match('/pr\([^\/]+\/(?P<version>[\d.]+)\);/', $normalizedValue, $matches)) {
-            return $this->setVersion($matches['version']);
-        }
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
+        );
 
-        if (
-            preg_match(
-                '/instagram (?P<version>[\d.]+) android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
-                $normalizedValue,
-                $matches,
-            )
-        ) {
-            return $this->setVersion($matches['version']);
+        $results = array_map(
+            static function (string $regex) use ($normalizedValue): string {
+                $matches = [];
+
+                preg_match($regex, $normalizedValue, $matches);
+
+                return str_replace('_', '.', $matches['version'] ?? '');
+            },
+            $filtered,
+        );
+
+        $detectedVersion = reset($results);
+
+        if ($detectedVersion !== null && $detectedVersion !== false && $detectedVersion !== '') {
+            return $this->setVersion($detectedVersion);
         }
 
         if ($code === null) {

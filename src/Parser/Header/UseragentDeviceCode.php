@@ -83,6 +83,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/tivimate\/[\d.]+ \((?P<devicecode>[^);\/]+);/i',
             '/; model: (?P<devicecode>[^);\/]+)\)/i',
             '/lbc\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
+            '/mozilla\/[\d.]+ \(mobile; (?P<devicecode>[^;]+)(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
         ];
 
         $filtered = array_filter(

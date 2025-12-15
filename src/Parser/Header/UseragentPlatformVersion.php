@@ -89,6 +89,7 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             '/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/icq_android\/[\d.]+ \(android; \d+; (?P<version>[\d.]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;[^);\/]+;(?P<version>[\d.]+)/i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/(?P<version>[\d.]+)/i',
         ];
 
         $filtered = array_filter(

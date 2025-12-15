@@ -1218,6 +1218,20 @@ enum Company: string implements CompanyInterface
 
     case intex = 'Intex';
 
+    case orange = 'Orange';
+
+    case accent = 'Accent';
+
+    case ipro = 'IPRO';
+
+    case castify = 'Castify';
+
+    case theNewYorkTimes = 'The New York Times';
+
+    case vishaGroup = 'Visha Group';
+
+    case spring = 'Spring';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1825,6 +1839,13 @@ enum Company: string implements CompanyInterface
             'wiseplayapps', 'wiseplay-apps', 'wiseplay apps' => self::wiseplayApps,
             'canon', 'canon inc.' => self::canon,
             'intex', 'intex technologies (i) ltd.' => self::intex,
+            'orange', 'orange s.a.' => self::orange,
+            'accent' => self::accent,
+            'ipro', 'shenzhen zhike communication co., ltd' => self::ipro,
+            'castify' => self::castify,
+            'thenewyorktimes', 'the new york times company', 'new-york-times', 'the new york times' => self::theNewYorkTimes,
+            'vishagroup', 'visha-group', 'visha group' => self::vishaGroup,
+            'spring', 'spring (sg) pte. ltd.' => self::spring,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2000,6 +2021,10 @@ enum Company: string implements CompanyInterface
             self::nifty => 'NIFTY Corporation',
             self::canon => 'Canon Inc.',
             self::intex => 'Intex Technologies (I) Ltd.',
+            self::orange => 'Orange S.A.',
+            self::ipro => 'Shenzhen Zhike Communication Co., Ltd',
+            self::theNewYorkTimes => 'The New York Times Company',
+            self::spring => 'Spring (SG) PTE. LTD.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2167,6 +2192,8 @@ enum Company: string implements CompanyInterface
             self::omshyApps => 'omshy-apps',
             self::thinkFree => 'think-free',
             self::wiseplayApps => 'wiseplay-apps',
+            self::theNewYorkTimes => 'new-york-times',
+            self::vishaGroup => 'visha-group',
             default => $this->name,
         };
     }

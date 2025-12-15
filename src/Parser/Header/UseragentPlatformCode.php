@@ -97,6 +97,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             '/mozilla\/[\d.]+ \(linux; (?P<platform>android) [\d.]+ ios;/i',
             '/ \/ (?P<platform>android) \d+$/i',
             '/wnyc app\/[\d.]+ (?P<platform>android)\/\d+ /i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ (?P<platform>kaios)\/[\d.]+/i',
         ];
 
         $filtered = array_filter(

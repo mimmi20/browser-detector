@@ -3658,6 +3658,48 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Intex',
                 'key' => 'intex',
             ],
+            [
+                'type' => 'Orange',
+                'name' => 'Orange S.A.',
+                'brandname' => 'Orange',
+                'key' => 'orange',
+            ],
+            [
+                'type' => 'Accent',
+                'name' => 'Accent',
+                'brandname' => 'Accent',
+                'key' => 'accent',
+            ],
+            [
+                'type' => 'IPRO',
+                'name' => 'Shenzhen Zhike Communication Co., Ltd',
+                'brandname' => 'IPRO',
+                'key' => 'ipro',
+            ],
+            [
+                'type' => 'Castify',
+                'name' => 'Castify',
+                'brandname' => 'Castify',
+                'key' => 'castify',
+            ],
+            [
+                'type' => 'The New York Times',
+                'name' => 'The New York Times Company',
+                'brandname' => 'The New York Times',
+                'key' => 'new-york-times',
+            ],
+            [
+                'type' => 'Visha Group',
+                'name' => 'Visha Group',
+                'brandname' => 'Visha Group',
+                'key' => 'visha-group',
+            ],
+            [
+                'type' => 'Spring',
+                'name' => 'Spring (SG) PTE. LTD.',
+                'brandname' => 'Spring',
+                'key' => 'spring',
+            ],
         ];
     }
 

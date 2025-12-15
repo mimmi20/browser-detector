@@ -19,8 +19,11 @@ use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\EngineCodeInterface;
 use UaParser\EngineParserInterface;
 
+use function array_filter;
+use function array_map;
 use function mb_strtolower;
 use function preg_match;
+use function reset;
 
 final readonly class UseragentEngineCode implements EngineCodeInterface
 {
@@ -55,11 +58,30 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
             return null;
         }
 
-        $matches = [];
+        $regexes = [
+            '/(?<!o)re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) (?P<engine>gecko)\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
+        ];
 
-        if (preg_match('/(?<!o)re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $normalizedValue, $matches)) {
-            $code = mb_strtolower($matches['engine']);
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
+        );
 
+        $results = array_map(
+            static function (string $regex) use ($normalizedValue): string {
+                $matches = [];
+
+                preg_match($regex, $normalizedValue, $matches);
+
+                return mb_strtolower($matches['engine'] ?? '');
+            },
+            $filtered,
+        );
+
+        $code = reset($results);
+
+        if ($code !== null && $code !== false && $code !== '') {
             return match ($code) {
                 'applewebkit' => 'webkit',
                 default => $code,

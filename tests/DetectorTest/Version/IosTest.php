@@ -208,6 +208,10 @@ final class IosTest extends TestCase
                 'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/25.0.0',
                 '19.0.0',
             ],
+            [
+                'Darwin/24.5.0 (Watch7,11; watchOS 11.4) MatomoTrackerSDK/7.7.0',
+                '11.4.0',
+            ],
         ];
     }
 
