@@ -3700,6 +3700,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Spring',
                 'key' => 'spring',
             ],
+            [
+                'type' => 'GNOME',
+                'name' => 'The GNOME Project',
+                'brandname' => 'GNOME',
+                'key' => 'the-gnome-project',
+            ],
+            [
+                'type' => 'KDE',
+                'name' => 'KDE e.V.',
+                'brandname' => 'KDE',
+                'key' => 'kde',
+            ],
+            [
+                'type' => 'GNU',
+                'name' => 'GNU',
+                'brandname' => 'GNU',
+                'key' => 'gnu',
+            ],
         ];
     }
 

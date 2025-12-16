@@ -326,7 +326,7 @@ enum Os: string implements OsInterface
 
     case rimOs = 'RIM OS';
 
-    case rimTabletOs = 'RIM Tablet OS';
+    case rimTabletOs = 'BlackBerry Tablet OS';
 
     case sailfishOs = 'SailfishOS';
 
@@ -508,7 +508,7 @@ enum Os: string implements OsInterface
             'palmos' => self::palmOs,
             'remixos', 'remix os' => self::remixOs,
             'rimos', 'rim os' => self::rimOs,
-            'rimtabletos', 'rim tablet os' => self::rimTabletOs,
+            'rimtabletos', 'rim tablet os', 'blackberry tablet os' => self::rimTabletOs,
             'sailfishos' => self::sailfishOs,
             'slackwarelinux', 'slackware linux' => self::slackwareLinux,
             'startos' => self::startos,
@@ -822,7 +822,7 @@ enum Os: string implements OsInterface
             self::nintendoSwitchOs => 'nintendo switch os',
             self::nucleus => 'nucleus os',
             self::rimOs => 'rim os',
-            self::rimTabletOs => 'rim tablet os',
+            self::rimTabletOs => 'blackberry tablet os',
             self::sailfishOs => 'sailfishos',
             self::slackwareLinux => 'slackware linux',
             self::suseLinux => 'suse linux',

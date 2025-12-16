@@ -1,23 +1,23 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Mobile; IPRO_K2_3G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.2"
+      "user-agent": "Mozilla/5.0 (Mobile; Nokia_2720_Flip; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general IPRO device",
-      "marketingName": "general IPRO device",
-      "manufacturer": "IPRO",
-      "brand": "IPRO",
-      "dualOrientation": null,
-      "simCount": 0,
+      "deviceName": "2720 Flip",
+      "marketingName": "2720 Flip",
+      "manufacturer": "HMD Global",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.8
       },
-      "type": "mobile-device",
+      "type": "feature-phone",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -25,7 +25,7 @@
     "os": {
       "name": "KaiOS",
       "marketingName": "KaiOS",
-      "version": "2.5.1.2",
+      "version": "2.5.2",
       "manufacturer": "KaiOS",
       "bits": null
     },

@@ -2,7 +2,7 @@
   "rules": {
     "/(?<![l_])edge\\//i": "edge",
     "/chr[o0]me(?!book|cast)|crmo/i": "blink",
-    "/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
+    "/webkit|safari(?!com)|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
     "/(?<![kK][aA])iOS/": "webkit",
     "/presto\\/|(?<!co)opera(?!ting)/i": "presto",
     "/trident|msie|(?<!allow )like gecko/i": "trident",
