@@ -323,7 +323,7 @@ final class Useragent2Test extends TestCase
      *
      * @throws void
      *
-	 * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa3(): array
     {
@@ -617,7 +617,7 @@ final class Useragent2Test extends TestCase
      *
      * @throws void
      *
-	 * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa4(): array
     {

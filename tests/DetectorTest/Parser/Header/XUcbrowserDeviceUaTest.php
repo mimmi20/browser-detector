@@ -45,7 +45,7 @@ final class XUcbrowserDeviceUaTest extends TestCase
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws NotFoundException
      *
-	 * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider('providerUa')]
     public function testData(
