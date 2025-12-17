@@ -13,11 +13,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use Override;
+use UaData\EngineInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\EngineCodeInterface;
 use UaParser\EngineParserInterface;
+use UnexpectedValueException;
 
 use function array_filter;
 use function array_map;
@@ -46,16 +49,16 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
 
     /** @throws void */
     #[Override]
-    public function getEngineCode(string $value): string | null
+    public function getEngineCode(string $value): EngineInterface
     {
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
-            return null;
+            return Engine::unknown;
         }
 
         if ($normalizedValue === '' || $normalizedValue === null) {
-            return null;
+            return Engine::unknown;
         }
 
         $regexes = [
@@ -82,18 +85,13 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
         $code = reset($results);
 
         if ($code !== null && $code !== false && $code !== '') {
-            return match ($code) {
-                'applewebkit' => 'webkit',
-                default => $code,
-            };
+            try {
+                return Engine::fromName($code);
+            } catch (UnexpectedValueException) {
+                return Engine::unknown;
+            }
         }
 
-        $code = $this->engineParser->parse($normalizedValue);
-
-        if ($code === '') {
-            return null;
-        }
-
-        return $code;
+        return $this->engineParser->parse($normalizedValue);
     }
 }

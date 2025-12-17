@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest;
 
+use BrowserDetector\Collection\Headers;
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
 use PHPUnit\Event\NoPreviousThrowableException;
@@ -31,6 +32,7 @@ use UnexpectedValueException;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(Detector::class)]
+#[CoversClass(Headers::class)]
 final class DetectorTest extends TestCase
 {
     /**
@@ -1012,9 +1014,9 @@ final class DetectorTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
+                        'name' => 'WebKit',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -1140,10 +1142,10 @@ final class DetectorTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Google',
                         'bits' => null,
                     ],
                     'client' => [
@@ -1156,9 +1158,9 @@ final class DetectorTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
+                        'name' => 'WebKit',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -1202,9 +1204,9 @@ final class DetectorTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
+                        'name' => 'WebKit',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],

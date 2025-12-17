@@ -14,11 +14,13 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Collection\Headers;
+use BrowserDetector\Data\Engine;
+use BrowserDetector\Data\Os;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
-use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilder;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -30,7 +32,6 @@ use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\DeviceLoaderInterface;
 use UaLoader\EngineLoaderInterface;
-use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
@@ -40,10 +41,10 @@ use UaResult\Company\Company;
 use UaResult\Device\Architecture;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
-use UaResult\Os\Os;
 use UnexpectedValueException;
 
 #[CoversClass(Detector::class)]
+#[CoversClass(Headers::class)]
 final class Detector6Test extends TestCase
 {
     /**
@@ -58,23 +59,20 @@ final class Detector6Test extends TestCase
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode21(): void
     {
-        $hash                    = 'test-hash';
-        $headerValue             = 'abc';
-        $headers                 = ['xyz' => $headerValue];
-        $deviceCodeForLoader     = 'zz=xx yy';
-        $platformFromDevice      = 'xx';
-        $platformCode            = 'xx';
-        $platformVersion         = (new VersionBuilder())->set('13');
-        $completePlatformVersion = '13.0.0';
-        $engineVersion           = (new VersionBuilder())->set('2.3');
-        $completeEngineVersion   = '2.3.0';
-        $engineCodename          = 'abcd';
-
-        $exception = new NotFoundException('version not found');
+        $hash                  = 'test-hash';
+        $headerValue           = 'abc';
+        $headers               = ['xyz' => $headerValue];
+        $deviceCodeForLoader   = 'zz=xx yy';
+        $platformFromDevice    = 'xx';
+        $platformCode          = Os::unknown;
+        $platformVersion       = (new VersionBuilder())->set('13');
+        $engineVersion         = (new VersionBuilder())->set('2.3');
+        $completeEngineVersion = '2.3.0';
+        $engineCodename        = Engine::unknown;
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::exactly(3))
+            ->expects(self::once())
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -132,7 +130,7 @@ final class Detector6Test extends TestCase
             ->expects(self::once())
             ->method('getPlatformCode')
             ->with(null)
-            ->willReturn(null);
+            ->willReturn(Os::unknown);
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
@@ -140,7 +138,7 @@ final class Detector6Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformVersion')
-            ->with($platformCode)
+            ->with($platformCode->getKey())
             ->willReturn($platformVersion);
         $header
             ->expects(self::once())
@@ -157,7 +155,7 @@ final class Detector6Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getEngineVersion')
-            ->with($engineCodename)
+            ->with($engineCodename->getKey())
             ->willReturn($engineVersion);
 
         $filteredHeaders = ['xyz' => $header];
@@ -184,10 +182,10 @@ final class Detector6Test extends TestCase
                 'bits' => null,
             ],
             'os' => [
-                'name' => 'abc',
-                'marketingName' => 'abc',
-                'version' => $completePlatformVersion,
-                'manufacturer' => 'xx',
+                'name' => null,
+                'marketingName' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
                 'bits' => null,
             ],
             'client' => [
@@ -208,9 +206,8 @@ final class Detector6Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -298,18 +295,11 @@ final class Detector6Test extends TestCase
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);
         $platformLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformCode, $headerValue)
-            ->willReturn(
-                new Os(
-                    name: 'abc',
-                    marketingName: 'abc',
-                    manufacturer: new Company(type: 'xx', name: null, brandname: null),
-                    version: new NullVersion(),
-                    bits: Bits::unknown,
-                ),
-            );
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -318,10 +308,11 @@ final class Detector6Test extends TestCase
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($engineCodename, $headerValue)
-            ->willThrowException($exception);
+            ->expects(self::never())
+            ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -348,20 +339,19 @@ final class Detector6Test extends TestCase
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode24(): void
     {
-        $hash                    = 'test-hash';
-        $headerValue             = 'abc';
-        $headers                 = ['xyz' => $headerValue];
-        $deviceCodeForLoader     = 'zz=xx yy';
-        $platformFromDevice      = 'ghi';
-        $platformCode            = 'def';
-        $platformVersion         = (new VersionBuilder())->set('13');
-        $completePlatformVersion = '13.0.0';
-        $engineVersion           = (new VersionBuilder())->set('2.3');
-        $completeEngineVersion   = '2.3.0';
+        $hash                  = 'test-hash';
+        $headerValue           = 'abc';
+        $headers               = ['xyz' => $headerValue];
+        $deviceCodeForLoader   = 'zz=xx yy';
+        $platformFromDevice    = 'ghi';
+        $platformCode          = Os::unknown;
+        $platformVersion       = (new VersionBuilder())->set('13');
+        $engineVersion         = (new VersionBuilder())->set('2.3');
+        $completeEngineVersion = '2.3.0';
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -427,7 +417,7 @@ final class Detector6Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformVersion')
-            ->with($platformCode)
+            ->with($platformCode->getKey())
             ->willReturn($platformVersion);
         $header
             ->expects(self::once())
@@ -443,7 +433,7 @@ final class Detector6Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getEngineVersion')
-            ->with(null)
+            ->with('unknown')
             ->willReturn($engineVersion);
 
         $filteredHeaders = ['xyz' => $header];
@@ -470,10 +460,10 @@ final class Detector6Test extends TestCase
                 'bits' => null,
             ],
             'os' => [
-                'name' => 'abc',
-                'marketingName' => 'abc',
-                'version' => $completePlatformVersion,
-                'manufacturer' => 'xx',
+                'name' => null,
+                'marketingName' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
                 'bits' => null,
             ],
             'client' => [
@@ -583,18 +573,11 @@ final class Detector6Test extends TestCase
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);
         $platformLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformCode, $headerValue)
-            ->willReturn(
-                new Os(
-                    name: 'abc',
-                    marketingName: 'abc',
-                    manufacturer: new Company(type: 'xx', name: null, brandname: null),
-                    version: new NullVersion(),
-                    bits: Bits::unknown,
-                ),
-            );
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -605,6 +588,9 @@ final class Detector6Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -631,20 +617,19 @@ final class Detector6Test extends TestCase
      */
     public function testGetBrowserWithoutCacheButWithPlatformCode25(): void
     {
-        $hash                    = 'test-hash';
-        $headerValue             = 'abc';
-        $headers                 = ['xyz' => $headerValue];
-        $deviceCodeForLoader     = 'zz=xx yy';
-        $platformFromDevice      = 'ghi';
-        $platformCode            = 'def';
-        $platformVersion         = (new VersionBuilder())->set('13');
-        $completePlatformVersion = '13.0.0';
-        $engineVersion           = (new VersionBuilder())->set('2.3');
-        $completeEngineVersion   = '2.3.0';
+        $hash                  = 'test-hash';
+        $headerValue           = 'abc';
+        $headers               = ['xyz' => $headerValue];
+        $deviceCodeForLoader   = 'zz=xx yy';
+        $platformFromDevice    = 'ghi';
+        $platformCode          = Os::unknown;
+        $platformVersion       = (new VersionBuilder())->set('13');
+        $engineVersion         = (new VersionBuilder())->set('2.3');
+        $completeEngineVersion = '2.3.0';
 
         $header = $this->createMock(HeaderInterface::class);
         $header
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('getValue')
             ->willReturn($headerValue);
         $header
@@ -710,7 +695,7 @@ final class Detector6Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformVersion')
-            ->with($platformCode)
+            ->with($platformCode->getKey())
             ->willReturn($platformVersion);
         $header
             ->expects(self::once())
@@ -726,7 +711,7 @@ final class Detector6Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getEngineVersion')
-            ->with(null)
+            ->with('unknown')
             ->willReturn($engineVersion);
 
         $filteredHeaders = ['xyz' => $header];
@@ -753,10 +738,10 @@ final class Detector6Test extends TestCase
                 'bits' => null,
             ],
             'os' => [
-                'name' => 'abc',
-                'marketingName' => 'abc',
-                'version' => $completePlatformVersion,
-                'manufacturer' => 'xx',
+                'name' => null,
+                'marketingName' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
                 'bits' => null,
             ],
             'client' => [
@@ -866,18 +851,11 @@ final class Detector6Test extends TestCase
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);
         $platformLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformCode, $headerValue)
-            ->willReturn(
-                new Os(
-                    name: 'abc',
-                    marketingName: 'abc',
-                    manufacturer: new Company(type: 'xx', name: null, brandname: null),
-                    version: new NullVersion(),
-                    bits: Bits::unknown,
-                ),
-            );
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -888,6 +866,9 @@ final class Detector6Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,

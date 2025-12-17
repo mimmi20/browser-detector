@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\SecChUaPlatform;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -20,6 +21,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use UaRequest\Exception\NotFoundException;
 use UaRequest\Header\PlatformCodeOnlyHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
@@ -32,9 +34,10 @@ final class SecChUaPlatformTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     * @throws NotFoundException
      */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, bool $hasPlatform, string | null $platform): void
+    public function testData(string $ua, bool $hasPlatform, Os $platform): void
     {
         $header = new PlatformCodeOnlyHeader(
             value: $ua,
@@ -112,10 +115,15 @@ final class SecChUaPlatformTest extends TestCase
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getEngineCode(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
-        );
+
+        try {
+            $header->getEngineCode();
+
+            $this->fail('Exception expected');
+        } catch (NotFoundException) {
+            // do nothing
+        }
+
         self::assertFalse(
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
@@ -128,35 +136,38 @@ final class SecChUaPlatformTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, bool|string|null>>
+     * @return list<list<bool|Os|string>>
      *
      * @throws void
      */
     public static function providerUa(): array
     {
         return [
-            ['Android', true, 'android'],
-            ['"Android"', true, 'android'],
-            ['"Windows"', true, 'windows'],
-            ['"Chrome OS"', true, 'chromeos'],
-            ['"Linux"', true, 'linux'],
-            ['"ChromeOS"', true, 'chromeos'],
-            ['"macOS"', true, 'mac os x'],
-            ['"Chromium OS"', true, 'chromeos'],
-            ['"Unknown"', false, null],
-            ['"Win32"', true, 'windows'],
-            ['"Mac OS X"', true, 'mac os x'],
-            ['\"Windows\"', true, 'windows'],
-            ['Lindows', true, 'lindows'],
-            ['\'Linux\'', true, 'linux'],
-            ['\'Linux x86_64\'', true, 'linux'],
-            ['"MacIntel"', true, 'mac os x'],
-            ['"Fuchsia"', true, 'fuchsia'],
-            ['""', false, null],
+            ['Android', true, Os::android],
+            ['"Android"', true, Os::android],
+            ['"Windows"', true, Os::windows],
+            ['"Chrome OS"', true, Os::chromeos],
+            ['"Linux"', true, Os::linux],
+            ['"ChromeOS"', true, Os::chromeos],
+            ['"macOS"', true, Os::macosx],
+            ['"Chromium OS"', true, Os::chromeos],
+            ['"Unknown"', false, Os::unknown],
+            ['"Win32"', true, Os::windows],
+            ['"Mac OS X"', true, Os::macosx],
+            ['\"Windows\"', true, Os::windows],
+            ['Lindows', true, Os::lindows],
+            ['\'Linux\'', true, Os::linux],
+            ['\'Linux x86_64\'', true, Os::linux],
+            ['"MacIntel"', true, Os::macosx],
+            ['"Fuchsia"', true, Os::fuchsia],
+            ['""', false, Os::unknown],
         ];
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws NotFoundException
+     */
     public function testHeaderWithDerivate(): void
     {
         $header = new PlatformCodeOnlyHeader(
@@ -165,12 +176,15 @@ final class SecChUaPlatformTest extends TestCase
         );
 
         self::assertSame(
-            'harmony-os',
+            Os::harmonyos,
             $header->getPlatformCode('HarmonyOS'),
         );
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws NotFoundException
+     */
     public function testHeaderWithDerivate2(): void
     {
         $header = new PlatformCodeOnlyHeader(
@@ -179,7 +193,7 @@ final class SecChUaPlatformTest extends TestCase
         );
 
         self::assertSame(
-            'android',
+            Os::android,
             $header->getPlatformCode('x'),
         );
     }

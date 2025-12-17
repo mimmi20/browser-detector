@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformCodeInterface;
 
 use function mb_strtolower;
@@ -43,13 +45,13 @@ final class XRequestedWithPlatformCode implements PlatformCodeInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
         // see also vendor/whichbrowser/parser/data/id-android.php
         // see also vendor/matomo/device-detector/regexes/client/hints/apps.yml
         return match (mb_strtolower($value)) {
-            'org.lineageos.jelly' => 'lineageos',
-            default => null,
+            'org.lineageos.jelly' => Os::lineageos,
+            default => Os::unknown,
         };
     }
 }

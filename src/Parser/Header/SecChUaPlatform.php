@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformCodeInterface;
 
 use function in_array;
@@ -32,22 +34,17 @@ final class SecChUaPlatform implements PlatformCodeInterface
         return !in_array($code, ['', 'unknown'], true);
     }
 
-    /**
-     * @return non-empty-string|null
-     *
-     * @throws void
-     */
+    /** @throws void */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
         $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
         if ($derivate !== null) {
-            $derivate     = mb_strtolower($derivate);
-            $derivateCode = $this->getCode($derivate);
+            $derivateCode = $this->getCode(mb_strtolower($derivate));
 
-            if ($derivateCode !== null) {
+            if ($derivateCode !== Os::unknown) {
                 return $derivateCode;
             }
         }
@@ -55,21 +52,20 @@ final class SecChUaPlatform implements PlatformCodeInterface
         return $this->getCode($code);
     }
 
-    /**
-     * @return non-empty-string|null
-     *
-     * @throws void
-     */
-    private function getCode(string $code): string | null
+    /** @throws void */
+    private function getCode(string $code): OsInterface
     {
         return match ($code) {
-            'android', 'linux', 'chromeos', 'lindows', 'fuchsia' => $code,
-            'macos', 'mac os x', 'macintel' => 'mac os x',
-            'chrome os', 'chromium os' => 'chromeos',
-            'windows', 'win32' => 'windows',
-            'harmonyos' => 'harmony-os',
-            'linux x86_64' => 'linux',
-            default => null,
+            'android' => Os::android,
+            'chromeos' => Os::chromeos,
+            'lindows' => Os::lindows,
+            'fuchsia' => Os::fuchsia,
+            'macos', 'mac os x', 'macintel' => Os::macosx,
+            'chrome os', 'chromium os' => Os::chromeos,
+            'windows', 'win32' => Os::windows,
+            'harmonyos' => Os::harmonyos,
+            'linux', 'linux x86_64' => Os::linux,
+            default => Os::unknown,
         };
     }
 }

@@ -14,6 +14,8 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Collection\Headers;
+use BrowserDetector\Data\Os;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
@@ -42,6 +44,7 @@ use UaResult\Device\Display;
 use UnexpectedValueException;
 
 #[CoversClass(Detector::class)]
+#[CoversClass(Headers::class)]
 final class Detector3Test extends TestCase
 {
     /**
@@ -61,7 +64,7 @@ final class Detector3Test extends TestCase
         $headers             = ['xyz' => $headerValue];
         $deviceCodeForLoader = 'lg=lg lm-g710';
         $platformFromDevice  = 'android';
-        $platformCode        = 'linux';
+        $platformCode        = Os::linux;
         $platformVersion     = (new VersionBuilder())->set('2.4.5.6');
 
         $exception = new NotFoundException('device not found');
@@ -132,7 +135,7 @@ final class Detector3Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformVersion')
-            ->with($platformCode)
+            ->with($platformCode->getKey())
             ->willReturn($platformVersion);
         $header
             ->expects(self::once())
@@ -287,8 +290,11 @@ final class Detector3Test extends TestCase
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);
         $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
             ->expects(self::once())
-            ->method('load')
+            ->method('loadFromOs')
             ->with($platformCode, $headerValue)
             ->willThrowException($exception);
 
@@ -301,6 +307,9 @@ final class Detector3Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -523,6 +532,9 @@ final class Detector3Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -535,6 +547,9 @@ final class Detector3Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -673,6 +688,9 @@ final class Detector3Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -683,6 +701,9 @@ final class Detector3Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -900,6 +921,9 @@ final class Detector3Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -910,6 +934,9 @@ final class Detector3Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,

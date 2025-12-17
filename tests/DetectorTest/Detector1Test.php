@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Collection\Headers;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use PHPUnit\Event\NoPreviousThrowableException;
@@ -33,6 +34,7 @@ use UaResult\Device\Architecture;
 use UnexpectedValueException;
 
 #[CoversClass(Detector::class)]
+#[CoversClass(Headers::class)]
 final class Detector1Test extends TestCase
 {
     /**
@@ -183,6 +185,9 @@ final class Detector1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -193,6 +198,9 @@ final class Detector1Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -409,6 +417,9 @@ final class Detector1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -419,6 +430,9 @@ final class Detector1Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -638,6 +652,9 @@ final class Detector1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -648,6 +665,9 @@ final class Detector1Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -866,6 +886,9 @@ final class Detector1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -876,6 +899,9 @@ final class Detector1Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,

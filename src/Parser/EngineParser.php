@@ -13,9 +13,12 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
+use BrowserDetector\Data\Engine;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
+use UaData\EngineInterface;
 use UaParser\EngineParserInterface;
+use UnexpectedValueException;
 
 final readonly class EngineParser implements EngineParserInterface
 {
@@ -33,8 +36,14 @@ final readonly class EngineParser implements EngineParserInterface
      * @throws void
      */
     #[Override]
-    public function parse(string $useragent): string
+    public function parse(string $useragent): EngineInterface
     {
-        return $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
+        $code = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
+
+        try {
+            return Engine::fromName($code);
+        } catch (UnexpectedValueException) {
+            return Engine::unknown;
+        }
     }
 }

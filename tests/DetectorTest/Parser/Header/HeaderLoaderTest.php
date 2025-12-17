@@ -29,8 +29,8 @@ use UaParser\DeviceParserInterface;
 use UaParser\EngineParserInterface;
 use UaParser\PlatformParserInterface;
 use UaRequest\Constants;
+use UaRequest\Exception\NotFoundException;
 use UaRequest\Header\HeaderInterface;
-use UaRequest\NotFoundException;
 
 use function sprintf;
 
@@ -74,11 +74,17 @@ final class HeaderLoaderTest extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
 
@@ -143,11 +149,17 @@ final class HeaderLoaderTest extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
 
@@ -208,11 +220,17 @@ final class HeaderLoaderTest extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
 

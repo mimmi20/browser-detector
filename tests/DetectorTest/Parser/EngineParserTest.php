@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser;
 
+use BrowserDetector\Data\Engine;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -43,6 +44,6 @@ final class EngineParserTest extends TestCase
         $parser       = new EngineParser($fileParser);
         $parserResult = $parser->parse($useragent);
 
-        self::assertSame($mode, $parserResult);
+        self::assertSame(Engine::unknown, $parserResult);
     }
 }

@@ -135,7 +135,7 @@ parameters:
     -
       identifier: throws.unusedType
       paths:
-        - src/Detector.php
+        - src/Collection/Headers.php
     -
       identifier: catch.neverThrown
       paths:

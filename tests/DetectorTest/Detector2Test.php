@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Collection\Headers;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
@@ -46,6 +47,7 @@ use function assert;
 use function sprintf;
 
 #[CoversClass(Detector::class)]
+#[CoversClass(Headers::class)]
 final class Detector2Test extends TestCase
 {
     /**
@@ -251,6 +253,9 @@ final class Detector2Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -261,6 +266,9 @@ final class Detector2Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -289,7 +297,7 @@ final class Detector2Test extends TestCase
         $hash                = 'test-hash';
         $headers             = ['xyz' => 'abc'];
         $deviceCodeForLoader = 'lg=lg lm-g710';
-        $platformFromDevice  = 'android';
+        $platformFromDevice  = \BrowserDetector\Data\Os::android;
 
         $header = $this->createMock(HeaderInterface::class);
         $header
@@ -495,7 +503,7 @@ final class Detector2Test extends TestCase
                         simCount: null,
                         bits: Bits::unknown,
                     ),
-                    os: $platformFromDevice,
+                    os: $platformFromDevice->getKey(),
                 ),
             );
 
@@ -508,8 +516,11 @@ final class Detector2Test extends TestCase
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);
         $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
             ->expects(self::once())
-            ->method('load')
+            ->method('loadFromOs')
             ->with($platformFromDevice, '')
             ->willReturn(
                 new Os(
@@ -530,6 +541,9 @@ final class Detector2Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -774,6 +788,9 @@ final class Detector2Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -784,6 +801,9 @@ final class Detector2Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,

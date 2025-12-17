@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformCodeInterface;
 
 use function mb_strtolower;
@@ -34,7 +36,7 @@ final class XPuffinUaPlatformCode implements PlatformCodeInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
         $matches = [];
 
@@ -42,11 +44,12 @@ final class XPuffinUaPlatformCode implements PlatformCodeInterface
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'iphone os' => 'ios',
-                default => $code,
+                'iphone os' => Os::ios,
+                'android' => Os::android,
+                default => Os::unknown,
             };
         }
 
-        return null;
+        return Os::unknown;
     }
 }

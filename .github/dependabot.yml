@@ -66,7 +66,14 @@ updates:
       prefix: "github-actions (master)"
 
     ignore:
-      - dependency-name: "mimmi20/ci"
+      - dependency-name: "mimmi20/ci/.github/workflows/validate.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/cleanup-cache.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/install.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/analytics.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/test.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/review-dependency.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/lint-actions.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/sync-labels.yml"
       - dependency-name: "release-drafter/release-drafter"
 
     # Disable rebasing for all pull requests

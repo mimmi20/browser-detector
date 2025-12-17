@@ -13,16 +13,18 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
+use UnexpectedValueException;
 
 use function assert;
 use function is_int;
 use function mb_strpos;
-use function mb_strtolower;
 use function mb_substr;
 use function mb_trim;
 
@@ -43,13 +45,32 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
     #[Override]
     public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
     {
+        try {
+            $os = Os::fromName((string) $code);
+        } catch (UnexpectedValueException) {
+            $os = Os::unknown;
+        }
+
+        return $this->getVersion($value, $os);
+    }
+
+    /** @throws VersionContainsDerivateException */
+    #[Override]
+    public function getPlatformVersionWithOs(string $value, OsInterface $os): VersionInterface
+    {
+        return $this->getVersion($value, $os);
+    }
+
+    /** @throws VersionContainsDerivateException */
+    private function getVersion(string $value, OsInterface $os): VersionInterface
+    {
         $value = mb_trim($value, '"\\\'');
 
         if ($value === '') {
             return new ForcedNullVersion();
         }
 
-        if ($code === null || mb_strtolower($code) !== 'windows') {
+        if ($os === Os::unknown || $os !== Os::windows) {
             $derivatePosition = mb_strpos($value, ';');
 
             assert($derivatePosition === false || is_int($derivatePosition));

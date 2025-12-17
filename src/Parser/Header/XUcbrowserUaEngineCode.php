@@ -13,8 +13,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use Override;
+use UaData\EngineInterface;
 use UaParser\EngineCodeInterface;
+use UnexpectedValueException;
 
 use function mb_strtolower;
 use function preg_match;
@@ -30,19 +33,20 @@ final class XUcbrowserUaEngineCode implements EngineCodeInterface
 
     /** @throws void */
     #[Override]
-    public function getEngineCode(string $value): string | null
+    public function getEngineCode(string $value): EngineInterface
     {
         $matches = [];
 
         if (preg_match('/(?<!o)re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $value, $matches)) {
             $code = mb_strtolower($matches['engine']);
 
-            return match ($code) {
-                'applewebkit' => 'webkit',
-                default => $code,
-            };
+            try {
+                return Engine::fromName($code);
+            } catch (UnexpectedValueException) {
+                return Engine::unknown;
+            }
         }
 
-        return null;
+        return Engine::unknown;
     }
 }

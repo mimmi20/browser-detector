@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\UseragentClientCode;
 use BrowserDetector\Parser\Header\UseragentClientVersion;
 use BrowserDetector\Parser\Header\UseragentDeviceCode;
@@ -80,12 +81,12 @@ final class Useragent1Test extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        string | null $platformCode,
+        Os $platformCode,
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
         string $engineUa,
-        string | null $engineCode,
+        \BrowserDetector\Data\Engine $engineCode,
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
@@ -99,7 +100,7 @@ final class Useragent1Test extends TestCase
             ->expects(self::never())
             ->method('parse')
             ->with($ua)
-            ->willReturn('');
+            ->willReturn(Os::unknown);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -124,6 +125,9 @@ final class Useragent1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
@@ -137,6 +141,9 @@ final class Useragent1Test extends TestCase
                     version: (new VersionBuilder())->set((string) $engineVersion),
                 ),
             );
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
@@ -292,7 +299,7 @@ final class Useragent1Test extends TestCase
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $engineCode === '' ? null : $engineCode,
+            $engineCode,
             $header->getEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -318,11 +325,11 @@ final class Useragent1Test extends TestCase
     }
 
     /**
-     * @return array<int, array<string, bool|string|null>>
+     * @return array<int, array<string, bool|\BrowserDetector\Data\Engine|Os|string|null>>
      *
      * @throws void
      *
-     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+	 * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa(): array
     {
@@ -338,12 +345,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'android',
+                'platformCode' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => 'pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -358,12 +365,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'symbian',
+                'platformCode' => Os::symbianOs,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -378,12 +385,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'java',
+                'platformCode' => Os::javaos,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -398,12 +405,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'android',
+                'platformCode' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -418,12 +425,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'windows phone',
+                'platformCode' => Os::windowsphone,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -438,12 +445,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'windows phone',
+                'platformCode' => Os::windowsphone,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -458,12 +465,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'ios',
+                'platformCode' => Os::ios,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -478,12 +485,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'ios',
+                'platformCode' => Os::ios,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -498,12 +505,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => null,
+                'platformCode' => Os::unknown,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -532,12 +539,12 @@ final class Useragent1Test extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        string | null $platformCode,
+        Os $platformCode,
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
         string $engineUa,
-        string | null $engineCode,
+        \BrowserDetector\Data\Engine $engineCode,
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
@@ -553,7 +560,7 @@ final class Useragent1Test extends TestCase
             ->expects(self::never())
             ->method('parse')
             ->with($ua)
-            ->willReturn('');
+            ->willReturn(Os::unknown);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -578,6 +585,9 @@ final class Useragent1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
@@ -591,6 +601,9 @@ final class Useragent1Test extends TestCase
                     version: (new VersionBuilder())->set((string) $engineVersion),
                 ),
             );
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
@@ -746,7 +759,7 @@ final class Useragent1Test extends TestCase
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $engineCode === '' ? null : $engineCode,
+            $engineCode,
             $header->getEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -772,11 +785,11 @@ final class Useragent1Test extends TestCase
     }
 
     /**
-     * @return array<int, array<string, bool|string|null>>
+     * @return array<int, array<string, bool|\BrowserDetector\Data\Engine|Os|string|null>>
      *
      * @throws void
      *
-     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+	 * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public static function providerUa2(): array
     {
@@ -792,12 +805,12 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => null,
+                'platformCode' => Os::unknown,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
                 'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],

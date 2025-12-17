@@ -13,10 +13,12 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
+use UaData\OsInterface;
 use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -58,6 +60,29 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
     /** @throws void */
     #[Override]
     public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
+    {
+        try {
+            $os = Os::fromName((string) $code);
+        } catch (UnexpectedValueException) {
+            $os = Os::unknown;
+        }
+
+        return $this->getVersion($value, $os);
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    #[Override]
+    public function getPlatformVersionWithOs(string $value, OsInterface $os): VersionInterface
+    {
+        return $this->getVersion($value, $os);
+    }
+
+    /** @throws void */
+    private function getVersion(string $value, OsInterface $os): VersionInterface
     {
         try {
             $normalizedValue = $this->normalizer->normalize($value);
@@ -114,16 +139,16 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             return $this->setVersion($detectedVersion);
         }
 
-        if ($code === null) {
-            $code = $this->platformParser->parse($normalizedValue);
+        if ($os === Os::unknown) {
+            $os = $this->platformParser->parse($normalizedValue);
 
-            if ($code === '') {
+            if ($os === Os::unknown) {
                 return new ForcedNullVersion();
             }
         }
 
         try {
-            $platform = $this->platformLoader->load($code, $normalizedValue);
+            $platform = $this->platformLoader->loadFromOs($os, $normalizedValue);
         } catch (NotFoundException) {
             return new NullVersion();
         }

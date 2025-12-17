@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use Override;
+use UaData\OsInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformCodeInterface;
@@ -47,28 +49,22 @@ final readonly class XUcbrowserDeviceUaPlatformCode implements PlatformCodeInter
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
         if ($value === '?') {
-            return null;
+            return Os::unknown;
         }
 
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
-            return null;
+            return Os::unknown;
         }
 
         if ($normalizedValue === '' || $normalizedValue === null) {
-            return null;
+            return Os::unknown;
         }
 
-        $code = $this->platformParser->parse($normalizedValue);
-
-        if ($code === '') {
-            return null;
-        }
-
-        return $code;
+        return $this->platformParser->parse($normalizedValue);
     }
 }

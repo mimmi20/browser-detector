@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
+use BrowserDetector\Collection\Headers;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
@@ -44,6 +45,7 @@ use UaResult\Os\Os;
 use UnexpectedValueException;
 
 #[CoversClass(Detector::class)]
+#[CoversClass(Headers::class)]
 final class Detector4Test extends TestCase
 {
     /**
@@ -249,6 +251,9 @@ final class Detector4Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -259,6 +264,9 @@ final class Detector4Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -290,10 +298,10 @@ final class Detector4Test extends TestCase
         $headers                 = ['xyz' => $headerValue];
         $deviceCodeForLoader     = 'apple=apple ipad';
         $platformFromDevice      = 'ios';
-        $platformCode            = 'ios';
+        $platformCode            = \BrowserDetector\Data\Os::ios;
         $platformVersion         = (new VersionBuilder())->set('13');
         $completePlatformVersion = '13.0.0';
-        $engineCode              = 'webkit';
+        $engineCode              = \BrowserDetector\Data\Engine::webkit;
 
         $header = $this->createMock(HeaderInterface::class);
         $header
@@ -355,7 +363,7 @@ final class Detector4Test extends TestCase
             ->expects(self::once())
             ->method('getPlatformCode')
             ->with(null)
-            ->willReturn(null);
+            ->willReturn(\BrowserDetector\Data\Os::unknown);
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
@@ -363,7 +371,7 @@ final class Detector4Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformVersion')
-            ->with($platformCode)
+            ->with($platformCode->getKey())
             ->willReturn($platformVersion);
         $header
             ->expects(self::never())
@@ -516,8 +524,11 @@ final class Detector4Test extends TestCase
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);
         $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
             ->expects(self::once())
-            ->method('load')
+            ->method('loadFromOs')
             ->with($platformCode, $headerValue)
             ->willReturn(
                 new Os(
@@ -536,8 +547,11 @@ final class Detector4Test extends TestCase
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
+            ->expects(self::never())
+            ->method('load');
+        $engineLoader
             ->expects(self::once())
-            ->method('load')
+            ->method('loadFromEngine')
             ->with($engineCode)
             ->willReturn(
                 new Engine(
@@ -577,10 +591,10 @@ final class Detector4Test extends TestCase
         $headers                 = ['xyz' => $headerValue];
         $deviceCodeForLoader     = 'apple=apple ipad';
         $platformFromDevice      = 'ios';
-        $platformCode            = 'ios';
+        $platformCode            = \BrowserDetector\Data\Os::ios;
         $platformVersion         = (new VersionBuilder())->set('14');
         $completePlatformVersion = '14.0.0';
-        $engineCode              = 'webkit';
+        $engineCode              = \BrowserDetector\Data\Engine::webkit;
 
         $header = $this->createMock(HeaderInterface::class);
         $header
@@ -642,7 +656,7 @@ final class Detector4Test extends TestCase
             ->expects(self::once())
             ->method('getPlatformCode')
             ->with(null)
-            ->willReturn(null);
+            ->willReturn(\BrowserDetector\Data\Os::unknown);
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
@@ -650,7 +664,7 @@ final class Detector4Test extends TestCase
         $header
             ->expects(self::once())
             ->method('getPlatformVersion')
-            ->with($platformCode)
+            ->with($platformCode->getKey())
             ->willReturn($platformVersion);
         $header
             ->expects(self::never())
@@ -803,8 +817,11 @@ final class Detector4Test extends TestCase
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);
         $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
             ->expects(self::once())
-            ->method('load')
+            ->method('loadFromOs')
             ->with($platformCode, $headerValue)
             ->willReturn(
                 new Os(
@@ -823,8 +840,11 @@ final class Detector4Test extends TestCase
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
+            ->expects(self::never())
+            ->method('load');
+        $engineLoader
             ->expects(self::once())
-            ->method('load')
+            ->method('loadFromEngine')
             ->with($engineCode)
             ->willReturn(
                 new Engine(

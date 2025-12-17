@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\UaOsPlatformCode;
 use BrowserDetector\Parser\Header\UaOsPlatformVersion;
 use BrowserDetector\Version\ForcedNullVersion;
@@ -22,6 +23,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use UaRequest\Exception\NotFoundException;
 use UaRequest\Header\PlatformHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
@@ -44,7 +46,7 @@ final class UaOsTest extends TestCase
     public function testData(
         string $ua,
         bool $hasPlatformInfo,
-        string | null $platformCode,
+        Os $platformCode,
         bool $hasPlatformVersion,
         string | null $platformVersion,
     ): void {
@@ -136,10 +138,15 @@ final class UaOsTest extends TestCase
         }
 
         self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getEngineCode(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
-        );
+
+        try {
+            $header->getEngineCode();
+
+            $this->fail('Exception expected');
+        } catch (NotFoundException) {
+            // do nothing
+        }
+
         self::assertFalse(
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
@@ -152,15 +159,15 @@ final class UaOsTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, bool|string|null>>
+     * @return list<list<bool|Os|string|null>>
      *
      * @throws void
      */
     public static function providerUa(): array
     {
         return [
-            ['Windows CE (Smartphone) - Version 5.2', false, null, false, null],
-            ['Windows CE (Pocket PC) - Version 5.2', true, 'windows ce', true, '5.2.0'],
+            ['Windows CE (Smartphone) - Version 5.2', false, Os::unknown, false, null],
+            ['Windows CE (Pocket PC) - Version 5.2', true, Os::windowsce, true, '5.2.0'],
         ];
     }
 }

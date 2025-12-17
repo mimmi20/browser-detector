@@ -18,6 +18,8 @@ use BrowserDetector\Version\GoannaFactory;
 use BrowserDetector\Version\TridentFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use Override;
+use UaData\CompanyInterface;
+use UaData\EngineInterface;
 use UnexpectedValueException;
 
 use function mb_strtolower;
@@ -86,7 +88,7 @@ enum Engine: string implements EngineInterface
             'clecko' => self::clecko,
             'edge' => self::edge,
             'gecko' => self::gecko,
-            'webkit' => self::webkit,
+            'webkit', 'applewebkit' => self::webkit,
             'trident' => self::trident,
             'khtml' => self::khtml,
             'netfront' => self::netfront,
@@ -120,7 +122,7 @@ enum Engine: string implements EngineInterface
 
     /** @throws void */
     #[Override]
-    public function getManufacturer(): Company
+    public function getManufacturer(): CompanyInterface
     {
         return match ($this) {
             self::blackberry => Company::rim,

@@ -24,6 +24,7 @@ use UaParser\DeviceParserInterface;
 use UaParser\EngineParserInterface;
 use UaParser\PlatformParserInterface;
 use UaRequest\Constants;
+use UaRequest\Exception\NotFoundException;
 use UaRequest\Header\ClientHeader;
 use UaRequest\Header\DeviceCodeOnlyHeader;
 use UaRequest\Header\FullHeader;
@@ -42,7 +43,6 @@ use UaRequest\Header\XRequestedWith;
 use UaRequest\Header\XUcbrowserDeviceUa;
 use UaRequest\Header\XUcbrowserPhoneUa;
 use UaRequest\Headers;
-use UaRequest\NotFoundException;
 
 use function sprintf;
 

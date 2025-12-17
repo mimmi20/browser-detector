@@ -25,6 +25,8 @@ use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
 use Override;
+use UaData\CompanyInterface;
+use UaData\OsInterface;
 use UnexpectedValueException;
 
 use function mb_strtolower;
@@ -570,7 +572,7 @@ enum Os: string implements OsInterface
 
     /** @throws void */
     #[Override]
-    public function getManufacturer(): Company
+    public function getManufacturer(): CompanyInterface
     {
         return match ($this) {
             self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv => Company::google,

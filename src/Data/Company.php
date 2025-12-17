@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Data;
 
 use Override;
+use UaData\CompanyInterface;
 use UnexpectedValueException;
 
 use function mb_strtolower;
@@ -1232,6 +1233,12 @@ enum Company: string implements CompanyInterface
 
     case spring = 'Spring';
 
+    case gnome = 'GNOME';
+
+    case kde = 'KDE';
+
+    case gnu = 'GNU';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1846,6 +1853,9 @@ enum Company: string implements CompanyInterface
             'thenewyorktimes', 'the new york times company', 'new-york-times', 'the new york times' => self::theNewYorkTimes,
             'vishagroup', 'visha-group', 'visha group' => self::vishaGroup,
             'spring', 'spring (sg) pte. ltd.' => self::spring,
+            'gnome', 'the gnome project', 'the-gnome-project' => self::gnome,
+            'kde', 'kde e.v.' => self::kde,
+            'gnu' => self::gnu,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2025,6 +2035,8 @@ enum Company: string implements CompanyInterface
             self::ipro => 'Shenzhen Zhike Communication Co., Ltd',
             self::theNewYorkTimes => 'The New York Times Company',
             self::spring => 'Spring (SG) PTE. LTD.',
+            self::gnome => 'The GNOME Project',
+            self::kde => 'KDE e.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2194,6 +2206,7 @@ enum Company: string implements CompanyInterface
             self::wiseplayApps => 'wiseplay-apps',
             self::theNewYorkTimes => 'new-york-times',
             self::vishaGroup => 'visha-group',
+            self::gnome => 'the-gnome-project',
             default => $this->name,
         };
     }

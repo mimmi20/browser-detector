@@ -13,10 +13,12 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
+use UaData\EngineInterface;
 use UaLoader\EngineLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
@@ -59,6 +61,25 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
     public function getEngineVersion(string $value, string | null $code = null): VersionInterface
     {
         try {
+            $engine = Engine::fromName((string) $code);
+        } catch (UnexpectedValueException) {
+            $engine = Engine::unknown;
+        }
+
+        return $this->getVersion($value, $engine);
+    }
+
+    /** @throws void */
+    #[Override]
+    public function getEngineVersionWithEngine(string $value, EngineInterface $engine): VersionInterface
+    {
+        return $this->getVersion($value, $engine);
+    }
+
+    /** @throws void */
+    private function getVersion(string $value, EngineInterface $engine): VersionInterface
+    {
+        try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
             return new ForcedNullVersion();
@@ -95,22 +116,22 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
             return $this->setVersion($detectedVersion);
         }
 
-        if ($code === null) {
-            $code = $this->engineParser->parse($normalizedValue);
+        if ($engine === Engine::unknown) {
+            $engine = $this->engineParser->parse($normalizedValue);
 
-            if ($code === '') {
+            if ($engine === Engine::unknown) {
                 return new ForcedNullVersion();
             }
         }
 
         try {
-            $engine = $this->engineLoader->load($code, $normalizedValue);
+            $engineObj = $this->engineLoader->loadFromEngine($engine, $normalizedValue);
         } catch (UnexpectedValueException) {
             return new NullVersion();
         }
 
         try {
-            $version = $engine->getVersion()->getVersion();
+            $version = $engineObj->getVersion()->getVersion();
         } catch (UnexpectedValueException) {
             return new NullVersion();
         }
