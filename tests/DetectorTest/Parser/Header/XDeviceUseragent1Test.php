@@ -135,7 +135,7 @@ final class XDeviceUseragent1Test extends TestCase
         try {
             $header->getPlatformCode();
 
-            $this->fail('Exception expected');
+            self::fail('Exception expected');
         } catch (NotFoundException) {
             // do nothing
         }
@@ -154,7 +154,7 @@ final class XDeviceUseragent1Test extends TestCase
         try {
             $header->getEngineCode();
 
-            $this->fail('Exception expected');
+            self::fail('Exception expected');
         } catch (NotFoundException) {
             // do nothing
         }

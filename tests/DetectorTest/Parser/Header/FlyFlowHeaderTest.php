@@ -131,7 +131,7 @@ final class FlyFlowHeaderTest extends TestCase
         try {
             $header->getPlatformCode();
 
-            $this->fail('Exception expected');
+            self::fail('Exception expected');
         } catch (NotFoundException) {
             // do nothing
         }
@@ -150,7 +150,7 @@ final class FlyFlowHeaderTest extends TestCase
         try {
             $header->getEngineCode();
 
-            $this->fail('Exception expected');
+            self::fail('Exception expected');
         } catch (NotFoundException) {
             // do nothing
         }

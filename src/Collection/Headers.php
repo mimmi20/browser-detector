@@ -54,7 +54,7 @@ use function sprintf;
 
 final readonly class Headers
 {
-    /** @var array<non-empty-string, HeaderInterface> $headers */
+    /** @var array<non-empty-string, HeaderInterface> */
     private array $headers;
 
     /** @throws void */
@@ -120,23 +120,6 @@ final readonly class Headers
         return null;
     }
 
-    /** @throws void */
-    private function getEngineVersion(\UaData\EngineInterface $engine): VersionInterface
-    {
-        $headersWithEngineVersion = array_filter(
-            $this->headers,
-            static fn (HeaderInterface $header): bool => $header->hasEngineVersion(),
-        );
-
-        $engineVersionHeader = reset($headersWithEngineVersion);
-
-        if ($engineVersionHeader instanceof HeaderInterface) {
-            return $engineVersionHeader->getEngineVersion($engine->getKey());
-        }
-
-        return new NullVersion();
-    }
-
     /**
      * detect the engine data
      *
@@ -199,23 +182,6 @@ final readonly class Headers
         );
     }
 
-    /** @throws void */
-    private function getClientVersion(string | null $clientCodename): VersionInterface
-    {
-        $headersWithClientVersion = array_filter(
-            $this->headers,
-            static fn (HeaderInterface $header): bool => $header->hasClientVersion(),
-        );
-
-        $clientVersionHeader = reset($headersWithClientVersion);
-
-        if ($clientVersionHeader instanceof HeaderInterface) {
-            return $clientVersionHeader->getClientVersion($clientCodename);
-        }
-
-        return new NullVersion();
-    }
-
     /**
      * detect the client data
      *
@@ -273,23 +239,6 @@ final readonly class Headers
             ),
             engine: null,
         );
-    }
-
-    /** @throws VersionContainsDerivateException */
-    private function getPlatformVersion(\UaData\OsInterface $platform): VersionInterface
-    {
-        $headersWithPlatformVersion = array_filter(
-            $this->headers,
-            static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
-        );
-
-        $platformHeaderVersion = reset($headersWithPlatformVersion);
-
-        if ($platformHeaderVersion instanceof HeaderInterface) {
-            return $platformHeaderVersion->getPlatformVersion($platform->getKey());
-        }
-
-        return new NullVersion();
     }
 
     /**
@@ -411,6 +360,57 @@ final readonly class Headers
             ),
             os: null,
         );
+    }
+
+    /** @throws void */
+    private function getEngineVersion(\UaData\EngineInterface $engine): VersionInterface
+    {
+        $headersWithEngineVersion = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasEngineVersion(),
+        );
+
+        $engineVersionHeader = reset($headersWithEngineVersion);
+
+        if ($engineVersionHeader instanceof HeaderInterface) {
+            return $engineVersionHeader->getEngineVersion($engine->getKey());
+        }
+
+        return new NullVersion();
+    }
+
+    /** @throws void */
+    private function getClientVersion(string | null $clientCodename): VersionInterface
+    {
+        $headersWithClientVersion = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasClientVersion(),
+        );
+
+        $clientVersionHeader = reset($headersWithClientVersion);
+
+        if ($clientVersionHeader instanceof HeaderInterface) {
+            return $clientVersionHeader->getClientVersion($clientCodename);
+        }
+
+        return new NullVersion();
+    }
+
+    /** @throws VersionContainsDerivateException */
+    private function getPlatformVersion(\UaData\OsInterface $platform): VersionInterface
+    {
+        $headersWithPlatformVersion = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
+        );
+
+        $platformHeaderVersion = reset($headersWithPlatformVersion);
+
+        if ($platformHeaderVersion instanceof HeaderInterface) {
+            return $platformHeaderVersion->getPlatformVersion($platform->getKey());
+        }
+
+        return new NullVersion();
     }
 
     /** @throws void */
