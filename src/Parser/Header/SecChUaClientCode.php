@@ -51,7 +51,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'operamobile' => 'opera mobile',
             'huaweibrowser' => 'huawei-browser',
             'yandex' => 'yabrowser',
-            'microsoft edge' => 'edge mobile',
+            'microsoft edge' => 'edge',
             'google chrome' => 'chrome',
             'avastsecurebrowser' => 'avast secure browser',
             'wavebrowser' => 'wave-browser',

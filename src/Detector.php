@@ -213,7 +213,7 @@ final readonly class Detector implements DetectorInterface
                 'manufacturer' => $client->getManufacturer()->getKey(),
                 'type' => $client->getType()->getType(),
                 'isbot' => $client->getType()->isBot(),
-                'bits' => null,
+                'bits' => $headerCollection->getDeviceIsWow64() ? 32 : ($deviceBits === Bits::unknown ? null : $deviceBits->value),
             ],
             'engine' => [
                 'name' => $engine->getName(),

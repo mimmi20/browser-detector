@@ -48,6 +48,7 @@ use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 use function array_filter;
+use function array_last;
 use function assert;
 use function explode;
 use function reset;
@@ -121,6 +122,23 @@ final readonly class Headers
         }
 
         return Bits::unknown;
+    }
+
+    /** @throws void */
+    public function getDeviceIsWow64(): bool | null
+    {
+        $headersWithDeviceIsWow64 = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasDeviceIsWow64(),
+        );
+
+        $deviceIsWow64Header = reset($headersWithDeviceIsWow64);
+
+        if ($deviceIsWow64Header instanceof HeaderInterface) {
+            return $deviceIsWow64Header->getDeviceIsWow64();
+        }
+
+        return null;
     }
 
     /** @throws void */

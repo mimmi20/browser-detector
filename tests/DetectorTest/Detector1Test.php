@@ -812,7 +812,7 @@ final class Detector1Test extends TestCase
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
-                'bits' => null,
+                'bits' => $bits->value,
             ],
             'engine' => [
                 'name' => null,
