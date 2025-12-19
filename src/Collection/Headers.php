@@ -48,10 +48,10 @@ use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 use function array_filter;
+use function array_first;
 use function array_last;
 use function assert;
 use function explode;
-use function reset;
 use function sprintf;
 
 final readonly class Headers
@@ -79,7 +79,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasDeviceArchitecture(),
         );
 
-        $deviceArchitectureHeader = reset($headersWithDeviceArchitecture);
+        $deviceArchitectureHeader = array_first($headersWithDeviceArchitecture);
 
         if ($deviceArchitectureHeader instanceof HeaderInterface) {
             return $deviceArchitectureHeader->getDeviceArchitecture();
@@ -96,7 +96,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasDeviceFormFactor(),
         );
 
-        $deviceFormFactorsHeader = reset($headersWithDeviceFormFactors);
+        $deviceFormFactorsHeader = array_first($headersWithDeviceFormFactors);
 
         if ($deviceFormFactorsHeader instanceof HeaderInterface) {
             return array_last(
@@ -115,7 +115,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasDeviceBitness(),
         );
 
-        $deviceBitnessHeader = reset($headersWithDeviceBitness);
+        $deviceBitnessHeader = array_first($headersWithDeviceBitness);
 
         if ($deviceBitnessHeader instanceof HeaderInterface) {
             return $deviceBitnessHeader->getDeviceBitness();
@@ -132,7 +132,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasDeviceIsWow64(),
         );
 
-        $deviceIsWow64Header = reset($headersWithDeviceIsWow64);
+        $deviceIsWow64Header = array_first($headersWithDeviceIsWow64);
 
         if ($deviceIsWow64Header instanceof HeaderInterface) {
             return $deviceIsWow64Header->getDeviceIsWow64();
@@ -149,7 +149,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasDeviceIsMobile(),
         );
 
-        $deviceMobileHeader = reset($headersWithDeviceMobile);
+        $deviceMobileHeader = array_first($headersWithDeviceMobile);
 
         if ($deviceMobileHeader instanceof HeaderInterface) {
             return $deviceMobileHeader->getDeviceIsMobile();
@@ -175,7 +175,7 @@ final readonly class Headers
                 static fn (HeaderInterface $header): bool => $header->hasEngineCode(),
             );
 
-            $engineHeader = reset($headersWithEngineName);
+            $engineHeader = array_first($headersWithEngineName);
 
             if ($engineHeader instanceof HeaderInterface) {
                 try {
@@ -235,7 +235,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasClientCode(),
         );
 
-        $clientHeader = reset($headersWithClientCode);
+        $clientHeader = array_first($headersWithClientCode);
 
         if ($clientHeader instanceof HeaderInterface) {
             $clientCodename = $clientHeader->getClientCode();
@@ -293,7 +293,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
         );
 
-        $platformHeader = reset($headersWithPlatformCode);
+        $platformHeader = array_first($headersWithPlatformCode);
 
         if ($platformHeader instanceof HeaderInterface) {
             try {
@@ -358,7 +358,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasDeviceCode(),
         );
 
-        $deviceHeader   = reset($headersWithDeviceCode);
+        $deviceHeader   = array_first($headersWithDeviceCode);
         $deviceCodename = null;
 
         if ($deviceHeader instanceof HeaderInterface) {
@@ -408,7 +408,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasEngineVersion(),
         );
 
-        $engineVersionHeader = reset($headersWithEngineVersion);
+        $engineVersionHeader = array_first($headersWithEngineVersion);
 
         if ($engineVersionHeader instanceof HeaderInterface) {
             return $engineVersionHeader->getEngineVersion($engine->getKey());
@@ -425,7 +425,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasClientVersion(),
         );
 
-        $clientVersionHeader = reset($headersWithClientVersion);
+        $clientVersionHeader = array_first($headersWithClientVersion);
 
         if ($clientVersionHeader instanceof HeaderInterface) {
             return $clientVersionHeader->getClientVersion($clientCodename);
@@ -442,7 +442,7 @@ final readonly class Headers
             static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
         );
 
-        $platformHeaderVersion = reset($headersWithPlatformVersion);
+        $platformHeaderVersion = array_first($headersWithPlatformVersion);
 
         if ($platformHeaderVersion instanceof HeaderInterface) {
             return $platformHeaderVersion->getPlatformVersion($platform->getKey());
@@ -490,7 +490,7 @@ final readonly class Headers
     /** @throws void */
     private function getVersionForGeneric(
         \UaData\OsInterface &$platform,
-        HeaderInterface | false $platformHeader,
+        HeaderInterface | null $platformHeader,
     ): VersionInterface {
         try {
             return $this->getPlatformVersion($platform);

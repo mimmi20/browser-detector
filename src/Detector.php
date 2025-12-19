@@ -168,16 +168,12 @@ final readonly class Detector implements DetectorInterface
                 FormFactor::mobile => Type::Smartphone,
                 FormFactor::desktop => Type::Desktop,
                 FormFactor::watch => Type::SmartWatch,
-                FormFactor::tablet => $device->getSimCount() === 0 ? Type::Tablet : Type::FonePad,
                 FormFactor::automotive => Type::CarEntertainmentSystem,
                 FormFactor::xr => Type::Wearable,
-                default => Type::Unknown,
+                default => $device->getSimCount() === 0 ? Type::Tablet : Type::FonePad,
             };
 
-            $isMobile = match ($deviceFormFactor) {
-                FormFactor::mobile, FormFactor::watch, FormFactor::tablet, FormFactor::xr => true,
-                default => false,
-            };
+            $isMobile = $deviceType->isMobile();
         }
 
         return [
