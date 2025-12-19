@@ -33,7 +33,7 @@ use UnexpectedValueException;
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(Detector::class)]
 #[CoversClass(Headers::class)]
-final class DetectorTest extends TestCase
+final class DetectorIntegrationTest extends TestCase
 {
     /**
      * @param array<non-empty-string, non-empty-string> $headers
