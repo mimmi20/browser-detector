@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Collection\Headers;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use PHPUnit\Event\NoPreviousThrowableException;

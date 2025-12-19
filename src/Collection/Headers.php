@@ -40,6 +40,7 @@ use UaResult\Company\Company;
 use UaResult\Device\Architecture;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
+use UaResult\Device\FormFactor;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 use UaResult\Os\Os;
@@ -84,6 +85,25 @@ final readonly class Headers
         }
 
         return Architecture::unknown;
+    }
+
+    /** @throws void */
+    public function getDeviceFormFactor(): FormFactor
+    {
+        $headersWithDeviceFormFactors = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasDeviceFormFactor(),
+        );
+
+        $deviceFormFactorsHeader = reset($headersWithDeviceFormFactors);
+
+        if ($deviceFormFactorsHeader instanceof HeaderInterface) {
+            return array_last(
+                $deviceFormFactorsHeader->getDeviceFormFactor(),
+            ) ?? FormFactor::unknown;
+        }
+
+        return FormFactor::unknown;
     }
 
     /** @throws void */

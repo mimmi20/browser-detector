@@ -35,6 +35,7 @@ use UaRequest\Header\PlatformHeader;
 use UaRequest\Header\PlatformVersionOnlyHeader;
 use UaRequest\Header\SecChUaArch;
 use UaRequest\Header\SecChUaBitness;
+use UaRequest\Header\SecChUaFormFactors;
 use UaRequest\Header\SecChUaFullVersion;
 use UaRequest\Header\SecChUaMobile;
 use UaRequest\Header\XOperaminiPhoneUa;
@@ -112,6 +113,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 clientVersion: new SecChUaClientVersion(),
             ),
             Headers::HEADER_SEC_CH_UA_ARCH => new SecChUaArch(value: $value),
+            Headers::HEADER_SEC_CH_FORM_FACTORS => new SecChUaFormFactors(value: $value),
             Headers::HEADER_SEC_CH_UA_BITNESS => new SecChUaBitness(value: $value),
             Headers::HEADER_SEC_CH_UA_FULL_VERSION, Headers::HEADER_SEC_CH_UA_FULL_VERSION_LIST => new SecChUaFullVersion(
                 value: $value,
