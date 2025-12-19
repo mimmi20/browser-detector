@@ -47,7 +47,6 @@ use function assert;
 use function sprintf;
 
 #[CoversClass(Detector::class)]
-#[CoversClass(Headers::class)]
 final class Detector2Test extends TestCase
 {
     /**

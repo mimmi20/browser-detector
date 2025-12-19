@@ -34,7 +34,6 @@ use UaResult\Device\Architecture;
 use UnexpectedValueException;
 
 #[CoversClass(Detector::class)]
-#[CoversClass(Headers::class)]
 final class Detector1Test extends TestCase
 {
     /**
