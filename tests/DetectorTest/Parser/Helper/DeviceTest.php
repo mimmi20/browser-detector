@@ -1418,6 +1418,7 @@ final class DeviceTest extends TestCase
             ['SM-A725F', 'samsung=samsung sm-a725f'],
             ['SM-G990B', 'samsung=samsung sm-g990b'],
             ['SM-G990B2', 'samsung=samsung sm-g990b2'],
+            ['SAMSUNG SM-G990B2', 'samsung=samsung sm-g990b2'],
             ['SM-G990E', 'samsung=samsung sm-g990e'],
             ['SM-A125F', 'samsung=samsung sm-a125f'],
             ['SAMSUNG SM-A125F', 'samsung=samsung sm-a125f'],

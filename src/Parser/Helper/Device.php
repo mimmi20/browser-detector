@@ -1343,7 +1343,7 @@ final class Device implements DeviceInterface
             'sm-a326b' => 'samsung=samsung sm-a326b',
             'sm-a326u' => 'samsung=samsung sm-a326u',
             'sm-a725f' => 'samsung=samsung sm-a725f',
-            'sm-g990b2' => 'samsung=samsung sm-g990b2',
+            'sm-g990b2', 'samsung sm-g990b2' => 'samsung=samsung sm-g990b2',
             'sm-a125f', 'samsung sm-a125f' => 'samsung=samsung sm-a125f',
             'sm-a125m', 'samsung sm-a125m' => 'samsung=samsung sm-a125m',
             'sm-a125n', 'samsung sm-a125n' => 'samsung=samsung sm-a125n',
