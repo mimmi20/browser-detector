@@ -107,9 +107,8 @@ final class Detector2Test extends TestCase
             ->expects(self::never())
             ->method('getClientCode');
         $header
-            ->expects(self::once())
-            ->method('hasClientVersion')
-            ->willReturn(false);
+            ->expects(self::never())
+            ->method('hasClientVersion');
         $header
             ->expects(self::never())
             ->method('getClientVersion');
@@ -342,9 +341,8 @@ final class Detector2Test extends TestCase
             ->expects(self::never())
             ->method('getClientCode');
         $header
-            ->expects(self::once())
-            ->method('hasClientVersion')
-            ->willReturn(false);
+            ->expects(self::never())
+            ->method('hasClientVersion');
         $header
             ->expects(self::never())
             ->method('getClientVersion');
@@ -620,9 +618,8 @@ final class Detector2Test extends TestCase
             ->expects(self::never())
             ->method('getClientCode');
         $header
-            ->expects(self::once())
-            ->method('hasClientVersion')
-            ->willReturn(false);
+            ->expects(self::never())
+            ->method('hasClientVersion');
         $header
             ->expects(self::never())
             ->method('getClientVersion');

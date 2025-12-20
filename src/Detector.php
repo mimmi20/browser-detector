@@ -159,14 +159,18 @@ final readonly class Detector implements DetectorInterface
 
         $architecture = $headerCollection->getDeviceArchitecture();
         $deviceBits   = $headerCollection->getDeviceBitness();
+        $deviceType   = $device->getType();
 
-        if ($deviceFormFactor === FormFactor::unknown) {
-            $deviceType = $device->getType();
-            $isMobile   = $headerCollection->getDeviceIsMobile() ?? $deviceType->isMobile();
+        if ($deviceFormFactor === FormFactor::unknown || $deviceFormFactor === FormFactor::mobile) {
+            $isMobile = $headerCollection->getDeviceIsMobile() ?? $deviceType->isMobile();
+        } elseif ($deviceFormFactor === FormFactor::desktop) {
+            if (!$deviceType->isMobile()) {
+                $deviceType = Type::Desktop;
+            }
+
+            $isMobile = $deviceType->isMobile();
         } else {
             $deviceType = match ($deviceFormFactor) {
-                FormFactor::mobile => Type::Smartphone,
-                FormFactor::desktop => Type::Desktop,
                 FormFactor::watch => Type::SmartWatch,
                 FormFactor::automotive => Type::CarEntertainmentSystem,
                 FormFactor::xr => Type::Wearable,

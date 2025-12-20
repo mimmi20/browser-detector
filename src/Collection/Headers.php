@@ -50,6 +50,7 @@ use UnexpectedValueException;
 use function array_filter;
 use function array_first;
 use function array_last;
+use function array_map;
 use function assert;
 use function explode;
 use function sprintf;
@@ -227,24 +228,44 @@ final readonly class Headers
      */
     public function getClientData(): ClientDataInterface
     {
-        $clientCodename = null;
-        $clientVersion  = new NullVersion();
-
         $headersWithClientCode = array_filter(
             $this->headers,
             static fn (HeaderInterface $header): bool => $header->hasClientCode(),
         );
 
-        $clientHeader = array_first($headersWithClientCode);
+        $clientCodes = array_map(
+            static fn (HeaderInterface $clientHeader): string | null => $clientHeader->getClientCode(),
+            $headersWithClientCode,
+        );
 
-        if ($clientHeader instanceof HeaderInterface) {
-            $clientCodename = $clientHeader->getClientCode();
-        }
-
-        $clientVersion = $this->getClientVersion($clientCodename);
+        $clientCodename = array_first($clientCodes);
 
         if ($clientCodename !== null) {
+            switch ($clientCodename) {
+                case 'android webview':
+                    $lastCode = array_last($clientCodes);
+
+                    if ($lastCode !== null && $lastCode !== $clientCodename) {
+                        $clientCodename = $lastCode;
+                        $clientHeader   = array_last($headersWithClientCode);
+                    } else {
+                        $clientHeader = array_first($headersWithClientCode);
+                    }
+
+                    break;
+                default:
+                    $clientHeader = array_first($headersWithClientCode);
+
+                    break;
+            }
+
             assert($clientHeader instanceof HeaderInterface);
+
+            $clientVersions = $this->getClientVersions($clientCodename);
+            $clientVersion  = match ($clientCodename) {
+                'aloha-browser', 'opera touch' => $clientVersions['user-agent'],
+                default => array_first($clientVersions),
+            };
 
             try {
                 $clientData = $this->browserLoader->load(
@@ -252,7 +273,7 @@ final readonly class Headers
                     useragent: $clientHeader->getValue(),
                 );
 
-                if ($clientVersion->getVersion() !== null) {
+                if ($clientVersion?->getVersion() !== null) {
                     $client = $clientData->getClient();
 
                     return new ClientData(
@@ -271,7 +292,7 @@ final readonly class Headers
             client: new Browser(
                 name: null,
                 manufacturer: new Company(type: 'unknown', name: null, brandname: null),
-                version: $clientVersion,
+                version: new NullVersion(),
                 type: \UaBrowserType\Type::Unknown,
                 bits: Bits::unknown,
             ),
@@ -417,21 +438,24 @@ final readonly class Headers
         return new NullVersion();
     }
 
-    /** @throws void */
-    private function getClientVersion(string | null $clientCodename): VersionInterface
+    /**
+     * @return array<string, VersionInterface>
+     *
+     * @throws void
+     */
+    private function getClientVersions(string | null $clientCodename): array
     {
         $headersWithClientVersion = array_filter(
             $this->headers,
             static fn (HeaderInterface $header): bool => $header->hasClientVersion(),
         );
 
-        $clientVersionHeader = array_first($headersWithClientVersion);
-
-        if ($clientVersionHeader instanceof HeaderInterface) {
-            return $clientVersionHeader->getClientVersion($clientCodename);
-        }
-
-        return new NullVersion();
+        return array_map(
+            static fn (HeaderInterface $clientVersionHeader): VersionInterface => $clientVersionHeader->getClientVersion(
+                $clientCodename,
+            ),
+            $headersWithClientVersion,
+        );
     }
 
     /** @throws VersionContainsDerivateException */
