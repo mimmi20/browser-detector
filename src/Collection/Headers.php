@@ -53,6 +53,7 @@ use function array_last;
 use function array_map;
 use function assert;
 use function explode;
+use function is_string;
 use function sprintf;
 
 final readonly class Headers
@@ -238,19 +239,46 @@ final readonly class Headers
             $headersWithClientCode,
         );
 
-        $clientCodename = array_first($clientCodes);
+        $firstClientCodename = array_first($clientCodes);
 
-        if ($clientCodename !== null) {
-            switch ($clientCodename) {
+        if (is_string($firstClientCodename)) {
+            switch ($firstClientCodename) {
                 case 'android webview':
-                    $lastCode = array_last($clientCodes);
+                    $lastClientCodename = array_last($clientCodes);
 
-                    if ($lastCode !== null && $lastCode !== $clientCodename) {
-                        $clientCodename = $lastCode;
-                        $clientHeader   = array_last($headersWithClientCode);
+                    if (
+                        is_string($lastClientCodename)
+                        && $lastClientCodename !== $firstClientCodename
+                    ) {
+                        $firstClientCodename = $lastClientCodename;
+                        $clientHeader        = array_last($headersWithClientCode);
                     } else {
                         $clientHeader = array_first($headersWithClientCode);
                     }
+
+                    break;
+                case 'chromium':
+                    $lastClientCodename = array_last($clientCodes);
+                    $clientHeader       = array_first($headersWithClientCode);
+
+                    if (is_string($lastClientCodename)) {
+                        switch ($lastClientCodename) {
+                            case 'ecosia':
+                            case 'adblock browser':
+                                $firstClientCodename = $lastClientCodename;
+                                $clientHeader        = array_last($headersWithClientCode);
+
+                                break;
+                            default:
+                                // do nothing
+                        }
+                    }
+
+                    break;
+                case 'keplr-app':
+                case 'lookr-app':
+                case 'kimi-app':
+                    $clientHeader = array_last($headersWithClientCode);
 
                     break;
                 default:
@@ -261,15 +289,15 @@ final readonly class Headers
 
             assert($clientHeader instanceof HeaderInterface);
 
-            $clientVersions = $this->getClientVersions($clientCodename);
-            $clientVersion  = match ($clientCodename) {
-                'aloha-browser', 'opera touch' => $clientVersions['user-agent'],
+            $clientVersions = $this->getClientVersions($firstClientCodename);
+            $clientVersion  = match ($firstClientCodename) {
+                'aloha-browser', 'opera touch', 'adblock browser' => $clientVersions['user-agent'],
                 default => array_first($clientVersions),
             };
 
             try {
                 $clientData = $this->browserLoader->load(
-                    key: $clientCodename,
+                    key: $firstClientCodename,
                     useragent: $clientHeader->getValue(),
                 );
 
