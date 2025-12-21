@@ -2498,5 +2498,27 @@
       "search": null
     },
     "engine": null
+  },
+  "hd-video-player-all-formats": {
+    "name": "HD Video Player All Formats",
+    "manufacturer": "asd-dev",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "google-assistant": {
+    "name": "Google Assistant",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OPA"
+      ]
+    },
+    "engine": null
   }
 }

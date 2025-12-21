@@ -3663,6 +3663,7 @@
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -3715,7 +3716,9 @@
       "sec-ch-ua-full-version": "\"140.0.7339.16\"",
       "sec-ch-ua-bitness": "\"64\"",
       "sec-ch-ua-arch": "\"arm\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -3733,7 +3736,7 @@
         "size": null
       },
       "type": "smartphone",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "bits": 64
     },
@@ -3751,7 +3754,7 @@
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": "Blink",
@@ -3768,7 +3771,9 @@
       "sec-ch-ua-full-version": "\"140.0.7339.16\"",
       "sec-ch-ua-bitness": "\"64\"",
       "sec-ch-ua-arch": "\"arm\"",
+      "sec-ch-ua-form-factors": "desktop",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -3804,7 +3809,7 @@
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": "Blink",
@@ -3816,6 +3821,7 @@
     "headers": {
       "sec-ch-ua-platform": "Windows",
       "sec-ch-ua": "\"Chromium\";v=\"92\",\" Not A;Brand\";v=\"99\",\"Google Chrome\";v=\"92\",",
+      "sec-ch-ua-form-factors": "desktop",
       "sec-ch-ua-mobile": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
     },
@@ -4179,9 +4185,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {

@@ -3718,6 +3718,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'GNU',
                 'key' => 'gnu',
             ],
+            [
+                'type' => 'ASD Dev',
+                'name' => 'ASD Dev',
+                'brandname' => 'ASD Dev',
+                'key' => 'asd-dev',
+            ],
         ];
     }
 

@@ -1103,10 +1103,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
@@ -1338,96 +1338,6 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "7.0.2.1",
-      "manufacturer": "myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vodafone/1.0/V903SH/SHJ001 Browser/UP.Browser/7.0.2.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "V903SH",
-      "marketingName": "V903SH",
-      "manufacturer": "Sharp",
-      "brand": "vodafone",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "7.0.2.1",
-      "manufacturer": "myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SHARP-TQ-GX20/1.0 UP.Browser/6.2.0.1.185 (GUI) MMP/2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "TQ-GX20",
-      "marketingName": "TQ-GX20",
-      "manufacturer": "Sharp",
-      "brand": "Sharp",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.0.1.185",
       "manufacturer": "myriad",
       "type": "browser",
       "isbot": false,

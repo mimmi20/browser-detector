@@ -128,7 +128,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "106.0.0",
       "manufacturer": "Microsoft",
@@ -176,7 +176,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "106.0.0",
       "manufacturer": "Microsoft",
@@ -228,7 +228,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "105.0.0",
       "manufacturer": "Microsoft",
@@ -280,7 +280,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "105.0.0",
       "manufacturer": "Microsoft",
@@ -332,7 +332,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "104.0.0",
       "manufacturer": "Microsoft",
@@ -384,7 +384,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "103.0.0",
       "manufacturer": "Microsoft",
@@ -481,7 +481,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "106.0.0",
       "manufacturer": "Microsoft",
@@ -804,7 +804,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "108.0.0",
       "manufacturer": "Microsoft",
@@ -856,7 +856,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "108.0.0",
       "manufacturer": "Microsoft",
@@ -998,7 +998,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "109.0.0",
       "manufacturer": "Microsoft",
@@ -1046,7 +1046,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "109.0.0",
       "manufacturer": "Microsoft",
@@ -1280,7 +1280,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "112.0.0",
       "manufacturer": "Microsoft",
@@ -1469,7 +1469,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "114.0.0",
       "manufacturer": "Microsoft",
@@ -1568,7 +1568,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "114.0.0",
       "manufacturer": "Microsoft",
@@ -1622,7 +1622,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "115.0.0",
       "manufacturer": "Microsoft",
@@ -1675,7 +1675,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "111.0.0",
       "manufacturer": "Microsoft",
@@ -1728,7 +1728,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "117.0.0",
       "manufacturer": "Microsoft",
@@ -1782,7 +1782,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "117.0.0",
       "manufacturer": "Microsoft",
@@ -1836,7 +1836,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "118.0.0",
       "manufacturer": "Microsoft",
@@ -2025,7 +2025,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "121.0.0",
       "manufacturer": "Microsoft",
@@ -2298,7 +2298,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "103.0.0",
       "manufacturer": "Microsoft",
@@ -2441,7 +2441,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "131.0.0",
       "manufacturer": "Microsoft",
@@ -2494,7 +2494,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "133.0.0",
       "manufacturer": "Microsoft",
@@ -2877,7 +2877,9 @@
       "sec-ch-ua-full-version": "\"139.0.3405.102\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 EdgA/139.0.0.0"
     },
     "device": {
@@ -2907,7 +2909,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "139.0.0",
       "manufacturer": "Microsoft",
@@ -3110,7 +3112,9 @@
       "sec-ch-ua-full-version": "\"141.0.3537.99\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36 EdgA/141.0.0.0"
     },
     "device": {
@@ -3140,7 +3144,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "141.0.0",
       "manufacturer": "Microsoft",
@@ -3163,7 +3167,9 @@
       "sec-ch-ua-full-version": "\"141.0.3537.91\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36 EdgA/141.0.0.0"
     },
     "device": {
@@ -3193,7 +3199,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "141.0.0",
       "manufacturer": "Microsoft",
@@ -3261,7 +3267,9 @@
       "sec-ch-ua-full-version": "\"142.0.3595.93\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 EdgA/142.0.0.0"
     },
     "device": {
@@ -3291,7 +3299,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "142.0.0",
       "manufacturer": "Microsoft",
@@ -3314,7 +3322,9 @@
       "sec-ch-ua-full-version": "\"142.0.3595.93\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 EdgA/142.0.0.0"
     },
     "device": {
@@ -3344,7 +3354,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "142.0.0",
       "manufacturer": "Microsoft",
@@ -3367,7 +3377,9 @@
       "sec-ch-ua-full-version": "\"142.0.3595.93\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 EdgA/142.0.0.0"
     },
     "device": {
@@ -3397,7 +3409,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "142.0.0",
       "manufacturer": "Microsoft",

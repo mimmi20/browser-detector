@@ -1239,6 +1239,8 @@ enum Company: string implements CompanyInterface
 
     case gnu = 'GNU';
 
+    case asdDev = 'ASD Dev';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1856,6 +1858,7 @@ enum Company: string implements CompanyInterface
             'gnome', 'the gnome project', 'the-gnome-project' => self::gnome,
             'kde', 'kde e.v.' => self::kde,
             'gnu' => self::gnu,
+            'asddev', 'asd dev', 'asd-dev' => self::asdDev,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2207,6 +2210,7 @@ enum Company: string implements CompanyInterface
             self::theNewYorkTimes => 'new-york-times',
             self::vishaGroup => 'visha-group',
             self::gnome => 'the-gnome-project',
+            self::asdDev => 'asd-dev',
             default => $this->name,
         };
     }

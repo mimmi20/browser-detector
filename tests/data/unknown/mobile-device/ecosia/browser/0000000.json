@@ -314,7 +314,7 @@
       "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": "Blink",
@@ -592,7 +592,7 @@
       "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": "Blink",
@@ -609,7 +609,9 @@
       "sec-ch-ua-full-version": "\"129.0.6668.112\"",
       "sec-ch-ua-bitness": "\"64\"",
       "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 (Ecosia android@129.0.0.0)"
     },
     "device": {
@@ -627,7 +629,7 @@
         "size": null
       },
       "type": "mobile-device",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "bits": 64
     },
@@ -645,7 +647,7 @@
       "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": "Blink",
@@ -797,7 +799,9 @@
       "sec-ch-ua-full-version": "\"141.0.7390.70\"",
       "sec-ch-ua-bitness": "\"64\"",
       "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 (Ecosia android@141.0.0.0)"
     },
     "device": {
@@ -815,7 +819,7 @@
         "size": null
       },
       "type": "mobile-device",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "bits": 64
     },
@@ -833,7 +837,7 @@
       "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": "Blink",

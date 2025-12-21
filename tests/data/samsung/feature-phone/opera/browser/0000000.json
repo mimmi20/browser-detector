@@ -68,10 +68,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -227,51 +227,6 @@
   {
     "headers": {
       "user-agent": "SAMSUNG-GT-B7300C_CMCC/1.0 Opera 9.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-B7300",
-      "marketingName": "Omnia Lite",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": 3
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.5.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-GT-B7300Orange/BVII3 (Windows CE; Opera Mobi; U; en) Opera 9.5"
     },
     "device": {
       "architecture": null,
@@ -1148,10 +1103,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -1193,10 +1148,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -1351,96 +1306,6 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-i900/1.0 (compatible; MSIE 6.0; Windows CE; PPC) Opera 9.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-I900",
-      "marketingName": "Omnia",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.5.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-GT-i8000T Opera 9.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-I8000",
-      "marketingName": "Omnia II",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.5.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SAMSUNG-GT-B7620/1.0 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -1518,51 +1383,6 @@
       "name": "Opera Mobile",
       "modus": null,
       "version": "9.5.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera 9.80 (compatible; Windows CE 6.1; U; fr-FR) SAMSUNG-SGH-i900V/AEIB2"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-I900V",
-      "marketingName": "Omnia",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": "6.1.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.80.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,

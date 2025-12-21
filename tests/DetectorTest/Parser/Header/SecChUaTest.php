@@ -174,7 +174,7 @@ final class SecChUaTest extends TestCase
     {
         return [
             ['" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"', true, 'chrome', true, '99.0.0'],
-            ['" Not A;Brand";v="99", "Chromium";v="101"', false, null, false, null],
+            ['" Not A;Brand";v="99", "Chromium";v="101"', true, 'chromium', true, '101.0.0'],
             ['" Not A;Brand";v="99", "Chromium";v="102", "Microsoft Edge";v="102"', true, 'edge', true, '102.0.0'],
             ['" Not A;Brand";v="99", "Chromium";v="101", "Opera";v="101"', true, 'opera', true, '101.0.0'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "Yandex";v="22"', true, 'yabrowser', true, '22.0.0'],

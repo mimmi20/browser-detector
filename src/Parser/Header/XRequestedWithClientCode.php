@@ -375,6 +375,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.wecloud.lookr' => 'lookr-app',
             'com.canopy.vpn.filter.parent' => 'canopy-app',
             'ai.mainfunc.genspark' => 'genspark-app',
+            'com.rocks.music.videoplayer' => 'hd-video-player-all-formats',
             default => null,
         };
     }

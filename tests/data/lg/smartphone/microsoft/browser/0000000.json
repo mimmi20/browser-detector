@@ -1118,7 +1118,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": null,
       "manufacturer": "Microsoft",
@@ -1256,7 +1256,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "101.0.0",
       "manufacturer": "Microsoft",
@@ -1304,7 +1304,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "107.0.0",
       "manufacturer": "Microsoft",
@@ -1315,59 +1315,6 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"6.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"",
-      "sec-ch-ua-full-version": "\"109.0.1518.61\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36 Edg/109.0.1518.61"
-    },
-    "device": {
-      "architecture": "x86",
-      "deviceName": "Nexus 5",
-      "marketingName": "Nexus 5",
-      "manufacturer": "LG",
-      "brand": "Google",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": 64
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "Google",
-      "bits": 64
-    },
-    "client": {
-      "name": "Edge Mobile",
-      "modus": null,
-      "version": "109.0.0",
-      "manufacturer": "Microsoft",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "109.0.0.0",
       "manufacturer": "Google"
     }
   },

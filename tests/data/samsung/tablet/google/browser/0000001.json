@@ -2566,51 +2566,6 @@
   },
   {
     "headers": {
-      "user-agent": "Evernote Android/AM_70_451.1070103 (de_DE); Android/4.4.2; SM-T520/19;"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T520",
-      "marketingName": "Galaxy Tab Pro 10.1 Wi-Fi",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.0.4; GT-P7501 Build/IMM76D)"
     },
     "device": {
@@ -4321,7 +4276,52 @@
   },
   {
     "headers": {
-      "user-agent": "Bible (samsung GT-P5113 espresso10wifibby;Android 4.0.4;en_US)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-T820 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T820",
+      "marketingName": "Galaxy Tab S3 (9.7, Wi-Fi)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "57.0.2987.132",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; GT-P5113 Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -4345,33 +4345,33 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.0.4",
+      "version": "4.0.3",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Android Webkit",
+      "name": "Chrome WebView",
       "modus": null,
-      "version": null,
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "user-agent": "VKAndroidApp/3.2.1-196 (Android 3.2; SDK 13; armeabi-v7a; samsung GT-P6201; ru)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; GT-P3113 Build/IMM76L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-P6201",
-      "marketingName": "Galaxy Tab 7.0 Plus",
+      "deviceName": "GT-P3113",
+      "marketingName": "Galaxy Tab 2 7.0",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -4390,33 +4390,78 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "3.2.0",
+      "version": "4.0.4",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Android Webkit",
+      "name": "Chrome WebView",
       "modus": null,
-      "version": null,
+      "version": "30.0.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "user-agent": "VKAndroidApp/3.0.4-149 (Android 4.0.4; SDK 15; armeabi-v7a; samsung GT-P6800; ru)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SM-T110 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-P6800",
-      "marketingName": "Galaxy Tab 7.7",
+      "deviceName": "SM-T110",
+      "marketingName": "Galaxy Tab 3 Lite 7.0 Wi-Fi",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; en-us; GT-P7510 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-P7510",
+      "marketingName": "Galaxy Tab 10.1",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -4425,7 +4470,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 7.7
+        "size": 10.1
       },
       "type": "tablet",
       "ismobile": true,
@@ -4440,63 +4485,18 @@
       "bits": null
     },
     "client": {
-      "name": "Android Webkit",
+      "name": "Chrome WebView",
       "modus": null,
-      "version": null,
+      "version": "28.0.1500.94",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "VKAndroidApp/3.4-288 (Android 3.2; SDK 13; armeabi-v7a; samsung GT-P7300; ru)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-P7300",
-      "marketingName": "Galaxy Tab 8.9",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "3.2.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "28.0.1500.94",
+      "manufacturer": "Google"
     }
   }
 ]
