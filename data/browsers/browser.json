@@ -5583,5 +5583,27 @@
       ]
     },
     "engine": null
+  },
+  "proxy-browser": {
+    "name": "Proxy Browser",
+    "manufacturer": "ds-tools",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "\\[PB\\/"
+      ]
+    },
+    "engine": null
+  },
+  "browse-here": {
+    "name": "BrowseHere",
+    "manufacturer": "tcl",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "blink"
   }
 }

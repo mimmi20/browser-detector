@@ -66,6 +66,14 @@ final readonly class UseragentClientCode implements ClientCodeInterface
         $regexes = [
             '/pr\((?P<client>ucbrowser)(?:\/[\d.]+)?\);/i',
             '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ (?P<client>firefox)\/[\d.]+ kaios\/[\d.]+/i',
+            '/(?P<client>instagram) [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
+            '/(?P<client>virgin%20radio)\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
+            '/(?P<client>tivimate)\/[\d.]+ \([^);\/]+;/i',
+            '/(?P<client>pugpigbolt) [\d.]+ \(samsung, android [\d.]+\) on phone \(model [^)]+\)/i',
+            '/(?P<client>nrc audio)\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\) okhttp\/[\d.]+/i',
+            '/(?P<client>luminary)\/[\d.]+ \(android [\d.]+; [^);\/]+; /i',
+            '/(?P<client>lbc|heart)\/[\d.]+ android [\d.]+\/[^);\/]+/i',
+            '/(?P<client>emaudioplayer) [\d.]+ \([\d.]+\) \/ android [\d.]+ \/ [^);\/]+/i',
         ];
 
         $filtered = array_filter(
@@ -79,7 +87,16 @@ final readonly class UseragentClientCode implements ClientCodeInterface
 
                 preg_match($regex, $normalizedValue, $matches);
 
-                return mb_strtolower($matches['client'] ?? '');
+                $client = mb_strtolower($matches['client'] ?? '');
+
+                return match ($client) {
+                    'instagram' => 'instagram app',
+                    'virgin%20radio' => 'virgin-radio',
+                    'tivimate' => 'tivimate-app',
+                    'pugpigbolt' => 'pugpig-bolt',
+                    'nrc audio' => 'nrc-audio',
+                    default => $client,
+                };
             },
             $filtered,
         );
@@ -88,16 +105,6 @@ final readonly class UseragentClientCode implements ClientCodeInterface
 
         if ($code !== null && $code !== false && $code !== '') {
             return $code;
-        }
-
-        if (
-            preg_match(
-                '/(?P<client>instagram) [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
-                $normalizedValue,
-                $matches,
-            )
-        ) {
-            return 'instagram app';
         }
 
         try {

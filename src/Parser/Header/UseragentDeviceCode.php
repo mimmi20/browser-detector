@@ -82,8 +82,13 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/imoandroid\/[\d.]+; \d+; REL; (?P<devicecode>[^);\/]+)/i',
             '/tivimate\/[\d.]+ \((?P<devicecode>[^);\/]+);/i',
             '/; model: (?P<devicecode>[^);\/]+)\)/i',
-            '/lbc\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
+            '/(lbc|heart)\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
             '/mozilla\/[\d.]+ \(mobile; (?P<devicecode>[^;]+)(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
+            '/virgin%20radio\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \((?P<devicecode>[^)]+)\)/i',
+            '/pugpigbolt [\d.]+ \(samsung, android [\d.]+\) on phone \(model (?P<devicecode>[^)]+)\)/i',
+            '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
+            '/luminary\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^);\/]+); /i',
+            '/emaudioplayer [\d.]+ \([\d.]+\) \/ android [\d.]+ \/ (?P<devicecode>[^);\/]+)/i',
         ];
 
         $filtered = array_filter(

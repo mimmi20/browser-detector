@@ -3724,6 +3724,78 @@ final class CompanyTest extends TestCase
                 'brandname' => 'ASD Dev',
                 'key' => 'asd-dev',
             ],
+            [
+                'type' => 'DS tools',
+                'name' => 'DS tools',
+                'brandname' => 'DS tools',
+                'key' => 'ds-tools',
+            ],
+            [
+                'type' => 'NPR',
+                'name' => 'NPR',
+                'brandname' => 'NPR',
+                'key' => 'npr',
+            ],
+            [
+                'type' => 'Apps For Google',
+                'name' => 'Apps For Google',
+                'brandname' => 'Apps For Google',
+                'key' => 'apps-for-google',
+            ],
+            [
+                'type' => 'Italiaonline',
+                'name' => 'Italiaonline S.p.A.',
+                'brandname' => 'Italiaonline',
+                'key' => 'italiaonline',
+            ],
+            [
+                'type' => 'Telekom',
+                'name' => 'Deutsche Telekom AG',
+                'brandname' => 'Telekom',
+                'key' => 'telekom',
+            ],
+            [
+                'type' => 'Armobsoft',
+                'name' => 'Armobsoft FZE',
+                'brandname' => 'Armobsoft',
+                'key' => 'armobsoft',
+            ],
+            [
+                'type' => 'Kaldor',
+                'name' => 'Kaldor Ltd.',
+                'brandname' => 'Kaldor',
+                'key' => 'kaldor',
+            ],
+            [
+                'type' => 'Podverse',
+                'name' => 'Podverse',
+                'brandname' => 'Podverse',
+                'key' => 'podverse',
+            ],
+            [
+                'type' => 'Mediahuis NRC',
+                'name' => 'Mediahuis NRC',
+                'brandname' => 'Mediahuis NRC',
+                'key' => 'mediahuis-nrc',
+            ],
+            [
+                'type' => 'Global Media & Entertainment',
+                'name' => 'Global Media & Entertainment',
+                'brandname' => 'Global Media & Entertainment',
+                'key' => 'global-media-entertainment',
+            ],
+            [
+                'type' => 'Kajabi',
+                'name' => 'Kajabi',
+                'brandname' => 'Kajabi',
+                'key' => 'kajabi',
+            ],
+            [
+                'type' => 'iHeartMedia',
+                'name' => 'iHeartMedia Management Services, Inc.',
+                'brandname' => 'iHeartMedia',
+                'key' => 'iheart-media',
+            ],
         ];
     }
 

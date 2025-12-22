@@ -258,6 +258,7 @@ final readonly class Headers
 
                     break;
                 case 'chromium':
+                case 'chrome':
                     $lastClientCodename = array_last($clientCodes);
                     $clientHeader       = array_first($headersWithClientCode);
 
@@ -265,6 +266,7 @@ final readonly class Headers
                         switch ($lastClientCodename) {
                             case 'ecosia':
                             case 'adblock browser':
+                            case 'google-nest-hub':
                                 $firstClientCodename = $lastClientCodename;
                                 $clientHeader        = array_last($headersWithClientCode);
 
@@ -278,6 +280,12 @@ final readonly class Headers
                 case 'keplr-app':
                 case 'lookr-app':
                 case 'kimi-app':
+                case 'opera mini':
+                case 'baidu box app lite':
+                case 'baidu box app':
+                case 'nytimes-crossword':
+                case 'visha':
+                case 'search-craft':
                     $clientHeader = array_last($headersWithClientCode);
 
                     break;
@@ -291,7 +299,7 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($firstClientCodename);
             $clientVersion  = match ($firstClientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser' => $clientVersions['user-agent'],
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite' => $clientVersions['user-agent'],
                 default => array_first($clientVersions),
             };
 

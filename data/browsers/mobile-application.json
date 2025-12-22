@@ -232,6 +232,16 @@
     },
     "engine": null
   },
+  "msn-app": {
+    "name": "MSN",
+    "manufacturer": "microsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
   "spotify app": {
     "name": "Spotify",
     "manufacturer": "spotify",
@@ -2517,6 +2527,207 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPA"
+      ]
+    },
+    "engine": null
+  },
+  "virgin-radio": {
+    "name": "Virgin Radio",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Virgin Radio",
+        "Virgin%20Radio"
+      ]
+    },
+    "engine": null
+  },
+  "npr-app": {
+    "name": "NPR: National & Local News",
+    "manufacturer": "npr",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nprone_android"
+      ]
+    },
+    "engine": null
+  },
+  "youtube-music": {
+    "name": "Youtube Music",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.android\\.apps\\.youtube\\.music"
+      ]
+    },
+    "engine": null
+  },
+  "tencent-docs": {
+    "name": "Tencent Docs",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TencentDocs"
+      ]
+    },
+    "engine": null
+  },
+  "google-drive": {
+    "name": "Google Drive",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.Drive"
+      ]
+    },
+    "engine": null
+  },
+  "google-drive-shareextension": {
+    "name": "Google Drive ShareExtension",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.Drive\\.ShareExtension"
+      ]
+    },
+    "engine": null
+  },
+  "tivimate-app": {
+    "name": "TiviMate",
+    "manufacturer": "armobsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TiviMate"
+      ]
+    },
+    "engine": null
+  },
+  "pugpig-bolt": {
+    "name": "PugPig Bolt",
+    "manufacturer": "kaldor",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PugpigBolt"
+      ]
+    },
+    "engine": null
+  },
+  "podverse-app": {
+    "name": "Podverse - Podcast Player",
+    "manufacturer": "podverse",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "tivi-mate": {
+    "name": "TiviMate",
+    "manufacturer": "tcl",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "blink"
+  },
+  "nrc-audio": {
+    "name": "NRC Audio",
+    "manufacturer": "mediahuis-nrc",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NRC Audio"
+      ]
+    },
+    "engine": null
+  },
+  "luminary": {
+    "name": "Luminary",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Luminary"
+      ]
+    },
+    "engine": null
+  },
+  "lbc": {
+    "name": "LBC",
+    "manufacturer": "global-media-entertainment",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LBC"
+      ]
+    },
+    "engine": null
+  },
+  "kajabi-app": {
+    "name": "Kajabi",
+    "manufacturer": "kajabi",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kajabi"
+      ]
+    },
+    "engine": null
+  },
+  "iheart-radio": {
+    "name": "iHeartRadio",
+    "manufacturer": "iheart-media",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iHeartRadio"
+      ]
+    },
+    "engine": null
+  },
+  "heart": {
+    "name": "Heart",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heart"
+      ]
+    },
+    "engine": null
+  },
+  "emaudioplayer": {
+    "name": "EMAudioPlayer",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EMAudioPlayer"
       ]
     },
     "engine": null

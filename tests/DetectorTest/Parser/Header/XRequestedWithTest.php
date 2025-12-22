@@ -364,7 +364,7 @@ final class XRequestedWithTest extends TestCase
             ['com.ume.browser.northamerica', true, 'ume-browser', true, null, false, Os::unknown],
             ['com.ume.browser.newage', true, 'ume-browser', true, null, false, Os::unknown],
             ['com.wolvesinteractive.racinggo', true, 'racing-go', true, null, false, Os::unknown],
-            ['com.microsoft.amp.apps.bingnews', true, 'microsoft-start', true, null, false, Os::unknown],
+            ['com.microsoft.amp.apps.bingnews', true, 'msn-app', true, null, false, Os::unknown],
             ['com.litepure.browser.gp', true, 'pure-browser', true, null, false, Os::unknown],
             ['com.boatbrowser.free', true, 'boat-browser', true, null, false, Os::unknown],
             ['com.brother.mfc.brprint', true, 'brother-iprint-scan', true, null, false, Os::unknown],
@@ -549,6 +549,9 @@ final class XRequestedWithTest extends TestCase
             ['com.canopy.vpn.filter.parent', true, 'canopy-app', true, null, false, Os::unknown],
             ['ai.mainfunc.genspark', true, 'genspark-app', true, null, false, Os::unknown],
             ['com.rocks.music.videoplayer', true, 'hd-video-player-all-formats', true, null, false, Os::unknown],
+            ['proxy.browser.unblock.sites.proxybrowser.unblocksites', true, 'proxy-browser', true, null, false, Os::unknown],
+            ['com.google.android.apps.youtube.music', true, 'youtube-music', true, null, false, Os::unknown],
+            ['nl.nrc.audio', true, 'nrc-audio', true, null, false, Os::unknown],
         ];
     }
 }

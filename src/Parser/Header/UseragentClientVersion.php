@@ -29,7 +29,6 @@ use function array_filter;
 use function array_map;
 use function preg_match;
 use function reset;
-use function str_replace;
 
 final readonly class UseragentClientVersion implements ClientVersionInterface
 {
@@ -73,6 +72,13 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
             '/pr\([^\/]+\/(?P<version>[\d.]+)\);/i',
             '/instagram (?P<version>[\d.]+) android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/(?P<version>[\d.]+) kaios\/[\d.]+/i',
+            '/virgin%20radio\\/(?P<version>[\d.]+) \\/ \\(linux; android [\d.]+\\) exoplayerlib\\/[\d.]+ \\/ samsung \\(/i',
+            '/tivimate\/(?P<version>[\d.]+) \([^);\/]+;/i',
+            '/pugpigbolt (?P<version>[\d.]+) \\(samsung, android [\d.]+\\) on phone \\(model [^)]+\\)/i',
+            '/nrc audio\\/(?P<version>[\d.]+) \\(nl\\.nrc\\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\\) okhttp\\/[\d.]+/i',
+            '/luminary\\/(?P<version>[\d.]+) \\(android [\d.]+; [^);\/]+; /i',
+            '/(lbc|heart)\/(?P<version>[\d.]+) android [\d.]+\/[^);\/]+/i',
+            '/emaudioplayer (?P<version>[\d.]+) \([\d.]+\) \/ android [\d.]+ \/ [^);\/]+/i',
         ];
 
         $filtered = array_filter(
@@ -86,7 +92,7 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
 
                 preg_match($regex, $normalizedValue, $matches);
 
-                return str_replace('_', '.', $matches['version'] ?? '');
+                return $matches['version'] ?? '';
             },
             $filtered,
         );

@@ -150,7 +150,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.mi.globalbrowser.mini' => 'mint browser',
             'com.michatapp.im' => 'mi-chat-app',
             'com.michatapp.im.lite' => 'mi-chat-lite',
-            'com.microsoft.amp.apps.bingnews' => 'microsoft-start',
+            'com.microsoft.amp.apps.bingnews' => 'msn-app',
             'com.microsoft.bing', 'com.microsoft.bingintl' => 'bingsearch',
             'com.microsoft.office.outlook' => 'outlook',
             'com.mobiu.browser' => 'lark-browser',
@@ -376,6 +376,9 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.canopy.vpn.filter.parent' => 'canopy-app',
             'ai.mainfunc.genspark' => 'genspark-app',
             'com.rocks.music.videoplayer' => 'hd-video-player-all-formats',
+            'proxy.browser.unblock.sites.proxybrowser.unblocksites' => 'proxy-browser',
+            'com.google.android.apps.youtube.music' => 'youtube-music',
+            'nl.nrc.audio' => 'nrc-audio',
             default => null,
         };
     }

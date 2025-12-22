@@ -1241,6 +1241,30 @@ enum Company: string implements CompanyInterface
 
     case asdDev = 'ASD Dev';
 
+    case dsTools = 'DS tools';
+
+    case npr = 'NPR';
+
+    case appsForGoogle = 'Apps For Google';
+
+    case italiaonline = 'Italiaonline';
+
+    case telekom = 'Telekom';
+
+    case armobsoft = 'Armobsoft';
+
+    case kaldor = 'Kaldor';
+
+    case podverse = 'Podverse';
+
+    case mediahuisNrc = 'Mediahuis NRC';
+
+    case globalMediaEntertainment = 'Global Media & Entertainment';
+
+    case kajabi = 'Kajabi';
+
+    case iHeartMedia = 'iHeartMedia';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1859,6 +1883,18 @@ enum Company: string implements CompanyInterface
             'kde', 'kde e.v.' => self::kde,
             'gnu' => self::gnu,
             'asddev', 'asd dev', 'asd-dev' => self::asdDev,
+            'dstools', 'ds tools', 'ds-tools' => self::dsTools,
+            'npr' => self::npr,
+            'appsforgoogle', 'apps for google', 'apps-for-google' => self::appsForGoogle,
+            'italiaonline', 'italiaonline s.p.a.' => self::italiaonline,
+            'telekom', 'deutsche telekom ag' => self::telekom,
+            'armobsoft', 'armobsoft fze' => self::armobsoft,
+            'kaldor', 'kaldor ltd.' => self::kaldor,
+            'podverse' => self::podverse,
+            'mediahuisnrc', 'mediahuis nrc', 'mediahuis-nrc' => self::mediahuisNrc,
+            'globalmediaentertainment', 'global media & entertainment', 'global-media-entertainment' => self::globalMediaEntertainment,
+            'kajabi' => self::kajabi,
+            'iheartmedia', 'iheartmedia management services, inc.', 'iheart-media' => self::iHeartMedia,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2040,6 +2076,11 @@ enum Company: string implements CompanyInterface
             self::spring => 'Spring (SG) PTE. LTD.',
             self::gnome => 'The GNOME Project',
             self::kde => 'KDE e.V.',
+            self::italiaonline => 'Italiaonline S.p.A.',
+            self::telekom => 'Deutsche Telekom AG',
+            self::armobsoft => 'Armobsoft FZE',
+            self::kaldor => 'Kaldor Ltd.',
+            self::iHeartMedia => 'iHeartMedia Management Services, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2211,6 +2252,11 @@ enum Company: string implements CompanyInterface
             self::vishaGroup => 'visha-group',
             self::gnome => 'the-gnome-project',
             self::asdDev => 'asd-dev',
+            self::dsTools => 'ds-tools',
+            self::appsForGoogle => 'apps-for-google',
+            self::mediahuisNrc => 'mediahuis-nrc',
+            self::globalMediaEntertainment => 'global-media-entertainment',
+            self::iHeartMedia => 'iheart-media',
             default => $this->name,
         };
     }
