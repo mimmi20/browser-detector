@@ -281,6 +281,8 @@ final class HeaderLoaderTest extends TestCase
             [Constants::HEADER_UCBROWSER_PHONE_UA],
             [Constants::HEADER_UCBROWSER_UA],
             [Constants::HEADER_CRAWLED_BY],
+            [Constants::HEADER_SEC_CH_FORM_FACTORS],
+            [Constants::HEADER_SEC_CH_WOW64],
         ];
     }
 }

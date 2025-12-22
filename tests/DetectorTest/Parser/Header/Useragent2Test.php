@@ -361,7 +361,7 @@ final class Useragent2Test extends TestCase
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider('providerUa4')]
-    public function testData4(
+    public function testDataWithFindingADevice(
         string $ua,
         string $normalizedUa,
         bool $hasDeviceInfo,

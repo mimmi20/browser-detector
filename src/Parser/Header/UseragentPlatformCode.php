@@ -109,6 +109,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             '/luminary\/[\d.]+ \((?P<platform>android) [\d.]+; [^);\/]+; /i',
             '/(lbc|heart)\/[\d.]+ (?P<platform>android) [\d.]+\/[^);\/]+/i',
             '/emaudioplayer [\d.]+ \([\d.]+\) \/ (?P<platform>android) [\d.]+ \/ [^);\/]+/i',
+            '/tivimate\/[\d.]+ \([^);\/]+; (?P<platform>android) [\d.]+\)/i',
         ];
 
         $filtered = array_filter(

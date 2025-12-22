@@ -70,36 +70,31 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
             return new ForcedNullVersion();
         }
 
-        if ($os === Os::unknown || $os !== Os::windows) {
-            $derivatePosition = mb_strpos($value, ';');
+        if ($os === Os::windows) {
+            $version = match ((float) $value) {
+                0.1 => '7',
+                0.2 => '8',
+                0.3 => '8.1',
+                10.0 => '10',
+                default => '11',
+            };
 
-            assert($derivatePosition === false || is_int($derivatePosition));
-
-            if ($derivatePosition !== false) {
-                $derivate = mb_trim(mb_substr($value, $derivatePosition + 1));
-
-                $exception = new VersionContainsDerivateException();
-                $exception->setDerivate($derivate);
-
-                throw $exception;
-            }
-
-            return $this->setVersion($value);
+            return $this->setVersion($version);
         }
 
-        $windowsVersion = (float) $value;
+        $derivatePosition = mb_strpos($value, ';');
 
-        if ($windowsVersion < 1) {
-            $windowsVersion      = (int) ($windowsVersion * 10);
-            $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
+        assert($derivatePosition === false || is_int($derivatePosition));
 
-            return $this->setVersion($minorVersionMapping[$windowsVersion] ?? $value);
+        if ($derivatePosition !== false) {
+            $derivate = mb_trim(mb_substr($value, $derivatePosition + 1));
+
+            $exception = new VersionContainsDerivateException();
+            $exception->setDerivate($derivate);
+
+            throw $exception;
         }
 
-        if ($windowsVersion > 10) {
-            return $this->setVersion('11');
-        }
-
-        return $this->setVersion('10');
+        return $this->setVersion($value);
     }
 }

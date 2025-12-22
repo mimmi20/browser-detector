@@ -460,4 +460,358 @@ final class Useragent3Test extends TestCase
             ],
         ];
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     * @throws UnexpectedValueException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
+    #[DataProvider('providerUa6')]
+    public function testDataWithFindingADevice(
+        string $ua,
+        string $normalizedUa,
+        bool $hasDeviceInfo,
+        string $deviceUa,
+        string $deviceCode,
+        bool $hasClientInfo,
+        string | null $clientCode,
+        bool $hasClientVersion,
+        string | null $clientVersion,
+        bool $hasPlatformInfo,
+        Os $platformCode,
+        bool $hasPlatformVersion,
+        string | null $platformVersion,
+        bool $hasEngineInfo,
+        string $engineUa,
+        \BrowserDetector\Data\Engine $engineCode,
+        bool $hasEngineVersion,
+        string | null $engineVersion,
+    ): void {
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::atLeastOnce())
+            ->method('parse')
+            ->with($engineUa)
+            ->willReturn($engineCode);
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::never())
+            ->method('load');
+        $engineLoader
+            ->expects(self::atLeastOnce())
+            ->method('loadFromEngine')
+            ->with($engineCode)
+            ->willReturn(
+                new Engine(
+                    name: null,
+                    manufacturer: new Company(type: '', name: null, brandname: null),
+                    version: (new VersionBuilder())->set((string) $engineVersion),
+                ),
+            );
+
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::atLeastOnce())
+            ->method('getDeviceCode')
+            ->with($deviceUa)
+            ->willReturn($deviceCode);
+
+        $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
+
+        $header = new FullHeader(
+            value: $ua,
+            deviceCode: new UseragentDeviceCode(
+                deviceParser: $deviceParser,
+                normalizer: $normalizer,
+                deviceCodeHelper: $deviceCodeHelper,
+            ),
+            clientCode: new UseragentClientCode(
+                browserParser: $browserParser,
+                normalizer: $normalizer,
+            ),
+            clientVersion: new UseragentClientVersion(
+                browserParser: $browserParser,
+                browserLoader: $browserLoader,
+                normalizer: $normalizer,
+            ),
+            platformCode: new UseragentPlatformCode(
+                platformParser: $platformParser,
+                normalizer: $normalizer,
+            ),
+            platformVersion: new UseragentPlatformVersion(
+                platformParser: $platformParser,
+                platformLoader: $platformLoader,
+                normalizer: $normalizer,
+            ),
+            engineCode: new UseragentEngineCode(
+                engineParser: $engineParser,
+                normalizer: $normalizer,
+            ),
+            engineVersion: new UseragentEngineVersion(
+                engineParser: $engineParser,
+                engineLoader: $engineLoader,
+                normalizer: $normalizer,
+            ),
+        );
+
+        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $normalizedUa,
+            $header->getNormalizedValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            Architecture::unknown,
+            $header->getDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            Bits::unknown,
+            $header->getDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $hasDeviceInfo,
+            $header->hasDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $deviceCode,
+            $header->getDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $hasClientInfo,
+            $header->hasClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $clientCode,
+            $header->getClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $hasClientVersion,
+            $header->hasClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+
+        if ($clientVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getClientVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $clientVersion,
+                $header->getClientVersion()->getVersion(),
+                sprintf('browser info mismatch for ua "%s"', $ua),
+            );
+        }
+
+        self::assertSame(
+            $hasPlatformInfo,
+            $header->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $platformCode,
+            $header->getPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $hasPlatformVersion,
+            $header->hasPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+
+        if ($platformVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getPlatformVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $platformVersion,
+                $header->getPlatformVersion()->getVersion(),
+                sprintf('platform info mismatch for ua "%s"', $ua),
+            );
+        }
+
+        self::assertSame(
+            $hasEngineInfo,
+            $header->hasEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $engineCode,
+            $header->getEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $hasEngineVersion,
+            $header->hasEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+
+        if ($engineVersion === null) {
+            self::assertInstanceOf(
+                ForcedNullVersion::class,
+                $header->getEngineVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        } else {
+            self::assertSame(
+                $engineVersion,
+                $header->getEngineVersion()->getVersion(),
+                sprintf('engine info mismatch for ua "%s"', $ua),
+            );
+        }
+    }
+
+    /**
+     * @return array<int, array<string, bool|\BrowserDetector\Data\Engine|Os|string|null>>
+     *
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
+    public static function providerUa6(): array
+    {
+        return [
+            [
+                'ua' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'normalizedUa' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'sm-g996b',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => 'virgin-radio',
+                'hasClientVersion' => true,
+                'clientVersion' => '45.2.0.22026',
+                'hasPlatformInfo' => true,
+                'platformCode' => Os::android,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '14.0.0',
+                'hasEngineInfo' => true,
+                'engineUa' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'TiviMate/4.7.0 (Onn. 4K Streaming Box; Android 12)',
+                'normalizedUa' => 'TiviMate/4.7.0 (Onn. 4K Streaming Box; Android 12)',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'onn. 4k streaming box',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => 'tivimate-app',
+                'hasClientVersion' => true,
+                'clientVersion' => '4.7.0',
+                'hasPlatformInfo' => true,
+                'platformCode' => Os::android,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '12.0.0',
+                'hasEngineInfo' => true,
+                'engineUa' => 'TiviMate/4.7.0 (Onn. 4K Streaming Box; Android 12)',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'PugpigBolt 3.8.10 (samsung, Android 13) on phone (model SM-G998U)',
+                'normalizedUa' => 'PugpigBolt 3.8.10 (samsung, Android 13) on phone (model SM-G998U)',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'sm-g998u',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => 'pugpig-bolt',
+                'hasClientVersion' => true,
+                'clientVersion' => '3.8.10',
+                'hasPlatformInfo' => true,
+                'platformCode' => Os::android,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '13.0.0',
+                'hasEngineInfo' => true,
+                'engineUa' => 'PugpigBolt 3.8.10 (samsung, Android 13) on phone (model SM-G998U)',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'NRC Audio/2.0.0 (nl.nrc.audio; build:29; Android 12; Sdk:31; Manufacturer:samsung; Model: SM-G975F) OkHttp/4.9.3',
+                'normalizedUa' => 'NRC Audio/2.0.0 (nl.nrc.audio; build:29; Android 12; Sdk:31; Manufacturer:samsung; Model: SM-G975F) OkHttp/4.9.3',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'sm-g975f',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => 'nrc-audio',
+                'hasClientVersion' => true,
+                'clientVersion' => '2.0.0',
+                'hasPlatformInfo' => true,
+                'platformCode' => Os::android,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '12.0.0',
+                'hasEngineInfo' => true,
+                'engineUa' => 'NRC Audio/2.0.0 (nl.nrc.audio; build:29; Android 12; Sdk:31; Manufacturer:samsung; Model: SM-G975F) OkHttp/4.9.3',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+        ];
+    }
 }

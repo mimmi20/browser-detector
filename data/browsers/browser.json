@@ -5605,5 +5605,17 @@
       "search": null
     },
     "engine": "blink"
+  },
+  "uphone-browser": {
+    "name": "UPhone Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UPhoneWebBrowser"
+      ]
+    },
+    "engine": "blink"
   }
 }
