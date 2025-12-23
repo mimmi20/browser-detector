@@ -104,7 +104,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             '/wnyc app\/[\d.]+ (?P<platform>android)\/\d+ /i',
             '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ (?P<platform>kaios)\/[\d.]+/i',
             '/virgin%20radio\/[\d.]+ \/ \(linux; (?P<platform>android) [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
-            '/pugpigbolt [\d.]+ \(samsung, (?P<platform>android) [\d.]+\) on phone \(model [^)]+\)/i',
+            '/pugpigbolt [\d.]+ \([^);\/,]+, (?P<platform>android|ios) [\d.]+\) on phone \(model [^)]+\)/i',
             '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; (?P<platform>android) [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\) okhttp\/[\d.]+/i',
             '/luminary\/[\d.]+ \((?P<platform>android) [\d.]+; [^);\/]+; /i',
             '/(lbc|heart)\/[\d.]+ (?P<platform>android) [\d.]+\/[^);\/]+/i',

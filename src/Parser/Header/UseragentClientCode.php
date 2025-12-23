@@ -69,7 +69,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             '/(?P<client>instagram) [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/(?P<client>virgin%20radio)\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
             '/(?P<client>tivimate)\/[\d.]+ \([^);\/]+;/i',
-            '/(?P<client>pugpigbolt) [\d.]+ \(samsung, android [\d.]+\) on phone \(model [^)]+\)/i',
+            '/(?P<client>pugpigbolt) [\d.]+ \([^);\/,]+, (android|ios) [\d.]+\) on phone \(model [^)]+\)/i',
             '/(?P<client>nrc audio)\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\) okhttp\/[\d.]+/i',
             '/(?P<client>luminary)\/[\d.]+ \(android [\d.]+; [^);\/]+; /i',
             '/(?P<client>lbc|heart)\/[\d.]+ android [\d.]+\/[^);\/]+/i',

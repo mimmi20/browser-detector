@@ -74,7 +74,7 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
             '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/(?P<version>[\d.]+) kaios\/[\d.]+/i',
             '/virgin%20radio\\/(?P<version>[\d.]+) \\/ \\(linux; android [\d.]+\\) exoplayerlib\\/[\d.]+ \\/ samsung \\(/i',
             '/tivimate\/(?P<version>[\d.]+) \([^);\/]+;/i',
-            '/pugpigbolt (?P<version>[\d.]+) \\(samsung, android [\d.]+\\) on phone \\(model [^)]+\\)/i',
+            '/pugpigbolt (?P<version>[\d.]+) \\([^);\/,]+, (android|ios) [\d.]+\\) on phone \\(model [^)]+\\)/i',
             '/nrc audio\\/(?P<version>[\d.]+) \\(nl\\.nrc\\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\\) okhttp\\/[\d.]+/i',
             '/luminary\\/(?P<version>[\d.]+) \\(android [\d.]+; [^);\/]+; /i',
             '/(lbc|heart)\/(?P<version>[\d.]+) android [\d.]+\/[^);\/]+/i',
