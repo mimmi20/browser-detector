@@ -2201,6 +2201,7 @@ final class Device implements DeviceInterface
             'sm-x400', 'samsung sm-x400' => 'samsung=samsung sm-x400',
             'sm-x406', 'samsung sm-x406' => 'samsung=samsung sm-x406',
             'sm-x406b', 'samsung sm-x406b' => 'samsung=samsung sm-x406b',
+            'sm-x406n', 'samsung sm-x406n' => 'samsung=samsung sm-x406n',
             'sm-a842b', 'samsung sm-a842b' => 'samsung=samsung sm-a842b',
             'sm-a556u', 'samsung sm-a556u' => 'samsung=samsung sm-a556u',
             'sm-a556v', 'samsung sm-a556v' => 'samsung=samsung sm-a556v',

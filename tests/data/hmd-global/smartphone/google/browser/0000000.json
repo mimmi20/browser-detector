@@ -4411,21 +4411,24 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; N1374DL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Chromium\";v=\"98\", \" Not A;Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Nokia 7 plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.121 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "N1374DL",
-      "marketingName": "G300",
+      "deviceName": "7 plus",
+      "marketingName": "7 plus",
       "manufacturer": "HMD Global",
       "brand": "Nokia",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
-        "width": 1600,
-        "height": 720,
+        "width": 2160,
+        "height": 1080,
         "touch": true,
-        "size": 6.52
+        "size": 6
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4435,14 +4438,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "10.0.0",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Chrome",
+      "name": "Chromium",
       "modus": null,
-      "version": "95.0.4638.74",
+      "version": "98.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4450,27 +4453,30 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "95.0.4638.74",
+      "version": "98.0.4758.121",
       "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 12; Nokia XR20 Build/SKQ1.211006.001)"
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; TA-1021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.106 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "XR20",
-      "marketingName": "XR20",
+      "deviceName": "TA-1021",
+      "marketingName": "6",
       "manufacturer": "HMD Global",
       "brand": "Nokia",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
-        "width": 2400,
+        "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 6.67
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4480,23 +4486,23 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Android Browser",
+      "name": "Chromium",
       "modus": null,
-      "version": "2.1.0",
+      "version": "98.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "98.0.4758.106",
+      "manufacturer": "Google"
     }
   }
 ]

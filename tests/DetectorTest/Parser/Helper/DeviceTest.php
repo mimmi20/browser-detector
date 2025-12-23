@@ -2774,6 +2774,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-X406', 'samsung=samsung sm-x406'],
             ['SM-X406B', 'samsung=samsung sm-x406b'],
             ['SAMSUNG SM-X406B', 'samsung=samsung sm-x406b'],
+            ['SM-X406N', 'samsung=samsung sm-x406n'],
+            ['SAMSUNG SM-X406N', 'samsung=samsung sm-x406n'],
             ['SM-A842B', 'samsung=samsung sm-a842b'],
             ['SAMSUNG SM-A842B', 'samsung=samsung sm-a842b'],
             ['SM-A556U', 'samsung=samsung sm-a556u'],
