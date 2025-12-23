@@ -38,9 +38,6 @@ final class SecChUaPlatform implements PlatformCodeInterface
     #[Override]
     public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
-        $value = mb_trim($value, '"\\\'');
-        $code  = mb_strtolower($value);
-
         if ($derivate !== null) {
             $derivateCode = $this->getCode(mb_strtolower($derivate));
 
@@ -48,6 +45,9 @@ final class SecChUaPlatform implements PlatformCodeInterface
                 return $derivateCode;
             }
         }
+
+        $value = mb_trim($value, '"\\\'');
+        $code  = mb_strtolower($value);
 
         return $this->getCode($code);
     }

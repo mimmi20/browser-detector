@@ -23,10 +23,10 @@ use UaParser\PlatformParserInterface;
 use UnexpectedValueException;
 
 use function array_filter;
+use function array_first;
 use function array_map;
 use function mb_strtolower;
 use function preg_match;
-use function reset;
 
 final readonly class UseragentPlatformCode implements PlatformCodeInterface
 {
@@ -129,9 +129,9 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             $filtered,
         );
 
-        $code = reset($results);
+        $code = array_first($results);
 
-        if ($code !== null && $code !== false && $code !== '') {
+        if ($code !== null && $code !== '') {
             try {
                 return Os::fromName($code);
             } catch (UnexpectedValueException) {

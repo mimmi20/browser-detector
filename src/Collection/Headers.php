@@ -226,6 +226,8 @@ final readonly class Headers
      * detect the client data
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public function getClientData(): ClientDataInterface
     {
@@ -264,13 +266,20 @@ final readonly class Headers
 
                     if (is_string($lastClientCodename)) {
                         switch ($lastClientCodename) {
-                            case 'ecosia':
                             case 'opera':
                             case 'silk':
                             case 'adblock browser':
                             case 'google-nest-hub':
+                            case 'chrome for ios':
                                 $firstClientCodename = $lastClientCodename;
                                 $clientHeader        = array_last($headersWithClientCode);
+
+                                break;
+                            case 'ecosia':
+                                $firstClientCodename = $lastClientCodename;
+                                $clientHeader        = $headersWithClientCode['sec-ch-ua-full-version'] ?? array_last(
+                                    $headersWithClientCode,
+                                );
 
                                 break;
                             default:
@@ -307,10 +316,11 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($firstClientCodename);
             $clientVersion  = match ($firstClientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app' => $clientVersions['user-agent'],
-                'duckduck app' => $clientVersions['sec-ch-ua'] ?? $clientVersions['sec-ch-ua-full-version'] ?? array_last(
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app' => $clientVersions['user-agent'],
+                'duckduck app', 'huawei-browser', 'ucbrowser' => $clientVersions['sec-ch-ua'] ?? $clientVersions['sec-ch-ua-full-version'] ?? array_last(
                     $clientVersions,
                 ),
+                'ecosia' => $clientVersions['sec-ch-ua-full-version'] ?? array_last($clientVersions),
                 default => array_first($clientVersions),
             };
 
@@ -354,54 +364,88 @@ final readonly class Headers
      */
     public function getPlatformData(string | null $platformCodenameFromDevice): OsInterface
     {
-        $platform = \BrowserDetector\Data\Os::unknown;
-
         $headersWithPlatformCode = array_filter(
             $this->headers,
             static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
         );
 
-        $platformHeader = array_first($headersWithPlatformCode);
-
-        if ($platformHeader instanceof HeaderInterface) {
-            try {
-                $platform = $platformHeader->getPlatformCode();
-            } catch (\UaRequest\Exception\NotFoundException) {
-                // do nothing
-            }
+        try {
+            $platformCodes = array_map(
+                static fn (HeaderInterface $platformHeader): \UaData\OsInterface => $platformHeader->getPlatformCode(),
+                $headersWithPlatformCode,
+            );
+        } catch (\UaRequest\Exception\NotFoundException) {
+            $platformCodes = [\BrowserDetector\Data\Os::unknown];
         }
 
-        if ($platform === \BrowserDetector\Data\Os::unknown) {
+        $firstPlatformCode = array_first($platformCodes);
+
+        if (
+            (
+                $firstPlatformCode instanceof \UaData\OsInterface
+                && $firstPlatformCode === \BrowserDetector\Data\Os::unknown
+            )
+            || $firstPlatformCode === null
+        ) {
             try {
-                $platform = \BrowserDetector\Data\Os::fromName((string) $platformCodenameFromDevice);
+                $firstPlatformCode = \BrowserDetector\Data\Os::fromName(
+                    (string) $platformCodenameFromDevice,
+                );
             } catch (UnexpectedValueException) {
                 // do nothing
             }
         }
 
-        $platformVersion = match ($platform) {
-            \BrowserDetector\Data\Os::lineageos => $this->getVersionForLineageOs(),
-            \BrowserDetector\Data\Os::fireos => $this->getVersionForFireOs(),
-            default => $this->getVersionForGeneric($platform, $platformHeader),
-        };
+        if ($firstPlatformCode instanceof \UaData\OsInterface) {
+            $platform       = $firstPlatformCode;
+            $platformHeader = array_first($headersWithPlatformCode);
 
-        if ($platform !== \BrowserDetector\Data\Os::unknown) {
-            try {
-                $platformFromOs = $this->platformLoader->loadFromOs(
-                    os: $platform,
-                    useragent: $platformHeader instanceof HeaderInterface ? $platformHeader->getValue() : '',
-                );
+            switch ($firstPlatformCode) {
+                case \BrowserDetector\Data\Os::linux:
+                    $lastPlatformCode = array_last($platformCodes);
 
-                if (
-                    $platformVersion instanceof VersionInterface
-                    && ($platformVersion instanceof ForcedNullVersion || $platformVersion->getVersion() !== null)
-                ) {
-                    return $platformFromOs->withVersion($platformVersion);
+                    if (
+                        $lastPlatformCode instanceof \UaData\OsInterface
+                        && $lastPlatformCode !== $firstPlatformCode
+                    ) {
+                        $platform       = $lastPlatformCode;
+                        $platformHeader = array_last($headersWithPlatformCode);
+                    } else {
+                        $platformHeader = array_first($headersWithPlatformCode);
+                    }
+
+                    break;
+                default:
+                    // do nothing
+                    break;
+            }
+
+            assert($platformHeader instanceof HeaderInterface || $platformHeader === null);
+
+            $platformVersion = match ($platform) {
+                \BrowserDetector\Data\Os::lineageos => $this->getVersionForLineageOs(),
+                \BrowserDetector\Data\Os::fireos => $this->getVersionForFireOs(),
+                default => $this->getVersionForGeneric($platform, $platformHeader),
+            };
+
+            if ($platform !== \BrowserDetector\Data\Os::unknown) {
+                try {
+                    $platformFromOs = $this->platformLoader->loadFromOs(
+                        os: $platform,
+                        useragent: $platformHeader instanceof HeaderInterface ? $platformHeader->getValue() : '',
+                    );
+
+                    if (
+                        $platformVersion instanceof VersionInterface
+                        && ($platformVersion instanceof ForcedNullVersion || $platformVersion->getVersion() !== null)
+                    ) {
+                        return $platformFromOs->withVersion($platformVersion);
+                    }
+
+                    return $platformFromOs;
+                } catch (UnexpectedValueException $e) {
+                    $this->logger->info($e);
                 }
-
-                return $platformFromOs;
-            } catch (UnexpectedValueException $e) {
-                $this->logger->info($e);
             }
         }
 
