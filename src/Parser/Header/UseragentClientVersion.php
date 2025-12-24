@@ -79,6 +79,7 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
             '/luminary\\/(?P<version>[\d.]+) \\(android [\d.]+; [^);\/]+; /i',
             '/(lbc|heart)\/(?P<version>[\d.]+) android [\d.]+\/[^);\/]+/i',
             '/emaudioplayer (?P<version>[\d.]+) \([\d.]+\) \/ android [\d.]+ \/ [^);\/]+/i',
+            '/classic fm\/(?P<version>[\d.]+) android [\d.]+\/[^);\/]+/i',
         ];
 
         $filtered = array_filter(

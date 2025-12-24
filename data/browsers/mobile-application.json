@@ -1649,8 +1649,10 @@
     "manufacturer": "new-york-times",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nyt_android"
+      ]
     },
     "engine": null
   },
@@ -2729,6 +2731,65 @@
       "search": [
         "EMAudioPlayer"
       ]
+    },
+    "engine": null
+  },
+  "listnr": {
+    "name": "LiSTNR",
+    "manufacturer": "sca-igital",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LiSTNR\\.au\\.com\\.podcastoneaustralia"
+      ]
+    },
+    "engine": null
+  },
+  "de-standaard": {
+    "name": "De Standaard",
+    "manufacturer": "mediahuis",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DS podcast"
+      ]
+    },
+    "engine": null
+  },
+  "classic-fm": {
+    "name": "Classic FM",
+    "manufacturer": "multimedios-digital",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Classic FM"
+      ]
+    },
+    "engine": null
+  },
+  "gaana": {
+    "name": "Gaana",
+    "manufacturer": "entertainment-network",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GaanaAndroid\\-",
+        "GaanaAndroid"
+      ]
+    },
+    "engine": null
+  },
+  "apkxdl": {
+    "name": "APK Downloader",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   }

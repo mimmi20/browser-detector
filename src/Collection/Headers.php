@@ -260,6 +260,28 @@ final readonly class Headers
 
                     break;
                 case 'chromium':
+                    $lastClientCodename = array_last($clientCodes);
+                    $clientHeader       = array_first($headersWithClientCode);
+
+                    if (is_string($lastClientCodename)) {
+                        switch ($lastClientCodename) {
+                            case 'opera':
+                            case 'silk':
+                            case 'adblock browser':
+                            case 'google-nest-hub':
+                            case 'chrome for ios':
+                            case 'chrome':
+                            case 'ecosia':
+                                $firstClientCodename = $lastClientCodename;
+                                $clientHeader        = array_last($headersWithClientCode);
+
+                                break;
+                            default:
+                                // do nothing
+                        }
+                    }
+
+                    break;
                 case 'chrome':
                     $lastClientCodename = array_last($clientCodes);
                     $clientHeader       = array_first($headersWithClientCode);
@@ -271,15 +293,9 @@ final readonly class Headers
                             case 'adblock browser':
                             case 'google-nest-hub':
                             case 'chrome for ios':
-                                $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = array_last($headersWithClientCode);
-
-                                break;
                             case 'ecosia':
                                 $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = $headersWithClientCode['sec-ch-ua-full-version'] ?? array_last(
-                                    $headersWithClientCode,
-                                );
+                                $clientHeader        = array_last($headersWithClientCode);
 
                                 break;
                             default:
@@ -297,13 +313,8 @@ final readonly class Headers
                 case 'nytimes-crossword':
                 case 'visha':
                 case 'search-craft':
-                    $clientHeader = array_last($headersWithClientCode);
-
-                    break;
                 case 'duckduck app':
-                    $clientHeader = $headersWithClientCode['sec-ch-ua'] ?? $headersWithClientCode['sec-ch-ua-full-version'] ?? array_last(
-                        $headersWithClientCode,
-                    );
+                    $clientHeader = array_last($headersWithClientCode);
 
                     break;
                 default:
@@ -316,7 +327,7 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($firstClientCodename);
             $clientVersion  = match ($firstClientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app' => $clientVersions['user-agent'],
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword' => $clientVersions['user-agent'],
                 'duckduck app', 'huawei-browser', 'ucbrowser' => $clientVersions['sec-ch-ua'] ?? $clientVersions['sec-ch-ua-full-version'] ?? array_last(
                     $clientVersions,
                 ),

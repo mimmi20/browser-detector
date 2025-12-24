@@ -89,6 +89,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
             '/luminary\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^);\/]+); /i',
             '/emaudioplayer [\d.]+ \([\d.]+\) \/ android [\d.]+ \/ (?P<devicecode>[^);\/]+)/i',
+            '/android [\d.]+; (?P<devicecode>[^);\/]+)\) applewebkit/i',
+            '/classic fm\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
         ];
 
         $filtered = array_filter(

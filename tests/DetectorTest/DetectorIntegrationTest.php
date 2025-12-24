@@ -160,7 +160,7 @@ final class DetectorIntegrationTest extends TestCase
                             'touch' => true,
                             'size' => 6.95,
                         ],
-                        'type' => 'phablet',
+                        'type' => 'smartphone',
                         'ismobile' => true,
                         'istv' => false,
                         'bits' => null,
@@ -2170,7 +2170,7 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'Chromium',
+                        'name' => 'Chrome',
                         'modus' => null,
                         'version' => '125.0.0',
                         'manufacturer' => 'Google',
@@ -2542,7 +2542,7 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => 64,
                     ],
                     'client' => [
-                        'name' => 'Chromium',
+                        'name' => 'Chrome',
                         'modus' => null,
                         'version' => '138.0.0',
                         'manufacturer' => 'Google',
@@ -2818,7 +2818,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'NYTimes - Crossword',
                         'modus' => null,
-                        'version' => null,
+                        'version' => '5.5.0',
                         'manufacturer' => 'The New York Times',
                         'type' => 'mobile-application',
                         'isbot' => false,
@@ -4080,6 +4080,122 @@ final class DetectorIntegrationTest extends TestCase
                         'name' => 'Blink',
                         'version' => '96.0.4664.104',
                         'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    "sec-ch-ua-model"=> "\"TB310FU\"",
+      "sec-ch-ua-platform" => "\"Android\"",
+      "sec-ch-ua-platform-version" => "\"13.0.0\"",
+      "sec-ch-ua" => "\"Not-A.Brand\";v=\"99\", \"Chromium\";v=\"124\"",
+      "sec-ch-ua-full-version" => "\"124.0.6327.4\"",
+      "sec-ch-ua-bitness" => "\"\"",
+      "sec-ch-ua-arch" => "\"\"",
+      "sec-ch-ua-mobile" => "?0",
+      "user-agent" => "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-model" => "\"TB310FU\"",
+      "sec-ch-ua-platform" => "\"Android\"",
+      "sec-ch-ua-platform-version" => "\"13.0.0\"",
+      "sec-ch-ua" => "\"Not-A.Brand\";v=\"99\", \"Chromium\";v=\"124\"",
+      "sec-ch-ua-full-version" => "\"124.0.6327.4\"",
+      "sec-ch-ua-bitness" => "\"\"",
+      "sec-ch-ua-arch" => "\"\"",
+      "sec-ch-ua-mobile" => "?0",
+      "user-agent" => "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+                    ],
+                    'device' => [
+        "architecture" => null,
+      "deviceName" => "TB310FU",
+      "marketingName" => "Tab M9 Wi-Fi",
+      "manufacturer" => "Lenovo",
+      "brand" => "Lenovo",
+      "dualOrientation" => true,
+      "simCount" => 0,
+      "display" => [
+        "width" => 1340,
+        "height" => 800,
+        "touch" => true,
+        "size" => 9.0
+      ],
+      "type" => "tablet",
+      "ismobile" => false,
+      "istv" => false,
+      "bits" => null
+                    ],
+                    'os' => [
+        "name" => "Android",
+      "marketingName" => "Android",
+      "version" => "13.0.0",
+      "manufacturer" => "Google",
+      "bits" => null
+                    ],
+                    'client' => [
+        "name" => "Chrome",
+      "modus" => null,
+      "version" => "124.0.0",
+      "manufacturer" => "Google",
+      "type" => "browser",
+      "isbot" => false,
+      "bits" => null
+                    ],
+                    'engine' => [
+        "name" => "Blink",
+      "version" => "124.0.0.0",
+      "manufacturer" => "Google"
+                    ],
+                ],
+            ],
+            [
+                [
+                    "user-agent" => "Classic FM/65.0.0 Android 12/vivo V2111"
+                ],
+                [
+                    'headers' => [
+                        "user-agent" => "Classic FM/65.0.0 Android 12/vivo V2111"
+                    ],
+                    'device' => [
+                        "architecture" => null,
+      "deviceName" => "V2111",
+      "marketingName" => "Y21",
+      "manufacturer" => "BBK",
+      "brand" => "vivo",
+      "dualOrientation" => true,
+      "simCount" => 2,
+      "display" => [
+        "width" => 1600,
+        "height" => 720,
+        "touch" => true,
+        "size" => 6.51
+      ],
+      "type" => "smartphone",
+      "ismobile" => true,
+      "istv" => false,
+      "bits" => null
+                    ],
+                    'os' => [
+        "name" => "Android",
+      "marketingName" => "Android",
+      "version" => "12.0.0",
+      "manufacturer" => "Google",
+      "bits" => null
+                    ],
+                    'client' => [
+        "name" => "Classic FM",
+      "modus" => null,
+      "version" => '65.0.0',
+      "manufacturer" => "Multimedios Digital",
+      "type" => "mobile-application",
+      "isbot" => false,
+      "bits" => null
+                    ],
+                    'engine' => [
+        "name" => null,
+      "version" => null,
+      "manufacturer" => "unknown"
                     ],
                 ],
             ],

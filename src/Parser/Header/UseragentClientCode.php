@@ -74,6 +74,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             '/(?P<client>luminary)\/[\d.]+ \(android [\d.]+; [^);\/]+; /i',
             '/(?P<client>lbc|heart)\/[\d.]+ android [\d.]+\/[^);\/]+/i',
             '/(?P<client>emaudioplayer) [\d.]+ \([\d.]+\) \/ android [\d.]+ \/ [^);\/]+/i',
+            '/(?P<client>classic fm)\/[\d.]+ android [\d.]+\/[^);\/]+/i',
         ];
 
         $filtered = array_filter(
@@ -95,6 +96,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
                     'tivimate' => 'tivimate-app',
                     'pugpigbolt' => 'pugpig-bolt',
                     'nrc audio' => 'nrc-audio',
+                    'classic fm' => 'classic-fm',
                     default => $client,
                 };
             },

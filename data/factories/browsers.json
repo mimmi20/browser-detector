@@ -1,7 +1,7 @@
 {
   "rules": {
     "/(?<![l_])edge\\//i": "edge",
-    "/chr[o0]me(?!book|cast)|crmo/i": "blink",
+    "/chr[o0]me(?!book|cast)|crmo|com\\.tcl\\.browser/i": "blink",
     "/webkit|safari(?!com)|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
     "/(?<![kK][aA])iOS/": "webkit",
     "/presto\\/|(?<!co)opera(?!ting)/i": "presto",

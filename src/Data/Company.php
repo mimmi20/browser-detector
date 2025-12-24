@@ -1265,6 +1265,52 @@ enum Company: string implements CompanyInterface
 
     case iHeartMedia = 'iHeartMedia';
 
+    case citrix = 'Citrix';
+
+    case vaporware = 'VaporWare';
+
+    case netscape = 'Netscape';
+
+    case oregan = 'Oregan';
+
+    case aol = 'AOL';
+
+    case ant = 'Ant';
+
+    case tor = 'Tor';
+
+    case cameronKaiser = 'Cameron Kaiser';
+
+    case orangeLabs = 'Orange Labs';
+
+    case bird = 'Bird';
+
+    case mikulasPatocka = 'Mikulas Patocka';
+
+    case myriad = 'Myriad';
+
+    case kddi = 'KDDI';
+
+    case freeSoftwareFoundation = 'Free Software Foundation';
+
+    case sandLabs = 'Sand Labs';
+
+    case davidRosca = 'David Rosca';
+
+    case linkfluence = 'Linkfluence';
+
+    case dorado = 'Dorado';
+
+    case redbot = 'redbot.org';
+
+    case scaDigital = 'SCA Digital';
+
+    case mediahuis = 'Mediahuis';
+
+    case multimediosDigital = 'Multimedios Digital';
+
+    case entertainmentNetwork = 'Entertainment Network';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1895,6 +1941,29 @@ enum Company: string implements CompanyInterface
             'globalmediaentertainment', 'global media & entertainment', 'global-media-entertainment' => self::globalMediaEntertainment,
             'kajabi' => self::kajabi,
             'iheartmedia', 'iheartmedia management services, inc.', 'iheart-media' => self::iHeartMedia,
+            'citrix' => self::citrix,
+            'vaporware' => self::vaporware,
+            'netscape' => self::netscape,
+            'oregan', 'oregan networks ltd' => self::oregan,
+            'aol', 'america online, inc.' => self::aol,
+            'ant', 'ant software limited' => self::ant,
+            'tor', 'the tor project' => self::tor,
+            'cameronkaiser', 'cameron-kaiser', 'cameron kaiser' => self::cameronKaiser,
+            'orangelabs', 'orange labs uk', 'orange-labs', 'orange labs' => self::orangeLabs,
+            'bird' => self::bird,
+            'mikulaspatocka', 'mikulas-patocka', 'mikulas patocka' => self::mikulasPatocka,
+            'myriad', 'myriad group' => self::myriad,
+            'kddi', 'kddi corporation' => self::kddi,
+            'freesoftwarefoundation', 'free software foundation, inc.', 'free-software-foundation', 'free software foundation' => self::freeSoftwareFoundation,
+            'sandlabs', 'sand-labs', 'sand labs' => self::sandLabs,
+            'davidrosca', 'david rosca and community', 'david-rosca', 'david rosca' => self::davidRosca,
+            'linkfluence', 'linkfluence sas' => self::linkfluence,
+            'dorado' => self::dorado,
+            'redbot', 'redbot.org' => self::redbot,
+            'scadigital', 'sca digital pty ltd', 'sca-igital', 'sca digital' => self::scaDigital,
+            'mediahuis' => self::mediahuis,
+            'multimediosdigital', 'multimedios-digital', 'multimedios digital' => self::multimediosDigital,
+            'entertainmentnetwork', 'entertainment-network', 'entertainment network (india) ltd.', 'entertainment network' => self::entertainmentNetwork,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2081,6 +2150,18 @@ enum Company: string implements CompanyInterface
             self::armobsoft => 'Armobsoft FZE',
             self::kaldor => 'Kaldor Ltd.',
             self::iHeartMedia => 'iHeartMedia Management Services, Inc.',
+            self::oregan => 'Oregan Networks Ltd',
+            self::aol => 'America Online, Inc.',
+            self::ant => 'ANT Software Limited',
+            self::tor => 'The Tor Project',
+            self::orangeLabs => 'Orange Labs UK',
+            self::myriad => 'Myriad Group',
+            self::kddi => 'KDDI Corporation',
+            self::freeSoftwareFoundation => 'Free Software Foundation, Inc.',
+            self::davidRosca => 'David Rosca and Community',
+            self::linkfluence => 'Linkfluence SAS',
+            self::scaDigital => 'SCA Digital Pty Ltd',
+            self::entertainmentNetwork => 'Entertainment Network (India) Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2257,6 +2338,15 @@ enum Company: string implements CompanyInterface
             self::mediahuisNrc => 'mediahuis-nrc',
             self::globalMediaEntertainment => 'global-media-entertainment',
             self::iHeartMedia => 'iheart-media',
+            self::cameronKaiser => 'cameron-kaiser',
+            self::orangeLabs => 'orange-labs',
+            self::mikulasPatocka => 'mikulas-patocka',
+            self::freeSoftwareFoundation => 'free-software-foundation',
+            self::sandLabs => 'sand-labs',
+            self::davidRosca => 'david-rosca',
+            self::scaDigital => 'sca-igital',
+            self::multimediosDigital => 'multimedios-digital',
+            self::entertainmentNetwork => 'entertainment-network',
             default => $this->name,
         };
     }

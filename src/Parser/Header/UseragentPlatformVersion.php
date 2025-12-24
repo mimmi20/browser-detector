@@ -122,6 +122,7 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             '/(lbc|heart)\/[\d.]+ android (?P<version>[\d.]+)\/[^);\/]+/i',
             '/emaudioplayer [\d.]+ \([\d.]+\) \/ android (?P<version>[\d.]+) \/ [^);\/]+/i',
             '/tivimate\/[\d.]+ \([^);\/]+; android (?P<version>[\d.]+)\)/i',
+            '/classic fm\/[\d.]+ android (?P<version>[\d.]+)\/[^);\/]+/i',
         ];
 
         $filtered = array_filter(
