@@ -20,7 +20,7 @@ use BrowserDetector\Version\FirefoxOsFactory;
 use BrowserDetector\Version\IosFactory;
 use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
-use BrowserDetector\Version\RemixOs;
+use BrowserDetector\Version\RemixOsFactory;
 use BrowserDetector\Version\RimOsFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
@@ -713,7 +713,7 @@ enum Os: string implements OsInterface
             self::windowsphone => ['factory' => WindowsPhoneOsFactory::class, 'search' => null],
             self::debian, self::debianWithFreeBSDKernel => ['factory' => DebianFactory::class, 'search' => null],
             self::raspbian => ['factory' => RaspbianFactory::class, 'search' => null],
-            self::remixOs => ['factory' => RemixOs::class, 'search' => null],
+            self::remixOs => ['factory' => RemixOsFactory::class, 'search' => null],
             self::rimOs => ['factory' => RimOsFactory::class, 'search' => null],
             self::windows2003 => ['factory' => null, 'search' => null, 'value' => 2003],
             self::windows31, self::windowsnt31 => ['factory' => null, 'search' => null, 'value' => 3.1],

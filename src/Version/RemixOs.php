@@ -14,15 +14,9 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
-
-use function array_filter;
-use function array_key_exists;
-use function current;
-use function version_compare;
-
-use const ARRAY_FILTER_USE_KEY;
 use Override;
-use UnexpectedValueException;
+
+use function preg_match;
 
 final readonly class RemixOs implements VersionFactoryInterface
 {
@@ -35,7 +29,7 @@ final readonly class RemixOs implements VersionFactoryInterface
     /**
      * returns the version of the operating system/platform
      *
-     * @throws UnexpectedValueException
+     * @throws NotNumericException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
