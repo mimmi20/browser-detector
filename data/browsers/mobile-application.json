@@ -67,6 +67,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "XING-iPhone",
         "XING"
       ]
     },
@@ -2790,6 +2791,54 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "quora app": {
+    "name": "Quora App",
+    "manufacturer": "quora",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Quora"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bonprix app": {
+    "name": "bonprix App",
+    "manufacturer": "bonprix",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "bonprix mobile App"
+      ]
+    },
+    "engine": null
+  },
+  "huawei-mobile-services": {
+    "name": "Huawei Mobile Services",
+    "manufacturer": "huawei",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HMSCore"
+      ]
+    },
+    "engine": null
+  },
+  "roblox-app": {
+    "name": "Roblox",
+    "manufacturer": "roblox",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RobloxApp"
+      ]
     },
     "engine": null
   }

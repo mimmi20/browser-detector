@@ -43,5 +43,50 @@
       "version": "525.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 SonyEricssonU5i/R2AA;; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/ Mobile Safari/533.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "U5i",
+      "marketingName": "Vivaz",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

@@ -91,6 +91,51 @@
   },
   {
     "headers": {
+      "user-agent": "AndroidDownloadManager/4.4.2 (Linux; U; Android 4.4.2; GT-P5210 Build/KOT49H)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-P5210",
+      "marketingName": "Galaxy Tab 3 10.1\" Wi-Fi",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "4.4.2",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "AndroidDownloadManager/4.2.2 (Linux; U; Android 4.2.2; GT-P5110 Build/JDQ39)"
     },
     "device": {

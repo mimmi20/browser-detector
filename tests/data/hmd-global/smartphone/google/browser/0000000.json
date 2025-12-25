@@ -4411,58 +4411,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Chromium\";v=\"98\", \" Not A;Brand\";v=\"99\"",
+      "sec-ch-ua": "\"Chromium\";v=\"91\", \" Not;A Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Nokia 7 plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.121 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "7 plus",
-      "marketingName": "7 plus",
-      "manufacturer": "HMD Global",
-      "brand": "Nokia",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "98.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "98.0.4758.121",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; TA-1021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.106 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; TA-1021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Mobile Iron Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -4493,7 +4444,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "98.0.0",
+      "version": "91.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4501,7 +4452,52 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "98.0.4758.106",
+      "version": "91.0.4472.77",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; N1374DL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N1374DL",
+      "marketingName": "G300",
+      "manufacturer": "HMD Global",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.74",
       "manufacturer": "Google"
     }
   }

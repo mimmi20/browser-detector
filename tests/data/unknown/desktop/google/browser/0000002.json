@@ -496,57 +496,6 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "sec-ch-ua-platform-version": "\"13597.84.0\"",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"92\"",
-      "sec-ch-ua-arch": "\"arm\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (X11; CrOS armv7l 13597.84.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.98 Safari/537.36"
-    },
-    "device": {
-      "architecture": "arm",
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13597.84.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "92.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "92.0.4515.98",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (X11; OpenBSD amd64; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
     },
     "device": {
@@ -624,7 +573,7 @@
       "bits": null
     },
     "client": {
-      "name": "Chromium",
+      "name": "Chrome",
       "modus": null,
       "version": "96.0.0",
       "manufacturer": "Google",
@@ -684,6 +633,54 @@
       "name": "Gecko",
       "version": "6.0.0",
       "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": "101.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
     }
   },
   {
@@ -818,59 +815,6 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.135",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-platform": "\"macOS\"",
-      "sec-ch-ua-platform-version": "\"12.4.0\"",
-      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
-      "sec-ch-ua-full-version": "\"103.0.5060.134\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-arch": "\"arm\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
-    },
-    "device": {
-      "architecture": "arm",
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": 64
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "12.4.0",
-      "manufacturer": "Apple",
-      "bits": 64
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "86.0.4240.75",
       "manufacturer": "Google"
     }
   },
@@ -1151,54 +1095,6 @@
       "name": "Gecko",
       "version": "109.0.0",
       "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-ch-ua": "\"Chromium\";v=\"121\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "121.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "121.0.0.0",
-      "manufacturer": "Google"
     }
   },
   {

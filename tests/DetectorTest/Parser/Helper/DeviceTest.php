@@ -3466,6 +3466,10 @@ final class DeviceTest extends TestCase
             ['MGA-LX9N', 'huawei=huawei mga-lx9n'],
             ['MGA-LX9', 'huawei=huawei mga-lx9'],
             ['MGA-LX3', 'huawei=huawei mga-lx3'],
+            ['DVC-AN00', 'huawei=huawei dvc-an00'],
+            ['CND-AN00', 'huawei=huawei cnd-an00'],
+            ['CDY-TN20', 'huawei=huawei cdy-tn20'],
+            ['CDL-AN50', 'huawei=huawei cdl-an50'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],

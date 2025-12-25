@@ -1311,6 +1311,20 @@ enum Company: string implements CompanyInterface
 
     case entertainmentNetwork = 'Entertainment Network';
 
+    case swisscom = 'Swisscom';
+
+    case sonyNetwork = 'Sony Network';
+
+    case fancyMobileApps = 'Fancy Mobile Apps';
+
+    case browserWorks = 'BrowserWorks';
+
+    case salamweb = 'Salam Web';
+
+    case paloAltoNetworks = 'Palo Alto Networks';
+
+    case roblox = 'Roblox';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1964,6 +1978,13 @@ enum Company: string implements CompanyInterface
             'mediahuis' => self::mediahuis,
             'multimediosdigital', 'multimedios-digital', 'multimedios digital' => self::multimediosDigital,
             'entertainmentnetwork', 'entertainment-network', 'entertainment network (india) ltd.', 'entertainment network' => self::entertainmentNetwork,
+            'swisscom', 'swisscom ltd' => self::swisscom,
+            'sonynetwork', 'sony-network', 'sony network communications inc.', 'sony network' => self::sonyNetwork,
+            'fancymobileapps', 'fancy-mobile-apps', 'fancy mobile apps' => self::fancyMobileApps,
+            'browserworks', 'browser-works' => self::browserWorks,
+            'salamweb', 'salam web', 'salam web technologies dmcc' => self::salamweb,
+            'paloaltonetworks', 'palo-alto', 'palo alto networks, inc.', 'palo alto networks' => self::paloAltoNetworks,
+            'roblox', 'roblox corporation' => self::roblox,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2162,6 +2183,11 @@ enum Company: string implements CompanyInterface
             self::linkfluence => 'Linkfluence SAS',
             self::scaDigital => 'SCA Digital Pty Ltd',
             self::entertainmentNetwork => 'Entertainment Network (India) Ltd.',
+            self::swisscom => 'Swisscom Ltd',
+            self::sonyNetwork => 'Sony Network Communications Inc.',
+            self::salamweb => 'Salam Web Technologies DMCC',
+            self::paloAltoNetworks => 'Palo Alto Networks, Inc.',
+            self::roblox => 'Roblox Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -2347,6 +2373,10 @@ enum Company: string implements CompanyInterface
             self::scaDigital => 'sca-igital',
             self::multimediosDigital => 'multimedios-digital',
             self::entertainmentNetwork => 'entertainment-network',
+            self::sonyNetwork => 'sony-network',
+            self::fancyMobileApps => 'fancy-mobile-apps',
+            self::browserWorks => 'browser-works',
+            self::paloAltoNetworks => 'palo-alto',
             default => $this->name,
         };
     }

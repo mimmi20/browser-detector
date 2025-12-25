@@ -407,9 +407,9 @@
   {
     "headers": {
       "sec-ch-ua-platform": "\"macOS\"",
-      "sec-ch-ua": "\"Chromium\";v=\"98\", \" Not A;Brand\";v=\"99\"",
+      "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"101\"",
       "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.105 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15"
     },
     "device": {
       "architecture": null,
@@ -440,16 +440,16 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "98.0.0",
+      "version": "101.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "98.0.4758.105",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
     }
   },
   {

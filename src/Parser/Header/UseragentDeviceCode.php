@@ -91,6 +91,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/emaudioplayer [\d.]+ \([\d.]+\) \/ android [\d.]+ \/ (?P<devicecode>[^);\/]+)/i',
             '/android [\d.]+; (?P<devicecode>[^);\/]+)\) applewebkit/i',
             '/classic fm\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
+            '/mozilla\/[\d.]+ \([\d.]+mb; [\d.]+x[\d.]+; [\d.]+x[\d.]+; [\d.]+x[\d.]+; (?P<devicecode>[^);\/]+); [\d.]+\) applewebkit/i',
         ];
 
         $filtered = array_filter(

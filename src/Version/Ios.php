@@ -32,6 +32,7 @@ final readonly class Ios implements VersionFactoryInterface
     /** @api */
     public const array SEARCHES = [
         'watchOS',
+        'tvOS',
         'IphoneOSX',
         'CPU OS_?',
         'CPU iOS',

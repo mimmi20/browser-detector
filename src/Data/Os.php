@@ -47,7 +47,7 @@ enum Os: string implements OsInterface
 
     case asha = 'Asha';
 
-    case atvosx = 'ATV OS X';
+    case tvos = 'tvOS';
 
     case audioos = 'audioOS';
 
@@ -370,7 +370,7 @@ enum Os: string implements OsInterface
             'aosp', 'android opensource project' => self::aosp,
             'arklinux', 'ark linux' => self::arklinux,
             'asha' => self::asha,
-            'atvosx', 'atv os x' => self::atvosx,
+            'atvosx', 'atv os x', 'tvos' => self::tvos,
             'audioos', 'audio os' => self::audioos,
             'backtracklinux', 'backtrack linux' => self::backtracklinux,
             'bada' => self::bada,
@@ -578,7 +578,7 @@ enum Os: string implements OsInterface
         return match ($this) {
             self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv => Company::google,
             self::asha, self::nokiaos, self::series30, self::series40, self::series60 => Company::nokia,
-            self::atvosx, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh => Company::apple,
+            self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh => Company::apple,
             self::bada => Company::samsung,
             self::cellos, self::orbisos, self::newsos => Company::sony,
             self::fireos => Company::amazon,
@@ -705,7 +705,7 @@ enum Os: string implements OsInterface
             self::ultrix => ['factory' => VersionBuilderFactory::class, 'search' => ['ULTRIX']],
             self::threadx => ['factory' => VersionBuilderFactory::class, 'search' => ['Threadx']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
-            self::atvosx, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
+            self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
             self::macosx => ['factory' => MacosFactory::class, 'search' => null],
             self::firefoxos => ['factory' => FirefoxOsFactory::class, 'search' => null],
@@ -749,7 +749,6 @@ enum Os: string implements OsInterface
     {
         return match ($this) {
             self::amigaos => 'amiga os',
-            self::atvosx => 'atv os x',
             self::audioos => 'audio os',
             self::backtracklinux => 'backtrack linux',
             self::centos => 'cent os linux',

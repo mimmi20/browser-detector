@@ -721,107 +721,6 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"Redmi Note 3\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"8.1.0\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.48\"",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi Note 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.48 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi Note 3",
-      "marketingName": "Redmi Note 3",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.48",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Chromium\";v=\"100\", \" Not A;Brand\";v=\"99\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2101K6G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.162 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2101K6G",
-      "marketingName": "Redmi Note 10 Pro",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "100.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "100.0.4896.162",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; M2101K7AG Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36"
     },
     "device": {
@@ -1132,215 +1031,6 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"M2101K7BNY\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
-      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2101K7BNY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2101K7BNY",
-      "marketingName": "Redmi Note 10S",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.43
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "96.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.104",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"Mi Note 10 Pro\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
-      "sec-ch-ua-full-version": "\"101.0.4951.48\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi Note 10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.48 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi Note 10 Pro",
-      "marketingName": "Mi Note 10 Pro",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.47
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "101.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.48",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"M1908C3JGG\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\"Chromium\";v=\"102\", \" Not A;Brand\";v=\"99\"",
-      "sec-ch-ua-full-version": "\"102.0.5005.136\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; M1908C3JGG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.136 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M1908C3JGG",
-      "marketingName": "Redmi Note 8 (2021)",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "102.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "102.0.5005.136",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"Redmi Note 8 Pro\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-ua-full-version-list": "\"Chromium\";v=\"102.0.5005.125\", \" Not A;Brand\";v=\"99.0.0.0\"",
-      "sec-ch-ua": "\"Chromium\";v=\"102\", \" Not A;Brand\";v=\"99\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi Note 8 Pro",
-      "marketingName": "Redmi Note 8 Pro",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "102.0.5005.125",
       "manufacturer": "Google"
     }
   },
@@ -1661,163 +1351,6 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"Redmi Note 9 Pro\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
-      "sec-ch-ua-full-version": "\"101.0.4951.40\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.40 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi Note 9 Pro",
-      "marketingName": "Redmi Note 9 Pro",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "101.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.40",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"M2003J15SC\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
-      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2003J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2003J15SC",
-      "marketingName": "Redmi Note 10X",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "96.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.104",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"Mi Note 10\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
-      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi Note 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi Note 10",
-      "marketingName": "Mi Note 10",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.47
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "96.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.104",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; 2201116TG Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.91 Mobile Safari/537.36"
     },
     "device": {
@@ -1948,58 +1481,6 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"Redmi Note 9S\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
-      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 9S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi Note 9S",
-      "marketingName": "Redmi Note 9S",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "96.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.104",
       "manufacturer": "Google"
     }
   },
@@ -2635,58 +2116,6 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"Redmi Note 8T\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\"",
-      "sec-ch-ua-full-version": "\"110.0.5481.195\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi Note 8T",
-      "marketingName": "Redmi Note 8T",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "110.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "110.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; 23028RA60L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -3087,58 +2516,6 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.131",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"23021RAA2Y\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
-      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; 23021RAA2Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "23021RAA2Y",
-      "marketingName": "Redmi Note 12 4G",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "96.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.104",
       "manufacturer": "Google"
     }
   },
@@ -3864,60 +3241,6 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"M2101K7AG\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\"",
-      "sec-ch-ua-full-version": "\"120.0.6099.116\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2101K7AG",
-      "marketingName": "Redmi Note 10",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.43
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "120.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; 23117RA68G Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.120 Mobile Safari/537.36"
     },
     "device": {
@@ -4331,59 +3654,6 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"2201116SG\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; 2201116SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2201116SG",
-      "marketingName": "Redmi Note 11 Pro 5G",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "114.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 14; biloba) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -4620,6 +3890,652 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; 21091116UG Build/TP1A.220624.014)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "21091116UG",
+      "marketingName": "Redmi Note 11 Pro+ 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"2312DRA50G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"131.0.6778.135\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2312DRA50G",
+      "marketingName": "Redmi Note 13 Pro 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2712,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "131.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "131.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 14; 2312DRA50G Build/UKQ1.231003.002)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2312DRA50G",
+      "marketingName": "Redmi Note 13 Pro 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2712,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 15; 23021RAAEG Build/AQ3A.240829.003)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "23021RAAEG",
+      "marketingName": "Redmi Note 12 4G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 24117RN76O) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "24117RN76O",
+      "marketingName": "Redmi Note 14 4G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "132.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 24090RA29G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "24090RA29G",
+      "marketingName": "Redmi Note 14 Pro 5G (Global)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2712,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "132.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 24116RACCG Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "24116RACCG",
+      "marketingName": "Redmi Note 14 Pro 4G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "132.0.6834.163",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.163",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 24115RA8EG Build/UKQ1.240523.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "24115RA8EG",
+      "marketingName": "Redmi Note 14 Pro+ 5G (Global)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2712,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "132.0.6834.163",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.163",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 24094RAD4I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.123 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "24094RAD4I",
+      "marketingName": "Redmi Note 14 5G (India)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "132.0.6834.123",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.123",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"23124RA7EO\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+      "sec-ch-ua-full-version": "\"134.0.6998.95\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "23124RA7EO",
+      "marketingName": "Redmi Note 13 4G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "134.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 2502FRA65G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2502FRA65G",
+      "marketingName": "Redmi Note 14S",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "135.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 24094RAD4G Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "24094RAD4G",
+      "marketingName": "Redmi Note 14 5G (Global)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "135.0.7049.111",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.111",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 15; 2312DRAABG Build/AP3A.240905.015.A2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2312DRAABG",
+      "marketingName": "Redmi Note 13 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; 24117RN76L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "24117RN76L",
+      "marketingName": "Redmi Note 14 4G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "137.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "137.0.0.0",
       "manufacturer": "Google"
     }
   }

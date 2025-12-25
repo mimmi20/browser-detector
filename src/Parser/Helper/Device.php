@@ -2820,6 +2820,10 @@ final class Device implements DeviceInterface
             'mga-lx9n' => 'huawei=huawei mga-lx9n',
             'mga-lx9' => 'huawei=huawei mga-lx9',
             'mga-lx3' => 'huawei=huawei mga-lx3',
+            'dvc-an00' => 'huawei=huawei dvc-an00',
+            'cnd-an00' => 'huawei=huawei cnd-an00',
+            'cdy-tn20' => 'huawei=huawei cdy-tn20',
+            'cdl-an50' => 'huawei=huawei cdl-an50',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',

@@ -190,18 +190,6 @@
     },
     "engine": "blink"
   },
-  "bonprix app": {
-    "name": "bonprix App",
-    "manufacturer": "bonprix",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "bonprix mobile App"
-      ]
-    },
-    "engine": null
-  },
   "booking.com app": {
     "name": "Booking.com App",
     "manufacturer": "booking-com",
@@ -898,18 +886,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "webkit"
-  },
-  "quora app": {
-    "name": "Quora App",
-    "manufacturer": "quora",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Quora"
-      ]
     },
     "engine": "webkit"
   },

@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaE7-00/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E7-00",
+      "marketingName": "E7",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.3.1.4",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/014.002; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.4 3gpp-gba"
     },
     "device": {
@@ -41,6 +86,51 @@
     "engine": {
       "name": "WebKit",
       "version": "525.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (MeeGo; NokiaN9) AppleWebKit/534.13 (KHTML, like Gecko) NokiaBrowser/8.5.0 Mobile Safari/534.13"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N9",
+      "marketingName": "N9",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 3.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MeeGo",
+      "marketingName": "MeeGo",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.5.0",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.13.0",
       "manufacturer": "Apple"
     }
   },
@@ -91,6 +181,186 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaN8-00/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N8-00",
+      "marketingName": "N8",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.3.1.4",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.5 Nokia808PureView/113.010.1508; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.2.21 Mobile Safari/535.1 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "808 PureView",
+      "marketingName": "808 PureView",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.3.2.21",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.5 Nokia700/113.010.1506; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.2.21 Mobile Safari/535.1 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "700",
+      "marketingName": "700",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.3.2.21",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaC7-00/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C7-00",
+      "marketingName": "C7",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.3.1.4",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00/10.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6 3gpp-gba"
     },
     "device": {
@@ -131,6 +401,51 @@
     "engine": {
       "name": "WebKit",
       "version": "525.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.3 Nokia701/111.010.1009; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.1.12 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "701",
+      "marketingName": "701",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.4.1.12",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
       "manufacturer": "Apple"
     }
   },
@@ -271,6 +586,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaC6-01/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C6-01",
+      "marketingName": "C6",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.3.1.4",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaC6-01/011.010; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.2 3gpp-gba"
     },
     "device": {
@@ -303,6 +663,96 @@
       "name": "Nokia OSS Browser",
       "modus": null,
       "version": "7.2.7.2",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5235/12.6.092; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5235",
+      "marketingName": "5235",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5530c-2/10.0.050; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5530 XpressMusic",
+      "marketingName": "5530 XpressMusic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 2.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
       "manufacturer": "Nokia",
       "type": "browser",
       "isbot": false,
@@ -402,51 +852,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5530c-2/30.0.009; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTM"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "5530 XpressMusic",
-      "marketingName": "5530 XpressMusic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 2.9
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": null,
-      "manufacturer": "Nokia",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "525.0.0",
-      "manufacturer": "Apple"
     }
   },
   {
@@ -631,6 +1036,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla 5.0 (Symbian/3; U; E7-00; de-DE; NokiaE7-00) AppleWebKit/534.3 (KHTML, like Gecko) Shazam Mobile Safari/534.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E7-00",
+      "marketingName": "E7",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.3.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "3gpp-gba Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaE7-00-1/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344"
     },
     "device": {
@@ -762,51 +1212,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (MeeGo; NokiaN9) AppleWebKit/534.13 (KHTML"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "N9",
-      "marketingName": "N9",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 3.9
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "MeeGo",
-      "marketingName": "MeeGo",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.13.0",
-      "manufacturer": "Apple"
     }
   },
   {
@@ -1666,6 +2071,186 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; U; Nokia700; xx) AppleWebKit/534.3 (KHTML, like Gecko) NokiaWebview/1.0 Mobile Safari/534.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "700",
+      "marketingName": "700",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.3.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; U; Nokia701; xx) AppleWebKit/534.3 (KHTML, like Gecko) NokiaWebview/1.0 Mobile Safari/534.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "701",
+      "marketingName": "701",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.3.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; U; Nokia808 PureView; xx) AppleWebKit/534.3 (KHTML, like Gecko) NokiaWebview/1.0 Mobile Safari/534.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "808 PureView",
+      "marketingName": "808 PureView",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.3.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; U; NokiaC6-01; xx) AppleWebKit/534.3 (KHTML, like Gecko) NokiaWebview/1.0 Mobile Safari/534.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C6-01",
+      "marketingName": "C6",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.3.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaX5-01/043.016; Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
@@ -1752,6 +2337,51 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX; U; en-US) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Mobile Safari/525"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X",
+      "marketingName": "X",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "Apple"
     }
   }
 ]

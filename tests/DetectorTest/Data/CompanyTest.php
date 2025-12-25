@@ -3934,6 +3934,48 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Entertainment Network',
                 'key' => 'entertainment-network',
             ],
+            [
+                'type' => 'Swisscom',
+                'name' => 'Swisscom Ltd',
+                'brandname' => 'Swisscom',
+                'key' => 'swisscom',
+            ],
+            [
+                'type' => 'Sony Network',
+                'name' => 'Sony Network Communications Inc.',
+                'brandname' => 'Sony Network',
+                'key' => 'sony-network',
+            ],
+            [
+                'type' => 'Fancy Mobile Apps',
+                'name' => 'Fancy Mobile Apps',
+                'brandname' => 'Fancy Mobile Apps',
+                'key' => 'fancy-mobile-apps',
+            ],
+            [
+                'type' => 'BrowserWorks',
+                'name' => 'BrowserWorks',
+                'brandname' => 'BrowserWorks',
+                'key' => 'browser-works',
+            ],
+            [
+                'type' => 'Salam Web',
+                'name' => 'Salam Web Technologies DMCC',
+                'brandname' => 'Salam Web',
+                'key' => 'salamweb',
+            ],
+            [
+                'type' => 'Palo Alto Networks',
+                'name' => 'Palo Alto Networks, Inc.',
+                'brandname' => 'Palo Alto Networks',
+                'key' => 'palo-alto',
+            ],
+            [
+                'type' => 'Roblox',
+                'name' => 'Roblox Corporation',
+                'brandname' => 'Roblox',
+                'key' => 'roblox',
+            ],
         ];
     }
 

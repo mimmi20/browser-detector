@@ -108,7 +108,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 engineCode: new DeviceStockUaEngineCode(),
                 engineVersion: new DeviceStockUaEngineVersion(),
             ),
-            Headers::HEADER_SEC_CH_UA => new ClientHeader(
+            Headers::HEADER_SEC_CH_UA, Headers::HEADER_SEC_CH_UA_FULL_VERSION_LIST => new ClientHeader(
                 value: $value,
                 clientCode: new SecChUaClientCode(),
                 clientVersion: new SecChUaClientVersion(),
@@ -117,9 +117,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
             Headers::HEADER_SEC_CH_FORM_FACTORS => new SecChUaFormFactors(value: $value),
             Headers::HEADER_SEC_CH_UA_BITNESS => new SecChUaBitness(value: $value),
             Headers::HEADER_SEC_CH_WOW64 => new SecChUaWow64(value: $value),
-            Headers::HEADER_SEC_CH_UA_FULL_VERSION, Headers::HEADER_SEC_CH_UA_FULL_VERSION_LIST => new SecChUaFullVersion(
-                value: $value,
-            ),
+            Headers::HEADER_SEC_CH_UA_FULL_VERSION => new SecChUaFullVersion(value: $value),
             Headers::HEADER_SEC_CH_UA_MOBILE => new SecChUaMobile(value: $value),
             Headers::HEADER_SEC_CH_UA_MODEL => new DeviceCodeOnlyHeader(
                 value: $value,
