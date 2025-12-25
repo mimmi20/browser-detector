@@ -2423,8 +2423,10 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.ios\\.youtube"
+      ]
     },
     "engine": null
   },
@@ -2807,7 +2809,7 @@
     "engine": "webkit"
   },
   "bonprix app": {
-    "name": "bonprix App",
+    "name": "BonPrix App",
     "manufacturer": "bonprix",
     "type": "mobile-application",
     "version": {
@@ -2841,5 +2843,30 @@
       ]
     },
     "engine": null
+  },
+  "jj2go": {
+    "name": "Jack & Jones to go",
+    "manufacturer": "bestseller",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RelesysApp"
+      ]
+    },
+    "engine": null
+  },
+  "yahoo! japan": {
+    "name": "Yahoo! Japan",
+    "manufacturer": "yahoo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.android\\.yjtop",
+        "yjapp"
+      ]
+    },
+    "engine": "webkit"
   }
 }

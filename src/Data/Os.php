@@ -315,6 +315,8 @@ enum Os: string implements OsInterface
 
     case nintendoSwitchOs = 'Nintendo Switch OS';
 
+    case nintendoWiiOs = 'Nintendo Wii OS';
+
     case nucleus = 'Nucleus';
 
     case opensolaris = 'OpenSolaris';
@@ -504,6 +506,7 @@ enum Os: string implements OsInterface
             'mre', 'maui runtime environment' => self::mre,
             'nintendoos', 'nintendo os' => self::nintendoOs,
             'nintendoswitchos', 'nintendo switch os' => self::nintendoSwitchOs,
+            'nintendowiios', 'nintendo wii os' => self::nintendoWiiOs,
             'nucleus', 'nucleus os' => self::nucleus,
             'opensolaris' => self::opensolaris,
             'solaris' => self::solaris,
@@ -606,7 +609,7 @@ enum Os: string implements OsInterface
             self::mandrivaLinux => Company::mandriva,
             self::morphos => Company::fabienCoeurjoly,
             self::mre => Company::mediatek,
-            self::nintendoOs, self::nintendoSwitchOs => Company::nintendo,
+            self::nintendoOs, self::nintendoSwitchOs, self::nintendoWiiOs => Company::nintendo,
             self::nucleus => Company::acceleratedTechnology,
             self::opensolaris, self::solaris, self::sunos => Company::oracle,
             self::palmOs => Company::palm,
@@ -703,7 +706,10 @@ enum Os: string implements OsInterface
             self::puffinOs => ['factory' => VersionBuilderFactory::class, 'search' => ['Cloud Phone']],
             self::viziOs => ['factory' => VersionBuilderFactory::class, 'search' => ['ViziOS']],
             self::ultrix => ['factory' => VersionBuilderFactory::class, 'search' => ['ULTRIX']],
-            self::threadx => ['factory' => VersionBuilderFactory::class, 'search' => ['Threadx']],
+            self::threadx => ['factory' => VersionBuilderFactory::class, 'search' => ['ThreadX_OS', 'Threadx']],
+            self::cellos => ['factory' => VersionBuilderFactory::class, 'search' => ['PLAYSTATION 3 ']],
+            self::orbisos => ['factory' => VersionBuilderFactory::class, 'search' => ['PLAYSTATION [45] ']],
+            self::nintendoWiiOs => ['factory' => VersionBuilderFactory::class, 'search' => ['WiiOS']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],

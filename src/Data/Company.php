@@ -1325,6 +1325,10 @@ enum Company: string implements CompanyInterface
 
     case roblox = 'Roblox';
 
+    case bonprix = 'BonPrix';
+
+    case spotify = 'Spotify';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1985,6 +1989,8 @@ enum Company: string implements CompanyInterface
             'salamweb', 'salam web', 'salam web technologies dmcc' => self::salamweb,
             'paloaltonetworks', 'palo-alto', 'palo alto networks, inc.', 'palo alto networks' => self::paloAltoNetworks,
             'roblox', 'roblox corporation' => self::roblox,
+            'bonprix', 'bonprix handelsgesellschaft mbh' => self::bonprix,
+            'spotify', 'spotify ab' => self::spotify,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2188,6 +2194,8 @@ enum Company: string implements CompanyInterface
             self::salamweb => 'Salam Web Technologies DMCC',
             self::paloAltoNetworks => 'Palo Alto Networks, Inc.',
             self::roblox => 'Roblox Corporation',
+            self::bonprix => 'bonprix Handelsgesellschaft mbH',
+            self::spotify => 'Spotify AB',
             self::unknown => null,
             default => $this->value,
         };

@@ -513,16 +513,6 @@
     },
     "engine": "webkit"
   },
-  "jj2go": {
-    "name": "Jack & Jones to go",
-    "manufacturer": "bestseller",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "kamelio app": {
     "name": "Kamelio App",
     "manufacturer": "kamelio",
@@ -1409,19 +1399,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YHOO\\_Search\\_App"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "yahoo! japan": {
-    "name": "Yahoo! Japan",
-    "manufacturer": "yahoo",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "jp\\.co\\.yahoo\\.android\\.yjtop",
-        "yjapp"
       ]
     },
     "engine": "webkit"

@@ -5630,5 +5630,17 @@
       ]
     },
     "engine": null
+  },
+  "internet-screenbrowser": {
+    "name": "Internet ScreenBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Internet ScreenBrowser"
+      ]
+    },
+    "engine": null
   }
 }

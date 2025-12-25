@@ -3976,6 +3976,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Roblox',
                 'key' => 'roblox',
             ],
+            [
+                'type' => 'BonPrix',
+                'name' => 'bonprix Handelsgesellschaft mbH',
+                'brandname' => 'BonPrix',
+                'key' => 'bonprix',
+            ],
+            [
+                'type' => 'Spotify',
+                'name' => 'Spotify AB',
+                'brandname' => 'Spotify',
+                'key' => 'spotify',
+            ],
         ];
     }
 
