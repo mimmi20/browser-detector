@@ -13,8 +13,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use Override;
+use UaData\EngineInterface;
 use UaParser\EngineCodeInterface;
+use UnexpectedValueException;
 
 use function mb_strtolower;
 use function preg_match;
@@ -28,20 +31,22 @@ final class DeviceStockUaEngineCode implements EngineCodeInterface
         return (bool) preg_match('/trident|presto|webkit|gecko/i', $value);
     }
 
-    /**
-     * @return non-empty-string|null
-     *
-     * @throws void
-     */
+    /** @throws void */
     #[Override]
-    public function getEngineCode(string $value): string | null
+    public function getEngineCode(string $value): EngineInterface
     {
         $matches = [];
 
         if (preg_match('/(?P<engine>trident|presto|webkit|gecko)/i', $value, $matches)) {
-            return mb_strtolower($matches['engine']);
+            $code = mb_strtolower($matches['engine']);
+
+            try {
+                return Engine::fromName($code);
+            } catch (UnexpectedValueException) {
+                return Engine::unknown;
+            }
         }
 
-        return null;
+        return Engine::unknown;
     }
 }

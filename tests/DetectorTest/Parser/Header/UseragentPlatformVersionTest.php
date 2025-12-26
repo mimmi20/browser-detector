@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\Version;
@@ -48,6 +49,9 @@ final class UseragentPlatformVersionTest extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer
@@ -84,6 +88,9 @@ final class UseragentPlatformVersionTest extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer
@@ -120,6 +127,9 @@ final class UseragentPlatformVersionTest extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer
@@ -155,6 +165,9 @@ final class UseragentPlatformVersionTest extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer
@@ -207,6 +220,9 @@ final class UseragentPlatformVersionTest extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer
@@ -252,7 +268,7 @@ final class UseragentPlatformVersionTest extends TestCase
     #[DataProvider('providerUa3')]
     public function testWithUasWithPlatformVersion2(string $value, string $expectedVersion): void
     {
-        $code = 'code';
+        $code = Os::android;
 
         $version = $this->createMock(VersionInterface::class);
         $version
@@ -275,8 +291,11 @@ final class UseragentPlatformVersionTest extends TestCase
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);
         $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
             ->expects(self::once())
-            ->method('load')
+            ->method('loadFromOs')
             ->with($code, $value)
             ->willReturn($os);
 

@@ -25,7 +25,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
     #[Override]
     public function hasClientCode(string $value): bool
     {
-        $match = preg_match('/xmlhttprequest|fake\./i', $value);
+        $match = preg_match('/xmlhttprequest|fake\.|x\.cpe/i', $value);
 
         return $match === 0;
     }
@@ -150,7 +150,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.mi.globalbrowser.mini' => 'mint browser',
             'com.michatapp.im' => 'mi-chat-app',
             'com.michatapp.im.lite' => 'mi-chat-lite',
-            'com.microsoft.amp.apps.bingnews' => 'microsoft-start',
+            'com.microsoft.amp.apps.bingnews' => 'msn-app',
             'com.microsoft.bing', 'com.microsoft.bingintl' => 'bingsearch',
             'com.microsoft.office.outlook' => 'outlook',
             'com.mobiu.browser' => 'lark-browser',
@@ -232,7 +232,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'it.tolelab.fvd' => 'free-video-downloader',
             'jp.co.canon.bsd.ad.pixmaprint' => 'canon-print',
             'jp.co.fenrir.android.sleipnir' => 'sleipnir',
-            'jp.co.yahoo.android.yjtop' => 'yahoo! app',
+            'jp.co.yahoo.android.yjtop' => 'yahoo! japan',
             'jp.ddo.pigsty.habitbrowser' => 'habit-browser',
             'jp.gocro.smartnews.android' => 'smart-news-app',
             'jp.hazuki.yuzubrowser' => 'yuzu-browser',
@@ -375,6 +375,10 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.wecloud.lookr' => 'lookr-app',
             'com.canopy.vpn.filter.parent' => 'canopy-app',
             'ai.mainfunc.genspark' => 'genspark-app',
+            'com.rocks.music.videoplayer' => 'hd-video-player-all-formats',
+            'proxy.browser.unblock.sites.proxybrowser.unblocksites' => 'proxy-browser',
+            'com.google.android.apps.youtube.music' => 'youtube-music',
+            'nl.nrc.audio' => 'nrc-audio',
             default => null,
         };
     }

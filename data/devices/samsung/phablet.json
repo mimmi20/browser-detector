@@ -3502,5 +3502,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "samsung sm-w9023": {
+    "deviceName": "SM-W9023",
+    "marketingName": "Galaxy W23 Fold 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2316,
+      "height": 904,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

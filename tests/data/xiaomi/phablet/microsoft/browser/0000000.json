@@ -1163,9 +1163,9 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
-      "version": null,
+      "version": "100.0.1185.36",
       "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
@@ -1616,7 +1616,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "108.0.0",
       "manufacturer": "Microsoft",
@@ -1713,7 +1713,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "110.0.0",
       "manufacturer": "Microsoft",
@@ -1811,7 +1811,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "116.0.0",
       "manufacturer": "Microsoft",
@@ -1949,7 +1949,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "99.0.0",
       "manufacturer": "Microsoft",
@@ -2107,7 +2107,9 @@
       "sec-ch-ua-full-version": "\"138.0.3351.121\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36 EdgA/138.0.0.0"
     },
     "device": {
@@ -2137,7 +2139,7 @@
       "bits": null
     },
     "client": {
-      "name": "Edge Mobile",
+      "name": "Edge",
       "modus": null,
       "version": "138.0.0",
       "manufacturer": "Microsoft",

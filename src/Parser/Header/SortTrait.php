@@ -52,7 +52,7 @@ trait SortTrait
             static function (string $brand): bool {
                 $code = mb_strtolower($brand);
 
-                return !str_contains($code, 'brand') && $code !== 'chromium';
+                return !str_contains($code, 'brand');
             },
             ARRAY_FILTER_USE_KEY,
         );
@@ -61,8 +61,9 @@ trait SortTrait
             $code = mb_strtolower($brand);
 
             $fullVersionList[$brand] = match ($code) {
-                'operamobile', 'microsoft edge webview2', 'yowser', 'edge side panel', 'version', 'opera mini android' => 1,
-                default => 0,
+                'operamobile', 'microsoft edge webview2', 'yowser', 'edge side panel', 'version', 'opera mini android' => 2,
+                'chromium' => 0,
+                default => 1,
             };
 
             $nameList[$brand] = $code;

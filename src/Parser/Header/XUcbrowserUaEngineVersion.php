@@ -16,6 +16,7 @@ namespace BrowserDetector\Parser\Header;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
+use UaData\EngineInterface;
 use UaParser\EngineVersionInterface;
 
 use function preg_match;
@@ -38,6 +39,19 @@ final class XUcbrowserUaEngineVersion implements EngineVersionInterface
      */
     #[Override]
     public function getEngineVersion(string $value, string | null $code = null): VersionInterface
+    {
+        return $this->getVersion($value);
+    }
+
+    /** @throws void */
+    #[Override]
+    public function getEngineVersionWithEngine(string $value, EngineInterface $engine): VersionInterface
+    {
+        return $this->getVersion($value);
+    }
+
+    /** @throws void */
+    private function getVersion(string $value): VersionInterface
     {
         $matches = [];
 

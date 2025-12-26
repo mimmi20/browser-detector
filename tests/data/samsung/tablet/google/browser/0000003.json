@@ -1,141 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-T733 Build/RP1A.200720.012)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T733",
-      "marketingName": "Galaxy Tab S7 FE 12.4\" Wi-Fi",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 12.4
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Browser",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-X200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-X200",
-      "marketingName": "Galaxy Tab A8 10.5\" Wi-Fi (2021)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.98",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "97.0.4692.98",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-X900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-X900",
-      "marketingName": "Galaxy Tab S8 Ultra 14.6\" Wi-Fi",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2960,
-        "height": 1848,
-        "touch": true,
-        "size": 14.6
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "98.0.4758.101",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 12; SM-X800 Build/SP1A.210812.016)"
     },
     "device": {
@@ -759,9 +624,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1327,7 +1192,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-P620",
-      "marketingName": "Galaxy Tab S6 Lite 10.4\" Wi-Fi (2024)",
+      "marketingName": "Galaxy Tab S6 Lite 10.4\" (2024) Wi-Fi",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1450,9 +1315,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1497,54 +1362,6 @@
     "engine": {
       "name": "Blink",
       "version": "127.0.6533.103",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Android WebView\";v=\"128\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-P610 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.148 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-P610",
-      "marketingName": "Galaxy Tab S6 Lite 10.4\" Wi-Fi",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 10.4
-      },
-      "type": "tablet",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "128.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "128.0.6613.148",
       "manufacturer": "Google"
     }
   },
@@ -1878,7 +1695,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-P620",
-      "marketingName": "Galaxy Tab S6 Lite 10.4\" Wi-Fi (2024)",
+      "marketingName": "Galaxy Tab S6 Lite 10.4\" (2024) Wi-Fi",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -2195,7 +2012,9 @@
       "sec-ch-ua-full-version": "\"142.0.7444.139\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
     },
     "device": {
@@ -2213,7 +2032,7 @@
         "size": 11
       },
       "type": "tablet",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "bits": null
     },

@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; Remix SK1W)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Remix Mini) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Remix SK1W",
-      "marketingName": "Remix SK1W",
+      "deviceName": "Remix Mini",
+      "marketingName": "Remix Mini",
       "manufacturer": "Jide",
       "brand": "Jide",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": null,
+        "height": null,
         "touch": false,
         "size": null
       },
@@ -25,14 +25,14 @@
     "os": {
       "name": "Remix OS",
       "marketingName": "Remix OS",
-      "version": null,
+      "version": "2.0.0",
       "manufacturer": "Jide",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "41.0.2272.89",
+      "version": "89.0.4389.105",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -40,7 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "41.0.2272.89",
+      "version": "89.0.4389.105",
       "manufacturer": "Google"
     }
   }

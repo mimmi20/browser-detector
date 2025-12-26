@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Data;
 
 use Override;
+use UaData\CompanyInterface;
 use UnexpectedValueException;
 
 use function mb_strtolower;
@@ -1116,6 +1117,220 @@ enum Company: string implements CompanyInterface
 
     case nortonMobile = 'NortonMobile';
 
+    case matomo = 'Matomo';
+
+    case akaMessenger = 'aka Messenger';
+
+    case tuneIn = 'TuneIn';
+
+    case onecook = 'Onecook';
+
+    case softmeTech = 'Softme Tech';
+
+    case intel = 'Intel';
+
+    case readly = 'Readly';
+
+    case avast = 'AVAST';
+
+    case appsmedia = 'AppsMedia';
+
+    case kaweApps = 'Kawe Apps';
+
+    case reuters = 'Reuters';
+
+    case playitTechnology = 'PLAYIT TECHNOLOGY';
+
+    case xing = 'XING';
+
+    case fSecure = 'F-Secure';
+
+    case suaat = 'SUAAT';
+
+    case gTab = 'G-Tab';
+
+    case polestar = 'Polestar';
+
+    case kinogoGe = 'Kinogo.ge';
+
+    case cookieJarApps = 'CookieJarApps';
+
+    case larsWindolf = 'Lars Windolf';
+
+    case videoDownloadStudio = 'Video Download Studio';
+
+    case maxthon = 'Maxthon';
+
+    case yobiMobi = 'Yobi Mobi';
+
+    case myHomeScreen = 'My Home Screen';
+
+    case blueWalletServices = 'BlueWallet Services';
+
+    case anyDeskSoftware = 'AnyDesk Software';
+
+    case towoLabs = 'Towo Labs';
+
+    case talkTalkTelecom = 'TalkTalk Telecom';
+
+    case kpn = 'KPN';
+
+    case mopotab = 'MopoTab';
+
+    case quora = 'Quora';
+
+    case morris = 'Morris';
+
+    case dezor = 'Dezor';
+
+    case bestseller = 'Bestseller';
+
+    case hazuki = 'hazuki';
+
+    case startpageCom = 'startpage.com';
+
+    case tenta = 'Tenta';
+
+    case mobileV5 = 'Mobile_V5';
+
+    case swisscows = 'Swisscows';
+
+    case wolvesInteractive = 'Wolves Interactive';
+
+    case buhlDataService = 'Buhl Data Service';
+
+    case baySpringMedia = 'Bay Spring Media';
+
+    case twoKitConsulting = '2kit consulting';
+
+    case volcanoTechnology = 'Volcano Technology';
+
+    case omshyApps = 'OmshyApps';
+
+    case reddit = 'reddit';
+
+    case thinkFree = 'THINK FREE';
+
+    case nifty = 'NIFTY';
+
+    case wiseplayApps = 'Wiseplay Apps';
+
+    case canon = 'Canon';
+
+    case intex = 'Intex';
+
+    case orange = 'Orange';
+
+    case accent = 'Accent';
+
+    case ipro = 'IPRO';
+
+    case castify = 'Castify';
+
+    case theNewYorkTimes = 'The New York Times';
+
+    case vishaGroup = 'Visha Group';
+
+    case spring = 'Spring';
+
+    case gnome = 'GNOME';
+
+    case kde = 'KDE';
+
+    case gnu = 'GNU';
+
+    case asdDev = 'ASD Dev';
+
+    case dsTools = 'DS tools';
+
+    case npr = 'NPR';
+
+    case appsForGoogle = 'Apps For Google';
+
+    case italiaonline = 'Italiaonline';
+
+    case telekom = 'Telekom';
+
+    case armobsoft = 'Armobsoft';
+
+    case kaldor = 'Kaldor';
+
+    case podverse = 'Podverse';
+
+    case mediahuisNrc = 'Mediahuis NRC';
+
+    case globalMediaEntertainment = 'Global Media & Entertainment';
+
+    case kajabi = 'Kajabi';
+
+    case iHeartMedia = 'iHeartMedia';
+
+    case citrix = 'Citrix';
+
+    case vaporware = 'VaporWare';
+
+    case netscape = 'Netscape';
+
+    case oregan = 'Oregan';
+
+    case aol = 'AOL';
+
+    case ant = 'Ant';
+
+    case tor = 'Tor';
+
+    case cameronKaiser = 'Cameron Kaiser';
+
+    case orangeLabs = 'Orange Labs';
+
+    case bird = 'Bird';
+
+    case mikulasPatocka = 'Mikulas Patocka';
+
+    case myriad = 'Myriad';
+
+    case kddi = 'KDDI';
+
+    case freeSoftwareFoundation = 'Free Software Foundation';
+
+    case sandLabs = 'Sand Labs';
+
+    case davidRosca = 'David Rosca';
+
+    case linkfluence = 'Linkfluence';
+
+    case dorado = 'Dorado';
+
+    case redbot = 'redbot.org';
+
+    case scaDigital = 'SCA Digital';
+
+    case mediahuis = 'Mediahuis';
+
+    case multimediosDigital = 'Multimedios Digital';
+
+    case entertainmentNetwork = 'Entertainment Network';
+
+    case swisscom = 'Swisscom';
+
+    case sonyNetwork = 'Sony Network';
+
+    case fancyMobileApps = 'Fancy Mobile Apps';
+
+    case browserWorks = 'BrowserWorks';
+
+    case salamweb = 'Salam Web';
+
+    case paloAltoNetworks = 'Palo Alto Networks';
+
+    case roblox = 'Roblox';
+
+    case bonprix = 'BonPrix';
+
+    case spotify = 'Spotify';
+
+    case yahooJapan = 'Yahoo!JAPAN';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1672,6 +1887,113 @@ enum Company: string implements CompanyInterface
             'qihoo', 'qihoo 360 technology co. ltd.' => self::qihoo,
             'line', 'line corporation' => self::line,
             'nortonmobile', 'norton-mobile' => self::nortonMobile,
+            'matomo' => self::matomo,
+            'akamessenger', 'aka-messenger', 'aka messenger' => self::akaMessenger,
+            'tunein', 'tunein, inc.', 'tune-in' => self::tuneIn,
+            'onecook', 'onecook co., ltd.' => self::onecook,
+            'softmetech', 'softme-tech', 'softme tech' => self::softmeTech,
+            'intel', 'intel corporation' => self::intel,
+            'readly', 'readly international' => self::readly,
+            'avast', 'avast software s.r.o.', 'avast-software' => self::avast,
+            'appsmedia', 'appsmedia inc', 'apps-media' => self::appsmedia,
+            'kaweapps', 'kawe apps', 'kawe-apps' => self::kaweApps,
+            'reuters' => self::reuters,
+            'playittechnology', 'playit technology pte. ltd.', 'playit-technology', 'playit technology' => self::playitTechnology,
+            'xing', 'xing ag' => self::xing,
+            'fsecure', 'f-secure corporation', 'f-secure' => self::fSecure,
+            'suaat' => self::suaat,
+            'gtab', 'g-tab' => self::gTab,
+            'polestar' => self::polestar,
+            'kinogoge', 'kinogo-ge', 'kinogo.ge' => self::kinogoGe,
+            'cookiejarapps', 'cookie-jar-apps' => self::cookieJarApps,
+            'larswindolf', 'lars windolf' => self::larsWindolf,
+            'videodownloadstudio', 'video-download-studio', 'video download studio' => self::videoDownloadStudio,
+            'maxthon', 'maxthon international limited' => self::maxthon,
+            'yobimobi', 'yobi-mobi', 'yobi mobi' => self::yobiMobi,
+            'myhomescreen', 'my-home-screen', 'my home screen' => self::myHomeScreen,
+            'bluewalletservices', 'bluewallet-services', 'bluewallet services', 'bluewallet services s. r. l.' => self::blueWalletServices,
+            'anydesksoftware', 'anydesk-software', 'anydesk software gmbh', 'anydesk software' => self::anyDeskSoftware,
+            'towolabs', 'towo-labs', 'towo labs' => self::towoLabs,
+            'talktalktelecom', 'talk-talk-telecom', 'talktalk telecom group limited', 'talktalk telecom' => self::talkTalkTelecom,
+            'kpn' => self::kpn,
+            'mopotab', 'mopotab inc' => self::mopotab,
+            'quora', 'quora, inc.' => self::quora,
+            'morris', 'morris xar' => self::morris,
+            'dezor', 'dezor sa' => self::dezor,
+            'bestseller', 'bestseller a/s' => self::bestseller,
+            'hazuki' => self::hazuki,
+            'startpagecom', 'startpage.com' => self::startpageCom,
+            'tenta', 'tenta llc' => self::tenta,
+            'mobilev5', 'mobile-v5', 'mobile_v5' => self::mobileV5,
+            'swisscows' => self::swisscows,
+            'wolvesinteractive', 'wolves-interactive', 'wolves interactive' => self::wolvesInteractive,
+            'buhldataservice', 'buhl-data-service', 'buhl data service', 'buhl data service gmbh' => self::buhlDataService,
+            'bayspringmedia', 'bay-spring-media', 'bay spring media', 'bay spring media llc' => self::baySpringMedia,
+            'twokitconsulting', '2kit-consulting', '2kit consulting' => self::twoKitConsulting,
+            'volcanotechnology', 'volcano-technology', 'volcano technology', 'volcano technology limited' => self::volcanoTechnology,
+            'omshyapps', 'omshy-apps' => self::omshyApps,
+            'reddit', 'reddit inc.' => self::reddit,
+            'thinkfree', 'think-free', 'think free' => self::thinkFree,
+            'nifty', 'nifty corporation' => self::nifty,
+            'wiseplayapps', 'wiseplay-apps', 'wiseplay apps' => self::wiseplayApps,
+            'canon', 'canon inc.' => self::canon,
+            'intex', 'intex technologies (i) ltd.' => self::intex,
+            'orange', 'orange s.a.' => self::orange,
+            'accent' => self::accent,
+            'ipro', 'shenzhen zhike communication co., ltd' => self::ipro,
+            'castify' => self::castify,
+            'thenewyorktimes', 'the new york times company', 'new-york-times', 'the new york times' => self::theNewYorkTimes,
+            'vishagroup', 'visha-group', 'visha group' => self::vishaGroup,
+            'spring', 'spring (sg) pte. ltd.' => self::spring,
+            'gnome', 'the gnome project', 'the-gnome-project' => self::gnome,
+            'kde', 'kde e.v.' => self::kde,
+            'gnu' => self::gnu,
+            'asddev', 'asd dev', 'asd-dev' => self::asdDev,
+            'dstools', 'ds tools', 'ds-tools' => self::dsTools,
+            'npr' => self::npr,
+            'appsforgoogle', 'apps for google', 'apps-for-google' => self::appsForGoogle,
+            'italiaonline', 'italiaonline s.p.a.' => self::italiaonline,
+            'telekom', 'deutsche telekom ag' => self::telekom,
+            'armobsoft', 'armobsoft fze' => self::armobsoft,
+            'kaldor', 'kaldor ltd.' => self::kaldor,
+            'podverse' => self::podverse,
+            'mediahuisnrc', 'mediahuis nrc', 'mediahuis-nrc' => self::mediahuisNrc,
+            'globalmediaentertainment', 'global media & entertainment', 'global-media-entertainment' => self::globalMediaEntertainment,
+            'kajabi' => self::kajabi,
+            'iheartmedia', 'iheartmedia management services, inc.', 'iheart-media' => self::iHeartMedia,
+            'citrix' => self::citrix,
+            'vaporware' => self::vaporware,
+            'netscape' => self::netscape,
+            'oregan', 'oregan networks ltd' => self::oregan,
+            'aol', 'america online, inc.' => self::aol,
+            'ant', 'ant software limited' => self::ant,
+            'tor', 'the tor project' => self::tor,
+            'cameronkaiser', 'cameron-kaiser', 'cameron kaiser' => self::cameronKaiser,
+            'orangelabs', 'orange labs uk', 'orange-labs', 'orange labs' => self::orangeLabs,
+            'bird' => self::bird,
+            'mikulaspatocka', 'mikulas-patocka', 'mikulas patocka' => self::mikulasPatocka,
+            'myriad', 'myriad group' => self::myriad,
+            'kddi', 'kddi corporation' => self::kddi,
+            'freesoftwarefoundation', 'free software foundation, inc.', 'free-software-foundation', 'free software foundation' => self::freeSoftwareFoundation,
+            'sandlabs', 'sand-labs', 'sand labs' => self::sandLabs,
+            'davidrosca', 'david rosca and community', 'david-rosca', 'david rosca' => self::davidRosca,
+            'linkfluence', 'linkfluence sas' => self::linkfluence,
+            'dorado' => self::dorado,
+            'redbot', 'redbot.org' => self::redbot,
+            'scadigital', 'sca digital pty ltd', 'sca-igital', 'sca digital' => self::scaDigital,
+            'mediahuis' => self::mediahuis,
+            'multimediosdigital', 'multimedios-digital', 'multimedios digital' => self::multimediosDigital,
+            'entertainmentnetwork', 'entertainment-network', 'entertainment network (india) ltd.', 'entertainment network' => self::entertainmentNetwork,
+            'swisscom', 'swisscom ltd' => self::swisscom,
+            'sonynetwork', 'sony-network', 'sony network communications inc.', 'sony network' => self::sonyNetwork,
+            'fancymobileapps', 'fancy-mobile-apps', 'fancy mobile apps' => self::fancyMobileApps,
+            'browserworks', 'browser-works' => self::browserWorks,
+            'salamweb', 'salam web', 'salam web technologies dmcc' => self::salamweb,
+            'paloaltonetworks', 'palo-alto', 'palo alto networks, inc.', 'palo alto networks' => self::paloAltoNetworks,
+            'roblox', 'roblox corporation' => self::roblox,
+            'bonprix', 'bonprix handelsgesellschaft mbh' => self::bonprix,
+            'spotify', 'spotify ab' => self::spotify,
+            'yahoojapan', 'yahoo-japan', 'yahoo!japan' => self::yahooJapan,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -1821,6 +2143,62 @@ enum Company: string implements CompanyInterface
             self::telegram => 'Telegram Messenger Inc.',
             self::qihoo => 'Qihoo 360 Technology Co. Ltd.',
             self::line => 'LINE Corporation',
+            self::tuneIn => 'TuneIn, Inc.',
+            self::onecook => 'Onecook Co., Ltd.',
+            self::intel => 'Intel Corporation',
+            self::readly => 'Readly International',
+            self::avast => 'AVAST Software s.r.o.',
+            self::appsmedia => 'AppsMedia Inc',
+            self::playitTechnology => 'PLAYIT TECHNOLOGY PTE. LTD.',
+            self::xing => 'XING AG',
+            self::fSecure => 'F-Secure Corporation',
+            self::maxthon => 'Maxthon International Limited',
+            self::blueWalletServices => 'BlueWallet Services S. R. L.',
+            self::anyDeskSoftware => 'AnyDesk Software GmbH',
+            self::talkTalkTelecom => 'TalkTalk Telecom Group Limited',
+            self::mopotab => 'MopoTab Inc',
+            self::quora => 'Quora, Inc.',
+            self::morris => 'Morris Xar',
+            self::dezor => 'Dezor SA',
+            self::bestseller => 'Bestseller A/S',
+            self::tenta => 'Tenta LLC',
+            self::buhlDataService => 'Buhl Data Service GmbH',
+            self::baySpringMedia => 'Bay Spring Media LLC',
+            self::volcanoTechnology => 'Volcano Technology Limited',
+            self::reddit => 'reddit inc.',
+            self::nifty => 'NIFTY Corporation',
+            self::canon => 'Canon Inc.',
+            self::intex => 'Intex Technologies (I) Ltd.',
+            self::orange => 'Orange S.A.',
+            self::ipro => 'Shenzhen Zhike Communication Co., Ltd',
+            self::theNewYorkTimes => 'The New York Times Company',
+            self::spring => 'Spring (SG) PTE. LTD.',
+            self::gnome => 'The GNOME Project',
+            self::kde => 'KDE e.V.',
+            self::italiaonline => 'Italiaonline S.p.A.',
+            self::telekom => 'Deutsche Telekom AG',
+            self::armobsoft => 'Armobsoft FZE',
+            self::kaldor => 'Kaldor Ltd.',
+            self::iHeartMedia => 'iHeartMedia Management Services, Inc.',
+            self::oregan => 'Oregan Networks Ltd',
+            self::aol => 'America Online, Inc.',
+            self::ant => 'ANT Software Limited',
+            self::tor => 'The Tor Project',
+            self::orangeLabs => 'Orange Labs UK',
+            self::myriad => 'Myriad Group',
+            self::kddi => 'KDDI Corporation',
+            self::freeSoftwareFoundation => 'Free Software Foundation, Inc.',
+            self::davidRosca => 'David Rosca and Community',
+            self::linkfluence => 'Linkfluence SAS',
+            self::scaDigital => 'SCA Digital Pty Ltd',
+            self::entertainmentNetwork => 'Entertainment Network (India) Ltd.',
+            self::swisscom => 'Swisscom Ltd',
+            self::sonyNetwork => 'Sony Network Communications Inc.',
+            self::salamweb => 'Salam Web Technologies DMCC',
+            self::paloAltoNetworks => 'Palo Alto Networks, Inc.',
+            self::roblox => 'Roblox Corporation',
+            self::bonprix => 'bonprix Handelsgesellschaft mbH',
+            self::spotify => 'Spotify AB',
             self::unknown => null,
             default => $this->value,
         };
@@ -1959,6 +2337,58 @@ enum Company: string implements CompanyInterface
             self::cloudviewTechnology => 'cloudview-technology',
             self::soulSoft => 'soul-soft',
             self::nortonMobile => 'norton-mobile',
+            self::akaMessenger => 'aka-messenger',
+            self::tuneIn => 'tune-in',
+            self::softmeTech => 'softme-tech',
+            self::avast => 'avast-software',
+            self::appsmedia => 'apps-media',
+            self::kaweApps => 'kawe-apps',
+            self::playitTechnology => 'playit-technology',
+            self::fSecure => 'f-secure',
+            self::gTab => 'g-tab',
+            self::kinogoGe => 'kinogo-ge',
+            self::cookieJarApps => 'cookie-jar-apps',
+            self::larsWindolf => 'lars windolf',
+            self::videoDownloadStudio => 'video-download-studio',
+            self::yobiMobi => 'yobi-mobi',
+            self::myHomeScreen => 'my-home-screen',
+            self::blueWalletServices => 'bluewallet-services',
+            self::anyDeskSoftware => 'anydesk-software',
+            self::towoLabs => 'towo-labs',
+            self::talkTalkTelecom => 'talk-talk-telecom',
+            self::startpageCom => 'startpage.com',
+            self::mobileV5 => 'mobile-v5',
+            self::wolvesInteractive => 'wolves-interactive',
+            self::buhlDataService => 'buhl-data-service',
+            self::baySpringMedia => 'bay-spring-media',
+            self::twoKitConsulting => '2kit-consulting',
+            self::volcanoTechnology => 'volcano-technology',
+            self::omshyApps => 'omshy-apps',
+            self::thinkFree => 'think-free',
+            self::wiseplayApps => 'wiseplay-apps',
+            self::theNewYorkTimes => 'new-york-times',
+            self::vishaGroup => 'visha-group',
+            self::gnome => 'the-gnome-project',
+            self::asdDev => 'asd-dev',
+            self::dsTools => 'ds-tools',
+            self::appsForGoogle => 'apps-for-google',
+            self::mediahuisNrc => 'mediahuis-nrc',
+            self::globalMediaEntertainment => 'global-media-entertainment',
+            self::iHeartMedia => 'iheart-media',
+            self::cameronKaiser => 'cameron-kaiser',
+            self::orangeLabs => 'orange-labs',
+            self::mikulasPatocka => 'mikulas-patocka',
+            self::freeSoftwareFoundation => 'free-software-foundation',
+            self::sandLabs => 'sand-labs',
+            self::davidRosca => 'david-rosca',
+            self::scaDigital => 'sca-igital',
+            self::multimediosDigital => 'multimedios-digital',
+            self::entertainmentNetwork => 'entertainment-network',
+            self::sonyNetwork => 'sony-network',
+            self::fancyMobileApps => 'fancy-mobile-apps',
+            self::browserWorks => 'browser-works',
+            self::paloAltoNetworks => 'palo-alto',
+            self::yahooJapan => 'yahoo-japan',
             default => $this->name,
         };
     }

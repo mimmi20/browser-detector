@@ -190,6 +190,7 @@
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 15; HMD Skyline Build/AQ3A.240912.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36"
     },
     "device": {
@@ -219,9 +220,9 @@
       "bits": null
     },
     "client": {
-      "name": "Start",
+      "name": "MSN",
       "modus": null,
-      "version": "141.0.0",
+      "version": null,
       "manufacturer": "Microsoft",
       "type": "mobile-application",
       "isbot": false,

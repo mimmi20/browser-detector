@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformCodeInterface;
 
 use function preg_match;
@@ -28,21 +30,19 @@ final class UaOsPlatformCode implements PlatformCodeInterface
     }
 
     /**
-     * @return non-empty-string|null
-     *
      * @throws void
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
         $matches = [];
 
         if (preg_match('/(?P<name>Windows CE) \(Pocket PC\) - Version \d+\.\d+/', $value, $matches)) {
-            return 'windows ce';
+            return Os::windowsce;
         }
 
-        return null;
+        return Os::unknown;
     }
 }

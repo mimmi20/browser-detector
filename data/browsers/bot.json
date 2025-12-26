@@ -4634,18 +4634,6 @@
     },
     "engine": "unknown"
   },
-  "naver": {
-    "name": "Naver",
-    "manufacturer": "nhn-corporation",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Naver"
-      ]
-    },
-    "engine": null
-  },
   "nbot": {
     "name": "nbot",
     "manufacturer": "unknown",
@@ -5141,18 +5129,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "pandora": {
-    "name": "Pandora",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Pandora"
-      ]
-    },
-    "engine": "webkit"
   },
   "paper.li bot": {
     "name": "Paper.li Bot",
@@ -8703,16 +8679,6 @@
   "yahoo!": {
     "name": "Yahoo!",
     "manufacturer": "yahoo",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
-  "yahoo! japan": {
-    "name": "Yahoo! Japan",
-    "manufacturer": "yahoo-japan",
     "type": "bot",
     "version": {
       "class": null,

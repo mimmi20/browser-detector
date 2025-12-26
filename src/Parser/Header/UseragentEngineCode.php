@@ -13,14 +13,20 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use Override;
+use UaData\EngineInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\EngineCodeInterface;
 use UaParser\EngineParserInterface;
+use UnexpectedValueException;
 
+use function array_filter;
+use function array_map;
 use function mb_strtolower;
 use function preg_match;
+use function reset;
 
 final readonly class UseragentEngineCode implements EngineCodeInterface
 {
@@ -43,35 +49,49 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
 
     /** @throws void */
     #[Override]
-    public function getEngineCode(string $value): string | null
+    public function getEngineCode(string $value): EngineInterface
     {
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
-            return null;
+            return Engine::unknown;
         }
 
         if ($normalizedValue === '' || $normalizedValue === null) {
-            return null;
+            return Engine::unknown;
         }
 
-        $matches = [];
+        $regexes = [
+            '/(?<!o)re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) (?P<engine>gecko)\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
+        ];
 
-        if (preg_match('/(?<!o)re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $normalizedValue, $matches)) {
-            $code = mb_strtolower($matches['engine']);
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
+        );
 
-            return match ($code) {
-                'applewebkit' => 'webkit',
-                default => $code,
-            };
+        $results = array_map(
+            static function (string $regex) use ($normalizedValue): string {
+                $matches = [];
+
+                preg_match($regex, $normalizedValue, $matches);
+
+                return mb_strtolower($matches['engine'] ?? '');
+            },
+            $filtered,
+        );
+
+        $code = reset($results);
+
+        if ($code !== null && $code !== false && $code !== '') {
+            try {
+                return Engine::fromName($code);
+            } catch (UnexpectedValueException) {
+                return Engine::unknown;
+            }
         }
 
-        $code = $this->engineParser->parse($normalizedValue);
-
-        if ($code === '') {
-            return null;
-        }
-
-        return $code;
+        return $this->engineParser->parse($normalizedValue);
     }
 }

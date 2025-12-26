@@ -22,6 +22,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use UaRequest\Exception\NotFoundException;
 use UaRequest\Header\ClientHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
@@ -125,10 +126,15 @@ final class SecChUaTest extends TestCase
             $header->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
-            $header->getPlatformCode(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
-        );
+
+        try {
+            $header->getPlatformCode();
+
+            self::fail('Exception expected');
+        } catch (NotFoundException) {
+            // do nothing
+        }
+
         self::assertFalse(
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
@@ -139,10 +145,15 @@ final class SecChUaTest extends TestCase
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getEngineCode(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
-        );
+
+        try {
+            $header->getEngineCode();
+
+            self::fail('Exception expected');
+        } catch (NotFoundException) {
+            // do nothing
+        }
+
         self::assertFalse(
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
@@ -163,8 +174,8 @@ final class SecChUaTest extends TestCase
     {
         return [
             ['" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"', true, 'chrome', true, '99.0.0'],
-            ['" Not A;Brand";v="99", "Chromium";v="101"', false, null, false, null],
-            ['" Not A;Brand";v="99", "Chromium";v="102", "Microsoft Edge";v="102"', true, 'edge mobile', true, '102.0.0'],
+            ['" Not A;Brand";v="99", "Chromium";v="101"', true, 'chromium', true, '101.0.0'],
+            ['" Not A;Brand";v="99", "Chromium";v="102", "Microsoft Edge";v="102"', true, 'edge', true, '102.0.0'],
             ['" Not A;Brand";v="99", "Chromium";v="101", "Opera";v="101"', true, 'opera', true, '101.0.0'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "Yandex";v="22"', true, 'yabrowser', true, '22.0.0'],
             ['""', false, null, false, null],

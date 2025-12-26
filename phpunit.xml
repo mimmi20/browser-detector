@@ -25,10 +25,11 @@
     failOnWarning="true"
     bootstrap="vendor/autoload.php"
     enforceTimeLimit="false"
-    executionOrder="default"
+    executionOrder="depends,random"
     resolveDependencies="true"
     requireCoverageMetadata="true"
     colors="true"
+    cacheResult="true"
     cacheDirectory="./.reports/.coverage-cache"
     columns="121"
 >

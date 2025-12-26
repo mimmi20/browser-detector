@@ -18,7 +18,7 @@ use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaParser\ClientVersionInterface;
 
-use function reset;
+use function array_first;
 
 final class SecChUaClientVersion implements ClientVersionInterface
 {
@@ -42,9 +42,9 @@ final class SecChUaClientVersion implements ClientVersionInterface
     {
         $list = $this->sort($value);
 
-        $version = reset($list);
+        $version = array_first($list);
 
-        if ($version === false) {
+        if ($version === null) {
             return new ForcedNullVersion();
         }
 

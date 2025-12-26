@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "MOT-MT680_TD/1.0 Android/2.3 (Linux; Android 2.3) Release/04.13.2012 Browser/WAP 2.0 AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MT680",
+      "marketingName": "Motoluxe",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "wap-browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-MT716_TD/1.0 OMS/2.0 (Linux; Android) Release/8.31.2010 Browser/WAP 2.0 (AppleWebKit 528+) Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -91,6 +136,51 @@
   },
   {
     "headers": {
+      "user-agent": "MOT-MT788_TD/1.0 Android/4.0 (Linux; U; Android 4.0.4; zh-cn) Release/05.16.2012 Browser/WAP 2.0 Mozilla/5.0 AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MT788",
+      "marketingName": "Razr I",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "wap-browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-MT870_TD/1.0 Android/2.3 (Linux; Android) Release/5.31.2011 Browser/WAP 2.0 (AppleWebKit 533.1) Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -116,6 +206,96 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "wap-browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-MT887_TD/1.0 Android/4.0 (Linux; U; Android 4.0.3; zh-cn) Release/05.16.2012 Browser/WAP 2.0 Mozilla/5.0 AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MT887",
+      "marketingName": "Razr V",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "wap-browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-MT917_TD/1.0 Android/2.3 (Linux; U; Android 2.3.5; zh-cn) Release/12.09.2011 Browser/WAP 2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MT917",
+      "marketingName": "MT917",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
       "manufacturer": "Google",
       "bits": null
     },

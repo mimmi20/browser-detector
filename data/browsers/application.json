@@ -190,18 +190,6 @@
     },
     "engine": "blink"
   },
-  "bonprix app": {
-    "name": "bonprix App",
-    "manufacturer": "bonprix",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "bonprix mobile App"
-      ]
-    },
-    "engine": null
-  },
   "booking.com app": {
     "name": "Booking.com App",
     "manufacturer": "booking-com",
@@ -223,18 +211,6 @@
       "search": null
     },
     "engine": "webkit"
-  },
-  "chatlyio app": {
-    "name": "Slack",
-    "manufacturer": "slack",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "com\\.tinyspeck\\.chatlyio"
-      ]
-    },
-    "engine": null
   },
   "citrix chrome app": {
     "name": "Citrix Chrome App",
@@ -269,18 +245,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "crosswalk": {
-    "name": "Crosswalk App",
-    "manufacturer": "intel",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Crosswalk"
-      ]
-    },
-    "engine": "blink"
   },
   "crowsnest mobile app": {
     "name": "Crowsnest Mobile App",
@@ -548,16 +512,6 @@
       "search": null
     },
     "engine": "webkit"
-  },
-  "jj2go": {
-    "name": "Jack & Jones to go",
-    "manufacturer": "bestseller",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
   },
   "kamelio app": {
     "name": "Kamelio App",
@@ -925,18 +879,6 @@
     },
     "engine": "webkit"
   },
-  "quora app": {
-    "name": "Quora App",
-    "manufacturer": "quora",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Quora"
-      ]
-    },
-    "engine": "webkit"
-  },
   "rddocuments app": {
     "name": "RDDocuments App",
     "manufacturer": "readdle",
@@ -1274,18 +1216,6 @@
     },
     "engine": "webkit"
   },
-  "twitter app": {
-    "name": "X",
-    "manufacturer": "twitter",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Twitter"
-      ]
-    },
-    "engine": null
-  },
   "uc browser hd": {
     "name": "UC Browser HD",
     "manufacturer": "ucweb",
@@ -1294,18 +1224,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UCBrowserHD"
-      ]
-    },
-    "engine": null
-  },
-  "viber": {
-    "name": "Viber",
-    "manufacturer": "rakuten",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Viber"
       ]
     },
     "engine": null
@@ -1485,19 +1403,6 @@
     },
     "engine": "webkit"
   },
-  "yahoo! app": {
-    "name": "Yahoo! App",
-    "manufacturer": "yahoo",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "jp\\.co\\.yahoo\\.android\\.yjtop",
-        "yjapp"
-      ]
-    },
-    "engine": "webkit"
-  },
   "yahoo! mobile messenger": {
     "name": "Yahoo! Mobile Messenger",
     "manufacturer": "yahoo",
@@ -1531,16 +1436,6 @@
       "search": [
         "YPmobile"
       ]
-    },
-    "engine": null
-  },
-  "youtube app": {
-    "name": "Youtube App",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": null
   },
@@ -1638,30 +1533,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AliApp\\(TB"
-      ]
-    },
-    "engine": null
-  },
-  "client-app": {
-    "name": "Client",
-    "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Client"
-      ]
-    },
-    "engine": null
-  },
-  "sticky-password": {
-    "name": "Sticky Password",
-    "manufacturer": "lamantine-software",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "stickypassword"
       ]
     },
     "engine": null

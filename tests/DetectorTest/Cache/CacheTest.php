@@ -56,6 +56,21 @@ final class CacheTest extends TestCase
             ->method('get')
             ->with($cacheId)
             ->willReturn(['content' => serialize($version)]);
+        $adapter
+            ->expects(self::never())
+            ->method('delete');
+        $adapter
+            ->expects(self::never())
+            ->method('clear');
+        $adapter
+            ->expects(self::never())
+            ->method('getMultiple');
+        $adapter
+            ->expects(self::never())
+            ->method('setMultiple');
+        $adapter
+            ->expects(self::never())
+            ->method('deleteMultiple');
 
         $cache = new Cache($adapter);
 
@@ -85,6 +100,21 @@ final class CacheTest extends TestCase
         $adapter
             ->expects(self::never())
             ->method('get');
+        $adapter
+            ->expects(self::never())
+            ->method('delete');
+        $adapter
+            ->expects(self::never())
+            ->method('clear');
+        $adapter
+            ->expects(self::never())
+            ->method('getMultiple');
+        $adapter
+            ->expects(self::never())
+            ->method('setMultiple');
+        $adapter
+            ->expects(self::never())
+            ->method('deleteMultiple');
 
         assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
@@ -117,6 +147,21 @@ final class CacheTest extends TestCase
             ->method('get')
             ->with('version')
             ->willReturn(null);
+        $adapter
+            ->expects(self::never())
+            ->method('delete');
+        $adapter
+            ->expects(self::never())
+            ->method('clear');
+        $adapter
+            ->expects(self::never())
+            ->method('getMultiple');
+        $adapter
+            ->expects(self::never())
+            ->method('setMultiple');
+        $adapter
+            ->expects(self::never())
+            ->method('deleteMultiple');
 
         assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
@@ -146,6 +191,21 @@ final class CacheTest extends TestCase
         $adapter
             ->expects(self::never())
             ->method('get');
+        $adapter
+            ->expects(self::never())
+            ->method('delete');
+        $adapter
+            ->expects(self::never())
+            ->method('clear');
+        $adapter
+            ->expects(self::never())
+            ->method('getMultiple');
+        $adapter
+            ->expects(self::never())
+            ->method('setMultiple');
+        $adapter
+            ->expects(self::never())
+            ->method('deleteMultiple');
 
         assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);

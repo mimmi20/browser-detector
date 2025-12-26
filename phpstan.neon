@@ -85,7 +85,7 @@ parameters:
       tooWideThrowType: true
 
   cognitive_complexity:
-    class: 51
+    class: 65
     function: 39
 
   type_coverage:
@@ -135,7 +135,7 @@ parameters:
     -
       identifier: throws.unusedType
       paths:
-        - src/Detector.php
+        - src/Collection/Headers.php
     -
       identifier: catch.neverThrown
       paths:

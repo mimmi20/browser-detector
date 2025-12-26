@@ -13,10 +13,12 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
+use UaData\OsInterface;
 use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -60,6 +62,29 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
     public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
     {
         try {
+            $os = Os::fromName((string) $code);
+        } catch (UnexpectedValueException) {
+            $os = Os::unknown;
+        }
+
+        return $this->getVersion($value, $os);
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    #[Override]
+    public function getPlatformVersionWithOs(string $value, OsInterface $os): VersionInterface
+    {
+        return $this->getVersion($value, $os);
+    }
+
+    /** @throws void */
+    private function getVersion(string $value, OsInterface $os): VersionInterface
+    {
+        try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
             return new ForcedNullVersion();
@@ -89,6 +114,15 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             '/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/icq_android\/[\d.]+ \(android; \d+; (?P<version>[\d.]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;[^);\/]+;(?P<version>[\d.]+)/i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/(?P<version>[\d.]+)/i',
+            '/virgin%20radio\/[\d.]+ \/ \(linux; android (?P<version>[\d.]+)\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
+            '/pugpigbolt [\d.]+ \([^);\/,]+, (android|ios) (?P<version>[\d.]+)\) on phone \(model [^)]+\)/i',
+            '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android (?P<version>[\d.]+); sdk:[\d.]+; manufacturer:samsung; model: [^)]+\) okhttp\/[\d.]+/i',
+            '/luminary\/[\d.]+ \(android (?P<version>[\d.]+); [^);\/]+; /i',
+            '/(lbc|heart)\/[\d.]+ android (?P<version>[\d.]+)\/[^);\/]+/i',
+            '/emaudioplayer [\d.]+ \([\d.]+\) \/ android (?P<version>[\d.]+) \/ [^);\/]+/i',
+            '/tivimate\/[\d.]+ \([^);\/]+; android (?P<version>[\d.]+)\)/i',
+            '/classic fm\/[\d.]+ android (?P<version>[\d.]+)\/[^);\/]+/i',
         ];
 
         $filtered = array_filter(
@@ -113,16 +147,16 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             return $this->setVersion($detectedVersion);
         }
 
-        if ($code === null) {
-            $code = $this->platformParser->parse($normalizedValue);
+        if ($os === Os::unknown) {
+            $os = $this->platformParser->parse($normalizedValue);
 
-            if ($code === '') {
+            if ($os === Os::unknown) {
                 return new ForcedNullVersion();
             }
         }
 
         try {
-            $platform = $this->platformLoader->load($code, $normalizedValue);
+            $platform = $this->platformLoader->loadFromOs($os, $normalizedValue);
         } catch (NotFoundException) {
             return new NullVersion();
         }

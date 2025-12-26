@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ja-jp; SBM107SH Build/S0026) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SBM107SH",
-      "marketingName": "Aquos Phone 107SH",
-      "manufacturer": "Sharp",
-      "brand": "softbank",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 3.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SHL22 Build/S2141) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
@@ -458,7 +413,7 @@
       "deviceName": "SHL24",
       "marketingName": "Aquos Phone mini SHL24",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -548,7 +503,7 @@
       "deviceName": "SHL23",
       "marketingName": "Aquos Phone SHL23",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -593,7 +548,7 @@
       "deviceName": "SHL21",
       "marketingName": "Aquos Phone SHL21",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -1839,9 +1794,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1884,9 +1839,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1929,144 +1884,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.5; en-US; sh8158u Build/78AL47)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SH8158U",
-      "marketingName": "SH8158U",
-      "manufacturer": "Sharp",
-      "brand": "Sharp",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 3.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.5",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1.2; en-US; IS05 Build/O290QI)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "IS05",
-      "marketingName": "IS05",
-      "manufacturer": "Sharp",
-      "brand": "Sharp",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.1.2",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.4; en-US; SH8188U Build/7I83V0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SH8188U",
-      "marketingName": "SH8188U",
-      "manufacturer": "Sharp",
-      "brand": "Sharp",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.4",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2109,9 +1929,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2154,9 +1974,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2618,7 +2438,7 @@
       "deviceName": "SHV46",
       "marketingName": "Aquos Sense 3 Plus",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2663,7 +2483,7 @@
       "deviceName": "SHV46",
       "marketingName": "Aquos Sense 3 Plus",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2843,7 +2663,7 @@
       "deviceName": "SHV44",
       "marketingName": "Aquos R3 WiMax 2+",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -2933,7 +2753,7 @@
       "deviceName": "SHV43",
       "marketingName": "Aquos Sense 2 WiMax 2+ LTE",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3158,7 +2978,7 @@
       "deviceName": "SHV42",
       "marketingName": "Aquos R2 WiMax 2+",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3203,7 +3023,7 @@
       "deviceName": "SHV47",
       "marketingName": "Aquos Zero 2 WiMax 2+",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3788,7 +3608,7 @@
       "deviceName": "SHV33",
       "marketingName": "Aquos Phone Serie mini WiMAX 2+",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -4103,7 +3923,7 @@
       "deviceName": "SHV48",
       "marketingName": "Aquos Sense 3 Basic",
       "manufacturer": "Sharp",
-      "brand": "kddi",
+      "brand": "KDDI",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -4496,6 +4316,186 @@
     "engine": {
       "name": "Blink",
       "version": "86.0.4240.198",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; A003SH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "003SH",
+      "marketingName": "Galapagos",
+      "manufacturer": "Sharp",
+      "brand": "softbank",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "90.0.4430.210",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.210",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; A201SH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A201SH",
+      "marketingName": "Simple Smartphone 6",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.74",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SH-S50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SH-S50",
+      "marketingName": "Aquos Sense 5G",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SH-51C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SH-51C",
+      "marketingName": "Aquos Wish 2 (Japan)",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
       "manufacturer": "Google"
     }
   }

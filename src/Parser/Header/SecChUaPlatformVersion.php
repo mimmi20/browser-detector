@@ -13,16 +13,18 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
+use UnexpectedValueException;
 
 use function assert;
 use function is_int;
 use function mb_strpos;
-use function mb_strtolower;
 use function mb_substr;
 use function mb_trim;
 
@@ -43,42 +45,56 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
     #[Override]
     public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
     {
+        try {
+            $os = Os::fromName((string) $code);
+        } catch (UnexpectedValueException) {
+            $os = Os::unknown;
+        }
+
+        return $this->getVersion($value, $os);
+    }
+
+    /** @throws VersionContainsDerivateException */
+    #[Override]
+    public function getPlatformVersionWithOs(string $value, OsInterface $os): VersionInterface
+    {
+        return $this->getVersion($value, $os);
+    }
+
+    /** @throws VersionContainsDerivateException */
+    private function getVersion(string $value, OsInterface $os): VersionInterface
+    {
         $value = mb_trim($value, '"\\\'');
 
         if ($value === '') {
             return new ForcedNullVersion();
         }
 
-        if ($code === null || mb_strtolower($code) !== 'windows') {
-            $derivatePosition = mb_strpos($value, ';');
+        if ($os === Os::windows) {
+            $version = match ((float) $value) {
+                0.1 => '7',
+                0.2 => '8',
+                0.3 => '8.1',
+                10.0 => '10',
+                default => '11',
+            };
 
-            assert($derivatePosition === false || is_int($derivatePosition));
-
-            if ($derivatePosition !== false) {
-                $derivate = mb_trim(mb_substr($value, $derivatePosition + 1));
-
-                $exception = new VersionContainsDerivateException();
-                $exception->setDerivate($derivate);
-
-                throw $exception;
-            }
-
-            return $this->setVersion($value);
+            return $this->setVersion($version);
         }
 
-        $windowsVersion = (float) $value;
+        $derivatePosition = mb_strpos($value, ';');
 
-        if ($windowsVersion < 1) {
-            $windowsVersion      = (int) ($windowsVersion * 10);
-            $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
+        assert($derivatePosition === false || is_int($derivatePosition));
 
-            return $this->setVersion($minorVersionMapping[$windowsVersion] ?? $value);
+        if ($derivatePosition !== false) {
+            $derivate = mb_trim(mb_substr($value, $derivatePosition + 1));
+
+            $exception = new VersionContainsDerivateException();
+            $exception->setDerivate($derivate);
+
+            throw $exception;
         }
 
-        if ($windowsVersion > 10) {
-            return $this->setVersion('11');
-        }
-
-        return $this->setVersion('10');
+        return $this->setVersion($value);
     }
 }

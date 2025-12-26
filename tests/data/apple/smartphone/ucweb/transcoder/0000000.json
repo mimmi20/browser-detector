@@ -338,10 +338,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "15.2.0",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -354,9 +354,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -383,10 +383,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "15.2.1",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -399,99 +399,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "dv(iPh4,1);pr(UCBrowser/10.2.0.517);ov(7_1_2);ss(320x416);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 4,1",
-      "marketingName": "iPhone 4S",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": "7.1.2",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.2.0.517",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "dv(iPh5,2);pr(UCBrowser/11.3.5.1203);ov(10_3_4);ss(320x568);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 5,2",
-      "marketingName": "iPhone 5",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": "10.3.4",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "11.3.5.1203",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -518,10 +428,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "10.3.3",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -534,9 +444,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -563,10 +473,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "10.3.3",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -579,9 +489,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -608,55 +518,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "10.2.1",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "11.3.5.1203",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "dv(iPh6,2);pr(UCBrowser/11.3.5.1203);ov(11_2_6);ss(320x568);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 6,2",
-      "marketingName": "iPhone 5S",
       "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": "11.2.6",
-      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -669,9 +534,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -698,10 +563,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "12.5.7",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -714,9 +579,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -743,10 +608,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "15.8.0",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -759,9 +624,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -788,10 +653,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "15.7.3",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -804,9 +669,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -833,10 +698,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "14.6.0",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -849,9 +714,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -878,10 +743,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "15.5.0",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -894,9 +759,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -923,10 +788,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "15.5.0",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -939,9 +804,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -968,10 +833,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "15.3.1",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -984,9 +849,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1013,10 +878,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "15.6.0",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -1029,9 +894,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1058,10 +923,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "iOS",
+      "marketingName": "iOS",
       "version": "17.3.1",
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -1074,9 +939,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   }
 ]

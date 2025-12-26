@@ -169,7 +169,7 @@ jobs:
           composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
 
       - name: "Run integration tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit-integration.xml --no-coverage --colors --display-warnings --display-deprecations"
+        run: "vendor/bin/phpunit -c phpunit-integration.xml --no-coverage --colors --display-warnings --display-deprecations --display-notices --display-phpunit-notices"
 
       - name: "Enable annotations for validation errors and warnings"
         uses: "korelstar/xmllint-problem-matcher@v1"

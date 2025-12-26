@@ -1,96 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-T217T Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T217T",
-      "marketingName": "Galaxy Tab 3 7.0 LTE (T-Mobile)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "29.0.0.23.13",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "33.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; SCH-I925U Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SCH-I925",
-      "marketingName": "Galaxy Note 10.1 LTE",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "29.0.0.23.13",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; SCH-I905 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
     },
     "device": {
@@ -141,7 +51,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T819",
-      "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
+      "marketingName": "Galaxy Tab S2 9.7\" LTE (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -186,7 +96,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T337V",
-      "marketingName": "Galaxy Tab 4 8.0 4G (Verizon)",
+      "marketingName": "Galaxy Tab 4 8.0\" 4G (Verizon)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -231,7 +141,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T715",
-      "marketingName": "Galaxy Tab S2 8.0 LTE (2015)",
+      "marketingName": "Galaxy Tab S2 8.0\" LTE (2015)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -276,7 +186,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T815",
-      "marketingName": "Galaxy Tab S2 9.7 LTE (2015)",
+      "marketingName": "Galaxy Tab S2 9.7\" LTE (2015)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -321,7 +231,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T555",
-      "marketingName": "Galaxy Tab A 9.7 LTE",
+      "marketingName": "Galaxy Tab A 9.7\" LTE",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -411,7 +321,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T533",
-      "marketingName": "Galaxy Tab 4 10.1 Wi-Fi (2015)",
+      "marketingName": "Galaxy Tab 4 10.1\" Wi-Fi (2015)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -451,57 +361,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-P5210 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 [FB_IAB/MESSENGER;FBAV/104.0.0.13.69;]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-P5210",
-      "marketingName": "Galaxy Tab 3 10.1 3G Wi-Fi",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "104.0.0.13.69",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-T355Y Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Safari/537.36 [FB_IAB/MESSENGER;FBAV/101.0.0.18.337;]"
     },
     "device": {
       "architecture": null,
       "deviceName": "SM-T355Y",
-      "marketingName": "Galaxy Tab A 8.0 4G",
+      "marketingName": "Galaxy Tab A 8.0\" 4G",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -510,7 +375,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -546,7 +411,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-P355",
-      "marketingName": "Galaxy Tab A 8.0 LTE",
+      "marketingName": "Galaxy Tab A 8.0\" LTE",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -555,7 +420,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -591,7 +456,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T285",
-      "marketingName": "Galaxy Tab A (7.0, 2016) LTE",
+      "marketingName": "Galaxy Tab A 7.0\" LTE (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -636,7 +501,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T818",
-      "marketingName": "Galaxy Tab S2 (9.7, 2015) LTE",
+      "marketingName": "Galaxy Tab S2 9.7\" LTE (2015)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -681,7 +546,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-P555",
-      "marketingName": "Galaxy Tab A 9.7 Wi-Fi+ with S Pen",
+      "marketingName": "Galaxy Tab A 9.7\" Wi-Fi+ with S Pen",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -726,7 +591,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T815Y",
-      "marketingName": "Galaxy Tab S2 9.7 LTE (2015)",
+      "marketingName": "Galaxy Tab S2 9.7\" LTE (2015)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -771,7 +636,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T235",
-      "marketingName": "Galaxy Tab 4 7.0 LTE",
+      "marketingName": "Galaxy Tab 4 7.0\" LTE",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -816,7 +681,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T561",
-      "marketingName": "Galaxy Tab E 9.6 3G",
+      "marketingName": "Galaxy Tab E 9.6\" 3G",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -861,7 +726,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T585",
-      "marketingName": "Galaxy Tab A 10.1 LTE (2016)",
+      "marketingName": "Galaxy Tab A 10.1\" LTE (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1041,7 +906,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T595",
-      "marketingName": "Galaxy Tab A 10.5 LTE (2018)",
+      "marketingName": "Galaxy Tab A 10.5\" LTE (2018)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1131,7 +996,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T285",
-      "marketingName": "Galaxy Tab A (7.0, 2016) LTE",
+      "marketingName": "Galaxy Tab A 7.0\" LTE (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1221,7 +1086,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T355Y",
-      "marketingName": "Galaxy Tab A 8.0 4G",
+      "marketingName": "Galaxy Tab A 8.0\" 4G",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1230,7 +1095,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -1266,7 +1131,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T585",
-      "marketingName": "Galaxy Tab A 10.1 LTE (2016)",
+      "marketingName": "Galaxy Tab A 10.1\" LTE (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1311,7 +1176,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T385",
-      "marketingName": "Galaxy Tab A 8.0 LTE (2017)",
+      "marketingName": "Galaxy Tab A 8.0\" LTE (2017)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1320,7 +1185,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -1356,7 +1221,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T719",
-      "marketingName": "Galaxy Tab S2 8.0 LTE (2016)",
+      "marketingName": "Galaxy Tab S2 8.0\" LTE (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1401,7 +1266,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T825",
-      "marketingName": "Galaxy Tab S3 (9.7, LTE)",
+      "marketingName": "Galaxy Tab S3 9.7\" LTE",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1446,7 +1311,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T819",
-      "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
+      "marketingName": "Galaxy Tab S2 9.7\" LTE (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1491,7 +1356,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T561",
-      "marketingName": "Galaxy Tab E 9.6 3G",
+      "marketingName": "Galaxy Tab E 9.6\" 3G",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1581,7 +1446,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T505",
-      "marketingName": "Galaxy Tab A7 10.4 LTE (2020)",
+      "marketingName": "Galaxy Tab A7 10.4\" LTE (2020)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1626,7 +1491,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T295",
-      "marketingName": "Galaxy Tab A 8.0 LTE (2019, Global)",
+      "marketingName": "Galaxy Tab A 8.0\" LTE (2019, Global)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1733,10 +1598,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "Android",
+      "marketingName": "Android",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {

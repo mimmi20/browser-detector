@@ -526,5 +526,53 @@
     },
     "type": "phablet",
     "platform": "ios"
+  },
+  "apple iphone 17,4": {
+    "deviceName": "iPhone 17,4",
+    "marketingName": "iPhone 16 Plus",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2796,
+      "height": 1290,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "ios"
+  },
+  "apple iphone 18,3": {
+    "deviceName": "iPhone 18,3",
+    "marketingName": "iPhone 17",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2622,
+      "height": 1206,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "ios"
+  },
+  "apple iphone 18,1": {
+    "deviceName": "iPhone 18,1",
+    "marketingName": "iPhone 17 Pro",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2622,
+      "height": 1206,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "ios"
   }
 }

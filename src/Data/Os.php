@@ -20,11 +20,14 @@ use BrowserDetector\Version\FirefoxOsFactory;
 use BrowserDetector\Version\IosFactory;
 use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
+use BrowserDetector\Version\RemixOsFactory;
 use BrowserDetector\Version\RimOsFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
 use Override;
+use UaData\CompanyInterface;
+use UaData\OsInterface;
 use UnexpectedValueException;
 
 use function mb_strtolower;
@@ -44,7 +47,7 @@ enum Os: string implements OsInterface
 
     case asha = 'Asha';
 
-    case atvosx = 'ATV OS X';
+    case tvos = 'tvOS';
 
     case audioos = 'audioOS';
 
@@ -246,7 +249,7 @@ enum Os: string implements OsInterface
 
     case androidtv = 'Android TV';
 
-    case lineageos = 'LineageOS';
+    case lineageos = 'Lineage OS';
 
     case aix = 'AIX';
 
@@ -312,6 +315,8 @@ enum Os: string implements OsInterface
 
     case nintendoSwitchOs = 'Nintendo Switch OS';
 
+    case nintendoWiiOs = 'Nintendo Wii OS';
+
     case nucleus = 'Nucleus';
 
     case opensolaris = 'OpenSolaris';
@@ -326,7 +331,7 @@ enum Os: string implements OsInterface
 
     case rimOs = 'RIM OS';
 
-    case rimTabletOs = 'RIM Tablet OS';
+    case rimTabletOs = 'BlackBerry Tablet OS';
 
     case sailfishOs = 'SailfishOS';
 
@@ -367,7 +372,7 @@ enum Os: string implements OsInterface
             'aosp', 'android opensource project' => self::aosp,
             'arklinux', 'ark linux' => self::arklinux,
             'asha' => self::asha,
-            'atvosx', 'atv os x' => self::atvosx,
+            'atvosx', 'atv os x', 'tvos' => self::tvos,
             'audioos', 'audio os' => self::audioos,
             'backtracklinux', 'backtrack linux' => self::backtracklinux,
             'bada' => self::bada,
@@ -468,7 +473,7 @@ enum Os: string implements OsInterface
             'lindows' => self::lindows,
             'wearos', 'wear os', 'wear-os' => self::wearos,
             'androidtv', 'android tv', 'android-tv' => self::androidtv,
-            'lineageos' => self::lineageos,
+            'lineageos', 'lineage os' => self::lineageos,
             'aix' => self::aix,
             'os2', 'os/2' => self::os2,
             'beos' => self::beos,
@@ -501,6 +506,7 @@ enum Os: string implements OsInterface
             'mre', 'maui runtime environment' => self::mre,
             'nintendoos', 'nintendo os' => self::nintendoOs,
             'nintendoswitchos', 'nintendo switch os' => self::nintendoSwitchOs,
+            'nintendowiios', 'nintendo wii os' => self::nintendoWiiOs,
             'nucleus', 'nucleus os' => self::nucleus,
             'opensolaris' => self::opensolaris,
             'solaris' => self::solaris,
@@ -508,7 +514,7 @@ enum Os: string implements OsInterface
             'palmos' => self::palmOs,
             'remixos', 'remix os' => self::remixOs,
             'rimos', 'rim os' => self::rimOs,
-            'rimtabletos', 'rim tablet os' => self::rimTabletOs,
+            'rimtabletos', 'rim tablet os', 'blackberry tablet os' => self::rimTabletOs,
             'sailfishos' => self::sailfishOs,
             'slackwarelinux', 'slackware linux' => self::slackwareLinux,
             'startos' => self::startos,
@@ -570,12 +576,12 @@ enum Os: string implements OsInterface
 
     /** @throws void */
     #[Override]
-    public function getManufacturer(): Company
+    public function getManufacturer(): CompanyInterface
     {
         return match ($this) {
             self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv => Company::google,
             self::asha, self::nokiaos, self::series30, self::series40, self::series60 => Company::nokia,
-            self::atvosx, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh => Company::apple,
+            self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh => Company::apple,
             self::bada => Company::samsung,
             self::cellos, self::orbisos, self::newsos => Company::sony,
             self::fireos => Company::amazon,
@@ -603,7 +609,7 @@ enum Os: string implements OsInterface
             self::mandrivaLinux => Company::mandriva,
             self::morphos => Company::fabienCoeurjoly,
             self::mre => Company::mediatek,
-            self::nintendoOs, self::nintendoSwitchOs => Company::nintendo,
+            self::nintendoOs, self::nintendoSwitchOs, self::nintendoWiiOs => Company::nintendo,
             self::nucleus => Company::acceleratedTechnology,
             self::opensolaris, self::solaris, self::sunos => Company::oracle,
             self::palmOs => Company::palm,
@@ -691,7 +697,6 @@ enum Os: string implements OsInterface
             self::solaris => ['factory' => VersionBuilderFactory::class, 'search' => ['Solaris']],
             self::sunos => ['factory' => VersionBuilderFactory::class, 'search' => ['SunOS']],
             self::palmOs => ['factory' => VersionBuilderFactory::class, 'search' => ['PalmOS']],
-            self::remixOs => ['factory' => VersionBuilderFactory::class, 'search' => ['RemixOS']],
             self::rimTabletOs => ['factory' => VersionBuilderFactory::class, 'search' => ['RIM Tablet OS']],
             self::slackwareLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Slackware']],
             self::suseLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['SUSE']],
@@ -701,8 +706,12 @@ enum Os: string implements OsInterface
             self::puffinOs => ['factory' => VersionBuilderFactory::class, 'search' => ['Cloud Phone']],
             self::viziOs => ['factory' => VersionBuilderFactory::class, 'search' => ['ViziOS']],
             self::ultrix => ['factory' => VersionBuilderFactory::class, 'search' => ['ULTRIX']],
+            self::threadx => ['factory' => VersionBuilderFactory::class, 'search' => ['ThreadX_OS', 'Threadx']],
+            self::cellos => ['factory' => VersionBuilderFactory::class, 'search' => ['PLAYSTATION 3;? ?']],
+            self::orbisos => ['factory' => VersionBuilderFactory::class, 'search' => ['PLAYSTATION [45](?: Pro)? ?']],
+            self::nintendoWiiOs => ['factory' => VersionBuilderFactory::class, 'search' => ['WiiOS']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
-            self::atvosx, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
+            self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
             self::macosx => ['factory' => MacosFactory::class, 'search' => null],
             self::firefoxos => ['factory' => FirefoxOsFactory::class, 'search' => null],
@@ -710,6 +719,7 @@ enum Os: string implements OsInterface
             self::windowsphone => ['factory' => WindowsPhoneOsFactory::class, 'search' => null],
             self::debian, self::debianWithFreeBSDKernel => ['factory' => DebianFactory::class, 'search' => null],
             self::raspbian => ['factory' => RaspbianFactory::class, 'search' => null],
+            self::remixOs => ['factory' => RemixOsFactory::class, 'search' => null],
             self::rimOs => ['factory' => RimOsFactory::class, 'search' => null],
             self::windows2003 => ['factory' => null, 'search' => null, 'value' => 2003],
             self::windows31, self::windowsnt31 => ['factory' => null, 'search' => null, 'value' => 3.1],
@@ -745,7 +755,6 @@ enum Os: string implements OsInterface
     {
         return match ($this) {
             self::amigaos => 'amiga os',
-            self::atvosx => 'atv os x',
             self::audioos => 'audio os',
             self::backtracklinux => 'backtrack linux',
             self::centos => 'cent os linux',
@@ -822,7 +831,7 @@ enum Os: string implements OsInterface
             self::nintendoSwitchOs => 'nintendo switch os',
             self::nucleus => 'nucleus os',
             self::rimOs => 'rim os',
-            self::rimTabletOs => 'rim tablet os',
+            self::rimTabletOs => 'blackberry tablet os',
             self::sailfishOs => 'sailfishos',
             self::slackwareLinux => 'slackware linux',
             self::suseLinux => 'suse linux',

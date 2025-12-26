@@ -3301,6 +3301,7 @@
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 15; 25028RN03Y Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.122 Mobile Safari/537.36"
     },
     "device": {
@@ -3332,7 +3333,7 @@
     "client": {
       "name": "Google Go",
       "modus": null,
-      "version": "141.0.0",
+      "version": null,
       "manufacturer": "Google",
       "type": "mobile-application",
       "isbot": false,

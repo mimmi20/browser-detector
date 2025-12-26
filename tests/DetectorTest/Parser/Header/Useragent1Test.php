@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Engine;
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\UseragentClientCode;
 use BrowserDetector\Parser\Header\UseragentClientVersion;
 use BrowserDetector\Parser\Header\UseragentDeviceCode;
@@ -21,9 +23,7 @@ use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Parser\Helper\DeviceInterface;
-use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\ForcedNullVersion;
-use BrowserDetector\Version\VersionBuilder;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -40,9 +40,7 @@ use UaParser\EngineParserInterface;
 use UaParser\PlatformParserInterface;
 use UaRequest\Header\FullHeader;
 use UaResult\Bits\Bits;
-use UaResult\Company\Company;
 use UaResult\Device\Architecture;
-use UaResult\Engine\Engine;
 use UnexpectedValueException;
 
 use function mb_strtolower;
@@ -60,7 +58,6 @@ final class Useragent1Test extends TestCase
 {
     /**
      * @throws ExpectationFailedException
-     * @throws NotNumericException
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
@@ -80,12 +77,11 @@ final class Useragent1Test extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        string | null $platformCode,
+        Os $platformCode,
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
-        string $engineUa,
-        string | null $engineCode,
+        Engine $engineCode,
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
@@ -96,24 +92,18 @@ final class Useragent1Test extends TestCase
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
-            ->expects(self::any())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn('');
+            ->expects(self::never())
+            ->method('parse');
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
-            ->expects(self::any())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn('');
+            ->expects(self::never())
+            ->method('parse');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
-            ->expects(self::any())
-            ->method('parse')
-            ->with($engineUa)
-            ->willReturn($engineCode);
+            ->expects(self::never())
+            ->method('parse');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -124,19 +114,17 @@ final class Useragent1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
-            ->expects(self::any())
-            ->method('load')
-            ->with($engineCode)
-            ->willReturn(
-                new Engine(
-                    name: null,
-                    manufacturer: new Company(type: '', name: null, brandname: null),
-                    version: (new VersionBuilder())->set((string) $engineVersion),
-                ),
-            );
+            ->expects(self::never())
+            ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
@@ -292,7 +280,7 @@ final class Useragent1Test extends TestCase
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $engineCode === '' ? null : $engineCode,
+            $engineCode,
             $header->getEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -318,7 +306,7 @@ final class Useragent1Test extends TestCase
     }
 
     /**
-     * @return array<int, array<string, bool|string|null>>
+     * @return array<int, array<string, bool|Engine|Os|string|null>>
      *
      * @throws void
      *
@@ -338,12 +326,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'android',
+                'platformCode' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => 'pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -358,12 +345,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'symbian',
+                'platformCode' => Os::symbianOs,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -378,12 +364,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'java',
+                'platformCode' => Os::javaos,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -398,12 +383,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'android',
+                'platformCode' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -418,12 +402,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'windows phone',
+                'platformCode' => Os::windowsphone,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -438,12 +421,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'windows phone',
+                'platformCode' => Os::windowsphone,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -458,12 +440,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'ios',
+                'platformCode' => Os::ios,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -478,12 +459,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => 'ios',
+                'platformCode' => Os::ios,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -498,12 +478,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => null,
+                'platformCode' => Os::unknown,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -512,7 +491,6 @@ final class Useragent1Test extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws NotNumericException
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
@@ -532,12 +510,11 @@ final class Useragent1Test extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        string | null $platformCode,
+        Os $platformCode,
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
-        string $engineUa,
-        string | null $engineCode,
+        Engine $engineCode,
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
@@ -550,24 +527,18 @@ final class Useragent1Test extends TestCase
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
-            ->expects(self::any())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn('');
+            ->expects(self::never())
+            ->method('parse');
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
-            ->expects(self::any())
-            ->method('parse')
-            ->with($ua)
-            ->willReturn('');
+            ->expects(self::never())
+            ->method('parse');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
-            ->expects(self::any())
-            ->method('parse')
-            ->with($engineUa)
-            ->willReturn($engineCode);
+            ->expects(self::never())
+            ->method('parse');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -578,19 +549,17 @@ final class Useragent1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
-            ->expects(self::any())
-            ->method('load')
-            ->with($engineCode)
-            ->willReturn(
-                new Engine(
-                    name: null,
-                    manufacturer: new Company(type: '', name: null, brandname: null),
-                    version: (new VersionBuilder())->set((string) $engineVersion),
-                ),
-            );
+            ->expects(self::never())
+            ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
@@ -746,7 +715,7 @@ final class Useragent1Test extends TestCase
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $engineCode === '' ? null : $engineCode,
+            $engineCode,
             $header->getEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
@@ -772,7 +741,7 @@ final class Useragent1Test extends TestCase
     }
 
     /**
-     * @return array<int, array<string, bool|string|null>>
+     * @return array<int, array<string, bool|Engine|Os|string|null>>
      *
      * @throws void
      *
@@ -792,12 +761,11 @@ final class Useragent1Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.1.0.297',
                 'hasPlatformInfo' => true,
-                'platformCode' => null,
+                'platformCode' => Os::unknown,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.2',
                 'hasEngineInfo' => true,
-                'engineUa' => '',
-                'engineCode' => 'webkit',
+                'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],

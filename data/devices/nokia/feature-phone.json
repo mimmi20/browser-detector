@@ -6734,5 +6734,37 @@
     },
     "type": "feature-phone",
     "platform": "symbian"
+  },
+  "nokia 2720 flip": {
+    "deviceName": "2720 Flip",
+    "marketingName": "2720 Flip",
+    "manufacturer": "hmd-global",
+    "brand": "nokia",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "kaios"
+  },
+  "nokia n950-00": {
+    "deviceName": "N950-00",
+    "marketingName": "N950",
+    "manufacturer": "hmd-global",
+    "brand": "nokia",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "feature-phone",
+    "platform": "meego"
   }
 }

@@ -13,9 +13,12 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformParserInterface;
+use UnexpectedValueException;
 
 use function sprintf;
 
@@ -37,14 +40,20 @@ final readonly class PlatformParser implements PlatformParserInterface
      * @throws void
      */
     #[Override]
-    public function parse(string $useragent): string
+    public function parse(string $useragent): OsInterface
     {
         $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
-        return $this->fileParser->parseFile(
+        $code = $this->fileParser->parseFile(
             sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
             'unknown',
         );
+
+        try {
+            return Os::fromName($code);
+        } catch (UnexpectedValueException) {
+            return Os::unknown;
+        }
     }
 }

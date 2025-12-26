@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use Override;
+use UaData\EngineInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\EngineCodeInterface;
@@ -38,24 +40,18 @@ final readonly class XOperaminiPhoneUaEngineCode implements EngineCodeInterface
 
     /** @throws void */
     #[Override]
-    public function getEngineCode(string $value): string | null
+    public function getEngineCode(string $value): EngineInterface
     {
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
-            return null;
+            return Engine::unknown;
         }
 
         if ($normalizedValue === '' || $normalizedValue === null) {
-            return null;
+            return Engine::unknown;
         }
 
-        $code = $this->engineParser->parse($normalizedValue);
-
-        if ($code === '') {
-            return null;
-        }
-
-        return $code;
+        return $this->engineParser->parse($normalizedValue);
     }
 }

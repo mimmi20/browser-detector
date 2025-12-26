@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaPlatformCode;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -52,7 +53,7 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
             normalizer: $normalizer,
         );
 
-        self::assertNull($object->getPlatformCode($value, $derivate));
+        self::assertSame(Os::unknown, $object->getPlatformCode($value, $derivate));
     }
 
     /**
@@ -82,7 +83,10 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
             normalizer: $normalizer,
         );
 
-        self::assertNull($object->getPlatformCode($value, $derivate));
+        self::assertSame(
+            Os::unknown,
+            $object->getPlatformCode($value, $derivate),
+        );
     }
 
     /**
@@ -112,6 +116,9 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
             normalizer: $normalizer,
         );
 
-        self::assertNull($object->getPlatformCode($value, $derivate));
+        self::assertSame(
+            Os::unknown,
+            $object->getPlatformCode($value, $derivate),
+        );
     }
 }

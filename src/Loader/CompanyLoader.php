@@ -15,6 +15,7 @@ namespace BrowserDetector\Loader;
 
 use Override;
 use RuntimeException;
+use UaData\CompanyInterface;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 
@@ -32,7 +33,7 @@ final readonly class CompanyLoader implements CompanyLoaderInterface
 
     /** @throws NotFoundException */
     #[Override]
-    public function load(string $key): Company
+    public function load(string $key): CompanyInterface
     {
         try {
             $this->initData->init();

@@ -403,7 +403,7 @@
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": "Blink",
@@ -500,11 +500,11 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "97.0.0",
+      "version": null,
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": "Gecko",
@@ -593,7 +593,7 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "78.0.0",
+      "version": null,
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -745,15 +745,10 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "sec-ch-ua-platform-version": "\"\"",
-      "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
-      "sec-ch-ua-full-version": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Opera Air\";v=\"124\"",
       "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 OPR/123.0.0.0"
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 OPR/124.0.0.0"
     },
     "device": {
       "architecture": null,
@@ -775,16 +770,16 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Windows",
+      "marketingName": "Windows",
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "Opera",
+      "name": "Opera Air",
       "modus": null,
-      "version": "123.0.0.0",
+      "version": "124.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -792,7 +787,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "139.0.0.0",
+      "version": "140.0.0.0",
       "manufacturer": "Google"
     }
   }

@@ -51,7 +51,7 @@
     "device": {
       "architecture": null,
       "deviceName": "MRX-W09",
-      "marketingName": "MatePad Pro 10.8 Wi-Fi (2019)",
+      "marketingName": "MatePad Pro 10.8\" Wi-Fi (2019)",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -96,7 +96,7 @@
     "device": {
       "architecture": null,
       "deviceName": "MRX-W19",
-      "marketingName": "MatePad Pro 10.8 Wi-Fi (2019)",
+      "marketingName": "MatePad Pro 10.8\" Wi-Fi (2019)",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -186,7 +186,7 @@
     "device": {
       "architecture": null,
       "deviceName": "BAH3-W09",
-      "marketingName": "MatePad 10.4 Wi-Fi",
+      "marketingName": "MatePad 10.4\" Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -276,7 +276,7 @@
     "device": {
       "architecture": null,
       "deviceName": "BAH3-W59",
-      "marketingName": "MatePad 10.4 Wi-Fi",
+      "marketingName": "MatePad 10.4\" Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -321,7 +321,7 @@
     "device": {
       "architecture": null,
       "deviceName": "CMR-W09",
-      "marketingName": "MediaPad M5 10.8",
+      "marketingName": "MatePad M5 10.8\" Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -586,12 +586,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W29; HMSCore 6.0.1.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MRR-W29",
+      "marketingName": "MatePad Pro 10.8\" (2021) Wi-Fi",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "11.1.4.301",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; SCMR-W09; HMSCore 6.1.0.314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "CMR-W09",
-      "marketingName": "MediaPad M5 10.8",
+      "marketingName": "MatePad M5 10.8\" Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -636,7 +681,7 @@
     "device": {
       "architecture": null,
       "deviceName": "AGS3K-W09",
-      "marketingName": "MatePad T 10s Wi-Fi",
+      "marketingName": "MatePad T10s 10.1\" Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -806,6 +851,51 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W39; HMSCore 6.1.0.314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MRR-W39",
+      "marketingName": "MatePad Pro 10.8\" (2021) Wi-Fi",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "11.1.5.310",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
       "manufacturer": "Google"
     }
   },
@@ -1132,7 +1222,7 @@
     "device": {
       "architecture": null,
       "deviceName": "BAH3-W59",
-      "marketingName": "MatePad 10.4 Wi-Fi",
+      "marketingName": "MatePad 10.4\" Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -1167,6 +1257,96 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRX-W09; HMSCore 6.7.0.322) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.1.2.312 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MRX-W09",
+      "marketingName": "MatePad Pro 10.8\" Wi-Fi (2019)",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "12.1.2.312",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; AGS3K-W00; HMSCore 6.8.0.332) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.0.310 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AGS3K-W00",
+      "marketingName": "MatePad T10s 10.1\" Wi-Fi",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "13.0.0.310",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
       "manufacturer": "Google"
     }
   },
@@ -1217,12 +1397,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; WGRR-W09; HMSCore 6.8.0.332) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.4.310 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "WGRR-W09",
+      "marketingName": "MatePad Pro 12.6\" Wi-Fi (2022)",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.6
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "12.0.4.310",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; AGS3K-W09; HMSCore 6.6.0.349) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.315 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "AGS3K-W09",
-      "marketingName": "MatePad T 10s Wi-Fi",
+      "marketingName": "MatePad T10s 10.1\" Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -1267,7 +1492,7 @@
     "device": {
       "architecture": null,
       "deviceName": "BAH4-W29",
-      "marketingName": "MatePad 10.4 2022 Wi-Fi",
+      "marketingName": "MatePad 10.4\" Wi-Fi (2022)",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -1312,7 +1537,7 @@
     "device": {
       "architecture": null,
       "deviceName": "BAH4-W39",
-      "marketingName": "MatePad 10.4 2022 Wi-Fi",
+      "marketingName": "MatePad 10.4\" Wi-Fi (2022)",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -1625,14 +1850,59 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; TGR-W09; HMSCore 6.14.0.322; GMSCore 0.3.3.1.240913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/15.0.4.312 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TGR-W09",
+      "marketingName": "MatePad 11.5\" S Wi-Fi (2024)",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2800,
+        "height": 1840,
+        "touch": true,
+        "size": 11.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser Mobile",
+      "modus": null,
+      "version": "15.0.4.312",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; BKY-W09; HMSCore 6.14.0.309; GMSCore 0.3.6.244735) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.2.314 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "BKY-W09",
-      "marketingName": "MatePad 12 X (2024)",
+      "marketingName": "MatePad 12 X Wi-Fi (2024)",
       "manufacturer": "Huawei",
-      "brand": "Honor",
+      "brand": "Huawei",
       "dualOrientation": true,
       "simCount": 0,
       "display": {
@@ -1675,7 +1945,7 @@
     "device": {
       "architecture": null,
       "deviceName": "BAH3-W09",
-      "marketingName": "MatePad 10.4 Wi-Fi",
+      "marketingName": "MatePad 10.4\" Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,
@@ -1723,12 +1993,13 @@
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W29; HMSCore 6.15.0.332) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/15.0.10.302 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "MRR-W29",
-      "marketingName": "MatePad Pro 10.8 (2021)",
+      "marketingName": "MatePad Pro 10.8\" (2021) Wi-Fi",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "dualOrientation": true,

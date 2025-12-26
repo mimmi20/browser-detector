@@ -33,7 +33,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.4.7.3000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -78,7 +78,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.3.5.2000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -123,7 +123,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.5.3.1000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -168,7 +168,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.3.5.2000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -213,7 +213,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.4.0.2000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -258,7 +258,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.0.4.1000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -303,7 +303,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.3.5.2000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -348,7 +348,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.3.5.2000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -393,7 +393,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.1.5.2000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -401,6 +401,51 @@
     "engine": {
       "name": "Blink",
       "version": "55.0.2883.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-P5210 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36; Maxthon (4.0.4.1000);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-P5210",
+      "marketingName": "Galaxy Tab 3 10.1\" Wi-Fi",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "4.0.4.1000",
+      "manufacturer": "Maxthon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
       "manufacturer": "Google"
     }
   },
@@ -438,7 +483,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -483,7 +528,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.0.4.1000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -528,7 +573,52 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.3.1.2000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; GT-P5210 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30; Maxthon (4.0.4.1000);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-P5210",
+      "marketingName": "Galaxy Tab 3 10.1\" Wi-Fi",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "4.0.4.1000",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -573,7 +663,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.0.4.1000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -618,7 +708,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.0.4.1000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -663,7 +753,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -708,7 +798,7 @@
       "name": "Maxthon",
       "modus": null,
       "version": "6.2.0.1000",
-      "manufacturer": "maxthon",
+      "manufacturer": "Maxthon",
       "type": "browser",
       "isbot": false,
       "bits": null

@@ -64,6 +64,30 @@ final class DetectorFactoryTest extends TestCase
             ->method('emergency');
 
         $cache = $this->createMock(CacheInterface::class);
+        $cache
+            ->expects(self::never())
+            ->method('get');
+        $cache
+            ->expects(self::never())
+            ->method('set');
+        $cache
+            ->expects(self::never())
+            ->method('delete');
+        $cache
+            ->expects(self::never())
+            ->method('clear');
+        $cache
+            ->expects(self::never())
+            ->method('getMultiple');
+        $cache
+            ->expects(self::never())
+            ->method('setMultiple');
+        $cache
+            ->expects(self::never())
+            ->method('deleteMultiple');
+        $cache
+            ->expects(self::never())
+            ->method('has');
 
         assert($logger instanceof LoggerInterface);
         assert($cache instanceof CacheInterface);

@@ -13,17 +13,20 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use Override;
+use UaData\OsInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformCodeInterface;
 use UaParser\PlatformParserInterface;
+use UnexpectedValueException;
 
 use function array_filter;
+use function array_first;
 use function array_map;
 use function mb_strtolower;
 use function preg_match;
-use function reset;
 
 final readonly class UseragentPlatformCode implements PlatformCodeInterface
 {
@@ -52,26 +55,27 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
-            return null;
+            return Os::unknown;
         }
 
         if ($normalizedValue === '' || $normalizedValue === null) {
-            return null;
+            return Os::unknown;
         }
 
         $matches = [];
 
-        if (preg_match('/ov\((?P<platform>wds|android) (?:[\d_.]+)\);/i', $normalizedValue, $matches)) {
+        if (preg_match('/ov\((?P<platform>wds|android) [\d_.]+\);/i', $normalizedValue, $matches)) {
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'wds' => 'windows phone',
-                default => 'android',
+                'wds' => Os::windowsphone,
+                'android' => Os::android,
+                default => Os::unknown,
             };
         }
 
@@ -79,11 +83,12 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'symbian', 'java' => $code,
-                'windows' => 'windows phone',
-                '42', '44' => 'ios',
-                'linux' => 'android',
-                default => null,
+                'symbian' => Os::symbianOs,
+                'java' => Os::javaos,
+                'windows' => Os::windowsphone,
+                '42', '44' => Os::ios,
+                'linux' => Os::android,
+                default => Os::unknown,
             };
         }
 
@@ -97,6 +102,15 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             '/mozilla\/[\d.]+ \(linux; (?P<platform>android) [\d.]+ ios;/i',
             '/ \/ (?P<platform>android) \d+$/i',
             '/wnyc app\/[\d.]+ (?P<platform>android)\/\d+ /i',
+            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ (?P<platform>kaios)\/[\d.]+/i',
+            '/virgin%20radio\/[\d.]+ \/ \(linux; (?P<platform>android) [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
+            '/pugpigbolt [\d.]+ \([^);\/,]+, (?P<platform>android|ios) [\d.]+\) on phone \(model [^)]+\)/i',
+            '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; (?P<platform>android) [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\) okhttp\/[\d.]+/i',
+            '/luminary\/[\d.]+ \((?P<platform>android) [\d.]+; [^);\/]+; /i',
+            '/(lbc|heart)\/[\d.]+ (?P<platform>android) [\d.]+\/[^);\/]+/i',
+            '/emaudioplayer [\d.]+ \([\d.]+\) \/ (?P<platform>android) [\d.]+ \/ [^);\/]+/i',
+            '/tivimate\/[\d.]+ \([^);\/]+; (?P<platform>android) [\d.]+\)/i',
+            '/classic fm\/[\d.]+ (?P<platform>android) [\d.]+\/[^);\/]+/i',
         ];
 
         $filtered = array_filter(
@@ -116,18 +130,16 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             $filtered,
         );
 
-        $code = reset($results);
+        $code = array_first($results);
 
-        if ($code !== null && $code !== false && $code !== '') {
-            return $code;
+        if ($code !== null && $code !== '') {
+            try {
+                return Os::fromName($code);
+            } catch (UnexpectedValueException) {
+                return Os::unknown;
+            }
         }
 
-        $code = $this->platformParser->parse($normalizedValue);
-
-        if ($code === '') {
-            return null;
-        }
-
-        return $code;
+        return $this->platformParser->parse($normalizedValue);
     }
 }

@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaEngineCode;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -48,7 +49,7 @@ final class XOperaminiPhoneUaEngineCodeTest extends TestCase
 
         $object = new XOperaminiPhoneUaEngineCode(engineParser: $engineParser, normalizer: $normalizer);
 
-        self::assertNull($object->getEngineCode($value));
+        self::assertSame(Engine::unknown, $object->getEngineCode($value));
     }
 
     /**
@@ -74,7 +75,7 @@ final class XOperaminiPhoneUaEngineCodeTest extends TestCase
 
         $object = new XOperaminiPhoneUaEngineCode(engineParser: $engineParser, normalizer: $normalizer);
 
-        self::assertNull($object->getEngineCode($value));
+        self::assertSame(Engine::unknown, $object->getEngineCode($value));
     }
 
     /**
@@ -100,6 +101,6 @@ final class XOperaminiPhoneUaEngineCodeTest extends TestCase
 
         $object = new XOperaminiPhoneUaEngineCode(engineParser: $engineParser, normalizer: $normalizer);
 
-        self::assertNull($object->getEngineCode($value));
+        self::assertSame(Engine::unknown, $object->getEngineCode($value));
     }
 }

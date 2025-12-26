@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformCodeInterface;
 
 use function mb_strtolower;
@@ -32,14 +34,12 @@ final class DeviceStockUaPlatformCode implements PlatformCodeInterface
     }
 
     /**
-     * @return non-empty-string|null
-     *
      * @throws void
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
         $matches = [];
 
@@ -53,15 +53,18 @@ final class DeviceStockUaPlatformCode implements PlatformCodeInterface
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'blackberry' => 'rim os',
-                'iphone os' => 'ios',
-                'mtk' => 'nucleus os',
-                'windows phone os' => 'windows phone',
-                'brew mp' => 'brew',
-                default => $code,
+                'blackberry' => Os::rimOs,
+                'iphone os' => Os::ios,
+                'mtk' => Os::nucleus,
+                'windows phone', 'windows phone os' => Os::windowsphone,
+                'brew', 'brew mp' => Os::brew,
+                'bada' => Os::bada,
+                'mre' => Os::mre,
+                'android' => Os::android,
+                default => Os::unknown,
             };
         }
 
-        return null;
+        return Os::unknown;
     }
 }

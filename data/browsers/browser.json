@@ -1175,7 +1175,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Edge",
-        "Edg"
+        "Edg",
+        "EdgA"
       ]
     },
     "engine": null
@@ -3608,7 +3609,7 @@
     "engine": null
   },
   "samsung-browser-lite": {
-    "name": "Samsung Browser",
+    "name": "Samsung Browser Lite",
     "manufacturer": "samsung",
     "type": "browser",
     "version": {
@@ -4311,7 +4312,7 @@
   },
   "waterfox": {
     "name": "Waterfox",
-    "manufacturer": "waterfox-project",
+    "manufacturer": "browser-works",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -5559,5 +5560,87 @@
       ]
     },
     "engine": "webkit"
+  },
+  "you-browser": {
+    "name": "YouBrowser",
+    "manufacturer": "apps-media",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YouBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "rakuten-browser": {
+    "name": "Rakuten Browser",
+    "manufacturer": "rakuten",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RakutenBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "proxy-browser": {
+    "name": "Proxy Browser",
+    "manufacturer": "ds-tools",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "\\[PB\\/"
+      ]
+    },
+    "engine": null
+  },
+  "browse-here": {
+    "name": "BrowseHere",
+    "manufacturer": "tcl",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "blink"
+  },
+  "uphone-browser": {
+    "name": "UPhone Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UPhoneWebBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "rakuten-web-search": {
+    "name": "Rakuten Web Search",
+    "manufacturer": "rakuten",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RakutenWebsearch"
+      ]
+    },
+    "engine": null
+  },
+  "internet-screenbrowser": {
+    "name": "Internet ScreenBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Internet ScreenBrowser"
+      ]
+    },
+    "engine": null
   }
 }

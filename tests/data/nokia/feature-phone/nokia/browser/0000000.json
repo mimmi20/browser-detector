@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.2 Nokia500/010.029; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.37 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "500",
+      "marketingName": "Asha 500",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.37",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NokiaN73-2/3.0-630.0.2 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -42,6 +87,141 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E66",
+      "marketingName": "E66",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia7230/5.0 (05.71) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "7230",
+      "marketingName": "7230",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 40",
+      "marketingName": "Series 40",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaC3-00/5.0 (08.70) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C3-00",
+      "marketingName": "C3",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -181,6 +361,186 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaX7-00/111.030.0609; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.2.6 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X7-00",
+      "marketingName": "X7",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.4.2.6",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/51.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5230",
+      "marketingName": "Nuron",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.33",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/31.0.017; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N95",
+      "marketingName": "N95",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6650d-1c/03.09; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6650d",
+      "marketingName": "6650d",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NokiaN97_mini/GoBrowser/1.6.0.75"
     },
     "device": {
@@ -271,6 +631,276 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1/073.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E72",
+      "marketingName": "E72",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.26",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN82/20.0.062; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N82",
+      "marketingName": "N82",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia3720c/2.0 (10.16) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "3720c",
+      "marketingName": "3720 classic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03/22.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C5-03",
+      "marketingName": "C5",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.33",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.2/073.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C5-00",
+      "marketingName": "C5",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.26",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6210Navigator/03.25; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6210",
+      "marketingName": "Navigator",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 96,
+        "height": 60,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Nokia203/2.0 (20.52) Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
@@ -316,6 +946,141 @@
   },
   {
     "headers": {
+      "user-agent": "NokiaC3-01/5.0 (07.15) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C3-01",
+      "marketingName": "C3",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaC2-01/5.0 (11.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C2-01",
+      "marketingName": "C2",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaE6-00/111.130.0625; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.2.6 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E6-00",
+      "marketingName": "E6",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": false,
+        "size": 2.46
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.4.2.6",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Nokia6300/2.0 (05.50) Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -357,6 +1122,96 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6303iclassic/5.0 (09.83) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6303i classic",
+      "marketingName": "6303i classic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1/20.0.012; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5800 XpressMusic",
+      "marketingName": "5800 XpressMusic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -451,6 +1306,96 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN96-1/3.00; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N96",
+      "marketingName": "N96",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-2/410.21.010; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E63",
+      "marketingName": "E63",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.36
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1/022.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19974"
     },
     "device": {
@@ -491,6 +1436,51 @@
     "engine": {
       "name": "WebKit",
       "version": "525.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6303classic/2.0 (08.90) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6303 classic",
+      "marketingName": "6303 classic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
       "manufacturer": "Apple"
     }
   },
@@ -541,6 +1531,51 @@
   },
   {
     "headers": {
+      "user-agent": "Nokia300/5.0 (07.57) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "300",
+      "marketingName": "Asha 300",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NokiaE52-1/SymbianOS/9.1 Series60/3.0 3gpp-gba"
     },
     "device": {
@@ -582,6 +1617,51 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.5 Nokia603/113.010.1506; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.2.21 Mobile Safari/535.1 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "603",
+      "marketingName": "603",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.5
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.3.2.21",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -671,6 +1751,51 @@
     "engine": {
       "name": "WebKit",
       "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaX3-00/5.0 (08.40) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X3-00",
+      "marketingName": "X3",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
       "manufacturer": "Apple"
     }
   },
@@ -766,6 +1891,51 @@
   },
   {
     "headers": {
+      "user-agent": "NokiaX3-02/5.0 (05.61) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X3-02",
+      "marketingName": "X3",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NokiaN70-1/5.0705.3.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -811,6 +1981,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E71",
+      "marketingName": "E71",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Nokia501/2.0 (14.0.4) Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
@@ -852,6 +2067,141 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00/40.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X6-00",
+      "marketingName": "X6",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.33",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaX2-00/5.0 (04.80) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X2-00",
+      "marketingName": "X2",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6700c-1/2.0 (07.60) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6700 classic",
+      "marketingName": "6700 classic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -942,6 +2292,951 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2 U Series60/3.1 NokiaN76-1/20.0.041 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N76",
+      "marketingName": "N76",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN78-2/1.00 Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N78",
+      "marketingName": "N78",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-1/10.034; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N79",
+      "marketingName": "N79",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.1; Series60/3.0 NokiaN80-1/3.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N80",
+      "marketingName": "N80",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 416,
+        "height": 352,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-1/10.0.026 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N81",
+      "marketingName": "N81",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN85-1/10.034; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N85",
+      "marketingName": "N85",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5233-2G/10.0.055; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Schemas used: uaprof, MMS, streaming"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5233",
+      "marketingName": "5233",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3 U Series60/3.2 Nokia5320d-1/1.00 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5320d",
+      "marketingName": "5320 XpressMusic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5320di XpressMusic/06.103; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5320di",
+      "marketingName": "5320di",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6120",
+      "marketingName": "6120",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE-90-1/07.02.4.1; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E90",
+      "marketingName": "E90",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 352,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.1; U; [de]; NokiaE50-1/06.41.3.0 Series60/3.0) AppleWebKit/413 (KHTML, like Gecko) Safari/413,gzip(gfe),gzip(gfe)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E50",
+      "marketingName": "E50",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-2/151.34.20; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E51",
+      "marketingName": "E51",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.1; Series60/3.0 NokiaE61i-1/3.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E61i",
+      "marketingName": "E61i",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.1; U; [tr]; NokiaN73-1/3.0638.0.0.1 Series60/3.0) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N73",
+      "marketingName": "N73",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia5250/10.0.021; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5250",
+      "marketingName": "5250",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6124c/4.34; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6124c",
+      "marketingName": "6124 classic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5730s-1/100.48.122; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5730s",
+      "marketingName": "5730s XpressMusic side slide",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6220c-1/03.23; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6220 classic",
+      "marketingName": "6220 classic",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6790s-1c/03.38; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6790s",
+      "marketingName": "6790s",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaE75-1/100.48.78 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E75",
+      "marketingName": "E75",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1212,51 +3507,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN78-1/10.136; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHT"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "N78",
-      "marketingName": "N78",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": null,
-      "manufacturer": "Nokia",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "413.0.0",
-      "manufacturer": "Apple"
     }
   },
   {
@@ -1621,51 +3871,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Symbian0S/9.2 U; Series60/3.1 NokiaN95_8GB/15.0.012 Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko/413)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "N95",
-      "marketingName": "N95",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": null,
-      "manufacturer": "Nokia",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "413.0.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "NokiaN95-5/11.2.011 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -1797,6 +4002,51 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97mini/30.0.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.27 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N97 Mini",
+      "marketingName": "N97 Mini",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.27",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2219,2256 +4469,6 @@
       "display": {
         "width": 320,
         "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2220slider"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2220 slide",
-      "marketingName": "2220 slide",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2300"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "230",
-      "marketingName": "Asha 230",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2320 CLASSIC"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2320",
-      "marketingName": "2320",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2322c_CMCC/2.0 (08.20) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2322c",
-      "marketingName": "2322 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2323c/2.0 (08.20) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2323c",
-      "marketingName": "2323 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2330c/2.0 (06.46) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2330 classic",
-      "marketingName": "2330 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2600"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2600",
-      "marketingName": "2600",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.5
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2600C"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2600 classic",
-      "marketingName": "2600 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.77
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MSISDN=Nokia2610/2.0 (04.50) Profile/MIDP-2.0 Configuration/CLDC-1.1;"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2610",
-      "marketingName": "2610",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2626"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2626",
-      "marketingName": "2626",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA2630/2.0 (05.61) PROFILE/MIDP-2.1 CONFIGURATION/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2630",
-      "marketingName": "2630",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2650"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2650",
-      "marketingName": "2650",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.4
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2652"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2652",
-      "marketingName": "2652",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2660"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2660",
-      "marketingName": "2660",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.85
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2680"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2680",
-      "marketingName": "2680",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2680s"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2680 slide",
-      "marketingName": "2680 slide",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2692_CMCC/2.0 (10.10) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2692",
-      "marketingName": "2692",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2700c-2-07.80 JConf/CLDC-1.1 JProf/MIDP-2.1 Encoding/ISO-8859-1 Locale/en Lang/ar Caps/348 Morange/6.0.4.110729 Domain/@voda_egypt CJME/110729"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2700 classic",
-      "marketingName": "2700 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "Access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2710c"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2710 classic",
-      "marketingName": "2710 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2720A"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2720",
-      "marketingName": "2720",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2730c/2.0 (07.60) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2730 classic",
-      "marketingName": "2730 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-2855"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2855",
-      "marketingName": "2855",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA2855I"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2855i",
-      "marketingName": "2855i",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2865i"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2865i",
-      "marketingName": "2865i",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3000/5.0 (07.03) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "300",
-      "marketingName": "Asha 300",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia308A/2.0 (0.1324.0) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "308",
-      "marketingName": "Asha 308",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3100"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3100",
-      "marketingName": "3100",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.5
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA3100B"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3100b",
-      "marketingName": "3100b",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3105"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3105",
-      "marketingName": "3105",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.5
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3108"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3108",
-      "marketingName": "3108",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.45
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3120"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3120",
-      "marketingName": "3120",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3120B"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3120b",
-      "marketingName": "3120b",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3120Classic/2.0 (06.20) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3120 classic",
-      "marketingName": "3120 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3125"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3125",
-      "marketingName": "3125",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.5
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3128"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3128",
-      "marketingName": "3128",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3155"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3155",
-      "marketingName": "3155",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3155I"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3155i",
-      "marketingName": "3155i",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3205"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3205",
-      "marketingName": "3205",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.56
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3210/1.0 (test)test"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3210",
-      "marketingName": "3210",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 84,
-        "height": 48,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3220"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3220",
-      "marketingName": "3220",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3300"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3300",
-      "marketingName": "3300",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.7
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3320/1.2.1 (2.06)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3320",
-      "marketingName": "3320",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 84,
-        "height": 48,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia 3330 v0.13 (compatible; YOSPACE SmartPhone Emulator Website Edition 1.11)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3330",
-      "marketingName": "3330",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3350/1.0 (05.22)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3350",
-      "marketingName": "3350",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3360/1.2.1 (1.04)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3360",
-      "marketingName": "3360",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 84,
-        "height": 48,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3395/1.0 (03.00)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3395",
-      "marketingName": "3395",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3410"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3410",
-      "marketingName": "3410",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia 3500 classic"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "500",
-      "marketingName": "Asha 500",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": false,
-        "size": 3.2
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3510"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3510",
-      "marketingName": "3510",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3510I"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "3510i",
-      "marketingName": "3510i",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 96,
-        "height": 65,
         "touch": false,
         "size": null
       },

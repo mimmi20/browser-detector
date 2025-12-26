@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A715F Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36 OPX/1.6"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A715F",
-      "marketingName": "Galaxy A71 4G",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera GX",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "103.0.5060.129",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36 OPT/2.9"
     },
     "device": {
@@ -220,7 +175,7 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "102.0.5005.134",
+      "version": "88.0.4412.53",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -1000,7 +955,7 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "110.0.5481.192",
+      "version": "96.0.4693.50",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4420,7 +4375,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A166B",
-      "marketingName": "Galaxy A16 5G",
+      "marketingName": "Galaxy A16 5G (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -4455,6 +4410,60 @@
     "engine": {
       "name": "Blink",
       "version": "140.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-S936B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"16\"",
+      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Opera\";v=\"126\", \"OperaMobile\";v=\"93\", \"Chromium\";v=\"142\"",
+      "sec-ch-ua-full-version": "\"93.2.4906.86283\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 OPR/93.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S936B",
+      "marketingName": "Galaxy S25 Plus (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "93.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "142.0.0.0",
       "manufacturer": "Google"
     }
   }

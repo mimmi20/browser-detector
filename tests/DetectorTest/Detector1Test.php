@@ -183,6 +183,9 @@ final class Detector1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -193,6 +196,9 @@ final class Detector1Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -265,9 +271,8 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('getClientCode');
         $header
-            ->expects(self::once())
-            ->method('hasClientVersion')
-            ->willReturn(false);
+            ->expects(self::never())
+            ->method('hasClientVersion');
         $header
             ->expects(self::never())
             ->method('getClientVersion');
@@ -409,6 +414,9 @@ final class Detector1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -419,6 +427,9 @@ final class Detector1Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -494,9 +505,8 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('getClientCode');
         $header
-            ->expects(self::once())
-            ->method('hasClientVersion')
-            ->willReturn(false);
+            ->expects(self::never())
+            ->method('hasClientVersion');
         $header
             ->expects(self::never())
             ->method('getClientVersion');
@@ -638,6 +648,9 @@ final class Detector1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -648,6 +661,9 @@ final class Detector1Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,
@@ -722,9 +738,8 @@ final class Detector1Test extends TestCase
             ->expects(self::never())
             ->method('getClientCode');
         $header
-            ->expects(self::once())
-            ->method('hasClientVersion')
-            ->willReturn(false);
+            ->expects(self::never())
+            ->method('hasClientVersion');
         $header
             ->expects(self::never())
             ->method('getClientVersion');
@@ -794,7 +809,7 @@ final class Detector1Test extends TestCase
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
-                'bits' => null,
+                'bits' => $bits->value,
             ],
             'engine' => [
                 'name' => null,
@@ -866,6 +881,9 @@ final class Detector1Test extends TestCase
         $platformLoader
             ->expects(self::never())
             ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -876,6 +894,9 @@ final class Detector1Test extends TestCase
         $engineLoader
             ->expects(self::never())
             ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
 
         $detector = new Detector(
             $logger,

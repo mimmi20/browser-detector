@@ -1,6 +1,99 @@
 [
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Headless Chrome",
+      "modus": null,
+      "version": "129.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/999.0 (KHTML like Gecko) Chrome/99.0 Safari/999.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot"
     },
     "device": {
@@ -42,6 +135,54 @@
       "name": "Blink",
       "version": "131.0.0.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": "131.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -262,10 +403,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -371,6 +512,102 @@
       "name": "Blink",
       "version": "132.0.6834.110",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": "133.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": "136.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -641,10 +878,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -689,10 +926,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -883,10 +1120,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -913,7 +1150,9 @@
       "sec-ch-ua-full-version": "\"138.0.0.0\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -959,15 +1198,10 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"P10\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"15.0.0\"",
-      "sec-ch-ua": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
-      "sec-ch-ua-full-version": "\"137.0.7151.115\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
       "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
     },
     "device": {
       "architecture": null,
@@ -976,11 +1210,11 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": null,
+        "touch": false,
         "size": null
       },
       "type": "unknown",
@@ -989,25 +1223,25 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "Google",
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
-      "name": "Chrome",
+      "name": "Chromium",
       "modus": null,
-      "version": "137.0.0",
+      "version": "138.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "137.0.0.0",
-      "manufacturer": "Google"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -1060,15 +1294,10 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"E6_EEA\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"14.0.0\"",
-      "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"",
-      "sec-ch-ua-full-version": "\"138.0.7204.63\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
       "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (compatible; HubSpot Crawler; +https://www.hubspot.com)"
     },
     "device": {
       "architecture": null,
@@ -1077,11 +1306,11 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": null,
+        "touch": false,
         "size": null
       },
       "type": "unknown",
@@ -1090,14 +1319,14 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "Google",
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
-      "name": "Chrome",
+      "name": "Chromium",
       "modus": null,
       "version": "138.0.0",
       "manufacturer": "Google",
@@ -1106,9 +1335,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "138.0.0.0",
-      "manufacturer": "Google"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -1120,7 +1349,9 @@
       "sec-ch-ua-full-version": "\"139.0.0.0\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -1239,10 +1470,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -1303,6 +1534,54 @@
       "name": "Blink",
       "version": "131.0.0.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": "139.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -1385,10 +1664,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -1415,7 +1694,9 @@
       "sec-ch-ua-full-version": "\"140.0.0.0\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -1558,7 +1839,9 @@
       "sec-ch-ua-full-version": "\"141.0.0.0\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -1629,10 +1912,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -1861,10 +2144,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -1909,16 +2192,16 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "131.0.0.0",
+      "version": "140.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -1957,14 +2240,62 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
       "name": "Chrome",
+      "modus": null,
+      "version": "141.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chromium",
       "modus": null,
       "version": "141.0.0",
       "manufacturer": "Google",
@@ -2078,6 +2409,7 @@
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Sogou web spider/4.0"
     },
     "device": {
@@ -2100,10 +2432,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -2196,10 +2528,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -2256,7 +2588,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "141.0.0.0",
+      "version": "141.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -2307,7 +2639,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "141.0.0.0",
+      "version": "141.0.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -2346,10 +2678,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -2376,7 +2708,9 @@
       "sec-ch-ua-full-version": "\"142.0.0.0\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -2430,6 +2764,7 @@
       "sec-ch-ua-bitness": "\"64\"",
       "sec-ch-ua-arch": "\"x64\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "pc"
     },
     "device": {
@@ -2465,7 +2800,7 @@
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
-      "bits": null
+      "bits": 64
     },
     "engine": {
       "name": null,
@@ -2530,7 +2865,9 @@
       "sec-ch-ua-full-version": "\"142.0.7444.171\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -2572,6 +2909,99 @@
       "name": "Blink",
       "version": "142.0.0.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36 Mozilla/5.0 (X11;"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "131.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "131.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "143.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

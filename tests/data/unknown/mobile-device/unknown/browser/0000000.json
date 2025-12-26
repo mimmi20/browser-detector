@@ -565,7 +565,7 @@
     "os": {
       "name": "Remix OS",
       "marketingName": "Remix OS",
-      "version": "5.1.1",
+      "version": "1.0.0",
       "manufacturer": "Jide",
       "bits": null
     },
@@ -610,7 +610,7 @@
     "os": {
       "name": "Remix OS",
       "marketingName": "Remix OS",
-      "version": "6.0.0",
+      "version": "2.0.0",
       "manufacturer": "Jide",
       "bits": null
     },
@@ -627,6 +627,51 @@
       "name": "Blink",
       "version": "44.0.2403.119",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TOPS/1.0 WoPhone/1.0 UPhone/1.0 Browser/UPhoneWebBrowser1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 Mozilla/5.0+(Linux;+U;+UPhone+TOPS+1.0UPhone+TOPS+1.0;+zh-cn;+Android+9.8)+AppleWebKit/532.9++UPhoneWebKit/532.9++(KHTML, like Gecko)+Mobile+Safari/532.9+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "WoPhone",
+      "marketingName": "WoPhone",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "UPhone Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "532.9.0",
+      "manufacturer": "Apple"
     }
   },
   {

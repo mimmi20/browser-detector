@@ -24,6 +24,7 @@ use UaParser\DeviceParserInterface;
 use UaParser\EngineParserInterface;
 use UaParser\PlatformParserInterface;
 use UaRequest\Constants;
+use UaRequest\Exception\NotFoundException;
 use UaRequest\Header\ClientHeader;
 use UaRequest\Header\DeviceCodeOnlyHeader;
 use UaRequest\Header\FullHeader;
@@ -34,15 +35,16 @@ use UaRequest\Header\PlatformHeader;
 use UaRequest\Header\PlatformVersionOnlyHeader;
 use UaRequest\Header\SecChUaArch;
 use UaRequest\Header\SecChUaBitness;
+use UaRequest\Header\SecChUaFormFactors;
 use UaRequest\Header\SecChUaFullVersion;
 use UaRequest\Header\SecChUaMobile;
+use UaRequest\Header\SecChUaWow64;
 use UaRequest\Header\XOperaminiPhoneUa;
 use UaRequest\Header\XPuffinUa;
 use UaRequest\Header\XRequestedWith;
 use UaRequest\Header\XUcbrowserDeviceUa;
 use UaRequest\Header\XUcbrowserPhoneUa;
 use UaRequest\Headers;
-use UaRequest\NotFoundException;
 
 use function sprintf;
 
@@ -106,16 +108,16 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 engineCode: new DeviceStockUaEngineCode(),
                 engineVersion: new DeviceStockUaEngineVersion(),
             ),
-            Headers::HEADER_SEC_CH_UA => new ClientHeader(
+            Headers::HEADER_SEC_CH_UA, Headers::HEADER_SEC_CH_UA_FULL_VERSION_LIST => new ClientHeader(
                 value: $value,
                 clientCode: new SecChUaClientCode(),
                 clientVersion: new SecChUaClientVersion(),
             ),
             Headers::HEADER_SEC_CH_UA_ARCH => new SecChUaArch(value: $value),
+            Headers::HEADER_SEC_CH_FORM_FACTORS => new SecChUaFormFactors(value: $value),
             Headers::HEADER_SEC_CH_UA_BITNESS => new SecChUaBitness(value: $value),
-            Headers::HEADER_SEC_CH_UA_FULL_VERSION, Headers::HEADER_SEC_CH_UA_FULL_VERSION_LIST => new SecChUaFullVersion(
-                value: $value,
-            ),
+            Headers::HEADER_SEC_CH_WOW64 => new SecChUaWow64(value: $value),
+            Headers::HEADER_SEC_CH_UA_FULL_VERSION => new SecChUaFullVersion(value: $value),
             Headers::HEADER_SEC_CH_UA_MOBILE => new SecChUaMobile(value: $value),
             Headers::HEADER_SEC_CH_UA_MODEL => new DeviceCodeOnlyHeader(
                 value: $value,

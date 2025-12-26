@@ -46,6 +46,13 @@ final class EngineLoader implements EngineLoaderInterface
             $engine = \BrowserDetector\Data\Engine::unknown;
         }
 
+        return $this->loadFromEngine($engine, $useragent);
+    }
+
+    /** @throws void */
+    #[Override]
+    public function loadFromEngine(\UaData\EngineInterface $engine, string $useragent = ''): EngineInterface
+    {
         $version      = $this->getVersion((object) $engine->getVersion(), $useragent);
         $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 

@@ -13,7 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Data\Os;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformCodeInterface;
 
 use function mb_strtolower;
@@ -41,7 +43,7 @@ final class XUcbrowserUaPlatformCode implements PlatformCodeInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getPlatformCode(string $value, string | null $derivate = null): string | null
+    public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
     {
         $matches = [];
 
@@ -49,14 +51,15 @@ final class XUcbrowserUaPlatformCode implements PlatformCodeInterface
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'symbian', 'java' => $code,
-                'windows' => 'windows phone',
-                '42', '44' => 'ios',
-                'linux' => 'android',
-                default => null,
+                'symbian' => Os::symbianOs,
+                'java' => Os::javaos,
+                'windows' => Os::windowsphone,
+                '42', '44' => Os::ios,
+                'linux' => Os::android,
+                default => Os::unknown,
             };
         }
 
-        return null;
+        return Os::unknown;
     }
 }

@@ -67,6 +67,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "XING-iPhone",
         "XING"
       ]
     },
@@ -229,6 +230,16 @@
       "search": [
         "NewsSapphire"
       ]
+    },
+    "engine": null
+  },
+  "msn-app": {
+    "name": "MSN",
+    "manufacturer": "microsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   },
@@ -1436,8 +1447,11 @@
     "manufacturer": "visha-group",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VISHAAPP ",
+        "VISHAAPP"
+      ]
     },
     "engine": null
   },
@@ -1636,8 +1650,10 @@
     "manufacturer": "new-york-times",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nyt_android"
+      ]
     },
     "engine": null
   },
@@ -1842,7 +1858,7 @@
     "engine": null
   },
   "coupons-promo-codes": {
-    "name": "Coupons & Promo Codes",
+    "name": "Coupons & Deals",
     "manufacturer": "bay-spring-media",
     "type": "mobile-application",
     "version": {
@@ -1862,12 +1878,14 @@
     "engine": null
   },
   "smart-life": {
-    "name": "Smart Life",
+    "name": "Tuya Smart Life",
     "manufacturer": "volcano-technology",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuyaSmart"
+      ]
     },
     "engine": null
   },
@@ -1896,8 +1914,10 @@
     "manufacturer": "reddit",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Reddit\\/Version"
+      ]
     },
     "engine": null
   },
@@ -2314,5 +2334,539 @@
       "search": null
     },
     "engine": null
+  },
+  "threads-app": {
+    "name": "Threads",
+    "manufacturer": "meta",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Barcelona"
+      ]
+    },
+    "engine": null
+  },
+  "tunein-radio": {
+    "name": "TuneIn Radio",
+    "manufacturer": "tune-in",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuneIn Radio"
+      ]
+    },
+    "engine": null
+  },
+  "viber": {
+    "name": "Viber",
+    "manufacturer": "rakuten",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Viber"
+      ]
+    },
+    "engine": null
+  },
+  "douyin-app": {
+    "name": "Douyin",
+    "manufacturer": "softme-tech",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "aweme app_version",
+        "aweme"
+      ]
+    },
+    "engine": null
+  },
+  "client-app": {
+    "name": "Client",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Client"
+      ]
+    },
+    "engine": null
+  },
+  "wiseplay": {
+    "name": "Wiseplay",
+    "manufacturer": "wiseplay-apps",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "pandora": {
+    "name": "Pandora",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pandora"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "youtube app": {
+    "name": "Youtube App",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.ios\\.youtube"
+      ]
+    },
+    "engine": null
+  },
+  "twitter app": {
+    "name": "X",
+    "manufacturer": "twitter",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twitter"
+      ]
+    },
+    "engine": null
+  },
+  "crosswalk": {
+    "name": "Crosswalk App",
+    "manufacturer": "intel",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Crosswalk"
+      ]
+    },
+    "engine": "blink"
+  },
+  "reuters-news": {
+    "name": "Reuters News",
+    "manufacturer": "reuters",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Reuters News",
+        "ReutersNews"
+      ]
+    },
+    "engine": "blink"
+  },
+  "chatlyio app": {
+    "name": "Slack",
+    "manufacturer": "slack",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.tinyspeck\\.chatlyio"
+      ]
+    },
+    "engine": null
+  },
+  "naver": {
+    "name": "Naver",
+    "manufacturer": "nhn-corporation",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NAVER\\(inapp; search; \\d+; ",
+        "Naver"
+      ]
+    },
+    "engine": null
+  },
+  "sticky-password": {
+    "name": "Sticky Password",
+    "manufacturer": "lamantine-software",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "stickypassword"
+      ]
+    },
+    "engine": null
+  },
+  "google-nest-hub": {
+    "name": "Google Nest Hub",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "hd-video-player-all-formats": {
+    "name": "HD Video Player All Formats",
+    "manufacturer": "asd-dev",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "google-assistant": {
+    "name": "Google Assistant",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OPA"
+      ]
+    },
+    "engine": null
+  },
+  "virgin-radio": {
+    "name": "Virgin Radio",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Virgin Radio",
+        "Virgin%20Radio"
+      ]
+    },
+    "engine": null
+  },
+  "npr-app": {
+    "name": "NPR: National & Local News",
+    "manufacturer": "npr",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nprone_android"
+      ]
+    },
+    "engine": null
+  },
+  "youtube-music": {
+    "name": "Youtube Music",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.android\\.apps\\.youtube\\.music"
+      ]
+    },
+    "engine": null
+  },
+  "tencent-docs": {
+    "name": "Tencent Docs",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TencentDocs"
+      ]
+    },
+    "engine": null
+  },
+  "google-drive": {
+    "name": "Google Drive",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.Drive"
+      ]
+    },
+    "engine": null
+  },
+  "google-drive-shareextension": {
+    "name": "Google Drive ShareExtension",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.Drive\\.ShareExtension"
+      ]
+    },
+    "engine": null
+  },
+  "tivimate-app": {
+    "name": "TiviMate",
+    "manufacturer": "armobsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TiviMate"
+      ]
+    },
+    "engine": null
+  },
+  "pugpig-bolt": {
+    "name": "PugPig Bolt",
+    "manufacturer": "kaldor",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PugpigBolt"
+      ]
+    },
+    "engine": null
+  },
+  "podverse-app": {
+    "name": "Podverse - Podcast Player",
+    "manufacturer": "podverse",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "tivi-mate": {
+    "name": "TiviMate",
+    "manufacturer": "tcl",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "blink"
+  },
+  "nrc-audio": {
+    "name": "NRC Audio",
+    "manufacturer": "mediahuis-nrc",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NRC Audio"
+      ]
+    },
+    "engine": null
+  },
+  "luminary": {
+    "name": "Luminary",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Luminary"
+      ]
+    },
+    "engine": null
+  },
+  "lbc": {
+    "name": "LBC",
+    "manufacturer": "global-media-entertainment",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LBC"
+      ]
+    },
+    "engine": null
+  },
+  "kajabi-app": {
+    "name": "Kajabi",
+    "manufacturer": "kajabi",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kajabi"
+      ]
+    },
+    "engine": null
+  },
+  "iheart-radio": {
+    "name": "iHeartRadio",
+    "manufacturer": "iheart-media",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iHeartRadio"
+      ]
+    },
+    "engine": null
+  },
+  "heart": {
+    "name": "Heart",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heart"
+      ]
+    },
+    "engine": null
+  },
+  "emaudioplayer": {
+    "name": "EMAudioPlayer",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EMAudioPlayer"
+      ]
+    },
+    "engine": null
+  },
+  "listnr": {
+    "name": "LiSTNR",
+    "manufacturer": "sca-igital",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LiSTNR\\.au\\.com\\.podcastoneaustralia"
+      ]
+    },
+    "engine": null
+  },
+  "de-standaard": {
+    "name": "De Standaard",
+    "manufacturer": "mediahuis",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DS podcast"
+      ]
+    },
+    "engine": null
+  },
+  "classic-fm": {
+    "name": "Classic FM",
+    "manufacturer": "multimedios-digital",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Classic FM"
+      ]
+    },
+    "engine": null
+  },
+  "gaana": {
+    "name": "Gaana",
+    "manufacturer": "entertainment-network",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GaanaAndroid\\-",
+        "GaanaAndroid"
+      ]
+    },
+    "engine": null
+  },
+  "apkxdl": {
+    "name": "APK Downloader",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "quora app": {
+    "name": "Quora App",
+    "manufacturer": "quora",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Quora"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bonprix app": {
+    "name": "BonPrix App",
+    "manufacturer": "bonprix",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "bonprix mobile App"
+      ]
+    },
+    "engine": null
+  },
+  "huawei-mobile-services": {
+    "name": "Huawei Mobile Services",
+    "manufacturer": "huawei",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HMSCore"
+      ]
+    },
+    "engine": null
+  },
+  "roblox-app": {
+    "name": "Roblox",
+    "manufacturer": "roblox",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RobloxApp"
+      ]
+    },
+    "engine": null
+  },
+  "jj2go": {
+    "name": "Jack & Jones to go",
+    "manufacturer": "bestseller",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RelesysApp\\/"
+      ]
+    },
+    "engine": null
+  },
+  "yahoo! japan": {
+    "name": "Yahoo! Japan",
+    "manufacturer": "yahoo-japan",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.android\\.yjtop",
+        "yjapp"
+      ]
+    },
+    "engine": "webkit"
   }
 }

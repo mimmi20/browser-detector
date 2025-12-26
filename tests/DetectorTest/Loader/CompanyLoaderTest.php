@@ -187,8 +187,8 @@ final class CompanyLoaderTest extends TestCase
         );
         self::assertSame(
             $brand,
-            $result->getBrandName(),
-            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")',
+            $result->getBrandname(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandname() . '")',
         );
     }
 
@@ -229,8 +229,8 @@ final class CompanyLoaderTest extends TestCase
         );
         self::assertSame(
             $brand,
-            $result->getBrandName(),
-            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")',
+            $result->getBrandname(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandname() . '")',
         );
     }
 

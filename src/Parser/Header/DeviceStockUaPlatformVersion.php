@@ -16,6 +16,7 @@ namespace BrowserDetector\Parser\Header;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
+use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
 
 use function preg_match;
@@ -42,6 +43,23 @@ final class DeviceStockUaPlatformVersion implements PlatformVersionInterface
      */
     #[Override]
     public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
+    {
+        return $this->getVersion($value);
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    #[Override]
+    public function getPlatformVersionWithOs(string $value, OsInterface $os): VersionInterface
+    {
+        return $this->getVersion($value);
+    }
+
+    /** @throws void */
+    private function getVersion(string $value): VersionInterface
     {
         $matches = [];
 

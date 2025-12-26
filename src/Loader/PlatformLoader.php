@@ -50,6 +50,13 @@ final class PlatformLoader implements PlatformLoaderInterface
             $os = \BrowserDetector\Data\Os::unknown;
         }
 
+        return $this->loadFromOs($os, $useragent);
+    }
+
+    /** @throws void */
+    #[Override]
+    public function loadFromOs(\UaData\OsInterface $os, string $useragent = ''): OsInterface
+    {
         $name          = $os->getName();
         $marketingName = $os->getMarketingName();
         $manufacturer  = new Company(type: 'unknown', name: null, brandname: null);

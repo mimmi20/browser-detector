@@ -67,8 +67,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         }
 
         $regexes = [
-            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
-            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|miui)[^)]+)\)/i',
@@ -82,7 +82,16 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/imoandroid\/[\d.]+; \d+; REL; (?P<devicecode>[^);\/]+)/i',
             '/tivimate\/[\d.]+ \((?P<devicecode>[^);\/]+);/i',
             '/; model: (?P<devicecode>[^);\/]+)\)/i',
-            '/lbc\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
+            '/(lbc|heart)\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
+            '/mozilla\/[\d.]+ \(mobile; (?P<devicecode>[^;]+)(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
+            '/virgin%20radio\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \((?P<devicecode>[^)]+)\)/i',
+            '/pugpigbolt [\d.]+ \([^);\/,]+, (android|ios) [\d.]+\) on phone \(model (?P<devicecode>[^)]+)\)/i',
+            '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
+            '/luminary\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^);\/]+); /i',
+            '/emaudioplayer [\d.]+ \([\d.]+\) \/ android [\d.]+ \/ (?P<devicecode>[^);\/]+)/i',
+            '/android [\d.]+; (?P<devicecode>[^);\/]+)\) applewebkit/i',
+            '/classic fm\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
+            '/mozilla\/[\d.]+ \([\d.]+mb; [\d.]+x[\d.]+; [\d.]+x[\d.]+; [\d.]+x[\d.]+; (?P<devicecode>[^);\/]+); [\d.]+\) applewebkit/i',
         ];
 
         $filtered = array_filter(

@@ -19,15 +19,20 @@ use IosBuild\IosBuildInterface;
 use Override;
 use UnexpectedValueException;
 
+use function array_filter;
 use function array_key_exists;
+use function array_map;
 use function mb_strtolower;
 use function preg_match;
+use function reset;
 use function str_contains;
 
 final readonly class Ios implements VersionFactoryInterface
 {
     /** @api */
     public const array SEARCHES = [
+        'watchOS',
+        'tvOS',
         'IphoneOSX',
         'CPU OS_?',
         'CPU iOS',
@@ -263,6 +268,8 @@ final readonly class Ios implements VersionFactoryInterface
      * returns the version of the operating system/platform
      *
      * @throws UnexpectedValueException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[Override]
     public function detectVersion(string $useragent): VersionInterface
@@ -277,15 +284,32 @@ final readonly class Ios implements VersionFactoryInterface
             }
         }
 
-        $doMatch = preg_match(
-            '/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i',
-            $useragent,
-            $matches,
+        $regexes = [
+            '/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+[a-z]?)/i',
+            '/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+[a-z]?)\)/i',
+        ];
+
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $useragent),
         );
 
-        if ($doMatch) {
+        $results = array_map(
+            static function (string $regex) use ($useragent): string {
+                $matches = [];
+
+                preg_match($regex, $useragent, $matches);
+
+                return $matches['build'] ?? '';
+            },
+            $filtered,
+        );
+
+        $detectedBuild = reset($results);
+
+        if ($detectedBuild !== null && $detectedBuild !== false && $detectedBuild !== '') {
             try {
-                $buildVersion = $this->iosBuild->getVersion($matches['build']);
+                $buildVersion = $this->iosBuild->getVersion($detectedBuild);
             } catch (NotFoundException) {
                 $buildVersion = false;
             }
@@ -299,7 +323,10 @@ final readonly class Ios implements VersionFactoryInterface
             }
         }
 
-        if (str_contains(mb_strtolower($useragent), 'darwin')) {
+        if (
+            str_contains(mb_strtolower($useragent), 'darwin')
+            && !str_contains(mb_strtolower($useragent), 'watchos')
+        ) {
             foreach (self::DARWIN_MAP as $rule => $version) {
                 if (!preg_match($rule, $useragent)) {
                     continue;
@@ -313,36 +340,34 @@ final readonly class Ios implements VersionFactoryInterface
             }
         }
 
-        $doMatch = preg_match(
-            '/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/(?P<build>[\d\.]+)$/i',
-            $useragent,
-            $matches,
+        $regexes = ['/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/(?P<build>[\d\.]+)$/i'];
+
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $useragent),
         );
 
-        if ($doMatch && array_key_exists($matches['build'], self::BUILD_MAP)) {
-            try {
-                return $this->versionBuilder->set(self::BUILD_MAP[$matches['build']]);
-            } catch (NotNumericException) {
-                return new NullVersion();
-            }
-        }
+        $results = array_map(
+            static function (string $regex) use ($useragent): string {
+                $matches = [];
 
-        $doMatch = preg_match(
-            '/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i',
-            $useragent,
-            $matches,
+                preg_match($regex, $useragent, $matches);
+
+                return $matches['build'] ?? '';
+            },
+            $filtered,
         );
 
-        if ($doMatch) {
-            try {
-                $buildVersion = $this->iosBuild->getVersion($matches['build']);
-            } catch (NotFoundException) {
-                $buildVersion = false;
-            }
+        $detectedBuildVersion = reset($results);
 
-            if ($buildVersion !== false) {
+        if (
+            $detectedBuildVersion !== null
+            && $detectedBuildVersion !== false
+            && $detectedBuildVersion !== ''
+        ) {
+            if (array_key_exists($detectedBuildVersion, self::BUILD_MAP)) {
                 try {
-                    return $this->versionBuilder->set($buildVersion);
+                    return $this->versionBuilder->set(self::BUILD_MAP[$detectedBuildVersion]);
                 } catch (NotNumericException) {
                     return new NullVersion();
                 }
