@@ -1329,6 +1329,8 @@ enum Company: string implements CompanyInterface
 
     case spotify = 'Spotify';
 
+    case yahooJapan = 'Yahoo!JAPAN';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1991,6 +1993,7 @@ enum Company: string implements CompanyInterface
             'roblox', 'roblox corporation' => self::roblox,
             'bonprix', 'bonprix handelsgesellschaft mbh' => self::bonprix,
             'spotify', 'spotify ab' => self::spotify,
+            'yahoojapan', 'yahoo-japan', 'yahoo!japan' => self::yahooJapan,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2385,6 +2388,7 @@ enum Company: string implements CompanyInterface
             self::fancyMobileApps => 'fancy-mobile-apps',
             self::browserWorks => 'browser-works',
             self::paloAltoNetworks => 'palo-alto',
+            self::yahooJapan => 'yahoo-japan',
             default => $this->name,
         };
     }

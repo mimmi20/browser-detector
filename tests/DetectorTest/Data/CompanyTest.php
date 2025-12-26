@@ -3988,6 +3988,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Spotify',
                 'key' => 'spotify',
             ],
+            [
+                'type' => 'Yahoo!JAPAN',
+                'name' => 'Yahoo!JAPAN',
+                'brandname' => 'Yahoo!JAPAN',
+                'key' => 'yahoo-japan',
+            ],
         ];
     }
 

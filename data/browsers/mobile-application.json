@@ -2851,14 +2851,14 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "RelesysApp"
+        "RelesysApp\\/"
       ]
     },
     "engine": null
   },
   "yahoo! japan": {
     "name": "Yahoo! Japan",
-    "manufacturer": "yahoo",
+    "manufacturer": "yahoo-japan",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
