@@ -11,10 +11,7 @@
   },
   "logs": {
     "text": "infection-log.log",
-    "debug": "infection-debug.log",
-    "stryker": {
-      "report": "/^.*$/"
-    }
+    "debug": "infection-debug.log"
   },
   "mutators": {
     "@default": true,
