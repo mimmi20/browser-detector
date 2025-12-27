@@ -2274,6 +2274,7 @@ final class Device implements DeviceInterface
             'sm-m156s', 'samsung sm-m156s' => 'samsung=samsung sm-m156s',
             'sm-e066b', 'samsung sm-e066b' => 'samsung=samsung sm-e066b',
             'sm-a366n', 'samsung sm-a366n' => 'samsung=samsung sm-a366n',
+            'sm-r900', 'samsung sm-r900' => 'samsung=samsung sm-r900',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -4256,6 +4257,7 @@ final class Device implements DeviceInterface
             'u616at' => 'wiko=wiko u616at',
             'jlg-an00' => 'wiko=wiko jlg-an00',
             'shr-an00' => 'wiko=wiko shr-an00',
+            'aix-an00' => 'wiko=wiko aix-an00',
             // razer
             'phone 2' => 'razer=razer phone 2',
             'razer edge 5g' => 'razer=razer edge 5g',
@@ -7019,6 +7021,8 @@ final class Device implements DeviceInterface
             'pad10_pro' => 'g-tab=g-tab pad10_pro',
             // polestar
             'polestar phone' => 'polestar=polestar phone',
+            // haixu
+            'haixu v11' => 'haixu=haixu v11',
             // other
             default => null,
         };

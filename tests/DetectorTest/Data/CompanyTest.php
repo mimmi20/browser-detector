@@ -3994,6 +3994,84 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Yahoo!JAPAN',
                 'key' => 'yahoo-japan',
             ],
+            [
+                'type' => 'Sogou',
+                'name' => 'Sogou Inc',
+                'brandname' => 'Sogou',
+                'key' => 'sogou',
+            ],
+            [
+                'type' => 'Haixu',
+                'name' => 'Haixu',
+                'brandname' => 'Haixu',
+                'key' => 'haixu',
+            ],
+            [
+                'type' => 'Nasai',
+                'name' => 'Nasai',
+                'brandname' => 'Nasai',
+                'key' => 'nasai',
+            ],
+            [
+                'type' => 'PHP Group',
+                'name' => 'the PHP Group',
+                'brandname' => 'PHP Group',
+                'key' => 'php-group',
+            ],
+            [
+                'type' => 'BBC',
+                'name' => 'BBC',
+                'brandname' => 'BBC',
+                'key' => 'bbc',
+            ],
+            [
+                'type' => 'Christian Dywan',
+                'name' => 'Christian Dywan',
+                'brandname' => 'Christian Dywan',
+                'key' => 'christian-dywan',
+            ],
+            [
+                'type' => 'Apache',
+                'name' => 'The Apache Software Foundation',
+                'brandname' => 'Apache',
+                'key' => 'apache',
+            ],
+            [
+                'type' => 'Thomas Dickey',
+                'name' => 'Thomas Dickey',
+                'brandname' => 'Thomas Dickey',
+                'key' => 'thomas-dickey',
+            ],
+            [
+                'type' => 'Omni Development',
+                'name' => 'Omni Development Inc',
+                'brandname' => 'Omni Development',
+                'key' => 'omni-development',
+            ],
+            [
+                'type' => 'PhantomJS',
+                'name' => 'phantomjs.org',
+                'brandname' => 'PhantomJS',
+                'key' => 'phantom-js',
+            ],
+            [
+                'type' => 'Mark Cavage',
+                'name' => 'Mark Cavage',
+                'brandname' => 'Mark Cavage',
+                'key' => 'mark-cavage',
+            ],
+            [
+                'type' => 'wkhtmltopdf.org',
+                'name' => 'wkhtmltopdf.org',
+                'brandname' => 'wkhtmltopdf.org',
+                'key' => 'wk-html-to-pdf.org',
+            ],
+            [
+                'type' => 'Espial',
+                'name' => 'Espial Group',
+                'brandname' => 'Espial',
+                'key' => 'espial-group',
+            ],
         ];
     }
 

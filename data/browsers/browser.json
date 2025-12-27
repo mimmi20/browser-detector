@@ -4262,14 +4262,15 @@
     },
     "engine": "blink"
   },
-  "vmsmosaic": {
-    "name": "VmsMosaic",
+  "mosaic": {
+    "name": "Mosaic",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "VmsMosaic"
+        "VmsMosaic",
+        "VMS_Mosaic"
       ]
     },
     "engine": "unknown"
