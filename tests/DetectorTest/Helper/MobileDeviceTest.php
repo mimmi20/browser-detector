@@ -155,6 +155,8 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3B) Opera 8.60 [ja]'],
             ['Mozilla/5.0 (Linux; Android 10; GM1910 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MBrowser/6.2 TBS/045008 Mobile Safari/537.36 BiliApp/5531000 mobi_app/android channel/oppo Buvid/<hide> internal_version/5531000'],
             ['ZTE S519/1.0 Threadx/4.0 Mocor/W12 Realease/01.01.2013 Browser/Dorado1.0'],
+            ['(null)/(null) watchOS/5.0.1 model/Watch4,2 hwp/t8006 build/16R382 (6; dt:191)'],
+            ['CFNetwork, iPhone OS 5.1.1, iPhone4,1'],
         ];
     }
 

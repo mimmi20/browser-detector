@@ -2916,6 +2916,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-E066B', 'samsung=samsung sm-e066b'],
             ['SM-A366N', 'samsung=samsung sm-a366n'],
             ['SAMSUNG SM-A366N', 'samsung=samsung sm-a366n'],
+            ['SM-R900', 'samsung=samsung sm-r900'],
+            ['SAMSUNG SM-R900', 'samsung=samsung sm-r900'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4930,6 +4932,7 @@ final class DeviceTest extends TestCase
             ['U616AT', 'wiko=wiko u616at'],
             ['JLG-AN00', 'wiko=wiko jlg-an00'],
             ['SHR-AN00', 'wiko=wiko shr-an00'],
+            ['Aix-AN00', 'wiko=wiko aix-an00'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
             ['Razer Edge 5G', 'razer=razer edge 5g'],
@@ -7875,6 +7878,8 @@ final class DeviceTest extends TestCase
             ['PAD10_PRO', 'g-tab=g-tab pad10_pro'],
             // polestar
             ['Polestar Phone', 'polestar=polestar phone'],
+            // haixu
+            ['Haixu V11', 'haixu=haixu v11'],
             // other
             ['Model"', null],
             [': "', null],

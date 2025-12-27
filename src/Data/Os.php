@@ -681,7 +681,7 @@ enum Os: string implements OsInterface
             self::fedoraLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Fedora\/[0-9\.\-]+\.fc', 'Fedora']],
             self::redhatLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Red Hat']],
             self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ['FreeBSD', 'freebsd']],
-            self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenVMS']],
+            self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenVMS V', 'OpenVMS']],
             self::tru64unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Tru64 UNIX', 'Digital Unix']],
             self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
             self::kaios => ['factory' => VersionBuilderFactory::class, 'search' => ['kaios']],

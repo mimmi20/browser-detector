@@ -1331,6 +1331,32 @@ enum Company: string implements CompanyInterface
 
     case yahooJapan = 'Yahoo!JAPAN';
 
+    case sogou = 'Sogou';
+
+    case haixu = 'Haixu';
+
+    case nasai = 'Nasai';
+
+    case phpGroup = 'PHP Group';
+
+    case bbc = 'BBC';
+
+    case christianDywan = 'Christian Dywan';
+
+    case apache = 'Apache';
+
+    case thomasDickey = 'Thomas Dickey';
+
+    case omniDevelopment = 'Omni Development';
+
+    case phantomJS = 'PhantomJS';
+
+    case markCavage = 'Mark Cavage';
+
+    case wkhtmltopdforg = 'wkhtmltopdf.org';
+
+    case espial = 'Espial';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1994,6 +2020,19 @@ enum Company: string implements CompanyInterface
             'bonprix', 'bonprix handelsgesellschaft mbh' => self::bonprix,
             'spotify', 'spotify ab' => self::spotify,
             'yahoojapan', 'yahoo-japan', 'yahoo!japan' => self::yahooJapan,
+            'sogou', 'sogou inc' => self::sogou,
+            'haixu' => self::haixu,
+            'nasai' => self::nasai,
+            'phpgroup', 'the php group', 'php-group', 'php group' => self::phpGroup,
+            'bbc' => self::bbc,
+            'christiandywan', 'christian-dywan', 'christian dywan' => self::christianDywan,
+            'apache', 'the apache software foundation' => self::apache,
+            'thomasdickey', 'thomas-dickey', 'thomas dickey' => self::thomasDickey,
+            'omnidevelopment', 'omni-development', 'omni development inc', 'omni development' => self::omniDevelopment,
+            'phantomjs', 'phantom-js', 'phantomjs.org' => self::phantomJS,
+            'markcavage', 'mark-cavage', 'mark cavage' => self::markCavage,
+            'wkhtmltopdforg', 'wk-html-to-pdf.org', 'wkhtmltopdf.org' => self::wkhtmltopdforg,
+            'espial', 'espial-group', 'espial group' => self::espial,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2199,6 +2238,12 @@ enum Company: string implements CompanyInterface
             self::roblox => 'Roblox Corporation',
             self::bonprix => 'bonprix Handelsgesellschaft mbH',
             self::spotify => 'Spotify AB',
+            self::sogou => 'Sogou Inc',
+            self::phpGroup => 'the PHP Group',
+            self::apache => 'The Apache Software Foundation',
+            self::omniDevelopment => 'Omni Development Inc',
+            self::phantomJS => 'phantomjs.org',
+            self::espial => 'Espial Group',
             self::unknown => null,
             default => $this->value,
         };
@@ -2389,6 +2434,14 @@ enum Company: string implements CompanyInterface
             self::browserWorks => 'browser-works',
             self::paloAltoNetworks => 'palo-alto',
             self::yahooJapan => 'yahoo-japan',
+            self::phpGroup => 'php-group',
+            self::christianDywan => 'christian-dywan',
+            self::thomasDickey => 'thomas-dickey',
+            self::omniDevelopment => 'omni-development',
+            self::phantomJS => 'phantom-js',
+            self::markCavage => 'mark-cavage',
+            self::wkhtmltopdforg => 'wk-html-to-pdf.org',
+            self::espial => 'espial-group',
             default => $this->name,
         };
     }

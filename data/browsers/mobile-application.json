@@ -2867,6 +2867,18 @@
         "yjapp"
       ]
     },
-    "engine": "webkit"
+    "engine": null
+  },
+  "bbc-news": {
+    "name": "BBC News",
+    "manufacturer": "bbc",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BBCNewsUKWatchApp"
+      ]
+    },
+    "engine": null
   }
 }
