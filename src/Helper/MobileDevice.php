@@ -49,20 +49,31 @@ final class MobileDevice implements MobileDeviceInterface
             return false;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+WD/', $useragent)) {
+        if (preg_match('/Puffin\/[\d.]+WD/', $useragent)) {
             return false;
         }
 
-        if (preg_match('/UCWEB|Puffin\/[\d\.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', $useragent)) {
+        if (preg_match('/UCWEB|Puffin\/[\d.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', $useragent)) {
             return true;
         }
 
-        if (preg_match('/fbid\/desktop/i', $useragent)) {
+        if (preg_match('/fbid\/desktop|cfnetwork\/.+ darwin\/[\d.]+.+(?:x86_64|i386|power%20macintosh)|(?:x86_64-apple-)?darwin[\d.]+/i', $useragent)) {
+            return false;
+        }
+
+        if (preg_match('/^(?!com.apple.safari.searchhelper|safari).*cfnetwork\/.+ darwin\/(\d+[\d.]+)(?!.*(?:x86_64|i386|powermac|power%20macintosh))/i', $useragent)) {
+            return true;
+        }
+
+        if (
+            !preg_match('/freebsd|raspbian/i', $useragent)
+            && preg_match('/darwin|cfnetwork/i', $useragent)
+        ) {
             return false;
         }
 
         return 0 < preg_match(
-            '/mobile;|mobileok|-mobile|office mobile|tablet|(?<!a)phone|wireless|(?<!ninesky-)android|adr |iph(one|\d)|ip[ao]d|(?<!sn)ipd\d|samsung(?!browser|-agent)|j2me|micromax|htc|karbonn|hisense|docomo|siemens(?! ?(a\/s|testmanager|lms|ag))|ktouch|portalmmm|rim tablet|jolla|iball|symbos|symbian|remixos|webos|velocitymicro|samsung-(gt|sph)|lenovo|lumia|surftab|padfone|xda_diamond_2|transformer tf|touchpad|toshiba_ac_and_az|hpwos|silk|wap-browser|sailfish|crowsnest|folio_and_a|steelcore|m2 note|spice qt-75|spark284|lemon b556|terra_101|dino762|wetab|dataaccessd|lenovotablet|qtcarbrowser|onebrowser|stitcher|rss_?radio|antennapod|antenna\/|podcruncher|captivenetworksupport|(?<!c)ios;|audioboom.com\/boos|beyondpod|st80208|\[fban|wap2|up\.link|up\.browser|series ?[46]0|pocket ?pc|playstation|palm(?!a)|opera mobi|opera mini|openwave|obigo|nokia|nintendo|netfront|mqqbrowser|midp|meego|maemo|look-alike|like mac os x|kindle|juc ?\(linux; ?u;|iuc\(u;ios|iris|hp-tablet|hd_mini_t|gingerbread|folio100|foma|firefox or ie|embider|danger hiptop|cldc|blazer|dalvik|bolt|blackberry|bb10; ?(kbd|touch)|\b(bada|brew|mtk)\b|\btcl\b(?! http client)|aspen simulator|arm; touch|wap browser|kyy21|ebrd1101|ebrd1201|huawei-u8651|(?<!i)tizen|tecno[ _]|sonyericsson|lg[ \-]|(?<!ma)cos ?\d|cricket|mz601|clt-l29|ios\.watch|nook browser|kddi|kyocera|threadx|watchos|iphone os/i',
+            '/mobile;|mobileok|-mobile|office mobile|tablet|(?<!a)phone|wireless|(?<!ninesky-)android|adr |iph(one|\d)|ip[ao]d|(?<!sn)ipd\d|samsung(?!browser|-agent)|j2me|micromax|htc|karbonn|hisense|docomo|siemens(?! ?(a\/s|testmanager|lms|ag))|ktouch|portalmmm|rim tablet|jolla|iball|symbos|symbian|remixos|webos|velocitymicro|samsung-(gt|sph)|lenovo|lumia|surftab|padfone|xda_diamond_2|transformer tf|touchpad|toshiba_ac_and_az|hpwos|silk|wap-browser|sailfish|crowsnest|folio_and_a|steelcore|m2 note|spice qt-75|spark284|lemon b556|terra_101|dino762|wetab|dataaccessd|lenovotablet|qtcarbrowser|onebrowser|stitcher|rss_?radio|antennapod|antenna\/|podcruncher|captivenetworksupport|(?<!c)ios;|audioboom.com\/boos|beyondpod|st80208|\[fban|wap2|up\.link|up\.browser|series ?[46]0|pocket ?pc|playstation|palm(?!a)|opera mobi|opera mini|openwave|obigo|nokia|nintendo|netfront|mqqbrowser|midp|meego|maemo|look-alike|like mac os x|kindle|juc ?\(linux; ?u;|iuc\(u;ios|iris|hp-tablet|hd_mini_t|gingerbread|folio100|foma|firefox or ie|embider|danger hiptop|cldc|blazer|dalvik|bolt|blackberry|bb10; ?(kbd|touch)|\b(bada|brew|mtk)\b|\btcl\b(?! http client)|aspen simulator|arm; touch|wap browser|kyy21|ebrd1101|ebrd1201|huawei-u8651|(?<!i)tizen|tecno[ _]|sonyericsson|lg[ \-]|(?<!ma)cos ?\d|cricket|mz601|clt-l29|ios\.watch|nook browser|kddi|kyocera|threadx|watchos|iphone os|mobilesafari\/.*cfnetwork/i',
             $useragent,
         );
     }
