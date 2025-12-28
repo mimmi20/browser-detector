@@ -1357,6 +1357,8 @@ enum Company: string implements CompanyInterface
 
     case espial = 'Espial';
 
+    case vivaldi = 'Vivaldi';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2033,6 +2035,7 @@ enum Company: string implements CompanyInterface
             'markcavage', 'mark-cavage', 'mark cavage' => self::markCavage,
             'wkhtmltopdforg', 'wk-html-to-pdf.org', 'wkhtmltopdf.org' => self::wkhtmltopdforg,
             'espial', 'espial-group', 'espial group' => self::espial,
+            'vivaldi', 'vivaldi technologies' => self::vivaldi,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2244,6 +2247,7 @@ enum Company: string implements CompanyInterface
             self::omniDevelopment => 'Omni Development Inc',
             self::phantomJS => 'phantomjs.org',
             self::espial => 'Espial Group',
+            self::vivaldi => 'Vivaldi Technologies',
             self::unknown => null,
             default => $this->value,
         };

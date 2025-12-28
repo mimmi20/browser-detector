@@ -1103,10 +1103,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.0.2",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -1711,51 +1711,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 [FBAN/FBIOS;FBAV/8.0.0.28.18;FBBV/1665515;FBDV/iPhone4,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/7.0.4;FBSS/2; FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 4,1",
-      "marketingName": "iPhone 4S",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "8.0.0.28.18",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11A466 [FBAN/FBIOS;FBAV/6.7.2;FBBV/603804;FBDV/iPhone5,3;FBMD/iPhone;FBSN/iPhone OS;FBSV/7.0;FBSS/2; FBCR/o2-de;FBID/phone;FBLC/es_ES;FBOP/5]"
     },
     "device": {
@@ -1796,51 +1751,6 @@
     "engine": {
       "name": "WebKit",
       "version": "537.51.1",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 [FBAN/FBIOS;FBAV/7.0.0.17.1;FBBV/1325030;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/7.0.6;FBSS/2; FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 6,2",
-      "marketingName": "iPhone 5S",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "7.0.0.17.1",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
       "manufacturer": "Apple"
     }
   },
@@ -1891,51 +1801,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H321 Instagram 10.7.0 (iPhone6,2; iPhone OS 8_4_1; he_US; he; scale=2.00; gamut=normal; 640x1136)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 6,2",
-      "marketingName": "iPhone 5S",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "10.7.0",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 Instagram 10.3.0 (iPhone5,4; iPhone OS 9_1; nl_BE; nl-BE; scale=2.00; gamut=normal; 640x1136)"
     },
     "device": {
@@ -1958,10 +1823,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.1.0",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -2021,51 +1886,6 @@
     "engine": {
       "name": "WebKit",
       "version": "602.1.50",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12D508 Instagram 7.5.0 (iPhone5,3; iPhone OS 8_2; en_US; en)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 5,3",
-      "marketingName": "iPhone 5C",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.2.0",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "7.5.0",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
       "manufacturer": "Apple"
     }
   },
@@ -2386,142 +2206,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C153 Instagram 27.0.0.13.98 (iPhone8,4; iOS 11_2_1; de_DE; de-DE; scale=2.00; gamut=normal; 640x1136)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 8,4",
-      "marketingName": "iPhone SE",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "27.0.0.13.98",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "604.4.7",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 Instagram 27.0.0.13.98 (iPhone5,2; iOS 10_3_3; de_DE; de-DE; scale=2.00; gamut=normal; 640x1136)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 5,2",
-      "marketingName": "iPhone 5",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "27.0.0.13.98",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.3.8",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 Instagram 27.0.0.13.98 (iPhone6,1; iOS 10_3_3; de_DE; de; scale=2.00; gamut=normal; 640x1136)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 6,1",
-      "marketingName": "iPhone 5S",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "27.0.0.13.98",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.3.8",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143 Instagram 7.1.1 (iPhone5,2; iPhone OS 8_4; en_GB; en)"
     },
     "device": {
       "architecture": null,
@@ -2545,14 +2230,14 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.4.0",
+      "version": "10.3.3",
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Instagram App",
       "modus": null,
-      "version": "7.1.1",
+      "version": "27.0.0.13.98",
       "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
@@ -2560,7 +2245,7 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "600.1.4",
+      "version": "603.3.8",
       "manufacturer": "Apple"
     }
   },
@@ -3011,51 +2696,6 @@
     "engine": {
       "name": "WebKit",
       "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 Instagram 10.9.0 (iPhone5,1; iOS 10_2_1; en_IN; en-IN; scale=2.00; gamut=normal; 640x1136)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 5,1",
-      "marketingName": "iPhone 5",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "10.9.0",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.4.6",
       "manufacturer": "Apple"
     }
   },

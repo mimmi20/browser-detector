@@ -23,10 +23,10 @@
       "bits": null
     },
     "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "0.0.0",
-      "manufacturer": "RIM",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -39,9 +39,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "Opera"
+      "name": "WebKit",
+      "version": "24.746.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -172,6 +172,54 @@
       "name": "Opera Mini",
       "modus": null,
       "version": "8.0.35667",
+      "manufacturer": "Opera",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "x-operamini-phone-ua": "BlackBerry9700/5.0.0.235 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1",
+      "device-stock-ua": "BlackBerry9700/5.0.0.235 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1",
+      "x-operamini-phone": "BlackBerry # 9700",
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/4.4.26736/34.818; U; xx) Presto/2.8.119 Version/11.10"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BlackBerry 9700",
+      "marketingName": "BlackBerry Bold 9700",
+      "manufacturer": "RIM",
+      "brand": "RIM",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.44
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.235",
+      "manufacturer": "RIM",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.26736",
       "manufacturer": "Opera",
       "type": "transcoder",
       "isbot": false,

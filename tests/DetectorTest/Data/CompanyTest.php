@@ -4072,6 +4072,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Espial',
                 'key' => 'espial-group',
             ],
+            [
+                'type' => 'Vivaldi',
+                'name' => 'Vivaldi Technologies',
+                'brandname' => 'Vivaldi',
+                'key' => 'vivaldi',
+            ],
         ];
     }
 

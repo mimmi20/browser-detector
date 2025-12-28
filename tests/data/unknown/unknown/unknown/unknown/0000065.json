@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "BNE"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "neu"
     },
     "device": {
@@ -4412,51 +4457,6 @@
   {
     "headers": {
       "user-agent": "CKHttpGenerator; CK={ZXIQ8//aDQ1T6Czzj1ccoJBvKc04FvIPDiS6t09Rijue+bKmUFIaaqEFoZaloDlPuPRrwFuZZmvmKF0tcu1NP8z0SQAzxwtmS+vFBddzLOX=}"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "CKHttpGenerator; CK={ZXIQ8//aDQ1T6Czzj1ccoL5BsQ4HgbYenZz/T8HYq7z77CwegeU3ZbEisxO/evYAhb0+ctf/YzHkp2bD4w49VgJqK4q4wUEoFSvo/txeZUIJD9ZSXG0NnA==}"
     },
     "device": {
       "architecture": null,

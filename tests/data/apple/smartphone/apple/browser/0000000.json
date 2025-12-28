@@ -361,7 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "com.apple.invitation-registration [iPhone OS,5.1.1,9B206,iPhone4,1]"
+      "user-agent": "CFNetwork, iPhone OS 5.1.1, iPhone4,1"
     },
     "device": {
       "architecture": null,
@@ -385,7 +385,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": null,
+      "version": "5.1.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -761,51 +761,6 @@
     "engine": {
       "name": "WebKit",
       "version": "536.26.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.3) Gecko/2008092510 Ubuntu/8.04 (hardy) Mozilla/* (iPhone; ?; *Mac OS X*) AppleWebKit/* (*) Version/*.* Mobile/* Safari /*"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": "8.04.0",
-      "manufacturer": "Canonical",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
       "manufacturer": "Apple"
     }
   },

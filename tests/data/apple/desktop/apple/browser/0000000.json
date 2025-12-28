@@ -2026,51 +2026,6 @@
   },
   {
     "headers": {
-      "user-agent": "CFNetwork, iPhone OS 5.1.1, iPhone4,1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
-      "version": null,
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/537.44 (KHTML, like Gecko) JavaFX/8.0 Safari/537.44"
     },
     "device": {
@@ -2291,6 +2246,51 @@
     "engine": {
       "name": "WebKit",
       "version": "450.3.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_2_3 like Mac OS X) Book%20Creator/116 Darwin/19.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "19.0.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
       "manufacturer": "Apple"
     }
   },
