@@ -59,12 +59,12 @@ final readonly class DeviceParser implements DeviceParserInterface
             return 'unknown=unknown';
         }
 
-//        if (
-//            !preg_match('/freebsd|raspbian/i', $useragent)
-//            && preg_match('/darwin|cfnetwork/i', $useragent)
-//        ) {
-//            return $this->darwinParser->parse($useragent);
-//        }
+        if (
+            !preg_match('/freebsd|raspbian/i', $useragent)
+            && preg_match('/darwin|cfnetwork/i', $useragent)
+        ) {
+            return $this->darwinParser->parse($useragent);
+        }
 
         if ($this->mobileDevice->isMobile($useragent)) {
             return $this->mobileParser->parse($useragent);

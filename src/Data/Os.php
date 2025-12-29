@@ -701,7 +701,7 @@ enum Os: string implements OsInterface
             self::slackwareLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Slackware']],
             self::suseLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['SUSE']],
             self::ventanaLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Ventana Linux', 'Ventana']],
-            self::yunOs => ['factory' => VersionBuilderFactory::class, 'search' => ['YunOs', 'AliyunOS']],
+            self::yunOs => ['factory' => VersionBuilderFactory::class, 'search' => ['YunOs', 'AliyunOS', 'Android']],
             self::leafOs => ['factory' => VersionBuilderFactory::class, 'search' => ['LeafOS']],
             self::puffinOs => ['factory' => VersionBuilderFactory::class, 'search' => ['Cloud Phone']],
             self::viziOs => ['factory' => VersionBuilderFactory::class, 'search' => ['ViziOS']],

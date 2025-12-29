@@ -157,6 +157,8 @@ final class MobileDeviceTest extends TestCase
             ['ZTE S519/1.0 Threadx/4.0 Mocor/W12 Realease/01.01.2013 Browser/Dorado1.0'],
             ['(null)/(null) watchOS/5.0.1 model/Watch4,2 hwp/t8006 build/16R382 (6; dt:191)'],
             ['CFNetwork, iPhone OS 5.1.1, iPhone4,1'],
+            ['Mozilla/5.0 (Linux; U; YunOs 1.0.0.3; en-; K-Touch W619 Build/AliyunOs-2012) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'],
+            ['Himalaya/2.6.32 (iPhone; iOS 16.5.1; Scale/3.00; CFNetwork; iPhone13,4)'],
         ];
     }
 

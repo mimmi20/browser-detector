@@ -4078,6 +4078,66 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Vivaldi',
                 'key' => 'vivaldi',
             ],
+            [
+                'type' => 'K-Touch',
+                'name' => 'K-Touch',
+                'brandname' => 'K-Touch',
+                'key' => 'k-touch',
+            ],
+            [
+                'type' => 'ZOPO',
+                'name' => 'ZOPO',
+                'brandname' => 'ZOPO',
+                'key' => 'zopo',
+            ],
+            [
+                'type' => 'Mastone',
+                'name' => 'Mastone',
+                'brandname' => 'Mastone',
+                'key' => 'mastone',
+            ],
+            [
+                'type' => 'Green Orange',
+                'name' => 'Green Orange',
+                'brandname' => 'Green Orange',
+                'key' => 'green-orange',
+            ],
+            [
+                'type' => 'Nextbook',
+                'name' => 'Nextbook',
+                'brandname' => 'Nextbook',
+                'key' => 'nextbook',
+            ],
+            [
+                'type' => 'Odys',
+                'name' => 'Odys',
+                'brandname' => 'Odys',
+                'key' => 'odys',
+            ],
+            [
+                'type' => 'Lephone',
+                'name' => 'Lephone',
+                'brandname' => 'Lephone',
+                'key' => 'lephone',
+            ],
+            [
+                'type' => 'Maxtron',
+                'name' => 'Maxtron',
+                'brandname' => 'Maxtron',
+                'key' => 'maxtron',
+            ],
+            [
+                'type' => 'Amoi',
+                'name' => 'Amoi',
+                'brandname' => 'Amoi',
+                'key' => 'amoi',
+            ],
+            [
+                'type' => 'Voto',
+                'name' => 'Voto Mobile',
+                'brandname' => 'Voto',
+                'key' => 'voto',
+            ],
         ];
     }
 

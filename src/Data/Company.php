@@ -1359,6 +1359,26 @@ enum Company: string implements CompanyInterface
 
     case vivaldi = 'Vivaldi';
 
+    case kTouch = 'K-Touch';
+
+    case zopo = 'ZOPO';
+
+    case mastone = 'Mastone';
+
+    case greenOrange = 'Green Orange';
+
+    case nextbook = 'Nextbook';
+
+    case odys = 'Odys';
+
+    case lephone = 'Lephone';
+
+    case maxtron = 'Maxtron';
+
+    case amoi = 'Amoi';
+
+    case voto = 'Voto';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2036,6 +2056,16 @@ enum Company: string implements CompanyInterface
             'wkhtmltopdforg', 'wk-html-to-pdf.org', 'wkhtmltopdf.org' => self::wkhtmltopdforg,
             'espial', 'espial-group', 'espial group' => self::espial,
             'vivaldi', 'vivaldi technologies' => self::vivaldi,
+            'ktouch', 'k-touch' => self::kTouch,
+            'zopo' => self::zopo,
+            'mastone' => self::mastone,
+            'greenorange', 'green-orange', 'green orange' => self::greenOrange,
+            'nextbook' => self::nextbook,
+            'odys' => self::odys,
+            'lephone' => self::lephone,
+            'maxtron' => self::maxtron,
+            'amoi' => self::amoi,
+            'voto', 'voto mobile' => self::voto,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2248,6 +2278,7 @@ enum Company: string implements CompanyInterface
             self::phantomJS => 'phantomjs.org',
             self::espial => 'Espial Group',
             self::vivaldi => 'Vivaldi Technologies',
+            self::voto => 'Voto Mobile',
             self::unknown => null,
             default => $this->value,
         };
@@ -2446,6 +2477,8 @@ enum Company: string implements CompanyInterface
             self::markCavage => 'mark-cavage',
             self::wkhtmltopdforg => 'wk-html-to-pdf.org',
             self::espial => 'espial-group',
+            self::kTouch => 'k-touch',
+            self::greenOrange => 'green-orange',
             default => $this->name,
         };
     }
