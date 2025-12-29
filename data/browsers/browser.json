@@ -1278,7 +1278,7 @@
     "engine": "unknown"
   },
   "epiphany": {
-    "name": "Epiphany",
+    "name": "GNOME Web",
     "manufacturer": "the-gnome-project",
     "type": "browser",
     "version": {
@@ -3148,18 +3148,6 @@
     },
     "engine": "webkit"
   },
-  "phantomjs": {
-    "name": "PhantomJS",
-    "manufacturer": "phantom-js",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PhantomJS"
-      ]
-    },
-    "engine": "webkit"
-  },
   "philips": {
     "name": "Philips",
     "manufacturer": "philips",
@@ -4072,8 +4060,10 @@
     "manufacturer": "cameron-kaiser",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TenFourFox"
+      ]
     },
     "engine": "gecko"
   },
@@ -4401,7 +4391,7 @@
     "engine": "gecko"
   },
   "webpositive": {
-    "name": "Webpositive",
+    "name": "WebPositive",
     "manufacturer": "haiku",
     "type": "browser",
     "version": {
@@ -5186,6 +5176,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ADG"
+      ]
+    },
+    "engine": null
+  },
+  "aol explorer": {
+    "name": "AOL Explorer",
+    "manufacturer": "aol",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AOL"
       ]
     },
     "engine": null

@@ -357,6 +357,8 @@ enum Os: string implements OsInterface
 
     case ultrix = 'ULTRIX';
 
+    case osf1 = 'OSF/1';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -527,6 +529,7 @@ enum Os: string implements OsInterface
             'puffinos', 'puffin os', 'puffin-os' => self::puffinOs,
             'vizios', 'vizi-os' => self::viziOs,
             'ultrix' => self::ultrix,
+            'osf1', 'osf/1' => self::osf1,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -541,11 +544,12 @@ enum Os: string implements OsInterface
     {
         return match ($this) {
             self::unknown => null,
-            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98 => 'Windows',
+            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003 => 'Windows',
             self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows NT',
             self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81 => 'Windows Phone OS',
             self::windowsrt62, self::windowsrt63 => 'Windows RT',
             self::nucleus => 'Nucleus OS',
+            self::haiku => 'Haiku OS',
             default => $this->value,
         };
     }
@@ -569,6 +573,7 @@ enum Os: string implements OsInterface
             self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81 => 'Windows Phone OS',
             self::windowsrt62, self::windowsrt63 => 'Windows RT',
             self::mre => 'MAUI Runtime Environment',
+            self::haiku => 'Haiku OS',
             self::unknown => null,
             default => $this->value,
         };
@@ -627,6 +632,7 @@ enum Os: string implements OsInterface
             self::puffinOs => Company::cloudMosa,
             self::viziOs => Company::vizio,
             self::ultrix => Company::dec,
+            self::osf1 => Company::osf,
             default => Company::unknown,
         };
     }
@@ -657,7 +663,7 @@ enum Os: string implements OsInterface
             self::mocordroid => ['factory' => VersionBuilderFactory::class, 'search' => ['MocorDroid']],
             self::netbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['NetBSD']],
             self::openbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenBSD']],
-            self::riscos => ['factory' => VersionBuilderFactory::class, 'search' => ['RISC']],
+            self::riscos => ['factory' => VersionBuilderFactory::class, 'search' => ['RISC OS-NC', 'RISC OS', 'RISC']],
             self::unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix']],
             self::lgwebos => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S']],
             self::wyderos => ['factory' => VersionBuilderFactory::class, 'search' => ['WyderOS']],
@@ -696,7 +702,7 @@ enum Os: string implements OsInterface
             self::opensolaris => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenSolaris']],
             self::solaris => ['factory' => VersionBuilderFactory::class, 'search' => ['Solaris']],
             self::sunos => ['factory' => VersionBuilderFactory::class, 'search' => ['SunOS']],
-            self::palmOs => ['factory' => VersionBuilderFactory::class, 'search' => ['PalmOS']],
+            self::palmOs => ['factory' => VersionBuilderFactory::class, 'search' => ['PalmOS', 'Palm OS']],
             self::rimTabletOs => ['factory' => VersionBuilderFactory::class, 'search' => ['RIM Tablet OS']],
             self::slackwareLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Slackware']],
             self::suseLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['SUSE']],
@@ -710,6 +716,11 @@ enum Os: string implements OsInterface
             self::cellos => ['factory' => VersionBuilderFactory::class, 'search' => ['PLAYSTATION 3;? ?']],
             self::orbisos => ['factory' => VersionBuilderFactory::class, 'search' => ['PLAYSTATION [45](?: Pro)? ?']],
             self::nintendoWiiOs => ['factory' => VersionBuilderFactory::class, 'search' => ['WiiOS']],
+            self::osf1 => ['factory' => VersionBuilderFactory::class, 'search' => ['OSF1 V', 'OSF1']],
+            self::morphos => ['factory' => VersionBuilderFactory::class, 'search' => ['MorphOS']],
+            self::irix => ['factory' => VersionBuilderFactory::class, 'search' => ['IRIX64', 'IRIX;64', 'IRIX']],
+            self::startos => ['factory' => VersionBuilderFactory::class, 'search' => ['StartOS']],
+            self::centos => ['factory' => VersionBuilderFactory::class, 'search' => ['CentOS Linux']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],

@@ -4246,6 +4246,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Compaq',
                 'key' => 'compaq',
             ],
+            [
+                'type' => 'OSF',
+                'name' => 'Open Software Foundation',
+                'brandname' => 'OSF',
+                'key' => 'osf',
+            ],
         ];
     }
 

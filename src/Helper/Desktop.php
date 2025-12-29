@@ -54,7 +54,7 @@ final class Desktop implements DesktopInterface
         // macOS
         if (
             preg_match(
-                '/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i',
+                '/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac|syllable|red hat modified|fedora|morphos|dragonfly|gentoo/i',
                 $useragent,
             )
         ) {

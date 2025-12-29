@@ -7,7 +7,7 @@
     "/ubuntu/i": "ubuntu",
     "/fedora/i": "fedora linux",
     "/red ?hat/i": "redhat linux",
-    "/raspbian|debian.*rpi/i": "raspbian",
+    "/raspbian/i": "raspbian",
     "/debian/i": "debian",
     "/centos/i": "cent os linux",
     "/(?<!i)cros|windows aarch64/i": "chromeos",

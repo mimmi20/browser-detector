@@ -102,6 +102,12 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (compatible; U; Webpositive/533.4; Haiku) AppleWebkit/533.4 (KHTML, like gecko) Chrome/5.0.375.55 Safari/533.4'],
             ['Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; MDDCJS; rv:11.0) like Gecko'],
             ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.141 CitizenFX/1.0.0.6556 Safari/537.36'],
+            ['Mozilla/5.0 (compatible; U; ABrowse 0.6; Syllable) AppleWebKit/420+ (KHTML, like Gecko)'],
+            ['Wget/1.11.4 Red Hat modified'],
+            ['mozilla/5.0 (compatible; fedora core 3) fc3 gnome'],
+            ['AmigaVoyager/3.4.4 (MorphOS/PPC native)'],
+            ['Mozilla/5.0 (X11; U; DragonFly i386; de; rv:1.9.1b2) Gecko/20081201 Firefox/3.1b2'],
+            ['Mozilla/5.0 (X11; U; Gentoo x86_64; de-DE) Firefox/26.0'],
         ];
     }
 

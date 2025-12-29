@@ -71,6 +71,10 @@ enum Engine: string implements EngineInterface
 
     case treco = 'Treco';
 
+    case text = 'Text';
+
+    case icab = 'iCab';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -104,6 +108,8 @@ enum Engine: string implements EngineInterface
             'goanna' => self::goanna,
             'teleca' => self::teleca,
             'treco' => self::treco,
+            'text' => self::text,
+            'icab' => self::icab,
             default => throw new UnexpectedValueException(
                 sprintf('the engine "%s" is unknown', $name),
             ),
@@ -162,6 +168,7 @@ enum Engine: string implements EngineInterface
             self::u2 => ['factory' => VersionBuilderFactory::class, 'search' => ['U2']],
             self::u3 => ['factory' => VersionBuilderFactory::class, 'search' => ['U3']],
             self::u4 => ['factory' => VersionBuilderFactory::class, 'search' => ['U4']],
+            self::icab => ['factory' => VersionBuilderFactory::class, 'search' => ['iCab']],
             self::gecko => ['factory' => GeckoFactory::class, 'search' => null],
             self::trident => ['factory' => TridentFactory::class, 'search' => null],
             self::goanna => ['factory' => GoannaFactory::class, 'search' => null],

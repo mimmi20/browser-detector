@@ -1415,6 +1415,8 @@ enum Company: string implements CompanyInterface
 
     case compaq = 'Compaq';
 
+    case osf = 'OSF';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2120,6 +2122,7 @@ enum Company: string implements CompanyInterface
             'acoobrowser', 'www.acoobrowser.com' => self::acoobrowser,
             'morequick' => self::morequick,
             'compaq', 'compaq computer corporation' => self::compaq,
+            'osf', 'open software foundation' => self::osf,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2343,6 +2346,7 @@ enum Company: string implements CompanyInterface
             self::fenrir => 'Fenrir Inc',
             self::flashpeak => 'FlashPeak Inc.',
             self::compaq => 'Compaq Computer Corporation',
+            self::osf => 'Open Software Foundation',
             self::unknown => null,
             default => $this->value,
         };

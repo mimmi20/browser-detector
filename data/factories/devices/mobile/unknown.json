@@ -1,7 +1,7 @@
 {
   "rules": {
     "/android[ -\\/]?([0-9\\.]+)?;? mobile; rv:[0-9\\.\\+ab]+\\)|android.* mobile ?safari|opera mobi/i": "general mobile phone",
-    "/android[ -\\/]?([0-9\\.]+)?;? tablet; rv:[0-9\\.\\+ab]+\\)|android.* (?<!tv )safari|opera tablet|tablet browser/i": "general tablet"
+    "/android[ -\\/]?([0-9\\.]+)?;? tablet; rv:[0-9\\.\\+ab]+\\)|android.* (?<!tv )safari|opera tablet|tablet browser|\\(tablet;/i": "general tablet"
   },
   "generic": "general mobile device"
 }

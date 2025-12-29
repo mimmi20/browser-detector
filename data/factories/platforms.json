@@ -32,7 +32,7 @@
     "/kaios/i": "kaios",
     "/yunos|baidu yi|(?<!o)andr[0o]id|aosp|harmonyos|silk|juc ?\\(linux;|adr |gingerbread|ucweb\\/2\\.0 \\(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e|puffin\\/[\\d\\.]+a[tp]/i": "android",
     "/mobilesafari\\/.*cfnetwork|watchos|iphone|cpu i?os/i": "ios",
-    "/safari\\/.*cfnetwork/i": "mac",
+    "/safari\\/.*cfnetwork|(?<!like )mac os x|power macintosh/i": "mac",
     "/(?<!FBSN\\/|\\()darwin|cfnetwork/i": "darwin",
     "/sunos|solaris/i": "solaris",
     "/linux|debian|raspbian|ubuntu|suse|fedora|mint|red ?hat|slackware|zenwalk gnu|xentos|(?<!i)cros|windows aarch64|moblin|esx|netcast|kantonix|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|openpda|lindows/i": "linux",
@@ -43,8 +43,8 @@
     "/like mac os x|ip[ao]d|(?<![tx])ios[;\\/]|iuc ?\\(|puffin\\/[\\d\\.]+i[pt]|antenna\\/|antennapod|rss_?radio|podcruncher|audioboom|stitcher\\/ios|captivenetwork|dataaccessd|ios\\.watch/i": "ios",
     "/(?<!devicename:)nokia/i": "symbian",
     "/\\bprofile\\b|gt\\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\\/1\\.0|netfront|profile\\/midp|j2me\\/|java|mtk[; 0-9]|nucleus|maui runtime|mre|threadx|micromaxx650|dolfin\\/|yuanda50|wap[- ]?browser/i": "java",
-    "/mac os x|macintosh|os=mac 10|mac_powerpc|ppc|68k|camino|pubsub|integrity|mac ?os[;\\/]/i": "mac",
-    "/brew|beos|haiku|risc|os\\/2|warp|cp\\/m|nintendo (wii|3ds)|wiios|wyderos|liberate|inferno|syllable|fuchsia/i": "genericplatform"
+    "/macintosh|os=mac 10|mac_powerpc|ppc|68k|camino|pubsub|integrity|mac ?os[;\\/]/i": "mac",
+    "/brew|haiku|risc|os\\/2|warp|cp\\/m|nintendo (wii|3ds)|wiios|wyderos|liberate|inferno|syllable|fuchsia/i": "genericplatform"
   },
   "generic": "unknown"
 }

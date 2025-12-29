@@ -31,7 +31,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SeaMonkey",
-        "Seamonkey"
+        "Seamonkey",
+        "Iceape"
       ]
     },
     "engine": "gecko"
@@ -47,18 +48,6 @@
       ]
     },
     "engine": null
-  },
-  "iceape": {
-    "name": "Iceape",
-    "manufacturer": "software-in-the-public-interest",
-    "type": "pim",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Iceape"
-      ]
-    },
-    "engine": "gecko"
   },
   "mailspring": {
     "name": "Mailspring",

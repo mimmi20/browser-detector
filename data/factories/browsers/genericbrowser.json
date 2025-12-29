@@ -309,7 +309,7 @@
     "/curl/i": "curl",
     "/htdig/i": "ht://dig",
     "/redditbot/i": "reddit bot",
-    "/(?<![bceiou?])red(?![i\\.\\)]| hat|mi)/i": "redbot",
+    "/(?<![bceiou?])red(?![i\\.\\)]| ?hat|mi)/i": "redbot",
     "/kstandbot/i": "kstandbot",
     "/discordbot/i": "discordbot",
     "/dbot/i": "dbot",
@@ -811,7 +811,7 @@
     "/ypmobile|ypmobapp/i": "yellowpages mobile app",
     "/samsung-agent/i": "samsung agent",
     "/tenfourfox/i": "tenfourfox",
-    "/aol/i": "aol desktop",
+    "/aol/i": "aol explorer",
     "/pale ?moon/i": "palemoon",
     "/abrowse/i": "abrowse",
     "/oregano/i": "oregano",
@@ -970,6 +970,7 @@
     "/mindupbot/i": "mindup-bot",
     "/emailwolf/i": "email-wolf",
     "/claudebot/i": "claudebot",
+    "/akregator/i": "akregator",
     "/adreview/i": "adreview",
     "/fasthttp/i": "fasthttp",
     "/test-bot/i": "test-bot",
@@ -990,7 +991,8 @@
     "/colly/i": "colly",
     "/avant/i": "avant",
     "/arc\\//": "arc-browser",
-    "/OWB/": "odyssey web browser"
+    "/OWB/": "odyssey web browser",
+    "/w3m/i": "w3m"
   },
   "generic": "unknown"
 }
