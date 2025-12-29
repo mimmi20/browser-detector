@@ -1379,6 +1379,42 @@ enum Company: string implements CompanyInterface
 
     case voto = 'Voto';
 
+    case provisio = 'Provisio';
+
+    case lunascape = 'Lunascape';
+
+    case crazybrowser = 'CrazyBrowser';
+
+    case avantForce = 'Avant Force';
+
+    case getdownloadWs = 'getdownload.ws';
+
+    case kaylonTechnologies = 'Kaylon Technologies';
+
+    case xavierRoche = 'Xavier Roche';
+
+    case abelssoft = 'Abelssoft';
+
+    case kmeleonbrowserOrg = 'kmeleonbrowser.org';
+
+    case ncsa = 'NCSA';
+
+    case designScience = 'Design Science';
+
+    case deepnetSecurity = 'Deepnet Security';
+
+    case yesLogic = 'YesLogic';
+
+    case fenrir = 'Fenrir';
+
+    case flashpeak = 'FlashPeak';
+
+    case acoobrowser = 'www.acoobrowser.com';
+
+    case morequick = 'morequick';
+
+    case compaq = 'Compaq';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2066,6 +2102,24 @@ enum Company: string implements CompanyInterface
             'maxtron' => self::maxtron,
             'amoi' => self::amoi,
             'voto', 'voto mobile' => self::voto,
+            'provisio', 'provisio gmbh / llc' => self::provisio,
+            'lunascape', 'lunascape corporation' => self::lunascape,
+            'crazybrowser', 'crazybrowser.com', 'crazy-browser' => self::crazybrowser,
+            'avantforce', 'avant force', 'avant-force' => self::avantForce,
+            'getdownloadws', 'getdownload.ws', 'get-download' => self::getdownloadWs,
+            'kaylontechnologies', 'kaylon technologies', 'kaylon-technologies' => self::kaylonTechnologies,
+            'xavierroche', 'xavier roche', 'xavier-roche' => self::xavierRoche,
+            'abelssoft', 'ascora gmbh' => self::abelssoft,
+            'kmeleonbrowserorg', 'kmeleonbrowser.org', 'kmeleon-browser.org' => self::kmeleonbrowserOrg,
+            'ncsa', 'national center for supercomputing applications' => self::ncsa,
+            'designscience', 'design science, inc.', 'design-science', 'design science' => self::designScience,
+            'deepnetsecurity', 'deepnet-security', 'deepnet security' => self::deepnetSecurity,
+            'yeslogic', 'yes-logic', 'yeslogic pty. ltd.' => self::yesLogic,
+            'fenrir', 'fenrir inc' => self::fenrir,
+            'flashpeak', 'flashpeak inc.' => self::flashpeak,
+            'acoobrowser', 'www.acoobrowser.com' => self::acoobrowser,
+            'morequick' => self::morequick,
+            'compaq', 'compaq computer corporation' => self::compaq,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2279,6 +2333,16 @@ enum Company: string implements CompanyInterface
             self::espial => 'Espial Group',
             self::vivaldi => 'Vivaldi Technologies',
             self::voto => 'Voto Mobile',
+            self::provisio => 'PROVISIO GmbH / LLC',
+            self::lunascape => 'Lunascape Corporation',
+            self::crazybrowser => 'CrazyBrowser.com',
+            self::abelssoft => 'Ascora GmbH',
+            self::ncsa => 'National Center for Supercomputing Applications',
+            self::designScience => 'Design Science, Inc.',
+            self::yesLogic => 'YesLogic Pty. Ltd.',
+            self::fenrir => 'Fenrir Inc',
+            self::flashpeak => 'FlashPeak Inc.',
+            self::compaq => 'Compaq Computer Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -2479,6 +2543,16 @@ enum Company: string implements CompanyInterface
             self::espial => 'espial-group',
             self::kTouch => 'k-touch',
             self::greenOrange => 'green-orange',
+            self::crazybrowser => 'crazy-browser',
+            self::avantForce => 'avant-force',
+            self::getdownloadWs => 'get-download',
+            self::kaylonTechnologies => 'kaylon-technologies',
+            self::xavierRoche => 'xavier-roche',
+            self::kmeleonbrowserOrg => 'kmeleon-browser.org',
+            self::designScience => 'design-science',
+            self::deepnetSecurity => 'deepnet-security',
+            self::yesLogic => 'yes-logic',
+            self::acoobrowser => 'www.acoobrowser.com',
             default => $this->name,
         };
     }

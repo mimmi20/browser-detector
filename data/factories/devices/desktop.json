@@ -12,13 +12,14 @@
     "/mamd/i": "medion",
     "/mam[i3]/i": "msi",
     "/magw/i": "gateway",
-    "/cpdtdf|cpntdf|cmntdf/i": "compaq",
+    "/cpdtdf|cpntdf|cmntdf|compaq/i": "compaq",
     "/hpcmhp|hpntdf|hpdtdf|hp\\-ux 9000/i": "hp",
     "/h9p|surface pro 4/i": "microsoft",
     "/surfbook w1/i": "trekstor",
     "/freebsd/i": "unknown",
     "/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\\=|i|power)mac/i": "apple",
-    "/remix (sk1w|mini|pro)/i": "jide"
+    "/remix (sk1w|mini|pro)/i": "jide",
+    "/dec 3000/i": "dec"
   },
   "generic": "unknown"
 }

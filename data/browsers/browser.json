@@ -4262,8 +4262,8 @@
     },
     "engine": "blink"
   },
-  "mosaic": {
-    "name": "Mosaic",
+  "vms-mosaic": {
+    "name": "Vms Mosaic",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -4271,6 +4271,31 @@
       "search": [
         "VmsMosaic",
         "VMS_Mosaic"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ncsa-mosaic": {
+    "name": "Mosaic",
+    "manufacturer": "ncsa",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NCSA_Mosaic",
+        "NCSA Mosaic"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "m-mosaic": {
+    "name": "mMosaic",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "mMosaic"
       ]
     },
     "engine": "unknown"

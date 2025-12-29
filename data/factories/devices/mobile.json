@@ -7,7 +7,7 @@
     "/(?:myphone|mypad|mytab)[ _][^;\\/]+(?: +build|[;\\/\\)])|cube_lte|mytab10ii|hammer active|axe[ _]m[ _]lte|(?:adr|android) 6\\.0.* c1001/i": "myphone",
     "/(?<!alldo|cubix |rc)cube|(?:u[0-9]+gt|k8gt)|i1-3gd|i15-t[cf]l|t8-plus/i": "cube",
     "/tcl[ \\-][a-z0-9]+|tcl[_ \\-][^;\\/]+(?: +build|[;\\/\\)])|tclgalag60|vf-1497|vf685|tcl#-c616|play 2|percee tv|a501dl|t770h|t766[ahju]|t50[67][adghjktu]|t431[adepqu]|6165[ahs]|6156d|5159j|5152d|4187d/i": "tcl",
-    "/touchpad\\/\\d+\\.\\d+|hp-tablet|hp ?ipaq|p160u|(?<!tran)slate(?!droid)|hp ?10 ?plus|(?<!c)hp ?[78]|compaq [7|8]|hp; [^;\\/)]+|pre\\/|pixi|palm(?! ?os|source|e| wapper)|cm_tenderloin|hp estation|hp compaq|hp touchpad/i": "hp",
+    "/touchpad\\/\\d+\\.\\d+|hp-tablet|hp ?ipaq|p160u|(?<!tran)slate(?!droid)|hp ?10 ?plus|(?<!c)hp ?[78]|compaq [7|8]|hp; [^;\\/)]+|pre\\/|pixi|palm(?! ?os|source|e| wapper)|cm_tenderloin|hp estation|hp compaq|hp touchpad|tungsten/i": "hp",
     "/hs-7dtb2/i": "hipstreet",
     "/hisense[ _;\\-][^);\\/]+|hs-(?:g|u|eg?|i|l|t|x)[0-9]+[a-z0-9\\-]*|e270bsa|m470bs[ae]|e2281|e2371|eg680|f5281|u972|e621t|w2003|hlte[0-9]{3}[emt]|amazing a1|50a6gx|43a6gx|50a6101ex/i": "hisense",
     "/CCE |SK35[12]|SK402|SK504/": "cce",

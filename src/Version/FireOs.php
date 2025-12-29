@@ -25,6 +25,9 @@ use const ARRAY_FILTER_USE_KEY;
 final readonly class FireOs
 {
     private const array VERSION_MAP = [
+        '14' => '14',
+        '13' => '14',
+        '12' => '14',
         '11' => '8',
         '10' => '8',
         '9' => '7',

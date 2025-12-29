@@ -1190,7 +1190,7 @@ final class DetectorIntegrationTest extends TestCase
                     'os' => [
                         'name' => 'Fire OS',
                         'marketingName' => 'Fire OS',
-                        'version' => '8.0.0',
+                        'version' => '14.0.0',
                         'manufacturer' => 'Amazon',
                         'bits' => null,
                     ],

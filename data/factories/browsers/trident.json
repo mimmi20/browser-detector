@@ -79,7 +79,7 @@
     "/espial|escape/i": "espial tv browser",
     "/camino/i": "camino",
     "/ibrowse/i": "ibrowse",
-    "/webpro\\//i": "web pro",
+    "/webpro[\\/;]/i": "web pro",
     "/sitekiosk/i": "sitekiosk",
     "/viber/i": "viber"
   },
