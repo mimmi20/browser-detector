@@ -52,7 +52,7 @@ final readonly class ChromeOs implements VersionFactoryInterface
 
         if (
             preg_match(
-                '/(?:CrOS |.*Build\/R\d+-)[a-z0-9_]+ (?P<version>\d+[\d.]+)/',
+                '/(?:CrOS [a-z0-9_]+ |.*Build\/R\d+-)(?P<version>\d+[\d.]+)/',
                 $useragent,
                 $secondMatches,
             )
