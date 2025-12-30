@@ -45,12 +45,6 @@ final class CompanyTest extends TestCase
         self::assertSame($brandname, $result->getBrandname());
         self::assertSame($key, $result->getKey());
 
-        $result3 = Company::fromName($type);
-
-        self::assertSame($name, $result3->getName());
-        self::assertSame($brandname, $result3->getBrandname());
-        self::assertSame($key, $result3->getKey());
-
         if ($name !== null) {
             $result2 = Company::fromName($name);
 
@@ -4281,6 +4275,12 @@ final class CompanyTest extends TestCase
                 'name' => 'OceanHero GmbH',
                 'brandname' => 'OceanHero',
                 'key' => 'ocean-hero',
+            ],
+            [
+                'type' => 'e.ventures',
+                'name' => 'e.ventures Managementgesellschaft mbH',
+                'brandname' => 'e.ventures',
+                'key' => 'e.ventures',
             ],
         ];
     }

@@ -361,6 +361,8 @@ enum Os: string implements OsInterface
 
     case openHarmony = 'OpenHarmony';
 
+    case openSuse = 'openSuse';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -450,11 +452,11 @@ enum Os: string implements OsInterface
             'windowsnt63', 'windows nt 6.3' => self::windowsnt63,
             'windowsnt64', 'windows nt 6.4' => self::windowsnt64,
             'windowsphone', 'windows phone os', 'windows phone' => self::windowsphone,
-            'windowsphone10', 'windows phone 10.0' => self::windowsphone10,
-            'windowsphone65', 'windows phone 6.5' => self::windowsphone65,
-            'windowsphone75', 'windows phone 7.5' => self::windowsphone75,
-            'windowsphone80', 'windows phone 8.0' => self::windowsphone80,
-            'windowsphone81', 'windows phone 8.1' => self::windowsphone81,
+            'windowsphone10', 'windows phone 10.0', 'windows phone os 10.0' => self::windowsphone10,
+            'windowsphone65', 'windows phone 6.5', 'windows phone os 6.5' => self::windowsphone65,
+            'windowsphone75', 'windows phone 7.5', 'windows phone os 7.5' => self::windowsphone75,
+            'windowsphone80', 'windows phone 8.0', 'windows phone os 8.0' => self::windowsphone80,
+            'windowsphone81', 'windows phone 8.1', 'windows phone os 8.1' => self::windowsphone81,
             'windowsrt62', 'windows rt 6.2' => self::windowsrt62,
             'windowsrt63', 'windows rt 6.3' => self::windowsrt63,
             'wyderos' => self::wyderos,
@@ -490,7 +492,7 @@ enum Os: string implements OsInterface
             'redhatlinux', 'redhat linux' => self::redhatLinux,
             'freebsd' => self::freebsd,
             'gentoolinux', 'gentoo linux' => self::gentooLinux,
-            'haiku' => self::haiku,
+            'haiku', 'haiku os' => self::haiku,
             'hpux', 'hp-ux' => self::hpux,
             'openvms' => self::openvms,
             'tru64unix', 'tru64 unix' => self::tru64unix,
@@ -533,6 +535,7 @@ enum Os: string implements OsInterface
             'ultrix' => self::ultrix,
             'osf1', 'osf/1' => self::osf1,
             'openharmony' => self::openHarmony,
+            'opensuse' => self::openSuse,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -547,8 +550,8 @@ enum Os: string implements OsInterface
     {
         return match ($this) {
             self::unknown => null,
-            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003, self::windowsrt62, self::windowsrt63 => 'Windows',
-            self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows NT',
+            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003, self::windowsrt62, self::windowsrt63, self::windowsme, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows',
+            self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410 => 'Windows NT',
             self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81 => 'Windows Phone OS',
             self::nucleus => 'Nucleus OS',
             self::haiku => 'Haiku OS',
@@ -588,7 +591,7 @@ enum Os: string implements OsInterface
         return match ($this) {
             self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv => Company::google,
             self::asha, self::nokiaos, self::series30, self::series40, self::series60 => Company::nokia,
-            self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh => Company::apple,
+            self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh, self::watchos => Company::apple,
             self::bada => Company::samsung,
             self::cellos, self::orbisos, self::newsos => Company::sony,
             self::fireos => Company::amazon,
@@ -625,7 +628,7 @@ enum Os: string implements OsInterface
             self::sailfishOs => Company::jolla,
             self::slackwareLinux => Company::slackware,
             self::startos => Company::ylmf,
-            self::suseLinux => Company::suse,
+            self::suseLinux, self::openSuse => Company::suse,
             self::syllable => Company::syllable,
             self::symbianOs => Company::symbianFoundation,
             self::ventanaLinux => Company::ventana,
@@ -723,10 +726,11 @@ enum Os: string implements OsInterface
             self::morphos => ['factory' => VersionBuilderFactory::class, 'search' => ['MorphOS']],
             self::irix => ['factory' => VersionBuilderFactory::class, 'search' => ['IRIX64', 'IRIX;64', 'IRIX']],
             self::startos => ['factory' => VersionBuilderFactory::class, 'search' => ['StartOS']],
-            self::centos => ['factory' => VersionBuilderFactory::class, 'search' => ['CentOS Linux']],
+            self::centos => ['factory' => VersionBuilderFactory::class, 'search' => ['CentOS(?: Linux)?\/[0-9\.\-]+el', 'CentOS Linux', 'CentOS']],
             self::gentooLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Gentoo']],
             self::mandrivaLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Mandriva(?: Linux)?\/[0-9\.\-]+mdv']],
             self::openHarmony => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenHarmony']],
+            self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -846,6 +850,7 @@ enum Os: string implements OsInterface
             self::morphos => 'morph-os',
             self::nintendoOs => 'nintendo os',
             self::nintendoSwitchOs => 'nintendo switch os',
+            self::nintendoWiiOs => 'nintendo wii os',
             self::nucleus => 'nucleus os',
             self::rimOs => 'rim os',
             self::rimTabletOs => 'blackberry tablet os',
@@ -858,6 +863,11 @@ enum Os: string implements OsInterface
             self::leafOs => 'leaf-os',
             self::puffinOs => 'puffin-os',
             self::viziOs => 'vizi-os',
+            self::palmOs => 'palmos',
+            self::remixOs => 'remix os',
+            self::turboLinux => 'turbolinux',
+            self::openHarmony => 'openharmony',
+            self::openSuse => 'opensuse',
             default => $this->name,
         };
     }

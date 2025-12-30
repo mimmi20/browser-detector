@@ -380,6 +380,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.google.android.apps.youtube.music' => 'youtube-music',
             'nl.nrc.audio' => 'nrc-audio',
             'org.telegram.plus' => 'telegram-plus-messenger',
+            'com.android.launcher3' => 'android-launcher',
             default => null,
         };
     }

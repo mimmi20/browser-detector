@@ -65,7 +65,37 @@ final readonly class Safari implements VersionFactoryInterface
             return new NullVersion();
         }
 
-        $doMatch = preg_match('/Safari\/(?P<version>[\d\.]+)/', $useragent, $matches);
+        $doMatch = preg_match(
+            '/NetworkingExtension\/.+ Network\/.+ iOS\/(?P<version>[\d\.]+)/',
+            $useragent,
+            $matches,
+        );
+
+        if ($doMatch && is_string($matches['version'])) {
+            try {
+                $version = $this->versionBuilder->set($matches['version']);
+            } catch (NotNumericException) {
+                return new NullVersion();
+            }
+
+            $mappedVersion = $this->safariHelper->mapSafariVersion($version);
+
+            if ($mappedVersion === null) {
+                return new NullVersion();
+            }
+
+            try {
+                return $this->versionBuilder->set($mappedVersion);
+            } catch (NotNumericException) {
+                // nothing to do
+            }
+        }
+
+        $doMatch = preg_match(
+            '/(Safari|com\.apple\.WebKit\.Networking|NetworkingExtension)\/(?P<version>[\d\.]+)/',
+            $useragent,
+            $matches,
+        );
 
         if ($doMatch && is_string($matches['version'])) {
             try {

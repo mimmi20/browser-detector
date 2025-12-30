@@ -57,6 +57,10 @@ final class MobileDevice implements MobileDeviceInterface
             return true;
         }
 
+        if (preg_match('/networkingextension\/[\d.]+ .* ios\//i', $useragent)) {
+            return true;
+        }
+
         if (preg_match('/fbid\/desktop/i', $useragent)) {
             return false;
         }

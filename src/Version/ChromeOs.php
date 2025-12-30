@@ -36,7 +36,7 @@ final readonly class ChromeOs implements VersionFactoryInterface
     {
         if (
             preg_match(
-                '/(?:CrOS [a-z0-9_]+|Windows aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(?P<version>\d+[\d\.]+)/',
+                '/(?:CrOS [a-z0-9_]+ |Windows aarch64 |.*Build\/R\d+-)\d{4,5}\.\d+\.\d+[^)]*\) .* Chrome\/(?P<version>\d+[\d.]+)/',
                 $useragent,
                 $firstMatches,
             )
@@ -50,7 +50,13 @@ final readonly class ChromeOs implements VersionFactoryInterface
             return new NullVersion();
         }
 
-        if (preg_match('/CrOS [a-z0-9_]+ (?P<version>\d+[\d\.]+)/', $useragent, $secondMatches)) {
+        if (
+            preg_match(
+                '/(?:CrOS |.*Build\/R\d+-)[a-z0-9_]+ (?P<version>\d+[\d.]+)/',
+                $useragent,
+                $secondMatches,
+            )
+        ) {
             try {
                 return $this->versionBuilder->set($secondMatches['version']);
             } catch (NotNumericException) {

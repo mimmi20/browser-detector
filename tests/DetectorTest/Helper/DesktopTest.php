@@ -111,6 +111,7 @@ final class DesktopTest extends TestCase
             ['Mozilla/4.08 (Charon; Inferno)'],
             ['Mozilla/5.0 (compatible; Odyssey Web Browser; AROS; rv:1.16) AppleWebKit/535.14 (KHTML, like Gecko) OWB/1.16 Safari/535.14'],
             ['Mozilla/5.0 (PC; OpenHarmony 5.0; HarmonyOS 5.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Browser/harmony360Browser/1.0.0'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Slackware)'],
         ];
     }
 

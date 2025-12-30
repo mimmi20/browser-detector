@@ -1,6 +1,8 @@
 {
   "rules": {
     "/watchos|iphone|cpu os/i": "mobile",
+    "/(networkingextension|com\\.apple\\.webkit\\.networking)\\/[\\d\\.]+ .* darwin\\//i": "desktop",
+    "/(networkingextension|com\\.apple\\.webkit\\.networking)\\/[\\d\\.]+ .* ios\\//i": "mobile",
     "/cfnetwork\\/.+ darwin\\/(?:[\\d\\.]+).+(?:x86_64|i386|power%20macintosh)|(?:x86_64-apple-)?darwin(?:[\\d\\.]+)/i": "desktop",
     "/^(?!com.apple.safari.searchhelper|safari).*cfnetwork\\/.+ darwin\\/(\\d+[\\.\\d]+)(?!.*(?:x86_64|i386|powermac|power%20macintosh))/i": "mobile",
     "/mobilesafari\\/.*cfnetwork/i": "mobile"

@@ -88,6 +88,18 @@ final class SafariTest extends TestCase
                 'Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
                 '4.0.0',
             ],
+            [
+                'NetworkingExtension/8620.2.3 CFNetwork/3826.400.110 Darwin/24.3.0',
+                '6.0.0',
+            ],
+            [
+                'NetworkingExtension/8620.2.3 Network/4277.80.14.0.2 iOS/18.3',
+                '18.3.0',
+            ],
+            [
+                'com.apple.WebKit.Networking/20620.2.3 CFNetwork/3826.400.110 Darwin/24.3.0',
+                '18.3.0',
+            ],
         ];
     }
 

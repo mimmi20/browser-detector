@@ -4312,15 +4312,15 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-platform" => "\"Linux\"",
-      "sec-ch-ua" => "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
-      "sec-ch-ua-mobile" => "?0",
-      "user-agent" => "DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)"
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua' => '"Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-platform" => "\"Linux\"",
-                        "sec-ch-ua" => "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"',
                         'sec-ch-ua-mobile' => '?0',
                         'user-agent' => 'DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)',
                     ],
@@ -4368,29 +4368,29 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-model" => "\"\"",
-      "sec-ch-ua-platform" => "\"Linux\"",
-      "sec-ch-ua-platform-version" => "\"\"",
-      "sec-ch-ua" => "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
-      "sec-ch-ua-full-version" => "\"\"",
-      "sec-ch-ua-bitness" => "\"\"",
-      "sec-ch-ua-arch" => "\"\"",
-      "sec-ch-ua-mobile" => "?0",
-      "sec-ch-ua-wow64" => "?0",
-      "user-agent" => "Mozilla/5.0 (Android 13; Mobile; rv:145.0) Gecko/145.0 Firefox/145.0"
+                    'sec-ch-ua-model' => '""',
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua-platform-version' => '""',
+                    'sec-ch-ua' => '"Not)A;Brand";v="8", "Chromium";v="138"',
+                    'sec-ch-ua-full-version' => '""',
+                    'sec-ch-ua-bitness' => '""',
+                    'sec-ch-ua-arch' => '""',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-wow64' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (Android 13; Mobile; rv:145.0) Gecko/145.0 Firefox/145.0',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-model" => "\"\"",
-                        "sec-ch-ua-platform" => "\"Linux\"",
-                        "sec-ch-ua-platform-version" => "\"\"",
-                        "sec-ch-ua" => "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
-                        "sec-ch-ua-full-version" => "\"\"",
+                        'sec-ch-ua-model' => '""',
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua-platform-version' => '""',
+                        'sec-ch-ua' => '"Not)A;Brand";v="8", "Chromium";v="138"',
+                        'sec-ch-ua-full-version' => '""',
                         'sec-ch-ua-bitness' => '""',
                         'sec-ch-ua-arch' => '""',
-                        "sec-ch-ua-mobile" => "?0",
-                        "sec-ch-ua-wow64" => "?0",
-                        "user-agent" => "Mozilla/5.0 (Android 13; Mobile; rv:145.0) Gecko/145.0 Firefox/145.0"
+                        'sec-ch-ua-mobile' => '?0',
+                        'sec-ch-ua-wow64' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (Android 13; Mobile; rv:145.0) Gecko/145.0 Firefox/145.0',
                     ],
                     'device' => [
                         'architecture' => null,
@@ -4436,29 +4436,29 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-model" => "\"\"",
-      "sec-ch-ua-platform" => "\"Linux\"",
-      "sec-ch-ua-platform-version" => "\"\"",
-      "sec-ch-ua" => "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
-      "sec-ch-ua-full-version" => "\"\"",
-      "sec-ch-ua-bitness" => "\"\"",
-      "sec-ch-ua-arch" => "\"\"",
-      "sec-ch-ua-mobile" => "?0",
-      "sec-ch-ua-wow64" => "?0",
-      "user-agent" => "Sogou web spider/4.0"
+                    'sec-ch-ua-model' => '""',
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua-platform-version' => '""',
+                    'sec-ch-ua' => '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"',
+                    'sec-ch-ua-full-version' => '""',
+                    'sec-ch-ua-bitness' => '""',
+                    'sec-ch-ua-arch' => '""',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-wow64' => '?0',
+                    'user-agent' => 'Sogou web spider/4.0',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-model" => "\"\"",
-      "sec-ch-ua-platform" => "\"Linux\"",
-      "sec-ch-ua-platform-version" => "\"\"",
-      "sec-ch-ua" => "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
-      "sec-ch-ua-full-version" => "\"\"",
-      "sec-ch-ua-bitness" => "\"\"",
-      "sec-ch-ua-arch" => "\"\"",
-      "sec-ch-ua-mobile" => "?0",
-      "sec-ch-ua-wow64" => "?0",
-      "user-agent" => "Sogou web spider/4.0"
+                        'sec-ch-ua-model' => '""',
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua-platform-version' => '""',
+                        'sec-ch-ua' => '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"',
+                        'sec-ch-ua-full-version' => '""',
+                        'sec-ch-ua-bitness' => '""',
+                        'sec-ch-ua-arch' => '""',
+                        'sec-ch-ua-mobile' => '?0',
+                        'sec-ch-ua-wow64' => '?0',
+                        'user-agent' => 'Sogou web spider/4.0',
                     ],
                     'device' => [
                         'architecture' => null,
@@ -4504,17 +4504,17 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-platform" => "\"Linux\"",
-      "sec-ch-ua" => "\"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
-      "sec-ch-ua-mobile" => "?0",
-      "user-agent" => "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua' => '"Chromium";v="131", "Not_A Brand";v="24"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-platform" => "\"Linux\"",
-      "sec-ch-ua" => "\"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
-      "sec-ch-ua-mobile" => "?0",
-      "user-agent" => "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"Chromium";v="131", "Not_A Brand";v="24"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)',
                     ],
                     'device' => [
                         'architecture' => null,
@@ -4560,17 +4560,17 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-platform" => "\"Linux\"",
-      "sec-ch-ua" => "\"HeadlessChrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
-      "sec-ch-ua-mobile" => "?0",
-      "user-agent" => "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/119.0.6045.214 Safari/537.36"
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua' => '"HeadlessChrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/119.0.6045.214 Safari/537.36',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-platform" => "\"Linux\"",
-      "sec-ch-ua" => "\"HeadlessChrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
-      "sec-ch-ua-mobile" => "?0",
-      "user-agent" => "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/119.0.6045.214 Safari/537.36"
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"HeadlessChrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/119.0.6045.214 Safari/537.36',
                     ],
                     'device' => [
                         'architecture' => null,

@@ -50,5 +50,50 @@
       "version": "92.0.4515.105",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (PC; OpenHarmony 5.0; HarmonyOS 5.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Browser/harmony360Browser/1.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenHarmony",
+      "marketingName": "OpenHarmony",
+      "version": "5.0.0",
+      "manufacturer": "OpenAtom Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Harmony 360 Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "ArkWeb",
+      "version": "4.1.6.1",
+      "manufacturer": "Huawei"
+    }
   }
 ]
