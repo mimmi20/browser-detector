@@ -23,9 +23,9 @@
       "bits": null
     },
     "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
-      "version": "9.6.0",
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
@@ -78,51 +78,6 @@
       "name": "Kodi Media Center",
       "modus": null,
       "version": "14.0.0",
-      "manufacturer": "XBMC Foundation",
-      "type": "multimedia-player",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "XBMC/12.3 Git:20131212-9ed3e58 (Mac OS X; 13.0.0 x86_64, Version 10.9.1 (Build 13B42); http://www.xbmc.org)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.9.1",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "XBMC Media Center",
-      "modus": null,
-      "version": null,
       "manufacturer": "XBMC Foundation",
       "type": "multimedia-player",
       "isbot": false,

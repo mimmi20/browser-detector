@@ -553,7 +553,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GSA",
-        "GoogleApp"
+        "GoogleApp",
+        "Google"
       ]
     },
     "engine": null
@@ -880,6 +881,16 @@
   },
   "telegram-app": {
     "name": "Telegram App",
+    "manufacturer": "telegram",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "telegram-plus-messenger": {
+    "name": "Plus Messenger",
     "manufacturer": "telegram",
     "type": "mobile-application",
     "version": {
@@ -2012,7 +2023,7 @@
     "engine": null
   },
   "aka-lite": {
-    "name": "aka lite",
+    "name": "Aka Messenger Lite",
     "manufacturer": "aka-messenger",
     "type": "mobile-application",
     "version": {
@@ -2022,7 +2033,7 @@
     "engine": null
   },
   "aka": {
-    "name": "aka",
+    "name": "Aka Messenger",
     "manufacturer": "aka-messenger",
     "type": "mobile-application",
     "version": {
@@ -2889,6 +2900,62 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Himalaya"
+      ]
+    },
+    "engine": null
+  },
+  "siri": {
+    "name": "Siri",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Siri"
+      ]
+    },
+    "engine": null
+  },
+  "perplexity": {
+    "name": "Perplexity",
+    "manufacturer": "perplexity",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "hp smart": {
+    "name": "HP Smart",
+    "manufacturer": "hp",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "unibox": {
+    "name": "Unibox",
+    "manufacturer": "eightloops",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Unibox"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "action-extension": {
+    "name": "ActionExtension",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ActionExtension"
       ]
     },
     "engine": null

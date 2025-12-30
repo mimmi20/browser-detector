@@ -272,6 +272,8 @@ final readonly class Headers
                             case 'chrome for ios':
                             case 'chrome':
                             case 'ecosia':
+                            case 'firefox':
+                            case 'headline bot':
                                 $firstClientCodename = $lastClientCodename;
                                 $clientHeader        = array_last($headersWithClientCode);
 
@@ -294,6 +296,25 @@ final readonly class Headers
                             case 'google-nest-hub':
                             case 'chrome for ios':
                             case 'ecosia':
+                            case 'duck-assist-bot':
+                            case 'sogou web spider':
+                                $firstClientCodename = $lastClientCodename;
+                                $clientHeader        = array_last($headersWithClientCode);
+
+                                break;
+                            default:
+                                // do nothing
+                        }
+                    }
+
+                    break;
+                case 'headless-chrome':
+                    $lastClientCodename = array_last($clientCodes);
+                    $clientHeader       = array_first($headersWithClientCode);
+
+                    if (is_string($lastClientCodename)) {
+                        switch ($lastClientCodename) {
+                            case 'amazon bot':
                                 $firstClientCodename = $lastClientCodename;
                                 $clientHeader        = array_last($headersWithClientCode);
 
@@ -327,7 +348,7 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($firstClientCodename);
             $clientVersion  = match ($firstClientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life' => $clientVersions['user-agent']
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
                 'duckduck app', 'huawei-browser', 'ucbrowser', 'edge' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']

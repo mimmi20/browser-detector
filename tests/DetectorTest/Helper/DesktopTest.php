@@ -108,6 +108,9 @@ final class DesktopTest extends TestCase
             ['AmigaVoyager/3.4.4 (MorphOS/PPC native)'],
             ['Mozilla/5.0 (X11; U; DragonFly i386; de; rv:1.9.1b2) Gecko/20081201 Firefox/3.1b2'],
             ['Mozilla/5.0 (X11; U; Gentoo x86_64; de-DE) Firefox/26.0'],
+            ['Mozilla/4.08 (Charon; Inferno)'],
+            ['Mozilla/5.0 (compatible; Odyssey Web Browser; AROS; rv:1.16) AppleWebKit/535.14 (KHTML, like Gecko) OWB/1.16 Safari/535.14'],
+            ['Mozilla/5.0 (PC; OpenHarmony 5.0; HarmonyOS 5.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Browser/harmony360Browser/1.0.0'],
         ];
     }
 

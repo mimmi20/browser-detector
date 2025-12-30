@@ -158,7 +158,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows 98",
+      "name": "Windows",
       "marketingName": "Windows 98",
       "version": "98.0.0",
       "manufacturer": "Microsoft",
@@ -168,96 +168,6 @@
       "name": "Java Standard Library",
       "modus": null,
       "version": "1.4.2.03",
-      "manufacturer": "Oracle",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows 2003 5.2) Java/1.4.2_03"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 2003",
-      "marketingName": "Windows 2003",
-      "version": "2003.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": "1.4.2.03",
-      "manufacturer": "Oracle",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows 7 6.1) Java/1.6.0_27"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": "1.6.0.27",
       "manufacturer": "Oracle",
       "type": "library",
       "isbot": false,
@@ -399,7 +309,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }

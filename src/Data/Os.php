@@ -359,6 +359,8 @@ enum Os: string implements OsInterface
 
     case osf1 = 'OSF/1';
 
+    case openHarmony = 'OpenHarmony';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -530,6 +532,7 @@ enum Os: string implements OsInterface
             'vizios', 'vizi-os' => self::viziOs,
             'ultrix' => self::ultrix,
             'osf1', 'osf/1' => self::osf1,
+            'openharmony' => self::openHarmony,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -544,10 +547,9 @@ enum Os: string implements OsInterface
     {
         return match ($this) {
             self::unknown => null,
-            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003 => 'Windows',
+            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003, self::windowsrt62, self::windowsrt63 => 'Windows',
             self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows NT',
             self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81 => 'Windows Phone OS',
-            self::windowsrt62, self::windowsrt63 => 'Windows RT',
             self::nucleus => 'Nucleus OS',
             self::haiku => 'Haiku OS',
             default => $this->value,
@@ -633,6 +635,7 @@ enum Os: string implements OsInterface
             self::viziOs => Company::vizio,
             self::ultrix => Company::dec,
             self::osf1 => Company::osf,
+            self::openHarmony => Company::openatomFoundation,
             default => Company::unknown,
         };
     }
@@ -685,7 +688,7 @@ enum Os: string implements OsInterface
             self::beos => ['factory' => VersionBuilderFactory::class, 'search' => ['BeOS']],
             self::bsd => ['factory' => VersionBuilderFactory::class, 'search' => ['BSD']],
             self::fedoraLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Fedora\/[0-9\.\-]+\.fc', 'Fedora']],
-            self::redhatLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Red Hat']],
+            self::redhatLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Redhat Linux', 'Red Hat']],
             self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ['FreeBSD', 'freebsd']],
             self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenVMS V', 'OpenVMS']],
             self::tru64unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Tru64 UNIX', 'Digital Unix']],
@@ -721,6 +724,9 @@ enum Os: string implements OsInterface
             self::irix => ['factory' => VersionBuilderFactory::class, 'search' => ['IRIX64', 'IRIX;64', 'IRIX']],
             self::startos => ['factory' => VersionBuilderFactory::class, 'search' => ['StartOS']],
             self::centos => ['factory' => VersionBuilderFactory::class, 'search' => ['CentOS Linux']],
+            self::gentooLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Gentoo']],
+            self::mandrivaLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Mandriva(?: Linux)?\/[0-9\.\-]+mdv']],
+            self::openHarmony => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenHarmony']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],

@@ -4253,7 +4253,7 @@
     "engine": "blink"
   },
   "vms-mosaic": {
-    "name": "Vms Mosaic",
+    "name": "VMS Mosaic",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -5667,6 +5667,64 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Internet ScreenBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "acorn-browse": {
+    "name": "Browse",
+    "manufacturer": "acorn",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Acorn Browse"
+      ]
+    },
+    "engine": null
+  },
+  "acorn-phoenix": {
+    "name": "Phoenix",
+    "manufacturer": "acorn",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Acorn Phoenix"
+      ]
+    },
+    "engine": null
+  },
+  "harmony-360-browser": {
+    "name": "Harmony 360 Browser",
+    "manufacturer": "huawei",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "harmony360Browser"
+      ]
+    },
+    "engine": "arkweb"
+  },
+  "arc-search": {
+    "name": "Arc Search",
+    "manufacturer": "the-browser-company",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "oceanhero-browser": {
+    "name": "OceanHero Browser",
+    "manufacturer": "ocean-hero",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OceanHero"
       ]
     },
     "engine": null

@@ -483,5 +483,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "duck-assist-bot": {
+    "name": "DuckAssistBot",
+    "manufacturer": "duck-duck-go",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DuckAssistBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

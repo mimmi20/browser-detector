@@ -361,6 +361,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Gentoo x86_64; de-DE) Firefox/26.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Gentoo Linux",
+      "marketingName": "Gentoo Linux",
+      "version": null,
+      "manufacturer": "Gentoo",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "26.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.7) Gecko/2009031915 Gentoo Firefox/3.0.7"
     },
     "device": {
@@ -473,10 +518,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Haiku OS",
+      "marketingName": "Haiku OS",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Haiku",
       "bits": null
     },
     "client": {
@@ -520,7 +565,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "5.3.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -833,10 +878,10 @@
       "bits": null
     },
     "os": {
-      "name": "Tru64 UNIX",
-      "marketingName": "Tru64 UNIX",
-      "version": null,
-      "manufacturer": "HP",
+      "name": "OSF/1",
+      "marketingName": "OSF/1",
+      "version": "4.0.0",
+      "manufacturer": "OSF",
       "bits": null
     },
     "client": {
@@ -878,10 +923,10 @@
       "bits": null
     },
     "os": {
-      "name": "Tru64 UNIX",
-      "marketingName": "Tru64 UNIX",
-      "version": null,
-      "manufacturer": "HP",
+      "name": "OSF/1",
+      "marketingName": "OSF/1",
+      "version": "5.1.0",
+      "manufacturer": "OSF",
       "bits": null
     },
     "client": {
@@ -1238,7 +1283,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows 95",
+      "name": "Windows",
       "marketingName": "Windows 95",
       "version": "95.0.0",
       "manufacturer": "Microsoft",
@@ -1283,7 +1328,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows 95",
+      "name": "Windows",
       "marketingName": "Windows 95",
       "version": "95.0.0",
       "manufacturer": "Microsoft",
@@ -1351,51 +1396,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.78 [ja] (Win98; U)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 98",
-      "marketingName": "Windows 98",
-      "version": "98.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "4.78.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (masking-agent; rv:15.0) Gecko/20100101 Firefox/15.0.1"
     },
     "device": {
@@ -1436,96 +1436,6 @@
     "engine": {
       "name": "Gecko",
       "version": "15.0.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:22.0) Gecko/ /22.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 8",
-      "version": "8.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows 95; de; rv:1.9.2.6) Gecko/20100625 Firefox/27.0.1 (de) Anonymisiert durch AlMiSoft Browser-Maulkorb 68827872"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 95",
-      "marketingName": "Windows 95",
-      "version": "95.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "27.0.1",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.9.2.6",
       "manufacturer": "Mozilla"
     }
   },
@@ -1823,10 +1733,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Haiku OS",
+      "marketingName": "Haiku OS",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Haiku",
       "bits": null
     },
     "client": {
@@ -1868,10 +1778,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Haiku OS",
+      "marketingName": "Haiku OS",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Haiku",
       "bits": null
     },
     "client": {
@@ -1958,10 +1868,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Haiku OS",
+      "marketingName": "Haiku OS",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Haiku",
       "bits": null
     },
     "client": {
@@ -2161,51 +2071,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1; x64; fr; rv:1.9.2.13) Gecko/20101203 Firebird/3.6.13"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Firebird",
-      "modus": null,
-      "version": "3.6.13",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.9.2.13",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.6b) Gecko/20031212 Firebird/0.7+"
     },
     "device": {
@@ -2246,51 +2111,6 @@
     "engine": {
       "name": "Gecko",
       "version": "1.6.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.5) Gecko/20031007 Firebird/0.7"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 98",
-      "marketingName": "Windows 98",
-      "version": "98.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Firebird",
-      "modus": null,
-      "version": "0.7.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.5.0",
       "manufacturer": "Mozilla"
     }
   },
@@ -2566,6 +2386,96 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; DragonFly i386; de; rv:1.9.1) Gecko/20090720 Firefox/3.5.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "DragonFly BSD",
+      "marketingName": "DragonFly BSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.5.1",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.1",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; DragonFly i386; de; rv:1.9.1b2) Gecko/20081201 Firefox/3.1b2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "DragonFly BSD",
+      "marketingName": "DragonFly BSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.1.0-beta+2",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.1",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.001 (X11; U; Linux i686; rv:1.8.1.6; de-ch) Gecko/25250101 (ubuntu-feisty)"
     },
     "device": {
@@ -2680,7 +2590,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.5.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -2725,7 +2635,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.5.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -2860,7 +2770,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.5.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -2905,7 +2815,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.5.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -2950,7 +2860,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.5.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -3040,7 +2950,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.5.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -3085,7 +2995,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.5.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -3310,7 +3220,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.5.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -4210,7 +4120,7 @@
     "os": {
       "name": "IRIX",
       "marketingName": "IRIX",
-      "version": null,
+      "version": "6.3.0",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -4456,12 +4366,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Win98; de-DE; rv:1.7) Gecko/20040803 Firefox/0.9.3"
+      "user-agent": "Mozilla/5.0 (X11; OpenBSD amd64; rv:42.0) Gecko/20100101 Firefox/42.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
@@ -4478,16 +4388,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows 98",
-      "marketingName": "Windows 98",
-      "version": "98.0.0",
-      "manufacturer": "Microsoft",
+      "name": "OpenBSD",
+      "marketingName": "OpenBSD",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "0.9.3",
+      "version": "42.0.0",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -4495,7 +4405,97 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "1.7.0",
+      "version": "42.0.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.8.1.11) Gecko/20080118 Firefox/2.0.0.11"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "SunOS",
+      "marketingName": "SunOS",
+      "version": null,
+      "manufacturer": "Oracle",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0.11",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1.11",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.5) Gecko/20031021"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": null,
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.5.0",
       "manufacturer": "Mozilla"
     }
   }

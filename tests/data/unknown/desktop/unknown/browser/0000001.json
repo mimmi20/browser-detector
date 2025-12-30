@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1; rv:1.8.0.7) Gecko/20110321 MultiZilla/4.33.2.6a SeaMonkey/8.6.55"
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1 WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.122 CoRom/27.0.1453.122 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -30,18 +30,153 @@
       "bits": null
     },
     "client": {
-      "name": "MultiZilla",
+      "name": "CoRom Browser",
       "modus": null,
-      "version": "4.33.2.6-alpha",
+      "version": "27.0.1453.122",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "Gecko",
-      "version": "1.8.0.7",
-      "manufacturer": "Mozilla"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2745.1 Kuaiso/1.42.501.426 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Kuaiso Browser",
+      "modus": null,
+      "version": "1.42.501.426",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2745.1",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Kuaiso/1.42.501.445 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Kuaiso Browser",
+      "modus": null,
+      "version": "1.42.501.445",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.152",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2110.0 TeslaBrowser/1.0.0.4863 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 7",
+      "version": "7.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "TeslaBrowser",
+      "modus": null,
+      "version": "1.0.0.4863",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "38.0.2110.0",
+      "manufacturer": "Google"
     }
   },
   {
@@ -226,6 +361,51 @@
   },
   {
     "headers": {
+      "user-agent": "IBrowse/2.4 (MorphOS 2.2; PPC; AmigaOS 68K build)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "68.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "2.4.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ELinks/0.9.1 (textmode; SunOS 5.9 sun4u; 122x42)"
     },
     "device": {
@@ -264,7 +444,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -309,7 +489,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -354,7 +534,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -399,7 +579,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -444,7 +624,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -991,51 +1171,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Win95; en-US; rv:1.6) Gecko/20040113 MultiZilla/1.6.1.1c"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 95",
-      "marketingName": "Windows 95",
-      "version": "95.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "MultiZilla",
-      "modus": null,
-      "version": "1.6.1.1",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.6.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (OS/2; U; Warp 4.5; en-US; rv:1.7b) Gecko/20040325 MultiZilla/1.6.3.0e"
     },
     "device": {
@@ -1122,51 +1257,6 @@
       "name": "Gecko",
       "version": "1.3.0",
       "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.78 [en] (Win98; I) IBrowse/2.3 (AmigaOS 3.1)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 98",
-      "marketingName": "Windows 98",
-      "version": "98.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "IBrowse",
-      "modus": null,
-      "version": "2.3.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -1396,6 +1486,51 @@
   },
   {
     "headers": {
+      "user-agent": "IBrowse/2.4 (MorphOS 1.4; PPC; AmigaOS 68K build)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "68.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "2.4.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ELinks/0.11.4rc1 (textmode; FreeBSD 7.1-RELEASE i386; 80x25-2)"
     },
     "device": {
@@ -1434,52 +1569,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "VMS_Mosaic/4.0 (Motif;OpenVMS V8.3 COMPAQ Professional Workstation ) libwww/2.12_Mosaic"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "OpenVMS",
-      "marketingName": "OpenVMS",
-      "version": "8.3.0",
-      "manufacturer": "HP",
-      "bits": null
-    },
-    "client": {
-      "name": "Mosaic",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -1974,14 +2064,14 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "VMS_Mosaic/3.8-1 (Motif;OpenVMS V7.3-2 DEC 3000 - M700)  libwww/2.12_Mosaic"
+      "user-agent": "Mozilla/5.0 (compatible; U; ABrowse 0.7; Syllable) AppleWebKit/420+ (KHTML, like Gecko)"
     },
     "device": {
       "architecture": null,
@@ -2003,25 +2093,25 @@
       "bits": null
     },
     "os": {
-      "name": "OpenVMS",
-      "marketingName": "OpenVMS",
-      "version": "7.3.2",
-      "manufacturer": "HP",
+      "name": "Syllable",
+      "marketingName": "Syllable",
+      "version": null,
+      "manufacturer": "Syllable",
       "bits": null
     },
     "client": {
-      "name": "Mosaic",
+      "name": "ABrowse",
       "modus": null,
-      "version": "3.8.1",
+      "version": "0.7.0",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -2157,6 +2247,51 @@
       "name": "WebKit",
       "version": "0.38.1",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "IBrowse/15.9 (Fedora 1.2; ar_BH;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": "1.2.0",
+      "manufacturer": "Redhat",
+      "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "15.9.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -2380,7 +2515,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -2425,7 +2560,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -2927,51 +3062,6 @@
   },
   {
     "headers": {
-      "user-agent": "IBrowse/2.2 (Windows V45)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "IBrowse",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (OS/2; U; Warp 4.5; en-US; rv:1.7) Gecko/20040617 MultiZilla/1.6.4.0b"
     },
     "device": {
@@ -3238,51 +3328,6 @@
       "name": "Gecko",
       "version": "1.8.0.7",
       "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.7 (compatible; OffByOne; Windows )"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Off By One",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {

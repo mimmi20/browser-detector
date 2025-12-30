@@ -912,7 +912,7 @@ final class CompanyTest extends TestCase
             ],
             [
                 'type' => 'The Browser Company',
-                'name' => 'The Browser Company of New York',
+                'name' => 'The Browser Company of New York, Inc',
                 'brandname' => 'The Browser Company',
                 'key' => 'the-browser-company',
             ],
@@ -4252,6 +4252,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'OSF',
                 'key' => 'osf',
             ],
+            [
+                'type' => 'Sakamoto Hironori',
+                'name' => 'Sakamoto Hironori',
+                'brandname' => 'Sakamoto Hironori',
+                'key' => 'sakamoto-hironori',
+            ],
+            [
+                'type' => 'Acorn',
+                'name' => 'Acorn',
+                'brandname' => 'Acorn',
+                'key' => 'acorn',
+            ],
+            [
+                'type' => 'Perplexity',
+                'name' => 'Perplexity AI, Inc.',
+                'brandname' => 'Perplexity',
+                'key' => 'perplexity',
+            ],
+            [
+                'type' => 'OpenAtom Foundation',
+                'name' => 'OpenAtom Foundation',
+                'brandname' => 'OpenAtom Foundation',
+                'key' => 'openatom-foundation',
+            ],
+            [
+                'type' => 'OceanHero',
+                'name' => 'OceanHero GmbH',
+                'brandname' => 'OceanHero',
+                'key' => 'ocean-hero',
+            ],
         ];
     }
 
@@ -4509,13 +4539,13 @@ final class CompanyTest extends TestCase
             ],
             [
                 'fallback' => 'the-browser-company',
-                'name' => 'The Browser Company of New York',
+                'name' => 'The Browser Company of New York, Inc',
                 'brandname' => 'The Browser Company',
                 'key' => 'the-browser-company',
             ],
             [
-                'fallback' => 'The Browser Company of New York',
-                'name' => 'The Browser Company of New York',
+                'fallback' => 'The Browser Company of New York, Inc',
+                'name' => 'The Browser Company of New York, Inc',
                 'brandname' => 'The Browser Company',
                 'key' => 'the-browser-company',
             ],

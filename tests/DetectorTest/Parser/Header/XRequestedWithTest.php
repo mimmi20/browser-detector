@@ -552,6 +552,7 @@ final class XRequestedWithTest extends TestCase
             ['proxy.browser.unblock.sites.proxybrowser.unblocksites', true, 'proxy-browser', true, null, false, Os::unknown],
             ['com.google.android.apps.youtube.music', true, 'youtube-music', true, null, false, Os::unknown],
             ['nl.nrc.audio', true, 'nrc-audio', true, null, false, Os::unknown],
+            ['org.telegram.plus', true, 'telegram-plus-messenger', true, null, false, Os::unknown],
         ];
     }
 }

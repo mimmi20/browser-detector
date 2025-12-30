@@ -248,10 +248,10 @@
       "bits": null
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.0",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -383,10 +383,10 @@
       "bits": null
     },
     "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "Canonical",
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.5",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -406,7 +406,7 @@
   },
   {
     "headers": {
-      "user-agent": "Ruby, Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:30.0) Gecko/20100101 Firefox/30.0"
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (macintosh; intel mac os x 10_9_5) applewebkit/537.78.2 (khtml, like gecko) version/7.0.6 safari/537.78.2; +https://github.com/rom1504/img2dataset)"
     },
     "device": {
       "architecture": null,
@@ -430,12 +430,12 @@
     "os": {
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
-      "version": "10.9.0",
+      "version": "10.9.5",
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
-      "name": "Generic Ruby Crawler",
+      "name": "img2dataset",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
@@ -444,9 +444,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Gecko",
-      "version": "30.0.0",
-      "manufacturer": "Mozilla"
+      "name": "WebKit",
+      "version": "537.78.2",
+      "manufacturer": "Apple"
     }
   }
 ]

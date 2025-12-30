@@ -75,6 +75,8 @@ enum Engine: string implements EngineInterface
 
     case icab = 'iCab';
 
+    case arkweb = 'ArkWeb';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -110,6 +112,7 @@ enum Engine: string implements EngineInterface
             'treco' => self::treco,
             'text' => self::text,
             'icab' => self::icab,
+            'arkweb' => self::arkweb,
             default => throw new UnexpectedValueException(
                 sprintf('the engine "%s" is unknown', $name),
             ),
@@ -143,6 +146,7 @@ enum Engine: string implements EngineInterface
             self::goanna => Company::moonchild,
             self::teleca => Company::obigo,
             self::treco => Company::arsslensoft,
+            self::arkweb => Company::huawei,
             default => Company::unknown,
         };
     }
@@ -169,6 +173,7 @@ enum Engine: string implements EngineInterface
             self::u3 => ['factory' => VersionBuilderFactory::class, 'search' => ['U3']],
             self::u4 => ['factory' => VersionBuilderFactory::class, 'search' => ['U4']],
             self::icab => ['factory' => VersionBuilderFactory::class, 'search' => ['iCab']],
+            self::arkweb => ['factory' => VersionBuilderFactory::class, 'search' => ['ArkWeb']],
             self::gecko => ['factory' => GeckoFactory::class, 'search' => null],
             self::trident => ['factory' => TridentFactory::class, 'search' => null],
             self::goanna => ['factory' => GoannaFactory::class, 'search' => null],

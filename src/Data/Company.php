@@ -1417,6 +1417,16 @@ enum Company: string implements CompanyInterface
 
     case osf = 'OSF';
 
+    case sakamotoHironori = 'Sakamoto Hironori';
+
+    case acorn = 'Acorn';
+
+    case perplexity = 'Perplexity';
+
+    case openatomFoundation = 'OpenAtom Foundation';
+
+    case oceanHero = 'OceanHero';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1565,7 +1575,7 @@ enum Company: string implements CompanyInterface
             'sber' => self::sber,
             'senna' => self::senna,
             'trecfone' => self::trecfone,
-            'the-browser-company', 'the browser company', 'the browser company of new york', 'thebrowser' => self::thebrowser,
+            'the-browser-company', 'the browser company', 'the browser company of new york, inc', 'thebrowser' => self::thebrowser,
             'readdle' => self::readdle,
             'eightloops', 'eightloops gmbh' => self::eightloops,
             'listia', 'listia inc.' => self::listia,
@@ -2123,6 +2133,11 @@ enum Company: string implements CompanyInterface
             'morequick' => self::morequick,
             'compaq', 'compaq computer corporation' => self::compaq,
             'osf', 'open software foundation' => self::osf,
+            'sakamotohironori', 'sakamoto-hironori', 'sakamoto hironori' => self::sakamotoHironori,
+            'acorn' => self::acorn,
+            'perplexity', 'perplexity ai, inc.' => self::perplexity,
+            'openatomfoundation', 'openatom foundation', 'openatom-foundation' => self::openatomFoundation,
+            'oceanhero', 'oceanhero gmbh', 'ocean-hero' => self::oceanHero,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2161,7 +2176,7 @@ enum Company: string implements CompanyInterface
             self::moondrop => 'Chengdu Shuiyueyu Technology Co., Ltd.',
             self::hotPepper => 'Hot Pepper Mobile, Inc.',
             self::vision => 'Vision Technology',
-            self::thebrowser => 'The Browser Company of New York',
+            self::thebrowser => 'The Browser Company of New York, Inc',
             self::eightloops => 'eightloops GmbH',
             self::listia => 'Listia Inc.',
             self::ecosia => 'Ecosia GmbH',
@@ -2347,6 +2362,8 @@ enum Company: string implements CompanyInterface
             self::flashpeak => 'FlashPeak Inc.',
             self::compaq => 'Compaq Computer Corporation',
             self::osf => 'Open Software Foundation',
+            self::perplexity => 'Perplexity AI, Inc.',
+            self::oceanHero => 'OceanHero GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -2557,6 +2574,9 @@ enum Company: string implements CompanyInterface
             self::deepnetSecurity => 'deepnet-security',
             self::yesLogic => 'yes-logic',
             self::acoobrowser => 'www.acoobrowser.com',
+            self::sakamotoHironori => 'sakamoto-hironori',
+            self::openatomFoundation => 'openatom-foundation',
+            self::oceanHero => 'ocean-hero',
             default => $this->name,
         };
     }

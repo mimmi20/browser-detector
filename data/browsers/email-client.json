@@ -133,18 +133,6 @@
     },
     "engine": "gecko"
   },
-  "unibox": {
-    "name": "Unibox",
-    "manufacturer": "eightloops",
-    "type": "email-client",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Unibox"
-      ]
-    },
-    "engine": "webkit"
-  },
   "virgilio-mail": {
     "name": "Virgilio Mail",
     "manufacturer": "italiaonline",
