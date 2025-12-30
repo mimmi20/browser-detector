@@ -1051,7 +1051,7 @@ final class OsTest extends TestCase
                 'name' => 'Redhat Linux',
                 'marketingName' => 'Redhat Linux',
                 'manufacturer' => Company::redhat,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Redhat Linux', 'Red Hat']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Red Hat Enterprise Linux', 'Redhat Linux', 'Red Hat']],
                 'key' => 'redhat linux',
             ],
             [

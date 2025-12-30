@@ -27,7 +27,7 @@
     "/(?:net|free|open)bsd|(?<![0-9])bsd(?!k)|dragonfly/i": "bsd",
     "/web[o0]s|hpwos/i": "webos",
     "/hp-?ux|irix|(?<![ch])aix(?![u\\-])|unix|osf1/i": "unix",
-    "/kukui|(?<!i)cros|windows aarch64|.*Build\\/R\\d+-\\d+[.\\d]+/i": "chromeos",
+    "/kukui|(?<!i)cros(?!s)|windows aarch64|Build\\/R\\d+-\\d+[.\\d]+/i": "chromeos",
     "/MIUI/": "android",
     "/kaios/i": "kaios",
     "/yunos|baidu yi|(?<!o)andr[0o]id|aosp|harmonyos|silk|juc ?\\(linux;|adr |gingerbread|ucweb\\/2\\.0 \\(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e|puffin\\/[\\d\\.]+a[tp]/i": "android",
