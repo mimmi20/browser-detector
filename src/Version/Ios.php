@@ -356,8 +356,8 @@ final readonly class Ios implements VersionFactoryInterface
         }
 
         $regexes = [
-            '/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+[a-z]?)/i',
-            '/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+[a-z]?)\)/i',
+            '/[aA]pple[cC]ore[mM]edia\/\d+\.\d+\.\d+\.(?P<build>\d{1,2}[A-Z]\d{1,4}[a-z]?)/',
+            '/i[oO][sS]\/\d+[\d\.]+ \((?P<build>\d{1,2}[A-Z]\d{1,4}[a-z]?)\)/',
         ];
 
         $filtered = array_filter(
@@ -381,17 +381,13 @@ final readonly class Ios implements VersionFactoryInterface
         if ($detectedBuild !== null && $detectedBuild !== '') {
             try {
                 $buildVersion = $this->iosBuild->getVersion($detectedBuild);
-            } catch (NotFoundException) {
-                $buildVersion = false;
+
+                return $this->versionBuilder->set($buildVersion);
+            } catch (NotFoundException | NotNumericException) {
+                // do nothing
             }
 
-            if ($buildVersion !== false) {
-                try {
-                    return $this->versionBuilder->set($buildVersion);
-                } catch (NotNumericException) {
-                    return new NullVersion();
-                }
-            }
+            return new NullVersion();
         }
 
         if (

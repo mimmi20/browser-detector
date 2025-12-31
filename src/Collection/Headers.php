@@ -356,7 +356,8 @@ final readonly class Headers
                     ?? $clientVersions['sec-ch-ua']
                     ?? $clientVersions['sec-ch-ua-full-version']
                     ?? array_last($clientVersions),
-                'ecosia', 'opera mobile' => $clientVersions['sec-ch-ua-full-version'] ?? array_last($clientVersions),
+                'ecosia', 'opera mobile' => $clientVersions['sec-ch-ua-full-version']
+                    ?? array_last($clientVersions),
                 default => array_first($clientVersions),
             };
 

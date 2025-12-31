@@ -4616,17 +4616,17 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua" => "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"HeadlessChrome\";v=\"126\"",
-    "sec-ch-ua-mobile" => "?0",
-    "sec-ch-ua-platform" => "\"Linux\"",
-    "user-agent" => "facebookexternalhit/1.1"
+                    'sec-ch-ua' => '"Not/A)Brand";v="8", "Chromium";v="126", "HeadlessChrome";v="126"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'user-agent' => 'facebookexternalhit/1.1',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-platform" => "\"Linux\"",
-                        "sec-ch-ua" => "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"HeadlessChrome\";v=\"126\"",
-    "sec-ch-ua-mobile" => "?0",
-    "user-agent" => "facebookexternalhit/1.1"
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"Not/A)Brand";v="8", "Chromium";v="126", "HeadlessChrome";v="126"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'facebookexternalhit/1.1',
                     ],
                     'device' => [
                         'architecture' => null,
@@ -4672,27 +4672,27 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-model" => "\"\"",
-            "sec-ch-ua-platform" => "\"Android\"",
-            "sec-ch-ua-platform-version" => "\"\"",
-            "sec-ch-ua" => "\"Not)A;Brand\";v=\"99\", \"Android WebView\";v=\"127\", \"Chromium\";v=\"127\"",
-            "sec-ch-ua-full-version" => "\"\"",
-            "sec-ch-ua-bitness" => "\"\"",
-            "sec-ch-ua-arch" => "\"\"",
-            "sec-ch-ua-mobile" => "?0",
-            "user-agent" => "Mozilla/5.0 (Linux; U; Android 12; G2_EEA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36 OPR/84.0.2254.73823"
+                    'sec-ch-ua-model' => '""',
+                    'sec-ch-ua-platform' => '"Android"',
+                    'sec-ch-ua-platform-version' => '""',
+                    'sec-ch-ua' => '"Not)A;Brand";v="99", "Android WebView";v="127", "Chromium";v="127"',
+                    'sec-ch-ua-full-version' => '""',
+                    'sec-ch-ua-bitness' => '""',
+                    'sec-ch-ua-arch' => '""',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (Linux; U; Android 12; G2_EEA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36 OPR/84.0.2254.73823',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-model" => "\"\"",
-            "sec-ch-ua-platform" => "\"Android\"",
-            "sec-ch-ua-platform-version" => "\"\"",
-            "sec-ch-ua" => "\"Not)A;Brand\";v=\"99\", \"Android WebView\";v=\"127\", \"Chromium\";v=\"127\"",
-            "sec-ch-ua-full-version" => "\"\"",
-            "sec-ch-ua-bitness" => "\"\"",
-            "sec-ch-ua-arch" => "\"\"",
-            "sec-ch-ua-mobile" => "?0",
-            "user-agent" => "Mozilla/5.0 (Linux; U; Android 12; G2_EEA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36 OPR/84.0.2254.73823"
+                        'sec-ch-ua-model' => '""',
+                        'sec-ch-ua-platform' => '"Android"',
+                        'sec-ch-ua-platform-version' => '""',
+                        'sec-ch-ua' => '"Not)A;Brand";v="99", "Android WebView";v="127", "Chromium";v="127"',
+                        'sec-ch-ua-full-version' => '""',
+                        'sec-ch-ua-bitness' => '""',
+                        'sec-ch-ua-arch' => '""',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (Linux; U; Android 12; G2_EEA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36 OPR/84.0.2254.73823',
                     ],
                     'device' => [
                         'architecture' => null,
