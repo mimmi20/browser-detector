@@ -179,7 +179,7 @@ final class OsTest extends TestCase
                 'name' => 'BackTrack Linux',
                 'marketingName' => 'BackTrack Linux',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
                 'key' => 'backtrack linux',
             ],
             [
@@ -235,7 +235,7 @@ final class OsTest extends TestCase
                 'name' => 'Chinese Operating System',
                 'marketingName' => 'COS',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['COS like Android', 'Chinese Operating System']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['COS like Android', 'Chinese Operating System', 'COS']],
                 'key' => 'cos',
             ],
             [
@@ -285,14 +285,6 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::apple,
                 'version' => ['factory' => MacosFactory::class, 'search' => null],
                 'key' => 'mac os x',
-            ],
-            [
-                'type' => 'Cygwin',
-                'name' => 'Cygwin',
-                'marketingName' => 'Cygwin',
-                'manufacturer' => Company::unknown,
-                'version' => ['factory' => null, 'search' => null],
-                'key' => 'cygwin',
             ],
             [
                 'type' => 'Darwin',
@@ -943,10 +935,10 @@ final class OsTest extends TestCase
                 'key' => 'news-os',
             ],
             [
-                'type' => 'Lindows',
-                'name' => 'Lindows',
-                'marketingName' => 'Lindows',
-                'manufacturer' => Company::unknown,
+                'type' => 'LindowsOS',
+                'name' => 'LindowsOS',
+                'marketingName' => 'LindowsOS',
+                'manufacturer' => Company::linspire,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Lindows']],
                 'key' => 'lindows',
             ],
@@ -1003,7 +995,7 @@ final class OsTest extends TestCase
                 'name' => 'BSD',
                 'marketingName' => 'BSD',
                 'manufacturer' => Company::berkeley,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['BSD']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['BSD', 'BSD\/OS']],
                 'key' => 'bsd',
             ],
             [
@@ -1421,6 +1413,14 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::suse,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
                 'key' => 'opensuse',
+            ],
+            [
+                'type' => 'Linspire',
+                'name' => 'Linspire',
+                'marketingName' => 'Linspire',
+                'manufacturer' => Company::linspire,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
+                'key' => 'linspire',
             ],
         ];
     }

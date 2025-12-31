@@ -109,5 +109,17 @@
       "search": null
     },
     "engine": null
+  },
+  "apache-server": {
+    "name": "Apache",
+    "manufacturer": "apache",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Apache"
+      ]
+    },
+    "engine": null
   }
 }

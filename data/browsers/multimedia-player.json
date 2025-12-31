@@ -613,16 +613,6 @@
     },
     "engine": "unknown"
   },
-  "radio.de app": {
-    "name": "radio.de App",
-    "manufacturer": "unknown",
-    "type": "multimedia-player",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "radio.net app": {
     "name": "radio.net App",
     "manufacturer": "unknown",
@@ -828,6 +818,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "mplayer": {
+    "name": "MPlayer",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MPlayer"
+      ]
     },
     "engine": "unknown"
   }

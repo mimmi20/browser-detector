@@ -266,6 +266,13 @@ final class EngineTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['ArkWeb']],
                 'key' => 'arkweb',
             ],
+            [
+                'type' => 'NetSurf',
+                'name' => 'NetSurf',
+                'manufacturer' => Company::unknown,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['NetSurf']],
+                'key' => 'netsurf',
+            ],
         ];
     }
 }

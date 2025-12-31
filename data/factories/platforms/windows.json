@@ -6,7 +6,7 @@
     "/windows nt 6\\.3|windows 6\\.3|windows 8\\.1/i": "windows nt 6.3",
     "/windows nt 6\\.2; arm/i": "windows rt 6.2",
     "/windows nt 6\\.2|windows 6\\.2|windows 8|winnt 6\\.2/i": "windows nt 6.2",
-    "/windows nt 6\\.1|windows 6\\.1|windows 7/i": "windows nt 6.1",
+    "/windows nt 6\\.1|windows 6\\.1|windows 7|cygwin_nt-6\\.1/i": "windows nt 6.1",
     "/windows nt 6\\.0|windows 6\\.0|windows vista/i": "windows nt 6.0",
     "/windows 2003/i": "windows 2003",
     "/windows nt 5\\.3|windows 5\\.3/i": "windows nt 5.3",
@@ -25,8 +25,7 @@
     "/windows nt 3\\.1/i": "windows nt 3.1",
     "/windows nt|winnt/i": "windows nt",
     "/windows 3\\.11/i": "windows 3.11",
-    "/win16|windows 3\\.1/i": "windows 3.1",
-    "/cygwin/i": "cygwin"
+    "/win16|windows 3\\.1/i": "windows 3.1"
   },
   "generic": "windows"
 }

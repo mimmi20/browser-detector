@@ -2981,5 +2981,27 @@
       ]
     },
     "engine": null
+  },
+  "radio.de app": {
+    "name": "radio.de App",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "radio.de"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "slack app": {
+    "name": "Slack App",
+    "manufacturer": "slack",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   }
 }

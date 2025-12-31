@@ -49,7 +49,12 @@ final class MobileDevice implements MobileDeviceInterface
             return false;
         }
 
-        if (preg_match('/Puffin\/[\d.]+WD/', $useragent)) {
+        if (
+            preg_match(
+                '/Puffin\/[\d.]+WD|(?:CrOS [a-z0-9_]+ |.*Build\/R\d+-)\d{4,5}\.\d+\.\d+[^)]*\) .* Chrome\/\d+[\d.]+|(?:CrOS [a-z0-9_]+ |.*Build\/R\d+-)\d+[\d.]+/',
+                $useragent,
+            )
+        ) {
             return false;
         }
 

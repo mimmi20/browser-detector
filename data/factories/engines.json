@@ -19,14 +19,15 @@
     "/khtml|konqueror/i": "khtml",
     "/opera[ \\/][3-6]/i": "elektra",
     "/opera/i": "presto",
-    "/msie|outlook|kkman/i": "trident",
+    "/(?<!not )msie|outlook|kkman/i": "trident",
     "/clecko|classilla/i": "clecko",
     "/servo/i": "servo",
     "/(?<!like )gecko|firefox/i": "gecko",
     "/netfront\\/|nf\\/|netfrontlifebrowserinterface|nf3|nintendo 3ds|browser\\/nf/i": "netfront",
     "/blackberry/i": "blackberry",
     "/teleca|obigo/i": "teleca",
-    "/textmode|w3m|^links/i": "text"
+    "/textmode|w3m|^e?links/i": "text",
+    "/netsurf/i": "netsurf"
   },
   "generic": "unknown"
 }

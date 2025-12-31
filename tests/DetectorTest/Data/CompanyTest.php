@@ -4288,6 +4288,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'HubSpot',
                 'key' => 'hubspot-inc',
             ],
+            [
+                'type' => 'Linspire',
+                'name' => 'Linspire, Inc.',
+                'brandname' => 'Linspire',
+                'key' => 'linspire-inc',
+            ],
         ];
     }
 

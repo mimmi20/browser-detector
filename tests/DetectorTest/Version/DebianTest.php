@@ -73,6 +73,10 @@ final class DebianTest extends TestCase
                 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.3) Gecko/2008092814 (Debian-3.0.1-1)',
                 '3.0.1.1',
             ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 6.1 (Mozilla); Debian Linux 2.4.17)',
+                '2.4.17',
+            ],
         ];
     }
 

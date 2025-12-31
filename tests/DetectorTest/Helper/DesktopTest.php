@@ -112,6 +112,10 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (compatible; Odyssey Web Browser; AROS; rv:1.16) AppleWebKit/535.14 (KHTML, like Gecko) OWB/1.16 Safari/535.14'],
             ['Mozilla/5.0 (PC; OpenHarmony 5.0; HarmonyOS 5.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Browser/harmony360Browser/1.0.0'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Slackware)'],
+            ['Mozilla/1.1I (X11; I; NEWS-OS 6.1.1 news5000)'],
+            ['Mozilla/5.0 (X11; U; GENIX 4.1 MG-200/NS32332; en-US; rv:4.7.1.1) Gecko/20080815 SeaMonkey/1.2.3'],
+            ['Links (2.8; ULTRIX 4.5 VAX; GNU C 1; text)'],
+            ['Mozilla/6.0 (Future Star Technologies Corp. Star-Blade OS; U; en-US) iNet Browser 2.5'],
         ];
     }
 

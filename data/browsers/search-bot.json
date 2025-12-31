@@ -495,5 +495,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "naver-adsbot": {
+    "name": "AdsBot Naver",
+    "manufacturer": "nhn-corporation",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdsBot\\-Naver"
+      ]
+    },
+    "engine": null
   }
 }

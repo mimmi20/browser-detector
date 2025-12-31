@@ -352,4 +352,129 @@ final class SafariTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
         self::assertNull($detectedVersion->getVersion());
     }
+
+    /**
+     * @throws UnexpectedValueException
+     * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testDetectVersionFail7(): void
+    {
+        $mappedVersionOne = new Version('2');
+        $versionBuilder   = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('set')
+            ->with('18.3')
+            ->willReturn($mappedVersionOne);
+
+        $safariHelper = $this->createMock(SafariInterface::class);
+        $safariHelper
+            ->expects(self::once())
+            ->method('mapSafariVersion')
+            ->with($mappedVersionOne)
+            ->willReturn(null);
+
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        assert($safariHelper instanceof SafariInterface);
+        $object = new Safari($versionBuilder, $safariHelper);
+
+        $detectedVersion = $object->detectVersion(
+            'NetworkingExtension/8620.2.3 Network/4277.80.14.0.2 iOS/18.3',
+        );
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
+    }
+
+    /**
+     * @throws UnexpectedValueException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testDetectVersionFail8(): void
+    {
+        $exception = new NotNumericException('set failed');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('set')
+            ->with('18.3')
+            ->willThrowException($exception);
+
+        $safariHelper = $this->createMock(SafariInterface::class);
+        $safariHelper
+            ->expects(self::never())
+            ->method('mapSafariVersion');
+
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        assert($safariHelper instanceof SafariInterface);
+        $object = new Safari($versionBuilder, $safariHelper);
+
+        $detectedVersion = $object->detectVersion(
+            'NetworkingExtension/8620.2.3 Network/4277.80.14.0.2 iOS/18.3',
+        );
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
+    }
+
+    /**
+     * @throws UnexpectedValueException
+     * @throws NotNumericException
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testDetectVersionFail9(): void
+    {
+        $exception = new NotNumericException('set failed');
+
+        $mappedVersionOne = new Version('2');
+        $versionBuilder   = $this->createMock(VersionBuilderInterface::class);
+        $matcher          = self::exactly(2);
+        $versionBuilder
+            ->expects($matcher)
+            ->method('set')
+            ->willReturnCallback(
+                static function (string $version) use ($matcher, $mappedVersionOne, $exception): Version {
+                    $invocation = $matcher->numberOfInvocations();
+
+                    match ($invocation) {
+                        1 => self::assertSame('18.3', $version, (string) $invocation),
+                        default => self::assertSame('1.0', $version, (string) $invocation),
+                    };
+
+                    return match ($invocation) {
+                        1 => $mappedVersionOne,
+                        default => throw $exception,
+                    };
+                },
+            );
+
+        $safariHelper = $this->createMock(SafariInterface::class);
+        $safariHelper
+            ->expects(self::once())
+            ->method('mapSafariVersion')
+            ->with($mappedVersionOne)
+            ->willReturn('1.0');
+
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        assert($safariHelper instanceof SafariInterface);
+        $object = new Safari($versionBuilder, $safariHelper);
+
+        $detectedVersion = $object->detectVersion(
+            'NetworkingExtension/8620.2.3 Network/4277.80.14.0.2 iOS/18.3',
+        );
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
+    }
 }

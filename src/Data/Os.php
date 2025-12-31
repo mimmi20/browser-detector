@@ -79,8 +79,6 @@ enum Os: string implements OsInterface
 
     case macosx = 'Mac OS X';
 
-    case cygwin = 'Cygwin';
-
     case darwin = 'Darwin';
 
     case dragonflybsd = 'DragonFly BSD';
@@ -243,7 +241,7 @@ enum Os: string implements OsInterface
 
     case newsos = 'NEWS-OS';
 
-    case lindows = 'Lindows';
+    case lindows = 'LindowsOS';
 
     case wearos = 'Wear OS';
 
@@ -363,6 +361,8 @@ enum Os: string implements OsInterface
 
     case openSuse = 'openSuse';
 
+    case linspire = 'Linspire';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -394,7 +394,6 @@ enum Os: string implements OsInterface
             'fireos', 'fire os', 'fire-os' => self::fireos,
             'fuchsia' => self::fuchsia,
             'macosx', 'mac os x' => self::macosx,
-            'cygwin' => self::cygwin,
             'darwin' => self::darwin,
             'dragonflybsd', 'dragonfly bsd' => self::dragonflybsd,
             'firefoxos', 'firefox os' => self::firefoxos,
@@ -476,7 +475,7 @@ enum Os: string implements OsInterface
             'genix' => self::genix,
             'nextstep', 'next-step' => self::nextstep,
             'newsos', 'news-os' => self::newsos,
-            'lindows' => self::lindows,
+            'lindows', 'lindowsos' => self::lindows,
             'wearos', 'wear os', 'wear-os' => self::wearos,
             'androidtv', 'android tv', 'android-tv' => self::androidtv,
             'lineageos', 'lineage os' => self::lineageos,
@@ -536,6 +535,7 @@ enum Os: string implements OsInterface
             'osf1', 'osf/1' => self::osf1,
             'openharmony' => self::openHarmony,
             'opensuse' => self::openSuse,
+            'linspire' => self::linspire,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -638,6 +638,7 @@ enum Os: string implements OsInterface
             self::viziOs => Company::vizio,
             self::ultrix => Company::dec,
             self::osf1 => Company::osf,
+            self::lindows, self::linspire => Company::linspire,
             self::openHarmony => Company::openatomFoundation,
             default => Company::unknown,
         };
@@ -656,7 +657,7 @@ enum Os: string implements OsInterface
             self::arklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Ark Linux']],
             self::bada => ['factory' => VersionBuilderFactory::class, 'search' => ['Bada']],
             self::brew => ['factory' => VersionBuilderFactory::class, 'search' => ['BREW; U;', 'BREW;?']],
-            self::cos => ['factory' => VersionBuilderFactory::class, 'search' => ['COS like Android', 'Chinese Operating System']],
+            self::cos => ['factory' => VersionBuilderFactory::class, 'search' => ['COS like Android', 'Chinese Operating System', 'COS']],
             self::cyanogenmod => ['factory' => VersionBuilderFactory::class, 'search' => ['CyanogenMod']],
             self::fuchsia => ['factory' => VersionBuilderFactory::class, 'search' => ['Fuchsia']],
             self::darwin => ['factory' => VersionBuilderFactory::class, 'search' => ['Darwin']],
@@ -689,7 +690,7 @@ enum Os: string implements OsInterface
             self::aix => ['factory' => VersionBuilderFactory::class, 'search' => ['AIX']],
             self::os2 => ['factory' => VersionBuilderFactory::class, 'search' => ['OS\/2', 'Warp']],
             self::beos => ['factory' => VersionBuilderFactory::class, 'search' => ['BeOS']],
-            self::bsd => ['factory' => VersionBuilderFactory::class, 'search' => ['BSD']],
+            self::bsd => ['factory' => VersionBuilderFactory::class, 'search' => ['BSD', 'BSD\/OS']],
             self::fedoraLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Fedora\/[0-9\.\-]+\.fc', 'Fedora']],
             self::redhatLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Red Hat Enterprise Linux', 'Redhat Linux', 'Red Hat']],
             self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ['FreeBSD', 'freebsd']],
@@ -731,6 +732,8 @@ enum Os: string implements OsInterface
             self::mandrivaLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Mandriva(?: Linux)?\/[0-9\.\-]+mdv']],
             self::openHarmony => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenHarmony']],
             self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
+            self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
+            self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],

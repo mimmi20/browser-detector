@@ -463,6 +463,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "FlyFlow\\-",
+        "FlyFlow",
         "bdbrowser_i18n",
         "bdbrowser",
         "baidubrowser"
@@ -836,6 +838,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Chrome"
+      ]
+    },
+    "engine": null
+  },
+  "raspbian-chromium": {
+    "name": "Raspbian Chromium",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Raspbian Chromium"
       ]
     },
     "engine": null
@@ -1299,7 +1313,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Espial"
+        "Espial",
+        "Escape"
       ]
     },
     "engine": "webkit"
@@ -1501,19 +1516,6 @@
       "search": [
         "FluidApp",
         "Fluid"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "flyflow": {
-    "name": "FlyFlow",
-    "manufacturer": "baidu",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "FlyFlow",
-        "FlyFlow\\-"
       ]
     },
     "engine": "webkit"
@@ -5728,5 +5730,29 @@
       ]
     },
     "engine": null
+  },
+  "netsurf": {
+    "name": "NetSurf",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetSurf"
+      ]
+    },
+    "engine": "netsurf"
+  },
+  "inet-browser": {
+    "name": "iNet Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iNet Browser"
+      ]
+    },
+    "engine": "gecko"
   }
 }
