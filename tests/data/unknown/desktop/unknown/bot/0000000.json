@@ -23,7 +23,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows 2000",
       "version": "5.0.0",
       "manufacturer": "Microsoft",
@@ -203,7 +203,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows XP",
       "version": "5.1.0",
       "manufacturer": "Microsoft",
@@ -293,7 +293,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows XP",
       "version": "5.1.0",
       "manufacturer": "Microsoft",
@@ -338,9 +338,54 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows XP",
       "version": "5.2.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Girafabot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Girafabot; girafabot at girafa dot com; http://www.girafa.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": "4.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -428,7 +473,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows XP",
       "version": "5.1.0",
       "manufacturer": "Microsoft",
@@ -496,51 +541,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 MRA 5.6 (build 03402) Firefox/3.6.6 sputnik 2.1.0.18 WebMoney Advisor"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "WebMoney Advisor",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.9.2.6",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; SaveWealth)"
     },
     "device": {
@@ -563,7 +563,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
@@ -582,96 +582,6 @@
       "name": "Trident",
       "version": null,
       "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 5.1; rv:31.5) Gecko/20100101 Firefox/31.5 -CareMediCom-"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "CareMediCom",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "31.5.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2 (.NET CLR 3.5.30729; Diffbot/0.1; +http://www.diffbot.com)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Diffbot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.9.1.2",
-      "manufacturer": "Mozilla"
     }
   },
   {
@@ -766,51 +676,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SaveWealth; .NET CLR 2.0.50727; .NET4.0C)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "SaveWealth",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "4.0.0",
-      "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; pl; rv:1.9.2.3) Gecko/20100401 Lightningquail/3.6.3"
     },
     "device": {
@@ -833,7 +698,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows XP",
       "version": "5.1.0",
       "manufacturer": "Microsoft",
@@ -1171,7 +1036,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; SaveWealth; .NET CLR 1.0.3705; .NET CLR 1.1.4322)"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; SaveWealth)"
     },
     "device": {
       "architecture": null,
@@ -1193,9 +1058,9 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows 98",
-      "version": "98.0.0",
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": "4.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -1373,7 +1238,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows XP",
       "version": "5.1.0",
       "manufacturer": "Microsoft",
@@ -1473,51 +1338,6 @@
       "name": "SuperBot",
       "modus": null,
       "version": "4.7.0.72",
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SuperBot/4.0.0.52 (Windows Server 2003)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "SuperBot",
-      "modus": null,
-      "version": "4.0.0.52",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true,
@@ -2052,51 +1872,6 @@
       "marketingName": "Ubuntu",
       "version": "7.0.0",
       "manufacturer": "Canonical",
-      "bits": null
-    },
-    "client": {
-      "name": "BlitzBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "B-l-i-t-z-B-O-T/1.9 (Windows Vista 5.7; fr_CA;)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {

@@ -316,6 +316,7 @@ final readonly class Headers
                     if (is_string($lastClientCodename)) {
                         switch ($lastClientCodename) {
                             case 'amazon bot':
+                            case 'facebookexternalhit':
                                 $firstClientCodename = $lastClientCodename;
                                 $clientHeader        = array_last($headersWithClientCode);
 
@@ -349,13 +350,13 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($firstClientCodename);
             $clientVersion  = match ($firstClientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler' => $clientVersions['user-agent']
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
                 'duckduck app', 'huawei-browser', 'ucbrowser', 'edge' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']
                     ?? $clientVersions['sec-ch-ua-full-version']
                     ?? array_last($clientVersions),
-                'ecosia' => $clientVersions['sec-ch-ua-full-version'] ?? array_last($clientVersions),
+                'ecosia', 'opera mobile' => $clientVersions['sec-ch-ua-full-version'] ?? array_last($clientVersions),
                 default => array_first($clientVersions),
             };
 

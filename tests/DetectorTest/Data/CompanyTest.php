@@ -4282,6 +4282,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'e.ventures',
                 'key' => 'e.ventures',
             ],
+            [
+                'type' => 'HubSpot',
+                'name' => 'HubSpot, Inc.',
+                'brandname' => 'HubSpot',
+                'key' => 'hubspot-inc',
+            ],
         ];
     }
 

@@ -226,7 +226,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; OverDrive Download Station 1.0; Zune 4.7; .NET4.0C)"
+      "user-agent": "Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 7.1; WOW64; Trident/5.0; Media Center PC 5.0; Zune 4.3; .NET4.0C; en-IE)"
     },
     "device": {
       "architecture": null,
@@ -249,15 +249,15 @@
     },
     "os": {
       "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
+      "marketingName": "Windows NT",
+      "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Zune",
       "modus": null,
-      "version": "4.7.0",
+      "version": "4.3.0",
       "manufacturer": "Microsoft",
       "type": "multimedia-player",
       "isbot": false,
@@ -265,7 +265,7 @@
     },
     "engine": {
       "name": "Trident",
-      "version": "4.0.0",
+      "version": "5.0.0",
       "manufacturer": "Microsoft"
     }
   },

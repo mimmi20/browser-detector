@@ -1429,6 +1429,8 @@ enum Company: string implements CompanyInterface
 
     case eVentures = 'e.ventures';
 
+    case hubspot = 'HubSpot';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2141,6 +2143,7 @@ enum Company: string implements CompanyInterface
             'openatomfoundation', 'openatom foundation', 'openatom-foundation' => self::openatomFoundation,
             'oceanhero', 'oceanhero gmbh', 'ocean-hero' => self::oceanHero,
             'eventures', 'e.ventures managementgesellschaft mbh', 'e.ventures' => self::eVentures,
+            'hubspot', 'hubspot, inc.', 'hubspot-inc' => self::hubspot,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2368,6 +2371,7 @@ enum Company: string implements CompanyInterface
             self::perplexity => 'Perplexity AI, Inc.',
             self::oceanHero => 'OceanHero GmbH',
             self::eVentures => 'e.ventures Managementgesellschaft mbH',
+            self::hubspot => 'HubSpot, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2582,6 +2586,7 @@ enum Company: string implements CompanyInterface
             self::openatomFoundation => 'openatom-foundation',
             self::oceanHero => 'ocean-hero',
             self::eVentures => 'e.ventures',
+            self::hubspot => 'hubspot-inc',
             default => $this->name,
         };
     }

@@ -23,7 +23,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows Vista",
       "version": "6.0.0",
       "manufacturer": "Microsoft",
@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36 Seznam.cz/1.2.6"
+      "user-agent": "Mozilla/5.0 (Windows NT 4.10; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2272.76 Safari/537.36 Seznam.cz/2.0.4"
     },
     "device": {
       "architecture": null,
@@ -68,16 +68,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": "4.10.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Seznam Browser",
       "modus": null,
-      "version": "1.2.6",
+      "version": "2.0.4",
       "manufacturer": "Seznam",
       "type": "browser",
       "isbot": false,
@@ -85,7 +85,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "41.0.2272.76",
+      "version": "43.0.2272.76",
       "manufacturer": "Google"
     }
   },

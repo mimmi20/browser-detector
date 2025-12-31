@@ -23,7 +23,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows 2000",
       "version": "5.0.0",
       "manufacturer": "Microsoft",
@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "ia_archiver/7.9 (Windows 1.9; )"
+      "user-agent": "ia_archiver/2.7 (Windows NT 7.2; )"
     },
     "device": {
       "architecture": null,
@@ -68,8 +68,8 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
@@ -77,7 +77,7 @@
     "client": {
       "name": "Internet Archive Bot",
       "modus": null,
-      "version": "7.9.0",
+      "version": "2.7.0",
       "manufacturer": "archive.org",
       "type": "crawler",
       "isbot": true,

@@ -4614,6 +4614,128 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    "sec-ch-ua" => "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"HeadlessChrome\";v=\"126\"",
+    "sec-ch-ua-mobile" => "?0",
+    "sec-ch-ua-platform" => "\"Linux\"",
+    "user-agent" => "facebookexternalhit/1.1"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-platform" => "\"Linux\"",
+                        "sec-ch-ua" => "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"HeadlessChrome\";v=\"126\"",
+    "sec-ch-ua-mobile" => "?0",
+    "user-agent" => "facebookexternalhit/1.1"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => null,
+                        'marketingName' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Facebook Crawler',
+                        'modus' => null,
+                        'version' => '1.1.0',
+                        'manufacturer' => 'Meta',
+                        'type' => 'social-media-agent',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                    ],
+                ],
+            ],
+            [
+                [
+                    "sec-ch-ua-model" => "\"\"",
+            "sec-ch-ua-platform" => "\"Android\"",
+            "sec-ch-ua-platform-version" => "\"\"",
+            "sec-ch-ua" => "\"Not)A;Brand\";v=\"99\", \"Android WebView\";v=\"127\", \"Chromium\";v=\"127\"",
+            "sec-ch-ua-full-version" => "\"\"",
+            "sec-ch-ua-bitness" => "\"\"",
+            "sec-ch-ua-arch" => "\"\"",
+            "sec-ch-ua-mobile" => "?0",
+            "user-agent" => "Mozilla/5.0 (Linux; U; Android 12; G2_EEA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36 OPR/84.0.2254.73823"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-model" => "\"\"",
+            "sec-ch-ua-platform" => "\"Android\"",
+            "sec-ch-ua-platform-version" => "\"\"",
+            "sec-ch-ua" => "\"Not)A;Brand\";v=\"99\", \"Android WebView\";v=\"127\", \"Chromium\";v=\"127\"",
+            "sec-ch-ua-full-version" => "\"\"",
+            "sec-ch-ua-bitness" => "\"\"",
+            "sec-ch-ua-arch" => "\"\"",
+            "sec-ch-ua-mobile" => "?0",
+            "user-agent" => "Mozilla/5.0 (Linux; U; Android 12; G2_EEA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36 OPR/84.0.2254.73823"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Tablet',
+                        'marketingName' => 'general Tablet',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'tablet',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '12.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Opera Mobile',
+                        'modus' => null,
+                        'version' => '84.0.2254.73823',
+                        'manufacturer' => 'Opera',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '127.0.6533.103',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

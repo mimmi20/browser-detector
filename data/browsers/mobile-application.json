@@ -2969,5 +2969,17 @@
       "search": null
     },
     "engine": null
+  },
+  "wechat-share-extension": {
+    "name": "WeChat Share Extension",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WeChatShareExtensionNew"
+      ]
+    },
+    "engine": null
   }
 }

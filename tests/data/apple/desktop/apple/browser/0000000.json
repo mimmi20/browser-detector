@@ -136,6 +136,51 @@
   },
   {
     "headers": {
+      "user-agent": "com.apple.WebKit.Networking/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir5%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 5,2",
+      "marketingName": "MacBook Air 13\" (2012)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.0.3",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook5%2C1)"
     },
     "device": {
@@ -1801,51 +1846,6 @@
   },
   {
     "headers": {
-      "user-agent": "Safari/8536.30.1 CFNetwork/596.4.3 Darwin/12.4.0 (x86_64) (MacBookAir5%2C2)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MacBook Air 5,2",
-      "marketingName": "MacBook Air 13\" (2012)",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": 1440,
-        "height": 900,
-        "touch": false,
-        "size": 13.3
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.8.4",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "596.4.3",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Safari/9537.71 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C1)"
     },
     "device": {
@@ -1958,7 +1958,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows XP",
       "version": "5.1.0",
       "manufacturer": "Microsoft",
@@ -2116,10 +2116,7 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-ch-ua": "\"Version\"; v=\"14.1.2\", \"Safari\"; v=\"605.1.15\", \"Chromium\"; v=\"Not A;Brand\", \"Not;A Brand\"; v=\"99\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15"
+      "user-agent": "com.apple.WebKit.Networking/8609.2.8 CFNetwork/1125.2 Darwin/19.5.0 comdirect/1.0 (appVersion:20.6.0)"
     },
     "device": {
       "architecture": null,
@@ -2141,16 +2138,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
-      "manufacturer": "Microsoft",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.5.0",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": "14.1.2",
+      "version": "6.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -2158,7 +2155,7 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "605.1.15",
+      "version": "1125.2.0",
       "manufacturer": "Apple"
     }
   }
