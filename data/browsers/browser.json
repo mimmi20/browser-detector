@@ -381,7 +381,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Avast",
-        "AvastSecureBrowser"
+        "AvastSecureBrowser",
+        "Avast%20Secure%20Browser"
       ]
     },
     "engine": null
@@ -1319,18 +1320,6 @@
     },
     "engine": "webkit"
   },
-  "eudora": {
-    "name": "Eudora",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Eudora"
-      ]
-    },
-    "engine": "gecko"
-  },
   "eui browser": {
     "name": "eUI Browser",
     "manufacturer": "unknown",
@@ -2089,7 +2078,7 @@
     "engine": "webkit"
   },
   "kindle": {
-    "name": "Kindle",
+    "name": "Kindle Browser",
     "manufacturer": "amazon",
     "type": "browser",
     "version": {
@@ -3292,7 +3281,7 @@
     "engine": null
   },
   "qqbrowser mini": {
-    "name": "QQbrowser Mini",
+    "name": "QQ Browser Mini",
     "manufacturer": "tencent",
     "type": "browser",
     "version": {
@@ -3483,7 +3472,7 @@
     "engine": null
   },
   "rekonq": {
-    "name": "rekonq",
+    "name": "Rekonq",
     "manufacturer": "kde",
     "type": "browser",
     "version": {
@@ -5005,8 +4994,10 @@
     "manufacturer": "cliqz",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cliqz"
+      ]
     },
     "engine": null
   },
@@ -5754,5 +5745,37 @@
       ]
     },
     "engine": "gecko"
+  },
+  "eudora-web": {
+    "name": "EudoraWeb",
+    "manufacturer": "qualcomm",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EudoraWeb"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "puffin-cloud-browser": {
+    "name": "Puffin Cloud Browser",
+    "manufacturer": "cloud-mosa",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\PuffinFactory",
+      "search": null
+    },
+    "engine": null
+  },
+  "firefox-reality": {
+    "name": "Firefox Reality",
+    "manufacturer": "mozilla-foundation",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }

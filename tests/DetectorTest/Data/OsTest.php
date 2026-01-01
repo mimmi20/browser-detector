@@ -139,7 +139,7 @@ final class OsTest extends TestCase
                 'name' => 'Android Opensource Project',
                 'marketingName' => 'AOSP',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Android']],
                 'key' => 'aosp',
             ],
             [
@@ -1421,6 +1421,14 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::linspire,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
                 'key' => 'linspire',
+            ],
+            [
+                'type' => 'Plasma Mobile',
+                'name' => 'Plasma Mobile',
+                'marketingName' => 'Plasma Mobile',
+                'manufacturer' => Company::kde,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'plasma-mobile',
             ],
         ];
     }

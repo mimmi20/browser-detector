@@ -185,5 +185,18 @@
       ]
     },
     "engine": null
+  },
+  "lotus notes": {
+    "name": "Lotus Notes",
+    "manufacturer": "ibm",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LotusNotes",
+        "Lotus\\-Notes"
+      ]
+    },
+    "engine": "unknown"
   }
 }

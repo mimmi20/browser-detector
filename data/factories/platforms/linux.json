@@ -1,6 +1,7 @@
 {
   "rules": {
     "/debian apt-http/i": "debian",
+    "/plasma mobile/i": "plasma-mobile",
     "/linux mint/i": "linux mint",
     "/kubuntu/i": "kubuntu",
     "/xubuntu/i": "xubuntu",
@@ -27,8 +28,7 @@
     "/archlinux/i": "arch-linux",
     "/pardus/i": "pardus",
     "/linspire/i": "linspire",
-    "/lindows/i": "lindows",
-    "/linux\\/x2\\/r1/i": "maemo"
+    "/lindows/i": "lindows"
   },
   "generic": "linux"
 }

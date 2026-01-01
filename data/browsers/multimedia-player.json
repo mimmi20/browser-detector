@@ -474,18 +474,6 @@
     },
     "engine": null
   },
-  "podcruncher": {
-    "name": "PodCruncher",
-    "manufacturer": "unknown",
-    "type": "multimedia-player",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PodCruncher"
-      ]
-    },
-    "engine": "webkit"
-  },
   "podkicker": {
     "name": "Podkicker",
     "manufacturer": "unknown",
@@ -831,6 +819,19 @@
         "MPlayer"
       ]
     },
-    "engine": "unknown"
+    "engine": null
+  },
+  "diga": {
+    "name": "DIGA",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DIGAPlus",
+        "DIGA"
+      ]
+    },
+    "engine": null
   }
 }

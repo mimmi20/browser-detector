@@ -4294,6 +4294,48 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Linspire',
                 'key' => 'linspire-inc',
             ],
+            [
+                'type' => 'Vodafone',
+                'name' => 'Vodafone',
+                'brandname' => 'Vodafone',
+                'key' => 'vodafone',
+            ],
+            [
+                'type' => 'NexStreaming',
+                'name' => 'NexStreaming Europe S.L.',
+                'brandname' => 'NexStreaming',
+                'key' => 'nexstreaming',
+            ],
+            [
+                'type' => 'Qualcomm',
+                'name' => 'Qualcomm Incorporated.',
+                'brandname' => 'Qualcomm',
+                'key' => 'qualcomm',
+            ],
+            [
+                'type' => 'Comodo',
+                'name' => 'Comodo Group Inc',
+                'brandname' => 'Comodo',
+                'key' => 'comodo',
+            ],
+            [
+                'type' => 'Flock',
+                'name' => 'Flock FZ-LLC',
+                'brandname' => 'Flock',
+                'key' => 'flock',
+            ],
+            [
+                'type' => 'Panasonic',
+                'name' => 'Panasonic',
+                'brandname' => 'Panasonic',
+                'key' => 'panasonic',
+            ],
+            [
+                'type' => 'LogicWare',
+                'name' => 'LogicWare & LSoft Technologies',
+                'brandname' => 'LogicWare',
+                'key' => 'logicware',
+            ],
         ];
     }
 

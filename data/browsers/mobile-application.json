@@ -2579,7 +2579,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "com\\.google\\.android\\.apps\\.youtube\\.music"
+        "com\\.google\\.android\\.apps\\.youtube\\.music",
+        "YouTubeMusic"
       ]
     },
     "engine": null
@@ -2671,7 +2672,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "NRC Audio"
+        "NRC Audio",
+        "NRC%20Audio"
       ]
     },
     "engine": null
@@ -2767,7 +2769,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "DS podcast"
+        "DS podcast",
+        "DS%20Podcast"
       ]
     },
     "engine": null
@@ -3003,5 +3006,160 @@
       "search": null
     },
     "engine": null
+  },
+  "wayback-machine": {
+    "name": "Wayback Machine",
+    "manufacturer": "archive.org",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "wnyc": {
+    "name": "WNYC",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WNYC"
+      ]
+    },
+    "engine": null
+  },
+  "metacast": {
+    "name": "Metacast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Metacast"
+      ]
+    },
+    "engine": null
+  },
+  "google-lens": {
+    "name": "Lens",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SearchWithLens"
+      ]
+    },
+    "engine": null
+  },
+  "nyt-audio": {
+    "name": "The New York Times",
+    "manufacturer": "new-york-times",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NYT Audio",
+        "NYT%20Audio"
+      ]
+    },
+    "engine": null
+  },
+  "uforia": {
+    "name": "Uforia",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Uforia"
+      ]
+    },
+    "engine": null
+  },
+  "npr-one": {
+    "name": "NPR",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NPR%20One"
+      ]
+    },
+    "engine": null
+  },
+  "ucast": {
+    "name": "UCast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UCast"
+      ]
+    },
+    "engine": null
+  },
+  "yapa": {
+    "name": "Yapa",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "yapa"
+      ]
+    },
+    "engine": null
+  },
+  "wynk-music": {
+    "name": "Wynk Music",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WynkMusic"
+      ]
+    },
+    "engine": null
+  },
+  "vodacast": {
+    "name": "Vodacast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Vodacast"
+      ]
+    },
+    "engine": null
+  },
+  "sirius-xm": {
+    "name": "SiriusXM",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiriusXM"
+      ]
+    },
+    "engine": null
+  },
+  "podcruncher": {
+    "name": "PodCruncher",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodCruncher"
+      ]
+    },
+    "engine": "webkit"
   }
 }

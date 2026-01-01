@@ -13,10 +13,11 @@
     "/chr[o0]meframe\\/(?:[0-9]|1[0-9]|2[0-7])\\D/i": "webkit",
     "/trident\\//i": "trident",
     "/goanna/i": "goanna",
-    "/chr[o0]me\\/(?:2[89]|[3-9][0-9]|[1-9][0-9]{2})\\D|opr\\/\\/|ddg_android/i": "blink",
+    "/(chr[o0]me|chromium)\\/(?:2[89]|[3-9][0-9]|[1-9][0-9]{2})\\D|opr\\/\\/|ddg_android/i": "blink",
     "/icab/i": "icab",
     "/webkit|cfnetwork|(?<!like )safari|dalvik|(?<!ka|wi)ios|com\\.google\\.android\\.googlequicksearchbox|slack\\//i": "webkit",
     "/khtml|konqueror/i": "khtml",
+    "/maemo browser/i": "gecko",
     "/opera[ \\/][3-6]/i": "elektra",
     "/opera/i": "presto",
     "/(?<!not )msie|outlook|kkman/i": "trident",
@@ -26,7 +27,7 @@
     "/netfront\\/|nf\\/|netfrontlifebrowserinterface|nf3|nintendo 3ds|browser\\/nf/i": "netfront",
     "/blackberry/i": "blackberry",
     "/teleca|obigo/i": "teleca",
-    "/textmode|w3m|^e?links/i": "text",
+    "/textmode|w3m|^e?links|lynx/i": "text",
     "/netsurf/i": "netsurf"
   },
   "generic": "unknown"

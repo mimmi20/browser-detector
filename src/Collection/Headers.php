@@ -317,6 +317,7 @@ final readonly class Headers
                         switch ($lastClientCodename) {
                             case 'amazon bot':
                             case 'facebookexternalhit':
+                            case 'headline bot':
                                 $firstClientCodename = $lastClientCodename;
                                 $clientHeader        = array_last($headersWithClientCode);
 

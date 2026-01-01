@@ -1433,6 +1433,20 @@ enum Company: string implements CompanyInterface
 
     case linspire = 'Linspire';
 
+    case vodafone = 'Vodafone';
+
+    case nexstreaming = 'NexStreaming';
+
+    case qualcomm = 'Qualcomm';
+
+    case comodo = 'Comodo';
+
+    case flock = 'Flock';
+
+    case panasonic = 'Panasonic';
+
+    case logicware = 'LogicWare';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2147,6 +2161,13 @@ enum Company: string implements CompanyInterface
             'eventures', 'e.ventures managementgesellschaft mbh', 'e.ventures' => self::eVentures,
             'hubspot', 'hubspot, inc.', 'hubspot-inc' => self::hubspot,
             'linspire', 'linspire, inc.', 'linspire-inc' => self::linspire,
+            'vodafone' => self::vodafone,
+            'nexstreaming', 'nexstreaming europe s.l.' => self::nexstreaming,
+            'qualcomm', 'qualcomm incorporated.' => self::qualcomm,
+            'comodo', 'comodo group inc' => self::comodo,
+            'flock', 'flock fz-llc' => self::flock,
+            'panasonic' => self::panasonic,
+            'logicware', 'logicware & lsoft technologies' => self::logicware,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2376,6 +2397,11 @@ enum Company: string implements CompanyInterface
             self::eVentures => 'e.ventures Managementgesellschaft mbH',
             self::hubspot => 'HubSpot, Inc.',
             self::linspire => 'Linspire, Inc.',
+            self::nexstreaming => 'NexStreaming Europe S.L.',
+            self::qualcomm => 'Qualcomm Incorporated.',
+            self::comodo => 'Comodo Group Inc',
+            self::flock => 'Flock FZ-LLC',
+            self::logicware => 'LogicWare & LSoft Technologies',
             self::unknown => null,
             default => $this->value,
         };

@@ -201,9 +201,10 @@ final class Device implements DeviceInterface
             'ze620kl' => 'asus=asus ze620kl',
             'zf620kl' => 'asus=asus zf620kl',
             'asus_x00qda' => 'asus=asus x00qda',
+            'asus chromebook flip c100pa' => 'asus=asus chromebook flip c100pa',
             // Google
             'nexus 7' => 'google=google nexus 7',
-            'pixel 3' => 'google=google pixel 3',
+            'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
             'pixel 3a' => 'google=google pixel 3a',
             'pixel 4' => 'google=google pixel 4',
             'pixel 4 xl' => 'google=google pixel 4 xl',
@@ -217,13 +218,13 @@ final class Device implements DeviceInterface
             'pixel 7 pro' => 'google=google pixel 7 pro',
             'pixel 8' => 'google=google pixel 8',
             'kukui' => 'google=google kukui',
-            'nexus 5' => 'google=google nexus 5',
+            'nexus 5', 'aosp on hammerhead' => 'google=google nexus 5',
             'pixel 4a' => 'google=google pixel 4a',
             'pixel 9 pro xl' => 'google=google pixel 9 pro xl',
             'pixel 8a' => 'google=google pixel 8a',
             'pixel 9 pro fold' => 'google=google pixel 9 pro fold',
             'pixel 8 pro' => 'google=google pixel 8 pro',
-            'pixel 2 xl' => 'google=google pixel 2 xl',
+            'pixel 2 xl', 'aosp on taimen' => 'google=google pixel 2 xl',
             'pixel 3a xl' => 'google=google pixel 3a xl',
             'pixel 5a' => 'google=google pixel 5a',
             'pixel 3 xl' => 'google=google pixel 3 xl',
@@ -310,6 +311,7 @@ final class Device implements DeviceInterface
             'g3y12' => 'google=google g3y12',
             'chromecast' => 'google=google chromecast',
             'chromecast hd' => 'google=google chromecast hd',
+            'nexus 10', 'aosp on manta' => 'google=google nexus 10',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -729,6 +731,7 @@ final class Device implements DeviceInterface
             'mi a1' => 'xiaomi=xiaomi mi a1',
             '22101316g' => 'xiaomi=xiaomi 22101316g',
             'redmi 6a' => 'xiaomi=xiaomi redmi 6a',
+            'redmi note 12 5g' => 'xiaomi=xiaomi redmi note 12 5g',
             '22111317g' => 'xiaomi=xiaomi 22111317g',
             '22041216g' => 'xiaomi=xiaomi 22041216g',
             '23078pnd5g' => 'xiaomi=xiaomi 23078pnd5g',
@@ -7023,6 +7026,8 @@ final class Device implements DeviceInterface
             'polestar phone' => 'polestar=polestar phone',
             // haixu
             'haixu v11' => 'haixu=haixu v11',
+            // hp
+            'hp chromebook x360 11 g1 ee' => 'hp=hp chromebook x360 11 g1 ee',
             // other
             default => null,
         };

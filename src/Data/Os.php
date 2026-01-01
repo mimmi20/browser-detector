@@ -363,6 +363,8 @@ enum Os: string implements OsInterface
 
     case linspire = 'Linspire';
 
+    case plasmaMobile = 'Plasma Mobile';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -536,6 +538,7 @@ enum Os: string implements OsInterface
             'openharmony' => self::openHarmony,
             'opensuse' => self::openSuse,
             'linspire' => self::linspire,
+            'plasmamobile', 'plasma-mobile', 'plasma mobile' => self::plasmaMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -640,6 +643,7 @@ enum Os: string implements OsInterface
             self::osf1 => Company::osf,
             self::lindows, self::linspire => Company::linspire,
             self::openHarmony => Company::openatomFoundation,
+            self::plasmaMobile => Company::kde,
             default => Company::unknown,
         };
     }
@@ -734,6 +738,7 @@ enum Os: string implements OsInterface
             self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
             self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
+            self::aosp => ['factory' => VersionBuilderFactory::class, 'search' => ['Android']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -871,6 +876,7 @@ enum Os: string implements OsInterface
             self::turboLinux => 'turbolinux',
             self::openHarmony => 'openharmony',
             self::openSuse => 'opensuse',
+            self::plasmaMobile => 'plasma-mobile',
             default => $this->name,
         };
     }
