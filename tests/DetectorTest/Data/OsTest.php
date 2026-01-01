@@ -1187,7 +1187,7 @@ final class OsTest extends TestCase
                 'name' => 'Mandriva Linux',
                 'marketingName' => 'Mandriva Linux',
                 'manufacturer' => Company::mandriva,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Mandriva(?: Linux)?\/[0-9\.\-]+mdv']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Mandriva(?: Linux)?\/[0-9\.\-]+mdv', 'Mandriva']],
                 'key' => 'mandriva linux',
             ],
             [

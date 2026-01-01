@@ -729,7 +729,7 @@ enum Os: string implements OsInterface
             self::startos => ['factory' => VersionBuilderFactory::class, 'search' => ['StartOS']],
             self::centos => ['factory' => VersionBuilderFactory::class, 'search' => ['CentOS(?: Linux)?\/[0-9\.\-]+el', 'CentOS Linux', 'CentOS']],
             self::gentooLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Gentoo']],
-            self::mandrivaLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Mandriva(?: Linux)?\/[0-9\.\-]+mdv']],
+            self::mandrivaLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Mandriva(?: Linux)?\/[0-9\.\-]+mdv', 'Mandriva']],
             self::openHarmony => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenHarmony']],
             self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
             self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
