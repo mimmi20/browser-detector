@@ -24,7 +24,7 @@
     "/commoncrawler|msie or firefox mutant|not on windows server/i": "unknown",
     "/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i": "symbian",
     "/ubuntu|plasma mobile/i": "linux",
-    "/maemo|(?<!no)tizen|like android|remixos|remix (?:pro|mini)|(?<![0-9])bada|meego|sailfish|chinese operating system|(?<!ma)cos;|\\(cos [0-9]|android; cos/i": "maemo",
+    "/maemo|(?<!no)tizen|remixos|remix (?:pro|mini)|(?<![0-9])bada|meego|sailfish|chinese operating system|(?<!ma)cos;|\\(cos [0-9]|android; cos/i": "maemo",
     "/(?:net|free|open)bsd|(?<![0-9\\-])bsd(?!k)|dragonfly/i": "bsd",
     "/web[o0]s|hpwos/i": "webos",
     "/hp-?ux|irix|(?<![ch])aix(?![u\\-])|unix|osf1/i": "unix",

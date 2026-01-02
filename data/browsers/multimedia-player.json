@@ -394,16 +394,6 @@
     },
     "engine": "webkit"
   },
-  "player fm": {
-    "name": "Player FM",
-    "manufacturer": "nuvomondo",
-    "type": "multimedia-player",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
   "pocket casts": {
     "name": "Pocket Casts",
     "manufacturer": "shifty-jelly",
@@ -518,18 +508,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodWrangler"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "procast": {
-    "name": "Procast",
-    "manufacturer": "dsa-solutions",
-    "type": "multimedia-player",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Procast"
       ]
     },
     "engine": "webkit"
@@ -830,6 +808,18 @@
       "search": [
         "DIGAPlus",
         "DIGA"
+      ]
+    },
+    "engine": null
+  },
+  "miro": {
+    "name": "Miro",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Miro"
       ]
     },
     "engine": null

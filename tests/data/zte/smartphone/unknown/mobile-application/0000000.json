@@ -46,6 +46,96 @@
   },
   {
     "headers": {
+      "user-agent": "radio.de 4.12.0 (ZTE/ZTE BLADE A612; Android 7.0; de_DE)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Blade A612",
+      "marketingName": "Blade A612",
+      "manufacturer": "ZTE",
+      "brand": "ZTE",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "radio.de App",
+      "modus": null,
+      "version": "4.12.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "radio.de 4.11.1 (ZTE/ZTE A2017G; Android 6.0.1; de_DE)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A2017G",
+      "marketingName": "Axon 7",
+      "manufacturer": "ZTE",
+      "brand": "ZTE",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "radio.de App",
+      "modus": null,
+      "version": "4.11.1",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "AndroidDownloadManager/5.1 (Linux; U; Android 5.1; Z820 Build/LMY47D)"
     },
     "device": {

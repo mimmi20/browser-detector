@@ -406,6 +406,51 @@
   },
   {
     "headers": {
+      "user-agent": "radio.de/1.2.0 (Android 3.2) samsung/GT-P7320"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-P7320",
+      "marketingName": "Galaxy Tab 8.9\" LTE",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "3.2.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "radio.de App",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "AndroidDownloadManager/5.0.2 (Linux; U; Android 5.0.2; SM-T555 Build/LRX22G)"
     },
     "device": {
@@ -492,6 +537,51 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "radio.de 4.12.0 (samsung/SM-T535; Android 5.0.2; de_DE)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T535",
+      "marketingName": "Galaxy Tab 4 10.1\" LTE",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "radio.de App",
+      "modus": null,
+      "version": "4.12.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

@@ -1666,6 +1666,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; AOSP on Manta Build/NMF26O) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 OPR/42.4.2246.113571"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Nexus 10",
+      "marketingName": "Nexus 10",
+      "manufacturer": "Samsung",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android Opensource Project",
+      "marketingName": "AOSP",
+      "version": "7.1.1",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "42.4.2246.113571",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 3.2; SC-02D Build/HTJ85B) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31 OPR/14.0.1074.58201"
     },
     "device": {
@@ -3258,7 +3303,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "68.0.0",
+      "version": "68.3.3557.64528",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3642,7 +3687,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "73.0.0",
+      "version": "108.0.5359.215",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3921,7 +3966,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "92.0.0",
+      "version": "92.2.4866.85745",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,

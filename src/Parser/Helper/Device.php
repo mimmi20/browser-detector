@@ -876,6 +876,7 @@ final class Device implements DeviceInterface
             'xig04' => 'xiaomi=xiaomi xig04',
             '2306epn60r' => 'xiaomi=xiaomi 2306epn60r',
             'xig05' => 'xiaomi=xiaomi xig05',
+            'redmi note 13 pro 5g' => 'xiaomi=xiaomi redmi note 13 pro 5g',
             '2312dra50c' => 'xiaomi=xiaomi 2312dra50c',
             '2312crad3c' => 'xiaomi=xiaomi 2312crad3c',
             '2312dra50i' => 'xiaomi=xiaomi 2312dra50i',

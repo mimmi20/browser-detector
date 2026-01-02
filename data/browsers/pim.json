@@ -69,7 +69,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "microsoft office outlook",
-        "microsoft outlook"
+        "microsoft outlook",
+        "Outlook"
       ]
     },
     "engine": null
@@ -92,8 +93,10 @@
     "manufacturer": "apple",
     "type": "pim",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mail"
+      ]
     },
     "engine": "webkit"
   },

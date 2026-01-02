@@ -1019,16 +1019,6 @@
     },
     "engine": "webkit"
   },
-  "darwin browser": {
-    "name": "Darwin Browser",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
   "deepnet explorer": {
     "name": "Deepnet Explorer",
     "manufacturer": "deepnet-security",
@@ -1141,7 +1131,7 @@
         "Chrome"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "dt-browser": {
     "name": "DT Browser",
@@ -2327,7 +2317,7 @@
       "factory": "\\BrowserDetector\\Version\\MaxthonFactory",
       "search": null
     },
-    "engine": null
+    "engine": "webkit"
   },
   "maxthon nitro": {
     "name": "Maxthon Nitro",
@@ -5771,6 +5761,16 @@
   "firefox-reality": {
     "name": "Firefox Reality",
     "manufacturer": "mozilla-foundation",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "pocketbook-browser": {
+    "name": "PocketBook Browser",
+    "manufacturer": "pocketbook",
     "type": "browser",
     "version": {
       "factory": null,

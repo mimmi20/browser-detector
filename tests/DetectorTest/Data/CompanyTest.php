@@ -4336,6 +4336,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'LogicWare',
                 'key' => 'logicware',
             ],
+            [
+                'type' => 'PocketBook',
+                'name' => 'PocketBook',
+                'brandname' => 'PocketBook',
+                'key' => 'pocketbook',
+            ],
         ];
     }
 

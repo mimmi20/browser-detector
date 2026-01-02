@@ -33,7 +33,7 @@
       "name": "Dragon",
       "modus": null,
       "version": "17.1.0.0",
-      "manufacturer": "comodo",
+      "manufacturer": "Comodo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -78,7 +78,7 @@
       "name": "IceDragon",
       "modus": null,
       "version": "26.0.0.2",
-      "manufacturer": "comodo",
+      "manufacturer": "Comodo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -123,7 +123,7 @@
       "name": "Dragon",
       "modus": null,
       "version": "9.1.0.0",
-      "manufacturer": "comodo",
+      "manufacturer": "Comodo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -168,7 +168,7 @@
       "name": "Dragon",
       "modus": null,
       "version": "9.1.0.0",
-      "manufacturer": "comodo",
+      "manufacturer": "Comodo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -213,7 +213,7 @@
       "name": "Dragon",
       "modus": null,
       "version": "4.1.249.1045",
-      "manufacturer": "comodo",
+      "manufacturer": "Comodo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -258,7 +258,7 @@
       "name": "Dragon",
       "modus": null,
       "version": "2.1.2",
-      "manufacturer": "comodo",
+      "manufacturer": "Comodo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -303,7 +303,7 @@
       "name": "Dragon",
       "modus": null,
       "version": "2.1.2",
-      "manufacturer": "comodo",
+      "manufacturer": "Comodo",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -312,6 +312,186 @@
       "name": "Gecko",
       "version": "1.7.8",
       "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dragon/14.9 (Edubuntu 3.0; sq_AL;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": "3.0.0",
+      "manufacturer": "Canonical",
+      "bits": null
+    },
+    "client": {
+      "name": "Dragon",
+      "modus": null,
+      "version": "14.9.0",
+      "manufacturer": "Comodo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dragon/10.4 (BackTrack Linux 6.2; en_AU;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "BackTrack Linux",
+      "marketingName": "BackTrack Linux",
+      "version": "6.2.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Dragon",
+      "modus": null,
+      "version": "10.4.0",
+      "manufacturer": "Comodo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dragon/19.1 (BeOS 6.3; et_EE;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "BeOS",
+      "marketingName": "BeOS",
+      "version": "6.3.0",
+      "manufacturer": "Access",
+      "bits": null
+    },
+    "client": {
+      "name": "Dragon",
+      "modus": null,
+      "version": "19.1.0",
+      "manufacturer": "Comodo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dragon/15.6 (Redhat Linux 7.3; nl;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Redhat Linux",
+      "marketingName": "Redhat Linux",
+      "version": "7.3.0",
+      "manufacturer": "Redhat",
+      "bits": null
+    },
+    "client": {
+      "name": "Dragon",
+      "modus": null,
+      "version": "15.6.0",
+      "manufacturer": "Comodo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

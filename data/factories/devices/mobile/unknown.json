@@ -1,5 +1,6 @@
 {
   "rules": {
+    "/mobile vr/i": "general wearable device",
     "/android[ -\\/]?([0-9\\.]+)?;? mobile; rv:[0-9\\.\\+ab]+\\)|android.* mobile ?safari|opera mobi|chrome\\/[0-9\\.]+ ?mobile/i": "general mobile phone",
     "/android[ -\\/]?([0-9\\.]+)?;? tablet; rv:[0-9\\.\\+ab]+\\)|android.* (?<!tv )safari|opera tablet|tablet browser|\\(tablet;/i": "general tablet"
   },

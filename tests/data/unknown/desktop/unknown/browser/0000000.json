@@ -1389,7 +1389,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -1434,7 +1434,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -1479,7 +1479,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -1524,7 +1524,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -1569,7 +1569,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -1614,7 +1614,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -2971,6 +2971,51 @@
   },
   {
     "headers": {
+      "user-agent": "NetSurf/1.1 (Linux; i686)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "NetSurf",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetSurf",
+      "version": "1.1.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 4.10) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.46 Safari/535.11 MRCHROME"
     },
     "device": {
@@ -3012,6 +3057,51 @@
       "name": "WebKit",
       "version": "535.11.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetSurf/1.2 (NetBSD; amd64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "NetSurf",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetSurf",
+      "version": "1.2.0",
+      "manufacturer": "unknown"
     }
   },
   {
@@ -4006,6 +4096,51 @@
   },
   {
     "headers": {
+      "user-agent": "Galeon (IE4 compatible; Galeon; Windows XP)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Galeon",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ELinks/0.9.1 (textmode; SunOS 5.9 sun4u; 122x42)"
     },
     "device": {
@@ -4118,10 +4253,10 @@
       "bits": null
     },
     "os": {
-      "name": "Cygwin",
-      "marketingName": "Cygwin",
+      "name": "Windows",
+      "marketingName": "Windows",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
@@ -4269,7 +4404,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -4314,7 +4449,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -4359,142 +4494,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ELinks (0.4pre5; Unix; 171x67)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Unix",
-      "marketingName": "Unix",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "ELinks",
-      "modus": null,
-      "version": "0.4.0-dev+5",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ELinks (0.4pre5; Unix; 152x74)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Unix",
-      "marketingName": "Unix",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "ELinks",
-      "modus": null,
-      "version": "0.4.0-dev+5",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ELinks (0.4pre5; Unix; 132x60)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Unix",
-      "marketingName": "Unix",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "ELinks",
-      "modus": null,
-      "version": "0.4.0-dev+5",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }

@@ -116,6 +116,7 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (X11; U; GENIX 4.1 MG-200/NS32332; en-US; rv:4.7.1.1) Gecko/20080815 SeaMonkey/1.2.3'],
             ['Links (2.8; ULTRIX 4.5 VAX; GNU C 1; text)'],
             ['Mozilla/6.0 (Future Star Technologies Corp. Star-Blade OS; U; en-US) iNet Browser 2.5'],
+            ['Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/527+ (KHTML, like Gecko) Bolt/0.862 Version/3.0 Safari/523.15'],
         ];
     }
 

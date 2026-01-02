@@ -91,6 +91,51 @@
   },
   {
     "headers": {
+      "user-agent": "radio.de 4.12.0 (samsung/SM-N910F; Android 6.0.1; de_DE)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N910F",
+      "marketingName": "Galaxy Note 4 LTE (Europe)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "radio.de App",
+      "modus": null,
+      "version": "4.12.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "AndroidDownloadManager/9 (Linux; U; Android 9; SM-N960F Build/PPR1.180610.011) comdirect/1.0 (appVersion:19.10.0;deviceType:mobile)"
     },
     "device": {

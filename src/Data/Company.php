@@ -1447,6 +1447,8 @@ enum Company: string implements CompanyInterface
 
     case logicware = 'LogicWare';
 
+    case pocketbook = 'PocketBook';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2168,6 +2170,7 @@ enum Company: string implements CompanyInterface
             'flock', 'flock fz-llc' => self::flock,
             'panasonic' => self::panasonic,
             'logicware', 'logicware & lsoft technologies' => self::logicware,
+            'pocketbook' => self::pocketbook,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

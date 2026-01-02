@@ -2386,51 +2386,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; AOSP on taimen) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Mobile Safari/537.36 OPR/61.0.3068.10"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android Opensource Project",
-      "marketingName": "AOSP",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "61.0.3068.10",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "86.0.4240.185",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; MDG1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Mobile Safari/537.36 OPR/65.0.3310.60026"
     },
     "device": {
@@ -3230,7 +3185,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "74.0.0",
+      "version": "74.0.3908.70497",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3953,7 +3908,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "84.0.0",
+      "version": "84.0.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4001,7 +3956,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "83.0.0",
+      "version": "83.0.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4094,7 +4049,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "85.0.0",
+      "version": "85.0.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4232,7 +4187,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "86.0.0",
+      "version": "86.0.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4415,7 +4370,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "87.0.0",
+      "version": "87.0.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4508,7 +4463,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "87.0.0",
+      "version": "87.0.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4517,6 +4472,51 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36 OPR/89.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "89.0.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.0.0",
       "manufacturer": "Google"
     }
   }

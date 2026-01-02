@@ -74,7 +74,7 @@
     "engine": null
   },
   "kakaotalk": {
-    "name": "KAKAOTALK",
+    "name": "KakaoTalk",
     "manufacturer": "kakao",
     "type": "mobile-application",
     "version": {
@@ -1296,8 +1296,10 @@
     "manufacturer": "aftvnews.com",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Downloader"
+      ]
     },
     "engine": "unknown"
   },
@@ -2685,6 +2687,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "LuminaryPreprod",
         "Luminary"
       ]
     },
@@ -3158,6 +3161,1009 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodCruncher"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "turtlecast": {
+    "name": "Turtlecast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Turtlecast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sound-on": {
+    "name": "SoundOn",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SoundOn"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sodes": {
+    "name": "Sodes",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sodes"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sonnet": {
+    "name": "Sonnet",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Simple Podcast Player"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "snipd": {
+    "name": "Snipd",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Snipd"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "shadow": {
+    "name": "Shadow",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Shadow"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "shadow-rocket": {
+    "name": "Shadowrocket",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Shadowrocket"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "procast": {
+    "name": "Procast",
+    "manufacturer": "dsa-solutions",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Procast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sach-noi": {
+    "name": "SachNoi",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SachNoiApp",
+        "SachNoi\\.app"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "radio-line": {
+    "name": "Radioline",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Radioline%202"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "get-podcast": {
+    "name": "GetPodcast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GetPodcast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podyssey": {
+    "name": "Podyssey",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podyssey"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podurama": {
+    "name": "Podurama",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podurama"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pods": {
+    "name": "Pods",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pods"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podopolo": {
+    "name": "Podopolo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "podopolo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-me": {
+    "name": "PodMe",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodMe",
+        "Podme android app"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-nl": {
+    "name": "PodNL",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodNL"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podimo": {
+    "name": "Podimo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podimo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-hero": {
+    "name": "Podhero",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podhero%20Alpha",
+        "Podhero"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "swoot": {
+    "name": "Swoot",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Swoot"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podeo": {
+    "name": "Podeo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podeo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-clipper": {
+    "name": "Podclipper",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podclipper"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcast-player": {
+    "name": "Podcast Player",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcast Player"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcast-guru": {
+    "name": "Podcast Guru",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodcastGuru"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-bay": {
+    "name": "Podbay",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podbay"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "player fm": {
+    "name": "Player FM",
+    "manufacturer": "nuvomondo",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "overhaul-fm": {
+    "name": "Overhaul FM",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcast Overhaul"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "my-tuner": {
+    "name": "MyTuner",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "myTuneriOS%20Free",
+        "myTuner%20Radio%20app",
+        "myTuner Radio app",
+        "mytuner_podcasts_androidplayer"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "moon-fm": {
+    "name": "MoonFM",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MoonFM"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "mobile-sms": {
+    "name": "MobileSMS",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MobileSMS"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "mimir": {
+    "name": "Mimir",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mimir"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "messenger-x": {
+    "name": "MessengerX",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Messenger"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "menu-cast": {
+    "name": "Menucast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Menucast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "just-listen": {
+    "name": "Just Listen",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Listen5"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "liulo": {
+    "name": "Liulo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Liulo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "listen": {
+    "name": "Listen",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Listen%20App",
+        "Listen App",
+        "Listen"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "kk-box": {
+    "name": "KKBOX",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KKBOX"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "kids-pod": {
+    "name": "KidsPod",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KidspodMobileClient"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "kids-listen": {
+    "name": "Kids Listen",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kids%20Listen",
+        "Kids Listen"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "ivoox": {
+    "name": "iVoox",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ivooxNew"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "jam": {
+    "name": "Jam",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Jam"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "audio-books": {
+    "name": "Audiobooks",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IOSAudiobooks"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "hyper-catcher": {
+    "name": "HyperCatcher",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HyperCatcher"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "hi-cast": {
+    "name": "HiCast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HiCast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "hark-audio": {
+    "name": "Hark Audio",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hark"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "hard-cast": {
+    "name": "HardCast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HardCast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "hammel": {
+    "name": "Hammel",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hammel"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "goodreader": {
+    "name": "GoodReader",
+    "manufacturer": "good-iware",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoodReader4",
+        "GoodReader"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "good-pods": {
+    "name": "Goodpods",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Goodpods"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "go-loud": {
+    "name": "GoLoud",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoLoud"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "fountain": {
+    "name": "Fountain",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "fountainapp"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "files": {
+    "name": "Files",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Files"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "fathom": {
+    "name": "Fathom",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Fathom"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "faidr": {
+    "name": "faidr",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CFR%20Plus"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "expo": {
+    "name": "Expo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Expo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "downie": {
+    "name": "Downie",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Downie"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "d-manager": {
+    "name": "DManager",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DManager"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "damus": {
+    "name": "Damus",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Damus"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "doughnut": {
+    "name": "Doughnut",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Doughnut"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "cosmi-cast": {
+    "name": "Cosmicast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cosmicast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "cast-box": {
+    "name": "CastBox",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CastBox"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "casta-matic": {
+    "name": "Castamatic",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Castamatic"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "cast-away": {
+    "name": "Castaway",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Castaway"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "capsule.fm": {
+    "name": "capsule.fm",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "capsule\\.fm"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "capital": {
+    "name": "Capital",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Capital"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bullhorn": {
+    "name": "Bullhorn",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bullhorn"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "browser-app": {
+    "name": "Browser App",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Browser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "browser-plus": {
+    "name": "BrowserPlus",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BrowserPlus"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "broadcast": {
+    "name": "Broadcast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Broadcast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "breez": {
+    "name": "Breez",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "breez"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "boom": {
+    "name": "Boom",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Boom"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "book-mobile": {
+    "name": "Bookmobile",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bookmobile"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bolt": {
+    "name": "Bolt",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bolt"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bible-app": {
+    "name": "Bible",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bible"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bear": {
+    "name": "Bear",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bear"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "arvo-cast": {
+    "name": "Arvocast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arvocast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "apple-reminders": {
+    "name": "Reminders",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Recordatorios"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "apple-podcasts": {
+    "name": "Podcasts",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "팟캐스트",
+        "פודקאסטים",
+        "Podcastok",
+        "Подкасты",
+        "البودكاست",
+        "Подкасти",
+        "פודקאסטים",
+        "ポッドキャスト",
+        "พ็อดคาสท์"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "apple-imessage": {
+    "name": "iMessage",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MessagesNotificationExtension",
+        "MessagesViewService",
+        "Messages"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "apollo": {
+    "name": "Apollo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Apollo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "anybox": {
+    "name": "Anybox",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Anybox"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "anghami": {
+    "name": "Anghami",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Anghami",
+        "أنغامي"
       ]
     },
     "engine": "webkit"
