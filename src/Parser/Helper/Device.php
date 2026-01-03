@@ -112,6 +112,7 @@ final class Device implements DeviceInterface
             'm10-12_eea' => 'acer=acer m10-12_eea',
             'a10-21_eea' => 'acer=acer a10-21_eea',
             'a410_4g' => 'acer=acer a410_4g',
+            'chromebook 14 (cb3-431)', 'chromebook 14 (cb3-431' => 'acer=acer chromebook 14',
             // AllCall
             'atom' => 'allcall=allcall atom',
             'hero_20_pro' => 'allcall=allcall hero 20 pro',
@@ -202,13 +203,14 @@ final class Device implements DeviceInterface
             'zf620kl' => 'asus=asus zf620kl',
             'asus_x00qda' => 'asus=asus x00qda',
             'asus chromebook flip c100pa' => 'asus=asus chromebook flip c100pa',
+            'memo pad fhd 10 lte', 'aosp on duma' => 'asus=asus memo pad fhd 10 lte',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
             'pixel 3a' => 'google=google pixel 3a',
             'pixel 4' => 'google=google pixel 4',
             'pixel 4 xl' => 'google=google pixel 4 xl',
-            'pixel 4a (5g)', 'pixel 4a (5g' => 'google=google pixel 4a 5g',
+            'pixel 4a (5g)', 'pixel 4a (5g', 'aosp on bramble' => 'google=google pixel 4a 5g',
             'pixel 5' => 'google=google pixel 5',
             'pixel 6' => 'google=google pixel 6',
             'pixel 6a' => 'google=google pixel 6a',
@@ -219,7 +221,7 @@ final class Device implements DeviceInterface
             'pixel 8' => 'google=google pixel 8',
             'kukui' => 'google=google kukui',
             'nexus 5', 'aosp on hammerhead' => 'google=google nexus 5',
-            'pixel 4a' => 'google=google pixel 4a',
+            'pixel 4a', 'aosp on sunfish' => 'google=google pixel 4a',
             'pixel 9 pro xl' => 'google=google pixel 9 pro xl',
             'pixel 8a' => 'google=google pixel 8a',
             'pixel 9 pro fold' => 'google=google pixel 9 pro fold',
@@ -2279,6 +2281,7 @@ final class Device implements DeviceInterface
             'sm-e066b', 'samsung sm-e066b' => 'samsung=samsung sm-e066b',
             'sm-a366n', 'samsung sm-a366n' => 'samsung=samsung sm-a366n',
             'sm-r900', 'samsung sm-r900' => 'samsung=samsung sm-r900',
+            'gt-p5200', 'samsung gt-p5200', 'aosp on santos103g' => 'samsung=samsung gt-p5200',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2938,6 +2941,7 @@ final class Device implements DeviceInterface
             'l38043', 'lenovo l38043' => 'lenovo=lenovo l38043',
             'tb138fc', 'lenovo tb138fc' => 'lenovo=lenovo tb138fc',
             'xiaoxin pad 2022' => 'lenovo=lenovo xiaoxin pad 2022',
+            'lenovo n23 yoga/flex 11 chromebook' => 'lenovo=lenovo n23 yoga/flex 11 chromebook',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -3508,6 +3512,7 @@ final class Device implements DeviceInterface
             'sog02' => 'sony=sony sog02',
             'sog06' => 'sony=sony sog06',
             'sog12' => 'sony=sony sog12',
+            'xperia e3 (aosp)', 'xperia e3 (aosp' => 'sony=sony xperia e3',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -7029,6 +7034,9 @@ final class Device implements DeviceInterface
             'haixu v11' => 'haixu=haixu v11',
             // hp
             'hp chromebook x360 11 g1 ee' => 'hp=hp chromebook x360 11 g1 ee',
+            'hp chromebook x2' => 'hp=hp chromebook x2',
+            // lnmbbs
+            'p40-eea' => 'lnmbbs=lnmbbs p40-eea',
             // other
             default => null,
         };

@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "; Trident/4.0; BTRS26718; GTB6.6; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "8.0.0",
-      "manufacturer": "Microsoft",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "4.0.0",
-      "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/4.0 ( ;  ;  ; Trident/4.0)"
     },
     "device": {
@@ -1418,10 +1373,10 @@
       "bits": null
     },
     "os": {
-      "name": "Unix",
-      "marketingName": "Unix",
+      "name": "Debian",
+      "marketingName": "Debian",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Software in the Public Interest",
       "bits": null
     },
     "client": {

@@ -1453,6 +1453,14 @@ enum Company: string implements CompanyInterface
 
     case aftvnewsCom = 'AFTVnews.com';
 
+    case cliqz = 'Cliqz';
+
+    case theInternetArchive = 'The Internet Archive';
+
+    case lnmbbs = 'LNMBBS';
+
+    case bose = 'Bose';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2177,6 +2185,10 @@ enum Company: string implements CompanyInterface
             'pocketbook' => self::pocketbook,
             'nuvomondo', 'nuvomondo ltd' => self::nuvomondo,
             'aftvnewscom', 'aftvnews.com' => self::aftvnewsCom,
+            'cliqz', 'cliqz gmbh' => self::cliqz,
+            'theinternetarchive', 'archive.org', 'the internet archive' => self::theInternetArchive,
+            'lnmbbs' => self::lnmbbs,
+            'bose' => self::bose,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2412,6 +2424,7 @@ enum Company: string implements CompanyInterface
             self::flock => 'Flock FZ-LLC',
             self::logicware => 'LogicWare & LSoft Technologies',
             self::nuvomondo => 'Nuvomondo Ltd',
+            self::cliqz => 'Cliqz GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -2629,6 +2642,7 @@ enum Company: string implements CompanyInterface
             self::hubspot => 'hubspot-inc',
             self::linspire => 'linspire-inc',
             self::aftvnewsCom => 'aftvnews.com',
+            self::theInternetArchive => 'archive.org',
             default => $this->name,
         };
     }

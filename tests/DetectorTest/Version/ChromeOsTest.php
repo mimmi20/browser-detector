@@ -59,7 +59,7 @@ final class ChromeOsTest extends TestCase
         return [
             [
                 'Mozilla/5.0 (X11; CrOS armv7l 6812.75.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.87 Safari/537.36',
-                '42.0.2311.87',
+                '6812.75.2',
             ],
             [
                 'Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2550.0 Safari/537.36',
@@ -71,11 +71,11 @@ final class ChromeOsTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (X11; CrOS aarch64 11021.19.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.22 Safari/537.36',
-                '70.0.3538.22',
+                '11021.19.0',
             ],
             [
                 'Mozilla/5.0 (Linux; Android 13; jacuzzi Build/R135-16209.50.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 Mobile Safari/537.36',
-                '135.0.7049.111',
+                '16209.50.0',
             ],
         ];
     }
@@ -93,7 +93,7 @@ final class ChromeOsTest extends TestCase
         $versionBuilder
             ->expects(self::once())
             ->method('set')
-            ->with('70.0.3538.22')
+            ->with('11021.19.0')
             ->willThrowException($exception);
 
         $object = new ChromeOs($versionBuilder);

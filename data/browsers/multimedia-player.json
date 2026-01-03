@@ -184,7 +184,6 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "ESPN%20Radio",
         "ESPN Radio"
       ]
     },
@@ -451,18 +450,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "podcat": {
-    "name": "Podcat",
-    "manufacturer": "unknown",
-    "type": "multimedia-player",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podcat"
-      ]
-    },
-    "engine": null
   },
   "podkicker": {
     "name": "Podkicker",

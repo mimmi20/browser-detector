@@ -2556,8 +2556,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Virgin Radio",
-        "Virgin%20Radio"
+        "Virgin Radio"
       ]
     },
     "engine": null
@@ -2674,8 +2673,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "NRC Audio",
-        "NRC%20Audio"
+        "NRC Audio"
       ]
     },
     "engine": null
@@ -2773,7 +2771,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DS podcast",
-        "DS%20Podcast"
+        "DS Podcast"
       ]
     },
     "engine": null
@@ -3063,8 +3061,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "NYT Audio",
-        "NYT%20Audio"
+        "NYT Audio"
       ]
     },
     "engine": null
@@ -3088,7 +3085,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "NPR%20One"
+        "NPR One"
       ]
     },
     "engine": null
@@ -3281,7 +3278,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Radioline%202"
+        "Radioline 2"
       ]
     },
     "engine": "webkit"
@@ -3390,7 +3387,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Podhero%20Alpha",
+        "Podhero Alpha",
         "Podhero"
       ]
     },
@@ -3497,8 +3494,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "myTuneriOS%20Free",
-        "myTuner%20Radio%20app",
+        "myTuneriOS Free",
         "myTuner Radio app",
         "mytuner_podcasts_androidplayer"
       ]
@@ -3596,7 +3592,6 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Listen%20App",
         "Listen App",
         "Listen"
       ]
@@ -3634,7 +3629,6 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Kids%20Listen",
         "Kids Listen"
       ]
     },
@@ -3816,7 +3810,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "CFR%20Plus"
+        "CFR Plus"
       ]
     },
     "engine": "webkit"
@@ -4167,5 +4161,102 @@
       ]
     },
     "engine": "webkit"
+  },
+  "podcat": {
+    "name": "Podcat",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcat 2",
+        "Podcat"
+      ]
+    },
+    "engine": null
+  },
+  "skyeng-teachers": {
+    "name": "Skyeng Teachers",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Skyeng Teachers"
+      ]
+    },
+    "engine": null
+  },
+  "insta-paper": {
+    "name": "Instapaper",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Instapaper"
+      ]
+    },
+    "engine": null
+  },
+  "focus-keeper": {
+    "name": "Focus Keeper",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Focuskeeper"
+      ]
+    },
+    "engine": null
+  },
+  "klara": {
+    "name": "Klara",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Klara"
+      ]
+    },
+    "engine": null
+  },
+  "focus-matrix": {
+    "name": "Focus Matrix",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Focus Matrix"
+      ]
+    },
+    "engine": null
+  },
+  "be-focused": {
+    "name": "Be Focused",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Be Focused"
+      ]
+    },
+    "engine": null
+  },
+  "bose-music": {
+    "name": "Bose Music",
+    "manufacturer": "bose",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bose Music"
+      ]
+    },
+    "engine": null
   }
 }

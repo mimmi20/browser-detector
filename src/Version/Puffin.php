@@ -34,7 +34,7 @@ final readonly class Puffin implements VersionFactoryInterface
     #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (preg_match('/(?:Puffin%20Free|Puffin)\/(?P<version>[\d\.]+)/', $useragent, $matches)) {
+        if (preg_match('/(?:Puffin Free|Puffin)\/(?P<version>[\d\.]+)/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException) {

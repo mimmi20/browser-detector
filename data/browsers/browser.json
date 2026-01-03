@@ -89,7 +89,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "360%20Browser",
+        "360 Browser",
         "360 Aphone Browser \\("
       ]
     },
@@ -382,7 +382,7 @@
       "search": [
         "Avast",
         "AvastSecureBrowser",
-        "Avast%20Secure%20Browser"
+        "Avast Secure Browser"
       ]
     },
     "engine": null
@@ -1484,7 +1484,7 @@
         "Flock"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "fluid": {
     "name": "Fluid",
@@ -2980,7 +2980,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "OPT"
+        "OPT",
+        "Opera Touch"
       ]
     },
     "engine": null
@@ -3845,7 +3846,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Spector",
-        "Spector%20Pro"
+        "Spector Pro"
       ]
     },
     "engine": "webkit"
@@ -4049,7 +4050,7 @@
     "engine": "gecko"
   },
   "tenta": {
-    "name": "Tenta",
+    "name": "Tenta Browser",
     "manufacturer": "tenta",
     "type": "browser",
     "version": {
@@ -4583,7 +4584,6 @@
       "search": [
         "Ghostery",
         "Ghostery:",
-        "Ghostery%20Dawn",
         "Ghostery Dawn"
       ]
     },
@@ -5566,7 +5566,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OperaCoast",
-        "Opera%20Coast",
+        "Opera Coast",
         "Coast"
       ]
     },

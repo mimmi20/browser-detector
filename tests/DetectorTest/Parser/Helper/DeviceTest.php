@@ -135,6 +135,8 @@ final class DeviceTest extends TestCase
             ['M10-12_EEA', 'acer=acer m10-12_eea'],
             ['A10-21_EEA', 'acer=acer a10-21_eea'],
             ['A410_4G', 'acer=acer a410_4g'],
+            ['Chromebook 14 (CB3-431)', 'acer=acer chromebook 14'],
+            ['Chromebook 14 (CB3-431', 'acer=acer chromebook 14'],
             // AllCall
             ['Atom', 'allcall=allcall atom'],
             ['HERO_20_PRO', 'allcall=allcall hero 20 pro'],
@@ -224,6 +226,8 @@ final class DeviceTest extends TestCase
             ['ZF620KL', 'asus=asus zf620kl'],
             ['ASUS_X00QDA', 'asus=asus x00qda'],
             ['ASUS Chromebook Flip C100PA', 'asus=asus chromebook flip c100pa'],
+            ['MeMO Pad FHD 10 LTE', 'asus=asus memo pad fhd 10 lte'],
+            ['AOSP on Duma', 'asus=asus memo pad fhd 10 lte'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
             ['Pixel 7 Pro', 'google=google pixel 7 pro'],
@@ -233,6 +237,7 @@ final class DeviceTest extends TestCase
             ['Pixel 6a', 'google=google pixel 6a'],
             ['Pixel 4a (5G)', 'google=google pixel 4a 5g'],
             ['Pixel 4a (5G', 'google=google pixel 4a 5g'],
+            ['AOSP on bramble', 'google=google pixel 4a 5g'],
             ['Pixel 7', 'google=google pixel 7'],
             ['Pixel 3a', 'google=google pixel 3a'],
             ['Pixel 3', 'google=google pixel 3'],
@@ -245,6 +250,7 @@ final class DeviceTest extends TestCase
             ['Nexus 5', 'google=google nexus 5'],
             ['AOSP on HammerHead', 'google=google nexus 5'],
             ['Pixel 4a', 'google=google pixel 4a'],
+            ['AOSP on sunfish', 'google=google pixel 4a'],
             ['Pixel 9 Pro XL', 'google=google pixel 9 pro xl'],
             ['Pixel 8a', 'google=google pixel 8a'],
             ['Pixel 9 Pro Fold', 'google=google pixel 9 pro fold'],
@@ -2927,6 +2933,9 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A366N', 'samsung=samsung sm-a366n'],
             ['SM-R900', 'samsung=samsung sm-r900'],
             ['SAMSUNG SM-R900', 'samsung=samsung sm-r900'],
+            ['AOSP on Santos103G', 'samsung=samsung gt-p5200'],
+            ['GT-P5200', 'samsung=samsung gt-p5200'],
+            ['SAMSUNG GT-P5200', 'samsung=samsung gt-p5200'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3600,6 +3609,7 @@ final class DeviceTest extends TestCase
             ['TB138FC', 'lenovo=lenovo tb138fc'],
             ['Lenovo TB138FC', 'lenovo=lenovo tb138fc'],
             ['XiaoXin Pad 2022', 'lenovo=lenovo xiaoxin pad 2022'],
+            ['Lenovo N23 Yoga/Flex 11 Chromebook', 'lenovo=lenovo n23 yoga/flex 11 chromebook'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -4173,6 +4183,8 @@ final class DeviceTest extends TestCase
             ['SOG02', 'sony=sony sog02'],
             ['SOG06', 'sony=sony sog06'],
             ['SOG12', 'sony=sony sog12'],
+            ['Xperia E3 (AOSP)', 'sony=sony xperia e3'],
+            ['Xperia E3 (AOSP', 'sony=sony xperia e3'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -7891,6 +7903,9 @@ final class DeviceTest extends TestCase
             ['Haixu V11', 'haixu=haixu v11'],
             // hp
             ['HP Chromebook x360 11 G1 EE', 'hp=hp chromebook x360 11 g1 ee'],
+            ['HP Chromebook x2', 'hp=hp chromebook x2'],
+            // lnmbbs
+            ['P40-EEA', 'lnmbbs=lnmbbs p40-eea'],
             // other
             ['Model"', null],
             [': "', null],

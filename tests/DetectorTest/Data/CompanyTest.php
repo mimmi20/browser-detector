@@ -4354,6 +4354,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'AFTVnews.com',
                 'key' => 'aftvnews.com',
             ],
+            [
+                'type' => 'Cliqz',
+                'name' => 'Cliqz GmbH',
+                'brandname' => 'Cliqz',
+                'key' => 'cliqz',
+            ],
+            [
+                'type' => 'The Internet Archive',
+                'name' => 'The Internet Archive',
+                'brandname' => 'The Internet Archive',
+                'key' => 'archive.org',
+            ],
+            [
+                'type' => 'LNMBBS',
+                'name' => 'LNMBBS',
+                'brandname' => 'LNMBBS',
+                'key' => 'lnmbbs',
+            ],
+            [
+                'type' => 'Bose',
+                'name' => 'Bose',
+                'brandname' => 'Bose',
+                'key' => 'bose',
+            ],
         ];
     }
 

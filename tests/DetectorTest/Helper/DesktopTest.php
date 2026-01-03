@@ -119,6 +119,9 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/527+ (KHTML, like Gecko) Bolt/0.862 Version/3.0 Safari/523.15'],
             ['Mozilla/5.0 (PPC; rv:9.0) Gecko/20090818 Firefox/9.0'],
             ['ELinks/0.11.4-3maemo0 (textmode; Debian; Linux 2.6.28.10power46 armv7l; -)'],
+            ['Mozilla/4.75 [en] (X11; U; BSD/OS 4.0.1 i386)'],
+            ['Mozilla/5.0 (compatible; Konqueror/3.0.1 (CVS >= 20020327); Linux) Linspire (Lindows, Inc.)'],
+            ['Linspire Internet Suite'],
         ];
     }
 

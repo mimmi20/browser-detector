@@ -84,7 +84,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/; model: (?P<devicecode>[^);\/]+)\)/i',
             '/(lbc|heart)\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
             '/mozilla\/[\d.]+ \(mobile; (?P<devicecode>[^;]+)(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
-            '/virgin%20radio\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \((?P<devicecode>[^)]+)\)/i',
+            '/virgin radio\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \((?P<devicecode>[^)]+)\)/i',
             '/pugpigbolt [\d.]+ \([^);\/,]+, (android|ios) [\d.]+\) on phone \(model (?P<devicecode>[^)]+)\)/i',
             '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
             '/luminary\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^);\/]+); /i',

@@ -733,8 +733,8 @@ final class Useragent3Test extends TestCase
     {
         return [
             [
-                'ua' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
-                'normalizedUa' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'ua' => 'Virgin Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'normalizedUa' => 'Virgin Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
                 'hasDeviceInfo' => true,
                 'deviceUa' => 'sm-g996b',
                 'deviceCode' => 'A369i',
@@ -747,7 +747,7 @@ final class Useragent3Test extends TestCase
                 'hasPlatformVersion' => true,
                 'platformVersion' => '14.0.0',
                 'hasEngineInfo' => true,
-                'engineUa' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'engineUa' => 'Virgin Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
                 'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
