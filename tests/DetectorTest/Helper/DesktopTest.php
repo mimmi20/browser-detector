@@ -117,6 +117,8 @@ final class DesktopTest extends TestCase
             ['Links (2.8; ULTRIX 4.5 VAX; GNU C 1; text)'],
             ['Mozilla/6.0 (Future Star Technologies Corp. Star-Blade OS; U; en-US) iNet Browser 2.5'],
             ['Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/527+ (KHTML, like Gecko) Bolt/0.862 Version/3.0 Safari/523.15'],
+            ['Mozilla/5.0 (PPC; rv:9.0) Gecko/20090818 Firefox/9.0'],
+            ['ELinks/0.11.4-3maemo0 (textmode; Debian; Linux 2.6.28.10power46 armv7l; -)'],
         ];
     }
 

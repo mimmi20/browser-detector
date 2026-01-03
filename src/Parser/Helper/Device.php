@@ -1629,7 +1629,7 @@ final class Device implements DeviceInterface
             'sm-p905' => 'samsung=samsung sm-p905',
             'sm-g920i' => 'samsung=samsung sm-g920i',
             'sm-g531f' => 'samsung=samsung sm-g531f',
-            'sm-p605' => 'samsung=samsung sm-p605',
+            'sm-p605', 'aosp on lt03lte' => 'samsung=samsung sm-p605',
             'sm-e700f' => 'samsung=samsung sm-e700f',
             'sm-g970u' => 'samsung=samsung sm-g970u',
             'sm-a7050' => 'samsung=samsung sm-a7050',

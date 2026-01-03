@@ -19,6 +19,7 @@
     "/surfbook w1/i": "trekstor",
     "/freebsd/i": "unknown",
     "/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\\=|i|power)mac|networkingextension/i": "apple",
+    "/\\bPPC\\b/": "apple",
     "/remix (sk1w|mini|pro)/i": "jide"
   },
   "generic": "unknown"

@@ -66,7 +66,7 @@ final class MobileDevice implements MobileDeviceInterface
             return true;
         }
 
-        if (preg_match('/fbid\/desktop/i', $useragent)) {
+        if (preg_match('/fbid\/desktop|debian/i', $useragent)) {
             return false;
         }
 

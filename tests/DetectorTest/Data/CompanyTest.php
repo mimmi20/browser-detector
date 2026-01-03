@@ -4342,6 +4342,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'PocketBook',
                 'key' => 'pocketbook',
             ],
+            [
+                'type' => 'Nuvomondo',
+                'name' => 'Nuvomondo Ltd',
+                'brandname' => 'Nuvomondo',
+                'key' => 'nuvomondo',
+            ],
+            [
+                'type' => 'AFTVnews.com',
+                'name' => 'AFTVnews.com',
+                'brandname' => 'AFTVnews.com',
+                'key' => 'aftvnews.com',
+            ],
         ];
     }
 

@@ -1862,6 +1862,7 @@ final class DeviceTest extends TestCase
             ['SM-G920I', 'samsung=samsung sm-g920i'],
             ['SM-G531F', 'samsung=samsung sm-g531f'],
             ['SM-P605', 'samsung=samsung sm-p605'],
+            ['AOSP on lt03lte', 'samsung=samsung sm-p605'],
             ['SM-E700F', 'samsung=samsung sm-e700f'],
             ['SM-G970U', 'samsung=samsung sm-g970u'],
             ['SM-A7050', 'samsung=samsung sm-a7050'],

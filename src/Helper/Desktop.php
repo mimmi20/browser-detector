@@ -36,6 +36,10 @@ final class Desktop implements DesktopInterface
             return false;
         }
 
+        if (preg_match('/\bPPC\b/', $useragent)) {
+            return true;
+        }
+
         // Windows + Linux + macOS
         if (
             preg_match(

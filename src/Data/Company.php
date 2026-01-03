@@ -1449,6 +1449,10 @@ enum Company: string implements CompanyInterface
 
     case pocketbook = 'PocketBook';
 
+    case nuvomondo = 'Nuvomondo';
+
+    case aftvnewsCom = 'AFTVnews.com';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2171,6 +2175,8 @@ enum Company: string implements CompanyInterface
             'panasonic' => self::panasonic,
             'logicware', 'logicware & lsoft technologies' => self::logicware,
             'pocketbook' => self::pocketbook,
+            'nuvomondo', 'nuvomondo ltd' => self::nuvomondo,
+            'aftvnewscom', 'aftvnews.com' => self::aftvnewsCom,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2405,6 +2411,7 @@ enum Company: string implements CompanyInterface
             self::comodo => 'Comodo Group Inc',
             self::flock => 'Flock FZ-LLC',
             self::logicware => 'LogicWare & LSoft Technologies',
+            self::nuvomondo => 'Nuvomondo Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -2621,6 +2628,7 @@ enum Company: string implements CompanyInterface
             self::eVentures => 'e.ventures',
             self::hubspot => 'hubspot-inc',
             self::linspire => 'linspire-inc',
+            self::aftvnewsCom => 'aftvnews.com',
             default => $this->name,
         };
     }

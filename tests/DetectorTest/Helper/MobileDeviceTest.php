@@ -246,6 +246,7 @@ final class MobileDeviceTest extends TestCase
             ['VMS_Mosaic/4.0 (Motif;OpenVMS V8.3 COMPAQ Professional Workstation ) libwww/2.12_Mosaic'],
             ['Mozilla/5.0 (Linux; Android 7.1.1; Build/R62-9901.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2706.0 Safari/537.36'],
             ['Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/527+ (KHTML, like Gecko) Bolt/0.862 Version/3.0 Safari/523.15'],
+            ['ELinks/0.11.4-3maemo0 (textmode; Debian; Linux 2.6.28.10power46 armv7l; -)'],
         ];
     }
 }
