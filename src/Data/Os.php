@@ -435,7 +435,7 @@ enum Os: string implements OsInterface
             'windowsmobileos', 'windows mobile os' => self::windowsmobileos,
             'windowsnt', 'windows nt' => self::windowsnt,
             'windows10', 'windows 10', 'windows nt 10', 'windows nt 10.0' => self::windows10,
-            'windows11', 'windows 11', 'windows nt 11' => self::windows11,
+            'windows11', 'windows 11', 'windows nt 11', 'windows nt 11.0' => self::windows11,
             'windowsnt31', 'windows nt 3.1' => self::windowsnt31,
             'windowsnt35', 'windows nt 3.5' => self::windowsnt35,
             'windowsnt351', 'windows nt 3.51' => self::windowsnt351,

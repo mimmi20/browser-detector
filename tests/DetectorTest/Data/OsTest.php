@@ -83,6 +83,14 @@ final class OsTest extends TestCase
             self::assertSame($key, $result2->getKey());
         }
 
+        $result3 = Os::fromName($key);
+
+        self::assertSame($name, $result3->getName());
+        self::assertSame($marketingName, $result3->getMarketingName());
+        self::assertSame($manufacturer, $result3->getManufacturer());
+        self::assertSame($version, $result3->getVersion());
+        self::assertSame($key, $result3->getKey());
+
         $result4 = Os::fromName($result->value);
 
         self::assertSame($name, $result4->getName());
