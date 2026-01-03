@@ -812,6 +812,26 @@ final class Useragent3Test extends TestCase
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
+            [
+                'ua' => 'Classic FM/2.0.0 Android 12/SM-G975F',
+                'normalizedUa' => 'Classic FM/2.0.0 Android 12/SM-G975F',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'sm-g975f',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => 'classic-fm',
+                'hasClientVersion' => true,
+                'clientVersion' => '2.0.0',
+                'hasPlatformInfo' => true,
+                'platformCode' => Os::android,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '12.0.0',
+                'hasEngineInfo' => true,
+                'engineUa' => 'Classic FM/2.0.0 Android 12/SM-G975F',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
         ];
     }
 }
