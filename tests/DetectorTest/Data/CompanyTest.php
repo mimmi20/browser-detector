@@ -4390,6 +4390,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'DoCoMo',
                 'key' => 'ntt-docomo',
             ],
+            [
+                'type' => 'Nexian',
+                'name' => 'Nexian',
+                'brandname' => 'Nexian',
+                'key' => 'nexian',
+            ],
+            [
+                'type' => 'Spice',
+                'name' => 'Spice',
+                'brandname' => 'Spice',
+                'key' => 'spice',
+            ],
+            [
+                'type' => 'Cosmix',
+                'name' => 'Cosmix Corporation',
+                'brandname' => 'Cosmix',
+                'key' => 'cosmix',
+            ],
         ];
     }
 

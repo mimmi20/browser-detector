@@ -271,6 +271,51 @@
   },
   {
     "headers": {
+      "user-agent": "Alcatel-OT-802A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "OT-802A",
+      "marketingName": "Wave",
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Obigo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "Obigo"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Alcatel-OT-C550/1.0 ObigoInternetBrowser/Q03C"
     },
     "device": {

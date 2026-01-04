@@ -30,7 +30,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -75,7 +75,52 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.7.12",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.7.12",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; AvantGo 3.2; ProxiNet; Danger hiptop 1.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Hiptop",
+      "marketingName": "Hiptop",
+      "manufacturer": "Danger",
+      "brand": "Danger",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Danger OS",
+      "marketingName": "Danger OS",
+      "version": null,
+      "manufacturer": "Danger",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -85,7 +130,7 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "1.7.12",
+      "version": null,
       "manufacturer": "Mozilla"
     }
   }

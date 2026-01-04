@@ -1465,6 +1465,12 @@ enum Company: string implements CompanyInterface
 
     case docomo = 'DoCoMo';
 
+    case nexian = 'Nexian';
+
+    case spice = 'Spice';
+
+    case cosmix = 'Cosmix';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2195,6 +2201,9 @@ enum Company: string implements CompanyInterface
             'bose' => self::bose,
             'sonyericsson', 'sony-ericsson' => self::sonyEricsson,
             'docomo', 'ntt-docomo', 'ntt docomo' => self::docomo,
+            'nexian' => self::nexian,
+            'spice' => self::spice,
+            'cosmix', 'cosmix corporation' => self::cosmix,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2432,6 +2441,7 @@ enum Company: string implements CompanyInterface
             self::nuvomondo => 'Nuvomondo Ltd',
             self::cliqz => 'Cliqz GmbH',
             self::docomo => 'NTT DoCoMo',
+            self::cosmix => 'Cosmix Corporation',
             self::unknown => null,
             default => $this->value,
         };

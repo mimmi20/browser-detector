@@ -36,14 +36,14 @@ final class Desktop implements DesktopInterface
             return false;
         }
 
-        if (preg_match('/\b(PPC|BSD)\b/', $useragent)) {
+        if (preg_match('/\b(PPC|PPC3|BSD)\b/', $useragent)) {
             return true;
         }
 
         // Windows + Linux + macOS
         if (
             preg_match(
-                '/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!|linux|debian|ubuntu|cros|tinybrowser|red hat modified|fedora|gentoo|slackware|macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os=|i|power)mac|syllable|morphos|dragonfly|charon|odyssey web browser|\(pc;|genix|ultrix|news-os|star-blade os|freebsd|openbsd|netbsd|bsd four|os\/2|warp|sunos|hp-?ux|beos|haiku|irix|solaris|openvms|aix|esx|unix|w3m|google desktop|eeepc|dillo|konqueror|eudora|masking-agent|safersurf|cybeye|google pp default|microsoft office|ms ?frontpage|akregator|installatron|lynx|osf1|libvlc|openvas|gvfs|centos|linspire/i',
+                '/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!|linux|debian|ubuntu|cros|tinybrowser|red hat modified|fedora|gentoo|slackware|macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os=|i|power)mac|syllable|morphos|dragonfly|charon|odyssey web browser|\(pc;|genix|ultrix|news-os|star-blade os|freebsd|openbsd|netbsd|bsd four|os\/2|warp|sunos|hp-?ux|beos|haiku|irix|solaris|openvms|aix|esx|unix|w3m|google desktop|eeepc|dillo|konqueror|eudora|masking-agent|safersurf|cybeye|google pp default|microsoft office|ms ?frontpage|akregator|installatron|lynx|osf1|libvlc|openvas|gvfs|centos|linspire|ibrowse|amigaos/i',
                 $useragent,
             )
         ) {

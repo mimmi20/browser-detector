@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "mozilla/5.0 (compatible; fedora core 5) fc5 gnome"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Fedora Linux",
-      "marketingName": "Fedora Linux",
-      "version": null,
-      "manufacturer": "Redhat",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "mozilla/5.0 (compatible; fedora core 3) fc3 kde"
     },
     "device": {
@@ -75,7 +30,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -120,7 +75,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -165,7 +120,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -210,7 +165,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -255,7 +210,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -300,7 +255,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -480,7 +435,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "4.61.0",
       "manufacturer": "Mozilla",
@@ -525,7 +480,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -615,7 +570,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "4.0.0",
       "manufacturer": "Mozilla",
@@ -795,9 +750,9 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.7.5",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -840,9 +795,9 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.7.12",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -885,9 +840,9 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.1.0",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -930,9 +885,9 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.4.3",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -975,9 +930,9 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.7.0.13",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -1020,9 +975,9 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.7.0",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -1256,96 +1211,6 @@
     "engine": {
       "name": "Gecko",
       "version": "1.5.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.6) Gecko/20050328 Fedora/1.7.6-1.2.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Fedora Linux",
-      "marketingName": "Fedora Linux",
-      "version": "1.7.6.1.2",
-      "manufacturer": "Redhat",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.7.6",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20050921 Red Hat/1.7.12-1.1.3.2"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Redhat Linux",
-      "marketingName": "Redhat Linux",
-      "version": "1.7.12.1.1",
-      "manufacturer": "Redhat",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.7.12",
       "manufacturer": "Mozilla"
     }
   },
@@ -4395,7 +4260,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "4.7.0",
       "manufacturer": "Mozilla",
@@ -4440,9 +4305,9 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.0.2",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -4496,6 +4361,141 @@
     "engine": {
       "name": "Gecko",
       "version": "16.0.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.1.2) Gecko/20070228 Firefox/2.0.0.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": null,
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0.2",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1.2",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; NetBSD i386; en-US; rv:1.8.0.1) Gecko/20060310 Firefox/1.5.0.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.5.0.1",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.0.1",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:10.0) Gecko/20100101 Firefox/10.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": null,
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "10.0.0",
       "manufacturer": "Mozilla"
     }
   }

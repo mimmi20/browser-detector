@@ -122,6 +122,9 @@ final class DesktopTest extends TestCase
             ['Mozilla/4.75 [en] (X11; U; BSD/OS 4.0.1 i386)'],
             ['Mozilla/5.0 (compatible; Konqueror/3.0.1 (CVS >= 20020327); Linux) Linspire (Lindows, Inc.)'],
             ['Linspire Internet Suite'],
+            ['IBrowse 2.4 (AmigaOS 4.5)'],
+            ['Mozilla/4.0 (compatible; Voyager; AmigaOS)'],
+            ['Klondike/1.70 (HTTP PPC3)'],
         ];
     }
 

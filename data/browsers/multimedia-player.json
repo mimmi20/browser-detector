@@ -33,6 +33,19 @@
     },
     "engine": "unknown"
   },
+  "alexa": {
+    "name": "Alexa",
+    "manufacturer": "amazon",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AlexaService",
+        "Alexa"
+      ]
+    },
+    "engine": "unknown"
+  },
   "alizee ipod": {
     "name": "Alizee iPod",
     "manufacturer": "unknown",
@@ -807,6 +820,43 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Miro"
+      ]
+    },
+    "engine": null
+  },
+  "mixer-box": {
+    "name": "MixerBox",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MixerBox Pro",
+        "MixerBox"
+      ]
+    },
+    "engine": null
+  },
+  "just-audio": {
+    "name": "Just Audio",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "just_audio"
+      ]
+    },
+    "engine": null
+  },
+  "juice": {
+    "name": "Juice",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Juice"
       ]
     },
     "engine": null
