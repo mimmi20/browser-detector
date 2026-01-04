@@ -1461,6 +1461,10 @@ enum Company: string implements CompanyInterface
 
     case bose = 'Bose';
 
+    case sonyEricsson = 'SonyEricsson';
+
+    case docomo = 'DoCoMo';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2189,6 +2193,8 @@ enum Company: string implements CompanyInterface
             'theinternetarchive', 'archive.org', 'the internet archive' => self::theInternetArchive,
             'lnmbbs' => self::lnmbbs,
             'bose' => self::bose,
+            'sonyericsson', 'sony-ericsson' => self::sonyEricsson,
+            'docomo', 'ntt-docomo', 'ntt docomo' => self::docomo,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2425,6 +2431,7 @@ enum Company: string implements CompanyInterface
             self::logicware => 'LogicWare & LSoft Technologies',
             self::nuvomondo => 'Nuvomondo Ltd',
             self::cliqz => 'Cliqz GmbH',
+            self::docomo => 'NTT DoCoMo',
             self::unknown => null,
             default => $this->value,
         };
@@ -2643,6 +2650,8 @@ enum Company: string implements CompanyInterface
             self::linspire => 'linspire-inc',
             self::aftvnewsCom => 'aftvnews.com',
             self::theInternetArchive => 'archive.org',
+            self::sonyEricsson => 'sony-ericsson',
+            self::docomo => 'ntt-docomo',
             default => $this->name,
         };
     }

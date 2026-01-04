@@ -3241,6 +3241,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/4.75 [en] (X11; U; BSD/OS 4.0.1 i386)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "BSD",
+      "marketingName": "BSD",
+      "version": "4.0.1",
+      "manufacturer": "Berkeley",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.75.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.75 [en] (X11; U; AIX 4.3)"
     },
     "device": {
@@ -4437,51 +4482,6 @@
       "marketingName": "SunOS",
       "version": "5.6.0",
       "manufacturer": "Oracle",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "4.61.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.61 [en] (OS/2; U)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "OS/2",
-      "marketingName": "OS/2",
-      "version": null,
-      "manufacturer": "IBM",
       "bits": null
     },
     "client": {

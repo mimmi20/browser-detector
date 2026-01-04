@@ -711,6 +711,7 @@ final class Device implements DeviceInterface
             '23124ra7eo' => 'xiaomi=xiaomi 23124ra7eo',
             '23106rn0da' => 'xiaomi=xiaomi 23106rn0da',
             '23090ra98g' => 'xiaomi=xiaomi 23090ra98g',
+            'redmi note 13 pro+ 5g' => 'xiaomi=xiaomi redmi note 13 pro+ 5g',
             '24053py09i' => 'xiaomi=xiaomi 24053py09i',
             '24044rn32l' => 'xiaomi=xiaomi 24044rn32l',
             '24048rn6ci' => 'xiaomi=xiaomi 24048rn6ci',

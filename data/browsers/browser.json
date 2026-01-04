@@ -1095,7 +1095,7 @@
         "Dolphin"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "dolfin-zero": {
     "name": "Dolphin Zero",
@@ -2526,18 +2526,6 @@
     },
     "engine": "gecko"
   },
-  "mozilla": {
-    "name": "Mozilla",
-    "manufacturer": "mozilla-foundation",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Mozilla"
-      ]
-    },
-    "engine": "gecko"
-  },
   "multizilla": {
     "name": "MultiZilla",
     "manufacturer": "unknown",
@@ -2584,6 +2572,18 @@
     },
     "engine": null
   },
+  "mozilla": {
+    "name": "Mozilla Application Suite",
+    "manufacturer": "mozilla-foundation",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mozilla"
+      ]
+    },
+    "engine": "gecko"
+  },
   "netscape navigator": {
     "name": "Navigator",
     "manufacturer": "netscape",
@@ -2592,6 +2592,20 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Navigator"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "netscape": {
+    "name": "Netscape",
+    "manufacturer": "netscape",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Netscape7",
+        "Netscape6",
+        "Netscape"
       ]
     },
     "engine": "gecko"
@@ -2668,20 +2682,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "netscape": {
-    "name": "Netscape",
-    "manufacturer": "netscape",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Netscape7",
-        "Netscape6",
-        "Netscape"
-      ]
-    },
-    "engine": "gecko"
   },
   "nettv": {
     "name": "NetTV",
@@ -5775,6 +5775,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "docomo-browser": {
+    "name": "DoCoMo Browser",
+    "manufacturer": "pocketbook",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DoCoMo"
+      ]
     },
     "engine": null
   }

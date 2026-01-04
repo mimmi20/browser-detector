@@ -742,6 +742,7 @@ final class DeviceTest extends TestCase
             ['23124RA7EO', 'xiaomi=xiaomi 23124ra7eo'],
             ['23106RN0DA', 'xiaomi=xiaomi 23106rn0da'],
             ['23090RA98G', 'xiaomi=xiaomi 23090ra98g'],
+            ['Redmi Note 13 Pro+ 5G', 'xiaomi=xiaomi redmi note 13 pro+ 5g'],
             ['24053PY09I', 'xiaomi=xiaomi 24053py09i'],
             ['24044RN32L', 'xiaomi=xiaomi 24044rn32l'],
             ['24048RN6CI', 'xiaomi=xiaomi 24048rn6ci'],

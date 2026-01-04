@@ -4378,6 +4378,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Bose',
                 'key' => 'bose',
             ],
+            [
+                'type' => 'SonyEricsson',
+                'name' => 'SonyEricsson',
+                'brandname' => 'SonyEricsson',
+                'key' => 'sony-ericsson',
+            ],
+            [
+                'type' => 'DoCoMo',
+                'name' => 'NTT DoCoMo',
+                'brandname' => 'DoCoMo',
+                'key' => 'ntt-docomo',
+            ],
         ];
     }
 

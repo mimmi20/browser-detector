@@ -1,7 +1,7 @@
 {
   "rules": {
     "/series ?60|s60v[35]/i": "series60",
-    "/series ?40|nokia7230/i": "series40"
+    "/series ?40/i": "series40"
   },
   "generic": "symbian"
 }

@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "360%20Browser/3.1 CFNetwork/459 Darwin/10.0.0d3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPhone OS",
+      "marketingName": "iPhone OS",
+      "version": "3.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "360 Browser",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "Qihoo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "459.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; xx) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17; 360browser(securitypay,securityinstalled); 360(android,uppayplugin); 360 Aphone Browser (4.8.0)"
     },
     "device": {

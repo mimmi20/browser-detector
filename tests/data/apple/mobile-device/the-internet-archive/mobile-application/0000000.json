@@ -1,15 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "Wayback%20Machine%20Extension/6 CFNetwork/1120 Darwin/19.0.0 (x86_64) comdirect/1.0 (appVersion:19.11.0;deviceName:nokia 6;deviceType:mobile)"
+      "user-agent": "Wayback%20Machine%20Extension/19 CFNetwork/1209.1 Darwin/20.2.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "dualOrientation": false,
+      "dualOrientation": null,
       "simCount": 0,
       "display": {
         "width": null,
@@ -17,15 +17,15 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop",
-      "ismobile": false,
+      "type": "mobile-device",
+      "ismobile": true,
       "istv": false,
       "bits": null
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.15.0",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "14.3.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -33,14 +33,14 @@
       "name": "Wayback Machine",
       "modus": null,
       "version": null,
-      "manufacturer": "archive.org",
+      "manufacturer": "The Internet Archive",
       "type": "mobile-application",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "1120.0.0",
+      "version": "1209.1.0",
       "manufacturer": "Apple"
     }
   }
