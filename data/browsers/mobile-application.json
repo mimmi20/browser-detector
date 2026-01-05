@@ -4334,5 +4334,17 @@
       ]
     },
     "engine": null
+  },
+  "apple-tv-app": {
+    "name": "Apple TV App",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AppleTv"
+      ]
+    },
+    "engine": null
   }
 }

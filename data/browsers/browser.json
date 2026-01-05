@@ -3509,6 +3509,16 @@
     },
     "engine": "webkit"
   },
+  "safari technology preview": {
+    "name": "Safari Technology Preview",
+    "manufacturer": "apple",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\SafariFactory",
+      "search": null
+    },
+    "engine": null
+  },
   "bitdefender safepay": {
     "name": "Safepay",
     "manufacturer": "bitdefender",
