@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -21,7 +21,7 @@ use function preg_match;
 final readonly class Debian implements VersionFactoryInterface
 {
     /** @api */
-    public const array SEARCHES = ['kFreeBSD', 'Debian', 'Debian\-'];
+    public const array SEARCHES = ['kFreeBSD', 'Debian', 'Debian Linux', 'Debian\-'];
 
     /** @throws void */
     public function __construct(private VersionBuilderInterface $versionBuilder)

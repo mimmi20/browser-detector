@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -155,6 +155,14 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3B) Opera 8.60 [ja]'],
             ['Mozilla/5.0 (Linux; Android 10; GM1910 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MBrowser/6.2 TBS/045008 Mobile Safari/537.36 BiliApp/5531000 mobi_app/android channel/oppo Buvid/<hide> internal_version/5531000'],
             ['ZTE S519/1.0 Threadx/4.0 Mocor/W12 Realease/01.01.2013 Browser/Dorado1.0'],
+            ['(null)/(null) watchOS/5.0.1 model/Watch4,2 hwp/t8006 build/16R382 (6; dt:191)'],
+            ['CFNetwork, iPhone OS 5.1.1, iPhone4,1'],
+            ['Mozilla/5.0 (Linux; U; YunOs 1.0.0.3; en-; K-Touch W619 Build/AliyunOs-2012) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'],
+            ['Himalaya/2.6.32 (iPhone; iOS 16.5.1; Scale/3.00; CFNetwork; iPhone13,4)'],
+            ['NetworkingExtension/8621.5.1.10.7 Network/4277.140.33.700.1 iOS/18.7.2'],
+            ['Mozilla/5.0 (Linux like Android; de_DE) AppleWebKit/534.34 PocketBook/626 (screen 758x1024; FW O626.4.4.979) Mobile'],
+            ['Jam/2.0.4 iOS/16.3.1 (www.listentojam.com)'],
+            ['KKBOX/7.10.70/iOS/14.2'],
         ];
     }
 
@@ -234,6 +242,11 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.141 CitizenFX/1.0.0.6556 Safari/537.36'],
             ['Mozilla/5.0 (Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/36.0.2128.0 OMI/4.8.0.129.JFK.669 TiVo, TiVo_STB_BCM7278/21.11.1.v22-USM-12 (TiVo, TCDD6F000, wired)'],
             ['Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; htcomp.net)'],
+            ['VMS_Mosaic/4.0 (Motif;OpenVMS V8.3 COMPAQ Professional Workstation ) libwww/2.12_Mosaic'],
+            ['Mozilla/5.0 (Linux; Android 7.1.1; Build/R62-9901.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2706.0 Safari/537.36'],
+            ['Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/527+ (KHTML, like Gecko) Bolt/0.862 Version/3.0 Safari/523.15'],
+            ['ELinks/0.11.4-3maemo0 (textmode; Debian; Linux 2.6.28.10power46 armv7l; -)'],
         ];
     }
 }

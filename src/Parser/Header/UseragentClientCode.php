@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -67,7 +67,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             '/pr\((?P<client>ucbrowser)(?:\/[\d.]+)?\);/i',
             '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ (?P<client>firefox)\/[\d.]+ kaios\/[\d.]+/i',
             '/(?P<client>instagram) [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
-            '/(?P<client>virgin%20radio)\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
+            '/(?P<client>virgin radio)\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
             '/(?P<client>tivimate)\/[\d.]+ \([^);\/]+;/i',
             '/(?P<client>pugpigbolt) [\d.]+ \([^);\/,]+, (android|ios) [\d.]+\) on phone \(model [^)]+\)/i',
             '/(?P<client>nrc audio)\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\) okhttp\/[\d.]+/i',
@@ -92,7 +92,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
 
                 return match ($client) {
                     'instagram' => 'instagram app',
-                    'virgin%20radio' => 'virgin-radio',
+                    'virgin radio' => 'virgin-radio',
                     'tivimate' => 'tivimate-app',
                     'pugpigbolt' => 'pugpig-bolt',
                     'nrc audio' => 'nrc-audio',

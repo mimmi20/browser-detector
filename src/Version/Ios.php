@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -20,11 +20,11 @@ use Override;
 use UnexpectedValueException;
 
 use function array_filter;
+use function array_first;
 use function array_key_exists;
 use function array_map;
 use function mb_strtolower;
 use function preg_match;
-use function reset;
 use function str_contains;
 
 final readonly class Ios implements VersionFactoryInterface
@@ -50,7 +50,9 @@ final readonly class Ios implements VersionFactoryInterface
     ];
 
     private const array DARWIN_MAP = [
-        '/darwin\/25/i' => '19.0',
+        '/darwin\/25\.2/i' => '26.2',
+        '/darwin\/25\.1/i' => '26.1',
+        '/darwin\/25/i' => '26.0',
         '/darwin\/24\.6/i' => '18.6',
         '/darwin\/24\.5/i' => '18.5',
         '/darwin\/24\.4/i' => '18.4',
@@ -256,6 +258,75 @@ final readonly class Ios implements VersionFactoryInterface
         '1601.405' => '12.0.1',
         '1602.92' => '12.1',
         '1603.50' => '12.1.1',
+        '1604.39' => '12.1.3',
+        '1604.57' => '12.1.4',
+        '1605.227' => '12.2',
+        '1606.156' => '12.3',
+        '1606.203' => '12.3.1',
+        '1607.77' => '12.4',
+        '1607.102' => '12.4.1',
+        '1607.114' => '12.4.2',
+        '1607.130' => '12.4.3',
+        '1607.140' => '12.4.4',
+        '1607.161' => '12.4.5',
+        '1607.183' => '12.4.6',
+        '1607.192' => '12.4.7',
+        '1607.201' => '12.4.8',
+        '1608.5' => '12.4.9',
+        '1608.20' => '12.5',
+        '1701.577' => '13.0',
+        '1701.844' => '13.1',
+        '1701.854' => '13.1.2',
+        '1702.84' => '13.2',
+        '1702.102' => '13.2.2',
+        '1702.111' => '13.2.3',
+        '1703.54' => '13.3',
+        '1705.255' => '13.4',
+        '1705.262' => '13.4.1',
+        '1706.75' => '13.5',
+        '1706.80' => '13.5.1',
+        '1707.68' => '13.6',
+        '1707.80' => '13.6.1',
+        '1708.35' => '13.7',
+        '1801.373' => '14.0',
+        '1801.393' => '14.0.1',
+        '1801.8395' => '14.1',
+        '1802.92' => '14.2',
+        '1803.66' => '14.3',
+        '1804.52' => '14.4',
+        '1804.61' => '14.4.4',
+        '1804.70' => '14.4.2',
+        '1805.199' => '14.5',
+        '1805.212' => '14.5.1',
+        '1806.72' => '14.6',
+        '1807.69' => '14.7',
+        '1807.82' => '14.7.1',
+        '1808.17' => '14.8',
+        '1901.346' => '15.0',
+        '1901.348' => '15.0.1',
+        '1902.74' => '15.1',
+        '1902.81' => '15.1.1',
+        '1903.63' => '15.2.1',
+        '1904.50' => '15.3',
+        '1904.52' => '15.3.1',
+        '1905.241' => '15.4',
+        '1905.258' => '15.4.1',
+        '1906.77' => '15.5',
+        '1907.71' => '15.6',
+        '1907.82' => '15.6.1',
+        '1908.12' => '15.7',
+        '1908.117' => '15.7.1',
+        '2001.362' => '16.0',
+        '2001.380' => '16.0.2',
+        '2001.392' => '16.1',
+        '2002.82' => '16.1',
+        '2002.101' => '16.1.1',
+        '2002.110' => '16.1.2',
+        '2003.65' => '16.2',
+        '2004.47' => '16.3',
+        '2004.67' => '16.3.1',
+        '2005.247' => '16.4',
+        '2005.252' => '16.4.1',
     ];
 
     /** @throws void */
@@ -285,8 +356,8 @@ final readonly class Ios implements VersionFactoryInterface
         }
 
         $regexes = [
-            '/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+[a-z]?)/i',
-            '/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+[a-z]?)\)/i',
+            '/[aA]pple[cC]ore[mM]edia\/\d+\.\d+\.\d+\.(?P<build>\d{1,2}[A-Z]\d{1,4}[a-z]?)/',
+            '/i[oO][sS]\/\d+[\d\.]+ \((?P<build>\d{1,2}[A-Z]\d{1,4}[a-z]?)\)/',
         ];
 
         $filtered = array_filter(
@@ -305,22 +376,18 @@ final readonly class Ios implements VersionFactoryInterface
             $filtered,
         );
 
-        $detectedBuild = reset($results);
+        $detectedBuild = array_first($results);
 
-        if ($detectedBuild !== null && $detectedBuild !== false && $detectedBuild !== '') {
+        if ($detectedBuild !== null && $detectedBuild !== '') {
             try {
                 $buildVersion = $this->iosBuild->getVersion($detectedBuild);
-            } catch (NotFoundException) {
-                $buildVersion = false;
+
+                return $this->versionBuilder->set($buildVersion);
+            } catch (NotFoundException | NotNumericException) {
+                // do nothing
             }
 
-            if ($buildVersion !== false) {
-                try {
-                    return $this->versionBuilder->set($buildVersion);
-                } catch (NotNumericException) {
-                    return new NullVersion();
-                }
-            }
+            return new NullVersion();
         }
 
         if (
@@ -358,13 +425,9 @@ final readonly class Ios implements VersionFactoryInterface
             $filtered,
         );
 
-        $detectedBuildVersion = reset($results);
+        $detectedBuildVersion = array_first($results);
 
-        if (
-            $detectedBuildVersion !== null
-            && $detectedBuildVersion !== false
-            && $detectedBuildVersion !== ''
-        ) {
+        if ($detectedBuildVersion !== null && $detectedBuildVersion !== '') {
             if (array_key_exists($detectedBuildVersion, self::BUILD_MAP)) {
                 try {
                     return $this->versionBuilder->set(self::BUILD_MAP[$detectedBuildVersion]);

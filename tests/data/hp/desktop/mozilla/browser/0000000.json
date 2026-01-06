@@ -9,52 +9,7 @@
       "marketingName": "9000",
       "manufacturer": "HP",
       "brand": "HP",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "HP-UX",
-      "marketingName": "HP-UX",
-      "version": null,
-      "manufacturer": "HP",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.2.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; HP-UX 9000/778; rv:1.7.3) Gecko/20041007 Firefox/0.10.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "9000",
-      "marketingName": "9000",
-      "manufacturer": "HP",
-      "brand": "HP",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -77,7 +32,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "0.10.1",
+      "version": "1.2.0",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -85,7 +40,7 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "1.7.3",
+      "version": "1.2.0",
       "manufacturer": "Mozilla"
     }
   }

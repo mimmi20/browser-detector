@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -733,8 +733,8 @@ final class Useragent3Test extends TestCase
     {
         return [
             [
-                'ua' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
-                'normalizedUa' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'ua' => 'Virgin Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'normalizedUa' => 'Virgin Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
                 'hasDeviceInfo' => true,
                 'deviceUa' => 'sm-g996b',
                 'deviceCode' => 'A369i',
@@ -747,7 +747,7 @@ final class Useragent3Test extends TestCase
                 'hasPlatformVersion' => true,
                 'platformVersion' => '14.0.0',
                 'hasEngineInfo' => true,
-                'engineUa' => 'Virgin%20Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
+                'engineUa' => 'Virgin Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
                 'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
@@ -808,6 +808,26 @@ final class Useragent3Test extends TestCase
                 'platformVersion' => '12.0.0',
                 'hasEngineInfo' => true,
                 'engineUa' => 'NRC Audio/2.0.0 (nl.nrc.audio; build:29; Android 12; Sdk:31; Manufacturer:samsung; Model: SM-G975F) OkHttp/4.9.3',
+                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'hasEngineVersion' => true,
+                'engineVersion' => '534.31.0',
+            ],
+            [
+                'ua' => 'Classic FM/2.0.0 Android 12/SM-G975F',
+                'normalizedUa' => 'Classic FM/2.0.0 Android 12/SM-G975F',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'sm-g975f',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => 'classic-fm',
+                'hasClientVersion' => true,
+                'clientVersion' => '2.0.0',
+                'hasPlatformInfo' => true,
+                'platformCode' => Os::android,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '12.0.0',
+                'hasEngineInfo' => true,
+                'engineUa' => 'Classic FM/2.0.0 Android 12/SM-G975F',
                 'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',

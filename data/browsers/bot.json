@@ -4609,18 +4609,6 @@
     },
     "engine": "unknown"
   },
-  "naver-adsbot": {
-    "name": "AdsBot Naver",
-    "manufacturer": "nhn-corporation",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AdsBot\\-Naver"
-      ]
-    },
-    "engine": null
-  },
   "naverbot": {
     "name": "NaverBot",
     "manufacturer": "nhn-corporation",
@@ -4696,18 +4684,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetSeer crawler"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "netsurf": {
-    "name": "NetSurf",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "NetSurf"
       ]
     },
     "engine": "unknown"

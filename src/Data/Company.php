@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -1331,6 +1331,146 @@ enum Company: string implements CompanyInterface
 
     case yahooJapan = 'Yahoo!JAPAN';
 
+    case sogou = 'Sogou';
+
+    case haixu = 'Haixu';
+
+    case nasai = 'Nasai';
+
+    case phpGroup = 'PHP Group';
+
+    case bbc = 'BBC';
+
+    case christianDywan = 'Christian Dywan';
+
+    case apache = 'Apache';
+
+    case thomasDickey = 'Thomas Dickey';
+
+    case omniDevelopment = 'Omni Development';
+
+    case phantomJS = 'PhantomJS';
+
+    case markCavage = 'Mark Cavage';
+
+    case wkhtmltopdforg = 'wkhtmltopdf.org';
+
+    case espial = 'Espial';
+
+    case vivaldi = 'Vivaldi';
+
+    case kTouch = 'K-Touch';
+
+    case zopo = 'ZOPO';
+
+    case mastone = 'Mastone';
+
+    case greenOrange = 'Green Orange';
+
+    case nextbook = 'Nextbook';
+
+    case odys = 'Odys';
+
+    case lephone = 'Lephone';
+
+    case maxtron = 'Maxtron';
+
+    case amoi = 'Amoi';
+
+    case voto = 'Voto';
+
+    case provisio = 'Provisio';
+
+    case lunascape = 'Lunascape';
+
+    case crazybrowser = 'CrazyBrowser';
+
+    case avantForce = 'Avant Force';
+
+    case getdownloadWs = 'getdownload.ws';
+
+    case kaylonTechnologies = 'Kaylon Technologies';
+
+    case xavierRoche = 'Xavier Roche';
+
+    case abelssoft = 'Abelssoft';
+
+    case kmeleonbrowserOrg = 'kmeleonbrowser.org';
+
+    case ncsa = 'NCSA';
+
+    case designScience = 'Design Science';
+
+    case deepnetSecurity = 'Deepnet Security';
+
+    case yesLogic = 'YesLogic';
+
+    case fenrir = 'Fenrir';
+
+    case flashpeak = 'FlashPeak';
+
+    case acoobrowser = 'www.acoobrowser.com';
+
+    case morequick = 'morequick';
+
+    case compaq = 'Compaq';
+
+    case osf = 'OSF';
+
+    case sakamotoHironori = 'Sakamoto Hironori';
+
+    case acorn = 'Acorn';
+
+    case perplexity = 'Perplexity';
+
+    case openatomFoundation = 'OpenAtom Foundation';
+
+    case oceanHero = 'OceanHero';
+
+    case eVentures = 'e.ventures';
+
+    case hubspot = 'HubSpot';
+
+    case linspire = 'Linspire';
+
+    case vodafone = 'Vodafone';
+
+    case nexstreaming = 'NexStreaming';
+
+    case qualcomm = 'Qualcomm';
+
+    case comodo = 'Comodo';
+
+    case flock = 'Flock';
+
+    case panasonic = 'Panasonic';
+
+    case logicware = 'LogicWare';
+
+    case pocketbook = 'PocketBook';
+
+    case nuvomondo = 'Nuvomondo';
+
+    case aftvnewsCom = 'AFTVnews.com';
+
+    case cliqz = 'Cliqz';
+
+    case theInternetArchive = 'The Internet Archive';
+
+    case lnmbbs = 'LNMBBS';
+
+    case bose = 'Bose';
+
+    case sonyEricsson = 'SonyEricsson';
+
+    case docomo = 'DoCoMo';
+
+    case nexian = 'Nexian';
+
+    case spice = 'Spice';
+
+    case cosmix = 'Cosmix';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -1479,7 +1619,7 @@ enum Company: string implements CompanyInterface
             'sber' => self::sber,
             'senna' => self::senna,
             'trecfone' => self::trecfone,
-            'the-browser-company', 'the browser company', 'the browser company of new york', 'thebrowser' => self::thebrowser,
+            'the-browser-company', 'the browser company', 'the browser company of new york, inc', 'thebrowser' => self::thebrowser,
             'readdle' => self::readdle,
             'eightloops', 'eightloops gmbh' => self::eightloops,
             'listia', 'listia inc.' => self::listia,
@@ -1994,6 +2134,76 @@ enum Company: string implements CompanyInterface
             'bonprix', 'bonprix handelsgesellschaft mbh' => self::bonprix,
             'spotify', 'spotify ab' => self::spotify,
             'yahoojapan', 'yahoo-japan', 'yahoo!japan' => self::yahooJapan,
+            'sogou', 'sogou inc' => self::sogou,
+            'haixu' => self::haixu,
+            'nasai' => self::nasai,
+            'phpgroup', 'the php group', 'php-group', 'php group' => self::phpGroup,
+            'bbc' => self::bbc,
+            'christiandywan', 'christian-dywan', 'christian dywan' => self::christianDywan,
+            'apache', 'the apache software foundation' => self::apache,
+            'thomasdickey', 'thomas-dickey', 'thomas dickey' => self::thomasDickey,
+            'omnidevelopment', 'omni-development', 'omni development inc', 'omni development' => self::omniDevelopment,
+            'phantomjs', 'phantom-js', 'phantomjs.org' => self::phantomJS,
+            'markcavage', 'mark-cavage', 'mark cavage' => self::markCavage,
+            'wkhtmltopdforg', 'wk-html-to-pdf.org', 'wkhtmltopdf.org' => self::wkhtmltopdforg,
+            'espial', 'espial-group', 'espial group' => self::espial,
+            'vivaldi', 'vivaldi technologies' => self::vivaldi,
+            'ktouch', 'k-touch' => self::kTouch,
+            'zopo' => self::zopo,
+            'mastone' => self::mastone,
+            'greenorange', 'green-orange', 'green orange' => self::greenOrange,
+            'nextbook' => self::nextbook,
+            'odys' => self::odys,
+            'lephone' => self::lephone,
+            'maxtron' => self::maxtron,
+            'amoi' => self::amoi,
+            'voto', 'voto mobile' => self::voto,
+            'provisio', 'provisio gmbh / llc' => self::provisio,
+            'lunascape', 'lunascape corporation' => self::lunascape,
+            'crazybrowser', 'crazybrowser.com', 'crazy-browser' => self::crazybrowser,
+            'avantforce', 'avant force', 'avant-force' => self::avantForce,
+            'getdownloadws', 'getdownload.ws', 'get-download' => self::getdownloadWs,
+            'kaylontechnologies', 'kaylon technologies', 'kaylon-technologies' => self::kaylonTechnologies,
+            'xavierroche', 'xavier roche', 'xavier-roche' => self::xavierRoche,
+            'abelssoft', 'ascora gmbh' => self::abelssoft,
+            'kmeleonbrowserorg', 'kmeleonbrowser.org', 'kmeleon-browser.org' => self::kmeleonbrowserOrg,
+            'ncsa', 'national center for supercomputing applications' => self::ncsa,
+            'designscience', 'design science, inc.', 'design-science', 'design science' => self::designScience,
+            'deepnetsecurity', 'deepnet-security', 'deepnet security' => self::deepnetSecurity,
+            'yeslogic', 'yes-logic', 'yeslogic pty. ltd.' => self::yesLogic,
+            'fenrir', 'fenrir inc' => self::fenrir,
+            'flashpeak', 'flashpeak inc.' => self::flashpeak,
+            'acoobrowser', 'www.acoobrowser.com' => self::acoobrowser,
+            'morequick' => self::morequick,
+            'compaq', 'compaq computer corporation' => self::compaq,
+            'osf', 'open software foundation' => self::osf,
+            'sakamotohironori', 'sakamoto-hironori', 'sakamoto hironori' => self::sakamotoHironori,
+            'acorn' => self::acorn,
+            'perplexity', 'perplexity ai, inc.' => self::perplexity,
+            'openatomfoundation', 'openatom foundation', 'openatom-foundation' => self::openatomFoundation,
+            'oceanhero', 'oceanhero gmbh', 'ocean-hero' => self::oceanHero,
+            'eventures', 'e.ventures managementgesellschaft mbh', 'e.ventures' => self::eVentures,
+            'hubspot', 'hubspot, inc.', 'hubspot-inc' => self::hubspot,
+            'linspire', 'linspire, inc.', 'linspire-inc' => self::linspire,
+            'vodafone' => self::vodafone,
+            'nexstreaming', 'nexstreaming europe s.l.' => self::nexstreaming,
+            'qualcomm', 'qualcomm incorporated.' => self::qualcomm,
+            'comodo', 'comodo group inc' => self::comodo,
+            'flock', 'flock fz-llc' => self::flock,
+            'panasonic' => self::panasonic,
+            'logicware', 'logicware & lsoft technologies' => self::logicware,
+            'pocketbook' => self::pocketbook,
+            'nuvomondo', 'nuvomondo ltd' => self::nuvomondo,
+            'aftvnewscom', 'aftvnews.com' => self::aftvnewsCom,
+            'cliqz', 'cliqz gmbh' => self::cliqz,
+            'theinternetarchive', 'archive.org', 'the internet archive' => self::theInternetArchive,
+            'lnmbbs' => self::lnmbbs,
+            'bose' => self::bose,
+            'sonyericsson', 'sony-ericsson' => self::sonyEricsson,
+            'docomo', 'ntt-docomo', 'ntt docomo' => self::docomo,
+            'nexian' => self::nexian,
+            'spice' => self::spice,
+            'cosmix', 'cosmix corporation' => self::cosmix,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2032,7 +2242,7 @@ enum Company: string implements CompanyInterface
             self::moondrop => 'Chengdu Shuiyueyu Technology Co., Ltd.',
             self::hotPepper => 'Hot Pepper Mobile, Inc.',
             self::vision => 'Vision Technology',
-            self::thebrowser => 'The Browser Company of New York',
+            self::thebrowser => 'The Browser Company of New York, Inc',
             self::eightloops => 'eightloops GmbH',
             self::listia => 'Listia Inc.',
             self::ecosia => 'Ecosia GmbH',
@@ -2199,6 +2409,39 @@ enum Company: string implements CompanyInterface
             self::roblox => 'Roblox Corporation',
             self::bonprix => 'bonprix Handelsgesellschaft mbH',
             self::spotify => 'Spotify AB',
+            self::sogou => 'Sogou Inc',
+            self::phpGroup => 'the PHP Group',
+            self::apache => 'The Apache Software Foundation',
+            self::omniDevelopment => 'Omni Development Inc',
+            self::phantomJS => 'phantomjs.org',
+            self::espial => 'Espial Group',
+            self::vivaldi => 'Vivaldi Technologies',
+            self::voto => 'Voto Mobile',
+            self::provisio => 'PROVISIO GmbH / LLC',
+            self::lunascape => 'Lunascape Corporation',
+            self::crazybrowser => 'CrazyBrowser.com',
+            self::abelssoft => 'Ascora GmbH',
+            self::ncsa => 'National Center for Supercomputing Applications',
+            self::designScience => 'Design Science, Inc.',
+            self::yesLogic => 'YesLogic Pty. Ltd.',
+            self::fenrir => 'Fenrir Inc',
+            self::flashpeak => 'FlashPeak Inc.',
+            self::compaq => 'Compaq Computer Corporation',
+            self::osf => 'Open Software Foundation',
+            self::perplexity => 'Perplexity AI, Inc.',
+            self::oceanHero => 'OceanHero GmbH',
+            self::eVentures => 'e.ventures Managementgesellschaft mbH',
+            self::hubspot => 'HubSpot, Inc.',
+            self::linspire => 'Linspire, Inc.',
+            self::nexstreaming => 'NexStreaming Europe S.L.',
+            self::qualcomm => 'Qualcomm Incorporated.',
+            self::comodo => 'Comodo Group Inc',
+            self::flock => 'Flock FZ-LLC',
+            self::logicware => 'LogicWare & LSoft Technologies',
+            self::nuvomondo => 'Nuvomondo Ltd',
+            self::cliqz => 'Cliqz GmbH',
+            self::docomo => 'NTT DoCoMo',
+            self::cosmix => 'Cosmix Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -2389,6 +2632,36 @@ enum Company: string implements CompanyInterface
             self::browserWorks => 'browser-works',
             self::paloAltoNetworks => 'palo-alto',
             self::yahooJapan => 'yahoo-japan',
+            self::phpGroup => 'php-group',
+            self::christianDywan => 'christian-dywan',
+            self::thomasDickey => 'thomas-dickey',
+            self::omniDevelopment => 'omni-development',
+            self::phantomJS => 'phantom-js',
+            self::markCavage => 'mark-cavage',
+            self::wkhtmltopdforg => 'wk-html-to-pdf.org',
+            self::espial => 'espial-group',
+            self::kTouch => 'k-touch',
+            self::greenOrange => 'green-orange',
+            self::crazybrowser => 'crazy-browser',
+            self::avantForce => 'avant-force',
+            self::getdownloadWs => 'get-download',
+            self::kaylonTechnologies => 'kaylon-technologies',
+            self::xavierRoche => 'xavier-roche',
+            self::kmeleonbrowserOrg => 'kmeleon-browser.org',
+            self::designScience => 'design-science',
+            self::deepnetSecurity => 'deepnet-security',
+            self::yesLogic => 'yes-logic',
+            self::acoobrowser => 'www.acoobrowser.com',
+            self::sakamotoHironori => 'sakamoto-hironori',
+            self::openatomFoundation => 'openatom-foundation',
+            self::oceanHero => 'ocean-hero',
+            self::eVentures => 'e.ventures',
+            self::hubspot => 'hubspot-inc',
+            self::linspire => 'linspire-inc',
+            self::aftvnewsCom => 'aftvnews.com',
+            self::theInternetArchive => 'archive.org',
+            self::sonyEricsson => 'sony-ericsson',
+            self::docomo => 'ntt-docomo',
             default => $this->name,
         };
     }

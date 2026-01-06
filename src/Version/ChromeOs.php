@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -36,21 +36,11 @@ final readonly class ChromeOs implements VersionFactoryInterface
     {
         if (
             preg_match(
-                '/(?:CrOS [a-z0-9_]+|Windows aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(?P<version>\d+[\d\.]+)/',
+                '/(?:CrOS [a-z0-9_]+ |.*Build\/R\d+-)(?P<version>\d+[\d.]+)/',
                 $useragent,
-                $firstMatches,
+                $secondMatches,
             )
         ) {
-            try {
-                return $this->versionBuilder->set($firstMatches['version']);
-            } catch (NotNumericException) {
-                // nothing to do
-            }
-
-            return new NullVersion();
-        }
-
-        if (preg_match('/CrOS [a-z0-9_]+ (?P<version>\d+[\d\.]+)/', $useragent, $secondMatches)) {
             try {
                 return $this->versionBuilder->set($secondMatches['version']);
             } catch (NotNumericException) {

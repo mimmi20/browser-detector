@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -135,6 +135,8 @@ final class DeviceTest extends TestCase
             ['M10-12_EEA', 'acer=acer m10-12_eea'],
             ['A10-21_EEA', 'acer=acer a10-21_eea'],
             ['A410_4G', 'acer=acer a410_4g'],
+            ['Chromebook 14 (CB3-431)', 'acer=acer chromebook 14'],
+            ['Chromebook 14 (CB3-431', 'acer=acer chromebook 14'],
             // AllCall
             ['Atom', 'allcall=allcall atom'],
             ['HERO_20_PRO', 'allcall=allcall hero 20 pro'],
@@ -223,6 +225,9 @@ final class DeviceTest extends TestCase
             ['ZE620KL', 'asus=asus ze620kl'],
             ['ZF620KL', 'asus=asus zf620kl'],
             ['ASUS_X00QDA', 'asus=asus x00qda'],
+            ['ASUS Chromebook Flip C100PA', 'asus=asus chromebook flip c100pa'],
+            ['MeMO Pad FHD 10 LTE', 'asus=asus memo pad fhd 10 lte'],
+            ['AOSP on Duma', 'asus=asus memo pad fhd 10 lte'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
             ['Pixel 7 Pro', 'google=google pixel 7 pro'],
@@ -232,21 +237,26 @@ final class DeviceTest extends TestCase
             ['Pixel 6a', 'google=google pixel 6a'],
             ['Pixel 4a (5G)', 'google=google pixel 4a 5g'],
             ['Pixel 4a (5G', 'google=google pixel 4a 5g'],
+            ['AOSP on bramble', 'google=google pixel 4a 5g'],
             ['Pixel 7', 'google=google pixel 7'],
             ['Pixel 3a', 'google=google pixel 3a'],
             ['Pixel 3', 'google=google pixel 3'],
+            ['AOSP on blueline', 'google=google pixel 3'],
             ['Pixel 5', 'google=google pixel 5'],
             ['Pixel 7a', 'google=google pixel 7a'],
             ['Pixel 4', 'google=google pixel 4'],
             ['Pixel 8', 'google=google pixel 8'],
             ['kukui', 'google=google kukui'],
             ['Nexus 5', 'google=google nexus 5'],
+            ['AOSP on HammerHead', 'google=google nexus 5'],
             ['Pixel 4a', 'google=google pixel 4a'],
+            ['AOSP on sunfish', 'google=google pixel 4a'],
             ['Pixel 9 Pro XL', 'google=google pixel 9 pro xl'],
             ['Pixel 8a', 'google=google pixel 8a'],
             ['Pixel 9 Pro Fold', 'google=google pixel 9 pro fold'],
             ['Pixel 8 Pro', 'google=google pixel 8 pro'],
             ['Pixel 2 XL', 'google=google pixel 2 xl'],
+            ['AOSP on taimen', 'google=google pixel 2 xl'],
             ['Pixel 3a XL', 'google=google pixel 3a xl'],
             ['Pixel 5a', 'google=google pixel 5a'],
             ['Pixel 3 XL', 'google=google pixel 3 xl'],
@@ -333,6 +343,8 @@ final class DeviceTest extends TestCase
             ['G3Y12', 'google=google g3y12'],
             ['Chromecast', 'google=google chromecast'],
             ['Chromecast HD', 'google=google chromecast hd'],
+            ['Nexus 10', 'google=google nexus 10'],
+            ['AOSP on Manta', 'google=google nexus 10'],
             // OnePlus
             ['AC2003', 'oneplus=oneplus ac2003'],
             ['IN2023', 'oneplus=oneplus in2023'],
@@ -723,6 +735,7 @@ final class DeviceTest extends TestCase
             ['23117RA68G', 'xiaomi=xiaomi 23117ra68g'],
             ['23013PC75G', 'xiaomi=xiaomi 23013pc75g'],
             ['23046RP50C', 'xiaomi=xiaomi 23046rp50c'],
+            ['Redmi Note 13 5G', 'xiaomi=xiaomi redmi note 13 5g'],
             ['2312DRAABG', 'xiaomi=xiaomi 2312draabg'],
             ['23127PN0CG', 'xiaomi=xiaomi 23127pn0cg'],
             ['22031116BG', 'xiaomi=xiaomi 22031116bg'],
@@ -730,6 +743,7 @@ final class DeviceTest extends TestCase
             ['23124RA7EO', 'xiaomi=xiaomi 23124ra7eo'],
             ['23106RN0DA', 'xiaomi=xiaomi 23106rn0da'],
             ['23090RA98G', 'xiaomi=xiaomi 23090ra98g'],
+            ['Redmi Note 13 Pro+ 5G', 'xiaomi=xiaomi redmi note 13 pro+ 5g'],
             ['24053PY09I', 'xiaomi=xiaomi 24053py09i'],
             ['24044RN32L', 'xiaomi=xiaomi 24044rn32l'],
             ['24048RN6CI', 'xiaomi=xiaomi 24048rn6ci'],
@@ -752,6 +766,7 @@ final class DeviceTest extends TestCase
             ['MI A1', 'xiaomi=xiaomi mi a1'],
             ['22101316G', 'xiaomi=xiaomi 22101316g'],
             ['Redmi 6A', 'xiaomi=xiaomi redmi 6a'],
+            ['Redmi Note 12 5G', 'xiaomi=xiaomi redmi note 12 5g'],
             ['22111317G', 'xiaomi=xiaomi 22111317g'],
             ['22041216G', 'xiaomi=xiaomi 22041216g'],
             ['23078PND5G', 'xiaomi=xiaomi 23078pnd5g'],
@@ -897,6 +912,7 @@ final class DeviceTest extends TestCase
             ['23122PCD1G', 'xiaomi=xiaomi 23122pcd1g'],
             ['XIG04', 'xiaomi=xiaomi xig04'],
             ['2306EPN60R', 'xiaomi=xiaomi 2306epn60r'],
+            ['Redmi Note 13 Pro 5G', 'xiaomi=xiaomi redmi note 13 pro 5g'],
             ['2312DRA50C', 'xiaomi=xiaomi 2312dra50c'],
             ['XIG05', 'xiaomi=xiaomi xig05'],
             ['2312CRAD3C', 'xiaomi=xiaomi 2312crad3c'],
@@ -1854,6 +1870,7 @@ final class DeviceTest extends TestCase
             ['SM-G920I', 'samsung=samsung sm-g920i'],
             ['SM-G531F', 'samsung=samsung sm-g531f'],
             ['SM-P605', 'samsung=samsung sm-p605'],
+            ['AOSP on lt03lte', 'samsung=samsung sm-p605'],
             ['SM-E700F', 'samsung=samsung sm-e700f'],
             ['SM-G970U', 'samsung=samsung sm-g970u'],
             ['SM-A7050', 'samsung=samsung sm-a7050'],
@@ -2916,6 +2933,11 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-E066B', 'samsung=samsung sm-e066b'],
             ['SM-A366N', 'samsung=samsung sm-a366n'],
             ['SAMSUNG SM-A366N', 'samsung=samsung sm-a366n'],
+            ['SM-R900', 'samsung=samsung sm-r900'],
+            ['SAMSUNG SM-R900', 'samsung=samsung sm-r900'],
+            ['AOSP on Santos103G', 'samsung=samsung gt-p5200'],
+            ['GT-P5200', 'samsung=samsung gt-p5200'],
+            ['SAMSUNG GT-P5200', 'samsung=samsung gt-p5200'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3589,6 +3611,7 @@ final class DeviceTest extends TestCase
             ['TB138FC', 'lenovo=lenovo tb138fc'],
             ['Lenovo TB138FC', 'lenovo=lenovo tb138fc'],
             ['XiaoXin Pad 2022', 'lenovo=lenovo xiaoxin pad 2022'],
+            ['Lenovo N23 Yoga/Flex 11 Chromebook', 'lenovo=lenovo n23 yoga/flex 11 chromebook'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -4010,6 +4033,7 @@ final class DeviceTest extends TestCase
             ['XQ-BC52', 'sony=sony xq-bc52'],
             ['XQ-AU52', 'sony=sony xq-au52'],
             ['I4312', 'sony=sony i4312'],
+            ['Xperia X Compact', 'sony=sony xperia x compact'],
             ['F5321', 'sony=sony f5321'],
             ['J9210', 'sony=sony j9210'],
             ['H3113', 'sony=sony h3113'],
@@ -4162,6 +4186,8 @@ final class DeviceTest extends TestCase
             ['SOG02', 'sony=sony sog02'],
             ['SOG06', 'sony=sony sog06'],
             ['SOG12', 'sony=sony sog12'],
+            ['Xperia E3 (AOSP)', 'sony=sony xperia e3'],
+            ['Xperia E3 (AOSP', 'sony=sony xperia e3'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -4930,6 +4956,7 @@ final class DeviceTest extends TestCase
             ['U616AT', 'wiko=wiko u616at'],
             ['JLG-AN00', 'wiko=wiko jlg-an00'],
             ['SHR-AN00', 'wiko=wiko shr-an00'],
+            ['Aix-AN00', 'wiko=wiko aix-an00'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
             ['Razer Edge 5G', 'razer=razer edge 5g'],
@@ -7875,6 +7902,13 @@ final class DeviceTest extends TestCase
             ['PAD10_PRO', 'g-tab=g-tab pad10_pro'],
             // polestar
             ['Polestar Phone', 'polestar=polestar phone'],
+            // haixu
+            ['Haixu V11', 'haixu=haixu v11'],
+            // hp
+            ['HP Chromebook x360 11 G1 EE', 'hp=hp chromebook x360 11 g1 ee'],
+            ['HP Chromebook x2', 'hp=hp chromebook x2'],
+            // lnmbbs
+            ['P40-EEA', 'lnmbbs=lnmbbs p40-eea'],
             // other
             ['Model"', null],
             [': "', null],

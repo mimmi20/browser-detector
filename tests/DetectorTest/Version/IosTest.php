@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -122,7 +122,7 @@ final class IosTest extends TestCase
             ],
             [
                 'AppleCoreMedia/1.0.0.1X7 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',
-                '8.2.0',
+                null,
             ],
             [
                 'Outlook-iOS/711.2620504.prod.iphone (3.34.0)',
@@ -206,11 +206,19 @@ final class IosTest extends TestCase
             ],
             [
                 'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/25.0.0',
-                '19.0.0',
+                '26.0.0',
             ],
             [
                 'Darwin/24.5.0 (Watch7,11; watchOS 11.4) MatomoTrackerSDK/7.7.0',
                 '11.4.0',
+            ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/25.1.0',
+                '26.1.0',
+            ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/25.2.0',
+                '26.2.0',
             ],
         ];
     }
@@ -226,23 +234,10 @@ final class IosTest extends TestCase
         $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
         $exception = new NotFoundException('not found');
 
-        $version = $this->createMock(VersionInterface::class);
-        $version
-            ->expects(self::exactly(2))
-            ->method('getVersion')
-            ->willReturnMap(
-                [
-                    [VersionInterface::IGNORE_MICRO, null],
-                    [VersionInterface::IGNORE_MINOR, null],
-                ],
-            );
-
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
-            ->expects(self::once())
-            ->method('detectVersion')
-            ->with($useragent, Ios::SEARCHES)
-            ->willReturn($version);
+            ->expects(self::never())
+            ->method('detectVersion');
         $versionBuilder
             ->expects(self::never())
             ->method('set');
@@ -259,7 +254,7 @@ final class IosTest extends TestCase
         $detectedVersion = $object->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($version, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
     /**
@@ -530,10 +525,8 @@ final class IosTest extends TestCase
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
-            ->expects(self::once())
-            ->method('detectVersion')
-            ->with($useragent, Ios::SEARCHES)
-            ->willReturn(new NullVersion());
+            ->expects(self::never())
+            ->method('detectVersion');
         $versionBuilder
             ->expects(self::never())
             ->method('set');

@@ -51,9 +51,9 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "WordPress",
         "WordPress\\-B\\-",
-        "WordPress\\-Do\\-P\\-"
+        "WordPress\\-Do\\-P\\-",
+        "WordPress"
       ]
     },
     "engine": "unknown"
@@ -100,8 +100,8 @@
     },
     "engine": "unknown"
   },
-  "networking-extension": {
-    "name": "NetworkingExtension",
+  "widgetkit-extension": {
+    "name": "WidgetKitExtension",
     "manufacturer": "apple",
     "type": "service-agent",
     "version": {
@@ -110,13 +110,15 @@
     },
     "engine": null
   },
-  "widgetkit-extension": {
-    "name": "WidgetKitExtension",
-    "manufacturer": "apple",
+  "apache-server": {
+    "name": "Apache",
+    "manufacturer": "apache",
     "type": "service-agent",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Apache"
+      ]
     },
     "engine": null
   }

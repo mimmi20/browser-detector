@@ -31,7 +31,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SeaMonkey",
-        "Seamonkey"
+        "Seamonkey",
+        "Iceape"
       ]
     },
     "engine": "gecko"
@@ -47,18 +48,6 @@
       ]
     },
     "engine": null
-  },
-  "iceape": {
-    "name": "Iceape",
-    "manufacturer": "software-in-the-public-interest",
-    "type": "pim",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Iceape"
-      ]
-    },
-    "engine": "gecko"
   },
   "mailspring": {
     "name": "Mailspring",
@@ -80,7 +69,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "microsoft office outlook",
-        "microsoft outlook"
+        "microsoft outlook",
+        "Outlook"
       ]
     },
     "engine": null
@@ -103,8 +93,10 @@
     "manufacturer": "apple",
     "type": "pim",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mail"
+      ]
     },
     "engine": "webkit"
   },
@@ -196,5 +188,18 @@
       ]
     },
     "engine": null
+  },
+  "lotus notes": {
+    "name": "Lotus Notes",
+    "manufacturer": "ibm",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LotusNotes",
+        "Lotus\\-Notes"
+      ]
+    },
+    "engine": "unknown"
   }
 }

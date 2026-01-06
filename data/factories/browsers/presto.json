@@ -3,7 +3,7 @@
     "/sonycebrowser/i": "sonycebrowser",
     "/inettvbrowser/i": "inettvbrowser",
     "/ucweb.*opera mini/i": "ucbrowser",
-    "/opera mini/i": "opera mini",
+    "/opera ?mini/i": "opera mini",
     "/opera mobi|(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr\\/)|(?:opera|opr\\/).*(?:android|mtk|maui|samsung|windows ce|symbos)/i": "opera mobile",
     "/microb|maemo ?browser|tablet browser/i": "microb"
   },

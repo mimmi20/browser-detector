@@ -5,6 +5,51 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "PowerMac",
+      "marketingName": "PowerMac",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Links",
+      "modus": null,
+      "version": "0.98.0",
+      "manufacturer": "Mikulas Patocka",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Links (0.99; Darwin 10.7.0 i386; 236x64)"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "Macintosh",
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
@@ -23,23 +68,23 @@
       "bits": null
     },
     "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
-      "version": "6.0.0",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Links",
       "modus": null,
-      "version": "0.98.0",
+      "version": "0.99.0",
       "manufacturer": "Mikulas Patocka",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }

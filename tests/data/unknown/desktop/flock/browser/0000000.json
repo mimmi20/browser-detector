@@ -33,7 +33,7 @@
       "name": "Flock",
       "modus": null,
       "version": "2.5.6",
-      "manufacturer": "flock",
+      "manufacturer": "Flock",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -42,51 +42,6 @@
       "name": "Gecko",
       "version": "1.9.0.16",
       "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Flock/3.5.2.4599 Chrome/7.0.517.442 Safari/534.7"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Flock",
-      "modus": null,
-      "version": "3.5.2.4599",
-      "manufacturer": "flock",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.7.0",
-      "manufacturer": "Apple"
     }
   },
   {
@@ -123,7 +78,7 @@
       "name": "Flock",
       "modus": null,
       "version": "1.2.6",
-      "manufacturer": "flock",
+      "manufacturer": "Flock",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -168,7 +123,7 @@
       "name": "Flock",
       "modus": null,
       "version": "0.7.0.99",
-      "manufacturer": "flock",
+      "manufacturer": "Flock",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -181,12 +136,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Win 9x 4.90; en-US; rv:1.8.1.17; nse) Gecko/20080915 Firefox/2.0.0.17 Flock/1.2.6"
+      "user-agent": "Flock/16.17 (FreeBSD 7.6; nl_NL;)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
@@ -203,25 +158,160 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
-      "marketingName": "Windows ME",
-      "version": null,
-      "manufacturer": "Microsoft",
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "7.6.0",
+      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {
       "name": "Flock",
       "modus": null,
-      "version": "1.2.6",
-      "manufacturer": "flock",
+      "version": "16.17.0",
+      "manufacturer": "Flock",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "Gecko",
-      "version": "1.8.1.17",
-      "manufacturer": "Mozilla"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Flock/8.9 (Debian Linux 2.4; ar_SD;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian",
+      "marketingName": "Debian",
+      "version": "2.4.0",
+      "manufacturer": "Software in the Public Interest",
+      "bits": null
+    },
+    "client": {
+      "name": "Flock",
+      "modus": null,
+      "version": "8.9.0",
+      "manufacturer": "Flock",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Flock/10.20 (Ubuntu 4.0; ca;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": "4.0.0",
+      "manufacturer": "Canonical",
+      "bits": null
+    },
+    "client": {
+      "name": "Flock",
+      "modus": null,
+      "version": "10.20.0",
+      "manufacturer": "Flock",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Flock/16.12 (Ark Linux 1.5; ar_MA;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ark Linux",
+      "marketingName": "Ark Linux",
+      "version": "1.5.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Flock",
+      "modus": null,
+      "version": "16.12.0",
+      "manufacturer": "Flock",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
     }
   }
 ]

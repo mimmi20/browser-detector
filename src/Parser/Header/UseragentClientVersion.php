@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -72,7 +72,7 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
             '/pr\([^\/]+\/(?P<version>[\d.]+)\);/i',
             '/instagram (?P<version>[\d.]+) android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/(?P<version>[\d.]+) kaios\/[\d.]+/i',
-            '/virgin%20radio\\/(?P<version>[\d.]+) \\/ \\(linux; android [\d.]+\\) exoplayerlib\\/[\d.]+ \\/ samsung \\(/i',
+            '/virgin radio\\/(?P<version>[\d.]+) \\/ \\(linux; android [\d.]+\\) exoplayerlib\\/[\d.]+ \\/ samsung \\(/i',
             '/tivimate\/(?P<version>[\d.]+) \([^);\/]+;/i',
             '/pugpigbolt (?P<version>[\d.]+) \\([^);\/,]+, (android|ios) [\d.]+\\) on phone \\(model [^)]+\\)/i',
             '/nrc audio\\/(?P<version>[\d.]+) \\(nl\\.nrc\\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\\) okhttp\\/[\d.]+/i',

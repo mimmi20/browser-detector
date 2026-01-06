@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,6 +25,9 @@ use const ARRAY_FILTER_USE_KEY;
 final readonly class FireOs
 {
     private const array VERSION_MAP = [
+        '14' => '14',
+        '13' => '14',
+        '12' => '14',
         '11' => '8',
         '10' => '8',
         '9' => '7',

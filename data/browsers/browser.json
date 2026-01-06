@@ -89,7 +89,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "360%20Browser",
+        "360 Browser",
         "360 Aphone Browser \\("
       ]
     },
@@ -381,7 +381,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Avast",
-        "AvastSecureBrowser"
+        "AvastSecureBrowser",
+        "Avast Secure Browser"
       ]
     },
     "engine": null
@@ -463,6 +464,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "FlyFlow\\-",
+        "FlyFlow",
         "bdbrowser_i18n",
         "bdbrowser",
         "baidubrowser"
@@ -840,6 +843,18 @@
     },
     "engine": null
   },
+  "raspbian-chromium": {
+    "name": "Raspbian Chromium",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Raspbian Chromium"
+      ]
+    },
+    "engine": null
+  },
   "classilla": {
     "name": "Classilla",
     "manufacturer": "unknown",
@@ -1004,16 +1019,6 @@
     },
     "engine": "webkit"
   },
-  "darwin browser": {
-    "name": "Darwin Browser",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
   "deepnet explorer": {
     "name": "Deepnet Explorer",
     "manufacturer": "deepnet-security",
@@ -1090,7 +1095,7 @@
         "Dolphin"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "dolfin-zero": {
     "name": "Dolphin Zero",
@@ -1126,7 +1131,7 @@
         "Chrome"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "dt-browser": {
     "name": "DT Browser",
@@ -1278,7 +1283,7 @@
     "engine": "unknown"
   },
   "epiphany": {
-    "name": "Epiphany",
+    "name": "GNOME Web",
     "manufacturer": "the-gnome-project",
     "type": "browser",
     "version": {
@@ -1299,22 +1304,11 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Espial"
+        "Espial",
+        "Escape"
       ]
     },
     "engine": "webkit"
-  },
-  "eudora": {
-    "name": "Eudora",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Eudora"
-      ]
-    },
-    "engine": "gecko"
   },
   "eui browser": {
     "name": "eUI Browser",
@@ -1490,7 +1484,7 @@
         "Flock"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "fluid": {
     "name": "Fluid",
@@ -1501,19 +1495,6 @@
       "search": [
         "FluidApp",
         "Fluid"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "flyflow": {
-    "name": "FlyFlow",
-    "manufacturer": "baidu",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "FlyFlow",
-        "FlyFlow\\-"
       ]
     },
     "engine": "webkit"
@@ -2087,7 +2068,7 @@
     "engine": "webkit"
   },
   "kindle": {
-    "name": "Kindle",
+    "name": "Kindle Browser",
     "manufacturer": "amazon",
     "type": "browser",
     "version": {
@@ -2234,7 +2215,7 @@
     "engine": "unknown"
   },
   "lolifox": {
-    "name": "lolifox",
+    "name": "Lolifox",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -2336,7 +2317,7 @@
       "factory": "\\BrowserDetector\\Version\\MaxthonFactory",
       "search": null
     },
-    "engine": null
+    "engine": "webkit"
   },
   "maxthon nitro": {
     "name": "Maxthon Nitro",
@@ -2545,18 +2526,6 @@
     },
     "engine": "gecko"
   },
-  "mozilla": {
-    "name": "Mozilla",
-    "manufacturer": "mozilla-foundation",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Mozilla"
-      ]
-    },
-    "engine": "gecko"
-  },
   "multizilla": {
     "name": "MultiZilla",
     "manufacturer": "unknown",
@@ -2603,6 +2572,18 @@
     },
     "engine": null
   },
+  "mozilla": {
+    "name": "Mozilla Application Suite",
+    "manufacturer": "mozilla-foundation",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mozilla"
+      ]
+    },
+    "engine": "gecko"
+  },
   "netscape navigator": {
     "name": "Navigator",
     "manufacturer": "netscape",
@@ -2611,6 +2592,20 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Navigator"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "netscape": {
+    "name": "Netscape",
+    "manufacturer": "netscape",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Netscape7",
+        "Netscape6",
+        "Netscape"
       ]
     },
     "engine": "gecko"
@@ -2687,20 +2682,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "netscape": {
-    "name": "Netscape",
-    "manufacturer": "netscape",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Netscape7",
-        "Netscape6",
-        "Netscape"
-      ]
-    },
-    "engine": "gecko"
   },
   "nettv": {
     "name": "NetTV",
@@ -2999,7 +2980,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "OPT"
+        "OPT",
+        "Opera Touch"
       ]
     },
     "engine": null
@@ -3148,18 +3130,6 @@
     },
     "engine": "webkit"
   },
-  "phantomjs": {
-    "name": "PhantomJS",
-    "manufacturer": "phantom-js",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PhantomJS"
-      ]
-    },
-    "engine": "webkit"
-  },
   "philips": {
     "name": "Philips",
     "manufacturer": "philips",
@@ -3302,7 +3272,7 @@
     "engine": null
   },
   "qqbrowser mini": {
-    "name": "QQbrowser Mini",
+    "name": "QQ Browser Mini",
     "manufacturer": "tencent",
     "type": "browser",
     "version": {
@@ -3493,7 +3463,7 @@
     "engine": null
   },
   "rekonq": {
-    "name": "rekonq",
+    "name": "Rekonq",
     "manufacturer": "kde",
     "type": "browser",
     "version": {
@@ -3538,6 +3508,16 @@
       "search": null
     },
     "engine": "webkit"
+  },
+  "safari technology preview": {
+    "name": "Safari Technology Preview",
+    "manufacturer": "apple",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\SafariFactory",
+      "search": null
+    },
+    "engine": null
   },
   "bitdefender safepay": {
     "name": "Safepay",
@@ -3876,7 +3856,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Spector",
-        "Spector%20Pro"
+        "Spector Pro"
       ]
     },
     "engine": "webkit"
@@ -4050,7 +4030,7 @@
     "engine": null
   },
   "teleca-obigo": {
-    "name": "Teleca-Obigo",
+    "name": "Obigo",
     "manufacturer": "obigo",
     "type": "browser",
     "version": {
@@ -4072,13 +4052,15 @@
     "manufacturer": "cameron-kaiser",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TenFourFox"
+      ]
     },
     "engine": "gecko"
   },
   "tenta": {
-    "name": "Tenta",
+    "name": "Tenta Browser",
     "manufacturer": "tenta",
     "type": "browser",
     "version": {
@@ -4262,14 +4244,40 @@
     },
     "engine": "blink"
   },
-  "vmsmosaic": {
-    "name": "VmsMosaic",
+  "vms-mosaic": {
+    "name": "VMS Mosaic",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "VmsMosaic"
+        "VmsMosaic",
+        "VMS_Mosaic"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ncsa-mosaic": {
+    "name": "Mosaic",
+    "manufacturer": "ncsa",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NCSA_Mosaic",
+        "NCSA Mosaic"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "m-mosaic": {
+    "name": "mMosaic",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "mMosaic"
       ]
     },
     "engine": "unknown"
@@ -4375,7 +4383,7 @@
     "engine": "gecko"
   },
   "webpositive": {
-    "name": "Webpositive",
+    "name": "WebPositive",
     "manufacturer": "haiku",
     "type": "browser",
     "version": {
@@ -4586,7 +4594,6 @@
       "search": [
         "Ghostery",
         "Ghostery:",
-        "Ghostery%20Dawn",
         "Ghostery Dawn"
       ]
     },
@@ -4987,8 +4994,10 @@
     "manufacturer": "cliqz",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cliqz"
+      ]
     },
     "engine": null
   },
@@ -5160,6 +5169,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ADG"
+      ]
+    },
+    "engine": null
+  },
+  "aol explorer": {
+    "name": "AOL Explorer",
+    "manufacturer": "aol",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AOL"
       ]
     },
     "engine": null
@@ -5555,7 +5576,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OperaCoast",
-        "Opera%20Coast",
+        "Opera Coast",
         "Coast"
       ]
     },
@@ -5639,6 +5660,142 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Internet ScreenBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "acorn-browse": {
+    "name": "Browse",
+    "manufacturer": "acorn",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Acorn Browse"
+      ]
+    },
+    "engine": null
+  },
+  "acorn-phoenix": {
+    "name": "Phoenix",
+    "manufacturer": "acorn",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Acorn Phoenix"
+      ]
+    },
+    "engine": null
+  },
+  "harmony-360-browser": {
+    "name": "Harmony 360 Browser",
+    "manufacturer": "huawei",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "harmony360Browser"
+      ]
+    },
+    "engine": "arkweb"
+  },
+  "arc-search": {
+    "name": "Arc Search",
+    "manufacturer": "the-browser-company",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "oceanhero-browser": {
+    "name": "OceanHero Browser",
+    "manufacturer": "ocean-hero",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OceanHero"
+      ]
+    },
+    "engine": null
+  },
+  "netsurf": {
+    "name": "NetSurf",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetSurf"
+      ]
+    },
+    "engine": "netsurf"
+  },
+  "inet-browser": {
+    "name": "iNet Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iNet Browser"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "eudora-web": {
+    "name": "EudoraWeb",
+    "manufacturer": "qualcomm",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EudoraWeb"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "puffin-cloud-browser": {
+    "name": "Puffin Cloud Browser",
+    "manufacturer": "cloud-mosa",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\PuffinFactory",
+      "search": null
+    },
+    "engine": null
+  },
+  "firefox-reality": {
+    "name": "Firefox Reality",
+    "manufacturer": "mozilla-foundation",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "pocketbook-browser": {
+    "name": "PocketBook Browser",
+    "manufacturer": "pocketbook",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "docomo-browser": {
+    "name": "DoCoMo Browser",
+    "manufacturer": "pocketbook",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DoCoMo"
       ]
     },
     "engine": null

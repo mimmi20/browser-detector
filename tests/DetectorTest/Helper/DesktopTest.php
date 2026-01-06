@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -102,6 +102,29 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (compatible; U; Webpositive/533.4; Haiku) AppleWebkit/533.4 (KHTML, like gecko) Chrome/5.0.375.55 Safari/533.4'],
             ['Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; MDDCJS; rv:11.0) like Gecko'],
             ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.141 CitizenFX/1.0.0.6556 Safari/537.36'],
+            ['Mozilla/5.0 (compatible; U; ABrowse 0.6; Syllable) AppleWebKit/420+ (KHTML, like Gecko)'],
+            ['Wget/1.11.4 Red Hat modified'],
+            ['mozilla/5.0 (compatible; fedora core 3) fc3 gnome'],
+            ['AmigaVoyager/3.4.4 (MorphOS/PPC native)'],
+            ['Mozilla/5.0 (X11; U; DragonFly i386; de; rv:1.9.1b2) Gecko/20081201 Firefox/3.1b2'],
+            ['Mozilla/5.0 (X11; U; Gentoo x86_64; de-DE) Firefox/26.0'],
+            ['Mozilla/4.08 (Charon; Inferno)'],
+            ['Mozilla/5.0 (compatible; Odyssey Web Browser; AROS; rv:1.16) AppleWebKit/535.14 (KHTML, like Gecko) OWB/1.16 Safari/535.14'],
+            ['Mozilla/5.0 (PC; OpenHarmony 5.0; HarmonyOS 5.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Browser/harmony360Browser/1.0.0'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Slackware)'],
+            ['Mozilla/1.1I (X11; I; NEWS-OS 6.1.1 news5000)'],
+            ['Mozilla/5.0 (X11; U; GENIX 4.1 MG-200/NS32332; en-US; rv:4.7.1.1) Gecko/20080815 SeaMonkey/1.2.3'],
+            ['Links (2.8; ULTRIX 4.5 VAX; GNU C 1; text)'],
+            ['Mozilla/6.0 (Future Star Technologies Corp. Star-Blade OS; U; en-US) iNet Browser 2.5'],
+            ['Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/527+ (KHTML, like Gecko) Bolt/0.862 Version/3.0 Safari/523.15'],
+            ['Mozilla/5.0 (PPC; rv:9.0) Gecko/20090818 Firefox/9.0'],
+            ['ELinks/0.11.4-3maemo0 (textmode; Debian; Linux 2.6.28.10power46 armv7l; -)'],
+            ['Mozilla/4.75 [en] (X11; U; BSD/OS 4.0.1 i386)'],
+            ['Mozilla/5.0 (compatible; Konqueror/3.0.1 (CVS >= 20020327); Linux) Linspire (Lindows, Inc.)'],
+            ['Linspire Internet Suite'],
+            ['IBrowse 2.4 (AmigaOS 4.5)'],
+            ['Mozilla/4.0 (compatible; Voyager; AmigaOS)'],
+            ['Klondike/1.70 (HTTP PPC3)'],
         ];
     }
 

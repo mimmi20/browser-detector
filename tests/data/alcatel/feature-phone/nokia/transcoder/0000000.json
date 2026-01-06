@@ -1,11 +1,56 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Series40/3.0FP1; Alcatel-OT-800A/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/null"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "OT-800A",
+      "marketingName": "OT-800A",
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 40",
+      "marketingName": "Series 40",
+      "version": null,
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Series40/3.0FP1; Alcatel-OT-802A/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/null"
     },
     "device": {
       "architecture": null,
-      "deviceName": "OT-802",
+      "deviceName": "OT-802A",
       "marketingName": "Wave",
       "manufacturer": "Alcatel",
       "brand": "Alcatel",

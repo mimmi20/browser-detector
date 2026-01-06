@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -71,6 +71,14 @@ enum Engine: string implements EngineInterface
 
     case treco = 'Treco';
 
+    case text = 'Text';
+
+    case icab = 'iCab';
+
+    case arkweb = 'ArkWeb';
+
+    case netsurf = 'NetSurf';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -104,6 +112,10 @@ enum Engine: string implements EngineInterface
             'goanna' => self::goanna,
             'teleca' => self::teleca,
             'treco' => self::treco,
+            'text' => self::text,
+            'icab' => self::icab,
+            'arkweb' => self::arkweb,
+            'netsurf' => self::netsurf,
             default => throw new UnexpectedValueException(
                 sprintf('the engine "%s" is unknown', $name),
             ),
@@ -137,6 +149,7 @@ enum Engine: string implements EngineInterface
             self::goanna => Company::moonchild,
             self::teleca => Company::obigo,
             self::treco => Company::arsslensoft,
+            self::arkweb => Company::huawei,
             default => Company::unknown,
         };
     }
@@ -162,6 +175,9 @@ enum Engine: string implements EngineInterface
             self::u2 => ['factory' => VersionBuilderFactory::class, 'search' => ['U2']],
             self::u3 => ['factory' => VersionBuilderFactory::class, 'search' => ['U3']],
             self::u4 => ['factory' => VersionBuilderFactory::class, 'search' => ['U4']],
+            self::icab => ['factory' => VersionBuilderFactory::class, 'search' => ['iCab']],
+            self::arkweb => ['factory' => VersionBuilderFactory::class, 'search' => ['ArkWeb']],
+            self::netsurf => ['factory' => VersionBuilderFactory::class, 'search' => ['NetSurf']],
             self::gecko => ['factory' => GeckoFactory::class, 'search' => null],
             self::trident => ['factory' => TridentFactory::class, 'search' => null],
             self::goanna => ['factory' => GoannaFactory::class, 'search' => null],

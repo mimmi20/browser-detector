@@ -361,7 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "com.apple.invitation-registration [iPhone OS,5.1.1,9B206,iPhone4,1]"
+      "user-agent": "CFNetwork, iPhone OS 5.1.1, iPhone4,1"
     },
     "device": {
       "architecture": null,
@@ -385,7 +385,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": null,
+      "version": "5.1.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1204,7 +1204,7 @@
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": null,
+      "version": "17.5.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,

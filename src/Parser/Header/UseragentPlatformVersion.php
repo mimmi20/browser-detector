@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -115,7 +115,7 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             '/icq_android\/[\d.]+ \(android; \d+; (?P<version>[\d.]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;[^);\/]+;(?P<version>[\d.]+)/i',
             '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/(?P<version>[\d.]+)/i',
-            '/virgin%20radio\/[\d.]+ \/ \(linux; android (?P<version>[\d.]+)\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
+            '/virgin radio\/[\d.]+ \/ \(linux; android (?P<version>[\d.]+)\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
             '/pugpigbolt [\d.]+ \([^);\/,]+, (android|ios) (?P<version>[\d.]+)\) on phone \(model [^)]+\)/i',
             '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android (?P<version>[\d.]+); sdk:[\d.]+; manufacturer:samsung; model: [^)]+\) okhttp\/[\d.]+/i',
             '/luminary\/[\d.]+ \(android (?P<version>[\d.]+); [^);\/]+; /i',

@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -193,7 +193,7 @@ final readonly class Macos implements VersionFactoryInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         $doMatch = preg_match(
-            '/\((?:build )?(?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i',
+            '/\((?:[bB]uild )?(?P<build>\d{1,2}[A-Z]\d{1,4}[a-z]?)\)/',
             $useragent,
             $matches,
         );
@@ -201,21 +201,17 @@ final readonly class Macos implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->macosBuild->getVersion($matches['build']);
-            } catch (NotFoundException) {
-                $buildVersion = false;
+
+                return $this->versionBuilder->set($buildVersion);
+            } catch (NotFoundException | NotNumericException) {
+                // do nothing
             }
 
-            if ($buildVersion !== false) {
-                try {
-                    return $this->versionBuilder->set($buildVersion);
-                } catch (NotNumericException) {
-                    return new NullVersion();
-                }
-            }
+            return new NullVersion();
         }
 
         $doMatch = preg_match(
-            '/coremedia v\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i',
+            '/coremedia v\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+[a-z]?)/i',
             $useragent,
             $matches,
         );

@@ -1,17 +1,18 @@
 {
   "rules": {
     "/debian apt-http/i": "debian",
+    "/plasma mobile/i": "plasma-mobile",
     "/linux mint/i": "linux mint",
     "/kubuntu/i": "kubuntu",
     "/xubuntu/i": "xubuntu",
     "/ubuntu/i": "ubuntu",
     "/fedora/i": "fedora linux",
     "/red ?hat/i": "redhat linux",
-    "/raspbian|debian.*rpi/i": "raspbian",
+    "/raspbian/i": "raspbian",
     "/debian/i": "debian",
     "/centos/i": "cent os linux",
-    "/(?<!i)cros|windows aarch64/i": "chromeos",
     "/mandriva/i": "mandriva linux",
+    "/opensuse/i": "opensuse",
     "/suse/i": "suse linux",
     "/gentoo/i": "gentoo linux",
     "/slackware/i": "slackware linux",
@@ -26,8 +27,8 @@
     "/openpda/i": "openpda",
     "/archlinux/i": "arch-linux",
     "/pardus/i": "pardus",
-    "/lindows/i": "lindows",
-    "/linux\\/x2\\/r1/i": "maemo"
+    "/linspire/i": "linspire",
+    "/lindows/i": "lindows"
   },
   "generic": "linux"
 }

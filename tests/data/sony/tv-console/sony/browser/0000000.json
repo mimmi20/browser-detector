@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (PLAYSTATION 3; 1.00)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PlayStation 3",
-      "marketingName": "PlayStation 3",
-      "manufacturer": "Sony",
-      "brand": "Sony",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-console",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "CellOS",
-      "marketingName": "CellOS",
-      "version": null,
-      "manufacturer": "Sony",
-      "bits": null
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Sony",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0) Playstation II"
     },
     "device": {
@@ -68,7 +23,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows 2000",
       "version": "5.0.0",
       "manufacturer": "Microsoft",
@@ -87,51 +42,6 @@
       "name": "Trident",
       "version": null,
       "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Sony Playstation2 (Utility Disc Ver.2.03c/for PS-modem)[jp]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PlayStation 2",
-      "marketingName": "PlayStation 2",
-      "manufacturer": "Sony",
-      "brand": "Sony",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-console",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "CellOS",
-      "marketingName": "CellOS",
-      "version": null,
-      "manufacturer": "Sony",
-      "bits": null
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Sony",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -177,96 +87,6 @@
       "name": "Gecko",
       "version": "1.8.0",
       "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (PS2; PlayStation BB Navigator 1.0) NetFront/3.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PlayStation 2",
-      "marketingName": "PlayStation 2",
-      "manufacturer": "Sony",
-      "brand": "Sony",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-console",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Sony",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "Access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (PlayStation 4 Pro 5.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PlayStation 4",
-      "marketingName": "PlayStation 4",
-      "manufacturer": "Sony",
-      "brand": "Sony",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-console",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Orbis OS",
-      "marketingName": "Orbis OS",
-      "version": null,
-      "manufacturer": "Sony",
-      "bits": null
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Sony",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

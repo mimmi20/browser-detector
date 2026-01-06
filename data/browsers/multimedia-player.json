@@ -33,6 +33,19 @@
     },
     "engine": "unknown"
   },
+  "alexa": {
+    "name": "Alexa",
+    "manufacturer": "amazon",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AlexaService",
+        "Alexa"
+      ]
+    },
+    "engine": "unknown"
+  },
   "alizee ipod": {
     "name": "Alizee iPod",
     "manufacturer": "unknown",
@@ -184,7 +197,6 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "ESPN%20Radio",
         "ESPN Radio"
       ]
     },
@@ -394,16 +406,6 @@
     },
     "engine": "webkit"
   },
-  "player fm": {
-    "name": "Player FM",
-    "manufacturer": "nuvomondo",
-    "type": "multimedia-player",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
   "pocket casts": {
     "name": "Pocket Casts",
     "manufacturer": "shifty-jelly",
@@ -462,30 +464,6 @@
     },
     "engine": "webkit"
   },
-  "podcat": {
-    "name": "Podcat",
-    "manufacturer": "unknown",
-    "type": "multimedia-player",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podcat"
-      ]
-    },
-    "engine": null
-  },
-  "podcruncher": {
-    "name": "PodCruncher",
-    "manufacturer": "unknown",
-    "type": "multimedia-player",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PodCruncher"
-      ]
-    },
-    "engine": "webkit"
-  },
   "podkicker": {
     "name": "Podkicker",
     "manufacturer": "unknown",
@@ -530,18 +508,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodWrangler"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "procast": {
-    "name": "Procast",
-    "manufacturer": "dsa-solutions",
-    "type": "multimedia-player",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Procast"
       ]
     },
     "engine": "webkit"
@@ -606,16 +572,6 @@
   "phonostar radio-app": {
     "name": "Radio-App",
     "manufacturer": "phonostar",
-    "type": "multimedia-player",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
-  "radio.de app": {
-    "name": "radio.de App",
-    "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
       "class": null,
@@ -788,7 +744,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Kodi"
+        "Kodi",
+        "XBMC"
       ]
     },
     "engine": "unknown"
@@ -829,5 +786,79 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "mplayer": {
+    "name": "MPlayer",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MPlayer"
+      ]
+    },
+    "engine": null
+  },
+  "diga": {
+    "name": "DIGA",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DIGAPlus",
+        "DIGA"
+      ]
+    },
+    "engine": null
+  },
+  "miro": {
+    "name": "Miro",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Miro"
+      ]
+    },
+    "engine": null
+  },
+  "mixer-box": {
+    "name": "MixerBox",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MixerBox Pro",
+        "MixerBox"
+      ]
+    },
+    "engine": null
+  },
+  "just-audio": {
+    "name": "Just Audio",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "just_audio"
+      ]
+    },
+    "engine": null
+  },
+  "juice": {
+    "name": "Juice",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Juice"
+      ]
+    },
+    "engine": null
   }
 }

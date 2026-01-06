@@ -39,14 +39,14 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
+      "name": "Gecko",
+      "version": "26.0.0",
+      "manufacturer": "Mozilla"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0"
+      "user-agent": "Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; like Android) AppleWebKit/538.1 (KHTML, like Gecko) Mobile Safari/538.1 (compatible)"
     },
     "device": {
       "architecture": null,
@@ -77,16 +77,16 @@
     "client": {
       "name": "Sailfish Browser",
       "modus": null,
-      "version": "1.0.0",
+      "version": null,
       "manufacturer": "Jolla",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "Gecko",
-      "version": "31.0.0",
-      "manufacturer": "Mozilla"
+      "name": "WebKit",
+      "version": "538.1.0",
+      "manufacturer": "Apple"
     }
   }
 ]

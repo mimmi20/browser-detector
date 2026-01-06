@@ -23,151 +23,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows 95",
+      "name": "Windows",
       "marketingName": "Windows 95",
       "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
-      "manufacturer": "AOL",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; AOL 9.0; Windows NT 5.0; AVPersonalSerial 0000000000000000000000000000000000000000; .NET CLR 2.0.50727)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows 2000",
-      "version": "5.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "modus": null,
-      "version": null,
-      "manufacturer": "AOL",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; AOL 9.5; AOLBuild 4337.156; Windows NT 6.2; Trident/8.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 8",
-      "version": "8.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "modus": null,
-      "version": null,
-      "manufacturer": "AOL",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "8.0.0",
-      "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Update a; AOL 6.0; Windows 98)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 98",
-      "marketingName": "Windows 98",
-      "version": "98.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "modus": null,
-      "version": null,
+      "version": "3.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -226,12 +91,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; AOL 7.0; Windows 98; Win 9x 4.90)"
+      "user-agent": "Mozilla/5.0 (compatible; AOL-IDSol 4.1.1 Fedora Core 3) FC3 KDE"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
@@ -248,14 +113,14 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
-      "marketingName": "Windows ME",
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
       "version": null,
-      "manufacturer": "Microsoft",
+      "manufacturer": "Redhat",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
       "version": null,
       "manufacturer": "AOL",
@@ -264,14 +129,59 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "Microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/2.0 (Compatible; MSIE 3.0; AOL 4.0; Windows 3.1)"
+      "user-agent": "mozilla/5.0 (compatible; aol-idsol 4.1.1 fedora core 3) fc3 kde"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "Redhat",
+      "bits": null
+    },
+    "client": {
+      "name": "AOL Explorer",
+      "modus": null,
+      "version": null,
+      "manufacturer": "AOL",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; AOLS-V3007; AOLS-V3008)"
     },
     "device": {
       "architecture": null,
@@ -293,14 +203,14 @@
       "bits": null
     },
     "os": {
-      "name": "Windows 3.1",
-      "marketingName": "Windows 3.1",
-      "version": "3.1.0",
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": "4.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
       "version": null,
       "manufacturer": "AOL",
@@ -338,16 +248,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -383,16 +293,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -428,16 +338,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -473,16 +383,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -518,16 +428,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -563,16 +473,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -608,16 +518,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -653,16 +563,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -698,16 +608,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -743,16 +653,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -788,16 +698,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -833,16 +743,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -878,16 +788,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -923,16 +833,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -968,16 +878,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1013,16 +923,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1058,16 +968,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1103,16 +1013,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1148,16 +1058,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1193,16 +1103,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1238,16 +1148,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1283,16 +1193,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1328,16 +1238,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1373,16 +1283,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1418,16 +1328,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1463,16 +1373,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1508,16 +1418,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1553,16 +1463,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1598,16 +1508,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1643,16 +1553,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1688,16 +1598,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1733,16 +1643,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1778,16 +1688,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1823,16 +1733,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1868,16 +1778,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1913,16 +1823,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -1958,16 +1868,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2003,16 +1913,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2048,16 +1958,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2093,16 +2003,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2138,16 +2048,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2183,16 +2093,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2228,16 +2138,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2273,16 +2183,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2318,16 +2228,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2363,16 +2273,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2408,16 +2318,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2453,16 +2363,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2498,16 +2408,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2543,16 +2453,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2588,16 +2498,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2633,16 +2543,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2678,16 +2588,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2723,16 +2633,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2768,16 +2678,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2813,16 +2723,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2858,16 +2768,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2903,16 +2813,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows ME",
+      "name": "Windows",
       "marketingName": "Windows ME",
       "version": null,
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Desktop",
+      "name": "AOL Explorer",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -2971,7 +2881,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 5.1; rv:52.0) Gecko/20100101 AOLShield/52.4.2"
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 ADG/11.0.2131 Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -2993,61 +2903,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
+      "name": "Windows",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "AOL Shield",
+      "name": "AOL Desktop",
       "modus": null,
-      "version": "52.4.2",
-      "manufacturer": "AOL",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "52.0.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36 AOLShield/1.0.22.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "AOL Shield Pro",
-      "modus": null,
-      "version": "1.0.22.0",
+      "version": "11.0.2131",
       "manufacturer": "AOL",
       "type": "browser",
       "isbot": false,
@@ -3055,7 +2920,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "49.0.2623.87",
+      "version": "69.0.3497.100",
       "manufacturer": "Google"
     }
   }

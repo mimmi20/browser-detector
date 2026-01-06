@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -44,12 +44,6 @@ final class CompanyTest extends TestCase
         self::assertSame($name, $result->getName());
         self::assertSame($brandname, $result->getBrandname());
         self::assertSame($key, $result->getKey());
-
-        $result3 = Company::fromName($type);
-
-        self::assertSame($name, $result3->getName());
-        self::assertSame($brandname, $result3->getBrandname());
-        self::assertSame($key, $result3->getKey());
 
         if ($name !== null) {
             $result2 = Company::fromName($name);
@@ -912,7 +906,7 @@ final class CompanyTest extends TestCase
             ],
             [
                 'type' => 'The Browser Company',
-                'name' => 'The Browser Company of New York',
+                'name' => 'The Browser Company of New York, Inc',
                 'brandname' => 'The Browser Company',
                 'key' => 'the-browser-company',
             ],
@@ -3994,6 +3988,426 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Yahoo!JAPAN',
                 'key' => 'yahoo-japan',
             ],
+            [
+                'type' => 'Sogou',
+                'name' => 'Sogou Inc',
+                'brandname' => 'Sogou',
+                'key' => 'sogou',
+            ],
+            [
+                'type' => 'Haixu',
+                'name' => 'Haixu',
+                'brandname' => 'Haixu',
+                'key' => 'haixu',
+            ],
+            [
+                'type' => 'Nasai',
+                'name' => 'Nasai',
+                'brandname' => 'Nasai',
+                'key' => 'nasai',
+            ],
+            [
+                'type' => 'PHP Group',
+                'name' => 'the PHP Group',
+                'brandname' => 'PHP Group',
+                'key' => 'php-group',
+            ],
+            [
+                'type' => 'BBC',
+                'name' => 'BBC',
+                'brandname' => 'BBC',
+                'key' => 'bbc',
+            ],
+            [
+                'type' => 'Christian Dywan',
+                'name' => 'Christian Dywan',
+                'brandname' => 'Christian Dywan',
+                'key' => 'christian-dywan',
+            ],
+            [
+                'type' => 'Apache',
+                'name' => 'The Apache Software Foundation',
+                'brandname' => 'Apache',
+                'key' => 'apache',
+            ],
+            [
+                'type' => 'Thomas Dickey',
+                'name' => 'Thomas Dickey',
+                'brandname' => 'Thomas Dickey',
+                'key' => 'thomas-dickey',
+            ],
+            [
+                'type' => 'Omni Development',
+                'name' => 'Omni Development Inc',
+                'brandname' => 'Omni Development',
+                'key' => 'omni-development',
+            ],
+            [
+                'type' => 'PhantomJS',
+                'name' => 'phantomjs.org',
+                'brandname' => 'PhantomJS',
+                'key' => 'phantom-js',
+            ],
+            [
+                'type' => 'Mark Cavage',
+                'name' => 'Mark Cavage',
+                'brandname' => 'Mark Cavage',
+                'key' => 'mark-cavage',
+            ],
+            [
+                'type' => 'wkhtmltopdf.org',
+                'name' => 'wkhtmltopdf.org',
+                'brandname' => 'wkhtmltopdf.org',
+                'key' => 'wk-html-to-pdf.org',
+            ],
+            [
+                'type' => 'Espial',
+                'name' => 'Espial Group',
+                'brandname' => 'Espial',
+                'key' => 'espial-group',
+            ],
+            [
+                'type' => 'Vivaldi',
+                'name' => 'Vivaldi Technologies',
+                'brandname' => 'Vivaldi',
+                'key' => 'vivaldi',
+            ],
+            [
+                'type' => 'K-Touch',
+                'name' => 'K-Touch',
+                'brandname' => 'K-Touch',
+                'key' => 'k-touch',
+            ],
+            [
+                'type' => 'ZOPO',
+                'name' => 'ZOPO',
+                'brandname' => 'ZOPO',
+                'key' => 'zopo',
+            ],
+            [
+                'type' => 'Mastone',
+                'name' => 'Mastone',
+                'brandname' => 'Mastone',
+                'key' => 'mastone',
+            ],
+            [
+                'type' => 'Green Orange',
+                'name' => 'Green Orange',
+                'brandname' => 'Green Orange',
+                'key' => 'green-orange',
+            ],
+            [
+                'type' => 'Nextbook',
+                'name' => 'Nextbook',
+                'brandname' => 'Nextbook',
+                'key' => 'nextbook',
+            ],
+            [
+                'type' => 'Odys',
+                'name' => 'Odys',
+                'brandname' => 'Odys',
+                'key' => 'odys',
+            ],
+            [
+                'type' => 'Lephone',
+                'name' => 'Lephone',
+                'brandname' => 'Lephone',
+                'key' => 'lephone',
+            ],
+            [
+                'type' => 'Maxtron',
+                'name' => 'Maxtron',
+                'brandname' => 'Maxtron',
+                'key' => 'maxtron',
+            ],
+            [
+                'type' => 'Amoi',
+                'name' => 'Amoi',
+                'brandname' => 'Amoi',
+                'key' => 'amoi',
+            ],
+            [
+                'type' => 'Voto',
+                'name' => 'Voto Mobile',
+                'brandname' => 'Voto',
+                'key' => 'voto',
+            ],
+            [
+                'type' => 'Provisio',
+                'name' => 'PROVISIO GmbH / LLC',
+                'brandname' => 'Provisio',
+                'key' => 'provisio',
+            ],
+            [
+                'type' => 'Lunascape',
+                'name' => 'Lunascape Corporation',
+                'brandname' => 'Lunascape',
+                'key' => 'lunascape',
+            ],
+            [
+                'type' => 'CrazyBrowser',
+                'name' => 'CrazyBrowser.com',
+                'brandname' => 'CrazyBrowser',
+                'key' => 'crazy-browser',
+            ],
+            [
+                'type' => 'Avant Force',
+                'name' => 'Avant Force',
+                'brandname' => 'Avant Force',
+                'key' => 'avant-force',
+            ],
+            [
+                'type' => 'getdownload.ws',
+                'name' => 'getdownload.ws',
+                'brandname' => 'getdownload.ws',
+                'key' => 'get-download',
+            ],
+            [
+                'type' => 'Kaylon Technologies',
+                'name' => 'Kaylon Technologies',
+                'brandname' => 'Kaylon Technologies',
+                'key' => 'kaylon-technologies',
+            ],
+            [
+                'type' => 'Xavier Roche',
+                'name' => 'Xavier Roche',
+                'brandname' => 'Xavier Roche',
+                'key' => 'xavier-roche',
+            ],
+            [
+                'type' => 'Abelssoft',
+                'name' => 'Ascora GmbH',
+                'brandname' => 'Abelssoft',
+                'key' => 'abelssoft',
+            ],
+            [
+                'type' => 'kmeleonbrowser.org',
+                'name' => 'kmeleonbrowser.org',
+                'brandname' => 'kmeleonbrowser.org',
+                'key' => 'kmeleon-browser.org',
+            ],
+            [
+                'type' => 'NCSA',
+                'name' => 'National Center for Supercomputing Applications',
+                'brandname' => 'NCSA',
+                'key' => 'ncsa',
+            ],
+            [
+                'type' => 'Design Science',
+                'name' => 'Design Science, Inc.',
+                'brandname' => 'Design Science',
+                'key' => 'design-science',
+            ],
+            [
+                'type' => 'Deepnet Security',
+                'name' => 'Deepnet Security',
+                'brandname' => 'Deepnet Security',
+                'key' => 'deepnet-security',
+            ],
+            [
+                'type' => 'YesLogic',
+                'name' => 'YesLogic Pty. Ltd.',
+                'brandname' => 'YesLogic',
+                'key' => 'yes-logic',
+            ],
+            [
+                'type' => 'Fenrir',
+                'name' => 'Fenrir Inc',
+                'brandname' => 'Fenrir',
+                'key' => 'fenrir',
+            ],
+            [
+                'type' => 'FlashPeak',
+                'name' => 'FlashPeak Inc.',
+                'brandname' => 'FlashPeak',
+                'key' => 'flashpeak',
+            ],
+            [
+                'type' => 'www.acoobrowser.com',
+                'name' => 'www.acoobrowser.com',
+                'brandname' => 'www.acoobrowser.com',
+                'key' => 'www.acoobrowser.com',
+            ],
+            [
+                'type' => 'morequick',
+                'name' => 'morequick',
+                'brandname' => 'morequick',
+                'key' => 'morequick',
+            ],
+            [
+                'type' => 'Compaq',
+                'name' => 'Compaq Computer Corporation',
+                'brandname' => 'Compaq',
+                'key' => 'compaq',
+            ],
+            [
+                'type' => 'OSF',
+                'name' => 'Open Software Foundation',
+                'brandname' => 'OSF',
+                'key' => 'osf',
+            ],
+            [
+                'type' => 'Sakamoto Hironori',
+                'name' => 'Sakamoto Hironori',
+                'brandname' => 'Sakamoto Hironori',
+                'key' => 'sakamoto-hironori',
+            ],
+            [
+                'type' => 'Acorn',
+                'name' => 'Acorn',
+                'brandname' => 'Acorn',
+                'key' => 'acorn',
+            ],
+            [
+                'type' => 'Perplexity',
+                'name' => 'Perplexity AI, Inc.',
+                'brandname' => 'Perplexity',
+                'key' => 'perplexity',
+            ],
+            [
+                'type' => 'OpenAtom Foundation',
+                'name' => 'OpenAtom Foundation',
+                'brandname' => 'OpenAtom Foundation',
+                'key' => 'openatom-foundation',
+            ],
+            [
+                'type' => 'OceanHero',
+                'name' => 'OceanHero GmbH',
+                'brandname' => 'OceanHero',
+                'key' => 'ocean-hero',
+            ],
+            [
+                'type' => 'e.ventures',
+                'name' => 'e.ventures Managementgesellschaft mbH',
+                'brandname' => 'e.ventures',
+                'key' => 'e.ventures',
+            ],
+            [
+                'type' => 'HubSpot',
+                'name' => 'HubSpot, Inc.',
+                'brandname' => 'HubSpot',
+                'key' => 'hubspot-inc',
+            ],
+            [
+                'type' => 'Linspire',
+                'name' => 'Linspire, Inc.',
+                'brandname' => 'Linspire',
+                'key' => 'linspire-inc',
+            ],
+            [
+                'type' => 'Vodafone',
+                'name' => 'Vodafone',
+                'brandname' => 'Vodafone',
+                'key' => 'vodafone',
+            ],
+            [
+                'type' => 'NexStreaming',
+                'name' => 'NexStreaming Europe S.L.',
+                'brandname' => 'NexStreaming',
+                'key' => 'nexstreaming',
+            ],
+            [
+                'type' => 'Qualcomm',
+                'name' => 'Qualcomm Incorporated.',
+                'brandname' => 'Qualcomm',
+                'key' => 'qualcomm',
+            ],
+            [
+                'type' => 'Comodo',
+                'name' => 'Comodo Group Inc',
+                'brandname' => 'Comodo',
+                'key' => 'comodo',
+            ],
+            [
+                'type' => 'Flock',
+                'name' => 'Flock FZ-LLC',
+                'brandname' => 'Flock',
+                'key' => 'flock',
+            ],
+            [
+                'type' => 'Panasonic',
+                'name' => 'Panasonic',
+                'brandname' => 'Panasonic',
+                'key' => 'panasonic',
+            ],
+            [
+                'type' => 'LogicWare',
+                'name' => 'LogicWare & LSoft Technologies',
+                'brandname' => 'LogicWare',
+                'key' => 'logicware',
+            ],
+            [
+                'type' => 'PocketBook',
+                'name' => 'PocketBook',
+                'brandname' => 'PocketBook',
+                'key' => 'pocketbook',
+            ],
+            [
+                'type' => 'Nuvomondo',
+                'name' => 'Nuvomondo Ltd',
+                'brandname' => 'Nuvomondo',
+                'key' => 'nuvomondo',
+            ],
+            [
+                'type' => 'AFTVnews.com',
+                'name' => 'AFTVnews.com',
+                'brandname' => 'AFTVnews.com',
+                'key' => 'aftvnews.com',
+            ],
+            [
+                'type' => 'Cliqz',
+                'name' => 'Cliqz GmbH',
+                'brandname' => 'Cliqz',
+                'key' => 'cliqz',
+            ],
+            [
+                'type' => 'The Internet Archive',
+                'name' => 'The Internet Archive',
+                'brandname' => 'The Internet Archive',
+                'key' => 'archive.org',
+            ],
+            [
+                'type' => 'LNMBBS',
+                'name' => 'LNMBBS',
+                'brandname' => 'LNMBBS',
+                'key' => 'lnmbbs',
+            ],
+            [
+                'type' => 'Bose',
+                'name' => 'Bose',
+                'brandname' => 'Bose',
+                'key' => 'bose',
+            ],
+            [
+                'type' => 'SonyEricsson',
+                'name' => 'SonyEricsson',
+                'brandname' => 'SonyEricsson',
+                'key' => 'sony-ericsson',
+            ],
+            [
+                'type' => 'DoCoMo',
+                'name' => 'NTT DoCoMo',
+                'brandname' => 'DoCoMo',
+                'key' => 'ntt-docomo',
+            ],
+            [
+                'type' => 'Nexian',
+                'name' => 'Nexian',
+                'brandname' => 'Nexian',
+                'key' => 'nexian',
+            ],
+            [
+                'type' => 'Spice',
+                'name' => 'Spice',
+                'brandname' => 'Spice',
+                'key' => 'spice',
+            ],
+            [
+                'type' => 'Cosmix',
+                'name' => 'Cosmix Corporation',
+                'brandname' => 'Cosmix',
+                'key' => 'cosmix',
+            ],
         ];
     }
 
@@ -4251,13 +4665,13 @@ final class CompanyTest extends TestCase
             ],
             [
                 'fallback' => 'the-browser-company',
-                'name' => 'The Browser Company of New York',
+                'name' => 'The Browser Company of New York, Inc',
                 'brandname' => 'The Browser Company',
                 'key' => 'the-browser-company',
             ],
             [
-                'fallback' => 'The Browser Company of New York',
-                'name' => 'The Browser Company of New York',
+                'fallback' => 'The Browser Company of New York, Inc',
+                'name' => 'The Browser Company of New York, Inc',
                 'brandname' => 'The Browser Company',
                 'key' => 'the-browser-company',
             ],

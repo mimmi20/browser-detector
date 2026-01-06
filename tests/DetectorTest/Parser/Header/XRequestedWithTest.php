@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -552,6 +552,8 @@ final class XRequestedWithTest extends TestCase
             ['proxy.browser.unblock.sites.proxybrowser.unblocksites', true, 'proxy-browser', true, null, false, Os::unknown],
             ['com.google.android.apps.youtube.music', true, 'youtube-music', true, null, false, Os::unknown],
             ['nl.nrc.audio', true, 'nrc-audio', true, null, false, Os::unknown],
+            ['org.telegram.plus', true, 'telegram-plus-messenger', true, null, false, Os::unknown],
+            ['com.android.launcher3', true, 'android-launcher', true, null, false, Os::unknown],
         ];
     }
 }

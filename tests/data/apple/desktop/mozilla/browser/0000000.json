@@ -91,7 +91,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:34.0) Gecko/20100101 /34.0a1"
+      "user-agent": "Mozilla/5.0 (compatible; Macintosh; Intel Mac OS X 10_7_4)"
     },
     "device": {
       "architecture": null,
@@ -115,12 +115,12 @@
     "os": {
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
-      "version": "10.7.0",
+      "version": "10.7.4",
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -130,7 +130,7 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "34.0.0",
+      "version": null,
       "manufacturer": "Mozilla"
     }
   },
@@ -345,9 +345,9 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.001.0",
+      "version": null,
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -361,7 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Darwin i386; en-US; rv:1.9.1.4) Gecko/20100311 Shiretoko/3.5.5"
+      "user-agent": "Mozilla/4.51 (Macintosh; I; PPC)"
     },
     "device": {
       "architecture": null,
@@ -383,16 +383,16 @@
       "bits": null
     },
     "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
       "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
-      "name": "Firefox",
+      "name": "Mozilla Application Suite",
       "modus": null,
-      "version": "3.5.5",
+      "version": "4.51.0",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -400,7 +400,7 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "1.9.1.4",
+      "version": null,
       "manufacturer": "Mozilla"
     }
   },
@@ -446,51 +446,6 @@
     "engine": {
       "name": "Gecko",
       "version": "1.9.0.7",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; PPC MacOS X; rv:5.0) Gecko/20110615 Firefox/25.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "25.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "5.0.0",
       "manufacturer": "Mozilla"
     }
   },
@@ -660,7 +615,7 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",
@@ -680,8 +635,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "PowerMac",
+      "marketingName": "PowerMac",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
@@ -698,16 +653,16 @@
       "bits": null
     },
     "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
       "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.1.0",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -811,7 +766,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.4; de-DE; rv:1.9.2.28) Gecko/20120306 Mozilla/5.001 (windows; U; NT4.0; en-us) Gecko/25250101"
+      "user-agent": "Mozilla/5.0 (Linux; U; PPC Ubuntu Mach-O; en-US; rv:1.7.8) Gecko/20050511 Firefox/1.0.4"
     },
     "device": {
       "architecture": null,
@@ -833,16 +788,16 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
       "version": null,
-      "manufacturer": "Microsoft",
+      "manufacturer": "Canonical",
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "1.0.4",
       "manufacturer": "Mozilla",
       "type": "browser",
       "isbot": false,
@@ -850,52 +805,7 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "1.9.2.28",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/1.0 (Mac; Mac OS 3; en-Us; rv:1.5.3) Gecko/42525730 Mozilla/2.3.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.5.3",
+      "version": "1.7.8",
       "manufacturer": "Mozilla"
     }
   },
@@ -923,7 +833,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows XP",
       "version": "5.1.0",
       "manufacturer": "Microsoft",
@@ -991,7 +901,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Mac OS; en-US; rv:1.7) Gecko"
+      "user-agent": "Mozilla/5.0 (X11; U; PPC)"
     },
     "device": {
       "architecture": null,
@@ -1020,7 +930,52 @@
       "bits": null
     },
     "client": {
-      "name": "Mozilla",
+      "name": "Mozilla Application Suite",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (MacOSX; U; MacOSX; en-US; rv:1.4.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "Mozilla",

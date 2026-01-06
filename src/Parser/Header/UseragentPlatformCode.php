@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -103,7 +103,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             '/ \/ (?P<platform>android) \d+$/i',
             '/wnyc app\/[\d.]+ (?P<platform>android)\/\d+ /i',
             '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ (?P<platform>kaios)\/[\d.]+/i',
-            '/virgin%20radio\/[\d.]+ \/ \(linux; (?P<platform>android) [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
+            '/virgin radio\/[\d.]+ \/ \(linux; (?P<platform>android) [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
             '/pugpigbolt [\d.]+ \([^);\/,]+, (?P<platform>android|ios) [\d.]+\) on phone \(model [^)]+\)/i',
             '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; (?P<platform>android) [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: [^)]+\) okhttp\/[\d.]+/i',
             '/luminary\/[\d.]+ \((?P<platform>android) [\d.]+; [^);\/]+; /i',

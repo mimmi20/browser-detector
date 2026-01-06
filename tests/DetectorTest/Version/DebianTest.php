@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -72,6 +72,10 @@ final class DebianTest extends TestCase
             [
                 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.3) Gecko/2008092814 (Debian-3.0.1-1)',
                 '3.0.1.1',
+            ],
+            [
+                'Mozilla/5.0 (compatible; MSIE 6.1 (Mozilla); Debian Linux 2.4.17)',
+                '2.4.17',
             ],
         ];
     }

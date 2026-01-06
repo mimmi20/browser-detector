@@ -739,7 +739,23 @@
     "deviceName": "N705i",
     "marketingName": "N705i",
     "manufacturer": "nec",
-    "brand": "nec",
+    "brand": "ntt-docomo",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 427,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "maemo"
+  },
+  "nec n705imyu": {
+    "deviceName": "N705imyu",
+    "marketingName": "N705imyu",
+    "manufacturer": "nec",
+    "brand": "ntt-docomo",
     "dualOrientation": false,
     "simCount": 1,
     "display": {
@@ -975,11 +991,27 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nec n905imyu": {
+    "deviceName": "N905imyu",
+    "marketingName": "N905imyu",
+    "manufacturer": "nec",
+    "brand": "ntt-docomo",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "maemo"
+  },
   "nec n905i": {
     "deviceName": "N905i",
     "marketingName": "N905i",
     "manufacturer": "nec",
-    "brand": "nec",
+    "brand": "ntt-docomo",
     "dualOrientation": false,
     "simCount": 1,
     "display": {

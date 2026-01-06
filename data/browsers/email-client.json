@@ -82,19 +82,6 @@
     },
     "engine": "webkit"
   },
-  "lotus notes": {
-    "name": "Lotus Notes",
-    "manufacturer": "ibm",
-    "type": "email-client",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "LotusNotes",
-        "Lotus\\-Notes"
-      ]
-    },
-    "engine": "unknown"
-  },
   "mailbar": {
     "name": "MailBar",
     "manufacturer": "mailbar",
@@ -133,18 +120,6 @@
     },
     "engine": "gecko"
   },
-  "unibox": {
-    "name": "Unibox",
-    "manufacturer": "eightloops",
-    "type": "email-client",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Unibox"
-      ]
-    },
-    "engine": "webkit"
-  },
   "virgilio-mail": {
     "name": "Virgilio Mail",
     "manufacturer": "italiaonline",
@@ -176,5 +151,17 @@
       "search": null
     },
     "engine": null
+  },
+  "eudora": {
+    "name": "Eudora",
+    "manufacturer": "qualcomm",
+    "type": "email-client",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Eudora"
+      ]
+    },
+    "engine": "gecko"
   }
 }

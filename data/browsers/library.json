@@ -124,7 +124,7 @@
     "engine": "unknown"
   },
   "python-requests": {
-    "name": "python-requests",
+    "name": "Python Requests",
     "manufacturer": "python-software-foundation",
     "type": "library",
     "version": {
@@ -400,7 +400,7 @@
     "engine": "unknown"
   },
   "safari-view-service": {
-    "name": "SafariViewService",
+    "name": "Safari View Service",
     "manufacturer": "unknown",
     "type": "library",
     "version": {
@@ -423,5 +423,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "phantomjs": {
+    "name": "PhantomJS",
+    "manufacturer": "phantom-js",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PhantomJS"
+      ]
+    },
+    "engine": "webkit"
   }
 }

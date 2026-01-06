@@ -193,7 +193,7 @@
   },
   "samsung sm-r925f": {
     "deviceName": "SM-R925F",
-    "marketingName": "Galaxy Watch 5 Pro (44mm, LTE)",
+    "marketingName": "Galaxy Watch 5 Pro (45mm, LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": false,
@@ -209,7 +209,7 @@
   },
   "samsung sm-r925n": {
     "deviceName": "SM-R925N",
-    "marketingName": "Galaxy Watch 5 Pro (44mm, LTE)",
+    "marketingName": "Galaxy Watch 5 Pro (45mm, LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": false,
@@ -225,7 +225,7 @@
   },
   "samsung sm-r925u": {
     "deviceName": "SM-R925U",
-    "marketingName": "Galaxy Watch 5 Pro (44mm, LTE)",
+    "marketingName": "Galaxy Watch 5 Pro (45mm, LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": false,
@@ -721,7 +721,7 @@
   },
   "samsung sm-r920": {
     "deviceName": "SM-R920",
-    "marketingName": "Galaxy Watch5 Pro (45mm)",
+    "marketingName": "Galaxy Watch 5 Pro (45mm)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": false,
@@ -779,6 +779,22 @@
       "height": 480,
       "touch": true,
       "size": 1.5
+    },
+    "type": "smart-watch",
+    "platform": "wear-os"
+  },
+  "samsung sm-r900": {
+    "deviceName": "SM-R900",
+    "marketingName": "Galaxy Watch 5 (40mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
     },
     "type": "smart-watch",
     "platform": "wear-os"

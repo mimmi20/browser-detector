@@ -3,7 +3,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2025, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -379,6 +379,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'proxy.browser.unblock.sites.proxybrowser.unblocksites' => 'proxy-browser',
             'com.google.android.apps.youtube.music' => 'youtube-music',
             'nl.nrc.audio' => 'nrc-audio',
+            'org.telegram.plus' => 'telegram-plus-messenger',
+            'com.android.launcher3' => 'android-launcher',
             default => null,
         };
     }

