@@ -58,6 +58,15 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
     #[Override]
     public function getClientVersion(string $value, string | null $code = null): VersionInterface
     {
+        if (
+            preg_match(
+                '/Android \d+; [A-Za-z0-9]{10}; U; [^;)]*\) AppleWebKit\/.+Chrome\//',
+                $value,
+            )
+        ) {
+            return new ForcedNullVersion();
+        }
+
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {

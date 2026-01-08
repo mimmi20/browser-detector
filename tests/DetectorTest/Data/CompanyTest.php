@@ -4408,6 +4408,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Cosmix',
                 'key' => 'cosmix',
             ],
+            [
+                'type' => 'Overmax',
+                'name' => 'Overmax',
+                'brandname' => 'Overmax',
+                'key' => 'overmax',
+            ],
+            [
+                'type' => 'FreeLander',
+                'name' => 'FreeLander',
+                'brandname' => 'FreeLander',
+                'key' => 'freelander',
+            ],
         ];
     }
 

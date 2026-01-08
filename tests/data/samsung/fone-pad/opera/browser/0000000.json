@@ -3294,5 +3294,59 @@
       "version": "77.0.3865.116",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-X205\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"14\"",
+      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Opera\";v=\"126\", \"OperaMobile\";v=\"93\", \"Chromium\";v=\"142\"",
+      "sec-ch-ua-full-version": "\"93.4.4906.86552\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 OPR/93.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-X205",
+      "marketingName": "Galaxy Tab A8 10.5\" LTE (2021)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "93.0.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "142.0.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]

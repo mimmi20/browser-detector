@@ -230,6 +230,7 @@ final class SecChUaTest extends TestCase
             ['"Opera Mini Android";v="95", "Chromium";v="137", "Not/A)Brand";v="24"', true, 'opera mini', true, '95.0.0'],
             ['"Chromium";v="142", "Island";v="142", "Not_A Brand";v="99"', true, 'the-enterprise-browser', true, '142.0.0'],
             ['"Opera Mini Android";v="95", "Chromium";v="140", "Not=A?Brand";v="24", "Android WebView";v="140"', true, 'opera mini', true, '95.0.0'],
+            ['"XiaoMiBrowser";v="135", "Not-A.Brand";v="8", "Chromium";v="135"', true, 'miui browser', true, '135.0.0'],
         ];
     }
 }

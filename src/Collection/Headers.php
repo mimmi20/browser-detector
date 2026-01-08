@@ -351,7 +351,7 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($firstClientCodename);
             $clientVersion  = match ($firstClientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile' => $clientVersions['user-agent']
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
                 'duckduck app', 'huawei-browser', 'ucbrowser', 'edge' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']

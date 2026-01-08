@@ -1471,6 +1471,10 @@ enum Company: string implements CompanyInterface
 
     case cosmix = 'Cosmix';
 
+    case overmax = 'Overmax';
+
+    case freelander = 'FreeLander';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2204,6 +2208,8 @@ enum Company: string implements CompanyInterface
             'nexian' => self::nexian,
             'spice' => self::spice,
             'cosmix', 'cosmix corporation' => self::cosmix,
+            'overmax' => self::overmax,
+            'freelander' => self::freelander,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

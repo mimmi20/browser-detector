@@ -4894,6 +4894,64 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    "sec-ch-prefers-color-scheme"=>"light",
+      "sec-ch-prefers-reduced-motion"=>"no-preference",
+      "sec-ch-ua"=>"\"XiaoMiBrowser\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
+      "sec-ch-ua-mobile"=>"?1",
+      "sec-ch-ua-platform"=>"\"Android\"",
+      "user-agent"=>"Mozilla/5.0 (Linux; Android 12; Mi 10T Pro Build/SKQ1.211006.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.48.2-gn"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-platform"=>"\"Android\"",
+                        "sec-ch-ua"=>"\"XiaoMiBrowser\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
+      "sec-ch-ua-mobile"=>"?1",
+      "user-agent"=>"Mozilla/5.0 (Linux; Android 12; Mi 10T Pro Build/SKQ1.211006.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.48.2-gn"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Mi 10T Pro',
+                        'marketingName' => 'Mi 10T Pro',
+                        'manufacturer' => 'Xiaomi',
+                        'brand' => 'Xiaomi',
+                        'dualOrientation' => true,
+                        'simCount' => 2,
+                        'display' => [
+                            'width' => 2400,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.67,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '12.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Mi Browser',
+                        'modus' => null,
+                        'version' => '14.48.2',
+                        'manufacturer' => 'Xiaomi',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '135.0.7049.79',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

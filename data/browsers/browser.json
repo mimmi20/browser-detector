@@ -5790,12 +5790,24 @@
   },
   "docomo-browser": {
     "name": "DoCoMo Browser",
-    "manufacturer": "pocketbook",
+    "manufacturer": "ntt-docomo",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DoCoMo"
+      ]
+    },
+    "engine": null
+  },
+  "pure-lite-browser": {
+    "name": "Pure Lite Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pure Lite Browser"
       ]
     },
     "engine": null
