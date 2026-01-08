@@ -382,6 +382,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'org.telegram.plus' => 'telegram-plus-messenger',
             'com.android.launcher3' => 'android-launcher',
             'pure.lite.browser' => 'pure-lite-browser',
+            'de.inseven.dogtorance' => 'dogtorance-app',
             default => null,
         };
     }

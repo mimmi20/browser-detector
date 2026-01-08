@@ -4346,5 +4346,17 @@
       ]
     },
     "engine": null
+  },
+  "dogtorance-app": {
+    "name": "Dogtorance",
+    "manufacturer": "dog-torance",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "dogtorance"
+      ]
+    },
+    "engine": null
   }
 }

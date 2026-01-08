@@ -5076,10 +5076,12 @@
     "manufacturer": "stoutner",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PrivacyBrowser"
+      ]
     },
-    "engine": null
+    "engine": "blink"
   },
   "yuzu-browser": {
     "name": "Yuzu Browser",

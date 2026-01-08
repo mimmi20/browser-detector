@@ -1475,6 +1475,8 @@ enum Company: string implements CompanyInterface
 
     case freelander = 'FreeLander';
 
+    case dogTorance = 'Dogtorance';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2210,6 +2212,7 @@ enum Company: string implements CompanyInterface
             'cosmix', 'cosmix corporation' => self::cosmix,
             'overmax' => self::overmax,
             'freelander' => self::freelander,
+            'dogtorance', 'dog-torance' => self::dogTorance,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2668,6 +2671,7 @@ enum Company: string implements CompanyInterface
             self::theInternetArchive => 'archive.org',
             self::sonyEricsson => 'sony-ericsson',
             self::docomo => 'ntt-docomo',
+            self::dogTorance => 'dog-torance',
             default => $this->name,
         };
     }

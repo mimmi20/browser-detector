@@ -4420,6 +4420,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'FreeLander',
                 'key' => 'freelander',
             ],
+            [
+                'type' => 'Dogtorance',
+                'name' => 'Dogtorance',
+                'brandname' => 'Dogtorance',
+                'key' => 'dog-torance',
+            ],
         ];
     }
 

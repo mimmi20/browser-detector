@@ -555,6 +555,7 @@ final class XRequestedWithTest extends TestCase
             ['org.telegram.plus', true, 'telegram-plus-messenger', true, null, false, Os::unknown],
             ['com.android.launcher3', true, 'android-launcher', true, null, false, Os::unknown],
             ['pure.lite.browser', true, 'pure-lite-browser', true, null, false, Os::unknown],
+            ['de.inseven.dogtorance', true, 'dogtorance-app', true, null, false, Os::unknown],
         ];
     }
 }
