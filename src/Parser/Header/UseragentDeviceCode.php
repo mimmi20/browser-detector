@@ -62,7 +62,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $value,
             )
         ) {
-            return null;
+            return 'unknown=general mobile phone';
         }
 
         try {
