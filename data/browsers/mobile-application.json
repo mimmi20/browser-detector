@@ -1430,8 +1430,10 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.Maps"
+      ]
     },
     "engine": null
   },
@@ -2450,6 +2452,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Twitter for iPhone",
         "Twitter"
       ]
     },

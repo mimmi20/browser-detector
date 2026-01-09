@@ -1,6 +1,96 @@
 [
   {
     "headers": {
+      "user-agent": "PrivacyBrowser/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Privacy Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Stoutner",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PrivacyBrowser/1.0 comdirect/1.0 (appVersion:20.9.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Privacy Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Stoutner",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "x-requested-with": "com.stoutner.privacybrowser.standard",
       "user-agent": "PrivacyBrowser/1.0"
     },
@@ -33,16 +123,16 @@
     "client": {
       "name": "Privacy Browser",
       "modus": null,
-      "version": null,
+      "version": "1.0.0",
       "manufacturer": "Stoutner",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Blink",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Google"
     }
   },
   {
@@ -86,9 +176,55 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Blink",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "PrivacyBrowser/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Privacy Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Stoutner",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
     }
   },
   {
@@ -128,16 +264,16 @@
     "client": {
       "name": "Privacy Browser",
       "modus": null,
-      "version": null,
+      "version": "1.0.0",
       "manufacturer": "Stoutner",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Blink",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Google"
     }
   },
   {
@@ -183,16 +319,16 @@
     "client": {
       "name": "Privacy Browser",
       "modus": null,
-      "version": null,
+      "version": "1.0.0",
       "manufacturer": "Stoutner",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Blink",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Google"
     }
   },
   {
@@ -232,16 +368,70 @@
     "client": {
       "name": "Privacy Browser",
       "modus": null,
-      "version": null,
+      "version": "1.0.0",
       "manufacturer": "Stoutner",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Blink",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"Android WebView\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "PrivacyBrowser/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Privacy Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Stoutner",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
     }
   }
 ]
