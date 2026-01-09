@@ -73,7 +73,6 @@ final class Useragent4Test extends TestCase
         string $ua,
         string $normalizedUa,
         bool $hasDeviceInfo,
-        string $deviceUa,
         string | null $deviceCode,
         bool $hasClientInfo,
         string | null $clientCode,
@@ -94,7 +93,7 @@ final class Useragent4Test extends TestCase
             name: $platformCode->getName(),
             marketingName: $platformCode->getMarketingName(),
             manufacturer: new Company(type: 'unknown', name: null, brandname: null),
-            version: (new \BrowserDetector\Version\VersionBuilder())->set((string)$platformVersion),
+            version: (new VersionBuilder())->set((string) $platformVersion),
             bits: Bits::unknown,
         );
 
@@ -344,8 +343,7 @@ final class Useragent4Test extends TestCase
                 'ua' => 'Mozilla/5.0 (Linux; Android 14; ZRnsYAf5vy; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.42 Mobile Safari/537.36',
                 'normalizedUa' => 'Mozilla/5.0 (Linux; Android 14; ZRnsYAf5vy; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.42 Mobile Safari/537.36',
                 'hasDeviceInfo' => true,
-                'deviceUa' => 'zrnsyaf5vy',
-                'deviceCode' => null,
+                'deviceCode' => 'unknown=general mobile phone',
                 'hasClientInfo' => true,
                 'clientCode' => 'avast secure browser',
                 'hasClientVersion' => true,

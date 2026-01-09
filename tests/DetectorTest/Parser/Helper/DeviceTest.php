@@ -137,6 +137,7 @@ final class DeviceTest extends TestCase
             ['A410_4G', 'acer=acer a410_4g'],
             ['Chromebook 14 (CB3-431)', 'acer=acer chromebook 14'],
             ['Chromebook 14 (CB3-431', 'acer=acer chromebook 14'],
+            ['M10-11', 'acer=acer m10-11'],
             // AllCall
             ['Atom', 'allcall=allcall atom'],
             ['HERO_20_PRO', 'allcall=allcall hero 20 pro'],
@@ -469,6 +470,9 @@ final class DeviceTest extends TestCase
             ['CPH2709', 'oneplus=oneplus cph2709'],
             ['CPH2717', 'oneplus=oneplus cph2717'],
             ['CPH2719', 'oneplus=oneplus cph2719'],
+            ['CPH2747', 'oneplus=oneplus cph2747'],
+            ['CPH2745', 'oneplus=oneplus cph2745'],
+            ['PLK110', 'oneplus=oneplus plk110'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -636,6 +640,10 @@ final class DeviceTest extends TestCase
             ['CPH2737', 'oppo=oppo cph2737'],
             ['PLA110', 'oppo=oppo pla110'],
             ['CPH2755', 'oppo=oppo cph2755'],
+            ['OPD2405', 'oppo=oppo opd2405'],
+            ['OPD2415', 'oppo=oppo opd2415'],
+            ['OPD2480', 'oppo=oppo opd2480'],
+            ['OPD2481', 'oppo=oppo opd2481'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -1214,6 +1222,7 @@ final class DeviceTest extends TestCase
             ['25060RK16C', 'xiaomi=xiaomi 25060rk16c'],
             ['25080RABDC', 'xiaomi=xiaomi 25080rabdc'],
             ['25104RADAC', 'xiaomi=xiaomi 25104radac'],
+            ['Redmi Note 12R', 'xiaomi=xiaomi redmi note 12r'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -2640,6 +2649,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-S721U1', 'samsung=samsung sm-s721u1'],
             ['SM-S721W', 'samsung=samsung sm-s721w'],
             ['SAMSUNG SM-S721W', 'samsung=samsung sm-s721w'],
+            ['SM-S721Q', 'samsung=samsung sm-s721q'],
+            ['SAMSUNG SM-S721Q', 'samsung=samsung sm-s721q'],
             ['SM-S727VL', 'samsung=samsung sm-s727vl'],
             ['SAMSUNG SM-S727VL', 'samsung=samsung sm-s727vl'],
             ['SM-S737TL', 'samsung=samsung sm-s737tl'],
@@ -2956,12 +2967,13 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-X130', 'samsung=samsung sm-x130'],
             ['SM-X133', 'samsung=samsung sm-x133'],
             ['SAMSUNG SM-X133', 'samsung=samsung sm-x133'],
-            ['SM-X135', 'samsung=samsung sm-m135fu'],
-            ['SAMSUNG SM-X135', 'samsung=samsung sm-m135fu'],
+            ['SM-X135', 'samsung=samsung sm-x135'],
+            ['SAMSUNG SM-X135', 'samsung=samsung sm-x135'],
             ['SM-X135F', 'samsung=samsung sm-x135f'],
             ['SAMSUNG SM-X135F', 'samsung=samsung sm-x135f'],
             ['SM-S917N', 'samsung=samsung sm-s917n'],
             ['SAMSUNG SM-S917N', 'samsung=samsung sm-s917n'],
+            ['SC-42A', 'samsung=samsung sc-42a'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3532,6 +3544,7 @@ final class DeviceTest extends TestCase
             ['LIO-N29', 'huawei=huawei lio-n29'],
             ['LIO-L29', 'huawei=huawei lio-l29'],
             ['LIO-L09', 'huawei=huawei lio-l09'],
+            ['PPG-AN00', 'huawei=huawei ppg-an00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -3653,6 +3666,7 @@ final class DeviceTest extends TestCase
             ['XiaoXin Pad 2022', 'lenovo=lenovo xiaoxin pad 2022'],
             ['Lenovo N23 Yoga/Flex 11 Chromebook', 'lenovo=lenovo n23 yoga/flex 11 chromebook'],
             ['TB330FUP', 'lenovo=lenovo tb330fup'],
+            ['A301LV', 'lenovo=lenovo a301lv'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -4239,6 +4253,7 @@ final class DeviceTest extends TestCase
             ['SOG12', 'sony=sony sog12'],
             ['Xperia E3 (AOSP)', 'sony=sony xperia e3'],
             ['Xperia E3 (AOSP', 'sony=sony xperia e3'],
+            ['A301SO', 'sony=sony a301so'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -4587,6 +4602,9 @@ final class DeviceTest extends TestCase
             ['V1838T', 'vivo=vivo v1838t'],
             ['V2144', 'vivo=vivo v2144'],
             ['V2166A', 'vivo=vivo v2166a'],
+            ['PA2455', 'vivo=vivo pa2455'],
+            ['PA2511', 'vivo=vivo pa2511'],
+            ['PA2573', 'vivo=vivo pa2573'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -5663,6 +5681,7 @@ final class DeviceTest extends TestCase
             ['SH-S50', 'sharp=sharp sh-s50'],
             ['A201SH', 'sharp=sharp a201sh'],
             ['SH-53D', 'sharp=sharp sh-53d'],
+            ['SH-M19s-y', 'sharp=sharp sh-m19s-y'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],
@@ -5922,6 +5941,7 @@ final class DeviceTest extends TestCase
             ['Phone (2a)', 'nothing-phone=nothing-phone phone 2a'],
             ['Phone (2a', 'nothing-phone=nothing-phone phone 2a'],
             ['A001', 'nothing-phone=nothing-phone a001'],
+            ['A024', 'nothing-phone=nothing-phone a024'],
             // doro
             ['DSB-0220', 'doro=doro dsb-0220'],
             ['DSB-0230', 'doro=doro dsb-0230'],
@@ -7269,6 +7289,7 @@ final class DeviceTest extends TestCase
             // fujitsu
             ['F-51E', 'fujitsu=fujitsu f-51e'],
             ['A101FC', 'fujitsu=fujitsu a101fc'],
+            ['F-51C', 'fujitsu=fujitsu f-51c'],
             // bigben
             ['BB8252', 'bigben=bigben bb8252'],
             ['Bigtech_B_RU', 'bigben=bigben bigtech b'],

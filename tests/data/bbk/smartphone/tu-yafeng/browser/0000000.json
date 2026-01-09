@@ -182,5 +182,51 @@
       "version": "107.0.5304.141",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "x-requested-with": "mark.via.gp",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; PDHM00 Build/TP1A.220905.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PDHM00",
+      "marketingName": "Ace 2 5G",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Via Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Tu Yafeng",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.129",
+      "manufacturer": "Google"
+    }
   }
 ]

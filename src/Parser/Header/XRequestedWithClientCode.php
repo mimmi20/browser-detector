@@ -383,6 +383,9 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.android.launcher3' => 'android-launcher',
             'pure.lite.browser' => 'pure-lite-browser',
             'de.inseven.dogtorance' => 'dogtorance-app',
+            'jp.naver.line.android' => 'line',
+            'com.netqin.ps' => 'vault-app',
+            'com.dubox.drive' => 'terabox-app',
             default => null,
         };
     }

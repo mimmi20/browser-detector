@@ -4426,6 +4426,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Dogtorance',
                 'key' => 'dog-torance',
             ],
+            [
+                'type' => 'Wafer',
+                'name' => 'Wafer Co.',
+                'brandname' => 'Wafer',
+                'key' => 'wafer',
+            ],
+            [
+                'type' => 'Flextech',
+                'name' => 'Flextech Inc.',
+                'brandname' => 'Flextech',
+                'key' => 'flextech',
+            ],
         ];
     }
 

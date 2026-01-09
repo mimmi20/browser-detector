@@ -113,6 +113,7 @@ final class Device implements DeviceInterface
             'a10-21_eea' => 'acer=acer a10-21_eea',
             'a410_4g' => 'acer=acer a410_4g',
             'chromebook 14 (cb3-431)', 'chromebook 14 (cb3-431' => 'acer=acer chromebook 14',
+            'm10-11' => 'acer=acer m10-11',
             // AllCall
             'atom' => 'allcall=allcall atom',
             'hero_20_pro' => 'allcall=allcall hero 20 pro',
@@ -439,6 +440,9 @@ final class Device implements DeviceInterface
             'cph2709' => 'oneplus=oneplus cph2709',
             'cph2717' => 'oneplus=oneplus cph2717',
             'cph2719' => 'oneplus=oneplus cph2719',
+            'cph2747' => 'oneplus=oneplus cph2747',
+            'cph2745' => 'oneplus=oneplus cph2745',
+            'plk110' => 'oneplus=oneplus plk110',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -606,6 +610,10 @@ final class Device implements DeviceInterface
             'cph2737' => 'oppo=oppo cph2737',
             'pla110' => 'oppo=oppo pla110',
             'cph2755' => 'oppo=oppo cph2755',
+            'opd2405' => 'oppo=oppo opd2405',
+            'opd2415' => 'oppo=oppo opd2415',
+            'opd2480' => 'oppo=oppo opd2480',
+            'opd2481' => 'oppo=oppo opd2481',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1181,6 +1189,7 @@ final class Device implements DeviceInterface
             '25060rk16c' => 'xiaomi=xiaomi 25060rk16c',
             '25080rabdc' => 'xiaomi=xiaomi 25080rabdc',
             '25104radac' => 'xiaomi=xiaomi 25104radac',
+            'redmi note 12r' => 'xiaomi=xiaomi redmi note 12r',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2135,6 +2144,7 @@ final class Device implements DeviceInterface
             'sm-s721u', 'samsung sm-s721u' => 'samsung=samsung sm-s721u',
             'sm-s721u1', 'samsung sm-s721u1' => 'samsung=samsung sm-s721u1',
             'sm-s721w', 'samsung sm-s721w' => 'samsung=samsung sm-s721w',
+            'sm-s721q', 'samsung sm-s721q' => 'samsung=samsung sm-s721q',
             'sm-s727vl', 'samsung sm-s727vl' => 'samsung=samsung sm-s727vl',
             'sm-s737tl', 'samsung sm-s737tl' => 'samsung=samsung sm-s737tl',
             'sm-s757bl', 'samsung sm-s757bl' => 'samsung=samsung sm-s757bl',
@@ -2299,6 +2309,7 @@ final class Device implements DeviceInterface
             'sm-x135', 'samsung sm-x135' => 'samsung=samsung sm-x135',
             'sm-x135f', 'samsung sm-x135f' => 'samsung=samsung sm-x135f',
             'sm-s917n', 'samsung sm-s917n' => 'samsung=samsung sm-s917n',
+            'sc-42a' => 'samsung=samsung sc-42a',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2865,6 +2876,7 @@ final class Device implements DeviceInterface
             'lio-n29' => 'huawei=huawei lio-n29',
             'lio-l29' => 'huawei=huawei lio-l29',
             'lio-l09' => 'huawei=huawei lio-l09',
+            'ppg-an00' => 'huawei=huawei ppg-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2976,6 +2988,7 @@ final class Device implements DeviceInterface
             'xiaoxin pad 2022' => 'lenovo=lenovo xiaoxin pad 2022',
             'lenovo n23 yoga/flex 11 chromebook' => 'lenovo=lenovo n23 yoga/flex 11 chromebook',
             'tb330fup' => 'lenovo=lenovo tb330fup',
+            'a301lv' => 'lenovo=lenovo a301lv',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -3558,6 +3571,7 @@ final class Device implements DeviceInterface
             'sog06' => 'sony=sony sog06',
             'sog12' => 'sony=sony sog12',
             'xperia e3 (aosp)', 'xperia e3 (aosp' => 'sony=sony xperia e3',
+            'a301so' => 'sony=sony a301so',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -3904,6 +3918,9 @@ final class Device implements DeviceInterface
             'v1838t' => 'vivo=vivo v1838t',
             'v2144' => 'vivo=vivo v2144',
             'v2166a' => 'vivo=vivo v2166a',
+            'pa2455' => 'vivo=vivo pa2455',
+            'pa2511' => 'vivo=vivo pa2511',
+            'pa2573' => 'vivo=vivo pa2573',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4949,6 +4966,7 @@ final class Device implements DeviceInterface
             'sh-s50' => 'sharp=sharp sh-s50',
             'a201sh' => 'sharp=sharp a201sh',
             'sh-53d' => 'sharp=sharp sh-53d',
+            'sh-m19s-y' => 'sharp=sharp sh-m19s-y',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
@@ -5205,6 +5223,7 @@ final class Device implements DeviceInterface
             'ain065' => 'nothing-phone=nothing-phone ain065',
             'phone (2a)', 'phone (2a' => 'nothing-phone=nothing-phone phone 2a',
             'a001' => 'nothing-phone=nothing-phone a001',
+            'a024' => 'nothing-phone=nothing-phone a024',
             // doro
             'dsb-0220' => 'doro=doro dsb-0220',
             'dsb-0230' => 'doro=doro dsb-0230',
@@ -6396,6 +6415,7 @@ final class Device implements DeviceInterface
             // fujitsu
             'f-51e' => 'fujitsu=fujitsu f-51e',
             'a101fc' => 'fujitsu=fujitsu a101fc',
+            'f-51c' => 'fujitsu=fujitsu f-51c',
             // bigben
             'bb8252' => 'bigben=bigben bb8252',
             'bigtech_b_ru' => 'bigben=bigben bigtech b',

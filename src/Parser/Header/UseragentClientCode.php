@@ -54,10 +54,8 @@ final readonly class UseragentClientCode implements ClientCodeInterface
     public function getClientCode(string $value): string | null
     {
         if (
-            preg_match(
-                '/Android \d+; [A-Za-z0-9]{10}; U; [^;)]*\) AppleWebKit\/.+Chrome\//',
-                $value,
-            )
+            preg_match('/Android \d+; [A-Za-z0-9]{10}; U; [^;)]*\) AppleWebKit\/.+Chrome\//', $value)
+            && !preg_match('/tenta/i', $value)
         ) {
             return 'avast secure browser';
         }

@@ -221,8 +221,8 @@
     },
     "engine": null
   },
-  "microsoft-start": {
-    "name": "Start",
+  "msn-app": {
+    "name": "MSN",
     "manufacturer": "microsoft",
     "type": "mobile-application",
     "version": {
@@ -230,16 +230,6 @@
       "search": [
         "NewsSapphire"
       ]
-    },
-    "engine": null
-  },
-  "msn-app": {
-    "name": "MSN",
-    "manufacturer": "microsoft",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
     },
     "engine": null
   },
@@ -1303,8 +1293,8 @@
     },
     "engine": "unknown"
   },
-  "google-quicksearch-box": {
-    "name": "Google Quicksearch Box",
+  "google-app": {
+    "name": "Google",
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
@@ -4359,6 +4349,50 @@
       "search": [
         "dogtorance"
       ]
+    },
+    "engine": null
+  },
+  "vault-app": {
+    "name": "Vault",
+    "manufacturer": "wafer",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Vault"
+      ]
+    },
+    "engine": null
+  },
+  "terabox-app": {
+    "name": "TeraBox",
+    "manufacturer": "flextech",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TeraBox"
+      ]
+    },
+    "engine": null
+  },
+  "netflix-app": {
+    "name": "Netflix App",
+    "manufacturer": "netflix",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "readly-app": {
+    "name": "readly App",
+    "manufacturer": "readly",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": null
   }

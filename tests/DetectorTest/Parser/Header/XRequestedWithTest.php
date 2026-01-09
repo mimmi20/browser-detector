@@ -556,6 +556,9 @@ final class XRequestedWithTest extends TestCase
             ['com.android.launcher3', true, 'android-launcher', true, null, false, Os::unknown],
             ['pure.lite.browser', true, 'pure-lite-browser', true, null, false, Os::unknown],
             ['de.inseven.dogtorance', true, 'dogtorance-app', true, null, false, Os::unknown],
+            ['jp.naver.line.android', true, 'line', true, null, false, Os::unknown],
+            ['com.netqin.ps', true, 'vault-app', true, null, false, Os::unknown],
+            ['com.dubox.drive', true, 'terabox-app', true, null, false, Os::unknown],
         ];
     }
 }

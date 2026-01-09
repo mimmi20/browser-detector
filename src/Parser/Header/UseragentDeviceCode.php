@@ -56,12 +56,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
     #[Override]
     public function getDeviceCode(string $value): string | null
     {
-        if (
-            preg_match(
-                '/Android \d+; [A-Za-z0-9]{10}; U; [^;)]*\) AppleWebKit\/.+Chrome\//',
-                $value,
-            )
-        ) {
+        if (preg_match('/Android \d+; [A-Za-z0-9]{10}; U; [^;)]*\) AppleWebKit\/.+Chrome\//', $value)) {
             return 'unknown=general mobile phone';
         }
 
