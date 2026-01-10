@@ -2986,7 +2986,7 @@ final class Device implements DeviceInterface
             'l38043', 'lenovo l38043' => 'lenovo=lenovo l38043',
             'tb138fc', 'lenovo tb138fc' => 'lenovo=lenovo tb138fc',
             'xiaoxin pad 2022' => 'lenovo=lenovo xiaoxin pad 2022',
-            'lenovo n23 yoga/flex 11 chromebook' => 'lenovo=lenovo n23 yoga/flex 11 chromebook',
+            'lenovo n23 yoga/flex 11 chromebook', 'lenovo n23 yoga' => 'lenovo=lenovo n23 yoga/flex 11 chromebook',
             'tb330fup' => 'lenovo=lenovo tb330fup',
             'a301lv' => 'lenovo=lenovo a301lv',
             // Nokia

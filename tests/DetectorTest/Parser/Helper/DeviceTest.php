@@ -3665,6 +3665,7 @@ final class DeviceTest extends TestCase
             ['Lenovo TB138FC', 'lenovo=lenovo tb138fc'],
             ['XiaoXin Pad 2022', 'lenovo=lenovo xiaoxin pad 2022'],
             ['Lenovo N23 Yoga/Flex 11 Chromebook', 'lenovo=lenovo n23 yoga/flex 11 chromebook'],
+            ['Lenovo N23 Yoga', 'lenovo=lenovo n23 yoga/flex 11 chromebook'],
             ['TB330FUP', 'lenovo=lenovo tb330fup'],
             ['A301LV', 'lenovo=lenovo a301lv'],
             // Nokia

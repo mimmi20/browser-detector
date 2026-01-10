@@ -4438,6 +4438,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Flextech',
                 'key' => 'flextech',
             ],
+            [
+                'type' => 'Fly',
+                'name' => 'Fly',
+                'brandname' => 'Fly',
+                'key' => 'fly',
+            ],
         ];
     }
 

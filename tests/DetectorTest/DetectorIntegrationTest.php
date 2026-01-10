@@ -5233,6 +5233,106 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'CPH2747',
+                        'marketingName' => '15',
+                        'manufacturer' => 'BBK',
+                        'brand' => 'OnePlus',
+                        'dualOrientation' => true,
+                        'simCount' => 2,
+                        'display' => [
+                            'width' => 2772,
+                            'height' => 1272,
+                            'touch' => true,
+                            'size' => 6.78,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '16.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Chrome WebView',
+                        'modus' => null,
+                        'version' => '142.0.7444.171',
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '142.0.7444.171',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'user-agent' => 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; hi-IN) Presto/2.5.28 Version/10.10',
+                ],
+                [
+                    'headers' => [
+                        'user-agent' => 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; hi-IN) Presto/2.5.28 Version/10.10',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-P615',
+                        'marketingName' => 'Galaxy Tab S6 Lite 10.4" LTE',
+                        'manufacturer' => 'Samsung',
+                        'brand' => 'Samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2000,
+                            'height' => 1200,
+                            'touch' => true,
+                            'size' => 10.4,
+                        ],
+                        'type' => 'fone-pad',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '11.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'MSN',
+                        'modus' => null,
+                        'version' => '23.3.400920606',
+                        'manufacturer' => 'Microsoft',
+                        'type' => 'mobile-application',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '95.0.4638.69',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }
