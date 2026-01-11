@@ -163,6 +163,7 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Linux like Android; de_DE) AppleWebKit/534.34 PocketBook/626 (screen 758x1024; FW O626.4.4.979) Mobile'],
             ['Jam/2.0.4 iOS/16.3.1 (www.listentojam.com)'],
             ['KKBOX/7.10.70/iOS/14.2'],
+            ['BIRD S710_BLEU/1.00 Nucleus RTOS/V1.11.19 MTK6223/07A Release/07.28.2007 Browser/Teleca'],
         ];
     }
 

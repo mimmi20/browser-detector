@@ -3605,6 +3605,51 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "Redmi Note 12R",
+      "marketingName": "Redmi Note 12R",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.79
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Mi Browser",
+      "modus": null,
+      "version": "14.6.0",
+      "manufacturer": "Xiaomi",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.5615.136",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 13; en-gb; Redmi Note 12R Pro Build/TKQ1.221013.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.9.1-gn"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "MI Note",
       "marketingName": "MI Note",
       "manufacturer": "Xiaomi",
@@ -3632,7 +3677,7 @@
     "client": {
       "name": "Mi Browser",
       "modus": null,
-      "version": "14.6.0",
+      "version": "14.9.1",
       "manufacturer": "Xiaomi",
       "type": "browser",
       "isbot": false,

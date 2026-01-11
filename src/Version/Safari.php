@@ -44,7 +44,7 @@ final readonly class Safari implements VersionFactoryInterface
         $regexes = [
             '/version\/(?P<version>[\d\.]+)/i',
             '/NetworkingExtension\/.+ Network\/.+ iOS\/(?P<version>[\d\.]+)/',
-            '/(Safari|com\.apple\.WebKit\.Networking|NetworkingExtension)\/(?P<version>[\d\.]+)/',
+            '/(Safari|com\.apple\.WebKit\.Networking|NetworkingExtension|Safari Technology Preview|safarifetcherd)\/(?P<version>[\d\.]+)/',
         ];
 
         $filtered = array_filter(

@@ -141,9 +141,9 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             $filtered,
         );
 
-        $detectedVersion = reset($results);
+        $detectedVersion = array_first($results);
 
-        if ($detectedVersion !== null && $detectedVersion !== false && $detectedVersion !== '') {
+        if ($detectedVersion !== null && $detectedVersion !== '') {
             return $this->setVersion($detectedVersion);
         }
 

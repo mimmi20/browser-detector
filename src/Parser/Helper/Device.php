@@ -1190,6 +1190,7 @@ final class Device implements DeviceInterface
             '25080rabdc' => 'xiaomi=xiaomi 25080rabdc',
             '25104radac' => 'xiaomi=xiaomi 25104radac',
             'redmi note 12r' => 'xiaomi=xiaomi redmi note 12r',
+            'redmi note 12r pro' => 'xiaomi=xiaomi redmi note 12r pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3409,6 +3410,7 @@ final class Device implements DeviceInterface
             'xt2163-4' => 'motorola=motorola xt2163-4',
             'xt2163-1' => 'motorola=motorola xt2163-1',
             'xt2163-2' => 'motorola=motorola xt2163-2',
+            'moto g64 5g' => 'motorola=motorola moto g64 5g',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -7104,6 +7106,11 @@ final class Device implements DeviceInterface
             'hp chromebook x2' => 'hp=hp chromebook x2',
             // lnmbbs
             'p40-eea' => 'lnmbbs=lnmbbs p40-eea',
+            // tyd
+            'tyd-107' => 'tyd=tyd tyd-107',
+            'tyd-108h' => 'tyd=tyd tyd-108h',
+            'tyd-109' => 'tyd=tyd tyd-109',
+            'tyd-109_pro' => 'tyd=tyd tyd-109 pro',
             // other
             default => null,
         };

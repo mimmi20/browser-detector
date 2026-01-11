@@ -1483,6 +1483,8 @@ enum Company: string implements CompanyInterface
 
     case fly = 'Fly';
 
+    case tyd = 'TenYiDe';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2222,6 +2224,7 @@ enum Company: string implements CompanyInterface
             'wafer', 'wafer co.' => self::wafer,
             'flextech', 'flextech inc.' => self::flextech,
             'fly' => self::fly,
+            'tyd', 'tenyide' => self::tyd,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

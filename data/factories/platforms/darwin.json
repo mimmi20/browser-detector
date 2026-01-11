@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/(networkingextension|com\\.apple\\.webkit\\.networking|safariviewservice)\\/[\\d\\.]+ .* darwin\\//i": "mac os x",
+    "/(networkingextension|com\\.apple\\.webkit\\.networking|safariviewservice|safari technology preview|safarifetcherd)\\/[\\d\\.]+ .* darwin\\//i": "mac os x",
     "/(networkingextension|com\\.apple\\.webkit\\.networking)\\/[\\d\\.]+ .* ios\\//i": "ios",
     "/(mobilesafari)\\/[\\d\\.]+ .* darwin\\//i": "ios",
     "/cfnetwork\\/.+ darwin\\/(?:[\\d\\.]+).+(?:x86_64|i386|power macintosh)|(?:x86_64-apple-)?darwin(?:[\\d\\.]+)|cpython\\/[\\d\\.]+ darwin\\/[\\d\\.]+/i": "mac os x",

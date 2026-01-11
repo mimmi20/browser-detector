@@ -1223,6 +1223,7 @@ final class DeviceTest extends TestCase
             ['25080RABDC', 'xiaomi=xiaomi 25080rabdc'],
             ['25104RADAC', 'xiaomi=xiaomi 25104radac'],
             ['Redmi Note 12R', 'xiaomi=xiaomi redmi note 12r'],
+            ['Redmi Note 12R Pro', 'xiaomi=xiaomi redmi note 12r pro'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -4091,6 +4092,7 @@ final class DeviceTest extends TestCase
             ['XT2163-4', 'motorola=motorola xt2163-4'],
             ['XT2163-1', 'motorola=motorola xt2163-1'],
             ['XT2163-2', 'motorola=motorola xt2163-2'],
+            ['moto g64 5G', 'motorola=motorola moto g64 5g'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -7984,6 +7986,11 @@ final class DeviceTest extends TestCase
             ['HP Chromebook x2', 'hp=hp chromebook x2'],
             // lnmbbs
             ['P40-EEA', 'lnmbbs=lnmbbs p40-eea'],
+            // tyd
+            ['TYD-107', 'tyd=tyd tyd-107'],
+            ['TYD-108H', 'tyd=tyd tyd-108h'],
+            ['TYD-109', 'tyd=tyd tyd-109'],
+            ['TYD-109_Pro', 'tyd=tyd tyd-109 pro'],
             // other
             ['Model"', null],
             [': "', null],

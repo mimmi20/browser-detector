@@ -4444,6 +4444,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Fly',
                 'key' => 'fly',
             ],
+            [
+                'type' => 'TenYiDe',
+                'name' => 'TenYiDe',
+                'brandname' => 'TenYiDe',
+                'key' => 'tyd',
+            ],
         ];
     }
 
