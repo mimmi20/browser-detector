@@ -473,6 +473,10 @@ final class DeviceTest extends TestCase
             ['CPH2747', 'oneplus=oneplus cph2747'],
             ['CPH2745', 'oneplus=oneplus cph2745'],
             ['PLK110', 'oneplus=oneplus plk110'],
+            ['OPD2415', 'oneplus=oneplus opd2415'],
+            ['OPD2480', 'oneplus=oneplus opd2480'],
+            ['OPD2481', 'oneplus=oneplus opd2481'],
+            ['OPD2405', 'oneplus=oneplus opd2405'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -640,10 +644,6 @@ final class DeviceTest extends TestCase
             ['CPH2737', 'oppo=oppo cph2737'],
             ['PLA110', 'oppo=oppo pla110'],
             ['CPH2755', 'oppo=oppo cph2755'],
-            ['OPD2405', 'oppo=oppo opd2405'],
-            ['OPD2415', 'oppo=oppo opd2415'],
-            ['OPD2480', 'oppo=oppo opd2480'],
-            ['OPD2481', 'oppo=oppo opd2481'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -1224,6 +1224,7 @@ final class DeviceTest extends TestCase
             ['25104RADAC', 'xiaomi=xiaomi 25104radac'],
             ['Redmi Note 12R', 'xiaomi=xiaomi redmi note 12r'],
             ['Redmi Note 12R Pro', 'xiaomi=xiaomi redmi note 12r pro'],
+            ['Redmi Note 13', 'xiaomi=xiaomi redmi note 13 4g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],

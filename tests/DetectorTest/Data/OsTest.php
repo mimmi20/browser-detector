@@ -1083,7 +1083,7 @@ final class OsTest extends TestCase
                 'name' => 'HP-UX',
                 'marketingName' => 'HP-UX',
                 'manufacturer' => Company::hp,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
                 'key' => 'hp-ux',
             ],
             [

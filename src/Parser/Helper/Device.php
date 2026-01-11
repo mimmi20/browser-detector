@@ -443,6 +443,10 @@ final class Device implements DeviceInterface
             'cph2747' => 'oneplus=oneplus cph2747',
             'cph2745' => 'oneplus=oneplus cph2745',
             'plk110' => 'oneplus=oneplus plk110',
+            'opd2415' => 'oneplus=oneplus opd2415',
+            'opd2480' => 'oneplus=oneplus opd2480',
+            'opd2481' => 'oneplus=oneplus opd2481',
+            'opd2405' => 'oneplus=oneplus opd2405',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -610,10 +614,6 @@ final class Device implements DeviceInterface
             'cph2737' => 'oppo=oppo cph2737',
             'pla110' => 'oppo=oppo pla110',
             'cph2755' => 'oppo=oppo cph2755',
-            'opd2405' => 'oppo=oppo opd2405',
-            'opd2415' => 'oppo=oppo opd2415',
-            'opd2480' => 'oppo=oppo opd2480',
-            'opd2481' => 'oppo=oppo opd2481',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1191,6 +1191,7 @@ final class Device implements DeviceInterface
             '25104radac' => 'xiaomi=xiaomi 25104radac',
             'redmi note 12r' => 'xiaomi=xiaomi redmi note 12r',
             'redmi note 12r pro' => 'xiaomi=xiaomi redmi note 12r pro',
+            'redmi note 13' => 'xiaomi=xiaomi redmi note 13 4g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',

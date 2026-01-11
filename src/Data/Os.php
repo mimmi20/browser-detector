@@ -739,6 +739,7 @@ enum Os: string implements OsInterface
             self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
             self::aosp => ['factory' => VersionBuilderFactory::class, 'search' => ['Android']],
+            self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
