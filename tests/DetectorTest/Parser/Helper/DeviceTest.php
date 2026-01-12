@@ -1225,6 +1225,7 @@ final class DeviceTest extends TestCase
             ['Redmi Note 12R', 'xiaomi=xiaomi redmi note 12r'],
             ['Redmi Note 12R Pro', 'xiaomi=xiaomi redmi note 12r pro'],
             ['Redmi Note 13', 'xiaomi=xiaomi redmi note 13 4g'],
+            ['Redmi Note 12 Pro Speed', 'xiaomi=xiaomi redmi note 12 pro speed'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
