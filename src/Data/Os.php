@@ -365,6 +365,8 @@ enum Os: string implements OsInterface
 
     case plasmaMobile = 'Plasma Mobile';
 
+    case whaleOS = 'Whale OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -539,6 +541,7 @@ enum Os: string implements OsInterface
             'opensuse' => self::openSuse,
             'linspire' => self::linspire,
             'plasmamobile', 'plasma-mobile', 'plasma mobile' => self::plasmaMobile,
+            'whaleos', 'whale os', 'whale-os' => self::whaleOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -644,6 +647,7 @@ enum Os: string implements OsInterface
             self::lindows, self::linspire => Company::linspire,
             self::openHarmony => Company::openatomFoundation,
             self::plasmaMobile => Company::kde,
+            self::whaleOS => Company::whaleTV,
             default => Company::unknown,
         };
     }
@@ -738,8 +742,9 @@ enum Os: string implements OsInterface
             self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
             self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
-            self::aosp => ['factory' => VersionBuilderFactory::class, 'search' => ['Android']],
+            self::aosp, self::androidtv => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
             self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
+            self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -878,6 +883,7 @@ enum Os: string implements OsInterface
             self::openHarmony => 'openharmony',
             self::openSuse => 'opensuse',
             self::plasmaMobile => 'plasma-mobile',
+            self::whaleOS => 'whale-os',
             default => $this->name,
         };
     }

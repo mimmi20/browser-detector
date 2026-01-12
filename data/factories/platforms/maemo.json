@@ -4,6 +4,7 @@
     "/sailfish/i": "sailfishos",
     "/bada|gt-s5380|s8500/i": "bada",
     "/remixos|remix (?:pro|mini)/i": "remixos",
+    "/wh\\/|whaletv|zeasn/i": "whale-os",
     "/tizen/i": "tizen",
     "/cos;|cos like android|chinese operating system|android; cos|\\(cos [0-9]/i": "cos"
   },

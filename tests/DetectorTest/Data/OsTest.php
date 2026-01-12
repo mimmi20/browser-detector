@@ -147,7 +147,7 @@ final class OsTest extends TestCase
                 'name' => 'Android Opensource Project',
                 'marketingName' => 'AOSP',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Android']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
                 'key' => 'aosp',
             ],
             [
@@ -963,7 +963,7 @@ final class OsTest extends TestCase
                 'name' => 'Android TV',
                 'marketingName' => 'Android TV',
                 'manufacturer' => Company::google,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
                 'key' => 'android-tv',
             ],
             [
@@ -1437,6 +1437,14 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::kde,
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'plasma-mobile',
+            ],
+            [
+                'type' => 'Whale OS',
+                'name' => 'Whale OS',
+                'marketingName' => 'Whale OS',
+                'manufacturer' => Company::whaleTV,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
+                'key' => 'whale-os',
             ],
         ];
     }

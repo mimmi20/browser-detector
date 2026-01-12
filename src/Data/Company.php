@@ -1485,6 +1485,18 @@ enum Company: string implements CompanyInterface
 
     case tyd = 'TenYiDe';
 
+    case torch = 'Torch';
+
+    case compuware = 'Compuware';
+
+    case indurama = 'Indurama';
+
+    case multynet = 'Multynet';
+
+    case whaleTV = 'Whale TV';
+
+    case konka = 'Konka';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2225,6 +2237,12 @@ enum Company: string implements CompanyInterface
             'flextech', 'flextech inc.' => self::flextech,
             'fly' => self::fly,
             'tyd', 'tenyide' => self::tyd,
+            'torch', 'torch mobile' => self::torch,
+            'compuware', 'compuware corporation', 'compuware-apm' => self::compuware,
+            'indurama' => self::indurama,
+            'multynet' => self::multynet,
+            'whaletv', 'whale-tv', 'whale tv pte. ltd.', 'whale tv' => self::whaleTV,
+            'konka' => self::konka,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2465,6 +2483,9 @@ enum Company: string implements CompanyInterface
             self::cosmix => 'Cosmix Corporation',
             self::wafer => 'Wafer Co.',
             self::flextech => 'Flextech Inc.',
+            self::torch => 'Torch Mobile',
+            self::compuware => 'Compuware Corporation',
+            self::whaleTV => 'Whale TV PTE. LTD.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2686,6 +2707,8 @@ enum Company: string implements CompanyInterface
             self::sonyEricsson => 'sony-ericsson',
             self::docomo => 'ntt-docomo',
             self::dogTorance => 'dog-torance',
+            self::compuware => 'compuware-apm',
+            self::whaleTV => 'whale-tv',
             default => $this->name,
         };
     }

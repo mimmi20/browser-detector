@@ -4450,6 +4450,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'TenYiDe',
                 'key' => 'tyd',
             ],
+            [
+                'type' => 'Torch',
+                'name' => 'Torch Mobile',
+                'brandname' => 'Torch',
+                'key' => 'torch',
+            ],
+            [
+                'type' => 'Compuware',
+                'name' => 'Compuware Corporation',
+                'brandname' => 'Compuware',
+                'key' => 'compuware-apm',
+            ],
+            [
+                'type' => 'Indurama',
+                'name' => 'Indurama',
+                'brandname' => 'Indurama',
+                'key' => 'indurama',
+            ],
+            [
+                'type' => 'Multynet',
+                'name' => 'Multynet',
+                'brandname' => 'Multynet',
+                'key' => 'multynet',
+            ],
+            [
+                'type' => 'Whale TV',
+                'name' => 'Whale TV PTE. LTD.',
+                'brandname' => 'Whale TV',
+                'key' => 'whale-tv',
+            ],
+            [
+                'type' => 'Konka',
+                'name' => 'Konka',
+                'brandname' => 'Konka',
+                'key' => 'konka',
+            ],
         ];
     }
 

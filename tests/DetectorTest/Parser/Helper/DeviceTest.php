@@ -929,6 +929,7 @@ final class DeviceTest extends TestCase
             ['XIG04', 'xiaomi=xiaomi xig04'],
             ['2306EPN60R', 'xiaomi=xiaomi 2306epn60r'],
             ['Redmi Note 13 Pro 5G', 'xiaomi=xiaomi redmi note 13 pro 5g'],
+            ['Redmi Note 13 Pro', 'xiaomi=xiaomi redmi note 13 pro 4g'],
             ['2312DRA50C', 'xiaomi=xiaomi 2312dra50c'],
             ['XIG05', 'xiaomi=xiaomi xig05'],
             ['2312CRAD3C', 'xiaomi=xiaomi 2312crad3c'],
@@ -7975,6 +7976,7 @@ final class DeviceTest extends TestCase
             ['VOIX_U10', 'voix=voix u10'],
             // yasin
             ['YASIN 4K Android TV', 'yasin=yasin 4k smart tv'],
+            ['YASIN 2K Android TV', 'yasin=yasin 2k smart tv'],
             // suaat
             ['S3_U_EEA', 'suaat=suaat s3_u_eea'],
             // g-tab
@@ -7993,6 +7995,12 @@ final class DeviceTest extends TestCase
             ['TYD-108H', 'tyd=tyd tyd-108h'],
             ['TYD-109', 'tyd=tyd tyd-109'],
             ['TYD-109_Pro', 'tyd=tyd tyd-109 pro'],
+            // indurama
+            ['INDURAMA GOOGLE TV 4K', 'indurama=indurama 4k smart tv'],
+            // multynet
+            ['MULTYNET FHD Android TV', 'multynet=multynet 2k smart tv'],
+            // konka
+            ['KONKA 2K Android TV', 'konka=konka 2k smart tv'],
             // other
             ['Model"', null],
             [': "', null],

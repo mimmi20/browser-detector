@@ -897,6 +897,7 @@ final class Device implements DeviceInterface
             '2306epn60r' => 'xiaomi=xiaomi 2306epn60r',
             'xig05' => 'xiaomi=xiaomi xig05',
             'redmi note 13 pro 5g' => 'xiaomi=xiaomi redmi note 13 pro 5g',
+            'redmi note 13 pro' => 'xiaomi=xiaomi redmi note 13 pro 4g',
             '2312dra50c' => 'xiaomi=xiaomi 2312dra50c',
             '2312crad3c' => 'xiaomi=xiaomi 2312crad3c',
             '2312dra50i' => 'xiaomi=xiaomi 2312dra50i',
@@ -7095,6 +7096,7 @@ final class Device implements DeviceInterface
             'voix_u10' => 'voix=voix u10',
             // yasin
             'yasin 4k android tv' => 'yasin=yasin 4k smart tv',
+            'yasin 2k android tv' => 'yasin=yasin 2k smart tv',
             // suaat
             's3_u_eea' => 'suaat=suaat s3_u_eea',
             // g-tab
@@ -7113,6 +7115,12 @@ final class Device implements DeviceInterface
             'tyd-108h' => 'tyd=tyd tyd-108h',
             'tyd-109' => 'tyd=tyd tyd-109',
             'tyd-109_pro' => 'tyd=tyd tyd-109 pro',
+            // indurama
+            'indurama google tv 4k' => 'indurama=indurama 4k smart tv',
+            // multynet
+            'multynet fhd android tv' => 'multynet=multynet 2k smart tv',
+            // konka
+            'konka 2k android tv' => 'konka=konka 2k smart tv',
             // other
             default => null,
         };
