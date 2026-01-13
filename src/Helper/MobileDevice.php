@@ -44,7 +44,12 @@ final class MobileDevice implements MobileDeviceInterface
             return true;
         }
 
-        if (preg_match('/windows nt.*(mobile safari|opera mobi|iphone|openwave)|fbid\/desktop|debian|windowswechat/i', $useragent)) {
+        if (
+            preg_match(
+                '/windows nt.*(mobile safari|opera mobi|iphone|openwave)|fbid\/desktop|debian|windowswechat|tv safari/i',
+                $useragent,
+            )
+        ) {
             return false;
         }
 
@@ -61,7 +66,12 @@ final class MobileDevice implements MobileDeviceInterface
             return true;
         }
 
-        if (preg_match('/networkingextension\/[\d.]+ .* ios\/|micromessenger|surftab|j2me\/midp|lenovotablet/i', $useragent)) {
+        if (
+            preg_match(
+                '/networkingextension\/[\d.]+ .* ios\/|micromessenger|surftab|j2me\/midp|lenovotablet/i',
+                $useragent,
+            )
+        ) {
             return true;
         }
 

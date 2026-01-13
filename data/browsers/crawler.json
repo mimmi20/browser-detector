@@ -1016,5 +1016,29 @@
       "search": null
     },
     "engine": null
+  },
+  "adbeat bot": {
+    "name": "Adbeat Bot",
+    "manufacturer": "adbeat",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "adbeat\\.com"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "perplexity-bot": {
+    "name": "PerplexityBot",
+    "manufacturer": "perplexity",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PerplexityBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

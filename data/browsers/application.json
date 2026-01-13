@@ -129,8 +129,8 @@
     },
     "engine": null
   },
-  "basecamp3": {
-    "name": "Basecamp3",
+  "basecamp": {
+    "name": "Basecamp",
     "manufacturer": "basecamp",
     "type": "application",
     "version": {
@@ -152,18 +152,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "beonex communicator": {
-    "name": "Beonex Communicator",
-    "manufacturer": "beonex-business-services",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Beonex"
-      ]
-    },
-    "engine": null
   },
   "billigfluegefinal app": {
     "name": "billigFluegeFinal App",
@@ -784,20 +772,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "perfect browser": {
-    "name": "Perfect Browser",
-    "manufacturer": "app-simply",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Perfect Browser",
-        "Perfect Browser\\-iPad",
-        "Perfect Browser"
-      ]
-    },
-    "engine": "webkit"
   },
   "phantomas": {
     "name": "phantomas",

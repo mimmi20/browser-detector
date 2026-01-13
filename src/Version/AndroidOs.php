@@ -17,8 +17,12 @@ use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
 use UnexpectedValueException;
 
+use function array_filter;
+use function array_first;
+use function array_map;
 use function mb_stripos;
 use function preg_match;
+use function str_replace;
 
 final readonly class AndroidOs implements VersionFactoryInterface
 {

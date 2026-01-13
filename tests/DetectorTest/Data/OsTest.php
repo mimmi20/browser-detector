@@ -491,7 +491,7 @@ final class OsTest extends TestCase
                 'name' => 'Unix',
                 'marketingName' => 'Unix',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix OS', 'Unix']],
                 'key' => 'unix',
             ],
             [
@@ -1243,7 +1243,7 @@ final class OsTest extends TestCase
                 'name' => 'Nucleus OS',
                 'marketingName' => 'Nucleus',
                 'manufacturer' => Company::acceleratedTechnology,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Nucleus']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Nucleus', 'MTK']],
                 'key' => 'nucleus os',
             ],
             [

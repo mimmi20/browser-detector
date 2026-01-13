@@ -170,18 +170,6 @@
     },
     "engine": "unknown"
   },
-  "adbeat bot": {
-    "name": "Adbeat Bot",
-    "manufacturer": "adbeat",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "adbeat\\.com"
-      ]
-    },
-    "engine": "unknown"
-  },
   "adcrawler": {
     "name": "AdCrawler",
     "manufacturer": "unknown",
@@ -1775,18 +1763,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bluecoat DRTR"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "easouspider": {
-    "name": "EasouSpider",
-    "manufacturer": "easou",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "EasouSpider"
       ]
     },
     "engine": "unknown"

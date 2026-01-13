@@ -633,16 +633,6 @@
     },
     "engine": "webkit"
   },
-  "stitcher": {
-    "name": "Stitcher",
-    "manufacturer": "deezer",
-    "type": "multimedia-player",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "streaming player": {
     "name": "Streaming Player",
     "manufacturer": "htc",
@@ -857,6 +847,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Juice"
+      ]
+    },
+    "engine": null
+  },
+  "xtream-player": {
+    "name": "Xtream Player",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.devcoder\\.iptvxtreamplayer"
       ]
     },
     "engine": null

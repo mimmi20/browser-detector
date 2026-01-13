@@ -224,6 +224,10 @@ final class IosTest extends TestCase
                 'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/25.3.0',
                 '26.3.0',
             ],
+            [
+                'kicktipp-ios 2.2.6 on iPhone3,1 with iOS 7.0.6 at 640x960',
+                '7.0.6',
+            ],
         ];
     }
 

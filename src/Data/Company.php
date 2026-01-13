@@ -1497,6 +1497,50 @@ enum Company: string implements CompanyInterface
 
     case konka = 'Konka';
 
+    case easou = 'easou';
+
+    case marketwire = 'Marketwire';
+
+    case richardTrautvetter = 'Richard Trautvetter';
+
+    case beonexBusinessServices = 'Beonex Business Services';
+
+    case deezer = 'Deezer';
+
+    case webin = 'Webin';
+
+    case appSimply = 'AppSimply';
+
+    case bloop = 'Bloop';
+
+    case woxter = 'Woxter';
+
+    case iridiumBrowserTeam = 'Iridium Browser Team';
+
+    case cocCoc = 'Cốc Cốc';
+
+    case adaptiveBee = 'AdaptiveBee';
+
+    case x115com = '115.com';
+
+    case digitalPebble = 'DigitalPebble';
+
+    case basecamp = 'Basecamp';
+
+    case adbeat = 'Adbeat';
+
+    case kinza = 'kinza.jp';
+
+    case postbox = 'Postbox';
+
+    case kkbox = 'KKBOX';
+
+    case nortonLifeLock = 'NortonLifeLock';
+
+    case foundry376 = 'Foundry 376';
+
+    case cryptoPro = 'CRYPTO-PRO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2243,6 +2287,28 @@ enum Company: string implements CompanyInterface
             'multynet' => self::multynet,
             'whaletv', 'whale-tv', 'whale tv pte. ltd.', 'whale tv' => self::whaleTV,
             'konka' => self::konka,
+            'easou', 'easou icp' => self::easou,
+            'marketwire', 'marketwire l.p.' => self::marketwire,
+            'richardtrautvetter', 'richard-trautvetter', 'richard trautvetter' => self::richardTrautvetter,
+            'beonexbusinessservices', 'beonex-business-services', 'beonex business services' => self::beonexBusinessServices,
+            'deezer' => self::deezer,
+            'webin' => self::webin,
+            'appsimply', 'app-simply', 'appsimply, llc' => self::appSimply,
+            'bloop', 'bloop s.r.l.' => self::bloop,
+            'woxter' => self::woxter,
+            'iridiumbrowserteam', 'iridium-browser-team', 'iridium browser team' => self::iridiumBrowserTeam,
+            'coccoc', 'coc-coc-company', 'cốc cốc company limited', 'cốc cốc' => self::cocCoc,
+            'adaptivebee', 'adaptive-bee', 'adaptivebee sasu' => self::adaptiveBee,
+            'x115com', '115-com', '115.com' => self::x115com,
+            'digitalpebble', 'digital-pebble', 'digitalpebble ltd' => self::digitalPebble,
+            'basecamp' => self::basecamp,
+            'adbeat', 'adbeat.com' => self::adbeat,
+            'kinza', 'kinza.jp' => self::kinza,
+            'postbox', 'postbox, inc.' => self::postbox,
+            'kkbox', 'kkbox taiwan co., ltd.' => self::kkbox,
+            'nortonlifelock', 'nortonlifelock inc.', 'norton-life-lock' => self::nortonLifeLock,
+            'foundry376', 'foundry 376, llc.', 'foundry-376', 'foundry 376' => self::foundry376,
+            'cryptopro', 'crypto-pro llc', 'crypto-pro' => self::cryptoPro,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2486,6 +2552,19 @@ enum Company: string implements CompanyInterface
             self::torch => 'Torch Mobile',
             self::compuware => 'Compuware Corporation',
             self::whaleTV => 'Whale TV PTE. LTD.',
+            self::easou => 'easou ICP',
+            self::marketwire => 'Marketwire L.P.',
+            self::appSimply => 'AppSimply, LLC',
+            self::bloop => 'Bloop S.R.L.',
+            self::cocCoc => 'Cốc Cốc Company Limited',
+            self::adaptiveBee => 'AdaptiveBee SASU',
+            self::digitalPebble => 'DigitalPebble Ltd',
+            self::adbeat => 'adbeat.com',
+            self::postbox => 'Postbox, Inc.',
+            self::kkbox => 'KKBOX Taiwan Co., Ltd.',
+            self::nortonLifeLock => 'NortonLifeLock Inc.',
+            self::foundry376 => 'Foundry 376, LLC.',
+            self::cryptoPro => 'CRYPTO-PRO LLC',
             self::unknown => null,
             default => $this->value,
         };
@@ -2709,6 +2788,17 @@ enum Company: string implements CompanyInterface
             self::dogTorance => 'dog-torance',
             self::compuware => 'compuware-apm',
             self::whaleTV => 'whale-tv',
+            self::richardTrautvetter => 'richard-trautvetter',
+            self::beonexBusinessServices => 'beonex-business-services',
+            self::appSimply => 'app-simply',
+            self::iridiumBrowserTeam => 'iridium-browser-team',
+            self::cocCoc => 'coc-coc-company',
+            self::adaptiveBee => 'adaptive-bee',
+            self::x115com => '115-com',
+            self::digitalPebble => 'digital-pebble',
+            self::nortonLifeLock => 'norton-life-lock',
+            self::foundry376 => 'foundry-376',
+            self::cryptoPro => 'crypto-pro',
             default => $this->name,
         };
     }

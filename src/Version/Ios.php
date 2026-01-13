@@ -46,7 +46,7 @@ final readonly class Ios implements VersionFactoryInterface
         'iosv',
         '(?<!browser)iPad\/',
         'iPhone\/',
-        '(?<!Outlook-|[rtx])iOS',
+        '(?<![rtx]|[kpy]-|e )iOS',
     ];
 
     private const array DARWIN_MAP = [

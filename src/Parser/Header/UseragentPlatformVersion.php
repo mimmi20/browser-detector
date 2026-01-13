@@ -28,9 +28,9 @@ use UaParser\PlatformVersionInterface;
 use UnexpectedValueException;
 
 use function array_filter;
+use function array_first;
 use function array_map;
 use function preg_match;
-use function reset;
 use function str_replace;
 
 final readonly class UseragentPlatformVersion implements PlatformVersionInterface

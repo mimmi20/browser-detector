@@ -507,5 +507,17 @@
       ]
     },
     "engine": null
+  },
+  "easouspider": {
+    "name": "EasouSpider",
+    "manufacturer": "easou",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EasouSpider"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -5234,13 +5234,9 @@ final class DetectorIntegrationTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'],
                 [
-                    'user-agent' => 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36',
-                    ],
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'CPH2747',
@@ -5284,13 +5280,9 @@ final class DetectorIntegrationTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; hi-IN) Presto/2.5.28 Version/10.10'],
                 [
-                    'user-agent' => 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; hi-IN) Presto/2.5.28 Version/10.10',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; hi-IN) Presto/2.5.28 Version/10.10',
-                    ],
+                    'headers' => ['user-agent' => 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; hi-IN) Presto/2.5.28 Version/10.10'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'M5885',
@@ -5334,13 +5326,9 @@ final class DetectorIntegrationTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'Podimo/1.11.3 build 91/Android 28'],
                 [
-                    'user-agent' => 'Podimo/1.11.3 build 91/Android 28',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'Podimo/1.11.3 build 91/Android 28',
-                    ],
+                    'headers' => ['user-agent' => 'Podimo/1.11.3 build 91/Android 28'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'general Mobile device',

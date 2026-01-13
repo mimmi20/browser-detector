@@ -137,8 +137,10 @@
     "manufacturer": "webin",
     "type": "feed-reader",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ReadKit"
+      ]
     },
     "engine": "webkit"
   },

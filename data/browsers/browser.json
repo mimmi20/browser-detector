@@ -217,7 +217,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Amigo"
+        "Amigo",
+        "Chrome"
       ]
     },
     "engine": null
@@ -5811,6 +5812,42 @@
       "search": [
         "Pure Lite Browser"
       ]
+    },
+    "engine": null
+  },
+  "beonex communicator": {
+    "name": "Beonex Communicator",
+    "manufacturer": "beonex-business-services",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Beonex"
+      ]
+    },
+    "engine": null
+  },
+  "perfect browser": {
+    "name": "Perfect Browser",
+    "manufacturer": "app-simply",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Perfect Browser",
+        "Perfect Browser\\-iPad",
+        "Perfect Browser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "every-browser": {
+    "name": "Every Browser",
+    "manufacturer": "pixel-motion",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   }
