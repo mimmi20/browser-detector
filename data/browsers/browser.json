@@ -1247,6 +1247,18 @@
     },
     "engine": "webkit"
   },
+  "flow-browser": {
+    "name": "Flow",
+    "manufacturer": "ekioh",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Flow"
+      ]
+    },
+    "engine": "webkit"
+  },
   "element browser": {
     "name": "Element Browser",
     "manufacturer": "element-software",
@@ -2671,18 +2683,6 @@
       ]
     },
     "engine": "netfront"
-  },
-  "netnewswire": {
-    "name": "NetNewsWire",
-    "manufacturer": "black-pixel",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "NetNewsWire"
-      ]
-    },
-    "engine": "webkit"
   },
   "nettv": {
     "name": "NetTV",
@@ -5357,8 +5357,10 @@
     "manufacturer": "fedir-tsapana",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TV Bro"
+      ]
     },
     "engine": null
   },

@@ -1195,6 +1195,7 @@ final class Device implements DeviceInterface
             'redmi note 13' => 'xiaomi=xiaomi redmi note 13 4g',
             'redmi note 12 pro speed' => 'xiaomi=xiaomi redmi note 12 pro speed',
             'redmi note 14 5g' => 'xiaomi=xiaomi redmi note 14 5g',
+            'redmi note 14 pro 5g' => 'xiaomi=xiaomi redmi note 14 pro 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',

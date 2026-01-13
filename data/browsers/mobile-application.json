@@ -3038,17 +3038,18 @@
     },
     "engine": null
   },
-  "nyt-audio": {
+  "nyt": {
     "name": "The New York Times",
     "manufacturer": "new-york-times",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "NYT Audio"
+        "NYT Audio",
+        "nytios"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "uforia": {
     "name": "Uforia",
@@ -4396,5 +4397,30 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "laughable": {
+    "name": "Laughable",
+    "manufacturer": "byway-endeavors",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "build:",
+        "Laughable iOS"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "twitterrific": {
+    "name": "Twitterrific",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twitterrific"
+      ]
+    },
+    "engine": "webkit"
   }
 }

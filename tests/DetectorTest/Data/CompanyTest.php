@@ -4618,6 +4618,84 @@ final class CompanyTest extends TestCase
                 'brandname' => 'CRYPTO-PRO',
                 'key' => 'crypto-pro',
             ],
+            [
+                'type' => 'Byway Endeavors',
+                'name' => 'Byway Endeavors',
+                'brandname' => 'Byway Endeavors',
+                'key' => 'byway-endeavors',
+            ],
+            [
+                'type' => 'Spark Mail',
+                'name' => 'Spark Mail Limited',
+                'brandname' => 'Spark Mail',
+                'key' => 'spark-mail',
+            ],
+            [
+                'type' => 'Pingdom',
+                'name' => 'Pingdom AB',
+                'brandname' => 'Pingdom',
+                'key' => 'pingdom',
+            ],
+            [
+                'type' => 'Black Pixel',
+                'name' => 'Black Pixel',
+                'brandname' => 'Black Pixel',
+                'key' => 'black-pixel',
+            ],
+            [
+                'type' => 'Pinterest',
+                'name' => 'Pinterest Inc.',
+                'brandname' => 'Pinterest',
+                'key' => 'pinterest',
+            ],
+            [
+                'type' => 'Ekioh',
+                'name' => 'Ekioh Ltd.',
+                'brandname' => 'Ekioh',
+                'key' => 'ekioh',
+            ],
+            [
+                'type' => 'Mesa',
+                'name' => 'Mesa Dynamics, LLC',
+                'brandname' => 'Mesa',
+                'key' => 'mesa',
+            ],
+            [
+                'type' => 'Quick Heal',
+                'name' => 'Quick Heal Technologies Ltd.',
+                'brandname' => 'Quick Heal',
+                'key' => 'quick-heal',
+            ],
+            [
+                'type' => 'Nvidia',
+                'name' => 'Nvidia Corporation',
+                'brandname' => 'Nvidia',
+                'key' => 'nvidia',
+            ],
+            [
+                'type' => 'Bytedance',
+                'name' => 'Beijing Bytedance Technology Ltd.',
+                'brandname' => 'Bytedance',
+                'key' => 'bytedance',
+            ],
+            [
+                'type' => 'Ryte',
+                'name' => 'Ryte GmbH',
+                'brandname' => 'Ryte',
+                'key' => 'ryte',
+            ],
+            [
+                'type' => 'Todd Ditchendorf',
+                'name' => 'Todd Ditchendorf',
+                'brandname' => 'Todd Ditchendorf',
+                'key' => 'todd-ditchendorf',
+            ],
+            [
+                'type' => 'WhiteHat',
+                'name' => 'WhiteHat Security',
+                'brandname' => 'WhiteHat',
+                'key' => 'whitehat',
+            ],
         ];
     }
 

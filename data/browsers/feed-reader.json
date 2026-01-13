@@ -213,5 +213,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "netnewswire": {
+    "name": "NetNewsWire",
+    "manufacturer": "black-pixel",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetNewsWire"
+      ]
+    },
+    "engine": "webkit"
   }
 }

@@ -79,6 +79,8 @@ enum Engine: string implements EngineInterface
 
     case netsurf = 'NetSurf';
 
+    case ekiohflow = 'EkiohFlow';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -116,6 +118,7 @@ enum Engine: string implements EngineInterface
             'icab' => self::icab,
             'arkweb' => self::arkweb,
             'netsurf' => self::netsurf,
+            'ekiohflow' => self::ekiohflow,
             default => throw new UnexpectedValueException(
                 sprintf('the engine "%s" is unknown', $name),
             ),
@@ -150,6 +153,7 @@ enum Engine: string implements EngineInterface
             self::teleca => Company::obigo,
             self::treco => Company::arsslensoft,
             self::arkweb => Company::huawei,
+            self::ekiohflow => Company::ekioh,
             default => Company::unknown,
         };
     }
@@ -178,6 +182,7 @@ enum Engine: string implements EngineInterface
             self::icab => ['factory' => VersionBuilderFactory::class, 'search' => ['iCab']],
             self::arkweb => ['factory' => VersionBuilderFactory::class, 'search' => ['ArkWeb']],
             self::netsurf => ['factory' => VersionBuilderFactory::class, 'search' => ['NetSurf']],
+            self::ekiohflow => ['factory' => VersionBuilderFactory::class, 'search' => ['EkiohFlow']],
             self::gecko => ['factory' => GeckoFactory::class, 'search' => null],
             self::trident => ['factory' => TridentFactory::class, 'search' => null],
             self::goanna => ['factory' => GoannaFactory::class, 'search' => null],

@@ -1541,6 +1541,32 @@ enum Company: string implements CompanyInterface
 
     case cryptoPro = 'CRYPTO-PRO';
 
+    case bywayEndeavors = 'Byway Endeavors';
+
+    case sparkMail = 'Spark Mail';
+
+    case pingdom = 'Pingdom';
+
+    case blackPixel = 'Black Pixel';
+
+    case pinterest = 'Pinterest';
+
+    case ekioh = 'Ekioh';
+
+    case mesa = 'Mesa';
+
+    case quickHeal = 'Quick Heal';
+
+    case nvidia = 'Nvidia';
+
+    case bytedance = 'Bytedance';
+
+    case ryte = 'Ryte';
+
+    case toddDitchendorf = 'Todd Ditchendorf';
+
+    case whitehat = 'WhiteHat';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2309,6 +2335,19 @@ enum Company: string implements CompanyInterface
             'nortonlifelock', 'nortonlifelock inc.', 'norton-life-lock' => self::nortonLifeLock,
             'foundry376', 'foundry 376, llc.', 'foundry-376', 'foundry 376' => self::foundry376,
             'cryptopro', 'crypto-pro llc', 'crypto-pro' => self::cryptoPro,
+            'bywayendeavors', 'byway-endeavors', 'byway endeavors' => self::bywayEndeavors,
+            'sparkmail', 'spark-mail', 'spark mail limited', 'spark mail' => self::sparkMail,
+            'pingdom', 'pingdom ab' => self::pingdom,
+            'blackpixel', 'black-pixel', 'black pixel' => self::blackPixel,
+            'pinterest', 'pinterest inc.' => self::pinterest,
+            'ekioh', 'ekioh ltd.' => self::ekioh,
+            'mesa', 'mesa dynamics, llc' => self::mesa,
+            'quickheal', 'quick-heal', 'quick heal technologies ltd.', 'quick heal' => self::quickHeal,
+            'nvidia', 'nvidia corporation' => self::nvidia,
+            'bytedance', 'beijing bytedance technology ltd.' => self::bytedance,
+            'ryte', 'ryte gmbh' => self::ryte,
+            'toddditchendorf', 'todd-ditchendorf', 'todd ditchendorf' => self::toddDitchendorf,
+            'whitehat', 'whitehat security' => self::whitehat,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2565,6 +2604,16 @@ enum Company: string implements CompanyInterface
             self::nortonLifeLock => 'NortonLifeLock Inc.',
             self::foundry376 => 'Foundry 376, LLC.',
             self::cryptoPro => 'CRYPTO-PRO LLC',
+            self::sparkMail => 'Spark Mail Limited',
+            self::pingdom => 'Pingdom AB',
+            self::pinterest => 'Pinterest Inc.',
+            self::ekioh => 'Ekioh Ltd.',
+            self::mesa => 'Mesa Dynamics, LLC',
+            self::quickHeal => 'Quick Heal Technologies Ltd.',
+            self::nvidia => 'Nvidia Corporation',
+            self::bytedance => 'Beijing Bytedance Technology Ltd.',
+            self::ryte => 'Ryte GmbH',
+            self::whitehat => 'WhiteHat Security',
             self::unknown => null,
             default => $this->value,
         };
@@ -2799,6 +2848,11 @@ enum Company: string implements CompanyInterface
             self::nortonLifeLock => 'norton-life-lock',
             self::foundry376 => 'foundry-376',
             self::cryptoPro => 'crypto-pro',
+            self::bywayEndeavors => 'byway-endeavors',
+            self::sparkMail => 'spark-mail',
+            self::blackPixel => 'black-pixel',
+            self::quickHeal => 'quick-heal',
+            self::toddDitchendorf => 'todd-ditchendorf',
             default => $this->name,
         };
     }
