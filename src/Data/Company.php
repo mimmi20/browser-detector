@@ -1567,6 +1567,12 @@ enum Company: string implements CompanyInterface
 
     case whitehat = 'WhiteHat';
 
+    case ok = 'ok.';
+
+    case dyon = 'Dyon';
+
+    case panavox = 'Panavox';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2348,6 +2354,9 @@ enum Company: string implements CompanyInterface
             'ryte', 'ryte gmbh' => self::ryte,
             'toddditchendorf', 'todd-ditchendorf', 'todd ditchendorf' => self::toddDitchendorf,
             'whitehat', 'whitehat security' => self::whitehat,
+            'ok', 'ok.' => self::ok,
+            'dyon' => self::dyon,
+            'panavox' => self::panavox,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

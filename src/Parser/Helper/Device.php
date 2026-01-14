@@ -6729,6 +6729,7 @@ final class Device implements DeviceInterface
             'b22_eea' => 'biegedy=biegedy b22_eea',
             // grundig
             'gr-tb10s' => 'grundig=grundig gr-tb10s',
+            'grundig google tv' => 'grundig=grundig smart tv',
             // dudu-auto
             'dudu7' => 'dudu-auto=dudu-auto dudu7',
             // vorcom
@@ -7124,6 +7125,14 @@ final class Device implements DeviceInterface
             'multynet fhd android tv' => 'multynet=multynet 2k smart tv',
             // konka
             'konka 2k android tv' => 'konka=konka 2k smart tv',
+            // ok
+            'ok google tv' => 'ok=ok smart tv',
+            // dyon
+            'dyon 2k google tv' => 'dyon=dyon 2k smart tv',
+            // panasonic
+            'panasonic g00gle tv lcd' => 'panasonic=panasonic smart tv',
+            // panavox
+            'panavox android tv' => 'panavox=panavox smart tv',
             // other
             default => null,
         };

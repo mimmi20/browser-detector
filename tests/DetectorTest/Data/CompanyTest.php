@@ -4696,6 +4696,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'WhiteHat',
                 'key' => 'whitehat',
             ],
+            [
+                'type' => 'ok.',
+                'name' => 'ok.',
+                'brandname' => 'ok.',
+                'key' => 'ok',
+            ],
+            [
+                'type' => 'Dyon',
+                'name' => 'Dyon',
+                'brandname' => 'Dyon',
+                'key' => 'dyon',
+            ],
+            [
+                'type' => 'Panavox',
+                'name' => 'Panavox',
+                'brandname' => 'Panavox',
+                'key' => 'panavox',
+            ],
         ];
     }
 

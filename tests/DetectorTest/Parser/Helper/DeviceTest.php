@@ -7605,6 +7605,7 @@ final class DeviceTest extends TestCase
             ['B22_EEA', 'biegedy=biegedy b22_eea'],
             // grundig
             ['GR-TB10S', 'grundig=grundig gr-tb10s'],
+            ['Grundig Google TV', 'grundig=grundig smart tv'],
             // dudu-auto
             ['DUDU7', 'dudu-auto=dudu-auto dudu7'],
             // vorcom
@@ -8004,6 +8005,14 @@ final class DeviceTest extends TestCase
             ['MULTYNET FHD Android TV', 'multynet=multynet 2k smart tv'],
             // konka
             ['KONKA 2K Android TV', 'konka=konka 2k smart tv'],
+            // ok
+            ['OK Google TV', 'ok=ok smart tv'],
+            // dyon
+            ['DYON 2K Google TV', 'dyon=dyon 2k smart tv'],
+            // panasonic
+            ['Panasonic G00gle TV LCD', 'panasonic=panasonic smart tv'],
+            // panavox
+            ['Panavox Android TV', 'panavox=panavox smart tv'],
             // other
             ['Model"', null],
             [': "', null],

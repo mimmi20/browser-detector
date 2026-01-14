@@ -1,9 +1,9 @@
 {
-  "panasonic viera tv": {
-    "deviceName": "Viera TV",
-    "marketingName": "Viera TV",
-    "manufacturer": "panasonic",
-    "brand": "panasonic",
+  "general ok device": {
+    "deviceName": "general ok. device",
+    "marketingName": "general ok. device",
+    "manufacturer": "ok",
+    "brand": "ok",
     "dualOrientation": false,
     "simCount": 0,
     "display": {
@@ -13,13 +13,13 @@
       "size": null
     },
     "type": "tv",
-    "platform": null
+    "platform": "android"
   },
-  "panasonic smart tv": {
+  "ok smart tv": {
     "deviceName": "Smart TV",
     "marketingName": "Smart TV",
-    "manufacturer": "panasonic",
-    "brand": "panasonic",
+    "manufacturer": "ok",
+    "brand": "ok",
     "dualOrientation": false,
     "simCount": 0,
     "display": {
@@ -29,6 +29,6 @@
       "size": null
     },
     "type": "tv",
-    "platform": null
+    "platform": "android-tv"
   }
 }

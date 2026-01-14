@@ -1,9 +1,9 @@
 {
-  "panasonic viera tv": {
-    "deviceName": "Viera TV",
-    "marketingName": "Viera TV",
-    "manufacturer": "panasonic",
-    "brand": "panasonic",
+  "general panavox device": {
+    "deviceName": "general Panavox device",
+    "marketingName": "general Panavox device",
+    "manufacturer": "panavox",
+    "brand": "panavox",
     "dualOrientation": false,
     "simCount": 0,
     "display": {
@@ -13,22 +13,22 @@
       "size": null
     },
     "type": "tv",
-    "platform": null
+    "platform": "android"
   },
-  "panasonic smart tv": {
+  "panavox smart tv": {
     "deviceName": "Smart TV",
     "marketingName": "Smart TV",
-    "manufacturer": "panasonic",
-    "brand": "panasonic",
+    "manufacturer": "panavox",
+    "brand": "panavox",
     "dualOrientation": false,
     "simCount": 0,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
       "size": null
     },
     "type": "tv",
-    "platform": null
+    "platform": "android-tv"
   }
 }
