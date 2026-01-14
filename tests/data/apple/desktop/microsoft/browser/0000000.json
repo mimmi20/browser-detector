@@ -316,7 +316,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) EkiohFlow/5.10.0.32202 Flow/5.10.0 (like Gecko Firefox/62.0 rv:62.0)"
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 7.0; Macintosh; .NET CLR 3.2.27004; Intel Mac OS X 11_3_2) comdirect/1.0 (appVersion:21.9.1;deviceType:desktop)"
     },
     "device": {
       "architecture": null,
@@ -340,23 +340,23 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.5",
+      "version": "11.3.2",
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
       "name": "Internet Explorer",
       "modus": null,
-      "version": null,
+      "version": "7.0.0",
       "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "Gecko",
+      "name": "Trident",
       "version": null,
-      "manufacturer": "Mozilla"
+      "manufacturer": "Microsoft"
     }
   },
   {
