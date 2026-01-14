@@ -225,5 +225,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "rss-bandit": {
+    "name": "RSS Bandit",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RssBandit"
+      ]
+    },
+    "engine": "unknown"
   }
 }
