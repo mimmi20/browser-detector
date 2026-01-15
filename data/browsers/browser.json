@@ -582,7 +582,7 @@
     "engine": null
   },
   "bline": {
-    "name": "bline",
+    "name": "B-Line",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -3245,18 +3245,6 @@
     },
     "engine": null
   },
-  "pulse": {
-    "name": "Pulse",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Pulse"
-      ]
-    },
-    "engine": null
-  },
   "qqbrowser": {
     "name": "QQ Browser",
     "manufacturer": "tencent",
@@ -3396,8 +3384,10 @@
     "manufacturer": "quick-heal",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QHBrowser"
+      ]
     },
     "engine": null
   },
@@ -3749,18 +3739,6 @@
       ]
     },
     "engine": "trident"
-  },
-  "slimerjs": {
-    "name": "SlimerJS",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SlimerJS"
-      ]
-    },
-    "engine": "gecko"
   },
   "slimjet browser": {
     "name": "Slimjet Browser",
@@ -5850,6 +5828,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "uc browser hd": {
+    "name": "UC Browser HD",
+    "manufacturer": "ucweb",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UCBrowserHD"
+      ]
     },
     "engine": null
   }

@@ -4422,5 +4422,65 @@
       ]
     },
     "engine": "webkit"
+  },
+  "pulse": {
+    "name": "Pulse",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pulse"
+      ]
+    },
+    "engine": null
+  },
+  "google+ app": {
+    "name": "Google+ App",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "applenews": {
+    "name": "Apple News",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Version",
+        "AppleNews",
+        "News\\/"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "weibo app": {
+    "name": "Weibo App",
+    "manufacturer": "sina-weibo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "weibo__"
+      ]
+    },
+    "engine": null
+  },
+  "hatena antenna": {
+    "name": "AntennaPod",
+    "manufacturer": "hatena",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hatena Antenna"
+      ]
+    },
+    "engine": "unknown"
   }
 }

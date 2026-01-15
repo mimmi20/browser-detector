@@ -79,5 +79,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "google pagespeed insights": {
+    "name": "Google PageSpeed Insights",
+    "manufacturer": "google",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google Page Speed Insights"
+      ]
+    },
+    "engine": null
   }
 }

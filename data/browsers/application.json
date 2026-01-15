@@ -400,16 +400,6 @@
     },
     "engine": "unknown"
   },
-  "google+ app": {
-    "name": "Google+ App",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "ibooks author": {
     "name": "iBooks Author",
     "manufacturer": "apple",
@@ -627,18 +617,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NewsArticle"
-      ]
-    },
-    "engine": null
-  },
-  "newsblur app": {
-    "name": "NewsBlur App",
-    "manufacturer": "newsblur",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "NewsBlur"
       ]
     },
     "engine": null
@@ -1148,18 +1126,6 @@
     },
     "engine": "webkit"
   },
-  "uc browser hd": {
-    "name": "UC Browser HD",
-    "manufacturer": "ucweb",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "UCBrowserHD"
-      ]
-    },
-    "engine": null
-  },
   "visio": {
     "name": "Visio",
     "manufacturer": "microsoft",
@@ -1227,16 +1193,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "weibo app": {
-    "name": "Weibo App",
-    "manufacturer": "sina-weibo",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
   },
   "wire app": {
     "name": "Wire App",

@@ -110,7 +110,7 @@ final readonly class Ios implements VersionFactoryInterface
         '/darwin\/16\.7/i' => '10.3.3',
         '/darwin\/16\.6/i' => '10.3.2',
         '/darwin\/16\.5/i' => '10.3',
-        '/darwin\/16\.3/i' => '10.2',
+        '/darwin\/16\.3/i' => '10.3',
         '/darwin\/16\.1/i' => '10.1',
         '/darwin\/16/i' => '10.0',
         '/darwin\/15\.6/i' => '9.3.3',

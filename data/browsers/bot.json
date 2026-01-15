@@ -2694,18 +2694,6 @@
     },
     "engine": "unknown"
   },
-  "google pagespeed insights": {
-    "name": "Google PageSpeed Insights",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google Page Speed Insights"
-      ]
-    },
-    "engine": null
-  },
   "google publisher wordpress plugin": {
     "name": "Google Publisher Wordpress Plugin",
     "manufacturer": "google",
@@ -2890,18 +2878,6 @@
     },
     "engine": "unknown"
   },
-  "grapeshotcrawler": {
-    "name": "GrapeshotCrawler",
-    "manufacturer": "grapeshot",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "GrapeshotCrawler"
-      ]
-    },
-    "engine": "unknown"
-  },
   "grindr": {
     "name": "Grindr",
     "manufacturer": "unknown",
@@ -2980,18 +2956,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hatena"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "hatena antenna": {
-    "name": "Hatena Antenna",
-    "manufacturer": "hatena",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Hatena Antenna"
       ]
     },
     "engine": "unknown"
@@ -6235,16 +6199,6 @@
     },
     "engine": "unknown"
   },
-  "slurp": {
-    "name": "Slurp",
-    "manufacturer": "yahoo",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "smartsite httpclient": {
     "name": "Smartsite HTTPClient",
     "manufacturer": "unknown",
@@ -6265,18 +6219,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SMRF URL Expander"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "smtbot": {
-    "name": "SMTBot",
-    "manufacturer": "similar-tech",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SMTBot"
       ]
     },
     "engine": "unknown"

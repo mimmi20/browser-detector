@@ -519,5 +519,27 @@
       ]
     },
     "engine": "unknown"
+  },
+  "smtbot": {
+    "name": "SMTBot",
+    "manufacturer": "similar-tech",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SMTBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "slurp": {
+    "name": "Slurp",
+    "manufacturer": "yahoo",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

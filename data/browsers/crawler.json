@@ -1040,5 +1040,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "grapeshotcrawler": {
+    "name": "GrapeshotCrawler",
+    "manufacturer": "grapeshot",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GrapeshotCrawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

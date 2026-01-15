@@ -1573,6 +1573,46 @@ enum Company: string implements CompanyInterface
 
     case panavox = 'Panavox';
 
+    case grapeshot = 'Grapeshot';
+
+    case cheBinLiu = 'Che-Bin Liu';
+
+    case sinaWeibo = 'Sina Weibo';
+
+    case hatena = 'Hatena';
+
+    case okta = 'Okta';
+
+    case schoolwires = 'Schoolwires';
+
+    case chatwork = 'ChatWork';
+
+    case flixster = 'Flixster';
+
+    case timeWarnerCable = 'Time Warner Cable';
+
+    case salesforce = 'Salesforce';
+
+    case similarTech = 'SimilarTech';
+
+    case diigo = 'Diigo';
+
+    case ericssonResearch = 'Ericsson Research';
+
+    case soundCloud = 'SoundCloud';
+
+    case dorada = 'Dorada';
+
+    case espn = 'ESPN';
+
+    case videoLan = 'VideoLAN';
+
+    case gihyunJung = 'Gihyun Jung';
+
+    case webExpansion = 'Web Expansion';
+
+    case inboxcube = 'Inboxcube';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2357,6 +2397,26 @@ enum Company: string implements CompanyInterface
             'ok', 'ok.' => self::ok,
             'dyon' => self::dyon,
             'panavox' => self::panavox,
+            'grapeshot', 'grapeshot limited' => self::grapeshot,
+            'chebinliu', 'che-bin-liu', 'che-bin liu' => self::cheBinLiu,
+            'sinaweibo', 'sina-weibo', 'sina corporation', 'sina weibo' => self::sinaWeibo,
+            'hatena', 'hatena co., ltd.' => self::hatena,
+            'okta', 'okta, inc.' => self::okta,
+            'schoolwires', 'schoolwires, inc.' => self::schoolwires,
+            'chatwork', 'chat-work' => self::chatwork,
+            'flixster', 'flixster, inc.' => self::flixster,
+            'timewarnercable', 'time-warner-cable', 'time warner cable' => self::timeWarnerCable,
+            'salesforce', 'salesforce.com, inc.' => self::salesforce,
+            'similartech', 'similar-tech', 'similartech ltd.' => self::similarTech,
+            'diigo', 'diigo, inc.' => self::diigo,
+            'ericssonresearch', 'ericsson-research', 'ericsson research' => self::ericssonResearch,
+            'soundcloud', 'sound-cloud', 'soundcloud limited' => self::soundCloud,
+            'dorada', 'dorada app software ltd' => self::dorada,
+            'espn', 'espn internet ventures.' => self::espn,
+            'videolan', 'video-lan', 'videolan non-profit organization' => self::videoLan,
+            'gihyunjung', 'gihyun-jung', 'gihyun jung' => self::gihyunJung,
+            'webexpansion', 'web-expansion', 'web expansion cyprus ltd.', 'web expansion' => self::webExpansion,
+            'inboxcube', 'inboxcube inc.' => self::inboxcube,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2623,6 +2683,21 @@ enum Company: string implements CompanyInterface
             self::bytedance => 'Beijing Bytedance Technology Ltd.',
             self::ryte => 'Ryte GmbH',
             self::whitehat => 'WhiteHat Security',
+            self::grapeshot => 'Grapeshot Limited',
+            self::sinaWeibo => 'Sina Corporation',
+            self::hatena => 'Hatena Co., Ltd.',
+            self::okta => 'Okta, Inc.',
+            self::schoolwires => 'Schoolwires, Inc.',
+            self::flixster => 'Flixster, Inc.',
+            self::salesforce => 'Salesforce.com, Inc.',
+            self::similarTech => 'SimilarTech Ltd.',
+            self::diigo => 'Diigo, Inc.',
+            self::soundCloud => 'SoundCloud Limited',
+            self::dorada => 'Dorada App Software Ltd',
+            self::espn => 'ESPN Internet Ventures.',
+            self::videoLan => 'VideoLAN non-profit organization',
+            self::webExpansion => 'Web Expansion Cyprus Ltd.',
+            self::inboxcube => 'Inboxcube Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2862,6 +2937,16 @@ enum Company: string implements CompanyInterface
             self::blackPixel => 'black-pixel',
             self::quickHeal => 'quick-heal',
             self::toddDitchendorf => 'todd-ditchendorf',
+            self::cheBinLiu => 'che-bin-liu',
+            self::sinaWeibo => 'sina-weibo',
+            self::chatwork => 'chat-work',
+            self::timeWarnerCable => 'time-warner-cable',
+            self::similarTech => 'similar-tech',
+            self::ericssonResearch => 'ericsson-research',
+            self::soundCloud => 'sound-cloud',
+            self::videoLan => 'video-lan',
+            self::gihyunJung => 'gihyun-jung',
+            self::webExpansion => 'web-expansion',
             default => $this->name,
         };
     }

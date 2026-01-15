@@ -70,11 +70,11 @@ final class IosTest extends TestCase
             ],
             [
                 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0',
-                '10.2.0',
+                '10.3.0',
             ],
             [
                 'Darwin/16.3.0 TestApp/1.0 CFNetwork/808.2.16',
-                '10.2.0',
+                '10.3.0',
             ],
             [
                 'Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/11D167 Safari/9537.53',
@@ -346,7 +346,7 @@ final class IosTest extends TestCase
     {
         $useragent = 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0';
         $exception = new NotNumericException('not numeric');
-        $version   = '10.2';
+        $version   = '10.3';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
