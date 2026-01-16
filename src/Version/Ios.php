@@ -36,7 +36,7 @@ final readonly class Ios implements VersionFactoryInterface
         'IphoneOSX',
         'CPU OS_?',
         'CPU iOS',
-        'CPU iPad OS',
+        'CPU iPad ?OS',
         'iPhone OS\;FBSV',
         'iPhone OS',
         'iPhone_OS',

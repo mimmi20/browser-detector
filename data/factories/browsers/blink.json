@@ -91,7 +91,7 @@
     "/(?<!b)line\\//i": "line",
     "/oppobrowser/i": "oppo browser",
     "/sogoumobilebrowser/i": "sogou mobile browser",
-    "/lebrowser|com\\.lenovo\\.browser/i": "lenovo browser",
+    "/(?<!a)lebrowser|com\\.lenovo\\.browser/i": "lenovo browser",
     "/mobilelenovobrowser/i": "mobile lenovo browser",
     "/mint browser/i": "mint browser",
     "/harmony360browser/i": "harmony-360-browser",

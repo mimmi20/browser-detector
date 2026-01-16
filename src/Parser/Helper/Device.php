@@ -4879,6 +4879,7 @@ final class Device implements DeviceInterface
             'orbit y21' => 'walton=walton orbit y21',
             'orbit y50' => 'walton=walton orbit y50',
             'primo gh11' => 'walton=walton primo gh11',
+            'walton gsmart 2ktv' => 'walton=walton 2k gsmart tv',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             'zkempler_pro' => 'kempler-strauss=kempler-strauss zkempler pro',
@@ -7142,6 +7143,9 @@ final class Device implements DeviceInterface
             'xming google tv' => 'formovie=formovie xming',
             // singer
             'singer android tv' => 'singer=singer smart tv',
+            'singer 4k gsmart tv' => 'singer=singer 4k gsmart tv',
+            // prism+
+            'prismplus 4k pro android tv' => 'prism+=prism+ 4k pro smart tv',
             // other
             default => null,
         };

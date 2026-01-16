@@ -927,7 +927,7 @@
     "/(?<!agent)version[ \\/][0-9_.]+ +chrome\\/(?:2[89]|[3-9][0-9]|[1-9][0-9]{2})\\D/i": "chrome webview",
     "/chrome.*(?<!agent)version|(?<!agent)version.*chrome|com\\.android\\.browser/i": "android webview",
     "/me\\.android\\.browser/i": "me browser",
-    "/lebrowser|com\\.lenovo\\.browser/i": "lenovo browser",
+    "/(?<!a)lebrowser|com\\.lenovo\\.browser/i": "lenovo browser",
     "/com\\.asus\\.browser/i": "asus browser",
     "/adsbot/i": "adsbot",
     "/2ip bot/i": "2ip bot",

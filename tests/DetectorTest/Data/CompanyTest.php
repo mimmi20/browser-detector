@@ -4864,6 +4864,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SINGER',
                 'key' => 'singer',
             ],
+            [
+                'type' => 'PRISM+',
+                'name' => 'PRISM+',
+                'brandname' => 'PRISM+',
+                'key' => 'prism+',
+            ],
         ];
     }
 

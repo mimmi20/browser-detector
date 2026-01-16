@@ -1623,6 +1623,8 @@ enum Company: string implements CompanyInterface
 
     case singer = 'SINGER';
 
+    case prismPlus = 'PRISM+';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2432,6 +2434,7 @@ enum Company: string implements CompanyInterface
             'regal' => self::regal,
             'formovie' => self::formovie,
             'singer' => self::singer,
+            'prismplus', 'prism+' => self::prismPlus,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2965,6 +2968,7 @@ enum Company: string implements CompanyInterface
             self::webExpansion => 'web-expansion',
             self::leysinMedia => 'leysin-media',
             self::tvPlus => 'tv+',
+            self::prismPlus => 'prism+',
             default => $this->name,
         };
     }

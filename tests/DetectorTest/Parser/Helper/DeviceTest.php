@@ -5595,6 +5595,7 @@ final class DeviceTest extends TestCase
             ['ORBIT Y21', 'walton=walton orbit y21'],
             ['ORBIT Y50', 'walton=walton orbit y50'],
             ['Primo GH11', 'walton=walton primo gh11'],
+            ['WALTON GSMART 2KTV', 'walton=walton 2k gsmart tv'],
             // kempler-strauss
             ['ZKEMPLER PLUS', 'kempler-strauss=kempler-strauss zkempler plus'],
             ['ZKEMPLER_PRO', 'kempler-strauss=kempler-strauss zkempler pro'],
@@ -8022,6 +8023,9 @@ final class DeviceTest extends TestCase
             ['Xming Google TV', 'formovie=formovie xming'],
             // singer
             ['SINGER ANDROID TV', 'singer=singer smart tv'],
+            ['Singer 4K GSMART TV', 'singer=singer 4k gsmart tv'],
+            // prism+
+            ['PrismPlus 4K Pro Android TV', 'prism+=prism+ 4k pro smart tv'],
             // other
             ['Model"', null],
             [': "', null],

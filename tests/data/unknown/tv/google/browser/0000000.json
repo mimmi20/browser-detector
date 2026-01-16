@@ -2386,7 +2386,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SINGER ANDROID TV Build/RTM2.210929.109; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.102 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Singer 4K GSMART TV Build/RTT2.220103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.100 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -2408,8 +2408,8 @@
       "bits": null
     },
     "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "11.0.0",
       "manufacturer": "Google",
       "bits": null
@@ -2417,7 +2417,7 @@
     "client": {
       "name": "Chrome WebView",
       "modus": null,
-      "version": "129.0.6668.102",
+      "version": "129.0.6668.100",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -2425,52 +2425,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "129.0.6668.102",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Xming Google TV Build/RTM7.230903.079; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.102 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "129.0.6668.102",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "129.0.6668.102",
+      "version": "129.0.6668.100",
       "manufacturer": "Google"
     }
   }
