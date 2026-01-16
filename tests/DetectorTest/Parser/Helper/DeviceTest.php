@@ -6359,6 +6359,7 @@ final class DeviceTest extends TestCase
             ['S23 Pro Max', 'reeder=reeder s23 pro max'],
             ['S19 Max Pro S Edge', 'reeder=reeder s19 max pro s edge'],
             ['S19 Max', 'reeder=reeder s19 max'],
+            ['REEDER TV', 'reeder=reeder smart tv'],
             // tesla
             ['Explr 9', 'tesla=tesla explorer 9'],
             // chuwi
@@ -8013,6 +8014,14 @@ final class DeviceTest extends TestCase
             ['Panasonic G00gle TV LCD', 'panasonic=panasonic smart tv'],
             // panavox
             ['Panavox Android TV', 'panavox=panavox smart tv'],
+            // tv+
+            ['TVPLUS BOX', 'tv+=tv+ tvplus box'],
+            // regal
+            ['Regal G00gle TV', 'regal=regal smart tv'],
+            // formovie
+            ['Xming Google TV', 'formovie=formovie xming'],
+            // singer
+            ['SINGER ANDROID TV', 'singer=singer smart tv'],
             // other
             ['Model"', null],
             [': "', null],

@@ -5573,6 +5573,7 @@ final class Device implements DeviceInterface
             's23 pro max' => 'reeder=reeder s23 pro max',
             's19 max pro s edge' => 'reeder=reeder s19 max pro s edge',
             's19 max' => 'reeder=reeder s19 max',
+            'reeder tv' => 'reeder=reeder smart tv',
             // tesla
             'explr 9' => 'tesla=tesla explorer 9',
             // chuwi
@@ -7133,6 +7134,14 @@ final class Device implements DeviceInterface
             'panasonic g00gle tv lcd' => 'panasonic=panasonic smart tv',
             // panavox
             'panavox android tv' => 'panavox=panavox smart tv',
+            // tv+
+            'tvplus box' => 'tv+=tv+ tvplus box',
+            // regal
+            'regal g00gle tv' => 'regal=regal smart tv',
+            // formovie
+            'xming google tv' => 'formovie=formovie xming',
+            // singer
+            'singer android tv' => 'singer=singer smart tv',
             // other
             default => null,
         };

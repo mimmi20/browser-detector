@@ -4834,6 +4834,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Inboxcube',
                 'key' => 'inboxcube',
             ],
+            [
+                'type' => 'Leysin Media',
+                'name' => 'Shanghai Leysin Media Co, Ltd.',
+                'brandname' => 'Leysin Media',
+                'key' => 'leysin-media',
+            ],
+            [
+                'type' => 'TV+',
+                'name' => 'TV+',
+                'brandname' => 'TV+',
+                'key' => 'tv+',
+            ],
+            [
+                'type' => 'REGAL',
+                'name' => 'REGAL',
+                'brandname' => 'REGAL',
+                'key' => 'regal',
+            ],
+            [
+                'type' => 'Formovie',
+                'name' => 'Formovie',
+                'brandname' => 'Formovie',
+                'key' => 'formovie',
+            ],
+            [
+                'type' => 'SINGER',
+                'name' => 'SINGER',
+                'brandname' => 'SINGER',
+                'key' => 'singer',
+            ],
         ];
     }
 

@@ -1613,6 +1613,16 @@ enum Company: string implements CompanyInterface
 
     case inboxcube = 'Inboxcube';
 
+    case leysinMedia = 'Leysin Media';
+
+    case tvPlus = 'TV+';
+
+    case regal = 'REGAL';
+
+    case formovie = 'Formovie';
+
+    case singer = 'SINGER';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2417,6 +2427,11 @@ enum Company: string implements CompanyInterface
             'gihyunjung', 'gihyun-jung', 'gihyun jung' => self::gihyunJung,
             'webexpansion', 'web-expansion', 'web expansion cyprus ltd.', 'web expansion' => self::webExpansion,
             'inboxcube', 'inboxcube inc.' => self::inboxcube,
+            'leysinmedia', 'leysin-media', 'shanghai leysin media co, ltd.', 'leysin media' => self::leysinMedia,
+            'tvplus', 'tv+' => self::tvPlus,
+            'regal' => self::regal,
+            'formovie' => self::formovie,
+            'singer' => self::singer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2698,6 +2713,7 @@ enum Company: string implements CompanyInterface
             self::videoLan => 'VideoLAN non-profit organization',
             self::webExpansion => 'Web Expansion Cyprus Ltd.',
             self::inboxcube => 'Inboxcube Inc.',
+            self::leysinMedia => 'Shanghai Leysin Media Co, Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2947,6 +2963,8 @@ enum Company: string implements CompanyInterface
             self::videoLan => 'video-lan',
             self::gihyunJung => 'gihyun-jung',
             self::webExpansion => 'web-expansion',
+            self::leysinMedia => 'leysin-media',
+            self::tvPlus => 'tv+',
             default => $this->name,
         };
     }

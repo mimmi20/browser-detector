@@ -75,7 +75,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]? +(?:build|hmscore|miui)[^)]+)\)/i',
+            '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
             '/dalvik\/[\d.]+ \(linux; android [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
