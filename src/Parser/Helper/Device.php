@@ -6883,6 +6883,7 @@ final class Device implements DeviceInterface
             'a-stream' => 'blaupunkt=blaupunkt a-stream',
             // transpeed
             '8k618-t' => 'transpeed=transpeed 8k618-t',
+            '8k3528-t' => 'transpeed=transpeed 8k3528-t',
             // leotec
             'lesph5701w' => 'leotec=leotec lesph5701w',
             // td-systems
@@ -7138,7 +7139,7 @@ final class Device implements DeviceInterface
             // tv+
             'tvplus box' => 'tv+=tv+ tvplus box',
             // regal
-            'regal g00gle tv' => 'regal=regal smart tv',
+            'regal g00gle tv', 'regal google tv' => 'regal=regal smart tv',
             // formovie
             'xming google tv' => 'formovie=formovie xming',
             // singer
@@ -7146,6 +7147,8 @@ final class Device implements DeviceInterface
             'singer 4k gsmart tv' => 'singer=singer 4k gsmart tv',
             // prism+
             'prismplus 4k pro android tv' => 'prism+=prism+ 4k pro smart tv',
+            // telly
+            'ty55_1' => 'telly=telly ty55-1',
             // other
             default => null,
         };

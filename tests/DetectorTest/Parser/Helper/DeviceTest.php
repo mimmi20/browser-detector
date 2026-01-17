@@ -7762,6 +7762,7 @@ final class DeviceTest extends TestCase
             ['A-STREAM', 'blaupunkt=blaupunkt a-stream'],
             // transpeed
             ['8K618-T', 'transpeed=transpeed 8k618-t'],
+            ['8K3528-T', 'transpeed=transpeed 8k3528-t'],
             // leotec
             ['LESPH5701W', 'leotec=leotec lesph5701w'],
             // td-systems
@@ -8019,6 +8020,7 @@ final class DeviceTest extends TestCase
             ['TVPLUS BOX', 'tv+=tv+ tvplus box'],
             // regal
             ['Regal G00gle TV', 'regal=regal smart tv'],
+            ['Regal Google TV', 'regal=regal smart tv'],
             // formovie
             ['Xming Google TV', 'formovie=formovie xming'],
             // singer
@@ -8026,6 +8028,8 @@ final class DeviceTest extends TestCase
             ['Singer 4K GSMART TV', 'singer=singer 4k gsmart tv'],
             // prism+
             ['PrismPlus 4K Pro Android TV', 'prism+=prism+ 4k pro smart tv'],
+            // telly
+            ['TY55_1', 'telly=telly ty55-1'],
             // other
             ['Model"', null],
             [': "', null],

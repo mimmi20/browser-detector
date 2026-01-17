@@ -1,6 +1,7 @@
 {
   "rules": {
     "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia|; ?sony;/i": "sony",
+    "/; ?tcl;|\\(tcl[0-9]+/i": "tcl",
     "/THOMSON|LF1V/i": "thomson",
     "/philips|avm\\-|qm163e/i": "philips",
     "/xbox/i": "microsoft",
@@ -11,7 +12,6 @@
     "/cx919|gxt_dongle_3188/i": "andoer",
     "/technisat/i": "technisat",
     "/; ?metz;/i": "metz",
-    "/; ?tcl;/i": "tcl",
     "/; ?aston;/i": "aston",
     "/; ?arcelik;/i": "arcelik",
     "/; ?mstar;/i": "mstar",
@@ -31,6 +31,7 @@
     "/asus_google_cube/i": "asus",
     "/crkey|googletv/i": "google",
     "/aoc[;,]|q10107l-me/i": "aoc",
+    "/toptech690/i": "top-tech",
     "/mxl661l32|smart\\-?tv|; ?samsung;/i": "samsung",
     "/tivo|tcd[4-9a-f]{3}000/i": "tivo",
     "/; ?mtk;/i": "mediatek",

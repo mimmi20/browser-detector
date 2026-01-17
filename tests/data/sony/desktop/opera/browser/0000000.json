@@ -1,15 +1,14 @@
 [
   {
     "headers": {
-      "x-requested-with": "com.tvwebbrowser.v22",
       "user-agent": "Mozilla/5.0 (Linux; BRAVIA 4K 2015 Build/LMY48E.S265) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36 OPR/28.0.1754.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
+      "deviceName": "PC",
+      "marketingName": "PC",
+      "manufacturer": "Sony",
+      "brand": "Sony",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
@@ -31,10 +30,10 @@
       "bits": null
     },
     "client": {
-      "name": "TV-Browser Internet",
+      "name": "Opera",
       "modus": null,
-      "version": null,
-      "manufacturer": "hayer",
+      "version": "28.0.1754.0",
+      "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
       "bits": null

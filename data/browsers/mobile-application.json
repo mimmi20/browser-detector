@@ -2354,6 +2354,18 @@
     },
     "engine": null
   },
+  "tunein-radio-pro": {
+    "name": "TuneIn Radio Pro",
+    "manufacturer": "tune-in",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuneIn Radio Pro"
+      ]
+    },
+    "engine": null
+  },
   "viber": {
     "name": "Viber",
     "manufacturer": "rakuten",
@@ -4479,6 +4491,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hatena Antenna"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "roboform": {
+    "name": "RoboForm",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RoboForm"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tim-app": {
+    "name": "TIM",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TIM"
       ]
     },
     "engine": "unknown"

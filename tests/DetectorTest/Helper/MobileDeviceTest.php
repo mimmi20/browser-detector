@@ -251,6 +251,8 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Linux; Android 9; SW-LED42SB300 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 YaBrowser/22.8.0.9 (lite) TV Safari/537.36'],
             ['Mozilla/5.0 (Linux; Android 10; 2020/2021 UHD Android TV Build/QTG3.201102.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.88 Mobile Safari/537.36'],
             ['Mozilla/5.0 (Linux; Android 4.2.2; Hisense Google TV TV Build/3.0.0-105-gb209657) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36'],
+            ['macOS/14.6.1 (23G93) dataaccessd/1.0'],
+            ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 NetType/WIFI MicroMessenger/6.8.0(0x16080000) MacWechat/3.8.3(0x13080310) XWEB/30817 Flue'],
         ];
     }
 }

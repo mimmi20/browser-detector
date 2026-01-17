@@ -1625,6 +1625,14 @@ enum Company: string implements CompanyInterface
 
     case prismPlus = 'PRISM+';
 
+    case infraware = 'Infraware';
+
+    case topTech = 'Top-Tech';
+
+    case aoc = 'AOC';
+
+    case telly = 'Telly';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2435,6 +2443,10 @@ enum Company: string implements CompanyInterface
             'formovie' => self::formovie,
             'singer' => self::singer,
             'prismplus', 'prism+' => self::prismPlus,
+            'infraware', 'infraware inc' => self::infraware,
+            'toptech', 'top-tech' => self::topTech,
+            'aoc' => self::aoc,
+            'telly', 'telly, inc.' => self::telly,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2717,6 +2729,8 @@ enum Company: string implements CompanyInterface
             self::webExpansion => 'Web Expansion Cyprus Ltd.',
             self::inboxcube => 'Inboxcube Inc.',
             self::leysinMedia => 'Shanghai Leysin Media Co, Ltd.',
+            self::infraware => 'Infraware Inc',
+            self::telly => 'Telly, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2969,6 +2983,7 @@ enum Company: string implements CompanyInterface
             self::leysinMedia => 'leysin-media',
             self::tvPlus => 'tv+',
             self::prismPlus => 'prism+',
+            self::topTech => 'top-tech',
             default => $this->name,
         };
     }

@@ -31,7 +31,7 @@ final class SecChUaModel implements DeviceCodeInterface
         $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
-        return !in_array($code, ['', 'model', ': ', 'some unknown model'], true);
+        return !in_array($code, ['', 'model', ': ', 'some unknown model', 'k'], true);
     }
 
     /**

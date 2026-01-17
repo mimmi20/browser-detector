@@ -125,6 +125,8 @@ final class DesktopTest extends TestCase
             ['IBrowse 2.4 (AmigaOS 4.5)'],
             ['Mozilla/4.0 (compatible; Voyager; AmigaOS)'],
             ['Klondike/1.70 (HTTP PPC3)'],
+            ['macOS/14.6.1 (23G93) dataaccessd/1.0'],
+            ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 NetType/WIFI MicroMessenger/6.8.0(0x16080000) MacWechat/3.8.3(0x13080310) XWEB/30817 Flue'],
         ];
     }
 

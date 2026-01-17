@@ -4870,6 +4870,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'PRISM+',
                 'key' => 'prism+',
             ],
+            [
+                'type' => 'Infraware',
+                'name' => 'Infraware Inc',
+                'brandname' => 'Infraware',
+                'key' => 'infraware',
+            ],
+            [
+                'type' => 'Top-Tech',
+                'name' => 'Top-Tech',
+                'brandname' => 'Top-Tech',
+                'key' => 'top-tech',
+            ],
+            [
+                'type' => 'AOC',
+                'name' => 'AOC',
+                'brandname' => 'AOC',
+                'key' => 'aoc',
+            ],
+            [
+                'type' => 'Telly',
+                'name' => 'Telly, Inc.',
+                'brandname' => 'Telly',
+                'key' => 'telly',
+            ],
         ];
     }
 

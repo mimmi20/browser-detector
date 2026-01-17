@@ -46,7 +46,7 @@ final class MobileDevice implements MobileDeviceInterface
 
         if (
             preg_match(
-                '/windows nt.*(mobile safari|opera mobi|iphone|openwave)|fbid\/desktop|debian|windowswechat|tv safari|andr[o0]id tv|g[o0][o0]gle tv|gsmart tv/i',
+                '/windows nt.*(mobile safari|opera mobi|iphone|openwave)|fbid\/desktop|debian|windowswechat|macwechat|tv safari|andr[o0]id tv|g[o0][o0]gle tv|gsmart tv/i',
                 $useragent,
             )
         ) {
@@ -75,7 +75,7 @@ final class MobileDevice implements MobileDeviceInterface
             return true;
         }
 
-        if (preg_match('/windows nt/i', $useragent)) {
+        if (preg_match('/windows nt|macos\//i', $useragent)) {
             return false;
         }
 
