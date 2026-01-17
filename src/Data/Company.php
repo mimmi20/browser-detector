@@ -1633,6 +1633,8 @@ enum Company: string implements CompanyInterface
 
     case telly = 'Telly';
 
+    case newsblur = 'newsblur';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2447,6 +2449,7 @@ enum Company: string implements CompanyInterface
             'toptech', 'top-tech' => self::topTech,
             'aoc' => self::aoc,
             'telly', 'telly, inc.' => self::telly,
+            'newsblur' => self::newsblur,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

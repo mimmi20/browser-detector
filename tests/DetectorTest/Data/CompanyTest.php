@@ -4894,6 +4894,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Telly',
                 'key' => 'telly',
             ],
+            [
+                'type' => 'newsblur',
+                'name' => 'newsblur',
+                'brandname' => 'newsblur',
+                'key' => 'newsblur',
+            ],
         ];
     }
 
