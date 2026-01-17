@@ -462,5 +462,21 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "t-mobile mytouch": {
+    "deviceName": "myTouch",
+    "marketingName": "myTouch",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.8
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

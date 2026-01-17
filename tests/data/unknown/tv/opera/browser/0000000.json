@@ -4366,51 +4366,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 11; TY55_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.56 Safari/537.36 OMI/4.24.3.23.StableAVB_Telly.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.24.3.23",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.6099.56",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.2.31.Bravo.160 Model/ARRIS-VMS4100, Commscope_STB_BCM74491C1_2018/KA31.00.09.17 (Verizon, VMS4100, Wired)[5c945260b787d40eff8aa6285af9804df933fbbcf80f6e4e16588a57fd0644d7/32.55]"
     },
     "device": {
@@ -4457,6 +4412,51 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.2.31.Bravo.160 Model/ARRIS-VMS4100, Commscope_STB_BCM74491C1_2018/KA31.00.09.17 (Verizon, VMS4100, Wired)[9cd820851588406c6dfdf6794ec3f9a58fa89aad301ef92960e26c04e1a5822c/32.55]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.20.2.31",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.120",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.2.31.Bravo.155 Model/ARRIS-IPC4100, Commscope_STB_BCM7271C0_2018/KA31.00.05.14 (Verizon, IPC4100, Wired)86fe668ff281127a43a7ed7dd3269ab840a0fe8cd10954994a5c66144423c8e1/28.81"
     },
     "device": {
       "architecture": null,

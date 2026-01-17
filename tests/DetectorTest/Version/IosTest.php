@@ -70,11 +70,11 @@ final class IosTest extends TestCase
             ],
             [
                 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0',
-                '10.3.0',
+                '10.2.0',
             ],
             [
                 'Darwin/16.3.0 TestApp/1.0 CFNetwork/808.2.16',
-                '10.3.0',
+                '10.2.0',
             ],
             [
                 'Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/11D167 Safari/9537.53',
@@ -228,6 +228,34 @@ final class IosTest extends TestCase
                 'kicktipp-ios 2.2.6 on iPhone3,1 with iOS 7.0.6 at 640x960',
                 '7.0.6',
             ],
+            [
+                'IILoader/1.0 CFNetwork/609.1.4 Darwin/12.4.0',
+                '6.1.0',
+            ],
+            [
+                'billigFluegeFinal/1.5 CFNetwork/485.13.8 Darwin/10.8.0',
+                '4.3.0',
+            ],
+            [
+                'fluegecom/1.0 CFNetwork/485.12.7 Darwin/10.8.0',
+                '4.2.0',
+            ],
+            [
+                'ArcGISRuntime-iOS/100.6 (iOS 12.3.1; iPad6,3) com.esri.earth.phone/1.0.0',
+                '12.3.1',
+            ],
+            [
+                'Mozilla/5.0 (iPhone; CPU Phone OS 14_2 like Mac OS X) WebKit/8610 (KHTML, like Gecko) Mobile/18B92 [FBAN/FBIOS;FBDV/iPhone13,3;FBMD/iPhone;FBSN/iOS;FBSV/14.2;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5]',
+                '14.2.0',
+            ],
+            [
+                'Pinterest for iOS/7.11 (iPhone7,2; 12.1.4)',
+                '12.1.4',
+            ],
+            [
+                'LightSpeed [FBAN/MessengerLiteForiOS;FBAV/255.0.0.30.124;FBBV/ 202164847;FBDV/iPhone10,4;FBMD/iPhone;FBSN/iOS;FBSV/ 13.3.1;FBSS/2;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]',
+                '13.3.1',
+            ],
         ];
     }
 
@@ -346,7 +374,7 @@ final class IosTest extends TestCase
     {
         $useragent = 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0';
         $exception = new NotNumericException('not numeric');
-        $version   = '10.3';
+        $version   = '10.2';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder

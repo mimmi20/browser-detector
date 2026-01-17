@@ -4518,5 +4518,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "covenant-eyes": {
+    "name": "Covenant Eyes",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Covenant Eyes"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pic-collage": {
+    "name": "Pic Collage",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pic Collage"
+      ]
+    },
+    "engine": "unknown"
   }
 }

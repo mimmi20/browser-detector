@@ -1056,12 +1056,22 @@
   "img2dataset": {
     "name": "img2dataset",
     "manufacturer": "unknown",
-    "type": "bot",
+    "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "img2dataset"
       ]
+    },
+    "engine": "unknown"
+  },
+  "lightspeed systems crawler": {
+    "name": "Lightspeed Systems Crawler",
+    "manufacturer": "lightspeed-systems",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   }

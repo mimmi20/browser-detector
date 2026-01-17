@@ -1635,6 +1635,38 @@ enum Company: string implements CompanyInterface
 
     case newsblur = 'newsblur';
 
+    case texet = 'TeXet';
+
+    case shopKeep = 'ShopKeep';
+
+    case compass = 'Compass';
+
+    case wonjooJang = 'WONJOO JANG';
+
+    case sanyo = 'Sanyo';
+
+    case sprint = 'Sprint';
+
+    case smartfren = 'Smartfren';
+
+    case lightspeedSystems = 'Lightspeed Systems';
+
+    case unister = 'Unister';
+
+    case deedBaltic = 'DEED Baltic';
+
+    case wooRank = 'WooRank';
+
+    case nineteenTen = 'Nineteen Ten';
+
+    case yisou = 'Yisou';
+
+    case semrush = 'Semrush';
+
+    case browserEdsonThiago = 'Browser Edson Thiago';
+
+    case michelDeBoer = 'Michel de Boer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2450,6 +2482,22 @@ enum Company: string implements CompanyInterface
             'aoc' => self::aoc,
             'telly', 'telly, inc.' => self::telly,
             'newsblur' => self::newsblur,
+            'texet' => self::texet,
+            'shopkeep', 'shop-keep', 'shopkeep inc.' => self::shopKeep,
+            'compass', 'compass security ag' => self::compass,
+            'wonjoojang', 'wonjoo-jang', 'wonjoo jang' => self::wonjooJang,
+            'sanyo' => self::sanyo,
+            'sprint' => self::sprint,
+            'smartfren', 'pt smartfren telecom, tbk' => self::smartfren,
+            'lightspeedsystems', 'lightspeed-systems', 'lightspeed systems' => self::lightspeedSystems,
+            'unister', 'unister holding gmbh' => self::unister,
+            'deedbaltic', 'deed baltic, uab', 'deed-baltic', 'deed baltic' => self::deedBaltic,
+            'woorank', 'woo-rank' => self::wooRank,
+            'nineteenten', 'nineteen-ten', 'nineteen ten llc', 'nineteen ten' => self::nineteenTen,
+            'yisou' => self::yisou,
+            'semrush', 'semrush inc.' => self::semrush,
+            'browseredsonthiago', 'browser-edson-thiago', 'browser edson thiago' => self::browserEdsonThiago,
+            'micheldeboer', 'michel-de-boer', 'michel de boer' => self::michelDeBoer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2734,6 +2782,13 @@ enum Company: string implements CompanyInterface
             self::leysinMedia => 'Shanghai Leysin Media Co, Ltd.',
             self::infraware => 'Infraware Inc',
             self::telly => 'Telly, Inc.',
+            self::shopKeep => 'ShopKeep Inc.',
+            self::compass => 'Compass Security AG',
+            self::smartfren => 'PT Smartfren Telecom, Tbk',
+            self::unister => 'Unister Holding GmbH',
+            self::deedBaltic => 'DEED Baltic, UAB',
+            self::nineteenTen => 'Nineteen Ten LLC',
+            self::semrush => 'Semrush Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2987,6 +3042,14 @@ enum Company: string implements CompanyInterface
             self::tvPlus => 'tv+',
             self::prismPlus => 'prism+',
             self::topTech => 'top-tech',
+            self::shopKeep => 'shop-keep',
+            self::wonjooJang => 'wonjoo-jang',
+            self::lightspeedSystems => 'lightspeed-systems',
+            self::deedBaltic => 'deed-baltic',
+            self::wooRank => 'woo-rank',
+            self::nineteenTen => 'nineteen-ten',
+            self::browserEdsonThiago => 'browser-edson-thiago',
+            self::michelDeBoer => 'michel-de-boer',
             default => $this->name,
         };
     }

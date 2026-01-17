@@ -4900,6 +4900,102 @@ final class CompanyTest extends TestCase
                 'brandname' => 'newsblur',
                 'key' => 'newsblur',
             ],
+            [
+                'type' => 'TeXet',
+                'name' => 'TeXet',
+                'brandname' => 'TeXet',
+                'key' => 'texet',
+            ],
+            [
+                'type' => 'ShopKeep',
+                'name' => 'ShopKeep Inc.',
+                'brandname' => 'ShopKeep',
+                'key' => 'shop-keep',
+            ],
+            [
+                'type' => 'Compass',
+                'name' => 'Compass Security AG',
+                'brandname' => 'Compass',
+                'key' => 'compass',
+            ],
+            [
+                'type' => 'WONJOO JANG',
+                'name' => 'WONJOO JANG',
+                'brandname' => 'WONJOO JANG',
+                'key' => 'wonjoo-jang',
+            ],
+            [
+                'type' => 'Sanyo',
+                'name' => 'Sanyo',
+                'brandname' => 'Sanyo',
+                'key' => 'sanyo',
+            ],
+            [
+                'type' => 'Sprint',
+                'name' => 'Sprint',
+                'brandname' => 'Sprint',
+                'key' => 'sprint',
+            ],
+            [
+                'type' => 'Smartfren',
+                'name' => 'PT Smartfren Telecom, Tbk',
+                'brandname' => 'Smartfren',
+                'key' => 'smartfren',
+            ],
+            [
+                'type' => 'Lightspeed Systems',
+                'name' => 'Lightspeed Systems',
+                'brandname' => 'Lightspeed Systems',
+                'key' => 'lightspeed-systems',
+            ],
+            [
+                'type' => 'Unister',
+                'name' => 'Unister Holding GmbH',
+                'brandname' => 'Unister',
+                'key' => 'unister',
+            ],
+            [
+                'type' => 'DEED Baltic',
+                'name' => 'DEED Baltic, UAB',
+                'brandname' => 'DEED Baltic',
+                'key' => 'deed-baltic',
+            ],
+            [
+                'type' => 'WooRank',
+                'name' => 'WooRank',
+                'brandname' => 'WooRank',
+                'key' => 'woo-rank',
+            ],
+            [
+                'type' => 'Nineteen Ten',
+                'name' => 'Nineteen Ten LLC',
+                'brandname' => 'Nineteen Ten',
+                'key' => 'nineteen-ten',
+            ],
+            [
+                'type' => 'Yisou',
+                'name' => 'Yisou',
+                'brandname' => 'Yisou',
+                'key' => 'yisou',
+            ],
+            [
+                'type' => 'Semrush',
+                'name' => 'Semrush Inc.',
+                'brandname' => 'Semrush',
+                'key' => 'semrush',
+            ],
+            [
+                'type' => 'Browser Edson Thiago',
+                'name' => 'Browser Edson Thiago',
+                'brandname' => 'Browser Edson Thiago',
+                'key' => 'browser-edson-thiago',
+            ],
+            [
+                'type' => 'Michel de Boer',
+                'name' => 'Michel de Boer',
+                'brandname' => 'Michel de Boer',
+                'key' => 'michel-de-boer',
+            ],
         ];
     }
 
