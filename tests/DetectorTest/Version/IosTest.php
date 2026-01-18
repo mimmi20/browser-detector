@@ -256,6 +256,10 @@ final class IosTest extends TestCase
                 'LightSpeed [FBAN/MessengerLiteForiOS;FBAV/255.0.0.30.124;FBBV/ 202164847;FBDV/iPhone10,4;FBMD/iPhone;FBSN/iOS;FBSV/ 13.3.1;FBSS/2;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]',
                 '13.3.1',
             ],
+            [
+                'TuneIn Radio/27.5.0; iPad6,8; iPadOS/16.7.5',
+                '16.7.5',
+            ],
         ];
     }
 

@@ -7608,6 +7608,8 @@ final class DeviceTest extends TestCase
             // grundig
             ['GR-TB10S', 'grundig=grundig gr-tb10s'],
             ['Grundig Google TV', 'grundig=grundig smart tv'],
+            ['Grundig Android TV', 'grundig=grundig smart tv'],
+            ['Grundig Google TV UHD+', 'grundig=grundig google tv uhd+'],
             // dudu-auto
             ['DUDU7', 'dudu-auto=dudu-auto dudu7'],
             // vorcom
@@ -8030,6 +8032,25 @@ final class DeviceTest extends TestCase
             ['PrismPlus 4K Pro Android TV', 'prism+=prism+ 4k pro smart tv'],
             // telly
             ['TY55_1', 'telly=telly ty55-1'],
+            // play-now
+            ['PLAY NOW TV BOX 2', 'play-now=play-now tv box 2'],
+            // botech
+            ['ATV R1', 'botech=botech atv r1'],
+            ['ATV R2', 'botech=botech atv r2'],
+            // brandt
+            ['Brandt Android TV 638', 'brandt=brandt android tv'],
+            ['BRANDT FHD TV', 'brandt=brandt fhd tv'],
+            ['BRANDT UHD TV', 'brandt=brandt uhd tv'],
+            // bauhn
+            ['BAUHN 4K Android TV', 'bauhn=bauhn 4k android tv'],
+            // jvc
+            ['JVC Android TV', 'jvc=jvc smart tv'],
+            // beko
+            ['Beko Android TV', 'beko=beko smart tv'],
+            // altus
+            ['Altus Android TV', 'altus=altus smart tv'],
+            // profilo
+            ['Profilo 4K Android TV', 'profilo=profilo 4k android tv'],
             // other
             ['Model"', null],
             [': "', null],

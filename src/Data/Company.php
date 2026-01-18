@@ -1667,6 +1667,26 @@ enum Company: string implements CompanyInterface
 
     case michelDeBoer = 'Michel de Boer';
 
+    case cultraview = 'Cultraview';
+
+    case system76 = 'System76';
+
+    case playNow = 'Play Now';
+
+    case botech = 'Botech';
+
+    case brandt = 'Brandt';
+
+    case bauhn = 'BAUHN';
+
+    case jvc = 'JVC';
+
+    case beko = 'Beko';
+
+    case altus = 'Altus';
+
+    case profilo = 'PROFiLO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2498,6 +2518,16 @@ enum Company: string implements CompanyInterface
             'semrush', 'semrush inc.' => self::semrush,
             'browseredsonthiago', 'browser-edson-thiago', 'browser edson thiago' => self::browserEdsonThiago,
             'micheldeboer', 'michel-de-boer', 'michel de boer' => self::michelDeBoer,
+            'cultraview' => self::cultraview,
+            'system76' => self::system76,
+            'playnow', 'play now', 'play-now' => self::playNow,
+            'botech' => self::botech,
+            'brandt' => self::brandt,
+            'bauhn' => self::bauhn,
+            'jvc' => self::jvc,
+            'beko' => self::beko,
+            'altus' => self::altus,
+            'profilo' => self::profilo,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3050,6 +3080,7 @@ enum Company: string implements CompanyInterface
             self::nineteenTen => 'nineteen-ten',
             self::browserEdsonThiago => 'browser-edson-thiago',
             self::michelDeBoer => 'michel-de-boer',
+            self::playNow => 'play-now',
             default => $this->name,
         };
     }

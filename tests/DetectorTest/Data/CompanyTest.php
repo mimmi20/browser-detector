@@ -4996,6 +4996,66 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Michel de Boer',
                 'key' => 'michel-de-boer',
             ],
+            [
+                'type' => 'Cultraview',
+                'name' => 'Cultraview',
+                'brandname' => 'Cultraview',
+                'key' => 'cultraview',
+            ],
+            [
+                'type' => 'System76',
+                'name' => 'System76',
+                'brandname' => 'System76',
+                'key' => 'system76',
+            ],
+            [
+                'type' => 'Play Now',
+                'name' => 'Play Now',
+                'brandname' => 'Play Now',
+                'key' => 'play-now',
+            ],
+            [
+                'type' => 'Botech',
+                'name' => 'Botech',
+                'brandname' => 'Botech',
+                'key' => 'botech',
+            ],
+            [
+                'type' => 'Brandt',
+                'name' => 'Brandt',
+                'brandname' => 'Brandt',
+                'key' => 'brandt',
+            ],
+            [
+                'type' => 'BAUHN',
+                'name' => 'BAUHN',
+                'brandname' => 'BAUHN',
+                'key' => 'bauhn',
+            ],
+            [
+                'type' => 'JVC',
+                'name' => 'JVC',
+                'brandname' => 'JVC',
+                'key' => 'jvc',
+            ],
+            [
+                'type' => 'Beko',
+                'name' => 'Beko',
+                'brandname' => 'Beko',
+                'key' => 'beko',
+            ],
+            [
+                'type' => 'Altus',
+                'name' => 'Altus',
+                'brandname' => 'Altus',
+                'key' => 'altus',
+            ],
+            [
+                'type' => 'PROFiLO',
+                'name' => 'PROFiLO',
+                'brandname' => 'PROFiLO',
+                'key' => 'profilo',
+            ],
         ];
     }
 

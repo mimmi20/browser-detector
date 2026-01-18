@@ -163,6 +163,7 @@ final class MobileDeviceTest extends TestCase
             ['Jam/2.0.4 iOS/16.3.1 (www.listentojam.com)'],
             ['KKBOX/7.10.70/iOS/14.2'],
             ['BIRD S710_BLEU/1.00 Nucleus RTOS/V1.11.19 MTK6223/07A Release/07.28.2007 Browser/Teleca'],
+            ['Mozilla/5.0 (Linux; Ubuntu 20.04 like Android 9) AppleWebKit/537.36 Chrome/87.0.4280.144 Mobile Safari/537.36'],
         ];
     }
 

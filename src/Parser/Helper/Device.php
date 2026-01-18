@@ -6731,7 +6731,8 @@ final class Device implements DeviceInterface
             'b22_eea' => 'biegedy=biegedy b22_eea',
             // grundig
             'gr-tb10s' => 'grundig=grundig gr-tb10s',
-            'grundig google tv' => 'grundig=grundig smart tv',
+            'grundig google tv', 'grundig android tv' => 'grundig=grundig smart tv',
+            'grundig google tv uhd+' => 'grundig=grundig google tv uhd+',
             // dudu-auto
             'dudu7' => 'dudu-auto=dudu-auto dudu7',
             // vorcom
@@ -7149,6 +7150,25 @@ final class Device implements DeviceInterface
             'prismplus 4k pro android tv' => 'prism+=prism+ 4k pro smart tv',
             // telly
             'ty55_1' => 'telly=telly ty55-1',
+            // play-now
+            'play now tv box 2' => 'play-now=play-now tv box 2',
+            // botech
+            'atv r1' => 'botech=botech atv r1',
+            'atv r2' => 'botech=botech atv r2',
+            // brandt
+            'brandt android tv 638' => 'brandt=brandt android tv',
+            'brandt fhd tv' => 'brandt=brandt fhd tv',
+            'brandt uhd tv' => 'brandt=brandt uhd tv',
+            // bauhn
+            'bauhn 4k android tv' => 'bauhn=bauhn 4k android tv',
+            // jvc
+            'jvc android tv' => 'jvc=jvc smart tv',
+            // beko
+            'beko android tv' => 'beko=beko smart tv',
+            // altus
+            'altus android tv' => 'altus=altus smart tv',
+            // profilo
+            'profilo 4k android tv' => 'profilo=profilo 4k android tv',
             // other
             default => null,
         };
