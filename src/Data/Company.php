@@ -1687,6 +1687,10 @@ enum Company: string implements CompanyInterface
 
     case profilo = 'PROFiLO';
 
+    case fedirTsapana = 'Fedir Tsapana';
+
+    case arcelik = 'Arcelik';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2528,6 +2532,8 @@ enum Company: string implements CompanyInterface
             'beko' => self::beko,
             'altus' => self::altus,
             'profilo' => self::profilo,
+            'fedirtsapana', 'fedir-tsapana', 'fedir tsapana' => self::fedirTsapana,
+            'arcelik', 'arcelik a.s.' => self::arcelik,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2819,6 +2825,7 @@ enum Company: string implements CompanyInterface
             self::deedBaltic => 'DEED Baltic, UAB',
             self::nineteenTen => 'Nineteen Ten LLC',
             self::semrush => 'Semrush Inc.',
+            self::arcelik => 'Arcelik A.S.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3081,6 +3088,7 @@ enum Company: string implements CompanyInterface
             self::browserEdsonThiago => 'browser-edson-thiago',
             self::michelDeBoer => 'michel-de-boer',
             self::playNow => 'play-now',
+            self::fedirTsapana => 'fedir-tsapana',
             default => $this->name,
         };
     }

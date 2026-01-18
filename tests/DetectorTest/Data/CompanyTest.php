@@ -5056,6 +5056,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'PROFiLO',
                 'key' => 'profilo',
             ],
+            [
+                'type' => 'Fedir Tsapana',
+                'name' => 'Fedir Tsapana',
+                'brandname' => 'Fedir Tsapana',
+                'key' => 'fedir-tsapana',
+            ],
+            [
+                'type' => 'Arcelik',
+                'name' => 'Arcelik A.S.',
+                'brandname' => 'Arcelik',
+                'key' => 'arcelik',
+            ],
         ];
     }
 

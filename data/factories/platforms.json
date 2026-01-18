@@ -33,7 +33,7 @@
     "/MIUI/": "android",
     "/kaios/i": "kaios",
     "/yunos|baidu yi|(?<!o)andr[0o]id|aosp|harmonyos|silk|juc ?\\(linux;|adr |gingerbread|ucweb\\/2\\.0 \\(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e|puffin\\/[\\d\\.]+a[tp]/i": "android",
-    "/mobilesafari\\/.*cfnetwork|watchos|(?<!like )iphone|cpu i?os/i": "ios",
+    "/mobilesafari\\/.*cfnetwork|watchos|(?<!like |t)iphone|cpu i?os/i": "ios",
     "/safari\\/.*cfnetwork|(?<!like )mac os x|power macintosh/i": "mac",
     "/(?<!FBSN\\/|\\()darwin|cfnetwork/i": "darwin",
     "/linux|raspbian|suse|fedora|mint|red ?hat|slackware|zenwalk gnu|xentos|moblin|esx|netcast|kantonix|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|openpda|lindows|linspire/i": "linux",

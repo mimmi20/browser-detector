@@ -2899,6 +2899,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Himalaya_test",
         "Himalaya"
       ]
     },
@@ -3464,6 +3465,16 @@
   },
   "player fm": {
     "name": "Player FM",
+    "manufacturer": "nuvomondo",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "alpha player fm": {
+    "name": "Alpha Player FM",
     "manufacturer": "nuvomondo",
     "type": "mobile-application",
     "version": {
@@ -4418,7 +4429,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "build:",
-        "Laughable iOS"
+        "Laughable iOS",
+        "Laughable"
       ]
     },
     "engine": "unknown"
@@ -4539,6 +4551,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pic Collage"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "outcast": {
+    "name": "Outcast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Outcast"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "guacamole": {
+    "name": "Guacamole",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Guacamole"
       ]
     },
     "engine": "unknown"

@@ -7169,6 +7169,8 @@ final class Device implements DeviceInterface
             'altus android tv' => 'altus=altus smart tv',
             // profilo
             'profilo 4k android tv' => 'profilo=profilo 4k android tv',
+            // arcelik
+            'arcelik google tv', 'arcelik android tv' => 'arcelik=arcelik smart tv',
             // other
             default => null,
         };

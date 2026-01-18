@@ -447,5 +447,17 @@
       ]
     },
     "engine": "gecko"
+  },
+  "php-curl-class": {
+    "name": "PHP cURL Class",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PHP\\-Curl\\-Class"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -8051,6 +8051,9 @@ final class DeviceTest extends TestCase
             ['Altus Android TV', 'altus=altus smart tv'],
             // profilo
             ['Profilo 4K Android TV', 'profilo=profilo 4k android tv'],
+            // arcelik
+            ['Arcelik Google TV', 'arcelik=arcelik smart tv'],
+            ['Arcelik Android TV', 'arcelik=arcelik smart tv'],
             // other
             ['Model"', null],
             [': "', null],
