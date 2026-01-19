@@ -231,7 +231,22 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "NewsBlur"
+      ]
+    },
+    "engine": null
+  },
+  "newsblur mobile app": {
+    "name": "NewsBlur Mobile App",
+    "manufacturer": "newsblur",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NewsBlur iPhone App v",
         "NewsBlur iPhone App",
+        "NewsBlur iPad App v",
+        "NewsBlur iPad App",
         "NewsBlur"
       ]
     },

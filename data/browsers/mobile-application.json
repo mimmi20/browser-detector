@@ -4578,5 +4578,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "gold": {
+    "name": "Gold",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gold"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "audio": {
+    "name": "Audio",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Audio"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "anchor": {
+    "name": "Anchor",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Anchor"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -104,6 +104,7 @@ final readonly class Ios implements VersionFactoryInterface
         '/darwin\/18/i' => '12.0',
         '/darwin\/17\.7/i' => '11.4',
         '/darwin\/17\.6/i' => '11.4',
+        '/cfnetwork\/901(\.\d+)? darwin\/17\.5/i' => '11.3',
         '/cfnetwork\/897(\.\d+)? darwin\/17\.5/i' => '11.3',
         '/darwin\/17\.4/i' => '11.2',
         '/darwin\/17\.3/i' => '11.2',

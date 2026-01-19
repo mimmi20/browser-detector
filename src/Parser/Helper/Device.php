@@ -3237,6 +3237,7 @@ final class Device implements DeviceInterface
             'rmx3710' => 'realme=realme rmx3710',
             'rmx3709' => 'realme=realme rmx3709',
             'rmx3708' => 'realme=realme rmx3708',
+            '4k google tv stick' => 'realme=realme 4k google tv stick',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -6524,6 +6525,8 @@ final class Device implements DeviceInterface
             'lavie tab 9qhd1' => 'nec=nec 9qhd1',
             // haier
             'mintaka' => 'haier=haier mintaka',
+            'haier android tv dvb2k' => 'haier=haier android tv dvb2k',
+            'haier android tv ff pro' => 'haier=haier android tv ff pro',
             // ayya
             'ayat101' => 'ayya=ayya ayat 101',
             // xreal
@@ -6752,6 +6755,7 @@ final class Device implements DeviceInterface
             'philips w8555' => 'philips=philips w8555',
             'neoviu d1' => 'philips=philips neoviu d1',
             'philips google tv ta1' => 'philips=philips google tv ta1',
+            'philips uhd android tv' => 'philips=philips smart tv uhd',
             // homatics
             'box r 4k plus' => 'homatics=homatics box r 4k plus',
             'box r lite 4k' => 'homatics=homatics box r lite 4k',

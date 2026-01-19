@@ -1691,6 +1691,8 @@ enum Company: string implements CompanyInterface
 
     case arcelik = 'Arcelik';
 
+    case pantech = 'Pantech';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2534,6 +2536,7 @@ enum Company: string implements CompanyInterface
             'profilo' => self::profilo,
             'fedirtsapana', 'fedir-tsapana', 'fedir tsapana' => self::fedirTsapana,
             'arcelik', 'arcelik a.s.' => self::arcelik,
+            'pantech' => self::pantech,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

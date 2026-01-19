@@ -3916,6 +3916,7 @@ final class DeviceTest extends TestCase
             ['RMX3710', 'realme=realme rmx3710'],
             ['RMX3709', 'realme=realme rmx3709'],
             ['RMX3708', 'realme=realme rmx3708'],
+            ['4K Google TV Stick', 'realme=realme 4k google tv stick'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -7398,6 +7399,8 @@ final class DeviceTest extends TestCase
             ['LAVIE Tab 9QHD1', 'nec=nec 9qhd1'],
             // haier
             ['MINTAKA', 'haier=haier mintaka'],
+            ['Haier Android TV DVB2K', 'haier=haier android tv dvb2k'],
+            ['Haier Android TV FF Pro', 'haier=haier android tv ff pro'],
             // ayya
             ['Ayat101', 'ayya=ayya ayat 101'],
             // xreal
@@ -7629,6 +7632,7 @@ final class DeviceTest extends TestCase
             ['Philips W8555', 'philips=philips w8555'],
             ['NeoViu D1', 'philips=philips neoviu d1'],
             ['Philips Google TV TA1', 'philips=philips google tv ta1'],
+            ['Philips UHD Android TV', 'philips=philips smart tv uhd'],
             // homatics
             ['Box R 4K Plus', 'homatics=homatics box r 4k plus'],
             ['Box R Lite 4K', 'homatics=homatics box r lite 4k'],

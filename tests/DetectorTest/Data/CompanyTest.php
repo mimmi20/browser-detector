@@ -5068,6 +5068,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Arcelik',
                 'key' => 'arcelik',
             ],
+            [
+                'type' => 'Pantech',
+                'name' => 'Pantech',
+                'brandname' => 'Pantech',
+                'key' => 'pantech',
+            ],
         ];
     }
 
