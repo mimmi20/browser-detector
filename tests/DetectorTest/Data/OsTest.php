@@ -475,7 +475,7 @@ final class OsTest extends TestCase
                 'name' => 'Series 60',
                 'marketingName' => 'Series 60',
                 'manufacturer' => Company::nokia,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Series60']],
                 'key' => 'series60',
             ],
             [
