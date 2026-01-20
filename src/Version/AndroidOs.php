@@ -17,8 +17,12 @@ use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
 use UnexpectedValueException;
 
+use function array_filter;
+use function array_first;
+use function array_map;
 use function mb_stripos;
 use function preg_match;
+use function str_replace;
 
 final readonly class AndroidOs implements VersionFactoryInterface
 {
@@ -77,17 +81,33 @@ final readonly class AndroidOs implements VersionFactoryInterface
             }
         }
 
-        if (preg_match('/Android API (?:Level\: )?(?P<version>\d+)/', $useragent, $matches)) {
-            try {
-                return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
-            } catch (NotNumericException) {
-                // do nothing here
-            }
-        }
+        $regexes = [
+            '/Android API (?:Level\: )?(?P<version>\d+)/',
+            '/(?P<version>\d+)\/tclwebkit\d+[\.\d]*/',
+            '/build \d+\/android (?P<version>\d+)/i',
+        ];
 
-        if (preg_match('/(?P<version>\d+)\/tclwebkit\d+[\.\d]*/', $useragent, $matches)) {
+        $filtered = array_filter(
+            $regexes,
+            static fn (string $regex): bool => (bool) preg_match($regex, $useragent),
+        );
+
+        $results = array_map(
+            static function (string $regex) use ($useragent): string {
+                $matches = [];
+
+                preg_match($regex, $useragent, $matches);
+
+                return str_replace('_', '.', $matches['version'] ?? '');
+            },
+            $filtered,
+        );
+
+        $detectedVersion = array_first($results);
+
+        if ($detectedVersion !== null && $detectedVersion !== '') {
             try {
-                return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
+                return $this->versionBuilder->set($this->mapSdkVersion($detectedVersion));
             } catch (NotNumericException) {
                 // do nothing here
             }

@@ -365,6 +365,8 @@ enum Os: string implements OsInterface
 
     case plasmaMobile = 'Plasma Mobile';
 
+    case whaleOS = 'Whale OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -539,6 +541,7 @@ enum Os: string implements OsInterface
             'opensuse' => self::openSuse,
             'linspire' => self::linspire,
             'plasmamobile', 'plasma-mobile', 'plasma mobile' => self::plasmaMobile,
+            'whaleos', 'whale os', 'whale-os' => self::whaleOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -644,6 +647,7 @@ enum Os: string implements OsInterface
             self::lindows, self::linspire => Company::linspire,
             self::openHarmony => Company::openatomFoundation,
             self::plasmaMobile => Company::kde,
+            self::whaleOS => Company::whaleTV,
             default => Company::unknown,
         };
     }
@@ -675,7 +679,7 @@ enum Os: string implements OsInterface
             self::netbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['NetBSD']],
             self::openbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenBSD']],
             self::riscos => ['factory' => VersionBuilderFactory::class, 'search' => ['RISC OS-NC', 'RISC OS', 'RISC']],
-            self::unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix']],
+            self::unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix OS', 'Unix']],
             self::lgwebos => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S']],
             self::wyderos => ['factory' => VersionBuilderFactory::class, 'search' => ['WyderOS']],
             self::yi => ['factory' => VersionBuilderFactory::class, 'search' => ['Yi']],
@@ -709,7 +713,7 @@ enum Os: string implements OsInterface
             self::meego => ['factory' => VersionBuilderFactory::class, 'search' => ['MeeGo']],
             self::tizen => ['factory' => VersionBuilderFactory::class, 'search' => ['Tizen']],
             self::mre => ['factory' => VersionBuilderFactory::class, 'search' => ['MRE\\\\', 'MRE']],
-            self::nucleus => ['factory' => VersionBuilderFactory::class, 'search' => ['Nucleus']],
+            self::nucleus => ['factory' => VersionBuilderFactory::class, 'search' => ['Nucleus', 'MTK']],
             self::opensolaris => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenSolaris']],
             self::solaris => ['factory' => VersionBuilderFactory::class, 'search' => ['Solaris']],
             self::sunos => ['factory' => VersionBuilderFactory::class, 'search' => ['SunOS']],
@@ -738,7 +742,10 @@ enum Os: string implements OsInterface
             self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
             self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
-            self::aosp => ['factory' => VersionBuilderFactory::class, 'search' => ['Android']],
+            self::aosp, self::androidtv => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+            self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
+            self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
+            self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series60']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -877,6 +884,7 @@ enum Os: string implements OsInterface
             self::openHarmony => 'openharmony',
             self::openSuse => 'opensuse',
             self::plasmaMobile => 'plasma-mobile',
+            self::whaleOS => 'whale-os',
             default => $this->name,
         };
     }

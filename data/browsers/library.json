@@ -172,7 +172,7 @@
     "engine": "unknown"
   },
   "pear http_request2": {
-    "name": "PEAR HTTP_Request2",
+    "name": "HTTP_Request2",
     "manufacturer": "php-group",
     "type": "library",
     "version": {
@@ -435,5 +435,29 @@
       ]
     },
     "engine": "webkit"
+  },
+  "slimerjs": {
+    "name": "SlimerJS",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SlimerJS"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "php-curl-class": {
+    "name": "PHP cURL Class",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PHP\\-Curl\\-Class"
+      ]
+    },
+    "engine": "unknown"
   }
 }

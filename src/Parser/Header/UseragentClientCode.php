@@ -53,6 +53,13 @@ final readonly class UseragentClientCode implements ClientCodeInterface
     #[Override]
     public function getClientCode(string $value): string | null
     {
+        if (
+            preg_match('/Android \d+; [A-Za-z0-9]{10}; U; [^;)]*\) AppleWebKit\/.+Chrome\//', $value)
+            && !preg_match('/tenta/i', $value)
+        ) {
+            return 'avast secure browser';
+        }
+
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {

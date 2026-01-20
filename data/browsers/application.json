@@ -129,8 +129,8 @@
     },
     "engine": null
   },
-  "basecamp3": {
-    "name": "Basecamp3",
+  "basecamp": {
+    "name": "Basecamp",
     "manufacturer": "basecamp",
     "type": "application",
     "version": {
@@ -152,18 +152,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "beonex communicator": {
-    "name": "Beonex Communicator",
-    "manufacturer": "beonex-business-services",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Beonex"
-      ]
-    },
-    "engine": null
   },
   "billigfluegefinal app": {
     "name": "billigFluegeFinal App",
@@ -412,16 +400,6 @@
     },
     "engine": "unknown"
   },
-  "google+ app": {
-    "name": "Google+ App",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "ibooks author": {
     "name": "iBooks Author",
     "manufacturer": "apple",
@@ -643,18 +621,6 @@
     },
     "engine": null
   },
-  "newsblur app": {
-    "name": "NewsBlur App",
-    "manufacturer": "newsblur",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "NewsBlur"
-      ]
-    },
-    "engine": null
-  },
   "newsfire": {
     "name": "NewsFire",
     "manufacturer": "david-watanabe",
@@ -785,20 +751,6 @@
     },
     "engine": "unknown"
   },
-  "perfect browser": {
-    "name": "Perfect Browser",
-    "manufacturer": "app-simply",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Perfect Browser",
-        "Perfect Browser\\-iPad",
-        "Perfect Browser"
-      ]
-    },
-    "engine": "webkit"
-  },
   "phantomas": {
     "name": "phantomas",
     "manufacturer": "maciej-brencz",
@@ -818,6 +770,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Pinterest for iOS",
         "Pinterest"
       ]
     },
@@ -1174,18 +1127,6 @@
     },
     "engine": "webkit"
   },
-  "uc browser hd": {
-    "name": "UC Browser HD",
-    "manufacturer": "ucweb",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "UCBrowserHD"
-      ]
-    },
-    "engine": null
-  },
   "visio": {
     "name": "Visio",
     "manufacturer": "microsoft",
@@ -1253,16 +1194,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "weibo app": {
-    "name": "Weibo App",
-    "manufacturer": "sina-weibo",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
   },
   "wire app": {
     "name": "Wire App",
@@ -1505,29 +1436,9 @@
     },
     "engine": null
   },
-  "readly-app": {
-    "name": "readly App",
-    "manufacturer": "readly",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "gbox-helper": {
     "name": "GBox Helper",
     "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
-  "netflix-app": {
-    "name": "Netflix App",
-    "manufacturer": "netflix",
     "type": "application",
     "version": {
       "class": null,

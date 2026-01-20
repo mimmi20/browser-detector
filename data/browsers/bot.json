@@ -170,18 +170,6 @@
     },
     "engine": "unknown"
   },
-  "adbeat bot": {
-    "name": "Adbeat Bot",
-    "manufacturer": "adbeat",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "adbeat\\.com"
-      ]
-    },
-    "engine": "unknown"
-  },
   "adcrawler": {
     "name": "AdCrawler",
     "manufacturer": "unknown",
@@ -1779,18 +1767,6 @@
     },
     "engine": "unknown"
   },
-  "easouspider": {
-    "name": "EasouSpider",
-    "manufacturer": "easou",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "EasouSpider"
-      ]
-    },
-    "engine": "unknown"
-  },
   "easybib autocite": {
     "name": "EasyBib AutoCite",
     "manufacturer": "unknown",
@@ -2718,18 +2694,6 @@
     },
     "engine": "unknown"
   },
-  "google pagespeed insights": {
-    "name": "Google PageSpeed Insights",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google Page Speed Insights"
-      ]
-    },
-    "engine": null
-  },
   "google publisher wordpress plugin": {
     "name": "Google Publisher Wordpress Plugin",
     "manufacturer": "google",
@@ -2914,18 +2878,6 @@
     },
     "engine": "unknown"
   },
-  "grapeshotcrawler": {
-    "name": "GrapeshotCrawler",
-    "manufacturer": "grapeshot",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "GrapeshotCrawler"
-      ]
-    },
-    "engine": "unknown"
-  },
   "grindr": {
     "name": "Grindr",
     "manufacturer": "unknown",
@@ -3004,18 +2956,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hatena"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "hatena antenna": {
-    "name": "Hatena Antenna",
-    "manufacturer": "hatena",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Hatena Antenna"
       ]
     },
     "engine": "unknown"
@@ -3813,16 +3753,6 @@
       ]
     },
     "engine": "gecko"
-  },
-  "lightspeed systems crawler": {
-    "name": "Lightspeed Systems Crawler",
-    "manufacturer": "lightspeed-systems",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
   },
   "lightspeed systems rocketcrawler": {
     "name": "Lightspeed Systems RocketCrawler",
@@ -5199,18 +5129,6 @@
     },
     "engine": "unknown"
   },
-  "php-curl-class": {
-    "name": "PHP-Curl-Class",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PHP\\-Curl\\-Class"
-      ]
-    },
-    "engine": "unknown"
-  },
   "picmole bot": {
     "name": "picmole Bot",
     "manufacturer": "picmole",
@@ -6259,16 +6177,6 @@
     },
     "engine": "unknown"
   },
-  "slurp": {
-    "name": "Slurp",
-    "manufacturer": "yahoo",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "smartsite httpclient": {
     "name": "Smartsite HTTPClient",
     "manufacturer": "unknown",
@@ -6289,18 +6197,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SMRF URL Expander"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "smtbot": {
-    "name": "SMTBot",
-    "manufacturer": "similar-tech",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SMTBot"
       ]
     },
     "engine": "unknown"
@@ -8003,16 +7899,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "webmoney advisor": {
-    "name": "WebMoney Advisor",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
   },
   "webnumbr fetcher": {
     "name": "webnumbr Fetcher",
@@ -9801,18 +9687,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SearchExpress"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "img2dataset": {
-    "name": "img2dataset",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "img2dataset"
       ]
     },
     "engine": "unknown"

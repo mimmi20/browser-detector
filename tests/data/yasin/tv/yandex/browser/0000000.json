@@ -1,141 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; YASIN 2K TV Build/PTO7.211208.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 YaBrowser/22.8.0.12 (lite) TV Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general YASIN tv",
-      "marketingName": "general YASIN tv",
-      "manufacturer": "YASIN",
-      "brand": "YASIN",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser Lite",
-      "modus": null,
-      "version": "22.8.0.12",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "112.0.5615.135",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; YASIN 4K G Smart TV Build/RTT2.220103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.124 YaBrowser/24.1.2.87 (lite) TV Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general YASIN tv",
-      "marketingName": "general YASIN tv",
-      "manufacturer": "YASIN",
-      "brand": "YASIN",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser Lite",
-      "modus": null,
-      "version": "24.1.2.87",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "124.0.6367.124",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; YASIN 2K G Smart TV Build/RTM6.230109.087; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.124 YaBrowser/24.1.2.87 (lite) TV Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general YASIN tv",
-      "marketingName": "general YASIN tv",
-      "manufacturer": "YASIN",
-      "brand": "YASIN",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser Lite",
-      "modus": null,
-      "version": "24.1.2.87",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "124.0.6367.124",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; YASIN 4K Android TV Build/PTO6.221014.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.134 YaBrowser/24.1.2.87 (lite) TV Safari/537.36"
     },
     "device": {
@@ -160,7 +25,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": null,
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -185,15 +50,15 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general YASIN tv",
-      "marketingName": "general YASIN tv",
+      "deviceName": "2K Smart TV",
+      "marketingName": "2K Smart TV",
       "manufacturer": "YASIN",
       "brand": "YASIN",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
         "size": null
       },
@@ -205,7 +70,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": null,
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": null
     },

@@ -217,7 +217,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Amigo"
+        "Amigo",
+        "Chrome"
       ]
     },
     "engine": null
@@ -581,7 +582,7 @@
     "engine": null
   },
   "bline": {
-    "name": "bline",
+    "name": "B-Line",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -648,6 +649,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Brave Chrome",
         "Brave"
       ]
     },
@@ -1134,8 +1136,8 @@
     "engine": "webkit"
   },
   "dt-browser": {
-    "name": "DT Browser",
-    "manufacturer": "unknown",
+    "name": "t-online.de Browser",
+    "manufacturer": "telekom",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1242,6 +1244,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ekioh"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "flow-browser": {
+    "name": "Flow",
+    "manufacturer": "ekioh",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Flow"
       ]
     },
     "engine": "webkit"
@@ -2671,18 +2685,6 @@
     },
     "engine": "netfront"
   },
-  "netnewswire": {
-    "name": "NetNewsWire",
-    "manufacturer": "black-pixel",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "NetNewsWire"
-      ]
-    },
-    "engine": "webkit"
-  },
   "nettv": {
     "name": "NetTV",
     "manufacturer": "unknown",
@@ -3244,18 +3246,6 @@
     },
     "engine": null
   },
-  "pulse": {
-    "name": "Pulse",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Pulse"
-      ]
-    },
-    "engine": null
-  },
   "qqbrowser": {
     "name": "QQ Browser",
     "manufacturer": "tencent",
@@ -3395,8 +3385,10 @@
     "manufacturer": "quick-heal",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QHBrowser"
+      ]
     },
     "engine": null
   },
@@ -3748,18 +3740,6 @@
       ]
     },
     "engine": "trident"
-  },
-  "slimerjs": {
-    "name": "SlimerJS",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SlimerJS"
-      ]
-    },
-    "engine": "gecko"
   },
   "slimjet browser": {
     "name": "Slimjet Browser",
@@ -4421,6 +4401,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "WhaleBrowser",
         "Whale"
       ]
     },
@@ -5076,10 +5057,12 @@
     "manufacturer": "stoutner",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PrivacyBrowser"
+      ]
     },
-    "engine": null
+    "engine": "blink"
   },
   "yuzu-browser": {
     "name": "Yuzu Browser",
@@ -5354,8 +5337,10 @@
     "manufacturer": "fedir-tsapana",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TV Bro"
+      ]
     },
     "engine": null
   },
@@ -5790,12 +5775,72 @@
   },
   "docomo-browser": {
     "name": "DoCoMo Browser",
-    "manufacturer": "pocketbook",
+    "manufacturer": "ntt-docomo",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DoCoMo"
+      ]
+    },
+    "engine": null
+  },
+  "pure-lite-browser": {
+    "name": "Pure Lite Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pure Lite Browser"
+      ]
+    },
+    "engine": null
+  },
+  "beonex communicator": {
+    "name": "Beonex Communicator",
+    "manufacturer": "beonex-business-services",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Beonex"
+      ]
+    },
+    "engine": null
+  },
+  "perfect browser": {
+    "name": "Perfect Browser",
+    "manufacturer": "app-simply",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Perfect Browser",
+        "Perfect Browser\\-iPad",
+        "Perfect Browser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "every-browser": {
+    "name": "Every Browser",
+    "manufacturer": "pixel-motion",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "uc browser hd": {
+    "name": "UC Browser HD",
+    "manufacturer": "ucweb",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UCBrowserHD"
       ]
     },
     "engine": null

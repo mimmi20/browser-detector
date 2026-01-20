@@ -220,6 +220,46 @@ final class IosTest extends TestCase
                 'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/25.2.0',
                 '26.2.0',
             ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/25.3.0',
+                '26.3.0',
+            ],
+            [
+                'kicktipp-ios 2.2.6 on iPhone3,1 with iOS 7.0.6 at 640x960',
+                '7.0.6',
+            ],
+            [
+                'IILoader/1.0 CFNetwork/609.1.4 Darwin/12.4.0',
+                '6.1.0',
+            ],
+            [
+                'billigFluegeFinal/1.5 CFNetwork/485.13.8 Darwin/10.8.0',
+                '4.3.0',
+            ],
+            [
+                'fluegecom/1.0 CFNetwork/485.12.7 Darwin/10.8.0',
+                '4.2.0',
+            ],
+            [
+                'ArcGISRuntime-iOS/100.6 (iOS 12.3.1; iPad6,3) com.esri.earth.phone/1.0.0',
+                '12.3.1',
+            ],
+            [
+                'Mozilla/5.0 (iPhone; CPU Phone OS 14_2 like Mac OS X) WebKit/8610 (KHTML, like Gecko) Mobile/18B92 [FBAN/FBIOS;FBDV/iPhone13,3;FBMD/iPhone;FBSN/iOS;FBSV/14.2;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5]',
+                '14.2.0',
+            ],
+            [
+                'Pinterest for iOS/7.11 (iPhone7,2; 12.1.4)',
+                '12.1.4',
+            ],
+            [
+                'LightSpeed [FBAN/MessengerLiteForiOS;FBAV/255.0.0.30.124;FBBV/ 202164847;FBDV/iPhone10,4;FBMD/iPhone;FBSN/iOS;FBSV/ 13.3.1;FBSS/2;FBCR/;FBID/phone;FBLC/en_US;FBOP/0]',
+                '13.3.1',
+            ],
+            [
+                'TuneIn Radio/27.5.0; iPad6,8; iPadOS/16.7.5',
+                '16.7.5',
+            ],
         ];
     }
 

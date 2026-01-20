@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.2.31.Bravo.160 Model/ARRIS-VMS4100, Commscope_STB_BCM74491C1_2018/KA31.00.09.18 (Verizon, VMS4100, Wired)[4bbf3b6057fca4982fce8ff7711d187c035ebe593c707a6e55d94e0b6192e0b6/32.56]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.20.2.31",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.2.31.Bravo.160 Model/ARRIS-VMS4100P2, Commscope_STB_BCM74491C1_2018/KA31.00.09.18 (Verizon, VMS4100P2, Wired)[381cd86147835727da0379229885d89f1ce35b77cd467a287e2cbf9021a75dfa/32.56]"
     },
     "device": {
@@ -54,7 +9,7 @@
       "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -99,7 +54,7 @@
       "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -144,7 +99,7 @@
       "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -189,7 +144,7 @@
       "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -226,186 +181,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 11; Panasonic G00gle TV LCD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.120 Safari/537.36 OMI/4.25.1.92.StableAVB.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": null,
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.25.1.92",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "127.0.6533.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 11; REEDER TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.120 Safari/537.36 OMI/4.25.1.92.StableAVB.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": null,
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.25.1.92",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "127.0.6533.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 11; Regal G00gle TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.120 Safari/537.36 OMI/4.25.1.92.StableAVB.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": null,
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.25.1.92",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "127.0.6533.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 11; TVPLUS BOX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.120 Safari/537.36 OMI/4.25.1.92.StableAVB.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": null,
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.25.1.92",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "127.0.6533.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/20.11.2.40.Wasabi.275 Model/Funai-Model18-50PFL5703F7 TV Store/20.11"
     },
     "device": {
@@ -414,7 +189,7 @@
       "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -459,7 +234,7 @@
       "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -504,7 +279,7 @@
       "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,

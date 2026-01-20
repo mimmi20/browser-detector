@@ -56,6 +56,10 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
     #[Override]
     public function getDeviceCode(string $value): string | null
     {
+        if (preg_match('/Android \d+; [A-Za-z0-9]{10}; U; [^;)]*\) AppleWebKit\/.+Chrome\//', $value)) {
+            return 'unknown=general mobile phone';
+        }
+
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
@@ -71,8 +75,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]? +(?:build|hmscore|miui)[^)]+)\)/i',
-            '/dalvik\/[\d.]+ \(linux; android [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
+            '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
+            '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
             '/slack\/[\d.]+ \((?P<devicecode>[^);\/]+)(?:;? (?:andr[o0]id|tizen) [\d.]+)(?:[^)]+)?\)/i',
@@ -82,16 +86,17 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/imoandroid\/[\d.]+; \d+; REL; (?P<devicecode>[^);\/]+)/i',
             '/tivimate\/[\d.]+ \((?P<devicecode>[^);\/]+);/i',
             '/; model: (?P<devicecode>[^);\/]+)\)/i',
-            '/(lbc|heart)\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
+            '/(lbc|heart)\/[\d.]+ andr[o0]id [\d.]+\/(?P<devicecode>[^);\/]+)/i',
             '/mozilla\/[\d.]+ \(mobile; (?P<devicecode>[^;]+)(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
-            '/virgin radio\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \((?P<devicecode>[^)]+)\)/i',
+            '/virgin radio\/[\d.]+ \/ \(linux; andr[o0]id [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \((?P<devicecode>[^)]+)\)/i',
             '/pugpigbolt [\d.]+ \([^);\/,]+, (android|ios) [\d.]+\) on phone \(model (?P<devicecode>[^)]+)\)/i',
-            '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; android [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
-            '/luminary\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^);\/]+); /i',
-            '/emaudioplayer [\d.]+ \([\d.]+\) \/ android [\d.]+ \/ (?P<devicecode>[^);\/]+)/i',
-            '/android [\d.]+; (?P<devicecode>[^);\/]+)\) applewebkit/i',
-            '/classic fm\/[\d.]+ android [\d.]+\/(?P<devicecode>[^);\/]+)/i',
+            '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; andr[o0]id [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
+            '/luminary\/[\d.]+ \(andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+); /i',
+            '/emaudioplayer [\d.]+ \([\d.]+\) \/ andr[o0]id [\d.]+ \/ (?P<devicecode>[^);\/]+)/i',
+            '/andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)\) applewebkit/i',
+            '/classic fm\/[\d.]+ andr[o0]id [\d.]+\/(?P<devicecode>[^);\/]+)/i',
             '/mozilla\/[\d.]+ \([\d.]+mb; [\d.]+x[\d.]+; [\d.]+x[\d.]+; [\d.]+x[\d.]+; (?P<devicecode>[^);\/]+); [\d.]+\) applewebkit/i',
+            '/kodi\/[\d.]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
         ];
 
         $filtered = array_filter(

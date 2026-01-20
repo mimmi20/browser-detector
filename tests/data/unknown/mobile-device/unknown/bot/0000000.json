@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; TrafficBlazer 6.0)"
+      "user-agent": "Sogou Mobile Spider1.0 (http://wap.sogou.com)"
     },
     "device": {
       "architecture": null,
@@ -68,25 +68,25 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
-      "name": "Traffic Blazer",
+      "name": "generic spider",
       "modus": null,
-      "version": "6.0.0",
+      "version": null,
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true,
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "Microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
@@ -222,51 +222,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; TrafficBlazer 5.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Traffic Blazer",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "Microsoft"
     }
   },
   {

@@ -2518,5 +2518,50 @@
       "version": null,
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/87.0.4280.88 Safari/537.36 LG Browser/8.00.00(LGE; ATV75UHDW-0324; 04.42.26; 0x00000001; DTV_C22P); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, ATV75UHDW-0324, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general LG TV",
+      "marketingName": "general LG TV",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
   }
 ]

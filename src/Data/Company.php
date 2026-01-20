@@ -1471,6 +1471,228 @@ enum Company: string implements CompanyInterface
 
     case cosmix = 'Cosmix';
 
+    case overmax = 'Overmax';
+
+    case freelander = 'FreeLander';
+
+    case dogTorance = 'Dogtorance';
+
+    case wafer = 'Wafer';
+
+    case flextech = 'Flextech';
+
+    case fly = 'Fly';
+
+    case tyd = 'TenYiDe';
+
+    case torch = 'Torch';
+
+    case compuware = 'Compuware';
+
+    case indurama = 'Indurama';
+
+    case multynet = 'Multynet';
+
+    case whaleTV = 'Whale TV';
+
+    case konka = 'Konka';
+
+    case easou = 'easou';
+
+    case marketwire = 'Marketwire';
+
+    case richardTrautvetter = 'Richard Trautvetter';
+
+    case beonexBusinessServices = 'Beonex Business Services';
+
+    case deezer = 'Deezer';
+
+    case webin = 'Webin';
+
+    case appSimply = 'AppSimply';
+
+    case bloop = 'Bloop';
+
+    case woxter = 'Woxter';
+
+    case iridiumBrowserTeam = 'Iridium Browser Team';
+
+    case cocCoc = 'Cốc Cốc';
+
+    case adaptiveBee = 'AdaptiveBee';
+
+    case x115com = '115.com';
+
+    case digitalPebble = 'DigitalPebble';
+
+    case basecamp = 'Basecamp';
+
+    case adbeat = 'Adbeat';
+
+    case kinza = 'kinza.jp';
+
+    case postbox = 'Postbox';
+
+    case kkbox = 'KKBOX';
+
+    case nortonLifeLock = 'NortonLifeLock';
+
+    case foundry376 = 'Foundry 376';
+
+    case cryptoPro = 'CRYPTO-PRO';
+
+    case bywayEndeavors = 'Byway Endeavors';
+
+    case sparkMail = 'Spark Mail';
+
+    case pingdom = 'Pingdom';
+
+    case blackPixel = 'Black Pixel';
+
+    case pinterest = 'Pinterest';
+
+    case ekioh = 'Ekioh';
+
+    case mesa = 'Mesa';
+
+    case quickHeal = 'Quick Heal';
+
+    case nvidia = 'Nvidia';
+
+    case bytedance = 'Bytedance';
+
+    case ryte = 'Ryte';
+
+    case toddDitchendorf = 'Todd Ditchendorf';
+
+    case whitehat = 'WhiteHat';
+
+    case ok = 'ok.';
+
+    case dyon = 'Dyon';
+
+    case panavox = 'Panavox';
+
+    case grapeshot = 'Grapeshot';
+
+    case cheBinLiu = 'Che-Bin Liu';
+
+    case sinaWeibo = 'Sina Weibo';
+
+    case hatena = 'Hatena';
+
+    case okta = 'Okta';
+
+    case schoolwires = 'Schoolwires';
+
+    case chatwork = 'ChatWork';
+
+    case flixster = 'Flixster';
+
+    case timeWarnerCable = 'Time Warner Cable';
+
+    case salesforce = 'Salesforce';
+
+    case similarTech = 'SimilarTech';
+
+    case diigo = 'Diigo';
+
+    case ericssonResearch = 'Ericsson Research';
+
+    case soundCloud = 'SoundCloud';
+
+    case dorada = 'Dorada';
+
+    case espn = 'ESPN';
+
+    case videoLan = 'VideoLAN';
+
+    case gihyunJung = 'Gihyun Jung';
+
+    case webExpansion = 'Web Expansion';
+
+    case inboxcube = 'Inboxcube';
+
+    case leysinMedia = 'Leysin Media';
+
+    case tvPlus = 'TV+';
+
+    case regal = 'REGAL';
+
+    case formovie = 'Formovie';
+
+    case singer = 'SINGER';
+
+    case prismPlus = 'PRISM+';
+
+    case infraware = 'Infraware';
+
+    case topTech = 'Top-Tech';
+
+    case aoc = 'AOC';
+
+    case telly = 'Telly';
+
+    case newsblur = 'newsblur';
+
+    case texet = 'TeXet';
+
+    case shopKeep = 'ShopKeep';
+
+    case compass = 'Compass';
+
+    case wonjooJang = 'WONJOO JANG';
+
+    case sanyo = 'Sanyo';
+
+    case sprint = 'Sprint';
+
+    case smartfren = 'Smartfren';
+
+    case lightspeedSystems = 'Lightspeed Systems';
+
+    case unister = 'Unister';
+
+    case deedBaltic = 'DEED Baltic';
+
+    case wooRank = 'WooRank';
+
+    case nineteenTen = 'Nineteen Ten';
+
+    case yisou = 'Yisou';
+
+    case semrush = 'Semrush';
+
+    case browserEdsonThiago = 'Browser Edson Thiago';
+
+    case michelDeBoer = 'Michel de Boer';
+
+    case cultraview = 'Cultraview';
+
+    case system76 = 'System76';
+
+    case playNow = 'Play Now';
+
+    case botech = 'Botech';
+
+    case brandt = 'Brandt';
+
+    case bauhn = 'BAUHN';
+
+    case jvc = 'JVC';
+
+    case beko = 'Beko';
+
+    case altus = 'Altus';
+
+    case profilo = 'PROFiLO';
+
+    case fedirTsapana = 'Fedir Tsapana';
+
+    case arcelik = 'Arcelik';
+
+    case pantech = 'Pantech';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2204,6 +2426,117 @@ enum Company: string implements CompanyInterface
             'nexian' => self::nexian,
             'spice' => self::spice,
             'cosmix', 'cosmix corporation' => self::cosmix,
+            'overmax' => self::overmax,
+            'freelander' => self::freelander,
+            'dogtorance', 'dog-torance' => self::dogTorance,
+            'wafer', 'wafer co.' => self::wafer,
+            'flextech', 'flextech inc.' => self::flextech,
+            'fly' => self::fly,
+            'tyd', 'tenyide' => self::tyd,
+            'torch', 'torch mobile' => self::torch,
+            'compuware', 'compuware corporation', 'compuware-apm' => self::compuware,
+            'indurama' => self::indurama,
+            'multynet' => self::multynet,
+            'whaletv', 'whale-tv', 'whale tv pte. ltd.', 'whale tv' => self::whaleTV,
+            'konka' => self::konka,
+            'easou', 'easou icp' => self::easou,
+            'marketwire', 'marketwire l.p.' => self::marketwire,
+            'richardtrautvetter', 'richard-trautvetter', 'richard trautvetter' => self::richardTrautvetter,
+            'beonexbusinessservices', 'beonex-business-services', 'beonex business services' => self::beonexBusinessServices,
+            'deezer' => self::deezer,
+            'webin' => self::webin,
+            'appsimply', 'app-simply', 'appsimply, llc' => self::appSimply,
+            'bloop', 'bloop s.r.l.' => self::bloop,
+            'woxter' => self::woxter,
+            'iridiumbrowserteam', 'iridium-browser-team', 'iridium browser team' => self::iridiumBrowserTeam,
+            'coccoc', 'coc-coc-company', 'cốc cốc company limited', 'cốc cốc' => self::cocCoc,
+            'adaptivebee', 'adaptive-bee', 'adaptivebee sasu' => self::adaptiveBee,
+            'x115com', '115-com', '115.com' => self::x115com,
+            'digitalpebble', 'digital-pebble', 'digitalpebble ltd' => self::digitalPebble,
+            'basecamp' => self::basecamp,
+            'adbeat', 'adbeat.com' => self::adbeat,
+            'kinza', 'kinza.jp' => self::kinza,
+            'postbox', 'postbox, inc.' => self::postbox,
+            'kkbox', 'kkbox taiwan co., ltd.' => self::kkbox,
+            'nortonlifelock', 'nortonlifelock inc.', 'norton-life-lock' => self::nortonLifeLock,
+            'foundry376', 'foundry 376, llc.', 'foundry-376', 'foundry 376' => self::foundry376,
+            'cryptopro', 'crypto-pro llc', 'crypto-pro' => self::cryptoPro,
+            'bywayendeavors', 'byway-endeavors', 'byway endeavors' => self::bywayEndeavors,
+            'sparkmail', 'spark-mail', 'spark mail limited', 'spark mail' => self::sparkMail,
+            'pingdom', 'pingdom ab' => self::pingdom,
+            'blackpixel', 'black-pixel', 'black pixel' => self::blackPixel,
+            'pinterest', 'pinterest inc.' => self::pinterest,
+            'ekioh', 'ekioh ltd.' => self::ekioh,
+            'mesa', 'mesa dynamics, llc' => self::mesa,
+            'quickheal', 'quick-heal', 'quick heal technologies ltd.', 'quick heal' => self::quickHeal,
+            'nvidia', 'nvidia corporation' => self::nvidia,
+            'bytedance', 'beijing bytedance technology ltd.' => self::bytedance,
+            'ryte', 'ryte gmbh' => self::ryte,
+            'toddditchendorf', 'todd-ditchendorf', 'todd ditchendorf' => self::toddDitchendorf,
+            'whitehat', 'whitehat security' => self::whitehat,
+            'ok', 'ok.' => self::ok,
+            'dyon' => self::dyon,
+            'panavox' => self::panavox,
+            'grapeshot', 'grapeshot limited' => self::grapeshot,
+            'chebinliu', 'che-bin-liu', 'che-bin liu' => self::cheBinLiu,
+            'sinaweibo', 'sina-weibo', 'sina corporation', 'sina weibo' => self::sinaWeibo,
+            'hatena', 'hatena co., ltd.' => self::hatena,
+            'okta', 'okta, inc.' => self::okta,
+            'schoolwires', 'schoolwires, inc.' => self::schoolwires,
+            'chatwork', 'chat-work' => self::chatwork,
+            'flixster', 'flixster, inc.' => self::flixster,
+            'timewarnercable', 'time-warner-cable', 'time warner cable' => self::timeWarnerCable,
+            'salesforce', 'salesforce.com, inc.' => self::salesforce,
+            'similartech', 'similar-tech', 'similartech ltd.' => self::similarTech,
+            'diigo', 'diigo, inc.' => self::diigo,
+            'ericssonresearch', 'ericsson-research', 'ericsson research' => self::ericssonResearch,
+            'soundcloud', 'sound-cloud', 'soundcloud limited' => self::soundCloud,
+            'dorada', 'dorada app software ltd' => self::dorada,
+            'espn', 'espn internet ventures.' => self::espn,
+            'videolan', 'video-lan', 'videolan non-profit organization' => self::videoLan,
+            'gihyunjung', 'gihyun-jung', 'gihyun jung' => self::gihyunJung,
+            'webexpansion', 'web-expansion', 'web expansion cyprus ltd.', 'web expansion' => self::webExpansion,
+            'inboxcube', 'inboxcube inc.' => self::inboxcube,
+            'leysinmedia', 'leysin-media', 'shanghai leysin media co, ltd.', 'leysin media' => self::leysinMedia,
+            'tvplus', 'tv+' => self::tvPlus,
+            'regal' => self::regal,
+            'formovie' => self::formovie,
+            'singer' => self::singer,
+            'prismplus', 'prism+' => self::prismPlus,
+            'infraware', 'infraware inc' => self::infraware,
+            'toptech', 'top-tech' => self::topTech,
+            'aoc' => self::aoc,
+            'telly', 'telly, inc.' => self::telly,
+            'newsblur' => self::newsblur,
+            'texet' => self::texet,
+            'shopkeep', 'shop-keep', 'shopkeep inc.' => self::shopKeep,
+            'compass', 'compass security ag' => self::compass,
+            'wonjoojang', 'wonjoo-jang', 'wonjoo jang' => self::wonjooJang,
+            'sanyo' => self::sanyo,
+            'sprint' => self::sprint,
+            'smartfren', 'pt smartfren telecom, tbk' => self::smartfren,
+            'lightspeedsystems', 'lightspeed-systems', 'lightspeed systems' => self::lightspeedSystems,
+            'unister', 'unister holding gmbh' => self::unister,
+            'deedbaltic', 'deed baltic, uab', 'deed-baltic', 'deed baltic' => self::deedBaltic,
+            'woorank', 'woo-rank' => self::wooRank,
+            'nineteenten', 'nineteen-ten', 'nineteen ten llc', 'nineteen ten' => self::nineteenTen,
+            'yisou' => self::yisou,
+            'semrush', 'semrush inc.' => self::semrush,
+            'browseredsonthiago', 'browser-edson-thiago', 'browser edson thiago' => self::browserEdsonThiago,
+            'micheldeboer', 'michel-de-boer', 'michel de boer' => self::michelDeBoer,
+            'cultraview' => self::cultraview,
+            'system76' => self::system76,
+            'playnow', 'play now', 'play-now' => self::playNow,
+            'botech' => self::botech,
+            'brandt' => self::brandt,
+            'bauhn' => self::bauhn,
+            'jvc' => self::jvc,
+            'beko' => self::beko,
+            'altus' => self::altus,
+            'profilo' => self::profilo,
+            'fedirtsapana', 'fedir-tsapana', 'fedir tsapana' => self::fedirTsapana,
+            'arcelik', 'arcelik a.s.' => self::arcelik,
+            'pantech' => self::pantech,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2442,6 +2775,60 @@ enum Company: string implements CompanyInterface
             self::cliqz => 'Cliqz GmbH',
             self::docomo => 'NTT DoCoMo',
             self::cosmix => 'Cosmix Corporation',
+            self::wafer => 'Wafer Co.',
+            self::flextech => 'Flextech Inc.',
+            self::torch => 'Torch Mobile',
+            self::compuware => 'Compuware Corporation',
+            self::whaleTV => 'Whale TV PTE. LTD.',
+            self::easou => 'easou ICP',
+            self::marketwire => 'Marketwire L.P.',
+            self::appSimply => 'AppSimply, LLC',
+            self::bloop => 'Bloop S.R.L.',
+            self::cocCoc => 'Cốc Cốc Company Limited',
+            self::adaptiveBee => 'AdaptiveBee SASU',
+            self::digitalPebble => 'DigitalPebble Ltd',
+            self::adbeat => 'adbeat.com',
+            self::postbox => 'Postbox, Inc.',
+            self::kkbox => 'KKBOX Taiwan Co., Ltd.',
+            self::nortonLifeLock => 'NortonLifeLock Inc.',
+            self::foundry376 => 'Foundry 376, LLC.',
+            self::cryptoPro => 'CRYPTO-PRO LLC',
+            self::sparkMail => 'Spark Mail Limited',
+            self::pingdom => 'Pingdom AB',
+            self::pinterest => 'Pinterest Inc.',
+            self::ekioh => 'Ekioh Ltd.',
+            self::mesa => 'Mesa Dynamics, LLC',
+            self::quickHeal => 'Quick Heal Technologies Ltd.',
+            self::nvidia => 'Nvidia Corporation',
+            self::bytedance => 'Beijing Bytedance Technology Ltd.',
+            self::ryte => 'Ryte GmbH',
+            self::whitehat => 'WhiteHat Security',
+            self::grapeshot => 'Grapeshot Limited',
+            self::sinaWeibo => 'Sina Corporation',
+            self::hatena => 'Hatena Co., Ltd.',
+            self::okta => 'Okta, Inc.',
+            self::schoolwires => 'Schoolwires, Inc.',
+            self::flixster => 'Flixster, Inc.',
+            self::salesforce => 'Salesforce.com, Inc.',
+            self::similarTech => 'SimilarTech Ltd.',
+            self::diigo => 'Diigo, Inc.',
+            self::soundCloud => 'SoundCloud Limited',
+            self::dorada => 'Dorada App Software Ltd',
+            self::espn => 'ESPN Internet Ventures.',
+            self::videoLan => 'VideoLAN non-profit organization',
+            self::webExpansion => 'Web Expansion Cyprus Ltd.',
+            self::inboxcube => 'Inboxcube Inc.',
+            self::leysinMedia => 'Shanghai Leysin Media Co, Ltd.',
+            self::infraware => 'Infraware Inc',
+            self::telly => 'Telly, Inc.',
+            self::shopKeep => 'ShopKeep Inc.',
+            self::compass => 'Compass Security AG',
+            self::smartfren => 'PT Smartfren Telecom, Tbk',
+            self::unister => 'Unister Holding GmbH',
+            self::deedBaltic => 'DEED Baltic, UAB',
+            self::nineteenTen => 'Nineteen Ten LLC',
+            self::semrush => 'Semrush Inc.',
+            self::arcelik => 'Arcelik A.S.',
             self::unknown => null,
             default => $this->value,
         };
@@ -2662,6 +3049,49 @@ enum Company: string implements CompanyInterface
             self::theInternetArchive => 'archive.org',
             self::sonyEricsson => 'sony-ericsson',
             self::docomo => 'ntt-docomo',
+            self::dogTorance => 'dog-torance',
+            self::compuware => 'compuware-apm',
+            self::whaleTV => 'whale-tv',
+            self::richardTrautvetter => 'richard-trautvetter',
+            self::beonexBusinessServices => 'beonex-business-services',
+            self::appSimply => 'app-simply',
+            self::iridiumBrowserTeam => 'iridium-browser-team',
+            self::cocCoc => 'coc-coc-company',
+            self::adaptiveBee => 'adaptive-bee',
+            self::x115com => '115-com',
+            self::digitalPebble => 'digital-pebble',
+            self::nortonLifeLock => 'norton-life-lock',
+            self::foundry376 => 'foundry-376',
+            self::cryptoPro => 'crypto-pro',
+            self::bywayEndeavors => 'byway-endeavors',
+            self::sparkMail => 'spark-mail',
+            self::blackPixel => 'black-pixel',
+            self::quickHeal => 'quick-heal',
+            self::toddDitchendorf => 'todd-ditchendorf',
+            self::cheBinLiu => 'che-bin-liu',
+            self::sinaWeibo => 'sina-weibo',
+            self::chatwork => 'chat-work',
+            self::timeWarnerCable => 'time-warner-cable',
+            self::similarTech => 'similar-tech',
+            self::ericssonResearch => 'ericsson-research',
+            self::soundCloud => 'sound-cloud',
+            self::videoLan => 'video-lan',
+            self::gihyunJung => 'gihyun-jung',
+            self::webExpansion => 'web-expansion',
+            self::leysinMedia => 'leysin-media',
+            self::tvPlus => 'tv+',
+            self::prismPlus => 'prism+',
+            self::topTech => 'top-tech',
+            self::shopKeep => 'shop-keep',
+            self::wonjooJang => 'wonjoo-jang',
+            self::lightspeedSystems => 'lightspeed-systems',
+            self::deedBaltic => 'deed-baltic',
+            self::wooRank => 'woo-rank',
+            self::nineteenTen => 'nineteen-ten',
+            self::browserEdsonThiago => 'browser-edson-thiago',
+            self::michelDeBoer => 'michel-de-boer',
+            self::playNow => 'play-now',
+            self::fedirTsapana => 'fedir-tsapana',
             default => $this->name,
         };
     }

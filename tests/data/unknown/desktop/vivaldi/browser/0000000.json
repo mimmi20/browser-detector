@@ -9,7 +9,7 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -54,7 +54,7 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -99,7 +99,7 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -136,7 +136,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Wayland; Linux x86_64; System76 Galago Pro (galp2)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.175 Safari/537.36 Ubuntu/22.04 (5.0.2497.48-1) Vivaldi/5.0.2497.48"
+      "user-agent": "Mozilla/5.0 (Wayland; Linux x86_64; Huawei) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.141 Safari/537.36 Ubuntu/22.04 (5.1.2567.73-1) Vivaldi/5.1.2567.73"
     },
     "device": {
       "architecture": null,
@@ -144,7 +144,7 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -160,14 +160,14 @@
     "os": {
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
-      "version": "5.0.2497.48.1",
+      "version": "5.1.2567.73.1",
       "manufacturer": "Canonical",
       "bits": null
     },
     "client": {
       "name": "Vivaldi",
       "modus": null,
-      "version": "5.0.2497.48",
+      "version": "5.1.2567.73",
       "manufacturer": "Vivaldi",
       "type": "browser",
       "isbot": false,
@@ -175,7 +175,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "96.0.4664.175",
+      "version": "98.0.4758.141",
       "manufacturer": "Google"
     }
   }

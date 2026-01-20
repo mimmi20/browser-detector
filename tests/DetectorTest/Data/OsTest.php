@@ -147,7 +147,7 @@ final class OsTest extends TestCase
                 'name' => 'Android Opensource Project',
                 'marketingName' => 'AOSP',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Android']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
                 'key' => 'aosp',
             ],
             [
@@ -475,7 +475,7 @@ final class OsTest extends TestCase
                 'name' => 'Series 60',
                 'marketingName' => 'Series 60',
                 'manufacturer' => Company::nokia,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Series60']],
                 'key' => 'series60',
             ],
             [
@@ -491,7 +491,7 @@ final class OsTest extends TestCase
                 'name' => 'Unix',
                 'marketingName' => 'Unix',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix OS', 'Unix']],
                 'key' => 'unix',
             ],
             [
@@ -963,7 +963,7 @@ final class OsTest extends TestCase
                 'name' => 'Android TV',
                 'marketingName' => 'Android TV',
                 'manufacturer' => Company::google,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
                 'key' => 'android-tv',
             ],
             [
@@ -1083,7 +1083,7 @@ final class OsTest extends TestCase
                 'name' => 'HP-UX',
                 'marketingName' => 'HP-UX',
                 'manufacturer' => Company::hp,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
                 'key' => 'hp-ux',
             ],
             [
@@ -1243,7 +1243,7 @@ final class OsTest extends TestCase
                 'name' => 'Nucleus OS',
                 'marketingName' => 'Nucleus',
                 'manufacturer' => Company::acceleratedTechnology,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Nucleus']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Nucleus', 'MTK']],
                 'key' => 'nucleus os',
             ],
             [
@@ -1437,6 +1437,14 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::kde,
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'plasma-mobile',
+            ],
+            [
+                'type' => 'Whale OS',
+                'name' => 'Whale OS',
+                'marketingName' => 'Whale OS',
+                'manufacturer' => Company::whaleTV,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
+                'key' => 'whale-os',
             ],
         ];
     }

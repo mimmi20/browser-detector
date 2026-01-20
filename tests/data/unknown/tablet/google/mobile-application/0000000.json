@@ -10,7 +10,7 @@
       "marketingName": "general Tablet",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": null,
@@ -56,7 +56,7 @@
       "marketingName": "general Tablet",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": null,
@@ -102,7 +102,7 @@
       "marketingName": "general Tablet",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": null,
@@ -148,7 +148,7 @@
       "marketingName": "general Tablet",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": null,
@@ -194,7 +194,7 @@
       "marketingName": "general Tablet",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": null,
@@ -240,7 +240,7 @@
       "marketingName": "general Tablet",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": null,
@@ -286,7 +286,7 @@
       "marketingName": "general Tablet",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": null,
@@ -331,7 +331,7 @@
       "marketingName": "general Tablet",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
         "width": null,
@@ -363,55 +363,6 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.163",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "x-requested-with": "com.android.launcher3",
-      "sec-ch-ua": "\"Android WebView\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; M10-11 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Launcher",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "141.0.7390.122",
       "manufacturer": "Google"
     }
   }

@@ -75,7 +75,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google Quicksearch Box",
+      "name": "Google",
       "modus": null,
       "version": null,
       "manufacturer": "Google",
@@ -390,7 +390,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google Quicksearch Box",
+      "name": "Google",
       "modus": null,
       "version": null,
       "manufacturer": "Google",
@@ -435,7 +435,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google Quicksearch Box",
+      "name": "Google",
       "modus": null,
       "version": null,
       "manufacturer": "Google",
@@ -536,6 +536,61 @@
     "engine": {
       "name": "Blink",
       "version": "142.0.7444.102",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "sec-ch-ua": "\"Android WebView\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-A166B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A166B",
+      "marketingName": "Galaxy A16 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.116",
       "manufacturer": "Google"
     }
   }

@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36 OPR/88.0.0.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "88.0.0.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "134.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Opera\";v=\"121\", \"OperaMobile\";v=\"89\", \"Chromium\";v=\"135\", \" Not;A Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
@@ -57,7 +12,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -105,7 +60,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -150,7 +105,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -195,7 +150,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -243,7 +198,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -288,7 +243,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -333,7 +288,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -381,7 +336,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -429,7 +384,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -474,7 +429,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -522,7 +477,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -567,7 +522,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -615,56 +570,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "93.0.0.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "142.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Opera\";v=\"126\", \"OperaMobile\";v=\"93\", \"Chromium\";v=\"142\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 OPR/93.0.0.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -713,7 +619,56 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "93.0.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "142.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Opera\";v=\"126\", \"OperaMobile\";v=\"93\", \"Chromium\";v=\"142\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 OPR/93.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,
@@ -761,7 +716,7 @@
       "marketingName": "general Mobile Phone",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": null,

@@ -4,8 +4,8 @@
     "marketingName": "Flo",
     "manufacturer": "spice",
     "brand": "spice",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": 400,
       "height": 240,
@@ -20,8 +20,8 @@
     "marketingName": "M5395",
     "manufacturer": "spice",
     "brand": "spice",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": 320,
       "height": 240,
@@ -36,8 +36,8 @@
     "marketingName": "QT-75",
     "manufacturer": "spice",
     "brand": "spice",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": 220,
       "height": 176,
@@ -52,13 +52,45 @@
     "marketingName": "S6005",
     "manufacturer": "spice",
     "brand": "spice",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": 220,
       "height": 176,
       "touch": false,
       "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "spice m5885": {
+    "deviceName": "M5885",
+    "marketingName": "M5885",
+    "manufacturer": "spice",
+    "brand": "spice",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "spice m5365": {
+    "deviceName": "M5365",
+    "marketingName": "M5365",
+    "manufacturer": "spice",
+    "brand": "spice",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"

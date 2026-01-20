@@ -11,20 +11,6 @@
     },
     "engine": "webkit"
   },
-  "applenews": {
-    "name": "AppleNews",
-    "manufacturer": "apple",
-    "type": "feed-reader",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Version",
-        "AppleNews",
-        "News\\/"
-      ]
-    },
-    "engine": "webkit"
-  },
   "feeddler rss reader": {
     "name": "Feeddler RSS Reader",
     "manufacturer": "che-bin-liu",
@@ -137,8 +123,10 @@
     "manufacturer": "webin",
     "type": "feed-reader",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ReadKit"
+      ]
     },
     "engine": "webkit"
   },
@@ -211,5 +199,57 @@
       ]
     },
     "engine": "unknown"
+  },
+  "netnewswire": {
+    "name": "NetNewsWire",
+    "manufacturer": "black-pixel",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetNewsWire"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "rss-bandit": {
+    "name": "RSS Bandit",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RssBandit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "newsblur app": {
+    "name": "NewsBlur App",
+    "manufacturer": "newsblur",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NewsBlur"
+      ]
+    },
+    "engine": null
+  },
+  "newsblur mobile app": {
+    "name": "NewsBlur Mobile App",
+    "manufacturer": "newsblur",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NewsBlur iPhone App v",
+        "NewsBlur iPhone App",
+        "NewsBlur iPad App v",
+        "NewsBlur iPad App",
+        "NewsBlur"
+      ]
+    },
+    "engine": null
   }
 }

@@ -273,6 +273,13 @@ final class EngineTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['NetSurf']],
                 'key' => 'netsurf',
             ],
+            [
+                'type' => 'EkiohFlow',
+                'name' => 'EkiohFlow',
+                'manufacturer' => Company::ekioh,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['EkiohFlow']],
+                'key' => 'ekiohflow',
+            ],
         ];
     }
 }

@@ -5742,5 +5742,53 @@
     },
     "type": "smartphone",
     "platform": null
+  },
+  "htc mytouch": {
+    "deviceName": "myTouch",
+    "marketingName": "myTouch",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc mytouch 4g": {
+    "deviceName": "Panache",
+    "marketingName": "myTouch 4G",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc mytouch 4g slide": {
+    "deviceName": "myTouch 4G Slide",
+    "marketingName": "myTouch 4G Slide",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

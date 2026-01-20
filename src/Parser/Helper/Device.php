@@ -113,6 +113,7 @@ final class Device implements DeviceInterface
             'a10-21_eea' => 'acer=acer a10-21_eea',
             'a410_4g' => 'acer=acer a410_4g',
             'chromebook 14 (cb3-431)', 'chromebook 14 (cb3-431' => 'acer=acer chromebook 14',
+            'm10-11' => 'acer=acer m10-11',
             // AllCall
             'atom' => 'allcall=allcall atom',
             'hero_20_pro' => 'allcall=allcall hero 20 pro',
@@ -314,6 +315,14 @@ final class Device implements DeviceInterface
             'chromecast' => 'google=google chromecast',
             'chromecast hd' => 'google=google chromecast hd',
             'nexus 10', 'aosp on manta' => 'google=google nexus 10',
+            'pixel 10 pro' => 'google=google pixel 10 pro',
+            'gehn3' => 'google=google gehn3',
+            'g4qur' => 'google=google g4qur',
+            'gn4f5' => 'google=google gn4f5',
+            'pixel 10' => 'google=google pixel 10',
+            'gk2mp' => 'google=google gk2mp',
+            'glbw0' => 'google=google glbw0',
+            'gl066' => 'google=google gl066',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -431,6 +440,13 @@ final class Device implements DeviceInterface
             'cph2709' => 'oneplus=oneplus cph2709',
             'cph2717' => 'oneplus=oneplus cph2717',
             'cph2719' => 'oneplus=oneplus cph2719',
+            'cph2747' => 'oneplus=oneplus cph2747',
+            'cph2745' => 'oneplus=oneplus cph2745',
+            'plk110' => 'oneplus=oneplus plk110',
+            'opd2415' => 'oneplus=oneplus opd2415',
+            'opd2480' => 'oneplus=oneplus opd2480',
+            'opd2481' => 'oneplus=oneplus opd2481',
+            'opd2405' => 'oneplus=oneplus opd2405',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -881,6 +897,7 @@ final class Device implements DeviceInterface
             '2306epn60r' => 'xiaomi=xiaomi 2306epn60r',
             'xig05' => 'xiaomi=xiaomi xig05',
             'redmi note 13 pro 5g' => 'xiaomi=xiaomi redmi note 13 pro 5g',
+            'redmi note 13 pro' => 'xiaomi=xiaomi redmi note 13 pro 4g',
             '2312dra50c' => 'xiaomi=xiaomi 2312dra50c',
             '2312crad3c' => 'xiaomi=xiaomi 2312crad3c',
             '2312dra50i' => 'xiaomi=xiaomi 2312dra50i',
@@ -1173,6 +1190,13 @@ final class Device implements DeviceInterface
             '25060rk16c' => 'xiaomi=xiaomi 25060rk16c',
             '25080rabdc' => 'xiaomi=xiaomi 25080rabdc',
             '25104radac' => 'xiaomi=xiaomi 25104radac',
+            'redmi note 12r' => 'xiaomi=xiaomi redmi note 12r',
+            'redmi note 12r pro' => 'xiaomi=xiaomi redmi note 12r pro',
+            'redmi note 13' => 'xiaomi=xiaomi redmi note 13 4g',
+            'redmi note 12 pro speed' => 'xiaomi=xiaomi redmi note 12 pro speed',
+            'redmi note 14 5g' => 'xiaomi=xiaomi redmi note 14 5g',
+            'redmi note 14 pro 5g' => 'xiaomi=xiaomi redmi note 14 pro 5g',
+            'redmi note 14 pro+ 5g' => 'xiaomi=xiaomi redmi note 14 pro+ 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1445,7 +1469,6 @@ final class Device implements DeviceInterface
             'sm-a426b' => 'samsung=samsung sm-a426b',
             'sm-a025g' => 'samsung=samsung sm-a025g',
             'sm-a025f' => 'samsung=samsung sm-a025f',
-            'sm-m135f' => 'samsung=samsung sm-m135f',
             'sm-a035f' => 'samsung=samsung sm-a035f',
             'sm-m225fv' => 'samsung=samsung sm-m225fv',
             'sm-a022g' => 'samsung=samsung sm-a022g',
@@ -2128,6 +2151,7 @@ final class Device implements DeviceInterface
             'sm-s721u', 'samsung sm-s721u' => 'samsung=samsung sm-s721u',
             'sm-s721u1', 'samsung sm-s721u1' => 'samsung=samsung sm-s721u1',
             'sm-s721w', 'samsung sm-s721w' => 'samsung=samsung sm-s721w',
+            'sm-s721q', 'samsung sm-s721q' => 'samsung=samsung sm-s721q',
             'sm-s727vl', 'samsung sm-s727vl' => 'samsung=samsung sm-s727vl',
             'sm-s737tl', 'samsung sm-s737tl' => 'samsung=samsung sm-s737tl',
             'sm-s757bl', 'samsung sm-s757bl' => 'samsung=samsung sm-s757bl',
@@ -2284,6 +2308,15 @@ final class Device implements DeviceInterface
             'sm-a366n', 'samsung sm-a366n' => 'samsung=samsung sm-a366n',
             'sm-r900', 'samsung sm-r900' => 'samsung=samsung sm-r900',
             'gt-p5200', 'samsung gt-p5200', 'aosp on santos103g' => 'samsung=samsung gt-p5200',
+            'sm-m135m', 'samsung sm-m135m' => 'samsung=samsung sm-m135m',
+            'sm-m135fu', 'samsung sm-m135fu' => 'samsung=samsung sm-m135fu',
+            'sm-m135f', 'samsung sm-m135f' => 'samsung=samsung sm-m135f',
+            'sm-x130', 'samsung sm-x130' => 'samsung=samsung sm-x130',
+            'sm-x133', 'samsung sm-x133' => 'samsung=samsung sm-x133',
+            'sm-x135', 'samsung sm-x135' => 'samsung=samsung sm-x135',
+            'sm-x135f', 'samsung sm-x135f' => 'samsung=samsung sm-x135f',
+            'sm-s917n', 'samsung sm-s917n' => 'samsung=samsung sm-s917n',
+            'sc-42a' => 'samsung=samsung sc-42a',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2438,6 +2471,11 @@ final class Device implements DeviceInterface
             'cdy-nx9a' => 'huawei=huawei cdy-nx9a',
             'huawei mla-l11' => 'huawei=huawei mla-l11',
             'vne-n41' => 'huawei=huawei vne-n41',
+            'vne-an40' => 'huawei=huawei vne-an40',
+            'vne-an00' => 'huawei=huawei vne-an00',
+            'vne-lx3' => 'huawei=huawei vne-lx3',
+            'vne-lx2' => 'huawei=huawei vne-lx2',
+            'vne-lx1' => 'huawei=huawei vne-lx1',
             'alp-l09' => 'huawei=huawei alp-l09',
             'hey-w09' => 'huawei=huawei hey-w09',
             'crt-nx1' => 'huawei=huawei crt-nx1',
@@ -2834,6 +2872,18 @@ final class Device implements DeviceInterface
             'cnd-an00' => 'huawei=huawei cnd-an00',
             'cdy-tn20' => 'huawei=huawei cdy-tn20',
             'cdl-an50' => 'huawei=huawei cdl-an50',
+            'lio-tn00' => 'huawei=huawei lio-tn00',
+            'lio-tl10' => 'huawei=huawei lio-tl10',
+            'lio-tl00' => 'huawei=huawei lio-tl00',
+            'lio-an00p' => 'huawei=huawei lio-an00p',
+            'lio-an00m' => 'huawei=huawei lio-an00m',
+            'lio-an00' => 'huawei=huawei lio-an00',
+            'lio-al10' => 'huawei=huawei lio-al10',
+            'lio-al00' => 'huawei=huawei lio-al00',
+            'lio-n29' => 'huawei=huawei lio-n29',
+            'lio-l29' => 'huawei=huawei lio-l29',
+            'lio-l09' => 'huawei=huawei lio-l09',
+            'ppg-an00' => 'huawei=huawei ppg-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -2943,7 +2993,9 @@ final class Device implements DeviceInterface
             'l38043', 'lenovo l38043' => 'lenovo=lenovo l38043',
             'tb138fc', 'lenovo tb138fc' => 'lenovo=lenovo tb138fc',
             'xiaoxin pad 2022' => 'lenovo=lenovo xiaoxin pad 2022',
-            'lenovo n23 yoga/flex 11 chromebook' => 'lenovo=lenovo n23 yoga/flex 11 chromebook',
+            'lenovo n23 yoga/flex 11 chromebook', 'lenovo n23 yoga' => 'lenovo=lenovo n23 yoga/flex 11 chromebook',
+            'tb330fup' => 'lenovo=lenovo tb330fup',
+            'a301lv' => 'lenovo=lenovo a301lv',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -3185,6 +3237,7 @@ final class Device implements DeviceInterface
             'rmx3710' => 'realme=realme rmx3710',
             'rmx3709' => 'realme=realme rmx3709',
             'rmx3708' => 'realme=realme rmx3708',
+            '4k google tv stick' => 'realme=realme 4k google tv stick',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -3354,6 +3407,17 @@ final class Device implements DeviceInterface
             'moto g stylus 5g - 2023' => 'motorola=motorola moto g stylus 5g (2023)',
             'motorola edge 60 fusion' => 'motorola=motorola edge 60 fusion',
             'motorola razr ultra 2025' => 'motorola=motorola razr ultra 2025',
+            'moto g56 5g' => 'motorola=motorola moto g56 5g',
+            'xt2529-2' => 'motorola=motorola xt2529-2',
+            'xt2529-1' => 'motorola=motorola xt2529-1',
+            'motorola edge 70' => 'motorola=motorola edge 70',
+            'xt2601-2' => 'motorola=motorola xt2601-2',
+            'moto g pure' => 'motorola=motorola g pure',
+            'xt2163-6' => 'motorola=motorola xt2163-6',
+            'xt2163-4' => 'motorola=motorola xt2163-4',
+            'xt2163-1' => 'motorola=motorola xt2163-1',
+            'xt2163-2' => 'motorola=motorola xt2163-2',
+            'moto g64 5g' => 'motorola=motorola moto g64 5g',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -3516,6 +3580,7 @@ final class Device implements DeviceInterface
             'sog06' => 'sony=sony sog06',
             'sog12' => 'sony=sony sog12',
             'xperia e3 (aosp)', 'xperia e3 (aosp' => 'sony=sony xperia e3',
+            'a301so' => 'sony=sony a301so',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -3862,6 +3927,9 @@ final class Device implements DeviceInterface
             'v1838t' => 'vivo=vivo v1838t',
             'v2144' => 'vivo=vivo v2144',
             'v2166a' => 'vivo=vivo v2166a',
+            'pa2455' => 'vivo=vivo pa2455',
+            'pa2511' => 'vivo=vivo pa2511',
+            'pa2573' => 'vivo=vivo pa2573',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -3969,6 +4037,7 @@ final class Device implements DeviceInterface
             'wp20 pro' => 'oukitel=oukitel wp20 pro',
             'wp19' => 'oukitel=oukitel wp19',
             'wp210 pro' => 'oukitel=oukitel wp210 pro',
+            'oukitel g3' => 'oukitel=oukitel g3',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -4543,6 +4612,7 @@ final class Device implements DeviceInterface
             'fort 1' => 'blackview=blackview fort 1',
             'bv6200 plus' => 'blackview=blackview bv6200 plus',
             'bv4800 se' => 'blackview=blackview bv4800 se',
+            'tab 60 wifi' => 'blackview=blackview tab 60 wifi',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -4810,6 +4880,7 @@ final class Device implements DeviceInterface
             'orbit y21' => 'walton=walton orbit y21',
             'orbit y50' => 'walton=walton orbit y50',
             'primo gh11' => 'walton=walton primo gh11',
+            'walton gsmart 2ktv' => 'walton=walton 2k gsmart tv',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             'zkempler_pro' => 'kempler-strauss=kempler-strauss zkempler pro',
@@ -4905,6 +4976,7 @@ final class Device implements DeviceInterface
             'sh-s50' => 'sharp=sharp sh-s50',
             'a201sh' => 'sharp=sharp a201sh',
             'sh-53d' => 'sharp=sharp sh-53d',
+            'sh-m19s-y' => 'sharp=sharp sh-m19s-y',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
@@ -5161,6 +5233,7 @@ final class Device implements DeviceInterface
             'ain065' => 'nothing-phone=nothing-phone ain065',
             'phone (2a)', 'phone (2a' => 'nothing-phone=nothing-phone phone 2a',
             'a001' => 'nothing-phone=nothing-phone a001',
+            'a024' => 'nothing-phone=nothing-phone a024',
             // doro
             'dsb-0220' => 'doro=doro dsb-0220',
             'dsb-0230' => 'doro=doro dsb-0230',
@@ -5502,6 +5575,7 @@ final class Device implements DeviceInterface
             's23 pro max' => 'reeder=reeder s23 pro max',
             's19 max pro s edge' => 'reeder=reeder s19 max pro s edge',
             's19 max' => 'reeder=reeder s19 max',
+            'reeder tv' => 'reeder=reeder smart tv',
             // tesla
             'explr 9' => 'tesla=tesla explorer 9',
             // chuwi
@@ -6352,6 +6426,7 @@ final class Device implements DeviceInterface
             // fujitsu
             'f-51e' => 'fujitsu=fujitsu f-51e',
             'a101fc' => 'fujitsu=fujitsu a101fc',
+            'f-51c' => 'fujitsu=fujitsu f-51c',
             // bigben
             'bb8252' => 'bigben=bigben bb8252',
             'bigtech_b_ru' => 'bigben=bigben bigtech b',
@@ -6450,6 +6525,8 @@ final class Device implements DeviceInterface
             'lavie tab 9qhd1' => 'nec=nec 9qhd1',
             // haier
             'mintaka' => 'haier=haier mintaka',
+            'haier android tv dvb2k' => 'haier=haier android tv dvb2k',
+            'haier android tv ff pro' => 'haier=haier android tv ff pro',
             // ayya
             'ayat101' => 'ayya=ayya ayat 101',
             // xreal
@@ -6657,6 +6734,8 @@ final class Device implements DeviceInterface
             'b22_eea' => 'biegedy=biegedy b22_eea',
             // grundig
             'gr-tb10s' => 'grundig=grundig gr-tb10s',
+            'grundig google tv', 'grundig android tv' => 'grundig=grundig smart tv',
+            'grundig google tv uhd+' => 'grundig=grundig google tv uhd+',
             // dudu-auto
             'dudu7' => 'dudu-auto=dudu-auto dudu7',
             // vorcom
@@ -6676,6 +6755,7 @@ final class Device implements DeviceInterface
             'philips w8555' => 'philips=philips w8555',
             'neoviu d1' => 'philips=philips neoviu d1',
             'philips google tv ta1' => 'philips=philips google tv ta1',
+            'philips uhd android tv' => 'philips=philips smart tv uhd',
             // homatics
             'box r 4k plus' => 'homatics=homatics box r 4k plus',
             'box r lite 4k' => 'homatics=homatics box r lite 4k',
@@ -6808,6 +6888,7 @@ final class Device implements DeviceInterface
             'a-stream' => 'blaupunkt=blaupunkt a-stream',
             // transpeed
             '8k618-t' => 'transpeed=transpeed 8k618-t',
+            '8k3528-t' => 'transpeed=transpeed 8k3528-t',
             // leotec
             'lesph5701w' => 'leotec=leotec lesph5701w',
             // td-systems
@@ -7027,6 +7108,7 @@ final class Device implements DeviceInterface
             'voix_u10' => 'voix=voix u10',
             // yasin
             'yasin 4k android tv' => 'yasin=yasin 4k smart tv',
+            'yasin 2k android tv' => 'yasin=yasin 2k smart tv',
             // suaat
             's3_u_eea' => 'suaat=suaat s3_u_eea',
             // g-tab
@@ -7040,6 +7122,59 @@ final class Device implements DeviceInterface
             'hp chromebook x2' => 'hp=hp chromebook x2',
             // lnmbbs
             'p40-eea' => 'lnmbbs=lnmbbs p40-eea',
+            // tyd
+            'tyd-107' => 'tyd=tyd tyd-107',
+            'tyd-108h' => 'tyd=tyd tyd-108h',
+            'tyd-109' => 'tyd=tyd tyd-109',
+            'tyd-109_pro' => 'tyd=tyd tyd-109 pro',
+            // indurama
+            'indurama google tv 4k' => 'indurama=indurama 4k smart tv',
+            // multynet
+            'multynet fhd android tv' => 'multynet=multynet 2k smart tv',
+            // konka
+            'konka 2k android tv' => 'konka=konka 2k smart tv',
+            // ok
+            'ok google tv' => 'ok=ok smart tv',
+            // dyon
+            'dyon 2k google tv' => 'dyon=dyon 2k smart tv',
+            // panasonic
+            'panasonic g00gle tv lcd' => 'panasonic=panasonic smart tv',
+            // panavox
+            'panavox android tv' => 'panavox=panavox smart tv',
+            // tv+
+            'tvplus box' => 'tv+=tv+ tvplus box',
+            // regal
+            'regal g00gle tv', 'regal google tv' => 'regal=regal smart tv',
+            // formovie
+            'xming google tv' => 'formovie=formovie xming',
+            // singer
+            'singer android tv' => 'singer=singer smart tv',
+            'singer 4k gsmart tv' => 'singer=singer 4k gsmart tv',
+            // prism+
+            'prismplus 4k pro android tv' => 'prism+=prism+ 4k pro smart tv',
+            // telly
+            'ty55_1' => 'telly=telly ty55-1',
+            // play-now
+            'play now tv box 2' => 'play-now=play-now tv box 2',
+            // botech
+            'atv r1' => 'botech=botech atv r1',
+            'atv r2' => 'botech=botech atv r2',
+            // brandt
+            'brandt android tv 638' => 'brandt=brandt android tv',
+            'brandt fhd tv' => 'brandt=brandt fhd tv',
+            'brandt uhd tv' => 'brandt=brandt uhd tv',
+            // bauhn
+            'bauhn 4k android tv' => 'bauhn=bauhn 4k android tv',
+            // jvc
+            'jvc android tv' => 'jvc=jvc smart tv',
+            // beko
+            'beko android tv' => 'beko=beko smart tv',
+            // altus
+            'altus android tv' => 'altus=altus smart tv',
+            // profilo
+            'profilo 4k android tv' => 'profilo=profilo 4k android tv',
+            // arcelik
+            'arcelik google tv', 'arcelik android tv' => 'arcelik=arcelik smart tv',
             // other
             default => null,
         };

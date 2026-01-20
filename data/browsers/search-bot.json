@@ -413,6 +413,21 @@
     },
     "engine": "unknown"
   },
+  "linkdex bot mobile": {
+    "name": "Linkdex Mobile Bot",
+    "manufacturer": "linkdex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "linkdexbot-mobile",
+        "linkdex\\.com",
+        "linkdex\\.com\\/v",
+        "linkdexbot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "yandex-mobile-bot": {
     "name": "Yandex Mobile Bot",
     "manufacturer": "yandex",
@@ -507,5 +522,39 @@
       ]
     },
     "engine": null
+  },
+  "easouspider": {
+    "name": "EasouSpider",
+    "manufacturer": "easou",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EasouSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "smtbot": {
+    "name": "SMTBot",
+    "manufacturer": "similar-tech",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SMTBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "slurp": {
+    "name": "Slurp",
+    "manufacturer": "yahoo",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

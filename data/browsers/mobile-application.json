@@ -221,8 +221,8 @@
     },
     "engine": null
   },
-  "microsoft-start": {
-    "name": "Start",
+  "msn-app": {
+    "name": "MSN",
     "manufacturer": "microsoft",
     "type": "mobile-application",
     "version": {
@@ -230,16 +230,6 @@
       "search": [
         "NewsSapphire"
       ]
-    },
-    "engine": null
-  },
-  "msn-app": {
-    "name": "MSN",
-    "manufacturer": "microsoft",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
     },
     "engine": null
   },
@@ -1303,8 +1293,8 @@
     },
     "engine": "unknown"
   },
-  "google-quicksearch-box": {
-    "name": "Google Quicksearch Box",
+  "google-app": {
+    "name": "Google",
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
@@ -1334,16 +1324,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "every-browser": {
-    "name": "Every Browser",
-    "manufacturer": "pixel-motion",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": null
   },
   "news-point": {
     "name": "Newspoint: Public News App",
@@ -1430,8 +1410,10 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.Maps"
+      ]
     },
     "engine": null
   },
@@ -2372,6 +2354,18 @@
     },
     "engine": null
   },
+  "tunein-radio-pro": {
+    "name": "TuneIn Radio Pro",
+    "manufacturer": "tune-in",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuneIn Radio Pro"
+      ]
+    },
+    "engine": null
+  },
   "viber": {
     "name": "Viber",
     "manufacturer": "rakuten",
@@ -2450,6 +2444,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Twitter for iPhone",
         "Twitter"
       ]
     },
@@ -2904,6 +2899,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Himalaya_test",
         "Himalaya"
       ]
     },
@@ -3055,17 +3051,18 @@
     },
     "engine": null
   },
-  "nyt-audio": {
+  "nyt": {
     "name": "The New York Times",
     "manufacturer": "new-york-times",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "NYT Audio"
+        "NYT Audio",
+        "nytios"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "uforia": {
     "name": "Uforia",
@@ -3476,6 +3473,16 @@
     },
     "engine": "webkit"
   },
+  "alpha player fm": {
+    "name": "Alpha Player FM",
+    "manufacturer": "nuvomondo",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
   "overhaul-fm": {
     "name": "Overhaul FM",
     "manufacturer": "unknown",
@@ -3738,6 +3745,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "GoodReaderIPad",
         "GoodReader4",
         "GoodReader"
       ]
@@ -4346,5 +4354,265 @@
       ]
     },
     "engine": null
+  },
+  "dogtorance-app": {
+    "name": "Dogtorance",
+    "manufacturer": "dog-torance",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "dogtorance"
+      ]
+    },
+    "engine": null
+  },
+  "vault-app": {
+    "name": "Vault",
+    "manufacturer": "wafer",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Vault"
+      ]
+    },
+    "engine": null
+  },
+  "terabox-app": {
+    "name": "TeraBox",
+    "manufacturer": "flextech",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TeraBox"
+      ]
+    },
+    "engine": null
+  },
+  "netflix-app": {
+    "name": "Netflix App",
+    "manufacturer": "netflix",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "readly-app": {
+    "name": "readly App",
+    "manufacturer": "readly",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "stitcher": {
+    "name": "Stitcher",
+    "manufacturer": "deezer",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "laughable": {
+    "name": "Laughable",
+    "manufacturer": "byway-endeavors",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "build:",
+        "Laughable iOS",
+        "Laughable"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "twitterrific": {
+    "name": "Twitterrific",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twitterrific"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pulse": {
+    "name": "Pulse",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pulse"
+      ]
+    },
+    "engine": null
+  },
+  "google+ app": {
+    "name": "Google+ App",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "applenews": {
+    "name": "Apple News",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Version",
+        "AppleNews",
+        "News\\/"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "weibo app": {
+    "name": "Weibo App",
+    "manufacturer": "sina-weibo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "weibo__"
+      ]
+    },
+    "engine": null
+  },
+  "hatena antenna": {
+    "name": "AntennaPod",
+    "manufacturer": "hatena",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hatena Antenna"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "roboform": {
+    "name": "RoboForm",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RoboForm"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tim-app": {
+    "name": "TIM",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TIM"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "covenant-eyes": {
+    "name": "Covenant Eyes",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Covenant Eyes"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pic-collage": {
+    "name": "Pic Collage",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pic Collage"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "outcast": {
+    "name": "Outcast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Outcast"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "guacamole": {
+    "name": "Guacamole",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Guacamole"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gold": {
+    "name": "Gold",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gold"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "audio": {
+    "name": "Audio",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Audio"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "anchor": {
+    "name": "Anchor",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Anchor"
+      ]
+    },
+    "engine": "unknown"
   }
 }
