@@ -251,5 +251,17 @@
       ]
     },
     "engine": null
+  },
+  "newsboat": {
+    "name": "Newsboat",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Newsboat"
+      ]
+    },
+    "engine": null
   }
 }

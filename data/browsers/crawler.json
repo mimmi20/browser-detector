@@ -1074,5 +1074,30 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "pageburst": {
+    "name": "Pageburst",
+    "manufacturer": "elsevier",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "pageburst"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sitesucker": {
+    "name": "SiteSucker",
+    "manufacturer": "rick-cranisky",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiteSucker for macOS",
+        "SiteSucker"
+      ]
+    },
+    "engine": "unknown"
   }
 }

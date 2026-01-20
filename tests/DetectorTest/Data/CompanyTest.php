@@ -5074,6 +5074,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Pantech',
                 'key' => 'pantech',
             ],
+            [
+                'type' => 'Elsevier',
+                'name' => 'Elsevier Ltd',
+                'brandname' => 'Elsevier',
+                'key' => 'elsevier',
+            ],
+            [
+                'type' => 'WPO Foundation',
+                'name' => 'WPO Foundation',
+                'brandname' => 'WPO Foundation',
+                'key' => 'wpo-foundation',
+            ],
+            [
+                'type' => 'Rick Cranisky',
+                'name' => 'Rick Cranisky',
+                'brandname' => 'Rick Cranisky',
+                'key' => 'rick-cranisky',
+            ],
         ];
     }
 
