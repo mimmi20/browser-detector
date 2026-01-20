@@ -5371,6 +5371,230 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    "sec-ch-ua-platform"=>"\"macOS\"",
+      "sec-ch-ua"=>"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Brave\";v=\"140\"",
+      "sec-ch-ua-mobile"=>"?0",
+      "user-agent"=>"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/141.0.7390.122 Safari/537.36"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-platform"=>"\"macOS\"",
+      "sec-ch-ua"=>"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Brave\";v=\"140\"",
+      "sec-ch-ua-mobile"=>"?0",
+      "user-agent"=>"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/141.0.7390.122 Safari/537.36"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Linux Desktop',
+                        'marketingName' => 'Linux Desktop',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'desktop',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Mac OS X',
+                        'marketingName' => 'Mac OS X',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Pageburst',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'Elsevier',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '141.0.7390.122',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    "sec-ch-ua-platform"=>"\"macOS\"",
+      "sec-ch-ua"=>"\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"101\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile"=>"?0",
+      "user-agent"=>"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-platform"=>"\"macOS\"",
+      "sec-ch-ua"=>"\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"101\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile"=>"?0",
+      "user-agent"=>"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Mac OS X',
+                        'marketingName' => 'Mac OS X',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Google Bot',
+                        'modus' => null,
+                        'version' => '2.1.0',
+                        'manufacturer' => 'Google',
+                        'type' => 'search-bot',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                    ],
+                ],
+            ],
+            [
+                [
+                    "sec-ch-ua-platform"=>"\"Mac OS X\"",
+      "sec-ch-ua"=>"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \";Not A Brand\";v=\"99\"",
+      "sec-ch-ua-mobile"=>"?0",
+      "user-agent"=>"Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/341.3.692278309 Mobile/15E148 Safari/604.1"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-platform"=>"\"Mac OS X\"",
+      "sec-ch-ua"=>"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \";Not A Brand\";v=\"99\"",
+      "sec-ch-ua-mobile"=>"?0",
+      "user-agent"=>"Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/341.3.692278309 Mobile/15E148 Safari/604.1"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'iPhone',
+                        'marketingName' => 'iPhone',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 480,
+                            'height' => 320,
+                            'touch' => true,
+                            'size' => 3.5,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Mac OS X',
+                        'marketingName' => 'Mac OS X',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Google Search App',
+                        'modus' => null,
+                        'version' => '341.3.692278309',
+                        'manufacturer' => 'Google',
+                        'type' => 'mobile-application',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => '605.1.15',
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
+            [
+                [
+                    "sec-ch-ua-platform"=>"\"macOS\"",
+      "sec-ch-ua"=>"\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Lighthouse\";v=\"11.2.0\"",
+      "sec-ch-ua-mobile"=>"?0",
+      "user-agent"=>"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/118.0.0.0 Safari/537.36 PTST/231010.185822"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-platform"=>"\"macOS\"",
+      "sec-ch-ua"=>"\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Lighthouse\";v=\"11.2.0\"",
+      "sec-ch-ua-mobile"=>"?0",
+      "user-agent"=>"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/118.0.0.0 Safari/537.36 PTST/231010.185822"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Linux Desktop',
+                        'marketingName' => 'Linux Desktop',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'desktop',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Mac OS X',
+                        'marketingName' => 'Mac OS X',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'WebPagetest',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'WPO Foundation',
+                        'type' => 'site-monitor',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '118.0.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

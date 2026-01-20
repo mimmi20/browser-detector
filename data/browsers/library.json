@@ -459,5 +459,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "emacs": {
+    "name": "Emacs",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Emacs\\/"
+      ]
+    },
+    "engine": "unknown"
   }
 }
