@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (BREW; Opera Mini/6.0.3/27.2339; U; xx) Presto/2.8.119 320X240 LG VN530"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VN530",
+      "marketingName": "Octane",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "6.0.3",
+      "manufacturer": "Opera",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LG-GT550/V11b; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.18377; U; en-US) Opera 9.50"
     },
     "device": {
@@ -401,53 +446,6 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "x-operamini-phone-ua": "LG VN530",
-      "x-operamini-phone": "LG # VN530",
-      "user-agent": "Opera/9.80 (BREW; Opera Mini/6.0.3/27.2339; U; xx) Presto/2.8.119 320X240 LG VN530"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "VN530",
-      "marketingName": "Octane",
-      "manufacturer": "LG",
-      "brand": "LG",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "6.0.3",
-      "manufacturer": "Opera",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
       "manufacturer": "Opera"
     }
   }
