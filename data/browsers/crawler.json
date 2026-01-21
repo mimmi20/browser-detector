@@ -1099,5 +1099,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "hanalei-bot": {
+    "name": "HanaleiBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HanaleiBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
