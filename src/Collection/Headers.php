@@ -474,6 +474,20 @@ final readonly class Headers
                     }
 
                     break;
+                case \BrowserDetector\Data\Os::macosx:
+                    $lastPlatformCode = array_last($platformCodes);
+
+                    if (
+                        $lastPlatformCode instanceof \UaData\OsInterface
+                        && $lastPlatformCode === \BrowserDetector\Data\Os::ios
+                    ) {
+                        $platform       = $lastPlatformCode;
+                        $platformHeader = array_last($headersWithPlatformCode);
+                    } else {
+                        $platformHeader = array_first($headersWithPlatformCode);
+                    }
+
+                    break;
                 default:
                     // do nothing
                     break;

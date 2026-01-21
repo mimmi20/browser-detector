@@ -22,6 +22,7 @@ use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
 use BrowserDetector\Version\RemixOsFactory;
 use BrowserDetector\Version\RimOsFactory;
+use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
@@ -707,7 +708,7 @@ enum Os: string implements OsInterface
             self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
             self::kaios => ['factory' => VersionBuilderFactory::class, 'search' => ['kaios']],
             self::kubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Kubuntu', 'kubuntu']],
-            self::ubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Ubuntu', 'ubuntu']],
+            self::ubuntu => ['factory' => UbuntuFactory::class, 'search' => null],
             self::xubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Xubuntu', 'xubuntu']],
             self::maemo => ['factory' => VersionBuilderFactory::class, 'search' => ['Maemo']],
             self::meego => ['factory' => VersionBuilderFactory::class, 'search' => ['MeeGo']],

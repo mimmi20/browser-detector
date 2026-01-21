@@ -24,6 +24,7 @@ use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
 use BrowserDetector\Version\RemixOsFactory;
 use BrowserDetector\Version\RimOsFactory;
+use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
@@ -1147,7 +1148,7 @@ final class OsTest extends TestCase
                 'name' => 'Ubuntu',
                 'marketingName' => 'Ubuntu',
                 'manufacturer' => Company::canonical,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Ubuntu', 'ubuntu']],
+                'version' => ['factory' => UbuntuFactory::class, 'search' => null],
                 'key' => 'ubuntu',
             ],
             [
