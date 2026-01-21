@@ -5373,17 +5373,17 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-platform"=>"\"macOS\"",
-      "sec-ch-ua"=>"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Brave\";v=\"140\"",
-      "sec-ch-ua-mobile"=>"?0",
-      "user-agent"=>"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/141.0.7390.122 Safari/537.36"
+                    'sec-ch-ua-platform' => '"macOS"',
+                    'sec-ch-ua' => '"Chromium";v="140", "Not=A?Brand";v="24", "Brave";v="140"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/141.0.7390.122 Safari/537.36',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-platform"=>"\"macOS\"",
-      "sec-ch-ua"=>"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Brave\";v=\"140\"",
-      "sec-ch-ua-mobile"=>"?0",
-      "user-agent"=>"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/141.0.7390.122 Safari/537.36"
+                        'sec-ch-ua-platform' => '"macOS"',
+                        'sec-ch-ua' => '"Chromium";v="140", "Not=A?Brand";v="24", "Brave";v="140"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/141.0.7390.122 Safari/537.36',
                     ],
                     'device' => [
                         'architecture' => null,
@@ -5429,17 +5429,17 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-platform"=>"\"macOS\"",
-      "sec-ch-ua"=>"\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"101\", \"Chromium\";v=\"101\"",
-      "sec-ch-ua-mobile"=>"?0",
-      "user-agent"=>"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+                    'sec-ch-ua-platform' => '"macOS"',
+                    'sec-ch-ua' => '".Not/A)Brand";v="99", "Google Chrome";v="101", "Chromium";v="101"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-platform"=>"\"macOS\"",
-      "sec-ch-ua"=>"\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"101\", \"Chromium\";v=\"101\"",
-      "sec-ch-ua-mobile"=>"?0",
-      "user-agent"=>"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+                        'sec-ch-ua-platform' => '"macOS"',
+                        'sec-ch-ua' => '".Not/A)Brand";v="99", "Google Chrome";v="101", "Chromium";v="101"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
                     ],
                     'device' => [
                         'architecture' => null,
@@ -5485,17 +5485,17 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-platform"=>"\"Mac OS X\"",
-      "sec-ch-ua"=>"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \";Not A Brand\";v=\"99\"",
-      "sec-ch-ua-mobile"=>"?0",
-      "user-agent"=>"Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/341.3.692278309 Mobile/15E148 Safari/604.1"
+                    'sec-ch-ua-platform' => '"Mac OS X"',
+                    'sec-ch-ua' => '"Google Chrome";v="131", "Chromium";v="131", ";Not A Brand";v="99"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/341.3.692278309 Mobile/15E148 Safari/604.1',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-platform"=>"\"Mac OS X\"",
-      "sec-ch-ua"=>"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \";Not A Brand\";v=\"99\"",
-      "sec-ch-ua-mobile"=>"?0",
-      "user-agent"=>"Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/341.3.692278309 Mobile/15E148 Safari/604.1"
+                        'sec-ch-ua-platform' => '"Mac OS X"',
+                        'sec-ch-ua' => '"Google Chrome";v="131", "Chromium";v="131", ";Not A Brand";v="99"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/341.3.692278309 Mobile/15E148 Safari/604.1',
                     ],
                     'device' => [
                         'architecture' => null,
@@ -5541,17 +5541,17 @@ final class DetectorIntegrationTest extends TestCase
             ],
             [
                 [
-                    "sec-ch-ua-platform"=>"\"macOS\"",
-      "sec-ch-ua"=>"\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Lighthouse\";v=\"11.2.0\"",
-      "sec-ch-ua-mobile"=>"?0",
-      "user-agent"=>"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/118.0.0.0 Safari/537.36 PTST/231010.185822"
+                    'sec-ch-ua-platform' => '"macOS"',
+                    'sec-ch-ua' => '"Chromium";v="118", "Google Chrome";v="118", "Lighthouse";v="11.2.0"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/118.0.0.0 Safari/537.36 PTST/231010.185822',
                 ],
                 [
                     'headers' => [
-                        "sec-ch-ua-platform"=>"\"macOS\"",
-      "sec-ch-ua"=>"\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Lighthouse\";v=\"11.2.0\"",
-      "sec-ch-ua-mobile"=>"?0",
-      "user-agent"=>"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/118.0.0.0 Safari/537.36 PTST/231010.185822"
+                        'sec-ch-ua-platform' => '"macOS"',
+                        'sec-ch-ua' => '"Chromium";v="118", "Google Chrome";v="118", "Lighthouse";v="11.2.0"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/118.0.0.0 Safari/537.36 PTST/231010.185822',
                     ],
                     'device' => [
                         'architecture' => null,
@@ -5592,6 +5592,62 @@ final class DetectorIntegrationTest extends TestCase
                         'name' => 'Blink',
                         'version' => '118.0.0.0',
                         'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua' => '"HeadlessChrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'HanaleiBot runid=beta-stage-integration-test',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"HeadlessChrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'HanaleiBot runid=beta-stage-integration-test',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => null,
+                        'marketingName' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'HanaleiBot',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
                     ],
                 ],
             ],

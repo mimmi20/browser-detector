@@ -2251,8 +2251,10 @@
     "manufacturer": "openai",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ChatGPT"
+      ]
     },
     "engine": null
   },
