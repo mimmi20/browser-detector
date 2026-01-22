@@ -1230,6 +1230,7 @@ final class DeviceTest extends TestCase
             ['Redmi Note 14 5G', 'xiaomi=xiaomi redmi note 14 5g'],
             ['Redmi Note 14 Pro 5G', 'xiaomi=xiaomi redmi note 14 pro 5g'],
             ['Redmi Note 14 Pro+ 5G', 'xiaomi=xiaomi redmi note 14 pro+ 5g'],
+            ['Xiaomi 15T Pro', 'xiaomi=xiaomi 15t pro'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -1348,6 +1349,13 @@ final class DeviceTest extends TestCase
             ['ZTE A2025H', 'zte=zte a2025h'],
             ['NP05J', 'zte=zte np05j'],
             ['NT01', 'zte=zte nt01'],
+            ['ZTE 7160N', 'zte=zte 7160n'],
+            ['ZTE 7530N', 'zte=zte 7530n'],
+            ['ZTE 7540N', 'zte=zte 7540n'],
+            ['ZTE 8010RU', 'zte=zte 8010ru'],
+            ['ZTE A2025H', 'zte=zte a2025h'],
+            ['ZTE 8012N', 'zte=zte 8012n'],
+            ['ZTE 8031', 'zte=zte 8031'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -3011,6 +3019,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G800A', 'samsung=samsung sm-g800a'],
             ['SM-G800', 'samsung=samsung sm-g800'],
             ['SAMSUNG SM-G800', 'samsung=samsung sm-g800'],
+            ['SM-G800X', 'samsung=samsung sm-g800x'],
+            ['SAMSUNG SM-G800X', 'samsung=samsung sm-g800x'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3591,8 +3601,10 @@ final class DeviceTest extends TestCase
             ['HOL-T00', 'huawei=huawei hol-t00'],
             ['HOL-U10', 'huawei=huawei hol-u10'],
             ['HOL-U19', 'huawei=huawei hol-u19'],
+            ['HUAWEI Hol-U19', 'huawei=huawei hol-u19'],
             ['HN3-U00', 'huawei=huawei hn3-u00'],
             ['HN3-U01', 'huawei=huawei hn3-u01'],
+            ['HUAWEI HN3-U01', 'huawei=huawei hn3-u01'],
             ['HUAWEI Mate 60 Pro', 'huawei=huawei mate 60 pro'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
@@ -4663,6 +4675,8 @@ final class DeviceTest extends TestCase
             ['Fairphone FP5', 'fairphone=fairphone fp5'],
             ['FP5', 'fairphone=fairphone fp5'],
             ['FP2', 'fairphone=fairphone fp2'],
+            ['Fairphone 6', 'fairphone=fairphone fp6'],
+            ['FP6', 'fairphone=fairphone fp6'],
             // Oukitel
             ['WP16', 'oukitel=oukitel wp16'],
             ['WP18', 'oukitel=oukitel wp18'],
@@ -4835,6 +4849,7 @@ final class DeviceTest extends TestCase
             ['Power Armor 16S', 'ulefone=ulefone power armor 16s'],
             ['RugKing', 'ulefone=ulefone rugking'],
             ['Armor 24', 'ulefone=ulefone armor 24'],
+            ['Armor 5S', 'ulefone=ulefone armor 5s'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],

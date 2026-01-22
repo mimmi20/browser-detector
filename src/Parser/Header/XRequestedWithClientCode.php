@@ -386,6 +386,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'jp.naver.line.android' => 'line',
             'com.netqin.ps' => 'vault-app',
             'com.dubox.drive' => 'terabox-app',
+            'com.hihonor.search' => 'honor-search-app',
             default => null,
         };
     }

@@ -5580,7 +5580,7 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'WebPagetest',
+                        'name' => 'WebPageTest',
                         'modus' => null,
                         'version' => null,
                         'manufacturer' => 'WPO Foundation',
