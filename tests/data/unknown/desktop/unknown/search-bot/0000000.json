@@ -115,7 +115,7 @@
     "os": {
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
-      "version": null,
+      "version": "0.0.0",
       "manufacturer": "Canonical",
       "bits": null
     },
@@ -2006,6 +2006,51 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "12.3.0",
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "YaCy Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "search-bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "yacybot (/global; amd64 FreeBSD 13.3-RELEASE-p4; java 24.0.2; America/en) https://yacy.net/bot.html"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "13.3.0",
       "manufacturer": "FreeBSD",
       "bits": null
     },
