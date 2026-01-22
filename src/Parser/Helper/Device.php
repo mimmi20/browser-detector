@@ -1197,6 +1197,7 @@ final class Device implements DeviceInterface
             'redmi note 14 5g' => 'xiaomi=xiaomi redmi note 14 5g',
             'redmi note 14 pro 5g' => 'xiaomi=xiaomi redmi note 14 pro 5g',
             'redmi note 14 pro+ 5g' => 'xiaomi=xiaomi redmi note 14 pro+ 5g',
+            'xiaomi 15t pro' => 'xiaomi=xiaomi 15t pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1304,6 +1305,12 @@ final class Device implements DeviceInterface
             'zte a2025h' => 'zte=zte a2025h',
             'np05j' => 'zte=zte np05j',
             'nt01' => 'zte=zte nt01',
+            'zte 7160n' => 'zte=zte 7160n',
+            'zte 7530n' => 'zte=zte 7530n',
+            'zte 7540n' => 'zte=zte 7540n',
+            'zte 8010ru' => 'zte=zte 8010ru',
+            'zte 8012n' => 'zte=zte 8012n',
+            'zte 8031' => 'zte=zte 8031',
             // Samsung
             'sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -2328,6 +2335,7 @@ final class Device implements DeviceInterface
             'sm-g800f', 'samsung sm-g800f' => 'samsung=samsung sm-g800f',
             'sm-g800a', 'samsung sm-g800a' => 'samsung=samsung sm-g800a',
             'sm-g800', 'samsung sm-g800' => 'samsung=samsung sm-g800',
+            'sm-g800x', 'samsung sm-g800x' => 'samsung=samsung sm-g800x',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -2465,7 +2473,6 @@ final class Device implements DeviceInterface
             'trt-lx1' => 'huawei=huawei trt-lx1',
             'ldn-l21' => 'huawei=huawei ldn-l21',
             'mar-lx3am' => 'huawei=huawei mar-lx3am',
-            'huawei nmo-l31' => 'huawei=huawei nmo-l31',
             'ags-l09' => 'huawei=huawei ags-l09',
             'huawei m2-801w' => 'huawei=huawei m2-801w',
             'lnd-l29' => 'huawei=huawei lnd-l29',
@@ -2900,12 +2907,12 @@ final class Device implements DeviceInterface
             'moa-al00' => 'huawei=huawei moa-al00',
             'moa-lx9n' => 'huawei=huawei moa-lx9n',
             'nmo-l22' => 'huawei=huawei nmo-l22',
-            'nmo-l31' => 'huawei=huawei nmo-l31',
+            'nmo-l31', 'huawei nmo-l31' => 'huawei=huawei nmo-l31',
             'hol-t00' => 'huawei=huawei hol-t00',
             'hol-u10' => 'huawei=huawei hol-u10',
-            'hol-u19' => 'huawei=huawei hol-u19',
+            'hol-u19', 'huawei hol-u19' => 'huawei=huawei hol-u19',
             'hn3-u00' => 'huawei=huawei hn3-u00',
-            'hn3-u01' => 'huawei=huawei hn3-u01',
+            'hn3-u01', 'huawei hn3-u01' => 'huawei=huawei hn3-u01',
             'huawei mate 60 pro' => 'huawei=huawei mate 60 pro',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
@@ -3958,6 +3965,7 @@ final class Device implements DeviceInterface
             'fp3' => 'fairphone=fairphone fp3',
             'fairphone fp5', 'fp5' => 'fairphone=fairphone fp5',
             'fp2' => 'fairphone=fairphone fp2',
+            'fairphone 6', 'fp6' => 'fairphone=fairphone fp6',
             // Oukitel
             'wp16' => 'oukitel=oukitel wp16',
             'wp18' => 'oukitel=oukitel wp18',
@@ -4123,6 +4131,7 @@ final class Device implements DeviceInterface
             'power armor 16s' => 'ulefone=ulefone power armor 16s',
             'rugking' => 'ulefone=ulefone rugking',
             'armor 24' => 'ulefone=ulefone armor 24',
+            'armor 5s' => 'ulefone=ulefone armor 5s',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',

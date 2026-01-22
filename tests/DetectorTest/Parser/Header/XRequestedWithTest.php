@@ -559,6 +559,7 @@ final class XRequestedWithTest extends TestCase
             ['jp.naver.line.android', true, 'line', true, null, false, Os::unknown],
             ['com.netqin.ps', true, 'vault-app', true, null, false, Os::unknown],
             ['com.dubox.drive', true, 'terabox-app', true, null, false, Os::unknown],
+            ['com.hihonor.search', true, 'honor-search-app', true, null, false, Os::unknown],
         ];
     }
 }

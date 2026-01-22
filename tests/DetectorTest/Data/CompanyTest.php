@@ -5092,6 +5092,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Rick Cranisky',
                 'key' => 'rick-cranisky',
             ],
+            [
+                'type' => 'shiftphones',
+                'name' => 'SHIFT GmbH',
+                'brandname' => 'shiftphones',
+                'key' => 'shift-phones',
+            ],
         ];
     }
 

@@ -1699,6 +1699,8 @@ enum Company: string implements CompanyInterface
 
     case rickCranisky = 'Rick Cranisky';
 
+    case shiftphones = 'shiftphones';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2546,6 +2548,7 @@ enum Company: string implements CompanyInterface
             'elsevier', 'elsevier ltd' => self::elsevier,
             'wpofoundation', 'wpo foundation', 'wpo-foundation' => self::wpoFoundation,
             'rickcranisky', 'rick cranisky', 'rick-cranisky' => self::rickCranisky,
+            'shiftphones', 'shift-phones', 'shift gmbh' => self::shiftphones,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2839,6 +2842,7 @@ enum Company: string implements CompanyInterface
             self::semrush => 'Semrush Inc.',
             self::arcelik => 'Arcelik A.S.',
             self::elsevier => 'Elsevier Ltd',
+            self::shiftphones => 'SHIFT GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -3104,6 +3108,7 @@ enum Company: string implements CompanyInterface
             self::fedirTsapana => 'fedir-tsapana',
             self::wpoFoundation => 'wpo-foundation',
             self::rickCranisky => 'rick-cranisky',
+            self::shiftphones => 'shift-phones',
             default => $this->name,
         };
     }

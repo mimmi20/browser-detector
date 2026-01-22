@@ -4617,5 +4617,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "honor-search-app": {
+    "name": "Honor Search App",
+    "manufacturer": "honor",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Honor"
+      ]
+    },
+    "engine": "unknown"
   }
 }
