@@ -38,12 +38,12 @@ final readonly class Ubuntu implements VersionFactoryInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         if (
-            preg_match('/Ubuntu\/(?<version>\d{2}\.(?:04|10))/i', $useragent, $matches)
+            preg_match('/Ubuntu[\/ ](?<version>\d{2}\.(?:04|10))/i', $useragent, $matches)
             && array_key_exists('version', $matches)
         ) {
             return $this->versionBuilder->set($matches['version']);
         }
 
-        return $this->versionBuilder->set('0');
+        return new NullVersion();
     }
 }
