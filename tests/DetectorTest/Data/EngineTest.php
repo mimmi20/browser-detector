@@ -158,7 +158,7 @@ final class EngineTest extends TestCase
                 'type' => 'NetFront',
                 'name' => 'NetFront',
                 'manufacturer' => Company::access,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['NetFront']],
                 'key' => 'netfront',
             ],
             [

@@ -5707,6 +5707,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua' => '"Chromium";v="140", "Not=A?Brand";v="24", "HeadlessChrome";v="140"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'sec-ch-ua-platform' => '"Android"',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 14; HUAWEI Mate 60 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Android"',
+                        'sec-ch-ua' => '"Chromium";v="140", "Not=A?Brand";v="24", "HeadlessChrome";v="140"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 14; HUAWEI Mate 60 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Mate 60 Pro',
+                        'marketingName' => 'Mate 60 Pro',
+                        'manufacturer' => 'Huawei',
+                        'brand' => 'Huawei',
+                        'dualOrientation' => true,
+                        'simCount' => 2,
+                        'display' => [
+                            'width' => 2720,
+                            'height' => 1260,
+                            'touch' => true,
+                            'size' => 6.82,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '14.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Headless Chrome',
+                        'modus' => null,
+                        'version' => '140.0.0',
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '116.0.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

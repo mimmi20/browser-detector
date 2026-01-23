@@ -183,6 +183,7 @@ enum Engine: string implements EngineInterface
             self::arkweb => ['factory' => VersionBuilderFactory::class, 'search' => ['ArkWeb']],
             self::netsurf => ['factory' => VersionBuilderFactory::class, 'search' => ['NetSurf']],
             self::ekiohflow => ['factory' => VersionBuilderFactory::class, 'search' => ['EkiohFlow']],
+            self::netfront => ['factory' => VersionBuilderFactory::class, 'search' => ['NetFront']],
             self::gecko => ['factory' => GeckoFactory::class, 'search' => null],
             self::trident => ['factory' => TridentFactory::class, 'search' => null],
             self::goanna => ['factory' => GoannaFactory::class, 'search' => null],

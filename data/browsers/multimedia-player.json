@@ -587,8 +587,10 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "radio\\.net"
+      ]
     },
     "engine": "unknown"
   },

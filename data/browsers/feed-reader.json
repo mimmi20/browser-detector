@@ -263,5 +263,29 @@
       ]
     },
     "engine": null
+  },
+  "rssowl": {
+    "name": "RSSOwl",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RSSOwl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pulp": {
+    "name": "Pulp",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pulp"
+      ]
+    },
+    "engine": "unknown"
   }
 }
