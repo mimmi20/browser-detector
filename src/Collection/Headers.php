@@ -381,6 +381,8 @@ final readonly class Headers
                     ?? array_last($clientVersions),
                 'ecosia' => $clientVersions['sec-ch-ua-full-version']
                     ?? array_last($clientVersions),
+                'vivaldi' => $clientVersions['sec-ch-ua']
+                    ?? array_last($clientVersions),
                 default => array_first($clientVersions),
             };
 
