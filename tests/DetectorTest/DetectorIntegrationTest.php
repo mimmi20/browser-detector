@@ -5763,6 +5763,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua' => '"Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'user-agent' => 'SupportsFresco=1 modular=2 playstoretest Dalvik/2.1.0 (Linux; U; Android 12; 2201116SG Build/SKQ1.211006.001) [FBAN/EMA;FBBV/859680942;FBAV/494.0.0.9.107;FBDV/2201116SG;FBLC/fr_FR;FBNG/WIFI;FBMNT/NOT_METERED;FBDM/{density=2.75}]',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'SupportsFresco=1 modular=2 playstoretest Dalvik/2.1.0 (Linux; U; Android 12; 2201116SG Build/SKQ1.211006.001) [FBAN/EMA;FBBV/859680942;FBAV/494.0.0.9.107;FBDV/2201116SG;FBLC/fr_FR;FBNG/WIFI;FBMNT/NOT_METERED;FBDM/{density=2.75}]',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => '2201116SG',
+                        'marketingName' => 'Redmi Note 11 Pro 5G',
+                        'manufacturer' => 'Xiaomi',
+                        'brand' => 'Xiaomi',
+                        'dualOrientation' => true,
+                        'simCount' => 2,
+                        'display' => [
+                            'width' => 2400,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.67,
+                        ],
+                        'type' => 'phablet',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '12.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Facebook Lite',
+                        'modus' => null,
+                        'version' => '494.0.0.9.107',
+                        'manufacturer' => 'Meta',
+                        'type' => 'mobile-application',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
         ];
     }
 }
