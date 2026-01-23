@@ -4927,7 +4927,8 @@ final class DeviceTest extends TestCase
             ['S35T', 'doogee=doogee s35t'],
             ['S60Lite', 'doogee=doogee s60 lite'],
             ['S60 Lite', 'doogee=doogee s60 lite'],
-            ['BL5000', 'doogee=doogee bl5000'],
+            // conflicts with Blackview BL5000
+            // ['BL5000', 'doogee=doogee bl5000'],
             ['BL7000', 'doogee=doogee bl7000'],
             ['Doogee S35', 'doogee=doogee s35'],
             ['S70', 'doogee=doogee s70'],

@@ -1135,5 +1135,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "prerender": {
+    "name": "Prerender",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Prerender"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -5176,6 +5176,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Linden Labs',
                 'key' => 'linden-labs',
             ],
+            [
+                'type' => 'Piriform',
+                'name' => 'Piriform Software Ltd',
+                'brandname' => 'Piriform',
+                'key' => 'piriform',
+            ],
+            [
+                'type' => 'Gateway',
+                'name' => 'Gateway, Inc.',
+                'brandname' => 'Gateway',
+                'key' => 'gateway',
+            ],
+            [
+                'type' => 'Kingsoft',
+                'name' => 'Kingsoft',
+                'brandname' => 'Kingsoft',
+                'key' => 'kingsoft',
+            ],
+            [
+                'type' => 'BuiltWith',
+                'name' => 'BuiltWith Pty Ltd',
+                'brandname' => 'BuiltWith',
+                'key' => 'builtwith',
+            ],
         ];
     }
 

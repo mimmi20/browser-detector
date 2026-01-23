@@ -91,7 +91,7 @@
     "/vnt[ _]tab[ _]?8/i": "vnt",
     "/openbox/i": "openbox",
     "/celkon| a400(?: +build|[;\\/\\)])|(?:adr|android) 2\\.3.* a19/i": "celkon",
-    "/blackview|bl8800|bv[4-9][0-35-9]00(?:[ _]?pro)?|dm550|crown|alife[ _][ps]1|omega_pro|ultra[ _]plus|p2lite|(?:adr|android) 4\\.4.* zeta|(?:(?<!qmobile|apanda|lenovo|micromax|twz|agm|smart|evercoss|elite) a[6-9][05](?:[ _]?pro)?|(?<!e)tab[ _]?(?:[78]|12|70)[ _]?(?:wifi|pro)|(?<!fire_)tab[ _]?[689]| e7s|a80s|a7[ _]?pro| r6| a8|hero[ _]?10|color[ _]8|n6000[ _]se|wave 8c)(?: +build|[;\\/\\)])/i": "blackview",
+    "/blackview|bl8800|(?:adr|android) 11\\..* bl5000|bv[4-9][0-35-9]00(?:[ _]?pro)?|dm550|crown|alife[ _][ps]1|omega_pro|ultra[ _]plus|p2lite|(?:adr|android) 4\\.4.* zeta|(?:(?<!qmobile|apanda|lenovo|micromax|twz|agm|smart|evercoss|elite) a[6-9][05](?:[ _]?pro)?|(?<!e)tab[ _]?(?:[78]|12|70)[ _]?(?:wifi|pro)|(?<!fire_)tab[ _]?[689]| e7s|a80s|a7[ _]?pro| r6| a8|hero[ _]?10|color[ _]8|n6000[ _]se|wave 8c)(?: +build|[;\\/\\)])/i": "blackview",
     "/multilaser/i": "multilaser",
     "/karbonn|(?<!appcelerator )titanium|machfive|sparkle v|s109|k9 smart (?:grand|4g)|(?:(?:adr|android) 4\\.[02].* a1[689]\\+?|[ _]a[19]\\+|[ _]a7\\*|(?:adr|android) 4\\.1.* st10)(?: +build|[;\\/\\)])|jk8000|a40 indian|smarttab[12](?: +build|[;\\/\\)])/i": "karbonn",
     "/micromax[ \\-\\_]?[a-z0-9]+|(?:p70221|a121|(?<!h)a120|a116|a114|a106|a093| a96| a78|(?:adr|android) [24]\\..* a52| a50| a47| a28|f666|mt500|q327|p701)(?: +build|[;\\/\\)])|mid1014|canvas 2 colours/i": "micromax",

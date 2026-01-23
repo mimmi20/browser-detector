@@ -4193,7 +4193,8 @@ final class Device implements DeviceInterface
             'n30' => 'doogee=doogee n30',
             's35t' => 'doogee=doogee s35t',
             's60lite', 's60 lite' => 'doogee=doogee s60 lite',
-            'bl5000' => 'doogee=doogee bl5000',
+            // conflicts with Blackview BL5000
+            //'bl5000' => 'doogee=doogee bl5000',
             'bl7000' => 'doogee=doogee bl7000',
             'doogee s35' => 'doogee=doogee s35',
             's70' => 'doogee=doogee s70',

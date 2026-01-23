@@ -1727,6 +1727,14 @@ enum Company: string implements CompanyInterface
 
     case lindenLabs = 'Linden Labs';
 
+    case piriform = 'Piriform';
+
+    case gateway = 'Gateway';
+
+    case kingsoft = 'Kingsoft';
+
+    case builtwith = 'BuiltWith';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2588,6 +2596,10 @@ enum Company: string implements CompanyInterface
             'adobe', 'adobe systems incorporated' => self::adobe,
             'rambler' => self::rambler,
             'lindenlabs', 'linden-labs', 'linden labs' => self::lindenLabs,
+            'piriform', 'piriform software ltd' => self::piriform,
+            'gateway', 'gateway, inc.' => self::gateway,
+            'kingsoft' => self::kingsoft,
+            'builtwith', 'builtwith pty ltd' => self::builtwith,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2889,6 +2901,9 @@ enum Company: string implements CompanyInterface
             self::blackboard => 'Blackboard Inc.',
             self::novarra => 'Novarra Inc.',
             self::adobe => 'Adobe Systems Incorporated',
+            self::piriform => 'Piriform Software Ltd',
+            self::gateway => 'Gateway, Inc.',
+            self::builtwith => 'BuiltWith Pty Ltd',
             self::unknown => null,
             default => $this->value,
         };

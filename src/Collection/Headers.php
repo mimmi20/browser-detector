@@ -49,10 +49,13 @@ use UnexpectedValueException;
 
 use function array_filter;
 use function array_first;
+use function array_key_exists;
 use function array_last;
 use function array_map;
 use function assert;
+use function count;
 use function explode;
+use function in_array;
 use function is_string;
 use function sprintf;
 
@@ -491,6 +494,30 @@ final readonly class Headers
                     }
 
                     break;
+                case \BrowserDetector\Data\Os::windows:
+                    $lastPlatformCode = array_last($platformCodes);
+                    $platformHeader   = array_first($headersWithPlatformCode);
+
+                    $headersWithPlatformVersion = array_filter(
+                        $this->headers,
+                        static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
+                    );
+
+                    if (
+                        $lastPlatformCode instanceof \UaData\OsInterface
+                        && count($headersWithPlatformVersion) > 1
+                        && !array_key_exists('sec-ch-ua-platform-version', $headersWithPlatformVersion)
+                        && in_array(
+                            $lastPlatformCode,
+                            [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt],
+                            true,
+                        )
+                    ) {
+                        $platform       = $lastPlatformCode;
+                        $platformHeader = array_last($headersWithPlatformCode);
+                    }
+
+                    break;
                 default:
                     // do nothing
                     break;
@@ -501,6 +528,7 @@ final readonly class Headers
             $platformVersion = match ($platform) {
                 \BrowserDetector\Data\Os::lineageos => $this->getVersionForLineageOs(),
                 \BrowserDetector\Data\Os::fireos => $this->getVersionForFireOs(),
+                \BrowserDetector\Data\Os::windows => $this->getVersionForWindows($platform),
                 default => $this->getVersionForGeneric($platform, $platformHeader),
             };
 
@@ -699,6 +727,25 @@ final readonly class Headers
                     // do nothing
                 }
             }
+        }
+
+        return new NullVersion();
+    }
+
+    /** @throws void */
+    private function getVersionForWindows(\UaData\OsInterface &$platform): VersionInterface
+    {
+        $headersWithPlatformVersion = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
+        );
+
+        $platformHeaderVersion = $headersWithPlatformVersion['sec-ch-ua-platform-version'] ?? array_first(
+            $headersWithPlatformVersion,
+        );
+
+        if ($platformHeaderVersion instanceof HeaderInterface) {
+            return $platformHeaderVersion->getPlatformVersion($platform->getKey());
         }
 
         return new NullVersion();
