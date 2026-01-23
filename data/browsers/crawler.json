@@ -554,6 +554,18 @@
     },
     "engine": "unknown"
   },
+  "amazon video bot": {
+    "name": "Amazon Video Bot",
+    "manufacturer": "amazon",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Amazonbot-Video"
+      ]
+    },
+    "engine": "unknown"
+  },
   "google image proxy": {
     "name": "Google Image Proxy",
     "manufacturer": "google",
@@ -1108,6 +1120,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HanaleiBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "siteauditbot": {
+    "name": "SiteAuditBot",
+    "manufacturer": "semrush",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiteAuditBot"
       ]
     },
     "engine": "unknown"
