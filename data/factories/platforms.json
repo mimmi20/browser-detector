@@ -25,7 +25,7 @@
     "/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i": "symbian",
     "/(?:net|free|open)bsd|(?<![0-9\\-])bsd(?!k)|dragonfly/i": "bsd",
     "/ubuntu|plasma mobile|debian/i": "linux",
-    "/maemo|(?<!no)tizen|remixos|remix (?:pro|mini)|(?<![0-9])bada|meego|sailfish|chinese operating system|(?<!ma)cos;|\\(cos [0-9]|android; cos|wh\\/|whaletv|zeasn/i": "maemo",
+    "/maemo|(?<!no)tizen|remixos|remix (?:pro|mini)|(?<![0-9a-z])bada|meego|sailfish|chinese operating system|(?<!ma)cos;|\\(cos [0-9]|android; cos|wh\\/|whaletv|zeasn/i": "maemo",
     "/web[o0]s|hpwos/i": "webos",
     "/sunos|solaris/i": "solaris",
     "/hp-?ux|irix|(?<![ch])aix(?![u\\-])|unix|osf1/i": "unix",

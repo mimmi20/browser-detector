@@ -1701,6 +1701,32 @@ enum Company: string implements CompanyInterface
 
     case shiftphones = 'shiftphones';
 
+    case shiira = 'Shiira';
+
+    case newsMe = 'News.me';
+
+    case wireSwiss = 'Wire Swiss';
+
+    case rivalIq = 'Rival IQ';
+
+    case mailbar = 'MailBar';
+
+    case blackboard = 'Blackboard';
+
+    case chimoosoft = 'Chimoosoft';
+
+    case novarra = 'Novarra';
+
+    case sendo = 'Sendo';
+
+    case siemens = 'Siemens';
+
+    case adobe = 'Adobe';
+
+    case rambler = 'rambler';
+
+    case lindenLabs = 'Linden Labs';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2549,6 +2575,19 @@ enum Company: string implements CompanyInterface
             'wpofoundation', 'wpo foundation', 'wpo-foundation' => self::wpoFoundation,
             'rickcranisky', 'rick cranisky', 'rick-cranisky' => self::rickCranisky,
             'shiftphones', 'shift-phones', 'shift gmbh' => self::shiftphones,
+            'shiira' => self::shiira,
+            'newsme', 'news.me', 'news.me inc' => self::newsMe,
+            'wireswiss', 'wire-swiss', 'wire swiss gmbh', 'wire swiss' => self::wireSwiss,
+            'rivaliq', 'rival-iq', 'rival iq corporation', 'rival iq' => self::rivalIq,
+            'mailbar', 'mailbar inc.' => self::mailbar,
+            'blackboard', 'blackboard inc.' => self::blackboard,
+            'chimoosoft' => self::chimoosoft,
+            'novarra', 'novarra inc.' => self::novarra,
+            'sendo' => self::sendo,
+            'siemens' => self::siemens,
+            'adobe', 'adobe systems incorporated' => self::adobe,
+            'rambler' => self::rambler,
+            'lindenlabs', 'linden-labs', 'linden labs' => self::lindenLabs,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2843,6 +2882,13 @@ enum Company: string implements CompanyInterface
             self::arcelik => 'Arcelik A.S.',
             self::elsevier => 'Elsevier Ltd',
             self::shiftphones => 'SHIFT GmbH',
+            self::newsMe => 'News.me Inc',
+            self::wireSwiss => 'Wire Swiss GmbH',
+            self::rivalIq => 'Rival IQ Corporation',
+            self::mailbar => 'MailBar Inc.',
+            self::blackboard => 'Blackboard Inc.',
+            self::novarra => 'Novarra Inc.',
+            self::adobe => 'Adobe Systems Incorporated',
             self::unknown => null,
             default => $this->value,
         };
@@ -3109,6 +3155,10 @@ enum Company: string implements CompanyInterface
             self::wpoFoundation => 'wpo-foundation',
             self::rickCranisky => 'rick-cranisky',
             self::shiftphones => 'shift-phones',
+            self::newsMe => 'news.me',
+            self::wireSwiss => 'wire-swiss',
+            self::rivalIq => 'rival-iq',
+            self::lindenLabs => 'linden-labs',
             default => $this->name,
         };
     }

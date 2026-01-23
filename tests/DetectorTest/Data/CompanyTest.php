@@ -5098,6 +5098,84 @@ final class CompanyTest extends TestCase
                 'brandname' => 'shiftphones',
                 'key' => 'shift-phones',
             ],
+            [
+                'type' => 'Shiira',
+                'name' => 'Shiira',
+                'brandname' => 'Shiira',
+                'key' => 'shiira',
+            ],
+            [
+                'type' => 'News.me',
+                'name' => 'News.me Inc',
+                'brandname' => 'News.me',
+                'key' => 'news.me',
+            ],
+            [
+                'type' => 'Wire Swiss',
+                'name' => 'Wire Swiss GmbH',
+                'brandname' => 'Wire Swiss',
+                'key' => 'wire-swiss',
+            ],
+            [
+                'type' => 'Rival IQ',
+                'name' => 'Rival IQ Corporation',
+                'brandname' => 'Rival IQ',
+                'key' => 'rival-iq',
+            ],
+            [
+                'type' => 'MailBar',
+                'name' => 'MailBar Inc.',
+                'brandname' => 'MailBar',
+                'key' => 'mailbar',
+            ],
+            [
+                'type' => 'Blackboard',
+                'name' => 'Blackboard Inc.',
+                'brandname' => 'Blackboard',
+                'key' => 'blackboard',
+            ],
+            [
+                'type' => 'Chimoosoft',
+                'name' => 'Chimoosoft',
+                'brandname' => 'Chimoosoft',
+                'key' => 'chimoosoft',
+            ],
+            [
+                'type' => 'Novarra',
+                'name' => 'Novarra Inc.',
+                'brandname' => 'Novarra',
+                'key' => 'novarra',
+            ],
+            [
+                'type' => 'Sendo',
+                'name' => 'Sendo',
+                'brandname' => 'Sendo',
+                'key' => 'sendo',
+            ],
+            [
+                'type' => 'Siemens',
+                'name' => 'Siemens',
+                'brandname' => 'Siemens',
+                'key' => 'siemens',
+            ],
+            [
+                'type' => 'Adobe',
+                'name' => 'Adobe Systems Incorporated',
+                'brandname' => 'Adobe',
+                'key' => 'adobe',
+            ],
+            [
+                'type' => 'rambler',
+                'name' => 'rambler',
+                'brandname' => 'rambler',
+                'key' => 'rambler',
+            ],
+            [
+                'type' => 'Linden Labs',
+                'name' => 'Linden Labs',
+                'brandname' => 'Linden Labs',
+                'key' => 'linden-labs',
+            ],
         ];
     }
 
