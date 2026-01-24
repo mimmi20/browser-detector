@@ -5845,5 +5845,17 @@
       ]
     },
     "engine": null
+  },
+  "maple": {
+    "name": "Maple",
+    "manufacturer": "samsung",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Maple"
+      ]
+    },
+    "engine": null
   }
 }
