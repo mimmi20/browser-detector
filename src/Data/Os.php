@@ -368,6 +368,8 @@ enum Os: string implements OsInterface
 
     case whaleOS = 'Whale OS';
 
+    case orsay = 'Orsay';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -543,6 +545,7 @@ enum Os: string implements OsInterface
             'linspire' => self::linspire,
             'plasmamobile', 'plasma-mobile', 'plasma mobile' => self::plasmaMobile,
             'whaleos', 'whale os', 'whale-os' => self::whaleOS,
+            'orsay' => self::orsay,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -599,7 +602,7 @@ enum Os: string implements OsInterface
             self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv => Company::google,
             self::asha, self::nokiaos, self::series30, self::series40, self::series60 => Company::nokia,
             self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh, self::watchos => Company::apple,
-            self::bada => Company::samsung,
+            self::bada, self::orsay => Company::samsung,
             self::cellos, self::orbisos, self::newsos => Company::sony,
             self::fireos => Company::amazon,
             self::firefoxos => Company::mozilla,

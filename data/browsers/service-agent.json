@@ -131,5 +131,17 @@
       "search": null
     },
     "engine": null
+  },
+  "dv-bot": {
+    "name": "DVbot",
+    "manufacturer": "double-verify",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DVbot"
+      ]
+    },
+    "engine": null
   }
 }
