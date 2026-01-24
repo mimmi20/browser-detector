@@ -521,6 +521,20 @@ final readonly class Headers
                     }
 
                     break;
+                case \BrowserDetector\Data\Os::android:
+                    $lastPlatformCode = array_last($platformCodes);
+
+                    if (
+                        $lastPlatformCode instanceof \UaData\OsInterface
+                        && $lastPlatformCode === \BrowserDetector\Data\Os::fireos
+                    ) {
+                        $platform       = $lastPlatformCode;
+                        $platformHeader = array_last($headersWithPlatformCode);
+                    } else {
+                        $platformHeader = array_first($headersWithPlatformCode);
+                    }
+
+                    break;
                 default:
                     // do nothing
                     break;

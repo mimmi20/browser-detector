@@ -370,6 +370,8 @@ enum Os: string implements OsInterface
 
     case orsay = 'Orsay';
 
+    case javaMe = 'Java ME';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -546,6 +548,7 @@ enum Os: string implements OsInterface
             'plasmamobile', 'plasma-mobile', 'plasma mobile' => self::plasmaMobile,
             'whaleos', 'whale os', 'whale-os' => self::whaleOS,
             'orsay' => self::orsay,
+            'javame', 'java-me', 'java me' => self::javaMe,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -622,7 +625,7 @@ enum Os: string implements OsInterface
             self::haiku => Company::haiku,
             self::hpux, self::openvms, self::tru64unix, self::webos => Company::hp,
             self::infernoOs => Company::vitanuova,
-            self::javaos => Company::sun,
+            self::javaos, self::javaMe => Company::sun,
             self::kaios => Company::kaios,
             self::kubuntu, self::ubuntu, self::xubuntu => Company::canonical,
             self::linux, self::maemo, self::meego, self::tizen => Company::linuxFoundation,
@@ -889,6 +892,7 @@ enum Os: string implements OsInterface
             self::openSuse => 'opensuse',
             self::plasmaMobile => 'plasma-mobile',
             self::whaleOS => 'whale-os',
+            self::javaMe => 'java-me',
             default => $this->name,
         };
     }

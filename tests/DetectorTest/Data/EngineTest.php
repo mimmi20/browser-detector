@@ -280,6 +280,13 @@ final class EngineTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['EkiohFlow']],
                 'key' => 'ekiohflow',
             ],
+            [
+                'type' => 'Maple',
+                'name' => 'Maple',
+                'manufacturer' => Company::samsung,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Maple']],
+                'key' => 'maple',
+            ],
         ];
     }
 }

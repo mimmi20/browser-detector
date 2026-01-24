@@ -1455,6 +1455,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'orsay',
             ],
+            [
+                'type' => 'Java ME',
+                'name' => 'Java ME',
+                'marketingName' => 'Java ME',
+                'manufacturer' => Company::sun,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'java-me',
+            ],
         ];
     }
 }
