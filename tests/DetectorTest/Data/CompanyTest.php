@@ -5206,6 +5206,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'DoubleVerify',
                 'key' => 'double-verify',
             ],
+            [
+                'type' => 'Avira',
+                'name' => 'Avira Operations GmbH & Co. KG.',
+                'brandname' => 'Avira',
+                'key' => 'avira-operations',
+            ],
         ];
     }
 

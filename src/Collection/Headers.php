@@ -245,6 +245,7 @@ final readonly class Headers
         );
 
         $firstClientCodename = array_first($clientCodes);
+        $clientCodename      = $firstClientCodename;
 
         if (is_string($firstClientCodename)) {
             switch ($firstClientCodename) {
@@ -255,8 +256,8 @@ final readonly class Headers
                         is_string($lastClientCodename)
                         && $lastClientCodename !== $firstClientCodename
                     ) {
-                        $firstClientCodename = $lastClientCodename;
-                        $clientHeader        = array_last($headersWithClientCode);
+                        $clientCodename = $lastClientCodename;
+                        $clientHeader   = array_last($headersWithClientCode);
                     } else {
                         $clientHeader = array_first($headersWithClientCode);
                     }
@@ -278,8 +279,9 @@ final readonly class Headers
                             case 'firefox':
                             case 'headline bot':
                             case 'hubspot crawler':
-                                $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = array_last($headersWithClientCode);
+                            case 'headless-chrome':
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
 
                                 break;
                             default:
@@ -306,8 +308,9 @@ final readonly class Headers
                             case 'google-search':
                             case 'webpagetest':
                             case 'facebook lite':
-                                $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = array_last($headersWithClientCode);
+                            case 'lighthouse':
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
 
                                 break;
                             default:
@@ -326,8 +329,8 @@ final readonly class Headers
                             case 'facebookexternalhit':
                             case 'headline bot':
                             case 'hanalei-bot':
-                                $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = array_last($headersWithClientCode);
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
 
                                 break;
                             default:
@@ -343,8 +346,8 @@ final readonly class Headers
                     if (is_string($lastClientCodename)) {
                         switch ($lastClientCodename) {
                             case 'pageburst':
-                                $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = array_last($headersWithClientCode);
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
 
                                 break;
                             default:
@@ -374,9 +377,9 @@ final readonly class Headers
 
             assert($clientHeader instanceof HeaderInterface);
 
-            $clientVersions = $this->getClientVersions($firstClientCodename);
-            $clientVersion  = match ($firstClientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite' => $clientVersions['user-agent']
+            $clientVersions = $this->getClientVersions($clientCodename);
+            $clientVersion  = match ($clientCodename) {
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
                 'duckduck app', 'huawei-browser', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']
@@ -384,14 +387,14 @@ final readonly class Headers
                     ?? array_last($clientVersions),
                 'ecosia' => $clientVersions['sec-ch-ua-full-version']
                     ?? array_last($clientVersions),
-                'vivaldi' => $clientVersions['sec-ch-ua']
+                'vivaldi', 'opera gx' => $clientVersions['sec-ch-ua']
                     ?? array_last($clientVersions),
                 default => array_first($clientVersions),
             };
 
             try {
                 $clientData = $this->browserLoader->load(
-                    key: $firstClientCodename,
+                    key: $clientCodename,
                     useragent: $clientHeader->getValue(),
                 );
 
@@ -528,7 +531,7 @@ final readonly class Headers
             $platformVersion = match ($platform) {
                 \BrowserDetector\Data\Os::lineageos => $this->getVersionForLineageOs(),
                 \BrowserDetector\Data\Os::fireos => $this->getVersionForFireOs(),
-                \BrowserDetector\Data\Os::windows => $this->getVersionForWindows($platform),
+                \BrowserDetector\Data\Os::windows => $this->getVersionForWindows(),
                 default => $this->getVersionForGeneric($platform, $platformHeader),
             };
 
@@ -733,8 +736,10 @@ final readonly class Headers
     }
 
     /** @throws void */
-    private function getVersionForWindows(\UaData\OsInterface $platform): VersionInterface
+    private function getVersionForWindows(): VersionInterface
     {
+        $platform = \BrowserDetector\Data\Os::windows;
+
         $headersWithPlatformVersion = array_filter(
             $this->headers,
             static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),

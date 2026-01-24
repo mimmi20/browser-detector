@@ -3993,6 +3993,7 @@ final class Device implements DeviceInterface
             'pa2455' => 'vivo=vivo pa2455',
             'pa2511' => 'vivo=vivo pa2511',
             'pa2573' => 'vivo=vivo pa2573',
+            'v2055a' => 'vivo=vivo v2055a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4194,7 +4195,7 @@ final class Device implements DeviceInterface
             's35t' => 'doogee=doogee s35t',
             's60lite', 's60 lite' => 'doogee=doogee s60 lite',
             // conflicts with Blackview BL5000
-            //'bl5000' => 'doogee=doogee bl5000',
+            // 'bl5000' => 'doogee=doogee bl5000',
             'bl7000' => 'doogee=doogee bl7000',
             'doogee s35' => 'doogee=doogee s35',
             's70' => 'doogee=doogee s70',
