@@ -1447,6 +1447,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
                 'key' => 'whale-os',
             ],
+            [
+                'type' => 'Orsay',
+                'name' => 'Orsay',
+                'marketingName' => 'Orsay',
+                'manufacturer' => Company::samsung,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'orsay',
+            ],
         ];
     }
 }

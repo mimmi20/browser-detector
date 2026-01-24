@@ -5200,6 +5200,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'BuiltWith',
                 'key' => 'builtwith',
             ],
+            [
+                'type' => 'DoubleVerify',
+                'name' => 'DoubleVerify Inc.',
+                'brandname' => 'DoubleVerify',
+                'key' => 'double-verify',
+            ],
         ];
     }
 

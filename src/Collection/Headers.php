@@ -733,16 +733,20 @@ final readonly class Headers
     }
 
     /** @throws void */
-    private function getVersionForWindows(\UaData\OsInterface &$platform): VersionInterface
+    private function getVersionForWindows(\UaData\OsInterface $platform): VersionInterface
     {
         $headersWithPlatformVersion = array_filter(
             $this->headers,
             static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
         );
 
-        $platformHeaderVersion = $headersWithPlatformVersion['sec-ch-ua-platform-version'] ?? array_first(
-            $headersWithPlatformVersion,
-        );
+        if (array_key_exists('sec-ch-ua-platform-version', $headersWithPlatformVersion)) {
+            $platformHeaderVersion = $headersWithPlatformVersion['sec-ch-ua-platform-version'];
+        } else {
+            $platformHeaderVersion = array_last($headersWithPlatformVersion);
+
+            $platform = \BrowserDetector\Data\Os::unknown;
+        }
 
         if ($platformHeaderVersion instanceof HeaderInterface) {
             return $platformHeaderVersion->getPlatformVersion($platform->getKey());
