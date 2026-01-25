@@ -5259,6 +5259,7 @@ final class Device implements DeviceInterface
             'meizu 17 pro' => 'meizu=meizu 17 pro',
             'mz-meizu note 16 pro' => 'meizu=meizu note 16 pro',
             'mz-meizu 21 note' => 'meizu=meizu 21 note',
+            'meizu mx6', 'mz-mx6', 'mx6' => 'meizu=meizu mx6',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
             'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',

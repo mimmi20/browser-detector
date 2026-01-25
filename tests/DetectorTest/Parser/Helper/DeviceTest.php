@@ -6043,6 +6043,9 @@ final class DeviceTest extends TestCase
             ['meizu 17 Pro', 'meizu=meizu 17 pro'],
             ['MZ-MEIZU Note 16 Pro', 'meizu=meizu note 16 pro'],
             ['MZ-MEIZU 21 Note', 'meizu=meizu 21 note'],
+            ['MEIZU MX6', 'meizu=meizu mx6'],
+            ['MZ-MX6', 'meizu=meizu mx6'],
+            ['MX6', 'meizu=meizu mx6'],
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
             ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],
