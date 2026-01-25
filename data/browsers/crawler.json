@@ -1147,5 +1147,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "sitebulb": {
+    "name": "Sitebulb",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sitebulb"
+      ]
+    },
+    "engine": "unknown"
   }
 }
