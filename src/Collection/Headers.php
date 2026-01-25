@@ -309,6 +309,7 @@ final readonly class Headers
                             case 'webpagetest':
                             case 'facebook lite':
                             case 'lighthouse':
+                            case 'pageburst':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 

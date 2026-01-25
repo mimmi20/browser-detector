@@ -32,9 +32,9 @@ final readonly class Macos implements VersionFactoryInterface
 
     private const array DARWIN_MAP = [
         '/darwin\/25\.3/i' => '26.3.0',
-        '/darwin\/25\.2/i' => '16.2.0',
-        '/darwin\/25\.1/i' => '16.1.0',
-        '/darwin\/25/i' => '16.0.0',
+        '/darwin\/25\.2/i' => '26.2.0',
+        '/darwin\/25\.1/i' => '26.1.0',
+        '/darwin\/25/i' => '26.0.0',
         '/darwin\/24\.6/i' => '15.6.0',
         '/darwin\/24\.5/i' => '15.5.0',
         '/darwin\/24\.4/i' => '15.4.0',

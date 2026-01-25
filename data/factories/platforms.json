@@ -41,6 +41,7 @@
     "/safari\\/.*cfnetwork|(?<!like )mac os x|power macintosh/i": "mac",
     "/(?<!FBSN\\/|\\()darwin|cfnetwork/i": "darwin",
     "/SmartHub; ?SMART-TV|HbbTV\\/.+Maple|Samsung;SmartTV201[2-5]/i": "orsay",
+    "/Linux (?:[^;]+); Opera TV(?: Store)?\\/|^Opera\\/\\d+\\.\\d+ \\(Linux mips|OPR\\/.+TV Store\\/(\\d+[.\\d]+)/i": "opera-tv",
     "/linux|raspbian|suse|fedora|mint|red ?hat|slackware|zenwalk gnu|xentos|moblin|esx|netcast|kantonix|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|openpda|lindows|linspire/i": "linux",
     "/blackberry|bb10; ?(kbd|touch)|rim tablet/i": "rimos",
     "/^Mozilla\\/5\\.0 \\(.*(Mobile|Tablet);.*rv:(\\d+\\.\\d+).*\\) Gecko\\/(\\d+).* Firefox\\/(\\d+\\.\\d+).*/": "firefoxos",

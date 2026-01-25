@@ -1739,6 +1739,8 @@ enum Company: string implements CompanyInterface
 
     case avira = 'Avira';
 
+    case dell = 'Dell';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2606,6 +2608,7 @@ enum Company: string implements CompanyInterface
             'builtwith', 'builtwith pty ltd' => self::builtwith,
             'doubleverify', 'doubleverify inc.', 'double-verify' => self::doubleVerify,
             'avira', 'avira operations gmbh & co. kg.', 'avira-operations' => self::avira,
+            'dell' => self::dell,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
