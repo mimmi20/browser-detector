@@ -4642,5 +4642,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "spark-mail": {
+    "name": "SparkMail",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SparkMail"
+      ]
+    },
+    "engine": "unknown"
   }
 }

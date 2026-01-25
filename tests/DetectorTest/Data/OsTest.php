@@ -1463,6 +1463,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'java-me',
             ],
+            [
+                'type' => 'Opera TV',
+                'name' => 'Opera TV',
+                'marketingName' => 'Opera TV',
+                'manufacturer' => Company::opera,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
+                'key' => 'opera-tv',
+            ],
         ];
     }
 }

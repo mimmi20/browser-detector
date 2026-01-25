@@ -5212,6 +5212,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Avira',
                 'key' => 'avira-operations',
             ],
+            [
+                'type' => 'Dell',
+                'name' => 'Dell',
+                'brandname' => 'Dell',
+                'key' => 'dell',
+            ],
         ];
     }
 

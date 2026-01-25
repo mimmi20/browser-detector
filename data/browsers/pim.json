@@ -201,5 +201,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "blue-mail": {
+    "name": "BlueMail",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BlueMail"
+      ]
+    },
+    "engine": "unknown"
   }
 }

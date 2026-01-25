@@ -372,6 +372,8 @@ enum Os: string implements OsInterface
 
     case javaMe = 'Java ME';
 
+    case operaTv = 'Opera TV';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -549,6 +551,7 @@ enum Os: string implements OsInterface
             'whaleos', 'whale os', 'whale-os' => self::whaleOS,
             'orsay' => self::orsay,
             'javame', 'java-me', 'java me' => self::javaMe,
+            'operatv', 'opera-tv', 'opera tv' => self::operaTv,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -655,6 +658,7 @@ enum Os: string implements OsInterface
             self::openHarmony => Company::openatomFoundation,
             self::plasmaMobile => Company::kde,
             self::whaleOS => Company::whaleTV,
+            self::operaTv => Company::opera,
             default => Company::unknown,
         };
     }
@@ -753,6 +757,7 @@ enum Os: string implements OsInterface
             self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
             self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
             self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60V']],
+            self::operaTv => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -893,6 +898,7 @@ enum Os: string implements OsInterface
             self::plasmaMobile => 'plasma-mobile',
             self::whaleOS => 'whale-os',
             self::javaMe => 'java-me',
+            self::operaTv => 'opera-tv',
             default => $this->name,
         };
     }
