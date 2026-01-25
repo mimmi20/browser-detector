@@ -5199,6 +5199,7 @@ final class DeviceTest extends TestCase
             ['5039U', 'alcatel=alcatel 5039u'],
             ['6065A', 'alcatel=alcatel 6065a'],
             ['6027A', 'alcatel=alcatel 6027a'],
+            ['5059S', 'alcatel=alcatel 5059s'],
             // HTC
             ['HTC Desire 19+', 'htc=htc desire 19 plus'],
             ['HTC U11', 'htc=htc u11'],

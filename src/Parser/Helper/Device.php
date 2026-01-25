@@ -4461,6 +4461,7 @@ final class Device implements DeviceInterface
             '5039u' => 'alcatel=alcatel 5039u',
             '6065a' => 'alcatel=alcatel 6065a',
             '6027a' => 'alcatel=alcatel 6027a',
+            '5059s' => 'alcatel=alcatel 5059s',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',
