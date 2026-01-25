@@ -5218,6 +5218,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Dell',
                 'key' => 'dell',
             ],
+            [
+                'type' => 'Aspiegel',
+                'name' => 'Aspiegel PLC',
+                'brandname' => 'Aspiegel',
+                'key' => 'aspiegel',
+            ],
         ];
     }
 
