@@ -4654,5 +4654,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "framer-electron": {
+    "name": "FramerElectron",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FramerElectron"
+      ]
+    },
+    "engine": "unknown"
   }
 }
