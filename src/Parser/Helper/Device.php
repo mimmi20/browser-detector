@@ -2395,6 +2395,7 @@ final class Device implements DeviceInterface
             'sm-t727a', 'samsung sm-t727a' => 'samsung=samsung sm-t727a',
             'sm-t725', 'samsung sm-t725' => 'samsung=samsung sm-t725',
             'sm-t720', 'samsung sm-t720' => 'samsung=samsung sm-t720',
+            'sm-t720x', 'samsung sm-t720x' => 'samsung=samsung sm-t720x',
             'sm-t707v', 'samsung sm-t707v' => 'samsung=samsung sm-t707v',
             'sm-t707a', 'samsung sm-t707a' => 'samsung=samsung sm-t707a',
             'sm-t705m', 'samsung sm-t705m' => 'samsung=samsung sm-t705m',
