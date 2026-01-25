@@ -2144,6 +2144,7 @@ final class Device implements DeviceInterface
             'sm-t867', 'samsung sm-t867' => 'samsung=samsung sm-t867',
             'sm-t865', 'samsung sm-t865' => 'samsung=samsung sm-t865',
             'sm-t860', 'samsung sm-t860' => 'samsung=samsung sm-t860',
+            'sm-t860x', 'samsung sm-t860x' => 'samsung=samsung sm-t860x',
             'sm-t900', 'samsung sm-t900' => 'samsung=samsung sm-t900',
             'sm-t905', 'samsung sm-t905' => 'samsung=samsung sm-t905',
             'sm-t970', 'samsung sm-t970' => 'samsung=samsung sm-t970',

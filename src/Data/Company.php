@@ -1699,7 +1699,7 @@ enum Company: string implements CompanyInterface
 
     case rickCranisky = 'Rick Cranisky';
 
-    case shiftphones = 'shiftphones';
+    case shiftphones = 'Shift Phones';
 
     case shiira = 'Shiira';
 
@@ -2588,7 +2588,7 @@ enum Company: string implements CompanyInterface
             'elsevier', 'elsevier ltd' => self::elsevier,
             'wpofoundation', 'wpo foundation', 'wpo-foundation' => self::wpoFoundation,
             'rickcranisky', 'rick cranisky', 'rick-cranisky' => self::rickCranisky,
-            'shiftphones', 'shift-phones', 'shift gmbh' => self::shiftphones,
+            'shiftphones', 'shift-phones', 'shift gmbh', 'shift phones' => self::shiftphones,
             'shiira' => self::shiira,
             'newsme', 'news.me', 'news.me inc' => self::newsMe,
             'wireswiss', 'wire-swiss', 'wire swiss gmbh', 'wire swiss' => self::wireSwiss,
