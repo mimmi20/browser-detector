@@ -174,7 +174,7 @@ enum Engine: string implements EngineInterface
             self::blink => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet']],
             self::clecko, self::treco => ['factory' => VersionBuilderFactory::class, 'search' => ['rv:']],
             self::edge => ['factory' => VersionBuilderFactory::class, 'search' => ['Edge']],
-            self::webkit => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
+            self::webkit => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit \\/', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
             self::khtml => ['factory' => VersionBuilderFactory::class, 'search' => ['KHTML']],
             self::presto => ['factory' => VersionBuilderFactory::class, 'search' => ['Presto']],
             self::servo => ['factory' => VersionBuilderFactory::class, 'search' => ['Servo']],

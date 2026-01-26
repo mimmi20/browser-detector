@@ -437,18 +437,6 @@
     },
     "engine": "unknown"
   },
-  "apple pubsub": {
-    "name": "Apple PubSub",
-    "manufacturer": "apple",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Apple\\-PubSub"
-      ]
-    },
-    "engine": "webkit"
-  },
   "apt http transport": {
     "name": "Apt HTTP Transport",
     "manufacturer": "software-in-the-public-interest",
@@ -637,16 +625,6 @@
   "backlinkcrawler": {
     "name": "BacklinkCrawler",
     "manufacturer": "backlink-test",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
-  "baidu mobile search": {
-    "name": "Baidu Mobile Search",
-    "manufacturer": "baidu",
     "type": "bot",
     "version": {
       "class": null,
@@ -1451,19 +1429,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CydralSpider"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "daumoa": {
-    "name": "Daumoa",
-    "manufacturer": "daum-corporation",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Daumoa",
-        "Daum"
       ]
     },
     "engine": "unknown"
@@ -2694,16 +2659,6 @@
     },
     "engine": "unknown"
   },
-  "google publisher wordpress plugin": {
-    "name": "Google Publisher Wordpress Plugin",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "google sitemaps": {
     "name": "Google Sitemaps",
     "manufacturer": "google",
@@ -2757,16 +2712,6 @@
       "search": [
         "Google WAP Proxy"
       ]
-    },
-    "engine": "unknown"
-  },
-  "google web snippet": {
-    "name": "Google Web Snippet",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -3159,16 +3104,6 @@
       "search": [
         "ichiro"
       ]
-    },
-    "engine": "unknown"
-  },
-  "ichiro mobile bot": {
-    "name": "Ichiro Mobile Bot",
-    "manufacturer": "ichiro",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -4051,20 +3986,6 @@
     },
     "engine": "unknown"
   },
-  "mail.ru": {
-    "name": "Mail.Ru",
-    "manufacturer": "mail.ru",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Mail\\.RU_Bot\\/Fast",
-        "Mail\\.RU_Bot",
-        "Mail\\.RU"
-      ]
-    },
-    "engine": "gecko"
-  },
   "mailchimp.com": {
     "name": "MailChimp",
     "manufacturer": "the-rocket-science-group",
@@ -4905,16 +4826,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "outbrain": {
-    "name": "outbrain",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
   },
   "outclicksbot": {
     "name": "OutclicksBot",
@@ -6097,7 +6008,7 @@
   },
   "simplepie": {
     "name": "SimplePie",
-    "manufacturer": "ryan-parman",
+    "manufacturer": "unknown",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -6255,18 +6166,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SoftListBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "sogou spider": {
-    "name": "Sogou Spider",
-    "manufacturer": "sogou",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Sogou\\-Spider"
       ]
     },
     "engine": "unknown"
@@ -6646,18 +6545,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Superfish"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "surveybot": {
-    "name": "SurveyBot",
-    "manufacturer": "domain-tools",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SurveyBot"
       ]
     },
     "engine": "unknown"
@@ -7494,19 +7381,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VocusBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "voilabot": {
-    "name": "Voilabot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Voilabot",
-        "VoilaBot BETA"
       ]
     },
     "engine": "unknown"

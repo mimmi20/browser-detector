@@ -1743,6 +1743,40 @@ enum Company: string implements CompanyInterface
 
     case aspiegel = 'Aspiegel';
 
+    case topsyLabs = 'Topsy Labs';
+
+    case daum = 'Daum';
+
+    case ichiro = 'Ichiro';
+
+    case brandwatch = 'brandwatch';
+
+    case mailRu = 'Mail.Ru';
+
+    case tailrank = 'Tailrank';
+
+    case domainTools = 'DomainTools';
+
+    case nikon = 'Nikon';
+
+    case teslaMotors = 'Tesla Motors';
+
+    case ouya = 'Ouya';
+
+    case zetakeySolutions = 'Zetakey Solutions';
+
+    case mapleStudio = 'Maple Studio';
+
+    case msi = 'MSI';
+
+    case benq = 'BenQ';
+
+    case sagem = 'Sagem';
+
+    case utstarcom = 'UTStarcom';
+
+    case vkMobile = 'VK Mobile';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2612,6 +2646,23 @@ enum Company: string implements CompanyInterface
             'avira', 'avira operations gmbh & co. kg.', 'avira-operations' => self::avira,
             'dell' => self::dell,
             'aspiegel', 'aspiegel plc' => self::aspiegel,
+            'topsylabs', 'topsy-labs', 'topsy labs' => self::topsyLabs,
+            'daum', 'daum-corporation', 'daum communications corp' => self::daum,
+            'ichiro' => self::ichiro,
+            'brandwatch' => self::brandwatch,
+            'mailru', 'mail.ru', 'mail.ru group' => self::mailRu,
+            'tailrank', 'tailrank inc' => self::tailrank,
+            'domaintools', 'domain-tools' => self::domainTools,
+            'nikon', 'kabushiki-gaisha nikon' => self::nikon,
+            'teslamotors', 'tesla-motors' => self::teslaMotors,
+            'ouya', 'ouya, inc.' => self::ouya,
+            'zetakeysolutions', 'zetakey-solutions', 'zetakey solutions limited', 'zetakey solutions' => self::zetakeySolutions,
+            'maplestudio', 'maple-studio', 'maple studio' => self::mapleStudio,
+            'msi' => self::msi,
+            'benq' => self::benq,
+            'sagem' => self::sagem,
+            'utstarcom' => self::utstarcom,
+            'vkmobile', 'vk-mobile', 'vk mobile' => self::vkMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2919,6 +2970,13 @@ enum Company: string implements CompanyInterface
             self::doubleVerify => 'DoubleVerify Inc.',
             self::avira => 'Avira Operations GmbH & Co. KG.',
             self::aspiegel => 'Aspiegel PLC',
+            self::daum => 'Daum Communications Corp',
+            self::mailRu => 'Mail.Ru Group',
+            self::tailrank => 'Tailrank Inc',
+            self::nikon => 'Kabushiki-gaisha Nikon',
+            self::teslaMotors => 'Tesla Motors',
+            self::ouya => 'OUYA, Inc.',
+            self::zetakeySolutions => 'Zetakey Solutions Limited',
             self::unknown => null,
             default => $this->value,
         };
@@ -3191,6 +3249,14 @@ enum Company: string implements CompanyInterface
             self::lindenLabs => 'linden-labs',
             self::doubleVerify => 'double-verify',
             self::avira => 'avira-operations',
+            self::topsyLabs => 'topsy-labs',
+            self::daum => 'daum-corporation',
+            self::mailRu => 'mail.ru',
+            self::domainTools => 'domain-tools',
+            self::teslaMotors => 'tesla-motors',
+            self::zetakeySolutions => 'zetakey-solutions',
+            self::mapleStudio => 'maple-studio',
+            self::vkMobile => 'vk-mobile',
             default => $this->name,
         };
     }

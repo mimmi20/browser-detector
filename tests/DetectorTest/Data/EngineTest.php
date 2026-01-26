@@ -137,7 +137,7 @@ final class EngineTest extends TestCase
                 'type' => 'WebKit',
                 'name' => 'WebKit',
                 'manufacturer' => Company::apple,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit \\/', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
                 'key' => 'webkit',
             ],
             [

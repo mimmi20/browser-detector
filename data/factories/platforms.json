@@ -82,10 +82,11 @@
     "/beos/i": "beos",
     "/like mac os x|ip[ao]d|(?<![tx])ios[;\\/]|iuc ?\\(|puffin\\/[\\d\\.]+i[pt]|antenna\\/|antennapod|rss_?radio|podcruncher|audioboom|stitcher\\/ios|captivenetwork|ios\\.watch/i": "ios",
     "/(?<!devicename:)nokia/i": "symbian",
-    "/Java ME|J2ME|Profile\\/MIDP|CLDC|Java; U; MIDP|MMP\\/\\d\\.\\d/i": "java-me",
+    "/brew/i": "brew",
+    "/Java ME|J2ME|Profile\\/MIDP|CLDC|Java; MIDP|MMP\\/\\d\\.\\d/i": "java-me",
     "/\\bprofile\\b|gt\\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\\/1\\.0|netfront|profile\\/midp|j2me\\/|java|mtk[; 0-9]|nucleus|maui runtime|mre|threadx|micromaxx650|dolfin\\/|yuanda50|wap[- ]?browser/i": "java",
     "/macintosh|os=mac 10|mac_powerpc|ppc|68k|camino|pubsub|integrity|mac ?os[;\\/]/i": "mac",
-    "/brew|haiku|risc|os\\/2|warp|cp\\/m|nintendo (wii|3ds)|wiios|wyderos|liberate|inferno|syllable|fuchsia/i": "genericplatform"
+    "/haiku|risc|os\\/2|warp|cp\\/m|nintendo (wii|3ds)|wiios|wyderos|liberate|inferno|syllable|fuchsia/i": "genericplatform"
   },
   "generic": "unknown"
 }
