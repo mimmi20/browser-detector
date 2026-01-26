@@ -706,5 +706,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "adidxbot": {
+    "name": "adidxbot",
+    "manufacturer": "microsoft",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "adidxbot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -1781,6 +1781,42 @@ enum Company: string implements CompanyInterface
 
     case velocityMicro = 'Velocity Micro';
 
+    case netcraft = 'Netcraft';
+
+    case sistrix = 'Sistrix';
+
+    case xovi = 'Xovi';
+
+    case majestic12 = 'Majestic-12';
+
+    case zoomInformation = 'Zoom Information';
+
+    case torstenRueckert = 'Torsten Rueckert';
+
+    case commonCrawl = 'CommonCrawl';
+
+    case domainstats = 'Domainstats';
+
+    case nagios = 'Nagios';
+
+    case ahrefs = 'Ahrefs';
+
+    case seobility = 'seobility';
+
+    case babbar = 'BABBAR';
+
+    case censys = 'Censys';
+
+    case seomoz = 'SEOmoz';
+
+    case dataforseo = 'DataForSEO';
+
+    case itteco = 'Itteco';
+
+    case sharashka = 'Sharashka';
+
+    case owler = 'Owler';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2669,6 +2705,24 @@ enum Company: string implements CompanyInterface
             'vkmobile', 'vk-mobile', 'vk mobile' => self::vkMobile,
             'lepan', 'le-pan', 'le pan' => self::lePan,
             'velocitymicro', 'velocity-micro', 'velocity micro' => self::velocityMicro,
+            'netcraft', 'netcraft ltd.' => self::netcraft,
+            'sistrix', 'sistrix gmbh' => self::sistrix,
+            'xovi', 'xovi gmbh' => self::xovi,
+            'majestic12', 'majestic-12', 'majestic-12 ltd' => self::majestic12,
+            'zoominformation', 'zoom-information', 'zoom information inc.', 'zoom information' => self::zoomInformation,
+            'torstenrueckert', 'torsten-rueckert', 'torsten rueckert internetdienstleistungen', 'torsten rueckert' => self::torstenRueckert,
+            'commoncrawl', 'common-crawl-foundation', 'commoncrawl foundation' => self::commonCrawl,
+            'domainstats', 'domainstats international ab' => self::domainstats,
+            'nagios', 'nagios enterprises, llc.' => self::nagios,
+            'ahrefs', 'ahrefs pte ltd' => self::ahrefs,
+            'seobility', 'seobility gmbh' => self::seobility,
+            'babbar' => self::babbar,
+            'censys', 'censys, inc.' => self::censys,
+            'seomoz', 'seomoz, inc.' => self::seomoz,
+            'dataforseo', 'dataforseo ou' => self::dataforseo,
+            'itteco' => self::itteco,
+            'sharashka', 'sharashka, inc.' => self::sharashka,
+            'owler', 'owler, inc.' => self::owler,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2983,6 +3037,22 @@ enum Company: string implements CompanyInterface
             self::teslaMotors => 'Tesla Motors',
             self::ouya => 'OUYA, Inc.',
             self::zetakeySolutions => 'Zetakey Solutions Limited',
+            self::netcraft => 'Netcraft Ltd.',
+            self::sistrix => 'SISTRIX GmbH',
+            self::xovi => 'Xovi GmbH',
+            self::majestic12 => 'Majestic-12 Ltd',
+            self::zoomInformation => 'Zoom Information Inc.',
+            self::torstenRueckert => 'Torsten Rueckert Internetdienstleistungen',
+            self::commonCrawl => 'CommonCrawl Foundation',
+            self::domainstats => 'Domainstats International AB',
+            self::nagios => 'Nagios Enterprises, LLC.',
+            self::ahrefs => 'Ahrefs Pte Ltd',
+            self::seobility => 'seobility GmbH',
+            self::censys => 'Censys, Inc.',
+            self::seomoz => 'SEOmoz, Inc.',
+            self::dataforseo => 'DataForSEO OU',
+            self::sharashka => 'Sharashka, Inc.',
+            self::owler => 'Owler, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3265,6 +3335,11 @@ enum Company: string implements CompanyInterface
             self::vkMobile => 'vk-mobile',
             self::lePan => 'le-pan',
             self::velocityMicro => 'velocity-micro',
+            self::majestic12 => 'majestic-12',
+            self::zoomInformation => 'zoom-information',
+            self::torstenRueckert => 'torsten-rueckert',
+            self::commonCrawl => 'common-crawl-foundation',
+            self::nagios => 'nagios-enterprises',
             default => $this->name,
         };
     }
