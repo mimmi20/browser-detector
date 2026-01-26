@@ -1914,13 +1914,15 @@
     },
     "engine": "trident"
   },
-  "internet explorer with chromeframe": {
-    "name": "Internet Explorer with Chromeframe",
-    "manufacturer": "microsoft",
+  "chrome-frame": {
+    "name": "Chrome Frame",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
-      "factory": "\\BrowserDetector\\Version\\MicrosoftInternetExplorerFactory",
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "chromeframe"
+      ]
     },
     "engine": "webkit"
   },
@@ -3969,7 +3971,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Swiftfox"
+        "Swiftfox",
+        "Firefox"
       ]
     },
     "engine": "gecko"

@@ -5224,6 +5224,108 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Aspiegel',
                 'key' => 'aspiegel',
             ],
+            [
+                'type' => 'Topsy Labs',
+                'name' => 'Topsy Labs',
+                'brandname' => 'Topsy Labs',
+                'key' => 'topsy-labs',
+            ],
+            [
+                'type' => 'Daum',
+                'name' => 'Daum Communications Corp',
+                'brandname' => 'Daum',
+                'key' => 'daum-corporation',
+            ],
+            [
+                'type' => 'Ichiro',
+                'name' => 'Ichiro',
+                'brandname' => 'Ichiro',
+                'key' => 'ichiro',
+            ],
+            [
+                'type' => 'brandwatch',
+                'name' => 'brandwatch',
+                'brandname' => 'brandwatch',
+                'key' => 'brandwatch',
+            ],
+            [
+                'type' => 'Mail.Ru',
+                'name' => 'Mail.Ru Group',
+                'brandname' => 'Mail.Ru',
+                'key' => 'mail.ru',
+            ],
+            [
+                'type' => 'Tailrank',
+                'name' => 'Tailrank Inc',
+                'brandname' => 'Tailrank',
+                'key' => 'tailrank',
+            ],
+            [
+                'type' => 'DomainTools',
+                'name' => 'DomainTools',
+                'brandname' => 'DomainTools',
+                'key' => 'domain-tools',
+            ],
+            [
+                'type' => 'Nikon',
+                'name' => 'Kabushiki-gaisha Nikon',
+                'brandname' => 'Nikon',
+                'key' => 'nikon',
+            ],
+            [
+                'type' => 'Tesla Motors',
+                'name' => 'Tesla Motors',
+                'brandname' => 'Tesla Motors',
+                'key' => 'tesla-motors',
+            ],
+            [
+                'type' => 'Ouya',
+                'name' => 'OUYA, Inc.',
+                'brandname' => 'Ouya',
+                'key' => 'ouya',
+            ],
+            [
+                'type' => 'Zetakey Solutions',
+                'name' => 'Zetakey Solutions Limited',
+                'brandname' => 'Zetakey Solutions',
+                'key' => 'zetakey-solutions',
+            ],
+            [
+                'type' => 'Maple Studio',
+                'name' => 'Maple Studio',
+                'brandname' => 'Maple Studio',
+                'key' => 'maple-studio',
+            ],
+            [
+                'type' => 'MSI',
+                'name' => 'MSI',
+                'brandname' => 'MSI',
+                'key' => 'msi',
+            ],
+            [
+                'type' => 'BenQ',
+                'name' => 'BenQ',
+                'brandname' => 'BenQ',
+                'key' => 'benq',
+            ],
+            [
+                'type' => 'Sagem',
+                'name' => 'Sagem',
+                'brandname' => 'Sagem',
+                'key' => 'sagem',
+            ],
+            [
+                'type' => 'UTStarcom',
+                'name' => 'UTStarcom',
+                'brandname' => 'UTStarcom',
+                'key' => 'utstarcom',
+            ],
+            [
+                'type' => 'VK Mobile',
+                'name' => 'VK Mobile',
+                'brandname' => 'VK Mobile',
+                'key' => 'vk-mobile',
+            ],
         ];
     }
 

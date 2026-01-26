@@ -108,6 +108,18 @@
     },
     "engine": "unknown"
   },
+  "newsblur favicon fetcher": {
+    "name": "NewsBlur Favicon Fetcher",
+    "manufacturer": "newsblur",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NewsBlur Favicon Fetcher"
+      ]
+    },
+    "engine": "unknown"
+  },
   "newsflow": {
     "name": "Newsflow",
     "manufacturer": "unknown",
@@ -284,6 +296,42 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pulp"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fresh-rss": {
+    "name": "FreshRSS",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FreshRSS"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "apple pubsub": {
+    "name": "Apple PubSub",
+    "manufacturer": "apple",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Apple\\-PubSub"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "feed-demon": {
+    "name": "FeedDemon",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FeedDemon"
       ]
     },
     "engine": "unknown"

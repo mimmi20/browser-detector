@@ -26,7 +26,7 @@
     "/surfbrowser|surf\\//i": "surfbrowser",
     "/avirascout/i": "avira scout",
     "/samsungbrowser\\/crossapp/i": "samsung crossapp",
-    "/samsungbrowser|samsung.*version\\/[12].*chrome/i": "samsungbrowser",
+    "/samsungbrowser/i": "samsungbrowser",
     "/(?<!_)silk/i": "silk",
     "/coc_coc_browser/i": "coc_coc_browser",
     "/flipboard/i": "flipboard app",
@@ -277,6 +277,7 @@
     "/lg browser/i": "lg browser",
     "/mailspring/i": "mailspring",
     "/chatgpt\\//i": "chatgpt-app",
+    "/exabot/i": "exabot",
     "/konqueror/i": "konqueror",
     "/cornowser/i": "cornowser",
     "/pageburst/i": "pageburst",
@@ -307,6 +308,7 @@
     "/urlsumabot/i": "urlsumabot",
     "/crkey/i": "google-nest-hub",
     "/\\[pb\\//i": "proxy-browser",
+    "/google_partner_monitoring/i": "google-partner-monitoring",
     "/com\\.tcl\\.browser/i": "browse-here",
     "/rakutenwebsearch/i": "rakuten-web-search",
     "/hmscore/i": "huawei-mobile-services",
@@ -314,7 +316,7 @@
     "/dragon\\//i": "dragon",
     "/sitebulb/i": "sitebulb",
     "/(?<!t)chr[o0]me\\//i": "chrome",
-    "/chromeframe/i": "internet explorer with chromeframe"
+    "/chromeframe/i": "chrome-frame"
   },
   "generic": "chrome"
 }

@@ -91,5 +91,27 @@
       ]
     },
     "engine": null
+  },
+  "google-partner-monitoring": {
+    "name": "Google Partner Monitoring",
+    "manufacturer": "google",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "website-pulse-checker": {
+    "name": "WebSitePulse Checker",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "websitepulse checker"
+      ]
+    },
+    "engine": null
   }
 }
