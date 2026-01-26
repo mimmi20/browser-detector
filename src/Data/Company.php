@@ -1777,6 +1777,10 @@ enum Company: string implements CompanyInterface
 
     case vkMobile = 'VK Mobile';
 
+    case lePan = 'Le Pan';
+
+    case velocityMicro = 'Velocity Micro';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2654,7 +2658,7 @@ enum Company: string implements CompanyInterface
             'tailrank', 'tailrank inc' => self::tailrank,
             'domaintools', 'domain-tools' => self::domainTools,
             'nikon', 'kabushiki-gaisha nikon' => self::nikon,
-            'teslamotors', 'tesla-motors' => self::teslaMotors,
+            'teslamotors', 'tesla-motors', 'tesla motors' => self::teslaMotors,
             'ouya', 'ouya, inc.' => self::ouya,
             'zetakeysolutions', 'zetakey-solutions', 'zetakey solutions limited', 'zetakey solutions' => self::zetakeySolutions,
             'maplestudio', 'maple-studio', 'maple studio' => self::mapleStudio,
@@ -2663,6 +2667,8 @@ enum Company: string implements CompanyInterface
             'sagem' => self::sagem,
             'utstarcom' => self::utstarcom,
             'vkmobile', 'vk-mobile', 'vk mobile' => self::vkMobile,
+            'lepan', 'le-pan', 'le pan' => self::lePan,
+            'velocitymicro', 'velocity-micro', 'velocity micro' => self::velocityMicro,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3257,6 +3263,8 @@ enum Company: string implements CompanyInterface
             self::zetakeySolutions => 'zetakey-solutions',
             self::mapleStudio => 'maple-studio',
             self::vkMobile => 'vk-mobile',
+            self::lePan => 'le-pan',
+            self::velocityMicro => 'velocity-micro',
             default => $this->name,
         };
     }

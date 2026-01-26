@@ -41,6 +41,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
         'adr ',
         '\(os: ',
         'platform:server_android,osversion:',
+        'FBSV\/',
     ];
 
     /** @throws void */
@@ -162,6 +163,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
     private function mapSdkVersion(string $sdkVersion): string
     {
         return match ($sdkVersion) {
+            '36' => '16',
             '35' => '15',
             '34' => '14',
             '33' => '13',

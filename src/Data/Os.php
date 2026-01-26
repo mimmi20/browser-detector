@@ -374,6 +374,8 @@ enum Os: string implements OsInterface
 
     case operaTv = 'Opera TV';
 
+    case mocorOS = 'Mocor OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -552,6 +554,7 @@ enum Os: string implements OsInterface
             'orsay' => self::orsay,
             'javame', 'java-me', 'java me' => self::javaMe,
             'operatv', 'opera-tv', 'opera tv' => self::operaTv,
+            'mocoros', 'mocor-os', 'mocor os' => self::mocorOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -899,6 +902,7 @@ enum Os: string implements OsInterface
             self::whaleOS => 'whale-os',
             self::javaMe => 'java-me',
             self::operaTv => 'opera-tv',
+            self::mocorOS => 'mocor-os',
             default => $this->name,
         };
     }

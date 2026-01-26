@@ -5326,6 +5326,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VK Mobile',
                 'key' => 'vk-mobile',
             ],
+            [
+                'type' => 'Le Pan',
+                'name' => 'Le Pan',
+                'brandname' => 'Le Pan',
+                'key' => 'le-pan',
+            ],
+            [
+                'type' => 'Velocity Micro',
+                'name' => 'Velocity Micro',
+                'brandname' => 'Velocity Micro',
+                'key' => 'velocity-micro',
+            ],
         ];
     }
 
