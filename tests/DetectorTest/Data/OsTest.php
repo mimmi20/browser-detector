@@ -1471,6 +1471,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
                 'key' => 'opera-tv',
             ],
+            [
+                'type' => 'Mocor OS',
+                'name' => 'Mocor OS',
+                'marketingName' => 'Mocor OS',
+                'manufacturer' => Company::unknown,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'mocor-os',
+            ],
         ];
     }
 }
