@@ -396,7 +396,7 @@ final readonly class Headers
 
             try {
                 $clientData = $this->browserLoader->load(
-                    key: $clientCodename,
+                    key: (string) $clientCodename,
                     useragent: $clientHeader->getValue(),
                 );
 
