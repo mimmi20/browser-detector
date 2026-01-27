@@ -2231,16 +2231,6 @@
     },
     "engine": "unknown"
   },
-  "friendica": {
-    "name": "Friendica",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\FriendicaFactory",
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "fyberspider": {
     "name": "FyberSpider",
     "manufacturer": "unknown",
@@ -2711,18 +2701,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google-Read-Aloud"
-      ]
-    },
-    "engine": null
-  },
-  "google-apps-script": {
-    "name": "Google Apps Script",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google-Apps-Script"
       ]
     },
     "engine": null
@@ -4137,18 +4115,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MetaHeadersBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "metainspector": {
-    "name": "MetaInspector",
-    "manufacturer": "jaime-iniesta",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "MetaInspector"
       ]
     },
     "engine": "unknown"
@@ -9633,18 +9599,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "qutrigobot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "qwantbot": {
-    "name": "Qwantbot",
-    "manufacturer": "qwant",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Qwantbot"
       ]
     },
     "engine": "unknown"
