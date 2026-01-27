@@ -264,7 +264,7 @@
     "/google-ads-overview/i": "google ads overview",
     "/googlebot-mobile/i": "googlebot-mobile",
     "/googlebot-image/i": "google image search",
-    "/googlebot|compatible; googleother/i": "googlebot",
+    "/googlebot|(?<!via translate\\.)goog(?!le)|googleother/i": "googlebot",
     "/elements browser/i": "elements browser",
     "/origin(?![-_])/i": "origin",
     "/framerelectron/i": "framer-electron",

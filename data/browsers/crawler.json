@@ -1493,5 +1493,53 @@
       ]
     },
     "engine": "unknown"
+  },
+  "claudebot": {
+    "name": "ClaudeBot",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ClaudeBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "swisscows-favicons": {
+    "name": "Swisscows Favicons",
+    "manufacturer": "swisscows",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Swisscows Favicons"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "think-chaos": {
+    "name": "ThinkChaos",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ThinkChaos"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rsite-auditor": {
+    "name": "RSiteAuditor",
+    "manufacturer": "agency-analytics",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RSiteAuditor"
+      ]
+    },
+    "engine": "unknown"
   }
 }

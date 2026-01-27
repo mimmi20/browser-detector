@@ -1881,6 +1881,8 @@ enum Company: string implements CompanyInterface
 
     case meinsUndVogel = 'Meins und Vogel';
 
+    case agencyAnalytics = 'AgencyAnalytics';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2819,6 +2821,7 @@ enum Company: string implements CompanyInterface
             'mistralai', 'mistral-ai', 'mistral ai' => self::mistralAI,
             'incsub', 'incsub, llc.' => self::incsub,
             'meinsundvogel', 'meins und vogel gmbh', 'meins-und-vogel', 'meins und vogel' => self::meinsUndVogel,
+            'agencyanalytics', 'agencyanalytics inc', 'agency-analytics' => self::agencyAnalytics,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3170,6 +3173,7 @@ enum Company: string implements CompanyInterface
             self::parallelWebSystems => 'Parallel Web Systems Inc.',
             self::incsub => 'Incsub, LLC.',
             self::meinsUndVogel => 'Meins und Vogel GmbH',
+            self::agencyAnalytics => 'AgencyAnalytics Inc',
             self::unknown => null,
             default => $this->value,
         };
@@ -3478,6 +3482,7 @@ enum Company: string implements CompanyInterface
             self::parallelWebSystems => 'parallel-web-systems',
             self::mistralAI => 'mistral-ai',
             self::meinsUndVogel => 'meins-und-vogel',
+            self::agencyAnalytics => 'agency-analytics',
             default => $this->name,
         };
     }

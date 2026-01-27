@@ -5638,6 +5638,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Meins und Vogel',
                 'key' => 'meins-und-vogel',
             ],
+            [
+                'type' => 'AgencyAnalytics',
+                'name' => 'AgencyAnalytics Inc',
+                'brandname' => 'AgencyAnalytics',
+                'key' => 'agency-analytics',
+            ],
         ];
     }
 
