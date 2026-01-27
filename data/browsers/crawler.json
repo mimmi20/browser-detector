@@ -471,7 +471,7 @@
   },
   "scrapy": {
     "name": "Scrapy",
-    "manufacturer": "scrapy.org",
+    "manufacturer": "unknown",
     "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1167,6 +1167,210 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "study-bot": {
+    "name": "StudyBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StudyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "import-domains": {
+    "name": "ImportDomains",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ImportDomains"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "form-finder": {
+    "name": "FormFinder",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FormFinder"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "copyvio-detector": {
+    "name": "CopyvioDetector",
+    "manufacturer": "ben-kurtovic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CopyvioDetector"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "weblio-bot": {
+    "name": "Webliobot",
+    "manufacturer": "gras-group",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Webliobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "abeval-bot": {
+    "name": "ABEvalBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ABEvalBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seo-cherry-bot": {
+    "name": "SeoCherryBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SeoCherryBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "secweb-sectxt": {
+    "name": "Secweb-Sectxt",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Secweb-Sectxt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "halo-bot": {
+    "name": "HaloBot",
+    "manufacturer": "archi301",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HaloBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "find-files-net": {
+    "name": "FindFiles.net",
+    "manufacturer": "find-files",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FindFiles.net"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "httpx": {
+    "name": "httpx",
+    "manufacturer": "project-discovery",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "httpx"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "metainspector": {
+    "name": "MetaInspector",
+    "manufacturer": "jaime-iniesta",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MetaInspector"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sqalix-multi-worker": {
+    "name": "Sqalix MultiWorker",
+    "manufacturer": "sqalix",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sqalix-multi-worker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sqalix-geral-worker": {
+    "name": "Sqalix GeralWorker",
+    "manufacturer": "sqalix",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sqalix-geral-worker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "privacy-policy-bot": {
+    "name": "PrivacyPolicyBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PrivacyPolicyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "qwantbot": {
+    "name": "Qwantbot",
+    "manufacturer": "qwant",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Qwantbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "terracotta": {
+    "name": "TerraCotta",
+    "manufacturer": "ceramic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TerraCotta"
+      ]
     },
     "engine": "unknown"
   }

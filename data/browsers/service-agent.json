@@ -143,5 +143,53 @@
       ]
     },
     "engine": null
+  },
+  "vali-mail": {
+    "name": "Valimail",
+    "manufacturer": "valimail",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Valimail"
+      ]
+    },
+    "engine": null
+  },
+  "cybaa-agent": {
+    "name": "CybaaAgent",
+    "manufacturer": "cybaa",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CybaaAgent"
+      ]
+    },
+    "engine": null
+  },
+  "forward-qr": {
+    "name": "ForwardQR",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ForwardQR"
+      ]
+    },
+    "engine": null
+  },
+  "google-apps-script": {
+    "name": "Google Apps Script",
+    "manufacturer": "google",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Apps-Script"
+      ]
+    },
+    "engine": null
   }
 }

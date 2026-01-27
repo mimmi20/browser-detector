@@ -718,5 +718,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "kagi-bot": {
+    "name": "Kagibot",
+    "manufacturer": "kagi",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kagibot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heexy-bot": {
+    "name": "Heexybot",
+    "manufacturer": "heexy",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heexybot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

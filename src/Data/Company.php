@@ -1817,6 +1817,60 @@ enum Company: string implements CompanyInterface
 
     case owler = 'Owler';
 
+    case benKurtovic = 'Ben Kurtovic';
+
+    case semanticVisions = 'Semantic Visions';
+
+    case notionLabs = 'Notion Labs';
+
+    case anthropic = 'Anthropic';
+
+    case kagi = 'Kagi';
+
+    case valimail = 'Valimail';
+
+    case grasGroup = 'GRAS Group';
+
+    case cybaa = 'Cybaa';
+
+    case heexy = 'Heexy';
+
+    case archi301 = 'ARCHI301';
+
+    case emClient = 'eM Client';
+
+    case findFiles = 'FindFiles';
+
+    case projectDiscovery = 'ProjectDiscovery';
+
+    case jaimeIniesta = 'Jaime Iniesta';
+
+    case alexandreTourette = 'Alexandre Tourette';
+
+    case torbenHansen = 'Torben Hansen';
+
+    case sqalix = 'Sqalix';
+
+    case vertexWP = 'VertexWP';
+
+    case postman = 'Postman';
+
+    case recordedFuture = 'Recorded Future';
+
+    case bitsightTechnologies = 'BitSight Technologies';
+
+    case ceramic = 'Ceramic';
+
+    case screamingFrog = 'Screaming Frog';
+
+    case startMe = 'start.me';
+
+    case domainsBot = 'DomainsBot';
+
+    case rwthAachen = 'RWTH Aachen';
+
+    case manfredSchauer = 'Dr. Manfred Schauer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2713,7 +2767,7 @@ enum Company: string implements CompanyInterface
             'torstenrueckert', 'torsten-rueckert', 'torsten rueckert internetdienstleistungen', 'torsten rueckert' => self::torstenRueckert,
             'commoncrawl', 'common-crawl-foundation', 'commoncrawl foundation' => self::commonCrawl,
             'domainstats', 'domainstats international ab' => self::domainstats,
-            'nagios', 'nagios enterprises, llc.' => self::nagios,
+            'nagios', 'nagios enterprises, llc.', 'nagios-enterprises' => self::nagios,
             'ahrefs', 'ahrefs pte ltd' => self::ahrefs,
             'seobility', 'seobility gmbh' => self::seobility,
             'babbar' => self::babbar,
@@ -2723,6 +2777,33 @@ enum Company: string implements CompanyInterface
             'itteco' => self::itteco,
             'sharashka', 'sharashka, inc.' => self::sharashka,
             'owler', 'owler, inc.' => self::owler,
+            'benkurtovic', 'ben-kurtovic', 'ben kurtovic' => self::benKurtovic,
+            'semanticvisions', 'semantic-visions', 'semantic visions, s.r.o.', 'semantic visions' => self::semanticVisions,
+            'notionlabs', 'notion-labs', 'notion labs, inc.', 'notion labs' => self::notionLabs,
+            'anthropic', 'anthropic pbc' => self::anthropic,
+            'kagi', 'kagi inc.' => self::kagi,
+            'valimail', 'valimail inc.' => self::valimail,
+            'grasgroup', 'gras group, inc.', 'gras-group', 'gras group' => self::grasGroup,
+            'cybaa', 'cybaa ltd' => self::cybaa,
+            'heexy' => self::heexy,
+            'archi301' => self::archi301,
+            'emclient', 'em client s.r.o.', 'em-client', 'em client' => self::emClient,
+            'findfiles', 'findfiles.net ug', 'findfiles.net', 'find-files' => self::findFiles,
+            'projectdiscovery', 'projectdiscovery, inc.', 'project-discovery' => self::projectDiscovery,
+            'jaimeiniesta', 'jaime-iniesta', 'jaime iniesta' => self::jaimeIniesta,
+            'alexandretourette', 'alexandre-tourette', 'alexandre tourette' => self::alexandreTourette,
+            'torbenhansen', 'torben-hansen', 'torben hansen' => self::torbenHansen,
+            'sqalix' => self::sqalix,
+            'vertexwp', 'vertex-wp' => self::vertexWP,
+            'postman', 'postman, inc.' => self::postman,
+            'recordedfuture', 'recorded future, inc.', 'recorded-future', 'recorded future' => self::recordedFuture,
+            'bitsighttechnologies', 'bitsight technologies, inc.', 'bitsight-technologies', 'bitsight technologies' => self::bitsightTechnologies,
+            'ceramic', 'ceramic, inc.' => self::ceramic,
+            'screamingfrog', 'screaming-frog', 'screaming frog ltd', 'screaming frog' => self::screamingFrog,
+            'startme', 'start.me', 'start.me bv' => self::startMe,
+            'domainsbot', 'domains-bot', 'domainsbot srl' => self::domainsBot,
+            'rwthaachen', 'rwth-aachen', 'rwth aachen university', 'rwth aachen' => self::rwthAachen,
+            'manfredschauer', 'manfred-schauer', 'dr. manfred schauer' => self::manfredSchauer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3053,6 +3134,24 @@ enum Company: string implements CompanyInterface
             self::dataforseo => 'DataForSEO OU',
             self::sharashka => 'Sharashka, Inc.',
             self::owler => 'Owler, Inc.',
+            self::semanticVisions => 'Semantic Visions, s.r.o.',
+            self::notionLabs => 'Notion Labs, Inc.',
+            self::anthropic => 'Anthropic PBC',
+            self::kagi => 'Kagi Inc.',
+            self::valimail => 'Valimail Inc.',
+            self::grasGroup => 'GRAS Group, Inc.',
+            self::cybaa => 'Cybaa Ltd',
+            self::emClient => 'eM Client s.r.o.',
+            self::findFiles => 'FindFiles.net UG',
+            self::projectDiscovery => 'ProjectDiscovery, Inc.',
+            self::postman => 'Postman, Inc.',
+            self::recordedFuture => 'Recorded Future, Inc.',
+            self::bitsightTechnologies => 'BitSight Technologies, Inc.',
+            self::ceramic => 'Ceramic, Inc.',
+            self::screamingFrog => 'Screaming Frog Ltd',
+            self::startMe => 'start.me BV',
+            self::domainsBot => 'DomainsBot SRL',
+            self::rwthAachen => 'RWTH Aachen University',
             self::unknown => null,
             default => $this->value,
         };
@@ -3340,6 +3439,24 @@ enum Company: string implements CompanyInterface
             self::torstenRueckert => 'torsten-rueckert',
             self::commonCrawl => 'common-crawl-foundation',
             self::nagios => 'nagios-enterprises',
+            self::benKurtovic => 'ben-kurtovic',
+            self::semanticVisions => 'semantic-visions',
+            self::notionLabs => 'notion-labs',
+            self::grasGroup => 'gras-group',
+            self::emClient => 'em-client',
+            self::findFiles => 'find-files',
+            self::projectDiscovery => 'project-discovery',
+            self::jaimeIniesta => 'jaime-iniesta',
+            self::alexandreTourette => 'alexandre-tourette',
+            self::torbenHansen => 'torben-hansen',
+            self::vertexWP => 'vertex-wp',
+            self::bitsightTechnologies => 'bitsight-technologies',
+            self::screamingFrog => 'screaming-frog',
+            self::recordedFuture => 'recorded-future',
+            self::startMe => 'start.me',
+            self::domainsBot => 'domains-bot',
+            self::rwthAachen => 'rwth-aachen',
+            self::manfredSchauer => 'manfred-schauer',
             default => $this->name,
         };
     }
