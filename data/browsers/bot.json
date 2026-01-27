@@ -4805,18 +4805,6 @@
     },
     "engine": "unknown"
   },
-  "owler bot": {
-    "name": "Owler Bot",
-    "manufacturer": "owler",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Owler"
-      ]
-    },
-    "engine": "unknown"
-  },
   "pad-bot": {
     "name": "PAD-bot",
     "manufacturer": "inbot-technology",
@@ -9409,7 +9397,7 @@
   },
   "claudebot": {
     "name": "ClaudeBot",
-    "manufacturer": "unknown",
+    "manufacturer": "anthropic",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",

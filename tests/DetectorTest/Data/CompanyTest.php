@@ -5608,6 +5608,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Dr. Manfred Schauer',
                 'key' => 'manfred-schauer',
             ],
+            [
+                'type' => 'Parallel Web Systems',
+                'name' => 'Parallel Web Systems Inc.',
+                'brandname' => 'Parallel Web Systems',
+                'key' => 'parallel-web-systems',
+            ],
+            [
+                'type' => 'Ibou',
+                'name' => 'Ibou',
+                'brandname' => 'Ibou',
+                'key' => 'ibou',
+            ],
+            [
+                'type' => 'Mistral AI',
+                'name' => 'Mistral AI',
+                'brandname' => 'Mistral AI',
+                'key' => 'mistral-ai',
+            ],
+            [
+                'type' => 'Incsub',
+                'name' => 'Incsub, LLC.',
+                'brandname' => 'Incsub',
+                'key' => 'incsub',
+            ],
+            [
+                'type' => 'Meins und Vogel',
+                'name' => 'Meins und Vogel GmbH',
+                'brandname' => 'Meins und Vogel',
+                'key' => 'meins-und-vogel',
+            ],
         ];
     }
 
