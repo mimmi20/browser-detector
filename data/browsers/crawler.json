@@ -1373,5 +1373,125 @@
       ]
     },
     "engine": "unknown"
+  },
+  "shap-bot": {
+    "name": "ShapBot",
+    "manufacturer": "parallel-web-systems",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShapBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ibou-bot": {
+    "name": "IbouBot",
+    "manufacturer": "ibou",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IbouBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-notebook-lm": {
+    "name": "Google NotebookLM",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-NotebookLM"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mistral-ai-user": {
+    "name": "MistralAI User",
+    "manufacturer": "mistral-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MistralAI-User"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "perplexity-user": {
+    "name": "Perplexity User",
+    "manufacturer": "perplexity",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Perplexity-User"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wpmu-dev": {
+    "name": "WPMU DEV",
+    "manufacturer": "incsub",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WPMU DEV"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "meta-external-agent": {
+    "name": "Meta ExternalAgent",
+    "manufacturer": "meta",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "meta-externalagent"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pandalytics": {
+    "name": "Pandalytics",
+    "manufacturer": "domains-bot",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pandalytics"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "owler bot": {
+    "name": "Owler Bot",
+    "manufacturer": "owler",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Owler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "website-info-bot": {
+    "name": "Website Info Bot",
+    "manufacturer": "meins-und-vogel",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Website-info.net-Robot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

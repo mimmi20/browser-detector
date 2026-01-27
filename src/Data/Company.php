@@ -1871,6 +1871,16 @@ enum Company: string implements CompanyInterface
 
     case manfredSchauer = 'Dr. Manfred Schauer';
 
+    case parallelWebSystems = 'Parallel Web Systems';
+
+    case ibou = 'Ibou';
+
+    case mistralAI = 'Mistral AI';
+
+    case incsub = 'Incsub';
+
+    case meinsUndVogel = 'Meins und Vogel';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2804,6 +2814,11 @@ enum Company: string implements CompanyInterface
             'domainsbot', 'domains-bot', 'domainsbot srl' => self::domainsBot,
             'rwthaachen', 'rwth-aachen', 'rwth aachen university', 'rwth aachen' => self::rwthAachen,
             'manfredschauer', 'manfred-schauer', 'dr. manfred schauer' => self::manfredSchauer,
+            'parallelwebsystems', 'parallel web systems inc.', 'parallel-web-systems', 'parallel web systems' => self::parallelWebSystems,
+            'ibou' => self::ibou,
+            'mistralai', 'mistral-ai', 'mistral ai' => self::mistralAI,
+            'incsub', 'incsub, llc.' => self::incsub,
+            'meinsundvogel', 'meins und vogel gmbh', 'meins-und-vogel', 'meins und vogel' => self::meinsUndVogel,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3152,6 +3167,9 @@ enum Company: string implements CompanyInterface
             self::startMe => 'start.me BV',
             self::domainsBot => 'DomainsBot SRL',
             self::rwthAachen => 'RWTH Aachen University',
+            self::parallelWebSystems => 'Parallel Web Systems Inc.',
+            self::incsub => 'Incsub, LLC.',
+            self::meinsUndVogel => 'Meins und Vogel GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -3457,6 +3475,9 @@ enum Company: string implements CompanyInterface
             self::domainsBot => 'domains-bot',
             self::rwthAachen => 'rwth-aachen',
             self::manfredSchauer => 'manfred-schauer',
+            self::parallelWebSystems => 'parallel-web-systems',
+            self::mistralAI => 'mistral-ai',
+            self::meinsUndVogel => 'meins-und-vogel',
             default => $this->name,
         };
     }
