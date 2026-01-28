@@ -72,7 +72,7 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
 
         if ($os === Os::windows) {
             $version = match ((float) $value) {
-                0.1 => '7',
+                0.1, 6.1 => '7',
                 0.2 => '8',
                 0.3 => '8.1',
                 10.0 => '10',

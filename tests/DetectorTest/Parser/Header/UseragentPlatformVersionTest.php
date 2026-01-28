@@ -13,20 +13,30 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Company;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionInterface;
+use JsonException;
+use Override;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
+use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformParserInterface;
 use UaResult\Os\OsInterface;
+use UnexpectedValueException;
+
+use function json_encode;
+
+use const JSON_THROW_ON_ERROR;
 
 #[CoversClass(UseragentPlatformVersion::class)]
 final class UseragentPlatformVersionTest extends TestCase
@@ -153,6 +163,90 @@ final class UseragentPlatformVersionTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
+    public function testWithNormalizer3(): void
+    {
+        $value = 'abc';
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn(null);
+
+        $header = new UseragentPlatformVersion(
+            platformParser: $platformParser,
+            platformLoader: $platformLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertInstanceOf(
+            ForcedNullVersion::class,
+            $header->getPlatformVersion($value, 'wrong value'),
+        );
+    }
+
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithNormalizer4(): void
+    {
+        $value = 'abc';
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn(null);
+
+        $header = new UseragentPlatformVersion(
+            platformParser: $platformParser,
+            platformLoader: $platformLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertInstanceOf(
+            ForcedNullVersion::class,
+            $header->getPlatformVersionWithOs($value, Os::android),
+        );
+    }
+
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     #[DataProvider('providerUa1')]
     public function testWithUasWithoutPlatformVersion(string $value): void
     {
@@ -209,7 +303,7 @@ final class UseragentPlatformVersionTest extends TestCase
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa2')]
-    public function testWithUasWithPlatformVersion(string $value, string $expectedVersion): void
+    public function testWithUasWithPlatformVersion(string $value, string | null $expectedVersion): void
     {
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -329,5 +423,303 @@ final class UseragentPlatformVersionTest extends TestCase
         return [
             ['Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max', '4.3.0'],
         ];
+    }
+
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    #[DataProvider('providerUa4')]
+    public function testWithUasWithoutPlatformVersion2(string $value, \UaData\OsInterface $os): void
+    {
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($value)
+            ->willReturn($os);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::never())
+            ->method('loadFromOs');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $header = new UseragentPlatformVersion(
+            platformParser: $platformParser,
+            platformLoader: $platformLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertInstanceOf(ForcedNullVersion::class, $header->getPlatformVersion($value));
+    }
+
+    /**
+     * @return array<int, array<int, Os::unknown|string>>
+     *
+     * @throws void
+     */
+    public static function providerUa4(): array
+    {
+        return [
+            ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; pageburst) Chrome/141.0.7390.122 Safari/537.36', Os::unknown],
+        ];
+    }
+
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUasWithoutPlatformVersion3(): void
+    {
+        $value = 'Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max';
+        $os    = Os::android;
+
+        $loadedOs = new \UaResult\Os\Os(
+            name: 'Android',
+            marketingName: 'Android',
+            manufacturer: Company::unknown,
+            version: new NullVersion(),
+        );
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($value)
+            ->willReturn($os);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::once())
+            ->method('loadFromOs')
+            ->with($os, $value)
+            ->willReturn($loadedOs);
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $header = new UseragentPlatformVersion(
+            platformParser: $platformParser,
+            platformLoader: $platformLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertInstanceOf(NullVersion::class, $header->getPlatformVersion($value));
+    }
+
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUasWithoutPlatformVersion4(): void
+    {
+        $value = 'Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max';
+        $os    = Os::android;
+
+        $exception = new NotFoundException('not found');
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($value)
+            ->willReturn($os);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::once())
+            ->method('loadFromOs')
+            ->with($os, $value)
+            ->willThrowException($exception);
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $header = new UseragentPlatformVersion(
+            platformParser: $platformParser,
+            platformLoader: $platformLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertInstanceOf(NullVersion::class, $header->getPlatformVersion($value));
+    }
+
+    /**
+     * @throws \PHPUnit\Framework\Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUasWithoutPlatformVersion5(): void
+    {
+        $value = 'Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max';
+        $os    = Os::android;
+
+        $loadedOs = new \UaResult\Os\Os(
+            name: 'Android',
+            marketingName: 'Android',
+            manufacturer: Company::unknown,
+            version: new readonly class ([]) implements VersionInterface {
+                /**
+                 * @param array<int, bool|string|null> $searches
+                 *
+                 * @throws void
+                 */
+                public function __construct(private array $searches)
+                {
+                    // nothing to do
+                }
+
+                /**
+                 * returns the detected version
+                 *
+                 * @throws UnexpectedValueException
+                 * @throws JsonException
+                 */
+                #[Override]
+                public function getVersion(int $mode = VersionInterface::COMPLETE): string | null
+                {
+                    throw new UnexpectedValueException(
+                        $mode . '::' . json_encode($this->searches, JSON_THROW_ON_ERROR),
+                    );
+                }
+
+                /**
+                 * @return array<string, string|null>
+                 *
+                 * @throws void
+                 */
+                #[Override]
+                public function toArray(): array
+                {
+                    return [];
+                }
+
+                /** @throws void */
+                #[Override]
+                public function getMajor(): string | null
+                {
+                    return null;
+                }
+
+                /** @throws void */
+                #[Override]
+                public function getMinor(): string | null
+                {
+                    return null;
+                }
+
+                /** @throws void */
+                #[Override]
+                public function getMicro(): string | null
+                {
+                    return null;
+                }
+
+                /** @throws void */
+                #[Override]
+                public function getPatch(): string | null
+                {
+                    return null;
+                }
+
+                /** @throws void */
+                #[Override]
+                public function getMicropatch(): string | null
+                {
+                    return null;
+                }
+
+                /** @throws void */
+                #[Override]
+                public function getBuild(): string | null
+                {
+                    return null;
+                }
+
+                /** @throws void */
+                #[Override]
+                public function getStability(): string | null
+                {
+                    return null;
+                }
+
+                /** @throws void */
+                #[Override]
+                public function isAlpha(): bool
+                {
+                    return false;
+                }
+
+                /** @throws void */
+                #[Override]
+                public function isBeta(): bool
+                {
+                    return false;
+                }
+            },
+        );
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($value)
+            ->willReturn($os);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+        $platformLoader
+            ->expects(self::once())
+            ->method('loadFromOs')
+            ->with($os, $value)
+            ->willReturn($loadedOs);
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $header = new UseragentPlatformVersion(
+            platformParser: $platformParser,
+            platformLoader: $platformLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertInstanceOf(NullVersion::class, $header->getPlatformVersion($value));
     }
 }
