@@ -281,6 +281,7 @@ final readonly class Headers
                             case 'hubspot crawler':
                             case 'headless-chrome':
                             case 'samsungbrowser':
+                            case 'edge':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 
