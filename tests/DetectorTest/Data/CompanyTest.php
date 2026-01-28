@@ -5662,6 +5662,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SpazioDati',
                 'key' => 'spazio-dati',
             ],
+            [
+                'type' => 'Dataprovider',
+                'name' => 'Dataprovider B.V.',
+                'brandname' => 'Dataprovider',
+                'key' => 'dataprovider',
+            ],
+            [
+                'type' => 'Hessisches Statistisches Landesamt',
+                'name' => 'Hessisches Statistisches Landesamt',
+                'brandname' => 'Hessisches Statistisches Landesamt',
+                'key' => 'hessisches-statistisches-landesamt',
+            ],
         ];
     }
 

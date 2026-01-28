@@ -496,5 +496,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "ruby": {
+    "name": "ruby",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ruby"
+      ]
+    },
+    "engine": "unknown"
   }
 }

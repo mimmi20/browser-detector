@@ -1551,5 +1551,29 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "think-bot": {
+    "name": "Thinkbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Thinkbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "statistik-hessen": {
+    "name": "Statistik Hessen",
+    "manufacturer": "hessisches-statistisches-landesamt",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StatistikHessen"
+      ]
+    },
+    "engine": "unknown"
   }
 }
