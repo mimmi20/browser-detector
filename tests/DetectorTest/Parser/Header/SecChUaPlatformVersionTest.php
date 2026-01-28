@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Engine;
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Parser\Header\SecChUaPlatformVersion;
 use BrowserDetector\Version\ForcedNullVersion;
@@ -119,13 +121,15 @@ final class SecChUaPlatformVersionTest extends TestCase
         if ($version === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getPlatformVersion(),
+                $header->getPlatformVersionWithOs(Os::unknown),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $version,
-                $header->getPlatformVersion($code)->getVersion(),
+                $header->getPlatformVersionWithOs(
+                    Os::fromName((string) $code),
+                )->getVersion(),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         }
@@ -146,7 +150,7 @@ final class SecChUaPlatformVersionTest extends TestCase
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersion(),
+            $header->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }
@@ -185,7 +189,7 @@ final class SecChUaPlatformVersionTest extends TestCase
         );
 
         try {
-            $header->getPlatformVersion('Android');
+            $header->getPlatformVersionWithOs(Os::android);
 
             self::fail('Exception expected');
         } catch (VersionContainsDerivateException $e) {
@@ -206,7 +210,7 @@ final class SecChUaPlatformVersionTest extends TestCase
         );
 
         try {
-            $header->getPlatformVersion('Android');
+            $header->getPlatformVersionWithOs(Os::android);
 
             self::fail('Exception expected');
         } catch (VersionContainsDerivateException $e) {

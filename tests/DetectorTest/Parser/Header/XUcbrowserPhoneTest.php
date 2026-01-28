@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Engine;
+use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\XUcbrowserPhoneClientCode;
 use BrowserDetector\Parser\Header\XUcbrowserPhoneDeviceCode;
 use BrowserDetector\Version\NullVersion;
@@ -130,7 +132,7 @@ final class XUcbrowserPhoneTest extends TestCase
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersion(),
+            $header->getPlatformVersionWithOs(Os::unknown),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
@@ -149,7 +151,7 @@ final class XUcbrowserPhoneTest extends TestCase
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersion(),
+            $header->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }

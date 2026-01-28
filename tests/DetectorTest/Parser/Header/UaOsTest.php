@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\UaOsPlatformCode;
 use BrowserDetector\Parser\Header\UaOsPlatformVersion;
@@ -126,13 +127,13 @@ final class UaOsTest extends TestCase
         if ($platformVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getPlatformVersion(),
+                $header->getPlatformVersionWithOs(Os::unknown),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $platformVersion,
-                $header->getPlatformVersion()->getVersion(),
+                $header->getPlatformVersionWithOs(Os::unknown)->getVersion(),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         }
@@ -153,7 +154,7 @@ final class UaOsTest extends TestCase
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersion(),
+            $header->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }
