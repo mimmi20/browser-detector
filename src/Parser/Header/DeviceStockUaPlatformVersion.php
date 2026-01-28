@@ -15,7 +15,6 @@ namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
-use Deprecated;
 use Override;
 use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
@@ -35,18 +34,6 @@ final class DeviceStockUaPlatformVersion implements PlatformVersionInterface
             '/(bada|android|blackberry\d{4}|brew(?: mp)?|iphone os|windows phone(?: os)?)[\/ ][\d._]+/i',
             $value,
         );
-    }
-
-    /**
-     * @throws void
-     *
-     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
-    #[Override]
-    #[Deprecated(message: 'use getPlatformVersionWithOs() instead', since: '10.0.27')]
-    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
-    {
-        return $this->getVersion($value);
     }
 
     /**

@@ -17,11 +17,9 @@ use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
-use Deprecated;
 use Override;
 use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
-use UnexpectedValueException;
 
 use function assert;
 use function is_int;
@@ -40,20 +38,6 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
         $value = mb_trim($value, '"\\\'');
 
         return $value !== '';
-    }
-
-    /** @throws VersionContainsDerivateException */
-    #[Override]
-    #[Deprecated(message: 'use getPlatformVersionWithOs() instead', since: '10.0.27')]
-    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
-    {
-        try {
-            $os = Os::fromName((string) $code);
-        } catch (UnexpectedValueException) {
-            $os = Os::unknown;
-        }
-
-        return $this->getVersion($value, $os);
     }
 
     /** @throws VersionContainsDerivateException */
