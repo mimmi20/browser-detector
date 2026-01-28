@@ -1893,6 +1893,8 @@ enum Company: string implements CompanyInterface
 
     case hessischesStatistischesLandesamt = 'Hessisches Statistisches Landesamt';
 
+    case comscore = 'Comscore';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2837,6 +2839,7 @@ enum Company: string implements CompanyInterface
             'spaziodati', 'spazio-dati', 'spaziodati s.r.l.' => self::spazioDati,
             'dataprovider', 'dataprovider b.v.' => self::dataprovider,
             'hessischesstatistischeslandesamt', 'hessisches statistisches landesamt', 'hessisches-statistisches-landesamt' => self::hessischesStatistischesLandesamt,
+            'comscore', 'comscore, inc.' => self::comscore,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3193,6 +3196,7 @@ enum Company: string implements CompanyInterface
             self::barzmannInternetSolutions => 'Barzmann Internet Solutions GmbH',
             self::spazioDati => 'SpazioDati S.r.l.',
             self::dataprovider => 'Dataprovider B.V.',
+            self::comscore => 'Comscore, Inc.',
             self::unknown => null,
             default => $this->value,
         };
