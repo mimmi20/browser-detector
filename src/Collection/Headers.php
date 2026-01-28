@@ -648,7 +648,7 @@ final readonly class Headers
         $engineVersionHeader = array_first($headersWithEngineVersion);
 
         if ($engineVersionHeader instanceof HeaderInterface) {
-            return $engineVersionHeader->getEngineVersion($engine->getKey());
+            return $engineVersionHeader->getEngineVersionWithEngine($engine);
         }
 
         return new NullVersion();
@@ -685,7 +685,7 @@ final readonly class Headers
         $platformHeaderVersion = array_first($headersWithPlatformVersion);
 
         if ($platformHeaderVersion instanceof HeaderInterface) {
-            return $platformHeaderVersion->getPlatformVersion($platform->getKey());
+            return $platformHeaderVersion->getPlatformVersionWithOs($platform);
         }
 
         return new NullVersion();
@@ -772,7 +772,7 @@ final readonly class Headers
         }
 
         if ($platformHeaderVersion instanceof HeaderInterface) {
-            return $platformHeaderVersion->getPlatformVersion($platform->getKey());
+            return $platformHeaderVersion->getPlatformVersionWithOs($platform);
         }
 
         return new NullVersion();

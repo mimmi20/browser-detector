@@ -77,7 +77,10 @@ final class UseragentPlatformVersionTest extends TestCase
         );
 
         self::assertTrue($header->hasPlatformVersion($value));
-        self::assertInstanceOf(ForcedNullVersion::class, $header->getPlatformVersion($value));
+        self::assertInstanceOf(
+            ForcedNullVersion::class,
+            $header->getPlatformVersionWithOs($value, Os::unknown),
+        );
     }
 
     /**
@@ -116,7 +119,10 @@ final class UseragentPlatformVersionTest extends TestCase
         );
 
         self::assertTrue($header->hasPlatformVersion($value));
-        self::assertInstanceOf(ForcedNullVersion::class, $header->getPlatformVersion($value));
+        self::assertInstanceOf(
+            ForcedNullVersion::class,
+            $header->getPlatformVersionWithOs($value, Os::unknown),
+        );
     }
 
     /**
@@ -155,48 +161,9 @@ final class UseragentPlatformVersionTest extends TestCase
         );
 
         self::assertTrue($header->hasPlatformVersion($value));
-        self::assertInstanceOf(ForcedNullVersion::class, $header->getPlatformVersion($value));
-    }
-
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
-    public function testWithNormalizer3(): void
-    {
-        $value = 'abc';
-
-        $platformParser = $this->createMock(PlatformParserInterface::class);
-        $platformParser
-            ->expects(self::never())
-            ->method('parse');
-
-        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
-        $platformLoader
-            ->expects(self::never())
-            ->method('load');
-        $platformLoader
-            ->expects(self::never())
-            ->method('loadFromOs');
-
-        $normalizer = $this->createMock(NormalizerInterface::class);
-        $normalizer
-            ->expects(self::once())
-            ->method('normalize')
-            ->with($value)
-            ->willReturn(null);
-
-        $header = new UseragentPlatformVersion(
-            platformParser: $platformParser,
-            platformLoader: $platformLoader,
-            normalizer: $normalizer,
-        );
-
-        self::assertTrue($header->hasPlatformVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getPlatformVersion($value, 'wrong value'),
+            $header->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 
@@ -277,7 +244,10 @@ final class UseragentPlatformVersionTest extends TestCase
         );
 
         self::assertTrue($header->hasPlatformVersion($value));
-        self::assertInstanceOf(ForcedNullVersion::class, $header->getPlatformVersion($value));
+        self::assertInstanceOf(
+            ForcedNullVersion::class,
+            $header->getPlatformVersionWithOs($value, Os::unknown),
+        );
     }
 
     /**
@@ -333,7 +303,7 @@ final class UseragentPlatformVersionTest extends TestCase
 
         self::assertTrue($header->hasPlatformVersion($value));
 
-        $version = $header->getPlatformVersion($value);
+        $version = $header->getPlatformVersionWithOs($value, Os::unknown);
         self::assertInstanceOf(Version::class, $version);
         self::assertSame($expectedVersion, $version->getVersion());
     }
@@ -408,7 +378,7 @@ final class UseragentPlatformVersionTest extends TestCase
 
         self::assertTrue($header->hasPlatformVersion($value));
 
-        $version = $header->getPlatformVersion($value);
+        $version = $header->getPlatformVersionWithOs($value, Os::unknown);
         self::assertInstanceOf(Version::class, $version);
         self::assertSame($expectedVersion, $version->getVersion());
     }
@@ -462,7 +432,10 @@ final class UseragentPlatformVersionTest extends TestCase
         );
 
         self::assertTrue($header->hasPlatformVersion($value));
-        self::assertInstanceOf(ForcedNullVersion::class, $header->getPlatformVersion($value));
+        self::assertInstanceOf(
+            ForcedNullVersion::class,
+            $header->getPlatformVersionWithOs($value, Os::unknown),
+        );
     }
 
     /**
@@ -525,7 +498,10 @@ final class UseragentPlatformVersionTest extends TestCase
         );
 
         self::assertTrue($header->hasPlatformVersion($value));
-        self::assertInstanceOf(NullVersion::class, $header->getPlatformVersion($value));
+        self::assertInstanceOf(
+            NullVersion::class,
+            $header->getPlatformVersionWithOs($value, Os::unknown),
+        );
     }
 
     /**
@@ -571,7 +547,10 @@ final class UseragentPlatformVersionTest extends TestCase
         );
 
         self::assertTrue($header->hasPlatformVersion($value));
-        self::assertInstanceOf(NullVersion::class, $header->getPlatformVersion($value));
+        self::assertInstanceOf(
+            NullVersion::class,
+            $header->getPlatformVersionWithOs($value, Os::unknown),
+        );
     }
 
     /**
@@ -720,6 +699,9 @@ final class UseragentPlatformVersionTest extends TestCase
         );
 
         self::assertTrue($header->hasPlatformVersion($value));
-        self::assertInstanceOf(NullVersion::class, $header->getPlatformVersion($value));
+        self::assertInstanceOf(
+            NullVersion::class,
+            $header->getPlatformVersionWithOs($value, Os::unknown),
+        );
     }
 }

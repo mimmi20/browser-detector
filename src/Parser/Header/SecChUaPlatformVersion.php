@@ -17,6 +17,7 @@ use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
+use Deprecated;
 use Override;
 use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
@@ -43,6 +44,7 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
 
     /** @throws VersionContainsDerivateException */
     #[Override]
+    #[Deprecated(message: 'use getPlatformVersionWithOs() instead', since: '10.0.27')]
     public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
     {
         try {

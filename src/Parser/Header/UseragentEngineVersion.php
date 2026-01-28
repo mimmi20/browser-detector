@@ -17,6 +17,7 @@ use BrowserDetector\Data\Engine;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
+use Deprecated;
 use Override;
 use UaData\EngineInterface;
 use UaLoader\EngineLoaderInterface;
@@ -58,6 +59,7 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
 
     /** @throws void */
     #[Override]
+    #[Deprecated(message: 'use getEngineVersionWithEngine() instead', since: '10.0.27')]
     public function getEngineVersion(string $value, string | null $code = null): VersionInterface
     {
         try {

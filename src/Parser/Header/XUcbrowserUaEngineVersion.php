@@ -15,6 +15,7 @@ namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
+use Deprecated;
 use Override;
 use UaData\EngineInterface;
 use UaParser\EngineVersionInterface;
@@ -38,6 +39,7 @@ final class XUcbrowserUaEngineVersion implements EngineVersionInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
+    #[Deprecated(message: 'use getEngineVersionWithEngine() instead', since: '10.0.27')]
     public function getEngineVersion(string $value, string | null $code = null): VersionInterface
     {
         return $this->getVersion($value);

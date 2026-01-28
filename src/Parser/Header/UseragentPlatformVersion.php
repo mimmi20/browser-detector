@@ -17,6 +17,7 @@ use BrowserDetector\Data\Os;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
+use Deprecated;
 use Override;
 use UaData\OsInterface;
 use UaLoader\Exception\NotFoundException;
@@ -59,6 +60,7 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
 
     /** @throws void */
     #[Override]
+    #[Deprecated(message: 'use getPlatformVersionWithOs() instead', since: '10.0.27')]
     public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
     {
         try {
