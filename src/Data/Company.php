@@ -1889,6 +1889,10 @@ enum Company: string implements CompanyInterface
 
     case spazioDati = 'SpazioDati';
 
+    case dataprovider = 'Dataprovider';
+
+    case hessischesStatistischesLandesamt = 'Hessisches Statistisches Landesamt';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2831,6 +2835,8 @@ enum Company: string implements CompanyInterface
             'dynalist', 'dynalist inc.' => self::dynalist,
             'barzmanninternetsolutions', 'barzmann-internet-solutions', 'barzmann internet solutions gmbh', 'barzmann internet solutions' => self::barzmannInternetSolutions,
             'spaziodati', 'spazio-dati', 'spaziodati s.r.l.' => self::spazioDati,
+            'dataprovider', 'dataprovider b.v.' => self::dataprovider,
+            'hessischesstatistischeslandesamt', 'hessisches statistisches landesamt', 'hessisches-statistisches-landesamt' => self::hessischesStatistischesLandesamt,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3186,6 +3192,7 @@ enum Company: string implements CompanyInterface
             self::dynalist => 'Dynalist Inc.',
             self::barzmannInternetSolutions => 'Barzmann Internet Solutions GmbH',
             self::spazioDati => 'SpazioDati S.r.l.',
+            self::dataprovider => 'Dataprovider B.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3497,6 +3504,7 @@ enum Company: string implements CompanyInterface
             self::agencyAnalytics => 'agency-analytics',
             self::barzmannInternetSolutions => 'barzmann-internet-solutions',
             self::spazioDati => 'spazio-dati',
+            self::hessischesStatistischesLandesamt => 'hessisches-statistisches-landesamt',
             default => $this->name,
         };
     }
