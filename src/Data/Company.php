@@ -1883,6 +1883,12 @@ enum Company: string implements CompanyInterface
 
     case agencyAnalytics = 'AgencyAnalytics';
 
+    case dynalist = 'Dynalist';
+
+    case barzmannInternetSolutions = 'Barzmann Internet Solutions';
+
+    case spazioDati = 'SpazioDati';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2822,6 +2828,9 @@ enum Company: string implements CompanyInterface
             'incsub', 'incsub, llc.' => self::incsub,
             'meinsundvogel', 'meins und vogel gmbh', 'meins-und-vogel', 'meins und vogel' => self::meinsUndVogel,
             'agencyanalytics', 'agencyanalytics inc', 'agency-analytics' => self::agencyAnalytics,
+            'dynalist', 'dynalist inc.' => self::dynalist,
+            'barzmanninternetsolutions', 'barzmann-internet-solutions', 'barzmann internet solutions gmbh', 'barzmann internet solutions' => self::barzmannInternetSolutions,
+            'spaziodati', 'spazio-dati', 'spaziodati s.r.l.' => self::spazioDati,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3174,6 +3183,9 @@ enum Company: string implements CompanyInterface
             self::incsub => 'Incsub, LLC.',
             self::meinsUndVogel => 'Meins und Vogel GmbH',
             self::agencyAnalytics => 'AgencyAnalytics Inc',
+            self::dynalist => 'Dynalist Inc.',
+            self::barzmannInternetSolutions => 'Barzmann Internet Solutions GmbH',
+            self::spazioDati => 'SpazioDati S.r.l.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3483,6 +3495,8 @@ enum Company: string implements CompanyInterface
             self::mistralAI => 'mistral-ai',
             self::meinsUndVogel => 'meins-und-vogel',
             self::agencyAnalytics => 'agency-analytics',
+            self::barzmannInternetSolutions => 'barzmann-internet-solutions',
+            self::spazioDati => 'spazio-dati',
             default => $this->name,
         };
     }

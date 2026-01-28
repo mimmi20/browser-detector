@@ -5644,6 +5644,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'AgencyAnalytics',
                 'key' => 'agency-analytics',
             ],
+            [
+                'type' => 'Dynalist',
+                'name' => 'Dynalist Inc.',
+                'brandname' => 'Dynalist',
+                'key' => 'dynalist',
+            ],
+            [
+                'type' => 'Barzmann Internet Solutions',
+                'name' => 'Barzmann Internet Solutions GmbH',
+                'brandname' => 'Barzmann Internet Solutions',
+                'key' => 'barzmann-internet-solutions',
+            ],
+            [
+                'type' => 'SpazioDati',
+                'name' => 'SpazioDati S.r.l.',
+                'brandname' => 'SpazioDati',
+                'key' => 'spazio-dati',
+            ],
         ];
     }
 
