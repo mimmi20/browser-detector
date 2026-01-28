@@ -15,7 +15,6 @@ namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
-use Deprecated;
 use Override;
 use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
@@ -31,18 +30,6 @@ final class UaOsPlatformVersion implements PlatformVersionInterface
     public function hasPlatformVersion(string $value): bool
     {
         return (bool) preg_match('/Windows CE \(Pocket PC\) - Version \d+\.\d+/', $value);
-    }
-
-    /**
-     * @throws void
-     *
-     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
-    #[Override]
-    #[Deprecated(message: 'use getPlatformVersionWithOs() instead', since: '10.0.27')]
-    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
-    {
-        return $this->getVersion($value);
     }
 
     /**
