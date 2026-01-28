@@ -211,6 +211,10 @@ final class AndroidOsTest extends TestCase
                 '[FBAN/FB4A;FBAV/543.0.0.56.73;FBBV/846714968;FBDM/{density=3.0,width=1080,height=2400};FBLC/nl_NL;FBRV/0;FBCR/KPN;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G998B;FBSV/15;FBOP/1;FBCA/arm64-v8a:;]',
                 '15.0.0',
             ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 36)',
+                '16.0.0',
+            ],
         ];
     }
 

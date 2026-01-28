@@ -516,7 +516,7 @@ final readonly class Headers
                         && !array_key_exists('sec-ch-ua-platform-version', $headersWithPlatformVersion)
                         && in_array(
                             $lastPlatformCode,
-                            [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt],
+                            [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt62, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt],
                             true,
                         )
                     ) {
