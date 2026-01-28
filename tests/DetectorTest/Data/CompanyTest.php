@@ -5674,6 +5674,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Hessisches Statistisches Landesamt',
                 'key' => 'hessisches-statistisches-landesamt',
             ],
+            [
+                'type' => 'Comscore',
+                'name' => 'Comscore, Inc.',
+                'brandname' => 'Comscore',
+                'key' => 'comscore',
+            ],
         ];
     }
 

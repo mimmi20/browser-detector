@@ -282,6 +282,7 @@ final readonly class Headers
                             case 'headless-chrome':
                             case 'samsungbrowser':
                             case 'edge':
+                            case 'google-search':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 

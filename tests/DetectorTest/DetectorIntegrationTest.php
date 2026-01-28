@@ -6797,6 +6797,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua' => '"Not)A;Brand";v="8", "Chromium";v="138"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_1_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/398.0.839721620 Mobile/15E148 Safari/604.1',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"Not)A;Brand";v="8", "Chromium";v="138"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_1_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/398.0.839721620 Mobile/15E148 Safari/604.1',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'iPhone',
+                        'marketingName' => 'iPhone',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 480,
+                            'height' => 320,
+                            'touch' => true,
+                            'size' => 3.5,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'iOS',
+                        'marketingName' => 'iOS',
+                        'version' => '26.1.0',
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Google Search App',
+                        'modus' => null,
+                        'version' => '398.0.839721620',
+                        'manufacturer' => 'Google',
+                        'type' => 'mobile-application',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => '605.1.15',
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
         ];
     }
 }
