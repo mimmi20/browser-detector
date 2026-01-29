@@ -175,7 +175,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Huawei Browser',
                         'modus' => null,
-                        'version' => '92.0.0',
+                        'version' => '12.1.3.303',
                         'manufacturer' => 'Huawei',
                         'type' => 'browser',
                         'isbot' => false,

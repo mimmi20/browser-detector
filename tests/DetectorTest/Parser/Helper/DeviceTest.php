@@ -6828,6 +6828,9 @@ final class DeviceTest extends TestCase
             ['G52L', 'blu=blu g52l'],
             ['B135DL', 'blu=blu b135dl'],
             ['M10L Pro', 'blu=blu m10l pro'],
+            ['C5 2019', 'blu=blu c5 2019'],
+            ['C110V', 'blu=blu c110v'],
+            ['C110L', 'blu=blu c110l'],
             // apple
             ['iPhone18,3', 'apple=apple iphone 18,3'],
             ['iPh18,3', 'apple=apple iphone 18,3'],

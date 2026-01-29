@@ -5964,6 +5964,9 @@ final class Device implements DeviceInterface
             'g52l' => 'blu=blu g52l',
             'b135dl' => 'blu=blu b135dl',
             'm10l pro' => 'blu=blu m10l pro',
+            'c5 2019' => 'blu=blu c5 2019',
+            'c110v' => 'blu=blu c110v',
+            'c110l' => 'blu=blu c110l',
             // apple
             'iphone18,3', 'iph18,3' => 'apple=apple iphone 18,3',
             'iphone18,2', 'iph18,2' => 'apple=apple iphone 18,2',

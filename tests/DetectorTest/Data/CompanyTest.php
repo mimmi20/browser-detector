@@ -5734,6 +5734,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Flow Team',
                 'key' => 'flow-team',
             ],
+            [
+                'type' => 'CompanySpotter',
+                'name' => 'CompanySpotter BV',
+                'brandname' => 'CompanySpotter',
+                'key' => 'company-spotter',
+            ],
+            [
+                'type' => 'Smartisan',
+                'name' => 'Smartisan Technology Co., Ltd',
+                'brandname' => 'Smartisan',
+                'key' => 'smartisan',
+            ],
         ];
     }
 

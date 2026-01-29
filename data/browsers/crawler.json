@@ -1693,5 +1693,17 @@
       ]
     },
     "engine": null
+  },
+  "example3": {
+    "name": "Example3",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Example3"
+      ]
+    },
+    "engine": null
   }
 }
