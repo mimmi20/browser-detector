@@ -53,7 +53,6 @@ use function array_key_exists;
 use function array_last;
 use function array_map;
 use function assert;
-use function count;
 use function explode;
 use function in_array;
 use function is_string;
@@ -251,6 +250,7 @@ final readonly class Headers
             switch ($firstClientCodename) {
                 case 'android webview':
                     $lastClientCodename = array_last($clientCodes);
+                    $clientHeader       = array_first($headersWithClientCode);
 
                     if (
                         is_string($lastClientCodename)
@@ -258,8 +258,6 @@ final readonly class Headers
                     ) {
                         $clientCodename = $lastClientCodename;
                         $clientHeader   = array_last($headersWithClientCode);
-                    } else {
-                        $clientHeader = array_first($headersWithClientCode);
                     }
 
                     break;
@@ -386,7 +384,7 @@ final readonly class Headers
             $clientVersion  = match ($clientCodename) {
                 'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
-                'duckduck app', 'huawei-browser', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
+                'duckduck app', 'huawei-browser', 'ucbrowser', 'edge', 'headless-chrome', 'chrome' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']
                     ?? $clientVersions['sec-ch-ua-full-version']
                     ?? array_last($clientVersions),
@@ -480,6 +478,7 @@ final readonly class Headers
                     if (
                         $lastPlatformCode instanceof \UaData\OsInterface
                         && $lastPlatformCode !== $firstPlatformCode
+                        && $lastPlatformCode !== \BrowserDetector\Data\Os::unknown
                     ) {
                         $platform       = $lastPlatformCode;
                         $platformHeader = array_last($headersWithPlatformCode);
@@ -513,7 +512,6 @@ final readonly class Headers
 
                     if (
                         $lastPlatformCode instanceof \UaData\OsInterface
-                        && count($headersWithPlatformVersion) > 1
                         && !array_key_exists('sec-ch-ua-platform-version', $headersWithPlatformVersion)
                         && in_array(
                             $lastPlatformCode,
@@ -553,6 +551,20 @@ final readonly class Headers
                 \BrowserDetector\Data\Os::windows => $this->getVersionForWindows(),
                 default => $this->getVersionForGeneric($platform, $platformHeader),
             };
+
+            if ($platform === \BrowserDetector\Data\Os::windows) {
+                assert($platformVersion instanceof VersionInterface);
+
+                $platform = match ($platformVersion->getVersion(VersionInterface::IGNORE_MICRO)) {
+                    '11.0' => \BrowserDetector\Data\Os::windows11,
+                    '10.0' => \BrowserDetector\Data\Os::windows10,
+                    '8.1' => \BrowserDetector\Data\Os::windowsnt63,
+                    '8.0' => \BrowserDetector\Data\Os::windowsnt62,
+                    '7.0' => \BrowserDetector\Data\Os::windowsnt61,
+                    '6.0' => \BrowserDetector\Data\Os::windowsnt60,
+                    default => \BrowserDetector\Data\Os::windows,
+                };
+            }
 
             if ($platform !== \BrowserDetector\Data\Os::unknown) {
                 try {

@@ -5680,6 +5680,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Comscore',
                 'key' => 'comscore',
             ],
+            [
+                'type' => 'LumeWeaver',
+                'name' => 'LumeWeaver Labs',
+                'brandname' => 'LumeWeaver',
+                'key' => 'lume-weaver',
+            ],
         ];
     }
 

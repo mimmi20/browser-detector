@@ -315,7 +315,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 11',
                         'version' => '11.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -371,7 +371,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 10',
                         'version' => '10.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -427,7 +427,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 7',
                         'version' => '7.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -483,7 +483,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 8',
                         'version' => '8.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -539,7 +539,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 8.1',
                         'version' => '8.1.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -1354,7 +1354,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 11',
                         'version' => '11.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => 64,
@@ -2536,7 +2536,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 11',
                         'version' => '11.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => 64,
@@ -4344,10 +4344,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -4480,10 +4480,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -4536,10 +4536,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -4592,10 +4592,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -4648,10 +4648,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -4816,10 +4816,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -4872,10 +4872,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -5629,10 +5629,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -5976,7 +5976,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 7',
                         'version' => '7.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -6088,7 +6088,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 10',
                         'version' => '10.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -6435,10 +6435,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Linux Foundation',
                         'bits' => null,
                     ],
                     'client' => [
@@ -6492,7 +6492,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 10',
                         'version' => '10.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -6554,7 +6554,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 7',
                         'version' => '7.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -6610,7 +6610,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 7',
                         'version' => '7.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -6664,7 +6664,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows Vista',
                         'version' => '6.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -6720,7 +6720,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'os' => [
                         'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'marketingName' => 'Windows 8',
                         'version' => '8.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -6775,8 +6775,8 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => 'Windows',
-                        'marketingName' => 'Windows',
+                        'name' => 'Windows NT',
+                        'marketingName' => 'Windows NT',
                         'version' => null,
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
@@ -6850,6 +6850,120 @@ final class DetectorIntegrationTest extends TestCase
                         'name' => 'WebKit',
                         'version' => '605.1.15',
                         'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua' => '"Chromium";v="124", "HeadlessChrome";v="124", "Not-A.Brand";v="99"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Intelligent Index/1.0.0 Chrome/126.0.0.0',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"Chromium";v="124", "HeadlessChrome";v="124", "Not-A.Brand";v="99"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Intelligent Index/1.0.0 Chrome/126.0.0.0',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
+                        'version' => null,
+                        'manufacturer' => 'Linux Foundation',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Headless Chrome',
+                        'modus' => null,
+                        'version' => '124.0.0',
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '126.0.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Android"',
+                    'x-requested-with' => 'com.android.chrome',
+                    'sec-ch-ua' => '"Android WebView";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 13; Cyber 13 Pro Build/TP1A.220624.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Android"',
+                        'x-requested-with' => 'com.android.chrome',
+                        'sec-ch-ua' => '"Android WebView";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 13; Cyber 13 Pro Build/TP1A.220624.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Cyber 13 Pro',
+                        'marketingName' => 'Cyber 13 Pro',
+                        'manufacturer' => 'Hotwav',
+                        'brand' => 'Hotwav',
+                        'dualOrientation' => true,
+                        'simCount' => 2,
+                        'display' => [
+                            'width' => 2408,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.6,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Chrome',
+                        'modus' => null,
+                        'version' => '143.0.0',
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '143.0.7499.146',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],

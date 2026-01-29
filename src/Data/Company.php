@@ -1895,6 +1895,8 @@ enum Company: string implements CompanyInterface
 
     case comscore = 'Comscore';
 
+    case lumeWeaver = 'LumeWeaver';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2840,6 +2842,7 @@ enum Company: string implements CompanyInterface
             'dataprovider', 'dataprovider b.v.' => self::dataprovider,
             'hessischesstatistischeslandesamt', 'hessisches statistisches landesamt', 'hessisches-statistisches-landesamt' => self::hessischesStatistischesLandesamt,
             'comscore', 'comscore, inc.' => self::comscore,
+            'lumeweaver', 'lumeweaver labs', 'lume-weaver' => self::lumeWeaver,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3197,6 +3200,7 @@ enum Company: string implements CompanyInterface
             self::spazioDati => 'SpazioDati S.r.l.',
             self::dataprovider => 'Dataprovider B.V.',
             self::comscore => 'Comscore, Inc.',
+            self::lumeWeaver => 'LumeWeaver Labs',
             self::unknown => null,
             default => $this->value,
         };
@@ -3509,6 +3513,7 @@ enum Company: string implements CompanyInterface
             self::barzmannInternetSolutions => 'barzmann-internet-solutions',
             self::spazioDati => 'spazio-dati',
             self::hessischesStatistischesLandesamt => 'hessisches-statistisches-landesamt',
+            self::lumeWeaver => 'lume-weaver',
             default => $this->name,
         };
     }

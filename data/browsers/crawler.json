@@ -1575,5 +1575,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "lume-web-scan": {
+    "name": "LumeWebScan",
+    "manufacturer": "lume-weaver",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LumeWebScan"
+      ]
+    },
+    "engine": "unknown"
   }
 }
