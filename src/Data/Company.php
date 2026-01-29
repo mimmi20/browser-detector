@@ -1907,6 +1907,12 @@ enum Company: string implements CompanyInterface
 
     case archiveTeam = 'ArchiveTeam';
 
+    case finax = 'Finax';
+
+    case keywordsStandings = 'Keywords Standings';
+
+    case flowTeam = 'Flow Team';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2858,6 +2864,9 @@ enum Company: string implements CompanyInterface
             'exipert', 'exipert, inc. dba checkmark network' => self::exipert,
             'timpi', 'timpi inc.' => self::timpi,
             'archiveteam', 'archive-team' => self::archiveTeam,
+            'finax', 'finax, o.c.p, a.s.' => self::finax,
+            'keywordsstandings', 'keywords-standings', 'keywords standings ltd.', 'keywords standings' => self::keywordsStandings,
+            'flowteam', 'flow-team', 'flow team' => self::flowTeam,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3220,6 +3229,8 @@ enum Company: string implements CompanyInterface
             self::mindup => 'mindUp Web + Intelligence GmbH',
             self::exipert => 'Exipert, Inc. dba CheckMark Network',
             self::timpi => 'Timpi Inc.',
+            self::finax => 'Finax, o.c.p, a.s.',
+            self::keywordsStandings => 'Keywords Standings Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3534,6 +3545,8 @@ enum Company: string implements CompanyInterface
             self::hessischesStatistischesLandesamt => 'hessisches-statistisches-landesamt',
             self::lumeWeaver => 'lume-weaver',
             self::archiveTeam => 'archive-team',
+            self::keywordsStandings => 'keywords-standings',
+            self::flowTeam => 'flow-team',
             default => $this->name,
         };
     }

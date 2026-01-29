@@ -2683,18 +2683,6 @@
     },
     "engine": null
   },
-  "google-safety": {
-    "name": "Google-Safety",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google\\-Safety"
-      ]
-    },
-    "engine": null
-  },
   "google-site-verification": {
     "name": "Google-Site-Verification",
     "manufacturer": "google",
@@ -8610,18 +8598,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "kstandbot": {
-    "name": "KStandBot",
-    "manufacturer": "keywords-standings",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "KStandBot"
-      ]
     },
     "engine": "unknown"
   },

@@ -387,6 +387,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.netqin.ps' => 'vault-app',
             'com.dubox.drive' => 'terabox-app',
             'com.hihonor.search' => 'honor-search-app',
+            'org.flow.browser' => 'flowsurf',
             default => null,
         };
     }

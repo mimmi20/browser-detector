@@ -2404,6 +2404,8 @@ final class Device implements DeviceInterface
             'sm-t800', 'samsung sm-t800' => 'samsung=samsung sm-t800',
             'sm-t805', 'samsung sm-t805' => 'samsung=samsung sm-t805',
             'sm-t807', 'samsung sm-t807' => 'samsung=samsung sm-t807',
+            'gt-s6802', 'samsung gt-s6802' => 'samsung=samsung gt-s6802',
+            'gt-s6802b', 'samsung gt-s6802b' => 'samsung=samsung gt-s6802b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',

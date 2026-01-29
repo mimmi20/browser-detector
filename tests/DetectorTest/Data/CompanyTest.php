@@ -5716,6 +5716,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'ArchiveTeam',
                 'key' => 'archive-team',
             ],
+            [
+                'type' => 'Finax',
+                'name' => 'Finax, o.c.p, a.s.',
+                'brandname' => 'Finax',
+                'key' => 'finax',
+            ],
+            [
+                'type' => 'Keywords Standings',
+                'name' => 'Keywords Standings Ltd.',
+                'brandname' => 'Keywords Standings',
+                'key' => 'keywords-standings',
+            ],
+            [
+                'type' => 'Flow Team',
+                'name' => 'Flow Team',
+                'brandname' => 'Flow Team',
+                'key' => 'flow-team',
+            ],
         ];
     }
 

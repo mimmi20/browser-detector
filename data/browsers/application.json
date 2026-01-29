@@ -1457,5 +1457,17 @@
       ]
     },
     "engine": null
+  },
+  "windows-powershell": {
+    "name": "PowerShell",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WindowsPowerShell"
+      ]
+    },
+    "engine": null
   }
 }

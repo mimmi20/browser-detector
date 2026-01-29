@@ -561,6 +561,7 @@ final class XRequestedWithTest extends TestCase
             ['com.netqin.ps', true, 'vault-app', true, null, false, Os::unknown],
             ['com.dubox.drive', true, 'terabox-app', true, null, false, Os::unknown],
             ['com.hihonor.search', true, 'honor-search-app', true, null, false, Os::unknown],
+            ['org.flow.browser', true, 'flowsurf', true, null, false, Os::unknown],
         ];
     }
 }

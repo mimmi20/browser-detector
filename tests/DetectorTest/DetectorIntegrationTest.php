@@ -7023,6 +7023,64 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua' => '"Chromium";v="142", "Android WebView";v="142", "Not_A Brand";v="99"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'sec-ch-ua-platform' => '"Android"',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 16; SM-S911B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.145 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/539.0.0.54.69;IABMV/1;]',
+                    'x-requested-with' => 'com.facebook.katana',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Android"',
+                        'x-requested-with' => 'com.facebook.katana',
+                        'sec-ch-ua' => '"Chromium";v="142", "Android WebView";v="142", "Not_A Brand";v="99"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 16; SM-S911B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.145 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/539.0.0.54.69;IABMV/1;]',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-S911B',
+                        'marketingName' => 'Galaxy S23 (International)',
+                        'manufacturer' => 'Samsung',
+                        'brand' => 'Samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2340,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.1,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '16.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Facebook App',
+                        'modus' => null,
+                        'version' => '539.0.0.54.69',
+                        'manufacturer' => 'Meta',
+                        'type' => 'mobile-application',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '142.0.7444.145',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

@@ -5860,5 +5860,17 @@
       ]
     },
     "engine": "maple"
+  },
+  "flowsurf": {
+    "name": "Flowsurf",
+    "manufacturer": "flow-team",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Flow"
+      ]
+    },
+    "engine": null
   }
 }

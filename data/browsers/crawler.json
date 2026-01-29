@@ -1657,5 +1657,41 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "kstandbot": {
+    "name": "KStandBot",
+    "manufacturer": "keywords-standings",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KStandBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-safety": {
+    "name": "Google-Safety",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google\\-Safety"
+      ]
+    },
+    "engine": null
+  },
+  "backlinks-extended-bot": {
+    "name": "BacklinksExtendedBot",
+    "manufacturer": "semrush",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BacklinksExtendedBot"
+      ]
+    },
+    "engine": null
   }
 }
