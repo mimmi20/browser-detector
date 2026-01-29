@@ -24,6 +24,7 @@ use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
 use BrowserDetector\Version\RemixOsFactory;
 use BrowserDetector\Version\RimOsFactory;
+use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
@@ -475,7 +476,7 @@ final class OsTest extends TestCase
                 'name' => 'Series 60',
                 'marketingName' => 'Series 60',
                 'manufacturer' => Company::nokia,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Series60']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60V']],
                 'key' => 'series60',
             ],
             [
@@ -1147,7 +1148,7 @@ final class OsTest extends TestCase
                 'name' => 'Ubuntu',
                 'marketingName' => 'Ubuntu',
                 'manufacturer' => Company::canonical,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Ubuntu', 'ubuntu']],
+                'version' => ['factory' => UbuntuFactory::class, 'search' => null],
                 'key' => 'ubuntu',
             ],
             [
@@ -1445,6 +1446,38 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::whaleTV,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
                 'key' => 'whale-os',
+            ],
+            [
+                'type' => 'Orsay',
+                'name' => 'Orsay',
+                'marketingName' => 'Orsay',
+                'manufacturer' => Company::samsung,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'orsay',
+            ],
+            [
+                'type' => 'Java ME',
+                'name' => 'Java ME',
+                'marketingName' => 'Java ME',
+                'manufacturer' => Company::sun,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'java-me',
+            ],
+            [
+                'type' => 'Opera TV',
+                'name' => 'Opera TV',
+                'marketingName' => 'Opera TV',
+                'manufacturer' => Company::opera,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
+                'key' => 'opera-tv',
+            ],
+            [
+                'type' => 'Mocor OS',
+                'name' => 'Mocor OS',
+                'marketingName' => 'Mocor OS',
+                'manufacturer' => Company::unknown,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'mocor-os',
             ],
         ];
     }

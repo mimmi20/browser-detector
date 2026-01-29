@@ -20,7 +20,6 @@ use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
-use UnexpectedValueException;
 
 use function assert;
 use function is_int;
@@ -43,19 +42,6 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
 
     /** @throws VersionContainsDerivateException */
     #[Override]
-    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
-    {
-        try {
-            $os = Os::fromName((string) $code);
-        } catch (UnexpectedValueException) {
-            $os = Os::unknown;
-        }
-
-        return $this->getVersion($value, $os);
-    }
-
-    /** @throws VersionContainsDerivateException */
-    #[Override]
     public function getPlatformVersionWithOs(string $value, OsInterface $os): VersionInterface
     {
         return $this->getVersion($value, $os);
@@ -72,7 +58,7 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
 
         if ($os === Os::windows) {
             $version = match ((float) $value) {
-                0.1 => '7',
+                0.1, 6.1 => '7',
                 0.2 => '8',
                 0.3 => '8.1',
                 10.0 => '10',

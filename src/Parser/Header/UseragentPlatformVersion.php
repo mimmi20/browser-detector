@@ -57,19 +57,6 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
         return true;
     }
 
-    /** @throws void */
-    #[Override]
-    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
-    {
-        try {
-            $os = Os::fromName((string) $code);
-        } catch (UnexpectedValueException) {
-            $os = Os::unknown;
-        }
-
-        return $this->getVersion($value, $os);
-    }
-
     /**
      * @throws void
      *

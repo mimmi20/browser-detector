@@ -1,6 +1,6 @@
 {
   "apache-httpclient": {
-    "name": "Apache-HttpClient",
+    "name": "Apache HTTP Client",
     "manufacturer": "apache",
     "type": "library",
     "version": {
@@ -68,6 +68,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "python\\-urllib3",
         "Python\\-urllib"
       ]
     },
@@ -112,7 +113,7 @@
     "engine": "unknown"
   },
   "okhttp": {
-    "name": "okhttp",
+    "name": "OkHttp",
     "manufacturer": "unknown",
     "type": "library",
     "version": {
@@ -305,7 +306,7 @@
     "engine": "unknown"
   },
   "python-httpx": {
-    "name": "python-httpx",
+    "name": "HTTPX",
     "manufacturer": "unknown",
     "type": "library",
     "version": {
@@ -456,6 +457,54 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PHP\\-Curl\\-Class"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "emacs": {
+    "name": "Emacs",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Emacs\\/"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bun": {
+    "name": "Bun",
+    "manufacturer": "anthropic",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bun\\/"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "http-rb": {
+    "name": "http.rb",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "http\\.rb"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ruby": {
+    "name": "ruby",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ruby"
       ]
     },
     "engine": "unknown"

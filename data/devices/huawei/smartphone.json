@@ -4849,7 +4849,7 @@
   },
   "huawei hry-lx1t": {
     "deviceName": "HRY-LX1T",
-    "marketingName": "Honor 20 Lite",
+    "marketingName": "Honor 10I",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -10401,7 +10401,7 @@
   },
   "huawei ine-lx1": {
     "deviceName": "INE-LX1",
-    "marketingName": "nova 3i",
+    "marketingName": "Nova 3i",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -10417,7 +10417,7 @@
   },
   "huawei ine-lx1r": {
     "deviceName": "INE-LX1r",
-    "marketingName": "nova 3i",
+    "marketingName": "Nova 3i",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -11505,11 +11505,11 @@
   },
   "huawei vog-l29": {
     "deviceName": "VOG-L29",
-    "marketingName": "P30 Pro Dual-SIM",
+    "marketingName": "P30 Pro",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -15121,9 +15121,9 @@
   },
   "huawei ntn-lx1": {
     "deviceName": "NTN-LX1",
-    "marketingName": "Honor 50 Lite",
+    "marketingName": "50 Lite",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 2,
     "display": {
@@ -15713,7 +15713,7 @@
   },
   "huawei jsn-l22": {
     "deviceName": "JSN-L22",
-    "marketingName": "Honor 8X Dual SIM",
+    "marketingName": "Honor 8X",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -15729,7 +15729,7 @@
   },
   "huawei jsn-l23": {
     "deviceName": "JSN-L23",
-    "marketingName": "Honor 8X Dual SIM",
+    "marketingName": "Honor 8X",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -15745,7 +15745,7 @@
   },
   "huawei jsn-lx2": {
     "deviceName": "JSN-LX2",
-    "marketingName": "Honor 8X Dual SIM",
+    "marketingName": "Honor 8X",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -17265,9 +17265,9 @@
   },
   "huawei tfy-lx1": {
     "deviceName": "TFY-LX1",
-    "marketingName": "Honor X8",
+    "marketingName": "X8",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 1,
     "display": {
@@ -21919,22 +21919,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei mbh-n49": {
-    "deviceName": "MBH-N49",
-    "marketingName": "Magic V5",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2352,
-      "height": 2172,
-      "touch": true,
-      "size": 7.95
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei ppg-an00": {
     "deviceName": "PPG-AN00",
     "marketingName": "GT Pro",
@@ -21947,6 +21931,22 @@
       "height": 1224,
       "touch": true,
       "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei mate 60 pro": {
+    "deviceName": "Mate 60 Pro",
+    "marketingName": "Mate 60 Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2720,
+      "height": 1260,
+      "touch": true,
+      "size": 6.82
     },
     "type": "smartphone",
     "platform": "android"

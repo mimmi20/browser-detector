@@ -1123,5 +1123,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.GoogleMobile/402.0 iPhone/26.1 hw/iPhone17_2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 17,2",
+      "marketingName": "iPhone 16 Pro Max",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2868,
+        "height": 1320,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "402.0.0",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

@@ -287,13 +287,13 @@ final class Useragent4Test extends TestCase
         if ($platformVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getPlatformVersion(),
+                $header->getPlatformVersionWithOs(Os::unknown),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $platformVersion,
-                $header->getPlatformVersion()->getVersion(),
+                $header->getPlatformVersionWithOs(Os::unknown)->getVersion(),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         }
@@ -317,13 +317,15 @@ final class Useragent4Test extends TestCase
         if ($engineVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getEngineVersion(),
+                $header->getEngineVersionWithEngine(\BrowserDetector\Data\Engine::unknown),
                 sprintf('engine info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $engineVersion,
-                $header->getEngineVersion()->getVersion(),
+                $header->getEngineVersionWithEngine(
+                    \BrowserDetector\Data\Engine::unknown,
+                )->getVersion(),
                 sprintf('engine info mismatch for ua "%s"', $ua),
             );
         }

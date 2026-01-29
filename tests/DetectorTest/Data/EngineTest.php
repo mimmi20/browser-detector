@@ -137,7 +137,7 @@ final class EngineTest extends TestCase
                 'type' => 'WebKit',
                 'name' => 'WebKit',
                 'manufacturer' => Company::apple,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit \\/', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
                 'key' => 'webkit',
             ],
             [
@@ -158,7 +158,7 @@ final class EngineTest extends TestCase
                 'type' => 'NetFront',
                 'name' => 'NetFront',
                 'manufacturer' => Company::access,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['NetFront']],
                 'key' => 'netfront',
             ],
             [
@@ -279,6 +279,13 @@ final class EngineTest extends TestCase
                 'manufacturer' => Company::ekioh,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['EkiohFlow']],
                 'key' => 'ekiohflow',
+            ],
+            [
+                'type' => 'Maple',
+                'name' => 'Maple',
+                'manufacturer' => Company::samsung,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Maple']],
+                'key' => 'maple',
             ],
         ];
     }

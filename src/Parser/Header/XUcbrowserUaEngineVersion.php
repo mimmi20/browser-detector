@@ -38,13 +38,6 @@ final class XUcbrowserUaEngineVersion implements EngineVersionInterface
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     #[Override]
-    public function getEngineVersion(string $value, string | null $code = null): VersionInterface
-    {
-        return $this->getVersion($value);
-    }
-
-    /** @throws void */
-    #[Override]
     public function getEngineVersionWithEngine(string $value, EngineInterface $engine): VersionInterface
     {
         return $this->getVersion($value);

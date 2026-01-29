@@ -2431,57 +2431,6 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"41\", \"Chromium\";v=\"41\"",
-      "sec-ch-ua-full-version": "\"41.0.4692.99\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-    },
-    "device": {
-      "architecture": "x86",
-      "deviceName": "Nexus 5X",
-      "marketingName": "Nexus 5X",
-      "manufacturer": "LG",
-      "brand": "Google",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "41.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "41.0.2272.96",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; LM-G820 Build/QKQ1.190929.002)"
     },
     "device": {
@@ -2792,6 +2741,54 @@
     "engine": {
       "name": "Blink",
       "version": "133.0.6943.137",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\" Not A(Brand);v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.162 Mobile Safari/537.36 +https://sitebulb.com"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Nexus 5X",
+      "marketingName": "Nexus 5X",
+      "manufacturer": "LG",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "142.0.7444.162",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "142.0.7444.162",
       "manufacturer": "Google"
     }
   }

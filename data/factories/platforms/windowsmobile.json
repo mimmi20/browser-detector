@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "/windows iot 10/i": "windows iot 10.0",
-    "/windows ?ce|windows mobile; wce|ceos/i": "windows ce",
-    "/windows phone(?: os)? (10|[678])\\.[015]/i": "windows phone",
-    "/Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone(?! 6)|WPDesktop| wds |WPOS\\:|Windows Mobile (?:7|8|10)|Windows NT (?:7|8|10)(?:[\\.\\d]+)?; ARM; Lumia/": "windows phone"
-  },
-  "generic": "windows mobile os"
-}

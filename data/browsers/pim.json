@@ -6,7 +6,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "eM Client"
+        "eM Client",
+        "eMClient"
       ]
     },
     "engine": null
@@ -198,6 +199,18 @@
       "search": [
         "LotusNotes",
         "Lotus\\-Notes"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "blue-mail": {
+    "name": "BlueMail",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BlueMail"
       ]
     },
     "engine": "unknown"

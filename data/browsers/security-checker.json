@@ -1,6 +1,6 @@
 {
-  "expanse": {
-    "name": "Expanse",
+  "cortex-xpanse": {
+    "name": "Cortex Xpanse",
     "manufacturer": "palo-alto",
     "type": "security-checker",
     "version": {
@@ -11,7 +11,7 @@
   },
   "bitsightbot": {
     "name": "BitSightBot",
-    "manufacturer": "unknown",
+    "manufacturer": "bitsight-technologies",
     "type": "security-checker",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -86,6 +86,66 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "pdrlabs"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cybaa-bot": {
+    "name": "CybaaBot",
+    "manufacturer": "cybaa",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CybaaBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "interactsh": {
+    "name": "Interactsh",
+    "manufacturer": "project-discovery",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Interactsh"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vertex-wp": {
+    "name": "VertexWP",
+    "manufacturer": "vertex-wp",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VertexWP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "observer": {
+    "name": "Observer",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Observer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "recorded-future": {
+    "name": "RecordedFuture",
+    "manufacturer": "recorded-future",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RecordedFuture"
       ]
     },
     "engine": "unknown"

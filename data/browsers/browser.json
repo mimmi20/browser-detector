@@ -544,7 +544,7 @@
     "engine": "unknown"
   },
   "blackberry": {
-    "name": "black-berry",
+    "name": "BlackBerry Browser",
     "manufacturer": "rim",
     "type": "browser",
     "version": {
@@ -1674,7 +1674,7 @@
     "engine": "unknown"
   },
   "huawei-browser": {
-    "name": "Huawei Browser Mobile",
+    "name": "Huawei Browser",
     "manufacturer": "huawei",
     "type": "browser",
     "version": {
@@ -1914,13 +1914,15 @@
     },
     "engine": "trident"
   },
-  "internet explorer with chromeframe": {
-    "name": "Internet Explorer with Chromeframe",
-    "manufacturer": "microsoft",
+  "chrome-frame": {
+    "name": "Chrome Frame",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
-      "factory": "\\BrowserDetector\\Version\\MicrosoftInternetExplorerFactory",
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "chromeframe"
+      ]
     },
     "engine": "webkit"
   },
@@ -2767,6 +2769,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Series ?60\\/",
         "BrowserNG"
       ]
     },
@@ -3968,7 +3971,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Swiftfox"
+        "Swiftfox",
+        "Firefox"
       ]
     },
     "engine": "gecko"
@@ -5202,7 +5206,7 @@
         "Mypal"
       ]
     },
-    "engine": "gecko"
+    "engine": "goanna"
   },
   "wave-browser": {
     "name": "Wave Browser",
@@ -5844,5 +5848,17 @@
       ]
     },
     "engine": null
+  },
+  "maple": {
+    "name": "Maple",
+    "manufacturer": "samsung",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Maple"
+      ]
+    },
+    "engine": "maple"
   }
 }

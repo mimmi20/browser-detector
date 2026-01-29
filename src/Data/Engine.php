@@ -81,6 +81,8 @@ enum Engine: string implements EngineInterface
 
     case ekiohflow = 'EkiohFlow';
 
+    case maple = 'Maple';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -119,6 +121,7 @@ enum Engine: string implements EngineInterface
             'arkweb' => self::arkweb,
             'netsurf' => self::netsurf,
             'ekiohflow' => self::ekiohflow,
+            'maple' => self::maple,
             default => throw new UnexpectedValueException(
                 sprintf('the engine "%s" is unknown', $name),
             ),
@@ -154,6 +157,7 @@ enum Engine: string implements EngineInterface
             self::treco => Company::arsslensoft,
             self::arkweb => Company::huawei,
             self::ekiohflow => Company::ekioh,
+            self::maple => Company::samsung,
             default => Company::unknown,
         };
     }
@@ -170,7 +174,7 @@ enum Engine: string implements EngineInterface
             self::blink => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet']],
             self::clecko, self::treco => ['factory' => VersionBuilderFactory::class, 'search' => ['rv:']],
             self::edge => ['factory' => VersionBuilderFactory::class, 'search' => ['Edge']],
-            self::webkit => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
+            self::webkit => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit \\/', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
             self::khtml => ['factory' => VersionBuilderFactory::class, 'search' => ['KHTML']],
             self::presto => ['factory' => VersionBuilderFactory::class, 'search' => ['Presto']],
             self::servo => ['factory' => VersionBuilderFactory::class, 'search' => ['Servo']],
@@ -183,6 +187,8 @@ enum Engine: string implements EngineInterface
             self::arkweb => ['factory' => VersionBuilderFactory::class, 'search' => ['ArkWeb']],
             self::netsurf => ['factory' => VersionBuilderFactory::class, 'search' => ['NetSurf']],
             self::ekiohflow => ['factory' => VersionBuilderFactory::class, 'search' => ['EkiohFlow']],
+            self::netfront => ['factory' => VersionBuilderFactory::class, 'search' => ['NetFront']],
+            self::maple => ['factory' => VersionBuilderFactory::class, 'search' => ['Maple']],
             self::gecko => ['factory' => GeckoFactory::class, 'search' => null],
             self::trident => ['factory' => TridentFactory::class, 'search' => null],
             self::goanna => ['factory' => GoannaFactory::class, 'search' => null],

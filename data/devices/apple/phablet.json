@@ -574,5 +574,21 @@
     },
     "type": "phablet",
     "platform": "ios"
+  },
+  "apple iphone 18,4": {
+    "deviceName": "iPhone 18,4",
+    "marketingName": "iPhone Air",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2736,
+      "height": 1260,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "ios"
   }
 }
