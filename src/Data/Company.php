@@ -1897,6 +1897,16 @@ enum Company: string implements CompanyInterface
 
     case lumeWeaver = 'LumeWeaver';
 
+    case nlpc = 'NLPC';
+
+    case mindup = 'mindUp';
+
+    case exipert = 'Exipert';
+
+    case timpi = 'Timpi';
+
+    case archiveTeam = 'ArchiveTeam';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2843,6 +2853,11 @@ enum Company: string implements CompanyInterface
             'hessischesstatistischeslandesamt', 'hessisches statistisches landesamt', 'hessisches-statistisches-landesamt' => self::hessischesStatistischesLandesamt,
             'comscore', 'comscore, inc.' => self::comscore,
             'lumeweaver', 'lumeweaver labs', 'lume-weaver' => self::lumeWeaver,
+            'nlpc', 'natural language processing centre' => self::nlpc,
+            'mindup', 'mindup web + intelligence gmbh' => self::mindup,
+            'exipert', 'exipert, inc. dba checkmark network' => self::exipert,
+            'timpi', 'timpi inc.' => self::timpi,
+            'archiveteam', 'archive-team' => self::archiveTeam,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3201,6 +3216,10 @@ enum Company: string implements CompanyInterface
             self::dataprovider => 'Dataprovider B.V.',
             self::comscore => 'Comscore, Inc.',
             self::lumeWeaver => 'LumeWeaver Labs',
+            self::nlpc => 'Natural Language Processing Centre',
+            self::mindup => 'mindUp Web + Intelligence GmbH',
+            self::exipert => 'Exipert, Inc. dba CheckMark Network',
+            self::timpi => 'Timpi Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3514,6 +3533,7 @@ enum Company: string implements CompanyInterface
             self::spazioDati => 'spazio-dati',
             self::hessischesStatistischesLandesamt => 'hessisches-statistisches-landesamt',
             self::lumeWeaver => 'lume-weaver',
+            self::archiveTeam => 'archive-team',
             default => $this->name,
         };
     }

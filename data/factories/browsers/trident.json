@@ -86,7 +86,7 @@
     "/camino/i": "camino",
     "/dillo/i": "dillo",
     "/viber/i": "viber",
-    "/flow\\//i": "flow-browser"
+    "/flow[\\/)]/i": "flow-browser"
   },
   "generic": "internet explorer"
 }

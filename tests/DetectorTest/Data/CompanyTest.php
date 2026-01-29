@@ -5686,6 +5686,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'LumeWeaver',
                 'key' => 'lume-weaver',
             ],
+            [
+                'type' => 'NLPC',
+                'name' => 'Natural Language Processing Centre',
+                'brandname' => 'NLPC',
+                'key' => 'nlpc',
+            ],
+            [
+                'type' => 'mindUp',
+                'name' => 'mindUp Web + Intelligence GmbH',
+                'brandname' => 'mindUp',
+                'key' => 'mindup',
+            ],
+            [
+                'type' => 'Exipert',
+                'name' => 'Exipert, Inc. dba CheckMark Network',
+                'brandname' => 'Exipert',
+                'key' => 'exipert',
+            ],
+            [
+                'type' => 'Timpi',
+                'name' => 'Timpi Inc.',
+                'brandname' => 'Timpi',
+                'key' => 'timpi',
+            ],
+            [
+                'type' => 'ArchiveTeam',
+                'name' => 'ArchiveTeam',
+                'brandname' => 'ArchiveTeam',
+                'key' => 'archive-team',
+            ],
         ];
     }
 

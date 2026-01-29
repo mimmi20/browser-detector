@@ -462,16 +462,6 @@
     },
     "engine": "unknown"
   },
-  "archivebot": {
-    "name": "ArchiveBot",
-    "manufacturer": "archive-team",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "ask bot": {
     "name": "Ask Bot",
     "manufacturer": "ask",
@@ -6206,18 +6196,6 @@
     },
     "engine": "unknown"
   },
-  "spiderling": {
-    "name": "SpiderLing",
-    "manufacturer": "spider-ling",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SpiderLing"
-      ]
-    },
-    "engine": "unknown"
-  },
   "spiderlytics": {
     "name": "Spiderlytics",
     "manufacturer": "spiderlytics",
@@ -8559,18 +8537,6 @@
     },
     "engine": "unknown"
   },
-  "check-mark-network": {
-    "name": "CheckMarkNetwork",
-    "manufacturer": "exipert",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "CheckMarkNetwork"
-      ]
-    },
-    "engine": "unknown"
-  },
   "dnb-crawler-analytics": {
     "name": "DnBCrawler-Analytics",
     "manufacturer": "unknown",
@@ -9285,18 +9251,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "companyspotter"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "timpi-bot": {
-    "name": "Timpibot",
-    "manufacturer": "timpi",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Timpibot"
       ]
     },
     "engine": "unknown"

@@ -1587,5 +1587,75 @@
       ]
     },
     "engine": "unknown"
+  },
+  "duck-assist-bot": {
+    "name": "DuckAssistBot",
+    "manufacturer": "duck-duck-go",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DuckAssistBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "spiderling": {
+    "name": "SpiderLing",
+    "manufacturer": "nlpc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SpiderLing"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "check-mark-network": {
+    "name": "CheckMark Network",
+    "manufacturer": "exipert",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CheckMarkNetwork"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "timpi-bot": {
+    "name": "Timpibot",
+    "manufacturer": "timpi",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Timpibot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gemini-deep-research": {
+    "name": "Gemini Deep Research",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gemini-Deep-Research"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "archivebot": {
+    "name": "ArchiveBot",
+    "manufacturer": "archive-team",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

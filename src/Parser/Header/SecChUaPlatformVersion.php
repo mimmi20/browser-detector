@@ -26,6 +26,7 @@ use function is_int;
 use function mb_strpos;
 use function mb_substr;
 use function mb_trim;
+use function str_replace;
 
 final class SecChUaPlatformVersion implements PlatformVersionInterface
 {
@@ -55,6 +56,8 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
         if ($value === '') {
             return new ForcedNullVersion();
         }
+
+        $value = str_replace('_', '.', $value);
 
         if ($os === Os::windows) {
             $version = match ((float) $value) {

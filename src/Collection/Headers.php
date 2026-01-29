@@ -281,6 +281,7 @@ final readonly class Headers
                             case 'samsungbrowser':
                             case 'edge':
                             case 'google-search':
+                            case 'iron':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 
@@ -382,7 +383,7 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($clientCodename);
             $clientVersion  = match ($clientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen' => $clientVersions['user-agent']
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
                 'duckduck app', 'huawei-browser', 'ucbrowser', 'edge', 'headless-chrome', 'chrome' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']
@@ -555,15 +556,19 @@ final readonly class Headers
             if ($platform === \BrowserDetector\Data\Os::windows) {
                 assert($platformVersion instanceof VersionInterface);
 
-                $platform = match ($platformVersion->getVersion(VersionInterface::IGNORE_MICRO)) {
-                    '11.0' => \BrowserDetector\Data\Os::windows11,
-                    '10.0' => \BrowserDetector\Data\Os::windows10,
-                    '8.1' => \BrowserDetector\Data\Os::windowsnt63,
-                    '8.0' => \BrowserDetector\Data\Os::windowsnt62,
-                    '7.0' => \BrowserDetector\Data\Os::windowsnt61,
-                    '6.0' => \BrowserDetector\Data\Os::windowsnt60,
-                    default => \BrowserDetector\Data\Os::windows,
-                };
+                try {
+                    $platform = match ($platformVersion->getVersion(VersionInterface::IGNORE_MICRO)) {
+                        '11.0' => \BrowserDetector\Data\Os::windows11,
+                        '10.0' => \BrowserDetector\Data\Os::windows10,
+                        '8.1' => \BrowserDetector\Data\Os::windowsnt63,
+                        '8.0' => \BrowserDetector\Data\Os::windowsnt62,
+                        '7.0' => \BrowserDetector\Data\Os::windowsnt61,
+                        '6.0' => \BrowserDetector\Data\Os::windowsnt60,
+                        default => \BrowserDetector\Data\Os::windows,
+                    };
+                } catch (UnexpectedValueException) {
+                    // do nothing here
+                }
             }
 
             if ($platform !== \BrowserDetector\Data\Os::unknown) {

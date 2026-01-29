@@ -499,18 +499,6 @@
     },
     "engine": "unknown"
   },
-  "duck-assist-bot": {
-    "name": "DuckAssistBot",
-    "manufacturer": "duck-duck-go",
-    "type": "search-bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "DuckAssistBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "naver-adsbot": {
     "name": "AdsBot Naver",
     "manufacturer": "nhn-corporation",
@@ -739,6 +727,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Heexybot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "brave-bot": {
+    "name": "Bravebot",
+    "manufacturer": "brave-software",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bravebot"
       ]
     },
     "engine": "unknown"

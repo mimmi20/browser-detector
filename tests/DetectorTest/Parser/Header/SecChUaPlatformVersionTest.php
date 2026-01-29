@@ -177,6 +177,7 @@ final class SecChUaPlatformVersionTest extends TestCase
             ['"0.2"', 'Windows', true, '8.0.0'],
             ['"0.1"', 'Windows', true, '7.0.0'],
             ['""', null, false, null],
+            ['"14_5"', null, true, '14.5.0'],
         ];
     }
 
