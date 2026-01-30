@@ -4039,6 +4039,10 @@ final class Device implements DeviceInterface
             'vivo x710l' => 'vivo=vivo x710l',
             'vivo x7 plus', 'vivo x7plus' => 'vivo=vivo x7 plus',
             'vivo x7l' => 'vivo=vivo x7l',
+            'vivo xplay6' => 'vivo=vivo xplay 6',
+            'vivo xplay3s' => 'vivo=vivo xplay3s',
+            'vivo xplay' => 'vivo=vivo xplay',
+            'vivo xplay5a' => 'vivo=vivo xplay5a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -6646,6 +6650,7 @@ final class Device implements DeviceInterface
             'ms651' => 'maxcom=maxcom ms651',
             // majestic
             'tab_918_pro_4g' => 'majestic=majestic tab 918 pro 4g',
+            'tab 611 3g' => 'majestic=majestic tab 611 3g',
             // nec
             'lavie tab 9qhd1' => 'nec=nec 9qhd1',
             // haier
@@ -7300,6 +7305,11 @@ final class Device implements DeviceInterface
             'profilo 4k android tv' => 'profilo=profilo 4k android tv',
             // arcelik
             'arcelik google tv', 'arcelik android tv' => 'arcelik=arcelik smart tv',
+            // ergo
+            'ergo a550 maxx' => 'ergo=ergo a550',
+            'gotab gti8' => 'ergo=ergo gotab gti8',
+            'ergo tab crystal lite' => 'ergo=ergo tab crystal lite',
+            'a503-optima' => 'ergo=ergo a503',
             // other
             default => null,
         };

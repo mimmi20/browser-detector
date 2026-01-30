@@ -1187,7 +1187,7 @@ enum Company: string implements CompanyInterface
 
     case hazuki = 'hazuki';
 
-    case startpageCom = 'startpage.com';
+    case surfboard = 'Surfboard';
 
     case tenta = 'Tenta';
 
@@ -1923,6 +1923,10 @@ enum Company: string implements CompanyInterface
 
     case serpstat = 'Serpstat';
 
+    case morningscore = 'Morningscore';
+
+    case ergo = 'Ergo';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2514,7 +2518,7 @@ enum Company: string implements CompanyInterface
             'dezor', 'dezor sa' => self::dezor,
             'bestseller', 'bestseller a/s' => self::bestseller,
             'hazuki' => self::hazuki,
-            'startpagecom', 'startpage.com' => self::startpageCom,
+            'surfboard', 'surfboard holding bv' => self::surfboard,
             'tenta', 'tenta llc' => self::tenta,
             'mobilev5', 'mobile-v5', 'mobile_v5' => self::mobileV5,
             'swisscows' => self::swisscows,
@@ -2882,6 +2886,8 @@ enum Company: string implements CompanyInterface
             'ghsoftware', 'gh-software', 'gh software' => self::ghSoftware,
             'arquivo', 'arquivo.pt' => self::arquivo,
             'serpstat', 'serpstat global ltd' => self::serpstat,
+            'morningscore', 'morning-score' => self::morningscore,
+            'ergo' => self::ergo,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3250,6 +3256,7 @@ enum Company: string implements CompanyInterface
             self::smartisan => 'Smartisan Technology Co., Ltd',
             self::arquivo => 'Arquivo.pt',
             self::serpstat => 'Serpstat Global LTD',
+            self::surfboard => 'Surfboard Holding BV',
             self::unknown => null,
             default => $this->value,
         };
@@ -3407,7 +3414,6 @@ enum Company: string implements CompanyInterface
             self::anyDeskSoftware => 'anydesk-software',
             self::towoLabs => 'towo-labs',
             self::talkTalkTelecom => 'talk-talk-telecom',
-            self::startpageCom => 'startpage.com',
             self::mobileV5 => 'mobile-v5',
             self::wolvesInteractive => 'wolves-interactive',
             self::buhlDataService => 'buhl-data-service',
@@ -3568,6 +3574,7 @@ enum Company: string implements CompanyInterface
             self::flowTeam => 'flow-team',
             self::companySpotter => 'company-spotter',
             self::ghSoftware => 'gh-software',
+            self::morningscore => 'morning-score',
             default => $this->name,
         };
     }

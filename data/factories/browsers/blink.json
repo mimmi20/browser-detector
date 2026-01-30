@@ -52,7 +52,7 @@
     "/sohunews/i": "sohunews app",
     "/alohabrowser|aloha\\//i": "aloha-browser",
     "/vivobrowser/i": "vivo-browser",
-    "/hmscore/i": "huawei-mobile-services",
+    "/hmscore(?:[ \\/][\\d.]+)?(?!.*huaweibrowser)/i": "huawei-mobile-services",
     "/huaweibrowser|hbpc\\//i": "huawei-browser",
     "/bingweb/i": "bingweb",
     "/sogousearch/i": "sogou-search",

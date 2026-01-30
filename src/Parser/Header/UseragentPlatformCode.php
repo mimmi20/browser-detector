@@ -24,6 +24,7 @@ use UnexpectedValueException;
 
 use function array_filter;
 use function array_first;
+use function array_key_exists;
 use function array_map;
 use function mb_strtolower;
 use function preg_match;
@@ -88,6 +89,19 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
                 'windows' => Os::windowsphone,
                 '42', '44' => Os::ios,
                 'linux' => Os::android,
+                default => Os::unknown,
+            };
+        }
+
+        $matches = [];
+
+        if (
+            preg_match('/^WhatsApp\/[0-9.]+ (?P<code>[AW])$/', $normalizedValue, $matches)
+            && array_key_exists('code', $matches)
+        ) {
+            return match ($matches['code']) {
+                'W' => Os::windows,
+                'A' => Os::android,
                 default => Os::unknown,
             };
         }

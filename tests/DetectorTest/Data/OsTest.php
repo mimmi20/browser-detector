@@ -408,14 +408,6 @@ final class OsTest extends TestCase
                 'key' => 'netbsd',
             ],
             [
-                'type' => 'NetCast',
-                'name' => 'NetCast',
-                'marketingName' => 'NetCast',
-                'manufacturer' => Company::lg,
-                'version' => ['factory' => null, 'search' => null],
-                'key' => 'netcast',
-            ],
-            [
                 'type' => 'Nokia OS',
                 'name' => 'Nokia OS',
                 'marketingName' => 'Nokia OS',

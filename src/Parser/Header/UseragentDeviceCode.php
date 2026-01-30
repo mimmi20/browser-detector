@@ -21,6 +21,7 @@ use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
 use function array_filter;
+use function array_key_exists;
 use function array_map;
 use function mb_strtolower;
 use function preg_match;
@@ -68,6 +69,19 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if ($normalizedValue === '' || $normalizedValue === null) {
             return null;
+        }
+
+        $matches = [];
+
+        if (
+            preg_match('/^WhatsApp\/[0-9.]+ (?P<code>[AW])$/', $normalizedValue, $matches)
+            && array_key_exists('code', $matches)
+        ) {
+            return match ($matches['code']) {
+                'W' => 'unknown=windows desktop',
+                'A' => 'unknown=general mobile phone',
+                default => 'unknown=unknown',
+            };
         }
 
         $regexes = [

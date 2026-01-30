@@ -108,8 +108,6 @@ enum Os: string implements OsInterface
 
     case netbsd = 'NetBSD';
 
-    case netcast = 'NetCast';
-
     case nokiaos = 'Nokia OS';
 
     case openbsd = 'OpenBSD';
@@ -421,7 +419,6 @@ enum Os: string implements OsInterface
             'moblin' => self::moblin,
             'mocordroid' => self::mocordroid,
             'netbsd' => self::netbsd,
-            'netcast' => self::netcast,
             'nokiaos', 'nokia os' => self::nokiaos,
             'openbsd' => self::openbsd,
             'openpda' => self::openpda,
@@ -616,7 +613,7 @@ enum Os: string implements OsInterface
             self::fireos => Company::amazon,
             self::firefoxos => Company::mozilla,
             self::miuios => Company::xiaomi,
-            self::netcast, self::lgwebos => Company::lg,
+            self::lgwebos => Company::lg,
             self::windows, self::windows2003, self::windows31, self::windows311, self::windows95, self::windows98, self::windowsce, self::windowsiot, self::windowsme, self::windowsmobileos, self::windowsnt, self::windows10, self::windows11, self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windowsphone, self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81, self::windowsrt62, self::windowsrt63, self::azurelinux, self::kinos => Company::microsoft,
             self::yi => Company::baidu,
             self::harmonyos => Company::huawei,

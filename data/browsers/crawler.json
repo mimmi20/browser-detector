@@ -1717,5 +1717,18 @@
       ]
     },
     "engine": null
+  },
+  "morningscore-bot": {
+    "name": "Morningscore Bot",
+    "manufacturer": "morning-score",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Morningscore Bot",
+        "Morningscore"
+      ]
+    },
+    "engine": null
   }
 }

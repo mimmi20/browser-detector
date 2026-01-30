@@ -3557,10 +3557,10 @@ final class CompanyTest extends TestCase
                 'key' => 'hazuki',
             ],
             [
-                'type' => 'startpage.com',
-                'name' => 'startpage.com',
-                'brandname' => 'startpage.com',
-                'key' => 'startpage.com',
+                'type' => 'Surfboard',
+                'name' => 'Surfboard Holding BV',
+                'brandname' => 'Surfboard',
+                'key' => 'surfboard',
             ],
             [
                 'type' => 'Tenta',
@@ -5763,6 +5763,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Serpstat Global LTD',
                 'brandname' => 'Serpstat',
                 'key' => 'serpstat',
+            ],
+            [
+                'type' => 'Morningscore',
+                'name' => 'Morningscore',
+                'brandname' => 'Morningscore',
+                'key' => 'morning-score',
+            ],
+            [
+                'type' => 'Ergo',
+                'name' => 'Ergo',
+                'brandname' => 'Ergo',
+                'key' => 'ergo',
             ],
         ];
     }

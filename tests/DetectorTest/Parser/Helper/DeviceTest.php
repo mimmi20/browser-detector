@@ -4792,6 +4792,10 @@ final class DeviceTest extends TestCase
             ['vivo X7Plus', 'vivo=vivo x7 plus'],
             ['vivo X7 Plus', 'vivo=vivo x7 plus'],
             ['vivo X7L', 'vivo=vivo x7l'],
+            ['vivo Xplay6', 'vivo=vivo xplay 6'],
+            ['vivo Xplay3S', 'vivo=vivo xplay3s'],
+            ['vivo Xplay', 'vivo=vivo xplay'],
+            ['vivo Xplay5A', 'vivo=vivo xplay5a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -7591,6 +7595,7 @@ final class DeviceTest extends TestCase
             ['MS651', 'maxcom=maxcom ms651'],
             // majestic
             ['TAB_918_PRO_4G', 'majestic=majestic tab 918 pro 4g'],
+            ['TAB 611 3G', 'majestic=majestic tab 611 3g'],
             // nec
             ['LAVIE Tab 9QHD1', 'nec=nec 9qhd1'],
             // haier
@@ -8254,6 +8259,11 @@ final class DeviceTest extends TestCase
             // arcelik
             ['Arcelik Google TV', 'arcelik=arcelik smart tv'],
             ['Arcelik Android TV', 'arcelik=arcelik smart tv'],
+            // ergo
+            ['ERGO A550 Maxx', 'ergo=ergo a550'],
+            ['GoTab Gti8', 'ergo=ergo gotab gti8'],
+            ['Ergo Tab Crystal Lite', 'ergo=ergo tab crystal lite'],
+            ['A503-Optima', 'ergo=ergo a503'],
             // other
             ['Model"', null],
             [': "', null],

@@ -264,6 +264,8 @@ final class UseragentPlatformVersionTest extends TestCase
             ['Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36'],
             ['SM-T970 (compatible; Tablet2.0) HandelsbladProduction, com.twipemobile.nrc 5.1.4 (511) / Android 33'],
             ['WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V'],
+            ['WhatsApp/2.2587.9 A'],
+            ['WhatsApp/2.2587.9 W'],
         ];
     }
 
