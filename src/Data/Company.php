@@ -1927,6 +1927,8 @@ enum Company: string implements CompanyInterface
 
     case ergo = 'Ergo';
 
+    case github = 'GitHub';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2888,6 +2890,7 @@ enum Company: string implements CompanyInterface
             'serpstat', 'serpstat global ltd' => self::serpstat,
             'morningscore', 'morning-score' => self::morningscore,
             'ergo' => self::ergo,
+            'github', 'github inc.' => self::github,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3257,6 +3260,7 @@ enum Company: string implements CompanyInterface
             self::arquivo => 'Arquivo.pt',
             self::serpstat => 'Serpstat Global LTD',
             self::surfboard => 'Surfboard Holding BV',
+            self::github => 'GitHub Inc.',
             self::unknown => null,
             default => $this->value,
         };

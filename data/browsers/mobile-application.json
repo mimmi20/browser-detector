@@ -4678,5 +4678,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wecom": {
+    "name": "WeCom",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "wxwork"
+      ]
+    },
+    "engine": "unknown"
   }
 }

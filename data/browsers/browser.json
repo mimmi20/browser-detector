@@ -5872,5 +5872,17 @@
       ]
     },
     "engine": null
+  },
+  "atom": {
+    "name": "Atom",
+    "manufacturer": "github",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Atom"
+      ]
+    },
+    "engine": null
   }
 }

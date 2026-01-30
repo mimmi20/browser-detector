@@ -5082,6 +5082,7 @@ final class DeviceTest extends TestCase
             ['S98', 'doogee=doogee s98'],
             // ['S200', 'doogee=doogee s200'],
             ['V Max Play', 'doogee=doogee v max play'],
+            ['N20', 'doogee=doogee n20'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -6062,6 +6063,9 @@ final class DeviceTest extends TestCase
             ['MEIZU MX6', 'meizu=meizu mx6'],
             ['MZ-MX6', 'meizu=meizu mx6'],
             ['MX6', 'meizu=meizu mx6'],
+            ['MEIZU M5c', 'meizu=meizu m5c'],
+            ['MZ-M5c', 'meizu=meizu m5c'],
+            ['M5c', 'meizu=meizu m5c'],
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
             ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],

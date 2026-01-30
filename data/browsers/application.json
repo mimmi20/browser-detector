@@ -117,18 +117,6 @@
     },
     "engine": "webkit"
   },
-  "atom": {
-    "name": "Atom",
-    "manufacturer": "github",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Atom"
-      ]
-    },
-    "engine": null
-  },
   "basecamp": {
     "name": "Basecamp",
     "manufacturer": "basecamp",

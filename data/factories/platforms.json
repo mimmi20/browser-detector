@@ -66,7 +66,7 @@
     "/web[o0]s|hpwos/i": "webos",
     "/sunos|solaris/i": "solaris",
     "/hp-?ux|irix|(?<![ch])aix(?![u\\-])|unix|osf1/i": "unix",
-    "/kukui|(?<!i)cros(?!s)|Build\\/R\\d+-\\d+[.\\d]+/i": "chromeos",
+    "/kukui|(?<!i)cros(?!s)|build\\/r\\d+-\\d+[.\\d]+|chromebook/i": "chromeos",
     "/Fire OS|(?:Andr[o0]id (\\d([\\d.])*);? |Amazon;|smarttv_)AFT|AEO[ACBHKT]|[ (]KF[ADFGJKMORSTQ]|.+FIRETVSTICK2018|cordova-amazon-fireos/i": "fire-os",
     "/kaios/i": "kaios",
     "/spreadtrum/i": "mocor-os",

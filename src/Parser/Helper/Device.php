@@ -4244,6 +4244,7 @@ final class Device implements DeviceInterface
             'n30' => 'doogee=doogee n30',
             's35t' => 'doogee=doogee s35t',
             's60lite', 's60 lite' => 'doogee=doogee s60 lite',
+            'n20' => 'doogee=doogee n20',
             // conflicts with Blackview BL5000
             // 'bl5000' => 'doogee=doogee bl5000',
             'bl7000' => 'doogee=doogee bl7000',
@@ -5273,6 +5274,7 @@ final class Device implements DeviceInterface
             'mz-meizu note 16 pro' => 'meizu=meizu note 16 pro',
             'mz-meizu 21 note' => 'meizu=meizu 21 note',
             'meizu mx6', 'mz-mx6', 'mx6' => 'meizu=meizu mx6',
+            'meizu m5c', 'mz-m5c', 'm5c' => 'meizu=meizu m5c',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
             'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',

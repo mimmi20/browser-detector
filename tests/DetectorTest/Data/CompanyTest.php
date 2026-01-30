@@ -5776,6 +5776,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Ergo',
                 'key' => 'ergo',
             ],
+            [
+                'type' => 'GitHub',
+                'name' => 'GitHub Inc.',
+                'brandname' => 'GitHub',
+                'key' => 'github',
+            ],
         ];
     }
 
