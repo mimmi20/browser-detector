@@ -1917,6 +1917,12 @@ enum Company: string implements CompanyInterface
 
     case smartisan = 'Smartisan';
 
+    case ghSoftware = 'GH Software';
+
+    case arquivo = 'Arquivo';
+
+    case serpstat = 'Serpstat';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2873,6 +2879,9 @@ enum Company: string implements CompanyInterface
             'flowteam', 'flow-team', 'flow team' => self::flowTeam,
             'companyspotter', 'company-spotter', 'companyspotter bv' => self::companySpotter,
             'smartisan', 'smartisan technology co., ltd' => self::smartisan,
+            'ghsoftware', 'gh-software', 'gh software' => self::ghSoftware,
+            'arquivo', 'arquivo.pt' => self::arquivo,
+            'serpstat', 'serpstat global ltd' => self::serpstat,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3239,6 +3248,8 @@ enum Company: string implements CompanyInterface
             self::keywordsStandings => 'Keywords Standings Ltd.',
             self::companySpotter => 'CompanySpotter BV',
             self::smartisan => 'Smartisan Technology Co., Ltd',
+            self::arquivo => 'Arquivo.pt',
+            self::serpstat => 'Serpstat Global LTD',
             self::unknown => null,
             default => $this->value,
         };
@@ -3556,6 +3567,7 @@ enum Company: string implements CompanyInterface
             self::keywordsStandings => 'keywords-standings',
             self::flowTeam => 'flow-team',
             self::companySpotter => 'company-spotter',
+            self::ghSoftware => 'gh-software',
             default => $this->name,
         };
     }

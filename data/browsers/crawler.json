@@ -1705,5 +1705,17 @@
       ]
     },
     "engine": null
+  },
+  "link-bloom": {
+    "name": "LinkBloom",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinkBloom"
+      ]
+    },
+    "engine": null
   }
 }

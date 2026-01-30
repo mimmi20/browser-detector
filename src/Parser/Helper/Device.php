@@ -4035,6 +4035,10 @@ final class Device implements DeviceInterface
             'pa2511' => 'vivo=vivo pa2511',
             'pa2573' => 'vivo=vivo pa2573',
             'v2055a' => 'vivo=vivo v2055a',
+            'vivo x7' => 'vivo=vivo x7',
+            'vivo x710l' => 'vivo=vivo x710l',
+            'vivo x7 plus', 'vivo x7plus' => 'vivo=vivo x7 plus',
+            'vivo x7l' => 'vivo=vivo x7l',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4726,6 +4730,8 @@ final class Device implements DeviceInterface
             'bv6200 plus' => 'blackview=blackview bv6200 plus',
             'bv4800 se' => 'blackview=blackview bv4800 se',
             'tab 60 wifi' => 'blackview=blackview tab 60 wifi',
+            'bv6000' => 'blackview=blackview bv6000',
+            'bv6000s' => 'blackview=blackview bv6000s',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -5165,6 +5171,7 @@ final class Device implements DeviceInterface
             '100135925' => 'onn=onn 100135925',
             '100071481a' => 'onn=onn 100071481a',
             'onn. 4k streaming box' => 'onn=onn 4k streaming box',
+            '100005206' => 'onn=onn 100005206',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
@@ -6219,6 +6226,7 @@ final class Device implements DeviceInterface
             'x-treme_pq18_max' => 'sigma-mobile=sigma-mobile x-treme pq18 max',
             'tab a802' => 'sigma-mobile=sigma-mobile tab a802',
             'x-treme_pq18' => 'sigma-mobile=sigma-mobile x-treme pq18',
+            'x-treme pq52' => 'sigma-mobile=sigma-mobile x-treme pq52',
             // cricket
             'sl112c' => 'cricket=cricket sl112c',
             'sl219c' => 'cricket=cricket sl219c',

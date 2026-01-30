@@ -5746,6 +5746,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Smartisan',
                 'key' => 'smartisan',
             ],
+            [
+                'type' => 'GH Software',
+                'name' => 'GH Software',
+                'brandname' => 'GH Software',
+                'key' => 'gh-software',
+            ],
+            [
+                'type' => 'Arquivo',
+                'name' => 'Arquivo.pt',
+                'brandname' => 'Arquivo',
+                'key' => 'arquivo',
+            ],
+            [
+                'type' => 'Serpstat',
+                'name' => 'Serpstat Global LTD',
+                'brandname' => 'Serpstat',
+                'key' => 'serpstat',
+            ],
         ];
     }
 

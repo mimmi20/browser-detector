@@ -4787,6 +4787,11 @@ final class DeviceTest extends TestCase
             ['PA2511', 'vivo=vivo pa2511'],
             ['PA2573', 'vivo=vivo pa2573'],
             ['V2055A', 'vivo=vivo v2055a'],
+            ['vivo X7', 'vivo=vivo x7'],
+            ['vivo X710L', 'vivo=vivo x710l'],
+            ['vivo X7Plus', 'vivo=vivo x7 plus'],
+            ['vivo X7 Plus', 'vivo=vivo x7 plus'],
+            ['vivo X7L', 'vivo=vivo x7l'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -5509,6 +5514,8 @@ final class DeviceTest extends TestCase
             ['BV6200 Plus', 'blackview=blackview bv6200 plus'],
             ['BV4800 SE', 'blackview=blackview bv4800 se'],
             ['Tab 60 WiFi', 'blackview=blackview tab 60 wifi'],
+            ['BV6000', 'blackview=blackview bv6000'],
+            ['BV6000S', 'blackview=blackview bv6000s'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -5950,6 +5957,7 @@ final class DeviceTest extends TestCase
             ['100135925', 'onn=onn 100135925'],
             ['100071481A', 'onn=onn 100071481a'],
             ['Onn. 4K Streaming Box', 'onn=onn 4k streaming box'],
+            ['100005206', 'onn=onn 100005206'],
             // archos
             ['Archos 101c Platinum', 'archos=archos 101c platinum'],
             ['Archos 101b Xenon v2', 'archos=archos 101b xenon v2'],
@@ -7161,6 +7169,7 @@ final class DeviceTest extends TestCase
             ['X-treme_PQ18_MAX', 'sigma-mobile=sigma-mobile x-treme pq18 max'],
             ['Tab A802', 'sigma-mobile=sigma-mobile tab a802'],
             ['X-treme_PQ18', 'sigma-mobile=sigma-mobile x-treme pq18'],
+            ['X-TREME PQ52', 'sigma-mobile=sigma-mobile x-treme pq52'],
             // cricket
             ['SL112C', 'cricket=cricket sl112c'],
             ['SL219C', 'cricket=cricket sl219c'],
