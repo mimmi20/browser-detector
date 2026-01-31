@@ -5794,6 +5794,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Rakuten Mobile',
                 'key' => 'rakuten-mobile',
             ],
+            [
+                'type' => '8pecxstudios',
+                'name' => '8pecxstudios',
+                'brandname' => '8pecxstudios',
+                'key' => '8pecxstudios',
+            ],
+            [
+                'type' => 'Danew',
+                'name' => 'Danew',
+                'brandname' => 'Danew',
+                'key' => 'danew',
+            ],
         ];
     }
 

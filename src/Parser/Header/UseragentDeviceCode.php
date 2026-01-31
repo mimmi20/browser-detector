@@ -79,8 +79,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         ) {
             return match ($matches['code']) {
                 'W' => 'unknown=windows desktop',
-                'A' => 'unknown=general mobile phone',
-                default => 'unknown=unknown',
+                default => 'unknown=general mobile phone',
             };
         }
 

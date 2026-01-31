@@ -6047,6 +6047,7 @@ final class DeviceTest extends TestCase
             ['BQ_32FS40B', 'bq=bq 32fs40b'],
             ['BQ_32FSFO1B', 'bq=bq 32fsf01b'],
             ['BQ_42FS07B', 'bq=bq 42fs07b'],
+            ['BQru-7083', 'bq=bq bqru-7083'],
             // meizu
             ['M6s', 'meizu=meizu m6s'],
             ['MEIZU Note21', 'meizu=meizu note 21'],

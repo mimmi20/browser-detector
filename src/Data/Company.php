@@ -1933,6 +1933,10 @@ enum Company: string implements CompanyInterface
 
     case rakutenMobile = 'Rakuten Mobile';
 
+    case eightPecxStudios = '8pecxstudios';
+
+    case danew = 'Danew';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2897,6 +2901,8 @@ enum Company: string implements CompanyInterface
             'github', 'github inc.' => self::github,
             'prestigio' => self::prestigio,
             'rakutenmobile', 'rakuten mobile', 'rakuten-mobile' => self::rakutenMobile,
+            'eightpecxstudios', '8pecxstudios' => self::eightPecxStudios,
+            'danew' => self::danew,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3586,6 +3592,7 @@ enum Company: string implements CompanyInterface
             self::ghSoftware => 'gh-software',
             self::morningscore => 'morning-score',
             self::rakutenMobile => 'rakuten-mobile',
+            self::eightPecxStudios => '8pecxstudios',
             default => $this->name,
         };
     }

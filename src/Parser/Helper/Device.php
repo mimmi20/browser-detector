@@ -5261,6 +5261,7 @@ final class Device implements DeviceInterface
             'bq_32fs40b' => 'bq=bq 32fs40b',
             'bq_32fsfo1b' => 'bq=bq 32fsf01b',
             'bq_42fs07b' => 'bq=bq 42fs07b',
+            'bqru-7083' => 'bq=bq bqru-7083',
             // meizu
             'm6s' => 'meizu=meizu m6s',
             'meizu note21' => 'meizu=meizu note 21',

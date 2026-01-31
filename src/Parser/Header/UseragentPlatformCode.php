@@ -101,8 +101,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
         ) {
             return match ($matches['code']) {
                 'W' => Os::windows,
-                'A' => Os::android,
-                default => Os::unknown,
+                default => Os::android,
             };
         }
 

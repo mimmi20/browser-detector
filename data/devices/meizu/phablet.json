@@ -46,5 +46,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "meizu m2 note": {
+    "deviceName": "M571C",
+    "marketingName": "M2 Note",
+    "manufacturer": "meizu",
+    "brand": "meizu",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }
