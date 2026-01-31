@@ -5782,6 +5782,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'GitHub',
                 'key' => 'github',
             ],
+            [
+                'type' => 'Prestigio',
+                'name' => 'Prestigio',
+                'brandname' => 'Prestigio',
+                'key' => 'prestigio',
+            ],
+            [
+                'type' => 'Rakuten Mobile',
+                'name' => 'Rakuten Mobile',
+                'brandname' => 'Rakuten Mobile',
+                'key' => 'rakuten-mobile',
+            ],
         ];
     }
 

@@ -5886,6 +5886,7 @@ final class DeviceTest extends TestCase
             ['A201SH', 'sharp=sharp a201sh'],
             ['SH-53D', 'sharp=sharp sh-53d'],
             ['SH-M19s-y', 'sharp=sharp sh-m19s-y'],
+            ['SH-03K', 'sharp=sharp sh-03k'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],

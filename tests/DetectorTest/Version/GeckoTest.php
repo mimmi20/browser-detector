@@ -97,6 +97,10 @@ final class GeckoTest extends TestCase
                 'Mozilla/5.0 (Android 13; Mobile; RV:109.0) Gecko/115.0 Firefox115.0',
                 '109.0.0',
             ],
+            [
+                'Mozilla/5.0 (X11; U; Linux armv6l; rv 1.8.1.5pre) Gecko/20070619 Minimo/0.020',
+                '1.8.1.5',
+            ],
         ];
     }
 

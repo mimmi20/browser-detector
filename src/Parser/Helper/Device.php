@@ -5101,6 +5101,7 @@ final class Device implements DeviceInterface
             'a201sh' => 'sharp=sharp a201sh',
             'sh-53d' => 'sharp=sharp sh-53d',
             'sh-m19s-y' => 'sharp=sharp sh-m19s-y',
+            'sh-03k' => 'sharp=sharp sh-03k',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
