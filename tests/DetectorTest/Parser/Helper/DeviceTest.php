@@ -673,6 +673,7 @@ final class DeviceTest extends TestCase
             ['PEMT00', 'oppo=oppo pemt00'],
             ['OPPO R11s Plus', 'oppo=oppo r11s plus'],
             ['OPPO R9sk', 'oppo=oppo r9sk'],
+            ['OPPO R9 Plustm A', 'oppo=oppo r9 plustm a'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -5555,6 +5556,7 @@ final class DeviceTest extends TestCase
             // ['S61', 'caterpillar=caterpillar s61'],
             ['S52', 'caterpillar=caterpillar s52'],
             ['S31', 'caterpillar=caterpillar s31'],
+            ['S75', 'caterpillar=caterpillar s75'],
             // rim/blackberry
             ['STV100-4', 'rim=blackberry stv100-4'],
             ['BBF100-1', 'rim=blackberry bbf100-1'],
@@ -8269,6 +8271,8 @@ final class DeviceTest extends TestCase
             ['GoTab Gti8', 'ergo=ergo gotab gti8'],
             ['Ergo Tab Crystal Lite', 'ergo=ergo tab crystal lite'],
             ['A503-Optima', 'ergo=ergo a503'],
+            // danew
+            ['Dbook_110', 'danew=danew dbook 110'],
             // other
             ['Model"', null],
             [': "', null],

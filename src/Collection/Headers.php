@@ -272,7 +272,6 @@ final readonly class Headers
                             case 'adblock browser':
                             case 'google-nest-hub':
                             case 'chrome for ios':
-                            case 'chrome':
                             case 'ecosia':
                             case 'firefox':
                             case 'headline bot':

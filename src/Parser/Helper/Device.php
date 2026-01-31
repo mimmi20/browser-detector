@@ -643,6 +643,7 @@ final class Device implements DeviceInterface
             'pemt00' => 'oppo=oppo pemt00',
             'oppo r11s plus' => 'oppo=oppo r11s plus',
             'oppo r9sk' => 'oppo=oppo r9sk',
+            'oppo r9 plustm a' => 'oppo=oppo r9 plustm a',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -4771,6 +4772,7 @@ final class Device implements DeviceInterface
             // 's61' => 'caterpillar=caterpillar s61',
             's52' => 'caterpillar=caterpillar s52',
             's31' => 'caterpillar=caterpillar s31',
+            's75' => 'caterpillar=caterpillar s75',
             // rim/blackberry
             'stv100-4' => 'rim=blackberry stv100-4',
             'bbf100-1' => 'rim=blackberry bbf100-1',
@@ -7313,6 +7315,8 @@ final class Device implements DeviceInterface
             'gotab gti8' => 'ergo=ergo gotab gti8',
             'ergo tab crystal lite' => 'ergo=ergo tab crystal lite',
             'a503-optima' => 'ergo=ergo a503',
+            // danew
+            'dbook_110' => 'danew=danew dbook 110',
             // other
             default => null,
         };

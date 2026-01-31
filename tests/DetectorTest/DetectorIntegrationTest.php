@@ -2170,7 +2170,7 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'Chrome',
+                        'name' => 'Chromium',
                         'modus' => null,
                         'version' => '125.0.0',
                         'manufacturer' => 'Google',
@@ -2542,7 +2542,7 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => 64,
                     ],
                     'client' => [
-                        'name' => 'Chrome',
+                        'name' => 'Chromium',
                         'modus' => null,
                         'version' => '138.0.0',
                         'manufacturer' => 'Google',
@@ -4134,7 +4134,7 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'Chrome',
+                        'name' => 'Chromium',
                         'modus' => null,
                         'version' => '124.0.0',
                         'manufacturer' => 'Google',
@@ -6498,7 +6498,7 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'Chrome',
+                        'name' => 'Chromium',
                         'modus' => null,
                         'version' => '102.0.0',
                         'manufacturer' => 'Google',
@@ -6616,7 +6616,7 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'Chrome',
+                        'name' => 'Chromium',
                         'modus' => null,
                         'version' => '108.0.0',
                         'manufacturer' => 'Google',
