@@ -22,6 +22,7 @@ use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
 use BrowserDetector\Version\RemixOsFactory;
 use BrowserDetector\Version\RimOsFactory;
+use BrowserDetector\Version\SmartisanOsFactory;
 use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
@@ -773,7 +774,7 @@ enum Os: string implements OsInterface
             self::raspbian => ['factory' => RaspbianFactory::class, 'search' => null],
             self::remixOs => ['factory' => RemixOsFactory::class, 'search' => null],
             self::rimOs => ['factory' => RimOsFactory::class, 'search' => null],
-            self::smartisanOS => ['factory' => \BrowserDetector\Version\SmartisanOsFactory::class, 'search' => null],
+            self::smartisanOS => ['factory' => SmartisanOsFactory::class, 'search' => null],
             self::windows2003 => ['factory' => null, 'search' => null, 'value' => 2003],
             self::windows31, self::windowsnt31 => ['factory' => null, 'search' => null, 'value' => 3.1],
             self::windows311 => ['factory' => null, 'search' => null, 'value' => 3.11],

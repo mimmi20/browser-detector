@@ -242,8 +242,8 @@ final class DetectorIntegrationTest extends TestCase
                         'architecture' => null,
                         'deviceName' => 'Le X820',
                         'marketingName' => 'Le Max 2',
-                        'manufacturer' => 'leeco',
-                        'brand' => 'leeco',
+                        'manufacturer' => 'LeEco',
+                        'brand' => 'LeEco',
                         'dualOrientation' => true,
                         'simCount' => 2,
                         'display' => [

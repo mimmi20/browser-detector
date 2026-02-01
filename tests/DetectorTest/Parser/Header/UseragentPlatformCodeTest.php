@@ -56,7 +56,7 @@ final class UseragentPlatformCodeTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, string|Os>>
+     * @return array<int, array<int, Os|string>>
      *
      * @throws void
      */

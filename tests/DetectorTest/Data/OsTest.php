@@ -24,6 +24,7 @@ use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
 use BrowserDetector\Version\RemixOsFactory;
 use BrowserDetector\Version\RimOsFactory;
+use BrowserDetector\Version\SmartisanOsFactory;
 use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
@@ -1476,7 +1477,7 @@ final class OsTest extends TestCase
                 'name' => 'Smartisan OS',
                 'marketingName' => 'Smartisan OS',
                 'manufacturer' => Company::smartisan,
-                'version' => ['factory' => \BrowserDetector\Version\SmartisanOsFactory::class, 'search' => null],
+                'version' => ['factory' => SmartisanOsFactory::class, 'search' => null],
                 'key' => 'smartisan-os',
             ],
         ];

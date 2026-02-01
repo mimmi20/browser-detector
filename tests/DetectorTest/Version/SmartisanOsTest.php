@@ -14,21 +14,15 @@ declare(strict_types = 1);
 namespace Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
-use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\SmartisanOs;
 use BrowserDetector\Version\VersionBuilder;
-use BrowserDetector\Version\VersionBuilderInterface;
-use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
-
-use function assert;
 
 #[CoversClass(SmartisanOs::class)]
 final class SmartisanOsTest extends TestCase
@@ -37,6 +31,7 @@ final class SmartisanOsTest extends TestCase
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      * @throws Exception
+     * @throws NotNumericException
      */
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void

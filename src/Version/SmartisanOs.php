@@ -16,10 +16,7 @@ namespace BrowserDetector\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
 
-use function array_unshift;
-use function mb_strtolower;
 use function preg_match;
-use function str_contains;
 
 final readonly class SmartisanOs implements VersionFactoryInterface
 {
@@ -32,7 +29,7 @@ final readonly class SmartisanOs implements VersionFactoryInterface
     /**
      * returns the version of the operating system/platform
      *
-     * @throws void
+     * @throws NotNumericException
      */
     #[Override]
     public function detectVersion(string $useragent): VersionInterface
