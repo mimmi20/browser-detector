@@ -1471,6 +1471,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'mocor-os',
             ],
+            [
+                'type' => 'Smartisan OS',
+                'name' => 'Smartisan OS',
+                'marketingName' => 'Smartisan OS',
+                'manufacturer' => Company::smartisan,
+                'version' => ['factory' => \BrowserDetector\Version\SmartisanOsFactory::class, 'search' => null],
+                'key' => 'smartisan-os',
+            ],
         ];
     }
 }

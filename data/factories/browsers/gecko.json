@@ -42,7 +42,7 @@
     "/microb|maemo ?browser|tablet browser/i": "microb",
     "/k-meleon/i": "k-meleon",
     "/k-ninja/i": "k-ninja",
-    "/(?<!_)ruby/i": "ruby",
+    "/(?<!_)ruby(?!, )/i": "ruby",
     "/googleimageproxy|ggpht/i": "gmail-image-proxy",
     "/lolifox/i": "lolifox",
     "/cyberfox/i": "cyberfox",

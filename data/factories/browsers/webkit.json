@@ -232,7 +232,7 @@
     "/bytespider/i": "bytespider",
     "/surdotlybot/i": "surdotlybot",
     "/nprone_android/i": "npr-app",
-    "/com\\.tcl\\.browser/i": "browse-here",
+    "/com\\.tcl\\.browser|\\d+\\/tclwebkit\\d+[.\\d]*/i": "browse-here",
     "/uphonewebbrowser/i": "uphone-browser",
     "/podcast ?addict/i": "podcastaddict",
     "/digaplus/i": "diga",

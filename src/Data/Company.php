@@ -1937,6 +1937,8 @@ enum Company: string implements CompanyInterface
 
     case danew = 'Danew';
 
+    case zaojianzhen = 'ZaoJianZhen';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2903,6 +2905,7 @@ enum Company: string implements CompanyInterface
             'rakutenmobile', 'rakuten mobile', 'rakuten-mobile' => self::rakutenMobile,
             'eightpecxstudios', '8pecxstudios' => self::eightPecxStudios,
             'danew' => self::danew,
+            'zaojianzhen' => self::zaojianzhen,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

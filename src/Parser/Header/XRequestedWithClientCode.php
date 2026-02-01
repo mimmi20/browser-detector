@@ -388,6 +388,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.dubox.drive' => 'terabox-app',
             'com.hihonor.search' => 'honor-search-app',
             'org.flow.browser' => 'flowsurf',
+            'com.tcl.browser' => 'browse-here',
             default => null,
         };
     }

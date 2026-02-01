@@ -255,6 +255,7 @@ final class MobileDeviceTest extends TestCase
             ['macOS/14.6.1 (23G93) dataaccessd/1.0'],
             ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 NetType/WIFI MicroMessenger/6.8.0(0x16080000) MacWechat/3.8.3(0x13080310) XWEB/30817 Flue'],
             ['Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.6.6.i (POLAROID, Si2157LG32, wireless)'],
+            ['Mozilla/5.0 (iPad; U; CPU OS 5_0 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.0.2 Mobile/9A5248d Safari/6533.18.5#2.0#TCL/TCL-EU-RT2851-S1/28/tclwebkit1.0.2/1920*1080(547201164,null;223638693,5e1c14b212714aba9f902d376e3504aa)'],
         ];
     }
 }

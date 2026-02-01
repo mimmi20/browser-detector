@@ -3722,6 +3722,10 @@ final class DeviceTest extends TestCase
             ['HUAWEI NTN-L22', 'huawei=huawei ntn-l22'],
             ['NTN-LX3', 'huawei=huawei ntn-lx3'],
             ['HUAWEI NTN-LX3', 'huawei=huawei ntn-lx3'],
+            ['JDN-W09', 'huawei=huawei jdn-w09'],
+            ['HUAWEI JDN-W09', 'huawei=huawei jdn-w09'],
+            ['JDN-L01', 'huawei=huawei jdn-l01'],
+            ['HUAWEI JDN-L01', 'huawei=huawei jdn-l01'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -4797,6 +4801,7 @@ final class DeviceTest extends TestCase
             ['vivo Xplay3S', 'vivo=vivo xplay3s'],
             ['vivo Xplay', 'vivo=vivo xplay'],
             ['vivo Xplay5A', 'vivo=vivo xplay5a'],
+            ['V2080A', 'vivo=vivo v2080a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],

@@ -314,7 +314,7 @@
     "/\\[pb\\//i": "proxy-browser",
     "/google_partner_monitoring/i": "google-partner-monitoring",
     "/gemini-deep-research/i": "gemini-deep-research",
-    "/com\\.tcl\\.browser/i": "browse-here",
+    "/com\\.tcl\\.browser|\\d+\\/tclwebkit\\d+[.\\d]*/i": "browse-here",
     "/rakutenwebsearch/i": "rakuten-web-search",
     "/hubspot crawler/i": "hubspot crawler",
     "/bitsightbot/i": "bitsightbot",

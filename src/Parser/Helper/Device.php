@@ -2987,6 +2987,8 @@ final class Device implements DeviceInterface
             'huawei mate 60 pro' => 'huawei=huawei mate 60 pro',
             'ntn-l22', 'huawei ntn-l22' => 'huawei=huawei ntn-l22',
             'ntn-lx3', 'huawei ntn-lx3' => 'huawei=huawei ntn-lx3',
+            'jdn-w09', 'huawei jdn-w09' => 'huawei=huawei jdn-w09',
+            'jdn-l01', 'huawei jdn-l01' => 'huawei=huawei jdn-l01',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -4044,6 +4046,7 @@ final class Device implements DeviceInterface
             'vivo xplay3s' => 'vivo=vivo xplay3s',
             'vivo xplay' => 'vivo=vivo xplay',
             'vivo xplay5a' => 'vivo=vivo xplay5a',
+            'v2080a' => 'vivo=vivo v2080a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',

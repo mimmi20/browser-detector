@@ -5806,6 +5806,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Danew',
                 'key' => 'danew',
             ],
+            [
+                'type' => 'ZaoJianZhen',
+                'name' => 'ZaoJianZhen',
+                'brandname' => 'ZaoJianZhen',
+                'key' => 'zaojianzhen',
+            ],
         ];
     }
 

@@ -563,6 +563,7 @@ final class XRequestedWithTest extends TestCase
             ['com.dubox.drive', true, 'terabox-app', true, null, false, Os::unknown],
             ['com.hihonor.search', true, 'honor-search-app', true, null, false, Os::unknown],
             ['org.flow.browser', true, 'flowsurf', true, null, false, Os::unknown],
+            ['com.tcl.browser', true, 'browse-here', true, null, false, Os::unknown],
         ];
     }
 }

@@ -374,6 +374,8 @@ enum Os: string implements OsInterface
 
     case mocorOS = 'Mocor OS';
 
+    case smartisanOS = 'Smartisan OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -552,6 +554,7 @@ enum Os: string implements OsInterface
             'javame', 'java-me', 'java me' => self::javaMe,
             'operatv', 'opera-tv', 'opera tv' => self::operaTv,
             'mocoros', 'mocor-os', 'mocor os' => self::mocorOS,
+            'smartisanos', 'smartisan-os', 'smartisan os' => self::smartisanOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -659,6 +662,7 @@ enum Os: string implements OsInterface
             self::plasmaMobile => Company::kde,
             self::whaleOS => Company::whaleTV,
             self::operaTv => Company::opera,
+            self::smartisanOS => Company::smartisan,
             default => Company::unknown,
         };
     }
@@ -769,6 +773,7 @@ enum Os: string implements OsInterface
             self::raspbian => ['factory' => RaspbianFactory::class, 'search' => null],
             self::remixOs => ['factory' => RemixOsFactory::class, 'search' => null],
             self::rimOs => ['factory' => RimOsFactory::class, 'search' => null],
+            self::smartisanOS => ['factory' => \BrowserDetector\Version\SmartisanOsFactory::class, 'search' => null],
             self::windows2003 => ['factory' => null, 'search' => null, 'value' => 2003],
             self::windows31, self::windowsnt31 => ['factory' => null, 'search' => null, 'value' => 3.1],
             self::windows311 => ['factory' => null, 'search' => null, 'value' => 3.11],
@@ -900,6 +905,7 @@ enum Os: string implements OsInterface
             self::javaMe => 'java-me',
             self::operaTv => 'opera-tv',
             self::mocorOS => 'mocor-os',
+            self::smartisanOS => 'smartisan-os',
             default => $this->name,
         };
     }
