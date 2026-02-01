@@ -2007,18 +2007,6 @@
     },
     "engine": "unknown"
   },
-  "fast webcrawler": {
-    "name": "Fast Webcrawler",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "FAST\\-WebCrawler"
-      ]
-    },
-    "engine": "unknown"
-  },
   "fastbot crawler": {
     "name": "fastbot crawler",
     "manufacturer": "pagedesign",
@@ -4792,19 +4780,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PageFreezer"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "pagepeeker": {
-    "name": "PagePeeker",
-    "manufacturer": "page-peeker",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PPBot",
-        "PagePeeker"
       ]
     },
     "engine": "unknown"
@@ -9385,18 +9360,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EtaoSpider"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "criteo-bot": {
-    "name": "CriteoBot",
-    "manufacturer": "criteo",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "CriteoBot"
       ]
     },
     "engine": "unknown"

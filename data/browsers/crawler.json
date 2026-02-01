@@ -1730,5 +1730,54 @@
       ]
     },
     "engine": null
+  },
+  "criteo-bot": {
+    "name": "CriteoBot",
+    "manufacturer": "criteo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CriteoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fast webcrawler": {
+    "name": "Fast Webcrawler",
+    "manufacturer": "yahoo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FAST\\-WebCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "claude-searchbot": {
+    "name": "Claude-SearchBot",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Claude-SearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pagepeeker": {
+    "name": "PagePeeker",
+    "manufacturer": "page-peeker",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PPBot",
+        "PagePeeker"
+      ]
+    },
+    "engine": "unknown"
   }
 }

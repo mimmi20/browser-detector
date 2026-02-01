@@ -516,8 +516,10 @@
     "manufacturer": "moonchild-productions",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Basilisk"
+      ]
     },
     "engine": "goanna"
   },

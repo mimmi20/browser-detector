@@ -191,5 +191,17 @@
       ]
     },
     "engine": null
+  },
+  "google-firebase": {
+    "name": "Google-Firebase",
+    "manufacturer": "google",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Firebase"
+      ]
+    },
+    "engine": null
   }
 }

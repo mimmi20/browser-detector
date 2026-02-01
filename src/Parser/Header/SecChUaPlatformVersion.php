@@ -64,7 +64,7 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
                 0.1, 6.1 => '7',
                 0.2 => '8',
                 0.3 => '8.1',
-                10.0 => '10',
+                8.0, 10.0 => '10',
                 default => '11',
             };
 

@@ -5830,6 +5830,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'AOpen',
                 'key' => 'aopen',
             ],
+            [
+                'type' => 'Element Software',
+                'name' => 'Element Software',
+                'brandname' => 'Element Software',
+                'key' => 'element-software',
+            ],
+            [
+                'type' => 'PagePeeker',
+                'name' => 'pagepeeker SRL',
+                'brandname' => 'PagePeeker',
+                'key' => 'page-peeker',
+            ],
         ];
     }
 
