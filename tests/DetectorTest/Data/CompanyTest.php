@@ -5812,6 +5812,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'ZaoJianZhen',
                 'key' => 'zaojianzhen',
             ],
+            [
+                'type' => 'LeEco',
+                'name' => 'Leshi Internet Information & Technology',
+                'brandname' => 'LeEco',
+                'key' => 'leeco',
+            ],
         ];
     }
 

@@ -5872,6 +5872,7 @@ final class Device implements DeviceInterface
             'pmt3831_4g' => 'prestigio=prestigio pmt3831_4g',
             'pmt4311_3g_ru' => 'prestigio=prestigio pmt4311_3g_ru',
             'pmt3618_4g' => 'prestigio=prestigio pmt3618_4g',
+            'psp7590duo' => 'prestigio=prestigio psp7590duo',
             // texet
             'tm-5084' => 'texet=texet tm-5084',
             // sky

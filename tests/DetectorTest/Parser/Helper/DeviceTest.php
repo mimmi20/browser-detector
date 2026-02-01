@@ -6737,6 +6737,7 @@ final class DeviceTest extends TestCase
             ['PMT3831_4G', 'prestigio=prestigio pmt3831_4g'],
             ['PMT4311_3G_RU', 'prestigio=prestigio pmt4311_3g_ru'],
             ['PMT3618_4G', 'prestigio=prestigio pmt3618_4g'],
+            ['PSP7590DUO', 'prestigio=prestigio psp7590duo'],
             // texet
             ['TM-5084', 'texet=texet tm-5084'],
             // sky
