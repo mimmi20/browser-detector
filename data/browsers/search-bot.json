@@ -742,5 +742,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "ya-direct-fetcher": {
+    "name": "YaDirectFetcher",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YaDirectFetcher"
+      ]
+    },
+    "engine": "unknown"
   }
 }

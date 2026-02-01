@@ -564,6 +564,7 @@ final class XRequestedWithTest extends TestCase
             ['com.hihonor.search', true, 'honor-search-app', true, null, false, Os::unknown],
             ['org.flow.browser', true, 'flowsurf', true, null, false, Os::unknown],
             ['com.tcl.browser', true, 'browse-here', true, null, false, Os::unknown],
+            ['com.imo.android.imoim', true, 'imo-international-calls-chat', true, null, false, Os::unknown],
         ];
     }
 }

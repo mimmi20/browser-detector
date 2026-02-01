@@ -1280,6 +1280,7 @@ final class DeviceTest extends TestCase
             ['Xiaomi 11T Pro', 'xiaomi=xiaomi 11t pro'],
             ['Xiaomi 11T', 'xiaomi=xiaomi 11t'],
             ['XIG01', 'xiaomi=xiaomi xig01'],
+            ['MIX', 'xiaomi=xiaomi mi mix'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -4917,6 +4918,7 @@ final class DeviceTest extends TestCase
             ['WP19', 'oukitel=oukitel wp19'],
             ['WP210 Pro', 'oukitel=oukitel wp210 pro'],
             ['OUKITEL G3', 'oukitel=oukitel g3'],
+            ['C11', 'oukitel=oukitel c11'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -5262,6 +5264,7 @@ final class DeviceTest extends TestCase
             ['6065A', 'alcatel=alcatel 6065a'],
             ['6027A', 'alcatel=alcatel 6027a'],
             ['5059S', 'alcatel=alcatel 5059s'],
+            ['A466BG', 'alcatel=alcatel a466bg'],
             // HTC
             ['HTC Desire 19+', 'htc=htc desire 19 plus'],
             ['HTC U11', 'htc=htc u11'],
@@ -6075,6 +6078,12 @@ final class DeviceTest extends TestCase
             ['MEIZU M5c', 'meizu=meizu m5c'],
             ['MZ-M5c', 'meizu=meizu m5c'],
             ['M5c', 'meizu=meizu m5c'],
+            ['MEIZU 16th', 'meizu=meizu 16th'],
+            ['MZ-16th', 'meizu=meizu 16th'],
+            ['16th', 'meizu=meizu 16th'],
+            ['MEIZU 16th plus', 'meizu=meizu 16th plus'],
+            ['MZ-16th plus', 'meizu=meizu 16th plus'],
+            ['16th plus', 'meizu=meizu 16th plus'],
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
             ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],
@@ -7610,6 +7619,7 @@ final class DeviceTest extends TestCase
             // majestic
             ['TAB_918_PRO_4G', 'majestic=majestic tab 918 pro 4g'],
             ['TAB 611 3G', 'majestic=majestic tab 611 3g'],
+            ['TAB 711 4G', 'majestic=majestic tab 711 4g'],
             // nec
             ['LAVIE Tab 9QHD1', 'nec=nec 9qhd1'],
             // haier

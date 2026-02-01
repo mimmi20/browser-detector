@@ -1247,6 +1247,7 @@ final class Device implements DeviceInterface
             'xiaomi 11t pro' => 'xiaomi=xiaomi 11t pro',
             'xiaomi 11t' => 'xiaomi=xiaomi 11t',
             'xig01' => 'xiaomi=xiaomi xig01',
+            'mix' => 'xiaomi=xiaomi mi mix',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -4156,6 +4157,7 @@ final class Device implements DeviceInterface
             'wp19' => 'oukitel=oukitel wp19',
             'wp210 pro' => 'oukitel=oukitel wp210 pro',
             'oukitel g3' => 'oukitel=oukitel g3',
+            'c11' => 'oukitel=oukitel c11',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -4493,6 +4495,7 @@ final class Device implements DeviceInterface
             '6065a' => 'alcatel=alcatel 6065a',
             '6027a' => 'alcatel=alcatel 6027a',
             '5059s' => 'alcatel=alcatel 5059s',
+            'a466bg' => 'alcatel=alcatel a466bg',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',
@@ -5282,6 +5285,8 @@ final class Device implements DeviceInterface
             'mz-meizu 21 note' => 'meizu=meizu 21 note',
             'meizu mx6', 'mz-mx6', 'mx6' => 'meizu=meizu mx6',
             'meizu m5c', 'mz-m5c', 'm5c' => 'meizu=meizu m5c',
+            'meizu 16th', 'mz-16th', '16th' => 'meizu=meizu 16th',
+            'meizu 16th plus', 'mz-16th plus', '16th plus' => 'meizu=meizu 16th plus',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
             'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',
@@ -6661,6 +6666,7 @@ final class Device implements DeviceInterface
             // majestic
             'tab_918_pro_4g' => 'majestic=majestic tab 918 pro 4g',
             'tab 611 3g' => 'majestic=majestic tab 611 3g',
+            'tab 711 4g' => 'majestic=majestic tab 711 4g',
             // nec
             'lavie tab 9qhd1' => 'nec=nec 9qhd1',
             // haier

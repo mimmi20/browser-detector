@@ -405,10 +405,8 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SafariViewService"
-      ]
+      "factory": "\\BrowserDetector\\Version\\SafariFactory",
+      "search": null
     },
     "engine": "unknown"
   },
@@ -505,6 +503,31 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ruby"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ffuf": {
+    "name": "FFUF",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Fuzz Faster U Fool v",
+        "Fuzz Faster U Fool"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "r-curl": {
+    "name": "r-curl",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "r-curl"
       ]
     },
     "engine": "unknown"

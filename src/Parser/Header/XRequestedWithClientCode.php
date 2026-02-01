@@ -389,6 +389,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.hihonor.search' => 'honor-search-app',
             'org.flow.browser' => 'flowsurf',
             'com.tcl.browser' => 'browse-here',
+            'com.imo.android.imoim' => 'imo-international-calls-chat',
             default => null,
         };
     }
