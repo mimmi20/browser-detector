@@ -996,7 +996,7 @@
     "/scamadviserexternalhit/i": "scamadviser-external-hit",
     "/sitelockspider/i": "sitelockspider",
     "/sitescorebot/i": "site-score-bot",
-    "/lua-resty-http/i": "lua-resty-http",
+    "/lua-resty-http\\/[.\\d]+.+ngx_/i": "lua-resty-http",
     "/serpstatbot/i": "serpstatbot",
     "/pocketimagecache/i": "pocket-image-cache",
     "/pocketparser/i": "pocket-parser",

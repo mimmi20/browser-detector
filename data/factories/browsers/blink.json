@@ -204,6 +204,7 @@
     "/kajabimobileapp/i": "kajabi-app",
     "/oceanhero/i": "oceanhero-browser",
     "/tv bro\\//i": "tv-bro",
+    "/zalo/i": "zalo",
     "/(?:cpu iphone os|cpu os).*(?<!agent)version[ \\/][0-9_.]+ +chrome\\/(?:2[89]|[3-9][0-9]|[1-9][0-9]{2})\\D/i": "chrome for ios",
     "/(?<!agent)version[ \\/][0-9_.]+ +chrome\\/(?:2[89]|[3-9][0-9]|[1-9][0-9]{2})\\D/i": "chrome webview",
     "/(?<!agent)version[ \\/][0-9_.]+ +chrome|com\\.android\\.browser/i": "android webview",

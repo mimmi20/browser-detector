@@ -4702,5 +4702,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "zalo": {
+    "name": "Zalo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zalo"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -5993,6 +5993,7 @@ final class Device implements DeviceInterface
             'c5 2019' => 'blu=blu c5 2019',
             'c110v' => 'blu=blu c110v',
             'c110l' => 'blu=blu c110l',
+            'bold n1' => 'blu=blu bold n1',
             // apple
             'iphone18,3', 'iph18,3' => 'apple=apple iphone 18,3',
             'iphone18,2', 'iph18,2' => 'apple=apple iphone 18,2',
@@ -6703,6 +6704,7 @@ final class Device implements DeviceInterface
             'a151' => 'inoi=inoi a151',
             'a181_plus' => 'inoi=inoi a181 plus',
             'a161' => 'inoi=inoi a161',
+            'inoi_6i_lite' => 'inoi=inoi 6i lite',
             // jumper
             'ezpad m11' => 'jumper=jumper ezpad m11',
             'ezpad m10s' => 'jumper=jumper ezpad m10s',
@@ -7035,6 +7037,7 @@ final class Device implements DeviceInterface
             // transpeed
             '8k618-t' => 'transpeed=transpeed 8k618-t',
             '8k3528-t' => 'transpeed=transpeed 8k3528-t',
+            'transpeed_6k' => 'transpeed=transpeed 6k',
             // leotec
             'lesph5701w' => 'leotec=leotec lesph5701w',
             // td-systems

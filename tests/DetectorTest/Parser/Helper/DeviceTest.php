@@ -6866,6 +6866,7 @@ final class DeviceTest extends TestCase
             ['C5 2019', 'blu=blu c5 2019'],
             ['C110V', 'blu=blu c110v'],
             ['C110L', 'blu=blu c110l'],
+            ['BOLD N1', 'blu=blu bold n1'],
             // apple
             ['iPhone18,3', 'apple=apple iphone 18,3'],
             ['iPh18,3', 'apple=apple iphone 18,3'],
@@ -7656,6 +7657,7 @@ final class DeviceTest extends TestCase
             ['A151', 'inoi=inoi a151'],
             ['A181_Plus', 'inoi=inoi a181 plus'],
             ['A161', 'inoi=inoi a161'],
+            ['INOI_6i_Lite', 'inoi=inoi 6i lite'],
             // jumper
             ['EZpad M11', 'jumper=jumper ezpad m11'],
             ['EZpad M10S', 'jumper=jumper ezpad m10s'],
@@ -7994,6 +7996,7 @@ final class DeviceTest extends TestCase
             // transpeed
             ['8K618-T', 'transpeed=transpeed 8k618-t'],
             ['8K3528-T', 'transpeed=transpeed 8k3528-t'],
+            ['Transpeed_6K', 'transpeed=transpeed 6k'],
             // leotec
             ['LESPH5701W', 'leotec=leotec lesph5701w'],
             // td-systems
