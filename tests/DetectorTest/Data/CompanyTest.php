@@ -5824,6 +5824,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Leagoo',
                 'key' => 'leagoo',
             ],
+            [
+                'type' => 'AOpen',
+                'name' => 'AOpen',
+                'brandname' => 'AOpen',
+                'key' => 'aopen',
+            ],
         ];
     }
 

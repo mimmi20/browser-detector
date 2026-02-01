@@ -426,7 +426,7 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($clientCodename);
             $clientVersion  = match ($clientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot' => $clientVersions['user-agent']
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
                 'duckduck app', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']
@@ -434,7 +434,7 @@ final readonly class Headers
                     ?? array_last($clientVersions),
                 'ecosia' => $clientVersions['sec-ch-ua-full-version']
                     ?? array_last($clientVersions),
-                'vivaldi', 'opera gx' => $clientVersions['sec-ch-ua']
+                'vivaldi' => $clientVersions['sec-ch-ua']
                     ?? array_last($clientVersions),
                 'chrome' => $chromeClientVersion
                     ?? $clientVersions['sec-ch-ua-full-version-list']
@@ -498,7 +498,16 @@ final readonly class Headers
             $platformCodes = [\BrowserDetector\Data\Os::unknown];
         }
 
-        $firstPlatformCode = array_first($platformCodes);
+        $firstPlatformCode      = array_first($platformCodes);
+        $platformCodeFromDevice = null;
+
+        try {
+            $platformCodeFromDevice = \BrowserDetector\Data\Os::fromName(
+                (string) $platformCodenameFromDevice,
+            );
+        } catch (UnexpectedValueException) {
+            // do nothing
+        }
 
         if (
             (
@@ -507,13 +516,7 @@ final readonly class Headers
             )
             || $firstPlatformCode === null
         ) {
-            try {
-                $firstPlatformCode = \BrowserDetector\Data\Os::fromName(
-                    (string) $platformCodenameFromDevice,
-                );
-            } catch (UnexpectedValueException) {
-                // do nothing
-            }
+            $firstPlatformCode = $platformCodeFromDevice;
         }
 
         if ($firstPlatformCode instanceof \UaData\OsInterface) {
@@ -586,6 +589,9 @@ final readonly class Headers
                     ) {
                         $platform       = $lastPlatformCode;
                         $platformHeader = array_last($headersWithPlatformCode);
+                    } elseif ($platformCodeFromDevice === \BrowserDetector\Data\Os::fireos) {
+                        $platform       = $platformCodeFromDevice;
+                        $platformHeader = null;
                     } else {
                         $platformHeader = array_first($headersWithPlatformCode);
                     }

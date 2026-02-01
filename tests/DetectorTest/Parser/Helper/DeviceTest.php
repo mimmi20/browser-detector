@@ -4092,6 +4092,9 @@ final class DeviceTest extends TestCase
             ['RMX3709', 'realme=realme rmx3709'],
             ['RMX3708', 'realme=realme rmx3708'],
             ['4K Google TV Stick', 'realme=realme 4k google tv stick'],
+            ['RMX1901', 'realme=realme rmx1901'],
+            ['RMX1903', 'realme=realme rmx1903'],
+            ['Realme X', 'realme=realme x'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -6767,6 +6770,7 @@ final class DeviceTest extends TestCase
             ['Elite Max', 'sky=sky elite max'],
             ['Elite C63', 'sky=sky elite c63'],
             ['SKY PAD10', 'sky=sky pad 10'],
+            ['Elite 5.0L+', 'sky=sky elite 5.0l+'],
             // iiif150
             ['R2022', 'iiif150=iiif150 r2022'],
             ['B2021', 'iiif150=iiif150 b2021'],
@@ -8293,6 +8297,8 @@ final class DeviceTest extends TestCase
             ['A503-Optima', 'ergo=ergo a503'],
             // danew
             ['Dbook_110', 'danew=danew dbook 110'],
+            // aopen
+            ['WT19M-FI', 'aopen=aopen etile wt19m-fi'],
             // other
             ['Model"', null],
             [': "', null],

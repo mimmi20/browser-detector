@@ -754,5 +754,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "google adwords displayads webrender": {
+    "name": "Google Adwords DisplayAds WebRender",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google\\-Adwords\\-DisplayAds\\-WebRender"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -3344,6 +3344,9 @@ final class Device implements DeviceInterface
             'rmx3709' => 'realme=realme rmx3709',
             'rmx3708' => 'realme=realme rmx3708',
             '4k google tv stick' => 'realme=realme 4k google tv stick',
+            'rmx1901' => 'realme=realme rmx1901',
+            'rmx1903' => 'realme=realme rmx1903',
+            'realme x' => 'realme=realme x',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -5894,6 +5897,7 @@ final class Device implements DeviceInterface
             'elite max' => 'sky=sky elite max',
             'elite c63' => 'sky=sky elite c63',
             'sky pad10' => 'sky=sky pad 10',
+            'elite 5.0l+' => 'sky=sky elite 5.0l+',
             // iiif150
             'r2022' => 'iiif150=iiif150 r2022',
             'b2021' => 'iiif150=iiif150 b2021',
@@ -7331,6 +7335,8 @@ final class Device implements DeviceInterface
             'a503-optima' => 'ergo=ergo a503',
             // danew
             'dbook_110' => 'danew=danew dbook 110',
+            // aopen
+            'wt19m-fi' => 'aopen=aopen etile wt19m-fi',
             // other
             default => null,
         };

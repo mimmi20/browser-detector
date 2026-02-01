@@ -1943,6 +1943,8 @@ enum Company: string implements CompanyInterface
 
     case leagoo = 'Leagoo';
 
+    case aopen = 'AOpen';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2912,6 +2914,7 @@ enum Company: string implements CompanyInterface
             'zaojianzhen' => self::zaojianzhen,
             'leeco', 'leshi internet information & technology' => self::leeco,
             'leagoo', 'leagoo international co., limited' => self::leagoo,
+            'aopen' => self::aopen,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
