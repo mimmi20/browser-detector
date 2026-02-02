@@ -531,5 +531,30 @@
       ]
     },
     "engine": "unknown"
+  },
+  "faraday": {
+    "name": "Faraday",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Faraday v",
+        "Faraday"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "www-mechanize": {
+    "name": "WWW-Mechanize",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mechanize"
+      ]
+    },
+    "engine": "webkit"
   }
 }

@@ -203,5 +203,17 @@
       ]
     },
     "engine": null
+  },
+  "link-preview": {
+    "name": "LinkPreview",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinkPreview"
+      ]
+    },
+    "engine": null
   }
 }

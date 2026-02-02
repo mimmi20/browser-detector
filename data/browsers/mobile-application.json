@@ -4714,5 +4714,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "multi-mail": {
+    "name": "MultiMail",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MultiMail"
+      ]
+    },
+    "engine": "unknown"
   }
 }

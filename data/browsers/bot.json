@@ -1994,19 +1994,6 @@
     },
     "engine": "unknown"
   },
-  "faraday": {
-    "name": "Faraday",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Faraday v",
-        "Faraday"
-      ]
-    },
-    "engine": "unknown"
-  },
   "fastbot crawler": {
     "name": "fastbot crawler",
     "manufacturer": "pagedesign",
@@ -8020,18 +8007,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "www-mechanize": {
-    "name": "WWW-Mechanize",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Mechanize"
-      ]
-    },
-    "engine": "webkit"
   },
   "www4mail": {
     "name": "www4mail",

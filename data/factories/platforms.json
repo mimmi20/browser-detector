@@ -71,7 +71,7 @@
     "/kaios/i": "kaios",
     "/spreadtrum/i": "mocor-os",
     "/Smartisan[_ ]|(SM(?:70[15]|801|919)|YQ60[1357]|DT2002C|DE106|DT190[12]A|O[CE]106|OC105)[ \\/;\\)]/i": "smartisan-os",
-    "/yunos|baidu yi|(?<!o)andr[0o]id|aosp|harmonyos|silk|juc ?\\(linux;|adr |gingerbread|ucweb\\/2\\.0 \\(linux;|vre;|linux; googletv|beyondpod|htc_sensation_z710e|puffin\\/[\\d\\.]+a[tp]/i": "android",
+    "/yunos|baidu yi|(?<!o)andr[0o]id|aosp|harmonyos|silk|juc ?\\(linux;|adr |gingerbread|ucweb\\/2\\.0 \\(linux;|vre;|linux; googletv|beyondpod|htc_sensation_z710e|puffin\\/[\\d\\.]+a[tp]|okhttp/i": "android",
     "/mobilesafari\\/.*cfnetwork|watchos|(?<!like |t)iphone|cpu i?os/i": "ios",
     "/safari\\/.*cfnetwork|(?<!like )mac os x|power macintosh/i": "mac",
     "/(?<!FBSN\\/|\\()darwin|cfnetwork/i": "darwin",
