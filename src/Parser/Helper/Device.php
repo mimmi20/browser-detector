@@ -647,6 +647,7 @@ final class Device implements DeviceInterface
             'oppo r11t' => 'oppo=oppo r11t',
             'oppo r11' => 'oppo=oppo r11',
             'oppo r11s' => 'oppo=oppo r11s',
+            'oppo r11st' => 'oppo=oppo r11st',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
