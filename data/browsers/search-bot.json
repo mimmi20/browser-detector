@@ -766,5 +766,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yandex-mediana-bot": {
+    "name": "YandexMedianaBot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexMedianaBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
