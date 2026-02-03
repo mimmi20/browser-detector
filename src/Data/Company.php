@@ -1949,6 +1949,12 @@ enum Company: string implements CompanyInterface
 
     case pagePeeker = 'PagePeeker';
 
+    case adrienBarbaresi = 'Adrien Barbaresi';
+
+    case w3c = 'W3C';
+
+    case brightInteractive = 'Bright Interactive';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2921,6 +2927,9 @@ enum Company: string implements CompanyInterface
             'aopen' => self::aopen,
             'elementsoftware', 'element-software', 'element software' => self::elementSoftware,
             'pagepeeker', 'page-peeker', 'pagepeeker srl' => self::pagePeeker,
+            'adrienbarbaresi', 'adrien-barbaresi', 'adrien barbaresi' => self::adrienBarbaresi,
+            'w3c' => self::w3c,
+            'brightinteractive', 'bright interactive ltd', 'bright interactive', 'bright-interactive' => self::brightInteractive,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3294,6 +3303,7 @@ enum Company: string implements CompanyInterface
             self::leeco => 'Leshi Internet Information & Technology',
             self::leagoo => 'LEAGOO International Co., Limited',
             self::pagePeeker => 'pagepeeker SRL',
+            self::brightInteractive => 'Bright Interactive Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -3616,6 +3626,8 @@ enum Company: string implements CompanyInterface
             self::eightPecxStudios => '8pecxstudios',
             self::elementSoftware => 'element-software',
             self::pagePeeker => 'page-peeker',
+            self::adrienBarbaresi => 'adrien-barbaresi',
+            self::brightInteractive => 'bright-interactive',
             default => $this->name,
         };
     }

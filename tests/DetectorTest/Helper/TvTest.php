@@ -85,6 +85,7 @@ final class TvTest extends TestCase
             ['Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.6.6.i (POLAROID, Si2157LG32, wireless)'],
             ['Mozilla/5.0 (iPad; U; CPU OS 5_0 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.0.2 Mobile/9A5248d Safari/6533.18.5#2.0#TCL/TCL-EU-RT2851-S1/28/tclwebkit1.0.2/1920*1080(547201164,null;223638693,5e1c14b212714aba9f902d376e3504aa)'],
             ['Opera/9.80 (Linux armv7l; Opera TV Store/5581) Presto/2.12.362 Version/12.11'],
+            ['Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.2.50.Honey.220 Model/Hisense-NT72671D'],
         ];
     }
 

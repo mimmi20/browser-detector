@@ -5842,6 +5842,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'PagePeeker',
                 'key' => 'page-peeker',
             ],
+            [
+                'type' => 'Adrien Barbaresi',
+                'name' => 'Adrien Barbaresi',
+                'brandname' => 'Adrien Barbaresi',
+                'key' => 'adrien-barbaresi',
+            ],
+            [
+                'type' => 'W3C',
+                'name' => 'W3C',
+                'brandname' => 'W3C',
+                'key' => 'w3c',
+            ],
+            [
+                'type' => 'Bright Interactive',
+                'name' => 'Bright Interactive Ltd',
+                'brandname' => 'Bright Interactive',
+                'key' => 'bright-interactive',
+            ],
         ];
     }
 

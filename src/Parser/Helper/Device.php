@@ -88,6 +88,7 @@ final class Device implements DeviceInterface
             'lm-x600im' => 'lg=lg lm-x600im',
             'lm-t605' => 'lg=lg lm-t605',
             '10a30q' => 'lg=lg 10a30q',
+            'lglk430' => 'lg=lg lk430',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',

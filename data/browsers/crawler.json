@@ -1779,5 +1779,39 @@
       ]
     },
     "engine": "unknown"
+  },
+  "testcrawler": {
+    "name": "TestCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "1001-firms-bot": {
+    "name": "1001FirmsBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "1001FirmsBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bright-bot": {
+    "name": "BrightBot",
+    "manufacturer": "bright-interactive",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BrightBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

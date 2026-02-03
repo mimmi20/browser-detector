@@ -110,6 +110,7 @@ final class DeviceTest extends TestCase
             ['LM-X600IM', 'lg=lg lm-x600im'],
             ['LM-T605', 'lg=lg lm-t605'],
             ['10A30Q', 'lg=lg 10a30q'],
+            ['LGLK430', 'lg=lg lk430'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],

@@ -556,5 +556,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "trafilatura": {
+    "name": "trafilatura",
+    "manufacturer": "adrien-barbaresi",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "trafilatura"
+      ]
+    },
+    "engine": "webkit"
   }
 }
