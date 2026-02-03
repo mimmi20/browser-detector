@@ -516,8 +516,10 @@
     "manufacturer": "moonchild-productions",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Basilisk"
+      ]
     },
     "engine": "goanna"
   },
@@ -544,7 +546,7 @@
     "engine": "unknown"
   },
   "blackberry": {
-    "name": "black-berry",
+    "name": "BlackBerry Browser",
     "manufacturer": "rim",
     "type": "browser",
     "version": {
@@ -1674,7 +1676,7 @@
     "engine": "unknown"
   },
   "huawei-browser": {
-    "name": "Huawei Browser Mobile",
+    "name": "Huawei Browser",
     "manufacturer": "huawei",
     "type": "browser",
     "version": {
@@ -1914,13 +1916,15 @@
     },
     "engine": "trident"
   },
-  "internet explorer with chromeframe": {
-    "name": "Internet Explorer with Chromeframe",
-    "manufacturer": "microsoft",
+  "chrome-frame": {
+    "name": "Chrome Frame",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
-      "factory": "\\BrowserDetector\\Version\\MicrosoftInternetExplorerFactory",
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "chromeframe"
+      ]
     },
     "engine": "webkit"
   },
@@ -2767,6 +2771,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Series ?60\\/",
         "BrowserNG"
       ]
     },
@@ -2942,7 +2947,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPX",
-        "OPRGX"
+        "OPRGX",
+        "OPR"
       ]
     },
     "engine": null
@@ -3968,7 +3974,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Swiftfox"
+        "Swiftfox",
+        "Firefox"
       ]
     },
     "engine": "gecko"
@@ -5202,7 +5209,7 @@
         "Mypal"
       ]
     },
-    "engine": "gecko"
+    "engine": "goanna"
   },
   "wave-browser": {
     "name": "Wave Browser",
@@ -5841,6 +5848,42 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UCBrowserHD"
+      ]
+    },
+    "engine": null
+  },
+  "maple": {
+    "name": "Maple",
+    "manufacturer": "samsung",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Maple"
+      ]
+    },
+    "engine": "maple"
+  },
+  "flowsurf": {
+    "name": "Flowsurf",
+    "manufacturer": "flow-team",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Flow"
+      ]
+    },
+    "engine": null
+  },
+  "atom": {
+    "name": "Atom",
+    "manufacturer": "github",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Atom"
       ]
     },
     "engine": null

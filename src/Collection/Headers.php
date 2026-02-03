@@ -49,10 +49,12 @@ use UnexpectedValueException;
 
 use function array_filter;
 use function array_first;
+use function array_key_exists;
 use function array_last;
 use function array_map;
 use function assert;
 use function explode;
+use function in_array;
 use function is_string;
 use function sprintf;
 
@@ -242,20 +244,21 @@ final readonly class Headers
         );
 
         $firstClientCodename = array_first($clientCodes);
+        $clientCodename      = $firstClientCodename;
+        $chromeClientVersion = null;
 
         if (is_string($firstClientCodename)) {
             switch ($firstClientCodename) {
                 case 'android webview':
                     $lastClientCodename = array_last($clientCodes);
+                    $clientHeader       = array_first($headersWithClientCode);
 
                     if (
                         is_string($lastClientCodename)
                         && $lastClientCodename !== $firstClientCodename
                     ) {
-                        $firstClientCodename = $lastClientCodename;
-                        $clientHeader        = array_last($headersWithClientCode);
-                    } else {
-                        $clientHeader = array_first($headersWithClientCode);
+                        $clientCodename = $lastClientCodename;
+                        $clientHeader   = array_last($headersWithClientCode);
                     }
 
                     break;
@@ -270,13 +273,43 @@ final readonly class Headers
                             case 'adblock browser':
                             case 'google-nest-hub':
                             case 'chrome for ios':
-                            case 'chrome':
                             case 'ecosia':
                             case 'firefox':
                             case 'headline bot':
                             case 'hubspot crawler':
-                                $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = array_last($headersWithClientCode);
+                            case 'headless-chrome':
+                            case 'samsungbrowser':
+                            case 'edge':
+                            case 'google-search':
+                            case 'iron':
+                            case 'aol desktop':
+                            case 'qtwebengine':
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
+
+                                break;
+                            case 'chrome':
+                                $headersWithPlatformCode = array_filter(
+                                    $this->headers,
+                                    static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
+                                );
+
+                                try {
+                                    $platformCodes = array_map(
+                                        static fn (HeaderInterface $platformHeader): \UaData\OsInterface => $platformHeader->getPlatformCode(),
+                                        $headersWithPlatformCode,
+                                    );
+                                } catch (\UaRequest\Exception\NotFoundException) {
+                                    $platformCodes = [\BrowserDetector\Data\Os::unknown];
+                                }
+
+                                if (($platformCodes['sec-ch-ua-platform'] ?? null) === \BrowserDetector\Data\Os::linux) {
+                                    $clientCodename = $lastClientCodename;
+                                    $clientHeader   = array_last($headersWithClientCode);
+
+                                    $clientVersions      = $this->getClientVersions($clientCodename);
+                                    $chromeClientVersion = array_last($clientVersions);
+                                }
 
                                 break;
                             default:
@@ -299,8 +332,14 @@ final readonly class Headers
                             case 'ecosia':
                             case 'duck-assist-bot':
                             case 'sogou web spider':
-                                $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = array_last($headersWithClientCode);
+                            case 'googlebot':
+                            case 'google-search':
+                            case 'webpagetest':
+                            case 'facebook lite':
+                            case 'lighthouse':
+                            case 'pageburst':
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
 
                                 break;
                             default:
@@ -318,8 +357,45 @@ final readonly class Headers
                             case 'amazon bot':
                             case 'facebookexternalhit':
                             case 'headline bot':
-                                $firstClientCodename = $lastClientCodename;
-                                $clientHeader        = array_last($headersWithClientCode);
+                            case 'hanalei-bot':
+                            case 'statistik-hessen':
+                            case 'claudebot':
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
+
+                                break;
+                            default:
+                                // do nothing
+                        }
+                    }
+
+                    break;
+                case 'brave':
+                    $lastClientCodename = array_last($clientCodes);
+                    $clientHeader       = array_first($headersWithClientCode);
+
+                    if (is_string($lastClientCodename)) {
+                        switch ($lastClientCodename) {
+                            case 'pageburst':
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
+
+                                break;
+                            default:
+                                // do nothing
+                        }
+                    }
+
+                    break;
+                case 'huawei-browser':
+                    $lastClientCodename = array_last($clientCodes);
+                    $clientHeader       = array_first($headersWithClientCode);
+
+                    if (is_string($lastClientCodename)) {
+                        switch ($lastClientCodename) {
+                            case 'huawei-mobile-services':
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
 
                                 break;
                             default:
@@ -349,22 +425,29 @@ final readonly class Headers
 
             assert($clientHeader instanceof HeaderInterface);
 
-            $clientVersions = $this->getClientVersions($firstClientCodename);
-            $clientVersion  = match ($firstClientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'opera gx', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app' => $clientVersions['user-agent']
+            $clientVersions = $this->getClientVersions($clientCodename);
+            $clientVersion  = match ($clientCodename) {
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
-                'duckduck app', 'huawei-browser', 'ucbrowser', 'edge' => $clientVersions['sec-ch-ua-full-version-list']
+                'duckduck app', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']
                     ?? $clientVersions['sec-ch-ua-full-version']
                     ?? array_last($clientVersions),
                 'ecosia' => $clientVersions['sec-ch-ua-full-version']
+                    ?? array_last($clientVersions),
+                'vivaldi' => $clientVersions['sec-ch-ua']
+                    ?? array_last($clientVersions),
+                'chrome' => $chromeClientVersion
+                    ?? $clientVersions['sec-ch-ua-full-version-list']
+                    ?? $clientVersions['sec-ch-ua']
+                    ?? $clientVersions['sec-ch-ua-full-version']
                     ?? array_last($clientVersions),
                 default => array_first($clientVersions),
             };
 
             try {
                 $clientData = $this->browserLoader->load(
-                    key: $firstClientCodename,
+                    key: (string) $clientCodename,
                     useragent: $clientHeader->getValue(),
                 );
 
@@ -416,7 +499,16 @@ final readonly class Headers
             $platformCodes = [\BrowserDetector\Data\Os::unknown];
         }
 
-        $firstPlatformCode = array_first($platformCodes);
+        $firstPlatformCode      = array_first($platformCodes);
+        $platformCodeFromDevice = null;
+
+        try {
+            $platformCodeFromDevice = \BrowserDetector\Data\Os::fromName(
+                (string) $platformCodenameFromDevice,
+            );
+        } catch (UnexpectedValueException) {
+            // do nothing
+        }
 
         if (
             (
@@ -425,13 +517,7 @@ final readonly class Headers
             )
             || $firstPlatformCode === null
         ) {
-            try {
-                $firstPlatformCode = \BrowserDetector\Data\Os::fromName(
-                    (string) $platformCodenameFromDevice,
-                );
-            } catch (UnexpectedValueException) {
-                // do nothing
-            }
+            $firstPlatformCode = $platformCodeFromDevice;
         }
 
         if ($firstPlatformCode instanceof \UaData\OsInterface) {
@@ -445,9 +531,68 @@ final readonly class Headers
                     if (
                         $lastPlatformCode instanceof \UaData\OsInterface
                         && $lastPlatformCode !== $firstPlatformCode
+                        && $lastPlatformCode !== \BrowserDetector\Data\Os::unknown
                     ) {
                         $platform       = $lastPlatformCode;
                         $platformHeader = array_last($headersWithPlatformCode);
+                    } else {
+                        $platformHeader = array_first($headersWithPlatformCode);
+                    }
+
+                    break;
+                case \BrowserDetector\Data\Os::macosx:
+                    $lastPlatformCode = array_last($platformCodes);
+
+                    if (
+                        $lastPlatformCode instanceof \UaData\OsInterface
+                        && $lastPlatformCode === \BrowserDetector\Data\Os::ios
+                    ) {
+                        $platform       = $lastPlatformCode;
+                        $platformHeader = array_last($headersWithPlatformCode);
+                    } else {
+                        $platformHeader = array_first($headersWithPlatformCode);
+                    }
+
+                    break;
+                case \BrowserDetector\Data\Os::windows:
+                    $lastPlatformCode = array_last($platformCodes);
+                    $platformHeader   = array_first($headersWithPlatformCode);
+
+                    $headersWithPlatformVersion = array_filter(
+                        $this->headers,
+                        static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
+                    );
+
+                    if (
+                        $lastPlatformCode instanceof \UaData\OsInterface
+                        && !array_key_exists('sec-ch-ua-platform-version', $headersWithPlatformVersion)
+                        && in_array(
+                            $lastPlatformCode,
+                            [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt62, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt],
+                            true,
+                        )
+                    ) {
+                        $platform       = $lastPlatformCode;
+                        $platformHeader = array_last($headersWithPlatformCode);
+                    }
+
+                    break;
+                case \BrowserDetector\Data\Os::android:
+                    $lastPlatformCode = array_last($platformCodes);
+
+                    if (
+                        $lastPlatformCode instanceof \UaData\OsInterface
+                        && in_array(
+                            $lastPlatformCode,
+                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos],
+                            true,
+                        )
+                    ) {
+                        $platform       = $lastPlatformCode;
+                        $platformHeader = array_last($headersWithPlatformCode);
+                    } elseif ($platformCodeFromDevice === \BrowserDetector\Data\Os::fireos) {
+                        $platform       = $platformCodeFromDevice;
+                        $platformHeader = null;
                     } else {
                         $platformHeader = array_first($headersWithPlatformCode);
                     }
@@ -463,8 +608,27 @@ final readonly class Headers
             $platformVersion = match ($platform) {
                 \BrowserDetector\Data\Os::lineageos => $this->getVersionForLineageOs(),
                 \BrowserDetector\Data\Os::fireos => $this->getVersionForFireOs(),
+                \BrowserDetector\Data\Os::windows => $this->getVersionForWindows(),
                 default => $this->getVersionForGeneric($platform, $platformHeader),
             };
+
+            if ($platform === \BrowserDetector\Data\Os::windows) {
+                assert($platformVersion instanceof VersionInterface);
+
+                try {
+                    $platform = match ($platformVersion->getVersion(VersionInterface::IGNORE_MICRO)) {
+                        '11.0' => \BrowserDetector\Data\Os::windows11,
+                        '10.0' => \BrowserDetector\Data\Os::windows10,
+                        '8.1' => \BrowserDetector\Data\Os::windowsnt63,
+                        '8.0' => \BrowserDetector\Data\Os::windowsnt62,
+                        '7.0' => \BrowserDetector\Data\Os::windowsnt61,
+                        '6.0' => \BrowserDetector\Data\Os::windowsnt60,
+                        default => \BrowserDetector\Data\Os::windows,
+                    };
+                } catch (UnexpectedValueException) {
+                    // do nothing here
+                }
+            }
 
             if ($platform !== \BrowserDetector\Data\Os::unknown) {
                 try {
@@ -561,7 +725,7 @@ final readonly class Headers
         $engineVersionHeader = array_first($headersWithEngineVersion);
 
         if ($engineVersionHeader instanceof HeaderInterface) {
-            return $engineVersionHeader->getEngineVersion($engine->getKey());
+            return $engineVersionHeader->getEngineVersionWithEngine($engine);
         }
 
         return new NullVersion();
@@ -598,7 +762,7 @@ final readonly class Headers
         $platformHeaderVersion = array_first($headersWithPlatformVersion);
 
         if ($platformHeaderVersion instanceof HeaderInterface) {
-            return $platformHeaderVersion->getPlatformVersion($platform->getKey());
+            return $platformHeaderVersion->getPlatformVersionWithOs($platform);
         }
 
         return new NullVersion();
@@ -661,6 +825,31 @@ final readonly class Headers
                     // do nothing
                 }
             }
+        }
+
+        return new NullVersion();
+    }
+
+    /** @throws void */
+    private function getVersionForWindows(): VersionInterface
+    {
+        $platform = \BrowserDetector\Data\Os::windows;
+
+        $headersWithPlatformVersion = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
+        );
+
+        if (array_key_exists('sec-ch-ua-platform-version', $headersWithPlatformVersion)) {
+            $platformHeaderVersion = $headersWithPlatformVersion['sec-ch-ua-platform-version'];
+        } else {
+            $platformHeaderVersion = array_last($headersWithPlatformVersion);
+
+            $platform = \BrowserDetector\Data\Os::unknown;
+        }
+
+        if ($platformHeaderVersion instanceof HeaderInterface) {
+            return $platformHeaderVersion->getPlatformVersionWithOs($platform);
         }
 
         return new NullVersion();

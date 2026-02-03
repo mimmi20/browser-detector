@@ -1187,7 +1187,7 @@ enum Company: string implements CompanyInterface
 
     case hazuki = 'hazuki';
 
-    case startpageCom = 'startpage.com';
+    case surfboard = 'Surfboard';
 
     case tenta = 'Tenta';
 
@@ -1692,6 +1692,262 @@ enum Company: string implements CompanyInterface
     case arcelik = 'Arcelik';
 
     case pantech = 'Pantech';
+
+    case elsevier = 'Elsevier';
+
+    case wpoFoundation = 'WPO Foundation';
+
+    case rickCranisky = 'Rick Cranisky';
+
+    case shiftphones = 'Shift Phones';
+
+    case shiira = 'Shiira';
+
+    case newsMe = 'News.me';
+
+    case wireSwiss = 'Wire Swiss';
+
+    case rivalIq = 'Rival IQ';
+
+    case mailbar = 'MailBar';
+
+    case blackboard = 'Blackboard';
+
+    case chimoosoft = 'Chimoosoft';
+
+    case novarra = 'Novarra';
+
+    case sendo = 'Sendo';
+
+    case siemens = 'Siemens';
+
+    case adobe = 'Adobe';
+
+    case rambler = 'rambler';
+
+    case lindenLabs = 'Linden Labs';
+
+    case piriform = 'Piriform';
+
+    case gateway = 'Gateway';
+
+    case kingsoft = 'Kingsoft';
+
+    case builtwith = 'BuiltWith';
+
+    case doubleVerify = 'DoubleVerify';
+
+    case avira = 'Avira';
+
+    case dell = 'Dell';
+
+    case aspiegel = 'Aspiegel';
+
+    case topsyLabs = 'Topsy Labs';
+
+    case daum = 'Daum';
+
+    case ichiro = 'Ichiro';
+
+    case brandwatch = 'brandwatch';
+
+    case mailRu = 'Mail.Ru';
+
+    case tailrank = 'Tailrank';
+
+    case domainTools = 'DomainTools';
+
+    case nikon = 'Nikon';
+
+    case teslaMotors = 'Tesla Motors';
+
+    case ouya = 'Ouya';
+
+    case zetakeySolutions = 'Zetakey Solutions';
+
+    case mapleStudio = 'Maple Studio';
+
+    case msi = 'MSI';
+
+    case benq = 'BenQ';
+
+    case sagem = 'Sagem';
+
+    case utstarcom = 'UTStarcom';
+
+    case vkMobile = 'VK Mobile';
+
+    case lePan = 'Le Pan';
+
+    case velocityMicro = 'Velocity Micro';
+
+    case netcraft = 'Netcraft';
+
+    case sistrix = 'Sistrix';
+
+    case xovi = 'Xovi';
+
+    case majestic12 = 'Majestic-12';
+
+    case zoomInformation = 'Zoom Information';
+
+    case torstenRueckert = 'Torsten Rueckert';
+
+    case commonCrawl = 'CommonCrawl';
+
+    case domainstats = 'Domainstats';
+
+    case nagios = 'Nagios';
+
+    case ahrefs = 'Ahrefs';
+
+    case seobility = 'seobility';
+
+    case babbar = 'BABBAR';
+
+    case censys = 'Censys';
+
+    case seomoz = 'SEOmoz';
+
+    case dataforseo = 'DataForSEO';
+
+    case itteco = 'Itteco';
+
+    case sharashka = 'Sharashka';
+
+    case owler = 'Owler';
+
+    case benKurtovic = 'Ben Kurtovic';
+
+    case semanticVisions = 'Semantic Visions';
+
+    case notionLabs = 'Notion Labs';
+
+    case anthropic = 'Anthropic';
+
+    case kagi = 'Kagi';
+
+    case valimail = 'Valimail';
+
+    case grasGroup = 'GRAS Group';
+
+    case cybaa = 'Cybaa';
+
+    case heexy = 'Heexy';
+
+    case archi301 = 'ARCHI301';
+
+    case emClient = 'eM Client';
+
+    case findFiles = 'FindFiles';
+
+    case projectDiscovery = 'ProjectDiscovery';
+
+    case jaimeIniesta = 'Jaime Iniesta';
+
+    case alexandreTourette = 'Alexandre Tourette';
+
+    case torbenHansen = 'Torben Hansen';
+
+    case sqalix = 'Sqalix';
+
+    case vertexWP = 'VertexWP';
+
+    case postman = 'Postman';
+
+    case recordedFuture = 'Recorded Future';
+
+    case bitsightTechnologies = 'BitSight Technologies';
+
+    case ceramic = 'Ceramic';
+
+    case screamingFrog = 'Screaming Frog';
+
+    case startMe = 'start.me';
+
+    case domainsBot = 'DomainsBot';
+
+    case rwthAachen = 'RWTH Aachen';
+
+    case manfredSchauer = 'Dr. Manfred Schauer';
+
+    case parallelWebSystems = 'Parallel Web Systems';
+
+    case ibou = 'Ibou';
+
+    case mistralAI = 'Mistral AI';
+
+    case incsub = 'Incsub';
+
+    case meinsUndVogel = 'Meins und Vogel';
+
+    case agencyAnalytics = 'AgencyAnalytics';
+
+    case dynalist = 'Dynalist';
+
+    case barzmannInternetSolutions = 'Barzmann Internet Solutions';
+
+    case spazioDati = 'SpazioDati';
+
+    case dataprovider = 'Dataprovider';
+
+    case hessischesStatistischesLandesamt = 'Hessisches Statistisches Landesamt';
+
+    case comscore = 'Comscore';
+
+    case lumeWeaver = 'LumeWeaver';
+
+    case nlpc = 'NLPC';
+
+    case mindup = 'mindUp';
+
+    case exipert = 'Exipert';
+
+    case timpi = 'Timpi';
+
+    case archiveTeam = 'ArchiveTeam';
+
+    case finax = 'Finax';
+
+    case keywordsStandings = 'Keywords Standings';
+
+    case flowTeam = 'Flow Team';
+
+    case companySpotter = 'CompanySpotter';
+
+    case smartisan = 'Smartisan';
+
+    case ghSoftware = 'GH Software';
+
+    case arquivo = 'Arquivo';
+
+    case serpstat = 'Serpstat';
+
+    case morningscore = 'Morningscore';
+
+    case ergo = 'Ergo';
+
+    case github = 'GitHub';
+
+    case prestigio = 'Prestigio';
+
+    case rakutenMobile = 'Rakuten Mobile';
+
+    case eightPecxStudios = '8pecxstudios';
+
+    case danew = 'Danew';
+
+    case zaojianzhen = 'ZaoJianZhen';
+
+    case leeco = 'LeEco';
+
+    case leagoo = 'Leagoo';
+
+    case aopen = 'AOpen';
+
+    case elementSoftware = 'Element Software';
+
+    case pagePeeker = 'PagePeeker';
 
     /**
      * @throws UnexpectedValueException
@@ -2284,7 +2540,7 @@ enum Company: string implements CompanyInterface
             'dezor', 'dezor sa' => self::dezor,
             'bestseller', 'bestseller a/s' => self::bestseller,
             'hazuki' => self::hazuki,
-            'startpagecom', 'startpage.com' => self::startpageCom,
+            'surfboard', 'surfboard holding bv' => self::surfboard,
             'tenta', 'tenta llc' => self::tenta,
             'mobilev5', 'mobile-v5', 'mobile_v5' => self::mobileV5,
             'swisscows' => self::swisscows,
@@ -2537,6 +2793,134 @@ enum Company: string implements CompanyInterface
             'fedirtsapana', 'fedir-tsapana', 'fedir tsapana' => self::fedirTsapana,
             'arcelik', 'arcelik a.s.' => self::arcelik,
             'pantech' => self::pantech,
+            'elsevier', 'elsevier ltd' => self::elsevier,
+            'wpofoundation', 'wpo foundation', 'wpo-foundation' => self::wpoFoundation,
+            'rickcranisky', 'rick cranisky', 'rick-cranisky' => self::rickCranisky,
+            'shiftphones', 'shift-phones', 'shift gmbh', 'shift phones' => self::shiftphones,
+            'shiira' => self::shiira,
+            'newsme', 'news.me', 'news.me inc' => self::newsMe,
+            'wireswiss', 'wire-swiss', 'wire swiss gmbh', 'wire swiss' => self::wireSwiss,
+            'rivaliq', 'rival-iq', 'rival iq corporation', 'rival iq' => self::rivalIq,
+            'mailbar', 'mailbar inc.' => self::mailbar,
+            'blackboard', 'blackboard inc.' => self::blackboard,
+            'chimoosoft' => self::chimoosoft,
+            'novarra', 'novarra inc.' => self::novarra,
+            'sendo' => self::sendo,
+            'siemens' => self::siemens,
+            'adobe', 'adobe systems incorporated' => self::adobe,
+            'rambler' => self::rambler,
+            'lindenlabs', 'linden-labs', 'linden labs' => self::lindenLabs,
+            'piriform', 'piriform software ltd' => self::piriform,
+            'gateway', 'gateway, inc.' => self::gateway,
+            'kingsoft' => self::kingsoft,
+            'builtwith', 'builtwith pty ltd' => self::builtwith,
+            'doubleverify', 'doubleverify inc.', 'double-verify' => self::doubleVerify,
+            'avira', 'avira operations gmbh & co. kg.', 'avira-operations' => self::avira,
+            'dell' => self::dell,
+            'aspiegel', 'aspiegel plc' => self::aspiegel,
+            'topsylabs', 'topsy-labs', 'topsy labs' => self::topsyLabs,
+            'daum', 'daum-corporation', 'daum communications corp' => self::daum,
+            'ichiro' => self::ichiro,
+            'brandwatch' => self::brandwatch,
+            'mailru', 'mail.ru', 'mail.ru group' => self::mailRu,
+            'tailrank', 'tailrank inc' => self::tailrank,
+            'domaintools', 'domain-tools' => self::domainTools,
+            'nikon', 'kabushiki-gaisha nikon' => self::nikon,
+            'teslamotors', 'tesla-motors', 'tesla motors' => self::teslaMotors,
+            'ouya', 'ouya, inc.' => self::ouya,
+            'zetakeysolutions', 'zetakey-solutions', 'zetakey solutions limited', 'zetakey solutions' => self::zetakeySolutions,
+            'maplestudio', 'maple-studio', 'maple studio' => self::mapleStudio,
+            'msi' => self::msi,
+            'benq' => self::benq,
+            'sagem' => self::sagem,
+            'utstarcom' => self::utstarcom,
+            'vkmobile', 'vk-mobile', 'vk mobile' => self::vkMobile,
+            'lepan', 'le-pan', 'le pan' => self::lePan,
+            'velocitymicro', 'velocity-micro', 'velocity micro' => self::velocityMicro,
+            'netcraft', 'netcraft ltd.' => self::netcraft,
+            'sistrix', 'sistrix gmbh' => self::sistrix,
+            'xovi', 'xovi gmbh' => self::xovi,
+            'majestic12', 'majestic-12', 'majestic-12 ltd' => self::majestic12,
+            'zoominformation', 'zoom-information', 'zoom information inc.', 'zoom information' => self::zoomInformation,
+            'torstenrueckert', 'torsten-rueckert', 'torsten rueckert internetdienstleistungen', 'torsten rueckert' => self::torstenRueckert,
+            'commoncrawl', 'common-crawl-foundation', 'commoncrawl foundation' => self::commonCrawl,
+            'domainstats', 'domainstats international ab' => self::domainstats,
+            'nagios', 'nagios enterprises, llc.', 'nagios-enterprises' => self::nagios,
+            'ahrefs', 'ahrefs pte ltd' => self::ahrefs,
+            'seobility', 'seobility gmbh' => self::seobility,
+            'babbar' => self::babbar,
+            'censys', 'censys, inc.' => self::censys,
+            'seomoz', 'seomoz, inc.' => self::seomoz,
+            'dataforseo', 'dataforseo ou' => self::dataforseo,
+            'itteco' => self::itteco,
+            'sharashka', 'sharashka, inc.' => self::sharashka,
+            'owler', 'owler, inc.' => self::owler,
+            'benkurtovic', 'ben-kurtovic', 'ben kurtovic' => self::benKurtovic,
+            'semanticvisions', 'semantic-visions', 'semantic visions, s.r.o.', 'semantic visions' => self::semanticVisions,
+            'notionlabs', 'notion-labs', 'notion labs, inc.', 'notion labs' => self::notionLabs,
+            'anthropic', 'anthropic pbc' => self::anthropic,
+            'kagi', 'kagi inc.' => self::kagi,
+            'valimail', 'valimail inc.' => self::valimail,
+            'grasgroup', 'gras group, inc.', 'gras-group', 'gras group' => self::grasGroup,
+            'cybaa', 'cybaa ltd' => self::cybaa,
+            'heexy' => self::heexy,
+            'archi301' => self::archi301,
+            'emclient', 'em client s.r.o.', 'em-client', 'em client' => self::emClient,
+            'findfiles', 'findfiles.net ug', 'findfiles.net', 'find-files' => self::findFiles,
+            'projectdiscovery', 'projectdiscovery, inc.', 'project-discovery' => self::projectDiscovery,
+            'jaimeiniesta', 'jaime-iniesta', 'jaime iniesta' => self::jaimeIniesta,
+            'alexandretourette', 'alexandre-tourette', 'alexandre tourette' => self::alexandreTourette,
+            'torbenhansen', 'torben-hansen', 'torben hansen' => self::torbenHansen,
+            'sqalix' => self::sqalix,
+            'vertexwp', 'vertex-wp' => self::vertexWP,
+            'postman', 'postman, inc.' => self::postman,
+            'recordedfuture', 'recorded future, inc.', 'recorded-future', 'recorded future' => self::recordedFuture,
+            'bitsighttechnologies', 'bitsight technologies, inc.', 'bitsight-technologies', 'bitsight technologies' => self::bitsightTechnologies,
+            'ceramic', 'ceramic, inc.' => self::ceramic,
+            'screamingfrog', 'screaming-frog', 'screaming frog ltd', 'screaming frog' => self::screamingFrog,
+            'startme', 'start.me', 'start.me bv' => self::startMe,
+            'domainsbot', 'domains-bot', 'domainsbot srl' => self::domainsBot,
+            'rwthaachen', 'rwth-aachen', 'rwth aachen university', 'rwth aachen' => self::rwthAachen,
+            'manfredschauer', 'manfred-schauer', 'dr. manfred schauer' => self::manfredSchauer,
+            'parallelwebsystems', 'parallel web systems inc.', 'parallel-web-systems', 'parallel web systems' => self::parallelWebSystems,
+            'ibou' => self::ibou,
+            'mistralai', 'mistral-ai', 'mistral ai' => self::mistralAI,
+            'incsub', 'incsub, llc.' => self::incsub,
+            'meinsundvogel', 'meins und vogel gmbh', 'meins-und-vogel', 'meins und vogel' => self::meinsUndVogel,
+            'agencyanalytics', 'agencyanalytics inc', 'agency-analytics' => self::agencyAnalytics,
+            'dynalist', 'dynalist inc.' => self::dynalist,
+            'barzmanninternetsolutions', 'barzmann-internet-solutions', 'barzmann internet solutions gmbh', 'barzmann internet solutions' => self::barzmannInternetSolutions,
+            'spaziodati', 'spazio-dati', 'spaziodati s.r.l.' => self::spazioDati,
+            'dataprovider', 'dataprovider b.v.' => self::dataprovider,
+            'hessischesstatistischeslandesamt', 'hessisches statistisches landesamt', 'hessisches-statistisches-landesamt' => self::hessischesStatistischesLandesamt,
+            'comscore', 'comscore, inc.' => self::comscore,
+            'lumeweaver', 'lumeweaver labs', 'lume-weaver' => self::lumeWeaver,
+            'nlpc', 'natural language processing centre' => self::nlpc,
+            'mindup', 'mindup web + intelligence gmbh' => self::mindup,
+            'exipert', 'exipert, inc. dba checkmark network' => self::exipert,
+            'timpi', 'timpi inc.' => self::timpi,
+            'archiveteam', 'archive-team' => self::archiveTeam,
+            'finax', 'finax, o.c.p, a.s.' => self::finax,
+            'keywordsstandings', 'keywords-standings', 'keywords standings ltd.', 'keywords standings' => self::keywordsStandings,
+            'flowteam', 'flow-team', 'flow team' => self::flowTeam,
+            'companyspotter', 'company-spotter', 'companyspotter bv' => self::companySpotter,
+            'smartisan', 'smartisan technology co., ltd' => self::smartisan,
+            'ghsoftware', 'gh-software', 'gh software' => self::ghSoftware,
+            'arquivo', 'arquivo.pt' => self::arquivo,
+            'serpstat', 'serpstat global ltd' => self::serpstat,
+            'morningscore', 'morning-score' => self::morningscore,
+            'ergo' => self::ergo,
+            'github', 'github inc.' => self::github,
+            'prestigio' => self::prestigio,
+            'rakutenmobile', 'rakuten mobile', 'rakuten-mobile' => self::rakutenMobile,
+            'eightpecxstudios', '8pecxstudios' => self::eightPecxStudios,
+            'danew' => self::danew,
+            'zaojianzhen' => self::zaojianzhen,
+            'leeco', 'leshi internet information & technology' => self::leeco,
+            'leagoo', 'leagoo international co., limited' => self::leagoo,
+            'aopen' => self::aopen,
+            'elementsoftware', 'element-software', 'element software' => self::elementSoftware,
+            'pagepeeker', 'page-peeker', 'pagepeeker srl' => self::pagePeeker,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -2829,6 +3213,87 @@ enum Company: string implements CompanyInterface
             self::nineteenTen => 'Nineteen Ten LLC',
             self::semrush => 'Semrush Inc.',
             self::arcelik => 'Arcelik A.S.',
+            self::elsevier => 'Elsevier Ltd',
+            self::shiftphones => 'SHIFT GmbH',
+            self::newsMe => 'News.me Inc',
+            self::wireSwiss => 'Wire Swiss GmbH',
+            self::rivalIq => 'Rival IQ Corporation',
+            self::mailbar => 'MailBar Inc.',
+            self::blackboard => 'Blackboard Inc.',
+            self::novarra => 'Novarra Inc.',
+            self::adobe => 'Adobe Systems Incorporated',
+            self::piriform => 'Piriform Software Ltd',
+            self::gateway => 'Gateway, Inc.',
+            self::builtwith => 'BuiltWith Pty Ltd',
+            self::doubleVerify => 'DoubleVerify Inc.',
+            self::avira => 'Avira Operations GmbH & Co. KG.',
+            self::aspiegel => 'Aspiegel PLC',
+            self::daum => 'Daum Communications Corp',
+            self::mailRu => 'Mail.Ru Group',
+            self::tailrank => 'Tailrank Inc',
+            self::nikon => 'Kabushiki-gaisha Nikon',
+            self::teslaMotors => 'Tesla Motors',
+            self::ouya => 'OUYA, Inc.',
+            self::zetakeySolutions => 'Zetakey Solutions Limited',
+            self::netcraft => 'Netcraft Ltd.',
+            self::sistrix => 'SISTRIX GmbH',
+            self::xovi => 'Xovi GmbH',
+            self::majestic12 => 'Majestic-12 Ltd',
+            self::zoomInformation => 'Zoom Information Inc.',
+            self::torstenRueckert => 'Torsten Rueckert Internetdienstleistungen',
+            self::commonCrawl => 'CommonCrawl Foundation',
+            self::domainstats => 'Domainstats International AB',
+            self::nagios => 'Nagios Enterprises, LLC.',
+            self::ahrefs => 'Ahrefs Pte Ltd',
+            self::seobility => 'seobility GmbH',
+            self::censys => 'Censys, Inc.',
+            self::seomoz => 'SEOmoz, Inc.',
+            self::dataforseo => 'DataForSEO OU',
+            self::sharashka => 'Sharashka, Inc.',
+            self::owler => 'Owler, Inc.',
+            self::semanticVisions => 'Semantic Visions, s.r.o.',
+            self::notionLabs => 'Notion Labs, Inc.',
+            self::anthropic => 'Anthropic PBC',
+            self::kagi => 'Kagi Inc.',
+            self::valimail => 'Valimail Inc.',
+            self::grasGroup => 'GRAS Group, Inc.',
+            self::cybaa => 'Cybaa Ltd',
+            self::emClient => 'eM Client s.r.o.',
+            self::findFiles => 'FindFiles.net UG',
+            self::projectDiscovery => 'ProjectDiscovery, Inc.',
+            self::postman => 'Postman, Inc.',
+            self::recordedFuture => 'Recorded Future, Inc.',
+            self::bitsightTechnologies => 'BitSight Technologies, Inc.',
+            self::ceramic => 'Ceramic, Inc.',
+            self::screamingFrog => 'Screaming Frog Ltd',
+            self::startMe => 'start.me BV',
+            self::domainsBot => 'DomainsBot SRL',
+            self::rwthAachen => 'RWTH Aachen University',
+            self::parallelWebSystems => 'Parallel Web Systems Inc.',
+            self::incsub => 'Incsub, LLC.',
+            self::meinsUndVogel => 'Meins und Vogel GmbH',
+            self::agencyAnalytics => 'AgencyAnalytics Inc',
+            self::dynalist => 'Dynalist Inc.',
+            self::barzmannInternetSolutions => 'Barzmann Internet Solutions GmbH',
+            self::spazioDati => 'SpazioDati S.r.l.',
+            self::dataprovider => 'Dataprovider B.V.',
+            self::comscore => 'Comscore, Inc.',
+            self::lumeWeaver => 'LumeWeaver Labs',
+            self::nlpc => 'Natural Language Processing Centre',
+            self::mindup => 'mindUp Web + Intelligence GmbH',
+            self::exipert => 'Exipert, Inc. dba CheckMark Network',
+            self::timpi => 'Timpi Inc.',
+            self::finax => 'Finax, o.c.p, a.s.',
+            self::keywordsStandings => 'Keywords Standings Ltd.',
+            self::companySpotter => 'CompanySpotter BV',
+            self::smartisan => 'Smartisan Technology Co., Ltd',
+            self::arquivo => 'Arquivo.pt',
+            self::serpstat => 'Serpstat Global LTD',
+            self::surfboard => 'Surfboard Holding BV',
+            self::github => 'GitHub Inc.',
+            self::leeco => 'Leshi Internet Information & Technology',
+            self::leagoo => 'LEAGOO International Co., Limited',
+            self::pagePeeker => 'pagepeeker SRL',
             self::unknown => null,
             default => $this->value,
         };
@@ -2986,7 +3451,6 @@ enum Company: string implements CompanyInterface
             self::anyDeskSoftware => 'anydesk-software',
             self::towoLabs => 'towo-labs',
             self::talkTalkTelecom => 'talk-talk-telecom',
-            self::startpageCom => 'startpage.com',
             self::mobileV5 => 'mobile-v5',
             self::wolvesInteractive => 'wolves-interactive',
             self::buhlDataService => 'buhl-data-service',
@@ -3092,6 +3556,66 @@ enum Company: string implements CompanyInterface
             self::michelDeBoer => 'michel-de-boer',
             self::playNow => 'play-now',
             self::fedirTsapana => 'fedir-tsapana',
+            self::wpoFoundation => 'wpo-foundation',
+            self::rickCranisky => 'rick-cranisky',
+            self::shiftphones => 'shift-phones',
+            self::newsMe => 'news.me',
+            self::wireSwiss => 'wire-swiss',
+            self::rivalIq => 'rival-iq',
+            self::lindenLabs => 'linden-labs',
+            self::doubleVerify => 'double-verify',
+            self::avira => 'avira-operations',
+            self::topsyLabs => 'topsy-labs',
+            self::daum => 'daum-corporation',
+            self::mailRu => 'mail.ru',
+            self::domainTools => 'domain-tools',
+            self::teslaMotors => 'tesla-motors',
+            self::zetakeySolutions => 'zetakey-solutions',
+            self::mapleStudio => 'maple-studio',
+            self::vkMobile => 'vk-mobile',
+            self::lePan => 'le-pan',
+            self::velocityMicro => 'velocity-micro',
+            self::majestic12 => 'majestic-12',
+            self::zoomInformation => 'zoom-information',
+            self::torstenRueckert => 'torsten-rueckert',
+            self::commonCrawl => 'common-crawl-foundation',
+            self::nagios => 'nagios-enterprises',
+            self::benKurtovic => 'ben-kurtovic',
+            self::semanticVisions => 'semantic-visions',
+            self::notionLabs => 'notion-labs',
+            self::grasGroup => 'gras-group',
+            self::emClient => 'em-client',
+            self::findFiles => 'find-files',
+            self::projectDiscovery => 'project-discovery',
+            self::jaimeIniesta => 'jaime-iniesta',
+            self::alexandreTourette => 'alexandre-tourette',
+            self::torbenHansen => 'torben-hansen',
+            self::vertexWP => 'vertex-wp',
+            self::bitsightTechnologies => 'bitsight-technologies',
+            self::screamingFrog => 'screaming-frog',
+            self::recordedFuture => 'recorded-future',
+            self::startMe => 'start.me',
+            self::domainsBot => 'domains-bot',
+            self::rwthAachen => 'rwth-aachen',
+            self::manfredSchauer => 'manfred-schauer',
+            self::parallelWebSystems => 'parallel-web-systems',
+            self::mistralAI => 'mistral-ai',
+            self::meinsUndVogel => 'meins-und-vogel',
+            self::agencyAnalytics => 'agency-analytics',
+            self::barzmannInternetSolutions => 'barzmann-internet-solutions',
+            self::spazioDati => 'spazio-dati',
+            self::hessischesStatistischesLandesamt => 'hessisches-statistisches-landesamt',
+            self::lumeWeaver => 'lume-weaver',
+            self::archiveTeam => 'archive-team',
+            self::keywordsStandings => 'keywords-standings',
+            self::flowTeam => 'flow-team',
+            self::companySpotter => 'company-spotter',
+            self::ghSoftware => 'gh-software',
+            self::morningscore => 'morning-score',
+            self::rakutenMobile => 'rakuten-mobile',
+            self::eightPecxStudios => '8pecxstudios',
+            self::elementSoftware => 'element-software',
+            self::pagePeeker => 'page-peeker',
             default => $this->name,
         };
     }

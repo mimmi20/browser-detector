@@ -125,7 +125,7 @@ final class Detector2Test extends TestCase
             ->willReturn(false);
         $header
             ->expects(self::never())
-            ->method('getPlatformVersion');
+            ->method('getPlatformVersionWithOs');
         $header
             ->expects(self::once())
             ->method('hasEngineCode')
@@ -139,7 +139,7 @@ final class Detector2Test extends TestCase
             ->willReturn(false);
         $header
             ->expects(self::never())
-            ->method('getEngineVersion');
+            ->method('getEngineVersionWithEngine');
 
         $filteredHeaders = ['xyz' => $header];
 
@@ -359,7 +359,7 @@ final class Detector2Test extends TestCase
             ->willReturn(false);
         $header
             ->expects(self::never())
-            ->method('getPlatformVersion');
+            ->method('getPlatformVersionWithOs');
         $header
             ->expects(self::once())
             ->method('hasEngineCode')
@@ -373,7 +373,7 @@ final class Detector2Test extends TestCase
             ->willReturn(false);
         $header
             ->expects(self::never())
-            ->method('getEngineVersion');
+            ->method('getEngineVersionWithEngine');
 
         $filteredHeaders = ['xyz' => $header];
 
@@ -636,7 +636,7 @@ final class Detector2Test extends TestCase
             ->willReturn(false);
         $header
             ->expects(self::never())
-            ->method('getPlatformVersion');
+            ->method('getPlatformVersionWithOs');
         $header
             ->expects(self::once())
             ->method('hasEngineCode')
@@ -650,7 +650,7 @@ final class Detector2Test extends TestCase
             ->willReturn(false);
         $header
             ->expects(self::never())
-            ->method('getEngineVersion');
+            ->method('getEngineVersionWithEngine');
 
         $filteredHeaders = ['xyz' => $header];
 

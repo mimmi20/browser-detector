@@ -4,8 +4,8 @@
     "marketingName": "Aurum",
     "manufacturer": "ergo",
     "brand": "ergo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -20,13 +20,29 @@
     "marketingName": "Optima",
     "manufacturer": "ergo",
     "brand": "ergo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "ergo a550": {
+    "deviceName": "A550",
+    "marketingName": "Maxx",
+    "manufacturer": "ergo",
+    "brand": "ergo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"

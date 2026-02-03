@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\XRequestedWithClientCode;
 use BrowserDetector\Parser\Header\XRequestedWithClientVersion;
@@ -144,7 +145,7 @@ final class XRequestedWithTest extends TestCase
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersion(),
+            $header->getPlatformVersionWithOs(Os::unknown),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
@@ -163,7 +164,7 @@ final class XRequestedWithTest extends TestCase
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersion(),
+            $header->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }
@@ -394,6 +395,7 @@ final class XRequestedWithTest extends TestCase
             ['com.opera.browser', true, 'opera', true, null, false, Os::unknown],
             ['com.opera.browser.afin', true, 'opera', true, null, false, Os::unknown],
             ['com.startpage.mobile', true, 'startpage-private-search-engine', true, null, false, Os::unknown],
+            ['com.startpage.app', true, 'startpage-private-search-engine', true, null, false, Os::unknown],
             ['ace.avd.tube.video.downloader', true, 'free-video-downloader-pro', true, null, false, Os::unknown],
             ['com.catdaddy.cat22', true, 'wwe-supercard', true, null, false, Os::unknown],
             ['com.jlwf.droid.tutu', true, 'tutu-app', true, null, false, Os::unknown],
@@ -548,17 +550,21 @@ final class XRequestedWithTest extends TestCase
             ['com.wecloud.lookr', true, 'lookr-app', true, null, false, Os::unknown],
             ['com.canopy.vpn.filter.parent', true, 'canopy-app', true, null, false, Os::unknown],
             ['ai.mainfunc.genspark', true, 'genspark-app', true, null, false, Os::unknown],
-            ['com.rocks.music.videoplayer', true, 'hd-video-player-all-formats', true, null, false, Os::unknown],
+            ['com.rocks.music.videoplayer', true, 'rocks-player', true, null, false, Os::unknown],
             ['proxy.browser.unblock.sites.proxybrowser.unblocksites', true, 'proxy-browser', true, null, false, Os::unknown],
             ['com.google.android.apps.youtube.music', true, 'youtube-music', true, null, false, Os::unknown],
             ['nl.nrc.audio', true, 'nrc-audio', true, null, false, Os::unknown],
             ['org.telegram.plus', true, 'telegram-plus-messenger', true, null, false, Os::unknown],
-            ['com.android.launcher3', true, 'android-launcher', true, null, false, Os::unknown],
+            ['com.android.launcher3', true, 'launcher3', true, null, false, Os::unknown],
             ['pure.lite.browser', true, 'pure-lite-browser', true, null, false, Os::unknown],
             ['de.inseven.dogtorance', true, 'dogtorance-app', true, null, false, Os::unknown],
             ['jp.naver.line.android', true, 'line', true, null, false, Os::unknown],
             ['com.netqin.ps', true, 'vault-app', true, null, false, Os::unknown],
             ['com.dubox.drive', true, 'terabox-app', true, null, false, Os::unknown],
+            ['com.hihonor.search', true, 'honor-search-app', true, null, false, Os::unknown],
+            ['org.flow.browser', true, 'flowsurf', true, null, false, Os::unknown],
+            ['com.tcl.browser', true, 'browse-here', true, null, false, Os::unknown],
+            ['com.imo.android.imoim', true, 'imo-international-calls-chat', true, null, false, Os::unknown],
         ];
     }
 }

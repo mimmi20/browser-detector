@@ -22,6 +22,8 @@ use BrowserDetector\Version\MacosFactory;
 use BrowserDetector\Version\RaspbianFactory;
 use BrowserDetector\Version\RemixOsFactory;
 use BrowserDetector\Version\RimOsFactory;
+use BrowserDetector\Version\SmartisanOsFactory;
+use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
@@ -106,8 +108,6 @@ enum Os: string implements OsInterface
     case mocordroid = 'MocorDroid';
 
     case netbsd = 'NetBSD';
-
-    case netcast = 'NetCast';
 
     case nokiaos = 'Nokia OS';
 
@@ -367,6 +367,16 @@ enum Os: string implements OsInterface
 
     case whaleOS = 'Whale OS';
 
+    case orsay = 'Orsay';
+
+    case javaMe = 'Java ME';
+
+    case operaTv = 'Opera TV';
+
+    case mocorOS = 'Mocor OS';
+
+    case smartisanOS = 'Smartisan OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -412,7 +422,6 @@ enum Os: string implements OsInterface
             'moblin' => self::moblin,
             'mocordroid' => self::mocordroid,
             'netbsd' => self::netbsd,
-            'netcast' => self::netcast,
             'nokiaos', 'nokia os' => self::nokiaos,
             'openbsd' => self::openbsd,
             'openpda' => self::openpda,
@@ -542,6 +551,11 @@ enum Os: string implements OsInterface
             'linspire' => self::linspire,
             'plasmamobile', 'plasma-mobile', 'plasma mobile' => self::plasmaMobile,
             'whaleos', 'whale os', 'whale-os' => self::whaleOS,
+            'orsay' => self::orsay,
+            'javame', 'java-me', 'java me' => self::javaMe,
+            'operatv', 'opera-tv', 'opera tv' => self::operaTv,
+            'mocoros', 'mocor-os', 'mocor os' => self::mocorOS,
+            'smartisanos', 'smartisan-os', 'smartisan os' => self::smartisanOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -598,12 +612,12 @@ enum Os: string implements OsInterface
             self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv => Company::google,
             self::asha, self::nokiaos, self::series30, self::series40, self::series60 => Company::nokia,
             self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh, self::watchos => Company::apple,
-            self::bada => Company::samsung,
+            self::bada, self::orsay => Company::samsung,
             self::cellos, self::orbisos, self::newsos => Company::sony,
             self::fireos => Company::amazon,
             self::firefoxos => Company::mozilla,
             self::miuios => Company::xiaomi,
-            self::netcast, self::lgwebos => Company::lg,
+            self::lgwebos => Company::lg,
             self::windows, self::windows2003, self::windows31, self::windows311, self::windows95, self::windows98, self::windowsce, self::windowsiot, self::windowsme, self::windowsmobileos, self::windowsnt, self::windows10, self::windows11, self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windowsphone, self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81, self::windowsrt62, self::windowsrt63, self::azurelinux, self::kinos => Company::microsoft,
             self::yi => Company::baidu,
             self::harmonyos => Company::huawei,
@@ -618,7 +632,7 @@ enum Os: string implements OsInterface
             self::haiku => Company::haiku,
             self::hpux, self::openvms, self::tru64unix, self::webos => Company::hp,
             self::infernoOs => Company::vitanuova,
-            self::javaos => Company::sun,
+            self::javaos, self::javaMe => Company::sun,
             self::kaios => Company::kaios,
             self::kubuntu, self::ubuntu, self::xubuntu => Company::canonical,
             self::linux, self::maemo, self::meego, self::tizen => Company::linuxFoundation,
@@ -648,6 +662,8 @@ enum Os: string implements OsInterface
             self::openHarmony => Company::openatomFoundation,
             self::plasmaMobile => Company::kde,
             self::whaleOS => Company::whaleTV,
+            self::operaTv => Company::opera,
+            self::smartisanOS => Company::smartisan,
             default => Company::unknown,
         };
     }
@@ -707,7 +723,7 @@ enum Os: string implements OsInterface
             self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
             self::kaios => ['factory' => VersionBuilderFactory::class, 'search' => ['kaios']],
             self::kubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Kubuntu', 'kubuntu']],
-            self::ubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Ubuntu', 'ubuntu']],
+            self::ubuntu => ['factory' => UbuntuFactory::class, 'search' => null],
             self::xubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Xubuntu', 'xubuntu']],
             self::maemo => ['factory' => VersionBuilderFactory::class, 'search' => ['Maemo']],
             self::meego => ['factory' => VersionBuilderFactory::class, 'search' => ['MeeGo']],
@@ -745,7 +761,8 @@ enum Os: string implements OsInterface
             self::aosp, self::androidtv => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
             self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
             self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
-            self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series60']],
+            self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60V']],
+            self::operaTv => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -757,6 +774,7 @@ enum Os: string implements OsInterface
             self::raspbian => ['factory' => RaspbianFactory::class, 'search' => null],
             self::remixOs => ['factory' => RemixOsFactory::class, 'search' => null],
             self::rimOs => ['factory' => RimOsFactory::class, 'search' => null],
+            self::smartisanOS => ['factory' => SmartisanOsFactory::class, 'search' => null],
             self::windows2003 => ['factory' => null, 'search' => null, 'value' => 2003],
             self::windows31, self::windowsnt31 => ['factory' => null, 'search' => null, 'value' => 3.1],
             self::windows311 => ['factory' => null, 'search' => null, 'value' => 3.11],
@@ -885,6 +903,10 @@ enum Os: string implements OsInterface
             self::openSuse => 'opensuse',
             self::plasmaMobile => 'plasma-mobile',
             self::whaleOS => 'whale-os',
+            self::javaMe => 'java-me',
+            self::operaTv => 'opera-tv',
+            self::mocorOS => 'mocor-os',
+            self::smartisanOS => 'smartisan-os',
             default => $this->name,
         };
     }

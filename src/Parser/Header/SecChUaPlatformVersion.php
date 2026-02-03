@@ -20,13 +20,13 @@ use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaData\OsInterface;
 use UaParser\PlatformVersionInterface;
-use UnexpectedValueException;
 
 use function assert;
 use function is_int;
 use function mb_strpos;
 use function mb_substr;
 use function mb_trim;
+use function str_replace;
 
 final class SecChUaPlatformVersion implements PlatformVersionInterface
 {
@@ -39,19 +39,6 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
         $value = mb_trim($value, '"\\\'');
 
         return $value !== '';
-    }
-
-    /** @throws VersionContainsDerivateException */
-    #[Override]
-    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
-    {
-        try {
-            $os = Os::fromName((string) $code);
-        } catch (UnexpectedValueException) {
-            $os = Os::unknown;
-        }
-
-        return $this->getVersion($value, $os);
     }
 
     /** @throws VersionContainsDerivateException */
@@ -70,12 +57,14 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
             return new ForcedNullVersion();
         }
 
+        $value = str_replace('_', '.', $value);
+
         if ($os === Os::windows) {
             $version = match ((float) $value) {
-                0.1 => '7',
+                0.1, 6.1 => '7',
                 0.2 => '8',
                 0.3 => '8.1',
-                10.0 => '10',
+                8.0, 10.0 => '10',
                 default => '11',
             };
 

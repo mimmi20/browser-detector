@@ -58,19 +58,6 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
 
     /** @throws void */
     #[Override]
-    public function getEngineVersion(string $value, string | null $code = null): VersionInterface
-    {
-        try {
-            $engine = Engine::fromName((string) $code);
-        } catch (UnexpectedValueException) {
-            $engine = Engine::unknown;
-        }
-
-        return $this->getVersion($value, $engine);
-    }
-
-    /** @throws void */
-    #[Override]
     public function getEngineVersionWithEngine(string $value, EngineInterface $engine): VersionInterface
     {
         return $this->getVersion($value, $engine);

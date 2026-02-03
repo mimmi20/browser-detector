@@ -721,7 +721,7 @@
   },
   "vivo x20a": {
     "deviceName": "X20A",
-    "marketingName": "X20A",
+    "marketingName": "X20",
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
@@ -1210,7 +1210,23 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo x7l": {
+    "deviceName": "X7L",
+    "marketingName": "X7L",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1221,12 +1237,12 @@
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1351,10 +1367,10 @@
     "dualOrientation": true,
     "simCount": 1,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -9403,6 +9419,70 @@
       "height": 720,
       "touch": true,
       "size": 6.51
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo v2055a": {
+    "deviceName": "V2055A",
+    "marketingName": "iQOO Neo 5",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.62
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo xplay 6": {
+    "deviceName": "Xplay 6",
+    "marketingName": "Xplay 6",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.46
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo xplay5a": {
+    "deviceName": "Xplay5A",
+    "marketingName": "Xplay5A",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo v2080a": {
+    "deviceName": "V2080A",
+    "marketingName": "S7t",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.44
     },
     "type": "smartphone",
     "platform": "android"

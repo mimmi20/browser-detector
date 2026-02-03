@@ -82,6 +82,9 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (Linux; Android 9; SW-LED42SB300 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 YaBrowser/22.8.0.9 (lite) TV Safari/537.36'],
             ['Mozilla/5.0 (Linux; Android 10; 2020/2021 UHD Android TV Build/QTG3.201102.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.88 Mobile Safari/537.36'],
             ['Mozilla/5.0 (Linux; Android 4.2.2; Hisense Google TV TV Build/3.0.0-105-gb209657) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36'],
+            ['Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.6.6.i (POLAROID, Si2157LG32, wireless)'],
+            ['Mozilla/5.0 (iPad; U; CPU OS 5_0 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.0.2 Mobile/9A5248d Safari/6533.18.5#2.0#TCL/TCL-EU-RT2851-S1/28/tclwebkit1.0.2/1920*1080(547201164,null;223638693,5e1c14b212714aba9f902d376e3504aa)'],
+            ['Opera/9.80 (Linux armv7l; Opera TV Store/5581) Presto/2.12.362 Version/12.11'],
         ];
     }
 

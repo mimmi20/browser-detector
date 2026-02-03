@@ -57,11 +57,10 @@ final class SecChUaPlatform implements PlatformCodeInterface
     {
         return match ($code) {
             'android' => Os::android,
-            'chromeos' => Os::chromeos,
+            'chromeos', 'chrome os', 'chromium os' => Os::chromeos,
             'lindows' => Os::lindows,
             'fuchsia' => Os::fuchsia,
             'macos', 'mac os x', 'macintel' => Os::macosx,
-            'chrome os', 'chromium os' => Os::chromeos,
             'windows', 'win32' => Os::windows,
             'harmonyos' => Os::harmonyos,
             'linux', 'linux x86_64' => Os::linux,

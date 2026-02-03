@@ -59,5 +59,39 @@
       ]
     },
     "engine": "unknown"
+  },
+  "friendica": {
+    "name": "Friendica",
+    "manufacturer": "unknown",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\FriendicaFactory",
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "meta-webindexer": {
+    "name": "Meta-WebIndexer",
+    "manufacturer": "meta",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "meta\\-webindexer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "meta-externalads": {
+    "name": "Meta External Ads",
+    "manufacturer": "meta",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "meta-externalads"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -2145,7 +2145,7 @@
   },
   "alcatel 5027b": {
     "deviceName": "5027B",
-    "marketingName": "OneTouch Dawn",
+    "marketingName": "One Touch Dawn",
     "manufacturer": "tcl",
     "brand": "alcatel",
     "dualOrientation": true,
@@ -8811,6 +8811,38 @@
       "height": 320,
       "touch": false,
       "size": 3.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel 5059s": {
+    "deviceName": "5059S",
+    "marketingName": "Avalon V",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": false,
+      "size": 5.34
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel a466bg": {
+    "deviceName": "A466BG",
+    "marketingName": "Pixi Unite",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": 5
     },
     "type": "feature-phone",
     "platform": "java"

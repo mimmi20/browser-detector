@@ -174,7 +174,7 @@
     "engine": "unknown"
   },
   "hi-search": {
-    "name": "HiSearch",
+    "name": "HUAWEI AI Search",
     "manufacturer": "huawei",
     "type": "mobile-application",
     "version": {
@@ -344,8 +344,8 @@
     "engine": "unknown"
   },
   "emporia-app": {
-    "name": "emporia App",
-    "manufacturer": "emporia-telecom",
+    "name": "emporiaAPP",
+    "manufacturer": "emporia",
     "type": "mobile-application",
     "version": {
       "factory": null,
@@ -1140,8 +1140,8 @@
     "engine": "unknown"
   },
   "startpage-private-search-engine": {
-    "name": "Startpage - Private Search Engine",
-    "manufacturer": "startpage.com",
+    "name": "Startpage",
+    "manufacturer": "surfboard",
     "type": "mobile-application",
     "version": {
       "factory": null,
@@ -2251,8 +2251,10 @@
     "manufacturer": "openai",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ChatGPT"
+      ]
     },
     "engine": null
   },
@@ -2522,8 +2524,8 @@
     },
     "engine": null
   },
-  "hd-video-player-all-formats": {
-    "name": "HD Video Player All Formats",
+  "rocks-player": {
+    "name": "Rocks Player",
     "manufacturer": "asd-dev",
     "type": "mobile-application",
     "version": {
@@ -2875,6 +2877,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "jp\\.co\\.yahoo\\.android\\.yjtop",
+        "jp\\.co\\.yahoo\\.ipn\\.appli",
         "yjapp"
       ]
     },
@@ -2961,9 +2964,9 @@
     },
     "engine": null
   },
-  "android-launcher": {
-    "name": "Android Launcher",
-    "manufacturer": "google",
+  "launcher3": {
+    "name": "Launcher3",
+    "manufacturer": "xiaomi",
     "type": "mobile-application",
     "version": {
       "factory": null,
@@ -3540,6 +3543,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Mimir-macOS",
         "Mimir"
       ]
     },
@@ -4611,6 +4615,114 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Anchor"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "honor-search-app": {
+    "name": "Honor Search App",
+    "manufacturer": "honor",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Honor"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cursor": {
+    "name": "Cursor",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cursor"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "spark-mail": {
+    "name": "SparkMail",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SparkMail"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "framer-electron": {
+    "name": "FramerElectron",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FramerElectron"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "obsidian": {
+    "name": "Obsidian",
+    "manufacturer": "dynalist",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "obsidian"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wecom": {
+    "name": "WeCom",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "wxwork"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "imo-international-calls-chat": {
+    "name": "IMO International Calls & Chat",
+    "manufacturer": "imo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "imoAndroid"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zalo": {
+    "name": "Zalo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zalo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "multi-mail": {
+    "name": "MultiMail",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MultiMail"
       ]
     },
     "engine": "unknown"

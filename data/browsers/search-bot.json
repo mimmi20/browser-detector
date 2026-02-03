@@ -499,18 +499,6 @@
     },
     "engine": "unknown"
   },
-  "duck-assist-bot": {
-    "name": "DuckAssistBot",
-    "manufacturer": "duck-duck-go",
-    "type": "search-bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "DuckAssistBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "naver-adsbot": {
     "name": "AdsBot Naver",
     "manufacturer": "nhn-corporation",
@@ -554,6 +542,228 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "tiktok-spider": {
+    "name": "TikTokSpider",
+    "manufacturer": "bytedance",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TikTokSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "baidu mobile search": {
+    "name": "Baidu Mobile Search",
+    "manufacturer": "baidu",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "baidu-transcoder": {
+    "name": "Baidu Transcoder",
+    "manufacturer": "baidu",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "daumoa": {
+    "name": "Daum App",
+    "manufacturer": "daum-corporation",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Daumoa",
+        "Daum"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ichiro mobile bot": {
+    "name": "Ichiro Mobile Bot",
+    "manufacturer": "ichiro",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "google publisher wordpress plugin": {
+    "name": "Google Publisher Wordpress Plugin",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "google web snippet": {
+    "name": "Google Web Snippet",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "google web preview": {
+    "name": "Google Web Preview",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google Web Preview"
+      ]
+    },
+    "engine": null
+  },
+  "mail.ru": {
+    "name": "Mail.Ru Bot",
+    "manufacturer": "mail.ru",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mail\\.RU_Bot\\/Fast",
+        "Mail\\.RU_Bot",
+        "Mail\\.RU"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "voilabot": {
+    "name": "VoilaBot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VoilaBot BETA",
+        "Voilabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sogou spider": {
+    "name": "Sogou Spider",
+    "manufacturer": "sogou",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sogou\\-Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "surveybot": {
+    "name": "SurveyBot",
+    "manufacturer": "domain-tools",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SurveyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gazeta-bot": {
+    "name": "Gazeta Bot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Yandex\\.Gazeta Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adidxbot": {
+    "name": "adidxbot",
+    "manufacturer": "microsoft",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "adidxbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kagi-bot": {
+    "name": "Kagibot",
+    "manufacturer": "kagi",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kagibot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heexy-bot": {
+    "name": "Heexybot",
+    "manufacturer": "heexy",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heexybot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "brave-bot": {
+    "name": "Bravebot",
+    "manufacturer": "brave-software",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bravebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ya-direct-fetcher": {
+    "name": "YaDirectFetcher",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YaDirectFetcher"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google adwords displayads webrender": {
+    "name": "Google Adwords DisplayAds WebRender",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google\\-Adwords\\-DisplayAds\\-WebRender"
+      ]
     },
     "engine": "unknown"
   }

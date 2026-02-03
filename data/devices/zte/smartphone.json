@@ -1,7 +1,7 @@
 {
   "zte 2050": {
     "deviceName": "2050",
-    "marketingName": "2050",
+    "marketingName": "Blade 20 Smart",
     "manufacturer": "zte",
     "brand": "zte",
     "dualOrientation": true,
@@ -4129,9 +4129,9 @@
   },
   "zte nx541j": {
     "deviceName": "NX541J",
-    "marketingName": "Nubia N1",
+    "marketingName": "N1",
     "manufacturer": "zte",
-    "brand": "zte",
+    "brand": "nubia",
     "dualOrientation": true,
     "simCount": 1,
     "display": {
@@ -4289,9 +4289,9 @@
   },
   "zte nx523j v1": {
     "deviceName": "NX523J V1",
-    "marketingName": "Nubia Z11 Max",
+    "marketingName": "Z11 Max",
     "manufacturer": "zte",
-    "brand": "zte",
+    "brand": "nubia",
     "dualOrientation": true,
     "simCount": 1,
     "display": {
@@ -6927,6 +6927,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zte 8030ru": {
+    "deviceName": "8030RU",
+    "marketingName": "Blade V30 Vita",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1640,
+      "height": 720,
+      "touch": true,
+      "size": 6.82
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zte a7030": {
     "deviceName": "A7030",
     "marketingName": "Blade A71 2021 LTE (LATAM)",
@@ -6945,7 +6961,7 @@
   },
   "zte a7020": {
     "deviceName": "A7020",
-    "marketingName": "Blade A7S 2020",
+    "marketingName": "Blade A7s (2020)",
     "manufacturer": "zte",
     "brand": "zte",
     "dualOrientation": true,
@@ -8837,12 +8853,12 @@
     "manufacturer": "zte",
     "brand": "zte",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 2,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1600,
+      "height": 720,
       "touch": true,
-      "size": null
+      "size": 6.52
     },
     "type": "smartphone",
     "platform": "android"

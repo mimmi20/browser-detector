@@ -913,7 +913,7 @@
   },
   "samsung sm-t116": {
     "deviceName": "SM-T116",
-    "marketingName": "Galaxy Tab 3 Lite (7.0)",
+    "marketingName": "Galaxy Tab 3 V",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2097,7 +2097,7 @@
   },
   "samsung sm-p555": {
     "deviceName": "SM-P555",
-    "marketingName": "Galaxy Tab A 9.7\" Wi-Fi+ with S Pen",
+    "marketingName": "Galaxy Tab A 9.7\" LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2129,7 +2129,7 @@
   },
   "samsung sm-t390": {
     "deviceName": "SM-T390",
-    "marketingName": "Galaxy Tab Active 2",
+    "marketingName": "Galaxy Tab Active 2 8.0\"",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2145,7 +2145,7 @@
   },
   "samsung sm-t395": {
     "deviceName": "SM-T395",
-    "marketingName": "Galaxy Tab Active 2",
+    "marketingName": "Galaxy Tab Active 2 8.0\"",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2161,7 +2161,7 @@
   },
   "samsung sm-t397u": {
     "deviceName": "SM-T397U",
-    "marketingName": "Galaxy Tab Active 2 LTE",
+    "marketingName": "Galaxy Tab Active 2 8.0\" LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2177,7 +2177,7 @@
   },
   "samsung sm-t365": {
     "deviceName": "SM-T365",
-    "marketingName": "Galaxy Tab Active 8.0 LTE",
+    "marketingName": "Galaxy Tab Active 8.0\" LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2193,7 +2193,7 @@
   },
   "samsung sm-t545": {
     "deviceName": "SM-T545",
-    "marketingName": "Galaxy Tab Active Pro LTE",
+    "marketingName": "Galaxy Tab Active Pro 10.1\" LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2417,7 +2417,7 @@
   },
   "samsung sm-t525": {
     "deviceName": "SM-T525",
-    "marketingName": "Galaxy Tab Pro 10.1\"",
+    "marketingName": "Galaxy Tab Pro 10.1\" LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2705,7 +2705,7 @@
   },
   "samsung sm-t715y": {
     "deviceName": "SM-T715Y",
-    "marketingName": "Galaxy Tab S2 8.0\"",
+    "marketingName": "Galaxy Tab S2 8.0\" LTE (2015)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2721,7 +2721,7 @@
   },
   "samsung sm-t719n": {
     "deviceName": "SM-T719N",
-    "marketingName": "Galaxy Tab S2 8.0\" (2016)",
+    "marketingName": "Galaxy Tab S2 8.0\" LTE (2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3329,7 +3329,7 @@
   },
   "samsung sm-t515": {
     "deviceName": "SM-T515",
-    "marketingName": "Galaxy Tab A 10.1 LTE (2019)",
+    "marketingName": "Galaxy Tab A 10.1\" LTE (2019)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3409,7 +3409,7 @@
   },
   "samsung sm-t725": {
     "deviceName": "SM-T725",
-    "marketingName": "Galaxy Tab S5e 10.5 LTE",
+    "marketingName": "Galaxy Tab S5e 10.5\" LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3713,7 +3713,7 @@
   },
   "samsung gt-p1000": {
     "deviceName": "GT-P1000",
-    "marketingName": "Galaxy Tab 7.0",
+    "marketingName": "Galaxy Tab 7.0\"",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3729,7 +3729,7 @@
   },
   "samsung gt-p1000m": {
     "deviceName": "GT-P1000M",
-    "marketingName": "Galaxy Tab 7.0",
+    "marketingName": "Galaxy Tab 7.0\"",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3873,6 +3873,22 @@
   },
   "samsung sm-x216b": {
     "deviceName": "SM-X216B",
+    "marketingName": "Galaxy Tab A9+ 11.0\" 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-x216r": {
+    "deviceName": "SM-X216R",
     "marketingName": "Galaxy Tab A9+ 11.0\" 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -4603,6 +4619,38 @@
       "height": 800,
       "touch": true,
       "size": 8.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t509": {
+    "deviceName": "SM-T509",
+    "marketingName": "Galaxy Tab A7 10.4\" LTE (2022)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-x356b": {
+    "deviceName": "SM-X356B",
+    "marketingName": "Galaxy Tab Active 5 Pro 10.1\" 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
     },
     "type": "fone-pad",
     "platform": "android"

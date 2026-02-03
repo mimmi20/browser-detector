@@ -57,19 +57,6 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
         return true;
     }
 
-    /** @throws void */
-    #[Override]
-    public function getPlatformVersion(string $value, string | null $code = null): VersionInterface
-    {
-        try {
-            $os = Os::fromName((string) $code);
-        } catch (UnexpectedValueException) {
-            $os = Os::unknown;
-        }
-
-        return $this->getVersion($value, $os);
-    }
-
     /**
      * @throws void
      *
@@ -94,17 +81,17 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             return new ForcedNullVersion();
         }
 
+        if (preg_match('/^WhatsApp\/[0-9.]+ (?P<code>[AW])$/', $normalizedValue)) {
+            return new ForcedNullVersion();
+        }
+
         if (
-            preg_match('/android \d+ - /i', $normalizedValue, $matches)
-            || preg_match('/news republic\/[\d.]+ \(linux; android \d+/i', $normalizedValue, $matches)
-            || preg_match(
-                '/app : mozilla\/[\d.]+ \(linux; android \d+ ; \w+ \)/i',
-                $normalizedValue,
-                $matches,
-            )
-            || preg_match('/mozilla\/[\d.]+ \(linux; android [\d.]+ ios;/i', $normalizedValue, $matches)
-            || preg_match('/ \/ android \d+$/i', $normalizedValue, $matches)
-            || preg_match('/wnyc app\/[\d.]+ android\/\d+ /i', $normalizedValue, $matches)
+            preg_match('/android \d+ - /i', $normalizedValue)
+            || preg_match('/news republic\/[\d.]+ \(linux; android \d+/i', $normalizedValue)
+            || preg_match('/app : mozilla\/[\d.]+ \(linux; android \d+ ; \w+ \)/i', $normalizedValue)
+            || preg_match('/mozilla\/[\d.]+ \(linux; android [\d.]+ ios;/i', $normalizedValue)
+            || preg_match('/ \/ android \d+$/i', $normalizedValue)
+            || preg_match('/wnyc app\/[\d.]+ android\/\d+ /i', $normalizedValue)
         ) {
             return new ForcedNullVersion();
         }

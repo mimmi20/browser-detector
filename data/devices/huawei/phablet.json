@@ -862,5 +862,37 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "huawei mbh-n49": {
+    "deviceName": "MBH-N49",
+    "marketingName": "Magic V5",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2352,
+      "height": 2172,
+      "touch": true,
+      "size": 7.95
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei mt7-tl10": {
+    "deviceName": "MT7-TL10",
+    "marketingName": "Ascend Mate 7",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 6
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

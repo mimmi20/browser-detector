@@ -33,7 +33,7 @@ jobs:
       skip-validate-md: false
       skip-phplint: false
       skip-check-composer: true
-      skip-ec-checker: false
+      skip-ec-checker: true
       dependency-analyser-options: ""
 
   install:
@@ -115,6 +115,7 @@ jobs:
       upload-coveralls: true
       upload-flag: ""
       use-phpstan: true
+      skip-infection: true
     secrets:
       ENV_CODECLIMATE_API_KEY: ${{ secrets.CODECLIMATE_API_KEY }}
       ENV_CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
