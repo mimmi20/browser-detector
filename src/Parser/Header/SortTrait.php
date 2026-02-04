@@ -81,4 +81,56 @@ trait SortTrait
 
         return $brands;
     }
+
+    /**
+     * @return array<non-empty-string, non-empty-string>
+     *
+     * @throws void
+     */
+    private function sortForEngine(string $value): array
+    {
+        $reg             = '/^"(?P<brand>[^"]+)"; ?v="(?P<version>[^"]+)"(?:, )?/';
+        $list            = [];
+        $fullVersionList = [];
+        $nameList        = [];
+
+        while (preg_match($reg, $value, $matches)) {
+            $list[$matches['brand']] = $matches['version'];
+            $value                   = mb_substr($value, mb_strlen($matches[0]));
+        }
+
+        $brands = array_filter(
+            $list,
+            static function (string $brand): bool {
+                $code = mb_strtolower($brand);
+
+                return !str_contains($code, 'brand');
+            },
+            ARRAY_FILTER_USE_KEY,
+        );
+
+        foreach (array_keys($brands) as $brand) {
+            $code = mb_strtolower($brand);
+
+            $fullVersionList[$brand] = match ($code) {
+                'chromium', 'safari' => 2,
+                'operamobile', 'microsoft edge webview2', 'yowser', 'edge side panel', 'version', 'opera mini android' => 1,
+                default => 0,
+            };
+
+            $nameList[$brand] = $code;
+        }
+
+        array_multisort(
+            $fullVersionList,
+            SORT_DESC,
+            SORT_NUMERIC,
+            $nameList,
+            SORT_ASC,
+            SORT_NATURAL,
+            $brands,
+        );
+
+        return $brands;
+    }
 }
