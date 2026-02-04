@@ -5860,6 +5860,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Bright Interactive',
                 'key' => 'bright-interactive',
             ],
+            [
+                'type' => 'Elbert Alias',
+                'name' => 'Elbert Alias',
+                'brandname' => 'Elbert Alias',
+                'key' => 'elbert-alias',
+            ],
+            [
+                'type' => 'Barnes & Noble',
+                'name' => 'Barnes & Noble',
+                'brandname' => 'Barnes & Noble',
+                'key' => 'barnes-noble',
+            ],
+            [
+                'type' => 'Phoenix Studio',
+                'name' => 'Phoenix Studio',
+                'brandname' => 'Phoenix Studio',
+                'key' => 'phoenix-studio',
+            ],
         ];
     }
 

@@ -1955,6 +1955,12 @@ enum Company: string implements CompanyInterface
 
     case brightInteractive = 'Bright Interactive';
 
+    case elbertAlias = 'Elbert Alias';
+
+    case barnesNoble = 'Barnes & Noble';
+
+    case phoenixStudio = 'Phoenix Studio';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2930,6 +2936,9 @@ enum Company: string implements CompanyInterface
             'adrienbarbaresi', 'adrien-barbaresi', 'adrien barbaresi' => self::adrienBarbaresi,
             'w3c' => self::w3c,
             'brightinteractive', 'bright interactive ltd', 'bright interactive', 'bright-interactive' => self::brightInteractive,
+            'elbertalias', 'elbert alias', 'elbert-alias' => self::elbertAlias,
+            'barnesnoble', 'barnes & noble', 'barnes-noble' => self::barnesNoble,
+            'phoenixstudio', 'phoenix studio', 'phoenix-studio' => self::phoenixStudio,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3628,6 +3637,9 @@ enum Company: string implements CompanyInterface
             self::pagePeeker => 'page-peeker',
             self::adrienBarbaresi => 'adrien-barbaresi',
             self::brightInteractive => 'bright-interactive',
+            self::elbertAlias => 'elbert-alias',
+            self::barnesNoble => 'barnes-noble',
+            self::phoenixStudio => 'phoenix-studio',
             default => $this->name,
         };
     }
