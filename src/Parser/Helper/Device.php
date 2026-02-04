@@ -1253,6 +1253,7 @@ final class Device implements DeviceInterface
             'xiaomi 11t' => 'xiaomi=xiaomi 11t',
             'xig01' => 'xiaomi=xiaomi xig01',
             'mix' => 'xiaomi=xiaomi mi mix',
+            '25057rn09e' => 'xiaomi=xiaomi 25057rn09e',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3200,6 +3201,7 @@ final class Device implements DeviceInterface
             'hmd pulse pro' => 'hmd-global=hmd-global pulse pro',
             'hmd pulse' => 'hmd-global=hmd-global pulse',
             'hmd vibe 5g' => 'hmd-global=hmd-global vibe 5g',
+            'hmd t21' => 'hmd-global=hmd-global t21',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -4981,6 +4983,7 @@ final class Device implements DeviceInterface
             'itel s663ln' => 'itel=itel s663ln',
             'itel s663l' => 'itel=itel s663l',
             'itel a669w' => 'itel=itel a669w',
+            'itel a27' => 'itel=itel a27',
             // vontar
             'hk1rbox-x4' => 'vontar=vontar hk1 rbox x4',
             'hk1 mini+' => 'vontar=vontar hk1 mini plus',
@@ -6737,7 +6740,7 @@ final class Device implements DeviceInterface
             'x700_eea' => 'aocwei=aocwei x700-eea',
             // vale
             'v12e-lte-8128' => 'vale=vale v12e lte',
-            'v10e-lte-464' => 'vale=vale v10e lte',
+            'v10e-lte-464', 'v10e_lte_464' => 'vale=vale v10e lte',
             // relndoo
             'tb02' => 'relndoo=relndoo tb02',
             // head-wolf
@@ -7348,6 +7351,8 @@ final class Device implements DeviceInterface
             'dbook_110' => 'danew=danew dbook 110',
             // aopen
             'wt19m-fi' => 'aopen=aopen etile wt19m-fi',
+            // awow
+            'utbook_15_eea' => 'awow=awow utbook_15_eea',
             // other
             default => null,
         };

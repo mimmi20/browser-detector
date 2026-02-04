@@ -5887,5 +5887,17 @@
       ]
     },
     "engine": null
+  },
+  "comet": {
+    "name": "Comet",
+    "manufacturer": "perplexity",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Comet"
+      ]
+    },
+    "engine": null
   }
 }

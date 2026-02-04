@@ -104,7 +104,7 @@ trait SortTrait
             static function (string $brand): bool {
                 $code = mb_strtolower($brand);
 
-                return !str_contains($code, 'brand');
+                return !str_contains($code, 'brand') && !str_contains($code, 'auch deine seite');
             },
             ARRAY_FILTER_USE_KEY,
         );

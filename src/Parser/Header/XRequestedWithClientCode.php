@@ -390,6 +390,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'org.flow.browser' => 'flowsurf',
             'com.tcl.browser' => 'browse-here',
             'com.imo.android.imoim' => 'imo-international-calls-chat',
+            'com.heytap.browser' => 'heytapbrowser',
+            'ai.perplexity.comet' => 'comet',
             default => null,
         };
     }

@@ -565,6 +565,8 @@ final class XRequestedWithTest extends TestCase
             ['org.flow.browser', true, 'flowsurf', true, null, false, Os::unknown],
             ['com.tcl.browser', true, 'browse-here', true, null, false, Os::unknown],
             ['com.imo.android.imoim', true, 'imo-international-calls-chat', true, null, false, Os::unknown],
+            ['com.heytap.browser', true, 'heytapbrowser', true, null, false, Os::unknown],
+            ['ai.perplexity.comet', true, 'comet', true, null, false, Os::unknown],
         ];
     }
 }

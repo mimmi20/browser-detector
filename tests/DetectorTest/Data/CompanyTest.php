@@ -5878,6 +5878,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Phoenix Studio',
                 'key' => 'phoenix-studio',
             ],
+            [
+                'type' => 'Awow',
+                'name' => 'Awow',
+                'brandname' => 'Awow',
+                'key' => 'awow',
+            ],
         ];
     }
 

@@ -1286,6 +1286,7 @@ final class DeviceTest extends TestCase
             ['Xiaomi 11T', 'xiaomi=xiaomi 11t'],
             ['XIG01', 'xiaomi=xiaomi xig01'],
             ['MIX', 'xiaomi=xiaomi mi mix'],
+            ['25057RN09E', 'xiaomi=xiaomi 25057rn09e'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3956,6 +3957,7 @@ final class DeviceTest extends TestCase
             ['HMD Pulse Pro', 'hmd-global=hmd-global pulse pro'],
             ['HMD Pulse', 'hmd-global=hmd-global pulse'],
             ['HMD Vibe 5G', 'hmd-global=hmd-global vibe 5g'],
+            ['HMD T21', 'hmd-global=hmd-global t21'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox one'],
@@ -5776,6 +5778,7 @@ final class DeviceTest extends TestCase
             ['itel S663LN', 'itel=itel s663ln'],
             ['itel S663L', 'itel=itel s663l'],
             ['itel A669W', 'itel=itel a669w'],
+            ['itel A27', 'itel=itel a27'],
             // vontar
             ['HK1RBOX-X4', 'vontar=vontar hk1 rbox x4'],
             ['HK1 Mini+', 'vontar=vontar hk1 mini plus'],
@@ -7699,6 +7702,7 @@ final class DeviceTest extends TestCase
             // vale
             ['V12E-LTE-8128', 'vale=vale v12e lte'],
             ['V10E-LTE-464', 'vale=vale v10e lte'],
+            ['V10E_LTE_464', 'vale=vale v10e lte'],
             // relndoo
             ['TB02', 'relndoo=relndoo tb02'],
             // head-wolf
@@ -8318,6 +8322,8 @@ final class DeviceTest extends TestCase
             ['Dbook_110', 'danew=danew dbook 110'],
             // aopen
             ['WT19M-FI', 'aopen=aopen etile wt19m-fi'],
+            // awow
+            ['UTBook_15_EEA', 'awow=awow utbook_15_eea'],
             // other
             ['Model"', null],
             [': "', null],
