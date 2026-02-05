@@ -17,10 +17,9 @@ use BrowserDetector\Data\Engine;
 use Override;
 use UaData\EngineInterface;
 use UaParser\EngineCodeInterface;
-use UnexpectedValueException;
 
+use function array_key_first;
 use function mb_strtolower;
-use function preg_match;
 
 final class SecChUaEngineCode implements EngineCodeInterface
 {

@@ -14,13 +14,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Version\ForcedNullVersion;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaData\EngineInterface;
 use UaParser\EngineVersionInterface;
 
-use function preg_match;
-use function str_replace;
+use function array_first;
+use function array_key_first;
+use function mb_strtolower;
 
 final class SecChUaEngineVersion implements EngineVersionInterface
 {
@@ -54,7 +56,7 @@ final class SecChUaEngineVersion implements EngineVersionInterface
         $code = mb_strtolower($key);
 
         return match ($code) {
-            'total browser', 'wavebrowser' => new \BrowserDetector\Version\NullVersion(),
+            'total browser', 'wavebrowser' => new NullVersion(),
             default => $this->setVersion($version),
         };
     }

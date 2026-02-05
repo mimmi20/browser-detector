@@ -2073,6 +2073,7 @@ final class SecChUaModelTest extends TestCase
             ['""', false, null],
             ['"Some Unknown Model"', false, null],
             ['"K"', false, null],
+            ['"Android"', false, null],
         ];
     }
 }

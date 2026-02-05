@@ -17,7 +17,6 @@ use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaData\EngineInterface;
-use UaParser\ClientVersionInterface;
 use UaParser\EngineVersionInterface;
 
 final class CrawledByEngineVersion implements EngineVersionInterface

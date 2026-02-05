@@ -360,6 +360,7 @@ final readonly class Headers
                             case 'hanalei-bot':
                             case 'statistik-hessen':
                             case 'claudebot':
+                            case 'meta-external-agent':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 
@@ -427,7 +428,7 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($clientCodename);
             $clientVersion  = match ($clientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine' => $clientVersions['user-agent']
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo! japan', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine', 'meta-external-agent' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
                 'duckduck app', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']

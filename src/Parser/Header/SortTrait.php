@@ -37,25 +37,10 @@ trait SortTrait
      */
     private function sort(string $value): array
     {
-        $reg             = '/^"(?P<brand>[^"]+)"; ?v="(?P<version>[^"]+)"(?:, )?/';
-        $list            = [];
         $fullVersionList = [];
         $nameList        = [];
 
-        while (preg_match($reg, $value, $matches)) {
-            $list[$matches['brand']] = $matches['version'];
-            $value                   = mb_substr($value, mb_strlen($matches[0]));
-        }
-
-        $brands = array_filter(
-            $list,
-            static function (string $brand): bool {
-                $code = mb_strtolower($brand);
-
-                return !str_contains($code, 'brand');
-            },
-            ARRAY_FILTER_USE_KEY,
-        );
+        $brands = $this->splitAndFilter($value);
 
         foreach (array_keys($brands) as $brand) {
             $code = mb_strtolower($brand);
@@ -89,25 +74,10 @@ trait SortTrait
      */
     private function sortForEngine(string $value): array
     {
-        $reg             = '/^"(?P<brand>[^"]+)"; ?v="(?P<version>[^"]+)"(?:, )?/';
-        $list            = [];
         $fullVersionList = [];
         $nameList        = [];
 
-        while (preg_match($reg, $value, $matches)) {
-            $list[$matches['brand']] = $matches['version'];
-            $value                   = mb_substr($value, mb_strlen($matches[0]));
-        }
-
-        $brands = array_filter(
-            $list,
-            static function (string $brand): bool {
-                $code = mb_strtolower($brand);
-
-                return !str_contains($code, 'brand') && !str_contains($code, 'auch deine seite');
-            },
-            ARRAY_FILTER_USE_KEY,
-        );
+        $brands = $this->splitAndFilter($value);
 
         foreach (array_keys($brands) as $brand) {
             $code = mb_strtolower($brand);
@@ -132,5 +102,31 @@ trait SortTrait
         );
 
         return $brands;
+    }
+
+    /**
+     * @return array<non-empty-string, non-empty-string>
+     *
+     * @throws void
+     */
+    private function splitAndFilter(string $value): array
+    {
+        $reg  = '/^"(?P<brand>[^"]+)"; ?v="(?P<version>[^"]+)"(?:, )?/';
+        $list = [];
+
+        while (preg_match($reg, $value, $matches)) {
+            $list[$matches['brand']] = $matches['version'];
+            $value                   = mb_substr($value, mb_strlen($matches[0]));
+        }
+
+        return array_filter(
+            $list,
+            static function (string $brand): bool {
+                $code = mb_strtolower($brand);
+
+                return !str_contains($code, 'brand') && !str_contains($code, 'auch deine seite');
+            },
+            ARRAY_FILTER_USE_KEY,
+        );
     }
 }

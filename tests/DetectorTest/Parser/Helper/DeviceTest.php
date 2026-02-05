@@ -230,6 +230,11 @@ final class DeviceTest extends TestCase
             ['ASUS Chromebook Flip C100PA', 'asus=asus chromebook flip c100pa'],
             ['MeMO Pad FHD 10 LTE', 'asus=asus memo pad fhd 10 lte'],
             ['AOSP on Duma', 'asus=asus memo pad fhd 10 lte'],
+            ['ASUS_AI2401_H', 'asus=asus ai2401 h'],
+            ['ASUS_AI2401_A', 'asus=asus ai2401 a'],
+            ['ASUS_AI2401_D', 'asus=asus ai2401 d'],
+            ['ASUS_AI2401_C', 'asus=asus ai2401 c'],
+            ['ASUS_AI2401_E', 'asus=asus ai2401 e'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
             ['Pixel 7 Pro', 'google=google pixel 7 pro'],
@@ -4827,6 +4832,7 @@ final class DeviceTest extends TestCase
             ['vivo Xplay', 'vivo=vivo xplay'],
             ['vivo Xplay5A', 'vivo=vivo xplay5a'],
             ['V2080A', 'vivo=vivo v2080a'],
+            ['vivo X9', 'vivo=vivo x9'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],

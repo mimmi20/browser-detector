@@ -206,6 +206,11 @@ final class Device implements DeviceInterface
             'asus_x00qda' => 'asus=asus x00qda',
             'asus chromebook flip c100pa' => 'asus=asus chromebook flip c100pa',
             'memo pad fhd 10 lte', 'aosp on duma' => 'asus=asus memo pad fhd 10 lte',
+            'asus_ai2401_h' => 'asus=asus ai2401 h',
+            'asus_ai2401_a' => 'asus=asus ai2401 a',
+            'asus_ai2401_d' => 'asus=asus ai2401 d',
+            'asus_ai2401_c' => 'asus=asus ai2401 c',
+            'asus_ai2401_e' => 'asus=asus ai2401 e',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
@@ -4064,6 +4069,7 @@ final class Device implements DeviceInterface
             'vivo xplay' => 'vivo=vivo xplay',
             'vivo xplay5a' => 'vivo=vivo xplay5a',
             'v2080a' => 'vivo=vivo v2080a',
+            'vivo x9' => 'vivo=vivo x9',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',

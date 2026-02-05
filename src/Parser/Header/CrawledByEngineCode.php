@@ -16,19 +16,26 @@ namespace BrowserDetector\Parser\Header;
 use BrowserDetector\Data\Engine;
 use Override;
 use UaData\EngineInterface;
-use UaParser\ClientCodeInterface;
 use UaParser\EngineCodeInterface;
 
 final class CrawledByEngineCode implements EngineCodeInterface
 {
-    /** @throws void */
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
     #[Override]
     public function hasEngineCode(string $value): bool
     {
         return true;
     }
 
-    /** @throws void */
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
     #[Override]
     public function getEngineCode(string $value): EngineInterface
     {
