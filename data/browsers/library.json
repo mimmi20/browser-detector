@@ -555,7 +555,7 @@
         "Mechanize"
       ]
     },
-    "engine": "webkit"
+    "engine": "unknown"
   },
   "trafilatura": {
     "name": "trafilatura",
@@ -567,6 +567,18 @@
         "trafilatura"
       ]
     },
-    "engine": "webkit"
+    "engine": "unknown"
+  },
+  "resty": {
+    "name": "Resty",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "go-resty"
+      ]
+    },
+    "engine": "unknown"
   }
 }
