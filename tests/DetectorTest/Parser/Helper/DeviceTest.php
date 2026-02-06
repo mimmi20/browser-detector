@@ -7681,6 +7681,7 @@ final class DeviceTest extends TestCase
             ['GT60', 'condor=condor gt60'],
             ['NOVA60 i', 'condor=condor nova 60i'],
             ['NOVA 70SE', 'condor=condor nova 70 se'],
+            ['NOVA 70', 'condor=condor nova 70'],
             // f-plus/f+
             ['R570E', 'f-plus=f-plus r570e'],
             // ['SH65 2GB/32GB 4800mAh GMS', 'f-plus=f-plus sh65'],

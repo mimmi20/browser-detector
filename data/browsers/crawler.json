@@ -1849,5 +1849,29 @@
       ]
     },
     "engine": null
+  },
+  "eyeota-bot": {
+    "name": "Eyeotabot",
+    "manufacturer": "eyeota",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Eyeotabot"
+      ]
+    },
+    "engine": null
+  },
+  "google-cloud-scheduler": {
+    "name": "Google Cloud Scheduler",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Cloud-Scheduler"
+      ]
+    },
+    "engine": null
   }
 }

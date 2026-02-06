@@ -113,5 +113,17 @@
       ]
     },
     "engine": null
+  },
+  "google-stackdriver-monitoring": {
+    "name": "Google Stackdriver Monitoring",
+    "manufacturer": "google",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoogleStackdriverMonitoring"
+      ]
+    },
+    "engine": null
   }
 }

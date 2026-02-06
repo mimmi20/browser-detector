@@ -5890,6 +5890,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'yooz',
                 'key' => 'yooz',
             ],
+            [
+                'type' => 'Eyeota',
+                'name' => 'Eyeota Pte Ltd',
+                'brandname' => 'Eyeota',
+                'key' => 'eyeota',
+            ],
+            [
+                'type' => 'Online Media Group',
+                'name' => 'Online Media Group, Inc.',
+                'brandname' => 'Online Media Group',
+                'key' => 'online-media-group',
+            ],
+            [
+                'type' => 'Xianghe',
+                'name' => 'Xianghe Technology Co., Ltd.',
+                'brandname' => 'Xianghe',
+                'key' => 'xianghe',
+            ],
+            [
+                'type' => 'Sur.ly',
+                'name' => 'Sur.ly LLC',
+                'brandname' => 'Sur.ly',
+                'key' => 'sur.ly',
+            ],
         ];
     }
 

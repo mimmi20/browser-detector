@@ -6702,6 +6702,7 @@ final class Device implements DeviceInterface
             'gt60' => 'condor=condor gt60',
             'nova60 i' => 'condor=condor nova 60i',
             'nova 70se' => 'condor=condor nova 70 se',
+            'nova 70' => 'condor=condor nova 70',
             // f-plus/f+
             'r570e' => 'f-plus=f-plus r570e',
             // need to be detected with regex

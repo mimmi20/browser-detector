@@ -1965,6 +1965,14 @@ enum Company: string implements CompanyInterface
 
     case yooz = 'yooz';
 
+    case eyeota = 'Eyeota';
+
+    case onlineMediaGroup = 'Online Media Group';
+
+    case xianghe = 'Xianghe';
+
+    case surLy = 'Sur.ly';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2945,6 +2953,10 @@ enum Company: string implements CompanyInterface
             'phoenixstudio', 'phoenix studio', 'phoenix-studio' => self::phoenixStudio,
             'awow' => self::awow,
             'yooz' => self::yooz,
+            'eyeota', 'eyeota pte ltd' => self::eyeota,
+            'onlinemediagroup', 'online-media-group', 'online media group, inc.', 'online media group' => self::onlineMediaGroup,
+            'xianghe', 'xianghe technology co., ltd.' => self::xianghe,
+            'surly', 'sur.ly llc', 'sur.ly' => self::surLy,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3319,6 +3331,10 @@ enum Company: string implements CompanyInterface
             self::leagoo => 'LEAGOO International Co., Limited',
             self::pagePeeker => 'pagepeeker SRL',
             self::brightInteractive => 'Bright Interactive Ltd',
+            self::eyeota => 'Eyeota Pte Ltd',
+            self::onlineMediaGroup => 'Online Media Group, Inc.',
+            self::xianghe => 'Xianghe Technology Co., Ltd.',
+            self::surLy => 'Sur.ly LLC',
             self::unknown => null,
             default => $this->value,
         };
@@ -3646,6 +3662,8 @@ enum Company: string implements CompanyInterface
             self::elbertAlias => 'elbert-alias',
             self::barnesNoble => 'barnes-noble',
             self::phoenixStudio => 'phoenix-studio',
+            self::onlineMediaGroup => 'online-media-group',
+            self::surLy => 'sur.ly',
             default => $this->name,
         };
     }
