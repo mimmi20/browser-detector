@@ -211,6 +211,7 @@ final class Device implements DeviceInterface
             'asus_ai2401_d' => 'asus=asus ai2401 d',
             'asus_ai2401_c' => 'asus=asus ai2401 c',
             'asus_ai2401_e' => 'asus=asus ai2401 e',
+            'asus_ai2401_n' => 'asus=asus ai2401 n',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
@@ -1695,6 +1696,7 @@ final class Device implements DeviceInterface
             'sm-a156m', 'samsung sm-a156m' => 'samsung=samsung sm-a156m',
             'sm-a156e', 'samsung sm-a156e' => 'samsung=samsung sm-a156e',
             'sm-a1560', 'samsung sm-a1560' => 'samsung=samsung sm-a1560',
+            'sm-a156l', 'samsung sm-a156l' => 'samsung=samsung sm-a156l',
             'sm-a155f' => 'samsung=samsung sm-a155f',
             'sm-a346e' => 'samsung=samsung sm-a346e',
             'sm-x216b', 'samsung sm-x216b' => 'samsung=samsung sm-x216b',
@@ -2935,7 +2937,6 @@ final class Device implements DeviceInterface
             'lmu-lx9' => 'huawei=huawei lmu-lx9',
             'plr-al30' => 'huawei=huawei plr-al30',
             'abr-an00' => 'huawei=huawei abr-an00',
-            'bkq-an10' => 'huawei=huawei bkq-an10',
             'mtn-an00' => 'huawei=huawei mtn-an00',
             'mtn-an80' => 'huawei=huawei mtn-an80',
             'mtn-nx1' => 'huawei=huawei mtn-nx1',
@@ -3015,6 +3016,9 @@ final class Device implements DeviceInterface
             'nxt-ul00', 'huawei nxt-ul00' => 'huawei=huawei nxt-ul00',
             'nxt-cl00', 'huawei nxt-cl00' => 'huawei=huawei nxt-cl00',
             'nxt-dl00', 'huawei nxt-dl00' => 'huawei=huawei nxt-dl00',
+            'bkq-n49', 'huawei bkq-n49' => 'huawei=huawei bkq-n49',
+            'bkq-an90', 'huawei bkq-an90' => 'huawei=huawei bkq-an90',
+            'bkq-an10', 'huawei bkq-an10' => 'huawei=huawei bkq-an10',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -3373,6 +3377,11 @@ final class Device implements DeviceInterface
             'rmx1901' => 'realme=realme rmx1901',
             'rmx1903' => 'realme=realme rmx1903',
             'realme x' => 'realme=realme x',
+            'rmx5300' => 'realme=realme rmx5300',
+            'rmx6699' => 'realme=realme rmx6699',
+            'rmx5210' => 'realme=realme rmx5210',
+            'rmx5100' => 'realme=realme rmx5100',
+            'rmx5200' => 'realme=realme rmx5200',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -4259,6 +4268,7 @@ final class Device implements DeviceInterface
             'armor 5s' => 'ulefone=ulefone armor 5s',
             'power armor 19t' => 'ulefone=ulefone power armor 19t',
             'armor x32 pro' => 'ulefone=ulefone armor x32 pro',
+            'rugking 4 pro' => 'ulefone=ulefone rugking 4 pro',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
