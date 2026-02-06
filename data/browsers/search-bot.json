@@ -778,5 +778,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yoozbot": {
+    "name": "yoozBot",
+    "manufacturer": "yooz",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "yoozbot\\-bear",
+        "yoozBot\\-"
+      ]
+    },
+    "engine": "unknown"
   }
 }

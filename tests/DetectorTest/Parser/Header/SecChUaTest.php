@@ -190,7 +190,7 @@ final class SecChUaTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, bool|string|null>>
+     * @return list<list<bool|Engine::blink|Engine::unknown|Engine::webkit|string|null>>
      *
      * @throws void
      */

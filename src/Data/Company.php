@@ -1963,6 +1963,8 @@ enum Company: string implements CompanyInterface
 
     case awow = 'Awow';
 
+    case yooz = 'yooz';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2942,6 +2944,7 @@ enum Company: string implements CompanyInterface
             'barnesnoble', 'barnes & noble', 'barnes-noble' => self::barnesNoble,
             'phoenixstudio', 'phoenix studio', 'phoenix-studio' => self::phoenixStudio,
             'awow' => self::awow,
+            'yooz' => self::yooz,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

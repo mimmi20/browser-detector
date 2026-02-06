@@ -5884,6 +5884,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Awow',
                 'key' => 'awow',
             ],
+            [
+                'type' => 'yooz',
+                'name' => 'yooz',
+                'brandname' => 'yooz',
+                'key' => 'yooz',
+            ],
         ];
     }
 

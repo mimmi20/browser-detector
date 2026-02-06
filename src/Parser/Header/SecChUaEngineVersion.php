@@ -53,7 +53,7 @@ final class SecChUaEngineVersion implements EngineVersionInterface
         }
 
         $key  = array_key_first($list);
-        $code = mb_strtolower($key);
+        $code = mb_strtolower($key ?? '');
 
         return match ($code) {
             'total browser', 'wavebrowser' => new NullVersion(),

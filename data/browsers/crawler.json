@@ -1823,5 +1823,31 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "yahoo! japan": {
+    "name": "Yahoo! Japan",
+    "manufacturer": "yahoo-japan",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.android\\.yjtop",
+        "jp\\.co\\.yahoo\\.ipn\\.appli",
+        "yjapp"
+      ]
+    },
+    "engine": null
+  },
+  "yahoo! japan psc": {
+    "name": "Yahoo! Japan PSC",
+    "manufacturer": "yahoo-japan",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Y!J-PSC"
+      ]
+    },
+    "engine": null
   }
 }

@@ -3157,6 +3157,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-X236', 'samsung=samsung sm-x236'],
             ['SM-X236B', 'samsung=samsung sm-x236b'],
             ['SAMSUNG SM-X236B', 'samsung=samsung sm-x236b'],
+            ['SM-E055F', 'samsung=samsung sm-e055f'],
+            ['SAMSUNG SM-E055F', 'samsung=samsung sm-e055f'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3775,6 +3777,14 @@ final class DeviceTest extends TestCase
             ['HUAWEI BKQ-AN90', 'huawei=huawei bkq-an90'],
             ['BKQ-AN10', 'huawei=huawei bkq-an10'],
             ['HUAWEI BKQ-AN10', 'huawei=huawei bkq-an10'],
+            ['MEY-AN00', 'huawei=huawei mey-an00'],
+            ['HUAWEI MEY-AN00', 'huawei=huawei mey-an00'],
+            ['MEP-AN00', 'huawei=huawei mep-an00'],
+            ['HUAWEI MEP-AN00', 'huawei=huawei mep-an00'],
+            ['NLA-LX2', 'huawei=huawei nla-lx2'],
+            ['HUAWEI NLA-LX2', 'huawei=huawei nla-lx2'],
+            ['LOG-AN00', 'huawei=huawei log-an00'],
+            ['HUAWEI LOG-AN00', 'huawei=huawei log-an00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -4340,6 +4350,8 @@ final class DeviceTest extends TestCase
             ['XT2551-6', 'motorola=motorola xt2551-6'],
             ['motorola s50', 'motorola=motorola moto s50'],
             ['XT2309-5', 'motorola=motorola xt2309-5'],
+            ['XT2503-3', 'motorola=motorola xt2503-3'],
+            ['XT2503-4', 'motorola=motorola xt2503-4'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -4983,6 +4995,7 @@ final class DeviceTest extends TestCase
             ['WP210 Pro', 'oukitel=oukitel wp210 pro'],
             ['OUKITEL G3', 'oukitel=oukitel g3'],
             ['C11', 'oukitel=oukitel c11'],
+            ['WP60', 'oukitel=oukitel wp60'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -5160,6 +5173,7 @@ final class DeviceTest extends TestCase
             ['Fire 3 Max', 'doogee=doogee fire 3 max'],
             ['Fire 5 Pro', 'doogee=doogee fire 5 pro'],
             ['Fire 7', 'doogee=doogee fire 7'],
+            ['Note56 Plus', 'doogee=doogee note 56 plus'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -6134,6 +6148,7 @@ final class DeviceTest extends TestCase
             ['MZ-MEIZU 21', 'meizu=meizu 21'],
             ['Mblu 22', 'meizu=meizu mblu 22'],
             ['MEIZU Lucky 08', 'meizu=meizu lucky 08'],
+            ['MZ-MEIZU Lucky 08', 'meizu=meizu lucky 08'],
             ['MEIZU 18X', 'meizu=meizu 18x'],
             ['MEIZU 18s', 'meizu=meizu 18s'],
             ['MEIZU 18', 'meizu=meizu 18'],
@@ -6636,6 +6651,7 @@ final class DeviceTest extends TestCase
             ['TAB R6 Pro', 'hotwav=hotwav tab r6 pro'],
             ['W10 Pro', 'hotwav=hotwav w10 pro'],
             ['Hyper 7S', 'hotwav=hotwav hyper 7s'],
+            ['Note 18 GT', 'hotwav=hotwav note 18 gt'],
             // switel
             ['S5003D_CHAMP', 'switel=switel s5003d'],
             // reeder
@@ -6747,6 +6763,8 @@ final class DeviceTest extends TestCase
             ['BUZZ 2', 'ace=ace buzz 2'],
             ['BUZZ 1 Lite', 'ace=ace buzz 1 lite'],
             ['BUZZ 1', 'ace=ace buzz 1'],
+            ['BUZZ 7 Lite', 'ace=ace buzz 7 lite'],
+            ['BUZZ 7 Prime', 'ace=ace buzz 7 prime'],
             // senkatel
             ['Senkatel_T9702', 'senkatel=senkatel t9702'],
             ['Senkatel_T1009', 'senkatel=senkatel t1009'],
@@ -6911,6 +6929,7 @@ final class DeviceTest extends TestCase
             ['LAVA LEX402', 'lava=lava lex402'],
             ['LAVA LZX407', 'lava=lava lzx407'],
             ['LAVA LZX409', 'lava=lava lzx409'],
+            ['LXX513', 'lava=lava lxx513'],
             // yestel
             ['T5_EEA', 'yestel=yestel t5_eea'],
             ['T5-EEA', 'yestel=yestel t5_eea'],
@@ -7661,6 +7680,7 @@ final class DeviceTest extends TestCase
             ['GT60 PRO', 'condor=condor gt60 pro'],
             ['GT60', 'condor=condor gt60'],
             ['NOVA60 i', 'condor=condor nova 60i'],
+            ['NOVA 70SE', 'condor=condor nova 70 se'],
             // f-plus/f+
             ['R570E', 'f-plus=f-plus r570e'],
             // ['SH65 2GB/32GB 4800mAh GMS', 'f-plus=f-plus sh65'],

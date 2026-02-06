@@ -2428,6 +2428,7 @@ final class Device implements DeviceInterface
             'sm-x230', 'samsung sm-x230' => 'samsung=samsung sm-x230',
             'sm-x236', 'samsung sm-x236' => 'samsung=samsung sm-x236',
             'sm-x236b', 'samsung sm-x236b' => 'samsung=samsung sm-x236b',
+            'sm-e055f', 'samsung sm-e055f' => 'samsung=samsung sm-e055f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3019,6 +3020,10 @@ final class Device implements DeviceInterface
             'bkq-n49', 'huawei bkq-n49' => 'huawei=huawei bkq-n49',
             'bkq-an90', 'huawei bkq-an90' => 'huawei=huawei bkq-an90',
             'bkq-an10', 'huawei bkq-an10' => 'huawei=huawei bkq-an10',
+            'mey-an00', 'huawei mey-an00' => 'huawei=huawei mey-an00',
+            'mep-an00', 'huawei mep-an00' => 'huawei=huawei mep-an00',
+            'nla-lx2', 'huawei nla-lx2' => 'huawei=huawei nla-lx2',
+            'log-an00', 'huawei log-an00' => 'huawei=huawei log-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -3570,6 +3575,8 @@ final class Device implements DeviceInterface
             'xt2551-6' => 'motorola=motorola xt2551-6',
             'motorola s50' => 'motorola=motorola moto s50',
             'xt2309-5' => 'motorola=motorola xt2309-5',
+            'xt2503-3' => 'motorola=motorola xt2503-3',
+            'xt2503-4' => 'motorola=motorola xt2503-4',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4203,6 +4210,7 @@ final class Device implements DeviceInterface
             'wp210 pro' => 'oukitel=oukitel wp210 pro',
             'oukitel g3' => 'oukitel=oukitel g3',
             'c11' => 'oukitel=oukitel c11',
+            'wp60' => 'oukitel=oukitel wp60',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -4375,6 +4383,7 @@ final class Device implements DeviceInterface
             'fire 3 max' => 'doogee=doogee fire 3 max',
             'fire 5 pro' => 'doogee=doogee fire 5 pro',
             'fire 7' => 'doogee=doogee fire 7',
+            'note56 plus' => 'doogee=doogee note 56 plus',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -5325,7 +5334,7 @@ final class Device implements DeviceInterface
             'pro 6 plus' => 'meizu=meizu pro 6 plus',
             'meizu 21', 'mz-meizu 21' => 'meizu=meizu 21',
             'mblu 22' => 'meizu=meizu mblu 22',
-            'meizu lucky 08' => 'meizu=meizu lucky 08',
+            'meizu lucky 08', 'mz-meizu lucky 08' => 'meizu=meizu lucky 08',
             'meizu 18x' => 'meizu=meizu 18x',
             'meizu 18s' => 'meizu=meizu 18s',
             'meizu 18' => 'meizu=meizu 18',
@@ -5752,6 +5761,7 @@ final class Device implements DeviceInterface
             'tab r6 pro' => 'hotwav=hotwav tab r6 pro',
             'w10 pro' => 'hotwav=hotwav w10 pro',
             'hyper 7s' => 'hotwav=hotwav hyper 7s',
+            'note 18 gt' => 'hotwav=hotwav note 18 gt',
             // switel
             's5003d_champ' => 'switel=switel s5003d',
             // reeder
@@ -5859,6 +5869,8 @@ final class Device implements DeviceInterface
             'buzz 2' => 'ace=ace buzz 2',
             'buzz 1 lite' => 'ace=ace buzz 1 lite',
             'buzz 1' => 'ace=ace buzz 1',
+            'buzz 7 lite' => 'ace=ace buzz 7 lite',
+            'buzz 7 prime' => 'ace=ace buzz 7 prime',
             // senkatel
             'senkatel_t9702' => 'senkatel=senkatel t9702',
             'senkatel_t1009' => 'senkatel=senkatel t1009',
@@ -6019,6 +6031,7 @@ final class Device implements DeviceInterface
             'lava lex402' => 'lava=lava lex402',
             'lava lzx407' => 'lava=lava lzx407',
             'lava lzx409' => 'lava=lava lzx409',
+            'lxx513' => 'lava=lava lxx513',
             // yestel
             't5_eea', 't5-eea' => 'yestel=yestel t5_eea',
             't13_eea' => 'yestel=yestel t13_eea',
@@ -6688,6 +6701,7 @@ final class Device implements DeviceInterface
             'gt60 pro' => 'condor=condor gt60 pro',
             'gt60' => 'condor=condor gt60',
             'nova60 i' => 'condor=condor nova 60i',
+            'nova 70se' => 'condor=condor nova 70 se',
             // f-plus/f+
             'r570e' => 'f-plus=f-plus r570e',
             // need to be detected with regex
