@@ -5956,6 +5956,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'superbird',
                 'key' => 'superbird',
             ],
+            [
+                'type' => 'Cloudinary',
+                'name' => 'Cloudinary',
+                'brandname' => 'Cloudinary',
+                'key' => 'cloudinary',
+            ],
+            [
+                'type' => 'Inetdex',
+                'name' => 'Inetdex',
+                'brandname' => 'Inetdex',
+                'key' => 'inetdex',
+            ],
+            [
+                'type' => 'Idee',
+                'name' => 'Idée Inc.',
+                'brandname' => 'Idee',
+                'key' => 'idee',
+            ],
+            [
+                'type' => 'Integral Ad Science',
+                'name' => 'Integral Ad Science, Inc.',
+                'brandname' => 'Integral Ad Science',
+                'key' => 'integral-ad-science',
+            ],
         ];
     }
 
