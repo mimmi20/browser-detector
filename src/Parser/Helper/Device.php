@@ -4211,6 +4211,7 @@ final class Device implements DeviceInterface
             'oukitel g3' => 'oukitel=oukitel g3',
             'c11' => 'oukitel=oukitel c11',
             'wp60' => 'oukitel=oukitel wp60',
+            'rt3 plus' => 'oukitel=oukitel rt3 plus',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -6797,6 +6798,7 @@ final class Device implements DeviceInterface
             // head-wolf
             'f3a' => 'head-wolf=head-wolf f3a',
             'wpad3' => 'head-wolf=head-wolf wpad3',
+            'w5a' => 'head-wolf=head-wolf w5a',
             // hezire
             'hbook-pro' => 'hezire=hezire hbook pro',
             // weelikeit
@@ -7404,6 +7406,10 @@ final class Device implements DeviceInterface
             'wt19m-fi' => 'aopen=aopen etile wt19m-fi',
             // awow
             'utbook_15_eea' => 'awow=awow utbook_15_eea',
+            // jckkcfug
+            'a10pro_eea' => 'jckkcfug=jckkcfug a10pro_eea',
+            // lagenio
+            'panther2 pro' => 'lagenio=lagenio panther 2 pro',
             // other
             default => null,
         };

@@ -4996,6 +4996,7 @@ final class DeviceTest extends TestCase
             ['OUKITEL G3', 'oukitel=oukitel g3'],
             ['C11', 'oukitel=oukitel c11'],
             ['WP60', 'oukitel=oukitel wp60'],
+            ['RT3 Plus', 'oukitel=oukitel rt3 plus'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -7776,6 +7777,7 @@ final class DeviceTest extends TestCase
             // head-wolf
             ['F3A', 'head-wolf=head-wolf f3a'],
             ['Wpad3', 'head-wolf=head-wolf wpad3'],
+            ['W5A', 'head-wolf=head-wolf w5a'],
             // hezire
             ['HBook-Pro', 'hezire=hezire hbook pro'],
             // weelikeit
@@ -8392,6 +8394,10 @@ final class DeviceTest extends TestCase
             ['WT19M-FI', 'aopen=aopen etile wt19m-fi'],
             // awow
             ['UTBook_15_EEA', 'awow=awow utbook_15_eea'],
+            // jckkcfug
+            ['A10Pro_EEA', 'jckkcfug=jckkcfug a10pro_eea'],
+            // lagenio
+            ['Panther2 Pro', 'lagenio=lagenio panther 2 pro'],
             // other
             ['Model"', null],
             [': "', null],

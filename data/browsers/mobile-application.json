@@ -4712,5 +4712,19 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yahoo-japan-app": {
+    "name": "Yahoo! Japan App",
+    "manufacturer": "yahoo-japan",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.android\\.yjtop",
+        "jp\\.co\\.yahoo\\.ipn\\.appli",
+        "yjapp"
+      ]
+    },
+    "engine": null
   }
 }

@@ -3983,9 +3983,9 @@ final class CompanyTest extends TestCase
                 'key' => 'spotify',
             ],
             [
-                'type' => 'Yahoo!JAPAN',
-                'name' => 'Yahoo!JAPAN',
-                'brandname' => 'Yahoo!JAPAN',
+                'type' => 'Yahoo! Japan',
+                'name' => 'Yahoo! Japan Corp.',
+                'brandname' => 'Yahoo! Japan',
                 'key' => 'yahoo-japan',
             ],
             [
@@ -5913,6 +5913,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Sur.ly LLC',
                 'brandname' => 'Sur.ly',
                 'key' => 'sur.ly',
+            ],
+            [
+                'type' => 'Jckkcfug',
+                'name' => 'Jckkcfug',
+                'brandname' => 'Jckkcfug',
+                'key' => 'jckkcfug',
+            ],
+            [
+                'type' => 'LAGENIO',
+                'name' => 'LAGENIO',
+                'brandname' => 'LAGENIO',
+                'key' => 'lagenio',
             ],
         ];
     }

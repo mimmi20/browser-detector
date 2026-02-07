@@ -1329,7 +1329,7 @@ enum Company: string implements CompanyInterface
 
     case spotify = 'Spotify';
 
-    case yahooJapan = 'Yahoo!JAPAN';
+    case yahooJapan = 'Yahoo! Japan';
 
     case sogou = 'Sogou';
 
@@ -1972,6 +1972,10 @@ enum Company: string implements CompanyInterface
     case xianghe = 'Xianghe';
 
     case surLy = 'Sur.ly';
+
+    case jckkcfug = 'Jckkcfug';
+
+    case lagenio = 'LAGENIO';
 
     /**
      * @throws UnexpectedValueException
@@ -2635,7 +2639,7 @@ enum Company: string implements CompanyInterface
             'roblox', 'roblox corporation' => self::roblox,
             'bonprix', 'bonprix handelsgesellschaft mbh' => self::bonprix,
             'spotify', 'spotify ab' => self::spotify,
-            'yahoojapan', 'yahoo-japan', 'yahoo!japan' => self::yahooJapan,
+            'yahoojapan', 'yahoo-japan', 'yahoo! japan', 'yahoo! japan corp.' => self::yahooJapan,
             'sogou', 'sogou inc' => self::sogou,
             'haixu' => self::haixu,
             'nasai' => self::nasai,
@@ -2957,6 +2961,8 @@ enum Company: string implements CompanyInterface
             'onlinemediagroup', 'online-media-group', 'online media group, inc.', 'online media group' => self::onlineMediaGroup,
             'xianghe', 'xianghe technology co., ltd.' => self::xianghe,
             'surly', 'sur.ly llc', 'sur.ly' => self::surLy,
+            'jckkcfug' => self::jckkcfug,
+            'lagenio' => self::lagenio,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3335,6 +3341,7 @@ enum Company: string implements CompanyInterface
             self::onlineMediaGroup => 'Online Media Group, Inc.',
             self::xianghe => 'Xianghe Technology Co., Ltd.',
             self::surLy => 'Sur.ly LLC',
+            self::yahooJapan => 'Yahoo! Japan Corp.',
             self::unknown => null,
             default => $this->value,
         };
