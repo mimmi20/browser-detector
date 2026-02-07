@@ -3577,6 +3577,7 @@ final class Device implements DeviceInterface
             'xt2309-5' => 'motorola=motorola xt2309-5',
             'xt2503-3' => 'motorola=motorola xt2503-3',
             'xt2503-4' => 'motorola=motorola xt2503-4',
+            'motorola edge 5g uw (2021)', 'motorola edge 5g uw (2021' => 'motorola=motorola edge 5g uw 2021',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -5715,6 +5716,7 @@ final class Device implements DeviceInterface
             't676h' => 'tcl=tcl t676h',
             't676k' => 'tcl=tcl t676k',
             't676j' => 'tcl=tcl t676j',
+            'a509dl' => 'tcl=tcl a509dl',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',

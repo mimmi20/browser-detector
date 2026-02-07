@@ -5980,6 +5980,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Integral Ad Science',
                 'key' => 'integral-ad-science',
             ],
+            [
+                'type' => 'Bluesky Social',
+                'name' => 'Bluesky Social, PBC',
+                'brandname' => 'Bluesky Social',
+                'key' => 'bluesky-social',
+            ],
+            [
+                'type' => 'Justus Liebig University',
+                'name' => 'Justus Liebig University Giessen',
+                'brandname' => 'Justus Liebig University',
+                'key' => 'jlu',
+            ],
+            [
+                'type' => 'Ai Search',
+                'name' => 'Ai Search Inc.',
+                'brandname' => 'Ai Search',
+                'key' => 'ai-search',
+            ],
+            [
+                'type' => 'vuhuv',
+                'name' => 'vuhuv',
+                'brandname' => 'vuhuv',
+                'key' => 'vuhuv',
+            ],
+            [
+                'type' => 'Domains Project',
+                'name' => 'domainsproject.org',
+                'brandname' => 'Domains Project',
+                'key' => 'domains-project',
+            ],
         ];
     }
 

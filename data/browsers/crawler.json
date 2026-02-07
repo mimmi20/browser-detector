@@ -1905,5 +1905,51 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "research-jlu": {
+    "name": "Research JLU",
+    "manufacturer": "jlu",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "i-ask-bot": {
+    "name": "iAskBot",
+    "manufacturer": "ai-search",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iAskBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dormouse": {
+    "name": "Dormouse",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Dormouse"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domains-project-bot": {
+    "name": "Domains Project Bot",
+    "manufacturer": "domains-project",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Domains Project"
+      ]
+    },
+    "engine": "unknown"
   }
 }

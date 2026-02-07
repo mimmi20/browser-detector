@@ -4352,6 +4352,8 @@ final class DeviceTest extends TestCase
             ['XT2309-5', 'motorola=motorola xt2309-5'],
             ['XT2503-3', 'motorola=motorola xt2503-3'],
             ['XT2503-4', 'motorola=motorola xt2503-4'],
+            ['motorola edge 5G UW (2021)', 'motorola=motorola edge 5g uw 2021'],
+            ['motorola edge 5G UW (2021', 'motorola=motorola edge 5g uw 2021'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -6605,6 +6607,7 @@ final class DeviceTest extends TestCase
             ['T676H', 'tcl=tcl t676h'],
             ['T676K', 'tcl=tcl t676k'],
             ['T676J', 'tcl=tcl t676j'],
+            ['A509DL', 'tcl=tcl a509dl'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],

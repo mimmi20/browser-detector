@@ -1995,6 +1995,16 @@ enum Company: string implements CompanyInterface
 
     case integralAdScience = 'Integral Ad Science';
 
+    case blueskySocial = 'Bluesky Social';
+
+    case justusLiebigUniversity = 'Justus Liebig University';
+
+    case aiSearch = 'Ai Search';
+
+    case vuhuv = 'vuhuv';
+
+    case domainsProject = 'Domains Project';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2990,6 +3000,11 @@ enum Company: string implements CompanyInterface
             'inetdex' => self::inetdex,
             'idee', 'idée inc.' => self::idee,
             'integraladscience', 'integral ad science, inc.', 'integral-ad-science', 'integral ad science' => self::integralAdScience,
+            'blueskysocial', 'bluesky social, pbc', 'bluesky social', 'bluesky-social' => self::blueskySocial,
+            'justusliebiguniversity', 'justus liebig university giessen', 'justus liebig university', 'jlu' => self::justusLiebigUniversity,
+            'aisearch', 'ai search inc.', 'ai search', 'ai-search' => self::aiSearch,
+            'vuhuv' => self::vuhuv,
+            'domainsproject', 'domainsproject.org', 'domains project', 'domains-project' => self::domainsProject,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3372,6 +3387,10 @@ enum Company: string implements CompanyInterface
             self::totalSecurity => 'Total Security Ltd.',
             self::idee => 'Idée Inc.',
             self::integralAdScience => 'Integral Ad Science, Inc.',
+            self::blueskySocial => 'Bluesky Social, PBC',
+            self::justusLiebigUniversity => 'Justus Liebig University Giessen',
+            self::aiSearch => 'Ai Search Inc.',
+            self::domainsProject => 'domainsproject.org',
             self::unknown => null,
             default => $this->value,
         };
@@ -3703,6 +3722,10 @@ enum Company: string implements CompanyInterface
             self::surLy => 'sur.ly',
             self::totalSecurity => 'total-security',
             self::integralAdScience => 'integral-ad-science',
+            self::blueskySocial => 'bluesky-social',
+            self::justusLiebigUniversity => 'jlu',
+            self::aiSearch => 'ai-search',
+            self::domainsProject => 'domains-project',
             default => $this->name,
         };
     }

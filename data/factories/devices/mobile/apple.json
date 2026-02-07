@@ -173,7 +173,7 @@
     "/iph(?:one)?16[c,_]2/i": "apple iphone 16,2",
     "/iph(?:one)?16[c,_]1/i": "apple iphone 16,1",
     "/iph(?:one)?15[c,_]5/i": "apple iphone 15,5",
-    "/iph(?:one)?15[c,_]4/i": "apple iphone 15,4",
+    "/iph(?:one)?15[c,_]4|naver\\(inapp; search; [0-9]+; [0-9\\.]+; 15\\)/i": "apple iphone 15,4",
     "/iph(?:one)?15[c,_]3/i": "apple iphone 15,3",
     "/iph(?:one)?15[c,_]2/i": "apple iphone 15,2",
     "/iph(?:one)?14[c,_]8/i": "apple iphone 14,8",

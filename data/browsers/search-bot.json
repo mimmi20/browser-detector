@@ -815,5 +815,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "vuhuv-bot": {
+    "name": "vuhuvBot",
+    "manufacturer": "vuhuv",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "vuhuvRBT",
+        "vuhuvBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
