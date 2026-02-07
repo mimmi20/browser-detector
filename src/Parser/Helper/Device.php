@@ -7410,6 +7410,8 @@ final class Device implements DeviceInterface
             'a10pro_eea' => 'jckkcfug=jckkcfug a10pro_eea',
             // lagenio
             'panther2 pro' => 'lagenio=lagenio panther 2 pro',
+            // vikusha
+            'v-z80plus' => 'vikusha=vikusha v-z80 plus',
             // other
             default => null,
         };

@@ -8398,6 +8398,8 @@ final class DeviceTest extends TestCase
             ['A10Pro_EEA', 'jckkcfug=jckkcfug a10pro_eea'],
             // lagenio
             ['Panther2 Pro', 'lagenio=lagenio panther 2 pro'],
+            // vikusha
+            ['V-Z80Plus', 'vikusha=vikusha v-z80 plus'],
             // other
             ['Model"', null],
             [': "', null],

@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Version\ForcedNullVersion;
-use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
 use Override;
 use UaData\EngineInterface;
@@ -56,7 +55,6 @@ final class SecChUaEngineVersion implements EngineVersionInterface
         $code = mb_strtolower($key ?? '');
 
         return match ($code) {
-            'total browser', 'wavebrowser' => new NullVersion(),
             default => $this->setVersion($version),
         };
     }

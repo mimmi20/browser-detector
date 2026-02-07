@@ -1977,6 +1977,16 @@ enum Company: string implements CompanyInterface
 
     case lagenio = 'LAGENIO';
 
+    case vikusha = 'VIKUSHA';
+
+    case webmeup = 'WebMeUp';
+
+    case bdf = 'BDF';
+
+    case totalSecurity = 'Total Security';
+
+    case superbird = 'superbird';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2963,6 +2973,11 @@ enum Company: string implements CompanyInterface
             'surly', 'sur.ly llc', 'sur.ly' => self::surLy,
             'jckkcfug' => self::jckkcfug,
             'lagenio' => self::lagenio,
+            'vikusha' => self::vikusha,
+            'webmeup' => self::webmeup,
+            'bdf' => self::bdf,
+            'totalsecurity', 'total-security', 'total security ltd.', 'total security' => self::totalSecurity,
+            'superbird' => self::superbird,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3342,6 +3357,7 @@ enum Company: string implements CompanyInterface
             self::xianghe => 'Xianghe Technology Co., Ltd.',
             self::surLy => 'Sur.ly LLC',
             self::yahooJapan => 'Yahoo! Japan Corp.',
+            self::totalSecurity => 'Total Security Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3671,6 +3687,7 @@ enum Company: string implements CompanyInterface
             self::phoenixStudio => 'phoenix-studio',
             self::onlineMediaGroup => 'online-media-group',
             self::surLy => 'sur.ly',
+            self::totalSecurity => 'total-security',
             default => $this->name,
         };
     }

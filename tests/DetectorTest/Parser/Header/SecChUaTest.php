@@ -32,6 +32,7 @@ use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
 use UnexpectedValueException;
 
+use function in_array;
 use function sprintf;
 
 #[CoversClass(SecChUaClientCode::class)]
@@ -175,11 +176,19 @@ final class SecChUaTest extends TestCase
         );
 
         if ($engineVersion === null) {
-            self::assertInstanceOf(
-                ForcedNullVersion::class,
-                $header->getEngineVersionWithEngine(Engine::unknown),
-                sprintf('engine info mismatch for ua "%s"', $ua),
-            );
+            if (in_array($clientCode, ['wave-browser', 'total-browser'], true)) {
+                self::assertInstanceOf(
+                    NullVersion::class,
+                    $header->getEngineVersionWithEngine(Engine::unknown),
+                    sprintf('engine info mismatch for ua "%s"', $ua),
+                );
+            } else {
+                self::assertInstanceOf(
+                    ForcedNullVersion::class,
+                    $header->getEngineVersionWithEngine(Engine::unknown),
+                    sprintf('engine info mismatch for ua "%s"', $ua),
+                );
+            }
         } else {
             self::assertSame(
                 $engineVersion,
@@ -212,7 +221,7 @@ final class SecChUaTest extends TestCase
             ['" Not A;Brand";v="99", "Chromium";v="100", "CCleaner Browser";v="100"', true, 'ccleaner browser', true, '100.0.0', true, Engine::blink, true, '100.0.0'],
             ['"CCleaner Browser";v="100", " Not A;Brand";v="99", "Chromium";v="100"', true, 'ccleaner browser', true, '100.0.0', true, Engine::blink, true, '100.0.0'],
             ['"AvastSecureBrowser";v="6.6.0", " Not A;Brand";v="99.0.0.0", "Chromium";v="98.0.4758.101"', true, 'avast secure browser', true, '6.6.0', true, Engine::blink, true, '98.0.4758.101'],
-            ['"WaveBrowser";v="112", "WaveBrowser";v="112", "Not:A-Brand";v="99"', true, 'wave-browser', true, '112.0.0', true, Engine::unknown, true, null],
+            ['"WaveBrowser";v="112", "WaveBrowser";v="112", "Not:A-Brand";v="99"', true, 'wave-browser', true, '112.0.0', true, Engine::blink, true, '112.0.0'],
             ['"Opera";v="86", ";Not A Brand";v="99", "Chromium";v="100", "OperaMobile";v="69"', true, 'opera mobile', true, '69.0.0', true, Engine::blink, true, '100.0.0'],
             ['"Chromium";v="124", "Android WebView";v="124", "Not-A.Brand";v="99"', true, 'android webview', true, '124.0.0', true, Engine::blink, true, '124.0.0'],
             ['"Android WebView";v="124", "Chromium";v="124", "Not-A.Brand";v="99"', true, 'android webview', true, '124.0.0', true, Engine::blink, true, '124.0.0'],
@@ -247,15 +256,15 @@ final class SecChUaTest extends TestCase
             ['"Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120", "Edge Side Panel";v="120"', true, 'edge-side-panel', true, '120.0.0', true, Engine::blink, true, '120.0.0'],
             ['"Not_A Brand";v="8", "Edge Side Panel";v="120", "Chromium";v="120", "Microsoft Edge";v="120"', true, 'edge-side-panel', true, '120.0.0', true, Engine::blink, true, '120.0.0'],
             ['"Not)A;Brand";v="99", "HeadlessEdg";v="127", "Chromium";v="127"', true, 'headless-edge', true, '127.0.0', true, Engine::blink, true, '127.0.0'],
-            ['"Chromium";v="118", "Wavebox";v="118", "Not=A?Brand";v="99"', true, 'wavebox-browser', true, '116.0.0', true, Engine::blink, true, '118.0.0'],
-            ['"Not)A;Brand";v="24", "Total Browser";v="116"', true, 'total-browser', true, '116.0.0', true, Engine::unknown, true, null],
+            ['"Chromium";v="118", "Wavebox";v="118", "Not=A?Brand";v="99"', true, 'wavebox-browser', true, '118.0.0', true, Engine::blink, true, '118.0.0'],
+            ['"Not)A;Brand";v="24", "Total Browser";v="116"', true, 'total-browser', true, '116.0.0', true, Engine::blink, true, '116.0.0'],
             ['"Version"; v="14.1.2", "Safari"; v="605.1.15", "Chromium"; v="Not A;Brand", "Not;A Brand"; v="99"', true, 'safari', true, '14.1.2', true, Engine::webkit, true, '605.1.15'],
             ['"Opera Air";v="121", "Chromium";v="137", "Not/A)Brand";v="24"', true, 'opera-air', true, '121.0.0', true, Engine::blink, true, '137.0.0'],
             ['"Opera Mini Android";v="95", "Chromium";v="137", "Not/A)Brand";v="24"', true, 'opera mini', true, '95.0.0', true, Engine::blink, true, '137.0.0'],
             ['"Chromium";v="142", "Island";v="142", "Not_A Brand";v="99"', true, 'the-enterprise-browser', true, '142.0.0', true, Engine::blink, true, '142.0.0'],
             ['"Opera Mini Android";v="95", "Chromium";v="140", "Not=A?Brand";v="24", "Android WebView";v="140"', true, 'opera mini', true, '95.0.0', true, Engine::blink, true, '140.0.0'],
             ['"XiaoMiBrowser";v="135", "Not-A.Brand";v="8", "Chromium";v="135"', true, 'miui browser', true, '135.0.0', true, Engine::blink, true, '135.0.0'],
-            ['"Chromium";v="142", "Auch deine Seite kann ich nicht mehr ernst nehmen.";v="2024.02", "Not_A Brand";v="99"', true, 'miui browser', true, '135.0.0', true, Engine::blink, true, '135.0.0'],
+            ['"Chromium";v="142", "Auch deine Seite kann ich nicht mehr ernst nehmen.";v="2024.02", "Not_A Brand";v="99"', true, 'chromium', true, '142.0.0', true, Engine::blink, true, '142.0.0'],
         ];
     }
 }

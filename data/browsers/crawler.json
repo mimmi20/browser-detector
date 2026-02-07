@@ -1873,5 +1873,27 @@
       ]
     },
     "engine": null
+  },
+  "oai-searchbot": {
+    "name": "OAI-SearchBot",
+    "manufacturer": "openai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OAI-SearchBot"
+      ]
+    },
+    "engine": null
+  },
+  "diffbot": {
+    "name": "Diffbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

@@ -47,7 +47,6 @@ final class SecChUaEngineCode implements EngineCodeInterface
 
         return match ($code) {
             'safari' => Engine::webkit,
-            'total browser', 'wavebrowser' => Engine::unknown,
             default => Engine::blink,
         };
     }

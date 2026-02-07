@@ -5926,6 +5926,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'LAGENIO',
                 'key' => 'lagenio',
             ],
+            [
+                'type' => 'VIKUSHA',
+                'name' => 'VIKUSHA',
+                'brandname' => 'VIKUSHA',
+                'key' => 'vikusha',
+            ],
+            [
+                'type' => 'WebMeUp',
+                'name' => 'WebMeUp',
+                'brandname' => 'WebMeUp',
+                'key' => 'webmeup',
+            ],
+            [
+                'type' => 'BDF',
+                'name' => 'BDF',
+                'brandname' => 'BDF',
+                'key' => 'bdf',
+            ],
+            [
+                'type' => 'Total Security',
+                'name' => 'Total Security Ltd.',
+                'brandname' => 'Total Security',
+                'key' => 'total-security',
+            ],
+            [
+                'type' => 'superbird',
+                'name' => 'superbird',
+                'brandname' => 'superbird',
+                'key' => 'superbird',
+            ],
         ];
     }
 

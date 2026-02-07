@@ -83,7 +83,8 @@ trait SortTrait
             $code = mb_strtolower($brand);
 
             $fullVersionList[$brand] = match ($code) {
-                'chromium', 'safari' => 2,
+                'safari' => 3,
+                'chromium' => 2,
                 'operamobile', 'microsoft edge webview2', 'yowser', 'edge side panel', 'version', 'opera mini android' => 1,
                 default => 0,
             };

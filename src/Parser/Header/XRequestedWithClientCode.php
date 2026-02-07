@@ -232,7 +232,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'it.tolelab.fvd' => 'free-video-downloader',
             'jp.co.canon.bsd.ad.pixmaprint' => 'canon-print',
             'jp.co.fenrir.android.sleipnir' => 'sleipnir',
-            'jp.co.yahoo.android.yjtop' => 'yahoo! japan',
+            'jp.co.yahoo.android.yjtop' => 'yahoo-japan-app',
             'jp.ddo.pigsty.habitbrowser' => 'habit-browser',
             'jp.gocro.smartnews.android' => 'smart-news-app',
             'jp.hazuki.yuzubrowser' => 'yuzu-browser',
