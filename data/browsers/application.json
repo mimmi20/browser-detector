@@ -1469,5 +1469,17 @@
       ]
     },
     "engine": null
+  },
+  "watch-free-plus": {
+    "name": "WatchFree+",
+    "manufacturer": "vizio",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WatchFree"
+      ]
+    },
+    "engine": null
   }
 }

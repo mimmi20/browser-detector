@@ -2005,6 +2005,10 @@ enum Company: string implements CompanyInterface
 
     case domainsProject = 'Domains Project';
 
+    case comcast = 'Comcast';
+
+    case degordian = 'Degordian';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3005,6 +3009,8 @@ enum Company: string implements CompanyInterface
             'aisearch', 'ai search inc.', 'ai search', 'ai-search' => self::aiSearch,
             'vuhuv' => self::vuhuv,
             'domainsproject', 'domainsproject.org', 'domains project', 'domains-project' => self::domainsProject,
+            'comcast' => self::comcast,
+            'degordian', 'degordian d.o.o.' => self::degordian,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3391,6 +3397,7 @@ enum Company: string implements CompanyInterface
             self::justusLiebigUniversity => 'Justus Liebig University Giessen',
             self::aiSearch => 'Ai Search Inc.',
             self::domainsProject => 'domainsproject.org',
+            self::degordian => 'Degordian d.o.o.',
             self::unknown => null,
             default => $this->value,
         };

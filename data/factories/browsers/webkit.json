@@ -434,7 +434,7 @@
     "/(?<!via translate\\.)goog(?!le)|googleother/i": "googlebot",
     "/shopkeep-pocket/i": "shopkeep pocket",
     "/^apple-(iphone|ip[ao]d)/i": "exchange activesync",
-    "/ios|iphone|ip[ao]d/i": "mobile safari uiwebview",
+    "/(?<![az])ios|iphone|ip[ao]d/i": "mobile safari uiwebview",
     "/cloudflare-amp/i": "cloudflare amp fetcher",
     "/openwave|up\\.browser| up\\//i": "openwave mobile browser",
     "/wayback machine extension/i": "wayback-machine",

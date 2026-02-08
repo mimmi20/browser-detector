@@ -6010,6 +6010,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Domains Project',
                 'key' => 'domains-project',
             ],
+            [
+                'type' => 'Comcast',
+                'name' => 'Comcast',
+                'brandname' => 'Comcast',
+                'key' => 'comcast',
+            ],
+            [
+                'type' => 'Degordian',
+                'name' => 'Degordian d.o.o.',
+                'brandname' => 'Degordian',
+                'key' => 'degordian',
+            ],
         ];
     }
 

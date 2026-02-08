@@ -302,5 +302,37 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "rca-tablets generic-tablet": {
+    "deviceName": "generic Tablet",
+    "marketingName": "generic Tablet",
+    "manufacturer": "rca-tablets",
+    "brand": "rca-tablets",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": null
+  },
+  "rca-tablets rctw": {
+    "deviceName": "RCTw",
+    "marketingName": "RCTw",
+    "manufacturer": "rca-tablets",
+    "brand": "rca-tablets",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": null
   }
 }

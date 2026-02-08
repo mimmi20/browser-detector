@@ -580,5 +580,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "rest-client-for-ruby": {
+    "name": "REST Client for Ruby",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "rest-client"
+      ]
+    },
+    "engine": "unknown"
   }
 }
