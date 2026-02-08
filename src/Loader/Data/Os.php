@@ -15,6 +15,7 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Os as DataOs;
+use Deprecated;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RecursiveDirectoryIterator;
@@ -31,7 +32,7 @@ use function is_string;
 use function sprintf;
 use function str_replace;
 
-/** @deprecated will be removed */
+#[Deprecated(message: 'will be removed', since: '10.0.19')]
 final class Os implements DataInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/platforms';

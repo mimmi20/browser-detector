@@ -377,6 +377,8 @@ enum Os: string implements OsInterface
 
     case smartisanOS = 'Smartisan OS';
 
+    case horizon = 'Horizon';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -556,6 +558,7 @@ enum Os: string implements OsInterface
             'operatv', 'opera-tv', 'opera tv' => self::operaTv,
             'mocoros', 'mocor-os', 'mocor os' => self::mocorOS,
             'smartisanos', 'smartisan-os', 'smartisan os' => self::smartisanOS,
+            'horizon' => self::horizon,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -664,6 +667,7 @@ enum Os: string implements OsInterface
             self::whaleOS => Company::whaleTV,
             self::operaTv => Company::opera,
             self::smartisanOS => Company::smartisan,
+            self::horizon => Company::meta,
             default => Company::unknown,
         };
     }

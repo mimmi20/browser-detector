@@ -62,7 +62,12 @@ final class MobileDevice implements MobileDeviceInterface
             return false;
         }
 
-        if (preg_match('/UCWEB|Puffin\/[\d.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}|(?<![az])iOS/', $useragent)) {
+        if (
+            preg_match(
+                '/UCWEB|Puffin\/[\d.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}|(?<![az])iOS/',
+                $useragent,
+            )
+        ) {
             return true;
         }
 

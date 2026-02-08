@@ -1480,6 +1480,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => SmartisanOsFactory::class, 'search' => null],
                 'key' => 'smartisan-os',
             ],
+            [
+                'type' => 'Horizon',
+                'name' => 'Horizon',
+                'marketingName' => 'Horizon',
+                'manufacturer' => Company::meta,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'horizon',
+            ],
         ];
     }
 }
