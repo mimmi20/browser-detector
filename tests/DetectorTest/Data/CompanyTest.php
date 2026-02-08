@@ -6034,6 +6034,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Zhipu Huazhang Technology',
                 'key' => 'zhipu-huazhang',
             ],
+            [
+                'type' => 'Andrew Horton',
+                'name' => 'Andrew Horton',
+                'brandname' => 'Andrew Horton',
+                'key' => 'andrew-horton',
+            ],
+            [
+                'type' => 'ARRIS',
+                'name' => 'ARRIS',
+                'brandname' => 'ARRIS',
+                'key' => 'arris',
+            ],
+            [
+                'type' => 'Foxtel',
+                'name' => 'Foxtel',
+                'brandname' => 'Foxtel',
+                'key' => 'foxtel',
+            ],
+            [
+                'type' => 'Seraphic',
+                'name' => 'SERAPHIC Information Technology (Shanghai) Co., Ltd.',
+                'brandname' => 'Seraphic',
+                'key' => 'seraphic',
+            ],
+            [
+                'type' => 'Erie Data Systems',
+                'name' => 'Erie Data Systems, LLC',
+                'brandname' => 'Erie Data Systems',
+                'key' => 'erie-data-systems',
+            ],
         ];
     }
 

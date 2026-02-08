@@ -573,8 +573,9 @@ enum Os: string implements OsInterface
     {
         return match ($this) {
             self::unknown => null,
-            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003, self::windowsrt62, self::windowsrt63, self::windowsme, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows',
+            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003, self::windowsme, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows',
             self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410 => 'Windows NT',
+            self::windowsrt62, self::windowsrt63 => 'Windows RT',
             self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81 => 'Windows Phone OS',
             self::nucleus => 'Nucleus OS',
             self::haiku => 'Haiku OS',

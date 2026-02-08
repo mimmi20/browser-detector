@@ -2013,6 +2013,16 @@ enum Company: string implements CompanyInterface
 
     case zhipuHuazhangTechnology = 'Zhipu Huazhang Technology';
 
+    case andrewHorton = 'Andrew Horton';
+
+    case arris = 'ARRIS';
+
+    case foxtel = 'Foxtel';
+
+    case seraphic = 'Seraphic';
+
+    case erieDataSystems = 'Erie Data Systems';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3016,7 +3026,12 @@ enum Company: string implements CompanyInterface
             'comcast' => self::comcast,
             'degordian', 'degordian d.o.o.' => self::degordian,
             'rcatablets', 'rca-tablets', 'rca tablets' => self::rcaTablets,
-            'zhipuhuazhangtechnology', 'beijing zhipu huazhang technology co., ltd.', 'zhipu huazhang technology' => self::zhipuHuazhangTechnology,
+            'zhipuhuazhangtechnology', 'beijing zhipu huazhang technology co., ltd.', 'zhipu huazhang technology', 'zhipu-huazhang' => self::zhipuHuazhangTechnology,
+            'andrewhorton', 'andrew-horton', 'andrew horton' => self::andrewHorton,
+            'arris' => self::arris,
+            'foxtel' => self::foxtel,
+            'seraphic', 'seraphic information technology (shanghai) co., ltd.' => self::seraphic,
+            'eriedatasystems', 'erie data systems', 'erie data systems, llc', 'erie-data-systems' => self::erieDataSystems,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3405,6 +3420,8 @@ enum Company: string implements CompanyInterface
             self::domainsProject => 'domainsproject.org',
             self::degordian => 'Degordian d.o.o.',
             self::zhipuHuazhangTechnology => 'Beijing Zhipu Huazhang Technology Co., Ltd.',
+            self::seraphic => 'SERAPHIC Information Technology (Shanghai) Co., Ltd.',
+            self::erieDataSystems => 'Erie Data Systems, LLC',
             self::unknown => null,
             default => $this->value,
         };
@@ -3742,6 +3759,8 @@ enum Company: string implements CompanyInterface
             self::domainsProject => 'domains-project',
             self::rcaTablets => 'rca-tablets',
             self::zhipuHuazhangTechnology => 'zhipu-huazhang',
+            self::andrewHorton => 'andrew-horton',
+            self::erieDataSystems => 'erie-data-systems',
             default => $this->name,
         };
     }

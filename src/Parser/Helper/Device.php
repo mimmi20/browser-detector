@@ -4164,6 +4164,8 @@ final class Device implements DeviceInterface
             'i2018' => 'vivo=vivo i2018',
             'i2017' => 'vivo=vivo i2017',
             'i2009' => 'vivo=vivo i2009',
+            'v1813a' => 'vivo=vivo v1813a',
+            'v1813t' => 'vivo=vivo v1813t',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -7477,6 +7479,8 @@ final class Device implements DeviceInterface
             'panther2 pro' => 'lagenio=lagenio panther 2 pro',
             // vikusha
             'v-z80plus' => 'vikusha=vikusha v-z80 plus',
+            // verizon
+            'qmv7b' => 'verizon=verizon qmv7b',
             // other
             default => null,
         };

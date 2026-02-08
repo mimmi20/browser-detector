@@ -4945,6 +4945,8 @@ final class DeviceTest extends TestCase
             ['I2018', 'vivo=vivo i2018'],
             ['I2017', 'vivo=vivo i2017'],
             ['I2009', 'vivo=vivo i2009'],
+            ['V1813A', 'vivo=vivo v1813a'],
+            ['V1813T', 'vivo=vivo v1813t'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -8467,6 +8469,8 @@ final class DeviceTest extends TestCase
             ['Panther2 Pro', 'lagenio=lagenio panther 2 pro'],
             // vikusha
             ['V-Z80Plus', 'vikusha=vikusha v-z80 plus'],
+            // verizon
+            ['QMV7B', 'verizon=verizon qmv7b'],
             // other
             ['Model"', null],
             [': "', null],

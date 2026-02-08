@@ -1985,5 +1985,39 @@
       ]
     },
     "engine": "unknown"
+  },
+  "domain-codex": {
+    "name": "Domain Codex",
+    "manufacturer": "erie-data-systems",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "cyberfind-crawler": {
+    "name": "CyberFind Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CyberFind Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tiger-bot": {
+    "name": "TigerBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TigerBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
