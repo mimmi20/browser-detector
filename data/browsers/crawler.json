@@ -1961,5 +1961,29 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "chatglm-spider": {
+    "name": "ChatGLM-Spider",
+    "manufacturer": "zhipu-huazhang",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ChatGLM-Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "stract-bot": {
+    "name": "StractBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StractBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

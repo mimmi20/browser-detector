@@ -2009,6 +2009,10 @@ enum Company: string implements CompanyInterface
 
     case degordian = 'Degordian';
 
+    case rcaTablets = 'RCA Tablets';
+
+    case zhipuHuazhangTechnology = 'Zhipu Huazhang Technology';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3011,6 +3015,8 @@ enum Company: string implements CompanyInterface
             'domainsproject', 'domainsproject.org', 'domains project', 'domains-project' => self::domainsProject,
             'comcast' => self::comcast,
             'degordian', 'degordian d.o.o.' => self::degordian,
+            'rcatablets', 'rca-tablets', 'rca tablets' => self::rcaTablets,
+            'zhipuhuazhangtechnology', 'beijing zhipu huazhang technology co., ltd.', 'zhipu huazhang technology' => self::zhipuHuazhangTechnology,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3398,6 +3404,7 @@ enum Company: string implements CompanyInterface
             self::aiSearch => 'Ai Search Inc.',
             self::domainsProject => 'domainsproject.org',
             self::degordian => 'Degordian d.o.o.',
+            self::zhipuHuazhangTechnology => 'Beijing Zhipu Huazhang Technology Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3733,6 +3740,8 @@ enum Company: string implements CompanyInterface
             self::justusLiebigUniversity => 'jlu',
             self::aiSearch => 'ai-search',
             self::domainsProject => 'domains-project',
+            self::rcaTablets => 'rca-tablets',
+            self::zhipuHuazhangTechnology => 'zhipu-huazhang',
             default => $this->name,
         };
     }

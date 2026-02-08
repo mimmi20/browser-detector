@@ -6022,6 +6022,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Degordian',
                 'key' => 'degordian',
             ],
+            [
+                'type' => 'RCA Tablets',
+                'name' => 'RCA Tablets',
+                'brandname' => 'RCA Tablets',
+                'key' => 'rca-tablets',
+            ],
+            [
+                'type' => 'Zhipu Huazhang Technology',
+                'name' => 'Beijing Zhipu Huazhang Technology Co., Ltd.',
+                'brandname' => 'Zhipu Huazhang Technology',
+                'key' => 'zhipu-huazhang',
+            ],
         ];
     }
 
