@@ -6064,6 +6064,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Erie Data Systems',
                 'key' => 'erie-data-systems',
             ],
+            [
+                'type' => 'Alexa',
+                'name' => 'Alexa Internet, Inc',
+                'brandname' => 'Alexa',
+                'key' => 'alexa-internet',
+            ],
+            [
+                'type' => 'Dassault Systèmes',
+                'name' => 'Dassault Systèmes',
+                'brandname' => 'Dassault Systèmes',
+                'key' => 'dassault-systemes',
+            ],
+            [
+                'type' => 'TiVo',
+                'name' => 'TiVo',
+                'brandname' => 'TiVo',
+                'key' => 'tivo',
+            ],
+            [
+                'type' => 'Tenable',
+                'name' => 'Tenable, Inc.',
+                'brandname' => 'Tenable',
+                'key' => 'tenable',
+            ],
+            [
+                'type' => 'Verizon',
+                'name' => 'Verizon',
+                'brandname' => 'Verizon',
+                'key' => 'verizon',
+            ],
+            [
+                'type' => 'T-Craft',
+                'name' => 'T-Craft',
+                'brandname' => 'T-Craft',
+                'key' => 't-craft',
+            ],
         ];
     }
 

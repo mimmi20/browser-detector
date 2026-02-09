@@ -2023,6 +2023,18 @@ enum Company: string implements CompanyInterface
 
     case erieDataSystems = 'Erie Data Systems';
 
+    case alexa = 'Alexa';
+
+    case dassaultSystemes = 'Dassault Systèmes';
+
+    case tivo = 'TiVo';
+
+    case tenable = 'Tenable';
+
+    case verizon = 'Verizon';
+
+    case tCraft = 'T-Craft';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3032,6 +3044,12 @@ enum Company: string implements CompanyInterface
             'foxtel' => self::foxtel,
             'seraphic', 'seraphic information technology (shanghai) co., ltd.' => self::seraphic,
             'eriedatasystems', 'erie data systems', 'erie data systems, llc', 'erie-data-systems' => self::erieDataSystems,
+            'alexa', 'alexa internet, inc', 'alexa-internet' => self::alexa,
+            'dassaultsystemes', 'dassault systèmes', 'dassault-systemes' => self::dassaultSystemes,
+            'tivo' => self::tivo,
+            'tenable', 'tenable, inc.' => self::tenable,
+            'verizon' => self::verizon,
+            'tcraft', 't-craft' => self::tCraft,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3422,6 +3440,8 @@ enum Company: string implements CompanyInterface
             self::zhipuHuazhangTechnology => 'Beijing Zhipu Huazhang Technology Co., Ltd.',
             self::seraphic => 'SERAPHIC Information Technology (Shanghai) Co., Ltd.',
             self::erieDataSystems => 'Erie Data Systems, LLC',
+            self::alexa => 'Alexa Internet, Inc',
+            self::tenable => 'Tenable, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3761,6 +3781,9 @@ enum Company: string implements CompanyInterface
             self::zhipuHuazhangTechnology => 'zhipu-huazhang',
             self::andrewHorton => 'andrew-horton',
             self::erieDataSystems => 'erie-data-systems',
+            self::alexa => 'alexa-internet',
+            self::dassaultSystemes => 'dassault-systemes',
+            self::tCraft => 't-craft',
             default => $this->name,
         };
     }

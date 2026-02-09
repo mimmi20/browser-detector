@@ -828,5 +828,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "alexabot": {
+    "name": "Alexa Crawler",
+    "manufacturer": "alexa-internet",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Alexabot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
