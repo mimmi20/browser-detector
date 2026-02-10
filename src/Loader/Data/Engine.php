@@ -15,7 +15,6 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Engine as DataEngine;
-use Deprecated;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RecursiveDirectoryIterator;
@@ -32,7 +31,7 @@ use function is_string;
 use function sprintf;
 use function str_replace;
 
-#[Deprecated(message: 'will be removed', since: '10.0.19')]
+/** @deprecated will be removed */
 final class Engine implements DataInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/engines';
