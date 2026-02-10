@@ -6194,7 +6194,7 @@ final class DetectorIntegrationTest extends TestCase
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'KFQUWI',
-                        'marketingName' => 'Fire 7 (2022)',
+                        'marketingName' => 'Fire 7" (2022)',
                         'manufacturer' => 'Amazon',
                         'brand' => 'Amazon',
                         'dualOrientation' => true,
@@ -7416,7 +7416,7 @@ final class DetectorIntegrationTest extends TestCase
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'KFMAWI',
-                        'marketingName' => 'Fire HD 10 (2019)',
+                        'marketingName' => 'Fire HD 10" (2019)',
                         'manufacturer' => 'Amazon',
                         'brand' => 'Amazon',
                         'dualOrientation' => true,
