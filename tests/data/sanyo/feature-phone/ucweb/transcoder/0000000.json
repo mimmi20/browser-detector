@@ -1,1 +1,50 @@
-[{"headers":{"x-ucbrowser-ua":"pf(Java);la(en-US);re(U2\/1.0.0);dv(j2me);pr(UCBrowser\/9.4.1.377);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2\/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);","x-ucbrowser-device-ua":"Mozilla\/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront\/3.5.1\/AMB) Boost SCP6760","x-ucbrowser-device":"j2me","user-agent":"Mozilla\/5.0 (Windows; U; Windows NT 6.0; xx; Desktop) AppleWebKit\/534.13 (KHTML, like Gecko) UCBrowser\/9.4.1.377 UNTRUSTED\/1.0"},"device":{"architecture":null,"deviceName":"SCP-6760","marketingName":"Incognito","manufacturer":"Sanyo","brand":"Sanyo","dualOrientation":null,"simCount":1,"display":{"width":320,"height":240,"touch":false,"size":2.6},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"JavaOS","marketingName":"JavaOS","version":null,"manufacturer":"Sun","bits":null},"client":{"name":"UC Browser","modus":null,"version":"9.4.1.377","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U2","version":"1.0.0","manufacturer":"UCWeb"}}]
+[
+  {
+    "headers": {
+      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(j2me);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);",
+      "x-ucbrowser-device-ua": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760",
+      "x-ucbrowser-device": "j2me",
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.0; xx; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.4.1.377 UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SCP-6760",
+      "marketingName": "Incognito",
+      "manufacturer": "Sanyo",
+      "brand": "Sanyo",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  }
+]

@@ -1,1 +1,363 @@
-[{"headers":{"user-agent":"AndroidDownloadManager\/9 (Linux; U; Android 9; SM-N960F Build\/PPR1.180610.011) comdirect\/1.0 (appVersion:19.10.0;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"SM-N960F","marketingName":"Galaxy Note 9 (Global)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":2960,"height":1440,"touch":true,"size":6.4},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"9.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"AndroidDownloadManager\/9 (Linux; U; Android 9; SM-N950F Build\/PPR1.180610.011)"},"device":{"architecture":null,"deviceName":"SM-N950F","marketingName":"Galaxy Note 8","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":2,"display":{"width":2960,"height":1440,"touch":true,"size":6.3},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"9.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"x-requested-with":"com.snaptube.premium","user-agent":"Mozilla\/5.0 (Linux; Android 9; SM-N950F Build\/PPR1.180610.011) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/100.0.4896.127 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-N950F","marketingName":"Galaxy Note 8","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":2,"display":{"width":2960,"height":1440,"touch":true,"size":6.3},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"SnapTube","modus":null,"version":null,"manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"100.0.4896.127","manufacturer":"Google"}},{"headers":{"user-agent":"AndroidDownloadManager\/12 (Linux; U; Android 12; SM-N970F Build\/SP1A.210812.016)"},"device":{"architecture":null,"deviceName":"SM-N970F","marketingName":"Galaxy Note 10 (Europe)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":2280,"height":1080,"touch":true,"size":6.3},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"12.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"AndroidDownloadManager\/12 (Linux; U; Android 12; SM-F711B Build\/SP1A.210812.016)"},"device":{"architecture":null,"deviceName":"SM-F711B","marketingName":"Galaxy Z Flip 3 5G (International)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":2640,"height":1080,"touch":true,"size":6.7},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"12.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"AndroidDownloadManager\/12 (Linux; U; Android 12; SM-F721B Build\/SP2A.220305.013)"},"device":{"architecture":null,"deviceName":"SM-F721B","marketingName":"Galaxy Z Flip 4 5G (International)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":2640,"height":1080,"touch":true,"size":6.7},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"12.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"PodcastAddict\/v2 - Dalvik\/2.1.0 (Linux; U; Android 9; SM-N950U Build\/PPR1.180610.011)"},"device":{"architecture":null,"deviceName":"SM-N950U","marketingName":"Galaxy Note 8 (USA Unlocked)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":2960,"height":1440,"touch":true,"size":6.3},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Podcast & Radio Addict","modus":null,"version":"2.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; SM-N970F Build\/QP1A.190711.020; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/81.0.4044.138 Mobile Safari\/537.36 Zalo android\/12100498"},"device":{"architecture":null,"deviceName":"SM-N970F","marketingName":"Galaxy Note 10 (Europe)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":2280,"height":1080,"touch":true,"size":6.3},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Zalo","modus":null,"version":null,"manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"81.0.4044.138","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/9 (Linux; U; Android 9; SM-N960F Build/PPR1.180610.011) comdirect/1.0 (appVersion:19.10.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N960F",
+      "marketingName": "Galaxy Note 9 (Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/9 (Linux; U; Android 9; SM-N950F Build/PPR1.180610.011)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N950F",
+      "marketingName": "Galaxy Note 8",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.snaptube.premium",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-N950F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N950F",
+      "marketingName": "Galaxy Note 8",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "SnapTube",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/12 (Linux; U; Android 12; SM-N970F Build/SP1A.210812.016)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N970F",
+      "marketingName": "Galaxy Note 10 (Europe)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/12 (Linux; U; Android 12; SM-F711B Build/SP1A.210812.016)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F711B",
+      "marketingName": "Galaxy Z Flip 3 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2640,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/12 (Linux; U; Android 12; SM-F721B Build/SP2A.220305.013)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F721B",
+      "marketingName": "Galaxy Z Flip 4 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2640,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PodcastAddict/v2 - Dalvik/2.1.0 (Linux; U; Android 9; SM-N950U Build/PPR1.180610.011)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N950U",
+      "marketingName": "Galaxy Note 8 (USA Unlocked)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Podcast & Radio Addict",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-N970F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 Zalo android/12100498"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N970F",
+      "marketingName": "Galaxy Note 10 (Europe)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Zalo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "Google"
+    }
+  }
+]

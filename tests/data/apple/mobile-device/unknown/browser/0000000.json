@@ -1,1 +1,362 @@
-[{"headers":{"user-agent":"BSNBrowserLite\/1001 CFNetwork\/758.3.15 Darwin\/15.4.0"},"device":{"architecture":null,"deviceName":"general Apple device","marketingName":"general Apple device","manufacturer":"Apple","brand":"Apple","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"9.3.0","manufacturer":"Apple","bits":null},"client":{"name":"BSNBrowserLite","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"758.3.15","manufacturer":"Apple"}},{"headers":{"user-agent":"BSNBrowserLite\/1001 CFNetwork\/758.1.6 Darwin\/15.0.0"},"device":{"architecture":null,"deviceName":"general Apple device","marketingName":"general Apple device","manufacturer":"Apple","brand":"Apple","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"9.1.0","manufacturer":"Apple","bits":null},"client":{"name":"BSNBrowserLite","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"758.1.6","manufacturer":"Apple"}},{"headers":{"user-agent":"BSNBrowserLite\/1001 CFNetwork\/758.4.3 Darwin\/15.5.0"},"device":{"architecture":null,"deviceName":"general Apple device","marketingName":"general Apple device","manufacturer":"Apple","brand":"Apple","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"9.3.2","manufacturer":"Apple","bits":null},"client":{"name":"BSNBrowserLite","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"758.4.3","manufacturer":"Apple"}},{"headers":{"user-agent":"BSNBrowserLite\/1001 CFNetwork\/808.0.2 Darwin\/16.0.0"},"device":{"architecture":null,"deviceName":"general Apple device","marketingName":"general Apple device","manufacturer":"Apple","brand":"Apple","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"10.0.0","manufacturer":"Apple","bits":null},"client":{"name":"BSNBrowserLite","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"808.0.2","manufacturer":"Apple"}},{"headers":{"user-agent":"BSNBrowserLite\/1001 CFNetwork\/758.5.3 Darwin\/15.6.0"},"device":{"architecture":null,"deviceName":"general Apple device","marketingName":"general Apple device","manufacturer":"Apple","brand":"Apple","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"9.3.3","manufacturer":"Apple","bits":null},"client":{"name":"BSNBrowserLite","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"758.5.3","manufacturer":"Apple"}},{"headers":{"user-agent":"BSNBrowserLite\/1001 CFNetwork\/811.5.4 Darwin\/16.6.0"},"device":{"architecture":null,"deviceName":"general Apple device","marketingName":"general Apple device","manufacturer":"Apple","brand":"Apple","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"10.3.2","manufacturer":"Apple","bits":null},"client":{"name":"BSNBrowserLite","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"811.5.4","manufacturer":"Apple"}},{"headers":{"user-agent":"BSNBrowserLite\/1001 CFNetwork\/976 Darwin\/18.2.0"},"device":{"architecture":null,"deviceName":"general Apple device","marketingName":"general Apple device","manufacturer":"Apple","brand":"Apple","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"12.1.0","manufacturer":"Apple","bits":null},"client":{"name":"BSNBrowserLite","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"976.0.0","manufacturer":"Apple"}},{"headers":{"user-agent":"iBrowser\/3.1 CFNetwork\/459 Darwin\/10.0.0d3"},"device":{"architecture":null,"deviceName":"general Apple device","marketingName":"general Apple device","manufacturer":"Apple","brand":"Apple","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"iPhone OS","marketingName":"iPhone OS","version":"3.1.0","manufacturer":"Apple","bits":null},"client":{"name":"iBrowser","modus":null,"version":"3.1.0","manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"459.0.0","manufacturer":"Apple"}}]
+[
+  {
+    "headers": {
+      "user-agent": "BSNBrowserLite/1001 CFNetwork/758.3.15 Darwin/15.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BSNBrowserLite",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "758.3.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BSNBrowserLite/1001 CFNetwork/758.1.6 Darwin/15.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BSNBrowserLite",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "758.1.6",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BSNBrowserLite/1001 CFNetwork/758.4.3 Darwin/15.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BSNBrowserLite",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "758.4.3",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BSNBrowserLite/1001 CFNetwork/808.0.2 Darwin/16.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.0.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BSNBrowserLite",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "808.0.2",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BSNBrowserLite/1001 CFNetwork/758.5.3 Darwin/15.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.3",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BSNBrowserLite",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "758.5.3",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BSNBrowserLite/1001 CFNetwork/811.5.4 Darwin/16.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BSNBrowserLite",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "811.5.4",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BSNBrowserLite/1001 CFNetwork/976 Darwin/18.2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BSNBrowserLite",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "976.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iBrowser/3.1 CFNetwork/459 Darwin/10.0.0d3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPhone OS",
+      "marketingName": "iPhone OS",
+      "version": "3.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "iBrowser",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "459.0.0",
+      "manufacturer": "Apple"
+    }
+  }
+]

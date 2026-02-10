@@ -1,1 +1,272 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; Pipit) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/101.0.4951.61 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Pipit","marketingName":"Pixel Fold","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":2,"display":{"width":2208,"height":1840,"touch":true,"size":7.6},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"101.0.4951.61","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"101.0.4951.61","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 14; G9FPL) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/118.0.5993.48 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"G9FPL","marketingName":"Pixel Fold","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":2,"display":{"width":2208,"height":1840,"touch":true,"size":7.6},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"118.0.5993.48","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"118.0.5993.48","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 14; Pixel 9 Pro Fold) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/129.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Pixel 9 Pro Fold","marketingName":"Pixel 9 Pro Fold","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":1,"display":{"width":2152,"height":2076,"touch":true,"size":8},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"129.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"129.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 15; GGH2X) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"GGH2X","marketingName":"Pixel 9 Pro Fold","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":2,"display":{"width":2152,"height":2076,"touch":true,"size":8},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"128.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"128.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 15; GC15S) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/129.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"GC15S","marketingName":"Pixel 9 Pro Fold","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":2,"display":{"width":2152,"height":2076,"touch":true,"size":8},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"129.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"129.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 16; Pixel 10 Pro Fold Build\/BD3A.251105.010.E1; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/143.0.7499.34 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Pixel 10 Pro Fold","marketingName":"Pixel 10 Pro Fold","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":1,"display":{"width":2152,"height":2076,"touch":true,"size":8},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"16.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"143.0.7499.34","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"143.0.7499.34","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Pipit) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pipit",
+      "marketingName": "Pixel Fold",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2208,
+        "height": 1840,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "101.0.4951.61",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; G9FPL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.48 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "G9FPL",
+      "marketingName": "Pixel Fold",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2208,
+        "height": 1840,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "118.0.5993.48",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.5993.48",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 9 Pro Fold) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 9 Pro Fold",
+      "marketingName": "Pixel 9 Pro Fold",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2152,
+        "height": 2076,
+        "touch": true,
+        "size": 8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "129.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; GGH2X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GGH2X",
+      "marketingName": "Pixel 9 Pro Fold",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2152,
+        "height": 2076,
+        "touch": true,
+        "size": 8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "128.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; GC15S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GC15S",
+      "marketingName": "Pixel 9 Pro Fold",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2152,
+        "height": 2076,
+        "touch": true,
+        "size": 8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "129.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro Fold Build/BD3A.251105.010.E1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 10 Pro Fold",
+      "marketingName": "Pixel 10 Pro Fold",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2152,
+        "height": 2076,
+        "touch": true,
+        "size": 8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "143.0.7499.34",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.34",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -1,1 +1,317 @@
-[{"headers":{"user-agent":"Mozilla\/4.0 (compatible; MSIE 6.0; Windows CE; Opera\/9.5) HTC-PPC6850 BM"},"device":{"architecture":null,"deviceName":"PPC6850","marketingName":"Touch Pro","manufacturer":"HTC","brand":"HTC","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":2.8},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows CE","marketingName":"Windows CE","version":null,"manufacturer":"Microsoft","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"9.5.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Presto","version":null,"manufacturer":"Opera"}},{"headers":{"user-agent":"Mozilla\/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; Ameo\/1.0 Profile\/MIDP-2.0 Configuration\/CLDC-1.1) Opera 8.65 [de]"},"device":{"architecture":null,"deviceName":"Athena","marketingName":"Ameo","manufacturer":"HTC","brand":"T-Mobile","dualOrientation":true,"simCount":1,"display":{"width":640,"height":480,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows CE","marketingName":"Windows CE","version":null,"manufacturer":"Microsoft","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"8.65.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Presto","version":null,"manufacturer":"Opera"}},{"headers":{"user-agent":"Mozilla\/5.0 (HTC-T9199\/1.18.1401.8;U;Windows Mobile\/6.5;Profile\/MIDP-2.0 Configuration\/CLDC-1.1;480*800;CTC\/2.0) Opera\/9.7"},"device":{"architecture":null,"deviceName":"T9199","marketingName":"Oboe","manufacturer":"HTC","brand":"HTC","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":4.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows Mobile OS","marketingName":"Windows Mobile OS","version":"6.5.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Opera","modus":null,"version":"9.7.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Presto","version":null,"manufacturer":"Opera"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; China Operating System 2.0; HTC Sensation Build\/IML74K) AppleWebKit\/534.30 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/534.30"},"device":{"architecture":null,"deviceName":"Z710","marketingName":"Sensation","manufacturer":"HTC","brand":"HTC","dualOrientation":true,"simCount":1,"display":{"width":960,"height":540,"touch":true,"size":4.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Opera","modus":null,"version":"4.0.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"534.30.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; Wildfire E) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/76.0.3809.132 Mobile Safari\/537.36 OPR\/54.3.2672.50220"},"device":{"architecture":null,"deviceName":"Wildfire","marketingName":"Wildfire","manufacturer":"HTC","brand":"HTC","dualOrientation":true,"simCount":1,"display":{"width":320,"height":240,"touch":true,"size":3.2},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"54.3.2672.50220","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"76.0.3809.132","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; HTC U11 life) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/80.0.3987.149 Mobile Safari\/537.36 OPR\/57.1.2830.52480 comdirect\/1.0 (appVersion:20.3.0;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"U11 Life","marketingName":"U11 Life","manufacturer":"HTC","brand":"HTC","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.2},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"57.1.2830.52480","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"80.0.3987.149","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; HTC Desire 21 pro 5G) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/100.0.4896.127 Mobile Safari\/537.36 OPR\/69.3.3606.65458"},"device":{"architecture":null,"deviceName":"Desire 21 Pro 5G","marketingName":"Desire 21 Pro 5G","manufacturer":"HTC","brand":"HTC","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"69.3.3606.65458","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"100.0.4896.127","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-PPC6850 BM"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PPC6850",
+      "marketingName": "Touch Pro",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; Ameo/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [de]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Athena",
+      "marketingName": "Ameo",
+      "manufacturer": "HTC",
+      "brand": "T-Mobile",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "8.65.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T9199",
+      "marketingName": "Oboe",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": "6.5.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.7.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; China Operating System 2.0; HTC Sensation Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Z710",
+      "marketingName": "Sensation",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Wildfire E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36 OPR/54.3.2672.50220"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Wildfire",
+      "marketingName": "Wildfire",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "54.3.2672.50220",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.132",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HTC U11 life) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36 OPR/57.1.2830.52480 comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "U11 Life",
+      "marketingName": "U11 Life",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "57.1.2830.52480",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.149",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HTC Desire 21 pro 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.3.3606.65458"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Desire 21 Pro 5G",
+      "marketingName": "Desire 21 Pro 5G",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "69.3.3606.65458",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "Google"
+    }
+  }
+]

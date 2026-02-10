@@ -377,6 +377,8 @@ enum Os: string implements OsInterface
 
     case smartisanOS = 'Smartisan OS';
 
+    case horizon = 'Horizon';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -556,6 +558,7 @@ enum Os: string implements OsInterface
             'operatv', 'opera-tv', 'opera tv' => self::operaTv,
             'mocoros', 'mocor-os', 'mocor os' => self::mocorOS,
             'smartisanos', 'smartisan-os', 'smartisan os' => self::smartisanOS,
+            'horizon' => self::horizon,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -570,8 +573,9 @@ enum Os: string implements OsInterface
     {
         return match ($this) {
             self::unknown => null,
-            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003, self::windowsrt62, self::windowsrt63, self::windowsme, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows',
+            self::windows10, self::windows11, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windows95, self::windows98, self::windows31, self::windows311, self::windows2003, self::windowsme, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60 => 'Windows',
             self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410 => 'Windows NT',
+            self::windowsrt62, self::windowsrt63 => 'Windows RT',
             self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81 => 'Windows Phone OS',
             self::nucleus => 'Nucleus OS',
             self::haiku => 'Haiku OS',
@@ -664,6 +668,7 @@ enum Os: string implements OsInterface
             self::whaleOS => Company::whaleTV,
             self::operaTv => Company::opera,
             self::smartisanOS => Company::smartisan,
+            self::horizon => Company::meta,
             default => Company::unknown,
         };
     }

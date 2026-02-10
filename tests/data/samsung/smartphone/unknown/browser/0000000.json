@@ -1,1 +1,186 @@
-[{"headers":{"x-requested-with":"org.lineageos.jelly","user-agent":"Mozilla\/5.0 (Linux; Android 7.1.2; SM-J500FN Build\/NJH47D) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/59.0.3071.92 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-J500FN","marketingName":"Galaxy J5 (2015, Global)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Lineage OS","marketingName":"Lineage OS","version":"14.1.0","manufacturer":"unknown","bits":null},"client":{"name":"Jelly Browser","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"59.0.3071.92","manufacturer":"Google"}},{"headers":{"x-requested-with":"org.lineageos.jelly","user-agent":"Mozilla\/5.0 (Linux; Android 9; SM-G900F Build\/PQ3A.190801.002) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/85.0.4183.101 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-G900F","marketingName":"Galaxy S5 LTE","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Lineage OS","marketingName":"Lineage OS","version":"16.0.0","manufacturer":"unknown","bits":null},"client":{"name":"Jelly Browser","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"85.0.4183.101","manufacturer":"Google"}},{"headers":{"x-requested-with":"org.lineageos.jelly","user-agent":"Mozilla\/5.0 (Linux; Android 9; SM-G800F Build\/PQ3A.190801.002) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/96.0.4664.104 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-G800F","marketingName":"Galaxy S5 Mini (Europe)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":4.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Lineage OS","marketingName":"Lineage OS","version":"16.0.0","manufacturer":"unknown","bits":null},"client":{"name":"Jelly Browser","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"96.0.4664.104","manufacturer":"Google"}},{"headers":{"x-requested-with":"org.lineageos.jelly","user-agent":"Mozilla\/5.0 (Linux; Android 11; SM-A520F Build\/RQ3A.211001.001) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/98.0.4758.101 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-A520F","marketingName":"Galaxy A5 (2017)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.2},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Lineage OS","marketingName":"Lineage OS","version":"18.0.0","manufacturer":"unknown","bits":null},"client":{"name":"Jelly Browser","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"98.0.4758.101","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "x-requested-with": "org.lineageos.jelly",
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; SM-J500FN Build/NJH47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.92 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-J500FN",
+      "marketingName": "Galaxy J5 (2015, Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Lineage OS",
+      "marketingName": "Lineage OS",
+      "version": "14.1.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Jelly Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "org.lineageos.jelly",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G900F Build/PQ3A.190801.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Lineage OS",
+      "marketingName": "Lineage OS",
+      "version": "16.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Jelly Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.101",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "org.lineageos.jelly",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G800F Build/PQ3A.190801.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G800F",
+      "marketingName": "Galaxy S5 Mini (Europe)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Lineage OS",
+      "marketingName": "Lineage OS",
+      "version": "16.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Jelly Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "org.lineageos.jelly",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A520F Build/RQ3A.211001.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A520F",
+      "marketingName": "Galaxy A5 (2017)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Lineage OS",
+      "marketingName": "Lineage OS",
+      "version": "18.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Jelly Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
+      "manufacturer": "Google"
+    }
+  }
+]

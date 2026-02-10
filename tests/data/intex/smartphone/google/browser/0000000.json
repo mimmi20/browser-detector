@@ -1,1 +1,317 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.5; en-us; Aqua.Active Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"Aqua Active","marketingName":"Aqua Active","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.6; hi-in; Aqua Glory Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"Aqua Glory","marketingName":"Aqua Glory","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.6; en-in; Aqua Star Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"Aqua Star","marketingName":"Aqua Star","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":854,"height":480,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.6; -us; Aqua Glow Build\/MocorDroid2.3.6) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"Aqua Glow","marketingName":"Aqua Glow","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.6","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.5; en-us; Intex Cloud VX Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"Cloud VX","marketingName":"Cloud VX","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":480,"height":360,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.5; en-us; Intex Cloud X+ Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"Cloud X+","marketingName":"Cloud X+","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 4.4.2; Aqua_3G+ Build\/MocorDroid) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/30.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Aqua 3G","marketingName":"Aqua 3G","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"30.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"30.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Aqua.Active Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua Active",
+      "marketingName": "Aqua Active",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; hi-in; Aqua Glory Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua Glory",
+      "marketingName": "Aqua Glory",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-in; Aqua Star Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua Star",
+      "marketingName": "Aqua Star",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; -us; Aqua Glow Build/MocorDroid2.3.6) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua Glow",
+      "marketingName": "Aqua Glow",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.6",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Intex Cloud VX Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Cloud VX",
+      "marketingName": "Cloud VX",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Intex Cloud X+ Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Cloud X+",
+      "marketingName": "Cloud X+",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Aqua_3G+ Build/MocorDroid) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua 3G",
+      "marketingName": "Aqua 3G",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

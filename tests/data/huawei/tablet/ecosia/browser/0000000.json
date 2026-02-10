@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; SHT-AL09 Build\/HUAWEISHT-AL09) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/69.0.3497.128 Mobile Safari\/537.36 (Ecosia android@69.0.3497.128) comdirect\/1.0 (appVersion:19.11.0;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"SHT-AL09","marketingName":"MediaPad M5 8.4","manufacturer":"Huawei","brand":"Huawei","dualOrientation":true,"simCount":0,"display":{"width":2560,"height":1600,"touch":true,"size":8.4},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Ecosia","modus":null,"version":"69.0.3497.128","manufacturer":"Ecosia","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"69.0.3497.128","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; KOB2-W09) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/88.0.4324.181 Mobile Safari\/537.36 (Ecosia android@88.0.4324.181)"},"device":{"architecture":null,"deviceName":"KOB2-W09","marketingName":"MatePad T8 Wi-Fi","manufacturer":"Huawei","brand":"Huawei","dualOrientation":true,"simCount":0,"display":{"width":1280,"height":800,"touch":true,"size":8},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Ecosia","modus":null,"version":"88.0.4324.181","manufacturer":"Ecosia","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"88.0.4324.181","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; AGS3K-W09) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/88.0.4324.181 Safari\/537.36 (Ecosia android@88.0.4324.181)"},"device":{"architecture":null,"deviceName":"AGS3K-W09","marketingName":"MatePad T10s 10.1\" Wi-Fi","manufacturer":"Huawei","brand":"Huawei","dualOrientation":true,"simCount":0,"display":{"width":1920,"height":1200,"touch":true,"size":10.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Ecosia","modus":null,"version":"88.0.4324.181","manufacturer":"Ecosia","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"88.0.4324.181","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SHT-AL09 Build/HUAWEISHT-AL09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128) comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SHT-AL09",
+      "marketingName": "MediaPad M5 8.4",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.4
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "69.0.3497.128",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; KOB2-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KOB2-W09",
+      "marketingName": "MatePad T8 Wi-Fi",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "88.0.4324.181",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; AGS3K-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Safari/537.36 (Ecosia android@88.0.4324.181)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AGS3K-W09",
+      "marketingName": "MatePad T10s 10.1\" Wi-Fi",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "88.0.4324.181",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "Google"
+    }
+  }
+]

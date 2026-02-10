@@ -1,1 +1,193 @@
-[{"headers":{"sec-ch-ua-model":"\"\"","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua-platform-version":"\"12.2.1\"","sec-ch-ua-full-version-list":"\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.1672.104\", \"AVG Secure Browser\";v=\"98.0.1672.104\"","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"AVG Secure Browser\";v=\"98\"","sec-ch-ua-bitness":"\"64\"","sec-ch-ua-arch":"\"x86\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/98.0.4758.102 Safari\/537.36"},"device":{"architecture":"x86","deviceName":"Macintosh","marketingName":"Macintosh","manufacturer":"Apple","brand":"Apple","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":64},"os":{"name":"Mac OS X","marketingName":"Mac OS X","version":"12.2.1","manufacturer":"Apple","bits":64},"client":{"name":"AVG Secure Browser","modus":null,"version":"98.0.1672.104","manufacturer":"AVAST","type":"browser","isbot":false,"bits":64},"engine":{"name":"Blink","version":"98.0.4758.102","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/113.0.0.0 Safari\/537.36 AVG\/113.0.3824.128"},"device":{"architecture":null,"deviceName":"Macintosh","marketingName":"Macintosh","manufacturer":"Apple","brand":"Apple","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"macOS","marketingName":"macOS","version":"10.15.7","manufacturer":"Apple","bits":null},"client":{"name":"AVG Secure Browser","modus":null,"version":"113.0.3824.128","manufacturer":"AVAST","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"113.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/119.0.0.0 Safari\/537.36 Avast\/119.0.0.0"},"device":{"architecture":null,"deviceName":"Macintosh","marketingName":"Macintosh","manufacturer":"Apple","brand":"Apple","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"macOS","marketingName":"macOS","version":"10.15.7","manufacturer":"Apple","bits":null},"client":{"name":"Avast Secure Browser","modus":null,"version":"119.0.0.0","manufacturer":"AVAST","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"119.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Avast Secure Browser\";v=\"116\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36 Avast\/116.0.0.0"},"device":{"architecture":null,"deviceName":"Macintosh","marketingName":"Macintosh","manufacturer":"Apple","brand":"Apple","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Mac OS X","marketingName":"Mac OS X","version":"10.15.7","manufacturer":"Apple","bits":null},"client":{"name":"Avast Secure Browser","modus":null,"version":"116.0.0","manufacturer":"AVAST","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"116.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"12.2.1\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.1672.104\", \"AVG Secure Browser\";v=\"98.0.1672.104\"",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"AVG Secure Browser\";v=\"98\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "12.2.1",
+      "manufacturer": "Apple",
+      "bits": 64
+    },
+    "client": {
+      "name": "AVG Secure Browser",
+      "modus": null,
+      "version": "98.0.1672.104",
+      "manufacturer": "AVAST",
+      "type": "browser",
+      "isbot": false,
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.1672.104",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 AVG/113.0.3824.128"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.7",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "AVG Secure Browser",
+      "modus": null,
+      "version": "113.0.3824.128",
+      "manufacturer": "AVAST",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Avast/119.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.7",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Avast Secure Browser",
+      "modus": null,
+      "version": "119.0.0.0",
+      "manufacturer": "AVAST",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua": "\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Avast Secure Browser\";v=\"116\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Avast/116.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.15.7",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Avast Secure Browser",
+      "modus": null,
+      "version": "116.0.0",
+      "manufacturer": "AVAST",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

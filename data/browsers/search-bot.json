@@ -766,5 +766,79 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yandex-mediana-bot": {
+    "name": "YandexMedianaBot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexMedianaBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yoozbot": {
+    "name": "yoozBot",
+    "manufacturer": "yooz",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "yoozbot\\-bear",
+        "yoozBot\\-"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "360spider-video": {
+    "name": "360Spider-Video",
+    "manufacturer": "online-media-group",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "360Spider-Video"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "360spider-image": {
+    "name": "360Spider-Image",
+    "manufacturer": "online-media-group",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "360Spider-Image"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vuhuv-bot": {
+    "name": "vuhuvBot",
+    "manufacturer": "vuhuv",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "vuhuvRBT",
+        "vuhuvBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "alexabot": {
+    "name": "Alexa Crawler",
+    "manufacturer": "alexa-internet",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Alexabot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

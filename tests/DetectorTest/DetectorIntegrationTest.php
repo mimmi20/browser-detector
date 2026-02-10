@@ -183,7 +183,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '92.0.4515.105',
+                        'version' => '92.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -1370,7 +1370,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -1443,7 +1443,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -1516,7 +1516,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -1589,7 +1589,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -1662,7 +1662,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -1735,7 +1735,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -1808,7 +1808,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -1881,7 +1881,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -2002,7 +2002,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '141.0.0.0',
+                        'version' => '141.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -2058,7 +2058,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '127.0.6533.103',
+                        'version' => '127.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -2180,7 +2180,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '125.0.0.0',
+                        'version' => '125.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -2253,7 +2253,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '142.0.0.0',
+                        'version' => '142.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -2479,7 +2479,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '133.0.0.0',
+                        'version' => '133.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -2552,7 +2552,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -2618,7 +2618,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '126.0.0.0',
+                        'version' => '126.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -3048,7 +3048,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '140.0.0.0',
+                        'version' => '140.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -3114,7 +3114,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '102.0.5005.134',
+                        'version' => '102.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -3170,7 +3170,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '96.0.4664.175',
+                        'version' => '96.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -3294,7 +3294,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '141.0.0.0',
+                        'version' => '141.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -3402,7 +3402,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'WebKit',
-                        'version' => '605.1.15',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Apple',
                     ],
                 ],
@@ -3600,10 +3600,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'client' => [
-                        'name' => 'Yahoo! Japan',
+                        'name' => 'Yahoo! Japan App',
                         'modus' => null,
                         'version' => '3.114.0',
-                        'manufacturer' => 'Yahoo!JAPAN',
+                        'manufacturer' => 'Yahoo! Japan',
                         'type' => 'mobile-application',
                         'isbot' => false,
                         'bits' => null,
@@ -4144,7 +4144,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '124.0.0.0',
+                        'version' => '124.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -4305,7 +4305,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '101.0.4951.54',
+                        'version' => '101.0.1210.39',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -4360,9 +4360,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '137.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -4428,9 +4428,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => 'Gecko',
-                        'version' => '145.0.0',
-                        'manufacturer' => 'Mozilla',
+                        'name' => 'Blink',
+                        'version' => '138.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -4496,9 +4496,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '136.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -4552,9 +4552,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '131.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -4609,7 +4609,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '119.0.6045.214',
+                        'version' => '123.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -4664,9 +4664,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '126.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -4731,7 +4731,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '127.0.6533.103',
+                        'version' => '127.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -4832,9 +4832,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '138.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -4888,9 +4888,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '119.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -4947,7 +4947,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '135.0.7049.79',
+                        'version' => '135.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -5018,7 +5018,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => null,
+                        'version' => '143.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -5078,7 +5078,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '143.0.7499.34',
+                        'version' => '143.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -5422,7 +5422,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '141.0.7390.122',
+                        'version' => '140.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -5477,9 +5477,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '101.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -5534,7 +5534,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'WebKit',
-                        'version' => '605.1.15',
+                        'version' => '131.0.0',
                         'manufacturer' => 'Apple',
                     ],
                 ],
@@ -5590,7 +5590,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '118.0.0.0',
+                        'version' => '118.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -5645,9 +5645,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '123.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -5702,7 +5702,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'WebKit',
-                        'version' => '605.1.15',
+                        'version' => '131.0.0',
                         'manufacturer' => 'Apple',
                     ],
                 ],
@@ -5758,7 +5758,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '116.0.0.0',
+                        'version' => '140.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -5813,9 +5813,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => 'WebKit',
-                        'version' => null,
-                        'manufacturer' => 'Apple',
+                        'name' => 'Blink',
+                        'version' => '143.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -5880,7 +5880,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '142.0.0.0',
+                        'version' => '142.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -5936,7 +5936,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '116.0.0.0',
+                        'version' => '140.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -5992,7 +5992,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '109.0.5414.120',
+                        'version' => '109.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6048,7 +6048,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '143.0.0.0',
+                        'version' => '143.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6104,7 +6104,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '141.0.0.0',
+                        'version' => '141.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6172,7 +6172,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '136.0.0.0',
+                        'version' => '137.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6194,7 +6194,7 @@ final class DetectorIntegrationTest extends TestCase
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'KFQUWI',
-                        'marketingName' => 'Fire 7 (2022)',
+                        'marketingName' => 'Fire 7" (2022)',
                         'manufacturer' => 'Amazon',
                         'brand' => 'Amazon',
                         'dualOrientation' => true,
@@ -6228,7 +6228,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '140.0.7339.251',
+                        'version' => '140.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6284,7 +6284,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '141.0.7390.122',
+                        'version' => '141.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6340,7 +6340,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '136.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6396,7 +6396,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '143.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6451,9 +6451,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => null,
-                        'version' => null,
-                        'manufacturer' => 'unknown',
+                        'name' => 'Blink',
+                        'version' => '136.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -6508,7 +6508,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '102.0.4955.0',
+                        'version' => '102.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6570,7 +6570,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '91.0.4472.164',
+                        'version' => '91.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6626,7 +6626,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '108.0.0.0',
+                        'version' => '108.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6736,7 +6736,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.3351.95',
+                        'version' => '143.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6792,7 +6792,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '118.0.0.0',
+                        'version' => '118.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6848,7 +6848,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'WebKit',
-                        'version' => '605.1.15',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Apple',
                     ],
                 ],
@@ -6904,7 +6904,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '126.0.0.0',
+                        'version' => '124.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -6962,7 +6962,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '143.0.7499.146',
+                        'version' => '143.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -7018,7 +7018,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '129.0.0.0',
+                        'version' => '129.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -7076,7 +7076,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '142.0.7444.145',
+                        'version' => '142.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -7144,7 +7144,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '114.0.5735.196',
+                        'version' => '114.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -7217,7 +7217,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '138.0.7204.169',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -7325,7 +7325,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '142.0.0.0',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -7380,9 +7380,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => 'WebKit',
-                        'version' => '537.36.0',
-                        'manufacturer' => 'Apple',
+                        'name' => 'Blink',
+                        'version' => '130.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],
@@ -7416,7 +7416,7 @@ final class DetectorIntegrationTest extends TestCase
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'KFMAWI',
-                        'marketingName' => 'Fire HD 10 (2019)',
+                        'marketingName' => 'Fire HD 10" (2019)',
                         'manufacturer' => 'Amazon',
                         'brand' => 'Amazon',
                         'dualOrientation' => true,
@@ -7450,7 +7450,7 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '136.0.0.0',
+                        'version' => '136.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],
@@ -7506,7 +7506,63 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                     'engine' => [
                         'name' => 'Blink',
-                        'version' => '122.0.6261.171',
+                        'version' => '122.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua' => '"Not(A:Brand";v="8", "Chromium";v="144", "HeadlessChrome";v="144"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"Windows"',
+                    'user-agent' => 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Windows"',
+                        'sec-ch-ua' => '"Not(A:Brand";v="8", "Chromium";v="144", "HeadlessChrome";v="144"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows',
+                        'version' => null,
+                        'manufacturer' => 'Microsoft',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Meta ExternalAgent',
+                        'modus' => null,
+                        'version' => '1.1.0',
+                        'manufacturer' => 'Meta',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '144.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],

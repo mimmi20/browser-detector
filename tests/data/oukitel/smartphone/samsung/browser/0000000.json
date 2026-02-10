@@ -1,1 +1,192 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; WP7) AppleWebKit\/537.36 (KHTML, like Gecko) SamsungBrowser\/13.2 Chrome\/83.0.4103.106 Mobile Safari\/537.36 comdirect\/1.0 (appVersion:21.1.0;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"WP7","marketingName":"WP7","manufacturer":"Oukitel","brand":"Oukitel","dualOrientation":true,"simCount":2,"display":{"width":2340,"height":1080,"touch":true,"size":6.53},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Samsung Browser","modus":null,"version":"13.2.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"83.0.4103.106","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; C15 Pro) AppleWebKit\/537.36 (KHTML, like Gecko) SamsungBrowser\/13.2 Chrome\/83.0.4103.106 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"C15 Pro","marketingName":"C15 Pro","manufacturer":"Oukitel","brand":"Oukitel","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":600,"touch":true,"size":6.09},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Samsung Browser","modus":null,"version":"13.2.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"83.0.4103.106","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; WP5) AppleWebKit\/537.36 (KHTML, like Gecko) SamsungBrowser\/20.0 Chrome\/106.0.5249.126 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"WP5","marketingName":"WP5","manufacturer":"Oukitel","brand":"Oukitel","dualOrientation":true,"simCount":1,"display":{"width":1440,"height":720,"touch":true,"size":5.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Samsung Browser","modus":null,"version":"20.0.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"106.0.5249.126","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"\"OUKITEL C1\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"15.0.0\"","sec-ch-ua":"\"Not?A_Brand\";v=\"99\", \"Samsung Internet\";v=\"28.0\", \"Chromium\";v=\"130\"","sec-ch-ua-full-version":"\"130.0.6723.103\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-form-factors":"\"Mobile\"","sec-ch-ua-mobile":"?1","sec-ch-ua-wow64":"?0","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) SamsungBrowser\/28.0 Chrome\/130.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"C1 (2025)","marketingName":"C1 (2025)","manufacturer":"Oukitel","brand":"Oukitel","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":576,"touch":true,"size":6.56},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"Samsung Browser","modus":null,"version":"28.0.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"130.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; WP7) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.2 Chrome/83.0.4103.106 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.1.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "WP7",
+      "marketingName": "WP7",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "13.2.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; C15 Pro) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.2 Chrome/83.0.4103.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C15 Pro",
+      "marketingName": "C15 Pro",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 600,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "13.2.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; WP5) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "WP5",
+      "marketingName": "WP5",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "20.0.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.5249.126",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"OUKITEL C1\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"99\", \"Samsung Internet\";v=\"28.0\", \"Chromium\";v=\"130\"",
+      "sec-ch-ua-full-version": "\"130.0.6723.103\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C1 (2025)",
+      "marketingName": "C1 (2025)",
+      "manufacturer": "Oukitel",
+      "brand": "Oukitel",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 576,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "28.0.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -19,6 +19,7 @@ use Override;
 use Psr\Log\LoggerInterface;
 
 use function array_filter;
+use function array_first;
 use function array_key_exists;
 use function assert;
 use function file_get_contents;
@@ -28,7 +29,6 @@ use function is_string;
 use function json_decode;
 use function preg_last_error;
 use function preg_match;
-use function reset;
 use function sprintf;
 
 use const ARRAY_FILTER_USE_KEY;
@@ -126,7 +126,7 @@ final readonly class RulefileParser implements RulefileParserInterface
         $mode = false;
 
         if ($filtered !== []) {
-            $mode = reset($filtered);
+            $mode = array_first($filtered);
         }
 
         return $mode;

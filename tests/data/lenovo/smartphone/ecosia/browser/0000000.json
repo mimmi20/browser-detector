@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; moto g(6) Build\/PPS29.55-34) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/69.0.3497.128 Mobile Safari\/537.36 (Ecosia android@69.0.3497.128)"},"device":{"architecture":null,"deviceName":"Moto G6","marketingName":"Moto G6","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":5.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Ecosia","modus":null,"version":"69.0.3497.128","manufacturer":"Ecosia","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"69.0.3497.128","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; Moto Z3 Play Build\/PPWS29.131-27-1-18) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/69.0.3497.128 Mobile Safari\/537.36 (Ecosia android@69.0.3497.128)"},"device":{"architecture":null,"deviceName":"Moto Z3 Play","marketingName":"Moto Z3 Play","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":6},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Ecosia","modus":null,"version":"69.0.3497.128","manufacturer":"Ecosia","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"69.0.3497.128","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; moto g(7) Build\/PPOS29.114-134-10) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/69.0.3497.128 Mobile Safari\/537.36 (Ecosia android@69.0.3497.128)"},"device":{"architecture":null,"deviceName":"Moto G7","marketingName":"Moto G7","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2270,"height":1080,"touch":true,"size":6.2},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Ecosia","modus":null,"version":"69.0.3497.128","manufacturer":"Ecosia","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"69.0.3497.128","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; Moto Z (2)) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/88.0.4324.181 Mobile Safari\/537.36 (Ecosia android@88.0.4324.181)"},"device":{"architecture":null,"deviceName":"Moto Z2","marketingName":"Moto Z2","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2560,"height":1440,"touch":true,"size":5.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Ecosia","modus":null,"version":"88.0.4324.181","manufacturer":"Ecosia","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"88.0.4324.181","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto g(6) Build/PPS29.55-34) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G6",
+      "marketingName": "Moto G6",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "69.0.3497.128",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Moto Z3 Play Build/PPWS29.131-27-1-18) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto Z3 Play",
+      "marketingName": "Moto Z3 Play",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "69.0.3497.128",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto g(7) Build/PPOS29.114-134-10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G7",
+      "marketingName": "Moto G7",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2270,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "69.0.3497.128",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Moto Z (2)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto Z2",
+      "marketingName": "Moto Z2",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "88.0.4324.181",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -1,1 +1,195 @@
-[{"headers":{"x-requested-with":"mark.via.gp","user-agent":"Mozilla\/5.0 (Linux; Android 9; POCOPHONE F1 Build\/PKQ1.180729.001) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/77.0.3865.73 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Pocophone F1","marketingName":"Pocophone F1","manufacturer":"Xiaomi","brand":"Xiaomi","dualOrientation":true,"simCount":1,"display":{"width":2246,"height":1080,"touch":true,"size":6.18},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Via Browser","modus":null,"version":null,"manufacturer":"Tu Yafeng","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"77.0.3865.73","manufacturer":"Google"}},{"headers":{"x-requested-with":"mark.via.gp","user-agent":"Mozilla\/5.0 (Linux; Android 12; M2007J20CG Build\/SKQ1.211019.001) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/103.0.5060.129 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"M2007J20CG","marketingName":"X3 NFC","manufacturer":"Xiaomi","brand":"Poco","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.67},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Via Browser","modus":null,"version":null,"manufacturer":"Tu Yafeng","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"103.0.5060.129","manufacturer":"Google"}},{"headers":{"x-requested-with":"mark.via.gp","user-agent":"Mozilla\/5.0 (Linux; Android 11; Mi 9T Pro Build\/RKQ1.200826.002) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/114.0.5735.130 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Mi 9T Pro","marketingName":"Mi 9T Pro","manufacturer":"Xiaomi","brand":"Xiaomi","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.39},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Via Browser","modus":null,"version":null,"manufacturer":"Tu Yafeng","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"114.0.5735.130","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"\"\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"\"","x-requested-with":"mark.via.gp","sec-ch-ua":"\"Android WebView\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"","sec-ch-ua-full-version":"\"\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-mobile":"?1","sec-ch-ua-wow64":"?0","user-agent":"Mozilla\/5.0 (Linux; Android 14; 21081111RG Build\/UP1A.231005.007) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/141.0.7390.122 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"21081111RG","marketingName":"11T","manufacturer":"Xiaomi","brand":"Xiaomi","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.67},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"Via Browser","modus":null,"version":null,"manufacturer":"Tu Yafeng","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"141.0.7390.122","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "x-requested-with": "mark.via.gp",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; POCOPHONE F1 Build/PKQ1.180729.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.73 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pocophone F1",
+      "marketingName": "Pocophone F1",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2246,
+        "height": 1080,
+        "touch": true,
+        "size": 6.18
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Via Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Tu Yafeng",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.73",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "mark.via.gp",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2007J20CG Build/SKQ1.211019.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2007J20CG",
+      "marketingName": "X3 NFC",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Via Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Tu Yafeng",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.129",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "mark.via.gp",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T Pro Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.130 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi 9T Pro",
+      "marketingName": "Mi 9T Pro",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Via Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Tu Yafeng",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.130",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "x-requested-with": "mark.via.gp",
+      "sec-ch-ua": "\"Android WebView\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 21081111RG Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.122 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "21081111RG",
+      "marketingName": "11T",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Via Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Tu Yafeng",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

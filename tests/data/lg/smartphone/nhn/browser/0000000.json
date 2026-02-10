@@ -1,1 +1,185 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; LM-V409N) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/73.0.3683.103 Whale\/1.1.11.2 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"LM-V409N","marketingName":"V40 ThinQ","manufacturer":"LG","brand":"LG","dualOrientation":true,"simCount":1,"display":{"width":3120,"height":1440,"touch":true,"size":6.4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Whale Browser","modus":null,"version":"1.1.11.2","manufacturer":"NHN","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"73.0.3683.103","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; LM-G850) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/73.0.3683.103 Whale\/1.10.2.2 Mobile Safari\/537.36 comdirect\/1.0 (appVersion:20.9.4;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"LM-G850","marketingName":"G8X ThinQ","manufacturer":"LG","brand":"LG","dualOrientation":true,"simCount":1,"display":{"width":3120,"height":1440,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Whale Browser","modus":null,"version":"1.10.2.2","manufacturer":"NHN","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"73.0.3683.103","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; LM-G900) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/90.0.4430.232 Whale\/2.2.3.2 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"LM-G900","marketingName":"Velvet 5G","manufacturer":"LG","brand":"LG","dualOrientation":true,"simCount":2,"display":{"width":2460,"height":1080,"touch":true,"size":6.8},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Whale Browser","modus":null,"version":"2.2.3.2","manufacturer":"NHN","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"90.0.4430.232","manufacturer":"Google"}},{"headers":{"sec-ch-ua-platform":"\"Android\"","sec-ch-ua":"\"Chromium\";v=\"96\", \" Not A;Brand\";v=\"99\", \"Whale\";v=\"2\"","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 11; LM-G910) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/96.0.4664.210 Whale\/2.4.1.2 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"LM-G910","marketingName":"Velvet 4G","manufacturer":"LG","brand":"LG","dualOrientation":true,"simCount":2,"display":{"width":2460,"height":1080,"touch":true,"size":6.8},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Whale Browser","modus":null,"version":"2.0.0","manufacturer":"NHN","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"96.0.4664.210","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; LM-V409N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Whale/1.1.11.2 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LM-V409N",
+      "marketingName": "V40 ThinQ",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Whale Browser",
+      "modus": null,
+      "version": "1.1.11.2",
+      "manufacturer": "NHN",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "73.0.3683.103",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; LM-G850) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Whale/1.10.2.2 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.9.4;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LM-G850",
+      "marketingName": "G8X ThinQ",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Whale Browser",
+      "modus": null,
+      "version": "1.10.2.2",
+      "manufacturer": "NHN",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "73.0.3683.103",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; LM-G900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.232 Whale/2.2.3.2 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LM-G900",
+      "marketingName": "Velvet 5G",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Whale Browser",
+      "modus": null,
+      "version": "2.2.3.2",
+      "manufacturer": "NHN",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.232",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Chromium\";v=\"96\", \" Not A;Brand\";v=\"99\", \"Whale\";v=\"2\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; LM-G910) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.210 Whale/2.4.1.2 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LM-G910",
+      "marketingName": "Velvet 4G",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Whale Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "NHN",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

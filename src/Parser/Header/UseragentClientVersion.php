@@ -26,9 +26,9 @@ use UaParser\ClientVersionInterface;
 use UnexpectedValueException;
 
 use function array_filter;
+use function array_first;
 use function array_map;
 use function preg_match;
-use function reset;
 
 final readonly class UseragentClientVersion implements ClientVersionInterface
 {
@@ -102,7 +102,7 @@ final readonly class UseragentClientVersion implements ClientVersionInterface
             $filtered,
         );
 
-        $detectedVersion = reset($results);
+        $detectedVersion = array_first($results);
 
         if ($detectedVersion !== null && $detectedVersion !== false && $detectedVersion !== '') {
             return $this->setVersion($detectedVersion);

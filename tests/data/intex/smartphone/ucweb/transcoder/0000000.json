@@ -1,1 +1,272 @@
-[{"headers":{"user-agent":"UCWEB\/2.0 (Linux; U; Opera Mini\/7.1.32052\/30.3697; en-US; Aqua_Sx) U2\/1.0.0 UCBrowser\/9.0.1.379 Mobile"},"device":{"architecture":null,"deviceName":"Aqua SX","marketingName":"Aqua SX","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":null,"manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"9.0.1.379","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U2","version":"1.0.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3; en-US; Cloud_X2 Build\/MocorDroid4.0.1) AppleWebKit\/528.5+ (KHTML, like Gecko) Version\/3.1.2 Mobile Safari\/525.20.1 UCBrowser\/9.2.0.419 Mobile"},"device":{"architecture":null,"deviceName":"Cloud X2","marketingName":"Cloud X2","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"4.0.1","manufacturer":"unknown","bits":null},"client":{"name":"UC Browser","modus":null,"version":"9.2.0.419","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"528.5.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.5; En-US; INTEX CLOUD X1 Build\/MocorDroid2.3.5) AppleWebKit\/534.31 (KHTML, Like Gecko) UCBrowser\/9.0.1.275 U3\/0.8.0 Mobile Safari\/534.31"},"device":{"architecture":null,"deviceName":"Cloud X1","marketingName":"Cloud X1","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"UC Browser","modus":null,"version":"9.0.1.275","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U3","version":"0.8.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 4.4.2; en-US; Aqua_3G+ Build\/MocorDroid) AppleWebKit\/534.30 (KHTML, like Gecko) Version\/4.0 UCBrowser\/10.2.0.535 U3\/0.8.0 Mobile Safari\/534.30"},"device":{"architecture":null,"deviceName":"Aqua 3G","marketingName":"Aqua 3G","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":null,"manufacturer":"unknown","bits":null},"client":{"name":"UC Browser","modus":null,"version":"10.2.0.535","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U3","version":"0.8.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"UCWEB\/2.0 (Linux; U; Opera Mini\/7.1.32052\/30.3697; en-US; Aqua_Power_HD Build\/KOT49H) U2\/1.0.0 UCBrowser\/10.7.9.856 Mobile"},"device":{"architecture":null,"deviceName":"Aqua Power HD","marketingName":"Aqua Power HD","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":null,"manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"10.7.9.856","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U2","version":"1.0.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"UCWEB\/2.0(Linux; U; Opera Mini\/7.1.32052\/30.3697; en-US; Intex_Aqua_Wave Build\/KOT49H) U2\/1.0.0 UCBrowser\/10.7.5.658 Mobile"},"device":{"architecture":null,"deviceName":"Aqua Wave","marketingName":"Aqua Wave","manufacturer":"Intex","brand":"Intex","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"UC Browser","modus":null,"version":"10.7.5.658","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U2","version":"1.0.0","manufacturer":"UCWeb"}}]
+[
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Aqua_Sx) U2/1.0.0 UCBrowser/9.0.1.379 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua SX",
+      "marketingName": "Aqua SX",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.0.1.379",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3; en-US; Cloud_X2 Build/MocorDroid4.0.1) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/9.2.0.419 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Cloud X2",
+      "marketingName": "Cloud X2",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "4.0.1",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.419",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; En-US; INTEX CLOUD X1 Build/MocorDroid2.3.5) AppleWebKit/534.31 (KHTML, Like Gecko) UCBrowser/9.0.1.275 U3/0.8.0 Mobile Safari/534.31"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Cloud X1",
+      "marketingName": "Cloud X1",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.0.1.275",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; Aqua_3G+ Build/MocorDroid) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua 3G",
+      "marketingName": "Aqua 3G",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.2.0.535",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Aqua_Power_HD Build/KOT49H) U2/1.0.0 UCBrowser/10.7.9.856 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua Power HD",
+      "marketingName": "Aqua Power HD",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.9.856",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Intex_Aqua_Wave Build/KOT49H) U2/1.0.0 UCBrowser/10.7.5.658 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aqua Wave",
+      "marketingName": "Aqua Wave",
+      "manufacturer": "Intex",
+      "brand": "Intex",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.5.658",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  }
+]

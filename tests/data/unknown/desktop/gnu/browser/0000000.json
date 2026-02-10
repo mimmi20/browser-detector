@@ -1,1 +1,317 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (X11; U; Linux sparc64; es-PY; rv:5.0) Gecko\/20100101 IceCat\/5.0 (like Firefox\/5.0; Debian-6.0.1)"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Debian","marketingName":"Debian","version":"6.0.1","manufacturer":"Software in the Public Interest","bits":null},"client":{"name":"IceCat","modus":null,"version":"5.0.0","manufacturer":"GNU","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"5.0.0","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11; U; Linux x86_64; fr; rv:1.9.2.13) Gecko\/20101203 IceCat\/3.6.13-g1"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"IceCat","modus":null,"version":"3.6.13","manufacturer":"GNU","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"1.9.2.13","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (Windows; U; Windows NT 6.0; it; rv:1.9.2.12) Gecko\/20101114 IceCat\/3.6.12 (like Firefox\/3.6.12)"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows","marketingName":"Windows Vista","version":"6.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"IceCat","modus":null,"version":"3.6.12","manufacturer":"GNU","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"1.9.2.12","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.16) Gecko\/20110327 Gentoo IceCat\/3.6.16 (like Firefox\/3.6.16)"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Gentoo Linux","marketingName":"Gentoo Linux","version":null,"manufacturer":"Gentoo","bits":null},"client":{"name":"IceCat","modus":null,"version":"3.6.16","manufacturer":"GNU","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"1.9.2.16","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.6) Gecko\/20100102 IceCat\/3.5.6 (like Firefox\/3.5.6) (Zenwalk GNU Linux)"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Zenwalk GNU Linux","marketingName":"Zenwalk GNU Linux","version":null,"manufacturer":"unknown","bits":null},"client":{"name":"IceCat","modus":null,"version":"3.5.6","manufacturer":"GNU","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"1.9.1.6","manufacturer":"Mozilla"}},{"headers":{"user-agent":"GNU IceCat\/1.11 (BeOS 7.6; zh_CN;)"},"device":{"architecture":null,"deviceName":"general Desktop","marketingName":"general Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"BeOS","marketingName":"BeOS","version":"7.6.0","manufacturer":"Access","bits":null},"client":{"name":"IceCat","modus":null,"version":"1.11.0","manufacturer":"GNU","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":null,"manufacturer":"Mozilla"}},{"headers":{"user-agent":"GNU IceCat\/19.4 (Arch Linux 5.6; fr_FR;)"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"ArchLinux","marketingName":"ArchLinux","version":null,"manufacturer":"unknown","bits":null},"client":{"name":"IceCat","modus":null,"version":"19.4.0","manufacturer":"GNU","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":null,"manufacturer":"Mozilla"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux sparc64; es-PY; rv:5.0) Gecko/20100101 IceCat/5.0 (like Firefox/5.0; Debian-6.0.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian",
+      "marketingName": "Debian",
+      "version": "6.0.1",
+      "manufacturer": "Software in the Public Interest",
+      "bits": null
+    },
+    "client": {
+      "name": "IceCat",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "GNU",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "5.0.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; fr; rv:1.9.2.13) Gecko/20101203 IceCat/3.6.13-g1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "IceCat",
+      "modus": null,
+      "version": "3.6.13",
+      "manufacturer": "GNU",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2.13",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.0; it; rv:1.9.2.12) Gecko/20101114 IceCat/3.6.12 (like Firefox/3.6.12)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "IceCat",
+      "modus": null,
+      "version": "3.6.12",
+      "manufacturer": "GNU",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2.12",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.16) Gecko/20110327 Gentoo IceCat/3.6.16 (like Firefox/3.6.16)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Gentoo Linux",
+      "marketingName": "Gentoo Linux",
+      "version": null,
+      "manufacturer": "Gentoo",
+      "bits": null
+    },
+    "client": {
+      "name": "IceCat",
+      "modus": null,
+      "version": "3.6.16",
+      "manufacturer": "GNU",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2.16",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.6) Gecko/20100102 IceCat/3.5.6 (like Firefox/3.5.6) (Zenwalk GNU Linux)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Zenwalk GNU Linux",
+      "marketingName": "Zenwalk GNU Linux",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "IceCat",
+      "modus": null,
+      "version": "3.5.6",
+      "manufacturer": "GNU",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.1.6",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GNU IceCat/1.11 (BeOS 7.6; zh_CN;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "BeOS",
+      "marketingName": "BeOS",
+      "version": "7.6.0",
+      "manufacturer": "Access",
+      "bits": null
+    },
+    "client": {
+      "name": "IceCat",
+      "modus": null,
+      "version": "1.11.0",
+      "manufacturer": "GNU",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GNU IceCat/19.4 (Arch Linux 5.6; fr_FR;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ArchLinux",
+      "marketingName": "ArchLinux",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "IceCat",
+      "modus": null,
+      "version": "19.4.0",
+      "manufacturer": "GNU",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  }
+]

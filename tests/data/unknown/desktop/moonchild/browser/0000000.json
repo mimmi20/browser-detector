@@ -1,1 +1,362 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Windows NT 6.2; Win64; x64; rv:24.0) Gecko\/20140129 Firefox\/24.0 PaleMoon\/24.3.1"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows","marketingName":"Windows 8","version":"8.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"PaleMoon","modus":null,"version":"24.3.1","manufacturer":"Moonchild","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"24.0.0","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11; Linux x86_64; rv:25.1) Gecko\/20141127 PaleMoon\/25.1.0"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"PaleMoon","modus":null,"version":"25.1.0","manufacturer":"Moonchild","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"25.1.0","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (Windows NT 4.0; rv:25.4) Gecko\/20150509 Firefox\/31.9 PaleMoon\/25.4.1"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows NT","marketingName":"Windows NT","version":"4.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"PaleMoon","modus":null,"version":"25.4.1","manufacturer":"Moonchild","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"25.4.0","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko\/20100101 Goanna\/4.0 Firefox\/55.0 Basilisk\/20180321"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows","marketingName":"Windows 10","version":"10.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Basilisk","modus":null,"version":"20180321.0.0","manufacturer":"Moonchild","type":"browser","isbot":false,"bits":null},"engine":{"name":"Goanna","version":"4.0.0","manufacturer":"Moonchild"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11; Linux x86_64; rv:55.0) Gecko\/20100101 Goanna\/4.0 Firefox\/55.0 Basilisk\/20171113"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Basilisk","modus":null,"version":"20171113.0.0","manufacturer":"Moonchild","type":"browser","isbot":false,"bits":null},"engine":{"name":"Goanna","version":"4.0.0","manufacturer":"Moonchild"}},{"headers":{"user-agent":"Mozilla\/5.0 (masking-agent; rv:24.0) Gecko\/20130926 Firefox\/24.0 PaleMoon\/24.0.2"},"device":{"architecture":null,"deviceName":"general Desktop","marketingName":"general Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"PaleMoon","modus":null,"version":"24.0.2","manufacturer":"Moonchild","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"24.0.0","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11; Slackware Linux x86_64; rv:4.1) Goanna\/20170101 PaleMoon\/28.2.2"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Slackware Linux","marketingName":"Slackware Linux","version":null,"manufacturer":"Slackware","bits":null},"client":{"name":"PaleMoon","modus":null,"version":"28.2.2","manufacturer":"Moonchild","type":"browser","isbot":false,"bits":null},"engine":{"name":"Goanna","version":"4.1.0","manufacturer":"Moonchild"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11; U; OpenBSD i686; rv:25.6) Gecko\/20150723 PaleMoon\/25.6.0"},"device":{"architecture":null,"deviceName":"general Desktop","marketingName":"general Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"OpenBSD","marketingName":"OpenBSD","version":null,"manufacturer":"unknown","bits":null},"client":{"name":"PaleMoon","modus":null,"version":"25.6.0","manufacturer":"Moonchild","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"25.6.0","manufacturer":"Mozilla"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:24.0) Gecko/20140129 Firefox/24.0 PaleMoon/24.3.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 8",
+      "version": "8.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "PaleMoon",
+      "modus": null,
+      "version": "24.3.1",
+      "manufacturer": "Moonchild",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "24.0.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:25.1) Gecko/20141127 PaleMoon/25.1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "PaleMoon",
+      "modus": null,
+      "version": "25.1.0",
+      "manufacturer": "Moonchild",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "25.1.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 4.0; rv:25.4) Gecko/20150509 Firefox/31.9 PaleMoon/25.4.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": "4.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "PaleMoon",
+      "modus": null,
+      "version": "25.4.1",
+      "manufacturer": "Moonchild",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "25.4.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Goanna/4.0 Firefox/55.0 Basilisk/20180321"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Basilisk",
+      "modus": null,
+      "version": "20180321.0.0",
+      "manufacturer": "Moonchild",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Goanna",
+      "version": "4.0.0",
+      "manufacturer": "Moonchild"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:55.0) Gecko/20100101 Goanna/4.0 Firefox/55.0 Basilisk/20171113"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Basilisk",
+      "modus": null,
+      "version": "20171113.0.0",
+      "manufacturer": "Moonchild",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Goanna",
+      "version": "4.0.0",
+      "manufacturer": "Moonchild"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (masking-agent; rv:24.0) Gecko/20130926 Firefox/24.0 PaleMoon/24.0.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "PaleMoon",
+      "modus": null,
+      "version": "24.0.2",
+      "manufacturer": "Moonchild",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "24.0.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Slackware Linux x86_64; rv:4.1) Goanna/20170101 PaleMoon/28.2.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Slackware Linux",
+      "marketingName": "Slackware Linux",
+      "version": null,
+      "manufacturer": "Slackware",
+      "bits": null
+    },
+    "client": {
+      "name": "PaleMoon",
+      "modus": null,
+      "version": "28.2.2",
+      "manufacturer": "Moonchild",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Goanna",
+      "version": "4.1.0",
+      "manufacturer": "Moonchild"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; OpenBSD i686; rv:25.6) Gecko/20150723 PaleMoon/25.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenBSD",
+      "marketingName": "OpenBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "PaleMoon",
+      "modus": null,
+      "version": "25.6.0",
+      "manufacturer": "Moonchild",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "25.6.0",
+      "manufacturer": "Mozilla"
+    }
+  }
+]

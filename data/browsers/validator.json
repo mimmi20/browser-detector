@@ -1,6 +1,6 @@
 {
   "w3c validator": {
-    "name": "W3C Validator",
+    "name": "W3C Markup Validation Service",
     "manufacturer": "w3c",
     "type": "validator",
     "version": {
@@ -37,6 +37,16 @@
   },
   "validator.nu/lv": {
     "name": "Validator.nu/LV",
+    "manufacturer": "w3c",
+    "type": "validator",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "p3p-validator": {
+    "name": "P3P Validator",
     "manufacturer": "w3c",
     "type": "validator",
     "version": {

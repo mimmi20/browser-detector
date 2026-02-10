@@ -1,1 +1,317 @@
-[{"headers":{"user-agent":"SAGEM-myX6-2\/LE5,1C Profile\/MIDP-2.0 Configuration\/CLDC-1.1"},"device":{"architecture":null,"deviceName":"my X6-2","marketingName":"my X6-2","manufacturer":"Sagem","brand":"Sagem","dualOrientation":null,"simCount":1,"display":{"width":220,"height":176,"touch":false,"size":2},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":null,"modus":null,"version":null,"manufacturer":"unknown","type":"unknown","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"SAGEM-myX6-2\/LA5,1G Profile\/MIDP-2.0 Configuration\/CLDC-1.1"},"device":{"architecture":null,"deviceName":"my X6-2","marketingName":"my X6-2","manufacturer":"Sagem","brand":"Sagem","dualOrientation":null,"simCount":1,"display":{"width":220,"height":176,"touch":false,"size":2},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":null,"modus":null,"version":null,"manufacturer":"unknown","type":"unknown","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"SAGEM-myX6-2\/1.0 Profile\/MIDP-2.0 Configuration\/CLDC-1.1 UP.Link\/1.1"},"device":{"architecture":null,"deviceName":"my X6-2","marketingName":"my X6-2","manufacturer":"Sagem","brand":"Sagem","dualOrientation":null,"simCount":1,"display":{"width":220,"height":176,"touch":false,"size":2},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":null,"modus":null,"version":null,"manufacturer":"unknown","type":"unknown","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"SAGEM-myX6-2\/1.0 Profile\/MIDP-2.0 Configuration\/CLDC-1.1"},"device":{"architecture":null,"deviceName":"my X6-2","marketingName":"my X6-2","manufacturer":"Sagem","brand":"Sagem","dualOrientation":null,"simCount":1,"display":{"width":220,"height":176,"touch":false,"size":2},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":null,"modus":null,"version":null,"manufacturer":"unknown","type":"unknown","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"SAGEM-myV-76\/1.0\/ MIDP-2.0 Configuration\/CLDC-1.1"},"device":{"architecture":null,"deviceName":"my V-76","marketingName":"my V-76","manufacturer":"Sagem","brand":"Sagem","dualOrientation":null,"simCount":1,"display":{"width":240,"height":176,"touch":false,"size":null},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":null,"modus":null,"version":null,"manufacturer":"unknown","type":"unknown","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"SAGEM-my800x\/1.0 Profile\/MIDP-2.0 Configuration\/CLDC-1.1"},"device":{"architecture":null,"deviceName":"my800X","marketingName":"my800X","manufacturer":"Sagem","brand":"Sagem","dualOrientation":null,"simCount":1,"display":{"width":220,"height":176,"touch":false,"size":null},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":null,"modus":null,"version":null,"manufacturer":"unknown","type":"unknown","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"SAGEM-my600x\/1.0 Profile\/MIDP-2.0 Configuration\/CLDC-1.1"},"device":{"architecture":null,"deviceName":"my600X","marketingName":"my600X","manufacturer":"Sagem","brand":"Sagem","dualOrientation":null,"simCount":1,"display":{"width":220,"height":176,"touch":false,"size":1.8},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":null,"modus":null,"version":null,"manufacturer":"unknown","type":"unknown","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}}]
+[
+  {
+    "headers": {
+      "user-agent": "SAGEM-myX6-2/LE5,1C Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my X6-2",
+      "marketingName": "my X6-2",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAGEM-myX6-2/LA5,1G Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my X6-2",
+      "marketingName": "my X6-2",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAGEM-myX6-2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my X6-2",
+      "marketingName": "my X6-2",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAGEM-myX6-2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my X6-2",
+      "marketingName": "my X6-2",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAGEM-myV-76/1.0/ MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my V-76",
+      "marketingName": "my V-76",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 240,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAGEM-my800x/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my800X",
+      "marketingName": "my800X",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAGEM-my600x/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my600X",
+      "marketingName": "my600X",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  }
+]

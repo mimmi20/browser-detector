@@ -1329,7 +1329,7 @@ enum Company: string implements CompanyInterface
 
     case spotify = 'Spotify';
 
-    case yahooJapan = 'Yahoo!JAPAN';
+    case yahooJapan = 'Yahoo! Japan';
 
     case sogou = 'Sogou';
 
@@ -1948,6 +1948,92 @@ enum Company: string implements CompanyInterface
     case elementSoftware = 'Element Software';
 
     case pagePeeker = 'PagePeeker';
+
+    case adrienBarbaresi = 'Adrien Barbaresi';
+
+    case w3c = 'W3C';
+
+    case brightInteractive = 'Bright Interactive';
+
+    case elbertAlias = 'Elbert Alias';
+
+    case barnesNoble = 'Barnes & Noble';
+
+    case phoenixStudio = 'Phoenix Studio';
+
+    case awow = 'Awow';
+
+    case yooz = 'yooz';
+
+    case eyeota = 'Eyeota';
+
+    case onlineMediaGroup = 'Online Media Group';
+
+    case xianghe = 'Xianghe';
+
+    case surLy = 'Sur.ly';
+
+    case jckkcfug = 'Jckkcfug';
+
+    case lagenio = 'LAGENIO';
+
+    case vikusha = 'VIKUSHA';
+
+    case webmeup = 'WebMeUp';
+
+    case bdf = 'BDF';
+
+    case totalSecurity = 'Total Security';
+
+    case superbird = 'superbird';
+
+    case cloudinary = 'Cloudinary';
+
+    case inetdex = 'Inetdex';
+
+    case idee = 'Idee';
+
+    case integralAdScience = 'Integral Ad Science';
+
+    case blueskySocial = 'Bluesky Social';
+
+    case justusLiebigUniversity = 'Justus Liebig University';
+
+    case aiSearch = 'Ai Search';
+
+    case vuhuv = 'vuhuv';
+
+    case domainsProject = 'Domains Project';
+
+    case comcast = 'Comcast';
+
+    case degordian = 'Degordian';
+
+    case rcaTablets = 'RCA Tablets';
+
+    case zhipuHuazhangTechnology = 'Zhipu Huazhang Technology';
+
+    case andrewHorton = 'Andrew Horton';
+
+    case arris = 'ARRIS';
+
+    case foxtel = 'Foxtel';
+
+    case seraphic = 'Seraphic';
+
+    case erieDataSystems = 'Erie Data Systems';
+
+    case alexa = 'Alexa';
+
+    case dassaultSystemes = 'Dassault Systèmes';
+
+    case tivo = 'TiVo';
+
+    case tenable = 'Tenable';
+
+    case verizon = 'Verizon';
+
+    case tCraft = 'T-Craft';
 
     /**
      * @throws UnexpectedValueException
@@ -2611,7 +2697,7 @@ enum Company: string implements CompanyInterface
             'roblox', 'roblox corporation' => self::roblox,
             'bonprix', 'bonprix handelsgesellschaft mbh' => self::bonprix,
             'spotify', 'spotify ab' => self::spotify,
-            'yahoojapan', 'yahoo-japan', 'yahoo!japan' => self::yahooJapan,
+            'yahoojapan', 'yahoo-japan', 'yahoo! japan', 'yahoo! japan corp.' => self::yahooJapan,
             'sogou', 'sogou inc' => self::sogou,
             'haixu' => self::haixu,
             'nasai' => self::nasai,
@@ -2921,6 +3007,49 @@ enum Company: string implements CompanyInterface
             'aopen' => self::aopen,
             'elementsoftware', 'element-software', 'element software' => self::elementSoftware,
             'pagepeeker', 'page-peeker', 'pagepeeker srl' => self::pagePeeker,
+            'adrienbarbaresi', 'adrien-barbaresi', 'adrien barbaresi' => self::adrienBarbaresi,
+            'w3c' => self::w3c,
+            'brightinteractive', 'bright interactive ltd', 'bright interactive', 'bright-interactive' => self::brightInteractive,
+            'elbertalias', 'elbert alias', 'elbert-alias' => self::elbertAlias,
+            'barnesnoble', 'barnes & noble', 'barnes-noble' => self::barnesNoble,
+            'phoenixstudio', 'phoenix studio', 'phoenix-studio' => self::phoenixStudio,
+            'awow' => self::awow,
+            'yooz' => self::yooz,
+            'eyeota', 'eyeota pte ltd' => self::eyeota,
+            'onlinemediagroup', 'online-media-group', 'online media group, inc.', 'online media group' => self::onlineMediaGroup,
+            'xianghe', 'xianghe technology co., ltd.' => self::xianghe,
+            'surly', 'sur.ly llc', 'sur.ly' => self::surLy,
+            'jckkcfug' => self::jckkcfug,
+            'lagenio' => self::lagenio,
+            'vikusha' => self::vikusha,
+            'webmeup' => self::webmeup,
+            'bdf' => self::bdf,
+            'totalsecurity', 'total-security', 'total security ltd.', 'total security' => self::totalSecurity,
+            'superbird' => self::superbird,
+            'cloudinary' => self::cloudinary,
+            'inetdex' => self::inetdex,
+            'idee', 'idée inc.' => self::idee,
+            'integraladscience', 'integral ad science, inc.', 'integral-ad-science', 'integral ad science' => self::integralAdScience,
+            'blueskysocial', 'bluesky social, pbc', 'bluesky social', 'bluesky-social' => self::blueskySocial,
+            'justusliebiguniversity', 'justus liebig university giessen', 'justus liebig university', 'jlu' => self::justusLiebigUniversity,
+            'aisearch', 'ai search inc.', 'ai search', 'ai-search' => self::aiSearch,
+            'vuhuv' => self::vuhuv,
+            'domainsproject', 'domainsproject.org', 'domains project', 'domains-project' => self::domainsProject,
+            'comcast' => self::comcast,
+            'degordian', 'degordian d.o.o.' => self::degordian,
+            'rcatablets', 'rca-tablets', 'rca tablets' => self::rcaTablets,
+            'zhipuhuazhangtechnology', 'beijing zhipu huazhang technology co., ltd.', 'zhipu huazhang technology', 'zhipu-huazhang' => self::zhipuHuazhangTechnology,
+            'andrewhorton', 'andrew-horton', 'andrew horton' => self::andrewHorton,
+            'arris' => self::arris,
+            'foxtel' => self::foxtel,
+            'seraphic', 'seraphic information technology (shanghai) co., ltd.' => self::seraphic,
+            'eriedatasystems', 'erie data systems', 'erie data systems, llc', 'erie-data-systems' => self::erieDataSystems,
+            'alexa', 'alexa internet, inc', 'alexa-internet' => self::alexa,
+            'dassaultsystemes', 'dassault systèmes', 'dassault-systemes' => self::dassaultSystemes,
+            'tivo' => self::tivo,
+            'tenable', 'tenable, inc.' => self::tenable,
+            'verizon' => self::verizon,
+            'tcraft', 't-craft' => self::tCraft,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3294,6 +3423,25 @@ enum Company: string implements CompanyInterface
             self::leeco => 'Leshi Internet Information & Technology',
             self::leagoo => 'LEAGOO International Co., Limited',
             self::pagePeeker => 'pagepeeker SRL',
+            self::brightInteractive => 'Bright Interactive Ltd',
+            self::eyeota => 'Eyeota Pte Ltd',
+            self::onlineMediaGroup => 'Online Media Group, Inc.',
+            self::xianghe => 'Xianghe Technology Co., Ltd.',
+            self::surLy => 'Sur.ly LLC',
+            self::yahooJapan => 'Yahoo! Japan Corp.',
+            self::totalSecurity => 'Total Security Ltd.',
+            self::idee => 'Idée Inc.',
+            self::integralAdScience => 'Integral Ad Science, Inc.',
+            self::blueskySocial => 'Bluesky Social, PBC',
+            self::justusLiebigUniversity => 'Justus Liebig University Giessen',
+            self::aiSearch => 'Ai Search Inc.',
+            self::domainsProject => 'domainsproject.org',
+            self::degordian => 'Degordian d.o.o.',
+            self::zhipuHuazhangTechnology => 'Beijing Zhipu Huazhang Technology Co., Ltd.',
+            self::seraphic => 'SERAPHIC Information Technology (Shanghai) Co., Ltd.',
+            self::erieDataSystems => 'Erie Data Systems, LLC',
+            self::alexa => 'Alexa Internet, Inc',
+            self::tenable => 'Tenable, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3616,6 +3764,26 @@ enum Company: string implements CompanyInterface
             self::eightPecxStudios => '8pecxstudios',
             self::elementSoftware => 'element-software',
             self::pagePeeker => 'page-peeker',
+            self::adrienBarbaresi => 'adrien-barbaresi',
+            self::brightInteractive => 'bright-interactive',
+            self::elbertAlias => 'elbert-alias',
+            self::barnesNoble => 'barnes-noble',
+            self::phoenixStudio => 'phoenix-studio',
+            self::onlineMediaGroup => 'online-media-group',
+            self::surLy => 'sur.ly',
+            self::totalSecurity => 'total-security',
+            self::integralAdScience => 'integral-ad-science',
+            self::blueskySocial => 'bluesky-social',
+            self::justusLiebigUniversity => 'jlu',
+            self::aiSearch => 'ai-search',
+            self::domainsProject => 'domains-project',
+            self::rcaTablets => 'rca-tablets',
+            self::zhipuHuazhangTechnology => 'zhipu-huazhang',
+            self::andrewHorton => 'andrew-horton',
+            self::erieDataSystems => 'erie-data-systems',
+            self::alexa => 'alexa-internet',
+            self::dassaultSystemes => 'dassault-systemes',
+            self::tCraft => 't-craft',
             default => $this->name,
         };
     }

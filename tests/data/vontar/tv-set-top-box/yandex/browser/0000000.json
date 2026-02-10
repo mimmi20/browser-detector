@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 9; HK1 Mini+) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/102.0.5005.125 YaBrowser\/22.7.1.95.01 Safari\/537.36"},"device":{"architecture":null,"deviceName":"HK1 Mini+","marketingName":"HK1 Mini+","manufacturer":"Vontar","brand":"Vontar","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv-set-top-box","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"22.7.1.95.01","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"102.0.5005.125","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm; Android 11; VONTAR X4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/89.0.4389.114 YaBrowser\/21.3.0.269.01 Safari\/537.36"},"device":{"architecture":null,"deviceName":"general Vontar device","marketingName":"general Vontar device","manufacturer":"Vontar","brand":"Vontar","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv-set-top-box","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"21.3.0.269.01","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"89.0.4389.114","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm; Android 12; VONTAR H618) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/114.0.0.0 YaApp_Android\/23.74\/apad YaSearchBrowser\/23.74\/apad BroPP\/1.0 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"H618","marketingName":"H618","manufacturer":"Vontar","brand":"Vontar","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv-set-top-box","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"23.74.0","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"114.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; VONTAR R3 Build\/TQ2A.230305.008.F1; wv) AppleWebKit\/537.36 (KHTML, like Gecko)  Chrome\/101.0.4951.61 YaBrowser\/23.9.0.232 (lite) Safari\/537.36"},"device":{"architecture":null,"deviceName":"R3","marketingName":"R3","manufacturer":"Vontar","brand":"Vontar","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv-set-top-box","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser Lite","modus":null,"version":"23.9.0.232","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"101.0.4951.61","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; HK1 Mini+) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 YaBrowser/22.7.1.95.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HK1 Mini+",
+      "marketingName": "HK1 Mini+",
+      "manufacturer": "Vontar",
+      "brand": "Vontar",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "22.7.1.95.01",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 11; VONTAR X4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 YaBrowser/21.3.0.269.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Vontar device",
+      "marketingName": "general Vontar device",
+      "manufacturer": "Vontar",
+      "brand": "Vontar",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "21.3.0.269.01",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.114",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 12; VONTAR H618) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaApp_Android/23.74/apad YaSearchBrowser/23.74/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "H618",
+      "marketingName": "H618",
+      "manufacturer": "Vontar",
+      "brand": "Vontar",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "23.74.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; VONTAR R3 Build/TQ2A.230305.008.F1; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/101.0.4951.61 YaBrowser/23.9.0.232 (lite) Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "R3",
+      "marketingName": "R3",
+      "manufacturer": "Vontar",
+      "brand": "Vontar",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "23.9.0.232",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "Google"
+    }
+  }
+]

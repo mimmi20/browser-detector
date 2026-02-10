@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (SymbianOS\/9.4 U Series60\/5.0 SonyEricssonP100\/01 Profile\/MIDP-2.1 Configuration\/CLDC-1.1) AppleWebKit\/525 (KHTML, like Gecko) Version\/3.0 Safari\/525"},"device":{"architecture":null,"deviceName":"P100","marketingName":"P100","manufacturer":"SonyEricsson","brand":"SonyEricsson","dualOrientation":false,"simCount":1,"display":{"width":640,"height":360,"touch":false,"size":3.5},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Series 60","marketingName":"Series 60","version":"5.0.0","manufacturer":"Nokia","bits":null},"client":{"name":"Nokia OSS Browser","modus":null,"version":"5.0.0","manufacturer":"Nokia","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"525.0.0","manufacturer":"Apple"}},{"headers":{"user-agent":"SonyEricssonU1a\/R1BB; Mozilla\/5.0 (SymbianOS\/9.4; U; Series60\/5.0 Profile\/MIDP-2.1 Configuration\/CLDC-1.1) AppleWebKit\/525 (KHTML, like Gecko) Version\/3.0 Safari\/525"},"device":{"architecture":null,"deviceName":"U1","marketingName":"Satio","manufacturer":"SonyEricsson","brand":"SonyEricsson","dualOrientation":false,"simCount":1,"display":{"width":640,"height":360,"touch":false,"size":null},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Series 60","marketingName":"Series 60","version":"5.0.0","manufacturer":"Nokia","bits":null},"client":{"name":"Nokia OSS Browser","modus":null,"version":"5.0.0","manufacturer":"Nokia","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"525.0.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (SymbianOS\/9.1; U; Series60\/3.1 AppleWebKit\/413 (KHTML, like Gecko) Safari\/413 Digia @Web\/2.1 SonyEricssonP990i\/R100 Profile\/MIDP-2.0 Configuration\/CLDC-1.1"},"device":{"architecture":null,"deviceName":"P990","marketingName":"P990","manufacturer":"SonyEricsson","brand":"SonyEricsson","dualOrientation":false,"simCount":1,"display":{"width":320,"height":240,"touch":false,"size":2.7},"type":"feature-phone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Series 60","marketingName":"Series 60","version":"3.1.0","manufacturer":"Nokia","bits":null},"client":{"name":"Nokia OSS Browser","modus":null,"version":"3.1.0","manufacturer":"Nokia","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"413.0.0","manufacturer":"Apple"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4 U Series60/5.0 SonyEricssonP100/01 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P100",
+      "marketingName": "P100",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.5
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonU1a/R1BB; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "U1",
+      "marketingName": "Satio",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.1; U; Series60/3.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413 Digia @Web/2.1 SonyEricssonP990i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P990",
+      "marketingName": "P990",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.7
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": "3.1.0",
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  }
+]

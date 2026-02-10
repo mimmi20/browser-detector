@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; DN2103 Build\/SP1A.210812.016; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/86.0.4240.99 XWEB\/4375 MMWEBSDK\/20230202 Mobile Safari\/537.36 MMWEBID\/4865 MicroMessenger\/8.0.33.2306(0x28002144) WeChat\/arm64 Weixin GPVersion\/1 NetType\/WIFI Language\/zh_CN ABI\/arm64"},"device":{"architecture":null,"deviceName":"DN2103","marketingName":"Nord 2 5G","manufacturer":"BBK","brand":"OnePlus","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.43},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"WeChat App","modus":null,"version":"8.0.33.2306","manufacturer":"Tencent","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"86.0.4240.99","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; ONEPLUS A5010 Build\/PKQ1.180716.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/66.0.3359.126 MQQBrowser\/6.2 TBS\/044807 Mobile Safari\/537.36 MMWEBID\/1699 MicroMessenger\/7.0.6.1460(0x27000634) Process\/tools NetType\/4G Language\/zh_CN"},"device":{"architecture":null,"deviceName":"A5010","marketingName":"5T","manufacturer":"BBK","brand":"OnePlus","dualOrientation":true,"simCount":2,"display":{"width":2160,"height":1080,"touch":true,"size":6.01},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"WeChat App","modus":null,"version":"7.0.6.1460","manufacturer":"Tencent","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"66.0.3359.126","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; PHF110 Build\/RKQ1.211119.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/116.0.0.0 Mobile Safari\/537.36 XWEB\/1160117 MMWEBSDK\/20231202 MMWEBID\/4213 MicroMessenger\/8.0.46.2540(0x28002E3C) WeChat\/arm64 Weixin NetType\/5G Language\/zh_CN ABI\/arm64"},"device":{"architecture":null,"deviceName":"PHF110","marketingName":"K11x 5G (China)","manufacturer":"BBK","brand":"OPPO","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.72},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"WeChat App","modus":null,"version":"8.0.46.2540","manufacturer":"Tencent","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"116.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; PBDM00 Build\/QKQ1.190918.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/66.0.3359.126 MQQBrowser\/6.2 TBS\/045131 Mobile Safari\/537.36 MMWEBID\/9292 MicroMessenger\/7.0.14.1660(0x27000E37) Process\/tools NetType\/4G Language\/zh_CN ABI\/arm64 WeChat\/arm64"},"device":{"architecture":null,"deviceName":"PBDM00","marketingName":"R17 Pro","manufacturer":"BBK","brand":"OPPO","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"WeChat App","modus":null,"version":"7.0.14.1660","manufacturer":"Tencent","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"66.0.3359.126","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; DN2103 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20230202 Mobile Safari/537.36 MMWEBID/4865 MicroMessenger/8.0.33.2306(0x28002144) WeChat/arm64 Weixin GPVersion/1 NetType/WIFI Language/zh_CN ABI/arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DN2103",
+      "marketingName": "Nord 2 5G",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "8.0.33.2306",
+      "manufacturer": "Tencent",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.99",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; ONEPLUS A5010 Build/PKQ1.180716.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36 MMWEBID/1699 MicroMessenger/7.0.6.1460(0x27000634) Process/tools NetType/4G Language/zh_CN"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A5010",
+      "marketingName": "5T",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 6.01
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "7.0.6.1460",
+      "manufacturer": "Tencent",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; PHF110 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 XWEB/1160117 MMWEBSDK/20231202 MMWEBID/4213 MicroMessenger/8.0.46.2540(0x28002E3C) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PHF110",
+      "marketingName": "K11x 5G (China)",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.72
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "8.0.46.2540",
+      "manufacturer": "Tencent",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; PBDM00 Build/QKQ1.190918.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045131 Mobile Safari/537.36 MMWEBID/9292 MicroMessenger/7.0.14.1660(0x27000E37) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PBDM00",
+      "marketingName": "R17 Pro",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "7.0.14.1660",
+      "manufacturer": "Tencent",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "Google"
+    }
+  }
+]

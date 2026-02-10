@@ -1,1 +1,92 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; FP3 Build\/8901.2.A.0134.20200703; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/85.0.4183.101 Mobile Safari\/537.36 [FB_IAB\/FB4A;FBAV\/288.1.0.47.123;] comdirect\/1.0 (appVersion:20.9.0;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"FP3","marketingName":"FP3","manufacturer":"Fairphone","brand":"Fairphone","dualOrientation":null,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":5.65},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Facebook App","modus":null,"version":"288.1.0.47.123","manufacturer":"Meta","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"85.0.4183.101","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; FP3 Build\/8901.3.A.0134.20211116; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/96.0.4664.104 Mobile Safari\/537.36 Instagram 216.1.0.21.137 Android (29\/10; 480dpi; 1080x2016; Fairphone; FP3; FP3; qcom; de_DE; 339335857)"},"device":{"architecture":null,"deviceName":"FP3","marketingName":"FP3","manufacturer":"Fairphone","brand":"Fairphone","dualOrientation":null,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":5.65},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Instagram App","modus":null,"version":"216.1.0.21.137","manufacturer":"Meta","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"96.0.4664.104","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; FP3 Build/8901.2.A.0134.20200703; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.101 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/288.1.0.47.123;] comdirect/1.0 (appVersion:20.9.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "FP3",
+      "marketingName": "FP3",
+      "manufacturer": "Fairphone",
+      "brand": "Fairphone",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.65
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "288.1.0.47.123",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.101",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; FP3 Build/8901.3.A.0134.20211116; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 Instagram 216.1.0.21.137 Android (29/10; 480dpi; 1080x2016; Fairphone; FP3; FP3; qcom; de_DE; 339335857)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "FP3",
+      "marketingName": "FP3",
+      "manufacturer": "Fairphone",
+      "brand": "Fairphone",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.65
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "216.1.0.21.137",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "Google"
+    }
+  }
+]

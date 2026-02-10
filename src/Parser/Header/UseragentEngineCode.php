@@ -23,10 +23,10 @@ use UaParser\EngineParserInterface;
 use UnexpectedValueException;
 
 use function array_filter;
+use function array_first;
 use function array_map;
 use function mb_strtolower;
 use function preg_match;
-use function reset;
 
 final readonly class UseragentEngineCode implements EngineCodeInterface
 {
@@ -82,7 +82,7 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
             $filtered,
         );
 
-        $code = reset($results);
+        $code = array_first($results);
 
         if ($code !== null && $code !== false && $code !== '') {
             try {

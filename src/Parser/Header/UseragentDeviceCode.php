@@ -21,11 +21,11 @@ use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
 use function array_filter;
+use function array_first;
 use function array_key_exists;
 use function array_map;
 use function mb_strtolower;
 use function preg_match;
-use function reset;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
@@ -133,7 +133,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $filtered,
         );
 
-        $code = reset($results);
+        $code = array_first($results);
 
         if ($code !== null && $code !== false) {
             return $code;

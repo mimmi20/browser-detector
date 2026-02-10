@@ -159,9 +159,41 @@
     "type": "feature-phone",
     "platform": "webos"
   },
+  "palm pixi 1.1": {
+    "deviceName": "Pixi 1.1",
+    "marketingName": "Pixi 1.1",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 400,
+      "height": 320,
+      "touch": true,
+      "size": 2.63
+    },
+    "type": "feature-phone",
+    "platform": "webos"
+  },
   "palm pre": {
     "deviceName": "Pre",
     "marketingName": "Pre",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.1
+    },
+    "type": "feature-phone",
+    "platform": "webos"
+  },
+  "palm pre 1.0": {
+    "deviceName": "Pre 1.0",
+    "marketingName": "Pre 1.0",
     "manufacturer": "palm",
     "brand": "palm",
     "dualOrientation": false,

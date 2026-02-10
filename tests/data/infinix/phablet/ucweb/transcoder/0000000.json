@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 13; en-US; Infinix X6815D Build\/TP1A.220624.014) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/78.0.3904.108 UCBrowser\/13.5.8.1314 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"X6815D","marketingName":"Zero 5G (2023)","manufacturer":"Infinix","brand":"Infinix","dualOrientation":true,"simCount":2,"display":{"width":2460,"height":1080,"touch":true,"size":6.78},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"13.5.8.1314","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"Blink","version":"78.0.3904.108","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 14; en-US; Infinix X6853 Build\/UP1A.231005.007) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/78.0.3904.108 UCBrowser\/13.6.2.1316 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"X6853","marketingName":"Note 40","manufacturer":"Infinix","brand":"Infinix","dualOrientation":true,"simCount":2,"display":{"width":2436,"height":1080,"touch":true,"size":6.78},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"13.6.2.1316","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"Blink","version":"78.0.3904.108","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 14; en-US; Infinix X6838 Build\/UP1A.231005.007) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/100.0.4896.58 UCBrowser\/13.7.8.1322 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"X6838","marketingName":"Note 40X 5G","manufacturer":"Infinix","brand":"Infinix","dualOrientation":true,"simCount":2,"display":{"width":2460,"height":1080,"touch":true,"size":6.78},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"13.7.8.1322","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"Blink","version":"100.0.4896.58","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 15; en-US; Infinix X6858 Build\/AP3A.240905.015.A2) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/123.0.6312.80 UCBrowser\/14.4.0.1353 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"X6858","marketingName":"Note 50 4G","manufacturer":"Infinix","brand":"Infinix","dualOrientation":true,"simCount":2,"display":{"width":2436,"height":1080,"touch":true,"size":6.78},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"14.4.0.1353","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"Blink","version":"123.0.6312.80","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 13; en-US; Infinix X6815D Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.5.8.1314 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X6815D",
+      "marketingName": "Zero 5G (2023)",
+      "manufacturer": "Infinix",
+      "brand": "Infinix",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.5.8.1314",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; en-US; Infinix X6853 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.6.2.1316 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X6853",
+      "marketingName": "Note 40",
+      "manufacturer": "Infinix",
+      "brand": "Infinix",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2436,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.6.2.1316",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; en-US; Infinix X6838 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X6838",
+      "marketingName": "Note 40X 5G",
+      "manufacturer": "Infinix",
+      "brand": "Infinix",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.7.8.1322",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; en-US; Infinix X6858 Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.4.0.1353 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X6858",
+      "marketingName": "Note 50 4G",
+      "manufacturer": "Infinix",
+      "brand": "Infinix",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2436,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "14.4.0.1353",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.6312.80",
+      "manufacturer": "Google"
+    }
+  }
+]

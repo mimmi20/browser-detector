@@ -1,1 +1,92 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/47.0.2526.111 Safari\/537.36 SailfishBrowser\/Rulz ~LenovoG780"},"device":{"architecture":null,"deviceName":"G780","marketingName":"G780","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows","marketingName":"Windows 10","version":"10.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Chrome","modus":null,"version":"47.0.2526.111","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"47.0.2526.111","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident\/4.0; chromeframe\/32.0.1700.107; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET CLR 1.1.4322; .NET4.0C; .NET4.0E; Tablet PC 2.0; LEN2)"},"device":{"architecture":null,"deviceName":"PC","marketingName":"PC","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows","marketingName":"Windows 7","version":"7.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Chrome Frame","modus":null,"version":"32.0.1700.107","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":null,"manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36 SailfishBrowser/Rulz ~LenovoG780"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "G780",
+      "marketingName": "G780",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "47.0.2526.111",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.111",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; chromeframe/32.0.1700.107; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET CLR 1.1.4322; .NET4.0C; .NET4.0E; Tablet PC 2.0; LEN2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PC",
+      "marketingName": "PC",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 7",
+      "version": "7.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome Frame",
+      "modus": null,
+      "version": "32.0.1700.107",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  }
+]

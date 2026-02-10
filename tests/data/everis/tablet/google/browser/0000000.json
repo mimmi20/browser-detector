@@ -1,1 +1,155 @@
-[{"headers":{"sec-ch-ua-model":"E0118","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"11.0.0","sec-ch-ua":"\"Google Chrome\";v=\"125.0.6422.113\", \"Chromium\";v=\"125.0.6422.113\", \"Not.A\/Brand\";v=\"24.0.0.0\"","sec-ch-ua-full-version":"125.0.6422.113","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/125.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"E0118","marketingName":"E0118","manufacturer":"Everis","brand":"Everis","dualOrientation":true,"simCount":0,"display":{"width":null,"height":null,"touch":true,"size":null},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"125.0.6422.113","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"125.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"E0119","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"11.0.0","sec-ch-ua":"\"Not)A;Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"127.0.6533.103\", \"Chromium\";v=\"127.0.6533.103\"","sec-ch-ua-full-version":"127.0.6533.103","sec-ch-ua-mobile":"?0","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36"},"device":{"architecture":null,"deviceName":"E0119","marketingName":"E0119","manufacturer":"Everis","brand":"Everis","dualOrientation":true,"simCount":0,"display":{"width":null,"height":null,"touch":true,"size":null},"type":"tablet","ismobile":false,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"127.0.6533.103","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"127.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"E0120","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"11.0.0","sec-ch-ua":"\"Not_A Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"120.0.6099.144\", \"Google Chrome\";v=\"120.0.6099.144\"","sec-ch-ua-full-version":"120.0.6099.144","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/120.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"E0120","marketingName":"E0120","manufacturer":"Everis","brand":"Everis","dualOrientation":true,"simCount":0,"display":{"width":1200,"height":800,"touch":true,"size":10.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"120.0.6099.144","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"120.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "sec-ch-ua-model": "E0118",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "11.0.0",
+      "sec-ch-ua": "\"Google Chrome\";v=\"125.0.6422.113\", \"Chromium\";v=\"125.0.6422.113\", \"Not.A/Brand\";v=\"24.0.0.0\"",
+      "sec-ch-ua-full-version": "125.0.6422.113",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E0118",
+      "marketingName": "E0118",
+      "manufacturer": "Everis",
+      "brand": "Everis",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "125.0.6422.113",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "125.0.6422.113",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "E0119",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "11.0.0",
+      "sec-ch-ua": "\"Not)A;Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"127.0.6533.103\", \"Chromium\";v=\"127.0.6533.103\"",
+      "sec-ch-ua-full-version": "127.0.6533.103",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E0119",
+      "marketingName": "E0119",
+      "manufacturer": "Everis",
+      "brand": "Everis",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "127.0.6533.103",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "127.0.6533.103",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "E0120",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "11.0.0",
+      "sec-ch-ua": "\"Not_A Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"120.0.6099.144\", \"Google Chrome\";v=\"120.0.6099.144\"",
+      "sec-ch-ua-full-version": "120.0.6099.144",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E0120",
+      "marketingName": "E0120",
+      "manufacturer": "Everis",
+      "brand": "Everis",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1200,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "120.0.6099.144",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.144",
+      "manufacturer": "Google"
+    }
+  }
+]

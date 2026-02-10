@@ -93,5 +93,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "bluesky": {
+    "name": "Bluesky",
+    "manufacturer": "bluesky-social",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bluesky Cardyb",
+        "Bluesky"
+      ]
+    },
+    "engine": "unknown"
   }
 }

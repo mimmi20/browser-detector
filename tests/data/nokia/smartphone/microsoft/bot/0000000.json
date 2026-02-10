@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Windows Phone Search (Windows Phone OS 7.10;NOKIA;Lumia 900;7.10;8862)"},"device":{"architecture":null,"deviceName":"RM-823","marketingName":"Lumia 900","manufacturer":"Nokia","brand":"Nokia","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":4.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows Phone OS","marketingName":"Windows Phone OS","version":"7.10.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Windows Phone Search","modus":null,"version":null,"manufacturer":"Microsoft","type":"bot","isbot":true,"bits":null},"engine":{"name":"Trident","version":null,"manufacturer":"Microsoft"}},{"headers":{"user-agent":"Windows Phone Search (Windows Phone OS 8.0;NOKIA;Nokia 520;8.0;10328)"},"device":{"architecture":null,"deviceName":"RM-914","marketingName":"Lumia 520","manufacturer":"Nokia","brand":"Nokia","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows Phone OS","marketingName":"Windows Phone OS","version":"8.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Windows Phone Search","modus":null,"version":null,"manufacturer":"Microsoft","type":"bot","isbot":true,"bits":null},"engine":{"name":"Trident","version":null,"manufacturer":"Microsoft"}},{"headers":{"user-agent":"Windows Phone Search (Windows Phone OS 8.0;NOKIA;Lumia 1520;8.0;10521)"},"device":{"architecture":null,"deviceName":"Lumia 1520","marketingName":"Lumia 1520","manufacturer":"Nokia","brand":"Nokia","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":6},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows Phone OS","marketingName":"Windows Phone OS","version":"8.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Windows Phone Search","modus":null,"version":null,"manufacturer":"Microsoft","type":"bot","isbot":true,"bits":null},"engine":{"name":"Trident","version":null,"manufacturer":"Microsoft"}},{"headers":{"user-agent":"Windows Phone Search (Windows Phone OS 7.10;NOKIA;Lumia 710;7.10;7740)"},"device":{"architecture":null,"deviceName":"Lumia 710","marketingName":"Lumia 710","manufacturer":"Nokia","brand":"Nokia","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":3.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows Phone OS","marketingName":"Windows Phone OS","version":"7.10.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Windows Phone Search","modus":null,"version":null,"manufacturer":"Microsoft","type":"bot","isbot":true,"bits":null},"engine":{"name":"Trident","version":null,"manufacturer":"Microsoft"}},{"headers":{"user-agent":"Windows Phone Search (Windows Phone OS 7.10;NOKIA;Lumia 800;7.10;8107)"},"device":{"architecture":null,"deviceName":"RM-819","marketingName":"Lumia 800","manufacturer":"Nokia","brand":"Nokia","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":3.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows Phone OS","marketingName":"Windows Phone OS","version":"7.10.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Windows Phone Search","modus":null,"version":null,"manufacturer":"Microsoft","type":"bot","isbot":true,"bits":null},"engine":{"name":"Trident","version":null,"manufacturer":"Microsoft"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Windows Phone Search (Windows Phone OS 7.10;NOKIA;Lumia 900;7.10;8862)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RM-823",
+      "marketingName": "Lumia 900",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.10.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Windows Phone Search",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Microsoft",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Windows Phone Search (Windows Phone OS 8.0;NOKIA;Nokia 520;8.0;10328)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RM-914",
+      "marketingName": "Lumia 520",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Windows Phone Search",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Microsoft",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Windows Phone Search (Windows Phone OS 8.0;NOKIA;Lumia 1520;8.0;10521)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Lumia 1520",
+      "marketingName": "Lumia 1520",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Windows Phone Search",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Microsoft",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Windows Phone Search (Windows Phone OS 7.10;NOKIA;Lumia 710;7.10;7740)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Lumia 710",
+      "marketingName": "Lumia 710",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.10.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Windows Phone Search",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Microsoft",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Windows Phone Search (Windows Phone OS 7.10;NOKIA;Lumia 800;7.10;8107)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RM-819",
+      "marketingName": "Lumia 800",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.10.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Windows Phone Search",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Microsoft",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  }
+]

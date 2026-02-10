@@ -1779,5 +1779,245 @@
       ]
     },
     "engine": "unknown"
+  },
+  "testcrawler": {
+    "name": "TestCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "1001-firms-bot": {
+    "name": "1001FirmsBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "1001FirmsBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bright-bot": {
+    "name": "BrightBot",
+    "manufacturer": "bright-interactive",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BrightBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "najdu.s.holubem.eu": {
+    "name": "najdu.s.holubem.eu",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "yahoo-japan-bot": {
+    "name": "Yahoo! Japan Bot",
+    "manufacturer": "yahoo-japan",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.android\\.yjtop",
+        "jp\\.co\\.yahoo\\.ipn\\.appli",
+        "yjapp"
+      ]
+    },
+    "engine": null
+  },
+  "yahoo! japan psc": {
+    "name": "Yahoo! Japan PSC",
+    "manufacturer": "yahoo-japan",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Y!J-PSC"
+      ]
+    },
+    "engine": null
+  },
+  "eyeota-bot": {
+    "name": "Eyeotabot",
+    "manufacturer": "eyeota",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Eyeotabot"
+      ]
+    },
+    "engine": null
+  },
+  "google-cloud-scheduler": {
+    "name": "Google Cloud Scheduler",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Cloud-Scheduler"
+      ]
+    },
+    "engine": null
+  },
+  "oai-searchbot": {
+    "name": "OAI-SearchBot",
+    "manufacturer": "openai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OAI-SearchBot"
+      ]
+    },
+    "engine": null
+  },
+  "diffbot": {
+    "name": "Diffbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "inetdex-bot": {
+    "name": "Inetdex Bot",
+    "manufacturer": "inetdex",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "research-jlu": {
+    "name": "Research JLU",
+    "manufacturer": "jlu",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "i-ask-bot": {
+    "name": "iAskBot",
+    "manufacturer": "ai-search",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iAskBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dormouse": {
+    "name": "Dormouse",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Dormouse"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domains-project-bot": {
+    "name": "Domains Project Bot",
+    "manufacturer": "domains-project",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Domains Project"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "urlsumabot": {
+    "name": "URLSuMaBot",
+    "manufacturer": "degordian",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "chatglm-spider": {
+    "name": "ChatGLM-Spider",
+    "manufacturer": "zhipu-huazhang",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ChatGLM-Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "stract-bot": {
+    "name": "StractBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StractBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domain-codex": {
+    "name": "Domain Codex",
+    "manufacturer": "erie-data-systems",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "cyberfind-crawler": {
+    "name": "CyberFind Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CyberFind Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tiger-bot": {
+    "name": "TigerBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TigerBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

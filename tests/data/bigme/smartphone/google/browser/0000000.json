@@ -1,1 +1,55 @@
-[{"headers":{"sec-ch-ua-model":"\"HiBreak\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"11.0.0\"","sec-ch-ua":"\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"","sec-ch-ua-full-version":"\"133.0.6943.89\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/133.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"HiBreak","marketingName":"HiBreak","manufacturer":"Bigme","brand":"Bigme","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.84},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"133.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"133.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"HiBreak\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"",
+      "sec-ch-ua-full-version": "\"133.0.6943.89\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HiBreak",
+      "marketingName": "HiBreak",
+      "manufacturer": "Bigme",
+      "brand": "Bigme",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.84
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "133.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "133.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

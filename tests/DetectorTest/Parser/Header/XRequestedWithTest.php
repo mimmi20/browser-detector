@@ -215,7 +215,7 @@ final class XRequestedWithTest extends TestCase
             ['com.ksmobile.cb', true, 'cm browser', true, null, false, Os::unknown],
             ['com.android.chrome', true, 'chrome', true, null, false, Os::unknown],
             ['com.facebook.orca', true, 'facebook messenger app', true, null, false, Os::unknown],
-            ['jp.co.yahoo.android.yjtop', true, 'yahoo! japan', true, null, false, Os::unknown],
+            ['jp.co.yahoo.android.yjtop', true, 'yahoo-japan-app', true, null, false, Os::unknown],
             ['com.instagram.android', true, 'instagram app', true, null, false, Os::unknown],
             ['com.microsoft.bingintl', true, 'bingsearch', true, null, false, Os::unknown],
             ['com.nhn.android.search', true, 'naver', true, null, false, Os::unknown],
@@ -565,6 +565,8 @@ final class XRequestedWithTest extends TestCase
             ['org.flow.browser', true, 'flowsurf', true, null, false, Os::unknown],
             ['com.tcl.browser', true, 'browse-here', true, null, false, Os::unknown],
             ['com.imo.android.imoim', true, 'imo-international-calls-chat', true, null, false, Os::unknown],
+            ['com.heytap.browser', true, 'heytapbrowser', true, null, false, Os::unknown],
+            ['ai.perplexity.comet', true, 'comet', true, null, false, Os::unknown],
         ];
     }
 }

@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 4.3.1; de-de; ARCHOS 80G9 Build\/JLS36I) AppleWebKit\/534.30 (KHTML, like Gecko) Version\/4.0 Safari\/534.30 CyanogenMod\/10.2\/archos_g9"},"device":{"architecture":null,"deviceName":"80 G9","marketingName":"80 G9","manufacturer":"Archos","brand":"Archos","dualOrientation":true,"simCount":0,"display":{"width":1024,"height":768,"touch":true,"size":8},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"CyanogenMod","marketingName":"CyanogenMod","version":"10.2.0","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"534.30.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 4.3.1; de-de; ARCHOS 101G9 Build\/JLS36I) AppleWebKit\/534.30 (KHTML, like Gecko) Version\/4.0 Safari\/534.30 CyanogenMod\/10.2\/archos_g9"},"device":{"architecture":null,"deviceName":"101 G9","marketingName":"101 G9","manufacturer":"Archos","brand":"Archos","dualOrientation":true,"simCount":0,"display":{"width":1280,"height":800,"touch":true,"size":10.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"CyanogenMod","marketingName":"CyanogenMod","version":"10.2.0","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"534.30.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9.0; SM-A70s Build\/LMY47I) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/39.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"A70S","marketingName":"A70S","manufacturer":"Archos","brand":"Archos","dualOrientation":true,"simCount":0,"display":{"width":800,"height":480,"touch":true,"size":7},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"39.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"39.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; ARCHOS T101 FHD WiFi) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.0.0 Safari\/537.36"},"device":{"architecture":null,"deviceName":"T101 FHD Wi-Fi","marketingName":"T101 FHD Wi-Fi","manufacturer":"Archos","brand":"Archos","dualOrientation":true,"simCount":0,"display":{"width":1920,"height":1200,"touch":true,"size":10.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"126.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; Tikeasy 10d Build\/TP1A.220624.014; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/111.0.5563.116 Safari\/537.36"},"device":{"architecture":null,"deviceName":"Tikeasy 10d","marketingName":"Tikeasy 10d","manufacturer":"Archos","brand":"Archos","dualOrientation":true,"simCount":0,"display":{"width":null,"height":null,"touch":true,"size":10.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"111.0.5563.116","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"111.0.5563.116","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; ARCHOS 80G9 Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/10.2/archos_g9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "80 G9",
+      "marketingName": "80 G9",
+      "manufacturer": "Archos",
+      "brand": "Archos",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "CyanogenMod",
+      "marketingName": "CyanogenMod",
+      "version": "10.2.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; ARCHOS 101G9 Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/10.2/archos_g9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "101 G9",
+      "marketingName": "101 G9",
+      "manufacturer": "Archos",
+      "brand": "Archos",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "CyanogenMod",
+      "marketingName": "CyanogenMod",
+      "version": "10.2.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9.0; SM-A70s Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A70S",
+      "marketingName": "A70S",
+      "manufacturer": "Archos",
+      "brand": "Archos",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "39.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; ARCHOS T101 FHD WiFi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T101 FHD Wi-Fi",
+      "marketingName": "T101 FHD Wi-Fi",
+      "manufacturer": "Archos",
+      "brand": "Archos",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Tikeasy 10d Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Tikeasy 10d",
+      "marketingName": "Tikeasy 10d",
+      "manufacturer": "Archos",
+      "brand": "Archos",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "111.0.5563.116",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "Google"
+    }
+  }
+]

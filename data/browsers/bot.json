@@ -208,7 +208,7 @@
   },
   "admantx platform semantic analyzer": {
     "name": "ADmantX Platform Semantic Analyzer",
-    "manufacturer": "admantx-inc",
+    "manufacturer": "integral-ad-science",
     "type": "bot",
     "version": {
       "class": null,
@@ -306,18 +306,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "alexabot": {
-    "name": "Alexabot",
-    "manufacturer": "alexa-internet",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Alexabot"
-      ]
     },
     "engine": "unknown"
   },
@@ -1478,16 +1466,6 @@
       "search": [
         "Delibar"
       ]
-    },
-    "engine": "unknown"
-  },
-  "diffbot": {
-    "name": "Diffbot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -6509,16 +6487,6 @@
     },
     "engine": "unknown"
   },
-  "testcrawler": {
-    "name": "TestCrawler",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "texis webscript": {
     "name": "Texis Webscript",
     "manufacturer": "thunderstone-software",
@@ -8324,18 +8292,6 @@
     },
     "engine": "unknown"
   },
-  "yoozbot": {
-    "name": "yoozBot",
-    "manufacturer": "yooz",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "yoozBot\\-"
-      ]
-    },
-    "engine": "unknown"
-  },
   "youdaobot": {
     "name": "YoudaoBot",
     "manufacturer": "unknown",
@@ -8514,16 +8470,6 @@
       "search": [
         "MADBbot"
       ]
-    },
-    "engine": "unknown"
-  },
-  "urlsumabot": {
-    "name": "URLSuMaBot",
-    "manufacturer": "degordian",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -8805,18 +8751,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetpeakCheckerBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "stract-bot": {
-    "name": "StractBot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "StractBot"
       ]
     },
     "engine": "unknown"

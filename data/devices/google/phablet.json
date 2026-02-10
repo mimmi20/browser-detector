@@ -126,5 +126,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "google nexus 6p": {
+    "deviceName": "Nexus 6P",
+    "marketingName": "Nexus 6P",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

@@ -215,5 +215,17 @@
       ]
     },
     "engine": null
+  },
+  "admantx-service-fetcher": {
+    "name": "ADmantX Service Fetcher",
+    "manufacturer": "integral-ad-science",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ias-or"
+      ]
+    },
+    "engine": null
   }
 }

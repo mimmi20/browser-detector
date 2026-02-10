@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 13; PA2353) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/120.0.6099.479 YaApp_Android\/24.16\/apad YaSearchBrowser\/24.16\/apad BroPP\/1.0 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"PA2353","marketingName":"Pad Air","manufacturer":"vivo","brand":"vivo","dualOrientation":true,"simCount":0,"display":{"width":2800,"height":1840,"touch":true,"size":11.5},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"24.16.0","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"120.0.6099.479","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 13; iPA2375) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/122.0.6261.645 YaSearchBrowser\/24.44\/apad BroPP\/1.0 YaSearchApp\/24.44\/apad webOmni SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"iPA2375","marketingName":"iQOO Pad","manufacturer":"vivo","brand":"vivo","dualOrientation":true,"simCount":0,"display":{"width":2800,"height":1968,"touch":true,"size":12.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"24.44.0","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"122.0.6261.645","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 15; PA2573) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.7339.270 YaBrowser\/25.10.0.270.01 Safari\/537.36"},"device":{"architecture":null,"deviceName":"PA2573","marketingName":"Pad 5 Pro","manufacturer":"vivo","brand":"vivo","dualOrientation":true,"simCount":0,"display":{"width":3096,"height":2064,"touch":true,"size":13},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"25.10.0.270.01","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"140.0.7339.270","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 15; PA2511) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.7204.70 YaBrowser\/25.8.8.70.01 Safari\/537.36"},"device":{"architecture":null,"deviceName":"PA2511","marketingName":"Pad SE","manufacturer":"vivo","brand":"vivo","dualOrientation":true,"simCount":0,"display":{"width":2464,"height":1600,"touch":true,"size":12.3},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"25.8.8.70.01","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"138.0.7204.70","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 15; PA2455) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.7339.854 YaSearchBrowser\/25.101.1\/apad BroPP\/1.0 YaSearchApp\/25.101.1\/apad webOmni SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"PA2455","marketingName":"Pad 3","manufacturer":"vivo","brand":"vivo","dualOrientation":true,"simCount":0,"display":{"width":2800,"height":1968,"touch":true,"size":12.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"25.101.1","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"140.0.7339.854","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; PA2353) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.479 YaApp_Android/24.16/apad YaSearchBrowser/24.16/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PA2353",
+      "marketingName": "Pad Air",
+      "manufacturer": "vivo",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2800,
+        "height": 1840,
+        "touch": true,
+        "size": 11.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.16.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.479",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; iPA2375) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.645 YaSearchBrowser/24.44/apad BroPP/1.0 YaSearchApp/24.44/apad webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPA2375",
+      "marketingName": "iQOO Pad",
+      "manufacturer": "vivo",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2800,
+        "height": 1968,
+        "touch": true,
+        "size": 12.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.44.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.645",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PA2573) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.270 YaBrowser/25.10.0.270.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PA2573",
+      "marketingName": "Pad 5 Pro",
+      "manufacturer": "vivo",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 3096,
+        "height": 2064,
+        "touch": true,
+        "size": 13
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.10.0.270.01",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.7339.270",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PA2511) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.70 YaBrowser/25.8.8.70.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PA2511",
+      "marketingName": "Pad SE",
+      "manufacturer": "vivo",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2464,
+        "height": 1600,
+        "touch": true,
+        "size": 12.3
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.8.8.70.01",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.70",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; PA2455) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1/apad BroPP/1.0 YaSearchApp/25.101.1/apad webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PA2455",
+      "marketingName": "Pad 3",
+      "manufacturer": "vivo",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2800,
+        "height": 1968,
+        "touch": true,
+        "size": 12.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "25.101.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.7339.854",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -35,6 +35,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
+use function in_array;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
@@ -72,9 +73,7 @@ final class OsTest extends TestCase
 
         if (
             $name !== null
-            && $name !== 'Windows'
-            && $name !== 'Windows NT'
-            && $name !== 'Windows Phone OS'
+            && !in_array($name, ['Windows', 'Windows NT', 'Windows RT', 'Windows Phone OS'], true)
         ) {
             $result2 = Os::fromName($name);
 
@@ -786,7 +785,7 @@ final class OsTest extends TestCase
             ],
             [
                 'type' => 'Windows RT 6.2',
-                'name' => 'Windows',
+                'name' => 'Windows RT',
                 'marketingName' => 'Windows RT',
                 'manufacturer' => Company::microsoft,
                 'version' => ['factory' => null, 'search' => null, 'value' => 8],
@@ -794,7 +793,7 @@ final class OsTest extends TestCase
             ],
             [
                 'type' => 'Windows RT 6.3',
-                'name' => 'Windows',
+                'name' => 'Windows RT',
                 'marketingName' => 'Windows RT',
                 'manufacturer' => Company::microsoft,
                 'version' => ['factory' => null, 'search' => null, 'value' => 8.1],
@@ -1479,6 +1478,14 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::smartisan,
                 'version' => ['factory' => SmartisanOsFactory::class, 'search' => null],
                 'key' => 'smartisan-os',
+            ],
+            [
+                'type' => 'Horizon',
+                'name' => 'Horizon',
+                'marketingName' => 'Horizon',
+                'manufacturer' => Company::meta,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'horizon',
             ],
         ];
     }

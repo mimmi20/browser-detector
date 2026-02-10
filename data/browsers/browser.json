@@ -3792,7 +3792,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "SE"
+        "SE "
       ]
     },
     "engine": null
@@ -3931,7 +3931,7 @@
     "engine": "webkit"
   },
   "superbird": {
-    "name": "superbird",
+    "name": "SuperBird",
     "manufacturer": "superbird",
     "type": "browser",
     "version": {
@@ -5884,6 +5884,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Atom"
+      ]
+    },
+    "engine": null
+  },
+  "comet": {
+    "name": "Comet",
+    "manufacturer": "perplexity",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Comet"
       ]
     },
     "engine": null

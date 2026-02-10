@@ -1,1 +1,212 @@
-[{"headers":{"x-requested-with":"com.duckduckgo.mobile.android","user-agent":"Mozilla\/5.0 (Linux; Android 10; Lenovo TB-8505F Build\/QP1A.190711.020; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/114.0.5735.131 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"TB-8505F","marketingName":"Tab M8","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1280,"height":800,"touch":true,"size":8},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":null,"manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"114.0.5735.131","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"\"TB328FU\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"12.0.0\"","x-requested-with":"com.duckduckgo.mobile.android","sec-ch-ua":"\"Not\/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"DuckDuckGo\";v=\"126\"","sec-ch-ua-full-version":"\"126.0.6478.186\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.0.0 Safari\/537.36"},"device":{"architecture":null,"deviceName":"TB328FU","marketingName":"Tab M10 Wi-Fi (3rd Gen)","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1920,"height":1200,"touch":true,"size":10.1},"type":"tablet","ismobile":false,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":"126.0.0","manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"\"TB310FU\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"13.0.0\"","x-requested-with":"com.duckduckgo.mobile.android","sec-ch-ua":"\"DuckDuckGo\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"","sec-ch-ua-full-version":"\"123.0.6312.118\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/123.0.0.0 Safari\/537.36"},"device":{"architecture":null,"deviceName":"TB310FU","marketingName":"Tab M9 Wi-Fi","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1340,"height":800,"touch":true,"size":9},"type":"tablet","ismobile":false,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":"123.0.0","manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"123.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"\"TB351FU\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"15.0.0\"","x-requested-with":"com.duckduckgo.mobile.android","sec-ch-ua":"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"DuckDuckGo\";v=\"140\"","sec-ch-ua-full-version":"\"140.0.7339.51\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-form-factors":"\"Desktop\"","sec-ch-ua-mobile":"?0","sec-ch-ua-wow64":"?0","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36"},"device":{"architecture":null,"deviceName":"TB351FU","marketingName":"Tab Plus Wi-Fi","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":2000,"height":1200,"touch":true,"size":11.5},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":"140.0.0","manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"140.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-8505F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-8505F",
+      "marketingName": "Tab M8",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.131",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"TB328FU\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"DuckDuckGo\";v=\"126\"",
+      "sec-ch-ua-full-version": "\"126.0.6478.186\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB328FU",
+      "marketingName": "Tab M10 Wi-Fi (3rd Gen)",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "126.0.0",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"TB310FU\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+      "sec-ch-ua-full-version": "\"123.0.6312.118\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB310FU",
+      "marketingName": "Tab M9 Wi-Fi",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1340,
+        "height": 800,
+        "touch": true,
+        "size": 9
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "123.0.0",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"TB351FU\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"DuckDuckGo\";v=\"140\"",
+      "sec-ch-ua-full-version": "\"140.0.7339.51\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB351FU",
+      "marketingName": "Tab Plus Wi-Fi",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 11.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "140.0.0",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

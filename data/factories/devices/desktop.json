@@ -14,14 +14,15 @@
     "/magw/i": "gateway",
     "/dec[ _]3000/i": "dec",
     "/cpdtdf|cpntdf|cmntdf|compaq/i": "compaq",
-    "/hpcmhp|hpntdf|hpdtdf|hp\\-ux 9000/i": "hp",
+    "/hpcmhp|hpntdf|hpdtdf|hp\\-ux 9000|hp pavilion/i": "hp",
     "/h9p|surface pro 4/i": "microsoft",
     "/surfbook w1/i": "trekstor",
     "/system76/i": "system76",
     "/freebsd/i": "unknown",
     "/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\\=|i|power)mac|networkingextension/i": "apple",
     "/\\bPPC\\b/": "apple",
-    "/remix (sk1w|mini|pro)/i": "jide"
+    "/remix (sk1w|mini|pro)/i": "jide",
+    "/rctw/i": "rca-tablets"
   },
   "generic": "unknown"
 }

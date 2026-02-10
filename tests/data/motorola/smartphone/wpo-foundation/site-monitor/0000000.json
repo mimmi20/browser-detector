@@ -1,1 +1,56 @@
-[{"headers":{"sec-ch-ua-model":"\"moto g power (2022)\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"11.0\"","x-requested-with":"XMLHttpRequest","sec-ch-ua":"\"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\", \"Lighthouse\";v=\"11.5.0\"","sec-ch-ua-full-version":"\"100.0.4896.60\"","sec-ch-ua-bitness":"\"64\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit\/537.36 (KHTML like Gecko) Chrome\/100.0.4896.60 Mobile Safari\/537.36 PTST\/240201.144844"},"device":{"architecture":null,"deviceName":"Moto G Power (2022)","marketingName":"Moto G Power (2022)","manufacturer":"Motorola","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":1600,"height":720,"touch":true,"size":6.5},"type":"smartphone","ismobile":true,"istv":false,"bits":64},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":64},"client":{"name":"WebPageTest","modus":null,"version":null,"manufacturer":"WPO Foundation","type":"site-monitor","isbot":true,"bits":64},"engine":{"name":"Blink","version":"100.0.4896.60","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"moto g power (2022)\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0\"",
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua": "\"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\", \"Lighthouse\";v=\"11.5.0\"",
+      "sec-ch-ua-full-version": "\"100.0.4896.60\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit/537.36 (KHTML like Gecko) Chrome/100.0.4896.60 Mobile Safari/537.36 PTST/240201.144844"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G Power (2022)",
+      "marketingName": "Moto G Power (2022)",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": 64
+    },
+    "client": {
+      "name": "WebPageTest",
+      "modus": null,
+      "version": null,
+      "manufacturer": "WPO Foundation",
+      "type": "site-monitor",
+      "isbot": true,
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 9; C106) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/85.0.4183.127 YaBrowser\/20.9.2.95.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"C106","marketingName":"Cool 1","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"20.9.2.95.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"85.0.4183.127","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 13; CP12) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/122.0.6261.869 YaSearchBrowser\/24.42.1 BroPP\/1.0 YaSearchApp\/24.42.1 webOmni SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"CP12","marketingName":"CP12","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.52},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"24.42.1","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"122.0.6261.869","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 13; CP12p) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/122.0.6261.39 YaBrowser\/24.4.7.39.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"CP12p","marketingName":"CP12p","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.52},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"24.4.7.39.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"122.0.6261.39","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 13; CP12s) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.6723.279 YaBrowser\/24.12.0.279.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"CP12s","marketingName":"CP12s","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":2,"display":{"width":1640,"height":720,"touch":true,"size":6.79},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"24.12.0.279.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"130.0.6723.279","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 13; CP12Q) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.6613.15 YaSearchBrowser\/24.107.1 BroPP\/1.0 YaSearchApp\/24.107.1 webOmni SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"CP12Q","marketingName":"Cool 30i","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.56},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"24.107.1","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"128.0.6613.15","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; C106) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 YaBrowser/20.9.2.95.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C106",
+      "marketingName": "Cool 1",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "20.9.2.95.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.127",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; CP12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.869 YaSearchBrowser/24.42.1 BroPP/1.0 YaSearchApp/24.42.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CP12",
+      "marketingName": "CP12",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.42.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.869",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; CP12p) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.39 YaBrowser/24.4.7.39.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CP12p",
+      "marketingName": "CP12p",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.4.7.39.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.39",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; CP12s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.279 YaBrowser/24.12.0.279.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CP12s",
+      "marketingName": "CP12s",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.79
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.12.0.279.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.279",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; CP12Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.15 YaSearchBrowser/24.107.1 BroPP/1.0 YaSearchApp/24.107.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CP12Q",
+      "marketingName": "Cool 30i",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.107.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.15",
+      "manufacturer": "Google"
+    }
+  }
+]

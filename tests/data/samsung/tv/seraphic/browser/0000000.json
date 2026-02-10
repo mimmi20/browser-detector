@@ -1,1 +1,47 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/47.0.2526.106 Safari\/537.36 SRAF\/4.0 HbbTV\/1.4.1 ( DRM; TDSystems; SmartTV2019; v4.0; v1.0; SERIEX9; ) CE-HTML\/1.0"},"device":{"architecture":null,"deviceName":"Smart TV","marketingName":"Smart TV","manufacturer":"Samsung","brand":"Samsung","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Sraf","modus":null,"version":"4.0.0","manufacturer":"seraphic","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"47.0.2526.106","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0 HbbTV/1.4.1 ( DRM; TDSystems; SmartTV2019; v4.0; v1.0; SERIEX9; ) CE-HTML/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Sraf",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Seraphic",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.106",
+      "manufacturer": "Google"
+    }
+  }
+]

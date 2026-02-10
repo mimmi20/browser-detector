@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 4.4.2; Lenovo A319 Build\/MocorDroid4.4.2) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/28.0.1500.95 YaBrowser\/13.9.1500.3524 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"A319","marketingName":"RocStar","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"4.4.2","manufacturer":"unknown","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"13.9.1500.3524","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"28.0.1500.95","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 11; Lenovo Z5s) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/86.0.4240.198 YaBrowser\/20.11.3.88.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Z5s","marketingName":"Z5s","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":2,"display":{"width":2340,"height":1080,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"20.11.3.88.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"86.0.4240.198","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 9; Lenovo L78051) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/90.0.4430.216 YaBrowser\/21.5.2.110.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"L78051","marketingName":"Z6 Pro","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":2,"display":{"width":2340,"height":1080,"touch":true,"size":6.39},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"21.5.2.110.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"90.0.4430.216","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 9; Lenovo L39051) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/90.0.4430.216 YaApp_Android\/21.53.1 YaSearchBrowser\/21.53.1 BroPP\/1.0 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"L39051","marketingName":"K10 Plus","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":2,"display":{"width":1520,"height":720,"touch":true,"size":6.22},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"21.53.1","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"90.0.4430.216","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 9; Lenovo PB-6505MC) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/90.0.4430.93 YaApp_Android\/21.50.1 YaSearchBrowser\/21.50.1 BroPP\/1.0 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"PB-6505MC","marketingName":"Tab V7","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":2,"display":{"width":2160,"height":1080,"touch":true,"size":6.95},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"21.50.1","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"90.0.4430.93","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A319 Build/MocorDroid4.4.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 YaBrowser/13.9.1500.3524 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A319",
+      "marketingName": "RocStar",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "4.4.2",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "13.9.1500.3524",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "28.0.1500.95",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; Lenovo Z5s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.88.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Z5s",
+      "marketingName": "Z5s",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "20.11.3.88.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.198",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; Lenovo L78051) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.216 YaBrowser/21.5.2.110.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "L78051",
+      "marketingName": "Z6 Pro",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "21.5.2.110.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.216",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; Lenovo L39051) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.216 YaApp_Android/21.53.1 YaSearchBrowser/21.53.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "L39051",
+      "marketingName": "K10 Plus",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.22
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "21.53.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.216",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; Lenovo PB-6505MC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 YaApp_Android/21.50.1 YaSearchBrowser/21.50.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PB-6505MC",
+      "marketingName": "Tab V7",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 6.95
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "21.50.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.93",
+      "manufacturer": "Google"
+    }
+  }
+]

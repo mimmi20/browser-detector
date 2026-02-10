@@ -17,6 +17,8 @@ use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\CrawledByClientCode;
 use BrowserDetector\Parser\Header\CrawledByClientVersion;
+use BrowserDetector\Parser\Header\CrawledByEngineCode;
+use BrowserDetector\Parser\Header\CrawledByEngineVersion;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -55,6 +57,8 @@ final class CrawledByTest extends TestCase
             value: $ua,
             clientCode: new CrawledByClientCode(),
             clientVersion: new CrawledByClientVersion(),
+            engineCode: new CrawledByEngineCode(),
+            engineVersion: new CrawledByEngineVersion(),
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -149,25 +153,23 @@ final class CrawledByTest extends TestCase
             $header->getPlatformVersionWithOs(Os::unknown),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse(
+        self::assertTrue(
             $header->hasEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
 
-        try {
-            $header->getEngineCode();
+        self::assertSame(
+            Engine::unknown,
+            $header->getEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
 
-            self::fail('Exception expected');
-        } catch (NotFoundException) {
-            // do nothing
-        }
-
-        self::assertFalse(
+        self::assertTrue(
             $header->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
-            NullVersion::class,
+            ForcedNullVersion::class,
             $header->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );

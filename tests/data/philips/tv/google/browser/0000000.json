@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux armv7l; HbbTV\/1.2.1 (; Philips; 55PUS780912; ; PHILIPSTV; CE-HTML\/1.0 NETTV\/4.4.1 SmartTvA\/3.0.0 Firmware\/014.002.026.129 (PhilipsTV, 3.1.1,)en)) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/51.0.2704.81 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"NetTV Series","marketingName":"NetTV Series","manufacturer":"Philips","brand":"Philips","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"51.0.2704.81","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"51.0.2704.81","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; 2020\/2021 UHD Android TV Build\/QTG3.201102.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/100.0.4896.88 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Smart TV UHD (2020-2021)","marketingName":"Smart TV UHD (2020-2021)","manufacturer":"Philips","brand":"Philips","dualOrientation":false,"simCount":0,"display":{"width":3840,"height":2160,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android TV","marketingName":"Android TV","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"100.0.4896.88","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"100.0.4896.88","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; 2021\/22 Philips UHD Android TV Build\/QTG3.200913.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/100.0.4896.127 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Smart TV UHD (2021-2022)","marketingName":"Smart TV UHD (2021-2022)","manufacturer":"Philips","brand":"Philips","dualOrientation":false,"simCount":0,"display":{"width":3840,"height":2160,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android TV","marketingName":"Android TV","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"100.0.4896.127","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"100.0.4896.127","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11;Linux armv7l) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/73.0.3683.75 Safari\/537.36 HbbTV\/1.6.1 (+DRM; Philips;Philips;43PUS8808\/12; R.001.000.096.000; _TV_MT9972_2023;) FVC\/8.0 (Philips; com.tpv-tech.TPM231WW;) LaTivu_1.0.1_2023"},"device":{"architecture":null,"deviceName":"general Philips TV","marketingName":"general Philips TV","manufacturer":"Philips","brand":"Philips","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Chrome","modus":null,"version":"73.0.3683.75","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"73.0.3683.75","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l; HbbTV/1.2.1 (; Philips; 55PUS780912; ; PHILIPSTV; CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/014.002.026.129 (PhilipsTV, 3.1.1,)en)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NetTV Series",
+      "marketingName": "NetTV Series",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; 2020/2021 UHD Android TV Build/QTG3.201102.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.88 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV UHD (2020-2021)",
+      "marketingName": "Smart TV UHD (2020-2021)",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "100.0.4896.88",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.88",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; 2021/22 Philips UHD Android TV Build/QTG3.200913.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV UHD (2021-2022)",
+      "marketingName": "Smart TV UHD (2021-2022)",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "100.0.4896.127",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11;Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36 HbbTV/1.6.1 (+DRM; Philips;Philips;43PUS8808/12; R.001.000.096.000; _TV_MT9972_2023;) FVC/8.0 (Philips; com.tpv-tech.TPM231WW;) LaTivu_1.0.1_2023"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "73.0.3683.75",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "73.0.3683.75",
+      "manufacturer": "Google"
+    }
+  }
+]

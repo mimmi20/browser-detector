@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit\/603.2.4 (KHTML, like Gecko) Mobile\/14F89 iphone6splus BingWeb\/6.8.6.0"},"device":{"architecture":null,"deviceName":"iPhone","marketingName":"iPhone","manufacturer":"Apple","brand":"Apple","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"10.3.2","manufacturer":"Apple","bits":null},"client":{"name":"BingWeb App","modus":null,"version":"6.8.6.0","manufacturer":"Microsoft","type":"application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"603.2.4","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit\/601.1.46 (KHTML, like Gecko) Mobile\/13F69 iPhone5,2 BingWeb\/5.8.1.1452.20151027"},"device":{"architecture":null,"deviceName":"iPhone 5,2","marketingName":"iPhone 5","manufacturer":"Apple","brand":"Apple","dualOrientation":true,"simCount":1,"display":{"width":1136,"height":640,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"9.3.2","manufacturer":"Apple","bits":null},"client":{"name":"BingWeb App","modus":null,"version":"5.8.1.1452.20151027","manufacturer":"Microsoft","type":"application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"601.1.46","manufacturer":"Apple"}},{"headers":{"user-agent":"Microsoft Office Word\/2.40.803 (iOS\/13.6; Phone; de-DE; AppStore; Apple\/iPhone10,4)"},"device":{"architecture":null,"deviceName":"iPhone 10,4","marketingName":"iPhone 8","manufacturer":"Apple","brand":"Apple","dualOrientation":true,"simCount":1,"display":{"width":1334,"height":750,"touch":true,"size":4.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"13.6.0","manufacturer":"Apple","bits":null},"client":{"name":"Word","modus":null,"version":"2.40.803","manufacturer":"Microsoft","type":"application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 iphone6splus BingWeb/6.8.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BingWeb App",
+      "modus": null,
+      "version": "6.8.6.0",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.2.4",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13F69 iPhone5,2 BingWeb/5.8.1.1452.20151027"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 5,2",
+      "marketingName": "iPhone 5",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "BingWeb App",
+      "modus": null,
+      "version": "5.8.1.1452.20151027",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/2.40.803 (iOS/13.6; Phone; de-DE; AppStore; Apple/iPhone10,4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 10,4",
+      "marketingName": "iPhone 8",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.6.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "2.40.803",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  }
+]

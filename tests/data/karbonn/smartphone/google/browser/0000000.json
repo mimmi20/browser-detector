@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.5; en-us; Karbonn A6 Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"A6","marketingName":"A6","manufacturer":"Karbonn","brand":"Karbonn","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.5; en-us; Karbonn A18+ Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"A18+","marketingName":"A18+","manufacturer":"Karbonn","brand":"Karbonn","dualOrientation":true,"simCount":1,"display":{"width":854,"height":480,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.6; en-us; Karbonn A50 Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"A50","marketingName":"A50","manufacturer":"Karbonn","brand":"Karbonn","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.5; en-us; Karbonn A15+ Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"A1","marketingName":"A1","manufacturer":"Karbonn","brand":"Karbonn","dualOrientation":true,"simCount":1,"display":{"width":320,"height":240,"touch":true,"size":2.8},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.6; en-in; A1+ Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"A1+","marketingName":"A1+","manufacturer":"Karbonn","brand":"Karbonn","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Karbonn A6 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A6",
+      "marketingName": "A6",
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Karbonn A18+ Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A18+",
+      "marketingName": "A18+",
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Karbonn A50 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A50",
+      "marketingName": "A50",
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Karbonn A15+ Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A1",
+      "marketingName": "A1",
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-in; A1+ Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A1+",
+      "marketingName": "A1+",
+      "manufacturer": "Karbonn",
+      "brand": "Karbonn",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  }
+]

@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Mobile; LG-D300; rv:18.1) Gecko\/18.1 Firefox\/18.1"},"device":{"architecture":null,"deviceName":"D300","marketingName":"FireWeb","manufacturer":"LG","brand":"LG","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Firefox OS","marketingName":"Firefox OS","version":"1.1.0","manufacturer":"Mozilla","bits":null},"client":{"name":"Firefox","modus":null,"version":"18.1.0","manufacturer":"Mozilla","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"18.1.0","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (Android; Mobile: LGL86C; rv:20.0) Gecko\/20.0 Firefox\/20.0"},"device":{"architecture":null,"deviceName":"L86C","marketingName":"Optimus Showtime","manufacturer":"LG","brand":"LG","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":null,"manufacturer":"Google","bits":null},"client":{"name":"Firefox","modus":null,"version":"20.0.0","manufacturer":"Mozilla","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"20.0.0","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (Android; Mobile; LGL16C; rv:32.0) Gecko\/32.0 Firefox\/32.0"},"device":{"architecture":null,"deviceName":"L16C","marketingName":"Lucky","manufacturer":"LG","brand":"LG","dualOrientation":true,"simCount":1,"display":{"width":480,"height":320,"touch":true,"size":3.8},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":null,"manufacturer":"Google","bits":null},"client":{"name":"Firefox","modus":null,"version":"32.0.0","manufacturer":"Mozilla","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"32.0.0","manufacturer":"Mozilla"}},{"headers":{"user-agent":"Mozilla\/5.0 (Android 13; Mobile; LG-M255; rv:115.0) Gecko\/115.0 Firefox\/115.0"},"device":{"architecture":null,"deviceName":"M255","marketingName":"K20","manufacturer":"LG","brand":"LG","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":5.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Firefox","modus":null,"version":"115.0.0","manufacturer":"Mozilla","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":"115.0.0","manufacturer":"Mozilla"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; LG-D300; rv:18.1) Gecko/18.1 Firefox/18.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "D300",
+      "marketingName": "FireWeb",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Firefox OS",
+      "marketingName": "Firefox OS",
+      "version": "1.1.0",
+      "manufacturer": "Mozilla",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "18.1.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "18.1.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android; Mobile: LGL86C; rv:20.0) Gecko/20.0 Firefox/20.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "L86C",
+      "marketingName": "Optimus Showtime",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "20.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "20.0.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android; Mobile; LGL16C; rv:32.0) Gecko/32.0 Firefox/32.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "L16C",
+      "marketingName": "Lucky",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "32.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "32.0.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android 13; Mobile; LG-M255; rv:115.0) Gecko/115.0 Firefox/115.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M255",
+      "marketingName": "K20",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "115.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "115.0.0",
+      "manufacturer": "Mozilla"
+    }
+  }
+]

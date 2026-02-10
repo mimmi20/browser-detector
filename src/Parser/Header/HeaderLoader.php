@@ -112,6 +112,8 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 value: $value,
                 clientCode: new SecChUaClientCode(),
                 clientVersion: new SecChUaClientVersion(),
+                engineCode: new SecChUaEngineCode(),
+                engineVersion: new SecChUaEngineVersion(),
             ),
             Headers::HEADER_SEC_CH_UA_ARCH => new SecChUaArch(value: $value),
             Headers::HEADER_SEC_CH_FORM_FACTORS => new SecChUaFormFactors(value: $value),
@@ -140,6 +142,8 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 value: $value,
                 clientCode: new CrawledByClientCode(),
                 clientVersion: new CrawledByClientVersion(),
+                engineCode: new CrawledByEngineCode(),
+                engineVersion: new CrawledByEngineVersion(),
             ),
             Headers::HEADER_USERAGENT, Headers::HEADER_ORIGINAL_UA => new FullHeader(
                 value: $value,

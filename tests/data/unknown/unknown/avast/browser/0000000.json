@@ -1,1 +1,52 @@
-[{"headers":{"sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"11","sec-ch-ua":"\"AvastSecureBrowser\";v=\"6.6.0\", \" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.101\"","sec-ch-ua-full-version":"6.6.0","sec-ch-ua-arch":"[arm64-v8a, armeabi-v7a, armeabi]","sec-ch-ua-mobile":"?1"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":null,"display":{"width":null,"height":null,"touch":null,"size":null},"type":"unknown","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Avast Secure Browser","modus":null,"version":"6.6.0","manufacturer":"AVAST","type":"browser","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}}]
+[
+  {
+    "headers": {
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "11",
+      "sec-ch-ua": "\"AvastSecureBrowser\";v=\"6.6.0\", \" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.101\"",
+      "sec-ch-ua-full-version": "6.6.0",
+      "sec-ch-ua-arch": "[arm64-v8a, armeabi-v7a, armeabi]",
+      "sec-ch-ua-mobile": "?1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Avast Secure Browser",
+      "modus": null,
+      "version": "6.6.0",
+      "manufacturer": "AVAST",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
+      "manufacturer": "Google"
+    }
+  }
+]

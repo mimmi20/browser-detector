@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"UCWEB\/2.0 (Linux; U; Opera Mini\/7.1.32052\/30.3697; ru; ASUS_T00J) U2\/1.0.0 UCBrowser\/8.9.2.373 Mobile"},"device":{"architecture":null,"deviceName":"T00J","marketingName":"ZenFone 5 (A500CG)","manufacturer":"Asus","brand":"Asus","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":null,"manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"8.9.2.373","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U2","version":"1.0.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"UCWEB\/2.0(Linux; U; Opera Mini\/7.1.32052\/30.3697; en-US; PadFone 2 Build\/JRO03L) U2\/1.0.0 UCBrowser\/10.7.0.636 Mobile"},"device":{"architecture":null,"deviceName":"A68","marketingName":"PadFone 2","manufacturer":"Asus","brand":"Asus","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":4.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"UC Browser","modus":null,"version":"10.7.0.636","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U2","version":"1.0.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"UCWEB\/2.0 (Linux; U; Opera Mini\/7.1.32052\/30.3697; en-US; ASUS_Z00VD Build\/LMY47I) U2\/1.0.0 UCBrowser\/10.4.2.659 Mobile"},"device":{"architecture":null,"deviceName":"Z00VD","marketingName":"ZenFone Go (ZB500KL)","manufacturer":"Asus","brand":"Asus","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":null,"manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"10.4.2.659","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U2","version":"1.0.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 14; en-US; ASUS_AI2202_C Build\/UKQ1.230924.001) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/78.0.3904.108 UCBrowser\/13.6.2.1316 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"AI2202 C","marketingName":"ZenFone 9","manufacturer":"Asus","brand":"Asus","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":5.9},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"13.6.2.1316","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"Blink","version":"78.0.3904.108","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 15; en-US; ASUSAI2501 Build\/AQ3A.240829.003) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/100.0.4896.58 UCBrowser\/14.0.8.1340 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"AI2501","marketingName":"ZenFone 12 Ultra","manufacturer":"Asus","brand":"Asus","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.78},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"UC Browser","modus":null,"version":"14.0.8.1340","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"Blink","version":"100.0.4896.58","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; ASUS_T00J) U2/1.0.0 UCBrowser/8.9.2.373 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T00J",
+      "marketingName": "ZenFone 5 (A500CG)",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.2.373",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; PadFone 2 Build/JRO03L) U2/1.0.0 UCBrowser/10.7.0.636 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A68",
+      "marketingName": "PadFone 2",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.0.636",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; ASUS_Z00VD Build/LMY47I) U2/1.0.0 UCBrowser/10.4.2.659 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Z00VD",
+      "marketingName": "ZenFone Go (ZB500KL)",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.4.2.659",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; en-US; ASUS_AI2202_C Build/UKQ1.230924.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.6.2.1316 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AI2202 C",
+      "marketingName": "ZenFone 9",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 5.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.6.2.1316",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; en-US; ASUSAI2501 Build/AQ3A.240829.003) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/14.0.8.1340 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AI2501",
+      "marketingName": "ZenFone 12 Ultra",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "14.0.8.1340",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "Google"
+    }
+  }
+]

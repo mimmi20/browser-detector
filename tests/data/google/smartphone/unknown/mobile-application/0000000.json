@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"AndroidDownloadManager\/10 (Linux; U; Android 10; Pixel 3a Build\/QQ1A.200105.002) comdirect\/1.0 (appVersion:19.12.0;deviceName:google pixel xl;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"Pixel 3a","marketingName":"Pixel 3a","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":2,"display":{"width":2220,"height":1080,"touch":true,"size":5.6},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"10.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"AndroidDownloadManager\/10 (Linux; U; Android 10; Pixel 4 XL Build\/QQ1B.200105.004) comdirect\/1.0 (appVersion:20.1.0;deviceName:google pixel xl;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"Pixel 4 XL","marketingName":"Pixel 4 XL","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":2,"display":{"width":3040,"height":1440,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"10.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"AndroidDownloadManager\/12 (Linux; U; Android 12; Pixel 5 Build\/SQ1A.220105.002)"},"device":{"architecture":null,"deviceName":"Pixel 5","marketingName":"Pixel 5","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"12.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"AndroidDownloadManager\/12 (Linux; U; Android 12; Pixel 6 Pro Build\/SQ3A.220705.003)"},"device":{"architecture":null,"deviceName":"Pixel 6 Pro","marketingName":"Pixel 6 Pro","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":1,"display":{"width":3120,"height":1440,"touch":true,"size":6.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"12.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"AndroidDownloadManager\/13 (Linux; U; Android 13; Pixel 6a Build\/TQ1A.221205.011)"},"device":{"architecture":null,"deviceName":"Pixel 6a","marketingName":"Pixel 6a","manufacturer":"Google","brand":"Google","dualOrientation":true,"simCount":1,"display":{"width":2400,"height":1080,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Android Download Manager","modus":null,"version":"13.0.0","manufacturer":"unknown","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}}]
+[
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; Pixel 3a Build/QQ1A.200105.002) comdirect/1.0 (appVersion:19.12.0;deviceName:google pixel xl;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 3a",
+      "marketingName": "Pixel 3a",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2220,
+        "height": 1080,
+        "touch": true,
+        "size": 5.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; Pixel 4 XL Build/QQ1B.200105.004) comdirect/1.0 (appVersion:20.1.0;deviceName:google pixel xl;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 4 XL",
+      "marketingName": "Pixel 4 XL",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/12 (Linux; U; Android 12; Pixel 5 Build/SQ1A.220105.002)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 5",
+      "marketingName": "Pixel 5",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/12 (Linux; U; Android 12; Pixel 6 Pro Build/SQ3A.220705.003)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 6 Pro",
+      "marketingName": "Pixel 6 Pro",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidDownloadManager/13 (Linux; U; Android 13; Pixel 6a Build/TQ1A.221205.011)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 6a",
+      "marketingName": "Pixel 6a",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "modus": null,
+      "version": "13.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  }
+]

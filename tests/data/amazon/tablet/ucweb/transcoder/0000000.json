@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 4.0.3; en-US; KFTT Build\/IML74K) AppleWebKit\/534.30 (KHTML, like Gecko) Version\/4.0 UCBrowser\/10.2.0.535 U3\/0.8.0 Mobile Safari\/534.30"},"device":{"architecture":null,"deviceName":"KFTT","marketingName":"Kindle Fire HD 7 (2nd Gen)","manufacturer":"Amazon","brand":"Amazon","dualOrientation":true,"simCount":0,"display":{"width":1280,"height":800,"touch":true,"size":7},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Fire OS","marketingName":"Fire OS","version":"3.0.0","manufacturer":"Amazon","bits":null},"client":{"name":"UC Browser","modus":null,"version":"10.2.0.535","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U3","version":"0.8.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 4.4.3; xx; KFTHWI Build\/KTU84M) AppleWebKit\/534.30 (KHTML, like Gecko) Version\/4.0 UCBrowser\/10.4.1.576 U3\/0.8.0 Mobile Safari\/534.30"},"device":{"architecture":null,"deviceName":"KFTHWI","marketingName":"Kindle Fire HDX 7\" (2013, Wi-Fi)","manufacturer":"Amazon","brand":"Amazon","dualOrientation":true,"simCount":0,"display":{"width":1920,"height":1200,"touch":true,"size":7},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Fire OS","marketingName":"Fire OS","version":"4.5.1","manufacturer":"Amazon","bits":null},"client":{"name":"UC Browser","modus":null,"version":"10.4.1.576","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"U3","version":"0.8.0","manufacturer":"UCWeb"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 5.1.1; en-US; KFSUWI Build\/LVY48F) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/57.0.2987.108 UCBrowser\/12.11.3.1204 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"KFSUWI","marketingName":"Fire HD 10 (2017)","manufacturer":"Amazon","brand":"Amazon","dualOrientation":true,"simCount":0,"display":{"width":1920,"height":1200,"touch":true,"size":9.4},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Fire OS","marketingName":"Fire OS","version":"5.0.0","manufacturer":"Amazon","bits":null},"client":{"name":"UC Browser","modus":null,"version":"12.11.3.1204","manufacturer":"UCWeb","type":"transcoder","isbot":false,"bits":null},"engine":{"name":"Blink","version":"57.0.2987.108","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-US; KFTT Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFTT",
+      "marketingName": "Kindle Fire HD 7\" (2nd Gen)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "3.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.2.0.535",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; xx; KFTHWI Build/KTU84M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.4.1.576 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFTHWI",
+      "marketingName": "Kindle Fire HDX 7\" Wi-Fi (2013)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "4.5.1",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.4.1.576",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; KFSUWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.11.3.1204 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFSUWI",
+      "marketingName": "Fire HD 10 (2017)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 9.4
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "5.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.11.3.1204",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "Google"
+    }
+  }
+]

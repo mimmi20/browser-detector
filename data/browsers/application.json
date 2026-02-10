@@ -1457,5 +1457,29 @@
       ]
     },
     "engine": null
+  },
+  "global-protect": {
+    "name": "GlobalProtect",
+    "manufacturer": "palo-alto",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PAN GlobalProtect"
+      ]
+    },
+    "engine": null
+  },
+  "watch-free-plus": {
+    "name": "WatchFree+",
+    "manufacturer": "vizio",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WatchFree"
+      ]
+    },
+    "engine": null
   }
 }
