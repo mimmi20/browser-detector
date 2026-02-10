@@ -1,1 +1,93 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; GM1910 Build\/QKQ1.190716.003; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/79.0.3945.136 Mobile Safari\/537.36 tieba\/11.1.8.1"},"device":{"architecture":null,"deviceName":"GM1910","marketingName":"7 Pro","manufacturer":"BBK","brand":"OnePlus","dualOrientation":true,"simCount":2,"display":{"width":3120,"height":1440,"touch":true,"size":6.67},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Tieba","modus":null,"version":"11.1.8.1","manufacturer":"Baidu","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"79.0.3945.136","manufacturer":"Google"}},{"headers":{"x-requested-with":"com.baidu.browser.apps","user-agent":"Mozilla\/5.0 (Linux; Android 10; V2031A Build\/QP1A.190711.020; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/97.0.4692.98 Mobile Safari\/537.36 T7\/13.51 SP-engine\/2.53.0 matrixstyle\/0 flyflow\/6.23.0.31 lite baiduboxapp\/6.23.0.31 (Baidu; P1 10) NABar\/1.0"},"device":{"architecture":null,"deviceName":"V2031A","marketingName":"Y73s","manufacturer":"BBK","brand":"vivo","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.44},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Baidu Browser","modus":null,"version":null,"manufacturer":"Baidu","type":"browser","isbot":false,"bits":null},"engine":{"name":"T7","version":"13.51.0","manufacturer":"Baidu"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; GM1910 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36 tieba/11.1.8.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GM1910",
+      "marketingName": "7 Pro",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Tieba",
+      "modus": null,
+      "version": "11.1.8.1",
+      "manufacturer": "Baidu",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.136",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.baidu.browser.apps",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; V2031A Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 SP-engine/2.53.0 matrixstyle/0 flyflow/6.23.0.31 lite baiduboxapp/6.23.0.31 (Baidu; P1 10) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2031A",
+      "marketingName": "Y73s",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.44
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Baidu Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Baidu",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.51.0",
+      "manufacturer": "Baidu"
+    }
+  }
+]

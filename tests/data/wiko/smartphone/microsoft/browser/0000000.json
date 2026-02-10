@@ -1,1 +1,92 @@
-[{"headers":{"user-agent":"Mozilla\/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; PIEPlus 1.11)"},"device":{"architecture":null,"deviceName":"Plus","marketingName":"Plus","manufacturer":"Wiko","brand":"Wiko","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Windows CE","marketingName":"Windows CE","version":null,"manufacturer":"Microsoft","bits":null},"client":{"name":"Internet Explorer","modus":null,"version":"4.01.0","manufacturer":"Microsoft","type":"browser","isbot":false,"bits":null},"engine":{"name":"Trident","version":null,"manufacturer":"Microsoft"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; W-K510-EEA Build\/PPR1.181008.011; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/85.0.4183.127 Mobile Safari\/537.36 EdgW\/1.0 comdirect\/1.0 (appVersion:20.10.3;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"W-K510-EEA","marketingName":"Y60","manufacturer":"Wiko","brand":"Wiko","dualOrientation":true,"simCount":2,"display":{"width":960,"height":480,"touch":true,"size":5.45},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Edge WebView","modus":null,"version":"1.0.0","manufacturer":"Microsoft","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"85.0.4183.127","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; PIEPlus 1.11)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Plus",
+      "marketingName": "Plus",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-K510-EEA Build/PPR1.181008.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.127 Mobile Safari/537.36 EdgW/1.0 comdirect/1.0 (appVersion:20.10.3;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W-K510-EEA",
+      "marketingName": "Y60",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge WebView",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.127",
+      "manufacturer": "Google"
+    }
+  }
+]

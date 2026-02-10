@@ -1,1 +1,189 @@
-[{"headers":{"user-agent":"Mozilla\/4.0 (compatible; MSIE 8.0; S60; SymbOS; Opera Mobi\/SYB-1107071606; en) Opera 11.10"},"device":{"architecture":null,"deviceName":"S60","marketingName":"Cat S60","manufacturer":"Caterpillar","brand":"Caterpillar","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":4.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Symbian OS","marketingName":"Symbian OS","version":null,"manufacturer":"Symbian Foundation","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"11.10.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Presto","version":null,"manufacturer":"Opera"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 10; S62 Pro Build\/QKQ1.200519.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/88.0.4324.181 Mobile Safari\/537.36 OPR\/54.0.2254.56148"},"device":{"architecture":null,"deviceName":"S62 Pro","marketingName":"Cat S62 Pro","manufacturer":"Caterpillar","brand":"Caterpillar","dualOrientation":true,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":5.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"54.0.2254.56148","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"88.0.4324.181","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; S42) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/102.0.5005.134 Mobile Safari\/537.36 OPR\/70.3.3653.66287"},"device":{"architecture":null,"deviceName":"S42","marketingName":"Cat S42","manufacturer":"Caterpillar","brand":"Caterpillar","dualOrientation":true,"simCount":1,"display":{"width":1440,"height":720,"touch":true,"size":5.4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"70.3.3653.66287","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"102.0.5005.134","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"\"S52\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"10\"","x-requested-with":"XMLHttpRequest","sec-ch-ua":"\"OperaMobile\";v=\"72\", \";Not A Brand\";v=\"99\", \"Opera\";v=\"92\", \"Chromium\";v=\"106\"","sec-ch-ua-full-version":"\"106.0.5249.126\"","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; S52) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/106.0.5249.126 Mobile Safari\/537.36 OPR\/72.2.3767.68393"},"device":{"architecture":null,"deviceName":"S52","marketingName":"Cat S52","manufacturer":"Caterpillar","brand":"Caterpillar","dualOrientation":true,"simCount":1,"display":{"width":1440,"height":720,"touch":true,"size":5.65},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"72.2.3767.68393","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"106.0.5249.126","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; S60; SymbOS; Opera Mobi/SYB-1107071606; en) Opera 11.10"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S60",
+      "marketingName": "Cat S60",
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "11.10.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; S62 Pro Build/QKQ1.200519.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 OPR/54.0.2254.56148"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S62 Pro",
+      "marketingName": "Cat S62 Pro",
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "54.0.2254.56148",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; S42) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S42",
+      "marketingName": "Cat S42",
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "70.3.3653.66287",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.134",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"S52\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10\"",
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua": "\"OperaMobile\";v=\"72\", \";Not A Brand\";v=\"99\", \"Opera\";v=\"92\", \"Chromium\";v=\"106\"",
+      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; S52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36 OPR/72.2.3767.68393"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S52",
+      "marketingName": "Cat S52",
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.65
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "72.2.3767.68393",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

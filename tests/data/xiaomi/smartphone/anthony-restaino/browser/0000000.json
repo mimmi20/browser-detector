@@ -1,1 +1,94 @@
-[{"headers":{"x-requested-with":"acr.browser.lightning","user-agent":"Mozilla\/5.0 (Linux; Android 11; M2007J3SY Build\/RKQ1.200826.002; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/103.0.5060.71 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"M2007J3SY","marketingName":"Mi 10T 5G (Global)","manufacturer":"Xiaomi","brand":"Xiaomi","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Lightning Browser","modus":null,"version":null,"manufacturer":"anthony-restaino","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"103.0.5060.71","manufacturer":"Google"}},{"headers":{"x-requested-with":"acr.browser.barebones","user-agent":"Mozilla\/5.0 (Linux; Android 10; POCOPHONE F1 Build\/QKQ1.190828.002; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/104.0.5112.97 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Pocophone F1","marketingName":"Pocophone F1","manufacturer":"Xiaomi","brand":"Xiaomi","dualOrientation":true,"simCount":1,"display":{"width":2246,"height":1080,"touch":true,"size":6.18},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Lightning Browser","modus":null,"version":null,"manufacturer":"anthony-restaino","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"104.0.5112.97","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "x-requested-with": "acr.browser.lightning",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2007J3SY Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2007J3SY",
+      "marketingName": "Mi 10T 5G (Global)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Lightning Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "anthony-restaino",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.71",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "acr.browser.barebones",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; POCOPHONE F1 Build/QKQ1.190828.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pocophone F1",
+      "marketingName": "Pocophone F1",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2246,
+        "height": 1080,
+        "touch": true,
+        "size": 6.18
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Lightning Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "anthony-restaino",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "Google"
+    }
+  }
+]

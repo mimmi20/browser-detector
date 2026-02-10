@@ -1,1 +1,407 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Charlotte\/1.0b; charlotte@betaspider.com)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":"1.0.0-beta","manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Charlotte\/1.1; http:\/\/www.searchme.com\/support\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":"1.1.0","manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Charlotte\/1.0b; charlotte@beta.spider.com)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":"1.0.0-beta","manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Charlotte\/1.0t; http:\/\/www.searchme.com\/support\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":"1.0.0","manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Charlotte\/0.9t; +http:\/\/www.searchme.com\/support\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":"0.9.0","manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Charlotte\/1.0b; http:\/\/www.searchme.com\/support\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":"1.0.0-beta","manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Charlotte\/1.0b; http:\/\/www.betaspider.com\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":"1.0.0-beta","manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Charlotte\/0.05"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":"0.05.0","manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Charlotte"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Charlotte","modus":null,"version":null,"manufacturer":"searchme","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Charlotte/1.0b; charlotte@betaspider.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "1.0.0-beta",
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Charlotte/1.1; http://www.searchme.com/support/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Charlotte/1.0b; charlotte@beta.spider.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "1.0.0-beta",
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Charlotte/1.0t; http://www.searchme.com/support/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Charlotte/0.9t; +http://www.searchme.com/support/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "0.9.0",
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Charlotte/1.0b; http://www.searchme.com/support/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "1.0.0-beta",
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Charlotte/1.0b; http://www.betaspider.com/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "1.0.0-beta",
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Charlotte/0.05"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "0.05.0",
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Charlotte"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": null,
+      "manufacturer": "searchme",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  }
+]

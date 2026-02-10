@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; S61 Build\/PKQ1.190118.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/89.0.4389.105 Mobile Safari\/537.36 GoogleApp\/12.12.9.23.arm64"},"device":{"architecture":null,"deviceName":"S61","marketingName":"Cat S61","manufacturer":"Caterpillar","brand":"Caterpillar","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.2},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"12.12.9.23","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"89.0.4389.105","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; S42 Build\/RP1A.200720.011; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/100.0.4896.88 Mobile Safari\/537.36 GoogleApp\/13.14.9.23.arm"},"device":{"architecture":null,"deviceName":"S42","marketingName":"Cat S42","manufacturer":"Caterpillar","brand":"Caterpillar","dualOrientation":true,"simCount":1,"display":{"width":1440,"height":720,"touch":true,"size":5.4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"13.14.9.23","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"100.0.4896.88","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; S62 Pro Build\/RKQ1.210406.002; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/131.0.6778.136 Mobile Safari\/537.36 GoogleApp\/15.50.41.ve.arm64"},"device":{"architecture":null,"deviceName":"S62 Pro","marketingName":"Cat S62 Pro","manufacturer":"Caterpillar","brand":"Caterpillar","dualOrientation":true,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":5.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"15.50.41","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"131.0.6778.136","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; S61 Build/PKQ1.190118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.105 Mobile Safari/537.36 GoogleApp/12.12.9.23.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S61",
+      "marketingName": "Cat S61",
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "12.12.9.23",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; S42 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.88 Mobile Safari/537.36 GoogleApp/13.14.9.23.arm"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S42",
+      "marketingName": "Cat S42",
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "13.14.9.23",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.88",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; S62 Pro Build/RKQ1.210406.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.136 Mobile Safari/537.36 GoogleApp/15.50.41.ve.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S62 Pro",
+      "marketingName": "Cat S62 Pro",
+      "manufacturer": "Caterpillar",
+      "brand": "Caterpillar",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "15.50.41",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "131.0.6778.136",
+      "manufacturer": "Google"
+    }
+  }
+]

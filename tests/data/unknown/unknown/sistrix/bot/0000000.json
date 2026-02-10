@@ -1,1 +1,407 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (compatible; SISTRIX Crawler; http:\/\/crawler.sistrix.net\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Sistrix Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; 007ac9 Crawler; http:\/\/crawler.007ac9.net\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"007AC9 Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Sistrix"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Sistrix Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"SISTRIX"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Sistrix Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"sistrixtesting"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Sistrix Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; SISTRIX Optimizer)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Sistrix Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; SISTRIX Optimizer; Uptime; +https:\/\/www.sistrix.com\/faq\/uptime)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Sistrix Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Crawler) SISTRIX Toolbox comdirect\/1.0 (appVersion:20.12.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Sistrix Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Crawler) SISTRIX Toolbox"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Sistrix Crawler","modus":null,"version":null,"manufacturer":"Sistrix","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; SISTRIX Crawler; http://crawler.sistrix.net/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; 007ac9 Crawler; http://crawler.007ac9.net/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "007AC9 Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Sistrix"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SISTRIX"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "sistrixtesting"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; SISTRIX Optimizer)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; SISTRIX Optimizer; Uptime; +https://www.sistrix.com/faq/uptime)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Crawler) SISTRIX Toolbox comdirect/1.0 (appVersion:20.12.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Crawler) SISTRIX Toolbox"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sistrix",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  }
+]

@@ -1,1 +1,257 @@
-[{"headers":{"sec-ch-ua-model":"Model S 4G","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"11.0.0","sec-ch-ua":"\"Not_A Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"120.0.6099.210\", \"Google Chrome\";v=\"120.0.6099.210\"","sec-ch-ua-full-version":"120.0.6099.210","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/120.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Model S 4G","marketingName":"Model S 4G","manufacturer":"Sunmax","brand":"Sunmax","dualOrientation":true,"simCount":1,"display":{"width":null,"height":null,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"120.0.6099.210","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"120.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"Model S","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"11.0.0","sec-ch-ua":"\"Chromium\";v=\"124.0.6367.113\", \"Google Chrome\";v=\"124.0.6367.113\", \"Not-A.Brand\";v=\"99.0.0.0\"","sec-ch-ua-full-version":"124.0.6367.113","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/124.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Model S","marketingName":"Model S","manufacturer":"Sunmax","brand":"Sunmax","dualOrientation":true,"simCount":1,"display":{"width":null,"height":null,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"124.0.6367.113","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"124.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"Model D","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"12.0.0","sec-ch-ua":"\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"102.0.5005.125\", \"Google Chrome\";v=\"102.0.5005.125\"","sec-ch-ua-full-version":"102.0.5005.125","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 12; Model D) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/102.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Model D","marketingName":"Model D","manufacturer":"Sunmax","brand":"Sunmax","dualOrientation":true,"simCount":1,"display":{"width":null,"height":null,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"102.0.5005.125","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"102.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"Model 6","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"11.0.0","sec-ch-ua":"\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\"","sec-ch-ua-full-version":"94.0.4606.85","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 11; Model 6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/94.0.4606.85 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Model 6","marketingName":"Model 6","manufacturer":"Sunmax","brand":"Sunmax","dualOrientation":true,"simCount":1,"display":{"width":null,"height":null,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"94.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"94.0.4606.85","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"Model_6_pro_4G","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"11.0.0","sec-ch-ua":"\"Chromium\";v=\"124.0.6367.82\", \"Google Chrome\";v=\"124.0.6367.82\", \"Not-A.Brand\";v=\"99.0.0.0\"","sec-ch-ua-full-version":"124.0.6367.82","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/124.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Model 6 Pro Max 4G","marketingName":"Model 6 Pro Max 4G","manufacturer":"Sunmax","brand":"Sunmax","dualOrientation":true,"simCount":1,"display":{"width":null,"height":null,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"124.0.6367.82","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"124.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "sec-ch-ua-model": "Model S 4G",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "11.0.0",
+      "sec-ch-ua": "\"Not_A Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"120.0.6099.210\", \"Google Chrome\";v=\"120.0.6099.210\"",
+      "sec-ch-ua-full-version": "120.0.6099.210",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Model S 4G",
+      "marketingName": "Model S 4G",
+      "manufacturer": "Sunmax",
+      "brand": "Sunmax",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "120.0.6099.210",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.210",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "Model S",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "11.0.0",
+      "sec-ch-ua": "\"Chromium\";v=\"124.0.6367.113\", \"Google Chrome\";v=\"124.0.6367.113\", \"Not-A.Brand\";v=\"99.0.0.0\"",
+      "sec-ch-ua-full-version": "124.0.6367.113",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Model S",
+      "marketingName": "Model S",
+      "manufacturer": "Sunmax",
+      "brand": "Sunmax",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "124.0.6367.113",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.113",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "Model D",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "12.0.0",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"102.0.5005.125\", \"Google Chrome\";v=\"102.0.5005.125\"",
+      "sec-ch-ua-full-version": "102.0.5005.125",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Model D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Model D",
+      "marketingName": "Model D",
+      "manufacturer": "Sunmax",
+      "brand": "Sunmax",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.5005.125",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "Model 6",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "11.0.0",
+      "sec-ch-ua": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "94.0.4606.85",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Model 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Model 6",
+      "marketingName": "Model 6",
+      "manufacturer": "Sunmax",
+      "brand": "Sunmax",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "Model_6_pro_4G",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "11.0.0",
+      "sec-ch-ua": "\"Chromium\";v=\"124.0.6367.82\", \"Google Chrome\";v=\"124.0.6367.82\", \"Not-A.Brand\";v=\"99.0.0.0\"",
+      "sec-ch-ua-full-version": "124.0.6367.82",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Model 6 Pro Max 4G",
+      "marketingName": "Model 6 Pro Max 4G",
+      "manufacturer": "Sunmax",
+      "brand": "Sunmax",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "124.0.6367.82",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.82",
+      "manufacturer": "Google"
+    }
+  }
+]

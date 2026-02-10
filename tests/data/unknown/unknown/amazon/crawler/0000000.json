@@ -1,1 +1,95 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 AppleWebKit\/537.36 (KHTML, like Gecko; compatible; Amazonbot\/0.1; +https:\/\/developer.amazon.com\/support\/amazonbot) Chrome\/119.0.6045.214 Safari\/537.36"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Amazon Bot","modus":null,"version":"0.1.0","manufacturer":"Amazon","type":"crawler","isbot":true,"bits":null},"engine":{"name":"Blink","version":"119.0.6045.214","manufacturer":"Google"}},{"headers":{"sec-ch-ua-platform":"\"Linux\"","sec-ch-ua":"\"HeadlessChrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla\/5.0 AppleWebKit\/537.36 (KHTML, like Gecko; compatible; Amazonbot\/0.1; +https:\/\/developer.amazon.com\/support\/amazonbot) Chrome\/119.0.6045.214 Safari\/537.36"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Amazon Bot","modus":null,"version":"0.1.0","manufacturer":"Amazon","type":"crawler","isbot":true,"bits":null},"engine":{"name":"Blink","version":"119.0.6045.214","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/119.0.6045.214 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amazon Bot",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "Amazon",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.214",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/119.0.6045.214 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Amazon Bot",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "Amazon",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

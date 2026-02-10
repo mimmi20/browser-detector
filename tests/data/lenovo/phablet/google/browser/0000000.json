@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; motorola edge plus) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/84.0.4147.125 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Edge Plus","marketingName":"Edge Plus","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.7},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"84.0.4147.125","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"84.0.4147.125","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; motorola edge) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/87.0.4280.101 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Edge","marketingName":"Edge","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.7},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"87.0.4280.101","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"87.0.4280.101","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; motorola edge Build\/RPDS31.Q4U-39-26-14-10-1; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/131.0.6778.135 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Edge","marketingName":"Edge","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.7},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"131.0.6778.135","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"131.0.6778.135","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; motorola edge plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Edge Plus",
+      "marketingName": "Edge Plus",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "84.0.4147.125",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "84.0.4147.125",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; motorola edge) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Edge",
+      "marketingName": "Edge",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.101",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.101",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; motorola edge Build/RPDS31.Q4U-39-26-14-10-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.135 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Edge",
+      "marketingName": "Edge",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "131.0.6778.135",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "131.0.6778.135",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; 4G MAXX) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/94.0.4606.85 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"4G Maxx","marketingName":"4G Maxx","manufacturer":"Calme","brand":"Calme","dualOrientation":false,"simCount":2,"display":{"width":320,"height":240,"touch":true,"size":2.8},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"94.0.4606.85","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"94.0.4606.85","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; 4G Hot Build\/RP1A.200720.011; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/83.0.4103.120 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"4G Hot","marketingName":"4G Hot","manufacturer":"Calme","brand":"Calme","dualOrientation":false,"simCount":2,"display":{"width":320,"height":240,"touch":true,"size":2.4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"83.0.4103.120","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"83.0.4103.120","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; 4G-Hero) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/94.0.4606.85 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"4G Hero","marketingName":"4G Hero","manufacturer":"Calme","brand":"Calme","dualOrientation":false,"simCount":2,"display":{"width":320,"height":240,"touch":true,"size":2.4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"94.0.4606.85","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"94.0.4606.85","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; 4G SMART Build\/O11019; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/58.0.3029.125 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"4G Smart","marketingName":"4G Smart","manufacturer":"Calme","brand":"Calme","dualOrientation":false,"simCount":2,"display":{"width":null,"height":null,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"58.0.3029.125","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"58.0.3029.125","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 4G MAXX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "4G Maxx",
+      "marketingName": "4G Maxx",
+      "manufacturer": "Calme",
+      "brand": "Calme",
+      "dualOrientation": false,
+      "simCount": 2,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.85",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 4G Hot Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "4G Hot",
+      "marketingName": "4G Hot",
+      "manufacturer": "Calme",
+      "brand": "Calme",
+      "dualOrientation": false,
+      "simCount": 2,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "83.0.4103.120",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.120",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 4G-Hero) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "4G Hero",
+      "marketingName": "4G Hero",
+      "manufacturer": "Calme",
+      "brand": "Calme",
+      "dualOrientation": false,
+      "simCount": 2,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.85",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; 4G SMART Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "4G Smart",
+      "marketingName": "4G Smart",
+      "manufacturer": "Calme",
+      "brand": "Calme",
+      "dualOrientation": false,
+      "simCount": 2,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "58.0.3029.125",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.125",
+      "manufacturer": "Google"
+    }
+  }
+]

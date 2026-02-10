@@ -1,1 +1,362 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Infohelfer\/1.2.0; +http:\/\/www.infohelfer.de\/crawler.php)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Infohelfer Webcrawler","modus":null,"version":"1.2.0","manufacturer":"itam","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Infohelfer\/1.4.3; +http:\/\/www.infohelfer.de\/crawler.php)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Infohelfer Webcrawler","modus":null,"version":"1.4.3","manufacturer":"itam","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Infohelfer\/1.3.3; +http:\/\/www.infohelfer.de\/crawler.php)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Infohelfer Webcrawler","modus":null,"version":"1.3.3","manufacturer":"itam","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; Infohelfer\/1.3.0; +http:\/\/www.infohelfer.de\/crawler.php)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Infohelfer Webcrawler","modus":null,"version":"1.3.0","manufacturer":"itam","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"infohelfer\/1.1.0 (http:\/\/www.infohelfer.de\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Infohelfer Webcrawler","modus":null,"version":"1.1.0","manufacturer":"itam","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"infohelfer\/0.9 (http:\/\/www.infohelfer.de\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Infohelfer Webcrawler","modus":null,"version":"0.9.0","manufacturer":"itam","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"infohelfer\/0.9b (http:\/\/www.infohelfer.de\/)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Infohelfer Webcrawler","modus":null,"version":"0.9.0-beta","manufacturer":"itam","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"gMozilla\/5.0 (compatible; Infohelfer\/1.4.3; +http:\/\/www.infohelfer.de\/crawler.php)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Infohelfer Webcrawler","modus":null,"version":"1.4.3","manufacturer":"itam","type":"bot","isbot":true,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Infohelfer/1.2.0; +http://www.infohelfer.de/crawler.php)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Infohelfer Webcrawler",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "itam",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Infohelfer/1.4.3; +http://www.infohelfer.de/crawler.php)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Infohelfer Webcrawler",
+      "modus": null,
+      "version": "1.4.3",
+      "manufacturer": "itam",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Infohelfer/1.3.3; +http://www.infohelfer.de/crawler.php)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Infohelfer Webcrawler",
+      "modus": null,
+      "version": "1.3.3",
+      "manufacturer": "itam",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Infohelfer/1.3.0; +http://www.infohelfer.de/crawler.php)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Infohelfer Webcrawler",
+      "modus": null,
+      "version": "1.3.0",
+      "manufacturer": "itam",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "infohelfer/1.1.0 (http://www.infohelfer.de/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Infohelfer Webcrawler",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "itam",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "infohelfer/0.9 (http://www.infohelfer.de/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Infohelfer Webcrawler",
+      "modus": null,
+      "version": "0.9.0",
+      "manufacturer": "itam",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "infohelfer/0.9b (http://www.infohelfer.de/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Infohelfer Webcrawler",
+      "modus": null,
+      "version": "0.9.0-beta",
+      "manufacturer": "itam",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "gMozilla/5.0 (compatible; Infohelfer/1.4.3; +http://www.infohelfer.de/crawler.php)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Infohelfer Webcrawler",
+      "modus": null,
+      "version": "1.4.3",
+      "manufacturer": "itam",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  }
+]

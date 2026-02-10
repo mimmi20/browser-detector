@@ -1,1 +1,92 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; ELE-L29 Build\/HUAWEIELE-L29; es-de) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/69.0.3497.100 Mobile Safari\/537.36 Puffin\/8.2.2.41268AP comdirect\/1.0 (appVersion:20.2.1;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"ELE-L29","marketingName":"P30","manufacturer":"Huawei","brand":"Huawei","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Puffin","modus":null,"version":"8.2.2.41268","manufacturer":"CloudMosa","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"69.0.3497.100","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; VKY-L09 Build\/HUAWEIVKY-L09; de-de) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/69.0.3497.100 Mobile Safari\/537.36 Puffin\/8.2.3.41332AP comdirect\/1.0 (appVersion:20.3.0;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"VKY-L09","marketingName":"P10 Plus","manufacturer":"Huawei","brand":"Huawei","dualOrientation":true,"simCount":1,"display":{"width":2560,"height":1440,"touch":true,"size":5.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Puffin","modus":null,"version":"8.2.3.41332","manufacturer":"CloudMosa","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"69.0.3497.100","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ELE-L29 Build/HUAWEIELE-L29; es-de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36 Puffin/8.2.2.41268AP comdirect/1.0 (appVersion:20.2.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ELE-L29",
+      "marketingName": "P30",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Puffin",
+      "modus": null,
+      "version": "8.2.2.41268",
+      "manufacturer": "CloudMosa",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.100",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; VKY-L09 Build/HUAWEIVKY-L09; de-de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36 Puffin/8.2.3.41332AP comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VKY-L09",
+      "marketingName": "P10 Plus",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Puffin",
+      "modus": null,
+      "version": "8.2.3.41332",
+      "manufacturer": "CloudMosa",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.100",
+      "manufacturer": "Google"
+    }
+  }
+]

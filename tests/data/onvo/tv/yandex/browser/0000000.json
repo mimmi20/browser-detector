@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; ONVO_50OV6000U Build\/TP1A.220905.004.A2; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/101.0.4951.61 YaBrowser\/22.8.0.15 (lite) Safari\/537.36 TV"},"device":{"architecture":null,"deviceName":"50OV6000U","marketingName":"50OV6000U","manufacturer":"Onvo","brand":"Onvo","dualOrientation":false,"simCount":0,"display":{"width":3840,"height":2160,"touch":false,"size":50},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser Lite","modus":null,"version":"22.8.0.15","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"101.0.4951.61","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; ONVO_43OV6000F Build\/TP1A.220905.004.A2; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/101.0.4951.61 YaBrowser\/24.1.2.250 (lite) Safari\/537.36 TV"},"device":{"architecture":null,"deviceName":"43OV6000F","marketingName":"43OV6000F","manufacturer":"Onvo","brand":"Onvo","dualOrientation":false,"simCount":0,"display":{"width":1920,"height":1080,"touch":false,"size":50},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser Lite","modus":null,"version":"24.1.2.250","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"101.0.4951.61","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; ONVO_24OV6000H Build\/TP1A.220905.004.A2; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/101.0.4951.61 YaBrowser\/24.11.0.370 (lite) Safari\/537.36 TV"},"device":{"architecture":null,"deviceName":"24OV6000H","marketingName":"24OV6000H","manufacturer":"Onvo","brand":"Onvo","dualOrientation":false,"simCount":0,"display":{"width":1366,"height":768,"touch":false,"size":24},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser Lite","modus":null,"version":"24.11.0.370","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"101.0.4951.61","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; ONVO_65OV6000U Build\/TP1A.220905.004.A2; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/101.0.4951.61 YaBrowser\/24.12.0.453 (lite) Safari\/537.36 TV"},"device":{"architecture":null,"deviceName":"65OV6000U","marketingName":"65OV6000U","manufacturer":"Onvo","brand":"Onvo","dualOrientation":false,"simCount":0,"display":{"width":3840,"height":2160,"touch":false,"size":65},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser Lite","modus":null,"version":"24.12.0.453","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"101.0.4951.61","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; 43OV4000AF Build\/TP1A.220905.004.A2; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/101.0.4951.61 YaBrowser\/25.6.1.561 (lite) Safari\/537.36 TV"},"device":{"architecture":null,"deviceName":"43OV4000AF","marketingName":"43OV4000AF","manufacturer":"Onvo","brand":"Onvo","dualOrientation":false,"simCount":0,"display":{"width":1920,"height":1080,"touch":false,"size":43},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser Lite","modus":null,"version":"25.6.1.561","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"101.0.4951.61","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; ONVO_50OV6000U Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.15 (lite) Safari/537.36 TV"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "50OV6000U",
+      "marketingName": "50OV6000U",
+      "manufacturer": "Onvo",
+      "brand": "Onvo",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 50
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "22.8.0.15",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; ONVO_43OV6000F Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.250 (lite) Safari/537.36 TV"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "43OV6000F",
+      "marketingName": "43OV6000F",
+      "manufacturer": "Onvo",
+      "brand": "Onvo",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 50
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "24.1.2.250",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; ONVO_24OV6000H Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.11.0.370 (lite) Safari/537.36 TV"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "24OV6000H",
+      "marketingName": "24OV6000H",
+      "manufacturer": "Onvo",
+      "brand": "Onvo",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 24
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "24.11.0.370",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; ONVO_65OV6000U Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "65OV6000U",
+      "marketingName": "65OV6000U",
+      "manufacturer": "Onvo",
+      "brand": "Onvo",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "24.12.0.453",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 43OV4000AF Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/25.6.1.561 (lite) Safari/537.36 TV"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "43OV4000AF",
+      "marketingName": "43OV4000AF",
+      "manufacturer": "Onvo",
+      "brand": "Onvo",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 43
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "25.6.1.561",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "Google"
+    }
+  }
+]

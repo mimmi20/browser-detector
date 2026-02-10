@@ -1,1 +1,183 @@
-[{"headers":{"x-requested-with":"com.google.android.apps.searchlite","user-agent":"Mozilla\/5.0 (Linux; Android 9; GS110 Build\/PPR1.180610.011) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/86.0.4240.75 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"GS110","marketingName":"ME Pure","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":1,"display":{"width":1200,"height":600,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Go","modus":null,"version":null,"manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"86.0.4240.75","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; GX290 Build\/QP1A.190711.020; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/113.0.5672.131 Mobile Safari\/537.36 GoogleApp\/14.20.11.28.arm64"},"device":{"architecture":null,"deviceName":"GX290","marketingName":"GX290","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":1,"display":{"width":1560,"height":720,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"14.20.11.28","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"113.0.5672.131","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; E940-2795-00 Build\/RP1A.200720.011; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/121.0.6167.143 Mobile Safari\/537.36 GoogleApp\/15.4.35.28.arm64"},"device":{"architecture":null,"deviceName":"E940-2795-00","marketingName":"GS4","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"15.4.35.28","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"121.0.6167.143","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; E940-2797-00 Build\/SP1A.210812.016; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/127.0.6533.103 Mobile Safari\/537.36 GoogleApp\/15.32.37.28.arm64"},"device":{"architecture":null,"deviceName":"E940-2797-00","marketingName":"GX4","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":2,"display":{"width":1560,"height":720,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"15.32.37.28","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"127.0.6533.103","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; GS110 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GS110",
+      "marketingName": "ME Pure",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1200,
+        "height": 600,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.75",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; GX290 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 Mobile Safari/537.36 GoogleApp/14.20.11.28.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GX290",
+      "marketingName": "GX290",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "14.20.11.28",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.131",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; E940-2795-00 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.143 Mobile Safari/537.36 GoogleApp/15.4.35.28.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E940-2795-00",
+      "marketingName": "GS4",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "15.4.35.28",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "121.0.6167.143",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; E940-2797-00 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36 GoogleApp/15.32.37.28.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E940-2797-00",
+      "marketingName": "GX4",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "15.32.37.28",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "127.0.6533.103",
+      "manufacturer": "Google"
+    }
+  }
+]

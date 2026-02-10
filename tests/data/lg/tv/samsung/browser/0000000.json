@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0     (Linux; U) AppleWebKit\/537.36 (KHTML, like Gecko)     Version\/4.0 Mobile Safari\/537.36 SmartTV\/7.0 (NetCast) Android"},"device":{"architecture":null,"deviceName":"NetCast","marketingName":"NetCast","manufacturer":"LG","brand":"LG","dualOrientation":false,"simCount":0,"display":{"width":3840,"height":2160,"touch":false,"size":65},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Android","marketingName":"Android","version":null,"manufacturer":"Google","bits":null},"client":{"name":"SmartTV WebBrowser","modus":null,"version":"7.0.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"537.36.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0     (Linux; U; webOS; LGE ) AppleWebKit\/537.36 (KHTML, like Gecko)     Version\/4.0 Mobile Safari\/537.36 SmartTV\/7.0 (NetCast) Android"},"device":{"architecture":null,"deviceName":"NetCast","marketingName":"NetCast","manufacturer":"LG","brand":"LG","dualOrientation":false,"simCount":0,"display":{"width":3840,"height":2160,"touch":false,"size":65},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"webOS","marketingName":"webOS","version":null,"manufacturer":"HP","bits":null},"client":{"name":"SmartTV WebBrowser","modus":null,"version":"7.0.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"537.36.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; NetCast; U) AppleWebKit\/537.31 (KHTML, like Gecko) Safari\/537.31 SmartTV\/6.0"},"device":{"architecture":null,"deviceName":"NetCast","marketingName":"NetCast","manufacturer":"LG","brand":"LG","dualOrientation":false,"simCount":0,"display":{"width":3840,"height":2160,"touch":false,"size":65},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"SmartTV WebBrowser","modus":null,"version":"6.0.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"537.31.0","manufacturer":"Apple"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0     (Linux; U) AppleWebKit/537.36 (KHTML, like Gecko)     Version/4.0 Mobile Safari/537.36 SmartTV/7.0 (NetCast) Android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NetCast",
+      "marketingName": "NetCast",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "SmartTV WebBrowser",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0     (Linux; U; webOS; LGE ) AppleWebKit/537.36 (KHTML, like Gecko)     Version/4.0 Mobile Safari/537.36 SmartTV/7.0 (NetCast) Android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NetCast",
+      "marketingName": "NetCast",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "webOS",
+      "marketingName": "webOS",
+      "version": null,
+      "manufacturer": "HP",
+      "bits": null
+    },
+    "client": {
+      "name": "SmartTV WebBrowser",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.31 (KHTML, like Gecko) Safari/537.31 SmartTV/6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NetCast",
+      "marketingName": "NetCast",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "SmartTV WebBrowser",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "Apple"
+    }
+  }
+]

@@ -1,1 +1,320 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; Lenovo TB-X505F Build\/QKQ1.191224.003; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/88.0.4324.152 Safari\/537.36 GSA\/12.4.9.23.arm64"},"device":{"architecture":null,"deviceName":"TB-X505F","marketingName":"Tab M10 HD Wi-Fi","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1280,"height":800,"touch":true,"size":10.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"12.4.9.23","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"88.0.4324.152","manufacturer":"Google"}},{"headers":{"x-requested-with":"com.google.android.apps.searchlite","user-agent":"Mozilla\/5.0 (Linux; Android 11; Lenovo TB-7306F Build\/RP1A.200720.011) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/111.0.5563.116 Safari\/537.36"},"device":{"architecture":null,"deviceName":"TB-7306F","marketingName":"Tab M7 Wi-Fi (3rd Gen)","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1024,"height":600,"touch":true,"size":7},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Go","modus":null,"version":null,"manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"111.0.5563.116","manufacturer":"Google"}},{"headers":{"x-requested-with":"com.google.android.apps.searchlite","user-agent":"Mozilla\/5.0 (Linux; Android 9; Lenovo TB-7305F Build\/PPR1.180610.011) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/111.0.5563.57 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"TB-7305F","marketingName":"Tab M7","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1024,"height":600,"touch":true,"size":7},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Go","modus":null,"version":null,"manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"111.0.5563.57","manufacturer":"Google"}},{"headers":{"x-requested-with":"com.google.android.apps.searchlite","user-agent":"Mozilla\/5.0 (Linux; Android 10; Lenovo TB-X505F Build\/QKQ1.191224.003) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/114.0.5735.131 Safari\/537.36"},"device":{"architecture":null,"deviceName":"TB-X505F","marketingName":"Tab M10 HD Wi-Fi","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1280,"height":800,"touch":true,"size":10.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Go","modus":null,"version":null,"manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"114.0.5735.131","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; TB328FU Build\/RP1A.201005.001; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/118.0.0.0 Safari\/537.36 GoogleApp\/14.39.39.28.arm64"},"device":{"architecture":null,"deviceName":"TB328FU","marketingName":"Tab M10 Wi-Fi (3rd Gen)","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1920,"height":1200,"touch":true,"size":10.1},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"14.39.39.28","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"118.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 14; TB350FU Build\/UP1A.231005.007; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/138.0.7204.63 Safari\/537.36 GoogleApp\/16.26.67.ve.arm64"},"device":{"architecture":null,"deviceName":"TB350FU","marketingName":"Tab P11 Wi-Fi (2nd Gen)","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":2000,"height":1200,"touch":true,"size":11.5},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"16.26.67","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"138.0.7204.63","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 15; TB330FU Build\/AP3A.240905.015.A2; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/143.0.7499.146 Safari\/537.36 GoogleApp\/16.49.61.ve.arm64"},"device":{"architecture":null,"deviceName":"TB330FU","marketingName":"Tab M11 Wi-Fi","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":0,"display":{"width":1920,"height":1200,"touch":true,"size":11},"type":"tablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"Google Search App","modus":null,"version":"16.49.61","manufacturer":"Google","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"143.0.7499.146","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-X505F Build/QKQ1.191224.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Safari/537.36 GSA/12.4.9.23.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-X505F",
+      "marketingName": "Tab M10 HD Wi-Fi",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "12.4.9.23",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.152",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Lenovo TB-7306F Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.116 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-7306F",
+      "marketingName": "Tab M7 Wi-Fi (3rd Gen)",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Lenovo TB-7305F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.57 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-7305F",
+      "marketingName": "Tab M7",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.57",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-X505F Build/QKQ1.191224.003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.131 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-X505F",
+      "marketingName": "Tab M10 HD Wi-Fi",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.131",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; TB328FU Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Safari/537.36 GoogleApp/14.39.39.28.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB328FU",
+      "marketingName": "Tab M10 Wi-Fi (3rd Gen)",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "14.39.39.28",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; TB350FU Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.63 Safari/537.36 GoogleApp/16.26.67.ve.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB350FU",
+      "marketingName": "Tab P11 Wi-Fi (2nd Gen)",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 11.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "16.26.67",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.63",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; TB330FU Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Safari/537.36 GoogleApp/16.49.61.ve.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB330FU",
+      "marketingName": "Tab M11 Wi-Fi",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "16.49.61",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.146",
+      "manufacturer": "Google"
+    }
+  }
+]

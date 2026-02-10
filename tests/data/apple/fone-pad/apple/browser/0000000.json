@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"ArcGISRuntime-iOS\/10.3.0 (iOS 10.2.1; iPad5,4) arcgis-collector\/19.0.2 (00000000-0000-0000-0000-000000000000)"},"device":{"architecture":null,"deviceName":"iPad 5,4","marketingName":"iPad Air 2 4G","manufacturer":"Apple","brand":"Apple","dualOrientation":true,"simCount":1,"display":{"width":2048,"height":1536,"touch":true,"size":9.7},"type":"fone-pad","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"10.2.1","manufacturer":"Apple","bits":null},"client":{"name":"Mobile Safari UIWebView","modus":null,"version":null,"manufacturer":"Apple","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"ArcGISRuntime-iOS\/100.4 (iOS 11.4; iPad7,6) arcgis-aurora\/18.1.0 (00000000-0000-0000-0000-000000000000)"},"device":{"architecture":null,"deviceName":"iPad7,6","marketingName":"iPad 9.7\" (6th Gen) 4G","manufacturer":"Apple","brand":"Apple","dualOrientation":true,"simCount":1,"display":{"width":2048,"height":1536,"touch":true,"size":9.7},"type":"fone-pad","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":"11.4.0","manufacturer":"Apple","bits":null},"client":{"name":"Mobile Safari UIWebView","modus":null,"version":null,"manufacturer":"Apple","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"Workforce-iOS-17.0.1:ArcGISiOS-100.0.0.1529+dev\/13.2\/iPad6,12"},"device":{"architecture":null,"deviceName":"iPad 6,12","marketingName":"iPad 9.7\" (5th Gen) 4G","manufacturer":"Apple","brand":"Apple","dualOrientation":true,"simCount":1,"display":{"width":2732,"height":2048,"touch":true,"size":9.7},"type":"fone-pad","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":null,"manufacturer":"Apple","bits":null},"client":{"name":"Mobile Safari UIWebView","modus":null,"version":null,"manufacturer":"Apple","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"ArcGISiOS-10.2.4\/12.1\/iPad5,2"},"device":{"architecture":null,"deviceName":"iPad 5,2","marketingName":"iPad Mini 4 4G","manufacturer":"Apple","brand":"Apple","dualOrientation":true,"simCount":1,"display":{"width":2048,"height":1536,"touch":true,"size":7.9},"type":"fone-pad","ismobile":true,"istv":false,"bits":null},"os":{"name":"iOS","marketingName":"iOS","version":null,"manufacturer":"Apple","bits":null},"client":{"name":"Mobile Safari UIWebView","modus":null,"version":null,"manufacturer":"Apple","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"Linux UPnP\/1.0 Sonos\/53.3-71200 (ICRU_iPad5,4)"},"device":{"architecture":null,"deviceName":"iPad 5,4","marketingName":"iPad Air 2 4G","manufacturer":"Apple","brand":"Apple","dualOrientation":true,"simCount":1,"display":{"width":2048,"height":1536,"touch":true,"size":9.7},"type":"fone-pad","ismobile":true,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Mobile Safari UIWebView","modus":null,"version":null,"manufacturer":"Apple","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}}]
+[
+  {
+    "headers": {
+      "user-agent": "ArcGISRuntime-iOS/10.3.0 (iOS 10.2.1; iPad5,4) arcgis-collector/19.0.2 (00000000-0000-0000-0000-000000000000)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 5,4",
+      "marketingName": "iPad Air 2 4G",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ArcGISRuntime-iOS/100.4 (iOS 11.4; iPad7,6) arcgis-aurora/18.1.0 (00000000-0000-0000-0000-000000000000)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad7,6",
+      "marketingName": "iPad 9.7\" (6th Gen) 4G",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.4.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Workforce-iOS-17.0.1:ArcGISiOS-100.0.0.1529+dev/13.2/iPad6,12"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 6,12",
+      "marketingName": "iPad 9.7\" (5th Gen) 4G",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ArcGISiOS-10.2.4/12.1/iPad5,2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 5,2",
+      "marketingName": "iPad Mini 4 4G",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Linux UPnP/1.0 Sonos/53.3-71200 (ICRU_iPad5,4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 5,4",
+      "marketingName": "iPad Air 2 4G",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  }
+]

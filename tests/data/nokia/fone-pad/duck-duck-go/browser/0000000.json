@@ -1,1 +1,56 @@
-[{"headers":{"sec-ch-ua-model":"\"Nokia T20\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"13.0.0\"","x-requested-with":"com.duckduckgo.mobile.android","sec-ch-ua":"\"DuckDuckGo\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"","sec-ch-ua-full-version":"\"123.0.6312.120\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/123.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"T20","marketingName":"T20","manufacturer":"Nokia","brand":"Nokia","dualOrientation":true,"simCount":1,"display":{"width":2000,"height":1200,"touch":true,"size":10.4},"type":"fone-pad","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":"123.0.0","manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"123.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"Nokia T20\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+      "sec-ch-ua-full-version": "\"123.0.6312.120\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T20",
+      "marketingName": "T20",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 10.4
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "123.0.0",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

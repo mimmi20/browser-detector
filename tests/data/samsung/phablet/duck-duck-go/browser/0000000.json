@@ -1,1 +1,258 @@
-[{"headers":{"x-requested-with":"com.duckduckgo.mobile.android","user-agent":"Mozilla\/5.0 (Linux; Android 12; SM-N986B Build\/SP1A.210812.016; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/102.0.5005.78 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-N986B","marketingName":"Galaxy Note 20 Ultra 5G (International)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":3088,"height":1440,"touch":true,"size":6.9},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":null,"manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"102.0.5005.78","manufacturer":"Google"}},{"headers":{"x-requested-with":"com.duckduckgo.mobile.android","user-agent":"Mozilla\/5.0 (Linux; Android 13; SM-F926B Build\/TP1A.220624.014; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/118.0.0.0 Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-F926B","marketingName":"Galaxy Z Fold 3 5G (International)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":2208,"height":1768,"touch":true,"size":7.6},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":null,"manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"118.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"SCG22","sec-ch-ua-platform":"Android","sec-ch-ua-platform-version":"14.0.0","x-requested-with":"com.duckduckgo.mobile.android","sec-ch-ua":"\"Not A(Brand\";v=\"99.0.0.0\", \"DuckDuckGo\";v=\"121.0.6167.143\", \"Chromium\";v=\"121.0.6167.143\"","sec-ch-ua-full-version":"121.0.6167.143","sec-ch-ua-mobile":"?1","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/121.0.6167.143 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SCG22","marketingName":"Galaxy Z Fold 5","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":2,"display":{"width":2176,"height":1812,"touch":true,"size":7.6},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":"121.0.6167.143","manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"121.0.6167.143","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"\"SM-F956B\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"16.0.0\"","x-requested-with":"com.duckduckgo.mobile.android","sec-ch-ua":"\"DuckDuckGo\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"","sec-ch-ua-full-version":"\"141.0.7390.122\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-form-factors":"\"Mobile\"","sec-ch-ua-mobile":"?1","sec-ch-ua-wow64":"?0","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/141.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-F956B","marketingName":"Galaxy Z Fold 6","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":2,"display":{"width":2160,"height":1856,"touch":true,"size":7.6},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"16.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":"141.0.0","manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"141.0.0.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-model":"\"SM-F711B\"","sec-ch-ua-platform":"\"Android\"","sec-ch-ua-platform-version":"\"15.0.0\"","x-requested-with":"com.duckduckgo.mobile.android","sec-ch-ua":"\"DuckDuckGo\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"","sec-ch-ua-full-version":"\"141.0.7390.97\"","sec-ch-ua-bitness":"\"\"","sec-ch-ua-arch":"\"\"","sec-ch-ua-form-factors":"\"Mobile\"","sec-ch-ua-mobile":"?1","sec-ch-ua-wow64":"?0","user-agent":"Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/141.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"SM-F711B","marketingName":"Galaxy Z Flip 3 5G (International)","manufacturer":"Samsung","brand":"Samsung","dualOrientation":true,"simCount":1,"display":{"width":2640,"height":1080,"touch":true,"size":6.7},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"DuckDuckGo Privacy Browser","modus":null,"version":"141.0.0","manufacturer":"Duck Duck Go","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"141.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-N986B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.78 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N986B",
+      "marketingName": "Galaxy Note 20 Ultra 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3088,
+        "height": 1440,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.78",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F926B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F926B",
+      "marketingName": "Galaxy Z Fold 3 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2208,
+        "height": 1768,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "SCG22",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "14.0.0",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"Not A(Brand\";v=\"99.0.0.0\", \"DuckDuckGo\";v=\"121.0.6167.143\", \"Chromium\";v=\"121.0.6167.143\"",
+      "sec-ch-ua-full-version": "121.0.6167.143",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.143 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SCG22",
+      "marketingName": "Galaxy Z Fold 5",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2176,
+        "height": 1812,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "121.0.6167.143",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "121.0.6167.143",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-F956B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+      "sec-ch-ua-full-version": "\"141.0.7390.122\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F956B",
+      "marketingName": "Galaxy Z Fold 6",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1856,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "141.0.0",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-F711B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+      "sec-ch-ua-full-version": "\"141.0.7390.97\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F711B",
+      "marketingName": "Galaxy Z Flip 3 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2640,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "141.0.0",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

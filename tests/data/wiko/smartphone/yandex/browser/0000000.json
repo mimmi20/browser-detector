@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 9; HY-002 Plus) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/96.0.4664.174 YaBrowser\/22.1.5.99.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Plus","marketingName":"Plus","manufacturer":"Wiko","brand":"Wiko","dualOrientation":true,"simCount":1,"display":{"width":1280,"height":720,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"22.1.5.99.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"96.0.4664.174","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm; Android 11; W-K610-TVM) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/122.0.6261.94 YaBrowser\/24.4.4.94.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"W-K610-TVM","marketingName":"Y62","manufacturer":"Wiko","brand":"Wiko","dualOrientation":true,"simCount":2,"display":{"width":1560,"height":720,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"24.4.4.94.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"122.0.6261.94","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 11; W-K630-TRU) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.6478.735 YaApp_Android\/24.77.1 YaSearchBrowser\/24.77.1 BroPP\/1.0 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"W-K630-TRU","marketingName":"Y82","manufacturer":"Wiko","brand":"Wiko","dualOrientation":true,"simCount":2,"display":{"width":1560,"height":720,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"24.77.1","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.6478.735","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; HY-002 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.174 YaBrowser/22.1.5.99.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Plus",
+      "marketingName": "Plus",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "22.1.5.99.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.174",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 11; W-K610-TVM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.94 YaBrowser/24.4.4.94.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W-K610-TVM",
+      "marketingName": "Y62",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.4.4.94.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.94",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; W-K630-TRU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.735 YaApp_Android/24.77.1 YaSearchBrowser/24.77.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W-K630-TRU",
+      "marketingName": "Y82",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.77.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.735",
+      "manufacturer": "Google"
+    }
+  }
+]

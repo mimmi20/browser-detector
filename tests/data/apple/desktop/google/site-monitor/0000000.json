@@ -1,1 +1,140 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/27.0.1453.110 Safari\/537.36 googletracerquery google_partner_monitoring"},"device":{"architecture":null,"deviceName":"Macintosh","marketingName":"Macintosh","manufacturer":"Apple","brand":"Apple","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Mac OS X","marketingName":"Mac OS X","version":"10.8.4","manufacturer":"Apple","bits":null},"client":{"name":"Google Partner Monitoring","modus":null,"version":null,"manufacturer":"Google","type":"site-monitor","isbot":true,"bits":null},"engine":{"name":"WebKit","version":"537.36.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/74.0.3694.0 Safari\/537.36 Chrome-Lighthouse"},"device":{"architecture":null,"deviceName":"Macintosh","marketingName":"Macintosh","manufacturer":"Apple","brand":"Apple","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"macOS","marketingName":"macOS","version":"10.13.6","manufacturer":"Apple","bits":null},"client":{"name":"Lighthouse","modus":null,"version":null,"manufacturer":"Google","type":"site-monitor","isbot":true,"bits":null},"engine":{"name":"Blink","version":"74.0.3694.0","manufacturer":"Google"}},{"headers":{"sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\", \"Lighthouse\";v=\"9.3.0\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/94.0.4590.2 Safari\/537.36 Chrome-Lighthouse"},"device":{"architecture":null,"deviceName":"Macintosh","marketingName":"Macintosh","manufacturer":"Apple","brand":"Apple","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Mac OS X","marketingName":"Mac OS X","version":"10.15.7","manufacturer":"Apple","bits":null},"client":{"name":"Lighthouse","modus":null,"version":null,"manufacturer":"Google","type":"site-monitor","isbot":true,"bits":null},"engine":{"name":"Blink","version":"94.0.4590.2","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36 googletracerquery google_partner_monitoring"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.4",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Partner Monitoring",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "site-monitor",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3694.0 Safari/537.36 Chrome-Lighthouse"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.6",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Lighthouse",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "site-monitor",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "74.0.3694.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua": "\"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\", \"Lighthouse\";v=\"9.3.0\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4590.2 Safari/537.36 Chrome-Lighthouse"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.15.7",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Lighthouse",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "site-monitor",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

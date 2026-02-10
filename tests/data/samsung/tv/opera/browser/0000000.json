@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Opera\/9.80 (Linux sh4; U; HbbTV\/1.1.1 (; INTEK; Vantage Full HD Model;;;) hdplusSmartTV\/1.0 (NETRANGEMMH;) Bee\/3.2 CE-HTML\/1.0; FXM-U2FsdGVkX19WaYSyGq70V2qt2C4bR92ULIOEtQrDKma1eRx3WQlWfuTO6eCHMYQm-END; en) Presto\/2.10.250 Version\/11.60"},"device":{"architecture":null,"deviceName":"Smart TV","marketingName":"Smart TV","manufacturer":"Samsung","brand":"Samsung","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Opera","modus":null,"version":"11.60.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Presto","version":"2.10.250","manufacturer":"Opera"}},{"headers":{"user-agent":"Opera\/9.80 (Linux mips; ) Presto\/2.12.407 Version\/12.51 MB97\/0.0.34.19 (PANASONIC, Mxl661LG32, wired) VSTVB_MB97  SmartTvA\/3.0.0"},"device":{"architecture":null,"deviceName":"Smart TV","marketingName":"Smart TV","manufacturer":"Samsung","brand":"Samsung","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Opera TV","marketingName":"Opera TV","version":null,"manufacturer":"Opera","bits":null},"client":{"name":"Opera","modus":null,"version":"12.51.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Presto","version":"2.12.407","manufacturer":"Opera"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux armv7l) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/38.0.2125.122 Safari\/537.36 OPR\/25.0.1620.0 OMI\/4.3.18.7.Dominik.0 VSTVB MB100 HbbTV\/1.2.1 (; HHW HAIER; MB100; 0.1.33.5; ;) SmartTvA\/3.0.0 UID(00:09:DF:C2:EA:02\/MB100\/HHW HAIER\/0.1"},"device":{"architecture":null,"deviceName":"Smart TV","marketingName":"Smart TV","manufacturer":"Samsung","brand":"Samsung","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Opera Devices","modus":null,"version":"4.3.18.7","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"38.0.2125.122","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Andr0id 9; AFTSO001) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/84.0.4147.125 Safari\/537.36 OPR\/46.0.2207.0 OMI\/4.21.0.273.release HbbTV\/1.5.1 ( DRM;Amazon;sophia;unknown;unknown;sophia;) FVC\/6.0 (Amazon;sophia;) smarttv_AFTSO001_Build_0019126349446_Chromium_84.0.4147.125"},"device":{"architecture":null,"deviceName":"Smart TV","marketingName":"Smart TV","manufacturer":"Samsung","brand":"Samsung","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"tv","ismobile":false,"istv":true,"bits":null},"os":{"name":"Fire OS","marketingName":"Fire OS","version":"7.0.0","manufacturer":"Amazon","bits":null},"client":{"name":"Opera Devices","modus":null,"version":"4.21.0.273","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"84.0.4147.125","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux sh4; U; HbbTV/1.1.1 (; INTEK; Vantage Full HD Model;;;) hdplusSmartTV/1.0 (NETRANGEMMH;) Bee/3.2 CE-HTML/1.0; FXM-U2FsdGVkX19WaYSyGq70V2qt2C4bR92ULIOEtQrDKma1eRx3WQlWfuTO6eCHMYQm-END; en) Presto/2.10.250 Version/11.60"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.60.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.250",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.0.34.19 (PANASONIC, Mxl661LG32, wired) VSTVB_MB97  SmartTvA/3.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "Opera",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 OPR/25.0.1620.0 OMI/4.3.18.7.Dominik.0 VSTVB MB100 HbbTV/1.2.1 (; HHW HAIER; MB100; 0.1.33.5; ;) SmartTvA/3.0.0 UID(00:09:DF:C2:EA:02/MB100/HHW HAIER/0.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.3.18.7",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "38.0.2125.122",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 9; AFTSO001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.0.273.release HbbTV/1.5.1 ( DRM;Amazon;sophia;unknown;unknown;sophia;) FVC/6.0 (Amazon;sophia;) smarttv_AFTSO001_Build_0019126349446_Chromium_84.0.4147.125"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.21.0.273",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "84.0.4147.125",
+      "manufacturer": "Google"
+    }
+  }
+]

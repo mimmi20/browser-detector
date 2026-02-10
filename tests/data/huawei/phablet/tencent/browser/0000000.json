@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 10; zh-cn; EBG-AN00 Build\/XXXXX) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/66.0.3359.126 MQQBrowser\/10.4 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"EBG-AN00","marketingName":"Honor 30 Pro+","manufacturer":"Huawei","brand":"Huawei","dualOrientation":true,"simCount":2,"display":{"width":2340,"height":1080,"touch":true,"size":6.57},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"QQ Browser","modus":null,"version":"10.4.0","manufacturer":"Tencent","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"66.0.3359.126","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 10; zh-cn; BMH-AN20 Build\/XXXXX BMH-AN20X) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/66.0.3359.126 MQQBrowser\/10.3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"BMH-AN20","marketingName":"30","manufacturer":"Huawei","brand":"Honor","dualOrientation":true,"simCount":2,"display":{"width":2400,"height":1080,"touch":true,"size":6.53},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"QQ Browser","modus":null,"version":"10.3.0","manufacturer":"Tencent","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"66.0.3359.126","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 9;zh-cn; JKM-AL00b Build\/HUAWEIJKM-AL00b) AppleWebKit\/537.36 (KHTML, like Gecko)Version\/4.0 Chrome\/57.0.2987.132 MQQBrowser\/8.1 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"JKM-AL00b","marketingName":"Y9 (2019)","manufacturer":"Huawei","brand":"Huawei","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.5},"type":"phablet","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"QQ Browser","modus":null,"version":"8.1.0","manufacturer":"Tencent","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"57.0.2987.132","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; EBG-AN00 Build/XXXXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/10.4 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "EBG-AN00",
+      "marketingName": "Honor 30 Pro+",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.57
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "10.4.0",
+      "manufacturer": "Tencent",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; BMH-AN20 Build/XXXXX BMH-AN20X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/10.3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BMH-AN20",
+      "marketingName": "30",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "10.3.0",
+      "manufacturer": "Tencent",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 9;zh-cn; JKM-AL00b Build/HUAWEIJKM-AL00b) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.1 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "JKM-AL00b",
+      "marketingName": "Y9 (2019)",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "8.1.0",
+      "manufacturer": "Tencent",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "Google"
+    }
+  }
+]

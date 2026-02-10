@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"TenFourFox\/6.4 (Windows 3.1 7.5; en_GB;)"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows","marketingName":"Windows 3.1","version":"3.1.0","manufacturer":"Microsoft","bits":null},"client":{"name":"TenFourFox","modus":null,"version":"6.4.0","manufacturer":"Cameron Kaiser","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":null,"manufacturer":"Mozilla"}},{"headers":{"user-agent":"TenFourFox\/20.10 (Ark Linux 1.8; ar_AE;)"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Ark Linux","marketingName":"Ark Linux","version":"1.8.0","manufacturer":"unknown","bits":null},"client":{"name":"TenFourFox","modus":null,"version":"20.10.0","manufacturer":"Cameron Kaiser","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":null,"manufacturer":"Mozilla"}},{"headers":{"user-agent":"TenFourFox\/6.13 (CentOS Linux 1.6; fr_CH;)"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Cent OS Linux","marketingName":"Cent OS Linux","version":"1.6.0","manufacturer":"unknown","bits":null},"client":{"name":"TenFourFox","modus":null,"version":"6.13.0","manufacturer":"Cameron Kaiser","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":null,"manufacturer":"Mozilla"}},{"headers":{"user-agent":"TenFourFox\/19.18 (Debian Linux 5.5; ca_ES;)"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Debian","marketingName":"Debian","version":"5.5.0","manufacturer":"Software in the Public Interest","bits":null},"client":{"name":"TenFourFox","modus":null,"version":"19.18.0","manufacturer":"Cameron Kaiser","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":null,"manufacturer":"Mozilla"}},{"headers":{"user-agent":"TenFourFox\/15.8 (Windows NT 2.3; ar_JO;)"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows NT","marketingName":"Windows NT","version":null,"manufacturer":"Microsoft","bits":null},"client":{"name":"TenFourFox","modus":null,"version":"15.8.0","manufacturer":"Cameron Kaiser","type":"browser","isbot":false,"bits":null},"engine":{"name":"Gecko","version":null,"manufacturer":"Mozilla"}}]
+[
+  {
+    "headers": {
+      "user-agent": "TenFourFox/6.4 (Windows 3.1 7.5; en_GB;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 3.1",
+      "version": "3.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "TenFourFox",
+      "modus": null,
+      "version": "6.4.0",
+      "manufacturer": "Cameron Kaiser",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TenFourFox/20.10 (Ark Linux 1.8; ar_AE;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ark Linux",
+      "marketingName": "Ark Linux",
+      "version": "1.8.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "TenFourFox",
+      "modus": null,
+      "version": "20.10.0",
+      "manufacturer": "Cameron Kaiser",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TenFourFox/6.13 (CentOS Linux 1.6; fr_CH;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Cent OS Linux",
+      "marketingName": "Cent OS Linux",
+      "version": "1.6.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "TenFourFox",
+      "modus": null,
+      "version": "6.13.0",
+      "manufacturer": "Cameron Kaiser",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TenFourFox/19.18 (Debian Linux 5.5; ca_ES;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian",
+      "marketingName": "Debian",
+      "version": "5.5.0",
+      "manufacturer": "Software in the Public Interest",
+      "bits": null
+    },
+    "client": {
+      "name": "TenFourFox",
+      "modus": null,
+      "version": "19.18.0",
+      "manufacturer": "Cameron Kaiser",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TenFourFox/15.8 (Windows NT 2.3; ar_JO;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "TenFourFox",
+      "modus": null,
+      "version": "15.8.0",
+      "manufacturer": "Cameron Kaiser",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  }
+]

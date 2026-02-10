@@ -1,1 +1,92 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/535.21 (KHTML, like Gecko) Chrome\/19.0.1042.0 Safari\/535.21 PagePeeker\/2.1; +http:\/\/pagepeeker.com\/robots\/"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"PagePeeker","modus":null,"version":"2.1.0","manufacturer":"PagePeeker","type":"crawler","isbot":true,"bits":null},"engine":{"name":"WebKit","version":"535.21.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36 (compatible; PPBot\/2.1; +https:\/\/pagepeeker.com\/robots\/)"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows","marketingName":"Windows 8.1","version":"8.1.0","manufacturer":"Microsoft","bits":null},"client":{"name":"PagePeeker","modus":null,"version":"2.1.0","manufacturer":"PagePeeker","type":"crawler","isbot":true,"bits":null},"engine":{"name":"Blink","version":"61.0.3163.100","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21 PagePeeker/2.1; +http://pagepeeker.com/robots/"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "PagePeeker",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "PagePeeker",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.21.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36 (compatible; PPBot/2.1; +https://pagepeeker.com/robots/)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 8.1",
+      "version": "8.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "PagePeeker",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "PagePeeker",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.100",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; itel A631L Build\/SP1A.210812.016; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/111.0.5563.116 Mobile Safari\/537.36 [FB_IAB\/FB4A;FBAV\/409.0.0.27.106;]"},"device":{"architecture":null,"deviceName":"A631L","marketingName":"A49 Play","manufacturer":"iTel","brand":"iTel","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Facebook App","modus":null,"version":"409.0.0.27.106","manufacturer":"Meta","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"111.0.5563.116","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; itel A507LSP Build\/SP1A.210812.016; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/105.0.5195.136 Mobile Safari\/537.36[FBAN\/EMA;FBLC\/en_GB;FBAV\/332.0.0.22.108;]"},"device":{"architecture":null,"deviceName":"A507LSP","marketingName":"A24","manufacturer":"iTel","brand":"iTel","dualOrientation":true,"simCount":2,"display":{"width":854,"height":480,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Facebook Lite","modus":null,"version":"332.0.0.22.108","manufacturer":"Meta","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"105.0.5195.136","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 14; itel A667L Build\/UP1A.231005.007; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/126.0.6478.134 Mobile Safari\/537.36 [FB_IAB\/FB4A;FBAV\/427.0.0.31.63;]"},"device":{"architecture":null,"deviceName":"A667L","marketingName":"A50","manufacturer":"iTel","brand":"iTel","dualOrientation":true,"simCount":2,"display":{"width":1612,"height":720,"touch":true,"size":6.6},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"Facebook App","modus":null,"version":"427.0.0.31.63","manufacturer":"Meta","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.6478.134","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; itel A513W Build\/TP1A.220624.014; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/126.0.6478.134 Mobile Safari\/537.36[FBAN\/EMA;FBLC\/en_GB;FBAV\/412.0.0.8.106;]"},"device":{"architecture":null,"deviceName":"A513W","marketingName":"A18s","manufacturer":"iTel","brand":"iTel","dualOrientation":true,"simCount":1,"display":{"width":854,"height":480,"touch":true,"size":5.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Facebook Lite","modus":null,"version":"412.0.0.8.106","manufacturer":"Meta","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.6478.134","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; itel A665L Build\/TP1A.220624.014; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/132.0.6834.90 Mobile Safari\/537.36 [FB_IAB\/FB4A;FBAV\/496.0.0.45.65;IABMV\/1;]"},"device":{"architecture":null,"deviceName":"A665L","marketingName":"A70","manufacturer":"iTel","brand":"iTel","dualOrientation":true,"simCount":2,"display":{"width":1612,"height":720,"touch":true,"size":6.6},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Facebook App","modus":null,"version":"496.0.0.45.65","manufacturer":"Meta","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":"Blink","version":"132.0.6834.90","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; itel A631L Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/409.0.0.27.106;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A631L",
+      "marketingName": "A49 Play",
+      "manufacturer": "iTel",
+      "brand": "iTel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "409.0.0.27.106",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; itel A507LSP Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/332.0.0.22.108;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A507LSP",
+      "marketingName": "A24",
+      "manufacturer": "iTel",
+      "brand": "iTel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Lite",
+      "modus": null,
+      "version": "332.0.0.22.108",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.136",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; itel A667L Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.134 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/427.0.0.31.63;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A667L",
+      "marketingName": "A50",
+      "manufacturer": "iTel",
+      "brand": "iTel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "427.0.0.31.63",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.134",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; itel A513W Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.134 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/412.0.0.8.106;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A513W",
+      "marketingName": "A18s",
+      "manufacturer": "iTel",
+      "brand": "iTel",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Lite",
+      "modus": null,
+      "version": "412.0.0.8.106",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.134",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; itel A665L Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.90 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/496.0.0.45.65;IABMV/1;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A665L",
+      "marketingName": "A70",
+      "manufacturer": "iTel",
+      "brand": "iTel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "496.0.0.45.65",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.90",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -1,1 +1,272 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; GS290) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/83.0.4103.106 Mobile Safari\/537.36 OPR\/59.1.2926.54067"},"device":{"architecture":null,"deviceName":"GS290","marketingName":"GS290","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"59.1.2926.54067","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"83.0.4103.106","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; GS195) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/83.0.4103.106 Mobile Safari\/537.36 OPR\/59.1.2926.54067"},"device":{"architecture":null,"deviceName":"GS195","marketingName":"GS195","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":1,"display":{"width":2246,"height":1080,"touch":true,"size":6.18},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"59.1.2926.54067","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"83.0.4103.106","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; E940-2795-00) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/86.0.4240.198 Mobile Safari\/537.36 OPR\/61.2.3076.56749 comdirect\/1.0 (appVersion:21.1.0;deviceType:mobile)"},"device":{"architecture":null,"deviceName":"E940-2795-00","marketingName":"GS4","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"61.2.3076.56749","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"86.0.4240.198","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; GS110) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/91.0.4472.114 Mobile Safari\/537.36 OPR\/64.1.3282.59829"},"device":{"architecture":null,"deviceName":"GS110","marketingName":"ME Pure","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":1,"display":{"width":1200,"height":600,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"64.1.3282.59829","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"91.0.4472.114","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; E940-2795-00 Build\/RP1A.200720.011) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/119.0.6045.66 Mobile Safari\/537.36 OPT\/2.9"},"device":{"architecture":null,"deviceName":"E940-2795-00","marketingName":"GS4","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":1,"display":{"width":2340,"height":1080,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Touch","modus":null,"version":"2.9.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"119.0.6045.66","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; E940-2797-00 Build\/SP1A.210812.016) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/121.0.6167.143 Mobile Safari\/537.36 OPT\/2.9"},"device":{"architecture":null,"deviceName":"E940-2797-00","marketingName":"GX4","manufacturer":"Gigaset","brand":"Gigaset","dualOrientation":true,"simCount":2,"display":{"width":1560,"height":720,"touch":true,"size":6.1},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Touch","modus":null,"version":"2.9.0","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"121.0.6167.143","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; GS290) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 OPR/59.1.2926.54067"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GS290",
+      "marketingName": "GS290",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "59.1.2926.54067",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; GS195) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 OPR/59.1.2926.54067"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GS195",
+      "marketingName": "GS195",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2246,
+        "height": 1080,
+        "touch": true,
+        "size": 6.18
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "59.1.2926.54067",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; E940-2795-00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36 OPR/61.2.3076.56749 comdirect/1.0 (appVersion:21.1.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E940-2795-00",
+      "marketingName": "GS4",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "61.2.3076.56749",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.198",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; GS110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Mobile Safari/537.36 OPR/64.1.3282.59829"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GS110",
+      "marketingName": "ME Pure",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1200,
+        "height": 600,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "64.1.3282.59829",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.114",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; E940-2795-00 Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.66 Mobile Safari/537.36 OPT/2.9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E940-2795-00",
+      "marketingName": "GS4",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Touch",
+      "modus": null,
+      "version": "2.9.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.66",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; E940-2797-00 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.143 Mobile Safari/537.36 OPT/2.9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E940-2797-00",
+      "marketingName": "GX4",
+      "manufacturer": "Gigaset",
+      "brand": "Gigaset",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Touch",
+      "modus": null,
+      "version": "2.9.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "121.0.6167.143",
+      "manufacturer": "Google"
+    }
+  }
+]

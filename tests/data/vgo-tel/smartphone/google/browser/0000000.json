@@ -1,1 +1,272 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; NEW 22) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"New 22","marketingName":"New 22","manufacturer":"VGO Tel","brand":"VGO Tel","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"109.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"109.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; NEW 16) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/111.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"New 16","marketingName":"New 16","manufacturer":"VGO Tel","brand":"VGO Tel","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"111.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"111.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; NEW 10) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/123.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"New 10","marketingName":"New 10","manufacturer":"VGO Tel","brand":"VGO Tel","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.56},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"123.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"123.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 14; Flex 2 Build\/UP1A.231005.007) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.6478.71 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Flex 2","marketingName":"Flex 2","manufacturer":"VGO Tel","brand":"VGO Tel","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.6},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"126.0.6478.71","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.6478.71","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 14; NEW 26 Build\/UP1A.231005.007) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/132.0.6834.163 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"New 26","marketingName":"New 26","manufacturer":"VGO Tel","brand":"VGO Tel","dualOrientation":true,"simCount":2,"display":{"width":1604,"height":720,"touch":true,"size":6.67},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"132.0.6834.163","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"132.0.6834.163","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; NEW 25) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/114.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"New 25","marketingName":"New 25","manufacturer":"VGO Tel","brand":"VGO Tel","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.75},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"114.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"114.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; NEW 22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "New 22",
+      "marketingName": "New 22",
+      "manufacturer": "VGO Tel",
+      "brand": "VGO Tel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "109.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; NEW 16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "New 16",
+      "marketingName": "New 16",
+      "manufacturer": "VGO Tel",
+      "brand": "VGO Tel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "111.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; NEW 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "New 10",
+      "marketingName": "New 10",
+      "manufacturer": "VGO Tel",
+      "brand": "VGO Tel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "123.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Flex 2 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.71 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Flex 2",
+      "marketingName": "Flex 2",
+      "manufacturer": "VGO Tel",
+      "brand": "VGO Tel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.6478.71",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.71",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; NEW 26 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "New 26",
+      "marketingName": "New 26",
+      "manufacturer": "VGO Tel",
+      "brand": "VGO Tel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1604,
+        "height": 720,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "132.0.6834.163",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.163",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; NEW 25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "New 25",
+      "marketingName": "New 25",
+      "manufacturer": "VGO Tel",
+      "brand": "VGO Tel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.75
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "114.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

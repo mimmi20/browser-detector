@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 12; A063) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/102.0.5005.167 YaBrowser\/22.7.9.36.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"A063","marketingName":"Phone 1","manufacturer":"Nothing","brand":"Nothing","dualOrientation":true,"simCount":1,"display":{"width":2400,"height":1080,"touch":true,"size":6.55},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"22.7.9.36.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"102.0.5005.167","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 14; A065) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.6613.123 YaBrowser\/24.10.2.123.00 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"A065","marketingName":"Phone 2","manufacturer":"Nothing","brand":"Nothing","dualOrientation":true,"simCount":1,"display":{"width":2412,"height":1080,"touch":true,"size":6.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"14.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Browser","modus":null,"version":"24.10.2.123.00","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"128.0.6613.123","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; arm_64; Android 15; A001) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.6998.895 YaApp_Android\/25.43.1 YaSearchBrowser\/25.43.1 BroPP\/1.0 SA\/3 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"A001","marketingName":"Phone 2 Pro","manufacturer":"Nothing","brand":"CMF","dualOrientation":true,"simCount":2,"display":{"width":2392,"height":1080,"touch":true,"size":6.77},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"15.0.0","manufacturer":"Google","bits":null},"client":{"name":"Yandex Search Browser","modus":null,"version":"25.43.1","manufacturer":"Yandex","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"134.0.6998.895","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; A063) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.167 YaBrowser/22.7.9.36.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A063",
+      "marketingName": "Phone 1",
+      "manufacturer": "Nothing",
+      "brand": "Nothing",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "22.7.9.36.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.167",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; A065) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.123 YaBrowser/24.10.2.123.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A065",
+      "marketingName": "Phone 2",
+      "manufacturer": "Nothing",
+      "brand": "Nothing",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2412,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "24.10.2.123.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.123",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; A001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.895 YaApp_Android/25.43.1 YaSearchBrowser/25.43.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A001",
+      "marketingName": "Phone 2 Pro",
+      "manufacturer": "Nothing",
+      "brand": "CMF",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2392,
+        "height": 1080,
+        "touch": true,
+        "size": 6.77
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "25.43.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.895",
+      "manufacturer": "Google"
+    }
+  }
+]

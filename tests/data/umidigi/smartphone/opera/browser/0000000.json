@@ -1,1 +1,182 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; A5_Pro) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/78.0.3904.108 Mobile Safari\/537.36 OPR\/56.1.2780.51589"},"device":{"architecture":null,"deviceName":"A5 Pro","marketingName":"A5 Pro","manufacturer":"UMIDIGI","brand":"UMIDIGI","dualOrientation":true,"simCount":1,"display":{"width":2280,"height":1080,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"56.1.2780.51589","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"78.0.3904.108","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; BISON) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/94.0.4606.85 Mobile Safari\/537.36 OPR\/66.2.3445.62346"},"device":{"architecture":null,"deviceName":"Bison","marketingName":"Bison","manufacturer":"UMIDIGI","brand":"UMIDIGI","dualOrientation":true,"simCount":2,"display":{"width":2340,"height":1080,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"66.2.3445.62346","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"94.0.4606.85","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; RP01) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/117.0.5938.154 Mobile Safari\/537.36 OPR\/78.3.4143.75607"},"device":{"architecture":null,"deviceName":"RP01","marketingName":"Bison X10","manufacturer":"UMIDIGI","brand":"UMIDIGI","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.53},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"78.3.4143.75607","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"117.0.5938.154","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; MP29) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/122.0.6261.149 Mobile Safari\/537.36 OPR\/81.3.4292.78688"},"device":{"architecture":null,"deviceName":"MP29","marketingName":"C1 Plus","manufacturer":"UMIDIGI","brand":"UMIDIGI","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.52},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Opera Mobile","modus":null,"version":"81.3.4292.78688","manufacturer":"Opera","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"122.0.6261.149","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; A5_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 OPR/56.1.2780.51589"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A5 Pro",
+      "marketingName": "A5 Pro",
+      "manufacturer": "UMIDIGI",
+      "brand": "UMIDIGI",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "56.1.2780.51589",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; BISON) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 OPR/66.2.3445.62346"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Bison",
+      "marketingName": "Bison",
+      "manufacturer": "UMIDIGI",
+      "brand": "UMIDIGI",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "66.2.3445.62346",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; RP01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.154 Mobile Safari/537.36 OPR/78.3.4143.75607"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RP01",
+      "marketingName": "Bison X10",
+      "manufacturer": "UMIDIGI",
+      "brand": "UMIDIGI",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "78.3.4143.75607",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "117.0.5938.154",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; MP29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.3.4292.78688"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MP29",
+      "marketingName": "C1 Plus",
+      "manufacturer": "UMIDIGI",
+      "brand": "UMIDIGI",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "81.3.4292.78688",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.149",
+      "manufacturer": "Google"
+    }
+  }
+]

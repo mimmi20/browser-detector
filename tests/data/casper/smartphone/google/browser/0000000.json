@@ -1,1 +1,317 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; VIA A4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/78.0.3904.108 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Via A4","marketingName":"Via A4","manufacturer":"Casper","brand":"Casper","dualOrientation":true,"simCount":2,"display":{"width":2340,"height":1080,"touch":true,"size":6.3},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"78.0.3904.108","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"78.0.3904.108","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 10; VIA G5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/96.0.4664.104 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Via G5","marketingName":"Via G5","manufacturer":"Casper","brand":"Casper","dualOrientation":true,"simCount":1,"display":{"width":null,"height":null,"touch":true,"size":null},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"10.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"96.0.4664.104","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"96.0.4664.104","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; VIA M35) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/111.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Via M35","marketingName":"Via M35","manufacturer":"Casper","brand":"Casper","dualOrientation":true,"simCount":1,"display":{"width":1600,"height":720,"touch":true,"size":6.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"111.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"111.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; VIA F30) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/102.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Via F30","marketingName":"Via F30","manufacturer":"Casper","brand":"Casper","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"102.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"102.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 12; VIA M30) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/105.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Via M30","marketingName":"Via M30","manufacturer":"Casper","brand":"Casper","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"12.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"105.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"105.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; VIA A40) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/114.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Via A40","marketingName":"Via A40","manufacturer":"Casper","brand":"Casper","dualOrientation":true,"simCount":2,"display":{"width":2460,"height":1080,"touch":true,"size":6.78},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"114.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"114.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; VIA_X40) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/114.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Via X40","marketingName":"Via X40","manufacturer":"Casper","brand":"Casper","dualOrientation":true,"simCount":1,"display":{"width":2400,"height":1080,"touch":true,"size":6.67},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"114.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"114.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; VIA A4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Via A4",
+      "marketingName": "Via A4",
+      "manufacturer": "Casper",
+      "brand": "Casper",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.108",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; VIA G5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Via G5",
+      "marketingName": "Via G5",
+      "manufacturer": "Casper",
+      "brand": "Casper",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "96.0.4664.104",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; VIA M35) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Via M35",
+      "marketingName": "Via M35",
+      "manufacturer": "Casper",
+      "brand": "Casper",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "111.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; VIA F30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Via F30",
+      "marketingName": "Via F30",
+      "manufacturer": "Casper",
+      "brand": "Casper",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; VIA M30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Via M30",
+      "marketingName": "Via M30",
+      "manufacturer": "Casper",
+      "brand": "Casper",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; VIA A40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Via A40",
+      "marketingName": "Via A40",
+      "manufacturer": "Casper",
+      "brand": "Casper",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "114.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; VIA_X40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Via X40",
+      "marketingName": "Via X40",
+      "manufacturer": "Casper",
+      "brand": "Casper",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "114.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

@@ -1,1 +1,92 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; Retroid Pocket 2+) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/111.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"2 Plus","marketingName":"2 Plus","manufacturer":"Retroid Pocket","brand":"Retroid Pocket","dualOrientation":false,"simCount":0,"display":{"width":640,"height":480,"touch":true,"size":3.5},"type":"mobile-console","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"111.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"111.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; Retroid Pocket 5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"5","marketingName":"5","manufacturer":"Retroid Pocket","brand":"Retroid Pocket","dualOrientation":false,"simCount":0,"display":{"width":1920,"height":1080,"touch":true,"size":5.5},"type":"mobile-console","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"132.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"132.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Retroid Pocket 2+) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2 Plus",
+      "marketingName": "2 Plus",
+      "manufacturer": "Retroid Pocket",
+      "brand": "Retroid Pocket",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "mobile-console",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "111.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Retroid Pocket 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5",
+      "marketingName": "5",
+      "manufacturer": "Retroid Pocket",
+      "brand": "Retroid Pocket",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "mobile-console",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "132.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

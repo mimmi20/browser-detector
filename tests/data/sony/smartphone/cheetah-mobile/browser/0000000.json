@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 4.3.1; de-de; C6603 Build\/JLS36I) AppleWebKit\/534.30 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/534.30 CyanogenMod\/10.2.1\/yuga ACHEETAHI\/2100050056"},"device":{"architecture":null,"deviceName":"C6603","marketingName":"Xperia Z","manufacturer":"Sony","brand":"Sony","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"CyanogenMod","marketingName":"CyanogenMod","version":"10.2.1","manufacturer":"unknown","bits":null},"client":{"name":"CM Browser","modus":null,"version":null,"manufacturer":"Cheetah Mobile","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"534.30.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; H8324 Build\/52.0.A.3.84; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/44.0.2403.119 Mobile Safari\/537.36 ACHEETAHI\/1"},"device":{"architecture":null,"deviceName":"H8324","marketingName":"Xperia XZ2 Compact","manufacturer":"Sony","brand":"Sony","dualOrientation":true,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"CM Browser","modus":null,"version":null,"manufacturer":"Cheetah Mobile","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"44.0.2403.119","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; J9110 Build\/55.2.A.4.47; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/44.0.2403.119 Mobile Safari\/537.36 ACHEETAHI\/1"},"device":{"architecture":null,"deviceName":"J9110","marketingName":"Xperia 1","manufacturer":"Sony","brand":"Sony","dualOrientation":true,"simCount":1,"display":{"width":3840,"height":1644,"touch":true,"size":6.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"CM Browser","modus":null,"version":null,"manufacturer":"Cheetah Mobile","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"44.0.2403.119","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; G8341 Build\/47.2.A.11.228; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/44.0.2403.119 Mobile Safari\/537.36 ACHEETAHI\/1"},"device":{"architecture":null,"deviceName":"G8341","marketingName":"Xperia XZ1","manufacturer":"Sony","brand":"Sony","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.2},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"CM Browser","modus":null,"version":null,"manufacturer":"Cheetah Mobile","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"44.0.2403.119","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; H4113 Build\/50.2.A.3.77; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/44.0.2403.119 Mobile Safari\/537.36 ACHEETAHI\/1"},"device":{"architecture":null,"deviceName":"H4113","marketingName":"Xperia XA2 Dual","manufacturer":"Sony","brand":"Sony","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.2},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"CM Browser","modus":null,"version":null,"manufacturer":"Cheetah Mobile","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"44.0.2403.119","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; C6603 Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2.1/yuga ACHEETAHI/2100050056"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C6603",
+      "marketingName": "Xperia Z",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "CyanogenMod",
+      "marketingName": "CyanogenMod",
+      "version": "10.2.1",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Cheetah Mobile",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; H8324 Build/52.0.A.3.84; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "H8324",
+      "marketingName": "Xperia XZ2 Compact",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Cheetah Mobile",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; J9110 Build/55.2.A.4.47; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "J9110",
+      "marketingName": "Xperia 1",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3840,
+        "height": 1644,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Cheetah Mobile",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; G8341 Build/47.2.A.11.228; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "G8341",
+      "marketingName": "Xperia XZ1",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Cheetah Mobile",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; H4113 Build/50.2.A.3.77; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "H4113",
+      "marketingName": "Xperia XA2 Dual",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Cheetah Mobile",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "Google"
+    }
+  }
+]

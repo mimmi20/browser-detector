@@ -1,1 +1,4457 @@
-[{"headers":{"user-agent":"python-requests\/2.22.0 comdirect\/1.0 (appVersion:20.8.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.22.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:20.8.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.23.0 comdirect\/1.0 (appVersion:20.8.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.23.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:20.9.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:20.9.2)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:20.9.4)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.22.0 comdirect\/1.0 (appVersion:20.10.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.22.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:20.10.3)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0 comdirect\/1.0 (appVersion:20.10.3)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:20.10.3)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:20.11.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:20.11.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.4 comdirect\/1.0 (appVersion:20.11.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.4","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0 comdirect\/1.0 (appVersion:20.11.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0 comdirect\/1.0 (appVersion:20.11.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.4 comdirect\/1.0 (appVersion:20.11.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.4","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.22.0 comdirect\/1.0 (appVersion:20.11.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.22.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.1"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0 comdirect\/1.0 (appVersion:20.12.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:20.12.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:20.12.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.1 comdirect\/1.0 (appVersion:20.12.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:21.1.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/3.8 comdirect\/1.0 (appVersion:21.1.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"3.8.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.1.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.2.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.2.2)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0 comdirect\/1.0 (appVersion:21.2.2)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.3.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.3.1.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/3.9"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"3.9.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0 comdirect\/1.0 (appVersion:21.3.1.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.4.2)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.1 comdirect\/1.0 (appVersion:21.4.2)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.5.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.1 comdirect\/1.0 (appVersion:21.5.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.6.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.6.3)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.23.0 comdirect\/1.0 (appVersion:21.6.3)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.23.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.5"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.5","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.1 comdirect\/1.0 (appVersion:21.6.3)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0 comdirect\/1.0 (appVersion:21.7.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.26.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.26.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.7.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.26.0 comdirect\/1.0 (appVersion:21.7.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.26.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.8.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.0 comdirect\/1.0 (appVersion:21.8.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/3.7 comdirect\/1.0 (appVersion:21.8.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"3.7.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.26.0 comdirect\/1.0 (appVersion:21.8.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.26.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.1 comdirect\/1.0 (appVersion:21.8.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.8.5)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.26.0 comdirect\/1.0 (appVersion:21.8.5)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.26.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:21.8.5)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.18.1 comdirect\/1.0 (appVersion:21.9.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.18.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.26.0 comdirect\/1.0 (appVersion:21.9.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.26.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.22.0 comdirect\/1.0 (appVersion:21.9.1)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.22.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.26.0 comdirect\/1.0 (appVersion:21.10.4)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.26.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/2.7 comdirect\/1.0 (appVersion:21.10.4)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"2.7.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.26.0 comdirect\/1.0 (appVersion:21.11.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.26.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.24.0 comdirect\/1.0 (appVersion:21.11.0)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.24.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/3.10"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"3.10.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.26.0 comdirect\/1.0 (appVersion:21.12.2)"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.26.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"twine\/3.4.2 importlib_metadata\/4.8.1 pkginfo\/1.7.1 requests\/2.26.0 requests-toolbelt\/0.9.1 tqdm\/4.62.3 CPython\/3.8.12"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python","modus":null,"version":"3.8.12","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.27.1"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.27.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.27.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.27.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.9"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.9","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.28.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.28.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.28.1"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.28.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.11"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.11","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.12"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.12","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.28.2"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.28.2","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/2.7"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"2.7.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.25.1+fb6"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.25.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.7"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.7","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.29.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.29.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.30.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.30.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/3.11"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"3.11.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.31.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.31.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.16"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.16","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.15.1"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.15.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.14"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.14","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/2.1.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"2.1.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/3.12"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"3.12.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.18"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.18","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.32.1"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.32.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.32.2"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.32.2","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.32.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.32.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.32.3"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.32.3","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/1.26.19"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"1.26.19","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/2.2.3"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"2.2.3","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"datasets\/3.2.0; python\/3.11.2; huggingface_hub\/0.26.5; pyarrow\/11.0.0; torch\/2.3.1"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python","modus":null,"version":"3.11.2","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/3.13"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"3.13.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/2.2.1"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"2.2.1","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/2.3.0"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"2.3.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.32.4"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.32.4","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-requests\/2.32.5"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python Requests","modus":null,"version":"2.32.5","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"Python-urllib\/3.14"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"3.14.0","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"python-urllib3\/2.6.2"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":false,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"Python-urllib","modus":null,"version":"2.6.2","manufacturer":"Python Software Foundation","type":"library","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}}]
+[
+  {
+    "headers": {
+      "user-agent": "python-requests/2.22.0 comdirect/1.0 (appVersion:20.8.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.22.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:20.8.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.23.0 comdirect/1.0 (appVersion:20.8.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.23.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:20.9.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:20.9.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:20.9.4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.22.0 comdirect/1.0 (appVersion:20.10.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.22.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:20.10.3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0 comdirect/1.0 (appVersion:20.10.3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:20.10.3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:20.11.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:20.11.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.4 comdirect/1.0 (appVersion:20.11.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.4",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0 comdirect/1.0 (appVersion:20.11.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0 comdirect/1.0 (appVersion:20.11.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.4 comdirect/1.0 (appVersion:20.11.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.4",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.22.0 comdirect/1.0 (appVersion:20.11.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.22.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0 comdirect/1.0 (appVersion:20.12.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:20.12.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:20.12.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.1 comdirect/1.0 (appVersion:20.12.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:21.1.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/3.8 comdirect/1.0 (appVersion:21.1.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "3.8.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.1.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.2.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.2.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0 comdirect/1.0 (appVersion:21.2.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.3.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.3.1.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/3.9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "3.9.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0 comdirect/1.0 (appVersion:21.3.1.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.4.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.1 comdirect/1.0 (appVersion:21.4.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.5.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.1 comdirect/1.0 (appVersion:21.5.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.6.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.6.3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.23.0 comdirect/1.0 (appVersion:21.6.3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.23.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.5",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.1 comdirect/1.0 (appVersion:21.6.3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0 comdirect/1.0 (appVersion:21.7.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.26.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.26.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.7.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.26.0 comdirect/1.0 (appVersion:21.7.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.26.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.8.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.0 comdirect/1.0 (appVersion:21.8.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/3.7 comdirect/1.0 (appVersion:21.8.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "3.7.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.26.0 comdirect/1.0 (appVersion:21.8.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.26.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.1 comdirect/1.0 (appVersion:21.8.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.8.5)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.26.0 comdirect/1.0 (appVersion:21.8.5)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.26.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:21.8.5)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.18.1 comdirect/1.0 (appVersion:21.9.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.18.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.26.0 comdirect/1.0 (appVersion:21.9.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.26.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.22.0 comdirect/1.0 (appVersion:21.9.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.22.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.26.0 comdirect/1.0 (appVersion:21.10.4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.26.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/2.7 comdirect/1.0 (appVersion:21.10.4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "2.7.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.26.0 comdirect/1.0 (appVersion:21.11.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.26.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.24.0 comdirect/1.0 (appVersion:21.11.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.24.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/3.10"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "3.10.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.26.0 comdirect/1.0 (appVersion:21.12.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.26.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "twine/3.4.2 importlib_metadata/4.8.1 pkginfo/1.7.1 requests/2.26.0 requests-toolbelt/0.9.1 tqdm/4.62.3 CPython/3.8.12"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python",
+      "modus": null,
+      "version": "3.8.12",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.27.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.27.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.27.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.27.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.9",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.28.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.28.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.28.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.28.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.11"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.11",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.12"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.12",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.28.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.28.2",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/2.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "2.7.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.25.1+fb6"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.25.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.7",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.29.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.29.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.30.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.30.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/3.11"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "3.11.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.31.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.31.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.16"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.16",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.15.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.15.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.14"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.14",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/2.1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/3.12"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "3.12.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.18"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.18",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.32.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.32.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.32.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.32.2",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.32.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.32.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.32.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.32.3",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/1.26.19"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "1.26.19",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/2.2.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "2.2.3",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "datasets/3.2.0; python/3.11.2; huggingface_hub/0.26.5; pyarrow/11.0.0; torch/2.3.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python",
+      "modus": null,
+      "version": "3.11.2",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/3.13"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "3.13.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/2.2.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "2.2.1",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/2.3.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "2.3.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.32.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.32.4",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-requests/2.32.5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python Requests",
+      "modus": null,
+      "version": "2.32.5",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python-urllib/3.14"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "3.14.0",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "python-urllib3/2.6.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Python-urllib",
+      "modus": null,
+      "version": "2.6.2",
+      "manufacturer": "Python Software Foundation",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  }
+]

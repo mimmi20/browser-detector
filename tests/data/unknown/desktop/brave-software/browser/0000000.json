@@ -1,1 +1,140 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) brave\/0.7.16 Chrome\/47.0.2526.110 Brave\/0.36.8 Safari\/537.36"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Windows","marketingName":"Windows 10","version":"10.0.0","manufacturer":"Microsoft","bits":null},"client":{"name":"Brave","modus":null,"version":"0.7.16","manufacturer":"Brave Software","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"47.0.2526.110","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Brave Chrome\/73.0.3683.90 Safari\/537.36"},"device":{"architecture":null,"deviceName":"Linux Desktop","marketingName":"Linux Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"Brave","modus":null,"version":"73.0.3683.90","manufacturer":"Brave Software","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"73.0.3683.90","manufacturer":"Google"}},{"headers":{"sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","user-agent":"Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.6478.114 Safari\/537.36"},"device":{"architecture":null,"deviceName":"Windows Desktop","marketingName":"Windows Desktop","manufacturer":"unknown","brand":"unknown","dualOrientation":false,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"desktop","ismobile":false,"istv":false,"bits":null},"os":{"name":"Mac OS X","marketingName":"Mac OS X","version":null,"manufacturer":"Apple","bits":null},"client":{"name":"Brave","modus":null,"version":"142.0.0","manufacturer":"Brave Software","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.6478.114","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) brave/0.7.16 Chrome/47.0.2526.110 Brave/0.36.8 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Brave",
+      "modus": null,
+      "version": "0.7.16",
+      "manufacturer": "Brave Software",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.110",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/73.0.3683.90 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Brave",
+      "modus": null,
+      "version": "73.0.3683.90",
+      "manufacturer": "Brave Software",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "73.0.3683.90",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua": "\"Chromium\";v=\"142\", \"Brave\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.114 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Brave",
+      "modus": null,
+      "version": "142.0.0",
+      "manufacturer": "Brave Software",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "142.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

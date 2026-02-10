@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; GT60 PRO) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"GT60 Pro","marketingName":"GT60 Pro","manufacturer":"Condor","brand":"Condor","dualOrientation":true,"simCount":2,"display":{"width":null,"height":null,"touch":true,"size":6.67},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"126.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; GT60) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/126.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"GT60","marketingName":"GT60","manufacturer":"Condor","brand":"Condor","dualOrientation":true,"simCount":2,"display":{"width":null,"height":null,"touch":true,"size":6.78},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"126.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"126.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; NOVA60 i Build\/TP1A.220624.014) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/135.0.7049.100 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Nova 60i","marketingName":"Nova 60i","manufacturer":"Condor","brand":"Condor","dualOrientation":true,"simCount":2,"display":{"width":1600,"height":720,"touch":true,"size":6.56},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"135.0.7049.100","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"135.0.7049.100","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; GT60 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT60 Pro",
+      "marketingName": "GT60 Pro",
+      "manufacturer": "Condor",
+      "brand": "Condor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; GT60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT60",
+      "marketingName": "GT60",
+      "manufacturer": "Condor",
+      "brand": "Condor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "126.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; NOVA60 i Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.100 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Nova 60i",
+      "marketingName": "Nova 60i",
+      "manufacturer": "Condor",
+      "brand": "Condor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "135.0.7049.100",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.100",
+      "manufacturer": "Google"
+    }
+  }
+]

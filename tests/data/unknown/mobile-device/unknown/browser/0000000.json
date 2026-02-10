@@ -1,1 +1,317 @@
-[{"headers":{"user-agent":"E750\/Q03C MAUI-browser\/MIDP2.0\/CLDC1.1\/Screen-240X320"},"device":{"architecture":null,"deviceName":"general Mobile device","marketingName":"general Mobile device","manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":"MAUI Browser","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"X6\/Q03C MAUI-browser\/MIDP2.0\/CLDC1.1\/Screen-240X320"},"device":{"architecture":null,"deviceName":"general Mobile device","marketingName":"general Mobile device","manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"Java ME","marketingName":"Java ME","version":null,"manufacturer":"Sun","bits":null},"client":{"name":"MAUI Browser","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}},{"headers":{"user-agent":"mozilla\/5.0 (x11; u; linux; de-de) applewebkit\/532.4 (khtml, like gecko) wetab-browser safari\/532.4"},"device":{"architecture":null,"deviceName":"general Mobile device","marketingName":"general Mobile device","manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"Linux","marketingName":"Linux","version":null,"manufacturer":"Linux Foundation","bits":null},"client":{"name":"WeTab Browser","modus":null,"version":null,"manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"532.4.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Browse\/0.6 (Linux 3.10.0+; RemixOS 5.1.1; RemixOS SDK built for x86; en_us) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.0.0 Desktop (Opera Mini\/Compression)"},"device":{"architecture":null,"deviceName":"general Mobile device","marketingName":"general Mobile device","manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"Remix OS","marketingName":"Remix OS","version":"1.0.0","manufacturer":"Jide","bits":null},"client":{"name":"Browse","modus":null,"version":"0.6.0","manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"39.0.0.0","manufacturer":"Google"}},{"headers":{"user-agent":"Browse\/0.6 (Linux 3.10.0+; RemixOS 6.0; RemixOS SDK built for x86; en_us) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/44.0.2403.119 Desktop"},"device":{"architecture":null,"deviceName":"general Mobile device","marketingName":"general Mobile device","manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"Remix OS","marketingName":"Remix OS","version":"2.0.0","manufacturer":"Jide","bits":null},"client":{"name":"Browse","modus":null,"version":"0.6.0","manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"44.0.2403.119","manufacturer":"Google"}},{"headers":{"user-agent":"TOPS\/1.0 WoPhone\/1.0 UPhone\/1.0 Browser\/UPhoneWebBrowser1.0 Profile\/MIDP-1.0 Configuration\/CLDC-1.0 Mozilla\/5.0+(Linux;+U;+UPhone+TOPS+1.0UPhone+TOPS+1.0;+zh-cn;+Android+9.8)+AppleWebKit\/532.9++UPhoneWebKit\/532.9++(KHTML, like Gecko)+Mobile+Safari\/532.9+"},"device":{"architecture":null,"deviceName":"general Mobile device","marketingName":"general Mobile device","manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":"WoPhone","marketingName":"WoPhone","version":"1.0.0","manufacturer":"unknown","bits":null},"client":{"name":"UPhone Browser","modus":null,"version":"1.0.0","manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"532.9.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (compatible; U; NETFLIX) AppleWebKit\/533.3 (KHTML, like Gecko) Qt\/4.7.0 Safari\/533.3 Netflix\/3.2 (DEVTYPE=RKU-42XXX-; CERTVER=0) QtWebKit\/2.2, Roku 3\/7.0 (Roku, 4200X, Wireless)"},"device":{"architecture":null,"deviceName":"general Mobile device","marketingName":"general Mobile device","manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"mobile-device","ismobile":true,"istv":false,"bits":null},"os":{"name":null,"marketingName":null,"version":null,"manufacturer":"unknown","bits":null},"client":{"name":"QtWebkit","modus":null,"version":"2.2.0","manufacturer":"unknown","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.3.0","manufacturer":"Apple"}}]
+[
+  {
+    "headers": {
+      "user-agent": "E750/Q03C MAUI-browser/MIDP2.0/CLDC1.1/Screen-240X320"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "MAUI Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "X6/Q03C MAUI-browser/MIDP2.0/CLDC1.1/Screen-240X320"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "MAUI Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "mozilla/5.0 (x11; u; linux; de-de) applewebkit/532.4 (khtml, like gecko) wetab-browser safari/532.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "WeTab Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "532.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Browse/0.6 (Linux 3.10.0+; RemixOS 5.1.1; RemixOS SDK built for x86; en_us) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.0.0 Desktop (Opera Mini/Compression)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Remix OS",
+      "marketingName": "Remix OS",
+      "version": "1.0.0",
+      "manufacturer": "Jide",
+      "bits": null
+    },
+    "client": {
+      "name": "Browse",
+      "modus": null,
+      "version": "0.6.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Browse/0.6 (Linux 3.10.0+; RemixOS 6.0; RemixOS SDK built for x86; en_us) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.119 Desktop"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Remix OS",
+      "marketingName": "Remix OS",
+      "version": "2.0.0",
+      "manufacturer": "Jide",
+      "bits": null
+    },
+    "client": {
+      "name": "Browse",
+      "modus": null,
+      "version": "0.6.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TOPS/1.0 WoPhone/1.0 UPhone/1.0 Browser/UPhoneWebBrowser1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 Mozilla/5.0+(Linux;+U;+UPhone+TOPS+1.0UPhone+TOPS+1.0;+zh-cn;+Android+9.8)+AppleWebKit/532.9++UPhoneWebKit/532.9++(KHTML, like Gecko)+Mobile+Safari/532.9+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "WoPhone",
+      "marketingName": "WoPhone",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "UPhone Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "532.9.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; U; NETFLIX) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.0 Safari/533.3 Netflix/3.2 (DEVTYPE=RKU-42XXX-; CERTVER=0) QtWebKit/2.2, Roku 3/7.0 (Roku, 4200X, Wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "QtWebkit",
+      "modus": null,
+      "version": "2.2.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.3.0",
+      "manufacturer": "Apple"
+    }
+  }
+]

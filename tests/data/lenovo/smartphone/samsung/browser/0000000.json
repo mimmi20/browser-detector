@@ -1,1 +1,137 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; moto g(6) Build\/PPS29.55-34) AppleWebKit\/537.36 (KHTML, like Gecko) SamsungBrowser\/9.2 Chrome\/67.0.3396.87 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Moto G6","marketingName":"Moto G6","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":5.7},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Samsung Browser","modus":null,"version":"9.2.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"67.0.3396.87","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; moto g(7)) AppleWebKit\/537.36 (KHTML, like Gecko) SamsungBrowser\/10.1 Chrome\/71.0.3578.99 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"Moto G7","marketingName":"Moto G7","manufacturer":"Lenovo","brand":"Motorola","dualOrientation":true,"simCount":1,"display":{"width":2270,"height":1080,"touch":true,"size":6.2},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Samsung Browser","modus":null,"version":"10.1.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"71.0.3578.99","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 11; Lenovo L79031) AppleWebKit\/537.36 (KHTML, like Gecko) SamsungBrowser\/18.0 Chrome\/99.0.4844.88 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"L79031","marketingName":"Legion Pro","manufacturer":"Lenovo","brand":"Lenovo","dualOrientation":true,"simCount":2,"display":{"width":2340,"height":1080,"touch":true,"size":6.65},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"11.0.0","manufacturer":"Google","bits":null},"client":{"name":"Samsung Browser","modus":null,"version":"18.0.0","manufacturer":"Samsung","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"99.0.4844.88","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto g(6) Build/PPS29.55-34) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.2 Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G6",
+      "marketingName": "Moto G6",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.2.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto g(7)) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/10.1 Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G7",
+      "marketingName": "Moto G7",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2270,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "10.1.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.99",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Lenovo L79031) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/18.0 Chrome/99.0.4844.88 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "L79031",
+      "marketingName": "Legion Pro",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.65
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "18.0.0",
+      "manufacturer": "Samsung",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
+      "manufacturer": "Google"
+    }
+  }
+]

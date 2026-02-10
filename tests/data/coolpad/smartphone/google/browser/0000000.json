@@ -1,1 +1,227 @@
-[{"headers":{"user-agent":"Mozilla\/5.0 (Linux; U; Android 2.3.5; zh-cn; Coolpad-8076_TD\/1.0 Android\/2.3.5 Release\/03.11.2012 Browser\/AppleWebKit533.1 Build\/MocorDroid2.3.5) AppleWebKit\/533.1 (KHTML, like Gecko) Version\/4.0 Mobile Safari\/533.1"},"device":{"architecture":null,"deviceName":"8076","marketingName":"8076","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":1,"display":{"width":800,"height":480,"touch":true,"size":4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"MocorDroid","marketingName":"MocorDroid","version":"2.3.5","manufacturer":"unknown","bits":null},"client":{"name":"Android Webkit","modus":null,"version":"4.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":"533.1.0","manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; cp3705A) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/76.0.3809.111 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"3705A","marketingName":"Legacy LTE-A US","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":1,"display":{"width":2160,"height":1080,"touch":true,"size":6.4},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"76.0.3809.111","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"76.0.3809.111","manufacturer":"Google"}},{"headers":{"user-agent":"Dalvik\/2.1.0 (Linux; U; Android 9; aosp_c106 Build\/PQ3B.190801.002)"},"device":{"architecture":null,"deviceName":"C106","marketingName":"Cool 1","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android Opensource Project","marketingName":"AOSP","version":"9.0.0","manufacturer":"unknown","bits":null},"client":{"name":"Android Browser","modus":null,"version":"2.1.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"WebKit","version":null,"manufacturer":"Apple"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 9; lineage_c106 Build\/PQ3A.190801.002) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/77.0.3865.116 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"C106","marketingName":"Cool 1","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":1,"display":{"width":1920,"height":1080,"touch":true,"size":5.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"9.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome WebView","modus":null,"version":"77.0.3865.116","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"77.0.3865.116","manufacturer":"Google"}},{"headers":{"user-agent":"Mozilla\/5.0 (Linux; Android 13; CP23NV3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/107.0.0.0 Mobile Safari\/537.36"},"device":{"architecture":null,"deviceName":"CP23NV3","marketingName":"Y60 5G","manufacturer":"Coolpad","brand":"Coolpad","dualOrientation":true,"simCount":2,"display":{"width":480,"height":320,"touch":true,"size":3.5},"type":"smartphone","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":"13.0.0","manufacturer":"Google","bits":null},"client":{"name":"Chrome","modus":null,"version":"107.0.0.0","manufacturer":"Google","type":"browser","isbot":false,"bits":null},"engine":{"name":"Blink","version":"107.0.0.0","manufacturer":"Google"}}]
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; zh-cn; Coolpad-8076_TD/1.0 Android/2.3.5 Release/03.11.2012 Browser/AppleWebKit533.1 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "8076",
+      "marketingName": "8076",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; cp3705A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "3705A",
+      "marketingName": "Legacy LTE-A US",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.111",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.111",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 9; aosp_c106 Build/PQ3B.190801.002)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C106",
+      "marketingName": "Cool 1",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android Opensource Project",
+      "marketingName": "AOSP",
+      "version": "9.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; lineage_c106 Build/PQ3A.190801.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C106",
+      "marketingName": "Cool 1",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "77.0.3865.116",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.116",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; CP23NV3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CP23NV3",
+      "marketingName": "Y60 5G",
+      "manufacturer": "Coolpad",
+      "brand": "Coolpad",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]

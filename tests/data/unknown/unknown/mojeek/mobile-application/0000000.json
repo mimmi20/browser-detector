@@ -1,1 +1,51 @@
-[{"headers":{"sec-ch-ua-platform":"Android","x-requested-with":"mojeek.app","sec-ch-ua":"\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Android WebView\";v=\"128\"","sec-ch-ua-mobile":"?1","user-agent":"mojeek-app"},"device":{"architecture":null,"deviceName":null,"marketingName":null,"manufacturer":"unknown","brand":"unknown","dualOrientation":null,"simCount":0,"display":{"width":null,"height":null,"touch":false,"size":null},"type":"unknown","ismobile":true,"istv":false,"bits":null},"os":{"name":"Android","marketingName":"Android","version":null,"manufacturer":"Google","bits":null},"client":{"name":"Mojeek App","modus":null,"version":null,"manufacturer":"mojeek","type":"mobile-application","isbot":false,"bits":null},"engine":{"name":null,"version":null,"manufacturer":"unknown"}}]
+[
+  {
+    "headers": {
+      "sec-ch-ua-platform": "Android",
+      "x-requested-with": "mojeek.app",
+      "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Android WebView\";v=\"128\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "mojeek-app"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Mojeek App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mojeek",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.0",
+      "manufacturer": "Google"
+    }
+  }
+]
