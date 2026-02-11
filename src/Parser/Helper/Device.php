@@ -89,6 +89,8 @@ final class Device implements DeviceInterface
             'lm-t605' => 'lg=lg lm-t605',
             '10a30q' => 'lg=lg 10a30q',
             'lglk430' => 'lg=lg lk430',
+            'lg-d726' => 'lg=lg d726',
+            'lg-h920' => 'lg=lg h920',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -1260,6 +1262,8 @@ final class Device implements DeviceInterface
             'xig01' => 'xiaomi=xiaomi xig01',
             'mix' => 'xiaomi=xiaomi mi mix',
             '25057rn09e' => 'xiaomi=xiaomi 25057rn09e',
+            'redmi k30 pro' => 'xiaomi=xiaomi redmi k30 pro',
+            'redmi k30' => 'xiaomi=xiaomi redmi k30',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2429,6 +2433,11 @@ final class Device implements DeviceInterface
             'sm-x236', 'samsung sm-x236' => 'samsung=samsung sm-x236',
             'sm-x236b', 'samsung sm-x236b' => 'samsung=samsung sm-x236b',
             'sm-e055f', 'samsung sm-e055f' => 'samsung=samsung sm-e055f',
+            'sm-g711a', 'samsung sm-g711a' => 'samsung=samsung sm-g711a',
+            'sm-n912t', 'samsung sm-n912t' => 'samsung=samsung sm-n912t',
+            'sm-g440', 'samsung sm-g440' => 'samsung=samsung sm-g440',
+            'sm-g480', 'samsung sm-g480' => 'samsung=samsung sm-g480',
+            'sm-d907f', 'samsung sm-d907f' => 'samsung=samsung sm-d907f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3024,6 +3033,7 @@ final class Device implements DeviceInterface
             'mep-an00', 'huawei mep-an00' => 'huawei=huawei mep-an00',
             'nla-lx2', 'huawei nla-lx2' => 'huawei=huawei nla-lx2',
             'log-an00', 'huawei log-an00' => 'huawei=huawei log-an00',
+            'ascend g310', 'huawei ascend g310' => 'huawei=huawei ascend g310',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -3212,6 +3222,8 @@ final class Device implements DeviceInterface
             'ta-1448' => 'nokia=nokia ta-1448',
             'ta-1476' => 'nokia=nokia ta-1476',
             'nokia g400 5g' => 'nokia=nokia g400 5g',
+            'nokia 3110' => 'nokia=nokia 3110',
+            'nokia 1000 4g' => 'nokia=nokia 1000 4g',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -4166,6 +4178,7 @@ final class Device implements DeviceInterface
             'i2009' => 'vivo=vivo i2009',
             'v1813a' => 'vivo=vivo v1813a',
             'v1813t' => 'vivo=vivo v1813t',
+            'v1924a' => 'vivo=vivo v1924a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4667,6 +4680,7 @@ final class Device implements DeviceInterface
             'htc desire 22 pro' => 'htc=htc desire 22 pro',
             'htc a103' => 'htc=htc a103',
             'wildfire e5' => 'htc=htc wildfire e5',
+            'htc ones dual sim' => 'htc=htc one s dual sim',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea', 'p25_t_eea' => 'teclast=teclast p25t_eea',
@@ -5012,6 +5026,9 @@ final class Device implements DeviceInterface
             'infinix zero 40' => 'infinix=infinix zero 40',
             'infinix zero 40 5g' => 'infinix=infinix zero 40 5g',
             'infinix x6857b' => 'infinix=infinix x6857b',
+            'infinix x650c' => 'infinix=infinix x650c',
+            'infinix x650b' => 'infinix=infinix x650b',
+            'infinix x650' => 'infinix=infinix x650',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel

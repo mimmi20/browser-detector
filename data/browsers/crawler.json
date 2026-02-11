@@ -456,19 +456,6 @@
     },
     "engine": null
   },
-  "repo-lookout-bot": {
-    "name": "RepoLookoutBot",
-    "manufacturer": "crissy-field",
-    "type": "crawler",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "RepoLookoutBot",
-        "RepoLookoutBot\\/v"
-      ]
-    },
-    "engine": null
-  },
   "scrapy": {
     "name": "Scrapy",
     "manufacturer": "unknown",

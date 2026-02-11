@@ -111,6 +111,8 @@ final class DeviceTest extends TestCase
             ['LM-T605', 'lg=lg lm-t605'],
             ['10A30Q', 'lg=lg 10a30q'],
             ['LGLK430', 'lg=lg lk430'],
+            ['LG-D726', 'lg=lg d726'],
+            ['LG-H920', 'lg=lg h920'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
@@ -1293,6 +1295,8 @@ final class DeviceTest extends TestCase
             ['XIG01', 'xiaomi=xiaomi xig01'],
             ['MIX', 'xiaomi=xiaomi mi mix'],
             ['25057RN09E', 'xiaomi=xiaomi 25057rn09e'],
+            ['Redmi K30 Pro', 'xiaomi=xiaomi redmi k30 pro'],
+            ['Redmi K30', 'xiaomi=xiaomi redmi k30'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3159,6 +3163,16 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-X236B', 'samsung=samsung sm-x236b'],
             ['SM-E055F', 'samsung=samsung sm-e055f'],
             ['SAMSUNG SM-E055F', 'samsung=samsung sm-e055f'],
+            ['SM-G711A', 'samsung=samsung sm-g711a'],
+            ['SAMSUNG SM-G711A', 'samsung=samsung sm-g711a'],
+            ['SM-N912T', 'samsung=samsung sm-n912t'],
+            ['SAMSUNG SM-N912T', 'samsung=samsung sm-n912t'],
+            ['SM-G440', 'samsung=samsung sm-g440'],
+            ['SAMSUNG SM-G440', 'samsung=samsung sm-g440'],
+            ['SM-G480', 'samsung=samsung sm-g480'],
+            ['SAMSUNG SM-G480', 'samsung=samsung sm-g480'],
+            ['SM-D907F', 'samsung=samsung sm-d907f'],
+            ['SAMSUNG SM-D907F', 'samsung=samsung sm-d907f'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -3785,6 +3799,8 @@ final class DeviceTest extends TestCase
             ['HUAWEI NLA-LX2', 'huawei=huawei nla-lx2'],
             ['LOG-AN00', 'huawei=huawei log-an00'],
             ['HUAWEI LOG-AN00', 'huawei=huawei log-an00'],
+            ['Ascend G310', 'huawei=huawei ascend g310'],
+            ['HUAWEI Ascend G310', 'huawei=huawei ascend g310'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -3984,6 +4000,8 @@ final class DeviceTest extends TestCase
             ['TA-1448', 'nokia=nokia ta-1448'],
             ['TA-1476', 'nokia=nokia ta-1476'],
             ['Nokia G400 5G', 'nokia=nokia g400 5g'],
+            ['Nokia 3110', 'nokia=nokia 3110'],
+            ['Nokia 1000 4G', 'nokia=nokia 1000 4g'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
@@ -4947,6 +4965,7 @@ final class DeviceTest extends TestCase
             ['I2009', 'vivo=vivo i2009'],
             ['V1813A', 'vivo=vivo v1813a'],
             ['V1813T', 'vivo=vivo v1813t'],
+            ['V1924A', 'vivo=vivo v1924a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -5471,6 +5490,7 @@ final class DeviceTest extends TestCase
             ['HTC Desire 22 pro', 'htc=htc desire 22 pro'],
             ['HTC A103', 'htc=htc a103'],
             ['Wildfire E5', 'htc=htc wildfire e5'],
+            ['HTC OneS dual sim', 'htc=htc one s dual sim'],
             // teclast
             ['P30S_EEA', 'teclast=teclast p30s_eea'],
             ['P25T_EEA', 'teclast=teclast p25t_eea'],
@@ -5826,6 +5846,9 @@ final class DeviceTest extends TestCase
             ['Infinix ZERO 40', 'infinix=infinix zero 40'],
             ['Infinix ZERO 40 5G', 'infinix=infinix zero 40 5g'],
             ['Infinix X6857B', 'infinix=infinix x6857b'],
+            ['Infinix X650C', 'infinix=infinix x650c'],
+            ['Infinix X650B', 'infinix=infinix x650b'],
+            ['Infinix X650', 'infinix=infinix x650'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
