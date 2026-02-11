@@ -2035,6 +2035,26 @@ enum Company: string implements CompanyInterface
 
     case tCraft = 'T-Craft';
 
+    case evc = 'evc';
+
+    case bidtellect = 'Bidtellect';
+
+    case metz = 'Metz';
+
+    case softbank = 'Softbank';
+
+    case loewe = 'Loewe';
+
+    case safeDNS = 'SafeDNS';
+
+    case beafon = 'Beafon';
+
+    case elephone = 'Elephone';
+
+    case crissyField = 'Crissy Field';
+
+    case kleissnerInvestments = 'Kleissner Investments';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3050,6 +3070,16 @@ enum Company: string implements CompanyInterface
             'tenable', 'tenable, inc.' => self::tenable,
             'verizon' => self::verizon,
             'tcraft', 't-craft' => self::tCraft,
+            'evc', 'eventure capital partners ii, llc' => self::evc,
+            'bidtellect' => self::bidtellect,
+            'metz' => self::metz,
+            'softbank', 'softbank mobile corp.' => self::softbank,
+            'loewe' => self::loewe,
+            'safedns', 'safedns, inc.', 'safe-dns' => self::safeDNS,
+            'beafon' => self::beafon,
+            'elephone' => self::elephone,
+            'crissyfield', 'crissy-field', 'crissy field gmbh', 'crissy field' => self::crissyField,
+            'kleissnerinvestments', 'kleissner-investments', 'kleissner investments s.r.o.', 'kleissner investments' => self::kleissnerInvestments,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3442,6 +3472,11 @@ enum Company: string implements CompanyInterface
             self::erieDataSystems => 'Erie Data Systems, LLC',
             self::alexa => 'Alexa Internet, Inc',
             self::tenable => 'Tenable, Inc.',
+            self::evc => 'eVenture Capital Partners II, LLC',
+            self::softbank => 'Softbank Mobile Corp.',
+            self::safeDNS => 'SafeDNS, Inc.',
+            self::crissyField => 'Crissy Field GmbH',
+            self::kleissnerInvestments => 'Kleissner Investments s.r.o.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3784,6 +3819,9 @@ enum Company: string implements CompanyInterface
             self::alexa => 'alexa-internet',
             self::dassaultSystemes => 'dassault-systemes',
             self::tCraft => 't-craft',
+            self::safeDNS => 'safe-dns',
+            self::crissyField => 'crissy-field',
+            self::kleissnerInvestments => 'kleissner-investments',
             default => $this->name,
         };
     }

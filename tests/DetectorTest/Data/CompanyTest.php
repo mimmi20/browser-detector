@@ -6100,6 +6100,66 @@ final class CompanyTest extends TestCase
                 'brandname' => 'T-Craft',
                 'key' => 't-craft',
             ],
+            [
+                'type' => 'evc',
+                'name' => 'eVenture Capital Partners II, LLC',
+                'brandname' => 'evc',
+                'key' => 'evc',
+            ],
+            [
+                'type' => 'Bidtellect',
+                'name' => 'Bidtellect',
+                'brandname' => 'Bidtellect',
+                'key' => 'bidtellect',
+            ],
+            [
+                'type' => 'Metz',
+                'name' => 'Metz',
+                'brandname' => 'Metz',
+                'key' => 'metz',
+            ],
+            [
+                'type' => 'Softbank',
+                'name' => 'Softbank Mobile Corp.',
+                'brandname' => 'Softbank',
+                'key' => 'softbank',
+            ],
+            [
+                'type' => 'Loewe',
+                'name' => 'Loewe',
+                'brandname' => 'Loewe',
+                'key' => 'loewe',
+            ],
+            [
+                'type' => 'SafeDNS',
+                'name' => 'SafeDNS, Inc.',
+                'brandname' => 'SafeDNS',
+                'key' => 'safe-dns',
+            ],
+            [
+                'type' => 'Beafon',
+                'name' => 'Beafon',
+                'brandname' => 'Beafon',
+                'key' => 'beafon',
+            ],
+            [
+                'type' => 'Elephone',
+                'name' => 'Elephone',
+                'brandname' => 'Elephone',
+                'key' => 'elephone',
+            ],
+            [
+                'type' => 'Crissy Field',
+                'name' => 'Crissy Field GmbH',
+                'brandname' => 'Crissy Field',
+                'key' => 'crissy-field',
+            ],
+            [
+                'type' => 'Kleissner Investments',
+                'name' => 'Kleissner Investments s.r.o.',
+                'brandname' => 'Kleissner Investments',
+                'key' => 'kleissner-investments',
+            ],
         ];
     }
 

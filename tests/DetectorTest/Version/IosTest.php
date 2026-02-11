@@ -260,6 +260,10 @@ final class IosTest extends TestCase
                 'TuneIn Radio/27.5.0; iPad6,8; iPadOS/16.7.5',
                 '16.7.5',
             ],
+            [
+                'Mozilla/5.0 (iPod; CPU iPod OS 9_3_5; like Mac OS X) AppleWebKit/602.40 (KHTML, like Gecko) Chrome/52.0.3180.258 Mobile Safari/601.8',
+                '9.3.5',
+            ],
         ];
     }
 

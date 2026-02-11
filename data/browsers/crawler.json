@@ -2019,5 +2019,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "safe-dns-bot": {
+    "name": "SafeDNSBot",
+    "manufacturer": "safe-dns",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SafeDNSBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
