@@ -88,6 +88,7 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.2.50.Honey.220 Model/Hisense-NT72671D'],
             ['VIZIO V755M-K04 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa'],
             ['Mozilla/5.0 (Linux;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0'],
+            ['Sacred Sounds/2.2.1 (Roku 13.0.0; en_US; Roku Ultra; Build/24056)'],
         ];
     }
 

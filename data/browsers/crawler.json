@@ -2018,5 +2018,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "google-read-aloud": {
+    "name": "Google Read Aloud",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Read-Aloud"
+      ]
+    },
+    "engine": null
   }
 }

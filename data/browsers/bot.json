@@ -2600,18 +2600,6 @@
     },
     "engine": "unknown"
   },
-  "google-read-aloud": {
-    "name": "Google Read Aloud",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google-Read-Aloud"
-      ]
-    },
-    "engine": null
-  },
   "google-site-verification": {
     "name": "Google-Site-Verification",
     "manufacturer": "google",

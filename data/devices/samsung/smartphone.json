@@ -19329,7 +19329,7 @@
   },
   "samsung sm-g9287": {
     "deviceName": "SM-G9287",
-    "marketingName": "Galaxy S6 Edge+",
+    "marketingName": "Galaxy S6 Edge+ (Hong Kong)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -19489,7 +19489,7 @@
   },
   "samsung sm-g9287c": {
     "deviceName": "SM-G9287C",
-    "marketingName": "Galaxy S6 Edge+ Duos",
+    "marketingName": "Galaxy S6 Edge+ Duos (Malaysia, Philippines)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -19505,7 +19505,7 @@
   },
   "samsung sm-g928f": {
     "deviceName": "SM-G928F",
-    "marketingName": "Galaxy S6 Edge+ LTE",
+    "marketingName": "Galaxy S6 Edge+ LTE (Europe)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -19569,7 +19569,7 @@
   },
   "samsung sm-g928g": {
     "deviceName": "SM-G928G",
-    "marketingName": "Galaxy S6 Edge+ LTE (Mexico)",
+    "marketingName": "Galaxy S6 Edge+ LTE (India)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -19586,6 +19586,38 @@
   "samsung sm-g928t": {
     "deviceName": "SM-G928T",
     "marketingName": "Galaxy S6 Edge+ LTE (T-Mobile)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g928r": {
+    "deviceName": "SM-G928R",
+    "marketingName": "Galaxy S6 Edge+ LTE (US Cellular)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g928h": {
+    "deviceName": "SM-G928H",
+    "marketingName": "Galaxy S6 Edge+ LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -19873,7 +19905,7 @@
   },
   "samsung sm-g9350": {
     "deviceName": "SM-G9350",
-    "marketingName": "Galaxy S7 Edge",
+    "marketingName": "Galaxy S7 Edge (Hong Kong)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -19905,7 +19937,7 @@
   },
   "samsung sm-g935fd": {
     "deviceName": "SM-G935FD",
-    "marketingName": "Galaxy S7 Edge",
+    "marketingName": "Galaxy S7 Edge (Southeast Asia, India)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -19953,7 +19985,7 @@
   },
   "samsung sm-g935r": {
     "deviceName": "SM-G935R",
-    "marketingName": "Galaxy S7 Edge",
+    "marketingName": "Galaxy S7 Edge (US Cellular)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -19985,7 +20017,7 @@
   },
   "samsung sm-g935w8": {
     "deviceName": "SM-G935W8",
-    "marketingName": "Galaxy S7 Edge",
+    "marketingName": "Galaxy S7 Edge (Canada)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -20098,6 +20130,54 @@
   "samsung sm-g935v": {
     "deviceName": "SM-G935V",
     "marketingName": "Galaxy S7 Edge (Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g9358": {
+    "deviceName": "SM-G9358",
+    "marketingName": "Galaxy S7 Edge",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g935r4": {
+    "deviceName": "SM-G935R4",
+    "marketingName": "Galaxy S7 Edge",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g935vc": {
+    "deviceName": "SM-G935VC",
+    "marketingName": "Galaxy S7 Edge",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -22721,16 +22801,32 @@
   },
   "samsung gt-i9406v": {
     "deviceName": "GT-I9406V",
-    "marketingName": "GT-I9406V",
+    "marketingName": "Galaxy S4",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
     "simCount": 1,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung gt-i9406n": {
+    "deviceName": "GT-I9406N",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"

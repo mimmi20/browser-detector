@@ -86,8 +86,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $regexes = [
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
-            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/^mozilla\/[\d.]+ \((linux|andr[o0]id);(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \((linux|andr[o0]id);(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
