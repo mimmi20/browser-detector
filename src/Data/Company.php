@@ -2057,6 +2057,12 @@ enum Company: string implements CompanyInterface
 
     case ujj = 'UJJ';
 
+    case interServer = 'InterServer';
+
+    case roku = 'Roku';
+
+    case deertime = 'Deertime';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3083,6 +3089,9 @@ enum Company: string implements CompanyInterface
             'crissyfield', 'crissy-field', 'crissy field gmbh', 'crissy field' => self::crissyField,
             'kleissnerinvestments', 'kleissner-investments', 'kleissner investments s.r.o.', 'kleissner investments' => self::kleissnerInvestments,
             'ujj' => self::ujj,
+            'interserver', 'interserver, inc.', 'inter-server' => self::interServer,
+            'roku', 'roku, inc.' => self::roku,
+            'deertime' => self::deertime,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3480,6 +3489,8 @@ enum Company: string implements CompanyInterface
             self::safeDNS => 'SafeDNS, Inc.',
             self::crissyField => 'Crissy Field GmbH',
             self::kleissnerInvestments => 'Kleissner Investments s.r.o.',
+            self::interServer => 'InterServer, Inc.',
+            self::roku => 'Roku, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3825,6 +3836,7 @@ enum Company: string implements CompanyInterface
             self::safeDNS => 'safe-dns',
             self::crissyField => 'crissy-field',
             self::kleissnerInvestments => 'kleissner-investments',
+            self::interServer => 'inter-server',
             default => $this->name,
         };
     }

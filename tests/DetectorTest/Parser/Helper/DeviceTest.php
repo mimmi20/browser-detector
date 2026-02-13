@@ -4443,6 +4443,7 @@ final class DeviceTest extends TestCase
             ['motorola edge 5G UW (2021)', 'motorola=motorola edge 5g uw 2021'],
             ['motorola edge 5G UW (2021', 'motorola=motorola edge 5g uw 2021'],
             ['motorola edge 60', 'motorola=motorola edge 60'],
+            ['motorola edge 60 pro', 'motorola=motorola edge 60 pro'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -8235,6 +8236,7 @@ final class DeviceTest extends TestCase
             ['32EVF5000S', 'everfine=everfine 32evf5000s'],
             // acepad
             ['A130-2024', 'acepad=acepad a130-2024'],
+            ['A145-2024', 'acepad=acepad a145-2024'],
             // korax
             ['KORAX-Eurobox', 'korax=korax eurobox'],
             ['KORAX-Eurobox Pro', 'korax=korax eurobox pro'],
@@ -8571,6 +8573,8 @@ final class DeviceTest extends TestCase
             ['Elephone P4000', 'elephone=elephone p4000'],
             // ujj
             ['U6_EEA', 'ujj=ujj u6_eea'],
+            // deertime
+            ['E6_EEA', 'deertime=deertime e6_eea'],
             // other
             ['Model"', null],
             [': "', null],

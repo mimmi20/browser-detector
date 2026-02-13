@@ -1481,5 +1481,17 @@
       ]
     },
     "engine": null
+  },
+  "tutanota": {
+    "name": "tutanota",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "tutanota-desktop"
+      ]
+    },
+    "engine": null
   }
 }

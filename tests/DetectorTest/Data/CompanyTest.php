@@ -6166,6 +6166,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'UJJ',
                 'key' => 'ujj',
             ],
+            [
+                'type' => 'InterServer',
+                'name' => 'InterServer, Inc.',
+                'brandname' => 'InterServer',
+                'key' => 'inter-server',
+            ],
+            [
+                'type' => 'Roku',
+                'name' => 'Roku, Inc.',
+                'brandname' => 'Roku',
+                'key' => 'roku',
+            ],
+            [
+                'type' => 'Deertime',
+                'name' => 'Deertime',
+                'brandname' => 'Deertime',
+                'key' => 'deertime',
+            ],
         ];
     }
 

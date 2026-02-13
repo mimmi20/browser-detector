@@ -2030,5 +2030,17 @@
       ]
     },
     "engine": null
+  },
+  "very-hip": {
+    "name": "VeryHip",
+    "manufacturer": "inter-server",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VeryHip"
+      ]
+    },
+    "engine": null
   }
 }

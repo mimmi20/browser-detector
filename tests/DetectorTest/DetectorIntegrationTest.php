@@ -7567,6 +7567,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua' => '"HeadlessChrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ABEvalBot/0.1) Version/11.1.2 Safari/605.1.15',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua' => '"HeadlessChrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ABEvalBot/0.1) Version/11.1.2 Safari/605.1.15',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Linux',
+                        'marketingName' => 'Linux',
+                        'version' => null,
+                        'manufacturer' => 'Linux Foundation',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'ABEvalBot',
+                        'modus' => null,
+                        'version' => '0.1.0',
+                        'manufacturer' => 'unknown',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '123.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

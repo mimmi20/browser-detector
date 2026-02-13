@@ -3630,6 +3630,7 @@ final class Device implements DeviceInterface
             'xt2503-4' => 'motorola=motorola xt2503-4',
             'motorola edge 5g uw (2021)', 'motorola edge 5g uw (2021' => 'motorola=motorola edge 5g uw 2021',
             'motorola edge 60' => 'motorola=motorola edge 60',
+            'motorola edge 60 pro' => 'motorola=motorola edge 60 pro',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -7211,6 +7212,7 @@ final class Device implements DeviceInterface
             '32evf5000s' => 'everfine=everfine 32evf5000s',
             // acepad
             'a130-2024' => 'acepad=acepad a130-2024',
+            'a145-2024' => 'acepad=acepad a145-2024',
             // korax
             'korax-eurobox' => 'korax=korax eurobox',
             'korax-eurobox pro' => 'korax=korax eurobox pro',
@@ -7544,6 +7546,8 @@ final class Device implements DeviceInterface
             'elephone p4000' => 'elephone=elephone p4000',
             // ujj
             'u6_eea' => 'ujj=ujj u6_eea',
+            // deertime
+            'e6_eea' => 'deertime=deertime e6_eea',
             // other
             default => null,
         };
