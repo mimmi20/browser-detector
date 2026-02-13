@@ -687,6 +687,11 @@ final class DeviceTest extends TestCase
             ['OPPO R11', 'oppo=oppo r11'],
             ['OPPO R11s', 'oppo=oppo r11s'],
             ['OPPO R11st', 'oppo=oppo r11st'],
+            ['CPH2363', 'oppo=oppo cph2363'],
+            ['CPH2373', 'oppo=oppo cph2373'],
+            ['CPH2387', 'oppo=oppo cph2387'],
+            ['CPH2407', 'oppo=oppo cph2407'],
+            ['CPH2421', 'oppo=oppo cph2421'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -1297,6 +1302,7 @@ final class DeviceTest extends TestCase
             ['25057RN09E', 'xiaomi=xiaomi 25057rn09e'],
             ['Redmi K30 Pro', 'xiaomi=xiaomi redmi k30 pro'],
             ['Redmi K30', 'xiaomi=xiaomi redmi k30'],
+            ['Xiaomi 13T Pro', 'xiaomi=xiaomi 13t pro'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -1423,6 +1429,15 @@ final class DeviceTest extends TestCase
             ['ZTE A2025H', 'zte=zte a2025h'],
             ['ZTE 8012N', 'zte=zte 8012n'],
             ['ZTE 8031', 'zte=zte 8031'],
+            ['NX725J', 'zte=zte nx725j'],
+            ['NX729J', 'zte=zte nx729j'],
+            ['NX733J', 'zte=zte nx733j'],
+            ['NX736J', 'zte=zte nx736j'],
+            ['NX769J', 'zte=zte nx769j'],
+            ['NX789J', 'zte=zte nx789j'],
+            ['NX907J', 'zte=zte nx907j'],
+            ['NX724J', 'zte=zte nx724j'],
+            ['NX712J', 'zte=zte nx712j'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -2972,6 +2987,12 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G155', 'samsung=samsung sm-g155'],
             ['SM-G150NS', 'samsung=samsung sm-g150ns'],
             ['SAMSUNG SM-G150NS', 'samsung=samsung sm-g150ns'],
+            ['SM-G150N0', 'samsung=samsung sm-g150n0'],
+            ['SAMSUNG SM-G150N0', 'samsung=samsung sm-g150n0'],
+            ['SM-G150NK', 'samsung=samsung sm-g150nk'],
+            ['SAMSUNG SM-G150NK', 'samsung=samsung sm-g150nk'],
+            ['SM-G150NL', 'samsung=samsung sm-g150nl'],
+            ['SAMSUNG SM-G150NL', 'samsung=samsung sm-g150nl'],
             ['SM-G990W2', 'samsung=samsung sm-g990w2'],
             ['SAMSUNG SM-G990W2', 'samsung=samsung sm-g990w2'],
             ['SM-G990W', 'samsung=samsung sm-g990w'],
@@ -4421,6 +4442,7 @@ final class DeviceTest extends TestCase
             ['XT2503-4', 'motorola=motorola xt2503-4'],
             ['motorola edge 5G UW (2021)', 'motorola=motorola edge 5g uw 2021'],
             ['motorola edge 5G UW (2021', 'motorola=motorola edge 5g uw 2021'],
+            ['motorola edge 60', 'motorola=motorola edge 60'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -5311,6 +5333,7 @@ final class DeviceTest extends TestCase
             ['Fire 5 Pro', 'doogee=doogee fire 5 pro'],
             ['Fire 7', 'doogee=doogee fire 7'],
             ['Note56 Plus', 'doogee=doogee note 56 plus'],
+            ['V Max Plus', 'doogee=doogee v max plus'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -8546,6 +8569,8 @@ final class DeviceTest extends TestCase
             ['QMV7B', 'verizon=verizon qmv7b'],
             // elephone
             ['Elephone P4000', 'elephone=elephone p4000'],
+            // ujj
+            ['U6_EEA', 'ujj=ujj u6_eea'],
             // other
             ['Model"', null],
             [': "', null],

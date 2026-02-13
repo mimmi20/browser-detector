@@ -657,6 +657,11 @@ final class Device implements DeviceInterface
             'oppo r11' => 'oppo=oppo r11',
             'oppo r11s' => 'oppo=oppo r11s',
             'oppo r11st' => 'oppo=oppo r11st',
+            'cph2363' => 'oppo=oppo cph2363',
+            'cph2373' => 'oppo=oppo cph2373',
+            'cph2387' => 'oppo=oppo cph2387',
+            'cph2407' => 'oppo=oppo cph2407',
+            'cph2421' => 'oppo=oppo cph2421',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1264,6 +1269,7 @@ final class Device implements DeviceInterface
             '25057rn09e' => 'xiaomi=xiaomi 25057rn09e',
             'redmi k30 pro' => 'xiaomi=xiaomi redmi k30 pro',
             'redmi k30' => 'xiaomi=xiaomi redmi k30',
+            'xiaomi 13t pro' => 'xiaomi=xiaomi 13t pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1378,6 +1384,15 @@ final class Device implements DeviceInterface
             'zte 8010ru' => 'zte=zte 8010ru',
             'zte 8012n' => 'zte=zte 8012n',
             'zte 8031' => 'zte=zte 8031',
+            'nx725j' => 'zte=zte nx725j',
+            'nx729j' => 'zte=zte nx729j',
+            'nx733j' => 'zte=zte nx733j',
+            'nx736j' => 'zte=zte nx736j',
+            'nx769j' => 'zte=zte nx769j',
+            'nx789j' => 'zte=zte nx789j',
+            'nx907j' => 'zte=zte nx907j',
+            'nx724j' => 'zte=zte nx724j',
+            'nx712j' => 'zte=zte nx712j',
             // Samsung
             'sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -2332,6 +2347,9 @@ final class Device implements DeviceInterface
             'sm-g155s', 'samsung sm-g155s' => 'samsung=samsung sm-g155s',
             'sm-g155', 'samsung sm-g155' => 'samsung=samsung sm-g155',
             'sm-g150ns', 'samsung sm-g150ns' => 'samsung=samsung sm-g150ns',
+            'sm-g150n0', 'samsung sm-g150n0' => 'samsung=samsung sm-g150n0',
+            'sm-g150nk', 'samsung sm-g150nk' => 'samsung=samsung sm-g150nk',
+            'sm-g150nl', 'samsung sm-g150nl' => 'samsung=samsung sm-g150nl',
             'sm-g1650', 'samsung sm-g1650' => 'samsung=samsung sm-g1650',
             'sm-g990w2', 'samsung sm-g990w2' => 'samsung=samsung sm-g990w2',
             'sm-g990w', 'samsung sm-g990w' => 'samsung=samsung sm-g990w',
@@ -3611,6 +3629,7 @@ final class Device implements DeviceInterface
             'xt2503-3' => 'motorola=motorola xt2503-3',
             'xt2503-4' => 'motorola=motorola xt2503-4',
             'motorola edge 5g uw (2021)', 'motorola edge 5g uw (2021' => 'motorola=motorola edge 5g uw 2021',
+            'motorola edge 60' => 'motorola=motorola edge 60',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4485,6 +4504,7 @@ final class Device implements DeviceInterface
             'fire 5 pro' => 'doogee=doogee fire 5 pro',
             'fire 7' => 'doogee=doogee fire 7',
             'note56 plus' => 'doogee=doogee note 56 plus',
+            'v max plus' => 'doogee=doogee v max plus',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -7522,6 +7542,8 @@ final class Device implements DeviceInterface
             'qmv7b' => 'verizon=verizon qmv7b',
             // elephone
             'elephone p4000' => 'elephone=elephone p4000',
+            // ujj
+            'u6_eea' => 'ujj=ujj u6_eea',
             // other
             default => null,
         };

@@ -6160,6 +6160,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Kleissner Investments',
                 'key' => 'kleissner-investments',
             ],
+            [
+                'type' => 'UJJ',
+                'name' => 'UJJ',
+                'brandname' => 'UJJ',
+                'key' => 'ujj',
+            ],
         ];
     }
 

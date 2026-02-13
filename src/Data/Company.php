@@ -2055,6 +2055,8 @@ enum Company: string implements CompanyInterface
 
     case kleissnerInvestments = 'Kleissner Investments';
 
+    case ujj = 'UJJ';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3080,6 +3082,7 @@ enum Company: string implements CompanyInterface
             'elephone' => self::elephone,
             'crissyfield', 'crissy-field', 'crissy field gmbh', 'crissy field' => self::crissyField,
             'kleissnerinvestments', 'kleissner-investments', 'kleissner investments s.r.o.', 'kleissner investments' => self::kleissnerInvestments,
+            'ujj' => self::ujj,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
