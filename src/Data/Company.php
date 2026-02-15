@@ -2065,6 +2065,8 @@ enum Company: string implements CompanyInterface
 
     case netgem = 'Netgem';
 
+    case seoCube = 'Seo Cube';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3095,6 +3097,7 @@ enum Company: string implements CompanyInterface
             'roku', 'roku, inc.' => self::roku,
             'deertime' => self::deertime,
             'netgem', 'netgem, s.a.' => self::netgem,
+            'seocube', 'seo cube s.r.l.', 'seo-cube', 'seo cube' => self::seoCube,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3495,6 +3498,7 @@ enum Company: string implements CompanyInterface
             self::interServer => 'InterServer, Inc.',
             self::roku => 'Roku, Inc.',
             self::netgem => 'Netgem, S.A.',
+            self::seoCube => 'Seo Cube s.r.l.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3841,6 +3845,7 @@ enum Company: string implements CompanyInterface
             self::crissyField => 'crissy-field',
             self::kleissnerInvestments => 'kleissner-investments',
             self::interServer => 'inter-server',
+            self::seoCube => 'seo-cube',
             default => $this->name,
         };
     }

@@ -2042,5 +2042,41 @@
       ]
     },
     "engine": null
+  },
+  "zoom-bot": {
+    "name": "Zoombot",
+    "manufacturer": "zoom",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zoombot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seozoom-bot": {
+    "name": "ZoomBot",
+    "manufacturer": "seo-cube",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zoombot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hgf-alpha-x-crawl": {
+    "name": "AlphaXCrawl",
+    "manufacturer": "universitaet-passau",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hgfAlphaXCrawl"
+      ]
+    },
+    "engine": "unknown"
   }
 }

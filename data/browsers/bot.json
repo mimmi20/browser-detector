@@ -8531,18 +8531,6 @@
     },
     "engine": "unknown"
   },
-  "hgf-alpha-x-crawl": {
-    "name": "hgfAlphaXCrawl",
-    "manufacturer": "universitaet-passau",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "hgfAlphaXCrawl"
-      ]
-    },
-    "engine": "unknown"
-  },
   "crawlboy": {
     "name": "Crawlboy",
     "manufacturer": "unknown",
@@ -9317,18 +9305,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "qutrigobot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "zoombot": {
-    "name": "Zoombot",
-    "manufacturer": "zoom",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Zoombot"
       ]
     },
     "engine": "unknown"

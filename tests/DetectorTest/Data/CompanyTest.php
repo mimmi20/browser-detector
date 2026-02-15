@@ -6190,6 +6190,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Netgem',
                 'key' => 'netgem',
             ],
+            [
+                'type' => 'Seo Cube',
+                'name' => 'Seo Cube s.r.l.',
+                'brandname' => 'Seo Cube',
+                'key' => 'seo-cube',
+            ],
         ];
     }
 
