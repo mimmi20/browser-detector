@@ -172,7 +172,7 @@
     "/rct[0-9]{4}|rct6k03w13|(?<![aeno])rca/i": "rca-tablets",
     "/neffos|tp[0-9]{3}/i": "tp-link",
     "/logicpd|zoom2/i": "logicpd",
-    "/nook|bn[tr]v[0-9]+/i": "barnesnoble",
+    "/(?<![\\s])nook(?! browser)|bn[tr]v[0-9]+/i": "barnesnoble",
     "/infocus|m370i|vzh|if9031|if9021/i": "infocus",
     "/mtc[ _]|smart[ _]surf[ _]4g/i": "mtc",
     "/ark[ _]benefit[ _](?:m3s|m4)|impulse[ _]p[12]/i": "ark",

@@ -7667,7 +7667,7 @@ final class DetectorIntegrationTest extends TestCase
                         'name' => 'BrightEdge Crawler',
                         'modus' => null,
                         'version' => '1.0.0',
-                        'manufacturer' => 'brightedge',
+                        'manufacturer' => 'BrightEdge Technologies',
                         'type' => 'crawler',
                         'isbot' => true,
                         'bits' => null,

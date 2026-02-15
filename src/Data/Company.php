@@ -2079,6 +2079,10 @@ enum Company: string implements CompanyInterface
 
     case barracudaNetworks = 'Barracuda Networks';
 
+    case brightedge = 'BrightEdge Technologies';
+
+    case appsverse = 'Appsverse';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3116,6 +3120,8 @@ enum Company: string implements CompanyInterface
             'openindex', 'openindex b.v.' => self::openindex,
             'universitaetpassau', 'universitaet-passau', 'universität passau' => self::universitaetPassau,
             'barracudanetworks', 'barracuda networks, inc.', 'barracuda-networks', 'barracuda networks' => self::barracudaNetworks,
+            'brightedge', 'brightedge technologies, inc.', 'brightedge technologies' => self::brightedge,
+            'appsverse' => self::appsverse,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3521,6 +3527,7 @@ enum Company: string implements CompanyInterface
             self::webwiki => 'webwiki GmbH',
             self::openindex => 'Openindex B.V.',
             self::barracudaNetworks => 'Barracuda Networks, Inc.',
+            self::brightedge => 'BrightEdge Technologies, Inc.',
             self::unknown => null,
             default => $this->value,
         };

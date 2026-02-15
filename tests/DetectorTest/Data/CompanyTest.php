@@ -6232,6 +6232,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Barracuda Networks',
                 'key' => 'barracuda-networks',
             ],
+            [
+                'type' => 'BrightEdge Technologies',
+                'name' => 'BrightEdge Technologies, Inc.',
+                'brandname' => 'BrightEdge Technologies',
+                'key' => 'brightedge',
+            ],
+            [
+                'type' => 'Appsverse',
+                'name' => 'Appsverse',
+                'brandname' => 'Appsverse',
+                'key' => 'appsverse',
+            ],
         ];
     }
 

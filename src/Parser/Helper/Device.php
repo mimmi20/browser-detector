@@ -1270,6 +1270,7 @@ final class Device implements DeviceInterface
             'redmi k30 pro' => 'xiaomi=xiaomi redmi k30 pro',
             'redmi k30' => 'xiaomi=xiaomi redmi k30',
             'xiaomi 13t pro' => 'xiaomi=xiaomi 13t pro',
+            'redmi 10 2022' => 'xiaomi=xiaomi redmi 10 (2022)',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -5098,7 +5099,6 @@ final class Device implements DeviceInterface
             // captiva
             'captiva pad 10 3g plus' => 'captiva=captiva pad 10 3g plus',
             // toscido
-            'm863-eea' => 'toscido=toscido m863-eea',
             'x104-eea' => 'toscido=toscido x104-eea',
             't22-eea' => 'toscido=toscido t22-eea',
             't151-eea' => 'toscido=toscido t151-eea',
@@ -7267,6 +7267,7 @@ final class Device implements DeviceInterface
             'newpad-k97' => 'newsmy=newsmy k97',
             // bmxc
             'b801' => 'bmxc=bmxc b801',
+            'm863-eea' => 'bmxc=bmxc m863-eea',
             // egreat
             'hi3798cv200' => 'egreat=egreat hi3798cv200',
             // urbetter

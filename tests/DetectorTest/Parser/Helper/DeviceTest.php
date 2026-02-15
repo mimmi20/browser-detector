@@ -1303,6 +1303,7 @@ final class DeviceTest extends TestCase
             ['Redmi K30 Pro', 'xiaomi=xiaomi redmi k30 pro'],
             ['Redmi K30', 'xiaomi=xiaomi redmi k30'],
             ['Xiaomi 13T Pro', 'xiaomi=xiaomi 13t pro'],
+            ['Redmi 10 2022', 'xiaomi=xiaomi redmi 10 (2022)'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -5953,7 +5954,6 @@ final class DeviceTest extends TestCase
             // captiva
             ['Captiva Pad 10 3G Plus', 'captiva=captiva pad 10 3g plus'],
             // toscido
-            ['M863-EEA', 'toscido=toscido m863-eea'],
             ['X104-EEA', 'toscido=toscido x104-eea'],
             ['T22-EEA', 'toscido=toscido t22-eea'],
             ['T151-EEA', 'toscido=toscido t151-eea'],
@@ -8295,6 +8295,7 @@ final class DeviceTest extends TestCase
             ['Newpad-K97', 'newsmy=newsmy k97'],
             // bmxc
             ['B801', 'bmxc=bmxc b801'],
+            ['M863-EEA', 'bmxc=bmxc m863-eea'],
             // egreat
             ['Hi3798CV200', 'egreat=egreat hi3798cv200'],
             // urbetter

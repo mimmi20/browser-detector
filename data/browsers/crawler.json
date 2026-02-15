@@ -2103,5 +2103,27 @@
       ]
     },
     "engine": "unknown"
+  },
+  "php-neural-network": {
+    "name": "phpneuralnetwork",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "seolyt-bot": {
+    "name": "SeolytBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SEOlyt"
+      ]
+    },
+    "engine": "unknown"
   }
 }

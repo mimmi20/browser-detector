@@ -1860,8 +1860,9 @@ final class SecChUaModelTest extends TestCase
             ['"Model S 4G"', true, 'sunmax=sunmax model s 4g'],
             // captiva
             ['"Captiva Pad 10 3G Plus"', true, 'captiva=captiva pad 10 3g plus'],
+            // bmxc
+            ['"M863-EEA"', true, 'bmxc=bmxc m863-eea'],
             // toscido
-            ['"M863-EEA"', true, 'toscido=toscido m863-eea'],
             ['"X104-EEA"', true, 'toscido=toscido x104-eea'],
             ['"T22-EEA"', true, 'toscido=toscido t22-eea'],
             // beafon
