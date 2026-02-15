@@ -1,7 +1,7 @@
 {
   "rules": {
     "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia|; ?sony;/i": "sony",
-    "/; ?tcl;|\\(tcl[0-9]+|tclwebkit/i": "tcl",
+    "/; ?tcl;|\\(tcl[0-9]+|tclwebkit|; ?50s451;/i": "tcl",
     "/THOMSON|LF1V/i": "thomson",
     "/philips|avm\\-|qm163e|2020\\/2021 uhd android tv/i": "philips",
     "/xbox/i": "microsoft",
