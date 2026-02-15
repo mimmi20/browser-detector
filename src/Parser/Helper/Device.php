@@ -3794,6 +3794,7 @@ final class Device implements DeviceInterface
             'sog12' => 'sony=sony sog12',
             'xperia e3 (aosp)', 'xperia e3 (aosp' => 'sony=sony xperia e3',
             'a301so' => 'sony=sony a301so',
+            'xperia' => 'sony=sony xperia',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',

@@ -4608,6 +4608,7 @@ final class DeviceTest extends TestCase
             ['Xperia E3 (AOSP)', 'sony=sony xperia e3'],
             ['Xperia E3 (AOSP', 'sony=sony xperia e3'],
             ['A301SO', 'sony=sony a301so'],
+            ['Xperia', 'sony=sony xperia'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
