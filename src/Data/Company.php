@@ -2063,6 +2063,8 @@ enum Company: string implements CompanyInterface
 
     case deertime = 'Deertime';
 
+    case netgem = 'Netgem';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3092,6 +3094,7 @@ enum Company: string implements CompanyInterface
             'interserver', 'interserver, inc.', 'inter-server' => self::interServer,
             'roku', 'roku, inc.' => self::roku,
             'deertime' => self::deertime,
+            'netgem', 'netgem, s.a.' => self::netgem,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3491,6 +3494,7 @@ enum Company: string implements CompanyInterface
             self::kleissnerInvestments => 'Kleissner Investments s.r.o.',
             self::interServer => 'InterServer, Inc.',
             self::roku => 'Roku, Inc.',
+            self::netgem => 'Netgem, S.A.',
             self::unknown => null,
             default => $this->value,
         };

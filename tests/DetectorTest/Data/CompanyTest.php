@@ -6184,6 +6184,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Deertime',
                 'key' => 'deertime',
             ],
+            [
+                'type' => 'Netgem',
+                'name' => 'Netgem, S.A.',
+                'brandname' => 'Netgem',
+                'key' => 'netgem',
+            ],
         ];
     }
 

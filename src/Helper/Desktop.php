@@ -29,7 +29,7 @@ final class Desktop implements DesktopInterface
     {
         if (
             preg_match(
-                '/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem|xoom/i',
+                '/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem(?!ein)|xoom/i',
                 $useragent,
             )
         ) {

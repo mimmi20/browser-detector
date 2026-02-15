@@ -22,7 +22,7 @@
     "/windows iot 10/i": "windows iot",
     "/windows ?ce|windows mobile; wce|ceos/i": "windows ce",
     "/windows phone(?: os)? (10|[678])\\.[015]/i": "windows phone",
-    "/Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone(?! 6)|WPDesktop| wds |WPOS\\:|Windows Mobile (?:7|8|10)|Windows NT (?:7|8|10)(?:[\\.\\d]+)?; ARM; Lumia/": "windows phone",
+    "/Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone(?! 6)|WPDesktop| wds |WPOS\\:|Windows Mobile (?:7|8|10)|Windows NT (?:7|8|10)(?:[\\.\\d]+)?; ARM; (?:Lumia|RM-)/": "windows phone",
     "/windows (phone|iot|ce)|microsoft windows; ppc|iemobile|xblwp7|zunewp7|windows ?mobile|wpdesktop|mobile version|lumia| wds |wpos:/i": "windows mobile os",
     "/palm os|palmsource/i": "palmos",
     "/windows iot 10|windows[ _]nt 10|windows 10/i": "windows-nt-10",
