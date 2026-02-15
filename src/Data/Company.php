@@ -2067,6 +2067,18 @@ enum Company: string implements CompanyInterface
 
     case seoCube = 'Seo Cube';
 
+    case captiva = 'Captiva';
+
+    case webwiki = 'webwiki';
+
+    case helloWorldDigital = 'Hello World Digital';
+
+    case openindex = 'Openindex';
+
+    case universitaetPassau = 'Universität Passau';
+
+    case barracudaNetworks = 'Barracuda Networks';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3098,6 +3110,12 @@ enum Company: string implements CompanyInterface
             'deertime' => self::deertime,
             'netgem', 'netgem, s.a.' => self::netgem,
             'seocube', 'seo cube s.r.l.', 'seo-cube', 'seo cube' => self::seoCube,
+            'captiva', 'captiva gmbh' => self::captiva,
+            'webwiki', 'webwiki gmbh' => self::webwiki,
+            'helloworlddigital', 'hello-world-digital', 'hello world digital' => self::helloWorldDigital,
+            'openindex', 'openindex b.v.' => self::openindex,
+            'universitaetpassau', 'universitaet-passau', 'universität passau' => self::universitaetPassau,
+            'barracudanetworks', 'barracuda networks, inc.', 'barracuda-networks', 'barracuda networks' => self::barracudaNetworks,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3499,6 +3517,10 @@ enum Company: string implements CompanyInterface
             self::roku => 'Roku, Inc.',
             self::netgem => 'Netgem, S.A.',
             self::seoCube => 'Seo Cube s.r.l.',
+            self::captiva => 'CAPTIVA GmbH',
+            self::webwiki => 'webwiki GmbH',
+            self::openindex => 'Openindex B.V.',
+            self::barracudaNetworks => 'Barracuda Networks, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3846,6 +3868,9 @@ enum Company: string implements CompanyInterface
             self::kleissnerInvestments => 'kleissner-investments',
             self::interServer => 'inter-server',
             self::seoCube => 'seo-cube',
+            self::helloWorldDigital => 'hello-world-digital',
+            self::universitaetPassau => 'universitaet-passau',
+            self::barracudaNetworks => 'barracuda-networks',
             default => $this->name,
         };
     }

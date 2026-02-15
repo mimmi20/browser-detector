@@ -17,8 +17,24 @@
   },
   "verizon ipc4100": {
     "deviceName": "IPC4100",
-    "marketingName": "Fios TV One Mini",
-    "manufacturer": "verizon",
+    "marketingName": "FiOS TV One Mini",
+    "manufacturer": "arris",
+    "brand": "verizon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv-set-top-box",
+    "platform": "android"
+  },
+  "verizon vms4100p2": {
+    "deviceName": "VMS4100P2",
+    "marketingName": "FiOS TV One",
+    "manufacturer": "arris",
     "brand": "verizon",
     "dualOrientation": false,
     "simCount": 0,

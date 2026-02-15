@@ -74,11 +74,12 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $matches = [];
 
         if (
-            preg_match('/^WhatsApp\/[0-9.]+ (?P<code>[AW])$/', $normalizedValue, $matches)
+            preg_match('/^WhatsApp\/[0-9.]+ (?P<code>[AWi])$/', $normalizedValue, $matches)
             && array_key_exists('code', $matches)
         ) {
             return match ($matches['code']) {
                 'W' => 'unknown=windows desktop',
+                'i' => 'apple=general apple device',
                 default => 'unknown=general mobile phone',
             };
         }

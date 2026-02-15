@@ -6196,6 +6196,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Seo Cube',
                 'key' => 'seo-cube',
             ],
+            [
+                'type' => 'Captiva',
+                'name' => 'CAPTIVA GmbH',
+                'brandname' => 'Captiva',
+                'key' => 'captiva',
+            ],
+            [
+                'type' => 'webwiki',
+                'name' => 'webwiki GmbH',
+                'brandname' => 'webwiki',
+                'key' => 'webwiki',
+            ],
+            [
+                'type' => 'Hello World Digital',
+                'name' => 'Hello World Digital',
+                'brandname' => 'Hello World Digital',
+                'key' => 'hello-world-digital',
+            ],
+            [
+                'type' => 'Openindex',
+                'name' => 'Openindex B.V.',
+                'brandname' => 'Openindex',
+                'key' => 'openindex',
+            ],
+            [
+                'type' => 'Universität Passau',
+                'name' => 'Universität Passau',
+                'brandname' => 'Universität Passau',
+                'key' => 'universitaet-passau',
+            ],
+            [
+                'type' => 'Barracuda Networks',
+                'name' => 'Barracuda Networks, Inc.',
+                'brandname' => 'Barracuda Networks',
+                'key' => 'barracuda-networks',
+            ],
         ];
     }
 

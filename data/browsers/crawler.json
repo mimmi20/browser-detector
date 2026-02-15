@@ -2078,5 +2078,30 @@
       ]
     },
     "engine": "unknown"
+  },
+  "claude-web": {
+    "name": "Claude-Web",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Claude-Web"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "site-score-bot": {
+    "name": "SiteScoreBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiteScoreBot",
+        "SiteScoreBot v"
+      ]
+    },
+    "engine": "unknown"
   }
 }
