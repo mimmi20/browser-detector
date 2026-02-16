@@ -6286,6 +6286,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SiteOne',
                 'key' => 'siteone',
             ],
+            [
+                'type' => 'Ctroniq',
+                'name' => 'Ctroniq Ltd',
+                'brandname' => 'Ctroniq',
+                'key' => 'ctroniq',
+            ],
+            [
+                'type' => 'Jlinksz',
+                'name' => 'Jlinksz',
+                'brandname' => 'Jlinksz',
+                'key' => 'jlinksz',
+            ],
         ];
     }
 
