@@ -2083,6 +2083,16 @@ enum Company: string implements CompanyInterface
 
     case appsverse = 'Appsverse';
 
+    case workona = 'Workona';
+
+    case geedo = 'Geedo';
+
+    case sandoba = 'SANDOBA';
+
+    case bmxc = 'BMXC';
+
+    case webCEO = 'Web CEO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3122,6 +3132,11 @@ enum Company: string implements CompanyInterface
             'barracudanetworks', 'barracuda networks, inc.', 'barracuda-networks', 'barracuda networks' => self::barracudaNetworks,
             'brightedge', 'brightedge technologies, inc.', 'brightedge technologies' => self::brightedge,
             'appsverse' => self::appsverse,
+            'workona', 'workona, inc.' => self::workona,
+            'geedo' => self::geedo,
+            'sandoba', 'sandoba//ebusiness solutions' => self::sandoba,
+            'bmxc' => self::bmxc,
+            'webceo', 'web-ceo', 'web ceo limited', 'web ceo' => self::webCEO,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3528,6 +3543,9 @@ enum Company: string implements CompanyInterface
             self::openindex => 'Openindex B.V.',
             self::barracudaNetworks => 'Barracuda Networks, Inc.',
             self::brightedge => 'BrightEdge Technologies, Inc.',
+            self::workona => 'Workona, Inc.',
+            self::sandoba => 'SANDOBA//EBUSINESS SOLUTIONS',
+            self::webCEO => 'Web CEO Limited',
             self::unknown => null,
             default => $this->value,
         };
@@ -3878,6 +3896,7 @@ enum Company: string implements CompanyInterface
             self::helloWorldDigital => 'hello-world-digital',
             self::universitaetPassau => 'universitaet-passau',
             self::barracudaNetworks => 'barracuda-networks',
+            self::webCEO => 'web-ceo',
             default => $this->name,
         };
     }

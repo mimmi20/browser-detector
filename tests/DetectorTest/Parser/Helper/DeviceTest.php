@@ -6421,6 +6421,7 @@ final class DeviceTest extends TestCase
             ['Titan_10_LTE', 'odys=odys titan 10 lte'],
             ['THANOS_10', 'odys=odys thanos 10'],
             ['SPACE_ONE_10SE', 'odys=odys space one 10 se'],
+            ['NoteTab_Pro', 'odys=odys notetab pro'],
             // nothing-phone
             ['A063', 'nothing-phone=nothing-phone a063'],
             ['A142', 'nothing-phone=nothing-phone a142'],

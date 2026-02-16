@@ -236,7 +236,7 @@
     "engine": "unknown"
   },
   "mixrankbot": {
-    "name": "MixrankBot",
+    "name": "MixRank Bot",
     "manufacturer": "online-media-group",
     "type": "crawler",
     "version": {
@@ -2122,6 +2122,54 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SEOlyt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webceo bot": {
+    "name": "WebCEO Bot",
+    "manufacturer": "web-ceo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "online\\-webceo\\-bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "workona-favicon-service": {
+    "name": "Workona Favicon Service",
+    "manufacturer": "workona",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "workona\\-favicon\\-service"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "geedo-product-search": {
+    "name": "GeedoProductSearch",
+    "manufacturer": "geedo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GeedoProductSearch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sandoba-crawler": {
+    "name": "Sandoba//Crawler",
+    "manufacturer": "sandoba",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SandobaCrawler"
       ]
     },
     "engine": "unknown"

@@ -130,6 +130,7 @@ final class DesktopTest extends TestCase
             ['R (4.4.1 x86_64-w64-mingw32 x86_64 mingw32)'],
             ['Mozilla/5.0 (X11;) Firefox/38.0'],
             ['Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6'],
+            ['nook browser/1.0'],
         ];
     }
 

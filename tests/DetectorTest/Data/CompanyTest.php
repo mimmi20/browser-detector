@@ -6244,6 +6244,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Appsverse',
                 'key' => 'appsverse',
             ],
+            [
+                'type' => 'Workona',
+                'name' => 'Workona, Inc.',
+                'brandname' => 'Workona',
+                'key' => 'workona',
+            ],
+            [
+                'type' => 'Geedo',
+                'name' => 'Geedo',
+                'brandname' => 'Geedo',
+                'key' => 'geedo',
+            ],
+            [
+                'type' => 'SANDOBA',
+                'name' => 'SANDOBA//EBUSINESS SOLUTIONS',
+                'brandname' => 'SANDOBA',
+                'key' => 'sandoba',
+            ],
+            [
+                'type' => 'BMXC',
+                'name' => 'BMXC',
+                'brandname' => 'BMXC',
+                'key' => 'bmxc',
+            ],
+            [
+                'type' => 'Web CEO',
+                'name' => 'Web CEO Limited',
+                'brandname' => 'Web CEO',
+                'key' => 'web-ceo',
+            ],
         ];
     }
 

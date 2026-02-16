@@ -5556,6 +5556,7 @@ final class Device implements DeviceInterface
             'titan_10_lte' => 'odys=odys titan 10 lte',
             'thanos_10' => 'odys=odys thanos 10',
             'space_one_10se' => 'odys=odys space one 10 se',
+            'notetab_pro' => 'odys=odys notetab pro',
             // nothing-phone
             'a063' => 'nothing-phone=nothing-phone a063',
             'a142' => 'nothing-phone=nothing-phone a142',
