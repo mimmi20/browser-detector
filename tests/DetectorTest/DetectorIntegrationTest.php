@@ -7679,6 +7679,58 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'x-requested-with' => 'com.microsoft.copilot',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 14; Pixel 6a Build/UQ1A.231205.015; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36  CopilotSapphire/27.7.411216610',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.microsoft.copilot',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 14; Pixel 6a Build/UQ1A.231205.015; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36  CopilotSapphire/27.7.411216610',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Pixel 6a',
+                        'marketingName' => 'Pixel 6a',
+                        'manufacturer' => 'Google',
+                        'brand' => 'Google',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2400,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.1,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '14.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Microsoft Copilot',
+                        'modus' => null,
+                        'version' => '27.7.411216610',
+                        'manufacturer' => 'Microsoft',
+                        'type' => 'mobile-application',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '114.0.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

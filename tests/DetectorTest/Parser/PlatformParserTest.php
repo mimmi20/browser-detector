@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Data\Os;
-use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use BrowserDetector\Parser\PlatformParser;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
@@ -31,44 +30,10 @@ final class PlatformParserTest extends TestCase
     public function testParse(): void
     {
         $useragent = 'test-agent';
-        $mode      = 'test-mode';
-        $key       = 'test-key';
 
-        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $fileParser
-            ->expects(self::exactly(2))
-            ->method('parseFile')
-            ->willReturn($mode, $key);
-
-        $parser       = new PlatformParser($fileParser);
+        $parser       = new PlatformParser();
         $parserResult = $parser->parse($useragent);
 
         self::assertSame(Os::unknown, $parserResult);
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     */
-    public function testParse2(): void
-    {
-        $useragent = 'test-agent';
-        $mode      = 'test-mode';
-        $key       = 'windows';
-
-        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $fileParser
-            ->expects(self::exactly(2))
-            ->method('parseFile')
-            ->willReturn($mode, $key);
-
-        $parser       = new PlatformParser($fileParser);
-        $parserResult = $parser->parse($useragent);
-
-        self::assertSame(Os::windows, $parserResult);
     }
 }

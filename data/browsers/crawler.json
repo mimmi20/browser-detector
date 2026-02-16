@@ -2173,5 +2173,39 @@
       ]
     },
     "engine": "unknown"
+  },
+  "the-trade-desk-content": {
+    "name": "The Trade Desk Content",
+    "manufacturer": "trade-desk",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "siteone-crawler": {
+    "name": "SiteOne Crawler",
+    "manufacturer": "siteone",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiteOne-Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "geedo-bot": {
+    "name": "GeedoBot",
+    "manufacturer": "geedo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GeedoBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

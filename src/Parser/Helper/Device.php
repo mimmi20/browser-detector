@@ -3811,6 +3811,7 @@ final class Device implements DeviceInterface
             'v2028' => 'vivo=vivo v2028',
             'v2041' => 'vivo=vivo v2041',
             'v2023' => 'vivo=vivo v2023',
+            'v2023a' => 'vivo=vivo v2023a',
             'v2111', 'vivo v2111' => 'vivo=vivo v2111',
             'v2050' => 'vivo=vivo v2050',
             'v1824a' => 'vivo=vivo v1824a',
@@ -5106,6 +5107,7 @@ final class Device implements DeviceInterface
             't13-eea' => 'toscido=toscido t13-eea',
             't28-eea' => 'toscido=toscido t28-eea',
             't26-eea' => 'toscido=toscido t26-eea',
+            't12-eea' => 'toscido=toscido t12-eea',
             // beafon
             'tw10' => 'beafon=beafon tw10',
             // micromax

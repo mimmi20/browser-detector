@@ -6274,6 +6274,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Web CEO',
                 'key' => 'web-ceo',
             ],
+            [
+                'type' => 'The Trade Desk',
+                'name' => 'The Trade Desk, Inc.',
+                'brandname' => 'The Trade Desk',
+                'key' => 'trade-desk',
+            ],
+            [
+                'type' => 'SiteOne',
+                'name' => 'SiteOne s.r.o.',
+                'brandname' => 'SiteOne',
+                'key' => 'siteone',
+            ],
         ];
     }
 

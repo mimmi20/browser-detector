@@ -13,15 +13,13 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Parser\Helper\RulefileParser;
 use Override;
-use Psr\Log\LoggerInterface;
 use UaParser\PlatformParserInterface;
 
 final readonly class PlatformParserFactory implements PlatformParserFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger)
+    public function __construct()
     {
         // nothing to do
     }
@@ -30,8 +28,6 @@ final readonly class PlatformParserFactory implements PlatformParserFactoryInter
     #[Override]
     public function __invoke(): PlatformParserInterface
     {
-        return new PlatformParser(
-            fileParser: new RulefileParser(logger: $this->logger),
-        );
+        return new PlatformParser();
     }
 }

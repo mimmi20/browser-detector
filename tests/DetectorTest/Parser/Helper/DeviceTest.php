@@ -4629,6 +4629,7 @@ final class DeviceTest extends TestCase
             ['V2028', 'vivo=vivo v2028'],
             ['V2041', 'vivo=vivo v2041'],
             ['V2023', 'vivo=vivo v2023'],
+            ['V2023A', 'vivo=vivo v2023a'],
             ['V2111', 'vivo=vivo v2111'],
             ['vivo V2111', 'vivo=vivo v2111'],
             ['V2050', 'vivo=vivo v2050'],
@@ -5961,6 +5962,7 @@ final class DeviceTest extends TestCase
             ['T13-EEA', 'toscido=toscido t13-eea'],
             ['T28-EEA', 'toscido=toscido t28-eea'],
             ['T26-EEA', 'toscido=toscido t26-eea'],
+            ['T12-EEA', 'toscido=toscido t12-eea'],
             // beafon
             ['TW10', 'beafon=beafon tw10'],
             // micromax
