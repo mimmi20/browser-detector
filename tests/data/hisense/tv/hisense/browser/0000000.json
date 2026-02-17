@@ -361,6 +361,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Odin/74.3729.2.10 Safari/537.36 VK_PATCH/1.0 CE-HTML/1.0 HBBTV/2.0 MSD6886 (Hisense;50A6101EX;V0000.01.00a.N0519)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general HiSense TV",
+      "marketingName": "general HiSense TV",
+      "manufacturer": "HiSense",
+      "brand": "HiSense",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Odin Browser",
+      "modus": null,
+      "version": "74.3729.2.10",
+      "manufacturer": "HiSense",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "74.0.3729.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Odin/74.3729.2.10 Safari/537.36 HbbTV/1.5.1 (+DRM;Hisense;SmartTV_2021_2;V0103.01.00R.N0227;VT0150UD1;SmartTV_2021_2;) FVC/5.0 (Hisense;SmartTV_2021_2;) LaTivu_1.0.1_2021"
     },
     "device": {

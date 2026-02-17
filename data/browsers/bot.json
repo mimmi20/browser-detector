@@ -2600,30 +2600,6 @@
     },
     "engine": "unknown"
   },
-  "google-read-aloud": {
-    "name": "Google Read Aloud",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google-Read-Aloud"
-      ]
-    },
-    "engine": null
-  },
-  "google-site-verification": {
-    "name": "Google-Site-Verification",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google\\-Site\\-Verification"
-      ]
-    },
-    "engine": "unknown"
-  },
   "google-page-renderer": {
     "name": "Google-PageRenderer",
     "manufacturer": "google",
@@ -7460,18 +7436,6 @@
     },
     "engine": "unknown"
   },
-  "webceo bot": {
-    "name": "webceo Bot",
-    "manufacturer": "web-ceo",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "online\\-webceo\\-bot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "webcorp": {
     "name": "WebCorp",
     "manufacturer": "unknown",
@@ -8555,18 +8519,6 @@
     },
     "engine": "unknown"
   },
-  "hgf-alpha-x-crawl": {
-    "name": "hgfAlphaXCrawl",
-    "manufacturer": "universitaet-passau",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "hgfAlphaXCrawl"
-      ]
-    },
-    "engine": "unknown"
-  },
   "crawlboy": {
     "name": "Crawlboy",
     "manufacturer": "unknown",
@@ -8731,18 +8683,6 @@
     },
     "engine": "unknown"
   },
-  "geedo-bot": {
-    "name": "GeedoBot",
-    "manufacturer": "geedo.com",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "GeedoBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "netpeak-checker-bot": {
     "name": "NetpeakCheckerBot",
     "manufacturer": "netpeak",
@@ -8796,19 +8736,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "site-score-bot": {
-    "name": "SiteScoreBot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SiteScoreBot",
-        "SiteScoreBot v"
-      ]
     },
     "engine": "unknown"
   },
@@ -9341,18 +9268,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "qutrigobot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "zoombot": {
-    "name": "Zoombot",
-    "manufacturer": "zoom",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Zoombot"
       ]
     },
     "engine": "unknown"

@@ -2035,6 +2035,72 @@ enum Company: string implements CompanyInterface
 
     case tCraft = 'T-Craft';
 
+    case evc = 'evc';
+
+    case bidtellect = 'Bidtellect';
+
+    case metz = 'Metz';
+
+    case softbank = 'Softbank';
+
+    case loewe = 'Loewe';
+
+    case safeDNS = 'SafeDNS';
+
+    case beafon = 'Beafon';
+
+    case elephone = 'Elephone';
+
+    case crissyField = 'Crissy Field';
+
+    case kleissnerInvestments = 'Kleissner Investments';
+
+    case ujj = 'UJJ';
+
+    case interServer = 'InterServer';
+
+    case roku = 'Roku';
+
+    case deertime = 'Deertime';
+
+    case netgem = 'Netgem';
+
+    case seoCube = 'Seo Cube';
+
+    case captiva = 'Captiva';
+
+    case webwiki = 'webwiki';
+
+    case helloWorldDigital = 'Hello World Digital';
+
+    case openindex = 'Openindex';
+
+    case universitaetPassau = 'Universität Passau';
+
+    case barracudaNetworks = 'Barracuda Networks';
+
+    case brightedge = 'BrightEdge Technologies';
+
+    case appsverse = 'Appsverse';
+
+    case workona = 'Workona';
+
+    case geedo = 'Geedo';
+
+    case sandoba = 'SANDOBA';
+
+    case bmxc = 'BMXC';
+
+    case webCEO = 'Web CEO';
+
+    case theTradeDesk = 'The Trade Desk';
+
+    case siteone = 'SiteOne';
+
+    case ctroniq = 'Ctroniq';
+
+    case jlinksz = 'Jlinksz';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3050,6 +3116,39 @@ enum Company: string implements CompanyInterface
             'tenable', 'tenable, inc.' => self::tenable,
             'verizon' => self::verizon,
             'tcraft', 't-craft' => self::tCraft,
+            'evc', 'eventure capital partners ii, llc' => self::evc,
+            'bidtellect' => self::bidtellect,
+            'metz' => self::metz,
+            'softbank', 'softbank mobile corp.' => self::softbank,
+            'loewe' => self::loewe,
+            'safedns', 'safedns, inc.', 'safe-dns' => self::safeDNS,
+            'beafon' => self::beafon,
+            'elephone' => self::elephone,
+            'crissyfield', 'crissy-field', 'crissy field gmbh', 'crissy field' => self::crissyField,
+            'kleissnerinvestments', 'kleissner-investments', 'kleissner investments s.r.o.', 'kleissner investments' => self::kleissnerInvestments,
+            'ujj' => self::ujj,
+            'interserver', 'interserver, inc.', 'inter-server' => self::interServer,
+            'roku', 'roku, inc.' => self::roku,
+            'deertime' => self::deertime,
+            'netgem', 'netgem, s.a.' => self::netgem,
+            'seocube', 'seo cube s.r.l.', 'seo-cube', 'seo cube' => self::seoCube,
+            'captiva', 'captiva gmbh' => self::captiva,
+            'webwiki', 'webwiki gmbh' => self::webwiki,
+            'helloworlddigital', 'hello-world-digital', 'hello world digital' => self::helloWorldDigital,
+            'openindex', 'openindex b.v.' => self::openindex,
+            'universitaetpassau', 'universitaet-passau', 'universität passau' => self::universitaetPassau,
+            'barracudanetworks', 'barracuda networks, inc.', 'barracuda-networks', 'barracuda networks' => self::barracudaNetworks,
+            'brightedge', 'brightedge technologies, inc.', 'brightedge technologies' => self::brightedge,
+            'appsverse' => self::appsverse,
+            'workona', 'workona, inc.' => self::workona,
+            'geedo' => self::geedo,
+            'sandoba', 'sandoba//ebusiness solutions' => self::sandoba,
+            'bmxc' => self::bmxc,
+            'webceo', 'web-ceo', 'web ceo limited', 'web ceo' => self::webCEO,
+            'thetradedesk', 'the trade desk, inc.', 'trade-desk', 'the trade desk' => self::theTradeDesk,
+            'siteone', 'siteone s.r.o.' => self::siteone,
+            'ctroniq', 'ctroniq ltd' => self::ctroniq,
+            'jlinksz' => self::jlinksz,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3442,6 +3541,26 @@ enum Company: string implements CompanyInterface
             self::erieDataSystems => 'Erie Data Systems, LLC',
             self::alexa => 'Alexa Internet, Inc',
             self::tenable => 'Tenable, Inc.',
+            self::evc => 'eVenture Capital Partners II, LLC',
+            self::softbank => 'Softbank Mobile Corp.',
+            self::safeDNS => 'SafeDNS, Inc.',
+            self::crissyField => 'Crissy Field GmbH',
+            self::kleissnerInvestments => 'Kleissner Investments s.r.o.',
+            self::interServer => 'InterServer, Inc.',
+            self::roku => 'Roku, Inc.',
+            self::netgem => 'Netgem, S.A.',
+            self::seoCube => 'Seo Cube s.r.l.',
+            self::captiva => 'CAPTIVA GmbH',
+            self::webwiki => 'webwiki GmbH',
+            self::openindex => 'Openindex B.V.',
+            self::barracudaNetworks => 'Barracuda Networks, Inc.',
+            self::brightedge => 'BrightEdge Technologies, Inc.',
+            self::workona => 'Workona, Inc.',
+            self::sandoba => 'SANDOBA//EBUSINESS SOLUTIONS',
+            self::webCEO => 'Web CEO Limited',
+            self::theTradeDesk => 'The Trade Desk, Inc.',
+            self::siteone => 'SiteOne s.r.o.',
+            self::ctroniq => 'Ctroniq Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -3784,6 +3903,16 @@ enum Company: string implements CompanyInterface
             self::alexa => 'alexa-internet',
             self::dassaultSystemes => 'dassault-systemes',
             self::tCraft => 't-craft',
+            self::safeDNS => 'safe-dns',
+            self::crissyField => 'crissy-field',
+            self::kleissnerInvestments => 'kleissner-investments',
+            self::interServer => 'inter-server',
+            self::seoCube => 'seo-cube',
+            self::helloWorldDigital => 'hello-world-digital',
+            self::universitaetPassau => 'universitaet-passau',
+            self::barracudaNetworks => 'barracuda-networks',
+            self::webCEO => 'web-ceo',
+            self::theTradeDesk => 'trade-desk',
             default => $this->name,
         };
     }

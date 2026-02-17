@@ -379,6 +379,10 @@ enum Os: string implements OsInterface
 
     case horizon = 'Horizon';
 
+    case qtopia = 'Qtopia';
+
+    case openMandriva = 'Open Mandriva';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -521,7 +525,7 @@ enum Os: string implements OsInterface
             'maemo' => self::maemo,
             'meego' => self::meego,
             'tizen' => self::tizen,
-            'mandrivalinux', 'mandriva linux' => self::mandrivaLinux,
+            'mandrivalinux', 'mandriva linux', 'mandriva' => self::mandrivaLinux,
             'morphos', 'morph-os' => self::morphos,
             'mre', 'maui runtime environment' => self::mre,
             'nintendoos', 'nintendo os' => self::nintendoOs,
@@ -559,6 +563,8 @@ enum Os: string implements OsInterface
             'mocoros', 'mocor-os', 'mocor os' => self::mocorOS,
             'smartisanos', 'smartisan-os', 'smartisan os' => self::smartisanOS,
             'horizon' => self::horizon,
+            'qtopia' => self::qtopia,
+            'openmandriva', 'open mandriva' => self::openMandriva,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -640,7 +646,7 @@ enum Os: string implements OsInterface
             self::kaios => Company::kaios,
             self::kubuntu, self::ubuntu, self::xubuntu => Company::canonical,
             self::linux, self::maemo, self::meego, self::tizen => Company::linuxFoundation,
-            self::mandrivaLinux => Company::mandriva,
+            self::mandrivaLinux, self::openMandriva => Company::mandriva,
             self::morphos => Company::fabienCoeurjoly,
             self::mre => Company::mediatek,
             self::nintendoOs, self::nintendoSwitchOs, self::nintendoWiiOs => Company::nintendo,
@@ -669,6 +675,7 @@ enum Os: string implements OsInterface
             self::operaTv => Company::opera,
             self::smartisanOS => Company::smartisan,
             self::horizon => Company::meta,
+            self::qtopia => Company::trolltech,
             default => Company::unknown,
         };
     }
@@ -768,6 +775,7 @@ enum Os: string implements OsInterface
             self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
             self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60V']],
             self::operaTv => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
+            self::qtopia => ['factory' => VersionBuilderFactory::class, 'search' => ['Qtopia']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],

@@ -1487,6 +1487,22 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'horizon',
             ],
+            [
+                'type' => 'Qtopia',
+                'name' => 'Qtopia',
+                'marketingName' => 'Qtopia',
+                'manufacturer' => Company::trolltech,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Qtopia']],
+                'key' => 'qtopia',
+            ],
+            [
+                'type' => 'Open Mandriva',
+                'name' => 'Open Mandriva',
+                'marketingName' => 'Open Mandriva',
+                'manufacturer' => Company::mandriva,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'openMandriva',
+            ],
         ];
     }
 }

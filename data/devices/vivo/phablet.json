@@ -17,11 +17,27 @@
   },
   "vivo v2023": {
     "deviceName": "V2023",
+    "marketingName": "V20 SE",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.44
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "vivo v2023a": {
+    "deviceName": "V2023A",
     "marketingName": "iQOO U1 Premium Edition",
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,

@@ -203,8 +203,8 @@
       "bits": null
     },
     "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
       "version": null,
       "manufacturer": "Apple",
       "bits": null
@@ -248,8 +248,8 @@
       "bits": null
     },
     "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
       "version": null,
       "manufacturer": "Apple",
       "bits": null
@@ -587,6 +587,51 @@
   {
     "headers": {
       "user-agent": "Mac OS X"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "nook browser/1.0"
     },
     "device": {
       "architecture": null,
@@ -2363,8 +2408,8 @@
       "bits": null
     },
     "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
       "version": null,
       "manufacturer": "Apple",
       "bits": null
@@ -2633,8 +2678,8 @@
       "bits": null
     },
     "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
       "version": null,
       "manufacturer": "Apple",
       "bits": null
@@ -2723,8 +2768,8 @@
       "bits": null
     },
     "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
       "version": null,
       "manufacturer": "Apple",
       "bits": null
@@ -2768,9 +2813,9 @@
       "bits": null
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "13.3.1",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2813,9 +2858,9 @@
       "bits": null
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "11.0.0-beta+1",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2858,9 +2903,9 @@
       "bits": null
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "11.0.0-beta+2",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2903,9 +2948,9 @@
       "bits": null
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "11.0.0-beta+3",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3443,9 +3488,9 @@
       "bits": null
     },
     "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "14.6.1",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
       "manufacturer": "Apple",
       "bits": null
     },
@@ -4436,51 +4481,6 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "15.4.1",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Arc/1.110.1 (Mac OS X Version 15.6 (Build 24G84))"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "15.6.0",
       "manufacturer": "Apple",
       "bits": null
     },

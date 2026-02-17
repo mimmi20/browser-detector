@@ -142,5 +142,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "google nexus 6": {
+    "deviceName": "Nexus 6",
+    "marketingName": "Nexus 6",
+    "manufacturer": "motorola",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

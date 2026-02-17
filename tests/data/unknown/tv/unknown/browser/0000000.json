@@ -924,8 +924,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -1212,141 +1212,6 @@
       "name": "WebKit",
       "version": "606.0.0",
       "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "RokuBrowser/104.11.20 (TV-G000X-14.1.4.7709) Chrome/104.0.5112.70 HbbTV/1.6.1 (+DRM; coocaa; 43R5G; 14.1.4.7709-104.11.20; ; com.roku.G000X; )"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "UBrowser",
-      "modus": null,
-      "version": "104.11.20",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "104.0.5112.70",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "RokuBrowser/104.11.20 (TV-G000X-14.1.4.7709) Chrome/104.0.5112.70 HbbTV/1.6.1 (+DRM; coocaa; 55R5GY; 14.1.4.7709-104.11.20; ; com.roku.G000X; )"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "UBrowser",
-      "modus": null,
-      "version": "104.11.20",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "104.0.5112.70",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "RokuBrowser/104.11.20 (TV-G000X-14.1.4.7709) Chrome/104.0.5112.70 HbbTV/1.6.1 (+DRM; RCA; RK50UN1; 14.1.4.7709-104.11.20; ; com.roku.G000X; )"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "UBrowser",
-      "modus": null,
-      "version": "104.11.20",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "104.0.5112.70",
-      "manufacturer": "Google"
     }
   }
 ]

@@ -65,6 +65,7 @@ final class UseragentPlatformCodeTest extends TestCase
         return [
             ['WhatsApp/2.2587.9 A', Os::android],
             ['WhatsApp/2.2587.9 W', Os::windows],
+            ['WhatsApp/2.2587.9 i', Os::ios],
         ];
     }
 }

@@ -13953,11 +13953,11 @@
   },
   "huawei atu-l21": {
     "deviceName": "ATU-L21",
-    "marketingName": "Y6 Dual SIM (2018)",
+    "marketingName": "Y6 (2018)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 2,
     "display": {
       "width": 1440,
       "height": 720,
@@ -18321,7 +18321,7 @@
   },
   "huawei pot-lx1a": {
     "deviceName": "POT-LX1A",
-    "marketingName": "P smart (2019)",
+    "marketingName": "P smart (2020)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -22075,6 +22075,22 @@
       "height": null,
       "touch": true,
       "size": 6.77
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei ascend g310": {
+    "deviceName": "Ascend G310",
+    "marketingName": "Ascend G310",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"

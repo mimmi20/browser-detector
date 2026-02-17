@@ -15,12 +15,10 @@ namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Parser\PlatformParser;
 use BrowserDetector\Parser\PlatformParserFactory;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UaParser\PlatformParserInterface;
 
 #[CoversClass(PlatformParserFactory::class)]
@@ -29,35 +27,11 @@ final class PlatformParserFactoryTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvoke(): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $factory = new PlatformParserFactory($logger);
+        $factory = new PlatformParserFactory();
 
         $parser = $factory();
 

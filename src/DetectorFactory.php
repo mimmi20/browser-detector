@@ -70,7 +70,7 @@ final class DetectorFactory
                 versionBuilder: new VersionBuilder(),
             );
 
-            $platformParserFactory = new PlatformParserFactory(logger: $this->logger);
+            $platformParserFactory = new PlatformParserFactory();
             $platformParser        = $platformParserFactory();
 
             $deviceLoaderFactory = new DeviceLoaderFactory(

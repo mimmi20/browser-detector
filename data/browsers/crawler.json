@@ -236,7 +236,7 @@
     "engine": "unknown"
   },
   "mixrankbot": {
-    "name": "MixrankBot",
+    "name": "MixRank Bot",
     "manufacturer": "online-media-group",
     "type": "crawler",
     "version": {
@@ -453,19 +453,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": null
-  },
-  "repo-lookout-bot": {
-    "name": "RepoLookoutBot",
-    "manufacturer": "crissy-field",
-    "type": "crawler",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "RepoLookoutBot",
-        "RepoLookoutBot\\/v"
-      ]
     },
     "engine": null
   },
@@ -2016,6 +2003,207 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TigerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "safe-dns-bot": {
+    "name": "SafeDNSBot",
+    "manufacturer": "safe-dns",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SafeDNSBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-read-aloud": {
+    "name": "Google Read Aloud",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Read-Aloud"
+      ]
+    },
+    "engine": null
+  },
+  "very-hip": {
+    "name": "VeryHip",
+    "manufacturer": "inter-server",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VeryHip"
+      ]
+    },
+    "engine": null
+  },
+  "zoom-bot": {
+    "name": "Zoombot",
+    "manufacturer": "zoom",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zoombot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seozoom-bot": {
+    "name": "ZoomBot",
+    "manufacturer": "seo-cube",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zoombot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hgf-alpha-x-crawl": {
+    "name": "AlphaXCrawl",
+    "manufacturer": "universitaet-passau",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hgfAlphaXCrawl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "claude-web": {
+    "name": "Claude-Web",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Claude-Web"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "site-score-bot": {
+    "name": "SiteScoreBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiteScoreBot",
+        "SiteScoreBot v"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "php-neural-network": {
+    "name": "phpneuralnetwork",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "seolyt-bot": {
+    "name": "SeolytBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SEOlyt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webceo bot": {
+    "name": "WebCEO Bot",
+    "manufacturer": "web-ceo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "online\\-webceo\\-bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "workona-favicon-service": {
+    "name": "Workona Favicon Service",
+    "manufacturer": "workona",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "workona\\-favicon\\-service"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "geedo-product-search": {
+    "name": "GeedoProductSearch",
+    "manufacturer": "geedo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GeedoProductSearch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sandoba-crawler": {
+    "name": "Sandoba//Crawler",
+    "manufacturer": "sandoba",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SandobaCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "the-trade-desk-content": {
+    "name": "The Trade Desk Content",
+    "manufacturer": "trade-desk",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "siteone-crawler": {
+    "name": "SiteOne Crawler",
+    "manufacturer": "siteone",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiteOne-Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "geedo-bot": {
+    "name": "GeedoBot",
+    "manufacturer": "geedo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GeedoBot"
       ]
     },
     "engine": "unknown"

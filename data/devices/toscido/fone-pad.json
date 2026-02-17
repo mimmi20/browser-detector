@@ -1,20 +1,4 @@
 {
-  "toscido m863-eea": {
-    "deviceName": "M863-EEA",
-    "marketingName": "M863",
-    "manufacturer": "toscido",
-    "brand": "toscido",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 10
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "toscido x104-eea": {
     "deviceName": "X104-EEA",
     "marketingName": "X104",
@@ -105,6 +89,22 @@
     "display": {
       "width": 1920,
       "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "toscido t12-eea": {
+    "deviceName": "T12-EEA",
+    "marketingName": "T12",
+    "manufacturer": "toscido",
+    "brand": "toscido",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
       "touch": true,
       "size": 10.1
     },

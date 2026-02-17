@@ -331,7 +331,7 @@
     "engine": "unknown"
   },
   "aria2": {
-    "name": "aria2",
+    "name": "Aria2",
     "manufacturer": "unknown",
     "type": "library",
     "version": {
@@ -590,6 +590,16 @@
       "search": [
         "rest-client"
       ]
+    },
+    "engine": "unknown"
+  },
+  "symfony-http-client": {
+    "name": "Symfony HttpClient",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": "unknown"
   }

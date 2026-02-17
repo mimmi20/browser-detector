@@ -74,11 +74,12 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $matches = [];
 
         if (
-            preg_match('/^WhatsApp\/[0-9.]+ (?P<code>[AW])$/', $normalizedValue, $matches)
+            preg_match('/^WhatsApp\/[0-9.]+ (?P<code>[AWi])$/', $normalizedValue, $matches)
             && array_key_exists('code', $matches)
         ) {
             return match ($matches['code']) {
                 'W' => 'unknown=windows desktop',
+                'i' => 'apple=general apple device',
                 default => 'unknown=general mobile phone',
             };
         }
@@ -86,8 +87,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $regexes = [
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
-            '/^mozilla\/[\d.]+ \(linux;(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/^mozilla\/[\d.]+ \((linux|andr[o0]id);(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \((linux|andr[o0]id);(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',

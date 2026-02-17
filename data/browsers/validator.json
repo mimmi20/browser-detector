@@ -54,5 +54,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "google-site-verification": {
+    "name": "Google-Site-Verification",
+    "manufacturer": "google",
+    "type": "validator",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google\\-Site\\-Verification"
+      ]
+    },
+    "engine": "unknown"
   }
 }

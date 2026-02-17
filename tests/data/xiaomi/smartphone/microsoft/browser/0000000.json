@@ -320,8 +320,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI A1",
-      "marketingName": "MI A1",
+      "deviceName": "Mi A1",
+      "marketingName": "Mi A1",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -905,8 +905,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI A1",
-      "marketingName": "MI A1",
+      "deviceName": "Mi A1",
+      "marketingName": "Mi A1",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -4060,6 +4060,51 @@
     "engine": {
       "name": "Blink",
       "version": "142.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Redmi K60; Build/BP2A.200304.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36 EdgA/104.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi K60",
+      "marketingName": "Redmi K60",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
       "manufacturer": "Google"
     }
   }

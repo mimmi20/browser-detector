@@ -159,5 +159,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "repo-lookout-bot": {
+    "name": "RepoLookoutBot",
+    "manufacturer": "crissy-field",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RepoLookoutBot",
+        "RepoLookoutBot\\/v"
+      ]
+    },
+    "engine": null
   }
 }

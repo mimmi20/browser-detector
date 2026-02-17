@@ -227,5 +227,17 @@
       ]
     },
     "engine": null
+  },
+  "barracuda-sentinel": {
+    "name": "Barracuda Sentinel",
+    "manufacturer": "barracuda-networks",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Barracuda Sentinel"
+      ]
+    },
+    "engine": null
   }
 }
