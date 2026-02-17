@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; OpenBSD i386; en-US; rv:1.7.12) Gecko/20051014"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenBSD",
+      "marketingName": "OpenBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.7.12",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.7.12",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:50.0) Gecko/20100101 Firefox/50.0"
     },
     "device": {
@@ -1193,10 +1238,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Horizon",
+      "marketingName": "Horizon",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Meta",
       "bits": null
     },
     "client": {
@@ -4451,51 +4496,6 @@
     "engine": {
       "name": "Gecko",
       "version": "29.0.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.7 [en] (X11; I; SunOS 5.8 sun4u)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "SunOS",
-      "marketingName": "SunOS",
-      "version": "5.8.0",
-      "manufacturer": "Oracle",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.7.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
       "manufacturer": "Mozilla"
     }
   }

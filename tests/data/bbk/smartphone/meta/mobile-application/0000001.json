@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; RMX3501 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FBAN/EMA;FBLC/en_US;FBAV/369.0.0.5.110;FBDM/DisplayMetrics{density=2.0, width=720, height=1448, scaledDensity=2.0, xdpi=268.941, ydpi=269.139};]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX3501",
+      "marketingName": "C31",
+      "manufacturer": "BBK",
+      "brand": "Realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Lite",
+      "modus": null,
+      "version": "369.0.0.5.110",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.5790.166",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; CPH2491 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.177 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/427.0.0.31.63;]"
     },
     "device": {

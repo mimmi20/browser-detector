@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Googles spyware monster; WOW) BackdoorWebKit/537.36 (KHTML, and then building 7 just fell down) ChromeIsSpywareEngine/59.0.3071.86 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 Chrome/72.0.3626.121 Safari/537.36 comdirect/1.0 (appVersion:19.12.0;deviceType:desktop)"
     },
     "device": {
@@ -4872,60 +4917,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "114.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"Note 12\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
       "manufacturer": "Google",
       "bits": null
     },

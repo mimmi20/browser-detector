@@ -1126,51 +1126,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2067) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CPH2067",
-      "marketingName": "A72 (2020)",
-      "manufacturer": "BBK",
-      "brand": "OPPO",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "85.0.4183.81",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.81",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2069) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36"
     },
     "device": {
@@ -1941,16 +1896,16 @@
     "device": {
       "architecture": null,
       "deviceName": "V2023",
-      "marketingName": "iQOO U1 Premium Edition",
+      "marketingName": "V20 SE",
       "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 2340,
+        "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.5
+        "size": 6.44
       },
       "type": "phablet",
       "ismobile": true,
@@ -2746,51 +2701,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; PCAM10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.88 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PCAM10",
-      "marketingName": "A9",
-      "manufacturer": "BBK",
-      "brand": "OPPO",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "91.0.4472.88",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.88",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; RMX1929) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"
     },
     "device": {
@@ -3011,51 +2921,6 @@
     "engine": {
       "name": "Blink",
       "version": "95.0.4638.74",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2067 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CPH2067",
-      "marketingName": "A72 (2020)",
-      "manufacturer": "BBK",
-      "brand": "OPPO",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "99.0.4844.73",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.73",
       "manufacturer": "Google"
     }
   },

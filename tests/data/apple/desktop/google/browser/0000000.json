@@ -181,6 +181,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; MacOS X 10_11_1; en-US; Valve Steam GameOverlay/1444853545; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "45.0.2454.85",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "45.0.2454.85",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Mac OSX 7.1) AppleWebKit/931.66 (KHTML, like Gecko) Chrome/14.2.1335.173 Safari/931.66"
     },
     "device": {

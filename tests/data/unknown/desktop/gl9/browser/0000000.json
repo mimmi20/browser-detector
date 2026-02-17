@@ -46,6 +46,96 @@
   },
   {
     "headers": {
+      "user-agent": "NetSurf/1.1 (Linux; i686)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "SurfBrowser",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "gl9",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetSurf",
+      "version": "1.1.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetSurf/1.2 (NetBSD; amd64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "SurfBrowser",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "gl9",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetSurf",
+      "version": "1.2.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; Unix; en-US) AppleWebKit/537.15 (KHTML, like Gecko) Chrome/24.0.1295.0 Safari/537.15 Surf/0.7"
     },
     "device": {
@@ -177,6 +267,96 @@
       "name": "WebKit",
       "version": "531.2.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetSurf/2.7 (AmigaOS; powerpc)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "SurfBrowser",
+      "modus": null,
+      "version": "2.7.0",
+      "manufacturer": "gl9",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetSurf",
+      "version": "2.7.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetSurf/3.0 (AmigaOS; powerpc)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "SurfBrowser",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "gl9",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetSurf",
+      "version": "3.0.0",
+      "manufacturer": "unknown"
     }
   },
   {
@@ -316,12 +496,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Safari/605.1.15 Surf/2.0"
+      "user-agent": "ZoneSurf/2.4 (BeOS; U; BeOS 5.0 BePC; en-US; 0.8)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": false,
@@ -338,25 +518,25 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Horizon",
+      "marketingName": "Horizon",
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "Meta",
       "bits": null
     },
     "client": {
       "name": "SurfBrowser",
       "modus": null,
-      "version": "2.0.0",
+      "version": "2.4.0",
       "manufacturer": "gl9",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {

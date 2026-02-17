@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; Solaris 9)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 7",
+      "version": "7.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; Solaris 9)"
     },
     "device": {
@@ -746,8 +791,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -791,8 +836,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -836,8 +881,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -881,8 +926,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -926,8 +971,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -971,8 +1016,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -1016,8 +1061,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -1061,8 +1106,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -1078,6 +1123,51 @@
     "engine": {
       "name": "Trident",
       "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge",
+      "modus": null,
+      "version": "17.10859.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "17.10859.0",
       "manufacturer": "Microsoft"
     }
   },
@@ -1106,8 +1196,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -1151,8 +1241,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },

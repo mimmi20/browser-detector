@@ -339,8 +339,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -924,8 +924,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },
@@ -933,6 +933,51 @@
       "name": "WSP Bot",
       "modus": null,
       "version": null,
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; newstin.com; HTTPClient 3.1; X11)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "httpclient",
+      "modus": null,
+      "version": "3.1.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true,
@@ -1104,8 +1149,8 @@
     },
     "os": {
       "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
       "manufacturer": "Microsoft",
       "bits": null
     },

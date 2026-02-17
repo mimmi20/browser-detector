@@ -133,5 +133,50 @@
       "version": "142.0.7444.220",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 9; JAT-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaApp_Android/10.63 YaSearchBrowser/10.63 BroPP/1.0 SA/1 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "JAT-LX1",
+      "marketingName": "Honor 8A Pro",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "10.63.0",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.117",
+      "manufacturer": "Google"
+    }
   }
 ]

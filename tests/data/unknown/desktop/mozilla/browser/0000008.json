@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; AIX 5.3; en-US; rv:1.7.13) Gecko/20060427"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "AIX",
+      "marketingName": "AIX",
+      "version": "5.3.0",
+      "manufacturer": "IBM",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.7.13",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.7.13",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; AIX 0058CDBF4C00; en-US; rv:1.6b) Gecko/20031216"
     },
     "device": {
@@ -1103,10 +1148,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Horizon",
+      "marketingName": "Horizon",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Meta",
       "bits": null
     },
     "client": {
@@ -1148,10 +1193,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Horizon",
+      "marketingName": "Horizon",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Meta",
       "bits": null
     },
     "client": {
@@ -1193,10 +1238,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Horizon",
+      "marketingName": "Horizon",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Meta",
       "bits": null
     },
     "client": {
@@ -4096,6 +4141,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/4.73 [en] (X11; I; Linux 2.4.4-1a ppc)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla Application Suite",
+      "modus": null,
+      "version": "4.73.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.72C-SGI [en] (X11; I; IRIX64 6.5 IP30)"
     },
     "device": {
@@ -4392,96 +4482,6 @@
       "marketingName": "SunOS",
       "version": "5.5.1",
       "manufacturer": "Oracle",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.7.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.7 [en] (X11; U; HP-UX B.10.20 9000/785)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "HP-UX",
-      "marketingName": "HP-UX",
-      "version": null,
-      "manufacturer": "HP",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.7.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.7 [en] (X11; U; HP-UX B.10.20 9000/782)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "HP-UX",
-      "marketingName": "HP-UX",
-      "version": null,
-      "manufacturer": "HP",
       "bits": null
     },
     "client": {

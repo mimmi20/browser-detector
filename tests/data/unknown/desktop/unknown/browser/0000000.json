@@ -23,10 +23,10 @@
       "bits": null
     },
     "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "3.9.0",
-      "manufacturer": "unknown",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -113,10 +113,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Horizon",
+      "marketingName": "Horizon",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Meta",
       "bits": null
     },
     "client": {
@@ -2881,51 +2881,6 @@
   },
   {
     "headers": {
-      "user-agent": "NetSurf/1.1 (Linux; i686)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "NetSurf",
-      "modus": null,
-      "version": "1.1.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetSurf",
-      "version": "1.1.0",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 4.10) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.46 Safari/535.11 MRCHROME"
     },
     "device": {
@@ -2967,51 +2922,6 @@
       "name": "WebKit",
       "version": "535.11.0",
       "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NetSurf/1.2 (NetBSD; amd64)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "NetBSD",
-      "marketingName": "NetBSD",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "NetSurf",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetSurf",
-      "version": "1.2.0",
-      "manufacturer": "unknown"
     }
   },
   {
@@ -4163,10 +4073,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
+      "name": "Horizon",
+      "marketingName": "Horizon",
       "version": null,
-      "manufacturer": "Access",
+      "manufacturer": "Meta",
       "bits": null
     },
     "client": {
@@ -4488,6 +4398,96 @@
       "name": "ELinks",
       "modus": null,
       "version": "0.11.4-RC+1",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ELinks/0.11.3 (textmode; CYGWIN_NT-6.0 1.5.25(0.156/4/2) i686; 130x45-2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "ELinks",
+      "modus": null,
+      "version": "0.11.3",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ELinks/0.10.4-7-debian (textmode; GNU/kFreeBSD 5.3-17 i686; 143x53-2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian with FreeBSD Kernel",
+      "marketingName": "Debian with FreeBSD Kernel",
+      "version": "5.3.17",
+      "manufacturer": "Software in the Public Interest",
+      "bits": null
+    },
+    "client": {
+      "name": "ELinks",
+      "modus": null,
+      "version": "0.10.4.7",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false,

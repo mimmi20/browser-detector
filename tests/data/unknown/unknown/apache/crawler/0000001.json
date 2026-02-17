@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "PaqueBot/Nutch-1.12"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Nutch",
-      "modus": null,
-      "version": "1.12.0",
-      "manufacturer": "Apache",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "nutch-spider-2.2.1/Nutch-1.12-SNAPSHOT"
     },
     "device": {
@@ -4488,6 +4443,51 @@
       "name": "Nutch",
       "modus": null,
       "version": "0.8.2-dev",
+      "manufacturer": "Apache",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Horny Sex Search/Nutch-0.9 (HornySexSearch.com Crawler; http://www.hornysexsearch.com; Contact HornySexSearch.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Nutch",
+      "modus": null,
+      "version": "0.9.0",
       "manufacturer": "Apache",
       "type": "crawler",
       "isbot": true,

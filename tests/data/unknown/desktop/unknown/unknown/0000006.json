@@ -946,51 +946,6 @@
   },
   {
     "headers": {
-      "user-agent": "ZoneSurf/2.4 (BeOS; U; BeOS 5.0 BePC; en-US; 0.8)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
-      "version": "5.0.0",
-      "manufacturer": "Access",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "PinkSock/1.1 [en] (X11; U; SunOS 5.9 i86)"
     },
     "device": {
@@ -1058,10 +1013,10 @@
       "bits": null
     },
     "os": {
-      "name": "BeOS",
-      "marketingName": "BeOS",
-      "version": "0.2.0",
-      "manufacturer": "Access",
+      "name": "Horizon",
+      "marketingName": "Horizon",
+      "version": null,
+      "manufacturer": "Meta",
       "bits": null
     },
     "client": {
@@ -4482,6 +4437,51 @@
       "marketingName": "Windows",
       "version": null,
       "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Ceatles/1.0 (Linux)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
