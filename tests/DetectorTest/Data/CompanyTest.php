@@ -6298,6 +6298,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Jlinksz',
                 'key' => 'jlinksz',
             ],
+            [
+                'type' => 'Sonos',
+                'name' => 'Sonos, Inc.',
+                'brandname' => 'Sonos',
+                'key' => 'sonos',
+            ],
         ];
     }
 

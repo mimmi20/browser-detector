@@ -2101,6 +2101,8 @@ enum Company: string implements CompanyInterface
 
     case jlinksz = 'Jlinksz';
 
+    case sonos = 'Sonos';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3149,6 +3151,7 @@ enum Company: string implements CompanyInterface
             'siteone', 'siteone s.r.o.' => self::siteone,
             'ctroniq', 'ctroniq ltd' => self::ctroniq,
             'jlinksz' => self::jlinksz,
+            'sonos', 'sonos, inc.' => self::sonos,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3561,6 +3564,7 @@ enum Company: string implements CompanyInterface
             self::theTradeDesk => 'The Trade Desk, Inc.',
             self::siteone => 'SiteOne s.r.o.',
             self::ctroniq => 'Ctroniq Ltd',
+            self::sonos => 'Sonos, Inc.',
             self::unknown => null,
             default => $this->value,
         };
