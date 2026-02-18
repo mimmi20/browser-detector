@@ -490,6 +490,7 @@ final class DeviceTest extends TestCase
             ['OPD2480', 'oneplus=oneplus opd2480'],
             ['OPD2481', 'oneplus=oneplus opd2481'],
             ['OPD2405', 'oneplus=oneplus opd2405'],
+            ['DE2118', 'oneplus=oneplus de2118'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -693,6 +694,7 @@ final class DeviceTest extends TestCase
             ['CPH2387', 'oppo=oppo cph2387'],
             ['CPH2407', 'oppo=oppo cph2407'],
             ['CPH2421', 'oppo=oppo cph2421'],
+            ['Oppo A78', 'oppo=oppo a78'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -1305,6 +1307,9 @@ final class DeviceTest extends TestCase
             ['Redmi K30', 'xiaomi=xiaomi redmi k30'],
             ['Xiaomi 13T Pro', 'xiaomi=xiaomi 13t pro'],
             ['Redmi 10 2022', 'xiaomi=xiaomi redmi 10 (2022)'],
+            ['Mi 10T Pro', 'xiaomi=xiaomi mi 10t pro'],
+            ['Mi 10T Pro 5G', 'xiaomi=xiaomi mi 10t pro 5g'],
+            ['Redmi Note 13 Pro+', 'xiaomi=xiaomi redmi note 13 pro+'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3256,6 +3261,13 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G815I', 'samsung=samsung sm-g815i'],
             ['SM-G810T1', 'samsung=samsung sm-g810t1'],
             ['SAMSUNG SM-G810T1', 'samsung=samsung sm-g810t1'],
+            ['SM-G316F', 'samsung=samsung sm-g316f'],
+            ['SAMSUNG SM-G316F', 'samsung=samsung sm-g316f'],
+            ['SM-G316HU', 'samsung=samsung sm-g316hu'],
+            ['SAMSUNG SM-G316HU', 'samsung=samsung sm-g316hu'],
+            ['SM-G316M', 'samsung=samsung sm-g316m'],
+            ['SAMSUNG SM-G316M', 'samsung=samsung sm-g316m'],
+            ['Galaxy Tab S7', 'samsung=samsung galaxy tab s7'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4101,7 +4113,7 @@ final class DeviceTest extends TestCase
             ['HMD T21', 'hmd-global=hmd-global t21'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
-            ['Xbox', 'microsoft=microsoft xbox one'],
+            ['Xbox', 'microsoft=microsoft xbox 360'],
             ['Surface Pro', 'microsoft=microsoft surface pro'],
             ['Surface Duo 2', 'microsoft=microsoft surface duo 2'],
             // realme
@@ -6791,6 +6803,7 @@ final class DeviceTest extends TestCase
             ['T676K', 'tcl=tcl t676k'],
             ['T676J', 'tcl=tcl t676j'],
             ['A509DL', 'tcl=tcl a509dl'],
+            ['9132G', 'tcl=tcl 9132g'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],

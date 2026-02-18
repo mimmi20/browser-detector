@@ -971,7 +971,7 @@
     "/[\\/ ]ios\\//i": "apple",
     "/ I5/": "sop",
     "/ i5/": "vsun",
-    "/kin\\.(?:one|two)|zunehd|windows nt 6\\.(?:2|3).*arm;|(?<!v)xbox|surface (duo|pro)/i": "microsoft"
+    "/kin\\.(?:one|two)|zunehd|windows nt 6\\.(?:2|3).*arm;|(?<!v)xbox[ )\\-_;]|surface (duo|pro)/i": "microsoft"
   },
   "generic": "unknown"
 }

@@ -7731,6 +7731,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua' => '"Chromium";v="130", "HeadlessChrome";v="130", "Not?A_Brand";v="99"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"Windows"',
+                    'user-agent' => 'Mozilla/5.0 (compatible;PetalBot;+https://webmaster.petalsearch.com/site/petalbot)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Windows"',
+                        'sec-ch-ua' => '"Chromium";v="130", "HeadlessChrome";v="130", "Not?A_Brand";v="99"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (compatible;PetalBot;+https://webmaster.petalsearch.com/site/petalbot)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows',
+                        'version' => null,
+                        'manufacturer' => 'Microsoft',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'PetalBot',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'Aspiegel',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '130.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

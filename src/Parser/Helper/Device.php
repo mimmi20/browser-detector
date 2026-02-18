@@ -460,6 +460,7 @@ final class Device implements DeviceInterface
             'opd2480' => 'oneplus=oneplus opd2480',
             'opd2481' => 'oneplus=oneplus opd2481',
             'opd2405' => 'oneplus=oneplus opd2405',
+            'de2118' => 'oneplus=oneplus de2118',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -663,6 +664,7 @@ final class Device implements DeviceInterface
             'cph2387' => 'oppo=oppo cph2387',
             'cph2407' => 'oppo=oppo cph2407',
             'cph2421' => 'oppo=oppo cph2421',
+            'oppo a78' => 'oppo=oppo a78',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1272,6 +1274,9 @@ final class Device implements DeviceInterface
             'redmi k30' => 'xiaomi=xiaomi redmi k30',
             'xiaomi 13t pro' => 'xiaomi=xiaomi 13t pro',
             'redmi 10 2022' => 'xiaomi=xiaomi redmi 10 (2022)',
+            'mi 10t pro' => 'xiaomi=xiaomi mi 10t pro',
+            'mi 10t pro 5g' => 'xiaomi=xiaomi mi 10t pro 5g',
+            'redmi note 13 pro+' => 'xiaomi=xiaomi redmi note 13 pro+',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2484,6 +2489,10 @@ final class Device implements DeviceInterface
             'sm-d925i', 'samsung sm-d925i' => 'samsung=samsung sm-d925i',
             'sm-g815i', 'samsung sm-g815i' => 'samsung=samsung sm-g815i',
             'sm-g810t1', 'samsung sm-g810t1' => 'samsung=samsung sm-g810t1',
+            'sm-g316f', 'samsung sm-g316f' => 'samsung=samsung sm-g316f',
+            'sm-g316hu', 'samsung sm-g316hu' => 'samsung=samsung sm-g316hu',
+            'sm-g316m', 'samsung sm-g316m' => 'samsung=samsung sm-g316m',
+            'galaxy tab s7' => 'samsung=samsung galaxy tab s7',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3286,7 +3295,7 @@ final class Device implements DeviceInterface
             'hmd t21' => 'hmd-global=hmd-global t21',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
-            'xbox' => 'microsoft=microsoft xbox one',
+            'xbox' => 'microsoft=microsoft xbox 360',
             'surface pro' => 'microsoft=microsoft surface pro',
             'surface duo 2' => 'microsoft=microsoft surface duo 2',
             // realme
@@ -5856,6 +5865,7 @@ final class Device implements DeviceInterface
             't676k' => 'tcl=tcl t676k',
             't676j' => 'tcl=tcl t676j',
             'a509dl' => 'tcl=tcl a509dl',
+            '9132g' => 'tcl=tcl 9132g',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
