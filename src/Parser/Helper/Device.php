@@ -91,6 +91,7 @@ final class Device implements DeviceInterface
             'lglk430' => 'lg=lg lk430',
             'lg-d726' => 'lg=lg d726',
             'lg-h920' => 'lg=lg h920',
+            'lg-d727' => 'lg=lg d727',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -2481,6 +2482,8 @@ final class Device implements DeviceInterface
             'gt-i9406v', 'samsung gt-i9406v' => 'samsung=samsung gt-i9406v',
             'sm-d928s', 'samsung sm-d928s' => 'samsung=samsung sm-d928s',
             'sm-d925i', 'samsung sm-d925i' => 'samsung=samsung sm-d925i',
+            'sm-g815i', 'samsung sm-g815i' => 'samsung=samsung sm-g815i',
+            'sm-g810t1', 'samsung sm-g810t1' => 'samsung=samsung sm-g810t1',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3268,6 +3271,7 @@ final class Device implements DeviceInterface
             'nokia 3110' => 'nokia=nokia 3110',
             'nokia 1000 4g' => 'nokia=nokia 1000 4g',
             'nokia 3115' => 'nokia=nokia 3115',
+            'nokia 1100 4g' => 'nokia=nokia 1100 4g',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',

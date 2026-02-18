@@ -54,6 +54,7 @@ final readonly class Ios implements VersionFactoryInterface
     ];
 
     private const array DARWIN_MAP = [
+        '/darwin\/25\.4/i' => '26.4',
         '/darwin\/25\.3/i' => '26.3',
         '/darwin\/25\.2/i' => '26.2',
         '/darwin\/25\.1/i' => '26.1',

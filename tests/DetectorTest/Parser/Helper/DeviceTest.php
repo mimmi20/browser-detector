@@ -113,6 +113,7 @@ final class DeviceTest extends TestCase
             ['LGLK430', 'lg=lg lk430'],
             ['LG-D726', 'lg=lg d726'],
             ['LG-H920', 'lg=lg h920'],
+            ['LG-D727', 'lg=lg d727'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
@@ -3251,6 +3252,10 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-D928S', 'samsung=samsung sm-d928s'],
             ['SM-D925I', 'samsung=samsung sm-d925i'],
             ['SAMSUNG SM-D925I', 'samsung=samsung sm-d925i'],
+            ['SM-G815I', 'samsung=samsung sm-g815i'],
+            ['SAMSUNG SM-G815I', 'samsung=samsung sm-g815i'],
+            ['SM-G810T1', 'samsung=samsung sm-g810t1'],
+            ['SAMSUNG SM-G810T1', 'samsung=samsung sm-g810t1'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4081,6 +4086,7 @@ final class DeviceTest extends TestCase
             ['Nokia 3110', 'nokia=nokia 3110'],
             ['Nokia 1000 4G', 'nokia=nokia 1000 4g'],
             ['Nokia 3115', 'nokia=nokia 3115'],
+            ['Nokia 1100 4G', 'nokia=nokia 1100 4g'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],

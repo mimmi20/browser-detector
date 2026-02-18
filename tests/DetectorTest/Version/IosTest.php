@@ -264,6 +264,10 @@ final class IosTest extends TestCase
                 'Mozilla/5.0 (iPod; CPU iPod OS 9_3_5; like Mac OS X) AppleWebKit/602.40 (KHTML, like Gecko) Chrome/52.0.3180.258 Mobile Safari/601.8',
                 '9.3.5',
             ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/25.4.0',
+                '26.4.0',
+            ],
         ];
     }
 
