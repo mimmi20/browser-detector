@@ -5898,5 +5898,17 @@
       ]
     },
     "engine": null
+  },
+  "nook-browser": {
+    "name": "Nook Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nook browser"
+      ]
+    },
+    "engine": null
   }
 }
