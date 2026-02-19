@@ -602,5 +602,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "reactor-netty": {
+    "name": "ReactorNetty",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ReactorNetty"
+      ]
+    },
+    "engine": "unknown"
   }
 }

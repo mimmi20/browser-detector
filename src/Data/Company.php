@@ -2103,6 +2103,10 @@ enum Company: string implements CompanyInterface
 
     case sonos = 'Sonos';
 
+    case queryEye = 'QueryEye';
+
+    case accompani = 'Accompani';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3152,6 +3156,8 @@ enum Company: string implements CompanyInterface
             'ctroniq', 'ctroniq ltd' => self::ctroniq,
             'jlinksz' => self::jlinksz,
             'sonos', 'sonos, inc.' => self::sonos,
+            'queryeye', 'queryeye inc.', 'query-eye' => self::queryEye,
+            'accompani', 'accompani, inc' => self::accompani,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3565,6 +3571,8 @@ enum Company: string implements CompanyInterface
             self::siteone => 'SiteOne s.r.o.',
             self::ctroniq => 'Ctroniq Ltd',
             self::sonos => 'Sonos, Inc.',
+            self::queryEye => 'QueryEye Inc.',
+            self::accompani => 'Accompani, Inc',
             self::unknown => null,
             default => $this->value,
         };
@@ -3917,6 +3925,7 @@ enum Company: string implements CompanyInterface
             self::barracudaNetworks => 'barracuda-networks',
             self::webCEO => 'web-ceo',
             self::theTradeDesk => 'trade-desk',
+            self::queryEye => 'query-eye',
             default => $this->name,
         };
     }

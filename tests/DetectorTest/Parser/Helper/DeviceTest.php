@@ -257,6 +257,7 @@ final class DeviceTest extends TestCase
             ['Pixel 5', 'google=google pixel 5'],
             ['Pixel 7a', 'google=google pixel 7a'],
             ['Pixel 4', 'google=google pixel 4'],
+            ['"google Pixel 4"', true, 'google=google pixel 4'],
             ['Pixel 8', 'google=google pixel 8'],
             ['kukui', 'google=google kukui'],
             ['Nexus 5', 'google=google nexus 5'],
@@ -492,6 +493,7 @@ final class DeviceTest extends TestCase
             ['OPD2481', 'oneplus=oneplus opd2481'],
             ['OPD2405', 'oneplus=oneplus opd2405'],
             ['DE2118', 'oneplus=oneplus de2118'],
+            ['OnePlus N200', 'oneplus=oneplus n200'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -696,6 +698,8 @@ final class DeviceTest extends TestCase
             ['CPH2407', 'oppo=oppo cph2407'],
             ['CPH2421', 'oppo=oppo cph2421'],
             ['Oppo A78', 'oppo=oppo a78'],
+            ['CPH2791', 'oppo=oppo cph2791'],
+            ['PLG110', 'oppo=oppo plg110'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],

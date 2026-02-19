@@ -220,7 +220,7 @@ final class Device implements DeviceInterface
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
             'pixel 3a' => 'google=google pixel 3a',
-            'pixel 4' => 'google=google pixel 4',
+            'pixel 4', 'google pixel 4' => 'google=google pixel 4',
             'pixel 4 xl' => 'google=google pixel 4 xl',
             'pixel 4a (5g)', 'pixel 4a (5g', 'aosp on bramble' => 'google=google pixel 4a 5g',
             'pixel 5' => 'google=google pixel 5',
@@ -462,6 +462,7 @@ final class Device implements DeviceInterface
             'opd2481' => 'oneplus=oneplus opd2481',
             'opd2405' => 'oneplus=oneplus opd2405',
             'de2118' => 'oneplus=oneplus de2118',
+            'oneplus n200' => 'oneplus=oneplus n200',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -666,6 +667,8 @@ final class Device implements DeviceInterface
             'cph2407' => 'oppo=oppo cph2407',
             'cph2421' => 'oppo=oppo cph2421',
             'oppo a78' => 'oppo=oppo a78',
+            'cph2791' => 'oppo=oppo cph2791',
+            'plg110' => 'oppo=oppo plg110',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',

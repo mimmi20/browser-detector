@@ -125,6 +125,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             '/emaudioplayer [\d.]+ \([\d.]+\) \/ (?P<platform>android) [\d.]+ \/ [^);\/]+/i',
             '/tivimate\/[\d.]+ \([^);\/]+; (?P<platform>android) [\d.]+\)/i',
             '/classic fm\/[\d.]+ (?P<platform>android) [\d.]+\/[^);\/]+/i',
+            '/\(speedmode; proxy; (?P<platform>android) [\d.]+;([^);\/]+))/i',
         ];
 
         $filtered = array_filter(

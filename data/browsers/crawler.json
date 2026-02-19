@@ -2207,5 +2207,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "query-seeker-spider": {
+    "name": "QuerySeekerSpider",
+    "manufacturer": "query-eye",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QuerySeekerSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "accompany-bot": {
+    "name": "AccompanyBot",
+    "manufacturer": "accompani",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AccompanyBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

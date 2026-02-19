@@ -6304,6 +6304,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Sonos',
                 'key' => 'sonos',
             ],
+            [
+                'type' => 'QueryEye',
+                'name' => 'QueryEye Inc.',
+                'brandname' => 'QueryEye',
+                'key' => 'query-eye',
+            ],
+            [
+                'type' => 'Accompani',
+                'name' => 'Accompani, Inc',
+                'brandname' => 'Accompani',
+                'key' => 'accompani',
+            ],
         ];
     }
 
