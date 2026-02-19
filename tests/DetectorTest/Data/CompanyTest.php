@@ -6316,6 +6316,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Accompani',
                 'key' => 'accompani',
             ],
+            [
+                'type' => 'Dopod',
+                'name' => 'Dopod',
+                'brandname' => 'Dopod',
+                'key' => 'dopod',
+            ],
+            [
+                'type' => 'Mason Larobina',
+                'name' => 'Mason Larobina',
+                'brandname' => 'Mason Larobina',
+                'key' => 'mason-larobina',
+            ],
         ];
     }
 

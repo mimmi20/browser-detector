@@ -114,7 +114,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/mozilla\/[\d.]+ \([\d.]+mb; [\d.]+x[\d.]+; [\d.]+x[\d.]+; [\d.]+x[\d.]+; (?P<devicecode>[^);\/]+); [\d.]+\) applewebkit/i',
             '/kodi\/[\d.]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
             '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
-            '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+))/i',
+            '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+)\)/i',
         ];
 
         $filtered = array_filter(

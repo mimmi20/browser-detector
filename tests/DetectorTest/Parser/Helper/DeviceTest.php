@@ -257,7 +257,7 @@ final class DeviceTest extends TestCase
             ['Pixel 5', 'google=google pixel 5'],
             ['Pixel 7a', 'google=google pixel 7a'],
             ['Pixel 4', 'google=google pixel 4'],
-            ['"google Pixel 4"', true, 'google=google pixel 4'],
+            ['"google Pixel 4"', 'google=google pixel 4'],
             ['Pixel 8', 'google=google pixel 8'],
             ['kukui', 'google=google kukui'],
             ['Nexus 5', 'google=google nexus 5'],
