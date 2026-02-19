@@ -92,6 +92,7 @@ final class Device implements DeviceInterface
             'lg-d726' => 'lg=lg d726',
             'lg-h920' => 'lg=lg h920',
             'lg-d727' => 'lg=lg d727',
+            'lg v60' => 'lg=lg v60',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -3089,6 +3090,7 @@ final class Device implements DeviceInterface
             'nla-lx2', 'huawei nla-lx2' => 'huawei=huawei nla-lx2',
             'log-an00', 'huawei log-an00' => 'huawei=huawei log-an00',
             'ascend g310', 'huawei ascend g310' => 'huawei=huawei ascend g310',
+            'huawei p30' => 'huawei=huawei p30',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -3295,7 +3297,7 @@ final class Device implements DeviceInterface
             'hmd t21' => 'hmd-global=hmd-global t21',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
-            'xbox' => 'microsoft=microsoft xbox 360',
+            'xbox' => 'microsoft=microsoft xbox',
             'surface pro' => 'microsoft=microsoft surface pro',
             'surface duo 2' => 'microsoft=microsoft surface duo 2',
             // realme

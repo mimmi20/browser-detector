@@ -1298,7 +1298,7 @@ final class SecChUaModelTest extends TestCase
             ['"Nokia XR20"', true, 'nokia=nokia xr20'],
             // Microsoft
             ['"Surface Duo"', true, 'microsoft=microsoft surface duo'],
-            ['"Xbox"', true, 'microsoft=microsoft xbox 360'],
+            ['"Xbox"', true, 'microsoft=microsoft xbox'],
             ['"Surface Pro"', true, 'microsoft=microsoft surface pro'],
             // realme
             ['"RMX3085"', true, 'realme=realme rmx3085'],

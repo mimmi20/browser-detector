@@ -114,6 +114,7 @@ final class DeviceTest extends TestCase
             ['LG-D726', 'lg=lg d726'],
             ['LG-H920', 'lg=lg h920'],
             ['LG-D727', 'lg=lg d727'],
+            ['LG V60', 'lg=lg v60'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
@@ -3896,6 +3897,7 @@ final class DeviceTest extends TestCase
             ['HUAWEI LOG-AN00', 'huawei=huawei log-an00'],
             ['Ascend G310', 'huawei=huawei ascend g310'],
             ['HUAWEI Ascend G310', 'huawei=huawei ascend g310'],
+            ['HUAWEI P30', 'huawei=huawei p30'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -4113,7 +4115,7 @@ final class DeviceTest extends TestCase
             ['HMD T21', 'hmd-global=hmd-global t21'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
-            ['Xbox', 'microsoft=microsoft xbox 360'],
+            ['Xbox', 'microsoft=microsoft xbox'],
             ['Surface Pro', 'microsoft=microsoft surface pro'],
             ['Surface Duo 2', 'microsoft=microsoft surface duo 2'],
             // realme
