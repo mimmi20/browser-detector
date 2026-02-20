@@ -25,8 +25,8 @@ use function array_first;
 use function array_key_exists;
 use function array_map;
 use function mb_strtolower;
+use function mb_trim;
 use function preg_match;
-use function trim;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
@@ -130,7 +130,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 preg_match($regex, $normalizedValue, $matches);
 
                 return $this->deviceCodeHelper->getDeviceCode(
-                    trim(mb_strtolower($matches['devicecode'] ?? '')),
+                    mb_trim(mb_strtolower($matches['devicecode'] ?? '')),
                 );
             },
             $filtered,
