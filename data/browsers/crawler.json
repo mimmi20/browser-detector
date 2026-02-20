@@ -2231,5 +2231,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "crawlson": {
+    "name": "Crawlson",
+    "manufacturer": "crawlson",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Crawlson"
+      ]
+    },
+    "engine": "unknown"
   }
 }

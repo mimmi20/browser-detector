@@ -6328,6 +6328,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Mason Larobina',
                 'key' => 'mason-larobina',
             ],
+            [
+                'type' => 'Crawlson',
+                'name' => 'Crawlson',
+                'brandname' => 'Crawlson',
+                'key' => 'crawlson',
+            ],
         ];
     }
 

@@ -26,6 +26,7 @@ use function array_key_exists;
 use function array_map;
 use function mb_strtolower;
 use function preg_match;
+use function trim;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
@@ -93,6 +94,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
+            '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+)\)/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
             '/slack\/[\d.]+ \((?P<devicecode>[^);\/]+)(?:;? (?:andr[o0]id|tizen) [\d.]+)(?:[^)]+)?\)/i',
@@ -114,7 +116,6 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/mozilla\/[\d.]+ \([\d.]+mb; [\d.]+x[\d.]+; [\d.]+x[\d.]+; [\d.]+x[\d.]+; (?P<devicecode>[^);\/]+); [\d.]+\) applewebkit/i',
             '/kodi\/[\d.]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
             '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
-            '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+)\)/i',
         ];
 
         $filtered = array_filter(
@@ -129,7 +130,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 preg_match($regex, $normalizedValue, $matches);
 
                 return $this->deviceCodeHelper->getDeviceCode(
-                    mb_strtolower($matches['devicecode'] ?? ''),
+                    trim(mb_strtolower($matches['devicecode'] ?? '')),
                 );
             },
             $filtered,

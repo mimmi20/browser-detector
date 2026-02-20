@@ -2245,13 +2245,14 @@
     "engine": "gecko"
   },
   "luakit": {
-    "name": "luakit",
+    "name": "LuaKit",
     "manufacturer": "mason-larobina",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "WebKitGTK\\+"
+        "WebKitGTK\\+",
+        "luakit"
       ]
     },
     "engine": "webkit"

@@ -2111,6 +2111,8 @@ enum Company: string implements CompanyInterface
 
     case masonLarobina = 'Mason Larobina';
 
+    case crawlson = 'Crawlson';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3164,6 +3166,7 @@ enum Company: string implements CompanyInterface
             'accompani', 'accompani, inc' => self::accompani,
             'dopod' => self::dopod,
             'masonlarobina', 'mason-larobina', 'mason larobina' => self::masonLarobina,
+            'crawlson' => self::crawlson,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
