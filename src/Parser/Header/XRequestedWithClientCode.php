@@ -392,6 +392,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.imo.android.imoim' => 'imo-international-calls-chat',
             'com.heytap.browser' => 'heytapbrowser',
             'ai.perplexity.comet' => 'comet',
+            'com.tencent.mtt' => 'qqbrowser',
             default => null,
         };
     }

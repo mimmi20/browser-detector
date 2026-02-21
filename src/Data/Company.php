@@ -2101,6 +2101,24 @@ enum Company: string implements CompanyInterface
 
     case jlinksz = 'Jlinksz';
 
+    case sonos = 'Sonos';
+
+    case queryEye = 'QueryEye';
+
+    case accompani = 'Accompani';
+
+    case dopod = 'Dopod';
+
+    case masonLarobina = 'Mason Larobina';
+
+    case crawlson = 'Crawlson';
+
+    case robertGraham = 'Robert Graham';
+
+    case munin = 'Munin';
+
+    case element = 'Element';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3149,6 +3167,15 @@ enum Company: string implements CompanyInterface
             'siteone', 'siteone s.r.o.' => self::siteone,
             'ctroniq', 'ctroniq ltd' => self::ctroniq,
             'jlinksz' => self::jlinksz,
+            'sonos', 'sonos, inc.' => self::sonos,
+            'queryeye', 'queryeye inc.', 'query-eye' => self::queryEye,
+            'accompani', 'accompani, inc' => self::accompani,
+            'dopod' => self::dopod,
+            'masonlarobina', 'mason-larobina', 'mason larobina' => self::masonLarobina,
+            'crawlson' => self::crawlson,
+            'robertgraham', 'robert-graham', 'robert graham' => self::robertGraham,
+            'munin' => self::munin,
+            'element', 'element electronics' => self::element,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3561,6 +3588,10 @@ enum Company: string implements CompanyInterface
             self::theTradeDesk => 'The Trade Desk, Inc.',
             self::siteone => 'SiteOne s.r.o.',
             self::ctroniq => 'Ctroniq Ltd',
+            self::sonos => 'Sonos, Inc.',
+            self::queryEye => 'QueryEye Inc.',
+            self::accompani => 'Accompani, Inc',
+            self::element => 'Element Electronics',
             self::unknown => null,
             default => $this->value,
         };
@@ -3913,6 +3944,9 @@ enum Company: string implements CompanyInterface
             self::barracudaNetworks => 'barracuda-networks',
             self::webCEO => 'web-ceo',
             self::theTradeDesk => 'trade-desk',
+            self::queryEye => 'query-eye',
+            self::masonLarobina => 'mason-larobina',
+            self::robertGraham => 'robert-graham',
             default => $this->name,
         };
     }

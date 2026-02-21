@@ -867,5 +867,17 @@
       ]
     },
     "engine": null
+  },
+  "sonos": {
+    "name": "Sonos",
+    "manufacturer": "sonos",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sonos"
+      ]
+    },
+    "engine": null
   }
 }

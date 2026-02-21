@@ -6298,6 +6298,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Jlinksz',
                 'key' => 'jlinksz',
             ],
+            [
+                'type' => 'Sonos',
+                'name' => 'Sonos, Inc.',
+                'brandname' => 'Sonos',
+                'key' => 'sonos',
+            ],
+            [
+                'type' => 'QueryEye',
+                'name' => 'QueryEye Inc.',
+                'brandname' => 'QueryEye',
+                'key' => 'query-eye',
+            ],
+            [
+                'type' => 'Accompani',
+                'name' => 'Accompani, Inc',
+                'brandname' => 'Accompani',
+                'key' => 'accompani',
+            ],
+            [
+                'type' => 'Dopod',
+                'name' => 'Dopod',
+                'brandname' => 'Dopod',
+                'key' => 'dopod',
+            ],
+            [
+                'type' => 'Mason Larobina',
+                'name' => 'Mason Larobina',
+                'brandname' => 'Mason Larobina',
+                'key' => 'mason-larobina',
+            ],
+            [
+                'type' => 'Crawlson',
+                'name' => 'Crawlson',
+                'brandname' => 'Crawlson',
+                'key' => 'crawlson',
+            ],
+            [
+                'type' => 'Robert Graham',
+                'name' => 'Robert Graham',
+                'brandname' => 'Robert Graham',
+                'key' => 'robert-graham',
+            ],
+            [
+                'type' => 'Munin',
+                'name' => 'Munin',
+                'brandname' => 'Munin',
+                'key' => 'munin',
+            ],
+            [
+                'type' => 'Element',
+                'name' => 'Element Electronics',
+                'brandname' => 'Element',
+                'key' => 'element',
+            ],
         ];
     }
 

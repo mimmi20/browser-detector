@@ -33,7 +33,7 @@ final class MobileDevice implements MobileDeviceInterface
 
         if (
             preg_match(
-                '/xbox|googletv|eeepc|smart-?tv|sonydtv|hbbtv|gxt_dongle_3188|apple tv|mxl661l32|nettv|crkey|lenovog780|windows iot|netcast|raspbian|bravia|tablet pc [12]\.|automobile|netgem(?!ein)|wordpress|webos\.tv|lgwebostv|; ?lge? ?;(?!.*(sprint|boost))|^opera\/\d+\.\d+ \(linux mips|tclwebkit| omi\\/|vizios/i',
+                '/(?<!v)xbox[ )\-_;]|googletv|eeepc|smart-?tv|sonydtv|hbbtv|gxt_dongle_3188|apple tv|mxl661l32|nettv|crkey|lenovog780|windows iot|netcast|raspbian|bravia|tablet pc [12]\.|automobile|netgem(?!ein)|wordpress|webos\.tv|lgwebostv|; ?lge? ?;(?!.*(sprint|boost))|^opera\/\d+\.\d+ \(linux mips|tclwebkit| omi\\/|vizios|wpe comcastappplatform|xfinity/i',
                 $useragent,
             )
         ) {
@@ -64,7 +64,7 @@ final class MobileDevice implements MobileDeviceInterface
 
         if (
             preg_match(
-                '/UCWEB|Puffin\/[\d.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}|(?<![az])iOS/',
+                '/UCWEB|Puffin\/[\d.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}|(?<![a-zA-Z])iOS/',
                 $useragent,
             )
         ) {

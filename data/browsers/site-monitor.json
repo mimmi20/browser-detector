@@ -125,5 +125,17 @@
       ]
     },
     "engine": null
+  },
+  "munin-bot": {
+    "name": "MuninBot",
+    "manufacturer": "munin",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MuninBot"
+      ]
+    },
+    "engine": null
   }
 }

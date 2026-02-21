@@ -110,5 +110,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "meizu m1 note": {
+    "deviceName": "M1 Note",
+    "marketingName": "M1 Note",
+    "manufacturer": "meizu",
+    "brand": "meizu",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }
