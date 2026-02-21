@@ -93,6 +93,7 @@ final class Device implements DeviceInterface
             'lg-h920' => 'lg=lg h920',
             'lg-d727' => 'lg=lg d727',
             'lg v60' => 'lg=lg v60',
+            'lg-d333' => 'lg=lg d333',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -4814,6 +4815,8 @@ final class Device implements DeviceInterface
             'wildfire e5' => 'htc=htc wildfire e5',
             'htc ones dual sim' => 'htc=htc one s dual sim',
             'htc one0p6b dual sim' => 'htc=htc 0p6b dual sim',
+            'htc butterfly s 901s' => 'htc=htc s901s',
+            'HTC_Desire_601_dual_sim' => 'htc=htc desire 601 dual sim',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea', 'p25_t_eea' => 'teclast=teclast p25t_eea',

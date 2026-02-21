@@ -115,6 +115,7 @@ final class DeviceTest extends TestCase
             ['LG-H920', 'lg=lg h920'],
             ['LG-D727', 'lg=lg d727'],
             ['LG V60', 'lg=lg v60'],
+            ['LG-D333', 'lg=lg d333'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
@@ -5744,6 +5745,8 @@ final class DeviceTest extends TestCase
             ['Wildfire E5', 'htc=htc wildfire e5'],
             ['HTC OneS dual sim', 'htc=htc one s dual sim'],
             ['HTC One0P6B dual sim', 'htc=htc 0p6b dual sim'],
+            ['HTC Butterfly S 901s', 'htc=htc s901s'],
+            ['HTC_Desire_601_dual_sim', 'htc=htc desire 601 dual sim'],
             // teclast
             ['P30S_EEA', 'teclast=teclast p30s_eea'],
             ['P25T_EEA', 'teclast=teclast p25t_eea'],

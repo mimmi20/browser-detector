@@ -2113,6 +2113,10 @@ enum Company: string implements CompanyInterface
 
     case crawlson = 'Crawlson';
 
+    case robertGraham = 'Robert Graham';
+
+    case munin = 'Munin';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3167,6 +3171,8 @@ enum Company: string implements CompanyInterface
             'dopod' => self::dopod,
             'masonlarobina', 'mason-larobina', 'mason larobina' => self::masonLarobina,
             'crawlson' => self::crawlson,
+            'robertgraham', 'robert-graham', 'robert graham' => self::robertGraham,
+            'munin' => self::munin,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3936,6 +3942,7 @@ enum Company: string implements CompanyInterface
             self::theTradeDesk => 'trade-desk',
             self::queryEye => 'query-eye',
             self::masonLarobina => 'mason-larobina',
+            self::robertGraham => 'robert-graham',
             default => $this->name,
         };
     }

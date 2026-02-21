@@ -6334,6 +6334,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Crawlson',
                 'key' => 'crawlson',
             ],
+            [
+                'type' => 'Robert Graham',
+                'name' => 'Robert Graham',
+                'brandname' => 'Robert Graham',
+                'key' => 'robert-graham',
+            ],
+            [
+                'type' => 'Munin',
+                'name' => 'Munin',
+                'brandname' => 'Munin',
+                'key' => 'munin',
+            ],
         ];
     }
 

@@ -1493,5 +1493,17 @@
       ]
     },
     "engine": null
+  },
+  "git": {
+    "name": "Git",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "git"
+      ]
+    },
+    "engine": null
   }
 }

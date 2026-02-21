@@ -2243,5 +2243,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "masscan": {
+    "name": "masscan",
+    "manufacturer": "robert-graham",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "masscan"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "aspiegel-bot": {
+    "name": "AspiegelBot",
+    "manufacturer": "huawei",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AspiegelBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

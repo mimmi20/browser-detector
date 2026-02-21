@@ -424,7 +424,7 @@
     "/mobiistar|prime[_ ]x[_ ]|zumbo[_ ]s/i": "mobiistar",
     "/ulefone|be[ _]pure[ _]lite|be[ _](?:one|pro|pure|touch|x)|paris|vienna|u00[78]|future|power[_ ]armor| power[_ ]?(?:[2356]s?)?(?: +build|[;\\/\\)])|tiger|armor[ _]?[1-9x]|s(?:[89]|10)[ _]?pro|(?:adr|android) 6\\.0.* (?:metal|gemini|armor)(?: +build|[;\\/\\)])|gemini[ _]pro|n9572|n9330|(?:adr|android) 4\\.1.* n9389(?: +build|[;\\/\\)])|note[ _](?:[6789]|1[16])[ _]?p(?:ro)?/i": "ulefone",
     "/onepad|airis|kira ?n9010/i": "airis",
-    "/gt-9000|(?<![bdefos\\-_])n[0-9]{4}|9930i|f9192|f9002|v89_jbl1a668|709v92_jbla828|s7189| n3\\+|star n920e|star s7589|s9920/i": "star",
+    "/gt-9000|(?<![bdefos\\-_])n[0-9]{4}(?!l)|9930i|f9192|f9002|v89_jbl1a668|709v92_jbla828|s7189| n3\\+|star n920e|star s7589|s9920/i": "star",
     "/mt6515m-a1\\+/i": "united",
     "/ mtn |mt10(?![4b])|sm\\@rt/i": "mtn",
     "/mt10b|m1009|mt13|mt91|kp-703|kp-718|bt1077/i": "excelvan",
