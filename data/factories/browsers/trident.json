@@ -61,7 +61,7 @@
     "/greenbrowser/i": "greenbrowser",
     "/juzibrowser/i": "juzibrowser",
     "/lbbrowser/i": "cheetah-browser",
-    "/aol/i": "aol explorer",
+    "/(?<!_)aol(?!tv)/i": "aol explorer",
     "/zune/i": "zune",
     "/browzar/i": "browzar",
     "/360spider/i": "360spider",

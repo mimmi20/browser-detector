@@ -64,7 +64,7 @@ final class MobileDevice implements MobileDeviceInterface
 
         if (
             preg_match(
-                '/UCWEB|Puffin\/[\d.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}|(?<![az])iOS/',
+                '/UCWEB|Puffin\/[\d.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}|(?<![a-zA-Z])iOS/',
                 $useragent,
             )
         ) {

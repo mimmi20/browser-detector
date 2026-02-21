@@ -860,7 +860,7 @@
     "/ypmobile|ypmobapp/i": "yellowpages mobile app",
     "/samsung-agent/i": "samsung agent",
     "/tenfourfox/i": "tenfourfox",
-    "/aol/i": "aol explorer",
+    "/(?<!_)aol(?!tv)/i": "aol explorer",
     "/pale ?moon/i": "palemoon",
     "/abrowse/i": "abrowse",
     "/oregano/i": "oregano",

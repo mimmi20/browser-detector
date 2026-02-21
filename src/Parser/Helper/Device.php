@@ -2565,6 +2565,8 @@ final class Device implements DeviceInterface
             'sm-n9002', 'samsung sm-n9002' => 'samsung=samsung sm-n9002',
             'sm-n9000q', 'samsung sm-n9000q' => 'samsung=samsung sm-n9000q',
             'sm-n900', 'samsung sm-n900' => 'samsung=samsung sm-n900',
+            'sm-t255s', 'samsung sm-t255s' => 'samsung=samsung sm-t255s',
+            'sm-t255a', 'samsung sm-t255a' => 'samsung=samsung sm-t255a',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3354,6 +3356,7 @@ final class Device implements DeviceInterface
             'nokia 1000 4g' => 'nokia=nokia 1000 4g',
             'nokia 3115' => 'nokia=nokia 3115',
             'nokia 1100 4g' => 'nokia=nokia 1100 4g',
+            'nokia 3215' => 'nokia=nokia 3215',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -3722,6 +3725,8 @@ final class Device implements DeviceInterface
             'motorola edge 5g uw (2021)', 'motorola edge 5g uw (2021' => 'motorola=motorola edge 5g uw 2021',
             'motorola edge 60' => 'motorola=motorola edge 60',
             'motorola edge 60 pro' => 'motorola=motorola edge 60 pro',
+            'motorola msm8960' => 'motorola=motorola msm8960',
+            'xt1070' => 'motorola=motorola xt1070',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',

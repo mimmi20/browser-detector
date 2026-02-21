@@ -3424,6 +3424,10 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-N9000Q', 'samsung=samsung sm-n9000q'],
             ['SM-N900', 'samsung=samsung sm-n900'],
             ['SAMSUNG SM-N900', 'samsung=samsung sm-n900'],
+            ['SM-T255S', 'samsung=samsung sm-t255s'],
+            ['SAMSUNG SM-T255S', 'samsung=samsung sm-t255s'],
+            ['SM-T255A', 'samsung=samsung sm-t255a'],
+            ['SAMSUNG SM-T255A', 'samsung=samsung sm-t255a'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4256,6 +4260,7 @@ final class DeviceTest extends TestCase
             ['Nokia 1000 4G', 'nokia=nokia 1000 4g'],
             ['Nokia 3115', 'nokia=nokia 3115'],
             ['Nokia 1100 4G', 'nokia=nokia 1100 4g'],
+            ['Nokia 3215', 'nokia=nokia 3215'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
@@ -4628,6 +4633,8 @@ final class DeviceTest extends TestCase
             ['motorola edge 5G UW (2021', 'motorola=motorola edge 5g uw 2021'],
             ['motorola edge 60', 'motorola=motorola edge 60'],
             ['motorola edge 60 pro', 'motorola=motorola edge 60 pro'],
+            ['MOTOROLA MSM8960', 'motorola=motorola msm8960'],
+            ['XT1070', 'motorola=motorola xt1070'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],

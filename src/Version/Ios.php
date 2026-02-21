@@ -49,7 +49,7 @@ final readonly class Ios implements VersionFactoryInterface
         'iosv',
         '(?<!browser)iPad\/',
         'iPhone\/',
-        '(?<![rtx]|[ekpry][- ])iOS',
+        '(?<![a-z]|[ekpry][- ])iOS',
         'Version',
     ];
 
