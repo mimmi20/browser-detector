@@ -147,7 +147,6 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-C900)'],
             ['POLARIS/6.01 (BREW 3.1.5; U; en-us; LG; LX265; POLARIS/6.01/WAP) MMP/2.0 profile/MIDP-2.1 Configuration/CLDC-1.1'],
             ['Mozilla/5.0 (CLT-L29 19.0.0.300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'],
-            ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform AX061AEI Firebolt/0.8.1,gzip(gfe),gzip(gfe) 1.0.0.0 Xfinity'],
             ['Mozilla/5.0 (Linux; U; Android 13; de-de; Redmi 12C Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.38.0-gn'],
             ['HISTORY/6.3.0 (com.aetn.history.ios.watch; build:4385; iOS 16.6.0) Alamofire/4.8.2'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3B) Opera 8.60 [ja]'],
@@ -261,6 +260,8 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.2.50.Honey.220 Model/Hisense-NT72671D'],
             ['VIZIO V755M-K04 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa'],
             ['nook browser/1.0'],
+            ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform E500AC55C Firebolt/0.8.1'],
+            ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform AX061AEI Firebolt/0.8.1,gzip(gfe),gzip(gfe) 1.0.0.0 Xfinity'],
         ];
     }
 }

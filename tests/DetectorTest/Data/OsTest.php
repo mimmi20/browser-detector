@@ -228,7 +228,7 @@ final class OsTest extends TestCase
                 'name' => 'Cent OS Linux',
                 'marketingName' => 'Cent OS Linux',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['CentOS(?: Linux)?\/[0-9\.\-]+el', 'CentOS Linux', 'CentOS']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['[0-9\.\-]+el', 'CentOS Linux', 'CentOS']],
                 'key' => 'cent os linux',
             ],
             [

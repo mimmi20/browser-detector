@@ -109,7 +109,7 @@ final class EngineTest extends TestCase
                 'type' => 'Blink',
                 'name' => 'Blink',
                 'manufacturer' => Company::google,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet', 'Chromium']],
                 'key' => 'blink',
             ],
             [

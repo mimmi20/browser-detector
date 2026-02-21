@@ -6346,6 +6346,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Munin',
                 'key' => 'munin',
             ],
+            [
+                'type' => 'Element',
+                'name' => 'Element Electronics',
+                'brandname' => 'Element',
+                'key' => 'element',
+            ],
         ];
     }
 

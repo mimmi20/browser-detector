@@ -89,6 +89,8 @@ final class TvTest extends TestCase
             ['VIZIO V755M-K04 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa'],
             ['Mozilla/5.0 (Linux;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0'],
             ['Sacred Sounds/2.2.1 (Roku 13.0.0; en_US; Roku Ultra; Build/24056)'],
+            ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform E500AC55C Firebolt/0.8.1'],
+            ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform AX061AEI Firebolt/0.8.1,gzip(gfe),gzip(gfe) 1.0.0.0 Xfinity'],
         ];
     }
 

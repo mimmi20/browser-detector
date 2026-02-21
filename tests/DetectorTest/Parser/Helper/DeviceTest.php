@@ -241,6 +241,7 @@ final class DeviceTest extends TestCase
             ['ASUS_AI2401_C', 'asus=asus ai2401 c'],
             ['ASUS_AI2401_E', 'asus=asus ai2401 e'],
             ['ASUS_AI2401_N', 'asus=asus ai2401 n'],
+            ['P023', 'asus=asus p023'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
             ['Pixel 7 Pro', 'google=google pixel 7 pro'],
@@ -3251,6 +3252,13 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G93508', 'samsung=samsung sm-g93508'],
             ['SM-G9350L', 'samsung=samsung sm-g9350l'],
             ['SAMSUNG SM-G9350L', 'samsung=samsung sm-g9350l'],
+            ['SM-G9350F', 'samsung=samsung sm-g9350f'],
+            ['SAMSUNG SM-G9350F', 'samsung=samsung sm-g9350f'],
+            ['SAMSUNG SM-G9350F-ORANGE', 'samsung=samsung sm-g9350f'],
+            ['SM-G9350X', 'samsung=samsung sm-g9350x'],
+            ['SAMSUNG SM-G9350X', 'samsung=samsung sm-g9350x'],
+            ['SM-G9350I', 'samsung=samsung sm-g9350i'],
+            ['SAMSUNG SM-G9350I', 'samsung=samsung sm-g9350i'],
             ['SM-G950W', 'samsung=samsung sm-g950w'],
             ['SAMSUNG SM-G950W', 'samsung=samsung sm-g950w'],
             ['SM-G950V', 'samsung=samsung sm-g950v'],
@@ -6812,6 +6820,10 @@ final class DeviceTest extends TestCase
             ['TECNO Mobile LG7n', 'tecno=tecno lg7n'],
             ['TECNO CI6n', 'tecno=tecno ci6n'],
             ['TECNO Mobile CI6n', 'tecno=tecno ci6n'],
+            ['TECNO B1f', 'tecno=tecno b1f'],
+            ['TECNO Mobile B1f', 'tecno=tecno b1f'],
+            ['TECNO B1c', 'tecno=tecno b1c'],
+            ['TECNO Mobile B1c', 'tecno=tecno b1c'],
             // foxxd
             ['FOXXD C65', 'foxxd=foxxd c65'],
             // ceibal
@@ -7841,6 +7853,7 @@ final class DeviceTest extends TestCase
             ['N6001L', 'nuu-mobile=nuu-mobile n6001l'],
             ['T0801L', 'nuu-mobile=nuu-mobile t0801l'],
             ['T0802L', 'nuu-mobile=nuu-mobile t0802l'],
+            ['N5502L', 'nuu-mobile=nuu-mobile n5502l'],
             // m-horse
             ['C68', 'm-horse=mhorse c68'],
             ['C67', 'm-horse=mhorse c67'],
@@ -8760,6 +8773,9 @@ final class DeviceTest extends TestCase
             ['U6_EEA', 'ujj=ujj u6_eea'],
             // deertime
             ['E6_EEA', 'deertime=deertime e6_eea'],
+            // bdf
+            ['K960N_MT6580_32_N', 'bdf=bdf k960n'],
+            ['BDF-KT107', 'bdf=bdf kt107'],
             // other
             ['Model"', null],
             [': "', null],

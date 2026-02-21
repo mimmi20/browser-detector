@@ -217,6 +217,7 @@ final class Device implements DeviceInterface
             'asus_ai2401_c' => 'asus=asus ai2401 c',
             'asus_ai2401_e' => 'asus=asus ai2401 e',
             'asus_ai2401_n' => 'asus=asus ai2401 n',
+            'p023' => 'asus=asus p023',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
@@ -2478,6 +2479,9 @@ final class Device implements DeviceInterface
             'sm-g9350', 'samsung sm-g9350' => 'samsung=samsung sm-g9350',
             'sm-g93508', 'samsung sm-g93508' => 'samsung=samsung sm-g93508',
             'sm-g9350l', 'samsung sm-g9350l' => 'samsung=samsung sm-g9350l',
+            'sm-g9350f', 'samsung sm-g9350f', 'samsung sm-g9350f-orange' => 'samsung=samsung sm-g9350f',
+            'sm-g9350x', 'samsung sm-g9350x' => 'samsung=samsung sm-g9350x',
+            'sm-g9350i', 'samsung sm-g9350i' => 'samsung=samsung sm-g9350i',
             'sm-g950w', 'samsung sm-g950w' => 'samsung=samsung sm-g950w',
             'sm-g950v', 'samsung sm-g950v' => 'samsung=samsung sm-g950v',
             'gt-i9406n', 'samsung gt-i9406n' => 'samsung=samsung gt-i9406n',
@@ -4816,7 +4820,7 @@ final class Device implements DeviceInterface
             'htc ones dual sim' => 'htc=htc one s dual sim',
             'htc one0p6b dual sim' => 'htc=htc 0p6b dual sim',
             'htc butterfly s 901s' => 'htc=htc s901s',
-            'HTC_Desire_601_dual_sim' => 'htc=htc desire 601 dual sim',
+            'htc_desire_601_dual_sim' => 'htc=htc desire 601 dual sim',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea', 'p25_t_eea' => 'teclast=teclast p25t_eea',
@@ -5795,6 +5799,8 @@ final class Device implements DeviceInterface
             'tecno lg8n', 'tecno mobile lg8n' => 'tecno=tecno lg8n',
             'tecno lg7n', 'tecno mobile lg7n' => 'tecno=tecno lg7n',
             'tecno ci6n', 'tecno mobile ci6n' => 'tecno=tecno ci6n',
+            'tecno b1f', 'tecno mobile b1f' => 'tecno=tecno b1f',
+            'tecno b1c', 'tecno mobile b1c' => 'tecno=tecno b1c',
             // foxxd
             'foxxd c65' => 'foxxd=foxxd c65',
             // ceibal
@@ -6734,6 +6740,7 @@ final class Device implements DeviceInterface
             'n6001l' => 'nuu-mobile=nuu-mobile n6001l',
             't0801l' => 'nuu-mobile=nuu-mobile t0801l',
             't0802l' => 'nuu-mobile=nuu-mobile t0802l',
+            'n5502l' => 'nuu-mobile=nuu-mobile n5502l',
             // m-horse
             'c68' => 'm-horse=mhorse c68',
             'c67' => 'm-horse=mhorse c67',
@@ -7644,6 +7651,9 @@ final class Device implements DeviceInterface
             'u6_eea' => 'ujj=ujj u6_eea',
             // deertime
             'e6_eea' => 'deertime=deertime e6_eea',
+            // bdf
+            'k960n_mt6580_32_n' => 'bdf=bdf k960n',
+            'bdf-kt107' => 'bdf=bdf kt107',
             // other
             default => null,
         };

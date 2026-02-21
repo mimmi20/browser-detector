@@ -7787,6 +7787,63 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'q-ua2' => 'QV=3&PL=ADR&PR=PHX&PP=com.transsion.phoenix&PPVN=14.4.1.4765&PPVC=4765&CO=SYS&CHID=23600&ACID=23600&MO= SM-S901B &DN= r0s &BN= samsung &RL=1080*2259&OS=14&API=34&CTRY=DE&LNG=de-DE',
+                    'sec-ch-ua' => '"Not_A Brand";v="8", "Chromium";v="120", "Android WebView";v="120"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'sec-ch-ua-platform' => '"Android"',
+                    'user-agent' => 'Mozilla/5.0 (Linux; U; Android 14; de-de; SM-S901B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.210 Mobile Safari/537.36 PHX/14.4',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Android"',
+                        'sec-ch-ua' => '"Not_A Brand";v="8", "Chromium";v="120", "Android WebView";v="120"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Mozilla/5.0 (Linux; U; Android 14; de-de; SM-S901B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.210 Mobile Safari/537.36 PHX/14.4',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-S901B',
+                        'marketingName' => 'Galaxy S22 5G (International)',
+                        'manufacturer' => 'Samsung',
+                        'brand' => 'Samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2340,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.1,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '14.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Phoenix Browser',
+                        'modus' => null,
+                        'version' => '14.4.0',
+                        'manufacturer' => 'CloudView Technology',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '120.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }
