@@ -6382,6 +6382,54 @@ final class CompanyTest extends TestCase
                 'brandname' => 'iParadigms',
                 'key' => 'iparadigms',
             ],
+            [
+                'type' => 'Castle Global',
+                'name' => 'Castle Global, Inc.',
+                'brandname' => 'Castle Global',
+                'key' => 'castle-global',
+            ],
+            [
+                'type' => 'Denver',
+                'name' => 'Denver Electronics A/S',
+                'brandname' => 'Denver',
+                'key' => 'denver',
+            ],
+            [
+                'type' => 'smartbook',
+                'name' => 'smartbook AG',
+                'brandname' => 'smartbook',
+                'key' => 'smartbook',
+            ],
+            [
+                'type' => 'TP-Link',
+                'name' => 'TP-Link Technologies Co., Ltd.',
+                'brandname' => 'TP-Link',
+                'key' => 'tp-link',
+            ],
+            [
+                'type' => 'YU',
+                'name' => 'YU Televentures',
+                'brandname' => 'YU',
+                'key' => 'yu',
+            ],
+            [
+                'type' => 'Digital Life International',
+                'name' => 'Digital Life International',
+                'brandname' => 'Digital Life International',
+                'key' => 'digital-life-international',
+            ],
+            [
+                'type' => 'Twingly',
+                'name' => 'Twingly AB',
+                'brandname' => 'Twingly',
+                'key' => 'twingly',
+            ],
+            [
+                'type' => 'WebPros',
+                'name' => 'WebPros HoldCo B.V.',
+                'brandname' => 'WebPros',
+                'key' => 'webpros',
+            ],
         ];
     }
 

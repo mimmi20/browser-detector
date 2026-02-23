@@ -4264,6 +4264,7 @@ final class DeviceTest extends TestCase
             ['Nokia 3115', 'nokia=nokia 3115'],
             ['Nokia 1100 4G', 'nokia=nokia 1100 4g'],
             ['Nokia 3215', 'nokia=nokia 3215'],
+            ['Nokia C21 Plus', 'nokia=nokia c21 plus'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],

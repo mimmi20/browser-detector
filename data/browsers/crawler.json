@@ -691,7 +691,7 @@
     "engine": "unknown"
   },
   "webprosbot": {
-    "name": "webprosbot",
+    "name": "WebProsBot",
     "manufacturer": "webpros",
     "type": "crawler",
     "version": {
@@ -2264,6 +2264,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AspiegelBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "imagesift-bot": {
+    "name": "ImagesiftBot",
+    "manufacturer": "castle-global",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ImagesiftBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "twingly recon": {
+    "name": "Twingly Recon",
+    "manufacturer": "twingly",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twingly Recon"
       ]
     },
     "engine": "unknown"

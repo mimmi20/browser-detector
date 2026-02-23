@@ -2129,6 +2129,22 @@ enum Company: string implements CompanyInterface
 
     case iparadigms = 'iParadigms';
 
+    case castleGlobal = 'Castle Global';
+
+    case denver = 'Denver';
+
+    case smartbook = 'smartbook';
+
+    case tPLink = 'TP-Link';
+
+    case yu = 'YU';
+
+    case digitalLifeInternational = 'Digital Life International';
+
+    case twingly = 'Twingly';
+
+    case webpros = 'WebPros';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3191,6 +3207,14 @@ enum Company: string implements CompanyInterface
             'ask', 'ask.com' => self::ask,
             'thedilloproject', 'dillo-project', 'the dillo project' => self::theDilloProject,
             'iparadigms', 'iparadigms, llc.' => self::iparadigms,
+            'castleglobal', 'castle global, inc.', 'castle-global', 'castle global' => self::castleGlobal,
+            'denver', 'denver electronics a/s' => self::denver,
+            'smartbook', 'smartbook ag' => self::smartbook,
+            'tplink', 'tp-link technologies co., ltd.', 'tp-link' => self::tPLink,
+            'yu', 'yu televentures' => self::yu,
+            'digitallifeinternational', 'digital-life-international', 'digital life international' => self::digitalLifeInternational,
+            'twingly', 'twingly ab' => self::twingly,
+            'webpros', 'webpros holdco b.v.' => self::webpros,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3610,6 +3634,13 @@ enum Company: string implements CompanyInterface
             self::infocus => 'InFocus, Inc.',
             self::ask => 'ask.com',
             self::iparadigms => 'iParadigms, LLC.',
+            self::castleGlobal => 'Castle Global, Inc.',
+            self::denver => 'Denver Electronics A/S',
+            self::smartbook => 'smartbook AG',
+            self::tPLink => 'TP-Link Technologies Co., Ltd.',
+            self::yu => 'YU Televentures',
+            self::twingly => 'Twingly AB',
+            self::webpros => 'WebPros HoldCo B.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3966,6 +3997,9 @@ enum Company: string implements CompanyInterface
             self::masonLarobina => 'mason-larobina',
             self::robertGraham => 'robert-graham',
             self::theDilloProject => 'dillo-project',
+            self::castleGlobal => 'castle-global',
+            self::tPLink => 'tp-link',
+            self::digitalLifeInternational => 'digital-life-international',
             default => $this->name,
         };
     }

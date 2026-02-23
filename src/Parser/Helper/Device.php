@@ -3360,6 +3360,7 @@ final class Device implements DeviceInterface
             'nokia 3115' => 'nokia=nokia 3115',
             'nokia 1100 4g' => 'nokia=nokia 1100 4g',
             'nokia 3215' => 'nokia=nokia 3215',
+            'nokia c21 plus' => 'nokia=nokia c21 plus',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
