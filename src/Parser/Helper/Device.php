@@ -218,6 +218,8 @@ final class Device implements DeviceInterface
             'asus_ai2401_e' => 'asus=asus ai2401 e',
             'asus_ai2401_n' => 'asus=asus ai2401 n',
             'p023' => 'asus=asus p023',
+            'asus_x01bda' => 'asus=asus x01bda',
+            'zb631kl' => 'asus=asus zb631kl',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
@@ -1283,6 +1285,7 @@ final class Device implements DeviceInterface
             'mi 10t pro' => 'xiaomi=xiaomi mi 10t pro',
             'mi 10t pro 5g' => 'xiaomi=xiaomi mi 10t pro 5g',
             'redmi note 13 pro+' => 'xiaomi=xiaomi redmi note 13 pro+',
+            'redmi note 11 pro' => 'xiaomi=xiaomi redmi note 11 pro 4g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -7659,6 +7662,8 @@ final class Device implements DeviceInterface
             // bdf
             'k960n_mt6580_32_n' => 'bdf=bdf k960n',
             'bdf-kt107' => 'bdf=bdf kt107',
+            // qihoo
+            '1713-a01' => 'qihoo=qihoo 1713-a01',
             // other
             default => null,
         };

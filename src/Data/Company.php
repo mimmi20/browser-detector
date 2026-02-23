@@ -1111,7 +1111,7 @@ enum Company: string implements CompanyInterface
 
     case soulSoft = 'SoulSoft';
 
-    case qihoo = 'Qihoo';
+    case qihoo = 'Qihoo 360';
 
     case line = 'LINE';
 
@@ -2119,6 +2119,16 @@ enum Company: string implements CompanyInterface
 
     case element = 'Element';
 
+    case infocus = 'InFocus';
+
+    case trekstor = 'TrekStor';
+
+    case ask = 'Ask';
+
+    case theDilloProject = 'the Dillo Project';
+
+    case iparadigms = 'iParadigms';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2672,7 +2682,7 @@ enum Company: string implements CompanyInterface
             'telegram', 'telegram messenger inc.' => self::telegram,
             'cloudviewtechnology', 'cloudview-technology', 'cloudview technology' => self::cloudviewTechnology,
             'soulsoft', 'soul-soft' => self::soulSoft,
-            'qihoo', 'qihoo 360 technology co. ltd.' => self::qihoo,
+            'qihoo', 'qihoo 360 technology co. ltd.', 'qihoo 360' => self::qihoo,
             'line', 'line corporation' => self::line,
             'nortonmobile', 'norton-mobile' => self::nortonMobile,
             'matomo' => self::matomo,
@@ -3176,6 +3186,11 @@ enum Company: string implements CompanyInterface
             'robertgraham', 'robert-graham', 'robert graham' => self::robertGraham,
             'munin' => self::munin,
             'element', 'element electronics' => self::element,
+            'infocus', 'infocus, inc.' => self::infocus,
+            'trekstor' => self::trekstor,
+            'ask', 'ask.com' => self::ask,
+            'thedilloproject', 'dillo-project', 'the dillo project' => self::theDilloProject,
+            'iparadigms', 'iparadigms, llc.' => self::iparadigms,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3592,6 +3607,9 @@ enum Company: string implements CompanyInterface
             self::queryEye => 'QueryEye Inc.',
             self::accompani => 'Accompani, Inc',
             self::element => 'Element Electronics',
+            self::infocus => 'InFocus, Inc.',
+            self::ask => 'ask.com',
+            self::iparadigms => 'iParadigms, LLC.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3947,6 +3965,7 @@ enum Company: string implements CompanyInterface
             self::queryEye => 'query-eye',
             self::masonLarobina => 'mason-larobina',
             self::robertGraham => 'robert-graham',
+            self::theDilloProject => 'dillo-project',
             default => $this->name,
         };
     }

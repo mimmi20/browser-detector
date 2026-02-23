@@ -2161,14 +2161,30 @@
   },
   "asus x01bda": {
     "deviceName": "X01BDA",
-    "marketingName": "ZenFone Max (M2) ZB633KL",
+    "marketingName": "ZenFone Max Pro (M2) ZB631KL",
     "manufacturer": "asus",
     "brand": "asus",
     "dualOrientation": true,
     "simCount": 2,
     "display": {
-      "width": 1520,
-      "height": 720,
+      "width": 2280,
+      "height": 1080,
+      "touch": true,
+      "size": 6.26
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "asus zb631kl": {
+    "deviceName": "ZB631KL",
+    "marketingName": "ZenFone Max Pro (M2) ZB631KL",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2280,
+      "height": 1080,
       "touch": true,
       "size": 6.26
     },

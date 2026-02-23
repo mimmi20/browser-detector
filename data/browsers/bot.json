@@ -4235,19 +4235,6 @@
     },
     "engine": "unknown"
   },
-  "msnbot-media": {
-    "name": "msnbot-media",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "MsnBot\\-Media ",
-        "msnbot\\-media"
-      ]
-    },
-    "engine": "unknown"
-  },
   "myengines bot": {
     "name": "MyEngines Bot",
     "manufacturer": "domain.de",
@@ -6426,16 +6413,6 @@
       "search": [
         "TasapImageRobot"
       ]
-    },
-    "engine": "unknown"
-  },
-  "teoma": {
-    "name": "Teoma",
-    "manufacturer": "ask",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },

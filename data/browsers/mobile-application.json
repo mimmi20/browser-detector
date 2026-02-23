@@ -4726,5 +4726,17 @@
       ]
     },
     "engine": null
+  },
+  "we-read": {
+    "name": "WeRead",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WeRead"
+      ]
+    },
+    "engine": null
   }
 }

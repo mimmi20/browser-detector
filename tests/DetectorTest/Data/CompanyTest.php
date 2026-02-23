@@ -3329,9 +3329,9 @@ final class CompanyTest extends TestCase
                 'key' => 'soul-soft',
             ],
             [
-                'type' => 'Qihoo',
+                'type' => 'Qihoo 360',
                 'name' => 'Qihoo 360 Technology Co. Ltd.',
-                'brandname' => 'Qihoo',
+                'brandname' => 'Qihoo 360',
                 'key' => 'qihoo',
             ],
             [
@@ -6351,6 +6351,36 @@ final class CompanyTest extends TestCase
                 'name' => 'Element Electronics',
                 'brandname' => 'Element',
                 'key' => 'element',
+            ],
+            [
+                'type' => 'InFocus',
+                'name' => 'InFocus, Inc.',
+                'brandname' => 'InFocus',
+                'key' => 'infocus',
+            ],
+            [
+                'type' => 'TrekStor',
+                'name' => 'TrekStor',
+                'brandname' => 'TrekStor',
+                'key' => 'trekstor',
+            ],
+            [
+                'type' => 'Ask',
+                'name' => 'ask.com',
+                'brandname' => 'Ask',
+                'key' => 'ask',
+            ],
+            [
+                'type' => 'the Dillo Project',
+                'name' => 'the Dillo Project',
+                'brandname' => 'the Dillo Project',
+                'key' => 'dillo-project',
+            ],
+            [
+                'type' => 'iParadigms',
+                'name' => 'iParadigms, LLC.',
+                'brandname' => 'iParadigms',
+                'key' => 'iparadigms',
             ],
         ];
     }

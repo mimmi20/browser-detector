@@ -242,6 +242,8 @@ final class DeviceTest extends TestCase
             ['ASUS_AI2401_E', 'asus=asus ai2401 e'],
             ['ASUS_AI2401_N', 'asus=asus ai2401 n'],
             ['P023', 'asus=asus p023'],
+            ['ASUS_X01BDA', 'asus=asus x01bda'],
+            ['ZB631KL', 'asus=asus zb631kl'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
             ['Pixel 7 Pro', 'google=google pixel 7 pro'],
@@ -1317,6 +1319,7 @@ final class DeviceTest extends TestCase
             ['Mi 10T Pro', 'xiaomi=xiaomi mi 10t pro'],
             ['Mi 10T Pro 5G', 'xiaomi=xiaomi mi 10t pro 5g'],
             ['Redmi Note 13 Pro+', 'xiaomi=xiaomi redmi note 13 pro+'],
+            ['Redmi Note 11 Pro', 'xiaomi=xiaomi redmi note 11 pro 4g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -8783,6 +8786,8 @@ final class DeviceTest extends TestCase
             // bdf
             ['K960N_MT6580_32_N', 'bdf=bdf k960n'],
             ['BDF-KT107', 'bdf=bdf kt107'],
+            // qihoo
+            ['1713-A01', 'qihoo=qihoo 1713-a01'],
             // other
             ['Model"', null],
             [': "', null],
