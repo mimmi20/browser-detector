@@ -287,6 +287,13 @@ final class EngineTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Maple']],
                 'key' => 'maple',
             ],
+            [
+                'type' => 'Dillo',
+                'name' => 'Dillo',
+                'manufacturer' => Company::theDilloProject,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Dillo']],
+                'key' => 'dillo',
+            ],
         ];
     }
 }
