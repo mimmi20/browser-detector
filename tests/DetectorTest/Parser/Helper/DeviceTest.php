@@ -2149,6 +2149,7 @@ final class DeviceTest extends TestCase
             ['SM-T395', 'samsung=samsung sm-t395'],
             ['SM-G901F', 'samsung=samsung sm-g901f'],
             ['SM-T290', 'samsung=samsung sm-t290'],
+            ['SAMSUNG SM-T290', 'samsung=samsung sm-t290'],
             ['SM-J320FN', 'samsung=samsung sm-j320fn'],
             ['SM-G388F', 'samsung=samsung sm-g388f'],
             ['SM-A500F', 'samsung=samsung sm-a500f'],
@@ -6142,8 +6143,9 @@ final class DeviceTest extends TestCase
             ['Model S 4G', 'sunmax=sunmax model s 4g'],
             // captiva
             ['Captiva Pad 10 3G Plus', 'captiva=captiva pad 10 3g plus'],
+            // beista
+            ['X104-EEA', 'beista=beista x104-eea'],
             // toscido
-            ['X104-EEA', 'toscido=toscido x104-eea'],
             ['T22-EEA', 'toscido=toscido t22-eea'],
             ['T151-EEA', 'toscido=toscido t151-eea'],
             ['T181-EEA', 'toscido=toscido t181-eea'],
@@ -8341,6 +8343,7 @@ final class DeviceTest extends TestCase
             // symphony
             ['innova20', 'symphony=symphony innova 20'],
             ['i85', 'symphony=symphony i85'],
+            ['V102', 'symphony=symphony v102'],
             // pegatron
             ['chagall', 'pegatron=pegatron chagall'],
             // pendo

@@ -137,5 +137,29 @@
       ]
     },
     "engine": null
+  },
+  "check-host": {
+    "name": "CheckHost",
+    "manufacturer": "check-host",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CheckHost"
+      ]
+    },
+    "engine": null
+  },
+  "ruxit-synthetic": {
+    "name": "RuxitSynthetic",
+    "manufacturer": "dynatrace",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RuxitSynthetic"
+      ]
+    },
+    "engine": null
   }
 }

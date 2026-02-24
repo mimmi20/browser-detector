@@ -353,18 +353,6 @@
     },
     "engine": "unknown"
   },
-  "antbot": {
-    "name": "AntBot",
-    "manufacturer": "ant.com",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AntBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "aolbot": {
     "name": "AOLbot",
     "manufacturer": "aol-soft",
@@ -4805,7 +4793,7 @@
   },
   "photon": {
     "name": "Photon",
-    "manufacturer": "photon-project",
+    "manufacturer": "unknown",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",

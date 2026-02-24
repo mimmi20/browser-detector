@@ -1854,7 +1854,7 @@ final class Device implements DeviceInterface
             'sm-p580' => 'samsung=samsung sm-p580',
             'sm-t395' => 'samsung=samsung sm-t395',
             'sm-g901f' => 'samsung=samsung sm-g901f',
-            'sm-t290' => 'samsung=samsung sm-t290',
+            'sm-t290', 'samsung sm-t290' => 'samsung=samsung sm-t290',
             'sm-j320fn' => 'samsung=samsung sm-j320fn',
             'sm-g388f' => 'samsung=samsung sm-g388f',
             'sm-a500f' => 'samsung=samsung sm-a500f',
@@ -5196,8 +5196,9 @@ final class Device implements DeviceInterface
             'model s 4g' => 'sunmax=sunmax model s 4g',
             // captiva
             'captiva pad 10 3g plus' => 'captiva=captiva pad 10 3g plus',
+            // beista
+            'x104-eea' => 'beista=beista x104-eea',
             // toscido
-            'x104-eea' => 'toscido=toscido x104-eea',
             't22-eea' => 'toscido=toscido t22-eea',
             't151-eea' => 'toscido=toscido t151-eea',
             't181-eea' => 'toscido=toscido t181-eea',
@@ -7223,6 +7224,7 @@ final class Device implements DeviceInterface
             // symphony
             'innova20' => 'symphony=symphony innova 20',
             'i85' => 'symphony=symphony i85',
+            'v102' => 'symphony=symphony v102',
             // pegatron
             'chagall' => 'pegatron=pegatron chagall',
             // pendo

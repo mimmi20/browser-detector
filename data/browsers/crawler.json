@@ -2291,5 +2291,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "antbot": {
+    "name": "AntBot",
+    "manufacturer": "ant.com",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AntBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

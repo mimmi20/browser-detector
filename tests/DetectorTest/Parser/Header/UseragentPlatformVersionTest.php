@@ -266,6 +266,8 @@ final class UseragentPlatformVersionTest extends TestCase
             ['WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V'],
             ['WhatsApp/2.2587.9 A'],
             ['WhatsApp/2.2587.9 W'],
+            ['WhatsApp/2.2587.9 i'],
+            ['WhatsApp/2.2587.9 N'],
         ];
     }
 

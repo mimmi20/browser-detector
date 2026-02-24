@@ -6395,9 +6395,9 @@ final class CompanyTest extends TestCase
                 'key' => 'denver',
             ],
             [
-                'type' => 'smartbook',
+                'type' => 'SmartBook',
                 'name' => 'smartbook AG',
-                'brandname' => 'smartbook',
+                'brandname' => 'SmartBook',
                 'key' => 'smartbook',
             ],
             [
@@ -6407,9 +6407,9 @@ final class CompanyTest extends TestCase
                 'key' => 'tp-link',
             ],
             [
-                'type' => 'YU',
+                'type' => 'Yu',
                 'name' => 'YU Televentures',
-                'brandname' => 'YU',
+                'brandname' => 'Yu',
                 'key' => 'yu',
             ],
             [
@@ -6429,6 +6429,60 @@ final class CompanyTest extends TestCase
                 'name' => 'WebPros HoldCo B.V.',
                 'brandname' => 'WebPros',
                 'key' => 'webpros',
+            ],
+            [
+                'type' => 'CheckHost',
+                'name' => 'CheckHost',
+                'brandname' => 'CheckHost',
+                'key' => 'check-host',
+            ],
+            [
+                'type' => 'Dynatrace',
+                'name' => 'Dynatrace LLC',
+                'brandname' => 'Dynatrace',
+                'key' => 'dynatrace',
+            ],
+            [
+                'type' => 'Byterg',
+                'name' => 'Byterg',
+                'brandname' => 'Byterg',
+                'key' => 'byterg',
+            ],
+            [
+                'type' => 'Ant.com',
+                'name' => 'Ant.com Ltd',
+                'brandname' => 'Ant.com',
+                'key' => 'ant.com',
+            ],
+            [
+                'type' => 'Bundleman',
+                'name' => 'Bundleman Ltd',
+                'brandname' => 'Bundleman',
+                'key' => 'bundleman',
+            ],
+            [
+                'type' => 'Reqwireless',
+                'name' => 'Reqwireless',
+                'brandname' => 'Reqwireless',
+                'key' => 'reqwireless',
+            ],
+            [
+                'type' => 'Seranking',
+                'name' => 'Seranking LTD',
+                'brandname' => 'Seranking',
+                'key' => 'seranking',
+            ],
+            [
+                'type' => 'Torus',
+                'name' => 'Torus Company',
+                'brandname' => 'Torus',
+                'key' => 'torus',
+            ],
+            [
+                'type' => 'Beista',
+                'name' => 'Beista',
+                'brandname' => 'Beista',
+                'key' => 'beista',
             ],
         ];
     }

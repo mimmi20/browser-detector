@@ -2133,17 +2133,35 @@ enum Company: string implements CompanyInterface
 
     case denver = 'Denver';
 
-    case smartbook = 'smartbook';
+    case smartbook = 'SmartBook';
 
     case tPLink = 'TP-Link';
 
-    case yu = 'YU';
+    case yu = 'Yu';
 
     case digitalLifeInternational = 'Digital Life International';
 
     case twingly = 'Twingly';
 
     case webpros = 'WebPros';
+
+    case checkHost = 'CheckHost';
+
+    case dynatrace = 'Dynatrace';
+
+    case byterg = 'Byterg';
+
+    case antCom = 'Ant.com';
+
+    case bundleman = 'Bundleman';
+
+    case reqwireless = 'Reqwireless';
+
+    case seranking = 'Seranking';
+
+    case torus = 'Torus';
+
+    case beista = 'Beista';
 
     /**
      * @throws UnexpectedValueException
@@ -3215,6 +3233,15 @@ enum Company: string implements CompanyInterface
             'digitallifeinternational', 'digital-life-international', 'digital life international' => self::digitalLifeInternational,
             'twingly', 'twingly ab' => self::twingly,
             'webpros', 'webpros holdco b.v.' => self::webpros,
+            'checkhost', 'check-host' => self::checkHost,
+            'dynatrace', 'dynatrace llc' => self::dynatrace,
+            'byterg' => self::byterg,
+            'antcom', 'ant.com ltd', 'ant.com' => self::antCom,
+            'bundleman', 'bundleman ltd' => self::bundleman,
+            'reqwireless' => self::reqwireless,
+            'seranking', 'seranking ltd' => self::seranking,
+            'torus', 'torus company' => self::torus,
+            'beista' => self::beista,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3641,6 +3668,11 @@ enum Company: string implements CompanyInterface
             self::yu => 'YU Televentures',
             self::twingly => 'Twingly AB',
             self::webpros => 'WebPros HoldCo B.V.',
+            self::dynatrace => 'Dynatrace LLC',
+            self::antCom => 'Ant.com Ltd',
+            self::bundleman => 'Bundleman Ltd',
+            self::seranking => 'Seranking LTD',
+            self::torus => 'Torus Company',
             self::unknown => null,
             default => $this->value,
         };
@@ -4000,6 +4032,8 @@ enum Company: string implements CompanyInterface
             self::castleGlobal => 'castle-global',
             self::tPLink => 'tp-link',
             self::digitalLifeInternational => 'digital-life-international',
+            self::checkHost => 'check-host',
+            self::antCom => 'ant.com',
             default => $this->name,
         };
     }
