@@ -1213,5 +1213,50 @@
       "version": "2.12.407",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux x86­_64) AppleWebKit/537.36 KHTML, like Gecko) Chrome/30.0.1599.114 Safari/537.36 OPR/ 17.0.1251.0 OMI/4.0.2.15.NAME.5 TV Store/4.0 Model/ReferenceOEM-ReferenceDevice"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": "4.0.0",
+      "manufacturer": "Opera",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.0.2.15",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.1599.114",
+      "manufacturer": "Google"
+    }
   }
 ]

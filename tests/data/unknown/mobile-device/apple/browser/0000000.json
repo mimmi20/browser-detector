@@ -23,8 +23,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "MeeGo",
+      "marketingName": "MeeGo",
       "version": null,
       "manufacturer": "Linux Foundation",
       "bits": null
@@ -2183,8 +2183,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "MeeGo",
+      "marketingName": "MeeGo",
       "version": null,
       "manufacturer": "Linux Foundation",
       "bits": null
@@ -2228,8 +2228,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "MeeGo",
+      "marketingName": "MeeGo",
       "version": null,
       "manufacturer": "Linux Foundation",
       "bits": null
@@ -2588,8 +2588,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "MeeGo",
+      "marketingName": "MeeGo",
       "version": null,
       "manufacturer": "Linux Foundation",
       "bits": null
@@ -2723,10 +2723,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.5",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -3038,10 +3038,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.2.0",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -3241,51 +3241,6 @@
   },
   {
     "headers": {
-      "user-agent": "RadioPublic/iOS-2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "RadioPublic iOS 2.0.6"
     },
     "device": {
@@ -3308,10 +3263,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "name": "iPhone OS",
+      "marketingName": "iPhone OS",
+      "version": "2.0.6",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -3668,10 +3623,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "16.6.0",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -3731,51 +3686,6 @@
     "engine": {
       "name": "WebKit",
       "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OpenXchange.iOS.OXMail"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
       "manufacturer": "Apple"
     }
   },

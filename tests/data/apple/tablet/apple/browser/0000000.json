@@ -46,51 +46,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; U; CPU like Mac OS X; en) AppleWebKit/420+"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "420.0.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_2 like Mac OS X; de-de) AppleWebKit/531.21.10 (KHTML, like Gecko)"
     },
     "device": {
@@ -181,7 +136,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; U; CPU iPad OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9A334"
+      "user-agent": "Mozilla/5.0 (iPad; U; Intel Mac OS X 10_6_3; en-us) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16"
     },
     "device": {
       "architecture": null,
@@ -205,14 +160,14 @@
     "os": {
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
-      "version": null,
+      "version": "10.6.3",
       "manufacturer": "Apple",
       "bits": null
     },
     "client": {
-      "name": "Mobile Safari UIWebView",
+      "name": "Safari",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -220,7 +175,7 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "534.46.0",
+      "version": "533.16.0",
       "manufacturer": "Apple"
     }
   },

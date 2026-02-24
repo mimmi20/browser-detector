@@ -23,10 +23,10 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "5.3.0",
-      "manufacturer": "Nokia",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -68,10 +68,10 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "5.2.0",
-      "manufacturer": "Nokia",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -113,8 +113,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "MeeGo",
+      "marketingName": "MeeGo",
       "version": null,
       "manufacturer": "Linux Foundation",
       "bits": null
@@ -203,10 +203,10 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "5.5.0",
-      "manufacturer": "Nokia",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -248,10 +248,10 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "5.5.0",
-      "manufacturer": "Nokia",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -293,10 +293,10 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "5.3.0",
-      "manufacturer": "Nokia",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -383,10 +383,10 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "5.3.0",
-      "manufacturer": "Nokia",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -473,10 +473,10 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "5.3.0",
-      "manufacturer": "Nokia",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -541,7 +541,7 @@
   },
   {
     "headers": {
-      "user-agent": "MozillaQtWRT/1.05.0 (SymbianQtWRT/1.03; U; NokiaN8-00QtWRT/1.0RM-59601; ConfigurationQtWRT/1.0CLDC-1.1 ProfileQtWRT/1.0MIDP-2.1; ar-AE) AppleWebKitQtWRT/1.0532.4 (KHTML, like Gecko) BrowserNGQtWRT/1.08.0.r19209 Mobile SafariQtWRT/1.0532.4"
+      "user-agent": "3gpp-gba Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN8-00-1/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344"
     },
     "device": {
       "architecture": null,
@@ -563,16 +563,16 @@
       "bits": null
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
       "bits": null
     },
     "client": {
       "name": "Nokia OSS Browser",
       "modus": null,
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "Nokia",
       "type": "browser",
       "isbot": false,
@@ -580,7 +580,7 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": null,
+      "version": "525.0.0",
       "manufacturer": "Apple"
     }
   },
@@ -698,10 +698,10 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "5.2.0",
-      "manufacturer": "Nokia",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -762,6 +762,51 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "3gpp-gba Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC7-00-1/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C7-00",
+      "marketingName": "C7",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -851,6 +896,51 @@
     "engine": {
       "name": "WebKit",
       "version": "534.3.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "3gpp-gba Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaE7-00-1/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E7-00",
+      "marketingName": "E7",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
       "manufacturer": "Apple"
     }
   },
@@ -1778,10 +1868,55 @@
       "bits": null
     },
     "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
       "version": "5.2.0",
       "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1."
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N8-00",
+      "marketingName": "N8",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
       "bits": null
     },
     "client": {
@@ -2048,8 +2183,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "MeeGo",
+      "marketingName": "MeeGo",
       "version": null,
       "manufacturer": "Linux Foundation",
       "bits": null
