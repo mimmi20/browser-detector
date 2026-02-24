@@ -66,5 +66,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "css-check": {
+    "name": "CSSCheck",
+    "manufacturer": "unknown",
+    "type": "validator",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CSSCheck"
+      ]
+    },
+    "engine": "unknown"
   }
 }

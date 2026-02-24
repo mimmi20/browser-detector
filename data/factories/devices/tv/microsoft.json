@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/xbox one/i": "microsoft xbox one"
+    "/xbox[ _]one[ _]ed/i": "microsoft xbox one s",
+    "/xbox[ _]one/i": "microsoft xbox one"
   },
-  "generic": "microsoft xbox 360"
+  "generic": "microsoft xbox"
 }

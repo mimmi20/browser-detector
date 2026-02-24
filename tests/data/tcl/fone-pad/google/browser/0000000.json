@@ -276,7 +276,7 @@
     "device": {
       "architecture": null,
       "deviceName": "8094X_EEA",
-      "marketingName": "3T 10\" 4G",
+      "marketingName": "3T 10.1\" 4G",
       "manufacturer": "TCL",
       "brand": "Alcatel",
       "dualOrientation": true,
@@ -411,7 +411,7 @@
     "device": {
       "architecture": null,
       "deviceName": "8094X_EEA",
-      "marketingName": "3T 10\" 4G",
+      "marketingName": "3T 10.1\" 4G",
       "manufacturer": "TCL",
       "brand": "Alcatel",
       "dualOrientation": true,
@@ -536,6 +536,51 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.41",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; 9132G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "9132G",
+      "marketingName": "Tab 8\" 4G",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "113.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0.0",
       "manufacturer": "Google"
     }
   },

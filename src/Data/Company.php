@@ -1111,7 +1111,7 @@ enum Company: string implements CompanyInterface
 
     case soulSoft = 'SoulSoft';
 
-    case qihoo = 'Qihoo';
+    case qihoo = 'Qihoo 360';
 
     case line = 'LINE';
 
@@ -2101,6 +2101,50 @@ enum Company: string implements CompanyInterface
 
     case jlinksz = 'Jlinksz';
 
+    case sonos = 'Sonos';
+
+    case queryEye = 'QueryEye';
+
+    case accompani = 'Accompani';
+
+    case dopod = 'Dopod';
+
+    case masonLarobina = 'Mason Larobina';
+
+    case crawlson = 'Crawlson';
+
+    case robertGraham = 'Robert Graham';
+
+    case munin = 'Munin';
+
+    case element = 'Element';
+
+    case infocus = 'InFocus';
+
+    case trekstor = 'TrekStor';
+
+    case ask = 'Ask';
+
+    case theDilloProject = 'the Dillo Project';
+
+    case iparadigms = 'iParadigms';
+
+    case castleGlobal = 'Castle Global';
+
+    case denver = 'Denver';
+
+    case smartbook = 'smartbook';
+
+    case tPLink = 'TP-Link';
+
+    case yu = 'YU';
+
+    case digitalLifeInternational = 'Digital Life International';
+
+    case twingly = 'Twingly';
+
+    case webpros = 'WebPros';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2654,7 +2698,7 @@ enum Company: string implements CompanyInterface
             'telegram', 'telegram messenger inc.' => self::telegram,
             'cloudviewtechnology', 'cloudview-technology', 'cloudview technology' => self::cloudviewTechnology,
             'soulsoft', 'soul-soft' => self::soulSoft,
-            'qihoo', 'qihoo 360 technology co. ltd.' => self::qihoo,
+            'qihoo', 'qihoo 360 technology co. ltd.', 'qihoo 360' => self::qihoo,
             'line', 'line corporation' => self::line,
             'nortonmobile', 'norton-mobile' => self::nortonMobile,
             'matomo' => self::matomo,
@@ -3149,6 +3193,28 @@ enum Company: string implements CompanyInterface
             'siteone', 'siteone s.r.o.' => self::siteone,
             'ctroniq', 'ctroniq ltd' => self::ctroniq,
             'jlinksz' => self::jlinksz,
+            'sonos', 'sonos, inc.' => self::sonos,
+            'queryeye', 'queryeye inc.', 'query-eye' => self::queryEye,
+            'accompani', 'accompani, inc' => self::accompani,
+            'dopod' => self::dopod,
+            'masonlarobina', 'mason-larobina', 'mason larobina' => self::masonLarobina,
+            'crawlson' => self::crawlson,
+            'robertgraham', 'robert-graham', 'robert graham' => self::robertGraham,
+            'munin' => self::munin,
+            'element', 'element electronics' => self::element,
+            'infocus', 'infocus, inc.' => self::infocus,
+            'trekstor' => self::trekstor,
+            'ask', 'ask.com' => self::ask,
+            'thedilloproject', 'dillo-project', 'the dillo project' => self::theDilloProject,
+            'iparadigms', 'iparadigms, llc.' => self::iparadigms,
+            'castleglobal', 'castle global, inc.', 'castle-global', 'castle global' => self::castleGlobal,
+            'denver', 'denver electronics a/s' => self::denver,
+            'smartbook', 'smartbook ag' => self::smartbook,
+            'tplink', 'tp-link technologies co., ltd.', 'tp-link' => self::tPLink,
+            'yu', 'yu televentures' => self::yu,
+            'digitallifeinternational', 'digital-life-international', 'digital life international' => self::digitalLifeInternational,
+            'twingly', 'twingly ab' => self::twingly,
+            'webpros', 'webpros holdco b.v.' => self::webpros,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3561,6 +3627,20 @@ enum Company: string implements CompanyInterface
             self::theTradeDesk => 'The Trade Desk, Inc.',
             self::siteone => 'SiteOne s.r.o.',
             self::ctroniq => 'Ctroniq Ltd',
+            self::sonos => 'Sonos, Inc.',
+            self::queryEye => 'QueryEye Inc.',
+            self::accompani => 'Accompani, Inc',
+            self::element => 'Element Electronics',
+            self::infocus => 'InFocus, Inc.',
+            self::ask => 'ask.com',
+            self::iparadigms => 'iParadigms, LLC.',
+            self::castleGlobal => 'Castle Global, Inc.',
+            self::denver => 'Denver Electronics A/S',
+            self::smartbook => 'smartbook AG',
+            self::tPLink => 'TP-Link Technologies Co., Ltd.',
+            self::yu => 'YU Televentures',
+            self::twingly => 'Twingly AB',
+            self::webpros => 'WebPros HoldCo B.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -3913,6 +3993,13 @@ enum Company: string implements CompanyInterface
             self::barracudaNetworks => 'barracuda-networks',
             self::webCEO => 'web-ceo',
             self::theTradeDesk => 'trade-desk',
+            self::queryEye => 'query-eye',
+            self::masonLarobina => 'mason-larobina',
+            self::robertGraham => 'robert-graham',
+            self::theDilloProject => 'dillo-project',
+            self::castleGlobal => 'castle-global',
+            self::tPLink => 'tp-link',
+            self::digitalLifeInternational => 'digital-life-international',
             default => $this->name,
         };
     }

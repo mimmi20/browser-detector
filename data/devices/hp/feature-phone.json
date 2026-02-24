@@ -207,11 +207,27 @@
     "type": "feature-phone",
     "platform": "webos"
   },
-  "hp pre 3": {
+  "palm pre 3": {
     "deviceName": "Pre 3",
     "marketingName": "Pre 3",
-    "manufacturer": "hp",
-    "brand": "hp",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.58
+    },
+    "type": "feature-phone",
+    "platform": "webos"
+  },
+  "palm pre 3.0": {
+    "deviceName": "Pre 3.0",
+    "marketingName": "Pre 3.0",
+    "manufacturer": "palm",
+    "brand": "palm",
     "dualOrientation": false,
     "simCount": 1,
     "display": {

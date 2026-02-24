@@ -1035,18 +1035,6 @@
     },
     "engine": "trident"
   },
-  "diga": {
-    "name": "Diga",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Diga"
-      ]
-    },
-    "engine": null
-  },
   "diglo": {
     "name": "Diglo",
     "manufacturer": "diglo",
@@ -1082,7 +1070,7 @@
         "Dillo"
       ]
     },
-    "engine": "unknown"
+    "engine": "dillo"
   },
   "dolfin": {
     "name": "Dolfin",
@@ -2245,13 +2233,14 @@
     "engine": "gecko"
   },
   "luakit": {
-    "name": "luakit",
+    "name": "LuaKit",
     "manufacturer": "mason-larobina",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "WebKitGTK\\+"
+        "WebKitGTK\\+",
+        "luakit"
       ]
     },
     "engine": "webkit"
@@ -3964,7 +3953,7 @@
         "Surf"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "swiftfox": {
     "name": "Swiftfox",
@@ -5898,5 +5887,17 @@
       ]
     },
     "engine": null
+  },
+  "nook-browser": {
+    "name": "Nook Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nook browser"
+      ]
+    },
+    "engine": "webkit"
   }
 }

@@ -49,10 +49,12 @@ final readonly class Ios implements VersionFactoryInterface
         'iosv',
         '(?<!browser)iPad\/',
         'iPhone\/',
-        '(?<![rtx]|[ekpry][- ])iOS',
+        '(?<![a-z]|[ekpry][- ])iOS',
+        'Version',
     ];
 
     private const array DARWIN_MAP = [
+        '/darwin\/25\.4/i' => '26.4',
         '/darwin\/25\.3/i' => '26.3',
         '/darwin\/25\.2/i' => '26.2',
         '/darwin\/25\.1/i' => '26.1',
@@ -355,16 +357,6 @@ final readonly class Ios implements VersionFactoryInterface
     #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/CPU like Mac OS X/', $useragent);
-
-        if ($doMatch) {
-            try {
-                return $this->versionBuilder->set('1.0');
-            } catch (NotNumericException) {
-                return new NullVersion();
-            }
-        }
-
         $regexes = [
             '/[aA]pple[cC]ore[mM]edia\/\d+\.\d+\.\d+\.(?P<build>\d{1,2}[A-Z]\d{1,4}[a-z]?)/',
             '/i[oO][sS]\/\d+[\d\.]+ \((?P<build>\d{1,2}[A-Z]\d{1,4}[a-z]?)\)/',

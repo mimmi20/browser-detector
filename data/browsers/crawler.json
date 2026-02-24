@@ -691,7 +691,7 @@
     "engine": "unknown"
   },
   "webprosbot": {
-    "name": "webprosbot",
+    "name": "WebProsBot",
     "manufacturer": "webpros",
     "type": "crawler",
     "version": {
@@ -2204,6 +2204,90 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GeedoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "query-seeker-spider": {
+    "name": "QuerySeekerSpider",
+    "manufacturer": "query-eye",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QuerySeekerSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "accompany-bot": {
+    "name": "AccompanyBot",
+    "manufacturer": "accompani",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AccompanyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "crawlson": {
+    "name": "Crawlson",
+    "manufacturer": "crawlson",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Crawlson"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "masscan": {
+    "name": "masscan",
+    "manufacturer": "robert-graham",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "masscan"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "aspiegel-bot": {
+    "name": "AspiegelBot",
+    "manufacturer": "huawei",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AspiegelBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "imagesift-bot": {
+    "name": "ImagesiftBot",
+    "manufacturer": "castle-global",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ImagesiftBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "twingly recon": {
+    "name": "Twingly Recon",
+    "manufacturer": "twingly",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twingly Recon"
       ]
     },
     "engine": "unknown"

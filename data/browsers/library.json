@@ -602,5 +602,54 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "reactor-netty": {
+    "name": "ReactorNetty",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ReactorNetty"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "go-network": {
+    "name": "go-network",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "go-network-v",
+        "go-network"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hackney": {
+    "name": "hackney",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hackney"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "deno": {
+    "name": "Deno",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Deno"
+      ]
+    },
+    "engine": "unknown"
   }
 }

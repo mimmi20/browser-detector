@@ -239,5 +239,17 @@
       ]
     },
     "engine": null
+  },
+  "whats-my-ip-org": {
+    "name": "WhatsMyIP.org",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WhatsMyIP\\.org"
+      ]
+    },
+    "engine": null
   }
 }

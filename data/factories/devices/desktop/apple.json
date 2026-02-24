@@ -1,5 +1,6 @@
 {
   "rules": {
+    "/imac18%2C3|imac18,3/i": "imac 18,3",
     "/imac/i": "imac",
     "/macbookpro18%2C4|macbookpro18,4/i": "macbook pro 18,4",
     "/macbookpro18%2C3|macbookpro18,3/i": "macbook pro 18,3",
@@ -78,8 +79,10 @@
     "/macbook6%2C1|macbook6,1/i": "macbook 6,1",
     "/macbook5%2C2|macbook5,2/i": "macbook 5,2",
     "/macbook/i": "macbook",
+    "/macmini8%2c1|macmini8,1/i": "mac mini 8,1",
     "/macmini/i": "mac mini",
     "/macpro/i": "macpro",
+    "/mac15%2c12|mac15,12/i": "mac 15,12",
     "/powermac|power macintosh/i": "powermac"
   },
   "generic": "macintosh"

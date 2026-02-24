@@ -184,6 +184,14 @@ final class MacosTest extends TestCase
                 'Word/15.11.701 (Mac OS/10.11.2; Desktop; de-DE; NonAppStore; Apple/iMac15,1)',
                 '10.11.2',
             ],
+            [
+                'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/25.4.0',
+                '26.4.0',
+            ],
+            [
+                'Microsoft Office Outlook/16.106.208 (Mac OS/26.2; Desktop; de-DE; NonAppStore; Apple/MacBookPro18,3)',
+                '26.2.0',
+            ],
         ];
     }
 

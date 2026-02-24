@@ -172,5 +172,17 @@
       ]
     },
     "engine": null
+  },
+  "sqlmap": {
+    "name": "sqlmap",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sqlmap"
+      ]
+    },
+    "engine": null
   }
 }

@@ -23,7 +23,8 @@
     "/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\\=|i|power)mac|networkingextension|nook browser/i": "apple",
     "/\\bPPC\\b/": "apple",
     "/remix (sk1w|mini|pro)/i": "jide",
-    "/rctw/i": "rca-tablets"
+    "/rctw/i": "rca-tablets",
+    "/zps\\d/i": "sonos"
   },
   "generic": "unknown"
 }

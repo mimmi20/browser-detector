@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "NOKIA-6100"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6100",
+      "marketingName": "6100",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.5
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NOKIA-6101"
     },
     "device": {
@@ -4426,51 +4471,6 @@
         "height": 240,
         "touch": false,
         "size": 2
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-7360"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "7360",
-      "marketingName": "7360",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.9
       },
       "type": "feature-phone",
       "ismobile": true,

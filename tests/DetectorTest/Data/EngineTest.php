@@ -109,7 +109,7 @@ final class EngineTest extends TestCase
                 'type' => 'Blink',
                 'name' => 'Blink',
                 'manufacturer' => Company::google,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet', 'Chromium']],
                 'key' => 'blink',
             ],
             [
@@ -286,6 +286,13 @@ final class EngineTest extends TestCase
                 'manufacturer' => Company::samsung,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Maple']],
                 'key' => 'maple',
+            ],
+            [
+                'type' => 'Dillo',
+                'name' => 'Dillo',
+                'manufacturer' => Company::theDilloProject,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Dillo']],
+                'key' => 'dillo',
             ],
         ];
     }

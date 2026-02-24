@@ -117,9 +117,11 @@ final class Safari implements SafariInterface
         '26.1',
         '26.2',
         '26.3',
+        '26.4',
     ];
 
     private const array MAP_VERSIONS = [
+        '20624.11' => '26.4',
         '20623.2' => '26.3',
         '20623.1' => '26.2',
         '20622.2' => '26.1',

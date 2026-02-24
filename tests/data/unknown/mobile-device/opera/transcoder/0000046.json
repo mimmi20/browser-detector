@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Series 60; Opera Mini/5.1.22783/23.411; U; de) Presto/2.5.25 Version/10.54"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": null,
-      "manufacturer": "Nokia",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "5.1.22783",
-      "manufacturer": "Opera",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Android; Opera Mini/5.1.22460/23.405; U; pl) Presto/2.5.25 Version/10.54"
     },
     "device": {
@@ -4496,6 +4451,51 @@
     "engine": {
       "name": "Presto",
       "version": "2.5.25",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Android; Opera Mini/30.0.2254/73.112; U; de) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "30.0.2254",
+      "manufacturer": "Opera",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
       "manufacturer": "Opera"
     }
   }

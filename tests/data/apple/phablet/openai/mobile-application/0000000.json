@@ -943,5 +943,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2026.034 (iOS 26.2.1; iPhone17,5; build 21772720773)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 17,5",
+      "marketingName": "iPhone 16e",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2532,
+        "height": 1170,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.2.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "ChatGPT",
+      "modus": null,
+      "version": "1.2026.034",
+      "manufacturer": "OpenAI",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

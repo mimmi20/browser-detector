@@ -1640,18 +1640,6 @@
     },
     "engine": "unknown"
   },
-  "masscan": {
-    "name": "Download Accelerator",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "masscan"
-      ]
-    },
-    "engine": "unknown"
-  },
   "duedil crawler": {
     "name": "DueDil Crawler",
     "manufacturer": "duedil",
@@ -4247,19 +4235,6 @@
     },
     "engine": "unknown"
   },
-  "msnbot-media": {
-    "name": "msnbot-media",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "MsnBot\\-Media ",
-        "msnbot\\-media"
-      ]
-    },
-    "engine": "unknown"
-  },
   "myengines bot": {
     "name": "MyEngines Bot",
     "manufacturer": "domain.de",
@@ -6441,16 +6416,6 @@
     },
     "engine": "unknown"
   },
-  "teoma": {
-    "name": "Teoma",
-    "manufacturer": "ask",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "test certificate info": {
     "name": "test certificate info",
     "manufacturer": "unknown",
@@ -6785,18 +6750,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Twikle"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "twingly recon": {
-    "name": "Twingly Recon",
-    "manufacturer": "twingly",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Twingly Recon"
       ]
     },
     "engine": "unknown"

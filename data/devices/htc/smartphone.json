@@ -48,8 +48,8 @@
     "platform": null
   },
   "htc 10 evo": {
-    "deviceName": "10 evo",
-    "marketingName": "10 evo",
+    "deviceName": "10 Evo",
+    "marketingName": "10 Evo",
     "manufacturer": "htc",
     "brand": "htc",
     "dualOrientation": true,
@@ -65,7 +65,7 @@
   },
   "htc 2pyb2": {
     "deviceName": "2PYB2",
-    "marketingName": "10 evo",
+    "marketingName": "10 Evo",
     "manufacturer": "htc",
     "brand": "htc",
     "dualOrientation": true,
@@ -81,7 +81,7 @@
   },
   "htc m10f": {
     "deviceName": "M10f",
-    "marketingName": "10 evo",
+    "marketingName": "10 Evo",
     "manufacturer": "htc",
     "brand": "htc",
     "dualOrientation": true,
@@ -1014,6 +1014,22 @@
     "brand": "htc",
     "dualOrientation": true,
     "simCount": 1,
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc desire 601 dual sim": {
+    "deviceName": "Desire 601 Dual SIM",
+    "marketingName": "Desire 601 Dual SIM",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 960,
       "height": 540,

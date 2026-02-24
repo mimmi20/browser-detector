@@ -840,5 +840,28 @@
       ]
     },
     "engine": "unknown"
+  },
+  "msnbot-media": {
+    "name": "msnbot-media",
+    "manufacturer": "microsoft",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MsnBot\\-Media ",
+        "msnbot\\-media"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "teoma": {
+    "name": "Teoma",
+    "manufacturer": "ask",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

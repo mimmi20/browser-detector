@@ -335,5 +335,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wire-reader-bot": {
+    "name": "WireReaderBot",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WireReaderBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

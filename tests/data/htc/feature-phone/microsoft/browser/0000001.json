@@ -548,8 +548,8 @@
       "deviceName": "S301",
       "marketingName": "S301",
       "manufacturer": "HTC",
-      "brand": "dopod",
-      "dualOrientation": null,
+      "brand": "Dopod",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 220,
@@ -593,8 +593,8 @@
       "deviceName": "S300",
       "marketingName": "S300",
       "manufacturer": "HTC",
-      "brand": "dopod",
-      "dualOrientation": null,
+      "brand": "Dopod",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 220,
@@ -638,8 +638,8 @@
       "deviceName": "P800W",
       "marketingName": "P800W",
       "manufacturer": "HTC",
-      "brand": "dopod",
-      "dualOrientation": null,
+      "brand": "Dopod",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
@@ -683,8 +683,8 @@
       "deviceName": "D810",
       "marketingName": "D810",
       "manufacturer": "HTC",
-      "brand": "dopod",
-      "dualOrientation": null,
+      "brand": "Dopod",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
@@ -728,8 +728,8 @@
       "deviceName": "C720W",
       "marketingName": "C720W",
       "manufacturer": "HTC",
-      "brand": "dopod",
-      "dualOrientation": null,
+      "brand": "Dopod",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": 320,
@@ -773,8 +773,8 @@
       "deviceName": "C700",
       "marketingName": "C700",
       "manufacturer": "HTC",
-      "brand": "dopod",
-      "dualOrientation": null,
+      "brand": "Dopod",
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": null,
@@ -1261,7 +1261,7 @@
   },
   {
     "headers": {
-      "user-agent": "T-Mobile Dash Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240; MSNBOT-MOBILE/1.1;  http://search.msn.com/msnbot.htm)"
+      "user-agent": "T-Mobile Dash Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)"
     },
     "device": {
       "architecture": null,
@@ -1816,6 +1816,51 @@
         "height": 240,
         "touch": false,
         "size": 2.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "dopod T2222­_CMCC/5.2.19578/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 4.01; Windows CE; PPC)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T2222",
+      "marketingName": "T2222",
+      "manufacturer": "HTC",
+      "brand": "Dopod",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 1.5
       },
       "type": "feature-phone",
       "ismobile": true,

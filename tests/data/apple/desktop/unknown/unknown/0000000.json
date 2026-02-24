@@ -631,51 +631,6 @@
   },
   {
     "headers": {
-      "user-agent": "nook browser/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mac OS X/10.8.5 (12F45) CalendarAgent/57"
     },
     "device": {
@@ -2476,186 +2431,6 @@
   },
   {
     "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/54.2-72031 (MDCR_MacBookPro14,1)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MacBook Pro 14,1",
-      "marketingName": "MacBook Pro 13\" (2017)",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": false,
-        "size": 13.3
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/53.3-71050 (MDCR_Macmini8,1)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mac Mini",
-      "marketingName": "Mac Mini",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "server-bag [Mac OS X,10.14.6,18G8022,MacBookPro15,4]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MacBook Pro 15,4",
-      "marketingName": "MacBook Pro 13\" (2019)",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": false,
-        "size": 13.3
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "server-bag [macOS,11.6.1,20G224,MacBookAir6,2]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MacBook Air 6,2",
-      "marketingName": "MacBook Air 13\" (2013)",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": 1440,
-        "height": 900,
-        "touch": false,
-        "size": 13.3
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Camino 1.0a1"
     },
     "device": {
@@ -2813,9 +2588,9 @@
       "bits": null
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "13.3.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2858,9 +2633,9 @@
       "bits": null
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "11.0.0-beta+1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2903,9 +2678,9 @@
       "bits": null
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "11.0.0-beta+2",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2948,9 +2723,9 @@
       "bits": null
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "11.0.0-beta+3",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3076,51 +2851,6 @@
         "height": null,
         "touch": false,
         "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Spotify/120800923 OSX/0 (MacBookPro6,2)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MacBook Pro 6,2",
-      "marketingName": "MacBook Pro 15\" (2010)",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": 1440,
-        "height": 900,
-        "touch": false,
-        "size": 15.4
       },
       "type": "desktop",
       "ismobile": false,
@@ -3488,9 +3218,9 @@
       "bits": null
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.6.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -4141,51 +3871,6 @@
   },
   {
     "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/57.9-23010 (MDCR_iMac18,3)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iMac",
-      "marketingName": "iMac",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Arc/1.87.1 (Mac OS X Version 15.3.1 (Build 24D70))"
     },
     "device": {
@@ -4481,6 +4166,276 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "15.4.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Arc/1.110.1 (Mac OS X Version 15.6 (Build 24G84))"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "15.6.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Arc/1.112.0 (Mac OS X Version 15.6.1 (Build 24G90))"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "15.6.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Arc/1.116.0 (Mac OS X Version 26.0.1 (Build 25A362))"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "26.0.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Arc/1.21.3 (Mac OS X Version 14.2.1 (Build 23C71))"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.2.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Arc/1.40.1 (Mac OS X Version 14.1 (Build 23B74))"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Arc/1.44.2 (Mac OS X Version 14.5 (Build 23F79))"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.5.0",
       "manufacturer": "Apple",
       "bits": null
     },

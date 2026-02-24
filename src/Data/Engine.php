@@ -83,6 +83,8 @@ enum Engine: string implements EngineInterface
 
     case maple = 'Maple';
 
+    case dillo = 'Dillo';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -122,6 +124,7 @@ enum Engine: string implements EngineInterface
             'netsurf' => self::netsurf,
             'ekiohflow' => self::ekiohflow,
             'maple' => self::maple,
+            'dillo' => self::dillo,
             default => throw new UnexpectedValueException(
                 sprintf('the engine "%s" is unknown', $name),
             ),
@@ -158,6 +161,7 @@ enum Engine: string implements EngineInterface
             self::arkweb => Company::huawei,
             self::ekiohflow => Company::ekioh,
             self::maple => Company::samsung,
+            self::dillo => Company::theDilloProject,
             default => Company::unknown,
         };
     }
@@ -171,7 +175,7 @@ enum Engine: string implements EngineInterface
     public function getVersion(): array
     {
         return match ($this) {
-            self::blink => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet']],
+            self::blink => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet', 'Chromium']],
             self::clecko, self::treco => ['factory' => VersionBuilderFactory::class, 'search' => ['rv:']],
             self::edge => ['factory' => VersionBuilderFactory::class, 'search' => ['Edge']],
             self::webkit => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit \\/', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
@@ -189,6 +193,7 @@ enum Engine: string implements EngineInterface
             self::ekiohflow => ['factory' => VersionBuilderFactory::class, 'search' => ['EkiohFlow']],
             self::netfront => ['factory' => VersionBuilderFactory::class, 'search' => ['NetFront']],
             self::maple => ['factory' => VersionBuilderFactory::class, 'search' => ['Maple']],
+            self::dillo => ['factory' => VersionBuilderFactory::class, 'search' => ['Dillo']],
             self::gecko => ['factory' => GeckoFactory::class, 'search' => null],
             self::trident => ['factory' => TridentFactory::class, 'search' => null],
             self::goanna => ['factory' => GoannaFactory::class, 'search' => null],

@@ -763,7 +763,7 @@ enum Os: string implements OsInterface
             self::morphos => ['factory' => VersionBuilderFactory::class, 'search' => ['MorphOS']],
             self::irix => ['factory' => VersionBuilderFactory::class, 'search' => ['IRIX64', 'IRIX;64', 'IRIX']],
             self::startos => ['factory' => VersionBuilderFactory::class, 'search' => ['StartOS']],
-            self::centos => ['factory' => VersionBuilderFactory::class, 'search' => ['CentOS(?: Linux)?\/[0-9\.\-]+el', 'CentOS Linux', 'CentOS']],
+            self::centos => ['factory' => VersionBuilderFactory::class, 'search' => ['[0-9\.\-]+el', 'CentOS Linux', 'CentOS']],
             self::gentooLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Gentoo']],
             self::mandrivaLinux => ['factory' => VersionBuilderFactory::class, 'search' => ['Mandriva(?: Linux)?\/[0-9\.\-]+mdv', 'Mandriva']],
             self::openHarmony => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenHarmony']],
