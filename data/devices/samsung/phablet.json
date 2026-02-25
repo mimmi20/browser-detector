@@ -4380,7 +4380,23 @@
       "touch": true,
       "size": 5
     },
-    "type": "smartphone",
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n7505": {
+    "deviceName": "SM-N7505",
+    "marketingName": "Galaxy Note 3 Neo LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "phablet",
     "platform": "android"
   }
 }

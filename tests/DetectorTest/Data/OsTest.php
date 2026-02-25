@@ -1340,7 +1340,7 @@ final class OsTest extends TestCase
                 'name' => 'Symbian OS',
                 'marketingName' => 'Symbian OS',
                 'manufacturer' => Company::symbianFoundation,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['SymbianOS']],
                 'key' => 'symbian',
             ],
             [

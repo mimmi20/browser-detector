@@ -6143,6 +6143,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-g3509": {
+    "deviceName": "SM-G3509",
+    "marketingName": "Galaxy Core Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-g3502l": {
     "deviceName": "SM-G3502L",
     "marketingName": "Galaxy Core Plus",
@@ -13087,22 +13103,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung sm-n7505": {
-    "deviceName": "SM-N7505",
-    "marketingName": "Galaxy Note 3 Neo LTE",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "samsung sm-n916k": {
     "deviceName": "SM-N916K",
     "marketingName": "Galaxy Note 4 (Korea)",
@@ -15649,6 +15649,22 @@
   },
   "samsung sm-g970u": {
     "deviceName": "SM-G970U",
+    "marketingName": "Galaxy S10e (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2280,
+      "height": 1080,
+      "touch": true,
+      "size": 5.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g970u1": {
+    "deviceName": "SM-G970U1",
     "marketingName": "Galaxy S10e (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -21489,16 +21505,16 @@
   },
   "samsung sm-g130e": {
     "deviceName": "SM-G130E",
-    "marketingName": "Galaxy Star 2",
+    "marketingName": "Galaxy Young 2",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 2,
     "display": {
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"

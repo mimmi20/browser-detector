@@ -776,6 +776,7 @@ enum Os: string implements OsInterface
             self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60V']],
             self::operaTv => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
             self::qtopia => ['factory' => VersionBuilderFactory::class, 'search' => ['Qtopia']],
+            self::symbianOs => ['factory' => VersionBuilderFactory::class, 'search' => ['SymbianOS']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
