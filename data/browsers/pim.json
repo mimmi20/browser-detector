@@ -214,5 +214,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yahoo-japan-mail": {
+    "name": "Yahoo! Mail",
+    "manufacturer": "yahoo-japan",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.ymail"
+      ]
+    },
+    "engine": "unknown"
   }
 }

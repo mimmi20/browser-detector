@@ -3444,6 +3444,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-T505', 'samsung=samsung sm-t505'],
             ['SM-T510', 'samsung=samsung sm-t510'],
             ['SAMSUNG SM-T510', 'samsung=samsung sm-t510'],
+            ['SM-T510X', 'samsung=samsung sm-t510x'],
+            ['SAMSUNG SM-T510X', 'samsung=samsung sm-t510x'],
             ['SM-T515', 'samsung=samsung sm-t515'],
             ['SAMSUNG SM-T515', 'samsung=samsung sm-t515'],
             ['SM-T517P', 'samsung=samsung sm-t517p'],

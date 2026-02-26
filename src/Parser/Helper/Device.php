@@ -2570,6 +2570,7 @@ final class Device implements DeviceInterface
             'sm-t503', 'samsung sm-t503' => 'samsung=samsung sm-t503',
             'sm-t505', 'samsung sm-t505' => 'samsung=samsung sm-t505',
             'sm-t510', 'samsung sm-t510' => 'samsung=samsung sm-t510',
+            'sm-t510x', 'samsung sm-t510x' => 'samsung=samsung sm-t510x',
             'sm-t515', 'samsung sm-t515' => 'samsung=samsung sm-t515',
             'sm-t517p', 'samsung sm-t517p' => 'samsung=samsung sm-t517p',
             'sm-t520', 'samsung sm-t520' => 'samsung=samsung sm-t520',
