@@ -7707,6 +7707,8 @@ final class Device implements DeviceInterface
             'bdf-kt107' => 'bdf=bdf kt107',
             // qihoo
             '1713-a01' => 'qihoo=qihoo 1713-a01',
+            // changhong
+            'ai pont' => 'changhong=changhong ai pont',
             // other
             default => null,
         };

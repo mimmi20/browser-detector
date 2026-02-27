@@ -2163,6 +2163,12 @@ enum Company: string implements CompanyInterface
 
     case beista = 'Beista';
 
+    case aRival = 'A-Rival';
+
+    case elongMobile = 'Elong Mobile';
+
+    case changhong = 'Changhong';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3242,6 +3248,9 @@ enum Company: string implements CompanyInterface
             'seranking', 'seranking ltd' => self::seranking,
             'torus', 'torus company' => self::torus,
             'beista' => self::beista,
+            'arival', 'a-rival' => self::aRival,
+            'elongmobile', 'elong-mobile', 'elong mobile' => self::elongMobile,
+            'changhong', 'sichuan changhong electric co., ltd.' => self::changhong,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3673,6 +3682,7 @@ enum Company: string implements CompanyInterface
             self::bundleman => 'Bundleman Ltd',
             self::seranking => 'Seranking LTD',
             self::torus => 'Torus Company',
+            self::changhong => 'Sichuan Changhong Electric Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -4034,6 +4044,8 @@ enum Company: string implements CompanyInterface
             self::digitalLifeInternational => 'digital-life-international',
             self::checkHost => 'check-host',
             self::antCom => 'ant.com',
+            self::aRival => 'a-rival',
+            self::elongMobile => 'elong-mobile',
             default => $this->name,
         };
     }

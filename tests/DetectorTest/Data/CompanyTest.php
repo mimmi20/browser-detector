@@ -6484,6 +6484,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Beista',
                 'key' => 'beista',
             ],
+            [
+                'type' => 'A-Rival',
+                'name' => 'A-Rival',
+                'brandname' => 'A-Rival',
+                'key' => 'a-rival',
+            ],
+            [
+                'type' => 'Elong Mobile',
+                'name' => 'Elong Mobile',
+                'brandname' => 'Elong Mobile',
+                'key' => 'elong-mobile',
+            ],
+            [
+                'type' => 'Changhong',
+                'name' => 'Sichuan Changhong Electric Co., Ltd.',
+                'brandname' => 'Changhong',
+                'key' => 'changhong',
+            ],
         ];
     }
 
