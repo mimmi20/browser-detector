@@ -601,6 +601,7 @@ enum Os: string implements OsInterface
             self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410 => 'Windows NT',
             self::windowsnt50, self::windowsnt501 => 'Windows 2000',
             self::windowsnt51, self::windowsnt52, self::windowsnt53 => 'Windows XP',
+            self::windowsme => 'Windows ME',
             self::windowsnt60 => 'Windows Vista',
             self::windowsnt61 => 'Windows 7',
             self::windowsnt62 => 'Windows 8',

@@ -651,5 +651,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "msray-plus": {
+    "name": "Msray-Plus",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "msray-plus"
+      ]
+    },
+    "engine": "unknown"
   }
 }

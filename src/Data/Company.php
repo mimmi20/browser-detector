@@ -2169,6 +2169,18 @@ enum Company: string implements CompanyInterface
 
     case changhong = 'Changhong';
 
+    case aoyodkg = 'Aoyodkg';
+
+    case doov = 'Doov';
+
+    case vernee = 'Vernee';
+
+    case coinCircle = 'CoinCircle';
+
+    case netEstate = 'netEstate';
+
+    case riddler = 'riddler';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3251,6 +3263,12 @@ enum Company: string implements CompanyInterface
             'arival', 'a-rival' => self::aRival,
             'elongmobile', 'elong-mobile', 'elong mobile' => self::elongMobile,
             'changhong', 'sichuan changhong electric co., ltd.' => self::changhong,
+            'aoyodkg' => self::aoyodkg,
+            'doov' => self::doov,
+            'vernee' => self::vernee,
+            'coincircle', 'coin-circle', 'coincircle, inc.' => self::coinCircle,
+            'netestate', 'net-estate', 'netestate gmbh' => self::netEstate,
+            'riddler' => self::riddler,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3683,6 +3701,8 @@ enum Company: string implements CompanyInterface
             self::seranking => 'Seranking LTD',
             self::torus => 'Torus Company',
             self::changhong => 'Sichuan Changhong Electric Co., Ltd.',
+            self::coinCircle => 'CoinCircle, Inc.',
+            self::netEstate => 'netEstate GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -4046,6 +4066,8 @@ enum Company: string implements CompanyInterface
             self::antCom => 'ant.com',
             self::aRival => 'a-rival',
             self::elongMobile => 'elong-mobile',
+            self::coinCircle => 'coin-circle',
+            self::netEstate => 'net-estate',
             default => $this->name,
         };
     }

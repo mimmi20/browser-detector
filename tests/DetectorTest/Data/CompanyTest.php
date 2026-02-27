@@ -6502,6 +6502,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Changhong',
                 'key' => 'changhong',
             ],
+            [
+                'type' => 'Aoyodkg',
+                'name' => 'Aoyodkg',
+                'brandname' => 'Aoyodkg',
+                'key' => 'aoyodkg',
+            ],
+            [
+                'type' => 'Doov',
+                'name' => 'Doov',
+                'brandname' => 'Doov',
+                'key' => 'doov',
+            ],
+            [
+                'type' => 'Vernee',
+                'name' => 'Vernee',
+                'brandname' => 'Vernee',
+                'key' => 'vernee',
+            ],
+            [
+                'type' => 'CoinCircle',
+                'name' => 'CoinCircle, Inc.',
+                'brandname' => 'CoinCircle',
+                'key' => 'coin-circle',
+            ],
+            [
+                'type' => 'netEstate',
+                'name' => 'netEstate GmbH',
+                'brandname' => 'netEstate',
+                'key' => 'net-estate',
+            ],
+            [
+                'type' => 'riddler',
+                'name' => 'riddler',
+                'brandname' => 'riddler',
+                'key' => 'riddler',
+            ],
         ];
     }
 
