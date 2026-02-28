@@ -5218,6 +5218,7 @@ final class Device implements DeviceInterface
             'infinix x650c' => 'infinix=infinix x650c',
             'infinix x650b' => 'infinix=infinix x650b',
             'infinix x650' => 'infinix=infinix x650',
+            'note 12' => 'infinix=infinix note 12',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -6851,6 +6852,7 @@ final class Device implements DeviceInterface
             'm10_r04' => 'pritom=pritom m10 r04',
             'm10_c01_eea' => 'pritom=pritom m10 c01 eea',
             'touch 7' => 'pritom=pritom touch 7',
+            'm30_eea' => 'pritom=pritom m30_eea',
             // pixus
             'pixus_deon' => 'pixus=pixus deon',
             'pixus_line' => 'pixus=pixus line',

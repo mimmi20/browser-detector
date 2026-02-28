@@ -6220,6 +6220,7 @@ final class DeviceTest extends TestCase
             ['Infinix X650C', 'infinix=infinix x650c'],
             ['Infinix X650B', 'infinix=infinix x650b'],
             ['Infinix X650', 'infinix=infinix x650'],
+            ['Note 12', 'infinix=infinix note 12'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -8022,6 +8023,7 @@ final class DeviceTest extends TestCase
             ['M10_R04', 'pritom=pritom m10 r04'],
             ['M10_C01_EEA', 'pritom=pritom m10 c01 eea'],
             ['TOUCH 7', 'pritom=pritom touch 7'],
+            ['M30_EEA', 'pritom=pritom m30_eea'],
             // pixus
             ['Pixus_Deon', 'pixus=pixus deon'],
             ['Pixus_Line', 'pixus=pixus line'],
