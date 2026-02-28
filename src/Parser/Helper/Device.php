@@ -1290,6 +1290,7 @@ final class Device implements DeviceInterface
             '2510dra23g' => 'xiaomi=xiaomi 2510dra23g',
             '2510dra23l' => 'xiaomi=xiaomi 2510dra23l',
             'mi pad 4 plus' => 'xiaomi=xiaomi mi pad 4 plus',
+            'redmi 9a' => 'xiaomi=xiaomi redmi 9a',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3771,6 +3772,7 @@ final class Device implements DeviceInterface
             'motorola msm8960' => 'motorola=motorola msm8960',
             'xt1070' => 'motorola=motorola xt1070',
             'moto g stylus 5g' => 'motorola=motorola moto g stylus 5g',
+            'moto g stylus (2021', 'moto g stylus (2021)' => 'motorola=motorola moto g stylus (2021)',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4791,6 +4793,9 @@ final class Device implements DeviceInterface
             'jlg-an00' => 'wiko=wiko jlg-an00',
             'shr-an00' => 'wiko=wiko shr-an00',
             'aix-an00' => 'wiko=wiko aix-an00',
+            'tommy' => 'wiko=wiko tommy',
+            'tommy2' => 'wiko=wiko tommy 2',
+            'tommy3' => 'wiko=wiko tommy 3',
             // razer
             'phone 2' => 'razer=razer phone 2',
             'razer edge 5g' => 'razer=razer edge 5g',
@@ -5646,7 +5651,8 @@ final class Device implements DeviceInterface
             'trekstor surftab theatre s11' => 'trekstor=trekstor surftab theatre s11',
             'surftab breeze 10.1 quad 3g' => 'trekstor=trekstor surftab breeze 10.1 quad 3g',
             // aeezo
-            'tk701_eea' => 'aeezo=aeezo tk701',
+            'tk701_eea' => 'aeezo=aeezo tk701_eea',
+            'tk806_eea' => 'aeezo=aeezo tk806_eea',
             // jay-tech
             'tpc-g1011lte' => 'jay-tech=jay-tech tpc-g1011lte',
             'tpc-g1010' => 'jay-tech=jay-tech tpc-g1010',
@@ -7464,6 +7470,7 @@ final class Device implements DeviceInterface
             // qilive
             'qt22101b' => 'qilive=qilive qt22101b',
             'qt23109bp' => 'qilive=qilive qt23109bp',
+            'qilive 97r-2' => 'qilive=qilive 97r2',
             // sun-wind
             'kids_8280c_ws8252pl' => 'sun-wind=sun-wind ws8252pl',
             'sky 1264c 4g ss1271pl' => 'sun-wind=sun-wind ss1271pl',

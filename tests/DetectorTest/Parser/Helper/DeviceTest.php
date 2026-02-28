@@ -1324,6 +1324,7 @@ final class DeviceTest extends TestCase
             ['2510DRA23G', 'xiaomi=xiaomi 2510dra23g'],
             ['2510DRA23L', 'xiaomi=xiaomi 2510dra23l'],
             ['MI PAD 4 PLUS', 'xiaomi=xiaomi mi pad 4 plus'],
+            ['Redmi 9A', 'xiaomi=xiaomi redmi 9a'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -4736,6 +4737,8 @@ final class DeviceTest extends TestCase
             ['MOTOROLA MSM8960', 'motorola=motorola msm8960'],
             ['XT1070', 'motorola=motorola xt1070'],
             ['Moto G Stylus 5G', 'motorola=motorola moto g stylus 5g'],
+            ['moto g stylus (2021', 'motorola=motorola moto g stylus (2021)'],
+            ['moto g stylus (2021)', 'motorola=motorola moto g stylus (2021)'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -5774,6 +5777,9 @@ final class DeviceTest extends TestCase
             ['JLG-AN00', 'wiko=wiko jlg-an00'],
             ['SHR-AN00', 'wiko=wiko shr-an00'],
             ['Aix-AN00', 'wiko=wiko aix-an00'],
+            ['Tommy', 'wiko=wiko tommy'],
+            ['Tommy2', 'wiko=wiko tommy 2'],
+            ['Tommy3', 'wiko=wiko tommy 3'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
             ['Razer Edge 5G', 'razer=razer edge 5g'],
@@ -6658,7 +6664,8 @@ final class DeviceTest extends TestCase
             ['Trekstor Surftab theatre S11', 'trekstor=trekstor surftab theatre s11'],
             ['SurfTab breeze 10.1 quad 3G', 'trekstor=trekstor surftab breeze 10.1 quad 3g'],
             // aeezo
-            ['TK701_EEA', 'aeezo=aeezo tk701'],
+            ['TK701_EEA', 'aeezo=aeezo tk701_eea'],
+            ['TK806_EEA', 'aeezo=aeezo tk806_eea'],
             // jay-tech
             ['TPC-G1011LTE', 'jay-tech=jay-tech tpc-g1011lte'],
             ['TPC-G1010', 'jay-tech=jay-tech tpc-g1010'],
@@ -8641,6 +8648,7 @@ final class DeviceTest extends TestCase
             // qilive
             ['QT22101B', 'qilive=qilive qt22101b'],
             ['QT23109BP', 'qilive=qilive qt23109bp'],
+            ['Qilive 97R-2', 'qilive=qilive 97r2'],
             // sun-wind
             ['Kids_8280C_WS8252PL', 'sun-wind=sun-wind ws8252pl'],
             ['Sky 1264C 4G SS1271PL', 'sun-wind=sun-wind ss1271pl'],

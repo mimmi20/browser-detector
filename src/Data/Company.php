@@ -2191,6 +2191,18 @@ enum Company: string implements CompanyInterface
 
     case unity = 'Unity';
 
+    case xoro = 'Xoro';
+
+    case twoK = '2K';
+
+    case andreasRoene = 'Andreas Röne';
+
+    case finimize = 'Finimize';
+
+    case proton = 'Proton';
+
+    case schoberInformation = 'Schober Information';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3284,6 +3296,12 @@ enum Company: string implements CompanyInterface
             'netpeak', 'netpeak ltd' => self::netpeak,
             'spawning', 'spawning, inc.' => self::spawning,
             'unity', 'unity-technologies', 'unity technologies' => self::unity,
+            'xoro' => self::xoro,
+            'twok', '2k, inc.', '2k' => self::twoK,
+            'andreasRoene', 'andreas-roene', 'andreas röne' => self::andreasRoene,
+            'finimize', 'finimize ltd.' => self::finimize,
+            'proton', 'proton ag' => self::proton,
+            'schoberinformation', 'schober-information', 'schober information group deutschland gmbh', 'schober information' => self::schoberInformation,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3722,6 +3740,10 @@ enum Company: string implements CompanyInterface
             self::netpeak => 'Netpeak LTD',
             self::spawning => 'Spawning, Inc.',
             self::unity => 'Unity Technologies',
+            self::twoK => '2K, Inc.',
+            self::finimize => 'Finimize Ltd.',
+            self::proton => 'Proton AG',
+            self::schoberInformation => 'Schober Information Group Deutschland GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -4089,6 +4111,9 @@ enum Company: string implements CompanyInterface
             self::netEstate => 'net-estate',
             self::piCommunity => 'pi community',
             self::unity => 'unity-technologies',
+            self::twoK => '2k',
+            self::andreasRoene => 'andreas-roene',
+            self::schoberInformation => 'schober-information',
             default => $this->name,
         };
     }

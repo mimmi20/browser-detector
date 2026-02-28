@@ -6568,6 +6568,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Unity',
                 'key' => 'unity-technologies',
             ],
+            [
+                'type' => 'Xoro',
+                'name' => 'Xoro',
+                'brandname' => 'Xoro',
+                'key' => 'xoro',
+            ],
+            [
+                'type' => '2K',
+                'name' => '2K, Inc.',
+                'brandname' => '2K',
+                'key' => '2k',
+            ],
+            [
+                'type' => 'Andreas Röne',
+                'name' => 'Andreas Röne',
+                'brandname' => 'Andreas Röne',
+                'key' => 'andreas-roene',
+            ],
+            [
+                'type' => 'Finimize',
+                'name' => 'Finimize Ltd.',
+                'brandname' => 'Finimize',
+                'key' => 'finimize',
+            ],
+            [
+                'type' => 'Proton',
+                'name' => 'Proton AG',
+                'brandname' => 'Proton',
+                'key' => 'proton',
+            ],
+            [
+                'type' => 'Schober Information',
+                'name' => 'Schober Information Group Deutschland GmbH',
+                'brandname' => 'Schober Information',
+                'key' => 'schober-information',
+            ],
         ];
     }
 
