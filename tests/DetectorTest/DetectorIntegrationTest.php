@@ -7844,6 +7844,68 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Windows"',
+                    'sec-ch-ua-platform-version' => '"10.0.0"',
+                    'sec-ch-ua' => '" Not;A Brand";v="99", "Google Chrome";v="null", "Chromium";v="null"',
+                    'sec-ch-ua-full-version' => '"null.0.4692.99"',
+                    'sec-ch-ua-arch' => '"x86"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Windows"',
+                        'sec-ch-ua-platform-version' => '"10.0.0"',
+                        'sec-ch-ua' => '" Not;A Brand";v="99", "Google Chrome";v="null", "Chromium";v="null"',
+                        'sec-ch-ua-full-version' => '"null.0.4692.99"',
+                        'sec-ch-ua-arch' => '"x86"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)',
+                    ],
+                    'device' => [
+                        'architecture' => 'x86',
+                        'deviceName' => 'iPhone',
+                        'marketingName' => 'iPhone',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 480,
+                            'height' => 320,
+                            'touch' => true,
+                            'size' => 3.5,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows 10',
+                        'version' => '10.0.0',
+                        'manufacturer' => 'Microsoft',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'AdsBot Google-Mobile',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'Google',
+                        'type' => 'search-bot',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => null,
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

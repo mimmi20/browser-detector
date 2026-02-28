@@ -5482,7 +5482,6 @@ final class DeviceTest extends TestCase
             ['Power', 'ulefone=ulefone power'],
             ['Note_7P', 'ulefone=ulefone note 7p'],
             ['S10_Pro', 'ulefone=ulefone s10 pro'],
-            ['Power 3', 'ulefone=ulefone power 3'],
             ['Note 14', 'ulefone=ulefone note 14'],
             ['Note 8P', 'ulefone=ulefone note 8p'],
             ['Note 13P', 'ulefone=ulefone note 13p'],
@@ -6579,6 +6578,7 @@ final class DeviceTest extends TestCase
             ['MP03', 'umi=umi mp03'],
             ['MP18', 'umi=umi mp18'],
             ['RP03', 'umi=umi rp03'],
+            ['Power 3', 'umi=umi power 3'],
             // bq
             ['Aquaris X', 'bq=bq aquaris x'],
             ['Aquaris X5', 'bq=bq aquaris x5'],

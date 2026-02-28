@@ -4506,7 +4506,7 @@ final class Device implements DeviceInterface
             'power' => 'ulefone=ulefone power',
             'note_7p' => 'ulefone=ulefone note 7p',
             's10_pro' => 'ulefone=ulefone s10 pro',
-            'power_3', 'power 3' => 'ulefone=ulefone power 3',
+            'power_3' => 'ulefone=ulefone power 3',
             'note 14' => 'ulefone=ulefone note 14',
             'note 8p' => 'ulefone=ulefone note 8p',
             'note 13p' => 'ulefone=ulefone note 13p',
@@ -5576,6 +5576,7 @@ final class Device implements DeviceInterface
             'mp03' => 'umi=umi mp03',
             'mp18' => 'umi=umi mp18',
             'rp03' => 'umi=umi rp03',
+            'power 3' => 'umi=umi power 3',
             // bq
             'aquaris x' => 'bq=bq aquaris x',
             'aquaris x5' => 'bq=bq aquaris x5',
