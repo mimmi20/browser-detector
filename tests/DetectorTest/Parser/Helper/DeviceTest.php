@@ -1325,6 +1325,10 @@ final class DeviceTest extends TestCase
             ['2510DRA23L', 'xiaomi=xiaomi 2510dra23l'],
             ['MI PAD 4 PLUS', 'xiaomi=xiaomi mi pad 4 plus'],
             ['Redmi 9A', 'xiaomi=xiaomi redmi 9a'],
+            ['Redmi 9T', 'xiaomi=xiaomi redmi 9t'],
+            ['Redmi 9C NFC', 'xiaomi=xiaomi m2006c3mng'],
+            ['Redmi 9C', 'xiaomi=xiaomi redmi 9c'],
+            ['Redmi 9', 'xiaomi=xiaomi redmi 9'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],

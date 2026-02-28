@@ -744,7 +744,7 @@ final class Device implements DeviceInterface
             'm2004j19c' => 'xiaomi=xiaomi m2004j19c',
             'm2012k11g' => 'xiaomi=xiaomi m2012k11g',
             'm2007j17g' => 'xiaomi=xiaomi m2007j17g',
-            'm2006c3mng' => 'xiaomi=xiaomi m2006c3mng',
+            'm2006c3mng', 'redmi 9c nfc' => 'xiaomi=xiaomi m2006c3mng',
             '2201117pg' => 'xiaomi=xiaomi 2201117pg',
             '22071212ag' => 'xiaomi=xiaomi 22071212ag',
             '2201116pg' => 'xiaomi=xiaomi 2201116pg',
@@ -1291,6 +1291,9 @@ final class Device implements DeviceInterface
             '2510dra23l' => 'xiaomi=xiaomi 2510dra23l',
             'mi pad 4 plus' => 'xiaomi=xiaomi mi pad 4 plus',
             'redmi 9a' => 'xiaomi=xiaomi redmi 9a',
+            'redmi 9t' => 'xiaomi=xiaomi redmi 9t',
+            'redmi 9c' => 'xiaomi=xiaomi redmi 9c',
+            'redmi 9' => 'xiaomi=xiaomi redmi 9',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
