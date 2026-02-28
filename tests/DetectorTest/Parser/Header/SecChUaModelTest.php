@@ -1984,7 +1984,7 @@ final class SecChUaModelTest extends TestCase
             ['"Trekstor Surftab theatre S11"', true, 'trekstor=trekstor surftab theatre s11'],
             ['"SurfTab breeze 10.1 quad 3G"', true, 'trekstor=trekstor surftab breeze 10.1 quad 3g'],
             // aeezo
-            ['"TK701_EEA"', true, 'aeezo=aeezo tk701'],
+            ['"TK701_EEA"', true, 'aeezo=aeezo tk701_eea'],
             // jay-tech
             ['"TPC-G1011LTE"', true, 'jay-tech=jay-tech tpc-g1011lte'],
             // yuntab

@@ -3298,7 +3298,7 @@ enum Company: string implements CompanyInterface
             'unity', 'unity-technologies', 'unity technologies' => self::unity,
             'xoro' => self::xoro,
             'twok', '2k, inc.', '2k' => self::twoK,
-            'andreasRoene', 'andreas-roene', 'andreas röne' => self::andreasRoene,
+            'andreasroene', 'andreas-roene', 'andreas röne' => self::andreasRoene,
             'finimize', 'finimize ltd.' => self::finimize,
             'proton', 'proton ag' => self::proton,
             'schoberinformation', 'schober-information', 'schober information group deutschland gmbh', 'schober information' => self::schoberInformation,
