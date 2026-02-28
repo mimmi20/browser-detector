@@ -6538,6 +6538,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'riddler',
                 'key' => 'riddler',
             ],
+            [
+                'type' => 'Tolino',
+                'name' => 'Tolino',
+                'brandname' => 'Tolino',
+                'key' => 'tolino',
+            ],
+            [
+                'type' => 'Pi Community',
+                'name' => 'Pi Community Company',
+                'brandname' => 'Pi Community',
+                'key' => 'pi community',
+            ],
+            [
+                'type' => 'Netpeak',
+                'name' => 'Netpeak LTD',
+                'brandname' => 'Netpeak',
+                'key' => 'netpeak',
+            ],
+            [
+                'type' => 'Spawning',
+                'name' => 'Spawning, Inc.',
+                'brandname' => 'Spawning',
+                'key' => 'spawning',
+            ],
+            [
+                'type' => 'Unity',
+                'name' => 'Unity Technologies',
+                'brandname' => 'Unity',
+                'key' => 'unity-technologies',
+            ],
         ];
     }
 

@@ -3707,7 +3707,7 @@ final class DetectorIntegrationTest extends TestCase
                         'name' => 'Pi Browser',
                         'modus' => null,
                         'version' => '1.3.0',
-                        'manufacturer' => 'pi community',
+                        'manufacturer' => 'Pi Community',
                         'type' => 'browser',
                         'isbot' => false,
                         'bits' => null,

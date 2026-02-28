@@ -7712,6 +7712,8 @@ final class Device implements DeviceInterface
             '1713-a01' => 'qihoo=qihoo 1713-a01',
             // changhong
             'ai pont' => 'changhong=changhong ai pont',
+            // xoro
+            'hst 260 s' => 'xoro=xoro hst 260 s',
             // other
             default => null,
         };

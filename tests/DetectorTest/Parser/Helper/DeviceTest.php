@@ -5511,7 +5511,7 @@ final class DeviceTest extends TestCase
             ['Power_5', 'ulefone=ulefone power 5'],
             ['Power 3S', 'ulefone=ulefone power 3s'],
             ['Power_3', 'ulefone=ulefone power 3'],
-            ['Power 3', 'ulefone=ulefone power 3'],
+            ['Power 3', 'umi=umi power 3'],
             ['Power Armor 18', 'ulefone=ulefone power armor 18'],
             ['Power Armor 16S', 'ulefone=ulefone power armor 16s'],
             ['RugKing', 'ulefone=ulefone rugking'],
@@ -8892,6 +8892,8 @@ final class DeviceTest extends TestCase
             ['1713-A01', 'qihoo=qihoo 1713-a01'],
             // changhong
             ['AI PONT', 'changhong=changhong ai pont'],
+            // xoro
+            ['HST 260 S', 'xoro=xoro hst 260 s'],
             // other
             ['Model"', null],
             [': "', null],

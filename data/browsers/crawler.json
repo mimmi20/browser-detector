@@ -2303,5 +2303,27 @@
       ]
     },
     "engine": "unknown"
+  },
+  "netpeak-checker-bot": {
+    "name": "NetpeakCheckerBot",
+    "manufacturer": "netpeak",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetpeakCheckerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "spawning-ai": {
+    "name": "Spawning AI",
+    "manufacturer": "spawning",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

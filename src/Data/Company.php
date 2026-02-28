@@ -2181,6 +2181,16 @@ enum Company: string implements CompanyInterface
 
     case riddler = 'riddler';
 
+    case tolino = 'Tolino';
+
+    case piCommunity = 'Pi Community';
+
+    case netpeak = 'Netpeak';
+
+    case spawning = 'Spawning';
+
+    case unity = 'Unity';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3269,6 +3279,11 @@ enum Company: string implements CompanyInterface
             'coincircle', 'coin-circle', 'coincircle, inc.' => self::coinCircle,
             'netestate', 'net-estate', 'netestate gmbh' => self::netEstate,
             'riddler' => self::riddler,
+            'tolino' => self::tolino,
+            'picommunity', 'pi community company', 'pi community' => self::piCommunity,
+            'netpeak', 'netpeak ltd' => self::netpeak,
+            'spawning', 'spawning, inc.' => self::spawning,
+            'unity', 'unity-technologies', 'unity technologies' => self::unity,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3703,6 +3718,10 @@ enum Company: string implements CompanyInterface
             self::changhong => 'Sichuan Changhong Electric Co., Ltd.',
             self::coinCircle => 'CoinCircle, Inc.',
             self::netEstate => 'netEstate GmbH',
+            self::piCommunity => 'Pi Community Company',
+            self::netpeak => 'Netpeak LTD',
+            self::spawning => 'Spawning, Inc.',
+            self::unity => 'Unity Technologies',
             self::unknown => null,
             default => $this->value,
         };
@@ -4068,6 +4087,8 @@ enum Company: string implements CompanyInterface
             self::elongMobile => 'elong-mobile',
             self::coinCircle => 'coin-circle',
             self::netEstate => 'net-estate',
+            self::piCommunity => 'pi community',
+            self::unity => 'unity-technologies',
             default => $this->name,
         };
     }

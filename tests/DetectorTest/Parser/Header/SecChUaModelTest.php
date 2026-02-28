@@ -1601,7 +1601,7 @@ final class SecChUaModelTest extends TestCase
             ['"Power"', true, 'ulefone=ulefone power'],
             ['"Note_7P"', true, 'ulefone=ulefone note 7p'],
             ['"S10_Pro"', true, 'ulefone=ulefone s10 pro'],
-            ['"Power 3"', true, 'ulefone=ulefone power 3'],
+            ['"Power 3"', true, 'umi=umi power 3'],
             ['"Note 14"', true, 'ulefone=ulefone note 14'],
             ['"Note 8P"', true, 'ulefone=ulefone note 8p'],
             // Doogee
