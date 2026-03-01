@@ -5496,7 +5496,6 @@ final class DeviceTest extends TestCase
             ['Armor 9', 'ulefone=ulefone armor 9'],
             ['Armor X10 Pro', 'ulefone=ulefone armor x10 pro'],
             ['Power Armor X11 Pro', 'ulefone=ulefone power armor x11 pro'],
-            ['Power 5', 'ulefone=ulefone power 5'],
             ['Power Armor 16 Pro', 'ulefone=ulefone power armor 16 pro'],
             ['Power Armor14 Pro', 'ulefone=ulefone power armor 14 pro'],
             ['Armor_6S', 'ulefone=ulefone armor 6s'],
@@ -8926,6 +8925,10 @@ final class DeviceTest extends TestCase
             ['AI PONT', 'changhong=changhong ai pont'],
             // xoro
             ['HST 260 S', 'xoro=xoro hst 260 s'],
+            // leagoo
+            ['Power 5', 'leagoo=leagoo power 5'],
+            // qmobile
+            ['View Max Pro', 'qmobile=qmobile view max pro'],
             // other
             ['Model"', null],
             [': "', null],

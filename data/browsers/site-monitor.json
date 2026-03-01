@@ -161,5 +161,17 @@
       ]
     },
     "engine": null
+  },
+  "uptimerobot": {
+    "name": "UptimeRobot",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UptimeRobot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

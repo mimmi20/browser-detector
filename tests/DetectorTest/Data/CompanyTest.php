@@ -6683,9 +6683,9 @@ final class CompanyTest extends TestCase
                 'key' => 'sprious',
             ],
             [
-                'type' => 'JAY-tech',
-                'name' => 'JAY-tech',
-                'brandname' => 'JAY-tech',
+                'type' => 'JAY-Tech',
+                'name' => 'JAY-Tech',
+                'brandname' => 'JAY-Tech',
                 'key' => 'jay-tech',
             ],
             [

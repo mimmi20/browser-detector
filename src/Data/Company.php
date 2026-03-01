@@ -2229,7 +2229,7 @@ enum Company: string implements CompanyInterface
 
     case sprious = 'Sprious';
 
-    case jayTech = 'JAY-tech';
+    case jayTech = 'JAY-Tech';
 
     case linkdex = 'Linkdex';
 

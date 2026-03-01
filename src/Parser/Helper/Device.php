@@ -4515,7 +4515,7 @@ final class Device implements DeviceInterface
             'armor 9' => 'ulefone=ulefone armor 9',
             'armor x10 pro' => 'ulefone=ulefone armor x10 pro',
             'power armor x11 pro' => 'ulefone=ulefone power armor x11 pro',
-            'power 5', 'power_5' => 'ulefone=ulefone power 5',
+            'power_5' => 'ulefone=ulefone power 5',
             'power armor 16 pro' => 'ulefone=ulefone power armor 16 pro',
             'power armor14 pro' => 'ulefone=ulefone power armor 14 pro',
             'armor_6s' => 'ulefone=ulefone armor 6s',
@@ -7742,6 +7742,10 @@ final class Device implements DeviceInterface
             'ai pont' => 'changhong=changhong ai pont',
             // xoro
             'hst 260 s' => 'xoro=xoro hst 260 s',
+            // leagoo
+            'power 5' => 'leagoo=leagoo power 5',
+            // qmobile
+            'view max pro' => 'qmobile=qmobile view max pro',
             // other
             default => null,
         };

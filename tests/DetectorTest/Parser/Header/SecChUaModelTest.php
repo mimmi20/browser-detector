@@ -1594,7 +1594,7 @@ final class SecChUaModelTest extends TestCase
             ['"Armor 9"', true, 'ulefone=ulefone armor 9'],
             ['"Armor X10 Pro"', true, 'ulefone=ulefone armor x10 pro'],
             ['"Power Armor X11 Pro"', true, 'ulefone=ulefone power armor x11 pro'],
-            ['"Power 5"', true, 'ulefone=ulefone power 5'],
+            ['"Power 5"', true, 'leagoo=leagoo power 5'],
             ['"Power Armor 16 Pro"', true, 'ulefone=ulefone power armor 16 pro'],
             ['"Power Armor14 Pro"', true, 'ulefone=ulefone power armor 14 pro'],
             ['"Armor_6S"', true, 'ulefone=ulefone armor 6s'],

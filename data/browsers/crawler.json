@@ -2397,11 +2397,23 @@
   "newspaper": {
     "name": "Scraping Robot",
     "manufacturer": "sprious",
-    "type": "bot",
+    "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "newspaper"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-favicon": {
+    "name": "Google Favicon",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google Favicon"
       ]
     },
     "engine": "unknown"
