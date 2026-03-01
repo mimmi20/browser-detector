@@ -3270,7 +3270,7 @@ final class CompanyTest extends TestCase
             ],
             [
                 'type' => 'Viber Media',
-                'name' => 'Viber Media',
+                'name' => 'Viber Media S.à r.l.',
                 'brandname' => 'Viber Media',
                 'key' => 'viber-media',
             ],
@@ -6639,6 +6639,36 @@ final class CompanyTest extends TestCase
                 'name' => 'gigablast',
                 'brandname' => 'gigablast',
                 'key' => 'gigablast',
+            ],
+            [
+                'type' => 'Black Shark',
+                'name' => 'Black Shark',
+                'brandname' => 'Black Shark',
+                'key' => 'black-shark',
+            ],
+            [
+                'type' => 'DomCop',
+                'name' => 'DomCop',
+                'brandname' => 'DomCop',
+                'key' => 'domcop',
+            ],
+            [
+                'type' => 'MIADA',
+                'name' => 'MIADA',
+                'brandname' => 'MIADA',
+                'key' => 'miada',
+            ],
+            [
+                'type' => 'Remmer Wilts',
+                'name' => 'Remmer Wilts',
+                'brandname' => 'Remmer Wilts',
+                'key' => 'remmer-wilts',
+            ],
+            [
+                'type' => 'Seiko Epson',
+                'name' => 'Seiko Epson Corporation',
+                'brandname' => 'Seiko Epson',
+                'key' => 'seiko-epson',
             ],
         ];
     }

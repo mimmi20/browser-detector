@@ -2370,7 +2370,7 @@
   },
   "viber": {
     "name": "Viber",
-    "manufacturer": "rakuten",
+    "manufacturer": "viber-media",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4736,6 +4736,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WeRead"
+      ]
+    },
+    "engine": null
+  },
+  "viber-downloader": {
+    "name": "ViberDownloader",
+    "manufacturer": "viber-media",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ViberDownloader"
       ]
     },
     "engine": null

@@ -2215,6 +2215,16 @@ enum Company: string implements CompanyInterface
 
     case gigablast = 'gigablast';
 
+    case blackShark = 'Black Shark';
+
+    case domcop = 'DomCop';
+
+    case miada = 'MIADA';
+
+    case remmerWilts = 'Remmer Wilts';
+
+    case seikoEpson = 'Seiko Epson';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3320,6 +3330,11 @@ enum Company: string implements CompanyInterface
             'boardreader', 'board-reader' => self::boardReader,
             'feedly', 'feedly, inc.' => self::feedly,
             'gigablast' => self::gigablast,
+            'blackshark', 'black-shark', 'black shark' => self::blackShark,
+            'domcop' => self::domcop,
+            'miada' => self::miada,
+            'remmerwilts', 'remmer-wilts', 'remmer wilts' => self::remmerWilts,
+            'seikoepson', 'seiko-epson', 'seiko epson corporation', 'seiko epson' => self::seikoEpson,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3765,6 +3780,8 @@ enum Company: string implements CompanyInterface
             self::veriSign => 'VeriSign, Inc',
             self::blitz => 'Blitz, Inc.',
             self::feedly => 'feedly, Inc.',
+            self::seikoEpson => 'Seiko Epson Corporation',
+            self::viberMedia => 'Viber Media S.à r.l.',
             self::unknown => null,
             default => $this->value,
         };
@@ -4137,6 +4154,9 @@ enum Company: string implements CompanyInterface
             self::schoberInformation => 'schober-information',
             self::veriSign => 'verisign',
             self::boardReader => 'board-reader',
+            self::blackShark => 'black-shark',
+            self::remmerWilts => 'remmer-wilts',
+            self::seikoEpson => 'seiko-epson',
             default => $this->name,
         };
     }

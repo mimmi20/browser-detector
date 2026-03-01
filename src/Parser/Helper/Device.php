@@ -1294,6 +1294,7 @@ final class Device implements DeviceInterface
             'redmi 9t' => 'xiaomi=xiaomi redmi 9t',
             'redmi 9c' => 'xiaomi=xiaomi redmi 9c',
             'redmi 9' => 'xiaomi=xiaomi redmi 9',
+            'poco m3 pro 5g' => 'xiaomi=xiaomi poco m3 pro 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2573,6 +2574,7 @@ final class Device implements DeviceInterface
             'sm-t500', 'samsung sm-t500' => 'samsung=samsung sm-t500',
             'sm-t503', 'samsung sm-t503' => 'samsung=samsung sm-t503',
             'sm-t505', 'samsung sm-t505' => 'samsung=samsung sm-t505',
+            'sm-t505n', 'samsung sm-t505n' => 'samsung=samsung sm-t505n',
             'sm-t510', 'samsung sm-t510' => 'samsung=samsung sm-t510',
             'sm-t510x', 'samsung sm-t510x' => 'samsung=samsung sm-t510x',
             'sm-t515', 'samsung sm-t515' => 'samsung=samsung sm-t515',
@@ -4486,6 +4488,7 @@ final class Device implements DeviceInterface
             'c11' => 'oukitel=oukitel c11',
             'wp60' => 'oukitel=oukitel wp60',
             'rt3 plus' => 'oukitel=oukitel rt3 plus',
+            'wp9' => 'oukitel=oukitel wp9',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',

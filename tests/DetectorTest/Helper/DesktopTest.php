@@ -131,6 +131,7 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (X11;) Firefox/38.0'],
             ['Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6'],
             ['nook browser/1.0'],
+            ['Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'],
         ];
     }
 

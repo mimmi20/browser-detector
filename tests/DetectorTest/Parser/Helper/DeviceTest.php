@@ -1329,6 +1329,7 @@ final class DeviceTest extends TestCase
             ['Redmi 9C NFC', 'xiaomi=xiaomi m2006c3mng'],
             ['Redmi 9C', 'xiaomi=xiaomi redmi 9c'],
             ['Redmi 9', 'xiaomi=xiaomi redmi 9'],
+            ['POCO M3 Pro 5G', 'xiaomi=xiaomi poco m3 pro 5g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3447,6 +3448,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-T503', 'samsung=samsung sm-t503'],
             ['SM-T505', 'samsung=samsung sm-t505'],
             ['SAMSUNG SM-T505', 'samsung=samsung sm-t505'],
+            ['SM-T505N', 'samsung=samsung sm-t505n'],
+            ['SAMSUNG SM-T505N', 'samsung=samsung sm-t505n'],
             ['SM-T510', 'samsung=samsung sm-t510'],
             ['SAMSUNG SM-T510', 'samsung=samsung sm-t510'],
             ['SM-T510X', 'samsung=samsung sm-t510x'],
@@ -5465,6 +5468,7 @@ final class DeviceTest extends TestCase
             ['C11', 'oukitel=oukitel c11'],
             ['WP60', 'oukitel=oukitel wp60'],
             ['RT3 Plus', 'oukitel=oukitel rt3 plus'],
+            ['WP9', 'oukitel=oukitel wp9'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
