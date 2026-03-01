@@ -2768,7 +2768,7 @@ enum Company: string implements CompanyInterface
             'moonshotai', 'moonshot-ai', 'moonshot ai' => self::moonshotAI,
             'deepseekai', 'deepseek ai', 'deepseek-ai', 'hangzhou deepseek artificial intelligence basic technology research co., ltd.' => self::deepseekAI,
             'keplr', 'team keplr', 'team-keplr' => self::keplr,
-            'vibermedia', 'viber media', 'viber-media' => self::viberMedia,
+            'vibermedia', 'viber media', 'viber-media', 'viber media s.à r.l.' => self::viberMedia,
             'canopy' => self::canopy,
             'genspark' => self::genspark,
             'pia', 'pia private internet access, inc' => self::pia,

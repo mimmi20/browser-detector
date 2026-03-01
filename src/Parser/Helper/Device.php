@@ -2597,6 +2597,7 @@ final class Device implements DeviceInterface
             'sm-g3500', 'samsung sm-g3500' => 'samsung=samsung sm-g3500',
             'sm-g3509', 'samsung sm-g3509' => 'samsung=samsung sm-g3509',
             'sm-g350', 'samsung sm-g350' => 'samsung=samsung sm-g350',
+            'sm-t310', 'samsung sm-t310' => 'samsung=samsung sm-t310',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
