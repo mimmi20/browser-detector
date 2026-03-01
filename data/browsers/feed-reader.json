@@ -347,5 +347,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "flipboardproxy": {
+    "name": "FlipboardProxy",
+    "manufacturer": "flipboard",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FlipboardProxy"
+      ]
+    },
+    "engine": "unknown"
   }
 }

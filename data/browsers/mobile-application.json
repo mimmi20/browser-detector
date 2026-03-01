@@ -4751,5 +4751,17 @@
       ]
     },
     "engine": null
+  },
+  "ding-talk": {
+    "name": "DingTalk",
+    "manufacturer": "alibaba",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DingTalk"
+      ]
+    },
+    "engine": null
   }
 }

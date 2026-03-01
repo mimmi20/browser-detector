@@ -6670,6 +6670,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Seiko Epson',
                 'key' => 'seiko-epson',
             ],
+            [
+                'type' => 'Uptime',
+                'name' => 'Uptime',
+                'brandname' => 'Uptime',
+                'key' => 'uptime',
+            ],
+            [
+                'type' => 'Sprious',
+                'name' => 'Sprious LLC',
+                'brandname' => 'Sprious',
+                'key' => 'sprious',
+            ],
+            [
+                'type' => 'JAY-tech',
+                'name' => 'JAY-tech',
+                'brandname' => 'JAY-tech',
+                'key' => 'jay-tech',
+            ],
+            [
+                'type' => 'Linkdex',
+                'name' => 'Linkdex Limited',
+                'brandname' => 'Linkdex',
+                'key' => 'linkdex',
+            ],
+            [
+                'type' => '10betterpages',
+                'name' => '10betterpages GmbH',
+                'brandname' => '10betterpages',
+                'key' => '10betterpages',
+            ],
+            [
+                'type' => 'datasift',
+                'name' => 'datasift',
+                'brandname' => 'datasift',
+                'key' => 'datasift',
+            ],
+            [
+                'type' => 'freenet',
+                'name' => 'freenet AG',
+                'brandname' => 'freenet',
+                'key' => 'freenet',
+            ],
+            [
+                'type' => 'Prismatic',
+                'name' => 'Prismatic',
+                'brandname' => 'Prismatic',
+                'key' => 'prismatic',
+            ],
+            [
+                'type' => 'vbseo',
+                'name' => 'vbseo',
+                'brandname' => 'vbseo',
+                'key' => 'vbseo',
+            ],
         ];
     }
 

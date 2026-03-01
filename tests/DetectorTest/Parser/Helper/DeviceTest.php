@@ -92,6 +92,8 @@ final class DeviceTest extends TestCase
             ['LM-X525', 'lg=lg lm-x525'],
             ['LG-K220', 'lg=lg k220'],
             ['LG-H410', 'lg=lg h410'],
+            ['LG-D486', 'lg=lg d486'],
+            ['LG-F480', 'lg=lg f480'],
             ['LM-Q710.FGN', 'lg=lg lm-q710.fgn'],
             ['LM-X320', 'lg=lg lm-x320'],
             ['LG-K430', 'lg=lg k430'],
@@ -5795,6 +5797,8 @@ final class DeviceTest extends TestCase
             ['Tommy', 'wiko=wiko tommy'],
             ['Tommy2', 'wiko=wiko tommy 2'],
             ['Tommy3', 'wiko=wiko tommy 3'],
+            ['RAINBOW 4G', 'wiko=wiko rainbow 4g'],
+            ['RAINBOW', 'wiko=wiko rainbow'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
             ['Razer Edge 5G', 'razer=razer edge 5g'],
@@ -5825,6 +5829,7 @@ final class DeviceTest extends TestCase
             ['6027A', 'alcatel=alcatel 6027a'],
             ['5059S', 'alcatel=alcatel 5059s'],
             ['A466BG', 'alcatel=alcatel a466bg'],
+            ['8082', 'alcatel=alcatel 8082'],
             // HTC
             ['HTC Desire 19+', 'htc=htc desire 19 plus'],
             ['HTC U11', 'htc=htc u11'],
@@ -6656,6 +6661,7 @@ final class DeviceTest extends TestCase
             ['MEIZU 16th plus', 'meizu=meizu 16th plus'],
             ['MZ-16th plus', 'meizu=meizu 16th plus'],
             ['16th plus', 'meizu=meizu 16th plus'],
+            ['M6 Note', 'meizu=meizu m6 note'],
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
             ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],
@@ -7099,6 +7105,8 @@ final class DeviceTest extends TestCase
             ['T676J', 'tcl=tcl t676j'],
             ['A509DL', 'tcl=tcl a509dl'],
             ['9132G', 'tcl=tcl 9132g'],
+            ['5164D', 'tcl=tcl 5164d'],
+            ['6102D', 'tcl=tcl 6102d'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],

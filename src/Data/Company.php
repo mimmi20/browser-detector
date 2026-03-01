@@ -2225,6 +2225,24 @@ enum Company: string implements CompanyInterface
 
     case seikoEpson = 'Seiko Epson';
 
+    case uptime = 'Uptime';
+
+    case sprious = 'Sprious';
+
+    case jayTech = 'JAY-tech';
+
+    case linkdex = 'Linkdex';
+
+    case tenBetterPages = '10betterpages';
+
+    case datasift = 'datasift';
+
+    case freenet = 'freenet';
+
+    case prismatic = 'Prismatic';
+
+    case vbseo = 'vbseo';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3335,6 +3353,15 @@ enum Company: string implements CompanyInterface
             'miada' => self::miada,
             'remmerwilts', 'remmer-wilts', 'remmer wilts' => self::remmerWilts,
             'seikoepson', 'seiko-epson', 'seiko epson corporation', 'seiko epson' => self::seikoEpson,
+            'uptime' => self::uptime,
+            'sprious', 'sprious llc' => self::sprious,
+            'jaytech', 'jay-tech' => self::jayTech,
+            'linkdex', 'linkdex limited' => self::linkdex,
+            'tenbetterpages', '10betterpages gmbh', '10betterpages' => self::tenBetterPages,
+            'datasift' => self::datasift,
+            'freenet', 'freenet ag' => self::freenet,
+            'prismatic' => self::prismatic,
+            'vbseo' => self::vbseo,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3782,6 +3809,10 @@ enum Company: string implements CompanyInterface
             self::feedly => 'feedly, Inc.',
             self::seikoEpson => 'Seiko Epson Corporation',
             self::viberMedia => 'Viber Media S.à r.l.',
+            self::sprious => 'Sprious LLC',
+            self::linkdex => 'Linkdex Limited',
+            self::tenBetterPages => '10betterpages GmbH',
+            self::freenet => 'freenet AG',
             self::unknown => null,
             default => $this->value,
         };
@@ -4157,6 +4188,8 @@ enum Company: string implements CompanyInterface
             self::blackShark => 'black-shark',
             self::remmerWilts => 'remmer-wilts',
             self::seikoEpson => 'seiko-epson',
+            self::jayTech => 'jay-tech',
+            self::tenBetterPages => '10betterpages',
             default => $this->name,
         };
     }

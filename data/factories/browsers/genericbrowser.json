@@ -166,7 +166,7 @@
     "/slack-imgproxy/i": "slack-img-proxy",
     "/snap[ -]url[ -]preview(?: service)?/i": "snap url preview service",
     "/magpie-crawler/i": "magpie crawler",
-    "/uptimerobot/i": "uptimerobot",
+    "/uptime(?:ro)?bot/i": "uptimerobot",
     "/fdse robot/i": "fdse robot",
     "/gaisbot/i": "gais-bot",
     "/(?<![\\/\\(])robots|testcrawler/i": "testcrawler",

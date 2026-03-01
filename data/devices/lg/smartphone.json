@@ -3489,16 +3489,48 @@
   },
   "lg h410": {
     "deviceName": "H410",
-    "marketingName": "H410",
+    "marketingName": "Wine Smart",
     "manufacturer": "lg",
     "brand": "lg",
     "dualOrientation": true,
     "simCount": 1,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 480,
+      "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg d486": {
+    "deviceName": "D486",
+    "marketingName": "Wine Smart",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f480": {
+    "deviceName": "F480",
+    "marketingName": "Wine Smart",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"

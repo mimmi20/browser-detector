@@ -365,18 +365,6 @@
     },
     "engine": "unknown"
   },
-  "apache synapse": {
-    "name": "Apache Synapse",
-    "manufacturer": "apache",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Synapse"
-      ]
-    },
-    "engine": "unknown"
-  },
   "apercite": {
     "name": "Apercite",
     "manufacturer": "apercite",
@@ -1066,18 +1054,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ClarityDailyBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "cliqzbot": {
-    "name": "Cliqzbot",
-    "manufacturer": "10betterpages",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Cliqzbot"
       ]
     },
     "engine": "unknown"
@@ -2060,18 +2036,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "findlinks"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "flipboardproxy": {
-    "name": "FlipboardProxy",
-    "manufacturer": "flipboard",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "FlipboardProxy"
       ]
     },
     "engine": "unknown"
@@ -4282,16 +4246,6 @@
     },
     "engine": "unknown"
   },
-  "netcraft webserver survey": {
-    "name": "Netcraft Webserver Survey",
-    "manufacturer": "netcraft",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "netlyzer fastprobe": {
     "name": "NetLyzer FastProbe",
     "manufacturer": "unknown",
@@ -4372,18 +4326,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "newspaper": {
-    "name": "newspaper",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "newspaper"
-      ]
-    },
-    "engine": "unknown"
   },
   "newsrack": {
     "name": "NewsRack",
@@ -6681,18 +6623,6 @@
     },
     "engine": "unknown"
   },
-  "tweetmeme bot": {
-    "name": "Tweetmeme Bot",
-    "manufacturer": "datasift",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "TweetmemeBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "tweetminster bot": {
     "name": "Tweetminster Bot",
     "manufacturer": "tweet-minster",
@@ -7990,18 +7920,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "XmlSitemapGenerator"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "xovibot": {
-    "name": "XoviBot",
-    "manufacturer": "xovi",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "XoviBot"
       ]
     },
     "engine": "unknown"

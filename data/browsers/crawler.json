@@ -2345,5 +2345,65 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "cliqzbot": {
+    "name": "Cliqzbot",
+    "manufacturer": "10betterpages",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cliqzbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tweetmeme bot": {
+    "name": "Tweetmeme Bot",
+    "manufacturer": "datasift",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TweetmemeBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "xovibot": {
+    "name": "XoviBot",
+    "manufacturer": "xovi",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "XoviBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "apache synapse": {
+    "name": "Synapse",
+    "manufacturer": "apache",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Synapse"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "newspaper": {
+    "name": "Scraping Robot",
+    "manufacturer": "sprious",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "newspaper"
+      ]
+    },
+    "engine": "unknown"
   }
 }

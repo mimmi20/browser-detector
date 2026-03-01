@@ -70,6 +70,8 @@ final class Device implements DeviceInterface
             'lm-x525' => 'lg=lg lm-x525',
             'lg-k220' => 'lg=lg k220',
             'lg-h410' => 'lg=lg h410',
+            'lg-d486' => 'lg=lg d486',
+            'lg-f480' => 'lg=lg f480',
             'lm-q710.fgn' => 'lg=lg lm-q710.fgn',
             'lm-x320' => 'lg=lg lm-x320',
             'lg-k430' => 'lg=lg k430',
@@ -4808,6 +4810,8 @@ final class Device implements DeviceInterface
             'tommy' => 'wiko=wiko tommy',
             'tommy2' => 'wiko=wiko tommy 2',
             'tommy3' => 'wiko=wiko tommy 3',
+            'rainbow 4g' => 'wiko=wiko rainbow 4g',
+            'rainbow' => 'wiko=wiko rainbow',
             // razer
             'phone 2' => 'razer=razer phone 2',
             'razer edge 5g' => 'razer=razer edge 5g',
@@ -4838,6 +4842,7 @@ final class Device implements DeviceInterface
             '6027a' => 'alcatel=alcatel 6027a',
             '5059s' => 'alcatel=alcatel 5059s',
             'a466bg' => 'alcatel=alcatel a466bg',
+            '8082' => 'alcatel=alcatel 8082',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',
@@ -5640,6 +5645,7 @@ final class Device implements DeviceInterface
             'meizu m5c', 'mz-m5c', 'm5c' => 'meizu=meizu m5c',
             'meizu 16th', 'mz-16th', '16th' => 'meizu=meizu 16th',
             'meizu 16th plus', 'mz-16th plus', '16th plus' => 'meizu=meizu 16th plus',
+            'm6 note' => 'meizu=meizu m6 note',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
             'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',
@@ -6013,6 +6019,8 @@ final class Device implements DeviceInterface
             't676j' => 'tcl=tcl t676j',
             'a509dl' => 'tcl=tcl a509dl',
             '9132g' => 'tcl=tcl 9132g',
+            '5164d' => 'tcl=tcl 5164d',
+            '6102d' => 'tcl=tcl 6102d',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
