@@ -268,7 +268,7 @@ final class OsTest extends TestCase
                 'name' => 'CyanogenMod',
                 'marketingName' => 'CyanogenMod',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['CyanogenMod']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['CyanogenMod-', 'CyanogenMod']],
                 'key' => 'cyanogenmod',
             ],
             [

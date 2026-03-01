@@ -3404,6 +3404,8 @@ final class Device implements DeviceInterface
             'nokia 3215' => 'nokia=nokia 3215',
             'nokia c21 plus' => 'nokia=nokia c21 plus',
             'nokia x100' => 'nokia=nokia x100',
+            'nokia 1.4' => 'nokia=nokia 1.4',
+            'nokia 1.3' => 'nokia=nokia 1.3',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -3776,6 +3778,9 @@ final class Device implements DeviceInterface
             'xt1070' => 'motorola=motorola xt1070',
             'moto g stylus 5g' => 'motorola=motorola moto g stylus 5g',
             'moto g stylus (2021', 'moto g stylus (2021)' => 'motorola=motorola moto g stylus (2021)',
+            'xt2115' => 'motorola=motorola xt2115',
+            'xt2115-1' => 'motorola=motorola xt2115-1',
+            'moto g stylus (xt2115dl)', 'moto g stylus (xt2115dl' => 'motorola=motorola xt2115dl',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4999,7 +5004,6 @@ final class Device implements DeviceInterface
             'a85' => 'blackview=blackview a85',
             'bv5500pro' => 'blackview=blackview bv5500 pro',
             'a80s' => 'blackview=blackview a80s',
-            'a7 pro' => 'blackview=blackview a7 pro',
             'a90' => 'blackview=blackview a90',
             'bv5200 pro' => 'blackview=blackview bv5200 pro',
             'a55 pro' => 'blackview=blackview a55 pro',
@@ -5586,6 +5590,7 @@ final class Device implements DeviceInterface
             'mp18' => 'umi=umi mp18',
             'rp03' => 'umi=umi rp03',
             'power 3' => 'umi=umi power 3',
+            'a7 pro' => 'umi=umi a7 pro',
             // bq
             'aquaris x' => 'bq=bq aquaris x',
             'aquaris x5' => 'bq=bq aquaris x5',
@@ -6862,6 +6867,7 @@ final class Device implements DeviceInterface
             'm10_c01_eea' => 'pritom=pritom m10 c01 eea',
             'touch 7' => 'pritom=pritom touch 7',
             'm30_eea' => 'pritom=pritom m30_eea',
+            'm10_eea' => 'pritom=pritom m10_eea',
             // pixus
             'pixus_deon' => 'pixus=pixus deon',
             'pixus_line' => 'pixus=pixus line',

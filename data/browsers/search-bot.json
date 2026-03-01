@@ -465,7 +465,7 @@
   },
   "gigablast search engine": {
     "name": "Gigablast Search Engine",
-    "manufacturer": "gigablast.com",
+    "manufacturer": "gigablast",
     "type": "search-bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -861,6 +861,19 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "boardreader favicon fetcher": {
+    "name": "BoardReader Favicon Fetcher",
+    "manufacturer": "board-reader",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BoardReader Favicon Fetcher",
+        "BoardReader Favicon Fetcher "
+      ]
     },
     "engine": "unknown"
   }

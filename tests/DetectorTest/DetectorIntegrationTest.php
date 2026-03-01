@@ -7906,6 +7906,58 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'x-requested-with' => 'com.facebook.orca',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 13; SM-A525F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/406.0.0.13.115;]',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.facebook.orca',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 13; SM-A525F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/406.0.0.13.115;]',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-A525F',
+                        'marketingName' => 'Galaxy A52 4G',
+                        'manufacturer' => 'Samsung',
+                        'brand' => 'Samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2400,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.5,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Facebook Messenger App',
+                        'modus' => null,
+                        'version' => '406.0.0.13.115',
+                        'manufacturer' => 'Meta',
+                        'type' => 'mobile-application',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '112.0.5615.135',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

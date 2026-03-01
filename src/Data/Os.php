@@ -695,7 +695,7 @@ enum Os: string implements OsInterface
             self::bada => ['factory' => VersionBuilderFactory::class, 'search' => ['Bada']],
             self::brew => ['factory' => VersionBuilderFactory::class, 'search' => ['BREW; U;', 'BREW;?']],
             self::cos => ['factory' => VersionBuilderFactory::class, 'search' => ['COS like Android', 'Chinese Operating System', 'COS']],
-            self::cyanogenmod => ['factory' => VersionBuilderFactory::class, 'search' => ['CyanogenMod']],
+            self::cyanogenmod => ['factory' => VersionBuilderFactory::class, 'search' => ['CyanogenMod-', 'CyanogenMod']],
             self::fuchsia => ['factory' => VersionBuilderFactory::class, 'search' => ['Fuchsia']],
             self::darwin => ['factory' => VersionBuilderFactory::class, 'search' => ['Darwin']],
             self::dragonflybsd => ['factory' => VersionBuilderFactory::class, 'search' => ['DragonFly']],

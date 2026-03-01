@@ -6604,6 +6604,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Schober Information',
                 'key' => 'schober-information',
             ],
+            [
+                'type' => 'VeriSign',
+                'name' => 'VeriSign, Inc',
+                'brandname' => 'VeriSign',
+                'key' => 'verisign',
+            ],
+            [
+                'type' => 'Telefunken',
+                'name' => 'Telefunken',
+                'brandname' => 'Telefunken',
+                'key' => 'telefunken',
+            ],
+            [
+                'type' => 'Blitz',
+                'name' => 'Blitz, Inc.',
+                'brandname' => 'Blitz',
+                'key' => 'blitz',
+            ],
+            [
+                'type' => 'BoardReader',
+                'name' => 'BoardReader',
+                'brandname' => 'BoardReader',
+                'key' => 'board-reader',
+            ],
+            [
+                'type' => 'feedly',
+                'name' => 'feedly, Inc.',
+                'brandname' => 'feedly',
+                'key' => 'feedly',
+            ],
+            [
+                'type' => 'gigablast',
+                'name' => 'gigablast',
+                'brandname' => 'gigablast',
+                'key' => 'gigablast',
+            ],
         ];
     }
 

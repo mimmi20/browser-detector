@@ -2325,5 +2325,25 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "ips-agent": {
+    "name": "IPS Agent",
+    "manufacturer": "verisign",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "anthropic-ai": {
+    "name": "Anthropic AI",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

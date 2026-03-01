@@ -663,5 +663,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "cpp-httplib": {
+    "name": "cpp-httplib",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "cpp-httplib"
+      ]
+    },
+    "engine": "unknown"
   }
 }

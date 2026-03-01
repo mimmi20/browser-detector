@@ -4366,6 +4366,8 @@ final class DeviceTest extends TestCase
             ['Nokia 3215', 'nokia=nokia 3215'],
             ['Nokia C21 Plus', 'nokia=nokia c21 plus'],
             ['Nokia X100', 'nokia=nokia x100'],
+            ['Nokia 1.4', 'nokia=nokia 1.4'],
+            ['Nokia 1.3', 'nokia=nokia 1.3'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
@@ -4743,6 +4745,10 @@ final class DeviceTest extends TestCase
             ['Moto G Stylus 5G', 'motorola=motorola moto g stylus 5g'],
             ['moto g stylus (2021', 'motorola=motorola moto g stylus (2021)'],
             ['moto g stylus (2021)', 'motorola=motorola moto g stylus (2021)'],
+            ['XT2115', 'motorola=motorola xt2115'],
+            ['XT2115-1', 'motorola=motorola xt2115-1'],
+            ['moto g stylus (XT2115DL)', 'motorola=motorola xt2115dl'],
+            ['moto g stylus (XT2115DL', 'motorola=motorola xt2115dl'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -5518,7 +5524,6 @@ final class DeviceTest extends TestCase
             ['Power_5', 'ulefone=ulefone power 5'],
             ['Power 3S', 'ulefone=ulefone power 3s'],
             ['Power_3', 'ulefone=ulefone power 3'],
-            ['Power 3', 'umi=umi power 3'],
             ['Power Armor 18', 'ulefone=ulefone power armor 18'],
             ['Power Armor 16S', 'ulefone=ulefone power armor 16s'],
             ['RugKing', 'ulefone=ulefone rugking'],
@@ -6000,7 +6005,6 @@ final class DeviceTest extends TestCase
             ['A85', 'blackview=blackview a85'],
             ['BV5500Pro', 'blackview=blackview bv5500 pro'],
             ['A80S', 'blackview=blackview a80s'],
-            ['A7 Pro', 'blackview=blackview a7 pro'],
             ['A90', 'blackview=blackview a90'],
             ['BV5200 Pro', 'blackview=blackview bv5200 pro'],
             ['A55 Pro', 'blackview=blackview a55 pro'],
@@ -6590,6 +6594,7 @@ final class DeviceTest extends TestCase
             ['MP18', 'umi=umi mp18'],
             ['RP03', 'umi=umi rp03'],
             ['Power 3', 'umi=umi power 3'],
+            ['A7 Pro', 'umi=umi a7 pro'],
             // bq
             ['Aquaris X', 'bq=bq aquaris x'],
             ['Aquaris X5', 'bq=bq aquaris x5'],
@@ -8035,6 +8040,7 @@ final class DeviceTest extends TestCase
             ['M10_C01_EEA', 'pritom=pritom m10 c01 eea'],
             ['TOUCH 7', 'pritom=pritom touch 7'],
             ['M30_EEA', 'pritom=pritom m30_eea'],
+            ['M10_EEA', 'pritom=pritom m10_eea'],
             // pixus
             ['Pixus_Deon', 'pixus=pixus deon'],
             ['Pixus_Line', 'pixus=pixus line'],

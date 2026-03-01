@@ -1779,7 +1779,7 @@ final class SecChUaModelTest extends TestCase
             ['"A85"', true, 'blackview=blackview a85'],
             ['"BV5500Pro"', true, 'blackview=blackview bv5500 pro'],
             ['"A80S"', true, 'blackview=blackview a80s'],
-            ['"A7 Pro"', true, 'blackview=blackview a7 pro'],
+            ['"A7 Pro"', true, 'umi=umi a7 pro'],
             ['"A90"', true, 'blackview=blackview a90'],
             ['"BV5200 Pro"', true, 'blackview=blackview bv5200 pro'],
             ['"A55 Pro"', true, 'blackview=blackview a55 pro'],

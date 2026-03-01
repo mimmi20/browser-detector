@@ -2203,6 +2203,18 @@ enum Company: string implements CompanyInterface
 
     case schoberInformation = 'Schober Information';
 
+    case veriSign = 'VeriSign';
+
+    case telefunken = 'Telefunken';
+
+    case blitz = 'Blitz';
+
+    case boardReader = 'BoardReader';
+
+    case feedly = 'feedly';
+
+    case gigablast = 'gigablast';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3302,6 +3314,12 @@ enum Company: string implements CompanyInterface
             'finimize', 'finimize ltd.' => self::finimize,
             'proton', 'proton ag' => self::proton,
             'schoberinformation', 'schober-information', 'schober information group deutschland gmbh', 'schober information' => self::schoberInformation,
+            'verisign', 'verisign, inc' => self::veriSign,
+            'telefunken' => self::telefunken,
+            'blitz', 'blitz, inc.' => self::blitz,
+            'boardreader', 'board-reader' => self::boardReader,
+            'feedly', 'feedly, inc.' => self::feedly,
+            'gigablast' => self::gigablast,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3744,6 +3762,9 @@ enum Company: string implements CompanyInterface
             self::finimize => 'Finimize Ltd.',
             self::proton => 'Proton AG',
             self::schoberInformation => 'Schober Information Group Deutschland GmbH',
+            self::veriSign => 'VeriSign, Inc',
+            self::blitz => 'Blitz, Inc.',
+            self::feedly => 'feedly, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -4114,6 +4135,8 @@ enum Company: string implements CompanyInterface
             self::twoK => '2k',
             self::andreasRoene => 'andreas-roene',
             self::schoberInformation => 'schober-information',
+            self::veriSign => 'verisign',
+            self::boardReader => 'board-reader',
             default => $this->name,
         };
     }

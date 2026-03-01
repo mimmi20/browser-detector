@@ -762,19 +762,6 @@
     },
     "engine": "webkit"
   },
-  "boardreader favicon fetcher": {
-    "name": "BoardReader Favicon Fetcher",
-    "manufacturer": "board-reader",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "BoardReader Favicon Fetcher",
-        "BoardReader Favicon Fetcher "
-      ]
-    },
-    "engine": "unknown"
-  },
   "booglebot": {
     "name": "BoogleBot",
     "manufacturer": "unknown",
@@ -2021,7 +2008,7 @@
   },
   "feedly app": {
     "name": "feedly App",
-    "manufacturer": "feedly.com",
+    "manufacturer": "feedly",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
