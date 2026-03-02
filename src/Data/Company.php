@@ -2357,6 +2357,78 @@ enum Company: string implements CompanyInterface
 
     case vivax = 'Vivax';
 
+    case steveWaring = 'Steve Waring';
+
+    case axandra = 'Axandra';
+
+    case humax = 'Humax';
+
+    case become = 'Become';
+
+    case internetMemoryFoundation = 'Internet Memory Foundation';
+
+    case artel = 'Artel';
+
+    case vitelcom = 'Vitelcom';
+
+    case ltx71 = 'ltx71';
+
+    case netzcheck = 'netzcheck';
+
+    case videocon = 'Videocon';
+
+    case wiseGuys = 'wise-guys';
+
+    case aldi = 'Aldi';
+
+    case pivotalLabs = 'Pivotal Labs';
+
+    case zen = 'Zen';
+
+    case allenInstitute = 'Allen Institute';
+
+    case cyrus = 'Cyrus';
+
+    case lookSmart = 'LookSmart';
+
+    case netrange = 'Netrange';
+
+    case torque = 'Torque';
+
+    case carlrogers = 'carlrogers';
+
+    case entireweb = 'Entireweb';
+
+    case mojeek = 'Mojeek';
+
+    case ubermetricsTechnologies = 'Ubermetrics Technologies';
+
+    case experian = 'Experian';
+
+    case hyundai = 'Hyundai';
+
+    case ionos = 'IONOS';
+
+    case sansui = 'Sansui';
+
+    case audiovox = 'Audiovox';
+
+    case sfxEntertainment = 'SFX Entertainment';
+
+    case orangeSPV = 'Orange SPV';
+
+    case badaas = 'BaDaaS';
+
+    case htm = 'HTM';
+
+    case michaelSchoebel = 'Michael Schoebel';
+
+    case technisat = 'TechniSat';
+
+    case openVAS = 'OpenVAS';
+
+    case ericsson = 'Ericsson';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3533,6 +3605,42 @@ enum Company: string implements CompanyInterface
             'viewsonic' => self::viewsonic,
             'kiano' => self::kiano,
             'vivax' => self::vivax,
+            'stevewaring', 'steve-waring', 'steve waring' => self::steveWaring,
+            'axandra', 'axandra gmbh' => self::axandra,
+            'humax' => self::humax,
+            'become', 'become, inc.' => self::become,
+            'internetmemoryfoundation', 'internet-memory-foundation', 'internet memory foundation' => self::internetMemoryFoundation,
+            'artel' => self::artel,
+            'vitelcom' => self::vitelcom,
+            'ltx71' => self::ltx71,
+            'netzcheck' => self::netzcheck,
+            'videocon', 'videocon industries limited' => self::videocon,
+            'wiseguys', 'wise-guys' => self::wiseGuys,
+            'aldi', 'aldi-nord', 'aldi nord' => self::aldi,
+            'pivotallabs', 'pivotal-labs', 'pivotal labs' => self::pivotalLabs,
+            'zen', 'zen-mobile', 'zen mobile' => self::zen,
+            'alleninstitute', 'allen-institute', 'allen institute for artificial intelligence', 'allen institute' => self::allenInstitute,
+            'cyrus', 'cyrus technology gmbh' => self::cyrus,
+            'looksmart', 'look-smart' => self::lookSmart,
+            'netrange', 'net-range' => self::netrange,
+            'torque' => self::torque,
+            'carlrogers' => self::carlrogers,
+            'entireweb', 'entireweb sweden ab' => self::entireweb,
+            'mojeek', 'mojeek ltd.' => self::mojeek,
+            'ubermetricstechnologies', 'ubermetrics technologies gmbh', 'ubermetrics-technologies', 'ubermetrics technologies' => self::ubermetricsTechnologies,
+            'experian', 'experian ltd' => self::experian,
+            'hyundai' => self::hyundai,
+            'ionos', 'ionos se' => self::ionos,
+            'sansui' => self::sansui,
+            'audiovox' => self::audiovox,
+            'sfxentertainment', 'sfx-entertainment', 'sfx entertainment, inc.', 'sfx entertainment' => self::sfxEntertainment,
+            'orangespv', 'spv', 'orange spv' => self::orangeSPV,
+            'badaas', 'badaas srl' => self::badaas,
+            'htm' => self::htm,
+            'michaelschoebel', 'michael-schoebel', 'michael schoebel' => self::michaelSchoebel,
+            'technisat' => self::technisat,
+            'openvas', 'open-vas' => self::openVAS,
+            'ericsson' => self::ericsson,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3990,6 +4098,20 @@ enum Company: string implements CompanyInterface
             self::mls => 'MLS Multimedia SA',
             self::pipo => 'PiPO Technology',
             self::ee => 'EE Limited',
+            self::axandra => 'Axandra GmbH',
+            self::become => 'Become, Inc.',
+            self::videocon => 'Videocon Industries Limited',
+            self::aldi => 'Aldi Nord',
+            self::zen => 'Zen Mobile',
+            self::allenInstitute => 'Allen Institute for Artificial Intelligence',
+            self::cyrus => 'Cyrus Technology GmbH',
+            self::entireweb => 'Entireweb Sweden AB',
+            self::mojeek => 'Mojeek Ltd.',
+            self::ubermetricsTechnologies => 'Ubermetrics Technologies GmbH',
+            self::experian => 'Experian Ltd',
+            self::ionos => 'IONOS SE',
+            self::sfxEntertainment => 'SFX Entertainment, Inc.',
+            self::badaas => 'BaDaaS SRL',
             self::unknown => null,
             default => $this->value,
         };
@@ -4374,6 +4496,20 @@ enum Company: string implements CompanyInterface
             self::oPlus => 'o+',
             self::cherryMobile => 'cherry-mobile',
             self::chinaTablet => 'china-tablet',
+            self::steveWaring => 'steve-waring',
+            self::internetMemoryFoundation => 'internet-memory-foundation',
+            self::wiseGuys => 'wise-guys',
+            self::aldi => 'aldi-nord',
+            self::pivotalLabs => 'pivotal-labs',
+            self::zen => 'zen-mobile',
+            self::allenInstitute => 'allen-institute',
+            self::lookSmart => 'look-smart',
+            self::netrange => 'net-range',
+            self::ubermetricsTechnologies => 'ubermetrics-technologies',
+            self::sfxEntertainment => 'sfx-entertainment',
+            self::orangeSPV => 'spv',
+            self::michaelSchoebel => 'michael-schoebel',
+            self::openVAS => 'open-vas',
             default => $this->name,
         };
     }
