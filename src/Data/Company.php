@@ -2243,6 +2243,120 @@ enum Company: string implements CompanyInterface
 
     case vbseo = 'vbseo';
 
+    case qmobile = 'QMobile';
+
+    case iMobile = 'i-mobile';
+
+    case cube = 'Cube';
+
+    case thl = 'ThL';
+
+    case bush = 'Bush';
+
+    case threeQ = '3Q';
+
+    case advan = 'Advan';
+
+    case pointOfView = 'Point of View';
+
+    case xolo = 'XOLO';
+
+    case avvio = 'Avvio';
+
+    case mobistel = 'Mobistel';
+
+    case mpman = 'MPMan';
+
+    case celkon = 'Celkon';
+
+    case coby = 'Coby';
+
+    case ainol = 'Ainol';
+
+    case arnova = 'Arnova';
+
+    case verykool = 'verykool';
+
+    case kazam = 'KAZAM';
+
+    case iOnik = 'I-ONIK';
+
+    case iball = 'iBall';
+
+    case jiayu = 'Jiayu';
+
+    case mito = 'Mito';
+
+    case homtom = 'Homtom';
+
+    case oPlus = 'O+';
+
+    case ngm = 'NGM';
+
+    case sprd = 'sprd';
+
+    case mobiistar = 'Mobiistar';
+
+    case simvalley = 'Simvalley';
+
+    case touchlet = 'Touchlet';
+
+    case gigabyte = 'Gigabyte';
+
+    case explay = 'Explay';
+
+    case cherryMobile = 'Cherry Mobile';
+
+    case impression = 'Impression';
+
+    case hannspree = 'HANNspree';
+
+    case nomi = 'Nomi';
+
+    case polytron = 'Polytron';
+
+    case evercoss = 'Evercoss';
+
+    case manta = 'Manta';
+
+    case obi = 'Obi';
+
+    case phicomm = 'Phicomm';
+
+    case chinaTablet = 'China Tablet';
+
+    case evertek = 'Evertek';
+
+    case mls = 'MLS';
+
+    case onda = 'ONDA';
+
+    case ployer = 'Ployer';
+
+    case pipo = 'PiPO';
+
+    case storex = 'Storex';
+
+    case assistant = 'Assistant';
+
+    case azumi = 'Azumi';
+
+    case alba = 'Alba';
+
+    case lexibook = 'Lexibook';
+
+    case airis = 'Airis';
+
+    case ee = 'EE';
+
+    case noa = 'Noa';
+
+    case viewsonic = 'ViewSonic';
+
+    case kiano = 'Kiano';
+
+    case vivax = 'Vivax';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3362,6 +3476,63 @@ enum Company: string implements CompanyInterface
             'freenet', 'freenet ag' => self::freenet,
             'prismatic' => self::prismatic,
             'vbseo' => self::vbseo,
+            'qmobile' => self::qmobile,
+            'imobile', 'i-mobile' => self::iMobile,
+            'cube' => self::cube,
+            'thl' => self::thl,
+            'bush' => self::bush,
+            'threeq', '3q' => self::threeQ,
+            'advan', 'advan digital' => self::advan,
+            'pointofview', 'point-of-view', 'point of view' => self::pointOfView,
+            'xolo' => self::xolo,
+            'avvio' => self::avvio,
+            'mobistel' => self::mobistel,
+            'mpman' => self::mpman,
+            'celkon' => self::celkon,
+            'coby' => self::coby,
+            'ainol' => self::ainol,
+            'arnova' => self::arnova,
+            'verykool' => self::verykool,
+            'kazam' => self::kazam,
+            'ionik', 'i-onik' => self::iOnik,
+            'iball' => self::iball,
+            'jiayu' => self::jiayu,
+            'mito' => self::mito,
+            'homtom' => self::homtom,
+            'oplus', 'o+' => self::oPlus,
+            'ngm' => self::ngm,
+            'sprd' => self::sprd,
+            'mobiistar' => self::mobiistar,
+            'simvalley' => self::simvalley,
+            'touchlet' => self::touchlet,
+            'gigabyte' => self::gigabyte,
+            'explay' => self::explay,
+            'cherrymobile', 'cherry-mobile', 'cosmic technologies, inc', 'cherry mobile' => self::cherryMobile,
+            'impression' => self::impression,
+            'hannspree' => self::hannspree,
+            'nomi' => self::nomi,
+            'polytron' => self::polytron,
+            'evercoss' => self::evercoss,
+            'manta' => self::manta,
+            'obi', 'obi worldphone' => self::obi,
+            'phicomm' => self::phicomm,
+            'chinatablet', 'china-tablet', 'china tablet' => self::chinaTablet,
+            'evertek' => self::evertek,
+            'mls', 'mls multimedia sa' => self::mls,
+            'onda' => self::onda,
+            'ployer' => self::ployer,
+            'pipo', 'pipo technology' => self::pipo,
+            'storex' => self::storex,
+            'assistant' => self::assistant,
+            'azumi' => self::azumi,
+            'alba' => self::alba,
+            'lexibook' => self::lexibook,
+            'airis' => self::airis,
+            'ee', 'ee limited' => self::ee,
+            'noa' => self::noa,
+            'viewsonic' => self::viewsonic,
+            'kiano' => self::kiano,
+            'vivax' => self::vivax,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3813,6 +3984,12 @@ enum Company: string implements CompanyInterface
             self::linkdex => 'Linkdex Limited',
             self::tenBetterPages => '10betterpages GmbH',
             self::freenet => 'freenet AG',
+            self::advan => 'Advan Digital',
+            self::cherryMobile => 'Cosmic Technologies, Inc',
+            self::obi => 'Obi Worldphone',
+            self::mls => 'MLS Multimedia SA',
+            self::pipo => 'PiPO Technology',
+            self::ee => 'EE Limited',
             self::unknown => null,
             default => $this->value,
         };
@@ -4190,6 +4367,13 @@ enum Company: string implements CompanyInterface
             self::seikoEpson => 'seiko-epson',
             self::jayTech => 'jay-tech',
             self::tenBetterPages => '10betterpages',
+            self::iMobile => 'i-mobile',
+            self::threeQ => '3q',
+            self::pointOfView => 'point-of-view',
+            self::iOnik => 'i-onik',
+            self::oPlus => 'o+',
+            self::cherryMobile => 'cherry-mobile',
+            self::chinaTablet => 'china-tablet',
             default => $this->name,
         };
     }
