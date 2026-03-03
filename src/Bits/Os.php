@@ -35,7 +35,7 @@ final class Os implements BitsInterface
             return 16;
         }
 
-        // old deprecated 8 bit systems
+        // old deprecated 8-bit systems
         if (preg_match('/cp\/m|8-bit/i', $useragent)) {
             return 8;
         }

@@ -393,6 +393,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.heytap.browser' => 'heytapbrowser',
             'ai.perplexity.comet' => 'comet',
             'com.tencent.mtt' => 'qqbrowser',
+            'company.thebrowser.arc' => 'arc-search',
             default => null,
         };
     }

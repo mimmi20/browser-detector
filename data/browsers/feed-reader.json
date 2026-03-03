@@ -190,7 +190,7 @@
   },
   "feedly feed fetcher": {
     "name": "feedly Feed Fetcher",
-    "manufacturer": "feedly.com",
+    "manufacturer": "feedly",
     "type": "feed-reader",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -201,7 +201,7 @@
     "engine": "unknown"
   },
   "everyfeed": {
-    "name": "everyfeed",
+    "name": "Everyfeed",
     "manufacturer": "unknown",
     "type": "feed-reader",
     "version": {
@@ -344,6 +344,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WireReaderBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "flipboardproxy": {
+    "name": "FlipboardProxy",
+    "manufacturer": "flipboard",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FlipboardProxy"
       ]
     },
     "engine": "unknown"

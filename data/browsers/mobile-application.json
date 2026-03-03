@@ -2370,7 +2370,7 @@
   },
   "viber": {
     "name": "Viber",
-    "manufacturer": "rakuten",
+    "manufacturer": "viber-media",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -2447,6 +2447,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Twitter for iPhone",
+        "TwitterAndroid",
         "Twitter"
       ]
     },
@@ -4735,6 +4736,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WeRead"
+      ]
+    },
+    "engine": null
+  },
+  "viber-downloader": {
+    "name": "ViberDownloader",
+    "manufacturer": "viber-media",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ViberDownloader"
+      ]
+    },
+    "engine": null
+  },
+  "ding-talk": {
+    "name": "DingTalk",
+    "manufacturer": "alibaba",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DingTalk"
       ]
     },
     "engine": null

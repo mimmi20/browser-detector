@@ -568,6 +568,7 @@ final class XRequestedWithTest extends TestCase
             ['com.heytap.browser', true, 'heytapbrowser', true, null, false, Os::unknown],
             ['ai.perplexity.comet', true, 'comet', true, null, false, Os::unknown],
             ['com.tencent.mtt', true, 'qqbrowser', true, null, false, Os::unknown],
+            ['company.thebrowser.arc', true, 'arc-search', true, null, false, Os::unknown],
         ];
     }
 }

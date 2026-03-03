@@ -6,7 +6,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "TK701",
+      "deviceName": "TK701_EEA",
       "marketingName": "Touch",
       "manufacturer": "AEEZO",
       "brand": "AEEZO",
@@ -42,6 +42,52 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.5249.126",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; TK806_EEA Build/RP1A.201005.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.131 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TK806_EEA",
+      "marketingName": "TK806",
+      "manufacturer": "AEEZO",
+      "brand": "AEEZO",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.131",
       "manufacturer": "Google"
     }
   }

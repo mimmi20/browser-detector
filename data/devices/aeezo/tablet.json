@@ -1,6 +1,6 @@
 {
-  "aeezo tk701": {
-    "deviceName": "TK701",
+  "aeezo tk701_eea": {
+    "deviceName": "TK701_EEA",
     "marketingName": "Touch",
     "manufacturer": "aeezo",
     "brand": "aeezo",
@@ -11,6 +11,22 @@
       "height": 1080,
       "touch": true,
       "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "aeezo tk806_eea": {
+    "deviceName": "TK806_EEA",
+    "marketingName": "TK806",
+    "manufacturer": "aeezo",
+    "brand": "aeezo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"

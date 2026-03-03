@@ -191,22 +191,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "xiaomi m2004j7ac": {
-    "deviceName": "M2004J7AC",
-    "marketingName": "Redmi 10X 5G",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.6
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "xiaomi m2004j7bc": {
     "deviceName": "M2004J7BC",
     "marketingName": "Redmi 10X Pro 5G",
@@ -226,22 +210,6 @@
   "xiaomi redmi k30": {
     "deviceName": "Redmi K30",
     "marketingName": "Redmi K30",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.67
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi redmi k30 5g": {
-    "deviceName": "Redmi K30 5G",
-    "marketingName": "Redmi K30 5G",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -2875,6 +2843,54 @@
       "height": 1220,
       "touch": true,
       "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2510dra23e": {
+    "deviceName": "2510DRA23E",
+    "marketingName": "Redmi Note 15 4G (Europe)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2392,
+      "height": 1080,
+      "touch": true,
+      "size": 6.77
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2510dra23g": {
+    "deviceName": "2510DRA23G",
+    "marketingName": "Redmi Note 15 4G (Global)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2392,
+      "height": 1080,
+      "touch": true,
+      "size": 6.77
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2510dra23l": {
+    "deviceName": "2510DRA23L",
+    "marketingName": "Redmi Note 15 4G (Latin America)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2392,
+      "height": 1080,
+      "touch": true,
+      "size": 6.77
     },
     "type": "phablet",
     "platform": "android"

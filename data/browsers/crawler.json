@@ -365,7 +365,7 @@
     "engine": "unknown"
   },
   "yahoo link preview": {
-    "name": "Yahoo Link Preview",
+    "name": "Yahoo! Link Preview",
     "manufacturer": "yahoo",
     "type": "crawler",
     "version": {
@@ -2288,6 +2288,132 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Twingly Recon"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "antbot": {
+    "name": "AntBot",
+    "manufacturer": "ant.com",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AntBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netpeak-checker-bot": {
+    "name": "NetpeakCheckerBot",
+    "manufacturer": "netpeak",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetpeakCheckerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "spawning-ai": {
+    "name": "Spawning AI",
+    "manufacturer": "spawning",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "ips-agent": {
+    "name": "IPS Agent",
+    "manufacturer": "verisign",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "anthropic-ai": {
+    "name": "Anthropic AI",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "cliqzbot": {
+    "name": "Cliqzbot",
+    "manufacturer": "10betterpages",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cliqzbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tweetmeme bot": {
+    "name": "Tweetmeme Bot",
+    "manufacturer": "datasift",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TweetmemeBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "xovibot": {
+    "name": "XoviBot",
+    "manufacturer": "xovi",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "XoviBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "apache synapse": {
+    "name": "Synapse",
+    "manufacturer": "apache",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Synapse"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "newspaper": {
+    "name": "Scraping Robot",
+    "manufacturer": "sprious",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "newspaper"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-favicon": {
+    "name": "Google Favicon",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google Favicon"
       ]
     },
     "engine": "unknown"

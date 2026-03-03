@@ -2133,17 +2133,301 @@ enum Company: string implements CompanyInterface
 
     case denver = 'Denver';
 
-    case smartbook = 'smartbook';
+    case smartbook = 'SmartBook';
 
     case tPLink = 'TP-Link';
 
-    case yu = 'YU';
+    case yu = 'Yu';
 
     case digitalLifeInternational = 'Digital Life International';
 
     case twingly = 'Twingly';
 
     case webpros = 'WebPros';
+
+    case checkHost = 'CheckHost';
+
+    case dynatrace = 'Dynatrace';
+
+    case byterg = 'Byterg';
+
+    case antCom = 'Ant.com';
+
+    case bundleman = 'Bundleman';
+
+    case reqwireless = 'Reqwireless';
+
+    case seranking = 'Seranking';
+
+    case torus = 'Torus';
+
+    case beista = 'Beista';
+
+    case aRival = 'A-Rival';
+
+    case elongMobile = 'Elong Mobile';
+
+    case changhong = 'Changhong';
+
+    case aoyodkg = 'Aoyodkg';
+
+    case doov = 'Doov';
+
+    case vernee = 'Vernee';
+
+    case coinCircle = 'CoinCircle';
+
+    case netEstate = 'netEstate';
+
+    case riddler = 'riddler';
+
+    case tolino = 'Tolino';
+
+    case piCommunity = 'Pi Community';
+
+    case netpeak = 'Netpeak';
+
+    case spawning = 'Spawning';
+
+    case unity = 'Unity';
+
+    case xoro = 'Xoro';
+
+    case twoK = '2K';
+
+    case andreasRoene = 'Andreas Röne';
+
+    case finimize = 'Finimize';
+
+    case proton = 'Proton';
+
+    case schoberInformation = 'Schober Information';
+
+    case veriSign = 'VeriSign';
+
+    case telefunken = 'Telefunken';
+
+    case blitz = 'Blitz';
+
+    case boardReader = 'BoardReader';
+
+    case feedly = 'feedly';
+
+    case gigablast = 'gigablast';
+
+    case blackShark = 'Black Shark';
+
+    case domcop = 'DomCop';
+
+    case miada = 'MIADA';
+
+    case remmerWilts = 'Remmer Wilts';
+
+    case seikoEpson = 'Seiko Epson';
+
+    case uptime = 'Uptime';
+
+    case sprious = 'Sprious';
+
+    case jayTech = 'JAY-Tech';
+
+    case linkdex = 'Linkdex';
+
+    case tenBetterPages = '10betterpages';
+
+    case datasift = 'datasift';
+
+    case freenet = 'freenet';
+
+    case prismatic = 'Prismatic';
+
+    case vbseo = 'vbseo';
+
+    case qmobile = 'QMobile';
+
+    case iMobile = 'i-mobile';
+
+    case cube = 'Cube';
+
+    case thl = 'ThL';
+
+    case bush = 'Bush';
+
+    case threeQ = '3Q';
+
+    case advan = 'Advan';
+
+    case pointOfView = 'Point of View';
+
+    case xolo = 'XOLO';
+
+    case avvio = 'Avvio';
+
+    case mobistel = 'Mobistel';
+
+    case mpman = 'MPMan';
+
+    case celkon = 'Celkon';
+
+    case coby = 'Coby';
+
+    case ainol = 'Ainol';
+
+    case arnova = 'Arnova';
+
+    case verykool = 'verykool';
+
+    case kazam = 'KAZAM';
+
+    case iOnik = 'I-ONIK';
+
+    case iball = 'iBall';
+
+    case jiayu = 'Jiayu';
+
+    case mito = 'Mito';
+
+    case homtom = 'Homtom';
+
+    case oPlus = 'O+';
+
+    case ngm = 'NGM';
+
+    case sprd = 'sprd';
+
+    case mobiistar = 'Mobiistar';
+
+    case simvalley = 'Simvalley';
+
+    case touchlet = 'Touchlet';
+
+    case gigabyte = 'Gigabyte';
+
+    case explay = 'Explay';
+
+    case cherryMobile = 'Cherry Mobile';
+
+    case impression = 'Impression';
+
+    case hannspree = 'HANNspree';
+
+    case nomi = 'Nomi';
+
+    case polytron = 'Polytron';
+
+    case evercoss = 'Evercoss';
+
+    case manta = 'Manta';
+
+    case obi = 'Obi';
+
+    case phicomm = 'Phicomm';
+
+    case chinaTablet = 'China Tablet';
+
+    case evertek = 'Evertek';
+
+    case mls = 'MLS';
+
+    case onda = 'ONDA';
+
+    case ployer = 'Ployer';
+
+    case pipo = 'PiPO';
+
+    case storex = 'Storex';
+
+    case assistant = 'Assistant';
+
+    case azumi = 'Azumi';
+
+    case alba = 'Alba';
+
+    case lexibook = 'Lexibook';
+
+    case airis = 'Airis';
+
+    case ee = 'EE';
+
+    case noa = 'Noa';
+
+    case viewsonic = 'ViewSonic';
+
+    case kiano = 'Kiano';
+
+    case vivax = 'Vivax';
+
+    case steveWaring = 'Steve Waring';
+
+    case axandra = 'Axandra';
+
+    case humax = 'Humax';
+
+    case become = 'Become';
+
+    case internetMemoryFoundation = 'Internet Memory Foundation';
+
+    case artel = 'Artel';
+
+    case vitelcom = 'Vitelcom';
+
+    case ltx71 = 'ltx71';
+
+    case netzcheck = 'netzcheck';
+
+    case videocon = 'Videocon';
+
+    case wiseGuys = 'wise-guys';
+
+    case aldi = 'Aldi';
+
+    case pivotalLabs = 'Pivotal Labs';
+
+    case zen = 'Zen';
+
+    case allenInstitute = 'Allen Institute';
+
+    case cyrus = 'Cyrus';
+
+    case lookSmart = 'LookSmart';
+
+    case netrange = 'Netrange';
+
+    case torque = 'Torque';
+
+    case carlrogers = 'carlrogers';
+
+    case entireweb = 'Entireweb';
+
+    case mojeek = 'Mojeek';
+
+    case ubermetricsTechnologies = 'Ubermetrics Technologies';
+
+    case experian = 'Experian';
+
+    case hyundai = 'Hyundai';
+
+    case ionos = 'IONOS';
+
+    case sansui = 'Sansui';
+
+    case audiovox = 'Audiovox';
+
+    case sfxEntertainment = 'SFX Entertainment';
+
+    case orangeSPV = 'Orange SPV';
+
+    case badaas = 'BaDaaS';
+
+    case htm = 'HTM';
+
+    case michaelSchoebel = 'Michael Schoebel';
+
+    case technisat = 'TechniSat';
+
+    case openVAS = 'OpenVAS';
+
+    case ericsson = 'Ericsson';
 
     /**
      * @throws UnexpectedValueException
@@ -2688,7 +2972,7 @@ enum Company: string implements CompanyInterface
             'moonshotai', 'moonshot-ai', 'moonshot ai' => self::moonshotAI,
             'deepseekai', 'deepseek ai', 'deepseek-ai', 'hangzhou deepseek artificial intelligence basic technology research co., ltd.' => self::deepseekAI,
             'keplr', 'team keplr', 'team-keplr' => self::keplr,
-            'vibermedia', 'viber media', 'viber-media' => self::viberMedia,
+            'vibermedia', 'viber media', 'viber-media', 'viber media s.à r.l.' => self::viberMedia,
             'canopy' => self::canopy,
             'genspark' => self::genspark,
             'pia', 'pia private internet access, inc' => self::pia,
@@ -3215,6 +3499,148 @@ enum Company: string implements CompanyInterface
             'digitallifeinternational', 'digital-life-international', 'digital life international' => self::digitalLifeInternational,
             'twingly', 'twingly ab' => self::twingly,
             'webpros', 'webpros holdco b.v.' => self::webpros,
+            'checkhost', 'check-host' => self::checkHost,
+            'dynatrace', 'dynatrace llc' => self::dynatrace,
+            'byterg' => self::byterg,
+            'antcom', 'ant.com ltd', 'ant.com' => self::antCom,
+            'bundleman', 'bundleman ltd' => self::bundleman,
+            'reqwireless' => self::reqwireless,
+            'seranking', 'seranking ltd' => self::seranking,
+            'torus', 'torus company' => self::torus,
+            'beista' => self::beista,
+            'arival', 'a-rival' => self::aRival,
+            'elongmobile', 'elong-mobile', 'elong mobile' => self::elongMobile,
+            'changhong', 'sichuan changhong electric co., ltd.' => self::changhong,
+            'aoyodkg' => self::aoyodkg,
+            'doov' => self::doov,
+            'vernee' => self::vernee,
+            'coincircle', 'coin-circle', 'coincircle, inc.' => self::coinCircle,
+            'netestate', 'net-estate', 'netestate gmbh' => self::netEstate,
+            'riddler' => self::riddler,
+            'tolino' => self::tolino,
+            'picommunity', 'pi community company', 'pi community' => self::piCommunity,
+            'netpeak', 'netpeak ltd' => self::netpeak,
+            'spawning', 'spawning, inc.' => self::spawning,
+            'unity', 'unity-technologies', 'unity technologies' => self::unity,
+            'xoro' => self::xoro,
+            'twok', '2k, inc.', '2k' => self::twoK,
+            'andreasroene', 'andreas-roene', 'andreas röne' => self::andreasRoene,
+            'finimize', 'finimize ltd.' => self::finimize,
+            'proton', 'proton ag' => self::proton,
+            'schoberinformation', 'schober-information', 'schober information group deutschland gmbh', 'schober information' => self::schoberInformation,
+            'verisign', 'verisign, inc' => self::veriSign,
+            'telefunken' => self::telefunken,
+            'blitz', 'blitz, inc.' => self::blitz,
+            'boardreader', 'board-reader' => self::boardReader,
+            'feedly', 'feedly, inc.' => self::feedly,
+            'gigablast' => self::gigablast,
+            'blackshark', 'black-shark', 'black shark' => self::blackShark,
+            'domcop' => self::domcop,
+            'miada' => self::miada,
+            'remmerwilts', 'remmer-wilts', 'remmer wilts' => self::remmerWilts,
+            'seikoepson', 'seiko-epson', 'seiko epson corporation', 'seiko epson' => self::seikoEpson,
+            'uptime' => self::uptime,
+            'sprious', 'sprious llc' => self::sprious,
+            'jaytech', 'jay-tech' => self::jayTech,
+            'linkdex', 'linkdex limited' => self::linkdex,
+            'tenbetterpages', '10betterpages gmbh', '10betterpages' => self::tenBetterPages,
+            'datasift' => self::datasift,
+            'freenet', 'freenet ag' => self::freenet,
+            'prismatic' => self::prismatic,
+            'vbseo' => self::vbseo,
+            'qmobile' => self::qmobile,
+            'imobile', 'i-mobile' => self::iMobile,
+            'cube' => self::cube,
+            'thl' => self::thl,
+            'bush' => self::bush,
+            'threeq', '3q' => self::threeQ,
+            'advan', 'advan digital' => self::advan,
+            'pointofview', 'point-of-view', 'point of view' => self::pointOfView,
+            'xolo' => self::xolo,
+            'avvio' => self::avvio,
+            'mobistel' => self::mobistel,
+            'mpman' => self::mpman,
+            'celkon' => self::celkon,
+            'coby' => self::coby,
+            'ainol' => self::ainol,
+            'arnova' => self::arnova,
+            'verykool' => self::verykool,
+            'kazam' => self::kazam,
+            'ionik', 'i-onik' => self::iOnik,
+            'iball' => self::iball,
+            'jiayu' => self::jiayu,
+            'mito' => self::mito,
+            'homtom' => self::homtom,
+            'oplus', 'o+' => self::oPlus,
+            'ngm' => self::ngm,
+            'sprd' => self::sprd,
+            'mobiistar' => self::mobiistar,
+            'simvalley' => self::simvalley,
+            'touchlet' => self::touchlet,
+            'gigabyte' => self::gigabyte,
+            'explay' => self::explay,
+            'cherrymobile', 'cherry-mobile', 'cosmic technologies, inc', 'cherry mobile' => self::cherryMobile,
+            'impression' => self::impression,
+            'hannspree' => self::hannspree,
+            'nomi' => self::nomi,
+            'polytron' => self::polytron,
+            'evercoss' => self::evercoss,
+            'manta' => self::manta,
+            'obi', 'obi worldphone' => self::obi,
+            'phicomm' => self::phicomm,
+            'chinatablet', 'china-tablet', 'china tablet' => self::chinaTablet,
+            'evertek' => self::evertek,
+            'mls', 'mls multimedia sa' => self::mls,
+            'onda' => self::onda,
+            'ployer' => self::ployer,
+            'pipo', 'pipo technology' => self::pipo,
+            'storex' => self::storex,
+            'assistant' => self::assistant,
+            'azumi' => self::azumi,
+            'alba' => self::alba,
+            'lexibook' => self::lexibook,
+            'airis' => self::airis,
+            'ee', 'ee limited' => self::ee,
+            'noa' => self::noa,
+            'viewsonic' => self::viewsonic,
+            'kiano' => self::kiano,
+            'vivax' => self::vivax,
+            'stevewaring', 'steve-waring', 'steve waring' => self::steveWaring,
+            'axandra', 'axandra gmbh' => self::axandra,
+            'humax' => self::humax,
+            'become', 'become, inc.' => self::become,
+            'internetmemoryfoundation', 'internet-memory-foundation', 'internet memory foundation' => self::internetMemoryFoundation,
+            'artel' => self::artel,
+            'vitelcom' => self::vitelcom,
+            'ltx71' => self::ltx71,
+            'netzcheck' => self::netzcheck,
+            'videocon', 'videocon industries limited' => self::videocon,
+            'wiseguys', 'wise-guys' => self::wiseGuys,
+            'aldi', 'aldi-nord', 'aldi nord' => self::aldi,
+            'pivotallabs', 'pivotal-labs', 'pivotal labs' => self::pivotalLabs,
+            'zen', 'zen-mobile', 'zen mobile' => self::zen,
+            'alleninstitute', 'allen-institute', 'allen institute for artificial intelligence', 'allen institute' => self::allenInstitute,
+            'cyrus', 'cyrus technology gmbh' => self::cyrus,
+            'looksmart', 'look-smart' => self::lookSmart,
+            'netrange', 'net-range' => self::netrange,
+            'torque' => self::torque,
+            'carlrogers' => self::carlrogers,
+            'entireweb', 'entireweb sweden ab' => self::entireweb,
+            'mojeek', 'mojeek ltd.' => self::mojeek,
+            'ubermetricstechnologies', 'ubermetrics technologies gmbh', 'ubermetrics-technologies', 'ubermetrics technologies' => self::ubermetricsTechnologies,
+            'experian', 'experian ltd' => self::experian,
+            'hyundai' => self::hyundai,
+            'ionos', 'ionos se' => self::ionos,
+            'sansui' => self::sansui,
+            'audiovox' => self::audiovox,
+            'sfxentertainment', 'sfx-entertainment', 'sfx entertainment, inc.', 'sfx entertainment' => self::sfxEntertainment,
+            'orangespv', 'spv', 'orange spv' => self::orangeSPV,
+            'badaas', 'badaas srl' => self::badaas,
+            'htm' => self::htm,
+            'michaelschoebel', 'michael-schoebel', 'michael schoebel' => self::michaelSchoebel,
+            'technisat' => self::technisat,
+            'openvas', 'open-vas' => self::openVAS,
+            'ericsson' => self::ericsson,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3641,6 +4067,51 @@ enum Company: string implements CompanyInterface
             self::yu => 'YU Televentures',
             self::twingly => 'Twingly AB',
             self::webpros => 'WebPros HoldCo B.V.',
+            self::dynatrace => 'Dynatrace LLC',
+            self::antCom => 'Ant.com Ltd',
+            self::bundleman => 'Bundleman Ltd',
+            self::seranking => 'Seranking LTD',
+            self::torus => 'Torus Company',
+            self::changhong => 'Sichuan Changhong Electric Co., Ltd.',
+            self::coinCircle => 'CoinCircle, Inc.',
+            self::netEstate => 'netEstate GmbH',
+            self::piCommunity => 'Pi Community Company',
+            self::netpeak => 'Netpeak LTD',
+            self::spawning => 'Spawning, Inc.',
+            self::unity => 'Unity Technologies',
+            self::twoK => '2K, Inc.',
+            self::finimize => 'Finimize Ltd.',
+            self::proton => 'Proton AG',
+            self::schoberInformation => 'Schober Information Group Deutschland GmbH',
+            self::veriSign => 'VeriSign, Inc',
+            self::blitz => 'Blitz, Inc.',
+            self::feedly => 'feedly, Inc.',
+            self::seikoEpson => 'Seiko Epson Corporation',
+            self::viberMedia => 'Viber Media S.à r.l.',
+            self::sprious => 'Sprious LLC',
+            self::linkdex => 'Linkdex Limited',
+            self::tenBetterPages => '10betterpages GmbH',
+            self::freenet => 'freenet AG',
+            self::advan => 'Advan Digital',
+            self::cherryMobile => 'Cosmic Technologies, Inc',
+            self::obi => 'Obi Worldphone',
+            self::mls => 'MLS Multimedia SA',
+            self::pipo => 'PiPO Technology',
+            self::ee => 'EE Limited',
+            self::axandra => 'Axandra GmbH',
+            self::become => 'Become, Inc.',
+            self::videocon => 'Videocon Industries Limited',
+            self::aldi => 'Aldi Nord',
+            self::zen => 'Zen Mobile',
+            self::allenInstitute => 'Allen Institute for Artificial Intelligence',
+            self::cyrus => 'Cyrus Technology GmbH',
+            self::entireweb => 'Entireweb Sweden AB',
+            self::mojeek => 'Mojeek Ltd.',
+            self::ubermetricsTechnologies => 'Ubermetrics Technologies GmbH',
+            self::experian => 'Experian Ltd',
+            self::ionos => 'IONOS SE',
+            self::sfxEntertainment => 'SFX Entertainment, Inc.',
+            self::badaas => 'BaDaaS SRL',
             self::unknown => null,
             default => $this->value,
         };
@@ -4000,6 +4471,45 @@ enum Company: string implements CompanyInterface
             self::castleGlobal => 'castle-global',
             self::tPLink => 'tp-link',
             self::digitalLifeInternational => 'digital-life-international',
+            self::checkHost => 'check-host',
+            self::antCom => 'ant.com',
+            self::aRival => 'a-rival',
+            self::elongMobile => 'elong-mobile',
+            self::coinCircle => 'coin-circle',
+            self::netEstate => 'net-estate',
+            self::piCommunity => 'pi community',
+            self::unity => 'unity-technologies',
+            self::twoK => '2k',
+            self::andreasRoene => 'andreas-roene',
+            self::schoberInformation => 'schober-information',
+            self::veriSign => 'verisign',
+            self::boardReader => 'board-reader',
+            self::blackShark => 'black-shark',
+            self::remmerWilts => 'remmer-wilts',
+            self::seikoEpson => 'seiko-epson',
+            self::jayTech => 'jay-tech',
+            self::tenBetterPages => '10betterpages',
+            self::iMobile => 'i-mobile',
+            self::threeQ => '3q',
+            self::pointOfView => 'point-of-view',
+            self::iOnik => 'i-onik',
+            self::oPlus => 'o+',
+            self::cherryMobile => 'cherry-mobile',
+            self::chinaTablet => 'china-tablet',
+            self::steveWaring => 'steve-waring',
+            self::internetMemoryFoundation => 'internet-memory-foundation',
+            self::wiseGuys => 'wise-guys',
+            self::aldi => 'aldi-nord',
+            self::pivotalLabs => 'pivotal-labs',
+            self::zen => 'zen-mobile',
+            self::allenInstitute => 'allen-institute',
+            self::lookSmart => 'look-smart',
+            self::netrange => 'net-range',
+            self::ubermetricsTechnologies => 'ubermetrics-technologies',
+            self::sfxEntertainment => 'sfx-entertainment',
+            self::orangeSPV => 'spv',
+            self::michaelSchoebel => 'michael-schoebel',
+            self::openVAS => 'open-vas',
             default => $this->name,
         };
     }

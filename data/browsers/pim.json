@@ -137,7 +137,7 @@
   },
   "freenet-mail": {
     "name": "freenet Mail",
-    "manufacturer": "freenet.de",
+    "manufacturer": "freenet",
     "type": "pim",
     "version": {
       "factory": null,
@@ -211,6 +211,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BlueMail"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yahoo-japan-mail": {
+    "name": "Yahoo! Mail",
+    "manufacturer": "yahoo-japan",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.ymail"
       ]
     },
     "engine": "unknown"

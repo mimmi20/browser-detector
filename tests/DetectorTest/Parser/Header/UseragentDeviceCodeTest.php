@@ -75,6 +75,7 @@ final class UseragentDeviceCodeTest extends TestCase
             ['WhatsApp/2.2587.9 A', 'unknown=general mobile phone'],
             ['WhatsApp/2.2587.9 W', 'unknown=windows desktop'],
             ['WhatsApp/2.2587.9 i', 'apple=general apple device'],
+            ['WhatsApp/2.2587.9 N', 'apple=macintosh'],
         ];
     }
 }

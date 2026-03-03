@@ -126,7 +126,7 @@
     "client": {
       "name": "Facebook Messenger App",
       "modus": null,
-      "version": null,
+      "version": "546.0.0.35.70",
       "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
@@ -220,7 +220,7 @@
     "client": {
       "name": "Facebook Messenger App",
       "modus": null,
-      "version": null,
+      "version": "547.0.0.44.68",
       "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
@@ -230,6 +230,96 @@
       "name": "Blink",
       "version": "144.0.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S911N Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36 Barcelona 465.0.0.40.109 Android (34/14; 480dpi; 1080x2115; samsung; SM-S911N; dm1q; qcom; zh_TW_#Hant; 690231227)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S911N",
+      "marketingName": "Galaxy S23 (Korea)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Threads",
+      "modus": null,
+      "version": "465.0.0.40.109",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "132.0.6834.163",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 14; SM-A525F Build/UP1A.231005.007) [FBAN/Orca-Android;FBAV/548.0.0.37.65;FBPN/com.facebook.orca;FBLC/nl_BE;FBBV/879726926;FBCR/Telenet;FBMF/samsung;FBBD/samsung;FBDV/SM-A525F;FBSV/14;FBCA/arm64-v8a:null;FBDM/{density=2.8125,width=1080,height=2177};FB_FW/1;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A525F",
+      "marketingName": "Galaxy A52 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "548.0.0.37.65",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
     }
   }
 ]

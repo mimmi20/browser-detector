@@ -1594,14 +1594,14 @@ final class SecChUaModelTest extends TestCase
             ['"Armor 9"', true, 'ulefone=ulefone armor 9'],
             ['"Armor X10 Pro"', true, 'ulefone=ulefone armor x10 pro'],
             ['"Power Armor X11 Pro"', true, 'ulefone=ulefone power armor x11 pro'],
-            ['"Power 5"', true, 'ulefone=ulefone power 5'],
+            ['"Power 5"', true, 'leagoo=leagoo power 5'],
             ['"Power Armor 16 Pro"', true, 'ulefone=ulefone power armor 16 pro'],
             ['"Power Armor14 Pro"', true, 'ulefone=ulefone power armor 14 pro'],
             ['"Armor_6S"', true, 'ulefone=ulefone armor 6s'],
             ['"Power"', true, 'ulefone=ulefone power'],
             ['"Note_7P"', true, 'ulefone=ulefone note 7p'],
             ['"S10_Pro"', true, 'ulefone=ulefone s10 pro'],
-            ['"Power 3"', true, 'ulefone=ulefone power 3'],
+            ['"Power 3"', true, 'umi=umi power 3'],
             ['"Note 14"', true, 'ulefone=ulefone note 14'],
             ['"Note 8P"', true, 'ulefone=ulefone note 8p'],
             // Doogee
@@ -1779,7 +1779,7 @@ final class SecChUaModelTest extends TestCase
             ['"A85"', true, 'blackview=blackview a85'],
             ['"BV5500Pro"', true, 'blackview=blackview bv5500 pro'],
             ['"A80S"', true, 'blackview=blackview a80s'],
-            ['"A7 Pro"', true, 'blackview=blackview a7 pro'],
+            ['"A7 Pro"', true, 'umi=umi a7 pro'],
             ['"A90"', true, 'blackview=blackview a90'],
             ['"BV5200 Pro"', true, 'blackview=blackview bv5200 pro'],
             ['"A55 Pro"', true, 'blackview=blackview a55 pro'],
@@ -1862,8 +1862,9 @@ final class SecChUaModelTest extends TestCase
             ['"Captiva Pad 10 3G Plus"', true, 'captiva=captiva pad 10 3g plus'],
             // bmxc
             ['"M863-EEA"', true, 'bmxc=bmxc m863-eea'],
+            // beista
+            ['"X104-EEA"', true, 'beista=beista x104-eea'],
             // toscido
-            ['"X104-EEA"', true, 'toscido=toscido x104-eea'],
             ['"T22-EEA"', true, 'toscido=toscido t22-eea'],
             // beafon
             ['"TW10"', true, 'beafon=beafon tw10'],
@@ -1983,7 +1984,7 @@ final class SecChUaModelTest extends TestCase
             ['"Trekstor Surftab theatre S11"', true, 'trekstor=trekstor surftab theatre s11'],
             ['"SurfTab breeze 10.1 quad 3G"', true, 'trekstor=trekstor surftab breeze 10.1 quad 3g'],
             // aeezo
-            ['"TK701_EEA"', true, 'aeezo=aeezo tk701'],
+            ['"TK701_EEA"', true, 'aeezo=aeezo tk701_eea'],
             // jay-tech
             ['"TPC-G1011LTE"', true, 'jay-tech=jay-tech tpc-g1011lte'],
             // yuntab
