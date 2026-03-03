@@ -44,5 +44,53 @@
       "version": "115.0.5790.168",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "x-operamini-phone-ua": "OperaMini(Nokia 230FW40.00.11;Opera Mini/4.4.39012;de)",
+      "device-stock-ua": "OperaMini(Nokia 230FW40.00.11;Opera Mini/4.4.39012;de)",
+      "x-operamini-phone": "? # ?",
+      "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.39012/191.396; U; de) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2",
+      "marketingName": "2",
+      "manufacturer": "HMD Global",
+      "brand": "Nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "MRE",
+      "marketingName": "MAUI Runtime Environment",
+      "version": null,
+      "manufacturer": "MediaTek",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.39012",
+      "manufacturer": "Opera",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "Opera"
+    }
   }
 ]

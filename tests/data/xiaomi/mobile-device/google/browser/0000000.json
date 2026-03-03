@@ -8,7 +8,7 @@
       "deviceName": "general Black Shark device",
       "marketingName": "general Black Shark device",
       "manufacturer": "Xiaomi",
-      "brand": "black-shark",
+      "brand": "Black Shark",
       "dualOrientation": null,
       "simCount": 0,
       "display": {
@@ -986,6 +986,51 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.131",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi A2 (AOSP)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Xiaomi device",
+      "marketingName": "general Xiaomi device",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android Opensource Project",
+      "marketingName": "AOSP",
+      "version": "11.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "111.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
       "manufacturer": "Google"
     }
   }
