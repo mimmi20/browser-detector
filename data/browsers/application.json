@@ -1505,5 +1505,17 @@
       ]
     },
     "engine": null
+  },
+  "redline-client": {
+    "name": "Redline Client",
+    "manufacturer": "redline",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "REDLINECLIENT.+V"
+      ]
+    },
+    "engine": null
   }
 }

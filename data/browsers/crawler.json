@@ -2417,5 +2417,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "blackboard-ally": {
+    "name": "Blackboard Ally",
+    "manufacturer": "anthology",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "blackboardally"
+      ]
+    },
+    "engine": "unknown"
   }
 }

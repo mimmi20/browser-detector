@@ -7282,6 +7282,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Ericsson',
                 'key' => 'ericsson',
             ],
+            [
+                'type' => 'Anthology',
+                'name' => 'Anthology Inc.',
+                'brandname' => 'Anthology',
+                'key' => 'anthology',
+            ],
         ];
     }
 
