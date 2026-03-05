@@ -7288,6 +7288,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Anthology',
                 'key' => 'anthology',
             ],
+            [
+                'type' => 'CWOWDEFU',
+                'name' => 'CWOWDEFU',
+                'brandname' => 'CWOWDEFU',
+                'key' => 'cwowdefu',
+            ],
         ];
     }
 

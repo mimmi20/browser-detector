@@ -2431,6 +2431,8 @@ enum Company: string implements CompanyInterface
 
     case anthology = 'Anthology';
 
+    case cwowdefu = 'CWOWDEFU';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3644,6 +3646,7 @@ enum Company: string implements CompanyInterface
             'openvas', 'open-vas' => self::openVAS,
             'ericsson' => self::ericsson,
             'anthology', 'anthology inc.' => self::anthology,
+            'cwowdefu' => self::cwowdefu,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

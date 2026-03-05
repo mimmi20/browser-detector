@@ -7766,6 +7766,8 @@ final class Device implements DeviceInterface
             'power 5' => 'leagoo=leagoo power 5',
             // qmobile
             'view max pro' => 'qmobile=qmobile view max pro',
+            // cwowdefu
+            'f12w_eea' => 'cwowdefu=cwowdefu f12w_eea',
             // other
             default => null,
         };

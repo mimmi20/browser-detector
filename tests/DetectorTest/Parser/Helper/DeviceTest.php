@@ -8969,6 +8969,8 @@ final class DeviceTest extends TestCase
             ['Power 5', 'leagoo=leagoo power 5'],
             // qmobile
             ['View Max Pro', 'qmobile=qmobile view max pro'],
+            // cwowdefu
+            ['F12W_EEA', 'cwowdefu=cwowdefu f12w_eea'],
             // other
             ['Model"', null],
             [': "', null],
