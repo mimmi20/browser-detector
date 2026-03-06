@@ -2429,5 +2429,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "rogerbot": {
+    "name": "Rogerbot",
+    "manufacturer": "seomoz",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "rogerbot",
+        "rogerBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

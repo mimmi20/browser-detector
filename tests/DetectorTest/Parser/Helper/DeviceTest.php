@@ -3498,6 +3498,8 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G350', 'samsung=samsung sm-g350'],
             ['SM-T310', 'samsung=samsung sm-t310'],
             ['SAMSUNG SM-T310', 'samsung=samsung sm-t310'],
+            ['SM-P620', 'samsung=samsung sm-p620'],
+            ['SAMSUNG SM-P620', 'samsung=samsung sm-p620'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4290,6 +4292,8 @@ final class DeviceTest extends TestCase
             ['Lenovo N23 Yoga', 'lenovo=lenovo n23 yoga/flex 11 chromebook'],
             ['TB330FUP', 'lenovo=lenovo tb330fup'],
             ['A301LV', 'lenovo=lenovo a301lv'],
+            ['TB336FU', 'lenovo=lenovo tb336fu'],
+            ['TB336ZU', 'lenovo=lenovo tb336zu'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -5473,6 +5477,7 @@ final class DeviceTest extends TestCase
             ['WP60', 'oukitel=oukitel wp60'],
             ['RT3 Plus', 'oukitel=oukitel rt3 plus'],
             ['WP9', 'oukitel=oukitel wp9'],
+            ['C61 Pro', 'oukitel=oukitel c61 pro'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -6123,6 +6128,7 @@ final class DeviceTest extends TestCase
             ['LIFETAB_P831X.2', 'medion=medion lifetab p831x.2'],
             ['LIFETAB E1091X', 'medion=medion lifetab e1091x'],
             ['LIFETAB E1044X', 'medion=medion lifetab e1044x'],
+            ['LIFETAB_P1075X', 'medion=medion lifetab p1075x'],
             // caterpillar
             ['S60', 'caterpillar=caterpillar s60'],
             ['S41', 'caterpillar=caterpillar s41'],
@@ -6349,6 +6355,7 @@ final class DeviceTest extends TestCase
             ['Hisense U60', 'hisense=hisense u60'],
             ['Hisense E71', 'hisense=hisense e71'],
             ['Hisense E50s 128GB', 'hisense=hisense e50s 128gb'],
+            ['Hisense U607', 'hisense=hisense u607'],
             // insys
             ['HN2-M16Q', 'insys=insys hn2-m16q'],
             // aiwa

@@ -2600,6 +2600,7 @@ final class Device implements DeviceInterface
             'sm-g3509', 'samsung sm-g3509' => 'samsung=samsung sm-g3509',
             'sm-g350', 'samsung sm-g350' => 'samsung=samsung sm-g350',
             'sm-t310', 'samsung sm-t310' => 'samsung=samsung sm-t310',
+            'sm-p620', 'samsung sm-p620' => 'samsung=samsung sm-p620',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3326,6 +3327,8 @@ final class Device implements DeviceInterface
             'lenovo n23 yoga/flex 11 chromebook', 'lenovo n23 yoga' => 'lenovo=lenovo n23 yoga/flex 11 chromebook',
             'tb330fup' => 'lenovo=lenovo tb330fup',
             'a301lv' => 'lenovo=lenovo a301lv',
+            'tb336fu' => 'lenovo=lenovo tb336fu',
+            'tb336zu' => 'lenovo=lenovo tb336zu',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -4492,6 +4495,7 @@ final class Device implements DeviceInterface
             'wp60' => 'oukitel=oukitel wp60',
             'rt3 plus' => 'oukitel=oukitel rt3 plus',
             'wp9' => 'oukitel=oukitel wp9',
+            'c61 pro' => 'oukitel=oukitel c61 pro',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -5120,6 +5124,7 @@ final class Device implements DeviceInterface
             'lifetab_p831x.2' => 'medion=medion lifetab p831x.2',
             'lifetab e1091x' => 'medion=medion lifetab e1091x',
             'lifetab e1044x' => 'medion=medion lifetab e1044x',
+            'lifetab_p1075x' => 'medion=medion lifetab p1075x',
             // caterpillar
             's60' => 'caterpillar=caterpillar s60',
             's41' => 'caterpillar=caterpillar s41',
@@ -5345,6 +5350,7 @@ final class Device implements DeviceInterface
             'hisense u60' => 'hisense=hisense u60',
             'hisense e71' => 'hisense=hisense e71',
             'hisense e50s 128gb' => 'hisense=hisense e50s 128gb',
+            'hisense u607' => 'hisense=hisense u607',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa
