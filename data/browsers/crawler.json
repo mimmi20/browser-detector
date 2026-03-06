@@ -2442,5 +2442,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "ads-txt-crawler": {
+    "name": "AdsTxtCrawler",
+    "manufacturer": "iab-technology",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdsTxtCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "deepfield-genome": {
+    "name": "Deepfield Genome",
+    "manufacturer": "nokia",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GenomeCrawlerd"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "semantic-visions.com crawler": {
+    "name": "svEye",
+    "manufacturer": "semantic-visions",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "semantic\\-visions.com crawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

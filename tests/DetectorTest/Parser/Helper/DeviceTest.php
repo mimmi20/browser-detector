@@ -1332,6 +1332,8 @@ final class DeviceTest extends TestCase
             ['Redmi 9C', 'xiaomi=xiaomi redmi 9c'],
             ['Redmi 9', 'xiaomi=xiaomi redmi 9'],
             ['POCO M3 Pro 5G', 'xiaomi=xiaomi poco m3 pro 5g'],
+            ['Redmi K20 Pro', 'xiaomi=xiaomi redmi k20 pro'],
+            ['Mi 11T Pro', 'xiaomi=xiaomi mi 11t pro'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -4294,6 +4296,8 @@ final class DeviceTest extends TestCase
             ['A301LV', 'lenovo=lenovo a301lv'],
             ['TB336FU', 'lenovo=lenovo tb336fu'],
             ['TB336ZU', 'lenovo=lenovo tb336zu'],
+            ['TB361FU', 'lenovo=lenovo tb361fu'],
+            ['TB361ZU', 'lenovo=lenovo tb361zu'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -5358,6 +5362,7 @@ final class DeviceTest extends TestCase
             ['V1924A', 'vivo=vivo v1924a'],
             ['V2072A', 'vivo=vivo v2072a'],
             ['V1950A', 'vivo=vivo v1950a'],
+            ['vivo X9Plus', 'vivo=vivo x9 plus'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -5654,6 +5659,7 @@ final class DeviceTest extends TestCase
             ['Fire 7', 'doogee=doogee fire 7'],
             ['Note56 Plus', 'doogee=doogee note 56 plus'],
             ['V Max Plus', 'doogee=doogee v max plus'],
+            ['Tab A9+', 'doogee=doogee tab a9+'],
             // shiftphones
             ['SHIFT6mq', 'shift-phones=shift-phones shift6mq'],
             ['SHIFT6m', 'shift-phones=shift-phones shift6m'],
@@ -6477,6 +6483,10 @@ final class DeviceTest extends TestCase
             ['SH-53D', 'sharp=sharp sh-53d'],
             ['SH-M19s-y', 'sharp=sharp sh-m19s-y'],
             ['SH-03K', 'sharp=sharp sh-03k'],
+            ['908SH', 'sharp=sharp 908sh'],
+            ['SH-51A', 'sharp=sharp sh-51a'],
+            ['SHG01', 'sharp=sharp shg01'],
+            ['SH-RM14', 'sharp=sharp sh-rm14'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],
@@ -8978,6 +8988,8 @@ final class DeviceTest extends TestCase
             ['View Max Pro', 'qmobile=qmobile view max pro'],
             // cwowdefu
             ['F12W_EEA', 'cwowdefu=cwowdefu f12w_eea'],
+            // krip
+            ['KRIP_K4', 'krip=krip k4'],
             // other
             ['Model"', null],
             [': "', null],

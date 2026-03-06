@@ -2433,6 +2433,10 @@ enum Company: string implements CompanyInterface
 
     case cwowdefu = 'CWOWDEFU';
 
+    case iabTechnologyLaboratory = 'IAB Technology Laboratory';
+
+    case krip = 'KRIP';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3647,6 +3651,8 @@ enum Company: string implements CompanyInterface
             'ericsson' => self::ericsson,
             'anthology', 'anthology inc.' => self::anthology,
             'cwowdefu' => self::cwowdefu,
+            'iabtechnologylaboratory', 'iab technology laboratory, inc.', 'iab-technology', 'iab technology laboratory' => self::iabTechnologyLaboratory,
+            'krip' => self::krip,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4119,6 +4125,7 @@ enum Company: string implements CompanyInterface
             self::sfxEntertainment => 'SFX Entertainment, Inc.',
             self::badaas => 'BaDaaS SRL',
             self::anthology => 'Anthology Inc.',
+            self::iabTechnologyLaboratory => 'IAB Technology Laboratory, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -4517,6 +4524,7 @@ enum Company: string implements CompanyInterface
             self::orangeSPV => 'spv',
             self::michaelSchoebel => 'michael-schoebel',
             self::openVAS => 'open-vas',
+            self::iabTechnologyLaboratory => 'iab-technology',
             default => $this->name,
         };
     }

@@ -1297,6 +1297,8 @@ final class Device implements DeviceInterface
             'redmi 9c' => 'xiaomi=xiaomi redmi 9c',
             'redmi 9' => 'xiaomi=xiaomi redmi 9',
             'poco m3 pro 5g' => 'xiaomi=xiaomi poco m3 pro 5g',
+            'redmi k20 pro' => 'xiaomi=xiaomi redmi k20 pro',
+            'mi 11t pro' => 'xiaomi=xiaomi mi 11t pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3329,6 +3331,8 @@ final class Device implements DeviceInterface
             'a301lv' => 'lenovo=lenovo a301lv',
             'tb336fu' => 'lenovo=lenovo tb336fu',
             'tb336zu' => 'lenovo=lenovo tb336zu',
+            'tb361fu' => 'lenovo=lenovo tb361fu',
+            'tb361zu' => 'lenovo=lenovo tb361zu',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -4382,6 +4386,7 @@ final class Device implements DeviceInterface
             'v1924a' => 'vivo=vivo v1924a',
             'v2072a' => 'vivo=vivo v2072a',
             'v1950a' => 'vivo=vivo v1950a',
+            'vivo x9plus' => 'vivo=vivo x9 plus',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4670,6 +4675,7 @@ final class Device implements DeviceInterface
             'fire 7' => 'doogee=doogee fire 7',
             'note56 plus' => 'doogee=doogee note 56 plus',
             'v max plus' => 'doogee=doogee v max plus',
+            'tab a9+' => 'doogee=doogee tab a9+',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -5472,6 +5478,10 @@ final class Device implements DeviceInterface
             'sh-53d' => 'sharp=sharp sh-53d',
             'sh-m19s-y' => 'sharp=sharp sh-m19s-y',
             'sh-03k' => 'sharp=sharp sh-03k',
+            '908sh' => 'sharp=sharp 908sh',
+            'sh-51a' => 'sharp=sharp sh-51a',
+            'shg01' => 'sharp=sharp shg01',
+            'sh-rm14' => 'sharp=sharp sh-rm14',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
@@ -7774,6 +7784,8 @@ final class Device implements DeviceInterface
             'view max pro' => 'qmobile=qmobile view max pro',
             // cwowdefu
             'f12w_eea' => 'cwowdefu=cwowdefu f12w_eea',
+            // krip
+            'krip_k4' => 'krip=krip k4',
             // other
             default => null,
         };

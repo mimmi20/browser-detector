@@ -7294,6 +7294,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'CWOWDEFU',
                 'key' => 'cwowdefu',
             ],
+            [
+                'type' => 'IAB Technology Laboratory',
+                'name' => 'IAB Technology Laboratory, Inc.',
+                'brandname' => 'IAB Technology Laboratory',
+                'key' => 'iab-technology',
+            ],
+            [
+                'type' => 'KRIP',
+                'name' => 'KRIP',
+                'brandname' => 'KRIP',
+                'key' => 'krip',
+            ],
         ];
     }
 
