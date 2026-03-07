@@ -1529,5 +1529,18 @@
       ]
     },
     "engine": null
+  },
+  "skype-for-business": {
+    "name": "Skype for Business",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Skype for Business",
+        "OC\\/"
+      ]
+    },
+    "engine": null
   }
 }

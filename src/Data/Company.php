@@ -2439,6 +2439,12 @@ enum Company: string implements CompanyInterface
 
     case cyberCircus = 'Cyber Circus';
 
+    case tapClicks = 'TapClicks';
+
+    case modat = 'Modat';
+
+    case addSearch = 'AddSearch';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3656,6 +3662,9 @@ enum Company: string implements CompanyInterface
             'iabtechnologylaboratory', 'iab technology laboratory, inc.', 'iab-technology', 'iab technology laboratory' => self::iabTechnologyLaboratory,
             'krip' => self::krip,
             'cybercircus', 'cyber circus limited', 'cyber-circus', 'cyber circus' => self::cyberCircus,
+            'tapclicks', 'tapclicks, inc.', 'tap-clicks' => self::tapClicks,
+            'modat', 'modat b.v.' => self::modat,
+            'addsearch', 'addsearch oy', 'add-search' => self::addSearch,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3801,7 +3810,7 @@ enum Company: string implements CompanyInterface
             self::quark => 'Quark Team',
             self::deepseekAI => 'Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd.',
             self::pia => 'PIA Private Internet Access, Inc',
-            self::openai => 'OpenAI LP',
+            self::openai => 'OpenAI OpCo, LLC',
             self::telegram => 'Telegram Messenger Inc.',
             self::qihoo => 'Qihoo 360 Technology Co. Ltd.',
             self::line => 'LINE Corporation',
@@ -4130,6 +4139,9 @@ enum Company: string implements CompanyInterface
             self::anthology => 'Anthology Inc.',
             self::iabTechnologyLaboratory => 'IAB Technology Laboratory, Inc.',
             self::cyberCircus => 'Cyber Circus Limited',
+            self::tapClicks => 'TapClicks, Inc.',
+            self::modat => 'Modat B.V.',
+            self::addSearch => 'AddSearch Oy',
             self::unknown => null,
             default => $this->value,
         };
@@ -4530,6 +4542,8 @@ enum Company: string implements CompanyInterface
             self::openVAS => 'open-vas',
             self::iabTechnologyLaboratory => 'iab-technology',
             self::cyberCircus => 'cyber-circus',
+            self::tapClicks => 'tap-clicks',
+            self::addSearch => 'add-search',
             default => $this->name,
         };
     }

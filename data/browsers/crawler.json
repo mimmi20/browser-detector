@@ -725,7 +725,7 @@
     "engine": null
   },
   "semantic-scholar-bot": {
-    "name": "SemanticScholarBot",
+    "name": "Semantic Scholar Bot",
     "manufacturer": "allen-institute",
     "type": "crawler",
     "version": {
@@ -2044,7 +2044,7 @@
     "engine": null
   },
   "zoom-bot": {
-    "name": "Zoombot",
+    "name": "ZoomBot",
     "manufacturer": "zoom",
     "type": "crawler",
     "version": {
@@ -2511,6 +2511,271 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SiteCheckerBotCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "infegy bot": {
+    "name": "Infegy Bot",
+    "manufacturer": "infegy",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "plukkie": {
+    "name": "Plukkie",
+    "manufacturer": "botje-com",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Plukkie"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domaincrawler": {
+    "name": "DomainCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomainCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "raven-crawler": {
+    "name": "RavenCrawler",
+    "manufacturer": "tap-clicks",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RavenCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "larbin": {
+    "name": "Larbin",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "binlar\\_",
+        "larbin\\_",
+        "larbin"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandexbot-mirror-detector": {
+    "name": "YandexBot-MirrorDetector",
+    "manufacturer": "yandex",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MirrorDetector"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zookabot": {
+    "name": "Zookabot",
+    "manufacturer": "zookabot",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zookabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "openwebspider": {
+    "name": "OpenWebSpider",
+    "manufacturer": "stefano-alimonti",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OpenWebSpider v",
+        "OpenWebSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yourls": {
+    "name": "Yourls",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YOURLS v",
+        "YOURLS"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "embedly": {
+    "name": "Embedly",
+    "manufacturer": "embed.ly",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Embedly"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seoprofiler": {
+    "name": "OpenLinkProfiler",
+    "manufacturer": "axandra",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "spbot",
+        "sp_auditbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ssearch crawler": {
+    "name": "sSearch Crawler",
+    "manufacturer": "semantissimo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sSearch Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netseer crawler": {
+    "name": "NetSeer Crawler",
+    "manufacturer": "net-seer",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetSeer crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sistrix crawler": {
+    "name": "Sistrix Crawler",
+    "manufacturer": "sistrix",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sistrix optimizer": {
+    "name": "Sistrix Optimizer",
+    "manufacturer": "sistrix",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "gluten free crawler": {
+    "name": "Gluten Free Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gluten Free Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "applebot-extended": {
+    "name": "Applebot-Extended",
+    "manufacturer": "apple",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Applebot-Extended"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kadobot": {
+    "name": "KadoBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KadoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "monsidobot": {
+    "name": "Monsidobot",
+    "manufacturer": "acquia",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Monsidobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "facebook-bot": {
+    "name": "FaceBook Bot",
+    "manufacturer": "meta",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "facebookplatform",
+        "FacebookBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "add-search-bot": {
+    "name": "AddSearchBot",
+    "manufacturer": "add-search",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AddSearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-additional-bot": {
+    "name": "YandexAdditionalBot",
+    "manufacturer": "yandex",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexAdditionalBot",
+        "YandexAdditional"
       ]
     },
     "engine": "unknown"

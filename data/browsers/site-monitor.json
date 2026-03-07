@@ -173,5 +173,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "uptimebot": {
+    "name": "Uptimebot",
+    "manufacturer": "uptime",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Uptime"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -359,5 +359,76 @@
       ]
     },
     "engine": "unknown"
+  },
+  "universalfeedparser": {
+    "name": "UniversalFeedParser",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UniversalFeedParser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bloglovin bot": {
+    "name": "Bloglovin Bot",
+    "manufacturer": "bloglovin",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bloglovin"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netvibes": {
+    "name": "Netvibes",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "tiny tiny rss": {
+    "name": "Tiny Tiny RSS",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Tiny Tiny RSS"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "news-gator": {
+    "name": "NewsGator",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NewsGatorOnline",
+        "NewsGator"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "the old reader": {
+    "name": "The Old Reader",
+    "manufacturer": "the-old-reader",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "theoldreader"
+      ]
+    },
+    "engine": "unknown"
   }
 }

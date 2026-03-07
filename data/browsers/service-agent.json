@@ -241,5 +241,17 @@
       ]
     },
     "engine": null
+  },
+  "google-docs": {
+    "name": "Google Docs",
+    "manufacturer": "google",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoogleDocs"
+      ]
+    },
+    "engine": null
   }
 }

@@ -287,8 +287,20 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "libwww",
-        "libwww\\-perl"
+        "libwww"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "perl": {
+    "name": "Perl",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "libwww\\-perl",
+        "perlclient"
       ]
     },
     "engine": "unknown"
@@ -687,5 +699,29 @@
       ]
     },
     "engine": null
+  },
+  "jakarta commons httpclient": {
+    "name": "Jakarta Commons HttpClient",
+    "manufacturer": "apache",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Jakarta Commons\\-HttpClient"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "python-httplib2": {
+    "name": "httplib2",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "httplib2"
+      ]
+    },
+    "engine": "unknown"
   }
 }

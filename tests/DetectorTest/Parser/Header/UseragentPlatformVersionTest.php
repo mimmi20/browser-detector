@@ -268,6 +268,7 @@ final class UseragentPlatformVersionTest extends TestCase
             ['WhatsApp/2.2587.9 W'],
             ['WhatsApp/2.2587.9 i'],
             ['WhatsApp/2.2587.9 N'],
+            ['WhatsApp/2.2587.9/i'],
         ];
     }
 

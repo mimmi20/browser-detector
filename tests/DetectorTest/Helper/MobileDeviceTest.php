@@ -165,6 +165,8 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (X11; Linux x86_64; Quest 2) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/34.4.0.236.170.637352867 Chrome/126.0.6478.226 VR Safari/537.36'],
             ['7plus/6.0.1 (com.swm.live; build:95045; iOS 17.6.1) Alamofire/5.4.3'],
             ['Mozilla/5.0 (Web0S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.0.0 Safari/537.36 WebAppManager'],
+            ['LG/U8130/v1.0'],
+            ['lge-vx8100/1.0 UP. Browser/6.2.3.2'],
         ];
     }
 

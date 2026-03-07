@@ -3306,7 +3306,7 @@ final class CompanyTest extends TestCase
             ],
             [
                 'type' => 'OpenAI',
-                'name' => 'OpenAI LP',
+                'name' => 'OpenAI OpCo, LLC',
                 'brandname' => 'OpenAI',
                 'key' => 'openai',
             ],
@@ -7311,6 +7311,24 @@ final class CompanyTest extends TestCase
                 'name' => 'Cyber Circus Limited',
                 'brandname' => 'Cyber Circus',
                 'key' => 'cyber-circus',
+            ],
+            [
+                'type' => 'TapClicks',
+                'name' => 'TapClicks, Inc.',
+                'brandname' => 'TapClicks',
+                'key' => 'tap-clicks',
+            ],
+            [
+                'type' => 'Modat',
+                'name' => 'Modat B.V.',
+                'brandname' => 'Modat',
+                'key' => 'modat',
+            ],
+            [
+                'type' => 'AddSearch',
+                'name' => 'AddSearch Oy',
+                'brandname' => 'AddSearch',
+                'key' => 'add-search',
             ],
         ];
     }

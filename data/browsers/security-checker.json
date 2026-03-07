@@ -172,5 +172,17 @@
       ]
     },
     "engine": null
+  },
+  "modat-scanner": {
+    "name": "ModatScanner",
+    "manufacturer": "modat",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ModatScanner"
+      ]
+    },
+    "engine": null
   }
 }
