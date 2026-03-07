@@ -2478,5 +2478,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "you-bot": {
+    "name": "YouBot",
+    "manufacturer": "su-sea",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YouBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "scamadviser-external-hit": {
+    "name": "Scamadviser External Hit",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ScamadviserExternalHit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sitechecker-bot-crawler": {
+    "name": "SiteCheckerBotCrawler",
+    "manufacturer": "cyber-circus",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiteCheckerBotCrawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

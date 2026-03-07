@@ -7306,6 +7306,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'KRIP',
                 'key' => 'krip',
             ],
+            [
+                'type' => 'Cyber Circus',
+                'name' => 'Cyber Circus Limited',
+                'brandname' => 'Cyber Circus',
+                'key' => 'cyber-circus',
+            ],
         ];
     }
 

@@ -1517,5 +1517,17 @@
       ]
     },
     "engine": null
+  },
+  "microsoft-power-query": {
+    "name": "Microsoft Power Query",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Microsoft\\.Data\\.Mashup"
+      ]
+    },
+    "engine": null
   }
 }

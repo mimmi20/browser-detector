@@ -57,19 +57,6 @@
     },
     "engine": "unknown"
   },
-  "google feedfetcher": {
-    "name": "Google Feedfetcher",
-    "manufacturer": "google",
-    "type": "bot-syndication-reader",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Feedfetcher\\-Google",
-        "Feedfetcher\\-Google\\-iGoogleGadgets"
-      ]
-    },
-    "engine": "unknown"
-  },
   "r6 feedfetcher": {
     "name": "R6 FeedFetcher",
     "manufacturer": "salesforce",

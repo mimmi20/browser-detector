@@ -675,5 +675,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "sqlmap": {
+    "name": "sqlmap",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sqlmap"
+      ]
+    },
+    "engine": null
   }
 }

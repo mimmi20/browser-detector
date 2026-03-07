@@ -886,5 +886,42 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "google-adwords-instant": {
+    "name": "Google Adwords Instant",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Adwords-Instant"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adsense bot": {
+    "name": "AdSense Bot",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mediapartners\\-Google"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google feedfetcher": {
+    "name": "Google Feedfetcher",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Feedfetcher\\-Google",
+        "Feedfetcher\\-Google\\-iGoogleGadgets"
+      ]
+    },
+    "engine": "unknown"
   }
 }

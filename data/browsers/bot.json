@@ -8504,18 +8504,6 @@
     },
     "engine": "unknown"
   },
-  "scamadviser-external-hit": {
-    "name": "Scamadviser External Hit",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "ScamadviserExternalHit"
-      ]
-    },
-    "engine": "unknown"
-  },
   "schober-impressums-crawler": {
     "name": "Schober Impressumscrawler",
     "manufacturer": "schober-information",
@@ -8602,18 +8590,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VsuSearchSpider"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "you-bot": {
-    "name": "YouBot",
-    "manufacturer": "su-sea",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "YouBot"
       ]
     },
     "engine": "unknown"
