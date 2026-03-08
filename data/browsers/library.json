@@ -723,5 +723,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "httpie": {
+    "name": "HTTPie",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HTTPie"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -2445,6 +2445,46 @@ enum Company: string implements CompanyInterface
 
     case addSearch = 'AddSearch';
 
+    case proRataAI = 'ProRataAI';
+
+    case sbIntuitions = 'SB Intuitions';
+
+    case siderAI = 'Sider AI';
+
+    case zanistaAI = 'Zanista AI';
+
+    case qualified = 'Qualified';
+
+    case poggioLabs = 'Poggio Labs';
+
+    case liner = 'Liner';
+
+    case huggingFace = 'Hugging Face';
+
+    case runpod = 'RunPod';
+
+    case statusnest = 'StatusNest';
+
+    case hypestat = 'HypeStat';
+
+    case lazyweb = 'LazyWeb';
+
+    case cognitionAI = 'Cognition AI';
+
+    case crawlspace = 'Crawlspace';
+
+    case characterTechnologies = 'Character Technologies';
+
+    case webzio = 'Webz.io';
+
+    case ward = 'W.A.R.D.';
+
+    case serAcquisition = 'SER Acquisition';
+
+    case sideGuideTechnologies = 'SideGuide Technologies';
+
+    case xAI = 'X.AI';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3665,6 +3705,26 @@ enum Company: string implements CompanyInterface
             'tapclicks', 'tapclicks, inc.', 'tap-clicks' => self::tapClicks,
             'modat', 'modat b.v.' => self::modat,
             'addsearch', 'addsearch oy', 'add-search' => self::addSearch,
+            'prorataai', 'prorataai, inc.', 'pro-rata-ai' => self::proRataAI,
+            'sbintuitions', 'sb intuitions corp.', 'sb-intuitions', 'sb intuitions' => self::sbIntuitions,
+            'siderai', 'sider-ai', 'sider ai' => self::siderAI,
+            'zanistaai', 'zanista ai ltd.', 'zanista-ai', 'zanista ai' => self::zanistaAI,
+            'qualified', 'qualified.com, inc.' => self::qualified,
+            'poggiolabs', 'poggio labs, inc.', 'poggio-labs', 'poggio labs' => self::poggioLabs,
+            'liner' => self::liner,
+            'huggingface', 'hugging face, inc', 'hugging-face', 'hugging face' => self::huggingFace,
+            'runpod', 'runpod inc.' => self::runpod,
+            'statusnest' => self::statusnest,
+            'hypestat' => self::hypestat,
+            'lazyweb', 'lazyweb inc.' => self::lazyweb,
+            'cognitionai', 'cognition ai, inc.', 'cognition-ai', 'cognition ai' => self::cognitionAI,
+            'crawlspace', 'crawlspace company' => self::crawlspace,
+            'charactertechnologies', 'character technologies, inc.', 'character-technologies', 'character technologies' => self::characterTechnologies,
+            'webzio', 'webz.io ltd.', 'webz.io' => self::webzio,
+            'ward', 'w.a.r.d. llc', 'w.a.r.d.' => self::ward,
+            'seracquisition', 'ser acquisition inc.', 'ser-acquisition', 'ser acquisition' => self::serAcquisition,
+            'sideguidetechnologies', 'sideguide technologies, inc.', 'sideguide-technologies', 'sideguide technologies' => self::sideGuideTechnologies,
+            'xai', 'x.ai llc', 'x-ai', 'x.ai' => self::xAI,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4142,6 +4202,22 @@ enum Company: string implements CompanyInterface
             self::tapClicks => 'TapClicks, Inc.',
             self::modat => 'Modat B.V.',
             self::addSearch => 'AddSearch Oy',
+            self::proRataAI => 'ProRataAI, Inc.',
+            self::sbIntuitions => 'SB Intuitions Corp.',
+            self::zanistaAI => 'Zanista AI Ltd.',
+            self::qualified => 'Qualified.com, Inc.',
+            self::poggioLabs => 'Poggio Labs, Inc.',
+            self::huggingFace => 'Hugging Face, Inc',
+            self::runpod => 'RunPod Inc.',
+            self::lazyweb => 'LazyWeb Inc.',
+            self::cognitionAI => 'Cognition AI, Inc.',
+            self::crawlspace => 'Crawlspace Company',
+            self::characterTechnologies => 'Character Technologies, Inc.',
+            self::webzio => 'Webz.io Ltd.',
+            self::ward => 'W.A.R.D. LLC',
+            self::serAcquisition => 'SER Acquisition Inc.',
+            self::sideGuideTechnologies => 'SideGuide Technologies, Inc.',
+            self::xAI => 'X.AI LLC',
             self::unknown => null,
             default => $this->value,
         };
@@ -4544,6 +4620,18 @@ enum Company: string implements CompanyInterface
             self::cyberCircus => 'cyber-circus',
             self::tapClicks => 'tap-clicks',
             self::addSearch => 'add-search',
+            self::proRataAI => 'pro-rata-ai',
+            self::sbIntuitions => 'sb-intuitions',
+            self::siderAI => 'sider-ai',
+            self::zanistaAI => 'zanista-ai',
+            self::poggioLabs => 'poggio-labs',
+            self::huggingFace => 'hugging-face',
+            self::cognitionAI => 'cognition-ai',
+            self::characterTechnologies => 'character-technologies',
+            self::webzio => 'webz.io',
+            self::serAcquisition => 'ser-acquisition',
+            self::sideGuideTechnologies => 'sideguide-technologies',
+            self::xAI => 'x-ai',
             default => $this->name,
         };
     }

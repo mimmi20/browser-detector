@@ -185,5 +185,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wardbot": {
+    "name": "WARDBot",
+    "manufacturer": "ward",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WARDBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
