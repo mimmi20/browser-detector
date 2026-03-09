@@ -257,7 +257,7 @@
     "engine": "unknown"
   },
   "googlebot-news": {
-    "name": "Googlebot-News",
+    "name": "Googlebot News",
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
@@ -1092,5 +1092,76 @@
       ]
     },
     "engine": "unknown"
+  },
+  "orangebot": {
+    "name": "Orange Bot",
+    "manufacturer": "orange",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Orangebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "picsearch bot": {
+    "name": "Picsearch Bot",
+    "manufacturer": "picsearch",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Picsearchbot",
+        "psbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "aboundexbot": {
+    "name": "Aboundexbot",
+    "manufacturer": "aboundex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Aboundex"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wesee:search": {
+    "name": "WeSEE:Search",
+    "manufacturer": "wesee",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WeSEE:Search"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "acapbot": {
+    "name": "acapbot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "acapbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google app engine": {
+    "name": "Google App Engine",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   }
 }

@@ -735,5 +735,49 @@
       ]
     },
     "engine": "unknown"
+  },
+  "typhoeus": {
+    "name": "Typhoeus",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "cakephp": {
+    "name": "CakePHP",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "superagent": {
+    "name": "superagent",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "superagent"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gobuster": {
+    "name": "Gobuster",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gobuster"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -106,5 +106,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "keybase-bot": {
+    "name": "KeybaseBot",
+    "manufacturer": "zoom",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KeybaseBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

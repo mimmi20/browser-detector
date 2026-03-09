@@ -2485,6 +2485,18 @@ enum Company: string implements CompanyInterface
 
     case xAI = 'X.AI';
 
+    case cohere = 'Cohere';
+
+    case bigSurAI = 'Big Sur AI';
+
+    case groq = 'Groq';
+
+    case togetherComputer = 'Together Computer';
+
+    case replicate = 'Replicate';
+
+    case universityOfGeorgia = 'University of Georgia';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3725,6 +3737,12 @@ enum Company: string implements CompanyInterface
             'seracquisition', 'ser acquisition inc.', 'ser-acquisition', 'ser acquisition' => self::serAcquisition,
             'sideguidetechnologies', 'sideguide technologies, inc.', 'sideguide-technologies', 'sideguide technologies' => self::sideGuideTechnologies,
             'xai', 'x.ai llc', 'x-ai', 'x.ai' => self::xAI,
+            'cohere', 'cohere, inc.' => self::cohere,
+            'bigsurai', 'big sur ai, inc.', 'big-sur-ai', 'big sur ai' => self::bigSurAI,
+            'groq', 'groq, inc.' => self::groq,
+            'togethercomputer', 'together computer inc.', 'together-computer', 'together computer' => self::togetherComputer,
+            'replicate', 'replicate, inc.' => self::replicate,
+            'universityofgeorgia', 'school of computing at the university of georgia (uga)', 'university-of-georgia', 'university of georgia' => self::universityOfGeorgia,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4218,6 +4236,12 @@ enum Company: string implements CompanyInterface
             self::serAcquisition => 'SER Acquisition Inc.',
             self::sideGuideTechnologies => 'SideGuide Technologies, Inc.',
             self::xAI => 'X.AI LLC',
+            self::cohere => 'Cohere, Inc.',
+            self::bigSurAI => 'Big Sur AI, Inc.',
+            self::groq => 'Groq, Inc.',
+            self::togetherComputer => 'Together Computer Inc.',
+            self::replicate => 'Replicate, Inc.',
+            self::universityOfGeorgia => 'School of Computing at the University of Georgia (UGA)',
             self::unknown => null,
             default => $this->value,
         };
@@ -4632,6 +4656,9 @@ enum Company: string implements CompanyInterface
             self::serAcquisition => 'ser-acquisition',
             self::sideGuideTechnologies => 'sideguide-technologies',
             self::xAI => 'x-ai',
+            self::bigSurAI => 'big-sur-ai',
+            self::togetherComputer => 'together-computer',
+            self::universityOfGeorgia => 'university-of-georgia',
             default => $this->name,
         };
     }

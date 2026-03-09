@@ -430,5 +430,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "superfeedr bot": {
+    "name": "Superfeedr Bot",
+    "manufacturer": "superfeedr",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Superfeedr bot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -7450,6 +7450,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'X.AI',
                 'key' => 'x-ai',
             ],
+            [
+                'type' => 'Cohere',
+                'name' => 'Cohere, Inc.',
+                'brandname' => 'Cohere',
+                'key' => 'cohere',
+            ],
+            [
+                'type' => 'Big Sur AI',
+                'name' => 'Big Sur AI, Inc.',
+                'brandname' => 'Big Sur AI',
+                'key' => 'big-sur-ai',
+            ],
+            [
+                'type' => 'Groq',
+                'name' => 'Groq, Inc.',
+                'brandname' => 'Groq',
+                'key' => 'groq',
+            ],
+            [
+                'type' => 'Together Computer',
+                'name' => 'Together Computer Inc.',
+                'brandname' => 'Together Computer',
+                'key' => 'together-computer',
+            ],
+            [
+                'type' => 'Replicate',
+                'name' => 'Replicate, Inc.',
+                'brandname' => 'Replicate',
+                'key' => 'replicate',
+            ],
+            [
+                'type' => 'University of Georgia',
+                'name' => 'School of Computing at the University of Georgia (UGA)',
+                'brandname' => 'University of Georgia',
+                'key' => 'university-of-georgia',
+            ],
         ];
     }
 

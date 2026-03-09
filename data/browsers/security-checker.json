@@ -184,5 +184,17 @@
       ]
     },
     "engine": null
+  },
+  "uga-research-agent": {
+    "name": "UGAResearchAgent",
+    "manufacturer": "university-of-georgia",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UGAResearchAgent"
+      ]
+    },
+    "engine": null
   }
 }

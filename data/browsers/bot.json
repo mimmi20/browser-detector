@@ -73,18 +73,6 @@
     },
     "engine": "unknown"
   },
-  "aboundexbot": {
-    "name": "Aboundexbot",
-    "manufacturer": "aboundex",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Aboundex"
-      ]
-    },
-    "engine": "unknown"
-  },
   "aboutus bot": {
     "name": "AboutUs Bot",
     "manufacturer": "about-us",
@@ -105,18 +93,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AboutUsBot Johnny5"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "acapbot": {
-    "name": "acapbot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "acapbot"
       ]
     },
     "engine": "unknown"
@@ -870,16 +846,6 @@
     },
     "engine": "unknown"
   },
-  "cakephp": {
-    "name": "CakePHP",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "camcrawler": {
     "name": "Camcrawler",
     "manufacturer": "unknown",
@@ -948,18 +914,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "cars\\-app\\-browser"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "charlotte": {
-    "name": "Charlotte",
-    "manufacturer": "searchme",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Charlotte"
       ]
     },
     "engine": "unknown"
@@ -1469,19 +1423,6 @@
     },
     "engine": "unknown"
   },
-  "domainappender bot": {
-    "name": "DomainAppender Bot",
-    "manufacturer": "profound-networks",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "DomainAppender \\/",
-        "DomainAppender"
-      ]
-    },
-    "engine": "unknown"
-  },
   "domainsbot": {
     "name": "domains-bot",
     "manufacturer": "domains-bot",
@@ -1661,18 +1602,6 @@
     },
     "engine": "unknown"
   },
-  "evc-batch": {
-    "name": "evc-batch",
-    "manufacturer": "evc",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "evc\\-batch"
-      ]
-    },
-    "engine": "unknown"
-  },
   "eventguru bot": {
     "name": "EventGuru Bot",
     "manufacturer": "unknown",
@@ -1775,18 +1704,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Exploratodo"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "ezooms": {
-    "name": "Ezooms",
-    "manufacturer": "seomoz",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Ezooms"
       ]
     },
     "engine": "unknown"
@@ -2271,16 +2188,6 @@
     },
     "engine": "unknown"
   },
-  "google app engine": {
-    "name": "Google App Engine",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "google chtml proxy": {
     "name": "Google CHTML Proxy",
     "manufacturer": "google",
@@ -2372,16 +2279,6 @@
       "search": [
         "Google\\-Sitemaps"
       ]
-    },
-    "engine": "unknown"
-  },
-  "google structured-data testingtool": {
-    "name": "Google Structured-Data TestingTool",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -2729,18 +2626,6 @@
     },
     "engine": "unknown"
   },
-  "icc-crawler": {
-    "name": "ICC-Crawler",
-    "manufacturer": "niict",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "ICC\\-Crawler"
-      ]
-    },
-    "engine": "unknown"
-  },
   "iccrawler": {
     "name": "iCCrawler",
     "manufacturer": "unknown",
@@ -3082,18 +2967,6 @@
     },
     "engine": "unknown"
   },
-  "jakarta commons-httpclient": {
-    "name": "Jakarta Commons-HttpClient",
-    "manufacturer": "apache",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Jakarta Commons\\-HttpClient"
-      ]
-    },
-    "engine": "unknown"
-  },
   "jamesbot": {
     "name": "JamesBOT",
     "manufacturer": "geskimo",
@@ -3391,18 +3264,6 @@
       "search": [
         "LinkLint\\-checkonly",
         "LinkLint"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "linkpadbot": {
-    "name": "LinkpadBot",
-    "manufacturer": "linkpad",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "LinkpadBot"
       ]
     },
     "engine": "unknown"
@@ -3782,19 +3643,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MetaURI API"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "microsoft cryptoapi": {
-    "name": "Microsoft CryptoAPI",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Microsoft CryptoAPI",
-        "Microsoft\\-CryptoAPI"
       ]
     },
     "engine": "unknown"
@@ -4295,18 +4143,6 @@
     },
     "engine": "unknown"
   },
-  "orangebot": {
-    "name": "Orangebot",
-    "manufacturer": "orange",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Orangebot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "orangebot mobile": {
     "name": "Orangebot Mobile",
     "manufacturer": "orange",
@@ -4541,31 +4377,6 @@
     },
     "engine": "unknown"
   },
-  "picsearch bot": {
-    "name": "Picsearch Bot",
-    "manufacturer": "picsearch",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Picsearchbot",
-        "psbot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "piplbot": {
-    "name": "PiplBot",
-    "manufacturer": "pipl",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PiplBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "pixray-seeker": {
     "name": "Pixray-Seeker",
     "manufacturer": "unknown",
@@ -4787,18 +4598,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QuickiWiki"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "quora link preview bot": {
-    "name": "Quora Link Preview Bot",
-    "manufacturer": "quora",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Quora Link Preview"
       ]
     },
     "engine": "unknown"
@@ -5894,18 +5693,6 @@
     },
     "engine": "unknown"
   },
-  "superagent": {
-    "name": "superagent",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "superagent"
-      ]
-    },
-    "engine": "unknown"
-  },
   "superarama.com - bot": {
     "name": "Superarama.com - BOT",
     "manufacturer": "unknown",
@@ -5914,18 +5701,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Superarama\\.com \\- BOT"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "superfeedr bot": {
-    "name": "Superfeedr Bot",
-    "manufacturer": "superfeedr",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Superfeedr bot"
       ]
     },
     "engine": "unknown"
@@ -6300,18 +6075,6 @@
     },
     "engine": "unknown"
   },
-  "tweetedtimes bot": {
-    "name": "TweetedTimes Bot",
-    "manufacturer": "tweeted-times",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "TweetedTimes Bot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "tweetminster bot": {
     "name": "Tweetminster Bot",
     "manufacturer": "tweet-minster",
@@ -6357,16 +6120,6 @@
       "search": [
         "Twitturls"
       ]
-    },
-    "engine": "unknown"
-  },
-  "typhoeus": {
-    "name": "Typhoeus",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -6548,18 +6301,6 @@
     },
     "engine": "unknown"
   },
-  "vagabondo": {
-    "name": "Vagabondo",
-    "manufacturer": "wise-guys",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Vagabondo"
-      ]
-    },
-    "engine": "unknown"
-  },
   "vbulletin bot": {
     "name": "vBulletin Bot",
     "manufacturer": "vbseo",
@@ -6648,18 +6389,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "visionutils"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "vkshare": {
-    "name": "vkShare",
-    "manufacturer": "vk",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "vkShare"
       ]
     },
     "engine": "unknown"
@@ -6764,18 +6493,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "W3C_Unicorn"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "w3c-checklink": {
-    "name": "W3C-checklink",
-    "manufacturer": "w3c",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "W3C\\-checklink"
       ]
     },
     "engine": "unknown"
@@ -7171,18 +6888,6 @@
     },
     "engine": "unknown"
   },
-  "wesee:search": {
-    "name": "WeSEE:Search",
-    "manufacturer": "wesee",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "WeSEE:Search"
-      ]
-    },
-    "engine": "unknown"
-  },
   "whatweb web scanner": {
     "name": "WhatWeb Web Scanner",
     "manufacturer": "andrew-horton",
@@ -7319,18 +7024,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WNMbot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "woobot": {
-    "name": "WooRank",
-    "manufacturer": "woo-rank",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "woobot"
       ]
     },
     "engine": "unknown"
@@ -7671,18 +7364,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Yahoo Pipes"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "yahoocachesystem": {
-    "name": "YahooCacheSystem",
-    "manufacturer": "yahoo",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "YahooCacheSystem"
       ]
     },
     "engine": "unknown"
