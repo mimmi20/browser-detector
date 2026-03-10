@@ -30,9 +30,54 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.15.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "sqlmap/1.1.8.2#dev (http://sqlmap.org)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "sqlmap",
+      "modus": null,
+      "version": "1.1.8.2",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -120,7 +165,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.835.0",
       "manufacturer": "unknown",
@@ -211,6 +256,96 @@
     },
     "client": {
       "name": "ruby",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Typhoeus - https://github.com/typhoeus/typhoeus"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Typhoeus",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CakePHP"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "CakePHP",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
@@ -390,7 +525,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.05.0",
       "manufacturer": "unknown",
@@ -438,6 +573,51 @@
       "name": "cURL",
       "modus": null,
       "version": "7.29.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "node-superagent/1.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "superagent",
+      "modus": null,
+      "version": "1.4.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -705,7 +885,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.821.0",
       "manufacturer": "unknown",
@@ -750,7 +930,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.820.0",
       "manufacturer": "unknown",
@@ -795,7 +975,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.816.0",
       "manufacturer": "unknown",
@@ -840,7 +1020,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.814.0",
       "manufacturer": "unknown",
@@ -885,7 +1065,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.808.0",
       "manufacturer": "unknown",
@@ -930,7 +1110,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.805.0",
       "manufacturer": "unknown",
@@ -975,7 +1155,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.803.0",
       "manufacturer": "unknown",
@@ -1020,7 +1200,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.800.0",
       "manufacturer": "unknown",
@@ -1065,7 +1245,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.800.0",
       "manufacturer": "unknown",
@@ -1110,7 +1290,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.76.0",
       "manufacturer": "unknown",
@@ -1155,7 +1335,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.75.0",
       "manufacturer": "unknown",
@@ -1200,7 +1380,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.69.0",
       "manufacturer": "unknown",
@@ -1245,7 +1425,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.65.0",
       "manufacturer": "unknown",
@@ -1290,7 +1470,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.64.0",
       "manufacturer": "unknown",
@@ -1335,7 +1515,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.63.0",
       "manufacturer": "unknown",
@@ -1380,7 +1560,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.53.0",
       "manufacturer": "unknown",
@@ -1425,7 +1605,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.50.0",
       "manufacturer": "unknown",
@@ -1470,7 +1650,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.48.0",
       "manufacturer": "unknown",
@@ -1515,7 +1695,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.36.0",
       "manufacturer": "unknown",
@@ -1605,7 +1785,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.15.0",
       "manufacturer": "unknown",
@@ -1695,7 +1875,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "5.837.0",
       "manufacturer": "unknown",
@@ -1740,7 +1920,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.05.0",
       "manufacturer": "unknown",
@@ -1785,7 +1965,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.04.0",
       "manufacturer": "unknown",
@@ -1830,7 +2010,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.04.0",
       "manufacturer": "unknown",
@@ -2100,7 +2280,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.13.0",
       "manufacturer": "unknown",
@@ -2595,7 +2775,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.03.0",
       "manufacturer": "unknown",
@@ -2791,6 +2971,51 @@
   },
   {
     "headers": {
+      "user-agent": "node-superagent/1.8.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "superagent",
+      "modus": null,
+      "version": "1.8.2",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Curl/PHP 5.5.33 (http://github.com/shuber/curl)"
     },
     "device": {
@@ -2910,7 +3135,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.08.0",
       "manufacturer": "unknown",
@@ -3450,7 +3675,7 @@
       "bits": null
     },
     "client": {
-      "name": "libwww",
+      "name": "Perl",
       "modus": null,
       "version": "6.15.0",
       "manufacturer": "unknown",
@@ -4263,231 +4488,6 @@
       "name": "WWW-Mechanize",
       "modus": null,
       "version": "0.72.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.4.34 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.3.29 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl/7.46.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.46.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "GuzzleHttp/6.1.1 curl/7.38.0 PHP/5.6.12-0+deb8u1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Guzzle Http Client",
-      "modus": null,
-      "version": "6.1.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Python/3.4 aiohttp/0.15.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "aiohttp",
-      "modus": null,
-      "version": "0.15.1",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
