@@ -78,5 +78,27 @@
       ]
     },
     "engine": "unknown"
+  },
+  "google structured-data testingtool": {
+    "name": "Google Structured Data Testing Tool",
+    "manufacturer": "google",
+    "type": "validator",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "w3c-checklink": {
+    "name": "W3C Link Checker",
+    "manufacturer": "w3c",
+    "type": "validator",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "W3C\\-checklink"
+      ]
+    },
+    "engine": "unknown"
   }
 }

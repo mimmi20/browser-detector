@@ -358,5 +358,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatGPT/1.2026.048 (iOS 26.3; iPad14,5; build 22248897109)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 14,5",
+      "marketingName": "iPad Pro 12.9\" (6th Gen) Wi-Fi",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "26.3.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "ChatGPT",
+      "modus": null,
+      "version": "1.2026.048",
+      "manufacturer": "OpenAI",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

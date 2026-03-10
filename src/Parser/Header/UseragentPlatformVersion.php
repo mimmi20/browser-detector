@@ -81,7 +81,7 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             return new ForcedNullVersion();
         }
 
-        if (preg_match('/^WhatsApp\/[0-9.]+ (?P<code>[ANWi])$/', $normalizedValue)) {
+        if (preg_match('/^WhatsApp\/[0-9.]+[ \/](?P<code>[ANWi])$/', $normalizedValue)) {
             return new ForcedNullVersion();
         }
 

@@ -257,7 +257,7 @@
     "engine": "unknown"
   },
   "googlebot-news": {
-    "name": "Googlebot-News",
+    "name": "Googlebot News",
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
@@ -487,18 +487,6 @@
     },
     "engine": "unknown"
   },
-  "monsidobot": {
-    "name": "Monsidobot",
-    "manufacturer": "acquia",
-    "type": "search-bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Monsidobot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "naver-adsbot": {
     "name": "AdsBot Naver",
     "manufacturer": "nhn-corporation",
@@ -586,6 +574,18 @@
       "search": [
         "Daumoa",
         "Daum"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "daum-rss-robot": {
+    "name": "DAUM RSS Robot",
+    "manufacturer": "daum-corporation",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DAUM RSS Robot"
       ]
     },
     "engine": "unknown"
@@ -886,5 +886,282 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "google-adwords-instant": {
+    "name": "Google Adwords Instant",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Adwords-Instant"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adsense bot": {
+    "name": "AdSense Bot",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mediapartners\\-Google"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google feedfetcher": {
+    "name": "Google Feedfetcher",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Feedfetcher\\-Google",
+        "Feedfetcher\\-Google\\-iGoogleGadgets"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-adwords-express": {
+    "name": "Google-AdWords-Express",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-AdWords-Express"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-sites": {
+    "name": "Google Sites",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoogleSites"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mnogosearch": {
+    "name": "MnoGoSearch",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MnoGoSearch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yioopbot": {
+    "name": "YioopBot",
+    "manufacturer": "yioop",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YioopBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "youdaobot": {
+    "name": "Youdao Bot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoudaoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "exactseek crawler": {
+    "name": "ExactSeek Crawler",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ExactSeek Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "butterfly robot": {
+    "name": "Butterfly Robot",
+    "manufacturer": "topsy-labs",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Butterfly"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "naverbot": {
+    "name": "NaverBot",
+    "manufacturer": "nhn-corporation",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Naver",
+        "Yeti"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "acoonbot": {
+    "name": "AcoonBot",
+    "manufacturer": "michael-schoebel",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AcoonBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wotbox": {
+    "name": "Wotbox",
+    "manufacturer": "wotbox",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Wotbox"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sosospider": {
+    "name": "Sosospider",
+    "manufacturer": "soso",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sosospider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "coccoc bot": {
+    "name": "Cốc Cốc Bot",
+    "manufacturer": "coc-coc-company",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "coccoc"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-dialogs": {
+    "name": "YandexDialogs",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexDialogs"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-com-bot": {
+    "name": "YandexComBot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexComBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "orangebot": {
+    "name": "Orange Bot",
+    "manufacturer": "orange",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Orangebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "picsearch bot": {
+    "name": "Picsearch Bot",
+    "manufacturer": "picsearch",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Picsearchbot",
+        "psbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "aboundexbot": {
+    "name": "Aboundexbot",
+    "manufacturer": "aboundex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Aboundex"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wesee:search": {
+    "name": "WeSEE:Search",
+    "manufacturer": "wesee",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WeSEE:Search"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "acapbot": {
+    "name": "acapbot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "acapbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google app engine": {
+    "name": "Google App Engine",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   }
 }

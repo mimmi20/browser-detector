@@ -2429,6 +2429,188 @@ enum Company: string implements CompanyInterface
 
     case ericsson = 'Ericsson';
 
+    case anthology = 'Anthology';
+
+    case cwowdefu = 'CWOWDEFU';
+
+    case iabTechnologyLaboratory = 'IAB Technology Laboratory';
+
+    case krip = 'KRIP';
+
+    case cyberCircus = 'Cyber Circus';
+
+    case tapClicks = 'TapClicks';
+
+    case modat = 'Modat';
+
+    case addSearch = 'AddSearch';
+
+    case proRataAI = 'ProRataAI';
+
+    case sbIntuitions = 'SB Intuitions';
+
+    case siderAI = 'Sider AI';
+
+    case zanistaAI = 'Zanista AI';
+
+    case qualified = 'Qualified';
+
+    case poggioLabs = 'Poggio Labs';
+
+    case liner = 'Liner';
+
+    case huggingFace = 'Hugging Face';
+
+    case runpod = 'RunPod';
+
+    case statusnest = 'StatusNest';
+
+    case hypestat = 'HypeStat';
+
+    case lazyweb = 'LazyWeb';
+
+    case cognitionAI = 'Cognition AI';
+
+    case crawlspace = 'Crawlspace';
+
+    case characterTechnologies = 'Character Technologies';
+
+    case webzio = 'Webz.io';
+
+    case ward = 'W.A.R.D.';
+
+    case serAcquisition = 'SER Acquisition';
+
+    case sideGuideTechnologies = 'SideGuide Technologies';
+
+    case xAI = 'X.AI';
+
+    case cohere = 'Cohere';
+
+    case bigSurAI = 'Big Sur AI';
+
+    case groq = 'Groq';
+
+    case togetherComputer = 'Together Computer';
+
+    case replicate = 'Replicate';
+
+    case universityOfGeorgia = 'University of Georgia';
+
+    case scrubTheWeb = 'ScrubTheWeb';
+
+    case crazywebcrawler = 'crazywebcrawler';
+
+    case kitsuregawaLaboratory = 'Kitsuregawa Laboratory';
+
+    case moreoverTechnologies = 'Moreover Technologies';
+
+    case searchme = 'searchme';
+
+    case stefanoAlimonti = 'Stefano Alimonti';
+
+    case tiscali = 'Tiscali';
+
+    case itam = 'ITam';
+
+    case janBogutzki = 'Jan Bogutzki';
+
+    case jusProg = 'JusProg';
+
+    case niict = 'NIICT';
+
+    case botje = 'botje';
+
+    case pagedesign = 'Pagedesign';
+
+    case sindreSorhus = 'Sindre Sorhus';
+
+    case siteExplorer = 'SiteExplorer';
+
+    case soso = 'soso';
+
+    case yioop = 'Yioop!';
+
+    case zookabot = 'zookabot';
+
+    case aboutus = 'aboutus';
+
+    case bibliothequeNationaleDeFrance = 'Bibliotheque nationale de France';
+
+    case discord = 'Discord';
+
+    case linkpad = 'LinkPad';
+
+    case readItLater = 'Read It Later';
+
+    case swoppenSystems = 'Swoppen Systems';
+
+    case tweetedTimes = 'TweetedTimes';
+
+    case askpeter = 'askpeter';
+
+    case blekko = 'Blekko';
+
+    case bloglovin = 'bloglovin';
+
+    case embedly = 'Embedly';
+
+    case laboratoryForWebAlgorithmics = 'Laboratory for Web Algorithmics';
+
+    case paperLi = 'paper.li';
+
+    case pipl = 'Pipl';
+
+    case theBritishLegalDepositLibraries = 'The British Legal Deposit Libraries';
+
+    case wesee = 'WeSEE';
+
+    case wotbox = 'Wotbox';
+
+    case zetaCentauri = 'Zeta Centauri';
+
+    case adnorm = 'Adnorm';
+
+    case amirKrause = 'Amir Krause';
+
+    case cloudFlare = 'CloudFlare';
+
+    case lucidworks = 'Lucidworks';
+
+    case neeva = 'Neeva';
+
+    case netSeer = 'NetSeer';
+
+    case nttResonant = 'NTT Resonant';
+
+    case pagesInventory = 'PagesInventory';
+
+    case theDocumentFoundation = 'The Document Foundation';
+
+    case theFriendicaProject = 'the friendica project';
+
+    case umechando = 'umechando';
+
+    case wada = 'WADA';
+
+    case abonti = 'Abonti';
+
+    case aboundex = 'Aboundex';
+
+    case accoona = 'Accoona';
+
+    case backlinktest = 'backlinktest';
+
+    case bibliotecaNacionalDeEspana = 'Biblioteca Nacional de España';
+
+    case ea = 'EA';
+
+    case freewebmonitoring = 'freewebmonitoring';
+
+    case groupHigh = 'GroupHigh';
+
+    case modeMobile = 'Mode Mobile';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -2978,7 +3160,7 @@ enum Company: string implements CompanyInterface
             'pia', 'pia private internet access, inc' => self::pia,
             'tuyafeng', 'tu-yafeng', 'tu yafeng' => self::tuYafeng,
             'pythonsoftwarefoundation', 'python-software-foundation', 'python software foundation' => self::pythonSoftwareFoundation,
-            'openai', 'openai lp' => self::openai,
+            'openai', 'openai opco, llc' => self::openai,
             'telegram', 'telegram messenger inc.' => self::telegram,
             'cloudviewtechnology', 'cloudview-technology', 'cloudview technology' => self::cloudviewTechnology,
             'soulsoft', 'soul-soft' => self::soulSoft,
@@ -3641,6 +3823,97 @@ enum Company: string implements CompanyInterface
             'technisat' => self::technisat,
             'openvas', 'open-vas' => self::openVAS,
             'ericsson' => self::ericsson,
+            'anthology', 'anthology inc.' => self::anthology,
+            'cwowdefu' => self::cwowdefu,
+            'iabtechnologylaboratory', 'iab technology laboratory, inc.', 'iab-technology', 'iab technology laboratory' => self::iabTechnologyLaboratory,
+            'krip' => self::krip,
+            'cybercircus', 'cyber circus limited', 'cyber-circus', 'cyber circus' => self::cyberCircus,
+            'tapclicks', 'tapclicks, inc.', 'tap-clicks' => self::tapClicks,
+            'modat', 'modat b.v.' => self::modat,
+            'addsearch', 'addsearch oy', 'add-search' => self::addSearch,
+            'prorataai', 'prorataai, inc.', 'pro-rata-ai' => self::proRataAI,
+            'sbintuitions', 'sb intuitions corp.', 'sb-intuitions', 'sb intuitions' => self::sbIntuitions,
+            'siderai', 'sider-ai', 'sider ai' => self::siderAI,
+            'zanistaai', 'zanista ai ltd.', 'zanista-ai', 'zanista ai' => self::zanistaAI,
+            'qualified', 'qualified.com, inc.' => self::qualified,
+            'poggiolabs', 'poggio labs, inc.', 'poggio-labs', 'poggio labs' => self::poggioLabs,
+            'liner' => self::liner,
+            'huggingface', 'hugging face, inc', 'hugging-face', 'hugging face' => self::huggingFace,
+            'runpod', 'runpod inc.' => self::runpod,
+            'statusnest' => self::statusnest,
+            'hypestat' => self::hypestat,
+            'lazyweb', 'lazyweb inc.' => self::lazyweb,
+            'cognitionai', 'cognition ai, inc.', 'cognition-ai', 'cognition ai' => self::cognitionAI,
+            'crawlspace', 'crawlspace company' => self::crawlspace,
+            'charactertechnologies', 'character technologies, inc.', 'character-technologies', 'character technologies' => self::characterTechnologies,
+            'webzio', 'webz.io ltd.', 'webz.io' => self::webzio,
+            'ward', 'w.a.r.d. llc', 'w.a.r.d.' => self::ward,
+            'seracquisition', 'ser acquisition inc.', 'ser-acquisition', 'ser acquisition' => self::serAcquisition,
+            'sideguidetechnologies', 'sideguide technologies, inc.', 'sideguide-technologies', 'sideguide technologies' => self::sideGuideTechnologies,
+            'xai', 'x.ai llc', 'x-ai', 'x.ai' => self::xAI,
+            'cohere', 'cohere, inc.' => self::cohere,
+            'bigsurai', 'big sur ai, inc.', 'big-sur-ai', 'big sur ai' => self::bigSurAI,
+            'groq', 'groq, inc.' => self::groq,
+            'togethercomputer', 'together computer inc.', 'together-computer', 'together computer' => self::togetherComputer,
+            'replicate', 'replicate, inc.' => self::replicate,
+            'universityofgeorgia', 'school of computing at the university of georgia (uga)', 'university-of-georgia', 'university of georgia' => self::universityOfGeorgia,
+            'scrubtheweb', 'scrub-the-web' => self::scrubTheWeb,
+            'crazywebcrawler' => self::crazywebcrawler,
+            'kitsuregawalaboratory', 'kitsuregawa laboratory, the university of tokyo', 'kitsuregawa-laboratory', 'kitsuregawa laboratory' => self::kitsuregawaLaboratory,
+            'moreovertechnologies', 'moreover-technologies', 'moreover technologies, inc', 'moreover technologies' => self::moreoverTechnologies,
+            'searchme' => self::searchme,
+            'stefanoalimonti', 'stefano-alimonti', 'stefano alimonti' => self::stefanoAlimonti,
+            'tiscali', 'tiscali italia s.p.a' => self::tiscali,
+            'itam', 'itam gmbh' => self::itam,
+            'janbogutzki', 'jan-bogutzki', 'jan bogutzki' => self::janBogutzki,
+            'jusprog', 'jus-prog', 'jusprog e.v.' => self::jusProg,
+            'niict', 'national institute of information and communications technology, japan' => self::niict,
+            'botje' => self::botje,
+            'pagedesign', 'pagedesign gmbh' => self::pagedesign,
+            'sindresorhus', 'sindre sorhus' => self::sindreSorhus,
+            'siteexplorer', 'site-explorer' => self::siteExplorer,
+            'soso' => self::soso,
+            'yioop', 'yioop!' => self::yioop,
+            'zookabot' => self::zookabot,
+            'aboutus', 'about-us' => self::aboutus,
+            'bibliothequenationaledefrance', 'bibliotheque-nationale-de-france', 'bibliotheque nationale de france' => self::bibliothequeNationaleDeFrance,
+            'discord' => self::discord,
+            'linkpad' => self::linkpad,
+            'readitlater', 'read-it-later', 'read it later, inc.', 'read it later' => self::readItLater,
+            'swoppensystems', 'swoppen-systems', 'swoppen systems gmbh', 'swoppen systems' => self::swoppenSystems,
+            'tweetedtimes', 'tweeted-times' => self::tweetedTimes,
+            'askpeter', 'ask-peter' => self::askpeter,
+            'blekko', 'blekko inc.' => self::blekko,
+            'bloglovin' => self::bloglovin,
+            'embedly', 'embedly llc', 'embed.ly' => self::embedly,
+            'laboratoryforwebalgorithmics', 'law.di.unimi.it', 'laboratory for web algorithmics at university of milan', 'laboratory for web algorithmics' => self::laboratoryForWebAlgorithmics,
+            'paperli', 'paper.li' => self::paperLi,
+            'pipl' => self::pipl,
+            'thebritishlegaldepositlibraries', 'the-british-legal-deposit-libraries', 'the british legal deposit libraries' => self::theBritishLegalDepositLibraries,
+            'wesee', 'wesee ltd' => self::wesee,
+            'wotbox' => self::wotbox,
+            'zetacentauri', 'zeta centauri' => self::zetaCentauri,
+            'adnorm', 'adnorm, llc.' => self::adnorm,
+            'amirkrause', 'amir-krause', 'amir krause' => self::amirKrause,
+            'cloudflare', 'cloud-flare', 'cloudflare, inc.' => self::cloudFlare,
+            'lucidworks' => self::lucidworks,
+            'neeva', 'neeva inc.' => self::neeva,
+            'netseer', 'net-seer', 'netseer, inc.' => self::netSeer,
+            'nttresonant', 'ntt-resonant', 'ntt resonant inc.', 'ntt resonant' => self::nttResonant,
+            'pagesinventory', 'pages-inventory' => self::pagesInventory,
+            'thedocumentfoundation', 'the-document-foundation', 'the document foundation' => self::theDocumentFoundation,
+            'thefriendicaproject', 'the friendica project' => self::theFriendicaProject,
+            'umechando' => self::umechando,
+            'wada' => self::wada,
+            'abonti' => self::abonti,
+            'aboundex' => self::aboundex,
+            'accoona' => self::accoona,
+            'backlinktest', 'backlink-test' => self::backlinktest,
+            'bibliotecanacionaldeespana', 'biblioteca-nacional-de-espana', 'biblioteca nacional de españa' => self::bibliotecaNacionalDeEspana,
+            'ea', 'electronic-arts', 'electronic arts inc' => self::ea,
+            'freewebmonitoring', 'free-web-monitoring' => self::freewebmonitoring,
+            'grouphigh', 'group-high', 'grouphigh llc' => self::groupHigh,
+            'modemobile', 'mode-mobile', 'mode mobile' => self::modeMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -3786,7 +4059,7 @@ enum Company: string implements CompanyInterface
             self::quark => 'Quark Team',
             self::deepseekAI => 'Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd.',
             self::pia => 'PIA Private Internet Access, Inc',
-            self::openai => 'OpenAI LP',
+            self::openai => 'OpenAI OpCo, LLC',
             self::telegram => 'Telegram Messenger Inc.',
             self::qihoo => 'Qihoo 360 Technology Co. Ltd.',
             self::line => 'LINE Corporation',
@@ -4112,6 +4385,54 @@ enum Company: string implements CompanyInterface
             self::ionos => 'IONOS SE',
             self::sfxEntertainment => 'SFX Entertainment, Inc.',
             self::badaas => 'BaDaaS SRL',
+            self::anthology => 'Anthology Inc.',
+            self::iabTechnologyLaboratory => 'IAB Technology Laboratory, Inc.',
+            self::cyberCircus => 'Cyber Circus Limited',
+            self::tapClicks => 'TapClicks, Inc.',
+            self::modat => 'Modat B.V.',
+            self::addSearch => 'AddSearch Oy',
+            self::proRataAI => 'ProRataAI, Inc.',
+            self::sbIntuitions => 'SB Intuitions Corp.',
+            self::zanistaAI => 'Zanista AI Ltd.',
+            self::qualified => 'Qualified.com, Inc.',
+            self::poggioLabs => 'Poggio Labs, Inc.',
+            self::huggingFace => 'Hugging Face, Inc',
+            self::runpod => 'RunPod Inc.',
+            self::lazyweb => 'LazyWeb Inc.',
+            self::cognitionAI => 'Cognition AI, Inc.',
+            self::crawlspace => 'Crawlspace Company',
+            self::characterTechnologies => 'Character Technologies, Inc.',
+            self::webzio => 'Webz.io Ltd.',
+            self::ward => 'W.A.R.D. LLC',
+            self::serAcquisition => 'SER Acquisition Inc.',
+            self::sideGuideTechnologies => 'SideGuide Technologies, Inc.',
+            self::xAI => 'X.AI LLC',
+            self::cohere => 'Cohere, Inc.',
+            self::bigSurAI => 'Big Sur AI, Inc.',
+            self::groq => 'Groq, Inc.',
+            self::togetherComputer => 'Together Computer Inc.',
+            self::replicate => 'Replicate, Inc.',
+            self::universityOfGeorgia => 'School of Computing at the University of Georgia (UGA)',
+            self::kitsuregawaLaboratory => 'Kitsuregawa Laboratory, The University of Tokyo',
+            self::moreoverTechnologies => 'Moreover Technologies, Inc',
+            self::tiscali => 'Tiscali Italia S.p.a',
+            self::itam => 'ITam GmbH',
+            self::jusProg => 'JusProg e.V.',
+            self::niict => 'National Institute of Information and Communications Technology, Japan',
+            self::pagedesign => 'Pagedesign GmbH',
+            self::readItLater => 'Read It Later, Inc.',
+            self::swoppenSystems => 'Swoppen Systems GmbH',
+            self::blekko => 'Blekko Inc.',
+            self::embedly => 'Embedly LLC',
+            self::laboratoryForWebAlgorithmics => 'Laboratory for Web Algorithmics at University of Milan',
+            self::wesee => 'WeSEE Ltd',
+            self::adnorm => 'Adnorm, LLC.',
+            self::cloudFlare => 'CloudFlare, Inc.',
+            self::neeva => 'Neeva Inc.',
+            self::netSeer => 'NetSeer, Inc.',
+            self::nttResonant => 'NTT Resonant Inc.',
+            self::ea => 'Electronic Arts Inc',
+            self::groupHigh => 'GroupHigh LLC',
             self::unknown => null,
             default => $this->value,
         };
@@ -4510,6 +4831,57 @@ enum Company: string implements CompanyInterface
             self::orangeSPV => 'spv',
             self::michaelSchoebel => 'michael-schoebel',
             self::openVAS => 'open-vas',
+            self::iabTechnologyLaboratory => 'iab-technology',
+            self::cyberCircus => 'cyber-circus',
+            self::tapClicks => 'tap-clicks',
+            self::addSearch => 'add-search',
+            self::proRataAI => 'pro-rata-ai',
+            self::sbIntuitions => 'sb-intuitions',
+            self::siderAI => 'sider-ai',
+            self::zanistaAI => 'zanista-ai',
+            self::poggioLabs => 'poggio-labs',
+            self::huggingFace => 'hugging-face',
+            self::cognitionAI => 'cognition-ai',
+            self::characterTechnologies => 'character-technologies',
+            self::webzio => 'webz.io',
+            self::serAcquisition => 'ser-acquisition',
+            self::sideGuideTechnologies => 'sideguide-technologies',
+            self::xAI => 'x-ai',
+            self::bigSurAI => 'big-sur-ai',
+            self::togetherComputer => 'together-computer',
+            self::universityOfGeorgia => 'university-of-georgia',
+            self::scrubTheWeb => 'scrub-the-web',
+            self::kitsuregawaLaboratory => 'kitsuregawa-laboratory',
+            self::moreoverTechnologies => 'moreover-technologies',
+            self::stefanoAlimonti => 'stefano-alimonti',
+            self::janBogutzki => 'jan-bogutzki',
+            self::jusProg => 'jus-prog',
+            self::sindreSorhus => 'sindre sorhus',
+            self::siteExplorer => 'site-explorer',
+            self::aboutus => 'about-us',
+            self::bibliothequeNationaleDeFrance => 'bibliotheque-nationale-de-france',
+            self::readItLater => 'read-it-later',
+            self::swoppenSystems => 'swoppen-systems',
+            self::tweetedTimes => 'tweeted-times',
+            self::askpeter => 'ask-peter',
+            self::embedly => 'embed.ly',
+            self::laboratoryForWebAlgorithmics => 'law.di.unimi.it',
+            self::paperLi => 'paper.li',
+            self::theBritishLegalDepositLibraries => 'the-british-legal-deposit-libraries',
+            self::zetaCentauri => 'zeta centauri',
+            self::amirKrause => 'amir-krause',
+            self::cloudFlare => 'cloud-flare',
+            self::netSeer => 'net-seer',
+            self::nttResonant => 'ntt-resonant',
+            self::pagesInventory => 'pages-inventory',
+            self::theDocumentFoundation => 'the-document-foundation',
+            self::theFriendicaProject => 'the friendica project',
+            self::backlinktest => 'backlink-test',
+            self::bibliotecaNacionalDeEspana => 'biblioteca-nacional-de-espana',
+            self::ea => 'electronic-arts',
+            self::freewebmonitoring => 'free-web-monitoring',
+            self::groupHigh => 'group-high',
+            self::modeMobile => 'mode-mobile',
             default => $this->name,
         };
     }

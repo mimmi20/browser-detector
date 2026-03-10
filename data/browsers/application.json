@@ -1505,5 +1505,55 @@
       ]
     },
     "engine": null
+  },
+  "redline-client": {
+    "name": "Redline Client",
+    "manufacturer": "redline",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "REDLINECLIENT.+V"
+      ]
+    },
+    "engine": null
+  },
+  "microsoft-power-query": {
+    "name": "Microsoft Power Query",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Microsoft\\.Data\\.Mashup"
+      ]
+    },
+    "engine": null
+  },
+  "skype-for-business": {
+    "name": "Skype for Business",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Skype for Business",
+        "OC\\/"
+      ]
+    },
+    "engine": null
+  },
+  "microsoft cryptoapi": {
+    "name": "Windows CryptoAPI",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Microsoft CryptoAPI",
+        "Microsoft\\-CryptoAPI"
+      ]
+    },
+    "engine": "unknown"
   }
 }

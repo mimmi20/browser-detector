@@ -1297,6 +1297,8 @@ final class Device implements DeviceInterface
             'redmi 9c' => 'xiaomi=xiaomi redmi 9c',
             'redmi 9' => 'xiaomi=xiaomi redmi 9',
             'poco m3 pro 5g' => 'xiaomi=xiaomi poco m3 pro 5g',
+            'redmi k20 pro' => 'xiaomi=xiaomi redmi k20 pro',
+            'mi 11t pro' => 'xiaomi=xiaomi mi 11t pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2600,6 +2602,7 @@ final class Device implements DeviceInterface
             'sm-g3509', 'samsung sm-g3509' => 'samsung=samsung sm-g3509',
             'sm-g350', 'samsung sm-g350' => 'samsung=samsung sm-g350',
             'sm-t310', 'samsung sm-t310' => 'samsung=samsung sm-t310',
+            'sm-p620', 'samsung sm-p620' => 'samsung=samsung sm-p620',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3326,6 +3329,10 @@ final class Device implements DeviceInterface
             'lenovo n23 yoga/flex 11 chromebook', 'lenovo n23 yoga' => 'lenovo=lenovo n23 yoga/flex 11 chromebook',
             'tb330fup' => 'lenovo=lenovo tb330fup',
             'a301lv' => 'lenovo=lenovo a301lv',
+            'tb336fu' => 'lenovo=lenovo tb336fu',
+            'tb336zu' => 'lenovo=lenovo tb336zu',
+            'tb361fu' => 'lenovo=lenovo tb361fu',
+            'tb361zu' => 'lenovo=lenovo tb361zu',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -4379,6 +4386,7 @@ final class Device implements DeviceInterface
             'v1924a' => 'vivo=vivo v1924a',
             'v2072a' => 'vivo=vivo v2072a',
             'v1950a' => 'vivo=vivo v1950a',
+            'vivo x9plus' => 'vivo=vivo x9 plus',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -4492,6 +4500,7 @@ final class Device implements DeviceInterface
             'wp60' => 'oukitel=oukitel wp60',
             'rt3 plus' => 'oukitel=oukitel rt3 plus',
             'wp9' => 'oukitel=oukitel wp9',
+            'c61 pro' => 'oukitel=oukitel c61 pro',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -4666,6 +4675,7 @@ final class Device implements DeviceInterface
             'fire 7' => 'doogee=doogee fire 7',
             'note56 plus' => 'doogee=doogee note 56 plus',
             'v max plus' => 'doogee=doogee v max plus',
+            'tab a9+' => 'doogee=doogee tab a9+',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             'shift6m' => 'shift-phones=shift-phones shift6m',
@@ -5120,6 +5130,7 @@ final class Device implements DeviceInterface
             'lifetab_p831x.2' => 'medion=medion lifetab p831x.2',
             'lifetab e1091x' => 'medion=medion lifetab e1091x',
             'lifetab e1044x' => 'medion=medion lifetab e1044x',
+            'lifetab_p1075x' => 'medion=medion lifetab p1075x',
             // caterpillar
             's60' => 'caterpillar=caterpillar s60',
             's41' => 'caterpillar=caterpillar s41',
@@ -5345,6 +5356,7 @@ final class Device implements DeviceInterface
             'hisense u60' => 'hisense=hisense u60',
             'hisense e71' => 'hisense=hisense e71',
             'hisense e50s 128gb' => 'hisense=hisense e50s 128gb',
+            'hisense u607' => 'hisense=hisense u607',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa
@@ -5466,6 +5478,10 @@ final class Device implements DeviceInterface
             'sh-53d' => 'sharp=sharp sh-53d',
             'sh-m19s-y' => 'sharp=sharp sh-m19s-y',
             'sh-03k' => 'sharp=sharp sh-03k',
+            '908sh' => 'sharp=sharp 908sh',
+            'sh-51a' => 'sharp=sharp sh-51a',
+            'shg01' => 'sharp=sharp shg01',
+            'sh-rm14' => 'sharp=sharp sh-rm14',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
@@ -5877,6 +5893,26 @@ final class Device implements DeviceInterface
             'tecno ci6n', 'tecno mobile ci6n' => 'tecno=tecno ci6n',
             'tecno b1f', 'tecno mobile b1f' => 'tecno=tecno b1f',
             'tecno b1c', 'tecno mobile b1c' => 'tecno=tecno b1c',
+            'tecno pr651h', 'tecno mobile pr651h' => 'tecno=tecno pr651h',
+            'tecno kf6', 'tecno mobile kf6' => 'tecno=tecno kf6',
+            'tecno kf6j', 'tecno mobile kf6j' => 'tecno=tecno kf6j',
+            'tecno kf6i', 'tecno mobile kf6i' => 'tecno=tecno kf6i',
+            'tecno kf6k', 'tecno mobile kf6k' => 'tecno=tecno kf6k',
+            'tecno pr651', 'tecno mobile pr651' => 'tecno=tecno pr651',
+            'tecno pr651e', 'tecno mobile pr651e' => 'tecno=tecno pr651e',
+            'tecno kf6m', 'tecno mobile kf6m' => 'tecno=tecno kf6m',
+            'tecno kf6h', 'tecno mobile kf6h' => 'tecno=tecno kf6h',
+            'tecno kf6n', 'tecno mobile kf6n' => 'tecno=tecno kf6n',
+            'tecno kd7h', 'tecno mobile kd7h' => 'tecno=tecno kd7h',
+            'tecno kc8', 'tecno mobile kc8' => 'tecno=tecno kc8',
+            'tecno kc6', 'tecno mobile kc6' => 'tecno=tecno kc6',
+            'tecno kb8', 'tecno mobile kb8' => 'tecno=tecno kb8',
+            'tecno kb7', 'tecno mobile kb7' => 'tecno=tecno kb7',
+            'tecno ck7n', 'tecno mobile ck7n' => 'tecno=tecno ck7n',
+            'tecno cd7', 'tecno mobile cd7' => 'tecno=tecno cd7',
+            'tecno cc7', 'tecno mobile cc7' => 'tecno=tecno cc7',
+            'tecno ca7', 'tecno mobile ca7' => 'tecno=tecno ca7',
+            'tecno bb2', 'tecno mobile bb2' => 'tecno=tecno bb2',
             // foxxd
             'foxxd c65' => 'foxxd=foxxd c65',
             // ceibal
@@ -7746,6 +7782,10 @@ final class Device implements DeviceInterface
             'power 5' => 'leagoo=leagoo power 5',
             // qmobile
             'view max pro' => 'qmobile=qmobile view max pro',
+            // cwowdefu
+            'f12w_eea' => 'cwowdefu=cwowdefu f12w_eea',
+            // krip
+            'krip_k4' => 'krip=krip k4',
             // other
             default => null,
         };

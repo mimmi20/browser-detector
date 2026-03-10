@@ -725,7 +725,7 @@
     "engine": null
   },
   "semantic-scholar-bot": {
-    "name": "SemanticScholarBot",
+    "name": "Semantic Scholar Bot",
     "manufacturer": "allen-institute",
     "type": "crawler",
     "version": {
@@ -2044,7 +2044,7 @@
     "engine": null
   },
   "zoom-bot": {
-    "name": "Zoombot",
+    "name": "ZoomBot",
     "manufacturer": "zoom",
     "type": "crawler",
     "version": {
@@ -2414,6 +2414,1079 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Favicon"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "blackboard-ally": {
+    "name": "Blackboard Ally",
+    "manufacturer": "anthology",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "blackboardally"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rogerbot": {
+    "name": "Rogerbot",
+    "manufacturer": "seomoz",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "rogerbot",
+        "rogerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ads-txt-crawler": {
+    "name": "AdsTxtCrawler",
+    "manufacturer": "iab-technology",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdsTxtCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "deepfield-genome": {
+    "name": "Deepfield Genome",
+    "manufacturer": "nokia",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GenomeCrawlerd"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "semantic-visions.com crawler": {
+    "name": "svEye",
+    "manufacturer": "semantic-visions",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "semantic\\-visions.com crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "you-bot": {
+    "name": "YouBot",
+    "manufacturer": "su-sea",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YouBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "scamadviser-external-hit": {
+    "name": "Scamadviser External Hit",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ScamadviserExternalHit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sitechecker-bot-crawler": {
+    "name": "SiteCheckerBotCrawler",
+    "manufacturer": "cyber-circus",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SiteCheckerBotCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "infegy bot": {
+    "name": "Infegy Bot",
+    "manufacturer": "infegy",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "plukkie": {
+    "name": "Plukkie",
+    "manufacturer": "botje",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Plukkie"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domaincrawler": {
+    "name": "DomainCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomainCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "raven-crawler": {
+    "name": "RavenCrawler",
+    "manufacturer": "tap-clicks",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RavenCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "larbin": {
+    "name": "Larbin",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "binlar\\_",
+        "larbin\\_",
+        "larbin"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandexbot-mirror-detector": {
+    "name": "YandexBot-MirrorDetector",
+    "manufacturer": "yandex",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MirrorDetector"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zookabot": {
+    "name": "Zookabot",
+    "manufacturer": "zookabot",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zookabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "openwebspider": {
+    "name": "OpenWebSpider",
+    "manufacturer": "stefano-alimonti",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OpenWebSpider v",
+        "OpenWebSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yourls": {
+    "name": "Yourls",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YOURLS v",
+        "YOURLS"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "embedly": {
+    "name": "Embedly",
+    "manufacturer": "embed.ly",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Embedly"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seoprofiler": {
+    "name": "OpenLinkProfiler",
+    "manufacturer": "axandra",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "spbot",
+        "sp_auditbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ssearch crawler": {
+    "name": "sSearch Crawler",
+    "manufacturer": "semantissimo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sSearch Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netseer crawler": {
+    "name": "NetSeer Crawler",
+    "manufacturer": "net-seer",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetSeer crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sistrix crawler": {
+    "name": "Sistrix Crawler",
+    "manufacturer": "sistrix",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sistrix optimizer": {
+    "name": "Sistrix Optimizer",
+    "manufacturer": "sistrix",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "gluten free crawler": {
+    "name": "Gluten Free Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gluten Free Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "applebot-extended": {
+    "name": "Applebot-Extended",
+    "manufacturer": "apple",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Applebot-Extended"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kadobot": {
+    "name": "KadoBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KadoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "monsidobot": {
+    "name": "Monsidobot",
+    "manufacturer": "acquia",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Monsidobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "facebook-bot": {
+    "name": "FaceBook Bot",
+    "manufacturer": "meta",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "facebookplatform",
+        "FacebookBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "add-search-bot": {
+    "name": "AddSearchBot",
+    "manufacturer": "add-search",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AddSearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-additional-bot": {
+    "name": "YandexAdditionalBot",
+    "manufacturer": "yandex",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexAdditionalBot",
+        "YandexAdditional"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pro-rata": {
+    "name": "ProRata",
+    "manufacturer": "pro-rata-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ProRata"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot-content-search-bot": {
+    "name": "HubSpotContentSearchBot",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpotContentSearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "amazon-kendra": {
+    "name": "Amazon Kendra",
+    "manufacturer": "amazon",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "amazon-kendra"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "amzn-search-bot": {
+    "name": "Amzn-SearchBot",
+    "manufacturer": "amazon",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Amzn-SearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ias-wombles": {
+    "name": "IAS Wombles",
+    "manufacturer": "integral-ad-science",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IAS Wombles"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sb-intuitions-bot": {
+    "name": "SBIntuitionsBot",
+    "manufacturer": "sb-intuitions",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SBIntuitionsBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sider-bot": {
+    "name": "Sider Bot",
+    "manufacturer": "sider-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gochitchat\\.ai"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zanista-bot": {
+    "name": "ZanistaBot",
+    "manufacturer": "zanista-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ZanistaBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "qualified-bot": {
+    "name": "QualifiedBot",
+    "manufacturer": "qualified",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QualifiedBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "poggio-citations": {
+    "name": "Poggio-Citations",
+    "manufacturer": "poggio-labs",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Poggio-Citations ",
+        "Poggio-Citations"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ai2bot-deepresearch-eval": {
+    "name": "Ai2Bot-DeepResearchEval",
+    "manufacturer": "allen-institute",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ai2Bot-DeepResearchEval"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "liner-bot": {
+    "name": "LinerBot",
+    "manufacturer": "liner",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gemini-ai": {
+    "name": "Gemini-AI",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gemini-AI"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bard-ai": {
+    "name": "Bard-AI",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bard-AI"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "claude-bot": {
+    "name": "ClaudeBot",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Anthropic-Claude"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "chatgpt-browser": {
+    "name": "ChatGPT-Browser",
+    "manufacturer": "openai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ChatGPT-Browser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-agent-search": {
+    "name": "GoogleAgent-Search",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoogleAgent-Search"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hugging-face-bot": {
+    "name": "HuggingFaceBot",
+    "manufacturer": "hugging-face",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HuggingFace-Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "runpod-bot": {
+    "name": "RunPodBot",
+    "manufacturer": "runpod",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RunPod-Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "statusnest-backlink-spider": {
+    "name": "StatusNestBacklinkSpider",
+    "manufacturer": "statusnest",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StatusNestBacklinkSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hypestat-bot": {
+    "name": "HypeStatBot",
+    "manufacturer": "hypestat",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hypestat"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "andibot": {
+    "name": "Andibot",
+    "manufacturer": "lazyweb",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Andibot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-pinpoint": {
+    "name": "Google-Pinpoint",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Pinpoint"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "devin": {
+    "name": "Devin",
+    "manufacturer": "cognition-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Devin"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "crawlspace": {
+    "name": "Crawlspace",
+    "manufacturer": "crawlspace",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Crawlspace"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "deepseek-bot": {
+    "name": "DeepseekBot",
+    "manufacturer": "deepseek-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DeepseekBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "character-ai": {
+    "name": "Character-AI",
+    "manufacturer": "character-technologies",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Character-AI"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webzio-extended": {
+    "name": "webzio-extended",
+    "manufacturer": "webz.io",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "webzio-extended"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webzio": {
+    "name": "webzio",
+    "manufacturer": "webz.io",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "webzio-extended"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "omgili-bot": {
+    "name": "Omgili Bot",
+    "manufacturer": "webz.io",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "omgilibot",
+        "omgili"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ai2bot-dolma": {
+    "name": "Ai2Bot-Dolma",
+    "manufacturer": "allen-institute",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ai2Bot-Dolma"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ai2bot": {
+    "name": "Ai2Bot",
+    "manufacturer": "allen-institute",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ai2Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "amzn-user": {
+    "name": "Amzn-User",
+    "manufacturer": "amazon",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Amzn-User"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "claude-user": {
+    "name": "Claude-User",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Claude-User"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seranking-backlinks-bot": {
+    "name": "SERankingBacklinksBot",
+    "manufacturer": "ser-acquisition",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SERankingBacklinksBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "firecrawl-agent": {
+    "name": "FirecrawlAgent",
+    "manufacturer": "sideguide-technologies",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FirecrawlAgent"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "xai-bot": {
+    "name": "xAI-Bot",
+    "manufacturer": "x-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "xAI-Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ezooms": {
+    "name": "Ezooms",
+    "manufacturer": "seomoz",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ezooms"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "quora link preview bot": {
+    "name": "Quora Link Preview Bot",
+    "manufacturer": "quora",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Quora Link Preview"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yahoocachesystem": {
+    "name": "Yahoo! Cache System",
+    "manufacturer": "yahoo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YahooCacheSystem"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tweetedtimes bot": {
+    "name": "TweetedTimes Bot",
+    "manufacturer": "tweeted-times",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TweetedTimes Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vkshare": {
+    "name": "VK Share Button",
+    "manufacturer": "vk",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "vkShare"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "icc-crawler": {
+    "name": "ICC-Crawler",
+    "manufacturer": "niict",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ICC\\-Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domainappender bot": {
+    "name": "DomainAppender Bot",
+    "manufacturer": "profound-networks",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomainAppender \\/",
+        "DomainAppender"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vagabondo": {
+    "name": "Vagabondo",
+    "manufacturer": "wise-guys",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Vagabondo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "woobot": {
+    "name": "WooRank",
+    "manufacturer": "woo-rank",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "woobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "linkpadbot": {
+    "name": "LinkpadBot",
+    "manufacturer": "linkpad",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinkpadBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "piplbot": {
+    "name": "PiplBot",
+    "manufacturer": "pipl",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PiplBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "charlotte": {
+    "name": "Charlotte",
+    "manufacturer": "searchme",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Charlotte"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "evc-batch": {
+    "name": "evc-batch",
+    "manufacturer": "evc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "evc\\-batch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ias-crawler": {
+    "name": "IAS Crawler",
+    "manufacturer": "integral-ad-science",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IAS Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cohere-training-data-crawler": {
+    "name": "cohere-training-data-crawler",
+    "manufacturer": "cohere",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "cohere-training-data-crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cohere-command": {
+    "name": "Cohere-Command",
+    "manufacturer": "cohere",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cohere-Command"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cohere-ai": {
+    "name": "Cohere-AI",
+    "manufacturer": "cohere",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "cohere-ai"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "big-sur-ai-bot": {
+    "name": "Big Sur AI Bot",
+    "manufacturer": "big-sur-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "bigsur\\.ai"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "groq-bot": {
+    "name": "Groq-Bot",
+    "manufacturer": "groq",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Groq-Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "together-bot": {
+    "name": "Together-Bot",
+    "manufacturer": "together-computer",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Together-Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "replicate-bot": {
+    "name": "Replicate-Bot",
+    "manufacturer": "replicate",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Replicate-Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "simbiat-software": {
+    "name": "Simbiat Software",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Simbiat Software"
       ]
     },
     "engine": "unknown"

@@ -523,6 +523,8 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "qtver=",
+        "Quicktime\\.",
+        "QuickTime\\.",
         "Quicktime",
         "QuickTime"
       ]
@@ -714,7 +716,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "WinampMPEG"
+        "WinampMPEG",
+        "Winamp"
       ]
     },
     "engine": "unknown"

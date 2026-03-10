@@ -241,5 +241,41 @@
       ]
     },
     "engine": null
+  },
+  "google-docs": {
+    "name": "Google Docs",
+    "manufacturer": "google",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoogleDocs"
+      ]
+    },
+    "engine": null
+  },
+  "amazon-buy-for-me": {
+    "name": "AmazonBuyForMe",
+    "manufacturer": "amazon",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AmazonBuyForMe"
+      ]
+    },
+    "engine": null
+  },
+  "nova-act": {
+    "name": "NovaAct",
+    "manufacturer": "amazon",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NovaAct"
+      ]
+    },
+    "engine": null
   }
 }
