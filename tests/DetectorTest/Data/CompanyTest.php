@@ -7828,6 +7828,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Mode Mobile',
                 'key' => 'mode-mobile',
             ],
+            [
+                'type' => 'Siber Systems',
+                'name' => 'Siber Systems Inc',
+                'brandname' => 'Siber Systems',
+                'key' => 'siber-systems',
+            ],
         ];
     }
 

@@ -2611,6 +2611,8 @@ enum Company: string implements CompanyInterface
 
     case modeMobile = 'Mode Mobile';
 
+    case siberSystems = 'Siber Systems';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3914,6 +3916,7 @@ enum Company: string implements CompanyInterface
             'freewebmonitoring', 'free-web-monitoring' => self::freewebmonitoring,
             'grouphigh', 'group-high', 'grouphigh llc' => self::groupHigh,
             'modemobile', 'mode-mobile', 'mode mobile' => self::modeMobile,
+            'sibersystems', 'siber systems inc', 'siber-systems', 'siber systems' => self::siberSystems,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4433,6 +4436,7 @@ enum Company: string implements CompanyInterface
             self::nttResonant => 'NTT Resonant Inc.',
             self::ea => 'Electronic Arts Inc',
             self::groupHigh => 'GroupHigh LLC',
+            self::siberSystems => 'Siber Systems Inc',
             self::unknown => null,
             default => $this->value,
         };
@@ -4882,6 +4886,7 @@ enum Company: string implements CompanyInterface
             self::freewebmonitoring => 'free-web-monitoring',
             self::groupHigh => 'group-high',
             self::modeMobile => 'mode-mobile',
+            self::siberSystems => 'siber-systems',
             default => $this->name,
         };
     }
