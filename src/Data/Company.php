@@ -2613,6 +2613,46 @@ enum Company: string implements CompanyInterface
 
     case siberSystems = 'Siber Systems';
 
+    case jooble = 'jooble';
+
+    case loadtime = 'LoadTime';
+
+    case metauri = 'metauri';
+
+    case paypal = 'Paypal';
+
+    case tegDesign = 'TEG Design';
+
+    case theOldReader = 'The Old Reader';
+
+    case viderem = 'Viderem';
+
+    case xmlSitemaps = 'XML Sitemaps';
+
+    case zaldamo = 'Zaldamo';
+
+    case zumInternet = 'ZUM internet';
+
+    case a6corp = 'A6 Corp';
+
+    case advbot = 'advbot';
+
+    case botRevolt = 'Bot Revolt';
+
+    case braedonVickers = 'Braedon Vickers';
+
+    case centil = 'CENTIL';
+
+    case projektDeutscherWortschatz = 'Projekt Deutscher Wortschatz';
+
+    case coursera = 'Coursera';
+
+    case creativeCommons = 'Creative Commons';
+
+    case dadapro = 'dadapro';
+
+    case duedil = 'DueDil';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3917,6 +3957,26 @@ enum Company: string implements CompanyInterface
             'grouphigh', 'group-high', 'grouphigh llc' => self::groupHigh,
             'modemobile', 'mode-mobile', 'mode mobile' => self::modeMobile,
             'sibersystems', 'siber systems inc', 'siber-systems', 'siber systems' => self::siberSystems,
+            'jooble' => self::jooble,
+            'loadtime' => self::loadtime,
+            'metauri' => self::metauri,
+            'paypal' => self::paypal,
+            'tegdesign', 'teg-design', 'teg design' => self::tegDesign,
+            'theoldreader', 'the-old-reader', 'the old reader' => self::theOldReader,
+            'viderem', 'viderem ab' => self::viderem,
+            'xmlsitemaps', 'xml-sitemaps', 'xml sitemaps' => self::xmlSitemaps,
+            'zaldamo', 'zaldamo llc' => self::zaldamo,
+            'zuminternet', 'zum-internet-corp', 'zum internet corp.', 'zum internet' => self::zumInternet,
+            'a6corp', 'a6 corp' => self::a6corp,
+            'advbot', 'adv-bot' => self::advbot,
+            'botrevolt', 'bot-revolt', 'bot revolt' => self::botRevolt,
+            'braedonvickers', 'braedon vickers' => self::braedonVickers,
+            'centil', 'centil-schweiz' => self::centil,
+            'projektdeutscherwortschatz', 'projekt-deutscher-wortschatz', 'projekt deutscher wortschatz an der universität leipzig', 'projekt deutscher wortschatz' => self::projektDeutscherWortschatz,
+            'coursera', 'coursera inc.' => self::coursera,
+            'creativecommons', 'creative-commons', 'creative commons' => self::creativeCommons,
+            'dadapro' => self::dadapro,
+            'duedil', 'duedil ltd' => self::duedil,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4437,6 +4497,13 @@ enum Company: string implements CompanyInterface
             self::ea => 'Electronic Arts Inc',
             self::groupHigh => 'GroupHigh LLC',
             self::siberSystems => 'Siber Systems Inc',
+            self::viderem => 'Viderem AB',
+            self::zaldamo => 'Zaldamo LLC',
+            self::zumInternet => 'ZUM internet Corp.',
+            self::centil => 'CENTIL-Schweiz',
+            self::projektDeutscherWortschatz => 'Projekt Deutscher Wortschatz an der Universität Leipzig',
+            self::coursera => 'Coursera Inc.',
+            self::duedil => 'DueDil Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -4887,6 +4954,16 @@ enum Company: string implements CompanyInterface
             self::groupHigh => 'group-high',
             self::modeMobile => 'mode-mobile',
             self::siberSystems => 'siber-systems',
+            self::tegDesign => 'teg-design',
+            self::theOldReader => 'the-old-reader',
+            self::xmlSitemaps => 'xml-sitemaps',
+            self::zumInternet => 'zum-internet-corp',
+            self::advbot => 'adv-bot',
+            self::botRevolt => 'bot-revolt',
+            self::braedonVickers => 'braedon vickers',
+            self::centil => 'centil-schweiz',
+            self::projektDeutscherWortschatz => 'projekt-deutscher-wortschatz',
+            self::creativeCommons => 'creative-commons',
             default => $this->name,
         };
     }
