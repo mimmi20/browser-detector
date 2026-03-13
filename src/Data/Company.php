@@ -2653,6 +2653,40 @@ enum Company: string implements CompanyInterface
 
     case duedil = 'DueDil';
 
+    case fairshare = 'Fairshare';
+
+    case feedblitz = 'FeedBlitz';
+
+    case forumposter = 'forumposter';
+
+    case gaduGadu = 'Gadu-Gadu';
+
+    case goDaddy = 'GoDaddy';
+
+    case infegy = 'Infegy';
+
+    case internetSeer = 'InternetSeer';
+
+    case iZSearch = 'iZSearch';
+
+    case jDeSilva = 'J de Silva';
+
+    case jonathanBennett = 'Jonathan Bennett';
+
+    case lipperhey = 'Lipperhey';
+
+    case muensterUniversityOfAppliedSciences = 'Muenster University of Applied Sciences';
+
+    case notePage = 'NotePage';
+
+    case oesterreichischeNationalbibliothek = 'Österreichische Nationalbibliothek';
+
+    case pageFreezerSoftware = 'PageFreezer Software';
+
+    case pdrlabs = 'pdrlabs';
+
+    case picmole = 'Picmole';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3977,6 +4011,23 @@ enum Company: string implements CompanyInterface
             'creativecommons', 'creative-commons', 'creative commons' => self::creativeCommons,
             'dadapro' => self::dadapro,
             'duedil', 'duedil ltd' => self::duedil,
+            'fairshare' => self::fairshare,
+            'feedblitz', 'feedblitz, llc' => self::feedblitz,
+            'forumposter', 'forum-poster' => self::forumposter,
+            'gadugadu', 'gadu-gadu', 'gadu-gadu s.a' => self::gaduGadu,
+            'godaddy', 'go-daddy', 'godaddy, llc' => self::goDaddy,
+            'infegy', 'infegy, inc.' => self::infegy,
+            'internetseer', 'internet-seer' => self::internetSeer,
+            'izsearch', 'iz-search' => self::iZSearch,
+            'jdesilva', 'j-de-silva', 'j de silva' => self::jDeSilva,
+            'jonathanbennett', 'jonathan-bennett', 'jonathan bennett' => self::jonathanBennett,
+            'lipperhey' => self::lipperhey,
+            'muensteruniversityofappliedsciences', 'muenster-university-of-applied-sciences', 'muenster university of applied sciences' => self::muensterUniversityOfAppliedSciences,
+            'notepage', 'note-page', 'notepage, inc.' => self::notePage,
+            'oesterreichischenationalbibliothek', 'oesterreichische nationalbibliothek', 'österreichische nationalbibliothek' => self::oesterreichischeNationalbibliothek,
+            'pagefreezersoftware', 'page-freezer-software', 'pagefreezer software inc.', 'pagefreezer software' => self::pageFreezerSoftware,
+            'pdrlabs' => self::pdrlabs,
+            'picmole' => self::picmole,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4504,6 +4555,12 @@ enum Company: string implements CompanyInterface
             self::projektDeutscherWortschatz => 'Projekt Deutscher Wortschatz an der Universität Leipzig',
             self::coursera => 'Coursera Inc.',
             self::duedil => 'DueDil Ltd',
+            self::feedblitz => 'FeedBlitz, LLC',
+            self::gaduGadu => 'Gadu-Gadu S.A',
+            self::goDaddy => 'GoDaddy, LLC',
+            self::infegy => 'Infegy, Inc.',
+            self::notePage => 'NotePage, Inc.',
+            self::pageFreezerSoftware => 'PageFreezer Software Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -4964,6 +5021,17 @@ enum Company: string implements CompanyInterface
             self::centil => 'centil-schweiz',
             self::projektDeutscherWortschatz => 'projekt-deutscher-wortschatz',
             self::creativeCommons => 'creative-commons',
+            self::forumposter => 'forum-poster',
+            self::gaduGadu => 'gadu-gadu',
+            self::goDaddy => 'go-daddy',
+            self::internetSeer => 'internet-seer',
+            self::iZSearch => 'iz-search',
+            self::jDeSilva => 'j-de-silva',
+            self::jonathanBennett => 'jonathan-bennett',
+            self::muensterUniversityOfAppliedSciences => 'muenster-university-of-applied-sciences',
+            self::notePage => 'note-page',
+            self::oesterreichischeNationalbibliothek => 'oesterreichische nationalbibliothek',
+            self::pageFreezerSoftware => 'page-freezer-software',
             default => $this->name,
         };
     }

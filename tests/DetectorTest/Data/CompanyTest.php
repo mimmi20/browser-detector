@@ -7948,6 +7948,108 @@ final class CompanyTest extends TestCase
                 'brandname' => 'DueDil',
                 'key' => 'duedil',
             ],
+            [
+                'type' => 'Fairshare',
+                'name' => 'Fairshare',
+                'brandname' => 'Fairshare',
+                'key' => 'fairshare',
+            ],
+            [
+                'type' => 'FeedBlitz',
+                'name' => 'FeedBlitz, LLC',
+                'brandname' => 'FeedBlitz',
+                'key' => 'feedblitz',
+            ],
+            [
+                'type' => 'forumposter',
+                'name' => 'forumposter',
+                'brandname' => 'forumposter',
+                'key' => 'forum-poster',
+            ],
+            [
+                'type' => 'Gadu-Gadu',
+                'name' => 'Gadu-Gadu S.A',
+                'brandname' => 'Gadu-Gadu',
+                'key' => 'gadu-gadu',
+            ],
+            [
+                'type' => 'GoDaddy',
+                'name' => 'GoDaddy, LLC',
+                'brandname' => 'GoDaddy',
+                'key' => 'go-daddy',
+            ],
+            [
+                'type' => 'Infegy',
+                'name' => 'Infegy, Inc.',
+                'brandname' => 'Infegy',
+                'key' => 'infegy',
+            ],
+            [
+                'type' => 'InternetSeer',
+                'name' => 'InternetSeer',
+                'brandname' => 'InternetSeer',
+                'key' => 'internet-seer',
+            ],
+            [
+                'type' => 'iZSearch',
+                'name' => 'iZSearch',
+                'brandname' => 'iZSearch',
+                'key' => 'iz-search',
+            ],
+            [
+                'type' => 'J de Silva',
+                'name' => 'J de Silva',
+                'brandname' => 'J de Silva',
+                'key' => 'j-de-silva',
+            ],
+            [
+                'type' => 'Jonathan Bennett',
+                'name' => 'Jonathan Bennett',
+                'brandname' => 'Jonathan Bennett',
+                'key' => 'jonathan-bennett',
+            ],
+            [
+                'type' => 'Lipperhey',
+                'name' => 'Lipperhey',
+                'brandname' => 'Lipperhey',
+                'key' => 'lipperhey',
+            ],
+            [
+                'type' => 'Muenster University of Applied Sciences',
+                'name' => 'Muenster University of Applied Sciences',
+                'brandname' => 'Muenster University of Applied Sciences',
+                'key' => 'muenster-university-of-applied-sciences',
+            ],
+            [
+                'type' => 'NotePage',
+                'name' => 'NotePage, Inc.',
+                'brandname' => 'NotePage',
+                'key' => 'note-page',
+            ],
+            [
+                'type' => 'Österreichische Nationalbibliothek',
+                'name' => 'Österreichische Nationalbibliothek',
+                'brandname' => 'Österreichische Nationalbibliothek',
+                'key' => 'oesterreichische nationalbibliothek',
+            ],
+            [
+                'type' => 'PageFreezer Software',
+                'name' => 'PageFreezer Software Inc.',
+                'brandname' => 'PageFreezer Software',
+                'key' => 'page-freezer-software',
+            ],
+            [
+                'type' => 'pdrlabs',
+                'name' => 'pdrlabs',
+                'brandname' => 'pdrlabs',
+                'key' => 'pdrlabs',
+            ],
+            [
+                'type' => 'Picmole',
+                'name' => 'Picmole',
+                'brandname' => 'Picmole',
+                'key' => 'picmole',
+            ],
         ];
     }
 
