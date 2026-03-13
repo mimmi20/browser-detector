@@ -2687,6 +2687,82 @@ enum Company: string implements CompanyInterface
 
     case picmole = 'Picmole';
 
+    case picsearch = 'Picsearch';
+
+    case plantRob = 'PlantRob';
+
+    case prlog = 'prlog';
+
+    case profoundNetworks = 'Profound Networks';
+
+    case remixation = 'Remixation';
+
+    case savenkeep = 'Savenkeep';
+
+    case seegnify = 'Seegnify';
+
+    case semantissimo = 'semantissimo';
+
+    case abakusInternetMarketing = 'ABAKUS Internet Marketing';
+
+    case setLinks = 'SetLinks';
+
+    case sophos = 'Sophos';
+
+    case suSea = 'SuSea';
+
+    case superfeedr = 'Superfeedr';
+
+    case theRocketScienceGroup = 'The Rocket Science Group';
+
+    case thingLink = 'ThingLink';
+
+    case thomasSchulte = 'Thomas Schulte';
+
+    case thumbshots = 'thumbshots';
+
+    case thunderstoneSoftware = 'Thunderstone Software';
+
+    case tumblr = 'Tumblr';
+
+    case veoozLabs = 'Veooz Labs';
+
+    case wasAlive = 'WASALive';
+
+    case wdg = 'WDG';
+
+    case webthumbnail = 'webthumbnail';
+
+    case zend = 'Zend';
+
+    case twoHundredPlease = '200please';
+
+    case alltop = 'Alltop';
+
+    case aolSoft = 'AOL Soft';
+
+    case apercite = 'Apercite';
+
+    case asiaWsNetwork = 'AsiaWS network';
+
+    case begun = 'begun';
+
+    case binarymonkey = 'binarymonkey';
+
+    case bobMottram = 'Bob Mottram';
+
+    case browsershots = 'browsershots';
+
+    case careerX = 'Career-x';
+
+    case checksite = 'CheckSite';
+
+    case cityMap = 'city-map';
+
+    case cookieReports = 'Cookie Reports';
+
+    case deadLinks = 'dead-links';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4028,6 +4104,44 @@ enum Company: string implements CompanyInterface
             'pagefreezersoftware', 'page-freezer-software', 'pagefreezer software inc.', 'pagefreezer software' => self::pageFreezerSoftware,
             'pdrlabs' => self::pdrlabs,
             'picmole' => self::picmole,
+            'picsearch', 'picsearch services ab' => self::picsearch,
+            'plantrob', 'plant-rob' => self::plantRob,
+            'prlog' => self::prlog,
+            'profoundnetworks', 'profound-networks', 'profound networks, llc', 'profound networks' => self::profoundNetworks,
+            'remixation', 'remixation, inc' => self::remixation,
+            'savenkeep' => self::savenkeep,
+            'seegnify' => self::seegnify,
+            'semantissimo' => self::semantissimo,
+            'abakusinternetmarketing', 'abakus internet marketing gmbh', 'abakus-internet-marketing', 'abakus internet marketing' => self::abakusInternetMarketing,
+            'setlinks', 'set-links' => self::setLinks,
+            'sophos', 'sophos ltd.' => self::sophos,
+            'susea', 'su-sea', 'susea, inc.' => self::suSea,
+            'superfeedr' => self::superfeedr,
+            'therocketsciencegroup', 'the-rocket-science-group', 'the rocket science group' => self::theRocketScienceGroup,
+            'thinglink', 'thing-link-oy', 'thinglink oy' => self::thingLink,
+            'thomasschulte', 'thomas-schulte', 'thomas schulte' => self::thomasSchulte,
+            'thumbshots' => self::thumbshots,
+            'thunderstonesoftware', 'thunderstone-software', 'thunderstone software llc', 'thunderstone software' => self::thunderstoneSoftware,
+            'tumblr', 'tumblr, inc.' => self::tumblr,
+            'veoozlabs', 'veooz-labs', 'veooz labs' => self::veoozLabs,
+            'wasalive', 'was-alive' => self::wasAlive,
+            'wdg', 'web-design-group', 'web design group' => self::wdg,
+            'webthumbnail' => self::webthumbnail,
+            'zend', 'zend technologies ltd.' => self::zend,
+            'twohundredplease', '200please' => self::twoHundredPlease,
+            'alltop' => self::alltop,
+            'aolsoft', 'aol-soft', 'aol soft' => self::aolSoft,
+            'apercite' => self::apercite,
+            'asiawsnetwork', 'asia-ws-wetwork', 'asiaws network' => self::asiaWsNetwork,
+            'begun' => self::begun,
+            'binarymonkey' => self::binarymonkey,
+            'bobmottram', 'bob-mottram', 'bob mottram' => self::bobMottram,
+            'browsershots' => self::browsershots,
+            'careerx', 'career-x', 'career-x gmbh' => self::careerX,
+            'checksite' => self::checksite,
+            'citymap', 'city-map-internet-marketing', 'city-map internetmarketing ag', 'city-map' => self::cityMap,
+            'cookiereports', 'cookie-reports', 'cookie reports limited', 'cookie reports' => self::cookieReports,
+            'deadlinks', 'dead-links' => self::deadLinks,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4561,6 +4675,21 @@ enum Company: string implements CompanyInterface
             self::infegy => 'Infegy, Inc.',
             self::notePage => 'NotePage, Inc.',
             self::pageFreezerSoftware => 'PageFreezer Software Inc.',
+            self::picsearch => 'Picsearch Services AB',
+            self::profoundNetworks => 'Profound Networks, LLC',
+            self::remixation => 'Remixation, Inc',
+            self::abakusInternetMarketing => 'ABAKUS Internet Marketing GmbH',
+            self::sophos => 'Sophos Ltd.',
+            self::suSea => 'SuSea, Inc.',
+            self::thingLink => 'ThingLink Oy',
+            self::thunderstoneSoftware => 'Thunderstone Software LLC',
+            self::tumblr => 'Tumblr, Inc.',
+            self::veoozLabs => 'Veooz Labs',
+            self::wdg => 'Web Design Group',
+            self::zend => 'Zend Technologies Ltd.',
+            self::careerX => 'Career-x GmbH',
+            self::cityMap => 'city-map Internetmarketing AG',
+            self::cookieReports => 'Cookie Reports Limited',
             self::unknown => null,
             default => $this->value,
         };
@@ -5032,6 +5161,26 @@ enum Company: string implements CompanyInterface
             self::notePage => 'note-page',
             self::oesterreichischeNationalbibliothek => 'oesterreichische nationalbibliothek',
             self::pageFreezerSoftware => 'page-freezer-software',
+            self::plantRob => 'plant-rob',
+            self::profoundNetworks => 'profound-networks',
+            self::abakusInternetMarketing => 'abakus-internet-marketing',
+            self::setLinks => 'set-links',
+            self::suSea => 'su-sea',
+            self::theRocketScienceGroup => 'the-rocket-science-group',
+            self::thingLink => 'thing-link-oy',
+            self::thomasSchulte => 'thomas-schulte',
+            self::thunderstoneSoftware => 'thunderstone-software',
+            self::veoozLabs => 'veooz-labs',
+            self::wasAlive => 'was-alive',
+            self::wdg => 'web-design-group',
+            self::twoHundredPlease => '200please',
+            self::aolSoft => 'aol-soft',
+            self::asiaWsNetwork => 'asia-ws-wetwork',
+            self::bobMottram => 'bob-mottram',
+            self::careerX => 'career-x',
+            self::cityMap => 'city-map-internet-marketing',
+            self::cookieReports => 'cookie-reports',
+            self::deadLinks => 'dead-links',
             default => $this->name,
         };
     }
