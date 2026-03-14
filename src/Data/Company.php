@@ -2763,6 +2763,32 @@ enum Company: string implements CompanyInterface
 
     case deadLinks = 'dead-links';
 
+    case declum = 'Declum';
+
+    case digitalShadows = 'Digital Shadows';
+
+    case discoveryEngine = 'Discovery Engine';
+
+    case dmSolutions = 'DM Solutions';
+
+    case domainSigma = 'DomainSigma';
+
+    case electronicFrontierFoundation = 'Electronic Frontier Foundation';
+
+    case esrihuHu = 'esrihu.hu';
+
+    case eurofiles = 'eurofiles';
+
+    case everyoneSocial = 'EveryoneSocial';
+
+    case exploratodo = 'Exploratodo';
+
+    case ezSystems = 'eZ Systems';
+
+    case galaxyDownloads = 'GalaxyDownloads';
+
+    case genderanalyzer = 'genderanalyzer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4142,6 +4168,19 @@ enum Company: string implements CompanyInterface
             'citymap', 'city-map-internet-marketing', 'city-map internetmarketing ag', 'city-map' => self::cityMap,
             'cookiereports', 'cookie-reports', 'cookie reports limited', 'cookie reports' => self::cookieReports,
             'deadlinks', 'dead-links' => self::deadLinks,
+            'declum' => self::declum,
+            'digitalshadows', 'digital-shadows', 'digital shadows inc.', 'digital shadows' => self::digitalShadows,
+            'discoveryengine', 'discovery-engine', 'discovery engine' => self::discoveryEngine,
+            'dmsolutions', 'dm-solutions', 'dm solutions e.k.', 'dm solutions' => self::dmSolutions,
+            'domainsigma', 'domain-sigma' => self::domainSigma,
+            'electronicfrontierfoundation', 'electronic-frontier-foundation', 'electronic frontier foundation' => self::electronicFrontierFoundation,
+            'esrihuhu', 'esrihu.hu' => self::esrihuHu,
+            'eurofiles' => self::eurofiles,
+            'everyonesocial', 'everyone-social' => self::everyoneSocial,
+            'exploratodo' => self::exploratodo,
+            'ezsystems', 'ez-systems', 'ez systems' => self::ezSystems,
+            'galaxydownloads', 'galaxy-downloads' => self::galaxyDownloads,
+            'genderanalyzer', 'gender-analyzer' => self::genderanalyzer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4690,6 +4729,8 @@ enum Company: string implements CompanyInterface
             self::careerX => 'Career-x GmbH',
             self::cityMap => 'city-map Internetmarketing AG',
             self::cookieReports => 'Cookie Reports Limited',
+            self::digitalShadows => 'Digital Shadows Inc.',
+            self::dmSolutions => 'DM Solutions e.K.',
             self::unknown => null,
             default => $this->value,
         };
@@ -5181,6 +5222,16 @@ enum Company: string implements CompanyInterface
             self::cityMap => 'city-map-internet-marketing',
             self::cookieReports => 'cookie-reports',
             self::deadLinks => 'dead-links',
+            self::digitalShadows => 'digital-shadows',
+            self::discoveryEngine => 'discovery-engine',
+            self::dmSolutions => 'dm-solutions',
+            self::domainSigma => 'domain-sigma',
+            self::electronicFrontierFoundation => 'electronic-frontier-foundation',
+            self::esrihuHu => 'esrihu.hu',
+            self::everyoneSocial => 'everyone-social',
+            self::ezSystems => 'ez-systems',
+            self::galaxyDownloads => 'galaxy-downloads',
+            self::genderanalyzer => 'gender-analyzer',
             default => $this->name,
         };
     }

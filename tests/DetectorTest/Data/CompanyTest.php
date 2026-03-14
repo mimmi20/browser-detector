@@ -8278,6 +8278,84 @@ final class CompanyTest extends TestCase
                 'brandname' => 'dead-links',
                 'key' => 'dead-links',
             ],
+            [
+                'type' => 'Declum',
+                'name' => 'Declum',
+                'brandname' => 'Declum',
+                'key' => 'declum',
+            ],
+            [
+                'type' => 'Digital Shadows',
+                'name' => 'Digital Shadows Inc.',
+                'brandname' => 'Digital Shadows',
+                'key' => 'digital-shadows',
+            ],
+            [
+                'type' => 'Discovery Engine',
+                'name' => 'Discovery Engine',
+                'brandname' => 'Discovery Engine',
+                'key' => 'discovery-engine',
+            ],
+            [
+                'type' => 'DM Solutions',
+                'name' => 'DM Solutions e.K.',
+                'brandname' => 'DM Solutions',
+                'key' => 'dm-solutions',
+            ],
+            [
+                'type' => 'DomainSigma',
+                'name' => 'DomainSigma',
+                'brandname' => 'DomainSigma',
+                'key' => 'domain-sigma',
+            ],
+            [
+                'type' => 'Electronic Frontier Foundation',
+                'name' => 'Electronic Frontier Foundation',
+                'brandname' => 'Electronic Frontier Foundation',
+                'key' => 'electronic-frontier-foundation',
+            ],
+            [
+                'type' => 'esrihu.hu',
+                'name' => 'esrihu.hu',
+                'brandname' => 'esrihu.hu',
+                'key' => 'esrihu.hu',
+            ],
+            [
+                'type' => 'eurofiles',
+                'name' => 'eurofiles',
+                'brandname' => 'eurofiles',
+                'key' => 'eurofiles',
+            ],
+            [
+                'type' => 'EveryoneSocial',
+                'name' => 'EveryoneSocial',
+                'brandname' => 'EveryoneSocial',
+                'key' => 'everyone-social',
+            ],
+            [
+                'type' => 'Exploratodo',
+                'name' => 'Exploratodo',
+                'brandname' => 'Exploratodo',
+                'key' => 'exploratodo',
+            ],
+            [
+                'type' => 'eZ Systems',
+                'name' => 'eZ Systems',
+                'brandname' => 'eZ Systems',
+                'key' => 'ez-systems',
+            ],
+            [
+                'type' => 'GalaxyDownloads',
+                'name' => 'GalaxyDownloads',
+                'brandname' => 'GalaxyDownloads',
+                'key' => 'galaxy-downloads',
+            ],
+            [
+                'type' => 'genderanalyzer',
+                'name' => 'genderanalyzer',
+                'brandname' => 'genderanalyzer',
+                'key' => 'gender-analyzer',
+            ],
         ];
     }
 
