@@ -2789,6 +2789,46 @@ enum Company: string implements CompanyInterface
 
     case genderanalyzer = 'genderanalyzer';
 
+    case writtenByte = 'Written Byte';
+
+    case getintent = 'getintent';
+
+    case gloomar = 'Gloomar';
+
+    case gloriotStephane = 'Gloriot Stéphane';
+
+    case goSquared = 'Go Squared';
+
+    case gocro = 'Gocro';
+
+    case grierForensics = 'Grier Forensics';
+
+    case icarus6 = 'icarus6';
+
+    case ilyaGrigorik = 'Ilya Grigorik';
+
+    case inbotTechnology = 'Inbot Technology';
+
+    case internetMemoryResearch = 'Internet Memory Research';
+
+    case inventionMachine = 'Invention Machine';
+
+    case ipv4scan = 'ipv4scan';
+
+    case isrg = 'ISRG';
+
+    case iyottaSoftware = 'iyotta software';
+
+    case jaohawi = 'Jaohawi';
+
+    case jobDigger = 'Jobdigger';
+
+    case joinVision = 'JoinVision';
+
+    case jonasGenannt = 'Jonas Genannt';
+
+    case madb = 'MADB';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4181,6 +4221,26 @@ enum Company: string implements CompanyInterface
             'ezsystems', 'ez-systems', 'ez systems' => self::ezSystems,
             'galaxydownloads', 'galaxy-downloads' => self::galaxyDownloads,
             'genderanalyzer', 'gender-analyzer' => self::genderanalyzer,
+            'writtenbyte', 'written-byte', 'written byte ltd', 'written byte' => self::writtenByte,
+            'getintent' => self::getintent,
+            'gloomar', 'gloomar cz a.s.' => self::gloomar,
+            'gloriotstephane', 'gloriot-stephane', 'gloriot stéphane' => self::gloriotStephane,
+            'gosquared', 'go-squared', 'go squared ltd.', 'go squared' => self::goSquared,
+            'gocro', 'gocro, inc.' => self::gocro,
+            'grierforensics', 'grier forensics' => self::grierForensics,
+            'icarus6' => self::icarus6,
+            'ilyagrigorik', 'ilya-grigorik', 'ilya grigorik' => self::ilyaGrigorik,
+            'inbottechnology', 'inbot-technology', 'inbot technology ltd.', 'inbot technology' => self::inbotTechnology,
+            'internetmemoryresearch', 'internet-memory-research', 'internet memory research' => self::internetMemoryResearch,
+            'inventionmachine', 'invention-machine', 'invention machine corporation', 'invention machine' => self::inventionMachine,
+            'ipv4scan' => self::ipv4scan,
+            'isrg', 'internet security research group' => self::isrg,
+            'iyottasoftware', 'iyotta-software', 'iyotta software private limited, india', 'iyotta software' => self::iyottaSoftware,
+            'jaohawi', 'jaohawi ab' => self::jaohawi,
+            'jobdigger', 'job-digger', 'jobdigger b.v.' => self::jobDigger,
+            'joinvision', 'join-vision' => self::joinVision,
+            'jonasgenannt', 'jonas-genannt', 'jonas genannt' => self::jonasGenannt,
+            'madb' => self::madb,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4731,6 +4791,16 @@ enum Company: string implements CompanyInterface
             self::cookieReports => 'Cookie Reports Limited',
             self::digitalShadows => 'Digital Shadows Inc.',
             self::dmSolutions => 'DM Solutions e.K.',
+            self::writtenByte => 'Written Byte Ltd',
+            self::gloomar => 'Gloomar CZ a.s.',
+            self::goSquared => 'Go Squared Ltd.',
+            self::gocro => 'Gocro, Inc.',
+            self::inbotTechnology => 'Inbot Technology Ltd.',
+            self::inventionMachine => 'Invention Machine Corporation',
+            self::isrg => 'Internet Security Research Group',
+            self::iyottaSoftware => 'iyotta software private limited, india',
+            self::jaohawi => 'Jaohawi AB',
+            self::jobDigger => 'Jobdigger B.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -5232,6 +5302,18 @@ enum Company: string implements CompanyInterface
             self::ezSystems => 'ez-systems',
             self::galaxyDownloads => 'galaxy-downloads',
             self::genderanalyzer => 'gender-analyzer',
+            self::writtenByte => 'written-byte',
+            self::gloriotStephane => 'gloriot-stephane',
+            self::goSquared => 'go-squared',
+            self::grierForensics => 'grier forensics',
+            self::ilyaGrigorik => 'ilya-grigorik',
+            self::inbotTechnology => 'inbot-technology',
+            self::internetMemoryResearch => 'internet-memory-research',
+            self::inventionMachine => 'invention-machine',
+            self::iyottaSoftware => 'iyotta-software',
+            self::jobDigger => 'job-digger',
+            self::joinVision => 'join-vision',
+            self::jonasGenannt => 'jonas-genannt',
             default => $this->name,
         };
     }

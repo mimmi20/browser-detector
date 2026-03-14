@@ -3500,5 +3500,29 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "cloudflare amp fetcher": {
+    "name": "CloudFlare AMP Fetcher",
+    "manufacturer": "cloud-flare",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cloudflare\\-AMP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "deepcrawl": {
+    "name": "Lumar",
+    "manufacturer": "written-byte",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "deepcrawl"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -196,5 +196,17 @@
       ]
     },
     "engine": null
+  },
+  "fhms-its-research-scanner": {
+    "name": "FHMS ITS Research Scanner",
+    "manufacturer": "muenster-university-of-applied-sciences",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "fhms-its-research-scanner"
+      ]
+    },
+    "engine": "unknown"
   }
 }

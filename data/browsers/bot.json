@@ -988,18 +988,6 @@
     },
     "engine": "unknown"
   },
-  "cloudflare amp fetcher": {
-    "name": "Cloudflare AMP Fetcher",
-    "manufacturer": "cloud-flare",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Cloudflare\\-AMP"
-      ]
-    },
-    "engine": "unknown"
-  },
   "cloudinary": {
     "name": "Cloudinary Bot",
     "manufacturer": "cloudinary",
@@ -1299,18 +1287,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "deepcrawl": {
-    "name": "deepcrawl",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "deepcrawl"
-      ]
     },
     "engine": "unknown"
   },
