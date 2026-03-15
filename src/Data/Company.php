@@ -2829,6 +2829,100 @@ enum Company: string implements CompanyInterface
 
     case madb = 'MADB';
 
+    case meanpath = 'Meanpath';
+
+    case metaheaders = 'Metaheaders';
+
+    case monitorBacklinks = 'Monitor Backlinks';
+
+    case monoName = 'mono.name';
+
+    case nationalLibraryOfSweden = 'National Library of Sweden';
+
+    case nerdyData = 'NerdyData';
+
+    case nettIo = 'nett.io';
+
+    case nutchDe = 'nutch.de';
+
+    case openhose = 'OpenHose';
+
+    case optivo = 'optivo';
+
+    case overcastRadio = 'Overcast Radio';
+
+    case peeplo = 'peeplo';
+
+    case plus5files = 'plus5files';
+
+    case prCyRu = 'pr-cy.ru';
+
+    case publicLibraryArchive = 'publiclibraryarchive';
+
+    case seven49 = 'seven49';
+
+    case quickiWiki = 'QuickiWiki';
+
+    case rankFlex = 'RankFlex';
+
+    case ranks = 'Ranks';
+
+    case rebelmouse = 'RebelMouse';
+
+    case refind = 'Refind';
+
+    case srelease = 'SRelease';
+
+    case scrapinghub = 'Scraping Hub';
+
+    case screenerBot = 'ScreenerBot';
+
+    case searchteq = 'SEARCHTEQ';
+
+    case securepoint = 'Securepoint';
+
+    case seoPowerSuite = 'SEO PowerSuite';
+
+    case seograph = 'SEOGraph';
+
+    case shiftyJelly = 'Shifty Jelly';
+
+    case socialcast = 'socialcast';
+
+    case softlist = 'softlist';
+
+    case stonyBrookUniversity = 'Stony Brook University';
+
+    case subshell = 'subshell';
+
+    case SuMaEV = 'SuMa e.V.';
+
+    case tarlogic = 'Tarlogic';
+
+    case tockify = 'Tockify';
+
+    case tweetminster = 'Tweetminster';
+
+    case ucoz = 'uCoz';
+
+    case ufa = 'UFA';
+
+    case unrulyGroup = 'Unruly Group';
+
+    case varocarbas = 'Alvaro Carballo Garcia';
+
+    case virtoSolutions = 'Virto Solutions';
+
+    case vkontakte = 'VKontakte';
+
+    case warebay = 'warebay';
+
+    case webgains = 'Webgains';
+
+    case webtarantula = 'webtarantula';
+
+    case wmaid = 'wmaid';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4241,6 +4335,53 @@ enum Company: string implements CompanyInterface
             'joinvision', 'join-vision' => self::joinVision,
             'jonasgenannt', 'jonas-genannt', 'jonas genannt' => self::jonasGenannt,
             'madb' => self::madb,
+            'meanpath' => self::meanpath,
+            'metaheaders', 'meta-headers' => self::metaheaders,
+            'monitorbacklinks', 'monitor backlinks', 'monitor backlinks ltd.' => self::monitorBacklinks,
+            'mononame', 'mono', 'mono.name' => self::monoName,
+            'nationallibraryofsweden', 'national-library-of-sweden', 'national library of sweden' => self::nationalLibraryOfSweden,
+            'nerdydata', 'nerdy-data' => self::nerdyData,
+            'nettio', 'nett.io' => self::nettIo,
+            'nutchde', 'nutch-de', 'nutch.de' => self::nutchDe,
+            'openhose' => self::openhose,
+            'optivo', 'optivo gmbh' => self::optivo,
+            'overcastradio', 'overcast radio', 'overcast radio, llc' => self::overcastRadio,
+            'peeplo' => self::peeplo,
+            'plus5files' => self::plus5files,
+            'prcyru', 'pr-cy', 'pr-cy.ru' => self::prCyRu,
+            'publiclibraryarchive', 'public-library-archive' => self::publicLibraryArchive,
+            'seven49', 'seven49.net ag' => self::seven49,
+            'quickiwiki', 'quicki-wiki' => self::quickiWiki,
+            'rankflex', 'rank-flex' => self::rankFlex,
+            'ranks' => self::ranks,
+            'rebelmouse' => self::rebelmouse,
+            'refind', 'refind inc.' => self::refind,
+            'srelease' => self::srelease,
+            'scrapinghub', 'scraping hub limited', 'scraping hub' => self::scrapinghub,
+            'screenerbot', 'screener-bot' => self::screenerBot,
+            'searchteq', 'searchteq gmbh' => self::searchteq,
+            'securepoint', 'securepoint gmbh' => self::securepoint,
+            'seopowersuite', 'seo-powersuite', 'seo powersuite' => self::seoPowerSuite,
+            'seograph' => self::seograph,
+            'shiftyjelly', 'shifty-jelly', 'shifty jelly' => self::shiftyJelly,
+            'socialcast' => self::socialcast,
+            'softlist' => self::softlist,
+            'stonybrookuniversity', 'stony brook university' => self::stonyBrookUniversity,
+            'subshell', 'subshell gmbh' => self::subshell,
+            'sumaev', 'suma-ev', 'suma e.v. - verein fuer freien wissenszugang', 'suma e.v.' => self::SuMaEV,
+            'tarlogic', 'tarlogic security sl' => self::tarlogic,
+            'tockify', 'tockify ltd' => self::tockify,
+            'tweetminster', 'tweet-minster' => self::tweetminster,
+            'ucoz', 'ucoz media llc' => self::ucoz,
+            'ufa', 'ufa, inc.' => self::ufa,
+            'unrulygroup', 'unruly-group', 'unruly group limited', 'unruly group' => self::unrulyGroup,
+            'varocarbas', 'alvaro carballo garcia' => self::varocarbas,
+            'virtosolutions', 'virto-solutions', 'virto solutions ltd', 'virto solutions' => self::virtoSolutions,
+            'vkontakte' => self::vkontakte,
+            'warebay' => self::warebay,
+            'webgains', 'webgains ltd' => self::webgains,
+            'webtarantula' => self::webtarantula,
+            'wmaid' => self::wmaid,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4801,6 +4942,23 @@ enum Company: string implements CompanyInterface
             self::iyottaSoftware => 'iyotta software private limited, india',
             self::jaohawi => 'Jaohawi AB',
             self::jobDigger => 'Jobdigger B.V.',
+            self::monitorBacklinks => 'Monitor Backlinks Ltd.',
+            self::optivo => 'optivo GmbH',
+            self::overcastRadio => 'Overcast Radio, LLC',
+            self::seven49 => 'seven49.net AG',
+            self::refind => 'Refind Inc.',
+            self::scrapinghub => 'Scraping Hub Limited',
+            self::searchteq => 'SEARCHTEQ GmbH',
+            self::securepoint => 'Securepoint GmbH',
+            self::subshell => 'subshell GmbH',
+            self::SuMaEV => 'SuMa e.V. - Verein fuer freien Wissenszugang',
+            self::tarlogic => 'Tarlogic Security SL',
+            self::tockify => 'Tockify Ltd',
+            self::ucoz => 'uCoz Media LLC',
+            self::ufa => 'UFA, Inc.',
+            self::unrulyGroup => 'Unruly Group Limited',
+            self::virtoSolutions => 'Virto Solutions LTD',
+            self::webgains => 'Webgains Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -5314,6 +5472,26 @@ enum Company: string implements CompanyInterface
             self::jobDigger => 'job-digger',
             self::joinVision => 'join-vision',
             self::jonasGenannt => 'jonas-genannt',
+            self::metaheaders => 'meta-headers',
+            self::monitorBacklinks => 'monitor backlinks',
+            self::monoName => 'mono',
+            self::nationalLibraryOfSweden => 'national-library-of-sweden',
+            self::nerdyData => 'nerdy-data',
+            self::nettIo => 'nett.io',
+            self::nutchDe => 'nutch-de',
+            self::overcastRadio => 'overcast radio',
+            self::prCyRu => 'pr-cy',
+            self::publicLibraryArchive => 'public-library-archive',
+            self::quickiWiki => 'quicki-wiki',
+            self::rankFlex => 'rank-flex',
+            self::screenerBot => 'screener-bot',
+            self::seoPowerSuite => 'seo-powersuite',
+            self::shiftyJelly => 'shifty-jelly',
+            self::stonyBrookUniversity => 'stony brook university',
+            self::SuMaEV => 'suma-ev',
+            self::tweetminster => 'tweet-minster',
+            self::unrulyGroup => 'unruly-group',
+            self::virtoSolutions => 'virto-solutions',
             default => $this->name,
         };
     }
