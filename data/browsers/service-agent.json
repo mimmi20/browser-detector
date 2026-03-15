@@ -33,7 +33,7 @@
     "engine": "unknown"
   },
   "discordbot": {
-    "name": "Discordbot",
+    "name": "Discord Bot",
     "manufacturer": "discord",
     "type": "service-agent",
     "version": {
@@ -69,7 +69,7 @@
     "engine": "unknown"
   },
   "yahoomail-proxy": {
-    "name": "YahooMail Proxy",
+    "name": "Yahoo! Mail Proxy",
     "manufacturer": "yahoo",
     "type": "service-agent",
     "version": {
@@ -274,6 +274,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NovaAct"
+      ]
+    },
+    "engine": null
+  },
+  "data-xu": {
+    "name": "DataXu",
+    "manufacturer": "roku",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DataXu"
       ]
     },
     "engine": null

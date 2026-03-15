@@ -10,5 +10,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "shop-wiki": {
+    "name": "ShopWiki",
+    "manufacturer": "shop-wiki",
+    "type": "tool",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShopWiki"
+      ]
+    },
+    "engine": "unknown"
   }
 }

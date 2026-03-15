@@ -167,6 +167,12 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Web0S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.0.0 Safari/537.36 WebAppManager'],
             ['LG/U8130/v1.0'],
             ['lge-vx8100/1.0 UP. Browser/6.2.3.2'],
+            ['SEC-SGHE105-E15UVWH3-NW.Browser3.01'],
+            ['SendoM570/04'],
+            ['SHARP-TQ-GX10'],
+            ['SIE-C62/67'],
+            ['ZTE-C6100/1.0 SMIT-WAP/1.1.0(GUI)'],
+            ['FLY-SL600/BSI AU.Browser/2.0 QO3C1'],
         ];
     }
 

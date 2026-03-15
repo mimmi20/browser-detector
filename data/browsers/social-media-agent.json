@@ -130,5 +130,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "reddit bot": {
+    "name": "Reddit Bot",
+    "manufacturer": "reddit",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "redditbot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

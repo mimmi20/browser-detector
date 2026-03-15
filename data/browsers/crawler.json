@@ -298,7 +298,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "SeekportBot"
+        "SeekportBot",
+        "Seekport Crawler"
       ]
     },
     "engine": "unknown"
@@ -328,8 +329,8 @@
     "engine": "unknown"
   },
   "velenpublicwebcrawler": {
-    "name": "Velen Public WebCrawler",
-    "manufacturer": "unknown",
+    "name": "Velen Public Web Crawler",
+    "manufacturer": "hunter",
     "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -953,7 +954,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Birdcrawlerbot"
+        "Birdcrawlerbot",
+        "CrawlaDeBot"
       ]
     },
     "engine": "unknown"
@@ -1825,18 +1827,6 @@
     },
     "engine": null
   },
-  "yahoo! japan psc": {
-    "name": "Yahoo! Japan PSC",
-    "manufacturer": "yahoo-japan",
-    "type": "crawler",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Y!J-PSC"
-      ]
-    },
-    "engine": null
-  },
   "eyeota-bot": {
     "name": "Eyeotabot",
     "manufacturer": "eyeota",
@@ -1875,11 +1865,13 @@
   },
   "diffbot": {
     "name": "Diffbot",
-    "manufacturer": "unknown",
+    "manufacturer": "diffbot-technologies",
     "type": "crawler",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Diffbot"
+      ]
     },
     "engine": "unknown"
   },
@@ -3521,6 +3513,382 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "deepcrawl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "backlinkcrawler": {
+    "name": "BacklinkCrawler",
+    "manufacturer": "backlink-test",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "aihitbot": {
+    "name": "aiHitBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "aiHitBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "muscat-ferret": {
+    "name": "MuscatFerret",
+    "manufacturer": "webtop",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MuscatFerret"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "blog-lines": {
+    "name": "Bloglines",
+    "manufacturer": "reply",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bloglines"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gais-bot": {
+    "name": "Gaisbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gaisbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "giga-bot": {
+    "name": "Gigabot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gigabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "net-research-server": {
+    "name": "NetResearchServer",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetResearchServer",
+        "nrsbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "name-protect-bot": {
+    "name": "NameProtectBot",
+    "manufacturer": "name-protect",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NPBot",
+        "NP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pompos": {
+    "name": "Pompos",
+    "manufacturer": "iliad",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pompos"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "roboobot": {
+    "name": "roboobot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "robozilla": {
+    "name": "Robozilla",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Robozilla"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sbider": {
+    "name": "SBIder",
+    "manufacturer": "site-sell",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SBIder"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "scooter": {
+    "name": "Scooter",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Scooter"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vortex": {
+    "name": "Vortex",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Vortex"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zao": {
+    "name": "Zao",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zao"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "linkcheck": {
+    "name": "linkCheck",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "linkCheck"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "linkcheck-bot": {
+    "name": "LinkcheckBot",
+    "manufacturer": "mediagreen",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinkcheckBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ad-auth": {
+    "name": "AdAuth",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdAuth"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "the-knowledge-ai": {
+    "name": "The Knowledge AI",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "adsbot": {
+    "name": "Adsbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Adsbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot-page-fetcher": {
+    "name": "HubSpot Page Fetcher",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Page Fetcher"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seoscanners-net": {
+    "name": "Seoscanners.net",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "seoscanners\\.net"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ad-scanner": {
+    "name": "Adscanner",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "adscanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dns-research-bot": {
+    "name": "DNSResearchBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DNSResearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nbertaupete95": {
+    "name": "nbertaupete95",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "crowd-tangle-bot": {
+    "name": "CrowdTangleBot",
+    "manufacturer": "crowd-tangle",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CrowdTanglebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "klarnabot-price-watcher": {
+    "name": "KlarnaBot PriceWatcher",
+    "manufacturer": "klarna",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KlarnaBot-PriceWatcher"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "klarnabot-enrich-products": {
+    "name": "KlarnaBot EnrichProducts",
+    "manufacturer": "klarna",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KlarnaBot-EnrichProducts"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "klarnabot-download-product-image": {
+    "name": "KlarnaBot DownloadProductImage",
+    "manufacturer": "klarna",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KlarnaBot-DownloadProductImage"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sublinq-crawler": {
+    "name": "Sublinq Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "madbbot": {
+    "name": "MADBbot",
+    "manufacturer": "madb",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MADBbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "frag-finn": {
+    "name": "fragFINN",
+    "manufacturer": "fragfinn-ev",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "fragFINN"
       ]
     },
     "engine": "unknown"

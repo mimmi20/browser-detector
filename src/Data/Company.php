@@ -2923,6 +2923,42 @@ enum Company: string implements CompanyInterface
 
     case wmaid = 'wmaid';
 
+    case webtop = 'Webtop';
+
+    case diffbotTechnologies = 'Diffbot Technologies';
+
+    case reply = 'Reply!';
+
+    case nameProtect = 'NameProtect';
+
+    case iliad = 'ILIAD';
+
+    case siteSell = 'SiteSell';
+
+    case shopWiki = 'ShopWiki';
+
+    case yunyun = 'YunYun';
+
+    case tiantexin = 'Tiantexin';
+
+    case nodePing = 'NodePing';
+
+    case innologica = 'Innologica';
+
+    case hunter = 'Hunter';
+
+    case crowdTangle = 'CrowdTangle';
+
+    case whiteSource = 'White Source';
+
+    case linkResearchTools = 'LinkResearchTools';
+
+    case klarna = 'Klarna';
+
+    case moodle = 'Moodle';
+
+    case fragFINN = 'fragFINN';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4382,6 +4418,24 @@ enum Company: string implements CompanyInterface
             'webgains', 'webgains ltd' => self::webgains,
             'webtarantula' => self::webtarantula,
             'wmaid' => self::wmaid,
+            'webtop', 'webtop.com as' => self::webtop,
+            'diffbottechnologies', 'diffbot technologies corp.', 'diffbot-technologies', 'diffbot technologies' => self::diffbotTechnologies,
+            'reply', 'reply!, inc.', 'reply!' => self::reply,
+            'nameprotect', 'nameprotect, inc.', 'name-protect' => self::nameProtect,
+            'iliad', 'iliad sa' => self::iliad,
+            'sitesell', 'sitesell inc.', 'site-sell' => self::siteSell,
+            'shopwiki', 'shopwiki corp.', 'shop-wiki' => self::shopWiki,
+            'yunyun' => self::yunyun,
+            'tiantexin', 'beijing tiantexin tech. co., ltd.' => self::tiantexin,
+            'nodeping', 'nodeping llc', 'node-ping' => self::nodePing,
+            'innologica', 'innologica ltd' => self::innologica,
+            'hunter', 'hunter web services, inc.' => self::hunter,
+            'crowdtangle', 'crowdtangle, inc.', 'crowd-tangle' => self::crowdTangle,
+            'whitesource', 'white source ltd.', 'white-source', 'white source' => self::whiteSource,
+            'linkresearchtools', 'linkresearchtools gmbh', 'link-research-tools' => self::linkResearchTools,
+            'klarna', 'klarna bank ab' => self::klarna,
+            'moodle', 'moodle pty ltd' => self::moodle,
+            'fragfinn', 'fragfinn e.v.', 'fragfinn-ev' => self::fragFINN,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4959,6 +5013,23 @@ enum Company: string implements CompanyInterface
             self::unrulyGroup => 'Unruly Group Limited',
             self::virtoSolutions => 'Virto Solutions LTD',
             self::webgains => 'Webgains Ltd',
+            self::webtop => 'Webtop.com AS',
+            self::diffbotTechnologies => 'Diffbot Technologies Corp.',
+            self::reply => 'Reply!, Inc.',
+            self::nameProtect => 'NameProtect, Inc.',
+            self::iliad => 'ILIAD SA',
+            self::siteSell => 'SiteSell Inc.',
+            self::shopWiki => 'ShopWiki Corp.',
+            self::tiantexin => 'Beijing Tiantexin Tech. Co., Ltd.',
+            self::nodePing => 'NodePing LLC',
+            self::innologica => 'Innologica Ltd',
+            self::hunter => 'Hunter Web Services, Inc.',
+            self::crowdTangle => 'CrowdTangle, Inc.',
+            self::whiteSource => 'White Source Ltd.',
+            self::linkResearchTools => 'LinkResearchTools GmbH',
+            self::klarna => 'Klarna Bank AB',
+            self::moodle => 'Moodle Pty Ltd',
+            self::fragFINN => 'fragFINN e.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -5492,6 +5563,15 @@ enum Company: string implements CompanyInterface
             self::tweetminster => 'tweet-minster',
             self::unrulyGroup => 'unruly-group',
             self::virtoSolutions => 'virto-solutions',
+            self::diffbotTechnologies => 'diffbot-technologies',
+            self::nameProtect => 'name-protect',
+            self::siteSell => 'site-sell',
+            self::shopWiki => 'shop-wiki',
+            self::nodePing => 'node-ping',
+            self::crowdTangle => 'crowd-tangle',
+            self::whiteSource => 'white-source',
+            self::linkResearchTools => 'link-research-tools',
+            self::fragFINN => 'fragfinn-ev',
             default => $this->name,
         };
     }

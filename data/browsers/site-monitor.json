@@ -197,5 +197,76 @@
       ]
     },
     "engine": "unknown"
+  },
+  "cloudflare alwaysonline": {
+    "name": "CloudFlare Always Online",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CloudFlare\\-AlwaysOnline"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "node-ping": {
+    "name": "NodePing",
+    "manufacturer": "node-ping",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "freewebmonitoring sitechecker": {
+    "name": "FreeWebMonitoring SiteChecker",
+    "manufacturer": "free-web-monitoring",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FreeWebMonitoring SiteChecker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "datadog-agent": {
+    "name": "Datadog Agent",
+    "manufacturer": "datadog",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Datadog Agent",
+        "Datadog\\/?Synthetics"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "url-inspector-bot": {
+    "name": "URLinspectorBot",
+    "manufacturer": "link-research-tools",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "URLinspectorBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "uptime-kuma": {
+    "name": "Uptime-Kuma",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Uptime-Kuma"
+      ]
+    },
+    "engine": "unknown"
   }
 }

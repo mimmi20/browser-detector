@@ -150,7 +150,7 @@
     "/amazonbot-video/i": "amazon video bot",
     "/amazonbot/i": "amazon bot",
     "/openwave\\//i": "openwave mobile browser",
-    "/avast\\/|avastsecurebrowser/i": "avast secure browser",
+    "/avast\\/|avastsecurebrowser|safersurf/i": "avast secure browser",
     "/avg\\//i": "avg secure browser",
     "/ccleaner/i": "ccleaner browser",
     "/em ?client/i": "em-client",
@@ -339,6 +339,7 @@
     "/flow\\)/i": "flowsurf",
     "/bluesky/i": "bluesky",
     "/iaskbot/i": "i-ask-bot",
+    "/seolyt/i": "seolyt-bot",
     "/(?<!t)chr[o0]me\\//i": "chrome",
     "/chromeframe/i": "chrome-frame"
   },
