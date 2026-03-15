@@ -442,7 +442,7 @@
   },
   "lcc": {
     "name": "LCC",
-    "manufacturer": "corpora-uni-leipzig",
+    "manufacturer": "projekt-deutscher-wortschatz",
     "type": "search-bot",
     "version": {
       "factory": null,
@@ -1046,7 +1046,7 @@
     "engine": "unknown"
   },
   "sosospider": {
-    "name": "Sosospider",
+    "name": "Soso Spider",
     "manufacturer": "soso",
     "type": "search-bot",
     "version": {
@@ -1163,5 +1163,78 @@
       "search": null
     },
     "engine": null
+  },
+  "disco-bot": {
+    "name": "Discobot",
+    "manufacturer": "discovery-engine",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "discobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "edacious-intelligent-web-robot": {
+    "name": "Edacious & Intelligent Web Robot",
+    "manufacturer": "daum",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EDI"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sogou-orion-spider": {
+    "name": "Sogou Orion Spider",
+    "manufacturer": "sogou",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sogou Orion spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yunyun-bot": {
+    "name": "Yunyun Bot",
+    "manufacturer": "yunyun",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YRSpider",
+        "YYSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "moodlebot-linkchecker": {
+    "name": "MoodleBot Linkchecker",
+    "manufacturer": "moodle",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MoodleBot-LinkChecker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "moodlebot": {
+    "name": "MoodleBot",
+    "manufacturer": "moodle",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MoodleBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

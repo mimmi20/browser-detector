@@ -136,7 +136,7 @@
   },
   "adcrawler": {
     "name": "AdCrawler",
-    "manufacturer": "unknown",
+    "manufacturer": "yahoo",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -160,7 +160,7 @@
   },
   "addthis.com robot": {
     "name": "AddThis.com robot",
-    "manufacturer": "add-this",
+    "manufacturer": "oracle",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -187,18 +187,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "adsbot": {
-    "name": "Adsbot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Adsbot"
-      ]
     },
     "engine": "unknown"
   },
@@ -235,18 +223,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AdvBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "aihitbot": {
-    "name": "aiHitBot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "aiHitBot"
       ]
     },
     "engine": "unknown"
@@ -528,16 +504,6 @@
     },
     "engine": "unknown"
   },
-  "backlinkcrawler": {
-    "name": "BacklinkCrawler",
-    "manufacturer": "backlink-test",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "baidumobaider": {
     "name": "BaiduMobaider",
     "manufacturer": "baidu",
@@ -776,7 +742,7 @@
   },
   "browsershots": {
     "name": "Browsershots",
-    "manufacturer": "browser-shots",
+    "manufacturer": "browsershots",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -976,30 +942,6 @@
     },
     "engine": "unknown"
   },
-  "cloudflare alwaysonline": {
-    "name": "CloudFlare AlwaysOnline",
-    "manufacturer": "cloud-flare",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "CloudFlare\\-AlwaysOnline"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "cloudflare amp fetcher": {
-    "name": "Cloudflare AMP Fetcher",
-    "manufacturer": "cloud-flare",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Cloudflare\\-AMP"
-      ]
-    },
-    "engine": "unknown"
-  },
   "cloudinary": {
     "name": "Cloudinary Bot",
     "manufacturer": "cloudinary",
@@ -1128,7 +1070,7 @@
   },
   "cookie reports bot": {
     "name": "Cookie Reports Bot",
-    "manufacturer": "cookie-reports-limited",
+    "manufacturer": "cookie-reports",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1299,18 +1241,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "deepcrawl": {
-    "name": "deepcrawl",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "deepcrawl"
-      ]
     },
     "engine": "unknown"
   },
@@ -1580,7 +1510,7 @@
   },
   "esribot": {
     "name": "Esribot",
-    "manufacturer": "esri.hu",
+    "manufacturer": "esrihu.hu",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1827,7 +1757,7 @@
   },
   "fhscan core": {
     "name": "FHScan Core",
-    "manufacturer": "tarasco",
+    "manufacturer": "tarlogic",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1851,7 +1781,7 @@
   },
   "findlinks": {
     "name": "findlinks",
-    "manufacturer": "wortschatz-uni-leipzig",
+    "manufacturer": "projekt-deutscher-wortschatz",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1894,18 +1824,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "fr\\-crawler"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "freewebmonitoring sitechecker": {
-    "name": "FreeWebMonitoring SiteChecker",
-    "manufacturer": "free-web-monitoring",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "FreeWebMonitoring SiteChecker"
       ]
     },
     "engine": "unknown"
@@ -2674,7 +2592,7 @@
   },
   "iis site analysis web crawler": {
     "name": "IIS Site Analysis Web Crawler",
-    "manufacturer": "iis.net",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -3243,18 +3161,6 @@
     },
     "engine": "unknown"
   },
-  "linkcheck": {
-    "name": "linkCheck",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "linkCheck"
-      ]
-    },
-    "engine": "unknown"
-  },
   "linklint": {
     "name": "LinkLint",
     "manufacturer": "unknown",
@@ -3428,18 +3334,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ltbot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "ltx71 bot": {
-    "name": "ltx71 Bot",
-    "manufacturer": "ltx71",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "ltx71"
       ]
     },
     "engine": "unknown"
@@ -4215,7 +4109,7 @@
   },
   "page analyzer": {
     "name": "Page Analyzer",
-    "manufacturer": "ranks.nl",
+    "manufacturer": "ranks",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4546,7 +4440,7 @@
   },
   "qualidator.com bot": {
     "name": "Qualidator.com Bot",
-    "manufacturer": "qualidator",
+    "manufacturer": "seven49",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4698,18 +4592,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RED"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "reddit bot": {
-    "name": "reddit bot",
-    "manufacturer": "reddit",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "redditbot"
       ]
     },
     "engine": "unknown"
@@ -5125,7 +5007,7 @@
   },
   "seodiver bot": {
     "name": "SEOdiver Bot",
-    "manufacturer": "seodiver",
+    "manufacturer": "abakus-internet-marketing",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -5366,7 +5248,7 @@
   },
   "socialcast bot": {
     "name": "socialcast Bot",
-    "manufacturer": "socialcast.com",
+    "manufacturer": "socialcast",
     "type": "bot",
     "version": {
       "class": null,
@@ -5601,7 +5483,7 @@
   },
   "sreleasebot": {
     "name": "sReleaseBot",
-    "manufacturer": "s-release",
+    "manufacturer": "srelease",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -6461,18 +6343,6 @@
     },
     "engine": "unknown"
   },
-  "w3c i18n checker": {
-    "name": "W3C I18n Checker",
-    "manufacturer": "w3c",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "W3C\\_I18n\\-Checker"
-      ]
-    },
-    "engine": "unknown"
-  },
   "w3c mobileok checker": {
     "name": "W3C MobileOK Checker",
     "manufacturer": "w3c",
@@ -6481,18 +6351,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "W3C\\-mobileOK\\/DDC\\-"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "w3c unicorn": {
-    "name": "W3C Unicorn",
-    "manufacturer": "w3c",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "W3C_Unicorn"
       ]
     },
     "engine": "unknown"
@@ -7302,16 +7160,6 @@
     },
     "engine": "unknown"
   },
-  "y!j-agent": {
-    "name": "Y!J-Agent",
-    "manufacturer": "yahoo-japan",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "yadowscrawler": {
     "name": "YadowsCrawler",
     "manufacturer": "unknown",
@@ -7553,18 +7401,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "madbbot": {
-    "name": "MADBbot",
-    "manufacturer": "madb",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "MADBbot"
-      ]
     },
     "engine": "unknown"
   },
@@ -7858,30 +7694,6 @@
     },
     "engine": "unknown"
   },
-  "pocket-image-cache": {
-    "name": "PocketImageCache",
-    "manufacturer": "read-it-later",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PocketImageCache"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "pocket-parser": {
-    "name": "PocketParser",
-    "manufacturer": "read-it-later",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PocketParser"
-      ]
-    },
-    "engine": "unknown"
-  },
   "pumoxbot": {
     "name": "Pumoxbot",
     "manufacturer": "unknown",
@@ -8061,18 +7873,6 @@
       "search": [
         "screpybot",
         "ScrepyBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "gais-bot": {
-    "name": "Gaisbot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Gaisbot"
       ]
     },
     "engine": "unknown"

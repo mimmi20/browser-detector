@@ -394,6 +394,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'ai.perplexity.comet' => 'comet',
             'com.tencent.mtt' => 'qqbrowser',
             'company.thebrowser.arc' => 'arc-search',
+            'com.siber.roboform' => 'roboform',
             default => null,
         };
     }

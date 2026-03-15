@@ -220,7 +220,7 @@
     "engine": "unknown"
   },
   "winhttp": {
-    "name": "WinHttp",
+    "name": "Windows HTTP",
     "manufacturer": "microsoft",
     "type": "library",
     "version": {
@@ -776,6 +776,54 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "gobuster"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "html-parser": {
+    "name": "HTML Parser",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HTMLParser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lib-http": {
+    "name": "LibHTTP",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "libhttp"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "reqwest": {
+    "name": "reqwest",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "reqwest"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rest-sharp": {
+    "name": "RestSharp",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RestSharp"
       ]
     },
     "engine": "unknown"

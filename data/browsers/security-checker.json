@@ -79,7 +79,7 @@
     "engine": null
   },
   "pdrlabs bot": {
-    "name": "pdrlabs Bot",
+    "name": "PDR Labs Bot",
     "manufacturer": "pdrlabs",
     "type": "security-checker",
     "version": {
@@ -196,5 +196,51 @@
       ]
     },
     "engine": null
+  },
+  "fhms-its-research-scanner": {
+    "name": "FHMS ITS Research Scanner",
+    "manufacturer": "muenster-university-of-applied-sciences",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "fhms-its-research-scanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ipip": {
+    "name": "IPIP",
+    "manufacturer": "tiantexin",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "ltx71 bot": {
+    "name": "ltx71 Bot",
+    "manufacturer": "ltx71",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ltx71"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "renovate-bot": {
+    "name": "RenovateBot",
+    "manufacturer": "white-source",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RenovateBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

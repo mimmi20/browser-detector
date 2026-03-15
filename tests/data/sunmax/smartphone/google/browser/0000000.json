@@ -154,6 +154,57 @@
   },
   {
     "headers": {
+      "sec-ch-ua-model": "Model A",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "8.1.0",
+      "sec-ch-ua": "\"Chromium\";v=\"104.0.5112.69\", \" Not A;Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"104.0.5112.69\"",
+      "sec-ch-ua-full-version": "104.0.5112.69",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Model A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Model A",
+      "marketingName": "Model A",
+      "manufacturer": "Sunmax",
+      "brand": "Sunmax",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.5112.69",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.69",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "sec-ch-ua-model": "Model 6",
       "sec-ch-ua-platform": "Android",
       "sec-ch-ua-platform-version": "11.0.0",

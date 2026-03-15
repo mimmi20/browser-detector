@@ -2611,6 +2611,354 @@ enum Company: string implements CompanyInterface
 
     case modeMobile = 'Mode Mobile';
 
+    case siberSystems = 'Siber Systems';
+
+    case jooble = 'jooble';
+
+    case loadtime = 'LoadTime';
+
+    case metauri = 'metauri';
+
+    case paypal = 'Paypal';
+
+    case tegDesign = 'TEG Design';
+
+    case theOldReader = 'The Old Reader';
+
+    case viderem = 'Viderem';
+
+    case xmlSitemaps = 'XML Sitemaps';
+
+    case zaldamo = 'Zaldamo';
+
+    case zumInternet = 'ZUM internet';
+
+    case a6corp = 'A6 Corp';
+
+    case advbot = 'advbot';
+
+    case botRevolt = 'Bot Revolt';
+
+    case braedonVickers = 'Braedon Vickers';
+
+    case centil = 'CENTIL';
+
+    case projektDeutscherWortschatz = 'Projekt Deutscher Wortschatz';
+
+    case coursera = 'Coursera';
+
+    case creativeCommons = 'Creative Commons';
+
+    case dadapro = 'dadapro';
+
+    case duedil = 'DueDil';
+
+    case fairshare = 'Fairshare';
+
+    case feedblitz = 'FeedBlitz';
+
+    case forumposter = 'forumposter';
+
+    case gaduGadu = 'Gadu-Gadu';
+
+    case goDaddy = 'GoDaddy';
+
+    case infegy = 'Infegy';
+
+    case internetSeer = 'InternetSeer';
+
+    case iZSearch = 'iZSearch';
+
+    case jDeSilva = 'J de Silva';
+
+    case jonathanBennett = 'Jonathan Bennett';
+
+    case lipperhey = 'Lipperhey';
+
+    case muensterUniversityOfAppliedSciences = 'Muenster University of Applied Sciences';
+
+    case notePage = 'NotePage';
+
+    case oesterreichischeNationalbibliothek = 'Österreichische Nationalbibliothek';
+
+    case pageFreezerSoftware = 'PageFreezer Software';
+
+    case pdrlabs = 'pdrlabs';
+
+    case picmole = 'Picmole';
+
+    case picsearch = 'Picsearch';
+
+    case plantRob = 'PlantRob';
+
+    case prlog = 'prlog';
+
+    case profoundNetworks = 'Profound Networks';
+
+    case remixation = 'Remixation';
+
+    case savenkeep = 'Savenkeep';
+
+    case seegnify = 'Seegnify';
+
+    case semantissimo = 'semantissimo';
+
+    case abakusInternetMarketing = 'ABAKUS Internet Marketing';
+
+    case setLinks = 'SetLinks';
+
+    case sophos = 'Sophos';
+
+    case suSea = 'SuSea';
+
+    case superfeedr = 'Superfeedr';
+
+    case theRocketScienceGroup = 'The Rocket Science Group';
+
+    case thingLink = 'ThingLink';
+
+    case thomasSchulte = 'Thomas Schulte';
+
+    case thumbshots = 'thumbshots';
+
+    case thunderstoneSoftware = 'Thunderstone Software';
+
+    case tumblr = 'Tumblr';
+
+    case veoozLabs = 'Veooz Labs';
+
+    case wasAlive = 'WASALive';
+
+    case wdg = 'WDG';
+
+    case webthumbnail = 'webthumbnail';
+
+    case zend = 'Zend';
+
+    case twoHundredPlease = '200please';
+
+    case alltop = 'Alltop';
+
+    case aolSoft = 'AOL Soft';
+
+    case apercite = 'Apercite';
+
+    case asiaWsNetwork = 'AsiaWS network';
+
+    case begun = 'begun';
+
+    case binarymonkey = 'binarymonkey';
+
+    case bobMottram = 'Bob Mottram';
+
+    case browsershots = 'browsershots';
+
+    case careerX = 'Career-x';
+
+    case checksite = 'CheckSite';
+
+    case cityMap = 'city-map';
+
+    case cookieReports = 'Cookie Reports';
+
+    case deadLinks = 'dead-links';
+
+    case declum = 'Declum';
+
+    case digitalShadows = 'Digital Shadows';
+
+    case discoveryEngine = 'Discovery Engine';
+
+    case dmSolutions = 'DM Solutions';
+
+    case domainSigma = 'DomainSigma';
+
+    case electronicFrontierFoundation = 'Electronic Frontier Foundation';
+
+    case esrihuHu = 'esrihu.hu';
+
+    case eurofiles = 'eurofiles';
+
+    case everyoneSocial = 'EveryoneSocial';
+
+    case exploratodo = 'Exploratodo';
+
+    case ezSystems = 'eZ Systems';
+
+    case galaxyDownloads = 'GalaxyDownloads';
+
+    case genderanalyzer = 'genderanalyzer';
+
+    case writtenByte = 'Written Byte';
+
+    case getintent = 'getintent';
+
+    case gloomar = 'Gloomar';
+
+    case gloriotStephane = 'Gloriot Stéphane';
+
+    case goSquared = 'Go Squared';
+
+    case gocro = 'Gocro';
+
+    case grierForensics = 'Grier Forensics';
+
+    case icarus6 = 'icarus6';
+
+    case ilyaGrigorik = 'Ilya Grigorik';
+
+    case inbotTechnology = 'Inbot Technology';
+
+    case internetMemoryResearch = 'Internet Memory Research';
+
+    case inventionMachine = 'Invention Machine';
+
+    case ipv4scan = 'ipv4scan';
+
+    case isrg = 'ISRG';
+
+    case iyottaSoftware = 'iyotta software';
+
+    case jaohawi = 'Jaohawi';
+
+    case jobDigger = 'Jobdigger';
+
+    case joinVision = 'JoinVision';
+
+    case jonasGenannt = 'Jonas Genannt';
+
+    case madb = 'MADB';
+
+    case meanpath = 'Meanpath';
+
+    case metaheaders = 'Metaheaders';
+
+    case monitorBacklinks = 'Monitor Backlinks';
+
+    case monoName = 'mono.name';
+
+    case nationalLibraryOfSweden = 'National Library of Sweden';
+
+    case nerdyData = 'NerdyData';
+
+    case nettIo = 'nett.io';
+
+    case nutchDe = 'nutch.de';
+
+    case openhose = 'OpenHose';
+
+    case optivo = 'optivo';
+
+    case overcastRadio = 'Overcast Radio';
+
+    case peeplo = 'peeplo';
+
+    case plus5files = 'plus5files';
+
+    case prCyRu = 'pr-cy.ru';
+
+    case publicLibraryArchive = 'publiclibraryarchive';
+
+    case seven49 = 'seven49';
+
+    case quickiWiki = 'QuickiWiki';
+
+    case rankFlex = 'RankFlex';
+
+    case ranks = 'Ranks';
+
+    case rebelmouse = 'RebelMouse';
+
+    case refind = 'Refind';
+
+    case srelease = 'SRelease';
+
+    case scrapinghub = 'Scraping Hub';
+
+    case screenerBot = 'ScreenerBot';
+
+    case searchteq = 'SEARCHTEQ';
+
+    case securepoint = 'Securepoint';
+
+    case seoPowerSuite = 'SEO PowerSuite';
+
+    case seograph = 'SEOGraph';
+
+    case shiftyJelly = 'Shifty Jelly';
+
+    case socialcast = 'socialcast';
+
+    case softlist = 'softlist';
+
+    case stonyBrookUniversity = 'Stony Brook University';
+
+    case subshell = 'subshell';
+
+    case SuMaEV = 'SuMa e.V.';
+
+    case tarlogic = 'Tarlogic';
+
+    case tockify = 'Tockify';
+
+    case tweetminster = 'Tweetminster';
+
+    case ucoz = 'uCoz';
+
+    case ufa = 'UFA';
+
+    case unrulyGroup = 'Unruly Group';
+
+    case varocarbas = 'Alvaro Carballo Garcia';
+
+    case virtoSolutions = 'Virto Solutions';
+
+    case vkontakte = 'VKontakte';
+
+    case warebay = 'warebay';
+
+    case webgains = 'Webgains';
+
+    case webtarantula = 'webtarantula';
+
+    case wmaid = 'wmaid';
+
+    case webtop = 'Webtop';
+
+    case diffbotTechnologies = 'Diffbot Technologies';
+
+    case reply = 'Reply!';
+
+    case nameProtect = 'NameProtect';
+
+    case iliad = 'ILIAD';
+
+    case siteSell = 'SiteSell';
+
+    case shopWiki = 'ShopWiki';
+
+    case yunyun = 'YunYun';
+
+    case tiantexin = 'Tiantexin';
+
+    case nodePing = 'NodePing';
+
+    case innologica = 'Innologica';
+
+    case hunter = 'Hunter';
+
+    case crowdTangle = 'CrowdTangle';
+
+    case whiteSource = 'White Source';
+
+    case linkResearchTools = 'LinkResearchTools';
+
+    case klarna = 'Klarna';
+
+    case moodle = 'Moodle';
+
+    case fragFINN = 'fragFINN';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3914,6 +4262,180 @@ enum Company: string implements CompanyInterface
             'freewebmonitoring', 'free-web-monitoring' => self::freewebmonitoring,
             'grouphigh', 'group-high', 'grouphigh llc' => self::groupHigh,
             'modemobile', 'mode-mobile', 'mode mobile' => self::modeMobile,
+            'sibersystems', 'siber systems inc', 'siber-systems', 'siber systems' => self::siberSystems,
+            'jooble' => self::jooble,
+            'loadtime' => self::loadtime,
+            'metauri' => self::metauri,
+            'paypal' => self::paypal,
+            'tegdesign', 'teg-design', 'teg design' => self::tegDesign,
+            'theoldreader', 'the-old-reader', 'the old reader' => self::theOldReader,
+            'viderem', 'viderem ab' => self::viderem,
+            'xmlsitemaps', 'xml-sitemaps', 'xml sitemaps' => self::xmlSitemaps,
+            'zaldamo', 'zaldamo llc' => self::zaldamo,
+            'zuminternet', 'zum-internet-corp', 'zum internet corp.', 'zum internet' => self::zumInternet,
+            'a6corp', 'a6 corp' => self::a6corp,
+            'advbot', 'adv-bot' => self::advbot,
+            'botrevolt', 'bot-revolt', 'bot revolt' => self::botRevolt,
+            'braedonvickers', 'braedon vickers' => self::braedonVickers,
+            'centil', 'centil-schweiz' => self::centil,
+            'projektdeutscherwortschatz', 'projekt-deutscher-wortschatz', 'projekt deutscher wortschatz an der universität leipzig', 'projekt deutscher wortschatz' => self::projektDeutscherWortschatz,
+            'coursera', 'coursera inc.' => self::coursera,
+            'creativecommons', 'creative-commons', 'creative commons' => self::creativeCommons,
+            'dadapro' => self::dadapro,
+            'duedil', 'duedil ltd' => self::duedil,
+            'fairshare' => self::fairshare,
+            'feedblitz', 'feedblitz, llc' => self::feedblitz,
+            'forumposter', 'forum-poster' => self::forumposter,
+            'gadugadu', 'gadu-gadu', 'gadu-gadu s.a' => self::gaduGadu,
+            'godaddy', 'go-daddy', 'godaddy, llc' => self::goDaddy,
+            'infegy', 'infegy, inc.' => self::infegy,
+            'internetseer', 'internet-seer' => self::internetSeer,
+            'izsearch', 'iz-search' => self::iZSearch,
+            'jdesilva', 'j-de-silva', 'j de silva' => self::jDeSilva,
+            'jonathanbennett', 'jonathan-bennett', 'jonathan bennett' => self::jonathanBennett,
+            'lipperhey' => self::lipperhey,
+            'muensteruniversityofappliedsciences', 'muenster-university-of-applied-sciences', 'muenster university of applied sciences' => self::muensterUniversityOfAppliedSciences,
+            'notepage', 'note-page', 'notepage, inc.' => self::notePage,
+            'oesterreichischenationalbibliothek', 'oesterreichische nationalbibliothek', 'österreichische nationalbibliothek' => self::oesterreichischeNationalbibliothek,
+            'pagefreezersoftware', 'page-freezer-software', 'pagefreezer software inc.', 'pagefreezer software' => self::pageFreezerSoftware,
+            'pdrlabs' => self::pdrlabs,
+            'picmole' => self::picmole,
+            'picsearch', 'picsearch services ab' => self::picsearch,
+            'plantrob', 'plant-rob' => self::plantRob,
+            'prlog' => self::prlog,
+            'profoundnetworks', 'profound-networks', 'profound networks, llc', 'profound networks' => self::profoundNetworks,
+            'remixation', 'remixation, inc' => self::remixation,
+            'savenkeep' => self::savenkeep,
+            'seegnify' => self::seegnify,
+            'semantissimo' => self::semantissimo,
+            'abakusinternetmarketing', 'abakus internet marketing gmbh', 'abakus-internet-marketing', 'abakus internet marketing' => self::abakusInternetMarketing,
+            'setlinks', 'set-links' => self::setLinks,
+            'sophos', 'sophos ltd.' => self::sophos,
+            'susea', 'su-sea', 'susea, inc.' => self::suSea,
+            'superfeedr' => self::superfeedr,
+            'therocketsciencegroup', 'the-rocket-science-group', 'the rocket science group' => self::theRocketScienceGroup,
+            'thinglink', 'thing-link-oy', 'thinglink oy' => self::thingLink,
+            'thomasschulte', 'thomas-schulte', 'thomas schulte' => self::thomasSchulte,
+            'thumbshots' => self::thumbshots,
+            'thunderstonesoftware', 'thunderstone-software', 'thunderstone software llc', 'thunderstone software' => self::thunderstoneSoftware,
+            'tumblr', 'tumblr, inc.' => self::tumblr,
+            'veoozlabs', 'veooz-labs', 'veooz labs' => self::veoozLabs,
+            'wasalive', 'was-alive' => self::wasAlive,
+            'wdg', 'web-design-group', 'web design group' => self::wdg,
+            'webthumbnail' => self::webthumbnail,
+            'zend', 'zend technologies ltd.' => self::zend,
+            'twohundredplease', '200please' => self::twoHundredPlease,
+            'alltop' => self::alltop,
+            'aolsoft', 'aol-soft', 'aol soft' => self::aolSoft,
+            'apercite' => self::apercite,
+            'asiawsnetwork', 'asia-ws-wetwork', 'asiaws network' => self::asiaWsNetwork,
+            'begun' => self::begun,
+            'binarymonkey' => self::binarymonkey,
+            'bobmottram', 'bob-mottram', 'bob mottram' => self::bobMottram,
+            'browsershots' => self::browsershots,
+            'careerx', 'career-x', 'career-x gmbh' => self::careerX,
+            'checksite' => self::checksite,
+            'citymap', 'city-map-internet-marketing', 'city-map internetmarketing ag', 'city-map' => self::cityMap,
+            'cookiereports', 'cookie-reports', 'cookie reports limited', 'cookie reports' => self::cookieReports,
+            'deadlinks', 'dead-links' => self::deadLinks,
+            'declum' => self::declum,
+            'digitalshadows', 'digital-shadows', 'digital shadows inc.', 'digital shadows' => self::digitalShadows,
+            'discoveryengine', 'discovery-engine', 'discovery engine' => self::discoveryEngine,
+            'dmsolutions', 'dm-solutions', 'dm solutions e.k.', 'dm solutions' => self::dmSolutions,
+            'domainsigma', 'domain-sigma' => self::domainSigma,
+            'electronicfrontierfoundation', 'electronic-frontier-foundation', 'electronic frontier foundation' => self::electronicFrontierFoundation,
+            'esrihuhu', 'esrihu.hu' => self::esrihuHu,
+            'eurofiles' => self::eurofiles,
+            'everyonesocial', 'everyone-social' => self::everyoneSocial,
+            'exploratodo' => self::exploratodo,
+            'ezsystems', 'ez-systems', 'ez systems' => self::ezSystems,
+            'galaxydownloads', 'galaxy-downloads' => self::galaxyDownloads,
+            'genderanalyzer', 'gender-analyzer' => self::genderanalyzer,
+            'writtenbyte', 'written-byte', 'written byte ltd', 'written byte' => self::writtenByte,
+            'getintent' => self::getintent,
+            'gloomar', 'gloomar cz a.s.' => self::gloomar,
+            'gloriotstephane', 'gloriot-stephane', 'gloriot stéphane' => self::gloriotStephane,
+            'gosquared', 'go-squared', 'go squared ltd.', 'go squared' => self::goSquared,
+            'gocro', 'gocro, inc.' => self::gocro,
+            'grierforensics', 'grier forensics' => self::grierForensics,
+            'icarus6' => self::icarus6,
+            'ilyagrigorik', 'ilya-grigorik', 'ilya grigorik' => self::ilyaGrigorik,
+            'inbottechnology', 'inbot-technology', 'inbot technology ltd.', 'inbot technology' => self::inbotTechnology,
+            'internetmemoryresearch', 'internet-memory-research', 'internet memory research' => self::internetMemoryResearch,
+            'inventionmachine', 'invention-machine', 'invention machine corporation', 'invention machine' => self::inventionMachine,
+            'ipv4scan' => self::ipv4scan,
+            'isrg', 'internet security research group' => self::isrg,
+            'iyottasoftware', 'iyotta-software', 'iyotta software private limited, india', 'iyotta software' => self::iyottaSoftware,
+            'jaohawi', 'jaohawi ab' => self::jaohawi,
+            'jobdigger', 'job-digger', 'jobdigger b.v.' => self::jobDigger,
+            'joinvision', 'join-vision' => self::joinVision,
+            'jonasgenannt', 'jonas-genannt', 'jonas genannt' => self::jonasGenannt,
+            'madb' => self::madb,
+            'meanpath' => self::meanpath,
+            'metaheaders', 'meta-headers' => self::metaheaders,
+            'monitorbacklinks', 'monitor backlinks', 'monitor backlinks ltd.' => self::monitorBacklinks,
+            'mononame', 'mono', 'mono.name' => self::monoName,
+            'nationallibraryofsweden', 'national-library-of-sweden', 'national library of sweden' => self::nationalLibraryOfSweden,
+            'nerdydata', 'nerdy-data' => self::nerdyData,
+            'nettio', 'nett.io' => self::nettIo,
+            'nutchde', 'nutch-de', 'nutch.de' => self::nutchDe,
+            'openhose' => self::openhose,
+            'optivo', 'optivo gmbh' => self::optivo,
+            'overcastradio', 'overcast radio', 'overcast radio, llc' => self::overcastRadio,
+            'peeplo' => self::peeplo,
+            'plus5files' => self::plus5files,
+            'prcyru', 'pr-cy', 'pr-cy.ru' => self::prCyRu,
+            'publiclibraryarchive', 'public-library-archive' => self::publicLibraryArchive,
+            'seven49', 'seven49.net ag' => self::seven49,
+            'quickiwiki', 'quicki-wiki' => self::quickiWiki,
+            'rankflex', 'rank-flex' => self::rankFlex,
+            'ranks' => self::ranks,
+            'rebelmouse' => self::rebelmouse,
+            'refind', 'refind inc.' => self::refind,
+            'srelease' => self::srelease,
+            'scrapinghub', 'scraping hub limited', 'scraping hub' => self::scrapinghub,
+            'screenerbot', 'screener-bot' => self::screenerBot,
+            'searchteq', 'searchteq gmbh' => self::searchteq,
+            'securepoint', 'securepoint gmbh' => self::securepoint,
+            'seopowersuite', 'seo-powersuite', 'seo powersuite' => self::seoPowerSuite,
+            'seograph' => self::seograph,
+            'shiftyjelly', 'shifty-jelly', 'shifty jelly' => self::shiftyJelly,
+            'socialcast' => self::socialcast,
+            'softlist' => self::softlist,
+            'stonybrookuniversity', 'stony brook university' => self::stonyBrookUniversity,
+            'subshell', 'subshell gmbh' => self::subshell,
+            'sumaev', 'suma-ev', 'suma e.v. - verein fuer freien wissenszugang', 'suma e.v.' => self::SuMaEV,
+            'tarlogic', 'tarlogic security sl' => self::tarlogic,
+            'tockify', 'tockify ltd' => self::tockify,
+            'tweetminster', 'tweet-minster' => self::tweetminster,
+            'ucoz', 'ucoz media llc' => self::ucoz,
+            'ufa', 'ufa, inc.' => self::ufa,
+            'unrulygroup', 'unruly-group', 'unruly group limited', 'unruly group' => self::unrulyGroup,
+            'varocarbas', 'alvaro carballo garcia' => self::varocarbas,
+            'virtosolutions', 'virto-solutions', 'virto solutions ltd', 'virto solutions' => self::virtoSolutions,
+            'vkontakte' => self::vkontakte,
+            'warebay' => self::warebay,
+            'webgains', 'webgains ltd' => self::webgains,
+            'webtarantula' => self::webtarantula,
+            'wmaid' => self::wmaid,
+            'webtop', 'webtop.com as' => self::webtop,
+            'diffbottechnologies', 'diffbot technologies corp.', 'diffbot-technologies', 'diffbot technologies' => self::diffbotTechnologies,
+            'reply', 'reply!, inc.', 'reply!' => self::reply,
+            'nameprotect', 'nameprotect, inc.', 'name-protect' => self::nameProtect,
+            'iliad', 'iliad sa' => self::iliad,
+            'sitesell', 'sitesell inc.', 'site-sell' => self::siteSell,
+            'shopwiki', 'shopwiki corp.', 'shop-wiki' => self::shopWiki,
+            'yunyun' => self::yunyun,
+            'tiantexin', 'beijing tiantexin tech. co., ltd.' => self::tiantexin,
+            'nodeping', 'nodeping llc', 'node-ping' => self::nodePing,
+            'innologica', 'innologica ltd' => self::innologica,
+            'hunter', 'hunter web services, inc.' => self::hunter,
+            'crowdtangle', 'crowdtangle, inc.', 'crowd-tangle' => self::crowdTangle,
+            'whitesource', 'white source ltd.', 'white-source', 'white source' => self::whiteSource,
+            'linkresearchtools', 'linkresearchtools gmbh', 'link-research-tools' => self::linkResearchTools,
+            'klarna', 'klarna bank ab' => self::klarna,
+            'moodle', 'moodle pty ltd' => self::moodle,
+            'fragfinn', 'fragfinn e.v.', 'fragfinn-ev' => self::fragFINN,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -4433,6 +4955,81 @@ enum Company: string implements CompanyInterface
             self::nttResonant => 'NTT Resonant Inc.',
             self::ea => 'Electronic Arts Inc',
             self::groupHigh => 'GroupHigh LLC',
+            self::siberSystems => 'Siber Systems Inc',
+            self::viderem => 'Viderem AB',
+            self::zaldamo => 'Zaldamo LLC',
+            self::zumInternet => 'ZUM internet Corp.',
+            self::centil => 'CENTIL-Schweiz',
+            self::projektDeutscherWortschatz => 'Projekt Deutscher Wortschatz an der Universität Leipzig',
+            self::coursera => 'Coursera Inc.',
+            self::duedil => 'DueDil Ltd',
+            self::feedblitz => 'FeedBlitz, LLC',
+            self::gaduGadu => 'Gadu-Gadu S.A',
+            self::goDaddy => 'GoDaddy, LLC',
+            self::infegy => 'Infegy, Inc.',
+            self::notePage => 'NotePage, Inc.',
+            self::pageFreezerSoftware => 'PageFreezer Software Inc.',
+            self::picsearch => 'Picsearch Services AB',
+            self::profoundNetworks => 'Profound Networks, LLC',
+            self::remixation => 'Remixation, Inc',
+            self::abakusInternetMarketing => 'ABAKUS Internet Marketing GmbH',
+            self::sophos => 'Sophos Ltd.',
+            self::suSea => 'SuSea, Inc.',
+            self::thingLink => 'ThingLink Oy',
+            self::thunderstoneSoftware => 'Thunderstone Software LLC',
+            self::tumblr => 'Tumblr, Inc.',
+            self::veoozLabs => 'Veooz Labs',
+            self::wdg => 'Web Design Group',
+            self::zend => 'Zend Technologies Ltd.',
+            self::careerX => 'Career-x GmbH',
+            self::cityMap => 'city-map Internetmarketing AG',
+            self::cookieReports => 'Cookie Reports Limited',
+            self::digitalShadows => 'Digital Shadows Inc.',
+            self::dmSolutions => 'DM Solutions e.K.',
+            self::writtenByte => 'Written Byte Ltd',
+            self::gloomar => 'Gloomar CZ a.s.',
+            self::goSquared => 'Go Squared Ltd.',
+            self::gocro => 'Gocro, Inc.',
+            self::inbotTechnology => 'Inbot Technology Ltd.',
+            self::inventionMachine => 'Invention Machine Corporation',
+            self::isrg => 'Internet Security Research Group',
+            self::iyottaSoftware => 'iyotta software private limited, india',
+            self::jaohawi => 'Jaohawi AB',
+            self::jobDigger => 'Jobdigger B.V.',
+            self::monitorBacklinks => 'Monitor Backlinks Ltd.',
+            self::optivo => 'optivo GmbH',
+            self::overcastRadio => 'Overcast Radio, LLC',
+            self::seven49 => 'seven49.net AG',
+            self::refind => 'Refind Inc.',
+            self::scrapinghub => 'Scraping Hub Limited',
+            self::searchteq => 'SEARCHTEQ GmbH',
+            self::securepoint => 'Securepoint GmbH',
+            self::subshell => 'subshell GmbH',
+            self::SuMaEV => 'SuMa e.V. - Verein fuer freien Wissenszugang',
+            self::tarlogic => 'Tarlogic Security SL',
+            self::tockify => 'Tockify Ltd',
+            self::ucoz => 'uCoz Media LLC',
+            self::ufa => 'UFA, Inc.',
+            self::unrulyGroup => 'Unruly Group Limited',
+            self::virtoSolutions => 'Virto Solutions LTD',
+            self::webgains => 'Webgains Ltd',
+            self::webtop => 'Webtop.com AS',
+            self::diffbotTechnologies => 'Diffbot Technologies Corp.',
+            self::reply => 'Reply!, Inc.',
+            self::nameProtect => 'NameProtect, Inc.',
+            self::iliad => 'ILIAD SA',
+            self::siteSell => 'SiteSell Inc.',
+            self::shopWiki => 'ShopWiki Corp.',
+            self::tiantexin => 'Beijing Tiantexin Tech. Co., Ltd.',
+            self::nodePing => 'NodePing LLC',
+            self::innologica => 'Innologica Ltd',
+            self::hunter => 'Hunter Web Services, Inc.',
+            self::crowdTangle => 'CrowdTangle, Inc.',
+            self::whiteSource => 'White Source Ltd.',
+            self::linkResearchTools => 'LinkResearchTools GmbH',
+            self::klarna => 'Klarna Bank AB',
+            self::moodle => 'Moodle Pty Ltd',
+            self::fragFINN => 'fragFINN e.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -4882,6 +5479,99 @@ enum Company: string implements CompanyInterface
             self::freewebmonitoring => 'free-web-monitoring',
             self::groupHigh => 'group-high',
             self::modeMobile => 'mode-mobile',
+            self::siberSystems => 'siber-systems',
+            self::tegDesign => 'teg-design',
+            self::theOldReader => 'the-old-reader',
+            self::xmlSitemaps => 'xml-sitemaps',
+            self::zumInternet => 'zum-internet-corp',
+            self::advbot => 'adv-bot',
+            self::botRevolt => 'bot-revolt',
+            self::braedonVickers => 'braedon vickers',
+            self::centil => 'centil-schweiz',
+            self::projektDeutscherWortschatz => 'projekt-deutscher-wortschatz',
+            self::creativeCommons => 'creative-commons',
+            self::forumposter => 'forum-poster',
+            self::gaduGadu => 'gadu-gadu',
+            self::goDaddy => 'go-daddy',
+            self::internetSeer => 'internet-seer',
+            self::iZSearch => 'iz-search',
+            self::jDeSilva => 'j-de-silva',
+            self::jonathanBennett => 'jonathan-bennett',
+            self::muensterUniversityOfAppliedSciences => 'muenster-university-of-applied-sciences',
+            self::notePage => 'note-page',
+            self::oesterreichischeNationalbibliothek => 'oesterreichische nationalbibliothek',
+            self::pageFreezerSoftware => 'page-freezer-software',
+            self::plantRob => 'plant-rob',
+            self::profoundNetworks => 'profound-networks',
+            self::abakusInternetMarketing => 'abakus-internet-marketing',
+            self::setLinks => 'set-links',
+            self::suSea => 'su-sea',
+            self::theRocketScienceGroup => 'the-rocket-science-group',
+            self::thingLink => 'thing-link-oy',
+            self::thomasSchulte => 'thomas-schulte',
+            self::thunderstoneSoftware => 'thunderstone-software',
+            self::veoozLabs => 'veooz-labs',
+            self::wasAlive => 'was-alive',
+            self::wdg => 'web-design-group',
+            self::twoHundredPlease => '200please',
+            self::aolSoft => 'aol-soft',
+            self::asiaWsNetwork => 'asia-ws-wetwork',
+            self::bobMottram => 'bob-mottram',
+            self::careerX => 'career-x',
+            self::cityMap => 'city-map-internet-marketing',
+            self::cookieReports => 'cookie-reports',
+            self::deadLinks => 'dead-links',
+            self::digitalShadows => 'digital-shadows',
+            self::discoveryEngine => 'discovery-engine',
+            self::dmSolutions => 'dm-solutions',
+            self::domainSigma => 'domain-sigma',
+            self::electronicFrontierFoundation => 'electronic-frontier-foundation',
+            self::esrihuHu => 'esrihu.hu',
+            self::everyoneSocial => 'everyone-social',
+            self::ezSystems => 'ez-systems',
+            self::galaxyDownloads => 'galaxy-downloads',
+            self::genderanalyzer => 'gender-analyzer',
+            self::writtenByte => 'written-byte',
+            self::gloriotStephane => 'gloriot-stephane',
+            self::goSquared => 'go-squared',
+            self::grierForensics => 'grier forensics',
+            self::ilyaGrigorik => 'ilya-grigorik',
+            self::inbotTechnology => 'inbot-technology',
+            self::internetMemoryResearch => 'internet-memory-research',
+            self::inventionMachine => 'invention-machine',
+            self::iyottaSoftware => 'iyotta-software',
+            self::jobDigger => 'job-digger',
+            self::joinVision => 'join-vision',
+            self::jonasGenannt => 'jonas-genannt',
+            self::metaheaders => 'meta-headers',
+            self::monitorBacklinks => 'monitor backlinks',
+            self::monoName => 'mono',
+            self::nationalLibraryOfSweden => 'national-library-of-sweden',
+            self::nerdyData => 'nerdy-data',
+            self::nettIo => 'nett.io',
+            self::nutchDe => 'nutch-de',
+            self::overcastRadio => 'overcast radio',
+            self::prCyRu => 'pr-cy',
+            self::publicLibraryArchive => 'public-library-archive',
+            self::quickiWiki => 'quicki-wiki',
+            self::rankFlex => 'rank-flex',
+            self::screenerBot => 'screener-bot',
+            self::seoPowerSuite => 'seo-powersuite',
+            self::shiftyJelly => 'shifty-jelly',
+            self::stonyBrookUniversity => 'stony brook university',
+            self::SuMaEV => 'suma-ev',
+            self::tweetminster => 'tweet-minster',
+            self::unrulyGroup => 'unruly-group',
+            self::virtoSolutions => 'virto-solutions',
+            self::diffbotTechnologies => 'diffbot-technologies',
+            self::nameProtect => 'name-protect',
+            self::siteSell => 'site-sell',
+            self::shopWiki => 'shop-wiki',
+            self::nodePing => 'node-ping',
+            self::crowdTangle => 'crowd-tangle',
+            self::whiteSource => 'white-source',
+            self::linkResearchTools => 'link-research-tools',
+            self::fragFINN => 'fragfinn-ev',
             default => $this->name,
         };
     }
