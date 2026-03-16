@@ -268,5 +268,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "grafana": {
+    "name": "Grafana",
+    "manufacturer": "grafana-labs",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Grafana"
+      ]
+    },
+    "engine": "unknown"
   }
 }

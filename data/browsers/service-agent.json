@@ -289,5 +289,17 @@
       ]
     },
     "engine": null
+  },
+  "microsoft-power-automate": {
+    "name": "Microsoft Power Automate",
+    "manufacturer": "microsoft",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "microsoft-flow"
+      ]
+    },
+    "engine": null
   }
 }

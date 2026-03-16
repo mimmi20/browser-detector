@@ -2959,6 +2959,14 @@ enum Company: string implements CompanyInterface
 
     case fragFINN = 'fragFINN';
 
+    case datadog = 'Datadog';
+
+    case mediagreen = 'Mediagreen';
+
+    case opengraphIo = 'OpenGraph.io';
+
+    case grafanaLabs = 'Grafana Labs';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4436,6 +4444,10 @@ enum Company: string implements CompanyInterface
             'klarna', 'klarna bank ab' => self::klarna,
             'moodle', 'moodle pty ltd' => self::moodle,
             'fragfinn', 'fragfinn e.v.', 'fragfinn-ev' => self::fragFINN,
+            'datadog' => self::datadog,
+            'mediagreen', 'mediagreen medienservice' => self::mediagreen,
+            'opengraphio', 'opengraph.io', 'opengraph-io' => self::opengraphIo,
+            'grafanalabs', 'grafana-labs', 'grafana labs' => self::grafanaLabs,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5030,6 +5042,7 @@ enum Company: string implements CompanyInterface
             self::klarna => 'Klarna Bank AB',
             self::moodle => 'Moodle Pty Ltd',
             self::fragFINN => 'fragFINN e.V.',
+            self::mediagreen => 'Mediagreen Medienservice',
             self::unknown => null,
             default => $this->value,
         };
@@ -5572,6 +5585,8 @@ enum Company: string implements CompanyInterface
             self::whiteSource => 'white-source',
             self::linkResearchTools => 'link-research-tools',
             self::fragFINN => 'fragfinn-ev',
+            self::opengraphIo => 'opengraph-io',
+            self::grafanaLabs => 'grafana-labs',
             default => $this->name,
         };
     }

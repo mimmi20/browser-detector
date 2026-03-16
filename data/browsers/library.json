@@ -827,5 +827,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "anyevent-http": {
+    "name": "AnyEvent HTTP",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AnyEvent-HTTP"
+      ]
+    },
+    "engine": "unknown"
   }
 }

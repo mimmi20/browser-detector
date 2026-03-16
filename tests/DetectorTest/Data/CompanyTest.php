@@ -8866,6 +8866,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'fragFINN',
                 'key' => 'fragfinn-ev',
             ],
+            [
+                'type' => 'Datadog',
+                'name' => 'Datadog',
+                'brandname' => 'Datadog',
+                'key' => 'datadog',
+            ],
+            [
+                'type' => 'Mediagreen',
+                'name' => 'Mediagreen Medienservice',
+                'brandname' => 'Mediagreen',
+                'key' => 'mediagreen',
+            ],
+            [
+                'type' => 'OpenGraph.io',
+                'name' => 'OpenGraph.io',
+                'brandname' => 'OpenGraph.io',
+                'key' => 'opengraph-io',
+            ],
+            [
+                'type' => 'Grafana Labs',
+                'name' => 'Grafana Labs',
+                'brandname' => 'Grafana Labs',
+                'key' => 'grafana-labs',
+            ],
         ];
     }
 

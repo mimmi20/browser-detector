@@ -3892,5 +3892,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "open-robots-txt": {
+    "name": "OpenRobotsTXT",
+    "manufacturer": "majestic-12",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ORT"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "open-graph-io": {
+    "name": "OpenGraph.io",
+    "manufacturer": "opengraph-io",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OpenGraph\\.io"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "github-camo": {
+    "name": "Github Camo",
+    "manufacturer": "github",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "github-camo"
+      ]
+    },
+    "engine": "unknown"
   }
 }

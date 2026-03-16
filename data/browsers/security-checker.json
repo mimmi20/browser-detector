@@ -242,5 +242,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wanscanner-bot": {
+    "name": "WanscannerBot",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WanscannerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "l9-explore": {
+    "name": "l9explore",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "l9explore"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "aliyun-sec-bot": {
+    "name": "AliyunSecBot",
+    "manufacturer": "alibaba",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AliyunSecBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

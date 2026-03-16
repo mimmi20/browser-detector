@@ -142,5 +142,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "fedilist-agent": {
+    "name": "FediList Agent",
+    "manufacturer": "unknown",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FediList Agent"
+      ]
+    },
+    "engine": "unknown"
   }
 }
