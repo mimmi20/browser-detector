@@ -400,7 +400,7 @@ final class RulefileParserTest extends TestCase
                     self::assertSame([], $context);
 
                     self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
+                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: Internal error [1]',
                         $message->getMessage(),
                     );
 
@@ -468,7 +468,7 @@ final class RulefileParserTest extends TestCase
                     self::assertSame([], $context);
 
                     self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
+                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: Internal error [1]',
                         $message->getMessage(),
                     );
 
@@ -536,7 +536,7 @@ final class RulefileParserTest extends TestCase
                     self::assertSame([], $context);
 
                     self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
+                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: Internal error [1]',
                         $message->getMessage(),
                     );
 
