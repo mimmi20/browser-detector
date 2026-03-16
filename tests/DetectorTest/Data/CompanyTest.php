@@ -8890,6 +8890,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Grafana Labs',
                 'key' => 'grafana-labs',
             ],
+            [
+                'type' => 'kubell',
+                'name' => 'kubell Co., Ltd.',
+                'brandname' => 'kubell',
+                'key' => 'kubell',
+            ],
+            [
+                'type' => 'ROIS-DS',
+                'name' => 'Joint Support-Center for Data Science Research',
+                'brandname' => 'ROIS-DS',
+                'key' => 'rois-ds',
+            ],
+            [
+                'type' => 'aStonish Studio',
+                'name' => 'aStonish Studio Srl',
+                'brandname' => 'aStonish Studio',
+                'key' => 'astonish-studio',
+            ],
+            [
+                'type' => 'Peer39 Tech',
+                'name' => 'Peer39 Tech, LLC',
+                'brandname' => 'Peer39 Tech',
+                'key' => 'peer39-tech',
+            ],
+            [
+                'type' => 'Immutable',
+                'name' => 'Immutable, SNC',
+                'brandname' => 'Immutable',
+                'key' => 'immutable',
+            ],
         ];
     }
 

@@ -450,15 +450,14 @@
     },
     "engine": "unknown"
   },
-  "tineye bot": {
+  "tineye-bot": {
     "name": "TinEye Crawler",
     "manufacturer": "idee",
     "type": "search-bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "TinEye\\-bot",
-        "TinEye"
+        "TinEye\\-bot"
       ]
     },
     "engine": "webkit"
@@ -1233,6 +1232,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MoodleBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google adwords express": {
+    "name": "Google Adwords Express",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google\\-Adwords\\-Express"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-blogs": {
+    "name": "YandexBlogs",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexBlogs"
       ]
     },
     "engine": "unknown"

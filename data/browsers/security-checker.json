@@ -278,5 +278,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "researchcyber-net": {
+    "name": "researchcyber.net",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "researchcyber.net"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "snoop-sec-inspect": {
+    "name": "SnoopSecInspect",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SnoopSecInspect"
+      ]
+    },
+    "engine": "unknown"
   }
 }

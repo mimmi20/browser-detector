@@ -301,5 +301,18 @@
       ]
     },
     "engine": null
+  },
+  "chatwork-link-preview": {
+    "name": "Chatwork LinkPreview",
+    "manufacturer": "kubell",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Chatwork LinkPreview v",
+        "Chatwork LinkPreview"
+      ]
+    },
+    "engine": null
   }
 }

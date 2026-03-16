@@ -280,5 +280,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "oh-dear": {
+    "name": "Oh Dear",
+    "manufacturer": "immutable",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OhDear"
+      ]
+    },
+    "engine": "unknown"
   }
 }

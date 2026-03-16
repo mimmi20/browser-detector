@@ -2967,6 +2967,16 @@ enum Company: string implements CompanyInterface
 
     case grafanaLabs = 'Grafana Labs';
 
+    case kubell = 'kubell';
+
+    case roisDs = 'ROIS-DS';
+
+    case astonishStudio = 'aStonish Studio';
+
+    case peer39Tech = 'Peer39 Tech';
+
+    case immutable = 'Immutable';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4448,6 +4458,11 @@ enum Company: string implements CompanyInterface
             'mediagreen', 'mediagreen medienservice' => self::mediagreen,
             'opengraphio', 'opengraph.io', 'opengraph-io' => self::opengraphIo,
             'grafanalabs', 'grafana-labs', 'grafana labs' => self::grafanaLabs,
+            'kubell', 'kubell co., ltd.' => self::kubell,
+            'roisds', 'joint support-center for data science research', 'rois-ds' => self::roisDs,
+            'astonishstudio', 'astonish studio srl', 'astonish-studio', 'astonish studio' => self::astonishStudio,
+            'peer39tech', 'peer39 tech, llc', 'peer39-tech', 'peer39 tech' => self::peer39Tech,
+            'immutable', 'immutable, snc' => self::immutable,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5043,6 +5058,11 @@ enum Company: string implements CompanyInterface
             self::moodle => 'Moodle Pty Ltd',
             self::fragFINN => 'fragFINN e.V.',
             self::mediagreen => 'Mediagreen Medienservice',
+            self::kubell => 'kubell Co., Ltd.',
+            self::roisDs => 'Joint Support-Center for Data Science Research',
+            self::astonishStudio => 'aStonish Studio Srl',
+            self::peer39Tech => 'Peer39 Tech, LLC',
+            self::immutable => 'Immutable, SNC',
             self::unknown => null,
             default => $this->value,
         };
@@ -5587,6 +5607,9 @@ enum Company: string implements CompanyInterface
             self::fragFINN => 'fragfinn-ev',
             self::opengraphIo => 'opengraph-io',
             self::grafanaLabs => 'grafana-labs',
+            self::roisDs => 'rois-ds',
+            self::astonishStudio => 'astonish-studio',
+            self::peer39Tech => 'peer39-tech',
             default => $this->name,
         };
     }

@@ -3928,5 +3928,65 @@
       ]
     },
     "engine": "unknown"
+  },
+  "tineye-crawler": {
+    "name": "TinEye",
+    "manufacturer": "idee",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TinEye"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "suggest-bot": {
+    "name": "SuggestBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SuggestBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cotoyogi": {
+    "name": "Cotoyogi",
+    "manufacturer": "rois-ds",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cotoyogi"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pigafetta": {
+    "name": "Pigafetta",
+    "manufacturer": "astonish-studio",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pigafetta"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "peer39-crawler": {
+    "name": "Peer39 Crawler",
+    "manufacturer": "peer39-tech",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "peer39_crawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }
