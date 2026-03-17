@@ -2977,6 +2977,92 @@ enum Company: string implements CompanyInterface
 
     case immutable = 'Immutable';
 
+    case dragonTouch = 'Dragon Touch';
+
+    case willcom = 'Willcom';
+
+    case gTide = 'G-Tide';
+
+    case jPhone = 'J-Phone';
+
+    case kodak = 'Kodak';
+
+    case kogan = 'Kogan';
+
+    case lemon = 'Lemon';
+
+    case malata = 'Malata';
+
+    case mitsubishi = 'Mitsubishi';
+
+    case nous = 'Nous';
+
+    case tuvio = 'Tuvio';
+
+    case wynncom = 'Wynncom';
+
+    case zeki = 'Zeki';
+
+    case browzar = 'Browzar';
+
+    case casio = 'CASIO';
+
+    case ckk = 'Ckk';
+
+    case dmkho = 'DMKHO';
+
+    case doffler = 'Doffler';
+
+    case evolveo = 'Evolveo';
+
+    case jobboerse = 'jobboerse';
+
+    case lexand = 'Lexand';
+
+    case mstar = 'MSTAR';
+
+    case turbopad = 'TurboPad';
+
+    case yuanda = 'YUANDA';
+
+    case ziox = 'Ziox';
+
+    case b2go = 'B2GO';
+
+    case emobile = 'Emobile';
+
+    case geometry = 'Geometry';
+
+    case anry = 'ANRY';
+
+    case aospStudio = 'AOSP STUDIO';
+
+    case eTel = 'E-Tel';
+
+    case earth = 'Earth';
+
+    case essential = 'Essential';
+
+    case feiteng = 'Feiteng';
+
+    case garminAsus = 'Garmin-Asus';
+
+    case gtel = 'GTel';
+
+    case nineSky = 'NineSky';
+
+    case packardBell = 'Packard Bell';
+
+    case rct = 'RCT';
+
+    case samtron = 'Samtron';
+
+    case sencor = 'Sencor';
+
+    case touchmate = 'Touchmate';
+
+    case vsun = 'Vsun';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4463,6 +4549,49 @@ enum Company: string implements CompanyInterface
             'astonishstudio', 'astonish studio srl', 'astonish-studio', 'astonish studio' => self::astonishStudio,
             'peer39tech', 'peer39 tech, llc', 'peer39-tech', 'peer39 tech' => self::peer39Tech,
             'immutable', 'immutable, snc' => self::immutable,
+            'dragontouch', 'dragon-touch', 'dragon touch' => self::dragonTouch,
+            'willcom', 'willcom inc.' => self::willcom,
+            'gtide', 'g-tide' => self::gTide,
+            'jphone', 'j-phone', 'j-phone co.' => self::jPhone,
+            'kodak' => self::kodak,
+            'kogan' => self::kogan,
+            'lemon' => self::lemon,
+            'malata' => self::malata,
+            'mitsubishi' => self::mitsubishi,
+            'nous' => self::nous,
+            'tuvio' => self::tuvio,
+            'wynncom' => self::wynncom,
+            'zeki' => self::zeki,
+            'browzar', 'browzar limited' => self::browzar,
+            'casio', 'nec casio mobile communications' => self::casio,
+            'ckk' => self::ckk,
+            'dmkho', 'dmkho software' => self::dmkho,
+            'doffler' => self::doffler,
+            'evolveo', 'abacus electric, s.r.o.' => self::evolveo,
+            'jobboerse' => self::jobboerse,
+            'lexand' => self::lexand,
+            'mstar' => self::mstar,
+            'turbopad' => self::turbopad,
+            'yuanda' => self::yuanda,
+            'ziox' => self::ziox,
+            'b2go', 'shenzhen b2go technology company limited' => self::b2go,
+            'emobile' => self::emobile,
+            'geometry', 'geometry ou' => self::geometry,
+            'anry' => self::anry,
+            'aospstudio', 'aosp-studio-apps', 'aosp studio apps', 'aosp studio' => self::aospStudio,
+            'etel', 'e-tel' => self::eTel,
+            'earth' => self::earth,
+            'essential' => self::essential,
+            'feiteng' => self::feiteng,
+            'garminasus', 'garmin-asus' => self::garminAsus,
+            'gtel' => self::gtel,
+            'ninesky', 'ninesky technology and industrial private limited', 'nine-sky' => self::nineSky,
+            'packardbell', 'packard-bell', 'packard bell' => self::packardBell,
+            'rct' => self::rct,
+            'samtron' => self::samtron,
+            'sencor' => self::sencor,
+            'touchmate' => self::touchmate,
+            'vsun', 'shenzhen vsun communication technology co., ltd' => self::vsun,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5063,6 +5192,17 @@ enum Company: string implements CompanyInterface
             self::astonishStudio => 'aStonish Studio Srl',
             self::peer39Tech => 'Peer39 Tech, LLC',
             self::immutable => 'Immutable, SNC',
+            self::willcom => 'Willcom Inc.',
+            self::jPhone => 'J-Phone Co.',
+            self::browzar => 'Browzar Limited',
+            self::casio => 'NEC CASIO Mobile Communications',
+            self::dmkho => 'DMKHO Software',
+            self::evolveo => 'Abacus Electric, s.r.o.',
+            self::b2go => 'Shenzhen B2go Technology Company Limited',
+            self::geometry => 'Geometry OU',
+            self::aospStudio => 'AOSP STUDIO Apps',
+            self::nineSky => 'NineSky Technology And Industrial Private Limited',
+            self::vsun => 'Shenzhen Vsun Communication Technology Co., Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -5610,6 +5750,14 @@ enum Company: string implements CompanyInterface
             self::roisDs => 'rois-ds',
             self::astonishStudio => 'astonish-studio',
             self::peer39Tech => 'peer39-tech',
+            self::dragonTouch => 'dragon-touch',
+            self::gTide => 'g-tide',
+            self::jPhone => 'j-phone',
+            self::aospStudio => 'aosp-studio-apps',
+            self::eTel => 'e-tel',
+            self::garminAsus => 'garmin-asus',
+            self::nineSky => 'nine-sky',
+            self::packardBell => 'packard-bell',
             default => $this->name,
         };
     }
