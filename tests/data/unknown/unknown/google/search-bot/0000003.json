@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; feed-id=9148062594130381516)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Feedfetcher",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "search-bot",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; feed-id=18251840941069414439)"
     },
     "device": {
@@ -4486,6 +4441,51 @@
     },
     "client": {
       "name": "Google App Engine",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "search-bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "FeedHQ/0.2 (https://github.com/feedhq/feedhq; favicon fetcher; https://github.com/feedhq/feedhq/wiki/fetcher; like FeedFetcher-Google)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Feedfetcher",
       "modus": null,
       "version": null,
       "manufacturer": "Google",

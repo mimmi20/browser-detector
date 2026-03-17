@@ -2971,51 +2971,6 @@
   },
   {
     "headers": {
-      "user-agent": "npm/6.14.12 node/v10.24.1 linux x64 ci/drone"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "pip/21.0.1 {\"ci\":null,\"cpu\":\"x86_64\",\"distro\":{\"id\":\"stretch\",\"libc\":{\"lib\":\"glibc\",\"version\":\"2.24\"},\"name\":\"Debian GNU/Linux\",\"version\":\"9\"},\"implementation\":{\"name\":\"CPython\",\"version\":\"3.7.9\"},\"installer\":{\"name\":\"pip\",\"version\":\"21.0.1\"},\"openssl_version\":\"OpenSSL 1.1.0l  10 Sep 2019\",\"python\":\"3.7.9\",\"setuptools_version\":\"53.0.0\",\"system\":{\"name\":\"Linux\",\"release\":\"4.19.123-coreos\"}}"
     },
     "device": {
@@ -4456,12 +4411,12 @@
   },
   {
     "headers": {
-      "user-agent": "azure-logic-apps/1.0 (workflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; version xxxxxxxxxxxxxxxxxxxx) microsoft-flow/1.0"
+      "user-agent": "AnyConnect Linux_64 4.10.06079"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": false,
@@ -4478,10 +4433,55 @@
       "bits": null
     },
     "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
       "name": null,
-      "marketingName": null,
+      "modus": null,
       "version": null,
       "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "cert-manager-challenges/v1.18.2 (linux/amd64) cert-manager/686afa62160249022a0205d3a9bf5f059476c684"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
