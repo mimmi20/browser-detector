@@ -4276,51 +4276,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (SaferSurf) Firefox 1.5"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "1.5.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Lynx Firefox"
     },
     "device": {
@@ -4496,6 +4451,51 @@
     "engine": {
       "name": "Gecko",
       "version": "27.0.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.9.2.3) Gecko/20100403 Firefox/3.6.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "SunOS",
+      "marketingName": "SunOS",
+      "version": null,
+      "manufacturer": "Oracle",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.6.3",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2.3",
       "manufacturer": "Mozilla"
     }
   }

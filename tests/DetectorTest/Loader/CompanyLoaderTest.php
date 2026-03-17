@@ -38,7 +38,7 @@ final class CompanyLoaderTest extends TestCase
      */
     public function testLoadFailHasNot(): void
     {
-        $companyKey = 'A6Corp';
+        $companyKey = 'Dune HD';
 
         $initData = new CompanyData(
             strategy: new class () implements StrategyInterface {
@@ -73,7 +73,7 @@ final class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($initData);
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the company with key "A6Corp" was not found');
+        $this->expectExceptionMessage('the company with key "Dune HD" was not found');
 
         $object->load($companyKey);
     }
@@ -84,7 +84,7 @@ final class CompanyLoaderTest extends TestCase
      */
     public function testLoadFailNullReturned(): void
     {
-        $companyKey = 'A6Corp';
+        $companyKey = 'Dune HD';
 
         $initData = new CompanyData(
             strategy: new class () implements StrategyInterface {
@@ -119,7 +119,7 @@ final class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($initData);
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the company with key "A6Corp" was not found');
+        $this->expectExceptionMessage('the company with key "Dune HD" was not found');
 
         $object->load($companyKey);
     }
@@ -133,9 +133,9 @@ final class CompanyLoaderTest extends TestCase
      */
     public function testLoadAvailable(): void
     {
-        $companyKey  = 'A6Corp';
-        $companyName = 'A6 Corp';
-        $brand       = 'A6 Corp';
+        $companyKey  = 'dune-hd';
+        $companyName = 'Dune HD';
+        $brand       = 'Dune HD';
 
         $initData = new CompanyData(
             strategy: new class () implements StrategyInterface {

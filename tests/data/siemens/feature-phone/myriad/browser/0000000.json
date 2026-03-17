@@ -2386,6 +2386,51 @@
   },
   {
     "headers": {
+      "user-agent": "SIE-SL45/3.1 UP/4.1.19i"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SL45",
+      "marketingName": "SL45",
+      "manufacturer": "Siemens",
+      "brand": "Siemens",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 101,
+        "height": 80,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.19",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SIE-SL6C/23 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -4417,51 +4462,6 @@
       "architecture": null,
       "deviceName": "AX72",
       "marketingName": "AX72",
-      "manufacturer": "Siemens",
-      "brand": "Siemens",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.7.3",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SIE-AL21/04 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "AL21",
-      "marketingName": "AL21",
       "manufacturer": "Siemens",
       "brand": "Siemens",
       "dualOrientation": false,

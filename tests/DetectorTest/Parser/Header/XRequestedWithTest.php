@@ -569,6 +569,7 @@ final class XRequestedWithTest extends TestCase
             ['ai.perplexity.comet', true, 'comet', true, null, false, Os::unknown],
             ['com.tencent.mtt', true, 'qqbrowser', true, null, false, Os::unknown],
             ['company.thebrowser.arc', true, 'arc-search', true, null, false, Os::unknown],
+            ['com.siber.roboform', true, 'roboform', true, null, false, Os::unknown],
         ];
     }
 }

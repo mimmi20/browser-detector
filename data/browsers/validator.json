@@ -45,6 +45,18 @@
     },
     "engine": "unknown"
   },
+  "validator.nu": {
+    "name": "W3C Markup Validation Service",
+    "manufacturer": "w3c",
+    "type": "validator",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Validator\\.nu"
+      ]
+    },
+    "engine": "unknown"
+  },
   "p3p-validator": {
     "name": "P3P Validator",
     "manufacturer": "w3c",
@@ -97,6 +109,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "W3C\\-checklink"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "w3c i18n checker": {
+    "name": "W3C I18n Checker",
+    "manufacturer": "w3c",
+    "type": "validator",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "W3C\\_I18n\\-Checker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "w3c unicorn": {
+    "name": "W3C Unicorn",
+    "manufacturer": "w3c",
+    "type": "validator",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "W3C_Unicorn"
       ]
     },
     "engine": "unknown"

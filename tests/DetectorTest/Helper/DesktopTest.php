@@ -132,6 +132,8 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6'],
             ['nook browser/1.0'],
             ['Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'],
+            ['WinHttp957010'],
+            ['Microsoft Office/16.0 (Microsoft Outlook 16.0.12827; Pro), Mozilla/4.0 (compatible; ms-office; MSOffice 16) comdirect/1.0 (appVersion:20.6.0;deviceType:desktop)'],
         ];
     }
 

@@ -10,5 +10,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "pocket-parser": {
+    "name": "PocketParser",
+    "manufacturer": "read-it-later",
+    "type": "offline-browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PocketParser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pocket-image-cache": {
+    "name": "PocketImageCache",
+    "manufacturer": "read-it-later",
+    "type": "offline-browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PocketImageCache"
+      ]
+    },
+    "engine": "unknown"
   }
 }

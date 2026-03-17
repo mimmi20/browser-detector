@@ -493,5 +493,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "7plus/7.3 (com.swm.live; build:107270; iOS 18.6.2) Alamofire/5.9.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "18.6.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Alamofire",
+      "modus": null,
+      "version": "5.9.1",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

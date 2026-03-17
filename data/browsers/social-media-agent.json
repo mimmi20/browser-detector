@@ -118,5 +118,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "meta-external-fetcher": {
+    "name": "Meta-ExternalFetcher",
+    "manufacturer": "meta",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "meta-externalfetcher"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "reddit bot": {
+    "name": "Reddit Bot",
+    "manufacturer": "reddit",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "redditbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fedilist-agent": {
+    "name": "FediList Agent",
+    "manufacturer": "unknown",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FediList Agent"
+      ]
+    },
+    "engine": "unknown"
   }
 }

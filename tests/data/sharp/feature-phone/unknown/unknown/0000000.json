@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "SHARP-TQ-GX10"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GX10",
+      "marketingName": "GX10",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 120,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "J-PHONE/4.3/V604SH/SNJSHQ2099925 SH/0009aa Profile/MIDP-1.0 Configuration/CLDC-1.0 Ext-Profile/JSCL-1.3.2"
     },
     "device": {
@@ -205,6 +250,51 @@
     "os": {
       "name": "Java ME",
       "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SHARP-TQ-GX30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GX30",
+      "marketingName": "GX30",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "Sun",
       "bits": null

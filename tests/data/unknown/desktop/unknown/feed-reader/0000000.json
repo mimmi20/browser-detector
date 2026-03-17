@@ -316,6 +316,51 @@
   },
   {
     "headers": {
+      "user-agent": "NewsGator/2.6 (http://www.newsgator.com; Microsoft Windows NT 5.1.2600 Service Pack 2; .NET CLR 2.0.50727.42)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "NewsGator",
+      "modus": null,
+      "version": "2.6.0",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Newsboat/2.29.0 (Linux x86_64)"
     },
     "device": {

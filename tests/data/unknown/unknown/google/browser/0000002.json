@@ -1,59 +1,6 @@
 [
   {
     "headers": {
-      "sec-ch-ua-model": "\"S4\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.130\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "114.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "sec-ch-ua-model": "\"S40\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"9.0.0\"",
@@ -2801,51 +2748,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; OpenGraph.io/1.1; +https://opengraph.io/;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "51.0.2704.103",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.103",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; AccessibleWebBot/1.0; +https://accessibleweb.com/bot/) HeadlessChrome/81.0.4044.0 Safari/537.36"
     },
     "device": {
@@ -3324,141 +3226,6 @@
     "engine": {
       "name": "Blink",
       "version": "134.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amzn-User/0.1) Chrome/119.0.6045.214 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "119.0.6045.214",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "119.0.6045.214",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GoogleAgent-Search; +https://developers.google.com/search/docs/crawling-indexing/google-agent-search) Chrome/114.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "114.0.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amzn-SearchBot/0.1) Chrome/119.0.6045.214 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "119.0.6045.214",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "119.0.6045.214",
       "manufacturer": "Google"
     }
   },
@@ -3993,17 +3760,7 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"908SH\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-ua": "\"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
-      "sec-ch-ua-full-version": "\"141.0.7390.122\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+      "user-agent": "Chrome/96.6 Safari/536.56"
     },
     "device": {
       "architecture": null,
@@ -4012,29 +3769,29 @@
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
-        "touch": null,
+        "touch": false,
         "size": null
       },
       "type": "unknown",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "141.0.0",
+      "version": "96.6.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4042,7 +3799,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "141.0.0",
+      "version": "96.6.0",
       "manufacturer": "Google"
     }
   }

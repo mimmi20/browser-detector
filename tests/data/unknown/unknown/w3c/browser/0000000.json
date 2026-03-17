@@ -30,9 +30,54 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.3.7",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/9.51 libwww/5.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "9.51.0",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -75,7 +120,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": null,
       "manufacturer": "W3C",
@@ -120,9 +165,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.5.0",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -165,7 +210,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "9.0.0",
       "manufacturer": "W3C",
@@ -210,9 +255,234 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/11.4.7 libwww/5.4.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "11.4.7",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/8.8.1 libwww/5.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "8.8.1",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/8.0 libwww/5.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/7.2 libwww/5.3.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "7.2.0",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/11.3 libwww/5.3.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "11.3.0",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -255,9 +525,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.1.9",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -300,9 +570,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.1.7",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -345,9 +615,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.1.5",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -390,9 +660,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.1.5",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -435,9 +705,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.1.0",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -480,7 +750,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -525,7 +795,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -570,7 +840,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -615,7 +885,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -660,7 +930,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -705,7 +975,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -750,7 +1020,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -795,7 +1065,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -840,7 +1110,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -885,7 +1155,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -930,7 +1200,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.9.4",
       "manufacturer": "W3C",
@@ -975,7 +1245,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.9.4",
       "manufacturer": "W3C",
@@ -1020,7 +1290,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.9.3",
       "manufacturer": "W3C",
@@ -1065,7 +1335,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.9.3",
       "manufacturer": "W3C",
@@ -1110,7 +1380,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.9.2",
       "manufacturer": "W3C",
@@ -1155,9 +1425,99 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/9.53 libwww/5.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "9.53.0",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/9.52 libwww/5.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "9.52.0",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -1200,7 +1560,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "5.0.5",
       "manufacturer": "W3C",
@@ -1245,7 +1605,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "5.4.5",
       "manufacturer": "W3C",
@@ -1290,7 +1650,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.0.9",
       "manufacturer": "W3C",
@@ -1335,7 +1695,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.7.4",
       "manufacturer": "W3C",
@@ -1380,7 +1740,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "8.1.6",
       "manufacturer": "W3C",
@@ -1425,7 +1785,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "W3C",
@@ -1470,7 +1830,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -1515,7 +1875,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -1560,7 +1920,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -1605,7 +1965,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -1650,9 +2010,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.4.9",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -1695,9 +2055,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.5.0",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -1740,9 +2100,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.4.8",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -1785,9 +2145,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.5.0",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -1830,7 +2190,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": null,
       "manufacturer": "W3C",
@@ -1875,9 +2235,9 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.4.8",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,
@@ -1920,7 +2280,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "4.0.4",
       "manufacturer": "W3C",
@@ -1965,7 +2325,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "5.0.1",
       "manufacturer": "W3C",
@@ -2010,7 +2370,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "5.4.5",
       "manufacturer": "W3C",
@@ -2055,7 +2415,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.0.5",
       "manufacturer": "W3C",
@@ -2100,7 +2460,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "7.8.3",
       "manufacturer": "W3C",
@@ -2145,7 +2505,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "W3C",
@@ -2190,7 +2550,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2235,7 +2595,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2280,7 +2640,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2325,7 +2685,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2370,7 +2730,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2415,7 +2775,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2460,7 +2820,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2505,7 +2865,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2550,7 +2910,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2595,7 +2955,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2640,7 +3000,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2685,7 +3045,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2730,7 +3090,7 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
       "version": "1.0.4",
       "manufacturer": "W3C",
@@ -2775,9 +3135,99 @@
       "bits": null
     },
     "client": {
-      "name": "jig browser web",
+      "name": "Jig Browser",
       "modus": null,
-      "version": "9.0.0",
+      "version": "1.4.5",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/8.3 libwww/5.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "8.3.0",
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "amaya/10 libwww/5.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Amaya",
+      "modus": null,
+      "version": "10.0.0",
       "manufacturer": "W3C",
       "type": "browser",
       "isbot": false,

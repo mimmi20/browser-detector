@@ -442,7 +442,7 @@
   },
   "lcc": {
     "name": "LCC",
-    "manufacturer": "corpora-uni-leipzig",
+    "manufacturer": "projekt-deutscher-wortschatz",
     "type": "search-bot",
     "version": {
       "factory": null,
@@ -450,15 +450,14 @@
     },
     "engine": "unknown"
   },
-  "tineye bot": {
+  "tineye-bot": {
     "name": "TinEye Crawler",
     "manufacturer": "idee",
     "type": "search-bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "TinEye\\-bot",
-        "TinEye"
+        "TinEye\\-bot"
       ]
     },
     "engine": "webkit"
@@ -1046,7 +1045,7 @@
     "engine": "unknown"
   },
   "sosospider": {
-    "name": "Sosospider",
+    "name": "Soso Spider",
     "manufacturer": "soso",
     "type": "search-bot",
     "version": {
@@ -1163,5 +1162,102 @@
       "search": null
     },
     "engine": null
+  },
+  "disco-bot": {
+    "name": "Discobot",
+    "manufacturer": "discovery-engine",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "discobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "edacious-intelligent-web-robot": {
+    "name": "Edacious & Intelligent Web Robot",
+    "manufacturer": "daum",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EDI"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sogou-orion-spider": {
+    "name": "Sogou Orion Spider",
+    "manufacturer": "sogou",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sogou Orion spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yunyun-bot": {
+    "name": "Yunyun Bot",
+    "manufacturer": "yunyun",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YRSpider",
+        "YYSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "moodlebot-linkchecker": {
+    "name": "MoodleBot Linkchecker",
+    "manufacturer": "moodle",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MoodleBot-LinkChecker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "moodlebot": {
+    "name": "MoodleBot",
+    "manufacturer": "moodle",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MoodleBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google adwords express": {
+    "name": "Google Adwords Express",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google\\-Adwords\\-Express"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-blogs": {
+    "name": "YandexBlogs",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexBlogs"
+      ]
+    },
+    "engine": "unknown"
   }
 }

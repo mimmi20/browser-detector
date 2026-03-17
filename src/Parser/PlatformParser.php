@@ -90,7 +90,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/windows nt|winnt/i' => Os::windowsnt,
             '/windows 3\.11/i' => Os::windows311,
             '/win16|windows 3\.1/i' => Os::windows31,
-            '/windows|win ?(?:10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32|16|64)|barca|the bat!|cygwin_(?:nt|9[58]|me)|[\-\( ]mingw32/i' => Os::windows,
+            '/windows|win ?(?:10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32|16|64)|barca|the bat!|cygwin_(?:nt|9[58]|me)|[\-\( ]mingw32|winhttp|ms-office/i' => Os::windows,
             '/commoncrawler|msie or firefox mutant|not on windows server/i' => Os::unknown,
             '/symbian\/3/i' => Os::symbianOs,
             '/series ?60|s60v[35]|s60; ?symbos/i' => Os::series60,

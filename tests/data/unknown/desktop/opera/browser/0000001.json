@@ -2611,6 +2611,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; OpenWeb 5.7.2.3-02; ms-office; MSOffice 14) Opera 8.54"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.54.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.24 (X11; FreeBSD 5 i386; U; de)"
     },
     "device": {
@@ -4451,51 +4496,6 @@
     "engine": {
       "name": "Presto",
       "version": "2.10.289",
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 9.0-RELEASE-p1 amd64; U; de) Presto/2.9.168 Version/11.50"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "9.0.0",
-      "manufacturer": "FreeBSD",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.50.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.9.168",
       "manufacturer": "Opera"
     }
   }

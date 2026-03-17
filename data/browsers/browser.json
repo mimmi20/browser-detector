@@ -2010,6 +2010,8 @@
       "search": [
         "jig browser web; ",
         "jig browser web",
+        "jig browser9i",
+        "jig browser9",
         "jig browser"
       ]
     },
@@ -2861,7 +2863,7 @@
         "OmniWeb"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "onebrowser": {
     "name": "OneBrowser",
@@ -5161,7 +5163,7 @@
         "AOL"
       ]
     },
-    "engine": null
+    "engine": "trident"
   },
   "avira-secure-browser": {
     "name": "Avira Secure Browser",
@@ -5899,5 +5901,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "amaya": {
+    "name": "Amaya",
+    "manufacturer": "w3c",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "amaya"
+      ]
+    },
+    "engine": null
   }
 }

@@ -442,5 +442,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "inoreader": {
+    "name": "inoreader",
+    "manufacturer": "innologica",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "inoreader"
+      ]
+    },
+    "engine": "unknown"
   }
 }

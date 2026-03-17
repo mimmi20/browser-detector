@@ -28,6 +28,7 @@ use function is_int;
 use function is_string;
 use function json_decode;
 use function preg_last_error;
+use function preg_last_error_msg;
 use function preg_match;
 use function sprintf;
 
@@ -111,9 +112,17 @@ final readonly class RulefileParser implements RulefileParserInterface
 
                 if ($match === false) {
                     $error = preg_last_error();
+                    $msg   = preg_last_error_msg();
+
                     $this->logger->error(
                         new Exception(
-                            sprintf('could not match rule "%s" of file %s: %s', $rule, $file, $error),
+                            sprintf(
+                                'could not match rule "%s" of file %s: %s [%s]',
+                                $rule,
+                                $file,
+                                $msg,
+                                $error,
+                            ),
                         ),
                     );
                 }

@@ -68,16 +68,61 @@
       "bits": null
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
+      "name": "Windows",
+      "marketingName": "Windows",
       "version": null,
-      "manufacturer": "Apple",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
       "name": "Links",
       "modus": null,
       "version": "0.99.0",
+      "manufacturer": "Mikulas Patocka",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Links (0.95; Darwin 7.3.1 Power Macintosh)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PowerMac",
+      "marketingName": "PowerMac",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Links",
+      "modus": null,
+      "version": "0.95.0",
       "manufacturer": "Mikulas Patocka",
       "type": "browser",
       "isbot": false,
