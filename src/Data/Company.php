@@ -3063,6 +3063,52 @@ enum Company: string implements CompanyInterface
 
     case vsun = 'Vsun';
 
+    case anthonyRestaino = 'Anthony Restaino';
+
+    case boxee = 'Boxee';
+
+    case fishingNet = 'FishingNet';
+
+    case geskimo = 'GESKIMO';
+
+    case keanuLee = 'Keanu Lee';
+
+    case nox = 'Nox';
+
+    case aAndK = 'A&K';
+
+    case a1 = 'A1';
+
+    case asiaFone = 'AsiaFone';
+
+    case aston = 'ASTON';
+
+    case bangOlufsen = 'Bang & Olufsen';
+
+    case beeline = 'Beeline';
+
+    case benefon = 'Benefon';
+
+    case beyondPodTeam = 'BeyondPod Team';
+
+    case coopers = 'COOPERS';
+
+    case cosmote = 'Cosmote';
+
+    case dLink = 'D-Link';
+
+    case datalogic = 'Datalogic';
+
+    case datang = 'Datang';
+
+    case deejoy = 'Deejoy';
+
+    case desay = 'Desay';
+
+    case dex = 'DEX';
+
+    case digiland = 'Digiland';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4592,6 +4638,29 @@ enum Company: string implements CompanyInterface
             'sencor' => self::sencor,
             'touchmate' => self::touchmate,
             'vsun', 'shenzhen vsun communication technology co., ltd' => self::vsun,
+            'anthonyrestaino', 'anthony-restaino', 'anthony restaino' => self::anthonyRestaino,
+            'boxee', 'boxee inc' => self::boxee,
+            'fishingnet', 'fishing-net' => self::fishingNet,
+            'geskimo', 'geskimo srl' => self::geskimo,
+            'keanulee', 'keanu-lee', 'keanu lee' => self::keanuLee,
+            'nox', 'nox ltd.' => self::nox,
+            'aandk', 'a&k' => self::aAndK,
+            'a1' => self::a1,
+            'asiafone', 'asia-fone' => self::asiaFone,
+            'aston', 'aston est une s.a.s' => self::aston,
+            'bangolufsen', 'bang-olufsen', 'bang & olufsen a/s', 'bang & olufsen' => self::bangOlufsen,
+            'beeline' => self::beeline,
+            'benefon' => self::benefon,
+            'beyondpodteam', 'beyondpod-team', 'beyondpod team' => self::beyondPodTeam,
+            'coopers' => self::coopers,
+            'cosmote' => self::cosmote,
+            'dlink', 'd-link' => self::dLink,
+            'datalogic' => self::datalogic,
+            'datang' => self::datang,
+            'deejoy' => self::deejoy,
+            'desay' => self::desay,
+            'dex' => self::dex,
+            'digiland' => self::digiland,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5203,6 +5272,11 @@ enum Company: string implements CompanyInterface
             self::aospStudio => 'AOSP STUDIO Apps',
             self::nineSky => 'NineSky Technology And Industrial Private Limited',
             self::vsun => 'Shenzhen Vsun Communication Technology Co., Ltd',
+            self::boxee => 'Boxee Inc',
+            self::geskimo => 'GESKIMO SRL',
+            self::nox => 'Nox Ltd.',
+            self::aston => 'ASTON est une S.A.S',
+            self::bangOlufsen => 'Bang & Olufsen a/s',
             self::unknown => null,
             default => $this->value,
         };
@@ -5758,6 +5832,14 @@ enum Company: string implements CompanyInterface
             self::garminAsus => 'garmin-asus',
             self::nineSky => 'nine-sky',
             self::packardBell => 'packard-bell',
+            self::anthonyRestaino => 'anthony-restaino',
+            self::fishingNet => 'fishing-net',
+            self::keanuLee => 'keanu-lee',
+            self::aAndK => 'a&k',
+            self::asiaFone => 'asia-fone',
+            self::bangOlufsen => 'bang-olufsen',
+            self::beyondPodTeam => 'beyondpod-team',
+            self::dLink => 'd-link',
             default => $this->name,
         };
     }
