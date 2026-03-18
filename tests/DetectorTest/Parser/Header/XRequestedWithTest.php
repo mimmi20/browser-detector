@@ -570,6 +570,7 @@ final class XRequestedWithTest extends TestCase
             ['com.tencent.mtt', true, 'qqbrowser', true, null, false, Os::unknown],
             ['company.thebrowser.arc', true, 'arc-search', true, null, false, Os::unknown],
             ['com.siber.roboform', true, 'roboform', true, null, false, Os::unknown],
+            ['com.huawei.hmos.browser', true, 'huawei-browser', true, null, false, Os::unknown],
         ];
     }
 }

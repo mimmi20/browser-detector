@@ -1303,6 +1303,7 @@ final class Device implements DeviceInterface
             '25100ra69g' => 'xiaomi=xiaomi 25100ra69g',
             'xiaomi 14t' => 'xiaomi=xiaomi 14t',
             'mi 10t lite 5g' => 'xiaomi=xiaomi mi 10t lite 5g',
+            'redmi 2a' => 'xiaomi=xiaomi redmi 2a',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3235,6 +3236,8 @@ final class Device implements DeviceInterface
             'wod-lx3', 'huawei wod-lx3' => 'huawei=huawei wod-lx3',
             'wod-lx2', 'huawei wod-lx2' => 'huawei=huawei wod-lx2',
             'wod-lx1', 'huawei wod-lx1' => 'huawei=huawei wod-lx1',
+            'had-w24', 'huawei had-w24' => 'huawei=huawei had-w24',
+            'had-w32', 'huawei had-w32' => 'huawei=huawei had-w32',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -3811,6 +3814,15 @@ final class Device implements DeviceInterface
             'xt2115' => 'motorola=motorola xt2115',
             'xt2115-1' => 'motorola=motorola xt2115-1',
             'moto g stylus (xt2115dl)', 'moto g stylus (xt2115dl' => 'motorola=motorola xt2115dl',
+            'moto g15' => 'motorola=motorola moto g15',
+            'xt2521-3' => 'motorola=motorola xt2521-3',
+            'moto g15 power' => 'motorola=motorola moto g15 power',
+            'xt2521-5' => 'motorola=motorola xt2521-5',
+            'moto g06' => 'motorola=motorola moto g06',
+            'xt2535-1' => 'motorola=motorola xt2535-1',
+            'xt2535-2' => 'motorola=motorola xt2535-2',
+            'xt2535-3' => 'motorola=motorola xt2535-3',
+            'xt2535-14' => 'motorola=motorola xt2535-14',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4585,6 +4597,7 @@ final class Device implements DeviceInterface
             'power armor 19t' => 'ulefone=ulefone power armor 19t',
             'armor x32 pro' => 'ulefone=ulefone armor x32 pro',
             'rugking 4 pro' => 'ulefone=ulefone rugking 4 pro',
+            'armor_6' => 'ulefone=ulefone armor 6',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -5123,6 +5136,7 @@ final class Device implements DeviceInterface
             'bv6000' => 'blackview=blackview bv6000',
             'bv6000s' => 'blackview=blackview bv6000s',
             'tab 11' => 'blackview=blackview tab 11',
+            'bv8100' => 'blackview=blackview bv8100',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -6667,6 +6681,7 @@ final class Device implements DeviceInterface
             'dt1 lite' => 'fossi-bot=fossi-bot dt1 lite',
             'f107 pro' => 'fossi-bot=fossi-bot f107 pro',
             'f109 s' => 'fossi-bot=fossi-bot f109 s',
+            'f110l' => 'fossi-bot=fossi-bot f110l',
             // hoozo
             'f13_eea' => 'hoozo=hoozo f13_eea',
             // sigma-mobile

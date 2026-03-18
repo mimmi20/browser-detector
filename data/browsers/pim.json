@@ -177,6 +177,18 @@
     },
     "engine": null
   },
+  "notion-mail": {
+    "name": "NotionMail",
+    "manufacturer": "notion-labs",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NotionMail"
+      ]
+    },
+    "engine": null
+  },
   "mail-app": {
     "name": "MailApp",
     "manufacturer": "unknown",

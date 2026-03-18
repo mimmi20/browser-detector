@@ -1338,6 +1338,7 @@ final class DeviceTest extends TestCase
             ['25100RA69G', 'xiaomi=xiaomi 25100ra69g'],
             ['Xiaomi 14T', 'xiaomi=xiaomi 14t'],
             ['Mi 10T Lite 5G', 'xiaomi=xiaomi mi 10t lite 5g'],
+            ['Redmi 2A', 'xiaomi=xiaomi redmi 2a'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -4203,6 +4204,10 @@ final class DeviceTest extends TestCase
             ['HUAWEI WOD-LX2', 'huawei=huawei wod-lx2'],
             ['WOD-LX1', 'huawei=huawei wod-lx1'],
             ['HUAWEI WOD-LX1', 'huawei=huawei wod-lx1'],
+            ['HAD-W24', 'huawei=huawei had-w24'],
+            ['HUAWEI HAD-W24', 'huawei=huawei had-w24'],
+            ['HAD-W32', 'huawei=huawei had-w32'],
+            ['HUAWEI HAD-W32', 'huawei=huawei had-w32'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -4796,6 +4801,15 @@ final class DeviceTest extends TestCase
             ['XT2115-1', 'motorola=motorola xt2115-1'],
             ['moto g stylus (XT2115DL)', 'motorola=motorola xt2115dl'],
             ['moto g stylus (XT2115DL', 'motorola=motorola xt2115dl'],
+            ['moto g15', 'motorola=motorola moto g15'],
+            ['XT2521-3', 'motorola=motorola xt2521-3'],
+            ['moto g15 power', 'motorola=motorola moto g15 power'],
+            ['XT2521-5', 'motorola=motorola xt2521-5'],
+            ['moto g06', 'motorola=motorola moto g06'],
+            ['XT2535-1', 'motorola=motorola xt2535-1'],
+            ['XT2535-2', 'motorola=motorola xt2535-2'],
+            ['XT2535-3', 'motorola=motorola xt2535-3'],
+            ['XT2535-14', 'motorola=motorola xt2535-14'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -5581,6 +5595,7 @@ final class DeviceTest extends TestCase
             ['Power Armor 19T', 'ulefone=ulefone power armor 19t'],
             ['Armor X32 Pro', 'ulefone=ulefone armor x32 pro'],
             ['RugKing 4 Pro', 'ulefone=ulefone rugking 4 pro'],
+            ['Armor_6', 'ulefone=ulefone armor 6'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -6141,6 +6156,7 @@ final class DeviceTest extends TestCase
             ['BV6000', 'blackview=blackview bv6000'],
             ['BV6000S', 'blackview=blackview bv6000s'],
             ['Tab 11', 'blackview=blackview tab 11'],
+            ['BV8100', 'blackview=blackview bv8100'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -7873,6 +7889,7 @@ final class DeviceTest extends TestCase
             ['DT1 Lite', 'fossi-bot=fossi-bot dt1 lite'],
             ['F107 Pro', 'fossi-bot=fossi-bot f107 pro'],
             ['F109 S', 'fossi-bot=fossi-bot f109 s'],
+            ['F110L', 'fossi-bot=fossi-bot f110l'],
             // hoozo
             ['F13_EEA', 'hoozo=hoozo f13_eea'],
             // sigma-mobile

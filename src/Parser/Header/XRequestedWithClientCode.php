@@ -126,7 +126,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.honor.global' => 'honor-store',
             'com.hornet.android' => 'hornet',
             'com.huawei.appmarket' => 'huawei-app-gallery',
-            'com.huawei.browser' => 'huawei-browser',
+            'com.huawei.browser', 'com.huawei.hmos.browser' => 'huawei-browser',
             'com.huawei.fastapp' => 'huawei-quick-app-center',
             'com.huawei.hwsearch' => 'huawei-petal-search',
             'com.huawei.search' => 'hi-search',
