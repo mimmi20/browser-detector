@@ -3109,6 +3109,140 @@ enum Company: string implements CompanyInterface
 
     case digiland = 'Digiland';
 
+    case dino = 'Dino';
+
+    case easypix = 'Easypix';
+
+    case ecoo = 'Ecoo';
+
+    case fireflyMobile = 'Firefly Mobile';
+
+    case florianBruhin = 'Florian Bruhin';
+
+    case freetel = 'Freetel';
+
+    case funker = 'Funker';
+
+    case gData = 'G DATA';
+
+    case galaxyInnovations = 'Galaxy Innovations';
+
+    case gizga = 'gizga';
+
+    case gome = 'Gome';
+
+    case hiLevel = 'Hi-Level';
+
+    case hitachi = 'Hitachi';
+
+    case humanWare = 'HumanWare';
+
+    case iqT = 'iQ&T';
+
+    case kaiomy = 'kaiomy';
+
+    case kes = 'KES';
+
+    case kobo = 'Kobo';
+
+    case lectrus = 'Lectrus';
+
+    case leopardV7 = 'Leopard V7';
+
+    case logitech = 'Logitech';
+
+    case maxx = 'Maxx';
+
+    case miChat = 'MICHAT';
+
+    case microtech = 'Microtech';
+
+    case miray = 'Miray';
+
+    case mobileDemand = 'MobileDemand';
+
+    case mtech = 'MTech';
+
+    case netgear = 'Netgear';
+
+    case newBridge = 'New Bridge';
+
+    case noCardTeam = 'NoCard Team';
+
+    case ntent = 'NTENT';
+
+    case nuvo = 'Nuvo';
+
+    case opsson = 'Opsson';
+
+    case opticon = 'Opticon';
+
+    case ouki = 'Ouki';
+
+    case pentagram = 'Pentagram';
+
+    case protectedNetGroup = 'Protected.net Group';
+
+    case qumo = 'Qumo';
+
+    case qware = 'Qware';
+
+    case rsMobile = 'RS Mobile';
+
+    case runbo = 'Runbo';
+
+    case sTell = 'S-TELL';
+
+    case sgin = 'SGIN';
+
+    case stephenOstermiller = 'Stephen Ostermiller';
+
+    case sunvell = 'Sunvell';
+
+    case tanix = 'Tanix';
+
+    case telestar = 'Telestar';
+
+    case timmy = 'Timmy';
+
+    case trevi = 'Trevi';
+
+    case true = 'True';
+
+    case umax = 'Umax';
+
+    case unonu = 'Unonu';
+
+    case vaio = 'VAIO';
+
+    case vkWorld = 'VKWorld';
+
+    case vnt = 'VNT';
+
+    case wetab = 'WeTab';
+
+    case wexler = 'Wexler';
+
+    case winnovo = 'Winnovo';
+
+    case wondermedia = 'WonderMedia';
+
+    case wopad = 'Wopad';
+
+    case xTouch = 'XTouch';
+
+    case xunhu = 'Xunhu';
+
+    case ytone = 'Ytone';
+
+    case yxtel = 'YXTEL';
+
+    case zenithink = 'Zenithink';
+
+    case zonko = 'Zonko';
+
+    case admtorrent = 'admtorrent';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4661,6 +4795,73 @@ enum Company: string implements CompanyInterface
             'desay' => self::desay,
             'dex' => self::dex,
             'digiland' => self::digiland,
+            'dino' => self::dino,
+            'easypix' => self::easypix,
+            'ecoo' => self::ecoo,
+            'fireflymobile', 'firefly-mobile', 'firefly mobile' => self::fireflyMobile,
+            'florianbruhin', 'florian-bruhin', 'florian bruhin' => self::florianBruhin,
+            'freetel' => self::freetel,
+            'funker' => self::funker,
+            'gdata', 'g-data', 'g data cyberdefense ag', 'g data' => self::gData,
+            'galaxyinnovations', 'galaxy-innovations', 'galaxy innovations' => self::galaxyInnovations,
+            'gizga' => self::gizga,
+            'gome' => self::gome,
+            'hilevel', 'hi-level' => self::hiLevel,
+            'hitachi' => self::hitachi,
+            'humanware', 'human-ware' => self::humanWare,
+            'iqt', 'iq-t', 'iq&t' => self::iqT,
+            'kaiomy' => self::kaiomy,
+            'kes' => self::kes,
+            'kobo' => self::kobo,
+            'lectrus' => self::lectrus,
+            'leopardv7', 'leopard-v7', 'leopard v7' => self::leopardV7,
+            'logitech' => self::logitech,
+            'maxx' => self::maxx,
+            'michat', 'mi-chat', 'michat pte.ltd.' => self::miChat,
+            'microtech', 'microtech retail italia s.r.l.' => self::microtech,
+            'miray' => self::miray,
+            'mobiledemand', 'mobile-demand', 'mobiledemand, l.c.' => self::mobileDemand,
+            'mtech' => self::mtech,
+            'netgear' => self::netgear,
+            'newbridge', 'new-bridge', 'new bridge' => self::newBridge,
+            'nocardteam', 'nocard-team', 'nocard team' => self::noCardTeam,
+            'ntent' => self::ntent,
+            'nuvo' => self::nuvo,
+            'opsson', 'shenzhen opsson technology co., ltd.' => self::opsson,
+            'opticon' => self::opticon,
+            'ouki', 'shenzhen ou qi digital electronics limited' => self::ouki,
+            'pentagram' => self::pentagram,
+            'protectednetgroup', 'protected.net-group', 'protected.net group limited t/a total security', 'protected.net group' => self::protectedNetGroup,
+            'qumo' => self::qumo,
+            'qware' => self::qware,
+            'rsmobile', 'rs-mobile', 'rs mobile group', 'rs mobile' => self::rsMobile,
+            'runbo' => self::runbo,
+            'stell', 's-tell' => self::sTell,
+            'sgin' => self::sgin,
+            'stephenostermiller', 'stephen ostermiller' => self::stephenOstermiller,
+            'sunvell' => self::sunvell,
+            'tanix' => self::tanix,
+            'telestar' => self::telestar,
+            'timmy' => self::timmy,
+            'trevi', 'trevi s.p.a.' => self::trevi,
+            'true' => self::true,
+            'umax' => self::umax,
+            'unonu', 'swagtek inc.' => self::unonu,
+            'vaio', 'vaio corporation' => self::vaio,
+            'vkworld', 'vk-world' => self::vkWorld,
+            'vnt' => self::vnt,
+            'wetab', 'wetab gmbh' => self::wetab,
+            'wexler' => self::wexler,
+            'winnovo' => self::winnovo,
+            'wondermedia' => self::wondermedia,
+            'wopad' => self::wopad,
+            'xtouch', 'x-touch', 'xtouch technologies' => self::xTouch,
+            'xunhu' => self::xunhu,
+            'ytone' => self::ytone,
+            'yxtel' => self::yxtel,
+            'zenithink' => self::zenithink,
+            'zonko' => self::zonko,
+            'admtorrent' => self::admtorrent,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5277,6 +5478,19 @@ enum Company: string implements CompanyInterface
             self::nox => 'Nox Ltd.',
             self::aston => 'ASTON est une S.A.S',
             self::bangOlufsen => 'Bang & Olufsen a/s',
+            self::gData => 'G DATA CyberDefense AG',
+            self::miChat => 'MICHAT Pte.Ltd.',
+            self::microtech => 'Microtech Retail Italia S.r.l.',
+            self::mobileDemand => 'MobileDemand, L.C.',
+            self::opsson => 'Shenzhen Opsson Technology Co., Ltd.',
+            self::ouki => 'Shenzhen Ou Qi Digital Electronics Limited',
+            self::protectedNetGroup => 'Protected.net Group Limited T/A Total Security',
+            self::rsMobile => 'RS Mobile Group',
+            self::trevi => 'Trevi S.p.a.',
+            self::unonu => 'Swagtek Inc.',
+            self::vaio => 'VAIO Corporation',
+            self::wetab => 'WeTab GmbH',
+            self::xTouch => 'XTouch Technologies',
             self::unknown => null,
             default => $this->value,
         };
@@ -5840,6 +6054,24 @@ enum Company: string implements CompanyInterface
             self::bangOlufsen => 'bang-olufsen',
             self::beyondPodTeam => 'beyondpod-team',
             self::dLink => 'd-link',
+            self::fireflyMobile => 'firefly-mobile',
+            self::florianBruhin => 'florian-bruhin',
+            self::gData => 'g-data',
+            self::galaxyInnovations => 'galaxy-innovations',
+            self::hiLevel => 'hi-level',
+            self::humanWare => 'human-ware',
+            self::iqT => 'iq-t',
+            self::leopardV7 => 'leopard-v7',
+            self::miChat => 'mi-chat',
+            self::mobileDemand => 'mobile-demand',
+            self::newBridge => 'new-bridge',
+            self::noCardTeam => 'nocard-team',
+            self::protectedNetGroup => 'protected.net-group',
+            self::rsMobile => 'rs-mobile',
+            self::sTell => 's-tell',
+            self::stephenOstermiller => 'stephen ostermiller',
+            self::vkWorld => 'vk-world',
+            self::xTouch => 'x-touch',
             default => $this->name,
         };
     }
