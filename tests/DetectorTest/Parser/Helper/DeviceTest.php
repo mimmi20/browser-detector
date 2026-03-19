@@ -6306,6 +6306,8 @@ final class DeviceTest extends TestCase
             ['Infinix X650B', 'infinix=infinix x650b'],
             ['Infinix X650', 'infinix=infinix x650'],
             ['Note 12', 'infinix=infinix note 12'],
+            ['Infinix X682B', 'infinix=infinix x682b'],
+            ['Infinix X682C', 'infinix=infinix x682c'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -9041,6 +9043,12 @@ final class DeviceTest extends TestCase
             ['F12W_EEA', 'cwowdefu=cwowdefu f12w_eea'],
             // krip
             ['KRIP_K4', 'krip=krip k4'],
+            // gtel
+            ['Gtel Infinity 9', 'gtel=gtel infinity 9'],
+            // g-tide
+            ['G-TiDE_H1', 'g-tide=g-tide h1'],
+            ['G-TiDE E57', 'g-tide=g-tide e57'],
+            ['G-TiDE E77', 'g-tide=g-tide e77'],
             // other
             ['Model"', null],
             [': "', null],

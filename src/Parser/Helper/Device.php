@@ -5284,6 +5284,8 @@ final class Device implements DeviceInterface
             'infinix x650b' => 'infinix=infinix x650b',
             'infinix x650' => 'infinix=infinix x650',
             'note 12' => 'infinix=infinix note 12',
+            'infinix x682b' => 'infinix=infinix x682b',
+            'infinix x682c' => 'infinix=infinix x682c',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -7821,6 +7823,12 @@ final class Device implements DeviceInterface
             'f12w_eea' => 'cwowdefu=cwowdefu f12w_eea',
             // krip
             'krip_k4' => 'krip=krip k4',
+            // gtel
+            'gtel infinity 9' => 'gtel=gtel infinity 9',
+            // g-tide
+            'g-tide_h1' => 'g-tide=g-tide h1',
+            'g-tide e57' => 'g-tide=g-tide e57',
+            'g-tide e77' => 'g-tide=g-tide e77',
             // other
             default => null,
         };
