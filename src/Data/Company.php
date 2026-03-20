@@ -3273,6 +3273,74 @@ enum Company: string implements CompanyInterface
 
     case chedot = 'Chedot';
 
+    case commonComputer = 'Common Computer';
+
+    case contentKing = 'ContentKing';
+
+    case crystalSemantics = 'CrystalSemantics';
+
+    case cybEye = 'CybEye';
+
+    case davidWatanabe = 'David Watanabe';
+
+    case devianStudio = 'Devian Studio';
+
+    case diglo = 'Diglo';
+
+    case easyelife = 'Easyelife';
+
+    case elisa = 'Elisa';
+
+    case elson = 'Elson';
+
+    case eltimaSoftware = 'Eltima Software';
+
+    case fastVpn = 'Fast VPN';
+
+    case fitly = 'Fitly';
+
+    case flatfish = 'Flatfish';
+
+    case foxconn = 'Foxconn';
+
+    case hago = 'HAGO';
+
+    case hayer = 'Hayer';
+
+    case hazarBozkurt = 'Hazar Bozkurt';
+
+    case heSoft = 'HE SOFT';
+
+    case hornetNetworks = 'Hornet Networks';
+
+    case ideaSolutions = 'IdeaSolutions';
+
+    case ijoysoft = 'iJoysoft';
+
+    case indiadotcomDigital = 'INDIADOTCOM DIGITAL';
+
+    case innovativeConnecting = 'Innovative Connecting';
+
+    case installatron = 'Installatron';
+
+    case iterate = 'iterate';
+
+    case jasmineCreationsStudio = 'Jasmine Creations Studio';
+
+    case jioPlatforms = 'Jio Platforms';
+
+    case joyride = 'Joyride';
+
+    case kareliaSoftware = 'Karelia Software';
+
+    case kenshoo = 'Kenshoo';
+
+    case klu = 'Klu';
+
+    case komodia = 'Komodia';
+
+    case kutoGroup = 'KUTO GROUP';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4907,6 +4975,40 @@ enum Company: string implements CompanyInterface
             'boxvideodownloaderdevteam', 'box-video-downloader-team', 'box video downloader dev team' => self::boxVideoDownloaderDevTeam,
             'apppermission', 'app-permission', 'app permission' => self::appPermission,
             'chedot' => self::chedot,
+            'commoncomputer', 'common-computer', 'common computer inc.', 'common computer' => self::commonComputer,
+            'contentking', 'content-king', 'contentking, inc.' => self::contentKing,
+            'crystalsemantics', 'crystal-semantics' => self::crystalSemantics,
+            'cybeye', 'cyb-eye', 'cybeye, inc.' => self::cybEye,
+            'davidwatanabe', 'david-watanabe', 'david watanabe' => self::davidWatanabe,
+            'devianstudio', 'devian-studio', 'devian studio inc.', 'devian studio' => self::devianStudio,
+            'diglo', 'diglo inc' => self::diglo,
+            'easyelife' => self::easyelife,
+            'elisa', 'elisa oyj' => self::elisa,
+            'elson' => self::elson,
+            'eltimasoftware', 'eltima-software', 'eltima software' => self::eltimaSoftware,
+            'fastvpn', 'fast-vpn', 'fast vpn team', 'fast vpn' => self::fastVpn,
+            'fitly' => self::fitly,
+            'flatfish', 'flatfish studio' => self::flatfish,
+            'foxconn' => self::foxconn,
+            'hago' => self::hago,
+            'hayer', 'hayer inc.' => self::hayer,
+            'hazarbozkurt', 'hazar-bozkurt', 'hazar bozkurt' => self::hazarBozkurt,
+            'hesoft', 'he-soft', 'he soft' => self::heSoft,
+            'hornetnetworks', 'hornet-networks', 'hornet networks ltd', 'hornet networks' => self::hornetNetworks,
+            'ideasolutions', 'idea-solutions', 'ideasolutions s.r.l.' => self::ideaSolutions,
+            'ijoysoft' => self::ijoysoft,
+            'indiadotcomdigital', 'indiadotcom-digital', 'indiadotcom digital private limited', 'indiadotcom digital' => self::indiadotcomDigital,
+            'innovativeconnecting', 'innovative-connecting', 'innovative connecting' => self::innovativeConnecting,
+            'installatron', 'installatron llc.' => self::installatron,
+            'iterate', 'iterate gmbh' => self::iterate,
+            'jasminecreationsstudio', 'jasmine-creations-studio', 'jasmine creations studio' => self::jasmineCreationsStudio,
+            'jioplatforms', 'jio-platforms', 'jio platforms limited', 'jio platforms' => self::jioPlatforms,
+            'joyride', 'joyride gmbh' => self::joyride,
+            'kareliasoftware', 'karelia-software', 'karelia software' => self::kareliaSoftware,
+            'kenshoo', 'kenshoo, ltd.' => self::kenshoo,
+            'klu' => self::klu,
+            'komodia', 'komodia-inc', 'komodia inc' => self::komodia,
+            'kutogroup', 'kuto-group', 'kuto group' => self::kutoGroup,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5538,6 +5640,24 @@ enum Company: string implements CompanyInterface
             self::xTouch => 'XTouch Technologies',
             self::atriaConvergenceTechnologies => 'Atria Convergence Technologies Ltd',
             self::boutell => 'Boutell.Com, Inc.',
+            self::commonComputer => 'Common Computer Inc.',
+            self::contentKing => 'ContentKing, Inc.',
+            self::cybEye => 'CybEye, Inc.',
+            self::devianStudio => 'Devian Studio Inc.',
+            self::diglo => 'Diglo Inc',
+            self::elisa => 'Elisa Oyj',
+            self::fastVpn => 'Fast VPN TEAM',
+            self::flatfish => 'Flatfish Studio',
+            self::hayer => 'Hayer Inc.',
+            self::hornetNetworks => 'Hornet Networks Ltd',
+            self::ideaSolutions => 'IdeaSolutions S.r.l.',
+            self::indiadotcomDigital => 'INDIADOTCOM DIGITAL PRIVATE LIMITED',
+            self::installatron => 'Installatron LLC.',
+            self::iterate => 'iterate GmbH',
+            self::jioPlatforms => 'Jio Platforms Limited',
+            self::joyride => 'Joyride GmbH',
+            self::kenshoo => 'Kenshoo, Ltd.',
+            self::komodia => 'Komodia Inc',
             self::unknown => null,
             default => $this->value,
         };
@@ -6129,6 +6249,25 @@ enum Company: string implements CompanyInterface
             self::bigQApps => 'bigq-apps',
             self::boxVideoDownloaderDevTeam => 'box-video-downloader-team',
             self::appPermission => 'app-permission',
+            self::commonComputer => 'common-computer',
+            self::contentKing => 'content-king',
+            self::crystalSemantics => 'crystal-semantics',
+            self::cybEye => 'cyb-eye',
+            self::davidWatanabe => 'david-watanabe',
+            self::devianStudio => 'devian-studio',
+            self::eltimaSoftware => 'eltima-software',
+            self::fastVpn => 'fast-vpn',
+            self::hazarBozkurt => 'hazar-bozkurt',
+            self::heSoft => 'he-soft',
+            self::hornetNetworks => 'hornet-networks',
+            self::ideaSolutions => 'idea-solutions',
+            self::indiadotcomDigital => 'indiadotcom-digital',
+            self::innovativeConnecting => 'innovative-connecting',
+            self::jasmineCreationsStudio => 'jasmine-creations-studio',
+            self::jioPlatforms => 'jio-platforms',
+            self::kareliaSoftware => 'karelia-software',
+            self::komodia => 'komodia-inc',
+            self::kutoGroup => 'kuto-group',
             default => $this->name,
         };
     }
