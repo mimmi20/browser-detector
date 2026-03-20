@@ -9718,6 +9718,96 @@ final class CompanyTest extends TestCase
                 'brandname' => 'admtorrent',
                 'key' => 'admtorrent',
             ],
+            [
+                'type' => 'VastKing',
+                'name' => 'VastKing',
+                'brandname' => 'VastKing',
+                'key' => 'vastking',
+            ],
+            [
+                'type' => 'Andreas Krennmair',
+                'name' => 'Andreas Krennmair',
+                'brandname' => 'Andreas Krennmair',
+                'key' => 'andreas krennmair',
+            ],
+            [
+                'type' => 'andyydev',
+                'name' => 'andyydev',
+                'brandname' => 'andyydev',
+                'key' => 'andyydev',
+            ],
+            [
+                'type' => 'appsmotor AI',
+                'name' => 'appsmotor AI',
+                'brandname' => 'appsmotor AI',
+                'key' => 'appsmotor-ai',
+            ],
+            [
+                'type' => 'APUS-Group',
+                'name' => 'APUS-Group',
+                'brandname' => 'APUS-Group',
+                'key' => 'apus-group',
+            ],
+            [
+                'type' => 'Ashrising Phoenixes',
+                'name' => 'Ashrising Phoenixes',
+                'brandname' => 'Ashrising Phoenixes',
+                'key' => 'ashrising-phoenixes',
+            ],
+            [
+                'type' => 'Atria Convergence Technologies',
+                'name' => 'Atria Convergence Technologies Ltd',
+                'brandname' => 'Atria Convergence Technologies',
+                'key' => 'atria-convergence-technologies',
+            ],
+            [
+                'type' => 'Awesapp Limited',
+                'name' => 'Awesapp Limited',
+                'brandname' => 'Awesapp Limited',
+                'key' => 'awesapp-limited',
+            ],
+            [
+                'type' => 'Beamrise Team',
+                'name' => 'Beamrise Team',
+                'brandname' => 'Beamrise Team',
+                'key' => 'beamrise-team',
+            ],
+            [
+                'type' => 'BigQ Apps',
+                'name' => 'BigQ Apps',
+                'brandname' => 'BigQ Apps',
+                'key' => 'bigq-apps',
+            ],
+            [
+                'type' => 'Bitdefender',
+                'name' => 'Bitdefender',
+                'brandname' => 'Bitdefender',
+                'key' => 'bitdefender',
+            ],
+            [
+                'type' => 'Boutell',
+                'name' => 'Boutell.Com, Inc.',
+                'brandname' => 'Boutell',
+                'key' => 'boutell',
+            ],
+            [
+                'type' => 'BOX Video Downloader Dev Team',
+                'name' => 'BOX Video Downloader Dev Team',
+                'brandname' => 'BOX Video Downloader Dev Team',
+                'key' => 'box-video-downloader-team',
+            ],
+            [
+                'type' => 'App Permission',
+                'name' => 'App Permission',
+                'brandname' => 'App Permission',
+                'key' => 'app-permission',
+            ],
+            [
+                'type' => 'Chedot',
+                'name' => 'Chedot',
+                'brandname' => 'Chedot',
+                'key' => 'chedot',
+            ],
         ];
     }
 

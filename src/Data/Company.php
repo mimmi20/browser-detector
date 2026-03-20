@@ -3243,6 +3243,36 @@ enum Company: string implements CompanyInterface
 
     case admtorrent = 'admtorrent';
 
+    case vastking = 'VastKing';
+
+    case andreasKrennmair = 'Andreas Krennmair';
+
+    case andyydev = 'andyydev';
+
+    case appsmotorAi = 'appsmotor AI';
+
+    case apusGroup = 'APUS-Group';
+
+    case ashrisingPhoenixes = 'Ashrising Phoenixes';
+
+    case atriaConvergenceTechnologies = 'Atria Convergence Technologies';
+
+    case awesappLimited = 'Awesapp Limited';
+
+    case beamriseTeam = 'Beamrise Team';
+
+    case bigQApps = 'BigQ Apps';
+
+    case bitdefender = 'Bitdefender';
+
+    case boutell = 'Boutell';
+
+    case boxVideoDownloaderDevTeam = 'BOX Video Downloader Dev Team';
+
+    case appPermission = 'App Permission';
+
+    case chedot = 'Chedot';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4862,6 +4892,21 @@ enum Company: string implements CompanyInterface
             'zenithink' => self::zenithink,
             'zonko' => self::zonko,
             'admtorrent' => self::admtorrent,
+            'vastking' => self::vastking,
+            'andreaskrennmair', 'andreas krennmair' => self::andreasKrennmair,
+            'andyydev' => self::andyydev,
+            'appsmotorai', 'appsmotor-ai', 'appsmotor ai' => self::appsmotorAi,
+            'apusgroup', 'apus-group' => self::apusGroup,
+            'ashrisingphoenixes', 'ashrising-phoenixes', 'ashrising phoenixes' => self::ashrisingPhoenixes,
+            'atriaconvergencetechnologies', 'atria-convergence-technologies', 'atria convergence technologies ltd', 'atria convergence technologies' => self::atriaConvergenceTechnologies,
+            'awesapplimited', 'awesapp-limited', 'awesapp limited' => self::awesappLimited,
+            'beamriseteam', 'beamrise-team', 'beamrise team' => self::beamriseTeam,
+            'bigqapps', 'bigq-apps', 'bigq apps' => self::bigQApps,
+            'bitdefender' => self::bitdefender,
+            'boutell', 'boutell.com, inc.' => self::boutell,
+            'boxvideodownloaderdevteam', 'box-video-downloader-team', 'box video downloader dev team' => self::boxVideoDownloaderDevTeam,
+            'apppermission', 'app-permission', 'app permission' => self::appPermission,
+            'chedot' => self::chedot,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5491,6 +5536,8 @@ enum Company: string implements CompanyInterface
             self::vaio => 'VAIO Corporation',
             self::wetab => 'WeTab GmbH',
             self::xTouch => 'XTouch Technologies',
+            self::atriaConvergenceTechnologies => 'Atria Convergence Technologies Ltd',
+            self::boutell => 'Boutell.Com, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6072,6 +6119,16 @@ enum Company: string implements CompanyInterface
             self::stephenOstermiller => 'stephen ostermiller',
             self::vkWorld => 'vk-world',
             self::xTouch => 'x-touch',
+            self::andreasKrennmair => 'andreas krennmair',
+            self::appsmotorAi => 'appsmotor-ai',
+            self::apusGroup => 'apus-group',
+            self::ashrisingPhoenixes => 'ashrising-phoenixes',
+            self::atriaConvergenceTechnologies => 'atria-convergence-technologies',
+            self::awesappLimited => 'awesapp-limited',
+            self::beamriseTeam => 'beamrise-team',
+            self::bigQApps => 'bigq-apps',
+            self::boxVideoDownloaderDevTeam => 'box-video-downloader-team',
+            self::appPermission => 'app-permission',
             default => $this->name,
         };
     }
