@@ -272,6 +272,14 @@ final class IosTest extends TestCase
                 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/23A344 [FBAN/FBIOS;FBDV/iPhone18,4;FBMD/iPhone;FBSN/iOS;FBSV/19.0;FBSS/3;FBID/phone;FBLC/ru_RU;FBOP/5]',
                 '26.0.0',
             ],
+            [
+                'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0.1 Mobile/15E148 Safari/604.1',
+                '26.0.1',
+            ],
+            [
+                'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;super/4.22.1/iOS/26.2',
+                '26.2.0',
+            ],
         ];
     }
 
