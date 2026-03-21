@@ -453,6 +453,14 @@ final readonly class Ios implements VersionFactoryInterface
             }
         }
 
+        if ($detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) === '19') {
+            try {
+                return $this->versionBuilder->set('26.0.0');
+            } catch (NotNumericException) {
+                return new NullVersion();
+            }
+        }
+
         $versionNumber = $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR);
 
         if ($versionNumber !== null) {

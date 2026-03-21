@@ -3341,6 +3341,62 @@ enum Company: string implements CompanyInterface
 
     case kutoGroup = 'KUTO GROUP';
 
+    case roch = 'ROCH';
+
+    case cadena = 'CADENA';
+
+    case eTachi = 'E-Tachi';
+
+    case yuno = 'Yuno';
+
+    case waipuTv = 'waipu.tv';
+
+    case wink = 'Wink';
+
+    case zala = 'ZALA';
+
+    case torex = 'Torex';
+
+    case chinaMobile = 'China Mobile';
+
+    case livu = 'LIVU';
+
+    case logicUi = 'LogicUI';
+
+    case maciejBrencz = 'Maciej Brencz';
+
+    case megafon = 'MegaFon';
+
+    case metaX = 'MetaX';
+
+    case metaMaskWeb3Wallet = 'MetaMask Web3 Wallet';
+
+    case mobiuspace = 'Mobiuspace';
+
+    case mythTV = 'MythTV';
+
+    case ncc = 'NCC';
+
+    case netcologne = 'NetCologne';
+
+    case openBrowser = 'Open browser';
+
+    case palmTeam = 'PALM TEAM';
+
+    case pirateBay = 'Pirate Bay';
+
+    case polinaDev = 'Polina Dev';
+
+    case proxyBase = 'proxy-base';
+
+    case quanta = 'Quanta';
+
+    case quantcast = 'Quantcast';
+
+    case quantumBadger = 'QuantumBadger';
+
+    case qword = 'Qword';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5009,6 +5065,34 @@ enum Company: string implements CompanyInterface
             'klu' => self::klu,
             'komodia', 'komodia-inc', 'komodia inc' => self::komodia,
             'kutogroup', 'kuto-group', 'kuto group' => self::kutoGroup,
+            'roch' => self::roch,
+            'cadena' => self::cadena,
+            'etachi', 'e-tachi' => self::eTachi,
+            'yuno' => self::yuno,
+            'waiputv', 'waipu.tv', 'waipu-tv' => self::waipuTv,
+            'wink' => self::wink,
+            'zala' => self::zala,
+            'torex' => self::torex,
+            'chinamobile', 'china mobile', 'china-mobile' => self::chinaMobile,
+            'livu', 'livu team' => self::livu,
+            'logicui', 'logic-ui' => self::logicUi,
+            'maciejbrencz', 'maciej-brencz', 'maciej brencz' => self::maciejBrencz,
+            'megafon' => self::megafon,
+            'metax', 'meta-x' => self::metaX,
+            'metamaskweb3wallet', 'metamask-web3-wallet', 'metamask web3 wallet' => self::metaMaskWeb3Wallet,
+            'mobiuspace', 'mobiu-space' => self::mobiuspace,
+            'mythtv', 'myth-tv' => self::mythTV,
+            'ncc', 'ncc-group', 'ncc group.' => self::ncc,
+            'netcologne', 'netcologne gmbh' => self::netcologne,
+            'openbrowser', 'open-browser', 'open browser' => self::openBrowser,
+            'palmteam', 'palm-team', 'palm team' => self::palmTeam,
+            'piratebay', 'pirate-bay', 'pirate bay' => self::pirateBay,
+            'polinadev', 'polina-dev', 'polina dev' => self::polinaDev,
+            'proxybase', 'proxy-base' => self::proxyBase,
+            'quanta', 'quanta computer' => self::quanta,
+            'quantcast', 'quantcast corp.' => self::quantcast,
+            'quantumbadger', 'quantum-badger' => self::quantumBadger,
+            'qword', 'qword-corporation', 'qword corporation' => self::qword,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5658,6 +5742,12 @@ enum Company: string implements CompanyInterface
             self::joyride => 'Joyride GmbH',
             self::kenshoo => 'Kenshoo, Ltd.',
             self::komodia => 'Komodia Inc',
+            self::livu => 'LIVU Team',
+            self::ncc => 'NCC Group.',
+            self::netcologne => 'NetCologne GmbH',
+            self::quanta => 'Quanta Computer',
+            self::quantcast => 'Quantcast Corp.',
+            self::qword => 'Qword Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -6268,6 +6358,23 @@ enum Company: string implements CompanyInterface
             self::kareliaSoftware => 'karelia-software',
             self::komodia => 'komodia-inc',
             self::kutoGroup => 'kuto-group',
+            self::eTachi => 'e-tachi',
+            self::waipuTv => 'waipu-tv',
+            self::chinaMobile => 'china-mobile',
+            self::logicUi => 'logic-ui',
+            self::maciejBrencz => 'maciej-brencz',
+            self::metaX => 'meta-x',
+            self::metaMaskWeb3Wallet => 'metamask-web3-wallet',
+            self::mobiuspace => 'mobiu-space',
+            self::mythTV => 'myth-tv',
+            self::ncc => 'ncc-group',
+            self::openBrowser => 'open-browser',
+            self::palmTeam => 'palm-team',
+            self::pirateBay => 'pirate-bay',
+            self::polinaDev => 'polina-dev',
+            self::proxyBase => 'proxy-base',
+            self::quantumBadger => 'quantum-badger',
+            self::qword => 'qword-corporation',
             default => $this->name,
         };
     }

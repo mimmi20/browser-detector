@@ -839,5 +839,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "java-http-client": {
+    "name": "Java HTTP Client",
+    "manufacturer": "oracle",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Java-http-client"
+      ]
+    },
+    "engine": "unknown"
   }
 }
