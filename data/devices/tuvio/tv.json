@@ -4,8 +4,8 @@
     "marketingName": "general Tuvio device",
     "manufacturer": "tuvio",
     "brand": "tuvio",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -75,6 +75,22 @@
       "height": 2160,
       "touch": false,
       "size": 50
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "tuvio stv-32fdfbk1r": {
+    "deviceName": "STV-32FDFBK1R",
+    "marketingName": "STV-32FDFBK1R",
+    "manufacturer": "tuvio",
+    "brand": "tuvio",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
     },
     "type": "tv",
     "platform": "android"

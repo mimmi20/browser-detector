@@ -42,7 +42,7 @@ final readonly class Ios implements VersionFactoryInterface
         'iPhone OS\;FBSV',
         'iOS\;FBSV[\/ ]?',
         'iPhone[ _]OS 18_7.+Version',
-        'iPhone[ _]OS 18_7.+iOS',
+        'iPhone[ _]OS 18_7.+(?<![rx])iOS',
         'iPhone[ _]OS',
         'IUC\(U\;iOS',
         'iPhone[0-9]+,[0-9]+; ',

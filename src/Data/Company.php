@@ -3397,6 +3397,98 @@ enum Company: string implements CompanyInterface
 
     case qword = 'Qword';
 
+    case raiseItSolutions = 'Raise IT Solutions';
+
+    case reactivePhone = 'Reactive Phone';
+
+    case realMacSoftware = 'realmacsoftware';
+
+    case relemind = 'relemind';
+
+    case shareKaroTeam = 'ShareKaro Team';
+
+    case sharkee = 'Sharkee';
+
+    case skCommunications = 'SK Communications';
+
+    case skype = 'Skype';
+
+    case soexInfotech = 'Soex Infotech';
+
+    case steppOne = 'SteppOne';
+
+    case surfshark = 'Surfshark';
+
+    case teliaFinland = 'Telia Finland';
+
+    case teliaNorge = 'Telia Norge';
+
+    case telstra = 'Telstra';
+
+    case thumbnailWs = 'thumbnail.ws';
+
+    case timesInternetLimited = 'Times Internet Limited';
+
+    case tinder = 'Tinder';
+
+    case trackerConnect = 'Tracker Connect';
+
+    case tradron = 'Tradron';
+
+    case trafficNames = 'Traffic Names';
+
+    case transsion = 'Transsion';
+
+    case tumileTeam = 'Tumile Team';
+
+    case usercentrics = 'Usercentrics';
+
+    case utsireSoftware = 'Utsire Software';
+
+    case webglance = 'webglance';
+
+    case weebly = 'Weebly';
+
+    case weltbild = 'Weltbild';
+
+    case workableApps = 'Workable Apps';
+
+    case worldwideMessenger = 'Worldwide Messenger';
+
+    case xinways = 'xinways';
+
+    case yMobile = 'Y!Mobile';
+
+    case zzo38 = 'zzo38';
+
+    case gVill = 'G-Vill';
+
+    case tricolor = 'Tricolor';
+
+    case razz = 'RAZZ';
+
+    case ktc = 'KTC';
+
+    case vityaz = 'Vityaz';
+
+    case horizont = 'Horizont';
+
+    case leff = 'Leff';
+
+    case romsat = 'Romsat';
+
+    case youwei = 'Youwei';
+
+    case everest = 'Everest';
+
+    case wAndO = 'W&O';
+
+    case glx = 'GLX';
+
+    case leBest = 'LeBest';
+
+    case digi = 'Digi';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5093,6 +5185,52 @@ enum Company: string implements CompanyInterface
             'quantcast', 'quantcast corp.' => self::quantcast,
             'quantumbadger', 'quantum-badger' => self::quantumBadger,
             'qword', 'qword-corporation', 'qword corporation' => self::qword,
+            'raiseitsolutions', 'raise-it-solutions', 'raise it solutions ltd.', 'raise it solutions' => self::raiseItSolutions,
+            'reactivephone', 'reactive-phone', 'reactive phone' => self::reactivePhone,
+            'realmacsoftware', 'real-mac-software' => self::realMacSoftware,
+            'relemind', 'relemind gmbh' => self::relemind,
+            'sharekaroteam', 'sharekaro-team', 'sharekaro team' => self::shareKaroTeam,
+            'sharkee', 'sharkee ltd.' => self::sharkee,
+            'skcommunications', 'sk-communications', 'sk communications' => self::skCommunications,
+            'skype', 'skype communications s.à.r.l.' => self::skype,
+            'soexinfotech', 'soex-infotech', 'soex infotech' => self::soexInfotech,
+            'steppone', 'stepp-one' => self::steppOne,
+            'surfshark', 'surf-shark', 'surfshark b.v.' => self::surfshark,
+            'teliafinland', 'telia-finland', 'telia finland oyj', 'telia finland' => self::teliaFinland,
+            'telianorge', 'telia-norge', 'telia norge as', 'telia norge' => self::teliaNorge,
+            'telstra' => self::telstra,
+            'thumbnailws', 'thumbnail.ws' => self::thumbnailWs,
+            'timesinternetlimited', 'times-internet-limited', 'times internet limited' => self::timesInternetLimited,
+            'tinder' => self::tinder,
+            'trackerconnect', 'tracker-connect', 'tracker connect pty ltd', 'tracker connect' => self::trackerConnect,
+            'tradron', 'tradron fze' => self::tradron,
+            'trafficnames', 'traffic-names', 'traffic names ltd', 'traffic names' => self::trafficNames,
+            'transsion', 'transsion holding' => self::transsion,
+            'tumileteam', 'tumile-team', 'tumile team' => self::tumileTeam,
+            'usercentrics', 'usercentrics a/s' => self::usercentrics,
+            'utsiresoftware', 'utsire-software', 'utsire software' => self::utsireSoftware,
+            'webglance', 'web-glance' => self::webglance,
+            'weebly', 'weebly, inc.' => self::weebly,
+            'weltbild' => self::weltbild,
+            'workableapps', 'workable-apps', 'workable apps' => self::workableApps,
+            'worldwidemessenger', 'worldwide-messenger', 'worldwide messenger' => self::worldwideMessenger,
+            'xinways', 'shenzhen goodidea technology co.,ltd.' => self::xinways,
+            'ymobile', 'y!mobile' => self::yMobile,
+            'zzo38' => self::zzo38,
+            'gvill', 'g-vill' => self::gVill,
+            'tricolor' => self::tricolor,
+            'razz' => self::razz,
+            'ktc' => self::ktc,
+            'vityaz' => self::vityaz,
+            'horizont' => self::horizont,
+            'leff' => self::leff,
+            'romsat' => self::romsat,
+            'youwei' => self::youwei,
+            'everest' => self::everest,
+            'wando', 'w-o', 'w&o' => self::wAndO,
+            'glx' => self::glx,
+            'lebest', 'le-best' => self::leBest,
+            'digi' => self::digi,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5748,6 +5886,20 @@ enum Company: string implements CompanyInterface
             self::quanta => 'Quanta Computer',
             self::quantcast => 'Quantcast Corp.',
             self::qword => 'Qword Corporation',
+            self::raiseItSolutions => 'Raise IT Solutions LTD.',
+            self::relemind => 'relemind GmbH',
+            self::sharkee => 'Sharkee Ltd.',
+            self::skype => 'Skype Communications S.à.r.l.',
+            self::surfshark => 'Surfshark B.V.',
+            self::teliaFinland => 'Telia Finland Oyj',
+            self::teliaNorge => 'Telia Norge AS',
+            self::trackerConnect => 'Tracker Connect Pty Ltd',
+            self::tradron => 'Tradron Fze',
+            self::trafficNames => 'Traffic Names Ltd',
+            self::transsion => 'Transsion Holding',
+            self::usercentrics => 'Usercentrics A/S',
+            self::weebly => 'Weebly, Inc.',
+            self::xinways => 'Shenzhen Goodidea Technology Co.,Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6375,6 +6527,29 @@ enum Company: string implements CompanyInterface
             self::proxyBase => 'proxy-base',
             self::quantumBadger => 'quantum-badger',
             self::qword => 'qword-corporation',
+            self::raiseItSolutions => 'raise-it-solutions',
+            self::reactivePhone => 'reactive-phone',
+            self::realMacSoftware => 'real-mac-software',
+            self::shareKaroTeam => 'sharekaro-team',
+            self::skCommunications => 'sk-communications',
+            self::soexInfotech => 'soex-infotech',
+            self::steppOne => 'stepp-one',
+            self::surfshark => 'surf-shark',
+            self::teliaFinland => 'telia-finland',
+            self::teliaNorge => 'telia-norge',
+            self::thumbnailWs => 'thumbnail.ws',
+            self::timesInternetLimited => 'times-internet-limited',
+            self::trackerConnect => 'tracker-connect',
+            self::trafficNames => 'traffic-names',
+            self::tumileTeam => 'tumile-team',
+            self::utsireSoftware => 'utsire-software',
+            self::webglance => 'web-glance',
+            self::workableApps => 'workable-apps',
+            self::worldwideMessenger => 'worldwide-messenger',
+            self::yMobile => 'y!mobile',
+            self::gVill => 'g-vill',
+            self::wAndO => 'w-o',
+            self::leBest => 'le-best',
             default => $this->name,
         };
     }

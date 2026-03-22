@@ -5913,5 +5913,17 @@
       ]
     },
     "engine": null
+  },
+  "yahoo-japan-browser": {
+    "name": "Yahoo! Japan Browser",
+    "manufacturer": "yahoo-japan",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.android\\.ybrowser"
+      ]
+    },
+    "engine": null
   }
 }

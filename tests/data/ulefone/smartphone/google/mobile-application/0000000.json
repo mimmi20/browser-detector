@@ -92,6 +92,52 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.google.android.apps.searchlite",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Note 6 Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Note 6",
+      "marketingName": "Note 6",
+      "manufacturer": "Ulefone",
+      "brand": "Ulefone",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Go",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "com.google.android.apps.searchlite/724009 (Linux; U; Android 9; de_DE; Ulefone_Note 7; Build/PPR1.180610.011; Cronet/108.0.5359.47)"
     },
     "device": {

@@ -1429,6 +1429,8 @@ final class Device implements DeviceInterface
             'nx724j' => 'zte=zte nx724j',
             'nx712j' => 'zte=zte nx712j',
             'zte 2050ru' => 'zte=zte 2050ru',
+            'z5157y' => 'zte=zte z5157y',
+            'z5157v' => 'zte=zte z5157v',
             // Samsung
             'sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -3830,6 +3832,12 @@ final class Device implements DeviceInterface
             'xt2535-14' => 'motorola=motorola xt2535-14',
             'moto g53 5g' => 'motorola=motorola moto g53 5g',
             'xt2335-2' => 'motorola=motorola xt2335-2',
+            'moto g05' => 'motorola=motorola moto g05',
+            'xt2523-2' => 'motorola=motorola xt2523-2',
+            'xt2523-3' => 'motorola=motorola xt2523-3',
+            'xt2523-11' => 'motorola=motorola xt2523-11',
+            'moto e5 plus' => 'motorola=motorola moto e5 plus',
+            'xt1924-7' => 'motorola=motorola xt1924-7',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4861,6 +4869,7 @@ final class Device implements DeviceInterface
             'tommy3' => 'wiko=wiko tommy 3',
             'rainbow 4g' => 'wiko=wiko rainbow 4g',
             'rainbow' => 'wiko=wiko rainbow',
+            'mky-an20' => 'wiko=wiko mky-an20',
             // razer
             'phone 2' => 'razer=razer phone 2',
             'razer edge 5g' => 'razer=razer edge 5g',
@@ -6024,6 +6033,7 @@ final class Device implements DeviceInterface
             'cp12s' => 'coolpad=coolpad cp12s',
             'cp12p' => 'coolpad=coolpad cp12p',
             'cp23nv3' => 'coolpad=coolpad cp23nv3',
+            'cp07' => 'coolpad=coolpad cp07',
             // tcl
             't766h_eea' => 'tcl=tcl t766h_eea',
             't506k' => 'tcl=tcl t506k',
@@ -6272,6 +6282,7 @@ final class Device implements DeviceInterface
             'td50ufbhv1' => 'tuvio=tuvio td50ufbhv1',
             'td43ufbhv1' => 'tuvio=tuvio td43ufbhv1',
             'td43ffbhv1' => 'tuvio=tuvio td43ffbhv1',
+            'stv-32fdfbk1r' => 'tuvio=tuvio stv-32fdfbk1r',
             // kinstone
             'kst103sd-l' => 'kinstone=kinstone kst103sd-l',
             // galaxy-innovations
@@ -7004,6 +7015,10 @@ final class Device implements DeviceInterface
             '43lf7010t' => 'asano=asano 43lf7010t',
             '43lu6000t' => 'asano=asano 43lu6000t',
             '32lh5000t' => 'asano=asano 32lh5000t',
+            '55lu8030s' => 'asano=asano 55lu8030s',
+            '24lf8010t' => 'asano=asano 24lf8010t',
+            '24lh7010t' => 'asano=asano 24lh7010t',
+            '24lh8011t' => 'asano=asano 24lh8011t',
             // hi
             'hx-24h01fb' => 'hi=hi hx-24h01fb',
             'hx-32f01fb' => 'hi=hi hx-32f01fb',
@@ -7078,6 +7093,7 @@ final class Device implements DeviceInterface
             'e5mini' => 'emporia=emporia e5 mini',
             // dexp
             's110' => 'dexp=dexp s110',
+            '65ucy3' => 'dexp=dexp 65ucy3',
             // villaon
             'villaon v30' => 'villaon=villaon v30',
             'villaon v6751l' => 'villaon=villaon v6751l',
@@ -7179,6 +7195,7 @@ final class Device implements DeviceInterface
             'a181_plus' => 'inoi=inoi a181 plus',
             'a161' => 'inoi=inoi a161',
             'inoi_6i_lite' => 'inoi=inoi 6i lite',
+            'a171_plus' => 'inoi=inoi a171_plus',
             // jumper
             'ezpad m11' => 'jumper=jumper ezpad m11',
             'ezpad m10s' => 'jumper=jumper ezpad m10s',
@@ -7221,6 +7238,9 @@ final class Device implements DeviceInterface
             '32les901t2sm' => 'erisson=erisson 32les901t2sm',
             '32les903t2sm' => 'erisson=erisson 32les903t2sm',
             '42fles901t2sm' => 'erisson=erisson 42fles901t2sm',
+            '55ules901t2sm' => 'erisson=erisson 55ules901t2sm',
+            '55ulx9005t2' => 'erisson=erisson 55ulx9005t2',
+            '65ules910t2sm' => 'erisson=erisson 65ules910t2sm',
             // vision-technology
             'xs100mini' => 'vision-technology=vision-technology xs100 mini',
             // vertu
@@ -7495,6 +7515,7 @@ final class Device implements DeviceInterface
             // korax
             'korax-eurobox' => 'korax=korax eurobox',
             'korax-eurobox pro' => 'korax=korax eurobox pro',
+            'era8k pro' => 'korax=korax era8k pro',
             // xp-pen
             'magicdrawingpad' => 'xp-pen=xp-pen magic drawing pad',
             // energy-sistem
@@ -7591,6 +7612,7 @@ final class Device implements DeviceInterface
             // sun-wind
             'kids_8280c_ws8252pl' => 'sun-wind=sun-wind ws8252pl',
             'sky 1264c 4g ss1271pl' => 'sun-wind=sun-wind ss1271pl',
+            'sun-led50xu400' => 'sun-wind=sun-wind sun-led50xu400',
             // neoregent
             'kt1007_eea' => 'neoregent=neoregent kt1007_eea',
             // imo
@@ -7869,6 +7891,7 @@ final class Device implements DeviceInterface
             // wink
             'winkbox 3' => 'wink=wink box 3',
             'winkbox mini' => 'wink=wink box mini',
+            'winkbox 2' => 'wink=wink box 2',
             // zala
             'zala smartbox dv9135' => 'zala=zala dv9135',
             // torex
@@ -7878,6 +7901,62 @@ final class Device implements DeviceInterface
             'sp200' => 'china-mobile=china-mobile sp200',
             'sp300' => 'china-mobile=china-mobile sp300',
             'sp210' => 'china-mobile=china-mobile sp210',
+            // g-vill
+            'g2000' => 'g-vill=g-vill g2000',
+            'g1000' => 'g-vill=g-vill g1000',
+            'g1000 pro' => 'g-vill=g-vill g1000 pro',
+            // tricolor
+            'h32h5000sa' => 'tricolor=tricolor h32h5000sa',
+            'h32h5001sa' => 'tricolor=tricolor h32h5001sa',
+            'k32hh902' => 'tricolor=tricolor k32hh902',
+            'k43uh901' => 'tricolor=tricolor k43uh901',
+            'k43uh902' => 'tricolor=tricolor k43uh902',
+            // razz
+            'h43qsy24f' => 'razz=razz h43qsy24f',
+            // ktc
+            '800p11b' => 'ktc=ktc 800p11b',
+            '55ue-byvb' => 'ktc=ktc 55ue-byvb',
+            // vityaz
+            '55lu1222' => 'vityaz=vityaz 55lu1222',
+            // horizont
+            '55le7053d' => 'horizont=horizont 55le7053d',
+            '24le7011d' => 'horizont=horizont 24le7011d',
+            // leff
+            '50u550t' => 'leff=leff 50u550t',
+            '50u541t' => 'leff=leff 50u541t',
+            '43u570t' => 'leff=leff 43u570t',
+            '24f560t' => 'leff=leff 24f560t',
+            '24h550t' => 'leff=leff 24h550t',
+            // romsat
+            '32hsq1220t2' => 'romsat=romsat 32hsq1220t2',
+            // bbk
+            '43lex-7236-fts2c' => 'bbk=bbk 43lex-7236-fts2c',
+            '43lex-7246fts2c' => 'bbk=bbk 43lex-7246fts2c',
+            '43lex-8265-uts2c' => 'bbk=bbk 43lex-8265-uts2c',
+            '43lex-7257fts2c' => 'bbk=bbk 43lex-7257fts2c',
+            '43lex-7259fts2c' => 'bbk=bbk 43lex-7259fts2c',
+            '43lex-7260-fts2c' => 'bbk=bbk 43lex-7260-fts2c',
+            '43lex-7288fts2c-t9' => 'bbk=bbk 43lex-7288fts2c-t9',
+            '43lex-8246uts2c' => 'bbk=bbk 43lex-8246uts2c',
+            '43lex-8249uts2c' => 'bbk=bbk 43lex-8249uts2c',
+            '43lex-8257uts2c' => 'bbk=bbk 43lex-8257uts2c',
+            '43lex-8258uts2c' => 'bbk=bbk 43lex-8258uts2c',
+            // youwei
+            'youwei box' => 'youwei=youwei box x1',
+            'youwei mini5g' => 'youwei=youwei box mini 5g',
+            // everest
+            'everpad sc-710' => 'everest=everest everpad sc-710',
+            'dc-8015' => 'everest=everest everpad dc-8015',
+            // w-o
+            'wo 8 ultra' => 'w-o=w-o wo 8 ultra',
+            'wo 9 ultra' => 'w-o=w-o wo 9 ultra',
+            'wo pad 13' => 'w-o=w-o wo pad 13',
+            // glx
+            'shahin ii' => 'glx=glx shahin ii',
+            // le-best
+            'l202206' => 'le-best=le-best l202206',
+            // digi
+            'digi r2' => 'digi=digi r2',
             // other
             default => null,
         };

@@ -1,7 +1,23 @@
 {
   "everest everpad sc-710": {
-    "deviceName": "Everpad SC-710",
-    "marketingName": "Everpad SC-710",
+    "deviceName": "EverPad SC-710",
+    "marketingName": "EverPad SC-710",
+    "manufacturer": "everest",
+    "brand": "everest",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "everest everpad dc-8015": {
+    "deviceName": "EverPad DC-8015",
+    "marketingName": "EverPad DC-8015",
     "manufacturer": "everest",
     "brand": "everest",
     "dualOrientation": true,

@@ -1476,6 +1476,8 @@ final class DeviceTest extends TestCase
             ['NX724J', 'zte=zte nx724j'],
             ['NX712J', 'zte=zte nx712j'],
             ['ZTE 2050RU', 'zte=zte 2050ru'],
+            ['Z5157Y', 'zte=zte z5157y'],
+            ['Z5157V', 'zte=zte z5157v'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -4820,6 +4822,12 @@ final class DeviceTest extends TestCase
             ['XT2535-14', 'motorola=motorola xt2535-14'],
             ['moto g53 5G', 'motorola=motorola moto g53 5g'],
             ['XT2335-2', 'motorola=motorola xt2335-2'],
+            ['moto g05', 'motorola=motorola moto g05'],
+            ['XT2523-2', 'motorola=motorola xt2523-2'],
+            ['XT2523-3', 'motorola=motorola xt2523-3'],
+            ['XT2523-11', 'motorola=motorola xt2523-11'],
+            ['Moto E5 Plus', 'motorola=motorola moto e5 plus'],
+            ['XT1924-7', 'motorola=motorola xt1924-7'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -5867,6 +5875,7 @@ final class DeviceTest extends TestCase
             ['Tommy3', 'wiko=wiko tommy 3'],
             ['RAINBOW 4G', 'wiko=wiko rainbow 4g'],
             ['RAINBOW', 'wiko=wiko rainbow'],
+            ['MKY-AN20', 'wiko=wiko mky-an20'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
             ['Razer Edge 5G', 'razer=razer edge 5g'],
@@ -7149,6 +7158,7 @@ final class DeviceTest extends TestCase
             ['CP12s', 'coolpad=coolpad cp12s'],
             ['CP12p', 'coolpad=coolpad cp12p'],
             ['CP23NV3', 'coolpad=coolpad cp23nv3'],
+            ['CP07', 'coolpad=coolpad cp07'],
             // tcl
             ['T766H_EEA', 'tcl=tcl t766h_eea'],
             ['T506K', 'tcl=tcl t506k'],
@@ -7401,6 +7411,7 @@ final class DeviceTest extends TestCase
             ['TD50UFBHV1', 'tuvio=tuvio td50ufbhv1'],
             ['TD43UFBHV1', 'tuvio=tuvio td43ufbhv1'],
             ['TD43FFBHV1', 'tuvio=tuvio td43ffbhv1'],
+            ['STV-32FDFBK1R', 'tuvio=tuvio stv-32fdfbk1r'],
             // kinstone
             ['KST103SD-L', 'kinstone=kinstone kst103sd-l'],
             // galaxy-innovations
@@ -8218,6 +8229,10 @@ final class DeviceTest extends TestCase
             ['43LF7010T', 'asano=asano 43lf7010t'],
             ['43LU6000T', 'asano=asano 43lu6000t'],
             ['32LH5000T', 'asano=asano 32lh5000t'],
+            ['55LU8030S', 'asano=asano 55lu8030s'],
+            ['24LF8010T', 'asano=asano 24lf8010t'],
+            ['24LH7010T', 'asano=asano 24lh7010t'],
+            ['24LH8011T', 'asano=asano 24lh8011t'],
             // hi
             ['HX-24H01FB', 'hi=hi hx-24h01fb'],
             ['HX-32F01FB', 'hi=hi hx-32f01fb'],
@@ -8292,6 +8307,7 @@ final class DeviceTest extends TestCase
             ['E5mini', 'emporia=emporia e5 mini'],
             // dexp
             ['S110', 'dexp=dexp s110'],
+            ['65UCY3', 'dexp=dexp 65ucy3'],
             // villaon
             ['VILLAON V30', 'villaon=villaon v30'],
             ['VILLAON V6751L', 'villaon=villaon v6751l'],
@@ -8392,6 +8408,7 @@ final class DeviceTest extends TestCase
             ['A181_Plus', 'inoi=inoi a181 plus'],
             ['A161', 'inoi=inoi a161'],
             ['INOI_6i_Lite', 'inoi=inoi 6i lite'],
+            ['A171_Plus', 'inoi=inoi a171_plus'],
             // jumper
             ['EZpad M11', 'jumper=jumper ezpad m11'],
             ['EZpad M10S', 'jumper=jumper ezpad m10s'],
@@ -8435,6 +8452,9 @@ final class DeviceTest extends TestCase
             ['32LES901T2SM', 'erisson=erisson 32les901t2sm'],
             ['32LES903T2SM', 'erisson=erisson 32les903t2sm'],
             ['42FLES901T2SM', 'erisson=erisson 42fles901t2sm'],
+            ['55ULES901T2SM', 'erisson=erisson 55ules901t2sm'],
+            ['55ULX9005T2', 'erisson=erisson 55ulx9005t2'],
+            ['65ULES910T2SM', 'erisson=erisson 65ules910t2sm'],
             // vision-technology
             ['XS100MINI', 'vision-technology=vision-technology xs100 mini'],
             // vertu
@@ -8715,6 +8735,7 @@ final class DeviceTest extends TestCase
             // korax
             ['KORAX-Eurobox', 'korax=korax eurobox'],
             ['KORAX-Eurobox Pro', 'korax=korax eurobox pro'],
+            ['era8K Pro', 'korax=korax era8k pro'],
             // xp-pen
             ['MagicDrawingPad', 'xp-pen=xp-pen magic drawing pad'],
             // energy-sistem
@@ -8811,6 +8832,7 @@ final class DeviceTest extends TestCase
             // sun-wind
             ['Kids_8280C_WS8252PL', 'sun-wind=sun-wind ws8252pl'],
             ['Sky 1264C 4G SS1271PL', 'sun-wind=sun-wind ss1271pl'],
+            ['SUN-LED50XU400', 'sun-wind=sun-wind sun-led50xu400'],
             // neoregent
             ['KT1007_EEA', 'neoregent=neoregent kt1007_eea'],
             // imo
@@ -9092,6 +9114,7 @@ final class DeviceTest extends TestCase
             // wink
             ['WinkBox 3', 'wink=wink box 3'],
             ['WinkBox Mini', 'wink=wink box mini'],
+            ['WinkBox 2', 'wink=wink box 2'],
             // zala
             ['ZALA SmartBox DV9135', 'zala=zala dv9135'],
             // torex
@@ -9102,6 +9125,62 @@ final class DeviceTest extends TestCase
             ['SP200', 'china-mobile=china-mobile sp200'],
             ['SP300', 'china-mobile=china-mobile sp300'],
             ['SP210', 'china-mobile=china-mobile sp210'],
+            // g-vill
+            ['G2000', 'g-vill=g-vill g2000'],
+            ['G1000', 'g-vill=g-vill g1000'],
+            ['G1000 Pro', 'g-vill=g-vill g1000 pro'],
+            // tricolor
+            ['H32H5000SA', 'tricolor=tricolor h32h5000sa'],
+            ['H32H5001SA', 'tricolor=tricolor h32h5001sa'],
+            ['K32HH902', 'tricolor=tricolor k32hh902'],
+            ['K43UH901', 'tricolor=tricolor k43uh901'],
+            ['K43UH902', 'tricolor=tricolor k43uh902'],
+            // razz
+            ['H43QSY24F', 'razz=razz h43qsy24f'],
+            // ktc
+            ['800P11B', 'ktc=ktc 800p11b'],
+            ['55UE-BYVB', 'ktc=ktc 55ue-byvb'],
+            // vityaz
+            ['55LU1222', 'vityaz=vityaz 55lu1222'],
+            // horizont
+            ['55LE7053D', 'horizont=horizont 55le7053d'],
+            ['24LE7011D', 'horizont=horizont 24le7011d'],
+            // leff
+            ['50U550T', 'leff=leff 50u550t'],
+            ['50U541T', 'leff=leff 50u541t'],
+            ['43U570T', 'leff=leff 43u570t'],
+            ['24F560T', 'leff=leff 24f560t'],
+            ['24H550T', 'leff=leff 24h550t'],
+            // romsat
+            ['32HSQ1220T2', 'romsat=romsat 32hsq1220t2'],
+            // bbk
+            ['43LEX-7236-FTS2C', 'bbk=bbk 43lex-7236-fts2c'],
+            ['43LEX-7246FTS2C', 'bbk=bbk 43lex-7246fts2c'],
+            ['43LEX-8265-UTS2C', 'bbk=bbk 43lex-8265-uts2c'],
+            ['43LEX-7257FTS2C', 'bbk=bbk 43lex-7257fts2c'],
+            ['43LEX-7259FTS2C', 'bbk=bbk 43lex-7259fts2c'],
+            ['43LEX-7260-FTS2C', 'bbk=bbk 43lex-7260-fts2c'],
+            ['43LEX-7288FTS2C-T9', 'bbk=bbk 43lex-7288fts2c-t9'],
+            ['43LEX-8246UTS2C', 'bbk=bbk 43lex-8246uts2c'],
+            ['43LEX-8249UTS2C', 'bbk=bbk 43lex-8249uts2c'],
+            ['43LEX-8257UTS2C', 'bbk=bbk 43lex-8257uts2c'],
+            ['43LEX-8258UTS2C', 'bbk=bbk 43lex-8258uts2c'],
+            // youwei
+            ['youwei box', 'youwei=youwei box x1'],
+            ['youwei mini5G', 'youwei=youwei box mini 5g'],
+            // everest
+            ['EverPad SC-710', 'everest=everest everpad sc-710'],
+            ['DC-8015', 'everest=everest everpad dc-8015'],
+            // w-o
+            ['WO 8 Ultra', 'w-o=w-o wo 8 ultra'],
+            ['WO 9 Ultra', 'w-o=w-o wo 9 ultra'],
+            ['WO Pad 13', 'w-o=w-o wo pad 13'],
+            // glx
+            ['Shahin II', 'glx=glx shahin ii'],
+            // le-best
+            ['L202206', 'le-best=le-best l202206'],
+            // digi
+            ['Digi R2', 'digi=digi r2'],
             // other
             ['Model"', null],
             [': "', null],
