@@ -7412,6 +7412,8 @@ final class DeviceTest extends TestCase
             ['TD43UFBHV1', 'tuvio=tuvio td43ufbhv1'],
             ['TD43FFBHV1', 'tuvio=tuvio td43ffbhv1'],
             ['STV-32FDFBK1R', 'tuvio=tuvio stv-32fdfbk1r'],
+            ['STV-43FDUBK1R', 'tuvio=tuvio stv-43fdubk1r'],
+            ['TD43FFBSV1', 'tuvio=tuvio td43ffbsv1'],
             // kinstone
             ['KST103SD-L', 'kinstone=kinstone kst103sd-l'],
             // galaxy-innovations
@@ -8704,6 +8706,7 @@ final class DeviceTest extends TestCase
             // redline
             ['IP-80 MAX', 'redline=redline ip-80 max'],
             ['S800 MAX', 'redline=redline s800 max'],
+            ['RED360 Air 8K', 'redline=redline red360 air 8k'],
             // sky-worth
             ['VGK02', 'sky-worth=sky-worth vgk02'],
             // jusyea
@@ -9137,11 +9140,13 @@ final class DeviceTest extends TestCase
             ['K43UH902', 'tricolor=tricolor k43uh902'],
             // razz
             ['H43QSY24F', 'razz=razz h43qsy24f'],
+            ['K55USY23', 'razz=razz k55usy23'],
             // ktc
             ['800P11B', 'ktc=ktc 800p11b'],
             ['55UE-BYVB', 'ktc=ktc 55ue-byvb'],
             // vityaz
             ['55LU1222', 'vityaz=vityaz 55lu1222'],
+            ['50LU1222', 'vityaz=vityaz 50lu1222'],
             // horizont
             ['55LE7053D', 'horizont=horizont 55le7053d'],
             ['24LE7011D', 'horizont=horizont 24le7011d'],
@@ -9181,6 +9186,18 @@ final class DeviceTest extends TestCase
             ['L202206', 'le-best=le-best l202206'],
             // digi
             ['Digi R2', 'digi=digi r2'],
+            // diofox
+            ['Diofox M508', 'diofox=diofox m508'],
+            ['Diofox M10', 'diofox=diofox m10'],
+            // infinity-pro
+            ['InfinityProTV', 'infinity-pro=infinity-pro smart tv'],
+            // sencrom
+            ['SENCROM Redrobox 4K PLUS', 'sencrom=sencrom redro box 4k plus'],
+            // qupi
+            ['Qupi TV Start', 'qupi=qupi tv start'],
+            // nexar
+            ['NTV-U50C614S', 'nexar=nexar ntv-u50c614s'],
+            ['NTV-H43C612N', 'nexar=nexar ntv-h43c612n'],
             // other
             ['Model"', null],
             [': "', null],

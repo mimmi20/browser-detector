@@ -10456,6 +10456,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Digi',
                 'key' => 'digi',
             ],
+            [
+                'type' => 'Diofox',
+                'name' => 'Diofox',
+                'brandname' => 'Diofox',
+                'key' => 'diofox',
+            ],
+            [
+                'type' => 'InfinityPro',
+                'name' => 'InfinityPro',
+                'brandname' => 'InfinityPro',
+                'key' => 'infinity-pro',
+            ],
+            [
+                'type' => 'Sencrom',
+                'name' => 'Sencrom',
+                'brandname' => 'Sencrom',
+                'key' => 'sencrom',
+            ],
+            [
+                'type' => 'Qupi',
+                'name' => 'Qupi',
+                'brandname' => 'Qupi',
+                'key' => 'qupi',
+            ],
+            [
+                'type' => 'Nexar',
+                'name' => 'Nexar',
+                'brandname' => 'Nexar',
+                'key' => 'nexar',
+            ],
         ];
     }
 

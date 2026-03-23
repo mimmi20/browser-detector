@@ -3489,6 +3489,16 @@ enum Company: string implements CompanyInterface
 
     case digi = 'Digi';
 
+    case diofox = 'Diofox';
+
+    case infinityPro = 'InfinityPro';
+
+    case sencrom = 'Sencrom';
+
+    case qupi = 'Qupi';
+
+    case nexar = 'Nexar';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5231,6 +5241,11 @@ enum Company: string implements CompanyInterface
             'glx' => self::glx,
             'lebest', 'le-best' => self::leBest,
             'digi' => self::digi,
+            'diofox' => self::diofox,
+            'infinitypro', 'infinity-pro' => self::infinityPro,
+            'sencrom' => self::sencrom,
+            'qupi' => self::qupi,
+            'nexar' => self::nexar,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6550,6 +6565,7 @@ enum Company: string implements CompanyInterface
             self::gVill => 'g-vill',
             self::wAndO => 'w-o',
             self::leBest => 'le-best',
+            self::infinityPro => 'infinity-pro',
             default => $this->name,
         };
     }

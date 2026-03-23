@@ -6283,6 +6283,8 @@ final class Device implements DeviceInterface
             'td43ufbhv1' => 'tuvio=tuvio td43ufbhv1',
             'td43ffbhv1' => 'tuvio=tuvio td43ffbhv1',
             'stv-32fdfbk1r' => 'tuvio=tuvio stv-32fdfbk1r',
+            'stv-43fdubk1r' => 'tuvio=tuvio stv-43fdubk1r',
+            'td43ffbsv1' => 'tuvio=tuvio td43ffbsv1',
             // kinstone
             'kst103sd-l' => 'kinstone=kinstone kst103sd-l',
             // galaxy-innovations
@@ -7484,6 +7486,7 @@ final class Device implements DeviceInterface
             // redline
             'ip-80 max' => 'redline=redline ip-80 max',
             's800 max' => 'redline=redline s800 max',
+            'red360 air 8k' => 'redline=redline red360 air 8k',
             // sky-worth
             'vgk02' => 'sky-worth=sky-worth vgk02',
             // jusyea
@@ -7913,11 +7916,13 @@ final class Device implements DeviceInterface
             'k43uh902' => 'tricolor=tricolor k43uh902',
             // razz
             'h43qsy24f' => 'razz=razz h43qsy24f',
+            'k55usy23' => 'razz=razz k55usy23',
             // ktc
             '800p11b' => 'ktc=ktc 800p11b',
             '55ue-byvb' => 'ktc=ktc 55ue-byvb',
             // vityaz
             '55lu1222' => 'vityaz=vityaz 55lu1222',
+            '50lu1222' => 'vityaz=vityaz 50lu1222',
             // horizont
             '55le7053d' => 'horizont=horizont 55le7053d',
             '24le7011d' => 'horizont=horizont 24le7011d',
@@ -7957,6 +7962,18 @@ final class Device implements DeviceInterface
             'l202206' => 'le-best=le-best l202206',
             // digi
             'digi r2' => 'digi=digi r2',
+            // diofox
+            'diofox m508' => 'diofox=diofox m508',
+            'diofox m10' => 'diofox=diofox m10',
+            // infinity-pro
+            'infinityprotv' => 'infinity-pro=infinity-pro smart tv',
+            // sencrom
+            'sencrom redrobox 4k plus' => 'sencrom=sencrom redro box 4k plus',
+            // qupi
+            'qupi tv start' => 'qupi=qupi tv start',
+            // nexar
+            'ntv-u50c614s' => 'nexar=nexar ntv-u50c614s',
+            'ntv-h43c612n' => 'nexar=nexar ntv-h43c612n',
             // other
             default => null,
         };
