@@ -88,5 +88,59 @@
       "version": "118.0.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"MEGA 3\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15\"",
+      "sec-ch-ua": "\"Chromium\";v=\"145\", \" Not;A Brand\";v=\"99\", \"Opera\";v=\"129\", \"OperaMobile\";v=\"96\"",
+      "sec-ch-ua-full-version": "\"96.0.5010.87657\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 OPR/96.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mega 3",
+      "marketingName": "Mega 3",
+      "manufacturer": "Blackview",
+      "brand": "Blackview",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "96.0.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "145.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]

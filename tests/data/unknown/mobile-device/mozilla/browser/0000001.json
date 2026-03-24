@@ -3689,5 +3689,50 @@
       "version": "49.0.0",
       "manufacturer": "Mozilla"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE; eu-FR; rv:1.9.2.20) Gecko/9444-03-10 17:51:23.588593 Firefox/4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2.20",
+      "manufacturer": "Mozilla"
+    }
   }
 ]

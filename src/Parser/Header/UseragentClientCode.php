@@ -82,6 +82,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             '/(?P<client>lbc|heart)\/[\d.]+ android [\d.]+\/[^);\/]+/i',
             '/(?P<client>emaudioplayer) [\d.]+ \([\d.]+\) \/ android [\d.]+ \/ [^);\/]+/i',
             '/(?P<client>classic fm)\/[\d.]+ android [\d.]+\/[^);\/]+/i',
+            '/(?P<client>com\.huawei\.hmos\.browser) \([^;]+;openharmony-[\d.]+;[^)]+\)/i',
         ];
 
         $filtered = array_filter(
@@ -104,6 +105,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
                     'pugpigbolt' => 'pugpig-bolt',
                     'nrc audio' => 'nrc-audio',
                     'classic fm' => 'classic-fm',
+                    'com.huawei.hmos.browser' => 'huawei-browser',
                     default => $client,
                 };
             },

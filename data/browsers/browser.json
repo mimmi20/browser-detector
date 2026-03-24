@@ -3035,7 +3035,7 @@
   },
   "otter": {
     "name": "Otter",
-    "manufacturer": "otter-browser.org",
+    "manufacturer": "unknown",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4725,7 +4725,7 @@
   },
   "x-browser": {
     "name": "XBrowser",
-    "manufacturer": "byteman.su",
+    "manufacturer": "unknown",
     "type": "browser",
     "version": {
       "factory": null,
@@ -5363,7 +5363,7 @@
   },
   "browser-app-browser": {
     "name": "Browser",
-    "manufacturer": "browser-app",
+    "manufacturer": "app-permission",
     "type": "browser",
     "version": {
       "factory": null,
@@ -5910,6 +5910,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "amaya"
+      ]
+    },
+    "engine": null
+  },
+  "yahoo-japan-browser": {
+    "name": "Yahoo! Japan Browser",
+    "manufacturer": "yahoo-japan",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jp\\.co\\.yahoo\\.android\\.ybrowser"
       ]
     },
     "engine": null

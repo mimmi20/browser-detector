@@ -32,8 +32,8 @@
     "platform": "android"
   },
   "asano 50lu6000t": {
-    "deviceName": "50LU6000T 50.0\"",
-    "marketingName": "50LU6000T 50.0\"",
+    "deviceName": "50LU6000T",
+    "marketingName": "50LU6000T",
     "manufacturer": "asano",
     "brand": "asano",
     "dualOrientation": false,
@@ -48,8 +48,8 @@
     "platform": "android"
   },
   "asano 43lu6000t": {
-    "deviceName": "43LU6000T 43.0\"",
-    "marketingName": "43LU6000T 43.0\"",
+    "deviceName": "43LU6000T",
+    "marketingName": "43LU6000T",
     "manufacturer": "asano",
     "brand": "asano",
     "dualOrientation": false,
@@ -64,8 +64,8 @@
     "platform": "android"
   },
   "asano 32lh5000t": {
-    "deviceName": "32LH5000T 32.0\"",
-    "marketingName": "32LH5000T 32.0\"",
+    "deviceName": "32LH5000T",
+    "marketingName": "32LH5000T",
     "manufacturer": "asano",
     "brand": "asano",
     "dualOrientation": false,
@@ -75,6 +75,70 @@
       "height": 768,
       "touch": false,
       "size": 32
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "asano 55lu8030s": {
+    "deviceName": "55LU8030S",
+    "marketingName": "55LU8030S",
+    "manufacturer": "asano",
+    "brand": "asano",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "asano 24lf8010t": {
+    "deviceName": "24LF8010T",
+    "marketingName": "24LF8010T",
+    "manufacturer": "asano",
+    "brand": "asano",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 23.8
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "asano 24lh7010t": {
+    "deviceName": "24LH7010T",
+    "marketingName": "24LH7010T",
+    "manufacturer": "asano",
+    "brand": "asano",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": false,
+      "size": 24
+    },
+    "type": "tv",
+    "platform": "android"
+  },
+  "asano 24lh8011t": {
+    "deviceName": "24LH8011T",
+    "marketingName": "24LH8011T",
+    "manufacturer": "asano",
+    "brand": "asano",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": false,
+      "size": 23.6
     },
     "type": "tv",
     "platform": "android"

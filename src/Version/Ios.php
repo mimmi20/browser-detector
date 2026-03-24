@@ -41,6 +41,8 @@ final readonly class Ios implements VersionFactoryInterface
         'CPU iPod ?OS',
         'iPhone OS\;FBSV',
         'iOS\;FBSV[\/ ]?',
+        'iPhone[ _]OS 18_7.+Version',
+        'iPhone[ _]OS 18_7.+(?<![rx])iOS',
         'iPhone[ _]OS',
         'IUC\(U\;iOS',
         'iPhone[0-9]+,[0-9]+; ',
@@ -448,6 +450,14 @@ final readonly class Ios implements VersionFactoryInterface
         if ($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO) === '10.10') {
             try {
                 return $this->versionBuilder->set('8.0.0');
+            } catch (NotNumericException) {
+                return new NullVersion();
+            }
+        }
+
+        if ($detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) === '19') {
+            try {
+                return $this->versionBuilder->set('26.0.0');
             } catch (NotNumericException) {
                 return new NullVersion();
             }

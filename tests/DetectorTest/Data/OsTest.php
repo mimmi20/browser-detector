@@ -1404,7 +1404,7 @@ final class OsTest extends TestCase
                 'name' => 'OpenHarmony',
                 'marketingName' => 'OpenHarmony',
                 'manufacturer' => Company::openatomFoundation,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenHarmony']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenHarmony-', 'OpenHarmony']],
                 'key' => 'openharmony',
             ],
             [

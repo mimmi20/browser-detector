@@ -95,5 +95,50 @@
       "version": "4.1.6.1",
       "manufacturer": "Huawei"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (PC; OpenHarmony 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36  ArkWeb/6.0.0.130 HuaweiBrowser/6.1.1.303"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenHarmony",
+      "marketingName": "OpenHarmony",
+      "version": "6.0.0",
+      "manufacturer": "OpenAtom Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser",
+      "modus": null,
+      "version": "6.1.1.303",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "ArkWeb",
+      "version": "6.0.0.130",
+      "manufacturer": "Huawei"
+    }
   }
 ]

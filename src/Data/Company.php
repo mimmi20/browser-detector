@@ -2977,6 +2977,528 @@ enum Company: string implements CompanyInterface
 
     case immutable = 'Immutable';
 
+    case dragonTouch = 'Dragon Touch';
+
+    case willcom = 'Willcom';
+
+    case gTide = 'G-Tide';
+
+    case jPhone = 'J-Phone';
+
+    case kodak = 'Kodak';
+
+    case kogan = 'Kogan';
+
+    case lemon = 'Lemon';
+
+    case malata = 'Malata';
+
+    case mitsubishi = 'Mitsubishi';
+
+    case nous = 'Nous';
+
+    case tuvio = 'Tuvio';
+
+    case wynncom = 'Wynncom';
+
+    case zeki = 'Zeki';
+
+    case browzar = 'Browzar';
+
+    case casio = 'CASIO';
+
+    case ckk = 'Ckk';
+
+    case dmkho = 'DMKHO';
+
+    case doffler = 'Doffler';
+
+    case evolveo = 'Evolveo';
+
+    case jobboerse = 'jobboerse';
+
+    case lexand = 'Lexand';
+
+    case mstar = 'MSTAR';
+
+    case turbopad = 'TurboPad';
+
+    case yuanda = 'YUANDA';
+
+    case ziox = 'Ziox';
+
+    case b2go = 'B2GO';
+
+    case emobile = 'Emobile';
+
+    case geometry = 'Geometry';
+
+    case anry = 'ANRY';
+
+    case aospStudio = 'AOSP STUDIO';
+
+    case eTel = 'E-Tel';
+
+    case earth = 'Earth';
+
+    case essential = 'Essential';
+
+    case feiteng = 'Feiteng';
+
+    case garminAsus = 'Garmin-Asus';
+
+    case gtel = 'GTel';
+
+    case nineSky = 'NineSky';
+
+    case packardBell = 'Packard Bell';
+
+    case rct = 'RCT';
+
+    case samtron = 'Samtron';
+
+    case sencor = 'Sencor';
+
+    case touchmate = 'Touchmate';
+
+    case vsun = 'Vsun';
+
+    case anthonyRestaino = 'Anthony Restaino';
+
+    case boxee = 'Boxee';
+
+    case fishingNet = 'FishingNet';
+
+    case geskimo = 'GESKIMO';
+
+    case keanuLee = 'Keanu Lee';
+
+    case nox = 'Nox';
+
+    case aAndK = 'A&K';
+
+    case a1 = 'A1';
+
+    case asiaFone = 'AsiaFone';
+
+    case aston = 'ASTON';
+
+    case bangOlufsen = 'Bang & Olufsen';
+
+    case beeline = 'Beeline';
+
+    case benefon = 'Benefon';
+
+    case beyondPodTeam = 'BeyondPod Team';
+
+    case coopers = 'COOPERS';
+
+    case cosmote = 'Cosmote';
+
+    case dLink = 'D-Link';
+
+    case datalogic = 'Datalogic';
+
+    case datang = 'Datang';
+
+    case deejoy = 'Deejoy';
+
+    case desay = 'Desay';
+
+    case dex = 'DEX';
+
+    case digiland = 'Digiland';
+
+    case dino = 'Dino';
+
+    case easypix = 'Easypix';
+
+    case ecoo = 'Ecoo';
+
+    case fireflyMobile = 'Firefly Mobile';
+
+    case florianBruhin = 'Florian Bruhin';
+
+    case freetel = 'Freetel';
+
+    case funker = 'Funker';
+
+    case gData = 'G DATA';
+
+    case galaxyInnovations = 'Galaxy Innovations';
+
+    case gizga = 'gizga';
+
+    case gome = 'Gome';
+
+    case hiLevel = 'Hi-Level';
+
+    case hitachi = 'Hitachi';
+
+    case humanWare = 'HumanWare';
+
+    case iqT = 'iQ&T';
+
+    case kaiomy = 'kaiomy';
+
+    case kes = 'KES';
+
+    case kobo = 'Kobo';
+
+    case lectrus = 'Lectrus';
+
+    case leopardV7 = 'Leopard V7';
+
+    case logitech = 'Logitech';
+
+    case maxx = 'Maxx';
+
+    case miChat = 'MICHAT';
+
+    case microtech = 'Microtech';
+
+    case miray = 'Miray';
+
+    case mobileDemand = 'MobileDemand';
+
+    case mtech = 'MTech';
+
+    case netgear = 'Netgear';
+
+    case newBridge = 'New Bridge';
+
+    case noCardTeam = 'NoCard Team';
+
+    case ntent = 'NTENT';
+
+    case nuvo = 'Nuvo';
+
+    case opsson = 'Opsson';
+
+    case opticon = 'Opticon';
+
+    case ouki = 'Ouki';
+
+    case pentagram = 'Pentagram';
+
+    case protectedNetGroup = 'Protected.net Group';
+
+    case qumo = 'Qumo';
+
+    case qware = 'Qware';
+
+    case rsMobile = 'RS Mobile';
+
+    case runbo = 'Runbo';
+
+    case sTell = 'S-TELL';
+
+    case sgin = 'SGIN';
+
+    case stephenOstermiller = 'Stephen Ostermiller';
+
+    case sunvell = 'Sunvell';
+
+    case tanix = 'Tanix';
+
+    case telestar = 'Telestar';
+
+    case timmy = 'Timmy';
+
+    case trevi = 'Trevi';
+
+    case true = 'True';
+
+    case umax = 'Umax';
+
+    case unonu = 'Unonu';
+
+    case vaio = 'VAIO';
+
+    case vkWorld = 'VKWorld';
+
+    case vnt = 'VNT';
+
+    case wetab = 'WeTab';
+
+    case wexler = 'Wexler';
+
+    case winnovo = 'Winnovo';
+
+    case wondermedia = 'WonderMedia';
+
+    case wopad = 'Wopad';
+
+    case xTouch = 'XTouch';
+
+    case xunhu = 'Xunhu';
+
+    case ytone = 'Ytone';
+
+    case yxtel = 'YXTEL';
+
+    case zenithink = 'Zenithink';
+
+    case zonko = 'Zonko';
+
+    case admtorrent = 'admtorrent';
+
+    case vastking = 'VastKing';
+
+    case andreasKrennmair = 'Andreas Krennmair';
+
+    case andyydev = 'andyydev';
+
+    case appsmotorAi = 'appsmotor AI';
+
+    case apusGroup = 'APUS-Group';
+
+    case ashrisingPhoenixes = 'Ashrising Phoenixes';
+
+    case atriaConvergenceTechnologies = 'Atria Convergence Technologies';
+
+    case awesappLimited = 'Awesapp Limited';
+
+    case beamriseTeam = 'Beamrise Team';
+
+    case bigQApps = 'BigQ Apps';
+
+    case bitdefender = 'Bitdefender';
+
+    case boutell = 'Boutell';
+
+    case boxVideoDownloaderDevTeam = 'BOX Video Downloader Dev Team';
+
+    case appPermission = 'App Permission';
+
+    case chedot = 'Chedot';
+
+    case commonComputer = 'Common Computer';
+
+    case contentKing = 'ContentKing';
+
+    case crystalSemantics = 'CrystalSemantics';
+
+    case cybEye = 'CybEye';
+
+    case davidWatanabe = 'David Watanabe';
+
+    case devianStudio = 'Devian Studio';
+
+    case diglo = 'Diglo';
+
+    case easyelife = 'Easyelife';
+
+    case elisa = 'Elisa';
+
+    case elson = 'Elson';
+
+    case eltimaSoftware = 'Eltima Software';
+
+    case fastVpn = 'Fast VPN';
+
+    case fitly = 'Fitly';
+
+    case flatfish = 'Flatfish';
+
+    case foxconn = 'Foxconn';
+
+    case hago = 'HAGO';
+
+    case hayer = 'Hayer';
+
+    case hazarBozkurt = 'Hazar Bozkurt';
+
+    case heSoft = 'HE SOFT';
+
+    case hornetNetworks = 'Hornet Networks';
+
+    case ideaSolutions = 'IdeaSolutions';
+
+    case ijoysoft = 'iJoysoft';
+
+    case indiadotcomDigital = 'INDIADOTCOM DIGITAL';
+
+    case innovativeConnecting = 'Innovative Connecting';
+
+    case installatron = 'Installatron';
+
+    case iterate = 'iterate';
+
+    case jasmineCreationsStudio = 'Jasmine Creations Studio';
+
+    case jioPlatforms = 'Jio Platforms';
+
+    case joyride = 'Joyride';
+
+    case kareliaSoftware = 'Karelia Software';
+
+    case kenshoo = 'Kenshoo';
+
+    case klu = 'Klu';
+
+    case komodia = 'Komodia';
+
+    case kutoGroup = 'KUTO GROUP';
+
+    case roch = 'ROCH';
+
+    case cadena = 'CADENA';
+
+    case eTachi = 'E-Tachi';
+
+    case yuno = 'Yuno';
+
+    case waipuTv = 'waipu.tv';
+
+    case wink = 'Wink';
+
+    case zala = 'ZALA';
+
+    case torex = 'Torex';
+
+    case chinaMobile = 'China Mobile';
+
+    case livu = 'LIVU';
+
+    case logicUi = 'LogicUI';
+
+    case maciejBrencz = 'Maciej Brencz';
+
+    case megafon = 'MegaFon';
+
+    case metaX = 'MetaX';
+
+    case metaMaskWeb3Wallet = 'MetaMask Web3 Wallet';
+
+    case mobiuspace = 'Mobiuspace';
+
+    case mythTV = 'MythTV';
+
+    case ncc = 'NCC';
+
+    case netcologne = 'NetCologne';
+
+    case openBrowser = 'Open browser';
+
+    case palmTeam = 'PALM TEAM';
+
+    case pirateBay = 'Pirate Bay';
+
+    case polinaDev = 'Polina Dev';
+
+    case proxyBase = 'proxy-base';
+
+    case quanta = 'Quanta';
+
+    case quantcast = 'Quantcast';
+
+    case quantumBadger = 'QuantumBadger';
+
+    case qword = 'Qword';
+
+    case raiseItSolutions = 'Raise IT Solutions';
+
+    case reactivePhone = 'Reactive Phone';
+
+    case realMacSoftware = 'realmacsoftware';
+
+    case relemind = 'relemind';
+
+    case shareKaroTeam = 'ShareKaro Team';
+
+    case sharkee = 'Sharkee';
+
+    case skCommunications = 'SK Communications';
+
+    case skype = 'Skype';
+
+    case soexInfotech = 'Soex Infotech';
+
+    case steppOne = 'SteppOne';
+
+    case surfshark = 'Surfshark';
+
+    case teliaFinland = 'Telia Finland';
+
+    case teliaNorge = 'Telia Norge';
+
+    case telstra = 'Telstra';
+
+    case thumbnailWs = 'thumbnail.ws';
+
+    case timesInternetLimited = 'Times Internet Limited';
+
+    case tinder = 'Tinder';
+
+    case trackerConnect = 'Tracker Connect';
+
+    case tradron = 'Tradron';
+
+    case trafficNames = 'Traffic Names';
+
+    case transsion = 'Transsion';
+
+    case tumileTeam = 'Tumile Team';
+
+    case usercentrics = 'Usercentrics';
+
+    case utsireSoftware = 'Utsire Software';
+
+    case webglance = 'webglance';
+
+    case weebly = 'Weebly';
+
+    case weltbild = 'Weltbild';
+
+    case workableApps = 'Workable Apps';
+
+    case worldwideMessenger = 'Worldwide Messenger';
+
+    case xinways = 'xinways';
+
+    case yMobile = 'Y!Mobile';
+
+    case zzo38 = 'zzo38';
+
+    case gVill = 'G-Vill';
+
+    case tricolor = 'Tricolor';
+
+    case razz = 'RAZZ';
+
+    case ktc = 'KTC';
+
+    case vityaz = 'Vityaz';
+
+    case horizont = 'Horizont';
+
+    case leff = 'Leff';
+
+    case romsat = 'Romsat';
+
+    case youwei = 'Youwei';
+
+    case everest = 'Everest';
+
+    case wAndO = 'W&O';
+
+    case glx = 'GLX';
+
+    case leBest = 'LeBest';
+
+    case digi = 'Digi';
+
+    case diofox = 'Diofox';
+
+    case infinityPro = 'InfinityPro';
+
+    case sencrom = 'Sencrom';
+
+    case qupi = 'Qupi';
+
+    case nexar = 'Nexar';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4463,6 +4985,267 @@ enum Company: string implements CompanyInterface
             'astonishstudio', 'astonish studio srl', 'astonish-studio', 'astonish studio' => self::astonishStudio,
             'peer39tech', 'peer39 tech, llc', 'peer39-tech', 'peer39 tech' => self::peer39Tech,
             'immutable', 'immutable, snc' => self::immutable,
+            'dragontouch', 'dragon-touch', 'dragon touch' => self::dragonTouch,
+            'willcom', 'willcom inc.' => self::willcom,
+            'gtide', 'g-tide' => self::gTide,
+            'jphone', 'j-phone', 'j-phone co.' => self::jPhone,
+            'kodak' => self::kodak,
+            'kogan' => self::kogan,
+            'lemon' => self::lemon,
+            'malata' => self::malata,
+            'mitsubishi' => self::mitsubishi,
+            'nous' => self::nous,
+            'tuvio' => self::tuvio,
+            'wynncom' => self::wynncom,
+            'zeki' => self::zeki,
+            'browzar', 'browzar limited' => self::browzar,
+            'casio', 'nec casio mobile communications' => self::casio,
+            'ckk' => self::ckk,
+            'dmkho', 'dmkho software' => self::dmkho,
+            'doffler' => self::doffler,
+            'evolveo', 'abacus electric, s.r.o.' => self::evolveo,
+            'jobboerse' => self::jobboerse,
+            'lexand' => self::lexand,
+            'mstar' => self::mstar,
+            'turbopad' => self::turbopad,
+            'yuanda' => self::yuanda,
+            'ziox' => self::ziox,
+            'b2go', 'shenzhen b2go technology company limited' => self::b2go,
+            'emobile' => self::emobile,
+            'geometry', 'geometry ou' => self::geometry,
+            'anry' => self::anry,
+            'aospstudio', 'aosp-studio-apps', 'aosp studio apps', 'aosp studio' => self::aospStudio,
+            'etel', 'e-tel' => self::eTel,
+            'earth' => self::earth,
+            'essential' => self::essential,
+            'feiteng' => self::feiteng,
+            'garminasus', 'garmin-asus' => self::garminAsus,
+            'gtel' => self::gtel,
+            'ninesky', 'ninesky technology and industrial private limited', 'nine-sky' => self::nineSky,
+            'packardbell', 'packard-bell', 'packard bell' => self::packardBell,
+            'rct' => self::rct,
+            'samtron' => self::samtron,
+            'sencor' => self::sencor,
+            'touchmate' => self::touchmate,
+            'vsun', 'shenzhen vsun communication technology co., ltd' => self::vsun,
+            'anthonyrestaino', 'anthony-restaino', 'anthony restaino' => self::anthonyRestaino,
+            'boxee', 'boxee inc' => self::boxee,
+            'fishingnet', 'fishing-net' => self::fishingNet,
+            'geskimo', 'geskimo srl' => self::geskimo,
+            'keanulee', 'keanu-lee', 'keanu lee' => self::keanuLee,
+            'nox', 'nox ltd.' => self::nox,
+            'aandk', 'a&k' => self::aAndK,
+            'a1' => self::a1,
+            'asiafone', 'asia-fone' => self::asiaFone,
+            'aston', 'aston est une s.a.s' => self::aston,
+            'bangolufsen', 'bang-olufsen', 'bang & olufsen a/s', 'bang & olufsen' => self::bangOlufsen,
+            'beeline' => self::beeline,
+            'benefon' => self::benefon,
+            'beyondpodteam', 'beyondpod-team', 'beyondpod team' => self::beyondPodTeam,
+            'coopers' => self::coopers,
+            'cosmote' => self::cosmote,
+            'dlink', 'd-link' => self::dLink,
+            'datalogic' => self::datalogic,
+            'datang' => self::datang,
+            'deejoy' => self::deejoy,
+            'desay' => self::desay,
+            'dex' => self::dex,
+            'digiland' => self::digiland,
+            'dino' => self::dino,
+            'easypix' => self::easypix,
+            'ecoo' => self::ecoo,
+            'fireflymobile', 'firefly-mobile', 'firefly mobile' => self::fireflyMobile,
+            'florianbruhin', 'florian-bruhin', 'florian bruhin' => self::florianBruhin,
+            'freetel' => self::freetel,
+            'funker' => self::funker,
+            'gdata', 'g-data', 'g data cyberdefense ag', 'g data' => self::gData,
+            'galaxyinnovations', 'galaxy-innovations', 'galaxy innovations' => self::galaxyInnovations,
+            'gizga' => self::gizga,
+            'gome' => self::gome,
+            'hilevel', 'hi-level' => self::hiLevel,
+            'hitachi' => self::hitachi,
+            'humanware', 'human-ware' => self::humanWare,
+            'iqt', 'iq-t', 'iq&t' => self::iqT,
+            'kaiomy' => self::kaiomy,
+            'kes' => self::kes,
+            'kobo' => self::kobo,
+            'lectrus' => self::lectrus,
+            'leopardv7', 'leopard-v7', 'leopard v7' => self::leopardV7,
+            'logitech' => self::logitech,
+            'maxx' => self::maxx,
+            'michat', 'mi-chat', 'michat pte.ltd.' => self::miChat,
+            'microtech', 'microtech retail italia s.r.l.' => self::microtech,
+            'miray' => self::miray,
+            'mobiledemand', 'mobile-demand', 'mobiledemand, l.c.' => self::mobileDemand,
+            'mtech' => self::mtech,
+            'netgear' => self::netgear,
+            'newbridge', 'new-bridge', 'new bridge' => self::newBridge,
+            'nocardteam', 'nocard-team', 'nocard team' => self::noCardTeam,
+            'ntent' => self::ntent,
+            'nuvo' => self::nuvo,
+            'opsson', 'shenzhen opsson technology co., ltd.' => self::opsson,
+            'opticon' => self::opticon,
+            'ouki', 'shenzhen ou qi digital electronics limited' => self::ouki,
+            'pentagram' => self::pentagram,
+            'protectednetgroup', 'protected.net-group', 'protected.net group limited t/a total security', 'protected.net group' => self::protectedNetGroup,
+            'qumo' => self::qumo,
+            'qware' => self::qware,
+            'rsmobile', 'rs-mobile', 'rs mobile group', 'rs mobile' => self::rsMobile,
+            'runbo' => self::runbo,
+            'stell', 's-tell' => self::sTell,
+            'sgin' => self::sgin,
+            'stephenostermiller', 'stephen ostermiller' => self::stephenOstermiller,
+            'sunvell' => self::sunvell,
+            'tanix' => self::tanix,
+            'telestar' => self::telestar,
+            'timmy' => self::timmy,
+            'trevi', 'trevi s.p.a.' => self::trevi,
+            'true' => self::true,
+            'umax' => self::umax,
+            'unonu', 'swagtek inc.' => self::unonu,
+            'vaio', 'vaio corporation' => self::vaio,
+            'vkworld', 'vk-world' => self::vkWorld,
+            'vnt' => self::vnt,
+            'wetab', 'wetab gmbh' => self::wetab,
+            'wexler' => self::wexler,
+            'winnovo' => self::winnovo,
+            'wondermedia' => self::wondermedia,
+            'wopad' => self::wopad,
+            'xtouch', 'x-touch', 'xtouch technologies' => self::xTouch,
+            'xunhu' => self::xunhu,
+            'ytone' => self::ytone,
+            'yxtel' => self::yxtel,
+            'zenithink' => self::zenithink,
+            'zonko' => self::zonko,
+            'admtorrent' => self::admtorrent,
+            'vastking' => self::vastking,
+            'andreaskrennmair', 'andreas krennmair' => self::andreasKrennmair,
+            'andyydev' => self::andyydev,
+            'appsmotorai', 'appsmotor-ai', 'appsmotor ai' => self::appsmotorAi,
+            'apusgroup', 'apus-group' => self::apusGroup,
+            'ashrisingphoenixes', 'ashrising-phoenixes', 'ashrising phoenixes' => self::ashrisingPhoenixes,
+            'atriaconvergencetechnologies', 'atria-convergence-technologies', 'atria convergence technologies ltd', 'atria convergence technologies' => self::atriaConvergenceTechnologies,
+            'awesapplimited', 'awesapp-limited', 'awesapp limited' => self::awesappLimited,
+            'beamriseteam', 'beamrise-team', 'beamrise team' => self::beamriseTeam,
+            'bigqapps', 'bigq-apps', 'bigq apps' => self::bigQApps,
+            'bitdefender' => self::bitdefender,
+            'boutell', 'boutell.com, inc.' => self::boutell,
+            'boxvideodownloaderdevteam', 'box-video-downloader-team', 'box video downloader dev team' => self::boxVideoDownloaderDevTeam,
+            'apppermission', 'app-permission', 'app permission' => self::appPermission,
+            'chedot' => self::chedot,
+            'commoncomputer', 'common-computer', 'common computer inc.', 'common computer' => self::commonComputer,
+            'contentking', 'content-king', 'contentking, inc.' => self::contentKing,
+            'crystalsemantics', 'crystal-semantics' => self::crystalSemantics,
+            'cybeye', 'cyb-eye', 'cybeye, inc.' => self::cybEye,
+            'davidwatanabe', 'david-watanabe', 'david watanabe' => self::davidWatanabe,
+            'devianstudio', 'devian-studio', 'devian studio inc.', 'devian studio' => self::devianStudio,
+            'diglo', 'diglo inc' => self::diglo,
+            'easyelife' => self::easyelife,
+            'elisa', 'elisa oyj' => self::elisa,
+            'elson' => self::elson,
+            'eltimasoftware', 'eltima-software', 'eltima software' => self::eltimaSoftware,
+            'fastvpn', 'fast-vpn', 'fast vpn team', 'fast vpn' => self::fastVpn,
+            'fitly' => self::fitly,
+            'flatfish', 'flatfish studio' => self::flatfish,
+            'foxconn' => self::foxconn,
+            'hago' => self::hago,
+            'hayer', 'hayer inc.' => self::hayer,
+            'hazarbozkurt', 'hazar-bozkurt', 'hazar bozkurt' => self::hazarBozkurt,
+            'hesoft', 'he-soft', 'he soft' => self::heSoft,
+            'hornetnetworks', 'hornet-networks', 'hornet networks ltd', 'hornet networks' => self::hornetNetworks,
+            'ideasolutions', 'idea-solutions', 'ideasolutions s.r.l.' => self::ideaSolutions,
+            'ijoysoft' => self::ijoysoft,
+            'indiadotcomdigital', 'indiadotcom-digital', 'indiadotcom digital private limited', 'indiadotcom digital' => self::indiadotcomDigital,
+            'innovativeconnecting', 'innovative-connecting', 'innovative connecting' => self::innovativeConnecting,
+            'installatron', 'installatron llc.' => self::installatron,
+            'iterate', 'iterate gmbh' => self::iterate,
+            'jasminecreationsstudio', 'jasmine-creations-studio', 'jasmine creations studio' => self::jasmineCreationsStudio,
+            'jioplatforms', 'jio-platforms', 'jio platforms limited', 'jio platforms' => self::jioPlatforms,
+            'joyride', 'joyride gmbh' => self::joyride,
+            'kareliasoftware', 'karelia-software', 'karelia software' => self::kareliaSoftware,
+            'kenshoo', 'kenshoo, ltd.' => self::kenshoo,
+            'klu' => self::klu,
+            'komodia', 'komodia-inc', 'komodia inc' => self::komodia,
+            'kutogroup', 'kuto-group', 'kuto group' => self::kutoGroup,
+            'roch' => self::roch,
+            'cadena' => self::cadena,
+            'etachi', 'e-tachi' => self::eTachi,
+            'yuno' => self::yuno,
+            'waiputv', 'waipu.tv', 'waipu-tv' => self::waipuTv,
+            'wink' => self::wink,
+            'zala' => self::zala,
+            'torex' => self::torex,
+            'chinamobile', 'china mobile', 'china-mobile' => self::chinaMobile,
+            'livu', 'livu team' => self::livu,
+            'logicui', 'logic-ui' => self::logicUi,
+            'maciejbrencz', 'maciej-brencz', 'maciej brencz' => self::maciejBrencz,
+            'megafon' => self::megafon,
+            'metax', 'meta-x' => self::metaX,
+            'metamaskweb3wallet', 'metamask-web3-wallet', 'metamask web3 wallet' => self::metaMaskWeb3Wallet,
+            'mobiuspace', 'mobiu-space' => self::mobiuspace,
+            'mythtv', 'myth-tv' => self::mythTV,
+            'ncc', 'ncc-group', 'ncc group.' => self::ncc,
+            'netcologne', 'netcologne gmbh' => self::netcologne,
+            'openbrowser', 'open-browser', 'open browser' => self::openBrowser,
+            'palmteam', 'palm-team', 'palm team' => self::palmTeam,
+            'piratebay', 'pirate-bay', 'pirate bay' => self::pirateBay,
+            'polinadev', 'polina-dev', 'polina dev' => self::polinaDev,
+            'proxybase', 'proxy-base' => self::proxyBase,
+            'quanta', 'quanta computer' => self::quanta,
+            'quantcast', 'quantcast corp.' => self::quantcast,
+            'quantumbadger', 'quantum-badger' => self::quantumBadger,
+            'qword', 'qword-corporation', 'qword corporation' => self::qword,
+            'raiseitsolutions', 'raise-it-solutions', 'raise it solutions ltd.', 'raise it solutions' => self::raiseItSolutions,
+            'reactivephone', 'reactive-phone', 'reactive phone' => self::reactivePhone,
+            'realmacsoftware', 'real-mac-software' => self::realMacSoftware,
+            'relemind', 'relemind gmbh' => self::relemind,
+            'sharekaroteam', 'sharekaro-team', 'sharekaro team' => self::shareKaroTeam,
+            'sharkee', 'sharkee ltd.' => self::sharkee,
+            'skcommunications', 'sk-communications', 'sk communications' => self::skCommunications,
+            'skype', 'skype communications s.à.r.l.' => self::skype,
+            'soexinfotech', 'soex-infotech', 'soex infotech' => self::soexInfotech,
+            'steppone', 'stepp-one' => self::steppOne,
+            'surfshark', 'surf-shark', 'surfshark b.v.' => self::surfshark,
+            'teliafinland', 'telia-finland', 'telia finland oyj', 'telia finland' => self::teliaFinland,
+            'telianorge', 'telia-norge', 'telia norge as', 'telia norge' => self::teliaNorge,
+            'telstra' => self::telstra,
+            'thumbnailws', 'thumbnail.ws' => self::thumbnailWs,
+            'timesinternetlimited', 'times-internet-limited', 'times internet limited' => self::timesInternetLimited,
+            'tinder' => self::tinder,
+            'trackerconnect', 'tracker-connect', 'tracker connect pty ltd', 'tracker connect' => self::trackerConnect,
+            'tradron', 'tradron fze' => self::tradron,
+            'trafficnames', 'traffic-names', 'traffic names ltd', 'traffic names' => self::trafficNames,
+            'transsion', 'transsion holding' => self::transsion,
+            'tumileteam', 'tumile-team', 'tumile team' => self::tumileTeam,
+            'usercentrics', 'usercentrics a/s' => self::usercentrics,
+            'utsiresoftware', 'utsire-software', 'utsire software' => self::utsireSoftware,
+            'webglance', 'web-glance' => self::webglance,
+            'weebly', 'weebly, inc.' => self::weebly,
+            'weltbild' => self::weltbild,
+            'workableapps', 'workable-apps', 'workable apps' => self::workableApps,
+            'worldwidemessenger', 'worldwide-messenger', 'worldwide messenger' => self::worldwideMessenger,
+            'xinways', 'shenzhen goodidea technology co.,ltd.' => self::xinways,
+            'ymobile', 'y!mobile' => self::yMobile,
+            'zzo38' => self::zzo38,
+            'gvill', 'g-vill' => self::gVill,
+            'tricolor' => self::tricolor,
+            'razz' => self::razz,
+            'ktc' => self::ktc,
+            'vityaz' => self::vityaz,
+            'horizont' => self::horizont,
+            'leff' => self::leff,
+            'romsat' => self::romsat,
+            'youwei' => self::youwei,
+            'everest' => self::everest,
+            'wando', 'w-o', 'w&o' => self::wAndO,
+            'glx' => self::glx,
+            'lebest', 'le-best' => self::leBest,
+            'digi' => self::digi,
+            'diofox' => self::diofox,
+            'infinitypro', 'infinity-pro' => self::infinityPro,
+            'sencrom' => self::sencrom,
+            'qupi' => self::qupi,
+            'nexar' => self::nexar,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5063,6 +5846,75 @@ enum Company: string implements CompanyInterface
             self::astonishStudio => 'aStonish Studio Srl',
             self::peer39Tech => 'Peer39 Tech, LLC',
             self::immutable => 'Immutable, SNC',
+            self::willcom => 'Willcom Inc.',
+            self::jPhone => 'J-Phone Co.',
+            self::browzar => 'Browzar Limited',
+            self::casio => 'NEC CASIO Mobile Communications',
+            self::dmkho => 'DMKHO Software',
+            self::evolveo => 'Abacus Electric, s.r.o.',
+            self::b2go => 'Shenzhen B2go Technology Company Limited',
+            self::geometry => 'Geometry OU',
+            self::aospStudio => 'AOSP STUDIO Apps',
+            self::nineSky => 'NineSky Technology And Industrial Private Limited',
+            self::vsun => 'Shenzhen Vsun Communication Technology Co., Ltd',
+            self::boxee => 'Boxee Inc',
+            self::geskimo => 'GESKIMO SRL',
+            self::nox => 'Nox Ltd.',
+            self::aston => 'ASTON est une S.A.S',
+            self::bangOlufsen => 'Bang & Olufsen a/s',
+            self::gData => 'G DATA CyberDefense AG',
+            self::miChat => 'MICHAT Pte.Ltd.',
+            self::microtech => 'Microtech Retail Italia S.r.l.',
+            self::mobileDemand => 'MobileDemand, L.C.',
+            self::opsson => 'Shenzhen Opsson Technology Co., Ltd.',
+            self::ouki => 'Shenzhen Ou Qi Digital Electronics Limited',
+            self::protectedNetGroup => 'Protected.net Group Limited T/A Total Security',
+            self::rsMobile => 'RS Mobile Group',
+            self::trevi => 'Trevi S.p.a.',
+            self::unonu => 'Swagtek Inc.',
+            self::vaio => 'VAIO Corporation',
+            self::wetab => 'WeTab GmbH',
+            self::xTouch => 'XTouch Technologies',
+            self::atriaConvergenceTechnologies => 'Atria Convergence Technologies Ltd',
+            self::boutell => 'Boutell.Com, Inc.',
+            self::commonComputer => 'Common Computer Inc.',
+            self::contentKing => 'ContentKing, Inc.',
+            self::cybEye => 'CybEye, Inc.',
+            self::devianStudio => 'Devian Studio Inc.',
+            self::diglo => 'Diglo Inc',
+            self::elisa => 'Elisa Oyj',
+            self::fastVpn => 'Fast VPN TEAM',
+            self::flatfish => 'Flatfish Studio',
+            self::hayer => 'Hayer Inc.',
+            self::hornetNetworks => 'Hornet Networks Ltd',
+            self::ideaSolutions => 'IdeaSolutions S.r.l.',
+            self::indiadotcomDigital => 'INDIADOTCOM DIGITAL PRIVATE LIMITED',
+            self::installatron => 'Installatron LLC.',
+            self::iterate => 'iterate GmbH',
+            self::jioPlatforms => 'Jio Platforms Limited',
+            self::joyride => 'Joyride GmbH',
+            self::kenshoo => 'Kenshoo, Ltd.',
+            self::komodia => 'Komodia Inc',
+            self::livu => 'LIVU Team',
+            self::ncc => 'NCC Group.',
+            self::netcologne => 'NetCologne GmbH',
+            self::quanta => 'Quanta Computer',
+            self::quantcast => 'Quantcast Corp.',
+            self::qword => 'Qword Corporation',
+            self::raiseItSolutions => 'Raise IT Solutions LTD.',
+            self::relemind => 'relemind GmbH',
+            self::sharkee => 'Sharkee Ltd.',
+            self::skype => 'Skype Communications S.à.r.l.',
+            self::surfshark => 'Surfshark B.V.',
+            self::teliaFinland => 'Telia Finland Oyj',
+            self::teliaNorge => 'Telia Norge AS',
+            self::trackerConnect => 'Tracker Connect Pty Ltd',
+            self::tradron => 'Tradron Fze',
+            self::trafficNames => 'Traffic Names Ltd',
+            self::transsion => 'Transsion Holding',
+            self::usercentrics => 'Usercentrics A/S',
+            self::weebly => 'Weebly, Inc.',
+            self::xinways => 'Shenzhen Goodidea Technology Co.,Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -5610,6 +6462,110 @@ enum Company: string implements CompanyInterface
             self::roisDs => 'rois-ds',
             self::astonishStudio => 'astonish-studio',
             self::peer39Tech => 'peer39-tech',
+            self::dragonTouch => 'dragon-touch',
+            self::gTide => 'g-tide',
+            self::jPhone => 'j-phone',
+            self::aospStudio => 'aosp-studio-apps',
+            self::eTel => 'e-tel',
+            self::garminAsus => 'garmin-asus',
+            self::nineSky => 'nine-sky',
+            self::packardBell => 'packard-bell',
+            self::anthonyRestaino => 'anthony-restaino',
+            self::fishingNet => 'fishing-net',
+            self::keanuLee => 'keanu-lee',
+            self::aAndK => 'a&k',
+            self::asiaFone => 'asia-fone',
+            self::bangOlufsen => 'bang-olufsen',
+            self::beyondPodTeam => 'beyondpod-team',
+            self::dLink => 'd-link',
+            self::fireflyMobile => 'firefly-mobile',
+            self::florianBruhin => 'florian-bruhin',
+            self::gData => 'g-data',
+            self::galaxyInnovations => 'galaxy-innovations',
+            self::hiLevel => 'hi-level',
+            self::humanWare => 'human-ware',
+            self::iqT => 'iq-t',
+            self::leopardV7 => 'leopard-v7',
+            self::miChat => 'mi-chat',
+            self::mobileDemand => 'mobile-demand',
+            self::newBridge => 'new-bridge',
+            self::noCardTeam => 'nocard-team',
+            self::protectedNetGroup => 'protected.net-group',
+            self::rsMobile => 'rs-mobile',
+            self::sTell => 's-tell',
+            self::stephenOstermiller => 'stephen ostermiller',
+            self::vkWorld => 'vk-world',
+            self::xTouch => 'x-touch',
+            self::andreasKrennmair => 'andreas krennmair',
+            self::appsmotorAi => 'appsmotor-ai',
+            self::apusGroup => 'apus-group',
+            self::ashrisingPhoenixes => 'ashrising-phoenixes',
+            self::atriaConvergenceTechnologies => 'atria-convergence-technologies',
+            self::awesappLimited => 'awesapp-limited',
+            self::beamriseTeam => 'beamrise-team',
+            self::bigQApps => 'bigq-apps',
+            self::boxVideoDownloaderDevTeam => 'box-video-downloader-team',
+            self::appPermission => 'app-permission',
+            self::commonComputer => 'common-computer',
+            self::contentKing => 'content-king',
+            self::crystalSemantics => 'crystal-semantics',
+            self::cybEye => 'cyb-eye',
+            self::davidWatanabe => 'david-watanabe',
+            self::devianStudio => 'devian-studio',
+            self::eltimaSoftware => 'eltima-software',
+            self::fastVpn => 'fast-vpn',
+            self::hazarBozkurt => 'hazar-bozkurt',
+            self::heSoft => 'he-soft',
+            self::hornetNetworks => 'hornet-networks',
+            self::ideaSolutions => 'idea-solutions',
+            self::indiadotcomDigital => 'indiadotcom-digital',
+            self::innovativeConnecting => 'innovative-connecting',
+            self::jasmineCreationsStudio => 'jasmine-creations-studio',
+            self::jioPlatforms => 'jio-platforms',
+            self::kareliaSoftware => 'karelia-software',
+            self::komodia => 'komodia-inc',
+            self::kutoGroup => 'kuto-group',
+            self::eTachi => 'e-tachi',
+            self::waipuTv => 'waipu-tv',
+            self::chinaMobile => 'china-mobile',
+            self::logicUi => 'logic-ui',
+            self::maciejBrencz => 'maciej-brencz',
+            self::metaX => 'meta-x',
+            self::metaMaskWeb3Wallet => 'metamask-web3-wallet',
+            self::mobiuspace => 'mobiu-space',
+            self::mythTV => 'myth-tv',
+            self::ncc => 'ncc-group',
+            self::openBrowser => 'open-browser',
+            self::palmTeam => 'palm-team',
+            self::pirateBay => 'pirate-bay',
+            self::polinaDev => 'polina-dev',
+            self::proxyBase => 'proxy-base',
+            self::quantumBadger => 'quantum-badger',
+            self::qword => 'qword-corporation',
+            self::raiseItSolutions => 'raise-it-solutions',
+            self::reactivePhone => 'reactive-phone',
+            self::realMacSoftware => 'real-mac-software',
+            self::shareKaroTeam => 'sharekaro-team',
+            self::skCommunications => 'sk-communications',
+            self::soexInfotech => 'soex-infotech',
+            self::steppOne => 'stepp-one',
+            self::surfshark => 'surf-shark',
+            self::teliaFinland => 'telia-finland',
+            self::teliaNorge => 'telia-norge',
+            self::thumbnailWs => 'thumbnail.ws',
+            self::timesInternetLimited => 'times-internet-limited',
+            self::trackerConnect => 'tracker-connect',
+            self::trafficNames => 'traffic-names',
+            self::tumileTeam => 'tumile-team',
+            self::utsireSoftware => 'utsire-software',
+            self::webglance => 'web-glance',
+            self::workableApps => 'workable-apps',
+            self::worldwideMessenger => 'worldwide-messenger',
+            self::yMobile => 'y!mobile',
+            self::gVill => 'g-vill',
+            self::wAndO => 'w-o',
+            self::leBest => 'le-best',
+            self::infinityPro => 'infinity-pro',
             default => $this->name,
         };
     }

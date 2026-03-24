@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 28HFL5009D12; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/004.001.163.001 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
+      "user-agent": "Opera/9.80 (Linux i686; U; HbbTV/1.1.1 (+PVR+DL; BANGOLUFSEN; A3; ; ; ) CE-HTML/1.0 NETTV/1.0; en) Presto/2.10.287 Version/12.00 A3/1.0.3.30552 (BANGOLUFSEN, A3, wired)"
     },
     "device": {
       "architecture": null,
@@ -32,7 +32,7 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "12.50.0",
+      "version": "12.00.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -40,7 +40,7 @@
     },
     "engine": {
       "name": "Presto",
-      "version": "2.12.407",
+      "version": "2.10.287",
       "manufacturer": "Opera"
     }
   },
@@ -402,6 +402,51 @@
       "name": "Presto",
       "version": "2.12.407",
       "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.4.54.Nebula.11 Model/Tango-NT72671(AOC;50U6305/43I;205.002.153.001;_TV_NT72671_Cosmos_2k20) SignOn/2.0 WhaleTV/2.0 NETTV/4.6.0.1 SmartTvA/5.0.0 es"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NetTV Series",
+      "marketingName": "NetTV Series",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Whale OS",
+      "marketingName": "Whale OS",
+      "version": "2.0.0",
+      "manufacturer": "Whale TV",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.20.4.54",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.120",
+      "manufacturer": "Google"
     }
   },
   {

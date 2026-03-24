@@ -173,6 +173,7 @@ final class MobileDeviceTest extends TestCase
             ['SIE-C62/67'],
             ['ZTE-C6100/1.0 SMIT-WAP/1.1.0(GUI)'],
             ['FLY-SL600/BSI AU.Browser/2.0 QO3C1'],
+            ['com.huawei.hmos.browser (2in1;OpenHarmony-6.0.2.130;HAD-W24) NetworkSDK/8.0.10.309'],
         ];
     }
 
