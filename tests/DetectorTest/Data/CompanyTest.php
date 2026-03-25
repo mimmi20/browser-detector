@@ -10492,6 +10492,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Hartens',
                 'key' => 'hartens',
             ],
+            [
+                'type' => 'Valve',
+                'name' => 'Valve Corporation',
+                'brandname' => 'Valve',
+                'key' => 'valve',
+            ],
         ];
     }
 
