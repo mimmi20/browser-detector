@@ -6637,6 +6637,7 @@ final class DeviceTest extends TestCase
             ['100071481A', 'onn=onn 100071481a'],
             ['Onn. 4K Streaming Box', 'onn=onn 4k streaming box'],
             ['100005206', 'onn=onn 100005206'],
+            ['100012584', 'onn=onn 100012584'],
             // archos
             ['Archos 101c Platinum', 'archos=archos 101c platinum'],
             ['Archos 101b Xenon v2', 'archos=archos 101b xenon v2'],
@@ -7238,6 +7239,7 @@ final class DeviceTest extends TestCase
             ['9132G', 'tcl=tcl 9132g'],
             ['5164D', 'tcl=tcl 5164d'],
             ['6102D', 'tcl=tcl 6102d'],
+            ['50S451', 'tcl=tcl 50s451'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -9198,6 +9200,13 @@ final class DeviceTest extends TestCase
             // nexar
             ['NTV-U50C614S', 'nexar=nexar ntv-u50c614s'],
             ['NTV-H43C612N', 'nexar=nexar ntv-h43c612n'],
+            ['NTV_U50C614S', 'nexar=nexar ntv-u50c614s'],
+            ['NTV_H43C612N', 'nexar=nexar ntv-h43c612n'],
+            // hartens
+            ['HTY-24H06W-VZ-M', 'hartens=hartens hty-24h06w-vz-m'],
+            // bqeel
+            ['Y8 MAX S905X3', 'bqeel=bqeel s905x3'],
+            ['M9C Max', 'bqeel=bqeel m9c max'],
             // other
             ['Model"', null],
             [': "', null],

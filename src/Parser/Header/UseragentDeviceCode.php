@@ -109,7 +109,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/mozilla\/[\d.]+ \(mobile; (?P<devicecode>[^;]+)(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
             '/virgin radio\/[\d.]+ \/ \(linux; andr[o0]id [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \((?P<devicecode>[^)]+)\)/i',
             '/pugpigbolt [\d.]+ \([^);\/,]+, (android|ios) [\d.]+\) on phone \(model (?P<devicecode>[^)]+)\)/i',
-            '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; andr[o0]id [\d.]+; sdk:[\d.]+; manufacturer:samsung; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
+            '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; andr[o0]id [\d.]+; sdk:[\d.]+; manufacturer:[^;]+; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
             '/luminary\/[\d.]+ \(andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+); /i',
             '/emaudioplayer [\d.]+ \([\d.]+\) \/ andr[o0]id [\d.]+ \/ (?P<devicecode>[^);\/]+)/i',
             '/andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)\) applewebkit/i',
@@ -119,6 +119,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/com\.huawei\.hmos\.browser \([^;]+;openharmony-[\d.]+;(?P<devicecode>[^)]+)\)/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+); build\/[\d.]+\)/i',
         ];
 
         $filtered = array_filter(

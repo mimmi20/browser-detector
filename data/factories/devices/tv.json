@@ -3,7 +3,7 @@
     "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia|; ?sony;/i": "sony",
     "/; ?tcl;|\\(tcl[0-9]+|tclwebkit|; ?50s451;/i": "tcl",
     "/THOMSON|LF1V/i": "thomson",
-    "/philips|avm\\-|qm163e|2020\\/2021 uhd android tv|nettv\\//i": "philips",
+    "/philips|avm\\-|qm163e|2020\\/2021 uhd android tv/i": "philips",
     "/xbox/i": "microsoft",
     "/dlink\\.dsm380/i": "d-link",
     "/[;(] ?loewe;|sl320|sl220|sl150|sl32x|sl121/i": "loewe",
@@ -48,10 +48,15 @@
     "/arris_foxtel/i": "arris",
     "/infinitypro/i": "infinity-pro",
     "/hitachi/i": "hitachi",
+    "/sencrom/i": "sencrom",
+    "/ntv[-_]/i": "nexar",
     "/43lex-/i": "bbk",
     "/ulx-/i": "yuno",
     "/sun-/i": "sun-wind",
-    "/jvc/i": "jvc"
+    "/qupi/i": "qupi",
+    "/hty-/i": "hartens",
+    "/jvc/i": "jvc",
+    "/nettv\\//i": "philips"
   },
   "generic": "unknown"
 }

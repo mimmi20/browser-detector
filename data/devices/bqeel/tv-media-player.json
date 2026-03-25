@@ -4,8 +4,8 @@
     "marketingName": "general Bqeel device",
     "manufacturer": "bqeel",
     "brand": "bqeel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
@@ -18,6 +18,22 @@
   "bqeel m9c max": {
     "deviceName": "M9C Max",
     "marketingName": "M9C Max",
+    "manufacturer": "bqeel",
+    "brand": "bqeel",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv-media-player",
+    "platform": "android"
+  },
+  "bqeel s905x3": {
+    "deviceName": "S905X3",
+    "marketingName": "Y8 Max",
     "manufacturer": "bqeel",
     "brand": "bqeel",
     "dualOrientation": false,

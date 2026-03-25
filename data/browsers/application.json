@@ -1555,5 +1555,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "iptv-pro": {
+    "name": "IPTV Pro",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IPTV Pro"
+      ]
+    },
+    "engine": "unknown"
   }
 }

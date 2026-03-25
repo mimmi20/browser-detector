@@ -3499,6 +3499,8 @@ enum Company: string implements CompanyInterface
 
     case nexar = 'Nexar';
 
+    case hartens = 'Hartens';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5246,6 +5248,7 @@ enum Company: string implements CompanyInterface
             'sencrom' => self::sencrom,
             'qupi' => self::qupi,
             'nexar' => self::nexar,
+            'hartens' => self::hartens,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

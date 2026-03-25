@@ -5612,6 +5612,7 @@ final class Device implements DeviceInterface
             '100071481a' => 'onn=onn 100071481a',
             'onn. 4k streaming box' => 'onn=onn 4k streaming box',
             '100005206' => 'onn=onn 100005206',
+            '100012584' => 'onn=onn 100012584',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
@@ -6113,6 +6114,7 @@ final class Device implements DeviceInterface
             '9132g' => 'tcl=tcl 9132g',
             '5164d' => 'tcl=tcl 5164d',
             '6102d' => 'tcl=tcl 6102d',
+            '50s451' => 'tcl=tcl 50s451',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -7972,8 +7974,13 @@ final class Device implements DeviceInterface
             // qupi
             'qupi tv start' => 'qupi=qupi tv start',
             // nexar
-            'ntv-u50c614s' => 'nexar=nexar ntv-u50c614s',
-            'ntv-h43c612n' => 'nexar=nexar ntv-h43c612n',
+            'ntv-u50c614s', 'ntv_u50c614s' => 'nexar=nexar ntv-u50c614s',
+            'ntv-h43c612n', 'ntv_h43c612n' => 'nexar=nexar ntv-h43c612n',
+            // hartens
+            'hty-24h06w-vz-m' => 'hartens=hartens hty-24h06w-vz-m',
+            // bqeel
+            'y8 max s905x3' => 'bqeel=bqeel s905x3',
+            'm9c max' => 'bqeel=bqeel m9c max',
             // other
             default => null,
         };
