@@ -10498,6 +10498,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Valve',
                 'key' => 'valve',
             ],
+            [
+                'type' => 'Bqeel',
+                'name' => 'Bqeel',
+                'brandname' => 'Bqeel',
+                'key' => 'bqeel',
+            ],
+            [
+                'type' => 'DuoTV',
+                'name' => 'DuoTV',
+                'brandname' => 'DuoTV',
+                'key' => 'duo-tv',
+            ],
+            [
+                'type' => 'NEKO',
+                'name' => 'NEKO',
+                'brandname' => 'NEKO',
+                'key' => 'neko',
+            ],
         ];
     }
 

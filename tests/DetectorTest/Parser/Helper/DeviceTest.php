@@ -8218,6 +8218,7 @@ final class DeviceTest extends TestCase
             ['65MT-UDG54G', 'rombica=rombica 65mt-udg54g'],
             ['myPhone Jet', 'rombica=rombica myphone jet'],
             ['Rombica TV Emotion', 'rombica=rombica tv emotion'],
+            ['TV-Impact', 'rombica=rombica tv impact'],
             // novis
             ['NTV-H3230TS', 'novis=novis ntv-h3230ts'],
             // pritom
@@ -8657,6 +8658,7 @@ final class DeviceTest extends TestCase
             // homatics
             ['Box R 4K Plus', 'homatics=homatics box r 4k plus'],
             ['Box R Lite 4K', 'homatics=homatics box r lite 4k'],
+            ['Dongle G 4K', 'homatics=homatics dongle g 4k'],
             // kgtel
             ['Nova_10_Pro_4G', 'kgtel=kgtel nova 10 pro 4g'],
             // mobvoi
@@ -9241,6 +9243,11 @@ final class DeviceTest extends TestCase
             // bqeel
             ['Y8 MAX S905X3', 'bqeel=bqeel s905x3'],
             ['M9C Max', 'bqeel=bqeel m9c max'],
+            // duo-tv
+            ['duoTV', 'duo-tv=duo-tv smart tv'],
+            // neko
+            ['NEKO_LT-43NX7020S', 'neko=neko lt-43nx7020s'],
+            ['NEKO_WK_LT_32NH8000S', 'neko=neko lt-32nh8000s'],
             // other
             ['Model"', null],
             [': "', null],

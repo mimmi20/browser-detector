@@ -6990,6 +6990,7 @@ final class Device implements DeviceInterface
             '65mt-udg54g' => 'rombica=rombica 65mt-udg54g',
             'myphone jet' => 'rombica=rombica myphone jet',
             'rombica tv emotion' => 'rombica=rombica tv emotion',
+            'tv-impact' => 'rombica=rombica tv impact',
             // novis
             'ntv-h3230ts' => 'novis=novis ntv-h3230ts',
             // pritom
@@ -7426,6 +7427,7 @@ final class Device implements DeviceInterface
             // homatics
             'box r 4k plus' => 'homatics=homatics box r 4k plus',
             'box r lite 4k' => 'homatics=homatics box r lite 4k',
+            'dongle g 4k' => 'homatics=homatics dongle g 4k',
             // kgtel
             'nova_10_pro_4g' => 'kgtel=kgtel nova 10 pro 4g',
             // mobvoi
@@ -8001,6 +8003,11 @@ final class Device implements DeviceInterface
             // bqeel
             'y8 max s905x3' => 'bqeel=bqeel s905x3',
             'm9c max' => 'bqeel=bqeel m9c max',
+            // duo-tv
+            'duotv' => 'duo-tv=duo-tv smart tv',
+            // neko
+            'neko_lt-43nx7020s' => 'neko=neko lt-43nx7020s',
+            'neko_wk_lt_32nh8000s' => 'neko=neko lt-32nh8000s',
             // other
             default => null,
         };

@@ -3503,6 +3503,12 @@ enum Company: string implements CompanyInterface
 
     case valve = 'Valve';
 
+    case bqeel = 'Bqeel';
+
+    case duoTv = 'DuoTV';
+
+    case neko = 'NEKO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5252,6 +5258,9 @@ enum Company: string implements CompanyInterface
             'nexar' => self::nexar,
             'hartens' => self::hartens,
             'valve', 'valve corporation' => self::valve,
+            'bqeel' => self::bqeel,
+            'duotv', 'duo-tv' => self::duoTv,
+            'neko' => self::neko,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6573,6 +6582,7 @@ enum Company: string implements CompanyInterface
             self::wAndO => 'w-o',
             self::leBest => 'le-best',
             self::infinityPro => 'infinity-pro',
+            self::duoTv => 'duo-tv',
             default => $this->name,
         };
     }
