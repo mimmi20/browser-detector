@@ -2516,6 +2516,18 @@
     },
     "engine": null
   },
+  "sticky-password-agent": {
+    "name": "Sticky PasswordAgent",
+    "manufacturer": "lamantine-software",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sticky Password Agent"
+      ]
+    },
+    "engine": null
+  },
   "google-nest-hub": {
     "name": "Google Nest Hub",
     "manufacturer": "google",

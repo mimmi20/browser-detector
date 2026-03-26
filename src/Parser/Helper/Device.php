@@ -3261,6 +3261,10 @@ final class Device implements DeviceInterface
             'bzi-w20', 'huawei bzi-w20' => 'huawei=huawei bzi-w20',
             'bzi-w00', 'huawei bzi-w00' => 'huawei=huawei bzi-w00',
             'bzi-al00', 'huawei bzi-al00' => 'huawei=huawei bzi-al00',
+            'huawei mate 60' => 'huawei=huawei mate 60',
+            'aln-al10', 'huawei aln-al10' => 'huawei=huawei aln-al10',
+            'aln-al00', 'huawei aln-al00' => 'huawei=huawei aln-al00',
+            'bra-al00', 'huawei bra-al00' => 'huawei=huawei bra-al00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -8000,6 +8004,11 @@ final class Device implements DeviceInterface
             'ntv-h43c612n', 'ntv_h43c612n' => 'nexar=nexar ntv-h43c612n',
             // hartens
             'hty-24h06w-vz-m' => 'hartens=hartens hty-24h06w-vz-m',
+            'hty-55uhd11b-s2' => 'hartens=hartens hty-55uhd11b-s2',
+            'hty-50uhdo11mg-hc22' => 'hartens=hartens hty-50uhdo11mg-hc22',
+            'hty-50uhdo11g-hc22' => 'hartens=hartens hty-50uhdo11g-hc22',
+            'hty-43fhd06b-s2' => 'hartens=hartens hty-43fhd06b-s2',
+            'hty-32hdro6b-hc22' => 'hartens=hartens hty-32hdro6b-hc22',
             // bqeel
             'y8 max s905x3' => 'bqeel=bqeel s905x3',
             'm9c max' => 'bqeel=bqeel m9c max',
@@ -8008,6 +8017,10 @@ final class Device implements DeviceInterface
             // neko
             'neko_lt-43nx7020s' => 'neko=neko lt-43nx7020s',
             'neko_wk_lt_32nh8000s' => 'neko=neko lt-32nh8000s',
+            'neko_w_lt_32nh7020s' => 'neko=neko lt-32nh7020s',
+            'neko_lt-50nx7020s' => 'neko=neko lt-50nx7020s',
+            'neko_lt-43nx8000s' => 'neko=neko lt-43nx8000s',
+            'neko_lt-55nx8000s' => 'neko=neko lt-55nx8000s',
             // other
             default => null,
         };

@@ -4248,6 +4248,13 @@ final class DeviceTest extends TestCase
             ['HUAWEI BZI-W00', 'huawei=huawei bzi-w00'],
             ['BZI-AL00', 'huawei=huawei bzi-al00'],
             ['HUAWEI BZI-AL00', 'huawei=huawei bzi-al00'],
+            ['HUAWEI Mate 60', 'huawei=huawei mate 60'],
+            ['ALN-AL10', 'huawei=huawei aln-al10'],
+            ['HUAWEI ALN-AL10', 'huawei=huawei aln-al10'],
+            ['ALN-AL00', 'huawei=huawei aln-al00'],
+            ['HUAWEI ALN-AL00', 'huawei=huawei aln-al00'],
+            ['BRA-AL00', 'huawei=huawei bra-al00'],
+            ['HUAWEI BRA-AL00', 'huawei=huawei bra-al00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -9240,6 +9247,11 @@ final class DeviceTest extends TestCase
             ['NTV_H43C612N', 'nexar=nexar ntv-h43c612n'],
             // hartens
             ['HTY-24H06W-VZ-M', 'hartens=hartens hty-24h06w-vz-m'],
+            ['HTY-55UHD11B-S2', 'hartens=hartens hty-55uhd11b-s2'],
+            ['HTY-50UHDO11MG-HC22', 'hartens=hartens hty-50uhdo11mg-hc22'],
+            ['HTY-50UHDO11G-HC22', 'hartens=hartens hty-50uhdo11g-hc22'],
+            ['HTY-43FHD06B-S2', 'hartens=hartens hty-43fhd06b-s2'],
+            ['HTY-32HDRO6B-HC22', 'hartens=hartens hty-32hdro6b-hc22'],
             // bqeel
             ['Y8 MAX S905X3', 'bqeel=bqeel s905x3'],
             ['M9C Max', 'bqeel=bqeel m9c max'],
@@ -9248,6 +9260,10 @@ final class DeviceTest extends TestCase
             // neko
             ['NEKO_LT-43NX7020S', 'neko=neko lt-43nx7020s'],
             ['NEKO_WK_LT_32NH8000S', 'neko=neko lt-32nh8000s'],
+            ['NEKO_W_LT_32NH7020S', 'neko=neko lt-32nh7020s'],
+            ['NEKO_LT-50NX7020S', 'neko=neko lt-50nx7020s'],
+            ['NEKO_LT-43NX8000S', 'neko=neko lt-43nx8000s'],
+            ['NEKO_LT-55NX8000S', 'neko=neko lt-55nx8000s'],
             // other
             ['Model"', null],
             [': "', null],
