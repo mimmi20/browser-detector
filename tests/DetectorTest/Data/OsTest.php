@@ -508,7 +508,7 @@ final class OsTest extends TestCase
                 'name' => 'Windows',
                 'marketingName' => 'Windows',
                 'manufacturer' => Company::microsoft,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir']],
                 'key' => 'windows',
             ],
             [

@@ -771,7 +771,7 @@
     "device": {
       "architecture": null,
       "deviceName": "1915",
-      "marketingName": "1915",
+      "marketingName": "Y19",
       "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
@@ -2787,6 +2787,51 @@
       "name": "Blink",
       "version": "135.0.0.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Vivo 1915) AppleWebKit/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "1915",
+      "marketingName": "Y19",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
     }
   }
 ]

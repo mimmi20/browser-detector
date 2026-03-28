@@ -1567,5 +1567,19 @@
       ]
     },
     "engine": "unknown"
+  },
+  "microsoft-webdav": {
+    "name": "Microsoft-WebDAV",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Microsoft\\-WebDAV\\-MiniRedir",
+        "Microsoft\\-WebDAV",
+        "DavClnt"
+      ]
+    },
+    "engine": "unknown"
   }
 }

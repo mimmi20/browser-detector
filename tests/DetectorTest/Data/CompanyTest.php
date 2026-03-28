@@ -7679,12 +7679,6 @@ final class CompanyTest extends TestCase
                 'key' => 'pipl',
             ],
             [
-                'type' => 'The British Legal Deposit Libraries',
-                'name' => 'The British Legal Deposit Libraries',
-                'brandname' => 'The British Legal Deposit Libraries',
-                'key' => 'the-british-legal-deposit-libraries',
-            ],
-            [
                 'type' => 'WeSEE',
                 'name' => 'WeSEE Ltd',
                 'brandname' => 'WeSEE',
@@ -10515,6 +10509,90 @@ final class CompanyTest extends TestCase
                 'name' => 'NEKO',
                 'brandname' => 'NEKO',
                 'key' => 'neko',
+            ],
+            [
+                'type' => 'astro (MY)',
+                'name' => 'Astro Malaysia Holdings Berhad',
+                'brandname' => 'astro (MY)',
+                'key' => 'astro-my',
+            ],
+            [
+                'type' => 'Muck Rack',
+                'name' => 'Muck Rack, LLC',
+                'brandname' => 'Muck Rack',
+                'key' => 'muck-rack',
+            ],
+            [
+                'type' => 'Wikimedia',
+                'name' => 'The Wikimedia Foundation, Inc.',
+                'brandname' => 'Wikimedia',
+                'key' => 'wikimedia',
+            ],
+            [
+                'type' => 'The British Library',
+                'name' => 'The British Library',
+                'brandname' => 'The British Library',
+                'key' => 'the-british-library',
+            ],
+            [
+                'type' => 'Vrije Universiteit Amsterdam',
+                'name' => 'Vrije Universiteit Amsterdam',
+                'brandname' => 'Vrije Universiteit Amsterdam',
+                'key' => 'vrije-universiteit-amsterdam',
+            ],
+            [
+                'type' => 'Marginalia',
+                'name' => 'Marginalia',
+                'brandname' => 'Marginalia',
+                'key' => 'marginalia',
+            ],
+            [
+                'type' => 'Make Merry',
+                'name' => 'Make Merry LLC',
+                'brandname' => 'Make Merry',
+                'key' => 'make-merry',
+            ],
+            [
+                'type' => 'Semalt',
+                'name' => 'Semalt LLC',
+                'brandname' => 'Semalt',
+                'key' => 'semalt',
+            ],
+            [
+                'type' => 'Redeken',
+                'name' => 'Redeken',
+                'brandname' => 'Redeken',
+                'key' => 'redeken',
+            ],
+            [
+                'type' => 'Sectigo',
+                'name' => 'Sectigo Limited',
+                'brandname' => 'Sectigo',
+                'key' => 'sectigo',
+            ],
+            [
+                'type' => 'Jožef Stefan Institute',
+                'name' => 'Jožef Stefan Institute',
+                'brandname' => 'Jožef Stefan Institute',
+                'key' => 'jozef-stefan-institute',
+            ],
+            [
+                'type' => 'Meecel',
+                'name' => 'Meecel',
+                'brandname' => 'Meecel',
+                'key' => 'meecel',
+            ],
+            [
+                'type' => 'SIM',
+                'name' => 'SIM Limited',
+                'brandname' => 'SIM',
+                'key' => 'sim',
+            ],
+            [
+                'type' => 'Copyright Clearance Center',
+                'name' => 'Copyright Clearance Center, Inc.',
+                'brandname' => 'Copyright Clearance Center',
+                'key' => 'copyright-clearance-center',
             ],
         ];
     }

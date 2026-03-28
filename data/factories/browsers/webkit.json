@@ -70,6 +70,7 @@
     "/ opt\\/|opera touch|opera 20touch/i": "opera touch",
     "/opr\\//i": "opera",
     "/midori/i": "midori",
+    "/whatsapp\\/.+cloudapi/i": "whatsapp",
     "/whatsapp/i": "whatsapp",
     "/com\\.google\\.googleplus/i": "google+ app",
     "/com\\.google\\.(android|ios)\\.youtube/i": "youtube app",

@@ -292,5 +292,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "cloudflare-smart-transit": {
+    "name": "Cloudflare Smart Transit",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cloudflare-Smart-Transit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "blackbox-exporter": {
+    "name": "Blackbox Exporter",
+    "manufacturer": "linux-foundation",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Blackbox Exporter"
+      ]
+    },
+    "engine": "unknown"
   }
 }

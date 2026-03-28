@@ -2561,8 +2561,6 @@ enum Company: string implements CompanyInterface
 
     case pipl = 'Pipl';
 
-    case theBritishLegalDepositLibraries = 'The British Legal Deposit Libraries';
-
     case wesee = 'WeSEE';
 
     case wotbox = 'Wotbox';
@@ -3508,6 +3506,34 @@ enum Company: string implements CompanyInterface
     case duoTv = 'DuoTV';
 
     case neko = 'NEKO';
+
+    case astroMy = 'astro (MY)';
+
+    case muckRack = 'Muck Rack';
+
+    case wikimedia = 'Wikimedia';
+
+    case theBritishLibrary = 'The British Library';
+
+    case vrijeUniversiteitAmsterdam = 'Vrije Universiteit Amsterdam';
+
+    case marginalia = 'Marginalia';
+
+    case makeMerry = 'Make Merry';
+
+    case semalt = 'Semalt';
+
+    case redeken = 'Redeken';
+
+    case sectigo = 'Sectigo';
+
+    case jozefStefanInstitute = 'Jožef Stefan Institute';
+
+    case meecel = 'Meecel';
+
+    case sim = 'SIM';
+
+    case copyrightClearanceCenter = 'Copyright Clearance Center';
 
     /**
      * @throws UnexpectedValueException
@@ -4787,7 +4813,6 @@ enum Company: string implements CompanyInterface
             'laboratoryforwebalgorithmics', 'law.di.unimi.it', 'laboratory for web algorithmics at university of milan', 'laboratory for web algorithmics' => self::laboratoryForWebAlgorithmics,
             'paperli', 'paper.li' => self::paperLi,
             'pipl' => self::pipl,
-            'thebritishlegaldepositlibraries', 'the-british-legal-deposit-libraries', 'the british legal deposit libraries' => self::theBritishLegalDepositLibraries,
             'wesee', 'wesee ltd' => self::wesee,
             'wotbox' => self::wotbox,
             'zetacentauri', 'zeta centauri' => self::zetaCentauri,
@@ -5261,6 +5286,20 @@ enum Company: string implements CompanyInterface
             'bqeel' => self::bqeel,
             'duotv', 'duo-tv' => self::duoTv,
             'neko' => self::neko,
+            'astromy', 'astro-my', 'astro malaysia holdings berhad', 'astro (my)' => self::astroMy,
+            'muckrack', 'muck rack, llc', 'muck-rack', 'muck rack' => self::muckRack,
+            'wikimedia', 'the wikimedia foundation, inc.' => self::wikimedia,
+            'thebritishlibrary', 'the-british-library', 'the british library' => self::theBritishLibrary,
+            'vrijeuniversiteitamsterdam', 'vrije-universiteit-amsterdam', 'vrije universiteit amsterdam' => self::vrijeUniversiteitAmsterdam,
+            'marginalia' => self::marginalia,
+            'makemerry', 'make merry llc', 'make-merry', 'make merry' => self::makeMerry,
+            'semalt', 'semalt llc' => self::semalt,
+            'redeken' => self::redeken,
+            'sectigo', 'sectigo limited' => self::sectigo,
+            'jozefstefaninstitute', 'jozef-stefan-institute', 'jožef stefan institute' => self::jozefStefanInstitute,
+            'meecel' => self::meecel,
+            'sim', 'sim limited' => self::sim,
+            'copyrightclearancecenter', 'copyright clearance center, inc.', 'copyright-clearance-center', 'copyright clearance center' => self::copyrightClearanceCenter,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5931,6 +5970,14 @@ enum Company: string implements CompanyInterface
             self::weebly => 'Weebly, Inc.',
             self::xinways => 'Shenzhen Goodidea Technology Co.,Ltd.',
             self::valve => 'Valve Corporation',
+            self::astroMy => 'Astro Malaysia Holdings Berhad',
+            self::muckRack => 'Muck Rack, LLC',
+            self::wikimedia => 'The Wikimedia Foundation, Inc.',
+            self::makeMerry => 'Make Merry LLC',
+            self::semalt => 'Semalt LLC',
+            self::sectigo => 'Sectigo Limited',
+            self::sim => 'SIM Limited',
+            self::copyrightClearanceCenter => 'Copyright Clearance Center, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6365,7 +6412,6 @@ enum Company: string implements CompanyInterface
             self::embedly => 'embed.ly',
             self::laboratoryForWebAlgorithmics => 'law.di.unimi.it',
             self::paperLi => 'paper.li',
-            self::theBritishLegalDepositLibraries => 'the-british-legal-deposit-libraries',
             self::zetaCentauri => 'zeta centauri',
             self::amirKrause => 'amir-krause',
             self::cloudFlare => 'cloud-flare',
@@ -6583,6 +6629,13 @@ enum Company: string implements CompanyInterface
             self::leBest => 'le-best',
             self::infinityPro => 'infinity-pro',
             self::duoTv => 'duo-tv',
+            self::astroMy => 'astro-my',
+            self::muckRack => 'muck-rack',
+            self::theBritishLibrary => 'the-british-library',
+            self::vrijeUniversiteitAmsterdam => 'vrije-universiteit-amsterdam',
+            self::makeMerry => 'make-merry',
+            self::jozefStefanInstitute => 'jozef-stefan-institute',
+            self::copyrightClearanceCenter => 'copyright-clearance-center',
             default => $this->name,
         };
     }

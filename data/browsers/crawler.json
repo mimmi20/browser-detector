@@ -3932,10 +3932,11 @@
   "tineye-crawler": {
     "name": "TinEye",
     "manufacturer": "idee",
-    "type": "search-bot",
+    "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "TinEye\\-Web",
         "TinEye"
       ]
     },
@@ -3986,6 +3987,188 @@
       "search": [
         "peer39_crawler"
       ]
+    },
+    "engine": "unknown"
+  },
+  "xtate": {
+    "name": "xtate",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "xtate"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-cloud-vertex-bot": {
+    "name": "Google-CloudVertexBot",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-CloudVertexBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "golfe": {
+    "name": "Golfe",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Golfe"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "muck-rack": {
+    "name": "MuckRack",
+    "manufacturer": "muck-rack",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MuckRack"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bl-uk-lddc-bot": {
+    "name": "The British Library Legal Deposit Bot",
+    "manufacturer": "the-british-library",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "bl\\.uk_ld[df]c_bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "marginalia-crawler": {
+    "name": "Marginalia Crawler",
+    "manufacturer": "marginalia",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "leak-info-bot": {
+    "name": "leak.info Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "make-merry-bot": {
+    "name": "MakeMerryBot",
+    "manufacturer": "make-merry",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MakeMerryBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "semalt-bot": {
+    "name": "semaltbot",
+    "manufacturer": "semalt",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "semaltbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "redeken-bot": {
+    "name": "RedekenBot",
+    "manufacturer": "redeken",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RedekenBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "depspid": {
+    "name": "DepSpid",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DepSpid"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "crawler": {
+    "name": "Crawler",
+    "manufacturer": "linkfluence",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "classla-web-crawler": {
+    "name": "CLASSLA-web",
+    "manufacturer": "jozef-stefan-institute",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "itms": {
+    "name": "iTMS",
+    "manufacturer": "apple",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "castopod": {
+    "name": "Castopod",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Castopod"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "deep-search-9": {
+    "name": "Deep SEARCH 9",
+    "manufacturer": "copyright-clearance-center",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": "unknown"
   }

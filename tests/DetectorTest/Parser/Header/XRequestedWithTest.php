@@ -571,6 +571,7 @@ final class XRequestedWithTest extends TestCase
             ['company.thebrowser.arc', true, 'arc-search', true, null, false, Os::unknown],
             ['com.siber.roboform', true, 'roboform', true, null, false, Os::unknown],
             ['com.huawei.hmos.browser', true, 'huawei-browser', true, null, false, Os::unknown],
+            ['com.meecel.feedreader.RssDemonAd', true, 'rss-demon', true, null, false, Os::unknown],
         ];
     }
 }

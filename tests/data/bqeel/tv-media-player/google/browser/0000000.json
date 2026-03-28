@@ -1,14 +1,14 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; RED360 Air 8K Build/PPR1.181005.003) IPTV Pro/8.1.4"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Y8 MAX S905X3 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Red360 Air 8K",
-      "marketingName": "Red360 Air 8K",
-      "manufacturer": "RedLine",
-      "brand": "RedLine",
+      "deviceName": "S905X3",
+      "marketingName": "Y8 Max",
+      "manufacturer": "Bqeel",
+      "brand": "Bqeel",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
@@ -17,7 +17,7 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-set-top-box",
+      "type": "tv-media-player",
       "ismobile": false,
       "istv": true,
       "bits": null
@@ -30,18 +30,18 @@
       "bits": null
     },
     "client": {
-      "name": "redbot",
+      "name": "Chrome",
       "modus": null,
-      "version": "360.0.0",
-      "manufacturer": "redbot.org",
-      "type": "bot",
-      "isbot": true,
+      "version": "63.0.3239.111",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "Google"
     }
   }
 ]

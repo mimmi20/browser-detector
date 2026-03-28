@@ -317,7 +317,40 @@
   },
   "steam-chat-url-lookup": {
     "name": "Steam Chat URL Lookup",
-    "manufacturer": "kubell",
+    "manufacturer": "valve",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "zotero-translation-server": {
+    "name": "Zotero Translation Server",
+    "manufacturer": "wikimedia",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "sectigo-dcv": {
+    "name": "Sectigo DCV",
+    "manufacturer": "sectigo",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "acme\\.sectigo\\.com\\/v",
+        "acme\\.sectigo\\.com"
+      ]
+    },
+    "engine": null
+  },
+  "php-my-admin": {
+    "name": "phpMyAdmin",
+    "manufacturer": "unknown",
     "type": "service-agent",
     "version": {
       "factory": null,

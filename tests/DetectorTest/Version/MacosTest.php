@@ -192,6 +192,10 @@ final class MacosTest extends TestCase
                 'Microsoft Office Outlook/16.106.208 (Mac OS/26.2; Desktop; de-DE; NonAppStore; Apple/MacBookPro18,3)',
                 '26.2.0',
             ],
+            [
+                'Mozilla/5.0 (ZOOM.Mac 14.1.2 x86)',
+                '14.1.2',
+            ],
         ];
     }
 
