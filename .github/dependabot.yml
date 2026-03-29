@@ -74,7 +74,9 @@ updates:
       - dependency-name: "mimmi20/ci/.github/workflows/review-dependency.yml"
       - dependency-name: "mimmi20/ci/.github/workflows/lint-actions.yml"
       - dependency-name: "mimmi20/ci/.github/workflows/sync-labels.yml"
-      - dependency-name: "release-drafter/release-drafter"
+      - dependency-name: "mimmi20/ci/.github/workflows/lock-issues.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/reaction-comments.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/draft-release.yml"
 
     # Disable rebasing for all pull requests
     rebase-strategy: "disabled"

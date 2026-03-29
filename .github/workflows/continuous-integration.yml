@@ -20,10 +20,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  validate:
+  validate-all:
     name: "Validate Project"
 
-    uses: "mimmi20/ci/.github/workflows/validate.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/validate-all.yml@8.4"
+    with:
+      extensions: "ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
+      ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
+      composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
+      skip-validate-composer: false
+      skip-validate-yaml: false
+      skip-validate-md: false
+      skip-phplint: false
+      skip-check-composer: true
+      skip-ec-checker: true
+      dependency-analyser-options: ""
+
+  validate-php:
+    name: "Validate Project"
+
+    uses: "mimmi20/ci/.github/workflows/validate-php.yml@8.4"
     with:
       extensions: "ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
@@ -39,9 +55,11 @@ jobs:
   install:
     name: "Install Project"
 
-    needs: "validate"
+    needs:
+      - "validate-all"
+      - "validate-php"
 
-    uses: "mimmi20/ci/.github/workflows/install.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/install-php.yml@8.4"
     with:
       extensions: "ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
@@ -67,7 +85,7 @@ jobs:
 
     needs: "install"
 
-    uses: "mimmi20/ci/.github/workflows/analytics.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/analytics-php.yml@8.4"
     with:
       extensions: "ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
@@ -93,7 +111,7 @@ jobs:
 
     needs: "analytics"
 
-    uses: "mimmi20/ci/.github/workflows/test.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/test-php.yml@8.4"
     with:
       extensions: "ctype, dom, fileinfo, intl, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
