@@ -14,10 +14,7 @@ permissions:
 
 jobs:
   lock:
-    name: "Lock"
-    runs-on: "ubuntu-latest"
+    name: "Lock Issues"
+    uses: "mimmi20/ci/.github/workflows/lock-issues.yml@8.4"
     permissions:
       issues: write
-    steps:
-      - name: "Lock issue"
-        uses: "IOrlandoni/lock-issues@v1.2.1"

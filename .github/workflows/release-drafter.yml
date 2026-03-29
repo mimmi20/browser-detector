@@ -31,11 +31,5 @@ jobs:
       # otherwise, read permission is required at least
       pull-requests: write
 
-    runs-on: "ubuntu-latest"
-
-    steps:
-      # Drafts your next Release notes as Pull Requests are merged into "master"
-      - name: "Release Drafter"
-        uses: "release-drafter/release-drafter@v6.0.0"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+    name: "Draft Release"
+    uses: "mimmi20/ci/.github/workflows/draft-release.yml@8.4"
