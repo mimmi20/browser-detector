@@ -3553,6 +3553,22 @@ enum Company: string implements CompanyInterface
 
     case plesk = 'Plesk';
 
+    case otb = 'Open Technologies Bulgaria';
+
+    case eyemonit = 'EyeMonit.com';
+
+    case elasticsearch = 'Elasticsearch';
+
+    case dubbot = 'DubBot';
+
+    case zoho = 'Zoho';
+
+    case nationalSzechenyiLibrary = 'National Szechenyi Library';
+
+    case paqle = 'Paqle';
+
+    case detectify = 'Detectify';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5327,6 +5343,14 @@ enum Company: string implements CompanyInterface
             'gumgum', 'gumgum, inc.', 'gum-gum' => self::gumGum,
             'probely', 'probely - soluções de cibersegurança, s.a.' => self::probely,
             'plesk', 'plesk international gmbh' => self::plesk,
+            'otb', 'open technologies bulgaria, ltd', 'open technologies bulgaria' => self::otb,
+            'eyemonit', 'eyemonit.com' => self::eyemonit,
+            'elasticsearch', 'elasticsearch, b.v.' => self::elasticsearch,
+            'dubbot' => self::dubbot,
+            'zoho', 'zoho corporation pvt. ltd.' => self::zoho,
+            'nationalszechenyilibrary', 'national szechenyi library', 'national-szechenyi-library' => self::nationalSzechenyiLibrary,
+            'paqle', 'paqle a/s' => self::paqle,
+            'detectify', 'detectify ab' => self::detectify,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6013,6 +6037,11 @@ enum Company: string implements CompanyInterface
             self::gumGum => 'GumGum, Inc.',
             self::probely => 'Probely - Soluções de Cibersegurança, S.A.',
             self::plesk => 'Plesk International GmbH',
+            self::otb => 'Open Technologies Bulgaria, Ltd',
+            self::elasticsearch => 'Elasticsearch, B.V.',
+            self::zoho => 'Zoho Corporation Pvt. Ltd.',
+            self::paqle => 'Paqle A/S',
+            self::detectify => 'Detectify AB',
             self::unknown => null,
             default => $this->value,
         };
@@ -6674,6 +6703,7 @@ enum Company: string implements CompanyInterface
             self::libraryAndArchivesCanada => 'library-and-archives-canada',
             self::macroLabs => 'macro-labs',
             self::gumGum => 'gum-gum',
+            self::nationalSzechenyiLibrary => 'national-szechenyi-library',
             default => $this->name,
         };
     }

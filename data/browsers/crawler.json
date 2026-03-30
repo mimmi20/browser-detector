@@ -4230,5 +4230,77 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "swift-bot": {
+    "name": "Swiftbot",
+    "manufacturer": "elasticsearch",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Swiftbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dubbot-bot": {
+    "name": "Dubbotbot",
+    "manufacturer": "dubbot",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Dubbotbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "split-signal-bot": {
+    "name": "SplitSignalBot",
+    "manufacturer": "semrush",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SplitSignalBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "oszk-bot": {
+    "name": "OSZKbot",
+    "manufacturer": "national-szechenyi-library",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OSZKbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wiby-bot": {
+    "name": "Wibybot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Wibybot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "paqle-bot": {
+    "name": "Paqlebot",
+    "manufacturer": "paqle",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Paqlebot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

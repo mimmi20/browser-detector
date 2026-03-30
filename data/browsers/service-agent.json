@@ -379,5 +379,17 @@
       "search": null
     },
     "engine": null
+  },
+  "kiwi-tcms-gitops": {
+    "name": "Kiwi TCMS GitOps",
+    "manufacturer": "otb",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "kiwitcms-gitops"
+      ]
+    },
+    "engine": null
   }
 }

@@ -1271,5 +1271,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yandex-userproxy": {
+    "name": "YandexUserproxy",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexUserproxy"
+      ]
+    },
+    "engine": "unknown"
   }
 }

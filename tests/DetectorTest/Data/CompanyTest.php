@@ -10648,6 +10648,54 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Plesk',
                 'key' => 'plesk',
             ],
+            [
+                'type' => 'Open Technologies Bulgaria',
+                'name' => 'Open Technologies Bulgaria, Ltd',
+                'brandname' => 'Open Technologies Bulgaria',
+                'key' => 'otb',
+            ],
+            [
+                'type' => 'EyeMonit.com',
+                'name' => 'EyeMonit.com',
+                'brandname' => 'EyeMonit.com',
+                'key' => 'eyemonit',
+            ],
+            [
+                'type' => 'Elasticsearch',
+                'name' => 'Elasticsearch, B.V.',
+                'brandname' => 'Elasticsearch',
+                'key' => 'elasticsearch',
+            ],
+            [
+                'type' => 'DubBot',
+                'name' => 'DubBot',
+                'brandname' => 'DubBot',
+                'key' => 'dubbot',
+            ],
+            [
+                'type' => 'Zoho',
+                'name' => 'Zoho Corporation Pvt. Ltd.',
+                'brandname' => 'Zoho',
+                'key' => 'zoho',
+            ],
+            [
+                'type' => 'National Szechenyi Library',
+                'name' => 'National Szechenyi Library',
+                'brandname' => 'National Szechenyi Library',
+                'key' => 'national-szechenyi-library',
+            ],
+            [
+                'type' => 'Paqle',
+                'name' => 'Paqle A/S',
+                'brandname' => 'Paqle',
+                'key' => 'paqle',
+            ],
+            [
+                'type' => 'Detectify',
+                'name' => 'Detectify AB',
+                'brandname' => 'Detectify',
+                'key' => 'detectify',
+            ],
         ];
     }
 
