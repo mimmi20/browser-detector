@@ -3535,6 +3535,24 @@ enum Company: string implements CompanyInterface
 
     case copyrightClearanceCenter = 'Copyright Clearance Center';
 
+    case substack = 'Substack';
+
+    case zengenti = 'Zengenti';
+
+    case libraryAndArchivesCanada = 'Library and Archives Canada';
+
+    case xmco = 'XMCO';
+
+    case spreaker = 'Spreaker';
+
+    case macroLabs = 'Macro Labs';
+
+    case gumGum = 'GumGum';
+
+    case probely = 'Probely';
+
+    case plesk = 'Plesk';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5300,6 +5318,15 @@ enum Company: string implements CompanyInterface
             'meecel' => self::meecel,
             'sim', 'sim limited' => self::sim,
             'copyrightclearancecenter', 'copyright clearance center, inc.', 'copyright-clearance-center', 'copyright clearance center' => self::copyrightClearanceCenter,
+            'substack', 'substack, inc.' => self::substack,
+            'zengenti', 'zengenti limited' => self::zengenti,
+            'libraryandarchivescanada', 'library-and-archives-canada', 'library and archives canada' => self::libraryAndArchivesCanada,
+            'xmco', 'xmco, sasu' => self::xmco,
+            'spreaker', 'spreaker, inc.' => self::spreaker,
+            'macrolabs', 'macro labs, inc.', 'macro-labs', 'macro labs' => self::macroLabs,
+            'gumgum', 'gumgum, inc.', 'gum-gum' => self::gumGum,
+            'probely', 'probely - soluções de cibersegurança, s.a.' => self::probely,
+            'plesk', 'plesk international gmbh' => self::plesk,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5978,6 +6005,14 @@ enum Company: string implements CompanyInterface
             self::sectigo => 'Sectigo Limited',
             self::sim => 'SIM Limited',
             self::copyrightClearanceCenter => 'Copyright Clearance Center, Inc.',
+            self::substack => 'Substack, Inc.',
+            self::zengenti => 'Zengenti Limited',
+            self::xmco => 'XMCO, SASU',
+            self::spreaker => 'Spreaker, Inc.',
+            self::macroLabs => 'Macro Labs, Inc.',
+            self::gumGum => 'GumGum, Inc.',
+            self::probely => 'Probely - Soluções de Cibersegurança, S.A.',
+            self::plesk => 'Plesk International GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -6636,6 +6671,9 @@ enum Company: string implements CompanyInterface
             self::makeMerry => 'make-merry',
             self::jozefStefanInstitute => 'jozef-stefan-institute',
             self::copyrightClearanceCenter => 'copyright-clearance-center',
+            self::libraryAndArchivesCanada => 'library-and-archives-canada',
+            self::macroLabs => 'macro-labs',
+            self::gumGum => 'gum-gum',
             default => $this->name,
         };
     }

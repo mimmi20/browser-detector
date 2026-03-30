@@ -10594,6 +10594,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Copyright Clearance Center',
                 'key' => 'copyright-clearance-center',
             ],
+            [
+                'type' => 'Substack',
+                'name' => 'Substack, Inc.',
+                'brandname' => 'Substack',
+                'key' => 'substack',
+            ],
+            [
+                'type' => 'Zengenti',
+                'name' => 'Zengenti Limited',
+                'brandname' => 'Zengenti',
+                'key' => 'zengenti',
+            ],
+            [
+                'type' => 'Library and Archives Canada',
+                'name' => 'Library and Archives Canada',
+                'brandname' => 'Library and Archives Canada',
+                'key' => 'library-and-archives-canada',
+            ],
+            [
+                'type' => 'XMCO',
+                'name' => 'XMCO, SASU',
+                'brandname' => 'XMCO',
+                'key' => 'xmco',
+            ],
+            [
+                'type' => 'Spreaker',
+                'name' => 'Spreaker, Inc.',
+                'brandname' => 'Spreaker',
+                'key' => 'spreaker',
+            ],
+            [
+                'type' => 'Macro Labs',
+                'name' => 'Macro Labs, Inc.',
+                'brandname' => 'Macro Labs',
+                'key' => 'macro-labs',
+            ],
+            [
+                'type' => 'GumGum',
+                'name' => 'GumGum, Inc.',
+                'brandname' => 'GumGum',
+                'key' => 'gum-gum',
+            ],
+            [
+                'type' => 'Probely',
+                'name' => 'Probely - Soluções de Cibersegurança, S.A.',
+                'brandname' => 'Probely',
+                'key' => 'probely',
+            ],
+            [
+                'type' => 'Plesk',
+                'name' => 'Plesk International GmbH',
+                'brandname' => 'Plesk',
+                'key' => 'plesk',
+            ],
         ];
     }
 

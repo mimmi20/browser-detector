@@ -4171,5 +4171,64 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "substack-content-fetch": {
+    "name": "Substack Content Fetch",
+    "manufacturer": "substack",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SubstackContentFetch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "insytful-bot": {
+    "name": "InsytfulBot",
+    "manufacturer": "zengenti",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "InsytfulBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lac-ia-harvester": {
+    "name": "LAC IA Harvester",
+    "manufacturer": "library-and-archives-canada",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LAC_IAHarvester"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "podroll-analyzer": {
+    "name": "Podroll Analyzer",
+    "manufacturer": "library-and-archives-canada",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "pdrl\\.fm Analyzer \\/ ",
+        "pdrl\\.fm Analyzer \\/"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-ilp": {
+    "name": "Google-ilp",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

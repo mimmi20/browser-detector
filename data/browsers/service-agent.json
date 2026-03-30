@@ -357,5 +357,27 @@
       "search": null
     },
     "engine": null
+  },
+  "gum-gum-verity": {
+    "name": "GumGum Verity",
+    "manufacturer": "gum-gum",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Verity"
+      ]
+    },
+    "engine": null
+  },
+  "plesk-screenshot-service": {
+    "name": "Plesk Screenshot Service",
+    "manufacturer": "plesk",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }

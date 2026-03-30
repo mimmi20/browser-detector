@@ -316,5 +316,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "pod-uptime": {
+    "name": "PodUptime",
+    "manufacturer": "spreaker",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodUptime"
+      ]
+    },
+    "engine": "unknown"
   }
 }

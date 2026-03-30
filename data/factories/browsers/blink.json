@@ -262,7 +262,7 @@
     "/crosswalk/i": "crosswalk",
     "/bromium safari/i": "vsentry",
     "/pagepeeker|ppbot/i": "pagepeeker",
-    "/whatsapp\\/.+cloudapi/i": "whatsapp",
+    "/whatsapp\\/.+cloudapi/i": "whatsapp-business",
     "/bitdefendersafepay/i": "bitdefender safepay",
     "/stormcrawler/i": "stormcrawler",
     "/whatsapp/i": "whatsapp",
@@ -344,6 +344,7 @@
     "/flow\\)/i": "flowsurf",
     "/bluesky/i": "bluesky",
     "/iaskbot/i": "i-ask-bot",
+    "/probely/i": "probely",
     "/seolyt/i": "seolyt-bot",
     "/(?<!t)chr[o0]me\\//i": "chrome",
     "/chromeframe/i": "chrome-frame"

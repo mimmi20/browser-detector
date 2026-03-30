@@ -897,5 +897,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "down": {
+    "name": "Down",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Down"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -46,12 +46,12 @@
   },
   {
     "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/80.1-55240 (ZPS19)"
+      "user-agent": "Sonos"
     },
     "device": {
       "architecture": null,
-      "deviceName": "ZPS19",
-      "marketingName": "ZPS19",
+      "deviceName": "Smart Speaker",
+      "marketingName": "Smart Speaker",
       "manufacturer": "Sonos",
       "brand": "Sonos",
       "dualOrientation": false,
@@ -68,16 +68,106 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
       "name": "Sonos",
       "modus": null,
-      "version": "80.1.55240",
+      "version": null,
+      "manufacturer": "Sonos",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Linux UPnP/1.0 Sonos/57.9-23010 (MDCR_iMac18,3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart Speaker",
+      "marketingName": "Smart Speaker",
+      "manufacturer": "Sonos",
+      "brand": "Sonos",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "smart-speaker",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Sonos",
+      "modus": null,
+      "version": "57.9.23010",
+      "manufacturer": "Sonos",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Sonos/71.0-37271 (Play:3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Play:3",
+      "marketingName": "Play:3",
+      "manufacturer": "Sonos",
+      "brand": "Sonos",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "smart-speaker",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sonos",
+      "modus": null,
+      "version": "71.0.37271",
       "manufacturer": "Sonos",
       "type": "multimedia-player",
       "isbot": false,
