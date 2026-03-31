@@ -587,16 +587,6 @@
     },
     "engine": "unknown"
   },
-  "bl.uk_lddc_bot": {
-    "name": "bl.uk_lddc_bot",
-    "manufacturer": "the-british-legal-deposit-libraries",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "blekkobot": {
     "name": "BlekkoBot",
     "manufacturer": "blekko",
@@ -1100,18 +1090,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CoverScout"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "crawler": {
-    "name": "Crawler",
-    "manufacturer": "linkfluence",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Crawler"
       ]
     },
     "engine": "unknown"
@@ -3561,20 +3539,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Microsoft Windows Network Diagnostics"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "microsoft-webdav": {
-    "name": "Microsoft-WebDAV",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Microsoft\\-WebDAV\\-MiniRedir",
-        "Microsoft\\-WebDAV",
-        "DavClnt"
       ]
     },
     "engine": "unknown"

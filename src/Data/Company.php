@@ -2561,8 +2561,6 @@ enum Company: string implements CompanyInterface
 
     case pipl = 'Pipl';
 
-    case theBritishLegalDepositLibraries = 'The British Legal Deposit Libraries';
-
     case wesee = 'WeSEE';
 
     case wotbox = 'Wotbox';
@@ -3498,6 +3496,78 @@ enum Company: string implements CompanyInterface
     case qupi = 'Qupi';
 
     case nexar = 'Nexar';
+
+    case hartens = 'Hartens';
+
+    case valve = 'Valve';
+
+    case bqeel = 'Bqeel';
+
+    case duoTv = 'DuoTV';
+
+    case neko = 'NEKO';
+
+    case astroMy = 'astro (MY)';
+
+    case muckRack = 'Muck Rack';
+
+    case wikimedia = 'Wikimedia';
+
+    case theBritishLibrary = 'The British Library';
+
+    case vrijeUniversiteitAmsterdam = 'Vrije Universiteit Amsterdam';
+
+    case marginalia = 'Marginalia';
+
+    case makeMerry = 'Make Merry';
+
+    case semalt = 'Semalt';
+
+    case redeken = 'Redeken';
+
+    case sectigo = 'Sectigo';
+
+    case jozefStefanInstitute = 'Jožef Stefan Institute';
+
+    case meecel = 'Meecel';
+
+    case sim = 'SIM';
+
+    case copyrightClearanceCenter = 'Copyright Clearance Center';
+
+    case substack = 'Substack';
+
+    case zengenti = 'Zengenti';
+
+    case libraryAndArchivesCanada = 'Library and Archives Canada';
+
+    case xmco = 'XMCO';
+
+    case spreaker = 'Spreaker';
+
+    case macroLabs = 'Macro Labs';
+
+    case gumGum = 'GumGum';
+
+    case probely = 'Probely';
+
+    case plesk = 'Plesk';
+
+    case otb = 'Open Technologies Bulgaria';
+
+    case eyemonit = 'EyeMonit.com';
+
+    case elasticsearch = 'Elasticsearch';
+
+    case dubbot = 'DubBot';
+
+    case zoho = 'Zoho';
+
+    case nationalSzechenyiLibrary = 'National Szechenyi Library';
+
+    case paqle = 'Paqle';
+
+    case detectify = 'Detectify';
 
     /**
      * @throws UnexpectedValueException
@@ -4777,7 +4847,6 @@ enum Company: string implements CompanyInterface
             'laboratoryforwebalgorithmics', 'law.di.unimi.it', 'laboratory for web algorithmics at university of milan', 'laboratory for web algorithmics' => self::laboratoryForWebAlgorithmics,
             'paperli', 'paper.li' => self::paperLi,
             'pipl' => self::pipl,
-            'thebritishlegaldepositlibraries', 'the-british-legal-deposit-libraries', 'the british legal deposit libraries' => self::theBritishLegalDepositLibraries,
             'wesee', 'wesee ltd' => self::wesee,
             'wotbox' => self::wotbox,
             'zetacentauri', 'zeta centauri' => self::zetaCentauri,
@@ -5246,6 +5315,42 @@ enum Company: string implements CompanyInterface
             'sencrom' => self::sencrom,
             'qupi' => self::qupi,
             'nexar' => self::nexar,
+            'hartens' => self::hartens,
+            'valve', 'valve corporation' => self::valve,
+            'bqeel' => self::bqeel,
+            'duotv', 'duo-tv' => self::duoTv,
+            'neko' => self::neko,
+            'astromy', 'astro-my', 'astro malaysia holdings berhad', 'astro (my)' => self::astroMy,
+            'muckrack', 'muck rack, llc', 'muck-rack', 'muck rack' => self::muckRack,
+            'wikimedia', 'the wikimedia foundation, inc.' => self::wikimedia,
+            'thebritishlibrary', 'the-british-library', 'the british library' => self::theBritishLibrary,
+            'vrijeuniversiteitamsterdam', 'vrije-universiteit-amsterdam', 'vrije universiteit amsterdam' => self::vrijeUniversiteitAmsterdam,
+            'marginalia' => self::marginalia,
+            'makemerry', 'make merry llc', 'make-merry', 'make merry' => self::makeMerry,
+            'semalt', 'semalt llc' => self::semalt,
+            'redeken' => self::redeken,
+            'sectigo', 'sectigo limited' => self::sectigo,
+            'jozefstefaninstitute', 'jozef-stefan-institute', 'jožef stefan institute' => self::jozefStefanInstitute,
+            'meecel' => self::meecel,
+            'sim', 'sim limited' => self::sim,
+            'copyrightclearancecenter', 'copyright clearance center, inc.', 'copyright-clearance-center', 'copyright clearance center' => self::copyrightClearanceCenter,
+            'substack', 'substack, inc.' => self::substack,
+            'zengenti', 'zengenti limited' => self::zengenti,
+            'libraryandarchivescanada', 'library-and-archives-canada', 'library and archives canada' => self::libraryAndArchivesCanada,
+            'xmco', 'xmco, sasu' => self::xmco,
+            'spreaker', 'spreaker, inc.' => self::spreaker,
+            'macrolabs', 'macro labs, inc.', 'macro-labs', 'macro labs' => self::macroLabs,
+            'gumgum', 'gumgum, inc.', 'gum-gum' => self::gumGum,
+            'probely', 'probely - soluções de cibersegurança, s.a.' => self::probely,
+            'plesk', 'plesk international gmbh' => self::plesk,
+            'otb', 'open technologies bulgaria, ltd', 'open technologies bulgaria' => self::otb,
+            'eyemonit', 'eyemonit.com' => self::eyemonit,
+            'elasticsearch', 'elasticsearch, b.v.' => self::elasticsearch,
+            'dubbot' => self::dubbot,
+            'zoho', 'zoho corporation pvt. ltd.' => self::zoho,
+            'nationalszechenyilibrary', 'national szechenyi library', 'national-szechenyi-library' => self::nationalSzechenyiLibrary,
+            'paqle', 'paqle a/s' => self::paqle,
+            'detectify', 'detectify ab' => self::detectify,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5915,6 +6020,28 @@ enum Company: string implements CompanyInterface
             self::usercentrics => 'Usercentrics A/S',
             self::weebly => 'Weebly, Inc.',
             self::xinways => 'Shenzhen Goodidea Technology Co.,Ltd.',
+            self::valve => 'Valve Corporation',
+            self::astroMy => 'Astro Malaysia Holdings Berhad',
+            self::muckRack => 'Muck Rack, LLC',
+            self::wikimedia => 'The Wikimedia Foundation, Inc.',
+            self::makeMerry => 'Make Merry LLC',
+            self::semalt => 'Semalt LLC',
+            self::sectigo => 'Sectigo Limited',
+            self::sim => 'SIM Limited',
+            self::copyrightClearanceCenter => 'Copyright Clearance Center, Inc.',
+            self::substack => 'Substack, Inc.',
+            self::zengenti => 'Zengenti Limited',
+            self::xmco => 'XMCO, SASU',
+            self::spreaker => 'Spreaker, Inc.',
+            self::macroLabs => 'Macro Labs, Inc.',
+            self::gumGum => 'GumGum, Inc.',
+            self::probely => 'Probely - Soluções de Cibersegurança, S.A.',
+            self::plesk => 'Plesk International GmbH',
+            self::otb => 'Open Technologies Bulgaria, Ltd',
+            self::elasticsearch => 'Elasticsearch, B.V.',
+            self::zoho => 'Zoho Corporation Pvt. Ltd.',
+            self::paqle => 'Paqle A/S',
+            self::detectify => 'Detectify AB',
             self::unknown => null,
             default => $this->value,
         };
@@ -6349,7 +6476,6 @@ enum Company: string implements CompanyInterface
             self::embedly => 'embed.ly',
             self::laboratoryForWebAlgorithmics => 'law.di.unimi.it',
             self::paperLi => 'paper.li',
-            self::theBritishLegalDepositLibraries => 'the-british-legal-deposit-libraries',
             self::zetaCentauri => 'zeta centauri',
             self::amirKrause => 'amir-krause',
             self::cloudFlare => 'cloud-flare',
@@ -6566,6 +6692,18 @@ enum Company: string implements CompanyInterface
             self::wAndO => 'w-o',
             self::leBest => 'le-best',
             self::infinityPro => 'infinity-pro',
+            self::duoTv => 'duo-tv',
+            self::astroMy => 'astro-my',
+            self::muckRack => 'muck-rack',
+            self::theBritishLibrary => 'the-british-library',
+            self::vrijeUniversiteitAmsterdam => 'vrije-universiteit-amsterdam',
+            self::makeMerry => 'make-merry',
+            self::jozefStefanInstitute => 'jozef-stefan-institute',
+            self::copyrightClearanceCenter => 'copyright-clearance-center',
+            self::libraryAndArchivesCanada => 'library-and-archives-canada',
+            self::macroLabs => 'macro-labs',
+            self::gumGum => 'gum-gum',
+            self::nationalSzechenyiLibrary => 'national-szechenyi-library',
             default => $this->name,
         };
     }

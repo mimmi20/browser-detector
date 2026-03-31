@@ -1305,6 +1305,10 @@ final class Device implements DeviceInterface
             'xiaomi 14t' => 'xiaomi=xiaomi 14t',
             'mi 10t lite 5g' => 'xiaomi=xiaomi mi 10t lite 5g',
             'redmi 2a' => 'xiaomi=xiaomi redmi 2a',
+            '2512bpndag' => 'xiaomi=xiaomi 2512bpndag',
+            '25128pna1g' => 'xiaomi=xiaomi 25128pna1g',
+            '25128pna1c' => 'xiaomi=xiaomi 25128pna1c',
+            '2510epc8bg' => 'xiaomi=xiaomi 2510epc8bg',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1809,7 +1813,6 @@ final class Device implements DeviceInterface
             'sm-j810f' => 'samsung=samsung sm-j810f',
             'gt-i9505' => 'samsung=samsung gt-i9505',
             'sm-a307gn' => 'samsung=samsung sm-a307gn',
-            'sm-n981b' => 'samsung=samsung sm-n981b',
             'sm-a505f' => 'samsung=samsung sm-a505f',
             'sm-j710f' => 'samsung=samsung sm-j710f',
             'sm-j320f' => 'samsung=samsung sm-j320f',
@@ -2626,6 +2629,19 @@ final class Device implements DeviceInterface
             'sm-s942n', 'samsung sm-s942n' => 'samsung=samsung sm-s942n',
             'sm-s9420', 'samsung sm-s9420' => 'samsung=samsung sm-s9420',
             'sm-s942e', 'samsung sm-s942e' => 'samsung=samsung sm-s942e',
+            'sm-n981w', 'samsung sm-n981w' => 'samsung=samsung sm-n981w',
+            'sm-n981u1', 'samsung sm-n981u1' => 'samsung=samsung sm-n981u1',
+            'sm-n981u', 'samsung sm-n981u' => 'samsung=samsung sm-n981u',
+            'sm-n981n', 'samsung sm-n981n' => 'samsung=samsung sm-n981n',
+            'sm-n981b', 'samsung sm-n981b' => 'samsung=samsung sm-n981b',
+            'sm-n9810', 'samsung sm-n9810' => 'samsung=samsung sm-n9810',
+            'sm-s947b', 'samsung sm-s947b' => 'samsung=samsung sm-s947b',
+            'sm-s947u', 'samsung sm-s947u' => 'samsung=samsung sm-s947u',
+            'sm-s947u1', 'samsung sm-s947u1' => 'samsung=samsung sm-s947u1',
+            'sm-s947w', 'samsung sm-s947w' => 'samsung=samsung sm-s947w',
+            'sm-s947n', 'samsung sm-s947n' => 'samsung=samsung sm-s947n',
+            'sm-s9470', 'samsung sm-s9470' => 'samsung=samsung sm-s9470',
+            'sm-s947e', 'samsung sm-s947e' => 'samsung=samsung sm-s947e',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3245,6 +3261,10 @@ final class Device implements DeviceInterface
             'bzi-w20', 'huawei bzi-w20' => 'huawei=huawei bzi-w20',
             'bzi-w00', 'huawei bzi-w00' => 'huawei=huawei bzi-w00',
             'bzi-al00', 'huawei bzi-al00' => 'huawei=huawei bzi-al00',
+            'huawei mate 60' => 'huawei=huawei mate 60',
+            'aln-al10', 'huawei aln-al10' => 'huawei=huawei aln-al10',
+            'aln-al00', 'huawei aln-al00' => 'huawei=huawei aln-al00',
+            'bra-al00', 'huawei bra-al00' => 'huawei=huawei bra-al00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -4432,6 +4452,9 @@ final class Device implements DeviceInterface
             'v2072a' => 'vivo=vivo v2072a',
             'v1950a' => 'vivo=vivo v1950a',
             'vivo x9plus' => 'vivo=vivo x9 plus',
+            'vivo z3x' => 'vivo=vivo z3x',
+            'vivo y85a' => 'vivo=vivo y85a',
+            'vivo 1915' => 'vivo=vivo 1915',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -5612,6 +5635,7 @@ final class Device implements DeviceInterface
             '100071481a' => 'onn=onn 100071481a',
             'onn. 4k streaming box' => 'onn=onn 4k streaming box',
             '100005206' => 'onn=onn 100005206',
+            '100012584' => 'onn=onn 100012584',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
@@ -6113,6 +6137,7 @@ final class Device implements DeviceInterface
             '9132g' => 'tcl=tcl 9132g',
             '5164d' => 'tcl=tcl 5164d',
             '6102d' => 'tcl=tcl 6102d',
+            '50s451' => 'tcl=tcl 50s451',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -6969,6 +6994,7 @@ final class Device implements DeviceInterface
             '65mt-udg54g' => 'rombica=rombica 65mt-udg54g',
             'myphone jet' => 'rombica=rombica myphone jet',
             'rombica tv emotion' => 'rombica=rombica tv emotion',
+            'tv-impact' => 'rombica=rombica tv impact',
             // novis
             'ntv-h3230ts' => 'novis=novis ntv-h3230ts',
             // pritom
@@ -7405,6 +7431,7 @@ final class Device implements DeviceInterface
             // homatics
             'box r 4k plus' => 'homatics=homatics box r 4k plus',
             'box r lite 4k' => 'homatics=homatics box r lite 4k',
+            'dongle g 4k' => 'homatics=homatics dongle g 4k',
             // kgtel
             'nova_10_pro_4g' => 'kgtel=kgtel nova 10 pro 4g',
             // mobvoi
@@ -7628,6 +7655,7 @@ final class Device implements DeviceInterface
             'mrk-bd00' => 'hi-nova=hi-nova mrk-bd00',
             // brondi
             'amico smartphone s+' => 'brondi=brondi amico smartphone s+',
+            'brondi 620 sz' => 'brondi=brondi 620 sz',
             // orbic
             'rc608l2' => 'orbic=orbic rc608l2',
             'rc609l' => 'orbic=orbic rc609l',
@@ -7972,8 +8000,50 @@ final class Device implements DeviceInterface
             // qupi
             'qupi tv start' => 'qupi=qupi tv start',
             // nexar
-            'ntv-u50c614s' => 'nexar=nexar ntv-u50c614s',
-            'ntv-h43c612n' => 'nexar=nexar ntv-h43c612n',
+            'ntv-u50c614s', 'ntv_u50c614s' => 'nexar=nexar ntv-u50c614s',
+            'ntv-h43c612n', 'ntv_h43c612n' => 'nexar=nexar ntv-h43c612n',
+            // hartens
+            'hty-24h06w-vz-m' => 'hartens=hartens hty-24h06w-vz-m',
+            'hty-55uhd11b-s2' => 'hartens=hartens hty-55uhd11b-s2',
+            'hty-50uhdo11mg-hc22' => 'hartens=hartens hty-50uhdo11mg-hc22',
+            'hty-50uhdo11g-hc22' => 'hartens=hartens hty-50uhdo11g-hc22',
+            'hty-43fhd06b-s2' => 'hartens=hartens hty-43fhd06b-s2',
+            'hty-32hdro6b-hc22' => 'hartens=hartens hty-32hdro6b-hc22',
+            'hty-32hdr06g' => 'hartens=hartens hty-32hdr06g',
+            'hty-55uhd05b-s2' => 'hartens=hartens hty-55uhd05b-s2',
+            'hty-43f06b-vz' => 'hartens=hartens hty-43f06b-vz',
+            'hty-50uhd11b-s2' => 'hartens=hartens hty-50uhd11b-s2',
+            'hty-24h06w-vz' => 'hartens=hartens hty-24h06w-vz',
+            'hty-22fhdo6b-hc22' => 'hartens=hartens hty-22fhdo6b-hc22',
+            'hty-43fhd06b-s2-t9' => 'hartens=hartens hty-43fhd06b-s2-t9',
+            'hty-75u06b-vn' => 'hartens=hartens hty-75u06b-vn',
+            'hty-32h06w-vz' => 'hartens=hartens hty-32h06w-vz',
+            'hty-43f06w-vz' => 'hartens=hartens hty-43f06w-vz',
+            'hty-65uhd06b-ha22' => 'hartens=hartens hty-65uhd06b-ha22',
+            'hty-65uhdo6b-hk22' => 'hartens=hartens hty-65uhdo6b-hk22',
+            'hty-24hdro6b-hc22' => 'hartens=hartens hty-24hdro6b-hc22',
+            'hty-24hdro6w-hc22' => 'hartens=hartens hty-24hdro6w-hc22',
+            'hty-32fhd06b-ha22' => 'hartens=hartens hty-32fhd06b-ha22',
+            'hty-32hdr06b-s2-t9' => 'hartens=hartens hty-32hdr06b-s2-t9',
+            'hty-32hdr06g-hk22' => 'hartens=hartens hty-32hdr06g-hk22',
+            'hty-43fhdo6g-hc22' => 'hartens=hartens hty-43fhdo6g-hc22',
+            'hty-22fhdo6w-hc22' => 'hartens=hartens hty-22fhdo6w-hc22',
+            'hty-24hdr06b-s2-t9' => 'hartens=hartens hty-24hdr06b-s2-t9',
+            'hty-75uhd06b-s2' => 'hartens=hartens hty-75uhd06b-s2',
+            'hty-65uhd06b-s2' => 'hartens=hartens hty-65uhd06b-s2',
+            'hty-50uhd05b' => 'hartens=hartens hty-50uhd05b',
+            // bqeel
+            'y8 max s905x3' => 'bqeel=bqeel s905x3',
+            'm9c max' => 'bqeel=bqeel m9c max',
+            // duo-tv
+            'duotv' => 'duo-tv=duo-tv smart tv',
+            // neko
+            'neko_lt-43nx7020s' => 'neko=neko lt-43nx7020s',
+            'neko_wk_lt_32nh8000s' => 'neko=neko lt-32nh8000s',
+            'neko_w_lt_32nh7020s' => 'neko=neko lt-32nh7020s',
+            'neko_lt-50nx7020s' => 'neko=neko lt-50nx7020s',
+            'neko_lt-43nx8000s' => 'neko=neko lt-43nx8000s',
+            'neko_lt-55nx8000s' => 'neko=neko lt-55nx8000s',
             // other
             default => null,
         };

@@ -174,6 +174,7 @@ final class MobileDeviceTest extends TestCase
             ['ZTE-C6100/1.0 SMIT-WAP/1.1.0(GUI)'],
             ['FLY-SL600/BSI AU.Browser/2.0 QO3C1'],
             ['com.huawei.hmos.browser (2in1;OpenHarmony-6.0.2.130;HAD-W24) NetworkSDK/8.0.10.309'],
+            ['Sonos/71.0-37271 (Play:3)'],
         ];
     }
 
@@ -271,6 +272,7 @@ final class MobileDeviceTest extends TestCase
             ['nook browser/1.0'],
             ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform E500AC55C Firebolt/0.8.1'],
             ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform AX061AEI Firebolt/0.8.1,gzip(gfe),gzip(gfe) 1.0.0.0 Xfinity'],
+            ['SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)'],
         ];
     }
 }

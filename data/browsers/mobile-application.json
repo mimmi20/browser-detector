@@ -161,6 +161,18 @@
     },
     "engine": null
   },
+  "whatsapp-business": {
+    "name": "WhatsApp Business",
+    "manufacturer": "meta",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WhatsApp"
+      ]
+    },
+    "engine": null
+  },
   "keeper": {
     "name": "Keeper Password Manager",
     "manufacturer": "keeper",
@@ -1647,7 +1659,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "nyt_android"
+        "nyt_android",
+        "nyt_xwords_ios"
       ]
     },
     "engine": null
@@ -2511,6 +2524,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "stickypassword"
+      ]
+    },
+    "engine": null
+  },
+  "sticky-password-agent": {
+    "name": "Sticky PasswordAgent",
+    "manufacturer": "lamantine-software",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sticky Password Agent"
       ]
     },
     "engine": null

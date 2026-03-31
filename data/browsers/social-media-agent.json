@@ -154,5 +154,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "mastodon-bot": {
+    "name": "Mastodon Bot",
+    "manufacturer": "unknown",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mastodon"
+      ]
+    },
+    "engine": "unknown"
   }
 }

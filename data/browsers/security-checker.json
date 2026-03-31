@@ -302,5 +302,62 @@
       ]
     },
     "engine": "unknown"
+  },
+  "vu-server-health-scanner": {
+    "name": "VU Server Health Scanner",
+    "manufacturer": "vrije-universiteit-amsterdam",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "vu-server-health-scanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "punk-map": {
+    "name": "Punk Map",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "serenety": {
+    "name": "Serenety",
+    "manufacturer": "xmco",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "probely": {
+    "name": "Probely",
+    "manufacturer": "probely",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ProbelySPDR",
+        "Probely"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "detectify": {
+    "name": "Detectify",
+    "manufacturer": "detectify",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Detectify"
+      ]
+    },
+    "engine": "unknown"
   }
 }

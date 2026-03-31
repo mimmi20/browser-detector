@@ -314,5 +314,82 @@
       ]
     },
     "engine": null
+  },
+  "steam-chat-url-lookup": {
+    "name": "Steam Chat URL Lookup",
+    "manufacturer": "valve",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "zotero-translation-server": {
+    "name": "Zotero Translation Server",
+    "manufacturer": "wikimedia",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "sectigo-dcv": {
+    "name": "Sectigo DCV",
+    "manufacturer": "sectigo",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "acme\\.sectigo\\.com\\/v",
+        "acme\\.sectigo\\.com"
+      ]
+    },
+    "engine": null
+  },
+  "php-my-admin": {
+    "name": "phpMyAdmin",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "gum-gum-verity": {
+    "name": "GumGum Verity",
+    "manufacturer": "gum-gum",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Verity"
+      ]
+    },
+    "engine": null
+  },
+  "plesk-screenshot-service": {
+    "name": "Plesk Screenshot Service",
+    "manufacturer": "plesk",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "kiwi-tcms-gitops": {
+    "name": "Kiwi TCMS GitOps",
+    "manufacturer": "otb",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "kiwitcms-gitops"
+      ]
+    },
+    "engine": null
   }
 }

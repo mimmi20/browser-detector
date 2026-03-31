@@ -628,6 +628,9 @@ final readonly class Headers
                         '8.0' => \BrowserDetector\Data\Os::windowsnt62,
                         '7.0' => \BrowserDetector\Data\Os::windowsnt61,
                         '6.0' => \BrowserDetector\Data\Os::windowsnt60,
+                        '5.2' => \BrowserDetector\Data\Os::windowsnt52,
+                        '5.1' => \BrowserDetector\Data\Os::windowsnt51,
+                        '5.0' => \BrowserDetector\Data\Os::windowsnt50,
                         default => \BrowserDetector\Data\Os::windows,
                     };
                 } catch (UnexpectedValueException) {

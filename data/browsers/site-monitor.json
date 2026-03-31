@@ -292,5 +292,100 @@
       ]
     },
     "engine": "unknown"
+  },
+  "cloudflare-smart-transit": {
+    "name": "Cloudflare Smart Transit",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cloudflare-Smart-Transit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "blackbox-exporter": {
+    "name": "Blackbox Exporter",
+    "manufacturer": "linux-foundation",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Blackbox Exporter"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pod-uptime": {
+    "name": "PodUptime",
+    "manufacturer": "spreaker",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodUptime"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "web-mon": {
+    "name": "WebMon",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebMon"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "omtr-bot": {
+    "name": "OmtrBot",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OmtrBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "eye-monit": {
+    "name": "EyeMonit",
+    "manufacturer": "eyemonit",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EyeMonIT_bot_version_",
+        "EyeMonIT"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "site24x7-website-monitoring": {
+    "name": "Site24x7 Website Monitoring",
+    "manufacturer": "zoho",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "dynatrace-synthetic": {
+    "name": "DynatraceSynthetic",
+    "manufacturer": "dynatrace",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DynatraceSynthetic"
+      ]
+    },
+    "engine": null
   }
 }

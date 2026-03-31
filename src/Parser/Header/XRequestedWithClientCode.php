@@ -395,6 +395,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.tencent.mtt' => 'qqbrowser',
             'company.thebrowser.arc' => 'arc-search',
             'com.siber.roboform' => 'roboform',
+            'com.meecel.feedreader.rssdemonad' => 'rss-demon',
             default => null,
         };
     }

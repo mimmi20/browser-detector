@@ -92,6 +92,8 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform E500AC55C Firebolt/0.8.1'],
             ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform AX061AEI Firebolt/0.8.1,gzip(gfe),gzip(gfe) 1.0.0.0 Xfinity'],
             ['Mozilla/5.0 (ARRIS_Foxtel_STB_MX6505NF; Linux armv7l) AppleWebKit/605.1.15 (KHTML, like Gecko) WPE ARRIS_Foxtel_STB_MX6505NF/1.22.4.11  (Foxtel,MX6505NF,wired)'],
+            ['Mozilla/3.0 NAVIO­_AOLTV (11; 13; Philips; PH200; 1; R2.0C36­_AOL.0110OPTIK; R2.0.0139d­_OPTIK)'],
+            ['Mozilla/5.0 (Astro;KSTB6112;2.2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15'],
         ];
     }
 
