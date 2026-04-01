@@ -676,6 +676,7 @@ final class Device implements DeviceInterface
             'oppo a78' => 'oppo=oppo a78',
             'cph2791' => 'oppo=oppo cph2791',
             'plg110' => 'oppo=oppo plg110',
+            'cph2743' => 'oppo=oppo cph2743',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1309,6 +1310,8 @@ final class Device implements DeviceInterface
             '25128pna1g' => 'xiaomi=xiaomi 25128pna1g',
             '25128pna1c' => 'xiaomi=xiaomi 25128pna1c',
             '2510epc8bg' => 'xiaomi=xiaomi 2510epc8bg',
+            '2510era8bg' => 'xiaomi=xiaomi 2510era8bg',
+            '2505drp06e' => 'xiaomi=xiaomi 2505drp06e',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1516,8 +1519,6 @@ final class Device implements DeviceInterface
             'sm-a125w', 'samsung sm-a125w' => 'samsung=samsung sm-a125w',
             'sm-a125a', 'samsung sm-a125a' => 'samsung=samsung sm-a125a',
             'sm-a125v', 'samsung sm-a125v' => 'samsung=samsung sm-a125v',
-            'sm-p619' => 'samsung=samsung sm-p619',
-            'sm-p613' => 'samsung=samsung sm-p613',
             'sm-a136b', 'samsung sm-a136b' => 'samsung=samsung sm-a136b',
             'sm-a136s' => 'samsung=samsung sm-a136s',
             'sm-a136u' => 'samsung=samsung sm-a136u',
@@ -1734,7 +1735,6 @@ final class Device implements DeviceInterface
             'sm-a107f' => 'samsung=samsung sm-a107f',
             'sm-j730f' => 'samsung=samsung sm-j730f',
             'sm-j610fn' => 'samsung=samsung sm-j610fn',
-            'sm-p615' => 'samsung=samsung sm-p615',
             'sm-t819' => 'samsung=samsung sm-t819',
             'sm-m215f' => 'samsung=samsung sm-m215f',
             'gt-i9515' => 'samsung=samsung gt-i9515',
@@ -2642,6 +2642,10 @@ final class Device implements DeviceInterface
             'sm-s947n', 'samsung sm-s947n' => 'samsung=samsung sm-s947n',
             'sm-s9470', 'samsung sm-s9470' => 'samsung=samsung sm-s9470',
             'sm-s947e', 'samsung sm-s947e' => 'samsung=samsung sm-s947e',
+            'sm-p625', 'samsung sm-p625' => 'samsung=samsung sm-p625',
+            'sm-p619', 'samsung sm-p619' => 'samsung=samsung sm-p619',
+            'sm-p615', 'samsung sm-p615' => 'samsung=samsung sm-p615',
+            'sm-p613', 'samsung sm-p613' => 'samsung=samsung sm-p613',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3858,6 +3862,7 @@ final class Device implements DeviceInterface
             'xt2523-11' => 'motorola=motorola xt2523-11',
             'moto e5 plus' => 'motorola=motorola moto e5 plus',
             'xt1924-7' => 'motorola=motorola xt1924-7',
+            'thinkphone by motorola' => 'motorola=motorola thinkphone',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -5853,6 +5858,7 @@ final class Device implements DeviceInterface
             'tmaf035g' => 't-mobile=t-mobile tmaf035g',
             'tmaf025g' => 't-mobile=t-mobile tmaf025g',
             'revvlry' => 't-mobile=t-mobile revvlry',
+            't phone 3' => 't-mobile=t-mobile t phone 3',
             // tecno
             'tecno ci6' => 'tecno=tecno ci6',
             'camon 20 pro' => 'tecno=tecno camon 20 pro',

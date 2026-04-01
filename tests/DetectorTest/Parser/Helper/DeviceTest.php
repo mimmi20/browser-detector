@@ -707,6 +707,7 @@ final class DeviceTest extends TestCase
             ['Oppo A78', 'oppo=oppo a78'],
             ['CPH2791', 'oppo=oppo cph2791'],
             ['PLG110', 'oppo=oppo plg110'],
+            ['CPH2743', 'oppo=oppo cph2743'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -1344,6 +1345,8 @@ final class DeviceTest extends TestCase
             ['25128PNA1G', 'xiaomi=xiaomi 25128pna1g'],
             ['25128PNA1C', 'xiaomi=xiaomi 25128pna1c'],
             ['2510EPC8BG', 'xiaomi=xiaomi 2510epc8bg'],
+            ['2510ERA8BG', 'xiaomi=xiaomi 2510era8bg'],
+            ['2505DRP06E', 'xiaomi=xiaomi 2505drp06e'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3569,6 +3572,14 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-S9470', 'samsung=samsung sm-s9470'],
             ['SM-S947E', 'samsung=samsung sm-s947e'],
             ['SAMSUNG SM-S947E', 'samsung=samsung sm-s947e'],
+            ['SM-P625', 'samsung=samsung sm-p625'],
+            ['SAMSUNG SM-P625', 'samsung=samsung sm-p625'],
+            ['SM-P619', 'samsung=samsung sm-p619'],
+            ['SAMSUNG SM-P619', 'samsung=samsung sm-p619'],
+            ['SM-P615', 'samsung=samsung sm-p615'],
+            ['SAMSUNG SM-P615', 'samsung=samsung sm-p615'],
+            ['SM-P613', 'samsung=samsung sm-p613'],
+            ['SAMSUNG SM-P613', 'samsung=samsung sm-p613'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4865,6 +4876,7 @@ final class DeviceTest extends TestCase
             ['XT2523-11', 'motorola=motorola xt2523-11'],
             ['Moto E5 Plus', 'motorola=motorola moto e5 plus'],
             ['XT1924-7', 'motorola=motorola xt1924-7'],
+            ['ThinkPhone by motorola', 'motorola=motorola thinkphone'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -6908,6 +6920,7 @@ final class DeviceTest extends TestCase
             ['TMAF035G', 't-mobile=t-mobile tmaf035g'],
             ['TMAF025G', 't-mobile=t-mobile tmaf025g'],
             ['REVVLRY', 't-mobile=t-mobile revvlry'],
+            ['T Phone 3', 't-mobile=t-mobile t phone 3'],
             // tecno
             ['TECNO CI6', 'tecno=tecno ci6'],
             ['CAMON 20 Pro', 'tecno=tecno camon 20 pro'],
