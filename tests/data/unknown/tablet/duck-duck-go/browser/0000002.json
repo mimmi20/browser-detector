@@ -2703,5 +2703,54 @@
       "version": "145.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"DuckDuckGo\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "146.0.0",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]

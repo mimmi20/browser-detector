@@ -474,5 +474,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "jetbrains-omea-reader": {
+    "name": "JetBrains Omea Reader",
+    "manufacturer": "jetbrains",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "JetBrains Omea Reader"
+      ]
+    },
+    "engine": "unknown"
   }
 }

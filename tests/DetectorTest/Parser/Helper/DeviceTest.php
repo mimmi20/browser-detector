@@ -6017,6 +6017,7 @@ final class DeviceTest extends TestCase
             ['HTC One0P6B dual sim', 'htc=htc 0p6b dual sim'],
             ['HTC Butterfly S 901s', 'htc=htc s901s'],
             ['HTC_Desire_601_dual_sim', 'htc=htc desire 601 dual sim'],
+            ['One S C2', 'htc=htc c2'],
             // teclast
             ['P30S_EEA', 'teclast=teclast p30s_eea'],
             ['P25T_EEA', 'teclast=teclast p25t_eea'],
@@ -8171,6 +8172,7 @@ final class DeviceTest extends TestCase
             ['BL53_TG06', 'bmobile=bmobile bl53'],
             ['BL52Pro', 'bmobile=bmobile bl52 pro'],
             ['BL63_TG07', 'bmobile=bmobile bl63_tg07'],
+            ['AX352', 'bmobile=bmobile ax352'],
             // mipo
             ['mipo_M25', 'mipo=mipo m25'],
             ['mipo_M46_Pro', 'mipo=mipo m46 pro'],
@@ -9300,6 +9302,8 @@ final class DeviceTest extends TestCase
             ['NEKO_LT-50NX7020S', 'neko=neko lt-50nx7020s'],
             ['NEKO_LT-43NX8000S', 'neko=neko lt-43nx8000s'],
             ['NEKO_LT-55NX8000S', 'neko=neko lt-55nx8000s'],
+            // barnesnoble
+            ['BN NookHD+', 'barnesnoble=barnesnoble nook hd+'],
             // other
             ['Model"', null],
             [': "', null],

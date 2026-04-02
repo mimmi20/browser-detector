@@ -3569,6 +3569,10 @@ enum Company: string implements CompanyInterface
 
     case detectify = 'Detectify';
 
+    case ritlabs = 'Ritlabs';
+
+    case jetbrains = 'JetBrains';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5351,6 +5355,8 @@ enum Company: string implements CompanyInterface
             'nationalszechenyilibrary', 'national szechenyi library', 'national-szechenyi-library' => self::nationalSzechenyiLibrary,
             'paqle', 'paqle a/s' => self::paqle,
             'detectify', 'detectify ab' => self::detectify,
+            'ritlabs', 'ritlabs srl' => self::ritlabs,
+            'jetbrains', 'jetbrains s.r.o.' => self::jetbrains,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6042,6 +6048,8 @@ enum Company: string implements CompanyInterface
             self::zoho => 'Zoho Corporation Pvt. Ltd.',
             self::paqle => 'Paqle A/S',
             self::detectify => 'Detectify AB',
+            self::ritlabs => 'Ritlabs SRL',
+            self::jetbrains => 'JetBrains s.r.o.',
             self::unknown => null,
             default => $this->value,
         };

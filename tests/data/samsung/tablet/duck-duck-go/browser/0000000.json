@@ -380,5 +380,61 @@
       "version": "145.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-X200\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"DuckDuckGo\";v=\"146\"",
+      "sec-ch-ua-full-version": "\"146.0.7680.164\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-X200",
+      "marketingName": "Galaxy Tab A8 10.5\" Wi-Fi (2021)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "146.0.0",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]

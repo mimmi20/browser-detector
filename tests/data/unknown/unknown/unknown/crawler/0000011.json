@@ -1492,5 +1492,50 @@
       "version": "145.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Scrapy/2.14.2 (+https://scrapy.org)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Scrapy",
+      "modus": null,
+      "version": "2.14.2",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

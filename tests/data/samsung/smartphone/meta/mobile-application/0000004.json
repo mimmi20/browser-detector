@@ -321,5 +321,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Instagram 422.0.0.44.64 Android (36/16; 450dpi; 1080x2340; samsung; SM-S711B; r11s; s5e9925; de_DE; 916493374)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S711B",
+      "marketingName": "Galaxy S23 FE",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "422.0.0.44.64",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

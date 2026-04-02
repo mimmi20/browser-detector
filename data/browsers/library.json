@@ -909,5 +909,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "gvfs": {
+    "name": "gvfs",
+    "manufacturer": "the-gnome-project",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gvfs"
+      ]
+    },
+    "engine": "unknown"
   }
 }

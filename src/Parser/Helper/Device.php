@@ -4978,6 +4978,7 @@ final class Device implements DeviceInterface
             'htc one0p6b dual sim' => 'htc=htc 0p6b dual sim',
             'htc butterfly s 901s' => 'htc=htc s901s',
             'htc_desire_601_dual_sim' => 'htc=htc desire 601 dual sim',
+            'one s c2' => 'htc=htc c2',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea', 'p25_t_eea' => 'teclast=teclast p25t_eea',
@@ -6933,6 +6934,7 @@ final class Device implements DeviceInterface
             'bl53_tg06' => 'bmobile=bmobile bl53',
             'bl52pro' => 'bmobile=bmobile bl52 pro',
             'bl63_tg07' => 'bmobile=bmobile bl63_tg07',
+            'ax352' => 'bmobile=bmobile ax352',
             // mipo
             'mipo_m25' => 'mipo=mipo m25',
             'mipo_m46_pro' => 'mipo=mipo m46 pro',
@@ -8050,6 +8052,8 @@ final class Device implements DeviceInterface
             'neko_lt-50nx7020s' => 'neko=neko lt-50nx7020s',
             'neko_lt-43nx8000s' => 'neko=neko lt-43nx8000s',
             'neko_lt-55nx8000s' => 'neko=neko lt-55nx8000s',
+            // barnesnoble
+            'bn nookhd+' => 'barnesnoble=barnesnoble nook hd+',
             // other
             default => null,
         };

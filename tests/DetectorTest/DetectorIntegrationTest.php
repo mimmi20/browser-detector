@@ -7958,6 +7958,52 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                ['user-agent' => 'Mozilla/5.0 (iPad; CPU iPad OS 7_1_2 like Mac OS X) AppleWebKit/534.1 (KHTML, like Gecko) FxiOS/10.4t7803.0 Mobile/82Z987 Safari/534.1'],
+                [
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (iPad; CPU iPad OS 7_1_2 like Mac OS X) AppleWebKit/534.1 (KHTML, like Gecko) FxiOS/10.4t7803.0 Mobile/82Z987 Safari/534.1'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'iPad',
+                        'marketingName' => 'iPad',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => true,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => 1024,
+                            'height' => 768,
+                            'touch' => true,
+                            'size' => 9.7,
+                        ],
+                        'type' => 'tablet',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'iOS',
+                        'marketingName' => 'iOS',
+                        'version' => '7.1.2',
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Firefox Mobile for iOS',
+                        'modus' => null,
+                        'version' => '10.4.0',
+                        'manufacturer' => 'Mozilla',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => '534.1.0',
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
         ];
     }
 }

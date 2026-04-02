@@ -52,5 +52,61 @@
       "version": "132.0.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "Surface Pro",
+      "sec-ch-ua-platform": "macOS",
+      "sec-ch-ua-platform-version": "10.15.0",
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua-full-version-list": "\"Chrome\";v=\"143.0.0.0\"",
+      "sec-ch-ua": "\"Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\"",
+      "sec-ch-ua-full-version": "\"143.0.0.0\"",
+      "sec-ch-ua-bitness": "64",
+      "sec-ch-ua-arch": "x64",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": "x64",
+      "deviceName": "Surface Pro",
+      "marketingName": "Surface Pro",
+      "manufacturer": "Microsoft",
+      "brand": "Microsoft",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 10.6
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.15.0",
+      "manufacturer": "Apple",
+      "bits": 64
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "143.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]

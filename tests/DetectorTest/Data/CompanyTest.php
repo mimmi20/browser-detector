@@ -10696,6 +10696,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Detectify',
                 'key' => 'detectify',
             ],
+            [
+                'type' => 'Ritlabs',
+                'name' => 'Ritlabs SRL',
+                'brandname' => 'Ritlabs',
+                'key' => 'ritlabs',
+            ],
+            [
+                'type' => 'JetBrains',
+                'name' => 'JetBrains s.r.o.',
+                'brandname' => 'JetBrains',
+                'key' => 'jetbrains',
+            ],
         ];
     }
 

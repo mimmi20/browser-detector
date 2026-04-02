@@ -2062,5 +2062,60 @@
       "version": "145.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-S921B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Microsoft Edge\";v=\"146\"",
+      "sec-ch-ua-full-version": "\"146.0.3856.71\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 EdgA/146.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S921B",
+      "marketingName": "Galaxy S24",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge",
+      "modus": null,
+      "version": "146.0.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]

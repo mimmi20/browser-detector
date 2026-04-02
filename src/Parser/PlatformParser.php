@@ -93,7 +93,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/(?<!on microsoft )windows|win ?(?:10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32|16|64)|barca|the bat!|cygwin_(?:nt|9[58]|me)|[\-\( ]mingw32|winhttp|ms-office|microsoft-webdav-miniredir/i' => Os::windows,
             '/commoncrawler|msie or firefox mutant|not on windows server/i' => Os::unknown,
             '/symbian\/3/i' => Os::symbianOs,
-            '/series ?60|s60v[35]|s60; ?symbos/i' => Os::series60,
+            '/series ?60|s60v[35]|s60; ?symbos|symbian; s60/i' => Os::series60,
             '/series ?40/i' => Os::series40,
             '/symb(?:ian|os)|series ?30|nokia7230/i' => Os::symbianOs,
             '/netbsd/i' => Os::netbsd,

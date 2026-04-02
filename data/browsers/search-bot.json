@@ -1283,5 +1283,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "zumbot": {
+    "name": "ZumBot",
+    "manufacturer": "zum-internet-corp",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ZumBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
