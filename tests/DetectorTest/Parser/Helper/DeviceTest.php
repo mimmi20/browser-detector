@@ -1375,6 +1375,7 @@ final class DeviceTest extends TestCase
             ['ZTE Blade A7 2020', 'zte=zte blade a7 2020'],
             ['ZTE A2020G Pro', 'zte=zte a2020g pro'],
             ['ZTE A2019G Pro', 'zte=zte a2019g pro'],
+            ['A2019G Pro', 'zte=zte a2019g pro'],
             ['ZTE 9030', 'zte=zte 9030'],
             ['ZTE Blade A31', 'zte=zte blade a31'],
             ['ZTE Blade A31 Lite', 'zte=zte blade a31 lite'],
@@ -4877,6 +4878,8 @@ final class DeviceTest extends TestCase
             ['Moto E5 Plus', 'motorola=motorola moto e5 plus'],
             ['XT1924-7', 'motorola=motorola xt1924-7'],
             ['ThinkPhone by motorola', 'motorola=motorola thinkphone'],
+            ['ThinkPhone 25 by motorola', 'motorola=motorola thinkphone 25'],
+            ['XT2409-6', 'motorola=motorola xt2409-6'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -7470,6 +7473,11 @@ final class DeviceTest extends TestCase
             ['STV-32FDFBK1R', 'tuvio=tuvio stv-32fdfbk1r'],
             ['STV-43FDUBK1R', 'tuvio=tuvio stv-43fdubk1r'],
             ['TD43FFBSV1', 'tuvio=tuvio td43ffbsv1'],
+            ['TD24HFBHV1', 'tuvio=tuvio td24hfbhv1'],
+            ['TD32HFBHV1', 'tuvio=tuvio td32hfbhv1'],
+            ['TD43UFBSV1', 'tuvio=tuvio td43ufbsv1'],
+            ['TDTV65BS06U', 'tuvio=tuvio tdtv65bs06u'],
+            ['TQ65UFBHV1', 'tuvio=tuvio tq65ufbhv1'],
             // kinstone
             ['KST103SD-L', 'kinstone=kinstone kst103sd-l'],
             // galaxy-innovations
@@ -7854,6 +7862,13 @@ final class DeviceTest extends TestCase
             ['Optima 8403D 4G TS8287PL', 'digma=digma ts8287pl'],
             ['Optima 8404D 4G TS8288PL', 'digma=digma ts8288pl'],
             ['Wave TAXX5P0X', 'digma=digma taxx5p0x'],
+            ['DM-LED55UBB33', 'digma=digma dm-led55ubb33'],
+            ['DM-LED32SBB33', 'digma=digma dm-led32sbb33'],
+            ['DM-LED40SBB33', 'digma=digma dm-led40sbb33'],
+            ['DM-LED43SBB33', 'digma=digma dm-led43sbb33'],
+            ['DM-LED43UBB33', 'digma=digma dm-led43ubb33'],
+            ['DM-LED50UBB33', 'digma=digma dm-led50ubb33'],
+            ['DM-LED65UBB33', 'digma=digma dm-led65ubb33'],
             // xgody
             ['N02', 'xgody=xgody n02'],
             ['N01Pro', 'xgody=xgody n01 pro'],
@@ -8025,6 +8040,7 @@ final class DeviceTest extends TestCase
             ['Origin_679_Pro', 'thomson=thomson origin 679 pro'],
             ['TEOX10-MT8SL128LTE', 'thomson=thomson teox10'],
             ['Origin_679', 'thomson=thomson origin 679'],
+            ['T43FSM5160', 'thomson=thomson t43fsm5160'],
             // hi-grace
             ['OC101', 'hi-grace=hi-grace oc101'],
             // green-lion
@@ -8241,6 +8257,7 @@ final class DeviceTest extends TestCase
             ['myPhone Jet', 'rombica=rombica myphone jet'],
             ['Rombica TV Emotion', 'rombica=rombica tv emotion'],
             ['TV-Impact', 'rombica=rombica tv impact'],
+            ['55XT-UD2G64N', 'rombica=rombica 55xt-ud2g64n'],
             // novis
             ['NTV-H3230TS', 'novis=novis ntv-h3230ts'],
             // pritom
@@ -8293,6 +8310,8 @@ final class DeviceTest extends TestCase
             ['24LF8010T', 'asano=asano 24lf8010t'],
             ['24LH7010T', 'asano=asano 24lh7010t'],
             ['24LH8011T', 'asano=asano 24lh8011t'],
+            ['40LF8130S', 'asano=asano 40lf8130s'],
+            ['43LF7202T', 'asano=asano 43lf7202t'],
             // hi
             ['HX-24H01FB', 'hi=hi hx-24h01fb'],
             ['HX-32F01FB', 'hi=hi hx-32f01fb'],
@@ -8311,6 +8330,7 @@ final class DeviceTest extends TestCase
             ['SL-LED43S94T2S', 'scoole=scoole sl-led43s94t2s'],
             ['SL-LED24S90T2S', 'scoole=scoole sl-led24s90t2s'],
             ['SL-LED55S02T2SU', 'scoole=scoole sl-led55s02t2su'],
+            ['SL-LED58S01T2SU', 'scoole=scoole sl-led58s01t2su'],
             // soundmax
             ['SM-QLED50T21SU', 'soundmax=soundmax sm-qled50t21su'],
             ['SM-LED32M07S', 'soundmax=soundmax sm-led32m07s'],
@@ -8515,6 +8535,8 @@ final class DeviceTest extends TestCase
             ['55ULES901T2SM', 'erisson=erisson 55ules901t2sm'],
             ['55ULX9005T2', 'erisson=erisson 55ulx9005t2'],
             ['65ULES910T2SM', 'erisson=erisson 65ules910t2sm'],
+            ['43FLES900T2SM', 'erisson=erisson 43fles900t2sm'],
+            ['43FLES905T2SM', 'erisson=erisson 43fles905t2sm'],
             // vision-technology
             ['XS100MINI', 'vision-technology=vision-technology xs100 mini'],
             // vertu
@@ -9201,12 +9223,14 @@ final class DeviceTest extends TestCase
             // razz
             ['H43QSY24F', 'razz=razz h43qsy24f'],
             ['K55USY23', 'razz=razz k55usy23'],
+            ['C50USY24F', 'razz=razz c50usy24f'],
             // ktc
             ['800P11B', 'ktc=ktc 800p11b'],
             ['55UE-BYVB', 'ktc=ktc 55ue-byvb'],
             // vityaz
             ['55LU1222', 'vityaz=vityaz 55lu1222'],
             ['50LU1222', 'vityaz=vityaz 50lu1222'],
+            ['32LH1221', 'vityaz=vityaz 32lh1221'],
             // horizont
             ['55LE7053D', 'horizont=horizont 55le7053d'],
             ['24LE7011D', 'horizont=horizont 24le7011d'],
@@ -9216,6 +9240,8 @@ final class DeviceTest extends TestCase
             ['43U570T', 'leff=leff 43u570t'],
             ['24F560T', 'leff=leff 24f560t'],
             ['24H550T', 'leff=leff 24h550t'],
+            ['28H541T', 'leff=leff 28h541t'],
+            ['43F541T', 'leff=leff 43f541t'],
             // romsat
             ['32HSQ1220T2', 'romsat=romsat 32hsq1220t2'],
             // bbk
@@ -9304,6 +9330,17 @@ final class DeviceTest extends TestCase
             ['NEKO_LT-55NX8000S', 'neko=neko lt-55nx8000s'],
             // barnesnoble
             ['BN NookHD+', 'barnesnoble=barnesnoble nook hd+'],
+            // hiremco
+            ['HIREMCO Matrix', 'hiremco=hiremco matrix'],
+            // ecostar
+            ['EcostarTV', 'ecostar=ecostar smart tv'],
+            // caixun
+            ['CAIXUN AndroidTV', 'caixun=caixun smart tv'],
+            // beelink
+            ['GT1-Mini-AT_ATV', 'beelink=beelink gt1 mini'],
+            ['GTKing_AT_ATV', 'beelink=beelink gt king'],
+            // mag
+            ['CRD65-UHD11', 'mag=mag crd65-uhd11'],
             // other
             ['Model"', null],
             [': "', null],

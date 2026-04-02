@@ -3573,6 +3573,14 @@ enum Company: string implements CompanyInterface
 
     case jetbrains = 'JetBrains';
 
+    case hiremco = 'Hiremco';
+
+    case ecostar = 'EcoStar';
+
+    case caixun = 'Caixun';
+
+    case mag = 'MAG';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5357,6 +5365,10 @@ enum Company: string implements CompanyInterface
             'detectify', 'detectify ab' => self::detectify,
             'ritlabs', 'ritlabs srl' => self::ritlabs,
             'jetbrains', 'jetbrains s.r.o.' => self::jetbrains,
+            'hiremco' => self::hiremco,
+            'ecostar' => self::ecostar,
+            'caixun' => self::caixun,
+            'mag' => self::mag,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

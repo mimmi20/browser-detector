@@ -8004,6 +8004,112 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua-platform' => 'Linux',
+                    'sec-ch-ua' => '"Not(A:Brand";v="99", "Google Chrome";v="78", "Chromium";v="78"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'user-agent' => 'Mozilla/5.0 (Linux; U; Android 11; zh-CN; PCAM00 Build/RKQ1.201217.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.4.9.201 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => 'Linux',
+                        'sec-ch-ua' => '"Not(A:Brand";v="99", "Google Chrome";v="78", "Chromium";v="78"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Mozilla/5.0 (Linux; U; Android 11; zh-CN; PCAM00 Build/RKQ1.201217.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.4.9.201 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'PCAM00',
+                        'marketingName' => 'Reno',
+                        'manufacturer' => 'BBK',
+                        'brand' => 'OPPO',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2340,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.4,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '11.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Quark',
+                        'modus' => null,
+                        'version' => '5.4.9.201',
+                        'manufacturer' => 'Quark',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '78.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'user-agent' => 'SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)',
+                ],
+                [
+                    'headers' => [
+                        'user-agent' => 'SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'MacBook Pro',
+                        'marketingName' => 'MacBook Pro',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'laptop',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'macOS',
+                        'marketingName' => 'macOS',
+                        'version' => '13.3.1',
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => null,
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'type' => 'unknown',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                    ],
+                ],
+            ],
         ];
     }
 }

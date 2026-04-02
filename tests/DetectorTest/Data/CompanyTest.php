@@ -10708,6 +10708,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'JetBrains',
                 'key' => 'jetbrains',
             ],
+            [
+                'type' => 'Hiremco',
+                'name' => 'Hiremco',
+                'brandname' => 'Hiremco',
+                'key' => 'hiremco',
+            ],
+            [
+                'type' => 'EcoStar',
+                'name' => 'EcoStar',
+                'brandname' => 'EcoStar',
+                'key' => 'ecostar',
+            ],
+            [
+                'type' => 'Caixun',
+                'name' => 'Caixun',
+                'brandname' => 'Caixun',
+                'key' => 'caixun',
+            ],
+            [
+                'type' => 'MAG',
+                'name' => 'MAG',
+                'brandname' => 'MAG',
+                'key' => 'mag',
+            ],
         ];
     }
 

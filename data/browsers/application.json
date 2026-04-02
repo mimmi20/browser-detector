@@ -1568,6 +1568,18 @@
     },
     "engine": "unknown"
   },
+  "iptv": {
+    "name": "IPTV",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IPTV"
+      ]
+    },
+    "engine": "unknown"
+  },
   "microsoft-webdav": {
     "name": "Microsoft-WebDAV",
     "manufacturer": "microsoft",
