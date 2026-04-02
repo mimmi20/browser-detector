@@ -8061,13 +8061,9 @@ final class DetectorIntegrationTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)'],
                 [
-                    'user-agent' => 'SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)',
-                    ],
+                    'headers' => ['user-agent' => 'SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'MacBook Pro',
