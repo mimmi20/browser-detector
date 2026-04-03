@@ -19,7 +19,7 @@ jobs:
     uses: "mimmi20/ci/.github/workflows/cleanup-cache.yml@8.4"
     with:
       repository: ${{ github.repository }}
-      ref: ${{ github.ref }}
+      ref: ${{ github.event_name == 'pull_request' && format('refs/pull/{0}/merge', github.event.pull_request.number) || github.ref }}
 
   # This is a meta job to avoid to have to constantly change the protection rules
   # whenever we touch the matrix.
