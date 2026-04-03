@@ -882,5 +882,17 @@
       ]
     },
     "engine": null
+  },
+  "youview-html": {
+    "name": "YouView",
+    "manufacturer": "youview",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YouViewHTML"
+      ]
+    },
+    "engine": null
   }
 }

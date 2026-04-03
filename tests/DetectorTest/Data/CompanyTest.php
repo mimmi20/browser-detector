@@ -10732,6 +10732,96 @@ final class CompanyTest extends TestCase
                 'brandname' => 'MAG',
                 'key' => 'mag',
             ],
+            [
+                'type' => 'Doly Horjun',
+                'name' => 'Doly Horjun HJ',
+                'brandname' => 'Doly Horjun',
+                'key' => 'doly-horjun',
+            ],
+            [
+                'type' => 'WPBeginner',
+                'name' => 'WPBeginner, LLC',
+                'brandname' => 'WPBeginner',
+                'key' => 'wp-beginner',
+            ],
+            [
+                'type' => 'proinity',
+                'name' => 'proinity LLC',
+                'brandname' => 'proinity',
+                'key' => 'proinity',
+            ],
+            [
+                'type' => 'BOTIFY',
+                'name' => 'BOTIFY SAS',
+                'brandname' => 'BOTIFY',
+                'key' => 'botify',
+            ],
+            [
+                'type' => 'Sirdata',
+                'name' => 'Sirdata SAS',
+                'brandname' => 'Sirdata',
+                'key' => 'sirdata',
+            ],
+            [
+                'type' => 'Shareaholic',
+                'name' => 'Shareaholic, Inc.',
+                'brandname' => 'Shareaholic',
+                'key' => 'shareaholic',
+            ],
+            [
+                'type' => 'YouView TV',
+                'name' => 'YouView TV Ltd',
+                'brandname' => 'YouView TV',
+                'key' => 'youview',
+            ],
+            [
+                'type' => 'WDES',
+                'name' => 'WDES SAS',
+                'brandname' => 'WDES',
+                'key' => 'wdes',
+            ],
+            [
+                'type' => 'VK',
+                'name' => 'VK',
+                'brandname' => 'VK',
+                'key' => 'vk',
+            ],
+            [
+                'type' => 'Trent Wiles',
+                'name' => 'Trent Wiles',
+                'brandname' => 'Trent Wiles',
+                'key' => 'trent-wiles',
+            ],
+            [
+                'type' => 'Modesco',
+                'name' => 'Modesco',
+                'brandname' => 'Modesco',
+                'key' => 'modesco',
+            ],
+            [
+                'type' => 'Kontur',
+                'name' => 'Kontur',
+                'brandname' => 'Kontur',
+                'key' => 'kontur',
+            ],
+            [
+                'type' => 'DAWAP',
+                'name' => 'DAWAP SARL',
+                'brandname' => 'DAWAP',
+                'key' => 'dawap',
+            ],
+            [
+                'type' => 'Tactikast',
+                'name' => 'Tactikast',
+                'brandname' => 'Tactikast',
+                'key' => 'tactikast',
+            ],
+            [
+                'type' => 'Cyble',
+                'name' => 'Cyble Inc.',
+                'brandname' => 'Cyble',
+                'key' => 'cyble',
+            ],
         ];
     }
 

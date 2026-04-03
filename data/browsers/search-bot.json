@@ -1295,5 +1295,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yandex-market": {
+    "name": "YandexMarket",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexMarket"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-render-resources-bot": {
+    "name": "YandexRenderResourcesBot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexRenderResourcesBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

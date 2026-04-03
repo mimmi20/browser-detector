@@ -3581,6 +3581,36 @@ enum Company: string implements CompanyInterface
 
     case mag = 'MAG';
 
+    case dolyHorjun = 'Doly Horjun';
+
+    case wpBeginner = 'WPBeginner';
+
+    case proinity = 'proinity';
+
+    case botify = 'BOTIFY';
+
+    case sirdata = 'Sirdata';
+
+    case shareaholic = 'Shareaholic';
+
+    case youview = 'YouView TV';
+
+    case wdes = 'WDES';
+
+    case vk = 'VK';
+
+    case trentWiles = 'Trent Wiles';
+
+    case modesco = 'Modesco';
+
+    case kontur = 'Kontur';
+
+    case dawap = 'DAWAP';
+
+    case tactikast = 'Tactikast';
+
+    case cyble = 'Cyble';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5369,6 +5399,21 @@ enum Company: string implements CompanyInterface
             'ecostar' => self::ecostar,
             'caixun' => self::caixun,
             'mag' => self::mag,
+            'dolyhorjun', 'doly horjun hj', 'doly-horjun', 'doly horjun' => self::dolyHorjun,
+            'wpbeginner', 'wpbeginner, llc', 'wp-beginner' => self::wpBeginner,
+            'proinity', 'proinity llc' => self::proinity,
+            'botify', 'botify sas' => self::botify,
+            'sirdata', 'sirdata sas' => self::sirdata,
+            'shareaholic', 'shareaholic, inc.' => self::shareaholic,
+            'youview', 'youview tv ltd', 'youview tv' => self::youview,
+            'wdes', 'wdes sas' => self::wdes,
+            'vk' => self::vk,
+            'trentwiles', 'trent-wiles', 'trent wiles' => self::trentWiles,
+            'modesco' => self::modesco,
+            'kontur' => self::kontur,
+            'dawap', 'dawap sarl' => self::dawap,
+            'tactikast' => self::tactikast,
+            'cyble', 'cyble inc.' => self::cyble,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6062,6 +6107,16 @@ enum Company: string implements CompanyInterface
             self::detectify => 'Detectify AB',
             self::ritlabs => 'Ritlabs SRL',
             self::jetbrains => 'JetBrains s.r.o.',
+            self::dolyHorjun => 'Doly Horjun HJ',
+            self::wpBeginner => 'WPBeginner, LLC',
+            self::proinity => 'proinity LLC',
+            self::botify => 'BOTIFY SAS',
+            self::sirdata => 'Sirdata SAS',
+            self::shareaholic => 'Shareaholic, Inc.',
+            self::youview => 'YouView TV Ltd',
+            self::wdes => 'WDES SAS',
+            self::dawap => 'DAWAP SARL',
+            self::cyble => 'Cyble Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6724,6 +6779,9 @@ enum Company: string implements CompanyInterface
             self::macroLabs => 'macro-labs',
             self::gumGum => 'gum-gum',
             self::nationalSzechenyiLibrary => 'national-szechenyi-library',
+            self::dolyHorjun => 'doly-horjun',
+            self::wpBeginner => 'wp-beginner',
+            self::trentWiles => 'trent-wiles',
             default => $this->name,
         };
     }
