@@ -37,10 +37,10 @@ jobs:
       - "build"
 
     steps:
-      - name: Successful run
-        if: ${{ !(contains(needs.*.result, 'failure')) }}
-        run: exit 0
-
       - name: Failing run
-        if: ${{ contains(needs.*.result, 'failure') }}
+        if: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'skipped') || contains(needs.*.result, 'cancelled') }}
         run: exit 1
+
+      - name: Successful run
+        if: ${{ !(contains(needs.*.result, 'failure')) && !(contains(needs.*.result, 'skipped')) && !(contains(needs.*.result, 'cancelled')) }}
+        run: exit 0
