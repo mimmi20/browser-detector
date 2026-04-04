@@ -3121,19 +3121,6 @@
     },
     "engine": "unknown"
   },
-  "omgili-bot": {
-    "name": "Omgili Bot",
-    "manufacturer": "webz.io",
-    "type": "crawler",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "omgilibot",
-        "omgili"
-      ]
-    },
-    "engine": "unknown"
-  },
   "ai2bot-dolma": {
     "name": "Ai2Bot-Dolma",
     "manufacturer": "allen-institute",
@@ -4515,5 +4502,193 @@
       ]
     },
     "engine": null
+  },
+  "abonti websearch": {
+    "name": "Abonti WebSearch",
+    "manufacturer": "abonti",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Abonti"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "automattic-analytics-crawler": {
+    "name": "Automattic Analytics Crawler",
+    "manufacturer": "automattic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Automattic Analytics Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "genieo": {
+    "name": "Genieo Web Filter",
+    "manufacturer": "genieo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Genieo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "danbot": {
+    "name": "DanBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "travelbot": {
+    "name": "travelbot",
+    "manufacturer": "syzygy-marketing",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "slack-img-proxy": {
+    "name": "Slack Imgage Proxy",
+    "manufacturer": "slack",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Slack-ImgProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "digg bot": {
+    "name": "Digg Bot",
+    "manufacturer": "news.me",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Digg"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dns-digger-explorer": {
+    "name": "DNS Digger Explorer",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DNS-Digger-Explorer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heureka-bot": {
+    "name": "Heurekabot",
+    "manufacturer": "heureka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heurekabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heureka-bot-image-fulltext": {
+    "name": "Heurekabot-ImageFullText",
+    "manufacturer": "heureka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heurekabot-ImageFullText"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heureka-bot-image": {
+    "name": "Heurekabot-Image",
+    "manufacturer": "heureka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heurekabot-Image"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heureka-bot-feed": {
+    "name": "Heureka Feed",
+    "manufacturer": "heureka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heurekabot-Feed"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cocolyze-bot": {
+    "name": "Cocolyzebot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cocolyzebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bubing bot": {
+    "name": "BUbiNG Bot",
+    "manufacturer": "law.di.unimi.it",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BUbiNG"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webdata-stats": {
+    "name": "WebDataStats",
+    "manufacturer": "webtehrazrabotka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebDataStats"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domcopbot": {
+    "name": "DomCop Bot",
+    "manufacturer": "domcop",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomCopBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

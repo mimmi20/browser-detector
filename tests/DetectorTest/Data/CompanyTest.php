@@ -1025,10 +1025,10 @@ final class CompanyTest extends TestCase
                 'key' => 'yahoo',
             ],
             [
-                'type' => 'WordPress',
-                'name' => 'wordpress.org',
-                'brandname' => 'WordPress',
-                'key' => 'wordpress',
+                'type' => 'Automattic',
+                'name' => 'Automattic',
+                'brandname' => 'Automattic',
+                'key' => 'automattic',
             ],
             [
                 'type' => 'Zoom',
@@ -10822,6 +10822,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Cyble',
                 'key' => 'cyble',
             ],
+            [
+                'type' => 'Syzygy Marketing',
+                'name' => 'Syzygy Marketing, LLC',
+                'brandname' => 'Syzygy Marketing',
+                'key' => 'syzygy-marketing',
+            ],
+            [
+                'type' => 'Heureka',
+                'name' => 'Heureka Group a.s.',
+                'brandname' => 'Heureka',
+                'key' => 'heureka',
+            ],
+            [
+                'type' => 'Sarosys',
+                'name' => 'Sarosys LLC',
+                'brandname' => 'Sarosys',
+                'key' => 'sarosys',
+            ],
+            [
+                'type' => 'WebTehRazrabotka',
+                'name' => 'WebTehRazrabotka LLC',
+                'brandname' => 'WebTehRazrabotka',
+                'key' => 'webtehrazrabotka',
+            ],
         ];
     }
 
@@ -11214,12 +11238,6 @@ final class CompanyTest extends TestCase
                 'name' => 'Yahoo! Inc.',
                 'brandname' => 'Yahoo',
                 'key' => 'yahoo',
-            ],
-            [
-                'fallback' => 'wordpress.org',
-                'name' => 'wordpress.org',
-                'brandname' => 'WordPress',
-                'key' => 'wordpress',
             ],
             [
                 'fallback' => 'Zoom Communications Inc.',

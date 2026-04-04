@@ -145,7 +145,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/(?<!o)andr[0o]id|silk|juc ?\(linux;|adr |gingerbread|ucweb\/2\.0 \(linux;|vre;|beyondpod|htc_sensation_z710e|puffin\/[\d\.]+a[tp]|okhttp/i' => Os::android,
             '/watchos|apple watch/i' => Os::watchos,
             '/mobilesafari\/.*cfnetwork|(?<!like |t)iphone|cpu i?os|like mac os x|(?<![a-z])ios[;\/\.\-]|\(ios\)|\\/ios /i' => Os::ios,
-            '/mac os x|os\=mac 10|mac ?os\/|(;|for) os x [0-9]+/i' => Os::macosx,
+            '/mac os ?x|os\=mac 10|mac ?os\/|(;|for) os x [0-9]+/i' => Os::macosx,
             '/morphos/i' => Os::morphos,
             '/mac_powerpc|ppc|68k/i' => Os::macintosh,
             '/safari\/.*cfnetwork|power macintosh|nook browser|macbookpro/i' => Os::macosx,

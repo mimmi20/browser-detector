@@ -341,7 +341,7 @@ enum Company: string implements CompanyInterface
 
     case yahoo = 'Yahoo';
 
-    case wordpress = 'WordPress';
+    case automattic = 'Automattic';
 
     case zoom = 'Zoom';
 
@@ -3611,6 +3611,14 @@ enum Company: string implements CompanyInterface
 
     case cyble = 'Cyble';
 
+    case syzygyMarketing = 'Syzygy Marketing';
+
+    case heureka = 'Heureka';
+
+    case sarosys = 'Sarosys';
+
+    case webTehRazrabotka = 'WebTehRazrabotka';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3779,7 +3787,7 @@ enum Company: string implements CompanyInterface
             'xiaomi', 'xiaomi tech' => self::xiaomi,
             'yandex', 'yandex llc' => self::yandex,
             'yahoo', 'yahoo! inc.' => self::yahoo,
-            'wordpress', 'wordpress.org' => self::wordpress,
+            'automattic' => self::automattic,
             'zoom', 'zoom communications inc.' => self::zoom,
             'qwant', 'qwant sas' => self::qwant,
             'qiuwoky' => self::qiuwoky,
@@ -5414,6 +5422,10 @@ enum Company: string implements CompanyInterface
             'dawap', 'dawap sarl' => self::dawap,
             'tactikast' => self::tactikast,
             'cyble', 'cyble inc.' => self::cyble,
+            'syzygymarketing', 'syzygy marketing, llc', 'syzygy-marketing', 'syzygy marketing' => self::syzygyMarketing,
+            'heureka', 'heureka group a.s.' => self::heureka,
+            'sarosys', 'sarosys llc' => self::sarosys,
+            'webtehrazrabotka', 'webtehrazrabotka llc' => self::webTehRazrabotka,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5468,7 +5480,6 @@ enum Company: string implements CompanyInterface
             self::xiaomi => 'Xiaomi Tech',
             self::yandex => 'Yandex LLC',
             self::yahoo => 'Yahoo! Inc.',
-            self::wordpress => 'wordpress.org',
             self::zoom => 'Zoom Communications Inc.',
             self::qwant => 'QWANT SAS',
             self::v7 => 'V7 Devices',
@@ -6117,6 +6128,10 @@ enum Company: string implements CompanyInterface
             self::wdes => 'WDES SAS',
             self::dawap => 'DAWAP SARL',
             self::cyble => 'Cyble Inc.',
+            self::syzygyMarketing => 'Syzygy Marketing, LLC',
+            self::heureka => 'Heureka Group a.s.',
+            self::sarosys => 'Sarosys LLC',
+            self::webTehRazrabotka => 'WebTehRazrabotka LLC',
             self::unknown => null,
             default => $this->value,
         };
@@ -6782,6 +6797,8 @@ enum Company: string implements CompanyInterface
             self::dolyHorjun => 'doly-horjun',
             self::wpBeginner => 'wp-beginner',
             self::trentWiles => 'trent-wiles',
+            self::syzygyMarketing => 'syzygy-marketing',
+            self::webTehRazrabotka => 'webtehrazrabotka',
             default => $this->name,
         };
     }

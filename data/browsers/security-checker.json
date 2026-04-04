@@ -369,5 +369,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "arachni": {
+    "name": "Arachni",
+    "manufacturer": "sarosys",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arachni\\/v",
+        "Arachni"
+      ]
+    },
+    "engine": "unknown"
   }
 }
