@@ -143,8 +143,8 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/andr0id|android tv|g[o0][o0]gle tv|smarttv 4k|smart tv/i' => Os::androidtv,
             '/sm-r[0-9]{3}/i' => Os::wearos,
             '/(?<!o)andr[0o]id|silk|juc ?\(linux;|adr |gingerbread|ucweb\/2\.0 \(linux;|vre;|beyondpod|htc_sensation_z710e|puffin\/[\d\.]+a[tp]|okhttp/i' => Os::android,
-            '/watchos/i' => Os::watchos,
-            '/mobilesafari\/.*cfnetwork|watchos|(?<!like |t)iphone|cpu i?os|like mac os x|(?<![a-z])ios[;\/\.\-]|\(ios\)|\\/ios /i' => Os::ios,
+            '/watchos|apple watch/i' => Os::watchos,
+            '/mobilesafari\/.*cfnetwork|(?<!like |t)iphone|cpu i?os|like mac os x|(?<![a-z])ios[;\/\.\-]|\(ios\)|\\/ios /i' => Os::ios,
             '/mac os x|os\=mac 10|mac ?os\/|(;|for) os x [0-9]+/i' => Os::macosx,
             '/morphos/i' => Os::morphos,
             '/mac_powerpc|ppc|68k/i' => Os::macintosh,
@@ -208,6 +208,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/inferno/i' => Os::infernoOs,
             '/syllable/i' => Os::syllable,
             '/fuchsia/i' => Os::fuchsia,
+            '/(?<![a-z])ios[;\/\.\- ]/i' => Os::ios,
         ];
 
         foreach ($regexes as $regex => $os) {

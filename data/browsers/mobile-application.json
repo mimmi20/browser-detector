@@ -1909,7 +1909,7 @@
   },
   "hios-launcher": {
     "name": "HiOS Launcher",
-    "manufacturer": "transsion-holdings",
+    "manufacturer": "transsion",
     "type": "mobile-application",
     "version": {
       "factory": null,
@@ -3401,7 +3401,9 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Podhero Alpha",
-        "Podhero"
+        "Podhero",
+        "Swoot Agent ",
+        "Swoot Agent"
       ]
     },
     "engine": "webkit"
@@ -3775,6 +3777,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Goodpods\\.iOS \\/ ",
         "Goodpods"
       ]
     },
@@ -4934,6 +4937,84 @@
   "pod-trapper": {
     "name": "PodTrapper",
     "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "pod-friend": {
+    "name": "Podfriend",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podfriend"
+      ]
+    },
+    "engine": null
+  },
+  "pod-chaser": {
+    "name": "Podchaser",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "podcastly": {
+    "name": "Podcastly",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcastly"
+      ]
+    },
+    "engine": null
+  },
+  "pea-cast": {
+    "name": "PeaCast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PeaCast"
+      ]
+    },
+    "engine": null
+  },
+  "newsly": {
+    "name": "Newsly",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Newsly"
+      ]
+    },
+    "engine": null
+  },
+  "megaphone": {
+    "name": "Megaphone",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "jio-saavn": {
+    "name": "JioSaavn",
+    "manufacturer": "jio-platforms",
     "type": "mobile-application",
     "version": {
       "factory": null,
