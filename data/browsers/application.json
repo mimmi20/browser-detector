@@ -1641,5 +1641,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "background-intelligent-transfer-service": {
+    "name": "Background Intelligent Transfer Service",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BITS"
+      ]
+    },
+    "engine": "webkit"
   }
 }

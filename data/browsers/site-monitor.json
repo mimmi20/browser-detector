@@ -181,6 +181,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Uptimebot",
         "Uptime"
       ]
     },
@@ -259,7 +260,7 @@
   },
   "uptime-kuma": {
     "name": "Uptime-Kuma",
-    "manufacturer": "unknown",
+    "manufacturer": "louis-lam",
     "type": "site-monitor",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",

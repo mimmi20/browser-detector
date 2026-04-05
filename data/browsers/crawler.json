@@ -4760,5 +4760,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "sentry-bot": {
+    "name": "Sentry Bot",
+    "manufacturer": "functional-software",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sentry"
+      ]
+    },
+    "engine": "unknown"
   }
 }

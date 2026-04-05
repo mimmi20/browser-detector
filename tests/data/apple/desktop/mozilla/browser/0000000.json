@@ -586,51 +586,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (MacOS X; U; PPC; en-US; rv:1.7rc1)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; PPC Ubuntu Mach-O; en-US; rv:1.7.8) Gecko/20050511 Firefox/1.0.4"
     },
     "device": {
@@ -811,7 +766,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (MacOSX; U; MacOSX; en-US; rv:1.4.1)"
+      "user-agent": "Mozilla/5.0 (X11; U; PPC)"
     },
     "device": {
       "architecture": null,
@@ -833,10 +788,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -942,6 +897,51 @@
       "name": "WebKit",
       "version": "605.1.15",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Zoom.Mac 10.8.5 x86)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla Application Suite",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
     }
   }
 ]

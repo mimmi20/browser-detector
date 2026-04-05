@@ -3647,6 +3647,10 @@ enum Company: string implements CompanyInterface
 
     case kevinBeaumont = 'Kevin Beaumont';
 
+    case functionalSoftware = 'Functional Software';
+
+    case louisLam = 'Louis Lam';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5468,6 +5472,8 @@ enum Company: string implements CompanyInterface
             'madefornet', 'made-for-net' => self::madeForNet,
             'disqus', 'disqus, inc.' => self::disqus,
             'kevinbeaumont', 'kevin-beaumont', 'kevin beaumont' => self::kevinBeaumont,
+            'functionalsoftware', 'functional software, inc.', 'functional-software', 'functional software' => self::functionalSoftware,
+            'louislam', 'louis-lam', 'louis lam' => self::louisLam,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6183,6 +6189,7 @@ enum Company: string implements CompanyInterface
             self::lightbend => 'Lightbend, Inc.',
             self::techFusion => 'TechFusion Ltd',
             self::disqus => 'Disqus, Inc.',
+            self::functionalSoftware => 'Functional Software, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6857,6 +6864,8 @@ enum Company: string implements CompanyInterface
             self::techFusion => 'tech-fusion',
             self::madeForNet => 'made-for-net',
             self::kevinBeaumont => 'kevin-beaumont',
+            self::functionalSoftware => 'functional-software',
+            self::louisLam => 'louis-lam',
             default => $this->name,
         };
     }

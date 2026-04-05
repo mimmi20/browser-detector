@@ -1,12 +1,12 @@
 [
   {
     "headers": {
-      "user-agent": "Matomo/4.15.1"
+      "user-agent": "spotify_other-mobile"
     },
     "device": {
       "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": null,
@@ -17,8 +17,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown",
-      "ismobile": false,
+      "type": "mobile-device",
+      "ismobile": true,
       "istv": false,
       "bits": null
     },
@@ -30,11 +30,11 @@
       "bits": null
     },
     "client": {
-      "name": "MatomoTracker",
+      "name": "Spotify",
       "modus": null,
-      "version": "4.15.1",
-      "manufacturer": "Matomo",
-      "type": "library",
+      "version": null,
+      "manufacturer": "Spotify",
+      "type": "mobile-application",
       "isbot": false,
       "bits": null
     },

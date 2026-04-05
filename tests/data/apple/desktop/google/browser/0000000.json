@@ -181,7 +181,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; U; MacOS X 10_11_1; en-US; Valve Steam GameOverlay/1444853545; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Macintosh; U; Macintosh; en-US; Valve Half-Life/0; ) AppleWebKit/535.15 (KHTML, like Gecko) Chrome/18.0.989.0 Safari/535.11"
     },
     "device": {
       "architecture": null,
@@ -212,16 +212,16 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "45.0.2454.85",
+      "version": "18.0.989.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.85",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "535.15.0",
+      "manufacturer": "Apple"
     }
   },
   {

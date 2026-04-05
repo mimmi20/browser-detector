@@ -10930,6 +10930,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Kevin Beaumont',
                 'key' => 'kevin-beaumont',
             ],
+            [
+                'type' => 'Functional Software',
+                'name' => 'Functional Software, Inc.',
+                'brandname' => 'Functional Software',
+                'key' => 'functional-software',
+            ],
+            [
+                'type' => 'Louis Lam',
+                'name' => 'Louis Lam',
+                'brandname' => 'Louis Lam',
+                'key' => 'louis-lam',
+            ],
         ];
     }
 

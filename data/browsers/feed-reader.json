@@ -580,5 +580,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "feedburner": {
+    "name": "FeedBurner",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FeedBurner"
+      ]
+    },
+    "engine": "unknown"
   }
 }
