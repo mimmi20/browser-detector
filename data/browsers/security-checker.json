@@ -382,5 +382,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "exchange-check": {
+    "name": "Exchange Check",
+    "manufacturer": "kevin-beaumont",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Exchange check"
+      ]
+    },
+    "engine": "unknown"
   }
 }

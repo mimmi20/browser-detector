@@ -1133,5 +1133,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "webchk": {
+    "name": "webchk",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "webchk v",
+        "webchk"
+      ]
+    },
+    "engine": "unknown"
   }
 }

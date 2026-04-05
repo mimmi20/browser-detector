@@ -473,5 +473,17 @@
       ]
     },
     "engine": null
+  },
+  "360-monitoring": {
+    "name": "360 Monitoring",
+    "manufacturer": "plesk",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "monitoring360bot"
+      ]
+    },
+    "engine": null
   }
 }

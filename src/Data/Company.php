@@ -3641,6 +3641,12 @@ enum Company: string implements CompanyInterface
 
     case techFusion = 'TechFusion';
 
+    case madeForNet = 'MadeForNet';
+
+    case disqus = 'Disqus';
+
+    case kevinBeaumont = 'Kevin Beaumont';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5459,6 +5465,9 @@ enum Company: string implements CompanyInterface
             'siaopenidea', 'sia-open-idea', 'sia open idea' => self::siaOpenIdea,
             'lightbend', 'lightbend, inc.' => self::lightbend,
             'techfusion', 'techfusion ltd', 'tech-fusion' => self::techFusion,
+            'madefornet', 'made-for-net' => self::madeForNet,
+            'disqus', 'disqus, inc.' => self::disqus,
+            'kevinbeaumont', 'kevin-beaumont', 'kevin beaumont' => self::kevinBeaumont,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6173,6 +6182,7 @@ enum Company: string implements CompanyInterface
             self::onlineOrNot => 'OnlineOrNot SASU',
             self::lightbend => 'Lightbend, Inc.',
             self::techFusion => 'TechFusion Ltd',
+            self::disqus => 'Disqus, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6845,6 +6855,8 @@ enum Company: string implements CompanyInterface
             self::onlineOrNot => 'online-or-not',
             self::siaOpenIdea => 'sia-open-idea',
             self::techFusion => 'tech-fusion',
+            self::madeForNet => 'made-for-net',
+            self::kevinBeaumont => 'kevin-beaumont',
             default => $this->name,
         };
     }

@@ -10912,6 +10912,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'TechFusion',
                 'key' => 'tech-fusion',
             ],
+            [
+                'type' => 'MadeForNet',
+                'name' => 'MadeForNet',
+                'brandname' => 'MadeForNet',
+                'key' => 'made-for-net',
+            ],
+            [
+                'type' => 'Disqus',
+                'name' => 'Disqus, Inc.',
+                'brandname' => 'Disqus',
+                'key' => 'disqus',
+            ],
+            [
+                'type' => 'Kevin Beaumont',
+                'name' => 'Kevin Beaumont',
+                'brandname' => 'Kevin Beaumont',
+                'key' => 'kevin-beaumont',
+            ],
         ];
     }
 

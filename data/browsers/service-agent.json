@@ -459,5 +459,29 @@
       ]
     },
     "engine": null
+  },
+  "viber-url-downloader": {
+    "name": "Viber Url Downloader",
+    "manufacturer": "viber-media",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ViberUrlDownloader"
+      ]
+    },
+    "engine": null
+  },
+  "microsoft-preview": {
+    "name": "Microsoft Preview",
+    "manufacturer": "microsoft",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MicrosoftPreview"
+      ]
+    },
+    "engine": null
   }
 }

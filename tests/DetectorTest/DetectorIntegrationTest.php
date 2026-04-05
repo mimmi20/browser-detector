@@ -8106,6 +8106,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'x-requested-with' => 'XMLHttpRequest',
+                    'sec-ch-ua' => '"Chromium";v="99", "Google Chrome";v="99", "Lighthouse";v="9.6.3"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'user-agent' => 'Mozilla/5.0 (compatible; SeolytBot/1.0.1; +https://seolyt.com)',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'XMLHttpRequest',
+                        'sec-ch-ua' => '"Chromium";v="99", "Google Chrome";v="99", "Lighthouse";v="9.6.3"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Mozilla/5.0 (compatible; SeolytBot/1.0.1; +https://seolyt.com)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => null,
+                        'marketingName' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'SeolytBot',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '99.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

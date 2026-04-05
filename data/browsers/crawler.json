@@ -4714,5 +4714,51 @@
       ]
     },
     "engine": "unknown"
+  },
+  "reqbin-curl-client": {
+    "name": "ReqBin Curl Client",
+    "manufacturer": "made-for-net",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ReqBin Curl Client"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "disqus-adstxt-crawler": {
+    "name": "DisqusAdstxtCrawler",
+    "manufacturer": "disqus",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DisqusAdstxtCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ads-txt-crawler-tp": {
+    "name": "AdsTxtCrawlerTP",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdsTxtCrawlerTP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netz-zappen": {
+    "name": "NETZZAPPEN",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }
