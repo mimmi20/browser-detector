@@ -23,7 +23,7 @@ jobs:
   validate-all:
     name: "Validate Project"
 
-    uses: "mimmi20/ci/.github/workflows/validate-all.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/validate-all.yml@8.5"
     with:
       skip-validate-yaml: false
       skip-validate-md: false
@@ -31,7 +31,7 @@ jobs:
   validate-php:
     name: "Validate PHP"
 
-    uses: "mimmi20/ci/.github/workflows/validate-php.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/validate-php.yml@8.5"
     with:
       extensions: "ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
@@ -49,7 +49,7 @@ jobs:
       - "validate-all"
       - "validate-php"
 
-    uses: "mimmi20/ci/.github/workflows/install-php.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/install-php.yml@8.5"
     with:
       extensions: "ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
@@ -70,7 +70,7 @@ jobs:
 
     needs: "install"
 
-    uses: "mimmi20/ci/.github/workflows/analytics-php.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/analytics-php.yml@8.5"
     with:
       extensions: "ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
@@ -87,7 +87,7 @@ jobs:
 
     needs: "analytics"
 
-    uses: "mimmi20/ci/.github/workflows/test-php.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/test-php.yml@8.5"
     with:
       extensions: "ctype, dom, fileinfo, intl, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
@@ -126,7 +126,7 @@ jobs:
           - "ubuntu-latest"
 
         php-version:
-          - "8.4"
+          - "8.5"
 
         dependencies:
           - "lowest"

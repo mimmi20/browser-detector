@@ -19,7 +19,7 @@ permissions:
 jobs:
   build:
     name: "Sync labels"
-    uses: "mimmi20/ci/.github/workflows/sync-labels.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/sync-labels.yml@8.5"
     with:
       repository: ${{ github.repository }}
       manifest: ".github/labels.yml"

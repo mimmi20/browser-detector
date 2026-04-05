@@ -17,7 +17,7 @@ permissions:
 jobs:
   cleanup:
     name: "Cleanup Caches"
-    uses: "mimmi20/ci/.github/workflows/cleanup-cache.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/cleanup-cache.yml@8.5"
     with:
       repository: ${{ github.repository }}
       ref: ${{ github.event_name == 'pull_request' && format('refs/pull/{0}/merge', github.event.pull_request.number) || github.ref }}

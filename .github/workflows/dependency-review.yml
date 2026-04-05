@@ -21,7 +21,7 @@ permissions:
 jobs:
   dependency-review:
     name: "Review"
-    uses: "mimmi20/ci/.github/workflows/review-dependency.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/review-dependency.yml@8.5"
 
   # This is a meta job to avoid to have to constantly change the protection rules
   # whenever we touch the matrix.
