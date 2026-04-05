@@ -6672,7 +6672,7 @@ final class CompanyTest extends TestCase
             ],
             [
                 'type' => 'Uptime',
-                'name' => 'Uptime',
+                'name' => 'Uptime.com LLC',
                 'brandname' => 'Uptime',
                 'key' => 'uptime',
             ],
@@ -10845,6 +10845,72 @@ final class CompanyTest extends TestCase
                 'name' => 'WebTehRazrabotka LLC',
                 'brandname' => 'WebTehRazrabotka',
                 'key' => 'webtehrazrabotka',
+            ],
+            [
+                'type' => 'genieo',
+                'name' => 'genieo',
+                'brandname' => 'genieo',
+                'key' => 'genieo',
+            ],
+            [
+                'type' => 'XGEM',
+                'name' => 'XGEM',
+                'brandname' => 'XGEM',
+                'key' => 'xgem',
+            ],
+            [
+                'type' => 'Sagemcom',
+                'name' => 'Sagemcom',
+                'brandname' => 'Sagemcom',
+                'key' => 'sagemcom',
+            ],
+            [
+                'type' => 'BitTorrent',
+                'name' => 'BitTorrent Limited',
+                'brandname' => 'BitTorrent',
+                'key' => 'bittorrent',
+            ],
+            [
+                'type' => 'Uptime Robot',
+                'name' => 'Uptime Robot s.r.o.',
+                'brandname' => 'Uptime Robot',
+                'key' => 'uptime-robot',
+            ],
+            [
+                'type' => 'reg.ru',
+                'name' => 'reg.ru LLC',
+                'brandname' => 'reg.ru',
+                'key' => 'reg-ru',
+            ],
+            [
+                'type' => 'Quarta',
+                'name' => 'Quarta LLC',
+                'brandname' => 'Quarta',
+                'key' => 'quarta',
+            ],
+            [
+                'type' => 'OnlineOrNot',
+                'name' => 'OnlineOrNot SASU',
+                'brandname' => 'OnlineOrNot',
+                'key' => 'online-or-not',
+            ],
+            [
+                'type' => 'SIA Open Idea',
+                'name' => 'SIA Open Idea',
+                'brandname' => 'SIA Open Idea',
+                'key' => 'sia-open-idea',
+            ],
+            [
+                'type' => 'Lightbend',
+                'name' => 'Lightbend, Inc.',
+                'brandname' => 'Lightbend',
+                'key' => 'lightbend',
+            ],
+            [
+                'type' => 'TechFusion',
+                'name' => 'TechFusion Ltd',
+                'brandname' => 'TechFusion',
+                'key' => 'tech-fusion',
             ],
         ];
     }

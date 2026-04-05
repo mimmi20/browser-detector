@@ -906,5 +906,17 @@
       ]
     },
     "engine": null
+  },
+  "kasts": {
+    "name": "Kasts",
+    "manufacturer": "kde",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kasts"
+      ]
+    },
+    "engine": null
   }
 }

@@ -361,6 +361,51 @@
   },
   {
     "headers": {
+      "user-agent": "MOT-c350/G_09.04.35R MIB/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C350",
+      "marketingName": "C350",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 96,
+        "height": 65,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "Motorola",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-c350M/AS_G_09.04.23R MIB/2.0 UP.Link/1.1"
     },
     "device": {
@@ -1801,6 +1846,51 @@
   },
   {
     "headers": {
+      "user-agent": "MOT-V868/1.0 MIB1.2/v1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V868",
+      "marketingName": "V868",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "Motorola",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-V975/80.3F.64I MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -1936,6 +2026,51 @@
   },
   {
     "headers": {
+      "user-agent": "MOT-V551/08.17.0FR MIB/2.2.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V551",
+      "marketingName": "V551",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "2.2.1",
+      "manufacturer": "Motorola",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-Z3/08.00.10R MIB/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/1.0"
     },
     "device": {
@@ -2026,21 +2161,21 @@
   },
   {
     "headers": {
-      "user-agent": "MOT-V868/1.0 MIB1.2/v1.0 UP.Link/6.3.0.0.0"
+      "user-agent": "MOT-V860/1.0 MIB1.2/v1.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "V868",
-      "marketingName": "V868",
+      "deviceName": "V860",
+      "marketingName": "V860",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "dualOrientation": false,
       "simCount": 1,
       "display": {
-        "width": 160,
-        "height": 128,
+        "width": null,
+        "height": null,
         "touch": false,
-        "size": null
+        "size": 2.2
       },
       "type": "feature-phone",
       "ismobile": true,
@@ -2688,6 +2823,51 @@
       "name": "Motorola Internet Browser",
       "modus": null,
       "version": "2.2.1",
+      "manufacturer": "Motorola",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-T720/G_0C.0B.3BR MIB/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T720",
+      "marketingName": "T720",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 120,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "2.0.0",
       "manufacturer": "Motorola",
       "type": "browser",
       "isbot": false,
@@ -3633,51 +3813,6 @@
       "name": "Motorola Internet Browser",
       "modus": null,
       "version": "2.2.1",
-      "manufacturer": "Motorola",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MOT-c350V/G_09.08.BCR MIB/2.0 UP.Link/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "C350",
-      "marketingName": "C350",
-      "manufacturer": "Motorola",
-      "brand": "Motorola",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Motorola Internet Browser",
-      "modus": null,
-      "version": "2.0.0",
       "manufacturer": "Motorola",
       "type": "browser",
       "isbot": false,

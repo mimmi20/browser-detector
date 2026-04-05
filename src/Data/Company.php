@@ -3619,6 +3619,28 @@ enum Company: string implements CompanyInterface
 
     case webTehRazrabotka = 'WebTehRazrabotka';
 
+    case genieo = 'genieo';
+
+    case xgem = 'XGEM';
+
+    case sagemcom = 'Sagemcom';
+
+    case bittorrent = 'BitTorrent';
+
+    case uptimeRobot = 'Uptime Robot';
+
+    case regRu = 'reg.ru';
+
+    case quarta = 'Quarta';
+
+    case onlineOrNot = 'OnlineOrNot';
+
+    case siaOpenIdea = 'SIA Open Idea';
+
+    case lightbend = 'Lightbend';
+
+    case techFusion = 'TechFusion';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4729,7 +4751,7 @@ enum Company: string implements CompanyInterface
             'miada' => self::miada,
             'remmerwilts', 'remmer-wilts', 'remmer wilts' => self::remmerWilts,
             'seikoepson', 'seiko-epson', 'seiko epson corporation', 'seiko epson' => self::seikoEpson,
-            'uptime' => self::uptime,
+            'uptime', 'uptime.com llc' => self::uptime,
             'sprious', 'sprious llc' => self::sprious,
             'jaytech', 'jay-tech' => self::jayTech,
             'linkdex', 'linkdex limited' => self::linkdex,
@@ -5426,6 +5448,17 @@ enum Company: string implements CompanyInterface
             'heureka', 'heureka group a.s.' => self::heureka,
             'sarosys', 'sarosys llc' => self::sarosys,
             'webtehrazrabotka', 'webtehrazrabotka llc' => self::webTehRazrabotka,
+            'genieo' => self::genieo,
+            'xgem' => self::xgem,
+            'sagemcom' => self::sagemcom,
+            'bittorrent', 'bittorrent limited' => self::bittorrent,
+            'uptimerobot', 'uptime robot s.r.o.', 'uptime-robot', 'uptime robot' => self::uptimeRobot,
+            'regru', 'reg.ru llc', 'reg-ru', 'reg.ru' => self::regRu,
+            'quarta', 'quarta llc' => self::quarta,
+            'onlineornot', 'onlineornot sasu', 'online-or-not' => self::onlineOrNot,
+            'siaopenidea', 'sia-open-idea', 'sia open idea' => self::siaOpenIdea,
+            'lightbend', 'lightbend, inc.' => self::lightbend,
+            'techfusion', 'techfusion ltd', 'tech-fusion' => self::techFusion,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6132,6 +6165,14 @@ enum Company: string implements CompanyInterface
             self::heureka => 'Heureka Group a.s.',
             self::sarosys => 'Sarosys LLC',
             self::webTehRazrabotka => 'WebTehRazrabotka LLC',
+            self::bittorrent => 'BitTorrent Limited',
+            self::uptimeRobot => 'Uptime Robot s.r.o.',
+            self::uptime => 'Uptime.com LLC',
+            self::regRu => 'reg.ru LLC',
+            self::quarta => 'Quarta LLC',
+            self::onlineOrNot => 'OnlineOrNot SASU',
+            self::lightbend => 'Lightbend, Inc.',
+            self::techFusion => 'TechFusion Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -6799,6 +6840,11 @@ enum Company: string implements CompanyInterface
             self::trentWiles => 'trent-wiles',
             self::syzygyMarketing => 'syzygy-marketing',
             self::webTehRazrabotka => 'webtehrazrabotka',
+            self::uptimeRobot => 'uptime-robot',
+            self::regRu => 'reg-ru',
+            self::onlineOrNot => 'online-or-not',
+            self::siaOpenIdea => 'sia-open-idea',
+            self::techFusion => 'tech-fusion',
             default => $this->name,
         };
     }

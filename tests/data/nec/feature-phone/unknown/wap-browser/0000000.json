@@ -811,6 +811,51 @@
   },
   {
     "headers": {
+      "user-agent": "NEC-N1002/(2005.02.18)1.0/WAP1.2.1 Profile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N100",
+      "marketingName": "N100",
+      "manufacturer": "NEC",
+      "brand": "NEC",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "wap-browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NEC-N100/0100/WAP1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0"
     },
     "device": {

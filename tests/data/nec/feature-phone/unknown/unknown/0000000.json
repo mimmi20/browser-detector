@@ -766,6 +766,51 @@
   },
   {
     "headers": {
+      "user-agent": "NEC-N940"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N940",
+      "marketingName": "N940",
+      "manufacturer": "NEC",
+      "brand": "NEC",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NEC-N6305/1.0 Release/8.20.2005 Browser/CMS1.5.45 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -856,7 +901,97 @@
   },
   {
     "headers": {
+      "user-agent": "NEC-N610/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N610",
+      "marketingName": "N610",
+      "manufacturer": "NEC",
+      "brand": "NEC",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NEC-N600/1.0 HopenOS/2.0 UP.Link/5.1.2.6"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "N600",
+      "marketingName": "N600",
+      "manufacturer": "NEC",
+      "brand": "NEC",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 240,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OS/2",
+      "marketingName": "OS/2",
+      "version": null,
+      "manufacturer": "IBM",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NEC-N600/1.0 HopenOS/2.0"
     },
     "device": {
       "architecture": null,

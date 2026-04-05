@@ -1036,6 +1036,51 @@
   },
   {
     "headers": {
+      "user-agent": "SIE-C3I/1.0 UP/4.1.8c"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C3I",
+      "marketingName": "C3I",
+      "manufacturer": "Siemens",
+      "brand": "Siemens",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.8",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SIE-C45/06 UP.Browser/5.0.1.1.102 (GUI) UP.Link/4.2.2.1"
     },
     "device": {
@@ -1981,6 +2026,96 @@
   },
   {
     "headers": {
+      "user-agent": "SIE-S35/3.0 UP/4.1.16m"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S35",
+      "marketingName": "S35",
+      "manufacturer": "Siemens",
+      "brand": "Siemens",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.16",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SIE-S40/2.3 UP/4.1.16r"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "S40",
+      "marketingName": "S40",
+      "manufacturer": "Siemens",
+      "brand": "Siemens",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.16",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SIE-S45i/02 UP.Browser/5.0.3.1.105 (GUI)"
     },
     "device": {
@@ -2508,6 +2643,51 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "7.1.0",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SIE-SLIK/3.1 UP/4.1.19i"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SLIK",
+      "marketingName": "SLIK",
+      "manufacturer": "Siemens",
+      "brand": "Siemens",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.19",
       "manufacturer": "Myriad",
       "type": "browser",
       "isbot": false,
@@ -4308,186 +4488,6 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "7.0.2.2",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SIE-C62/04 UP.Browser/5.0.3.3 (GUI)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "C62",
-      "marketingName": "C62",
-      "manufacturer": "Siemens",
-      "brand": "Siemens",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "5.0.3.3",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SIE-C61/20 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "C61",
-      "marketingName": "C61",
-      "manufacturer": "Siemens",
-      "brand": "Siemens",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.5",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SIE-AX75/16 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "AX75",
-      "marketingName": "AX75",
-      "manufacturer": "Siemens",
-      "brand": "Siemens",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.7.3",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SIE-AX72/02 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "AX72",
-      "marketingName": "AX72",
-      "manufacturer": "Siemens",
-      "brand": "Siemens",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.7.3",
       "manufacturer": "Myriad",
       "type": "browser",
       "isbot": false,

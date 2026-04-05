@@ -4690,5 +4690,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "stat-online-ru-bot": {
+    "name": "StatOnline.ru",
+    "manufacturer": "reg-ru",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StatOnlineRuBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "backup-land": {
+    "name": "BackupLand",
+    "manufacturer": "quarta",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BackupLand"
+      ]
+    },
+    "engine": "unknown"
   }
 }

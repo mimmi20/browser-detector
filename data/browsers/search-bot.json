@@ -1452,5 +1452,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "awariobot": {
+    "name": "AwarioBot",
+    "manufacturer": "tech-fusion",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AwarioBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

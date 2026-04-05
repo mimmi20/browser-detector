@@ -336,7 +336,7 @@
     "/kded/i": "kded",
     "/online-versicherungsportal\\.info/i": "online-versicherungsportal.info bot",
     "/versicherungssuchmaschine\\.net/i": "versicherungssuchmaschine.net bot",
-    "/exabot/i": "exabot",
+    "/(?<!al)exabot/i": "exabot",
     "/konqueror/i": "konqueror",
     "/mythbrowser/i": "mythbrowser",
     "/wayback save page/i": "wayback archive bot",

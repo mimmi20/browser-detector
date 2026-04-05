@@ -3534,6 +3534,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Moon FM",
         "MoonFM"
       ]
     },
@@ -3888,18 +3889,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Damus"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "doughnut": {
-    "name": "Doughnut",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Doughnut"
       ]
     },
     "engine": "webkit"
@@ -4319,8 +4308,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Airr",
-        "Airr Beta"
+        "Airr Beta",
+        "Airr"
       ]
     },
     "engine": null
@@ -5016,6 +5005,121 @@
   "jio-saavn": {
     "name": "JioSaavn",
     "manufacturer": "jio-platforms",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "garmin-forerunner": {
+    "name": "Garmin Forerunner",
+    "manufacturer": "garmin-asus",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Garmin Forerunner (?:\\d+)(?: Music| Solar)?"
+      ]
+    },
+    "engine": null
+  },
+  "garmin-fenix-5x-plus": {
+    "name": "Garmin fenix 5X Plus",
+    "manufacturer": "garmin-asus",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Garmin fenix 5X Plus"
+      ]
+    },
+    "engine": null
+  },
+  "doubletwist-cloudplayer": {
+    "name": "DoubleTwist CloudPlayer",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "broadway-podcast-network": {
+    "name": "Broadway Podcast Network",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "bose-soundtouch": {
+    "name": "Bose SoundTouch",
+    "manufacturer": "bose",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bose"
+      ]
+    },
+    "engine": null
+  },
+  "awasu": {
+    "name": "Awasu",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Awasu"
+      ]
+    },
+    "engine": null
+  },
+  "airsonic": {
+    "name": "Airsonic",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Airsonic"
+      ]
+    },
+    "engine": null
+  },
+  "amazon-music": {
+    "name": "Amazon Music",
+    "manufacturer": "amazon",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AmazonMusic",
+        "Harley"
+      ]
+    },
+    "engine": null
+  },
+  "musicbee": {
+    "name": "MusicBee",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MusicBee"
+      ]
+    },
+    "engine": null
+  },
+  "apple-invites": {
+    "name": "Apple Invites",
+    "manufacturer": "apple",
     "type": "mobile-application",
     "version": {
       "factory": null,

@@ -164,7 +164,7 @@
   },
   "uptimerobot": {
     "name": "UptimeRobot",
-    "manufacturer": "unknown",
+    "manufacturer": "uptime-robot",
     "type": "site-monitor",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -415,6 +415,62 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "cloudflare-diagnostics": {
+    "name": "Cloudflare Diagnostics",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "cloudflare-traffic-manager": {
+    "name": "Cloudflare Traffic Manager",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cloudflare-Traffic-Manager"
+      ]
+    },
+    "engine": null
+  },
+  "cloudflare-ssl-detector": {
+    "name": "Cloudflare SSL Detector",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ahrefs-site-audit": {
+    "name": "AhrefsSiteAudit",
+    "manufacturer": "ahrefs",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AhrefsSiteAudit"
+      ]
+    },
+    "engine": null
+  },
+  "online-or-not-bot": {
+    "name": "OnlineOrNot Bot",
+    "manufacturer": "online-or-not",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OnlineOrNot\\.com_bot_"
+      ]
     },
     "engine": null
   }

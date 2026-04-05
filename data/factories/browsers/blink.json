@@ -286,7 +286,7 @@
     "/lg browser/i": "lg browser",
     "/mailspring/i": "mailspring",
     "/chatgpt\\//i": "chatgpt-app",
-    "/exabot/i": "exabot",
+    "/(?<!al)exabot/i": "exabot",
     "/konqueror/i": "konqueror",
     "/cornowser/i": "cornowser",
     "/pageburst/i": "pageburst",

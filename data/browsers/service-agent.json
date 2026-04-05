@@ -401,5 +401,63 @@
       "search": null
     },
     "engine": null
+  },
+  "prometheus": {
+    "name": "Prometheus",
+    "manufacturer": "linux-foundation",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Prometheus"
+      ]
+    },
+    "engine": null
+  },
+  "matomo": {
+    "name": "Matomo",
+    "manufacturer": "matomo",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Matomo"
+      ]
+    },
+    "engine": null
+  },
+  "cloudflare-custom-hostname-verification": {
+    "name": "Cloudflare Custom Hostname Verification",
+    "manufacturer": "cloud-flare",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "cloudflare-health-checks": {
+    "name": "Cloudflare Health Checks",
+    "manufacturer": "cloud-flare",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cloudflare-Healthchecks"
+      ]
+    },
+    "engine": null
+  },
+  "ezgif": {
+    "name": "Ezgif",
+    "manufacturer": "sia-open-idea",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ezgif"
+      ]
+    },
+    "engine": null
   }
 }

@@ -181,6 +181,51 @@
   },
   {
     "headers": {
+      "user-agent": "SAGEM-myX6-2/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my X6-2",
+      "marketingName": "my X6-2",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAGEM-myV-76/1.0/ MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -295,6 +340,51 @@
     "os": {
       "name": "Java ME",
       "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAGEM myX-5m"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "my X-5m",
+      "marketingName": "my X-5m",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 101,
+        "height": 80,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "Sun",
       "bits": null

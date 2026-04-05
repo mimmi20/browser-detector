@@ -510,5 +510,75 @@
       ]
     },
     "engine": "unknown"
+  },
+  "pod-puppy": {
+    "name": "PodPuppy",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodPuppy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "play-a-pod": {
+    "name": "Playapod",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Playapod"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "play-a-pod-lite": {
+    "name": "Playapod Lite",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Playapod Lite"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "castget": {
+    "name": "castget",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "castget"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "castero": {
+    "name": "castero",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "castero"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hackermention": {
+    "name": "hackermention",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }
