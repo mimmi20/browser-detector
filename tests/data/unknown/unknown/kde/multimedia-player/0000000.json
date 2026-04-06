@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; AhrefsSiteAudit/6.1; +http://ahrefs.com/robot/)"
+      "user-agent": "Kasts/22.09; Syndication"
     },
     "device": {
       "architecture": null,
@@ -30,12 +30,12 @@
       "bits": null
     },
     "client": {
-      "name": "AhrefsSiteAudit",
+      "name": "Kasts",
       "modus": null,
-      "version": "6.1.0",
-      "manufacturer": "Ahrefs",
-      "type": "site-monitor",
-      "isbot": true,
+      "version": "22.09.0",
+      "manufacturer": "KDE",
+      "type": "multimedia-player",
+      "isbot": false,
       "bits": null
     },
     "engine": {
@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "AhrefsSiteAudit/6.1; http://ahrefs.com/robot/site-audit"
+      "user-agent": "Kasts/22.02; Syndication"
     },
     "device": {
       "architecture": null,
@@ -75,57 +75,12 @@
       "bits": null
     },
     "client": {
-      "name": "AhrefsSiteAudit",
+      "name": "Kasts",
       "modus": null,
-      "version": "6.1.0",
-      "manufacturer": "Ahrefs",
-      "type": "site-monitor",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; AhrefsSiteAudit/6.1; +http://ahrefs.com/robot/site-audit)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "AhrefsSiteAudit",
-      "modus": null,
-      "version": "6.1.0",
-      "manufacturer": "Ahrefs",
-      "type": "site-monitor",
-      "isbot": true,
+      "version": "22.02.0",
+      "manufacturer": "KDE",
+      "type": "multimedia-player",
+      "isbot": false,
       "bits": null
     },
     "engine": {

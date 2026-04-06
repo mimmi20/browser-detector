@@ -1,15 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "Acidbot3.7-Debian"
+      "user-agent": "Sellers.Guide Crawler by Primis"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
+      "deviceName": null,
+      "marketingName": null,
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": false,
+      "dualOrientation": null,
       "simCount": 0,
       "display": {
         "width": null,
@@ -17,24 +17,24 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop",
+      "type": "unknown",
       "ismobile": false,
       "istv": false,
       "bits": null
     },
     "os": {
-      "name": "Debian",
-      "marketingName": "Debian",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Software in the Public Interest",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
-      "name": "DBot",
+      "name": "Sellers.Guide",
       "modus": null,
-      "version": "3.7.0",
-      "manufacturer": "getdownload.ws",
-      "type": "bot",
+      "version": null,
+      "manufacturer": "Primis",
+      "type": "crawler",
       "isbot": true,
       "bits": null
     },

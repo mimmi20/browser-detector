@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36/Nutch-1.12"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Nutch",
+      "modus": null,
+      "version": "1.12.0",
+      "manufacturer": "Apache",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.95",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "PaqueBot/Nutch-1.12"
     },
     "device": {
@@ -4443,51 +4488,6 @@
       "name": "Nutch",
       "modus": null,
       "version": "0.9.0",
-      "manufacturer": "Apache",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HouxouCrawler/Nutch-0.8.2-dev (houxou.com's nutch-based crawler which serves special interest on-line communities; http://www.houxou.com/crawler; crawler at houxou dot com)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Nutch",
-      "modus": null,
-      "version": "0.8.2-dev",
       "manufacturer": "Apache",
       "type": "crawler",
       "isbot": true,

@@ -1351,6 +1351,51 @@
   },
   {
     "headers": {
+      "user-agent": "Acidbot3.7-Debian"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian",
+      "marketingName": "Debian",
+      "version": null,
+      "manufacturer": "Software in the Public Interest",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "R (2.14.2 x86_64-pc-mingw32 x86_64 mingw32)"
     },
     "device": {
@@ -4437,51 +4482,6 @@
       "marketingName": "Linux",
       "version": null,
       "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Twitama/0.74 (Windows 7; ja; WIN 17,0,0,128)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {

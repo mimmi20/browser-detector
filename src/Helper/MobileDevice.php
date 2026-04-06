@@ -73,7 +73,7 @@ final class MobileDevice implements MobileDeviceInterface
 
         if (
             preg_match(
-                '/networkingextension\/[\d.]+ .* ios\/|micromessenger|surftab|j2me\/midp|lenovotablet/i',
+                '/networkingextension\/[\d.]+ .* ios\/|micromessenger|surftab|j2me\/midp|lenovotablet|[\/ (._\-]ios([ );\/.\-]|$)/i',
                 $useragent,
             )
         ) {
