@@ -1653,5 +1653,29 @@
       ]
     },
     "engine": "webkit"
+  },
+  "q-bit-torrent": {
+    "name": "qBittorrent",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "qBittorrent"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "windows-delivery-optimization": {
+    "name": "Windows Delivery Optimization",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Microsoft-Delivery-Optimization"
+      ]
+    },
+    "engine": "webkit"
   }
 }

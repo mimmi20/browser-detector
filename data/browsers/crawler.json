@@ -4772,5 +4772,153 @@
       ]
     },
     "engine": "unknown"
+  },
+  "statista-publication-finder": {
+    "name": "Statista Publication Finder",
+    "manufacturer": "statista",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "statista\\.com Publication ?Finder[- ]Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "allloadin-favicon-bot": {
+    "name": "Allloadin Favicon Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AFB"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "macocu": {
+    "name": "MaCoCu",
+    "manufacturer": "jozef-stefan-institute",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "zeno": {
+    "name": "Zeno",
+    "manufacturer": "archive.org",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "buckyohare": {
+    "name": "BuckyOHare",
+    "manufacturer": "hypefactors",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BuckyOHare"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "project-patchwatch": {
+    "name": "Project Patchwatch",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "wheregoes-redirect-checker": {
+    "name": "WhereGoes Redirect Checker",
+    "manufacturer": "sovereign-stack",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Wheregoes\\.com Redirect Checker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "masscan-ng": {
+    "name": "masscan-ng",
+    "manufacturer": "bizone",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "masscan-ng"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "git-crawler-bot": {
+    "name": "GitCrawlerBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GitCrawlerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "newslit-bot": {
+    "name": "Newslitbot",
+    "manufacturer": "newslit",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Newslitbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sellers-guide": {
+    "name": "Sellers.Guide",
+    "manufacturer": "primis",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "blog-beat-bot": {
+    "name": "BlogBeatbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BlogBeatbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "entfer-bot": {
+    "name": "EntferBot",
+    "manufacturer": "entfer",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EntferBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

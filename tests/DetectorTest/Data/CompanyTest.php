@@ -10942,6 +10942,54 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Louis Lam',
                 'key' => 'louis-lam',
             ],
+            [
+                'type' => 'Statista',
+                'name' => 'Statista, Inc.',
+                'brandname' => 'Statista',
+                'key' => 'statista',
+            ],
+            [
+                'type' => 'Hypefactors',
+                'name' => 'Hypefactors A/S',
+                'brandname' => 'Hypefactors',
+                'key' => 'hypefactors',
+            ],
+            [
+                'type' => 'Sovereign Stack',
+                'name' => 'Sovereign Stack, LLC',
+                'brandname' => 'Sovereign Stack',
+                'key' => 'sovereign-stack',
+            ],
+            [
+                'type' => 'BiZone',
+                'name' => 'BiZone LCC',
+                'brandname' => 'BiZone',
+                'key' => 'bizone',
+            ],
+            [
+                'type' => 'DGC',
+                'name' => 'DGC Verwaltungs GmbH',
+                'brandname' => 'DGC',
+                'key' => 'dgc',
+            ],
+            [
+                'type' => 'Newslit',
+                'name' => 'Newslit, LLC.',
+                'brandname' => 'Newslit',
+                'key' => 'newslit',
+            ],
+            [
+                'type' => 'Primis',
+                'name' => 'M.D. Primis Technologies Ltd.',
+                'brandname' => 'Primis',
+                'key' => 'primis',
+            ],
+            [
+                'type' => 'Entfer',
+                'name' => 'Entfer Ltd.',
+                'brandname' => 'Entfer',
+                'key' => 'entfer',
+            ],
         ];
     }
 

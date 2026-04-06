@@ -95,6 +95,7 @@ final class TvTest extends TestCase
             ['Mozilla/3.0 NAVIO­_AOLTV (11; 13; Philips; PH200; 1; R2.0C36­_AOL.0110OPTIK; R2.0.0139d­_OPTIK)'],
             ['Mozilla/5.0 (Astro;KSTB6112;2.2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15'],
             ['Mozilla/5.0 (Linux; Android 10; HIREMCO Matrix Build/QP1A.191105.004) IPTV Pro/6.0.8'],
+            ['Mozilla/5.0 (TV; rv:78.0) Gecko/78.0 Firefox/78.0 TvBrowser/5.0'],
         ];
     }
 

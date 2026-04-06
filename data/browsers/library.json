@@ -1146,5 +1146,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "req": {
+    "name": "req",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "req\\/v",
+        "req"
+      ]
+    },
+    "engine": "unknown"
   }
 }

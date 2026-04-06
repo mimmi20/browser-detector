@@ -5126,5 +5126,41 @@
       "search": null
     },
     "engine": null
+  },
+  "hermes-pod": {
+    "name": "HermesPod",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hermespod\\.com\\/v"
+      ]
+    },
+    "engine": null
+  },
+  "overcast-podcast-sync": {
+    "name": "Overcast Podcast Sync",
+    "manufacturer": "overcast radio",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Overcast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "freespoke": {
+    "name": "Freespoke",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Freespoke"
+      ]
+    },
+    "engine": null
   }
 }

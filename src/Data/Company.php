@@ -3651,6 +3651,22 @@ enum Company: string implements CompanyInterface
 
     case louisLam = 'Louis Lam';
 
+    case statista = 'Statista';
+
+    case hypefactors = 'Hypefactors';
+
+    case sovereignStack = 'Sovereign Stack';
+
+    case bizone = 'BiZone';
+
+    case dgc = 'DGC';
+
+    case newslit = 'Newslit';
+
+    case primis = 'Primis';
+
+    case entfer = 'Entfer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5474,6 +5490,14 @@ enum Company: string implements CompanyInterface
             'kevinbeaumont', 'kevin-beaumont', 'kevin beaumont' => self::kevinBeaumont,
             'functionalsoftware', 'functional software, inc.', 'functional-software', 'functional software' => self::functionalSoftware,
             'louislam', 'louis-lam', 'louis lam' => self::louisLam,
+            'statista', 'statista, inc.' => self::statista,
+            'hypefactors', 'hypefactors a/s' => self::hypefactors,
+            'sovereignstack', 'sovereign stack, llc', 'sovereign-stack', 'sovereign stack' => self::sovereignStack,
+            'bizone', 'bizone lcc' => self::bizone,
+            'dgc', 'dgc verwaltungs gmbh' => self::dgc,
+            'newslit', 'newslit, llc.' => self::newslit,
+            'primis', 'm.d. primis technologies ltd.' => self::primis,
+            'entfer', 'entfer ltd.' => self::entfer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6190,6 +6214,14 @@ enum Company: string implements CompanyInterface
             self::techFusion => 'TechFusion Ltd',
             self::disqus => 'Disqus, Inc.',
             self::functionalSoftware => 'Functional Software, Inc.',
+            self::statista => 'Statista, Inc.',
+            self::hypefactors => 'Hypefactors A/S',
+            self::sovereignStack => 'Sovereign Stack, LLC',
+            self::bizone => 'BiZone LCC',
+            self::dgc => 'DGC Verwaltungs GmbH',
+            self::newslit => 'Newslit, LLC.',
+            self::primis => 'M.D. Primis Technologies Ltd.',
+            self::entfer => 'Entfer Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6866,6 +6898,7 @@ enum Company: string implements CompanyInterface
             self::kevinBeaumont => 'kevin-beaumont',
             self::functionalSoftware => 'functional-software',
             self::louisLam => 'louis-lam',
+            self::sovereignStack => 'sovereign-stack',
             default => $this->name,
         };
     }

@@ -1464,5 +1464,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "buck": {
+    "name": "Buck",
+    "manufacturer": "hypefactors",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Buck"
+      ]
+    },
+    "engine": "unknown"
   }
 }
