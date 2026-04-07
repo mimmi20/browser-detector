@@ -359,5 +359,50 @@
       ]
     },
     "engine": "unknown"
+  },
+  "odin": {
+    "name": "Odin",
+    "manufacturer": "cyble",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "arachni": {
+    "name": "Arachni",
+    "manufacturer": "sarosys",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arachni\\/v",
+        "Arachni"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "exchange-check": {
+    "name": "Exchange Check",
+    "manufacturer": "kevin-beaumont",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Exchange check"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cyber-scan": {
+    "name": "Cyberscan",
+    "manufacturer": "dgc",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

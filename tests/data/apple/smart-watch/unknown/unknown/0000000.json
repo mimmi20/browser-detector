@@ -136,6 +136,96 @@
   },
   {
     "headers": {
+      "user-agent": "Watch1,1/4.3.2 (15U70)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Watch 1,1",
+      "marketingName": "Watch (38mm)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 340,
+        "height": 272,
+        "touch": true,
+        "size": 1.5
+      },
+      "type": "smart-watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "watchOS",
+      "marketingName": "watchOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Watch1,2/4.3.2 (15U70)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Watch 1,2",
+      "marketingName": "Watch (42mm)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 390,
+        "height": 312,
+        "touch": true,
+        "size": 1.65
+      },
+      "type": "smart-watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "watchOS",
+      "marketingName": "watchOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "atc/1.0 watchOS/5.3 model/Watch2,3 hwp/t8002 build/16U569 (6; dt:133)"
     },
     "device": {
@@ -881,6 +971,141 @@
       "name": "watchOS",
       "marketingName": "watchOS",
       "version": "7.0.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "server-bag [Watch OS,7.1,18R590,Watch6,2]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Watch 6,2",
+      "marketingName": "Watch Series 6 (44mm)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 448,
+        "height": 368,
+        "touch": true,
+        "size": 1.78
+      },
+      "type": "smart-watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "watchOS",
+      "marketingName": "watchOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "server-bag [Watch OS,7.0.1,18R395,Watch6,3]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Watch 6,3",
+      "marketingName": "Watch Series 6 (40mm, LTE)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 394,
+        "height": 324,
+        "touch": true,
+        "size": 1.57
+      },
+      "type": "smart-watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "watchOS",
+      "marketingName": "watchOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "server-bag [Watch OS,7.0,18R382,Watch6,4]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Watch 6,4",
+      "marketingName": "Watch Series 6 (44mm, LTE)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 448,
+        "height": 368,
+        "touch": true,
+        "size": 1.78
+      },
+      "type": "smart-watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "watchOS",
+      "marketingName": "watchOS",
+      "version": null,
       "manufacturer": "Apple",
       "bits": null
     },

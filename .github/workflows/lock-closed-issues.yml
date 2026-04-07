@@ -15,6 +15,6 @@ permissions:
 jobs:
   lock:
     name: "Lock Issues"
-    uses: "mimmi20/ci/.github/workflows/lock-issues.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/lock-issues.yml@8.5"
     permissions:
       issues: write

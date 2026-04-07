@@ -1233,7 +1233,7 @@
   },
   "wordpress app": {
     "name": "WordPress App",
-    "manufacturer": "wordpress",
+    "manufacturer": "automattic",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1568,6 +1568,18 @@
     },
     "engine": "unknown"
   },
+  "iptv": {
+    "name": "IPTV",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IPTV"
+      ]
+    },
+    "engine": "unknown"
+  },
   "microsoft-webdav": {
     "name": "Microsoft-WebDAV",
     "manufacturer": "microsoft",
@@ -1581,5 +1593,89 @@
       ]
     },
     "engine": "unknown"
+  },
+  "cpod": {
+    "name": "CPod",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CPod"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "doughnut": {
+    "name": "Doughnut",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Doughnut"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "juice": {
+    "name": "Juice",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Juice"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "bit-torrent": {
+    "name": "BitTorrent",
+    "manufacturer": "bittorrent",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BitTorrent"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "background-intelligent-transfer-service": {
+    "name": "Background Intelligent Transfer Service",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BITS"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "q-bit-torrent": {
+    "name": "qBittorrent",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "qBittorrent"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "windows-delivery-optimization": {
+    "name": "Windows Delivery Optimization",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Microsoft-Delivery-Optimization"
+      ]
+    },
+    "engine": "webkit"
   }
 }

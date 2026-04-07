@@ -196,6 +196,10 @@ final class MacosTest extends TestCase
                 'Mozilla/5.0 (ZOOM.Mac 14.1.2 x86)',
                 '14.1.2',
             ],
+            [
+                'Mozilla/5.0 (Mac OSX 7.1) AppleWebKit/931.66 (KHTML, like Gecko) Chrome/14.2.1335.173 Safari/931.66',
+                '7.1.0',
+            ],
         ];
     }
 

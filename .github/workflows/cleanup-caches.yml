@@ -12,14 +12,15 @@ on:
 
 permissions:
   contents: read
+  actions: write
 
 jobs:
   cleanup:
     name: "Cleanup Caches"
-    uses: "mimmi20/ci/.github/workflows/cleanup-cache.yml@8.4"
+    uses: "mimmi20/ci/.github/workflows/cleanup-cache.yml@8.5"
     with:
       repository: ${{ github.repository }}
-      ref: ${{ github.ref }}
+      ref: ${{ github.event_name == 'pull_request' && format('refs/pull/{0}/merge', github.event.pull_request.number) || github.ref }}
 
   # This is a meta job to avoid to have to constantly change the protection rules
   # whenever we touch the matrix.
@@ -34,10 +35,10 @@ jobs:
       - "cleanup"
 
     steps:
-      - name: Successful run
-        if: ${{ !(contains(needs.*.result, 'failure')) }}
-        run: exit 0
-
       - name: Failing run
-        if: ${{ contains(needs.*.result, 'failure') }}
+        if: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'skipped') || contains(needs.*.result, 'cancelled') }}
         run: exit 1
+
+      - name: Successful run
+        if: ${{ !(contains(needs.*.result, 'failure')) && !(contains(needs.*.result, 'skipped')) && !(contains(needs.*.result, 'cancelled')) }}
+        run: exit 0

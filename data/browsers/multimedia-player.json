@@ -882,5 +882,41 @@
       ]
     },
     "engine": null
+  },
+  "youview-html": {
+    "name": "YouView",
+    "manufacturer": "youview",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YouViewHTML"
+      ]
+    },
+    "engine": null
+  },
+  "music-player-daemon": {
+    "name": "Music Player Daemon",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Music Player Daemon"
+      ]
+    },
+    "engine": null
+  },
+  "kasts": {
+    "name": "Kasts",
+    "manufacturer": "kde",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kasts"
+      ]
+    },
+    "engine": null
   }
 }

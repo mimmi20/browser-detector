@@ -46,7 +46,7 @@
   },
   "wordpress": {
     "name": "WordPress",
-    "manufacturer": "wordpress",
+    "manufacturer": "automattic",
     "type": "service-agent",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -388,6 +388,98 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kiwitcms-gitops"
+      ]
+    },
+    "engine": null
+  },
+  "keycdn-tools": {
+    "name": "KeyCDN Tools",
+    "manufacturer": "proinity",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "prometheus": {
+    "name": "Prometheus",
+    "manufacturer": "linux-foundation",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Prometheus"
+      ]
+    },
+    "engine": null
+  },
+  "matomo": {
+    "name": "Matomo",
+    "manufacturer": "matomo",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Matomo"
+      ]
+    },
+    "engine": null
+  },
+  "cloudflare-custom-hostname-verification": {
+    "name": "Cloudflare Custom Hostname Verification",
+    "manufacturer": "cloud-flare",
+    "type": "service-agent",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "cloudflare-health-checks": {
+    "name": "Cloudflare Health Checks",
+    "manufacturer": "cloud-flare",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cloudflare-Healthchecks"
+      ]
+    },
+    "engine": null
+  },
+  "ezgif": {
+    "name": "Ezgif",
+    "manufacturer": "sia-open-idea",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ezgif"
+      ]
+    },
+    "engine": null
+  },
+  "viber-url-downloader": {
+    "name": "Viber Url Downloader",
+    "manufacturer": "viber-media",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ViberUrlDownloader"
+      ]
+    },
+    "engine": null
+  },
+  "microsoft-preview": {
+    "name": "Microsoft Preview",
+    "manufacturer": "microsoft",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MicrosoftPreview"
       ]
     },
     "engine": null

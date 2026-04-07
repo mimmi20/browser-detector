@@ -66,11 +66,12 @@ updates:
       prefix: "github-actions (master)"
 
     ignore:
-      - dependency-name: "mimmi20/ci/.github/workflows/validate.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/validate-all.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/validate-php.yml"
       - dependency-name: "mimmi20/ci/.github/workflows/cleanup-cache.yml"
-      - dependency-name: "mimmi20/ci/.github/workflows/install.yml"
-      - dependency-name: "mimmi20/ci/.github/workflows/analytics.yml"
-      - dependency-name: "mimmi20/ci/.github/workflows/test.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/install-php.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/analytics-php.yml"
+      - dependency-name: "mimmi20/ci/.github/workflows/test-php.yml"
       - dependency-name: "mimmi20/ci/.github/workflows/review-dependency.yml"
       - dependency-name: "mimmi20/ci/.github/workflows/lint-actions.yml"
       - dependency-name: "mimmi20/ci/.github/workflows/sync-labels.yml"

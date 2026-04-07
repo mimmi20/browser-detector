@@ -259,7 +259,7 @@
   },
   "daum-app": {
     "name": "Daum App",
-    "manufacturer": "kakao",
+    "manufacturer": "daum-corporation",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1909,7 +1909,7 @@
   },
   "hios-launcher": {
     "name": "HiOS Launcher",
-    "manufacturer": "transsion-holdings",
+    "manufacturer": "transsion",
     "type": "mobile-application",
     "version": {
       "factory": null,
@@ -2511,6 +2511,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NAVER\\(inapp; search; \\d+; ",
+        "NaverJapan",
         "Naver"
       ]
     },
@@ -3401,7 +3402,9 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Podhero Alpha",
-        "Podhero"
+        "Podhero",
+        "Swoot Agent ",
+        "Swoot Agent"
       ]
     },
     "engine": "webkit"
@@ -3531,6 +3534,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Moon FM",
         "MoonFM"
       ]
     },
@@ -3775,6 +3779,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Goodpods\\.iOS \\/ ",
         "Goodpods"
       ]
     },
@@ -3884,18 +3889,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Damus"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "doughnut": {
-    "name": "Doughnut",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Doughnut"
       ]
     },
     "engine": "webkit"
@@ -4315,8 +4308,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Airr",
-        "Airr Beta"
+        "Airr Beta",
+        "Airr"
       ]
     },
     "engine": null
@@ -4785,6 +4778,387 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DingTalk"
+      ]
+    },
+    "engine": null
+  },
+  "pod-u": {
+    "name": "podU",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "yandex-music": {
+    "name": "Yandex Music",
+    "manufacturer": "yandex",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "xiao-yu-zhou": {
+    "name": "Xiao Yu Zhou",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Xiaoyuzhou"
+      ]
+    },
+    "engine": null
+  },
+  "victor-reader-stream-trek": {
+    "name": "Victor Reader Stream Trek",
+    "manufacturer": "human-ware",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "victor-reader-stream-new-generation": {
+    "name": "Victor Reader Stream New Generation",
+    "manufacturer": "human-ware",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "victor-reader-stream-3": {
+    "name": "Victor Reader Stream 3",
+    "manufacturer": "human-ware",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ubook-player": {
+    "name": "Ubook Player",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "treble-fm": {
+    "name": "Treble.fm",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TREBLE"
+      ]
+    },
+    "engine": null
+  },
+  "sound-waves": {
+    "name": "SoundWaves",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SoundWaves-"
+      ]
+    },
+    "engine": null
+  },
+  "serve-stream": {
+    "name": "ServeStream",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ServeStream Dynamo"
+      ]
+    },
+    "engine": null
+  },
+  "samsung-podcasts": {
+    "name": "Samsung Podcasts",
+    "manufacturer": "samsung",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "rhythmbox": {
+    "name": "Rhythmbox",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "rhythmbox"
+      ]
+    },
+    "engine": null
+  },
+  "podvine": {
+    "name": "Podvine",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podvine"
+      ]
+    },
+    "engine": null
+  },
+  "pod-trapper": {
+    "name": "PodTrapper",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "pod-friend": {
+    "name": "Podfriend",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podfriend"
+      ]
+    },
+    "engine": null
+  },
+  "pod-chaser": {
+    "name": "Podchaser",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "podcastly": {
+    "name": "Podcastly",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcastly"
+      ]
+    },
+    "engine": null
+  },
+  "pea-cast": {
+    "name": "PeaCast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PeaCast"
+      ]
+    },
+    "engine": null
+  },
+  "newsly": {
+    "name": "Newsly",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Newsly"
+      ]
+    },
+    "engine": null
+  },
+  "megaphone": {
+    "name": "Megaphone",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "jio-saavn": {
+    "name": "JioSaavn",
+    "manufacturer": "jio-platforms",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "garmin-forerunner": {
+    "name": "Garmin Forerunner",
+    "manufacturer": "garmin-asus",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Garmin Forerunner (?:\\d+)(?: Music| Solar)?"
+      ]
+    },
+    "engine": null
+  },
+  "garmin-fenix-5x-plus": {
+    "name": "Garmin fenix 5X Plus",
+    "manufacturer": "garmin-asus",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Garmin fenix 5X Plus"
+      ]
+    },
+    "engine": null
+  },
+  "doubletwist-cloudplayer": {
+    "name": "DoubleTwist CloudPlayer",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "broadway-podcast-network": {
+    "name": "Broadway Podcast Network",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "bose-soundtouch": {
+    "name": "Bose SoundTouch",
+    "manufacturer": "bose",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bose"
+      ]
+    },
+    "engine": null
+  },
+  "awasu": {
+    "name": "Awasu",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Awasu"
+      ]
+    },
+    "engine": null
+  },
+  "airsonic": {
+    "name": "Airsonic",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Airsonic"
+      ]
+    },
+    "engine": null
+  },
+  "amazon-music": {
+    "name": "Amazon Music",
+    "manufacturer": "amazon",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AmazonMusic",
+        "Harley"
+      ]
+    },
+    "engine": null
+  },
+  "musicbee": {
+    "name": "MusicBee",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MusicBee"
+      ]
+    },
+    "engine": null
+  },
+  "apple-invites": {
+    "name": "Apple Invites",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "hermes-pod": {
+    "name": "HermesPod",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hermespod\\.com\\/v"
+      ]
+    },
+    "engine": null
+  },
+  "overcast-podcast-sync": {
+    "name": "Overcast Podcast Sync",
+    "manufacturer": "overcast radio",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Overcast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "freespoke": {
+    "name": "Freespoke",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Freespoke"
       ]
     },
     "engine": null

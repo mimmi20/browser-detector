@@ -82,7 +82,7 @@
     "engine": "unknown"
   },
   "mediatoolkitbot": {
-    "name": "Mediatoolkitbot",
+    "name": "Mediatoolkit Bot",
     "manufacturer": "degordian",
     "type": "crawler",
     "version": {
@@ -3121,19 +3121,6 @@
     },
     "engine": "unknown"
   },
-  "omgili-bot": {
-    "name": "Omgili Bot",
-    "manufacturer": "webz.io",
-    "type": "crawler",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "omgilibot",
-        "omgili"
-      ]
-    },
-    "engine": "unknown"
-  },
   "ai2bot-dolma": {
     "name": "Ai2Bot-Dolma",
     "manufacturer": "allen-institute",
@@ -3412,7 +3399,7 @@
     "engine": "unknown"
   },
   "cohere-ai": {
-    "name": "Cohere-AI",
+    "name": "Cohere AI",
     "manufacturer": "cohere",
     "type": "crawler",
     "version": {
@@ -4299,6 +4286,637 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Paqlebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-area-120-privacy-policy-fetcher": {
+    "name": "Google Area 120 Privacy Policy Fetcher",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "quantcastbot": {
+    "name": "QuantcastBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Quantcastbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gozlebot": {
+    "name": "GozleBot",
+    "manufacturer": "doly-horjun",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GozleBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "amazon-adbot": {
+    "name": "Amazon AdBot",
+    "manufacturer": "amazon",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AmazonAdBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "is-it-wp": {
+    "name": "IsItWP",
+    "manufacturer": "wp-beginner",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "snapchat-ads": {
+    "name": "Snapchat Ads",
+    "manufacturer": "snap",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SnapchatAds"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "botify": {
+    "name": "Botify",
+    "manufacturer": "botify",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sirdata-bot": {
+    "name": "SirdataBot",
+    "manufacturer": "sirdata",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "steve-bot": {
+    "name": "Steve Bot",
+    "manufacturer": "shareaholic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Shareaholicbot",
+        "Shareaholic"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "github-copilot-chat": {
+    "name": "GitHubCopilotChat",
+    "manufacturer": "github",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GitHubCopilotChat"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mariadb-mysql-knowledge-base": {
+    "name": "MariaDB/MySQL Knowledge Base",
+    "manufacturer": "wdes",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "vk-robot": {
+    "name": "VK Robot",
+    "manufacturer": "vk",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VKRobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domain-research-project": {
+    "name": "Domain Research Project",
+    "manufacturer": "trent-wiles",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "google-extended": {
+    "name": "Google-Extended",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "keys-so": {
+    "name": "Keys.so",
+    "manufacturer": "modesco",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "konturbot": {
+    "name": "Konturbot",
+    "manufacturer": "kontur",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Konturbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "daspeed-bot": {
+    "name": "DaspeedBot",
+    "manufacturer": "dawap",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DaspeedBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tacti-scout": {
+    "name": "TactiScout",
+    "manufacturer": "tactikast",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TactiScout"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot-ads-link-fetcher": {
+    "name": "HubSpot Ads Link Fetcher",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Ads Link Fetcher"
+      ]
+    },
+    "engine": null
+  },
+  "abonti websearch": {
+    "name": "Abonti WebSearch",
+    "manufacturer": "abonti",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Abonti"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "automattic-analytics-crawler": {
+    "name": "Automattic Analytics Crawler",
+    "manufacturer": "automattic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Automattic Analytics Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "genieo": {
+    "name": "Genieo Web Filter",
+    "manufacturer": "genieo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Genieo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "danbot": {
+    "name": "DanBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "travelbot": {
+    "name": "travelbot",
+    "manufacturer": "syzygy-marketing",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "slack-img-proxy": {
+    "name": "Slack Imgage Proxy",
+    "manufacturer": "slack",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Slack-ImgProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "digg bot": {
+    "name": "Digg Bot",
+    "manufacturer": "news.me",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Digg"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dns-digger-explorer": {
+    "name": "DNS Digger Explorer",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DNS-Digger-Explorer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heureka-bot": {
+    "name": "Heurekabot",
+    "manufacturer": "heureka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heurekabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heureka-bot-image-fulltext": {
+    "name": "Heurekabot-ImageFullText",
+    "manufacturer": "heureka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heurekabot-ImageFullText"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heureka-bot-image": {
+    "name": "Heurekabot-Image",
+    "manufacturer": "heureka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heurekabot-Image"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "heureka-bot-feed": {
+    "name": "Heureka Feed",
+    "manufacturer": "heureka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Heurekabot-Feed"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cocolyze-bot": {
+    "name": "Cocolyzebot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cocolyzebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bubing bot": {
+    "name": "BUbiNG Bot",
+    "manufacturer": "law.di.unimi.it",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BUbiNG"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webdata-stats": {
+    "name": "WebDataStats",
+    "manufacturer": "webtehrazrabotka",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebDataStats"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domcopbot": {
+    "name": "DomCop Bot",
+    "manufacturer": "domcop",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomCopBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "stat-online-ru-bot": {
+    "name": "StatOnline.ru",
+    "manufacturer": "reg-ru",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StatOnlineRuBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "backup-land": {
+    "name": "BackupLand",
+    "manufacturer": "quarta",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BackupLand"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "reqbin-curl-client": {
+    "name": "ReqBin Curl Client",
+    "manufacturer": "made-for-net",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ReqBin Curl Client"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "disqus-adstxt-crawler": {
+    "name": "DisqusAdstxtCrawler",
+    "manufacturer": "disqus",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DisqusAdstxtCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ads-txt-crawler-tp": {
+    "name": "AdsTxtCrawlerTP",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdsTxtCrawlerTP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netz-zappen": {
+    "name": "NETZZAPPEN",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sentry-bot": {
+    "name": "Sentry Bot",
+    "manufacturer": "functional-software",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sentry"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "statista-publication-finder": {
+    "name": "Statista Publication Finder",
+    "manufacturer": "statista",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "statista\\.com Publication ?Finder[- ]Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "allloadin-favicon-bot": {
+    "name": "Allloadin Favicon Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AFB"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "macocu": {
+    "name": "MaCoCu",
+    "manufacturer": "jozef-stefan-institute",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "zeno": {
+    "name": "Zeno",
+    "manufacturer": "archive.org",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "buckyohare": {
+    "name": "BuckyOHare",
+    "manufacturer": "hypefactors",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BuckyOHare"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "project-patchwatch": {
+    "name": "Project Patchwatch",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "wheregoes-redirect-checker": {
+    "name": "WhereGoes Redirect Checker",
+    "manufacturer": "sovereign-stack",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Wheregoes\\.com Redirect Checker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "masscan-ng": {
+    "name": "masscan-ng",
+    "manufacturer": "bizone",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "masscan-ng"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "git-crawler-bot": {
+    "name": "GitCrawlerBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GitCrawlerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "newslit-bot": {
+    "name": "Newslitbot",
+    "manufacturer": "newslit",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Newslitbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sellers-guide": {
+    "name": "Sellers.Guide",
+    "manufacturer": "primis",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "blog-beat-bot": {
+    "name": "BlogBeatbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BlogBeatbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "entfer-bot": {
+    "name": "EntferBot",
+    "manufacturer": "entfer",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EntferBot"
       ]
     },
     "engine": "unknown"

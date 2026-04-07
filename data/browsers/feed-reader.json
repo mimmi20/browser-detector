@@ -360,6 +360,18 @@
     },
     "engine": "unknown"
   },
+  "flipboard-rss": {
+    "name": "FlipboardRSS",
+    "manufacturer": "flipboard",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FlipboardRSS"
+      ]
+    },
+    "engine": "unknown"
+  },
   "universalfeedparser": {
     "name": "UniversalFeedParser",
     "manufacturer": "unknown",
@@ -472,6 +484,112 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "jetbrains-omea-reader": {
+    "name": "JetBrains Omea Reader",
+    "manufacturer": "jetbrains",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "JetBrains Omea Reader"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "comma-feed": {
+    "name": "CommaFeed",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CommaFeed"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pod-puppy": {
+    "name": "PodPuppy",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodPuppy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "play-a-pod": {
+    "name": "Playapod",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Playapod"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "play-a-pod-lite": {
+    "name": "Playapod Lite",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Playapod Lite"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "castget": {
+    "name": "castget",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "castget"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "castero": {
+    "name": "castero",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "castero"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hackermention": {
+    "name": "hackermention",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "feedburner": {
+    "name": "FeedBurner",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FeedBurner"
+      ]
     },
     "engine": "unknown"
   }

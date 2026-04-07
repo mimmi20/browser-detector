@@ -1598,10 +1598,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.3",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -1733,10 +1733,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.3",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -2768,10 +2768,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.3",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -4456,7 +4456,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (KHTML, like Gecko; compatible; BlogBeatbot/2.5; +https://www.blogbeat.nl/dotbot.html)"
+      "user-agent": "Mozilla / Safari Browser"
     },
     "device": {
       "architecture": null,
@@ -4494,9 +4494,9 @@
       "bits": null
     },
     "engine": {
-      "name": "KHTML",
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   }
 ]

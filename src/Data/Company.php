@@ -341,7 +341,7 @@ enum Company: string implements CompanyInterface
 
     case yahoo = 'Yahoo';
 
-    case wordpress = 'WordPress';
+    case automattic = 'Automattic';
 
     case zoom = 'Zoom';
 
@@ -3569,6 +3569,104 @@ enum Company: string implements CompanyInterface
 
     case detectify = 'Detectify';
 
+    case ritlabs = 'Ritlabs';
+
+    case jetbrains = 'JetBrains';
+
+    case hiremco = 'Hiremco';
+
+    case ecostar = 'EcoStar';
+
+    case caixun = 'Caixun';
+
+    case mag = 'MAG';
+
+    case dolyHorjun = 'Doly Horjun';
+
+    case wpBeginner = 'WPBeginner';
+
+    case proinity = 'proinity';
+
+    case botify = 'BOTIFY';
+
+    case sirdata = 'Sirdata';
+
+    case shareaholic = 'Shareaholic';
+
+    case youview = 'YouView TV';
+
+    case wdes = 'WDES';
+
+    case vk = 'VK';
+
+    case trentWiles = 'Trent Wiles';
+
+    case modesco = 'Modesco';
+
+    case kontur = 'Kontur';
+
+    case dawap = 'DAWAP';
+
+    case tactikast = 'Tactikast';
+
+    case cyble = 'Cyble';
+
+    case syzygyMarketing = 'Syzygy Marketing';
+
+    case heureka = 'Heureka';
+
+    case sarosys = 'Sarosys';
+
+    case webTehRazrabotka = 'WebTehRazrabotka';
+
+    case genieo = 'genieo';
+
+    case xgem = 'XGEM';
+
+    case sagemcom = 'Sagemcom';
+
+    case bittorrent = 'BitTorrent';
+
+    case uptimeRobot = 'Uptime Robot';
+
+    case regRu = 'reg.ru';
+
+    case quarta = 'Quarta';
+
+    case onlineOrNot = 'OnlineOrNot';
+
+    case siaOpenIdea = 'SIA Open Idea';
+
+    case lightbend = 'Lightbend';
+
+    case techFusion = 'TechFusion';
+
+    case madeForNet = 'MadeForNet';
+
+    case disqus = 'Disqus';
+
+    case kevinBeaumont = 'Kevin Beaumont';
+
+    case functionalSoftware = 'Functional Software';
+
+    case louisLam = 'Louis Lam';
+
+    case statista = 'Statista';
+
+    case hypefactors = 'Hypefactors';
+
+    case sovereignStack = 'Sovereign Stack';
+
+    case bizone = 'BiZone';
+
+    case dgc = 'DGC';
+
+    case newslit = 'Newslit';
+
+    case primis = 'Primis';
+
+    case entfer = 'Entfer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -3737,7 +3835,7 @@ enum Company: string implements CompanyInterface
             'xiaomi', 'xiaomi tech' => self::xiaomi,
             'yandex', 'yandex llc' => self::yandex,
             'yahoo', 'yahoo! inc.' => self::yahoo,
-            'wordpress', 'wordpress.org' => self::wordpress,
+            'automattic' => self::automattic,
             'zoom', 'zoom communications inc.' => self::zoom,
             'qwant', 'qwant sas' => self::qwant,
             'qiuwoky' => self::qiuwoky,
@@ -4679,7 +4777,7 @@ enum Company: string implements CompanyInterface
             'miada' => self::miada,
             'remmerwilts', 'remmer-wilts', 'remmer wilts' => self::remmerWilts,
             'seikoepson', 'seiko-epson', 'seiko epson corporation', 'seiko epson' => self::seikoEpson,
-            'uptime' => self::uptime,
+            'uptime', 'uptime.com llc' => self::uptime,
             'sprious', 'sprious llc' => self::sprious,
             'jaytech', 'jay-tech' => self::jayTech,
             'linkdex', 'linkdex limited' => self::linkdex,
@@ -5351,6 +5449,55 @@ enum Company: string implements CompanyInterface
             'nationalszechenyilibrary', 'national szechenyi library', 'national-szechenyi-library' => self::nationalSzechenyiLibrary,
             'paqle', 'paqle a/s' => self::paqle,
             'detectify', 'detectify ab' => self::detectify,
+            'ritlabs', 'ritlabs srl' => self::ritlabs,
+            'jetbrains', 'jetbrains s.r.o.' => self::jetbrains,
+            'hiremco' => self::hiremco,
+            'ecostar' => self::ecostar,
+            'caixun' => self::caixun,
+            'mag' => self::mag,
+            'dolyhorjun', 'doly horjun hj', 'doly-horjun', 'doly horjun' => self::dolyHorjun,
+            'wpbeginner', 'wpbeginner, llc', 'wp-beginner' => self::wpBeginner,
+            'proinity', 'proinity llc' => self::proinity,
+            'botify', 'botify sas' => self::botify,
+            'sirdata', 'sirdata sas' => self::sirdata,
+            'shareaholic', 'shareaholic, inc.' => self::shareaholic,
+            'youview', 'youview tv ltd', 'youview tv' => self::youview,
+            'wdes', 'wdes sas' => self::wdes,
+            'vk' => self::vk,
+            'trentwiles', 'trent-wiles', 'trent wiles' => self::trentWiles,
+            'modesco' => self::modesco,
+            'kontur' => self::kontur,
+            'dawap', 'dawap sarl' => self::dawap,
+            'tactikast' => self::tactikast,
+            'cyble', 'cyble inc.' => self::cyble,
+            'syzygymarketing', 'syzygy marketing, llc', 'syzygy-marketing', 'syzygy marketing' => self::syzygyMarketing,
+            'heureka', 'heureka group a.s.' => self::heureka,
+            'sarosys', 'sarosys llc' => self::sarosys,
+            'webtehrazrabotka', 'webtehrazrabotka llc' => self::webTehRazrabotka,
+            'genieo' => self::genieo,
+            'xgem' => self::xgem,
+            'sagemcom' => self::sagemcom,
+            'bittorrent', 'bittorrent limited' => self::bittorrent,
+            'uptimerobot', 'uptime robot s.r.o.', 'uptime-robot', 'uptime robot' => self::uptimeRobot,
+            'regru', 'reg.ru llc', 'reg-ru', 'reg.ru' => self::regRu,
+            'quarta', 'quarta llc' => self::quarta,
+            'onlineornot', 'onlineornot sasu', 'online-or-not' => self::onlineOrNot,
+            'siaopenidea', 'sia-open-idea', 'sia open idea' => self::siaOpenIdea,
+            'lightbend', 'lightbend, inc.' => self::lightbend,
+            'techfusion', 'techfusion ltd', 'tech-fusion' => self::techFusion,
+            'madefornet', 'made-for-net' => self::madeForNet,
+            'disqus', 'disqus, inc.' => self::disqus,
+            'kevinbeaumont', 'kevin-beaumont', 'kevin beaumont' => self::kevinBeaumont,
+            'functionalsoftware', 'functional software, inc.', 'functional-software', 'functional software' => self::functionalSoftware,
+            'louislam', 'louis-lam', 'louis lam' => self::louisLam,
+            'statista', 'statista, inc.' => self::statista,
+            'hypefactors', 'hypefactors a/s' => self::hypefactors,
+            'sovereignstack', 'sovereign stack, llc', 'sovereign-stack', 'sovereign stack' => self::sovereignStack,
+            'bizone', 'bizone lcc' => self::bizone,
+            'dgc', 'dgc verwaltungs gmbh' => self::dgc,
+            'newslit', 'newslit, llc.' => self::newslit,
+            'primis', 'm.d. primis technologies ltd.' => self::primis,
+            'entfer', 'entfer ltd.' => self::entfer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -5405,7 +5552,6 @@ enum Company: string implements CompanyInterface
             self::xiaomi => 'Xiaomi Tech',
             self::yandex => 'Yandex LLC',
             self::yahoo => 'Yahoo! Inc.',
-            self::wordpress => 'wordpress.org',
             self::zoom => 'Zoom Communications Inc.',
             self::qwant => 'QWANT SAS',
             self::v7 => 'V7 Devices',
@@ -6042,6 +6188,40 @@ enum Company: string implements CompanyInterface
             self::zoho => 'Zoho Corporation Pvt. Ltd.',
             self::paqle => 'Paqle A/S',
             self::detectify => 'Detectify AB',
+            self::ritlabs => 'Ritlabs SRL',
+            self::jetbrains => 'JetBrains s.r.o.',
+            self::dolyHorjun => 'Doly Horjun HJ',
+            self::wpBeginner => 'WPBeginner, LLC',
+            self::proinity => 'proinity LLC',
+            self::botify => 'BOTIFY SAS',
+            self::sirdata => 'Sirdata SAS',
+            self::shareaholic => 'Shareaholic, Inc.',
+            self::youview => 'YouView TV Ltd',
+            self::wdes => 'WDES SAS',
+            self::dawap => 'DAWAP SARL',
+            self::cyble => 'Cyble Inc.',
+            self::syzygyMarketing => 'Syzygy Marketing, LLC',
+            self::heureka => 'Heureka Group a.s.',
+            self::sarosys => 'Sarosys LLC',
+            self::webTehRazrabotka => 'WebTehRazrabotka LLC',
+            self::bittorrent => 'BitTorrent Limited',
+            self::uptimeRobot => 'Uptime Robot s.r.o.',
+            self::uptime => 'Uptime.com LLC',
+            self::regRu => 'reg.ru LLC',
+            self::quarta => 'Quarta LLC',
+            self::onlineOrNot => 'OnlineOrNot SASU',
+            self::lightbend => 'Lightbend, Inc.',
+            self::techFusion => 'TechFusion Ltd',
+            self::disqus => 'Disqus, Inc.',
+            self::functionalSoftware => 'Functional Software, Inc.',
+            self::statista => 'Statista, Inc.',
+            self::hypefactors => 'Hypefactors A/S',
+            self::sovereignStack => 'Sovereign Stack, LLC',
+            self::bizone => 'BiZone LCC',
+            self::dgc => 'DGC Verwaltungs GmbH',
+            self::newslit => 'Newslit, LLC.',
+            self::primis => 'M.D. Primis Technologies Ltd.',
+            self::entfer => 'Entfer Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6704,6 +6884,21 @@ enum Company: string implements CompanyInterface
             self::macroLabs => 'macro-labs',
             self::gumGum => 'gum-gum',
             self::nationalSzechenyiLibrary => 'national-szechenyi-library',
+            self::dolyHorjun => 'doly-horjun',
+            self::wpBeginner => 'wp-beginner',
+            self::trentWiles => 'trent-wiles',
+            self::syzygyMarketing => 'syzygy-marketing',
+            self::webTehRazrabotka => 'webtehrazrabotka',
+            self::uptimeRobot => 'uptime-robot',
+            self::regRu => 'reg-ru',
+            self::onlineOrNot => 'online-or-not',
+            self::siaOpenIdea => 'sia-open-idea',
+            self::techFusion => 'tech-fusion',
+            self::madeForNet => 'made-for-net',
+            self::kevinBeaumont => 'kevin-beaumont',
+            self::functionalSoftware => 'functional-software',
+            self::louisLam => 'louis-lam',
+            self::sovereignStack => 'sovereign-stack',
             default => $this->name,
         };
     }

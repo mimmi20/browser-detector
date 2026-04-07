@@ -214,8 +214,10 @@
     "manufacturer": "sindre sorhus",
     "type": "library",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "got"
+      ]
     },
     "engine": "unknown"
   },
@@ -906,6 +908,254 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Down"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gvfs": {
+    "name": "gvfs",
+    "manufacturer": "the-gnome-project",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gvfs"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "libsyn": {
+    "name": "Libsyn",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "tcl-http-client": {
+    "name": "Tcl http client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Tcl http client package"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ffmpeg": {
+    "name": "ffmpeg",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Lavf"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gstreamer": {
+    "name": "GStreamer",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GStreamer souphttpsrc libsoup",
+        "GStreamer souphttpsrc",
+        "GStreamer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "free-download-manager": {
+    "name": "Free Download Manager",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FDM"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "resty-requests": {
+    "name": "resty-requests",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "pr-downloader": {
+    "name": "PRDownloader",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "libsoup": {
+    "name": "libsoup",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "libsoup"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "http-tiny": {
+    "name": "HTTP:Tiny",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HTTP-Tiny"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "git-annex": {
+    "name": "git-annex",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "git-annex"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "file-downloader": {
+    "name": "FileDownloader",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FileDownloader"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "carrier-wave": {
+    "name": "CarrierWave",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CarrierWave"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "utorrent": {
+    "name": "uTorrent",
+    "manufacturer": "bittorrent",
+    "type": "library",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "babashka-http-client": {
+    "name": "Babashka HTTP Client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "babashka\\.http-client"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cpanel-http-client": {
+    "name": "cPanel HTTP Client",
+    "manufacturer": "webpros",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cpanel-HTTP-Client"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "python-xml-rpc": {
+    "name": "XML-RPC",
+    "manufacturer": "python-software-foundation",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Python-xmlrpc"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "insomnia-rest-client": {
+    "name": "Insomnia REST Client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "insomnia"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "akka-http": {
+    "name": "Akka HTTP",
+    "manufacturer": "lightbend",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "akka-http"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webchk": {
+    "name": "webchk",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "webchk v",
+        "webchk"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "req": {
+    "name": "req",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "req\\/v",
+        "req"
       ]
     },
     "engine": "unknown"

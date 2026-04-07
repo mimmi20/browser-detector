@@ -239,5 +239,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "the-bat": {
+    "name": "The Bat!",
+    "manufacturer": "ritlabs",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "The Bat!"
+      ]
+    },
+    "engine": "unknown"
   }
 }

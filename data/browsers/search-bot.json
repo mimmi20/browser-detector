@@ -589,6 +589,18 @@
     },
     "engine": "unknown"
   },
+  "daum": {
+    "name": "Daum",
+    "manufacturer": "daum-corporation",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Daum"
+      ]
+    },
+    "engine": "unknown"
+  },
   "ichiro mobile bot": {
     "name": "Ichiro Mobile Bot",
     "manufacturer": "ichiro",
@@ -666,6 +678,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sogou\\-Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sogou-pic-spider": {
+    "name": "Sogou Pic Spider",
+    "manufacturer": "sogou",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sogou Pic Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sogou-head-spider": {
+    "name": "Sogou Head Spider",
+    "manufacturer": "sogou",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sogou head spider"
       ]
     },
     "engine": "unknown"
@@ -762,6 +798,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-Adwords\\-DisplayAds\\-WebRender"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-adwords-displayads": {
+    "name": "Google Adwords DisplayAds",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google\\-Adwords\\-DisplayAds"
       ]
     },
     "engine": "unknown"
@@ -1044,7 +1092,7 @@
     },
     "engine": "unknown"
   },
-  "sosospider": {
+  "soso-spider": {
     "name": "Soso Spider",
     "manufacturer": "soso",
     "type": "search-bot",
@@ -1052,6 +1100,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sosospider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "soso-image-spider": {
+    "name": "Soso Image Spider",
+    "manufacturer": "soso",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sosoimagespider"
       ]
     },
     "engine": "unknown"
@@ -1280,6 +1340,139 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YandexUserproxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zumbot": {
+    "name": "ZumBot",
+    "manufacturer": "zum-internet-corp",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ZumBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-market": {
+    "name": "YandexMarket",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexMarket"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-render-resources-bot": {
+    "name": "YandexRenderResourcesBot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexRenderResourcesBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "omgili-bot": {
+    "name": "Omgili Bot",
+    "manufacturer": "webz.io",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "omgilibot",
+        "omgili"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ichiro bot": {
+    "name": "Goo",
+    "manufacturer": "ntt-resonant",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ichiro"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-metrika": {
+    "name": "YandexMetrika",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexMetrika"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-page-checker": {
+    "name": "YandexPagechecker",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexPagechecker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-shopping-quality": {
+    "name": "Google Shopping Quality",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Shopping-Quality"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "paper.li bot": {
+    "name": "Paper.li Bot",
+    "manufacturer": "paper.li",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PaperLiBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "awariobot": {
+    "name": "AwarioBot",
+    "manufacturer": "tech-fusion",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AwarioBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "buck": {
+    "name": "Buck",
+    "manufacturer": "hypefactors",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Buck"
       ]
     },
     "engine": "unknown"

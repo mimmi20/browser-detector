@@ -164,7 +164,7 @@
   },
   "uptimerobot": {
     "name": "UptimeRobot",
-    "manufacturer": "unknown",
+    "manufacturer": "uptime-robot",
     "type": "site-monitor",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -181,6 +181,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Uptimebot",
         "Uptime"
       ]
     },
@@ -259,7 +260,7 @@
   },
   "uptime-kuma": {
     "name": "Uptime-Kuma",
-    "manufacturer": "unknown",
+    "manufacturer": "louis-lam",
     "type": "site-monitor",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -384,6 +385,128 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DynatraceSynthetic"
+      ]
+    },
+    "engine": null
+  },
+  "bbc-forge-url-monitor": {
+    "name": "BBC Forge URL Monitor",
+    "manufacturer": "bbc",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "bbc-page-monitor": {
+    "name": "BBC Page Monitor",
+    "manufacturer": "bbc",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "chartable": {
+    "name": "Chartable",
+    "manufacturer": "spotify",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "cloudflare-diagnostics": {
+    "name": "Cloudflare Diagnostics",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "cloudflare-traffic-manager": {
+    "name": "Cloudflare Traffic Manager",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cloudflare-Traffic-Manager"
+      ]
+    },
+    "engine": null
+  },
+  "cloudflare-ssl-detector": {
+    "name": "Cloudflare SSL Detector",
+    "manufacturer": "cloud-flare",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ahrefs-site-audit": {
+    "name": "AhrefsSiteAudit",
+    "manufacturer": "ahrefs",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AhrefsSiteAudit"
+      ]
+    },
+    "engine": null
+  },
+  "online-or-not-bot": {
+    "name": "OnlineOrNot Bot",
+    "manufacturer": "online-or-not",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OnlineOrNot\\.com_bot_"
+      ]
+    },
+    "engine": null
+  },
+  "360-monitoring": {
+    "name": "360 Monitoring",
+    "manufacturer": "plesk",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "monitoring360bot"
+      ]
+    },
+    "engine": null
+  },
+  "lastmod-bot": {
+    "name": "LastMod Bot",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LastModBot"
+      ]
+    },
+    "engine": null
+  },
+  "amazon-elb": {
+    "name": "Amazon ELB",
+    "manufacturer": "amazon",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ELB-HealthChecker"
       ]
     },
     "engine": null
