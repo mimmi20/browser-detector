@@ -10990,6 +10990,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Entfer',
                 'key' => 'entfer',
             ],
+            [
+                'type' => 'LY',
+                'name' => 'LY Corporation',
+                'brandname' => 'LY',
+                'key' => 'ly',
+            ],
+            [
+                'type' => 'Jerry Hardee',
+                'name' => 'Jerry Hardee',
+                'brandname' => 'Jerry Hardee',
+                'key' => 'jerry-hardee',
+            ],
+            [
+                'type' => 'VIP nytt',
+                'name' => 'VIP nytt',
+                'brandname' => 'VIP nytt',
+                'key' => 'vip-nytt',
+            ],
         ];
     }
 

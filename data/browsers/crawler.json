@@ -4820,7 +4820,7 @@
   "buckyohare": {
     "name": "BuckyOHare",
     "manufacturer": "hypefactors",
-    "type": "search-bot",
+    "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
@@ -4832,7 +4832,7 @@
   "project-patchwatch": {
     "name": "Project Patchwatch",
     "manufacturer": "unknown",
-    "type": "search-bot",
+    "type": "crawler",
     "version": {
       "factory": null,
       "search": null
@@ -4842,7 +4842,7 @@
   "wheregoes-redirect-checker": {
     "name": "WhereGoes Redirect Checker",
     "manufacturer": "sovereign-stack",
-    "type": "search-bot",
+    "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
@@ -4917,6 +4917,40 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EntferBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "line-spider": {
+    "name": "Linespider",
+    "manufacturer": "ly",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Linespider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "crawl-dad": {
+    "name": "Crawldad",
+    "manufacturer": "jerry-hardee",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sitemap-parser-vipnytt": {
+    "name": "VIPnytt SitemapParser",
+    "manufacturer": "vip-nytt",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SitemapParser-VIPnytt"
       ]
     },
     "engine": "unknown"

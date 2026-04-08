@@ -3667,6 +3667,12 @@ enum Company: string implements CompanyInterface
 
     case entfer = 'Entfer';
 
+    case ly = 'LY';
+
+    case jerryHardee = 'Jerry Hardee';
+
+    case vipNytt = 'VIP nytt';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5498,6 +5504,9 @@ enum Company: string implements CompanyInterface
             'newslit', 'newslit, llc.' => self::newslit,
             'primis', 'm.d. primis technologies ltd.' => self::primis,
             'entfer', 'entfer ltd.' => self::entfer,
+            'ly', 'ly corporation' => self::ly,
+            'jerryhardee', 'jerry-hardee', 'jerry hardee' => self::jerryHardee,
+            'vipnytt', 'vip-nytt', 'vip nytt' => self::vipNytt,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6222,6 +6231,7 @@ enum Company: string implements CompanyInterface
             self::newslit => 'Newslit, LLC.',
             self::primis => 'M.D. Primis Technologies Ltd.',
             self::entfer => 'Entfer Ltd.',
+            self::ly => 'LY Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -6899,6 +6909,8 @@ enum Company: string implements CompanyInterface
             self::functionalSoftware => 'functional-software',
             self::louisLam => 'louis-lam',
             self::sovereignStack => 'sovereign-stack',
+            self::jerryHardee => 'jerry-hardee',
+            self::vipNytt => 'vip-nytt',
             default => $this->name,
         };
     }
