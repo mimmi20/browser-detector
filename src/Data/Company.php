@@ -3673,6 +3673,16 @@ enum Company: string implements CompanyInterface
 
     case vipNytt = 'VIP nytt';
 
+    case radioMast = 'Radio Mast';
+
+    case lumtel = 'Lumtel';
+
+    case choosito = 'Choosito!';
+
+    case parsely = 'Parsely';
+
+    case appSignal = 'AppSignal';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5507,6 +5517,11 @@ enum Company: string implements CompanyInterface
             'ly', 'ly corporation' => self::ly,
             'jerryhardee', 'jerry-hardee', 'jerry hardee' => self::jerryHardee,
             'vipnytt', 'vip-nytt', 'vip nytt' => self::vipNytt,
+            'radiomast', 'radio mast, inc.', 'radio-mast', 'radio mast' => self::radioMast,
+            'lumtel', 'lumtel as' => self::lumtel,
+            'choosito', 'choosito! inc.', 'choosito!' => self::choosito,
+            'parsely', 'parsely, inc.' => self::parsely,
+            'appsignal', 'appsignal b.v.', 'app-signal' => self::appSignal,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6232,6 +6247,11 @@ enum Company: string implements CompanyInterface
             self::primis => 'M.D. Primis Technologies Ltd.',
             self::entfer => 'Entfer Ltd.',
             self::ly => 'LY Corporation',
+            self::radioMast => 'Radio Mast, Inc.',
+            self::lumtel => 'Lumtel AS',
+            self::choosito => 'Choosito! Inc.',
+            self::parsely => 'Parsely, Inc.',
+            self::appSignal => 'AppSignal B.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6911,6 +6931,8 @@ enum Company: string implements CompanyInterface
             self::sovereignStack => 'sovereign-stack',
             self::jerryHardee => 'jerry-hardee',
             self::vipNytt => 'vip-nytt',
+            self::radioMast => 'radio-mast',
+            self::appSignal => 'app-signal',
             default => $this->name,
         };
     }

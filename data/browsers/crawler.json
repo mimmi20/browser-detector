@@ -4954,5 +4954,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "lumtel-bot": {
+    "name": "LumtelBot",
+    "manufacturer": "lumtel",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LumtelBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "choosito": {
+    "name": "Choosito",
+    "manufacturer": "choosito",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Choosito"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "parse-ly-scraper": {
+    "name": "parse.ly scraper",
+    "manufacturer": "parsely",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "parse\\.ly scraper"
+      ]
+    },
+    "engine": "unknown"
   }
 }

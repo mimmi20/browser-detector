@@ -11008,6 +11008,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VIP nytt',
                 'key' => 'vip-nytt',
             ],
+            [
+                'type' => 'Radio Mast',
+                'name' => 'Radio Mast, Inc.',
+                'brandname' => 'Radio Mast',
+                'key' => 'radio-mast',
+            ],
+            [
+                'type' => 'Lumtel',
+                'name' => 'Lumtel AS',
+                'brandname' => 'Lumtel',
+                'key' => 'lumtel',
+            ],
+            [
+                'type' => 'Choosito!',
+                'name' => 'Choosito! Inc.',
+                'brandname' => 'Choosito!',
+                'key' => 'choosito',
+            ],
+            [
+                'type' => 'Parsely',
+                'name' => 'Parsely, Inc.',
+                'brandname' => 'Parsely',
+                'key' => 'parsely',
+            ],
+            [
+                'type' => 'AppSignal',
+                'name' => 'AppSignal B.V.',
+                'brandname' => 'AppSignal',
+                'key' => 'app-signal',
+            ],
         ];
     }
 

@@ -4405,8 +4405,10 @@
     "manufacturer": "netflix",
     "type": "mobile-application",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Netflix"
+      ]
     },
     "engine": null
   },
