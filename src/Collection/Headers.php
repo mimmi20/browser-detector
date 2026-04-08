@@ -342,6 +342,7 @@ final readonly class Headers
                             case 'adsbot google-mobile':
                             case 'quark':
                             case 'seolyt-bot':
+                            case 'bingsearch':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 

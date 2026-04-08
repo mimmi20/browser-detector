@@ -11038,6 +11038,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'AppSignal',
                 'key' => 'app-signal',
             ],
+            [
+                'type' => 'Hi Security Lab',
+                'name' => 'Hi Security Lab',
+                'brandname' => 'Hi Security Lab',
+                'key' => 'hi-security',
+            ],
         ];
     }
 
