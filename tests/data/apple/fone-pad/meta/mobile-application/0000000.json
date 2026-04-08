@@ -23,10 +23,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "9.3.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -68,10 +68,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "9.2.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -113,10 +113,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "9.3.4",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -158,10 +158,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "11.0.2",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -203,10 +203,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "11.0.2",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -338,10 +338,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "11.2.2",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -383,10 +383,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "11.2.5",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -428,10 +428,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "Apple",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.3.1",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -676,141 +676,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,4;FBMD/iPad;FBSN/iOS;FBSV/13.2;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.11.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 7,4",
-      "marketingName": "iPad Pro 10.5\" 4G",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2224,
-        "height": 1668,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "13.2.0",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/206.0.0.35.103;FBBV/140132201;FBDV/iPad5,4;FBMD/iPad;FBSN/iOS;FBSV/13.1.3;FBSS/2;FBCR/Telekom.de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 5,4",
-      "marketingName": "iPad Air 2 4G",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "13.1.3",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "206.0.0.35.103",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,8;FBMD/iPad;FBSN/iOS;FBSV/13.1.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Carrier] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 6,8",
-      "marketingName": "iPad Pro 12.9\" 4G",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2732,
-        "height": 2048,
-        "touch": true,
-        "size": 12.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "13.1.3",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_2_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad11,4;FBMD/iPad;FBSN/iOS;FBSV/13.2.2;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)"
     },
     "device": {
@@ -833,10 +698,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "13.2.2",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -878,10 +743,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "13.1.3",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -923,55 +788,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "13.3.0",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,4;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/o2 - de] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 6,4",
-      "marketingName": "iPad Pro 9.7\" 4G",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "13.3.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1036,96 +856,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,2;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/iPad] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 7,2",
-      "marketingName": "iPad Pro 12.9\" (2nd Gen) 4G",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2732,
-        "height": 2048,
-        "touch": true,
-        "size": 12.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "13.3.0",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,12;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/o2 - de] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 6,12",
-      "marketingName": "iPad 9.7\" (5th Gen) 4G",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2732,
-        "height": 2048,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "13.3.0",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 [FBAN/MessengerForiOS;FBAV/70.0.0.30.56;FBBV/29580657;FBRV/0;FBDV/iPad6,8;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.1;FBSS/2;FBCR/vodafoneUK;FBID/tablet;FBLC/en_GB;FBOP/5]"
     },
     "device": {
@@ -1148,10 +878,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "9.3.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1193,10 +923,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "10.0.2",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1238,10 +968,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "10.3.3",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1283,10 +1013,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "13.3.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1328,10 +1058,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "13.3.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1598,10 +1328,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "13.4.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1688,10 +1418,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "13.4.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1733,10 +1463,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "13.4.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1788,51 +1518,6 @@
       "name": "Instagram App",
       "modus": null,
       "version": "144.0.0.17.119",
-      "manufacturer": "Meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad5,2;FBMD/iPad;FBSN/iOS;FBSV/13.5.1;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5] comdirect/1.0 (appVersion:20.9.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 5,2",
-      "marketingName": "iPad Mini 4 4G",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 7.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "13.5.1",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
       "manufacturer": "Meta",
       "type": "mobile-application",
       "isbot": false,
@@ -1913,10 +1598,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "14.2.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -1958,10 +1643,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "12.5.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2048,10 +1733,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "14.2.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2093,10 +1778,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2138,10 +1823,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2183,10 +1868,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2228,10 +1913,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2273,10 +1958,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2318,10 +2003,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2363,10 +2048,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2408,10 +2093,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2453,10 +2138,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.4.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2543,10 +2228,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "16.3.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2588,10 +2273,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "16.5.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2633,10 +2318,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "12.5.4",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2678,10 +2363,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "12.5.5",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2723,10 +2408,10 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "10.3.2",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2768,10 +2453,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "17.5.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2813,10 +2498,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "17.5.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2858,10 +2543,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "17.5.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2903,10 +2588,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "17.5.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2948,10 +2633,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "18.6.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -2993,10 +2678,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.4.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -3038,10 +2723,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.4.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -3083,10 +2768,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.4.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -3128,10 +2813,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -3173,10 +2858,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -3218,10 +2903,10 @@
       "bits": null
     },
     "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "15.0.1",
-      "manufacturer": "Apple",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
