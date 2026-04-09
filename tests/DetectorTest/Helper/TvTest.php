@@ -96,6 +96,7 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (Astro;KSTB6112;2.2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15'],
             ['Mozilla/5.0 (Linux; Android 10; HIREMCO Matrix Build/QP1A.191105.004) IPTV Pro/6.0.8'],
             ['Mozilla/5.0 (TV; rv:78.0) Gecko/78.0 Firefox/78.0 TvBrowser/5.0'],
+            ['Mozilla/5.0 (compatible; U; NETFLIX) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.0 Safari/533.3 Netflix/3.2 (DEVTYPE=RKU-42XXX-; CERTVER=0) QtWebKit/2.2, Roku 3/7.0 (Roku, 4200X, Wireless)'],
         ];
     }
 

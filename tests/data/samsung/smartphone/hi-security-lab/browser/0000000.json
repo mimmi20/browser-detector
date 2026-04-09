@@ -30,10 +30,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "2.4.33.115728",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -75,10 +75,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "2.4.33.115728",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -120,10 +120,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "2.4.35.115731",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -165,10 +165,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "4.23.7.1980",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -210,10 +210,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "2.4.35.115731",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -255,10 +255,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "2.4.35.115731",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -300,10 +300,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "2.4.35.115731",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -345,10 +345,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "4.23.4.1971",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -390,10 +390,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "2.4.35.115731",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -435,10 +435,10 @@
       "bits": null
     },
     "client": {
-      "name": "Quick Browser",
+      "name": "Hawk Quick Browser",
       "modus": null,
       "version": "4.23.7.1980",
-      "manufacturer": "carlrogers",
+      "manufacturer": "Hi Security Lab",
       "type": "browser",
       "isbot": false,
       "bits": null
@@ -446,6 +446,51 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.88",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; de-de; SM-A135F Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.164 Mobile Safari/537.36 Hawk/QuickBrowser/4.23.7.1980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A135F",
+      "marketingName": "Galaxy A13",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Hawk Quick Browser",
+      "modus": null,
+      "version": "4.23.7.1980",
+      "manufacturer": "Hi Security Lab",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.164",
       "manufacturer": "Google"
     }
   }

@@ -11044,6 +11044,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Hi Security Lab',
                 'key' => 'hi-security',
             ],
+            [
+                'type' => 'Beelink',
+                'name' => 'Beelink',
+                'brandname' => 'Beelink',
+                'key' => 'beelink',
+            ],
+            [
+                'type' => 'Barcada',
+                'name' => 'Barcada LLC',
+                'brandname' => 'Barcada',
+                'key' => 'barcada',
+            ],
         ];
     }
 

@@ -8218,6 +8218,64 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    "sec-ch-ua-platform" => "\"Android\"",
+            "x-requested-with" => "com.kaweapp.webexplorer",
+            "sec-ch-ua" => "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Android WebView\";v=\"146\"",
+            "sec-ch-ua-mobile" => "?1",
+            "user-agent" => "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.164 Mobile Safari/537.36 webexplorer/5"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-platform" => "\"Android\"",
+            "x-requested-with" => "com.kaweapp.webexplorer",
+            "sec-ch-ua" => "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Android WebView\";v=\"146\"",
+            "sec-ch-ua-mobile" => "?1",
+            "user-agent" => "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.164 Mobile Safari/537.36 webexplorer/5"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Mobile Phone',
+                        'marketingName' => 'general Mobile Phone',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '14.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Web Explorer',
+                        'modus' => null,
+                        'version' => '5.0.0',
+                        'manufacturer' => 'Kawe Apps',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '146.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

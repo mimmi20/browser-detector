@@ -4990,5 +4990,39 @@
       ]
     },
     "engine": "unknown"
+  },
+  "barcada": {
+    "name": "Barcada",
+    "manufacturer": "barcada",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Barcada"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "odkl-bot": {
+    "name": "Odnoklassniki Bot",
+    "manufacturer": "vk",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OdklBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "eventures-investment-crawler": {
+    "name": "e.ventures Investment Crawler",
+    "manufacturer": "e.ventures",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }
