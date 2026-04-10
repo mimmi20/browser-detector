@@ -5,11 +5,11 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
+      "deviceName": "general Roku device",
+      "marketingName": "general Roku device",
+      "manufacturer": "Roku",
+      "brand": "Roku",
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -17,9 +17,9 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
       "bits": null
     },
     "os": {

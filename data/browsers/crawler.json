@@ -5024,5 +5024,91 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "locubot": {
+    "name": "Locubot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Locubot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "arachnida web crawler": {
+    "name": "Arachnida Web Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arachnida Web Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ramblermail bot": {
+    "name": "RamblerMail Bot",
+    "manufacturer": "rambler-co",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RamblerMail"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ramblermail-image-proxy": {
+    "name": "RamblerMail Image Proxy",
+    "manufacturer": "rambler-co",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ImageProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "facebookscraper": {
+    "name": "Facebookscraper",
+    "manufacturer": "meta",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "facebookscraper"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "discovered": {
+    "name": "DiscoverEd",
+    "manufacturer": "creative-commons",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DiscoverEd\\/Nutch\\-",
+        "DiscoverEd"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domnutch bot": {
+    "name": "Domnutch Bot",
+    "manufacturer": "nutch-de",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Domnutch\\-Bot",
+        "Nutch\\-"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -11056,6 +11056,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Barcada',
                 'key' => 'barcada',
             ],
+            [
+                'type' => 'Rambler&Co',
+                'name' => 'Rambler&Co',
+                'brandname' => 'Rambler&Co',
+                'key' => 'rambler-co',
+            ],
         ];
     }
 

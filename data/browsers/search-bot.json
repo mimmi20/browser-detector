@@ -1486,5 +1486,27 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "wesee:ads": {
+    "name": "WeSEE:Ads",
+    "manufacturer": "wesee",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WeSEE:Ads"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-news-links": {
+    "name": "Yandex News Links",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

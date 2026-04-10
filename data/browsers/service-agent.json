@@ -483,5 +483,30 @@
       ]
     },
     "engine": null
+  },
+  "hggh screenshot system with phantomjs": {
+    "name": "HggH Screenshot System with PhantomJS",
+    "manufacturer": "jonas-genannt",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HggH PhantomJS Screenshoter"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seznam screenshot generator": {
+    "name": "Seznam Screenshot Generator",
+    "manufacturer": "seznam",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SeznamScreenshotGenerator",
+        "Seznam screenshot-generator"
+      ]
+    },
+    "engine": "unknown"
   }
 }

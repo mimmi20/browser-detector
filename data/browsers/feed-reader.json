@@ -592,5 +592,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "gpodder": {
+    "name": "gPodder",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gPodder"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bash-podder": {
+    "name": "BashPodder",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BashPodder"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rss-junkie": {
+    "name": "RSS Junkie",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RSS Junkie"
+      ]
+    },
+    "engine": "unknown"
   }
 }

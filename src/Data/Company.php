@@ -3689,6 +3689,8 @@ enum Company: string implements CompanyInterface
 
     case barcada = 'Barcada';
 
+    case ramblerCo = 'Rambler&Co';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5531,6 +5533,7 @@ enum Company: string implements CompanyInterface
             'hisecuritylab', 'hi-security', 'hi security lab' => self::hiSecurityLab,
             'beelink' => self::beelink,
             'barcada', 'barcada llc' => self::barcada,
+            'ramblerco', 'rambler&co', 'rambler-co' => self::ramblerCo,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6944,6 +6947,7 @@ enum Company: string implements CompanyInterface
             self::radioMast => 'radio-mast',
             self::appSignal => 'app-signal',
             self::hiSecurityLab => 'hi-security',
+            self::ramblerCo => 'rambler-co',
             default => $this->name,
         };
     }

@@ -5950,5 +5950,41 @@
       ]
     },
     "engine": null
+  },
+  "xiino": {
+    "name": "Xiino",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Xiino"
+      ]
+    },
+    "engine": null
+  },
+  "palmscape": {
+    "name": "Palmscape",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Palmscape"
+      ]
+    },
+    "engine": null
+  },
+  "bunjalloo": {
+    "name": "Bunjalloo",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bunjalloo"
+      ]
+    },
+    "engine": null
   }
 }

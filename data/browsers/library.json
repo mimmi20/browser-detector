@@ -1159,5 +1159,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "smartsite httpclient": {
+    "name": "Smartsite HTTPClient",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Smartsite HTTPClient"
+      ]
+    },
+    "engine": "unknown"
   }
 }

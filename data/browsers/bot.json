@@ -330,18 +330,6 @@
     },
     "engine": "unknown"
   },
-  "arachnida web crawler": {
-    "name": "Arachnida Web Crawler",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Arachnida Web Crawler"
-      ]
-    },
-    "engine": "unknown"
-  },
   "archive-de.com": {
     "name": "archive-de.com bot",
     "manufacturer": "unknown",
@@ -1222,19 +1210,6 @@
     },
     "engine": "unknown"
   },
-  "discovered": {
-    "name": "DiscoverEd",
-    "manufacturer": "creative-commons",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "DiscoverEd\\/Nutch\\-",
-        "DiscoverEd"
-      ]
-    },
-    "engine": "unknown"
-  },
   "discovery bot": {
     "name": "Discovery Bot",
     "manufacturer": "discovery-engine",
@@ -1327,19 +1302,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DomainSigmaCrawler"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "domnutch bot": {
-    "name": "Domnutch Bot",
-    "manufacturer": "nutch-de",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Domnutch\\-Bot",
-        "Nutch\\-"
       ]
     },
     "engine": "unknown"
@@ -1576,18 +1538,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Exploratodo"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "facebookscraper": {
-    "name": "Facebookscraper",
-    "manufacturer": "meta",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "facebookscraper"
       ]
     },
     "engine": "unknown"
@@ -2290,18 +2240,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hatena::Bookmark"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "hggh screenshot system with phantomjs": {
-    "name": "HggH Screenshot System with PhantomJS",
-    "manufacturer": "jonas-genannt",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "HggH PhantomJS Screenshoter"
       ]
     },
     "engine": "unknown"
@@ -3192,18 +3130,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LoadTimeBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "locubot": {
-    "name": "Locubot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Locubot"
       ]
     },
     "engine": "unknown"
@@ -4362,18 +4288,6 @@
     },
     "engine": "unknown"
   },
-  "ramblermail bot": {
-    "name": "RamblerMail Bot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "RamblerMail"
-      ]
-    },
-    "engine": "unknown"
-  },
   "rankactivelinkbot": {
     "name": "RankActiveLinkBot",
     "manufacturer": "unknown",
@@ -4921,19 +4835,6 @@
     },
     "engine": "unknown"
   },
-  "seznam screenshot generator": {
-    "name": "Seznam Screenshot Generator",
-    "manufacturer": "seznam",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "SeznamScreenshotGenerator",
-        "Seznam screenshot-generator"
-      ]
-    },
-    "engine": "unknown"
-  },
   "shopsalad": {
     "name": "Shopsalad",
     "manufacturer": "unknown",
@@ -5038,18 +4939,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sitemap Generator"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "smartsite httpclient": {
-    "name": "Smartsite HTTPClient",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Smartsite HTTPClient"
       ]
     },
     "engine": "unknown"
@@ -6590,18 +6479,6 @@
     },
     "engine": "unknown"
   },
-  "wesee:ads": {
-    "name": "WeSEE:Ads",
-    "manufacturer": "wesee",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "WeSEE:Ads"
-      ]
-    },
-    "engine": "unknown"
-  },
   "whatweb web scanner": {
     "name": "WhatWeb Web Scanner",
     "manufacturer": "andrew-horton",
@@ -7075,16 +6952,6 @@
   "yahooexternalcache": {
     "name": "YahooExternalCache",
     "manufacturer": "yahoo",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
-  "yandex-news-links": {
-    "name": "Yandex News Links",
-    "manufacturer": "yandex",
     "type": "bot",
     "version": {
       "class": null,
