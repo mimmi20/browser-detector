@@ -11062,6 +11062,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Rambler&Co',
                 'key' => 'rambler-co',
             ],
+            [
+                'type' => 'eCairn',
+                'name' => 'eCairn Inc.',
+                'brandname' => 'eCairn',
+                'key' => 'ecairn',
+            ],
+            [
+                'type' => 'Qualys',
+                'name' => 'Qualys, Inc.',
+                'brandname' => 'Qualys',
+                'key' => 'qualys',
+            ],
+            [
+                'type' => 'Analytics SEO',
+                'name' => 'Analytics SEO Limited',
+                'brandname' => 'Analytics SEO',
+                'key' => 'analytics-seo',
+            ],
+            [
+                'type' => 'SEO Engine',
+                'name' => 'SEO Engine',
+                'brandname' => 'SEO Engine',
+                'key' => 'seo-engine',
+            ],
         ];
     }
 

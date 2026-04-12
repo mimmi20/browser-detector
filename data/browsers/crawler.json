@@ -5110,5 +5110,76 @@
       ]
     },
     "engine": "unknown"
+  },
+  "gowiki-bot": {
+    "name": "Gowikibot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gowikibot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ecairn-grabber": {
+    "name": "eCairn-Grabber",
+    "manufacturer": "ecairn",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "eCairn-Grabber"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yahoo-robot-study": {
+    "name": "Yahoo! Robot Study",
+    "manufacturer": "yahoo-japan",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Y!J; for robot study"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "analytics-seo-crawler": {
+    "name": "Analytics SEO Crawler",
+    "manufacturer": "analytics-seo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Curious George"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seo-engine-bot": {
+    "name": "SEO Engine Bot",
+    "manufacturer": "seo-engine",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SEOENGWorldBot",
+        "SEOENGBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "backlink-check-bot": {
+    "name": "BacklinkcheckBot",
+    "manufacturer": "mediagreen",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

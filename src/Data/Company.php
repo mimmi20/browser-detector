@@ -3691,6 +3691,14 @@ enum Company: string implements CompanyInterface
 
     case ramblerCo = 'Rambler&Co';
 
+    case ecairn = 'eCairn';
+
+    case qualys = 'Qualys';
+
+    case analyticsSEO = 'Analytics SEO';
+
+    case seoEngine = 'SEO Engine';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5534,6 +5542,10 @@ enum Company: string implements CompanyInterface
             'beelink' => self::beelink,
             'barcada', 'barcada llc' => self::barcada,
             'ramblerco', 'rambler&co', 'rambler-co' => self::ramblerCo,
+            'ecairn', 'ecairn inc.' => self::ecairn,
+            'qualys', 'qualys, inc.' => self::qualys,
+            'analyticsseo', 'analytics seo limited', 'analytics-seo', 'analytics seo' => self::analyticsSEO,
+            'seoengine', 'seo-engine', 'seo engine' => self::seoEngine,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6265,6 +6277,9 @@ enum Company: string implements CompanyInterface
             self::parsely => 'Parsely, Inc.',
             self::appSignal => 'AppSignal B.V.',
             self::barcada => 'Barcada LLC',
+            self::ecairn => 'eCairn Inc.',
+            self::qualys => 'Qualys, Inc.',
+            self::analyticsSEO => 'Analytics SEO Limited',
             self::unknown => null,
             default => $this->value,
         };
@@ -6948,6 +6963,8 @@ enum Company: string implements CompanyInterface
             self::appSignal => 'app-signal',
             self::hiSecurityLab => 'hi-security',
             self::ramblerCo => 'rambler-co',
+            self::analyticsSEO => 'analytics-seo',
+            self::seoEngine => 'seo-engine',
             default => $this->name,
         };
     }

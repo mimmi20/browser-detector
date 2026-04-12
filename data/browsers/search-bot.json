@@ -1508,5 +1508,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "adcrawler": {
+    "name": "Yahoo! AdCrawler",
+    "manufacturer": "yahoo",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdCrawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

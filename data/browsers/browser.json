@@ -5986,5 +5986,18 @@
       ]
     },
     "engine": null
+  },
+  "pocket-internet-explorer": {
+    "name": "Pocket Internet Explorer",
+    "manufacturer": "microsoft",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pocket Internet Explorer",
+        "MSPIE"
+      ]
+    },
+    "engine": null
   }
 }

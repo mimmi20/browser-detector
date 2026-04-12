@@ -5,7 +5,7 @@
     "/webkit|safari(?!com)|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
     "/(?<![a-zA-Z])iOS/": "webkit",
     "/presto\\/|(?<![o@])opera(?!t)/i": "presto",
-    "/trident|(?<!not )msie|(?<!allow )like gecko/i": "trident",
+    "/trident|(?<!not )msie|(?<!allow )like gecko|mspie|pocket internet explorer/i": "trident",
     "/(?<!like )gecko|firefox|minefield|shiretoko|bonecho|namoroka|treco/i": "gecko"
   },
   "generic": "genericbrowser"
