@@ -1,23 +1,23 @@
 [
   {
     "headers": {
-      "user-agent": "Palmscape/PR5 (PalmPilot Pro; I)"
+      "user-agent": "Bunjalloo/0.7.6(Nintendo DS;U;en)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pilot",
-      "marketingName": "Pilot",
-      "manufacturer": "Palm",
-      "brand": "Palm",
+      "deviceName": "DS",
+      "marketingName": "DS",
+      "manufacturer": "Nintendo",
+      "brand": "Nintendo",
       "dualOrientation": false,
-      "simCount": 1,
+      "simCount": 0,
       "display": {
-        "width": 160,
-        "height": 160,
-        "touch": false,
+        "width": 256,
+        "height": 192,
+        "touch": true,
         "size": null
       },
-      "type": "feature-phone",
+      "type": "mobile-console",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -30,11 +30,11 @@
       "bits": null
     },
     "client": {
-      "name": null,
+      "name": "Bunjalloo",
       "modus": null,
-      "version": null,
+      "version": "0.7.6",
       "manufacturer": "unknown",
-      "type": "unknown",
+      "type": "browser",
       "isbot": false,
       "bits": null
     },

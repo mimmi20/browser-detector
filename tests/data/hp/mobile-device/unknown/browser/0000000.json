@@ -1,14 +1,14 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; YandexNewslinks; +http://yandex.com/bots)"
+      "user-agent": "Palmscape/3.0J [ja] (v. 3.5.2H1.5; 153x130; c8)"
     },
     "device": {
       "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
+      "deviceName": "general HP device",
+      "marketingName": "general HP device",
+      "manufacturer": "HP",
+      "brand": "HP",
       "dualOrientation": null,
       "simCount": 0,
       "display": {
@@ -17,8 +17,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown",
-      "ismobile": false,
+      "type": "mobile-device",
+      "ismobile": true,
       "istv": false,
       "bits": null
     },
@@ -30,12 +30,12 @@
       "bits": null
     },
     "client": {
-      "name": "Yandex News Links",
+      "name": "Palmscape",
       "modus": null,
-      "version": null,
-      "manufacturer": "Yandex",
-      "type": "bot",
-      "isbot": true,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
       "bits": null
     },
     "engine": {

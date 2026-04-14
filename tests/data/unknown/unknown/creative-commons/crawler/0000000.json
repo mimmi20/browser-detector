@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "WeSEE:Ads/PageBot (http://www.wesee.com/bot/)"
+      "user-agent": "DiscoverEd/Nutch-1.7 (OER search crawler; http://wiki.creativecommons.org/DiscoverEd; webmaster@creativecommons.org)"
     },
     "device": {
       "architecture": null,
@@ -30,11 +30,11 @@
       "bits": null
     },
     "client": {
-      "name": "WeSEE:Ads",
+      "name": "DiscoverEd",
       "modus": null,
-      "version": null,
-      "manufacturer": "WeSEE",
-      "type": "bot",
+      "version": "1.7.0",
+      "manufacturer": "Creative Commons",
+      "type": "crawler",
       "isbot": true,
       "bits": null
     },
@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "WeSEE:Ads/PictureBot (http://www.wesee.com/bot/)"
+      "user-agent": "My Nutch Spider/Nutch-1.7 (http://wiki.creativecommons.org/DiscoverEd)"
     },
     "device": {
       "architecture": null,
@@ -75,11 +75,11 @@
       "bits": null
     },
     "client": {
-      "name": "WeSEE:Ads",
+      "name": "DiscoverEd",
       "modus": null,
       "version": null,
-      "manufacturer": "WeSEE",
-      "type": "bot",
+      "manufacturer": "Creative Commons",
+      "type": "crawler",
       "isbot": true,
       "bits": null
     },

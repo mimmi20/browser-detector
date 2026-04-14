@@ -145,7 +145,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $code = array_first(
             array_filter(
                 $results,
-                static fn (string | bool | null $code): bool => is_string($code),
+                is_string(...),
             ),
         );
 

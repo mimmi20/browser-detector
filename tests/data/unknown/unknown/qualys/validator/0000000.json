@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "DiscoverEd/Nutch-1.7 (OER search crawler; http://wiki.creativecommons.org/DiscoverEd; webmaster@creativecommons.org)"
+      "user-agent": "SSL Labs (https://www.ssllabs.com/about/assessment.html)"
     },
     "device": {
       "architecture": null,
@@ -30,12 +30,12 @@
       "bits": null
     },
     "client": {
-      "name": "DiscoverEd",
+      "name": "SSL Labs",
       "modus": null,
-      "version": "1.7.0",
-      "manufacturer": "Creative Commons",
-      "type": "bot",
-      "isbot": true,
+      "version": null,
+      "manufacturer": "Qualys",
+      "type": "validator",
+      "isbot": false,
       "bits": null
     },
     "engine": {
@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "My Nutch Spider/Nutch-1.7 (http://wiki.creativecommons.org/DiscoverEd)"
+      "user-agent": "SSL Labs (https://www.ssllabs.com/)"
     },
     "device": {
       "architecture": null,
@@ -75,12 +75,57 @@
       "bits": null
     },
     "client": {
-      "name": "DiscoverEd",
+      "name": "SSL Labs",
       "modus": null,
       "version": null,
-      "manufacturer": "Creative Commons",
-      "type": "bot",
-      "isbot": true,
+      "manufacturer": "Qualys",
+      "type": "validator",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SSL Labs Renegotiation Tester"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "SSL Labs",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Qualys",
+      "type": "validator",
+      "isbot": false,
       "bits": null
     },
     "engine": {
