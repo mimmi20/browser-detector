@@ -25,7 +25,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
     #[Override]
     public function hasClientCode(string $value): bool
     {
-        $match = preg_match('/xmlhttprequest|fake\.|x\.cpe/i', $value);
+        $match = preg_match('/xmlhttprequest|fake\.|x\.cpe|1\'"/i', $value);
 
         return $match === 0;
     }
@@ -396,6 +396,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'company.thebrowser.arc' => 'arc-search',
             'com.siber.roboform' => 'roboform',
             'com.meecel.feedreader.rssdemonad' => 'rss-demon',
+            'com.ehawk.antivirus.applock.wifi' => 'hi-security',
             default => null,
         };
     }

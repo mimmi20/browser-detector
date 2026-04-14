@@ -2836,6 +2836,51 @@
   },
   {
     "headers": {
+      "user-agent": "facebookcatalog/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Catalog",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Meta",
+      "type": "social-media-agent",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php) _zbot"
     },
     "device": {

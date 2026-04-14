@@ -4820,7 +4820,7 @@
   "buckyohare": {
     "name": "BuckyOHare",
     "manufacturer": "hypefactors",
-    "type": "search-bot",
+    "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
@@ -4832,7 +4832,7 @@
   "project-patchwatch": {
     "name": "Project Patchwatch",
     "manufacturer": "unknown",
-    "type": "search-bot",
+    "type": "crawler",
     "version": {
       "factory": null,
       "search": null
@@ -4842,7 +4842,7 @@
   "wheregoes-redirect-checker": {
     "name": "WhereGoes Redirect Checker",
     "manufacturer": "sovereign-stack",
-    "type": "search-bot",
+    "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
@@ -4918,6 +4918,267 @@
       "search": [
         "EntferBot"
       ]
+    },
+    "engine": "unknown"
+  },
+  "line-spider": {
+    "name": "Linespider",
+    "manufacturer": "ly",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Linespider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "crawl-dad": {
+    "name": "Crawldad",
+    "manufacturer": "jerry-hardee",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sitemap-parser-vipnytt": {
+    "name": "VIPnytt SitemapParser",
+    "manufacturer": "vip-nytt",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SitemapParser-VIPnytt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lumtel-bot": {
+    "name": "LumtelBot",
+    "manufacturer": "lumtel",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LumtelBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "choosito": {
+    "name": "Choosito",
+    "manufacturer": "choosito",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Choosito"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "parse-ly-scraper": {
+    "name": "parse.ly scraper",
+    "manufacturer": "parsely",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "parse\\.ly scraper"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "barcada": {
+    "name": "Barcada",
+    "manufacturer": "barcada",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Barcada"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "odkl-bot": {
+    "name": "Odnoklassniki Bot",
+    "manufacturer": "vk",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OdklBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "eventures-investment-crawler": {
+    "name": "e.ventures Investment Crawler",
+    "manufacturer": "e.ventures",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "locubot": {
+    "name": "Locubot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Locubot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "arachnida web crawler": {
+    "name": "Arachnida Web Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arachnida Web Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ramblermail bot": {
+    "name": "RamblerMail Bot",
+    "manufacturer": "rambler-co",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RamblerMail"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ramblermail-image-proxy": {
+    "name": "RamblerMail Image Proxy",
+    "manufacturer": "rambler-co",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ImageProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "facebookscraper": {
+    "name": "Facebookscraper",
+    "manufacturer": "meta",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "facebookscraper"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "discovered": {
+    "name": "DiscoverEd",
+    "manufacturer": "creative-commons",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DiscoverEd\\/Nutch\\-",
+        "DiscoverEd"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domnutch bot": {
+    "name": "Domnutch Bot",
+    "manufacturer": "nutch-de",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Domnutch\\-Bot",
+        "Nutch\\-"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gowiki-bot": {
+    "name": "Gowikibot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gowikibot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ecairn-grabber": {
+    "name": "eCairn-Grabber",
+    "manufacturer": "ecairn",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "eCairn-Grabber"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yahoo-robot-study": {
+    "name": "Yahoo! Robot Study",
+    "manufacturer": "yahoo-japan",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Y!J; for robot study"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "analytics-seo-crawler": {
+    "name": "Analytics SEO Crawler",
+    "manufacturer": "analytics-seo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Curious George"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seo-engine-bot": {
+    "name": "SEO Engine Bot",
+    "manufacturer": "seo-engine",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SEOENGWorldBot",
+        "SEOENGBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "backlink-check-bot": {
+    "name": "BacklinkcheckBot",
+    "manufacturer": "mediagreen",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": "unknown"
   }

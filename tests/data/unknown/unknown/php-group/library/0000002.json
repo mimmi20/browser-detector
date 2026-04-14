@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "PHP_fladdor.se"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "PHP",
+      "modus": null,
+      "version": null,
+      "manufacturer": "PHP Group",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "PHP_faellestilmelding.dk"
     },
     "device": {
@@ -4443,51 +4488,6 @@
       "name": "PHP",
       "modus": null,
       "version": "5.2.34",
-      "manufacturer": "PHP Group",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PHP/5.2.46"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "PHP",
-      "modus": null,
-      "version": "5.2.46",
       "manufacturer": "PHP Group",
       "type": "library",
       "isbot": false,

@@ -3106,6 +3106,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; PHPDevelBot/1.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "PHP",
+      "modus": null,
+      "version": null,
+      "manufacturer": "PHP Group",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "HTTP_Request2/0.5.2 (http://pear.php.net/package/http_request2) PHP/5.3.3"
     },
     "device": {
@@ -4443,51 +4488,6 @@
       "name": "HTTP_Request2",
       "modus": null,
       "version": "0.5.2",
-      "manufacturer": "PHP Group",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PHP/5.3.13"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "PHP",
-      "modus": null,
-      "version": "5.3.13",
       "manufacturer": "PHP Group",
       "type": "library",
       "isbot": false,

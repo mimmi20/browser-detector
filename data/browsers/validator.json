@@ -136,5 +136,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "ssl-labs": {
+    "name": "SSL Labs",
+    "manufacturer": "qualys",
+    "type": "validator",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SSL Labs"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -1,6 +1,141 @@
 [
   {
     "headers": {
+      "user-agent": "Scrapy/1.8.0 (+https://scrapy.org) comdirect/1.0 (appVersion:20.5.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Scrapy",
+      "modus": null,
+      "version": "1.8.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; adscanner/)/1.0 (http://seocompany.store; spider@seocompany.store) comdirect/1.0 (appVersion:20.5.4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Adscanner",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; adscanner/)/1.0 (Mozilla/5.0 (compatible; seoscanners.net/1.0; +spider@seoscanners.net); http://seoscanners.net; spider@seoscanners.net) comdirect/1.0 (appVersion:20.5.4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Seoscanners.net",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Testcrawler comdirect/1.0 (appVersion:20.5.4)"
     },
     "device": {
@@ -1936,6 +2071,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://www.gowikibot.com) comdirect/1.0 (appVersion:20.11.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Gowikibot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; adscanner/)/1.0 (Mozilla/5.0 (compatible; seoscanners.net/1.0; +spider@seoscanners.net); http://seoscanners.net; spider@seoscanners.net) comdirect/1.0 (appVersion:20.11.0)"
     },
     "device": {
@@ -2103,6 +2283,51 @@
       "name": "Adsbot",
       "modus": null,
       "version": "3.1.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://www.gowikibot.com) comdirect/1.0 (appVersion:20.11.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Gowikibot",
+      "modus": null,
+      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -2296,6 +2521,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://www.gowikibot.com) comdirect/1.0 (appVersion:20.12.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Gowikibot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "bitlybot/3.0 (+http://bit.ly/) comdirect/1.0 (appVersion:20.12.0)"
     },
     "device": {
@@ -2476,6 +2746,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://www.gowikibot.com) comdirect/1.0 (appVersion:21.1.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Gowikibot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Scrapy/2.4.1 (+https://scrapy.org) comdirect/1.0 (appVersion:21.1.0)"
     },
     "device": {
@@ -2508,6 +2823,51 @@
       "name": "Scrapy",
       "modus": null,
       "version": "2.4.1",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://gowikibot.gowiki.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Gowikibot",
+      "modus": null,
+      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -2688,6 +3048,51 @@
       "name": "Scrapy",
       "modus": null,
       "version": "2.4.1",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://gowikibot.gowiki.com) comdirect/1.0 (appVersion:21.2.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Gowikibot",
+      "modus": null,
+      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -2922,6 +3327,51 @@
       "name": "Gecko",
       "version": null,
       "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://gowikibot.gowiki.com) comdirect/1.0 (appVersion:21.3.1.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Gowikibot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -4038,456 +4488,6 @@
       "name": "TestCrawler",
       "modus": null,
       "version": null,
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Scrapy/1.5.1 (+https://scrapy.org) comdirect/1.0 (appVersion:21.6.3)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Scrapy",
-      "modus": null,
-      "version": "1.5.1",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Nicecrawler/1.1; +http://www.nicecrawler.com/) Chrome/90.0.4430.97 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Nicecrawler",
-      "modus": null,
-      "version": "1.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "90.0.4430.97",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Scrapy/2.5.0 (+https://scrapy.org) comdirect/1.0 (appVersion:21.7.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Scrapy",
-      "modus": null,
-      "version": "2.5.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; InfoTigerBot/1.9; +https://infotiger.com/bot) comdirect/1.0 (appVersion:21.7.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "TigerBot",
-      "modus": null,
-      "version": "1.9.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "colly - https://github.com/gocolly/colly/v2 comdirect/1.0 (appVersion:21.7.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "colly",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; adscanner/)/1.0 (Mozilla/5.0 (compatible; seoscanners.net/1.0; +spider@seoscanners.net); http://seoscanners.net; spider@seoscanners.net) comdirect/1.0 (appVersion:21.8.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Seoscanners.net",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "AppEngine-Google; (+http://code.google.com/appengine; appid: s~virustotalcloud) comdirect/1.0 (appVersion:21.8.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "VirusTotal Cloud",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Scrapy/2.5.0 (+https://scrapy.org) comdirect/1.0 (appVersion:21.8.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Scrapy",
-      "modus": null,
-      "version": "2.5.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Adsbot/3.1; +https://seostar.co/robot/) comdirect/1.0 (appVersion:21.7.0;deviceName:nokia 3.1;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Adsbot",
-      "modus": null,
-      "version": "3.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Scrapy/1.5.0 (+https://scrapy.org) comdirect/1.0 (appVersion:21.8.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Scrapy",
-      "modus": null,
-      "version": "1.5.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,

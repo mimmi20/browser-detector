@@ -4405,8 +4405,10 @@
     "manufacturer": "netflix",
     "type": "mobile-application",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Netflix"
+      ]
     },
     "engine": null
   },
@@ -5159,6 +5161,52 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Freespoke"
+      ]
+    },
+    "engine": null
+  },
+  "hi-security": {
+    "name": "Hi Security",
+    "manufacturer": "hi-security",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "castro-2": {
+    "name": "Castro 2",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Castro 2"
+      ]
+    },
+    "engine": null
+  },
+  "icatcher-podcast-player": {
+    "name": "iCatcher Podcast Player",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcast Player"
+      ]
+    },
+    "engine": null
+  },
+  "podcatcher-deluxe": {
+    "name": "Podcatcher Deluxe",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcatcher Deluxe"
       ]
     },
     "engine": null

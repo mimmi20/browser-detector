@@ -1476,5 +1476,49 @@
       ]
     },
     "engine": "unknown"
+  },
+  "google-stale-content-probe": {
+    "name": "Google Stale Content Probe",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "wesee:ads": {
+    "name": "WeSEE:Ads",
+    "manufacturer": "wesee",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WeSEE:Ads"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-news-links": {
+    "name": "Yandex News Links",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "adcrawler": {
+    "name": "Yahoo! AdCrawler",
+    "manufacturer": "yahoo",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdCrawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

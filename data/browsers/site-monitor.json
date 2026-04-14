@@ -510,5 +510,42 @@
       ]
     },
     "engine": null
+  },
+  "rocket-monitor-bot": {
+    "name": "RocketMonitorBot",
+    "manufacturer": "radio-mast",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RocketMonitorBot",
+        "rocketmonitor"
+      ]
+    },
+    "engine": null
+  },
+  "app-signal-bot": {
+    "name": "AppSignalBot",
+    "manufacturer": "app-signal",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AppSignalBot"
+      ]
+    },
+    "engine": null
+  },
+  "ping-admin-ru": {
+    "name": "PingAdmin.Ru",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PingAdmin\\.Ru"
+      ]
+    },
+    "engine": null
   }
 }

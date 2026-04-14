@@ -166,5 +166,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "facebook-catalog": {
+    "name": "Facebook Catalog",
+    "manufacturer": "meta",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "facebookcatalog"
+      ]
+    },
+    "engine": "unknown"
   }
 }

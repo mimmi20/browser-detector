@@ -3667,6 +3667,38 @@ enum Company: string implements CompanyInterface
 
     case entfer = 'Entfer';
 
+    case ly = 'LY';
+
+    case jerryHardee = 'Jerry Hardee';
+
+    case vipNytt = 'VIP nytt';
+
+    case radioMast = 'Radio Mast';
+
+    case lumtel = 'Lumtel';
+
+    case choosito = 'Choosito!';
+
+    case parsely = 'Parsely';
+
+    case appSignal = 'AppSignal';
+
+    case hiSecurityLab = 'Hi Security Lab';
+
+    case beelink = 'Beelink';
+
+    case barcada = 'Barcada';
+
+    case ramblerCo = 'Rambler&Co';
+
+    case ecairn = 'eCairn';
+
+    case qualys = 'Qualys';
+
+    case analyticsSEO = 'Analytics SEO';
+
+    case seoEngine = 'SEO Engine';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5498,6 +5530,22 @@ enum Company: string implements CompanyInterface
             'newslit', 'newslit, llc.' => self::newslit,
             'primis', 'm.d. primis technologies ltd.' => self::primis,
             'entfer', 'entfer ltd.' => self::entfer,
+            'ly', 'ly corporation' => self::ly,
+            'jerryhardee', 'jerry-hardee', 'jerry hardee' => self::jerryHardee,
+            'vipnytt', 'vip-nytt', 'vip nytt' => self::vipNytt,
+            'radiomast', 'radio mast, inc.', 'radio-mast', 'radio mast' => self::radioMast,
+            'lumtel', 'lumtel as' => self::lumtel,
+            'choosito', 'choosito! inc.', 'choosito!' => self::choosito,
+            'parsely', 'parsely, inc.' => self::parsely,
+            'appsignal', 'appsignal b.v.', 'app-signal' => self::appSignal,
+            'hisecuritylab', 'hi-security', 'hi security lab' => self::hiSecurityLab,
+            'beelink' => self::beelink,
+            'barcada', 'barcada llc' => self::barcada,
+            'ramblerco', 'rambler&co', 'rambler-co' => self::ramblerCo,
+            'ecairn', 'ecairn inc.' => self::ecairn,
+            'qualys', 'qualys, inc.' => self::qualys,
+            'analyticsseo', 'analytics seo limited', 'analytics-seo', 'analytics seo' => self::analyticsSEO,
+            'seoengine', 'seo-engine', 'seo engine' => self::seoEngine,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6222,6 +6270,16 @@ enum Company: string implements CompanyInterface
             self::newslit => 'Newslit, LLC.',
             self::primis => 'M.D. Primis Technologies Ltd.',
             self::entfer => 'Entfer Ltd.',
+            self::ly => 'LY Corporation',
+            self::radioMast => 'Radio Mast, Inc.',
+            self::lumtel => 'Lumtel AS',
+            self::choosito => 'Choosito! Inc.',
+            self::parsely => 'Parsely, Inc.',
+            self::appSignal => 'AppSignal B.V.',
+            self::barcada => 'Barcada LLC',
+            self::ecairn => 'eCairn Inc.',
+            self::qualys => 'Qualys, Inc.',
+            self::analyticsSEO => 'Analytics SEO Limited',
             self::unknown => null,
             default => $this->value,
         };
@@ -6899,6 +6957,14 @@ enum Company: string implements CompanyInterface
             self::functionalSoftware => 'functional-software',
             self::louisLam => 'louis-lam',
             self::sovereignStack => 'sovereign-stack',
+            self::jerryHardee => 'jerry-hardee',
+            self::vipNytt => 'vip-nytt',
+            self::radioMast => 'radio-mast',
+            self::appSignal => 'app-signal',
+            self::hiSecurityLab => 'hi-security',
+            self::ramblerCo => 'rambler-co',
+            self::analyticsSEO => 'analytics-seo',
+            self::seoEngine => 'seo-engine',
             default => $this->name,
         };
     }

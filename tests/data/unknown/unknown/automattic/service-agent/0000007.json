@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "WordPress/3.5-alpha-21304; http://occupydenkfabrikwannfrieden.wordpress.com"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "WordPress",
-      "modus": null,
-      "version": "3.5.0-alpha+21304",
-      "manufacturer": "Automattic",
-      "type": "service-agent",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "WordPress/3.5-alpha-21304; http://occupydenkfabrikwannfrieden.wordpress.de"
     },
     "device": {
@@ -4488,6 +4443,51 @@
       "name": "WordPress",
       "modus": null,
       "version": "3.3.1",
+      "manufacturer": "Automattic",
+      "type": "service-agent",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "The Incutio XML-RPC PHP Library -- WordPress/6025"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "WordPress",
+      "modus": null,
+      "version": "6025.0.0",
       "manufacturer": "Automattic",
       "type": "service-agent",
       "isbot": true,

@@ -10990,6 +10990,102 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Entfer',
                 'key' => 'entfer',
             ],
+            [
+                'type' => 'LY',
+                'name' => 'LY Corporation',
+                'brandname' => 'LY',
+                'key' => 'ly',
+            ],
+            [
+                'type' => 'Jerry Hardee',
+                'name' => 'Jerry Hardee',
+                'brandname' => 'Jerry Hardee',
+                'key' => 'jerry-hardee',
+            ],
+            [
+                'type' => 'VIP nytt',
+                'name' => 'VIP nytt',
+                'brandname' => 'VIP nytt',
+                'key' => 'vip-nytt',
+            ],
+            [
+                'type' => 'Radio Mast',
+                'name' => 'Radio Mast, Inc.',
+                'brandname' => 'Radio Mast',
+                'key' => 'radio-mast',
+            ],
+            [
+                'type' => 'Lumtel',
+                'name' => 'Lumtel AS',
+                'brandname' => 'Lumtel',
+                'key' => 'lumtel',
+            ],
+            [
+                'type' => 'Choosito!',
+                'name' => 'Choosito! Inc.',
+                'brandname' => 'Choosito!',
+                'key' => 'choosito',
+            ],
+            [
+                'type' => 'Parsely',
+                'name' => 'Parsely, Inc.',
+                'brandname' => 'Parsely',
+                'key' => 'parsely',
+            ],
+            [
+                'type' => 'AppSignal',
+                'name' => 'AppSignal B.V.',
+                'brandname' => 'AppSignal',
+                'key' => 'app-signal',
+            ],
+            [
+                'type' => 'Hi Security Lab',
+                'name' => 'Hi Security Lab',
+                'brandname' => 'Hi Security Lab',
+                'key' => 'hi-security',
+            ],
+            [
+                'type' => 'Beelink',
+                'name' => 'Beelink',
+                'brandname' => 'Beelink',
+                'key' => 'beelink',
+            ],
+            [
+                'type' => 'Barcada',
+                'name' => 'Barcada LLC',
+                'brandname' => 'Barcada',
+                'key' => 'barcada',
+            ],
+            [
+                'type' => 'Rambler&Co',
+                'name' => 'Rambler&Co',
+                'brandname' => 'Rambler&Co',
+                'key' => 'rambler-co',
+            ],
+            [
+                'type' => 'eCairn',
+                'name' => 'eCairn Inc.',
+                'brandname' => 'eCairn',
+                'key' => 'ecairn',
+            ],
+            [
+                'type' => 'Qualys',
+                'name' => 'Qualys, Inc.',
+                'brandname' => 'Qualys',
+                'key' => 'qualys',
+            ],
+            [
+                'type' => 'Analytics SEO',
+                'name' => 'Analytics SEO Limited',
+                'brandname' => 'Analytics SEO',
+                'key' => 'analytics-seo',
+            ],
+            [
+                'type' => 'SEO Engine',
+                'name' => 'SEO Engine',
+                'brandname' => 'SEO Engine',
+                'key' => 'seo-engine',
+            ],
         ];
     }
 

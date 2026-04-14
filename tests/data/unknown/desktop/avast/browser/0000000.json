@@ -1036,6 +1036,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/4.76 [de] (SaferSurf)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Avast Secure Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "AVAST",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (SaferSurf rv:11.0) Gecko/20100101 Firefox/11.0"
     },
     "device": {

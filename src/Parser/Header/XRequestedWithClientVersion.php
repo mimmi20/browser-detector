@@ -30,7 +30,7 @@ final class XRequestedWithClientVersion implements ClientVersionInterface
     #[Override]
     public function hasClientVersion(string $value): bool
     {
-        $match = preg_match('/xmlhttprequest|fake\./i', $value);
+        $match = preg_match('/xmlhttprequest|fake\.|x\.cpe|1\'"/i', $value);
 
         return $match === 0;
     }

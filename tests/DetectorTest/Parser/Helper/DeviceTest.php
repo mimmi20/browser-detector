@@ -708,6 +708,9 @@ final class DeviceTest extends TestCase
             ['CPH2791', 'oppo=oppo cph2791'],
             ['PLG110', 'oppo=oppo plg110'],
             ['CPH2743', 'oppo=oppo cph2743'],
+            ['OPPO A79', 'oppo=oppo a79'],
+            ['OPPO A79k', 'oppo=oppo a79k'],
+            ['OPPO A79kt', 'oppo=oppo a79kt'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -881,6 +884,7 @@ final class DeviceTest extends TestCase
             ['2201116TG', 'xiaomi=xiaomi 2201116tg'],
             ['22071219CG', 'xiaomi=xiaomi 22071219cg'],
             ['Redmi Note 6 Pro', 'xiaomi=xiaomi redmi note 6 pro'],
+            ['Redmi Note 6Pro', 'xiaomi=xiaomi redmi note 6 pro'],
             ['2210129SG', 'xiaomi=xiaomi 2210129sg'],
             ['MI 5X', 'xiaomi=xiaomi mi 5x'],
             ['2312DRA50G', 'xiaomi=xiaomi 2312dra50g'],
@@ -1347,6 +1351,9 @@ final class DeviceTest extends TestCase
             ['2510EPC8BG', 'xiaomi=xiaomi 2510epc8bg'],
             ['2510ERA8BG', 'xiaomi=xiaomi 2510era8bg'],
             ['2505DRP06E', 'xiaomi=xiaomi 2505drp06e'],
+            ['25098RA98G', 'xiaomi=xiaomi 25098ra98g'],
+            ['25096RA9BG', 'xiaomi=xiaomi 25096ra9bg'],
+            ['Redmi Note 11 4G', 'xiaomi=xiaomi redmi note 11 4g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -6897,6 +6904,7 @@ final class DeviceTest extends TestCase
             ['Phone (2a', 'nothing-phone=nothing-phone phone 2a'],
             ['A001', 'nothing-phone=nothing-phone a001'],
             ['A024', 'nothing-phone=nothing-phone a024'],
+            ['Nothing; A065', 'nothing-phone=nothing-phone a065'],
             // doro
             ['DSB-0220', 'doro=doro dsb-0220'],
             ['DSB-0230', 'doro=doro dsb-0230'],
@@ -7305,6 +7313,7 @@ final class DeviceTest extends TestCase
             ['G901', 'general-mobile=general-mobile g901'],
             ['G316', 'general-mobile=general-mobile g316'],
             ['G702', 'general-mobile=general-mobile g702'],
+            ['GM6', 'general-mobile=general-mobile gm 6'],
             // vodafone
             ['VFD 600', 'vodafone=vodafone vfd 600'],
             ['VFD 1400', 'vodafone=vodafone vfd 1400'],
@@ -7903,6 +7912,7 @@ final class DeviceTest extends TestCase
             ['EABF22206A', 'at-t=at-t eabf22206a'],
             ['U626AA', 'at-t=at-t u626aa'],
             ['U328AA', 'at-t=at-t u328aa'],
+            ['QS5509A', 'at-t=at-t qs5509a'],
             // benco
             ['AE9260', 'benco=benco ae9260'],
             ['AE9240', 'benco=benco ae9240'],

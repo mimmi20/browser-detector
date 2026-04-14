@@ -407,6 +407,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "CCleaner, ",
         "CCleaner"
       ]
     },
@@ -5922,6 +5923,79 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "jp\\.co\\.yahoo\\.android\\.ybrowser"
+      ]
+    },
+    "engine": null
+  },
+  "hawk-quick-browser": {
+    "name": "Hawk Quick Browser",
+    "manufacturer": "hi-security",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hawk\\/QuickBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "hawk-turbo-browser": {
+    "name": "Hawk Turbo Browser",
+    "manufacturer": "hi-security",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hawk\\/TurboBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "xiino": {
+    "name": "Xiino",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Xiino"
+      ]
+    },
+    "engine": null
+  },
+  "palmscape": {
+    "name": "Palmscape",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Palmscape"
+      ]
+    },
+    "engine": null
+  },
+  "bunjalloo": {
+    "name": "Bunjalloo",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bunjalloo"
+      ]
+    },
+    "engine": null
+  },
+  "pocket-internet-explorer": {
+    "name": "Pocket Internet Explorer",
+    "manufacturer": "microsoft",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pocket Internet Explorer",
+        "MSPIE"
       ]
     },
     "engine": null

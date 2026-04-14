@@ -677,6 +677,9 @@ final class Device implements DeviceInterface
             'cph2791' => 'oppo=oppo cph2791',
             'plg110' => 'oppo=oppo plg110',
             'cph2743' => 'oppo=oppo cph2743',
+            'oppo a79' => 'oppo=oppo a79',
+            'oppo a79k' => 'oppo=oppo a79k',
+            'oppo a79kt' => 'oppo=oppo a79kt',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -847,7 +850,7 @@ final class Device implements DeviceInterface
             '22021211rg' => 'xiaomi=xiaomi 22021211rg',
             '2201116tg' => 'xiaomi=xiaomi 2201116tg',
             '22071219cg' => 'xiaomi=xiaomi 22071219cg',
-            'redmi note 6 pro' => 'xiaomi=xiaomi redmi note 6 pro',
+            'redmi note 6 pro', 'redmi note 6pro' => 'xiaomi=xiaomi redmi note 6 pro',
             '2210129sg' => 'xiaomi=xiaomi 2210129sg',
             'mi 5x' => 'xiaomi=xiaomi mi 5x',
             '2312dra50g' => 'xiaomi=xiaomi 2312dra50g',
@@ -1312,6 +1315,9 @@ final class Device implements DeviceInterface
             '2510epc8bg' => 'xiaomi=xiaomi 2510epc8bg',
             '2510era8bg' => 'xiaomi=xiaomi 2510era8bg',
             '2505drp06e' => 'xiaomi=xiaomi 2505drp06e',
+            '25098ra98g' => 'xiaomi=xiaomi 25098ra98g',
+            '25096ra9bg' => 'xiaomi=xiaomi 25096ra9bg',
+            'redmi note 11 4g' => 'xiaomi=xiaomi redmi note 11 4g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -5836,6 +5842,7 @@ final class Device implements DeviceInterface
             'phone (2a)', 'phone (2a' => 'nothing-phone=nothing-phone phone 2a',
             'a001' => 'nothing-phone=nothing-phone a001',
             'a024' => 'nothing-phone=nothing-phone a024',
+            'nothing; a065' => 'nothing-phone=nothing-phone a065',
             // doro
             'dsb-0220' => 'doro=doro dsb-0220',
             'dsb-0230' => 'doro=doro dsb-0230',
@@ -6155,6 +6162,7 @@ final class Device implements DeviceInterface
             'g901' => 'general-mobile=general-mobile g901',
             'g316' => 'general-mobile=general-mobile g316',
             'g702' => 'general-mobile=general-mobile g702',
+            'gm6' => 'general-mobile=general-mobile gm 6',
             // vodafone
             'vfd 600' => 'vodafone=vodafone vfd 600',
             'vfd 1400' => 'vodafone=vodafone vfd 1400',
@@ -6670,6 +6678,7 @@ final class Device implements DeviceInterface
             'eabf22206a' => 'at-t=at-t eabf22206a',
             'u626aa' => 'at-t=at-t u626aa',
             'u328aa' => 'at-t=at-t u328aa',
+            'qs5509a' => 'at-t=at-t qs5509a',
             // benco
             'ae9260' => 'benco=benco ae9260',
             'ae9240' => 'benco=benco ae9240',

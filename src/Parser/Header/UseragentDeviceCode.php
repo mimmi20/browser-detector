@@ -24,6 +24,7 @@ use function array_filter;
 use function array_first;
 use function array_key_exists;
 use function array_map;
+use function is_string;
 use function mb_strtolower;
 use function mb_trim;
 use function preg_match;
@@ -99,6 +100,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
             '/slack\/[\d.]+ \((?P<devicecode>[^);\/]+)(?:;? (?:andr[o0]id|tizen) [\d.]+)(?:[^)]+)?\)/i',
+            '/instagram [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; (?P<devicecode>[a-z\/]+; [^);\/]+);/i',
             '/instagram [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; (?P<devicecode>[^);\/]+);/i',
             '/icq_android\/[\d.]+ \(android; \d+; [\d.]+; [^;]+; (?P<devicecode>[^);\/]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;(?P<devicecode>[^);\/]+);[\d.]+/i',
@@ -140,7 +142,12 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $filtered,
         );
 
-        $code = array_first($results);
+        $code = array_first(
+            array_filter(
+                $results,
+                is_string(...),
+            ),
+        );
 
         if ($code !== null && $code !== false) {
             return $code;

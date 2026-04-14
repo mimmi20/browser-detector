@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Maemo; Linux armv7l; rv:13.0) Gecko/20120607 Firefox/13.0 Fennec/13.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Fennec",
-      "modus": null,
-      "version": "13.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "13.0.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Maemo; Linux armv7l; rv:14.0) Gecko/20120723 Firefox/14.0.1 Fennec/14.0"
     },
     "device": {
@@ -3867,6 +3822,51 @@
     "engine": {
       "name": "Gecko",
       "version": "1.9.2.20",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE; niu-NU; rv:1.9.1.20) Gecko/5234-09-06 20:30:11.919403 Firefox/3.6.20"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.6.20",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.1.20",
       "manufacturer": "Mozilla"
     }
   }

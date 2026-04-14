@@ -863,6 +863,22 @@
     "type": "phablet",
     "platform": "android"
   },
+  "xiaomi redmi note 11 4g": {
+    "deviceName": "Redmi Note 11 4G",
+    "marketingName": "Redmi Note 11 4G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "xiaomi 21091116ac": {
     "deviceName": "21091116AC",
     "marketingName": "Redmi Note 11 5G (China)",
@@ -2939,6 +2955,38 @@
       "height": 1280,
       "touch": true,
       "size": 6.83
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 25098ra98g": {
+    "deviceName": "25098RA98G",
+    "marketingName": "Redmi Note 15 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2392,
+      "height": 1080,
+      "touch": true,
+      "size": 6.77
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 25096ra9bg": {
+    "deviceName": "25096RA9BG",
+    "marketingName": "Redmi Note 15 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2392,
+      "height": 1080,
+      "touch": true,
+      "size": 6.77
     },
     "type": "phablet",
     "platform": "android"
