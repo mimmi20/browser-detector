@@ -1318,6 +1318,7 @@ final class Device implements DeviceInterface
             '25098ra98g' => 'xiaomi=xiaomi 25098ra98g',
             '25096ra9bg' => 'xiaomi=xiaomi 25096ra9bg',
             'redmi note 11 4g' => 'xiaomi=xiaomi redmi note 11 4g',
+            '25113PN0EG' => 'xiaomi=xiaomi 25113PN0EG',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',

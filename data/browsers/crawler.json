@@ -5181,5 +5181,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "claude-code": {
+    "name": "Claude Code",
+    "manufacturer": "anthropic",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "claude-code"
+      ]
+    },
+    "engine": "unknown"
   }
 }
