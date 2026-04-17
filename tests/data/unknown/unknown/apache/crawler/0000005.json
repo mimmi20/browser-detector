@@ -3556,6 +3556,51 @@
   },
   {
     "headers": {
+      "user-agent": "pilicanbot/Nutch-1.16 (pilican.com; bot@pilican.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Nutch",
+      "modus": null,
+      "version": "1.16.0",
+      "manufacturer": "Apache",
+      "type": "crawler",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; TMMBot/0.2; +http://www.dslab.ch)/Nutch-1.15"
     },
     "device": {
@@ -4443,51 +4488,6 @@
       "name": "Nutch",
       "modus": null,
       "version": null,
-      "manufacturer": "Apache",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "IRB_TIC_Bot/Nutch-1.21-SNAPSHOT (A non-commercial research crawler by Fraunhofer IRB, Stuttgart, Germany.; https://gitlab.cc-asp.fraunhofer.de/-/snippets/956; bot.tic@irb.fraunhofer.de)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Nutch",
-      "modus": null,
-      "version": "1.21.0",
       "manufacturer": "Apache",
       "type": "crawler",
       "isbot": true,

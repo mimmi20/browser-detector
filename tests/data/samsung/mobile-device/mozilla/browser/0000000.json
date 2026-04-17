@@ -89,5 +89,50 @@
       "version": "95.0.0",
       "manufacturer": "Mozilla"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android 15; Mobile; SM-E055F/DS; rv:143.0) Gecko/143.0 Firefox/143.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "143.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "143.0.0",
+      "manufacturer": "Mozilla"
+    }
   }
 ]
