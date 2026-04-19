@@ -1354,7 +1354,7 @@ final class DeviceTest extends TestCase
             ['25098RA98G', 'xiaomi=xiaomi 25098ra98g'],
             ['25096RA9BG', 'xiaomi=xiaomi 25096ra9bg'],
             ['Redmi Note 11 4G', 'xiaomi=xiaomi redmi note 11 4g'],
-            ['25113PN0EG', 'xiaomi=xiaomi 25113PN0EG'],
+            ['25113PN0EG', 'xiaomi=xiaomi 25113pn0eg'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
