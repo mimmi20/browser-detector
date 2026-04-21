@@ -25,7 +25,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
     #[Override]
     public function hasClientCode(string $value): bool
     {
-        $match = preg_match('/xmlhttprequest|fake\.|x\.cpe|1\'"/i', $value);
+        $match = preg_match('/xmlhttprequest|fake\.|x\.cpe|1\'"|[<>]/i', $value);
 
         return $match === 0;
     }

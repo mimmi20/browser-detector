@@ -574,6 +574,7 @@ final class XRequestedWithTest extends TestCase
             ['com.meecel.feedreader.RssDemonAd', true, 'rss-demon', true, null, false, Os::unknown],
             ['1\'"', false, null, false, null, false, Os::unknown],
             ['com.ehawk.antivirus.applock.wifi', true, 'hi-security', true, null, false, Os::unknown],
+            ['cacheposxrequestedwithcachepos<>', false, null, false, null, false, Os::unknown],
         ];
     }
 }

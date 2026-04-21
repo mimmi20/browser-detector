@@ -108,6 +108,8 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
         }
 
         $regexes = [
+            '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+; (?P<platform>harmonyos); [^);\/]+[^)]*\)/i',
+            '/^mozilla\/[\d.]+ \((?P<platform>andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| mobile;)? [^);\/]+[^)]*\)/i',
             '/instagram [\d.]+ (?P<platform>android) \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/icq_android\/[\d.]+ \((?P<platform>android); \d+; [\d.]+/i',
             '/gg-android\/[\d.]+ \(os;(?P<platform>android);\d+\) \([^);\/]+;[^);\/]+;[^);\/]+;[\d.]+/i',
@@ -141,8 +143,14 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
 
                 preg_match($regex, $normalizedValue, $matches);
 
+                $code = mb_strtolower($matches['platform'] ?? '');
+
                 // @todo: need to find a solution to find android forks like mocordroid
-                return mb_strtolower($matches['platform'] ?? '');
+                return match ($code) {
+                    'android', 'tizen', 'openharmony', 'kaios', 'ios', 'harmonyos' => $code,
+                    'andr0id' => 'android',
+                    default => '',
+                };
             },
             $filtered,
         );
