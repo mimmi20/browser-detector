@@ -3699,6 +3699,12 @@ enum Company: string implements CompanyInterface
 
     case seoEngine = 'SEO Engine';
 
+    case catchpointSystems = 'Catchpoint Systems';
+
+    case kaspersky = 'Kaspersky';
+
+    case certifiedSecuritySolutions = 'Certified Security Solutions';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5546,6 +5552,9 @@ enum Company: string implements CompanyInterface
             'qualys', 'qualys, inc.' => self::qualys,
             'analyticsseo', 'analytics seo limited', 'analytics-seo', 'analytics seo' => self::analyticsSEO,
             'seoengine', 'seo-engine', 'seo engine' => self::seoEngine,
+            'catchpointsystems', 'catchpoint systems, inc.', 'catchpoint-systems', 'catchpoint systems' => self::catchpointSystems,
+            'kaspersky', 'ao kaspersky lab' => self::kaspersky,
+            'certifiedsecuritysolutions', 'certified-security-solutions', 'certified security solutions' => self::certifiedSecuritySolutions,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6280,6 +6289,8 @@ enum Company: string implements CompanyInterface
             self::ecairn => 'eCairn Inc.',
             self::qualys => 'Qualys, Inc.',
             self::analyticsSEO => 'Analytics SEO Limited',
+            self::catchpointSystems => 'Catchpoint Systems, Inc.',
+            self::kaspersky => 'AO Kaspersky Lab',
             self::unknown => null,
             default => $this->value,
         };
@@ -6965,6 +6976,8 @@ enum Company: string implements CompanyInterface
             self::ramblerCo => 'rambler-co',
             self::analyticsSEO => 'analytics-seo',
             self::seoEngine => 'seo-engine',
+            self::catchpointSystems => 'catchpoint-systems',
+            self::certifiedSecuritySolutions => 'certified-security-solutions',
             default => $this->name,
         };
     }

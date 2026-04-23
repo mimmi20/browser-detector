@@ -418,7 +418,9 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "uMBot\\-LN",
-        "um-LN"
+        "um-LN",
+        "um-FC",
+        "um-ANS"
       ]
     },
     "engine": "unknown"
@@ -5191,6 +5193,132 @@
       "search": [
         "claude-code"
       ]
+    },
+    "engine": "unknown"
+  },
+  "seznam-email-proxy": {
+    "name": "Seznam Email Proxy",
+    "manufacturer": "seznam",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SeznamEmailProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot-links-crawler": {
+    "name": "HubSpot Links Crawler",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Links Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "who-is-bot": {
+    "name": "Who.is Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "hubspot-image-utils": {
+    "name": "HubSpot Image Utils",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Image Utils"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sputnik-bot": {
+    "name": "Sputnik Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SputnikBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cloud-server-market-spider": {
+    "name": "CloudServerMarketSpider",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CloudServerMarketSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wevika-bot": {
+    "name": "WeViKaBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WeViKaBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kaspersky-content-filtering-research": {
+    "name": "Kaspersky Content Filtering Research",
+    "manufacturer": "kaspersky",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "seolytics-crawler": {
+    "name": "SEOlyticsCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SEOlyticsCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sputnik-favicon-bot": {
+    "name": "Sputnik Favicon Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SputnikFaviconBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "css-certificate-spider": {
+    "name": "CSS Certificate Spider",
+    "manufacturer": "certified-security-solutions",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": "unknown"
   }

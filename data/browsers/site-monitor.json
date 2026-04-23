@@ -547,5 +547,17 @@
       ]
     },
     "engine": null
+  },
+  "catchpoint": {
+    "name": "Catchpoint",
+    "manufacturer": "catchpoint-systems",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Catchpoint"
+      ]
+    },
+    "engine": null
   }
 }
