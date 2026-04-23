@@ -5999,5 +5999,17 @@
       ]
     },
     "engine": null
+  },
+  "roku-browser": {
+    "name": "Roku Browser",
+    "manufacturer": "roku",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RokuBrowser"
+      ]
+    },
+    "engine": "blink"
   }
 }

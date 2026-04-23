@@ -470,6 +470,8 @@ final class Device implements DeviceInterface
             'opd2405' => 'oneplus=oneplus opd2405',
             'de2118' => 'oneplus=oneplus de2118',
             'oneplus n200' => 'oneplus=oneplus n200',
+            'cph2769' => 'oneplus=oneplus cph2769',
+            'cph2767' => 'oneplus=oneplus cph2767',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -1341,6 +1343,12 @@ final class Device implements DeviceInterface
             'redmi k30 ultra' => 'xiaomi=xiaomi redmi k30 ultra',
             'm2007j3sc' => 'xiaomi=xiaomi m2007j3sc',
             'redmi k30s' => 'xiaomi=xiaomi redmi k30s',
+            'redmi note 10 lite' => 'xiaomi=xiaomi redmi note 10 lite',
+            'redmi note 10 pro' => 'xiaomi=xiaomi redmi note 10 pro',
+            'redmi note 10s' => 'xiaomi=xiaomi redmi note 10s',
+            'redmi note 10 5g' => 'xiaomi=xiaomi redmi note 10 5g',
+            'redmi note 10', 'redmi note10' => 'xiaomi=xiaomi redmi note 10',
+            'm2002f4lg' => 'xiaomi=xiaomi m2002f4lg',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2686,6 +2694,9 @@ final class Device implements DeviceInterface
             'sm-a022g', 'samsung sm-a022g' => 'samsung=samsung sm-a022g',
             'sm-a022f', 'samsung sm-a022f' => 'samsung=samsung sm-a022f',
             'sm-a105f', 'samsung sm-a105f' => 'samsung=samsung sm-a105f',
+            'sm-x930', 'samsung sm-x930' => 'samsung=samsung sm-x930',
+            'sm-x936b', 'samsung sm-x936b' => 'samsung=samsung sm-x936b',
+            'sm-x936n', 'samsung sm-x936n' => 'samsung=samsung sm-x936n',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3911,6 +3922,8 @@ final class Device implements DeviceInterface
             'thinkphone by motorola' => 'motorola=motorola thinkphone',
             'thinkphone 25 by motorola' => 'motorola=motorola thinkphone 25',
             'xt2409-6' => 'motorola=motorola xt2409-6',
+            'motorola one hyper' => 'motorola=motorola one hyper',
+            'xt2027-1' => 'motorola=motorola xt2027-1',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
