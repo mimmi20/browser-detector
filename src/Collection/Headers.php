@@ -343,6 +343,7 @@ final readonly class Headers
                             case 'quark':
                             case 'seolyt-bot':
                             case 'bingsearch':
+                            case 'chatgpt-user-bot':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 
@@ -412,6 +413,23 @@ final readonly class Headers
                     }
 
                     break;
+                case 'edge':
+                    $lastClientCodename = array_last($clientCodes);
+                    $clientHeader       = array_first($headersWithClientCode);
+
+                    if (is_string($lastClientCodename)) {
+                        switch ($lastClientCodename) {
+                            case 'chatgpt-user-bot':
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
+
+                                break;
+                            default:
+                                // do nothing
+                        }
+                    }
+
+                    break;
                 case 'keplr-app':
                 case 'lookr-app':
                 case 'kimi-app':
@@ -435,7 +453,7 @@ final readonly class Headers
 
             $clientVersions = $this->getClientVersions($clientCodename);
             $clientVersion  = match ($clientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo-japan-app', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine', 'meta-external-agent', 'abeval-bot', 'brightedge crawler', 'microsoft-copilot', 'petalbot', 'phoenix browser', 'adsbot google-mobile', 'facebook messenger app', 'quark', 'seolyt-bot', 'web-explorer' => $clientVersions['user-agent']
+                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'opera', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo-japan-app', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine', 'meta-external-agent', 'abeval-bot', 'brightedge crawler', 'microsoft-copilot', 'petalbot', 'phoenix browser', 'adsbot google-mobile', 'facebook messenger app', 'quark', 'seolyt-bot', 'web-explorer', 'chatgpt-user-bot' => $clientVersions['user-agent']
                     ?? array_last($clientVersions),
                 'duckduck app', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
                     ?? $clientVersions['sec-ch-ua']
