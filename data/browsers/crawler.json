@@ -418,9 +418,9 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "uMBot\\-LN",
-        "um-LN",
-        "um-FC",
-        "um-ANS"
+        "um\\-LN",
+        "um\\-FC",
+        "um\\-ANS"
       ]
     },
     "engine": "unknown"
@@ -5319,6 +5319,126 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "urlsuma-bot": {
+    "name": "URLSuMaBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "URLSuMa"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bubble-scan": {
+    "name": "BubbleScan",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BubbleScan"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "thressel-scanner": {
+    "name": "ThresselScanner",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ThresselScanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "web-recon": {
+    "name": "WebRecon",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebRecon"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "makler-research": {
+    "name": "MaklerResearch",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MaklerResearch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "makler-check": {
+    "name": "MaklerCheck",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MaklerCheck"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "simple-web-scraper": {
+    "name": "SimpleWebScraper",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SimpleWebScraper"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tech-spy-bot": {
+    "name": "TechSpyBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TechSpyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "recon-engine": {
+    "name": "recon-engine",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "recon-engine"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "the-ranking-hat": {
+    "name": "The Ranking Hat",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "The Ranking Hat"
+      ]
     },
     "engine": "unknown"
   }

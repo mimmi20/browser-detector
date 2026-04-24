@@ -1532,5 +1532,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "llmse": {
+    "name": "LLM Search Engine",
+    "manufacturer": "domains-project",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LLMSE"
+      ]
+    },
+    "engine": "unknown"
   }
 }
