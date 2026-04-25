@@ -1354,6 +1354,11 @@ final class Device implements DeviceInterface
             'redmi note 7 pro' => 'xiaomi=xiaomi redmi note 7 pro',
             'redmi note 5 pro' => 'xiaomi=xiaomi redmi note 5 pro',
             'redmi note 9' => 'xiaomi=xiaomi redmi note 9',
+            'redmi note 11e pro' => 'xiaomi=xiaomi redmi note 11e pro',
+            'redmi note 11s' => 'xiaomi=xiaomi redmi note 11s',
+            'redmi note 11' => 'xiaomi=xiaomi redmi note 11',
+            'redmi note 11 pro 5g' => 'xiaomi=xiaomi redmi note 11 pro 5g',
+            'redmi note 12 pro 5g' => 'xiaomi=xiaomi redmi note 12 pro 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3994,6 +3999,7 @@ final class Device implements DeviceInterface
             'xt2409-6' => 'motorola=motorola xt2409-6',
             'motorola one hyper' => 'motorola=motorola one hyper',
             'xt2027-1' => 'motorola=motorola xt2027-1',
+            'moto e5 supra' => 'motorola=motorola moto e5 supra',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',

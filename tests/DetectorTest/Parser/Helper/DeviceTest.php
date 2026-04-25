@@ -1392,6 +1392,11 @@ final class DeviceTest extends TestCase
             ['Redmi Note 7 Pro', 'xiaomi=xiaomi redmi note 7 pro'],
             ['Redmi Note 5 Pro', 'xiaomi=xiaomi redmi note 5 pro'],
             ['Redmi Note 9', 'xiaomi=xiaomi redmi note 9'],
+            ['Redmi Note 11E Pro', 'xiaomi=xiaomi redmi note 11e pro'],
+            ['Redmi Note 11S', 'xiaomi=xiaomi redmi note 11s'],
+            ['Redmi Note 11', 'xiaomi=xiaomi redmi note 11'],
+            ['Redmi Note 11 Pro 5G', 'xiaomi=xiaomi redmi note 11 pro 5g'],
+            ['Redmi Note 12 Pro 5G', 'xiaomi=xiaomi redmi note 12 pro 5g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -5107,6 +5112,7 @@ final class DeviceTest extends TestCase
             ['XT2409-6', 'motorola=motorola xt2409-6'],
             ['motorola one hyper', 'motorola=motorola one hyper'],
             ['XT2027-1', 'motorola=motorola xt2027-1'],
+            ['moto e5 supra', 'motorola=motorola moto e5 supra'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
