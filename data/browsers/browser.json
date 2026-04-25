@@ -6012,5 +6012,17 @@
       ]
     },
     "engine": "blink"
+  },
+  "amiga-aweb": {
+    "name": "Amiga Aweb",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Amiga-AWeb"
+      ]
+    },
+    "engine": null
   }
 }

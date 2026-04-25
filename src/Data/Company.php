@@ -3705,6 +3705,8 @@ enum Company: string implements CompanyInterface
 
     case certifiedSecuritySolutions = 'Certified Security Solutions';
 
+    case treeworks = 'Treeworks';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5555,6 +5557,7 @@ enum Company: string implements CompanyInterface
             'catchpointsystems', 'catchpoint systems, inc.', 'catchpoint-systems', 'catchpoint systems' => self::catchpointSystems,
             'kaspersky', 'ao kaspersky lab' => self::kaspersky,
             'certifiedsecuritysolutions', 'certified-security-solutions', 'certified security solutions' => self::certifiedSecuritySolutions,
+            'treeworks', 'treeworks srl' => self::treeworks,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6291,6 +6294,7 @@ enum Company: string implements CompanyInterface
             self::analyticsSEO => 'Analytics SEO Limited',
             self::catchpointSystems => 'Catchpoint Systems, Inc.',
             self::kaspersky => 'AO Kaspersky Lab',
+            self::treeworks => 'Treeworks SRL',
             self::unknown => null,
             default => $this->value,
         };

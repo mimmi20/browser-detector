@@ -81,7 +81,7 @@
   },
   "samsung sm-r732": {
     "deviceName": "SM-R732",
-    "marketingName": "Gear S2 Classic",
+    "marketingName": "Gear S2 Classic (42mm)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": false,
@@ -97,7 +97,23 @@
   },
   "samsung sm-r760": {
     "deviceName": "SM-R760",
-    "marketingName": "Gear S3 Frontier",
+    "marketingName": "Gear S3 Frontier (49mm, Wi-Fi)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.3
+    },
+    "type": "smart-watch",
+    "platform": null
+  },
+  "samsung sm-r765v": {
+    "deviceName": "SM-R765V",
+    "marketingName": "Gear S3 Frontier (49mm, Wi-Fi)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": false,
@@ -891,6 +907,38 @@
       "height": 360,
       "touch": true,
       "size": 1.3
+    },
+    "type": "smart-watch",
+    "platform": null
+  },
+  "samsung sm-r600": {
+    "deviceName": "SM-R600",
+    "marketingName": "Gear Sport",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "smart-watch",
+    "platform": null
+  },
+  "samsung sm-r500": {
+    "deviceName": "SM-R500",
+    "marketingName": "Galaxy Watch Active",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.1
     },
     "type": "smart-watch",
     "platform": null

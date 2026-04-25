@@ -91,12 +91,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R855F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R855F",
+      "marketingName": "Galaxy Watch 3 (41mm, LTE)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 360,
+        "height": 360,
+        "touch": true,
+        "size": 1.2
+      },
+      "type": "smart-watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "5.5.0",
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "69.0.3497.106",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.106",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R840) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "SM-R840",
-      "marketingName": "Galaxy Watch 3 (45mm)",
+      "marketingName": "Galaxy Watch 3 (45mm, Wi-Fi)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": false,

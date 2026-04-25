@@ -186,7 +186,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/rim tablet/i' => Os::rimTabletOs,
             '/blackberry|bb10; ?(kbd|touch)/i' => Os::rimOs,
             '/^Mozilla\/5\.0 \(.*(Mobile|Tablet);.*rv:(\d+\.\d+).*\) Gecko\/(\d+).* Firefox\/(\d+\.\d+).*/' => Os::firefoxos,
-            '/amigaos/i' => Os::amigaos,
+            '/amigaos|amiga-aweb/i' => Os::amigaos,
             '/haiku/i' => Os::haiku,
             '/beos/i' => Os::beos,
             '/ip[ao]d|(?<![a-z])ios \d|iuc ?\(|puffin\/[\d\.]+i[pt]|antenna\/|antennapod|rss_?radio|podcruncher|audioboom|stitcher\/ios|captivenetwork|ios\.watch|ddg[_-]ios/i' => Os::ios,

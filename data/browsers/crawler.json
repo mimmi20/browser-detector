@@ -5441,5 +5441,65 @@
       ]
     },
     "engine": "unknown"
+  },
+  "twurly": {
+    "name": "Twurly",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twurly v",
+        "Twurly"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "datagnionbot": {
+    "name": "datagnionbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "faveeo": {
+    "name": "Faveeo",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Faveeo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nuzzel": {
+    "name": "Nuzzel",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Nuzzel"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "willow-internet-crawler": {
+    "name": "Willow Internet Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Willow Internet Crawler",
+        "by Twotrees V"
+      ]
+    },
+    "engine": "unknown"
   }
 }

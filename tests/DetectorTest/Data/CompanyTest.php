@@ -11104,6 +11104,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Certified Security Solutions',
                 'key' => 'certified-security-solutions',
             ],
+            [
+                'type' => 'Treeworks',
+                'name' => 'Treeworks SRL',
+                'brandname' => 'Treeworks',
+                'key' => 'treeworks',
+            ],
         ];
     }
 
