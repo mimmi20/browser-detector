@@ -1403,7 +1403,7 @@ final class DeviceTest extends TestCase
             ['Redmi Note 11 Pro 5G', 'xiaomi=xiaomi redmi note 11 pro 5g'],
             ['Redmi Note 12 Pro 5G', 'xiaomi=xiaomi redmi note 12 pro 5g'],
             ['Redmi Note 9T', 'xiaomi=xiaomi redmi note 9t'],
-            ['Redmi Note 8 (2021)', 'xiaomi=xiaomi redmi note 12 pro 5g'],
+            ['Redmi Note 8 (2021)', 'xiaomi=xiaomi redmi note 8 2021'],
             ['Redmi Note 8 (2021', 'xiaomi=xiaomi redmi note 8 2021'],
             ['Redmi Note 10 Pro Max', 'xiaomi=xiaomi redmi note 10 pro max'],
             ['Redmi Note 11S 5G', 'xiaomi=xiaomi redmi note 11s 5g'],
