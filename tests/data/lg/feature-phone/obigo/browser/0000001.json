@@ -2836,6 +2836,51 @@
   },
   {
     "headers": {
+      "user-agent": "LG-KC550 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KC550",
+      "marketingName": "KC550",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Obigo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Obigo",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "Obigo"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LG-A395/V100 Obigo/Q05A MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
@@ -4417,51 +4462,6 @@
       "architecture": null,
       "deviceName": "B2050",
       "marketingName": "B2050",
-      "manufacturer": "LG",
-      "brand": "LG",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.5
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Obigo",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-B2000 MIC/WAP2.0 MIDP-2.0/CLDC-1.0 UP.Link/6.3.1.13.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "B2000",
-      "marketingName": "B2000",
       "manufacturer": "LG",
       "brand": "LG",
       "dualOrientation": false,
