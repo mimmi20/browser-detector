@@ -130,6 +130,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             '/classic fm\/[\d.]+ (?P<platform>android) [\d.]+\/[^);\/]+/i',
             '/\(speedmode; proxy; (?P<platform>android) [\d.]+;([^);\/]+)\)/i',
             '/com\.huawei\.hmos\.browser \([^;]+;(?P<platform>openharmony)-[\d.]+;[^)]+\)/i',
+            '/snapchat\/[\d.]+ \([^;]+; (?P<platform>andr[o0]id) [\d.]+#/i',
         ];
 
         $filtered = array_filter(

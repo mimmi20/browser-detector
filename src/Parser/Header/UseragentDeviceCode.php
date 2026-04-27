@@ -125,6 +125,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)/i',
             '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+); build\/[\d.]+\)/i',
+            '/snapchat\/[\d.]+ \((?P<devicecode>[^;]+); andr[o0]id [\d.]+#/i',
         ];
 
         $filtered = array_filter(

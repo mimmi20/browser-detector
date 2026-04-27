@@ -5501,5 +5501,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "monitor-backlinks": {
+    "name": "Monitor Backlinks",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MBCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "taboola-bot": {
+    "name": "Taboolabot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Taboolabot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

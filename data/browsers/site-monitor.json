@@ -571,5 +571,17 @@
       ]
     },
     "engine": null
+  },
+  "collectd": {
+    "name": "Collectd",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "collectd"
+      ]
+    },
+    "engine": null
   }
 }

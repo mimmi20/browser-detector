@@ -1554,5 +1554,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "tarmot-gezgin": {
+    "name": "Tarmot Gezgin",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TarmotGezgin",
+        "Tarmot Gezgin"
+      ]
+    },
+    "engine": "unknown"
   }
 }

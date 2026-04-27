@@ -414,5 +414,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "tlsprober": {
+    "name": "TLSProber",
+    "manufacturer": "abonti",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TLSProber"
+      ]
+    },
+    "engine": "unknown"
   }
 }
