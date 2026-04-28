@@ -123,7 +123,9 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/com\.huawei\.hmos\.browser \([^;]+;openharmony-[\d.]+;(?P<devicecode>[^)]+)\)/i',
             '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/ucweb\/[\d.]+ \((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)/i',
             '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+); build\/[\d.]+\)/i',
+            '/snapchat\/[\d.]+ \((?P<devicecode>[^;]+); andr[o0]id [\d.]+#/i',
         ];
 
         $filtered = array_filter(

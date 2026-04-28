@@ -418,7 +418,9 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "uMBot\\-LN",
-        "um-LN"
+        "um\\-LN",
+        "um\\-FC",
+        "um\\-ANS"
       ]
     },
     "engine": "unknown"
@@ -5190,6 +5192,336 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "claude-code"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seznam-email-proxy": {
+    "name": "Seznam Email Proxy",
+    "manufacturer": "seznam",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SeznamEmailProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot-links-crawler": {
+    "name": "HubSpot Links Crawler",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Links Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "who-is-bot": {
+    "name": "Who.is Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "hubspot-image-utils": {
+    "name": "HubSpot Image Utils",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Image Utils"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sputnik-bot": {
+    "name": "Sputnik Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SputnikBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cloud-server-market-spider": {
+    "name": "CloudServerMarketSpider",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CloudServerMarketSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wevika-bot": {
+    "name": "WeViKaBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WeViKaBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kaspersky-content-filtering-research": {
+    "name": "Kaspersky Content Filtering Research",
+    "manufacturer": "kaspersky",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "seolytics-crawler": {
+    "name": "SEOlyticsCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SEOlyticsCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sputnik-favicon-bot": {
+    "name": "Sputnik Favicon Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SputnikFaviconBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "css-certificate-spider": {
+    "name": "CSS Certificate Spider",
+    "manufacturer": "certified-security-solutions",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "urlsuma-bot": {
+    "name": "URLSuMaBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "URLSuMa"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bubble-scan": {
+    "name": "BubbleScan",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BubbleScan"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "thressel-scanner": {
+    "name": "ThresselScanner",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ThresselScanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "web-recon": {
+    "name": "WebRecon",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebRecon"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "makler-research": {
+    "name": "MaklerResearch",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MaklerResearch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "makler-check": {
+    "name": "MaklerCheck",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MaklerCheck"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "simple-web-scraper": {
+    "name": "SimpleWebScraper",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SimpleWebScraper"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tech-spy-bot": {
+    "name": "TechSpyBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TechSpyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "recon-engine": {
+    "name": "recon-engine",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "recon-engine"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "the-ranking-hat": {
+    "name": "The Ranking Hat",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "The Ranking Hat"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "twurly": {
+    "name": "Twurly",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Twurly v",
+        "Twurly"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "datagnionbot": {
+    "name": "datagnionbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "faveeo": {
+    "name": "Faveeo",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Faveeo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nuzzel": {
+    "name": "Nuzzel",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Nuzzel"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "willow-internet-crawler": {
+    "name": "Willow Internet Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Willow Internet Crawler",
+        "by Twotrees V"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "monitor-backlinks": {
+    "name": "Monitor Backlinks",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MBCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "taboola-bot": {
+    "name": "Taboolabot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Taboolabot"
       ]
     },
     "engine": "unknown"

@@ -547,5 +547,41 @@
       ]
     },
     "engine": null
+  },
+  "catchpoint": {
+    "name": "Catchpoint",
+    "manufacturer": "catchpoint-systems",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Catchpoint"
+      ]
+    },
+    "engine": null
+  },
+  "google-transparency-report": {
+    "name": "Google Transparency Report",
+    "manufacturer": "google",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Transparency-Report"
+      ]
+    },
+    "engine": null
+  },
+  "collectd": {
+    "name": "Collectd",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "collectd"
+      ]
+    },
+    "engine": null
   }
 }

@@ -1147,7 +1147,8 @@
       "search": [
         "DDG\\-Android\\-",
         "ddg_android",
-        "DuckDuckGo"
+        "DuckDuckGo",
+        "ddg_win"
       ]
     },
     "engine": null
@@ -5996,6 +5997,30 @@
       "search": [
         "Pocket Internet Explorer",
         "MSPIE"
+      ]
+    },
+    "engine": null
+  },
+  "roku-browser": {
+    "name": "Roku Browser",
+    "manufacturer": "roku",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RokuBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "amiga-aweb": {
+    "name": "Amiga Aweb",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Amiga-AWeb"
       ]
     },
     "engine": null

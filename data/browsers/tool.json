@@ -10,5 +10,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "apache-bench": {
+    "name": "ApacheBench",
+    "manufacturer": "apache",
+    "type": "tool",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ApacheBench"
+      ]
+    },
+    "engine": "unknown"
   }
 }

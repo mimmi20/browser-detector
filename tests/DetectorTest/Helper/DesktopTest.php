@@ -135,6 +135,7 @@ final class DesktopTest extends TestCase
             ['WinHttp957010'],
             ['Microsoft Office/16.0 (Microsoft Outlook 16.0.12827; Pro), Mozilla/4.0 (compatible; ms-office; MSOffice 16) comdirect/1.0 (appVersion:20.6.0;deviceType:desktop)'],
             ['Mozilla/5.0 (ZOOM.Mac 15.3.1 x86)'],
+            ['Amiga-AWeb/3.3; (Spoofed by Amiga-AWeb/3.4APL)'],
         ];
     }
 

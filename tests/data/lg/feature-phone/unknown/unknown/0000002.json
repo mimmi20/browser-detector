@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "lg-kp260 UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KP260",
+      "marketingName": "KP260",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.77
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LG-KP270"
     },
     "device": {
@@ -4417,51 +4462,6 @@
       "architecture": null,
       "deviceName": "U8150",
       "marketingName": "U8150",
-      "manufacturer": "LG",
-      "brand": "LG",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-U8180"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "U8180",
-      "marketingName": "U8180",
       "manufacturer": "LG",
       "brand": "LG",
       "dualOrientation": false,

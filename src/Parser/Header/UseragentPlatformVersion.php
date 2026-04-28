@@ -112,6 +112,7 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             '/classic fm\/[\d.]+ android (?P<version>[\d.]+)\/[^);\/]+/i',
             '/\(speedmode; proxy; android (?P<version>[\d.]+);([^);\/]+)\)/i',
             '/com\.huawei\.hmos\.browser \([^;]+;openharmony-(?P<version>[\d.]+);[^)]+\)/i',
+            '/snapchat\/[\d.]+ \([^;]+; andr[o0]id (?P<version>[\d.]+)#/i',
         ];
 
         $filtered = array_filter(

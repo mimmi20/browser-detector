@@ -11086,6 +11086,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SEO Engine',
                 'key' => 'seo-engine',
             ],
+            [
+                'type' => 'Catchpoint Systems',
+                'name' => 'Catchpoint Systems, Inc.',
+                'brandname' => 'Catchpoint Systems',
+                'key' => 'catchpoint-systems',
+            ],
+            [
+                'type' => 'Kaspersky',
+                'name' => 'AO Kaspersky Lab',
+                'brandname' => 'Kaspersky',
+                'key' => 'kaspersky',
+            ],
+            [
+                'type' => 'Certified Security Solutions',
+                'name' => 'Certified Security Solutions',
+                'brandname' => 'Certified Security Solutions',
+                'key' => 'certified-security-solutions',
+            ],
+            [
+                'type' => 'Treeworks',
+                'name' => 'Treeworks SRL',
+                'brandname' => 'Treeworks',
+                'key' => 'treeworks',
+            ],
         ];
     }
 

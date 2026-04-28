@@ -231,7 +231,7 @@
     "device": {
       "architecture": null,
       "deviceName": "6120c",
-      "marketingName": "6120 classic",
+      "marketingName": "6120 Classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
       "dualOrientation": false,
@@ -590,7 +590,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "E72",
+      "deviceName": "E72-1",
       "marketingName": "E72",
       "manufacturer": "Nokia",
       "brand": "Nokia",
@@ -1310,7 +1310,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "E63",
+      "deviceName": "E63-2",
       "marketingName": "E63",
       "manufacturer": "Nokia",
       "brand": "Nokia",
@@ -1760,7 +1760,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "E71",
+      "deviceName": "E71-1",
       "marketingName": "E71",
       "manufacturer": "Nokia",
       "brand": "Nokia",
@@ -2733,6 +2733,51 @@
       "name": "Nokia OSS Browser",
       "modus": null,
       "version": "3.0.0",
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 NokiaE63-1/200.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E63",
+      "marketingName": "E63",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.36
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": "3.1.0",
+      "manufacturer": "Nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "3.1.0",
       "manufacturer": "Nokia",
       "type": "browser",
       "isbot": false,
@@ -4426,51 +4471,6 @@
         "height": 128,
         "touch": false,
         "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia2322c_CMCC/2.0 (08.20) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2322c",
-      "marketingName": "2322 classic",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
       },
       "type": "feature-phone",
       "ismobile": true,
