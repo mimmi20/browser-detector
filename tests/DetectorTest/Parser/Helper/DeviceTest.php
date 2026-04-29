@@ -376,6 +376,10 @@ final class DeviceTest extends TestCase
             ['Pixel 10 Pro Fold', 'google=google pixel 10 pro fold'],
             ['GU0NP', 'google=google gu0np'],
             ['GM66V', 'google=google gm66v'],
+            ['Pixel 10a', 'google=google pixel 10a'],
+            ['GE1GQ', 'google=google ge1gq'],
+            ['GV0BP', 'google=google gv0bp'],
+            ['G4H7L', 'google=google g4h7l'],
             // OnePlus
             ['AC2003', 'oneplus=oneplus ac2003'],
             ['IN2023', 'oneplus=oneplus in2023'],
@@ -4525,6 +4529,7 @@ final class DeviceTest extends TestCase
             ['HUAWEI ALN-AL00', 'huawei=huawei aln-al00'],
             ['BRA-AL00', 'huawei=huawei bra-al00'],
             ['HUAWEI BRA-AL00', 'huawei=huawei bra-al00'],
+            ['HUAWEI_C8813D', 'huawei=huawei c8813d'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -6290,6 +6295,7 @@ final class DeviceTest extends TestCase
             ['HTC Butterfly S 901s', 'htc=htc s901s'],
             ['HTC_Desire_601_dual_sim', 'htc=htc desire 601 dual sim'],
             ['One S C2', 'htc=htc c2'],
+            ['Sprint APA9292KT', 'htc=htc 9292'],
             // teclast
             ['P30S_EEA', 'teclast=teclast p30s_eea'],
             ['P25T_EEA', 'teclast=teclast p25t_eea'],
@@ -7077,6 +7083,7 @@ final class DeviceTest extends TestCase
             ['MZ-16th plus', 'meizu=meizu 16th plus'],
             ['16th plus', 'meizu=meizu 16th plus'],
             ['M6 Note', 'meizu=meizu m6 note'],
+            ['MEIZU Note21 Pro', 'meizu=meizu note 21 pro'],
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
             ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],

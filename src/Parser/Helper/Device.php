@@ -344,6 +344,10 @@ final class Device implements DeviceInterface
             'pixel 10 pro fold' => 'google=google pixel 10 pro fold',
             'gu0np' => 'google=google gu0np',
             'gm66v' => 'google=google gm66v',
+            'pixel 10a' => 'google=google pixel 10a',
+            'ge1gq' => 'google=google ge1gq',
+            'gv0bp' => 'google=google gv0bp',
+            'g4h7l' => 'google=google g4h7l',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -3423,6 +3427,7 @@ final class Device implements DeviceInterface
             'aln-al10', 'huawei aln-al10' => 'huawei=huawei aln-al10',
             'aln-al00', 'huawei aln-al00' => 'huawei=huawei aln-al00',
             'bra-al00', 'huawei bra-al00' => 'huawei=huawei bra-al00',
+            'huawei_c8813d' => 'huawei=huawei c8813d',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -5144,6 +5149,7 @@ final class Device implements DeviceInterface
             'htc butterfly s 901s' => 'htc=htc s901s',
             'htc_desire_601_dual_sim' => 'htc=htc desire 601 dual sim',
             'one s c2' => 'htc=htc c2',
+            'sprint apa9292kt' => 'htc=htc 9292',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea', 'p25_t_eea' => 'teclast=teclast p25t_eea',
@@ -5911,6 +5917,7 @@ final class Device implements DeviceInterface
             'meizu 16th', 'mz-16th', '16th' => 'meizu=meizu 16th',
             'meizu 16th plus', 'mz-16th plus', '16th plus' => 'meizu=meizu 16th plus',
             'm6 note' => 'meizu=meizu m6 note',
+            'meizu note21 pro' => 'meizu=meizu note 21 pro',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
             'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',
