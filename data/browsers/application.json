@@ -1618,18 +1618,6 @@
     },
     "engine": "webkit"
   },
-  "juice": {
-    "name": "Juice",
-    "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Juice"
-      ]
-    },
-    "engine": "webkit"
-  },
   "bit-torrent": {
     "name": "BitTorrent",
     "manufacturer": "bittorrent",
