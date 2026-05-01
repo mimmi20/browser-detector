@@ -338,6 +338,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "wget2",
         "Wget",
         "wget"
       ]
@@ -1168,6 +1169,54 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Smartsite HTTPClient"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pimeyes-downloader-api": {
+    "name": "pimeyes-downloader-api",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "pimeyes-downloader-api"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "http-get": {
+    "name": "http-get",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "http-get"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "http-request": {
+    "name": "http-request",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "http-request"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "node-urllib": {
+    "name": "node-urllib",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "node-urllib"
       ]
     },
     "engine": "unknown"

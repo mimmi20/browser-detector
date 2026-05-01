@@ -3445,6 +3445,7 @@ final class Device implements DeviceInterface
             'hry-l21', 'huawei hry-l21' => 'huawei=huawei hry-l21',
             'hry-lx1', 'huawei hry-lx1' => 'huawei=huawei hry-lx1',
             'hry-lx1t', 'huawei hry-lx1t' => 'huawei=huawei hry-lx1t',
+            'hry-lx1meb', 'huawei hry-lx1meb' => 'huawei=huawei hry-lx1meb',
             'hry-lx2', 'huawei hry-lx2' => 'huawei=huawei hry-lx2',
             'hry-al00', 'huawei hry-al00' => 'huawei=huawei hry-al00',
             'hry-al00a', 'huawei hry-al00a' => 'huawei=huawei hry-al00a',

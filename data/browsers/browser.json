@@ -5191,6 +5191,18 @@
     },
     "engine": null
   },
+  "norton-private-browser": {
+    "name": "Norton Private Browser",
+    "manufacturer": "norton-life-lock",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Norton Private Browser"
+      ]
+    },
+    "engine": null
+  },
   "mypal": {
     "name": "Mypal",
     "manufacturer": "unknown",

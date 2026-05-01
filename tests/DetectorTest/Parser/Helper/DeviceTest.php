@@ -4568,6 +4568,8 @@ final class DeviceTest extends TestCase
             ['HUAWEI HRY-LX1', 'huawei=huawei hry-lx1'],
             ['HRY-LX1T', 'huawei=huawei hry-lx1t'],
             ['HUAWEI HRY-LX1T', 'huawei=huawei hry-lx1t'],
+            ['HRY-LX1MEB', 'huawei=huawei hry-lx1meb'],
+            ['HUAWEI HRY-LX1MEB', 'huawei=huawei hry-lx1meb'],
             ['HRY-LX2', 'huawei=huawei hry-lx2'],
             ['HUAWEI HRY-LX2', 'huawei=huawei hry-lx2'],
             ['HRY-AL00', 'huawei=huawei hry-al00'],
