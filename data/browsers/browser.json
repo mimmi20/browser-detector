@@ -4065,7 +4065,7 @@
     "engine": "webkit"
   },
   "teslabrowser": {
-    "name": "TeslaBrowser",
+    "name": "Tesla Browser",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -6034,6 +6034,40 @@
       "search": [
         "Amiga-AWeb"
       ]
+    },
+    "engine": null
+  },
+  "dorothy-browser": {
+    "name": "Dorothy Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Dorothy Browser"
+      ]
+    },
+    "engine": null
+  },
+  "ks-mobile-browser": {
+    "name": "KS Mobile Browser",
+    "manufacturer": "ks-mobile",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ksmobilebrowser"
+      ]
+    },
+    "engine": null
+  },
+  "bsn-browser": {
+    "name": "BSNBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   }

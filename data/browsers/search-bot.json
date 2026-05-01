@@ -1567,5 +1567,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "dazoo-bot": {
+    "name": "Dazoobot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Dazoobot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

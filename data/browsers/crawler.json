@@ -5312,6 +5312,18 @@
     },
     "engine": "unknown"
   },
+  "sputnik-image-bot": {
+    "name": "Sputnik Image Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SputnikImageBot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "css-certificate-spider": {
     "name": "CSS Certificate Spider",
     "manufacturer": "certified-security-solutions",
@@ -5739,5 +5751,65 @@
       ]
     },
     "engine": "unknown"
+  },
+  "hubspot marketing grader": {
+    "name": "HubSpot Marketing Grader",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Marketing Grader"
+      ]
+    },
+    "engine": null
+  },
+  "hubspot-website-grader": {
+    "name": "HubSpot Website Grader",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Website Grader"
+      ]
+    },
+    "engine": null
+  },
+  "seznam-zbozi-robot": {
+    "name": "Seznam Zbozi.cz",
+    "manufacturer": "seznam",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Seznam-Zbozi-robot"
+      ]
+    },
+    "engine": null
+  },
+  "mediumbot-metatag-fetcher": {
+    "name": "Mediumbot MetaTagFetcher",
+    "manufacturer": "medium",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mediumbot-MetaTagFetcher"
+      ]
+    },
+    "engine": null
+  },
+  "mediumbot-proxy-fetcher": {
+    "name": "Mediumbot ProxyFetcher",
+    "manufacturer": "medium",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mediumbot-ProxyFetcher"
+      ]
+    },
+    "engine": null
   }
 }

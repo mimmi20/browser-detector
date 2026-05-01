@@ -3723,6 +3723,12 @@ enum Company: string implements CompanyInterface
 
     case chrisDyer = 'Chris Dyer';
 
+    case jjOnline = 'JJ Online';
+
+    case medium = 'Medium';
+
+    case ksMobile = 'KS Mobile';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5582,6 +5588,9 @@ enum Company: string implements CompanyInterface
             'smartretailsolutions', 'smart retail solutions gmbh', 'smart-retail-solutions', 'smart retail solutions' => self::smartRetailSolutions,
             'andain' => self::andain,
             'chrisdyer', 'chris dyer', 'chris-dyer' => self::chrisDyer,
+            'jjonline', 'jj online gmbh', 'jj-online', 'jj online' => self::jjOnline,
+            'medium', 'a medium corporation' => self::medium,
+            'ksmobile', 'ks mobile, inc.', 'ks-mobile', 'ks mobile' => self::ksMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6323,6 +6332,9 @@ enum Company: string implements CompanyInterface
             self::keePassium => 'KeePassium Labs',
             self::phoebeCode => 'Phoebe Code Limited',
             self::smartRetailSolutions => 'Smart Retail Solutions GmbH',
+            self::jjOnline => 'JJ Online GmbH',
+            self::medium => 'A Medium Corporation',
+            self::ksMobile => 'KS Mobile, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7016,6 +7028,8 @@ enum Company: string implements CompanyInterface
             self::phoebeCode => 'phoebe-code',
             self::smartRetailSolutions => 'smart-retail-solutions',
             self::chrisDyer => 'chris-dyer',
+            self::jjOnline => 'jj-online',
+            self::ksMobile => 'ks-mobile',
             default => $this->name,
         };
     }

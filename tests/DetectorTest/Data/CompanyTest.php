@@ -11158,6 +11158,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Chris Dyer',
                 'key' => 'chris-dyer',
             ],
+            [
+                'type' => 'JJ Online',
+                'name' => 'JJ Online GmbH',
+                'brandname' => 'JJ Online',
+                'key' => 'jj-online',
+            ],
+            [
+                'type' => 'Medium',
+                'name' => 'A Medium Corporation',
+                'brandname' => 'Medium',
+                'key' => 'medium',
+            ],
+            [
+                'type' => 'KS Mobile',
+                'name' => 'KS Mobile, Inc.',
+                'brandname' => 'KS Mobile',
+                'key' => 'ks-mobile',
+            ],
         ];
     }
 

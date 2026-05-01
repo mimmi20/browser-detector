@@ -583,5 +583,27 @@
       ]
     },
     "engine": null
+  },
+  "uptimia": {
+    "name": "Uptimia",
+    "manufacturer": "jj-online",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Uptimia"
+      ]
+    },
+    "engine": null
+  },
+  "contentking": {
+    "name": "ContentKing",
+    "manufacturer": "content-king",
+    "type": "site-monitor",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }
