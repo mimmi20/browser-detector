@@ -918,5 +918,17 @@
       ]
     },
     "engine": null
+  },
+  "songbird": {
+    "name": "Songbird App",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Songbird"
+      ]
+    },
+    "engine": null
   }
 }

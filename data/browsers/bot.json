@@ -2717,18 +2717,6 @@
     },
     "engine": "unknown"
   },
-  "jobboerse bot": {
-    "name": "JobBoerse Bot",
-    "manufacturer": "jobboerse",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "findlinks"
-      ]
-    },
-    "engine": "unknown"
-  },
   "jobdiggerspider": {
     "name": "JobdiggerSpider",
     "manufacturer": "job-digger",

@@ -2544,6 +2544,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "MultiZilla v",
         "MultiZilla"
       ]
     },
@@ -3801,18 +3802,6 @@
       ]
     },
     "engine": "blink"
-  },
-  "songbird": {
-    "name": "Songbird App",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Songbird"
-      ]
-    },
-    "engine": null
   },
   "sonycebrowser": {
     "name": "SonyCEBrowser",
