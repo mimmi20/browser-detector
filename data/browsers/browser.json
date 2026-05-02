@@ -4120,18 +4120,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Version"
-      ]
-    },
-    "engine": null
-  },
-  "tizenbrowser": {
-    "name": "TizenBrowser",
-    "manufacturer": "samsung",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
+        "Version",
         "TizenBrowser",
         "Tizen Browser"
       ]
