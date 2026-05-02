@@ -575,16 +575,6 @@
     },
     "engine": null
   },
-  "apple mobilenotes": {
-    "name": "MobileNotes",
-    "manufacturer": "apple",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
   "opera news": {
     "name": "News",
     "manufacturer": "opera",
@@ -1414,16 +1404,6 @@
     },
     "engine": null
   },
-  "web.de mail": {
-    "name": "WEB.DE Mail",
-    "manufacturer": "einsundeins",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "gbox-helper": {
     "name": "GBox Helper",
     "manufacturer": "unknown",
@@ -1608,24 +1588,12 @@
   },
   "doughnut": {
     "name": "Doughnut",
-    "manufacturer": "unknown",
+    "manufacturer": "chris-dyer",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Doughnut"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "juice": {
-    "name": "Juice",
-    "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Juice"
       ]
     },
     "engine": "webkit"

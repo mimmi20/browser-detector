@@ -662,5 +662,29 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "bazqux-reader": {
+    "name": "BazQux Reader",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BazQux"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "feedspot": {
+    "name": "Feedspot",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Feedspotbot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

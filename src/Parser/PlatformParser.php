@@ -156,7 +156,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/^(?!com.apple.safari.searchhelper|safari).*cfnetwork\/.+ darwin\/(\d+[\.\d]+)(?!.*(?:x86_64|i386|powermac|power macintosh))/i' => Os::ios,
             '/cfnetwork\/.*\((x86_64|i386)\)|cfnetwork\/(80[27]|79[68]|760|720|71[48]|70[58]|69[69]|673|647|59[56]|561|520|515|454|43[38]|422|33[09]|22[01]|217|12[89]|4\.0|1\.[12])/i' => Os::macosx,
             '/cfnetwork\/(1402|1378|109[18]|108[58]|97[14568]|96[92]|95[85]|948|90[21]|89[743]|88[79]|811|808|790|75[78]|711|709|672|60[29]|548|485|467|459)/i' => Os::ios,
-            '/(?<!FBSN\/|\()darwin|cfnetwork/i' => Os::macintosh,
+            '/(?<!FBSN\/|\()darwin|cfnetwork|\(darwin\)/i' => Os::macintosh,
             '/smarthub; ?smart-tv|hbbtv\/.+maple|samsung;smarttv201[2-5]/i' => Os::orsay,
             '/Linux (?:[^;]+); Opera TV(?: Store)?\/|^Opera\/\d+\.\d+ \(Linux mips|OPR\/.+TV Store\/(\d+[.\d]+)/i' => Os::operaTv,
             '/linux mint/i' => Os::linuxmint,

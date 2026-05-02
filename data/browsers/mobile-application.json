@@ -4652,11 +4652,12 @@
   },
   "spark-mail": {
     "name": "SparkMail",
-    "manufacturer": "unknown",
+    "manufacturer": "spark-mail",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Spark Mail Helper",
         "SparkMail"
       ]
     },
@@ -5208,6 +5209,170 @@
       "search": [
         "Podcatcher Deluxe"
       ]
+    },
+    "engine": null
+  },
+  "chat-box": {
+    "name": "ChatBox",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ChatBox"
+      ]
+    },
+    "engine": null
+  },
+  "snagit": {
+    "name": "Snagit",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Snagit"
+      ]
+    },
+    "engine": null
+  },
+  "safe-in-cloud": {
+    "name": "SafeInCloud",
+    "manufacturer": "safe-in-cloud",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "safe-in-cloud-free": {
+    "name": "SafeInCloud Free",
+    "manufacturer": "safe-in-cloud",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "safe-in-cloud-pro": {
+    "name": "SafeInCloud Pro",
+    "manufacturer": "safe-in-cloud",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "apple mobilenotes": {
+    "name": "MobileNotes",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "apple-authentication-services": {
+    "name": "Apple AuthenticationServices",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "keepassium": {
+    "name": "KeePassium",
+    "manufacturer": "kee-passium",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "keepassium-pro": {
+    "name": "KeePassium Pro",
+    "manufacturer": "kee-passium",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "strong-box": {
+    "name": "Strongbox",
+    "manufacturer": "phoebe-code",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "claude": {
+    "name": "Claude",
+    "manufacturer": "anthropic",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "ai-chat": {
+    "name": "AI Chat",
+    "manufacturer": "anthropic",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "hp-app": {
+    "name": "HP App",
+    "manufacturer": "hp",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "teo-app": {
+    "name": "TEO",
+    "manufacturer": "smart-retail-solutions",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "one-app": {
+    "name": "OneApp",
+    "manufacturer": "andain",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "apple-passwords": {
+    "name": "Passwords",
+    "manufacturer": "apple",
+    "type": "mobile-application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": null
   }

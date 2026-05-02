@@ -45,6 +45,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Spark Desktop Helper",
         "SparkDesktop"
       ]
     },
@@ -251,5 +252,39 @@
       ]
     },
     "engine": "unknown"
+  },
+  "mr-mail": {
+    "name": "MRMail",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MRMail"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zoho-mail": {
+    "name": "Zoho Mail",
+    "manufacturer": "zoho",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zoho Mail"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "web.de mail": {
+    "name": "WEB.DE Mail",
+    "manufacturer": "einsundeins",
+    "type": "pim",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   }
 }

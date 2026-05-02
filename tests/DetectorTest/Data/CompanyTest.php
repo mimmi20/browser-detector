@@ -11110,6 +11110,72 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Treeworks',
                 'key' => 'treeworks',
             ],
+            [
+                'type' => 'SXQ Hive',
+                'name' => 'SXQ Hive',
+                'brandname' => 'SXQ Hive',
+                'key' => 'sxq-hive',
+            ],
+            [
+                'type' => 'Vibalo',
+                'name' => 'Vibalo',
+                'brandname' => 'Vibalo',
+                'key' => 'vibalo',
+            ],
+            [
+                'type' => 'SafeInCloud',
+                'name' => 'SafeInCloud SAS',
+                'brandname' => 'SafeInCloud',
+                'key' => 'safe-in-cloud',
+            ],
+            [
+                'type' => 'KeePassium',
+                'name' => 'KeePassium Labs',
+                'brandname' => 'KeePassium',
+                'key' => 'kee-passium',
+            ],
+            [
+                'type' => 'Phoebe Code',
+                'name' => 'Phoebe Code Limited',
+                'brandname' => 'Phoebe Code',
+                'key' => 'phoebe-code',
+            ],
+            [
+                'type' => 'Smart Retail Solutions',
+                'name' => 'Smart Retail Solutions GmbH',
+                'brandname' => 'Smart Retail Solutions',
+                'key' => 'smart-retail-solutions',
+            ],
+            [
+                'type' => 'ANDAIN',
+                'name' => 'ANDAIN',
+                'brandname' => 'ANDAIN',
+                'key' => 'andain',
+            ],
+            [
+                'type' => 'Chris Dyer',
+                'name' => 'Chris Dyer',
+                'brandname' => 'Chris Dyer',
+                'key' => 'chris-dyer',
+            ],
+            [
+                'type' => 'JJ Online',
+                'name' => 'JJ Online GmbH',
+                'brandname' => 'JJ Online',
+                'key' => 'jj-online',
+            ],
+            [
+                'type' => 'Medium',
+                'name' => 'A Medium Corporation',
+                'brandname' => 'Medium',
+                'key' => 'medium',
+            ],
+            [
+                'type' => 'KS Mobile',
+                'name' => 'KS Mobile, Inc.',
+                'brandname' => 'KS Mobile',
+                'key' => 'ks-mobile',
+            ],
         ];
     }
 

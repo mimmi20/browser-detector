@@ -3707,6 +3707,28 @@ enum Company: string implements CompanyInterface
 
     case treeworks = 'Treeworks';
 
+    case sxqHive = 'SXQ Hive';
+
+    case vibalo = 'Vibalo';
+
+    case safeInCloud = 'SafeInCloud';
+
+    case keePassium = 'KeePassium';
+
+    case phoebeCode = 'Phoebe Code';
+
+    case smartRetailSolutions = 'Smart Retail Solutions';
+
+    case andain = 'ANDAIN';
+
+    case chrisDyer = 'Chris Dyer';
+
+    case jjOnline = 'JJ Online';
+
+    case medium = 'Medium';
+
+    case ksMobile = 'KS Mobile';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5558,6 +5580,17 @@ enum Company: string implements CompanyInterface
             'kaspersky', 'ao kaspersky lab' => self::kaspersky,
             'certifiedsecuritysolutions', 'certified-security-solutions', 'certified security solutions' => self::certifiedSecuritySolutions,
             'treeworks', 'treeworks srl' => self::treeworks,
+            'sxqhive', 'sxq-hive', 'sxq hive' => self::sxqHive,
+            'vibalo' => self::vibalo,
+            'safeincloud', 'safeincloud sas', 'safe-in-cloud' => self::safeInCloud,
+            'keepassium', 'keepassium labs', 'kee-passium' => self::keePassium,
+            'phoebecode', 'phoebe code limited', 'phoebe-code', 'phoebe code' => self::phoebeCode,
+            'smartretailsolutions', 'smart retail solutions gmbh', 'smart-retail-solutions', 'smart retail solutions' => self::smartRetailSolutions,
+            'andain' => self::andain,
+            'chrisdyer', 'chris dyer', 'chris-dyer' => self::chrisDyer,
+            'jjonline', 'jj online gmbh', 'jj-online', 'jj online' => self::jjOnline,
+            'medium', 'a medium corporation' => self::medium,
+            'ksmobile', 'ks mobile, inc.', 'ks-mobile', 'ks mobile' => self::ksMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6295,6 +6328,13 @@ enum Company: string implements CompanyInterface
             self::catchpointSystems => 'Catchpoint Systems, Inc.',
             self::kaspersky => 'AO Kaspersky Lab',
             self::treeworks => 'Treeworks SRL',
+            self::safeInCloud => 'SafeInCloud SAS',
+            self::keePassium => 'KeePassium Labs',
+            self::phoebeCode => 'Phoebe Code Limited',
+            self::smartRetailSolutions => 'Smart Retail Solutions GmbH',
+            self::jjOnline => 'JJ Online GmbH',
+            self::medium => 'A Medium Corporation',
+            self::ksMobile => 'KS Mobile, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6982,6 +7022,14 @@ enum Company: string implements CompanyInterface
             self::seoEngine => 'seo-engine',
             self::catchpointSystems => 'catchpoint-systems',
             self::certifiedSecuritySolutions => 'certified-security-solutions',
+            self::sxqHive => 'sxq-hive',
+            self::safeInCloud => 'safe-in-cloud',
+            self::keePassium => 'kee-passium',
+            self::phoebeCode => 'phoebe-code',
+            self::smartRetailSolutions => 'smart-retail-solutions',
+            self::chrisDyer => 'chris-dyer',
+            self::jjOnline => 'jj-online',
+            self::ksMobile => 'ks-mobile',
             default => $this->name,
         };
     }
