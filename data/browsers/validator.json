@@ -148,5 +148,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "w3c mobileok checker": {
+    "name": "W3C MobileOK Checker",
+    "manufacturer": "w3c",
+    "type": "validator",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "W3C\\-mobileOK\\/DDC\\-"
+      ]
+    },
+    "engine": "unknown"
   }
 }

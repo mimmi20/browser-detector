@@ -508,5 +508,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "browsershots": {
+    "name": "Browsershots",
+    "manufacturer": "browsershots",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Browsershots"
+      ]
+    },
+    "engine": "unknown"
   }
 }

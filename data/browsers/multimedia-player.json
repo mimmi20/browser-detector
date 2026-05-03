@@ -930,5 +930,17 @@
       ]
     },
     "engine": null
+  },
+  "jriver-media-center": {
+    "name": "JRiver Media Center",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "J\\. River Internet Reader"
+      ]
+    },
+    "engine": null
   }
 }

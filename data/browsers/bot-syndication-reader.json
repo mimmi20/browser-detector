@@ -23,30 +23,6 @@
     },
     "engine": "unknown"
   },
-  "feed wrangler": {
-    "name": "Feed Wrangler",
-    "manufacturer": "unknown",
-    "type": "bot-syndication-reader",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Feed Wrangler"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "feedlybot": {
-    "name": "FeedlyBot",
-    "manufacturer": "feedly",
-    "type": "bot-syndication-reader",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "FeedlyBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "feedraider": {
     "name": "feedraider",
     "manufacturer": "unknown",

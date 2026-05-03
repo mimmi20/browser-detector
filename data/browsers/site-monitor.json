@@ -605,5 +605,29 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "status-cake": {
+    "name": "StatusCake",
+    "manufacturer": "traffic-cake",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StatusCake Error Detector Crawler V"
+      ]
+    },
+    "engine": null
+  },
+  "http-mon": {
+    "name": "HTTPMon",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HTTPMon"
+      ]
+    },
+    "engine": null
   }
 }
