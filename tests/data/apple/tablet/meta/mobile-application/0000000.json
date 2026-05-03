@@ -3373,5 +3373,50 @@
       "version": "8612.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Barcelona 425.0.0.26.58 (iPad12,1; iPadOS 26_3_1; nl_NL; nl; scale=2.00; 750x1334; 936469872) AppleWebKit/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 12,1",
+      "marketingName": "iPad 10.2\" (9th Gen) Wi-Fi",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2160,
+        "height": 1620,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "26.3.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Threads",
+      "modus": null,
+      "version": "425.0.0.26.58",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

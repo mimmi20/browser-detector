@@ -988,5 +988,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.GoogleMobile/416.4 iPad/18.7.7 hw/iPad12_1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 12,1",
+      "marketingName": "iPad 10.2\" (9th Gen) Wi-Fi",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2160,
+        "height": 1620,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "18.7.7",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "416.4.0",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]
