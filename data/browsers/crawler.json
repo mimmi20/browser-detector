@@ -5927,5 +5927,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "scoutjet": {
+    "name": "ScoutJet",
+    "manufacturer": "blekko",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Scoutjet"
+      ]
+    },
+    "engine": "unknown"
   }
 }

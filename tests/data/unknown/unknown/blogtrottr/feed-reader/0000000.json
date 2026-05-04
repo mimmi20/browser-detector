@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "AddThis.com robot tech.support@clearspring.com"
+      "user-agent": "Blogtrottr/2.0"
     },
     "device": {
       "architecture": null,
@@ -30,12 +30,12 @@
       "bits": null
     },
     "client": {
-      "name": "AddThis.com robot",
+      "name": "Blogtrottr",
       "modus": null,
-      "version": null,
-      "manufacturer": "Oracle",
-      "type": "bot",
-      "isbot": true,
+      "version": "2.0.0",
+      "manufacturer": "Blogtrottr",
+      "type": "feed-reader",
+      "isbot": false,
       "bits": null
     },
     "engine": {

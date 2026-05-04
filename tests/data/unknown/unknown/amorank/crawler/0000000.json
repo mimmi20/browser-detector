@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; URLAppendBot/1.0; +http://www.profound.net/urlappendbot.html)"
+      "user-agent": "AmorankSpider/0.1; +http://amorank.com/webcrawler.html"
     },
     "device": {
       "architecture": null,
@@ -30,11 +30,11 @@
       "bits": null
     },
     "client": {
-      "name": "URLAppendBot",
+      "name": "Amorank Spider",
       "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "Profound Networks",
-      "type": "bot",
+      "version": "0.1.0",
+      "manufacturer": "Amorank",
+      "type": "crawler",
       "isbot": true,
       "bits": null
     },
