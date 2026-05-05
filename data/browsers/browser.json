@@ -1286,7 +1286,7 @@
         "ELinks"
       ]
     },
-    "engine": "unknown"
+    "engine": "text"
   },
   "epiphany": {
     "name": "GNOME Web",
@@ -2222,7 +2222,7 @@
         "Links \\("
       ]
     },
-    "engine": "unknown"
+    "engine": "text"
   },
   "lolifox": {
     "name": "Lolifox",
@@ -2544,6 +2544,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "MultiZilla v",
         "MultiZilla"
       ]
     },
@@ -3802,18 +3803,6 @@
     },
     "engine": "blink"
   },
-  "songbird": {
-    "name": "Songbird App",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Songbird"
-      ]
-    },
-    "engine": null
-  },
   "sonycebrowser": {
     "name": "SonyCEBrowser",
     "manufacturer": "sony",
@@ -4120,18 +4109,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Version"
-      ]
-    },
-    "engine": null
-  },
-  "tizenbrowser": {
-    "name": "TizenBrowser",
-    "manufacturer": "samsung",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
+        "Version",
         "TizenBrowser",
         "Tizen Browser"
       ]

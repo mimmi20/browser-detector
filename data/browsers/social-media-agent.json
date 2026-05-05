@@ -178,5 +178,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "addthis.com robot": {
+    "name": "AddThis.com robot",
+    "manufacturer": "oracle",
+    "type": "social-media-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AddThis\\.com robot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

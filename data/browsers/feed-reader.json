@@ -686,5 +686,53 @@
       ]
     },
     "engine": "unknown"
+  },
+  "simplepie": {
+    "name": "SimplePie",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SimplePie"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "feedlybot": {
+    "name": "FeedlyBot",
+    "manufacturer": "feedly",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FeedlyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "feed wrangler": {
+    "name": "Feed Wrangler",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Feed Wrangler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "blogtrottr": {
+    "name": "Blogtrottr",
+    "manufacturer": "blogtrottr",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Blogtrottr"
+      ]
+    },
+    "engine": "unknown"
   }
 }

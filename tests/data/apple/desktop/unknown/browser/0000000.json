@@ -113,10 +113,10 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
       "version": null,
-      "manufacturer": "Microsoft",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -158,10 +158,10 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
       "version": null,
-      "manufacturer": "Microsoft",
+      "manufacturer": "Apple",
       "bits": null
     },
     "client": {
@@ -222,51 +222,6 @@
       "name": "Gecko",
       "version": "1.7.5",
       "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 1stBrowser/45.0.2454.146 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.10.3",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "1st Browser",
-      "modus": null,
-      "version": "45.0.2454.146",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.101",
-      "manufacturer": "Google"
     }
   },
   {
@@ -428,10 +383,10 @@
       "bits": null
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
-      "manufacturer": "Apple",
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "4.1.0",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {

@@ -11176,6 +11176,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'KS Mobile',
                 'key' => 'ks-mobile',
             ],
+            [
+                'type' => 'Amorank',
+                'name' => 'Amorank',
+                'brandname' => 'Amorank',
+                'key' => 'amorank',
+            ],
+            [
+                'type' => 'Blogtrottr',
+                'name' => 'Blogtrottr Ltd',
+                'brandname' => 'Blogtrottr',
+                'key' => 'blogtrottr',
+            ],
+            [
+                'type' => 'Bountii',
+                'name' => 'Bountii Inc.',
+                'brandname' => 'Bountii',
+                'key' => 'bountii',
+            ],
+            [
+                'type' => 'Domain Re-Animator',
+                'name' => 'Domain Re-Animator, LLC',
+                'brandname' => 'Domain Re-Animator',
+                'key' => 'domain-re-animator',
+            ],
+            [
+                'type' => 'TrafficCake',
+                'name' => 'TrafficCake Limited',
+                'brandname' => 'TrafficCake',
+                'key' => 'traffic-cake',
+            ],
         ];
     }
 

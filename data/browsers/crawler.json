@@ -1032,6 +1032,18 @@
     },
     "engine": "unknown"
   },
+  "adbeat-publisher-description-fetcher": {
+    "name": "Adbeat Publisher Description Fetcher",
+    "manufacturer": "adbeat",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "adbeat-publisher-description-fetcher"
+      ]
+    },
+    "engine": "unknown"
+  },
   "perplexity-bot": {
     "name": "PerplexityBot",
     "manufacturer": "perplexity",
@@ -5811,5 +5823,121 @@
       ]
     },
     "engine": null
+  },
+  "jobboerse bot": {
+    "name": "JobBoerse Bot",
+    "manufacturer": "jobboerse",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Jobboerse"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "komodiabot": {
+    "name": "KomodiaBot",
+    "manufacturer": "komodia-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KomodiaBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "urlappendbot": {
+    "name": "URLAppendBot",
+    "manufacturer": "profound-networks",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "URLAppendBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "screenerbot": {
+    "name": "ScreenerBot",
+    "manufacturer": "screener-bot",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ScreenerBot Crawler Beta"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "careerbot": {
+    "name": "CareerBot",
+    "manufacturer": "career-x",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CareerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "amorank-spider": {
+    "name": "Amorank Spider",
+    "manufacturer": "amorank",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AmorankSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "email-exractor": {
+    "name": "EMail Exractor",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "domain-re-animator-bot": {
+    "name": "Domain Re-Animator Bot",
+    "manufacturer": "domain-re-animator",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "findx-bot": {
+    "name": "Findxbot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Findxbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "scoutjet": {
+    "name": "ScoutJet",
+    "manufacturer": "blekko",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Scoutjet"
+      ]
+    },
+    "engine": "unknown"
   }
 }

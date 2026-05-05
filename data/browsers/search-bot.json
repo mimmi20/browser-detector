@@ -1579,5 +1579,51 @@
       ]
     },
     "engine": "unknown"
+  },
+  "netcraft ssl server survey": {
+    "name": "Netcraft SSL Server Survey",
+    "manufacturer": "netcraft",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "meanpathbot": {
+    "name": "Meanpath Bot",
+    "manufacturer": "meanpath",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "meanpathbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "blekkobot": {
+    "name": "BlekkoBot",
+    "manufacturer": "blekko",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Blekkobot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bountii-bot": {
+    "name": "Bountii Bot",
+    "manufacturer": "bountii",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BountiiBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -1,8 +1,8 @@
 {
   "rules": {
     "/aggregator\\:spinn3r/i": "spinn3r rss aggregator",
-    "/(?<!like )navigator/i": "netscape navigator",
     "/fireweb navigator/i": "fireweb navigator",
+    "/(?<!like )navigator/i": "netscape navigator",
     "/s~virustotalcloud/i": "virus-total-cloud",
     "/wayback save page/i": "wayback archive bot",
     "/(?<!_)ruby(?!, )/i": "ruby",

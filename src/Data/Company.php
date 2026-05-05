@@ -3729,6 +3729,16 @@ enum Company: string implements CompanyInterface
 
     case ksMobile = 'KS Mobile';
 
+    case amorank = 'Amorank';
+
+    case blogtrottr = 'Blogtrottr';
+
+    case bountii = 'Bountii';
+
+    case domainReAnimator = 'Domain Re-Animator';
+
+    case trafficCake = 'TrafficCake';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5591,6 +5601,11 @@ enum Company: string implements CompanyInterface
             'jjonline', 'jj online gmbh', 'jj-online', 'jj online' => self::jjOnline,
             'medium', 'a medium corporation' => self::medium,
             'ksmobile', 'ks mobile, inc.', 'ks-mobile', 'ks mobile' => self::ksMobile,
+            'amorank' => self::amorank,
+            'blogtrottr', 'blogtrottr ltd' => self::blogtrottr,
+            'bountii', 'bountii inc.' => self::bountii,
+            'domainreanimator', 'domain re-animator, llc', 'domain-re-animator', 'domain re-animator' => self::domainReAnimator,
+            'trafficcake', 'trafficcake limited', 'traffic-cake' => self::trafficCake,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6335,6 +6350,10 @@ enum Company: string implements CompanyInterface
             self::jjOnline => 'JJ Online GmbH',
             self::medium => 'A Medium Corporation',
             self::ksMobile => 'KS Mobile, Inc.',
+            self::blogtrottr => 'Blogtrottr Ltd',
+            self::bountii => 'Bountii Inc.',
+            self::domainReAnimator => 'Domain Re-Animator, LLC',
+            self::trafficCake => 'TrafficCake Limited',
             self::unknown => null,
             default => $this->value,
         };
@@ -7030,6 +7049,8 @@ enum Company: string implements CompanyInterface
             self::chrisDyer => 'chris-dyer',
             self::jjOnline => 'jj-online',
             self::ksMobile => 'ks-mobile',
+            self::domainReAnimator => 'domain-re-animator',
+            self::trafficCake => 'traffic-cake',
             default => $this->name,
         };
     }
