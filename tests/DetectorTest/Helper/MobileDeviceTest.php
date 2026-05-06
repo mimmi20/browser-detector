@@ -176,6 +176,7 @@ final class MobileDeviceTest extends TestCase
             ['com.huawei.hmos.browser (2in1;OpenHarmony-6.0.2.130;HAD-W24) NetworkSDK/8.0.10.309'],
             ['Sonos/71.0-37271 (Play:3)'],
             ['SonyST27i Build/6.1.1.B.1.10 UpdateCenter/1.2'],
+            ['Mozilla/5.0 (PlayStation 5 3.03/SmartTV) AppleWebKit/605.1.15 (KHTML, like Gecko)'],
         ];
     }
 

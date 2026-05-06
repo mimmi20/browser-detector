@@ -13,7 +13,7 @@
       "size": 7
     },
     "type": "smart-display",
-    "platform": "android"
+    "platform": "fire-os"
   },
   "amazon aeohp": {
     "deviceName": "AEOHP",
@@ -25,10 +25,10 @@
     "display": {
       "width": null,
       "height": null,
-      "touch": false,
+      "touch": true,
       "size": 5.5
     },
     "type": "smart-display",
-    "platform": null
+    "platform": "fire-os"
   }
 }

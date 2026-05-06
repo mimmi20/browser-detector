@@ -1,7 +1,8 @@
 {
   "rules": {
     "/quest 3/i": "meta quest 3",
-    "/quest 2/i": "meta quest 2"
+    "/quest 2|standalone hmd/i": "meta quest 2",
+    "/pacific/i": "meta go"
   },
   "generic": "general meta device"
 }

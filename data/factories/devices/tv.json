@@ -23,7 +23,7 @@
     "/[;(] ?bangolufsen;/i": "bang-olufsen",
     "/[;(] ?medion;/i": "medion",
     "/viera/i": "panasonic",
-    "/aquosbrowser|sharp,/i": "sharp",
+    "/aquosbrowser|sharp,|sharp_umc/i": "sharp",
     "/apple tv/i": "apple",
     "/hc7620|sky_?worth|skw690|swtv[;,)]/i": "sky-worth",
     "/vap430|vizio/i": "vizio",
