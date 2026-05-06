@@ -178,6 +178,7 @@ final class Device implements DeviceInterface
             'aftbamr311' => 'amazon=amazon aftbamr311',
             'aftb' => 'amazon=amazon aftb',
             'afta' => 'amazon=amazon afta',
+            'aeohp' => 'amazon=amazon aeohp',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',

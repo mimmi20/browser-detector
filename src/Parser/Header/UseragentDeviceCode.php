@@ -128,6 +128,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/snapchat\/[\d.]+ \((?P<devicecode>[^;]+); andr[o0]id [\d.]+#/i',
             '/samsung-(?P<devicecode>[^);\/]+)(?:.*)? (?:opera|netfront|build|syncml)/i',
             '/samsung-(?P<devicecode>[^);\/]+)(?:.*)?$/i',
+            '/mozilla\/[\d.]+ \(linux; os [\d.]+; (?P<devicecode>[^;\/]+) user\/(?:[^)]+)?\)/i',
         ];
 
         $filtered = array_filter(

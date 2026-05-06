@@ -8613,13 +8613,9 @@ final class DetectorIntegrationTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2623.87 URBrowser/48.1.2564.36 Safari/537.36'],
                 [
-                    'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2623.87 URBrowser/48.1.2564.36 Safari/537.36',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2623.87 URBrowser/48.1.2564.36 Safari/537.36',
-                    ],
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2623.87 URBrowser/48.1.2564.36 Safari/537.36'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'Macintosh',
@@ -8658,6 +8654,52 @@ final class DetectorIntegrationTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '51.0.2623.87',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                ['user-agent' => 'Mozilla/5.0 (Linux; OS 1.1; AEOHP user/43; wv) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Chrome/118.0.5993.159 Safari/537.36'],
+                [
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Linux; OS 1.1; AEOHP user/43; wv) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Chrome/118.0.5993.159 Safari/537.36'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'AEOHP',
+                        'marketingName' => 'Echo Show 5',
+                        'manufacturer' => 'Amazon',
+                        'brand' => 'Amazon',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => 5.5,
+                        ],
+                        'type' => 'smart-display',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Fire OS',
+                        'marketingName' => 'Fire OS',
+                        'version' => null,
+                        'manufacturer' => 'Amazon',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Chrome',
+                        'modus' => null,
+                        'version' => '118.0.5993.159',
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '118.0.5993.159',
                         'manufacturer' => 'Google',
                     ],
                 ],
