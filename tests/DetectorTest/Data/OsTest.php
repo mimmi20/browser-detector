@@ -1503,6 +1503,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'openMandriva',
             ],
+            [
+                'type' => 'PureOS',
+                'name' => 'PureOS',
+                'marketingName' => 'PureOS',
+                'manufacturer' => Company::purism,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'pure-os',
+            ],
         ];
     }
 }

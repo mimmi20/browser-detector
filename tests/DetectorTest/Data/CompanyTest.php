@@ -11206,6 +11206,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'TrafficCake',
                 'key' => 'traffic-cake',
             ],
+            [
+                'type' => 'Purism',
+                'name' => 'Purism',
+                'brandname' => 'Purism',
+                'key' => 'purism',
+            ],
+            [
+                'type' => 'EKO',
+                'name' => 'Eko Mobile',
+                'brandname' => 'EKO',
+                'key' => 'eko',
+            ],
         ];
     }
 

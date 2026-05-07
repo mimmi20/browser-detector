@@ -9691,6 +9691,11 @@ final class DeviceTest extends TestCase
             ['CRD65-UHD11', 'mag=mag crd65-uhd11'],
             // karbonn
             ['Karbonn A1 Pro', 'karbonn=karbonn a1 pro'],
+            // eko
+            ['EKO Android TV', 'eko=eko android tv'],
+            ['EKO 2K Android TV', 'eko=eko 2k android tv'],
+            ['EKO Android TV 2K', 'eko=eko 2k android tv'],
+            ['EKO 4K Android TV', 'eko=eko 4k android tv'],
             // other
             ['Model"', null],
             [': "', null],

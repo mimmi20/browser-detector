@@ -383,6 +383,8 @@ enum Os: string implements OsInterface
 
     case openMandriva = 'Open Mandriva';
 
+    case pureOS = 'PureOS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -565,6 +567,7 @@ enum Os: string implements OsInterface
             'horizon' => self::horizon,
             'qtopia' => self::qtopia,
             'openmandriva', 'open mandriva' => self::openMandriva,
+            'pureos', 'pure-os' => self::pureOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -677,6 +680,7 @@ enum Os: string implements OsInterface
             self::smartisanOS => Company::smartisan,
             self::horizon => Company::meta,
             self::qtopia => Company::trolltech,
+            self::pureOS => Company::purism,
             default => Company::unknown,
         };
     }
@@ -923,6 +927,7 @@ enum Os: string implements OsInterface
             self::operaTv => 'opera-tv',
             self::mocorOS => 'mocor-os',
             self::smartisanOS => 'smartisan-os',
+            self::pureOS => 'pure-os',
             default => $this->name,
         };
     }

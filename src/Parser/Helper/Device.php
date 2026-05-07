@@ -8297,6 +8297,10 @@ final class Device implements DeviceInterface
             'crd65-uhd11' => 'mag=mag crd65-uhd11',
             // karbonn
             'karbonn a1 pro' => 'karbonn=karbonn a1 pro',
+            // eko
+            'eko android tv' => 'eko=eko android tv',
+            'eko 2k android tv', 'eko android tv 2k' => 'eko=eko 2k android tv',
+            'eko 4k android tv' => 'eko=eko 4k android tv',
             // other
             default => null,
         };

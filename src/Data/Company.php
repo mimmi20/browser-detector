@@ -3739,6 +3739,10 @@ enum Company: string implements CompanyInterface
 
     case trafficCake = 'TrafficCake';
 
+    case purism = 'Purism';
+
+    case eko = 'EKO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5606,6 +5610,8 @@ enum Company: string implements CompanyInterface
             'bountii', 'bountii inc.' => self::bountii,
             'domainreanimator', 'domain re-animator, llc', 'domain-re-animator', 'domain re-animator' => self::domainReAnimator,
             'trafficcake', 'trafficcake limited', 'traffic-cake' => self::trafficCake,
+            'purism' => self::purism,
+            'eko', 'eko mobile' => self::eko,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6354,6 +6360,7 @@ enum Company: string implements CompanyInterface
             self::bountii => 'Bountii Inc.',
             self::domainReAnimator => 'Domain Re-Animator, LLC',
             self::trafficCake => 'TrafficCake Limited',
+            self::eko => 'Eko Mobile',
             self::unknown => null,
             default => $this->value,
         };
