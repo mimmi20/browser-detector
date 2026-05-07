@@ -4723,6 +4723,7 @@ final class DeviceTest extends TestCase
             ['TB336ZU', 'lenovo=lenovo tb336zu'],
             ['TB361FU', 'lenovo=lenovo tb361fu'],
             ['TB361ZU', 'lenovo=lenovo tb361zu'],
+            ['TB305FU', 'lenovo=lenovo tb305fu'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -6010,6 +6011,7 @@ final class DeviceTest extends TestCase
             ['RugKing 4 Pro', 'ulefone=ulefone rugking 4 pro'],
             ['Armor_6', 'ulefone=ulefone armor 6'],
             ['Note 6', 'ulefone=ulefone note 6'],
+            ['Note 18 Ultra', 'ulefone=ulefone note 18 ultra'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -7554,6 +7556,7 @@ final class DeviceTest extends TestCase
             ['UNIA62_S01', 'unihertz=unihertz unia62_s01'],
             ['TANK 01', 'unihertz=unihertz tank 01'],
             ['TickTock-S', 'unihertz=unihertz ticktock s'],
+            ['TANK X', 'unihertz=unihertz tank x'],
             // coolpad
             ['Coolpad E502', 'coolpad=coolpad e502'],
             ['COOLPAD C202', 'coolpad=coolpad c202'],

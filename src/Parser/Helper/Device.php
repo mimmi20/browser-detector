@@ -3573,6 +3573,7 @@ final class Device implements DeviceInterface
             'tb336zu' => 'lenovo=lenovo tb336zu',
             'tb361fu' => 'lenovo=lenovo tb361fu',
             'tb361zu' => 'lenovo=lenovo tb361zu',
+            'tb305fu' => 'lenovo=lenovo tb305fu',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -4841,6 +4842,7 @@ final class Device implements DeviceInterface
             'rugking 4 pro' => 'ulefone=ulefone rugking 4 pro',
             'armor_6' => 'ulefone=ulefone armor 6',
             'note 6' => 'ulefone=ulefone note 6',
+            'note 18 ultra' => 'ulefone=ulefone note 18 ultra',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -6261,6 +6263,7 @@ final class Device implements DeviceInterface
             'unia62_s01' => 'unihertz=unihertz unia62_s01',
             'tank 01' => 'unihertz=unihertz tank 01',
             'ticktock-s' => 'unihertz=unihertz ticktock s',
+            'tank x' => 'unihertz=unihertz tank x',
             // coolpad
             'coolpad e502' => 'coolpad=coolpad e502',
             'coolpad c202' => 'coolpad=coolpad c202',
