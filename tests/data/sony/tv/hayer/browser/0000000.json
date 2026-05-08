@@ -1,25 +1,26 @@
 [
   {
     "headers": {
+      "x-requested-with": "com.tvwebbrowser.v22",
       "user-agent": "Mozilla/5.0 (Linux; BRAVIA 4K 2015 Build/LMY48E.S265) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36 OPR/28.0.1754.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "PC",
-      "marketingName": "PC",
+      "deviceName": "Bravia 4K 2015",
+      "marketingName": "Bravia 4K 2015",
       "manufacturer": "Sony",
       "brand": "Sony",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
         "size": null
       },
-      "type": "desktop",
+      "type": "tv",
       "ismobile": false,
-      "istv": false,
+      "istv": true,
       "bits": null
     },
     "os": {
@@ -30,10 +31,10 @@
       "bits": null
     },
     "client": {
-      "name": "Opera",
+      "name": "TV-Browser Internet",
       "modus": null,
-      "version": "28.0.1754.0",
-      "manufacturer": "Opera",
+      "version": null,
+      "manufacturer": "Hayer",
       "type": "browser",
       "isbot": false,
       "bits": null

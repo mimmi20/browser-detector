@@ -988,5 +988,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 OcIdWebView ({\\\"zoom\\\":1,\\\"isHighContrast\\\":false,\\\"osVersion\\\":\\\"26.3.1\\\",\\\"app\\\":\\\"com.google.GoogleMobile\\\",\\\"appVersion\\\":\\\"418.3.902016201\\\",\\\"libraryVersion\\\":\\\"1.25.10.0\\\",\\\"os\\\":\\\"iOS\\\",\\\"style\\\":2,\\\"isDarkTheme\\\":false,\\\"isBoldFont\\\":false})"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "18.7.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
   }
 ]

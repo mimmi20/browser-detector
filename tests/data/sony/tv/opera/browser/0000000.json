@@ -1396,6 +1396,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; BRAVIA 4K 2015 Build/LMY48E.S265) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36 OPR/28.0.1754.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Bravia 4K 2015",
+      "marketingName": "Bravia 4K 2015",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "28.0.1754.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "41.0.2272.101",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1481.0 OMI/4.2.12.48.ALSAN3.122 HbbTV/1.1.1 (; Sony; KD-43X8305C; v1.000; 2015;) sony.hbbtv.tv.2015HE"
     },
     "device": {
@@ -1625,15 +1670,15 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "Bravia VH1",
+      "marketingName": "Bravia VH1",
       "manufacturer": "Sony",
       "brand": "Sony",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
         "size": null
       },
@@ -1706,96 +1751,6 @@
     "engine": {
       "name": "Blink",
       "version": "67.0.3396.99",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 9; BRAVIA VH1 Build/PTT1.190515.001.S4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36 OPR/46.0.2207.0 OMI/4.13.5.431.DIA5HBBTV.94 HbbTV/1.5.1 ( DRM; Sony; KDL-GN6; PKG1.0286.0002EUA; ; com.sony.HE.G4.4K; )"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
-      "manufacturer": "Sony",
-      "brand": "Sony",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": "9.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.13.5.431",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "67.0.3396.99",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 10; BRAVIA VH1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.0.273.DIA6.199 Model/Sony-BRAVIA-VH1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
-      "manufacturer": "Sony",
-      "brand": "Sony",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.21.0.273",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "84.0.4147.125",
       "manufacturer": "Google"
     }
   },

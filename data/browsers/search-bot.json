@@ -1625,5 +1625,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "sklik-bot": {
+    "name": "SklikBot",
+    "manufacturer": "seznam",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SklikBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

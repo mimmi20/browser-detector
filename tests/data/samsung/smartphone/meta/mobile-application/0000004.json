@@ -636,5 +636,95 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; SM-S937B Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.134 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/559.1.0.52.72;IABMV/1;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S937B",
+      "marketingName": "Galaxy S25 Edge",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "559.1.0.52.72",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "147.0.7727.134",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; SM-A346E Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.92 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/557.0.0.59.72;IABMV/1;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A346E",
+      "marketingName": "Galaxy A34 5G (Asia/Africa)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "557.0.0.59.72",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "147.0.7727.92",
+      "manufacturer": "Google"
+    }
   }
 ]

@@ -3743,6 +3743,8 @@ enum Company: string implements CompanyInterface
 
     case eko = 'EKO';
 
+    case pocoSystems = 'Poco Systems';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5612,6 +5614,7 @@ enum Company: string implements CompanyInterface
             'trafficcake', 'trafficcake limited', 'traffic-cake' => self::trafficCake,
             'purism' => self::purism,
             'eko', 'eko mobile' => self::eko,
+            'pocosystems', 'poco systems inc', 'poco-systems', 'poco systems' => self::pocoSystems,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6361,6 +6364,7 @@ enum Company: string implements CompanyInterface
             self::domainReAnimator => 'Domain Re-Animator, LLC',
             self::trafficCake => 'TrafficCake Limited',
             self::eko => 'Eko Mobile',
+            self::pocoSystems => 'Poco Systems Inc',
             self::unknown => null,
             default => $this->value,
         };
@@ -7058,6 +7062,7 @@ enum Company: string implements CompanyInterface
             self::ksMobile => 'ks-mobile',
             self::domainReAnimator => 'domain-re-animator',
             self::trafficCake => 'traffic-cake',
+            self::pocoSystems => 'poco-systems',
             default => $this->name,
         };
     }

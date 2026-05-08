@@ -286,5 +286,29 @@
       "search": null
     },
     "engine": null
+  },
+  "barca": {
+    "name": "Barca",
+    "manufacturer": "poco-systems",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Barca"
+      ]
+    },
+    "engine": null
+  },
+  "barca-pro": {
+    "name": "BarcaPro",
+    "manufacturer": "poco-systems",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BarcaPro"
+      ]
+    },
+    "engine": null
   }
 }

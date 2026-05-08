@@ -5939,5 +5939,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "xml sitemaps generator": {
+    "name": "XML Sitemaps Generator",
+    "manufacturer": "xml-sitemaps",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "XML\\-Sitemaps"
+      ]
+    },
+    "engine": "unknown"
   }
 }

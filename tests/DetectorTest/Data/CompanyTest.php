@@ -11218,6 +11218,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'EKO',
                 'key' => 'eko',
             ],
+            [
+                'type' => 'Poco Systems',
+                'name' => 'Poco Systems Inc',
+                'brandname' => 'Poco Systems',
+                'key' => 'poco-systems',
+            ],
         ];
     }
 

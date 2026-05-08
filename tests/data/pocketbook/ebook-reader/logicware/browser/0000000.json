@@ -5,19 +5,19 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general PocketBook device",
-      "marketingName": "general PocketBook device",
+      "deviceName": "631",
+      "marketingName": "Touch HD 2",
       "manufacturer": "PocketBook",
       "brand": "PocketBook",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 1448,
+        "height": 1072,
+        "touch": true,
+        "size": 6
       },
-      "type": "mobile-device",
+      "type": "ebook-reader",
       "ismobile": true,
       "istv": false,
       "bits": null
