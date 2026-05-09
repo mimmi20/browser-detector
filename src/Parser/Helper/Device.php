@@ -1831,7 +1831,7 @@ final class Device implements DeviceInterface
             'sm-a1560', 'samsung sm-a1560' => 'samsung=samsung sm-a1560',
             'sm-a156l', 'samsung sm-a156l' => 'samsung=samsung sm-a156l',
             'sm-a155f' => 'samsung=samsung sm-a155f',
-            'sm-a346e' => 'samsung=samsung sm-a346e',
+            'sm-a346e', 'samsung sm-a346e' => 'samsung=samsung sm-a346e',
             'sm-x216b', 'samsung sm-x216b' => 'samsung=samsung sm-x216b',
             'sm-x216r', 'samsung sm-x216r' => 'samsung=samsung sm-x216r',
             'sm-x216c', 'samsung sm-x216c' => 'samsung=samsung sm-x216c',
@@ -8304,6 +8304,8 @@ final class Device implements DeviceInterface
             'eko android tv' => 'eko=eko android tv',
             'eko 2k android tv', 'eko android tv 2k' => 'eko=eko 2k android tv',
             'eko 4k android tv' => 'eko=eko 4k android tv',
+            // evolveo
+            'evolveo smart tv stick d2' => 'evolveo=evolveo smart tv stick d2',
             // other
             default => null,
         };

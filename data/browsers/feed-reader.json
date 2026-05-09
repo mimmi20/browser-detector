@@ -734,5 +734,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wpcom-feedbot": {
+    "name": "wp.com feedbot",
+    "manufacturer": "automattic",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "wp\\.com feedbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "newsblur-feed-finder": {
+    "name": "NewsBlur Feed Finder",
+    "manufacturer": "newsblur",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NewsBlur Feed Finder"
+      ]
+    },
+    "engine": "unknown"
   }
 }

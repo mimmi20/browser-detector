@@ -348,6 +348,7 @@ final readonly class Headers
                             case 'google-inspectiontool':
                             case 'keys-so':
                             case 'meta-external-agent':
+                            case 'huawei-mobile-services':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 

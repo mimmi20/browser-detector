@@ -129,6 +129,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/samsung-(?P<devicecode>[^);\/]+)(?:.*)? (?:opera|netfront|build|syncml)/i',
             '/samsung-(?P<devicecode>[^);\/]+)(?:.*)?$/i',
             '/mozilla\/[\d.]+ \(linux; os [\d.]+; (?P<devicecode>[^;\/]+) user\/(?:[^)]+)?\)/i',
+            '/xbmc\/[\d.alpha-]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
         ];
 
         $filtered = array_filter(

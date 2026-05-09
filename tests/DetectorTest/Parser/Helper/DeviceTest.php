@@ -2110,6 +2110,7 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A156L', 'samsung=samsung sm-a156l'],
             ['SM-A155F', 'samsung=samsung sm-a155f'],
             ['SM-A346E', 'samsung=samsung sm-a346e'],
+            ['SAMSUNG SM-A346E', 'samsung=samsung sm-a346e'],
             ['SM-X216B', 'samsung=samsung sm-x216b'],
             ['SAMSUNG SM-X216B', 'samsung=samsung sm-x216b'],
             ['SM-X216R', 'samsung=samsung sm-x216r'],
@@ -9699,6 +9700,8 @@ final class DeviceTest extends TestCase
             ['EKO 2K Android TV', 'eko=eko 2k android tv'],
             ['EKO Android TV 2K', 'eko=eko 2k android tv'],
             ['EKO 4K Android TV', 'eko=eko 4k android tv'],
+            // evolveo
+            ['EVOLVEO Smart TV stick D2', 'evolveo=evolveo smart tv stick d2'],
             // other
             ['Model"', null],
             [': "', null],

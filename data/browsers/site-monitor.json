@@ -629,5 +629,48 @@
       ]
     },
     "engine": null
+  },
+  "montastic-monitor": {
+    "name": "Montastic Monitor",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "yottaa-site-monitor": {
+    "name": "Yottaa Site Monitor",
+    "manufacturer": "yottaa",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "page-modified-pinger": {
+    "name": "Page Modified Pinger",
+    "manufacturer": "valley-hosting",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "nimbo-stratus-bot": {
+    "name": "Nimbostratus Bot",
+    "manufacturer": "cloud-system-networks",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Nimbostratus-Bot\\/v",
+        "Nimbostratus-Bot"
+      ]
+    },
+    "engine": null
   }
 }

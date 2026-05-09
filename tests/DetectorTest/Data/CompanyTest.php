@@ -7134,8 +7134,14 @@ final class CompanyTest extends TestCase
             ],
             [
                 'type' => 'Aldi',
-                'name' => 'Aldi Nord',
+                'name' => 'Aldi',
                 'brandname' => 'Aldi',
+                'key' => 'aldi',
+            ],
+            [
+                'type' => 'Aldi Nord',
+                'name' => 'Aldi Nord',
+                'brandname' => 'Aldi Nord',
                 'key' => 'aldi-nord',
             ],
             [
@@ -11223,6 +11229,36 @@ final class CompanyTest extends TestCase
                 'name' => 'Poco Systems Inc',
                 'brandname' => 'Poco Systems',
                 'key' => 'poco-systems',
+            ],
+            [
+                'type' => 'Fritz!',
+                'name' => 'Fritz! GmbH',
+                'brandname' => 'Fritz!',
+                'key' => 'fritz',
+            ],
+            [
+                'type' => 'Yottaa',
+                'name' => 'Yottaa, Inc.',
+                'brandname' => 'Yottaa',
+                'key' => 'yottaa',
+            ],
+            [
+                'type' => 'Valley Hosting',
+                'name' => 'Valley Hosting, LLC',
+                'brandname' => 'Valley Hosting',
+                'key' => 'valley-hosting',
+            ],
+            [
+                'type' => 'Cloud System Networks',
+                'name' => 'Cloud System Networks',
+                'brandname' => 'Cloud System Networks',
+                'key' => 'cloud-system-networks',
+            ],
+            [
+                'type' => 'Lovable Labs',
+                'name' => 'Lovable Labs Incorporated',
+                'brandname' => 'Lovable Labs',
+                'key' => 'lovable-labs',
             ],
         ];
     }

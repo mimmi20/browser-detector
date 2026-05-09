@@ -5951,5 +5951,54 @@
       ]
     },
     "engine": "unknown"
+  },
+  "clickagy-intelligence-bot": {
+    "name": "Clickagy Intelligence Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Clickagy Intelligence Bot v",
+        "Clickagy Intelligence Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "boardreader-blog-indexer": {
+    "name": "BoardReader Blog Indexer",
+    "manufacturer": "board-reader",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BoardReader Blog Indexer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "let-search-bot": {
+    "name": "LetSearch",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LetsearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "link-scanner-bot": {
+    "name": "LinkScannerBot",
+    "manufacturer": "lovable-labs",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinkScannerBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

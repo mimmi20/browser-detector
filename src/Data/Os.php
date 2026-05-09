@@ -385,6 +385,12 @@ enum Os: string implements OsInterface
 
     case pureOS = 'PureOS';
 
+    case googleTv = 'Google TV';
+
+    case contiki = 'Contiki';
+
+    case fritzOS = 'Fritz!OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -568,6 +574,9 @@ enum Os: string implements OsInterface
             'qtopia' => self::qtopia,
             'openmandriva', 'open mandriva' => self::openMandriva,
             'pureos', 'pure-os' => self::pureOS,
+            'googletv', 'google tv', 'google-tv' => self::googleTv,
+            'contiki' => self::contiki,
+            'fritzos', 'fritz!os', 'fritz-os' => self::fritzOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -623,7 +632,7 @@ enum Os: string implements OsInterface
     public function getManufacturer(): CompanyInterface
     {
         return match ($this) {
-            self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv => Company::google,
+            self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv, self::googleTv => Company::google,
             self::asha, self::nokiaos, self::series30, self::series40, self::series60 => Company::nokia,
             self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh, self::watchos => Company::apple,
             self::bada, self::orsay => Company::samsung,
@@ -681,6 +690,7 @@ enum Os: string implements OsInterface
             self::horizon => Company::meta,
             self::qtopia => Company::trolltech,
             self::pureOS => Company::purism,
+            self::fritzOS => Company::fritz,
             default => Company::unknown,
         };
     }
@@ -819,6 +829,9 @@ enum Os: string implements OsInterface
             self::windowsiot, self::windows10, self::windowsnt64, self::windowsphone10 => ['factory' => null, 'search' => null, 'value' => 10],
             self::windows11 => ['factory' => null, 'search' => null, 'value' => 11],
             self::windowsme => ['factory' => null, 'search' => null, 'value' => 'ME'],
+            self::googleTv => ['factory' => VersionBuilderFactory::class, 'search' => ['GoogleTV']],
+            self::contiki => ['factory' => VersionBuilderFactory::class, 'search' => ['Contiki']],
+            self::fritzOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FRITZ!OS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -928,6 +941,8 @@ enum Os: string implements OsInterface
             self::mocorOS => 'mocor-os',
             self::smartisanOS => 'smartisan-os',
             self::pureOS => 'pure-os',
+            self::googleTv => 'google-tv',
+            self::fritzOS => 'fritz-os',
             default => $this->name,
         };
     }

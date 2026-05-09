@@ -1511,6 +1511,30 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'pure-os',
             ],
+            [
+                'type' => 'Google TV',
+                'name' => 'Google TV',
+                'marketingName' => 'Google TV',
+                'manufacturer' => Company::google,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['GoogleTV']],
+                'key' => 'google-tv',
+            ],
+            [
+                'type' => 'Contiki',
+                'name' => 'Contiki',
+                'marketingName' => 'Contiki',
+                'manufacturer' => Company::unknown,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Contiki']],
+                'key' => 'contiki',
+            ],
+            [
+                'type' => 'Fritz!OS',
+                'name' => 'Fritz!OS',
+                'marketingName' => 'Fritz!OS',
+                'manufacturer' => Company::fritz,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['FRITZ!OS']],
+                'key' => 'fritz-os',
+            ],
         ];
     }
 }

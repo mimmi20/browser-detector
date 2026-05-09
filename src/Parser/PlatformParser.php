@@ -147,7 +147,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/mobilesafari\/.*cfnetwork|(?<!like |t)iphone|cpu i?os|like mac os x|[\/ \(\._\-]ios([ \);\/\.\-]|$)|airplay/i' => Os::ios,
             '/mac[ \+]?os[ \+]?[x\/,]|os\=mac [0-9]+|(;|for) os x [0-9]+|macos version [0-9]+/i' => Os::macosx,
             '/morphos/i' => Os::morphos,
-            '/amigaos|amiga-aweb/i' => Os::amigaos,
+            '/amigaos|amiga-aweb|amigavoyager/i' => Os::amigaos,
             '/mac_powerpc|ppc|68k/i' => Os::macintosh,
             '/safari\/.*cfnetwork|power macintosh|nook browser|macbookpro|mac; mac os/i' => Os::macosx,
             '/(networkingextension|com\.apple\.webkit\.networking|safariviewservice|safari technology preview|safarifetcherd)\/[\d\.]+ .* darwin\/|i?mac\d/i' => Os::macosx,
@@ -183,6 +183,8 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/pardus/i' => Os::pardus,
             '/linspire/i' => Os::linspire,
             '/lindows/i' => Os::lindows,
+            '/googletv/i' => Os::googleTv,
+            '/fritz!os/i' => Os::fritzOS,
             '/linux|esx|netcast|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|wayland/i' => Os::linux,
             '/rim tablet/i' => Os::rimTabletOs,
             '/blackberry|bb10; ?(kbd|touch)/i' => Os::rimOs,
@@ -208,6 +210,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/inferno/i' => Os::infernoOs,
             '/syllable/i' => Os::syllable,
             '/fuchsia/i' => Os::fuchsia,
+            '/contiki/i' => Os::contiki,
             '/(?<![a-z])ios[;\/\.\- ]/i' => Os::ios,
         ];
 

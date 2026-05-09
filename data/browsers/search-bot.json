@@ -1637,5 +1637,101 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yandex-vertis": {
+    "name": "YandexVertis",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexVertis"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-calendar": {
+    "name": "YandexCalendar",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexCalendar"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-webmaster": {
+    "name": "YandexWebmaster",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexWebmaster"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-media": {
+    "name": "YandexMedia",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexMedia"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-video-parser": {
+    "name": "YandexVideoParser",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexVideoParser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-video": {
+    "name": "YandexVideo",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexVideo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-direct-dyn": {
+    "name": "YandexDirectDyn",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexDirectDyn"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "trace-my-file": {
+    "name": "TraceMyFile",
+    "manufacturer": "idee",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "tracemyfile"
+      ]
+    },
+    "engine": "unknown"
   }
 }

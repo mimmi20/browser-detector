@@ -120,6 +120,8 @@ reviews:
     # Automatic Incremental Review | Automatic incremental code review on each push
     # default: true
     auto_incremental_review: true
+    # default: 5
+    auto_pause_after_reviewed_commits: 0
     # Ignore reviewing if the title of the pull request contains any of these keywords (case-insensitive).
     # default: []
     ignore_title_keywords: []
@@ -351,12 +353,11 @@ reviews:
       instructions: |
         "Perform a detailed review of the provided code with following key aspects in mind:
           - Review the HTML and PHP code to ensure it is well-structured and adheres to best practices.
-          - Ensure the code follows WordPress coding standards and is well-documented.
+          - Ensure the code follows coding standards and is well-documented.
           - Confirm the code is secure and free from vulnerabilities.
           - Optimize the code for performance, removing any unnecessary elements.
-          - Validate comments for accuracy, currency, and adherence to WordPress coding standards.
-          - Ensure each line comment concludes with a period.
-          - Verify code compatibility with the latest version of WordPress, avoiding deprecated functions or features."
+          - Validate comments for accuracy, currency, and adherence to coding standards.
+          - Ensure each line comment concludes with a period."
 
 chat:
   # Enable the bot to reply automatically without requiring the user to tag it.
