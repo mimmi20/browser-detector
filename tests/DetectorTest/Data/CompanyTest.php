@@ -11260,6 +11260,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Lovable Labs',
                 'key' => 'lovable-labs',
             ],
+            [
+                'type' => 'GOG',
+                'name' => 'GOG sp. z o.o.',
+                'brandname' => 'GOG',
+                'key' => 'gog',
+            ],
+            [
+                'type' => 'Vercel',
+                'name' => 'Vercel Inc.',
+                'brandname' => 'Vercel',
+                'key' => 'vercel',
+            ],
         ];
     }
 

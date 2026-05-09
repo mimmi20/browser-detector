@@ -4725,6 +4725,9 @@ final class DeviceTest extends TestCase
             ['TB361FU', 'lenovo=lenovo tb361fu'],
             ['TB361ZU', 'lenovo=lenovo tb361zu'],
             ['TB305FU', 'lenovo=lenovo tb305fu'],
+            ['Lenovo A6600d40', 'lenovo=lenovo a6600d40'],
+            ['Lenovo A6600a40', 'lenovo=lenovo a6600a40'],
+            ['Lenovo A7010a48', 'lenovo=lenovo a7010a48'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -6959,6 +6962,8 @@ final class DeviceTest extends TestCase
             ['SH-51A', 'sharp=sharp sh-51a'],
             ['SHG01', 'sharp=sharp shg01'],
             ['SH-RM14', 'sharp=sharp sh-rm14'],
+            ['SH01A', 'sharp=sharp sh01a'],
+            ['SH3C', 'sharp=sharp sh3c'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],
@@ -7647,6 +7652,7 @@ final class DeviceTest extends TestCase
             ['5164D', 'tcl=tcl 5164d'],
             ['6102D', 'tcl=tcl 6102d'],
             ['50S451', 'tcl=tcl 50s451'],
+            ['VF685', 'tcl=tcl vf685'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -9702,6 +9708,12 @@ final class DeviceTest extends TestCase
             ['EKO 4K Android TV', 'eko=eko 4k android tv'],
             // evolveo
             ['EVOLVEO Smart TV stick D2', 'evolveo=evolveo smart tv stick d2'],
+            // toshiba
+            ['Toshiba Chromebook 2 (2015 Edition', 'toshiba=toshiba chromebook 2 (2015)'],
+            ['Toshiba Chromebook 2 (2015 Edition)', 'toshiba=toshiba chromebook 2 (2015)'],
+            // smartisan
+            ['OC106', 'smartisan=smartisan oc106'],
+            ['DE106', 'smartisan=smartisan de106'],
             // other
             ['Model"', null],
             [': "', null],

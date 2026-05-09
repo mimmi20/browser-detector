@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia|; ?sony;|bravia/i": "sony",
+    "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia|; ?sony;|bravia|svp-dtv15/i": "sony",
     "/; ?tcl;|\\(tcl[0-9]+|tclwebkit|; ?50s451;/i": "tcl",
     "/THOMSON|LF1V/i": "thomson",
     "/philips|avm\\-|qm163e|2020\\/2021 uhd android tv/i": "philips",
@@ -15,7 +15,7 @@
     "/[;(] ?aston;/i": "aston",
     "/[;(] ?arcelik;/i": "arcelik",
     "/[;(] ?mstar;/i": "mstar",
-    "/[;(] ?lge? ?;|lg google tv|ti320-du|webos\\.tv|lgwebostv|netcast/i": "lg",
+    "/[;(] ?lge? ?;|lg google tv|ti320-du|webos\\.tv|lgwebostv|netcast|web0s;/i": "lg",
     "/[;(] ?hisense;|hisense_gx1200v|hisense google tv|hisense-nt72671d|hismart\\-?tv/i": "hisense",
     "/[;(] ?telefunken;|telefunken,/i": "telefunken",
     "/[;(] ?toshiba;|toshiba,/i": "toshiba",
@@ -45,6 +45,7 @@
     "/roku/i": "roku",
     "/e500ac55c/i": "element",
     "/xfinity|wnxi11aei|scxi11bei|scxi11aic|tx061aei|ax061aei|ax014anc|ax014anm|sx022an|pxd01ani|px051aei|px032ani|px013an|mx011an|cxd01ani|ax013an/i": "comcast",
+    "/shield android tv/i": "nvidia",
     "/arris_foxtel/i": "arris",
     "/infinitypro/i": "infinity-pro",
     "/sagemcom/i": "sagemcom",

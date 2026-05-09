@@ -6000,5 +6000,63 @@
       ]
     },
     "engine": "unknown"
+  },
+  "unisterbot": {
+    "name": "UnisterBot",
+    "manufacturer": "unister",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Unisterbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "unisterportale": {
+    "name": "UnisterPortale",
+    "manufacturer": "unister",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "unistertesting": {
+    "name": "UnisterTesting",
+    "manufacturer": "unister",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UnisterTesting"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mix-node": {
+    "name": "Mixnode",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mixnode"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "htmlyse": {
+    "name": "htmlyse",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "htmlyse"
+      ]
+    },
+    "engine": "unknown"
   }
 }

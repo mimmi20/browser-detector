@@ -77,6 +77,14 @@ final readonly class WindowsPhoneOs implements VersionFactoryInterface
             return new NullVersion();
         }
 
+        if (preg_match('/windows 10 mobile/i', $useragent)) {
+            try {
+                return $this->versionBuilder->set('10.0.0');
+            } catch (NotNumericException) {
+                // nothing to do
+            }
+        }
+
         try {
             return $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException) {

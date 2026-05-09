@@ -126,5 +126,53 @@
     },
     "type": "desktop",
     "platform": null
+  },
+  "imac": {
+    "deviceName": "iMac",
+    "marketingName": "iMac",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "desktop",
+    "platform": null
+  },
+  "imac 18,3": {
+    "deviceName": "iMac 18,3",
+    "marketingName": "iMac 27\" (2017)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 5120,
+      "height": 2880,
+      "touch": false,
+      "size": 27
+    },
+    "type": "desktop",
+    "platform": null
+  },
+  "imac 18,2": {
+    "deviceName": "iMac 18,2",
+    "marketingName": "iMac 21.5\" (2017)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 4096,
+      "height": 2304,
+      "touch": false,
+      "size": 21.5
+    },
+    "type": "desktop",
+    "platform": null
   }
 }

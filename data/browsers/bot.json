@@ -1914,18 +1914,6 @@
     },
     "engine": "unknown"
   },
-  "google assess": {
-    "name": "Google DMCA Takedown Tool Bot",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Assess"
-      ]
-    },
-    "engine": "blink"
-  },
   "google fontanalysis": {
     "name": "Google FontAnalysis",
     "manufacturer": "google",
@@ -5640,40 +5628,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "uipbot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "unisterbot": {
-    "name": "UnisterBot",
-    "manufacturer": "unister",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Unisterbot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "unisterportale": {
-    "name": "UnisterPortale",
-    "manufacturer": "unister",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
-  "unistertesting": {
-    "name": "UnisterTesting",
-    "manufacturer": "unister",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "UnisterTesting"
       ]
     },
     "engine": "unknown"

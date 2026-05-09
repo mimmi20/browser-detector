@@ -520,5 +520,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "vercel-bot": {
+    "name": "Vercel Bot",
+    "manufacturer": "vercel",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Vercelbot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

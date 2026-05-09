@@ -391,6 +391,8 @@ enum Os: string implements OsInterface
 
     case fritzOS = 'Fritz!OS';
 
+    case rokuOS = 'Roku OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -577,6 +579,7 @@ enum Os: string implements OsInterface
             'googletv', 'google tv', 'google-tv' => self::googleTv,
             'contiki' => self::contiki,
             'fritzos', 'fritz!os', 'fritz-os' => self::fritzOS,
+            'roku os', 'roku-os', 'rokuos' => self::rokuOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -691,6 +694,7 @@ enum Os: string implements OsInterface
             self::qtopia => Company::trolltech,
             self::pureOS => Company::purism,
             self::fritzOS => Company::fritz,
+            self::rokuOS => Company::roku,
             default => Company::unknown,
         };
     }
@@ -792,7 +796,7 @@ enum Os: string implements OsInterface
             self::operaTv => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
             self::qtopia => ['factory' => VersionBuilderFactory::class, 'search' => ['Qtopia']],
             self::symbianOs => ['factory' => VersionBuilderFactory::class, 'search' => ['SymbianOS']],
-            self::windows => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir', 'Windows;']],
+            self::windows => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir', 'Windows[;\/]']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -832,6 +836,7 @@ enum Os: string implements OsInterface
             self::googleTv => ['factory' => VersionBuilderFactory::class, 'search' => ['GoogleTV']],
             self::contiki => ['factory' => VersionBuilderFactory::class, 'search' => ['Contiki']],
             self::fritzOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FRITZ!OS']],
+            self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -943,6 +948,7 @@ enum Os: string implements OsInterface
             self::pureOS => 'pure-os',
             self::googleTv => 'google-tv',
             self::fritzOS => 'fritz-os',
+            self::rokuOS => 'roku-os',
             default => $this->name,
         };
     }

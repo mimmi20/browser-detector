@@ -508,7 +508,7 @@ final class OsTest extends TestCase
                 'name' => 'Windows',
                 'marketingName' => 'Windows',
                 'manufacturer' => Company::microsoft,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir', 'Windows;']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir', 'Windows[;\/]']],
                 'key' => 'windows',
             ],
             [
@@ -1534,6 +1534,14 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::fritz,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['FRITZ!OS']],
                 'key' => 'fritz-os',
+            ],
+            [
+                'type' => 'Roku OS',
+                'name' => 'Roku OS',
+                'marketingName' => 'Roku OS',
+                'manufacturer' => Company::roku,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-']],
+                'key' => 'roku-os',
             ],
         ];
     }

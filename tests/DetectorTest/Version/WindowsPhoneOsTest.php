@@ -98,6 +98,10 @@ final class WindowsPhoneOsTest extends TestCase
                 'UCWEB/2.0 (Windows; U; WDS 7.10; en-US; NOKIA; Lumia 610) U2/1.0.0 UCBrowser/3.2.0.340 U2/1.0.0 Mobile',
                 '7.10.0',
             ],
+            [
+                'Mozilla/5.0 (Windows 10 Mobile; rv:60.0) Gecko/20100101 Firefox/60.0',
+                '10.0.0',
+            ],
         ];
     }
 

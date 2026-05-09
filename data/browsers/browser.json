@@ -632,19 +632,6 @@
     },
     "engine": "webkit"
   },
-  "boxee": {
-    "name": "Boxee",
-    "manufacturer": "boxee",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Boxee",
-        "boxee"
-      ]
-    },
-    "engine": null
-  },
   "brave": {
     "name": "Brave",
     "manufacturer": "brave-software",
@@ -6037,6 +6024,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "gog-galaxy-client": {
+    "name": "GOG Galaxy Client",
+    "manufacturer": "gog",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GOGGalaxyClient"
+      ]
     },
     "engine": null
   }

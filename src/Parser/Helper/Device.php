@@ -3574,6 +3574,9 @@ final class Device implements DeviceInterface
             'tb361fu' => 'lenovo=lenovo tb361fu',
             'tb361zu' => 'lenovo=lenovo tb361zu',
             'tb305fu' => 'lenovo=lenovo tb305fu',
+            'lenovo a6600d40' => 'lenovo=lenovo a6600d40',
+            'lenovo a6600a40' => 'lenovo=lenovo a6600a40',
+            'lenovo a7010a48' => 'lenovo=lenovo a7010a48',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -5766,6 +5769,8 @@ final class Device implements DeviceInterface
             'sh-51a' => 'sharp=sharp sh-51a',
             'shg01' => 'sharp=sharp shg01',
             'sh-rm14' => 'sharp=sharp sh-rm14',
+            'sh01a' => 'sharp=sharp sh01a',
+            'sh3c' => 'sharp=sharp sh3c',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
@@ -6353,6 +6358,7 @@ final class Device implements DeviceInterface
             '5164d' => 'tcl=tcl 5164d',
             '6102d' => 'tcl=tcl 6102d',
             '50s451' => 'tcl=tcl 50s451',
+            'vf685' => 'tcl=tcl vf685',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -8306,6 +8312,11 @@ final class Device implements DeviceInterface
             'eko 4k android tv' => 'eko=eko 4k android tv',
             // evolveo
             'evolveo smart tv stick d2' => 'evolveo=evolveo smart tv stick d2',
+            // toshiba
+            'toshiba chromebook 2 (2015 edition', 'toshiba chromebook 2 (2015 edition)' => 'toshiba=toshiba chromebook 2 (2015)',
+            // smartisan
+            'oc106' => 'smartisan=smartisan oc106',
+            'de106' => 'smartisan=smartisan de106',
             // other
             default => null,
         };
