@@ -202,6 +202,10 @@ final class DeviceTest extends TestCase
             ['AFTB', 'amazon=amazon aftb'],
             ['AFTA', 'amazon=amazon afta'],
             ['AEOHP', 'amazon=amazon aeohp'],
+            ['AFTKRT', 'amazon=amazon aftkrt'],
+            ['AFTKA', 'amazon=amazon aftka'],
+            ['AFTGAZL', 'amazon=amazon aftgazl'],
+            ['AEOHY', 'amazon=amazon aeohy'],
             // Asus
             ['P024', 'asus=asus p024'],
             ['ASUS_X00DD', 'asus=asus x00dd'],
@@ -1437,6 +1441,7 @@ final class DeviceTest extends TestCase
             ['Redmi Note 11E', 'xiaomi=xiaomi redmi note 11e'],
             ['Redmi K30S Ultra', 'xiaomi=xiaomi redmi k30s ultra'],
             ['MI CC9e', 'xiaomi=xiaomi mi cc9e'],
+            ['AFTANNA0', 'xiaomi=xiaomi aftanna0'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3849,6 +3854,10 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G495U', 'samsung=samsung sm-g495u'],
             ['SM-X930N', 'samsung=samsung sm-x930n'],
             ['SAMSUNG SM-X930N', 'samsung=samsung sm-x930n'],
+            ['SM-R720', 'samsung=samsung sm-r720'],
+            ['SAMSUNG SM-R720', 'samsung=samsung sm-r720'],
+            ['SM-R730A', 'samsung=samsung sm-r730a'],
+            ['SAMSUNG SM-R730A', 'samsung=samsung sm-r730a'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -5020,6 +5029,7 @@ final class DeviceTest extends TestCase
             ['motorola one', 'motorola=motorola one'],
             ['motorola one vision', 'motorola=motorola one vision'],
             ['moto g(8) power', 'motorola=motorola moto g8 power'],
+            ['Motorola Moto G8 Power', 'motorola=motorola moto g8 power'],
             ['Moto G (4)', 'motorola=motorola moto g4'],
             ['moto g(6)', 'motorola=motorola moto g6'],
             ['moto g(6) play', 'motorola=motorola moto g6 play'],
@@ -9022,6 +9032,7 @@ final class DeviceTest extends TestCase
             ['TabUltraCPro', 'onyx-boox=onyx-boox tab ultra c pro'],
             ['NoteAir3C', 'onyx-boox=onyx-boox note air 3c'],
             ['LOMONOSOV3', 'onyx-boox=onyx-boox lomonosov 3'],
+            ['MC_DARWIN7', 'onyx-boox=onyx-boox darwin 7'],
             // ghia
             ['GK133M3', 'ghia=ghia gk133m3'],
             // eudora

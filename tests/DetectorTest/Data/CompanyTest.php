@@ -11272,6 +11272,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Vercel',
                 'key' => 'vercel',
             ],
+            [
+                'type' => 'VIDAA',
+                'name' => 'VIDAA International Holdings B.V.',
+                'brandname' => 'VIDAA',
+                'key' => 'vidaa',
+            ],
         ];
     }
 

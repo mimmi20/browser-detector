@@ -179,6 +179,10 @@ final class Device implements DeviceInterface
             'aftb' => 'amazon=amazon aftb',
             'afta' => 'amazon=amazon afta',
             'aeohp' => 'amazon=amazon aeohp',
+            'aftkrt' => 'amazon=amazon aftkrt',
+            'aftka' => 'amazon=amazon aftka',
+            'aftgazl' => 'amazon=amazon aftgazl',
+            'aeohy' => 'amazon=amazon aeohy',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -1392,6 +1396,7 @@ final class Device implements DeviceInterface
             'redmi note 11e' => 'xiaomi=xiaomi redmi note 11e',
             'redmi k30s ultra' => 'xiaomi=xiaomi redmi k30s ultra',
             'mi cc9e' => 'xiaomi=xiaomi mi cc9e',
+            'aftanna0' => 'xiaomi=xiaomi aftanna0',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2808,6 +2813,8 @@ final class Device implements DeviceInterface
             'sm-g495f', 'samsung sm-g495f' => 'samsung=samsung sm-g495f',
             'sm-g495u', 'samsung sm-g495u' => 'samsung=samsung sm-g495u',
             'sm-x930n', 'samsung sm-x930n' => 'samsung=samsung sm-x930n',
+            'sm-r720', 'samsung sm-r720' => 'samsung=samsung sm-r720',
+            'sm-r730a', 'samsung sm-r730a' => 'samsung=samsung sm-r730a',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3868,7 +3875,7 @@ final class Device implements DeviceInterface
             'moto g(20)' => 'motorola=motorola moto g20',
             'motorola one' => 'motorola=motorola one',
             'motorola one vision' => 'motorola=motorola one vision',
-            'moto g(8) power' => 'motorola=motorola moto g8 power',
+            'moto g(8) power', 'motorola moto g8 power' => 'motorola=motorola moto g8 power',
             'moto g (4)', 'moto g4' => 'motorola=motorola moto g4',
             'moto g(6)' => 'motorola=motorola moto g6',
             'moto g(6) play' => 'motorola=motorola moto g6 play',
@@ -7637,6 +7644,7 @@ final class Device implements DeviceInterface
             'tabultracpro' => 'onyx-boox=onyx-boox tab ultra c pro',
             'noteair3c' => 'onyx-boox=onyx-boox note air 3c',
             'lomonosov3' => 'onyx-boox=onyx-boox lomonosov 3',
+            'mc_darwin7' => 'onyx-boox=onyx-boox darwin 7',
             // ghia
             'gk133m3' => 'ghia=ghia gk133m3',
             // eudora

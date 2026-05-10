@@ -53,6 +53,7 @@ final readonly class Ios implements VersionFactoryInterface
         'iPhone\/',
         '(?<![a-z]|[ekpry][- ])iOS',
         '(?<!Reddit\/)Version',
+        'watch os,',
     ];
 
     private const array DARWIN_MAP = [

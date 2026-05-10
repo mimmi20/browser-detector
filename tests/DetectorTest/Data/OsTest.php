@@ -500,7 +500,7 @@ final class OsTest extends TestCase
                 'name' => 'lg webOS',
                 'marketingName' => 'lg webOS',
                 'manufacturer' => Company::lg,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S', 'WEBOS']],
                 'key' => 'lgwebos',
             ],
             [
@@ -1542,6 +1542,14 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::roku,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-']],
                 'key' => 'roku-os',
+            ],
+            [
+                'type' => 'VIDAA OS',
+                'name' => 'VIDAA OS',
+                'marketingName' => 'VIDAA OS',
+                'manufacturer' => Company::vidaa,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
+                'key' => 'vidaa-os',
             ],
         ];
     }

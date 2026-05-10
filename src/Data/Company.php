@@ -3761,6 +3761,8 @@ enum Company: string implements CompanyInterface
 
     case vercel = 'Vercel';
 
+    case vidaa = 'VIDAA';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5639,6 +5641,7 @@ enum Company: string implements CompanyInterface
             'lovablelabs', 'lovable labs incorporated', 'lovable-labs', 'lovable labs' => self::lovableLabs,
             'gog', 'gog sp. z o.o.' => self::gog,
             'vercel', 'vercel inc.' => self::vercel,
+            'vidaa', 'vidaa international holdings b.v.' => self::vidaa,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6396,6 +6399,7 @@ enum Company: string implements CompanyInterface
             self::lovableLabs => 'Lovable Labs Incorporated',
             self::gog => 'GOG sp. z o.o.',
             self::vercel => 'Vercel Inc.',
+            self::vidaa => 'VIDAA International Holdings B.V.',
             self::unknown => null,
             default => $this->value,
         };

@@ -3646,96 +3646,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; SVP-DTV15 Build/LMP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1481.0 OMI/4.2.13.63.Diamond.128"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.2.13.63",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "35.0.1916.153",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; SVP-DTV15 Build/LMP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.57 Safari/537.36 OPR/28.0.1754.0 OMI/4.4.22.4.E102586-1.45"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.4.22.4",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "41.0.2272.57",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.40.Dominik2.193"
     },
     "device": {
@@ -4496,6 +4406,96 @@
     "engine": {
       "name": "Presto",
       "version": "2.11.355",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.6.3.J (LUXOR, Si2156LG32, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "Opera",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.3.6.t (LIFEMAXX, Si2156LG32, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "Opera",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
       "manufacturer": "Opera"
     }
   }

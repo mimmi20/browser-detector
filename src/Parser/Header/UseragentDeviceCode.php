@@ -92,8 +92,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $regexes = [
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/^mozilla\/[\d.]+ \((linux|andr[o0]id);(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
-            '/^mozilla\/[\d.]+ \((linux|andr[o0]id);(?: arm(?:_64)?;)? (?:andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/^mozilla\/[\d.]+ \((linux|andr[o0]id);(?: arm(?:_64)?;)? (?:andr[o0]id|tizen)? [\d.]+;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \((linux|andr[o0]id);(?: arm(?:_64)?;)? (?:andr[o0]id|tizen)? [\d.]+;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
@@ -131,6 +131,9 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/mozilla\/[\d.]+ \(linux; os [\d.]+; (?P<devicecode>[^;\/]+) user\/(?:[^)]+)?\)/i',
             '/xbmc\/[\d\.a-ehlprt\-]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
             '/mozilla\/[\d.]+ \(jig browser(?: web;|9i?)? [\d.]+; (?P<devicecode>[^);]+)/i',
+            '/^amazon;(?P<devicecode>[^);\/]+);/i',
+            '/^smarttv_(?P<devicecode>[^);\/_]+)_build/i',
+            '/^(?P<devicecode>[^);\/]+) build\//i',
         ];
 
         $filtered = array_filter(

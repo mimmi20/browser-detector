@@ -818,6 +818,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Chromium_",
         "Chromium"
       ]
     },

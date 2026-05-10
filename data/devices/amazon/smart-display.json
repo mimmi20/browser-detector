@@ -30,5 +30,21 @@
     },
     "type": "smart-display",
     "platform": "fire-os"
+  },
+  "amazon aeohy": {
+    "deviceName": "AEOHY",
+    "marketingName": "Echo Show 15",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 15.6
+    },
+    "type": "smart-display",
+    "platform": "fire-os"
   }
 }

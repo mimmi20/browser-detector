@@ -942,5 +942,37 @@
     },
     "type": "smart-watch",
     "platform": null
+  },
+  "samsung sm-r720": {
+    "deviceName": "SM-R720",
+    "marketingName": "Gear S2 (43mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "smart-watch",
+    "platform": "tizen"
+  },
+  "samsung sm-r730a": {
+    "deviceName": "SM-R730A",
+    "marketingName": "Gear S2 (3G, 44mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "smart-watch",
+    "platform": "tizen"
   }
 }

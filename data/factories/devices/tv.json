@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia|; ?sony;|bravia|svp-dtv15/i": "sony",
+    "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia|; ?sony;|bravia|svp-dtv15|bdp10g_bx/i": "sony",
     "/; ?tcl;|\\(tcl[0-9]+|tclwebkit|; ?50s451;/i": "tcl",
     "/THOMSON|LF1V/i": "thomson",
     "/philips|avm\\-|qm163e|2020\\/2021 uhd android tv/i": "philips",
@@ -22,7 +22,7 @@
     "/[;(] ?humax;/i": "humax",
     "/[;(] ?bangolufsen;/i": "bang-olufsen",
     "/[;(] ?medion;/i": "medion",
-    "/viera/i": "panasonic",
+    "/viera|panasonic/i": "panasonic",
     "/aquosbrowser|sharp,|sharp_umc/i": "sharp",
     "/apple tv/i": "apple",
     "/hc7620|sky_?worth|skw690|swtv[;,)]/i": "sky-worth",
@@ -35,6 +35,7 @@
     "/toptech690/i": "top-tech",
     "/atv r[12]/i": "botech",
     "/brandt/i": "brandt",
+    "/aftka/i": "amazon",
     "/mxl661l32|smart\\-?tv|; ?samsung;/i": "samsung",
     "/tivo|tcd[4-9a-f]{3}000/i": "tivo",
     "/[;(] ?mtk;/i": "mediatek",

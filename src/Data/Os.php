@@ -393,6 +393,8 @@ enum Os: string implements OsInterface
 
     case rokuOS = 'Roku OS';
 
+    case vidaaOS = 'VIDAA OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -580,6 +582,7 @@ enum Os: string implements OsInterface
             'contiki' => self::contiki,
             'fritzos', 'fritz!os', 'fritz-os' => self::fritzOS,
             'roku os', 'roku-os', 'rokuos' => self::rokuOS,
+            'vidaaos', 'vidaa os', 'vidaa-os' => self::vidaaOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -695,6 +698,7 @@ enum Os: string implements OsInterface
             self::pureOS => Company::purism,
             self::fritzOS => Company::fritz,
             self::rokuOS => Company::roku,
+            self::vidaaOS => Company::vidaa,
             default => Company::unknown,
         };
     }
@@ -727,7 +731,7 @@ enum Os: string implements OsInterface
             self::openbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenBSD']],
             self::riscos => ['factory' => VersionBuilderFactory::class, 'search' => ['RISC OS-NC', 'RISC OS', 'RISC']],
             self::unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix OS', 'Unix']],
-            self::lgwebos => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S']],
+            self::lgwebos => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S', 'WEBOS']],
             self::wyderos => ['factory' => VersionBuilderFactory::class, 'search' => ['WyderOS']],
             self::yi => ['factory' => VersionBuilderFactory::class, 'search' => ['Yi']],
             self::harmonyos => ['factory' => VersionBuilderFactory::class, 'search' => ['HarmonyOS']],
@@ -837,6 +841,7 @@ enum Os: string implements OsInterface
             self::contiki => ['factory' => VersionBuilderFactory::class, 'search' => ['Contiki']],
             self::fritzOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FRITZ!OS']],
             self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-']],
+            self::vidaaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -949,6 +954,7 @@ enum Os: string implements OsInterface
             self::googleTv => 'google-tv',
             self::fritzOS => 'fritz-os',
             self::rokuOS => 'roku-os',
+            self::vidaaOS => 'vidaa-os',
             default => $this->name,
         };
     }

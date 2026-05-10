@@ -991,6 +991,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/4.78 [en] (Win98; I) IBrowse/2.3 (AmigaOS 3.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "3.1.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "2.3.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.61 [en] (X11; U; ) - BrowseX (2.0.0 Linux 2.2.16-22)"
     },
     "device": {
