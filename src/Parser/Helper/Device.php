@@ -123,6 +123,7 @@ final class Device implements DeviceInterface
             'a410_4g' => 'acer=acer a410_4g',
             'chromebook 14 (cb3-431)', 'chromebook 14 (cb3-431' => 'acer=acer chromebook 14',
             'm10-11' => 'acer=acer m10-11',
+            'b3-a50' => 'acer=acer b3-a50',
             // AllCall
             'atom' => 'allcall=allcall atom',
             'hero_20_pro' => 'allcall=allcall hero 20 pro',
@@ -2815,6 +2816,8 @@ final class Device implements DeviceInterface
             'sm-x930n', 'samsung sm-x930n' => 'samsung=samsung sm-x930n',
             'sm-r720', 'samsung sm-r720' => 'samsung=samsung sm-r720',
             'sm-r730a', 'samsung sm-r730a' => 'samsung=samsung sm-r730a',
+            'sm-z910f', 'samsung sm-z910f' => 'samsung=samsung sm-z910f',
+            'samsung chromebook 3' => 'samsung=samsung chromebook 3',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',

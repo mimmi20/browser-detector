@@ -672,5 +672,17 @@
       ]
     },
     "engine": null
+  },
+  "phantomas": {
+    "name": "phantomas",
+    "manufacturer": "maciej-brencz",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "phantomas"
+      ]
+    },
+    "engine": "webkit"
   }
 }

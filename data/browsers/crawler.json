@@ -6058,5 +6058,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "infegyatlas": {
+    "name": "InfegyAtlas",
+    "manufacturer": "infegy",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "InfegyAtlas"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot webcrawler": {
+    "name": "HubSpot Webcrawler",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Webcrawler"
+      ]
+    },
+    "engine": null
   }
 }

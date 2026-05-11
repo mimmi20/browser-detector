@@ -147,6 +147,7 @@ final class DeviceTest extends TestCase
             ['Chromebook 14 (CB3-431)', 'acer=acer chromebook 14'],
             ['Chromebook 14 (CB3-431', 'acer=acer chromebook 14'],
             ['M10-11', 'acer=acer m10-11'],
+            ['B3-A50', 'acer=acer b3-a50'],
             // AllCall
             ['Atom', 'allcall=allcall atom'],
             ['HERO_20_PRO', 'allcall=allcall hero 20 pro'],
@@ -3858,6 +3859,9 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-R720', 'samsung=samsung sm-r720'],
             ['SM-R730A', 'samsung=samsung sm-r730a'],
             ['SAMSUNG SM-R730A', 'samsung=samsung sm-r730a'],
+            ['SM-Z910F', 'samsung=samsung sm-z910f'],
+            ['SAMSUNG SM-Z910F', 'samsung=samsung sm-z910f'],
+            ['Samsung Chromebook 3', 'samsung=samsung chromebook 3'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],

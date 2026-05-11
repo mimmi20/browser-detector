@@ -136,6 +136,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTKA) AppleWebKit/537.36 (KHTML, like Gecko) Silk/96.2.18 like Chrome/96.0.4664.175 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTKA",
+      "marketingName": "Fire TV Stick 4K Max (2021)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-stick",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "96.2.18",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.175",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSS) AppleWebKit/537.36 (KHTML, like Gecko) Silk/98.4.4 like Chrome/98.0.4758.136 Safari/537.36"
     },
     "device": {
@@ -176,6 +221,51 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.136",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; AFTKRT) AppleWebKit/537.36 (KHTML, like Gecko) Silk/134.4.17 like Chrome/134.0.6998.207 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTKRT",
+      "marketingName": "Fire TV Stick 4K Max (2023)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-stick",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "8.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "134.4.17",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.6998.207",
       "manufacturer": "Google"
     }
   }

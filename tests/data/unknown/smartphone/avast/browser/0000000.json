@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; wRlKm0nDgv; U; de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile AvastSecureBrowser/6.3.5 Build/3760 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Avast Secure Browser",
+      "modus": null,
+      "version": "6.3.5",
+      "manufacturer": "AVAST",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; OXaYZ9HjdY; U; de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile AvastSecureBrowser/6.6.0 Build/3850 Safari/537.36"
     },
     "device": {
