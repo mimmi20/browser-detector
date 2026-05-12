@@ -124,6 +124,7 @@ final class Device implements DeviceInterface
             'chromebook 14 (cb3-431)', 'chromebook 14 (cb3-431' => 'acer=acer chromebook 14',
             'm10-11' => 'acer=acer m10-11',
             'b3-a50' => 'acer=acer b3-a50',
+            'acer chromebook 15 (cb3-532)', 'acer chromebook 15 (cb3-532' => 'acer=acer chromebook 15',
             // AllCall
             'atom' => 'allcall=allcall atom',
             'hero_20_pro' => 'allcall=allcall hero 20 pro',
@@ -8328,6 +8329,9 @@ final class Device implements DeviceInterface
             // smartisan
             'oc106' => 'smartisan=smartisan oc106',
             'de106' => 'smartisan=smartisan de106',
+            // dell
+            'dell chromebook 13 (7310', 'dell chromebook 13 (7310)' => 'dell=dell chromebook 13 (7310)',
+            'dell chromebook 11 (3180', 'dell chromebook 11 (3180)' => 'dell=dell chromebook 11 (3180)',
             // other
             default => null,
         };

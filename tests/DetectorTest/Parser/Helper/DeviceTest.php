@@ -148,6 +148,8 @@ final class DeviceTest extends TestCase
             ['Chromebook 14 (CB3-431', 'acer=acer chromebook 14'],
             ['M10-11', 'acer=acer m10-11'],
             ['B3-A50', 'acer=acer b3-a50'],
+            ['Acer Chromebook 15 (CB3-532)', 'acer=acer chromebook 15'],
+            ['Acer Chromebook 15 (CB3-532', 'acer=acer chromebook 15'],
             // AllCall
             ['Atom', 'allcall=allcall atom'],
             ['HERO_20_PRO', 'allcall=allcall hero 20 pro'],
@@ -9729,6 +9731,11 @@ final class DeviceTest extends TestCase
             // smartisan
             ['OC106', 'smartisan=smartisan oc106'],
             ['DE106', 'smartisan=smartisan de106'],
+            // dell
+            ['Dell Chromebook 13 (7310', 'dell=dell chromebook 13 (7310)'],
+            ['Dell Chromebook 13 (7310)', 'dell=dell chromebook 13 (7310)'],
+            ['Dell Chromebook 11 (3180', 'dell=dell chromebook 11 (3180)'],
+            ['Dell Chromebook 11 (3180)', 'dell=dell chromebook 11 (3180)'],
             // other
             ['Model"', null],
             [': "', null],

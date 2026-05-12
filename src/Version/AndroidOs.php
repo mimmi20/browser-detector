@@ -42,6 +42,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
         '\(os: ',
         'platform:server_android,osversion:',
         'FBSV\/',
+        'OMDroid',
     ];
 
     /** @throws void */

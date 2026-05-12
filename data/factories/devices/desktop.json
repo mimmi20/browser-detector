@@ -15,7 +15,7 @@
     "/dec[ _]3000/i": "dec",
     "/cpdtdf|cpntdf|cmntdf|compaq/i": "compaq",
     "/hpcmhp|hpntdf|hpdtdf|hp\\-ux 9000|hp pavilion/i": "hp",
-    "/h9p|surface pro 4/i": "microsoft",
+    "/(?<![a-z])h9p|surface pro 4/i": "microsoft",
     "/surfbook w1/i": "trekstor",
     "/system76/i": "system76",
     "/darwin; freebsd/i": "apple",

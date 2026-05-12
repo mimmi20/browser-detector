@@ -188,6 +188,7 @@ final class MobileDeviceTest extends TestCase
             ['XT907 Build/KDA20.62-15'],
             ['AUDIOVOX-SMT5600'],
             ['CDM-8900'],
+            ['Microsoft Office/16.0 (OMDroid 12; officemobile 16.0.15629; Pro)'],
         ];
     }
 
